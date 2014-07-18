@@ -4,11 +4,11 @@ import sys
 HOST, PORT = "localhost", 19997
 
 #----VVVV---- Andy Lee add 20140522
-#input = open('../temp/parser-output.txt')
-input = open('../input/input.txt')
+input = open('../temp/parser-output.txt')
+#input = open('../input/input.txt')
 input_tree_lines = input.readlines()
 data = ' '.join([l.rstrip().lstrip().rstrip(' ').lstrip(' ')  for l in input_tree_lines])
-	
+print data
 # Create a socket (SOCK_STREAM means a TCP socket)
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 

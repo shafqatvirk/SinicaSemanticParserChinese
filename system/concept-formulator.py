@@ -2,7 +2,7 @@
 def build(sent):
 		arg_list2 = []
 		#print sent
-		concepts = open('../temp/classifier-output.txt').readlines()
+		concepts = open('../temp/classifier-output-layer2.txt').readlines()
 		identifications = open('../temp/identifier-output.txt').readlines()
 		output = open('../output/output.txt','a')
 		for (ident,conc) in zip(identifications,concepts):
@@ -59,7 +59,7 @@ def build(sent):
 		for concept in uniq_concepts:
 			#output.write('<semantics xmlns="http://sentic.net/challenge/" rdf:resource="http://sentic.net/api/en/concept/'+concept+'"/>'+'\n')
 			output.write(concept+',')
-		#output.write('</sentence>'+'\n')
+		output.write('\n')
 		#output.write(uniq_concepts)
 			
 def my_flatten(node,flat_list):

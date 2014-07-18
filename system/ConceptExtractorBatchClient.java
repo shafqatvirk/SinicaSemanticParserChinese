@@ -36,7 +36,7 @@ public class ConceptExtractorBatchClient
 			//if (directoryListing != null) {
 			//for (File child : directoryListing) {
 			// Do something with child
-			BufferedReader inputReader = new BufferedReader(new FileReader("../input/input.txt"));
+			BufferedReader inputReader = new BufferedReader(new FileReader("../input/input2.txt"));
 			//BufferedReader inputReader = new BufferedReader(new FileReader(child));
 			
 			PrintWriter outputFileWriter = new PrintWriter("../output/output.txt", "UTF-8");
@@ -45,6 +45,7 @@ public class ConceptExtractorBatchClient
 			outputFileWriter.close();
 			String sent;
 			System.out.println("Processing....");
+			
 			while ((sent = inputReader.readLine()) != null)
 			{
 			//System.out.println("Sentence: "+sent);
@@ -56,7 +57,8 @@ public class ConceptExtractorBatchClient
 			Socket connection = new Socket(address, port);
 			BufferedOutputStream bos = new BufferedOutputStream(connection.
 			getOutputStream());
-			OutputStreamWriter osw = new OutputStreamWriter(bos, "US-ASCII");
+			//OutputStreamWriter osw = new OutputStreamWriter(bos, "US-ASCII");
+			OutputStreamWriter osw = new OutputStreamWriter(bos,"cp1252");
 			osw.write(sentence);
 			osw.flush();
 			//System.out.println("Concept Extraction....");

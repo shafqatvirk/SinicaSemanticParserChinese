@@ -45,11 +45,12 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 		identif_file = open('../temp/identifier-features.txt','w')
 		classif_file = open('../temp/classifier-features.txt','w')
 		pred_file = open('../temp/pred.test','w')
-		
+		stats_file = open('../temp/stats.txt','w')
+		stats_file.write(str(len(pred_trees))+'\n')
 		for (predicate,pred_terNo) in pred_trees[:]:
 			target = predicate.word
 			pruned = pruning(parsed,pred_terNo,[])
-			
+			stats_file.write(str(len(pruned))+'\n')
 			target_POS = predicate.data
 			frameset = target
 			#print frameset

@@ -370,7 +370,8 @@ def build_tree_head_dict():
 	dict = {}
 	#trees = open('argument-trees3.txt').readlines()
 	#heads = open('new-heads-gbk.txt')
-	trees = open('../data/argument-trees3-cpb2.txt').readlines()
+	#trees = open('../data/argument-trees3-cpb2.txt').readlines()
+	trees = open('../data/argument-trees-cpb2-without-functional-tags.txt').readlines()
 	heads = open('../data/new-heads-gbk-cpb2.txt')
 	for t in trees:
 		dict[t.rstrip()] = heads.readline().rstrip()
@@ -547,7 +548,7 @@ def make_context_list_cp1(): # for testing
 		start = upto
 	return list	
 def find_pred_trees(node,pred_trees):
-	if node.data in ['VV','VC']:
+	if node.data in ['VV','VC','VA','VE']:
 		pred_trees.append((node,node.terNo))
 	for ch in node.children:
 		find_pred_trees(ch,pred_trees)

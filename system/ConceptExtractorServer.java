@@ -75,23 +75,27 @@ public class ConceptExtractorServer {
 	socket1 = new ServerSocket(port);
     int character;
 	
-	String  modelFileName,modelFileNameClassifier;
+	String  modelFileName,modelFileNameClassifier,modelFileNameClassifierLayer2;
     boolean real = false;
     //String type = "maxent";
     //int ai = 0;
 	
-	modelFileName = "../models/identifierModelCh.txt";
-	modelFileNameClassifier = "../models/classifierModelChLayer1.txt";
+	modelFileName = "../models/identifierModelCh2.txt";
+	modelFileNameClassifier = "../models/classifierModelChLayer1-2.txt";
+	modelFileNameClassifierLayer2 = "../models/classifierModelChLayer2.txt";
 	
-	Parser parser = new Parser();
+	//Parser parser = new Parser(); // disabled for the moment
 	
 	ConceptExtractorServer predictorIdentifier = null;
 	ConceptExtractorServer predictorClassifier = null;
+	ConceptExtractorServer predictorClassifierLayer2 = null;
 	try {
       MaxentModel m = new GenericModelReader(new File(modelFileName)).getModel();
 	  MaxentModel m2 = new GenericModelReader(new File(modelFileNameClassifier)).getModel();
+	  MaxentModel m3 = new GenericModelReader(new File(modelFileNameClassifierLayer2)).getModel();
 	  predictorIdentifier = new ConceptExtractorServer(m);
 	  predictorClassifier = new ConceptExtractorServer(m2);
+	  predictorClassifierLayer2 = new ConceptExtractorServer(m3);
 	  //Parser parser = new Parser();
 	} catch (Exception e) {
 	    e.printStackTrace();
@@ -113,15 +117,17 @@ public class ConceptExtractorServer {
 		
 		//Tree tree = parser.parse(sentence); 
 		String tree = "";
-		//System.out.println(tree);
+		//System.out.println(sentence);
 
 		//----VVVV--- Andy Lee add 20140522 for transfering tree to python program.
-		//File wfile1 = new File("../temp/parser-output.txt");
+		File wfile1 = new File("../temp/parser-output.txt");
         //BufferedWriter wr1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(wfile1),"UTF-8"));
+		BufferedWriter wr1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(wfile1)));
         //String toFileString = ""+tree;
-        //wr1.write(toFileString);
-        //wr1.flush();
-       // wr1.close();
+		String toFileString = ""+sentence;
+        wr1.write(toFileString);
+        wr1.flush();
+        wr1.close();
         //----^^^^--- Andy Lee add 20140522 for transfering tree to python program.
 
 		//System.out.println("Extracting features...");
@@ -150,13 +156,45 @@ public class ConceptExtractorServer {
 			
 			String identOutput = predictorIdentifier.eval(identifierFeatures.substring(0, identifierFeatures.lastIndexOf(' ')),real);
 			String classiOutput = predictorClassifier.eval(classifierFeature.substring(0, classifierFeature.lastIndexOf(' ')),real);
-			identifierOutput.println(identOutput);
-			classifierOutput.println(pred+' '+classiOutput);
+			identifierOutput.print(identOutput);
+			classifierOutput.print(pred+' '+classiOutput);
 			
 			}
 			identifierOutput.close();
 			classifierOutput.close();
+		// layer 2
+		String srlIdentifierLayer2 = "python featureExtractorClientLayer2.py " + '"'+tree+'"' ;
+		//System.out.println(srlIdentifier);
+		Runtime rrLayer2 = Runtime.getRuntime();
+        Process ppLayer2 = rrLayer2.exec(srlIdentifierLayer2);
+        BufferedReader brrLayer2 = new BufferedReader(new InputStreamReader(ppLayer2.getInputStream()));
+		//System.out.println("Semantic Role Labeling...");
+		ppLayer2.waitFor(); 
+		
+		//BufferedReader reader = new BufferedReader(new FileReader("../temp/identifier-features.txt"));
+		BufferedReader classifierLayer2 = new BufferedReader(new FileReader("../temp/classifier-features-layer2.txt"));
+		
+		//PrintWriter identifierOutput = new PrintWriter("../temp/identifier-output.txt");
+		PrintWriter classifierOutputLayer2 = new PrintWriter("../temp/classifier-output-layer2.txt");
+		BufferedReader predsLayer2 = new BufferedReader(new FileReader("../temp/pred.test"));
+				
+		String line2;
+		while ((line2 = classifierLayer2.readLine()) != null)
+			{
+			//System.out.println("inside loop");
+			String predLayer2 = predsLayer2.readLine();
+			//String identifierFeatures = line; 
+			String classifierFeatureLayer2 = line2;
 			
+			//String identOutput = predictorIdentifier.eval(identifierFeatures.substring(0, identifierFeatures.lastIndexOf(' ')),real);
+			String classiOutputLayer2 = predictorClassifierLayer2.eval(classifierFeatureLayer2.substring(0, classifierFeatureLayer2.lastIndexOf(' ')),real);
+			//identifierOutput.print(identOutput);
+			classifierOutputLayer2.print(predLayer2+' '+classiOutputLayer2);
+			
+			}
+			predsLayer2.close();
+			classifierOutputLayer2.close();
+		// end layer 2	
 		System.out.println("Serverd!");
         String returnCode = "Concepts:" + (char) 13;
         BufferedOutputStream os = new BufferedOutputStream(connection.getOutputStream());
