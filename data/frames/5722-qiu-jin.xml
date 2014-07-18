@@ -1,0 +1,106 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 囚禁 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="person arg0 confines"/>
+    <role argnum="2" argrole="place arg1 is confined"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *pro*))
+			    (VP (NP-LOC (-NONE- *T*-2))
+				(VP (VV 囚禁)
+				    (NP-OBJ (NN 犯人)))))
+			(DEC 之)))
+		(NP (NN 所))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	犯人 
+	</arg>
+	<arg n="2">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 多少))
+			(NP (NN 母亲)))
+		(PU ，)
+		(VP (PP-BNF (P 为)
+			    (NP (NP (PN 他们))
+				(CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 囚禁)
+						(PP-LOC (P 在)
+							(LCP (NP-PN (NR 绿岛))
+							     (LC 上)))))
+					(DEC 的)))
+				(NP (NN 孩子))))
+		    (PU ，)
+		    (NP-TMP (ADJP (JJ 长))
+			    (NP (NN 夜)))
+		    (VP (VV 哭泣)))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	在 绿岛 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (DP (DT 这)
+		(CLP (M 个)))
+	    (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-2))
+			(VP (VV 囚禁)
+			    (AS 了)
+			    (NP-OBJ (PN 自己))
+			    (NP-EXT (QP (ADVP (AD 将近))
+					(QP (CD 十)))
+				    (CLP (M 年)))))
+		    (DEC 的)))
+	    (NP (NN 岛屿))) 
+	</parse>
+	<arg n="1">
+	自己 
+	</arg>
+	<arg n="2">
+	*T*-2 
+	</arg>
+	<arg n="m" f="ext">
+	将近 十 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 插上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 inserts arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 雅美族))
+	      (VP (ADVP (AD 还))
+		  (VP (VP (PP-LOC (P 在)
+				  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (VV 制好)))
+						   (DEC 的)))
+					   (NP (NN 陶胚)))
+				       (LC 上)))
+			  (VP (VV 插上)
+			      (NP-OBJ (NN 十字)
+				      (NN 树枝))))
+		      (PU ，)
+		      (VP (VV 避免)
+			  (IP-OBJ (NP-SBJ (NN 恶灵))
+				  (VP (VV 破坏))))))) 
+	  </parse>
+	  <arg n="0">
+	  雅美族 	  
+	  </arg>
+	  <arg n="1">
+	  十字 树枝 	  
+	  </arg>
+	  <arg n="2">
+	  在 *OP* *T*-1 制好 的 陶胚 上 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

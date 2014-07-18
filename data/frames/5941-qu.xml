@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 娶 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 takes in as wife"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 东北人))
+	    (VP (VV 娶)
+		(AS 了)
+		(NP-OBJ (NP-PN (NR 澎湖))
+			(NP (NN 姑娘))))) 
+	</parse>
+	<arg n="0">
+	东北人 
+	</arg>
+	<arg n="1">
+	澎湖 姑娘 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="entity arg1 is given to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-ADV (ADVP (CS 尽管))
+		      (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 上级))
+					      (VP (VV 下达)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 办公)
+				      (NN 费用)))
+			  (VP (ADVP (AD 已))
+			      (VP (VV 超支)))))
+	      (PU ，)
+	      (NP-SBJ (NN 县)
+		      (NN 水利局))
+	      (VP (ADVP (AD 还是))
+		  (PP-DIR (P 从)
+			  (LCP (NP (DNP (NP (NP (NP-PN (NR 南润))
+						(NP (NN 段)))
+					    (NP (NN 退堤)
+						(NN 工程)))
+					(DEG 的))
+				   (NP (PU “)
+				       (ADJP (JJ 迁安))
+				       (NP (NN 管理费))
+				       (PU ”)))
+			       (LC 中)))
+		  (VP (VV 转给)
+		      (NP-OBJ (NN 县政府)
+			      (NN 办公室))
+		      (QP-EXT (CD 二十三万)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  县 水利局 
+	  </arg>
+	  <arg n="1">
+	  二十三万 元 
+	  </arg>
+	  <arg n="2">
+	  县政府 办公室 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 南润 段 退堤 工程 的 “ 迁安 管理费 ” 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还是 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽管 *OP* 上级 下达 *T*-1 的 办公 费用 已 超支 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

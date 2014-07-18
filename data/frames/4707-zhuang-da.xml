@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 壮大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 要)
+		  (VP (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (NP (DNP (NP (ADJP (JJ 国有))
+						       (NP (NN 经济)))
+						   (DEG 的))
+					      (ADJP (JJ 战略性))
+					      (NP (NN 改组)))
+					  (CC 与)
+					  (NP (NN 企业)
+					      (NN 脱困)))
+				  (VP (VRD (VV 结合)
+					   (VV 起来)))))
+		      (PU ，)
+		      (VP (PP-MNR (P 通过)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 壮大)
+					  (NP-OBJ (NN 优势)
+						  (NN 企业)))))
+			  (VP (VV 带动)
+			      (NP-OBJ (ADJP (JJ 困难))
+				      (NP (NN 企业)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 摆脱)
+				      (NP-OBJ (NN 困境))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  优势 企业 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 革命))
+			   (DEG 的))
+		      (NP (NN 力量)))
+	      (PU ，)
+	      (VP (VP (VP (VV 壮大)
+			  (AS 了))
+		      (VP (ADVP (AD 又))
+			  (VP (SB 被)
+			      (VP (VV 残害)))))
+		  (PU ，)
+		  (VP (VP (VV 残害)
+			  (AS 了))
+		      (VP (ADVP (AD 又))
+			  (ADVP (AD 重新))
+			  (VP (VV 壮大)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  革命 的 力量 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

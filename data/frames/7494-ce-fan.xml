@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 策反 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 instigates to rebel"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 尤其))
+	    (PP-ADV (P 随著)
+		    (IP (NP-SBJ (NT 二千年)
+				(NN 总统)
+				(NN 大选))
+			(VP (QP-ADV (CD 一)
+				    (CLP (M 天天)))
+			    (VP (VV 逼近)))))
+	    (PU ，)
+	    (NP-SBJ (NP (DP (DT 各))
+			(NP (NN 方)))
+		    (NP (NN 人马))
+		    (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 招募)
+				(PU 、)
+				(PU 「)
+				(VV 策反)
+				(PU 」)
+				(PU 、)
+				(VV 备战)))
+		    (NP (NN 动作)))
+	    (VP (VV 不断))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

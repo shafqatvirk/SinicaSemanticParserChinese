@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 试图 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing attempt to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TTL (PU 《)
+		  (NP-PN-SBJ (NR 中国))
+		  (VP (PP-TMP (P 在)
+			      (LCP (NP (NN 禁运))
+				   (LC 后)))
+		      (VP (VV 试图)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP (P 向)
+				      (NP-PN (NR 伊拉克)))
+				  (VP (VV 出售)
+				      (NP-OBJ (NN 武器)))))))
+		  (PU 》)) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 向 伊拉克 出售 武器 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 禁运 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

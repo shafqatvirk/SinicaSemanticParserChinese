@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 占地 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="area arg0 occupies"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 市场)))
+	      (VP (VP (VV 始建于)
+		      (NP-OBJ (NT 一九八四年)))
+		  (PU ，)
+		  (VP (VV 占地)
+		      (QP-OBJ (CD 三十六点六)
+			      (CLP (M 公顷))))
+		  (PU ，)
+		  (VP (ADVP (AD 累计))
+		      (VP (VV 投资)
+			  (QP-OBJ (ADVP (AD 近))
+				  (QP (CD 二亿)
+				      (CLP (M 元)))))))) 
+	  </parse>
+	  <arg n="0">
+	  该 市场 
+	  </arg>
+	  <arg n="1">
+	  三十六点六 公顷 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (PN 他))
+			      (VP (VV 负责)
+				  (NP-OBJ (-NONE- *T*-2))))
+			  (DEC 的)))
+		  (DP (DT 这)
+		      (CLP (M 个)))
+		  (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (VP-FOC (VV 占地))
+				  (VP (ADVP (AD 不))
+				      (VP (VA 大)))))
+			  (DEC 的)))
+		  (NP (NN 基地))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

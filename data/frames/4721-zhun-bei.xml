@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 准备 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 prepares"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 新疆))
+	      (VP (VP (PP-BNF (P 为)
+			      (NP (DP (DT 本)
+				      (CLP (M 次)))
+				  (NP (NN 大会))))
+		      (ADVP (AD 精心))
+		      (VP (VV 准备)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 三百)
+				      (CLP (M 个)))
+				  (NP (NP (NP (PP (P 对)
+						  (NP (NN 外)))
+					      (NP (NN 经济)
+						  (NN 技术)
+						  (NN 合作)))
+					  (NP (NN 项目)))
+				      (CC 及)
+				      (NP (ADJP (JJ 内联))
+					  (NP (NN 项目))))))))) 
+	  </parse>
+	  <arg n="0">
+	  新疆 	  
+	  </arg>
+	  <arg n="1">
+	  三百 个 对 外 经济 技术 合作 项目 及 内联 项目 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  精心 	  
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 本 次 大会 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  据悉 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 核实)
+			  (NN 结果))
+		  (VP (PP (P 连同)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VRD (VV 准备)
+						   (VA 妥当))))
+				      (DEC 的)))
+			      (NP (NN 居留权)
+				  (NN 证明书))))
+		      (VP (VV 送往)
+			  (NP-OBJ (DP (DT 各))
+				  (DNP (ADJP (JJ 有关))
+				       (DEG 的))
+				  (NP-PN (NN 公安局)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 plans/gets ready to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 苏联))
+	      (VP (VV 准备)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (PP-TMP (P 从)
+					  (LCP (NP (NT 今年)
+						   (NT 五月))
+					       (LC 开始)))
+				  (VP (VV 撤出)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 驻)
+							      (NP-PN-OBJ (NR 波兰))))
+						      (DEC 的)))
+					      (NP-PN (NR 苏军)))))
+			      (PU ，)
+			      (VP (LCP-TMP (LCP (NP (NT 一九九四年))
+						(LC 中))
+					   (LC 以前))
+				  (ADVP (AD 全部))
+				  (VP (VV 撤完))))))) 
+	  </parse>
+	  <arg n="0">
+	  苏联 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 从 今年 五月 开始 撤出 *OP* *T*-1 驻 波兰 的 苏军 ， 一九九四年 中 以前 全部 撤完 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

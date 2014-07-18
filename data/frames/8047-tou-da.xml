@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 偷打 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing (phone call) arg0 makes illegally"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 偷打)
+		  (NP-OBJ (ADJP (JJ 免费))
+			  (NP (NN 电话))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  免费 电话 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

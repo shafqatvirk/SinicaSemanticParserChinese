@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 购进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="commodity"/>
+      <role argnum="2" argrole="buying from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此前))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 省)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 购进)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 架)))
+			      (NP-PN (PU “)
+				     (NN 空中)
+				     (NN 客车)
+				     (PU ”))
+			      (NP (NN Ａ３２０)
+				  (NN 客机)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 省 
+	  </arg>
+	  <arg n="1">
+	  一 架 “ 空中 客车 ” Ａ３２０ 客机 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  此前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

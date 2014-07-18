@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加工 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="processor"/>
+      <role argnum="1" argrole="thing processed"/>
+      <role argnum="2" argrole="product"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 自)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (NP-TMP (NT 一九五四年))
+				       (VP (VCD (VV 勘探)
+						(VV 开发)))))
+			       (LC 以来)))
+		  (PU ，)
+		  (VP (ADVP (AD 已))
+		      (ADVP (AD 累计))
+		      (VP (VP (VV 生产)
+			      (NP-OBJ (NN 原油))
+			      (QP-EXT (CD 一千五百五十多万)
+				      (CLP (M 吨))))
+			  (PU ，)
+			  (VP (VV 加工)
+			      (NP-OBJ (NN 原油))
+			      (QP-EXT (ADVP (AD 近))
+				      (QP (CD 八百万)
+					  (CLP (M 吨))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  原油 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 *PRO* 一九五四年 勘探 开发 以来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  累计 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伫望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 looks at in distance in anticipation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP-PN-APP (NR 东莞))
+		  (DP (DT 这)
+		      (CLP (M 个)))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (LCP-LOC (NP (NN 古籍))
+				       (LC 里))
+			      (NP-PN-SBJ (NR 杨贵妃))
+			      (VP (VV 伫望)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP (NN 荔枝)
+		      (NN 产地))) 
+	  </parse>
+	  <arg n="0">
+	  杨贵妃 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  古籍 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

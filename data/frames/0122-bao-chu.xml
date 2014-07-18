@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 爆出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (NP-TMP (NT 最近))
+          (ADVP (AD 不断))
+          (VP (VV 爆出)
+              (NP-OBJ (CP-APP (IP (NP-SBJ (NP-PN (NN 国际)
+                                                 (NR 奥委会))
+                                          (NP (NN 委员)))
+                                  (VP (PP-TMP (P 在)
+                                              (LCP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+                                                               (VP (VV 申办)
+                                                                   (NP-PN-OBJ (NR 奥运会))))
+                                                       (NP (NN 过程)))
+                                                   (LC 中)))
+                                      (VP (VV 受贿))))
+                              (DEC 的))
+                      (NP (NN 丑闻)))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="TMP"> 最近 </arg>
+	<arg n="M" f="ADV"> 不断 </arg>
+	<V/>
+	<arg n="1"> 国际 奥委会 委员 在 *PRO* 申办 奥运会 过程 中 受贿 的 丑闻 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

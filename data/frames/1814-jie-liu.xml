@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 截流 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="river dammed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (NP (CP (WHPP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (NP-PN (NR 三峡))
+				      (NP (NN 工程)))
+			      (VP (PP-TMP (-NONE- *T*-1))
+				  (NP-LOC (ADJP (JJ 大))
+					  (NP (NN 江)))
+				  (VP (VV 截流)))))
+		      (NP (NN 前夕)))) 
+	  </parse>
+	  <arg n="0">
+	  三峡 工程 
+	  </arg>
+	  <arg n="1">
+	  大 江 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,163 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指导 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="guider"/>
+      <role argnum="1" argrole="activity guided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 浙江省))
+		      (NP (NN 教育)
+			  (NN 部门)))
+	      (VP (NP-TMP (NT 最近))
+		  (VP (VV 派出)
+		      (NP-OBJ (NN 工作组))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 分))
+				  (VP (VV 赴)
+				      (NP-OBJ (NP-APP-PN (NR 温州)
+							 (PU 、)
+							 (NR 台州)
+							 (ETC 等))
+					      (NP (NN 地)))))
+			      (VP (VV 指导)
+				  (NP-OBJ (NN 灾区)
+					  (NN 教育)
+					  (NN 恢复)
+					  (NN 工作)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  灾区 教育 恢复 工作 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 中组部)
+			 (PU 、)
+			 (NN 人事部))
+	      (VP (VV 要求)
+		  (NP-OBJ (DP (DT 各)
+			      (CLP (M 级)))
+			  (NP (NN 组织)
+			      (NN 人事)
+			      (NN 部门)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 确立)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 人才)
+							  (NN 市场))
+						  (VP (VV 发展)))
+					      (DEC 的))
+				      (NP (NN 总体)
+					  (NN 布局)
+					  (CC 和)
+					  (NN 实施)
+					  (NN 步骤))))
+			  (PU ，)
+			  (VP (ADVP (AD 分类))
+			      (VP (VV 指导)))
+			  (PU ，)
+			  (VP (ADVP (AD 逐步))
+			      (VP (VRD (VV 建立)
+				       (VV 起))
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VA 完善)))
+						  (DEC 的)))
+					  (NP (NN 人才)
+					      (NN 市场)
+					      (NN 体系))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  分类 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="guider"/>
+      <role argnum="1" argrole="entity guided"/>
+      <role argnum="2" argrole="activity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 各)
+			      (CLP (M 级)))
+			  (NP (NN 乡镇)
+			      (NN 企业)))
+		      (NP (NN 主管)
+			  (NN 部门)
+			  (CC 与)
+			  (NN 宣传)
+			  (NN 部门)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (DNP (NP (NP (DP (DT 各))
+						(NP (NN 地)))
+					    (NP (NN 党委)
+						(CC 和)
+						(NN 政府)))
+					(DEG 的))
+				   (NP (NN 领导)))
+			       (LC 下)))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 通力))
+			  (VP (VV 合作)))
+		      (PU ，)
+		      (VP (VV 指导)
+			  (NP-OBJ (NN 企业))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 坚持)
+				  (NP-OBJ (CP-APP (IP (NP-TPC (NP (NN 物质)
+								  (NN 文明)
+								  (CC 和)
+								  (NN 精神)
+								  (NN 文明))
+							      (NP (NN 建设)))
+						      (NP-SBJ (-NONE- *pro*))
+						      (VP (NP-ADV (QP (CD 两))
+								  (NP (NN 手)))
+							  (VP (VV 抓))))
+						  (DEC 的))
+					  (NP (NN 方针))))))))) 
+	  </parse>
+	  <arg n="0">
+	  各 级 乡镇 企业 主管 部门 与 宣传 部门 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  企业 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 坚持 物质 文明 和 精神 文明 建设 *pro* 两 手 抓 的 方针 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

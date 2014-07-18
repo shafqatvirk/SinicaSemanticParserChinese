@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 征收 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 collects"/>
+      <role argnum="2" argrole="thing arg0 collects arg1 on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国家))
+	      (VP (PP-DIR (P 从)
+			  (LCP (NP (NP (DP (DT 全))
+				       (NP (NN 国)))
+				   (NP (NN 销售)
+				       (NN 电量)))
+			       (LC 中)))
+		  (VP (VV 征收)
+		      (NP-OBJ (NP (QP (CD 一))
+				  (NP (NN 部分)))
+			      (NP-PN (NR 三峡)
+				     (NN 建设))
+			      (NP (NN 基金)))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 
+	  </arg>
+	  <arg n="1">
+	  一 部分 三峡 建设 基金 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 全 国 销售 电量 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (QP (CD １７００多)
+		      (CLP (M 项)))
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 征收)
+				      (NP-OBJ (NN 关税)))))
+			  (DEC 的)))
+		  (NP (NN 商品))) 
+	  </parse>
+	  <arg n="1">
+	  关税 
+	  </arg>
+	  <arg n="2">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

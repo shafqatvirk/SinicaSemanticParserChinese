@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 答谢 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 expresses appreciation for"/>
+    <role argnum="2" argrole="thing arg0 expresses appreciation with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP-PN (NR 北埔))
+				  (DEG 的))
+			     (ADJP (JJ 跨年))
+			     (NP (NN 晚会)))
+			 (LC 上)))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 石冈))
+			    (NP (NN 乡长)))
+		    (NP-PN (NR 谢震颖)))
+	    (VP (VP (VV 送来)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 份)))
+			    (NP (NN 礼物))))
+		(PU ，)
+		(VP (VV 答谢)
+		    (NP-OBJ (DNP (NP (NP-PN (NR 北埔))
+				     (NP (NN 乡民)))
+				 (DEG 的))
+			    (ADJP (JJ 大))
+			    (NP (NN 爱)))))) 
+	</parse>
+	<arg n="0">
+	石冈 乡长 谢震颖 
+	</arg>
+	<arg n="1">
+	北埔 乡民 的 大 爱 
+	</arg>
+	<arg n="m" f="loc">
+	在 北埔 的 跨年 晚会 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

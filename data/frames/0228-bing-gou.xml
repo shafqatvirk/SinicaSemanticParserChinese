@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 并购 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="buyer"/>
+    <role argnum="1" argrole="company bought"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (PP (P 除)
+              (LCP (NP (NN 汽车)
+                       (NN 领域))
+                   (LC 外)))
+          (PU ，)
+          (ADVP (AD 还))
+          (VP (VE 有)
+              (IP-OBJ (IP (NP-PN-SBJ (NR 英国)
+                                     (NN 石油)
+                                     (NN 公司))
+                          (VP (VV 并购)
+                              (NP-PN-OBJ (NR 美国)
+                                         (NR 阿莫科)
+                                         (NN 石油)
+                                         (NN 公司))))
+                      (ETC 等))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 英国 石油 公司 </arg>
+	<V/>
+	<arg n="1"> 美国 阿莫科 石油 公司 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

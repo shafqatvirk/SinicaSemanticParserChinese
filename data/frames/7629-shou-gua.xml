@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 守寡 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person who lives as a widow"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-MNR (P 以)
+				(NP (NN 房地产)
+				    (NN 投资)))
+			(VP (VV 为)
+			    (NP-OBJ (NN 例)))))
+	    (PU ，)
+	    (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 家))
+				(VP (VV 住)
+				    (NP-PN-OBJ (NR 北县))))
+			    (DEC 的)))
+		    (NP-PN (NR 张)
+			   (NN 太太)))
+	    (PU ，)
+	    (VP (VP (NP-TMP (NN 早年))
+		    (VP (VV 守寡)))
+		(PU ，)
+		(VP (LCP-TMP (QP (CD 二十多)
+				 (CLP (M 年)))
+			     (LC 来))
+		    (ADVP (AD 就))
+		    (VP (VC 是)
+			(VP (PP-MNR (P 靠著)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (VV 跑)
+						(NP-OBJ (NN 单帮)))
+					    (VP (VV 仲介)
+						(NP-OBJ (NN 土地)
+							(PU 、)
+							(NN 房屋))))))
+			    (VP (VV 维持)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 家)))
+					(NP (NN 生计)))))))
+		(PU ，)
+		(VP (ADVP (AD 因此))
+		    (PP-DIR (P 对)
+			    (NP (NN 房市)))
+		    (VP (VV 有)
+			(AS 著)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 坚定不移)))
+					(DEC 的)))
+				(NP (NN 信心))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 家 住 北县 的 张 太太 
+	</arg>
+	<arg n="m" f="tmp">
+	早年 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 以 房地产 投资 为 例 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

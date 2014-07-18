@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 巧取豪夺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 takes away by force or trickery"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (PN 那样))
+			   (DEG 的))
+		      (NP (NN 心情)))
+	      (PU ，)
+	      (VP (PP-ADV (P 与)
+			  (IP (NP-SBJ (NN 中国人))
+			      (VP (VV 必须)
+				  (VP (VP (VV 到)
+					  (NP-PN-OBJ (NR 大英)
+						     (NN 博物馆)))
+				      (PU ，)
+				      (VP (ADVP (AD 才))
+					  (VP (VV 能)
+					      (VP (VV 看到)
+						  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+							      (CP (IP (NP-SBJ (-NONE- *T*-3))
+								      (VP (NP-TMP (NP-PN (NR 满清))
+										  (NP (NN 末年)))
+									  (VP (LB 遭)
+									      (IP-OBJ (NP-PN-SBJ (NR 英国))
+										      (VP (VV 巧取豪夺))))))
+								  (DEC 的)))
+							  (NP (NN 文物))))))))))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VA 一样)))
+				      (DEC 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  英国 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  满清 末年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

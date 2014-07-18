@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重整 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (LB 受)
+				      (CP-OBJ (WHNP-3 (-NONE- *OP*))
+					      (IP (NP-SBJ (NN 金融)
+							  (NN 风暴))
+						  (VP (VV 打击)
+						      (NP-OBJ (-NONE- *T*-3)))))))
+			      (DEC 的)))
+		      (NP (NN 国家)))
+	      (VP (VV 应)
+		  (VP (VP (VV 坚持)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 重整)
+				      (NP-OBJ (NN 银行业)))))
+		      (PU ，)
+		      (VP (VV 纾缓)
+			  (NP-OBJ (DNP (NP (NN 信贷)
+					   (NN 紧缩))
+				       (DEG 的))
+				  (NP (NN 情况))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  银行业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

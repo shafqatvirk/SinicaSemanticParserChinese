@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兑现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="check, promise"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 当局)))
+	      (VP (VV 能够)
+		  (VP (VV 兑现)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (NP-TMP (NT 今年)
+						      (NT ５月))
+					      (VP (VV 解除)
+						  (NP-OBJ (PU “)
+							  (NN 动员)
+							  (NN 戡乱)
+							  (NN 时期)
+							  (PU ”)))))
+				      (DEC 的))
+			      (NP (NN 许诺)))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 当局 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 今年 ５月 解除 “ 动员 戡乱 时期 ” 的 许诺 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

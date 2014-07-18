@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 花 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="spender"/>
+      <role argnum="1" argrole="thing spent"/>
+      <role argnum="2" argrole="spending on, spending for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 儿童)
+		      (NN 福利院))
+	      (VP (VP (DVP (IP (QP-SBJ (CD 十六)
+				       (CLP (M 年)))
+			       (VP (VV 如)
+				   (QP-OBJ (CD 一)
+					   (CLP (M 日)))))
+			   (DEV 地))
+		      (VP (VP (VV 关心)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (PU 、)
+			  (VP (VV 爱护)
+			      (NP-OBJ-1 (PN 他)))))
+		  (PU ，)
+		  (VP (LCP-TMP (NP (NT 去年))
+			       (LC 以来))
+		      (PU ，)
+		      (VP (VP (ADVP (AD 仅))
+			      (PP-BNF (P 为)
+				      (NP (PN 他)))
+			      (VP (VP (VV 交纳)
+				      (NP-OBJ (NN 学费)))
+				  (PU 、)
+				  (VP (VV 买)
+				      (NP-OBJ (NN 资料)))
+				  (PU 、)
+				  (VP (VV 买)
+				      (NP-OBJ (NN 营养品)))))
+			  (PU ，)
+			  (VP (ADVP (AD 就))
+			      (VP (VV 花)
+				  (AS 了)
+				  (NP-OBJ (QP (CD 三千多)
+					      (CLP (M 元)))
+					  (NP (NN 人民币))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  儿童 福利院 
+	  </arg>
+	  <arg n="1">
+	  三千多 元 人民币 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 以来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

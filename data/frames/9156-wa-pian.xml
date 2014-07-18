@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挖遍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 digs all over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 考古学家们))
+	      (VP (VP (VV 住)
+		      (PP-LOC (P 在)
+			      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (ADVP (AD 又))
+							   (VP (VV 吵))))
+						   (PU 、)
+						   (IP (NP-TPC (-NONE- *T*-1))
+						       (NP-SBJ (NN 灰尘))
+						       (VP (ADVP (AD 又))
+							   (VP (VA 多)))))
+					       (DEC 的)))
+				       (NP (NN 砖瓦厂)
+					   (NN 宿舍)))
+				   (LC 里))))
+		  (PU ，)
+		  (VP (ADVP (AD 连续))
+		      (VP (VV 工作)
+			  (AS 了)
+			  (QP-EXT (CD 六)
+				  (CLP (M 年)))))
+		  (PU ，)
+		  (VP (ADVP (AD 几乎))
+		      (VP (VV 挖遍)
+			  (AS 了)
+			  (NP-OBJ (DP (DT 整)
+				      (CLP (M 个)))
+				  (NP-PN (NR 三星堆)
+					 (NN 地区)))))
+		  (PU ，)
+		  (VP (VRD (VV 清理)
+			   (VV 出))
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一些))
+			      (NP (NN 房屋)
+				  (NN 遗址)
+				  (PU 、)
+				  (NN 墓葬)
+				  (ETC 等等)))))) 
+	  </parse>
+	  <arg n="0">
+	  考古学家们 
+	  </arg>
+	  <arg n="1">
+	  整 个 三星堆 地区 
+	  </arg>
+	  <arg n="m" f="adv">
+	  几乎 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

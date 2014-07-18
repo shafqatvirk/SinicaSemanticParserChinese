@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 笑称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 says laughing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 馆方)
+		    (NN 人员))
+	    (VP (VV 笑称)
+		(PU ，)
+		(IP-OBJ (NP-SBJ (NN 门票)
+				(NN 收入))
+			(VP (VP-OBJ (ADVP (AD 连))
+				    (VP (VV 付)
+					(NP-OBJ (NN 电费))))
+			    (VP (ADVP (AD 都))
+				(ADVP (AD 不))
+				(VP (VA 够))))))) 
+	</parse>
+	<arg n="0">
+	馆方 人员 
+	</arg>
+	<arg n="1">
+	门票 收入 连 付 电费 都 不 够 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

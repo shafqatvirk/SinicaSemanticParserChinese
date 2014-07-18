@@ -1,0 +1,125 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吵 </id>
+  <frameset id="f1" edef="quarrel">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 中央)
+			(CC 与)
+			(NN 省))
+		    (NP (NN 政府)))
+	    (VP (PP-PRP (P 为)
+			(NP (CP-APP (IP (NP-TPC (NN 治水)
+						(NN 方案))
+					(NP-SBJ (NN 治标)
+						(PU 、)
+						(NN 治本))
+					(VP (VV 孰先孰後)))
+				    (DEC 的))
+			    (NP (NN 问题))))
+		(VP (VV 吵)
+		    (DER 得)
+		    (VP-EXT (VV 不可开交))))) 
+	</parse>
+	<arg n="0">
+	中央 与 省 政府 
+	</arg>
+	<arg n="m" f="adv">
+	不可开交 
+	</arg>
+	<arg n="m" f="prp">
+	为 治水 方案 治标 、 治本 孰先孰後 的 问题 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="fight for">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 fights for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (DNP (NP (NN 服务))
+				      (DEG 的))
+				 (NP (NN 价格)))
+			 (VP (VP (VA 昂贵))
+			     (VP (ADVP (AD 难以))
+				 (VP (VV 负担)))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VV 吵)
+		    (AS 著)
+		    (IP-OBJ (NP-SBJ-3 (-NONE- *pro*))
+			    (VP (VV 要)
+				(VP (PP-LGS (P 由)
+					    (NP (NN 政府)))
+				    (VP (VV 提供)
+					(NP-OBJ (-NONE- *-3))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*pro* 要 由 政府 提供 *-3 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	服务 的 价格 昂贵 难以 负担 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3" edef="noisy">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 考古学家们))
+	    (VP (VP (VV 住)
+		    (PP-LOC (P 在)
+			    (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (IP (NP-SBJ (-NONE- *T*-1))
+						     (VP (ADVP (AD 又))
+							 (VP (VV 吵))))
+						 (PU 、)
+						 (IP (NP-TPC (-NONE- *T*-1))
+						     (NP-SBJ (NN 灰尘))
+						     (VP (ADVP (AD 又))
+							 (VP (VA 多)))))
+					     (DEC 的)))
+				     (NP (NN 砖瓦厂)
+					 (NN 宿舍)))
+				 (LC 里)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

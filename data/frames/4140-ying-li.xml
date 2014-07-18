@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 盈利 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="amount of profit made"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ-1 (-NONE- *T*-1))
+			      (VP (VV 可)
+				  (VP (VV 盈利)
+				      (LCP-OBJ (QP (CD 百万)
+						   (CLP (M 元)))
+					       (LC 以上)))))
+			  (DEC 的)))
+		  (QP (CD 一)
+		      (CLP (ADJP (JJ 整))
+			   (CLP (M 套))))
+		  (NP (PU “)
+		      (NP (NP-PN (NR 王码))
+			  (NP (NN 软件)))
+		      (NP (NN 精品))
+		      (PU ”))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  百万 元 以上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (QP-TMP (NP (NT 最近))
+			      (QP (CD 三)
+				  (CLP (M 年))))
+		      (ADVP (AD 连续))
+		      (VP (VV 盈利)))
+		  (PU ，)
+		  (VP (VE 有)
+		      (NP-OBJ (NN 进出口)
+			      (NN 业务)
+			      (NN 许可)))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 属)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 国家))
+				      (VP (VV 鼓励)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (NP (NN 行业)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连续 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  最近 三 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自杀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person committing suicide"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (NT 近年))
+		     (LC 来))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (NP-TMP (NN 中年))
+				    (VP (VV 罹癌)
+					(PU 、)
+					(VV 猝死)
+					(PU 、)
+					(VV 自杀))))
+			    (DEC 的))
+		    (NP (NN 案例)))
+	    (VP (VV 频传))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	中年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

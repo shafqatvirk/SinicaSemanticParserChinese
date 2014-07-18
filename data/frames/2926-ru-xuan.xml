@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入选 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity selected"/>
+      <role argnum="1" argrole="organization selected to join"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 德波尔))
+	      (VP (VP (VV 大名鼎鼎))
+		  (PU ，)
+		  (VP (NP-TMP (NT 今年))
+		      (VP (VV 入选)
+			  (NP-PN-OBJ (NR 荷兰队))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (NP-PN (NR 法国))
+				       (NP (NN 世界杯赛)))
+				   (LC 上)))
+		      (VP (VV 打入)
+			  (NP-OBJ (NN 半决赛)))))) 
+	  </parse>
+	  <arg n="0">
+	  德波尔 
+	  </arg>
+	  <arg n="1">
+	  荷兰队 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 间断 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="activity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VCD (VA 庄严)
+					   (VA 独特))))
+			      (DEC 的)))
+		      (NP (NN 审制)
+			  (NN 形式)))
+	      (PU ，)
+	      (VP (PP-TMP (P 自)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (NP-TMP (ADJP (JJ 公元))
+					       (NP (NT ９６０年)))
+				       (VP (VV 建立))))
+			       (LC 以来)))
+		  (PP-TMP (ADVP (AD 直))
+			  (PP (P 至)
+			      (NP (NT 今天))))
+		  (PU ，)
+		  (ADVP (AD 从))
+		  (ADVP (AD 未))
+		  (VP (VV 间断)
+		      (AS 过)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  这 一 *OP* *T*-1 庄严 独特 的 审制 形式 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 *PRO* 公元 ９６０年 建立 以来 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  直 至 今天 
+	  </arg>
+	  <arg n="m" f="adv">
+	  从 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

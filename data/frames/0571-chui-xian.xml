@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 垂涎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="coveter"/>
+      <role argnum="1" argrole="thing coveted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (DP (DT 各))
+				      (NP (NN 方)))
+			      (VP (VV 垂涎)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (ADJP (JJ 先进))
+		  (NP (NN 技术))) 
+	  </parse>
+	  <arg n="0">
+	  各 方 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

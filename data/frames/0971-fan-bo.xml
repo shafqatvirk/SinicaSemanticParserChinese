@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 反驳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 反驳)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (NP (NN 国际)
+						  (NN 经济界))
+					      (QP (CD 一些))
+					      (NP (NN 人士)))
+				      (VP (VV 认为)
+					  (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 亚洲))
+							       (DEG 的))
+							  (NP (NN 经济)
+							      (NN 繁荣)))
+						  (VP (VV 必须)
+						      (VP (VV 遵循)
+							  (NP-OBJ (NN 西方)
+								  (NN 模式)))))))
+				  (DEC 的))
+			  (NP (NN 观点))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  国际 经济界 一些 人士 认为 亚洲 的 经济 繁荣 必须 遵循 西方 模式 的 观点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

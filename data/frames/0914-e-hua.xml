@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 恶化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="degree"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 约旦))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 希望)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 看到)
+				  (NP-OBJ (NN 局势))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 再次))
+					  (VP (VRD (VV 恶化)
+						   (VV 到))
+					      (NP-OBJ (CP-APP (IP (LCP-TMP (QP (CD 两)
+									       (CLP (M 周)))
+									   (LC 前))
+								  (NP-PN-SBJ (NR 美)
+									     (NR 英))
+								  (VP (PP-DIR (P 对)
+									      (NP-PN (NR 伊)))
+								      (VP (VV 发动)
+									  (NP-OBJ (NN 空中)
+										  (NN 打击)))))
+							      (DEC 的))
+						      (NP (NN 地步))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  两 周 前 美 英 对 伊 发动 空中 打击 的 地步 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 临 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="place arg0 arrives at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 领导人)))
+	      (VP (VP (VCD (VV 沐风)
+			   (VV 栉雨)))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 亲))
+			  (VP (VV 临)
+			      (NP-OBJ (NN 前线))))
+		      (VP (VV 指挥))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 领导人 
+	  </arg>
+	  <arg n="1">
+	  前线 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亲 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is next to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 南通市))
+	      (VP (VP (NP-LOC (NN 东))
+		      (VP (VV 临)
+			  (NP-PN-OBJ (NR 黄海))))
+		  (PU ，)
+		  (VP (NP-LOC (NN 南))
+		      (VP (VV 濒)
+			  (NP-PN-OBJ (NR 长江))))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (NP-PN (NR 中国))
+			      (QP (OD 首)
+				  (CLP (M 批)))
+			      (QP (CD 十四)
+				  (CLP (M 个)))
+			      (NP (NN 沿海)
+				  (NN 开放)
+				  (NN 城市)
+				  (NN 之一)))))) 
+	  </parse>
+	  <arg n="0">
+	  南通市 
+	  </arg>
+	  <arg n="1">
+	  黄海 
+	  </arg>
+	  <arg n="m" f="loc">
+	  东 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

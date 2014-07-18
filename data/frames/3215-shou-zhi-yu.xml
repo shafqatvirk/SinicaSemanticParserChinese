@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受制于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people restrained"/>
+      <role argnum="1" argrole="entity restrained by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-TPC (DNP (NP (NP-PN (NR 小浪底))
+				   (NP (NN 项目)))
+			       (DEG 的))
+			  (NP (NN 中方)
+			      (NN 人员)))
+		  (QP-SBJ (CD 大多数))
+		  (VP (VC 是)
+		      (VP (QP-ADV (OD 第一)
+				  (CLP (M 次)))
+			  (VP (VV 从事)
+			      (NP-OBJ (NN 国际)
+				      (NN 工程))))))
+	      (PU ，)
+	      (IP (ADVP (AD 但))
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (PP-LOC (P 在)
+			      (LCP (IP (NP-SBJ (-NONE- *pro*))
+				       (VP (PP (P 同)
+					       (NP (CP (WHNP-1 (-NONE- *OP*))
+						       (CP (IP (NP-TPC (-NONE- *T*-1))
+							       (NP-SBJ (NN 经验))
+							       (VP (VA 丰富)))
+							   (DEC 的)))
+						   (NP (NN 外国)
+						       (NN 承包商))))
+					   (VP (VV 打交道))))
+				   (LC 时)))
+		      (PU ，)
+		      (ADVP (AD 并))
+		      (VP (VV 未)
+			  (VP (ADVP (AD 因此))
+			      (VP (MSP 而)
+				  (VP (VV 受制于)
+				      (NP-OBJ (NN 人))))))))
+	      (PU ，)
+	      (IP (NP-SBJ (NP-APP (NN 工程)
+				  (NN 业主))
+			  (NP-PN (NR 小浪底)
+				 (NN 建管局)))
+		  (VP (VV 认为)
+		      (PU ，)
+		      (IP-OBJ (NP-PN-SBJ (PU “)
+					 (NR ＣＩＰＭ)
+					 (PU ”))
+			      (VP (VV 起)
+				  (AS 了)
+				  (NP-OBJ (ADJP (JJ 很大))
+					  (NP (NN 作用)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *pro* 同 *OP* *T*-1 经验 丰富 的 外国 承包商 打交道 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

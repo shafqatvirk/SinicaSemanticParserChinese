@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤回国 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="withdrawal inducer"/>
+      <role argnum="1" argrole="withdrawer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 俄罗斯))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 驻)
+				  (NP-PN-OBJ (NR 立陶宛)))))
+		      (NP (NN 军队)))
+	      (VP (ADVP (AD 已))
+		  (PP-TMP (P 于)
+			  (LCP (NP (NT １９９３年)
+				   (NT ８月)
+				   (NT ３１日))
+			       (LC 之前)))
+		  (VP (VV 撤回国)))) 
+	  </parse>
+	  <arg n="0">
+	  俄罗斯 *OP* *T*-1 驻 立陶宛 军队 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 １９９３年 ８月 ３１日 之前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

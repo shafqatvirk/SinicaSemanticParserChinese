@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 爬到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 climbs to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 到)
+				(NP-PN-OBJ (NR 淡水)))
+			    (VP (VV 看)
+				(NP-PN-OBJ (NR 淡水河)))))
+		(PU ，)
+		(VP (VV 得)
+		    (VP (VP (VV 想)
+			    (NP-OBJ (NN 办法)))
+			(VP (VP (VV 爬到)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (VP (ADVP (AD 很))
+							    (VP (VA 高)))
+							(VP (ADVP (AD 很))
+							    (VP (VA 高)))))
+						(DEC 的)))
+					(NP (NN 地方))))
+			    (VP (ADVP (AD 才))
+				(VP (VPT (VV 看)
+					 (DER 得)
+					 (VV 到))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 很 高 很 高 的 地方 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 到 淡水 看 淡水河 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

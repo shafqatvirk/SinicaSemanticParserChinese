@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搅乱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 messes up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 代表)
+				    (NP-OBJ (NN 开发)
+					    (NN 繁荣))))
+			    (DEC 的)))
+		    (NP (NN 高楼)
+			(NN 大厦)))
+	    (VP (VP (DVP (QP (CD 一)
+			     (CLP (M 层层)))
+			 (DEV 地))
+		    (VP (VV 盘据)
+			(NP-PN-OBJ (NR 淡水))))
+		(PU ，)
+		(VP (VV 搅乱)
+		    (AS 了)
+		    (NP-OBJ (NN 天际线)))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 弄皱)
+			(AS 了)
+			(NP-OBJ (NN 古镇)
+				(NN 风情)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 代表 开发 繁荣 的 高楼 大厦 
+	</arg>
+	<arg n="1">
+	天际线 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 又))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (NN 秩序))
+			    (VP (VV 搅乱)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	秩序 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

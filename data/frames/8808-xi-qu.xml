@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 袭取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 takes over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (-NONE- *pro*))
+		  (VP (VP (PP-TMP (P 在)
+				  (NP (NT 过去)))
+			  (VP (VC 是)
+			      (VP (PP-MNR (P 以)
+					  (NP (DNP (NP (NN 孙子))
+						   (DEG 的))
+					      (NP (NN 位置)
+						  (NN 立场))))
+				  (VP (MSP 去)
+				      (VP (VV 理解)
+					  (NP-OBJ (NN 祖父)))))))
+		      (PU ，)
+		      (VP (NP-TMP (NT 现在))
+			  (ADVP (AD 却))
+			  (ADVP (AD 转而))
+			  (VP (VV 变成)
+			      (IP-OBJ (NP-SBJ (PN 自身))
+				      (VP (VV 袭取)
+					  (AS 了)
+					  (NP-OBJ (DNP (NP (NN 祖父))
+						       (DEG 的))
+						  (NP (NN 角度))))))))) 
+	  </parse>
+	  <arg n="0">
+	  自身 
+	  </arg>
+	  <arg n="1">
+	  祖父 的 角度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

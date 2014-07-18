@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 丢掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing got rid of or lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 当然))
+	      (PU ，)
+	      (PP-TMP (P 在)
+		      (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 发展)
+					  (NP-OBJ (NN 工商业))))
+				  (DEC 的))
+			  (NP (NN 同时))))
+	      (PU ，)
+	      (NP-SBJ (NN 大寨人))
+	      (VP (ADVP (AD 并))
+		  (VP (VV 没有)
+		      (VP (VV 丢掉)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 前辈))
+					      (VP (QP-ADV (CD 一)
+							  (CLP (M 镐)))
+						  (QP-ADV (CD 一)
+							  (CLP (M 锄)))
+						  (VP (VV 开垦)
+						      (NP-OBJ (-NONE- *T*-1)))))
+					  (DEC 的)))
+				  (NP (NN 田地))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  大寨人 
+	  </arg>
+	  <arg n="1">
+	  *OP* 前辈 一 镐 一 锄 开垦 *T*-1 的 田地 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 发展 工商业 的 同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

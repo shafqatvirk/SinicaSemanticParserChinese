@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 讨债 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 demands to pay back debt"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 杨光南) )
+	      (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (PP-PRP (P 因)
+					       (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 涉嫌)
+						       (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							       (VP (VP (VV 开设)
+								       (NP-OBJ (ADJP (JJ 地下))
+									       (NP (NN 钱庄) )))
+								   (PU 、)
+								   (VP (NP-MNR (NN 暴力) )
+								       (VP (VV 讨债))))))))
+				       (PU ，)
+				       (VP (SB 遭)
+					   (VP (VV 通缉)))))
+			       (LC 後))
+		      (VP (VV 潜逃)
+			  (NP-OBJ (NN 大陆) )))
+		  (VP (LB 被)
+		      (IP-OBJ (NP-SBJ (NN 警方) )
+			      (VP (VV 列为)
+				  (NP-OBJ (NP (NN 治平)
+					      (NN 专案))
+					  (NP (NN 检肃)
+					      (NN 对象)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  暴力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

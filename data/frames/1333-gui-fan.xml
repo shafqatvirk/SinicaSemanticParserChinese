@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 规范 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="regulator, regulation"/>
+      <role argnum="1" argrole="thing regulated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (QP (CD 一)
+		      (CLP (M 系列)))
+		  (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (VV 规范)
+				  (NP-OBJ (NN 建设)
+					  (NN 市场))))
+			  (DEC 的)))
+		  (NP (NN 文件))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  建设 市场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PRD (QP (CD 一)
+		      (CLP (M 个)))
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VA 规范)
+				  (PU 、)
+				  (VA 有序)))
+			  (DEC 的)))
+		  (NP (NN 市场)))
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 怀有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="harborer"/>
+      <role argnum="1" argrole="idea, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-SBJ (NP-PN-SBJ (NR 张学良))
+			  (VP (VV 建设)
+			      (NP-OBJ (NN 东北))))
+		  (VP (VP (VC 是)
+			  (VP (PP-DIR (P 从)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VA 强烈)))
+						  (DEC 的)))
+					  (NP (NN 爱国心))))
+			      (VP (VV 出发))))
+		      (PU ，)
+		      (VP (VV 怀有)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 捍卫)
+						      (NP-OBJ (NN 国家)
+							      (NN 权益)))
+						  (PU ，)
+						  (VP (VV 抵御)
+						      (NP-OBJ (NN 外侮)))))
+					  (DEC 的))
+				  (NP (NN 目的)))))) 
+	  </parse>
+	  <arg n="0">
+	  张学良 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 捍卫 国家 权益 ， 抵御 外侮 的 目的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

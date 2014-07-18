@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 弃如敝屣 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 discards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (NP-TMP (NT 以往))
+				    (VP (SB 被)
+					(VP (VV 弃如敝屣)))))
+			    (DEC 的)))
+		    (NP (NN 虾蟹壳)))
+	    (PU ，)
+	    (VP (NP-TMP (NT 如今))
+		(VP (VRD (VV 提炼)
+			 (VV 出))
+		    (NP-OBJ (PU 「)
+			    (NN 甲壳素)
+			    (PU 」))))) 
+	</parse>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="tmp">
+	以往 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

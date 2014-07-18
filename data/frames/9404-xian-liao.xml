@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 闲聊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people engaged in casual talk"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 之後))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 邓相扬))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 只要))
+			      (ADVP (AD 一))
+			      (VP (VV 有空))))
+		  (ADVP (AD 就))
+		  (VP (VP (PP-DIR (P 往)
+				  (NP (NN 部落)))
+			  (VP (VV 跑)))
+		      (PU ，)
+		      (VP (VP (VV 找)
+			      (NP-OBJ (NN 老人家)))
+			  (VP (VV 闲聊)))))) 
+	  </parse>
+	  <arg n="0">
+	  邓相扬 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 只要 一 有空 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  之後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

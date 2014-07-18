@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 听来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing that sounds to be true"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PU 「)
+		    (DNP (NP (NN 台北人))
+			 (DEG 的))
+		    (NP (NN 玩意儿))
+		    (PU 」))
+	    (VP (VV 听来)
+		(VP (VV 充满)
+		    (AS 了)
+		    (NP-OBJ (DNP (NP (ADJP (JJ 中产))
+				     (NP (NN 阶级)))
+				 (DEG 的))
+			    (NP (NN 洋)
+				(NN 味道)))))) 
+	</parse>
+	<arg n="0">
+	「 台北人 的 玩意儿 」 
+	</arg>
+	<arg n="0" f="prd">
+	充满 了 中产 阶级 的 洋 味道 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

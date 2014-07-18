@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搪塞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 gives excuse to"/>
+      <role argnum="2" argrole="thing excuse is given for"/>
+      <role argnum="3" argrole="excuse"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP (AD 已经))
+		  (ADVP (AD 不))
+		  (VP (VV 能)
+		      (VP (VP (VV 用)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (ADVP (AD 过於))
+						      (VP (VA 热情))))
+					      (DEC 的))
+				      (NP (NN 藉口))))
+			  (VP (MSP 来)
+			      (VP (VV 搪塞))))))) 
+	  </parse>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

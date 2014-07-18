@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放慢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 受)
+			      (NP-OBJ (CP-APP (IP (IP (NP-SBJ (NP-PN (NR 日本)
+								     (CC 和)
+								     (NR 亚洲))
+							      (NP (NN 经济)))
+						      (VP (ADVP (AD 不))
+							  (VP (VA 景气))))
+						  (CC 及)
+						  (IP (NP-TPC (DP (DT 这些))
+							      (NP (NN 国家)))
+						      (NP-SBJ (NN 货币))
+						      (VP (VV 贬值))))
+					      (DEC 的))
+				      (NP (NN 影响)))))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 经济)
+			      (NN 增长)))
+		  (VP (ADVP (AD 也))
+		      (ADVP (AD 将))
+		      (VP (VV 放慢)
+			  (NP-OBJ (NN 速度))))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  中国 经济 增长 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	  <arg n="1" f="pse">
+	  速度 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-TMP (NT 今年))
+		  (NP-SBJ (NN 世界)
+			  (NN 原油)
+			  (NN 需求)
+			  (NN 增长)
+			  (NN 速度))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 放慢)))) 
+	  </parse>
+	  <arg n="1">
+	  世界 原油 需求 增长 速度 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

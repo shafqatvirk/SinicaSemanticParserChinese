@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹措 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="solicitor"/>
+      <role argnum="1" argrole="fund"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (CC 既)
+		  (VP (VV 要)
+		      (VP (ADVP (AD 积极))
+			  (VP (VV 筹措)
+			      (NP-OBJ (NN 国外)
+				      (NN 贷款)))))
+		  (PU ,)
+		  (CC 也)
+		  (VP (VV 要)
+		      (VP (VV 吸引)
+			  (NP-OBJ (NP (NN 外商))
+				  (ADJP (JJ 直接))
+				  (NP (NN 投资))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  国外 贷款 
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 四十八)
+			      (CLP (M 家)))
+			  (NP (NN 化工))
+			  (ADJP (JJ 国有))
+			  (NP (NN 企市)))
+		  (VP (VP (VV 成为)
+			  (NP-OBJ (NN 上市)
+				  (NN 公司)))
+		      (PU ，)
+		      (VP (VV 筹措)
+			  (NP-OBJ (NN 资金))
+			  (QP-EXT (CD 一百五十亿)
+				  (CLP (M 元))))))
+	  </parse>
+	  <arg n="0">
+	  四十八 家 化工 国有 企市 
+	  </arg>
+	  <arg n="1">
+	  资金 
+	  </arg>
+	  <arg n="m" f="ext">
+	  一百五十亿 元 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

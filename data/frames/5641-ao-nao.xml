@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 懊恼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is upset about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 令)
+		  (NP-OBJ (PN 他))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 十分))
+			  (VP (VV 懊恼)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  十分 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 结果))
+	      (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VP (DVP (VP (VA 冲动))
+					(DEV 地))
+				   (VP (VV 辞掉)
+				       (NP-OBJ (NN 工作))))
+			       (PU 、)
+			       (CC 或是)
+			       (VP (DVP (VP (VV 糊里糊涂)))
+				   (VP (VV 发生)
+				       (NP-OBJ (NN 外遇))))))
+		       (LC 後))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 才))
+		  (VP (VV 懊恼)
+		      (IP-OBJ (NP-SBJ (PN 自己))
+			      (VP (VV 陷入)
+				  (AS 了)
+				  (NP-OBJ (DP (DT 另)
+					      (QP (CD 一)
+						  (CLP (M 个))))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (ADVP (AD 更))
+							  (VP (VA 大))))
+						  (DEC 的)))
+					  (NP (NN 困境)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	
+	  </arg>
+	  <arg n="1">
+	  自己 陷入 了 另 一 个 *OP* *T*-1 更 大 的 困境 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 	
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 冲动 地 辞掉 工作 、 或是 糊里糊涂 发生 外遇 後 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  结果 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

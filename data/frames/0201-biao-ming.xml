@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 标明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing marked"/>
+      <role argnum="2" argrole="location"/>
+      <role argnum="3" argrole="symbol"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-OBJ (NP-SBJ (QP (CD 一些))
+			    (NP (NN 欧元国)))
+		    (VP (ADVP (AD 已经))
+			(VP (VV 开始)
+			    (VP (PP-LOC (P 在)
+					(LCP (NP (NN 商品))
+					     (LC 上)))
+				(VP (VV 标明)
+				    (NP-OBJ (NN 欧元)
+					    (NN 价格)))))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 欧元国 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已经 	  
+	  </arg>
+	  <arg n="2">
+	  在 商品 上 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  欧元 价格 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 封面))
+		(VP (VP (VV 标明)
+			(NP-OBJ (PU 「)
+				(CP (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-TMP (NT 一九九七年))
+					(NP-SBJ (NN 宪报))
+					(VP (VV 公布)
+					    (NP (-NONE- *T*-2)))))
+				(NP (DP (DT 各)
+					(CLP (M 组)))
+				    (NP (ADJP (JJ 公共))
+					(ADJP (JJ 小型))
+					(NP (NN 巴士)))
+				    (PRN (PU （)
+					 (NP (NN 专线))
+					 (PU ）))
+				    (NP (NN 路线)))
+				(NP (NN 客运)
+				    (NN 牌照)
+				    (NN 申请书))
+				(PU 」)))
+		    (PU ，)
+		    (CC 和)
+		    (VP (VV 密封)
+			(ADVP (AD 妥当)))))) 
+	  </parse>
+	  <arg n="2">
+	  封面 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  「 *OP* 一九九七年 宪报 公布 *T*-2 各 组 公共 小型 巴士 （ 专线 ） 路线 客运 牌照 申请书 」 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg3"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP (ADJP (JJ 红))
+			    (NP (NN 币)))
+			(NP (NN 图案)))
+		(VP (VV 标明)
+		    (NP-OBJ (NP (DP (DT 各))
+				(NP (NN 成员国)))
+			    (DNP (PP (P 在)
+				     (LCP (NP (NN 地球仪))
+					  (LC 上)))
+				 (DEG 的))
+			    (NP (NN 位置)))))) 
+	  </parse>
+	  <arg n="3">
+	  红 币 图案 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  各 成员国 在 地球仪 上 的 位置 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

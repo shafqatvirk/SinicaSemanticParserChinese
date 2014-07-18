@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 成为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="result"/>
+      <role argnum="2" argrole="cause"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 外商)
+			  (NN 投资)
+			  (NN 企业))
+		  (VP (VV 成为)
+		      (NP-OBJ (NP (NP-PN (NR 中国))
+				  (NP (NN 外贸)))
+			      (ADJP (JJ 重要))
+			      (NP (NN 增长点))))) 
+	  </parse>
+	  <arg n="0">
+	  外商 投资 企业 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中国 外贸 重要 增长点 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 通过)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 国际)
+					      (NN 人权)
+					      (NN 法典))
+				      (VP (VP (VV 国内化))
+					  (PU ，)
+					  (VP (VV 成为)
+					      (NP-OBJ (NP-PN (NR 台湾))
+						      (NP (NN 人权)
+							  (NN 法典)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  国际 人权 法典 
+	  </arg>
+	  <arg n="1">
+	  台湾 人权 法典 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

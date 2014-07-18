@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing extracted/withdrawn"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国)
+			     (NN 中医)
+			     (NN 研究院))
+		      (NP (NN 研究)
+			  (NN 人员)))
+	      (VP (NP-TMP (NT 今天))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (PN 他们))
+			      (VP (ADVP (AD 已))
+				  (DVP (VP (VA 成功))
+				       (DEV 地))
+				  (PP-DIR (P 从)
+					  (LCP (NP (NN 草药))
+					       (LC 中)))
+				  (VP (VRD (VV 提取)
+					   (VV 出))
+				      (NP-OBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (PP-DIR (P 对)
+									      (NP (NN 糖尿病)))
+								      (VP (VE 有)
+									  (NP-OBJ (ADJP (JJ 特殊))
+										  (NP (NN 疗效))))))
+							      (DEC 的)))
+						      (ADJP (JJ 新))
+						      (NP (NN 药)))
+					      (NP-PN (PU “)
+						     (NN 糖脉康)
+						     (PU ”))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 对 糖尿病 有 特殊 疗效 的 新 药 “ 糖脉康 ” 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 草药 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  成功 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

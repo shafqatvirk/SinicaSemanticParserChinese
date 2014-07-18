@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 直航 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity sailing"/>
+      <role argnum="1" argrole="location arg0 sails to"/>
+      <role argnum="2" argrole="location arg0 sails from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 厦门港))
+	      (VP (NP-TMP (NT 今年))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHPP-3 (-NONE- *OP*))
+				  (IP (NP-SBJ (NP (NN 海峡))
+					      (QP (CD 两))
+					      (NP (NN 岸)))
+				      (VP (PP-LOC (-NONE- *T*-3))
+					  (VP (VV 直航)))))
+			      (NP (NN 试点港)))))) 
+	  </parse>
+	  <arg n="1">
+	  海峡 两 岸 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,158 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 呼吁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party making the appeal"/>
+      <role argnum="1" argrole="party appealed to"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NN 安理会))
+		  (VP (VV 呼吁)
+		      (NP-OBJ (NP (NP-PN (NR 安哥拉))
+				  (NP (NN 冲突)))
+			      (NP (PN 双方)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 协助)
+			      (NP-OBJ (-NONE- *pro*))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 寻找)
+				      (NP-OBJ (NN 空难)
+					      (NN 幸存者)))))))) 
+	  </parse>
+	  <arg n="0">
+	  安理会 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  安哥拉 冲突 双方 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 协助 *pro* *PRO* 寻找 空难 幸存者 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 陈元))
+		  (VP (VV 呼吁)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 加强)
+				      (NP-OBJ (NN 国际)
+					      (NN 合作)))
+				  (VP (VV 推动)
+				      (NP-OBJ (NN 世界)
+					      (NN 经济)
+					      (NN 发展))))))) 
+	  </parse>
+	  <arg n="0">
+	  陈元 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *PRO* 加强 国际 合作 推动 世界 经济 发展 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="appeal maker"/>
+      <role argnum="1" argrole="content of the appeal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 专家))
+		  (VP (VV 呼吁)
+		      (PU ，)
+		      (IP-OBJ (NP-PN-SBJ (NR 可可西里))
+			      (VP (VV 亟待)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 加大)
+					      (NP-OBJ (NN 保护)))))))) 
+	  </parse>
+	  <arg n="0">
+	  专家 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  可可西里 亟待 *PRO* 加大 保护 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 昨天))
+	      (NP-SBJ (NP-APP (NP-PN (NR 新泽西)
+				     (NR 网队))
+			      (NP (NN 明星)))
+		      (NP-PN (NR 威廉姆斯)))
+	      (VP (ADVP (AD 便))
+		  (ADVP (AD 也))
+		  (VP (VV 加入)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 呼吁)
+					      (NP-OBJ (ADJP (JJ 公开))
+						      (NP (NN 投票)))))
+				      (DEC 的)))
+			      (NP (NN 阵营)))))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(阵营) 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  公开 投票 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP (P 除)
+	      (LCP (IP (NP-PN-SBJ (NR 威廉姆斯)
+				  (CC 和)
+				  (NR 威利斯))
+		       (VP (ADVP (AD 公开))
+			   (VP (VV 呼吁))))
+		   (LC 外))) 
+	  </parse>
+	  <arg n="0">
+	  威廉姆斯 和 威利斯 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  公开 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

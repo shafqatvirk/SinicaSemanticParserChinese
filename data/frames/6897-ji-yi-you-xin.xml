@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 记忆犹新 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 has fresh memory of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DP (DT 每)
+			(QP (CD 一)
+			    (CLP (M 件))))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 细微)))
+			    (DEC 的)))
+		    (NP (NN 事)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 都))
+		(VP (VV 记忆犹新)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	每 一 件 *OP* *T*-1 细微 的 事 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

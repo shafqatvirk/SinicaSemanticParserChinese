@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 距今 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="time lapse between arg0 and present"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 却))
+		(ADVP (AD 不))
+		(VP (VV 知)
+		    (IP-OBJ (NP-SBJ (NP (ADJP (JJ 浪漫))
+					(NP (NN 传说)))
+				    (NP (NN 背後)))
+			    (VP (VV 埋藏)
+				(AS 著)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 个)))
+					(CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VV 距今)
+							    (LCP-OBJ (QP (QP (CD 四千八百)
+									     (CLP (M 年)))
+									 (CC 到)
+									 (QP (CD 两千八百)
+									     (CLP (M 年))))
+								     (LC 之间))))
+						    (PU ，)
+						    (IP (NP-TPC (-NONE- *T*-1))
+							(NP-SBJ (NN 面积))
+							(VP (VV 超过)
+							    (QP-OBJ (CD 十五)
+								    (CLP (M 平方公里)))))
+						    (PU 、)
+						    (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (PP-LGS (P 由)
+								    (NP (QP (CD 数十)
+									    (CLP (M 个)))
+									(NP (NN 文化)
+									    (NN 点))))
+							    (VP (MSP 所)
+								(VP (VV 组成))))))
+						(DEC 的)))
+					(NP (ADJP (JJ 大型))
+					    (NP (NN 遗址)))
+					(NP (NN 群)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	四千八百 年 到 两千八百 年 之间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

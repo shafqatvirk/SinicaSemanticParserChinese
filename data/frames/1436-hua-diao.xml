@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 花掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="spender"/>
+      <role argnum="1" argrole="thing spent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (VP (VV 花掉)
+				  (NP-OBJ (ADJP (JJ 巨额))
+					  (NP (NN 经费))))
+			      (VP (VV 研制)
+				  (NP-OBJ (-NONE- *T*-1)))))
+		      (DEC 的)))
+	      (NP (NN 卫星))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  巨额 经费 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

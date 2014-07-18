@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 holds and weighs arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TPC (DT 每)
+		      (QP (CD 一)
+			  (CLP (M 样))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 可以)
+		      (VP (VP (VV 掂)
+			      (PP (P 在)
+				  (LCP (NP (NN 手))
+				       (LC 上))))
+			  (VP (ADVP (AD 细细))
+			      (VP (VV 估量))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  每 一 样 
+	  </arg>
+	  <arg n="2">
+	  在 手 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

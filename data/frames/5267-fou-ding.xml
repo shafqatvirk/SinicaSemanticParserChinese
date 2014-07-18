@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 否定 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 negates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-TPC-1 (IP-CND (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不))
+				(VP (VV 否定)
+				    (NP-PN-OBJ (NR 王莽)))))
+		    (PU ，)
+		    (NP-SBJ (NP-PN-APP (NR 东汉)
+				       (NR 光武帝))
+			    (NP-PN (NR 刘秀)))
+		    (VP (ADVP-WH (AD 如何))
+			(VP (VV 肯定)
+			    (NP-OBJ (PN 自己))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	王莽 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 社会))
+	    (VP (VP (ADVP (AD 更))
+		    (VP (VA 开放)))
+		(PU ，)
+		(VP (ADVP (AD 不))
+		    (ADVP (AD 再))
+		    (PP (P 像)
+			(NP (NT 过去)))
+		    (VP (VV 采取)
+			(NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 压抑)
+					    (PU 、)
+					    (VV 否定)))
+				(NP (NN 态度))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

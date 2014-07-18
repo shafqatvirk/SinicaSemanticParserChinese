@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 毁谤 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 slanders"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 报导)
+			     (NN 故事))
+			 (DEG 的))
+		    (NP (NN 人物)
+			(NN 之一))
+		    (PRN (PU ——)
+			 (NP (DNP (NP-PN (NR 下山宏)
+					 (CC 与)
+					 (NR 佐冢丰子))
+				  (DEG 的))
+			     (NP (NN 外孙)))))
+	    (VP (VP (VV 提出)
+		    (NP-OBJ (QP (CD 七)
+				(CLP (M 条)))
+			    (NP (NN 罪状))))
+		(PU ，)
+		(VP (VV 状告)
+		    (NP-PN-OBJ (NR 邓相扬))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 毁谤)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

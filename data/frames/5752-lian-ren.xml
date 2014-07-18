@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 连任 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="position arg0 continues to hold"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (PP-DIR (P 从)
+				    (UCP (NP (ADJP (JJ 执业))
+					     (NP (NN 律师)))
+					 (PU 、)
+					 (IP (NP-SBJ (-NONE- *PRO*))
+					     (VP (PP-BNF (P 为)
+							 (NP (NN 反对党)))
+						 (VP (VV 辩护))))))
+			    (VP (VV 踏入)
+				(NP-OBJ (NN 政界))))
+			(PU ，)
+			(VP (VV 连任)
+			    (NP-OBJ (QP (CD 多)
+					(CLP (M 届)))
+				    (NP (NN 立法)
+					(NN 委员))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 陈水扁))
+	    (VP (VP (VV 顶)
+		    (AS 著)
+		    (NP-OBJ (DNP (NP (NN 反对党)
+				     (NN 政治)
+				     (NN 明星))
+				 (DEG 的))
+			    (NP (NN 光环))))
+		(PU ，)
+		(VP (PP-BNF (P 为)
+			    (NP-PN (NR 民进党)))
+		    (VP (VV 拿下)
+			(NP-OBJ (DNP (NP (NN 首善之都))
+				     (DEG 的))
+				(NP (NN 执政权))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	多 届 立法 委员 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 江泽民))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 想)
+				(VP (VV 连任)))
+			    (PU ，)
+			    (VP (VV 想)
+				(VP (VV 建立)
+				    (NP-OBJ (NN 功名))))))
+		(PU ，)
+		(ADVP-WH (AD 是否))
+		(VP (VV 会)
+		    (VP (VV 利用)
+			(NP-OBJ (NN 民族主义)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

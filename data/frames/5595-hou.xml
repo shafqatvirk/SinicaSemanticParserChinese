@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 厚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 gives favor to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (NP (IP-APP (NP-SBJ (-NONE- *pro*))
+				(VP (NP-TMP (NT 当时))
+				    (ADVP (AD 独))
+				    (VP (VV 厚)
+					(NP-OBJ (NN 中原)
+						(NN 文化)))))
+			(NP (NN 时期))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 许常惠))
+	    (VP (VP (VV 开)
+		    (NP-OBJ (DNP (NP (NN 风气))
+				 (DEG 之))
+			    (NP (NN 先))))
+		(PU ，)
+		(VP (VV 进行)
+		    (AS 了)
+		    (NP-OBJ (DNP (NP (NP-PN (NR 台湾))
+				     (NP (NN 南管)
+					 (NN 音乐)
+					 (PU 、)
+					 (NN 客家)
+					 (NN 八音)
+					 (PU ，)
+					 (CC 以及)
+					 (NN 原住民)
+					 (NN 音乐)
+					 (ETC 等)))
+				 (DEG 的))
+			    (NP (NN 采集)
+				(NN 保存))))
+		(PU ，)
+		(VP (PP-BNF (P 为)
+			    (NP (NP-PN (NR 台湾))
+				(NP (NN 音乐史))))
+		    (VP (VRD (VV 架构)
+			     (VV 出))
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 清晰)))
+					(DEC 的)))
+				(NP (NN 轮廓))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	中原 文化 
+	</arg>
+	<arg n="m" f="adv">
+	独 
+	</arg>
+	<arg n="m" f="tmp">
+	当时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 角质层))
+	    (VP (ADVP (AD 太))
+		(VP (VA 厚)))) 
+	</parse>
+	<arg n="0">
+	角质层 
+	</arg>
+	<arg n="m" f="adv">
+	太 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

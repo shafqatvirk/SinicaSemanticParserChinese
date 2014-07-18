@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 订置 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes reservation for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 再不然))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 花)
+			    (NP-OBJ (NN 钱))))
+		(VP (VP (VV 去)
+			(NP-OBJ (NN 饭店)))
+		    (VP (VV 订置)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 桌)))
+				(NP (NN 年夜饭))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一 桌 年夜饭 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 花 钱 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="dis">
+	再不然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

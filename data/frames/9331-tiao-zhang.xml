@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调涨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="amount by which arg0 raises arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-PRP (P 因为)
+		      (IP (IP (NP-SBJ (NN 旅客))
+			      (VP (VA 不足)))
+			  (PU ，)
+			  (IP (NP-SBJ (NN 成本))
+			      (VP (ADVP (AD 太))
+				  (VP (VA 高))))))
+	      (PU ，)
+	      (NP-SBJ (NN 票价))
+	      (VP (PP-TMP (P 在)
+			  (NP (DP (DT 前))
+			      (NP (NN 年度))))
+		  (VP (VV 调涨)
+		      (AS 了)
+		      (QP-OBJ (CD 三千多)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="1">
+	  票价 
+	  </arg>
+	  <arg n="2">
+	  三千多 元 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 前 年度 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 旅客 不足 ， 成本 太 高 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

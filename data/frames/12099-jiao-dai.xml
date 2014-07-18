@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交代 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes clear"/>
+      <role argnum="2" argrole="entity arg1 is made clear to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (CP (WHNP-7 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-7))
+				  (VP (VV 开场)))
+			      (DEC 的)))
+		      (QP (CD 十几)
+			  (CLP (M 集))))
+	      (VP (VV 做完)
+		  (NP-OBJ (DNP (NP (NN 时代)
+				   (NN 背景))
+			       (DEG 的))
+			  (NP (NN 交代))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-7 开场 的 十几 集 
+	  </arg>
+	  <arg n="1">
+	  时代 背景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-TMP (NT 一九九０年))
+		      (VP (VP (VC 是)
+			      (NP-PRD (QP (CD 八百九十九))
+				      (NP (NN 人))))
+			  (PU ，)
+			  (VP (VV 开始)
+			      (VP (VV 呈)
+				  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 下降)))
+					  (NP (NN 趋势)))))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 一九九五年))
+		      (VP (VC 为)
+			  (NP-PRD (QP (CD 五百五十五))
+				  (NP (NN 人)))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 一九九七年))
+		      (VP (VV 降为)
+			  (NP-OBJ (QP (CD 四百一十五))
+				  (NP (NN 人))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="3">
+	  四百一十五 人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九七年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

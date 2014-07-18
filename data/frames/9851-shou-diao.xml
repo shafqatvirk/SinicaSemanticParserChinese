@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 closes down"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 冰果)
+				   (NN 生意))
+			   (VP (PP-PRP (P 因)
+				       (IP (NP-SBJ (NN 体力))
+					   (VP (ADVP (AD 不))
+					       (VP (VV 胜)
+						   (NP-OBJ (NN 负荷))))))
+			       (VP (VV 收掉))))
+		       (LC 後))
+	      (PU ，)
+	      (IP (IP (NP-SBJ (QP (CD 几)
+				  (CLP (M 次)))
+			      (NP (NN 转业)))
+		      (VP (ADVP (AD 都))
+			  (ADVP (AD 不))
+			  (VP (VA 成功))))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 只))
+			  (VP (VV 能)
+			      (VP (PP-MNR (P 靠著)
+					  (NP (NN 房租)
+					      (CC 和)
+					      (NN 定存)))
+				  (VP (VV 过)
+				      (NP-OBJ (NN 日子))))))))) 
+	  </parse>
+	  <arg n="1">
+	  冰果 生意 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 体力 不 胜 负荷 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

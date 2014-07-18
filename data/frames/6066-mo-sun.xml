@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 磨损 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 wears out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 看到)
+		      (AS 了)
+		      (NP-OBJ (LCP (NP (NP (ADJP (JJ 老))
+					   (NP (NN 智慧)))
+				       (NP (ADJP (JJ 老))
+					   (NP (NN 规矩))))
+				   (LC 里))
+			      (QP (CD 一些))
+			      (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 时间))
+					  (VP (VPT (VV 磨损)
+						   (AD 不)
+						   (VV 掉))
+					      (NP-OBJ (-NONE- *T*-4))))
+				      (DEC 的)))
+			      (ADJP (JJ 闪烁))
+			      (NP (NN 星光)))))) 
+	  </parse>
+	  <arg n="0">
+	  时间 	
+	  </arg>
+	  <arg n="1">
+	  *T*-4 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="1" f="psr">
+	  许多 所谓 的 政治犯 、 思想犯 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  他们 *OP* *T*-2 宝贵 的 人生 岁月 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

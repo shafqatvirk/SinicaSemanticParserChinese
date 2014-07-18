@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 号 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 names"/>
+      <role argnum="2" argrole="name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (DNP (NP (NN 耳顺) )
+				(DEG 之))
+			   (NP (NN 年) ))
+		       (LC 以後))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 王壮为) )
+	      (VP (VP (ADVP (AD 自))
+		      (VP (VV 号)
+			  (NP-PN-OBJ (PU 「)
+				     (NR 渐斋)
+				     (PU 」))))
+		  (PU ，)
+		  (VP (VV 自称)
+		      (NP-PN-OBJ (PU 「)
+				 (NR 渐叟)
+				 (PU 」)))
+		  (PU ，)
+		  (VP (PP-BNF (P 为)
+			      (NP (PN 自己)))
+		      (VP (VV 刻)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 一))
+				  (NP (NN 印) )))))) 
+	  </parse>
+	  <arg n="0">
+	  王壮为 
+	  </arg>
+	  <arg n="2">
+	  「 渐斋 」 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  耳顺 之 年 以後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 属于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity belong to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 属于)
+		  (NP-OBJ (ADJP (JJ 高))
+			  (ADJP (JJ 寒))
+			  (NP (NN 地区))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  高 寒 地区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 维阿里))
+	      (VP (ADVP (AD 也))
+		  (VP (VC 是)
+		      (VP (VV 属于)
+			  (VP (VV 少年得志)))))) 
+	  </parse>
+	  <arg n="0">
+	  维阿里 
+	  </arg>
+	  <arg n="1">
+	  少年得志 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

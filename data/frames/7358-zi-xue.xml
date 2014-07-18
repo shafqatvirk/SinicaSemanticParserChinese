@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自学 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 does self-study to learn"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可是))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (VRD (VV 反)
+					 (VV 过来))))
+			(VP (VV 想))))
+	    (PU ，)
+	    (CP-CND (ADVP (CS 如果))
+		    (IP (NP-PN-SBJ (NR 张拓芜))
+			(VP (PP-TMP (P 从)
+				    (LCP (NP (NN 年轻))
+					 (LC 时)))
+			    (ADVP (AD 就))
+			    (VP (VV 关心)
+				(IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP-WH (AD 如何))
+					      (VP (VV 累积)
+						  (NP-OBJ (NN 财富)))))))))
+	    (PU ，)
+	    (ADVP (AD 恐怕))
+	    (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 根本))
+		    (ADVP (AD 不))
+		    (VP (VV 会)
+			(VP (VP (ADVP (AD 刻苦))
+				(VP (VV 自学)))
+			    (PU 、)
+			    (VP (PP-DIR (P 从)
+					(NP (NN 小兵)))
+				(VP (VV 变)
+				    (NP-OBJ (NN 作家)))))))
+		(PU ，)
+		(VP (ADVP (AD 更))
+		    (VP (VPT (VV 写)
+			     (AD 不)
+			     (VV 出))
+			(NP-OBJ (NP-TTL-APP (PU 《)
+					    (NN 代马)
+					    (NN 输卒)
+					    (NN 手记)
+					    (PU 》))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 这样))
+						(VP (VA 感人))))
+					(DEC 的)))
+				(NP (NN 作品))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="m" f="adv">
+	刻苦 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	根本 
+	</arg>
+	<arg n="m" f="adv">
+	恐怕 
+	</arg>
+	<arg n="m" f="cnd">
+	如果 张拓芜 从 年轻 时 就 关心 *PRO* 如何 累积 财富 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* *PRO* 反 过来 想 
+	</arg>
+	<arg n="m" f="dis">
+	可是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

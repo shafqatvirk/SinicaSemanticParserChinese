@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 代为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 does on behalf of someone else"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 後来))
+	      (NP-SBJ (NP-PN (NR 中影))
+		      (DNP (NP (NT 当时))
+			   (DEG 的))
+		      (NP (NN 制片部)
+			  (NN 经理)))
+	      (VP (VV 请)
+		  (NP-OBJ (PN 他))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 企画案))
+				  (VP (VV 交由)
+				      (NP-PN-OBJ (NR 中影))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 代为)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 申请))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 申请 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

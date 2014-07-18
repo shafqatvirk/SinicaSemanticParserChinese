@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 弥漫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="location"/>
+      <role argnum="1" argrole="thing pervading"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 四处))
+	      (VP (VV 弥漫)
+		  (AS 着)
+		  (NP-OBJ (DNP (NP (NN 硫磺))
+			       (DEG 的))
+			  (NP (NN 臭味))))) 
+	  </parse>
+	  <arg n="0">
+	  四处 
+	  </arg>
+	  <arg n="1">
+	  硫磺 的 臭味 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

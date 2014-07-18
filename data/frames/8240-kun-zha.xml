@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 困扎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 binds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 届时))
+	      (NP-SBJ (PN 大家))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (DNP (LCP (NP (NN 家))
+					    (LC 里))
+				       (DEG 的))
+				  (ADJP (JJ 废))
+				  (NP (NN 报纸)))
+			  (VP (VP (VRD (VV 拿)
+				       (VV 出来)))
+			      (PU ，)
+			      (VP (VRD (VV 困扎)
+				       (VV 成堆)))
+			      (PU ，)
+			      (VP (VV 放)
+				  (PP (P 在)
+				      (LCP (NP (NN 垃圾)
+					       (NN 桶))
+					   (LC 旁)))))))) 
+	  </parse>
+	  <arg n="0">
+	  大家 
+	  </arg>
+	  <arg n="1">
+	  家 里 的 废 报纸 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  届时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

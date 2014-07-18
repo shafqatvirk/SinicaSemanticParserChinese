@@ -1,0 +1,115 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 主办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-PN-SBJ (NR 新华社))
+			      (VP (VV 主办)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP-PN (NP-TTL (PU 《)
+				 (NN 了望)
+				 (PU 》))
+			 (NP (NN 周刊)))) 
+	  </parse>
+	  <arg n="0">
+	  新华社 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (NP-TMP (NN 活动)
+		      (NT 当天))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 主办))))
+		      (NP (NN 单位)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 组织)
+		      (NP-OBJ (DNP (LCP (NP (QP (CD 三千))
+					    (NP (NN 人)))
+					(LC 以上))
+				   (DEG 的))
+			      (NP (NN 海外)
+				  (NN 旅游团)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (PP-LGS (P 由)
+					  (NP (NP (NP-PN (NR 中国)
+							 (NN 贸易)
+							 (NN 促进会))
+						  (NP-PN (NR 广东)
+							 (NN 分会)))
+					      (CC 与)
+					      (NP-PN (NP-PN (NR 香港))
+						     (NP-PN (NR 中华))
+						     (ADJP (JJ 总))
+						     (NP (NN 商会)))))
+				  (ADVP (AD 联合))
+				  (VP (VV 主办))))
+			  (DEC 的)))
+		  (NP-TTL (PU “)
+			  (NP (NT 九六))
+			  (NP (NN 税改)
+			      (CC 及)
+			      (NN 进口)
+			      (NN 原料)
+			      (NN 台帐制))
+			  (NP (NN 执行)
+			      (NN 实务))
+			  (NP (NN 研讨会))
+			  (PU ”))) 
+	  </parse>
+	  <arg n="0">
+	  由 中国 贸易 促进会 广东 分会 与 香港 中华 总 商会 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  联合 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

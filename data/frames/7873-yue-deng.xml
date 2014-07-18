@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跃登 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 jumps up to become"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 让)
+					(NP-OBJ (NN 莲雾))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VRD (VV 跃登)
+						     (VV 成))
+						(NP-OBJ (NN 主角)))))
+				    (PU ，)
+				    (VP (PP-BNF (P 为)
+						(NP (PU 「)
+						    (NN 莲雾节)
+						    (PU 」)))
+					(VP (VV 催生)))))
+			    (DEC 的))))
+	    (PU ，)
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 致力)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 改造)
+							(NP-PN-OBJ (NR 林边))))))
+				    (DEC 的)))
+			    (QP (CD 一)
+				(CLP (M 群)))
+			    (NP (NN 义工)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	主角 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

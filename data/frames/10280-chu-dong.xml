@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 触动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 touches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 也))
+	    (PP-PRP (P 因为)
+		    (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 看到)
+				    (NP-OBJ (NN 华人))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (DVP (VP (ADVP (AD 这麽))
+						     (VP (VV 团结)))
+						 (DEV 地))
+					    (VP (VV 站)
+						(ADVP (AD 在一起)))))))
+			(PU ，)
+			(VP (VV 触动)
+			    (NP-OBJ (NP (PN 她))
+				    (LCP (NP (NN 心))
+					 (LC 中))
+				    (DNP (ADJP (JJ 深层))
+					 (DEG 的))
+				    (NP (NN 感动))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-TMP (P 自)
+			(NP (PN 此)))
+		(VP (VV 立下)
+		    (NP-OBJ (NP (NN 志向)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 看到 华人 *PRO* 这麽 团结 地 站 在一起 
+	</arg>
+	<arg n="1">
+	她 心 中 深层 的 感动 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

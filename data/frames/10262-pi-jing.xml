@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 僻静 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="place described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (NP (NP-PN (NR 北京)
+				    (NN 大学))
+			     (NP (NN 校外)))
+			 (DEG 的))
+		    (NP-PN (PU 「)
+			   (NR 万圣)
+			   (NN 书坊)
+			   (PU 」)))
+	    (PU ，)
+	    (IP (IP (NP-SBJ (NN 外围))
+		    (VP (VV 僻静)))
+		(PU ，)
+		(IP (NP-LOC (NN 内里))
+		    (NP-SBJ (NN 古今中外)
+			    (NN 图书))
+		    (VP (VV 俱全))))) 
+	</parse>
+	<arg n="0" f="psr">
+	北京 大学 校外 的 「 万圣 书坊 」 
+	</arg>
+	<arg n="0" f="pse">
+	外围 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

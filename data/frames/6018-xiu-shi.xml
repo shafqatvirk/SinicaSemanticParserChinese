@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 修饰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 decorates/modifies"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 也))
+		(VP (VV 会)
+		    (VP (VV 劝)
+			(NP-OBJ (NP (NP (PN 自己))
+				    (NP (NN 周遭)))
+				(NP (NN 朋友)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 修饰)
+				    (NP-OBJ (NN 外表)))
+				(PU ，)
+				(VP (VV 给)
+				    (NP-IO (NN 人))
+				    (NP-OBJ (ADJP (JJ 好))
+					    (NP (NN 印象)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	外表 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现在))
+	    (NP-SBJ (NN 美容院))
+	    (VP (VV 提供)
+		(NP-IO (PN 他们))
+		(IP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 美白)
+				(NP-OBJ (NN 淡斑))))
+			(PU 、)
+			(IP (NP-SBJ (NN 轮廓))
+			    (VP (VV 修饰)))
+			(PU 、)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VCD (VV 拉皮)
+				     (VV 除皱))))))) 
+	</parse>
+	<arg n="1">
+	轮廓 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 想到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity thought of/imagined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 从)
+			  (NP (DNP (NP (NN 村)
+				       (NN 名))
+				   (DEG 的))
+			      (NP (NN 起源))))
+		  (PU ，)
+		  (ADVP (AD 就))
+		  (VP (VV 可)
+		      (VP (VV 想到)
+			  (IP-OBJ (IP (NP-SBJ (DNP (NP (PN 这里))
+						   (DEG 的))
+					      (NP (NN 自然)
+						  (NN 条件)))
+				      (VP (VA 恶劣)))
+				  (PU ，)
+				  (IP (NP-SBJ (NN 群众)
+					      (NN 生活))
+				      (VP (VA 困苦)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  这里 的 自然 条件 恶劣 ， 群众 生活 困苦 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 村 名 的 起源 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

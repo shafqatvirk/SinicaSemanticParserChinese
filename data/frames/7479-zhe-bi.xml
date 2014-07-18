@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遮蔽 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 shields"/>
+    <role argnum="2" argrole="thing arg1 is shielded with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 掺进)
+				(LCP-OBJ (NP (NN 衣物))
+					 (LC 中))))
+		    (VP (VV 可以)
+			(VP (VV 抗菌)
+			    (VV 防霉)
+			    (CC 兼)
+			    (VV 除臭))))
+		(PU ，)
+		(VP (ADVP (AD 还))
+		    (VP (VV 可以)
+			(VP (VV 用来)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 遮蔽)
+					    (NP-OBJ (NN 烫伤)
+						    (NN 伤口)))
+					(PU ，)
+					(VP (ADVP (AD 一面))
+					    (VP (VV 消炎)))
+					(PU ，)
+					(VP (ADVP (AD 一面))
+					    (VP (VV 促进)
+						(NP-OBJ (NN 组织)
+							(NN 再生))))))))))) 
+	</parse>
+	<arg n="1">
+	烫伤 伤口 
+	</arg>
+	<arg n="2">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

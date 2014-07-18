@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 监控 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 monitors and controls"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 老爸))
+	    (VP (ADVP (AD 原))
+		(VP (VV 想)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 站)
+				    (PP (P 在)
+					(LCP (NP (NN 门))
+					     (LC 外))))
+				(VP (PU 「)
+				    (VV 监控)
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 剪辑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 edits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 马跃) )
+	    (VP (ADVP (AD 也))
+		(VP (VV 砥砺)
+		    (NP-OBJ (PN 自己))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (DVP (VP (VA 努力))
+				 (DEV 地))
+			    (VP (BA 把)
+				(IP-OBJ (NP-SBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (ADVP (AD 已))
+								  (VP (VSB (VV 拍摄)
+									   (VV 完成)))))
+							  (DEC 的)))
+						  (DNP (PP (P 关於)
+							   (IP (NP-SBJ (NN 阿公) )
+							       (VP (VV 讲述)
+								   (NP-OBJ (NN 部落)
+									   (PU 、)
+									   (NN 打猎)
+									   (PU 、)
+									   (NN 宗教)
+									   (PU 、)
+									   (NN 战争) ))))
+						       (DEG 的))
+						  (NP (NN 影片) ))
+					(PU ，)
+					(VP (QP-ADV (QP (CD 一)
+							(CLP (M 部)))
+						    (QP (CD 一)
+							(CLP (M 部))))
+					    (VP (VRD (VCD (VV 整理)
+							  (VV 剪辑))
+						     (VV 出来))
+						(NP-OBJ (-NONE- *-2))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 已 拍摄 完成 的 关於 阿公 讲述 部落 、 打猎 、 宗教 、 战争 的 影片 
+	</arg>
+	<arg n="m" f="adv">
+	一 部 一 部 
+	</arg>
+	<arg n="m" f="adv">
+	努力 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 内容))
+	    (VP (VP (PP-DIR (P 从)
+			    (NP (NP (DNP (NP (NP (NN 电影)
+						 (NN 拍摄))
+					     (NP (NN 过程)))
+					 (DEG 的))
+				    (NP (NN 记录片)))
+				(PU 、)
+				(NP (NP (NN 影片))
+				    (ADJP (JJ 精彩))
+				    (NP (NN 片段)))
+				(PU 、)
+				(NP (NP (NN 工作)
+					(NN 人员))
+				    (NP (NN 访谈)))
+				(ETC 等等)))
+		    (VP (VV 剪辑)))
+		(VP (MSP 而)
+		    (VP (VV 成))))) 
+	</parse>
+	<arg n="1">
+	从 电影 拍摄 过程 的 记录片 、 影片 精彩 片段 、 工作 人员 访谈 等等 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

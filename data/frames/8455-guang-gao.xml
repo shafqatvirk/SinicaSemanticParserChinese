@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 广告 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 advertises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 网路)
+		      (NN 交易))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 节省)
+		      (NP-OBJ (QP (CD 不少))
+			      (NP (NN 企业))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VV 设置)
+						  (NP-OBJ (NN 店面)))
+					      (PU 、)
+					      (VP (VCD (VV 行销)
+						       (VV 广告)))))
+				      (DEC 的))
+			      (NP (NN 成本)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

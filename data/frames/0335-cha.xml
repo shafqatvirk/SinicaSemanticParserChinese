@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent, inspector"/>
+    <role argnum="1" argrole="thing checked, inspected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+              (CP (IP (NP-TMP (NT 一九九七年)
+                              (NT 上半年))
+                      (NP-SBJ (NN 市民))
+                      (VP (PP-ADV (-NONE- *T*-1))
+                          (VP (VV 查)
+                              (NP-OBJ (NN 册)))))
+                  (DEC 的)))
+          (NP (NN 次数))))
+	</parse>
+	<arg n="M" f="TMP"> 一九九七年 上半年 </arg>
+	<arg n="0"> 市民 </arg>
+	<arg n="M" f="ADV"> (*T*-1)->(次数) </arg>
+	<V/>
+	<arg n="1"> 册 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>(IP (PP-PRP (P 为了)
+( (IP (PP-PRP (P 为了)
+              (IP (NP-SBJ (-NONE- *PRO*))
+                  (VP (VV 加大)
+                      (NP-OBJ (NN 监督)
+                              (NN 检查)
+                              (NN 力度)))))
+      (PU ，)
+      (NP-PN-SBJ (NR 北京市))
+      (VP (NP-TMP (NT 今年))
+          (ADVP (AD 还))
+          (VP (VV 组织)
+              (NP-OBJ (NP (QP (CD 十八)
+                              (CLP (M 个)))
+                          (NP (NN 区)
+                              (NN 县)))
+                      (PU 、)
+                      (NP (QP (CD 二十八)
+                              (CLP (M 所)))
+                          (NP (NN 医院)))
+                      (CC 及)
+                      (NP (QP (CD 八十)
+                              (CLP (M 所)))
+                          (NP (NN 大专)
+                              (NN 院校))))
+              (IP (NP-SBJ (-NONE- *PRO*))
+                  (VP (VP (ADVP (AD 联))
+                          (VP (VV 审)))
+                      (VP (ADVP (AD 互))
+                          (VP (VV 查)))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="M" f="ADV"> 互 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,131 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="conductor"/>
+      <role argnum="1" argrole="activity,theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １９７４年))
+	      (PU ，)
+	      (NP-SBJ (NN 希族人))
+	      (VP (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 寻求)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP (P 与)
+						  (NP-PN (NR 希腊)))
+					      (VP (VV 联盟)))))))
+		  (VP (MSP 而)
+		      (VP (VV 发动)
+			  (NP-OBJ (NN 政变)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  希族人 	  	  
+	  </arg>
+	  <arg n="M" f="PRP">
+	  为 *PRO* 寻求 *PRO* 与 希腊 联盟 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  政变 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-MNR (P 通过)
+		  (IP (NP-SBJ (DNP (LCP (NP (NN 卫星))
+					(LC 上))
+				   (DEG 的))
+			      (NP (NN 远地点)
+				  (NN 发动机)))
+		      (VP (QP-ADV (CD ３)
+				  (CLP (M 次)))
+			  (VP (VV 发动))))) 
+	  </parse>
+	  <arg n="0">
+	  卫星 上 的 远地点 发动机	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  ３ 次 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="motivator"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP (P 作为)
+		      (NP (DNP (NP (DP (DT 这)
+				       (CLP (M 次)))
+				   (NP (NN 游说)))
+			       (DEG 的))
+			  (ADJP (JJ 后续))
+			  (NP (NN 行动))))
+		  (PU ，)
+		  (NP-SBJ (PN 他))
+		  (VP (VV 准备)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 发动)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (NN 公司))
+						      (VP (VV 下属)
+							  (NP-OBJ (-NONE- *T*-2))))
+						  (DEC 的)))
+					  (QP (CD 数万)
+					      (CLP (M 名)))
+					  (NP (NN 经销商)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (PP (P 给)
+						  (NP (NN 当地)
+						      (NN 国会)
+						      (NN 议员)))
+					      (VP (VV 写信)))
+					  (PU ，)
+					  (VP (VV 支持)
+					      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+						      (VP (VV 延长)
+							  (NP-OBJ (DNP (NP-PN (NR 中国))
+								       (DEG 的))
+								  (NP (NN 贸易)
+								      (NN 最惠国)
+								      (NN 待遇)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* 公司 下属 *T*-2 的 数万 名 经销商 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 给 当地 国会 议员 写信 ， 支持 *pro* 延长 中国 的 贸易 最惠国 待遇 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

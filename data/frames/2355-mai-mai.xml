@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 买卖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity bought and sold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 可以)
+	      (VP (VP (VV 促使)
+		      (NP-OBJ (NN 企业))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 加强)
+			      (NP-OBJ (NN 经济)
+				      (NN 核算)))))
+		  (PU ，)
+		  (VP (VV 降低)
+		      (NP-OBJ (NN 生产)
+			      (NN 经营)
+			      (NN 成本)))
+		  (PU ，)
+		  (VP (VV 减少)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 企业))
+					  (VP (VV 买卖)
+					      (NP-OBJ (NN 外汇))))
+				      (DEC 的))
+			      (NP (NN 支出)))))) 
+	  </parse>
+	  <arg n="0">
+	  企业 
+	  </arg>
+	  <arg n="1">
+	  外汇 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

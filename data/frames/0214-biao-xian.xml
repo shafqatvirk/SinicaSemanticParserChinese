@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 表现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="demonstrator"/>
+      <role argnum="1" argrole="thing demonstrated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 指导)
+			(NP-OBJ (DP (DT 各)
+				    (CLP (M 类)))
+				(NP (NN 企业)
+				    (CC 和)
+				    (NN 组织)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 取得)
+				    (NP-OBJ (-NONE- *RNR*-3)))
+				(CC 和)
+				(VP (VV 表现)
+				    (NP-OBJ-3 (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VA 正确)))
+						      (DEC 的)))
+					      (NP (NN 环境)
+						  (NN 行为))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* *T*-2 正确 的 环境 行为 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" cdef=" 表现 出">
+      <role argnum="0" argrole="demonstrator"/>
+      <role argnum="1" argrole="thing demonstrated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-PN (NR 上海))
+			(NP (NN 市民)))
+		(VP (ADVP (AD 也))
+		    (PP-DIR (P 对)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 即将))
+						(VP (VV 诞生))))
+					(DEC 的)))
+				(NP (NN 欧元))))
+		    (VP (VRD (VV 表现)
+			     (VV 出))
+			(NP-OBJ (ADJP (JJ 极大))
+				(NP (NN 兴趣)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  上海 市民 	  	    
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 	  	    
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  极大 兴趣 	  	    
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

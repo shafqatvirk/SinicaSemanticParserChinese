@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拱上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 pushes arg1 onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-MNR (P 随)
+					      (NP (PN 之)))
+				      (VP (MSP 而)
+					  (VP (VV 来)))))
+			      (DEC 的)))
+		      (NP (NN 公投)
+			  (NN 议题)))
+	      (PU ，)
+	      (VP (ADVP (AD 又))
+		  (ADVP (AD 再度))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VV 看似)
+						      (VP (VV 定案))))
+					      (DEC 的)))
+				      (NP (NN 核四)))
+			      (VP (VV 拱上)
+				  (NP-OBJ (NN 台面))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 随 之 而 来 的 公投 议题 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 看似 定案 的 核四 
+	  </arg>
+	  <arg n="2">
+	  台面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

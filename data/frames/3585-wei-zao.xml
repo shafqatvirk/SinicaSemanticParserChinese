@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伪造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing counterfeited/forged"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ-1 (-NONE- *pro*))
+		  (VP (VP (VV 伪造)
+			  (NP-OBJ (NN 旅行)
+				  (NN 证件)
+				  (CC 和)
+				  (NN 身分证)))
+		      (VP (SB 被)
+			  (VP (VV 判)
+			      (NP-OBJ (-NONE- *-1))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 入狱))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  旅行 证件 和 身分证 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

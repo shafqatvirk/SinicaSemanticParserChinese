@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 名为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="name/title of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(LCP-SBJ (NP (QP (CD 一)
+			 (CLP (M 篇)))
+		     (CP (WHNP-2 (-NONE- *OP*))
+			 (CP (IP (NP-SBJ (-NONE- *T*-2))
+				 (VP (VV 名为)
+				     (NP-OBJ (PU 〈)
+					     (DNP (NP (NP-PN (NR 龙肚))
+						      (NP (NN 老农)))
+						  (DEG 的))
+					     (NP (NN 愤怒))
+					     (PU 〉))))
+			     (DEC 的)))
+		     (NP (NN 文章)))
+		 (LC 中)) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	〈 龙肚 老农 的 愤怒 〉 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

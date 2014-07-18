@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发言 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="speaker"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 李宁))
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP-PN (NR 奥林匹克)
+					  (NN 大会))
+				   (LC 上)))
+		      (VP (VV 发言)))) 
+	  </parse>
+	  <arg n="0">
+	  李宁 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 奥林匹克 大会 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

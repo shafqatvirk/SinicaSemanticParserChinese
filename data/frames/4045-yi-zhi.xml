@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 医治 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 尽快))
+		      (VP (VP (VV 医治)
+			      (NP-OBJ (NN 战争)
+				      (NN 创伤)))
+			  (PU ，)
+			  (VP (VV 重建)
+			      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (VA 破败)))
+					      (DEC 的)))
+				      (NP (NN 家园))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  战争 创伤 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽快 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

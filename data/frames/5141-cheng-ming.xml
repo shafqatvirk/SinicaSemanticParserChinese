@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 成名 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity which gets famous"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 加上)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 清新)))
+					(DEC 的)))
+				(NP (NN 形象)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(NP-PN (NR 台湾)))
+		(NP-ADV (QP (CD 一))
+			(NP (NN 战)))
+		(VP (VV 成名)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	一 战 
+	</arg>
+	<arg n="m" f="loc">
+	在 台湾 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 加上 *OP* *T*-2 清新 的 形象 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

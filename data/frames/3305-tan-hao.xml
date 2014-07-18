@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谈好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing agreed on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (NP-SBJ (NN 计划))
+	      (VP (VP (ADVP (AD 都))
+		      (VP (VV 谈好)
+			  (AS 了)))
+		  (PU ，)
+		  (VP (ADVP (AD 却))
+		      (PP-PRP (P 因为)
+			      (IP (IP (NP-SBJ (NN 金融)
+					      (NN 危机))
+				      (VP (VV 爆发)))
+				  (PU ，)
+				  (IP (NP-PN-SBJ (NR 安南))
+				      (VP (VPT (VV 筹措)
+					       (AD 不)
+					       (VV 出))
+					  (NP-OBJ (NN 入股)
+						  (NN 资金))))))
+		      (VP (MSP 而)
+			  (VP (VV 叫停)))))) 
+	  </parse>
+	  <arg n="1">
+	  计划 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  然而 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

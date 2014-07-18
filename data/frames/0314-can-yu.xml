@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 参与 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="participant"/>
+    <role argnum="1" argrole="activity"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 另外))
+      (PU ，)
+      (NP-PN-SBJ (NR 日本)
+                 (NN 进出口)
+                 (NN 银行))
+      (VP (VP (ADVP (AD 已))
+              (PP (P 与)
+                  (NP-PN (NR 俄罗斯)))
+              (VP (VV 签订)
+                  (NP-OBJ (NN 合同))))
+          (PU ，)
+          (VP (VV 参与)
+              (NP-OBJ (NP (NP-PN (NR 俄扎鲁比诺港))
+                          (NN 扩建)
+                          (NN 工程))
+                      (NP (NN 建设)))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 日本 进出口 银行 </arg>
+	<V/>
+	<arg n="1"> 俄扎鲁比诺港 扩建 工程 建设 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NR 法国))
+      (VP (ADVP (AD 从来))
+          (VP (VV 没有)
+              (VP (VV 参与))))))
+	</parse>
+	<arg n="0"> 法国 </arg>
+	<arg n="M" f="ADV"> 从来 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

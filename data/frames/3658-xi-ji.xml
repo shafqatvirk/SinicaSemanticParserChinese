@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 袭击 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="attacker"/>
+      <role argnum="1" argrole="entity attacked"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VC 是)
+		  (IP-PRD (PP-TMP (P 自)
+				  (LCP (IP (NP-PN-SBJ (NR 美国))
+					   (VP (NP-TMP (NT 最近))
+					       (VP (VV 袭击)
+						   (NP-PN-OBJ (NR 伊拉克)))))
+				       (LC 以来)))
+			  (NP-SBJ (NP-PN (NR 俄)
+					 (NR 美))
+				  (NP (NN 领导人)))
+			  (VP (QP-ADV (OD 首)
+				      (CLP (M 次)))
+			      (VP (VV 对话)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 
+	  </arg>
+	  <arg n="1">
+	  伊拉克 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  最近 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

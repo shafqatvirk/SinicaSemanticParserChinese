@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刊载 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="location"/>
+      <role argnum="1" argrole="entity published"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 人民)
+			 (NN 日报))
+	      (VP (NP-TMP (NT 今天))
+		  (VP (VV 刊载)
+		      (AS 了)
+		      (NP-OBJ (NP (NP-APP (NP-PN (NR 中国)
+						 (NN 人民)
+						 (NN 银行))
+					  (NP (NN 副行长)))
+				  (NP-PN (NR 高德柱)))
+			      (LCP (NP (DP (DT 上))
+				       (NP (NN 月)))
+				   (LC 底))
+			      (DNP (PP (P 在)
+				       (LCP (NP (QP (OD 第七)
+						    (CLP (M 次)))
+						(NP-PN (NR 中)
+						       (NR 日))
+						(NP (NN 经济)
+						    (NN 讨论会)))
+					    (LC 上)))
+				   (DEG 的))
+			      (NP (NN 发言)))))) 
+	  </parse>
+	  <arg n="0">
+	  人民 日报 
+	  </arg>
+	  <arg n="1">
+	  中国 人民 银行 副行长 高德柱 上 月 底 在 第七 次 中 日 经济 讨论会 上 的 发言 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (PP (P 有关)
+			       (NP (NP (NN 建造)
+				       (NN 工程))
+				   (NP (NN 完成量))))
+			   (DEG 的))
+		      (ADJP (JJ 详细))
+		      (NP (NN 资料)))
+	      (VP (VV 刊载)
+		  (PP-LOC (P 於)
+			  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-PN-SBJ (NN 政府)
+							  (NN 统计处))
+					       (VP (VV 出版)
+						   (NP-OBJ (-NONE- *T*-1))))
+					   (DEC 的)))
+				   (NP-TTL (PU 「)
+					   (NP (NP (NT 一九九七年))
+					       (QP (OD 第一))
+					       (NP (NN 季)))
+					   (NP (NP (NN 建造)
+						   (NN 工程))
+					       (NP (NN 完成量)))
+					   (NP (NN 统计)
+					       (NN 调查))
+					   (NP (NN 报告))
+					   (PU 」)))
+			       (LC 内))))) 
+	  </parse>
+	  <arg n="1">
+	  有关 建造 工程 完成量 的 详细 资料 
+	  </arg>
+	  <arg n="0">
+	  於 *OP* 政府 统计处 出版 *T*-1 的 「 一九九七年 第一 季 建造 工程 完成量 统计 调查 报告 」 内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

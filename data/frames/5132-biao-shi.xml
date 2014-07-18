@@ -1,0 +1,166 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 标示 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 marks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (LCP-LOC (NP (NP (LCP (NP (NN 卖场))
+					  (LC 里))
+				     (ADJP (JJ 大))
+				     (NP (NN 招牌)))
+				 (CC 和)
+				 (NP (NN 购物袋)))
+			     (LC 上))
+		    (ADVP (AD 都))
+		    (ADVP (AD 清楚))
+		    (VP (VV 标示)))
+		(PU ，)
+		(VP (ADVP (AD 时时))
+		    (VP (VV 提醒)
+			(NP-OBJ (NN 消费者)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	清楚 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="loc">
+	卖场 里 大 招牌 和 购物袋 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-MNR (P 经过)
+		(LCP (NP (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 纯化)))
+				 (PU 、)
+				 (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (NP-TPC (NN 核酸))
+					 (VP (VV 粹取))))
+				 (PU 、)
+				 (IP (NP-SBJ (NN 核酸))
+				     (VP (VP (VCD (VV 复制)
+						  (VV 放大)))
+					 (PU 、)
+					 (VP (VV 标示))))
+				 (ETC 等))
+			 (NP (NN 步骤)))
+		     (LC 之後))) 
+	</parse>
+	<arg n="1">
+	核酸 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is a sign of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 始自)
+			(NP-OBJ (QP (CD 七十))
+				(NP (NN 年代)))))
+	    (PU ，)
+	    (NP-SBJ (DNP (ADJP (JJ 一连串))
+			 (DEG 的))
+		    (NP (NN 社会)
+			(NN 运动)))
+	    (PU ，)
+	    (VP (ADVP (AD 则))
+		(VP (VV 标示)
+		    (AS 著)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 社会))
+					(VP (VV 力图)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VP (VV 冲撞)
+							    (NP-OBJ (ADJP (JJ 旧))
+								    (NP (NN 体制))))
+							(PU 、)
+							(VP (VV 建立)
+							    (NP-OBJ (ADJP (JJ 新))
+								    (NP (NN 规则))))))))
+				    (DEC 的))
+			    (NP (NN 努力)))))) 
+	</parse>
+	<arg n="0">
+	一连串 的 社会 运动 
+	</arg>
+	<arg n="1">
+	社会 力图 *PRO* 冲撞 旧 体制 、 建立 新 规则 的 努力 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 始自 七十 年代 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NT 六四))
+	    (VP (VV 标示)
+		(AS 著)
+		(PU ：)
+		(IP-OBJ (PP-LOC (P 在)
+				(NP (NN 大陆)))
+			(PU ，)
+			(NP-SBJ (NT 五四))
+			(VP (LCP-LOC (NP (DP (DT 某)
+					     (QP (CD 一)
+						 (CLP (M 种))))
+					 (NP (NN 程度)))
+				     (LC 上))
+			    (VP (VV 没有)
+				(VP (VV 过完))))))) 
+	</parse>
+	<arg n="0">
+	六四 
+	</arg>
+	<arg n="1">
+	在 大陆 ， 五四 某 一 种 程度 上 没有 过完 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 身经 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 goes through"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 它们))
+	    (VP (VP (ADVP (AD 都))
+		    (VP (VV 身经)
+			(NP-OBJ (QP (CD 百)
+				    (CLP (M 年)))
+				(NP (NN 历练)))))
+		(PU ，)
+		(VP (ADVP (AD 而且))
+		    (VP (VV 历久弥新)))
+		(PU ，)
+		(VP (VV 坚持)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 不))
+			    (VP (VV 退出)
+				(NP-OBJ (NN 流行)
+					(NN 行列)))))))) 
+	</parse>
+	<arg n="0">
+	它们 
+	</arg>
+	<arg n="1">
+	百 年 历练 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

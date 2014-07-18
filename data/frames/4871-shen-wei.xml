@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 身为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="position arg0 is in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (IP (NP-PN-SBJ (NR 李光耀))
+		    (VP (VP (VV 身为)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 缔造)
+						    (NP-PN-OBJ (NR 新加坡))))
+					    (DEC 的)))
+				    (NP (NN 国家)
+					(NN 领袖))))
+			(PU ，)
+			(VP (ADVP (AD 现))
+			    (ADVP (AD 仍))
+			    (VP (VV 任)
+				(NP-OBJ (NN 资政))))))) 
+	</parse>
+	<arg n="0">
+	李光耀 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 缔造 新加坡 的 国家 领袖 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

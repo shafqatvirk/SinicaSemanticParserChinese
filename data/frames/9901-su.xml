@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 溯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 goes along towards the origin of it"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 不定期))
+		  (VP (VP (VV 溯)
+			  (NP-OBJ (NN 溪)))
+		      (PU 、)
+		      (VP (VV 清)
+			  (NP-OBJ (NN 溪)))
+		      (PU 、)
+		      (VP (VV 巡)
+			  (NP-OBJ (NN 溪)))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  溪 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不定期 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

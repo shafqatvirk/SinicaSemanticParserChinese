@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 储有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="storage"/>
+      <role argnum="2" argrole="thing stored"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (IP (LCP-SBJ (NP (NN 区))
+				   (LC 内))
+			  (VP (VV 储有)
+			      (NP-OBJ (-NONE- *T*-2)))))
+		  (NP (NN 货物))) 
+	  </parse>
+	  <arg n="1">
+	  区 内 
+	  </arg>
+	  <arg n="2">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

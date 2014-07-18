@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 切磋 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 discusses and learns from each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 正))
+		(VP (VC 是)
+		    (NP-PRD (CP-APP (IP (NP-SBJ (NN 茶农))
+					(VP (NP-ADV (PN 彼此))
+					    (VP (VV 切磋)
+						(NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 做)
+								    (NP-OBJ (NN 茶))))
+							(NP (NN 技巧))))))
+				    (DEC 的))
+			    (ADJP (JJ 好))
+			    (NP (NN 机会)))))) 
+	</parse>
+	<arg n="0">
+	茶农 
+	</arg>
+	<arg n="1">
+	*PRO* 做 茶 技巧 
+	</arg>
+	<arg n="m" f="adv">
+	彼此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

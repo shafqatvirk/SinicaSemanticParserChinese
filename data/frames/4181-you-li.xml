@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 游离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 drifts away from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 西班牙))
+	      (VP (VP (ADVP (AD 曾))
+		      (VP (VV 经历)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 佛朗哥))
+					   (ADJP (JJ 独裁))
+					   (NP (NN 政权)))
+				       (DEG 的))
+				  (ADJP (JJ 长期))
+				  (NP (NN 统治)))))
+		  (PU ，)
+		  (VP (LCP-LOC (NP (NN 政治))
+			       (LC 上))
+		      (VP (VV 游离)
+			  (PP (P 于)
+			      (LCP (NP-PN (NR 欧洲))
+				   (LC 之外)))))
+		  (PU ，)
+		  (VP (LCP-LOC (NP (NN 经济))
+			       (LC 上))
+		      (VP (VNV (VV 达)
+			       (AD 不)
+			       (VV 到))
+			  (NP-OBJ (DNP (NP (NP-PN (NR 欧洲))
+					   (NP (NN 国家)))
+				       (DEG 的))
+				  (ADJP (JJ 平均))
+				  (NP (NN 发展)
+				      (NN 水平))))))) 
+	  </parse>
+	  <arg n="0">
+	  西班牙 
+	  </arg>
+	  <arg n="1">
+	  于 欧洲 之外 
+	  </arg>
+	  <arg n="m" f="loc">
+	  政治 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

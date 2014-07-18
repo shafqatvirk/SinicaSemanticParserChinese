@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 巡游 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (PP-LOC (P 沿)
+			  (NP (NP (NN 市区))
+			      (ADJP (JJ 主要))
+			      (NP (NN 干线))))
+		  (VP (VV 巡游)
+		      (QP-EXT (CD 一)
+			      (CLP (M 周)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 周 
+	  </arg>
+	  <arg n="m" f="loc">
+	  沿 市区 主要 干线 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

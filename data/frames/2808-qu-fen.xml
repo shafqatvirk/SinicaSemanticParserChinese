@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 区分 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities distinguished"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (NP (ADJP (JJ 正派))
+			    (NP (NN 经营)))
+			(CC 和)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VCD (VA 浮夸)
+						 (VA 不实))))
+				    (DEC 的)))
+			    (ADJP (JJ 坑人))
+			    (NP (NN 陷阱))))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (VP (VV 该)
+			(VP (ADVP (AD 怎麽))
+			    (VP (VV 区分)))))) 
+	  </parse>
+	  <arg n="1">
+	  正派 经营 和 *OP* *T*-1 浮夸 不实 的 坑人 陷阱 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  怎麽 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities distinguished"/>
+      <role argnum="2" argrole="distinguished into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="1">
+	  世界 上	  
+	  </arg>
+	  <arg n="2">
+	  两 种 国家	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

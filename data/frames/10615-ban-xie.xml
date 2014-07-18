@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搬卸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 unloads arg1 from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 搬运)
+		    (NN 工人))
+	    (VP (DVP (VP (VA 忙碌))
+		     (DEV 地))
+		(PP-DIR (P 自)
+			(NP (DNP (ADJP (JJ 大型))
+				 (DEG 的))
+			    (NP (NN 货船))))
+		(VP (VV 搬卸)
+		    (NP-OBJ (DP (DT 各)
+				(CLP (M 种)))
+			    (NP (NN 粮米)
+				(PU 、)
+				(NN 货物)))))) 
+	</parse>
+	<arg n="0">
+	搬运 工人 
+	</arg>
+	<arg n="1">
+	各 种 粮米 、 货物 
+	</arg>
+	<arg n="2">
+	自 大型 的 货船 
+	</arg>
+	<arg n="m" f="adv">
+	忙碌 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

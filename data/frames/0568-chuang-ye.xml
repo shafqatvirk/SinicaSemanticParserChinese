@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 创业 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+		      (CP (IP (NP-TMP (NT 当年))
+			      (NP-SBJ (NN 大寨人))
+			      (VP (PP-MNR (-NONE- *T*-1))
+				  (ADVP (AD 艰苦))
+				  (VP (VV 创业))))
+			  (DEC 的)))
+		  (NP (NN 精神))) 
+	  </parse>
+	  <arg n="0">
+	  大寨人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当年 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  艰苦 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-PN-SBJ (NR 王翔))
+			      (VP (VV 创业)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP-PN (NN 民生)
+			 (NN 集团))) 
+	  </parse>
+	  <arg n="0">
+	  王翔 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 大大小小 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 於是))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 大大小小)))
+			    (DEC 的)))
+		    (NP (NN 压力)))
+	    (VP (VV 汇集)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-TMP (P 在)
+				    (NP (NT 此时)))
+			    (ADVP (AD 一起))
+			    (VP (VV 浮现)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

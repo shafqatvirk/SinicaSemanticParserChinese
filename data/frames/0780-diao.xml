@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (PN 她))
+		      (VP (ADVP (AD 之所以))
+			  (VP (VV 让)
+			      (NP-OBJ (NN 汽车))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-LOC (P 在)
+					      (LCP (QP (NP (NN 海拔))
+						       (QP (CD ２４００)
+							   (CLP (M 米))))
+						   (LC 处)))
+				      (VP (VV 来)
+					  (NP-OBJ (CLP (M 个))
+						  (NP (NN 急转身)))))))))
+	      (PU ，)
+	      (VP (ADVP (AD 也许))
+		  (ADVP (AD 正))
+		  (VP (VC 是)
+		      (PP-PRD (P 为了)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 留给)
+					  (NP-IO (PN 你))
+					  (NP-OBJ (DNP (ADJP (JJ 一定))
+						       (DEG 的))
+						  (NP (NP (NN 难度))
+						      (CC 或)
+						      (NP (ADJP (PU “)
+								(JJ 险)
+								(PU ”))
+							  (NP (NN 情))))))
+				      (PU ，)
+				      (VP (VV 让)
+					  (NP-OBJ (PN 你))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 处于)
+						  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							      (CP (IP (NP-SBJ (-NONE- *PRO*))
+								      (VP (VP (VV 可)
+									      (VP (VV 望)
+										  (NP-OBJ (-NONE- *-2))))
+									  (CC 而)
+									  (VP (ADVP (AD 不))
+									      (VP (VV 可)
+										  (VP (VV 即)
+										      (NP-OBJ-2 (-NONE- *T*-1)))))))
+								  (DEC 的)))
+							  (NP (NN 境地))))))
+				      (PU ，)
+				      (VP (ADVP (AD 久久))
+					  (VP (VV 吊)
+					      (AS 着)
+					      (NP-OBJ (DNP (NP (PN 你))
+							   (DEG 的))
+						      (NP (NN 胃口))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  你 的 胃口 
+	  </arg>
+	  <arg n="m" f="adv">
+	  久久 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

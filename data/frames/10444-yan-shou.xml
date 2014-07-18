@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 验收 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 checks and accepts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 哪))
+		(VP (VV 知)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					     (VP (VV 验收)
+						 (NP-OBJ (NP (NN 小孩))
+							 (NP (NN 台语)
+							     (NN 学习))
+							 (NP (NN 成果)))))
+					 (LC 时))
+				(PU ，)
+				(ADVP (AD 却))
+				(VP (VV 让)
+				    (NP-OBJ (PN 她))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 受到)
+					    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (-NONE- *T*-3))
+								(VP (VA 莫大)))
+							    (DEC 的)))
+						    (NP (NN 震惊))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	小孩 台语 学习 成果 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

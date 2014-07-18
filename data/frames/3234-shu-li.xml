@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 树立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing established"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 中国))
+		  (VP (VP (VV 坚持)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 走)
+				      (NP-OBJ (DNP (NP (PN 自己))
+						   (DEG 的))
+					      (NP (NN 路))))))
+		      (PU ，)
+		      (VP (VP (VV 集中)
+			      (NP-OBJ (NN 力量)))
+			  (VP (VV 征服)
+			      (NP-OBJ (NN 贫困))))
+		      (PU ，)
+		      (VP (PP-BNF (P 为)
+				  (NP (NP-PN (NR 中东))
+				      (NP (DP (DT 各))
+					  (NP (NN 国)))
+				      (NP (NN 人民))))
+			  (VP (VV 树立)
+			      (AS 了)
+			      (NP-OBJ (NN 榜样)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  榜样 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 中东 各 国 人民 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

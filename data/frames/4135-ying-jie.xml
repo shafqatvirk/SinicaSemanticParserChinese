@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迎接 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="welcomer"/>
+      <role argnum="1" argrole="thing welcomed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 迎接)
+			      (NP-OBJ (NN 新春)
+				      (NN 佳节)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 蔡方柏)
+			 (NN 大使))
+	      (VP (VP (VV 举行)
+		      (NP-OBJ (ADJP (JJ 盛大))
+			      (NP (NN 酒会))))
+		  (PU ，)
+		  (VP (VV 款待)
+		      (NP-OBJ (QP (CD ５００多)
+				  (CLP (M 位)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 侨居)
+					      (NP-PN-OBJ (NR 法国))))
+				      (DEC 的)))
+			      (NP (NN 侨胞)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  新春 佳节 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 迎接)
+				      (NP-PN-OBJ (NR 澳门))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 回归)))))
+			  (NP (NN 系列)
+			      (NN 图书)))
+		  (VP (VV 出版))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  澳门 
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 回归 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 迎接)
+					   (IP-OBJ (NP-SBJ (NN 知识)
+							   (NN 经济)
+							   (NN 时代))
+						   (VP (VV 到来)))))
+				   (DEC 的))
+			   (NP (NN 过程)))
+		       (LC 中))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  知识 经济 时代 到来 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

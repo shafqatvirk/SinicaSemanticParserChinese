@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 消减 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity reduced"/>
+      <role argnum="2" argrole="extent of reduction"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 今年))
+		       (LC 底))
+	      (NP-SBJ (DNP (NP (NN 工业)
+			       (NN 污染源))
+			   (DEG 的))
+		      (ADJP (JJ 达标))
+		      (NP (NN 排放)))
+	      (VP (ADVP (AD 大约))
+		  (VP (VV 能)
+		      (VP (VV 消减)
+			  (QP-OBJ (NP (NP-PN (NR 太湖))
+				      (NP (NN 磷)
+					  (NN 负荷量)))
+				  (QP (CD 百分之十二))))))) 
+	  </parse>
+	  <arg n="0">
+	  工业 污染源 的 达标 排放 
+	  </arg>
+	  <arg n="1">
+	  太湖 磷 负荷量 百分之十二 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大约 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 底 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 入)
+				      (NP-OBJ (NN 湖)))))
+			  (NP (NN 磷)))
+		      (NP (NN 负荷量)))
+	      (VP (VV 消减)
+		  (LCP-OBJ (QP (CD 百分之八十))
+			   (LC 左右)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 入 湖 磷 负荷量 
+	  </arg>
+	  <arg n="2">
+	  百分之八十 左右 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

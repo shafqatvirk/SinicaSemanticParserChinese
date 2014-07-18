@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 送到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="entity sent"/>
+      <role argnum="2" argrole="location sent to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (NP (NN 机场))
+				(LC 内))
+			   (DEG 的))
+		      (NP (NN 中央)
+			  (NN 电脑)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VRD (VV 接收)
+					(VV 到))
+				   (NP-OBJ (DP (DT 这些))
+					   (NP (NN 信息)))))
+			   (LC 后))
+		  (PU ，)
+		  (VP (VV 可)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 行李))
+				  (VP (VV 送到)
+				      (LCP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+						       (CP (IP (NP-SBJ (-NONE- *T*-1))
+							       (VP (VA 正确)))
+							   (DEC 的)))
+						   (NP (NN 航班)
+						       (CC 或)
+						       (NN 行李)
+						       (NN 传送带)))
+					       (LC 上)))))))) 
+	  </parse>
+	  <arg n="0">
+	  机场 内 的 中央 电脑 
+	  </arg>
+	  <arg n="1">
+	  行李 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 正确 的 航班 或 行李 传送带 上 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 接收 到 这些 信息 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 如))
+			  (VP (VV 要)
+			      (NP-OBJ (-NONE- *pro*))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VRD (VV 送货)
+					   (VV 上门)))))))
+	      (PU ，)
+	      (LCP-TMP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 订货)))
+			   (QP (CD ２))
+			   (NP (NN 小时)))
+		       (LC 内))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 即))
+		  (VP (VV 可)
+		      (VP (VV 送到))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 订货 ２ 小时 内 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 如 要 *pro* *PRO* 送货 上门 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致癌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing causing cancer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 如今))
+	      (IP (IP (NP-SBJ (NN 阳光))
+		      (VP (VV 会)
+			  (VP (VV 致癌))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 海洋))
+		      (VP (VV 充满)
+			  (NP-OBJ (NN 油污))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 性爱))
+		      (VP (ADVP (AD 更))
+			  (VP (VV 会)
+			      (VP (VV 致命))))))) 
+	  </parse>
+	  <arg n="0">
+	  阳光 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

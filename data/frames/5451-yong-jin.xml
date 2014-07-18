@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 涌进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 pours in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 约翰))
+		    (NP (NN 菁英赛)))
+	    (VP (VP (ADVP (AD 总共))
+		    (VP (VV 吸引)
+			(NP-OBJ (QP (CD 三万多)
+				    (CLP (M 名)))
+				(NP (NN 观众)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 涌进)
+				(NP-PN-OBJ (NR 大溪)
+					   (NN 球场)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	大溪 球场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (UCP-SBJ (NP-PN (NR 伦敦)
+			    (NR 海德)
+			    (NN 公园))
+		     (PU 、)
+		     (LCP (NP-PN (NR 唐人街))
+			  (LC 头)))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(VP (VV 涌进)
+		    (NP-OBJ (ADJP (JJ 无数))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 不))
+					    (VP (VV 分)
+						(NP-OBJ (NN 党派)
+							(PU 、)
+							(NN 地域)))))
+				    (DEC 的)))
+			    (NP (NN 华人)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 抗议)))))) 
+	</parse>
+	<arg n="0">
+	无数 *OP* *T*-1 不 分 党派 、 地域 的 华人 
+	</arg>
+	<arg n="1">
+	伦敦 海德 公园 、 唐人街 头 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

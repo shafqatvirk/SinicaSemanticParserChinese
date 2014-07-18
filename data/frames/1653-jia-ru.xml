@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 嫁入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="marrying person"/>
+      <role argnum="1" argrole="married into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (NP (CP-APP (IP (NP-SBJ (NP-PN (NR 深圳))
+					  (NP (NN 姑娘)))
+				  (VP (VP-FOC (VV 嫁入)
+					      (NP-PN-OBJ (NR 香港)))
+				      (VP (ADVP (AD 大幅))
+					  (VP (VV 减少)))))
+			      (DEC 的))
+		      (NP (NN 同时)))) 
+	  </parse>
+	  <arg n="0">
+	  深圳 姑娘 
+	  </arg>
+	  <arg n="1">
+	  香港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

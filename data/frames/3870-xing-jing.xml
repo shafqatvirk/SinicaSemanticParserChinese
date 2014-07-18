@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 行经 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 goes through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 京九)
+			 (NN 铁路))
+	      (IP (IP (NP-SBJ (NN 北))
+		      (VP (VV 起)
+			  (NP-OBJ (NP-PN (NR 北京))
+				  (NP (NN 西站)))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 南))
+		      (VP (VV 至)
+			  (NP-PN-OBJ (NR 深圳))))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (VV 连接)
+			      (NP-PN-OBJ (NR 香港)
+					 (NR 九龙)))
+			  (PU ，)
+			  (VP (VV 行经)
+			      (NP-OBJ (QP (CD 九))
+				      (NP (NN 省)
+					  (NN 市))))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 干线)
+			      (NN 全长))
+		      (VP (QP-PRD (ADVP (AD 约))
+				  (QP (CD 两千四百)
+				      (CLP (M 公里))))))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-1))
+					      (LCP-LOC (NP (NP-PN (NR 中国))
+							   (NP (NN 铁路)
+							       (NN 建设史)))
+						       (LC 上))
+					      (IP (IP (NP-SBJ (NN 规模))
+						      (VP (ADVP (AD 最))
+							  (VP (VA 大))))
+						  (PU 、)
+						  (IP (NP-SBJ (NN 投资))
+						      (VP (ADVP (AD 最))
+							  (VP (VA 多))))
+						  (PU 、)
+						  (IP (NP-SBJ (NN 建成)
+							      (NN 线路)
+							      (NN 里程))
+						      (VP (ADVP (AD 最))
+							  (VP (VA 长))))))
+					  (DEC 的)))
+				  (ADJP (JJ 大))
+				  (NP (NN 干线))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  九 省 市 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

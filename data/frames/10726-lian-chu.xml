@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 练出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 produces through exercising"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (PN 我))
+		    (VP (VV 健身)))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VC 是)
+			(PP-PRD (P 为了)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 练)
+					(NP-OBJ (NN 肌肉)))))))
+		(PU ，)
+		(CC 而)
+		(VP (VC 是)
+		    (VP (VV 练出)
+			(NP-OBJ (NN 曲线)))))) 
+	</parse>
+	<arg n="1">
+	曲线 
+	</arg>
+	<arg n="m" f="tpc">
+	我 健身 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

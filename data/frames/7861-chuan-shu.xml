@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 传输 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 transmits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-TPC (ADVP (AD 凡是))
+			(NP (CP (WHNP-17 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *T*-17))
+				    (VP (VP (PP-LOC (P 在)
+						    (LCP (NP (NN 网路))
+							 (LC 上)))
+					    (VP (VP (VV 制造)
+						    (NP-OBJ (-NONE- *RNR*-1)))
+						(PU 、)
+						(VP (VV 传输)
+						    (NP-OBJ (-NONE- *RNR*-1)))
+						(PU 、)
+						(VP (VV 张贴)
+						    (NP-OBJ-1 (ADJP (JJ 猥亵)
+								    (PU 、)
+								    (JJ 不良))
+							      (NP (NN 图)
+								  (NN 文))))))
+					(PU ，)
+					(VP (VV 有损)
+					    (NP-OBJ (NP (NN 儿童)
+							(PU 、)
+							(NN 青少年))
+						    (NP (NN 身心)))))))
+			    (NP (NN 者))))
+		(PU ，)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VP (ADVP (AD 将))
+			(VP (VV 处以)
+			    (NP-OBJ (CLP (QP (CD 二年))
+					 (LC 以下))
+				    (ADJP (JJ 有期))
+				    (NP (NN 徒刑)))))
+		    (PU ，)
+		    (CC 并)
+		    (VP (VV 科)
+			(NP-OBJ (LCP (QP (CD 二十五万)
+					 (CLP (M 美元)))
+				     (LC 以下))
+				(NP (NN 罚金)))))) 
+	</parse>
+	<arg n="0">
+	*T*-17 
+	</arg>
+	<arg n="1">
+	*RNR*-1 
+	</arg>
+	<arg n="m" f="loc">
+	在 网路 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

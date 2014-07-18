@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上车 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 导游))
+	      (VP (ADVP (AD 在))
+		  (VP (VV 催)
+		      (NP-OBJ (PN 大家))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 上车)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

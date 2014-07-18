@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 斥资 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="invester"/>
+      <role argnum="1" argrole="project"/>
+      <role argnum="2" argrole="fund"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (DP (DT 这)
+		      (CLP (M 个)))
+		  (CP (WHNP-5 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-5))
+			      (VP (VV 斥资)
+				  (NP-OBJ (QP (CD 三十亿)
+					      (CLP (M 元)))
+					  (NP (NN 人民币)))))
+			  (DEC 的)))
+		  (NP (NN 项目))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-5 
+	  </arg>
+	  <arg n="2">
+	  三十亿 元 人民币 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

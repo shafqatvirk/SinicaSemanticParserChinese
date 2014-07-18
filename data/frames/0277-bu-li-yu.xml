@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不利于 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="party affected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-1))
+                              (VP (PU “)
+                                  (VA 大)
+                                  (CC 而)
+                                  (VA 全)
+                                  (PU ”)))
+                          (DEC 的)))
+                  (NP (NN 垄断))
+                  (NP (NN 生产)
+                      (CC 和)
+                      (NN 销售)))
+          (VP (ADVP (AD 并))
+              (VP (VV 不利于)
+                  (NP-OBJ (DNP (NP (NN 国民)
+                                   (NN 经济))
+                               (DEG 的))
+                          (ADJP (JJ 健康))
+                          (NP (NN 发展)))))))
+	</parse>
+	<arg n="0"> *OP* (*T*-1)->(生产和销售) “ 大 而 全 ” 的 垄断 生产 和 销售 </arg>
+	<arg n="M" f="ADV"> 并 </arg>
+	<V/>
+	<arg n="1"> 国民 经济 的 健康 发展 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 另外))
+      (PU ，)
+      (NP-SBJ (NN 公司)
+              (NN 兼并))
+      (VP (VP (PP-LOC (P 在)
+                      (NP (NP (NP (NN 产品))
+                              (NP (NN 质量)
+                                  (CC 和)
+                                  (NN 价格)))
+                          (NP (NN 方面))))
+              (PP-DIR (P 对)
+                      (NP (NN 消费者)))
+              (VP (VV 产生)
+                  (NP-OBJ (ADJP (JJ 不利))
+                          (NP (NN 影响)))))
+          (PU ，)
+          (VP (ADVP (AD 同时))
+              (ADVP (AD 也))
+              (VP (VV 不利于)
+                  (IP-OBJ (NP-SBJ (NN 工人))
+                          (VP (VV 就业))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 公司 兼并 </arg>
+	<arg n="M" f="ADV"> 同时 </arg>
+	<arg n="M" f="ADV"> 也 </arg>
+	<V/>
+	<arg n="1"> 工人 就业 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

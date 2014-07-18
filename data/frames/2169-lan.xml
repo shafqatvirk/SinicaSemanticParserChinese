@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揽 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing solicited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/> 
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (IP (PP-DIR (P 对)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VP (VV 违规))
+						(VP (NP-ADV (ADJP (JJ 高))
+							    (NP (NN 息)))
+						    (VP (VV 揽)
+							(NP-OBJ (NN 存))))))
+					(DEC 的)))
+				(NP (NN 金融)
+				    (NN 机构))))
+		    (PU ，)
+		    (PP-MNR (ADVP (AD 一))
+			    (PP (P 经)
+				(NP (NN 发现))))
+		    (PU ，)
+		    (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 必须)
+			(VP (VP (ADVP (AD 立即))
+				(VP (VV 制止)))
+			    (CC 和)
+			    (VP (ADVP (AD 严厉))
+				(VP (VV 惩处))))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (PP-DIR (P 对)
+				(NP (CP (WHNP-2 (-NONE- *OP*))
+					(IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 到期))))
+				    (NP (NN 存款))))
+			(VP (VV 应)
+			    (VP (PP-MNR (P 按)
+					(NP (ADJP (JJ 法定))
+					    (NP (NN 利率))))
+				(VP (VV 支付)
+				    (NP-OBJ (NN 利息)))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  存 
+	  </arg>
+	  <arg n="m" f="adv">
+	  高 息 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

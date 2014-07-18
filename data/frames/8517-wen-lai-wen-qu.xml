@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 问来问去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 没))
+		  (VP (VV 想到)
+		      (IP-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 问来问去)))
+			      (PU ，)
+			      (NP-SBJ (DP (DT 每)
+					  (CLP (M 家)))
+				      (NP (NN 老板)))
+			      (VP (ADVP (AD 都))
+				  (VP (VV 要)
+				      (NP-OBJ (PN 他))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 去)
+					      (VP (VV 抓)
+						  (NP-OBJ (NT 千禧)
+							  (NN 虫))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

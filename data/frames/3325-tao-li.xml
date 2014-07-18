@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逃离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location left"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 外轮))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 肇事)))
+			   (LC 后))
+		  (ADVP (AD 立即))
+		  (VP (VV 逃离)
+		      (AS 了)
+		      (NP-OBJ (NN 现场))))) 
+	  </parse>
+	  <arg n="0">
+	  外轮 
+	  </arg>
+	  <arg n="1">
+	  现场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  立即 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 肇事 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 人们))
+			   (VP (ADVP (AD 正在))
+			       (VP (VV 逃离))))
+		       (LC 时))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 突然))
+		  (VP (VV 发生)
+		      (NP-OBJ (NN 爆炸))))) 
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

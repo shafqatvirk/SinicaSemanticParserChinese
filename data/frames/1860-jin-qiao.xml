@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 紧俏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (DP (DT 前)
+						  (QP (CD 几)
+						      (CLP (M 个))))
+					      (NP (NN 交易日)))
+				      (VP (VV 紧俏))))
+			      (DEC 的)))
+		      (NP (NN 因特网股)))
+	      (VP (ADVP (AD 则))
+		  (PP-PRP (P 因)
+			  (IP (NP-SBJ (NN 获利))
+			      (VP (VV 回吐))))
+		  (VP (MSP 而)
+		      (VP (VV 下跌))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  前 几 个 交易日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

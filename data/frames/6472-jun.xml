@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 均 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (NN 赌场))
+		(VP (PP-PRP (P 因)
+			    (IP (NP-SBJ (NN 利益))
+				(VP (ADVP (AD 不))
+				    (VP (VA 均)))))
+		    (PU ，)
+		    (VP (VV 导致)
+			(IP-OBJ (NP-SBJ (NN 帮派))
+				(VP (VV 火拼)))))) 
+	</parse>
+	<arg n="0">
+	利益 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP-FOC (VV 受热))
+		(VP (ADVP (AD 不))
+		    (VP (VA 均))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="prd">
+	受热 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

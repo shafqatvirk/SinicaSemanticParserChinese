@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 守住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 guards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (QP (CD 六)
+			    (CLP (M 个)))
+			(ADJP (JJ 临时))
+			(NP (NN 人员)))
+		(VP (VP (ADVP-WH (AD 如何))
+			(VP (VV 守住)
+			    (NP-OBJ (DP (DT 这)
+					(QP (CD 五十二)
+					    (CLP (M 个))))
+				    (NP (NN 出口)))))
+		    (PU ，)
+		    (VP (VV 查察)
+			(IP-OBJ (NP-SBJ (QP (CD 八十九)
+					    (CLP (M 家)))
+					(NP (NN 砂石厂)))
+				(VP (ADVP (AD 是否))
+				    (VP (VV 盗采)
+					(NP-OBJ (NN 砂石)))))))) 
+	  </parse>
+	  <arg n="0">
+	  六 个 临时 人员 
+	  </arg>
+	  <arg n="1">
+	  这 五十二 个 出口 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如何 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

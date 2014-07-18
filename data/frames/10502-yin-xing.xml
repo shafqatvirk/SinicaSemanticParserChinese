@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 印行 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 prints and publishes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ-1 (QP (ADJP (JJ 另外))
+			  (QP (CD 一)
+			      (CLP (M 本))))
+		      (NP (NN 戏剧集)))
+	    (PU ，)
+	    (VP (ADVP (AD 则))
+		(PP-LGS (P 由)
+			(NP (DNP (NP (NP-APP (ADJP (JJ 名))
+					     (NP (NN 导演)))
+				     (NP-PN (NR 李行)))
+				 (DEG 的))
+			    (NP-PN (NR 帝教)
+				   (NN 出版社))))
+		(VP (VV 印行)
+		    (NP-OBJ (-NONE- *-1))))) 
+	</parse>
+	<arg n="0">
+	由 名 导演 李行 的 帝教 出版社 
+	</arg>
+	<arg n="1">
+	另外 一 本 戏剧集 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

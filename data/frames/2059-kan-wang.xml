@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 看望)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 出席)
+					  (NP-OBJ (NP-PN (NP (DP (DT 全))
+							     (NP (NN 国)))
+							 (NP (NN 政协)))
+						  (QP (OD 九)
+						      (CLP (M 届)))
+						  (QP (OD 一)
+						      (CLP (M 次)))
+						  (NP (NN 会议)))))
+				  (DEC 的)))
+			  (NP (NN 科学家)
+			      (CC 和)
+			      (NN 科技)
+			      (NN 工作者))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 出席 全 国 政协 九 届 一 次 会议 的 科学家 和 科技 工作者 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DNP (NP (NN 访问团))
+			     (DEG 的))
+			(NP (NN 成员们)))
+		(VP (VV 决定)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 到)
+				    (LCP-OBJ (NP (NN 牧民)
+						 (NN 家))
+					     (LC 里)))
+				(VP (VV 看望)))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

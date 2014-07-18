@@ -1,0 +1,156 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 资助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="entity/cause helped"/>
+      <role argnum="2" argrole="gift"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 项目)))
+	      (VP (VP (PP-LGS (P 由)
+			      (NP (NP-PN (NP-PN (NR 英国))
+					 (ADJP (JJ 皇家))
+					 (NP (NN 太阳))
+					 (ADJP (JJ 联合))
+					 (NP (NN 保险))
+					 (NP (NN 集团)
+					     (NN 公司)))
+				  (CC 和)
+				  (NP-PN (NR 美国)
+					 (NR 林肯)
+					 (NN 国民)
+					 (NN 集团)
+					 (NN 公司))))
+		      (ADVP (AD 共同))
+		      (VP (VV 资助))))) 
+	  </parse>
+	  <arg n="1">
+	  该 项目 	  	  	  	  
+	  </arg>
+	  <arg n="0">
+	  由 英国 皇家 太阳 联合 保险 集团 公司 和 美国 林肯 国民 集团 公司 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  共同 	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 杭州)
+			 (NR 隆昌)
+			 (NN 粮油)
+			 (NN 贸易)
+			 (NN 公司))
+	      (VP (VP (VV 捐款)
+		      (QP-OBJ (CD 二万)
+			      (CLP (M 元))))
+		  (PU ，)
+		  (VP (VV 资助)
+		      (NP-OBJ (PN 他))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 上)
+			      (NP-OBJ (NN 大学))))))) 
+	  </parse>
+	  <arg n="0">
+	  杭州 隆昌 粮油 贸易 公司 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  他 	  	  	  	  
+	  </arg>
+	  <arg n="1" f="PRD">
+	  *PRO* 上 大学 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中科院))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (PP-DIR (P 对)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+								   (VP (VV 完成)
+								       (NP-OBJ (NN 学习))))
+							       (LC 后))
+						      (VP (VP (VV 留)
+							      (NP-OBJ (NN 院)))
+							  (VP (VV 工作)))))
+					      (DEC 的)))
+				      (NP (NN 获奖者))))
+			  (VP (VV 资助)
+			      (NP-OBJ (IP-APP (NP-SBJ (NN 科研)
+						      (NN 工作))
+					      (VP (VV 启动)))
+				      (NP (NN 费)))
+			      (QP-EXT (CD 五万)
+				      (CLP (M 元)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (ADVP (AD 优先))
+			  (VP (VV 给予)
+			      (NP-OBJ (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (NP-ADV (NN 公费))
+							  (VP (VCD (VV 出国)
+								   (VV 进修)))))
+						  (DEC 的))
+					  (NP (NN 机会)))
+				      (CC 和)
+				      (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 参加)
+							  (NP-OBJ (NN 国际)
+								  (NN 会议))))
+						  (DEC 的))
+					  (NP (NN 经费)
+					      (NN 补助))))))))) 
+	  </parse>
+	  <arg n="0">
+	  中科院 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  对 *OP* *T*-1 *PRO* 完成 学习 后 留 院 工作 的 获奖者 	  
+	  </arg>
+	  <arg n="2">
+	  科研 工作 启动 费 	  
+	  </arg>
+	  <arg n="2" f="QTY">
+	  五万 元 	  
+	  </arg>
+	  <arg n="M" f="adv">
+	  据 介绍 	  
+	  </arg>
+	  <arg n="M" f="adv">
+	  将 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

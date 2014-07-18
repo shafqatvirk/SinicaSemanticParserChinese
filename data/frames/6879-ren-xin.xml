@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 忍心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is hardhearted enought to let happen"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 实在))
+		(ADVP (AD 不))
+		(VP (VV 忍心)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 让)
+				(NP-OBJ (NN 妈妈))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (NP-ADV (QP (CD 一)
+						    (CLP (M 个)))
+						(NP (NN 人)))
+					(DVP (VP (VA 孤伶伶))
+					     (DEV 的))
+					(VP (VV 过)
+					    (NP-OBJ (NN 年)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 让 妈妈 *PRO* 一 个 人 孤伶伶 的 过 年 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	实在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (VP (ADVP (AD 不))
+			(VP (VV 忍心)))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

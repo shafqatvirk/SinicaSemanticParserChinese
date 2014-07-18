@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 天亮 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="time described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			     (VP (ADVP (AD 快))
+				 (VP (VV 天亮))))
+			 (LC 时))
+		(VP (VV 到达)
+		    (AS 了)
+		    (NP-PN-OBJ (NR 基隆)
+			       (NN 码头))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	快 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

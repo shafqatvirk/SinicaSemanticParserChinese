@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 营业 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国)
+			     (NN 农业)
+			     (NN 银行))
+		      (NP-PN (NR 西藏)
+			     (NN 自治区)
+			     (NN 分行)))
+	      (VP (VP (PP-TMP (P 于)
+			      (NP (NT 去年)
+				  (NT 七月)
+				  (NT 一日)))
+		      (ADVP (AD 正式))
+		      (PP (P 对)
+			  (NP (NN 外)))
+		      (VP (VCD (VV 挂牌)
+			       (VV 营业)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 农业 银行 西藏 自治区 分行 
+	  </arg>
+	  <arg n="m" f="adv">
+	  对 外 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正式 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 去年 七月 一日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贪渎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing (money) arg0 grafts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 查获)
+				  (NP-OBJ (-NONE- *pro*))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 贪渎)
+					  (NP-OBJ (-NONE- *T*-2)))))))
+		      (NP (NN 金额)))
+	      (VP (VV 超过)
+		  (QP-OBJ (NP (ADJP (JJ 新))
+			      (NP (NN 台币)))
+			  (QP (CD 二十五亿九千多万)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

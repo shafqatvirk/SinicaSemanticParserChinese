@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="music played"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-IMP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 奏)
+		      (NP-OBJ (NP-PN (NR 英国))
+			      (NP (NN 国歌))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  英国 国歌 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

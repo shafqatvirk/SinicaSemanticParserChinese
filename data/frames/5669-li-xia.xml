@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 立下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 sets up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 儒生))
+	    (VP (LCP-ADV (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 专心)
+				 (NP-OBJ (NN 学问))))
+			 (LC 之外))
+		(PU ，)
+		(ADVP (AD 更))
+		(PP-BNF (P 为)
+			(NP (NN 後世)))
+		(VP (VV 立下)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 关心)
+					    (NP-OBJ (NN 社会)
+						    (CC 与)
+						    (NN 政治))))
+				    (DEC 的))
+			    (NP (NN 传统)))))) 
+	</parse>
+	<arg n="0">
+	儒生 
+	</arg>
+	<arg n="1">
+	*PRO* 关心 社会 与 政治 的 传统 
+	</arg>
+	<arg n="m" f="bnf">
+	为 後世 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 专心 学问 之外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

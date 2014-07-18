@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 简化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, causer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="thing arg1 is simplified into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 库区)
+		      (NN 地方)
+		      (NN 政府))
+	      (VP (ADVP (AD 不断))
+		  (VP (VV 简化)
+		      (NP-OBJ (PP (P 对)
+				  (NP (NN 外商)
+				      (NN 投资)))
+			      (NP (NN 审批)
+				  (NN 程序)))))) 
+	  </parse>
+	  <arg n="0">
+	  库区 地方 政府 	  
+	  </arg>
+	  <arg n="1">
+	  对 外商 投资 审批 程序 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不断 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NT 五四))
+	      (VP (SB 被)
+		  (VP (VRD (VV 简化)
+			   (VV 为))
+		      (NP-OBJ (DNP (NP (NN 民主)
+				       (NN 科学)
+				       (NN 自由)
+				       (ETC 等))
+				   (DEG 的))
+			      (NP (NN 形式)
+				  (PU 、)
+				  (NN 符号)))))) 
+	  </parse>
+	  <arg n="1">
+	  五四 
+	  </arg>
+	  <arg n="2">
+	  民主 科学 自由 等 的 形式 、 符号 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

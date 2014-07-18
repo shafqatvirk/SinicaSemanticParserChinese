@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 破产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity bankrupt"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (QP (CD 一百一十一)
+			  (CLP (M 个)))
+		      (NP (NN 试点)
+			  (NN 城市)))
+	      (NP-SBJ (ADJP (JJ 国有))
+		      (NP (NN 企业)))
+	      (VP (VCD (VV 破产)
+		       (VV 终结))
+		  (QP-OBJ (CD 三百八十九)
+			  (CLP (M 户))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  国有 企业 
+	  </arg>
+	  <arg n="0" f="psr">
+	  一百一十一 个 试点 城市 
+	  </arg>
+	  <arg n="0" f="QTY">
+	  三百八十九 户 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

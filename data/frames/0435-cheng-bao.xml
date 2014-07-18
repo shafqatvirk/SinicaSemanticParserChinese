@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承保 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="insurer"/>
+      <role argnum="1" argrole="thing ensured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中保)
+			     (NN 财险)
+			     (NN 公司))
+		  (VP (VV 承保)
+		      (NP-OBJ (NP (NP-PN (NR 三峡))
+				  (QP (CD 二)
+				      (CLP (M 期)))
+				  (NP (NN 工程)))
+			      (ADJP (JJ 最大))
+			      (NP (NN 标段))))) 
+	  </parse>
+	  <arg n="0">
+	  中保 财险 公司 
+	  </arg>
+	  <arg n="1">
+	  三峡 二 期 工程 最大 标段 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

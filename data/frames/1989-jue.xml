@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 决 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 makes decision on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 一直))
+				      (VP (VP (VV 迟疑))
+					  (VP (ADVP (AD 不))
+					      (VP (VV 决))))))
+			      (DEC 的)))
+		      (NP (NN 世界)
+			  (NN 商业)
+			  (NN 巨头们)))
+	      (VP (ADVP (AD 正在))
+		  (ADVP (AD 陆续))
+		  (VP (VV 进入)
+		      (NP-PN-OBJ (NR 中国))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 工程))
+	      (VP (VP-FOC (ADVP (AD 久))
+			  (VP (VV 议)))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 决))))) 
+	  </parse>
+	  <arg n="1">
+	  工程 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

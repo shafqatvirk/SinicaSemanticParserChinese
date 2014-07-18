@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 痛恨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 hates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 胡适))
+		  (VP (PP (P 与)
+			  (UCP (CP (WHNP-2 (-NONE- *OP*))
+				   (CP (IP (NP-TMP (NT 过去))
+					   (NP-PN-SBJ (NR 中共))
+					   (VP (MSP 所)
+					       (VP (VV 批评)
+						   (NP-OBJ (-NONE- *T*-2)))))
+				       (DEC 的)))
+			       (UCP (NP (NN 崇洋媚外))
+				    (PU 、)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 痛恨)
+					    (NP-OBJ (NN 共产主义)))))))
+		      (VP (VA 不同)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  共产主义 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

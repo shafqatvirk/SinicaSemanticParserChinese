@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跨进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 enters"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 香港))
+	      (PU ，)
+	      (VP (VP (VV 经历)
+		      (AS 了)
+		      (NP-OBJ (DNP (QP (CD 一百五十六)
+				       (CLP (M 年)))
+				   (DEG 的))
+			      (NP (NN 漫漫长路))))
+		  (PU ，)
+		  (VP (ADVP (AD 终於))
+		      (ADVP (AD 重新))
+		      (VP (VV 跨进)
+			  (NP-OBJ (NP (NN 祖国))
+				  (DNP (ADJP (JJ 温暖))
+				       (DEG 的))
+				  (NP (NN 家门))))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 
+	  </arg>
+	  <arg n="1">
+	  祖国 温暖 的 家门 
+	  </arg>
+	  <arg n="m" f="adv">
+	  重新 
+	  </arg>
+	  <arg n="m" f="adv">
+	  终於 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

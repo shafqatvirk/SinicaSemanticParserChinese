@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 画上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="painter"/>
+      <role argnum="1" argrole="thing painted"/>
+      <role argnum="2" argrole="painted on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 现在))
+	      (PU ，)
+	      (NP-SBJ (LCP (NP (NN 战))
+			   (LC 后))
+		      (QP (CD 一)
+			  (CLP (M 个)))
+		      (NP (NN 历史)
+			  (NN 时期)))
+	      (VP (ADVP (AD 即将))
+		  (VP (VV 画上)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 个)))
+			      (NP (NN 句号)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="2">
+	  战 后 一 个 历史 时期 
+	  </arg>
+	  <arg n="1">
+	  一 个 句号 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

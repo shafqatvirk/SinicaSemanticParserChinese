@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 标榜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="boaster"/>
+    <role argnum="1" argrole="thing arg0 boasts of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 标榜)
+				(NP-OBJ (NN 文治主义))))
+			(DEC 的)))
+		(NP-PN (NR 宋朝))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	文治主义 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 健身)
+			(NN 中心)))
+	    (VP (ADVP (AD 皆))
+		(VP (VV 标榜)
+		    (IP-OBJ (DP-SBJ (DT 全)
+				    (CLP (M 家)))
+			    (VP (VV 适宜)))))) 
+	</parse>
+	<arg n="0">
+	许多 健身 中心 
+	</arg>
+	<arg n="1">
+	全 家 适宜 
+	</arg>
+	<arg n="m" f="adv">
+	皆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

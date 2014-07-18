@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放置 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 雕塑))
+	      (VP (VV 放置)
+		  (PP-LOC (P 在)
+			  (LCP (NP (DNP (LCP (NP (NN 新翼))
+					     (LC 前))
+					(DEG 的))
+				   (NP (NN 海)))
+			       (LC 傍))))) 
+	  </parse>
+	  <arg n="1">
+	  雕塑 
+	  </arg>
+	  <arg n="2">
+	  在 新翼 前 的 海 傍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

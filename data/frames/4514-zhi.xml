@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 值 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="point of time arg0 happens to be at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 正))
+		      (VP (VV 值)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-PN-TPC (NR 中国)
+							 (CC 与)
+							 (NR 韩国))
+					      (NP-SBJ (ADJP (JJ 双边))
+						      (NP (NN 贸易额)))
+					      (VP (PP-TMP (-NONE- *T*-1))
+						  (ADVP (AD 大幅))
+						  (VP (VV 增长))))
+					  (DEC 之)))
+				  (NP (NN 际)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* 中国 与 韩国 双边 贸易额 *T*-1 大幅 增长 之 际 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

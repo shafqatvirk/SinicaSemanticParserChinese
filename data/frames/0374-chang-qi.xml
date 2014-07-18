@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 唱起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="singer"/>
+    <role argnum="1" argrole="song"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (PP-TMP (P 当)
+          (NP (CP (WHPP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (PN 我们))
+                          (VP (PP-TMP (-NONE- *T*-1))
+                              (VP (VV 唱起)
+                                  (NP-OBJ (NP (QP (CD 两))
+                                              (NP (NN 岸)))
+                                          (NP (NN 山歌))))))
+                      (DEC 的)))
+              (NP (NN 时候)))))
+	</parse>
+	<arg n="0"> 我们 </arg>
+	<arg n="M" f="TMP"> (*T*-1)->(时候) </arg>
+	<V/>
+	<arg n="1"> 两 岸 山歌 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

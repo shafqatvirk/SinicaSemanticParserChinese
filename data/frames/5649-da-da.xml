@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打打 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (phone call) arg0 makes"/>
+    <role argnum="2" argrole="person arg0 calls"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (ADVP (AD 平时))
+		(NP-SBJ (NN 中心))
+		(VP (PP (P 跟)
+			(NP (PN 他们)))
+		    (VP (VP (VV 打打)
+			    (NP-OBJ (NN 电话)))
+			(PU 、)
+			(VP (VV 提供)
+			    (NP-OBJ (NN 资料)))
+			(PU 、)
+			(VP (VCD (VV 聚餐)
+				 (VV 联谊)))
+			(ETC 等)))) 
+	</parse>
+	<arg n="0">
+	中心 
+	</arg>
+	<arg n="1">
+	电话 
+	</arg>
+	<arg n="2">
+	跟 他们 
+	</arg>
+	<arg n="m" f="adv">
+	平时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="game arg0 plays"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-OBJ (NP (NN 台商))
+		     (LC 间))
+	    (ADVP (AD 平时))
+	    (VP (VP (VV 打打)
+		    (NP-OBJ (NN 高尔夫球)))
+		(PU ，)
+		(VP (VV 唱)
+		    (NP-OBJ (NN 卡拉OK)))
+		(PU ，)
+		(CC 或是)
+		(VP (ADVP (AD 一块儿))
+		    (VP (VV 吃)
+			(NP-OBJ (NN 槟榔)))))) 
+	</parse>
+	<arg n="0">
+	台商 间 
+	</arg>
+	<arg n="1">
+	高尔夫球 
+	</arg>
+	<arg n="m" f="adv">
+	平时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

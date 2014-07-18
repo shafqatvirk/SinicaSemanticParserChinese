@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (DP-SBJ (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 搞)
+				    (NP-OBJ (NN 市场)
+					    (NN 经济))))
+			    (LC 以来))
+		       (DEG 的))
+		  (DP (DT 这)
+		      (QP (CD 几)
+			  (CLP (M 年))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  市场 经济 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 cannot figure out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-SBJ (NP (PN 他))
+		      (QP (CD 一)
+			  (CLP (M 句)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 忘情)))
+				      (VP (VV 喊出)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (IP (PU 「)
+			  (IP-SBJ (NP-SBJ (NP-PN (NR 台湾))
+					  (NP (NN 主权)))
+				  (VP (VA 独立)))
+			  (VP (QP-PRD (CD 万万)
+				      (CLP (M 岁))))
+			  (PU 」)))
+	      (PU ，)
+	      (VP (ADVP (AD 却))
+		  (VP (VV 让)
+		      (NP-OBJ (NN 人))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VPT (VV 搞)
+				   (AD 不)
+				   (VA 清楚))
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 该)
+					  (VP (VV 相信)
+					      (NP-OBJ (DP (DT 哪)
+							  (QP (CD 一)
+							      (CLP (M 个))))
+						      (NP-PN (NR 阿扁))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 该 相信 哪 一 个 阿扁 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 obtains"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-Q-SBJ (PU 「)
+			(NP-SBJ (-NONE- *pro*))
+			(VP (VV 能)
+			    (VP (VPT (VV 搞)
+				     (DER 得)
+				     (VV 到))
+				(NP-OBJ (NN 食)))))
+	      (PU ？)
+	      (PU 」)
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 普遍)))
+				  (DEC 的)))
+			  (NP (NN 怀疑))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  食 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

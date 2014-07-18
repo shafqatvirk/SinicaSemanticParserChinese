@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 类似於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is similar to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (PU 「)
+		       (ADJP (JJ 小))
+		       (NP-PN (NR 牛津))
+		       (PU 」))
+	    (VP (ADVP (AD 很))
+		(VP (VV 类似於)
+		    (NP-OBJ (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 筹办)))
+				      (LC 中))
+				 (DEG 的))
+			    (NP-PN (NP (NN 台商)
+				       (NN 子弟))
+				   (NP (NN 学校))))))) 
+	</parse>
+	<arg n="0">
+	「 小 牛津 」 
+	</arg>
+	<arg n="1">
+	*PRO* 筹办 中 的 台商 子弟 学校 
+	</arg>
+	<arg n="m" f="adv">
+	很 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

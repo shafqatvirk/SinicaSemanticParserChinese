@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 成立於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="time arg0 was established"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN (NP-PN (NR 晶宇))
+		   (NP (NN 生物)
+		       (NN 科技))
+		   (NP (NN 公司)))
+	    (VP (VV 成立於)
+		(NP-TMP (NP-PN (NR 民国))
+			(NP-TMP (CD 八十七)
+				(CLP (M 年)))
+			(NP-TMP (NT 九月))))) 
+	</parse>
+	<arg n="0">
+	晶宇 生物 科技 公司 
+	</arg>
+	<arg n="1">
+	民国 八十七 年 九月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

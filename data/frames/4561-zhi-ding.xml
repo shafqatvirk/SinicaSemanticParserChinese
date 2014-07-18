@@ -1,0 +1,147 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 制定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="policy maker"/>
+      <role argnum="1" argrole="policy, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 福建省))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 累积))
+		  (VP (VV 制定)
+		      (NP-OBJ (ADJP (JJ 地方性))
+			      (ADJP (JJ 涉台))
+			      (NP (NN 法规)))
+		      (QP-EXT (CD 八)
+			      (CLP (M 部)))))) 
+	  </parse>
+	  <arg n="0">
+	  福建省 	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  累积 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  地方性 涉台 法规 	  	  	  
+	  </arg>
+	  <arg n="1" f="QTY" >
+	  八 部 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-PN-SBJ (NN 国务院))
+	      (VP (ADVP (AD 正在))
+		  (VP (VV 研究)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 制定)
+				  (NP-OBJ (DNP (NP (QP (CD 三)
+						       (CLP (M 年)))
+						   (NP (ADJP (JJ 国有))
+						       (NP (NN 企业)))
+						   (NP (NN 改革)))
+					       (DEG 的))
+					  (ADJP (JJ 具体))
+					  (NP (NN 规划)
+					      (CC 和)
+					      (NN 政策)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  三 年 国有 企业 改革 的 具体 规划 和 政策 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (NP-TMP (NT 最近))
+			      (ADVP (AD 初步))
+			      (VP (VV 制定))))
+		      (DEC 的)))
+	      (NP-PN (NR 上海))
+	      (NP (NN 都市)
+		  (NN 旅游)
+		  (NN 发展)
+		  (NN 规划))) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(上海都市旅游发展规划) 	  	  	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  最近 	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  初步 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 南宁市))
+	      (VP (ADVP (AD 已))
+		  (VP (VRD (VCD (VV 规划)
+				(VV 制定))
+			   (VV 出))
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 较))
+					      (VP (VA 完整))))
+				      (DEC 的)))
+			      (NP (NN 园林)
+				  (NN 绿化)
+				  (NN 体系)))))) 
+	  </parse>
+	  <arg n="0">
+	  南宁市 	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-1)->(园林绿化体系) 较 完整 的 园林 绿化 体系 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

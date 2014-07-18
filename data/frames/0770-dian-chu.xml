@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 点出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 放眼)
+			  (NP-OBJ (NT 未来))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 詹正田))
+	      (VP (VV 点出)
+		  (NP-OBJ (QP (CD 几)
+			      (CLP (M 项)))
+			  (NP (NN 观察)
+			      (NN 重点))))
+	      (PU ：)) 
+	  </parse>
+	  <arg n="0">
+	  詹正田 
+	  </arg>
+	  <arg n="1">
+	  几 项 观察 重点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 放眼 未来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

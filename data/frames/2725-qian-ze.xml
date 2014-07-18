@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谴责 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="condemner"/>
+      <role argnum="1" argrole="thing condemned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+				  (IP (NP-PN-TPC (NR 也门))
+				      (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 驻)
+					  (NP-PN-OBJ (NR 联合国)))))
+			      (NP (NN 代表)))
+		      (NP-PN (NR 阿什塔尔)))
+	      (VP (VP (ADVP (AD 强烈))
+		      (VP (VV 谴责)
+			  (NP-OBJ (DP (DT 这)
+				      (CLP (M 起)))
+				  (NP (NN 事件)))))
+		  (PU ，)
+		  (VP (VV 要求)
+		      (IP (NP-PN-SBJ (NR 联合国)
+				     (NN 安理会))
+			  (VP (PP-DIR (P 对)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (SB 被)
+							  (VP (VV 通过))))
+						  (DEC 的)))
+					  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (PP-DIR (P 对)
+								  (NP-PN (NR 伊拉克)))
+							  (VP (VV 动武))))
+						  (DEC 的))
+					  (QP (CD ６７８)
+					      (CLP (M 号)))
+					  (NN 决议)))
+			      (VP (VV 负责))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 也门 (*T*-2)->(代表) 驻 联合国 代表 阿什塔尔 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  强烈 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  这 起 事件 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="condemner"/>
+      <role argnum="1" argrole="party condemned"/>
+      <role argnum="2" argrole="reason for the condemnation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP (NP-PN-SBJ (NR 德奎利亚尔))
+		      (VP (PP-DIR (P 对)
+				  (IP (NP-SBJ (NP-PN (NR 伊))
+					      (NP (NN 平民)))
+				      (VP (VV 死亡))))
+			  (VP (VV 表示)
+			      (NP-OBJ (NN 悲痛)))))
+		  (IP (NP-SBJ (QP (CD 一些))
+			      (NP (NN 国家)))
+		      (VP (VV 谴责)
+			  (NP-OBJ (ADJP (JJ 多国))
+				  (NP (NN 部队)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 屠杀)
+				  (NP-OBJ (NN 无辜))))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 国家 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  多国 部队 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 屠杀 无辜 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

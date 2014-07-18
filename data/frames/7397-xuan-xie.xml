@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 宣泄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 gets off his chest"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (ADJP (JJ 新))
+			    (NP (NN 青年)))
+		    (VP (VV 宣泄)
+			(NP-OBJ (DNP (LCP (NP (NN 心))
+					  (LC 中))
+				     (DEG 的))
+				(NP (NN 激愤)))))
+	    (VP (VV 可以)
+		(VP (VV 同情)))) 
+	</parse>
+	<arg n="0">
+	新 青年 
+	</arg>
+	<arg n="1">
+	心 中 的 激愤 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

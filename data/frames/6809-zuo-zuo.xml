@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 做做 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 does"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (NP-TMP (NT 现在))
+		(ADVP (AD 都))
+		(VP (VP-FOC (VP (VV 买)
+				(NP-OBJ (NN 香精)))
+			    (VP (PP-LOC (P 在)
+					(NP (NN 家)))
+				(VP (VP (NP-ADV (PN 自己))
+					(VP (VV 燃香)
+					    (PU 、)
+					    (VV 泡澡)))
+				    (VP (VV 做做)
+					(NP-OBJ (NN HOME)
+						(NN SPA))))))
+		    (VP (ADVP (AD 比较))
+			(VP (VA 划算)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	HOME SPA 
+	</arg>
+	<arg n="m" f="loc">
+	在 家 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 在位)
+				    (QP-EXT (CD 十六)
+					    (CLP (M 年)))))
+			    (DEC 的)))
+		    (NP-APP (ADJP (JJ 前))
+			    (NP (NN 总理)))
+		    (NP-PN (NR 柯尔)))
+	    (PU ，)
+	    (VP (VP (VV 不敌)
+		    (NP-OBJ (NP (DP (DT 全))
+				(NP (NP 国)))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (PU 「)
+					    (VV 换)
+					    (NP-OBJ (NN 人))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 做做)
+						    (VV 看)))
+					    (PU 」)))
+				    (DEC 的))
+			    (NP (NN 舆论)
+				(NN 压力))))
+		(PU ，)
+		(VP (ADVP (AD 黯然))
+		    (VP (VV 下台))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

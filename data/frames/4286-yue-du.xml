@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 阅读 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing read"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR ＣＩＰＭ))
+	      (VP (ADVP (AD 认真))
+		  (VP (VV 阅读)
+		      (NP-OBJ (NP (NN 工程师))
+			      (DNP (NP (PP (P 对)
+					   (NP (NN 外)))
+				       (NP (NN 来往)))
+				   (DEG 的))
+			      (NP (NN 文函)))))) 
+	  </parse>
+	  <arg n="0">
+	  ＣＩＰＭ 
+	  </arg>
+	  <arg n="1">
+	  工程师 对 外 来往 的 文函 
+	  </arg>
+	  <arg n="m" f="adv">
+	  认真 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

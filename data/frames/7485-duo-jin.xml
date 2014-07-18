@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 躲进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 takes refuge in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现在))
+	    (NP-SBJ (QP (CD 很多))
+		    (NP (NN 人)))
+	    (VP (VV 躲进)
+		(LCP-OBJ (NP (NN 研究所))
+			 (LC 里)))) 
+	</parse>
+	<arg n="0">
+	很多 人 
+	</arg>
+	<arg n="1">
+	研究所 里 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

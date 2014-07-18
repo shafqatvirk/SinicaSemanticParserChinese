@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 包藏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="wrapper"/>
+    <role argnum="1" argrole="thing wrapped"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-OBJ (IP-APP (NP-SBJ-1 (NN 胚株)
+                            (PRN (PU （)
+                                 (NP (NN 种子))
+                                 (PU ）)))
+                  (VP (SB 被)
+                      (IP-OBJ (NP-SBJ (NN 心皮))
+                              (VP (VV 包藏)
+                                  (NP-OBJ (-NONE- *-1))))))
+          (DNP (NP (DP (DT 这)
+                       (QP (CD 一)))
+                   (NP (NN 被子)
+                       (NN 植物)))
+               (DEG 的))
+          (NP (NN 典型)
+              (NN 特征))))
+	</parse>
+	<arg n="0"> 心皮 </arg>
+	<V/>
+	<arg n="1"> (*-1)->(胚株（种子）) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 堆起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 piles up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 做出)
+				 (NP-OBJ (NN 陶器))))
+			 (LC 後))
+		(PP-LOC (P 在)
+			(NP (NN 露天)))
+		(VP (VP (VV 堆起)
+			(NP-OBJ (NN 柴薪)))
+		    (PU ，)
+		    (VP (VV 放)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 把)))
+				(NP (NN 火))))
+		    (PU ，)
+		    (VP (QP-ADV (CD 一)
+				(CLP (M 次)))
+			(VP (VV 烧成)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	柴薪 
+	</arg>
+	<arg n="m" f="loc">
+	在 露天 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 做出 陶器 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

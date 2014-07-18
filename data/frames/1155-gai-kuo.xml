@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 概括 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing summarized"/>
+      <role argnum="2" argrole="summarized as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP (PU “)
+			      (NP (QP (CD 一))
+				  (NP (NN 国)))
+			      (NP (QP (CD 两))
+				  (NP (NN 制)))
+			      (PU ”))
+			  (PP (P 在)
+			      (NP (NN 金融)
+				  (NN 领域)))
+			  (ADJP (JJ 具体))
+			  (NP (NN 表现)))
+		  (VP (VV 可以)
+		      (VP (VCP (VV 概括)
+			       (VC 为))
+			  (PU ：)
+			  (NP-PRD (NP (QP (CD 一)
+					  (CLP (M 个)))
+				      (NP (NN 国家)))
+				  (PU ，)
+				  (NP (QP (CD 两)
+					  (CLP (M 种)))
+				      (NP (NN 货币)))
+				  (PU 、)
+				  (NP (QP (CD 两)
+					  (CLP (M 种)))
+				      (NP (NN 货币)
+					  (NN 制度)))
+				  (PU 、)
+				  (NP (QP (CD 两)
+					  (CLP (M 个)))
+				      (NP (NN 金融)
+					  (NN 当局))))))) 
+	  </parse>
+	  <arg n="1">
+	  “ 一 国 两 制 ” 在 金融 领域 具体 表现 
+	  </arg>
+	  <arg n="2">
+	  一 个 国家 ， 两 种 货币 、 两 种 货币 制度 、 两 个 金融 当局 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

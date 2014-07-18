@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 纪念 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="commemorator"/>
+      <role argnum="1" argrole="thing commemorated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 南京))
+		      (NP (NN 军区)))
+	      (VP (VV 纪念)
+		  (NP-OBJ (NP (NP-PN (NR 皖南))
+			      (NP (NN 事变)))
+			  (QP (CD ５０))
+			  (NP (NN 周年))))) 
+	  </parse>
+	  <arg n="0">
+	  南京 军区 
+	  </arg>
+	  <arg n="1">
+	  皖南 事变 ５０ 周年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-SBJ (NP-APP (NT 一九九七年)
+			      (NT 七月)
+			      (NT 一日))
+		      (DP (DT 这)
+			  (QP (CD 一)
+			      (CLP (M 天)))))
+	      (PU ，)
+	      (VP (ADVP (AD 将))
+		  (PP-MNR (P 作为)
+			  (NP-MNR (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 值得)
+						  (IP-OBJ (NP-SBJ (NN 人们))
+							  (VP (ADVP (AD 永远))
+							      (VP (VV 纪念))))))
+					  (DEC 的)))
+				  (NP (NN 日子))))
+		  (VP (VV 载入)
+		      (NP-OBJ (NN 史册))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  永远 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 细数 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 counts carefully/goes down the list of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 细数)
+			(NP-OBJ (NT 当今)
+				(NN 政坛))))
+	    (PU ，)
+	    (NP-SBJ (ADJP (JJ 唯一))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VE 有)
+				    (NP-OBJ (NP-APP (NN 客籍)
+						    (PU 「)
+						    (NN 大老)
+						    (PU 」))
+					    (NP (NN 身份)))))
+			    (DEC 的))))
+	    (PU ，)
+	    (VP (VV 首推)
+		(NP-OBJ (NP-APP (NP-PN (NN 总统府))
+				(NP (NN 资政)))
+			(NP-PN (NR 吴伯雄)
+			       (NN 先生))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	当今 政坛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

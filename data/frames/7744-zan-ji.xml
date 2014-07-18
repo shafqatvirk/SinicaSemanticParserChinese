@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 攒积 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 saves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 住)
+				    (PP (P 在)
+					(NP-PN (NR 中坜)))))
+			    (DEC 的)))
+		    (NP-PN (NR 林鸿桂)))
+	    (PU ，)
+	    (VP (VP (NP-TMP (NN 早年))
+		    (VP (VV 白手起家)))
+		(PU ，)
+		(VP (PP-MNR (P 靠著)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 卖)
+				    (NP-OBJ (NN 冰果)))))
+		    (VP (VV 赚)
+			(AS 了)
+			(NP-OBJ (QP (CD 不少))
+				(NP (NN 钱)))))
+		(PU ，)
+		(VP (VV 攒积)
+		    (AS 了)
+		    (NP-OBJ (QP (QP (CD 三)
+				    (CLP (-NONE- *RNR*-2)))
+				(PU 、)
+				(QP (CD 四)
+				    (CLP-2 (M 栋))))
+			    (NP (NN 房子)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 住 在 中坜 的 林鸿桂 
+	</arg>
+	<arg n="1">
+	三 *RNR*-2 、 四 栋 房子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

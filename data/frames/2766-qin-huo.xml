@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 擒获 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people captured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT １９９８年))
+		  (NP-SBJ (NN 警方))
+		  (VP (ADVP (AD 还))
+		      (VP (VP (VV 擒获)
+			      (NP-OBJ (NP (NP-APP (NN 北)
+						  (NN 海岸)
+						  (CC 和)
+						  (NN 东部)
+						  (NN 平原)
+						  (ETC 等))
+					  (NP (NN 地)))
+				      (NP (NN 贩毒)
+					  (NN 集团))
+				      (NP (NN 毒枭)))
+			      (NP-EXT (QP (CD １２))
+				      (NP (NN 人))))))) 
+	  </parse>
+	  <arg n="0">
+	  警方 
+	  </arg>
+	  <arg n="1">
+	  北 海岸 和 东部 平原 等 地 贩毒 集团 毒枭 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  １２ 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９９８年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 送进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 sends"/>
+    <role argnum="2" argrole="place arg1 is sent into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 只))
+				(VP (VV 待)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (BA 将)
+						(IP-OBJ (NP-SBJ (NN 孩子) )
+							(VP (VV 送进)
+							    (NP-OBJ (NN 小学) ))))))))
+		    (PU ，)
+		    (ADVP (AD 重新))
+		    (VP (VV 找)
+			(NP-OBJ (QP (CLP (M 份)))
+				(NP (NN 工作) ))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	孩子 
+	</arg>
+	<arg n="2">
+	小学 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 联外))
+		    (NP (NN 道路)))
+	    (VP (VP (ADVP (AD 固然))
+		    (VP (VV 送进)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 批)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 希望)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (VP (VV 远离)
+								(NP-PN-OBJ (NR 台北市)))
+							    (PU ，)
+							    (VP (VV 享受)
+								(NP-OBJ (NN 自然)))))))
+					(DEC 的)))
+				(ADJP (JJ 新))
+				(NP (NN 移民)))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 也))
+		    (VP (VV 迎进)
+			(AS 了)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 堆)))
+				(DNP (NP (PU 「)
+					 (DP (DT 另)
+					     (QP (CD 一)
+						 (CLP (M 个))))
+					 (NP (NN 世界))
+					 (PU 」))
+				     (DEG 的))
+				(NP (PU 「)
+				    (NN 故人)
+				    (PU 」)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(NP-PN (NR 八里)))
+				(VP (VV 定居)))))))) 
+	</parse>
+	<arg n="0">
+	联外 道路 
+	</arg>
+	<arg n="1">
+	一 批 *OP* *T*-1 希望 *PRO* 远离 台北市 ， 享受 自然 的 新 移民 
+	</arg>
+	<arg n="m" f="adv">
+	固然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

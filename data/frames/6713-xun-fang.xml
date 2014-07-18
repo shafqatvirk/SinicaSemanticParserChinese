@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 寻访 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 searches for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (VV 追寻)
+					  (NP-OBJ (NN 理想)))
+				      (VP (MSP 而)
+					  (VP (VV 去)))))
+			      (DEC 的)))
+		      (NP (NN 记者)))
+	      (PU ，)
+	      (VP (VV 可)
+		  (VP (ADVP (AD 曾))
+		      (VP (VRD (VV 寻访)
+			       (VV 到))
+			  (NP-OBJ (DNP (LCP (NP (NN 心))
+					    (LC 中))
+				       (DEG 的))
+				  (NP (NN 桃花源))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 追寻 理想 而 去 的 记者 
+	</arg>
+	<arg n="1">
+	心 中 的 桃花源 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

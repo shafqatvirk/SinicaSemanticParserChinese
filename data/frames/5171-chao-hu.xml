@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 超乎 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 surpasses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (NN 理财)
+			 (NN 路))
+		     (LC 上))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 风水轮流转)))
+			    (DEC 的))
+		    (NP (NN 速度)))
+	    (VP (VV 超乎)
+		(NP-OBJ (NN 常人)
+			(NN 预期)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 风水轮流转 的 速度 
+	</arg>
+	<arg n="1">
+	常人 预期 
+	</arg>
+	<arg n="m" f="loc">
+	理财 路 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

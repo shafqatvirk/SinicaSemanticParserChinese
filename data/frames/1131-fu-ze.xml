@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 负责 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party in charge"/>
+      <role argnum="1" argrole="responsible for"/>
+      <role argnum="2" argrole="responsible to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NP-PN (NR 香港))
+				 (ADJP (JJ 特别))
+				 (NP (NN 行政区)))
+			  (NP (NN 筹委会)))
+		  (VP (ADVP (AD 将))
+		      (PP-MNR (P 根据)
+			      (NP (NP-PN (NP (DP (DT 全))
+					     (NP (NN 国)))
+					 (NP (NN 人大)))
+				  (DNP (PP (P 关于)
+					   (NP (NP (NP-PN (NP-PN (NR 香港))
+							  (ADJP (JJ 特别))
+							  (NP (NN 行政区)))
+						   (QP (OD 第一)
+						       (CLP (M 届)))
+						   (NP (NN 政府)
+						       (CC 和)
+						       (NN 立法会)))
+					       (NP (NN 产生)
+						   (NN 办法))))
+				       (DEG 的))
+				  (NP (NN 决定))))
+		      (PU ，)
+		      (VP (VP (VV 负责)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 筹备)
+					  (NP-OBJ (NP (ADJP (JJ 特别))
+						      (NP (NN 行政区)))
+						  (ADJP (JJ 有关))
+						  (NP (NN 事宜))))))
+			  (PU ，)
+			  (VP (VV 规定)
+			      (NP-OBJ (DNP (NP (NP (PN 其))
+					       (QP (OD 第一)
+						   (CLP (M 届)))
+					       (NP (NN 立法会)))
+					   (DEG 的))
+				      (ADJP (JJ 具体))
+				      (NP (NN 产生)
+					  (NN 办法))))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 特别 行政区 筹委会 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 筹备 特别 行政区 有关 事宜 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 全 国 人大 关于 香港 特别 行政区 第一 届 政府 和 立法会 产生 办法 的 决定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (ADJP (JJ 具体))
+			       (NP (NN 事务)))
+			   (DEG 的))
+		      (NP (NN 处理)))
+	      (VP (ADVP (AD 完全))
+		  (PP-LGS (P 由)
+			  (NP (NN 特区)
+			      (NN 政府)))
+		  (VP (VV 负责))))
+	  </parse>
+	  <arg n="0">
+	  由 特区 政府 
+	  </arg>
+	  <arg n="1">
+	  具体 事务 的 处理 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 联合国)
+			 (NN 安理会))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (SB 被)
+					      (VP (VV 通过))))
+				      (DEC 的)))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-DIR (P 对)
+						      (NP-PN (NR 伊拉克)))
+					      (VP (VV 动武))))
+				      (DEC 的))
+			      (QP (CD ６７８)
+				  (CLP (M 号)))
+			      (NN 决议)))
+		  (VP (VV 负责))))
+	  </parse>
+	  <arg n="0">
+	  联合国 安理会 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-1 被 通过 的 *PRO* 对 伊拉克 动武 的 ６７８ 号 决议 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

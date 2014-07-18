@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (QP (CD 一)
+		      (CLP (M 个)))
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (ADVP (AD 终年))
+				  (ADVP (AD 不))
+				  (VP (VV 冻))))
+			  (DEC 的)))
+		  (ADJP (JJ 天然))
+		  (NP (NN 深水)
+		      (NN 良港))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  终年 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 puts somewhere to freeze"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VP (VE 无)
+				   (NP-OBJ (NP (NN 处))))
+			       (VP (VV 可)
+				   (VP (VV 逃)))))
+		       (LC 之下))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (VP (ADVP (AD 乾脆))
+		      (VP (VV 找)
+			  (NP-OBJ (QP (CLP (M 个)))
+				  (NP (NN 冷冻柜))))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (PN 自己))
+				  (VP (VRD (VV 冻)
+					   (VV 进去)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  自己 
+	  </arg>
+	  <arg n="m" f="adv">
+	  乾脆 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *PRO* 无 处 可 逃 之下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

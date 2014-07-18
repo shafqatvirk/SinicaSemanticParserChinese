@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 奔走 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 promotes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP-PN (NR 叶宏灯))
+				  (DEG 的))
+			     (NP (NN 倡议)))
+			 (LC 下)))
+	    (PU ，)
+	    (NP-TMP (NT 九四年))
+	    (NP-PN-SBJ (NR 台协))
+	    (VP (ADVP (AD 就))
+		(VP (VV 开始)
+		    (VP (PP-BNF (P 为)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 创设)
+					(NP-PN-OBJ (NP (NN 台商)
+						       (NN 子弟))
+						   (NP (NN 学校))))))
+			(VP (VV 奔走)))))) 
+	</parse>
+	<arg n="0">
+	台协 
+	</arg>
+	<arg n="1">
+	为 *PRO* 创设 台商 子弟 学校 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	九四年 
+	</arg>
+	<arg n="m" f="loc">
+	在 叶宏灯 的 倡议 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 民间)
+		    (NN 团体))
+	    (VP (ADVP (AD 大力))
+		(VP (VV 奔走)))) 
+	</parse>
+	<arg n="0">
+	民间 团体 
+	</arg>
+	<arg n="m" f="adv">
+	大力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 睡觉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person sleeping"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+		     (VP (NP-TMP (DP (DT 每)
+				     (CLP (M 天)))
+				 (NP (NT 晚上)))
+			 (VP (VV 睡觉))))
+		 (LC 前)) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	每 天 晚上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

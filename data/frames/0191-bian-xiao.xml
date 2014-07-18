@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 变小 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="thing undergoing change"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 地球))
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (DNP (NP (NN 中国人))
+					  (DEG 的))
+				     (NP (NN 眼)))
+				 (LC 里)))
+		    (ADVP (AD 正在))
+		    (ADVP (AD 慢慢))
+		    (VP (VV 变小))))) 
+	  </parse>
+	  <arg n="0">
+	  地球 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 中国人 的 眼里 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  正在 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  慢慢 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

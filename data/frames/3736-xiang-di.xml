@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相抵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 今年))
+		      (NP (NT 一)
+			  (CC 至)
+			  (NT 四月)))
+	      (NP-SBJ (NP (NN 总公司))
+		      (ADJP (JJ 直属))
+		      (NP (NN 企业)))
+	      (VP (VV 出现)
+		  (NP-OBJ (CP-APP (IP (LCP (IP (NP-SBJ (NN 盈亏))
+					       (VP (VV 相抵)))
+					   (LC 后))
+				      (NP-SBJ (-NONE- *pro*))
+				      (VP (ADVP (AD 净))
+					  (VP (VV 亏损))))
+				  (DEC 的))
+			  (NP (NN 情况))))) 
+	  </parse>
+	  <arg n="0">
+	  盈亏 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

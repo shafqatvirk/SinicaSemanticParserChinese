@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 补贴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 subsidizes"/>
+    <role argnum="2" argrole="subsidy"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (QP (CD 半))
+			 (NP (NN 世纪)))
+		     (LC 来))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 拜)
+			(NP-OBJ (DNP (NP (CP-APP (IP (NP-SBJ (NN 国家))
+						     (VP (VV 补贴)
+							 (NP-OBJ (NN 学费)
+								 (CC 及)
+								 (NN 书本费))))
+						 (DEC 的))
+					 (NP (NN 政策)))
+				     (DEG 之))
+				(NP (NN 赐)))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 平等)))
+			    (DEC 的)))
+		    (NP (NN 受教权)))
+	    (VP (ADVP (AD 一直))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NP-PN (NR 台湾))
+						(NP (NN 人民))
+						(NP (NN 阶级)))
+					(VP (NP-MNR (-NONE- *T*-2))
+					    (VP (VV 流动))))
+				    (DEC 的)))
+			    (ADJP (JJ 主要))
+			    (NP (NN 助力)))))) 
+	</parse>
+	<arg n="0">
+	国家 
+	</arg>
+	<arg n="2">
+	学费 及 书本费 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

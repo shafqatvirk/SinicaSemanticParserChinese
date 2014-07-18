@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 杀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 郭辉))
+		  (VP (VV 犯)
+		      (NP-OBJ (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 故意))
+					      (VP (VV 杀)
+						  (NP-OBJ (NN 人)))))
+				  (NP (NN 罪)))
+			      (PU 、)
+			      (NP (NN 抢劫罪))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  故意 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 估计)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (QP (CD 十)
+			       (CLP (M 年)))
+			   (LC 来))
+		  (ADVP (AD 大约))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ-1 (QP (CD 两万)
+					    (CLP (M 只)))
+					(NP-PN (NR 藏))
+					(NP (NN 羚羊)))
+			      (VP (SB 被)
+				  (VP (VV 杀)
+				      (NP-OBJ (-NONE- *-1)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

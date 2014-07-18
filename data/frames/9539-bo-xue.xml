@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 剥削 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="exploiter"/>
+      <role argnum="1" argrole="exploited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 有时))
+	      (NP-SBJ (NN 茶农))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 会)
+		      (VP (VV 遇到)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 中盘商))
+					      (VP (VV 剥削)))
+					  (DEC 的))
+				  (NP (NN 苦境))))))) 
+	  </parse>
+	  <arg n="0">
+	  中盘商 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

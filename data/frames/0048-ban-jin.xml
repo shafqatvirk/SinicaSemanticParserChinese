@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搬进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="mover"/>
+    <role argnum="1" argrole="thing moved"/>
+    <role argnum="2" argrole="moved from"/>
+    <role argnum="3" argrole="moved to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PU “)
+      (NP-SBJ (-NONE- *pro*))
+      (VP (NP-TMP (NT 现在))
+          (VP (VP (VV 搬进)
+                  (NP-OBJ (DNP (NP (NP-PN (NR 长江))
+                                   (NP (NN 大堤)))
+                               (DEG 的))
+                          (NP (NN 里面))))
+              (PU ，)
+              (VP (ADVP (AD 再))
+                  (ADVP (AD 也))
+                  (ADVP (AD 不))
+                  (VP (VV 怕)
+                      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                              (VP (LB 被)
+                                  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+                                          (IP (NP-SBJ (NN 水))
+                                              (VP (VV 淹)
+                                                  (NP-OBJ (-NONE- *T*-1)))))))))))
+      (AS 了)
+      (PU 。)
+      (PU ”)))
+	</parse>
+	<arg n="1"> *pro* </arg>
+	<arg n="M" f="TMP"> 现在 </arg>
+	<V/>
+	<arg n="3"> 长江 大堤 的 里面 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

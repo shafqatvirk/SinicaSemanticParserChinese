@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 娱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 entertains arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 无意)
+			    (NP-OBJ (NN 仕途) ))))
+	    (PU ，)
+	    (ADVP (AD 於是))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NN 家) )
+			     (LC 中)))
+		(VP (VV 过)
+		    (AS 著)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (VCD (VV 书)
+						     (VV 画)))
+					    (VP (ADVP (AD 自))
+						(VP (VV 娱)))))
+				    (DEC 的))
+			    (NP (NN 文人)
+				(NN 生活) ))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	书 画 
+	</arg>
+	<arg n="m" f="adv">
+	自 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

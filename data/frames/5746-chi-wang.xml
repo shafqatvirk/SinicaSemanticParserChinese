@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吃完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="eater"/>
+    <role argnum="1" argrole="thing arg0 finishes eating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-1 (NP-SBJ (-NONE- *pro*))
+		  (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VP (VV 吃完)
+					       (NP-OBJ (NN 宵夜)))
+					   (VP (VV 回来))))
+				   (LC 後))
+			  (VP (VV 继续)
+			      (VP (VV 干))))
+		      (PU ，)
+		      (VP (VV 熬到)
+			  (IP-OBJ (NP-SBJ (QP (CD 两))
+					  (NP (NN 眼)))
+				  (VP (VV 发直))))
+		      (PU ，)
+		      (VP (ADVP (AD 才))
+			  (VP (VP (VV 披星戴月))
+			      (VP (VV 回)
+				  (NP-OBJ (NN 宿舍))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	宵夜 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 等)
+			(NP-OBJ (PN 他))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (DVP (VP (VV 满头大汗))
+				     (DEV 地))
+				(VP (VV 烤好)
+				    (NP-OBJ (NN 肉)))))))
+	    (PU ，)
+	    (NP-SBJ (NN 年轻人))
+	    (VP (VP (ADVP (AD 倒))
+		    (VP (VC 是)
+			(VP (VP (VP (VV 闻)
+				    (NP-OBJ (NN 香)))
+				(VP (MSP 而)
+				    (VP (VV 来))))
+			    (PU ，)
+			    (VP (VV 赞)
+				(AS 了)
+				(NP-OBJ (PN 他))
+				(QP-EXT (CD 几)
+					(CLP (M 句)))))))
+		(PU ，)
+		(VP (ADVP (AD 接著))
+		    (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					     (VP (VV 狼吞虎咽)))
+				     (VP (VV 吃完))))
+			     (LC 後))
+		    (ADVP (AD 又))
+		    (VP (VC 是)
+			(VP (VV 一哄而散)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 狼吞虎咽 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (NN 正餐))
+		(VP (VV 吃完)
+		    (AS 了))) 
+	</parse>
+	<arg n="1">
+	正餐 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

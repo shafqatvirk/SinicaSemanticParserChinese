@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寻觅 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity looked for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 即将))
+				      (VP (VV 过去))))
+			      (DEC 的)))
+		      (QP (OD 二十))
+		      (NP (NN 世纪)))
+	      (PU ，)
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHPP-2 (WHNP (-NONE- *OP*)))
+			      (CP (IP (NP-SBJ (NN 中国人))
+				      (VP (WHPP-TMP (PP (-NONE- *T*-2)))
+					  (DVP (VP (VV 百折不挠))
+					       (DEV 地))
+					  (VP (VV 寻觅)
+					      (PU 、)
+					      (VV 探索))))
+				  (DEC 的)))
+			  (NP (NN 世纪))))) 
+	  </parse>
+	  <arg n="0">
+	  中国人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  百折不挠 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

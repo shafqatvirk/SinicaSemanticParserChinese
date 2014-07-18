@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 罢休 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (CP (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+                  (VP (VV 看来)))
+          (PU ，)
+          (CP-CND (ADVP (CS 只要))
+                  (IP (NP-PN-SBJ (NR 萨达姆))
+                      (VP (ADVP (AD 不))
+                          (VP (VV 屈服)))))
+          (PU ，)
+          (NP-PN-SBJ (NR 美国))
+          (VP (VC 是)
+              (VP (ADVP (AD 不))
+                  (VP (VV 会)
+                      (VP (VV 罢休))))))
+      (SP 的)
+      (PU 。)))
+	</parse>
+	<arg n="M" f="ADV"> *PRO* 看来 </arg>
+	<arg n="M" f="CND"> 只要 萨达姆 不 屈服 </arg>
+	<arg n="0"> 美国 </arg>
+	<arg n="M" f="ADV"> 不 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

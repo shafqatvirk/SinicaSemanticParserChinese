@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 栽进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 falls into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 吴建乐))
+	    (VP (ADVP (AD 就))
+		(VP (VP (NP-ADV (QP (CD 一))
+				(NP (NN 头)))
+			(VP (VV 栽进)
+			    (NP-OBJ (NN 建筑)
+				    (NN 工地))))
+		    (PU ，)
+		    (VP (VV 作)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 挑土)
+						(PU 、)
+						(VV 和泥)))
+					(DEC 的)))
+				(NP (NN 小工))))))) 
+	</parse>
+	<arg n="0">
+	吴建乐 
+	</arg>
+	<arg n="1">
+	建筑 工地 
+	</arg>
+	<arg n="m" f="adv">
+	一 头 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

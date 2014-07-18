@@ -1,0 +1,179 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 制止 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="preventer"/>
+      <role argnum="1" argrole="thing prevented"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 人民)
+			     (NN 银行))
+		      (DP (DT 各)
+			  (CLP (M 级)))
+		      (NP (NN 分支)
+			  (NN 机构)))
+	      (VP (VV 要)
+		  (VP (ADVP (AD 及时))
+		      (VP (VV 制止)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 地方)
+						      (NN 人民)
+						      (NN 政府)
+						      (CC 和)
+						      (NN 企业)
+						      (NN 主管)
+						      (NN 部门))
+					      (VP (PP-MNR (P 通过)
+							  (NP (NN 行政)
+							      (NN 手段)))
+						  (VP (VV 干预)
+						      (NP-OBJ (NN 金融)
+							      (NN 工作)))))
+					  (DEC 的))
+				  (NP (NN 做法))))))) 
+	  </parse>
+	  <arg n="0">
+	  人民 银行 各 级 分支 机构 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  及时 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  地方 人民 政府 和 企业 主管 部门 通过 行政 手段 干预 金融 工作 的 做法 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (VV 违规))
+					  (VP (NP-ADV (ADJP (JJ 高))
+						      (NP (NN 息)))
+					      (VP (VV 揽)
+						  (NP-OBJ (NN 存))))))
+				  (DEC 的)))
+			  (NP (NN 金融)
+			      (NN 机构))))
+	      (PU ，)
+	      (PP-MNR (ADVP (AD 一))
+		      (PP (P 经)
+			  (NP (NN 发现))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 必须)
+		  (VP (VP (ADVP (AD 立即))
+			  (VP (VV 制止)))
+		      (CC 和)
+		      (VP (ADVP (AD 严厉))
+			  (VP (VV 惩处)))))) 
+	  </parse>
+	  <arg n="1">
+	  对 *OP* (*T*-1)->(金融机构) 违规 高 息 揽 存 的 金融 机构 
+	  </arg>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  立即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="preventer"/>
+      <role argnum="1" argrole="party prevented"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国际)
+		      (NN 社会))
+	      (VP (PP-DIR (P 对)
+			  (NP (PN 此)))
+		  (VP (VV 必须)
+		      (VP (VP (VV 保持)
+			      (NP-OBJ (DNP (ADJP (JJ 高度))
+					   (DEG 的))
+				      (NP (NN 警惕))))
+			  (PU ，)
+			  (VP (VV 制止)
+			      (NP-PN-OBJ (NR 美国))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 再次))
+				      (ADVP (AD 恣意))
+				      (VP (VV 妄为))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国际 社会 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  美国 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 再次 恣意 妄为 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NN 国家)
+			     (NN 经贸委))
+		  (VP (ADVP (AD 将))
+		      (VP (VP (VV 组织)
+			      (NP-OBJ (NN 专项)
+				      (NN 检查)))
+			  (VP (VV 制止)
+			      (NP-OBJ (-NONE- *pro*))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 向)
+					      (NP (NN 外商)
+						  (NN 企业)))
+				      (ADVP (AD 乱))
+				      (VP (VV 收费)))))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 经贸委 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 向 外商 企业 乱 收费 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 旋灭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity dying out instantly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (LCP (NP (NN 股市))
+			   (LC 中))
+		      (QP (CD 一)
+			  (CLP (M 波波)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 众人))
+				  (VP (VV 追涨)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NP (NN 热门股))
+			  (PU 、)
+			  (NP (ADJP (JJ 新))
+			      (NP (NN 标的)))))
+	      (PU ，)
+	      (VP (PP-ADV (ADVP (AD 就))
+			  (PP (P 像)
+			      (NP (LCP (NP (NN 急流))
+				       (LC 中))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VV 诱人)))
+					  (DEC 的)))
+				  (NP (NN 漩涡)))))
+		  (VP (VCD (VV 旋起)
+			   (VV 旋灭))))) 
+	  </parse>
+	  <arg n="0">
+	  股市 中 一 波波 *OP* 众人 追涨 *T*-1 的 热门股 、 新 标的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 像 急流 中 *OP* *T*-2 诱人 的 漩涡 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

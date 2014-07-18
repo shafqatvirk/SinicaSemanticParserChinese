@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看清 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing clearly seen"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PP-PRP (P 由于)
+			(IP (IP (NP-SBJ (NN 外轮))
+				(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						 (VP (VV 肇事)))
+					     (LC 后))
+				    (ADVP (AD 立即))
+				    (VP (VV 逃离)
+					(AS 了)
+					(NP-OBJ (NN 现场)))))
+			    (PU ，)
+			    (IP (ADVP (AD 加之))
+				(NP-TMP (NT 当时))
+				(LCP-LOC (NP (NN 海))
+					 (LC 上))
+				(NP-SBJ (NN 能见度))
+				(VP (VA 差)))))
+		(PU ，)
+		(NP-SBJ (NP (QP-PN (NP-PN (PU “)
+					  (NR 舟山))
+				   (QP (CD ６９)
+				       (PU ”)
+				       (CLP (M 号))))
+			    (NP (NN 轮)))
+			(NP (NN 船员)))
+		(VP (ADVP (AD 未))
+		    (VP (VV 能)
+			(VP (ADVP (AD 完全))
+			    (VP (VV 看清)
+				(NP-OBJ (NN 外轮)
+					(NN 船号))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  “ 舟山 ６９ ” 号 轮 船员 
+	  </arg>
+	  <arg n="1">
+	  外轮 船号 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 外轮 *PRO* 肇事 后 立即 逃离 了 现场 ， 加之 当时 海 上 能见度 差 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

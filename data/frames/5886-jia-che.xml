@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 驾车 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="driver"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 两))
+		    (NP (NN 人)))
+	    (VP (VP (VP (VV 驾车))
+		    (VP (VV 奔驰)
+			(PP (P 在)
+			    (LCP (NP (NN 公路))
+				 (LC 上)))))
+		(PU ，)
+		(VP (VV 试图)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 找出)
+				(NP-OBJ (NN 人生)
+					(NN 方向))))))) 
+	</parse>
+	<arg n="0">
+	两 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

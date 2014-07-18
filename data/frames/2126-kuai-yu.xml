@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 快于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="the comparison"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 投资)
+		      (NN 流动))
+	      (VP (VV 快于)
+		  (NP-OBJ (NN 贸易)
+			  (NN 流动)))) 
+	  </parse>
+	  <arg n="0">
+	  投资 流动 
+	  </arg>
+	  <arg n="1">
+	  贸易 流动 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

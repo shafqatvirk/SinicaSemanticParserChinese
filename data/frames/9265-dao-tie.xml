@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 倒贴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="payer"/>
+      <role argnum="1" argrole="payee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (CC 非但)
+		  (VP (VPT (VV 赚)
+			   (AD 不)
+			   (VV 到))
+		      (NP-OBJ (NN 钱)))
+		  (PU ，)
+		  (CC 还)
+		  (VP (VV 得)
+		      (VP (VV 倒贴))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 淡化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (NP (NN 婚姻))
+				(LC 中))
+			   (DEG 的))
+		      (NP (NN 经济)
+			  (NN 因素)))
+	      (VP (ADVP (AD 逐渐))
+		  (VP (VV 淡化)
+		      (AS 了))))
+	  </parse>
+	  <arg n="1">
+	  婚姻 中 的 经济 因素 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐渐 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

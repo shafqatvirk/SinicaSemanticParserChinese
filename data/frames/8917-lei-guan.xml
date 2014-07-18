@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 列管 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 causes to be on the watch list"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 国民党) )
+	      (VP (VV 赞成)
+		  (NP-OBJ (-NONE- *pro*))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 限制)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 曾))
+					      (VP (VP (VE 有)
+						      (NP-OBJ (ADJP (JJ 组织))
+							      (NP (NN 犯罪) )))
+						  (CC 和)
+						  (VP (SB 被)
+						      (CP-OBJ (WHNP-1 (-NONE- *OP*))
+							      (IP (NP-SBJ (NN 一清)
+									  (NN 专案) )
+								  (VP(VV 列管)
+									 (NP-OBJ (-NONE- *T*-1))))))))))
+				  (NP (NN 者) ))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 参选)
+				  (NP-OBJ (NN 公职) ))))))) 
+	  </parse>
+	  <arg n="0">
+	  一清 专案 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

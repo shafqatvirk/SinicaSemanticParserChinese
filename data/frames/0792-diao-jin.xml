@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="controlip" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 过去))
+		  (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (PP-DIR (P 从)
+				  (LCP (NP (NN 省))
+				       (LC 外)))
+			  (VP (VV 调进)
+			      (NP-OBJ (QP (CD 部分))
+				      (NP (NN 粮食)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 弥补)
+				      (NP-OBJ (NP (DP (DT 本))
+						  (NP (NN 省)))
+					      (NP (NN 缺口)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  部分 粮食 
+	  </arg>
+	  <arg n="2">
+	  从 省 外 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  过去 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="prp">
+	  *PRO* 弥补 本 省 缺口 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VP (ADVP (AD 长期))
+				      (VP (VV 依靠)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 调进)
+						      (NP-OBJ (NN 粮食))))))
+				  (VP (VV 解决)
+				      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 吃)
+							      (NP-OBJ (NN 饭)))))
+					      (NP (NN 问题))))))
+			  (DEC 的)))
+		  (NP-PN (NR 贵州省)))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  粮食 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

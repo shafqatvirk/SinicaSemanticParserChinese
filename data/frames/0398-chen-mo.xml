@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 沉没 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing that sinks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九四年)
+		      (NT 六月)
+		      (NT 二十三日))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 浙江)
+					     (NR 舟山市)
+					     (NR 普陀)
+					     (NN 渔业)
+					     (NN 集团)
+					     (NN 海洋)
+					     (NN 运输)
+					     (NN 公司))
+				  (VP (MSP 所)
+				      (VP (VV 属)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (QP-PN (NP-PN (PU “)
+				    (NR 舟山))
+			     (QP (CD ６９)
+				 (PU ”)
+				 (CLP (M 号))))
+		      (NP (NN 轮)))
+	      (VP (VP (PP-DIR (P 从)
+			      (NP-PN (NR 天津)))
+		      (VP (VP (VV 装载)
+			      (NP-OBJ (QP (CD 一千五百零八)
+					  (CLP (M 吨)))
+				      (NP (NN 钢材))))
+			  (VP (VV 开往)
+			      (NP-PN-OBJ (NR 广州)))))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 途经)
+				       (NP-PN-OBJ (NR 台湾)
+						  (NN 海峡))))
+			       (LC 时))
+		      (PU ，)
+		      (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (LB 被)
+				       (CP-OBJ (WHNP-1 (-NONE- *OP*))
+					       (IP (NP-SBJ (QP (CD 一))
+							   (NP (NN 外轮)))
+						   (VP (VV 碰撞)
+						       (NP-OBJ (-NONE- *T*-1)))))))
+			       (LC 后))
+		      (VP (VV 沉没))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 浙江 舟山市 普陀 渔业 集团 海洋 运输 公司 所 属 *T*-2 的 “ 舟山 ６９ ” 号 轮 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九四年 六月 二十三日 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 途经 台湾 海峡 时 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 被 *OP* 一 外轮 碰撞 *T*-1 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

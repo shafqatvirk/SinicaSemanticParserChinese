@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拔掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 unplugs/removes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 例如))
+	      (PP-PRP (P 为)
+		      (IP (NP (-NONE- *PRO*))
+			  (VP (VV 拔掉)
+			      (NP-OBJ (DNP (NP (NN 国代))
+					   (DEG 的))
+				      (NP (NN 总统)
+					  (NN 选举权))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 只好))
+		  (VP (VV 给予)
+		      (NP-OBJ (NP (NN 司法)
+				  (PU 、)
+				  (NN 考试)
+				  (PU 、)
+				  (NN 监察))
+			      (NP (NN 人事)
+				  (NN 同意权)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  国代 的 总统 选举权 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 续签 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing singed to extend"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 巴西)
+			 (NN 足协))
+	      (VP (VV 要求)
+		  (NP-PN-OBJ (NR 卢森博格))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (ADVP (AD 不))
+			      (ADVP (AD 再))
+			      (VP (VV 续签)
+				  (NP-OBJ (NN 合同))))
+			  (PU ，)
+			  (VP (MSP 而)
+			      (VP (ADVP (AD 专心))
+				  (VP (VV 致力于)
+				      (NP-OBJ (NP-APP (DNP (NP (NN 国家队))
+							   (DEG 的))
+						      (NP (NN 教练)))
+					      (NP (NN 工作)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  合同 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

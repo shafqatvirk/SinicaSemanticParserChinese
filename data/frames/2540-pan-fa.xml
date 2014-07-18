@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 判罚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people penalized"/>
+      <role argnum="2" argrole="penalty"/>
+      <role argnum="3" argrole="crime"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 加马拉))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 世界杯赛))
+			       (LC 上)))
+		  (VP (VP (VV 出赛)
+			  (QP-EXT (CD ４)
+				  (CLP (M 场))))
+		      (PU ，)
+		      (VP (VV 没有)
+			  (VP (SB 被)
+			      (IP-OBJ (NP-SBJ (NN 裁判))
+				      (VP (VV 判罚)
+					  (UCP-OBJ (DP (DT 任何))
+						   (UCP (ADJP (JJ 红))
+							(PU 、)
+							(NP (NN 黄牌))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  裁判 
+	  </arg>
+	  <arg n="1">
+	  加马拉 
+	  </arg>
+	  <arg n="2">
+	  任何 红 、 黄牌 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 世界杯赛 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

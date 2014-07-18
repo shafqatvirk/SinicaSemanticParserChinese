@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="doer"/>
+      <role argnum="1" argrole="thing done"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (PP-MNR (P 用)
+		    (NP (CP-APP (IP (NP-SBJ (PN 他们))
+				    (VP (PP-LOC (P 在)
+						(NP-PN (NR 中国)))
+					(VP (VP (VV 投资))
+					    (VP (VV 办)
+						(NP-OBJ (NN 企业))))))
+				(DEC 的))
+			(NP (NN 经验))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 中国 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  企业 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (QP-ADV (OD 第一)
+						(CLP (M 次)))
+					(VP (VV 赴)
+					    (NP-PN-OBJ (NR 台)))))
+				(DEC 的))
+			(NP (NN 手续)))
+		(VP (ADVP (AD 就))
+		    (VP (VV 办)
+			(AS 了)
+			(QP-EXT (CD 三百二十一)
+				(CLP (M 天))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 第一 次 赴 台 的 手续 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

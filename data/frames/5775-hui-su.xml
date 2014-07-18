@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 回溯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 traces back"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 带给)
+			    (NP-IO (NN 观众))
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 身))
+						(VP (VV 临)
+						    (NP-OBJ (NP (PN 其))
+							    (NP (NN 境)))))
+					    (DEC 的))
+				    (NP (NN 真实感))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NN 史博馆))
+	    (VP (ADVP (AD 特别))
+		(VP (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 展场)
+					(NN 入口))
+				(VP (VRD (VV 设计)
+					 (VV 在))
+				    (NP-OBJ (NN 二楼)))))
+		    (PU ，)
+		    (VP (VRD (VV 制造)
+			     (VV 出))
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 种)))
+				(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (PP-DIR (P 由)
+							    (NP (NN 地面)))
+						    (VP (VRD (VV 下)
+							     (VV 到))
+							(LCP-OBJ (NP (NN 坑))
+								 (LC 底))))
+						(PU 、)
+						(VP (VV 回溯)
+						    (NP-OBJ (NN 历史)))))
+					(DEC 的))
+				(NP (NN 情境))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	历史 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 traces back"/>
+    <role argnum="2" argrole="point arg1 is traced back to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP (NN 中国人))
+			(DNP (PP (P 对)
+				 (NP (NN 大一统)
+				     (NN 帝国)))
+			     (DEG 的))
+			(NP (NN 梦想)))
+		(PU ，)
+		(VP (VV 可以)
+		    (VP (VRD (VV 回溯)
+			     (VV 到))
+			(NP-OBJ (DNP (LCP (NP (NN 纪元))
+					  (LC 前後))
+				     (DEG 的))
+				(NP-PN (NR 中国)))))) 
+	</parse>
+	<arg n="1">
+	中国人 对 大一统 帝国 的 梦想 
+	</arg>
+	<arg n="2">
+	纪元 前後 的 中国 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

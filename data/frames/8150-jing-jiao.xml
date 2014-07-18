@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惊叫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 shouts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-1 (PU 「)
+		    (INTJ-IJ (IJ 唉呀))
+		    (PU ！)
+		    (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 挖到)
+			(NP-OBJ (NN 瓦爷)))
+		    (AS 了))
+	      (PU ，)
+	      (PU 」)
+	      (NP-SBJ (NN 农民们))
+	      (VP (VV 惊叫)
+		  (IP-OBJ (-NONE- *T*-1)))) 
+	  </parse>
+	  <arg n="0">
+	  农民们 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

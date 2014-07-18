@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打嬴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme: war, case, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 律师)
+			  (NN 事务所)))
+	      (VP (ADVP (AD 已))
+		  (VP (VP (PP-LOC (P 在)
+				  (LCP (NP (NN 国际))
+				       (LC 上)))
+			  (VP (VV 打嬴)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 十余)
+					  (CLP (M 起)))
+				      (ADJP (JJ 涉外))
+				      (NP (NN 经济)
+					  (NN 案件)))))
+		      (PU ，)
+		      (VP (PP-BNF (P 为)
+				  (NP (NP (NN 国内))
+				      (NP (NN 企业)
+					  (CC 和)
+					  (NN 公民))))
+			  (VP (VV 追回)
+			      (NP-OBJ (NN 赔款))
+			      (QP-EXT (ADVP (AD 近))
+				      (QP (CD 千万)
+					  (CLP (M 美元))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  这 个 律师 事务所 
+	  </arg>
+	  <arg n="1">
+	  十余 起 涉外 经济 案件 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

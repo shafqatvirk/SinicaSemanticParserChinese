@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抹灭 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 erases"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (DNP (NP (PN 它))
+			 (DEG 的))
+		    (NP (NN 故事)))
+	    (VP (VP (ADVP (AD 不但))
+		    (VP (VV 见证)
+			(AS 了)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 部)))
+				(NP-PN (NR 台湾))
+				(NP (NN 电视史)))))
+		(PU ，)
+		(VP (ADVP (AD 更))
+		    (VP (VC 是)
+			(NP-PRD (NP-PN (NR 台湾))
+				(NP (NN 成长)
+				    (NN 岁月))
+				(CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (ADVP (AD 无法))
+						(VP (VV 抹灭)
+						    (NP-OBJ (-NONE- *T*-2)))))
+					(DEC 的)))
+				(NP (NN 篇章))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 留下)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 难以))
+					(VP (VV 抹灭))))
+				(DEC 的)))
+			(NP (NN 历史)
+			    (NN 伤痕))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	难以 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NP (NT 当年))
+			     (NP (PN 他们)))
+			 (DEG 的))
+		    (NP (NN 痕迹)))
+	    (VP (ADVP (AD 又))
+		(VP (SB 被)
+		    (VP (VV 抹灭)
+			(ADVP (AD 不少)))))) 
+	</parse>
+	<arg n="1">
+	当年 他们 的 痕迹 
+	</arg>
+	<arg n="m" f="adv">
+	不少 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

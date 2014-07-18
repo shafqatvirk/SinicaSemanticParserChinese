@@ -1,0 +1,165 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 留 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 stays on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 几百)
+			      (CLP (M 名)))
+			  (NP-PN (NR 俄))
+			  (NP (NN 军队)
+			      (NN 专家)))
+		  (VP (VV 留)
+		      (PP-LOC (P 在)
+			      (NP (NP (DNP (NP-PN (NR 拉脱维亚))
+					   (DEG 的))
+				      (ADJP (JJ 预警))
+				      (NP (NN 雷达站)))
+				  (CC 和)
+				  (NP (DNP (NP-PN (NR 爱沙尼亚))
+					   (DEG 的))
+				      (NP (NP-PN (NR 俄))
+					  (NP (NN 海军)))
+				      (ADJP (JJ 教学))
+				      (NP (NN 中心))))))) 
+	  </parse>
+	  <arg n="0">
+	  几百 名 俄 军队 专家 	  	  
+	  </arg>
+	  <arg n="1">
+	  在 拉脱维亚 的 预警 雷达站 和 爱沙尼亚 的 俄 海军 教学 中心 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (LCP-TMP (IP (NP-SBJ (NN 条例)
+						       (NN 草案))
+					       (VP (VV 生效)))
+					   (LC 前))
+				  (VP (VP (ADVP (AD 非法))
+					  (ADVP (AD 秘密))
+					  (VP (VV 入境)))
+				      (CC 或)
+				      (VP (ADVP (AD 非法))
+					  (VP (VV 留)
+					      (NP-PN-OBJ (NR 港)))))))
+			  (DEC 的)))
+		  (NP (NN 人士))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 	  	  
+	  </arg>
+	  <arg n="1">
+	  港 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  非法 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  条例 草案 生效 前 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 keeps back"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP (ADJP (JJ 新型))
+				   (NP (NN 电脑)
+				       (NN 病毒)))
+			       (DEG 的))
+			  (NP (NN 研制者)))
+		  (VP (ADVP (AD 似乎))
+		      (VP (PU “)
+			  (VV 留)
+			  (AS 了)
+			  (NP-OBJ (NN 一手))
+			  (PU ”)))) 
+	  </parse>
+	  <arg n="0">
+	  新型 电脑 病毒 的 研制者 	  	  
+	  </arg>
+	  <arg n="1">
+	  一手 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  似乎 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent studies abroad"/>
+      <role argnum="1" argrole="place the agent studies in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  *PRO*	  	  
+	  </arg>
+	  <arg n="1">
+	  台	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="style"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  男生	  	  
+	  </arg>
+	  <arg n="1">
+	  长发	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

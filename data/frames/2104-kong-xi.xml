@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 空袭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity raided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-PN-SBJ (NP (NP-PN (NR 阿拉伯))
+				   (DP (DT 各))
+				   (NP (NN 国)))
+			       (NP (NN 议会)
+				   (NN 联盟)))
+		    (VP (VV 谴责)
+			(NP-PN-OBJ (NR 美)
+				   (NR 英))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 空袭)
+				(NP-PN-OBJ (NR 伊拉克))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  伊拉克 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-APP (NP-PN (NR 美国))
+				(NP (NN 总统)))
+			(NP-PN (NR 克林顿)))
+		(VP (NP-TMP (NT １１月)
+			    (NT １３日))
+		    (VP (VV 下达)
+			(AS 了)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (PP-DIR (P 对)
+							(NP-PN (NR 伊)))
+						(VP (VV 空袭))))
+					(DEC 的))
+				(NP (NN 命令)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  对 伊 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

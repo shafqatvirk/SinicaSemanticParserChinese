@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 points out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 台湾))
+			  (QP (CD 一))
+			  (NP (NN 经济学家)))
+		  (VP (VV 指出)
+		      (IP-OBJ (NP-SBJ (PU “)
+				      (NN 戒急用忍)
+				      (PU ”))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 产生)
+				      (NP-OBJ (QP (CD 诸多))
+					      (NP (NN 弊端)))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 一 经济学家 
+	  </arg>
+	  <arg n="1">
+	  “ 戒急用忍 ” 将 产生 诸多 弊端 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NP-APP (NP-PN (NR 天津市))
+						      (NP (NN 副市长)))
+					      (NP-PN (NR 叶迪生)))
+				      (VP (NP-TMP (NT 今天))
+					  (PP-TMP (P 在)
+						  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+							   (VP (PP-BNF (P 为)
+								       (NP (NP-PN (NR 美国)
+										  (NR 纽约)
+										  (NN 大学))
+									   (NP-PN (NR 史敦)
+										  (NN 工商)
+										  (NN 管理)
+										  (NN 学院))
+									   (NP (NN 主管)
+									       (NN 企业)
+									       (NN 管理)
+									       (NN 硕士))
+									   (QP (CD 九七)
+									       (CLP (M 级)))
+									   (NP (NN 国际))
+									   (ADJP (JJ 实地))
+									   (NP (NN 考察团))))
+							       (VP (VV 作)
+								   (NP-OBJ (NN 投资)
+									   (NN 专题)
+									   (NN 报告)))))
+						       (LC 时)))
+					  (VP (VV 指出)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  天津市 副市长 叶迪生 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 为 美国 纽约 大学 史敦 工商 管理 学院 主管 企业 管理 硕士 九七 级 国际 实地 考察团 作 投资 专题 报告 时 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

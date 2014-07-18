@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people traveling"/>
+      <role argnum="1" argrole="location traveled to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 可以)
+		  (VP (VV 安排)
+		      (NP-OBJ (QP (CD 两))
+			      (NP (NN 人)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 往)
+				  (NP-PN-OBJ (NR 澳洲)))
+			      (VP (VV 工作))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  澳洲 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

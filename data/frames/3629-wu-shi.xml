@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无视 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing ignored"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 郭辉))
+	      (VP (VP (VV 无视)
+		      (NP-OBJ (NN 国法)))
+		  (PU ，)
+		  (VP (VP (VV 持)
+			  (NP-OBJ (NN 械)))
+		      (VP (VV 抢劫)
+			  (NP-OBJ (NN 金融)
+				  (NN 机构))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 杀人灭口)))) 
+	  </parse>
+	  <arg n="0">
+	  郭辉 
+	  </arg>
+	  <arg n="1">
+	  国法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

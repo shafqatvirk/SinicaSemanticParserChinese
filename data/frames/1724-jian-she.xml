@@ -1,0 +1,152 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 建设 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="initiator"/>
+      <role argnum="1" argrole="thing built"/>
+      <role argnum="2" argrole="built into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 广西))
+		  (VP (VP (VV 利用)
+			  (NP-OBJ (NN 外资))
+			  (QP-EXT (CD 一点五亿)
+				  (CLP (M 美元))))
+		      (VP (VV 建设)
+			  (NP-OBJ (NN 交通)
+				  (NN 水运)
+				  (NN 基础)
+				  (NN 设施))))) 
+	  </parse>
+	  <arg n="0">
+	  广西 	  
+	  </arg>
+	  <arg n="1">
+	  交通 水运 基础 设施 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (ADVP (AD 近))
+			   (QP (CD 几)
+			       (CLP (M 年))))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-PN (NR 中国))
+			  (NP (ADJP (JJ 大))
+			      (NP (NN 西南)))
+			  (NP (NN 地区)))
+		      (PP (P 经)
+			  (NP-PN (NR 广西)))
+		      (ADJP (JJ 出海))
+		      (ADJP (JJ 大))
+		      (NP (NN 通道)))
+	      (VP (VSB (VV 加速)
+		       (VV 建设)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  中国 大 西南 地区 经 广西 出海 大 通道 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近 几 年 来 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 争取)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VSB (VV 开工)
+				       (VV 建设))
+				  (NP-OBJ (NP (NN 煤)
+					      (NN 码头))
+					  (QP (OD 二)
+					      (CLP (M 期)))
+					  (NP (NN 工程))))))
+		  (PU ，)
+		  (VP (ADVP (AD 尽快))
+		      (VP (VV 建设)
+			  (NP-OBJ (QP (QP (CD 十)
+					  (CLP (-NONE- *RNR*-1)))
+				      (CC 至)
+				      (QP (CD 三十万)
+					  (CLP-1 (M 吨))))
+				  (ADJP (NP (NN 矿石))
+					(ADJP (JJ 专用)))
+				  (NP (NN 码头)))))
+		  (PU ，)
+		  (VP (BA 把)
+		      (IP-OBJ (NP-PN-SBJ (NR 日照))
+			      (VP (VRD (VV 建设)
+				       (VV 成为))
+				  (NP-OBJ (NP-PN (NR 中国))
+					  (DNP (ADJP (JJ 重要))
+					       (DEG 的))
+					  (NP (NN 煤炭)
+					      (PU 、)
+					      (NN 矿石))
+					  (NP (NN 进出口)
+					      (NN 基地)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  日照 	  
+	  </arg>
+	  <arg n="2" f="into">
+	  中国 重要 的 煤炭 、 矿石 进出口 基地 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 港区))
+	      (VP (VV 建设)
+		  (NP-OBJ (NN 铁路))
+		  (QP-EXT (CD 十四)
+			  (CLP (M 公里))))) 
+	  </parse>
+	  <arg n="0">
+	  港区 	  
+	  </arg>
+	  <arg n="1">
+	  铁路 	  
+	  </arg>
+	  <arg n="1" f="qty">
+	  十四 公里 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

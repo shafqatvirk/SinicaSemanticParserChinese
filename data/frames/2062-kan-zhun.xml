@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看准 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing to be certain about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 看准)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 白酒)
+				       (NN 市场))
+				   (DEG 的))
+			      (NP (NN 发展)
+				  (NN 前景))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  白酒 市场 的 发展 前景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,148 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相差 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities described"/>
+    <role argnum="1" argrole="difference between entities in arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (QP (CD 四十)
+			     (CLP (M 岁)))
+			 (DEG 的))
+		    (NP-APP (NP (NP-PN (NR 中时))
+				(NP (NN 网科)))
+			    (NP (NN 副总编辑)))
+		    (NP-PN (NR 张毅君)))
+	    (VP (VP (VV 比较)
+		    (NP-OBJ (NP (PN 自己))
+			    (CC 与)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 相差)
+						(QP-OBJ (CD 八)
+							(CLP (M 岁)))))
+					(DEC 的)))
+				(NP (NN 弟弟)))))
+		(VP (VV 说)
+		    (PU ，)
+		    (IP-OBJ (IP (CP-CND (ADVP (CS 若))
+					(IP (NP-SBJ (PN 自己))
+					    (VP (VC 是)
+						(QP-PRD (CP-APP (IP (PU 「)
+								    (NP-SBJ (NN 男人))
+								    (VP (ADVP (AD 真))
+									(VP (VV 命苦)))
+								    (PU 」))
+								(DEC 的))
+							(ADJP (JJ 最後))
+							(QP (CD 一)
+							    (CLP (M 代)))))))
+				(PU ，)
+				(NP-SBJ (NP (PN 他))
+					(NP (NN 弟弟)))
+				(VP (ADVP (AD 恐怕))
+				    (VP (PU 「)
+					(IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (VA 老)
+						    (AS 了)))
+					(VP (VV 会)
+					    (VP (PP (P 比)
+						    (NP (PN 自己)))
+						(VP (VV 命苦))))
+					(PU 」))))
+			    (PU ，)
+			    (PP (P 因为)
+				(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (NP-ADV (DP (DT 每)
+									(CLP (M 天)))
+								    (NP (NT 早上)))
+							    (VP (VV 要)
+								(VP (VP (VV 花)
+									(NP-OBJ (QP (CD 一))
+										(NP (NN 小时))))
+								    (VP (VV 装扮)
+									(NP-OBJ (PN 自己)))))))
+						    (DEC 的)))
+					    (NP (NN 弟弟)))
+				    (PU ，)
+				    (VP (VP (NP-TPC-3 (NN 薪水))
+					    (ADVP (AD 几乎))
+					    (ADVP (AD 都))
+					    (VP (VV 用)
+						(NP-OBJ (-NONE- *T*-3))))
+					(VP (MSP 来)
+					    (VP (VV 打扮)
+						(PU 、)
+						(VV 享乐)))))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	八 岁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 觉得)
+		    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (VP-FOC (VV 相差))
+				(VP (ADVP (AD 太))
+				    (VP (VA 远))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 总))
+		(ADVP (AD 不))
+		(VP (VV 能)
+		    (VP (PP (P 跟)
+			    (NP (NN 人口)
+				(NN 比例)))
+			(VP (VP-FOC (VV 相差))
+			    (VP (ADVP (AD 太))
+				(VP (VA 多)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="crd">
+	跟 人口 比例 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	总 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

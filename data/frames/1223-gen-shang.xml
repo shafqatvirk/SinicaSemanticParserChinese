@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跟上 </id>
+    <frameset id="f1" edef="keep up with">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="trend, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (CS 如果))
+		      (VP (VP (ADVP (AD 不))
+			      (ADVP (AD 紧紧))
+			      (VP (VV 跟上)
+				  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 科技))
+						      (VP (VA 进步)))
+						  (DEC 的))
+					  (NP (NN 时代)
+					      (NN 潮流)))))
+			  (PU ，)
+			  (VP (ADVP (AD 不))
+			      (VP (VP (VV 结合)
+				      (NP-OBJ (DNP (NP (NP (DP (DT 本))
+							   (NP (NN 国)))
+						       (NP (NN 发展)))
+						   (DEG 的))
+					      (NP (NN 实际))))
+				  (VP (ADVP (AD 努力))
+				      (VP (VV 提高)
+					  (NP-OBJ (NN 科学)
+						  (NN 技术)
+						  (NN 水平))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  科技 进步 的 时代 潮流 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧紧 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

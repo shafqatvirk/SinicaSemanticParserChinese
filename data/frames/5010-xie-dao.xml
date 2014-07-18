@@ -1,0 +1,311 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 写道 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="author"/>
+    <role argnum="1" argrole="thing arg0 writes"/>
+    <role argnum="2" argrole="place arg1 is written"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 位)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 署名)
+				    (NP-PN-OBJ (PU 「)
+					       (NR 一修)
+					       (PU 」))))
+			    (DEC 的)))
+		    (NP (NN 年轻人)))
+	    (VP (ADVP (AD 便))
+		(PP-LOC (P 在)
+			(LCP (NP-TTL (PU 「)
+				     (NP-PN (NR 大隘))
+				     (NP (NN 社讯))
+				     (PU 」))
+			     (LC 中)))
+		(VP (VV 写道)
+		    (PU ：)
+		    (IP-OBJ (IP (ADVP (AD 从前))
+				(PP-TMP (P 当)
+					(NP (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (PN 我))
+							(VP (NP-TMP (-NONE- *T*-2))
+							    (PP-LOC (P 在)
+								    (NP (NN 外地)))
+							    (VP (VV 工作))))
+						    (DEC 的)))
+					    (NP (NN 时候))))
+				(PU ，)
+				(NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (VV 回到)
+							(NP-OBJ (NN 家乡))))
+						(DEC 的))
+					(QP (OD 第一)
+					    (CLP (M 件)))
+					(NP (NN 事)))
+				(PU ，)
+				(VP (VP (ADVP (AD 不))
+					(VP (VC 是)
+					    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+						    (VP (VP (VV 回家))
+							(VP (PP-DIR (P 向)
+								    (NP (NN 父母)))
+							    (VP (VV 请安)))))))
+				    (PU ，)
+				    (CC 而)
+				    (VP (VC 是)
+					(IP-PRD (NP-SBJ (-NONE- *PRO*))
+						(VP (VP (VV 到)
+							(LCP-OBJ (NP (DNP (NP-PN (PU 『)
+										 (NR 她骂姊)
+										 (PU 』))
+									  (DEG 的))
+								     (NP (NN 店)))
+								 (LC 里)))
+						    (VP (VV 叫)
+							(NP-OBJ (QP (CD 一)
+								    (CLP (M 碗)))
+								(NP (NN 板条))))
+						    (PU ，)
+						    (VP (DVP (ADVP (AD 呼噜呼噜))
+							     (DEV 的))
+							(PU ，)
+							(ADVP (AD 一股脑))
+							(VP (BA 把)
+							    (IP-OBJ (NP-SBJ (DP (DT 那))
+									    (CP (WHNP-4 (-NONE- *OP*))
+										(CP (IP (NP-SBJ (-NONE- *T*-4))
+											(VP (VA 浓浓)))
+										    (DEC 的)))
+									    (NP (NN 乡愁)))
+								    (VP (VV 吞下)
+									(NP-OBJ (NN 肚)))))))))))
+			    (PU ，)
+			    (IP (IP-ADV (NP-SBJ (NN 板条))
+					(VP (VV 下)
+					    (AS 了)
+					    (NP-OBJ (NN 肚))))
+				(PU ，)
+				(NP-SBJ (-NONE- *pro*))
+				(VP (VV 感觉)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (ADVP (AD 才))
+						(ADVP (AD 真))
+						(VP (VC 是)
+						    (VP (VV 回)
+							(AS 了)
+							(NP-OBJ (NN 家)))))))))))) 
+	</parse>
+	<arg n="0">
+	一 位 *OP* *T*-1 署名 「 一修 」 的 年轻人 
+	</arg>
+	<arg n="1">
+	从前 当 *OP* 我 *T*-2 在 外地 工作 的 时候 ， *pro* 回到 家乡 的 第一 件 事 ， 不 是 *PRO* 回家 向 父母 请安 ， 而 是 *PRO* 到 『 她骂姊 』 的 店 里 叫 一 碗 板条 ， 呼噜呼噜 的 ， 一股脑 把 那 *OP* *T*-4 浓浓 的 乡愁 吞下 肚 ， 板条 下 了 肚 ， *pro* 感觉 *PRO* 才 真 是 回 了 家 
+	</arg>
+	<arg n="2">
+	在 「 大隘 社讯 」 中 
+	</arg>
+	<arg n="m" f="adv">
+	便 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 林文月))
+	    (VP (VV 写道)
+		(PU ，)
+		(IP-OBJ (IP (IP-CND (NP-SBJ (NP (PN 我))
+					    (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VA 幼)))
+						      (LC 时))
+						 (DEG 的))
+					    (NP (NN 家庭)))
+				    (VP (ADVP (CS 虽然))
+					(VP (VP-FOC (VV 迁徙))
+					    (VP (ADVP (AD 不))
+						(VP (VV 定))))))
+			    (PU ，)
+			    (ADVP (AD 但))
+			    (NP-SBJ (NN 母亲))
+			    (VP (ADVP (AD 几乎))
+				(DVP (VP (VA 固执))
+				     (DEV 地))
+				(DP-ADV (DT 每)
+					(CLP (M 年)))
+				(ADVP (AD 亲自))
+				(VP (VP (VV 下)
+					(NP-OBJ (NN 厨房)))
+				    (VP (VV 制作)
+					(NP-OBJ (NN 萝卜糕))
+					(PP (P 给)
+					    (NP (NP (DP (DT 全))
+						    (NP (NN 家)))
+						(NP (NN 人)))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 享用))))))))
+			(PU 。)
+			(IP (ADVP (AD 所以))
+			    (NP-SBJ (PN 我们))
+			    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					    (VP (PP-LOC (P 在)
+							(NP-PN (NR 上海)))
+						(VP (VV 过)
+						    (NP-OBJ (NN 年)))))
+				    (PU ，)
+				    (ADVP (AD 并))
+				    (ADVP (AD 不))
+				    (PP (P 随同)
+					(NP (NN 上海人)))
+				    (VP (VV 吃)
+					(NP-OBJ (PU 『)
+						(NP-PN (NR 宁波))
+						(NP (NN 年糕))
+						(PU 』))))
+				(PU ；)
+				(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					    (VP (PP-LOC (P 在)
+							(NP-PN (NR 东京)))
+						(VP (VV 过)
+						    (NP-OBJ (NN 年)))))
+				    (PU ，)
+				    (ADVP (AD 也))
+				    (VP (VV 没有)
+					(VP (PP (P 随同)
+						(NP (NN 日本人)))
+					    (VP (VV 吃)
+						(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							    (CP (IP (NP-SBJ (-NONE- *T*-1))
+								    (VP (NP-MNR (ADJP (JJ 大)
+										      (JJ 小))
+										(QP (CD 二)
+										    (CLP (M 团)))
+										(NP (NN 糯米糕)))
+									(VP (VV 落成))))
+								(DEC 的)))
+							(NP (PU 『)
+							    (NN 镜饼)
+							    (PU 』)))))))))
+			(PU ，)
+			(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+					(CP (IP (ADVP (AD 而))
+						(NP-SBJ (-NONE- *pro*))
+						(VP (VCD (VV 吃)
+							 (VV 食))
+						    (NP-OBJ (-NONE- *T*-3))))
+					    (DEC 的))))
+			    (VP (ADVP (AD 便))
+				(VP (VC 是)
+				    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (PP-MNR (P 用)
+								    (NP (NN 台语)))
+							    (VP (VV 称呼)))
+							(PRN (PU ——)
+							     (NP (PU 『)
+								 (NN 菜头糕)
+								 (PU 』))))
+						    (DEC 的)))
+					    (NP (NN 萝卜糕))))))))) 
+	</parse>
+	<arg n="0">
+	林文月 
+	</arg>
+	<arg n="1">
+	我 *PRO* 幼 时 的 家庭 虽然 迁徙 不 定 ， 但 母亲 几乎 固执 地 每 年 亲自 下 厨房 制作 萝卜糕 给 全 家 人 *PRO* 享用 。 所以 我们 *PRO* 在 上海 过 年 ， 并 不 随同 上海人 吃 『 宁波 年糕 』 ； *PRO* 在 东京 过 年 ， 也 没有 随同 日本人 吃 *OP* *T*-1 大 小 二 团 糯米糕 落成 的 『 镜饼 』 ， *OP* 而 *pro* 吃 食 *T*-3 的 便 是 *OP* *T*-2 用 台语 称呼 —— 『 菜头糕 』 的 萝卜糕 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 一)
+			    (CLP (M 则)))
+			(NP (NN 短文)))
+		(VP (VV 写道)
+		    (PU ，)
+		    (IP-OBJ (IP (NP-TMP (NT 过去))
+				(NP-SBJ (DNP (NP (NN 西方)
+						 (NN 男士))
+					     (DEG 的))
+					(IP-APP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 纵情)))
+					(NP (NN 方式)))
+				(VP (VC 是)
+				    (NP-PRD (NN 阳光)
+					    (PU 、)
+					    (NN 海洋)
+					    (CC 与)
+					    (NN 性爱))))
+			    (PU ，)
+			    (IP (NP-TMP (NT 如今))
+				(IP (IP (NP-SBJ (NN 阳光))
+					(VP (VV 会)
+					    (VP (VV 致癌))))
+				    (PU ，)
+				    (IP (NP-SBJ (NN 海洋))
+					(VP (VV 充满)
+					    (NP-OBJ (NN 油污))))
+				    (PU ，)
+				    (IP (NP-SBJ (NN 性爱))
+					(VP (ADVP (AD 更))
+					    (VP (VV 会)
+						(VP (VV 致命)))))))
+			    (PU ，)
+			    (IP (ADVP (AD 因此))
+				(NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VA 健美)))
+						    (DEC 的)))
+					    (NP (NN 身材)))
+					(PU 、)
+					(NP (CP (WHNP-3 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-3))
+							(VP (VA 适当)))
+						    (DEC 的)))
+					    (NP (NN 饮食)))
+					(PU 、)
+					(NP (CP (WHNP-4 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-4))
+							(VP (VA 健康)))
+						    (DEC 的)))
+					    (NP (NN 娱乐))))
+				(VP (VV 成为)
+				    (NP-OBJ (CP (WHNP-5 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-5))
+							(VP (VA 新)))
+						    (DEC 的)))
+					    (NP (NN 追求)))))))) 
+	</parse>
+	<arg n="1">
+	过去 西方 男士 的 *PRO* 纵情 方式 是 阳光 、 海洋 与 性爱 ， 如今 阳光 会 致癌 ， 海洋 充满 油污 ， 性爱 更 会 致命 ， 因此 *OP* *T*-2 健美 的 身材 、 *OP* *T*-3 适当 的 饮食 、 *OP* *T*-4 健康 的 娱乐 成为 *OP* *T*-5 新 的 追求 
+	</arg>
+	<arg n="2">
+	一 则 短文 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

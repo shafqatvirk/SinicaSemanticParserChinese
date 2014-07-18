@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伺候 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="ehtity waited upon"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 花农))
+	      (VP (ADVP (AD 则))
+		  (VP (VRD (VV 伺候)
+			   (VV 起))
+		      (NP-OBJ (NP-APP (NP (NP-PN (NR 荷兰))
+					  (NP (NN 郁金香)))
+				      (PU 、)
+				      (NP (NP-PN (NR 比利时))
+					  (NP (NN 杜鹃)))
+				      (ETC 等))
+			      (NP (NN 西洋))
+			      (ADJP (JJ 娇))
+			      (NP (NN 花)))))) 
+	  </parse>
+	  <arg n="0">
+	  花农 
+	  </arg>
+	  <arg n="1">
+	  荷兰 郁金香 、 比利时 杜鹃 等 西洋 娇 花 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

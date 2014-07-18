@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 布满 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="place described"/>
+    <role argnum="1" argrole="entity arg0 is filled with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (LCP (NP (NN 影))
+			 (LC 中))
+		    (NP (NN 面孔)))
+	    (VP (ADVP (AD 却))
+		(PP-ADV (P 随著)
+			(NP (DNP (NP (NN 时间))
+				 (DEG 的))
+			    (NP (NN 流逝))))
+		(ADVP (AD 逐渐))
+		(VP (VV 布满)
+		    (NP-OBJ (DNP (NP (NN 岁月))
+				 (DEG 的))
+			    (NP (NN 刮痕)))))) 
+	</parse>
+	<arg n="0">
+	影 中 面孔 
+	</arg>
+	<arg n="1">
+	岁月 的 刮痕 
+	</arg>
+	<arg n="m" f="adv">
+	逐渐 
+	</arg>
+	<arg n="m" f="adv">
+	随著 时间 的 流逝 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

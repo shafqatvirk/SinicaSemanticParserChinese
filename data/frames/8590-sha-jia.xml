@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 杀价 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (CS 若))
+				  (VP (VE 有)
+				      (NP-OBJ (NN 购买)
+					      (NN 意欲))))))
+		      (NP (NN 者)))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 一))
+			      (VP (VV 上来))))
+		  (ADVP (AD 便))
+		  (VP (VP (ADVP (AD 无情))
+			  (VP (VV 杀价)))
+		      (PU ，)
+		      (VP (VV 死缠烂打))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 若 有 购买 意欲 者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无情 
+	  </arg>
+	  <arg n="m" f="adv">
+	  便 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 一 上来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

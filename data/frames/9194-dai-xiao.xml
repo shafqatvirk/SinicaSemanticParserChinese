@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带笑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person smiling"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 临走)))
+		  (PU ，)
+		  (ADVP (AD 还))
+		  (DVP (VP (ADVP (AD 一迭))
+			   (VP (VV 带笑)))
+		       (DEV 的))
+		  (VP (VV 多谢)))) 
+	  </parse>
+	  <arg n="m" f="adv">
+	  一迭 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 裁军 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="number of troops arg0 reduces"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 边境)
+		      (NN 地区)
+		      (NN 裁军)
+		      (NN 谈判))
+	      (VP (VE 有)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 明显)))
+				  (DEC 的)))
+			  (NP (NN 进展))))) 
+	  </parse>
+	  <arg n="m" f="loc">
+	  边境地区
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 来自於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 comes from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (NP-SBJ (NP (NN 电子)
+				    (NN 媒体))
+				(NP (NN 成本)))
+			(VP (VA 高))))
+	    (PU ，)
+	    (NP-TMP (NT 目前))
+	    (NP-SBJ (NP (NN 电视台))
+		    (DNP (QP (CD 大部分))
+			 (DEG 的))
+		    (NP (NN 国际)
+			(NN 新闻)))
+	    (VP (VV 来自於)
+		(NP-OBJ (NN 外电)))) 
+	</parse>
+	<arg n="0">
+	电视台 大部分 的 国际 新闻 
+	</arg>
+	<arg n="1">
+	外电 
+	</arg>
+	<arg n="m" f="tmp">
+	目前 
+	</arg>
+	<arg n="m" f="prp">
+	由於 电子 媒体 成本 高 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (PN 他们))
+			 (DEG 的))
+		    (NP (NN 悲哀)))
+	    (PU ，)
+	    (VP (VV 来自於)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (ADVP (AD 不))
+				(VP (VV 合)
+				    (NP-OBJ (NN 时宜))))
+			    (PU 、)
+			    (VP (ADVP (AD 无从))
+				(VP (MSP 去)
+				    (VP (VV 适应)
+					(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (VA 疏离)
+								(PU 、)
+								(VA 慌乱)))
+							(DEC 的)))
+						(ADJP (JJ 新))
+						(NP (NN 社会)))))))))) 
+	</parse>
+	<arg n="0">
+	他们 的 悲哀 
+	</arg>
+	<arg n="1">
+	*PRO* 不 合 时宜 、 无从 去 适应 *OP* *T*-1 疏离 、 慌乱 的 新 社会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

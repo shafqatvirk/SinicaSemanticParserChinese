@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 流向 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 flows to"/>
+    <role argnum="2" argrole="place arg0 flows from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 从)
+		    (LCP (NP (NT 八○)
+			     (NN 年代))
+			 (LC 末)))
+	    (PU ，)
+	    (NP-SBJ (NP (NP-PN (NR 台湾))
+			(NP (NN 电影界)))
+		    (NP (NN 资金)))
+	    (VP (ADVP (AD 就))
+		(PP-DIR (P 从)
+			(NP-PN (NR 台湾)))
+		(ADVP (AD 陆续))
+		(VP (VV 流向)
+		    (NP-PN-OBJ (NR 香港)
+			       (PU 、)
+			       (NN 大陆))))) 
+	</parse>
+	<arg n="0">
+	台湾 电影界 资金 
+	</arg>
+	<arg n="1">
+	香港 、 大陆 
+	</arg>
+	<arg n="2">
+	从 台湾 
+	</arg>
+	<arg n="m" f="adv">
+	陆续 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	从 八○ 年代 末 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

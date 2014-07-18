@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 清理 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity cleared up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 中国))
+		  (VP (VV 应)
+		      (VP (VP (VV 采取)
+			      (NP-OBJ (ADJP (JJ 积极))
+				      (ADJP (JJ 稳妥))
+				      (NP (NN 措施))))
+			  (VP (VV 解决)
+			      (NP-OBJ (DNP (LCP (IP (NP-SBJ (NN 经济))
+						    (VP (VV 运行)))
+						(LC 中))
+					   (DEG 的))
+				      (ADJP (JJ 突出))
+				      (NP (NN 问题))))
+			  (PU ，)
+			  (VP (ADVP (AD 特别))
+			      (VP (VV 要)
+				  (VP (VV 注意)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 及时))
+						  (VP (VV 清理)
+						      (NP-OBJ (ADJP (JJ 不良))
+							      (NP (NN 资产)))))))))
+			  (PU ，)
+			  (VP (VV 加强)
+			      (NP-OBJ (NN 金融)
+				      (NN 风险)
+				      (NN 防范)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  不良 资产 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  及时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="result gained after cleaning up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NN 考古学家们))
+	  (VP (VRD (VV 清理)
+		   (VV 出))
+	      (AS 了)
+	      (NP-OBJ (QP (CD 一些))
+		      (NP (NN 房屋)
+			  (NN 遗址)
+			  (PU 、)
+			  (NN 墓葬)
+			  (ETC 等等)))) 
+	  </parse>
+	  <arg n="0">
+	  考古学家们	  
+	  </arg>
+	  <arg n="1">
+	  一些 房屋 遗址 、 墓葬 等等	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

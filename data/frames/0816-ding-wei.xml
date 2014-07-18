@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 定位 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="decision-maker"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="status"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (PP-LGS (P 由)
+						  (NP (NP (NN 旅游业))
+						      (CC 和)
+						      (NP (NP-APP (NN 商业)
+								  (PU 、)
+								  (NN 交通)
+								  (PU 、)
+								  (NN 园林)
+								  (ETC 等))
+							  (NP (NN 行业)))))
+					  (ADVP (AD 共同))
+					  (VP (VV 组成))))
+				  (DEC 的)))
+			  (NP-PN (NR 上海))
+			  (ADJP (JJ 大))
+			  (NP (NN 旅游)
+			      (NN 管理)
+			      (NN 体制)))
+		  (PU ，)
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NP (NP-PN (NR 上海))
+					  (NP (NN 旅游)
+					      (NN 产业)))
+				      (NP (NN 发展)
+					  (NN 目标)))
+			      (VP (VV 定位)
+				  (PP-LOC (P 于)
+					  (NP (ADJP (JJ 都市型))
+					      (NP (NN 旅游)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 由 旅游业 和 商业 、 交通 、 园林 等 行业 共同 组成 的 上海 大 旅游 管理 体制 
+	  </arg>
+	  <arg n="1">
+	  上海 旅游 产业 发展 目标 
+	  </arg>
+	  <arg n="2">
+	  于 都市型 旅游 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谈到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing spoken about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP (NN 国务院)
+				  (NN 副总理))
+			      (CC 兼)
+			      (NP (NN 外长)))
+		      (NP-PN (NR 钱其琛)))
+	      (VP (NP-TMP (NT 最近))
+		  (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (VV 谈到)
+				       (NP-OBJ (NP (NP-PN (NR 香港))
+						   (NP (NN 前景)))
+					       (CC 和)
+					       (NP (NP-PN (NR 台湾))
+						   (NP (NN 问题))))))
+			       (LC 时)))
+		  (VP (VV 表示)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (NN 中央)
+				      (NN 政府))
+			      (VP (PP (P 对)
+				      (NP (NP-PN (NR 香港))
+					  (NP (NN 前景))))
+				  (ADVP (AD 始终))
+				  (VP (VV 充满)
+				      (NP-OBJ (NN 信心)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  香港 前景 和 台湾 问题 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 谈到)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (QP-TMP (ADVP (AD 近))
+				      (QP (CD 几)
+					  (CLP (M 年))))
+			      (VP (VP (ADVP (AD 大量))
+				      (VP (VV 投资)
+					  (NP-OBJ (NN 国家)
+						  (NN 基础)
+						  (NN 建设))))
+				  (VP (VV 取得)
+				      (NP-OBJ (NN 成效)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *pro* 近 几 年 大量 投资 国家 基础 建设 取得 成效 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 看齐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 keeps up with/follows example of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (ADVP (AD 那麽))
+	      (IP-SBJ (NP-SBJ (NN 男性))
+		      (VP (PP-DIR (P 向)
+				  (NP (NN 美丽)))
+			  (VP (VV 看齐))))
+	      (PU ，)
+	      (VP (ADVP (AD 又))
+		  (VP (VC 是)
+		      (NP-PRD (DNP (NP-WH (PN 谁))
+				   (DEG 的))
+			      (NP (PU 「)
+				  (NN 功劳)
+				  (PU 」)))))) 
+	</parse>
+	<arg n="0">
+	男性 
+	</arg>
+	<arg n="1">
+	向 美丽 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 位于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 is located at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (ADJP (JJ 总))
+					  (NP (NN 面积)))
+				  (VP (VC 为)
+				      (QP-PRD (CD 三百五十)
+					      (CLP (M 平方公里)))))
+			      (DEC 的)))
+		      (NP-PN (NP-PN (NR 天津)
+				    (NR 滨海))
+			     (ADJP (JJ 新))
+			     (NP (NN 区))))
+	      (PU ，)
+	      (VP (VV 位于)
+		  (NP-OBJ (NP-APP (NP (NP-PN (NR 环渤海))
+				      (NP (NN 地区)))
+				  (NP (NN 中部)))
+			  (PU ，)
+			  (NP (DNP (NP-PN (NR 东北亚))
+				   (DEG 的))
+			      (NP (NN 中心)
+				  (NN 地带)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 总 面积 为 三百五十 平方公里 的 天津 滨海 新 区 
+	  </arg>
+	  <arg n="1">
+	  环渤海 地区 中部 ， 东北亚 的 中心 地带 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

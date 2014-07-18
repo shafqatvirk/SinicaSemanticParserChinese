@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 外泄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing which is let out/discharged"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 随後))
+	    (NP-SBJ (LCP (NP (NN 船))
+			 (LC 上))
+		    (DNP (QP (CD 一千多)
+			     (CLP (M 公吨)))
+			 (DEG 的))
+		    (NP (NN 重油)
+			(CC 与)
+			(NN 柴油)))
+	    (VP (ADVP (AD 大量))
+		(VP (VV 外泄)))) 
+	</parse>
+	<arg n="0">
+	船 上 一千多 公吨 的 重油 与 柴油 
+	</arg>
+	<arg n="m" f="adv">
+	大量 
+	</arg>
+	<arg n="m" f="adv">
+	随後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

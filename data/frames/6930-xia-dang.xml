@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 下档 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing (movie) arg0 stops showing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-60 (NP-SBJ (ADVP (AD 连))
+			   (NP (PN 我)))
+		   (VP (ADVP (AD 都))
+		       (ADVP (AD 不))
+		       (VP (VV 知道)
+			   (IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+				     (VP (NP-TMP (DP-WH (DT 什麽))
+						 (NP (NN 时候)))
+					 (VP (VV 会)
+					     (VP (VV 下档)))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	什麽 时候 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 甚至))
+	    (IP-ADV (NP-SBJ (NN 戏院))
+		    (VP (ADVP (AD 还))
+			(VP (VV 没)
+			    (VP (VV 下档)))))
+	    (PU ，)
+	    (NP-SBJ (NN 录影带))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 同时))
+		(VP (VV 发)))) 
+	</parse>
+	<arg n="0">
+	戏院 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

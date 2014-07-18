@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 笑闹 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 结果))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 到)
+			  (AS 了)
+			  (NP-OBJ (NN 溪谷))))
+	      (PU ，)
+	      (NP-SBJ (NN 员工们))
+	      (VP (DVP (IP (NP-SBJ (PN 自))
+			   (VP (VV 顾)
+			       (NP-OBJ (PN 自))))
+		       (DEV 地))
+		  (VP (VSB (VV 结伴)
+			   (VV 笑闹))))) 
+	  </parse>
+	  <arg n="0">
+	  员工们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自 顾 自 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 到 了 溪谷 
+	  </arg>
+	  <arg n="m" f="adv">
+	  结果 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,280 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 结合 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 takes into consideration"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 规范)
+				  (NP-OBJ (NN 建筑)
+					  (NN 行为)))
+			      (PU ，)
+			      (VP (VV 防止)
+				  (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 出现)
+					  (NP-OBJ (ADJP (JJ 无序))
+						  (NP (NN 现象)))))))))
+	      (PU ，)
+	      (NP-SBJ (NN 新区)
+		      (NN 管委会))
+	      (VP (PP (P 根据)
+		      (NP (DNP (NP (NP (NN 国家))
+				   (CC 和)
+				   (NP-PN (NR 上海市)))
+			       (DEG 的))
+			  (ADJP (JJ 有关))
+			  (NP (NN 规定))))
+		  (PU ，)
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 结合)
+			      (NP-OBJ (NP (NP-PN (NR 浦东))
+					  (NP (NN 开发)))
+				      (NP (NN 实际)))))
+		  (PU ，)
+		  (ADVP (AD 及时))
+		  (VP (VV 出台)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 系列)))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (VV 规范)
+					      (NP-OBJ (NN 建设)
+						      (NN 市场))))
+				      (DEC 的)))
+			      (NP (NN 文件)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  浦东 开发 实际 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities combined"/>
+      <role argnum="2" argrole="entity arg1 is combined to become"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 作为)
+		      (NP (NP (NP-PN (NR 三峡))
+			      (NP (NN 工程)))
+			  (NP (NN 主承保商))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中保)
+			 (NN 财产)
+			 (NN 保险)
+			 (NN 公司))
+	      (VP (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (NP (NP (PN 自身))
+					  (NP (NN 发展)))
+				      (CC 与)
+				      (NP (NP-PN (NR 三峡))
+					  (NP (NN 风险)
+					      (NN 管理)
+					      (NN 需要))))
+			      (VP (VRD (VV 结合)
+				       (VV 起来))))))) 
+	  </parse>
+	  <arg n="0">
+	  中保 财产 保险 公司 	  	  
+	  </arg>
+	  <arg n="1">
+	  自身 发展 与 三峡 风险 管理 需要 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  作为 三峡 工程 主承保商 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (DP (DT 整)
+				   (CLP (M 个)))
+			       (NP (NN 地区)))
+			   (DEG 的))
+		      (NP (NN 使馆)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 朝向)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VRD (VV 结合)
+				       (VV 成为))
+				  (NP-PRD (QP (CD 一)
+					      (CLP (M 个)))
+					  (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (ADVP (AD 更))
+							      (VP (VE 有)
+								  (NP-OBJ (NN 效率)))))
+						      (PU 、)
+						      (IP (NP-TPC (-NONE- *T*-2))
+							  (NP-SBJ (NN 资源))
+							  (VP (ADVP (AD 更))
+							      (VP (VA 丰富)))))
+						  (DEC 的)))
+					  (NP (NN 使领馆)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  一 个 *OP* *T*-2 更 有 效率 、 *T*-2 资源 更 丰富 的 使领馆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 西门子))
+	      (VP (VV 会)
+		  (VP (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (DNP (NP (NN 东北)
+						   (NN 地区))
+					       (DEG 的))
+					  (NP (NN 业务)))
+				  (VP (PP (P 与)
+					  (NP (DNP (NP (NN 当地))
+						   (DEG 的))
+					      (NP (NN 经济)
+						  (NN 发展))))
+				      (VP (VRD (VV 结合)
+					       (VV 起来))))))))) 
+	  </parse>
+	  <arg n="0">
+	  西门子 	  	  
+	  </arg>
+	  <arg n="1">
+	  东北 地区 的 业务 	  	  
+	  </arg>
+	  <arg n="1">
+	  与 当地 的 经济 发展 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 江西))
+	      (VP (LCP-TMP (NP (NT 近年))
+			   (LC 来))
+		  (VP (VV 注重)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 把)
+				  (IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 引进)
+						      (NP-OBJ (NN 外资))))
+					  (VP (PP (P 与)
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VP (VV 加快)
+							      (NP-OBJ (NN 基础)
+								      (NN 设施)
+								      (NN 建设)))
+							  (PU 、)
+							  (VP (VV 拓展)
+							      (NP-OBJ (NN 生产力)
+								      (NN 布局)))
+							  (PU 、)
+							  (VP (VV 调整)
+							      (NP-OBJ (NN 产品)
+								      (NN 结构)))
+							  (CC 和)
+							  (VP (VV 改造)
+							      (NP-OBJ (ADJP (JJ 传统))
+								      (NP (NN 产业)))))))
+					      (ADVP (AD 紧密))
+					      (VP (VRD (VV 结合)
+						       (VV 起来)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 引进 外资 	  	  
+	  </arg>
+	  <arg n="1">
+	  与 *PRO* 加快 基础 设施 建设 、 拓展 生产力 布局 、 调整 产品 结构 和 改造 传统 产业 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧密 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 朱（容加金旁）基))
+	      (VP (VV 要求)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (NP (NN 库区)
+				      (NN 企业))
+				  (NP (NN 搬迁)))
+			  (PU ，)
+			  (VP (VV 要)
+			      (VP (PP (P 与)
+				      (NP (NP (NN 经济)
+					      (NN 结构)
+					      (CC 和)
+					      (NN 企业)
+					      (NN 结构))
+					  (NP (NN 调整))))
+				  (ADVP (AD 紧密))
+				  (VP (VRD (VV 结合)
+					   (VV 起来)))))))) 
+	  </parse>
+	  <arg n="1" f="crd">
+	  库区 企业 搬迁 	  	  
+	  </arg>
+	  <arg n="1" f="crd">
+	  与 经济 结构 和 企业 结构 调整 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧密 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

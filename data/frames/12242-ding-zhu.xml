@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 叮嘱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 exhorts"/>
+      <role argnum="2" argrole="thing arg0 exhorts arg1 to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (PN 有人))
+		  (VP (PP-TMP (P 在)
+			      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (NN 州政府))
+						   (VP (PP-DIR (P 给)
+							       (NP (PN 我们)))
+						       (VP (VV 做)
+							   (NP-OBJ (-NONE- *T*-1)))))
+					       (DEC 的)))
+				       (ADJP (JJ 定期))
+				       (NP (NN 测验)))
+				   (LC 时)))
+		      (PU ，)
+		      (VP (VP (VV 没有)
+			      (VP (VV 遵守)
+				  (NP-OBJ (NP (PN 她))
+					  (DNP (NP (PU 「)
+						   (NP (QP (CD 一)
+							   (CLP (M 个)))
+						       (NP (NN 口令)))
+						   (PU ，)
+						   (NP (QP (CD 一)
+							   (CLP (M 个)))
+						       (NP (NN 动作)))
+						   (PU 」))
+					       (DEG 的))
+					  (NP (NN 叮嘱)))))
+			  (PU ，)
+			  (VP (ADVP (AD 预先))
+			      (VP (VV 翻阅)
+				  (AS 了)
+				  (NP-OBJ (NN 试题))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <arg n="2">
+	  「 一 个 口令 ， 一 个 动作 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

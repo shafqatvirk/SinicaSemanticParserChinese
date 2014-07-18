@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 振奋 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 inspires"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 音乐))
+	    (VP (ADVP (AD 又))
+		(ADVP (AD 很))
+		(VP (VV 振奋)
+		    (NP-OBJ (NN 人心))))) 
+	</parse>
+	<arg n="0">
+	音乐 
+	</arg>
+	<arg n="1">
+	人心 
+	</arg>
+	<arg n="m" f="adv">
+	很 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (ADVP (AD 曾))
+		(VP (VV 让)
+		    (NP-OBJ (NN 乐坛))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 一阵))
+			    (VP (VV 振奋))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一阵 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

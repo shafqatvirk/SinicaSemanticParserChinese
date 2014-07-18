@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 施工 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity under construction"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DP (DT 这)
+				   (CLP (M 批)))
+			       (NP (NN 重点)
+				   (NN 企业)))
+			   (LC 中)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 只))
+		  (VP (VE 有)
+		      (IP-OBJ (QP-SBJ (CD 十四)
+				      (CLP (M 家)))
+			      (VP (ADVP (AD 还))
+				  (ADVP (AD 在))
+				  (ADVP (AD 加紧))
+				  (VP (VV 施工))))))) 
+	  </parse>
+	  <arg n="1">
+	  十四 家 
+	  </arg>
+	  <arg n="m" f="adv">
+	  加紧 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

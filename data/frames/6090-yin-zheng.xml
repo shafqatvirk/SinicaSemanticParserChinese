@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 印证 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 confirms"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (LCP (NP (NN 洋楼区))
+			      (LC 内))
+			 (DEG 的))
+		    (NP (NN 学堂)
+			(PU 、)
+			(NN 楼房)
+			(PU 、)
+			(NN 领事馆)))
+	    (PU ，)
+	    (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 走)))
+				(DEC 的))))
+		    (CC 或)
+		    (NP (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VV 留下)))
+				(DEC 的)))))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(VP (VV 印证)
+		    (IP-OBJ (NP-SBJ (DP (DT 此))
+				    (NP (NN 地)))
+			    (VP (ADVP (AD 曾))
+				(VP (VC 是)
+				    (NP-PRD (CP-APP (IP (NP-SBJ (NN 中西)
+								(NN 文化))
+							(VP (VV 交流)))
+						    (DEC 的))
+					    (NP (NN 繁景)
+						(NN 荣况))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 走 的 或 *OP* *T*-2 留下 的 
+	</arg>
+	<arg n="1">
+	此 地 曾 是 中西 文化 交流 的 繁景 荣况 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tpc">
+	洋楼区 内 的 学堂 、 楼房 、 领事馆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (P 从)
+		    (NP (QP (CD 一)
+			    (CLP (M 部)))
+			(DNP (NP-PN (NR NHK))
+			     (DEG 的))
+			(NP (NN 影片))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 更))
+		(ADVP (AD 间接))
+		(VP (VV 印证)
+		    (AS 了)
+		    (NP-OBJ (NP (PN 自己))
+			    (DNP (PP (P 对)
+				     (NP (NP (ADJP (JJ 史前))
+					     (NP (NN 人)))
+					 (IP-APP (NP-SBJ (-NONE- *PRO*))
+						 (VP (VV 制陶)))
+					 (NP (NN 技术))))
+				 (DEG 的))
+			    (NP (NN 判断)))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	自己 对 史前 人 *PRO* 制陶 技术 的 判断 
+	</arg>
+	<arg n="m" f="adv">
+	间接 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="dir">
+	从 一 部 NHK 的 影片 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

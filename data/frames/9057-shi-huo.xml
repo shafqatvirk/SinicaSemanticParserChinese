@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 识货 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person able to tell good from bad"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 当时))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (VE 有)
+					  (NP-OBJ (NN 兴趣)))
+				      (CC 而)
+				      (VP (PU 「)
+					  (VV 识货)
+					  (PU 」))))
+			      (DEC 的)))
+		      (NP (NN 业者)))
+	      (VP (ADVP (AD 并))
+		  (ADVP (AD 不))
+		  (VP (VA 多)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 生下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity giving birth to"/>
+      <role argnum="1" argrole="entity born"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 对)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 合法)))
+			      (DEC 的)))
+		      (NP (NP (ADJP (JJ 老))
+			      (NP (NN 夫)))
+			  (NP (ADJP (JJ 少))
+			      (NP (NN 妻)))))
+	      (VP (PP-TMP (P 于)
+			  (LCP (QP (CD 两)
+				   (CLP (M 年)))
+			       (LC 前)))
+		  (VP (VV 生下)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 个)))
+			      (NP (NN 儿子)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 对 *OP* *T*-1 合法 的 老 夫 少 妻 
+	  </arg>
+	  <arg n="1">
+	  一 个 儿子 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 两 年 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

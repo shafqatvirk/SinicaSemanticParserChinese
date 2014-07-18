@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 做陶 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (NP-APP (PN 我们))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ-SBJ (-NONE- *T*-1))
+				(VP (VV 做陶)))
+			    (DEC 的)))
+		    (NP (NN 人)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 一))
+			    (VP (VV 看))))
+		(ADVP (AD 就))
+		(VP (VV 知道)
+		    (IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VC 是)
+				  (NP-PRD (DP-WH (DT 什麽))
+					  (NP (NN 用途)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

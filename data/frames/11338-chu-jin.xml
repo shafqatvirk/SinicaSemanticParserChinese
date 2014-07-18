@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出尽 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 shows off"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 华裔))
+		    (NP (NN 电影人)))
+	    (VP (VP (PP-LOC (P 在)
+			    (NP (DP (DT 各))
+				(ADJP (JJ 大))
+				(NP (NN 影展))))
+		    (VP (VV 出尽)
+			(NP-OBJ (NN 锋头))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (PP-LOC (P 在)
+			    (NP (NP (PN 他))
+				(NP (NN 国))))
+		    (ADVP (AD 另))
+		    (VP (VV 辟)
+			(NP-OBJ (NN 创作)
+				(NN 高峰)))))) 
+	</parse>
+	<arg n="0">
+	华裔 电影人 
+	</arg>
+	<arg n="1">
+	锋头 
+	</arg>
+	<arg n="m" f="loc">
+	在 各 大 影展 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

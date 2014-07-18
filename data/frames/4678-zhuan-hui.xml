@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转会 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 is transferred to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不过))
+	      (ADVP (AD 近来))
+	      (PU ，)
+	      (NP-SBJ (NP (PN 他))
+		      (CC 同)
+		      (NP (NP-APP (NN 弟弟))
+			  (NP-PN (NR 弗·德波尔))))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 提出)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 转会)
+				  (NP-PN-OBJ (NR 西班牙))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  西班牙 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP-APP (IP (NP-PN-SBJ (NR 伊普拉辛·巴))
+			  (VP (VV 转会)))
+		      (DEC 的))
+	      (NP (NN 事件))) 
+	  </parse>
+	  <arg n="0">
+	  伊普拉辛·巴 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

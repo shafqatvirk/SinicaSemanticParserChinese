@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迈 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing (step) arg0 takes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (PP-TMP (P 当)
+			(LCP (IP (NP-SBJ (DP (DT 各)
+					     (CLP (M 种)))
+					 (NP (NN 社运)
+					     (NN 诉求)))
+				 (VP (ADVP (AD 都))
+				     (VP (VV 转趋)
+					 (NP-OBJ (NN 沈寂)))))
+			     (LC 时)))
+		(PU ，)
+		(NP-SBJ (NN 教育)
+			(NN 改革))
+		(VP (ADVP (AD 却))
+		    (DVP (IP (NP-SBJ (NN 後劲))
+			     (VP (VV 十足)))
+			 (DEV 地))
+		    (VP (VV 迈)
+			(AS 著)
+			(NP-OBJ (ADJP (JJ 大))
+				(NP (NN 步)))))) 
+	</parse>
+	<arg n="0">
+	教育 改革 
+	</arg>
+	<arg n="1">
+	大 步 
+	</arg>
+	<arg n="m" f="adv">
+	後劲 十足 地 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="tmp">
+	当 各 种 社运 诉求 都 转趋 沈寂 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

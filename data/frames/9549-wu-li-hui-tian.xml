@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无力回天 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is unable to turn around"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (ADJP (JJ 新))
+			  (NP (NN 文化)))
+		      (NP (NN 运动)))
+	      (VP (VP (VV 改变)
+		      (AS 了)
+		      (NP-OBJ (NP (NP (NT 近代))
+				  (NP-PN (NR 中国))
+				  (NP (NN 文化)))
+			      (NP (NN 走势))))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (CP-APP (IP (IP (NP-SBJ (NN 军阀))
+						  (VP (VV 割据)))
+					      (PU 、)
+					      (IP (NP-PN-SBJ (NR 北洋)
+							     (NN 政府))
+						  (VP (VV 丧权辱国))))
+					  (DEC 的))
+				  (NP (NN 局面))))
+		      (ADVP (AD 却))
+		      (VP (VV 无力回天))))) 
+	  </parse>
+	  <arg n="0">
+	  新 文化 运动 
+	  </arg>
+	  <arg n="1">
+	  对 军阀 割据 、 北洋 政府 丧权辱国 的 局面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

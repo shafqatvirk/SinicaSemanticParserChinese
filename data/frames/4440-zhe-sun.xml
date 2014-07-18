@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 折损 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="loss arg0 sustains"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 日本))
+		      (NP (NN 棋手)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 折损)
+		      (AS 了)
+		      (QP-OBJ (CD 三分之二))))) 
+	  </parse>
+	  <arg n="0">
+	  日本 棋手 
+	  </arg>
+	  <arg n="1">
+	  三分之二 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

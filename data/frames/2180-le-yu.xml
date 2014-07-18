@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 乐于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing people like to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PP-ADV (P 随着)
+			(NP (DNP (NP (PU “)
+				     (NN 铁饭碗)
+				     (PU ”))
+				 (DEG 的))
+			    (NP (NN 打破))))
+		(PU ，)
+		(NP-SBJ (QP (CD 不少))
+			(NP (NN 中国人)))
+		(VP (VV 乐于)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(NP (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-TPC (-NONE- *T*-2))
+							(NP-SBJ (NN 工资)
+								(NN 收入))
+							(VP (ADVP (AD 较))
+							    (VP (VA 高))))
+						    (DEC 的)))
+					    (NP (NN 外企))))
+				(VP (VV 寻找)
+				    (NP-OBJ (NN 就业)
+					    (NN 机会))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  不少 中国人 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 在 *OP* *T*-2 工资 收入 较 高 的 外企 寻找 就业 机会 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随着 “ 铁饭碗 ” 的 打破 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

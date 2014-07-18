@@ -1,0 +1,163 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 改写 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 rewrites"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(CLP (M 句)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				(VP (ADVP (AD 常))
+				    (VP (VP (SB 被)
+					    (VP (VV 用)
+						(NP-OBJ (-NONE- *-2))))
+					(VP (MSP 来)
+					    (VP (VV 描述)
+						(NP-OBJ (NN 女人)))))))
+			    (DEC 的)))
+		    (ADJP (JJ 知名))
+		    (NP (NN 谚语)))
+	    (PU ，)
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 进入)
+				     (NP-OBJ (QP (OD 二十一))
+					     (NP (NN 世纪)))))
+			     (LC 後)))
+		(ADVP (AD 已))
+		(VP (LB 被)
+		    (CP-OBJ (WHNP-3 (-NONE- *OP*))
+			    (IP (NP-SBJ (NN 男性))
+				(VP (PP-MNR (P 以)
+					    (NP (ADJP (JJ 实际))
+						(NP (NN 行动))))
+				    (VP (VV 改写)
+					(NP-OBJ (-NONE- *T*-3))))))))) 
+	</parse>
+	<arg n="0">
+	男性 
+	</arg>
+	<arg n="1">
+	这 句 *OP* *T*-1 常 被 用 *-2 来 描述 女人 的 知名 谚语 
+	</arg>
+	<arg n="m" f="mnr">
+	以 实际 行动 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 进入 二十一 世纪 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 不但))
+		    (VP (VV 创造)
+			(NP-OBJ (QP (CD 许多))
+				(NP (NN 科技)
+				    (NN 新贵)))))
+		(PU ，)
+		(VP (ADVP (AD 更))
+		    (VP (VV 改写)
+			(AS 了)
+			(NP-OBJ (ADJP (JJ 传统))
+				(DNP (NP (NN 经济)
+					 (NN 发展))
+				     (DEG 的))
+				(NP (NN 准则))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	传统 经济 发展 的 准则 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 角色)
+			(NN 范本)))
+	    (VP (DP-ADV (DT 全)
+			(CLP (M 盘)))
+		(VP (VV 改写)))) 
+	</parse>
+	<arg n="1">
+	许多 角色 范本 
+	</arg>
+	<arg n="m" f="adv">
+	全 盘 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 结果))
+	    (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VV 要)
+			     (VP (VV 进入)
+				 (NP-OBJ (NT 七○)
+					 (NN 年代)))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (PN 大家))
+	    (VP (ADVP (AD 才))
+		(ADVP (AD 纷纷))
+		(VP (VCD (VV 修正)
+			 (VV 改写))))) 
+	</parse>
+	<arg n="0">
+	大家 
+	</arg>
+	<arg n="m" f="adv">
+	纷纷 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 要 进入 七○ 年代 时 
+	</arg>
+	<arg n="m" f="dis">
+	结果 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

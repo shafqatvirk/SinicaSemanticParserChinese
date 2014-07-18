@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收编 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity incorporated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 收编)
+		      (NP-OBJ (NP (ADJP (JJ 红色))
+				  (NP-PN (NR 高棉)))
+			      (NP (NN 武装))))
+		  (PU 、)
+		  (VP (VV 发)
+		      (NP-OBJ (NN 军饷)))
+		  (CC 和)
+		  (VP (VV 安排)
+		      (NP-OBJ (DNP (NP (PN 他们))
+				   (DEG 的))
+			      (NP (NN 家属)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  红色 高棉 武装 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

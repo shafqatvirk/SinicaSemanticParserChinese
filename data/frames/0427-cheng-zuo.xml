@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 乘坐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="passenger"/>
+      <role argnum="1" argrole="means of transportation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (PN 我们))
+			      (VP (VV 乘坐)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP (NN 旅游))
+		  (ADJP (JJ 大))
+		  (NP (NN 轿车))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

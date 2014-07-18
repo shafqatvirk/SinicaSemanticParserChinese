@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 攻向 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="attacker"/>
+    <role argnum="1" argrole="entity arg0 attacks towards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP (ADJP (JJ 先进))
+				      (NP (NN 机具)))
+				  (DEG 的))
+			     (NP (NN 帮助)))
+			 (LC 下)))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 高尔夫)
+			(NN 球场)))
+	    (VP (VV 攻向)
+		(NP-OBJ (DNP (QP (CD 一)
+				 (CLP (M 球球)))
+			     (DEG 的))
+			(NP (NN 山坡))))) 
+	</parse>
+	<arg n="0">
+	台湾 高尔夫 球场 
+	</arg>
+	<arg n="1">
+	一 球球 的 山坡 
+	</arg>
+	<arg n="m" f="loc">
+	在 先进 机具 的 帮助 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

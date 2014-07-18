@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看腻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 针对)
+		      (NP (NN 时尚)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 或许))
+		  (VP (VV 可以)
+		      (VP (VV 说)
+			  (IP-OBJ (NP-SBJ (PN 大家))
+				  (VP (VV 看腻)
+				      (AS 了)
+				      (NP-OBJ (NN 猛男)
+					      (PU 、)
+					      (NN 酷哥)))))))) 
+	  </parse>
+	  <arg n="0">
+	  大家 
+	  </arg>
+	  <arg n="1">
+	  猛男 、 酷哥 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

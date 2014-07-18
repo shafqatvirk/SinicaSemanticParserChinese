@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交与 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="thing given"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (VP (VV 办妥)
+			       (NP-OBJ (NN 手续))))
+		       (LC 後))
+	      (PU ，)
+	      (NP-SBJ (QP (OD 第二))
+		      (NP (NN 被告)))
+	      (VP (ADVP (AD 即))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (QP (CD 两)
+					  (CLP (M 本)))
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (VV 伪造)
+						      (NP-OBJ (-NONE- *T*-1))))
+					      (DEC 的)))
+				      (NP (NP (NP-PN (NR 英国))
+					      (NP (NN 国民))
+					      (PRN (PU （)
+						   (NP (NN 海外))
+						   (PU ）))
+					      (NP (NN 护照)))
+					  (PU 、)
+					  (NP (NP-PN (NR 香港))
+					      (NP (NN 身分)
+						  (NN 证明书)))
+					  (CC 及)
+					  (NP (NP-PN (NR 香港))
+					      (NP (NN 身分证)))))
+			      (VP (VV 交与)
+				  (NP-OBJ (DP (DT 该)
+					      (QP (CD 两)
+						  (CLP (M 名))))
+					  (NP-PN (NR 中国))
+					  (NP (NN 人士)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  第二 被告 
+	  </arg>
+	  <arg n="1">
+	  两 本 *OP* *pro* 伪造 *T*-1 的 英国 国民 （ 海外 ） 护照 、 香港 身分 证明书 及 香港 身分证 
+	  </arg>
+	  <arg n="2">
+	  该 两 名 中国 人士 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  办妥 手续 後 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

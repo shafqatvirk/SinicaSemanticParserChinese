@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不减 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity compared with which arg0 is not reduced"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 勤奋))
+	    (VP (VV 不减)
+		(NP-OBJ (NT 当年)))) 
+	</parse>
+	<arg n="0">
+	勤奋 
+	</arg>
+	<arg n="1">
+	当年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 显然))
+	    (NP-SBJ (NN 水晶)
+		    (NN 魅力))
+	    (VP (VV 不减))) 
+	</parse>
+	<arg n="0">
+	水晶 魅力 
+	</arg>
+	<arg n="m" f="adv">
+	显然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

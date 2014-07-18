@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 少数 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (LCP (NP (NN 浩劫))
+			   (LC 後))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 极))
+				      (VP (VA 少数))))
+			      (DEC 的)))
+		      (NP (NN 幸运儿)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  极 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

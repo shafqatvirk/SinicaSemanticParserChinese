@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 悬系 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="entity that arg0 hangs arg1 on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (PN 我))
+		    (NP (NN 国)))
+	    (VP (PP-LOC (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 拓展)
+				     (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+						 (CP (IP (NP-SBJ (-NONE- *T*-4))
+							 (VP (VV 悬系)
+							     (NP-OBJ (NP (NP (PN 我))
+									 (NP (NN 主权)))
+								     (NP (NN 宣示)))))
+						     (DEC 的)))
+					     (NP (NN 邦交国)))))
+			     (LC 上)))
+		(ADVP (AD 一再))
+		(VP (VV 受挫)))) 
+	</parse>
+	<arg n="2">
+	*T*-4 
+	</arg>
+	<arg n="1">
+	我 主权 宣示 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

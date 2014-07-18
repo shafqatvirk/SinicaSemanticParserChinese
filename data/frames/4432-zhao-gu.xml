@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 照顾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 takes care of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (VP (VV 需要)
+		      (NP-OBJ (ADJP (JJ 额外))
+			      (NP (NN 学额))))
+		  (VP (MSP 以)
+		      (VP (VV 照顾)
+			  (NP-OBJ (ADJP (ADVP (AD 更))
+					(ADJP (JJ 多)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VP (VV 合)
+						      (NP-OBJ (NN 资格)))
+						  (VP (VV 来)
+						      (NP-PN-OBJ (NR 港)))))
+					  (DEC 的)))
+				  (NP (NN 儿童))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  更 多 *OP* *T*-1 合 资格 来 港 的 儿童 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

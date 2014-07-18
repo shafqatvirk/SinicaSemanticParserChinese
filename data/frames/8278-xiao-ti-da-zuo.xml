@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 小题大作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 makes a fuss over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NP-PN (NR 美国))
+			  (NP (NN 政府)))
+		  (VP (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 骇客))
+				  (VP (VV 当成)
+				      (NP-OBJ (NN 恐怖)
+					      (NN 份子)))))
+		      (VP (VV 对付))))
+	      (PU ，)
+	      (IP-Q (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP-WH (AD 岂))
+			(ADVP (AD 不))
+			(VP (VC 是)
+			    (VP (VV 小题大作)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  岂 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

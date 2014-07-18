@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 问对 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 picks correctly to ask"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 卢秀琴))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-DIR (P 向)
+				    (NP-PN (NR 刘益昌)))
+			    (VP (VV 打听)
+				(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 复原)
+							(NP-OBJ (NN 史前陶))))
+						(DEC 的))
+					(NP (NN 人选))))))
+		(PU ，)
+		(ADVP (AD 果然))
+		(VP (VC 是)
+		    (VP (VV 问对)
+			(AS 了)
+			(NP-OBJ (NN 人)))))) 
+	</parse>
+	<arg n="0">
+	卢秀琴 
+	</arg>
+	<arg n="1">
+	人 
+	</arg>
+	<arg n="m" f="adv">
+	果然 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 向 刘益昌 打听 *PRO* 复原 史前陶 的 人选 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

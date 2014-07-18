@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 意 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 expects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 真是))
+		(VP (VP (VV 出)
+			(NP-OBJ (PN 我))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不))
+				(VP (VV 意)))))
+		    (PU ，)
+		    (VP (VV 攻)
+			(NP-OBJ (PN 我))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不))
+				(VP (VV 备)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不甘寂寞 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-2))
+                              (VP (VV 反对)
+                                  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                                          (VP (VP (VV 建立)
+                                                  (NP-OBJ (NN 欧元区)))
+                                              (CC 和)
+                                              (VP (VV 发行)
+                                                  (NP-OBJ (NN 欧元)))))))
+                          (DEC 的)))
+                  (NP (NN 人)))
+          (VP (ADVP (AD 也))
+              (VP (VV 不甘寂寞)))))
+	</parse>
+	<arg n="0"> *OP* (*T*-2)->(人) 反对 *PRO* 建立 欧元区 和 发行 欧元 的 人 </arg>
+	<arg n="M" f="ADV"> 也 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

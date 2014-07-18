@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迁往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 moves to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 台湾))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (ADVP (AD 当初))
+					  (NP-PN-SBJ (NR 南岛)
+						     (NN 语族))
+					  (VP (NP-LOC (-NONE- *T*-1))
+					      (VP (VV 迁往))
+					      (NP-OBJ (NN 南方))))
+				      (DEC 的)))
+			      (QP (OD 第一))
+			      (NP (NN 站))))) 
+	  </parse>
+	  <arg n="0">
+	  南岛 语族 	  
+	  </arg>
+	  <arg n="1">
+	  南方 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当初 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

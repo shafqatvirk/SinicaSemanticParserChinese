@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 敦请 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 asks"/>
+    <role argnum="2" argrole="thing arg1 is asked to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 新))
+		    (NP (NN 政府)))
+	    (VP (ADVP (AD 将))
+		(VP (VV 敦请)
+		    (NP-PN-OBJ (NN 立法院))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VCD (VV 通过)
+				 (VV 批准))
+			    (NP-OBJ (PU 「)
+				    (NN 国际)
+				    (NN 人权)
+				    (NN 法典)
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	新 政府 
+	</arg>
+	<arg n="1">
+	立法院 
+	</arg>
+	<arg n="2">
+	*PRO* 通过 批准 「 国际 人权 法典 」 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VP (VP (VV 南下))
+			(VP (VP (VV 到)
+				(NP-PN-OBJ (NR 东莞)))
+			    (VP (VV 来))))
+		    (VP (VV 嫁)
+			(AS 了)
+			(NP-OBJ (DNP (NP (QP (CD 一)
+					     (CLP (M 家)))
+					 (NP (NN 企业)))
+				     (DEG 的))
+				(ADJP (JJ 台籍))
+				(NP (NN 干部)))))
+		(VP (MSP 而)
+		    (VP (LB 被)
+			(IP-OBJ (NP-SBJ (NN 台商))
+				(VP (VRD (VV 敦请)
+					 (VV 出来))
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 办)
+						(NP-OBJ (NN 学校)))))))))) 
+	</parse>
+	<arg n="0">
+	台商 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	*PRO* 办 学校 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

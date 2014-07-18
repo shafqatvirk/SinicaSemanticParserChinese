@@ -1,0 +1,159 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 记载 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 records"/>
+    <role argnum="2" argrole="location arg1 is recorded"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 泛胜))
+	    (VP (VV 记载)
+		(AS 了)
+		(NP-OBJ (NP-APP (NP (NN 旱作)
+				    (NN 地区))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 最))
+						(VP (VA 早))))
+					(DEC 的)))
+				(QP (CD 一)
+				    (CLP (M 套)))
+				(NP (NN 丰产)
+				    (NN 技术)))
+			(NP (PU 「)
+			    (NN 区田法)
+			    (PU 」))))) 
+	</parse>
+	<arg n="1">
+	旱作 地区 *OP* *T*-1 最 早 的 一 套 丰产 技术 「 区田法 」 
+	</arg>
+	<arg n="2">
+	泛胜 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 三)
+			(CLP (M 足)))
+		    (ADJP (JJ 金))
+		    (NP (NN 蟾) ))
+	    (VP (ADVP (AD 最早))
+		(VP (VV 记载)
+		    (PP (P 在)
+			(LCP (NP (NP-PN (NR 汉代))
+				 (NP (NN 书)) )
+			     (LC 中)))))) 
+	</parse>
+	<arg n="1">
+	三 足 金 蟾 
+	</arg>
+	<arg n="2">
+	在 汉代 书 中 
+	</arg>
+	<arg n="m" f="adv">
+	最早 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 根据)
+		    (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-PN-SBJ (NR 英国))
+					    (VP (VV 出版)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的))
+				(NP-TTL (PU 《)
+					(NN 高尔夫)
+					(NN 百科全书)
+					(PU 》)))
+			(VP (VV 记载))))
+	    (PU ，)
+	    (NP-SBJ (NN 高尔夫))
+	    (VP (ADVP (AD 约))
+		(PP-TMP (P 在)
+			(LCP (NP (NT 一三一九年))
+			     (LC 左右)))
+		(VP (VV 成为)
+		    (NP-OBJ (DNP (NP (NN 苏格兰人))
+				 (DEG 的))
+			    (NP (NN 休闲)
+				(NN 活动)))))) 
+	</parse>
+	<arg n="2">
+	*OP* 英国 出版 *T*-1 的 《 高尔夫 百科全书 》 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TTL-SBJ (PU 《)
+			(NN 丸经)
+			(PU 》))
+	    (VP (VV 记载)
+		(PU ，)
+		(IP-OBJ (IP (NP-PN-SBJ (NR 中国))
+			    (VP (PP-TMP (P 在)
+					(NP-PN (NR 宋朝)))
+				(ADVP (AD 已))
+				(VP (VV 出现)
+				    (NP-OBJ (NN 捶丸)
+					    (NN 运动)))))
+			(PU ，)
+			(IP (NP-TMP (NT 当时))
+			    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (ADVP (AD 最))
+						    (VP (VV 爱)
+							(IP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 追逐)
+								(NP-OBJ (ADJP (JJ 小))
+									(ADJP (JJ 白))
+									(NP (NN 球))))))))
+					    (DEC 的)))
+				    (NP (NN 帝王)))
+			    (VP (VV 当)
+				(VP (VV 属)
+				    (NP-PN-OBJ (NR 宋徽宗)
+					       (CC 与)
+					       (NR 金章宗)))))))) 
+	</parse>
+	<arg n="1">
+	中国 在 宋朝 已 出现 捶丸 运动 ， 当时 *OP* *T*-1 最 爱 *PRO* 追逐 小 白 球 的 帝王 当 属 宋徽宗 与 金章宗 
+	</arg>
+	<arg n="2">
+	《 丸经 》 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

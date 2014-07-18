@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 渴求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 longs for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-4))
+				  (NP-SBJ (-NONE- *pro*))
+				  (VP (VPT (VV 拼)
+					   (AD 不)
+					   (VV 到))))
+			      (DEC 的))))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 越来越))
+		      (VP (VV 渴求)))
+		  (VP (ADVP (AD 却))
+		      (ADVP (AD 又))
+		      (ADVP (AD 自))
+		      (VP (VV 知)
+			  (IP-OBJ (NP-SBJ (NN 希望))
+				  (VP (VA 渺茫))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-4 *pro* 拼 不 到 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  越来越 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

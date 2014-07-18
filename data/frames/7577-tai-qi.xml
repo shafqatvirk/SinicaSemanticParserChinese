@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抬起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 raises"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 转动)
+					(NP-OBJ (LCP (NP (NN 手))
+						     (LC 中))
+						(NP (NN 作品))))
+				    (VP (ADVP (AD 仔细))
+					(VP (VV 察看)))))
+			    (DEC 的)))
+		    (NP-PN (NR 郑永国)))
+	    (PU ，)
+	    (VP (ADVP-TMP (AD 这))
+		(ADVP (AD 才))
+		(VP (VP (VP (VV 抬起)
+			    (NP-OBJ (NN 头)))
+			(VP (VV 来)))
+		    (PU ，)
+		    (VP (VP (VV 笑))
+			(VP (VV 道)
+			    (PU ：)
+			    (IP-OBJ (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (ADVP (AD 还))
+						    (VP (VA 好))))
+					(NP-SBJ (PN 我))
+					(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+							 (VP (VV 烧窑)))
+						     (LC 时))
+					    (VP (VP (BA 把)
+						    (IP-OBJ (NP-SBJ (NN 温度))
+							    (VP (VV 提高))))
+						(PU ，)
+						(VP (VV 增强)
+						    (NP-OBJ (NN 硬度))))))
+				    (PU ，)
+				    (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 就))
+					    (VP (VC 是)
+						(VP (VV 想到)
+						    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+							    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+									     (VP (PP-LOC (P 在)
+											 (NP (NN 博物馆)))
+										 (VP (VV 搬来搬去))))
+									 (LC 时))
+								(VP (VV 可能)
+								    (VP (VV 会)
+									(VP (VV 撞坏)))))))))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 转动 手 中 作品 仔细 察看 的 郑永国 
+	</arg>
+	<arg n="1">
+	头 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="tmp">
+	这 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

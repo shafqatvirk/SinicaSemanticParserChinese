@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 西移 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity that is moving west"/>
+      <role argnum="1" argrole="location arg0 moves to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 能源)
+			      (NN 工业))
+			  (NP (NN 重心)))
+		  (VP (VV 西移)
+		      (NP-OBJ (ADJP (JJ 大))
+			      (NP (NN 西北))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 能源 工业 重心 
+	  </arg>
+	  <arg n="1">
+	  大 西北 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 柴达木)
+				 (NN 盆地))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 丰富)))
+				  (DEC 的)))
+			  (NP (NN 油气)
+			      (NN 资源)))
+		  (PU ，)
+		  (VP (ADVP (AD 将))
+		      (PP-BNF (P 为)
+			      (IP (NP-SBJ (NP-PN (NR 中国))
+					  (NP (NN 能源)
+					      (NN 工业)
+					      (NN 中心)))
+				  (VP (VV 西移))))
+		      (VP (VV 奠定)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 良好)))
+					  (DEC 的)))
+				  (NP (NN 物质)
+				      (NN 基础)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 能源 工业 中心 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

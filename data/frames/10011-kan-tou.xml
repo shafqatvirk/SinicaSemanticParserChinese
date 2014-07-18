@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 看透 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 sees through"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 看透)
+			(AS 了)
+			(NP-OBJ (DNP (NP (NN 亲情)
+					 (CC 与)
+					 (NN 感情))
+				     (DEG 的))
+				(NP (NN 虚妄)))))
+	    (PU ，)
+	    (NP-SBJ (PN 她))
+	    (VP (VV 发誓)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 再))
+			    (ADVP (AD 也))
+			    (ADVP (AD 不))
+			    (VP (BA 将)
+				(IP-OBJ (NP-SBJ (DNP (NP (PN 自己))
+						     (DEG 的))
+						(NP (NN 喜怒哀乐)))
+					(VP (VV 寄托)
+					    (PP (P 在)
+						(LCP (NP (NN 别人))
+						     (LCP (NP (NN 身))
+							  (LC 上))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	亲情 与 感情 的 虚妄 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

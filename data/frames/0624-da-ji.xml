@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打击 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 一九九七年))
+		  (NP-SBJ (NP (DP (DT 全))
+			      (NP (NN 国)))
+			  (NP (NN 海关)
+			      (NN 系统)))
+		  (VP (VP (ADVP (AD 依法))
+			  (VP (VV 征税)))
+		      (PU 、)
+		      (VP (VV 打击)
+			  (NP-OBJ (NN 走私)
+				  (CC 和)
+				  (NN 骗税))))) 
+	  </parse>
+	  <arg n="0">
+	  全 国 海关 系统 
+	  </arg>
+	  <arg n="1">
+	  走私 和 骗税 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九七年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (PP-DIR (P 对)
+			      (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VP (VV 违反)
+						      (NP-OBJ (ADJP (JJ 有关))
+							      (NP (NN 环保)
+								  (NN 法规))))
+						  (VP (VV 造成)
+						      (NP-OBJ (ADJP (JJ 严重))
+							      (NP (NN 环境)
+								  (NN 污染))))))
+					  (DEC 的)))
+				  (NP (NN 责任者))))
+		      (VP (VV 要)
+			  (VP (ADVP (AD 严加))
+			      (VP (VV 惩处)))))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 特别))
+						  (VP (VA 恶劣))))
+					  (DEC 的)))
+				  (NP (NN 犯罪)
+				      (NN 行为))))
+		      (VP (VV 要)
+			  (VP (ADVP (AD 依法))
+			      (ADVP (AD 严厉))
+			      (VP (VV 打击))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-1 特别 恶劣 的 犯罪 行为 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依法 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严厉 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

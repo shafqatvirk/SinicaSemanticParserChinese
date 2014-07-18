@@ -1,0 +1,144 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开创 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing opened up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VE 有)
+			      (NP-OBJ (NP (DNP (NP (NN 中央)
+						   (NN 政府))
+					       (DEG 的))
+					  (NP (NN 支持)))
+				      (CC 和)
+				      (NP (DNP (NP (NP (ADJP (JJ 特别))
+						       (NP (NN 行政区)))
+						   (NP (NN 政府)))
+					       (DEG 的))
+					  (NP (NN 治理))))))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 香港))
+			  (NP (NN 各界)))
+		  (VP (VP (VCD (VV 团结)
+			       (VV 一致)))
+		      (PU ，)
+		      (VP (ADVP (AD 一定))
+			  (VP (VV 能)
+			      (VP (VV 开创)
+				  (NP-OBJ (DNP (NP-PN (NR 香港))
+					       (DEG 的))
+					  (ADJP (JJ 美好))
+					  (NP (NT 未来)))))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 各界 	  
+	  </arg>
+	  <arg n="1">
+	  香港 的 美好 未来 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一定 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (IP (NP-PN-TPC (NR 张学良))
+		    (PP-LOC (P 在)
+			    (LCP (NP (NN 东北)
+				     (NN 建设))
+				 (LC 中)))
+		    (PU ，)
+		    (NP-SBJ (NN 现代化)
+			    (NN 意识))
+		    (VP (ADVP (AD 较))
+			(VP (VA 强))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 大胆))
+			(VP (VV 开创))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  大胆 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="source for the thing opened up"/>
+      <role argnum="2" argrole="thing opened up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DP (DT 该))
+			(NP (NN 剧)))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (QP (CD 一)
+					(CLP (M 个)))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (ADVP (AD 较为))
+						    (VP (VA 常见))))
+					    (DEC 的)))
+				    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 悲欢离合)))
+					    (DEC 的))
+				    (NP (NN 题材)))
+			    (PU ，)
+			    (VP (VP (VRD (VV 开创)
+					 (VV 出))
+				    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VA 全新)))
+						    (DEC 的)))
+					    (NP (NN 艺术)
+						(NN 情境))))
+				(PU ，)
+				(VP (VV 显示)
+				    (AS 了)
+				    (NP-OBJ (DNP (NP (NN 悲剧))
+						 (DEG 的))
+					    (NP (NN 艺术)
+						(NN 魅力)))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  该 剧 	  
+	  </arg>
+	  <arg n="1">
+	  一 个 *OP* *T*-1 较为 常见 的 *PRO* 悲欢离合 的 题材 	  
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 全新 的 艺术 情境 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

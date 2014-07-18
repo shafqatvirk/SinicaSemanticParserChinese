@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 下载 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 downloads"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (NP (NN 中文))
+				(NP (NN 搜寻)
+				    (NN 引擎)))
+			    (NP (NN 业者)))
+		    (NP-PN (PU 「)
+			   (NN 蕃薯)
+			   (NN 藤)
+			   (PU 」)))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NP (PU 「)
+				     (ADJP (JJ 小))
+				     (NP (NN 蕃薯))
+				     (PU 」))
+				 (NP (NN 网站)))
+			     (LC 里)))
+		(PU ，)
+		(QP-ADV (CD 一)
+			(CLP (M 步步)))
+		(VP (VV 教导)
+		    (NP-OBJ (NN 父母))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 下载)
+				(NP-OBJ (NN 过滤)
+					(NN 软体)))
+			    (PU ，)
+			    (VP (MSP 以)
+				(VP (VV 阻挡)
+				    (NP-OBJ (ADJP (JJ 不良))
+					    (NP (NN 资讯)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	过滤 软体 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

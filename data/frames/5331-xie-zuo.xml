@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 写作 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="writer"/>
+    <role argnum="1" argrole="thing arg0 writes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-PRP (P 为了)
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 排遣)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 写作)
+						(NP-OBJ (NN 博士)
+							(NN 论文))))
+					(DEC 的))
+				(ADJP (JJ 巨大))
+				(NP (NN 压力)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	博士 论文 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 回到)
+			(NP-PN-OBJ (NR 埔里))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 邓相扬))
+	    (VP (ADVP (AD 还是))
+		(ADVP (AD 无法))
+		(ADVP (AD 专心))
+		(VP (VV 写作)))) 
+	</parse>
+	<arg n="0">
+	邓相扬 
+	</arg>
+	<arg n="m" f="adv">
+	专心 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<arg n="m" f="adv">
+	还是 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 回到 埔里 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 残害 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent, entity causing harm"/>
+    <role argnum="1" argrole="theme, victim"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DNP (NP (NN 革命))
+                   (DEG 的))
+              (NP (NN 力量)))
+      (PU ，)
+      (VP (VP (VP (VV 壮大)
+                  (AS 了))
+              (VP (ADVP (AD 又))
+                  (VP (SB 被)
+                      (VP (VV 残害)))))
+          (PU ，)
+          (VP (VP (VV 残害)
+                  (AS 了))
+              (VP (ADVP (AD 又))
+                  (ADVP (AD 重新))
+                  (VP (VV 壮大)))))
+      (PU 。)))
+	</parse>
+	<arg n="1"> 革命 的 力量 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

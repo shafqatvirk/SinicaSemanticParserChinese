@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity put into operation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 亚洲))
+		      (ADJP (JJ 最大))
+		      (NP (ADJP (JJ 无氟))
+			  (NP (NN 制冷剂)))
+		      (NP (NN 生产厂)))
+	      (VP (PP-LOC (P 在)
+			  (NP-PN (NR 天津)))
+		  (VP (VV 投产)))) 
+	  </parse>
+	  <arg n="1">
+	  亚洲 最大 无氟 制冷剂 生产厂 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 天津 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (DP-TMP (DT 全)
+			  (CLP (M 年)))
+		  (VP (VV 可)
+		      (VP (VP (VV 完成)
+			      (NP-OBJ (NP (NN 化工))
+				      (ADJP (JJ 固定))
+				      (NP (NN 资产)
+					  (NN 投资)))
+			      (QP-EXT (CD 三百一十八亿)
+				      (CLP (M 元))))
+			  (PU ，)
+			  (VP (VCD (VV 建成)
+				   (VV 投产))
+			      (NP-OBJ (ADJP (JJ 大中型))
+				      (NP (NN 化工)
+					  (NN 项目)))
+			      (QP-EXT (CD 十五)
+				      (CLP (M 个)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  大中型 化工 项目 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  十五 个 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  全 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伸张 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 promotes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 更))
+				      (VP (VA 重要))))
+			      (DEC 的))))
+	      (PU ，)
+	      (VP (VC 是)
+		  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 迎向)
+				  (NP-OBJ (NT 未来)))
+			      (PU 、)
+			      (VP (VV 伸张)
+				  (NP-OBJ (NN 人权))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  人权 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

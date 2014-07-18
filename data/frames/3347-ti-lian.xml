@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提炼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing extracted and purified"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 中国))
+			 (PU 、)
+			 (NP-PN (NR 伊朗))
+			 (CC 和)
+			 (NP (QP (OD 第三))
+			     (NP (NN 国))))
+	      (VP (VP (ADVP (AD 还))
+		      (ADVP (AD 将))
+		      (ADVP (AD 联合))
+		      (VP (VV 投资)))
+		  (PU ，)
+		  (VP (VV 改造)
+		      (NP-OBJ (DNP (NP-PN (NR 中国))
+				   (DEG 的))
+			      (NP (NN 炼油厂)
+				  (NN 设备))))
+		  (PU ，)
+		  (VP (VV 扩大)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 提炼)
+					      (NP-OBJ (NP-PN (NR 伊朗))
+						      (NP (NN 石油)))))
+				      (DEC 的))
+			      (NP (NN 能力)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  伊朗 石油 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 道听途说 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 overhears from other people"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-1 (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 认识)
+				     (NP-PN-OBJ (NR 邓相扬))))
+			     (LC 之前))
+		    (PU ，)
+		    (NP-SBJ (PN 我))
+		    (VP (VP (PP-DIR (P 对)
+				    (NP (DNP (NP (PN 我们))
+					     (DEG 的))
+					(NP (NN 族群))))
+			    (VP (VV 印象模糊)))
+			(PU ，)
+			(VP (PP-DIR (P 对)
+				    (NP (NP-PN (NR 雾社))
+					(NP (NN 事件))))
+			    (ADVP (AD 也))
+			    (ADVP (AD 只))
+			    (VP (VC 是)
+				(NP-PRD (IP-APP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 道听途说)))
+					(NP (NN 阶段))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 变更 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="causer"/>
+    <role argnum="1" argrole="entity undergoing change"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-CND (NP-SBJ (-NONE- *PRO*))
+          (VP (ADVP (CS 若))
+              (VP (VV 变更)
+                  (NP-OBJ (NN 国籍))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> 国籍 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

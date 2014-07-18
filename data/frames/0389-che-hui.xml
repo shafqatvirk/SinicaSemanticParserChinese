@@ -1,0 +1,122 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-SBJ (NN 此间)
+			      (NN 新闻)
+			      (NN 媒介))
+		      (VP (VV 报道))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 俄罗斯))
+		      (NP (NN 西北)
+			  (NN 军队)
+			  (NN 集群)
+			  (NN 司令部)
+			  (NN 机构)
+			  (NN 人员)))
+	      (VP (ADVP (AD 随后))
+		  (VP (VP (VV 乘)
+			  (NP-OBJ (NN 飞机)))
+		      (VP (PP-DIR (P 从)
+				  (NP-PN (NR 里加)))
+			  (VP (VV 撤回)
+			      (NP-PN-OBJ (NR 莫斯科))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  俄罗斯 西北 军队 集群 司令部 机构 人员 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  随后 	  
+	  </arg>
+	  <arg n="2">
+	  从 里加 	  
+	  </arg>
+	  <V/>
+	  <arg n="3">
+	  莫斯科 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-TPC (NR 俄))
+				  (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 驻)
+				      (NP-PN-OBJ (NR 立陶宛))))
+			      (DEC 的)))
+		      (NP (NN 军队)))
+	      (VP (ADVP (AD 早))
+		  (PP-TMP (P 在)
+			  (LCP (QP (CD 一)
+				   (CLP (M 年)))
+			       (LC 前)))
+		  (VP (VV 撤回)
+		      (AS 了)
+		      (NP-PN-OBJ (NR 俄罗斯))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 俄 *T*-1 驻 立陶宛 的 军队 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  早 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  在 一 年 前 	  
+	  </arg>
+	  <V/>
+	  <arg n="3">
+	  俄罗斯 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-DIR (P 从)
+					  (NP (NP-PN (NR 波罗的海))
+					      (QP (CD 三))
+					      (NP (NN 国))))
+				  (VP (VV 撤回))))
+			  (DEC 的)))
+		  (NP-PN (NR 俄罗斯))
+		  (NP (NN 军队))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  从 波罗的海 三 国 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

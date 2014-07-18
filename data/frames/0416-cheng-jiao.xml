@@ -1,0 +1,152 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 成交 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="event"/>
+      <role argnum="1" argrole="commodity,agreement"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-4))
+				  (VP (LCP-TMP (NP (NT 去年))
+					       (LC 初))
+				      (NP-LOC (NP-PN (NR 浦东))
+					      (NP (NN 新区)))
+				      (VP (VV 诞生))))
+			      (DEC 的)))
+		      (NP-PN (NR 中国))
+		      (QP (OD 第一)
+			  (CLP (M 家)))
+		      (NP (NN 医疗)
+			  (NN 机构)
+			  (NN 药品)
+			  (NN 采购)
+			  (NN 服务)
+			  (NN 中心)))
+	      (PU ，)
+	      (VP (PP (ADVP (AD 正))
+		      (PP (P 因为)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VP (ADVP (AD 一))
+				      (VP (VV 开始)))
+				  (VP (ADVP (AD 就))
+				      (ADVP (AD 比较))
+				      (VP (VA 规范)))))))
+		  (PU ，)
+		  (IP-ADV (IP-SBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 运转)))
+			  (VP (VV 至今)))
+		  (PU ，)
+		  (VP (VP (VV 成交)
+			  (NP-OBJ (NN 药品))
+			  (QP-EXT (CD 一亿多)
+				  (CLP (M 元))))
+		      (PU ，)
+		      (VP (VV 没有)
+			  (VP (VV 发现)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 例)))
+				      (NP (NN 回扣)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-4 去年 初 浦东 新区 诞生 的 中国 第一 家 医疗 机构 药品 采购 服务 中心 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  药品 	  	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一亿多 元 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (NP-TMP (NT 今年))
+				      (VP (VV 举办))))
+			      (DEC 的)))
+		      (QP (OD 第五)
+			  (CLP (M 届)))
+		      (NP-PN (NN 昆交会)))
+	      (VP (VP (VV 接待)
+		      (AS 了)
+		      (NP-OBJ (NP (QP (CD 五十六)
+				      (CLP (M 个)))
+				  (NP (NN 国家)
+				      (CC 和)
+				      (NN 地区)))
+			      (QP (CD 八千七百余)
+				  (CLP (M 名)))
+			      (NP (NN 宾客))))
+		  (PU ，)
+		  (VP (VV 成交)
+		      (QP-OBJ (ADVP (AD 近))
+			      (QP (CD 十六亿)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 今年 举办 的 第五 届 昆交会 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  近 十六亿 美元 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 出口))
+	      (VP (VV 成交)
+		  (QP-EXT (CD 八千多万)
+			  (CLP (M 美元))))) 
+	  </parse>
+	  <arg n="1">
+	  出口 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1" f="QTY">
+	  八千多万 美元 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q-OBJ (NP-SBJ (QP-WH (CD 多少))
+			    (NP (NN 合作案)))
+		    (VP (VV 成交))) 
+	  </parse>
+	  <arg n="1">
+	  多少 合作案 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 化缘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 collects through soliciting donation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC-2 (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 四处))
+				      (VP (VRD (VV 化缘)
+					       (VV 来))
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 东西)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(PP-DIR (P 往)
+			(LCP (NP (LCP (NP (NN 背))
+				      (LC 後))
+				 (NP (NN 布袋)))
+			     (LC 里)))
+		(VP (VV 装)
+		    (NP-OBJ (-NONE- *T*-2))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="loc">
+	四处 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 恨铁不成钢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="person who disappoints arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 痛打)
+			  (NP-OBJ (NN 小孩))))
+	      (PU ，)
+	      (VP (PRN (IP (ADVP (AD 不管是))
+			   (IP-PRD (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 恨铁不成钢)))
+				   (PU ，)
+				   (CC 或)
+				   (IP (NP-SBJ (NN 後母))
+				       (VP (VCD (VV 苦毒)
+						(VV 虐待)))))))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (NP-LOC (NN 连续剧))
+					      (ADVP (AD 经常))
+					      (VP (VV 出现))))
+				      (DEC 的)))
+			      (NP (NN 剧情)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不管是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

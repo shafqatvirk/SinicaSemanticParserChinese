@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采认 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing recognized"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-PN (NR 台湾))
+              (NP (NN 当局)))
+      (VP (VV 应)
+          (VP (VP (ADVP (AD 尽快))
+                  (VP (VV 开放)
+                      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                              (VP (VV 采认)
+                                  (NP-OBJ (NP (NN 祖国)
+                                              (NN 大陆))
+                                          (NP (NN 学历)))))))
+              (PU ，)
+              (VP (VV 维护)
+                  (NP-OBJ (DNP (NP (ADJP (JJ 广大))
+                                   (NP (NN 学子)))
+                               (DEG 的))
+                          (NP (NN 利益))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> 祖国 大陆 学历 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

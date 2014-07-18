@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 频传 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing people hear frequently"/>
+    <role argnum="1" argrole="area arg0 is circulating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (NP (NN 网路))
+		    (ADJP (JJ 不法))
+		    (NP (NN 行径)))
+	    (VP (VV 频传))) 
+	</parse>
+	<arg n="0">
+	网路 不法 行径 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (ADJP (JJ 日据))
+		    (NP (NN 时期) ))
+	    (PU ，)
+	    (PP-PRP (P 由於)
+		    (IP (NP-SBJ (-NONE- *pro*))
+			(VP (VV 频传)
+			    (NP-OBJ (IP-APP (NP-SBJ (ADJP (JJ 毒))
+						    (NP (NN 蛇) ))
+					    (VP (VV 伤)
+						(NP-OBJ (NN 人))))
+				    (NP (NN 事件))))))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP (DNP (NP (NT 当时) )
+				     (DEG 的))
+				(NP-PN (NR 帝大) )
+				(NP (NN 医学部)))
+			    (NP (NN 教授)))
+		    (NP-PN (NR 杜聪明) ))
+	    (VP (VV 提倡)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 研究)
+			    (NP-OBJ (NN 蛇)
+				    (NN 毒) ))))) 
+	</parse>
+	<arg n="0">
+	毒 蛇 伤 人 事件 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

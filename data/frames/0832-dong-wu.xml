@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 动武 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party starting war"/>
+      <role argnum="1" argrole="starting war with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美国))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 对)
+				      (NP-PN (NR 伊)))
+			      (VP (VV 动武))))
+		  (ADVP (AD 早))
+		  (VP (VE 有)
+		      (NP-OBJ (NN 打算))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  对 伊 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-PN-SBJ (NR 美国))
+		  (VP (ADVP (AD 悍然))
+		      (VP (VV 动武))))
+	  </parse>
+	  <arg n="0">
+	  美国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  悍然 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

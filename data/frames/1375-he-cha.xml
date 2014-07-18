@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 核查 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="investigator"/>
+      <role argnum="1" argrole="investigated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NN 联系)
+			  (NN 电话)
+			  (PU 、)
+			  (NN 联系)
+			  (NN 地址))
+		  (VP (VE 有)
+		      (NP-OBJ (NN 误))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 无法))
+		      (VP (VV 核查))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (NN 问题))
+		       (VP (VP (VRD (VV 核查)
+				    (VA 清楚)))
+			   (CC 并)
+			   (VP (PP-MNR (P 按)
+				       (NP (NN 规定)))
+			       (VP (VRD (VV 整改)
+					(VV 完成))))))
+		   (LC 之后))
+	  </parse>
+	  <arg n="1">
+	  问题 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

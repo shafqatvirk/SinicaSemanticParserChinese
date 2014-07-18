@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 求学 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (NP (NP-APP (DNP (NP-PN (NR 中国))
+				       (DEG 的))
+				  (ADJP (JJ 最高))
+				  (NP (NN 学府)))
+			  (NP-PN (NR 北京)
+				 (NN 大学))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VSB (VV 前来)
+					   (VV 求学))))
+			      (DEC 的)))
+		      (NP-PN (NR 台湾))
+		      (NP (NN 学生)))
+	      (VP (PP-MNR (P 以)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 攻读)
+					      (NP-OBJ (NP (NN 硕士)
+							  (CC 和)
+							  (NN 博士))
+						      (NP (NN 学位)))))
+				      (DEC 的)))))
+		  (VP (VV 居多)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

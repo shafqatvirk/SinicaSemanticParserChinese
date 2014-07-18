@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 讲好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="thing arg0 agrees on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 讲好)
+		  (IP-OBJ (NP-SBJ (DP (DT 每))
+				  (NP (NN 人)))
+			  (VP (NP-TMP (DP (DT 每))
+				      (NP (NN 月)))
+			      (VP (VV 给)
+				  (NP-IO (PN 她))
+				  (QP-OBJ (NP-APP (NN 生活费))
+					  (QP (CD 二千)
+					      (CLP (M 元))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  每 人 每 月 给 她 生活费 二千 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

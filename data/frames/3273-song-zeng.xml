@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 送赠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="gift"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 香港))
+			 (ADJP (JJ 特别))
+			 (NP (NN 行政区)))
+	      (VP (NP-TMP (NT 今日)
+			  (PRN (PU （)
+			       (NP (NT 星期二))
+			       (PU ）)))
+		  (VP (VV 获)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 中华)
+					     (NN 人民)
+					     (NN 共和国))
+				      (NP (NN 中央)
+					  (NN 人民)
+					  (NN 政府)))
+			      (VP (VV 送赠)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 份)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VA 金碧辉煌)))
+						  (DEC 的)))
+					  (NP (NN 礼物))
+					  (PRN (PU －－)
+					       (NP (NP-TTL (PU 「)
+							   (CP (WHNP-2 (-NONE- *OP*))
+							       (CP (IP (NP-SBJ (-NONE- *T*-2))
+								       (VP (ADVP (AD 永远))
+									   (VP (VV 盛开))))
+								   (DEC 的)))
+							   (NP (NN 紫荆花))
+							   (PU 」))
+						   (NP (NN 雕塑)))
+					       (PU －－)))
+				  (PP (P 作为)
+				      (NP (DNP (NP (NN 回归))
+					       (DEG 的))
+					  (NP (NN 贺礼))))))))) 
+	  </parse>
+	  <arg n="0">
+	  中华 人民 共和国 中央 人民 政府 	  	  
+	  </arg>
+	  <arg n="1">
+	  一 份 *OP* *T*-1 金碧辉煌 的 礼物 －－ 「 *OP* *T*-2 永远 盛开 的 紫荆花 」 雕塑 －－ 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  作为 回归 的 贺礼 	  	  
+	  </arg>
+	  <arg n="2">
+	  香港 特别 行政区 
+	  </arg>
+	  <arg n="M" f="tmp">
+	  今日 （ 星期二 ） 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

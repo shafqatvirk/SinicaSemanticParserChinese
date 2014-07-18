@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受聘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity hired"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不过))
+	      (PU ，)
+	      (NP-SBJ (NP (CP (WHNP-4 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 分判)
+					      (NN 承建商))
+				      (VP (MSP 所)
+					  (VP (VV 完成)
+					      (NP-OBJ (-NONE- *T*-4)))))
+				  (DEC 的)))
+			  (NP (NN 工程)))
+		      (NP (NN 总值)))
+	      (VP (VV 应)
+		  (VP (ADVP (AD 已))
+		      (VP (VV 包括)
+			  (PP-LOC (P 在)
+				  (LCP (NP (NP (CP (WHNP-6 (-NONE- *OP*))
+						   (CP (IP (NP-SBJ (CP (WHNP-5 (-NONE- *OP*))
+								       (CP (IP (NP-SBJ (PN 其))
+									       (VP (VV 受聘)
+										   (NP-OBJ (-NONE- *T*-5))))
+									   (DEC 的)))
+								   (ADJP (JJ 主要))
+								   (NP (NN 承建商)))
+							   (VP (MSP 所)
+							       (VP (VV 完成)
+								   (NP-OBJ (-NONE- *T*-6)))))
+						       (DEC 的)))
+					       (NP (NN 工程)))
+					   (NP (NN 总值)))
+				       (LC 之内))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-5 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity hired"/>
+      <role argnum="1" argrole="position arg0 is hired to be"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NN 晚年))
+	      (NP-PN-SBJ (NR 许常惠))
+	      (VP (VP (VRD (VV 受聘)
+			   (VV 为))
+		      (NP-OBJ (NN 总统府)
+			      (NN 国策)
+			      (NN 顾问)))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 担任)
+		      (NP-OBJ (NP-PN (NN 国家)
+				     (NN 文化)
+				     (NN 艺术)
+				     (NN 基金会))
+			      (NP (NN 董事长)))))) 
+	  </parse>
+	  <arg n="0">
+	  许常惠	  
+	  </arg>
+	  <arg n="1">
+	  总统府 国策 顾问	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

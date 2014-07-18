@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 躺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 lies"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 孩子))
+	    (VP (VV 躺)
+		(PP-LOC (P 在)
+			(LCP (NP (DNP (NP (NN 母亲))
+				      (DEG 的))
+				 (NP (NN 臂弯)))
+			     (LC 里))))) 
+	</parse>
+	<arg n="0">
+	孩子 
+	</arg>
+	<arg n="1">
+	在 母亲 的 臂弯 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 大家))
+	    (VP (VP (VRD (VV 躺)
+			 (VV 下来)))
+		(PU ，)
+		(VP (VV 想像)
+		    (IP-OBJ (NP-SBJ (PN 自己))
+			    (VP (VC 是)
+				(NP-PRD (ADVP (AD 刚刚))
+					(DP (DT 那)
+					    (CLP (M 团)))
+					(CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (SB 被)
+							(VP (VV 揉成)
+							    (NP-OBJ (QP (CD 一))
+								    (NP (NN 球))))))
+						(DEC 的)))
+					(NP (NN 报纸)))))))) 
+	</parse>
+	<arg n="0">
+	大家 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

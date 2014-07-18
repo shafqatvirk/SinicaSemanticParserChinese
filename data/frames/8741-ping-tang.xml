@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 平躺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person lying flat"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 超音波)
+		      (NN 检查))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 通常))
+		  (VP (VV 得)
+		      (VP (VP (VV 平躺))
+			  (PU 、)
+			  (VP (PP-LOC (P 在)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 受检))))
+					  (NP (NN 部位))))
+			      (VP (VV 涂抹)
+				  (NP-OBJ (NN 乳胶)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  通常 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  超音波 检查 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

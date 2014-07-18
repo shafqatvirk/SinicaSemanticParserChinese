@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 附 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 attached arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP-PN (NR 明朝)
+			    (NR 万历))
+		     (LC 年间))
+	    (NP-PN-SBJ (NR 周履靖))
+	    (VP (VP (ADVP (AD 重))
+		    (VP (VV 刻)
+			(NP-TTL-OBJ (PU 《)
+				    (NN 丸经)
+				    (PU 》))))
+		(PU ，)
+		(VP (VV 附)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 篇)))
+			    (NP (NN 跋)))
+		    (PP-LOC (P 於)
+			    (LCP (NP (NN 卷))
+				 (LC 後))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 提到)
+			(IP-OBJ (IP (NP-SBJ (PN 予))
+				    (VP (VV 壮游)
+					(LCP-OBJ (NP (NN 都邑))
+						 (LC 间))))
+				(PU ，)
+				(IP (NP-SBJ (NN 好事者))
+				    (VP (ADVP (AD 多))
+					(VP (VV 好)
+					    (NP-OBJ (NN 捶丸)))))))))) 
+	</parse>
+	<arg n="0">
+	周履靖 
+	</arg>
+	<arg n="1">
+	一 篇 跋 
+	</arg>
+	<arg n="2">
+	於 卷 後 
+	</arg>
+	<arg n="m" f="tmp">
+	明朝 万历 年间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

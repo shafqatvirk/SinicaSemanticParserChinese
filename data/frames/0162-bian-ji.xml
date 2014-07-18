@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 编辑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="editor"/>
+    <role argnum="1" argrole="publication"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TTL-SBJ-1 (PU 《)
+                    (IP-APP (NP-SBJ (-NONE- *PRO*))
+                            (VP (VV 迎接)
+                                (NP-PN-OBJ (NR 澳门))
+                                (IP (NP-SBJ (-NONE- *PRO*))
+                                    (VP (VV 回归)
+                                        (NP-OBJ (NN 祖国))))))
+                    (NP (NN 图片集))
+                    (PU 》))
+      (VP (PP-LGS (P 由)
+                  (NP-PN (NR 中国)
+                         (NN 革命)
+                         (NN 博物馆)))
+          (VP (VV 编辑)
+              (NP-TTL-OBJ (-NONE- *-1))))))
+	</parse>
+	<arg n="0"> 由 中国革命博物馆 </arg>
+	<V/>
+	<arg n="1"> (*-1)->(《*PRO*迎接澳门*PRO*回归祖国图片集》) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

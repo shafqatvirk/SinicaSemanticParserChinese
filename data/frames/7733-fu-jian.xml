@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 覆检 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 re-exams"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (LCP-TMP (QP (CD 七)
+			     (CLP (M 年)))
+			 (LC 前))
+		(PU ，)
+		(PP-PRP (P 由於)
+			(IP (NP-PN-SBJ (NR 谢从宾))
+			    (VP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (VV 到)
+						(NP-OBJ (NN 女儿)
+							(NN 学校)))
+					    (VP (VV 做)
+						(NP-OBJ (NN 筛检)))))
+				(PU ，)
+				(VP (VV 发现)
+				    (IP-OBJ (NP-TPC (DNP (NP (NP (PN 她))
+							     (ADJP (JJ 大))
+							     (NP (NN 女儿)))
+							 (DEG 的))
+						    (NP (NN 肾脏)))
+					    (IP (IP (QP-SBJ (CD 一))
+						    (VP (VA 大)))
+						(IP (QP-SBJ (CD 一))
+						    (VP (VA 小)))))))))
+		(PU ，)
+		(NP-SBJ (NN 学校))
+		(VP (VV 通知)
+		    (NP-OBJ (PN 她))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 带)
+			    (NP-OBJ (NN 孩子))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 去)
+					(NP-OBJ (NN 医院)))
+				    (VP (VV 覆检)))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

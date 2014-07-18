@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 充斥 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (PP (P 有关)
+			       (NP (NN 酒)))
+			   (DEG 的))
+		      (NP (NN 广告)
+			  (NN 宣传)))
+	      (VP (VV 充斥)
+		  (NP-OBJ (NN 广播)
+			  (NN 电视)
+			  (CC 和)
+			  (NN 报刊)))) 
+	  </parse>
+	  <arg n="0">
+	  有关 酒 的 广告 宣传 
+	  </arg>
+	  <arg n="1">
+	  广播 电视 和 报刊 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

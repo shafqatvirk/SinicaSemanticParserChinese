@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缔结 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="one party"/>
+      <role argnum="1" argrole="agreement, relation"/>
+      <role argnum="2" argrole="another party"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (ADVP (AD 已))
+		      (VP (VV 缔结)
+			  (NP-OBJ (QP (CD 八百余)
+				      (CLP (M 对)))
+				  (NP (NN 中外))
+				  (ADJP (JJ 友好))
+				  (NP (NN 城市)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  八百余 对 中外 友好 城市 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-SBJ (NP-PN (NR 日)
+					     (NR 中))
+				      (NP (NN 和平))
+				      (ADJP (JJ 友好))
+				      (NP (NN 条约)))
+			      (VP (VV 缔结)
+				  (NP-EXT (QP (OD ２０))
+					  (NP (NN 周年)))))
+			  (DEC 的)))
+		  (NP (NT １９９８年)))
+	  </parse>
+	  <arg n="1">
+	  日 中 和平 友好 条约 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="ext">
+	  ２０ 周年 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

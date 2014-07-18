@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 往返 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity traveling"/>
+      <role argnum="1" argrole="location going to or returning from"/>
+      <role argnum="2" argrole="starting point of travel"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP (NP (CP (WHPP-2 (-NONE- *OP*))
+		       (IP (NP-SBJ (-NONE- *pro*))
+			   (VP (PP-MNR (-NONE- *T*-2))
+			       (VP (VV 往返)
+				   (NP-OBJ (NN 工作)
+					   (NN 地点))))))
+		   (NP (NN 途)))
+	       (LC 中)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  工作 地点 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 铁路)
+		      (NN 部门))
+	      (VP (VV 开通)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (PP-DIR (P 从)
+						  (NP-PN (NR 上海)))
+					  (VP (VV 往返)
+					      (NP-OBJ (NP-PN-APP (NR 苏州)
+								 (PU 、)
+								 (NR 无锡)
+								 (PU 、)
+								 (NR 南京)
+								 (PU 、)
+								 (NR 杭州)
+								 (PU 、)
+								 (NR 南昌)
+								 (CC 和)
+								 (NR 黄山)
+								 (ETC 等))
+						      (NP (NN 城市))))))
+				  (DEC 的)))
+			  (NP (NN 旅游)
+			      (NN 专列))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  苏州 、 无锡 、 南京 、 杭州 、 南昌 和 黄山 等 城市 
+	  </arg>
+	  <arg n="2">
+	  从 上海 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP-APP (IP (NP-PN-SBJ (NR 厦航))
+			      (VP (PP-MNR (P 以)
+					  (NP (NP (PN 自己))
+					      (NP (NN 代码))))
+				  (VP (VV 经营)
+				      (NP-OBJ (NP (IP-APP (NP-PN-OBJ (NR 晋江))
+							  (VP (VV 往返)
+							      (NP-PN-OBJ (NR 香港))))
+						  (ADJP (JJ 临时))
+						  (NP (NN 包机)))
+					      (NP (NN 航线))))))
+			  (DEC 的))
+		  (NP (NN 历史))) 
+	  </parse>
+	  <arg n="2">
+	  晋江 
+	  </arg>
+	  <arg n="1">
+	  香港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="follower"/>
+      <role argnum="1" argrole="thing followed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 韩国))
+	      (VP (ADVP (AD 就))
+		  (VP (VPT (VV 跟)
+			   (AD 不)
+			   (VV 上))
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

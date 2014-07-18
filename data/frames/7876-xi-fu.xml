@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吸附 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 attracts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 至於)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 最))
+					(VP (VV 怕)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (PP-PRP (P 因)
+								(NP (NN 衣著)
+								    (NN 静电)))
+							(VP (MSP 而)
+							    (VP (VV 吸附)
+								(NP-OBJ (NN 尘埃)))))))))
+				(DEC 的)))
+			(NP (NN 晶圆厂)
+			    (NN 无尘室))))
+	    (PU ，)
+	    (NP-TPC (NP (DNP (NP (NN 工作)
+				 (NN 人员))
+			     (DEG 的))
+			(NP (NN 衣帽)
+			    (NN 鞋袜)))
+		    (PU 、)
+		    (NP (NN 推车)
+			(NN 皮带))
+		    (PU 、)
+		    (NP (NN 工厂)
+			(NN 装潢))
+		    (ETC 等))
+	    (PU ，)
+	    (NP-SBJ (PN 处处))
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (DNP (NP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+						 (VP (VV 抗)
+						     (NP-OBJ (NN 静电))))
+					 (NP (NN 织物)))
+				     (NP (NN 应用)))
+				 (DEG 的))
+			    (NP (NN 天下)))))) 
+	</parse>
+	<arg n="0">
+	因 衣著 静电 
+	</arg>
+	<arg n="1">
+	尘埃 
+	</arg>
+	<arg n="m" f="prp">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

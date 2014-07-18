@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 浪迹 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 wanders"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 看到)
+		(NP-OBJ (NP (NN 周围))
+			(QP (CD 许多))
+			(NP (NN 人)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-PRP (P 因为)
+				(IP (IP (NP-SBJ (NN 父母))
+					(VP (VV 去世)))
+				    (PU 、)
+				    (IP (NP-SBJ (NN 农地))
+					(VP (VV 卖)
+					    (AS 了)))
+				    (PU 、)
+				    (IP (NP-SBJ (NN 老厝))
+					(VP (VV 荒废)
+					    (AS 了)))))
+			(PU ，)
+			(ADVP (AD 从此))
+			(ADVP (AD 只))
+			(VP (VV 能)
+			    (VP (VV 浪迹)
+				(NP-PN-OBJ (NR 台北)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台北 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	从此 
+	</arg>
+	<arg n="m" f="prp">
+	因为 父母 去世 、 农地 卖 了 、 老厝 荒废 了 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

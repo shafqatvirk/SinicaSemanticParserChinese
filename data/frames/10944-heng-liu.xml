@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 横流 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing flowing with no check"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-TPC (-NONE- *T*-2))
+			(ADVP (AD 不时))
+			(NP-SBJ (NN 水患)
+				(PU 、)
+				(NN 土石))
+			(VP (VV 横流)))
+		    (DEC 的)))
+	    (NP (NT 今天))) 
+	</parse>
+	<arg n="0">
+	水患 、 土石 
+	</arg>
+	<arg n="m" f="adv">
+	不时 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

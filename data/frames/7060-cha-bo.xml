@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 插播 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="broadcaster"/>
+    <role argnum="1" argrole="thing arg0 broadcasts"/>
+    <role argnum="2" argrole="thing in the middle of which arg1 is broadcasted"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 只))
+		(VP (VV 听)
+		    (QP-OBJ (CP (WHNP-114 (-NONE- *OP*))
+				(CP (IP (LCP-SBJ (NP (NP-PN (NR 警广))
+						     (NP (NN 路况)
+							 (NN 报导)))
+						 (LC 中))
+					(VP (VV 插播)
+					    (NP-OBJ (-NONE- *T*-114))))
+				    (DEC 的)))
+			    (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 寻找)
+					(NP-OBJ (NN 失物))))
+			    (QP (CD 一)
+				(CLP (M 节))))))) 
+	</parse>
+	<arg n="1">
+	*T*-114 
+	</arg>
+	<arg n="2">
+	警广 路况 报导 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

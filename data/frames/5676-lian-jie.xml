@@ -1,0 +1,146 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 连结 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 connects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 知识)
+		    (NN 细胞))
+	    (VP (VP (VV 置身)
+		    (NP-OBJ (NN 其中)))
+		(PU ，)
+		(VP (VV 会)
+		    (VP (VP (ADVP (AD 自动))
+			    (VP (VV 分裂)))
+			(PU 、)
+			(VP (VV 连结))
+			(PU 、)
+			(VP (VV 衍生))
+			(PU 、)
+			(VP (ADVP (AD 无限))
+			    (VP (VV 复制))))))) 
+	</parse>
+	<arg n="1">
+	知识 细胞 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TMP (-NONE- *T*-1))
+				(NP-SBJ (NN 城)
+					(CC 和)
+					(NN 市))
+				(VP (ADVP (AD 首先))
+				    (VP (VP (VRD (VV 连结)
+						 (VV 起来)))
+					(VP (VV 使用)))))
+			    (DEC 的))))
+	    (VP (ADVP (AD 也))
+		(VP (VC 是)
+		    (NP-PN-PRD (NR 北宋))))) 
+	</parse>
+	<arg n="1">
+	城 和 市 
+	</arg>
+	<arg n="m" f="adv">
+	首先 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 connects"/>
+    <role argnum="2" argrole="entity arg1 forms after being connected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP (PP-DIR (P 由)
+				    (NP (DP (DP (DT 这))
+					    (QP (CD 一)
+						(CLP (M 片))))
+					(CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (VV 残存)))
+						(DEC 的)))
+					(ADJP (JJ 蛮荒))
+					(NP (NN 桧木)
+					    (NN 原始林))))
+			    (PP-DIR (P 往)
+				    (NP (NN 北))))
+			(VP (VV 延伸)
+			    (PU ，)
+			    (PP-DIR (P 到)
+				    (NP-PN (NR 桃园)
+					   (NR 拉拉山)
+					   (CC 与)
+					   (NR 宜兰)
+					   (NR 栖兰))))))
+	    (PU ，)
+	    (NP-SBJ (NN 桧木))
+	    (VP (VP (VRD (VV 连结)
+			 (VV 成))
+		    (NP-OBJ (ADJP (JJ 绿色))
+			    (NP (NR 长城))))
+		(PU ，)
+		(VP (VC 是)
+		    (NP-PRD (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (NP-PN (NP (NN 北))
+								(NP-PN (NR 台湾)))
+							 (QP (CD 百万))
+							 (NP (NN 人)))
+						 (VP (VV 赖)
+						     (NP-OBJ (-NONE- *T*-1))
+						     (IP (NP-SBJ (-NONE- *PRO*))
+							 (VP (MSP 以)
+							     (VP (VV 维生))))))
+					     (DEC 的)))
+				     (NP-PN (NR 石门)
+					    (NN 水库)
+					    (PU 、)
+					    (NR 淡水河)
+					    (PU 、)
+					    (NR 兰阳溪)))
+				 (DEG 的))
+			    (NP (NN 安全)
+				(NN 阀)))))) 
+	</parse>
+	<arg n="1">
+	桧木 
+	</arg>
+	<arg n="2">
+	绿色 长城 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 由 这 一 片 *OP* *T*-2 残存 的 蛮荒 桧木 原始林 往 北 延伸 ， 到 桃园 拉拉山 与 宜兰 栖兰 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 以物易物 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NN 汉人))
+		(VP (VP (VP (VV 渡)
+			    (NP-OBJ (NN 海)))
+			(VP (VV 来)
+			    (NP-PN-OBJ (NR 淡水))))
+		    (PU ，)
+		    (VP (PP (P 与)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP (-NONE- *T*-1))
+					    (VP (VV 住)
+						(PP (P 在)
+						    (NP (NN 附近)))))
+					(DEC 的)))
+				(NP (NN 平埔族))
+				(PRN (PU ——)
+				     (NP (NN 凯达格兰族)))))
+			(VP (VP (VV 以物易物))
+			    (VP (VV 换取)
+				(NP-OBJ (NN 商品))))))) 
+	</parse>
+	<arg n="0">
+	汉人 
+	</arg>
+	<arg n="0" f="crd">
+	与 *OP* *T*-1 住 在 附近 的 平埔族 —— 凯达格兰族 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

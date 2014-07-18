@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收盘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing ended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 巴黎)
+				 (NR ＣＡＣ))
+			  (QP (CD ４０)
+			      (CLP (M 种)))
+			  (NP (NN 蓝筹股)))
+		      (ADJP (JJ 平均))
+		      (NP (NN 价格)
+			  (NN 指数)))
+	      (VP (VP (PP (P 比)
+			  (NP (DP (DT 前)
+				  (QP (CD 一)))
+			      (NP (NN 交易日))))
+		      (ADVP (AD 仅))
+		      (ADVP (AD 微))
+		      (VP (VV 升)
+			  (AS 了)
+			  (QP-OBJ (CD ０．６８)
+				  (CLP (M 点)))))
+		  (PU ，)
+		  (VP (PP-MNR (P 以)
+			      (QP (CD ３８７３．１０)
+				  (CLP (M 点))))
+		      (VP (VV 收盘))))) 
+	  </parse>
+	  <arg n="0">
+	  巴黎 ＣＡＣ ４０ 种 蓝筹股 平均 价格 指数 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 ３８７３．１０ 点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

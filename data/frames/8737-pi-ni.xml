@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 睥睨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 looks haughtiky at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (CC 既)
+		  (VP (VV 眷恋)
+		      (NP-OBJ (NP (DNP (NP (NN 朝日))
+				       (DEG 的))
+				  (NP (NN 清纯)
+				      (NN 无忧)))
+			      (PU 、)
+			      (NP (DNP (NP (NN 日中))
+				       (DEG 的))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 睥睨)
+					  (DP-OBJ (DT 一切)))))))
+		  (PU ，)
+		  (CC 又)
+		  (VP (VV 憧憬)
+		      (NP-OBJ (DNP (NP (NN 晚霞))
+				   (DEG 的))
+			      (NP (NN 平和)
+				  (NN 绚烂)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一切 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

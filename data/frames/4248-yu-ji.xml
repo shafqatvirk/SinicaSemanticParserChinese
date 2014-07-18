@@ -1,0 +1,192 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预计 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="forecast arg0 makes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 钢铁)
+			      (NN 工业)))
+		  (VP (VP (NP-TMP (NP (PU “)
+				      (NT 九五)
+				      (PU ”))
+				  (PRN (PU （)
+				       (NP (NT 一九九六)
+					   (CC 至)
+					   (NT 二０００年))
+				       (PU ）))
+				  (NP (NN 期间)))
+			  (PU ，)
+			  (VP (VV 预计)
+			      (IP-OBJ (NP-SBJ (ADJP (JJ 总))
+					      (NP (NN 投资)))
+				      (VP (PP-PRD (P 在)
+						  (LCP (QP (CD 三千亿)
+							   (CLP (M 元)))
+						       (LC 左右))))))))) 
+	  </parse>
+	  <arg n="1">
+	  中国 钢铁 工业 
+	  </arg>
+	  <arg n="1" f="prd">
+	  “ 九五 ” （ 一九九六 至 二０００年 ） 期间 总 投资 在 三千亿 元 左右 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 经济)
+		      (NN 专家))
+	      (VP (VV 预计)
+		  (PU ，)
+		  (IP-OBJ (NP-TMP (NT 今年))
+			  (NP-SBJ (NP (NP-PN-APP (NR 中)
+						 (NR 韩))
+				      (QP (CD 两))
+				      (NP (NN 国)))
+				  (NP (NN 贸易额)))
+			  (VP (ADVP (AD 将))
+			      (VP (VV 增至)
+				  (QP-OBJ (CD 二百五十亿)
+					  (CLP (M 美元)))))))) 
+	  </parse>
+	  <arg n="0">
+	  经济 专家 
+	  </arg>
+	  <arg n="1">
+	  今年 中 韩 两 国 贸易额 将 增至 二百五十亿 美元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-PN-SBJ (NN 建设部))
+			  (VP (VV 预计))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TMP (NT 今年))
+				  (NP-SBJ (ADJP (JJ 国有))
+					  (NP (NN 商业)
+					      (NN 银行)))
+				  (VP (VV 投放)
+				      (NP-OBJ (-NONE- *T*-1))
+				      (PP (P 在)
+					  (NP (DP (DT 此))
+					      (NP (NN 方面))))))
+			      (DEC 的)))
+		      (NP (NN 贷款)))
+	      (VP (VP (VE 有)
+		      (NP-OBJ (NN 望)))
+		  (VP (VV 达到)
+		      (QP-OBJ (CD 三百六十亿)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  建设部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 总))
+		      (NP (NN 投资)))
+	      (VP (VV 预计)
+		  (VP (PP-PRD (P 在)
+			      (LCP (QP (CD 三亿)
+				       (CLP (M 美元)))
+				   (LC 左右)))))) 
+	  </parse>
+	  <arg n="1">
+	  总 投资 
+	  </arg>
+	  <arg n="1" f="prd">
+	  在 三亿 美元 左右 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 在)
+		      (LCP (NP (DNP (NP (NP-APP (NP (NN 资本)
+						    (NN 市场))
+						(PU 、)
+						(NP (NN 保险业))
+						(PU 、)
+						(NP (ADJP (JJ 连锁))
+						    (NP (NN 商业)))
+						(PU 、)
+						(NP (NN 批发)
+						    (NN 销售))
+						(PU 、)
+						(NP (NN 集装箱)
+						    (NN 运输))
+						(PU 、)
+						(NP (NN 房地产))
+						(PU 、)
+						(NP (NN 信息)
+						    (NN 服务))
+						(ETC 等))
+					(NP (NN 经济)
+					    (NN 增长点)))
+				    (DEG 的))
+			       (NP (NN 带动)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (NP (QP (OD 第三))
+			  (NP (NN 产业)))
+		      (NP (NN 增加值)))
+	      (VP (VV 预计)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 年均))
+			      (VP (VV 增长)
+				  (QP-EXT (CD 百分之十一)
+					  (CC 至)
+					  (CD 十二))))))) 
+	  </parse>
+	  <arg n="1">
+	  第三 产业 增加值 
+	  </arg>
+	  <arg n="1" f="prd">
+	  年均 增长 百分之十一 至 十二 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 资本 市场 、 保险业 、 连锁 商业 、 批发 销售 、 集装箱 运输 、 房地产 、 信息 服务 等 经济 增长点 的 带动 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

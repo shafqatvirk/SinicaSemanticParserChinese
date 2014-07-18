@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 招收 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 截止)
+		      (NP (NT 今年)
+			  (NT 九月)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中科院))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 招收)
+		      (NP-OBJ (NN 博士后))
+		      (NP-EXT (QP (ADVP (AD 近))
+				  (QP (CD 两千两百)))
+			      (NP (NN 人)))))) 
+	  </parse>
+	  <arg n="0">
+	  中科院 
+	  </arg>
+	  <arg n="1">
+	  博士后 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  近 两千两百 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <arg n="m" f="adv">
+	  截止 今年 九月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-PN-SBJ (NR 辽宁))
+			      (VP (ADVP (AD 实际))
+				  (VP (VV 调入)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (NP (NN 外资))) 
+	  </parse>
+	  <arg n="0">
+	  辽宁 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  实际 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-LOC (NP-PN (NR 重庆)
+			     (CC 及)
+			     (NR 四川))
+		      (NP (NN 地区)))
+	      (NP-SBJ (ADVP (AD 几乎))
+		      (NP (DP (DT 所有))
+			  (NP (NN 化工)
+			      (NN 原料))))
+	      (VP (ADVP (AD 均))
+		  (PP-DIR (P 从)
+			  (NP (DP (DT 各))
+			      (NP (NN 地))))
+		  (VP (VV 调入))))
+	  </parse>
+	  <arg n="1">
+	  几乎 所有 化工 原料 
+	  </arg>
+	  <arg n="2">
+	  从 各 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

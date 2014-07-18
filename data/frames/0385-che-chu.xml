@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="withdrawer"/>
+      <role argnum="2" argrole="withdrawing from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 苏联))
+	      (VP (VV 准备)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (PP-TMP (P 从)
+					  (LCP (NP (NT 今年)
+						   (NT 五月))
+					       (LC 开始)))
+				  (VP (VV 撤出)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 驻)
+							      (NP-PN-OBJ (NR 波兰))))
+						      (DEC 的)))
+					      (NP-PN (NR 苏军)))))
+			      (PU ，)
+			      (VP (LCP-TMP (LCP (NP (NT 一九九四年))
+						(LC 中))
+					   (LC 以前))
+				  (ADVP (AD 全部))
+				  (VP (VV 撤完))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 驻 波兰 的 苏军 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  从 今年 五月 开始 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (NN 美军))
+		  (VP (ADVP (AD 不))
+		      (PP-DIR (P 从)
+			      (NP-PN (NR 韩国)))
+		      (VP (VV 撤出))))
+	  </parse>
+	  <arg n="1">
+	  美军 
+	  </arg>
+	  <arg n="2">
+	  从 韩国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (ADJP (JJ 维和))
+			  (NP (NN 部队)))
+		  (VP (ADVP (AD 已))
+		      (VP (VV 撤出)
+			  (NP-PN-OBJ (NR 马克尼)))))
+	  
+	  </parse>
+	  <arg n="1">
+	  维和 部队 
+	  </arg>
+	  <arg n="2">
+	  马克尼 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 驻)
+				      (NP-PN-OBJ (NR 波)))))
+			  (NP (NR 苏军)))
+		  (VP (LCP-TMP (NP (NT 今年)
+				   (NT 五月))
+			       (LC 起))
+		      (VP (VV 撤出))))
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 驻 波 苏军 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 五月 起 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 叫醒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 wakes up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 曾经))
+		  (PP-PRP (P 因为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VPT (VV 构)
+					   (AD 不)
+					   (VV 著))
+				      (NP-OBJ (NN 内衣)
+					      (NN 扣) )))))
+		  (PU ，)
+		  (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (NP-TMP (NT 早晨) )
+				   (VP (VV 上班))))
+			   (LC 前))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (VV 念)
+							(NP-OBJ (NN 大学) )))
+						(DEC 的)))
+					(NP (NN 儿子) ))
+			      (VP (VV 叫醒)
+				  (NP-OBJ (-NONE- *-2))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 念 大学 的 儿子 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 早晨 上班 前 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 *PRO* 构 不 著 内衣 扣 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转往 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 goes on to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NP-PN (NR 陈))
+		       (NP (NN 总统)))
+	    (VP (NP-TMP (NT 十八日))
+		(VP (VP (VV 转往)
+			(NP-PN-OBJ (NR 哥斯大黎加)))
+		    (VP (VV 访问))))) 
+	</parse>
+	<arg n="0">
+	陈 总统 
+	</arg>
+	<arg n="1">
+	哥斯大黎加 
+	</arg>
+	<arg n="m" f="tmp">
+	十八日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

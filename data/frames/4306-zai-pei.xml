@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 栽培 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity cultivated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 建始县))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (QP (NP (NN 海拔))
+				       (QP (QP (CD 一千二百)
+					       (CLP (M 米)))
+					   (CC 至)
+					   (QP (CD 二千多)
+					       (CLP (M 米)))))
+				   (NP (NN 区间)))
+			       (LC 内)))
+		  (ADVP (AD 人工))
+		  (VP (VV 栽培)
+		      (NP-OBJ (NP-PN (NR 日本))
+			      (NP (NN 落叶松)))))) 
+	  </parse>
+	  <arg n="0">
+	  建始县 
+	  </arg>
+	  <arg n="1">
+	  日本 落叶松 
+	  </arg>
+	  <arg n="m" f="adv">
+	  人工 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 海拔 一千二百 米 至 二千多 米 区间 内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

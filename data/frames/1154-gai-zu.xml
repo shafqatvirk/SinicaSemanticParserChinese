@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改组 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NP-PN (NR 美国))
+			     (NP (NN 环球))
+			     (NP (NN 集团))
+			     (ADJP (JJ 有限))
+			     (NP (NN 公司)))
+		      (CC 与)
+		      (NP-PN (NR 满洲里)
+			     (NN 国际)
+			     (NN 贸易)
+			     (NN 公司)))
+	      (VP (ADVP (AD 联合))
+		  (VP (VV 改组)
+		      (AS 了)
+		      (NP-PN-OBJ (NR 满洲里)
+				 (NN 服装厂))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 环球 集团 有限 公司 与 满洲里 国际 贸易 公司 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  联合 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  满洲里 服装厂 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九五０年))
+	      (NP-PN-SBJ (NR 中国)
+			 (NR 红十字会))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VSB (VV 协商)
+					(VV 改组))))
+			   (LC 后))
+		  (PU ，)
+		  (PP (P 作为)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 从事)
+					  (NP-OBJ (NN 人道主义)
+						  (NN 工作))))
+				  (DEC 的)))
+			  (NP (NN 社会)
+			      (NN 救助)
+			      (NN 团体))))
+		  (PU ，)
+		  (VP (VV 做)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 大量))
+			      (NP (NN 工作)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

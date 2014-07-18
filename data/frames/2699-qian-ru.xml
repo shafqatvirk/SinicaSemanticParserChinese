@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迁到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="location moved to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不过))
+	      (LCP-TMP (NP (NN 金融)
+			   (NN 风暴))
+		       (LC 前))
+	      (PU ，)
+	      (NP-PN-TPC (NR 东南亚))
+	      (PP-PRP (P 由於)
+		      (IP (IP (NP-SBJ (NN 币值))
+			      (VP (ADVP (AD 高))
+				  (VP (VV 估))))
+			  (PU 、)
+			  (IP (NP-SBJ (NN 工资))
+			      (VP (ADVP (AD 高))
+				  (VP (VV 涨))))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 不少))
+		      (NP (NN 当地)
+			  (NN 台商)))
+	      (VP (VV 有意)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 工厂))
+				      (VP (VV 迁到)
+					  (NP-OBJ (NN 大陆)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  工厂 
+	  </arg>
+	  <arg n="2">
+	  大陆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

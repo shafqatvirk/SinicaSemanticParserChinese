@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 衔接 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="connector"/>
+      <role argnum="1" argrole="things connected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (IP (IP (NP-PN-SBJ (NR 深圳))
+			       (VP (VV 发展)))
+			   (CC 及)
+			   (IP (NP-PN-SBJ (NR-SHORT 深)
+					  (NR 港))
+			       (VP (VV 衔接))))
+		       (LC 中))) 
+	  </parse>
+	  <arg n="1">
+	  深 港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调整 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="adjuster"/>
+      <role argnum="1" argrole="thing adjusted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 西藏))
+		      (NP (NN 银行)
+			  (NN 部门)))
+	      (VP (ADVP (AD 积极))
+		  (VP (VV 调整)
+		      (NP-OBJ (NN 信贷)
+			      (NN 结构))))) 
+	  </parse>
+	  <arg n="0">
+	  西藏 银行 部门 
+	  </arg>
+	  <arg n="1">
+	  信贷 结构 
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 企业)
+		      (NN 结构))
+	      (VP (VV 调整)))
+	  </parse>
+	  <arg n="1">
+	  企业 结构 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" cdef="调整 为">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="end state"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 十八)
+			   (CLP (M 年)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 深圳))
+			   (DEG 的))
+		      (NP (NN 产业)
+			  (NN 结构)))
+	      (VP (ADVP (AD 已))
+		  (VP (VRD (VV 调整)
+			   (VV 为))
+		      (QP-OBJ (CD 一点三九)
+			      (CC 比)
+			      (CD 四十八点七九)
+			      (CC 比)
+			      (CD 四十九点八二)))))
+	  </parse>
+	  <arg n="1">
+	  深圳 的 产业 结构 
+	  </arg>
+	  <arg n="2">
+	  一点三九 比 四十八点七九 比 四十九点八二 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  十八 年 后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

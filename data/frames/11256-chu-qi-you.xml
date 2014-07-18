@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出其右 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity which is better than arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 总))
+			(VP (VV 说)
+			    (QP-OBJ (CD 一)
+				    (CLP (M 句))))))
+	    (PU ，)
+	    (NP-SBJ (ADJP (JJ 省产))
+		    (NP (NN 木材)))
+	    (VP (VE 无)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 出其右))))
+			(NP (NN 者))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 纾解 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 relieves of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 戏剧))
+	    (VP (ADVP (AD 刚好))
+		(VP (VV 可以)
+		    (VP (VP (VV 纾解)
+			    (NP-OBJ (NN 压力)))
+			(PU ，)
+			(VP (VV 让)
+			    (NP-OBJ (PN 他们)
+				    (PN 自己))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 说出)
+				    (NP-OBJ (DNP (LCP (NP (NN 心))
+						      (LC 里))
+						 (DEG 的))
+					    (NP (NN 话)))))))))) 
+	</parse>
+	<arg n="0">
+	戏剧 
+	</arg>
+	<arg n="1">
+	压力 
+	</arg>
+	<arg n="m" f="adv">
+	刚好 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

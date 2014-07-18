@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 饮茶 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-TPC-1 (NP-SBJ (-NONE- *pro*))
+		      (VP (VNV (VE 有)
+			       (VE 没有))
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 饮茶)))
+					  (DEC 的))
+				  (NP (NN 悠闲)))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 不))
+		(VP (VV 敢)
+		    (VP (VV 说)
+			(IP-OBJ (-NONE- *T*-1)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

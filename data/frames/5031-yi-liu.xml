@@ -1,0 +1,149 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遗留 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 leaves behind"/>
+    <role argnum="2" argrole="location arg1 is left at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-PN-SBJ (NR 贝里琉)
+		       (NN 岛)
+		       (CC 与)
+		       (NR 安佳尔)
+		       (NR 岛))
+	    (VP (VP (VC 为)
+		    (NP-PRD (NP (NP (NP (QP (OD 二)
+					    (CLP (M 次)))
+					(NP (NN 大战)))
+				    (NP (NN 期间)))
+				(DNP (NP (NN 美军)
+					 (CC 与)
+					 (NN 日军))
+				     (DEG 的))
+				(ADJP (JJ 主要))
+				(NP (NN 战场)))
+			    (NP (NN 之一))))
+		(PU ，)
+		(VP (ADVP (AD 仍))
+		    (VP (VV 遗留)
+			(AS 著)
+			(NP-OBJ (NP (NT 当年))
+				(NP (NN 日军))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 四通八达)))
+					(DEC 的)))
+				(ADJP (JJ 地下))
+				(NP (NN 通道))))))) 
+	</parse>
+	<arg n="1">
+	当年 日军 *OP* *T*-1 四通八达 的 地下 通道 
+	</arg>
+	<arg n="2">
+	贝里琉 岛 与 安佳尔 岛 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+		    (IP (NP-SBJ (NN 排湾族)
+				(NN 祖先))
+			(VP (MSP 所)
+			    (VP (VV 遗留)
+				(NP-OBJ (-NONE- *T*-1))))))
+		(NP (NN 文物))) 
+	</parse>
+	<arg n="0">
+	排湾族 祖先 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-PN-SBJ (NR 胡适))
+			      (VP (VV 遗留)
+				  (NP-OBJ (NN 大陆))))
+			  (DEC 的)))
+		  (QP (CD 许多))
+		  (NP (NN 书信)
+		      (CC 与)
+		      (NN 遗稿))) 
+	</parse>
+	<arg n="0">
+	胡适 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	大陆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (ADJP (JJ 旧))
+				    (NP (NN 时代)))
+			    (VP (MSP 所)
+				(VP (VRD (VV 遗留)
+					 (VV 下来))
+				    (NP-OBJ (-NONE- *T*-1)))))
+			(DEC 的)))
+		(NP (NN 敌意)
+		    (CC 与)
+		    (NN 对立))) 
+	</parse>
+	<arg n="0">
+	旧 时代 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

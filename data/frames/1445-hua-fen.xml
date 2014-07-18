@@ -1,0 +1,121 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 划分 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="divider"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="components"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 陕西省))
+	      (VP (VP (VSB (VV 组织)
+			   (VV 编制))
+		      (NP-OBJ (NP (NP (DP (DT 全))
+				      (NP (NN 省)))
+				  (NP (NN 旅游)
+				      (NN 发展)))
+			      (ADJP (JJ 总体))
+			      (NP (NN 规划))))
+		  (PU ，)
+		  (VP (VV 改革)
+		      (NP-OBJ (NN 管理)
+			      (NN 体制)))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (NN 重点)
+				  (NN 景区)))
+		      (VP (VV 成立)
+			  (NP-OBJ (NN 管委会))))
+		  (PU ，)
+		  (VP (VV 划分)
+		      (NP-OBJ (NN 旅游)
+			      (NN 景区))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 为)
+			      (QP-OBJ (NP-APP (NN 省)
+					      (PU 、)
+					      (NN 地)
+					      (PU 、)
+					      (NN 县))
+				      (QP (CD 三)
+					  (CLP (M 级))))))))) 
+	  </parse>
+	  <arg n="0">
+	  陕西省 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  旅游 景区 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 省 、 地 、 县 三 级 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (LCP (NP (NN 战))
+			   (LC 后))
+		      (NP (NN 初期)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN-APP (NR 苏)
+				 (PU 、)
+				 (NR 美)
+				 (PU 、)
+				 (NR 英)
+				 (PU 、)
+				 (NR 法))
+		      (QP (CD 四))
+		      (ADJP (JJ 大))
+		      (NP (NN 国)))
+	      (VP (PP-MNR (P 据)
+			  (P 据)
+			  (NP-TTL (PU “)
+				  (NP-PN (NR 雅尔塔))
+				  (NP (NN 协议))
+				  (PU ”)))
+		  (VP (VP (VV 划分)
+			  (AS 了)
+			  (NP-OBJ (NN 势力)
+				  (NN 范围)))
+		      (PU ，)
+		      (CC 并)
+		      (VP (ADVP (AD 分区))
+			  (VP (VV 占领)
+			      (AS 了)
+			      (NP-OBJ (NP-PN (NR 德国))
+				      (CC 及)
+				      (NP (NP (PN 其))
+					  (NP (NN 首都))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  战 后 初期 
+	  </arg>
+	  <arg n="0">
+	  苏 、 美 、 英 、 法 四 大 国 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 “ 雅尔塔 协议 ” 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  势力 范围 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 精通 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 knows well"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (QP (CD 一))
+		    (NP (NN 方面)))
+	    (PP-PRP (P 因为)
+		    (IP (NP-SBJ (NP-PN (NR 澳)
+				       (NR 葡))
+				(NP (NN 政府)))
+			(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					 (VP (VV 统治)
+					     (NP-PN-OBJ (NR 澳门))
+					     (QP-EXT (CD 四百)
+						     (CLP (M 年)))))
+				     (LC 来))
+			    (PU ，)
+			    (ADVP (AD 从未))
+			    (VP (VV 正视)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 培养)
+					    (NP-OBJ (NP (NN 华人))
+						    (NP (NP-PN (NR 葡国))
+							(NP (NN 语言)))
+						    (NP (NN 能力)))))))))
+	    (PU ，)
+	    (LCP-TMP (ADVP (AD 长期))
+		     (LC 以来))
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 精通)
+				    (NP-OBJ (NN 葡文))))
+			    (DEC 的)))
+		    (NP (NN 中国人)))
+	    (VP (ADVP (AD 很))
+		(VP (VA 少)))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	葡文 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 死于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity who die"/>
+      <role argnum="1" argrole="cause of death"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD １２５万))
+		      (NP (NN 儿童)
+			  (PU 、)
+			  (NN 妇女)
+			  (CC 和)
+			  (NN 老人)))
+	      (VP (VV 死于)
+		  (UCP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VP (VV 缺)
+				       (NP-OBJ (NN 医)))
+				   (VP (VV 少)
+				       (NP-OBJ (NN 药)))))
+			   (CC 和)
+			   (NP (NN 营养不良))))) 
+	  </parse>
+	  <arg n="0">
+	  １２５万 儿童 、 妇女 和 老人 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 缺 医 少 药 和 营养不良 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

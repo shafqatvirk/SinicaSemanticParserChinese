@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迁至 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="location moved to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 日前))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 香港)
+			 (NR 上海)
+			 (NR 汇丰)
+			 (NN 银行))
+	      (VP (ADVP (AD 已))
+		  (VP (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NP (PN 其))
+					  (NP-PN (NR 上海))
+					  (NP (NN 分行)))
+				  (VP (VV 迁至)
+				      (NP-OBJ (DNP (NP-PN (NR 浦东)
+							  (NR 陆家嘴)
+							  (NN 金融)
+							  (NN 贸易区))
+						   (DEG 的))
+					      (NP-PN (NR 中国)
+						     (NN 船舶)
+						     (NN 大厦))))))
+		      (PU ，)
+		      (VP (VV 成为)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VP (VSB (VV 获准)
+							   (VV 经营))
+						      (NP-OBJ (NN 人民币)
+							      (NN 业务)))
+						  (PU 、)
+						  (VP (VV 迁址)
+						      (NP-PN-OBJ (NR 浦东)))))
+					  (DEC 的)))
+				  (QP (OD 第三)
+				      (CLP (M 家)))
+				  (NP (NN 外资)
+				      (NN 银行))))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 上海 汇丰 银行 
+	  </arg>
+	  <arg n="1">
+	  其 上海 分行 
+	  </arg>
+	  <arg n="2">
+	  浦东 陆家嘴 金融 贸易区 的 中国 船舶 大厦 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

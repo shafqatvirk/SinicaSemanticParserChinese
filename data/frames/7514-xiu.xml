@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 休 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person resting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (NP-ADV (NN 周))
+			(VP (VV 休)
+			    (NP-OBJ (QP (CD 二))
+				    (NP (NN 日))))))
+	    (VP (ADVP (AD 全面))
+		(VP (VV 登场)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	二 日 
+	</arg>
+	<arg n="m" f="adv">
+	周 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

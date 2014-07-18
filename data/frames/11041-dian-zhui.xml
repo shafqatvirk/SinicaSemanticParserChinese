@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 点缀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 decorates"/>
+    <role argnum="2" argrole="thing arg1 is decorated with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP-PN (NR 顺益)
+			   (NN 博物馆))
+		    (NP (NN 年度)
+			(NN 特展))
+		    (NP (NN 开幕会)))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NP (NP-PN (NR 达瓦兰))
+				 (NP (NN 部落)))
+			     (ADJP (JJ 小))
+			     (NP (NN 朋友)))
+			 (DEG 的))
+		    (NP (NN 呼喊声)
+			(CC 与)
+			(NN 铃铛声)))
+	    (PU ，)
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (DNP (NP (NN 深秋))
+				     (DEG 的))
+				(NP (NR 外双溪)))
+			(VP (VV 点缀)
+			    (DER 得)
+			    (VP-EXT (VRD (VA 热闹))
+				    (ADVP (AD 异常))))))) 
+	</parse>
+	<arg n="1">
+	深秋 的 外双溪 
+	</arg>
+	<arg n="2">
+	达瓦兰 部落 小 朋友 的 呼喊声 与 铃铛声 
+	</arg>
+	<arg n="m" f="ext">
+	热闹 异常 
+	</arg>
+	<arg n="m" f="tpc">
+	顺益 博物馆 年度 特展 开幕会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

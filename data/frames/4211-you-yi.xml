@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有益 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 is beneficial to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 做)
+	      (NP-OBJ (QP (CD 一些))
+		      (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PP-DIR (P 对)
+					      (NP (NP (NP-PN (NR 亚洲))
+						      (NP (NN 人民)))
+						  (PU ，)
+						  (CC 乃至)
+						  (NP (NP (DP (DT 全))
+							  (NP (NN 世界)))
+						      (NP (NN 人民)))))
+				      (VP (VA 有益))))
+			      (DEC 的)))
+		      (ADJP (JJ 好))
+		      (NP (NN 事)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  对 亚洲 人民 ， 乃至 全 世界 人民 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 利用)
+	      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (LCP-LOC (NP (NN 国际))
+					       (LC 上))
+				      (VP (VA 有益))))
+			      (DEC 的)))
+		      (DP (DT 各)
+			  (CLP (M 种)))
+		      (NP (NN 融资)
+			  (NN 方式)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  国际 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

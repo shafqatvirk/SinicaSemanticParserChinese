@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="level closed at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 纳斯达克))
+		      (NP (NN 指数)))
+	      (VP (VP (ADVP (AD 则))
+		      (VP (VV 上升)
+			  (AS 了)
+			  (QP-EXT (CD １．４７)
+				  (CLP (M 点)))))
+		  (PU ，)
+		  (VP (VV 收于)
+		      (QP-OBJ (CD ２１８１．７７)
+			      (CLP (M 点)))))) 
+	  </parse>
+	  <arg n="0">
+	  纳斯达克 指数 
+	  </arg>
+	  <arg n="1">
+	  ２１８１．７７ 点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

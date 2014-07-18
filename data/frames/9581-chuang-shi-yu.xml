@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 创始於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="time/place arg0 starts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-SBJ (NP-SBJ (NN 高尔夫球))
+		      (VP (ADVP (AD 是否))
+			  (ADVP (AD 真的))
+			  (VP (VV 创始於)
+			      (NP-PN-OBJ (NR 苏格兰)))))
+	      (PU ，)
+	      (VP (ADVP (AD 却))
+		  (ADVP (AD 一直))
+		  (VP (VV 存在)
+		      (NP-OBJ (NN 争议))))) 
+	  </parse>
+	  <arg n="0">
+	  高尔夫球 
+	  </arg>
+	  <arg n="1">
+	  苏格兰 
+	  </arg>
+	  <arg n="m" f="adv">
+	  真的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  是否 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

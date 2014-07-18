@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 观礼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person watching the ceremony"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VSB (VV 陪同)
+					 (VV 观礼))))
+			    (DEC 的))))
+	    (VP (ADVP (AD 尚))
+		(VP (VV 包括)
+		    (NP-OBJ (NP (NP-APP (NP-PN (NN 总统府))
+					(NP (NN 资政)))
+				(NP-PN (NR 余陈月瑛)))
+			    (PU 、)
+			    (NP (NP-APP (NN 教育)
+					(NN 部长))
+				(NP-PN (NR 曾志朗)))
+			    (PU 、)
+			    (NP (NP-APP (NP-PN (NN 原住民)
+					       (NN 委员会))
+					(NP (NN 主委)))
+				(NP-PN (NR 尤哈尼))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

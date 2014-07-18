@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 敦促 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="prodder"/>
+      <role argnum="1" argrole="prodded party"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 韩国))
+		      (NP (NN 政府)))
+	      (VP (QP-ADV (CD 多)
+			  (CLP (M 次)))
+		  (VP (VV 敦促)
+		      (NP-OBJ (NP-PN-APP (NR 现代)
+					 (PU 、)
+					 (NR 三星)
+					 (PU 、)
+					 (NR 大宇)
+					 (PU 、)
+					 (NR ＬＧ)
+					 (CC 和)
+					 (NR 鲜京))
+			      (QP (CD 五))
+			      (ADJP (JJ 大))
+			      (NP (NN 财团)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 采取)
+			      (NP-OBJ (NN 改革)
+				      (NN 措施))))))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 政府 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  多 次 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  现代 、 三星 、 大宇 、 ＬＧ 和 鲜京 五 大 财团 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 采取 改革 措施 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

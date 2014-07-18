@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 招商 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="project arg0 solicits investment in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 公司))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP (DP (DT 全))
+				  (NP (NN 省))))
+		      (VP (VV 招商)))
+		  (CC 并)
+		  (VP (ADVP (AD 严格))
+		      (VP (VV 遴选)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 五十)
+				      (CLP (M 家)))
+				  (ADJP (JJ 优秀))
+				  (NP (NN 企业))))))) 
+	  </parse>
+	  <arg n="0">
+	  公司 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 全 省 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (PP-MNR (P 据)
+			  (NP (NN 介绍)))
+		  (PU ，)
+		  (NP-PN-SBJ (NR 江苏省))
+		  (VP (NP-TMP (NT 去年))
+		      (VP (VV 公布)
+			  (AS 了)
+			  (NP-OBJ (NP (NP (PU “)
+					  (NT 九五)
+					  (PU ”))
+				      (NP (NN 期间)))
+				  (QP (OD 首)
+				      (CLP (M 批)))
+				  (NP (NN 重点)
+				      (NN 招商)
+				      (NN 项目))))))
+	      (PU ，)
+	      (IP (NP-ADV (NN 其中))
+		  (NP-SBJ (QP (CD 二十)
+			      (CLP (M 个)))
+			  (NP (NN 项目)))
+		  (VP (ADVP (AD 已))
+		      (VP (VRD (VV 寻求)
+			       (VV 到))
+			  (NP-OBJ (NN 合作)
+				  (NN 伙伴)))))
+	      (PU ，)
+	      (IP (NP-SBJ (ADJP (JJ 另外))
+			  (QP (CD 三十)
+			      (CLP (M 个)))
+			  (NP (NN 项目)))
+		  (VP (VV 继续)
+		      (VP (PP-DIR (P 对)
+				  (NP (NN 外)))
+			  (VP (VV 招商)))))) 
+	  </parse>
+	  <arg n="1">
+	  另外 三十 个 项目 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

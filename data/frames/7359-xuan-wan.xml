@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 选完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 finishes electing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (LCP-TMP (NP (NN 选))
+			     (LC 前))
+		    (VP (VP (VV 叫嚣)
+			    (QP-EXT (CD 一)
+				    (CLP (M 番))))
+			(VP (VV 希望)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 影响)
+					(NP-OBJ (NN 选情)))))))
+		(PU ，)
+		(VP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 选完)
+				(AS 了)))
+		    (ADVP (AD 马上))
+		    (VP (VP (VV 退回)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (PU 「)
+						    (VP (VV 听)
+							(NP-OBJ (NP (PN 其))
+								(NP (NN 言))))
+						    (PU 、)
+						    (VP (VV 观)
+							(NP-OBJ (NP (PN 其))
+								(NP (NN 行))))
+						    (PU 」)))
+					    (DEC 的))
+				    (ADJP (JJ 务实))
+				    (NP (NN 态度))))
+			(PU ，)
+			(VP (ADVP (AD 自))
+			    (VP (VP (VV 找)
+				    (NP-OBJ (NN 台阶)))
+				(VP (VV 下)))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

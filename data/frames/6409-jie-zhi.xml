@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 节制 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 places in check"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (PP (P 在)
+			(NP (PN 此)))
+		    (NP (NN 同时)))
+	    (PU ，)
+	    (NP-SBJ (PN 我们))
+	    (VP (ADVP (AD 也))
+		(VP (VV 应该)
+		    (VP (VP (VV 节制)
+			    (NP-OBJ (NN 行政)
+				    (NN 权力)))
+			(PU ，)
+			(VP (VV 还给)
+			    (NP-IO (NN 司法))
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VP (ADVP (AD 独立))
+							(VP (VV 运作)))
+						    (PU 、)
+						    (VP (ADVP (AD 不))
+							(VP (VV 受)
+							    (NP-OBJ (NN 干扰))))))
+					    (DEC 的))
+				    (NP (NN 空间)))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	行政 权力 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	在 此 同时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (PP-DIR (P 从)
+			(NP (DNP (NP (NN 健康权)
+				     (PU 、)
+				     (NN 生命权)
+				     (CC 和)
+				     (NN 自由权))
+				 (DEG 的))
+			    (NP (NN 角度))))
+		(VP (VV 思索)
+		    (PU ，)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (PP-TMP (P 当)
+						    (LCP (IP (NP-SBJ (NN 自由))
+							     (VP (VV 碰到)
+								 (NP-OBJ (NP (NN 健康)
+									     (CC 和)
+									     (NN 生命))
+									 (NP (NN 问题)))))
+							 (LC 时)))
+					    (PU ，)
+					    (VP (VV 应该)
+						(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+							    (VP (VE 有)
+								(NP (NN 限度))))
+						    (VP (VV 节制))))))
+				    (DEC 的))
+			    (NP (NN 观念)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 有 限度 
+	</arg>
+	<arg n="m" f="tmp">
+	当 自由 碰到 健康 和 生命 问题 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

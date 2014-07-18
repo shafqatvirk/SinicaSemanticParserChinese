@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 犯有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="criminal"/>
+      <role argnum="1" argrole="crime"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 郭辉))
+		  (VP (VV 犯有)
+		      (NP-OBJ (NP-APP (NN 抢劫)
+				      (PU 、)
+				      (NN 杀人)
+				      (ETC 等))
+			      (NP (NN 罪行))))) 
+	  </parse>
+	  <arg n="0">
+	  郭辉 
+	  </arg>
+	  <arg n="1">
+	  抢劫 、 杀人 等 罪行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

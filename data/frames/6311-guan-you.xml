@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惯有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 generally has"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NP-PN (NR 台湾))
+					    (QP (ADJP (JJ 老))
+						(QP (CD 一)
+						    (CLP (M 辈))))
+					    (NP (NN 人)))
+				    (VP (VV 惯有)
+					(NP-OBJ (-NONE- *T*-2))))
+				(DEC 的)))
+			(NP (NN 内敛))))) 
+	</parse>
+	<arg n="0">
+	台湾 老 一 辈 人 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

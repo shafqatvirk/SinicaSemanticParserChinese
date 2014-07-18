@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 留有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 leaves behind"/>
+    <role argnum="2" argrole="place arg1 is left behind"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 勤恳))
+		    (VP (VV 工作)))
+		(CC 而)
+		(VP (VV 能)
+		    (VP (VV 留有)
+			(NP-OBJ (NN 积蓄)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	积蓄 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (UCP (QP (NP (NN 後世))
+			     (QP (CD 两千)
+				 (CLP (M 年))))
+			 (PU 、)
+			 (NP (ADVP (AD 甚至))
+			     (NP (NP (NT 今天))
+				 (NP-PN (NR 中华)
+					(NN 民国)))))
+		    (NP (NN 政治)
+			(NN 制度)))
+	    (VP (ADVP (AD 仍然))
+		(VP (VV 留有)
+		    (NP-OBJ (DNP (NP-PN (NR 汉代))
+				 (DEG 的))
+			    (NP (NN 轮廓)))))) 
+	</parse>
+	<arg n="1">
+	汉代 的 轮廓 
+	</arg>
+	<arg n="2">
+	後世 两千 年 、 甚至 今天 中华 民国 政治 制度 
+	</arg>
+	<arg n="m" f="adv">
+	仍然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

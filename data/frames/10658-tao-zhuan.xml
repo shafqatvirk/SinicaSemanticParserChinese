@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 讨赚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (NP-TMP (-NONE- *T*-1))
+				    (NP-LOC (NN 异乡))
+				    (VP (VV 讨赚))))
+			    (DEC 的)))
+		    (NP (NN 日子)))
+	    (VP (ADVP (AD 只))
+		(VP (VV 持续)
+		    (AS 了)
+		    (QP-OBJ (CD 两)
+			    (CLP (M 年)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="loc">
+	异乡 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

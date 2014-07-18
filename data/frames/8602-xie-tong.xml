@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 协同 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities cooperating"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 二十五日))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 王永庆))
+	      (VP (VP (VV 协同)
+		      (NP-OBJ (NP (NP-APP (NR 富邦)
+					  (PU 、)
+					  (NR 华新)
+					  (NR 丽华)
+					  (PU 、)
+					  (NR 永丰馀)
+					  (NN 集团)
+					  (ETC 等))
+				  (ADJP (JJ 重量级))
+				  (NP (NN 企业)))
+			      (NP (NN 老板))))
+		  (VP (VV 前往)
+		      (NP-OBJ (NN 总统)
+			      (NN 官邸))))) 
+	  </parse>
+	  <arg n="0">
+	  王永庆 
+	  </arg>
+	  <arg n="0" f="crd">
+	  富邦 、 华新 丽华 、 永丰馀 集团 等 重量级 企业 老板 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十五日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

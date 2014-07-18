@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 外加 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity added onto arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 外加)
+		(NP-OBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VP (ADVP (AD 不))
+						(VP (VP (VV 用)
+							(NP-OBJ (NN 烤箱)))
+						    (VP (VV 烘焙))))
+					    (PU ，)
+					    (VP (ADVP (AD 而))
+						(VP (VV 用)
+						    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							    (VP (VP (VV 隔)
+								    (NP-OBJ (NN 水)))
+								(VP (VCD (VV 蒸)
+									 (VV 煮)))))))))
+				    (DEC 的)))
+			    (PU 「)
+			    (ADJP (JJ 水蒸))
+			    (NP (NN 蛋糕))
+			    (PU 」))
+			(PU ；)
+			(NP (NP-APP (CP (WHNP-3 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-3))
+						(VP (PP-MNR (P 以)
+							    (NP (NN 蒜蓉)))
+						    (VP (VV 为)
+							(NP-PRD (NN 主馅)))))
+					    (DEC 的)))
+				    (NP (NN 酥饼)))
+			    (NP (PU 「)
+				(NN 柴梳)
+				(NN 饼)
+				(PU 」))
+			    (PRN (PU （)
+				 (VP (PP-PRP (P 因)
+					     (IP (NP-SBJ (NN 外型))
+						 (VP (PP-PRD (P 像)
+							     (NP (DNP (NP (NP (ADJP (JJ 古))
+									      (NP (NN 时候)))
+									  (NP (NN 女人)))
+								      (DEG 的))
+								 (NP (NN 发梳)))))))
+				     (VP (VV 为名)))
+				 (PU ）)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 不 用 烤箱 烘焙 ， 而 用 *PRO* 隔 水 蒸 煮 的 「 水蒸 蛋糕 」 ； *OP* *T*-3 以 蒜蓉 为 主馅 的 酥饼 「 柴梳 饼 」 （ 因 外型 像 古 时候 女人 的 发梳 为名 ） 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 还))
+		(VP (VV 外加)
+		    (IP-OBJ (NP-SBJ (NN 纪律))
+			    (VP (VA 好)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	纪律 好 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

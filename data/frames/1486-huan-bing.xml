@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 患病 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TMP (CP (WHNP-1 (-NONE- *OP*))
+		      (IP (NP-SBJ (NP-APP (NP-PN (NR 美国))
+					  (ADJP (JJ 前))
+					  (NP (NN 总统)))
+				  (NP-PN (NR 尼克松)
+					 (NN 先生)))
+			  (VP (NP-TMP (-NONE- *T*-1))
+			      (VP (VV 患病)))))
+		  (NP (NN 期间))) 
+	  </parse>
+	  <arg n="0">
+	  美国 前 总统 尼克松 先生 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

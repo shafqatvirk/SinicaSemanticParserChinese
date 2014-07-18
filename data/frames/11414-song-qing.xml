@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 送请 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="entity arg0 sends arg1 to"/>
+    <role argnum="3" argrole="thing arg2 is asked to do with arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+	<mapitem src="controlip" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (NP (NN 国家)
+				(NN 安全))
+			    (ADJP (JJ 相关))
+			    (NP (NN 单位)))
+		    (VP (ADVP (AD 均))
+			(VP (VC 是)
+			    (VP (PP-MNR (P 依)
+					(NP (CP (WHNP-1 (-NONE- *OP*))
+						(IP (NP-SBJ (NP (PN 其))
+							    (NP (NN 组织法)))
+						    (VP (VV 规定)
+							(NP-OBJ (-NONE- *T*-1)))))
+					    (NP (NN 工作)
+						(NN 项目))))
+				(PU ，)
+				(VP (VP (VV 收集)
+					(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (VV 有关)
+								(NP-OBJ (NP (NN 国家)
+									    (NN 安全))
+									(CC 与)
+									(NP (NP (QP (CD 两))
+										(NP (NN 岸)))
+									    (NP (NN 关系))))))
+							(DEG 的)))
+						(NP (NN 资讯)
+						    (CC 与)
+						    (NN 分析))))
+				    (PU ，)
+				    (VP (VV 送请)
+					(NP-OBJ (NN 总统))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 参考)))))))))) 
+	</parse>
+	<arg n="0">
+	国家 安全 相关 单位 
+	</arg>
+	<arg n="2">
+	总统 
+	</arg>
+	<arg n="3">
+	*PRO* 参考 
+	</arg>
+	<arg n="m" f="mnr">
+	依 *OP* 其 组织法 规定 *T*-1 工作 项目 
+	</arg>
+	<arg n="m" f="adv">
+	均 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

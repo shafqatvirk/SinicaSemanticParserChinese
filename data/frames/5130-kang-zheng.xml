@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抗争 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 fights against"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 迎接)
+				    (NP-OBJ (NN 风浪))
+				    (VP-EXT (ADVP (AD 最))
+					    (VP (VA 烈)))))
+			    (DEC 的)))
+		    (LCP (NP (NN 北))
+			 (LC 端))
+		    (NP-PN (NR 公馆)
+			   (NN 海岸)))
+	    (PU ，)
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (VP (NP-ADV (NN 日日夜夜))
+			(VP (VV 发出)
+			    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP (-NONE- *T*-2))
+						(VP (PP (P 与)
+							(NP (NN 天)))
+						    (VP (VV 抗争))))
+					    (DEC 的)))
+				    (NP (NN 咆哮)
+					(NN 怒吼)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	与 天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (NP (NP (PN 他们))
+			(DP (DT 这)
+			    (CLP (M 个)))
+			(CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-3))
+				    (NP-SBJ (NN 族群)
+					    (NN 意识))
+				    (VP (ADVP (AD 已经))
+					(VP (VA 模糊))))
+				(DEC 的)))
+			(NP (NN 世代))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 竟))
+		(ADVP (AD 还))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (VV 肯)
+				(VP (PP-PRP (P 为)
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 保卫)
+						    (NP-OBJ (NN 乡土)))))
+				    (VP (MSP 而)
+					(VP (VV 抗争))))))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="m" f="prp">
+	为 *PRO* 保卫 乡土 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

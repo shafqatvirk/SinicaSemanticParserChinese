@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撕开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing torn"/>
+      <role argnum="2" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 真巧))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 见)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 变幻无常)))
+				      (DEC 的)))
+			      (NP (NN 云雾)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 恰好))
+				  (VP (VV 在)
+				      (LCP-OBJ (NP (NN 顶峰))
+					       (LC 处))))
+			      (VP (ADVP (PP (P 像)
+					    (NP (NN 棉花)))
+					(ADVP (AD 似的)))
+				  (VP (VV 撕开)
+				      (AS 了)
+				      (NP-OBJ (QP (CD 一)
+						  (CLP (M 个)))
+					      (NP (NN 口子)))))
+			      (PU ，)
+			      (VP (ADVP (AD 仿佛))
+				  (VP (VV 有意)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 让)
+						  (NP-OBJ (DNP (NP (PU “)
+								   (NN 圣)
+								   (PU ”)
+								   (NN 者))
+							       (DEG 的))
+							  (NP (NN 额头)))
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VRD (VV 探将)
+							       (VV 出来))))))))
+			      (PU ，)
+			      (VP (VV 像)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VC 是)
+					      (VP (PP-BNF (P 为)
+							  (NP (PN 我)))
+						  (VP (VV 送别))))))
+			      (PU ，)
+			      (VP (ADVP (AD 又))
+				  (VP (VV 像)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VC 是)
+						  (VP (PP-DIR (P 对)
+							      (NP (PN 我)))
+						      (VP (VV 嘲笑)))))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  一 个 口子 
+	  </arg>
+	  <arg n="m" f="adv">
+	  像 棉花 似的 
+	  </arg>
+	  <arg n="m" f="loc">
+	  恰好 在 顶峰 处 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

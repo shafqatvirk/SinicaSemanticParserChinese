@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吃香喝辣 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP-PN (NR 台北))
+			(NP (NN 市民)))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VP (VV 吃香喝辣))
+					    (PU 、)
+					    (VP (VV 占尽)
+						(NP-OBJ (NN 便宜)))))
+				    (DEC 的)))
+			    (NP (PU 「)
+				(QP (OD 一)
+				    (CLP (M 等)))
+				(NP (NN 国民))
+				(PU 」))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

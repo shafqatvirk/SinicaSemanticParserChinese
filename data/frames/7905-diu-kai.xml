@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 丢开 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 throws away"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 历史))
+			 (DEG 的))
+		    (NP (NN 包袱)))
+	    (VP (ADVP (AD 无法))
+		(NP-TMP (QP (CD 一))
+			(NP (NN 夕)))
+		(VP (VV 丢开)))) 
+	</parse>
+	<arg n="1">
+	历史 的 包袱 
+	</arg>
+	<arg n="m" f="tmp">
+	一 夕 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

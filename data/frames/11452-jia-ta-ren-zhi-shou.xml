@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 假他人之手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 gets others to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (ADVP (AD 尤其是))
+		    (NP (NN 新闻)
+			(NN 专题)))
+	    (PU ，)
+	    (NP-SBJ (NN 电视台))
+	    (VP (ADVP (AD 更))
+		(ADVP (AD 鲜少))
+		(VP (VV 假他人之手)))) 
+	</parse>
+	<arg n="0">
+	电视台 
+	</arg>
+	<arg n="1">
+	尤其是 新闻 专题 
+	</arg>
+	<arg n="m" f="adv">
+	鲜少 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

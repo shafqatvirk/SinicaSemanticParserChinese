@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 实施 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国)
+			     (NN 海关)
+			     (NN 总署))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 实施)
+			  (NP-OBJ (DNP (PP (P 对)
+					   (NP (NN 知识)
+					       (NN 产权)))
+				       (DEG 的))
+				  (NP (NN 保护)
+				      (NN 措施)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 海关 总署 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  对 知识 产权 的 保护 措施 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (NP (NN 结售)
+			      (NN 制度))
+			  (CC 和)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (NP (NN 核销)
+				  (NN 制度))))
+		  (VP (PP-LOC (P 在)
+			      (NP-PN (NR 西藏)))
+		      (ADVP (AD 全面))
+		      (VP (VV 实施)))) 
+	  </parse>
+	  <arg n="1">
+	  结售 制度 和 *OP* (*T*-2)->(核销制度) 新 的 核销 制度 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 西藏 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  全面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

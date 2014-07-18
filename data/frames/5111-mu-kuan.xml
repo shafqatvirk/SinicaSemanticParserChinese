@@ -1,0 +1,126 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 募款 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 solicits donation for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (VV 前往)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 访问)
+				(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-PN-SBJ (NR 乌金听列多杰))
+						    (VP (PP-LOC (P 在)
+								(NP-PN (NR 西藏)))
+							(VP (VV 驻扎)
+							    (NP-OBJ (-NONE- *T*-2)))))
+						(DEC 的)))
+					(NP-PN (NR 楚布寺))))))
+		(PU ，)
+		(VP (PP-BNF (P 为)
+			    (NP (PN 其)))
+		    (VP (VV 募款)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 修缮)
+				    (NP-OBJ (NN 道路)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	为 其 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 修缮 道路 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 马修．连恩))
+	    (VP (VP (PP-BNF (P 为)
+			    (NP (NT 九二一)
+				(NN 赈灾)))
+		    (VP (VV 募款))))) 
+	</parse>
+	<arg n="0">
+	马修．连恩 
+	</arg>
+	<arg n="1">
+	为 九二一 赈灾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (NN 演出)
+					(NN 经费))
+				(NP-SBJ (-NONE- *T*-1))
+				(VP (VA 不足)))
+			    (DEC 的)))
+		    (NP (NN 部分)))
+	    (PU ，)
+	    (VP (ADVP (AD 则))
+		(VP (PP-LGS (P 由)
+			    (NP (NN 学生)))
+		    (VP (VV 到)
+			(NP-OBJ (DNP (NP (NN 附近))
+				     (DEG 的))
+				(NP (NN 商家))))
+		    (VP (VV 募款))))) 
+	</parse>
+	<arg n="0">
+	由 学生 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="tpc">
+	*OP* 演出 经费 *T*-1 不足 的 部分 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 丁松筠))
+	    (VP (VP (SB 被)
+		    (VP (VV 派到)
+			(NP-OBJ (NN 国外))))
+		(VP (VV 募款)))) 
+	</parse>
+	<arg n="0">
+	丁松筠 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

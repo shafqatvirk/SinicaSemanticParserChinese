@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 勇夺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 grabs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NN 田径)
+			    (NN 标枪)
+			    (NN 选手))
+		    (NP-PN (NR 江志忠)))
+	    (VP (VP (VV 勇夺)
+		    (NP-OBJ (QP (OD 首)
+				(CLP (M 面)))
+			    (NP (NN 金牌))))
+		(PU ，)
+		(VP (PP-MNR (P 以)
+			    (QP (QP (CD 五七)
+				    (CLP (M 公尺)))
+				(QP (CD 二八))))
+		    (VP (VV 打破)
+			(AS 了)
+			(NP-OBJ (DNP (QP (NP (NN 视障))
+					 (QP (CD F12)
+					     (CLP (M 级))))
+				     (DEG 的))
+				(NP (NN 世界)
+				    (NN 纪录))))))) 
+	</parse>
+	<arg n="0">
+	田径 标枪 选手 江志忠 
+	</arg>
+	<arg n="1">
+	首 面 金牌 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

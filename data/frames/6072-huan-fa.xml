@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 焕发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is full of/radiating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 看)
+		    (AS 著)
+		    (NP-OBJ (NP-PN (NR 薛晓岚))
+			    (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-TPC (-NONE- *T*-1))
+						(NP-SBJ (NN 青春))
+						(VP (VV 焕发)))
+					    (DEC 的)))
+				    (NP (NN 脸庞)))
+				(PU ，)
+				(CC 与)
+				(NP (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VA 明朗)))
+					    (DEC 的)))
+				    (NP (NN 行事)
+					(NN 风格))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	青春 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今天))
+	    (PU ，)
+	    (UCP-TPC (NP (NN 民主))
+		     (PU 、)
+		     (NP (NN 富裕))
+		     (PU 、)
+		     (IP (NP-SBJ (NN 教育)
+				 (NN 程度))
+			 (VP (VV 提高))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 人民)))
+	    (VP (VP (PP-DIR (P 从)
+			    (NP (NN 内心)))
+		    (VP (VRD (VV 焕发)
+			     (VV 出))
+			(NP-OBJ (NN 自信))))
+		(PU ，)
+		(VP (ADVP (AD 不))
+		    (VP (VV 必)
+			(VP (VP (VV 靠)
+				(NP-OBJ (NN 世界)
+					(NN 冠军)))
+			    (VP (MSP 来)
+				(VP (VV 证明)
+				    (NP-OBJ (DNP (NP (NN 国家))
+						 (DEG 的))
+					    (NP (NN 存在))))))))
+		(PU 、)
+		(VP (ADVP (AD 不))
+		    (VP (VV 必)
+			(VP (VP (VV 靠)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (VV 别扭)))
+						(DEC 的)))
+					(NP (NN 西装))))
+			    (VP (MSP 来)
+				(VP (VV 显示)
+				    (NP-OBJ (DNP (NP (PN 自己))
+						 (DEG 的))
+					    (NP (NN 身份)))))))))) 
+	</parse>
+	<arg n="0">
+	台湾 人民 
+	</arg>
+	<arg n="1">
+	自信 
+	</arg>
+	<arg n="m" f="dir">
+	从 内心 
+	</arg>
+	<arg n="m" f="tpc">
+	民主 、 富裕 、 教育 程度 提高 
+	</arg>
+	<arg n="m" f="tmp">
+	今天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

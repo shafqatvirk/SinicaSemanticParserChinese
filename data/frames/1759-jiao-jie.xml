@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交界 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="regions that share borders"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (NP (NP-PN (NR 四川省))
+		  (NP (NN 北部)))
+	      (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (PP (P 与)
+				  (NP-PN (NR 甘肃省)))
+			      (VP (VV 交界))))
+		      (DEC 的)))
+	      (NP-PN (NR 龙门))
+	      (NP (NN 山区))) 
+	  </parse>
+	  <arg n="0" f="crd">
+	  *T*-1 
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 甘肃省 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

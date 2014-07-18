@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 买断 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="thing bought completely"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 安置)
+					  (NP-OBJ (NN 职工)))))
+			      (DEC 的))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHPP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-MNR (-NONE- *T*-3))
+				      (VP (VV 买断)
+					  (NP-OBJ (NP (ADJP (JJ 国有))
+						      (NP (NN 职工)))
+						  (NP (NN 工龄))))))
+			      (DEC 的)))
+		      (NP (NN 费用)))
+	      (PU ，)
+	      (VP (PP-MNR (P 按)
+			  (NP (NN 财务)
+			      (NN 隶属)
+			      (NN 关系)))
+		  (PU ，)
+		  (PP-LOC (P 在)
+			  (LCP (NP (NP (ADJP (JJ 国有))
+				       (ADJP (JJ 净))
+				       (NP (NN 资产)))
+				   (NP (NN 出售)
+				       (NN 收入)))
+			       (LC 中)))
+		  (VP (VV 支付)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  国有 职工 工龄 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

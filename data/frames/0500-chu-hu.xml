@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出乎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="domain,location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 有时))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 他们))
+				  (VP (VV 提出)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 要求)))
+	      (VP (VV 出乎)
+		  (LCP-OBJ (NP (NP (NP-PN (NR 中国))
+				   (NP (NN 管理)
+				       (NN 人员)))
+			       (NP (NN 意料)))
+			   (LC 之外)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 他们 提出 *T*-1 的 要求 
+	  </arg>
+	  <arg n="1">
+	  中国 管理 人员 意料 之外 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  有时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

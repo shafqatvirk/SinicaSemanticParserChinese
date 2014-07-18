@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 告别 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party saying farewell"/>
+      <role argnum="1" argrole="saying farewell to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 城镇)
+			      (NN 居民)))
+		  (VP (VV 开始)
+		      (VP (VV 告别)
+			  (NP-OBJ (NN 福利)
+				  (NN 住房))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 城镇 居民 
+	  </arg>
+	  <arg n="1">
+	  福利 住房 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 思 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 thingks of/wants"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 认为)
+		(IP-OBJ (NP-PN-SBJ (NN 国大))
+			(VP (ADVP (AD 不))
+			    (VP (VV 思)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (NP-ADV (PN 自我))
+					    (VP (VV 检讨))))))))) 
+	</parse>
+	<arg n="0">
+	国大 
+	</arg>
+	<arg n="1">
+	*PRO* 自我 检讨 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP-APP (IP (NP-SBJ (NN 人)
+				    (NN 心))
+			    (VP (VV 思)
+				(NP-OBJ (NN 变))))
+			(DEC 的))
+		(NP (NN 气氛))) 
+	</parse>
+	<arg n="0">
+	人 心 
+	</arg>
+	<arg n="1">
+	变 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

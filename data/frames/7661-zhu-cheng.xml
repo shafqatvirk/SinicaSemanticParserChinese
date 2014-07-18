@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 筑成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 builds"/>
+    <role argnum="2" argrole="thing arg1 is built with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TMP (NT 过去))
+				(NP-SBJ (QP (CD 两千万)
+					    (CLP (M 棵)))
+					(NP (NN 巨木)))
+				(VP (VV 筑成)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NN 南北)
+			(NN 桧木)
+			(NN 长堤)))
+	    (VP (SB 被)
+		(VP (VV 斩断)))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	两千万 棵 巨木 
+	</arg>
+	<arg n="m" f="tmp">
+	过去 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

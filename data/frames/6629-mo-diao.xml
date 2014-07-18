@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 磨掉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 grinds off"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 当时))
+	    (NP-PN-SBJ (NR 王壮为))
+	    (VP (ADVP (AD 还))
+		(VP (VV 问)
+		    (NP-IO (PN 他))
+		    (PU ：)
+		    (CP-Q-OBJ (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 一定))
+				      (VP (VV 要)
+					  (VP (VP (VV 磨掉))
+					      (VP (ADVP (AD 重))
+						  (VP (VV 刻)))))))
+			      (SP 吗))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	一定 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 黄天才))
+	    (VP (VP (ADVP (AD 也))
+		    (ADVP (AD 没))
+		    (ADVP (AD 多))
+		    (VP (VV 想)))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (VP (VV 说)
+			(CP-OBJ (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (VV 磨掉)))
+				(SP 吧)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="time/event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 本来))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 对)
+				  (NP-PN (NR 利物浦队)))
+			  (VP (MSP 来)
+			      (VP (VV 说)))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 圣诞节)))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 要)
+		      (VP (DVP (VP (VA 平平安安))
+			       (DEV 地))
+			  (VP (VV 过去)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 圣诞节 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 对 利物浦队 来 说 
+	  </arg>
+	  <arg n="m" f="adv">
+	  平平安安 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

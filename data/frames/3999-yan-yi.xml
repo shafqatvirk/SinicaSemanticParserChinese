@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 演绎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing performed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 一起))
+		  (VP (VV 演绎)
+		      (NP-OBJ (NP-APP (DP (DT 另)
+					  (QP (CD 一)
+					      (CLP (M 首))))
+				      (CP (WHNP-5 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (PP-PRP (P 为)
+							      (IP (NP-SBJ (-NONE- *PRO*))
+								  (VP (VV 庆祝)
+								      (IP-OBJ (NP-PN-SBJ (NR 香港))
+									      (VP (VV 回归))))))
+						      (VP (MSP 而)
+							  (VP (VV 创作)
+							      (NP-OBJ (-NONE- *T*-5))))))
+					      (DEC 的)))
+				      (NP (NN 乐曲)))
+			      (NP-TTL (PU 《)
+				      (NN 回归颂)
+				      (PU 》)))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 	  
+	  </arg>
+	  <arg n="1">
+	  另 一 首 *OP* *pro* 为 *PRO* 庆祝 香港 回归 而 创作 *T*-5 的 乐曲 《 回归颂 》 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一起 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

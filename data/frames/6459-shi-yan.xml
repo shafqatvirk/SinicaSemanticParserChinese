@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 誓言 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 pledges"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-TMP (-NONE- *T*-1))
+						(NP-TMP (NT 三月)
+							(NT 十八日))
+						(NP-SBJ (NN 选举)
+							(NN 结果))
+						(VP (VV 揭晓)))
+					    (DEC 的)))
+				    (DP (DT 那)
+					(QP (CD 一)
+					    (CLP (M 刻))))))
+			(VP (VV 开始))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 阿扁))
+	    (VP (VP (PP-MNR (P 以)
+			    (NP (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP (-NONE- *T*-2))
+					    (VP (ADVP (AD 最))
+						(VP (VA 严肃)
+						    (CC 而)
+						    (VA 谦卑))))
+					(DEC 的)))
+				(NP (NN 心情))))
+		    (VP (VV 接受)
+			(NP-OBJ (DNP (NP (NN 全民))
+				     (DEG 的))
+				(NP (NN 付托)))))
+		(PU ，)
+		(VP (VV 誓言)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 必))
+				(ADVP (AD 将))
+				(VP (VP (VV 竭尽)
+					(NP-OBJ (DNP (NP (NN 个人))
+						     (DEG 的))
+						(NP (NN 心力)
+						    (PU 、)
+						    (NN 智慧)
+						    (CC 和)
+						    (NN 勇气))))
+				    (PU ，)
+				    (VP (MSP 来)
+					(VP (VV 承担)
+					    (NP-OBJ (NP (NN 国家))
+						    (DNP (NP (NT 未来))
+							 (DEG 的))
+						    (NP (NN 重责大任))))))))))) 
+	</parse>
+	<arg n="0">
+	阿扁 
+	</arg>
+	<arg n="1">
+	*PRO* 必 将 竭尽 个人 的 心力 、 智慧 和 勇气 ， 来 承担 国家 未来 的 重责大任 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 从 *OP* *T*-1 三月 十八日 选举 结果 揭晓 的 那 一 刻 开始 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

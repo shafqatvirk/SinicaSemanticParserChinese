@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预示 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 foretells"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-TMP (NT 今年)
+			      (NT 八月))
+		      (NP-PN-SBJ (NP (NN 国际)
+				     (NN 海底)
+				     (NN 光缆))
+				 (NP-PN (NR 汕头))
+				 (NP (NN 登陆站)))
+		      (VP (VV 奠基)))
+	      (PU ，)
+	      (VP (VV 预示)
+		  (AS 着)
+		  (IP-OBJ (NP-SBJ (PN 这里))
+			  (VP (VV 成为)
+			      (NP-OBJ (DNP (NP (NN 国际)
+					       (NN 通信)
+					       (NN 网络))
+					   (DEG 的))
+				      (ADJP (JJ 重要))
+				      (NP (NN 节点))))))) 
+	  </parse>
+	  <arg n="0">
+	  今年 八月 国际 海底 光缆 汕头 登陆站 奠基 
+	  </arg>
+	  <arg n="1">
+	  这里 成为 国际 通信 网络 的 重要 节点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

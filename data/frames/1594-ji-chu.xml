@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挤出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="squeezer"/>
+      <role argnum="1" argrole="thing squeezed out"/>
+      <role argnum="2" argrole="squeezing out of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 并))
+		  (PP-DIR (P 从)
+			  (LCP (NP (NN 教育)
+				   (NN 经费))
+			       (LC 中)))
+		  (VP (VP (VV 挤出)
+			  (NP-OBJ (QP (CD 二十万)
+				      (CLP (M 元)))
+				  (NP (NN 经费))))
+		      (VP (VV 专用)
+			  (PP (P 于)
+			      (NP (NN 教育)
+				  (NN 救灾))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  二十万 元 经费 
+	  </arg>
+	  <arg n="2">
+	  从 教育 经费 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

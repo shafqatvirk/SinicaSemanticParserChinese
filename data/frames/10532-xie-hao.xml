@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 写好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 writes"/>
+    <role argnum="2" argrole="thing arg0 finishes writing arg1 on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ-3 (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (ADVP (AD 才))
+				  (VP (VV 写好))))
+			  (DEC 的)))
+		  (NP (NN 绢布))) 
+	</parse>
+	<arg n="2">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

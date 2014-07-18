@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 源起於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 originates from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 追溯)
+			(NP-OBJ (NP (NN 历史)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 源起於)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NP-PN (NR 苏格兰))
+					    (NP (NN 牧羊人)))
+				    (VP (PP-LOC (P 在)
+						(LCP (NP (NN 草原))
+						     (LC 上)))
+					(VP (VV 玩)
+					    (NP-OBJ (-NONE- *T*-1)))))
+				(DEC 的)))
+			(QP (CD 一)
+			    (CLP (M 种)))
+			(NP (NN 球戏))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* 苏格兰 牧羊人 在 草原 上 玩 *T*-1 的 一 种 球戏 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 追溯 历史 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 摘取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing taken"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 除)
+		  (LCP (IP (NP-PN-SBJ (NR 戈杰安))
+			   (VP (VV 夺得)
+			       (NP-OBJ (NN 金牌))))
+		       (LC 外)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 米洛索维奇))
+	      (VP (ADVP (AD 还))
+		  (PP-MNR (P 以)
+			  (QP (CD ９·７８７)
+			      (CLP (M 分))))
+		  (VP (VV 摘取)
+		      (NP-OBJ (NN 铜牌))))) 
+	  </parse>
+	  <arg n="0">
+	  米洛索维奇 
+	  </arg>
+	  <arg n="1">
+	  铜牌 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 ９·７８７ 分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  除 戈杰安 夺得 金牌 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

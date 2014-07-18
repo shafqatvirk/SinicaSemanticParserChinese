@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 对接 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity to be docked"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-TMP (NT ２７日))
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 飞船)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (QP-ADV (OD 第一)
+					   (CLP (M 次)))
+				   (PP (P 与)
+				       (NP (NN 轨道站)))
+				   (VP (VV 对接))))
+			   (LC 时))
+		  (VP (VV 失败)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="0" f="CRD">
+	  与 轨道站 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  第一 次 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

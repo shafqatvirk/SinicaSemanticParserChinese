@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 幸存 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 survives"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (PP-LOC (P 在)
+						    (LCP (NP (NN 伐木)
+							     (NN 链锯))
+							 (LC 下)))
+					    (VP (VV 幸存))))
+				    (DEC 的)))
+			    (NP-PN (NR 台湾))
+			    (NP (NN 神木)))
+		    (PU ，)
+		    (NP (ADVP (AD 如))
+			(NP (NP (NP-PN (NR 阿里山))
+				(NP (NN 神木)))
+			    (PU 、)
+			    (NP (NP-PN (NR 拉拉山))
+				(NP (NN 神木))))))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (NN 红桧))))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<arg n="1">
+	伐木 链锯 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 幸存)))
+				(DEC 的)))
+			(NP (NN 桧木)))
+		(VP (VC 是)
+		    (IP-PRD (PU 「)
+			    (NP-SBJ (NN 寂寞))
+			    (VP (VV 致死))
+			    (PU 」)))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

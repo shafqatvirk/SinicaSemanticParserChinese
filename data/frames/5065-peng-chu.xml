@@ -1,0 +1,213 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 碰触 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 touches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 促使)
+		(NP-PN-OBJ (NR 邓相扬))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 开始)
+			(VP (VV 碰触)
+			    (NP-OBJ (DP (DT 这)
+					(CLP (M 段)))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VA 敏感)))
+					    (DEC 的)))
+				    (NP (NN 历史)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	这 段 *OP* *T*-1 敏感 的 历史 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 立委))
+	    (VP (ADVP (AD 几乎))
+		(VP (VE 无)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 碰触)))
+				    (DEC 的))
+			    (NP (NN 可能)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (NP-TMP (NP (NT 六四))
+		    (QP (OD 十))
+		    (NP (NN 周年)))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (NN 大陆))
+		    (VP (ADVP (CS 虽))
+			(PP-PRP (P 因)
+				(IP (NP-SBJ (NN 官方))
+				    (VP (ADVP (AD 刻意))
+					(VP (VV 防范)))))
+			(PU ，)
+			(ADVP (AD 难))
+			(VP (VE 有)
+			    (IP-OBJ (NP-SBJ (ADJP (JJ 实质))
+					    (NP (NN 活动)))
+				    (VP (VV 冲击)
+					(NP-OBJ (NN 当局)))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+			     (CP (IP (NP-SBJ (-NONE- *T*-1))
+				     (VP (LCP-TMP (NP (NT 五月))
+						  (LC 初))
+					 (PP-LOC (P 在)
+						 (NP-PN (NR 北京)
+							(NN 大学)))
+					 (VP (VV 举行))))
+				 (DEC 的)))
+			 (NP-TTL (PU 「)
+				 (NP (NT 五四))
+				 (CC 与)
+				 (NP (NP (QP (OD 二十))
+					 (NP (NN 世纪)))
+				     (NP-PN (NR 中国)))
+				 (PU 」))
+			 (NP (NN 研讨会)))
+		     (LC 上))
+	    (PU ，)
+	    (NP-SBJ (NN 参与者))
+	    (VP (VP (ADVP (AD 很))
+		    (VP (VA 难)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 不))
+				    (VP (VV 借题发挥))))))
+		(PU ，)
+		(VP (ADVP (AD 总是))
+		    (VP (VRD (VV 碰触)
+			     (VV 到))
+			(NP-OBJ (NP (NT 六四))
+				(DNP (NP (NN 背後))
+				     (DEG 的))
+				(NP-APP (NN 民主)
+					(PU 、)
+					(NN 人权)
+					(PU 、)
+					(NN 自由)
+					(ETC 等))
+				(CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (NP-TMP (NN 当下))
+						(VP (ADVP (AD 最))
+						    (VP (VA 敏感)))))
+					(DEC 的)))
+				(NP (NN 话题)))))
+		(PU ，)
+		(VP (VV 让)
+		    (NP-OBJ (NT 五四)
+			    (NN 研讨会))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 充满)
+			    (AS 了)
+			    (NP-OBJ (CP-APP (IP (PU 「)
+						(NP-SBJ (DNP (ADJP (JJ 所有))
+							     (DEG 的))
+							(NP (NN 历史)))
+						(VP (ADVP (AD 都))
+						    (VP (VC 是)
+							(NP-PRD (NN 当代史))))
+						(PU 」))
+					    (DEC 的))
+				    (NP (NN 气氛)))))))) 
+	</parse>
+	<arg n="0">
+	参与者 
+	</arg>
+	<arg n="1">
+	六四 背後 的 民主 、 人权 、 自由 等 *OP* *T*-2 当下 最 敏感 的 话题 
+	</arg>
+	<arg n="m" f="adv">
+	总是 
+	</arg>
+	<arg n="m" f="loc">
+	*OP* *T*-1 五月 初 在 北京 大学 举行 的 「 五四 与 二十 世纪 中国 」 研讨会 上 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	大陆 虽 因 官方 刻意 防范 ， 难 有 实质 活动 冲击 当局 
+	</arg>
+	<arg n="m" f="tmp">
+	六四 十 周年 
+	</arg>
+	<arg n="m" f="dis">
+	因此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entities colliding"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (DP (DT 那)
+		(QP (CD 一)
+		    (CLP (M 个))))
+	    (CP (WHPP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (NN 东西)
+				(NN 文化))
+			(VP (PP-TMP (-NONE- *T*-1))
+			    (ADVP (AD 刚))
+			    (VP (VV 开始)
+				(VP (VV 碰触)))))
+		    (DEC 的)))
+	    (NP (NN 年代))) 
+	</parse>
+	<arg n="0">
+	东西 文化 
+	</arg>
+	<arg n="m" f="adv">
+	刚 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

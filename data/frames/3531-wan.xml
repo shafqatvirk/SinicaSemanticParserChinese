@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 晚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-SBJ (NN 起步))
+			      (VP (ADVP (AD 较))
+				  (VP (VA 晚))))
+			  (DEC 的)))
+		  (NP-PN (NR 钦州港))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  起步 	  
+	  </arg>
+	  <arg n="0" f="psr">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  较 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 里斯本))
+	      (VP (VA 晚)
+		  (NP-EXT (QP (CD １)
+			      (CLP (M 个)))
+			  (NP (NN 小时))))) 
+	  </parse>
+	  <arg n="0">
+	  里斯本 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  １ 个 小时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity compared to"/>
+      <role argnum="2" argrole="duration"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 还林 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="land"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 已))
+				      (VP (VV 开垦)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的))))
+	      (VP (VV 要)
+		  (VP (VP (VP (VE 有)
+			      (NP-OBJ (NN 计划)))
+			  (VP (VE 有)
+			      (NP-OBJ (NN 步骤))))
+		      (VP (VCD (VV 退耕)
+			       (VV 还林)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *pro* 已 开垦 *T*-1 的 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

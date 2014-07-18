@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 镀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 plates"/>
+    <role argnum="2" argrole="thing arg1 is plated with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 本来))
+		(VP (VV 要)
+		    (VP (VP (PP-LOC (P 在)
+				    (LCP (NP (NN 塑胶)
+					     (NN 产品))
+					 (LC 上)))
+			    (VP (VV 镀)
+				(NP-OBJ (NN 铬))))
+			(VP (MSP 以)
+			    (VP (VV 增加)
+				(NP-OBJ (NN 耐用度)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	在 塑胶 产品 上 
+	</arg>
+	<arg n="2">
+	铬 
+	</arg>
+	<arg n="m" f="adv">
+	本来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (DNP (NP (NP (ADJP (JJ 低))
+			     (NP (NN 成本)))
+			 (PU 、)
+			 (NP (ADJP (JJ 高))
+			     (NP (NN 品质))))
+		     (DEG 的))
+		(CP (WHNP-3 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-3))
+			    (VP (VP (VV 镀)
+				    (NP-OBJ (NN 银)))
+				(PU 、)
+				(VP (VV 镀)
+				    (NP (NN 铝)))))))
+		(ADJP (JJ 薄))
+		(NP (NN 膜))) 
+	</parse>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="2">
+	银 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

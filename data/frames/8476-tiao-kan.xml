@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调侃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="words arg0 says to ridicule arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 结果))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (LB 被)
+		  (IP-OBJ (NP-SBJ (NN 儿子) )
+			  (VP (VV 调侃)
+			      (IP-OBJ (NP-SBJ (NP-APP (NN 你们) )
+					      (DP (DT 这些))
+					      (ADJP (JJ 老))
+					      (NP (NN 女人) ))
+				      (PU ，)
+				      (VP (ADVP (AD 怎麽))
+					  (ADVP (AD 这麽))
+					  (VP (VA 麻烦)))))))) 
+	  </parse>
+	  <arg n="0">
+	  儿子 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  你们 这些 老 女人 ， 怎麽 这麽 麻烦 
+	  </arg>
+	  <arg n="m" f="adv">
+	  结果 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

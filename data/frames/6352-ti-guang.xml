@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 剃光 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (hair) arg0 removes all"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 特别是))
+	    (IP-SBJ (NP-SBJ (PN 她))
+		    (VP (VP (VV 剃光)
+			    (NP-OBJ (NN 头发)))
+			(PU ，)
+			(VP (NP-ADV (NN 裸体))
+			    (VP (VV 色诱)))))
+	    (VP (VC 是)
+		(NP-PRD (DNP (NP (NN 电影))
+			     (DEG 的))
+			(NP (NN 焦点))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	头发 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

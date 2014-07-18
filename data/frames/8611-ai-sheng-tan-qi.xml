@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 唉声叹气 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 别人))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VRD (VV 遭遇)
+				   (VV 到))
+			      (NP-OBJ (DNP (NP (PN 这样))
+					   (DEG 的))
+				      (NP (NN 情境)))))
+		  (PU ，)
+		  (ADVP (AD 或许))
+		  (VP (VV 要)
+		      (VP (VV 唉声叹气))))) 
+	  </parse>
+	  <arg n="0">
+	  别人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  或许 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 遭遇 到 这样 的 情境 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

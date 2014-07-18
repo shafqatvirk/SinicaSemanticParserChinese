@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 站柜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 爱美)))
+			    (DEC 的)))
+		    (NP-PN (NR 陈大伟)))
+	    (VP (VV 说)
+		(PU ，)
+		(IP-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 到)
+					(NP-OBJ (NN 服饰店)))
+				    (VP (VV 看看))))
+			(PU ，)
+			(NP-SBJ (-NONE- *pro*))
+			(VP (VE 没有)
+			    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					(CP (IP (NP-TPC (-NONE- *T*-3))
+						(NP-SBJ (NN 丑男))
+						(VP (VV 站柜)))
+					    (DEC 的)))))))) 
+	</parse>
+	<arg n="0">
+	丑男 
+	</arg>
+	<arg n="m" f="loc">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赞不绝口 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 keeps praising"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (VRD (VV 作)
+					 (VV 出来))
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NN 人面)
+			(NN 陶罐)))
+	    (PU ，)
+	    (NP-SBJ (ADVP (AD 连))
+		    (NP-PN (NR 刘益昌)))
+	    (VP (ADVP (AD 都))
+		(VP (VV 赞不绝口)))) 
+	</parse>
+	<arg n="0">
+	连 刘益昌 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 作 出来 *T*-1 的 人面 陶罐 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

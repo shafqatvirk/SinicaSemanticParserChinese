@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 牺牲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 经过)
+		      (AS 了)
+		      (NP-OBJ (DNP (QP (CD 多少)
+				       (CLP (M 次)))
+				   (DEG 的))
+			      (NP (NN 反复))))
+		  (PU ，)
+		  (VP (VV 牺牲)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 多少))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 优秀)))
+				      (DEC 的)))
+			      (NP (NN 儿女)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  多少 *OP* (*T*-1)->(儿女) 优秀 的 儿女 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ-4 (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (PP-LOC (P 在)
+					    (LCP (NP (NP-PN (NR 皖南))
+						     (NP (NN 事变)))
+						 (LC 中)))
+				    (ADVP (AD 英勇))
+				    (VP (VV 牺牲))))
+			    (DEC 的)))
+		    (NP (NN 革命)
+			(NN 先烈))) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-2)->(革命先烈) 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  英勇 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

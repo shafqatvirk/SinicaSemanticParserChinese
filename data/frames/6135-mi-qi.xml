@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 眯起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (eyes) arg0 narrows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 提起)
+			(NP-OBJ (NN 往事))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 叶进泰))
+	    (VP (VP (VV 眯起)
+		    (NP-OBJ (NN 眼睛)))
+		(PU ，)
+		(VP (ADVP (AD 细细))
+		    (VP (VV 怀想))))) 
+	</parse>
+	<arg n="0">
+	叶进泰 
+	</arg>
+	<arg n="1">
+	眼睛 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 提起 往事 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

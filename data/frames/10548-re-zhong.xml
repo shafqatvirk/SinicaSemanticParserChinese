@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 热衷 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is interested in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+			     (CP (IP (NP-SBJ (-NONE- *T*-1))
+				     (VP (PP-LOC (P 在)
+						 (NP (NP-PN (NR 中研院))
+						     (NP (NN 近代史)
+							 (NN 研究所))))
+					 (VP (VV 召开))))
+				 (DEC 的)))
+			 (NP-TTL (PU 「)
+				 (NP (NT 五四))
+				 (QP (OD 八十))
+				 (NP (NN 周年))
+				 (PU 」))
+			 (NP (NN 研讨会)))
+		     (LC 上))
+	    (PU ，)
+	    (NP-SBJ (NN 学界))
+	    (VP (PP-DIR (P 对)
+			(NP (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NT 五四))
+					(VP (VV 提倡)
+					    (NP-OBJ (-NONE- *T*-2))))
+				    (DEC 的)))
+			    (NP (NN 民主)
+				(PU 、)
+				(NN 科学)
+				(CC 与)
+				(NN 自由))))
+		(PU ，)
+		(ADVP (AD 显然))
+		(ADVP (AD 并))
+		(ADVP (AD 不))
+		(VP (VV 热衷)))) 
+	</parse>
+	<arg n="0">
+	学界 
+	</arg>
+	<arg n="1">
+	对 *OP* 五四 提倡 *T*-2 的 民主 、 科学 与 自由 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<arg n="m" f="adv">
+	显然 
+	</arg>
+	<arg n="m" f="loc">
+	*OP* *T*-1 在 中研院 近代史 研究所 召开 的 「 五四 八十 周年 」 研讨会 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

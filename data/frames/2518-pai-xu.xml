@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 排序 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities arg0 orders"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 截至到)
+		      (LCP (NP (NT 今年)
+			       (NT 九月))
+			   (LC 底)))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-MNR (P 按)
+				  (NP (NP (CP (WHNP-2 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (ADVP (AD 实际))
+						      (VP (VV 使用)
+							  (NP-OBJ (-NONE- *T*-2))))))
+					  (NP (NN 外资)))
+				      (NP (NN 金额))))
+			  (VP (VV 排序))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (PP-LOC (P 在)
+					  (NP-PN (NR 中国)))
+				  (NP-SBJ (NN 投资))
+				  (VP (ADVP (AD 最))
+				      (VP (VA 多))))
+			      (DEC 的)))
+		      (DP (DT 前)
+			  (QP (CD 十)
+			      (CLP (M 位))))
+		      (NP (NN 国家)
+			  (CC 和)
+			  (NN 地区)))
+	      (VP (ADVP (AD 依次))
+		  (VP (VC 是)
+		      (PU ：)
+		      (NP-PN-PRD (NR 香港)
+				 (PU 、)
+				 (NR 台湾)
+				 (PU 、)
+				 (NR 日本)
+				 (PU 、)
+				 (NR 美国)
+				 (PU 、)
+				 (NR 新加坡)
+				 (PU 、)
+				 (NR 韩国)
+				 (PU 、)
+				 (NR 英国)
+				 (PU 、)
+				 (NR 德国)
+				 (PU 、)
+				 (NR 维尔京群岛)
+				 (PU 、)
+				 (NR 法国))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 *OP* *pro* 实际 使用 *T*-2 外资 金额 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

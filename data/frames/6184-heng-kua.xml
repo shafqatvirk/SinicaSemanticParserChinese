@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 横跨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 crosses horizontally"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 更))
+		(VP (VV 成为)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 横跨)
+					    (NP-OBJ (NP-APP (NP-PN (NR 美国))
+							    (PU 、)
+							    (NP-PN (NR 台湾))
+							    (PU 、)
+							    (NP (NP-PN (NR 中国))
+								(NP (NN 大陆))))
+						    (QP (CD 三))
+						    (NP (NN 地)))))
+				    (DEC 的)))
+			    (ADJP (JJ 跨国))
+			    (NP (NN 企业)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	美国 、 台湾 、 中国 大陆 三 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

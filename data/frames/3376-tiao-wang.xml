@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 眺望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing looked at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 站)
+			  (PP-LOC (P 在)
+				  (LCP (NP (NN 山))
+				       (LC 上))))
+		      (VP (VV 眺望)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

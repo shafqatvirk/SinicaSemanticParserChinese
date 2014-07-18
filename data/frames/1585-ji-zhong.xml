@@ -1,0 +1,215 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 集中 </id>
+    <frameset id="f1" edef="focus on">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="focused on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (LCP (NP (NN 区))
+			   (LC 内))
+		      (NP (NN 企业)))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (NN 发展)
+				  (NN 重点))
+			  (VP (ADVP (AD 主要))
+			      (VP (VV 集中)
+				  (PP-LOC (P 在)
+					  (NP (NP-APP (NP (NN 光电子))
+						      (PU 、)
+						      (NP (NN 计算机))
+						      (PU 、)
+						      (NP (ADJP (JJ 新))
+							  (NP (NN 材料)))
+						      (PU 、)
+						      (NP (NN 生物)
+							  (NN 工程))
+						      (ETC 等))
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VV 具有)
+							      (NP-OBJ (ADJP (JJ 一定))
+								      (NP (NN 科研)
+									  (NN 实力)))))
+						      (DEC 的)))
+					      (NP (NN 领域))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  区 内 企业 	  
+	  </arg>
+	  <arg n="1">
+	  发展 重点 	  
+	  </arg>
+	  <arg n="2">
+	  在 光电子 、 计算机 、 新 材料 、 生物 工程 等 *OP* *T*-2 具有 一定 科研 实力 的 领域 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="concentrate">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 统计)))
+	      (PU ，)
+	      (NP-TPC (DP (DT 这)
+			  (QP (CD 一)))
+		      (NP (NN 区域)))
+	      (NP-TMP (NT 现在))
+	      (QP-SBJ (ADVP (AD 仅))
+		      (QP (NP (ADJP (JJ 高耗能))
+			      (NP (NN 工业)))
+			  (QP (CD 一)
+			      (CLP (M 项)))))
+	      (VP (ADVP (AD 就))
+		  (ADVP (AD 已))
+		  (VP (VV 集中)
+		      (AS 了)
+		      (NP-OBJ (QP (ADVP (AD 约))
+				  (QP (CD 三百)
+				      (CLP (M 家))))
+			      (ADJP (JJ 大中型))
+			      (NP (NN 企业)))))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  这 一 区域 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  仅 高耗能 工业 一 项 	  
+	  </arg>
+	  <arg n="0">
+	  约 三百 家 大中型 企业 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 统计 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (IP (ADVP (AD 再说))
+		  (PU ，)
+		  (NP-SBJ (DNP (NP-PN (NR 富士))
+			       (DEG 的))
+			  (NP (NN 风景)))
+		  (VP (ADVP (AD 也))
+		      (ADVP (AD 不))
+		      (ADVP (AD 都))
+		      (VP (VV 集中)
+			  (PP-LOC (P 在)
+				  (NP (NN 山顶))))))
+	      (SP 呀)) 
+	  </parse>
+	  <arg n="0">
+	  富士 的 风景 	  
+	  </arg>
+	  <arg n="1">
+	  在 山顶 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="collector"/>
+      <role argnum="1" argrole="thing collected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VP (VC 是)
+		      (NP-PRD (QP (CD 一)
+				  (CLP (M 个)))
+			      (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP-TMP (-NONE- *T*-1))
+					      (VP (VP (ADVP (AD 充分))
+						      (VP (VV 发扬)
+							  (NP-OBJ (NN 民主))))
+						  (PU ，)
+						  (VP (PP-LOC (P 在)
+							      (LCP (NP (DNP (NP (NN 民主))
+									    (DEG 的))
+								       (NP (NN 基础)))
+								   (LC 上)))
+						      (VP (VV 集中)
+							  (NP-OBJ (ADJP (JJ 正确))
+								  (NP (NN 意见))))))))
+				      (DEC 的)))
+			      (DNP (NP (NN 民主)
+				       (NN 集中制))
+				   (DEG 的))
+			      (NP (NN 过程))))
+		  (PU ，)
+		  (VP (VV 反映)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 立法)
+				       (NN 工作))
+				   (DEG 的))
+			      (NP (NN 群众)
+				  (NN 路线)))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  正确 意见 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 民主 的 基础 上 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

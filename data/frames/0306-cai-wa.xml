@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采挖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="digger"/>
+    <role argnum="1" argrole="thing digged"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (PN 他))
+      (VP (VP (ADVP (AD 就))
+              (VP (VP (VV 垫支)
+                      (QP-OBJ (CD 四千)
+                              (CLP (M 元))))
+                  (PU ，)
+                  (VP (VV 购买)
+                      (NP-OBJ (NN 电线杆)))))
+          (PU ，)
+          (VP (ADVP (AD 又))
+              (VP (VP (VP (VV 组织)
+                          (NP-OBJ (NN 村民)))
+                      (VP (VV 采挖)
+                          (NP-OBJ (NN 水晶矿)))
+                      (VP (VV 增收)
+                          (QP-OBJ (CD 四万)
+                                  (CLP (M 元)))))
+                  (PU ，)
+                  (VP (VV 修建)
+                      (AS 了)
+                      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                                  (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                          (VP (VV 年久失修)))
+                                      (DEC 的)))
+                              (ADJP (JJ 老))
+                              (NP (NN 电站)))))))))
+	</parse>
+	<arg n="0"> 他 </arg>
+	<arg n="M" f="ADV"> 又 </arg>
+	<V/>
+	<arg n="1"> 水晶矿 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

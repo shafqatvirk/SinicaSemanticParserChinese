@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 处罚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="punisher"/>
+      <role argnum="1" argrole="party punished"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 国家)
+			 (NN 环境)
+			 (NN 保护)
+			 (NN 总局))
+	      (VP (VV 要求)
+		  (NP-OBJ (NP (NP-PN (NR 太湖))
+			      (NP (NN 沿岸)))
+			  (DP (DT 各)
+			      (CLP (M 级)))
+			  (NP (NN 环境)
+			      (NN 监理)
+			      (NN 部门)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 加大)
+			      (NP-OBJ (NN 执法)
+				      (NN 力度)))
+			  (PU ，)
+			  (VP (VP (ADVP (AD 积极))
+				  (VP (VV 配合)
+				      (NP-OBJ (ADJP (JJ 有关))
+					      (NP (NN 部门)))))
+			      (VP (PP-DIR (P 对)
+					  (NP (NP (NN 关闭)
+						  (PU 、)
+						  (NN 停产))
+					      (NP (NN 企业))))
+				  (VP (VP (VV 断)
+					  (NP-OBJ (NN 水)))
+				      (VP (VV 断)
+					  (NP-OBJ (NN 电)))
+				      (PU ，)
+				      (VP (VV 吊销)
+					  (NP-OBJ (NN 工商)
+						  (NN 执照))))))
+			  (PU ，)
+			  (CC 并)
+			  (VP (ADVP (AD 加强))
+			      (VP (VV 治理)
+				  (NP-OBJ (DNP (NP (NN 达标)
+						   (NN 企业))
+					       (DEG 的))
+					  (NP (NN 污水)
+					      (NN 处理)
+					      (NN 设施)
+					      (NN 管理)))))
+			  (PU ，)
+			  (VP (PP-DIR (P 对)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 擅自))
+						      (VP (VV 停运)))))
+					  (NP (NN 者))))
+			      (ADVP (AD 从重))
+			      (ADVP (AD 从严))
+			      (VP (VV 处罚))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-1 擅自 停运 者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  从重 
+	  </arg>
+	  <arg n="m" f="adv">
+	  从严 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

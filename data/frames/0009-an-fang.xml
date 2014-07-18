@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 安放 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DNP (NP-PN (NR 全文燮))
+			     (DEG 的))
+			(NP (NN 遗体)))
+		(VP (VV 安放)
+		    (PP (P 在)
+			(NP (NP-PN (NR 平壤市)
+				   (NR 普通江区))
+			    (NP-PN (NR 西场)
+				   (NN 俱乐部)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="1">
+	  全文燮 的 遗体 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  在 平壤市 普通江区 西场 俱乐部 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

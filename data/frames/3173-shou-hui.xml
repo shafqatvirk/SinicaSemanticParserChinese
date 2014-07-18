@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/receiver"/>
+      <role argnum="1" argrole="thing taken back"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 有的))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 收回)
+		      (NP-OBJ (ADJP (JJ 最初))
+			      (NP (NN 投资)))))) 
+	  </parse>
+	  <arg n="0">
+	  有的 企业 
+	  </arg>
+	  <arg n="1">
+	  最初 投资 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 所有))
+			  (DP (DT 这些))
+			  (NP (NN 投入)))
+		  (VP (PP-TMP (P 在)
+			      (NP (NT 当年)))
+		      (ADVP (AD 即))
+		      (VP (VV 可)
+			  (VP (VV 收回))))) 
+	  </parse>
+	  <arg n="1">
+	  所有 这些 投入 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 当年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (LCP-TMP (NP (NN 事))
+		       (LC 后))
+	      (PP-PRP (P 由于)
+		      (IP (NP-SBJ (NP (PN 他))
+				  (NP (NN 药检)))
+			  (VP (ADVP (AD 没))
+			      (VP (VV 通过)))))
+	      (PU ，)
+	      (NP-SBJ-1 (NN 王冠))
+	      (VP (SB 被)
+		  (VP (VV 收回)
+		      (NP-OBJ (-NONE- *-1))))) 
+	  </parse>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 他 药检 没 通过 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  事 后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

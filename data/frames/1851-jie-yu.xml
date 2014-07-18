@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 介於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entities arg0 lies between"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 价值))
+	      (VP (VV 介於)
+		  (LCP-OBJ (QP (QP (CD 一千)
+				   (CLP (M 元)))
+			       (CC 至)
+			       (QP (CD 十万)
+				   (CLP (M 元))))
+			   (LC 之间)))) 
+	  </parse>
+	  <arg n="0">
+	  价值 
+	  </arg>
+	  <arg n="1">
+	  一千 元 至 十万 元 之间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 选出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity elected/selected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NN 会议)
+		      (NN 期间))
+	      (PU ，)
+	      (NP-SBJ (NN 代表们))
+	      (VP (VP (ADVP (AD 原则上))
+		      (VP (VV 通过)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 新)))
+					  (DEC 的)))
+				  (NP (NN 剧协)
+				      (NN 章程)))))
+		  (PU ，)
+		  (VP (VV 总结)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 剧协)
+				       (NN 工作))
+				   (DEG 的))
+			      (NP (NN 成绩)
+				  (CC 和)
+				  (NN 不足))))
+		  (PU ，)
+		  (VP (VV 选出)
+		      (AS 了)
+		      (NP-OBJ (QP (ADJP (JJ 新))
+				  (QP (CD 一)
+				      (CLP (M 届))))
+			      (NP (NN 剧协)
+				  (NN 领导)
+				  (NN 成员)))))) 
+	  </parse>
+	  <arg n="0">
+	  代表们 
+	  </arg>
+	  <arg n="1">
+	  新 一 届 剧协 领导 成员 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  会议 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

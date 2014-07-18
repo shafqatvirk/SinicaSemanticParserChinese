@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 研治 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 studies"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这些))
+		      (NP (NN 古代)
+			  (NN 博士)))
+	      (VP (VP (ADVP (AD 并))
+		      (VP (VE 无)
+			  (NP-OBJ (DNP (LCP (NP (NN 政治))
+					    (LC 上))
+				       (DEG 的))
+				  (ADJP (JJ 实际))
+				  (NP (NN 任务)))))
+		  (PU ，)
+		  (VP (ADVP (AD 纯))
+		      (VP (VC 为)
+			  (NP-PRD (NN 学术)
+				  (NN 人员))))
+		  (PU ，)
+		  (VP (ADVP (AD 专门))
+		      (VP (VV 研治)
+			  (NP-OBJ (NN 历史)
+				  (CC 与)
+				  (NN 政治)))))) 
+	  </parse>
+	  <arg n="0">
+	  这些 古代 博士 
+	  </arg>
+	  <arg n="1">
+	  历史 与 政治 
+	  </arg>
+	  <arg n="m" f="adv">
+	  专门 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 即 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="reacher"/>
+      <role argnum="1" argrole="thing reached"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 可)
+				      (VP (VV 望)
+					  (NP-OBJ (-NONE- *-2))))
+				  (CC 而)
+				  (VP (ADVP (AD 不))
+				      (VP (VV 可)
+					  (VP (VV 即)
+					      (NP-OBJ-2 (-NONE- *T*-1)))))))
+			  (DEC 的)))
+		  (NP (NN 境地))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="predicative on arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-APP (NP (QP (CD 三))
+			      (NP (NN Ｒ)))
+			  (NP (NN 原则)))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VC 即)
+			  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (ADVP (AD 少))
+					  (VP (VV 用)))
+				      (PU 、)
+				      (VP (ADVP (AD 重复))
+					  (VP (VV 使用)))
+				      (CC 及)
+				      (VP (VV 回收))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 少 用 、 重复 使用 及 回收 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

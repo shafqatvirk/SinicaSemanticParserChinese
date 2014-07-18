@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 称许 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 thinks highly of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (PN 她))
+			   (DEG 的))
+		      (NP (NN 干练)
+			  (CC 与)
+			  (NN 才华)))
+	      (PU ，)
+	      (VP (ADVP (AD 早))
+		  (ADVP (AD 就))
+		  (VP (LB 为)
+		      (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			      (IP (NP-SBJ (NN 同业))
+				  (VP (MSP 所)
+				      (VP (VV 称许)
+					  (NP-OBJ (-NONE- *T*-2))))))))) 
+	  </parse>
+	  <arg n="0">
+	  同业 
+	  </arg>
+	  <arg n="1">
+	  她 的 干练 与 才华 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  早 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 款待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="party entertained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PP-PRP (P 为)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 迎接)
+				(NP-OBJ (NN 新春)
+					(NN 佳节)))))
+		(PU ，)
+		(NP-PN-SBJ (NR 蔡方柏)
+			   (NN 大使))
+		(VP (VP (VV 举行)
+			(NP-OBJ (ADJP (JJ 盛大))
+				(NP (NN 酒会))))
+		    (PU ，)
+		    (VP (VV 款待)
+			(NP-OBJ (QP (CD ５００多)
+				    (CLP (M 位)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 侨居)
+						(NP-PN-OBJ (NR 法国))))
+					(DEC 的)))
+				(NP (NN 侨胞)))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  蔡方柏 大使 
+	  </arg>
+	  <arg n="1">
+	  ５００多 位 *OP* *T*-1 侨居 法国 的 侨胞 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *pro* 迎接 新春 佳节 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 清清楚楚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is clear about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-3 (NP-TPC-2 (NP (DP-WH (DT 哪)
+					   (QP (CD 一)
+					       (CLP (M 方))))
+				    (NP (NN 印) ))
+				(PU ，)
+				(NP (DP-WH (DT 哪)
+					   (QP (CD 一)
+					       (CLP (M 幅))))
+				    (NP (NN 字) )))
+		      (PU ，)
+		      (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP-WH (AD 何时))
+			  (VP (MSP 所)
+			      (VP (VV 做)
+				  (NP-OBJ (-NONE- *T*-2))))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 壮老) )
+		    (NP (NN 夫人) ))
+	    (VP (ADVP (AD 都))
+		(VP (VV 清清楚楚)
+		    (IP-OBJ (-NONE- *T*-3))))) 
+	</parse>
+	<arg n="0">
+	壮老 夫人 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

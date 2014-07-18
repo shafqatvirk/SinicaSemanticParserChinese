@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 失去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity suffering loss"/>
+      <role argnum="1" argrole="entity lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 家))
+				  (VP (VV 住)
+				      (NP-PN-OBJ (NR 湖北省)
+						 (NR 新洲县))))
+			      (DEC 的)))
+		      (NP-PN (NR 叶章荣)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (NT 今年))
+				   (CP (WHNP-2 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-2))
+					       (VP (VP (VA 罕见))))
+					   (DEC 的)))
+				   (ADJP (JJ 大))
+				   (NP (NN 洪水)))
+			       (LC 中)))
+		  (VP (VV 失去)
+		      (AS 了)
+		      (NP-OBJ (NN 家园))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 家 住 湖北省 新洲县 的 叶章荣 
+	  </arg>
+	  <arg n="1">
+	  家园 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 今年 *OP* *T*-2 罕见 的 大 洪水 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

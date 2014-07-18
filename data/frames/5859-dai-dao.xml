@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 带到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 brings"/>
+    <role argnum="2" argrole="place arg1 is brought to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VP (VV 办)
+			    (NP-OBJ (NN 英文报)))
+			(VP (VC 是)
+			    (VP (PP-PRD (P 为了)
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 帮)
+						(NP-PN-OBJ (NR 台湾))
+						(IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (PU 「)
+							(VV 出)
+							(NP-OBJ (QP (CD 一)
+								    (CLP (M 口)))
+								(NP (NN 气)))
+							(PU 」))))))))
+			(PU ，)
+			(VP (VV 要)
+			    (VP (VP (VV 藉助)
+				    (NP-OBJ (NN 英文)
+					    (NN 媒体)))
+				(VP (BA 把)
+				    (IP-OBJ (NP-PN-SBJ (NR 台湾))
+					    (VP (VV 带到)
+						(NP-OBJ (NN 国际)))))
+				(PU ，)
+				(VP (BA 把)
+				    (IP-OBJ (NP-SBJ (NN 国际))
+					    (VP (VV 带到)
+						(NP-PN-OBJ (NR 台湾)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<arg n="2">
+	国际 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (SB 被)
+				    (VP (VV 叫到))))
+			    (DEC 的))))
+	    (VP (VP (ADVP (AD 便))
+		    (VP (VV 收拾)
+			(NP-OBJ (NN 行李))))
+		(PU ，)
+		(VP (ADVP (AD 然後))
+		    (VP (SB 被)
+			(VP (VV 带到)
+			    (NP-OBJ (NN 广场)))))
+		(PU ，)
+		(VP (ADVP (AD 尔後))
+		    (ADVP (AD 再))
+		    (DVP (IP (NP-SBJ (QP (CD 两)
+					 (CLP (M 个)))
+				     (NP (NN 人)))
+			     (VP (VV 成)
+				 (QP-OBJ (CD 一)
+					 (CLP (M 对)))))
+			 (DEV 的))
+		    (VP (SB 被)
+			(VP (VV 扣上)
+			    (NP-OBJ (NN 手铐))))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-3 被 叫到 的 
+	</arg>
+	<arg n="2">
+	广场 
+	</arg>
+	<arg n="m" f="adv">
+	然後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

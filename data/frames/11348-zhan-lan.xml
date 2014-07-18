@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 展览 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 exhibits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而且))
+	    (NP-SBJ (NP (NN 民族学)
+			(CC 或)
+			(NN 人类学))
+		    (NP (NN 博物馆)))
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 陈列)
+				     (CC 与)
+				     (VV 展览)))
+			     (LC 时)))
+		(PU ，)
+		(ADVP (AD 都))
+		(VP (VV 会)
+		    (VP (VV 遇到)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (SB 被)
+						(VP (VV 质疑)
+						    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							    (VP (PP-MNR (P 以)
+									(NP (DNP (NP (NP (NN 主流))
+										     (PU 「)
+										     (ADJP (JJ 异))
+										     (NP (NN 文化))
+										     (PU 」))
+										 (DEG 的))
+									    (NP (NN 观点))))
+								(VP (MSP 来)
+								    (VP (VV 诠释)
+									(NP-OBJ (NN 展览)
+										(NN 对象)))))))))
+					(DEC 的))
+				(NP (NN 问题))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

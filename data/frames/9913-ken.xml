@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 啃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 bites"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 个个))
+	      (VP (VP (LCP-LOC (NP (NN 手))
+			       (LC 上))
+		      (VP (VV 拎)
+			  (AS 了)
+			  (NP-OBJ (QP (CLP (M 袋)))
+				  (NP (NN 莲雾)))))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 边))
+			  (VP (VV 啃)))
+		      (VP (ADVP (AD 边))
+			  (VP (VV 赞叹)
+			      (PU ：)
+			      (IP-WH-OBJ (NP-SBJ (-NONE- *pro*))
+					 (VP (ADVP-WH (AD 怎麽))
+					     (ADVP (AD 这麽))
+					     (VP (VA 甜))))))))) 
+	  </parse>
+	  <arg n="0">
+	  个个 
+	  </arg>
+	  <arg n="m" f="adv">
+	  边 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

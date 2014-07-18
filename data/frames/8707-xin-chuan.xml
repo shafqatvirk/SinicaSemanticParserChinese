@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 薪传 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 passes on to next generation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 想要)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 长久))
+				      (VP (VV 保存)
+					  (NP-OBJ (NP (DNP (NP (NT 过去))
+							   (DEG 的))
+						      (ADJP (JJ 老))
+						      (ADJP (JJ 旧))
+						      (NP (NN 火车)))
+						  (NP (NN 机械))))))))
+	      (PU ，)
+	      (NP-SBJ (NN 技术))
+	      (VP (VP (ADVP (AD 非))
+		      (VP (VV 得)
+			  (VP (VV 薪传))))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 可))))) 
+	  </parse>
+	  <arg n="1">
+	  技术 
+	  </arg>
+	  <arg n="m" f="adv">
+	  非 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *pro* 想要 *PRO* 长久 保存 过去 的 老 旧 火车 机械 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

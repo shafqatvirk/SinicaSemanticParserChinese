@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 退还 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity returned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 传销商))
+			   (VP (VV 退出)))
+		       (LC 时))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 他))
+				  (VP (MSP 所)
+				      (VP (VV 订购)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 商品)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 可以)
+		      (VP (VV 退还))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 他 所 订购 *T*-1 的 商品 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 牵动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 糖厂))
+		    (ADJP (JJ 小))
+		    (NP (NN 火车)))
+	    (PU ，)
+	    (VP (VV 牵动)
+		(AS 著)
+		(NP-OBJ (NP (QP (CD 许多))
+			    (NP (NN 农村)
+				(NN 孩子)))
+			(DNP (NP (NN 幼时))
+			     (DEG 的))
+			(ADJP (JJ 温暖))
+			(NP (NN 回忆))))) 
+	</parse>
+	<arg n="0">
+	糖厂 小 火车 
+	</arg>
+	<arg n="1">
+	许多 农村 孩子 幼时 的 温暖 回忆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NP-PN (NR 桃)
+				    (NR 竹)
+				    (NR 苗)
+				    (PU 、)
+				    (NR 宜兰))
+			     (NP (NN 水土)
+				 (NN 系统)))
+			 (DEG 的))
+		    (NP (NN 稳定)))
+	    (VP (ADVP (AD 紧紧))
+		(VP (LB 受)
+		    (CP-OBJ (WHNP-3 (-NONE- *OP*))
+			    (IP (NP-SBJ (PN 其))
+				(VP (VV 牵动)
+				    (NP-OBJ (-NONE- *T*-3)))))))) 
+	</parse>
+	<arg n="0">
+	其 
+	</arg>
+	<arg n="1">
+	桃 竹 苗 、 宜兰 水土 系统 的 稳定 
+	</arg>
+	<arg n="m" f="adv">
+	紧紧 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

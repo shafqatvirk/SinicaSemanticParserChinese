@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 畏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 is afraid of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (DNP (LCP (NP (NN 体操)
+					    (NN 赛坛))
+					(LC 上))
+				   (DEG 的))
+			      (NP (NN 无名之辈)))
+		      (PU 、)
+		      (NP (DNP (NP-PN (NR 希腊))
+			       (DEG 的))
+			  (NP-PN (NR 洛·迈利萨尼迪斯))))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 畏)
+			  (NP-OBJ (NN 强手))))
+		  (PU ，)
+		  (VP (PP (P 同)
+			  (NP (NP-APP (NP-PN (NR 白俄罗斯))
+				      (NP (NN 名将)))
+			      (NP-PN (NR 谢尔博))))
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 金牌)
+				  (NN 竞争)))))) 
+	  </parse>
+	  <arg n="0">
+	  体操 赛坛 上 的 无名之辈 、 希腊 的 洛·迈利萨尼迪斯 
+	  </arg>
+	  <arg n="1">
+	  强手 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 塌落 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place arg0 sags/collapses onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+						 (VP (VA 年轻)))
+					     (LC 时))
+				    (VP (VA 厚实))))
+			    (DEC 的)))
+		    (NP (NN 胸肌) ))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 不))
+			    (VP (VV 知)
+				(NP-TMP (PN 何时)))))
+		(VP (VRD (VV 塌落)
+			 (VV 到))
+		    (NP-OBJ (NN 腹部) )))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 *pro* 年轻 时 厚实 的 胸肌 
+	</arg>
+	<arg n="1">
+	腹部 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 不 知 何时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

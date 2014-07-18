@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 带起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 causes to develop"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 带起)
+		(AS 了)
+		(NP-OBJ (NP (NP-PN (NR 台湾) )
+			    (NP (ADJP (JJ 毒))
+				(NP (NN 蛇)))
+			    (NP (NN 血清)
+				(NN 研究)))
+			(NP (NN 风气))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	台湾 毒 蛇 血清 研究 风气 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (NP-TMP (NN 现代))
+				    (VP (VV 风靡)
+					(NP-OBJ (NN 全球)))))
+			    (DEC 的)))
+		    (ADJP (JJ 标准))
+		    (NP (QP (CD 十八))
+			(NP (NN 洞)))
+		    (NP (NN 高尔夫球)
+			(NN 运动)))
+	    (PU ，)
+	    (NP-SBJ (NN 研究)
+		    (NN 人员))
+	    (VP (ADVP (AD 却))
+		(ADVP (AD 很))
+		(VP (VV 确定)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VC 是)
+				(VP (PP-LGS (P 由)
+					    (NP-PN (NR 苏格兰)))
+				    (ADVP (AD 首先))
+				    (VP (VV 带起)
+					(NP-OBJ (NN 风气))))))))) 
+	</parse>
+	<arg n="0">
+	由 苏格兰 
+	</arg>
+	<arg n="1">
+	风气 
+	</arg>
+	<arg n="m" f="adv">
+	首先 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

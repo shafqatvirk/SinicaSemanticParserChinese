@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 产出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="producer"/>
+    <role argnum="1" argrole="product"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NT 一九六四年))
+      (PU ，)
+      (NP-PN-SBJ (NR 金川)
+                 (NN 公司))
+      (VP (VV 产出)
+          (NP-OBJ (QP (OD 第一)
+                      (CLP (M 批)))
+                  (ADJP (JJ 电解))
+                  (NP (NN 镍))))
+      (PU 。)))
+	</parse>
+	<arg n="M" f="TMP"> 一九六四年 </arg>
+	<arg n="0"> 金川 公司 </arg>
+	<V/>
+	<arg n="1"> 第一 批 电解 镍 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

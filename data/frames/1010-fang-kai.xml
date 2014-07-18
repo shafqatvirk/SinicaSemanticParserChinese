@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 陕西省))
+	      (VP (VV 提出)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (NP-TMP (NT 明年))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NP (DP (DT 全))
+						      (NP (NN 省)))
+						  (ADJP (JJ 国有))
+						  (ADJP (JJ 小))
+						  (NP (NN 企业)))
+					  (VP (ADVP (AD 基本上))
+					      (VP (VCD (VV 放开)
+						       (VV 搞活)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  全 省 国有 小 企业 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  明年 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  基本上 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (QP (CD 一))
+			  (NP (NN 线)))
+		  (VP (VV 放开)))
+	      (PU ，)
+	      (IP (NP-SBJ (QP (CD 二))
+			  (NP (NN 线)))
+		  (VP (VV 隔离)))) 
+	  </parse>
+	  <arg n="0">
+	  一 线	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

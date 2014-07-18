@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致力 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes efforts in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NP-PN (NN 外交部))
+			     (NP (ADJP (JJ 驻港))
+				 (NP (NN 特派员)))
+			     (NP (NN 公署)))
+		  (VP (VV 致力)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 协助)
+				  (NP-OBJ (NN 特区)
+					  (NN 政府))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 处理)
+					  (NP-OBJ (DNP (PP (P 经)
+							   (NP (NN 授权)))
+						       (DEG 的))
+						  (PP (P 对)
+						      (NP (NN 外)))
+						  (NP (NN 事务))))))))) 
+	  </parse>
+	  <arg n="0">
+	  外交部 驻港 特派员 公署 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 协助 特区 政府 *PRO* 处理 经 授权 的 对 外 事务 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-LOC (P 在)
+				      (NP-PN (NR 北京)))
+			      (VP (VV 成立)
+				  (NP-OBJ (NN 分行)))))
+		  (PU ，)
+		  (VP (ADVP (AD 将))
+		      (PP-BNF (P 为)
+			      (IP (NP-SBJ (NP (PN 我))
+					  (NP (NN 行)))
+				  (VP (VV 继续)
+				      (VP (VV 致力)
+					  (PP-LOC (P 于)
+						  (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (VV 促进)
+							  (NP-OBJ (DNP (NP (NP-PN (NR 加拿大)
+										  (CC 乃至)
+										  (NR 北美))
+									   (CC 与)
+									   (NP-PN (NR 中国)))
+								       (DEG 的))
+								  (ADJP (JJ 重要))
+								  (NP (NN 贸易)
+								      (CC 和)
+								      (NN 投资))
+								  (NP (NN 关系))))))))))
+		      (VP (VV 提供)
+			  (NP-OBJ (ADJP (JJ 重要))
+				  (NP (NN 机遇)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 行 
+	  </arg>
+	  <arg n="1">
+	  于 *pro* 促进 加拿大 乃至 北美 与 中国 的 重要 贸易 和 投资 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

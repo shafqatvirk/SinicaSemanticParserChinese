@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing distributed to lower levels"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 近年))
+		  (NP-SBJ (NN 省)
+			  (NN 政府))
+		  (VP (VP (ADVP (AD 先后))
+			  (VP (VV 下发)
+			      (AS 了)
+			      (NP-OBJ (NP-APP (NP-TTL (PU 《)
+						      (CP-APP (WHNP (-NONE- *OP*))
+							      (CP (IP (NP-SBJ (-NONE- *pro*))
+								      (VP (VV 鼓励)
+									  (NP-OBJ (ADJP (JJ 留学))
+										  (NP (NN 人员)))
+									  (IP (NP-SBJ (-NONE- *PRO*))
+									      (VP (VP (VV 来)
+										      (NP-PN-OBJ (NR 广东)))
+										  (VP (VV 工作))))))
+								  (DEC 的)))
+						      (ADJP (JJ 暂行))
+						      (NP (NN 规定))
+						      (PU 》))
+					      (PU 、)
+					      (NP-TTL (PU 《)
+						      (DNP (PP (P 关于)
+							       (IP (NP-SBJ (-NONE- *pro*))
+								   (VP (VV 加强)
+								       (NP-OBJ (NN 人才)
+									       (NN 招聘)
+									       (NN 工作)))))
+							   (DEG 的))
+						      (NP (NN 通知))
+						      (PU 》))
+					      (ETC 等))
+				      (NP (NN 文件))))))) 
+	  </parse>
+	  <arg n="0">
+	  省 政府 
+	  </arg>
+	  <arg n="1">
+	  《 *OP* *pro* 鼓励 留学 人员 *PRO* 来 广东 工作 的 暂行 规定 》 、 《 关于 *pro* 加强 人才 招聘 工作 的 通知 》 等 文件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先后 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

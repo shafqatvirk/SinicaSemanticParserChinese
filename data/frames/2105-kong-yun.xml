@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 空运 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity transported"/>
+      <role argnum="2" argrole="source"/>
+      <role argnum="3" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (PN 他))
+		(VP (VP (PP-BNF (P 给)
+				(NP (DNP (NP (NN 空中)
+					     (NN 旅行))
+					 (DEG 的))
+				    (NP (NN 蜜蜂))))
+			(VP (VV 喂)
+			    (NP-OBJ (NN 液体)
+				    (NN 饲料))))
+		    (PU ，)
+		    (VP (PP-BNF (P 为)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 空运)
+					(NP-OBJ (NN 蜜蜂)))))
+			(VP (VV 创出)
+			    (AS 了)
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 项)))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VA 新)))
+					    (DEC 的)))
+				    (NP (NN 技术))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  蜜蜂 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

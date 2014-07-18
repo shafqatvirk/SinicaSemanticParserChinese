@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宝惜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 cherishes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (DNP (NP (PN 他们))
+			   (DEG 的))
+		      (NP (NN 喜感)))
+	      (PU ，)
+	      (VP (ADVP (AD 则))
+		  (VP (VV 来自於)
+		      (IP-OBJ (NP-SBJ (PN 他们))
+			      (VP (VP (ADVP (AD 依旧))
+				      (VP (VV 宝惜)
+					  (AS 著)
+					  (NP-OBJ (DP (DT 那些))
+						  (NP (NP (ADJP (JJ 老))
+							  (NP (NN 智慧)))
+						      (PU 、)
+						      (NP (ADJP (JJ 老))
+							  (NP (NN 规矩)))))))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 肯)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 放手)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  那些 老 智慧 、 老 规矩 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依旧 
+	  </arg>
+	  <V/> 
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自设 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 sets up himself"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 常))
+				      (PP-LOC (P 在)
+					      (NP (CP (WHNP-1 (-NONE- *OP*))
+						      (IP (NP-SBJ (-NONE- *pro*))
+							  (VP (VV 自设)
+							      (NP-OBJ (-NONE- *T*-1)))))
+						  (NP (NN 网站))))
+				      (PP (P 与)
+					  (NP (NN 网友)))
+				      (VP (VV 讨论)
+					  (NP-OBJ (DP (DT 各)
+						      (CLP (M 种)))
+						  (NP (NN 社会)
+						      (NN 现象))))))
+			      (DEC 的)))
+		      (NP-APP (ADJP (JJ 年轻))
+			      (NP (NN 上班族)))
+		      (NP-PN (NR 李思逸)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 认为)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (ADJP (JJ 现代))
+				      (ADJP (JJ 美))
+				      (NP (NN 男子)))
+			      (VP (ADVP (AD 不))
+				  (ADVP (AD 再))
+				  (VP (VV 具有)
+				      (NP-OBJ (ADJP (JJ 阳刚))
+					      (ADJP (JJ 粗犷))
+					      (NP (NN 特质))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惨重 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 国际)
+              (NN 社会))
+      (VP (VV 应)
+          (VP (ADVP (AD 积极))
+              (VP (VV 帮助)
+                  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                              (CP (IP (NP-TPC (-NONE- *T*-1))
+                                      (PP-LOC (P 在)
+                                              (LCP (NP (DP (DT 这)
+                                                           (CLP (M 次)))
+                                                       (NP (NN 危机)))
+                                                   (LC 中)))
+                                      (NP-SBJ (NN 损失))
+                                      (VP (VV 惨重)))
+                                  (DEC 的)))
+                          (NP (NN 国家)))
+                  (IP (NP-SBJ (-NONE- *PRO*))
+                      (VP (VV 走出)
+                          (NP-OBJ (NN 困境)))))))
+      (PU 。)))
+	</parse>
+	<arg n="0" f="PSR"> (*T*-1)->(国家) </arg>
+	<arg n="0" f="PSE"> 损失 </arg>
+	<arg n="M" f="LOC"> 在 这 次 危机 中 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

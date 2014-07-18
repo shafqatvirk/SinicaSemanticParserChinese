@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 骤减 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity decreasing suddenly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VRD (VV 接)
+					   (VV 下来)))))
+			  (NP (NN e世代)))
+		  (ADVP (AD 又))
+		  (NP-SBJ (NN 人数))
+		  (VP (VV 骤减))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *OP* *T*-2 接 下来 e世代 
+	  </arg>
+	  <arg n="0" f="pse">
+	  人数 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

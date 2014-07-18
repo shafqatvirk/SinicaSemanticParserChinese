@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 弄出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 produces/causes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 最後))
+		(ADVP (AD 却))
+		(VP (VV 弄出)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (PP-LOC (P 在)
+						    (LCP (NP (NN 民主)
+							     (NN 女神像))
+							 (LC 前)))
+					    (ADVP (AD 疯狂))
+					    (VP (VV 杀)
+						(NP-OBJ (NN 夫)))))
+				    (DEC 的))
+			    (ADJP (JJ 血腥))
+			    (NP (NN 结局)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 在 民主 女神像 前 疯狂 杀 夫 的 血腥 结局 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

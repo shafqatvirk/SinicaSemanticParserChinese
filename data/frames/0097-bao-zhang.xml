@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保障 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="maintainer"/>
+    <role argnum="1" argrole="thing protected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+(IP-HLN (NP-PN-SBJ (NR 天津))
+        (VP (ADVP (AD 依法))
+            (VP (VV 保障)
+                (NP-OBJ (NP (NN 外企))
+                        (ADJP (JJ 合法))
+                        (NP (NN 权益))))))
+	</parse>
+	<arg n="0"> 天津 </arg>
+	<arg n="M" f="ADV"> 依法 </arg>
+	<V/>
+	<arg n="1"> 外企 合法 权益 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+(PP-LOC (P 在)
+        (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+                             (VP (VV 保障)
+                                 (IP-OBJ (NP-PN-SBJ (NR 四川省)
+                                                    (PU 、)
+                                                    (NR 重庆市))
+                                         (VP (VV 用)
+                                             (NP-OBJ (NN 气))))))
+                         (DEC 的))
+                 (NP (NN 情况)))
+             (LC 下)))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> 四川省 、 重庆市 用 气 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

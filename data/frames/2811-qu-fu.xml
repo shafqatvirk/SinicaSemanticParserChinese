@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 屈服 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity surrender to "/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VP (NP-TMP (NT 过去))
+		      (VP (VV 没有)
+			  (VP (VV 屈服)
+			      (PP-EXT (P 于)
+				      (NP (DP (DT 任何))
+					  (ADJP (JJ 外来))
+					  (NP (NN 压力)))))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 现在))
+		      (ADVP (AD 仍然))
+		      (DVP (VP (VA 始终不渝))
+			   (DEV 地))
+		      (VP (VV 维护)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (PN 自己))
+					      (VP (VV 决定)
+						  (NP-OBJ (PN 自己)
+							  (NT 未来))))
+					  (DEC 的))
+				  (NP (NN 权利))))))) 
+	  </parse>
+	  <arg n="0">
+	  它 
+	  </arg>
+	  <arg n="1">
+	  于 任何 外来 压力 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  过去 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 萨达姆))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 屈服)))) 
+	  </parse>
+	  <arg n="0">
+	  萨达姆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 炖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 stews"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 因为)
+		      (IP (NP-SBJ (PN 大家))
+			  (VP (VV 用)
+			      (NP-OBJ (NN 电窑)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 可以)
+		  (VP (VP (ADVP (AD 精确))
+			  (VP (VV 控制)
+			      (NP-OBJ (NN 温度))))
+		      (PU ，)
+		      (VP (ADVP (AD 慢慢))
+			  (VP (PU 『)
+			      (VV 炖)
+			      (PU 』)))
+		      (PU ，)
+		      (VP (ADVP (AD 慢慢))
+			  (VP (VV 烧)))
+		      (PU ，)
+		      (VP (ADVP (AD 不))
+			  (VP (VV 必)
+			      (VP (VV 担心)
+				  (IP-OBJ (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-3))
+							      (VP (VA 急遽)))
+							  (DEC 的)))
+						  (NP (NN 热涨冷缩)))
+					  (VP (VV 会)
+					      (VP (BA 把)
+						  (IP-OBJ (NP-SBJ (NN 作品))
+							  (VP (VV 烧裂)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  慢慢 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 大家 用 电窑 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

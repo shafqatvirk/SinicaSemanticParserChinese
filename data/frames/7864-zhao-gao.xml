@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 昭告 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="announcement arg0 makes"/>
+    <role argnum="2" argrole="entity arg1 is made to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+	<mapitem src="io" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 全)
+			(CLP (M 家)))
+		    (NP (NN 人)))
+	    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 卯足)
+				(NP-OBJ (NN 劲儿))))
+		    (ADVP (AD 在))
+		    (VP (PU 『)
+			(VV 赚)
+			(NP-OBJ (NN 钱))
+			(PU 』)))
+		(PU ，)
+		(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 讲足)
+				     (AS 了)
+				     (NP-OBJ (QP (CD 一)
+						 (CLP (M 个)))
+					     (NP (NN 钟头)))))
+			     (LC 後))
+		    (PU ，)
+		    (VP (VV 继续)
+			(VP (VV 昭告)
+			    (NP-IO (DP (DT 诸))
+				   (NP (NN 亲友)))
+			    (IP-OBJ (PU 『)
+				    (NP-SBJ (PN 我))
+				    (VP (VV 赚到)
+					(AS 了))
+				    (PU 』))))))) 
+	</parse>
+	<arg n="0">
+	全 家 人 
+	</arg>
+	<arg n="1">
+	『 我 赚到 了 』 
+	</arg>
+	<arg n="2">
+	诸 亲友 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 讲足 了 一 个 钟头 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

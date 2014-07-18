@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保存 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="keeper"/>
+    <role argnum="1" argrole="thing kept"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (PU “)
+          (NP-SBJ (PN 你们))
+          (VP (VV 保存)
+              (AS 了)
+              (NP-OBJ (DNP (NP (NN 人类))
+                           (DEG 的))
+                      (NP (NN 记忆))))
+          (PU ”)))
+	</parse>
+	<arg n="0"> 你们 </arg>
+	<V/>
+	<arg n="1"> 人类 的 记忆 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

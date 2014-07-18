@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 激起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 triggers/stirs up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 於是))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 激起)
+		(AS 了)
+		(NP-OBJ (CP-APP (IP (NP-SBJ (PN 他们))
+				    (VP (VV 涉入)
+					(NP-OBJ (DP (DT 此)
+						    (QP (CD 一)))
+						(NP (NN 领域)))))
+				(DEC 的))
+			(NP (NN 企图心))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	他们 涉入 此 一 领域 的 企图心 
+	</arg>
+	<arg n="m" f="dis">
+	於是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

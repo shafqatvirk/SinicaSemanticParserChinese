@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 sets in motion"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现在))
+	    (PU ，)
+	    (NP-SBJ (CP-APP (IP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 精省)))
+				(CC 与)
+				(IP (NP-SBJ (NN 政府))
+				    (VP (VV 再造))))
+			    (DEC 的))
+		    (NP (NN 列车)))
+	    (VP (ADVP (AD 已经))
+		(VP (VV 开动)))) 
+	</parse>
+	<arg n="1">
+	*PRO* 精省 与 政府 再造 的 列车 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 多亏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 owes to"/>
+      <role argnum="2" argrole="thing arg0 owes to arg1 for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这))
+		      (NP (PN 一切)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 多亏)
+		      (AS 了)
+		      (NP-PN-OBJ (NR 马汀娜))))) 
+	  </parse>
+	  <arg n="1">
+	  马汀娜 
+	  </arg>
+	  <arg n="2">
+	  这 一切 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

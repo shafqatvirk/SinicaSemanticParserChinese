@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing transmitted"/>
+      <role argnum="1" argrole="place arg0 is transmitted to"/>
+      <role argnum="2" argrole="cause of transmission of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-TTL-SBJ (PU 《)
+					      (NN 证券法)
+					      (PU 》))
+				  (VP (VV 出台)))
+			      (DEC 的))
+		      (NP (NN 消息)))
+	      (VP (VV 传到)
+		  (NP-OBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (NP-PN-LOC (NR 中国))
+						  (ADVP (AD 最))
+						  (VP (VA 大))))
+					  (DEC 的)))
+				  (NP (NN 证券)
+				      (NN 交易)
+				      (NN 中心)
+				      (NN 城市)))
+			  (NP-PN (NR 上海))))) 
+	  </parse>
+	  <arg n="0">
+	  《 证券法 》 出台 的 消息 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 中国 最 大 的 证券 交易 中心 城市 上海 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-MNR (P 经由)
+			      (NP (NN 推拿)))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 药效))
+				  (VP (PP-MNR (P 透过)
+					      (NP (NN 经络)))
+				      (VP (VV 传到)
+					  (NP-OBJ (NN 体内)))))))) 
+	  </parse>
+	  <arg n="0">
+	  药效 
+	  </arg>
+	  <arg n="1">
+	  体内 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  透过 经络 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 不足为奇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="person arg0 is not a surprise to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (LCP-SBJ (NP (NN 研讨会))
+			       (LC 上))
+		      (VP (VV 出现)
+			  (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 台湾))
+					      (VP (PU 「)
+						  (VV 超越)
+						  (NP-OBJ (NT 五四))
+						  (PU 」)))
+					  (DEC 的))
+				  (NP (NN 说法)))))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 就))
+		  (VP (VV 不足为奇)))
+	      (SP 了)
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  研讨会 上 出现 台湾 「 超越 五四 」 的 说法 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

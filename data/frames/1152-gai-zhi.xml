@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="new format, system, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-ADV (NN 其中))
+		  (VP (VE 有)
+		      (IP-OBJ (QP-SBJ (CD 一千零八十)
+				      (CLP (M 户)))
+			      (VP (VRD (VV 改制)
+				       (VV 成))
+				  (AS 了)
+				  (NP-OBJ (DNP (ADJP (ADJP (JJ 多元))
+						     (ADJP (JJ 持股)))
+					       (DEG 的))
+					  (NP (NP (NP (ADJP (JJ 有限))
+						      (NP (NN 责任)))
+						  (NP (NN 公司)))
+					      (CC 或)
+					      (NP (NP (NN 股份))
+						  (ADJP (JJ 有限))
+						  (NP (NN 公司)))))))))) 
+	  </parse>
+	  <arg n="1">
+	  一千零八十 户 
+	  </arg>
+	  <arg n="2" f="into">
+	  多元 持股 的 有限 责任 公司 或 股份 有限 公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-MNR (P 按)
+					  (NP (NP (DT 此))
+					      (NP (NN 形式))))
+				  (VP (VV 改制))))
+			  (DEC 的)))
+		  (NP (NN 企业)))
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 此 形式 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

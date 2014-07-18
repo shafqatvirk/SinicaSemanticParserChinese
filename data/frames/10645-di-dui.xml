@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 敌对 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities being enemies of each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (CP-APP (IP (NP-SBJ (QP (CD 两))
+						 (NP (NN 岸)))
+					 (VP (ADVP (AD 尚))
+					     (ADVP (AD 在))
+					     (VP (VV 敌对))))
+				     (DEC 的))
+			     (NP (NN 状态)))
+			 (LC 下)))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 选择)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 到)
+					(NP-OBJ (NN 大陆)))
+				    (VP (VV 投资))))))
+	    (PU ，)
+	    (VP (ADVP (AD 其实))
+		(VP (VC 是)
+		    (NP-PRD (NP (NN 台商))
+			    (NP (PN 自我))
+			    (NP (NN 选择)))))) 
+	</parse>
+	<arg n="0">
+	两 岸 
+	</arg>
+	<arg n="m" f="adv">
+	在 
+	</arg>
+	<arg n="m" f="adv">
+	尚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

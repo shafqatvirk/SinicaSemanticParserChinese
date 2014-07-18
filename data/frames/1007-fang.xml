@@ -1,0 +1,316 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放 </id>
+    <frameset id="f1" edef="place, put">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (-NONE- *T*-1))
+				  (VP (VV 地处)
+				      (NP-OBJ (NP-PN (NR 中国))
+					      (NP (NN 内陆)
+						  (NN 中央)))))
+			      (DEC 的)))
+		      (NP-PN (NR 湖北省)
+			     (NR 武汉市)))
+	      (PU ，)
+	      (VP (ADVP (AD 将))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+					      (VP (NP-TMP (NT 今后))
+						  (VP (VV 利用)
+						      (NP-OBJ (NN 外资)))))
+				      (NP (NN 重点)))
+			      (VP (VV 放)
+				  (PP-LOC (P 在)
+					  (NP (NP-APP (NP (NP (ADJP (JJ 高))
+							      (NP (NN 科技)))
+							  (NP (NN 产业)))
+						      (PU 、)
+						      (NP (NN 基础)
+							  (NN 产业))
+						      (CC 和)
+						      (NP (NN 基础)
+							  (NN 设施))
+						      (PU 、)
+						      (NP (NN 农业)
+							  (NN 开发))
+						      (ETC 等))
+					      (NP (NN 领域))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 地处 中国 内陆 中央 的 湖北省 武汉市 	  	  
+	  </arg>
+	  <arg n="1">
+	  *pro* 今后 利用 外资 重点 	  	  
+	  </arg>
+	  <arg n="2">
+	  在 高 科技 产业 、 基础 产业 和 基础 设施 、 农业 开发 等 领域 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (VV 刻有)
+					   (NP-OBJ (ADJP (JJ 传统))
+						   (NP (NN 图案)))))
+				   (DEC 的)))
+			   (QP (CD 一)
+			       (CLP (M 对)))
+			   (NP (NN 藏柜)))
+		       (LC 上))
+	      (VP (VV 放)
+		  (AS 着)
+		  (NP-OBJ (QP (CD 两)
+			      (CLP (M 部)))
+			  (NP (NN 收录机))))) 
+	  </parse>
+	  <arg n="2">
+	  *OP* *T*-1 刻有 传统 图案 的 一 对 藏柜 上 	  	  
+	  </arg>
+	  <arg n="1">
+	  两 部 收录机 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 经济)
+			       (NN 建设))
+			   (DEG 的))
+		      (NP (NN 立足点)))
+	      (VP (VV 必须)
+		  (VP (VV 放)
+		      (PP-LOC (P 在)
+			      (LCP (NP (DNP (NP (NP (PN 自己))
+						(NP (NN 力量)))
+					    (DEG 的))
+				       (NP (NN 基础)))
+				   (LC 上)))))) 
+	  </parse>
+	  <arg n="1">
+	  经济 建设 的 立足点 	  	  
+	  </arg>
+	  <arg n="2">
+	  在 自己 力量 的 基础 上 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="release">
+      <role argnum="0" argrole="releaser"/>
+      <role argnum="1" argrole="thing let go"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP-APP (IP (IP (PU 「)
+				  (IP (NP-SBJ (NN 花))
+				      (VP (VV 开)))
+				  (IP (NP-SBJ (NN 佛))
+				      (VP (VV 现)))
+				  (PU 」))
+			      (CC 和)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 放)
+				      (NP-OBJ (NN 和平鸽)))))
+			  (DEC 的))
+		  (NP (NN 仪式))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  和平鸽 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CC 不论是)
+		      (NP (DNP (NP (NN 汉印) )
+			       (DEG 的))
+			  (NP (NN 横)
+			      (NN 平)
+			      (NN 竖)
+			      (NN 直) ))
+		      (PU ，)
+		      (CC 或是)
+		      (NP (DNP (NP (NN 小篆) )
+			       (DEG 的))
+			  (NP (NN 迂回)
+			      (NN 曲线) )))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 都))
+		  (VP (VP (VV 能)
+			  (VP (VV 工)))
+		      (VP (VV 能)
+			  (VP (VV 放)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  不论是 汉印 的 横 平 竖 直 ， 或是 小篆 的 迂回 曲线 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="set (fire)">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing (fire) arg0 sets"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 做出)
+				   (NP-OBJ (NN 陶器))))
+			   (LC 後))
+		  (PP-LOC (P 在)
+			  (NP (NN 露天)))
+		  (VP (VP (VV 堆起)
+			  (NP-OBJ (NN 柴薪)))
+		      (PU ，)
+		      (VP (VV 放)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 把)))
+				  (NP (NN 火))))
+		      (PU ，)
+		      (VP (QP-ADV (CD 一)
+				  (CLP (M 次)))
+			  (VP (VV 烧成)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	
+	  </arg>
+	  <arg n="1">
+	  一 把 火 	
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 露天 	
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 做出 陶器 後 	
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4" edef="show/broadcast">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 shows/broadcasts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (ADJP (JJ 小))
+		    (NP (NN 戏院)))
+	    (VP (ADVP (AD 固定))
+		(VP (VV 放)
+		    (AS 著)
+		    (NP-OBJ (DNP (NP (NP-PN (NR 印度))
+				     (NP (DP (DT 各))
+					 (NP (NN 邦))))
+				 (DEG 的))
+			    (NP (NN 方言)
+				(NN 电影)))))) 
+	</parse>
+	<arg n="0">
+	许多 小 戏院       
+	</arg>
+	<arg n="1">
+	印度 各 邦 的 方言 电影       
+	</arg>
+	<arg n="m" f="adv">
+	固定       
+	</arg>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f5" edef="dismiss for vacation">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing (vacation) arg0 dismisses arg1 for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			 (VP (VV 放)
+			     (NP-OBJ (NN 寒假))))
+		     (LC 前))
+	    (NP-PN-SBJ (NR 谢从宾))
+	    (VP (ADVP (AD 刚))
+		(PP-BNF (P 为)
+			(NP (NP-PN (NR 敦化)
+				   (NN 国小))
+			    (NP (NN 学童))))
+		(VP (VV 做完)
+		    (NP-OBJ (NN 超音波)
+			    (NN 检查))))) 
+	</parse>
+	<arg n="1">
+	*pro*       
+	</arg>
+	<arg n="2">
+	寒假       
+	</arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>

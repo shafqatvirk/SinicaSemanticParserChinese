@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增派 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity additionally dispatched"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 尼日利亚))
+	      (VP (ADVP (AD 已))
+		  (PP-TMP (P 于)
+			  (NP (NT 近日)))
+		  (ADVP (AD 紧急))
+		  (VP (VV 增派)
+		      (NP-OBJ (NN 援兵))
+		      (NP-EXT (QP (CD １０００多))
+			      (NP (NN 人)))))) 
+	  </parse>
+	  <arg n="0">
+	  尼日利亚 
+	  </arg>
+	  <arg n="1">
+	  援兵 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  １０００多 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧急 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 近日 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据悉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

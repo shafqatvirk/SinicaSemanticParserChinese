@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逗哭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 teases to tears"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ-1 (NN 别人))
+			  (VP (VV 逗哭)
+			      (AS 了)
+			      (NP-OBJ (-NONE- *-1)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  别人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

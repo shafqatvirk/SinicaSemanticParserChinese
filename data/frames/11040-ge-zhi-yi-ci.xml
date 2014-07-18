@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 各执一辞 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities described"/>
+    <role argnum="1" argrole="thing arg0 has different views about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现今))
+	    (NP-SBJ (NN 朝野))
+	    (VP (VP (PP-DIR (P 对)
+			    (NP (DNP (NP (NN 程序)
+					 (NN 瑕疵))
+				     (DEG 之))
+				(NP (NN 补正))))
+		    (ADVP (AD 已))
+		    (VP (VE 有)
+			(NP-OBJ (ADJP (JJ 一致))
+				(NP (NN 看法)))))
+		(PU ，)
+		(VP (ADVP (AD 但))
+		    (PP-DIR (P 对)
+			    (IP (LCP-TMP (NP (NN 报告))
+					 (LC 前))
+				(NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 是否))
+				    (VP (VV 应)
+					(VP (VV 让)
+					    (NP-OBJ (NN 核四))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 复工))))))))
+		    (PU ，)
+		    (ADVP (AD 仍))
+		    (VP (VC 是)
+			(VP (VV 各执一辞)))))) 
+	</parse>
+	<arg n="0">
+	朝野 
+	</arg>
+	<arg n="1">
+	对 报告 前 *pro* 是否 应 让 核四 *PRO* 复工 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="tmp">
+	现今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

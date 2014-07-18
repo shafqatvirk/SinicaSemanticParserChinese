@@ -1,0 +1,159 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="establisher"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="purpose"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 天津港)
+			 (NN 保税区))
+	      (VP (VC 是)
+		  (QP-PRD (NP-PN (NR 中国))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 最早))
+					  (VP (VV 设立))))
+				  (DEC 的)))
+			  (NP (NN 保税区)
+			      (NN 之一))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(保税区之一) 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  最早 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 召回)
+			  (NP-OBJ (NP-PN (NR 朝鲜))
+				  (NP (NN 军事)
+				      (NN 停战)
+				      (NN 委员会)
+				      (NN 朝方)
+				      (NN 代表团))))
+		      (CC 以及)
+		      (VP (VP (VV 设立)
+			      (NP-OBJ (NP (NP-PN (NR 朝鲜))
+					  (NP (NN 人民军)))
+				      (NP-PN (NR 板门店))
+				      (NP (NN 代表处)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 作为)
+				      (NP-OBJ (NN 协商)
+					      (NN 机构)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  朝鲜 人民军 板门店 代表处 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 作为 协商 机构 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 迄今))
+		  (ADVP (AD 已))
+		  (PP-LOC (P 在)
+			  (NP-PN (NR 南非)))
+		  (VP (VV 设立)
+		      (NP-OBJ (DP (DT 各)
+				  (CLP (M 类)))
+			      (NP (NN 机构)))
+		      (QP-EXT (CD 四十多)
+			      (CLP (M 个)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 企业 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  迄今 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 南非 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  各 类 机构 	  
+	  </arg>
+	  <arg n="1" f="qty">
+	  四十多 个 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (ADVP (AD 近))
+		      (QP (CD 几)
+			  (CLP (M 年))))
+	      (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 厂商)))
+	      (VP (ADVP (AD 也))
+		  (PP-LOC (P 在)
+			  (NP-PN (NR 广东)))
+		  (VP (VV 设立)
+		      (NP-OBJ (QP (CD 七千多)
+				  (CLP (M 家)))
+			      (NP (NN 加工)
+				  (NN 企业)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  台湾 厂商 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 广东 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  七千多 家 加工 企业 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

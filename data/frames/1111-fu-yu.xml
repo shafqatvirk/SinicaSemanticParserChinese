@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赋予 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="granter"/>
+      <role argnum="1" argrole="grantee"/>
+      <role argnum="2" argrole="thing granted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="io" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 条例)
+			  (NN 草案)))
+	      (VP (VV 赋予)
+		  (NP-IO (CP (WHNP-1 (-NONE- *OP*))
+			     (CP (IP (NP-PN-SBJ (NN 临立会))
+				     (VP (VV 通过)
+					 (NP-OBJ (-NONE- *T*-1))))
+				 (DEC 的)))
+			 (QP (CD 十三)
+			     (CLP (M 项)))
+			 (NP (NN 法案)))
+		  (NP-OBJ (NN 法律)
+			  (NN 效力)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  该 条例 草案 	  
+	  </arg>
+	  <arg n="2">
+	  法律 效力 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* 临立会 通过 *T*-1 的 十三 项 法案 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (ADJP (JJ 有关))
+		      (NP (NP (NN 上市)
+			      (NN 条例))
+			  (CC 和)
+			  (NP (NP (NN 收购)
+				  (CC 及)
+				  (NN 合并))
+			      (NP (NN 守则)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 拟)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (QP (CD 部分))
+						  (NP (NN 条例)))
+					  (VP (VV 赋予)
+					      (NP-OBJ (NN 法律)
+						      (NN 效力)))))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (ADVP (AD 已))
+		      (VP (VV 完成)
+			  (NP-OBJ (NN 内部)
+				  (NN 咨询)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  部分 条例 	  
+	  </arg>
+	  <arg n="2">
+	  法律 效力 	  
+	  </arg>
+	  <arg n="m" f="tpc">
+	  有关 上市 条例 和 收购 及 合并 守则 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (NN 国家))
+			  (VP (VV 赋予)
+			      (NP-OBJ (-NONE- *T*-1))))
+		      (DEC 的)))
+	      (QP (CD 一)
+		  (CLP (M 系列)))
+	      (NP (NN 功能性)
+		  (NN 政策))) 
+	  </parse>
+	  <arg n="0">
+	  国家 	  
+	  </arg>
+	  <arg n="2">
+	  *T*-1 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

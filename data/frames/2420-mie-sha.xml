@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 灭杀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity killed"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 植物)
+			  (NN 细胞)
+			  (NN 霉素))
+		  (VP (CC 不仅)
+		      (VP (VV 能够)
+			  (VP (VV 抑制)
+			      (NP-OBJ (DNP (NP (NN 蚊子)
+					       (NN 体内)
+					       (NN 疟原虫))
+					   (DEG 的))
+				      (NP (NN 繁殖)))))
+		      (PU ，)
+		      (CC 而且)
+		      (VP (ADVP (AD 还))
+			  (VP (VV 可)
+			      (VP (VV 灭杀)
+				  (NP-OBJ (NN 蚊子))))))) 
+	  </parse>
+	  <arg n="2">
+	  植物 细胞 霉素 
+	  </arg>
+	  <arg n="1">
+	  蚊子 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

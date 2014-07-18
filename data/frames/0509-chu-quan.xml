@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出拳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 挨揍)))
+			   (LC 时))
+		  (ADVP (AD 都))
+		  (VP (VC 是)
+		      (PP-PRD (P 因为)
+			      (IP (NP-SBJ (NN 对手))
+				  (VP (ADVP (AD 主动))
+				      (VP (VV 出拳)))))))) 
+	  </parse>
+	  <arg n="0">
+	  对手 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主动 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

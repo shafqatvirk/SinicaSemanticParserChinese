@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 丢失 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party losing stuff"/>
+      <role argnum="1" argrole="thing lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据称))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 新型))
+		      (NP (NN 标签)))
+	      (VP (VV 有望)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 较好))
+			      (VP (VV 解决)
+				  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 托运)
+							      (NN 行李))
+						      (VP (VV 丢失)))
+						  (DEC 的))
+					  (NP (NN 问题)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  托运 行李 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

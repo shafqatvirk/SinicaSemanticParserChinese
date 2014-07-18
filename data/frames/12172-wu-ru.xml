@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 侮辱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 insults"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VC 是)
+		      (NP-PRD (PU 「)
+			      (DNP (NP (NN 帝国主义))
+				   (DEG 的))
+			      (NP (NN 阴谋))
+			      (PU 」)))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (NP (NN 西方))
+			      (DP (DT 另)
+				  (QP (CD 一)
+				      (CLP (M 次))))
+			      (NP (PU 「)
+				  (DNP (PP (P 对)
+					   (NP (DP (DT 全体))
+					       (NP-PN (NR 中国))
+					       (NP (NN 人民))))
+				       (DEG 的))
+				  (NP (NN 侮辱))
+				  (PU 」)))))) 
+	  </parse>
+	  <arg n="0">
+	  西方 
+	  </arg>
+	  <arg n="1">
+	  对 全体 中国 人民 
+	  </arg>
+	  <arg n="m" f="adv">
+	  另 一 次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

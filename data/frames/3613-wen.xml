@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 问 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="question asked"/>
+      <role argnum="2" argrole="people asked of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 记者))
+	      (VP (VV 问)
+		  (NP-IO (PN 他))
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (NP-TMP-WH (PN 何时))
+			      (ADVP (AD 再))
+			      (PP-BNF (P 给)
+				      (NP (NN 国外)))
+			      (VP (VV 输送)
+				  (NP-OBJ (NN 警犬))))))) 
+	  </parse>
+	  <arg n="0">
+	  记者 
+	  </arg>
+	  <arg n="1">
+	  *pro* 何时 再 给 国外 输送 警犬 
+	  </arg>
+	  <arg n="2">
+	  他 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP-OBJ (NP-SBJ (NN 记者))
+			  (VP (VV 问)
+			      (PU ：)
+			      (IP-OBJ (IP (NP-TMP (NT 八月)
+						  (NT 二十三日))
+					  (NP-SBJ (NP-PN (NR 美国))
+						  (NP (NN 总统)))
+					  (VP (VV 签署)
+					      (AS 了)
+					      (NP-TTL-OBJ (PU “)
+							  (NP (NT 九五)
+							      (NN 财年))
+							  (NP (NN 海外)
+							      (NN 活动)
+							      (NN 拨款)
+							      (NN 法))
+							  (PU ”))))
+				      (PU ，)
+				      (IP (NP-ADV (NN 其中))
+					  (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 规定)
+					      (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+								  (CP (IP (NP-SBJ (NP-PN-SBJ (NR 美)))
+									  (VP (PP-DIR (P 向)
+										      (NP-PN (NR 联合国)
+											     (NN 人口)
+											     (NN 基金)))
+									      (VP (VV 提供)
+										  (NP-OBJ (-NONE- *T*-2)))))
+								      (DEC 的)))
+							      (DP (DT 任何))
+							      (NP (NN 捐款)))
+						      (VP (ADVP (AD 不))
+							  (VP (VV 得)
+							      (VP (VV 用于)
+								  (NP-PN-OBJ (NR 中国))))))))
+				      (PU ，)
+				      (IP-Q (PP-DIR (P 对)
+						    (NP (PN 此)))
+					    (NP-SBJ (PN 你))
+					    (VP (VE 有)
+						(NP-OBJ (DP-WH (DT 何))
+							(NP (NN 看法)))))
+				      (PU ？)))))) 
+	  </parse>
+	  <arg n="0">
+	  记者 
+	  </arg>
+	  <arg n="1">
+	  八月 二十三日 美国 总统 签署 了 “ 九五 财年 海外 活动 拨款 法 ” ， 其中 *pro* 规定 *OP* 美 向 联合国 人口 基金 提供 *T*-2 的 任何 捐款 不 得 用于 中国 ， 对 此 你 有 何 看法 ？ 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

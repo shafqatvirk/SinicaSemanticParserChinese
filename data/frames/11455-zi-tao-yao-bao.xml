@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自掏腰包 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person taking money out of own pocket"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (NP-PN (NR 民国))
+		    (QP (OD 七十六)
+			(CLP (M 年))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (ADJP (JJ 市立))
+			   (NP (NN 妇幼)
+			       (NN 医院)))
+		    (NP (NN 小儿科)
+			(NN 医师))
+		    (NP-PN (NR 谢从宾)))
+	    (PU ，)
+	    (VP (VP (VP (VV 自掏腰包))
+		    (VP (VV 买)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 台)))
+				(ADJP (JJ 手提式))
+				(NP (NN 超音波)))))
+		(PU ，)
+		(VP (VV 开始)
+		    (VP (VP (VV 到)
+			    (NP-OBJ (DP (DT 各))
+				    (NP (NN 小学))))
+			(VP (PP-BNF (P 为)
+				    (NP (NN 学童)))
+			    (VP (VV 做)
+				(NP-OBJ (NP (NN 肾脏)
+					    (NN 超音波))
+					(NP (NN 筛检))))))))) 
+	</parse>
+	<arg n="0">
+	市立 妇幼 医院 小儿科 医师 谢从宾 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 七十六 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

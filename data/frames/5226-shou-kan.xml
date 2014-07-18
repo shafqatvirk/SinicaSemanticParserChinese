@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 收看 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people described"/>
+    <role argnum="1" argrole="program arg0 watches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 观众))
+	    (VP (VV 收看)
+		(NP-OBJ (NN 电视)
+			(NN 新闻)))) 
+	</parse>
+	<arg n="0">
+	观众 
+	</arg>
+	<arg n="1">
+	电视 新闻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 电视)
+		    (NN 节目))
+	    (VP (ADVP (AD 又))
+		(VP (VV 可以)
+		    (VP (VV 让)
+			(NP-OBJ (QP (CD 上千万))
+				(NP (NN 人)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 收看))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

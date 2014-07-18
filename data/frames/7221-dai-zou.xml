@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 带走 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 takes away with it"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 带走)
+		    (AS 了)
+		    (NP-OBJ (NP (NN 青春))
+			    (PU 、)
+			    (NP (NN 理想))
+			    (PU 、)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 纯洁)))
+					(DEC 的)))
+				(NP (NN 爱) ))
+			    (PU ，)
+			    (NP (ADVP (AD 甚至))
+				(NP (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (VV 挚爱)
+						    (NP-OBJ (-NONE- *T*-2))))
+					    (DEC 的)))
+				    (NP (NN 亲人) )))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (VP (VV 留下)
+			(AS 了)
+			(NP-OBJ (QP (CD 许多))
+				(NP (NP (CP (WHNP-3 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (ADVP (AD 不))
+							(VP (VV 敢)
+							    (VP (VV 碰触)
+								(NP-OBJ (-NONE- *T*-3))))))
+						(DEC 的)))
+					(NP (NN 伤口) ))
+				    (PU 、)
+				    (NP (CP (WHNP-4 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (ADVP (AD 不))
+							(VP (VV 堪)
+							    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								    (VP (VV 回首)
+									(NP-OBJ (-NONE- *T*-4)))))))
+						(DEC 的)))
+					(NP (NN 憾恨) )))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	青春 、 理想 、 *OP* *T*-1 纯洁 的 爱 ， 甚至 *OP* *pro* 挚爱 *T*-2 的 亲人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

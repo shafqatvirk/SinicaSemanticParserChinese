@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 嘉惠 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 benefits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 毕竟))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 国家))
+				(VP (NP-PRP (-NONE- *T*-1))
+				    (VP (VV 发展)
+					(NP-OBJ (NN 经济)))))
+			    (DEC 的)))
+		    (NP (NN 目的)))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VC 是)
+			(IP-PRD (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 嘉惠)
+				    (NP-OBJ (QP (CD 少数))
+					    (NP (NN 人)))))))
+		(PU ，)
+		(CC 而)
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 要)
+				(VP (PP-BNF (P 为)
+					    (NP (QP (ADVP (AD 最))
+						    (QP (CD 大多数)))
+						(NP (NN 人))))
+				    (VP (VV 谋取)
+					(NP-OBJ (ADJP (ADVP (AD 最))
+						      (ADJP (JJ 大)))
+						(NP (NN 福祉)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	少数 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

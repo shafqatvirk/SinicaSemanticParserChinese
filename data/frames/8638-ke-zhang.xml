@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刻章 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VRD (VV 退回)
+				    (VV 到))
+			       (NP-OBJ (NP-PN (NR 重庆))
+				       (NP (NN 後方)))))
+		       (LC 之後))
+	      (PU ，)
+	      (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 照顾)
+			      (NP-OBJ (NN 生活)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 王壮为))
+	      (VP (VP (VV 利用)
+		      (NP-OBJ (NN 公馀)
+			      (NN 闲暇)))
+		  (VP (PP-BNF (P 为)
+			      (NP (NN 人)))
+		      (VP (VV 刻章))))) 
+	  </parse>
+	  <arg n="0">
+	  王壮为 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 人 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 *PRO* 照顾 生活 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 退回 到 重庆 後方 之後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

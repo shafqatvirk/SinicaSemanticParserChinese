@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 添置 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="buyer"/>
+    <role argnum="1" argrole="thing arg0 buys"/>
+    <role argnum="2" argrole="thing arg1 is bought with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不))
+		(ADVP (AD 大))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 馀力))
+			    (VP (VV 添置)
+				(NP-OBJ (ADJP (JJ 新))
+					(NP (NN 东西)))))))) 
+	</parse>
+	<arg n="1">
+	新 东西 
+	</arg>
+	<arg n="2">
+	馀力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

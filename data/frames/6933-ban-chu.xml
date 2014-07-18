@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搬出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 brings out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 谈起)
+			(NP-OBJ (NN 前尘)
+				(NN 往事))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VV 搬出)
+		(AS 了)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (VA 珍藏)
+					(NP-OBJ (-NONE- *T*-1))))
+				(DEC 的)))
+			(ADJP (JJ 老))
+			(NP (NN 照片))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 珍藏 *T*-1 的 老 照片 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 谈起 前尘 往事 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

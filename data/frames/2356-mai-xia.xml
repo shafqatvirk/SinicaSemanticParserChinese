@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 买下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="thing bought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 现在))
+		(NP-PN-SBJ (NR 邓普顿)
+			   (NN 公司))
+		(VP (ADVP (AD 已))
+		    (VP (VP (ADVP (AD 正式))
+			    (VP (VV 签约)))
+			(PU ，)
+			(VP (VV 买下)
+			    (AS 了)
+			    (NP-OBJ (NP-PN (NN 证券)
+					   (NN 大厦))
+				    (DP (DT 整)
+					(CLP (M 个)))
+				    (QP (CD 十八)
+					(CLP (M 层)))
+				    (NP (NN 楼面))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  邓普顿 公司 
+	  </arg>
+	  <arg n="1">
+	  证券 大厦 整 个 十八 层 楼面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

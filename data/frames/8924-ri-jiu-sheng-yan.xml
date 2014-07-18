@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 日久生厌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 loses interest in over time"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 观众))
+	      (VP (PP-DIR (P 对)
+			  (NP (NN 爱情片)))
+		  (VP (VV 日久生厌)))) 
+	  </parse>
+	  <arg n="0">
+	  观众 
+	  </arg>
+	  <arg n="1">
+	  对 爱情片 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

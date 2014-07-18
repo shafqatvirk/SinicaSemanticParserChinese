@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 召唤 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 calls forth"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 人民))
+		  (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (CS 一旦))
+				  (VP (VV 掌握)
+				      (AS 了)
+				      (NP-OBJ (NN 政权)))))
+		      (PU ，)
+		      (VP (VP (ADVP (AD 就))
+			      (VP (VV 可以)
+				  (VP (DVP (VP (ADVP (AD 很))
+					       (VP (VA 快)))
+					   (DEV 地))
+				      (VP (VSB (VV 跑步)
+					       (VV 进入))
+					  (NP-OBJ (NN 社会主义))))))
+			  (PU ，)
+			  (VP (ADVP (AD 就))
+			      (VP (VV 可以)
+				  (VP (VP (PP-MNR (P 依靠)
+						  (NP (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-2))
+								  (VP (VA 先进)))
+							      (DEC 的)))
+						      (NP (NN 生产)
+							  (NN 关系))))
+					  (VP (VRD (VV 召唤)
+						   (VV 出))
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (VA 巨大)))
+							      (DEC 的)))
+						      (NP (NN 生产力)))))
+				      (PU ，)
+				      (VP (PP-TMP (P 在)
+						  (LCP (NP (CP (WHNP-3 (-NONE- *OP*))
+							       (CP (IP (NP-SBJ (-NONE- *T*-3))
+								       (VP (ADVP (AD 不))
+									   (VP (VA 长))))
+								   (DEC 的)))
+							   (NP (NN 时间)))
+						       (LC 里)))
+					  (VP (PU “)
+					      (VP (VV 超)
+						  (NP-PN-OBJ (NR 英)))
+					      (VP (VV 赶)
+						  (NP-PN-OBJ (NR 美)))
+					      (PU ”))))))))) 
+	  </parse>
+	  <arg n="0">
+	  人民 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 巨大 的 生产力 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依靠 *OP* *T*-2 先进 的 生产 关系 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 一旦 掌握 了 政权 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 储备 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 has in stock"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 一九七八年))
+		       (LC 底))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 中国))
+			   (DEG 的))
+		      (NP (NN 外汇)
+			  (NN 储备)))
+	      (VP (QP-PRD (ADVP (AD 只有))
+			  (QP (CD 一点七亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  外汇 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

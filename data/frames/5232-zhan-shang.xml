@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 站上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 steps onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP (NP (ADJP (JJ 快))
+			    (NP (NN 节奏)))
+			(NP (NN 音乐)))
+		    (PU 、)
+		    (NP (ADJP (JJ 炫丽))
+			(NP (NN 灯光)))
+		    (PU 、)
+		    (NP (NN 电视机)))
+	    (PU ，)
+	    (NP-SBJ (NN 外商)
+		    (NN 健身)
+		    (NN 俱乐部))
+	    (VP (VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 健身))
+			    (VP (VRD (VV 营造)
+				     (VV 成))
+				(NP-OBJ (NN 流行)
+					(NN 时尚)))))
+		(PU ，)
+		(VP (VV 吸引)
+		    (NP-OBJ (NN 都会)
+			    (NN 上班族))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 站上)
+			    (NP-OBJ (NN 跑步机))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	跑步机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

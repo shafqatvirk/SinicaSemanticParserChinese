@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="product location"/>
+      <role argnum="1" argrole="product"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (NP-TMP (NT 今年))
+		  (ADVP (AD 将))
+		  (VP (VV 出产)
+		      (NP-OBJ (QP (CD 九十二万)
+				  (CLP (M 吨)))
+			      (NP (NN 柚子)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  九十二万 吨 柚子 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

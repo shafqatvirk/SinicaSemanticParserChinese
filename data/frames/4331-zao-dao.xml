@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遭到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 suffers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (ADVP (AD 不过))
+		  (ADVP (AD 近来))
+		  (PU ，)
+		  (NP-SBJ (NP (PN 他))
+			  (CC 同)
+			  (NP (NP-APP (NN 弟弟))
+			      (NP-PN (NR 弗·德波尔))))
+		  (VP (ADVP (AD 都))
+		      (VP (VV 提出)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 转会)
+				      (NP-PN-OBJ (NR 西班牙)))))))
+	      (PU ，)
+	      (IP (ADVP (AD 结果))
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 遭到)
+		      (NP-OBJ (DNP (NP-PN (NR 阿姆斯特丹)
+					  (NR 阿贾克斯)
+					  (NN 俱乐部))
+				   (DEG 的))
+			      (NP (NN 拒绝)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  阿姆斯特丹 阿贾克斯 俱乐部 的 拒绝 
+	  </arg>
+	  <arg n="m" f="adv">
+	  结果 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相对 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities facing each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 相对)
+			(NP-OBJ (NT 五四))))
+	    (PU ，)
+	    (NP-TMP (NT 今天))
+	    (NP-PN-SBJ (NR 台湾))
+	    (VP (ADVP (AD 并))
+		(ADVP (AD 未))
+		(VP (VV 受)
+		    (NP-OBJ (NP (NN 东洋)
+				(CC 或)
+				(NN 西洋))
+			    (DNP (LCP (NP (NN 军事))
+				      (LC 上))
+				 (DEG 的))
+			    (NP (NN 威胁)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="crd">
+	五四 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 千禧))
+	    (NP-SBJ (NP-PN (NR 宋朝))
+		    (NP (NN 首都)))
+	    (VP (VP (VV 设)
+		    (PP (P 在)
+			(NP (DNP (NP (NT 今天))
+				 (DEG 的))
+			    (NP-PN (NR 河南)
+				   (NR 开封)))))
+		(PU ，)
+		(VP (PP-ADV (P 与)
+			    (NP-PN (NR 洛阳)))
+		    (VP (VV 相对)))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (VP (VV 称)
+			(NP-PN-OBJ (NR 东京)))))) 
+	</parse>
+	<arg n="0">
+	宋朝 首都 
+	</arg>
+	<arg n="0" f="crd">
+	与 洛阳 
+	</arg>
+	<arg n="m" f="tmp">
+	千禧 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

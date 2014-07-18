@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 终止 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="terminator"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-SBJ (NP-SBJ (ADJP (JJ 全民))
+			      (NP (NN 公决)))
+		      (VP (ADVP (AD 不))
+			  (VP (VV 接受)
+			      (NP-OBJ (NN 版图)
+				      (NN 划分)
+				      (NN 方案)))))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 就))
+		  (VP (VV 终止)
+		      (AS 了)
+		      (NP-OBJ (DP (DT 整)
+				  (CLP (M 个)))
+			      (NP (NN 和平)
+				  (NN 方案)))))
+	      (PU ”)
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  全民 公决 不 接受 版图 划分 方案 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  就 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  整 个 和平 方案 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 会议))
+	      (VP (VV 认为)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (NP-PN (NR 港)
+					 (NR 英))
+				  (QP (ADVP (AD 最后))
+				      (QP (CD 一)
+					  (CLP (M 届))))
+				  (NP (NN 立法局)
+				      (PU 、)
+				      (NN 市政局)
+				      (CC 和)
+				      (NN 区域)
+				      (NN 市政局)
+				      (PU 、)
+				      (NN 区议会)))
+			  (VP (PP-TMP (P 于)
+				      (NP (NT 一九九七年)
+					  (NT 六月)
+					  (NT 三十日)))
+			      (VP (VV 终止)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  港 英 最后 一 届 立法局 、 市政局 和 区域 市政局 、 区议会 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  于 一九九七年 六月 三十日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 表明 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="evidence"/>
+    <role argnum="3" argrole="proving to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP (PN 他))
+              (DNP (NP (DP (DT 此))
+                       (NP (NN 行)))
+                   (DEG 的))
+              (NP (NN 目的)))
+      (VP (ADVP (AD 就))
+          (VP (VC 是)
+              (VP (PP-DIR (P 向)
+                          (NP (NP-PN (NR 南非))
+                              (NP (NN 政府)
+                                  (CC 和)
+                                  (NN 工商界))))
+                  (VP (VV 表明)
+                      (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+                                  (CP (IP (NP-PN-SBJ (NR 中国))
+                                          (VP (PP (-NONE- *T*-2))
+                                              (VP (VV 发展)
+                                                  (NP-OBJ (PP (P 与)
+                                                              (NP-PN (NR 南非)))
+                                                          (NP (NN 经贸)
+                                                              (NN 合作))))))
+                                      (DEC 的)))
+                              (NP (NN 决心)
+                                  (CC 和)
+                                  (NN 信心)))))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="ADV"> 就 </arg>
+	<arg n="3"> 向 南非 政府 和 工商界 </arg>
+	<V/>
+	<arg n="1"> *OP* 中国 (*T*-2)->(决心和信心) 发展 与 南非 经贸 合作 的 决心 和 信心 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DP (DT 这)
+                  (QP (CD 一)))
+              (NP (NN 数字)))
+      (VP (ADVP (AD 已))
+          (ADVP (AD 不))
+          (VP (VV 能)
+              (VP (DVP (VP (VA 确切))
+                       (DEV 地))
+                  (VP (VV 表明)
+                      (NP-OBJ (DNP (NP (NP (ADJP (JJ 大))
+                                           (NP (NN 熊猫)))
+                                       (ADJP (JJ 野生))
+                                       (NP (NN 种群)))
+                                   (DEG 的))
+                              (CP (WHNP-1 (-NONE- *OP*))
+                                  (IP (NP-SBJ (-NONE- *T*-1))
+                                      (VP (ADVP (AD 现))
+                                          (VP (VV 存)))))
+                              (NP (NN 数量)))))))))
+	</parse>
+	<arg n="2"> 这 一 数字 </arg>
+	<V/>
+	<arg n="1"> 大 熊猫 野生 种群 的 *OP* (*T*-1)->(数量) 现 存 数量 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 但))
+      (NP-SBJ (NN 证据))
+      (VP (VV 表明)
+          (IP (NP-SBJ (PN 这))
+              (VP (VC 是)
+                  (NP-PRD (QP (CD 一)
+                              (CLP (M 个)))
+                          (ADJP (JJ 军事))
+                          (NP (NN 目标))))))))
+	</parse>
+	<arg n="2"> 证据 </arg>
+	<V/>
+	<arg n="1"> 这 是 一 个 军事 目标 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (PP-MNR (P 据)
+          (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+                              (CP (IP (NP-PN-SBJ (NN 国家)
+                                                 (NN 科委))
+                                      (VP (NP-TMP (NT 最近))
+                                          (VP (VV 公布)
+                                              (NP-OBJ (-NONE- *T*-1)))))
+                                  (DEC 的)))
+                          (NP (NP (DP (DT 全))
+                                  (NP (NN 国)))
+                              (NP (NN 科技)
+                                  (NN 进步)
+                                  (NN 统计)
+                                  (NN 监测))
+                              (ADJP (JJ 综合))
+                              (NP (NN 评价))))
+                      (NP (NN 结果)))
+              (VP (VV 表明)))))
+	</parse>
+	<arg n="2"> *OP* 国家 科委 最近 公布 (*T*-1)->(全国科技进步统计监测综合评价) 的 全 国 科技 进步 统计 监测 综合 评价 结果 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

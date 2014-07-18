@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="thing experienced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD ９))
+	      (PU 、)
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 男子)
+			  (NN 乒乓球)))
+	      (VP (VV 受到)
+		  (NP-OBJ (ADJP (JJ 严峻))
+			  (NP (NN 挑战))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 男子 乒乓球 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  严峻 挑战 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="party imposing the experience"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 他们))
+		      (PP (P 在)
+			  (LCP (NP (DNP (QP (ADVP (AD 以往))
+					    (QP (CD 几)
+						(CLP (M 年))))
+					(DEG 的))
+				   (NP (NN 白皮书)))
+			       (LC 中)))
+		      (DNP (PP (P 对)
+			       (NP (NP-PN (NR 中国))
+				   (NP (NN 经济)
+				       (NN 发展)
+				       (NN 轨迹))))
+			   (DEG 的))
+		      (ADJP (JJ 准确))
+		      (NP (NN 描述)
+			  (CC 与)
+			  (NN 预言)))
+	      (PU ，)
+	      (VP (VV 受到)
+		  (NP-OBJ (NN 学术界)
+			  (CC 与)
+			  (NN 实业界))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 好评))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他们 在 以往 几 年 的 白皮书 中 对 中国 经济 发展 轨迹 的 准确 描述 与 预言 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  学术界 与 实业界 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 好评 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

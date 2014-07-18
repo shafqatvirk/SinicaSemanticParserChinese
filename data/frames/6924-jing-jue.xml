@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惊觉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 realizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (LCP (NP (NN 世纪))
+			      (LC 末))
+			 (DEG 的))
+		    (NP (NN 人们)))
+	    (VP (ADVP (AD 却))
+		(VP (VV 惊觉)
+		    (PU ，)
+		    (IP-OBJ (NP-SBJ (NN 知识))
+			    (VP (CC 不仅)
+				(VP (VC 是)
+				    (NP-PRD (NN 力量)))
+				(PU ，)
+				(VP (ADVP (AD 更))
+				    (VP (VV 可以)
+					(VP (VV 化为)
+					    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (-NONE- *T*-1))
+								(VP (VA 巨大)))
+							    (DEC 的)))
+						    (NP (NN 利润))))))))))) 
+	</parse>
+	<arg n="0">
+	世纪 末 的 人们 
+	</arg>
+	<arg n="1">
+	知识 不仅 是 力量 ， 更 可以 化为 *OP* *T*-1 巨大 的 利润 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

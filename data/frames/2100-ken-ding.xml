@@ -1,0 +1,175 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 肯定 </id>
+    <frameset id="f1" edef="regard as positive">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing regarded as positive"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李鹏))
+	      (VP (VV 肯定)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (LCP-TMP (QP (CD 一)
+						   (CLP (M 年)))
+					       (LC 来))
+				      (NP-SBJ (NP (NN 国家)
+						  (NN 公务员)
+						  (NN 制度))
+					      (NP (NN 推行)
+						  (NN 工作)))
+				      (VP (VV 取得)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP (NN 成效))))) 
+	  </parse>
+	  <arg n="0">
+	  李鹏 
+	  </arg>
+	  <arg n="1">
+	  *OP* 一 年 来 国家 公务员 制度 推行 工作 取得 *T*-1 的 成效 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="affirmative">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 给)
+		      (NP-IO (PN 我))
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 肯定)))
+				      (DEC 的)))
+			      (NP (NN 答复)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="certain">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU ”)
+		  (IP-SBJ (NP-TMP (NT 明年))
+			  (NP-SBJ (NP-PN (NR 中国))
+				  (NP (NN 经济)))
+			  (VP (ADVP (AD 将))
+			      (VP (VV 保持)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 持续)
+							  (PU 、)
+							  (VA 健康)
+							  (PU 、)
+							  (VA 稳定)))
+						  (DEC 的)))
+					  (NP (NN 增长))))))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 肯定)))
+				      (DEC 的))))
+		      (PU ”))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4" edef="establish">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing established"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 证券法))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-DIR (P 从)
+					(NP (DNP (NP-PN (NR 中国))
+						 (DEG 的))
+					    (NP (NN 国情))))
+				(VP (VV 出发))))
+		    (PU ，)
+		    (VP (VP (VV 总结)
+			    (AS 了)
+			    (NP-OBJ (DNP (NP (NP-PN (NR 中国))
+					     (NP (NN 金融)
+						 (NN 改革)
+						 (CC 和)
+						 (NN 证券)
+						 (NN 市场)))
+					 (DEG 的))
+				    (NP (NN 实践)
+					(NN 经验))))
+			(PU ，)
+			(VP (ADVP (AD 也))
+			    (VP (VV 汲取)
+				(AS 了)
+				(NP-OBJ (DNP (NP (NP-PN (NR 亚洲))
+						 (NP (NN 金融)
+						     (NN 危机)))
+					     (DEG 的))
+					(NP (NN 教训)))))
+			(PU ，)
+			(VP (BA 将)
+			    (IP-OBJ (NP-SBJ (QP (CD 一些))
+					    (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VA 成熟)))
+						    (DEC 的)))
+					    (NP (NN 经验)
+						(CC 和)
+						(NN 做法)))
+				    (VP (PP-MNR (P 用)
+						(NP (NN 法律)
+						    (NN 形式)))
+					(VP (VRD (VV 肯定)
+						 (VV 下来))))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  证券法 
+	  </arg>
+	  <arg n="1">
+	  一些 *OP* *T*-1 成熟 的 经验 和 做法 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 法律 形式 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

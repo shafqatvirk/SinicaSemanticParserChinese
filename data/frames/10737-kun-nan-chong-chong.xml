@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 困难重重 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+		    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 举办)
+					 (NP-OBJ (NN 活动))))
+				 (LC 时))
+			(VP (VV 邀请)
+			    (NP-OBJ (NN 政府)
+				    (NN 官员)))))
+	    (VP (ADVP (AD 经常))
+		(VP (VC 是)
+		    (VP (VV 困难重重))))) 
+	</parse>
+	<arg n="0">
+	*pro* *PRO* 举办 活动 时 邀请 政府 官员 
+	</arg>
+	<arg n="m" f="adv">
+	经常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

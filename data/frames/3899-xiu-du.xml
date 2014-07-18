@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 修读 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="degree worked for/class taken"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 奖学金))
+	      (VP (ADVP (AD 则))
+		  (PP-BNF (P 为)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 修读)
+					      (NP-OBJ (NN 学士)
+						      (NN 学位)
+						      (NN 课程))))
+				      (DEC 的)))
+			      (NP (NN 人士))))
+		  (VP (MSP 而)
+		      (VP (VV 设))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  学士 学位 课程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

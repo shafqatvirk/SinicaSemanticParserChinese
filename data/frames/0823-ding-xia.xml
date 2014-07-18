@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 订下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="regulation, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TPC-2 (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 条例)
+					(NN 草案))
+				(VP (VV 订下)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (DP (DT 各)
+			(CLP (M 种)))
+		    (NP (NN 收费))) 
+	  </parse>
+	  <arg n="2">
+	  条例 草案 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

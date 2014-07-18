@@ -1,0 +1,170 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 穿 </id>
+    <frameset id="f1" edef="wear">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="clothing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 爱)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 穿)
+					      (NP-OBJ (NN 牛仔裤))))))
+			  (DEC 的)))
+		  (NP-PN (NR 马克斯))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  牛仔裤 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="go through">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 其))
+		      (NP (NN 水流)))
+	      (VP (VP (VV 穿)
+		      (NP-OBJ (NN 城区)))
+		  (VP (VV 注入)
+		      (NP-PN-OBJ (NR 长江))))) 
+	  </parse>
+	  <arg n="0">
+	  其 水流 	  
+	  </arg>
+	  <arg n="1">
+	  城区 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="pierce">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 creates by piercing"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-ADV (NP-SBJ (NN 美貌))
+			  (VP (ADVP (CS 虽然))
+			      (VP (VV 可以)
+				  (VP (PP-MNR (P 靠)
+					      (NP (DNP (ADJP (JJ 外在))
+						       (DEG 的))
+						  (NP (NN 修饰))))
+				      (VP (MSP 而)
+					  (VP (VV 来)))))))
+		  (PU ，)
+		  (IP-ADV (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 穿)
+					  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (VA 好看)))
+							  (DEC 的)))
+						  (NP (NN 衣服))))
+				      (PU 、)
+				      (VP (VV 穿)
+					  (NP-OBJ (NN 耳洞)))
+				      (PU 、)
+				      (VP (VV 戴)
+					  (NP-OBJ (NN 耳环)))))
+			  (PU ，)
+			  (VP (ADVP (AD 或许))
+			      (VP (VV 可以)
+				  (VP (VV 引)
+				      (NP-OBJ (NN 人))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 注意)
+					      (ADVP (AD 一时))))))))
+		  (PU ，)
+		  (ADVP (AD 但是))
+		  (UCP-SBJ (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (DVP (VP (VA 适度))
+					(DEV 地))
+				   (VP (VV 穿著))))
+			   (CC 与)
+			   (NP (CP (WHNP-2 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-2))
+					   (VP (PP-MNR (P 经过)
+						       (NP (NN 读书)
+							   (PU 、)
+							   (NN 历练)))
+					       (VP (MSP 而)
+						   (VP (VV 来)))))
+				       (DEC 的)))
+			       (NP (NN 气质))))
+		  (PU ，)
+		  (VP (ADVP (AD 才))
+		      (VP (VC 是)
+			  (NP-PRD (NP (NN 男性))
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VA 真正)))
+					  (DEC 的)))
+				  (NP (NN 美感)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  耳洞 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 耳))
+		       (LC 上))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 还))
+		  (VP (VV 穿)
+		      (AS 著)
+		      (NP-OBJ (NN 耳洞))))) 
+	  </parse>
+	  <arg n="1">
+	  耳洞 
+	  </arg>
+	  <arg n="2">
+	  耳 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

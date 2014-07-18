@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities separating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 球友们))
+	    (VP (ADVP (AD 就))
+		(PP-LOC (P 在)
+			(LCP (NP (NN 寒天))
+			     (LC 中)))
+		(VP (VP (VV 分手))
+		    (VP (VV 回家))))) 
+	</parse>
+	<arg n="0">
+	球友们 
+	</arg>
+	<arg n="m" f="loc">
+	在 寒天 中 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

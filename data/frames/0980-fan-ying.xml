@@ -1,0 +1,148 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 反应 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="fact, phenomenon"/>
+      <role argnum="1" argrole="thing reflected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VV 反应)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 香港))
+					      (NP (NN 足球)))
+				      (VP (VV 衰落)))
+				  (DEC 的))
+			  (NP (NN 现实))))) 
+	  </parse>
+	  <arg n="0">
+	  它 	  
+	  </arg>
+	  <arg n="1">
+	  香港 足球 衰落 的 现实 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 complains about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (PU ，)
+	      (PP-PRP (P 由於)
+		      (IP (NP-SBJ (QP (CD 许多))
+				  (ADJP (JJ 已婚))
+				  (NP (NN 女性)))
+			  (VP (VV 反应)
+			      (PU ，)
+			      (IP-OBJ (IP (NP-SBJ (DNP (ADJP (JJ 传统))
+						       (DEG 的))
+						  (NP (NN 年夜饭)))
+					  (VP (ADVP (AD 都))
+					      (VP (VP (VV 要)
+						      (VP (PP-LOC (P 在)
+								  (NP (NN 夫家)))
+							  (VP (VV 吃))))
+						  (PU ，)
+						  (VP (ADVP (AD 不))
+						      (VP (VV 能)
+							  (VP (VP (VV 回到)
+								  (NP-OBJ (NN 娘家)))
+							      (VP (MSP 去)
+								  (VP (VV 陪伴)
+								      (NP-OBJ (DNP (NP (PN 自己))
+										   (DEG 的))
+									      (NP (NN 父母)))))))))))
+				      (PU ，)
+				      (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 认为)
+					      (IP-OBJ (NP-SBJ (PN 这))
+						      (VP (VP (VC 是)
+							      (NP-PRD (DNP (NP (NN 父权)
+									       (NN 体制))
+									   (DEG 的))
+								      (NP (NN 遗毒))))
+							  (PU ，)
+							  (VP (VV 有)
+							      (VP (VV 违)
+								  (NP-OBJ (ADJP (JJ 现代))
+									  (CP-APP (IP (NP-SBJ (QP (CD 两))
+											      (NP (NN 性)))
+										      (VP (VA 平等)))
+										  (DEC 的))
+									  (NP (NN 原则)))))))))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使得)
+		  (NP-OBJ (NT 新年))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 也))
+			  (VP (VV 跃上)
+			      (NP-OBJ (DNP (NP (NN 女权)
+					       (NN 议题))
+					   (DEG 的))
+				      (NP (NN 台面)))))))) 
+	  </parse>
+	  <arg n="0">
+	  许多 已婚 女性 
+	  </arg>
+	  <arg n="1">
+	  传统 的 年夜饭 都 要 在 夫家 吃 ， 不 能 回到 娘家 去 陪伴 自己 的 父母 ， *pro* 认为 这 是 父权 体制 的 遗毒 ， 有 违 现代 两 性 平等 的 原则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 responds to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 选民))
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (NN 候选人))
+			      (VP (ADVP (AD 乱))
+				  (VP (VV 说话)))))
+		  (ADVP (AD 都))
+		  (ADVP (AD 直接))
+		  (VP (VV 反应)))) 
+	  </parse>
+	  <arg n="0">
+	  选民 
+	  </arg>
+	  <arg n="1">
+	  对 候选人 乱 说话 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直接 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

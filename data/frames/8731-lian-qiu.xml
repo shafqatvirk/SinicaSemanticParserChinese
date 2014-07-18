@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 练球 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 必)
+			  (VP (VV 强迫))))
+		  (PU ，)
+		  (VP (ADVP (AD 不))
+		      (VP (VV 必)
+			  (VP (ADVP (AD 痛苦))
+			      (VP (VV 练球)))))
+		  (PU ，)
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (CS 只要))
+				  (VP (VV 喜欢))))
+		      (PU ，)
+		      (ADVP (AD 就))
+		      (VP (VV 可)
+			  (VP (VV 打好)
+			      (NP-OBJ (NN 球))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  痛苦 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

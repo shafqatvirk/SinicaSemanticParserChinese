@@ -1,0 +1,230 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 移转 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 transfers"/>
+    <role argnum="2" argrole="entity arg1 is transferred to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (LCP-TMP (IP (NP-SBJ (NN 主权))
+				 (VV 移转)
+				 (NP-PN-OBJ (NR 北京)))
+			     (LC 後))
+		    (PU ，)
+		    (ADVP (AD 不))
+		    (VP (VV 得)
+			(VP (ADVP (AD 再))
+			    (VP (VV 挂)))))) 
+	</parse>
+	<arg n="1">
+	主权 
+	</arg>
+	<arg n="2">
+	北京 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 当)
+		    (IP (NP-SBJ (NN 男人))
+			(VP (ADVP (AD 更))
+			    (VP (VV 爱)
+				(NP-OBJ (PN 自己))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 会)
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 爱)
+						    (NP-OBJ (PN 自己))))
+					    (DEC 的))
+				    (QP (CD 一))
+				    (NP (NN 部份)))
+			    (VP (VV 移转)
+				(PP (P 到)
+				    (LCP (NP (NN 身体))
+					 (LC 上)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 爱 自己 的 一 部份 
+	</arg>
+	<arg n="2">
+	到 身体 上 
+	</arg>
+	<arg n="m" f="tmp">
+	当 男人 更 爱 自己 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(LCP-TMP (IP (NP-SBJ (NP-PN (NR 澳门))
+			     (NP (NN 政权)))
+		     (VP (VV 移转)))
+		 (LC 前後)) 
+	</parse>
+	<arg n="1">
+	澳门 政权 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LST (CD 二))
+	    (PU 、)
+	    (NP-TTL-TPC (PU 「)
+			(IP-APP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 促进)
+				    (NP-OBJ (NN 民间))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 参与)
+					    (NP-OBJ (ADJP (JJ 公共))
+						    (NP (NN 建设)))))))
+			(NP (NN 法))
+			(PU 」))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *T*-3))
+			    (VP (VV 包括)
+				(NP-OBJ (NP (NP (ADJP (JJ 新))
+						(NP (NN 市镇)))
+					    (NP (NN 开发)))
+					(PU 、)
+					(NP (ADJP (JJ 重大))
+					    (NP (NN 工商业)))
+					(CC 及)
+					(NP (NN 科技)
+					    (NN 设施))
+					(ETC 等)))))
+		    (ADJP (JJ 公共))
+		    (NP (NN 建设)))
+	    (PU ，)
+	    (VP (ADVP (AD 将))
+		(VP (VV 可)
+		    (VP (VP (PP-LGS (P 由)
+				    (NP (NN 民间)
+					(NN 机构)))
+			    (VP (VP (VP (VV 规划)
+					(NP-OBJ (-NONE- *RNR*-4)))
+				    (VP (VV 兴建)
+					(NP-OBJ-4 (-NONE- *RNR*-2))))
+				(PU 、)
+				(VP (VV 营运)
+				    (NP-OBJ-2 (-NONE- *-1)))))
+			(PU ，)
+			(VP (ADVP (AD 再))
+			    (VP (VV 移转)
+				(PP (P 给)
+				    (NP (NN 政府))))))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-3 包括 新 市镇 开发 、 重大 工商业 及 科技 设施 等 公共 建设 
+	</arg>
+	<arg n="2">
+	给 政府 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<arg n="m" f="tpc">
+	「 *PRO* 促进 民间 *PRO* 参与 公共 建设 法 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 至於)
+		    (NP (ADJP (JJ 原有))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (PP-MNR (P 以)
+						(NP (NN 制造)))
+					(VP (VV 为主))))
+				(DEC 的)))
+			(NP (PU 「)
+			    (NN 工业)
+			    (NN 时代)
+			    (PU 」))
+			(ADJP (JJ 旧))
+			(NP (NN 经济))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 则))
+		(DVP (ADVP (AD 逐步))
+		     (DEV 地))
+		(VP (VP (ADVP (AD 自然))
+			(VP (VV 割舍)))
+		    (PU ，)
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 制造)
+					(NN 基地))
+				(VP (VV 移转)
+				    (NP-OBJ (NN 国外)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1" f="psr">
+	至於 原有 *OP* *T*-1 以 制造 为主 的 「 工业 时代 」 旧 经济 
+	</arg>
+	<arg n="1" f="pse">
+	制造 基地 
+	</arg>
+	<arg n="2">
+	国外 
+	</arg>
+	<arg n="m" f="adv">
+	逐步 地 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

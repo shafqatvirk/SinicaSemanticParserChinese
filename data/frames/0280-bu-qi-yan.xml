@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不起眼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NP-PN (NR 宁波)
+                        (NR 海天))
+                 (NP (NN 机械)
+                     (NN 制造))
+                 (ADJP (JJ 有限))
+                 (NP (NN 公司)))
+      (VP (ADVP (AD 原来))
+          (VP (VC 是)
+              (NP-PRD (QP (CD 一)
+                          (CLP (M 个)))
+                      (CP (WHNP-1 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                  (VP (VA 不起眼)))
+                              (DEC 的)))
+                      (NP (NN 作坊)))))))
+	</parse>
+	<arg n="0"> (*T*-1)->(作坊) </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 澄清 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 clarifies"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 北京)
+				     (NN 社科院))
+			      (NP (NN 近史所)
+				  (NN 研究员)))
+		      (NP-PN (NR 耿云志)))
+	      (VP (ADVP (AD 仍))
+		  (VP (VV 须)
+		      (VP (VV 澄清)
+			  (NP-OBJ (NN 史实)))))) 
+	  </parse>
+	  <arg n="0">
+	  北京 社科院 近史所 研究员 耿云志 
+	  </arg>
+	  <arg n="1">
+	  史实 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

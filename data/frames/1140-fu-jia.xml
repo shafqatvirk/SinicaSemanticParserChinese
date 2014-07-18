@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 附加 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="attachment"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="agent/cause"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (VP (PP-LGS (P 由)
+					      (NP (NP-PN (NN 入境)
+							 (NN 事务处))
+						  (NP (NN 处长))))
+				      (VP (VV 签发)))
+				  (CC 而)
+				  (VP (VV 附加)
+				      (PP-LOC (P 在)
+					      (LCP (NP (NP (PN 其))
+						       (NP (NN 单程)
+							   (NN 通行证)))
+						   (LC 上))))))
+			  (DEC 的)))
+		  (NP (NN 居留权)
+		      (NN 证明书))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 	  
+	  </arg>
+	  <arg n="1">
+	  在 其 单程 通行证 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-2 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (PP-ADV (P 在)
+				      (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							   (VP (VV 拍打)))
+						       (DEC 的))
+					       (NP (PU 「)
+						   (NN 实用)
+						   (NN 目的)
+						   (PU 」)))
+					   (LC 之外)))
+			      (VP (VV 附加)
+				  (NP-OBJ (-NONE- *T*-2)))))
+		      (DEC 的)))
+	      (NP (NN 美观)
+		  (NN 效果))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 *PRO* 拍打 的 「 实用 目的 」 之外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

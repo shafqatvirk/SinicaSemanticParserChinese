@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跻身 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 ascends to be among"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 十一)
+			      (CLP (M 家)))
+			  (NP (NN 乡镇)
+			      (NN 企业)))
+		  (VP (VV 跻身)
+		      (NP-OBJ (NP (NP-PN (NR 中国))
+				  (PU “)
+				  (NP (ADJP (JJ 最佳))
+				      (NP (NN 经济)
+					  (NN 效益)))
+				  (NP (NN 乡镇)
+				      (NN 企业))
+				  (PU ”))
+			      (NP (NN 行列))))) 
+	  </parse>
+	  <arg n="0">
+	  十一 家 乡镇 企业 	  
+	  </arg>
+	  <arg n="1">
+	  中国 “ 最佳 经济 效益 乡镇 企业 ” 行列 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (QP (CD 一些))
+			      (NP (ADJP (JJ 高))
+				  (ADJP (JJ 新))
+				  (NP (NN 技术)))
+			      (NP (NN 企业)))
+		      (NP (ADVP (AD 如))
+			  (NP (NP-PN (NP-PN (NR 福建))
+				     (NP-PN (NR 日立))
+				     (ADJP (JJ 有限))
+				     (NP (NN 公司)))
+			      (PU 、)
+			      (NP-PN (NP-PN (NR 厦华))
+				     (NP (NN 电子)
+					 (NN 企业))
+				     (ADJP (JJ 有限))
+				     (NP (NN 公司)))
+			      (PU 、)
+			      (NP-PN (NP-PN (NR 福建))
+				     (NP-PN (NR 实达))
+				     (NP (NN 电脑))
+				     (NP (NN 股份))
+				     (ADJP (JJ 有限))
+				     (NP (NN 公司)))
+			      (CC 和)
+			      (NP-PN (NR 福建)
+				     (NN 计算机)
+				     (NN 外部)
+				     (NN 设备厂)))))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 跻身)
+		      (PP-LOC (P 于)
+			      (NP (NP (NP-PN (NR 中国))
+				      (QP (CD 百)
+					  (CLP (M 家)))
+				      (NP (ADJP (JJ 高))
+					  (NP (NN 科技)))
+				      (NP (NN 企业)))
+				  (NP (NN 行列))))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 高 新 技术 企业 如 福建 日立 有限 公司 、 厦华 电子 企业 有限 公司 、 福建 实达 电脑 股份 有限 公司 和 福建 计算机 外部 设备厂 	  
+	  </arg>
+	  <arg n="1">
+	  于 中国 百 家 高 科技 企业 行列 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抱孙心切 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 让)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 抱孙心切)))
+				(DEC 的)))
+			(QP (CD 两))
+			(NP (NN 老)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 震惊)
+			(ADVP (AD 不已)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 选片 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 凭著)
+		    (NP (NP (LCP (QP (CD 多)
+				     (CLP (M 年)))
+				 (LC 来))
+			    (DNP (PP (P 对)
+				     (NP (NN 电影)))
+				 (DEG 的))
+			    (NP (NN 热爱)))
+			(CC 与)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (NP-MNR (-NONE- *T*-1))
+					(VP (VV 选片)))))
+			    (NP (NN 眼光)))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 菲力普)
+			   (CC 与)
+			   (NR 阿蓝．贾拉都))
+		    (NP (NN 兄弟)))
+	    (VP (VP (NP-ADV (NN 一手))
+		    (VP (VV 创办)
+			(AS 了)
+			(NP-PN-OBJ (NP (QP (CD 三))
+				       (NP (NN 大洲)))
+				   (NP (NN 影展)))))
+		(PU ，)
+		(VP (VV 让)
+		    (NP-OBJ (DNP (NP-PN (NR 亚)
+					(PU 、)
+					(NR 非)
+					(PU 、)
+					(NR 拉丁美洲))
+				 (DEG 的))
+			    (ADJP (JJ 好))
+			    (NP (NN 电影)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 走入)
+			    (NP-PN-OBJ (NR 欧洲))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="mnr">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

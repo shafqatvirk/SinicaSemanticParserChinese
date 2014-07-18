@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 品 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 品)
+			      (NP-OBJ (NN 茶)))
+			  (PU 、)
+			  (VP (VV 吃)
+			      (NP-OBJ (NN 茶点)))
+			  (PU ，)
+			  (VP (VV 享受)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 老板))
+						  (VP (VV 泡)
+						      (NP-OBJ (NN 茶))))
+					      (DEC 的))
+				      (ADJP (JJ 好))
+				      (NP (NN 功夫))))))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (VP (VC 是)
+		      (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 来)
+					      (NP-PN-OBJ (NR 坪林))))
+				      (DEC 的))
+			      (QP (CD 一))
+			      (ADJP (JJ 大))
+			      (NP (NN 享受)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  茶 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 谈话 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="talker"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (VP (VP (VV 觉得)
+			    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				    (VP (ADVP (AD 像))
+					(VP (VC 是)
+					    (VP (PP (P 和)
+						    (NP (CP (WHNP-1 (-NONE- *OP*))
+							    (CP (IP (NP-SBJ (-NONE- *T*-1))
+								    (VP (VV 写)
+									(NP-OBJ (NN 字) )))
+								(DEC 的)))
+							(NP (NN 人) )))
+						(PP-DIR (P 对)
+							(NP (NN 面) ))
+						(VP (VV 谈话)))))))
+			(PU ，)
+			(VP (PP (P 如)
+				(NP (ADJP (JJ 所谓))
+				    (NP (PU 『)
+					(NN 亲炙)
+					(PU 』))))
+			    (VP (VA 一样))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="crd">
+	和 *OP* *T*-1 写 字 的 人 
+	</arg>
+	<arg n="m" f="adv">
+	对 面 
+	</arg>
+	<arg n="m" f="adv">
+	像 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

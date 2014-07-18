@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相撞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities colliding"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (DP (DT 这)
+				  (CLP (M 颗)))
+			      (NP (NN 彗星)))
+		      (VP (PP (P 与)
+			      (NP-PN (NR 木星)))
+			  (QP-ADV (OD 第一)
+				  (CLP (M 次)))
+			  (VP (VV 相撞))))
+	      (VP (VV 发生)
+		  (PP-TMP (P 在)
+			  (NP (NR 北京)
+			      (NN 时间)
+			      (NT 七月)
+			      (NT 十七日)
+			      (NT 凌晨)
+			      (NT 三时半))))) 
+	  </parse>
+	  <arg n="0">
+	  这 颗 彗星 
+	  </arg>
+	  <arg n="0">
+	  与 木星 
+	  </arg>
+	  <arg n="m" f="adv">
+	  第一 次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

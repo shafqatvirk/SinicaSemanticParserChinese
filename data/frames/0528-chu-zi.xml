@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出资 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="funder"/>
+      <role argnum="1" argrole="amount"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NP-PN (NR 韩国)
+					     (NR 世运)
+					     (NN 工业)
+					     (NN 株式会社))
+				      (CC 与)
+				      (NP-PN (NR 威海)
+					     (NN 经济)
+					     (NN 技术)
+					     (NN 开发区)))
+			      (VP (ADVP (AD 共同))
+				  (VP (VP (VV 出资)
+					  (QP-OBJ (CD 二千九百八十万)
+						  (CLP (M 美元))))
+				      (VP-PRP (VV 兴办)
+					      (NP-OBJ (-NONE- *T*-1))))))
+			  (DEC 的)))
+		  (NP-PN (NP-PN (PU “)
+				(NR 黑豹)
+				(PU ”))
+			 (ADJP (JJ 农用))
+			 (NP (NN 车)))
+		  (NP (NN 项目))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 世运 工业 株式会社 与 威海 经济 技术 开发区 
+	  </arg>
+	  <arg n="1">
+	  二千九百八十万 美元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共同 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (IP (NP-SBJ (NP-PN (NR 台湾))
+				   (ADJP (JJ 著名))
+				   (NP-APP (NN 企业家)
+					   (PU 、)
+					   (NN 书画家)
+					   (PU 、)
+					   (NN 艺术品)
+					   (NN 收藏家))
+				   (NP-PN (NR 李志仁)
+					  (NN 先生)))
+			   (VP (VV 倡议)
+			       (CC 和)
+			       (VV 出资)))
+		       (LC 下))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 著名 企业家 、 书画家 、 艺术品 收藏家 李志仁 先生 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

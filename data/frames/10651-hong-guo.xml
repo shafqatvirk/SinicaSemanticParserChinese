@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 烘托 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 所以))
+	    (PP (P 像)
+		(NP (DNP (NP (NP-APP (ADJP (JJ 前))
+				     (NP (NN 省议长)))
+			     (NP-PN (NR 刘炳伟)))
+			 (DEG 的))
+		    (NP (NP (NN 跳票)
+			    (NN 危机))
+			(NP (NN 新闻)))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VV 会)
+		(VP (VP (VP (VV 用)
+			    (NP-OBJ (QP (CD 五)
+					(CLP (M 则)))
+				    (DNP (NP (ADJP (JJ 不同))
+					     (NP (NN 角度)))
+					 (DEG 的))
+				    (NP (NN 新闻))))
+			(VP (MSP 来)
+			    (VP (VV 探讨)
+				(NP-OBJ (DNP (NP-PN (NR 刘炳伟))
+					     (DEG 的))
+					(NP (NN 政商)
+					    (NN 脉络))))))
+		    (PU ，)
+		    (VP (PU 「)
+			(VP (VV 用)
+			    (NP-OBJ (NN 广度)))
+			(VP (MSP 来)
+			    (VP (VV 烘托)
+				(NP-OBJ (NN 深度))))
+			(PU 」))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	深度 
+	</arg>
+	<arg n="m" f="adv">
+	像 前 省议长 刘炳伟 的 跳票 危机 新闻 
+	</arg>
+	<arg n="m" f="adv">
+	所以 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

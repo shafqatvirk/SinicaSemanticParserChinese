@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 追涨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 chases and causes to rise in value"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (LCP (NP (NN 股市))
+			 (LC 中))
+		    (QP (CD 一)
+			(CLP (M 波波)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 众人))
+				(VP (VV 追涨)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NP (NN 热门股))
+			(PU 、)
+			(NP (ADJP (JJ 新))
+			    (NP (NN 标的)))))
+	    (PU ，)
+	    (VP (PP-ADV (ADVP (AD 就))
+			(PP (P 像)
+			    (NP (LCP (NP (NN 急流))
+				     (LC 中))
+				(CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 诱人)))
+					(DEC 的)))
+				(NP (NN 漩涡)))))
+		(VP (VCD (VV 旋起)
+			 (VV 旋灭))))) 
+	</parse>
+	<arg n="0">
+	众人 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (IP-ADV (NP-SBJ (NN 投资人))
+		    (VP (ADVP (CS 不管))
+			(VP (VV 经过)
+			    (NP-OBJ (QP (CD 多少)
+					(CLP (M 次)))
+				    (ADJP (JJ 惨痛))
+				    (NP (NN 教训))))))
+	    (PU ，)
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 追涨)
+				    (VV 杀跌)))
+			    (DEC 的))
+		    (NP (NN 习气)))
+	    (VP (ADVP (AD 总是))
+		(ADVP (AD 难以))
+		(VP (VV 扭转)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

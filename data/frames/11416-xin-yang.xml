@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 信仰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 believes in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今天) )
+	    (ADVP (AD 或许))
+	    (NP-SBJ (PN 我们))
+	    (VP (ADVP (AD 不))
+		(ADVP (AD 再))
+		(VP (VV 信仰)
+		    (NP-OBJ (PN 它))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	它 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	或许 
+	</arg>
+	<arg n="m" f="tmp">
+	今天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

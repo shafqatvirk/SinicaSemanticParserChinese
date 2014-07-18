@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing production of which increased"/>
+      <role argnum="2" argrole="extent of increase"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 农业))
+	      (VP (VV 增产))) 
+	  </parse>
+	  <arg n="1">
+	  农业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 仅))
+		      (NP (NN 包装)
+			  (NN 材料)))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 增产)
+		      (QP-EXT (CD 五百余万)
+			      (CLP (M 吨)))))) 
+	  </parse>
+	  <arg n="1">
+	  仅 包装 材料 
+	  </arg>
+	  <arg n="2">
+	  五百余万 吨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

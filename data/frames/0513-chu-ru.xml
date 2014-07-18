@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 境内外))
+		      (QP (CD 一些))
+		      (NP (NN 资金)))
+	      (VP (VP (VV 利用)
+		      (NP-OBJ (ADJP (JJ 非法))
+			      (NP (NN 渠道))))
+		  (VP (VV 出入)
+		      (NP-PN-OBJ (NR 中国)))
+		  (VP (VP (VV 套汇))
+		      (PU 、)
+		      (VP (VV 套利))
+		      (CC 和)
+		      (VP (VV 骗汇))))) 
+	  </parse>
+	  <arg n="0">
+	  境内外 一些 资金 
+	  </arg>
+	  <arg n="1">
+	  中国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 穿插 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 inserts"/>
+      <role argnum="2" argrole="place arg1 is inserted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 时常))
+		      (VP (VV 穿插)
+			  (NP-OBJ (CP (WHNP-44 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-44))
+					      (VP (VV 发生)
+						  (PP (P 於)
+						      (NP (ADJP (JJ 现实))
+							  (NP (NN 生活))))))
+					  (DEC 的)))
+				  (NP (NP (ADJP (JJ 小))
+					  (NP (NN 故事)))
+				      (CC 与)
+				      (NP (NN 对白))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-44 发生 於 现实 生活 的 小 故事 与 对白 
+	  </arg>
+	  <arg n="m" f="adv">
+	  时常 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相隔 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="entity arg0 is separated by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (NP-PN-SBJ (NR 中国)
+			     (CC 和)
+			     (NR 以色列))
+		  (VP (VP (VV 地处)
+			  (NP-OBJ (DNP (NP-PN (NR 亚洲))
+				       (DEG 的))
+				  (QP (CD 两))
+				  (NP (NN 端))))
+		      (PU ，)
+		      (VP (VV 相隔)
+			  (NP-OBJ (NN 万水千山))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 和 以色列 
+	  </arg>
+	  <arg n="1">
+	  万水千山 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (PP-SBJ (PP-DIR (P 由)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 签署)
+				      (NP-OBJ (NN 契约)))))
+		      (PP-DIR (P 至)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (BA 把)
+				      (IP-OBJ (NP-SBJ (NN 契约))
+					      (VP (VP (VV 送交)
+						      (NP-OBJ (DP (DT 该))
+							      (NP (NN 处))))
+						  (VP (VV 登记))))))))
+	      (PU ，)
+	      (VP (ADVP (AD 通常))
+		  (VP (VV 相隔)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 段)))
+			      (NP (NN 时间)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 *pro* 签署 契约 至 *pro* 把 契约 送交 该 处 登记 
+	  </arg>
+	  <arg n="1">
+	  一 段 时间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  通常 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 水))
+	      (VP (VV 使)
+		  (NP-OBJ (NN 人们))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 不))
+			  (ADVP (AD 再))
+			  (VP (VP-FOC (VV 相隔))
+			      (VP (VA 遥远))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

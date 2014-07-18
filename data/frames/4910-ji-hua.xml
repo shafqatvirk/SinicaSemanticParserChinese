@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 计画 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="planner"/>
+    <role argnum="1" argrole="thing planned"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 目前))
+	    (NP-SBJ (PN 他们))
+	    (VP (VV 计画)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 再度))
+			    (VP (VV 结婚)))))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="1">
+	*PRO* 再度 结婚 
+	</arg>
+	<arg n="m" f="tmp">
+	目前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (VC 是)
+		(NP-PRD (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+				     (IP (NP-SBJ (-NONE- *T*-1))
+					 (VP (PP-LGS (P 由)
+						     (NP (NP (NN 民间)
+							     (NN 团体))
+							 (PRN (PU 「)
+							      (NP-PN (NN 人权)
+								     (NN 教育)
+								     (NN 基金会))
+							      (PU 」))))
+					     (VP (VP (VV 筹募)
+						     (NP-OBJ (NN 经费)))
+						 (PU ，)
+						 (VP (VV 计画)
+						     (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							     (VP (PP-LOC (P 在)
+									 (NP (PN 此)))
+								 (VP (VV 兴建)
+								     (NP-OBJ (-NONE- *-1))))))))))
+				 (NP (PU 「)
+				     (NN 人权)
+				     (NN 纪念碑)
+				     (PU 」)))
+			     (DEG 的))
+			(NP (NN 动土)
+			    (NN 典礼))))) 
+	</parse>
+	<arg n="0">
+	由 民间 团体 「 人权 教育 基金会 」 
+	</arg>
+	<arg n="1">
+	*PRO* 在 此 兴建 *-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 is helpful for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (ADJP (JJ 有关))
+			   (DEG 的))
+		      (NP (NN 比赛)))
+	      (VP (VV 有助)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 推动)
+				  (NP-OBJ (NP (NN 参赛者))
+					  (NP (NN 学习)
+					      (CC 及)
+					      (NN 创作))
+					  (NP (NN 兴趣))))
+			      (PU ，)
+			      (CC 并)
+			      (VP (VV 促进)
+				  (NP-OBJ (NP (PN 他们))
+					  (DNP (PP (P 对)
+						   (NP (NN 教师)
+						       (CC 及)
+						       (NN 社会)))
+					       (DEG 的))
+					  (NP (NN 尊敬)
+					      (CC 和)
+					      (NN 了解)))))))) 
+	  </parse>
+	  <arg n="0">
+	  有关 的 比赛 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 推动 参赛者 学习 及 创作 兴趣 ， 并 促进 他们 对 教师 及 社会 的 尊敬 和 了解 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

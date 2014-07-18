@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 管辖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="authority"/>
+      <role argnum="1" argrole="jurisdiction"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-TMP (NT 一九五四年))
+		      (VP (VV 改为)
+			  (NP-OBJ (NN 地级市))))
+		  (PU ，)
+		  (VP (PP-LGS (P 由)
+			      (NP-PN (NR 四川省)))
+		      (VP (VV 管辖))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  由 四川省 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

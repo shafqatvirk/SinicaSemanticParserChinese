@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夷为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="entity arg0 reduces arg1 to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TPC (P 至於)
+		    (NP (CP (WHNP-2 (-NONE- *OP*))
+			    (IP (NP-PN-SBJ (NR 印度))
+				(VP (PP-TMP (P 在)
+					    (NP (NT 一月)
+						(NT 二十六日)))
+				    (VP (VV 发生)
+					(NP-OBJ (-NONE- *T*-2))))))
+			(DNP (QP (NP (NP-PN (NR 芮氏))
+				     (NP (NN 规模)))
+				 (QP (CD 七．九)))
+			     (DEG 的))
+			(ADJP (JJ 大))
+			(NP (NN 地震))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 灾情))
+				(VP (ADVP (AD 最))
+				    (VP (VA 严重))))
+			    (DEC 的)))
+		    (NP-PN (NR 古茶拉底省)
+			   (NR 普杰镇)))
+	    (VP (ADVP (AD 已))
+		(ADVP (AD 彻底))
+		(VP (SB 被)
+		    (VP (VV 夷为)
+			(NP-OBJ (NN 平地)))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-1 灾情 最 严重 的 古茶拉底省 普杰镇 
+	</arg>
+	<arg n="2">
+	平地 
+	</arg>
+	<arg n="m" f="adv">
+	彻底 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="tpc">
+	至於 *OP* 印度 在 一月 二十六日 发生 *T*-2 芮氏 规模 七．九 的 大 地震 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

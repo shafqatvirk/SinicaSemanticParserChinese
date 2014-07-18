@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 竞选 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="position arg0 runs for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (QP-TMP (NP-PN (NR 民国))
+			(QP (OD 七十八)
+			    (CLP (M 年))))
+		(VP (VP (VV 出马))
+		    (VP (VV 竞选)
+			(NP-OBJ (NN 立委)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	立委 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 七十八 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (VV 补助)
+		    (NP-OBJ (NN 省)
+			    (NN 议员))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 竞选))))
+		(PU 、)
+		(VP (NP-PN-OBJ (NR 李)
+			       (NR 连))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 竞选)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

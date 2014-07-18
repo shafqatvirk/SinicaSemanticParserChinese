@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 送入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity sent"/>
+      <role argnum="2" argrole="location sent into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-PN-SBJ (NN 国际)
+				 (NN 文传)
+				 (NN 电讯社))
+		      (VP (VV 报道))))
+	      (PU ，)
+	      (NP-SBJ (QP-PN (PU “)
+			     (NP (NN 进步))
+			     (QP (FW Ｍ)
+				 (PU —)
+				 (CD ２４)
+				 (PU ”)
+				 (CLP (M 号))))
+		      (ADJP (JJ 载重))
+		      (NP (NN 运输)
+			  (NN 飞船)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-TMP (NT ８月)
+						  (NT ２５日))
+					  (PP-DIR (P 从)
+						  (NP (NP-PN (NR 拜科努尔))
+						      (NP (NN 航天)
+							  (NN 发射场))))
+					  (VP (VV 送入)
+					      (NP-OBJ (NN 太空)))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  太空 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 拜科努尔 航天 发射场 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ８月 ２５日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

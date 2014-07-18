@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赋于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="granter"/>
+      <role argnum="1" argrole="thing granted"/>
+      <role argnum="2" argrole="grantee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 赋于)
+				  (NP-IO (NN 保税区))
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (DP (DT 各)
+		      (CLP (M 项)))
+		  (NP (NP (NN 优惠)
+			  (NN 政策))
+		      (CC 和)
+		      (NP (ADJP (JJ 特殊))
+			  (NP (NN 功能))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="2">
+	  保税区 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

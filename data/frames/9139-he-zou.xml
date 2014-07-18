@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合奏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="music arg0 plays together"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 内中))
+	      (VP (ADVP (AD 却))
+		  (VP (VE 无)
+		      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (LCP-TMP (IP (NP-SBJ (NP-PN (NR 中))
+								   (NP (NN 西))
+								   (NP (NN 乐器)))
+							   (VP (VV 合奏)))
+						       (LC 时))
+					      (ADVP (AD 常))
+					      (VP (VV 碰到))))
+				      (DEC 的)))
+			      (NP (NP (PU 「)
+				      (NN 主)
+				      (NN 从)
+				      (PU 」))
+				  (NP (NN 问题))))))) 
+	  </parse>
+	  <arg n="2">
+	  中 西 乐器 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

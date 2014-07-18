@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 删减 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 cuts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 删减)
+			    (NP-OBJ (NP-PN (NR 台北市))
+				    (DNP (QP (ADVP (AD 区区))
+					     (QP (CD 数十亿)))
+					 (DEG 的))
+				    (NP (NN 统筹)
+					(NN 分配款)))))
+		(PU ，)
+		(VP (VP (ADVP (AD 或许))
+			(VP (VV 不无)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VP (VV 缩小)
+							(NP-OBJ (NN 资源)
+								(NN 差距)))
+						    (PU 、)
+						    (VP (VV 安抚)
+							(NP-OBJ (DP (DT 各))
+								(NP (NN 县)
+								    (NN 市))))))
+					    (DEC 的))
+				    (NP (NN 宣示)
+					(NN 意味)))))
+		    (PU ，)
+		    (VP (ADVP (AD 但))
+			(ADVP (AD 并))
+			(VP (VC 非)
+			    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 解决)
+						    (NP-OBJ (NN 问题))))
+					    (DEC 的)))
+				    (DNP (NP (NN 根本))
+					 (DEG 之))
+				    (NP (NN 道))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台北市 区区 数十亿 的 统筹 分配款 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

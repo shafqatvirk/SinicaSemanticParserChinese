@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 馀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity remaining of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 仅))
+				    (VP (VV 馀)
+					(NP-OBJ (QP (CD 两百八十二))
+						(NP (NN 人))))))
+			    (DEC 的)))
+		    (NP (NN 邵族)))
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (VP (VV 雪上加霜)
+			(PU 、)
+			(VV 百废待举))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	两百八十二 人 
+	</arg>
+	<arg n="m" f="adv">
+	仅 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

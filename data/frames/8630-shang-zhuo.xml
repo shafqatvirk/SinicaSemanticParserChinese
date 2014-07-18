@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上桌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing (food) arg0 serves onto table"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (PP-LOC (P 在)
+			      (NP (QP (CD 一些))
+				  (NP (NN 餐厅))))
+		      (PU ，)
+		      (NP-SBJ (NP-APP (NP (PU 「)
+					  (NN 凤梨)
+					  (NN 苦瓜)
+					  (NN 鸡)
+					  (PU 、)
+					  (NN 麻油)
+					  (NN 鸡)
+					  (PU 」))
+				      (ETC 等))
+			      (ADJP (JJ 台式))
+			      (NP (NN 美食)))
+		      (VP (VV 上桌)))
+	      (PU ，)
+	      (NP-SBJ (NN 口味))
+	      (VP (VP (VA 道地))
+		  (VP (PP (P 与)
+			  (NP-PN (NR 台湾)))
+		      (VP (VV 不相上下))))) 
+	  </parse>
+	  <arg n="1">
+	  「 凤梨 苦瓜 鸡 、 麻油 鸡 」 等 台式 美食 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 一些 餐厅 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 纠正 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity corrected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 央行))
+	      (VP (VP (ADVP (AD 还))
+		      (VP (VV 作好)
+			  (AS 了)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 随时))
+						  (PP-DIR (P 向)
+							  (NP-PN (NR 欧洲)
+								 (NN 中央)
+								 (NN 银行)))
+						  (VP (VV 通报)
+						      (CC 和)
+						      (VV 建议))))
+					  (DEC 的))
+				  (NP (NN 准备)))))
+		  (PU ，)
+		  (VP (ADVP (AD 以便))
+		      (VP (VV 纠正)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 可能)
+						  (VP (VV 出现))))
+					  (DEC 的)))
+				  (NP (NN 毛病))))))) 
+	  </parse>
+	  <arg n="0">
+	  央行 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 可能 出现 的 毛病 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 各))
+			  (NP (NN 地)))
+		      (PU 、)
+		      (NP (DP (DT 各))
+			  (ADJP (JJ 有关))
+			  (NP (NN 部门))))
+	      (VP (VV 必须)
+		  (VP (VP (VP (ADVP (AD 立即))
+			      (VP (VV 纠正)))
+			  (CC 并)
+			  (VP (ADVP (AD 严肃))
+			      (VP (VV 查处))))
+		      (PU ，)
+		      (VP (VV 防止)
+			  (IP-OBJ (NP-SBJ (DP (DT 此)
+					      (CLP (M 类)))
+					  (NP (NN 问题)))
+				  (VP (ADVP (AD 再度))
+				      (VP (VV 发生)))))))) 
+	  </parse>
+	  <arg n="0">
+	  各 地 、 各 有关 部门 
+	  </arg>
+	  <arg n="m" f="adv">
+	  立即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

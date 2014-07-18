@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 一蹴而就 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 解决)
+			  (NP-OBJ (DP (DT 这)
+				      (CLP (M 个)))
+				  (NP (NN 问题)))))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 不))
+		  (VP (VV 能)
+		      (VP (VV 一蹴而就))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 解决 这 个 问题 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 捐建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="donator"/>
+      <role argnum="1" argrole="thing arg0 donates (money) to build"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-PN-SBJ (NR 远东)
+							 (NN 企业)
+							 (NN 集团))
+					      (VP (VV 捐建)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 组合屋)))
+			  (VP (QP-PRD (ADVP (AD 只有))
+				      (QP (CD 五十)
+					  (CLP (M 户)))))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (NP-TMP (NT 过去))
+				      (VP (VP (VV 租屋))
+					  (CC 或)
+					  (VP (VV 住)
+					      (PP (P 在)
+						  (LCP (NP (NN 违建))
+						       (LC 中)))))))
+			      (DEC 的)))
+		      (NP (NN 弱势)
+			  (NN 族群)))
+	      (VP (ADVP (AD 根本))
+		  (VP (VE 没)
+		      (NP-OBJ (NN 申请)
+			      (NN 资格))))) 
+	  </parse>
+	  <arg n="0">
+	  远东 企业 集团 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

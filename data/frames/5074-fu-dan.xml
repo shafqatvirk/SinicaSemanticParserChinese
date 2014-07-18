@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 负担 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="burden arg0 carries"/>
+    <role argnum="2" argrole="means arg0 carries burden with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VV 抗议)
+		(IP-Q-OBJ (ADVP-WH (AD 为何))
+			  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 身为)
+				      (NP-OBJ (NN 原住民))))
+			  (PU ，)
+			  (NP-SBJ (-NONE- *pro*))
+			  (VP (PP-TMP (P 当)
+				      (LCP (IP (NP-SBJ (PN 他们))
+					       (VP (VV 参观)
+						   (NP-OBJ (DNP (NP (PN 自己)
+								    (NN 祖先))
+								(DEG 的))
+							   (NP (NN 文物)))))
+					   (LC 时)))
+			      (ADVP (AD 仍))
+			      (VP (VV 需)
+				  (VP (VV 负担)
+				      (NP-OBJ (ADJP (JJ 高额))
+					      (NP (NN 门票))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	高额 门票 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<arg n="m" f="tmp">
+	当 他们 参观 自己 祖先 的 文物 时 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 身为 原住民 
+	</arg>
+	<arg n="m" f="adv">
+	为何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 话机)
+		    (CC 与)
+		    (NN 通话费))
+	    (VP (ADVP (AD 通常))
+		(ADVP (AD 不))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-55 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 零用钱))
+					(VP (VV 可以)
+					    (VP (VPT (VV 负担)
+						     (DER 得)
+						     (VV 了))
+						(NP-OBJ (-NONE- *T*-55)))))
+				    (DEC 的))))))) 
+	</parse>
+	<arg n="1">
+	*T*-55 
+	</arg>
+	<arg n="2">
+	零用钱 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 服务))
+			 (DEG 的))
+		    (NP (NN 价格)))
+	    (VP (VP (VA 昂贵))
+		(VP (ADVP (AD 难以))
+		    (VP (VV 负担))))) 
+	</parse>
+	<arg n="1">
+	服务 的 价格 
+	</arg>
+	<arg n="m" f="adv">
+	难以 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-TMP (NT 当时) )
+		(NP-SBJ (NP (NP-PN (NR 李))
+			    (NP (NN 老师)))
+			(NP (NN 学费)) )
+		(VP (VA 便宜)))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 负担)
+		    (DER 得)
+		    (VP-EXT (VV 起))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

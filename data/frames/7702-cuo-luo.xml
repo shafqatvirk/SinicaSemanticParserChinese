@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 错落 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="things described"/>
+    <role argnum="1" argrole="place arg0 is scattered around"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (CP (WHNP-6 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-6))
+				    (NP-SBJ (NN 招牌))
+				    (VP (VP (ADVP (AD 高))
+					    (VP (VV 挂)))
+					(VP (VV 醒目))))
+				(DEC 的)))
+			(NP (NN 量贩)
+			    (NN 店)))
+		(VP (VV 错落)
+		    (NP-OBJ (NN 其中)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-6 招牌 高 挂 醒目 的 量贩 店 
+	</arg>
+	<arg n="1">
+	其中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

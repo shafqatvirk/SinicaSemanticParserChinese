@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 除皱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 removes wrinkles from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现在))
+	    (NP-SBJ (NN 美容院))
+	    (VP (VV 提供)
+		(NP-IO (PN 他们))
+		(IP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 美白)
+				(NP-OBJ (NN 淡斑))))
+			(PU 、)
+			(IP (NP-SBJ (NN 轮廓))
+			    (VP (VV 修饰)))
+			(PU 、)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VCD (VV 拉皮)
+				     (VV 除皱))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

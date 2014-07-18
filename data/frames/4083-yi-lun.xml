@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 议论 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (DVP (VP (VV 三五成群))
+		       (DEV 地))
+		  (VP (VRD (VV 议论)
+			   (VV 起))
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (NP-TMP (NT 今天))
+					      (ADVP (AD 正式))
+					      (VP (VV 出台))))
+				      (DEC 的)))
+			      (NP (PU 《)
+				  (NN 证券法)
+				  (PU 》)))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 今天 正式 出台 的 《 证券法 》 
+	  </arg>
+	  <arg n="m" f="adv">
+	  三五成群 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

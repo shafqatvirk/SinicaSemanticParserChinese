@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 会聚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="meeters"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VV 来自)
+					  (NP-OBJ (NP (NN 全球))
+						  (NP (NP (QP (CD 五))
+							  (NP (NN 大洲)))
+						      (NP (QP (CD 四))
+							  (NP (NN 大洋)))))))
+				  (DEC 的)))
+			  (NP (NN 游泳)
+			      (NN 健儿)))
+		  (VP (VP (VV 会聚)
+			  (NP-PN-OBJ (NR 罗马)))
+		      (PU ，)
+		      (VP (PP-MNR (P 通过)
+				  (NP (NN 比赛)))
+			  (PU ，)
+			  (VP (VP (VV 加强)
+				  (NP-OBJ (NN 了解)))
+			      (PU ，)
+			      (VP (VV 增进)
+				  (NP-OBJ (NN 友谊))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 来自 全球 五 大洲 四 大洋 的 游泳 健儿 
+	  </arg>
+	  <arg n="1">
+	  罗马 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 写出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 writes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 工程师))
+	    (VP (VP (VV 写出)
+		    (NP-OBJ (ADJP (JJ 新))
+			    (NP (NN 程式))))
+		(VP (VV 要)
+		    (VP (VV 测试))))) 
+	</parse>
+	<arg n="0">
+	工程师 
+	</arg>
+	<arg n="1">
+	新 程式 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

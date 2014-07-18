@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 聘用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="employer"/>
+      <role argnum="1" argrole="employee"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 根据)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 业主))
+				      (VP (PP (P 与)
+					      (NP-PN (NR 加拿大)
+						     (NN 国际)
+						     (NN 工程)
+						     (NN 公司)))
+					  (VP (VV 签订)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (NN 合同))))
+	      (PU ，)
+	      (NP-SBJ (NN 中方))
+	      (VP (VV 聘用)
+		  (NP-OBJ (DNP (NP-PN (NR ＣＩＰＭ))
+			       (DEG 的))
+			  (NP (NN 专家)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 到)
+			      (NP-OBJ (NP-PN (NR 小浪底))
+				      (NP (NN 工程)
+					  (NN 现场))))
+			  (VP (VV 进行)
+			      (NP-OBJ (NN 技术)
+				      (NN 咨询))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中方 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  ＣＩＰＭ 的 专家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 到 小浪底 工程 现场 进行 技术 咨询 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 看准)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NN 白酒)
+					   (NN 市场))
+				       (DEG 的))
+				  (NP (NN 发展)
+				      (NN 前景)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 大寨))
+	      (VP (VP (ADVP (AD 果断))
+		      (VP (VV 兼并)
+			  (AS 了)
+			  (NP-PN-OBJ (NR 昔阳县)
+				     (NN 酒厂))))
+		  (PU ，)
+		  (VP (PP (P 与)
+			  (NP-PN (NR 内蒙古)
+				 (NR 宁城)
+				 (NR 老窖)
+				 (NN 酒厂)))
+		      (VP (VV 签订)
+			  (AS 了)
+			  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 聘用)
+					      (NP-OBJ (NN 人才))))
+				  (NP (NN 合同)))))
+		  (PU ，)
+		  (VP (VV 组建)
+		      (AS 了)
+		      (NP-PN-OBJ (NP-PN (NR 大寨))
+				 (NP (NN 酒业))
+				 (ADJP (JJ 有限))
+				 (NP (NN 公司)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  人才 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

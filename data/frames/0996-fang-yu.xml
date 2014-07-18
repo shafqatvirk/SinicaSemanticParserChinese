@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 防御 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="protecting from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (PP (P 与)
+			      (NP (NP-PN (NR 中亚))
+				  (ADJP (JJ 有关))
+				  (NP (NN 国家))))
+			  (VP (VV 联手)))
+		      (VP (VV 防御)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NP-PN (NR 阿富汗))
+						      (NP (NN 冲突)))
+					      (VP (PP-DIR (P 对)
+							  (NP (NP (NP-PN (NR 独联体))
+								  (NP (NN 南部)
+								      (NN 边界)))
+							      (NP (NN 安全))))
+						  (VP (VV 造成)
+						      (NP-OBJ (-NONE- *T*-1)))))
+					  (DEC 的)))
+				  (NP (NN 威胁)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* 阿富汗 冲突 对 独联体 南部 边界 安全 造成 *T*-1 的 威胁 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

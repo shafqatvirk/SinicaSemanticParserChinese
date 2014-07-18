@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 合成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 synthesizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 复杂)))
+			    (DEC 的)))
+		    (NP (NN 蛇)
+			(NN 毒) ))
+	    (VP (ADVP (AD 不))
+		(VP (VA 易)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 合成)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 把 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 holds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 看)
+			      (AS 著)
+			      (NP-PN-OBJ (NR 吴宗升))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (ADVP (AD 一面))
+					  (VP (VV 把)
+					      (AS 著)
+					      (NP-OBJ (NN 方向盘))))
+				      (PU ，)
+				      (VP (ADVP (AD 一面))
+					  (DVP (VP (VA 沈稳))
+					       (DEV 地))
+					  (VP (VV 述说)
+					      (NP-OBJ (DNP (NP (PN 自己))
+							   (DEG 的))
+						      (NP (NN 政治)
+							  (PU 、)
+							  (NN 社会))
+						      (NP (NN 理念)))))))))
+		  (PU ，)
+		  (ADVP (AD 忽然))
+		  (PP-DIR (P 对)
+			  (NP (NP (DP (DT 这)
+				      (CLP (M 块)))
+				  (NP (NN 土地)))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 奋发)
+					      (VV 向上)))
+				      (DEC 的))
+			      (ADJP (JJ 无穷))
+			      (NP (NN 潜力))))
+		  (PU ，)
+		  (VP (VE 有)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 更))
+					      (VP (VA 坚定))))
+				      (DEC 的)))
+			      (NP (NN 信心)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  方向盘 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

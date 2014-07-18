@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抓紧 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 抓紧)
+			      (NP-OBJ (NN 时间)))))
+	      (PU ，)
+	      (NP-SBJ (NN 联赛))
+	      (VP (ADVP (AD 最早))
+		  (VP (VV 可以)
+		      (VP (PP-TMP (P 于)
+				  (NP (NT ２月)
+				      (NT １日)))
+			  (VP (VV 开始)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  时间 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NP (NT 今后))
+			  (QP (CD 一)
+			      (CLP (M 段)))
+			  (NP (NN 时间)))
+		  (PU ，)
+		  (ADVP (AD 尤其))
+		  (VP (VV 要)
+		      (VP (VP (VCD (VV 抓紧)
+				   (VV 做好))
+			      (NP-OBJ (NP-APP (NP (NP (ADJP (JJ 国有))
+						      (NP (NN 企业)))
+						  (NP (NN 下岗)
+						      (NN 职工)))
+					      (NP (NP (NP (ADJP (JJ 基本))
+							  (NP (NN 生活)))
+						      (NP (NN 保障)))
+						  (CC 和)
+						  (NP (NN 再就业))))
+				      (NP (NN 工作))))
+			  (PU ，)
+			  (VP (VV 抓好)
+			      (NP-OBJ (DNP (NP (NN 离退休)
+					       (NN 人员)
+					       (NN 生活费))
+					   (DEG 的))
+				      (ADJP (JJ 及时))
+				      (ADJP (JJ 足额))
+				      (NP (NN 发放))))
+			  (PU ，)
+			  (VP (VV 做好)
+			      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 减轻)
+						  (NP-OBJ (NN 农民)
+							  (NN 负担))))
+				      (NP (NN 工作))))
+			  (PU ，)
+			  (VP (VV 做好)
+			      (NP-OBJ (NP-APP (NP (NN 社会)
+						  (NN 治安))
+					      (ADJP (JJ 综合))
+					      (NP (NN 治理)))
+				      (NP (NN 工作))))
+			  (PU ，)
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NP (NN 中央))
+					      (DNP (ADJP (JJ 既定))
+						   (DEG 的))
+					      (ADJP (JJ 有关))
+					      (NP (NN 政策)))
+				      (VP (VCD (VV 落实)
+					       (VV 到位))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  国有 企业 下岗 职工 基本 生活 保障 和 再就业 工作 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尤其 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今后 一 段 时间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

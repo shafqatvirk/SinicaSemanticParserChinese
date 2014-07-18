@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掌控 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is in control of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 如果))
+		    (IP (NP-SBJ (PN 他们))
+			(VP (VV 能)
+			    (VP (PP-PRP (P 对)
+					(NP (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VV 掌控)
+							    (NP-OBJ (NP (QP (CD 几千亿))
+									(NP (NN 台币)))
+								    (NP (NN 预算)))))
+						    (DEC 的)))
+					    (ADJP (JJ 高阶))
+					    (NP (NN 主管))))
+				(VP (VE 有)
+				    (NP-OBJ (ADJP (JJ 良性))
+					    (NP (NN 影响))))))))
+	    (PU ，)
+	    (NP-SBJ (DNP (PP (P 对)
+			     (NP (NN 国家)
+				 (NN 社会)))
+			 (DEG 的))
+		    (NP (NN 贡献)))
+	    (VP (ADVP (AD 不))
+		(VP (VC 是)
+		    (VP (ADVP (AD 更))
+			(VP (VA 大)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	几千亿 台币 预算 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

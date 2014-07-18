@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迁入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="location moved into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VV 意味)
+		  (AS 着)
+		  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 已经)
+							(CC 和)
+							(AD 即将))
+						  (VP (VV 迁入)
+						      (NP-PN-OBJ (NR 浦东)))))
+					  (DEC 的)))
+				  (NP (NN 外资)
+				      (NN 银行))
+				  (NP (NN 分行)))
+			  (VP (VP (ADVP (AD 已))
+				  (VP (VV 达到)
+				      (QP-OBJ (CD 二十二)
+					      (CLP (M 家)))))
+			      (PU ，)
+			      (VP (VV 占)
+				  (QP-OBJ (DNP (NP (NP (NP-PN (NR 上海))
+						       (NP (NN 外资)
+							   (NN 金融)
+							   (NN 机构)))
+						   (NP (NN 总数)))
+					       (DEG 的))
+					  (QP (CD 百分之四十三)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  浦东 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 和 即将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 俯视 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 looks down at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 巨形))
+		    (NP (NN 建筑)))
+	    (VP (VV 俯视)
+		(AS 著)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 飘荡)
+					(PP (P 在)
+					    (NP (NP-PN (NR 八里))
+						(NP (NN 沿岸))))))
+				(DEC 的)))
+			(NP (NN 舢板)
+			    (NN 渔船))))) 
+	</parse>
+	<arg n="0">
+	巨形 建筑 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 飘荡 在 八里 沿岸 的 舢板 渔船 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获准 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="permission grantee"/>
+      <role argnum="1" argrole="permitted action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年)
+		      (NT 三月)
+		      (NT 二十一日))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 行)))
+	      (VP (VV 获准)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-LOC (P 在)
+				  (NP-PN (NR 北京)))
+			  (VP (VV 设立)
+			      (NP-OBJ (NN 分行))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  该 行 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 在 北京 设立 分行 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 三月 二十一日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收购 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing bought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九四年))
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 公司)))
+	      (VP (VV 收购)
+		  (AS 了)
+		  (NP-PN-OBJ (NR 扬州)
+			     (NN 啤酒厂)))) 
+	  </parse>
+	  <arg n="0">
+	  该 公司 
+	  </arg>
+	  <arg n="1">
+	  扬州 啤酒厂 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九四年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (ADVP (AD 每))
+		      (PP (P 到)
+			  (NP (CP (WHPP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 蔬菜))
+				      (VP (PP-TMP (-NONE- *T*-1))
+					  (VP (VA 成熟)))))
+			      (NP (NN 时节)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 会)
+		      (VP (VE 有)
+			  (IP-OBJ (NP-SBJ (NN 蔬菜)
+					  (NN 批发商))
+				  (VP (VSB (VV 前来)
+					   (VV 收购)))))))) 
+	  </parse>
+	  <arg n="0">
+	  蔬菜 批发商 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

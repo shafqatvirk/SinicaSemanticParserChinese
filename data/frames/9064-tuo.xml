@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 opens up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (NP (NN 庙))
+				(LC 前))
+			   (DEG 的))
+		      (NP (NN 马路)))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 没有)
+		      (VP (VV 拓)
+			  (DER 得)
+			  (VP-EXT (ADVP (AD 这麽))
+				  (VP (VA 宽))))))) 
+	  </parse>
+	  <arg n="1">
+	  庙 前 的 马路 
+	  </arg>
+	  <arg n="m" f="ext">
+	  这麽 宽 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,208 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 研究 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity studied/researched"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 法))
+		  (VP (ADVP (AD 正))
+		      (VP (VV 研究)
+			  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-DIR (P 从)
+						      (NP-PN (NR 波黑)))
+					      (VP (VV 撤军))))
+				  (NP (NN 计划)))))) 
+	  </parse>
+	  <arg n="0">
+	  法 	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 从 波黑 撤军 计划 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 於是))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 吴)
+			 (NN 医生))
+	      (VP (VP (ADVP (AD 初步))
+		      (VP (VV 构思)
+			  (AS 了)
+			  (NP-OBJ (NN 曲调))))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (ADVP (AD 再))
+				       (PP (P 与)
+					   (NP-PN (NR 董太)))
+				       (VP (VV 研究))))
+			       (LC 後))
+		      (VP (VV 谱成)
+			  (NP-TTL-OBJ (PU 《)
+				      (NP (NN 回归颂))
+				      (PU 》)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="0">
+	  与 董太 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VP (PP-LGS (P 由)
+					      (NP (NP-APP (NP (NP-PN (NR 浙江)
+								     (NN 医科院))
+							      (NP (NN 院长)))
+							  (PU 、)
+							  (NP (NP-PN (NR 中国)
+								     (NN 科学))
+							      (NP (NN 院士))))
+						  (NP-PN (NR 毛江森))))
+				      (VP (VV 主持)))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (NN 世界))
+						   (LC 上)))
+				      (ADVP (AD 率先))
+				      (VP (VRD (VV 研究)
+					       (VA 成功))))
+				  (PU ，)
+				  (CC 并)
+				  (VP (VV 具有)
+				      (NP-OBJ (NP (NN 国际))
+					      (ADJP (JJ 先进))
+					      (NP (NN 水平))))))
+			  (DEC 的)))
+		  (NP (NN 甲肝))
+		  (ADJP (JJ 减毒))
+		  (ADJP (JJ 活))
+		  (NP (NN 疫苗))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  率先 	  	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 世界 上 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 有的))
+		      (ADJP (JJ 跨国))
+		      (NP (NN 公司)))
+	      (VP (ADVP (AD 已经)
+			(CC 或)
+			(AD 正在))
+		  (VP (VV 研究)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NP (PN 其))
+						  (NP (NN 地区)
+						      (NN 总部)))
+					  (VP (VRD (VV 移)
+						   (VV 至))
+					      (NP-PN-OBJ (NR 中国))))))))) 
+	  </parse>
+	  <arg n="0">
+	  有的 跨国 公司 	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 将 其 地区 总部 移 至 中国 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 或 正在 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing produced/obtained through research"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VV 计划)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (PP-TMP (P 在)
+					  (LCP (NP (NT ２０００年))
+					       (LC 前)))
+				  (VP (VRD (VV 研究)
+					   (VV 出))
+				      (NP-OBJ (QP (CD ０．１５)
+						  (CLP (M 微米)))
+					      (NP (NN 加工)
+						  (NN 技术)))))
+			      (PU ，)
+			      (VP (ADVP (AD 然后))
+				  (ADVP (AD 再))
+				  (ADVP (AD 进一步))
+				  (VP (VV 研究)
+				      (NP-OBJ (DNP (QP (CD ０．１３)
+						       (CLP (M 微米)))
+						   (DEG 的))
+					      (NP (NN 加工)
+						  (NN 技术))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  ０．１５ 微米 加工 技术 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 ２０００年 前 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

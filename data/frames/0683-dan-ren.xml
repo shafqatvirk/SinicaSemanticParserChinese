@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 担任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="position holder"/>
+      <role argnum="1" argrole="position"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (PU “)
+			      (NN 光头)
+			      (PU ”))
+		      (NP-PN (NR 维阿里)))
+	      (VP (NP-TMP (NT 现在))
+		  (VP (VV 担任)
+		      (NP-OBJ (DNP (NP (NP-PN (NP-PN (NR 英格兰))
+					      (NP (ADJP (JJ 超级))
+						  (NP (NN 联赛)))
+					      (NP (NN 俱乐部)))
+				       (NP-PN (NR 切尔西队)))
+				   (DEG 的))
+			      (NP (NN 教练)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  “ 光头 ” 维阿里 
+	  </arg>
+	  <arg n="1">
+	  英格兰 超级 联赛 俱乐部 切尔西队 的 教练 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

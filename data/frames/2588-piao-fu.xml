@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 漂浮 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity floating"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (VV 花掉)
+					  (NP-OBJ (ADJP (JJ 巨额))
+						  (NP (NN 经费))))
+				      (VP (VV 研制)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 卫星)))
+	      (VP (ADVP (AD 却))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 漂浮)
+					      (PP-LOC (P 于)
+						      (NP (NN 宇宙)))))
+				      (DEC 的)))
+			      (NP (NN 废弃物)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  于 宇宙 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拆卸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP (CP (WHNP-3 (-NONE- *OP*))
+          (CP (IP (NP-SBJ (-NONE- *pro*))
+                  (VP (MSP 所)
+                      (VP (VV 拆卸)
+                          (NP-OBJ (-NONE- *T*-3)))))
+              (DEC 的)))
+      (NP (NN 单位))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> (*T*-3)->(单位) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

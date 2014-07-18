@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奔流 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place arg0 flows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (LCP-SBJ (NP (NN 骨子))
+			   (LC 里))
+		  (VP (VV 奔流)
+		      (AS 著)
+		      (NP-OBJ (NP (NN 新闻))
+			      (ADJP (JJ 热))
+			      (NP (NN 血))))) 
+	  </parse>
+	  <arg n="0">
+	  新闻 热 血 
+	  </arg>
+	  <arg n="1">
+	  骨子 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

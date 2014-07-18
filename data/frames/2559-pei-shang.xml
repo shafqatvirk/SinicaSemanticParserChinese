@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 配上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity added"/>
+      <role argnum="2" argrole="entity added for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 配上)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (PP-MNR (P 以)
+						      (NP (NN 水晶)))
+					      (VP (VV 制作))))
+				      (DEC 的)))
+			      (NP (QP (CD ７)
+				      (CLP (M 项)))
+				  (NP (NN 冠军)
+				      (NN 奖杯)))
+			      (ADJP (JJ 小))
+			      (NP (NN 模型))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 以 水晶 制作 的 ７ 项 冠军 奖杯 小 模型 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

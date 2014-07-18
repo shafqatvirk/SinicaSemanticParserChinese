@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 压迫 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 oppresses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 除了)
+		    (LCP (IP (NP-SBJ (DNP (NP (NN 住))
+					  (DEG 的))
+				     (NP (NN 问题)))
+			     (PU ，)
+			     (VP (ADVP (AD 始终))
+				 (VP (VV 压迫)
+				     (AS 著)
+				     (NP-OBJ (DNP (NP-PN (NR 隐地))
+						  (DEG 的))
+					     (NP (NN 童年)
+						 (NN 生活))))))
+			 (LC 之外)))
+	    (PU ，)
+	    (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 赚取)
+			    (NP-OBJ (DNP (NP (PN 自己))
+					 (DEG 的))
+				    (NP (NN 学杂费))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 隐地))
+	    (VP (PP-LOC (P 在)
+			(NP (NN 青少年)
+			    (NN 时期)))
+		(PU ，)
+		(VP (VP (VV 必须)
+			(VP (VP (VV 卖)
+				(NP-OBJ (NN 报纸)))
+			    (PU 、)
+			    (VP (VV 送)
+				(NP-OBJ (NN 煤球)))))
+		    (PU ，)
+		    (VP (ADVP (AD 才))
+			(VP (VV 能)
+			    (VP (ADVP (AD 顺利))
+				(VP (VV 完成)
+				    (NP-OBJ (NN 学业))))))))) 
+	</parse>
+	<arg n="0">
+	住 的 问题 
+	</arg>
+	<arg n="1">
+	隐地 的 童年 生活 
+	</arg>
+	<arg n="m" f="adv">
+	始终 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

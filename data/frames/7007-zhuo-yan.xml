@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著眼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 focuses its attention on"/>
+    <role argnum="2" argrole="thing arg0 is in the process of doing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TMP (NT 目前))
+				    (NP-SBJ (NN 政府)
+					    (NN 政策))
+				    (VP (VV 著眼)
+					(NP-OBJ (-NONE- *T*-1))))
+				(DEC 的))))
+		    (PU 、)
+		    (NP (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NP-PN (NR 台湾))
+					    (NP (NN 股市)
+						(NN 投资人)))
+				    (VP (LCP-LOC (NP (NN 心))
+						 (LC 里))
+					(VP (VV 憧憬)
+					    (NP-OBJ (-NONE- *T*-2)))))
+				(DEC 的)))))
+	    (PU ，)
+	    (VP (ADVP (AD 似乎))
+		(ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (DNP (NP (NP-PN (NR 美国))
+				     (NP (PU 「)
+					 (ADJP (JJ 新))
+					 (NP (NN 经济))
+					 (PU 」))
+				     (NP (NN 式)))
+				 (DEG 的))
+			    (NP (NN 知识)
+				(NN 经济)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	政府 政策 
+	</arg>
+	<arg n="m" f="tmp">
+	目前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 解决)
+			    (NP-OBJ (DNP (NP (NN 长年))
+					 (DEG 的))
+				    (NP (NN 水利)
+					(NN 沉疴))))))
+	    (PU ，)
+	    (NP-SBJ (NN 省府))
+	    (VP (VP (ADVP (AD 曾))
+		    (PP-TMP (P 在)
+			    (LCP (IP (LCP-TMP (QP (CD 四)
+						  (CLP (M 年)))
+					      (LC 前))
+				     (NP-SBJ (ADJP (JJ 民选))
+					     (NP (NN 省长)))
+				     (VP (VV 上台)))
+				 (LC 後)))
+		    (PU ，)
+		    (VP (VV 进行)
+			(IP-OBJ (NP-SBJ (NN 水利)
+					(NN 单位))
+				(VP (VV 改组)))))
+		(PU ，)
+		(VP (ADVP (AD 主要))
+		    (VP (VV 著眼)
+			(PP-LOC (P 於)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 统一)
+					    (NP-OBJ (NN 事权)))
+					(PU ，)
+					(VP (VV 提高)
+					    (NP-OBJ (NN 主管)
+						    (NN 机关)
+						    (NN 层级)))))))))) 
+	</parse>
+	<arg n="0">
+	省府 
+	</arg>
+	<arg n="1">
+	於 *PRO* 统一 事权 ， 提高 主管 机关 层级 
+	</arg>
+	<arg n="m" f="adv">
+	主要 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 解决 长年 的 水利 沉疴 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 察觉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 becomes aware of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 政府))
+	    (VP (VP (VV 察觉)
+		    (IP-OBJ (NP-SBJ (QP (CD 大量))
+				    (DNP (NP (ADJP (JJ 不同))
+					     (NP (NN 高度)
+						 (PU 、)
+						 (NN 形式)
+						 (PU 、 (NN 量体)))
+					     (DEG 的))
+					 (NP (NN 建筑)))
+				    (VP (PP-LOC (P 在)
+						(NP (NN 都市)))
+					(ADVP (AD 杂乱))
+					(VP (VV 陈)))))
+		    (PU ，)
+		    (VP (VV 想)
+			(VP (VV 要)
+			    (VP (PP-MNR (P 以)
+					(NP (NN 公权力)))
+				(VP (VV 介入)
+				    (NP-OBJ (NN 土地)
+					    (NN 分区)
+					    (NN 管制)
+					    (CC 及)
+					    (NN 容积率)
+					    (ETC 等))))))))) 
+	</parse>
+	<arg n="0">
+	政府 
+	</arg>
+	<arg n="1">
+	大量 不同 高度 、 形式 量体 的 建筑 在 都市 杂乱 陈 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NN 事件))
+			 (VP (VV 发生)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 沈浸)
+				    (PP (P 在)
+					(LCP (NP (NP-PN (NN 核四))
+						 (NP (NN 激情)
+						     (NN 吵嚷声)))
+					     (LC 中)))))
+			    (DEC 的)))
+		    (NP-PN (NR 台湾))
+		    (NP (NN 社会)))
+	    (VP (ADVP (AD 几乎))
+		(VP (VV 没有)
+		    (VP (VV 察觉))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 沈浸 在 核四 激情 吵嚷声 中 的 台湾 社会 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<arg n="m" f="tmp">
+	事件 发生 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 觉得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 feels"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VV 觉得)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 必须))
+			      (ADVP (AD 亲自))
+			      (VP (VP (VV 来)
+				      (NP-PN-OBJ (NR 中国)))
+				  (VP-PRP (VNV (VV 看)
+					       (CD 一)
+					       (VV 看)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 必须 亲自 来 中国 看 一 看 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

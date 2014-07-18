@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 希望 </id>
+    <frameset id="f1" edef="hope to get">
+      <role argnum="0" argrole="hoper"/>
+      <role argnum="1" argrole="thing hoped for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 他们))
+				  (VP (VV 希望)
+				      (NP-OBJ (-NONE- *T*-2))))
+			      (DEC 的))))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CD 一)
+			      (CLP (M 种)))
+			  (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VP (VV 休戚与共))
+					  (PU 、)
+					  (VP (ADVP (AD 真诚))
+					      (VP (VV 合作)))))
+				  (DEC 的))
+			  (NP (NN 夥伴)
+			      (NN 关系))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="hoper"/>
+      <role argnum="1" argrole="thing hoped for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 同时))
+		  (VP (VV 希望)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 台湾))
+				      (NP (NN 当局)))
+			      (VP (VP (VV 顺应)
+				      (NP-OBJ (NN 历史)
+					      (NN 发展)
+					      (NN 潮流)))
+				  (PU ，)
+				  (VP (VV 把握)
+				      (NP-OBJ (NN 时机)))
+				  (PU ，)
+				  (VP (PP (P 就)
+					  (NP (NP (QP (CD 两))
+						  (NP (NN 岸)))
+					      (NP (NN 政治)
+						  (NN 谈判))))
+				      (VP (VV 作出)
+					  (NP-OBJ (NP (ADJP (JJ 积极))
+						      (NP (NN 回应)))
+						  (CC 和)
+						  (NP (ADJP (JJ 明智))
+						      (NP (NN 选择))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  同时 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  台湾 当局 顺应 历史 发展 潮流 ， 把握 时机 ， 就 两 岸 政治 谈判 作出 积极 回应 和 明智 选择 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

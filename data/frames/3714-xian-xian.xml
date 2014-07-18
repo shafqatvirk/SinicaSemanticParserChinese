@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 显现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing displayed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 经济)
+		      (NN 开发区))
+	      (VP (PP (P 作为)
+		      (NP (NP-PN (NR 山东))
+			  (NP (NN 开放型)
+			      (NN 经济))
+			  (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VA 新)))
+				  (DEC 的)))
+			  (NP (NN 增长点))))
+		  (ADVP (AD 正))
+		  (VP (VRD (VV 显现)
+			   (VV 出))
+		      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (ADVP (AD 日益))
+					      (VP (VA 强劲))))
+				      (DEC 的)))
+			      (NP (NN 发展)
+				  (NN 活力)))))) 
+	  </parse>
+	  <arg n="0">
+	  经济 开发区 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-4 日益 强劲 的 发展 活力 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	  <arg n="m" f="adv">
+	  作为 山东 开放型 经济 *OP* *T*-3 新 的 增长点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

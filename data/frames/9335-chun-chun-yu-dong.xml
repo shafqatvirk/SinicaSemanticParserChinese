@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 蠢蠢欲动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 朝野))
+		      (NP (NP (DP (DT 各))
+			      (NN 党)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VV 有心)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 参选))))))
+		      (NP (NN 人士)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 蠢蠢欲动)))) 
+	  </parse>
+	  <arg n="0">
+	  朝野 各 党 *OP* *T*-2 有心 *PRO* 参选 人士 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

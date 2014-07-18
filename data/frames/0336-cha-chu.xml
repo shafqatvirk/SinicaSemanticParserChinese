@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="investigator"/>
+    <role argnum="1" argrole="thing found out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 而))
+      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (-NONE- *pro*))
+                          (VP (NP-TMP (NT 一九九五)
+                                      (CC 到)
+                                      (NT 一九九七年))
+                              (VP (VV 查出)
+                                  (NP-OBJ (-NONE- *T*-1)))))
+                      (DEC 的)))
+              (CP (WHNP-2 (-NONE- *OP*))
+                  (IP (NP-SBJ (-NONE- *pro*))
+                      (VP (VV 猎杀)
+                          (NP-OBJ (-NONE- *T*-2)))))
+              (NP-PN (NR 藏))
+              (NP (NN 羚羊)))
+      (VP (ADVP (AD 就))
+          (VP (VE 有)
+              (QP-OBJ (CD 三千)
+                      (CLP (M 只)))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="TMP"> 一九九五 到 一九九七年 </arg>
+	<V/>
+	<arg n="1"> (*T*-1)->(*OP**pro*猎杀藏羚羊) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

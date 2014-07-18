@@ -1,0 +1,206 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 在 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity that exists"/>
+      <role argnum="1" argrole="location arg0 is located"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DP (DT 该)
+			  (CLP (M 项)))
+		      (NP (NN 展览)))
+	      (NP-SBJ (NN 旨))
+	      (VP (VV 在)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 向)
+				      (NP (NN 雇主)
+					  (CC 及)
+					  (NN 求职者)))
+			      (VP (VV 推广)
+				  (NP-OBJ (DNP (NP (NN 劳工处))
+					       (DEG 的))
+					  (ADJP (JJ 免费))
+					  (NP (NN 就业)
+					      (NN 选配))
+					  (NP (NN 服务)))))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  旨 	  	  
+	  </arg>
+	  <arg n="0" f="psr">
+	  该 项 展览 	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 向 雇主 及 求职者 推广 劳工处 的 免费 就业 选配 服务 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (DP (NP (NN 电子)
+				   (NN 工业)
+				   (NN 产值))
+			       (DP (DT 前)
+				   (QP (CD 七)
+				       (M 名))))
+			   (DEG 的))
+		      (NP (NN 市)))
+	      (VP (ADVP (AD 均))
+		  (VP (VV 在)
+		      (LCP-OBJ (NP (NN 三角洲))
+			       (LC 内))))) 
+	  </parse>
+	  <arg n="0">
+	  电子 工业 产值 前 七 名 的 市 	  	  
+	  </arg>
+	  <arg n="1">
+	  三角洲 内 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 只要))
+			  (VP (VV 渡)
+			      (AS 过)
+			      (NP-OBJ (CP-APP (IP (NP-TMP (NT 眼前))
+						  (IP (IP (NP-SBJ (NN 价格))
+							  (VP (VV 混乱)))
+						      (PU 、)
+						      (IP (NP-SBJ (NN 景气))
+							  (VP (VA 浑沌)))))
+					      (DEC 的))
+				      (NP (NN 调整期))))))
+	      (PU ，)
+	      (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 元气))
+				  (VP (VA 饱满)))
+			      (DEC 的)))
+		      (NP (NN 台商)))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 相较於)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (NP-LOC (NN 里)
+							  (NN 外))
+						  (VP (VV 受创))))
+					  (DEC 的)))
+				  (NP (NN 对手)))))
+	      (PU ，)
+	      (NP-SBJ (NN 优势))
+	      (VP (ADVP (AD 仍))
+		  (VP (VV 在)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  优势 	  	  
+	  </arg>
+	  <arg n="0" f="psr">
+	  *OP* *T*-1 元气 饱满 的 台商 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 相较於 *OP* *T*-2 里 外 受创 的 对手 	  	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 只要 渡 过 眼前 价格 混乱 、 景气 浑沌 的 调整期 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location determining factor of agr0 lies in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 兵))
+		  (VP (VP (ADVP (AD 不))
+			  (VP (VV 在)
+			      (NP-OBJ (NN 多))))
+		      (CC 而)
+		      (VP (VV 在于)
+			  (NP-OBJ (NN 精))))) 
+	  </parse>
+	  <arg n="0">
+	  兵 	  	  
+	  </arg>
+	  <arg n="1">
+	  多 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 is located"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VP (ADVP (AD 几乎))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (NN 眼睛))
+				  (VP (VRD (VV 紧贴)
+					   (VV 在))
+				      (AS 了)
+				      (LCP-OBJ (NP (NN 车窗)
+						   (NN 玻璃))
+					       (LC 上))))))
+		  (PU ，)
+		  (VP (PP-DIR (P 朝)
+			      (NP (NN 后面)))
+		      (VP (VV 仰望))))) 
+	  </parse>
+	  <arg n="0">
+	  眼睛 	  	  
+	  </arg>
+	  <arg n="1">
+	  车窗 玻璃 上 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

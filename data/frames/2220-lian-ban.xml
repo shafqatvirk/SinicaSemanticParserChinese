@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 联办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (NP-SBJ (NN 西部)
+		      (NN 地区))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 将))
+		  (VP (VP (VV 拿出)
+			  (NP-OBJ (NN 优势)
+				  (NN 资源)))
+		      (PU ，)
+		      (VP-PRP (VV 吸引)
+			      (NP-OBJ (NN 东部))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VSB (VV 投资)
+					       (VV 兴建))
+					  (NP-OBJ (NN 原材料)
+						  (NN 基地)))
+				      (PU 、)
+				      (VP (VV 联办)
+					  (NP-OBJ (NP (NN 资源)
+						      (NN 开发))
+						  (CC 与)
+						  (NP (ADJP (JJ 深))
+						      (NP (NN 加工)))
+						  (CC 以及)
+						  (NP (NN 劳动)
+						      (NN 密集型)
+						      (NN 项目)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  资源 开发 与 深 加工 以及 劳动 密集型 项目 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中村和夫))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (PP-LGS (P 由)
+							   (NP (NP-PN (NP-PN (NR 北京))
+								      (NP-PN (NR 五佳))
+								      (NP (NN 经济)
+									  (NN 咨询))
+								      (ADJP (JJ 有限))
+								      (NP (NN 公司)))
+							       (CC 和)
+							       (NP-PN (NP-PN (NR 日本))
+								      (QP (OD 第一))
+								      (NP-PN (NR 劝业))
+								      (NP (NN 银行)))))
+						   (VP (VV 联办))))
+					   (DEC 的)))
+				   (NP (NN 报告会)))
+			       (LC 上)))
+		  (PP (P 就)
+		      (NP (DNP (QP (ADJP (JJ 新))
+				   (QP (CD 一)
+				       (CLP (M 年))))
+			       (DEG 的))
+			  (NP (NN 世界)
+			      (NN 经济)
+			      (NN 金融)
+			      (NN 形势))))
+		  (VP (VV 做)
+		      (AS 了)
+		      (NP-OBJ (NN 报告))))) 
+	  </parse>
+	  <arg n="0">
+	  由 北京 五佳 经济 咨询 有限 公司 和 日本 第一 劝业 银行 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

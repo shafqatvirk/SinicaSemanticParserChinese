@@ -1,0 +1,273 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 补 </id>
+    <frameset id="f1" edef="add">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PP-TMP (P 自)
+			(LCP (NP (NT 一九九九年)
+				 (NT 一月)
+				 (NT 一日))
+			     (LC 起)))
+		(PU ，)
+		(NP-SBJ (NP-PN (NR 香港)
+			       (PU 、)
+			       (NR 澳门))
+			(NP-PN (NR 中旅社)))
+		(VP (VP (VV 开始)
+			(VP (VV 接受)
+			    (NP-OBJ (DNP (NP (NN 通行证))
+					 (DEG 的))
+				    (NP (NN 申请)))))
+		    (PU ，)
+		    (VP (NP-TMP (NT 十五日))
+			(VP (ADVP (AD 将))
+			    (VP (VRD (VV 签发)
+				     (VV 出))
+				(NP-OBJ (QP (OD 第一)
+					    (CLP (M 批)))
+					(NP (NN 证件))))))
+		    (PU ，)
+		    (VP (PP-TMP (P 在)
+				(NP (NP (PN 此))
+				    (NP (NN 期间))))
+			(IP-CND (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (CS 如))
+				    (VP (VE 有)
+					(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (ADVP (AD 急))
+								(VP (VV 需)
+								    (VP (VP (VV 换)
+									    (NP-OBJ (-NONE- *RNR*-1)))
+									(PU 、)
+									(VP (VV 补)
+									    (NP-OBJ-1 (NN 证件)))))))
+							(DEC 的)))))))
+			(PU ，)
+			(ADVP (AD 将))
+			(VP (VV 签发)
+			    (NP-OBJ (NN 入出境)
+				    (NN 通行证)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-2)->(*pro*) 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  证件 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="supplement">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 supplements"/>
+      <role argnum="2" argrole="entity arg1 is supplemented with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (QP (CD 一)
+		      (CLP (M 枚)))
+		  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PU 「)
+				  (VP (ADVP (AD 多))
+				      (VP (VV 读)))
+				  (VP (VV 补)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 多))
+						  (VP (VV 忘)))))
+				  (PU 」)))
+			  (DEC 的))
+		  (NP (NN 闲章))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 多 忘 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="mend">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 mends"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 补)
+			      (NP-OBJ (NN 屋顶)))
+			  (PU 、)
+			  (VP (VV 做)
+			      (NP-OBJ (NN 水电)))
+			  (PU 、)
+			  (VP (VV 修)
+			      (NP-OBJ (NN 家具)))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 样样))
+		  (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (VV 做))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	    
+	  </arg>
+	  <arg n="1">
+	  屋顶 	    
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4" edef="nutritious">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 is nutritious to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 瓶))
+		       (LC 边))
+	      (VP (VV 立)
+		  (AS 著)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PU 『)
+					  (VP (VV 壮)
+					      (NP-OBJ (NN 阳)))
+					  (VP (VV 补)
+					      (NP-OBJ (NN 肾)))
+					  (PU 』)))
+				  (DEC 的))
+			  (NP (NN 字牌))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	      
+	  </arg>
+	  <arg n="1">
+	  肾 	      
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5" edef="do extra work on">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 does extra work on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 敦化南路))
+		      (LCP (NP (NN 巷))
+			   (LC 内))
+		      (QP (CD 一)
+			  (CLP (M 间)))
+		      (NP (NN 英文)
+			  (NN 补习)
+			  (NN 班)))
+	      (PU ，)
+	      (VP (LCP-TMP (IP (NP-SBJ (NT 下午)
+				       (NT 四点))
+			       (VP (VV 过)))
+			   (LC 後))
+		  (PU ，)
+		  (ADVP (AD 就))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 穿)
+						      (AS 著)
+						      (NP-OBJ (NP-PN (NR 仁爱)
+								     (PU 、)
+								     (NR 敦化)
+								     (PU 、)
+								     (NR 建安)
+								     (NN 国小))
+							      (NP (NN 校服)))))
+					      (DEC 的)))
+				      (NP (NN 学生)))
+			      (VP (ADVP (AD 陆续))
+				  (VP (VP (VV 到)
+					  (NP-OBJ (PN 此)))
+				      (VP (VV 补)
+					  (NP-OBJ (NN 英文))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 穿 著 仁爱 、 敦化 、 建安 国小 校服 的 学生 		
+	  </arg>
+	  <arg n="1">
+	  英文 		
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6" edef="fill in">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing (gap) arg0 fills in"/>
+      <role argnum="2" argrole="entity arg1 is filled in with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 东南亚))
+		      (NP (NN 歌手)))
+	      (VP (ADVP (AD 刚好))
+		  (ADVP (AD 适时))
+		  (VP (VV 补)
+		      (AS 了)
+		      (NP-OBJ (DP (DT 这)
+				  (CLP (M 个)))
+			      (NP (NN 缺)))))) 
+	  </parse>
+	  <arg n="1">
+	  这 个 缺 		
+	  </arg>
+	  <arg n="2">
+	  东南亚 歌手 		
+	  </arg>
+	  <arg n="m" f="adv">
+	  适时 		
+	  </arg>
+	  <arg n="m" f="adv">
+	  刚好 		
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

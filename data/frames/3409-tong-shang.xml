@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通商 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity doing trades"/>
+      <role argnum="1" argrole="channel for doing trades"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 使)
+	      (NP-PN-OBJ (NR 呼伦贝尔盟))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 形成)
+			  (AS 了)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 铁路)
+						      (PU 、)
+						      (NN 公路)
+						      (PU 、)
+						      (NN 水路)
+						      (CC 和)
+						      (NN 空中))
+					      (VP (VP (ADVP (AD 立体))
+						      (VP (VV 开放)))
+						  (PU 、)
+						  (VP (QP-ADV (CD 多)
+							      (CLP (M 口)))
+						      (VP (VV 通商)))))
+					  (DEC 的))
+				  (ADJP (JJ 新))
+				  (NP (NN 格局))))
+		      (PU ，)
+		      (VP (VV 适应)
+			  (AS 了)
+			  (NP-OBJ (CP (IP (NP-SBJ (NN 国内外)
+						  (NN 客商))
+					  (VP (VP (VV 来)
+						  (NP-PN-OBJ (NR 呼盟)))
+					      (VP (VP (VCD (VV 观光)
+							   (VV 旅游)))
+						  (PU 、)
+						  (VP (VV 洽谈)
+						      (NP-OBJ (NN 生意))))))
+				      (DEC 的))
+				  (NP (NN 需要))))))) 
+	  </parse>
+	  <arg n="1">
+	  铁路 、 公路 、 水路 和 空中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  多 口 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 致词 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="speaker"/>
+    <role argnum="1" argrole="entity arg0 speaks to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP-PN (NR 纽西兰))
+			    (NP (NN 总理)))
+		    (NP-PN (NR Jenny)
+			   (NR Shipley)))
+	    (VP (VP (VV 上)
+		    (NP-OBJ (NN 台)))
+		(VP (VV 接受)
+		    (NP-OBJ (NN 欢迎)))
+		(CC 并)
+		(VP (VV 致词)))) 
+	</parse>
+	<arg n="0">
+	纽西兰 总理 Jenny Shipley 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

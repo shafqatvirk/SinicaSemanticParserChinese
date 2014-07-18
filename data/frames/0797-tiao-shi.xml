@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调试 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 次)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 新))
+				      (VP (VV 投产))))
+			      (DEC 的)))
+		      (NP (NN 生产线)))
+	      (PU ，)
+	      (VP (PP-LGS (P 由)
+			  (NP (DP (DT 该))
+			      (NP (NN 公司))))
+		  (VP (VP (ADVP (AD 自行))
+			  (VP (VV 设计)))
+		      (PU ，)
+		      (VP (ADVP (AD 自行))
+			  (VP (VV 开发)))
+		      (PU ，)
+		      (VP (ADVP (AD 自行))
+			  (VP (VV 调试)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  由 该 公司 
+	  </arg>
+	  <arg n="1">
+	  这 次 *OP* *T*-2 新 投产 的 生产线 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

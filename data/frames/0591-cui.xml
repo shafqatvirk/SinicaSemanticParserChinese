@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 催 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="prodder"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 导游))
+	      (VP (ADVP (AD 在))
+		  (VP (VV 催)
+		      (NP-OBJ (PN 大家))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 上车)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  导游 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  在 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  大家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 上车 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

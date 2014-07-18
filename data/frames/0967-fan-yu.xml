@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 繁育 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 威海市))
+		      (NP (NN 农业))
+		      (NP (ADJP (JJ 高))
+			  (ADJP (JJ 新))
+			  (NP (NN 技术)))
+		      (NP (NN 开发)
+			  (NN 示范区)))
+	      (VP (VCD (VV 引进)
+		       (VV 繁育))
+		  (NP-OBJ (ADJP (JJ 原代))
+			  (NP (NN 马铃薯)
+			      (NN 种))))) 
+	  </parse>
+	  <arg n="0">
+	  威海市 农业 高 新 技术 开发 示范区 
+	  </arg>
+	  <arg n="1">
+	  原代 马铃薯 种 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

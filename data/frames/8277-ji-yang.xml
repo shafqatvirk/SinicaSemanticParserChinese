@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寄养 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="person arg0 asks to take care of arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-PRD (NP-PN (NR 浙江) )
+			      (NP (NN 永嘉人) )))
+		  (PU ，)
+		  (VP (NP-TMP (NT 一九三七年) )
+		      (VP (VV 生)
+			  (PP (P 於)
+			      (NP-PN (NR 上海) ))))
+		  (PU ，)
+		  (VP (LCP-TMP (QP (CD 七)
+				   (CLP (M 岁)))
+			       (LC 时))
+		      (VP (LB 被)
+			  (CP-OBJ (WHNP-2 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 父母) )
+				      (VP (VP (VV 送到)
+					      (NP-OBJ (NP-PN (NR 江苏)
+							     (NR 昆山) )
+						      (QP (CD 一)
+							  (CLP (M 位)))
+						      (NP (NP-PN (NR 顾) )
+							  (NP (NN 姓)))
+						      (NP (NN 人家))))
+					  (VP (VV 寄养)
+					      (NP-OBJ (-NONE- *T*-2))))))))
+		  (PU ，)
+		  (VP (PP-LOC (P 在)
+			      (NP (NN 农村) ))
+		      (VP (VCD (VV 种稻)
+			       (VV 插秧)))))) 
+	  </parse>
+	  <arg n="0">
+	  父母 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  七 岁 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

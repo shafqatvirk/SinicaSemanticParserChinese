@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 退税 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing whose tax is returned"/>
+      <role argnum="2" argrole="entity tax returned to"/>
+      <role argnum="3" argrole="amount of returned tax"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 外资)
+		      (NN 企业)
+		      (NN 出口)
+		      (NN 产品))
+	      (VP (VV 退税))) 
+	  </parse>
+	  <arg n="1">
+	  外资 企业 出口 产品 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 伴随)
+			  (AS 着)
+			  (NP-OBJ (DP (DT 这些))
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VA 新)))
+					  (DEC 的)))
+				  (NP (NN 变化)))))
+	      (PU ，)
+	      (NP-SBJ (NP-SBJ (NN 海关))
+		      (DNP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VP (ADVP (AD 依法))
+					       (VP (VV 征税)))
+					   (PU 、)
+					   (VP (VV 打击)
+					       (NP-OBJ (NN 走私)))
+					   (PU 、)
+					   (VP (VSB (VV 出口)
+						    (VV 退税)))
+					   (ETC 等)))
+			       (NP (NN 方面)))
+			   (DEG 的))
+		      (NP (NN 任务)))
+	      (VP (ADVP (AD 进一步))
+		  (VP (VV 加重)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 错失 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 misses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-PN-SBJ (NR 台湾))
+		(VP (VV 错失)
+		    (AS 了)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (NP-TMP (-NONE- *T*-2))
+					    (VP (VV 成为)
+						(NP-OBJ (NP (NP-PN (NR 亚太))
+							    (NP (NN 地区)))
+							(NP (NN 营运)
+							    (NN 中心))))))
+				    (DEC 的)))
+			    (NP (NN 关键)
+				(NN 时机))))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	*OP* *pro* *T*-2 成为 亚太 地区 营运 中心 的 关键 时机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

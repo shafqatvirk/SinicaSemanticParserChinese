@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 言老 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person talking about himself being old"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-TMP (NT 现在))
+	    (NP-SBJ (PN 自己))
+	    (VP (VP (VV 到)
+		    (AS 了)
+		    (NP-OBJ (DP (DT 这)
+				(CLP (M 个)))
+			    (NP (NN 年纪))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (VP (VV 觉得)
+			(IP-OBJ (NP-SBJ (-NONE- *pro*))
+				(VP (VP (VP (ADVP (AD 还))
+					    (VP (VE 没有)
+						(NP-OBJ (NN 资格))))
+					(VP (VV 言老)))
+				    (PU ，)
+				    (VP (ADVP (AD 更))
+					(ADVP (AD 不))
+					(VP (VV 敢)
+					    (VP (VV 轻言)
+						(NP-OBJ (NN 退休))))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

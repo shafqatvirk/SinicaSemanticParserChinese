@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 繁琐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PP-PRP (P 因为)
+		    (IP (NP-SBJ (NN 土地))
+			(VP (LCP-ADV (NP (NN 传统))
+				     (LC 上))
+			    (PP-LGS (P 由)
+				    (NP (NN 氏族)
+					(CC 及)
+					(NN 家族)))
+			    (ADVP (AD 共同))
+			    (VP (VV 拥有)
+				(NP-OBJ (-NONE- *-4))))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 签订)
+			(NP-OBJ (NN 合约))))
+	    (VP (ADVP (AD 颇为))
+		(VP (VA 繁琐)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 签订 合约 
+	</arg>
+	<arg n="m" f="adv">
+	颇为 
+	</arg>
+	<arg n="m" f="prp">
+	因为 土地 传统 上 由 氏族 及 家族 共同 拥有 *-4 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

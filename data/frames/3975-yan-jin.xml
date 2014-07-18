@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 严禁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="forbidder"/>
+      <role argnum="1" argrole="behavior forbidden"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 证券法))
+	      (VP (VP (VV 打击)
+		      (NP-OBJ (ADJP (JJ 幕后))
+			      (NP (NN 交易))))
+		  (PU 、)
+		  (VP (VV 严禁)
+		      (NP-OBJ (NN 欺诈)
+			      (NN 违规)
+			      (NN 行为))))) 
+	  </parse>
+	  <arg n="0">
+	  证券法 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  欺诈 违规 行为 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 蒙古)
+			 (NN 司法部))
+	      (VP (NP-TMP (NT ２８日))
+		  (VP (VV 责成)
+		      (NP-OBJ (NP-PN (NR 乌兰巴托市))
+			      (NP (NN 警察局)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 采取)
+				  (NP-OBJ (NN 措施)))
+			      (PU ，)
+			      (VP (VV 严禁)
+				  (NP-OBJ (NN 新闻)
+					  (NN 媒体))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 刊登)
+					  (NP-OBJ (NN 酒类)
+						  (NN 广告)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  新闻 媒体 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 刊登 酒类 广告 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 移民)
+			  (NN 迁建))
+		      (NP (NN 项目)))
+	      (VP (VV 严禁)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 层层))
+			      (VP (VV 转包)))))) 
+	  </parse>
+	  <arg n="m" f="tpc">
+	  移民 迁建 项目 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 层层 转包 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

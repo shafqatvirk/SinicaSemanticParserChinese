@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 觉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 feels"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 夏阳))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (NP-TMP (NT 现在))
+			    (VP (VRD (VV 想)
+				     (VV 起来)))))
+		(ADVP (AD 还))
+		(VP (VV 觉)
+		    (NP-OBJ (NN 心疼))))) 
+	</parse>
+	<arg n="0">
+	夏阳 
+	</arg>
+	<arg n="1">
+	心疼 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 现在 想 起来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-TMP (P 在)
+		(LCP (IP (NP-SBJ (PN 自))
+			 (VP (VV 觉)
+			     (IP-OBJ (IP (NP-SBJ (NN 来日))
+					 (VP (VV 无多)))
+				     (PU 、)
+				     (IP (NP-SBJ (-NONE- *PRO*))
+					 (VP (VV 急於)
+					     (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						     (VP (VV 追)
+							 (NP-OBJ (NN 梦)))))))))
+		     (LC 时))) 
+	</parse>
+	<arg n="0">
+	自 
+	</arg>
+	<arg n="1">
+	来日 无多 、 *PRO* 急於 *PRO* 追 梦 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

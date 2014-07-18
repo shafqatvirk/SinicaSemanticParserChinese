@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拿走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 takes arg1 away from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (QP (CD 大部分))
+		      (NP (NN 利润) ))
+	      (VP (ADVP (AD 都))
+		  (VP (LB 被)
+		      (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			      (IP (NP-SBJ (NN 广告)
+					  (NN 代理商) )
+				  (VP (VV 拿走)
+				      (NP-OBJ (-NONE- *T*-2)))))))) 
+	  </parse>
+	  <arg n="0">
+	  广告 代理商 
+	  </arg>
+	  <arg n="1">
+	  大部分 利润 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

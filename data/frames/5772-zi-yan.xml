@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自演 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="actor"/>
+    <role argnum="1" argrole="thing arg0 performs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 很多))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 都))
+		(VP (VE 有)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (NP-TMP (NN 儿时))
+					    (PP (P 和)
+						(NP (NN 同伴)))
+					    (VP (VCD (VV 自导)
+						     (VV 自演))
+						(NP-OBJ (DP (DT 各)
+							    (CLP (M 种)))
+							(NP (PU 「)
+							    (NN 黄梅调)
+							    (PU 」)
+							    (PU 、)
+							    (PU 「)
+							    (NN 武侠剧)
+							    (PU 」)
+							    (ETC 等))))))
+				    (DEC 的))
+			    (NP (NN 记忆)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="crd">
+	和 同伴 
+	</arg>
+	<arg n="1">
+	各 种 「 黄梅调 」 、 「 武侠剧 」 等 
+	</arg>
+	<arg n="m" f="tmp">
+	儿时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今年))
+	    (PU ，)
+	    (IP-ADV (ADVP (AD 不但))
+		    (NP-SBJ (NN 学生))
+		    (VP (ADVP (AD 自动))
+			(VP (VV 来)
+			    (VP (VV 报名)))))
+	    (PU ，)
+	    (NP-SBJ (NN 老师))
+	    (VP (ADVP (AD 还))
+		(VP (VV 打算)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 让)
+				(NP-OBJ (PN 他们))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 自编)
+					(PU 、)
+					(VV 自导)
+					(PU 、)
+					(VV 自演)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

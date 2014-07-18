@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 痛心 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people feeling pain"/>
+      <role argnum="1" argrole="cause of pain"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 发生)
+	      (NP-OBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 令)
+				      (NP-OBJ (NN 人))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 极为))
+					      (VP (VA 痛心))))))
+			      (DEC 的)))
+		      (NP (NN 事件)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  极为 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

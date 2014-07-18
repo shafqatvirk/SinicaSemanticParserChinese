@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 洗劫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 loots"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 偶而))
+	      (PU ，)
+	      (NP-SBJ (QP (QP (CD 几十)
+			      (CLP (M 年)))
+			  (QP (CD 一)
+			      (CLP (M 次))))
+		      (DNP (NP (NN 大地))
+			   (DEG 的))
+		      (NP (NN 震动)))
+	      (PU ，)
+	      (VP (VV 带来)
+		  (NP-OBJ (NN 生态)
+			  (NN 洗劫)))) 
+	  </parse>
+	  <arg n="0">
+	  几十 年 一 次 大地 的 震动 
+	  </arg>
+	  <arg n="1">
+	  生态 
+	  </arg>
+	  <arg n="m" f="adv">
+	  偶而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

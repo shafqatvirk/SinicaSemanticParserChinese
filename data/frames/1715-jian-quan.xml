@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 健全 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="initiator"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 天津))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 继续)
+		      (VP (VCD (VV 建立)
+			       (VV 健全))
+			  (NP-OBJ (ADJP (JJ 有关))
+				  (DNP (NP (NP (NN 外商))
+					   (NP (NN 投资))
+					   (NP (NN 企业)))
+				       (DEG 的))
+				  (NP (NP (NN 地方))
+				      (NP (NN 法规))
+				      (CC 和)
+				      (NN 规章))))))) 
+	  </parse>
+	  <arg n="0">
+	  天津 
+	  </arg>
+	  <arg n="1">
+	  有关 外商 投资 企业 的 地方 法规 和 规章 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 监督)
+		      (NN 体系))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 健全)))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  监督 体系 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

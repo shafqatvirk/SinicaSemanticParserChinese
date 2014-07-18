@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 钉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 nails arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 仅存)))
+			    (DEC 的)))
+		    (NP (NN 後代)))
+	    (PU ，)
+	    (LCP-SBJ (NP (NN 耳朵))
+		     (LC 上))
+	    (VP (VV 钉)
+		(AS 著)
+		(NP-OBJ (ADJP (JJ 红))
+			(NP (NN 牌子))))) 
+	</parse>
+	<arg n="1">
+	红 牌子 
+	</arg>
+	<arg n="2" f="psr">
+	*OP* *T*-2 仅存 的 後代 
+	</arg>
+	<arg n="2" f="pse">
+	耳朵 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

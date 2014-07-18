@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获悉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="informant"/>
+      <role argnum="1" argrole="news"/>
+      <role argnum="2" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 记者))
+	      (VP (PP-DIR (P 从)
+			  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (NP-TMP (NT 日前))
+						   (PP-LOC (P 在)
+							   (NP (NN 此间)))
+						   (VP (VV 召开))))
+					   (DEC 的)))
+				   (NP-PN (NR 大连市))
+				   (NP (PP (P 对)
+					   (NP (NN 外)))
+				       (NP (NN 开放)))
+				   (NP (NN 工作)
+				       (NN 会议)))
+			       (LC 上)))
+		  (VP (VV 获悉)
+		      (PU ，)
+		      (IP-OBJ (NP-TMP (NT 一九九五年))
+			      (PU ，)
+			      (NP-SBJ (NP (NR 大连市))
+				      (NP (ADJP (PU “)
+						(JJ 三资)
+						(PU ”))
+					  (NP (NN 企业)))
+				      (NP (NN 出口额)))
+			      (VP (VP (VV 达)
+				      (QP-OBJ (CD 十四点四亿)
+					      (CLP (M 美元))))
+				  (PU ，)
+				  (VP (VV 占)
+				      (QP-OBJ (DNP (NP (NP (DP (DT 这)
+							       (CLP (M 个)))
+							   (NP (NN 市)))
+						       (NP (NN 出口额)))
+						   (DEG 的))
+					      (QP (CD 一半))
+					      (ADVP (AD 还)
+						    (AD 多))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  记者 
+	  </arg>
+	  <arg n="1">
+	  一九九五年 ， 大连市 “ 三资 ” 企业 出口额 达 十四点四亿 美元 ， 占 这 个 市 出口额 的 一半 还 多 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 *OP* *T*-1 日前 在 此间 召开 的 大连市 对 外 开放 工作 会议 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

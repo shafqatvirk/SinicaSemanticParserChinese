@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 买回 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="buyer"/>
+    <role argnum="1" argrole="entity arg0 buys"/>
+    <role argnum="2" argrole="place arg1 is bought and brought back to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 就))
+		(VP (VV 请)
+		    (NP-OBJ (NN 神父))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 帮)
+			    (NP-OBJ (PN 他))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 买回)
+				    (NP-OBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+							(CP (IP (NP-PN-SBJ (NR 迪士尼)
+									   (NN 公司))
+								(VP (VV 拍)
+								    (NP-OBJ (-NONE- *T*-1))))
+							    (DEC 的)))
+						    (NP (NN 卡通片)))
+					    (NP (ADVP (AD 如))
+						(NP (NP-TTL (PU 《)
+							    (ADJP (JJ 睡))
+							    (NP (NN 美人))
+							    (PU 》))
+						    (PU 、)
+						    (NP-TTL (PU 《)
+							    (NR 白雪)
+							    (NN 公主)
+							    (PU 》))
+						    (ETC 等))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* 迪士尼 公司 拍 *T*-1 的 卡通片 如 《 睡 美人 》 、 《 白雪 公主 》 等 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 甚至))
+	    (LCP-SBJ (NP (NN 市场))
+		     (LC 上))
+	    (VP (ADVP (AD 也))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (DNP (ADJP (JJ 家庭式))
+					 (DEG 的))
+				    (NP (NN 制品)))
+			    (VP (VV 可以)
+				(VP (VV 买回))))))) 
+	</parse>
+	<arg n="1">
+	家庭式 的 制品 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (PN 我))
+				(VP (VV 买回)
+				    (NP-OBJ (NN 家) )))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 包)
+		(NP-OBJ (PN 你))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VCD (VV 招财)
+				 (VV 进宝)))
+			(VP (ADVP (AD 一路))
+			    (VP (VA 发))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	我 
+	</arg>
+	<arg n="2">
+	家 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

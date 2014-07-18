@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采纳 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 adopts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (NP-SBJ (DNP (NP (PN 他))
+			 (DEG 的))
+		    (NP (NN 建议)))
+	    (VP (ADVP (AD 并))
+		(ADVP (AD 未))
+		(VP (SB 被)
+		    (VP (VV 采纳))))) 
+	</parse>
+	<arg n="1">
+	他 的 建议 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<arg n="m" f="dis">
+	但是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

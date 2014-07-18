@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 鞭策 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 pushes arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 到)
+			    (AS 了)
+			    (NP-OBJ (DP (DT 这))
+				    (NP (NN 时候)))))
+		(PU ，)
+		(ADVP (AD 不))
+		(VP (VV 要)
+		    (VP (VP (ADVP (AD 再))
+			    (VP (VV 拿)
+				(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (ADVP (AD 更))
+							(VP (VA 多))))
+						(DEC 的)))
+					(ADJP (JJ 外在))
+					(NP (NN 标准)))))
+			(VP (VP (MSP 来))
+			    (VP (VV 鞭策)
+				(NP-OBJ (PN 自己)))))))
+	    (SP 了)) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 到 了 这 时候 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 应该)
+		(VP (ADVP (AD 自我))
+		    (VP (VV 鞭策))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	自我 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拓宽 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 网站))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 将))
+		  (VP (VP (PP (P 与)
+			      (NP (NP (NN 国内))
+				  (QP-APP (CD 一四八))
+				  (NP (NN 法律)
+				      (NN 服务)
+				      (NN 热线))))
+			  (VP (VV 联网)))
+		      (PU ，)
+		      (VP (VV 拓宽)
+			  (NP-OBJ (NN 法律)
+				  (NN 服务)
+				  (NN 领域)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  网站 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  法律 服务 领域 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 投资)
+		      (NN 领域))
+	      (VP (ADVP (AD 不断))
+		  (VP (VV 拓宽)))) 
+	  </parse>
+	  <arg n="1">
+	  投资 领域 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不断 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

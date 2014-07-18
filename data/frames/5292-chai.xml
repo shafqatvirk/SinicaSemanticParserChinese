@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拆 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tears down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今年)
+		    (NT 六月))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VP (VV 流)
+		    (AS 著)
+		    (NP-OBJ (NN 眼泪)))
+		(VP (VV 拆)
+		    (AS 了)
+		    (NP-OBJ (NN 房子)))
+		(PU ，)
+		(VP (ADVP (AD 随即))
+		    (PP-LOC (P 在)
+			    (NP (NN 原地)))
+		    (VP (VV 弄)
+			(NP-OBJ (QP (CLP (M 个)))
+				(NP (NN 货柜屋))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	房子 
+	</arg>
+	<arg n="m" f="tmp">
+	今年 六月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 如今))
+	    (NP-SBJ (NN 骑楼))
+	    (VP (VP (VV 拆)
+		    (AS 了))
+		(PU 、)
+		(VP (VV 变成)
+		    (NP-OBJ (NN 停车场))))) 
+	</parse>
+	<arg n="1">
+	骑楼 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

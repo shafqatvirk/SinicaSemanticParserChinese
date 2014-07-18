@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 披 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 wears"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 身))
+	      (VP (VV 披)
+		  (NP-OBJ (ADJP (JJ 黑褐色))
+			  (ADJP (JJ 三角形))
+			  (NP (NN 斑纹))))) 
+	  </parse>
+	  <arg n="1">
+	  黑褐色 三角形 斑纹 
+	  </arg>
+	  <arg n="m" f="loc">
+	  身 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

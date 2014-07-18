@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 幸而))
+      (QP (ADVP (AD 近))
+          (QP (CD 两)
+              (CLP (M 年))))
+      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+              (VP (VV 拜)
+                  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 石油)
+                                              (NN 价格))
+                                      (VP (VV 持续)
+                                          (VP (VV 走低))))
+                                  (DEC 之))
+                          (NP (NN 赐)))))
+      (PU ，)
+      (NP-SBJ (DNP (NP (NN 加工)
+                       (NN 丝))
+                   (DEG 的))
+              (NP (NN 原料))
+              (PRN (PU ——)
+                   (CP (WHNP-1 (-NONE- *OP*))
+                       (CP (IP (NP-SBJ (-NONE- *T*-1))
+                               (VP (VV 属於)
+                                   (NP-OBJ (ADJP (JJ 石化))
+                                           (NP (NN 产品)))))
+                           (DEC 的)))
+                   (NP (NN PTA)
+                       (CC 和)
+                       (NN EG))))
+      (VP (ADVP (AD 也))
+          (ADVP (AD 都))
+          (ADVP (AD 大幅))
+          (VP (VV 降价)))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> 石油 价格 持续 走低 之 赐 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

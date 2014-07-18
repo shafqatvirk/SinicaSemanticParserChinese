@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 剥夺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="remover"/>
+    <role argnum="1" argrole="right,previlege"/>
+    <role argnum="2" argrole="person removed of rights, previlege"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NP-PN (NR 北京市))
+                 (QP (OD 第一))
+                 (ADJP (JJ 中级))
+                 (NP (NN 人民)
+                     (NN 法院)))
+      (VP (NP-TMP (NT 今天)
+                  (NT 上午))
+          (ADVP (AD 依法))
+          (VP (VP (VV 判处)
+                  (NP-PN-IO (NR 郭辉))
+                  (NP-OBJ (NN 死刑)))
+              (PU ，)
+              (VP (VV 剥夺)
+                  (NP-OBJ (NN 政治)
+                          (NN 权利))
+                  (NP-EXT (NN 终身)))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 北京市 第一 中级 人民 法院 </arg>
+	<arg n="M" f="TMP"> 今天 上午 </arg>
+	<arg n="M" f="ADV"> 依法 </arg>
+	<V/>
+	<arg n="1"> 政治 权利 </arg>
+	<arg n="M" f="EXT"> 终身 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

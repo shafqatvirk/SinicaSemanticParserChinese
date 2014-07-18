@@ -1,0 +1,158 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 叙述 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="narrator"/>
+    <role argnum="1" argrole="thing arg0 narrates"/>
+    <role argnum="2" argrole="place where arg1 is narrated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (PP-MNR (P 以)
+			(NP (NN 过来人)
+			    (NN 经验)))
+		(ADVP (AD 详尽))
+		(VP (VV 叙述)
+		    (NP-OBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (NN 台商))
+						(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+							    (VP (PP-LOC (P 在)
+									(NP-PN (NR 上海)))
+								(VP (VV 生活))))
+						    (VP (VV 面对)
+							(NP-OBJ (-NONE- *T*-1))))
+						(DEC 的))))
+				    (ADJP (JJ 种种))
+				    (NP (NN 问题)))
+			    (PU ：)
+			    (NP (NN 置产)
+				(NN 购屋))
+			    (PU 、)
+			    (NP (NP (QP (CD 两))
+				    (NP (NN 岸)))
+				(NP (NN 婚姻)))
+			    (PU 、)
+			    (NP (NN 创业)
+				(NN 投资))
+			    (PU ，)
+			    (NP (NN 子女)
+				(NN 就学))
+			    (PU 、)
+			    (NP (ADJP (JJ 日常))
+				(NP (NN 消费)))
+			    (PU 、)
+			    (NP (NN 休闲)
+				(NN 娱乐))
+			    (ETC 等))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*OP* 台商 *PRO* 在 上海 生活 面对 *T*-1 的 种种 问题 ： 置产 购屋 、 两 岸 婚姻 、 创业 投资 ， 子女 就学 、 日常 消费 、 休闲 娱乐 等 
+	</arg>
+	<arg n="m" f="adv">
+	详尽 
+	</arg>
+	<arg n="m" f="mnr">
+	以 过来人 经验 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (PP-MNR (P 以)
+					    (NP (NN 澳资)))
+				    (VP (VV 拍摄)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP-TTL (PU 《)
+			    (NN 浮生)
+			    (PU 》)))
+	    (PU ，)
+	    (VP (VV 叙述)
+		(NP-OBJ (CP-APP (IP (LCP-TMP (IP (NP-SBJ (NP-PN (NR 香港))
+							 (NP (NN 主权)))
+						 (VP (VV 归属)
+						     (NP-PN-OBJ (NR 中国))))
+					     (LC 前))
+				    (PU ，)
+				    (NP-SBJ (DNP (NP (QP (CD 一)
+							 (CLP (M 个)))
+						     (NP (NN 家庭)))
+						 (DEG 的))
+					    (QP (CD 五)
+						(CLP (M 个)))
+					    (NP (NN 儿女)))
+				    (VP (PP-DIR (P 从)
+						(NP-PN (NR 香港)))
+					(VP (VV 移民)
+					    (NP-PN-OBJ (NR 澳洲)))))
+				(DEC 的))
+			(NP (NN 心路)
+			    (NN 历程))))) 
+	</parse>
+	<arg n="1">
+	香港 主权 归属 中国 前 ， 一 个 家庭 的 五 个 儿女 从 香港 移民 澳洲 的 心路 历程 
+	</arg>
+	<arg n="2">
+	*OP* *pro* 以 澳资 拍摄 *T*-1 的 《 浮生 》 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 日资))
+				(VP (VV 拍摄)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP-TTL (PU 《)
+			    (NN 秋月)
+			    (PU 》)))
+	    (VP (VV 叙述)
+		(IP-OBJ (NP-SBJ (QP (CD 一)
+				    (CLP (M 名)))
+				(NP-PN (NR 日本))
+				(NP (NN 观光客)))
+			(PU ，)
+			(VP (PP-PRP (P 因为)
+				    (IP (NP-SBJ (NN 生活))
+					(VP (VV 烦闷))))
+			    (VP (VP (VV 到)
+				    (NP-PN-OBJ (NR 香港)))
+				(VP (VV 旅行))))))) 
+	</parse>
+	<arg n="1">
+	一 名 日本 观光客 ， 因为 生活 烦闷 到 香港 旅行 
+	</arg>
+	<arg n="2">
+	*OP* 日资 拍摄 *T*-1 的 《 秋月 》 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

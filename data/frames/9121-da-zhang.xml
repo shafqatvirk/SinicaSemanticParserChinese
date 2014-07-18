@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打仗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities going into war"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (ADVP (AD 例如))
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VNV-WH (VV 要)
+			    (AD 不)
+			    (VV 要))
+		    (VP (PP-ADV (P 与)
+				(NP-PN (NR 匈奴)))
+			(VP (VV 打仗))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 匈奴 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 说来说去 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 talks about back and forth"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NP (NN 夫妻))
+					(NP (PN 俩)))
+				(VP (NP-PRP (-NONE- *T*-1))
+				    (ADVP (AD 迄今))
+				    (ADVP (AD 不))
+				    (VP (VV 愿)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 收店))))))
+			    (DEC 的)))
+		    (NP (NN 原因)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 说来说去)))
+		(ADVP (AD 还))
+		(VP (VC 是)
+		    (PP-PRD (P 为了)
+			    (NP (NN 孩子)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

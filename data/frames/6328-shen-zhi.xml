@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 深知 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 knows well"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 吴建乐))
+	    (VP (ADVP (AD 却))
+		(VP (VV 深知)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 采收)
+					    (NP-OBJ (NN 甘蔗))))
+				    (DEC 的))
+			    (NP (NN 艰苦)))))) 
+	</parse>
+	<arg n="0">
+	吴建乐 
+	</arg>
+	<arg n="1">
+	*PRO* 采收 甘蔗 的 艰苦 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 目前))
+				    (VP (VV 身兼)
+					(NP-OBJ (NP (NP-PN (NR 纺研))
+						    (NP (NN 技术)
+							(NN 委员会)))
+						(NP (NN 主委))))))
+			    (DEC 的)))
+		    (NP-PN (NR 商武)))
+	    (PU ，)
+	    (VP (VV 深知)
+		(IP-Q-OBJ (NP-SBJ (DNP (NP (NP-PN (NR 台湾))
+					   (NP (NN 研发)
+					       (NN 瓶颈)))
+				       (DEG 的))
+				  (NP (NN 症结)))
+			  (VP (VV 出)
+			      (PP (P 在)
+				  (NP-WH (PN 哪里))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 目前 身兼 纺研 技术 委员会 主委 的 商武 
+	</arg>
+	<arg n="1">
+	台湾 研发 瓶颈 的 症结 出 在 哪里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

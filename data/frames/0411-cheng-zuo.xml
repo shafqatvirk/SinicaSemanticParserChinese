@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 称作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="name giver"/>
+      <role argnum="1" argrole="name receiver"/>
+      <role argnum="2" argrole="name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 镍))
+	      (VP (SB 被)
+		  (VP (VV 称作)
+		      (NP-OBJ (PU “)
+			      (DNP (NP (ADJP (JJ 现代))
+				       (NP (NN 工业)))
+				   (DEG 的))
+			      (NP (NN 维生素))
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="1">
+	  镍 
+	  </arg>
+	  <arg n="2">
+	  “ 现代 工业 的 维生素 ” 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

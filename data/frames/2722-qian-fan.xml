@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遣返 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people repatriated"/>
+      <role argnum="2" argrole="location repatriated to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 遣返)
+		      (NP-OBJ (PP (P 在)
+				  (NP-PN (NR 华)))
+			      (NP-PN (NR 老挝))
+			      (NP (NN 难民))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  在 华 老挝 难民 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ-2 (ADJP (JJ 所有))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 未))
+					    (VP (VV 能)
+						(VP (ADVP (AD 依法))
+						    (VP (VV 确立)
+							(NP-OBJ (NP (PN 他们))
+								(DNP (PP (P 在)
+									 (NP-PN (NR 港)))
+								     (DEG 的))
+								(NP (NN 居留)
+								    (NN 权利))))))))
+				    (DEC 的)))
+			    (NP (NN 人士)))
+		  (VP (ADVP (AD 均))
+		      (VP (VV 会)
+			  (VP (SB 被)
+			      (VP (VV 遣返)
+				  (NP-OBJ (-NONE- *-2))))))) 
+	  </parse>
+	  <arg n="1">
+	  *-2 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (NN 难民))
+		  (VP (ADVP (AD 自愿))
+		      (VP (VRD (VV 遣返)
+			       (VV 到))
+			  (NP-OBJ (NN 原籍国))))) 
+	  </parse>
+	  <arg n="1">
+	  难民 	  
+	  </arg>
+	  <arg n="2">
+	  原籍国 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  自愿 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

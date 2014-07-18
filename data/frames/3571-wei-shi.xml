@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 为时 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="length arg0 lasts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-APP (NP-PN (NR 埃及))
+				 (NP (NN 总统)))
+			 (NP-PN (NR 穆罕默德·胡斯尼·穆巴拉克)))
+	      (VP (NP-TMP (NT 今天)
+			  (NT 上午))
+		  (VP (VV 结束)
+		      (NP-OBJ (PP (P 对)
+				  (NP-PN (NR 中国)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 为时)
+					      (QP-OBJ (CD 三)
+						      (CLP (M 天)))))
+				      (DEC 的)))
+			      (NP (NN 国事)
+				  (NN 访问))))
+		  (PU ，)
+		  (VP (VP (VV 离开)
+			  (NP-PN-OBJ (NR 北京)))
+		      (VP (VV 回国))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  三 天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

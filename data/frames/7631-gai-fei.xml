@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 改飞 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="type of plane arg0 changes to fly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而且))
+	    (PP-MNR (P 据)
+		    (NP (NN 了解)))
+	    (PU ，)
+	    (NP-SBJ (ADJP (JJ 当初))
+		    (QP (NP-PN (NR 台湾))
+			(QP (OD 第一)
+			    (CLP (M 批))))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VSB (VV 出国)
+					 (VV 受训))))
+			    (DEC 的)))
+		    (NP (NN 飞行员)))
+	    (PU ，)
+	    (VP (ADVP (AD 几乎))
+		(ADVP (AD 已))
+		(ADVP (AD 全))
+		(VP (VP (VV 退役))
+		    (VP (VV 改飞)
+			(NP-OBJ (NN 民航机)))))) 
+	</parse>
+	<arg n="0">
+	当初 台湾 第一 批 *OP* *T*-1 出国 受训 的 飞行员 
+	</arg>
+	<arg n="1">
+	民航机 
+	</arg>
+	<arg n="m" f="adv">
+	全 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<arg n="m" f="mnr">
+	据 了解 
+	</arg>
+	<arg n="m" f="dis">
+	而且 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

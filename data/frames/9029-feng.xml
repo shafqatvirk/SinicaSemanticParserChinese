@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 封 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="title arg0 gives to arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-ADV (PN 自))
+		      (VP (VV 认为)
+			  (IP-OBJ (PU 「)
+				  (IP (NP-SBJ (NN 德))
+				      (VP (VV 兼)
+					  (NP-OBJ (QP (CD 三))
+						  (NP (NN 皇)))))
+				  (PU ，)
+				  (IP (NP-SBJ (NN 功))
+				      (VP (VV 过)
+					  (NP-OBJ (QP (CD 五))
+						  (NP (NN 帝)))))
+				  (PU 」))))
+		  (PU ，)
+		  (VP (ADVP (AD 於是))
+		      (NP-ADV (PN 自))
+		      (VP (VCP (VV 封)
+			       (VC 为))
+			  (NP-PN-OBJ (NR 始皇帝)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  始皇帝 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自 
+	  </arg>
+	  <arg n="m" f="adv">
+	  於是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

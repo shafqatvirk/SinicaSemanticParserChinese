@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity regarded"/>
+      <role argnum="2" argrole="entity regarded as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 吉尔吉斯))
+		  (VP (ADVP (AD 将))
+		      (ADVP (AD 永远))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-PN-SBJ (NR 中国))
+				  (VP (VCP (VV 看作)
+					   (VC 是))
+				      (NP-OBJ (NP (DNP (NP (NP-PN (NR 中亚))
+							   (NP (NN 国家)))
+						       (DEG 的))
+						  (ADJP (JJ 友好))
+						  (NP (NN 邻邦)))
+					      (CC 和)
+					      (NP (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (ADVP (AD 相互))
+								  (VP (VA 信赖))))
+							  (DEC 的)))
+						  (NP (NN 合作)
+						      (NN 伙伴))))))))) 
+	  </parse>
+	  <arg n="0">
+	  吉尔吉斯 
+	  </arg>
+	  <arg n="1">
+	  中国 
+	  </arg>
+	  <arg n="2">
+	  中亚 国家 的 友好 邻邦 和 *OP* *T*-1 相互 信赖 的 合作 伙伴 
+	  </arg>
+	  <arg n="m" f="adv">
+	  永远 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (LCP-TMP (ADVP (AD 一直))
+			 (LC 以来))
+		(PU ，)
+		(NP-PN-SBJ (NR 加马拉))
+		(VP (CC 不仅)
+		    (VP (SB 被)
+			(IP-OBJ (NP-SBJ (NN 国际)
+					(NN 足坛))
+				(VP (VCP (VV 看作)
+					 (VC 是))
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (LCP-LOC (NP (NN 世界))
+								     (LC 上))
+							    (ADVP (AD 最))
+							    (VP (VA 出色))))
+						    (DEC 的)))
+					    (NP (NN 后卫)
+						(NN 之一))))))
+		    (PU ，)
+		    (CC 而且)
+		    (VP (ADVP (AD 也))
+			(VP (VC 是)
+			    (NP-PRD (NP (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-TPC (-NONE- *T*-2))
+						    (NP-SBJ (NN 人品))
+						    (VP (ADVP (AD 最))
+							(VP (VA 好))))
+						(DEC 的)))
+					(NP (NN 球员)))
+				    (NP (NN 之一))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  国际 足坛 
+	  </arg>
+	  <arg n="1">
+	  加马拉 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 世界 上 最 出色 的 后卫 之一 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一直 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

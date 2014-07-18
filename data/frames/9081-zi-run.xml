@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 滋润 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 nourishes and moistens"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 长江)
+			 (NR 三峡)
+			 (CC 和)
+			 (NR 浊水溪))
+	      (VP (ADVP (AD 一起))
+		  (VP (VV 滋润)
+		      (AS 著)
+		      (NP-OBJ (DNP (NP (NN 台湾人))
+				   (DEG 的))
+			      (NP (NN 想像)))))) 
+	  </parse>
+	  <arg n="0">
+	  长江 三峡 和 浊水溪 
+	  </arg>
+	  <arg n="1">
+	  台湾人 的 想像 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一起 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

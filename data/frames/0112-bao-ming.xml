@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 报名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="registerer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (QP-TMP (ADVP (AD 仅))
+			    (QP (OD 第一)
+				(CLP (M 天))))
+		    (ADVP (AD 就))
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ (QP (CD ８０００多))
+					(NP (NN 人)))
+				(VP (VV 报名))))))) 
+	  </parse>
+	  <arg n="0">
+	  ８０００多 人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

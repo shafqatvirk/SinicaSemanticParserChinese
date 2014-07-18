@@ -1,0 +1,134 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下降 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="extent of fall"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP-PN (NR 亚洲))
+		      (NP (NN 产品)))
+	      (NP-SBJ (NN 生产)
+		      (NN 成本))
+	      (VP (VV 下降))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  生产 成本 	  
+	  </arg>
+	  <arg n="0" f="psr">
+	  亚洲 产品 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 人均))
+		      (NP (NN 国民)
+			  (NN 生产)
+			  (NN 总值)))
+	      (VP (PP (P 比)
+		      (NP (NT ９７年)))
+		  (VP (VV 下降)
+		      (QP-EXT (CD 百分之三十三点五))))) 
+	  </parse>
+	  <arg n="0">
+	  人均 国民 生产 总值 	  
+	  </arg>
+	  <arg n="1">
+	  百分之三十三点五 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 ９７年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="level arg0 falls to"/>
+      <role argnum="2" argrole="original level"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人口)
+		      (NN 出生率)
+		      (CC 和)
+		      (NN 人口)
+		      (NN 自然)
+		      (NN 增长率))
+	      (VP (VRD (VV 下降)
+		       (VV 到))
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 较))
+					  (VP (VA 低))))
+				  (DEC 的)))
+			  (NP (NN 水平))))) 
+	  </parse>
+	  <arg n="0">
+	  人口 出生率 和 人口 自然 增长率 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 较 低 的 水平 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 美国))
+		      (DNP (NP (NT 明年))
+			   (DEG 的))
+		      (NP (NN 经济)
+			  (NN 增长率)))
+	      (VP (ADVP (AD 将))
+		  (PP-DIR (P 从)
+			  (QP (DNP (NP (NT 今年))
+				   (DEG 的))
+			      (QP (CD 百分之三点八))))
+		  (VP (VRD (VV 下降)
+			   (VV 到))
+		      (QP-OBJ (CD 百分之二点四))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 明年 的 经济 增长率 	  
+	  </arg>
+	  <arg n="1">
+	  百分之二点四 	  
+	  </arg>
+	  <arg n="2">
+	  从 今年 的 百分之三点八 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

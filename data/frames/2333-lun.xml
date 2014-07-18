@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 论 </id>
+    <frameset id="f1" edef="comment">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 discusses/comments on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 人民)
+			 (NN 日报))
+	      (VP (NP-TMP (NT 今天))
+		  (VP (VP (VV 发表)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-1))
+					      (NP-SBJ (NN 题))
+					      (VP (VC 为)
+						  (IP-PRD (PU 《)
+							  (NP-SBJ (-NONE- *PRO*))
+							  (VP (PP-LOC (P 在)
+								      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+									       (VP (VV 确保)
+										   (NP-OBJ (NN 稳定))))
+									   (LC 中)))
+							      (VP (VP (VV 深化)
+								      (NP-OBJ (NN 改革)))
+								  (VP (VV 促进)
+								      (NP-OBJ (NN 发展)))))
+							  (PU 》))))
+					  (DEC 的)))
+				  (NP (NN 评论员)
+				      (NN 文章))))
+		      (PU ，)
+		      (VP (QP-ADV (CD 四))
+			  (VP (VV 论)
+			      (NP-OBJ (NT 明年)
+				      (NN 经济)
+				      (NN 工作))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  人民 日报 	  
+	  </arg>
+	  <arg n="1">
+	  明年 经济 工作 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  四 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="determine">
+      <role argnum="0" argrole="determiner"/>
+      <role argnum="1" argrole="thing determined"/>
+      <role argnum="2" argrole="basis of the determination"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (PP-MNR (P 按)
+			  (NP (NN 质)))
+		  (VP (VV 论)
+		      (NP-OBJ (NN 价))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  价 	  	  
+	  </arg>
+	  <arg n="2">
+	  按 质 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

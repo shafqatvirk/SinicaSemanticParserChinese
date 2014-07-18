@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 凉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 cools down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 好歹))
+		(PU ，)
+		(VP (VP (VRD (VV 坐)
+			     (VV 下来)))
+		    (PU ，)
+		    (VP (VV 等)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 壶)))
+				(NP (NN 茶)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VA 凉))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相陪 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="person arg0 keeps company"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 里面))
+	      (VP (ADVP (AD 还))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (NN 歌儿)
+				      (NN 舞女))
+			      (VP (VV 演唱)
+				  (VV 相陪)))))) 
+	  </parse>
+	  <arg n="0">
+	  歌儿 舞女 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

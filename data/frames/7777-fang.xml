@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 防 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 prevents"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 有线))
+		    (NP (NN 电视)))
+	    (VP (VP (ADVP (AD 则))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 限制级)
+					(NN 节目))
+				(VP (PP-MNR (P 以)
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 锁码))))
+				    (VP (VV 管制))))))
+		(PU ，)
+		(VP (MSP 以)
+		    (VP (VV 防)
+			(NP-OBJ (NN 儿童))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 随意))
+				(VP (VV 开启)))))))) 
+	</parse>
+	<arg n="0">
+	有线 电视 
+	</arg>
+	<arg n="1">
+	儿童 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 随意 开启 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

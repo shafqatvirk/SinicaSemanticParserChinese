@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 题词 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing written"/>
+      <role argnum="2" argrole="benefactive"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 联合国)
+				     (NN 教科文)
+				     (NN 组织))
+			      (NP (NN 副总干事)))
+		      (NP-PN (NR 丹尼尔)))
+	      (VP (PP-BNF (P 为)
+			  (NP (NN 大赛)))
+		  (VP (VV 题词)
+		      (PU ：)
+		      (IP-OBJ (PU “)
+			      (NP-SBJ (PN 你们))
+			      (VP (VV 保存)
+				  (AS 了)
+				  (NP-OBJ (DNP (NP (NN 人类))
+					       (DEG 的))
+					  (NP (NN 记忆))))
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  联合国 教科文 组织 副总干事 丹尼尔 
+	  </arg>
+	  <arg n="1">
+	  “ 你们 保存 了 人类 的 记忆 ” 
+	  </arg>
+	  <arg n="2">
+	  为 大赛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 邓小平))
+	      (VP (PP-BNF (P 为)
+			  (NP (NN 纪念碑)))
+		  (VP (VV 题词)))) 
+	  </parse>
+	  <arg n="0">
+	  邓小平 
+	  </arg>
+	  <arg n="2">
+	  为 纪念碑 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

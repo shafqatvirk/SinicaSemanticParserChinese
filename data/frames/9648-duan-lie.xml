@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 断裂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing breaking"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 只是))
+	      (NP-SBJ (PN 它))
+	      (VP (VP (ADVP (AD 太))
+		      (VP (VA 细)
+			  (PRN (PU （)
+			       (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (ADVP (AD 约))
+				       (PP (P 比)
+					   (NP (NN 头发)))
+				       (VP (VA 细)
+					   (QP-EXT (CD 一)
+						   (CLP (M 倍))))))
+			       (PU ）))))
+		  (PU ，)
+		  (VP (PP-LOC (P 在)
+			      (NP (NN 纺纱)
+				  (NN 阶段)))
+		      (ADVP (AD 极))
+		      (VP (VA 易)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 断裂))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

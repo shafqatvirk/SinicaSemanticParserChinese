@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 doesn't have/doesn't exit for arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (PN 他))
+			   (DEG 的))
+		      (NP (NN 理论)))
+	      (VP (ADVP (AD 或许))
+		  (ADVP (AD 并))
+		  (VP (VE 无)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 独特)))
+				      (DEC 之)))
+			      (NP (NN 处)))))) 
+	  </parse>
+	  <arg n="0">
+	  他 的 理论 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 独特 之 处 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  或许 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="domain"/>
+      <role argnum="1" argrole="thing that does not exist in this domain"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-APP (NN 东道主))
+			  (NP-PN (NR 哥斯达黎加)))
+		      (NP (NN 车手)))
+	      (VP (QP-ADV (OD 第一)
+			  (CLP (M 次)))
+		  (VP (VE 无)
+		      (IP-OBJ (NP-SBJ (NN 人))
+			      (VP (VV 进入)
+				  (DP-OBJ (DT 前)
+					  (QP (CD 十)
+					      (CLP (M 名))))))))) 
+	  </parse>
+	  <arg n="0">
+	  东道主 哥斯达黎加 车手 	  
+	  </arg>
+	  <arg n="1">
+	  人 进入 前 十 名 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  第一 次 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

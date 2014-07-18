@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 讲授 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="subject arg0 teaches"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 两)
+			   (CLP (M 年)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 新竹)
+				  (NR 交通)
+				  (NN 大学))
+			   (DEG 的))
+		      (NP (ADJP (JJ 高阶))
+			  (NP (NN 主管)))
+		      (NP (NN 管理)
+			  (NN 硕士))
+		      (NP (NN 班)))
+	      (VP (VP (VV 请来)
+		      (NP-OBJ (NN 电子业)
+			      (NN 大师))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 讲授)
+			      (NP-OBJ (NN 企业)
+				      (NN 经营)
+				      (NN 理念)))))
+		  (PU ，)
+		  (VP (ADVP (AD 一举))
+		      (VP (VV 打响)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 交大))
+					   (NP (NN EMBA)))
+				       (DEG 的))
+				  (NP (NN 知名度))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  企业 经营 理念 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

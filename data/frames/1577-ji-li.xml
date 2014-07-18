@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 激励 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="promoter"/>
+      <role argnum="1" argrole="thing promoted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 我们))
+		  (VP (VV 要)
+		      (VP (VP (ADVP (AD 认真))
+			      (VP (VP (VV 总结)
+				      (NP-OBJ (-NONE- *RNR*-3)))
+				  (CC 和)
+				  (VP (VV 推广)
+				      (NP-OBJ-3 (DP (DT 这些))
+						(CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (VA 好)))
+							(DEC 的)))
+						(NP (NN 经验))))))
+			  (PU ，)
+			  (VP (VRD (VV 建立)
+				   (VV 起))
+			      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 激励)
+						      (NP-OBJ (NN 竞争)))
+						  (CC 和)
+						  (VP (VCD (VV 勤政)
+							   (VV 廉政)))))
+				      (NP (NN 机制))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  竞争 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

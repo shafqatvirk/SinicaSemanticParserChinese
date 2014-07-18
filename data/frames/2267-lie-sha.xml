@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 猎杀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (ADVP (AD 近))
+			   (QP (CD 几)
+			       (CLP (M 年))))
+		       (LC 来))
+	      (PU ，)
+	      (PP-PRP (P 由于)
+		      (IP (LCP-LOC (NP (NN 国际)
+				       (NN 市场))
+				   (LC 上))
+			  (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (PP-MNR (NP (NP (NP-PN (NR 藏))
+								  (NP (NN 羚羊)))
+							      (NP (NN 绒))))
+						  (VP (VV 织)
+						      (NP-OBJ (-NONE- *T*-1)))))
+					  (DEC 的)))
+				  (NP (NN 披肩)
+				      (PU 、)
+				      (NN 围巾)))
+			  (NP-SBJ (NN 价值))
+			  (VP (VA 不菲))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 偷猎者)))
+	      (VP (VP (VV 闯入)
+		      (NP-PN-OBJ (NR 可可西里)))
+		  (VP (NP-ADV (ADJP (JJ 大))
+			      (NP (NN 规模)))
+		      (VP (VV 猎杀)
+			  (NP-OBJ (NP-PN (NR 藏))
+				  (NP (NN 羚羊))))))) 
+	  </parse>
+	  <arg n="0">
+	  许多 偷猎者 
+	  </arg>
+	  <arg n="1">
+	  藏 羚羊 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大 规模 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 国际 市场 上 *OP* *pro* 藏 羚羊 绒 织 *T*-1 的 披肩 、 围巾 价值 不菲 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近 几 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

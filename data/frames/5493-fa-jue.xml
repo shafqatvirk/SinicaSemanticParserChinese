@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 发觉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 discovers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 使用)))
+			    (DEC 的)))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 不))
+		(VP (VV 会)
+		    (VP (VV 发觉)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (NN 电脑))
+					    (VP (VV 暗藏)
+						(NP-OBJ (-NONE- *T*-2))))
+					(DEC 的)))
+				(NP (PU 「)
+				    (NN 返老还童)
+				    (PU 」))
+				(NP (NN 把戏))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 使用 的 人 
+	</arg>
+	<arg n="1">
+	*OP* 电脑 暗藏 *T*-2 的 「 返老还童 」 把戏 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (UCP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 发觉)
+				 (IP-OBJ (NP-SBJ (NN 记忆))
+					 (VP (VV 大不如前)))))
+			 (PU ，)
+			 (NP (DNP (NP (NN 感叹))
+				  (DEG 之))
+			     (NP (NN 馀)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 刻)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 枚)))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (PU 「)
+					    (VP (ADVP (AD 多))
+						(VP (VV 读)))
+					    (VP (VV 补)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (ADVP (AD 多))
+							    (VP (VV 忘)))))
+					    (PU 」)))
+				    (DEC 的))
+			    (NP (NN 闲章))))
+		(VP (MSP 来)
+		    (VP (VV 激励)
+			(NP-OBJ (PN 自己))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 越))
+					    (VP (VA 老))))
+				(ADVP (AD 越))
+				(VP (VV 要)
+				    (VP (ADVP (AD 多))
+					(VP (VV 读书)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	记忆 大不如前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 虚假 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 教唆)
+	      (NP-OBJ-1 (PN 他人))
+	      (IP-2 (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 使用)
+			(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				    (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (VA 虚假))))
+				(NP (NP (NP-PN (NR 英国))
+					(NP (NN 国民))
+					(PRN (PU （)
+					     (NP (NN 海外))
+					     (PU ）))
+					(NP (NN 护照)))
+				    (CC 及)
+				    (NP (NP-PN (NR 香港))
+					(NP (NN 身分)
+					    (NN 证明书)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

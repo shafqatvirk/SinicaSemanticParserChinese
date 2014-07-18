@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 少 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity short of arg1"/>
+      <role argnum="1" argrole="entity lacking/small in quantity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CD 一)
+			      (CLP (M 个)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 少)
+				      (NP-OBJ (NN 林)))))
+			  (NP (NN 国家))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  林 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 投资))
+	      (VP (VA 少))) 
+	  </parse>
+	  <arg n="1">
+	  投资 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity reduced/short"/>
+      <role argnum="1" argrole="amount of shortage"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 让)
+	      (NP-OBJ (DP (DT 这些))
+		      (NP (NN 遗憾)))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VA 少)
+			  (CLP-EXT (M 些)))
+		      (PU 、)
+		      (VP (ADVP (AD 再))
+			  (VP (VA 少)
+			      (CLP-EXT (M 些))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  些 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

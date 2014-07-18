@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宴请 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people treated to a banquet"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 晚上))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 外交)
+			  (NN 学会)
+			  (NN 会长))
+		      (NP-PN (NR 刘述卿)))
+	      (VP (VP (VV 会见)
+		      (NP-OBJ (-NONE- *RNR*-1)))
+		  (CC 并)
+		  (VP (VV 宴请)
+		      (AS 了)
+		      (NP-OBJ-1 (NP-PN (NR 俄罗斯))
+				(NP (NN 客人)))))) 
+	  </parse>
+	  <arg n="0">
+	  外交 学会 会长 刘述卿 
+	  </arg>
+	  <arg n="1">
+	  俄罗斯 客人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  晚上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

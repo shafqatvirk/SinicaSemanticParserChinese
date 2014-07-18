@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上学 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 保证)
+	      (IP (NP-SBJ (NN 学生们))
+		  (VP (VV 能)
+		      (VP (ADVP (AD 按时))
+			  (VP (VV 上学)))))) 
+	  </parse>
+	  <arg n="0">
+	  学生们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  按时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

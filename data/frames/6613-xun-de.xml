@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 寻得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 searches for and finds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (VP-FOC (VV 说话))
+					  (VP (VA 温柔)))
+				      (PU 、)
+				      (VP (VP-FOC (VV 行事))
+					  (VP (VCD (VA 缜密)
+						   (VA 果断))))))
+			      (DEC 的)))
+		      (NP (PN 她)))
+	      (PU ，)
+	      (VP (ADVP (AD 又))
+		  (VP (VP (PP-DIR (P 从)
+				  (NP-WH (PN 哪里)))
+			  (VP (VV 寻得)
+			      (NP-OBJ (NN 力量))))
+		      (PU ，)
+		      (VP (VV 对付)
+			  (NP-OBJ (LCP (NP (NN 生命))
+				       (LC 中))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-2))
+					      (QP-SBJ (CD 一)
+						      (CLP (M 个)))
+					      (VP (VV 接)
+						  (QP-OBJ (CD 一)
+							  (CLP (M 个)))))
+					  (DEG 的)))
+				  (NP (NN 挑战))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 说话 温柔 、 行事 缜密 果断 的 她 
+	</arg>
+	<arg n="1">
+	力量 
+	</arg>
+	<arg n="m" f="dir">
+	从 哪里 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

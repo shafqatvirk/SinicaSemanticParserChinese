@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不得其门而入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="area arg0 cannot find a door to enter"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP-APP (DP (DT 其他)
+				(QP (CD 上百)
+				    (CLP (M 种))))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 具有)
+					    (NP-OBJ (ADJP (JJ 高))
+						    (ADJP (JJ 附加))
+						    (NP (NN 价值)))))
+				    (DEC 的)))
+			    (ADJP (JJ 特殊))
+			    (NP (NN 纤维)))
+		    (PU ，)
+		    (NP (ADVP (AD 如))
+			(NP (NP (ADJP (ADJP (JJ 高))
+				      (ADJP (JJ 强力)))
+				(ADJP (JJ 防弹))
+				(NP (NN 纤维)))
+			    (PU 、)
+			    (NP (ADJP (JJ 弹性))
+				(NP (NN 纤维)))
+			    (PU 、)
+			    (NP (ADJP (JJ 超合金))
+				(NP (NN 航太)
+				    (NN 纤维)))
+			    (ETC 等等))))
+	    (PU ，)
+	    (NP-SBJ (NN 国内)
+		    (NN 业者))
+	    (VP (ADVP (AD 大多))
+		(VP (VV 不得其门而入)))) 
+	</parse>
+	<arg n="0">
+	国内 业者 
+	</arg>
+	<arg n="1">
+	其他 上百 种 *OP* *T*-2 具有 高 附加 价值 的 特殊 纤维 ， 如 高 强力 防弹 纤维 、 弹性 纤维 、 超合金 航太 纤维 等等 
+	</arg>
+	<arg n="m" f="adv">
+	大多 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 外人))
+	    (VP (VV 不得其门而入))) 
+	</parse>
+	<arg n="0">
+	外人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

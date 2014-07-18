@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 碰过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 runs into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 回顾)
+			(NP-OBJ (NP (PN 我))
+				(DP (DT 这)
+				    (QP (CD 一)))
+				(NP (NN 生)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 几乎))
+		(ADVP (AD 从))
+		(ADVP (AD 未))
+		(PP-LOC (P 在)
+			(LCP (NP (NN 男女)
+				 (NN 相处))
+			     (LC 上)))
+		(VP (VV 碰过)
+		    (NP-OBJ (DP (DT 任何))
+			    (NP (NN 钉子)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	任何 钉子 
+	</arg>
+	<arg n="m" f="loc">
+	在 男女 相处 上 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	从 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 回顾 我 这 一 生 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

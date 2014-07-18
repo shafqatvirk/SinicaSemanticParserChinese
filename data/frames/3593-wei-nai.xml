@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 喂奶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity feed milk to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 让)
+			      (NP-OBJ (NP (DNP (NP (PN 他们))
+					       (DEG 的))
+					  (NP (NN 胃肠)))
+				      (NP (NN 功能)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 保持)
+					  (NP-OBJ (NN 正常))))))))
+	      (PU ，)
+	      (IP-TMP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-TMP (P 从)
+				  (NP (NT 周五)))
+			  (VP (VV 开始))))
+	      (PU ，)
+	      (NP-SBJ (NN 医生))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 开始)
+		      (VP (PP-MNR (P 用)
+				  (NP (QP (CD 一)
+					  (CLP (M 种)))
+				      (CP (WHNP-7 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (NN 新生儿))
+						  (VP (VV 专用)
+						      (NP-OBJ (-NONE- *T*-7))))
+					      (DEC 的)))
+				      (NP (NN 输液泵))))
+			  (PP-BNF (P 为)
+				  (NP (NN 孩子们)))
+			  (VP (PU “)
+			      (VV 喂奶)
+			      (PU ”)
+			      (AS 了)))))) 
+	  </parse>
+	  <arg n="0">
+	  医生 
+	  </arg>
+	  <arg n="1">
+	  为 孩子们 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 一 种 *OP* 新生儿 专用 *T*-7 的 输液泵 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 从 周五 开始 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 *PRO* 让 他们 的 胃肠 功能 *PRO* 保持 正常 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

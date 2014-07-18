@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 辖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 has jurisdiction over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 现))
+		  (VP (VV 辖)
+		      (NP-OBJ (NP (QP (CD 十一))
+				  (NP (NN 区)))
+			      (PU 、)
+			      (NP (QP (CD 十))
+				  (NP (NP (NN 县))
+				      (PRN (PU （)
+					   (NP (NN 市))
+					   (PU ）)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  十一 区 、 十 县 （ 市 ） 
+	  </arg>
+	  <arg n="m" f="adv">
+	  现 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (VV 辖)))
+				(LC 下))
+			   (DEG 的))
+		      (NP-PN-APP (NR 晋江)
+				 (PU 、)
+				 (NR 石狮)
+				 (PU 、)
+				 (NR 南安))
+		      (QP (CD 三))
+		      (NP (NN 市)))
+	      (VP (VV 跻身)
+		  (NP-OBJ (NP (DP (DT 全))
+			      (NP (NN 国)))
+			  (NP (NN 经济))
+			  (QP (CD 百))
+			  (ADJP (JJ 强))
+			  (NP (NN 县))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

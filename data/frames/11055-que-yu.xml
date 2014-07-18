@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 怯於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is afraid of doing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 社会))
+			 (DEG 的))
+		    (NP (NN 成见)))
+	    (PU ，)
+	    (VP (VV 让)
+		(NP-OBJ (QP (CD 许多))
+			(NP (NN 中年人)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 怯於)
+			(VP (VSB (VV 开口)
+				 (VV 说出))
+			    (NP-OBJ (DNP (NP (NN 内心))
+					 (DEG 的))
+				    (NP (NN 疑惑)
+					(CC 与)
+					(NN 挣扎)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	开口 说出 内心 的 疑惑 与 挣扎 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预料 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing predicted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 解决)
+	      (NP-OBJ-3 (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (ADVP (AD 难以))
+					(VP (VV 预料))))
+				(DEC 的)))
+			(NP (NN 问题)))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难以 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

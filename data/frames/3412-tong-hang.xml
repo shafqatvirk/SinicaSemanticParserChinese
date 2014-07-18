@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing which is common practice"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 出口)
+		      (NN 信用)
+		      (NN 保险)
+		      (NN 制度))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CD 一)
+			      (CLP (M 种)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-LOC (NN 国际))
+					  (VP (VV 通行))))
+				  (DEC 的)))
+			  (NP (NN 惯例))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  国际 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="people passing through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 所有))
+			  (NP (NP (NP (ADJP (JJ 维和))
+				      (NP (NN 部队)))
+				  (NP (NN 人员)))
+			      (CC 和)
+			      (NP (NN 人道主义)
+				  (NN 援助)
+				  (NN 人员))))
+		  (VP (ADVP (AD 完全))
+		      (ADVP (AD 自由))
+		      (VP (VV 通行)))) 
+	  </parse>
+	  <arg n="0">
+	  所有 维和 部队 人员 和 人道主义 援助 人员 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自由 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

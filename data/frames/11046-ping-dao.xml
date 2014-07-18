@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 凭悼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 remembers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 如今))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (VP (VV 前来)
+		    (VP (VV 凭悼)
+			(NP-OBJ (ADJP (JJ 伤心))
+				(NP (NN 往事)))))
+		(PU ，)
+		(VP (VV 希望)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 能)
+				(VP (PP-MNR (P 藉)
+					    (NP (PN 此)))
+				    (VP (VV 释放)
+					(NP-OBJ (LCP (NP (NN 胸))
+						     (LC 中))
+						(NN 悲情))))))))) 
+	</parse>
+	<arg n="0">
+	许多 人 
+	</arg>
+	<arg n="1">
+	伤心 往事 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

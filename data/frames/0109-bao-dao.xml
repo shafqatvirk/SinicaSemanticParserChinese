@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 报道 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="reporter"/>
+    <role argnum="1" argrole="thing reported"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 眼下))
+      (PU ，)
+      (NP-SBJ (NP-PN (NR 西班牙))
+              (NP (NN 大众)
+                  (NN 传媒)))
+      (VP (DP-TMP (DT 每)
+                  (CLP (M 天)))
+          (ADVP (AD 都))
+          (ADVP (AD 在))
+          (VP (VP (DVP (VP (VA 连篇累牍))
+                       (DEV 地))
+                  (VP (VV 报道)
+                      (NP-OBJ (NP (NN 欧元))
+                              (CC 及)
+                              (NP (NP (PN 其))
+                                  (ADJP (JJ 相关))
+                                  (NP (NN 情况))))))))))
+	</parse>
+	<arg n="M" f="ADV"> 眼下 </arg>
+	<arg n="0"> 西班牙 大众 传媒 </arg>
+	<arg n="M" f="TMP"> 每 天 </arg>
+	<arg n="M" f="ADV"> 都 </arg>
+	<arg n="M" f="ADV"> 在 </arg>
+	<arg n="M" f="ADV"> 连篇累牍 地 </arg>
+	<V/>
+	<arg n="1"> 欧元 及 其 相关 情况 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 媒介))
+      (VP (VV 报道)
+          (PU ，)
+          (IP-OBJ (NP-LOC (NN 沿海)
+                          (NN 地区))
+                  (NP-TPC (ADVP (AD 仅))
+                          (NP (NP-PN-APP (NR 苏)
+                                         (PU 、)
+                                         (NR 浙)
+                                         (PU 、)
+                                         (NR 沪))
+                              (QP (CD 三))
+                              (NP (NN 地))))
+                  (NP-SBJ (NN 国际)
+                          (NN 集装箱)
+                          (NN 码头))
+                  (VP (ADVP (AD 已))
+                      (VP (VV 达到)
+                          (QP-OBJ (CD 二十多)
+                                  (CLP (M 个)))))))
+      (PU 。)))
+        </parse>
+	<arg n="0"> 媒介 </arg>
+	<V/>
+	<arg n="1"> 沿海 地区 仅 苏 、 浙 、 沪 三 地 国际 集装箱 码头 已 达到 二十多 个 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 爆炸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing exploding"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 资讯))
+				      (VP (VV 爆炸)))
+				  (DEC 的)))
+			  (NP (NN 知识)
+			      (NN 时代))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NN 理财))
+			   (DEG 的))
+		      (NP (NN 难度)))
+	      (VP (ADVP (AD 也))
+		  (PP-MNR (P 随)
+			  (NP (PN 之)))
+		  (VP (VV 提高)))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <arg n="0" f="pse">
+	  资讯 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

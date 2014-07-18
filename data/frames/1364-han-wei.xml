@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 捍卫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="defender"/>
+      <role argnum="1" argrole="thing defended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TMP (DT 这)
+		      (QP (CD 一)
+			  (CLP (M 年))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 南斯拉夫))
+		      (NP (NN 人民)))
+	      (VP (VP (VCD (VV 团结)
+			   (VV 一致)))
+		  (VP (VV 捍卫)
+		      (AS 了)
+		      (NP-OBJ (NP (DNP (NP (NN 国家))
+				       (DEG 的))
+				  (NP (NN 统一)))
+			      (CC 与)
+			      (NP (DNP (NP (NN 人民))
+				       (DEG 的))
+				  (NP (NN 自由)
+				      (CC 和)
+				      (NN 尊严))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  南斯拉夫 人民 
+	  </arg>
+	  <arg n="1">
+	  国家 的 统一 与 人民 的 自由 和 尊严 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 一 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

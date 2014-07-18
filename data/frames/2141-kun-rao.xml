@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 困扰 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause/agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="ext"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (LB 被)
+				      (CP-OBJ (WHNP-3 (-NONE- *OP*))
+					      (IP (NP-SBJ (NN 左脚踝)
+							  (NN 关节)
+							  (NN 伤痛))
+						  (VP (VV 困扰)
+						      (AS 了)
+						      (NP-OBJ (-NONE- *-2))
+						      (NP-EXT (QP (QP (CD 一)
+								      (CLP (M 个)))
+								  (QP (CD 多)))
+							      (NP (NN 月))))))))
+			      (DEC 的)))
+		      (NP-APP (DP (DT 上)
+				  (CLP (M 届)))
+			      (NP (NN 冠军)))
+		      (NP-PN (NR 桑普拉斯)))
+	      (VP (VCD (VV 伤愈)
+		       (VV 出赛)))) 
+	  </parse>
+	  <arg n="0">
+	  左脚踝 关节 伤痛 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*T*-1)->(上届冠军桑普拉斯) 
+	  </arg>
+	  <arg n="2">
+	  一 个 多 月 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="cause/agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这些))
+	      (VP (ADVP (AD 都))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 困扰)
+					      (NP-OBJ (NN 工业)
+						      (NN 经济))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (ADVP (AD 进一步))
+						      (ADVP (AD 健康))
+						      (VP (VV 发展)))))))
+				  (DEC 的))
+			      (NP (NN 制约)
+				  (NN 因素)))))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(制约因素) 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  工业 经济 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 进一步 健康 发展 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

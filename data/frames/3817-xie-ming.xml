@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 写明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing made clear in writing"/>
+      <role argnum="2" argrole="location of the writing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NN 上面))
+	      (VP (VV 没有)
+		  (VP (VV 写明)
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (VC 是)
+			      (NP-PRD (DP (DT 什么))
+				      (NP (NN 东西)))))))) 
+	  </parse>
+	  <arg n="2">
+	  上面 
+	  </arg>
+	  <arg n="1">
+	  *pro* 是 什么 东西 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 量产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing produced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (DP (DT 各)
+			      (CLP (M 家)))
+			  (NP (NN 差异)))
+		  (VP (ADVP (AD 不))
+		      (VP (VA 大))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 可以)
+		      (VP (NP-ADV (ADJP (JJ 大))
+				  (NP (NN 规模)))
+			  (VP (VV 量产)))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  大 规模 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 旅游 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 泰国))
+			  (NP (NN 护照)))
+		      (NP (NN 持有人)))
+	      (VP (ADVP (AD 亦))
+		  (VP (VV 可)
+		      (VP (VP (VV 免)
+			      (NP-OBJ (NN 签证)))
+			  (VP (VV 来)
+			      (NP-PN-OBJ (NR 香港)))
+			  (VP (VV 旅游)
+			      (QP-EXT (CD 三十)
+				      (CLP (M 天)))))))) 
+	  </parse>
+	  <arg n="0">
+	  泰国 护照 持有人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  三十 天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 感恩 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 feels grateful to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-IMP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 让)
+		    (NP-OBJ (PN 我们))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 一起))
+			    (VP (VP (PP-DIR (P 对)
+					    (NP (NN 土地)))
+				    (VP (VV 感恩)))
+				(PU 、)
+				(VP (PP-DIR (P 向)
+					    (NP (NN 人民)))
+				    (VP (VV 致敬)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	对 土地 
+	</arg>
+	<arg n="m" f="adv">
+	一起 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (VV 要)
+		    (VP (VV 学习)
+			(NP-OBJ (DNP (NP-PN (NR 谢)
+					    (NN 医师))
+				     (DEG 的))
+				(NP (NN 精神)))))
+		(PU ，)
+		(VP (VV 要)
+		    (VP (VV 学会)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 感恩))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

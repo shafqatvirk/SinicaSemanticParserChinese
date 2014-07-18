@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DP (DT 本))
+			(NP (NN 赛季)))
+		(VP (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (CS 如果))
+				    (VP (NP-TMP (NT ２月)
+						(NT １日))
+					(VP (VV 开战)))))
+			(PU ，)
+			(ADVP (AD 最多))
+			(VP (VV 可)
+			    (VP (VV 安排)
+				(NP-OBJ (QP (CD ４９)
+					    (CLP (M 场)))
+					(ADJP (JJ 常规))
+					(NP (NN 比赛))))))
+		    (PU ，)
+		    (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (CS 如果))
+				    (VP (NP-TMP (NT ２月)
+						(NT ７日))
+					(VP (VV 揭幕)))))
+			(PU ，)
+			(VP (VV 可)
+			    (VP (VV 安排)
+				(NP-OBJ (QP (CD ４５)
+					    (CLP (M 场)))
+					(NP (NN 赛事)))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ２月 １日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity fought against"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (ADVP (AD 随后))
+		(PU ，)
+		(NP-PN-SBJ (NR 美国))
+		(VP (VV 宣布)
+		    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (ADVP (AD 将))
+				(PP-LOC (P 在)
+					(LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							     (VP (ADVP (AD 不))
+								 (VP (VV 发出)
+								     (NP-OBJ (DP (DT 任何))
+									     (NP (NN 警告))))))
+							 (DEC 的))
+						 (NP (NN 情况)))
+					     (LC 下)))
+				(PP-DIR (P 对)
+					(NP-PN (NR 伊)))
+				(VP (VV 开战)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  对 伊 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *PRO* 不 发出 任何 警告 的 情况 下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

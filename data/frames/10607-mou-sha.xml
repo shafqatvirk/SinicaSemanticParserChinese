@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 谋杀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 murders"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (NN 国内))
+	      (VP (ADVP (AD 竟))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 批评)
+				  (NP-OBJ (PN 他们))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 谋杀)
+					  (AS 了)
+					  (NP-OBJ (NP-PN (NR 台湾))
+						  (NP (NN 电影)
+						      (NN 工业)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台湾 电影 工业 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

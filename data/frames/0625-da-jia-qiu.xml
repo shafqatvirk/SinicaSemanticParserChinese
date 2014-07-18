@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打假球 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD ２))
+	      (PU ．)
+	      (NP-SBJ (NN 足坛))
+	      (VP (VV 发生)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 涉嫌)
+					  (IP-OBJ (NP-SBJ (NN 运动员))
+						  (VP (VV 打假球)))))
+				  (DEC 的))
+			  (NP (NN 丑闻))))) 
+	  </parse>
+	  <arg n="0">
+	  运动员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 听懂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 understands"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 专业)
+				      (NN 知识))
+			      (VP (VRD (VV 介绍)
+				       (VV 给))
+				  (NP-OBJ (DNP (ADJP (JJ 非专业))
+					       (DEG 的))
+					  (NP (NN 人)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 听))))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (VV 要)
+		      (VP (VV 让)
+			  (NP-OBJ (PN 他们))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 听懂)
+				  (NP-OBJ (NN 重点)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  重点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

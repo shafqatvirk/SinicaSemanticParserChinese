@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 偷翻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 ransacks stealthily"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NN 现实)
+				 (NN 生活))
+			     (LC 中)))
+		(IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 只要))
+			    (VP (VV 偷翻)
+				(NP-OBJ (NN 他人)
+					(NN 皮夹)))))
+		(PU ，)
+		(ADVP (AD 就))
+		(VP (VV 可能)
+		    (VP (VV 偷到)
+			(NP-OBJ (NN 信用卡)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	他人 皮夹 
+	</arg>
+	<arg n="m" f="adv">
+	只要 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

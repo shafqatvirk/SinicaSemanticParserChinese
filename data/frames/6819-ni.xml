@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 腻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is tired of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 市场))
+	    (VP (VV 腻)
+		(AS 了)
+		(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VA 柔弱)
+					(PU 、)
+					(VA 漂亮)))
+				(DEC 的)))
+			(NP (NN 玉女))))) 
+	</parse>
+	<arg n="0">
+	市场 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 柔弱 、 漂亮 的 玉女 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (ADVP (AD 可))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 新竹人))
+					(VP (VP (VV 吃)
+						(AS 了)
+						(NP-OBJ (-NONE- *T*-1))
+						(QP-EXT (CD 一百)
+							(CLP (M 年))))
+					    (VP (ADVP (AD 都))
+						(ADVP (AD 不))
+						(VP (VA 腻)))))
+				    (DEC 的)))
+			    (ADJP (JJ 老))
+			    (NP (NN 饼)))))) 
+	</parse>
+	<arg n="0">
+	新竹人 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

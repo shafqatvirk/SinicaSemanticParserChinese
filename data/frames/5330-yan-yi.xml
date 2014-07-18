@@ -1,0 +1,132 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 研议 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 researches and discusses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 双方))
+	    (VP (VP (ADVP (AD 正))
+		    (VP (VV 研议)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VCD (VV 扩张)
+					 (VV 改版))))))
+		(PU ，)
+		(CC 并)
+		(VP (VV 可能)
+		    (VP (VRD (VV 改名)
+			     (VV 为))
+			(NP-PN-OBJ (PU 《)
+				   (NR Taiwan)
+				   (NR News)
+				   (PU 》)))))) 
+	</parse>
+	<arg n="0">
+	双方 
+	</arg>
+	<arg n="1">
+	*PRO* 扩张 改版 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 其实))
+	    (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-TMP (NT 目前))
+				(NP-PN-SBJ (NR 台湾))
+				(VP (MSP 所)
+				    (VP (VV 研议)
+					(NP-OBJ (-NONE- *T*-3)))))
+			    (DEC 的)))
+		    (ADJP (JJ 积极))
+		    (NP (NN 防御)))
+	    (PU ，)
+	    (VP (ADVP (AD 正))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-4))
+					(VP (VV 企求)
+					    (NP-OBJ (NN 和平))))
+				    (DEC 的)))
+			    (NP (NN 做法)))))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="tmp">
+	目前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (NP-TMP (NT 目前))
+				    (ADVP (AD 正))
+				    (PP-LOC (P 在)
+					    (NP-PN (NN 立院)))
+				    (VP (VV 研议))))
+			    (DEC 的)))
+		    (NP (PU 「)
+			(NN 党产)
+			(NN 信托)
+			(PU 」)))
+	    (VP (VV 可能)
+		(VP (VV 使得)
+		    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-OBJ (NN 立委))
+					(VP (PP-LOC (P 在)
+						    (NP (NN 政党)))
+					    (VP (VV 获得)
+						(NP-OBJ (-NONE- *T*-3)))))
+				    (DEC 的)))
+			    (NP (NN 资金)
+				(NN 支持)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 减少)))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="loc">
+	在 立院 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<arg n="m" f="tmp">
+	目前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

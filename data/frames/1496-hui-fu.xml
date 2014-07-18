@@ -1,0 +1,177 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 恢复 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 西非))
+			  (NP (NN 经济)))
+		  (VP (ADVP (AD 明显))
+		      (VP (VV 恢复)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 增长)))))) 
+	  </parse>
+	  <arg n="0">
+	  西非 经济 	  	  	  
+	  </arg>
+	  <arg n="0" f="prd">
+	  *PRO* 增长 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  明显 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 中华)
+			     (NN 人民)
+			     (NN 共和国))
+		  (VP (PP-DIR (P 对)
+			      (NP-PN (NR 香港)))
+		      (VP (VV 恢复)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 行使)
+				      (NP-OBJ (NN 主权))))))) 
+	  </parse>
+	  <arg n="0">
+	  中华 人民 共和国 	  	  	  
+	  </arg>
+	  <arg n="0" f="pred">
+	  *PRO* 行使 主权 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 西非))
+			  (NP (NN 经济)))
+		      (CC 和)
+		      (NP (DNP (NP (NP-PN (NN 货币)
+					  (NN 联盟))
+				   (DP (DT 各))
+				   (NP (NN 国)))
+			       (DEG 的))
+			  (NP (NN 经济)
+			      (NN 增长))))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 明显))
+		  (VP (VV 恢复)))) 
+	  </parse>
+	  <arg n="0">
+	  西非 经济 和 货币 联盟 各 国 的 经济 增长 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  明显 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="restorer"/>
+      <role argnum="1" argrole="thing restored"/>
+      <role argnum="2" argrole="restored state"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 联合国)
+			 (NN 安理会))
+	      (VP (VP (LCP-TMP (NP (NT ７月))
+			       (LC 底))
+		      (VP (VV 作出)
+			  (NP-OBJ (NN 决定))))
+		  (PU ，)
+		  (VP (VV 采取)
+		      (NP-OBJ (PU “)
+			      (DP (DT 一切))
+			      (ADJP (JJ 必要))
+			      (NP (NN 手段))
+			      (PU ”)))
+		  (VP (VV 恢复)
+		      (NP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *T*-1))
+						   (VP (LB 被)
+						       (IP-OBJ (NP-SBJ (NN 军人))
+							       (VP (VV 推翻)
+								   (NP-OBJ (-NONE- *T*-1))))))
+					       (DEC 的)))
+				       (NP-APP (NP-PN (NR 海地))
+					       (NP (NN 总统)))
+				       (NP-PN (NR 阿里斯蒂德)))
+				   (DEG 的))
+			      (NP (NN 权力)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  联合国 安理会 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 被 军人 推翻 *T*-1 的 海地 总统 阿里斯蒂德 的 权力 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 三))
+	      (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-TMP (NT 过去))
+					  (ADVP (AD 过量))
+					  (VP (VV 宰杀)
+					      (NP-OBJ (-NONE- *T*-2)))))
+				  (DEC 的)))
+			  (NP (NN 牲畜)))
+		      (NP (NN 头数)))
+	      (VP (VV 要)
+		  (VP (VRD (VV 恢复)
+			   (VV 到))
+		      (NP-OBJ (DNP (LCP (IP (NP-SBJ (NN 牲畜))
+					    (VP (VV 归)
+						(NP-OBJ (NN 户))))
+					(LC 时))
+				   (DEG 的))
+			      (NP (NN 水平)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *pro* 过去 过量 宰杀 *T*-2 的 牲畜 头数 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  牲畜 归 户 时 的 水平 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

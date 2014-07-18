@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接 </id>
+    <frameset id="f1" edef="take, receive (phone call)">
+      <role argnum="0" argrole="taker"/>
+      <role argnum="1" argrole="call"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 监护)
+		      (NN 人员))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 得)
+			  (VP (VV 离开)
+			      (NP-OBJ (NN 抢救室)))))
+		  (PU ，)
+		  (VP (ADVP (AD 甚至))
+		      (ADVP (AD 不))
+		      (VP (VV 准)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 接)
+				      (NP-OBJ (NN 电话)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  电话 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  甚至 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="linked entities"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 二０一０年))
+		  (PU ，)
+		  (VP (VV 建成)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (PP-MNR (P 以)
+							  (NP-PN (NR 广州)))
+						  (VP (VV 为)
+						      (NP-OBJ (NN 中心))))
+					      (PU ，)
+					      (VP (PP-DIR (P 向)
+							  (NP-PN (NR 粤东)
+								 (PU 、)
+								 (NR 粤西)
+								 (PU 、)
+								 (NR 粤北)))
+						  (VP (VV 辐射)))
+					      (PU ，)
+					      (VP (PP (P 与)
+						      (NP (NP (NN 国家))
+							  (NP (ADJP (JJ 主))
+							      (NP (NN 骨架)))
+							  (NP (NN 公路))))
+						  (ADVP (AD 相))
+						  (VP (VV 接)))
+					      (PU ，)
+					      (VP (VV 沟通)
+						  (NP-OBJ (LCP (NP (NN 省))
+							       (LC 内))
+							  (NP (NP (NN 重点)
+								  (NN 城市))
+							      (PU ，)
+							      (NP (NN 交通)
+								  (NN 枢纽))
+							      (CC 和)
+							      (NP (PP (P 对)
+								      (NP (NN 外)))
+								  (NP (NN 口岸))))))))
+				      (DEC 的)))
+			      (ADJP (JJ 高速))
+			      (NP (NN 公路网)))))) 
+	  </parse>
+	  <arg n="0" f="crd">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 国家 主 骨架 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  相 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

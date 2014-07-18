@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 在于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 lies in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (NN 香港人))
+				  (VP (PP-PRP (-NONE- *T*-1))
+				      (PP-DIR (P 对)
+					      (NP (NT 未来)))
+				      (VP (VV 充满)
+					  (NP-OBJ (NN 信心))))))
+			  (NP (NN 根本)
+			      (NN 原因)))
+		  (VP (VV 在于)
+		      (NP-OBJ (DNP (NP (NP-PN (NR 香港))
+				       (NP (NN 基本法)))
+				   (DEG 的))
+			      (ADJP (JJ 牢固))
+			      (NP (NN 承诺))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 香港人 *T*-1 对 未来 充满 信心 根本 原因 
+	  </arg>
+	  <arg n="1">
+	  香港 基本法 的 牢固 承诺 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NP-PN (NR 四川))
+			      (NP (NT 今年))
+			      (PP (P 对)
+				  (NP (NN 外)))
+			      (NP (NN 开放)))
+		      (VP (ADVP (AD 之所以))
+			  (VP (VV 能)
+			      (VP (VV 迈出)
+				  (NP-OBJ (ADJP (JJ 新))
+					  (NP (NN 步伐)))))))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 主要))
+		      (NP (NN 经验)))
+	      (VP (VV 在于)
+		  (IP-OBJ (NP-SBJ (NN 省)
+				  (NN 政府))
+			  (VP (VP (VV 鼓励)
+				  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 扩大)
+					      (NP-OBJ (NN 外贸)
+						      (NN 出口)))))
+			      (PU ，)
+			      (CC 并)
+			      (VP (PP (P 对)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 引进)
+					      (NP-OBJ (NN 外资)))))
+				  (VP (VV 采取)
+				      (AS 了)
+				      (NP-OBJ (QP (CD 一)
+						  (CLP (M 系列)))
+					      (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VA 优惠)))
+						      (DEC 的)))
+					      (NP (NN 扶持)
+						  (NN 政策))))))))) 
+	  </parse>
+	  <arg n="0">
+	  主要 经验 
+	  </arg>
+	  <arg n="1">
+	  省 政府 鼓励 *pro* 扩大 外贸 出口 ， 并 对 *PRO* 引进 外资 采取 了 一 系列 *OP* *T*-1 优惠 的 扶持 政策 
+	  </arg>
+	  <arg n="m" f="adv">
+	  四川 今年 对 外 开放 之所以 能 迈出 新 步伐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

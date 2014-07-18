@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 进军 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 marches into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 若))
+			(PP (P 和)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (PP-TMP (ADVP (AD 迟))
+							(PP (P 至)
+							    (NP (NP (NT 一九六○)
+								    (NN 年代))
+								(NP (NN 後期)))))
+						(ADVP (AD 才))
+						(VP (VV 开始)
+						    (VP (VV 进军)
+							(NP-OBJ (NN 国际)
+								(NN 市场))))))
+					(DEC 的)))
+				(NP-PN (NR 南韩))))
+			(ADVP (AD 相))
+			(VP (VV 对照))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 令)
+		(NP-OBJ (NN 人))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 不得不))
+			(VP (VV 佩服)
+			    (NP-OBJ (DNP (NP-PN (NR 台湾))
+					 (DEG 的))
+				    (NP (NN 前瞻)
+					(NN 眼光)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	国际 市场 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="tmp">
+	迟 至 一九六○ 年代 後期 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

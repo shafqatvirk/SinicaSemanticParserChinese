@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 扮演 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="actor, participant"/>
+    <role argnum="1" argrole="role"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-LOC (P 在)
+              (NP (NP-APP (NN 冶金)
+                          (NN 加工)
+                          (PU 、)
+                          (NN 电子)
+                          (NN 信息)
+                          (PU 、)
+                          (NN 生物)
+                          (NN 工程)
+                          (PU 、)
+                          (NN 食品)
+                          (ETC 等))
+                  (NP (NN 领域))))
+      (PU ，)
+      (NP-SBJ (QP (CD 一)
+                  (CLP (M 批)))
+              (NP (NN 外资)
+                  (NN 企业)))
+      (VP (VV 扮演)
+          (AS 着)
+          (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-1))
+                              (VP (VA 重要)))
+                          (DEC 的)))
+                  (NP (NN 角色))))))
+	</parse>
+	<arg n="M" f="LOC"> 在 冶金 加工 、 电子 信息 、 生物 工程 、 食品 等 领域 </arg>
+	<arg n="0"> 一 批 外资 企业 </arg>
+	<V/>
+	<arg n="1"> *OP* (*T*-1)->(角色) 重要 的 角色 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

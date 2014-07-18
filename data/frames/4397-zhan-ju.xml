@@ -1,0 +1,132 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 占据 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 constitutes"/>
+      <role argnum="2" argrole="entity among which arg0 constitutes arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (ADVP (AD 高速))
+					       (VP (VV 发展))))
+				       (DEC 的)))
+			       (NP-PN (NR 中国))
+			       (NP (NN 电子)
+				   (NN 电气)
+				   (NN 市场)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 西门子))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 占据)
+		      (NP-OBJ (DNP (QP (CD 百分之六十五))
+				   (DEG 的))
+			      (NP (NN 份额)))))) 
+	  </parse>
+	  <arg n="0">
+	  西门子 	  
+	  </arg>
+	  <arg n="1">
+	  百分之六十五 的 份额 	  
+	  </arg>
+	  <arg n="2">
+	  在 *OP* *T*-1 高速 发展 的 中国 电子 电气 市场 中 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 据)
+		      (NP (NN 了解)))
+	      (PU ，)
+	      (PP-LOC (P 在)
+		      (LCP (NP (DP (DT 这)
+				   (QP (CD 三十万)
+				       (CLP (M 家))))
+			       (NP (NN 外商)
+				   (NN 投资)
+				   (NN 企业)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (DNP (LCP (NP (NP (PN 其))
+				    (NP (NN 产权)))
+				(LC 中))
+			   (DEG 的))
+		      (UCP (ADJP (JJ 国有))
+			   (CC 和)
+			   (NP (NN 集体)))
+		      (NP (NN 成分)))
+	      (VP (VV 占据)
+		  (AS 了)
+		  (QP-OBJ (CD 百分之五十七)))) 
+	  </parse>
+	  <arg n="0">
+	  其 产权 中 的 国有 和 集体 成分 	  
+	  </arg>
+	  <arg n="1">
+	  百分之五十七 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这 三十万 家 外商 投资 企业 中 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  据 了解 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="position/place taken/occupied"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 外贸)
+		      (NN 出口))
+	      (VP (ADVP (AD 连续))
+		  (VP (VV 占据)
+		      (QP-OBJ (NP (NP-PN (NR 中国))
+				  (NP (NN 城市)))
+			      (QP (OD 第四)
+				  (CLP (M 位))))))) 
+	  </parse>
+	  <arg n="0">
+	  外贸 出口 	  
+	  </arg>
+	  <arg n="1">
+	  中国 城市 第四 位 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  连续 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

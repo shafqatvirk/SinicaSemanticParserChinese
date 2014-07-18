@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 呈报 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="reporter"/>
+    <role argnum="1" argrole="thing arg0 reports"/>
+    <role argnum="2" argrole="entity arg1 is reported to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 目前))
+	    (NP-SBJ (NN 厂商))
+	    (VP (VP (ADVP (AD 不管))
+		    (VP (VV 要)
+			(VP (PP (P 向)
+				(NP (NN 政府)))
+			    (VP (VV 申请)
+				(NP-OBJ (DP (DT 任何))
+					(NP (NN 行政)
+					    (NN 辅导)
+					    (CC 或)
+					    (NN 认证))
+					(PU ，)
+					(PRN (VP (VV 包括)
+						 (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							 (VP (VP (VV 申请)
+								 (NP-OBJ (NN 上市)
+									 (PU 、)
+									 (NN 上柜)
+									 (PU 、)
+									 (NN 外劳)))
+							     (PU 、)
+							     (VP (VV 申请)
+								 (NP-OBJ (NP (ADJP (JJ 中)
+										   (JJ 小))
+									     (NP (NN 企业)))
+									 (NP (NN 研发案)))
+								 (PU 、))
+							     (VP (VV 申请)
+								 (NP-OBJ (ADJP (JJ 中卫))
+									 (NP (NN 体系))
+									 (NP (NN 辅导))))
+							     (PU …)
+							     (PU …)
+							     (ETC 等))))))))))
+		(PU ，)
+		(VP (ADVP (AD 都))
+		    (VP (VV 要)
+			(VP (ADVP (AD 先))
+			    (VP (VV 呈报)
+				(NP-OBJ (NT Ｙ２Ｋ)
+					(NN 进度))
+				(PU ，)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 作为)
+					(NP-OBJ (NN 审核)
+						(NN 条件)
+						(NN 之一)))))))))) 
+	</parse>
+	<arg n="0">
+	厂商 
+	</arg>
+	<arg n="1">
+	Ｙ２Ｋ 进度 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tmp">
+	目前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

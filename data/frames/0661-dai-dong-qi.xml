@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带动起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 古老)))
+			      (DEC 的)))
+		      (NP-PN (NP-PN (NR 京杭))
+			     (ADJP (JJ 大))
+			     (NP (NN 运河))))
+	      (VP (NP-TMP (NT 如今))
+		  (VP (CC 不仅)
+		      (VP (PP-LOC (P 在)
+				  (NP (IP-APP (NP-SBJ (-NONE- *pro*))
+					      (VP (VV 贯通)
+						  (NP-OBJ (NN 南北)
+							  (NN 运输))))
+				      (NP (NN 方面))))
+			  (VP (VV 发挥)
+			      (NP-OBJ (ADJP (JJ 重要))
+				      (NP (NN 作用)))))
+		      (PU ，)
+		      (CC 而且)
+		      (VP (VV 带动起)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 条)))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VV 欣欣向荣)))
+					  (DEC 的)))
+				  (NP (NN 工业)
+				      (NN 走廊))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 古老 的 京杭 大 运河 
+	  </arg>
+	  <arg n="1">
+	  一 条 *OP* *T*-2 欣欣向荣 的 工业 走廊 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 面对 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity faced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 面对)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 持续)
+						    (QP-EXT (QP (CD 一)
+								(CLP (M 年)))
+							    (ADVP (AD 多)))))
+					    (DEC 的)))
+				    (NP-PN (NR 亚洲))
+				    (NP (NN 金融)
+					(NN 危机)))))
+		(PU ，)
+		(NP-PN-SBJ (NR 中国))
+		(VP (VRD (VV 表现)
+			 (VV 出))
+		    (AS 了)
+		    (NP-OBJ (PU “)
+			    (NP (ADJP (JJ 大))
+				(NP (NN 国)))
+			    (NP (NN 风范))
+			    (PU ”)))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 持续 一 年 多 的 亚洲 金融 危机 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

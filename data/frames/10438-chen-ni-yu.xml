@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 沈溺於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is addicted to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-ADV (NP-SBJ (NN 国片))
+			(VP (ADVP (CS 虽))
+			    (PP-LOC (P 在)
+				    (NP (NN 国外)
+					(NN 影展)))
+			    (VP (VV 得)
+				(NP-OBJ (NN 奖)))))
+		(PU ，)
+		(ADVP (AD 但))
+		(NP-SBJ (QP (CD 部分))
+			(NP (NN 导演)))
+		(VP (VP (VV 沈溺於)
+			(NP-OBJ (NN 个人)
+				(NN 美学)))
+		    (PU ，)
+		    (VP (VV 吓跑)
+			(AS 了)
+			(NP-OBJ (NN 观众))))) 
+	</parse>
+	<arg n="0">
+	部分 导演 
+	</arg>
+	<arg n="1">
+	个人 美学 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	国片 虽 在 国外 影展 得 奖 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

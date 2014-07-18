@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 合而为一 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entities arg0 causes to combine into one"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NT 五四)
+			(NN 学生)
+			(NN 运动))
+		    (CC 与)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 寻找)
+					(NP-OBJ (NN 国家)
+						(NN 出路))))
+				(DEC 的)))
+			(NP (ADJP (JJ 新))
+			    (NP (NN 文化)))
+			(NP (NN 运动))))
+	    (VP (VP (VV 合而为一))
+		(PU ，)
+		(VP (VV 成为)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-TMP (NT 今天))
+					(NP-SBJ (NN 海内外)
+						(NN 华人))
+					(VP (VPT (VV 谈论)
+						 (AD 不)
+						 (VV 完))
+					    (NP-OBJ (-NONE- *T*-2))))
+				    (DEC 的)))
+			    (NP (NT 五四)))))) 
+	</parse>
+	<arg n="1">
+	五四 学生 运动 与 *OP* *T*-1 寻找 国家 出路 的 新 文化 运动 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 高出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing compared"/>
+      <role argnum="1" argrole="difference"/>
+      <role argnum="2" argrole="thing compared to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NP (NP-PN (NN 国家)
+						     (NN 计委))
+					      (PU 、)
+					      (NP-PN (NN 统计局))
+					      (CC 和)
+					      (NP-PN (NR 中国)
+						     (NN 社会)
+						     (NN 科学院)))
+					  (ADJP (JJ 有关))
+					  (NP (NN 专家)))
+				  (VP (VV 预测)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 增长率)))
+	      (PU ，)
+	      (VP (ADVP (AD 大都))
+		  (PP (P 比)
+		      (NP (NN 政府)
+			  (NN 计划)))
+		  (VP (VV 高出)
+		      (NP-OBJ (QP (QP (CD 一)
+				      (CLP (-NONE- *RNR*-2)))
+				  (CC 至)
+				  (QP (CD 两)
+				      (CLP-2 (M 个))))
+			      (NP (NN 百分点)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 国家 计委 、 统计局 和 中国 社会 科学院 有关 专家 预测 *T*-1 的 增长率 	  
+	  </arg>
+	  <arg n="1">
+	  一 *RNR*-2 至 两 个 百分点 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  大都 	  
+	  </arg>
+	  <arg n="2">
+	  比 政府 计划 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

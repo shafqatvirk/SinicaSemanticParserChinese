@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 振兴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity made to prosper"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 浦东))
+		      (NP (NN 开发)
+			  (NN 开放)))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CD 一)
+			      (CLP (M 项)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (VV 振兴)
+					      (NP-PN-OBJ (NR 上海)))
+					  (PU ，)
+					  (VP (VV 建设)
+					      (NP-OBJ (NP (NN 现代化))
+						      (NP (NN 经济)
+							  (PU 、)
+							  (NN 贸易)
+							  (PU 、)
+							  (NN 金融))
+						      (NP (NN 中心))))))
+				  (DEC 的)))
+			  (ADJP (JJ 跨世纪))
+			  (NP (NN 工程))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  上海 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 旨))
+				  (VP (VV 在)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 振兴)
+						  (NP-OBJ (NP-PN (NR 中华))
+							  (NP (NN 文化)))
+						  (PP-LOC (P 于)
+							  (NP (NN 国际)))))))
+			      (DEC 的)))
+		      (NP (NP-PN (NR 中国)
+				 (NN 武道)
+				 (NN 太学))
+			  (CC 和)
+			  (NP-PN (NR 中国)
+				 (NN 书道)
+				 (NN 太学))))
+	      (VP (NP-TMP (NT 今天))
+		  (PP-LOC (P 在)
+			  (NP-PN (NR 北京)))
+		  (VP (VV 成立)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  中华 文化 
+	  </arg>
+	  <arg n="m" f="loc">
+	  于 国际 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 探索)
+	      (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 中国))
+				  (VP (VCD (VV 振兴)
+					   (VV 富强))))
+			      (DEC 之))
+		      (NP (NN 路)))) 
+	  </parse>
+	  <arg n="1">
+	  中国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

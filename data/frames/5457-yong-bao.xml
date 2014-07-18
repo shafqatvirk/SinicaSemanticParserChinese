@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拥抱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 embraces"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VCD (VV 背山)
+					 (VV 面海))))
+			    (DEC 的)))
+		    (NP-PN (NR 八里)))
+	    (PU ，)
+	    (VP (PP-MNR (P 随著)
+			(NP (DNP (NP (NN 交通))
+				 (DEG 的))
+			    (NP (NN 发达))))
+		(PU ，)
+		(VP (VV 开始)
+		    (AS 了)
+		    (NP-OBJ (NP (PN 它))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 拥抱)
+					    (NP-OBJ (NN 观光)
+						    (NN 产业))))
+				    (DEC 的))
+			    (NP (NN 梦想)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	观光 产业 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (ADVP (AD 紧紧))
+		(VP (VV 拥抱)
+		    (AS 了)
+		    (NP-OBJ (NN 一阵))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="m" f="ext">
+	一阵 
+	</arg>
+	<arg n="m" f="adv">
+	紧紧 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

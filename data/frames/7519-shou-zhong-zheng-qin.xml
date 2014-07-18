@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 寿终正寝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 鼎鼎大名)))
+			    (DEC 的)))
+		    (NP-PN (NR 阿里山))
+		    (NP (NN 神木)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 少)
+			    (AS 了)
+			    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VV 归属)))
+					    (DEC 的)))
+				    (NP (NN 同伴)))))
+		(PU ，)
+		(ADVP (AD 也))
+		(PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 遭)
+				     (NP-OBJ (NN 雷击)
+					     (PU 、)
+					     (NN 火灾))))
+			     (LC 後)))
+		(VP (VV 寿终正寝)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 鼎鼎大名 的 阿里山 神木 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 遭 雷击 、 火灾 後 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 少 了 *OP* *T*-2 归属 的 同伴 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

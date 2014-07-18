@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 紧张 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (PN 那里))
+			   (DEG 的))
+		      (NP (NN 形势)))
+	      (VP (ADVP (AD 日趋))
+		  (VP (VA 紧张)))) 
+	  </parse>
+	  <arg n="0">
+	  那里 的 形势 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  日趋 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is nervous about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 于是))
+	      (NP-SBJ (PN 我))
+	      (VP (VP (VRD (VA 紧张)
+			   (VV 起来))
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="0">
+	  我 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  于是 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 佳欣)
+			     (NR 佳慧))
+		  (VP (PP-DIR (P 对)
+			      (NP (ADVP (AD 之後))
+				  (NP (DNP (NP (NP-PN (NR 美国))
+					       (NP (NN 研究所)))
+					   (DEG 的))
+				      (DP (DT 任何))
+				      (NP (NN 讨论)
+					  (NN 辩论)))))
+		      (ADVP (AD 都))
+		      (ADVP (AD 不))
+		      (ADVP (AD 再))
+		      (VP (VA 紧张)))) 
+	  </parse>
+	  <arg n="0">
+	  佳欣 佳慧 
+	  </arg>
+	  <arg n="1">
+	  对 之後 美国 研究所 的 任何 讨论 辩论 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

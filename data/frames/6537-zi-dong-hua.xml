@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自动化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 automatizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (QP (CD 一))
+		    (NP (NN 方面)))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 拜)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (NN 生产))
+					    (VP (VV 自动化)))
+					(DEC 之))
+				(NP (NN 赐)))))
+	    (PU ，)
+	    (NP-SBJ (NN 员工))
+	    (VP (VV 必须)
+		(VP (VV 学习)
+		    (NP-OBJ (NP (ADJP (JJ 精密))
+				(NP (NN 机械)))
+			    (CC 与)
+			    (NP (NN 电脑)
+				(NN 操控)))))) 
+	</parse>
+	<arg n="1">
+	生产 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

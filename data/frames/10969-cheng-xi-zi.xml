@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 承袭自 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 is inherited from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 西汉))
+		    (NP (NN 儒学)))
+	    (VP (VP (VV 结合)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 承袭自)
+					    (NP-OBJ (NP (NP-PN (NR 战国))
+							(NP (NN 晚年)))
+						    (NP (NN 阴阳家)))))
+				    (DEC 的)))
+			    (DNP (NP (NN 谶纬))
+				 (DEG 之))
+			    (NP (NN 学))))
+		(PU ，)
+		(VP (VV 主张)
+		    (IP-OBJ (NP-SBJ (NN 天)
+				    (NN 人))
+			    (VP (VV 相应))))
+		(PU ，)
+		(VP (VV 认为)
+		    (IP-OBJ (IP (NP-SBJ (NN 政治)
+					(NN 教化))
+				(VP (ADVP (AD 亦))
+				    (VP (VV 需)
+					(VP (ADVP (AD 随时))
+					    (VP (VV 变革))))))
+			    (PU ，)
+			    (IP (NP-SBJ (NN 人世))
+				(VP (VE 没有)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-TPC (-NONE- *T*-1))
+							(NP-SBJ (QP (CD 万))
+								(NP (NN 世)))
+							(VP (VV 一统)))
+						    (DEC 的)))
+					    (NP (NN 王朝))))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	战国 晚年 阴阳家 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

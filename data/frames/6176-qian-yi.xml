@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迁移 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 moves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (PU 「)
+		       (NR 南岛)
+		       (NN 语族)
+		       (PU 」))
+	    (VP (VP (VV 来自)
+		    (NP-OBJ (NP-PN (NR 中国)
+				   (NN 大陆))
+			    (NP (NN 西南方))))
+		(PU ，)
+		(VP (VV 渡)
+		    (NP-OBJ (NN 海)))
+		(VP (PP-DIR (P 往)
+			    (NP (NN 南)))
+		    (VP (VV 迁移))))) 
+	</parse>
+	<arg n="0">
+	「 南岛 语族 」 
+	</arg>
+	<arg n="m" f="dir">
+	往 南 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

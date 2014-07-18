@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 封死 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 浓荫))
+	      (VP (ADVP (AD 几乎))
+		  (ADVP (AD 完全))
+		  (VP (VV 封死)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 马路))
+				   (DEG 的))
+			      (NP (NN 上空)))))) 
+	  </parse>
+	  <arg n="0">
+	  浓荫 
+	  </arg>
+	  <arg n="1">
+	  马路 的 上空 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 不知不觉 间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  几乎 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

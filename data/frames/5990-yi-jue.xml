@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 议决 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 discusses and decides on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 复决)
+				(NP-OBJ (NP-PN (NN 立法院))
+					(NP (NN 修宪案)))))
+			(PU 、)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 弹劾)
+				(NP-OBJ (NN 正副总统))))
+			(CC 及)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 议决)
+				(NP-OBJ (NP (NN 领土)
+					    (NN 变更))
+					(NP (NN 案)))))
+			(ETC 等))
+		(QP (CD 三))
+		(NP (NN 权))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	领土 变更 案 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC-5 (QP (CD 三)
+			  (CLP (M 种)))
+		      (NP (NN 议案)))
+	    (LCP-TMP (IP (NP-SBJ-4 (-NONE- *PRO*))
+			 (VP (PP-LGS (P 经)
+				     (NP-PN (NN 立法院)))
+			     (VP (VV 议决)
+				 (NP-OBJ (-NONE- *-4)))))
+		     (LC 後))
+	    (PU ，)
+	    (IP-CND (NP-SBJ-1 (-NONE- *PRO*))
+		    (VP (ADVP (CS 如果))
+			(VP (VP (ADVP (AD 未))
+				(PP-LGS (P 经)
+					(NP-PN (NN 行政院)))
+				(VP (VV 移请)
+				    (NP-OBJ (-NONE- *pro*))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 覆议)
+					    (NP-OBJ (-NONE- *-1))))))
+			    (CC 或)
+			    (VP (VP (VV 覆议))
+				(VP (MSP 而)
+				    (VP (ADVP (AD 未))
+					(VP (VA 成功))))))))
+	    (PU ，)
+	    (LCP-TMP (IP (NP-SBJ-2 (-NONE- *PRO*))
+			 (VP (VP (PP-LGS (P 经)
+					 (NP (NN 总统)))
+				 (VP (VV 公布)
+				     (NP-OBJ (-NONE- *-2))))
+			     (VP (VV 施行))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (NN 国家)
+		    (NN 机关))
+	    (VP (ADVP (AD 即))
+		(VP (VV 应)
+		    (VP (VV 遵守)
+			(NP-OBJ (-NONE- *T*-5)))))) 
+	</parse>
+	<arg n="0">
+	经 立法院 
+	</arg>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

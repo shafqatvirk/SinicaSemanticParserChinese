@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 凑近 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="thing close to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU “)
+	      (NP-SBJ (PN 我))
+	      (VP (VV 得)
+		  (VP (PP (P 象)
+			  (NP-PN (NR 霍利菲尔德)))
+		      (ADVP (AD 那样))
+		      (VP (VP (VV 凑近)
+			      (NP-OBJ (PN 他)))
+			  (PU ，)
+			  (VP (VV 缠住)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (CC 或)
+			  (VP (VV 抱住)
+			      (NP-OBJ-1 (PN 他))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  他 
+	  </arg>
+	  <arg n="m" f="adv">
+	  象 霍利菲尔德 
+	  </arg>
+	  <arg n="m" f="adv">
+	  那样 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

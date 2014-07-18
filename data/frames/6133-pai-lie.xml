@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 排列 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 lines up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+			     (CP (IP (NP-SBJ (-NONE- *T*-1))
+				     (VP (VA 黝黑)))
+				 (DEC 的)))
+			 (NP (NN 空间)))
+		     (LC 里))
+	    (PU ，)
+	    (LCP-LOC (NP (QP (CD 两)
+			     (CLP (M 个)))
+			 (CP (WHNP-2 (-NONE- *OP*))
+			     (CP (IP (NP-SBJ (-NONE- *T*-2))
+				     (VP (VV 发)
+					 (AS 著)
+					 (NP-OBJ (ADJP (JJ 红))
+						 (NP (NN 光)))))
+				 (DEC 的)))
+			 (NP (NN 祭祀)
+			     (NN 坑)))
+		     (LC 内))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 一)
+			(CLP (M 个个)))
+		    (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (VV 戴)
+				    (AS 著)
+				    (NP-OBJ (NN 面具))))
+			    (DEC 的)))
+		    (NP (NN 青铜)
+			(NN 头像)))
+	    (VP (VV 排列)
+		(NP-OBJ (NN 其中)))) 
+	</parse>
+	<arg n="1">
+	一 个个 *OP* *T*-3 戴 著 面具 的 青铜 头像 
+	</arg>
+	<arg n="m" f="loc">
+	其中 
+	</arg>
+	<arg n="m" f="loc">
+	两 个 *OP* *T*-2 发 著 红 光 的 祭祀 坑 内 
+	</arg>
+	<arg n="m" f="loc">
+	*OP* *T*-1 黝黑 的 空间 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 lines up"/>
+    <role argnum="2" argrole="entity arg1 is lined up to form"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 最後))
+	    (NP-SBJ (PN 他))
+	    (VP (VP (VV 用)
+		    (NP-OBJ (NP (PU 「)
+				(NN 色)
+				(NN 立体)
+				(PU 」))
+			    (NP (NN 理论))))
+		(PU ，)
+		(VP (DVP (VP (VCD (VA 均匀)
+				  (VA 细密)))
+			 (DEV 地))
+		    (VP (VRD (VV 排列)
+			     (VV 出))
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 涵盖)
+						(NP-OBJ (QP (CD 二万))
+							(NP (NN 色)))))
+					(DEC 的)))
+				(NP (NN 色典))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="2">
+	*OP* *T*-1 涵盖 二万 色 的 色典 
+	</arg>
+	<arg n="m" f="adv">
+	均匀 细密 地 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

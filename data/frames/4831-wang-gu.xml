@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 罔顾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 neglects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DP (DT 那些))
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VP (VV 偷运)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 声称)
+							      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								      (VP (PP-MNR (P 根据)
+										  (NP (DNP (QP (NP-TTL (PU 《)
+												       (NP-PN (NN 基本法))
+												       (PU 》))
+											       (QP (OD 第二十四)
+												   (CLP (M 条)))
+											       (QP (OD 第二)
+												   (CLP (M 段)))
+											       (QP (OD 第三)
+												   (CLP (M 项))))
+											   (DEG 的))
+										      (NP (NN 规定))))
+									  (VP (VE 有)
+									      (NP-OBJ (NN 居留权)))))))
+						      (DEC 的)))
+					      (NP (NN 儿童)))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 入境))))
+				  (CC 而)
+				  (VP (ADVP (AD 又))
+				      (VP (VV 罔顾)
+					  (NP-OBJ (NP (PN 其))
+						  (NP (NN 安全)))))))
+			  (DEC 的)))
+		  (NP (NN 蛇头))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  其 安全 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

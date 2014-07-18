@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跟著 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 follows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (DP (DT 这些))
+		(CP (WHNP-9 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-9))
+			    (VP (VP (VV 跟著)
+				    (NP-PN-OBJ (NR 夏阳)))
+				(VP (VV 走)
+				    (NP-OBJ (NN 天涯)))))
+			(DEC 的)))
+		(NP (NN 毛毛人))) 
+	</parse>
+	<arg n="0">
+	*T*-9 
+	</arg>
+	<arg n="1">
+	夏阳 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 使得)
+		(NP-OBJ (NN 海水)
+			(NN 温度))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 跟著)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 提升))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (NN 上游)
+			    (NN 原料))
+		    (VP (ADVP (CS 若))
+			(VP (VPT (VV 出)
+				 (AD 不)
+				 (VV 来)))))
+	    (PU ，)
+	    (NP-SBJ (NP (NN 中下游))
+		    (DP (DT 所有))
+		    (NP (NN 厂商)))
+	    (VP (ADVP (AD 都))
+		(VP (VV 得)
+		    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 跟著)))
+			(VP (VV 停产)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

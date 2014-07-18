@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 投身 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 joins"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可是))
+	    (NP-SBJ (DNP (LCP (NP (NN 企业))
+			      (LC 内))
+			 (DEG 的))
+		    (NP (NN 资讯)
+			(NN 人员)))
+	    (VP (VP (ADVP (AD 却))
+		    (ADVP (AD 毫))
+		    (VP (VE 无)
+			(NP-OBJ (NN 选择))))
+		(PU ，)
+		(VP (VV 必须)
+		    (VP (VV 投身)
+			(NP-OBJ (NN 其中)))))) 
+	</parse>
+	<arg n="0">
+	企业 内 的 资讯 人员 
+	</arg>
+	<arg n="1">
+	其中 
+	</arg>
+	<arg n="m" f="dis">
+	可是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

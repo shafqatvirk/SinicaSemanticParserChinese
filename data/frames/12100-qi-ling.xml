@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 欺凌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 bullies"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 曾经))
+		  (ADVP (AD 先后))
+		  (VP (VV 受到)
+		      (NP-OBJ (NP (DNP (NP (NN 强权))
+				       (DEG 的))
+				  (NP (NN 欺凌)))
+			      (CC 和)
+			      (NP (DNP (NP (NN 殖民)
+					   (NN 政权))
+				       (DEG 的))
+				  (NP (NN 统治))))))) 
+	  </parse>
+	  <arg n="0">
+	  强权 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

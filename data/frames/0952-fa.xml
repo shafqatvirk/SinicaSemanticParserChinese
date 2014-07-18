@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 二))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 许)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VP (ADVP (AD 乱))
+					  (VP (VV 砍)))
+				      (VP (ADVP (AD 滥))
+					  (VP (VV 伐))))
+				  (PU ，)
+				  (VP (VV 造成)
+				      (NP-OBJ (NN 水土))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 流失))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  滥 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 品尝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 tastes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *pro*))
+		(VP (VV 品尝)
+		    (NP-OBJ (NN 生活)
+			    (CC 与)
+			    (NN 人性)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	生活 与 人性 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-PN-SBJ (NR 林文月))
+	    (VP (NP-TMP (DP (DT 每)
+			    (CLP (M 年)))
+			(NP (NT 腊月)
+			    (NT 岁末)))
+		(ADVP (AD 仍))
+		(VP (VV 要)
+		    (VP (VP (ADVP (AD 亲手))
+			    (VP (VV 制作)
+				(NP-OBJ (QP (CD 多)
+					    (CLP (M 个)))
+					(NP (NN 萝卜糕)))))
+			(PU ，)
+			(VP (VV 让)
+			    (NP-OBJ (NN 家人)
+				    (CC 和)
+				    (NN 亲友))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 都))
+				    (VP (VV 能)
+					(VP (VRD (VV 品尝)
+						 (VV 到))
+					    (NP-OBJ (DP (DT 这))
+						    (NP (PU 「)
+							(DNP (NP (NN 妈妈))
+							     (DEG 的))
+							(NP (NN 味道))
+							(PU 」)))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	这 「 妈妈 的 味道 」 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

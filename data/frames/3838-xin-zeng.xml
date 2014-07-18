@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 新增 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity added"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 市内)
+		      (NN 电话)
+		      (NN 用户))
+	      (VP (VV 新增)
+		  (QP-OBJ (CD 五十五万)
+			  (CLP (M 户))))) 
+	  </parse>
+	  <arg n="0">
+	  市内 电话 用户 	  
+	  </arg>
+	  <arg n="1">
+	  五十五万 户 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 因特网))
+	      (VP (VV 新增)
+		  (NP-OBJ (NN 用户))
+		  (QP-EXT (CD 二点六万)
+			  (CLP (M 户))))) 
+	  </parse>
+	  <arg n="0">
+	  因特网 
+	  </arg>
+	  <arg n="1">
+	  用户 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  二点六万 户 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (VV 新增)))
+				   (DEC 的)))
+			   (NP (NN 储蓄)
+			       (NN 存款)))
+		       (LC 中))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

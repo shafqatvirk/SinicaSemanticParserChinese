@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 探明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discovered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 到)
+			  (LCP (NP (NT 一九九七年))
+			       (LC 底)))
+		  (ADVP (AD 累计))
+		  (VP (VV 探明)
+		      (NP-OBJ (NN 储量))
+		      (QP-EXT (CD 五千一百亿)
+			      (CLP (M 立方米)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  储量 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  五千一百亿 立方米 
+	  </arg>
+	  <arg n="m" f="adv">
+	  累计 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 一九九七年 底 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 目前))
+		  (PU ，)
+		  (VP (ADVP (AD 已))
+		      (VP (VV 探明)
+			  (IP-OBJ (NP-TPC (QP (CD 二十二)
+					      (CLP (M 个)))
+					  (NP (NN 油气田)))
+				  (IP (IP (NP-SBJ (NN 石油)
+						  (NN 储量))
+					  (VP (QP-PRD (CD 两亿多)
+						      (CLP (M 吨)))))
+				      (PU ，)
+				      (IP (NP-SBJ (NN 天然气)
+						  (NN 储量))
+					  (VP (VV 突破)
+					      (QP-OBJ (CD 一千五百亿)
+						      (CLP (M 立方米))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  二十二 个 油气田 石油 储量 两亿多 吨 ， 天然气 储量 突破 一千五百亿 立方米 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

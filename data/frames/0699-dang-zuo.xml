@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 当做 </id>
+    <frameset id="f1" edef="consider">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing considered"/>
+      <role argnum="2" argrole="considered as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 公众))
+	      (VP (ADVP (AD 依然))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-PN-SBJ (NR 泰森))
+			      (VP (VV 当做)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (LCP-LOC (NP (NN 拳坛))
+								   (LC 上))
+							  (ADVP (AD 最))
+							  (VP (VA 狠))))
+						  (DEC 的)))
+					  (NP (NN 家伙)))))))) 
+	  </parse>
+	  <arg n="0">
+	  公众 
+	  </arg>
+	  <arg n="1">
+	  泰森 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 拳坛 上 最 狠 的 家伙 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

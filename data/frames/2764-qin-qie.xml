@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亲切 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 会谈))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (PP-LOC (P 在)
+						  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+							       (IP (NP-SBJ (-NONE- *T*-1))
+								   (VP (VCD (VA 亲切)
+									    (VA 友好))))
+							       (DEC 的))
+							   (NP (NN 气氛)))
+						       (LC 中)))
+					  (VV 进行)))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

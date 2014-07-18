@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 累积 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing accumulated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-TMP (NT 过去))
+		   (PU ，)
+		   (NP-PN-SBJ (NR 台湾)
+			      (CC 和)
+			      (NR 韩国))
+		   (VP (ADVP (AD 都))
+		       (VP (VC 是)
+			   (VP (PP-MNR (P 以)
+				       (NP (CP (WHNP-2 (-NONE- *OP*))
+					       (CP (IP (NP-TPC (-NONE- *T*-2))
+						       (NP-SBJ (NN 劳力))
+						       (VP (VV 密集)))
+						   (DEC 的)))
+					   (NP (NN 代工)
+					       (PU 、)
+					       (NN 加工)
+					       (NN 出口))
+					   (NP (NN 产业))))
+			       (VP (VV 累积)
+				   (NP-OBJ (NN 资本))))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 和 韩国 	  
+	  </arg>
+	  <arg n="1">
+	  资本 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 *OP* *T*-2 劳力 密集 的 代工 、 加工 出口 产业 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing accumulated"/>
+      <role argnum="2" argrole="amount reached"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 为了)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 对付)
+			  (NP-OBJ (LCP (NP (NN 生命))
+				       (LC 中))
+				  (DP (DT 各)
+				      (CLP (M 种)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 不))
+					      (VP (VV 确定)))))
+				  (NP (NN 因素))))))
+	  (PU ，)
+	  (ADVP (AD 因此))
+	  (LCP-SBJ (NP (NN 经济))
+		   (LC 上))
+	  (VP (ADVP (AD 一定))
+	      (VP (VV 要)
+		  (VP (ADVP (AD 尽快))
+		      (VP (VRD (VV 累积)
+			       (VV 到))
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 个)))
+				  (NP (PU 「)
+				      (NN 安全)
+				      (NN 存量)
+				      (PU 」))))))) 
+	  </parse>
+	  <arg n="m" f="prp">
+	  为了 对付 生命 中 各 种 不 确定因素	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  因此 	  
+	  </arg>
+	  <arg n="1">
+	  经济上	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一定	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽快	  
+	  </arg>
+	  <arg n="2">
+	  一 个 「 安全 存量 」          
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

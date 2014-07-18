@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 咨询 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people consulted"/>
+      <role argnum="2" argrole="area arg0 seeks advice in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 先后))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (ADVP (AD 近))
+					  (QP (CD 百)
+					      (CLP (M 家))))
+				      (NP (NN 客商)))
+			      (VP (PP-DIR (P 向)
+					  (NP (NP (NN 招商)
+						  (NN 工作))
+					      (NP (NN 部门))))
+				  (VP (VV 咨询)
+				      (CC 与)
+				      (VV 洽谈))))))) 
+	  </parse>
+	  <arg n="0">
+	  近 百 家 客商 
+	  </arg>
+	  <arg n="1">
+	  向 招商 工作 部门 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

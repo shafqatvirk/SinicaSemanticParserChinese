@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 评选 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="elector"/>
+      <role argnum="1" argrole="title, honor"/>
+      <role argnum="2" argrole="person elected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP (NP-PN (NR 巴西))
+						  (NP (DP (DT 全))
+						      (NP (NN 国)))
+						  (QP (CD ２２)
+						      (CLP (M 名)))
+						  (ADJP (JJ 著名))
+						  (NP (NN 体育)
+						      (NN 记者))))
+				      (VP (VV 组成)
+					  (NP-OBJ (-NONE- *-2)))))
+			      (DEC 的)))
+		      (NP (NN 评委会)))
+	      (VP (NP-TMP (NT 日前))
+		  (VP (VP (VV 评选)
+			  (NP-PN-OBJ (NR 卢森博格))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 为)
+				  (NP-OBJ (NP (NT ’９８)
+					      (NN 年度))
+					  (NP (NP-PN (NR 巴西))
+					      (NP (NN 足坛)))
+					  (ADJP (ADVP (AD 最))
+						(ADJP (JJ 佳)))
+					  (NP (NN 教练))))))
+		      (PU ，)
+		      (VP (NP-OBJ (NP-APP (NP-PN (NR 科林迪亚斯队))
+					  (NP (NN 后卫)))
+				  (PU 、)
+				  (NP-APP (NN 乌拉圭人))
+				  (NP-PN (NR 加马拉)))
+			  (IP (QP-SBJ (-NONE- *PRO*))
+			      (VP (VV 为)
+				  (NP-OBJ (NP-PN (NR 巴西))
+					  (NP (ADVP (AD 最))
+					      (ADJP (JJ 佳)))
+					  (NP (NN 球员))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(评委会) 由 巴西 全 国 ２２ 名 著名 体育 记者 组成 (*-2)->(的) 的 评委会 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  日前 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  卢森博格 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 为 ’９８ 年度 巴西 足坛 最 佳 教练 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 评选)
+		  (NP-OBJ (NP (ADJP (JJ 最佳))
+			      (NP (NN 信用)))
+			  (NP (NN 用户))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  最佳 信用 用户 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="elector"/>
+      <role argnum="1" argrole="honor"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (VRD (VV 评选)
+			   (VV 出))
+		      (NP-OBJ (ADJP (JJ 最大))
+			      (QP (CD 五百)
+				  (CLP (M 家)))
+			      (NP (NN 外商)
+				  (NN 投资)
+				  (NN 企业))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  最大 五百 家 外商 投资 企业 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

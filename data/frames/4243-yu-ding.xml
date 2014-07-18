@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing set up beforehand"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NP-PN (NR 美)
+				 (NR 英))
+			  (NP (NN 宣布))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 次)))
+		      (NP (NN 空袭)
+			  (NN 行动)))
+	      (VP (VP (ADVP (AD 共))
+		      (VP (VV 击中)
+			  (AS 了)
+			  (NP-OBJ (QP (CD １００多)
+				      (CLP (M 个)))
+				  (NP-PN (NR 伊拉克))
+				  (NP (NN 军事)
+				      (NN 目标)))))
+		  (PU ，)
+		  (VP (VV 达到)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 预定)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (NP (NN 目标)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

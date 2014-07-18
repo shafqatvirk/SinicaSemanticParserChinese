@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 写 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="result,location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 居民))
+	      (VP (VP (PP-MNR (P 用)
+			      (NP (NN 中文)))
+		      (VP (VP (VV 写)
+			      (NP-OBJ (NN 申请)))
+			  (PU 、)
+			  (VP (VV 填)
+			      (NP-OBJ (NN 表格))))))) 
+	  </parse>
+	  <arg n="0">
+	  居民 	  	  
+	  </arg>
+	  <arg n="M" f="MNR">
+	  用 中文 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  申请 	  	  
+	  </arg>
+	</example>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 韩文)
+			  (NN 报纸))
+		  (VP (NP-ADV (NP (ADJP (JJ 大))
+				  (NP (NN 字)))
+			      (NP (NN 标题)))
+		      (VP (VV 写)
+			  (AS 著)
+			  (IP-OBJ (PU 「)
+				  (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-DIR (P 对)
+					      (NP-PN (NR 台湾)))
+				      (VP (VV 发出)
+					  (NP-OBJ (NN 警戒令))))
+				  (PU ！)
+				  (PU 」))))) 
+	  </parse>
+	  <arg n="0">
+	  韩文 报纸 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  大 字 标题 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  「 *pro* 对 台湾 发出 警戒令 ！ 」 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 即))
+	      (NP-TPC (DNP (NP (QP (CD 一些))
+			       (NP (NN 作品)))
+			   (DEG 的))
+		      (NP (NN 字)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 写)
+		  (DER 得)
+		  (VP-EXT (ADVP (AD 的确))
+			  (VP (VA 不错))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  一些 作品 的 字 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  的确 不错 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一)
+			  (CLP (M 套)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (VV 持之以恒))
+				      (CC 并且)
+				      (VP (SB 被)
+					  (VP (VV 证实)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VA 有效)))))))
+			      (DEC 的)))
+		      (NP (NN 政策)))
+	      (VP (ADVP (AD 经已))
+		  (VP (VV 写)
+		      (PP-LOC (P 在)
+			      (LCP (NP (NN 基本法))
+				   (LC 内)))))) 
+	  </parse>
+	  <arg n="1">
+	  一 套 *OP* (*T*-1)->(政策) 持之以恒 并且 被 证实 *PRO* 有效 的 政策 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  经已 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  在 基本法 内 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 编写 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="writer"/>
+    <role argnum="1" argrole="thing written"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-PRP (P 为)
+              (IP (NP-SBJ (-NONE- *PRO*))
+                  (VP (VV 庆祝)
+                      (NP-OBJ (NP-PN (NP-PN (NR 香港))
+                                     (ADJP (JJ 特别))
+                                     (NP (NN 行政区)))
+                              (NP (NN 成立))))))
+      (PU ，)
+      (NP-SBJ (QP (CD 多)
+                  (CLP (M 位)))
+              (NP (NN 作曲家)))
+      (VP (VV 编写)
+          (AS 了)
+          (NP-OBJ (NP (QP (CD 一)
+                          (CLP (M 首)))
+                      (CP (WHNP-1 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (-NONE- *pro*))
+                                  (VP (VP (VV 采用)
+                                          (NP-OBJ (NP-PN (NR 中国))
+                                                  (NP (NN 古代)
+                                                      (NN 编钟))))
+                                      (VP (VV 演奏)
+                                          (NP-OBJ (-NONE- *T*-1)))))
+                              (DEC 的)))
+                      (NP (NN 交响)
+                          (NN 乐曲)))
+                  (CC 和)
+                  (NP (QP (CD 一)
+                          (CLP (M 首)))
+                      (CP (WHNP-2 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (-NONE- *T*-2))
+                                  (VP (VV 庆祝)
+                                      (NP-OBJ (NP-PN (NR 香港))
+                                              (NP (NN 回归)))))
+                              (DEC 的)))
+                      (NP (NN 歌曲)))))
+      (PU 。)))
+	</parse>
+	<arg n="M" f="PRP"> 为 *PRO* 庆祝 香港 特别 行政区 成立 </arg>
+	<arg n="0"> 多 位 作曲家 </arg>
+	<V/>
+	<arg n="1"> 一 首 *OP* *pro* 采用 中国 古代 编钟 演奏 (*T*-1)->(交响乐曲) 的 交响 乐曲 和 一 首 *OP* (*T*-2)->(歌曲) 庆祝 香港 回归 的 歌曲 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 行医 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 许多))
+		      (ADJP (JJ 本省籍))
+		      (NP (NN 世家)
+			  (NN 大族)))
+	      (VP (ADVP (AD 都))
+		  (PP-MNR (P 以)
+			  (NP (NN 行医)))
+		  (VP (VV 为业)))) 
+	  </parse>
+	  <arg n="0">
+	  许多 本省籍 世家 大族 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

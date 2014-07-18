@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 围剿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 连带))
+		(VP (VV 导致)
+		    (NP-PN-OBJ (NR 台北市))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (LB 被)
+			    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (DP (DT 各))
+						(NP (NN 县)
+						    (NN 市)))
+					(VP (VCD (VV 围剿)
+						 (VV 孤立))
+					    (NP-OBJ (-NONE- *T*-2)))))))))) 
+	</parse>
+	<arg n="0">
+	各 县 市 
+	</arg>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

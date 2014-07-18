@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 犯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="criminal"/>
+      <role argnum="1" argrole="crime, law"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 郭辉))
+		  (VP (VV 犯)
+		      (NP-OBJ (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 故意))
+					      (VP (VV 杀)
+						  (NP-OBJ (NN 人)))))
+				  (NP (NN 罪)))
+			      (PU 、)
+			      (NP (NN 抢劫罪))))) 
+	  </parse>
+	  <arg n="0">
+	  郭辉 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 故意 杀 人 罪 、 抢劫罪 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 invades"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (NN 文))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 林中斌))
+	      (VP (VV 说明)
+		  (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 中共))
+				      (VP (VV 犯)
+					  (NP-PN-OBJ (NR 台))))
+				  (DEC 的))
+			  (QP (CD 七)
+			      (CLP (M 种)))
+			  (ADJP (JJ 可能))
+			  (NP (NN 步骤))))) 
+	  </parse>
+	  <arg n="0">
+	  中共 
+	  </arg>
+	  <arg n="1">
+	  台 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

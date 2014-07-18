@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 派息 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (DP (DT 是)
+			      (CLP (M 期)))
+			  (NP (NN 债券)))
+		  (VP (ADVP (AD 将))
+		      (PP-TMP (P 於)
+			      (NP (NT 二零零零年)
+				  (NT 七月)
+				  (NT 十七日)))
+		      (VP (VV 期满))))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 利率))
+		  (VP (VC 为)
+		      (QP-PRD (NP (NN 年息))
+			      (QP (CD 六厘零八)))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (DP-ADV (DT 每)
+			      (QP (CD 半)
+				  (CLP (M 年))))
+		      (VP (VV 派息)
+			  (QP-EXT (CD 一)
+				  (CLP (M 次))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 次 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 半 年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

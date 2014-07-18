@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 照 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity which is shone on"/>
+    <role argnum="2" argrole="thing arg1 is shone on with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 动物园) )
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (PP-BNF (P 为)
+					 (NP (PN 她)))
+				 (VP (VV 照)
+				     (NP-OBJ (NN 超音波) ))))
+			 (LC 後))
+		(VP (VV 确定)
+		    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 怀孕)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	为 她 
+	</arg>
+	<arg n="2">
+	超音波 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-SBJ (NN 屋宅))
+		(VP (VV 龟裂)))
+	    (PU 、)
+	    (IP (NP-SBJ (NN 电视))
+		(VP (VPT (VV 收)
+			 (AD 不)
+			 (VV 到))
+		    (NP-OBJ (NN 讯号))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *PRO*))
+		(VP (NP-TMP (NT 夏天))
+		    (VP (VPT (VV 照)
+			     (AD 不)
+			     (VV 到))
+			(NP-OBJ (NN 太阳)))))
+	    (PU ，)
+	    (IP (NP-TMP (NT 冬天))
+		(NP-SBJ (NN 寒风))
+		(VP (VV 刺骨)))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	太阳 
+	</arg>
+	<arg n="m" f="tmp">
+	夏天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

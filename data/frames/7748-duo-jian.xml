@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 多见 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 sees often"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (ADVP (AD 纵使))
+		    (PP (P 在)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NP-SBJ (NN 胖子))
+						(VP (NP-LOC (-NONE- *T*-1))
+						    (NP-ADV (ADJP (JJ 满))
+							    (NP (NN 街)))
+						    (VP (VV 走)))))
+				    (DEC 的)))
+			    (NP-PN (NR 美国)))))
+	    (PU ，)
+	    (NP-SBJ (PP (P 像)
+			(NP (NP (PN 她))))
+		    (DP (DT 这)
+			(CLP (M 号)))
+		    (DNP (ADJP (JJ 航空母舰级))
+			 (DEG 的))
+		    (NP (NN 体型)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 不))
+		(VP (VV 多见)))) 
+	</parse>
+	<arg n="1">
+	像 她 这 号 航空母舰级 的 体型 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="loc">
+	纵使 在 *OP* 胖子 *T*-1 满 街 走 的 美国 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

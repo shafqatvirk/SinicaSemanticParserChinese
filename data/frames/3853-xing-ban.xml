@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兴办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing set up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 全))
+		      (NP (NN 市)))
+	      (VP (VV 兴办)
+		  (NP-OBJ (ADJP (PU “)
+				(JJ 三资)
+				(PU ”))
+			  (NP (NN 企业)))
+		  (QP-EXT (CD 三千七百四十)
+			  (CLP (M 家))))) 
+	  </parse>
+	  <arg n="0">
+	  全 市 
+	  </arg>
+	  <arg n="1">
+	  “ 三资 ” 企业 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三千七百四十 家 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (PP-PRP (P 为)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 鼓励)
+				      (NP-OBJ (NN 外商))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VV 到)
+						  (NP-OBJ (NN 中西部)
+							  (NN 地区)))
+					      (VP (VV 进行)
+						  (NP-OBJ (NN 投资))))))))
+		      (PU ，)
+		      (PP-DIR (P 对)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (LCP-LOC (NP (NP-PN (NR 中国))
+							       (NP (NN 产业)
+								   (NN 政策)))
+							   (LC 中))
+						  (VP (VP (VV 限制)
+							  (NP-OBJ (NN 外商)
+								  (NN 投资)))
+						      (PU ，)
+						      (VP (ADVP (AD 但))
+							  (VP (VV 能)
+							      (VP (VV 发挥)
+								  (NP-OBJ (NN 人力)
+									  (NN 资源))))))))
+					  (DEC 的)))
+				  (NP (NN 项目))))
+		      (PU ，)
+		      (VP (VV 允许)
+			  (NP-OBJ (NN 外商))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-LOC (P 在)
+					  (NP (NN 中西部)))
+				  (VP (VV 兴办))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 中西部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (NP-PN-LOC (NR 江西省))
+				      (ADVP (AD 最))
+				      (ADVP (AD 早))
+				      (VP (VV 成立))))
+			      (DEC 的)))
+		      (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PP-LGS (P 由)
+					      (NP (NN 台属)
+						  (PU 、)
+						  (NN 侨属)
+						  (ETC 等)))
+				      (VSB (VV 集资)
+					   (VV 兴办))))
+			      (DEC 的)))
+		      (NP (NN 集体)
+			  (NN 企业)))) 
+	  </parse>
+	  <arg n="0">
+	  由 台属 、 侨属 等 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

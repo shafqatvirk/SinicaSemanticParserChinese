@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深谈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 talks about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 同时))
+		  (ADVP (AD 也))
+		  (PP (P 与)
+		      (NP (NP-APP (NP (NP-APP (NP-PN (NR 国民党))
+					      (NP (NN 主席)))
+				      (NP-PN (NR 连战)))
+				  (PU 、)
+				  (NP (NP-APP (NP-PN (NR 亲民党))
+					      (NP (NN 主席)))
+				      (NP-PN (NR 宋楚瑜))))
+			  (QP (CD 两))
+			  (NP (NN 人))))
+		  (VP (VV 进行)
+		      (NP-OBJ (NN 深谈))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 国民党 主席 连战 、 亲民党 主席 宋楚瑜 两 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

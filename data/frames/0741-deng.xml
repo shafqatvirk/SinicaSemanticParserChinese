@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 等 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party that waits"/>
+      <role argnum="1" argrole="waiting for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 现在))
+		  (ADVP (AD 还))
+		  (VP (VV 需要)
+		      (VP (VV 等)
+			  (NP-OBJ (NN 体检)
+				  (NN 结果)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  体检 结果 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (CS 如果))
+		      (VP (VV 等)
+			  (IP-OBJ (NP-SBJ (NN 情势))
+				  (VP (ADVP (AD 完全))
+				      (VP (VA 明朗))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  情势 完全 明朗 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 宏基))
+	      (VP (VV 可以)
+		  (VP (VV 等)))) 
+	  </parse>
+	  <arg n="0">
+	  宏基 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entities being equal to each other"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 彰化)
+			 (NN 地检署) )
+	      (VP (VP (VV 侦办)
+		      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-LOC (NN 总统)
+						  (NN 大选))
+					  (VP (VV 贿选))))
+			      (NP (NN 案)) ))
+		  (PU ，)
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NP-APP (NP (NP-PN (NR 员林) )
+						  (NP (NN 镇长) ))
+					      (ETC 等))
+				      (QP (CD 二百多))
+				      (NP (NN 人) ))
+			      (VP (VP (PP-MNR (P 依)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 违反)
+						      (NP-OBJ (NN 选罢法) ))))
+				      (VP (VV 提起)
+					  (NP-OBJ (NN 公诉) )))
+				  (PU ，)
+				  (VP (ADVP (AD 分别))
+				      (VP (VV 求处)
+					  (NP-OBJ (UCP-APP (QP (CD 三)
+							       (CLP (M 年)))
+							   (CC 至)
+							   (NP (QP (CD 二)
+								   (CLP (M 个)))
+							       (NP (NN 月) )))
+						  (CP (WHNP-1 (-NONE- *OP*))
+						      (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (ADVP (AD 不))
+							      (VP (VV 等)))))
+						  (NP (NN 徒刑) ))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

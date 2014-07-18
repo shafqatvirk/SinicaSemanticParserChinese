@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 起诉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity sued"/>
+      <role argnum="2" argrole="crime"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 一九九八年))
+		      (NP (NT 五月)
+			  (CC 和)
+			  (NT 八月)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 舟山市)
+			     (NR 普陀)
+			     (NN 渔业)
+			     (NN 集团)
+			     (NN 海洋)
+			     (NN 运输)
+			     (NN 公司))
+		      (CC 和)
+		      (NP (NN 死难者)
+			  (NN 家属)))
+	      (VP (VP (ADVP (AD 分别))
+		      (PP-DIR (P 向)
+			      (NP-PN (NR 宁波)
+				     (NN 海事)
+				     (NN 法院)))
+		      (VP (VV 起诉)))
+		  (PU ，)
+		  (VP (VV 要求)
+		      (NP-OBJ (NP-APP (NN 肇事)
+				      (NN 船)
+				      (NN 船东))
+			      (NP (NP-PN (NR 巴拿马))
+				  (DP (DT 某))
+				  (NP (NN 海运))
+				  (NP (NN 股份))
+				  (ADJP (JJ 有限))
+				  (NP (NN 公司))))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 赔偿)
+				  (NP-OBJ (NN 船货)
+					  (NN 损失))
+				  (QP-EXT (CD 一千一百八十八万)
+					  (CLP (M 元))))
+			      (CC 和)
+			      (VP (NP-OBJ (NN 船员)
+					  (NN 人身)
+					  (NN 伤亡)
+					  (NN 损失))
+				  (QP-EXT (CD 三百五十万)
+					  (CLP (M 元))))))))) 
+	  </parse>
+	  <arg n="0">
+	  舟山市 普陀 渔业 集团 海洋 运输 公司 和 死难者 家属 
+	  </arg>
+	  <arg n="m" f="dir">
+	  向 宁波 海事 法院 
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九八年 五月 和 八月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

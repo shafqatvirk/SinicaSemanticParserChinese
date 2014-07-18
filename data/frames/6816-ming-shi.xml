@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 明示 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 clearly states/gives clear direction about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (NN 文))
+		     (LC 中))
+	    (VP (ADVP (AD 即))
+		(VP (VV 明示)
+		    (IP-OBJ (NP-SBJ (NN 环保)
+				    (NN 目标))
+			    (VP (PP-PRD (P 在)
+					(PU ：)
+					(IP (PU 「)
+					    (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 维持)
+						(NP-OBJ (QP (CD 一)
+							    (CLP (M 个)))
+							(CP (WHNP-2 (-NONE- *OP*))
+							    (CP (IP (NP-TPC (-NONE- *T*-2))
+								    (IP (IP (NP-SBJ (NN 空气))
+									    (VP (VV 适合)
+										(NP-OBJ (NN 呼吸))))
+									(PU 、)
+									(IP (NN-SBJ 水质)
+									    (VP (VV 适合)
+										(NP-OBJ (NN 饮用))))
+									(CC 及)
+									(IP (NP-SBJ (NN 土地))
+									    (VP (VV 适合)
+										(NP-OBJ (NN 种植))))))
+								(DEC 的)))
+							(NP (NN 世界))))
+					    (PU 」)))))))) 
+	</parse>
+	<arg n="1">
+	环保 目标 在 ： 「 *PRO* 维持 一 个 *OP* *T*-2 空气 适合 呼吸 、 水质 适合 饮用 及 土地 适合 种植 的 世界 」 
+	</arg>
+	<arg n="m" f="adv">
+	即 
+	</arg>
+	<arg n="m" f="loc">
+	文 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 多))
+		(PP-LGS (P 由)
+			(NP-PN (NN 总统府)))
+		(VP (VP (VP (PU 「)
+			    (VV 明示)
+			    (PU 」)
+			    (NP-PN-OBJ (-NONE- *RNR*-2)))
+			(PU 、)
+			(VP (PU 「)
+			    (VV 暗示)
+			    (PU 」)
+			    (NP-PN-OBJ-2 (NN 国安局))))
+		    (PU ，)
+		    (VP (ADVP (AD 再))
+			(PP-MNR (P 透过)
+				(NP-PN (NN 国安局)))
+			(VP (VV 指示)
+			    (NP-PN-OBJ (NN 调查局))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 进行)
+				    (NP-OBJ (NN 调查))))))))) 
+	</parse>
+	<arg n="0">
+	由 总统府 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	多 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

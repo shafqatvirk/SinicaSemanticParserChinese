@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 陈奏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 reports"/>
+      <role argnum="2" argrole="person arg1 is reported to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 刘歆))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 总校订)
+				   (NP-OBJ (NP (DP (DT 各))
+					       (NP (NN 家)))
+					   (NP (NN 书籍)))))
+			   (LC 後))
+		  (PU ，)
+		  (PP-MNR (P 根据)
+			  (NP (LCP (NP (NN 书))
+				   (LC 中))
+			      (NP (NN 要义))))
+		  (PU ，)
+		  (PP-DIR (P 向)
+			  (NP-PN (NR 哀帝)))
+		  (VP (VV 陈奏)
+		      (NP-OBJ (NP-APP (NN 诸子)
+				      (NN 略)
+				      (PU 、)
+				      (NN 方技)
+				      (NN 略)
+				      (PU 、)
+				      (NN 兵书)
+				      (NN 略)
+				      (ETC 等))
+			      (QP (CD 七))
+			      (NP (NN 略)))))) 
+	  </parse>
+	  <arg n="0">
+	  刘歆 
+	  </arg>
+	  <arg n="1">
+	  诸子 略 、 方技 略 、 兵书 略 等 七 略 
+	  </arg>
+	  <arg n="2">
+	  向 哀帝 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 书 中 要义 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 总校订 各 家 书籍 後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

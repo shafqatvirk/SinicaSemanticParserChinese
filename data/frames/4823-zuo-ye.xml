@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作业 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 舟山市))
+	      (VP (ADVP (AD 共))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 二百六十)
+					  (CLP (M 艘)))
+				      (NN 渔轮))
+			      (VP (PP-LOC (P 在)
+					  (NP (NN 远洋)
+					      (CC 和)
+					      (NN 异国)
+					      (NN 海域)))
+				  (VP (VV 作业))))))) 
+	  </parse>
+	  <arg n="0">
+	  二百六十 艘 渔轮 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 远洋 和 异国 海域 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

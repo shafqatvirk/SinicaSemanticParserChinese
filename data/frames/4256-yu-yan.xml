@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预言 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing predicted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 甚至))
+		  (VP (VV 预言)
+		      (IP-OBJ (NP-TMP (NT １９９８年))
+			      (NP-SBJ (NP-PN (NR-SHORT 墨))
+				      (NP (PP (P 对)
+					      (NP (NN 外)))
+					  (NP (NN 贸易)))
+				      (NP (NN 逆差)))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 死灰复燃))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  １９９８年 墨 对 外 贸易 逆差 将 死灰复燃 
+	  </arg>
+	  <arg n="m" f="adv">
+	  甚至 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

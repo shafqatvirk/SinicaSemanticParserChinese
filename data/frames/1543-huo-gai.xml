@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 活该 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="deserver"/>
+      <role argnum="1" argrole="thing deserved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (-NONE- *pro*))
+		(VP (VV 活该)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PU 「)
+				(VP (VV 跌价))
+				(VP (ADVP (AD 再))
+				    (VP (VV 跌价)))
+				(PU 」))))
+		(PU ？)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 「 跌价 再 跌价 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

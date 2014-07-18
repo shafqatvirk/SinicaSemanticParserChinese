@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出台 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="policy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 广西))
+	      (VP (VV 出台)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 系列)))
+			  (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 利用)
+					  (NP-OBJ (NN 外资))))
+				  (DEC 的))
+			  (NP (NN 政策))))) 
+	  </parse>
+	  <arg n="0">
+	  广西 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一 系列 *pro* 利用 外资 的 政策 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 四月)
+		      (NN 下旬))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 粮食)
+			  (NN 流通)
+			  (NN 体制)
+			  (NN 改革)))
+	      (VP (PP-MNR (P 按)
+			  (NP (NN 计划)))
+		  (VP (VV 出台)))) 
+	  </parse>
+	  <arg n="1">
+	  中国 粮食 流通 体制 改革 
+	  </arg>
+	  <arg n="M" f="MNR">
+	  按 计划 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

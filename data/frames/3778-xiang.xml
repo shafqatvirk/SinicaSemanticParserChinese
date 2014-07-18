@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 像 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 resembles"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (NP (NN 岸))
+				(LC 边))
+			   (DEG 的))
+		      (NP (NN 繁枝)
+			  (NN 茂叶)))
+	      (VP (ADVP (AD 恰))
+		  (VP (VV 像)
+		      (NP-OBJ (DNP (NP (PN 她))
+				   (DEG 的))
+			      (NP (NN 翡翠)
+				  (NN 项链)))))) 
+	  </parse>
+	  <arg n="0">
+	  岸 边 的 繁枝 茂叶 
+	  </arg>
+	  <arg n="1">
+	  她 的 翡翠 项链 
+	  </arg>
+	  <arg n="m" f="adv">
+	  恰 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing which appears to be true of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 真巧))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 见)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 变幻无常)))
+				      (DEC 的)))
+			      (NP (NN 云雾)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 恰好))
+				  (VP (VV 在)
+				      (LCP-OBJ (NP (NN 顶峰))
+					       (LC 处))))
+			      (VP (ADVP (PP (P 像)
+					    (NP (NN 棉花)))
+					(ADVP (AD 似的)))
+				  (VP (VV 撕开)
+				      (AS 了)
+				      (NP-OBJ (QP (CD 一)
+						  (CLP (M 个)))
+					      (NP (NN 口子)))))
+			      (PU ，)
+			      (VP (ADVP (AD 仿佛))
+				  (VP (VV 有意)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 让)
+						  (NP-OBJ (DNP (NP (PU “)
+								   (NN 圣)
+								   (PU ”)
+								   (NN 者))
+							       (DEG 的))
+							  (NP (NN 额头)))
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VRD (VV 探将)
+							       (VV 出来))))))))
+			      (PU ，)
+			      (VP (VV 像)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VC 是)
+					      (VP (PP-BNF (P 为)
+							  (NP (PN 我)))
+						  (VP (VV 送别))))))
+			      (PU ，)
+			      (VP (ADVP (AD 又))
+				  (VP (VV 像)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VC 是)
+						  (VP (PP-DIR (P 对)
+							      (NP (PN 我)))
+						      (VP (VV 嘲笑)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 是 为 我 送别 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

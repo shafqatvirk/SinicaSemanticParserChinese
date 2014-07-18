@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 知 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 knows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 使)
+	      (NP-OBJ (NP (DP (DT 各)
+			      (CLP (M 级)))
+			  (NP (NN 政府)))
+		      (NP (ADVP (AD 特别是))
+			  (NP (DNP (NP (NN 政府))
+				   (DEG 的))
+			      (NP (NN 负责人)))))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 知)
+			  (NP-OBJ (NN 法)))
+		      (PU 、)
+		      (VP (VV 懂)
+			  (NP-OBJ (NN 法)))
+		      (PU ，)
+		      (VP (ADVP (AD 依法))
+			  (VP (VV 办事)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 往)
+				      (LCP (NP (NN 车窗))
+					   (LC 外)))
+			      (ADVP (AD 一))
+			      (VP (VV 看))))
+		  (PU ，)
+		  (ADVP (AD 才))
+		  (VP (VV 知)
+		      (IP-OBJ (NP-SBJ (NN 车子))
+			      (VP (ADVP (AD 已经))
+				  (VP (VV 悬)
+				      (PP-LOC (P 在)
+					      (LCP (NP (NN 山腰))
+						   (LC 间))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  车子 已经 悬 在 山腰 间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 往 车窗 外 一 看 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

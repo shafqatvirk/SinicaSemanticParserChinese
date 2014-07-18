@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 远征 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 goes a long way to conquer"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (PN 一切))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 都))
+		(VP (VV 要)
+		    (VP (PP-DIR (P 从)
+				(IP (NP (NT 一九九六年))
+				    (PU ，)
+				    (DNP (NP (NP-APP (NP-PN (NR 风潮)
+							    (NN 唱片))
+						     (NP (NN 总经理)))
+					     (NP-PN (NR 杨锦聪)))
+					 (DEG 的))
+				    (IP (PU 「)
+					(NP-SBJ (-NONE- *PRO*))
+					(VP (VV 远征)
+					    (NP-OBJ (NN 国际)))
+					(PU 」))))
+			(VP (VV 谈起)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	国际 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

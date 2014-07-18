@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 益致 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 further achieves"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 两))
+		      (NP (NN 人)))
+	      (VP (ADVP (AD 平日))
+		  (VP (VP (ADVP (AD 深))
+			  (VP (VV 求)
+			      (NP-OBJ (DNP (NP (ADJP (JJ 古))
+					       (NP (NN 人)))
+					   (DEG 之))
+				      (NP (NN 宜制)))))
+		      (PU ，)
+		      (VP (ADVP (AD 而))
+			  (VP (VV 益致)
+			      (NP-OBJ (PN 其)
+				      (NN 精))))))) 
+	  </parse>
+	  <arg n="0">
+	  两 人 
+	  </arg>
+	  <arg n="1">
+	  其 精 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  平日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

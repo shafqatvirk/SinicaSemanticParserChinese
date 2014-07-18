@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 备战 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="occasion"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *PRO*))
+      (VP (VV 备战)
+          (NP-PN-OBJ (NR 广岛)
+                     (NR 亚运会)))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> 广岛 亚运会 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

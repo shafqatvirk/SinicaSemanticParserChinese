@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 蓄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 stores"/>
+    <role argnum="2" argrole="place arg1 is stored"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 四))
+			(NP (NN 人)))
+		(VP (VP (PP-MNR (P 以)
+				(NP (NN 辘轳)))
+			(VP (VV 汲)
+			    (NP-OBJ (NN 盐)
+				    (NN 水))))
+		    (PU ，)
+		    (VP (VV 引流)
+			(NP-OBJ (-NONE- *pro*))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 蓄)
+				(PP (P 於)
+				    (LCP (NP (NN 右下方)
+					     (NN 池))
+					 (LC 中)))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	於 右下方 池 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(IP (NP-SBJ (NN 富户)
+				    (NN 人家))
+			    (VP (VV 蓄)
+				(NP-OBJ (NN 奴))
+				(NP-EXT (-NONE- *T*-1)))))
+		    (NP (NN 人数)))
+	    (VP (QP-PRD (CD 上千)))) 
+	</parse>
+	<arg n="0">
+	富户 人家 
+	</arg>
+	<arg n="1">
+	奴 
+	</arg>
+	<arg n="1" f="qty">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

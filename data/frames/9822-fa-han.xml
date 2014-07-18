@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发函 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="mail sender"/>
+      <role argnum="1" argrole="entity arg0 sends mail to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CC 不管是)
+		      (NP (DNP (ADJP (JJ 国际性))
+			       (DEG 的))
+			  (NP (NN 文化)
+			      (NN 活动)))
+		      (PU 、)
+		      (CC 或)
+		      (NP (NP-PN (NR 台北市))
+			  (DNP (PP (P 在)
+				   (LCP (NP (NN 文化)
+					    (NN 政策))
+					(LC 上)))
+			       (DEG 的))
+			  (QP (CD 一些))
+			  (ADJP (JJ 新))
+			  (NP (NN 措施))))
+	      (PU ，)
+	      (NP-SBJ (PN 她))
+	      (VP (VP (ADVP (AD 都))
+		      (ADVP (AD 一律))
+		      (VP (VP (VV 发函))
+			  (VP (VV 请)
+			      (NP-OBJ (DP (DT 各))
+				      (NP (NN 县)
+					  (NN 市)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 参加))))))
+		  (PU ，)
+		  (CC 或)
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 资料))
+			      (VP (VV 寄送)
+				  (PP (P 给)
+				      (NP (DP (DT 各))
+					  (NP (NN 县)
+					      (NN 市))))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 参考)))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一律 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  不管是 国际性 的 文化 活动 、 或 台北市 在 文化 政策 上 的 一些 新 措施 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

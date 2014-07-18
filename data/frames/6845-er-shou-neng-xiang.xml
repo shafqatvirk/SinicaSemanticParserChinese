@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 耳熟能详 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 knows well"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (NN 其中))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 最))
+				    (VP (LB 为)
+					(IP-OBJ (NP-SBJ (NN 人))
+						(VP (VV 耳熟能详))))))
+			    (DEC 的)))
+		    (NP (NN 骇客)
+			(NN 代表)))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (DNP (QP (CD 十八)
+				 (CLP (M 岁)))
+			     (DEG 的))
+			(NP-PN (NR 凯文米尼克))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TTL-SBJ (PU 「)
+			(NP-SBJ (NN 天))
+			(VP (VA 黑黑))
+			(PU 」))
+	    (VP (DVP (VP (VA 巧妙))
+		     (DEV 地))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (VV 耳熟能详)))
+						(DEC 的)))
+					(NP (NN 旋律)))
+				    (CC 及)
+				    (NP (NN 文字)
+					(NN 隐喻)))
+			    (VP (VV 放进)
+				(LCP-OBJ (NP (NN 歌曲))
+					 (LC 中))))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,180 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 touches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (DVP (VP (VA 轻轻))
+		     (DEV 地))
+		(VP (VV 摸)
+		    (AS 著)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 睡)
+					    (DER 地)
+					    (VP-EXT (VA 香甜))))
+				    (DEC 的)))
+			    (NP (NN 水脑)
+				(NN 宝宝)))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 睡 地 香甜 的 水脑 宝宝 
+	</arg>
+	<arg n="m" f="adv">
+	轻轻 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然後))
+	    (NP-SBJ (PN 她))
+	    (VP (VP (PP-LOC (P 在)
+			    (LCP (NP (NN 身))
+				 (LC 上)))
+		    (ADVP (AD 又))
+		    (VP (VV 摸)
+			(AS 了)
+			(QP-OBJ (CD 一)
+				(CLP (M 通)))))
+		(PU ，)
+		(VP (ADVP (AD 好不容易))
+		    (ADVP (AD 又))
+		    (VP (VV 掏出)
+			(NP-OBJ (QP (CD 五)
+				    (CLP (M 毛)))
+				(NP (NN 钱))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	在 身 上 
+	</arg>
+	<arg n="m" f="ext">
+	一 通 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="tmp">
+	然後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 让)
+				(NP-OBJ (PN 她们))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (ADVP (AD 一眼))
+					    (ADVP (AD 就))
+					    (VP (VV 觉得)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (VA 新奇)))))
+					(PU 、)
+					(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						    (VP (ADVP (AD 一))
+							(VP (VV 摸))))
+					    (ADVP (AD 就))
+					    (VP (VV 感觉)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (ADVP (AD 很))
+							    (VP (VA 棒))))))))))
+			(DEC 的)))
+		(NP (NN 东西))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-TPC (NN 知识))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VPT (VV 摸)
+		     (AD 不)
+		     (VV 著))
+		(PU 、)
+		(VPT (VV 看)
+		     (AD 不)
+		     (VV 到)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	知识 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP (-NONE- *pro*))
+	    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VRD (VV 摸)
+				     (VV 起来))))
+		    (VP (VCD (VA 柔细)
+			     (VA 膨松))))
+		(PU ，)
+		(VP (ADVP (AD 还))
+		    (VP (VV 可以)
+			(VP (VV 抗)
+			    (NP-OBJ (NN 紫外线))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

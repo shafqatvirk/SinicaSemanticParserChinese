@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 执导 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="play/movie arg0 directs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (DP (DT 另)
+				  (QP (CD 一)
+				      (CLP (M 出))))
+			      (NP (NN 剧作)))
+		      (NP-TTL (PU 《)
+			      (NT 八月)
+			      (NN 雪)
+			      (PU 》)))
+	      (PU ，)
+	      (VP (ADVP (AD 则))
+		  (ADVP (AD 可望))
+		  (PP-TMP (P 在)
+			  (LCP (NP (NT 年底))
+			       (LC 时)))
+		  (PU ，)
+		  (IP-ADV (NP-SBJ-1 (-NONE- *PRO*))
+			  (VP (PP-LGS (P 由)
+				      (NP-PN (NR 高行健)))
+			      (ADVP (AD 亲自))
+			      (VP (VP (VV 来)
+				      (NP-PN-OBJ (NR 台)))
+				  (VP (VV 执导)
+				      (NP-OBJ (-NONE- *-1))))))
+		  (VP (VV 演出)))) 
+	  </parse>
+	  <arg n="0">
+	  由 高行健 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亲自 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

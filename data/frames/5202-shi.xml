@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 恃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 relies on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 恃)
+		(NP-OBJ (PN 吾))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ (-NONE- *pro*))
+				(VP (MSP 所)
+				    (VP (ADVP (AD 不))
+					(VP (VV 可)
+					    (VP (VV 攻)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	吾 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 有 *pro* 所 不 可 攻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

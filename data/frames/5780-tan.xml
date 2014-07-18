@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 叹 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 says in exclamation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-LOC (NP (NN 一路))
+			 (LC 上))
+		(ADVP (AD 直))
+		(VP (VV 叹)
+		    (PU ：)
+		    (IP-OBJ (FW Wow)
+			    (PU ,)
+			    (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADJP-PRD (JJ incredible)
+					  (PU ,)
+					  (JJ beautiful))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	Wow , *PRO* incredible , beautiful 
+	</arg>
+	<arg n="m" f="adv">
+	直 
+	</arg>
+	<arg n="m" f="loc">
+	一路 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (sigh) arg0 lets out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VV 叹)
+		(NP-OBJ (QP (CLP (M 口)))
+			(NP (NN 气))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	口 气 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

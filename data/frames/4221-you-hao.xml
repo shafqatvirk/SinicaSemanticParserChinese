@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 友好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (QP (CD 两))
+			       (NP (NN 国)))
+			   (DEG 的))
+		      (NP (NN 关系)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 十分))
+		  (VP (VA 友好)))) 
+	  </parse>
+	  <arg n="0">
+	  两 国 的 关系 
+	  </arg>
+	  <arg n="m" f="adv">
+	  十分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is friendly to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 法案)))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CD 一)
+			      (CLP (M 项)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 带有)
+					  (NP-OBJ (NN 政治)
+						  (NN 歧视性))))
+				  (DEC 的)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (PP-DIR (P 对)
+						  (NP-PN (NR 中国)))
+					  (ADVP (AD 极))
+					  (ADVP (AD 不))
+					  (VP (VA 友好))))
+				  (DEC 的)))
+			  (NP (NN 法案))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  对 中国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  极 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (PP-LOC (P 在)
+			  (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 促进)
+					  (NP-PN-OBJ (NR 中)
+						     (NR 英))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 友好)))))
+			      (NP (NN 方面))))
+		  (VP (VV 发挥)
+		      (AS 了)
+		      (NP-OBJ (PU “)
+			      (NN 桥梁)
+			      (NN 作用)
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惊讶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity that surprises arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 她))
+	      (VP (ADVP (AD 很))
+		  (VP (VV 惊讶)
+		      (IP-OBJ (NP-TPC (ADJP (JJ 大))
+				      (NP (NN 卖场)))
+			      (ADVP (AD 平常))
+			      (NP-SBJ (NN 生意))
+			      (VP (ADVP (AD 也))
+				  (ADVP (AD 这麽))
+				  (VP (VA 好))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <arg n="1">
+	  大 卖场 平常 生意 也 这麽 好 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP-PN (NR 索次))
+			       (NP (NN 家)))
+			   (DEG 的))
+		      (NP (NN 摆设)))
+	      (VP (VV 令)
+		  (NP-OBJ (NN 来访者))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VA 惊讶)
+			  (ADVP (AD 不已)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不已 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

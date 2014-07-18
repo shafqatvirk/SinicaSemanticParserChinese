@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 返还 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="thing returned"/>
+      <role argnum="2" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 各))
+		      (NP (NN 地)))
+	      (VP (ADVP (AD 还))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (CLP (M 部分))
+				      (NP (NN 所得税)))
+			      (VP (VV 返还)
+				  (NP-OBJ (NN 企业))))))) 
+	  </parse>
+	  <arg n="0">
+	  各 地 
+	  </arg>
+	  <arg n="1">
+	  部分 所得税 
+	  </arg>
+	  <arg n="2">
+	  企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 所得税))
+	      (VP (ADVP (AD 超基数))
+		  (VP (VV 返还))))
+	  </parse>
+	  <arg n="1">
+	  所得税 
+	  </arg>
+	  <arg n="m" f="adv">
+	  超基数 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

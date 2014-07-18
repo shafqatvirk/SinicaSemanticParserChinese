@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 融资 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="amount"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 直接))
+		  (VP (VV 融资)
+		      (QP-OBJ (CD 二十八亿)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  二十八亿 元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直接 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 一汽))
+	      (VP (VP (ADVP (AD 还))
+		      (VP (VP (VV 利用)
+			      (NP-OBJ (NN 资本)
+				      (NN 市场)))
+			  (VP (ADVP (AD 直接))
+			      (VP (VV 融资)))))
+		  (PU ，)
+		  (VP (ADVP (AD 现))
+		      (ADVP (AD 已))
+		      (VP (VV 拥有)
+			  (NP-OBJ (NP-APP (NP-PN (PU “)
+						 (NR 一汽)
+						 (NN 轿车)
+						 (PU ”))
+					  (ETC 等))
+				  (QP (CD 三)
+				      (CLP (M 家)))
+				  (NP (NN 境内)
+				      (NN 上市)
+				      (NN 公司))))))) 
+	  </parse>
+	  <arg n="0">
+	  一汽 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直接 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

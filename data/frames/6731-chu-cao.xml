@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出草 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 井上一))
+			 (DEG 的))
+		    (NP (NN 父亲)))
+	    (VP (LB 被)
+		(CP-OBJ (WHNP-1 (-NONE- *OP*))
+			(IP (NP-SBJ (NN 原住民))
+			    (VP (VV 出草)
+				(AS 了)
+				(NP-OBJ (-NONE- *T*-1))))))) 
+	</parse>
+	<arg n="0">
+	原住民 
+	</arg>
+	<arg n="1">
+	井上一 的 父亲 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 老人家))
+	    (VP (ADVP (AD 经常))
+		(VP (VV 讲)
+		    (VP-OBJ (DNP (PP (P 关於)
+				     (IP (NP-SBJ (NN 原住民))
+					 (VP (VV 出草)
+					     (PU 、)
+					     (VV 战争))))
+				 (DEG 的))
+			    (NP (NN 故事)))))) 
+	</parse>
+	<arg n="0">
+	原住民 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

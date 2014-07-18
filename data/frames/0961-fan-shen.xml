@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 翻身 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 民主)
+		      (NN 改革))
+	      (VP (VV 使)
+		  (NP-OBJ (PN 我们))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 翻身))
+			  (VP (VV 获得)
+			      (AS 了)
+			      (NP-OBJ (NN 解放))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

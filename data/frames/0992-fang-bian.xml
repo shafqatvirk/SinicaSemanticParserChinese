@@ -1,0 +1,181 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 方便 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 芬兰))
+			   (DEG 的))
+		      (NP (NN 零售商们)))
+	      (VP (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 方便)
+				  (NP-OBJ (NN 公众))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 购物))))))
+		  (PU ，)
+		  (PP-LOC (P 在)
+			  (LCP (NP (NN 因特网))
+			       (LC 上)))
+		  (ADVP (AD 联合))
+		  (VP (VV 建立)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 统一)))
+				      (DEC 的)))
+			      (NP (NN 服务)
+				  (NN 网址)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  公众 	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 购物 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (DVP (VP (ADVP (AD 极))
+			   (VP (VA 大)))
+		       (DEV 地))
+		  (VP (VV 方便)
+		      (AS 了)
+		      (NP-OBJ (NN 南商北贾))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  南商北贾 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="faciliator"/>
+      <role argnum="1" argrole="event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 为了)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 进一步))
+			  (VP (VV 方便)
+			      (NP-OBJ (NP (NN 企业))
+				      (DNP (PP (P 在)
+					       (LCP (NP (NN 区))
+						    (LC 内)))
+					   (DEG 的))
+				      (NP (NN 出口)
+					  (NN 加工))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  进一步 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  企业 在 区 内 的 出口 加工 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NN 价格))
+		  (VP (VA 便宜)))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 增产)
+			  (NN 增收)
+			  (NN 效果))
+		  (VP (VA 显著)))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 使用))
+		  (VP (VA 方便)))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VE 没有)
+		      (NP-OBJ (NN 污染))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (NP-TMP (NT 同时))
+		      (VP (VV 可以)
+			  (VP (VV 培肥)
+			      (NP-OBJ (NN 地力))))))) 
+	  </parse>
+	  <arg n="1">
+	  使用 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="thing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李鹏)
+			 (NN 总理))
+	      (VP (VV 邀请)
+		  (NP-PN-OBJ (NR 朱马古洛夫)
+			     (NN 总理))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-TMP (P 在)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VA 方便)))
+					      (DEC 的)))
+				      (NP (NN 时候))))
+			  (VP (VV 访)
+			      (NP-PN-OBJ (NR 华))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

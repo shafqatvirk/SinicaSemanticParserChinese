@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挑战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity challenged"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 俞斌))
+	      (VP (ADVP (AD 再次))
+		  (VP (VV 挑战)
+		      (NP-OBJ (DNP (NP-PN (NR 韩国))
+				   (DEG 的))
+			      (NP-APP (QP (NP (NN 世界))
+					  (QP (OD 头)
+					      (CLP (M 号))))
+				      (NP (NN 棋手)))
+			      (NP (NP-PN (NR 李昌镐))
+				  (QP (CD 九)
+				      (CLP (M 段)))))))) 
+	  </parse>
+	  <arg n="0">
+	  俞斌 
+	  </arg>
+	  <arg n="1">
+	  韩国 的 世界 头 号 棋手 李昌镐 九 段 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 愤怒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (QP (ADVP (AD 上))
+		      (QP (CD 千)
+			  (CLP (M 名))))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VA 愤怒)))
+			  (DEC 的)))
+		  (NP (NN 群众))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

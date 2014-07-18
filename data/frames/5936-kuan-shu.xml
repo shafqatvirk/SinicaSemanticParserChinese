@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 宽恕 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 forgives"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC-2 (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TMP (NT 过去))
+				  (NP-SBJ (NN 政府))
+				  (VP (MSP 所)
+				      (VP (VV 犯)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 错误)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 可以)
+		    (VP (VV 理解)
+			(NP-OBJ (-NONE- *T*-2))))
+		(PU ，)
+		(VP (VV 可以)
+		    (VP (VV 宽恕)
+			(NP-OBJ (-NONE- *T*-2))))
+		(PU ，)
+		(VP (ADVP (AD 但))
+		    (ADVP (AD 绝))
+		    (ADVP (AD 不))
+		    (VP (VV 可以)
+			(VP (VV 忘记)
+			    (NP-OBJ (-NONE- *T*-2))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-1))
+			(VP (VCD (VV 宽恕)
+				 (VV 包容))))
+		    (DEC 之)))
+	    (NP (NN 心))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 渡过 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="temporal or spatial entity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (IP (PP (P 至於)
+		      (NP (NN 入股)))
+		  (PU ，)
+		  (NP-SBJ (PN 那))
+		  (VP (ADVP (AD 只是))
+		      (VP (VV 帮)
+			  (NP-OBJ (PN 对方))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 渡过)
+				      (NP-OBJ (NN 难关)))
+				  (PU 、)
+				  (VP (ADVP (AD 重新))
+				      (VP (VV 壮大))))))))
+	      (SP 而已)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  难关 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

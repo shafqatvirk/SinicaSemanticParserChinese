@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 售价 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing sold"/>
+      <role argnum="1" argrole="price sold at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 纪念)
+		      (NN 邮摺))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 个)))
+		  (VP (VV 售价)
+		      (QP-OBJ (NP (NN 港币))
+			      (QP (CD 一百九十)
+				  (CLP (M 元))))))) 
+	  </parse>
+	  <arg n="0">
+	  纪念 邮摺 
+	  </arg>
+	  <arg n="1">
+	  港币 一百九十 元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 个 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

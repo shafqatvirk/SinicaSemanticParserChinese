@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 嗅 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 smells"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VP (VV 嗅)
+				    (AS 著)
+				    (NP-OBJ (NN 商机)))
+				(VP (VV 前来))))
+			(DEC 的)))
+		(NP (NN 外地)
+		    (NN 生意人))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	商机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

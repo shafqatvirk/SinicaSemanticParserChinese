@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拆除 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tears downs and removes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 七)
+			 (CLP (M 年)))
+		     (LC 前))
+	    (PU ，)
+	    (PP-PRP (P 为)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 因应)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (ADVP (AD 日益))
+							(VP (VA 繁忙))))
+						(DEC 的)))
+					(NP (NN 交通))))
+			    (PU 、)
+			    (VP (VV 拓宽)
+				(NP-OBJ (NN 道路))))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 北埔)
+			   (NR 下街))
+		    (DNP (ADJP (JJ 原有))
+			 (DEG 的))
+		    (NP (NN 骑楼)))
+	    (VP (ADVP (AD 全部))
+		(VP (VV 拆除)))) 
+	</parse>
+	<arg n="1">
+	北埔 下街 原有 的 骑楼 
+	</arg>
+	<arg n="m" f="adv">
+	全部 
+	</arg>
+	<arg n="m" f="prp">
+	为 *PRO* 因应 *OP* *T*-1 日益 繁忙 的 交通 、 拓宽 道路 
+	</arg>
+	<arg n="m" f="tmp">
+	七 年 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可惜))
+	    (NP-SBJ (NP (NP (NN 新生)
+			    (NN 训导处))
+			(NP (NN 营区)))
+		    (CC 和)
+		    (NP (QP (CD 部份))
+			(NP (NN 围墙))))
+	    (VP (ADVP (AD 都))
+		(VP (SB 被)
+		    (VP (VV 拆除)
+			(AS 了))))) 
+	</parse>
+	<arg n="1">
+	新生 训导处 营区 和 部份 围墙 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	可惜 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

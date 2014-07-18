@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 窝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 stays in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-2))
+				(NP-SBJ (ADJP (JJ 总))
+					(NP (NN 员额)))
+				(VP (QP-PRD (CD 七万多))))
+			    (DEC 的)))
+		    (NP (NN 警察)))
+	    (VP (ADVP (AD 仍))
+		(VP (PU 「)
+		    (VV 窝)
+		    (PU 」)
+		    (PP (P 在)
+			(NP (NP-PN (NN 行政院))
+			    (QP (OD 二)
+				(CLP (M 级)))
+			    (NP (NN 单位))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 总 员额 七万多 的 警察 
+	</arg>
+	<arg n="1">
+	在 行政院 二 级 单位 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

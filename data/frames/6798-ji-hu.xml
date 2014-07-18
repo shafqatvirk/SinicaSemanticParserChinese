@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 疾呼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 shouts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-2 (PU 「)
+		      (IP (NP-SBJ (DNP (NP-PN (NR 台湾))
+				       (DEG 的))
+				  (NP-PN (NR 欧洲))
+				  (NP (NN 新闻)))
+			  (VP (ADVP (AD 完全))
+			      (VP (VC 是)
+				  (NP-PRD (QP (CD 一)
+					      (CLP (M 片)))
+					  (NP (NN 空白))))))
+		      (PU ，)
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 简直))
+			      (VP (VC 是)
+				  (NP-PRD (DNP (NP (NP-PN (NR 欧洲))
+						   (NP (NN 新闻)))
+					       (DEG 的))
+					  (ADJP (JJ 白色))
+					  (NP (NN 恐怖)))))))
+	    (PU ，)
+	    (PU 」)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 旅居)
+				    (NP-PN-OBJ (NR 英国))
+				    (QP-EXT (CD 多)
+					    (CLP (M 年)))))
+			    (DEC 的)))
+		    (NP-APP (ADJP (JJ 资深))
+			    (NP (NN 新闻)
+				(NN 记者)))
+		    (NP-PN (NR 张桂越)))
+	    (VP (ADVP (AD 大声))
+		(VP (VV 疾呼)
+		    (IP-OBJ (-NONE- *T*-2))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 旅居 英国 多 年 的 资深 新闻 记者 张桂越 
+	</arg>
+	<arg n="1">
+	「 台湾 的 欧洲 新闻 完全 是 一 片 空白 ， *pro* 简直 是 欧洲 新闻 的 白色 恐怖 ， 」 
+	</arg>
+	<arg n="m" f="adv">
+	大声 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抬头 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 日本)
+			 (PU 、)
+			 (NR 韩国)
+			 (PU 、)
+			 (NR 台湾)
+			 (ETC 等))
+	      (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (NN 国民)
+				       (NN 生产)
+				       (NN 总值))
+			       (VP (VV 达到)
+				   (QP-OBJ (CD 三千)
+					   (CLP (M 美元)))))
+			   (LC 时)))
+	      (PU ，)
+	      (NP-SBJ (NN 环保)
+		      (NN 意识))
+	      (VP (ADVP (AD 普遍))
+		  (VP (VV 抬头)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  环保 意识 
+	  </arg>
+	  <arg n="0" f="psr">
+	  日本 、 韩国 、 台湾 等 
+	  </arg>
+	  <arg n="m" f="adv">
+	  普遍 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 国民 生产 总值 达到 三千 美元 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

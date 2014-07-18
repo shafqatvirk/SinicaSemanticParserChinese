@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 移动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity moved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 湖))
+		       (LC 中))
+	      (VP (PP (P 除了)
+		      (NP (QP (QP (CD 一))
+			      (QP (CD 两)
+				  (CLP (M 艘))))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 徐徐))
+					  (VP (VV 移动))))
+				  (DEC 的)))
+			  (NP (NN 游艇))))
+		  (PU ，)
+		  (ADVP (AD 便))
+		  (VP (VC 是)
+		      (NP-PRD (CP-APP (IP (NP-SBJ (NN 群峦))
+					  (VP (VV 起伏)))
+				      (DEC 的))
+			      (NP (NN 倒影)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  徐徐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

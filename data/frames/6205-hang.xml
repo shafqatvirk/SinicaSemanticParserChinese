@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 rams/pounds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP-WH (AD 怎麽))
+	    (NP-SBJ (DNP (NP (PN 这里))
+			 (DEG 的))
+		    (NP (NN 土)))
+	    (VP (VV 夯)
+		(DER 得)
+		(VP-EXT (ADVP (AD 这麽))
+			(VP (VA 紧))))) 
+	</parse>
+	<arg n="1">
+	这里 的 土 
+	</arg>
+	<arg n="m" f="adv">
+	这麽 紧 
+	</arg>
+	<arg n="m" f="adv">
+	怎麽 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

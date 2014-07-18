@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 着手 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 starts to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (NP-TMP (NT 去年))
+			  (VP (VV 开始))))
+	      (PU ，)
+	      (PP-LOC (P 在)
+		      (LCP (NP (NP (NP (NN 国家))
+				   (ADJP (JJ 有关))
+				   (NP (NN 部门)))
+			       (NP (NN 支持)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 浙江省)
+			 (CC 和)
+			 (NR 杭州市))
+	      (VP (VV 着手)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 对)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 始建于)
+							  (NP-PN-OBJ (NR 清朝))))
+						  (DEC 的)))
+					  (NP-PN (NR 钱塘江))
+					  (NP (NN 大堤))))
+			      (ADVP (AD 全面))
+			      (VP (VV 维修)))))) 
+	  </parse>
+	  <arg n="0">
+	  浙江省 和 杭州市 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 对 *OP* *T*-1 始建于 清朝 的 钱塘江 大堤 全面 维修 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 国家 有关 部门 支持 下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 去年 开始 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (NN 中方))
+		(VP (VV 准备)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (NP-TMP-WH (PN 何时))
+				(VP (VV 着手)
+				    (VP (VV 筹建)
+					(NP-OBJ (DP (DT 这)
+						    (QP (CD 一)))
+						(NP (NN 架构))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  筹建 这 一 架构 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  何时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (NP (AD 今后)))
+	      (NP-PN-SBJ (NR 中国)
+			 (NN 银行))
+	      (VP (VP (ADVP (AD 将))
+		      (PP-DIR (P 从)
+			      (NP (NP-APP (NN 资金)
+					  (NN 规模)
+					  (PU 、)
+					  (NN 专项)
+					  (NN 贷款)
+					  (PU 、)
+					  (NN 专项)
+					  (NN 流动)
+					  (NN 资金)
+					  (PU 、)
+					  (NN 授权)
+					  (NN 授信)
+					  (ETC 等))
+				  (NP (NN 方面))))
+		      (VP (VV 着手))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 银行 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 资金 规模 、 专项 贷款 、 专项 流动 资金 、 授权 授信 等 方面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  今后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

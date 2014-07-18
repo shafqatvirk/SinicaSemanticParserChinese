@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 血腥 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 例如))
+	      (NN-SBJ 妈妈们)
+	      (VP (VP (VV 觉得)
+		      (IP-OBJ (NP-SBJ (NN 电视))
+			      (VP (ADVP (AD 太))
+				  (VP (VA 血腥)))))
+		  (PU ，)
+		  (VP (VV 可以)
+		      (VP (VV 发起)
+			  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 拒)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 看)))))
+				  (NP (NN 运动))))))) 
+	  </parse>
+	  <arg n="0">
+	  电视 
+	  </arg>
+	  <arg n="m" f="adv">
+	  太 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

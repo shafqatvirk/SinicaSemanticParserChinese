@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 存入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="depositer"/>
+      <role argnum="1" argrole="fund"/>
+      <role argnum="2" argrole="financial institution"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 最近))
+		      (QP (CD 一)
+			  (CLP (M 段)))
+		      (NP (NN 时间)))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一些))
+		      (NP (NN 地方)
+			  (NN 人民)
+			  (NN 政府)
+			  (CC 和)
+			  (NN 企业)
+			  (NN 主管)
+			  (NN 部门)))
+	      (VP (ADVP (AD 强行))
+		  (VP (VV 要求)
+		      (NP-OBJ (NP (MSP 所)
+				  (VP (VV 属)))
+			      (NP (NN 企事业)
+				  (NN 单位)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 存款))
+				      (VP (VV 存入)
+					  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (IP (NP-SBJ (-NONE- *pro*))
+							  (VP (VV 指定)
+							      (NP-OBJ (-NONE- *T*-1)))))
+						  (NP (NN 银行)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  存款 
+	  </arg>
+	  <arg n="2">
+	  *OP* *pro* 指定 *T*-1 银行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

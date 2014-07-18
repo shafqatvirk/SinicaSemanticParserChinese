@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交由 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="receiver"/>
+      <role argnum="3" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="controlip" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 今后))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 京九)
+			 (NN 铁路))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 完全))
+		  (VP (VV 交由)
+		      (NP-OBJ (NN 铁路)
+			      (NN 运输)
+			      (NN 部门))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 管理)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  京九 铁路 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  完全 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  铁路 运输 部门 
+	  </arg>
+	  <arg n="3">
+	  *PRO* 管理 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 难为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity it is difficult for arg0 to function as"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (DP (DT 这)
+		    (CLP (M 出)))
+		(CP (WHNP-38 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-38))
+			    (VP (VV 描述)
+				(IP-OBJ (NP-SBJ (NN 後母))
+					(VP (VV 难为))))))
+		    (DEC 的))
+		(NP (NN 连续剧))) 
+	</parse>
+	<arg n="1">
+	後母 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

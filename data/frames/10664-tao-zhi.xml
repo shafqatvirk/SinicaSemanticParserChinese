@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 套至 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="entity arg0 copies arg1 onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (VV 企图)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (BA 将)
+							    (IP-OBJ (NP-SBJ (QP (CD 两)
+										(CLP (M 种)))
+									    (DNP (ADJP (JJ 旧))
+										 (DEG 的))
+									    (NP (NN 角色)
+										(NN 范本)))
+								    (VP (ADVP (AD 强))
+									(VP (VV 套至)
+									    (LCP-OBJ (NP (NP (PN 自己))
+											 (NP (NN 头)))
+										     (LC 上))))))))
+					    (PU ，)
+					    (VP (MSP 而)
+						(VP (VV 没有)
+						    (VP (VV 建立)
+							(NP-OBJ (ADJP (JJ 新))
+								(NP (NN 角色)
+								    (NN 范本))))))))
+				    (DEC 的))
+			    (NP (NN 後果)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	两 种 旧 的 角色 范本 
+	</arg>
+	<arg n="2">
+	自己 头 上 
+	</arg>
+	<arg n="m" f="adv">
+	强 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

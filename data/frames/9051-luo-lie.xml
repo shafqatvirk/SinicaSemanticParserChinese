@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 罗列 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="things arg0 places"/>
+      <role argnum="2" argrole="place arg1 is placed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (NN 群体))
+			  (VP (VV 罗列)))
+		  (PU ，)
+		  (VP (DVP (IP (NP-SBJ (NN 气势))
+			       (VP (VV 宏大)))
+			   (DEV 地))
+		      (VP (VV 围绕)
+			  (AS 著)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 最))
+						  (VP (VA 高大))))
+					  (DEC 的)))
+				  (NP (NN 铜)
+				      (NN 人)))))
+		  (VP (VV 竖立)
+		      (PP-LOC (P 在)
+			      (LCP (NP (DNP (NP (NN 祭祀))
+					    (DEG 的))
+				       (NP (NN 广场)))
+				   (LC 上)))))) 
+	  </parse>
+	  <arg n="1">
+	  群体 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

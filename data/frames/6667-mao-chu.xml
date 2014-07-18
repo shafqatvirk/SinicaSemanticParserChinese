@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冒出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 springs up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-TMP (NT 近年))
+	    (PU ，)
+	    (LCP-ADV (ADVP (AD 突然))
+		     (LC 之间))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VV 会)
+		    (VP (VP (VV 冒出)
+			    (NP-OBJ (QP (CD 两)
+					(CLP (M 栋)))
+				    (NP (NN 大楼)
+					(PU 、)
+					(NN 公寓))))
+			(VP (VV 挡住)
+			    (NP-OBJ (NN 视线))))))) 
+	</parse>
+	<arg n="0">
+	两 栋 大楼 、 公寓 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	突然 之间 
+	</arg>
+	<arg n="m" f="tmp">
+	近年 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (DP (DT 这))
+			 (ADJP (JJ 短短))
+			 (NP (NN 时间)))
+		     (LC 内))
+	    (NP-SBJ (QP (CD 许多))
+		    (ADJP (JJ 中产))
+		    (NP (NN 阶级)))
+	    (VP (VV 开始)
+		(VP (VV 冒出)))) 
+	</parse>
+	<arg n="0">
+	许多 中产 阶级 
+	</arg>
+	<arg n="m" f="tmp">
+	这 短短 时间 内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

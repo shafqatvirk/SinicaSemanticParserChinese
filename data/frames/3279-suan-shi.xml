@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 算是 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 can be considered as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 假如))
+		      (IP (NP-SBJ (PN 他))
+			  (VP (VV 能)
+			      (VP (VV 加盟)
+				  (NP-PN-OBJ (NR 纽卡斯尔队))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 算是)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 回)
+				      (NP-OBJ (NN 家乡)
+					      (NN 球队)))
+				  (VP (VV 效力))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 回 家乡 球队 效力 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  假如 他 能 加盟 纽卡斯尔队 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-SBJ (NP-SBJ (DNP (NP-PN (NR 中国))
+				       (DEG 的))
+				  (NP-PN (NR 常昊)
+					 (CC 和)
+					 (NR 周鹤洋)))
+			  (VP (VSB (VV 抽签)
+				   (VV 对上))
+			      (NP-OBJ (NP-APP (DNP (NP-PN (NR 韩国))
+						   (DEG 的))
+					      (QP (CD 两)
+						  (CLP (M 名)))
+					      (NP (NN 世界)
+						  (NN 冠军)))
+				      (NP-PN (NN 刘昌赫)
+					     (CC 和)
+					     (NR 曹薰铉)))))
+		  (VP (ADVP (AD 还))
+		      (VP (VV 算是)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 不错)))
+					  (DEC 的)))
+				  (NP (NN 结果)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 的 常昊 和 周鹤洋 抽签 对上 韩国 的 两 名 世界 冠军 刘昌赫 和 曹薰铉 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 不错 的 结果 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

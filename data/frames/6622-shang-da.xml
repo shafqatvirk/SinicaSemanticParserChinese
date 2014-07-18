@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上达 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 reaches up to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 目的))
+	    (VP (VV 可能)
+		(VP (VP (VC 是)
+			(IP-PRD (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 祈求)
+				    (NP-OBJ (NN 富饶)))))
+		    (PU ，)
+		    (VP (ADVP 或是)
+			(VP (NP-PRD (CP (WHNP-5 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-5))
+						(VP (VV 上达)
+						    (NP-OBJ (NN 天国))))
+					    (DEC 的)))
+				    (NP (PU 「)
+					(NN 天梯)
+					(PU 」)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-5 
+	</arg>
+	<arg n="1">
+	天国 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

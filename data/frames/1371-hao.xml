@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 耗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="consuming entity"/>
+      <role argnum="1" argrole="thing expended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 年))
+		  (VP (VV 耗)
+		      (NP-OBJ (NN 气))
+		      (QP-EXT (CD 五亿)
+			      (CLP (M 立方米)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  气 
+	  </arg>
+	  <arg n="1" f="qty">
+	  五亿 立方米 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

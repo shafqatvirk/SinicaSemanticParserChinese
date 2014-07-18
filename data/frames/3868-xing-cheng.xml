@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 行程 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="distance arg0 travels"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TMP (NP-SBJ (NT 新年))
+		      (VP (VV 伊始)))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP-PN (NR 西藏))
+			       (NP (NP (NP-PN (NR 那曲))
+				       (NP (NN 地委)
+					   (PU 、)
+					   (NN 行署)))
+				   (CC 及)
+				   (NP (QP (CD １０)
+					   (CLP (M 个)))
+				       (NP (NN 县)
+					   (PU （)
+					   (NN 处)
+					   (PU ）)))))
+			   (DEG 的))
+		      (QP (CD ３０多)
+			  (CLP (M 名)))
+		      (ADJP (JJ 主要))
+		      (NP (NN 负责人)))
+	      (PU ，)
+	      (VP (VP (VV 行程)
+		      (QP-EXT (ADVP (AD 上))
+			      (QP (CD 千)
+				  (CLP (M 公里)))))
+		  (PU ，)
+		  (VP (VV 冒)
+		      (AS 着)
+		      (NP-OBJ (DNP (QP (ADJP (JJ 零下))
+				       (QP (CD ２０多)
+					   (CLP (M 摄氏度))))
+				   (DEG 的))
+			      (NP (NN 严寒))))
+		  (PU ，)
+		  (VP (PP-LOC (P 到)
+			      (NP (NP-PN (NR 文部))
+				  (NP (NN 办事处))))
+		      (VP (VRD (VV 访问)
+			       (VV 来))
+			  (AS 了))))) 
+	  </parse>
+	  <arg n="0">
+	  西藏 那曲 地委 、 行署 及 １０ 个 县 （ 处 ） 的 ３０多 名 主要 负责人 
+	  </arg>
+	  <arg n="1">
+	  上 千 公里 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  新年 伊始 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

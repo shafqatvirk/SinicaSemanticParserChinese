@@ -1,0 +1,209 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 举办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 此)
+			  (CLP (M 次)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 为期)
+				      (QP-OBJ (CD 两)
+					      (CLP (M 天)))))
+			      (DEC 的)))
+		      (NP (NN 研讨会)))
+	      (PU ，)
+	      (VP (PP-LGS (P 由)
+			  (NP (NP-PN (NP-PN (NN 世界)
+					    (NN 贸易)
+					    (NN 组织))
+				     (NP (NR 上海)
+					 (NN 研究)
+					 (NN 中心)))
+			      (CC 与)
+			      (NP-PN (NP-PN (NR 上海市))
+				     (NP (PP (P 对)
+					     (NP (NN 外)))
+					 (NP (NN 服务)))
+				     (ADJP (JJ 有限))
+				     (NP (NN 公司)))))
+		  (ADVP (AD 联合))
+		  (VP (VV 举办)))) 
+	  </parse>
+	  <arg n="0">
+	  由 世界 贸易 组织 上海 研究 中心 与 上海市 对 外 服务 有限 公司 	  
+	  </arg>
+	  <arg n="1">
+	  此 次 *OP* *T*-1 为期 两 天 的 研讨会 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  联合 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 河南省))
+			  (CC 与)
+			  (NP (NN 外资)
+			      (NN 金融)
+			      (NN 机构)))
+		  (VP (PP-LOC (P 在)
+			      (NP-PN (NR 京)))
+		      (VP (VV 举办)
+			  (NP-OBJ (NN 经济)
+				  (NN 合作)
+				  (NN 洽谈会))))) 
+	  </parse>
+	  <arg n="0">
+	  河南省 与 外资 金融 机构 	  
+	  </arg>
+	  <arg n="1">
+	  经济 合作 洽谈会 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 京 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (DP (DT 这)
+			    (CLP (M 次)))
+			(NP-PN (NP-PN (NR 中)
+				      (NR 韩))
+			       (NP (NN 经贸)
+				   (NN 研讨会))))
+	      (VP (PP-LGS (P 由)
+			  (NP (NP-PN (NR 中国)
+				     (NR 新华)
+				     (NN 通讯社)
+				     (NN 对外部))
+			      (PU 、)
+			      (NP-PN (NP (ADJP (JJ 对外))
+					 (NP (NN 贸易)
+					     (NN 经济)
+					     (NN 合作部)))
+				     (NN 亚洲司))
+			      (CC 与)
+			      (NP-PN (NP-PN (NR 韩国))
+				     (ADJP (JJ 驻华))
+				     (NP (NN 使馆)))
+			      (PU 、)
+			      (NP-PN (NR 大韩)
+				     (NN 贸易)
+				     (NN 振兴)
+				     (NN 公社))))
+		  (ADVP (AD 联合))
+		  (VP (VV 举办)
+		      (NP-OBJ (-NONE- *-1))))) 
+	  </parse>
+	  <arg n="0">
+	  由 中国 新华 通讯社 对外部 、 对外 贸易 经济 合作部 亚洲司 与 韩国 驻华 使馆 、 大韩 贸易 振兴 公社 	  
+	  </arg>
+	  <arg n="1">
+	  *-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  联合 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (PN 这样))
+			   (DEG 的))
+		      (NP (NN 经贸)
+			  (NN 合作)
+			  (NN 信息)
+			  (NN 发布会)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 举办)
+		      (AS 了)
+		      (QP-OBJ (QP (CD 两)
+				  (CLP (M 届))))))) 
+	  </parse>
+	  <arg n="1">
+	  这样 的 经贸 合作 信息 发布会 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  两 届 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VC 是)
+		  (IP-PRD (PP-TMP (P 继)
+				  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (NP-TMP (NT 今年))
+							   (VP (VV 举办))))
+						   (DEC 的)))
+					   (QP (OD 首)
+					       (CLP (M 届)))
+					   (NP-PN (NP (NP-PN (NR 中国))
+						      (NP (NN 东西部)))
+						  (NP (NN 投资)
+						      (CC 与)
+						      (NN 贸易))
+						  (NP (NN 洽谈会))))
+				       (LC 之后)))
+			  (PU ，)
+			  (NP-PN-SBJ (NR 陕西省))
+			  (VP (QP-ADV (OD 第二)
+				      (CLP (M 次)))
+			      (VP (VV 承办)
+				  (NP-OBJ (DP (DT 这)
+					      (QP (CD 一)))
+					  (NP (NN 活动)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

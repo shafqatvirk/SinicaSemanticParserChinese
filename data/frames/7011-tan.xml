@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is greedy for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (DVP (VP (ADVP (AD 这麽))
+				     (VP (VE 没)
+					 (NP-OBJ (NN 忌讳) )))
+				 (DEV 的))
+			    (PP (P 与)
+				(NP (NN 棺材) ))
+			    (VP (VV 为伍))))
+		(PU ，)
+		(ADVP (AD 不))
+		(ADVP (AD 都))
+		(VP (VV 贪)
+		    (NP-OBJ (NP (PN 它))
+			    (QP (CLP (M 个)))
+			    (PU ——)
+			    (NP (NN 升官)
+				(NN 发财) ))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	它 个 —— 升官 发财 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 这麽 没 忌讳 的 与 棺材 为伍 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

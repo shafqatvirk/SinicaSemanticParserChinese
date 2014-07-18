@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 批阅 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 reads and writes comment on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 历来))
+				    (VP (SB 被)
+					(VP (VRD (VV 描写)
+						 (VV 成))
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VP (VV 迷恋)
+							    (NP-PN-OBJ (NR 赵飞燕)))
+							(VP (MSP 以致)
+							    (VP (ADVP (AD 终日))
+								(VP (VV 荒淫))))))))))
+			    (DEC 的)))
+		    (NP-PN (NR 汉成帝)))
+	    (PU ，)
+	    (VP (ADVP (AD 则))
+		(PP (P 在)
+		    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 日理万机)))
+			 (LC 之馀)))
+		(PU ，)
+		(ADVP (AD 亲自))
+		(VP (VV 批阅)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (VRD (VV 编校)
+						 (VV 完竣))
+					    (NP-OBJ (-NONE- *T*-2))))
+				    (DEC 的)))
+			    (NP (NN 书籍)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 历来 被 描写 成 *PRO* 迷恋 赵飞燕 以致 终日 荒淫 的 汉成帝 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 编校 完竣 *T*-2 的 书籍 
+	</arg>
+	<arg n="m" f="adv">
+	亲自 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 日理万机 之馀 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

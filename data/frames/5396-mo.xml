@@ -1,0 +1,133 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 磨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 grinds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (IP (NP-SBJ (PN 有的))
+			(VP (VV 磨光)))
+		    (PU ，)
+		    (IP (NP-SBJ (PN 有的))
+			(VP (ADVP (AD 不))
+			    (VP (VV 磨)))))
+	    (PU ，)
+	    (VP (MSP 以)
+		(VP (VV 试出)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VV 接近))))
+				    (DEC 的)))
+			    (NP (NN 整体感)))))) 
+	</parse>
+	<arg n="1">
+	有的 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (VP (VV 走)
+		    (NP-EXT (NN 一会儿)))
+		(CC 又)
+		(VP (VV 回来)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 再))
+				(VP (VV 磨))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-PRP (P 为了)
+			(NP (QP (CD 一)
+				(CLP (M 个)))
+			    (NP (NN 学生)
+				(NN 背包))))
+		(VP (VV 磨)
+		    (AS 了)
+		    (NP-OBJ (PN 我))
+		    (QP-EXT (CD 半)
+			    (CLP (M 天)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	我 
+	</arg>
+	<arg n="m" f="ext">
+	半 天 
+	</arg>
+	<arg n="m" f="prp">
+	为了 一 个 学生 背包 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不仅))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (DNP (NP (PN 我))
+					 (DEG 的))
+				    (NP (NN 创造力)))
+			    (VP (VV 磨)
+				(DER 得)
+				(VP-EXT (VV 精光))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	我 的 创造力 
+	</arg>
+	<arg n="m" f="adv">
+	精光 
+	</arg>
+	<arg n="m" f="dis">
+	不仅 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

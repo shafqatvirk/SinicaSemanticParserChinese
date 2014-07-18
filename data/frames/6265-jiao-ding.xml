@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 校订 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 proofreads and edits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (NP-APP (NN 步兵)
+					(NN 校尉))
+				(NP-PN (NR 任宏)))
+			    (ETC 等))
+		    (NP (NN 人)))
+	    (VP (VV 校订)
+		(AS 了)
+		(NP-OBJ (NN 兵书)
+			(CC 与)
+			(NN 数学)
+			(NN 书籍)))) 
+	</parse>
+	<arg n="0">
+	步兵 校尉 任宏 等 人 
+	</arg>
+	<arg n="1">
+	兵书 与 数学 书籍 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

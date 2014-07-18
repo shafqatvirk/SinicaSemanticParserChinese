@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 佐茶 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 uses with tea"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 加上)
+		    (NP-OBJ (NP (DNP (ADJP (ADJP (JJ 松))
+					   (ADJP (JJ 脆)))
+				     (DEG 的))
+				(NP (NN 饼皮)))
+			    (PU 、)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 甜)
+						    (NN 咸))
+					    (VP (VV 兼具)))
+					(DEC 的)))
+				(NP (NN 口味)))))
+		(PU ，)
+		(VP (ADVP (AD 非常))
+		    (VP (VV 适合)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 佐茶))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

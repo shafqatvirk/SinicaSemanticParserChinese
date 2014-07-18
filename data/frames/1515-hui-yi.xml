@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回忆 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="thing thought about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 韦奇立))
+	      (VP (DVP (VP (VA 愉快))
+		       (DEV 地))
+		  (VP (VV 回忆)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (PN 他))
+					  (VP (NP-TMP (NT １９９１年)
+						      (CC 和)
+						      (NT １９９２年))
+					      (PP (P 同)
+						  (NP-PN (NR 李鹏)
+							 (NN 总理)))
+					      (QP-ADV (CD 两)
+						      (CLP (M 次)))
+					      (VP (VV 会见))))
+				      (DEC 的))
+			      (NP (NN 情景)))))) 
+	  </parse>
+	  <arg n="0">
+	  韦奇立 
+	  </arg>
+	  <arg n="1">
+	  他 １９９１年 和 １９９２年 同 李鹏 总理 两 次 会见 的 情景 
+	  </arg>
+	  <arg n="m" f="adv">
+	  愉快 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 扎营 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 encamps"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NT 今年)
+		    (NN 春节)
+		    (NN 旅游))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(NP (NP (NN 东)
+				(NN 海岸))
+			    (QP (CD 一)
+				(CLP (M 处)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 静谧)))
+				    (DEC 的)))
+			    (NP (NN 海隅))))
+		(VP (VV 扎营)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	在 东 海岸 一 处 *OP* *T*-1 静谧 的 海隅 
+	</arg>
+	<arg n="m" f="tpc">
+	今年 春节 旅游 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

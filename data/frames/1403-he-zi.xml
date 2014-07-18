@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合资 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="investors"/>
+      <role argnum="1" argrole="invested enterprise, etc."/>
+      <role argnum="2" argrole="amount of capital"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  中 德 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 常柴)
+			 (NN 公司))
+	      (VP (PP (P 与)
+		      (NP-PN (NR 万县市)
+			     (NR 三峡)
+			     (NN 柴油机厂)))
+		  (VP (VP (VV 合资))
+		      (VP (VV 组建)
+			  (NP-PN-OBJ (NR 常柴)
+				     (NR 万县)
+				     (NN 公司)))))) 
+	  </parse>
+	  <arg n="0">
+	  常柴 公司 	  
+	  </arg>
+	  <arg n="0">
+	  与 万县市 三峡 柴油机厂 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

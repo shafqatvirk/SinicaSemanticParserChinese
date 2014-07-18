@@ -1,0 +1,187 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity raised/brought up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (PU “)
+				   (NP-PN (NR 千岛湖))
+				   (NP (NN 事件))
+				   (PU ”))
+			   (VP (VV 发生)))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 海协))
+	      (VP (PP-MNR (P 依据)
+			  (NP (NN 协议)))
+		  (VP (VP (PP-DIR (P 向)
+				  (NP-PN (NR 海基会)))
+			  (VP (VV 通报)
+			      (AS 了)
+			      (NP-OBJ (NN 情况))))
+		      (PU ，)
+		      (VP (VP (VV 解释)
+			      (NP-OBJ (-NONE- *RNR*-2)))
+			  (CC 并)
+			  (VP (VV 回答)
+			      (NP-OBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-PN-SBJ (NR 海基会))
+						    (VP (MSP 所)
+							(VP (VV 提)
+							    (NP-OBJ (-NONE- *T*-1)))))
+						(DEC 的)))
+					(QP (CD 若干))
+					(NP (NN 问题)
+					    (CC 与)
+					    (NN 要求)))))))) 
+	  </parse>
+	  <arg n="0">
+	  海基会 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing brought up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TPC-2 (ADVP (AD 只要))
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 有助于)
+						(NP-OBJ (NP (QP (CD 两))
+							    (NP (NN 岸)))
+							(NP (NP (ADJP (JJ 和平))
+								(NP (NN 发展)))
+							    (CC 和)
+							    (NP (NN 统一))))))
+					(DEC 的)))
+				(NP (NN 议题))))
+		  (PU ，)
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 都))
+		      (VP (VV 可以)
+			  (VP (QP-ADV (CD 一)
+				      (CLP (M 步步)))
+			      (VP (VP (VRD (VV 提)
+					   (VV 出来))
+				      (NP-OBJ (-NONE- *T*-2)))
+				  (VP (VV 展开)
+				      (NP-OBJ (NN 沟通)
+					      (CC 与)
+					      (NN 对话)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 步步 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP-APP (IP (LCP-TMP (IP (DP-ADV (DT 每)
+							   (CLP (M 年)))
+						   (NP-SBJ (NN 全球)
+							   (NN 石化业))
+						   (VP (PP-LOC (P 在)
+							       (NP-PN (NR 日本)
+								      (NR 北海道)))
+						       (VP (VV 举行)
+							   (NP-OBJ (NN 年会)))))
+					       (LC 时))
+				      (PU ，)
+				      (NP-PN-SBJ (NR 韩国))
+				      (VP (VP (ADVP (AD 大肆))
+					      (VP (VSB (VV 举债)
+						       (VV 扩张))))
+					  (PU ，)
+					  (VP (ADVP (AD 还))
+					      (VP (VV 设定)
+						  (NP-OBJ (DNP (QP (CD 百分之五十))
+							       (DEG 的))
+							  (ADJP (ADVP (AD 超))
+								(ADJP (JJ 高)))
+							  (NP (NN 外销)
+							      (NN 比例)))))
+					  (PU 、)
+					  (VP (ADVP (AD 一味))
+					      (VP (VV 抢攻)
+						  (NP-OBJ (NN 市场)
+							  (NN 占有率))))))
+				  (DEC 的))
+			  (NP (NN 做法)))
+		  (PU ，)
+		  (VP (ADVP (AD 屡次))
+		      (VP (SB 被)
+			  (VP (VP (VRD (VV 提)
+				       (VV 出来)))
+			      (VP (VV 批评)
+				  (NP-OBJ (-NONE- *-4))))))) 
+	  </parse>
+	  <arg n="1">
+	  每 年 全球 石化业 在 日本 北海道 举行 年会 时 ， 韩国 大肆 举债 扩张 ， 还 设定 百分之五十 的 超 高 外销 比例 、 一味 抢攻 市场 占有率 的 做法 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  屡次 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing carried"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <arg n="1">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

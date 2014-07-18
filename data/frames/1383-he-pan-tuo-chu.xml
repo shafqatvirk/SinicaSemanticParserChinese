@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 和盘托出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="divulger"/>
+      <role argnum="1" argrole="thing divulged"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (IP (NP-SBJ (NT 现在))
+		  (VP (VC 是)
+		      (NP (CP (WHPP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (PN 我们))
+				      (VP (PP-TMP (-NONE- *T*-1))
+					  (VP (VP (QP-ADV (ADJP (JJ 最后))
+							  (QP (CD 一)
+							      (CLP (M 次))))
+						  (VP (VRD (VV 坐)
+							   (VV 下来))))
+					      (PU ，)
+					      (VP (BA 把)
+						  (IP-OBJ (NP-SBJ (NP (PN 各自))
+								  (DNP (NP (NN 让步))
+								       (DEG 的))
+								  (NP (NN 底细)))
+							  (VP (VV 和盘托出))))
+					      (PU ，)
+					      (VP (ADVP (AD 互相))
+						  (ADVP (AD 再))
+						  (VP (VV 让)
+						      (QP-OBJ (CD 一)
+							      (CLP (M 步)))))
+					      (VP (ADVP (AD 以便))
+						  (VP (VV 保住)
+						      (NP-OBJ (NN 赛季)))))))
+				  (DEC 的)))
+			  (NP (NN 时候)))))
+	      (SP 了)
+	      (PU 。)
+	      (PU ”)) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  各自 让步 的 底细 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

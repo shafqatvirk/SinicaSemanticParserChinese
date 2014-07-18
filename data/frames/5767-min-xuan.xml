@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 民选 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity which is elected by people"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NN 总统))
+		    (VP (VV 民选)))
+	    (VP (VP (VV 造成)
+		    (IP-OBJ (NP-SBJ (NN 候选人))
+			    (VP (PU 『)
+				(VV 英雄化)
+				(PU 』))))
+		(PU ，)
+		(VP (VV 转移)
+		    (AS 了)
+		    (NP-OBJ (DNP (NP (NN 选民))
+				 (DEG 的))
+			    (NP (NN 注意力)))))) 
+	</parse>
+	<arg n="0">
+	总统 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

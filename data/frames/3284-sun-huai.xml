@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 损坏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing damaged"/>
+      <role argnum="2" argrole="entity suffering the loss"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 条形码))
+	      (VP (VV 丢失)
+		  (CC 或)
+		  (VV 损坏))) 
+	  </parse>
+	  <arg n="1">
+	  条形码 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (QP (CD 十七)
+				   (CLP (M 号)))
+			       (NP (NN 台风)))
+			   (DEG 的))
+		      (NP (NN 正面)
+			  (NN 袭击)))
+	      (PU ，)
+	      (VP (VV 使)
+		  (NP-PN-OBJ (NR 温州市))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 损坏)
+			  (NP-OBJ (NN 堤坝))
+			  (QP-EXT (CD 八百六十二)
+				  (CLP (M 公里))))))) 
+	  </parse>
+	  <arg n="1">
+	  堤坝 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  八百六十二 公里 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

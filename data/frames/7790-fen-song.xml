@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分送 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 distributes and gives"/>
+    <role argnum="2" argrole="entity arg1 is given to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VV 能)
+		    (VP (VP (VV 赶)
+			    (PP (P 在)
+				(LCP (NP (NN 年))
+				     (LC 前))))
+			(PU ，)
+			(VP (VRD (VV 分送)
+				 (VV 给))
+			    (NP-OBJ (NN 亲朋好友))
+			    (PP (P 当成)
+				(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 过)
+							(NP-OBJ (NN 年))))
+						(DEC 的))
+					(NP (NN 馈礼))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="2">
+	亲朋好友 
+	</arg>
+	<arg n="m" f="adv">
+	当成 *PRO* 过 年 的 馈礼 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

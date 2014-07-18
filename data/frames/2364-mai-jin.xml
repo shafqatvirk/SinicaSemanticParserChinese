@@ -1,0 +1,149 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迈进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location stepped into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="steps/movement made"/>
+      <role argnum="2" argrole="direction"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人类))
+	      (VP (ADVP (AD 又))
+		  (PP-DIR (P 向)
+			  (NP (ADJP (JJ 新))
+			      (NP (NN 世纪))))
+		  (VP (VV 迈进)
+		      (AS 了)
+		      (QP-EXT (CD 一)
+			      (CLP (M 步)))))) 
+	  </parse>
+	  <arg n="0">
+	  人类 	  
+	  </arg>
+	  <arg n="1">
+	  一 步 	  
+	  </arg>
+	  <arg n="2">
+	  向 新 世纪 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 企业))
+	      (VP (ADVP (AD 正在))
+		  (PP-DIR (P 向)
+			  (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 具有)
+						  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							      (IP (NP-SBJ (-NONE- *T*-2))
+								  (VP (ADVP (AD 较))
+								      (VP (VA 强)))))
+							  (NP (NN 发展)
+							      (NN 动力)
+							      (PU 、)
+							      (NN 竞争力)))))
+					  (DEC 的)))
+				  (NP (NN 市场)
+				      (NN 主体)))
+			      (NP (NN 方向))))
+		  (VP (VV 迈进)))) 
+	  </parse>
+	  <arg n="0">
+	  企业 	  
+	  </arg>
+	  <arg n="2">
+	  向 *OP* *T*-1 具有 *OP* *T*-2 较 强 发展 动力 、 竞争力 的 市场 主体 方向 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 人民)))
+		  (VP (VP (ADVP (AD 正))
+			  (DVP (NP (NP (ADJP (JJ 满))
+				       (NP (NN 怀)))
+				   (NP (NN 信心)))
+			       (DEV 地))
+			  (PP (P 沿着)
+			      (NP (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (PN 自己))
+					      (VP (VV 选择)
+						  (NP-OBJ (-NONE- *T*-3))))
+					  (DEC 的)))
+				  (NP (NN 道路))))
+			  (DVP (VP (VA 扎扎实实))
+			       (DEV 地))
+			  (ADVP (AD 向前))
+			  (VP (VV 迈进))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 人民 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  向前 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  扎扎实实 地 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  沿着 *OP* 自己 选择 *T*-3 的 道路 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  满 怀 信心 地 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

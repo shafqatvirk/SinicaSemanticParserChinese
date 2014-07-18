@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 外嫁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="women getting married"/>
+      <role argnum="1" argrole="location arg0 moves to after marriage"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 所以))
+	      (NP-SBJ (NP-PN (NR 深圳))
+		      (NP (NN 姑娘)))
+	      (VP (VPT (VV 用)
+		       (AD 不)
+		       (VV 着))
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 只))
+			      (PP-PRP (P 为)
+				      (NP (NN 物质)
+					  (NN 生活)))
+			      (VP (MSP 而)
+				  (VP (VV 外嫁))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 物质 生活 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 名列 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="position held"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 深圳))
+		      (NP (NN 经济)
+			  (NN 运行)
+			  (NN 质量)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 名列)
+		      (NP-OBJ (NP-PN (NR 中国))
+			      (NP (NN 前列)))))) 
+	  </parse>
+	  <arg n="0">
+	  深圳 经济 运行 质量 
+	  </arg>
+	  <arg n="1">
+	  中国 前列 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

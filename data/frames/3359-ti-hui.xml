@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 体会 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="thing experienced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 亲身))
+		  (VP (VV 体会)
+		      (AS 过)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VRD (VV 创业)
+						   (VA 成功))))
+				      (DEC 的))
+			      (NP (NN 艰辛)
+				  (CC 和)
+				  (NN 欢愉)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  *pro* 创业 成功 的 艰辛 和 欢愉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亲身 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

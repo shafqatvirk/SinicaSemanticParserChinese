@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 共存 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="co-existing with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (NN 蛋化石)
+			  (CC 与)
+			  (NN 骨骼)
+			  (NN 化石))
+		  (VP (VV 共存)
+		      (QP-OBJ (CD 一)
+			      (CLP (M 处))))) 
+	  </parse>
+	  <arg n="0">
+	  蛋化石 与 骨骼 化石 
+	  </arg>
+	  <arg n="m" f="loc">
+	  一 处 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

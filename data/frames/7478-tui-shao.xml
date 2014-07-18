@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 退烧 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity whose temperature lowers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (QP (NP-PN (NR 民国))
+			     (QP (OD 八十三)
+				 (CLP (M 年))))
+			 (NP (PU 「)
+			     (NP-PN (NR 千岛湖))
+			     (NP (NN 事件))
+			     (PU 」)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (NN 大陆热))
+	    (VP (VP (VV 退烧)))) 
+	</parse>
+	<arg n="0">
+	大陆热 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 八十三 年 「 千岛湖 事件 」 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

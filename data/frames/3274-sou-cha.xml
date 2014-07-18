@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搜查 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity searched"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 信件)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (PP-LOC (P 在)
+						  (NP (NP (DP (DT 该))
+							  (NP (NN 囚犯)))
+						      (NP (NN 面前))))
+					  (VP (VP (VV 开启)
+						  (NP-OBJ (-NONE- *RNR*-3)))
+					      (CC 和)
+					      (VP (VV 搜查)
+						  (NP-OBJ-3 (-NONE- *T*-2))))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 该 囚犯 面前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (LCP (IP (NP-SBJ (DP (DT 该))
+				   (NP (NN 信件)))
+			   (VP (VP (VV 开启))
+			       (CC 和)
+			       (VP (VV 搜查))))
+		       (LC 时))) 
+	  </parse>
+	  <arg n="1">
+	  该 信件 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

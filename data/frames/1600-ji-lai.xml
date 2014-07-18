@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寄来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="sending from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-PN-SBJ (NR 中国))
+			      (VP (VV 寄来)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP (NN 快件))
+		  (PRN (PU （)
+		       (IP (NP-SBJ (NN 其中))
+			   (VP (VV 包括)
+			       (NP-OBJ (NP-APP (NN 提单)
+					       (ETC 等))
+				       (NP (NN 商业)
+					   (NN 票据)))))
+		       (PU ）))) 
+	  </parse>
+	  <arg n="2">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 志愿者)
+		      (NN 工作部))
+	      (PP-TMP (P 自)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (NP-TMP (NT 今年)
+					   (NT ６月份))
+				   (VP (VV 成立))))
+			   (LC 以来)))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一些))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 热心)
+				      (NP-OBJ (NN 社会)
+					      (NN 公益)
+					      (NN 活动))))
+			      (DEC 的)))
+		      (NP (NN 市民)))
+	      (VP (ADVP (AD 纷纷))
+		  (VP (VP (VV 打)
+			  (NP-OBJ (NN 电话)))
+		      (CC 或)
+		      (VP (VV 寄来)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-2))
+					      (NP-SBJ (NN 热情))
+					      (VP (VV 洋溢)))
+					  (DEC 的)))
+				  (NP (NN 信件)))))))
+	  </parse>
+	  <arg n="0">
+	  一些 *OP* *T*-1 热心 社会 公益 活动 的 市民 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 热情 洋溢 的 信件 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 *PRO* 今年 ６月份 成立 以来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纷纷 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

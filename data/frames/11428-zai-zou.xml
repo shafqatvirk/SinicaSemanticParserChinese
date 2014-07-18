@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 载走 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 loads and takes away"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 专人)
+				    (NN 专车))
+			    (VP (VV 前来)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 载走)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

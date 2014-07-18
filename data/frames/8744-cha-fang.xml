@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 查访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 investigates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-ADV (ADVP (CS 虽然))
+		      (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 联络)
+						      (NP-OBJ (NN 摄影师)
+							      (CC 和)
+							      (NN 卫星)
+							      (NN 通讯)))
+						  (PU 、)
+						  (VP (VV 查访)
+						      (NP-OBJ (NP-PN (NR 曾文惠))
+							      (NP (NN 行程))))))
+					  (DEC 的))
+				  (NP (NN 过程)))
+			  (VP (VCD (VA 紧凑)
+				   (VA 惊险)))))
+	      (PU ，)
+	      (ADVP (AD 但是))
+	      (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (ADVP (AD 曾))
+				      (QP-ADV (CD 多)
+					      (CLP (M 次)))
+				      (VP (VV 跟访)
+					  (NP-PN-OBJ (NR 坎城)
+						     (NN 影展)))))
+			      (DEC 的)))
+		      (NP-PN (NR 吴耿如)))
+	      (VP (VV 不辱使命))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  曾文惠 行程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

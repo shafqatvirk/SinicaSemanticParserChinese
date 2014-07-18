@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 表达 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="opinion"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 例如))
+      (PU ，)
+      (NP-TMP (NT 过去))
+      (NP-SBJ (NP-PN (NR 中国))
+              (NP (NN 工程师)))
+      (VP (PP-LOC (P 在)
+                  (LCP (IP (NP-SBJ (-NONE- *pro*))
+                           (VP (VV 起草)
+                               (NP-OBJ (NN 合同))))
+                       (LC 时)))
+          (ADVP (AD 经常))
+          (VP (VP (VV 用)
+                  (NP-OBJ (NP (PU “)
+                              (NN 延期)
+                              (PU ”))
+                          (QP (CD 一))
+                          (NP (NN 词))))
+              (VP (MSP 来)
+                  (VP (VV 表达)
+                      (NP-OBJ (DNP (NP (PU “)
+                                       (NN 延误)
+                                       (PU ”))
+                                   (DEG 的))
+                              (NP (NN 意思)))))))))
+	</parse>
+	<arg n="M" f="TMP"> 过去 </arg>
+	<arg n="0"> 中国 工程师 </arg>
+	<arg n="M" f="LOC"> 在 *pro* 起草 合同 时 </arg>
+	<arg n="M" f="ADV"> 经常 </arg>
+	<V/>
+	<arg n="1"> “ 延误 ” 的 意思 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

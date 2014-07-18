@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 多嘴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person talking when he is supposed to keep quiet"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 一))
+			(VP (VV 提到)
+			    (NP-PN-OBJ (NR 新竹)))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VPT (VA 少)
+			 (AD 不)
+			 (VV 得))
+		    (VP (VV 要)
+			(VP (PU 「)
+			    (VV 多嘴)
+			    (PU 」)
+			    (PRN (PU ——)
+				 (VP (VP (ADVP (AD 多))
+					 (VP (VV 带)
+					     (NP-OBJ (QP (CD 一)
+							 (CLP (M 张)))
+						     (NP (NN 嘴)))))
+				     (VP (VV 去)
+					 (VP (VV 尝尝)
+					     (NP-OBJ (DNP (NP (NN 当地))
+							  (DEG 的))
+						     (NP (NN 小吃)))))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 一 提到 新竹 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

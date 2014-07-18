@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 愤愤不平 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 feels indignant about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (DNP (NP (NP-APP (NP (NN 全球))
+					       (NP (NP-APP (ADJP (JJ 塑化))
+							   (NP (NN 原料)))
+						   (NP (NN ABS)))
+					       (ADJP (QP (OD 第一))
+						     (ADJP (JJ 大)))
+					       (NP (NN 厂)))
+				       (PU 、)
+				       (NP-PN (NR 奇美)
+					      (NN 实业)))
+				   (DEG 的))
+			      (NP (NN 董事长)))
+		      (NP-PN (NR 许文龙)))
+	      (PU ，)
+	      (VP (ADVP (AD 至今))
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 提起)
+			      (NP-OBJ (DP (DT 这)
+					  (CLP (M 段)))
+				      (NP (NN 历史)))))
+		  (ADVP (AD 仍))
+		  (VP (VV 愤愤不平)))) 
+	  </parse>
+	  <arg n="0">
+	  全球 塑化 原料 ABS 第一 大 厂 、 奇美 实业 的 董事长 许文龙 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 提起 这 段 历史 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  至今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

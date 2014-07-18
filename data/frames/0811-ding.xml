@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="decider, prescriber"/>
+      <role argnum="1" argrole="plan, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 经济)
+			      (NN 体制))
+			  (QP (CD 多)
+			      (CLP (M 项)))
+			  (NP (NN 改革)))
+		  (VP (PP-MNR (P 按照)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (ADVP (AD 原))
+					      (VP (VV 定)
+						  (NP-OBJ (-NONE- *T*-1))))))
+				  (NP (NN 部署))))
+		      (ADVP (AD 有序))
+		      (VP (VV 推进)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  原 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity"/>
+      <role argnum="1" argrole="event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP (NN 新闻)
+			     (CC 及)
+			     (NN 广播))
+			 (NP (NN 中心)))
+	      (VP (ADVP (AD 原))
+		  (VP (VV 定)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (NP-TMP (NT 七月)
+					  (NT 十日))
+				  (VP (VV 关闭))))))) 
+	  </parse>
+	  <arg n="0">
+	  新闻 及 广播 中心 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 七月 十日 关闭 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  原 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="entity arg0 settles arg1 down on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP (NP-SBJ (NN 意))
+		      (VP (VV 在)
+			  (NP-OBJ (NN 书)
+				  (NN 墨))))
+		  (IP (NP-SBJ (NN 情))
+		      (VP (VV 定)
+			  (NP-OBJ (NN 金石))))
+		  (FRAG (PU ——)
+			(NP (NP-APP (NN 书法)
+				    (NN 篆刻家))
+			    (NP-PN (NR 王壮为))))) 
+	  </parse>
+	  <arg n="1">
+	  情 
+	  </arg>
+	  <arg n="2">
+	  金石 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

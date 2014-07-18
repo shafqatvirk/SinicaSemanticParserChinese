@@ -1,0 +1,123 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投向 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing cast"/>
+      <role argnum="2" argrole="entity cast toward"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (ADVP (AD 将))
+	      (ADVP (AD 重点))
+	      (VP (VV 引导)
+		  (NP-OBJ (NN 外资))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 投向)
+			  (NP-OBJ (NP (NN 基础)
+				      (NN 设施))
+				  (PU 、)
+				  (NP (NN 原材料)
+				      (NN 工业))
+				  (PU 、)
+				  (NP (NN 农业))
+				  (PU 、)
+				  (NP (ADJP (JJ 高))
+				      (ADJP (JJ 新))
+				      (NP (NN 技术)))
+				  (CC 和)
+				  (NP (ADJP (JJ 新兴))
+				      (NP (NN 产业)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  基础 设施 、 原材料 工业 、 农业 、 高 新 技术 和 新兴 产业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 鼓励)
+	      (NP-OBJ (NN 台商))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 投向)
+			  (NP-OBJ (NP (NN 基础)
+				      (NN 设施))
+				  (PU 、)
+				  (NP (NN 基础)
+				      (NN 产业))
+				  (PU 、)
+				  (NP (NP (NP (NN 资金)
+					      (NN 技术))
+					  (ADJP (JJ 密集型)))
+				      (NP (NN 产业)))
+				  (PU 、)
+				  (NP (NP (ADJP (JJ 高))
+					  (NP (NN 科技)))
+				      (NP (NN 项目)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  基础 设施 、 基础 产业 、 资金 技术 密集型 产业 、 高 科技 项目 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 此时)
+		      (NT 此刻))
+	      (PU ，)
+	      (NP-SBJ (NP (NP (NN 世界))
+			  (DP (DT 各))
+			  (NP (NN 国)))
+		      (NP (NN 人民)))
+	      (VP (ADVP (AD 都))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (NN 目光))
+			      (VP (VV 投向)
+				  (NP-PN-OBJ (NR 香港))))))) 
+	  </parse>
+	  <arg n="0">
+	  世界 各 国 人民 
+	  </arg>
+	  <arg n="1">
+	  目光 
+	  </arg>
+	  <arg n="2">
+	  香港 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  此时 此刻 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

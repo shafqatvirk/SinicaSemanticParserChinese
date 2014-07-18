@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 固定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 位)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 主管)
+				      (NP-OBJ (NN 外经贸))))
+			      (DEC 的)))
+		      (NP (NN 副市长)))
+	      (PU ，)
+	      (VP (ADVP (AD 还))
+		  (VP (VV 要求)
+		      (NP-OBJ (-NONE- *pro*))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (DP (DT 这)
+						  (CLP (M 种)))
+					      (DNP (ADJP (JJ 面对面))
+						   (DEG 的))
+					      (NP (NN 座谈会)))
+				      (PU ，)
+				      (VP (VRD (VV 固定)
+					       (VV 下来))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  这 种 面对面 的 座谈会 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (VA 固定)))
+		      (DEC 的)))
+	      (NP (NN 汇率)))
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

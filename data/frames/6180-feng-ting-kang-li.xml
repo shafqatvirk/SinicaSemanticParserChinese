@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分庭抗礼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 acts as equal to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 至今))
+	    (NP-PN-SBJ (NR 金鼎))
+	    (VP (ADVP (AD 不仅))
+		(PP-LOC (P 在)
+			(LCP (NP (NP (ADJP (JJ 不锈))
+				     (NP (NN 钢)))
+				 (NP (NN 抽丝)
+				     (NN 技术)))
+			     (LC 上)))
+		(ADVP (AD 已))
+		(VP (VV 可)
+		    (VP (PP (P 与)
+			    (NP (NP (NN 国外))
+				(ADJP (JJ 大))
+				(NP (NN 厂))))
+			(VP (VV 分庭抗礼)))))) 
+	</parse>
+	<arg n="0">
+	金鼎 
+	</arg>
+	<arg n="1">
+	与 国外 大 厂 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="loc">
+	在 不锈 钢 抽丝 技术 上 
+	</arg>
+	<arg n="m" f="adv">
+	不仅 
+	</arg>
+	<arg n="m" f="tmp">
+	至今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (PU 「)
+		       (NR 乌金听列多杰)
+		       (PU 」))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 立刻))
+		(VP (VV 派)
+		    (NP-PN-OBJ (PU 「)
+			       (NR 泰锡度)
+			       (NN 仁波切)
+			       (PU 」))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 为)
+				(NP-OBJ (NN 代表)))
+			    (PU ，)
+			    (VP (VV 来)
+				(NP-PN-OBJ (NR 台)))
+			    (VP (VV 分庭抗礼))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

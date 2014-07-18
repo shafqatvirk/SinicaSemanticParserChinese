@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 循环 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity circulating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (QP (OD 第一)
+			    (CLP (M 个)))
+			(NP (NN 条件)))
+		    (CC 跟)
+		    (NP (QP (OD 第二)
+			    (CLP (M 个)))
+			(NP (NN 条件))))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VP (VV 相辅相成))
+					(PU 、)
+					(VP (ADVP (AD 良性))
+					    (VP (VV 循环)))))
+				(DEC 的)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	良性 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

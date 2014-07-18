@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 平 </id>
+    <frameset id="f1" edef="to level">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing leveled"/>    
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 实行)
+	      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 平)
+			      (NP-OBJ (NN 垸)))
+			  (VP (VV 行)
+			      (NP-OBJ (NN 洪)))
+			  (PU 、)
+			  (VP (VV 退)
+			      (NP-OBJ (NN 田)))
+			  (VP (VV 还)
+			      (NP-OBJ (NN 湖)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  垸 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="flat">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 路))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 平)))) 
+	  </parse>
+	  <arg n="0">
+	  路 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="tie with">
+      <role argnum="0" argrole="entities who tie with each other"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NN 球杆))
+		      (VP (ADVP (CS 虽))
+			  (ADVP (AD 稍稍))
+			  (VP (VV 打弯))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-PN-SBJ (NR 伍兹))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 平)
+		      (AS 了)
+		      (NP-OBJ (NN 标准杆))))) 
+	  </parse>
+	  <arg n="0">
+	  伍兹 	  
+	  </arg>
+	  <arg n="0" f="crd">
+	  标准杆 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  球杆 虽 稍稍 打弯 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

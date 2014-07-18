@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 标价 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="commodity"/>
+      <role argnum="2" argrole="currency"/>
+      <role argnum="3" argrole="price of arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PP-PRP (P 为了)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 使)
+				(NP-OBJ (NN 大众))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 适应)
+					(NP-OBJ (NN 欧元)))))))
+		(PU ，)
+		(NP-SBJ (DNP (NP (NP (NN 欧元区))
+				 (DP (DT 各))
+				 (NP (NN 国)))
+			     (DEG 的))
+			(ADJP (JJ 大))
+			(NP (NN 商场)))
+		(VP (NP-TMP (NT 现在))
+		    (ADVP (AD 已))
+		    (VP (VV 开始)
+			(VP (PP-DIR (P 对)
+				    (NP (NN 商品)))
+			    (PP-MNR (P 用)
+				    (NP (NP (NP (DP (DT 本))
+						(NP (NN 国)))
+					    (NP (NN 货币)))
+					(CC 和)
+					(NP (NN 欧元))))
+			    (ADVP (AD 同时))
+			    (VP (VV 标价)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="M" f="PRP">
+	  为了 *PRO* 使 大众 *PRO* 适应 欧元 
+	  </arg>
+	  <arg n="0">
+	  欧元区 各 国 的 大 商场 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  现在 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 
+	  </arg>
+	  <arg n="1">
+	  对 商品 
+	  </arg>
+	  <arg n="2">
+	  用 本 国 货币 和 欧元 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-OBJ (NP-SBJ (DNP (NP (PN 那里))
+				 (DEG 的))
+			    (NP (NN 商品)))
+		    (VP (ADVP (AD 仍))
+			(PP-MNR (P 用)
+				(NP (NP-PN (NR 意大利))
+				    (NP (NN 里拉))))
+			(VP (VV 标价))))) 
+	  </parse>
+	  <arg n="1">
+	  那里 的 商品 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  仍 
+	  </arg>
+	  <arg n="2">
+	  用 意大利 里拉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 他))
+				  (VP (VV 要)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 书包)))
+	      (VP (MSP 所)
+		  (VP (VV 标价)
+		      (QP-OBJ (CD 二十)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 他 要 *T*-1 的 书包 
+	  </arg>
+	  <arg n="3">
+	  二十 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,115 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 给予 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="provider, giver"/>
+      <role argnum="1" argrole="thing provided or given"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 国家)
+			 (NN 财政部)
+			 (CC 和)
+			 (NN 国家)
+			 (NN 房改办))
+	      (VP (PP-DIR (P 对)
+			  (NP (PN 此)))
+		  (VP (VV 给予)
+		      (NP-OBJ (ADJP (JJ 充分))
+			      (NP (NN 肯定)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国家 财政部 和 国家 房改办 
+	  </arg>
+	  <arg n="1">
+	  充分 肯定 
+	  </arg>
+	  <arg n="2">
+	  对 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="io" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 代比))
+	      (VP (VV 希望)
+		  (IP-OBJ (NP-PN-SBJ (NR 法国))
+			  (VP (VV 给予)
+			      (NP-IO-PN (NR 乍得))
+			      (NP-OBJ (PU 『)
+				      (ADJP (JJ 全面))
+				      (NP (NN 支持))
+				      (PU 』))))))
+	  </parse>
+	  <arg n="0">
+	  法国 
+	  </arg>
+	  <arg n="2">
+	  乍得 
+	  </arg>
+	  <arg n="1">
+	  『 全面 支持 』 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 日本))
+			  (NP (NN 政府)
+			      (CC 和)
+			      (NN 民间)))
+		  (VP (VV 能够)
+		      (VP (PP-LOC (P 在)
+				  (NP (UCP (DNP (NP-PN (NR 中国))
+						(DEG 的))
+					   (UCP-APP (NP (NN 内地)
+							(NN 开发))
+						    (PU 、)
+						    (NP (NN 环境)
+							(NN 治理))
+						    (CC 以及)
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 完善)
+							    (NP-OBJ (NN 金融)
+								    (NN 资本)
+								    (NN 市场))))
+						    (ETC 等)))
+				      (NP (NN 方面))))
+			  (VP (VV 给予)
+			      (NP-OBJ (NN 合作))))))
+	  </parse>
+	  <arg n="0">
+	  日本 政府 和 民间 
+	  </arg>
+	  <arg n="1">
+	  合作 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 中国 的 内地 开发 、 环境 治理 以及 *PRO* 完善 金融 资本 市场 等 方面 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

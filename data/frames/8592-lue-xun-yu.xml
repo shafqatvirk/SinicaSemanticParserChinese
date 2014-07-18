@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 略逊於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is slightly inferior to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (PN 我们))
+				  (VP (VV 爱)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 看)
+						  (NP-OBJ (NP-PN (NR 美国))
+							  (NP (NN 电影)))))))
+			      (DEC 的))
+		      (NP (NN 程度)))
+	      (PU ，)
+	      (VP (VP (VV 超过)
+		      (NP-PN-OBJ (NR 义大利)
+				 (PU 、)
+				 (NR 法国)))
+		  (PU ，)
+		  (VP (VV 略逊於)
+		      (NP-PN-OBJ (NR 英国)
+				 (PU 、)
+				 (NR 荷兰))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 爱 *PRO* 看 美国 电影 的 程度 
+	  </arg>
+	  <arg n="1">
+	  英国 、 荷兰 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

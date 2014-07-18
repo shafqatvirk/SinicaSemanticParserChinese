@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 购入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="commodity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 香港))
+			      (ADJP (JJ 著名))
+			      (NP (NN 财团)))
+		      (NP (NP-PN (NR 长江)
+				 (NN 实业))
+			  (PU 、)
+			  (NP-PN (NR 百富勤))))
+	      (VP (PP-MNR (P 作为)
+			  (NP (NN 战略性)
+			      (NN 投资者)))
+		  (ADVP (AD 已))
+		  (VP (VV 购入)
+		      (AS 了)
+		      (NP-OBJ (NP-PN (PU “)
+				     (NR 深业)
+				     (NN 控股)
+				     (PU ”))
+			      (DNP (QP (CD 百分之十二))
+				   (DEG 的))
+			      (NP (NN 股权)))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 著名 财团 长江 实业 、 百富勤 
+	  </arg>
+	  <arg n="1">
+	  “ 深业 控股 ” 百分之十二 的 股权 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  作为 战略性 投资者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

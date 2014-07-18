@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 期许 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 expects"/>
+      <role argnum="2" argrole="entity arg1 is expected of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-TPC (PN 她们))
+	      (IP (IP (NP-SBJ (PP (P 对)
+				  (NP (PN 自己)))
+			      (NP (NN 期许)))
+		      (VP (VA 高)))
+		  (PU 、)
+		  (IP (NP-SBJ (NN 失望))
+		      (VP (ADVP (AD 往往))
+			  (ADVP (AD 也))
+			  (VP (VA 大)))))) 
+	  </parse>
+	  <arg n="0">
+	  她们 
+	  </arg>
+	  <arg n="2">
+	  对 自己 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

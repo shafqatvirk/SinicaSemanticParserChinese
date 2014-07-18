@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 划上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="thing arg0 draws for arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-BNF (P 为)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 拖欠)
+					      (QP-OBJ (CD 多)
+						      (CLP (M 年)))))
+				      (DEC 的)))
+			      (ADJP (JJ 涉外))
+			      (NP (NN 海事案))))
+		  (VP (VV 划上)
+		      (AS 了)
+		      (NP-OBJ (NN 句号))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  为 *OP* *T*-1 拖欠 多 年 的 涉外 海事案 	  	  
+	  </arg>
+	  <arg n="2">
+	  句号 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

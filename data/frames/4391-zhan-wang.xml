@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 展望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 looks into ahead of time"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NN 财政司))
+			  (NP (NN 司长)))
+		  (VP (VV 展望)
+		      (NP-OBJ (NP-PN (NR 香港))
+			      (NP (NN 经济)
+				  (NN 前景))))) 
+	  </parse>
+	  <arg n="0">
+	  财政司 司长 
+	  </arg>
+	  <arg n="1">
+	  香港 经济 前景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

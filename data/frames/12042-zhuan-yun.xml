@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转运 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 forward transports"/>
+      <role argnum="2" argrole="location arg0 forwards arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DNP (NP (NN 陆桥)
+			   (NN 东端))
+		       (DEG 的))
+		  (ADJP (JJ 区域性))
+		  (NP (NN 国际)
+		      (NN 集装箱)
+		      (NN 转运)
+		      (NN 中心))) 
+	  </parse>
+	  <arg n="1">
+	  集装箱 
+	  </arg>
+	  <arg n="2">
+	  中心 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 足够 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is sufficient for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VE 没有)
+		      (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 系统)))
+					  (DEC 的)))
+				  (NP (NN 训练)))
+			      (CC 和)
+			      (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 足够)))
+					  (DEC 的)))
+				  (NP (NN 备战)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (CP-Q (IP (IP-ADV (NP-PN-SBJ (NR 德国)
+				       (PU 、)
+				       (NR 意大利))
+			    (VP (PP (P 作为)
+				    (NP (NN 战败国)))
+				(ADVP (CS 虽然))
+				(NP-TMP (NT 今天))
+				(ADVP (AD 已))
+				(VP (VV 成为)
+				    (NP-OBJ (NN 民主)
+					    (NN 国家)))))
+		    (PU ，)
+		    (ADVP (AD 但))
+		    (PP-DIR (P 对)
+			    (NP (DNP (NP (NT 过去))
+				     (DEG 的))
+				(NP (NN 事件))))
+		    (ADVP-WH (AD 是否))
+		    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 回顾)
+				(ADVP (AD 一下))
+				(NP-OBJ (NN 历史))))
+		    (VP (ADVP (AD 就))
+			(VP (VV 足够)
+			    (AS 了))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 回顾 一下 历史 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  是否 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 过去 的 事件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <arg n="m" f="adv">
+	  德国 、 意大利 作为 战败国 虽然 今天 已 成为 民主 国家 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

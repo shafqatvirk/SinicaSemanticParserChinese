@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 瞪起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 has it opened wide"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-3 (PU 「)
+		      (NP-SBJ (PN 我))
+		      (VP (VV 觉得)
+			  (IP-OBJ (NP-SBJ (DP (DT 这)
+					      (CLP (M 个)))
+					  (NP (NN 法官)))
+				  (VP (ADVP (AD 不))
+				      (ADVP (AD 太))
+				      (VP (VA 好))))))
+	    (PU ，)
+	    (PU 」)
+	    (PP-TMP (P 在)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (PN 我们))
+				    (VP (NP-TMP (-NONE- *T*-1))
+					(ADVP (AD 依然))
+					(VP (VV 满头雾水))))
+				(DEC 的)))
+			(NP (NN 时候))))
+	    (PU ，)
+	    (NP-SBJ (PN 她))
+	    (VP (ADVP (AD 竟))
+		(ADVP (AD 一本正经))
+		(DVP (DEV 地))
+		(VP (VP (VV 瞪起)
+			(NP-OBJ (NN 眼)))
+		    (VP (VV 说)
+			(PU ：)
+			(IP-OBJ (IP (-NONE- *T*-3))
+				(IP-Q (ADVP-WH (AD 难道))
+				      (NP-SBJ (PN 你们))
+				      (VP (ADVP (AD 都))
+					  (ADVP (AD 没))
+					  (VP (VV 发觉)
+					      (IP-OBJ (NP-SBJ (PN 她))
+						      (VP (VE 有)
+							  (NP-OBJ (NN 种族)
+								  (NN 偏见)))))))
+				(PU ？)
+				(IP (NP-SBJ (PN 这))
+				    (VP (VC 是)
+					(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (ADVP (AD 不))
+								(VP (VA 对))))
+							(DEC 的))))))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	眼 
+	</arg>
+	<arg n="m" f="adv">
+	一本正经 
+	</arg>
+	<arg n="m" f="adv">
+	竟 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *OP* 我们 *T*-1 依然 满头雾水 的 时候 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

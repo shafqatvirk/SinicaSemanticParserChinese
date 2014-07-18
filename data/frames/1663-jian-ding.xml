@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坚定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 各)
+			      (CLP (M 级)))
+			  (NP (NN 乡镇)
+			      (NN 企业)))
+		      (NP (NN 主管)
+			  (NN 部门)
+			  (CC 与)
+			  (NN 宣传)
+			  (NN 部门)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (DNP (NP (NP (DP (DT 各))
+						(NP (NN 地)))
+					    (NP (NN 党委)
+						(CC 和)
+						(NN 政府)))
+					(DEG 的))
+				   (NP (NN 领导)))
+			       (LC 下)))
+		  (VP (VV 坚定)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (QP (CD 亿万))
+						  (NP (NN 农民)))
+					  (VP (NP-ADV (-NONE- *T*-3))
+					      (VP (VV 发展)
+						  (NP-OBJ (NN 乡镇)
+							  (NN 企业)))))
+				      (DEC 的)))
+			      (NP (NN 信心)))))) 
+	  </parse>
+	  <arg n="0">
+	  各 级 乡镇 企业 主管 部门 与 宣传 部门 
+	  </arg>
+	  <arg n="1">
+	  *OP* 亿万 农民 *T*-3 发展 乡镇 企业 的 信心 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 各 地 党委 和 政府 的 领导 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (DNP (NP (PN 我们))
+			       (DEG 的))
+			  (NP (NN 信念)))
+		  (VP (ADVP (AD 如此))
+		      (VP (VA 坚定))))
+	  </parse>
+	  <arg n="1">
+	  我们 的 信念 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如此 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

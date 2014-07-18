@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 展延 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 extends and postpones"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 此外))
+	    (PU ，)
+	    (IP-CND (NP-SBJ (NP (NN 灾民))
+			    (DNP (ADJP (JJ 原有))
+				 (DEG 的))
+			    (NP (NN 房屋)))
+		    (VP (VP (PP-PRP (P 因)
+				    (NP (NN 赈灾)))
+			    (VP (VV 毁损)))
+			(CC 并)
+			(VP (PP-MNR (P 经)
+				    (NP (NN 政府)))
+			    (VP (VV 认定)))))
+	    (PU ，)
+	    (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NP (PN 其))
+					(NP (NN 房屋)))
+				(VP (PP-TMP (P 於)
+					    (LCP (NP (NN 震灾))
+						 (LC 前)))
+				    (VP (MSP 所)
+					(VP (VV 办理)
+					    (NP-OBJ (-NONE- *T*-1))))))
+			    (DEC 的)))
+		    (NP (NN 担保)
+			(NN 借款)))
+	    (PU ，)
+	    (NP-SBJ (NP (PN 其))
+		    (NP (NN 利息)))
+	    (VP (VV 展延)
+		(QP-EXT (CD 五)
+			(CLP (M 年))))) 
+	</parse>
+	<arg n="1" f="psr">
+	*OP* 其 房屋 於 震灾 前 所 办理 *T*-1 的 担保 借款 
+	</arg>
+	<arg n="1" f="pse">
+	其 利息 
+	</arg>
+	<arg n="m" f="ext">
+	五 年 
+	</arg>
+	<arg n="m" f="cnd">
+	灾民 原有 的 房屋 因 赈灾 毁损 并 经 政府 认定 
+	</arg>
+	<arg n="m" f="adv">
+	此外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

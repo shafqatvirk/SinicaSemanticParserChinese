@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吵醒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="person arg0 wakes up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 半夜))
+	      (PU ，)
+	      (NP-SBJ (PN 我们))
+	      (VP (LB 被)
+		  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 嘈杂)))
+					  (DEC 的)))
+				  (NP (NN 喧嚷声)))
+			  (VP (VV 吵醒))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 嘈杂 的 喧嚷声 
+	  </arg>
+	  <arg n="1">
+	  我们 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  半夜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

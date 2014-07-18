@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 踏进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 steps into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 踏进)
+			    (NP-PN-OBJ (NR 故宫)
+				       (NN 博物院)))
+			(PU ，)
+			(VP (VV 通过)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 宛若)
+						    (NP-OBJ (NN 时光)
+							    (NN 隧道))))
+					    (DEC 的)))
+				    (NP (NN 灯)
+					(NN 箱门))))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (ADVP (AD 首))
+				(VP (VV 映)
+				    (LCP-OBJ (NP (NP (NN 眼)))
+					     (LC 中)))))))
+	    (VP (VC 是)
+		(IP-PRD (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-3))
+					    (VP (NP-PRD (NP (QP (CD 两))
+							    (NP (NN 公尺)))
+							(ADVP (AD 多)))))
+					(DEC 的)))
+				(ADJP (JJ 巨大))
+				(NP (NN 铜)
+				    (NN 人)))
+			(PU ，)
+			(VP (IP-ADV (NP-SBJ (NN 王者))
+				    (VP (VA 般)))
+			    (DVP (VP (VCD (VA 威严)
+					  (VA 肃穆)))
+				 (DEV 地))
+			    (VP (VV 俯视)
+				(NP-OBJ (NN 群众))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	故宫 博物院 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 鬻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="seller"/>
+    <role argnum="1" argrole="thing sold"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(CLP (M 段)))
+		    (CP-APP (IP (IP (NP-SBJ (NN 贫困))
+				    (VP (VV 交迫)))
+				(PU 、)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 鬻)
+					    (NP-OBJ (NN 字)))
+					(VP (VV 过)
+					    (NP-OBJ (NN 年))))))
+			    (DEC 的))
+		    (NP (NN 回忆)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-TMP (P 在)
+				    (LCP (IP (NP-TPC (PN 他))
+					     (NP-SBJ (NN 学术))
+					     (VP (VV 有成)))
+					 (LC 之後)))
+			    (VP (VRD (VV 回忆)
+				     (VV 起来)))))
+		(PU ，)
+		(ADVP (AD 固然))
+		(VP (VV 可)
+		    (VP (VV 堪)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 自豪))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	字 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

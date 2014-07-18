@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 区隔 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 divides"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 区隔)
+				(NP-OBJ (NN 市场) ))
+			    (PU 、)
+			    (VP (VV 吸引)
+				(NP-OBJ (DNP (NP (ADJP (JJ 不同))
+						 (NP (NN 族群) ))
+					     (DEG 的))
+					(NP (NN 消费者) ))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 进)
+					(NP-OBJ (NN 健身房) )))))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 众)
+			(CLP (M 家)))
+		    (NP (NN 俱乐部) ))
+	    (VP (ADVP (AD 都))
+		(VP (VE 有)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VA 不同)))
+				    (DEC 的)))
+			    (NP (NN 号召) ))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	市场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

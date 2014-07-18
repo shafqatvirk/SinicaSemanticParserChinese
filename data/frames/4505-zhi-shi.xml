@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 直驶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location arg0 drives directly to"/>
+      <role argnum="2" argrole="vehicle arg0 drives/road arg0 drives on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 南防)
+			 (NN 铁路))
+	      (VP (VV 可以)
+		  (VP (VV 直驶)
+		      (NP-OBJ (NN 码头))))) 
+	  </parse>
+	  <arg n="1">
+	  码头 
+	  </arg>
+	  <arg n="2">
+	  南防 铁路 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

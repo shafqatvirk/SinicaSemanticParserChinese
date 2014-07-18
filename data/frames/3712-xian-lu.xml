@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 显露 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing which becomes manifest of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (ADJP (JJ 新兴))
+			  (NP (NN 产业)))
+		      (NP (NN 经济)
+			  (NN 格局)))
+	      (VP (VRD (VV 显露)
+		       (VV 出))
+		  (NP-OBJ (ADJP (JJ 强劲))
+			  (NP (NN 发展)
+			      (NN 势头))))) 
+	  </parse>
+	  <arg n="0">
+	  新兴 产业 经济 格局 
+	  </arg>
+	  <arg n="1">
+	  强劲 发展 势头 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-2))
+					  (NP-SBJ (NN 棋风))
+					  (VP (VA 飘逸)))
+				      (DEC 的)))
+			      (NP-PN (NR 马晓春)))
+		      (VP (VV 遇上)
+			  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-3))
+					      (NP-SBJ (NN 棋风))
+					      (VP (VA 硬朗)))
+					  (DEC 的)))
+				  (NP-PN (NR 日本))
+				  (QP (CD 九)
+				      (CLP (M 段)))
+				  (NP-PN (NR 依田纪基)))))
+	      (PU ，)
+	      (QP-SBJ (NP (PN 其))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 脆弱)))
+			      (DEC 的)))
+		      (QP (CD 一)
+			  (CLP (M 面))))
+	      (VP (ADVP (AD 便))
+		  (ADVP (AD 充分))
+		  (VP (VRD (VV 显露)
+			   (VV 出来))))) 
+	  </parse>
+	  <arg n="1">
+	  其 *OP* *T*-1 脆弱 的 一 面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  充分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  便 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

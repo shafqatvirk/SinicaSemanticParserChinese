@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相似 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 两))
+		      (NP (NN 国)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (QP (CD 一些))
+				   (NP (NN 国际)
+				       (NN 问题)))
+			       (LC 上)))
+		  (VP (VE 有)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 一致)
+					      (CC 或)
+					      (VA 相似)))
+				      (DEC 的)))
+			      (NP (NN 看法)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 上海)
+			     (NR 荣恒)
+			     (NN 国际)
+			     (NN 贸易)
+			     (NN 进出口)
+			     (NN 公司))
+		      (PU 、)
+		      (NP-PN (NR 浙江省)
+			     (NR 嘉兴)
+			     (NR 天发)
+			     (NN 丝绸)
+			     (NN 进出口)
+			     (NN 公司)))
+	      (VP (PP (P 与)
+		      (NP (ADJP (JJ 上述))
+			  (NP (NN 情况))))
+		  (VP (VA 相似)))) 
+	  </parse>
+	  <arg n="0">
+	  上海 荣恒 国际 贸易 进出口 公司 、 浙江省 嘉兴 天发 丝绸 进出口 公司 
+	  </arg>
+	  <arg n="0">
+	  与 上述 情况 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

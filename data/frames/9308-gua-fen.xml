@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 瓜分 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 divides"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 只))
+		      (VP (VV 能)
+			  (VP (DVP (VP (VV 眼睁睁))
+				   (DEV 地))
+			      (VP (VV 看)
+				  (AS 著)
+				  (NP-OBJ (DNP (ADJP (JJ 偌大))
+					       (DEG 的))
+					  (NP (NN 市场)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (LB 被)
+					  (CP-OBJ (WHNP-2 (-NONE- *OP*))
+						  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+								  (IP (NP-SBJ (-NONE- *pro*))
+								      (VP (VV 进口)
+									  (NP-OBJ (-NONE- *T*-1)))))
+							      (NP (NN 产品)))
+						      (VP (VV 瓜分)
+							  (NP-OBJ (-NONE- *T*-2)))))))))))
+		  (PU ，)
+		  (VP (ADVP (AD 难以))
+		      (VP (VV 分一杯羹))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *pro* 进口 *T*-1 产品 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

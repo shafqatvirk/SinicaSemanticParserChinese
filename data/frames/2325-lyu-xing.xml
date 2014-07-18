@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 履行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing performed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 督促)
+	      (NP-OBJ (NN 企业))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 自觉))
+		      (VP (VV 履行)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 合同))
+					      (VP (VV 规定)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 权力)
+				      (PU 、)
+				      (NN 义务))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* 合同 规定 *T*-1 的 权力 、 义务 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自觉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

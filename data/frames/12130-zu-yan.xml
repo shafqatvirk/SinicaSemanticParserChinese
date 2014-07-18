@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 阻延 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 delays"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TPC (DP (DT 这)
+			      (CLP (M 件)))
+			  (NP (NN 事)))
+		  (LCP-TMP (PP (P 在)
+			       (NP (NN 解决)))
+			   (LC 之前))
+		  (PU ，)
+		  (NP-SBJ (NN 司法)
+			  (NN 程序))
+		  (VP (VP (ADVP (AD 不))
+			  (VP (VV 应)
+			      (VP (VV 受)
+				  (NP-OBJ (NN 阻延)))))
+		      (PU ，)
+		      (VP (VV 应)
+			  (VP (VV 继续)
+			      (VP (VV 进行)))))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  这 件 事 
+	  </arg>
+	  <arg n="1" f="pse">
+	  司法 程序 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 解决 之前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借债 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="amount of loan"/>
+      <role argnum="2" argrole="loan provider"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 化减)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 金融)
+					  (NN 机构))
+				  (VP (PP-DIR (P 对)
+					      (NP (NN 外)))
+				      (VP (VV 借债))))
+			      (DEC 的))
+		      (NP (NN 压力)))) 
+	  </parse>
+	  <arg n="0">
+	  金融 机构 
+	  </arg>
+	  <arg n="2">
+	  对 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

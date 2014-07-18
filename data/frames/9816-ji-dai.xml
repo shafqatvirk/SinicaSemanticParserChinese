@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 急待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 waits for eagerly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (PP-ADV (P 除了)
+		      (NP (DNP (NP (PP (P 向)
+				       (NP (NN 外)))
+				   (NP (NN 发展)))
+			       (DEG 的))
+			  (NP (NN 局限))))
+	      (PU ，)
+	      (NP-SBJ (UCP-APP (NP (NP (ADJP (JJ 黑))
+				       (NP (NN 金)))
+				   (NP (NN 政治)))
+			       (PU 、)
+			       (IP (NP-SBJ (NN 治安))
+				   (VP (VV 败坏)))
+			       (PU 、)
+			       (IP (NP-SBJ (NN 环保)
+					   (NN 观念))
+				   (VP (VP-FOC (VV 推展))
+				       (VP (VA 缓慢))))
+			       (ETC 等等))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (LCP-LOC (NP (NP-PN (NR 台湾))
+						   (NP (NN 内政)))
+					       (LC 中))
+				      (VP (VV 困扰)
+					  (NP-OBJ (NN 人)
+						  (NN 心)))))
+			      (DEC 的)))
+		      (NP (NN 沉阿)))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (VP (VV 急待)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 取得)
+				      (NP-OBJ (NN 共识)))
+				  (PU ，)
+				  (VP (VV 获得)
+				      (NP-OBJ (NN 解决)))))))) 
+	  </parse>
+	  <arg n="1">
+	  黑 金 政治 、 治安 败坏 、 环保 观念 推展 缓慢 等等 *OP* *T*-1 台湾 内政 中 困扰 人 心 的 沉阿 
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 取得 共识 ， 获得 解决 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  除了 向 外 发展 的 局限 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

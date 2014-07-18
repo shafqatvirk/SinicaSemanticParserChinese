@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分食 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 divides and eats"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 除了)
+		      (NP (NN 网路)
+			  (NN 公司)))
+	      (PU ，)
+	      (NP-SBJ (NN 杂志业))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 想)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 分食)
+				  (NP-OBJ (NP (NN 人力)
+					      (NN 资源)
+					      (NN 市场))
+					  (ADJP (JJ 大))
+					  (NP (NN 饼)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  人力 资源 市场 大 饼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

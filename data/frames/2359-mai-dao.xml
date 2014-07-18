@@ -1,0 +1,190 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 卖到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing sold"/>
+      <role argnum="2" argrole="location sold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 可以)
+		      (VP (PP-MNR (P 用)
+				  (NP (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (ADVP (AD 更))
+						      (VP (VA 低廉))))
+					      (DEC 的)))
+				      (NP (NN 价格))))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NN 货品))
+				      (VP (VP (VV 卖到)
+					      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-2))
+								  (VP (PP-MNR (P 以)
+									      (NP (NN 美元)))
+								      (VP (VV 计价))))
+							      (DEC 的)))
+						      (NP (NN 国际)
+							  (NN 市场))))
+					  (VP (VV 去)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  货品 	  
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 以 美元 计价 的 国际 市场 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 *OP* *T*-3 更 低廉 的 价格 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-ADV (CP-APP (IP (NP-SBJ (NN 风险))
+				       (VP (VV 分摊)))
+				   (DEC 的))
+			   (NP (NN 结果)))
+		   (PU ，)
+		   (IP-ADV (ADVP (AD 不管))
+			   (NP-SBJ (NN 产品))
+			   (VP (VP (VV 卖到)
+				   (NP-OBJ (PN 哪里)))
+			       (PU 、)
+			       (VP (PP-LOC (P 在)
+					   (NP (PN 哪里)))
+				   (VP (VV 生产)))))
+		   (PU ，)
+		   (NP-SBJ (NN 钱))
+		   (VP (ADVP (AD 都))
+		       (DVP (VP (VA 扎扎实实))
+			    (DEV 地))
+		       (VP (VV 落进)
+			   (NP-OBJ (DNP (NP (NN 台商))
+					(DEG 的))
+				   (NP (NN 口袋)))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="1">
+	  产品 	  
+	  </arg>
+	  <arg n="2">
+	  哪里 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不管 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing sold"/>
+      <role argnum="2" argrole="price"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-2))
+				  (NP-SBJ (NN 生产)
+					  (NN 成本))
+				  (VP (QP-PRD (QP (ADVP (AD 约))
+						  (QP (CD 三)
+						      (PU 、)
+						      (CD 四)
+						      (CLP (M 美元))))
+					      (QP (CD 一)
+						  (CLP (M 颗))))))
+			      (DEC 的)))
+		      (NP (NN 16MbD-RAM)))
+	      (PU ，)
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (ADVP (AD 最))
+				       (VP (VA 低))))
+			       (LC 时)))
+		  (ADVP (AD 只))
+		  (VP (VV 能)
+		      (VP (VV 卖到)
+			  (QP-OBJ (CD 一．七)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-2 生产 成本 约 三 、 四 美元 一 颗 的 16MbD-RAM 	  
+	  </arg>
+	  <arg n="2">
+	  一．七 美元 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *pro* 最 低 时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="business"/>
+      <role argnum="1" argrole="achievement"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (PU 「)
+		(ADVP-WH (AD 怎麽))
+		(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 卖)
+			    (NP-OBJ (NN 肉松))))
+		(VP (ADVP (AD 也))
+		    (VP (VV 能)
+			(VP (VP-FOC (VV 卖到))
+			    (VP (ADVP (AD 那麽))
+				(VP (VA 发达))))))) 
+	  </parse>
+	  <arg n="m" f="adv">
+	  怎麽	  
+	  </arg>
+	  <arg n="0">
+	  卖 肉松	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="1">
+	  那麽 发达 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

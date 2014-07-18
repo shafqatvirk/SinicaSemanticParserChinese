@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 司 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing (duty) arg0 performs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 是否))
+			  (VP (VV 要)
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (CP (WHNP-13 (-NONE- *OP*))
+						      (CP (IP (NP (-NONE- *T*-13))
+							      (VP (VA 庞大)))
+							  (DEC 的)))
+						  (NP (NN 立法)
+						      (NN 院区)))
+					  (VP (VP (VV 分为)
+						  (NP-OBJ (QP (CD 两))
+							  (NP (NN 院))))
+					      (VP-PRP (MSP 以)
+						      (VP (ADVP (AD 分))
+							  (VP (VV 司)
+							      (NP-OBJ (NN 职权)))))))))))
+	      (PU ，)
+	      (VP (VV 应)
+		  (VP (ADVP (AD 尽快))
+		      (VP (VCP (VV 评估)
+			       (VV 规划)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-13 庞大 的 立法 院区 
+	  </arg>
+	  <arg n="1">
+	  职权 
+	  </arg>
+	  <arg n="m" f="adv">
+	  分 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

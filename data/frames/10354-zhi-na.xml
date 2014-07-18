@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 滞纳 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 doesn't pay in time"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 不仅))
+	    (NP-SBJ (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 应)
+					    (VP (VV 纳)
+						(NP-OBJ (-NONE- *RNR*-3))))
+					(CC 及)
+					(VP (VV 滞纳)
+					    (NP-OBJ-3 (-NONE- *T*-2))))))
+			    (NP (NN 税款))
+			    (ETC 等))
+		    (NP (NN 计算)))
+	    (VP (VV 会)
+		(VP (VV 出)
+		    (NP-OBJ (NN 问题))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

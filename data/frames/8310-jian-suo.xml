@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 检索 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 searches for"/>
+      <role argnum="2" argrole="instrument"/>
+      <role argnum="3" argrole="place arg0 searches"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (NP (NN 软体)))
+	      (VP (VP (VV 类似)
+		      (NP-OBJ (NP (NN 搜寻)
+				  (NN 引擎))
+			      (NP (NN 功能))))
+		  (PU ，)
+		  (VP (VV 可以)
+		      (VP (VP (PP-DIR (P 对)
+				      (NP (NN 网页)
+					  (NN 内容)))
+			      (VP (VV 作)
+				  (VP (NP-ADV (DP (DT 全))
+					      (NP (NN 文)))
+				      (VP (VV 检索)))))
+			  (PU ，)
+			  (VP (MSP 以)
+			      (VP (VV 阻挡)
+				  (NP-OBJ (CP (WHNP-19 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-19))
+						      (VP (VV 含有)
+							  (NP-OBJ (PU 「)
+								  (NN 关键)
+								  (NN 字)
+								  (PU 」))))
+						  (DEC 的)))
+					  (NP (NN 文章))))))))) 
+	  </parse>
+	  <arg n="2">
+	  这 种 软体 
+	  </arg>
+	  <arg n="3">
+	  对 网页 内容 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全 文 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

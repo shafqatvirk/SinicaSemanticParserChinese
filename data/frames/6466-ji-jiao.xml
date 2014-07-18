@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 计较 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 cares/fusses about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 投资人))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 计较)
+			(NP-OBJ (NP (NN 公司))
+				(DNP (NP (NT 现在))
+				     (DEG 的))
+				(NP (NN 亏损)))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (NN 希望))
+				(VP (VV 寄托)
+				    (PP (P 在)
+					(NP (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VA 遥远)))
+						    (DEC 的)))
+					    (NP (NT 未来)))))))))) 
+	</parse>
+	<arg n="0">
+	投资人 
+	</arg>
+	<arg n="1">
+	公司 现在 的 亏损 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 消费者)))
+	    (VP (VP (ADVP (AD 很))
+		    (VP (VA 精明)))
+		(PU ，)
+		(VP (QP-TPC-24 (QP (CD 一)
+				   (CLP (M 分)))
+			       (QP (CD 一)
+				   (CLP (M 毫))))
+		    (ADVP (AD 都))
+		    (VP (VV 会)
+			(VP (VV 计较)
+			    (NP-OBJ (-NONE- *T*-24))))))) 
+	</parse>
+	<arg n="0">
+	台湾 消费者 
+	</arg>
+	<arg n="1">
+	一 分 一 毫 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

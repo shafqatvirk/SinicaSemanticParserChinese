@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 整改 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VRD (VV 整改)
+					(VV 完成))))
+			   (LC 前)))
+	      (NP-SBJ (NP (NN 国家))
+		      (ADJP (JJ 有关))
+		      (NP (NN 部门)))
+	      (VP (ADVP (AD 暂))
+		  (VP (VV 停)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 拨付)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ-3 (-NONE- *T*-2))
+						      (VP (PP-LGS (P 由)
+								  (NP (NN 国家)
+								      (NN 财政)
+								      (NN 债券)))
+							  (VP (VV 安排)
+							      (NP-OBJ (-NONE- *-3)))))
+						  (DEC 的)))
+					  (NP (NN 公路)
+					      (NN 建设)
+					      (NN 资金)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 问题))
+			   (VP (VP (VRD (VV 核查)
+					(VA 清楚)))
+			       (CC 并)
+			       (VP (PP-MNR (P 按)
+					   (NP (NN 规定)))
+				   (VP (VRD (VV 整改)
+					    (VV 完成))))))
+		       (LC 之后))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 再))
+		  (VP (VV 恢复)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 拨付)
+				  (NP-OBJ (NN 国家)
+					  (NN 财政)
+					  (NN 债券)
+					  (NN 资金))))))) 
+	  </parse>
+	  <arg n="1">
+	  问题 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 规定 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

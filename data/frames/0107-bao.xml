@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 报 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="reporter"/>
+      <role argnum="1" argrole="thing reported"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-DIR (P 对)
+		  (NP (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (VP (VV 隐瞒))
+					  (VP (ADVP (AD 不))
+					      (VP (VV 报))))
+				      (PU 、)
+				      (VP (VP-FOC (VV 制止))
+					  (VP (DVP (AD 不))
+					      (VP (VV 力))))))
+			      (DEC 的))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="reporter"/>
+      <role argnum="1" argrole="thing reported"/>
+      <role argnum="2" argrole="entity reporting to"/>
+      <role argnum="3" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="controlip" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-PRP (P 因)
+					      (NP (ADJP (JJ 特殊))
+						  (NP (NN 情况))))
+				      (ADVP (AD 不))
+				      (VP (VV 能)
+					  (VP (ADVP (AD 同步))
+					      (VP (VV 缴付))))))
+			      (DEC 的))))
+	      (PU ，)
+	      (VP (VV 应)
+		  (VP (VP (VV 报)
+			  (NP-OBJ (ADJP (JJ 原))
+				  (NP (NN 审批)
+				      (NN 机构)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 批准))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (PP-MNR (P 按)
+				  (NP (NP (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (ADVP (AD 实际))
+							  (VP (VV 缴付)
+							      (NP-OBJ (-NONE- *T*-2)))))
+						  (DEC 的)))
+					  (NP (NN 出资额)))
+				      (NP (NN 比例))))
+			  (VP (VV 分配)
+			      (NP-OBJ (NN 收益))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 因 特殊 情况 不 能 同步 缴付 的 	  	  
+	  </arg>
+	  <arg n="2">
+	  原 审批 机构 	  	  
+	  </arg>
+	  <arg n="3">
+	  *PRO* 批准 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

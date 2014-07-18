@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 在望 </id>
+    <frameset id="f1" edef="to be in sight">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 若))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 出现)
+				  (NP-OBJ (NN 意外))))))
+	      (PU ，)
+	      (IP-SBJ (NP-SBJ (PN 她们))
+		      (VP (VV 进入)
+			  (NP-OBJ (NN 复赛))))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 在望)))) 
+	  </parse>
+	  <arg n="0">
+	  她们 进入 复赛 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  若 *PRO* 不 出现 意外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

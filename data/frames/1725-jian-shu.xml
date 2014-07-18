@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 建树 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 为期)
+					  (QP-OBJ (CD 七)
+						  (CLP (M 天)))))
+				  (DEC 的)))
+			  (IP-APP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PU “)
+				      (VP (VV 爱)
+					  (NP-OBJ (NP (PN 我))
+						  (NP-PN (NR 中华))))
+				      (PU ，)
+				      (VP (VV 建树)
+					  (NP-PN-OBJ (NR 香江)))
+				      (PU ”)))
+			  (NP (NN 公民)
+			      (NN 教育)
+			      (NN 教学)
+			      (NN 系列)
+			      (NN 活动)))
+		  (NP (NP-PN (NR 香港))
+		      (NP (NN 学生)))
+		  (NP (NN 交流团))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  香江 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

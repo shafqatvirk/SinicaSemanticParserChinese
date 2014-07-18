@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承租 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="leasee"/>
+      <role argnum="1" argrole="thing leased"/>
+      <role argnum="2" argrole="leaser"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 东聚))
+	      (VP (VP (PP-TMP (P 在)
+			      (NP (NT 一九八九年)))
+		      (ADVP (AD 始))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 东莞)))
+		      (VP (VV 承租)
+			  (NP-OBJ (NN 厂房))))
+		  (PU ，)
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 一))
+				  (VP (VV 开始))))
+		      (VP (VV 制造)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-1))
+					      (NP-SBJ (NN 劳力))
+					      (VP (VA 密集)))
+					  (DEC 的)))
+				  (NP (NN 电源)
+				      (NN 保护器)))))
+		  (PU ，)
+		  (VP (PP-ADV (P 经过)
+			      (LCP (NP (QP (CD 三)
+					   (CLP (M 年)))
+				       (NP (NN 投产)))
+				   (LC 後)))
+		      (PU ，)
+		      (NP-TMP (NT 九二年))
+		      (VP (VP (ADVP (AD 大举))
+			      (VP (VV 投资)
+				  (NP-OBJ (NN 大陆))))
+			  (PU ，)
+			  (VP (VV 设立)
+			      (NP-OBJ (NN 滑鼠)
+				      (NN 生产)
+				      (NN 线))))))) 
+	  </parse>
+	  <arg n="0">
+	  东聚 
+	  </arg>
+	  <arg n="1">
+	  厂房 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 东莞 
+	  </arg>
+	  <arg n="m" f="adv">
+	  始 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 一九八九年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

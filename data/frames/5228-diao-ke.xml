@@ -1,0 +1,115 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 雕刻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 carves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 博物馆))
+				(VP (VV 收藏)
+				    (NP-OBJ (-NONE- *T*-2))))
+			    (DEC 的)))
+		    (DP (DT 这)
+			(CLP (M 个)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 题名))
+				(VP (VC 为)
+				    (NP-TTL-PRD (PU 《)
+						(DNP (LCP (NP (NN 狩猎))
+							  (LC 前))
+						     (DEG 的))
+						(NP (NN 占卜))
+						(PU 》))))
+			    (DEC 的)))
+		    (NP (NN 作品)))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			(CP (IP (NP-PN-SBJ (NR 撒古流))
+				(VP (VV 雕刻)
+				    (NP-OBJ (-NONE- *T*-4))))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (ADJP (JJ 女))
+					    (NP (NN 巫师)))
+				    (VP (PP-BNF (P 为)
+						(LCP (IP (NP-SBJ (NN 猎人))
+							 (VP (VV 狩猎)))
+						     (LC 前)))
+					(VP (MSP 所)
+					    (VP (VV 做)
+						(NP-OBJ (-NONE- *T*-3))))))
+				(DEC 的)))
+			(NP (NN 占卜)
+			    (NN 仪式))))) 
+	</parse>
+	<arg n="0">
+	撒古流 
+	</arg>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP-APP (IP (NP-PN (NR 王壮为))
+			    (VP (NP-ADV (QP (CD 单))
+					(NP (NN 刀)))
+				(VP (VV 雕刻))))
+			(DEC 的))
+		(NP (NN 功力))) 
+	</parse>
+	<arg n="0">
+	王壮为 
+	</arg>
+	<arg n="m" f="adv">
+	单 刀 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-3 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-3))
+			(VP (NP-MNR (ADJP (JJ 黄))
+				    (NP (NN 水晶) ))
+			    (VP (VV 雕刻))))
+		    (DEC 之)))
+	    (NP (NN 龙饰)
+		(CC 或)
+		(NN 财神爷)
+		(NN 神像))) 
+	</parse>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="mnr">
+	黄 水晶 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

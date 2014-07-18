@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感染 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="virus, etc."/>
+      <role argnum="1" argrole="thing afffected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NP-PN (NR 英国))
+			  (NP-TTL (PU 《)
+				  (NT 星期日)
+				  (NR 泰晤士报)
+				  (PU 》))
+			  (NP (NT ２７日))
+			  (NP (NN 报道))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 名))
+				  (VP (VC 为)
+				      (NP-PRD (PU “)
+					      (ADJP (JJ 远程))
+					      (NP (NN 探险者))
+					      (PU ”))))
+			      (DEC 的)))
+		      (ADJP (JJ 新型))
+		      (ADJP (JJ 恶性))
+		      (NP (NN 电脑)
+			  (NN 病毒)))
+	      (VP (VV 能)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (CP-APP (IP (NP-SBJ (NN 用户))
+						   (VP (DVP (AD 不))
+						       (VP (VV 执行)
+							   (NP-OBJ (DP (DT 任何))
+								   (NP (NN 操作))))))
+					       (DEC 的))
+				       (NP (NN 情况)))
+				   (LC 下)))
+		      (VP (PU “)
+			  (VV 感染)
+			  (PU ”)
+			  (NP-OBJ (NN 电脑)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 一 *OP* *T*-1 名 为 “ 远程 探险者 ” 的 新型 恶性 电脑 病毒 
+	  </arg>
+	  <arg n="1">
+	  电脑 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 英国 《 星期日 泰晤士报 》 ２７日 报道 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 用户 不 执行 任何 操作 的 情况 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

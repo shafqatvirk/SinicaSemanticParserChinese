@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 专心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 concentrates on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 儒生))
+	    (VP (LCP-ADV (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 专心)
+				 (NP-OBJ (NN 学问))))
+			 (LC 之外))
+		(PU ，)
+		(ADVP (AD 更))
+		(PP-BNF (P 为)
+			(NP (NN 後世)))
+		(VP (VV 立下)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 关心)
+					    (NP-OBJ (NN 社会)
+						    (CC 与)
+						    (NN 政治))))
+				    (DEC 的))
+			    (NP (NN 传统)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	学问 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 难))
+		(VP (VV 专心)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VRD (VV 扮演)
+				     (VA 好))
+				(NP-OBJ (DNP (NP (NN 司法)
+						 (NN 警察))
+					     (DEG 的))
+					(NP (NN 角色)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 扮演 好 司法 警察 的 角色 
+	</arg>
+	<arg n="m" f="adv">
+	难 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (PN 她))
+		(VP (VP (ADVP (AD 不))
+			(VP (VC 是)
+			    (VP (ADVP (AD 真的))
+				(NP-ADV (NN 肚子))
+				(VP (VV 饿)))))
+		    (PU ，)
+		    (VP (ADVP (AD 只是))
+			(IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (QP-ADV (OD 第一)
+					    (CLP (M 次)))
+				    (VP (VV 拍戏))))
+			(PU ，)
+			(ADVP (AD 有时))
+			(ADVP (AD 无法))
+			(VP (VV 专心))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<arg n="m" f="adv">
+	有时 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 第一 次 拍戏 
+	</arg>
+	<arg n="m" f="adv">
+	只是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

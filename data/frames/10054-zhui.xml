@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 辍 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 stops doing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (NN 书法)
+				(PU 、)
+				(NN 篆刻))
+			    (NP (NN 大师)))
+		    (NP-PN (NR 王壮为) ))
+	    (VP (VP (QP-ADV (CD 一)
+			    (CLP (M 生)))
+		    (VP (VP-FOC (VCD (VV 刻)
+				     (VV 写)))
+			(VP (ADVP (AD 不))
+			    (VP (VV 辍)))))
+		(PU ，)
+		(VP (PP-MNR (P 以)
+			    (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (PU 「)
+						(QP-ADV (CD 一)
+							(CLP (M 笔)))
+						(ADVP (AD 不))
+						(VP (VA 苟))
+						(PU 」)))
+					(DEC 的))
+				(NP (NN 创作)
+				    (NN 态度) )))
+		    (VP (VV 留下)
+			(NP-OBJ (QP (CD 许多))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (PU 「)
+						(VE 无)
+						(IP-OBJ (QP-SBJ (CD 一)
+								(CLP (M 笔)))
+							(VP (ADVP (AD 不))
+							    (VP (VA 美))))
+						(PU 」)))
+					(DEC 的)))
+				(NP (NN 作品) )))))) 
+	</parse>
+	<arg n="0">
+	书法 、 篆刻 大师 王壮为 
+	</arg>
+	<arg n="1">
+	刻 写 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	一 生 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 倒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="thing collapsing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 对手))
+		  (VP (VV 倒)
+		      (AS 了))) 
+	  </parse>
+	  <arg n="1">
+	  对手 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="pour">
+      <role argnum="0" argrole="agent, pourer"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 当)
+		      (LCP (IP (NP-SBJ (PN 他们))
+			       (VP (VV 进入)
+				   (NP-OBJ (NP (NP-APP (NP (NP-PN (NR 申亚乡))
+							   (QP (CD 一))
+							   (NP (NN 村)))
+						       (NP (NN 牧民)))
+					       (NP-PN (NR 索次)))
+					   (NP (NN 家)))))
+			   (LC 时)))
+	      (PU ，)
+	      (NP-SBJ (DNP (QP (CD ４５)
+			       (CLP (M 岁)))
+			   (DEG 的))
+		      (NP (NN 主人)))
+	      (VP (VP (VV 倒)
+		      (NP-OBJ (NN 酥油茶)))
+		  (VP (VV 招待)
+		      (NP-OBJ (PN 大家))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  ４５ 岁 的 主人 	  	  
+	  </arg>
+	  <arg n="1">
+	  酥油茶 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当 他们 进入 申亚乡 一 村 牧民 索次 家 时 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="reverse">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 reverses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (NP (QP (OD 三))
+			       (NP (NN 年级)))
+			   (LC 後))
+		  (VP (VRD (VV 倒)
+			   (VV 过来))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  三 年级 後 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

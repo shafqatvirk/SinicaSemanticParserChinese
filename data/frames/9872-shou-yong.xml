@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 enjoys the benefits of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (NN 教育))
+		      (VP (ADVP (AD 好好))
+			  (VP (VV 做))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 很多))
+		      (NP (NN 地方)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 能)
+		      (VP (VV 受用))))) 
+	  </parse>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="loc">
+	  很多 地方 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  教育 好好 做 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 靠近 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is close to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 靠近)
+		(NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VA 珍贵)))
+				    (DEC 的)))
+			    (NP (NN 铁杉林)))
+			(CC 与)
+			(NP (NP (NP-APP (NN 国宝)
+					(NN 鱼))
+				(NP (NN 樱花钩吻鲑)))
+			    (NP (NN 栖息地)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 珍贵 的 铁杉林 与 国宝 鱼 樱花钩吻鲑 栖息地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 moves closer to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DNP (LCP (NP (NN 三角)
+				      (NN 关系))
+				  (LC 中))
+			     (DEG 的))
+			(NP-PN (NR 美国)))
+		(VP (ADVP (AD 已经))
+		    (PP-DIR (P 向)
+			    (NP-PN (NR 中共)))
+		    (VP (VV 靠近)))) 
+	</parse>
+	<arg n="0">
+	三角 关系 中 的 美国 
+	</arg>
+	<arg n="1">
+	向 中共 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

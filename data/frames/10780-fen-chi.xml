@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分吃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing (food) arg0 shares"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 儿子))
+	    (VP (ADVP (AD 还))
+		(VP (VV 要)
+		    (VP (VV 分吃)
+			(NP-OBJ (NN 母)
+				(NN 食)))))) 
+	</parse>
+	<arg n="0">
+	儿子 
+	</arg>
+	<arg n="1">
+	母 食 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

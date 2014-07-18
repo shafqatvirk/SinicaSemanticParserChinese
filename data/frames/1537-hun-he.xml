@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 混合 </id>
+    <frameset id="f1" edef="mix up">
+      <role argnum="0" argrole="mixer"/>
+      <role argnum="1" argrole="thing mixed up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 生物学家))
+	      (VP (BA 把)
+		  (IP (NP-SBJ (NN 植物)
+			      (NN 细胞)
+			      (NN 霉素))
+		      (VP (VP (PP (P 同)
+				  (NP (NN 珍珠粉)))
+			      (VP (VV 混合)))
+			  (PU ，)
+			  (VP (VV 制成)
+			      (NP-OBJ (ADJP (JJ 颗粒状))
+				      (NP (NN 药剂)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  生物学家 	  
+	  </arg>
+	  <arg n="1">
+	  植物 细胞 霉素 	  
+	  </arg>
+	  <arg n="1" f="CRD">
+	  同 珍珠粉 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 踏出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing (step) arg0 makes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (ADVP (AD 终於))
+		(ADVP (AD 勇敢))
+		(VP (VV 踏出)
+		    (QP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 真正))
+					    (VP (VA 民主))))
+				    (DEC 的))
+			    (QP (OD 第一)
+				(CLP (M 步))))))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	*PRO* 真正 民主 的 第一 步 
+	</arg>
+	<arg n="m" f="adv">
+	勇敢 
+	</arg>
+	<arg n="m" f="adv">
+	终於 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

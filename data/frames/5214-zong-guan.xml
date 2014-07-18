@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 综观 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 looks at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (NP-APP (NP-PN (NR 纺研)
+				   (NN 中心))
+			    (NP (NN 总经理)))
+		    (NP-PN (NR 姚兴川)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 综观)
+			    (NP-OBJ (NN 全局))))
+		(PU ，)
+		(ADVP (AD 还是))
+		(ADVP (AD 略))
+		(VP (VV 感)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 忧心)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	全局 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

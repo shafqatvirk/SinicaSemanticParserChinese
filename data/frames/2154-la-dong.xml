@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拉动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity pulling"/>
+      <role argnum="1" argrole="entity pulled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DNP (NP (NN 投资)
+				 (NN 增速))
+			     (DEG 的))
+			(NP (NN 加快)))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 拉动)
+					    (NP-OBJ (NN 经济)
+						    (NN 增长))))
+				    (DEC 的)))
+			    (ADJP (JJ 主要))
+			    (NP (NN 因素))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  经济 增长 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

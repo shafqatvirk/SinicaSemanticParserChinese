@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无聊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 一旦))
+			    (VP (VV 上)
+				(AS 了)
+				(NP-OBJ (NN 国中)))))
+		(PU ，)
+		(IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 要)
+			    (VP (VRD (VV 静)
+				     (VV 下来))
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 阅读)
+					    (NP-OBJ (QP (CD 一)
+							(CLP (M 篇)))
+						    (NP (NN 文章))))))))
+		(PU ，)
+		(ADVP (AD 就))
+		(VP (VV 会)
+		    (VP (VV 觉得)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 很))
+				    (VP (VA 无聊)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	很 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

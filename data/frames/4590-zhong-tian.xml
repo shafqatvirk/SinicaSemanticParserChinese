@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 种田 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 今年))
+				      (VP (QP-PRD (CD 五十四)
+						  (CLP (M 岁))))))
+			      (DEC 的)))
+		      (NP-APP (NP-PN (NR 南海市)
+				     (NR 豪景村))
+			      (NP (NN 村民)))
+		      (NP-PN (NR 董润卓)))
+	      (VP (ADVP (AD 已经))
+		  (QP-ADV (CD 十多)
+			  (CLP (M 年)))
+		  (VP (VV 没有)
+		      (VP (VV 种田)
+			  (AS 了))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 今年 五十四 岁 的 南海市 豪景村 村民 董润卓 
+	  </arg>
+	  <arg n="m" f="adv">
+	  十多 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

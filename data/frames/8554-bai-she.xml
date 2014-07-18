@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 摆设 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 sets up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (NP-PN (NR 台北市))
+			   (DNP (LCP (NP-PN (NR 圣克里斯多福)
+					    (NN 教堂))
+				     (LC 前))
+				(DEG 的))
+			   (NP (NN 人行道)))
+		       (LC 上))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (DP-ADV (DT 每))
+			      (VP (VV 到)
+				  (NP-OBJ (NN 假日)))))
+		  (ADVP (AD 就))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (NN 人))
+			      (VP (VP (VV 来)
+				      (NP-OBJ (PN 此)))
+				  (VP (VV 摆设)
+				      (NP-OBJ (NN 英文)
+					      (NN 报摊)))))))) 
+	  </parse>
+	  <arg n="0">
+	  人 
+	  </arg>
+	  <arg n="1">
+	  英文 报摊 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

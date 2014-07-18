@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看多 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 sees a lot of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 面对)
+			  (NP-OBJ (DNP (NP (NN 资讯)
+					   (NN 时代))
+				       (DEG 的))
+				  (NP (NN 竞争)))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 看多)
+					  (AS 了)
+					  (NP-OBJ (NN 产业)
+						  (NN 起伏))))
+				  (PU 、)
+				  (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 韧性)
+					      (CC 和)
+					      (NN 弹性))
+				      (VP (VA 十足))))
+			      (DEC 的)))
+		      (NP-PN (NR 叶进泰)))
+	      (VP (ADVP (AD 毫不))
+		  (VP (VV 退缩)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  产业 起伏 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

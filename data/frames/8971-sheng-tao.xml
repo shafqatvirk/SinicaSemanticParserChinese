@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 声讨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 denounces"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 不时))
+		  (VP (VV 听到)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 要)
+					      (VP (VV 声讨)
+						  (NP-OBJ (NN 电影)
+							  (NN 政策)))))
+				      (DEC 的))
+			      (NP (NN 言论)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  电影 政策 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

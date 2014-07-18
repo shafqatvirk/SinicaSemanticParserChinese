@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 颁发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="award giver"/>
+      <role argnum="1" argrole="award"/>
+      <role argnum="2" argrole="award receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-APP (NP-PN (NR 菲律宾))
+				(NP (NN 总统)))
+			(NP-PN (NR 拉莫斯)))
+		(VP (VP (VV 出席)
+			(AS 了)
+			(NP-OBJ (ADJP (JJ 颁奖))
+				(NP (NN 仪式))))
+		    (CC 并)
+		    (VP (PP-DIR (P 向)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 荣获)
+						    (NP-OBJ (NP (NT 今年))
+							    (NP-PN (NR 麦格赛赛奖)))))
+					    (DEC 的)))
+				    (QP (CD ６)
+					(CLP (M 名)))
+				    (ADJP (JJ 杰出))
+				    (NP (NN 人士))))
+			(VP (VV 颁发)
+			    (AS 了)
+			    (NP-OBJ (NN 奖章)
+				    (PU 、)
+				    (NN 奖金)
+				    (CC 和)
+				    (NN 证书)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  菲律宾 总统 拉莫斯 
+	  </arg>
+	  <arg n="2">
+	  向 *OP* (*T*-1)->(６名杰出人士) 荣获 今年 麦格赛赛奖 的 ６名杰出 人士 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  奖章 、 奖金 和 证书 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 卫生部))
+		(VP (VP (ADVP (AD 已))
+			(VP (VV 颁发)
+			    (NP-OBJ (NN 文件))))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (PN 其))
+				(VP (VV 定为)
+				    (NP-OBJ (ADJP (JJ 国家级))
+					    (NP (ADJP (JJ 新))
+						(NP (NN 药)))
+					    (NP (NN 保密)
+						(NN 品种))))))))) 
+	  </parse>
+	  <arg n="0">
+	  卫生部 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  文件 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DP (DT 该))
+			(NP (NN 奖)))
+		(VP (PP-TMP (P 自)
+			    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (NP-TMP (NT １９５８年))
+					 (VP (VV 开始)
+					     (VP (VV 颁发)))))
+				 (LC 以来)))
+		    (PU ，)
+		    (ADVP (AD 已))
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ (NP (QP (CD １７２)
+						(CLP (M 位)))
+					    (NP (NN 个人)))
+					(CC 和)
+					(NP (QP (CD １４)
+						(CLP (M 个)))
+					    (NP (NN 机构))))
+				(VP (VV 获奖)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  １９５８年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

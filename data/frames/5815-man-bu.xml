@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 满布 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is filled with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (QP (CD 十))
+			    (NP (NN 目)))
+		    (VP (MSP 所)
+			(VP (VV 见))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (DP (DT 这)
+				 (QP (CD 一)
+				     (CLP (M 代))))
+			     (ADJP (JJ 小))
+			     (NP (NN 朋友)))
+			 (DEG 的))
+		    (NP (NN 环境)))
+	    (VP (ADVP (AD 早))
+		(ADVP (AD 已))
+		(VP (VV 满布)
+		    (NP-OBJ (NN 英文)
+			    (NN 资源))))) 
+	</parse>
+	<arg n="0">
+	这 一 代 小 朋友 的 环境 
+	</arg>
+	<arg n="1">
+	英文 资源 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="adv">
+	早 
+	</arg>
+	<arg n="m" f="adv">
+	十 目 所 见 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (P 从)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-1))
+				    (IP (IP (NP-SBJ (NN 垃圾))
+					    (VP (VV 满布)))
+					(PU 、)
+					(IP (NP-SBJ (NN 杂草))
+					    (VP (VV 丛生)))))
+				(DEC 的)))
+			(NP (NN 烂泥地))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 林边))
+		    (NP (NN 义工)))
+	    (VP (NP-ADV (QP (CD 一))
+			(NP (NN 手)))
+		(VP (VV 打造)
+		    (NP-OBJ (DNP (NP (NT 今天))
+				 (DEG 的))
+			    (NP-PN (NN 河滨)
+				   (NN 公园))
+			    (NP (NN 花圃)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	垃圾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NN 中年))
+	    (NP-SBJ (NN 地雷))
+	    (VP (VV 满布))) 
+	</parse>
+	<arg n="1">
+	地雷 
+	</arg>
+	<arg n="m" f="tmp">
+	中年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 瘫痪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 paralyses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VE 没有)
+			    (NP-OBJ (NN 流血)
+				    (CC 与)
+				    (NN 烟硝))))
+		(ADVP (AD 就))
+		(VP (VV 瘫痪)
+		    (NP-OBJ (NN 敌军)
+			    (NN 攻势))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	敌军 攻势 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 没有 流血 与 烟硝 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 父母))
+	    (VP (VA 瘫痪))) 
+	</parse>
+	<arg n="1">
+	父母 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

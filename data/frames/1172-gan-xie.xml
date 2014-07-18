@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感谢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thanker"/>
+      <role argnum="1" argrole="thing thankful for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (VV 感谢)
+		  (NP-OBJ (DNP (NP (PN 他们))
+			       (DEG 的))
+			  (QP (CD 一)
+			      (CLP (M 片)))
+			  (NP (NN 赤诚))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  我们 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  他们 的 一 片 赤诚 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thanker"/>
+      <role argnum="1" argrole="person thanked"/>
+      <role argnum="2" argrole="thing thankful for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 钱其琛))
+	      (VP (VV 感谢)
+		  (NP-PN-OBJ (NR 宋浩京))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 转达)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 朝鲜))
+					   (NP (NN 领导人)))
+				       (DEG 的))
+				  (NP (NN 问候))))))) 
+	  </parse>
+	  <arg n="0">
+	  钱其琛 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  宋浩京 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 转达 朝鲜 领导人 的 问候 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伸入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing extended"/>
+      <role argnum="2" argrole="location extended into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VA 好奇)))
+			      (DEC 的)))
+		      (NP (NN 姑娘们)))
+	      (VP (VP (VP (ADVP (AD 更))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NN 纤手))
+				      (VP (VV 伸入)
+					  (LCP-OBJ (NP (NN 温泉))
+						   (LC 中))))))
+		      (VP (MSP 去)
+			  (VP (VV 试)
+			      (NP-OBJ (NN 温)))))
+		  (PU ，)
+		  (VP (ADVP (AD 却))
+		      (VP (SB 被)
+			  (VP (VV 烫)
+			      (DER 得)
+			      (VP (ADVP (AD 尖声))
+				  (VP (VV 怪叫)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 好奇 的 姑娘们 
+	  </arg>
+	  <arg n="1">
+	  纤手 
+	  </arg>
+	  <arg n="2">
+	  温泉 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

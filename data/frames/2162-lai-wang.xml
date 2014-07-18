@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 来往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party travelling"/>
+      <role argnum="1" argrole="locations to and from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NP-PN (NR 台湾))
+				   (NP (NN 学生)))
+			   (VP (VP (VV 来)
+				   (NP-OBJ (NN 祖国)
+					   (NN 大陆)))
+			       (VP (VV 就学))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NN 学生)
+		      (PU 、)
+		      (NN 学生)
+		      (NN 家长)
+		      (CC 及)
+		      (NN 亲朋)
+		      (NN 好友))
+	      (VP (VP-FOC (VV 来往)
+			  (NP-OBJ (NP (NN 海峡))
+				  (QP (CD 两))
+				  (NP (NN 岸))))
+		  (VP (ADVP (AD 十分))
+		      (VP (VA 频繁))))) 
+	  </parse>
+	  <arg n="0">
+	  学生 、 学生 家长 及 亲朋 好友 
+	  </arg>
+	  <arg n="1">
+	  海峡 两 岸 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  ((IP (NP-SBJ (NP-PN (NN 公安部)
+				  (NN 出入境)
+				  (NN 管理局))
+			   (NP (NN 官员)))
+		   (VP (NP-TMP (NT 今天))
+		       (VP (VV 说)
+			   (PU ，)
+			   (IP-OBJ (PP-TMP (P 自)
+					   (LCP (NP (NT 一九九九年)
+						    (NT 一月)
+						    (NT 十五日))
+						(LC 起)))
+				   (PU ，)
+				   (NP-PN-SBJ (NN 公安部))
+				   (VP (ADVP (AD 将))
+				       (VP (VV 启用)
+					   (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						       (CP (IP (NP-SBJ (-NONE- *T*-1))
+							       (VP (VA 新)))
+							   (DEC 的)))
+						   (NP (PU “)
+						       (IP-APP (NP-SBJ (NP-PN (NR 港)
+									      (NR 澳))
+								       (NP (NN 居民)))
+							       (VP (VV 来往)
+								   (NP-OBJ (NN 内地))))
+						       (NP (NN 通行证))
+						       (PU ”))))))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  港 澳 居民 
+	  </arg>
+	  <arg n="1">
+	  内地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VCD (VV 来往)
+					   (VV 穿梭))))
+			      (DEC 的)))
+		      (NP (NN 登山车)
+			  (PU 、)
+			  (NN 电缆车)
+			  (CC 和)
+			  (NN 空中)
+			  (NN 吊车)))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (DP (DT 这))
+				  (NP (PN 一切)))
+			  (VP (VV 尽收眼底))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

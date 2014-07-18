@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 锯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 saws"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 树头))
+	    (VP (ADVP (AD 更))
+		(VP (VP (VA 宽广))
+		    (VP (ADVP (AD 难))
+			(VP (VV 锯)))))) 
+	</parse>
+	<arg n="1">
+	树头 
+	</arg>
+	<arg n="m" f="adv">
+	难 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 假装 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="state arg0 pretends to be in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 不知所云)))
+			      (DEC 的)))
+		      (NP (NN 语言)
+			  (NN 游戏)))
+	      (PU ，)
+	      (VP (PP (P 有如)
+		      (IP (NP-SBJ (NN 鸵鸟))
+			  (VP (VV 埋首)
+			      (LCP-OBJ (NP (NN 沙))
+				       (LC 中)))))
+		  (PU ，)
+		  (ADVP (AD 只))
+		  (VP (VV 会)
+		      (VP (VV 让)
+			  (NP-OBJ (NN 问题))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							       (VP (VV 假装)
+								   (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+									   (VP (VPT (VV 看)
+										    (AD 不)
+										    (VV 见))))))
+							   (DEC 的))
+						   (NP (PN 自我))
+						   (NP (NN 高兴)))
+					       (LC 中)))
+				  (VP (VV 恶化)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 看 不 见 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

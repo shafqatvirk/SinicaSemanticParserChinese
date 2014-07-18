@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出席 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="attendee"/>
+      <role argnum="1" argrole="meeting, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 中外)
+			  (NN 来宾))
+		      (QP (CD 四千多))
+		      (NP (NN 人)))
+	      (VP (VV 出席)
+		  (AS 了)
+		  (NP-OBJ (NN 开幕式)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中外 来宾 四千多 人 
+	  </arg>
+	  <arg n="1">
+	  开幕式 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NN 世界)
+				     (NN 贸易)
+				     (NN 组织))
+			      (NP (NN 总干事)))
+		      (NP-PN (NR 鲁杰罗)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 出席))
+		      (CC 并)
+		      (VP (VV 作)
+			  (NP-OBJ (NN 专题)
+				  (NN 演讲))))))
+	  </parse>
+	  <arg n="0">
+	  世界 贸易 组织 总干事 鲁杰罗 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

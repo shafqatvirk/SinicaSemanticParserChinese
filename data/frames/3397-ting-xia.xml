@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 停下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="stopper"/>
+      <role argnum="1" argrole="thing stopped"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不一会))
+	      (PU ，)
+	      (PP-LOC (P 在)
+		      (NP (QP (CD 一)
+			      (CLP (ADJP (JJ 小))
+				   (CLP (M 片))))
+			  (NP (NN 开阔地))))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 导游))
+		      (PRN (PU ———)
+			   (NP (QP (CD 一)
+				   (CLP (M 位)))
+			       (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VV 会)
+					       (VP (VV 操)
+						   (NP-OBJ (QP (CD ５)
+							       (CLP (M 种)))
+							   (NP (NR 欧洲)
+							       (NN 语言))))))
+				       (DEC 的)))
+			       (NP (NN 女郎)))
+			   (PU ———)))
+	      (VP (VV 命令)
+		  (NP-OBJ (NN 车子))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 停下))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

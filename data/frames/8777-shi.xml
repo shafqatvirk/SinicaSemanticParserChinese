@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 师 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 learns"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 清末))
+	      (NP-SBJ (NN 洋务)
+		      (NN 运动))
+	      (VP (VP (ADVP (AD 高))
+		      (VP (VV 喊)
+			  (IP-OBJ (PU 「)
+				  (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 师)
+					  (NP-OBJ (DNP (NP (NN 夷))
+						       (DEG 之))
+						  (NP (NN 技))))
+				      (VP (MSP 以)
+					  (VP (VV 制)
+					      (NP-OBJ (NN 夷)))))
+				  (PU 」)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  夷 之 技 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

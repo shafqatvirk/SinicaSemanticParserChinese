@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 轻言 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 talks about lightly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (ADVP (AD 当然))
+		(ADVP (AD 更))
+		(ADVP (AD 不))
+		(VP (VV 能)
+		    (VP (VV 轻言)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 放弃))))))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	*PRO* 放弃 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="adv">
+	当然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *pro*))
+		(VP (VP (VP (ADVP (AD 还))
+			    (VP (VE 没有)
+				(NP-OBJ (NN 资格))))
+			(VP (VV 言老)))
+		    (PU ，)
+		    (VP (ADVP (AD 更))
+			(ADVP (AD 不))
+			(VP (VV 敢)
+			    (VP (VV 轻言)
+				(NP-OBJ (NN 退休))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	退休 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

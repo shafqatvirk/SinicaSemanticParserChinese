@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 违约 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="violator"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-DIR (P 对)
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 违约)))
+				  (DEC 的)))))
+	      (VP (VP (VV 进行)
+		      (NP-OBJ (NN 批评)
+			      (NN 教育)))
+		  (PU ，)
+		  (VP (VV 限期)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 改正)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

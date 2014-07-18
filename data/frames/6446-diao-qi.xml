@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 丢弃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 discards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (BA 把)
+			    (IP-OBJ (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *pro*))
+							(VP (ADVP (AD 没))
+							    (VP (VV 用完)
+								(NP-OBJ (-NONE- *T*-3)))))
+						    (DEC 的)))
+					    (NP (NN 药)))
+				    (VP (ADVP (AD 随便))
+					(VP (VV 丢弃))))))
+		(VP (ADVP (AD 也))
+		    (VP (VV 可能)
+			(VP (VV 造成)
+			    (NP-OBJ (NN 污染)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 没 用完 *T*-3 的 药 
+	</arg>
+	<arg n="m" f="adv">
+	随便 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-IMP (PP-LOC (P 在)
+			(LCP (NP (NN 心态))
+			     (LC 上)))
+		(PU ：)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VP (VV 丢弃)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 财大气粗)))
+					(DEC 的))
+				(NP (NN 台商)
+				    (NN 形象))))
+		    (PU ，)
+		    (VP (VV 放下)
+			(NP-OBJ (NN 身段)))
+		    (PU ，)
+		    (VP (ADVP (AD 重新))
+			(VP (VV 认识)
+			    (NP-OBJ (NP (NP-PN (NR 上海))
+					(NP (NN 市民)))
+				    (ADJP (JJ 日常))
+				    (NP (NN 生活))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 财大气粗 的 台商 形象 
+	</arg>
+	<arg n="m" f="loc">
+	在 心态 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

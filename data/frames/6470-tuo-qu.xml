@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 脱去 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 removed"/>
+    <role argnum="2" argrole="entity arg1 is removed for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DNP (NP-PN (NR 王壮为) )
+			     (DEG 的))
+			(NP (NN 师古) ))
+		(PU ，)
+		(VP (VP (ADVP (AD 不))
+			(VP (VV 落)
+			    (NP-OBJ (NN 传统)
+				    (NN 窠臼) )))
+		    (PU ，)
+		    (CC 而)
+		    (VP (VC 是)
+			(VP (VP (PP-LOC (P 在)
+					(LCP (IP (NP-SBJ (-NONE- *PRO*))
+						 (VP (VV 学习)
+						     (NP-OBJ (DNP (NP (NN 远古) )
+								  (DEG 的))
+							     (NP (NN 书风) ))))
+					     (LC 中)))
+				(PU ，)
+				(QP-ADV (CD 一)
+					(CLP (M 层层)))
+				(VP (VV 脱去)
+				    (NP-OBJ (DNP (NP (NN 书法) )
+						 (DEG 的))
+					    (NP (NN 限制) ))))
+			    (PU ，)
+			    (VP (VV 让)
+				(NP-OBJ (NN 书法) )
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 具有)
+					(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (VCD (VA 纯朴)
+								     (VA 原始))))
+							(DEC 的)))
+						(NP (NN 生命力) ))))))))) 
+	</parse>
+	<arg n="0">
+	王壮为 的 师古 
+	</arg>
+	<arg n="1">
+	书法 的 限制 
+	</arg>
+	<arg n="m" f="adv">
+	一 层层 
+	</arg>
+	<arg n="m" f="loc">
+	在 *PRO* 学习 远古 的 书风 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 显然))
+		(ADVP (AD 已经))
+		(VP (VV 脱去)
+		    (NP-OBJ (NP (NN 早期))
+			    (DP (DT 那)
+				(CLP (M 种)))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VCD (VA 华丽)
+						 (VA 完美))))
+				    (DEC 的))
+			    (NP (NN 拘谨)))))) 
+	</parse>
+	<arg n="1">
+	早期 那 种 *PRO* 华丽 完美 的 拘谨 
+	</arg>
+	<arg n="2">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="adv">
+	显然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 责怪 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 blames"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 尽管))
+			  (ADVP (AD 好像))
+			  (VP (VV 出)
+			      (AS 了)
+			      (NP-OBJ (ADJP (JJ 大))
+				      (NP (NN 纰漏))))))
+	      (PU ，)
+	      (ADVP (AD 但是))
+	      (PP-DIR (PP (P 从)
+			  (NP (NN 校长)))
+		      (PP (P 到)
+			  (NP (NN 指导)
+			      (NN 老师))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 没有)
+		  (IP-OBJ (NP-SBJ (NN 人))
+			  (VP (VV 责怪)
+			      (NP-OBJ (DP (DT 任何))
+				      (NP (NN 人))))))) 
+	  </parse>
+	  <arg n="0">
+	  人 
+	  </arg>
+	  <arg n="1">
+	  任何 人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 漂亮 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (NP-PN (NR 陈忠发))
+		      (QP (CD 一)
+			  (CLP (M 家))))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (VP (VP (PP (P 和)
+			      (NP (DP (DT 其他))
+				  (NP (NN 村民))))
+			  (VP (VA 一样)))
+		      (PU ，)
+		      (VP (VV 住上)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 漂亮)))
+					  (DEC 的)))
+				  (ADJP (JJ 小))
+				  (NP (NN 洋楼))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 浮上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 floats onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VV 内省)))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 早))
+				    (ADVP (AD 已))
+				    (VP (VV 遗忘)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 梦)))
+	    (VP (ADVP (AD 或许))
+		(ADVP (AD 又))
+		(VP (VV 会)
+		    (VP (VV 浮上)
+			(NP-OBJ (NN 心头)))))) 
+	</parse>
+	<arg n="0">
+	许多 *OP* *pro* 早 已 遗忘 *T*-1 的 梦 
+	</arg>
+	<arg n="1">
+	心头 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="adv">
+	或许 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 内省 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

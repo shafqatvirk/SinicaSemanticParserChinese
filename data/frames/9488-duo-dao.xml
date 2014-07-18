@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 躲到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 goes to and hides"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (LCP-TMP (NP (NN 预演))
+			   (LC 时))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 蛋糕))
+		      (VP (VV 打到)
+			  (NP-OBJ (NN 公主))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 公主))
+		      (VP (VP (ADVP (AD 不但))
+			      (ADVP (AD 真的))
+			      (VP (VA 痛)
+				  (DER 得)
+				  (VP-EXT (VRD (VV 哭)
+					       (VV 出来)))))
+			  (PU ，)
+			  (VP (ADVP (AD 还))
+			      (VP (VV 躲到)
+				  (NP-OBJ (NN 後台)))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 演)
+				      (AS 了))))))) 
+	  </parse>
+	  <arg n="0">
+	  公主 
+	  </arg>
+	  <arg n="1">
+	  後台 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  预演 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

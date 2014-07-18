@@ -1,0 +1,121 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location, domain"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-TPC (NN 世界)
+			     (NN 职业)
+			     (NN 围棋赛))
+		  (NP-SBJ (NP-PN (NR 中国))
+			  (QP (CD 两))
+			  (NP (NN 小将)))
+		  (VP (VV 打进)
+		      (NP-OBJ (QP (CD 八))
+			      (NP (NN 强))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 两 小将 	  
+	  </arg>
+	  <arg n="1">
+	  八 强 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  世界 职业 围棋赛 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="place arg0 gets arg1 into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-BNF (P 为)
+						  (NP-PN (NR 日本队)))
+					  (VP (VV 效力))))
+				  (DEC 的))
+			  (NP (NN 时候))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (QP (CD ８６)
+				       (CLP (M 场)))
+				   (NP (NN 比赛)))
+			       (LC 中)))
+		  (VP (VV 打进)
+		      (AS 了)
+		      (NP-OBJ (QP (CD ５４)
+				  (CLP (M 个)))
+			      (NP (NN 球)))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  ５４ 个 球 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 为 日本队 效力 的 时候 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 ８６ 场 比赛 中 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 站上)
+				       (NP-OBJ (NN 浪头))))
+			       (LC 时))
+		      (VP (VV 志得意满)))
+		  (PU ，)
+		  (VP (ADVP (AD 不旋踵))
+		      (ADVP (AD 又))
+		      (VP (SB 被)
+			  (VP (VV 打进)
+			      (LCP-OBJ (NP (NN 浪))
+				       (LC 底))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  浪 底 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不旋踵 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

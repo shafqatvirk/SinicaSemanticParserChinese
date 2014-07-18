@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惊险 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 参加)
+				      (NP-OBJ (NN 比赛))))
+			      (DEC 的)))
+		      (QP (CD ８)
+			  (CLP (M 名)))
+		      (NP (NN 选手)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 做出)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 许多))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VA 惊险)))
+				      (DEC 的)))
+			      (ADJP (JJ 高难))
+			      (NP (NN 动作)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

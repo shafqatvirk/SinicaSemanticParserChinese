@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 核销 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="checker and canceler"/>
+      <role argnum="1" argrole="thing checked and canceled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-9 (-NONE- *OP*))
+		      (IP (NP-SBJ (NN 国家))
+			  (VP (PP (-NONE- *T*-9))
+			      (VP (VV 核销)
+				  (NP-OBJ (NP (NN 银行))
+					  (ADJP (ADJP (JJ 呆))
+						(ADJP (JJ 坏)))
+					  (NP (NN 帐)))))))
+		  (NP (NN 准备金))) 
+	  </parse>
+	  <arg n="0">
+	  国家 
+	  </arg>
+	  <arg n="1">
+	  银行 呆 坏 帐 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-9 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

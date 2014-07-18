@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 堵住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 plugs up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 船东))
+	      (VP (PP-TMP (ADVP (AD 迟))
+			  (PP (P 至)
+			      (LCP (NP (NT 一月))
+				   (LC 底))))
+		  (ADVP (AD 才))
+		  (VP (VP (VV 堵住)
+			  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				      (IP (NP-TPC (NP-PN (NR 阿玛斯号))
+						  (NP (NN 船体)))
+					  (NP-SBJ (-NONE- *T*-3))
+					  (VP (VV 破裂))))
+				  (NP (NN 处))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 委托)
+			  (NP-PN-OBJ (NR 台湾)
+				     (NN 海运)
+				     (NN 公司))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 雇用)
+				  (NP-OBJ (NP-PN (NR 龙坑))
+					  (NP (NN 当地)
+					      (NN 居民)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 进行)
+					  (NP-OBJ (NN 除污)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  船东 
+	  </arg>
+	  <arg n="1">
+	  *OP* 阿玛斯号 船体 *T*-3 破裂 处 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  迟 至 一月 底 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

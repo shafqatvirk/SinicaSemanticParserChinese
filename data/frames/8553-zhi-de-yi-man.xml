@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 志得意满 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 站上)
+				       (NP-OBJ (NN 浪头))))
+			       (LC 时))
+		      (VP (VV 志得意满)))
+		  (PU ，)
+		  (VP (ADVP (AD 不旋踵))
+		      (ADVP (AD 又))
+		      (VP (SB 被)
+			  (VP (VV 打进)
+			      (LCP-OBJ (NP (NN 浪))
+				       (LC 底))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 站上 浪头 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

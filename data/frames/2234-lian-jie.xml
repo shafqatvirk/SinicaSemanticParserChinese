@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 连接 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="connector"/>
+      <role argnum="1" argrole="entities connected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 九江))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 连接)
+					  (NP-OBJ (NP-PN (NR 长江))
+						  (NP (NN 南北)))))
+				  (DEC 的)))
+			  (NP (NN 要道))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  长江 南北 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NN 社会)
+				  (NN 保障局))
+			   (DEG 的))
+		      (NP (NN 电脑)
+			  (NN 系统)))
+	      (VP (VV 连接)
+		  (AS 着)
+		  (NP-OBJ (DNP (NP (NP-PN (NR 美国))
+				   (NP-PN (NN 财政部)
+					  (CC 和)
+					  (NN 联邦)
+					  (NN 储备)
+					  (NN 委员会)))
+			       (DEG 的))
+			  (NP (NN 电子)
+			      (NN 支付)
+			      (NN 系统))))) 
+	  </parse>
+	  <arg n="1">
+	  社会 保障局 的 电脑 系统 
+	  </arg>
+	  <arg n="1">
+	  美国 财政部 和 联邦 储备 委员会 的 电子 支付 系统 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 花旗)
+			 (NN 银行))
+	      (VP (VP (NP-TMP (NT 今天))
+		      (PP (P 与)
+			  (NP (NP-PN (NR 上海))
+			      (NP (NN 银行卡)
+				  (NN 网络))))
+		      (VP (VV 签约)))
+		  (PU ，)
+		  (VP (PP-MNR (P 作为)
+			      (NP (QP (OD 第一)
+				      (CLP (M 家)))
+				  (NP (NN 外资)
+				      (NN 银行))))
+		      (ADVP (AD 正式))
+		      (VP (VV 加入)
+			  (NP-OBJ (NP-PN (NR 上海))
+				  (NP (NN ＡＴＭ)
+				      (PU ／)
+				      (NN ＰＯＳ))
+				  (NP (NN 网络)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (ADVP (AD 直接))
+		      (PP (P 与)
+			  (NP (NP-PN (NR 上海))
+			      (NP (NN ＡＴＭ))
+			      (ADJP (JJ 自动))
+			      (NP (NN 取款机))))
+		      (VP (VV 连接))))) 
+	  </parse>
+	  <arg n="1">
+	  花旗 银行 
+	  </arg>
+	  <arg n="1">
+	  与 上海 ＡＴＭ 自动 取款机 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直接 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

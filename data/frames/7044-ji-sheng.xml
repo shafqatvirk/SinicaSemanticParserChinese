@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 积生 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 accumulates and grows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 艺术家) )
+	    (VP (VV 必须)
+		(VP (PP-MNR (P 经过)
+			    (NP (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 不断)))
+					(DEC 的)))
+				(NP (NN 操作) )))
+		    (PU ，)
+		    (ADVP (AD 日久))
+		    (ADVP (AD 自然))
+		    (VP (VRD (VV 积生)
+			     (VV 出))
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 股)))
+				(ADJP (JJ 天然))
+				(NP (NN 风韵) )))))) 
+	</parse>
+	<arg n="0">
+	艺术家 
+	</arg>
+	<arg n="1">
+	一 股 天然 风韵 
+	</arg>
+	<arg n="m" f="adv">
+	自然 
+	</arg>
+	<arg n="m" f="adv">
+	日久 
+	</arg>
+	<arg n="m" f="mnr">
+	经过 *OP* *T*-2 不断 的 操作 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

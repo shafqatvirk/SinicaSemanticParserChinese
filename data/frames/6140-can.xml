@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 参 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 takes part in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (DP (DT 其他))
+		(CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VV 参)
+				(NP-OBJ (NN 展))))
+			(DEC 的)))
+		(NP-PN (NR 秦朝))
+		(NP (NN 文物))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	展 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 cannot figure out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 资讯)
+			(NN 科技))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 超强)))
+			    (DEC 的)))
+		    (NP (NN 统计)
+			(NN 运算)
+			(NN 功能)))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(VP (VV 使得)
+		    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (NP-TMP (NT 以往))
+					    (VP (VP (VV 藏)
+						    (PP (P 在)
+							(LCP (NP (CP (WHNP-2 (-NONE- *OP*))
+								     (CP (IP (NP-SBJ (-NONE- *T*-2))
+									     (VP (VA 散乱)))
+									 (DEC 的)))
+								 (QP (CD 一)
+								     (CLP (ADJP (JJ 大))
+									  (CLP (M 堆))))
+								 (NP (NN 数字)))
+							     (LC 里))))
+						(PU 、)
+						(VP (PP-MNR (ADVP (AD 光))
+							    (PP (P 凭)
+								(NP (NN 人脑))))
+						    (VP (VPT (VV 参)
+							     (AD 不)
+							     (VV 透)))))))
+				    (DEC 的)))
+			    (ADJP (JJ 种种))
+			    (NP (NN 奥妙)))
+		    (PU ，)
+		    (IP (NP-SBJ-5 (-NONE- *PRO*))
+			(VP (VP (ADVP (AD 逐渐))
+				(VP (SB 被)
+				    (VP (VP (VV 分析)
+					    (NP-OBJ (-NONE- *RNR*-6)))
+					(PU 、)
+					(VP (VV 厘清)
+					    (NP-OBJ-6 (-NONE- *-5))))))
+			    (PU ，)
+			    (VP (VV 成为)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 种)))
+					(CP (WHNP-4 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (VV 可以)
+							(VP (VV 利用)
+							    (NP-OBJ (-NONE- *T*-4)))))
+						(DEC 的)))
+					(NP (NN know-how))))))))) 
+	</parse>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="mnr">
+	光 凭 人脑 
+	</arg>
+	<arg n="m" f="tmp">
+	以往 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

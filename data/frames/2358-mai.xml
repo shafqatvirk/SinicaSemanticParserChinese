@@ -1,0 +1,271 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 卖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing sold"/>
+      <role argnum="2" argrole="entity arg1 is sold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (ADVP (AD 不))
+					  (VP (VV 强调)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 卖)
+							  (NP-OBJ (NN 产品))))))
+				      (PU ，)
+				      (VP (PP (ADVP (AD 光))
+					      (PP-MNR (P 靠)
+						      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							      (VP (PU 「)
+								  (VV 拉人头)
+								  (PU 」)))))
+					  (VP (VV 为)
+					      (NP-OBJ (NN 奖金)
+						      (NN 来源))))))
+			      (DEC 的))))
+	      (PU ，)
+	      (VP (ADVP (AD 则))
+		  (VP (VE 有)
+		      (NP-OBJ (DNP (NP (NN 老鼠会))
+				   (DEG 的))
+			      (NP (NN 嫌疑)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  产品 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing arg0 cannot finish selling"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 自己))
+	      (VP (VP (VP (VV 当起)
+			  (NP-OBJ (NN 大盘商)))
+		      (VP-PRP (VV 赚取)
+			      (NP-OBJ (NN 差价))))
+		  (PU ，)
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VPT (VV 卖)
+				       (AD 不)
+				       (VV 完))))
+		      (ADVP (AD 再))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (NN 货))
+				  (VP (VRD (PU 「)
+					   (VV 倒)
+					   (PU 」)
+					   (VV 回))
+				      (NP-OBJ (NN 公司)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing arg0 cannot sold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 怕)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (NP-SBJ (NN 菜))
+				      (VP (VPT (VV 卖)
+					       (AD 不)
+					       (VV 出去)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 就))
+		      (VP (VV 怕)
+			  (IP-OBJ (NP-SBJ (PN 它))
+				  (VP (VPT (VA 长)
+					   (AD 不)
+					   (VV 出来)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  菜 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 台湾))
+			   (DEG 的))
+		      (NP (NN 产品)))
+	      (VP (VV 会)
+		  (VP (VPT (VV 卖)
+			   (AD 不)
+			   (VV 进去))))) 
+	  </parse>
+	  <arg n="1">
+	  台湾 的 产品 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing sold"/>
+      <role argnum="2" argrole="entity arg1 is sold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 根据)
+		      (NP (DP (DT 这)
+			      (CLP (M 份)))
+			  (NP (NN 文件))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 韩国))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (ADVP (AD 先))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DNP (NP-PN (QP (OD 第一))
+							  (NP (NN 银行)))
+						   (DEG 的))
+					      (ADJP (JJ 不良))
+					      (NP (NN 资产)))
+				      (VP (VRD (VV 分离)
+					       (VV 出来))))))
+		      (PU ，)
+		      (VP (ADVP (AD 然后))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DNP (QP (CD 百分之五十一))
+						   (DEG 的))
+					      (NP (NN 股份)))
+				      (VP (VRD (VV 卖)
+					       (VV 给))
+					  (NP-OBJ (DP (DT 这)
+						      (QP (CD 一)))
+						  (NP (NN 投资)
+						      (NN 财团)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 政府 	  
+	  </arg>
+	  <arg n="1">
+	  百分之五十一 的 股份 	  
+	  </arg>
+	  <arg n="2">
+	  这 一 投资 财团 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  然后 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 这 份 文件 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing arg0 sells all out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (DNP (NP (NN 对手)
+					    (NN 厂商))
+					(DEG 的))
+				   (NP (NN 库存)))
+			   (VP (VRD (VV 卖)
+				    (VV 完))))
+		       (LC 後))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 还))
+		  (VP (VP (VE 有)
+			  (NP-OBJ (NN 能力)))
+		      (VP (VP (VV 筹足)
+			      (NP-OBJ (NN 美金)))
+			  (VP-PRP (VV 买)
+				  (NP-OBJ (NN 原料))))))) 
+	  </parse>
+	  <arg n="1">
+	  对手 厂商 的 库存 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing could be sold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  它	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  而	  
+	  </arg>
+	  <arg n="1">
+	  即使 碗装 泡面 三十五元	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

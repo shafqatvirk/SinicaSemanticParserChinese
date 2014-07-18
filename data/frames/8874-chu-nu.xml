@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 触怒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity arg0 causes to be angry"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 工作)
+		      (NN 人员) )
+	      (NP-SBJ (PN 谁))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 不))
+		  (VP (VV 敢)
+		      (VP (VV 触怒)
+			  (NP-OBJ (NN 雌威) ))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  工作 人员 
+	  </arg>
+	  <arg n="0" f="pse">
+	  谁 
+	  </arg>
+	  <arg n="1">
+	  雌威 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

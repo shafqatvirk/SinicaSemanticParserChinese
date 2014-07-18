@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 演奏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="music/instrument played"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VC 是)
+		  (IP-PRD (NP-SBJ (DNP (LCP (NP (NN 花节))
+					    (LC 上))
+				       (DEG 的))
+				  (NP (NN 乐手)))
+			  (VP (PP-LOC (P 在)
+				      (LCP (NP (NN 彩车))
+					   (LC 上)))
+			      (VP (VV 演奏)
+				  (NP-OBJ (PU “)
+					  (NN 迎春曲)
+					  (PU ”))))))) 
+	  </parse>
+	  <arg n="0">
+	  花节 上 的 乐手 	  
+	  </arg>
+	  <arg n="1">
+	  “ 迎春曲 ” 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 彩车 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (NP (QP (CD 多)
+						       (CLP (M 间)))
+						   (NP (NN 学校)))
+					       (QP (ADVP (AD 共))
+						   (QP (CD 八百)
+						       (CLP (M 名))))
+					       (NP (NN 学生)))
+				       (VP (VV 组成)
+					   (NP-OBJ (-NONE- *T*-1))))
+				   (DEC 的)))
+			   (NP (NN 铜管)
+			       (NN 乐队)))
+		   (VP (VP (ADVP (AD 率先))
+			   (VP (VV 演奏)))
+		       (PU ，)
+		       (VP (PP-BNF (P 为)
+				   (NP (NN 仪式)))
+			   (VP (VV 揭开)
+			       (NP-OBJ (NN 序幕)))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 多 间 学校 共 八百 名 学生 组成 *T*-1 的 铜管 乐队 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  率先 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 皱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 wrinkles up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DNP (NP (NN 滥葬))
+			   (DEG 之))
+		      (NP (NN 严重)))
+	      (PU ，)
+	      (ADVP (AD 恐怕))
+	      (NP-SBJ (ADVP (AD 连))
+		      (NP (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (NP-PRD (NP (ADJP (JJ 慈))
+						      (NP (NN 眉)))
+						  (NP (ADJP (JJ 善))
+						      (NP (NN 目))))))
+				  (DEC 的)))
+			  (NP-PN (NR 观音))))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (VV 皱)
+			  (NP-OBJ (NN 眉头)))))) 
+	  </parse>
+	  <arg n="0">
+	  连 *OP* *T*-3 慈 眉 善 目 的 观音 	  
+	  </arg>
+	  <arg n="1">
+	  眉头 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  恐怕 	  
+	  </arg>
+	  <arg n="m" f="tpc">
+	  滥葬 之 严重 	    
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

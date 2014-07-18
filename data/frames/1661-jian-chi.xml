@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坚持 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 澳))
+			  (NP (NN 外长)))
+		  (VP (VV 说)
+		      (IP-OBJ (NP-PN-SBJ (NR 澳))
+			      (VP (VV 坚持)
+				  (NP-OBJ (NP (QP (CD 一)
+						  (CLP (M 个)))
+					      (NP-PN (NR 中国)))
+					  (NP (NN 政策))))))) 
+	  </parse>
+	  <arg n="0">
+	  澳 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一 个 中国 政策 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 上海))
+	      (VP (VP (VV 坚持)
+		      (IP-OBJ (NP-SBJ (NN 货物)
+				      (NN 贸易)
+				      (PU 、)
+				      (NN 技术)
+				      (NN 贸易)
+				      (PU 、)
+				      (NN 服务)
+				      (NN 贸易))
+			      (VP (ADVP (AD 三位一体))
+				  (VP (VCD (VV 协调)
+					   (VV 发展))))))
+		  (PU ；)
+		  (VP (VV 实施)
+		      (NP-OBJ (PU “)
+			      (NN 龙头)
+			      (NN 计划)
+			      (PU ”)))
+		  (PU ，)
+		  (VP (VV 优化)
+		      (NP-OBJ (NN 出口)
+			      (NN 商品)
+			      (NN 结构))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  上海 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  货物 贸易 、 技术 贸易 、 服务 贸易 三位一体 协调 发展 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 虽))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 经)
+				      (NP-PN (NR 海协)))
+			      (VP (VV 提示)))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-PN-SBJ (NR 海基会))
+	      (VP (ADVP (AD 仍))
+		  (ADVP (AD 一再))
+		  (VP (VV 坚持)))) 
+	  </parse>
+	  <arg n="0">
+	  海基会 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  仍 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  一再 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

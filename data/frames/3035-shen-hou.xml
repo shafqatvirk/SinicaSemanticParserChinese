@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深厚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (ADVP (AD 也许))
+	      (PP (P 跟)
+		  (IP (LCP-LOC (NP (NN 人)
+				   (CC 与)
+				   (NN 犬))
+			       (LC 之间))
+		      (NP-SBJ (NN 感情))
+		      (VP (VA 深厚))))
+	      (ADVP (AD 不))
+	      (VP (VE 无)
+		  (NP-OBJ (NN 关系)))) 
+	  </parse>
+	  <arg n="0">
+	  感情 
+	  </arg>
+	  <arg n="m" f="loc">
+	  人 与 犬 之间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

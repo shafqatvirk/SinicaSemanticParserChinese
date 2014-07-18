@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 附有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing attached to arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 分别))
+		(VP (VC 是)
+		    (UCP-PRD (NP (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+					     (CP (IP (NP-SBJ (-NONE- *T*-1))
+						     (VP (VV 附有)
+							 (NP-OBJ (QP (CD 一百)
+								     (CLP (M 张)))
+								 (NP (NN 水墨画)))))
+						 (DEC 的)))
+					 (NP (NN 艺术)
+					     (NN 论集)))
+				 (NP-TTL (PU 《)
+					 (DP (DT 另)
+					     (QP (CD 一)
+						 (CLP (M 种))))
+					 (NP (NN 美学))
+					 (PU 》)))
+			     (PU 、)
+			     (NP (NP-APP (NN 剧本))
+				 (NP-TTL (PU 《)
+					 (NT 周末)
+					 (NN 四重奏)
+					 (PU 》)))
+			     (PU ，)
+			     (CC 以及)
+			     (IP (NP-APP (NN 文集))
+				 (IP-TTL (PU 《)
+					 (NP-SBJ (-NONE- *pro*))
+					 (VP (VE 没有)
+					     (NP-OBJ (NN 主义)))
+					 (PU 》))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	一百 张 水墨画 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

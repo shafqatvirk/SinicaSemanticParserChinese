@@ -1,0 +1,454 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="caller"/>
+      <role argnum="1" argrole="telephone"/>
+      <role argnum="2" argrole="party called"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 打)
+		      (NP-OBJ (NN 电话))
+		      (PP (P 给)
+			  (NP-PN (NR 斯特恩)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 	  	  
+	  </arg>
+	  <arg n="1">
+	  电话 	  	  
+	  </arg>
+	  <arg n="2">
+	  给 斯特恩 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="hitter"/>
+      <role argnum="1" argrole="person hit"/>
+      <role argnum="2" argrole="result of the hitting"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 鲍萨))
+		  (VP (VV 会)
+		      (VP (LB 被)
+			  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (DNP (NP-PN (NR 泰森))
+						   (DEG 的))
+					      (ADJP (JJ 铁))
+					      (NP (NN 拳)))
+				      (VP (VV 打)
+					  (DER 得)
+					  (VP-EXT (VNV (VV 爬)
+						       (AD 不)
+						       (VV 起来))))))))) 
+	  </parse>
+	  <arg n="0">
+	  泰森 的 铁 拳 	  	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  	  
+	  </arg>
+	  <arg n="2">
+	  爬 不 起来 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 does"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 现在))
+		  (NP-SBJ (PN 他))
+		  (VP (VP (DP-ADV (DT 每)
+				  (CLP (M 天)))
+			  (VP (VP (VV 要)
+				  (VP (VV 做)
+				      (NP-OBJ (ADJP (JJ 早))
+					      (NP (NN 锻炼)))))
+			      (PU ，)
+			      (VP (PP (P 绕)
+				      (NP (NN 村子)))
+				  (VP (VV 跑)
+				      (QP-EXT (CD 三千)
+					      (CLP (M 米)))))))
+		      (PU ；)
+		      (VP (NP-TMP (NT 晚上))
+			  (ADVP (AD 则))
+			  (VP (VP (VV 到)
+				  (NP-OBJ (NN 村体育场)))
+			      (VP (MSP 去)
+				  (VP (VV 打)
+				      (NP-OBJ (NN 篮球)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  	  
+	  </arg>
+	  <arg n="1">
+	  篮球 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  晚上 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VP (ADVP (AD 曾))
+				      (VP (VV 任)
+					  (NP-OBJ (NP-PN (NR 海基会))
+						  (ADJP (JJ 副))
+						  (NP (NN 秘书长)))))
+				  (PU 、)
+				  (VP (PP (P 与)
+					  (NP-PN (NR 中共)))
+				      (VP (VV 打)
+					  (AS 过)
+					  (NP-OBJ (NN 交道))))))
+			  (DEC 的)))
+		  (NP-PN (NR 石齐平))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 中共 
+	  </arg>
+	  <arg n="1">
+	  交道 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 否则))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 会)
+		      (VP (ADVP (AD 大))
+			  (VP (VV 打)
+			      (NP-OBJ (NN 折扣))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  折扣 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  否则 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="issuer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 打)
+		      (NP-OBJ (PU “)
+			      (NN 白条)
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  “ 白条 ” 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="exporter"/>
+      <role argnum="1" argrole="product"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (NP (NN 当地))
+				  (NP (PU “)
+				      (NN 拳头)
+				      (PU ”))
+				  (NP (NN 产品)))
+			  (VP (VRD (VV 打)
+				   (VV 出去)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  当地 “ 拳头 ” 产品 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DP (DT 这些))
+		      (NP (NN 算盘)))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 产业界))
+		      (NP (PN 自己)))
+	      (VP (VV 打)
+		  (DER 得)
+		  (VP-EXT (ADVP (AD 最))
+			  (VP (VA 精))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  产业界 自己 	  
+	  </arg>
+	  <arg n="1">
+	  这些 算盘 	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  最 精 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f7">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 opens"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 停电))
+	      (VP (VV 使得)
+		  (NP-OBJ (DNP (NP (NP-APP (DNP (NP (PN 他))
+						(DEG 的))
+					   (NP (NN 本业)))
+				   (NP (NN 楼下)
+				       (NN 医检所)))
+			       (DEG 的))
+			  (NP (NN 铁门)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VPT (VV 打)
+			       (AD 不)
+			       (VV 开)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f8">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 fights to obtain"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (VV 帮)
+			      (NP-PN-OBJ (NR 刘邦))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 打)
+				      (NP-OBJ (NN 天下))))))
+		      (DEC 的)))
+	      (NP-PN (NR 赵子龙))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  天下 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f9">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 advertises with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 只有))
+		      (NP-PN (PU 「)
+			     (NP-PN (NR 庾澄庆))
+			     (CC ＆)
+			     (NP (ADJP (JJ 顶尖))
+				 (NP (NN 拍档)))
+			     (PU 」)))
+	      (VP (PP-PRP (P 因)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 打)
+				  (AS 著)
+				  (NP-OBJ (DNP (NP (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+							       (IP (NP-SBJ (-NONE- *T*-1))
+								   (VP (VV 成名))))
+							   (NP (NN 歌手)))
+						   (NP-PN (NR 庾澄庆)))
+					       (DEG 的))
+					  (NP (NN 招牌))))))
+		  (VP (MSP 而)
+		      (VP (VP-FOC (VV 销售))
+			  (VP (VA 不错)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 成名 歌手 庾澄庆 的 招牌 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f10">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 casts"/>
+      <role argnum="2" argrole="thing arg1 is cast with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (NP-MNR (NN 铁))
+				  (VP (VV 打)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (NP (NN 衙门))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  铁 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f11">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 obtains"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (NP (NN 农地))
+				(LC 里))
+			   (DEG 的))
+		      (NP (NN 水车)))
+	      (VP (VPT (VV 打)
+		       (AD 不)
+		       (VV 到))
+		  (NP-OBJ (NN 水)))) 
+	  </parse>
+	  <arg n="2">
+	  农地 里 的 水车 
+	  </arg>
+	  <arg n="1">
+	  水 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放榜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="announcer"/>
+    <role argnum="1" argrole="thing arg0 announces"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 得)
+				(NP-OBJ (NN 奖))))
+		    (NP (NN 名单)))
+	    (VP (VV 放榜))) 
+	</parse>
+	<arg n="1">
+	*PRO* 得 奖 名单 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

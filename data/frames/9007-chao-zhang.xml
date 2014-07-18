@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 超涨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing rising excessively"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (LCP-TMP (DP (DT 这)
+				   (QP (CD 一)
+				       (CLP (M 年))))
+			       (LC 来))
+		      (NP-SBJ (NP (NP-PN (NR 美国))
+				  (NP (NN 软体)
+				      (NN 公司)))
+			      (NP (NN 股价)))
+		      (VP (VP (VCD (VV 超涨)
+				   (VV 超跌)))
+			  (PU ，)
+			  (VP (ADVP (AD 如))
+			      (VP (VV 坐)
+				  (NP-OBJ (NN 云霄飞车))))))
+	      (PU ，)
+	      (VP (ADVP (AD 正))
+		  (VP (VRD (VV 反映)
+			   (VV 出))
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 知识))
+					  (VP (ADVP (AD 难以))
+					      (VP (VV 定价))))
+				      (DEC 的))
+			      (NP (NN 困扰)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 软体 公司 股价 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 一 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

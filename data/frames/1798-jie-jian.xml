@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接见 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="receiver"/>
+      <role argnum="1" argrole="guest"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 国务院))
+		      (NP-PN (NR 李鹏)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (NP-TMP (NT 今天)
+					   (NT 下午))
+				   (PP-LOC (P 在)
+					   (NP-PN (NN 人民)
+						  (NN 大会堂)))
+				   (VP (VV 接见)
+				       (NP-OBJ (NP-PN (NP (DP (DT 全))
+							  (NP (NN 国)))
+						      (NP (NN 海关)
+							  (NN 关长)
+							  (NN 会议)))
+					       (NP (NN 代表))))))
+			   (LC 时))
+		  (VP (VCD (VV 强调)
+			   (VV 说))
+		      (IP-OBJ (PU ：)
+			      (PP-LOC (P 在)
+				      (LCP (NP (CP-APP (IP (IP (NP-SBJ (NN 社会主义)
+								       (NN 市场)
+								       (NN 经济)
+								       (NN 体制)
+								       (NN 建设))
+							       (VP (ADVP (AD 不断))
+								   (VP (VV 推进))))
+							   (PU ，)
+							   (IP (NP-SBJ (PP (P 对)
+									   (NP (NN 外)))
+								       (NP (NN 开放)))
+							       (VP (ADVP (AD 进一步))
+								   (VP (VV 扩大)))))
+						       (DEC 的))
+					       (ADJP (JJ 新))
+					       (NP (NN 形势)))
+					   (LC 下)))
+			      (PU ，)
+			      (NP-SBJ (DNP (NP (NN 海关))
+					   (DEG 的))
+				      (NP (NN 职能)))
+			      (VP (VP (ADVP (AD 不))
+				      (VP (VV 能)
+					  (VP (VV 削弱))))
+				  (PU ，)
+				  (VP (ADVP (AD 只))
+				      (VP (VV 能)
+					  (VP (VV 加强))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  全 国 海关 关长 会议 代表 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 下午 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 人民 大会堂 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

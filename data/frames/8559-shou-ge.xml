@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收割 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 harvests"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NN 研发))
+		      (VP (VA 不足)))
+	      (PU ，)
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (NN 知识))
+				  (VP (VV 收割)))
+			      (DEC 的))
+		      (NP (NN 成果)))
+	      (VP (ADVP (AD 必然))
+		  (VP (VA 有限)))) 
+	  </parse>
+	  <arg n="1">
+	  知识 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

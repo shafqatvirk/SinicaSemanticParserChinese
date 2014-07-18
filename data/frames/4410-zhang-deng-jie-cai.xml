@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 张灯结彩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location arg does decoration"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VV 张灯结彩)))
+				       (DEC 的)))
+			       (NP (NN 使馆)
+				   (NN 客厅)))
+			   (LC 内)))
+	      (PU ，)
+	      (NP-SBJ (NN 宾)
+		      (NN 主))
+	      (VP (ADVP (AD 在一起))
+		  (VP (VP (VV 举杯))
+		      (VP (ADVP (AD 互))
+			  (VP (VV 祝)
+			      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 新春愉快)
+					  (PU ，)
+					  (VV 万事如意)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

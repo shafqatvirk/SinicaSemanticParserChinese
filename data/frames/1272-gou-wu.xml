@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 购物 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 芬兰))
+			   (DEG 的))
+		      (NP (NN 零售商们)))
+	      (VP (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 方便)
+				  (NP-OBJ (NN 公众))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 购物))))))
+		  (PU ，)
+		  (PP-LOC (P 在)
+			  (LCP (NP (NN 因特网))
+			       (LC 上)))
+		  (ADVP (AD 联合))
+		  (VP (VV 建立)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 统一)))
+				      (DEC 的)))
+			      (NP (NN 服务)
+				  (NN 网址)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 诊断 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 有关))
+		      (NP (NN 部门)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VCD (VV 调查)
+					(VV 诊断))))
+			   (LC 后))
+		  (VP (VV 发现)
+		      (PU ，)
+		      (CP-OBJ (IP (NP-SBJ (ADJP (JJ 上述))
+					  (QP (CD 六)
+					      (CLP (M 只)))
+					  (NP (NN 丹顶鹤)))
+				  (VP (ADVP (AD 都))
+				      (VP (VC 是)
+					  (VP (VP (VV 吃)
+						  (AS 了)
+						  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							      (CP (IP (NP-SBJ (-NONE- *T*-1))
+								      (VP (VV 拌有)
+									  (NP-OBJ (NN 毒药))))
+								  (DEC 的)))
+							  (NP (NN 谷物))))
+					      (VP (VP (VSB (VV 中毒)
+							   (VV 死亡)))
+						  (CC 或)
+						  (VP (VV 受伤)))))))
+			      (SP 的))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

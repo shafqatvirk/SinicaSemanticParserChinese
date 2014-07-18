@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开盘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing starting to trade"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (DNP (NP (NT 当天))
+		     (DEG 的))
+		(IP-APP (IP (NP-SBJ (NN 台股))
+			    (VP (VV 收盘)))
+			(CC 及)
+			(IP (NP-SBJ (NN 美股))
+			    (VP (VV 开盘))))
+		(NP (NN 行情))) 
+	</parse>
+	<arg n="0">
+	美股 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

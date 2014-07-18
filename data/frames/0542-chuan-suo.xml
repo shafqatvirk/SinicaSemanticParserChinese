@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 穿梭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="place arg0 shuttles"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VCD (VV 来往)
+					   (VV 穿梭))))
+			      (DEC 的)))
+		      (NP (NN 登山车)
+			  (PU 、)
+			  (NN 电缆车)
+			  (CC 和)
+			  (NN 空中)
+			  (NN 吊车)))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (DP (DT 这))
+				  (NP (PN 一切)))
+			  (VP (VV 尽收眼底))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 只有))
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 狩猎)))
+				  (DEC 的)))
+			  (NP (NN 原住民))))
+	      (VP (VP (VV 穿梭)
+		      (NP-OBJ (NN 其间)))
+		  (PU ，)
+		  (VP (VV 撷取)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 甜美)))
+				      (DEC 的)))
+			      (NP (NN 野地)
+				  (NN 果实)))))) 
+	  </parse>
+	  <arg n="0">
+	  只有 *OP* *T*-2 狩猎 的 原住民 
+	  </arg>
+	  <arg n="1">
+	  其间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采收 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 harvests"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 吴建乐))
+	    (VP (ADVP (AD 却))
+		(VP (VV 深知)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 采收)
+					    (NP-OBJ (NN 甘蔗))))
+				    (DEC 的))
+			    (NP (NN 艰苦)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	甘蔗 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 由)
+				(NP (PN 此)))
+			(VP (VV 推估))))
+	    (PU ，)
+	    (NP-SBJ (NN 人类))
+	    (VP (VP (VV 种植)
+		    (NP-OBJ (NN 桧木)))
+		(VP (VV 得)
+		    (VP (VV 等)
+			(QP-OBJ (CD 三百)
+				(CLP (M 年)))))
+		(VP (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VV 采收)))))) 
+	</parse>
+	<arg n="0">
+	人类 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 由 此 推估 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (ADVP (AD 尤其是))
+		    (NP (IP-APP (NP-SBJ (NP (NN 春)
+					    (NN 茶))
+					(NP (NN 秋)
+					    (NN 茶)))
+				(VP (VV 采收)))
+			(NP (NN 时节))))
+	    (PU ，)
+	    (NP-SBJ (NN 家家)
+		    (NN 户户))
+	    (VP (ADVP (AD 几乎))
+		(DP-TMP (DT 每)
+			(CLP (M 天)))
+		(ADVP (AD 只))
+		(VP (VPT (VV 睡)
+			 (AD 不)
+			 (VV 到))
+		    (NP-OBJ (QP (CD 四)
+				(CLP (M 个)))
+			    (NP (NN 小时)))))) 
+	</parse>
+	<arg n="1">
+	春 茶 秋 茶 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

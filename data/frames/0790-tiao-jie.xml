@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调节 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="means,instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 防护林))
+		      (CC 和)
+		      (NP (ADJP (JJ 特种))
+			  (NP (NN 用途林))))
+	      (VP (VV 可以)
+		  (VP (VP (VV 保持)
+			  (NP-OBJ (NN 水土)))
+		      (PU 、)
+		      (VP (VV 调节)
+			  (NP-OBJ (NN 气候)))))) 
+	  </parse>
+	  <arg n="2">
+	  防护林 和 特种 用途林 
+	  </arg>
+	  <arg n="1">
+	  气候 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 臆测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity making guesses"/>
+      <role argnum="1" argrole="thing guessed at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 使)
+	      (NP-OBJ (DP (DT 所有))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 臆测)
+				      (IP-OBJ (NP-SBJ (NP-PN (NR 香港))
+						      (NP (NN 政局)))
+					      (VP (ADVP (AD 不))
+						  (VP (VA 稳))))))
+			      (DEC 的)))
+		      (NP (PU “)
+			  (NN 预言)
+			  (PU ”)))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 统统))
+		      (VP (VV 落空))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  香港 政局 不 稳 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

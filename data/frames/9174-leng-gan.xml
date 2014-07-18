@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冷感 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is cold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 现代))
+		      (NP (NN 人)))
+	      (VP (VV 习於)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 对)
+				      (NP (NN 周遭)
+					  (NN 事物)))
+			      (VP (VCD (VV 漠视)
+				       (VV 冷感))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  对 周遭 事物 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

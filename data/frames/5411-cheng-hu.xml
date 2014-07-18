@@ -1,0 +1,160 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 称呼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 calls"/>
+    <role argnum="2" argrole="name arg1 is called"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (PP-MNR (P 用)
+			    (NP (PU 「)
+				(NN 语言流)
+				(PU 」)))
+		    (VP (VV 称呼)
+			(NP-OBJ (DNP (NP (PN 自己))
+				     (DEG 的))
+				(NP (NN 语法))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	自己 的 语法 
+	</arg>
+	<arg n="2">
+	用 「 语言流 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (NN 一时))
+		     (LC 之间))
+	    (NP-SBJ (QP (CD 很多))
+		    (NP (NN 朋友)))
+	    (VP (VP (ADVP (AD 都))
+		    (ADVP (AD 不))
+		    (VP (VV 称呼)
+			(NP-OBJ (DNP (NP (PN 我))
+				     (DEG 的))
+				(NP (NN 名字)))))
+		(PU ，)
+		(VP (ADVP (AD 而))
+		    (VP (VV 叫)
+			(NP-IO (PN 我))
+			(NP-OBJ (PU 「)
+				(DNP (NP (ADJP (JJ 女))
+					 (NP (NN 状元)))
+				     (DEG 的))
+				(NP (NN 爸爸))
+				(PU 」)))))) 
+	</parse>
+	<arg n="0">
+	很多 朋友 
+	</arg>
+	<arg n="2">
+	我 的 名字 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tmp">
+	一时 之间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (ADVP (AD 而))
+				(NP-SBJ (-NONE- *pro*))
+				(VP (VCD (VV 吃)
+					 (VV 食))
+				    (NP-OBJ (-NONE- *T*-3))))
+			    (DEC 的))))
+	    (VP (ADVP (AD 便))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (PP-MNR (P 用)
+						    (NP (NN 台语)))
+					    (VP (VV 称呼)))
+					(PRN (PU ——)
+					     (NP (PU 『)
+						 (NN 菜头糕)
+						 (PU 』))))
+				    (DEC 的)))
+			    (NP (NN 萝卜糕)))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	—— 『 菜头糕 』 
+	</arg>
+	<arg n="m" f="mnr">
+	用 台语 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 反正))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 买)
+				    (NP-OBJ (-NONE- *pro*))))
+			    (DEC 的)))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 都))
+		(ADVP (AD 不))
+		(VP (VV 问)
+		    (NP-IO (-NONE- *pro*))
+		    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (ADVP (AD 如何))
+				(VP (VV 称呼))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	如何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

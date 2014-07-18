@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 减损 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 reduces"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 的确))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 对)
+				(NP (NN 建筑师)
+				    (CC 或)
+				    (NN 业主)))
+			(VP (MSP 来)
+			    (VP (VV 说)))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (PU 「)
+			(VV 高处不胜寒)
+			(PU 」)))
+	    (VP (ADVP (AD 或许))
+		(ADVP (AD 更))
+		(VP (VC 是)
+		    (NP-PRD (DP (DT 这些))
+			    (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (-NONE- *T*-1))
+						 (VP (VV 投入)
+						     (VP (VV 盖)
+							 (NP-OBJ (NN 高楼)))))
+					     (DEC 的)))
+				     (NP (NN 人)))
+				 (DEG 的))
+			    (NP (NN 写照))))
+		(PU ，)
+		(CP-ADV (ADVP (CS 虽然))
+			(IP (NP-SBJ (PN 这))
+			    (VP (ADVP (AD 仍然))
+				(ADVP (AD 一点))
+				(ADVP (AD 也))
+				(ADVP (AD 不))
+				(VP (VV 能)
+				    (VP (VV 减损)
+					(NP-OBJ (NP (PN 他们))
+						(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							    (VP (PU 「)
+								(VV 创)
+								(NP-OBJ (NN 纪录))
+								(PU 」)))
+							(DEC 的))
+						(NP (NN 荣耀感)))))))))) 
+	</parse>
+	<arg n="0">
+	这 
+	</arg>
+	<arg n="1">
+	他们 *PRO* 「 创 纪录 」 的 荣耀感 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	一点 
+	</arg>
+	<arg n="m" f="adv">
+	仍然 
+	</arg>
+	<arg n="m" f="adv">
+	虽然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

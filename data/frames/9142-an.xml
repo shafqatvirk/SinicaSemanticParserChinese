@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 按 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 holds down"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP (NN 散文))
+			      (ADJP (JJ 名))
+			      (NP (NN 作家)))
+		      (NP-PN (NR 潘人木)))
+	      (VP (VP (ADVP (AD 则))
+		      (ADVP (AD 再))
+		      (ADVP (AD 也))
+		      (VP (VPT (VV 按)
+			       (AD 不)
+			       (VV 住))
+			  (NP-OBJ (NN 情绪))))
+		  (VP (VV 说)
+		      (PU ：)
+		      (IP-OBJ (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 看)
+					      (NP-TTL-OBJ (PU 《)
+							  (NN 涨潮日)
+							  (PU 》))))
+				  (NP-SBJ (NP (PN 我))
+					  (NP (NN 眼镜)))
+				  (VP (ADVP (AD 都))
+				      (VP (VV 哭掉)
+					  (AS 了))))
+			      (PU ！)
+			      (PP (P 因为)
+				  (IP (NP-SBJ (PN 他))
+				      (VP (BA 把)
+					  (IP-OBJ (NP-SBJ-1 (NP (PN 我们))
+							    (DNP (NP (NN 早年))
+								 (DEG 的))
+							    (NP (NN 愁苦)
+								(PU 、)
+								(NN 困顿)))
+						  (VP (ADVP (AD 都))
+						      (VP (VRD (VV 写)
+							       (VV 出来))
+							  (AS 了)
+							  (NP-OBJ (-NONE- *-1)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  散文 名 作家 潘人木 
+	  </arg>
+	  <arg n="1">
+	  情绪 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

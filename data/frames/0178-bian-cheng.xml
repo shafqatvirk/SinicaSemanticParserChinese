@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 变成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="causer"/>
+    <role argnum="1" argrole="entity undergoing change"/>
+    <role argnum="2" argrole="end state"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-CND (NP-SBJ (-NONE- *pro*))
+          (VP (ADVP (CS 如果))
+              (VP (VV 能够)
+                  (VP (PP-TMP (P 在)
+                              (NP (CP (WHPP-4 (-NONE- *OP*))
+                                      (CP (IP (NP-SBJ (NN 别人))
+                                              (VP (PP-TMP (-NONE- *T*-4))
+                                                  (VP (VV 需金孔急))))
+                                          (DEC 的)))
+                                  (NP (NN 时候))))
+                      (PP-MNR (P 藉)
+                              (NP (NP-APP (NN 入股)
+                                          (PU 、)
+                                          (NN 购并)
+                                          (ETC 等))
+                                  (NP (NN 方式))))
+                      (PU ，)
+                      (VP (PU 「)
+                          (VP (BA 把)
+                              (IP-OBJ (NP-SBJ (NN 敌人))
+                                      (VP (VV 变成)
+                                          (NP-OBJ (NN 朋友)))))
+                          (PU 」)))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="TMP"> 在 *OP* 别人 (*T*-4)->(时候) 需金孔急 的 时候 </arg>
+	<arg n="M" f="MNR"> 藉 入股 、 购并 等 方式 </arg>
+	<arg n="1"> 敌人 </arg>
+	<V/>
+	<arg n="2"> 朋友 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DNP (ADJP (JJ 原来))
+                   (DEG 的))
+              (QP (CD 一些))
+              (NP (NN 城镇)))
+      (VP (VV 变成)
+          (AS 了)
+          (NP-OBJ (NN 城市)))))
+        </parse>
+	<arg n="1"> 原来 的 一些 城镇 </arg>
+	<V/>
+	<arg n="2"> 城市 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

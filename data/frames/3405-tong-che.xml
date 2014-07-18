@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通车 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing open to traffic"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 武汉)
+				  (CC 至)
+				  (NR 宜昌))
+			   (DEG 的))
+		      (ADJP (JJ 高速))
+		      (NP (NN 公路)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 通车)))) 
+	  </parse>
+	  <arg n="0">
+	  武汉 至 宜昌 的 高速 公路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

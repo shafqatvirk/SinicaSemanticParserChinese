@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 独创 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 establishes single-handedly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (PU 「)
+		       (NP-PN (NR 竹堑))
+		       (NP (NN 饼))
+		       (PU 」))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NP-APP (DNP (NP (NP-PN (ADJP (JJ 新))
+								    (NP-PN (NR 复珍)))
+							     (NP (NN 饼)
+								 (NN 店)))
+							 (DEG 的))
+						    (NP (NN 创业者)))
+					    (NR-PN 吴张换))
+				    (VP (VV 独创)
+					(NP-OBJ (-NONE- *T*-1))))
+				(DEC 的)))))) 
+	</parse>
+	<arg n="0">
+	新 复珍 饼 店 的 创业者 吴张换 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

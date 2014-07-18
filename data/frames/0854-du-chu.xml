@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 读出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="reader"/>
+      <role argnum="1" argrole="thing read"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 有时))
+		  (VP (VV 会)
+		      (VP (VV 出现)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-PRP (P 因)
+					      (NP (CP-APP (IP (NP-SBJ (NN 条形码))
+							      (VP (VV 丢失)
+								  (CC 或)
+								  (VV 损坏)))
+							  (DEC 的))
+						  (NP (NN 情况))))
+				      (VP (MSP 而)
+					  (VP (VV 导致)
+					      (NP-OBJ (NN 信息))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (ADVP (AD 无法))
+						      (VP (VV 读出)))))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放缓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 slows down"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由于)
+		      (NP (DNP (NP (NP-PN (NR 台湾))
+				   (NP (NN 当局)))
+			       (DEG 的))
+			  (NP (NN 阻挠))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP (NN 台商))
+			       (PP (P 在)
+				   (NP-PN (NR 天津)))
+			       (NP (NN 投资)))
+			   (DEG 的))
+		      (NP (NN 增长)
+			  (NN 幅度)))
+	      (VP (VV 有所)
+		  (NP-OBJ (NN 放缓)))) 
+	  </parse>
+	  <arg n="1">
+	  台商 在 天津 投资 的 增长 幅度 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 台湾 当局 的 阻挠 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

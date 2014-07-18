@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 交叠 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities being one on top of another"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (DP (DT 这些))
+		    (NP (NN 文化圈)))
+	    (VP (VP (ADVP (AD 各自))
+		    (VP (VA 独立)))
+		(PU 、)
+		(VP (ADVP (AD 自))
+		    (VP (VE 有)
+			(NP-OBJ (NN 特色))))
+		(PU ；)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 又))
+		    (ADVP (AD 相互))
+		    (VP (VV 影响)))
+		(PU ，)
+		(VP (VV 带)
+		    (AS 著)
+		    (NP-OBJ (QP (CD 一些))
+			    (NP (NN 共通性))))
+		(PU ，)
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 可以)
+				(VP (VV 说))))
+		    (ADVP (AD 就))
+		    (VP (VV 像)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 朵)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (ADJP (JJ 重))
+						    (NP (NN 瓣)))
+					    (VP (VV 交叠)))
+					(DEC 的)))
+				(NP (NN 花朵))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	重 瓣 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

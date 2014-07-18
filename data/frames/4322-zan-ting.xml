@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 暂停 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing suspended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今后))
+	      (PU ，)
+	      (IP-TPC (NP-SBJ (DP (DT 哪)
+				  (CLP (M 个)))
+			      (NP (NN 地方)))
+		      (VP (VV 出现)
+			  (UCP-OBJ (NP (NN 质量)
+				       (NN 问题))
+				   (CC 和)
+				   (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					       (VP (VV 挪用)
+						   (NP-OBJ (NN 资金))))
+				       (NP (NN 问题))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 就))
+		      (PP-DIR (P 对)
+			      (NP (DP (DT 哪)
+				      (CLP (M 个)))
+				  (NP (NN 项目))))
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 新闻)
+				  (NN 曝光))))
+		  (PU ，)
+		  (VP (ADVP (AD 甚至))
+		      (VP (VV 暂停)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 对)
+					      (NP (DP (DT 那)
+						      (CLP (M 个)))
+						  (NP (NN 地方))))
+				      (VP (VP (VV 拨付)
+					      (NP-OBJ (NN 建设)
+						      (NN 资金)))
+					  (CC 和)
+					  (VP (VV 审批)
+					      (NP-OBJ (NN 建设)
+						      (NN 项目))))))
+			  (PU ，)
+			  (PP (ADVP (AD 直))
+			      (PP (P 至)
+				  (LCP (NP (NN 改正))
+				       (LC 为止)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 对 那 个 地方 拨付 建设 资金 和 审批 建设 项目 
+	  </arg>
+	  <arg n="m" f="adv">
+	  甚至 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 塞拉利昂))
+			  (NP (NN 邮递)
+			      (NN 服务)))
+		  (VP (VV 暂停))) 
+	  </parse>
+	  <arg n="1">
+	  塞拉利昂 邮递 服务 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

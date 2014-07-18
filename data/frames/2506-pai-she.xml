@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拍摄 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing filmed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 辽宁)
+			     (NR 张学良)
+			     (NN 基金会))
+		      (CC 和)
+		      (NP-PN (NP (NP-PN (NR 张学良))
+				 (CC 暨)
+				 (NP (NN 东北)
+				     (NN 军史)))
+			     (NN 研究会)))
+	      (VP (VP (VV 成立)
+		      (PP-TMP (P 于)
+			      (NP (NT 八十年代))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 目前))
+		      (ADVP (AD 已))
+		      (VP (VP (VSB (VV 编辑)
+				   (VV 出版))
+			      (AS 了)
+			      (NP-OBJ (DNP (NP (ADJP (JJ 有关))
+					       (NP (NP-PN (NR 张学良))
+						   (CC 和)
+						   (NP (NN 东北军))))
+					   (DEG 的))
+				      (NP (NN 研究)
+					  (NN 资料)
+					  (PU 、)
+					  (NN 著作)))
+			      (QP-EXT (CD 三十一)
+				      (CLP (M 种))))
+			  (PU ，)
+			  (VP (VV 拍摄)
+			      (NP-OBJ (NN 电视片))
+			      (QP-EXT (CD 三)
+				      (CLP (M 部))))
+			  (PU ，)
+			  (VP (VV 举办)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 多)
+					  (CLP (M 次)))
+				      (NP (NN 学术)
+					  (NN 活动)))))))) 
+	  </parse>
+	  <arg n="0">
+	  辽宁 张学良 基金会 和 张学良 暨 东北 军史 研究会 
+	  </arg>
+	  <arg n="1">
+	  电视片 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三 部 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

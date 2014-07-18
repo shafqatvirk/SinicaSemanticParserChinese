@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 计有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entities arg0 includes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 大众)
+		    (NN 交通)
+		    (NN 工具))
+	    (VP (VV 计有)
+		(NP-OBJ (NN 客运)
+			(PU 、)
+			(NN 捷运)
+			(PU 、)
+			(NN 社区)
+			(NN 巴士)))) 
+	</parse>
+	<arg n="0">
+	大众 交通 工具 
+	</arg>
+	<arg n="1">
+	客运 、 捷运 、 社区 巴士 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

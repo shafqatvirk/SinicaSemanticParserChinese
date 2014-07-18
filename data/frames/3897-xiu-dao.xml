@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 修到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing built"/>
+      <role argnum="2" argrole="location arg1 is built to reach"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (IP (PP-MNR (P 凭)
+			  (NP (DNP (NP-PN (NR 日本))
+				   (DEG 的))
+			      (NP (NN 技术)
+				  (CC 和)
+				  (NN 经济)
+				  (NN 实力))))
+		  (PU ，)
+		  (NP-SBJ (PN 她))
+		  (VP (VC 是)
+		      (VP (VV 可以)
+			  (VP (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (NN 公路))
+					  (VP (VV 修到)
+					      (NP-OBJ (NN 山顶)))))
+			      (CC 或)
+			      (VP (ADVP (AD 干脆))
+				  (VP (VV 架设)
+				      (NP-OBJ (NN 缆车))))))))
+	      (SP 的)) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <arg n="1">
+	  公路 
+	  </arg>
+	  <arg n="2">
+	  山顶 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  凭 日本 的 技术 和 经济 实力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing written"/>
+      <role argnum="2" argrole="level arg0 is written until"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九八三年))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国)
+			 (NN 地方志)
+			 (NN 指导)
+			 (NN 小组))
+	      (VP (VP (VV 成立))
+		  (PU ，)
+		  (VP (VV 要求)
+		      (NP-OBJ (-NONE- *pro*))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-TMP (P 到)
+				      (LCP (NP (DP (DT 本))
+					       (NP (NN 世纪)))
+					   (LC 末)))
+			      (VP (VP (BA 将)
+				      (IP-OBJ (NP-SBJ (NN 地方志))
+					      (VP (VV 修到)
+						  (NP-OBJ (NN 县级)))))
+				  (PU ，)
+				  (CC 并)
+				  (VP (VV 出版)
+				      (NP-OBJ (NN 志书))
+				      (QP-EXT (CD 五千)
+					      (CLP (M 种)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  地方志 
+	  </arg>
+	  <arg n="2">
+	  县级 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 本 世纪 末 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

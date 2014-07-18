@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抗拒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 resists"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 学生))
+	    (VP (ADVP (AD 又))
+		(VP (VV 会)
+		    (VP (VV 抗拒)
+			(NP-OBJ (ADJP (JJ 由上而下))
+				(DNP (ADJP (JJ 权威式))
+				     (DEG 的))
+				(NP (NN 教导))))))) 
+	</parse>
+	<arg n="0">
+	学生 
+	</arg>
+	<arg n="1">
+	由上而下 权威式 的 教导 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-PN (NR 玛丽安))
+				    (VP (ADVP (AD 浑身))
+					(VP (VV 散发)
+					    (NP-OBJ (-NONE- *T*-1)))))
+				(DEC 的)))
+			(NP (NN 热力)))
+		(PU ，)
+		(VP (ADVP (AD 简直))
+		    (VP (VV 教)
+			(NP-OBJ (NN 人))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 无从))
+				(VP (VV 抗拒))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	无从 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 追踪 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="chaser"/>
+      <role argnum="1" argrole="entity chased"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-APP (NN 邮电)
+				  (ETC 等))
+			  (ADJP (JJ 信息化))
+			  (NP (NN 工程)))
+		      (NP (NN 建设)))
+	      (PU ，)
+	      (VP (VV 应)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (NN 技术)
+				       (NN 层次)
+				       (PU 、)
+				       (NN 网络)
+				       (NN 规模)
+				       (PU 、)
+				       (NN 服务)
+				       (NN 质量))
+				   (LC 上)))
+		      (VP (VV 追踪)
+			  (NP-OBJ (NP (NN 国际))
+				  (ADJP (JJ 先进))
+				  (NP (NN 水平))))))) 
+	  </parse>
+	  <arg n="0">
+	  邮电 等 信息化 工程 建设 
+	  </arg>
+	  <arg n="1">
+	  国际 先进 水平 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 技术 层次 、 网络 规模 、 服务 质量 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

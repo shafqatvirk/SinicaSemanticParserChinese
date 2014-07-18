@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 头头是道 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 谈起)
+			  (NP-OBJ (NN 光纤)
+				  (PU 、)
+				  (NN 网路))))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 老))
+		      (NP (NN 先生)))
+	      (VP (VV 头头是道))) 
+	  </parse>
+	  <arg n="0">
+	  老 先生 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 谈起 光纤 、 网路 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

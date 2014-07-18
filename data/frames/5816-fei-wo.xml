@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 肥沃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 吃)
+		    (AS 了)
+		    (NP-OBJ (NN 食物)
+			    (NN 残渣)))
+		(PU ，)
+		(VP (VRD (VV 制造)
+			 (VV 出))
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 肥沃)))
+				    (DEC 的)))
+			    (ADJP (JJ 新))
+			    (NP (NN 土)))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

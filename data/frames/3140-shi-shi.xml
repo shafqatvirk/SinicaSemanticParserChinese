@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逝世 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people passing away"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD ９))
+	      (PU ．)
+	      (NP-SBJ (NP-APP (NP-PN (NR 美国))
+			      (NP (NN 田径)
+				  (NN 名将)))
+		      (NP-APP (PU “)
+			      (ADJP (JJ 花))
+			      (NP (NN 蝴蝶))
+			      (PU ”))
+		      (NP-PN (NR 格里菲斯·乔伊娜)))
+	      (VP (NP-TMP (NT ９月))
+		  (PP-PRP (P 因)
+			  (IP (NP-SBJ (NN 心脏病))
+			      (VP (VV 发作))))
+		  (VP (VV 逝世)))) 
+	  </parse>
+	  <arg n="0">
+	  美国 田径 名将 “ 花 蝴蝶 ” 格里菲斯·乔伊娜 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 心脏病 发作 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ９月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

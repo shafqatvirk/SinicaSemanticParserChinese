@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 公投 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="voter"/>
+    <role argnum="1" argrole="thing arg0 decides through voting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ-1 (IP-APP (PU 「)
+			  (IP (NP-SBJ (NN 核四) )
+			      (VP (VV 公投)))
+			  (PU ，)
+			  (IP (NP-SBJ (NN 人民) )
+			      (VP (VV 作主)))
+			  (PU 」))
+		  (ADJP (JJ 反核))
+		  (ADJP (JJ 大))
+		  (NP (NN 游行) )) 
+	</parse>
+	<arg n="1">
+	核四 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-TPC (NP-APP (NT 二二四))
+		(IP-APP (PU 「)
+			(IP (NP-TPC (NN 核四))
+			    (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 公投)))
+			(PU ，)
+			(IP (NP-SBJ (NN 人民))
+			    (VP (VV 做主)))
+			(PU 」))
+		(ADJP (JJ 反核))
+		(ADJP (JJ 大))
+		(NP (NN 游行))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	核四 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 sets off"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (NN 宫城))
+		     (LC 外))
+	    (PU ，)
+	    (NP-TPC (ADVP (AD 不论是))
+		    (NP (NP-APP (NP (NP (NN 元宵)
+					(PU 、)
+					(NN 端午))
+				    (CC 或是)
+				    (NP (NN 七夕)
+					(PU 、)
+					(NN 冬至)))
+				(ETC 等))
+			(NP (NN 节日))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 讲究)
+				    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 过节)))
+					    (NP (NN 气氛)))))
+			    (DEC 的)))
+		    (NP (NN 老百姓)))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 经常))
+		(VP (VP (VV 利用)
+			(NP-OBJ (NN 火药)))
+		    (PU ，)
+		    (VP (VV 放起)
+			(NP-OBJ (NN 冲天炮)
+				(CC 或)
+				(NN 烟花)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 讲究 *PRO* 过节 气氛 的 老百姓 
+	</arg>
+	<arg n="1">
+	冲天炮 或 烟花 
+	</arg>
+	<arg n="m" f="adv">
+	经常 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	不论是 元宵 、 端午 或是 七夕 、 冬至 等 节日 
+	</arg>
+	<arg n="m" f="loc">
+	宫城 外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

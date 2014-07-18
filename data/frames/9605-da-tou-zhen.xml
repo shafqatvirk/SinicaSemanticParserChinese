@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打头阵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 陈水扁))
+		      (NP (NN 总统)))
+	      (VP (DVP (VP (VA 高兴))
+		       (DEV 地))
+		  (VP (VV 祝福)
+		      (NP-OBJ (NN 新人))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 早日))
+				  (VP (VV 生产)
+				      (NP-OBJ (PU 「)
+					      (NN 人权)
+					      (NN 宝宝)
+					      (PU 」))))
+			      (PU ，)
+			      (VP (PP-BNF (P 为)
+					  (NP (NN 人权)
+					      (NN 社会)
+					      (NN 愿景)))
+				  (VP (VV 打头阵)))
+			      (PU ，)
+			      (VP (VV 作)
+				  (NP-OBJ (DNP (NP (NN 人权)
+						   (NN 教育)
+						   (NN 传承))
+					       (DEG 的))
+					  (ADJP (JJ 最佳))
+					  (NP (NN 范本))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 人权 社会 愿景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

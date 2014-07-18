@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奠基 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="project"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-APP (NP-PN (NR 多哥))
+				  (NP (NN 总统)))
+			  (NP-PN (NR 埃亚德马)))
+		      (CC 和)
+		      (NP (NP-APP (NP-PN (NR 中国)
+					 (NN 外经贸部))
+				  (NP (NN 副部长)))
+			  (NP-PN (NR 杨文生))))
+	      (VP (VP (VV 出席)
+		      (AS 了)
+		      (NP-OBJ (NN 奠基)
+			      (NN 仪式)))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-BNF (P 为)
+			      (NP (NN 工程)))
+		      (VP (VV 奠基))))) 
+	  </parse>
+	  <arg n="0">
+	  多哥 总统 埃亚德马 和 中国 外经贸部 副部长 杨文生 
+	  </arg>
+	  <arg n="1">
+	  为 工程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-TMP (NT 今年)
+			  (NT 八月))
+		  (NP-PN-SBJ (NP (NN 国际)
+				 (NN 海底)
+				 (NN 光缆))
+			     (NP-PN (NR 汕头))
+			     (NP (NN 登陆站)))
+		  (VP (VV 奠基)))
+	  </parse>
+	  <arg n="1">
+	  国际 海底 光缆 汕头 登陆站 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 八月 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

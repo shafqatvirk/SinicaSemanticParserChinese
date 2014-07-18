@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迟至 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="time arg0 is as late as"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP (NT 九九年))
+		    (NP-PN (NR 澳门))
+		    (NP (NN 回归)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 则))
+		(VP (VP (VV 迟至)
+			(NP-OBJ (NT 八○年代)
+				(NN 中期)))
+		    (VP (ADVP (AD 才))
+			(VP (VV 展开)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 培训)
+					(NP-OBJ (NN 本土)
+						(NN 人才))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	八○年代 中期 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="tpc">
+	九九年 澳门 回归 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

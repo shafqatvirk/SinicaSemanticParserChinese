@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收录 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing collected and recorded"/>
+      <role argnum="2" argrole="location where recording is"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 收录)
+				      (NP-OBJ (NP (NN 其中))
+					      (QP (CD 五百多)
+						  (CLP (M 幅)))
+					      (NP (NN 作品)))))
+			      (DEC 的)))
+		      (NP (PU 《)
+			  (DNP (NP (NN 人类))
+			       (DEG 的))
+			  (NP (NN 记忆))
+			  (PU 》))
+		      (NP (NN 光盘)
+			  (CC 和)
+			  (NN 作品选)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 同时))
+		  (VP (VV 推出)))) 
+	  </parse>
+	  <arg n="2">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  其中 五百多 幅 作品 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

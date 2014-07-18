@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 聚居 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 lives together in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (PP (P 在)
+			(NP (PN 此)))
+		    (NP (NN 同时)))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 聚居)
+				    (NP-OBJ (NN 乡村))))
+			    (DEC 的)))
+		    (NP-PN (NR 客家)))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(PP-PRP (P 因)
+			(NP (UCP-APP (IP (NP-SBJ (NN 农业))
+					 (VP (VV 衰退)))
+				     (PU 、)
+				     (IP (NP-SBJ (NN 人口))
+					 (VP (VV 流失)))
+				     (PU 、)
+				     (NP (NN 都市化))
+				     (ETC 等))
+			    (NP (NN 因素))))
+		(PU ，)
+		(DVP (VP (ADVP (AD 不))
+			 (VP (VV 可)
+			     (VP (VV 避免))))
+		     (DEV 地))
+		(ADVP (AD 也))
+		(VP (PP-PRD (P 在)
+			    (LCP (NP (NN 改变))
+				 (LC 中)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	乡村 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (QP (CD 大量))
+			(NP (NN 台商)))
+		(VP (VV 聚居)
+		    (PP (P 於)
+			(NP-PN (NR 东莞))))) 
+	</parse>
+	<arg n="0">
+	大量 台商 
+	</arg>
+	<arg n="1">
+	於 东莞 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 鸟)
+		    (NN 兽))
+	    (VP (NP-ADV (PN 相互))
+		(DVP (VP (VA 和平))
+		     (DEV 地))
+		(VP (VV 聚居)
+		    (CC 与)
+		    (VV 欢唱)))) 
+	</parse>
+	<arg n="0">
+	鸟 兽 
+	</arg>
+	<arg n="m" f="adv">
+	和平 地 
+	</arg>
+	<arg n="m" f="adv">
+	相互 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

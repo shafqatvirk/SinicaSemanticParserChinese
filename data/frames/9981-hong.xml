@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 轰 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 bombs"/>
+      <role argnum="2" argrole="thing arg1 is bombed with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (LB 被)
+		  (IP-OBJ (NP-SBJ (NN 炮火))
+			  (VP (VV 轰)
+			      (DER 得)
+			      (IP-EXT (IP (NP-SBJ (NN 浑身)
+						  (NN 上下))
+					  (VP (ADVP (AD 全))
+					      (VP (VC 是)
+						  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+							      (CP (IP (NP-SBJ (-NONE- *T*-1))
+								      (VP (PP (P 如)
+									      (NN 蜂巢))
+									  (VP (VA 般))))
+								  (DEC 的)))
+							  (NP (NN 弹孔))))))
+				      (PU ，)
+				      (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (ADVP (AD 颓然))
+					      (VP (VV 跌坐)
+						  (PP (P 在)
+						      (LCP (NP (NN 椅子))
+							   (LC 上))))))))))) 
+	  </parse>
+	  <arg n="1">
+	  他 
+	  </arg>
+	  <arg n="2">
+	  炮火 
+	  </arg>
+	  <arg n="m" f="adv">
+	  浑身 上下 全 是 *OP* *T*-1 如 蜂巢 般 的 弹孔 ， *pro* 颓然 跌坐 在 椅子 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

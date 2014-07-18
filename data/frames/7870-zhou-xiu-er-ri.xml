@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 周休二日 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 分)
+		    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 上班)
+					(PU 、)
+					(VV 周休二日)
+					(ETC 等)))
+			    (ADJP (JJ 不同))
+			    (NP (NN 时段))))
+		(VP (VV 使用)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

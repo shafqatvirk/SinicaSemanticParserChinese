@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 诉诸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 takes"/>
+    <role argnum="2" argrole="entity arg1 is taken to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 行政)
+		    (NN 院长))
+	    (VP (VP (VV 解散)
+		    (NP-OBJ (NN 国会)))
+		(VP (VV 诉诸)
+		    (NP-OBJ (NN 民意)
+			    (NN 表决))))) 
+	</parse>
+	<arg n="0">
+	行政 院长 
+	</arg>
+	<arg n="2">
+	民意 表决 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-PN-SBJ (NR 台))
+					  (VP (VV 产)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (NP (NN 影片)))
+			  (VP (ADVP (AD 比较))
+			      (VP (VV 接近)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (VV 诉诸)
+							  (NP-OBJ (NN 小众))))
+						  (DEC 的)))
+					  (NP (NN 艺术片)))))))
+	      (PU ，)
+	      (ADVP (AD 那麽))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VNV-WH (VC 是)
+			  (AD 不)
+			  (VC 是))
+		  (VP (VV 该)
+		      (VP (VP (VV 当成)
+			      (NP-OBJ (NN 艺术片)))
+			  (VP (VV 行销)))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	小众 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

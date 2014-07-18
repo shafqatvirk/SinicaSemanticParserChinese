@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 铸造 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 casts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (ADJP (JJ 复杂))
+	    (IP-APP (NP-SBJ (-NONE- *PRO*))
+		    (VP (PU 「)
+			(VP (VV 分段))
+			(VP (VV 铸造))
+			(PU 」)))
+	    (NP (NN 技术))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

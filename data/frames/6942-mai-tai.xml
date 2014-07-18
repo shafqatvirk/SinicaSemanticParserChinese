@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 卖台 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 一))
+				(ADVP (AD 不))
+				(VP (VV 小心))))
+		    (ADVP (AD 就))
+		    (VP (SB 被)
+			(VP (VCP (VV 指责)
+				 (VC 为))
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (PU 「)
+					(VV 卖台)
+					(PU 」))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

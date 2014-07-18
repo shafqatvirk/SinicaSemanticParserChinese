@@ -1,0 +1,285 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="features that theme possesses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-4 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-4))
+			  (VP (VV 带)
+			      (NP-OBJ (NN 画中画)
+				      (NN 功能))))
+		      (DEC 的)))
+	      (NP (NN 数字))
+	      (ADJP (JJ 彩色))
+	      (NP (NN 电视机))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-4 	  	  
+	  </arg>
+	  <arg n="1">
+	  画中画 功能 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing brought"/>
+      <role argnum="2" argrole="beneficiary"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-PN (NR 中国))
+			  (DP (DT 各))
+			  (NP (NN 地)))
+		      (QP (CD 一)
+			  (CLP (M 批)))
+		      (ADJP (JJ 知名))
+		      (NP (NN 企业)))
+	      (VP (VV 带)
+		  (AS 着)
+		  (NP-OBJ (NN 名牌)
+			  (NN 产品)
+			  (PU 、)
+			  (NN 资金)
+			  (CC 和)
+			  (NN 技术)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 各 地 一 批 知名 企业 	  	  
+	  </arg>
+	  <arg n="1">
+	  名牌 产品 、 资金 和 技术 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="thing arg0 leads arg1 to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VV 现任)
+				  (NP-OBJ (NP-PN (NP (NN 行政)
+						     (CC 暨)
+						     (NN 公职))
+						 (NP (NN 司)))
+					  (NP (NP (NN 人力)
+						  (NN 资源))
+					      (NP (NN 厅)))
+					  (NP (NP (NN 聘任)
+						  (CC 及)
+						  (NN 甄选))
+					      (NP (NN 处)))
+					  (NP (NN 处长))))))
+		      (NP-PN (NR 谭惠珠)))
+	      (VP (VP (VV 带)
+		      (AS 著)
+		      (NP-OBJ (NN 访客))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 参观)
+			      (NP-OBJ (NN 公职)
+				      (NN 司))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 现任 行政 暨 公职 司 人力 资源 厅 聘任 及 甄选 处 处长 谭惠珠 	  
+	  </arg>
+	  <arg n="1">
+	  访客 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 参观 公职 司 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 夫妻))
+	      (VP (VV 带)
+		  (NP-OBJ (QP (CD 三)
+			      (CLP (M 个)))
+			  (NP (NN 小孩))))) 
+	  </parse>
+	  <arg n="0">
+	  夫妻 	  
+	  </arg>
+	  <arg n="1">
+	  三 个 小孩 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is vague about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不过))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 陈水扁))
+	      (VP (VP (ADVP (CS 虽然))
+		      (VP (VV 主张)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 要)
+				      (VP (VP (VV 立法))
+					  (VP (VV 保障)
+					      (NP-OBJ (NN 教育)
+						      (NN 经费))))))))
+		  (PU ，)
+		  (VP (ADVP (AD 但))
+		      (ADVP (AD 却))
+		      (ADVP (AD 不))
+		      (VP (VP (PP-PRD (P 像)
+				      (NP-PN (NR 许信良))))
+			  (VP (ADVP (AD 明确))
+			      (VP (VV 说)
+				  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 要)
+					      (VP (VRD (VV 保障)
+						       (VV 到))
+						  (QP-OBJ (DNP (NP (NN 国民)
+								   (NN 生产)
+								   (NN 毛额))
+							       (DEG 的))
+							  (QP (CD 百分之六))))))))))
+		  (PU ，)
+		  (VP (ADVP (AD 而))
+		      (VP (VC 是)
+			  (VP (ADVP (AD 模糊))
+			      (VP (VV 带)
+				  (AS 过))))))) 
+	  </parse>
+	  <arg n="0">
+	  陈水扁 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  模糊 	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不过 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 wears"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 她))
+	      (VP (VV 应该)
+		  (VP (VP (VC 是)
+			  (NP-PRD (QP (CLP (M 个)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VSB (VV 盛装)
+						       (VV 打扮))))
+					  (DEC 的)))
+				  (NP (NN 贵妇))))
+		      (PU ，)
+		      (VP (VV 梳)
+			  (AS 著)
+			  (NP-OBJ (NN 发髻)))
+		      (PU ，)
+		      (VP (VV 带)
+			  (AS 著)
+			  (NP-OBJ (NN 项圈)))))) 
+	  </parse>
+	  <arg n="0">
+	  她 	  
+	  </arg>
+	  <arg n="1">
+	  项圈 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="class arg0 teaches"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (QP-ADV (OD 第二)
+					  (CLP (M 年)))
+				  (VP (VV 带)
+				      (NP-OBJ (NP-PN (NR 高雄))
+					      (NP-PN (NR 成功)
+						     (NN 启智)
+						     (NN 学校))
+					      (NP (NN 戏剧)
+						  (NN 课))))))
+			  (DEC 的)))
+		  (NP-PN (NR 卓明))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  高雄 成功 启智 学校 戏剧 课 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  第二 年 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

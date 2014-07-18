@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 奉养 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 supports and waits on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PU 『)
+	    (IP-SBJ (NP-SBJ (NN 儿女))
+		    (VP (VV 奉养)
+			(NP-OBJ (NN 老人家))))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 不过))
+		(VP (VV 多)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 双)))
+			    (NP (NN 筷子)))))
+	    (PU 』)) 
+	</parse>
+	<arg n="0">
+	儿女 
+	</arg>
+	<arg n="1">
+	老人家 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

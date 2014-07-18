@@ -1,0 +1,294 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开放 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="area opened"/>
+      <role argnum="2" argrole="to whom"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (ADVP (AD 加之))
+		  (NP-PN-SBJ (NR 中国))
+		  (VP (PP-LOC (P 在)
+			      (NP-PN (NR 浦东)))
+		      (VP (VP (ADVP (AD 率先))
+			      (PP-DIR (P 对)
+				      (NP (NN 外资)))
+			      (VP (VV 开放)
+				  (NP-OBJ (NN 外贸)
+					  (NN 领域))))
+			  (PU ，)
+			  (VP (VV 成立)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 三)
+					  (CLP (M 家)))
+				      (NP (NP (NN 中外))
+					  (ADJP (JJ 合资)))
+				      (NP (NN 贸易)
+					  (NN 公司))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 浦东 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  率先 	  
+	  </arg>
+	  <arg n="2">
+	  对 外资 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外贸 领域 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 缅甸))
+		      (NP (NN 政府)))
+	      (VP (PP-TMP (P 于)
+			  (NP (NT 昨天)
+			      (CC 和)
+			      (NT 今天)))
+		  (ADVP (AD 重新))
+		  (VP (VV 开放)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (NP-TMP (NT 去年))
+					      (VP (VV 关闭))))
+				      (DEC 的)))
+			      (DNP (NP (NP-PN (NR 缅)
+					      (NR 泰))
+				       (NP (NN 边境)
+					   (NN 地区)))
+				   (DEG 的))
+			      (QP (CD ３)
+				  (CLP (M 个)))
+			      (ADJP (JJ 主要))
+			      (NP (NN 通商)
+				  (NN 口岸)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  缅甸 政府 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  于 昨天 和 今天 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  重新 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-1)->(缅泰边境地区的３个主要通商口岸) 去年 关闭 的 缅 泰 边境 地区 的 ３ 个 主要 通商 口岸 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 沿海)
+			  (PU 、)
+			  (NN 沿边)
+			  (PU 、)
+			  (NN 沿江))
+		  (VP (ADVP (AD 进一步))
+		      (VP (VV 开放)))) 
+	  </parse>
+	  <arg n="1">
+	  沿海、沿边、沿江 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  进一步 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 目前))
+		       (LC 为止))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 开放)
+		      (AS 了)
+		      (NP-OBJ (NP (QP (CD 五)
+				      (CLP (M 个)))
+				  (NP (NN 经济)
+				      (NN 特区)))
+			      (CC 和)
+			      (NP (NP-PN-APP (NR 北京)
+					     (PU 、)
+					     (NR 上海)
+					     (PU 、)
+					     (NR 天津)
+					     (ETC 等))
+				  (QP (CD 六)
+				      (CLP (M 个)))
+				  (NP (NN 城市))))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 作为)
+			      (NP-OBJ (NN 试点))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  只 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  五 个 经济 特区 和 北京 、 上海 、 天津 等 六 个 城市 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 作为 试点 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 当局)))
+	      (VP (VV 应)
+		  (VP (VP (ADVP (AD 尽快))
+			  (VP (VV 开放)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 采认)
+					  (NP-OBJ (NP (NN 祖国)
+						      (NN 大陆))
+						  (NP (NN 学历)))))))
+		      (PU ，)
+		      (VP (VV 维护)
+			  (NP-OBJ (DNP (NP (ADJP (JJ 广大))
+					   (NP (NN 学子)))
+				       (DEG 的))
+				  (NP (NN 利益))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  台湾 当局 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  尽快 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *PRO* 采认 祖国 大陆 学历 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (ADVP (AD 更加))
+			      (VP (VA 开放))))
+		      (DEC 的)))
+	      (NP (NN 政策))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(政策) 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  更加 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="flower, etc. that blossoms"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (NP (NN 观察)))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (QP (CD 不少))
+			       (NP (NN 公园)))
+			   (DEG 的))
+		      (NP (NN 桂花)))
+	      (VP (VP (NP-TMP (NT 现在))
+		      (ADVP (AD 也))
+		      (ADVP (AD 已经))
+		      (VP (VV 结出)
+			  (NP-OBJ (NN 花蕾))))
+		  (PU ，)
+		  (VP (ADVP (AD 不日))
+		      (ADVP (AD 也))
+		      (ADVP (AD 将))
+		      (VP (VV 开放))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  不少 公园 的 桂花 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据 观察 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  不日 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

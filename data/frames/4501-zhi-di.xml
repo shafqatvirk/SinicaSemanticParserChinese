@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 直抵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 reaches"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VV 想)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (NP-ADV (DP (DT 此)
+					  (QP (CD 一)))
+				      (NP (NN 去)))
+			      (VP (VV 该)
+				  (VP (VV 直抵)
+				      (NP-OBJ (NP-PN (NR 富士))
+					      (NP (PU “)
+						  (NN 耳跟)
+						  (PU ”))))))
+			  (SP 了)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  富士 “ 耳跟 ” 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此 一 去 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

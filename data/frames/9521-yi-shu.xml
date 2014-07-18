@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 艺术 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 科学馆)
+			       (NN 建筑)
+			       (NN 线条))
+			   (DEG 之))
+		      (NP (NN 美)))
+	      (PU ，)
+	      (VP (VV 证明)
+		  (IP-OBJ (NP-SBJ (NN 钢筋)
+				  (NN 水泥))
+			  (VP (PU 「)
+			      (ADVP (AD 也))
+			      (VP (VV 可以)
+				  (VP (ADVP (AD 很))
+				      (VP (VA 艺术))))
+			      (PU 」))))) 
+	  </parse>
+	  <arg n="0">
+	  钢筋 水泥 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

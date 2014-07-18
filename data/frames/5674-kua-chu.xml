@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跨出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 steps out of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NN 104))
+	    (VP (VP (ADVP (AD 早))
+		    (ADVP (AD 已))
+		    (ADVP (AD 积极))
+		    (VP (VV 跨出)
+			(NP-PN-OBJ (NR 台湾))))
+		(PU ，)
+		(VP (LCP-TMP (QP (CD 两)
+				 (CLP (M 年)))
+			     (LC 前))
+		    (ADVP (AD 就))
+		    (PP-LOC (P 在)
+			    (NP (NN 大陆)))
+		    (VP (VV 登记)
+			(AS 了)
+			(NP-OBJ (NN 商标)
+				(CC 和)
+				(NN 网址)))))) 
+	</parse>
+	<arg n="0">
+	104 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<arg n="m" f="adv">
+	积极 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="adv">
+	早 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (step) arg0 makes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 不过))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 眼见)
+			(IP-OBJ (NP-SBJ (NP (DNP (NP (DP (DT 其他))
+						     (NP (NN 地区)))
+						 (DEG 的))
+					    (NP (NN 饼)
+						(NN 店)))
+					(PRN (ADVP (AD 如))
+					     (NP-PN (NR 郭元益))))
+				(VP (VP (ADVP (AD 都))
+					(VP (VV 来)
+					    (NP-PN-OBJ (NR 新竹))))
+				    (VP (VV 抢)
+					(NP (NN 地盘)))))))
+	    (PU ，)
+	    (NP-PN-SBJ (ADJP (JJ 新))
+		       (NP-PN (NR 复珍)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 有意)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 跨出)
+				    (NP-OBJ (NN 经营)
+					    (NN 脚步)))
+				(PU ，)
+				(VP (VV 开设)
+				    (NP-OBJ (NN 分店)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	经营 脚步 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

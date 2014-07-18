@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 排名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="position ranked"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-PN-SBJ (NR 格拉夫))
+		(VP (ADVP (AD 曾))
+		    (VP (VV 创造)
+			(AS 了)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (ADVP (AD 连续))
+						(VP (VV 排名)
+						    (QP-OBJ (NP (NN 世界))
+							    (QP (OD 第一)))
+						    (QP-EXT (CD ３６４)
+							    (CLP (M 周))))))
+					(DEC 的))
+				(NP (NN 纪录)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  世界 第一 
+	  </arg>
+	  <arg n="m" f="adv">
+	  ３６４ 周 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

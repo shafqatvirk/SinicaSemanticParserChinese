@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 覆盖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="range"/>
+      <role argnum="2" argrole="agent/cause"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-MNR (P 以)
+					      (NP (PU “)
+						  (NP (QP (CD 三))
+						      (NP (NN 纵)))
+						  (NP (QP (CD 两))
+						      (NP (NN 横)))
+						  (PU ”)))
+				      (VP (VV 为)
+					  (NP-OBJ (NN 干线)))))
+			      (DEC 的)))
+		      (NP (NN 公路)
+			  (NN 网络)))
+	      (VP (VV 覆盖)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP-PN (NR 西藏))
+			       (DEG 的))
+			  (ADJP (JJ 主要))
+			  (NP (NN 经济区)
+			      (CC 和)
+			      (NN 行政区))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 以 “ 三 纵 两 横 ” 为 干线 的 公路 网络 	  
+	  </arg>
+	  <arg n="1">
+	  西藏 的 主要 经济区 和 行政区 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (VP (PP-DIR (P 向)
+			      (NP-PN (NN 市)
+				     (NN 政府)))
+		      (VP (VV 购买)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 二)
+				      (CLP (M 个)))
+				  (NP (NN 垃圾)
+				      (NN 回收箱)))))
+		  (PU ，)
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (DP-ADV (DT 每)
+							      (CLP (M 天)))
+						      (VP (VV 废弃)
+							  (NP-OBJ (-NONE- *T*-1)))))
+					      (DEC 的)))
+				      (NP (NN 果菜)
+					  (NN 食物))
+				      (NP (NN 残渣)))
+			      (VP (VP (VV 丢到)
+				      (NP-OBJ (NN 里面)))
+				  (VP (VV 去)))))
+		  (PU ，)
+		  (VP (ADVP (AD 再))
+		      (DVP (QP (QP (CD 一)
+				   (CLP (M 层)))
+			       (QP (CD 一)
+				   (CLP (M 层))))
+			   (DEV 的))
+		      (VP (VRD (VV 覆盖)
+			       (VV 上))
+			  (NP-OBJ (NN 泥土)))))) 
+	  </parse>
+	  <arg n="0">
+	  泥土 
+	  </arg>
+	  <arg n="2">
+	  我们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 层 一 层 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

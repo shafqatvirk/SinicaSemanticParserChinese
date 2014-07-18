@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 超出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="surpasser"/>
+    <role argnum="1" argrole="thing surpassed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DNP (NP (ADJP (JJ 多国))
+                       (NP (NN 部队)))
+                   (DEG 的))
+              (NP (NN 行动)))
+      (VP (ADVP (AD 已))
+          (VP (VV 超出)
+              (AS 了)
+              (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (NP-PN (NR 联合国)
+                                                 (NN 安理会))
+                                          (NP (NN 决议)))
+                                  (VP (VV 授权)
+                                      (NP-OBJ (-NONE- *T*-1))))
+                              (DEC 的)))
+                      (NP (NN 范围)))))))
+	</parse>
+	<arg n="0"> 多国 部队 的 行动 </arg>
+	<arg n="M" f="ADV"> 已 </arg>
+	<V/>
+	<arg n="1"> *OP* 联合国 安理会 决议 授权 (*T*-1)->(范围) 的 范围 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 导引 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 guides"/>
+      <role argnum="2" argrole="thing arg1 is guided onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 始克))
+		  (VP (VP (VV 回复)
+			  (NP-OBJ (DNP (NP (NN 宪法)
+					   (NN 运作))
+				       (DEG 之))
+				  (NP (NN 常态))))
+		      (PU ，)
+		      (VP (VV 导引)
+			  (NP-OBJ (NN 社会)
+				  (NN 发展))
+			  (PP (P 於)
+			      (NP (NN 正轨))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  社会 发展 
+	  </arg>
+	  <arg n="2">
+	  於 正轨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  始克 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

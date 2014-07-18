@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 共享 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 enjoys together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 当)
+		    (LCP (IP (NP-SBJ (PN 我))
+			     (VP (PP-LOC (P 在)
+					 (NP-PN (NR 土耳其)))
+				 (VP (VP (VV 迎)
+					 (AS 著)
+					 (NP-OBJ (NN 晨曦)))
+				     (VP (VV 准备)
+					 (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						 (VP (VV 去)
+						     (VP (VV 滑雪))))))))
+			 (LC 时)))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (PN 我))
+			 (DEG 的))
+		    (NP (NN 朋友)))
+	    (VP (ADVP (AD 正))
+		(PP-LOC (P 在)
+			(LCP (NP-PN (NR 曼谷)
+				    (NR 昭披耶河))
+			     (LC 上)))
+		(PU ，)
+		(PP-MNR (P 以)
+			(NP (NN 行动)
+			    (NN 电话)))
+		(PP (P 与)
+		    (NP (PN 我)))
+		(VP (VV 共享)
+		    (NP-OBJ (DNP (NP (NN 河)
+				     (NN 水))
+				 (DEG 的))
+			    (ADJP (JJ 粼粼))
+			    (NP (NN 波光)))))) 
+	</parse>
+	<arg n="0">
+	我 的 朋友 
+	</arg>
+	<arg n="0" f="crd">
+	与 我 
+	</arg>
+	<arg n="1">
+	河 水 的 粼粼 波光 
+	</arg>
+	<arg n="m" f="mnr">
+	以 行动 电话 
+	</arg>
+	<arg n="m" f="loc">
+	在 曼谷 昭披耶河 上 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<arg n="m" f="tmp">
+	当 我 在 土耳其 迎 著 晨曦 准备 *PRO* 去 滑雪 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 张桂越))
+	    (VP (VP (VV 造访)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 位於)
+					    (NP-PN-OBJ (NR 以色列))))
+				    (DEC 的)))
+			    (NP (NN 和平)
+				(NN 学校))))
+		(PU ，)
+		(VP (VV 载回)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 满满)))
+				    (DEC 的)))
+			    (NP (NN 心得))))
+		(VP (VV 欲)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 与)
+				    (NP (NN 观众)))
+				(VP (VV 共享))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="crd">
+	与 观众 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

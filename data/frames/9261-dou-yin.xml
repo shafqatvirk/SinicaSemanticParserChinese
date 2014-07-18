@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逗引 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="person arg0 lures"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 逗引)
+		  (AS 著)
+		  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (PP-LOC (P 在)
+						  (LCP (NP (NN 烟花巷))
+						       (LC 口)))
+					  (VP (VV 徘徊))))
+				  (DEC 的)))
+			  (NP (NN 男人))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-3 在 烟花巷 口 徘徊 的 男人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

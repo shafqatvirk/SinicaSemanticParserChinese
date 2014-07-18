@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 归类 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 categorizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 不))
+		(VP (VV 愿意)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (BA 将)
+				(IP-OBJ (NP-SBJ (DNP (NP (PN 自己))
+						     (DEG 的))
+						(NP (NN 作品)))
+					(VP (VV 归类)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	自己 的 作品 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可是))
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 要)
+			(VP (VV 归类)
+			    (NP-OBJ (PN 她)))))
+	    (VP (ADVP (AD 并))
+		(ADVP (AD 不))
+		(VP (VA 容易)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	她 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 马修))
+			 (DEG 的))
+		    (NP (NN 音乐)))
+	    (VP (VP (ADVP (AD 却))
+		    (ADVP (AD 很))
+		    (VP (VA 难)
+			(VP (VV 归类)))))) 
+	</parse>
+	<arg n="1">
+	马修 的 音乐 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 防堵 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 blocks and prevents"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-Q-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP-WH (AD 如何))
+			  (VP (VV 防堵)
+			      (NP-OBJ (NN 海岸)
+				      (NN 污染)))))
+	    (PU ，)
+	    (VP (ADVP (AD 已))
+		(VP (VV 成)
+		    (NP-OBJ (DNP (NP (NP (NN 海洋))
+				     (NP-PN (NR 台湾)))
+				 (DEG 的))
+			    (ADJP (JJ 重要))
+			    (NP (NN 课题)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	海岸 污染 
+	</arg>
+	<arg n="m" f="adv">
+	如何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 如果))
+			(NP-TMP (NT 现在))
+			(ADVP (AD 只是))
+			(ADVP (AD 一味))
+			(VP (VV 防堵))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NP (ADJP (JJ 现实))
+				 (NP (NN 社会)))
+			     (CC 和)
+			     (NP (ADJP (JJ 虚拟))
+				 (NP (NN 社会))))
+			 (DEG 的))
+		    (NP (NN 对话)))
+	    (VP (VV 会)
+		(VP (ADVP (AD 越来越))
+		    (VP (VA 少))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	一味 
+	</arg>
+	<arg n="m" f="adv">
+	只是 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<arg n="m" f="dis">
+	如果 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

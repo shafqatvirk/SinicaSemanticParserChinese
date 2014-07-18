@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自营 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (NN 证券)
+				      (NN 公司))
+			      (VP (VP (VV 自营)
+				      (NP-OBJ (-NONE- *-2)))
+				  (CC 与)
+				  (VP (VV 代理)
+				      (NP-OBJ-2 (-NONE- *T*-1))))))
+		      (NP (NN 帐户)))
+	      (VP (VV 分开))) 
+	  </parse>
+	  <arg n="0">
+	  证券 公司 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

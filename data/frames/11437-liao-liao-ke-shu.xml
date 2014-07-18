@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 聊聊可数 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity being rare"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NN 早期))
+				    (VP (VP (VV 到)
+					    (NP-PN-OBJ (NR 台湾)))
+					(VP (VV 发展)))))
+			    (DEC 的)))
+		    (NP-PN (NR 东南亚))
+		    (NP (NN 歌手)))
+	    (VP (ADVP (AD 几乎))
+		(VP (VV 聊聊可数)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 早期 到 台湾 发展 的 东南亚 歌手 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

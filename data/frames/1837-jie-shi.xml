@@ -1,0 +1,320 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 解释 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing explained"/>
+      <role argnum="2" argrole="entity explanation is offered to"/>
+      <role argnum="3" argrole="explanation arg0 offers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP-PN (NR 国民党))
+		      (NP (NN 方面)))
+	      (PU ，)
+	      (PP-LOC (P 在)
+		      (LCP (NP (DP (DT 这)
+				   (CLP (M 次)))
+			       (NP (NN 选战)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 国民党))
+		      (CP (WHNP-3 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (ADVP (AD 公开))
+				  (VP (PU 「)
+				      (VV 投)
+				      (NP-PN-OBJ (NR 宋))
+				      (PU 」)))))
+		      (NP (NN 者)))
+	      (PU ，)
+	      (VP (ADVP (AD 还))
+		  (VP (VV 可)
+		      (VP (SB 被)
+			  (VP (VCP (VV 解释)
+				   (VC 为))
+			      (NP-OBJ (DNP (LCP (NP-PN (NR 国民党))
+						(LC 中))
+					   (DEG 的))
+				      (NP (PU 「)
+					  (NN 失意人)
+					  (PU 」)))))))) 
+	  </parse>
+	  <arg n="1">
+	  国民党 *OP* *T*-3 公开 「 投 宋 」 者 
+	  </arg>
+	  <arg n="3">
+	  国民党 中 的 「 失意人 」 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这 次 选战 中 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  国民党 方面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (PU “)
+				   (NP-PN (NR 千岛湖))
+				   (NP (NN 事件))
+				   (PU ”))
+			   (VP (VV 发生)))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 海协))
+	      (VP (PP-MNR (P 依据)
+			  (NP (NN 协议)))
+		  (VP (VP (PP-DIR (P 向)
+				  (NP-PN (NR 海基会)))
+			  (VP (VV 通报)
+			      (AS 了)
+			      (NP-OBJ (NN 情况))))
+		      (PU ，)
+		      (VP (VP (VV 解释)
+			      (NP-OBJ (-NONE- *RNR*-2)))
+			  (CC 并)
+			  (VP (VV 回答)
+			      (NP-OBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-PN-SBJ (NR 海基会))
+						    (VP (MSP 所)
+							(VP (VV 提)
+							    (NP-OBJ (-NONE- *T*-1)))))
+						(DEC 的)))
+					(QP (CD 若干))
+					(NP (NN 问题)
+					    (CC 与)
+					    (NN 要求)))))))) 
+	  </parse>
+	  <arg n="0">
+	  海协 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="1">
+	  *RNR*-2 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依据 协议 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  “ 千岛湖 事件 ” 发生 以来 	  	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 陈元))
+	      (VP (ADVP (AD 还))
+		  (PP-DIR (P 向)
+			  (NP (NN 与会者)))
+		  (VP (VV 解释)
+		      (AS 了)
+		      (NP-OBJ (NP-PN (NR 香港))
+			      (DNP (PP (P 在)
+				       (LCP (NP (NN 国际)
+						(NN 金融)
+						(NN 关系))
+					    (LC 中)))
+				   (DEG 的))
+			      (NP (NN 定位)))))) 
+	  </parse>
+	  <arg n="0">
+	  陈元 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="1">
+	  香港 在 国际 金融 关系 中 的 定位 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  向 与会者 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 特区)
+		      (NN 政府)
+		      (NN 发言人))
+	      (VP (VV 解释)
+		  (PU ，)
+		  (IP-OBJ (CP-CND (ADVP (CS 虽然))
+				  (IP (NP-SBJ (NP-PN (NP-PN (NR 香港))
+						     (ADJP (JJ 特别))
+						     (NP (NN 行政区)))
+					      (NP (NN 政府)))
+				      (VP (ADVP (AD 已))
+					  (VP (VP (VV 获)
+						  (NP-OBJ (NP (NN 中央)
+							      (NN 人民)
+							      (NN 政府))
+							  (NP (NN 授权))))
+					      (VP (VV 签发)
+						  (NP-OBJ (NP-PN (NP-PN (NR 香港))
+								 (ADJP (JJ 特别))
+								 (NP (NN 行政区)))
+							  (NP (NN 护照))))))))
+			  (PU ，)
+			  (NP-PN-SBJ (NR 香港))
+			  (VP (ADVP (AD 仍))
+			      (VP (VV 需要)
+				  (NP-OBJ (NN 本地)
+					  (NN 法例))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 规定)
+					  (NP-OBJ (DNP (PP (P 有关)
+							   (IP (NP-SBJ (-NONE- *pro*))
+							       (VP (VV 签发)
+								   (NP-OBJ (NN 特区)
+									   (NN 护照)))))
+						       (DEG 的))
+						  (ADJP (JJ 实际))
+						  (NP (NN 事宜)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  特区 政府 发言人 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="3">
+	  虽然 香港 特别 行政区 政府 已 获 中央 人民 政府 授权 签发 香港 特别 行政区 护照 ， 香港 仍 需要 本地 法例 *PRO* 规定 有关 *pro* 签发 特区 护照 的 实际 事宜 	  	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg3"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (ADJP (JJ 著名))
+			      (NP (NN 经济学家)))
+		      (NP-PN (NR 厉以宁)))
+	      (VP (NP-TMP (NT 今天))
+		  (PP-DIR (P 针对)
+			  (NP (CP-APP (IP (IP (NP-SBJ (NP-PN (NR 中国))
+						      (QP (OD 第一)
+							  (CLP (M 部)))
+						      (NP (NN 证券法)))
+					      (VP (ADVP (AD 即将))
+						  (VP (VV 出台))))
+					  (PU ，)
+					  (IP (ADVP (AD 但))
+					      (NP-SBJ (NN 股市))
+					      (VP (ADVP (AD 却))
+						  (VP (VSB (VV 持续)
+							   (VV 下泻))))))
+				      (DEC 的))
+			      (NP (NN 情况))))
+		  (VP (VP (VV 解释))
+		      (VP (VV 说)
+			  (PU ：)
+			  (IP-OBJ (NP-SBJ (NN 证券法)
+					  (NN 出台))
+				  (VP (ADVP (AD 不))
+				      (VP (VC 是)
+					  (NP-PRD (NP (PU “)
+						      (NN 利空)
+						      (PU ”))
+						  (NP (NN 消息)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  著名 经济学家 厉以宁 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="3">
+	  证券法 出台 不 是 “ 利空 ” 消息 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="1">
+	  针对 中国 第一 部 证券法 即将 出台 ， 但 股市 却 持续 下泻 的 情况 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 	  	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 位)))
+		      (NP (NP-PN (NR 诺贝尔))
+			  (NP (NN 和平)
+			      (NN 奖)))
+		      (NP (NN 获得者)))
+	      (VP (VP (VV 解释))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (LCP-TMP (QP (ADVP (AD 近))
+					   (QP (CD 十)
+					       (CLP (M 年))))
+				       (LC 来))
+			      (PU ，)
+			      (NP-SBJ (PN 她))
+			      (VP (PU “)
+				  (ADVP (AD 特别))
+				  (VP (VV 关注)
+				      (PU ”)
+				      (NP-OBJ (DNP (NP (DNP (NP (NP (ADJP (JJ 有关))
+								    (NP-PN (NR 哥))
+								    (NP (NN 武装)
+									(NN 冲突)))
+								(NP (PN 双方)))
+							    (DEG 的))
+						       (NP (NN 接近)
+							   (CC 和)
+							   (NN 对话)))
+						   (DEG 的))
+					      (DP (DT 各)
+						  (CLP (M 种)))
+					      (NP (NN 创议))))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 位 诺贝尔 和平 奖 获得者 	  	  	  	  	  	  
+	  </arg>
+	  <arg n="3">
+	  近 十 年 来 ， 她 “ 特别 关注 ” 有关 哥 武装 冲突 双方 的 接近 和 对话 的 各 种 创议 	  	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

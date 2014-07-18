@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 紧抓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 grasps tightly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 除)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 紧抓)
+			      (NP-OBJ (NN 治安)))))
+	      (PU ，)
+	      (NP-SBJ (NN 目的))
+	      (VP (ADVP (AD 更))
+		  (ADVP (AD 在))
+		  (VP (VV 致力)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 防范)
+				  (NP-OBJ (NN 大陆)
+					  (NN 境内))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-MNR (P 藉)
+						  (NP (NT 六四)))
+					  (VP (PU 「)
+					      (VV 闹事)
+					      (PU 」))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  治安 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

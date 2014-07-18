@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 昏迷 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person in coma"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (LCP-TMP (NP (NT 去年))
+						   (LC 底))
+					  (VP (VP (ADVP (AD 意外))
+						  (VP (VV 摔倒)))
+					      (VP (VV 昏迷)))))
+				  (DEC 的)))
+			  (NP-APP (NP-PN (NR 台湾))
+				  (NP (NN 音乐)
+				      (NN 耆老)))
+			  (NP-PN (NR 许常惠)))
+		  (PU ，)
+		  (VP (PP-TMP (P 在)
+			      (QP (DNP (NP (ADJP (JJ 新))
+					   (NP (NN 世纪)))
+				       (DEG 的))
+				  (QP (OD 第一)
+				      (CLP (M 天)))))
+		      (VP (VV 溘然长逝)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 底 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

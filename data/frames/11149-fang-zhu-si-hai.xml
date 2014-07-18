@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放诸四海 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 puts everywhere"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不))
+		(VP (VV 能)
+		    (VP (VP (BA 将)
+			    (IP-OBJ (NP-SBJ (DNP (NP (DP (DT 某些))
+						     (NP (NN 国家)))
+						 (DEG 的))
+					    (NP (NN 人权)
+						(NN 标准)))
+				    (VP (VV 放诸四海))))
+			(PU ，)
+			(CC 并且)
+			(VP (VV 要求)
+			    (NP-OBJ (DP (DT 其他))
+				    (NP (NN 国家)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 比照))
+				    (VP (VV 处理))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	某些 国家 的 人权 标准 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

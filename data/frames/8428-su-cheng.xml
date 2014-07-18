@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 速成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 台湾))
+	      (CP-ADV (ADVP (CS 虽然))
+		      (IP (NP-SBJ (PN 一切))
+			  (VP (ADVP (AD 都))
+			      (VP (PU 「)
+				  (VA 快)
+				  (PU 」)))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (DP (DT 有些))
+		      (NP (NN 东西)))
+	      (VP (ADVP (AD 终究))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 无法))
+					      (VP (VV 速成))))
+				      (DEC 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

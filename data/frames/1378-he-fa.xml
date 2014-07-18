@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 核发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="issuer"/>
+      <role argnum="1" argrole="thing issued"/>
+      <role argnum="2" argrole="issued to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (DNP (NP (NN 林地))
+			     (DEG 的))
+			(NP (NN 所有权)
+			    (CC 和)
+			    (NN 使用权))
+			(NP (NN 证书)))
+	      (VP (PP-LGS (P 由)
+			  (NP (LCP (NP (NN 县级))
+				   (LC 以上))
+			      (NP (NN 地方)
+				  (NN 人民)
+				  (NN 政府))))
+		  (VP (VV 核发)
+		      (NP-OBJ (-NONE- *-1))))) 
+	  </parse>
+	  <arg n="0">
+	  由 县级 以上 地方 人民 政府 
+	  </arg>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抢占 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing race to occupy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-PN-SBJ (NR 台湾))
+		      (VP (VV 要)
+			  (VP (VV 抢占)
+			      (NP-OBJ (NN 地盘)))))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 容易)))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 
+	  </arg>
+	  <arg n="1">
+	  地盘 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

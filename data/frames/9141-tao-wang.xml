@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逃亡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person fleeing home"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 当时))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-PRP (NN 战乱))
+				      (VP (VV 逃亡))))
+			      (DEC 的)))
+		      (NP (NN 人家)))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VA 方便)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 携带)
+				      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VCD (VA 细)
+								   (VA 碎))))
+						      (DEC 的)))
+					      (NP (NN 白米)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 就))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 米))
+				  (VP (VRD (VV 碾磨)
+					   (VV 成))
+				      (VP-OBJ (NN 浆))))))
+		  (PU ，)
+		  (VP (ADVP (AD 再)
+			    (VP (VRD (VV 压制)
+				     (VV 成))
+				(NP-OBJ (NN 线条状))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="prp">
+	  战乱 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 催赶 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 pushes to grow"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 莲雾)
+		    (NN 花))
+	    (VP (ADVP (AD 就))
+		(VP (SB 被)
+		    (VP (VRD (VV 催赶)
+			     (VV 出来))
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 传宗接代))))))) 
+	</parse>
+	<arg n="1">
+	莲雾 花 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

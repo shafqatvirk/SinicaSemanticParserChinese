@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迎来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="welcomer"/>
+      <role argnum="1" argrole="entity welcomed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 海南)
+			 (NR 洋浦)
+			 (NN 经济)
+			 (NN 开发区))
+	      (VP (VV 迎来)
+		  (NP-OBJ (NN 工业)
+			  (NN 建设)
+			  (NN 高潮)))) 
+	  </parse>
+	  <arg n="0">
+	  海南 洋浦 经济 开发区 
+	  </arg>
+	  <arg n="1">
+	  工业 建设 高潮 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

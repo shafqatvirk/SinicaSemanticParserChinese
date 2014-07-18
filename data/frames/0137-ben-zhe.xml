@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 本着 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="complier"/>
+    <role argnum="1" argrole="principle"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (PN 双方))
+      (VP (VV 应)
+          (VP (VP (VV 本着)
+                  (NP-OBJ (DNP (NP (ADJP (JJ 友好))
+                                   (NP (NN 协商)))
+                               (DEG 的))
+                          (NP (NN 精神))))))))
+	</parse>
+	<arg n="0"> 双方 </arg>
+	<V/>
+	<arg n="1"> 友好 协商 的 精神 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="receiver"/>
+      <role argnum="1" argrole="thing received"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 教署))
+	      (VP (ADVP (AD 迄今))
+		  (ADVP (AD 共))
+		  (VP (VV 接到)
+		      (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 来自)
+					      (NP-OBJ (QP (CD 二百五十)
+							  (CLP (M 间)))
+						      (NP (NN 学校))))))
+				  (QP (ADVP (AD 约))
+				      (QP (CD 二千一百)
+					  (CLP (M 名))))
+				  (NP (NN 教师)))
+			      (NP (NN 报名)))))) 
+	  </parse>
+	  <arg n="0">
+	  教署 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 来自 二百五十 间 学校 约 二千一百 名 教师 报名 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  迄今 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (DP (DT 这)
+					      (CLP (M 家)))
+					  (NP (NN 银行)))
+				  (VP (VV 开设)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 个人)
+			  (NN 外汇)
+			  (NN 交易)
+			  (NN 咨询)
+			  (NN 电话)))
+	      (PU ，)
+	      (VP (DP-TMP (DT 这)
+			  (QP (CD 几)
+			      (CLP (M 天))))
+		  (ADVP (AD 也))
+		  (VP (VV 接到)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (QP (CD 许多))
+				       (NP (NN 市民)))
+				   (DEG 的))
+			      (NP (NN 来电)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="2">
+	  *OP* 这 家 银行 开设 *T*-1 的 个人 外汇 交易 咨询 电话 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 几 天 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="1">
+	  许多 市民 的 来电 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

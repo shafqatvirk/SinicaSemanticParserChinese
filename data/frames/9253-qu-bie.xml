@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 区别 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entities arg0 tells apart"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 选民)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (ADVP (AD 刻意))
+			  (VP (VV 区别)
+			      (NP-OBJ (NP (DNP (LCP (NP (NN 国家)
+							(NN 领导人)
+							(PU 、)
+							(NN 民意)
+							(NN 代表)
+							(PU 、)
+							(NN 政府)
+							(NN 官员))
+						    (LC 之间))
+					       (DEG 的))
+					  (NP (NN 角色)))
+				      (NP (NN 差异)))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 选民 
+	  </arg>
+	  <arg n="1">
+	  国家 领导人 、 民意 代表 、 政府 官员 之间 的 角色 差异 
+	  </arg>
+	  <arg n="m" f="adv">
+	  刻意 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

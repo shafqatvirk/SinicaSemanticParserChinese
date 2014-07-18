@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 检肃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (DNP (NP (NP (NN 刑案))
+			 (CC 及)
+			 (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 检肃)
+					 (NP-OBJ (NN 流氓))))
+			     (NP (NN 案件))))
+		     (DEG 之))
+		(NP (NN 证人))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	流氓 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

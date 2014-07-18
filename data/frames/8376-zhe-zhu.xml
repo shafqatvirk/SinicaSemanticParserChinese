@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遮住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 blocks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 楼))
+	      (VP (VP (ADVP (AD 太))
+		      (VP (VA 高)))
+		  (VP (VV 遮住)
+		      (NP-OBJ (DNP (NP (NP (NN 周边))
+				       (ADJP (ADVP (AD 较))
+					     (ADJP (JJ 低矮)))
+				       (NP (NN 建筑)))
+				   (DEG 的))
+			      (NP (NN 阳光)))))) 
+	  </parse>
+	  <arg n="0">
+	  楼 
+	  </arg>
+	  <arg n="1">
+	  周边 较 低矮 建筑 的 阳光 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

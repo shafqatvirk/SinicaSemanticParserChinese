@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 载有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 carries"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NN 土地)
+					     (NN 注册处))
+				  (VP (NP-TMP (NT 今日))
+				      (VP (VV 发表)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 图表)))
+	      (PU ，)
+	      (VP (VP (VV 载有)
+		      (NP-OBJ (NP (ADJP (JJ 上述))
+				  (NP (NN 数据)))
+			      (PU 、)
+			      (NP (NP (NT 今年)
+				      (NT 上半年))
+				  (DP (DT 其他))
+				  (NP (NN 统计)
+				      (NN 数字)))
+			      (PU 、)
+			      (CC 以及)
+			      (NP (DNP (NP (NP (NT 去年))
+					   (NP (NT 下半年)
+					       (CC 和)
+					       (NT 上半年)))
+				       (DEG 的))
+				  (ADJP (JJ 相关))
+				  (NP (NN 统计)
+				      (NN 数字)))))
+		  (PU ，)
+		  (VP (MSP 以)
+		      (VP (VV 供)
+			  (NP-OBJ (NN 参考)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 土地 注册处 今日 发表 *T*-1 的 图表 
+	  </arg>
+	  <arg n="1">
+	  上述 数据 、 今年 上半年 其他 统计 数字 、 以及 去年 下半年 和 上半年 的 相关 统计 数字 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

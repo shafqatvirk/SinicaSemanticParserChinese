@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 声称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing claimed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美)
+			 (NR 英))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 声称)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 将))
+				  (VP (VP (PP-DIR (P 对)
+						  (NP-PN (NR 伊)))
+					  (VP (VV 保持)
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (VA 强大)))
+							      (DEC 的)))
+						      (NP (NN 军事)
+							  (NN 压力)))))
+				      (PU ，)
+				      (CC 并)
+				      (VP (VV 支持)
+					  (NP-OBJ (NN 反对派))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 推翻)
+						  (NP-OBJ (ADJP (JJ 现))
+							  (NP (NN 政权)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  美 英 
+	  </arg>
+	  <arg n="1">
+	  *pro* 将 对 伊 保持 *OP* *T*-1 强大 的 军事 压力 ， 并 支持 反对派 *PRO* 推翻 现 政权 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 反驳)
+	      (AS 了)
+	      (IP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NP-PN (NR 美国))
+					  (NP (NN 官方)))
+				  (VP (MSP 所)
+				      (VP (VV 声称)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (IP (NP-SBJ (DP (DT 这)
+				      (CLP (M 个)))
+				  (NP (NN 防空洞)))
+			  (VP (VC 是)
+			      (NP-PRD (QP (CD 一)
+					  (CLP (M 个)))
+				      (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (SB 被)
+						      (VP (VV 伪装))))
+					      (DEC 的)))
+				      (ADJP (JJ 军事))
+				      (NP (NN 掩体))))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 官方 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

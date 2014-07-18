@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撑起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 supports"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (NN 女性))
+		(VP (VV 撑起)
+		    (NP-OBJ (QP (CD 半)
+				(CLP (M 边)))
+			    (NP (NN 天))))) 
+	</parse>
+	<arg n="0">
+	女性 
+	</arg>
+	<arg n="1">
+	半 边 天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

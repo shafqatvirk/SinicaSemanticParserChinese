@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 祭出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 resorts to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (PP-PRP (P 由於)
+			(IP (NP-SBJ (DNP (NP (NN 民意))
+					 (DEG 的))
+				    (NP (NN 反弹)
+					(NN 声浪)))
+			    (VP (VV 升高))))
+		(PU ，)
+		(NP-SBJ (NP (QP (CD 两))
+			    (NP (NN 党)))
+			(NP (NN 中央)))
+		(VP (ADVP (AD 均))
+		    (VP (VV 考虑)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 祭出)
+					(NP-OBJ (NN 党纪)))
+				    (PU ，)
+				    (VP (VV 处罚)
+					(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (DP-ADV (DT 此)
+									(CLP (M 次)))
+								(VP (VP (ADVP (AD 未))
+									(VP (VV 理会)
+									    (NP-OBJ (NN 党意))))
+								    (VP (ADVP (AD 强行))
+									(VP (VV 通过)
+									    (NP-OBJ (NN 延任案)))))))
+							(DEC 的)))
+						(NP (NN 国代)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	党纪 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

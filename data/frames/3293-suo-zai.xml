@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 所在 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 is located"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NT 今年))
+			   (VP (VV 入)
+			       (NP-OBJ (NN 冬))))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-PN-SBJ (NR 北大湖))
+			      (VP (VV 所在)
+				  (NP-OBJ (-NONE- *T*-1)))))
+		      (NP (NN 地区)))
+	      (NP-SBJ (NN 降雪量))
+	      (VP (ADVP (AD 偏))
+		  (VP (VA 低)))) 
+	  </parse>
+	  <arg n="0">
+	  北大湖 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 美国)
+				 (NR 埃克森)
+				 (NN 石油)
+				 (NN 公司))
+			  (NP (NN 总裁)))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 亚太))
+				      (NP (NN 地区)))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 成为)
+				      (NP-OBJ (NN 世界)
+					      (NN 石油)
+					      (NN 消费)
+					      (NN 重心))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 所在)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

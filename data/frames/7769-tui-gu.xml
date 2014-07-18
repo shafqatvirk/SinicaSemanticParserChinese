@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 推估 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="estimate arg0 makes"/>
+    <role argnum="2" argrole="entity arg0 make arg1 about"/>
+    <role argnum="3" argrole="basis for arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 由)
+				(NP (PN 此)))
+			(VP (VV 推估))))
+	    (PU ，)
+	    (NP-SBJ (NN 人类))
+	    (VP (VP (VV 种植)
+		    (NP-OBJ (NN 桧木)))
+		(VP (VV 得)
+		    (VP (VV 等)
+			(QP-OBJ (CD 三百)
+				(CLP (M 年)))))
+		(VP (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VV 采收)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="3">
+	由 此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

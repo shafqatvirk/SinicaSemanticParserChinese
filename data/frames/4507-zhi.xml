@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 执 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 holds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 法警))
+	      (VP (VP (NP-LOC (NN 头))
+		      (VP (VV 戴)
+			  (NP-OBJ (NN 大沿帽))))
+		  (PU 、)
+		  (VP (NP-LOC (NN 手))
+		      (VP (VV 执)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 带有)
+						  (NP-OBJ (NN 水)
+							  (NN 标志))))
+					  (DEC 的)
+					  (DEC 的)))
+				  (NP (NN 警矛)))))
+		  (PU ，)
+		  (VP (NP-ADV (ADJP (JJ 高))
+			      (NP (NN 声)))
+		      (VP (VV 传讯)
+			  (NP-OBJ (NN 被告))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 到场))))))) 
+	  </parse>
+	  <arg n="0">
+	  法警 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 带有 水 标志 的 的 警矛 
+	  </arg>
+	  <arg n="m" f="loc">
+	  手 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 carries out/enforces"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 提高)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 执)
+					  (NP-OBJ (NN 法)))
+				      (PU 、)
+				      (VP (VV 守)
+					  (NP-OBJ (NN 法)))))
+			      (DEC 的))
+		      (NP (NN 自觉性)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

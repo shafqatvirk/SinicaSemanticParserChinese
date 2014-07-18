@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 大卖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="seller"/>
+    <role argnum="1" argrole="thing sold"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 孙燕姿))
+		    (QP (CD 两)
+			(CLP (M 张)))
+		    (NP (NN 专辑)))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (ADJP (JJ 低迷))
+				 (NP (NN 市场)))
+			     (LC 中)))
+		(VP (VV 大卖)))) 
+	</parse>
+	<arg n="1">
+	孙燕姿 两 张 专辑 
+	</arg>
+	<arg n="m" f="loc">
+	在 低迷 市场 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DNP (NP (PN 他))
+			     (DEG 的))
+			(NP (NN 专辑)))
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (QP (CD 一)
+					 (CLP (M 个)))
+				     (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (-NONE- *T*-1))
+						 (VP (VA 遥远)))
+					     (DEC 的)))
+				     (NP (NN 东方)
+					 (NN 岛国)))
+				 (LC 上)))
+		    (VP (VV 大卖)
+			(QP-OBJ (CD 十万)
+				(CLP (M 张)))))) 
+	</parse>
+	<arg n="1">
+	他 的 专辑 
+	</arg>
+	<arg n="1" f="qty">
+	十万 张 
+	</arg>
+	<arg n="m" f="loc">
+	在 一 个 *OP* *T*-1 遥远 的 东方 岛国 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

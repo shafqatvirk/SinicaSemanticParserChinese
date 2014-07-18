@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有着 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 has"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 所以))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (DP (DT 该))
+			       (NP (NN 公司)))
+			   (DEG 的))
+		      (NP (NN 节能)
+			  (NN 计划)))
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-PN-SBJ (NR 日本))
+			      (VP (VV 实现)
+				  (NP-OBJ (NN 国际)
+					  (NN 承诺)))))
+		  (VP (VE 有着)
+		      (NP-OBJ (ADJP (JJ 重要))
+			      (NP (NN 意义)))))) 
+	  </parse>
+	  <arg n="0">
+	  该 公司 的 节能 计划 
+	  </arg>
+	  <arg n="1">
+	  重要 意义 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 日本 实现 国际 承诺 
+	  </arg>
+	  <arg n="m" f="adv">
+	  所以 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

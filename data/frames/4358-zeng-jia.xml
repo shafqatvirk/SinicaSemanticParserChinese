@@ -1,0 +1,280 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增加 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity increased"/>
+      <role argnum="2" argrole="extent of increase"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 另外))
+	      (PU ，)
+	      (NP-TMP (NT 一九九四年))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 通用))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP-PN (NR 中国)))
+		      (VP (VV 购买)
+			  (AS 了)
+			  (NP-OBJ (DNP (QP (CD 四千多万)
+					   (CLP (M 美元)))
+				       (DEG 的))
+				  (NP (NN 产品)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 计划)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-TMP (P 在)
+					  (QP (NP (NT 今后))
+					      (QP (CD 两)
+						  (CLP (M 年)))))
+				  (VP (VV 增加)
+				      (NP-OBJ (DNP (PP (P 对)
+						       (NP (NP-PN (NR 中国))
+							   (NP (NN 产品))))
+						   (DEG 的))
+					      (NP (NN 购买量))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  对 中国 产品 的 购买量 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 今后 两 年 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NP (NN 外商))
+		      (ADJP (JJ 独资))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 却))
+		  (VP (VP (VV 增加)
+			  (AS 了)
+			  (QP-OBJ (CD 百分之四点一二)))
+		      (PU ，)
+		      (VP (VV 达)
+			  (QP-OBJ (CD 八千四百八十四)
+				  (CLP (M 个))))))) 
+	  </parse>
+	  <arg n="1">
+	  外商 独资 企业 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  百分之四点一二 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 尼))
+		      (NP (NN 石油)
+			  (NN 收入)))
+	      (VP (ADVP (AD 不))
+		  (ADVP (AD 大))
+		  (VP (VV 可能)
+		      (VP (ADVP (AD 大幅))
+			  (VP (VV 增加)))))) 
+	  </parse>
+	  <arg n="1">
+	  尼 石油 收入 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  大幅 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  大 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing increased"/>
+      <role argnum="2" argrole="level arg0 is increased to"/>
+      <role argnum="3" argrole="original level of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (QP (CD 五百)
+			       (CLP (M 家)))
+			   (NP (NN 企业)))
+		       (LC 中))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 销售额))
+				  (VP (VV 超过)
+				      (NP-OBJ (QP (CD 十亿)
+						  (CLP (M 元)))
+					      (NP (NN 人民币)))))
+			      (DEC 的)))
+		      (NP (NN 企业)))
+	      (VP (PP-DIR (P 由)
+			  (QP (DNP (NP (NT 一九九五年))
+				   (DEG 的))
+			      (QP (CD 八十九)
+				  (CLP (M 家)))))
+		  (VP (VRD (VV 增加)
+			   (VV 到))
+		      (QP-OBJ (DNP (NP (NT 去年))
+				   (DEG 的))
+			      (QP (CD 一百二十四)
+				  (CLP (M 家))))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 销售额 超过 十亿 元 人民币 的 企业 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  去年 的 一百二十四 家 	  	  	  
+	  </arg>
+	  <arg n="3">
+	  由 一九九五年 的 八十九 家 	  	  	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  五百 家 企业 中 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 摩托罗拉)
+			 (NN 公司))
+	      (VP (VP (NP-TMP (NT 一九九二年))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 天津)))
+		      (VP (VV 投资)
+			  (QP-OBJ (CD 一点二亿)
+				  (CLP (M 美元)))))
+		  (PU ，)
+		  (VP (PP-TMP (P 到)
+			      (NP (NT 一九九五年)))
+		      (ADVP (AD 已))
+		      (VP (VV 增加)
+			  (NP-OBJ (NN 投资))
+			  (PP-EXT (P 到)
+				  (QP-OBJ (CD 十二亿)
+					  (CLP (M 美元)))))))) 
+	  </parse>
+	  <arg n="0">
+	  摩托罗拉 公司 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  投资 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  到 十二亿 美元 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 一九九五年 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 巴西))
+		      (NP (NN 教育)
+			  (NN 经费)))
+	      (VP (VP (NP-TMP (NT １９９３年))
+		      (VP (VV 占)
+			  (QP-OBJ (DNP (NP (NT 当年)
+					   (NN 国内)
+					   (NN 生产)
+					   (NN 总值))
+				       (DEG 的))
+				  (QP (CD 百分之三点五)))))
+		  (PU ，)
+		  (VP (NP-TMP (NT １９９７年))
+		      (ADVP (AD 已))
+		      (VP (VRD (VV 增加)
+			       (VV 到))
+			  (QP-OBJ (CD 百分之四点六))))
+		  (PU ，)
+		  (VP (NP-TMP (LCP-APP (QP (CD １０)
+					   (CLP (M 年)))
+				       (LC 之后))
+			      (NP (ADVP (AD 即))
+				  (NP (NT ２００７年))))
+		      (ADVP (AD 将))
+		      (ADVP (AD 进一步))
+		      (VP (VRD (VV 增加)
+			       (VV 到))
+			  (QP-OBJ (CD 百分之六)))))) 
+	  </parse>
+	  <arg n="1">
+	  巴西 教育 经费 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  百分之六 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １０ 年 之后 即 ２００７年 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

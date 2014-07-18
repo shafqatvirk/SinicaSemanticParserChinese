@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重拾 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 picks back up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 同时))
+	    (PU ，)
+	    (PP-PRP (P 由於)
+		    (IP (NP-PN-LOC (NR 纽西兰))
+			(NP-SBJ (NN 课业))
+			(VP (ADVP (AD 较为))
+			    (VP (VA 轻松)))))
+	    (PU ，)
+	    (NP-SBJ (PN 她))
+	    (VP (ADVP (AD 也))
+		(VP (VP (VE 有)
+			(NP-OBJ (NN 机会)))
+		    (VP (VV 重拾)
+			(NP-OBJ (NP (NT 以往))
+				(DNP (PP (P 对)
+					 (NP (NN 音乐)))
+				     (DEG 的))
+				(NP (NN 兴趣))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	以往 对 音乐 的 兴趣 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="prp">
+	由於 纽西兰 课业 较为 轻松 
+	</arg>
+	<arg n="m" f="adv">
+	同时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

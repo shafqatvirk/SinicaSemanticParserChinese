@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发号施令 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 很))
+		  (VP (VA 难)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 想像)
+				  (NP-OBJ (CP-APP (IP (NP-SBJ (PN 她))
+						      (VP (PP-LOC (P 在)
+								  (NP (NN 拍片)
+								      (NN 现场)))
+							  (VP (VV 发号施令))))
+						  (DEC 的))
+					  (NP (NN 样子)))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 拍片 现场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

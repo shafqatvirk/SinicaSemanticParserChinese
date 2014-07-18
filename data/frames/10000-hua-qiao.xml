@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 花俏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 服饰)
+		    (NN 杂志))
+	    (VP (VP (VV 让)
+		    (NP-OBJ (PN 他))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 可以)
+			    (VP (VV 接受)
+				(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-3))
+						    (VP (VA 花俏)))
+						(DEC 的)))
+					(NP (NN 衣服)))))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 让)
+			(NP-OBJ (PN 他))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-DIR (P 对)
+					(NP (NN 名牌)))
+				(VP (VV 了若指掌)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

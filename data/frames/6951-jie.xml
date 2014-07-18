@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 皆 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities that exist"/>
+      <role argnum="1" argrole="place arg0 exists"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-SBJ (P 在)
+		      (LCP (NP (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (PN 他))
+						   (VP (NP-LOC (-NONE- *T*-1))
+						       (VP (VV 服刑))))
+					       (DEC 的)))
+				       (NP (NN 监狱)))
+			       (NP-PN (PU 「)
+				      (NR 绿洲)
+				      (NN 山庄)
+				      (PU 」)))
+			   (LC 中)))
+	      (PU ，)
+	      (VP (ADVP (AD 尽))
+		  (VP (VC 皆)
+		      (NP-PRD (DNP (NP (ADJP (JJ 相同))
+				       (NP (NN 遭遇)))
+				   (DEG 的))
+			      (NP (NN 囚友)))))) 
+	  </parse>
+	  <arg n="0">
+	  相同 遭遇 的 囚友 	  
+	  </arg>
+	  <arg n="1">
+	  在 *OP* 他 *T*-1 服刑 的 监狱 「 绿洲 山庄 」 中 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="entities all of arg0 members are "/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NN 光复)
+		      (NN 初期))
+	      (NP-SBJ (NN 全民))
+	      (VP (VC 皆)
+		  (NP-PRD (NN 农)))) 
+	  </parse>
+	  <arg n="0">
+	  全民 	    
+	  </arg>
+	  <arg n="1">
+	  农 	    
+	  </arg>
+	  <arg n="m" f="tmp">
+	  光复 初期 	    
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

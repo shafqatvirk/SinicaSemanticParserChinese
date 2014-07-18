@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 为期 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="length arg0 lasts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 过渡期))
+	      (VP (VP (PP-PRD (PP-DIR (P 从)
+				      (NP (NT １９９９年)
+					  (NT １月)
+					  (NT １日)))
+			      (PP-DIR (P 到)
+				      (NP (NT ２００１年)
+					  (NT １２月)
+					  (NT ３１日)))))
+		  (PU ，)
+		  (VP (VV 为期)
+		      (QP-OBJ (CD ３)
+			      (CLP (M 年)))))) 
+	  </parse>
+	  <arg n="0">
+	  过渡期 
+	  </arg>
+	  <arg n="1">
+	  ３ 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

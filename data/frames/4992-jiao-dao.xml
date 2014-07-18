@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 教导 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="teacher"/>
+    <role argnum="1" argrole="student"/>
+    <role argnum="2" argrole="thing arg0 teaches arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 教导)
+			(DP-OBJ (DT 下)
+				(QP (CD 一)
+				    (CLP (M 代))))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 了解)
+				    (NP-OBJ (-NONE- *RNR*-1)))
+				(CC 与)
+				(VP (VV 包容)
+				    (NP-OBJ-1 (DP (DT 其他))
+					      (NP (NN 民族)
+						  (NN 文化))))))))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (NP (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 博物馆))
+					(VP (VV 需)
+					    (VP (VV 负起)
+						(NP-OBJ (-NONE- *T*-2)))))
+				    (DEC 的)))
+			    (NP (NN 责任)))
+			(NP (NN 之一))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	下 一 代 
+	</arg>
+	<arg n="2">
+	*PRO* 了解 *RNR*-1 与 包容 其他 民族 文化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 透过)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 教导)
+			    (NP-OBJ (NN 别人)))))
+	    (PU ，)
+	    (NP-SBJ (PN 你))
+	    (VP (ADVP (AD 更))
+		(VP (VV 能够)
+		    (VP (DVP (VP (VA 彻底))
+			     (DEV 的))
+			(VP (VV 了解)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	别人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

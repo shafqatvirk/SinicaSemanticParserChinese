@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 启动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PN (NP-PN-SBJ (NR 浙江))
+		 (VP (VV 启动)
+		     (NP-OBJ (NP (PU “)
+				 (NN 网上)
+				 (NN 大学)
+				 (PU ”))
+			     (NP (NN 教育))))) 
+	  </parse>
+	  <arg n="0">
+	  浙江 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  “ 网上 大学 ” 教育 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 保险)
+			      (NN 监管)
+			      (NN 项目)))
+		  (VP (PP-LOC (P 在)
+			      (NP-PN (NR 京)))
+		      (VP (VV 启动)))) 
+	  </parse>
+	  <arg n="1">
+	  中国 保险 监管 项目 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 京 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

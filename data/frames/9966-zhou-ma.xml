@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 咒骂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 curses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-TMP (NT 今天))
+				      (PU ，)
+				      (NP-SBJ (PN 我们))
+				      (VP (VV 应该)
+					  (VP (VV 做)
+					      (NP-OBJ (-NONE- *T*-2)))))
+				  (DEC 的))))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 不))
+			  (VP (VC 是)
+			      (IP-PRD (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 去)
+					  (VP (VV 咒骂)
+					      (NP-OBJ (DNP (NP (NT 过去))
+							   (DEG 的))
+						      (NP (NN 当权者))))))))
+		      (PU ，)
+		      (CC 而)
+		      (VP (VC 是)
+			  (NP-PRD (QP (CD 一)
+				      (CLP (M 次)))
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (NP-LOC (NN 内心))
+						  (VP (VA 真正))))
+					  (DEC 的)))
+				  (NP (NN 反省)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  过去 的 当权者 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

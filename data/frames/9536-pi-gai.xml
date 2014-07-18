@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 批改 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 comments on and corrects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 另)
+			  (QP (CD 一)
+			      (CLP (M 个))))
+		      (NP (NN 篮)))
+	      (VP (VV 放)
+		  (AS 著)
+		  (NP-OBJ (DNP (LCP (IP (NP-SBJ (PN 她))
+					(VP (VV 批改)))
+				    (LC 後))
+			       (DEG 的))
+			  (NP (NN 信件))))) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

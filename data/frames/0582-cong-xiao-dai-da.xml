@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 从小带大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="upbringer"/>
+      <role argnum="1" argrole="thing raised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (NP-LOC (NN 基地))
+						  (ADVP (AD 最))
+						  (VP (VA 优秀))))
+					  (DEC 的)))
+				  (QP (CD 两)
+				      (CLP (M 条)))
+				  (NP (NN 警犬)))
+			  (NP (NP-PN (PU “)
+				     (NN 神剑)
+				     (PU ”))
+			      (CC 和)
+			      (NP-PN (PU “)
+				     (NN 小狗)
+				     (PU ”))))
+		  (VP (ADVP (AD 都))
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 少校))
+					      (VP (VV 从小带大)
+						  (NP-OBJ (-NONE- *T*-2))))
+					  (SP 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  少校 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

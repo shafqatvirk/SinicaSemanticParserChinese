@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 乐意 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 is happy to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TPC (P 至於)
+		      (NP (NN 耐用品)))
+	      (PU ，)
+	      (NP-SBJ (NN 中国人))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 乐意)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-DIR (P 从)
+					  (NP (NN 原居地)))
+				  (VP (VV 带来))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国人 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 从 原居地 带来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  至於 耐用品 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

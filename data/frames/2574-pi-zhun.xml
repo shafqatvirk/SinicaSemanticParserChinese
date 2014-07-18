@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 批准 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (VV 批准)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 项)))
+			      (NP (ADJP (JJ 大))
+				  (NP (NN 规模)))
+			      (NP (ADJP (JJ 微型))
+				  (NP (NN 轿车)))
+			      (NP (NN 项目))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一 项 大 规模 微型 轿车 项目 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国)
+			 (NN 人民)
+			 (NN 银行))
+	      (VP (VV 批准))) 
+	  </parse>
+	  <arg n="0">
+	  中国 人民 银行 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 国务院))
+	      (VP (VP (PP-TMP (P 于)
+			      (NP (NT 一九九二年)))
+		      (ADVP (AD 先后))
+		      (VP (VV 批准)
+			  (AS 了)
+			  (NP-OBJ (NP-PN-APP (NR 黑河)
+					     (PU 、)
+					     (NR 凭祥)
+					     (PU 、)
+					     (NR 珲春)
+					     (PU 、)
+					     (NR 伊宁)
+					     (PU 、)
+					     (NR 瑞丽)
+					     (ETC 等))
+				  (QP (CD 十四)
+				      (CLP (M 个)))
+				  (NP (NN 边境)
+				      (NN 城市)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VC 为)
+				  (NP-PRD (NP (PP (P 对)
+						  (NP (NN 外)))
+					      (NP (NN 开放)))
+					  (NP (NN 城市))))))))) 
+	  </parse>
+	  <arg n="0">
+	  国务院 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  于 一九九二年 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  先后 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  黑河 、 凭祥 、珲春 、 伊宁 、 瑞丽 等 十四 个 边境 城市 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 对 外 开放 城市 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 导因於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 is caused by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 他))
+		      (DNP (QP (ADVP (AD 将近))
+			       (QP (CD 十)
+				   (CLP (M 年))))
+			   (DEG 的))
+		      (NP (NN 囚禁)
+			  (NN 生涯)))
+	      (PU ，)
+	      (VP (ADVP (AD 主要))
+		  (VP (VV 导因於)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VP (QP-TMP (NP-PN (NR 民国))
+					      (QP (OD 五十七)
+						  (CLP (M 年))))
+				      (PP-LOC (P 在)
+					      (LCP (NP-PN (NR 中华)
+							  (NN 日报))
+						   (LC 上)))
+				      (PU ，)
+				      (VP (BA 将)
+					  (IP-OBJ (NP-SBJ (NP-APP (DNP (LCP (NP (QP (CD 一)
+										    (CLP (M 幅)))
+										(NP-PN (NR 大力水手))
+										(NP (NN 漫画)))
+									    (LC 中))
+								       (DEG 的))
+								  (NP (NN 对话)))
+							  (NP (PU 「)
+							      (NN Fellows)
+							      (PU 」)))
+						  (VP (VRD (VV 翻译)
+							   (VV 为))
+						      (NP-OBJ (PU 「)
+							      (NP (DP (DT 全))
+								  (NP (NN 国)))
+							      (NP (NN 军民)
+								  (NN 同胞们))
+							      (PU 」))))))
+				  (PU ，)
+				  (VP (SB 被)
+				      (VP (VV 视为)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 模仿)
+						      (NP-OBJ (NP (NN 国家)
+								  (NN 元首))
+							      (NP (NN 用词)))))))
+				  (PU ，)
+				  (VP (MSP 而)
+				      (VP (PP-MNR (P 以)
+						  (NP (PU 「)
+						      (NN 匪谍)
+						      (PU 」)
+						      (NN 罪名)))
+					  (VP (SB 被)
+					      (VP (VV 监禁)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 将近 十 年 的 囚禁 生涯 
+	  </arg>
+	  <arg n="1">
+	  *pro* 民国 五十七 年 在 中华 日报 上 ， 将 一 幅 大力水手 漫画 中 的 对话 「 Fellows 」 翻译 为 「 全 国 军民 同胞们 」 ， 被 视为 *PRO* 模仿 国家 元首 用词 ， 而 以 「 匪谍 」 罪名 被 监禁 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 稽 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 exams"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 包括)
+			(IP-OBJ (NP-TMP (NP-PN (NR 西汉))
+					(NP (NN 中期)))
+				(NP-PN-SBJ (NR 太史公))
+				(VP (VV 作)
+				    (NP-TTL-OBJ (PU 《)
+						(NN 史记)
+						(PU 》))))))
+	    (PU ，)
+	    (NP-SBJ (NN 目的))
+	    (VP (ADVP (AD 也))
+		(VP (VV 在)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PU 「)
+				(VV 稽)
+				(NP-OBJ (CP-APP (IP (NP-SBJ (PN 其))
+						    (VP (VCD (VV 成败)
+							     (VV 兴坏))))
+						(DEC 之))
+					(NP (NN 理)))
+				(PU 」)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	其 成败 兴坏 之 理 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

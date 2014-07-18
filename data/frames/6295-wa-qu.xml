@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挖取 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 digs out and takes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LST (CD 3))
+	    (PU ．)
+	    (NP-SBJ (NN 投资人))
+	    (VP (ADVP (AD 无意))
+		(VP (VV 挖取)
+		    (NP-OBJ (DNP (NP (NN 创业者))
+				 (DEG 的))
+			    (NP (NN 知识)))))) 
+	</parse>
+	<arg n="0">
+	投资人 
+	</arg>
+	<arg n="1">
+	创业者 的 知识 
+	</arg>
+	<arg n="m" f="adv">
+	无意 
+	</arg>
+	<arg n="m" f="dis">
+	3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

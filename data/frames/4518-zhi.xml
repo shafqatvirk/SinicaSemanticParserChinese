@@ -1,0 +1,211 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 uses"/>
+      <role argnum="2" argrole="entity arg0 refers to with arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (PN 我们))
+		  (VP (VP (ADVP (AD 并))
+			  (ADVP (AD 不))
+			  (ADVP (AD 单))
+			  (VP (VV 指)
+			      (NP-OBJ (DNP (QP (CD 一)
+					       (CLP (M 年)))
+					   (DEG 的))
+				      (NP (NN 开支)
+					  (NN 增长)))))
+		      (PU ，)
+		      (CC 而)
+		      (VP (VC 是)
+			  (VP (PP-MNR (P 以)
+				      (NP (QP (CD 多)
+					      (CLP (M 年)))
+					  (NP (NN 期))))
+			      (VP (VV 作)
+				  (NP-OBJ (NN 规划))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="2">
+	  一 年 的 开支 增长 
+	  </arg>
+	  <arg n="m" f="adv">
+	  单 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VC 是)
+		  (VP (VV 指)
+		      (NP-OBJ (DNP (NP (NN 外企))
+				   (DEG 的))
+			      (NP (NN 中方)
+				  (NN 管理)
+				  (NN 人员)))))) 
+	  </parse>
+	  <arg n="1">
+	  这 
+	  </arg>
+	  <arg n="2">
+	  外企 的 中方 管理 人员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (IP-SBJ (ADVP (AD 所谓))
+			(IP (PU 「)
+			    (NP-SBJ (NN 长))
+			    (VP (VA 多))
+			    (PU 」)))
+		(PU ，)
+		(VP (ADVP (AD 究竟))
+		    (VP (VV 指)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP-WH (AD 多))
+				    (VP (VA 长))))))) 
+	  </parse>
+	  <arg n="1">
+	  所谓 「 长 多 」 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 多 长 
+	  </arg>
+	  <arg n="m" f="adv">
+	  究竟 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 points out/claims"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 电视台)
+			  (NN 新闻)
+			  (NN 报道))
+		  (VP (VV 指)
+		      (IP-OBJ (PP-PRP (P 由於)
+				      (NP (ADJP (JJ 连场))
+					  (NP (NN 大雨))))
+			      (PU ，)
+			      (NP-PN-SBJ (NN 水务署))
+			      (VP (PP-LOC (P 在)
+					  (NP (NN 城门)
+					      (NN 水塘)))
+				  (VP (VP (VV 开启)
+					  (NP-OBJ (NN 水闸)))
+				      (VP (VV 排洪))))))) 
+	  </parse>
+	  <arg n="0">
+	  电视台 新闻 报道 
+	  </arg>
+	  <arg n="1">
+	  由於 连场 大雨 ， 水务署 在 城门 水塘 开启 水闸 排洪 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-3 (DP (DT 该))
+			(QP (CD 两)
+			    (CLP (M 名)))
+			(NP-PN (NR 中国))
+			(NP (NN 人士)))
+	      (VP (PP-TMP (P 在)
+			  (LCP (NP (NT 三月))
+			       (LC 时)))
+		  (ADVP (AD 已))
+		  (VP (VP (SB 被)
+			  (VP (VV 指)
+			      (NP-OBJ (-NONE- *-3))
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 行使)
+					      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							  (IP (NP-SBJ (-NONE- *pro*))
+							      (VP (VV 伪造)
+								  (NP-OBJ (-NONE- *T*-2)))))
+						      (NP-PN (NR 中国))
+						      (NP (NN 护照))))
+					  (CC 和)
+					  (VP (VV 管有)
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (IP (NP-SBJ (-NONE- *pro*))
+							      (VP (VV 伪造)
+								  (NP-OBJ (-NONE- *T*-1)))))
+						      (NP-PN (NR 香港))
+						      (NP (NN 旅行)
+							  (NN 证件))))))))
+		      (VP (MSP 而)
+			  (VP (ADVP (AD 分别))
+			      (VP (SB 被)
+				  (VP (VV 判)
+				      (NP-OBJ (-NONE- *-3))
+				      (VP (VV 入狱)
+					  (NP-EXT (QP (CD 六)
+						      (CLP (M 个)))
+						  (NP (NN 月))))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *-3 
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 行使 *OP* *pro* 伪造 *T*-2 中国 护照 和 管有 *OP* *pro* 伪造 *T*-1 香港 旅行 证件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 三月 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

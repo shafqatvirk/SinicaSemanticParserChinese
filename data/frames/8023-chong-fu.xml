@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重复 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 causes to repeat"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 西历))
+			   (DEG 的))
+		      (NP (NN 日期)
+			  (CC 和)
+			  (NN 星期))
+		      (NP (NN 对应)))
+	      (VP (DP-ADV (DT 每)
+			  (QP (CD 二十八)
+			      (CLP (M 年))))
+		  (ADVP (AD 将))
+		  (VP (VV 重复)
+		      (QP-ADV (CD 一)
+			      (CLP (M 次)))))) 
+	  </parse>
+	  <arg n="1">
+	  西历 的 日期 和 星期 对应 
+	  </arg>
+	  <arg n="m" f="ext">
+	  一 次 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 二十八 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

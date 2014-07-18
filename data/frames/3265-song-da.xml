@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 送达 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-DIR (P 向)
+			      (NP (NN 肇事)
+				  (NN 船)
+				  (NN 船东)))
+		      (VP (VV 送达)
+			  (NP-OBJ (ADJP (JJ 有关))
+				  (NP (NN 法律)
+				      (NN 文书)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  有关 法律 文书 
+	  </arg>
+	  <arg n="2">
+	  向 肇事 船 船东 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

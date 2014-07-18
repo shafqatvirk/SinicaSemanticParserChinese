@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 烧录 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="thing arg0 burns and records arg1 onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (ADVP (AD 同样))
+				(VP (VV 烧录)
+				    (PP (P 在)
+					(LCP (NP (QP (CD 一)
+						     (CLP (M 片)))
+						 (NP (NN 磁碟)))
+					     (LC 上))))))
+			(DEC 的)))
+		(NP (NN 软体))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	在 一 片 磁碟 上 
+	</arg>
+	<arg n="m" f="adv">
+	同样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

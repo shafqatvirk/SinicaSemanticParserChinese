@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掉到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 falls onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 比如))
+	      (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 看到)
+			  (NP-OBJ (NN 女性)
+				  (NN 朋友))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VE 有)
+				  (IP-OBJ (NP-SBJ (NN 头发))
+					  (VP (VV 掉到)
+					      (LCP-OBJ (NP (NN 肩膀))
+						       (LC 上))))))))
+	      (PU ，)
+	      (NP-SBJ (PN 你))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 应该)
+		      (VP (DVP (VP (VA 轻轻))
+			       (DEV 地))
+			  (VP (VV 帮)
+			      (NP-OBJ (PN 她))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VRD (VV 捻)
+					       (VV 起来)))
+				      (PU ，)
+				      (VP (VV 丢掉))
+				      (PU 、)
+				      (CC 或)
+				      (VP (VV 放到)
+					  (LCP-OBJ (NP (DNP (NP (PN 自己))
+							    (DEG 的))
+						       (NP (NN 口袋)))
+						   (LC 里)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  头发 
+	  </arg>
+	  <arg n="1">
+	  肩膀 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

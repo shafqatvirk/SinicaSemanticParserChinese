@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 教学 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 teaches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (ADVP (AD 比较))
+				    (VP (VA 不同))))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(IP-PRD (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 使用)
+				(NP-OBJ (NN 中英文)
+					(NN 双语)))
+			    (VP (VV 教学)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 国内)
+		    (NN 英语))
+	    (VP (SB 被)
+		(VP (VP (VV 当成)
+			(NP-OBJ (NP (PU 「)
+				    (NN 学科)
+				    (PU 」))
+				(CC 而非)
+				(NP (PU 「)
+				    (NN 工具)
+				    (PU 」))))
+		    (VP (MSP 来)
+			(VP (VV 教学)))))) 
+	</parse>
+	<arg n="1">
+	国内 英语 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

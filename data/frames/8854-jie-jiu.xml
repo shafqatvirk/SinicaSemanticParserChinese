@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 解救 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 rescues/relieves"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 美国))
+		      (NP (NN 总统)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 遭遇)
+				   (NP-OBJ (NN 危机))))
+			   (LC 後))
+		  (VP (ADVP (AD 又))
+		      (VP (VV 解救)
+			  (NP-OBJ (NN 危机)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 总统 
+	  </arg>
+	  <arg n="1">
+	  危机 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 遭遇 危机 後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 换来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 obtains"/>
+    <role argnum="2" argrole="entity arg0 gives in exchange for arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (QP (NP (NT 过去))
+			     (QP (CD 五十)
+				 (CLP (M 年))))
+			 (DEG 的))
+		    (NP (NN 奋斗)))
+	    (VP (VV 换来)
+		(NP-OBJ (NN 富裕)))) 
+	</parse>
+	<arg n="1">
+	富裕 
+	</arg>
+	<arg n="2">
+	过去 五十 年 的 奋斗 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

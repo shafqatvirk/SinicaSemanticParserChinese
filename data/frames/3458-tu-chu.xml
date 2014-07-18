@@ -1,0 +1,122 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 突出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity portruding/outstanding"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 突出)
+		  (NP-OBJ (DNP (NP (NN 城市)
+				   (NN 园林)
+				   (NN 绿化))
+			       (DEG 的))
+			  (NP (NN 亚热带)
+			      (NN 风光)
+			      (CC 及)
+			      (NN 民族)
+			      (NN 特色))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  城市 园林 绿化 的 亚热带 风光 及 民族 特色 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP (ADJP (JJ 短道))
+			      (NP (NN 速滑)))
+			  (NP (NN 选手)))
+		      (NP (NN 成绩)))
+	      (VP (VA 突出))) 
+	  </parse>
+	  <arg n="1">
+	  短道 速滑 选手 成绩 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国)
+			 (NN 石油)
+			 (NN 天然气)
+			 (NN 集团)
+			 (NN 公司))
+	      (VP (VP (PP-TMP (P 在)
+			      (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 进行)
+						  (NP-OBJ (NN 机构)
+							  (NN 调整)
+							  (CC 和)
+							  (NN 企业)
+							  (NN 重组))))
+					  (DEC 的))
+				  (NP (NN 同时))))
+		      (PU ，)
+		      (VP (VP (VV 突出)
+			      (IP-OBJ (NP-SBJ (NN 效益))
+				      (VP (VV 为)
+					  (NP-OBJ (NN 中心)))))
+			  (PU ，)
+			  (VP (VP (ADVP (AD 狠))
+				  (VP (VV 下)
+				      (NP-OBJ (NN 功夫))))
+			      (VP (VV 进行)
+				  (NP-OBJ (DNP (NP (NN 经济)
+						   (NN 结构))
+					       (DEG 的))
+					  (NP (NN 调整)))))
+			  (PU ，)
+			  (VP (VV 强化)
+			      (NP-OBJ (NN 内部)
+				      (NN 管理)))
+			  (PU ，)
+			  (VP (VV 抓好)
+			      (NP-OBJ (NN 挖潜)
+				      (NN 增效)))
+			  (PU ，)
+			  (VP (VV 注意)
+			      (NP-OBJ (NN 增收)
+				      (NN 节支)))))
+		  (PU ，)
+		  (VP (VV 取得)
+		      (NP-OBJ (ADJP (JJ 明显))
+			      (NP (NN 成绩)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 石油 天然气 集团 公司 
+	  </arg>
+	  <arg n="1">
+	  效益 为 中心 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 进行 机构 调整 和 企业 重组 的 同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

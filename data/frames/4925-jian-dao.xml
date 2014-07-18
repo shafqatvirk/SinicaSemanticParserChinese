@@ -1,0 +1,196 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 见到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 sees"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (NP (NN 空中)))
+	    (PU ，)
+	    (PP-PRP (P 由於)
+		    (IP (IP (NP-SBJ (ADJP (JJ 热带海洋型))
+				    (NP (NN 气候)))
+			    (VP (VV 使然)))
+			(PU ，)
+			(IP (NP-SBJ (NN 骤雨))
+			    (VP (VV 来去匆匆)))))
+	    (PU ，)
+	    (NP-SBJ (NN 观光客))
+	    (VP (VV 可以)
+		(VP (ADVP (AD 时常))
+		    (VP (VV 见到)
+			(NP-OBJ (NN 彩虹)))))) 
+	</parse>
+	<arg n="0">
+	观光客 
+	</arg>
+	<arg n="1">
+	彩虹 
+	</arg>
+	<arg n="m" f="adv">
+	时常 
+	</arg>
+	<arg n="m" f="prp">
+	由於 热带海洋型 气候 使然 ， 骤雨 来去匆匆 
+	</arg>
+	<arg n="m" f="loc">
+	在 空中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (PP-TMP (P 自从)
+		    (LCP (IP (NP-SBJ (NN 政府))
+			     (VP (PP-LOC (P 在)
+					 (NP-PN (NR 兰屿)
+						(NN 地区)))
+				 (VP (VV 兴建)
+				     (NP-OBJ (NN 国宅)))))
+			 (LC 之後)))
+	    (PU ，)
+	    (NP-SBJ (DNP (ADJP (JJ 半穴居))
+			 (DEG 的))
+		    (NP (NN 住屋)))
+	    (VP (ADVP (AD 只))
+		(VP (VV 能)
+		    (VP (PP-LOC (P 在)
+				(LCP (NP (DNP (NP (QP (CD 两)
+						      (CLP (M 个)))
+						  (NP (NN 村落)))
+					      (DEG 的))
+					 (NP (NN 保护区)))
+				     (LC 中)))
+			(VP (VV 见到)))))) 
+	</parse>
+	<arg n="1">
+	半穴居 的 住屋 
+	</arg>
+	<arg n="m" f="loc">
+	在 两 个 村落 的 保护区 中 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="tmp">
+	自从 政府 在 兰屿 地区 兴建 国宅 之後 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (DNP (NP-PN (NR 宋朝))
+			      (DEG 的))
+			 (NP-TTL (PU 〈)
+				 (IP-APP (NP-SBJ (-NONE- *PRO*))
+					 (VP (VV 问)
+					     (NP-OBJ (NN 喘))))
+				 (NP (NN 图))
+				 (PU 〉)))
+		     (LC 里))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 汉宣帝))
+			    (NP (NN 丞相)))
+		    (NP-PN (NR 丙吉)))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 外出)))
+			 (LC 时))
+		(PU ，)
+		(VP (VP (VV 见到)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (LCP-LOC (IP (NP-SBJ (NN 春阳))
+							     (VP (VV 煦煦)))
+							 (LC 下))
+						(VP (VV 闲步))))
+					(DEC 的)))
+				(NP (NN 牛儿)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 却))
+				(VP (VV 气喘吁吁)))))
+		    (PU ，)
+		    (VP (ADVP (AD 因而))
+			(ADVP (AD 殷殷))
+			(VP (VV 相询)
+			    (PU ，)
+			    (IP-Q-OBJ (ADVP-WH (AD 莫非))
+				      (NP-SBJ (NN 自然))
+				      (VP (VV 失序)))))))) 
+	</parse>
+	<arg n="0">
+	汉宣帝 丞相 丙吉 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 春阳 煦煦 下 闲步 的 牛儿 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 却 气喘吁吁 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 外出 时 
+	</arg>
+	<arg n="m" f="loc">
+	宋朝 的 〈 *PRO* 问 喘 图 〉 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (NN 国内)
+			(NN 民众))
+		(VP (VV 见到)
+		    (IP-OBJ (NP-SBJ (NP (PN 我))
+				    (NP (NN 国)))
+			    (VP (LCP-LOC (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							 (VP (ADVP (AD 再))
+							     (VP (VV 重返)
+								 (NP-PN-OBJ (NR 联合国)))))
+						     (DEC 的))
+					     (NP (NN 动作)))
+					 (LC 上))
+				(ADVP (AD 一再))
+				(VP (VV 失败)))))) 
+	</parse>
+	<arg n="0">
+	国内 民众 
+	</arg>
+	<arg n="1">
+	我 国 *PRO* 再 重返 联合国 的 动作 上 一再 失败 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

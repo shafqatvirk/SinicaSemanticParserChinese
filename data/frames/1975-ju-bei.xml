@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 具备 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is in possession of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 码头))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 具备)
+		      (NP-OBJ (DP (DT 各)
+				  (CLP (M 种)))
+			      (NP (NP (NN 杂货))
+				  (PU 、)
+				  (NP (NN 散货))
+				  (PU 、)
+				  (NP (ADJP (JJ 滚装))
+				      (NP (NN 货物)))
+				  (PU 、)
+				  (NP (NN 集装箱))
+				  (PU 、)
+				  (NP (NN 石化)
+				      (NN 产品)))
+			      (NP (NN 装卸)
+				  (NN 功能)))))) 
+	  </parse>
+	  <arg n="0">
+	  码头 
+	  </arg>
+	  <arg n="1">
+	  各 种 杂货 、 散货 、 滚装 货物 、 集装箱 、 石化 产品 装卸 功能 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 纺织)
+					  (NN 工业))
+				  (VP (NP-ADV (-NONE- *T*-1))
+				      (VP (VV 摆脱)
+					  (NP-OBJ (NN 困境)))))
+			      (DEC 的)))
+		      (NP (NN 条件)))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 基本))
+		  (VP (VV 具备)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 纺织 工业 *T*-1 摆脱 困境 的 条件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  基本 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 盯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 gazes at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 参观)
+			    (NP-OBJ (NN 兵马俑)
+				    (NN 特展))))
+		(PU ，)
+		(ADVP (AD 可))
+		(ADVP (AD 别))
+		(VP (VP (ADVP (AD 只))
+			(VP (VV 盯)
+			    (AS 著)
+			    (NP-OBJ (DP (DT 那些))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 抢目)))
+					    (DEC 的)))
+				    (NP (NN 兵马俑)))))
+		    (PU ，)
+		    (VP (ADVP (AD 而))
+			(VP (VV 忽略)
+			    (NP-OBJ (DP (DT 其他))
+				    (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VV 参)
+						    (NP-OBJ (NN 展))))
+					    (DEC 的)))
+				    (NP-PN (NR 秦朝))
+				    (NP (NN 文物)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	那些 *OP* *T*-1 抢目 的 兵马俑 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	别 
+	</arg>
+	<arg n="m" f="adv">
+	可 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 参观 兵马俑 特展 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

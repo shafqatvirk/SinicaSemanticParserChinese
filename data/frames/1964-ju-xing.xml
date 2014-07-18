@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 举行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="initiator"/>
+      <role argnum="1" argrole="meeting, conference, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 广东))
+		  (VP (VP (VV 举行)
+			  (NP-OBJ (NN 研讨会)))
+		      (VP (VV 介绍)
+			  (NP-OBJ (NN 税改)
+				  (CC 及)
+				  (NN 加工)
+				  (NN 贸易)
+				  (NN 台帐)
+				  (NN 制度))))) 
+	  </parse>
+	  <arg n="0">
+	  广东 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  研讨会 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 年赛))
+	      (VP (VV 计划)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (DP-TMP (DT 每)
+				      (QP (CD 两)
+					  (CLP (M 年))))
+			      (VP (VV 举行)
+				  (QP-EXT (CD 一)
+					  (CLP (M 次)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb> 

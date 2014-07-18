@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冲毁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 今年)
+					      (NT 夏天))
+				      (VP (VV 发生)
+					  (PP (P 在)
+					      (NP (NP-PN (NR 长江)
+							 (CC 和)
+							 (NR 嫩江))
+						  (NP (NN 流域)))))))
+			      (DEC 的)))
+		      (ADJP (JJ 特大))
+		      (NP (NN 洪灾)))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 冲毁)
+		      (NP-OBJ (NN 房屋))
+		      (QP-EXT (CD 七百三十多万)
+			      (CLP (M 间)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 今年 夏天 发生 在 长江 和 嫩江 流域 的 特大 洪灾 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  共 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  房屋	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  七百三十多万 间 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

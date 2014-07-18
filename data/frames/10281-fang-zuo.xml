@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 仿作 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes imitation of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(CLP (M 位)))
+		    (NP (NN 先生)))
+	    (VP (VV 擅长於)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-MNR (P 以)
+				    (NP (NN 玻璃)
+					(NN 纤维)))
+			    (VP (VV 仿作)
+				(NP-OBJ (NN 古物))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	古物 
+	</arg>
+	<arg n="m" f="mnr">
+	以 玻璃 纤维 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

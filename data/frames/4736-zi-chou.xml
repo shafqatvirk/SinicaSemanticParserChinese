@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自筹 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 self-raises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 运河))
+			   (VP (VV 整治)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 苏钢))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP (NN 运河)
+				  (NN 对岸)))
+		      (VP (VV 建)
+			  (AS 了)
+			  (NP-OBJ (ADJP (JJ 新))
+				  (NP (NN 厂区)))
+			  (PU ，)))
+		  (CC 并)
+		  (VP (VP (VP (VV 自筹)
+			      (NP-OBJ (NN 资金)))
+			  (VP (VV 建设)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 座)))
+				      (ADJP (JJ 跨运河))
+				      (ADJP (JJ 大))
+				      (NP (NN 桥)))))
+		      (PU ，)
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (NP (ADJP (JJ 新))
+					      (NP (NN 厂)))
+					  (PU 、)
+					  (NP (ADJP (JJ 老))
+					      (NP (NN 厂))))
+				  (VP (VV 连为)
+				      (NP-OBJ (NN 一体)))))))) 
+	  </parse>
+	  <arg n="0">
+	  苏钢 
+	  </arg>
+	  <arg n="1">
+	  资金 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  运河 整治 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

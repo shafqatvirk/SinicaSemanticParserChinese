@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 远走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 goes a long way to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 以致於))
+	      (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 国人)))
+	      (VP (VP (VV 趁)
+		      (NP-OBJ (NN 过年)))
+		  (VP (ADVP (AD 乾脆))
+		      (VP (VP (VV 远走)
+			      (NP-OBJ (NN 国外)))
+			  (VP (MSP 来)
+			      (VP (PU 「)
+				  (VV 避)
+				  (NP-OBJ (NN 年))
+				  (PU 」))))))) 
+	  </parse>
+	  <arg n="0">
+	  许多 国人 
+	  </arg>
+	  <arg n="1">
+	  国外 
+	  </arg>
+	  <arg n="m" f="adv">
+	  乾脆 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  以致於 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

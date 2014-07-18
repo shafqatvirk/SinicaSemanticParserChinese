@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 止於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 stops at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (NP-SBJ (DNP (NP (DP (DT 这)
+				   (CLP (M 种)))
+			       (ADJP (JJ 优质))
+			       (ADJP (JJ 新))
+			       (NP (NN 纤维)))
+			   (DEG 的))
+		      (NP (NN 用途)))
+	      (VP (ADVP (AD 绝))
+		  (ADVP (AD 不))
+		  (ADVP (AD 仅))
+		  (VP (VV 止於)
+		      (NP-OBJ (PN 此))))) 
+	  </parse>
+	  <arg n="0">
+	  这 种 优质 新 纤维 的 用途 
+	  </arg>
+	  <arg n="1">
+	  此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  绝 
+	  </arg>
+	  <arg n="m" f="dis">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

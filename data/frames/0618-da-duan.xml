@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打断 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="breaker"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 突然))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 个)))
+		      (NP (NN 声音)))
+	      (VP (VV 打断)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP (PN 我))
+			       (DEG 的))
+			  (ADJP (JJ 联翩))
+			  (NP (NN 浮想))))) 
+	  </parse>
+	  <arg n="0">
+	  一 个 声音 
+	  </arg>
+	  <arg n="1">
+	  我 的 联翩 浮想 
+	  </arg>
+	  <arg n="m" f="adv">
+	  突然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 筹办 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes arrangements to set up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 当时))
+	    (NP-SBJ (QP (ADVP (AD 很))
+			(QP (CD 少)))
+		    (NP (NN 人)))
+	    (VP (VV 愿意)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 插手)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 筹办)
+					(NP-OBJ (NN 电视台)
+						(NN 事宜)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	电视台 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (PU 「)
+		       (ADJP (JJ 小))
+		       (NP-PN (NR 牛津))
+		       (PU 」))
+	    (VP (ADVP (AD 很))
+		(VP (VV 类似於)
+		    (NP-OBJ (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 筹办)))
+				      (LC 中))
+				 (DEG 的))
+			    (NP-PN (NP (NN 台商)
+				       (NN 子弟))
+				   (NP (NN 学校))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

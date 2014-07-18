@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 激活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="activator"/>
+      <role argnum="1" argrole="thing activated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (ADJP (JJ 新型))
+			       (NP (NN 电脑)
+				   (NN 病毒)))
+			   (DEG 的))
+		      (NP (NN 研制者)))
+	      (VP (VV 激活)
+		  (NP-OBJ (LCP (NP (NN 病毒))
+			       (LC 中))
+			  (QP (CD 一些))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 新)))
+				  (DEC 的)))
+			  (NP (NN 功能))))) 
+	  </parse>
+	  <arg n="0">
+	  新型 电脑 病毒 的 研制者 
+	  </arg>
+	  <arg n="1">
+	  病毒 中 一些 *OP* *T*-1 新 的 功能 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

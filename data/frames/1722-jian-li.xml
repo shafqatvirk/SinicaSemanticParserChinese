@@ -1,0 +1,141 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 建立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="basis"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 天津))
+			      (ADJP (JJ 名))
+			      (NP (NN 小吃)))
+		      (NP-PN (NR 狗不理)
+			     (NN 包子店)))
+	      (VP (ADVP (AD 则))
+		  (PP-LOC (P 在)
+			  (NP (NP-PN-APP (NR 日本)
+					 (PU 、)
+					 (NR 韩国)
+					 (PU 、)
+					 (NR 美国)
+					 (ETC 等))
+			      (NP (NN 国))))
+		  (VP (VV 建立)
+		      (AS 了)
+		      (NP-OBJ (ADJP (JJ 特许))
+			      (NP (NN 连锁店)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  天津 名 小吃 狗不理 包子店 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  则 	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 日本 、 韩国 、 美国 等 国 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  特许 连锁店 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (ADJP (JJ 正规))
+			       (NP (NN 传销)
+				   (NN 公司)))
+			   (DEG 的))
+		      (NP (NN 奖金)
+			  (NN 制度)))
+	      (PU ，)
+	      (VP (ADVP (AD 一定))
+		  (VP (VC 是)
+		      (VP (VV 建立)
+			  (PP-LOC (P 在)
+				  (LCP (NP (DNP (NP (NN 个人)
+						    (CC 或)
+						    (NN 组织网))
+						(DEG 的))
+					   (NP (NN 销售)
+					       (NN 业绩)))
+				       (LC 上))))))) 
+	  </parse>
+	  <arg n="1">
+	  正规 传销 公司 的 奖金 制度 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  在 个人 或 组织网 的 销售 业绩 上 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 住房)
+		      (NN 公积金)
+		      (NN 制度))
+	      (VP (VV 开始)
+		  (VP (ADVP (AD 普遍))
+		      (VP (VV 建立))))) 
+	  </parse>
+	  <arg n="1">
+	  住房 公积金 制度 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  普遍 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-PN-SBJ (NR 台湾))
+			      (VP (VRD (VV 建立)
+				       (VV 为))
+				  (NP-OBJ (NN 世界)
+					  (NN 汉学)
+					  (NN 中心)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  世界 汉学 中心 
+	  </arg>
+	  <arg n="2">
+	  台湾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

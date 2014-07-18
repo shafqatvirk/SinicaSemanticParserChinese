@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作罢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 gives up doing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 又))
+		  (PP-PRP (P 因为)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VE 没有)
+				  (IP-OBJ (NP-SBJ (NN 戏院))
+					  (VP (VV 愿意)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 配合))))))))
+		  (VP (MSP 而)
+		      (VP (VV 作罢))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 *pro* 没有 戏院 愿意 *PRO* 配合 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

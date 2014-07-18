@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 试射 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 test-fires"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (IP-APP (NP-PN-SBJ (NR 中共))
+			    (VP (VV 试射)
+				(NP-OBJ (NN 飞弹))))
+		    (NP (NN 危机)))
+	    (PU ，)
+	    (VP (VV 使得)
+		(NP-OBJ (NP-PN (NR 台海))
+			(NP (NN 安定)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VRD (VV 跃升)
+			     (VV 为))
+			(NP-OBJ (QP (OD 第一))
+				(NP (NN 考量))))))) 
+	</parse>
+	<arg n="0">
+	中共 
+	</arg>
+	<arg n="1">
+	飞弹 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-TMP (NT 九六年))
+				(NP-SBJ (NN 飞弹))
+				(VP (VV 试射)))
+			    (DEC 的))
+		    (NP (NN 成功)))
+	    (VP (ADVP (AD 已))
+		(VP (VV 改变)
+		    (NP-OBJ (NP (QP (CD 两))
+				(NP (NN 岸)))
+			    (NP (NN 战略)
+				(NN 思维)))))) 
+	</parse>
+	<arg n="1">
+	飞弹 
+	</arg>
+	<arg n="m" f="tmp">
+	九六年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (PN 它))
+		(VP (VP (VE 有)
+			(NP-OBJ (NN 权)))
+		    (VP (PP-LOC (P 在)
+				(LCP (NP (PU 『)
+					 (NP-PN (NR 中国))
+					 (NP (NN 国土))
+					 (PU 』))
+				     (LC 之内)))
+			(VP (VV 试射))))) 
+	</parse>
+	<arg n="0">
+	它 
+	</arg>
+	<arg n="m" f="loc">
+	在 『 中国 国土 』 之内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

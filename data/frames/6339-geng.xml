@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 耕 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (land) arg0 farms"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不如))
+		(VP (VP (VV 回去)
+			(VP (VV 照顾)
+			    (LCP-OBJ (NP (NN 家))
+				     (LC 里))))
+		    (PU ，)
+		    (VP (ADVP (AD 顺便))
+			(VP (VV 耕)
+			    (NP-OBJ (QP (CD 一点))
+				    (NP (NN 田)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一点 田 
+	</arg>
+	<arg n="m" f="adv">
+	顺便 
+	</arg>
+	<arg n="m" f="adv">
+	不如 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 恶地))
+	    (VP (VP (ADVP (AD 渐次))
+		    (VP (VV 复原)))
+		(PU ，)
+		(VP (VV 招来)
+		    (NP-OBJ (NN 物种)))
+		(PU ，)
+		(VP (ADVP (AD 连带))
+		    (VP (VV 守护)
+			(AS 了)
+			(NP-OBJ (NN 下游))))
+		(PU ，)
+		(VP (VV 使)
+		    (NP-OBJ (PN 之))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 成为)
+			    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-3))
+						(VP (VP (VV 可)
+							(VP (VV 居)))
+						    (VP (VV 可)
+							(VP (VV 耕)))))
+					    (DEC 之)))
+				    (NP (NN 地)))))))) 
+	</parse>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

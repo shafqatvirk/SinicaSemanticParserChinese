@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 接铸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 casts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (VP (VV 接铸)))
+			 (LC 时))
+		(VP (VV 必须)
+		    (VP (VE 有)
+			(NP-OBJ (DNP (ADJP (NP (NN 上下))
+					   (ADJP (ADJP (JJ 大))
+						 (ADJP (JJ 小))))
+				     (DEG 的))
+				(NP (NN 母子)
+				    (NN 口沿))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 义卖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity doing a charity sale"/>
+    <role argnum="1" argrole="thing sold"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP (NN 主持人))
+				  (DEG 的))
+			     (NP (NN 带动)))
+			 (LC 下)))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-4))
+				(IP (NP-SBJ (NP-APP (DNP (NP (NN 音乐会))
+							 (DEG 的))
+						    (NP (NN 赞助)
+							(NN 厂商)))
+					    (NP-PN (NP (NR 金宝)
+						       (PU 、)
+						       (NR 仁宝))
+						   (NP (NN 电子)
+						       (NN 公司))))
+				    (VP (VV 捐款)))
+				(CC 和)
+				(IP (NP-SBJ (-NONE- *pro*))
+				    (VP (LCP-LOC (NP (NN 场))
+						 (LC 内))
+					(VP (VV 义卖)))))
+			    (DEC 的)))
+		    (NP (NN 款项)))
+	    (VP (ADVP (AD 已))
+		(VP (VE 有)
+		    (QP-OBJ (CD 六百馀万))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="loc">
+	场 内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *T*-2))
+	    (VP (VV 包括)
+		(IP-OBJ (IP (NP-SBJ (NN 球具))
+			    (VP (VV 义卖)))
+			(PU 、)
+			(IP (NP-SBJ (NN 球技))
+			    (VP (VV 指导)))
+			(PU 、)
+			(IP (NP-SBJ (NN 名人))
+			    (VP (VP-LOC (NN 酒吧))
+				(VP (VV 调酒))))
+			(ETC 等)))) 
+	</parse>
+	<arg n="1">
+	球具 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

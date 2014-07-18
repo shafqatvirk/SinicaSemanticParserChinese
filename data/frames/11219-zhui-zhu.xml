@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 追述 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 recalls and tells about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (DNP (NP (PN 他))
+				 (DEG 的))
+			    (ADJP (JJ 入室))
+			    (NP (NN 弟子)))
+		    (NP-PN (NR 薛志扬)))
+	    (VP (VP (VV 追述)
+		    (NP-OBJ (NT 过去)))
+		(PU ，)
+		(VP (VV 记得)
+		    (IP-OBJ (NP-PN-SBJ (NR 壮老))
+			    (VP (PP-TMP (P 在)
+					(NP (NP-APP (NT 中午))
+					    (CP (WHPP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *pro*))
+							(VP (PP-TMP (-NONE- *T*-1))
+							    (VP (VV 挥毫))))
+						    (DEC 之)))
+					    (NP (NN 时))))
+				(PU ，)
+				(VP (VP (ADVP (AD 也))
+					(ADVP (AD 经常))
+					(VP (VV 会)
+					    (VP (VP (VP (VRD (VV 停)
+							     (VV 下来)))
+						    (VP (VV 喝)
+							(NP-OBJ (NN 酒))))
+						(VP (MSP 以)
+						    (VP (VV 助)
+							(NP-OBJ (NN 书兴)))))))
+				    (PU ，)
+				    (VP (PP-LOC (P 在)
+						(LCP (NP (NN 微醺))
+						     (LC 之中)))
+					(VP (VV 写下)
+					    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							(CP (IP (NP-TPC (-NONE- *T*-2))
+								(NP-SBJ (-NONE- *pro*))
+								(VP (VA 得意)))
+							    (DEC 的)))
+						    (NP (NN 诗)
+							(NN 书))
+						    (NP (NN 作品))))))))))) 
+	</parse>
+	<arg n="0">
+	他 的 入室 弟子 薛志扬 
+	</arg>
+	<arg n="1">
+	过去 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

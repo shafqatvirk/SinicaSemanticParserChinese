@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打算 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="planner"/>
+      <role argnum="1" argrole="thing planned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 打算)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 进一步))
+				  (VP (VP (VV 加强)
+					  (NP-OBJ (NP (QP (CD 两))
+						      (NP (NN 国)))
+						  (DNP (PP (P 在)
+							   (NP (NP (NN 外交)
+								   (CC 和)
+								   (NN 安全)
+								   (NN 政策))
+							       (NP (NN 方面))))
+						       (DEG 的))
+						  (NP (NN 合作))))
+				      (PU ，)
+				      (VP (VV 加强)
+					  (NP-OBJ (NP (QP (CD 两))
+						      (NP (NN 国)))
+						  (DNP (PP (P 在)
+							   (LCP (NP (NP-PN (NR 俄罗斯)
+									   (CC 和)
+									   (NR 北约))
+								    (NP (NN 合作)
+									(NN 范围)))
+								(LC 内)))
+						       (DEG 的))
+						  (ADJP (JJ 联合))
+						  (NP (NN 军事)
+						      (NN 演习)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 进一步 加强 两 国 在 外交 和 安全 政策 方面 的 合作 ， 加强 两 国 在 俄罗斯 和 北约 合作 范围 内 的 联合 军事 演习 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

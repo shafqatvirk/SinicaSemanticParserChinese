@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 下陷 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing that caves in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 超))
+			(VP (VV 抽)
+			    (NP-OBJ (LCP (NP (NN 地))
+					 (LC 下))
+				    (NP (NN 水))))))
+	    (VP (VV 导致)
+		(IP-OBJ (NP-SBJ (NN 地层))
+			(VP (VV 下陷))))) 
+	</parse>
+	<arg n="0">
+	地层 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

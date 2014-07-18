@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 领取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 obtains"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 所有))
+		      (NP (NN 法官)))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 不))
+		  (VP (VV 领取)
+		      (NP-OBJ (NN 报酬))))) 
+	  </parse>
+	  <arg n="0">
+	  所有 法官 
+	  </arg>
+	  <arg n="1">
+	  报酬 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

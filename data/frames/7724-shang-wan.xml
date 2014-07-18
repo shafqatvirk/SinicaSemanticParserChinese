@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (class) arg0 finishes taking"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 和)
+		    (NP (NP-APP (NT 现在))
+			(IP-APP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 上完)
+				    (NP-OBJ (NN 课))))
+			(NP (NT 九点多))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (QP (CD 一))
+			     (NP (NN 小时)))
+			 (DEG 的))
+		    (NP (NN 差距)))
+	    (VP (PP-DIR (P 对)
+			(NP (DNP (NP (PN 她))
+				 (DEG 的))
+			    (NP (NN 家庭)
+				(NN 生活))))
+		(VP (VE 没有)
+		    (NP-OBJ (DP (DT 任何))
+			    (NP (NN 不同)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	课 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

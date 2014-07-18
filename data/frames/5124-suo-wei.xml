@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 所谓 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 talks about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 所谓)
+				(NP-OBJ (-NONE- *T*-3)))))
+		    (NP (NN 专家)))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(ADVP (AD 只))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (PP-DIR (P 对)
+						    (NP (NP (DP (DT 某))
+							    (NP (NN 时)))
+							(PU 、)
+							(NP (DP (DT 某))
+							    (NP (NN 地)))
+							(PU 、)
+							(NP (DP (DT 某)
+								(QP (CD 一)))
+							    (NP (NN 领域)))))
+					    (VP (VE 有)
+						(NP-OBJ (NN 钻研)))))
+				    (DEC 的)))
+			    (NP (NN 人)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 所谓)
+		(IP-OBJ (PU 「)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VP (VV 盛)
+				    (PP-MNR (P 以)
+					    (NP (NN 锦囊))))
+				(PU ，)
+				(VP (VV 击)
+				    (PP-MNR (P 以)
+					    (NP (NN 彩棒))))))
+			(PU ，)
+			(IP (NP-SBJ (NN 碾玉))
+			    (VP (VV 缀)
+				(NP-OBJ (NN 顶))))
+			(PU ，)
+			(IP (NP-SBJ (NN 饰金))
+			    (VP (VV 缘)
+				(NP-OBJ (NN 边))))
+			(PU 」)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	「 *pro* 盛 以 锦囊 ， 击 以 彩棒 ， 碾玉 缀 顶 ， 饰金 缘 边 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

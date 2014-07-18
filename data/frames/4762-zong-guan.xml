@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 纵贯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place arg0 runs through from north to south"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 纵贯)
+				      (NP-OBJ (NN 南北))))
+			      (DEC 的)))
+		      (QP (CD 一))
+		      (ADJP (JJ 大))
+		      (NP (NN 铁路)
+			  (NN 干线))
+		      (PRN (PU ——)
+			   (NP-PN (NR 京九)
+				  (NN 铁路))))
+	      (PU ，)
+	      (VP (NP-TMP (NT 今天))
+		  (ADVP (AD 正式))
+		  (VP (VV 通过)
+		      (NP-OBJ (NN 国家)
+			      (NN 验收))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  南北 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分流 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 兼并)
+		      (NN 破产)
+		      (CC 和)
+		      (NN 减员增效) )
+	      (VP (ADVP (AD 共))
+		  (VP (VV 分流)
+		      (NP-OBJ (NN 人员))
+		      (NP-EXT (QP (CD 一百一十三万))
+			      (NP (NN 人)))))) 
+	  </parse>
+	  <arg n="0">
+	  兼并 破产 和 减员增效 
+	  </arg>
+	  <arg n="1">
+	  人员 
+	  </arg>
+	  <arg n="1" f="qty">
+	  一百一十三万 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 大量))
+			  (ADJP (JJ 富余))
+			  (NP (NN 人员)))
+		  (VP (VP (VCD (VV 下岗)
+			       (VV 分流)))
+		      (CC 和)
+		      (VP (ADVP (AD 再))
+			  (VP (VV 就业)))))
+	  </parse>
+	  <arg n="1">
+	  大量 富余 人员 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

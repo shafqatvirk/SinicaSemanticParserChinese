@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 期望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="hope cherisher"/>
+      <role argnum="1" argrole="thing hoped for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 鉴於)
+		  (IP (NP-SBJ (NN 事情))
+		      (VP (VA 重要)
+			  (CC 及)
+			  (VA 紧迫))))
+	      (PU ，)
+	      (NP-SBJ (NN 政府))
+	      (VP (VV 期望)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NN 条例)
+					      (NN 草案))
+				      (VP (PP-TMP (P 於)
+						  (LCP (QP (CD 一)
+							   (CLP (M 日)))
+						       (LC 内)))
+					  (NP-ADV (QP (CD 三))
+						  (NP (NN 读)))
+					  (VP (VV 通过)))))))) 
+	  </parse>
+	  <arg n="0">
+	  政府 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 把 条例 草案 於 一 日 内 三 读 通过 	  
+	  </arg>
+	  <arg n="m" f="prp">
+	  鉴於 事情 重要 及 紧迫 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

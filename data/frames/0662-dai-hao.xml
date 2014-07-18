@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="leader, raiser"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VE 有)
+			  (AS 了)
+			  (NP-OBJ (DP (DT 这)
+				      (CLP (M 种)))
+				  (NP (NN 精神)))))
+	      (PU ，)
+	      (NP-SBJ (NN 党)
+		      (NN 组织))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 能)
+		      (VP (VP (VV 带好)
+			      (NP-OBJ (NN 兵)))
+			  (PU ，)
+			  (VP (VV 当好)
+			      (NP-OBJ (NN 干部)))
+			  (PU ，)
+			  (VP (PP-BNF (P 为)
+				      (NP (NN 社会主义)
+					  (NN 现代化)
+					  (NN 事业)))
+			      (VP (VV 做出)
+				  (NP-OBJ (NN 贡献)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  党 组织 	  
+	  </arg>
+	  <arg n="1">
+	  兵 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 有 了 这 种 精神 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

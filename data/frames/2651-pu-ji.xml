@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 普及 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 普及)
+				      (NP-OBJ (ADJP (JJ 初等))
+					      (NP (NN 义务)
+						  (NN 教育)))))
+			      (DEC 的)))
+		      (NP (NN 地区)))
+	      (VP (VV 达到)
+		  (QP-OBJ (CD 百分之九十一)))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(地区) 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  初等 义务 教育 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使)
+		  (NP-OBJ (NP-PN (NR 夏利))
+			  (NP (NN 轿车)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 成为)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (NP-PN-LOC (NR 中国))
+						  (ADVP (AD 最))
+						  (VP (VA 普及))))
+					  (DEC 的)))
+				  (NP (NN 出租车)
+				      (NN 用车))))))) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(出租车用车) 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  中国 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  最 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

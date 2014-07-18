@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上架 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 puts on shelves"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (VRD (VV 制作)
+							       (VV 完成))
+							  (NP-OBJ (-NONE- *T*-2))))
+						  (DEC 的)))
+					  (NP (NN 史前陶)
+					      (NN 仿制品)))
+				  (VP (VV 上架))))
+		      (PU ，)
+		      (VP (ADVP (AD 同时))
+			  (VP (VV 拍摄)
+			      (NP-OBJ (NN 记录)
+				      (NN 影片)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 制作 完成 *T*-2 的 史前陶 仿制品 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

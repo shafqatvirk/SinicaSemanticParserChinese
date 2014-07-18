@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 燃起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 kindles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 感谢)
+		    (NP-PN-OBJ (NR 高行健))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 重新))
+			    (VP (VV 燃起)
+				(NP-OBJ (NP (NN 台湾人))
+					(DNP (PP (P 对)
+						 (NP (NN 文学)))
+					     (DEG 的))
+					(NP (NN 热情)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台湾人 对 文学 的 热情 
+	</arg>
+	<arg n="m" f="adv">
+	重新 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

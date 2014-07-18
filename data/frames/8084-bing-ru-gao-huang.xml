@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 病入膏肓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is seriously sick with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 台北市))
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 问题)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 病入膏肓)))) 
+	  </parse>
+	  <arg n="0">
+	  台北市 
+	  </arg>
+	  <arg n="1">
+	  许多 问题 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 产销 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="producer, seller"/>
+      <role argnum="1" argrole="product, commodity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 产销)
+		    (NP-OBJ (NN 柴油机))
+		    (QP-EXT (CD 三十万)
+			    (CLP (M 台)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  柴油机 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三十万 台 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

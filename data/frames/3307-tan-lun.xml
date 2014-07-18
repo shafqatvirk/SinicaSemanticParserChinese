@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谈论 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (QP-TMP (ADVP (AD 近))
+					  (QP (CD 几)
+					      (CLP (M 天))))
+				  (NP-SBJ (NN 年轻人))
+				  (VP (VP-FOC (VV 谈论)
+					      (NP-OBJ (-NONE- *T*-1)))
+				      (VP (ADVP (AD 最))
+					  (VP (VA 多)))))
+			      (DEC 的))))
+	      (VP (ADVP (AD 却))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NP-APP (NN 世界)
+							  (NN 流行乐)
+							  (NN 巨星))
+						  (NP-PN (NR 理查德·马克斯)))
+					  (VP (ADVP (AD 将))
+					      (PP-TMP (P 于)
+						      (NP (NP (NT 元月))
+							  (NP (NT 十五日)
+							      (CC 和)
+							      (NT 十六日))))
+					      (QP-ADV (OD 首)
+						      (CLP (M 次)))
+					      (PP-LOC (P 在)
+						      (NP-PN (NR 北京)))
+					      (VP (VV 举行)
+						  (NP-OBJ (-NONE- *T*-2)))))
+				      (DEC 的)))
+			      (QP (CD 两)
+				  (CLP (M 场)))
+			      (NP (NN 个人)
+				  (NN 演唱会)))))) 
+	  </parse>
+	  <arg n="0">
+	  年轻人 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近 几 天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

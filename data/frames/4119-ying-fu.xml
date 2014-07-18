@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 应付 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity dealt with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 我们))
+		  (VP (ADVP (AD 已))
+		      (VP (VP (VV 作好)
+			      (NP-OBJ (NN 准备)))
+			  (PU ，)
+			  (VP (VP (VV 推出)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 系列)))
+					  (NP (NN 措施))))
+			      (VP (MSP 来)
+				  (VP (VV 应付)
+				      (NP-OBJ (DP (DT 这些))
+					      (ADJP (JJ 额外))
+					      (NP (NN 需求))))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  这些 额外 需求 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

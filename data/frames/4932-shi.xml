@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 食 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 eats"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-APP (NP-SBJ (NN 虎))
+		(VP (VV 食)
+		    (NP-OBJ (NN 人)))) 
+	</parse>
+	<arg n="0">
+	虎 
+	</arg>
+	<arg n="1">
+	人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (NN 君子))
+		(VP (VV 有所)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不))
+				(VP (VV 食)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP(IP-CND (NP-SBJ (NN 水库))
+			   (VP (ADVP (CS 系))
+			       (VP (VRD (VV 筑)
+					(VV 得)))))
+		   (PU ，)
+		   (NP-SBJ (NN 屎))
+		   (VP (ADVP (AD 嘛))
+		       (VP (VRD (VV 食)
+				(VV 得))))) 
+	</parse>
+	<arg n="1">
+	屎 
+	</arg>
+	<arg n="m" f="adv">
+	嘛 
+	</arg>
+	<arg n="m" f="cnd">
+	水库 系 筑 得 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

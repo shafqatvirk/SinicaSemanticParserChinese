@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 带大 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 brings up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ-1 (PN 自己))
+	    (VP (VP (PP-LGS (P 由)
+			    (NP (NN 祖父母)))
+		    (VP (VV 带大)
+			(NP-OBJ (-NONE- *-1))))
+		(PU 、)
+		(VP (PP (P 与)
+			(NP (NN 祖父母)))
+		    (ADVP (AD 格外))
+		    (VP (VV 亲近))))) 
+	</parse>
+	<arg n="0">
+	由 祖父母 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 体谅 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity sympathetic with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 海基会))
+	      (VP (VP (VV 愿意)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 了解)
+				  (NP-OBJ (NP (DP (DT 此))
+					      (NP (NN 案)))
+					  (NP (NN 详情))))))
+		  (PU ，)
+		  (VP (ADVP (AD 又))
+		      (ADVP (AD 真正))
+		      (VP (VV 体谅)
+			  (NP-OBJ (DNP (NP (NN 罹难者)
+					   (NN 家属))
+				       (DEG 之))
+				  (NP (NN 心情))))))) 
+	  </parse>
+	  <arg n="0">
+	  海基会 
+	  </arg>
+	  <arg n="1">
+	  罹难者 家属 之 心情 
+	  </arg>
+	  <arg n="m" f="adv">
+	  真正 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

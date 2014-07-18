@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 帮衬 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="helper"/>
+    <role argnum="1" argrole="entity arg0 helps"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 看)
+			(PP (P 在)
+			    (LCP (NP (NN 中国人)
+				     (NN 份))
+				 (LC 上)))))
+	    (PU ，)
+	    (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 特))
+		(VP (VV 来)
+		    (VP (VV 帮衬)
+			(NP-OBJ (PN 你)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	你 
+	</arg>
+	<arg n="m" f="adv">
+	特 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 看 在 中国人 份 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 就))
+			(VP (VV 这样))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 三))
+		    (NP (NN 兄弟)))
+	    (VP (VP (ADVP (AD 互相))
+		    (VP (VV 帮衬)))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (NP (NP-PN (NR 云林))
+				(NP (NN 海口)
+				    (NN 一带))))
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (NN 事业))
+				(VP (VRD (VV 作)
+					 (VV 起来))
+				    (AS 了))))))) 
+	</parse>
+	<arg n="0">
+	三 兄弟 
+	</arg>
+	<arg n="m" f="adv">
+	互相 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 就 这样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

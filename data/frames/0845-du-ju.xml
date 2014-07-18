@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 独具 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="attribute, property"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TPC (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (VV 独具)
+				  (NP-OBJ (NN 特色))))
+			  (DEC 的)))
+		  (NP (NN 海岛)
+		      (NN 旅游业))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  特色 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

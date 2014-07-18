@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 消除 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing removed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 这样))
+		  (ADVP (AD 才))
+		  (VP (VV 有助于)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 消除)
+				  (NP-OBJ (NN 误解)))
+			      (PU ，)
+			      (VP (ADVP (AD 妥善))
+				  (VP (VV 解决)
+				      (NP-OBJ (DNP (LCP (NP (NN 国)
+							    (CC 与)
+							    (NN 国))
+							(LC 之间))
+						   (DEG 的))
+					      (NP (NN 贸易)
+						  (NN 争端)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  误解 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 随着)
+		  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 越来越))
+					      (VP (VA 多))))))
+			      (DNP (NP (NP-PN (NR 亚太))
+				       (NP (NN 国家)
+					   (CC 和)
+					   (NN 地区)))
+				   (DEG 的))
+			      (NP (NN 政府)))
+		      (VP (VV 开始)
+			  (VP (VV 实行)
+			      (NP-OBJ (NN 市场)
+				      (NN 原则))))))
+	      (PU ，)
+	      (NP-SBJ (NN 贸易)
+		      (NN 壁垒))
+	      (VP (SB 被)
+		  (VP (VV 消除)))) 
+	  </parse>
+	  <arg n="1">
+	  贸易 壁垒 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随着 *OP* *T*-1 越来越 多 亚太 国家 和 地区 的 政府 开始 实行 市场 原则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

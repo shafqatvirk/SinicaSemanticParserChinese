@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 围 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity surrounded"/>
+      <role argnum="2" argrole="entity arg1 is surrounded with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (NP-TMP (NT 过去))
+		      (NP-ADV (NN 长期))
+		      (VP (VP (VV 围)
+			      (NP-OBJ (NN 湖)))
+			  (VP (VV 造)
+			      (NP-OBJ (NN 田)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  湖 
+	  </arg>
+	  <arg n="m" f="adv">
+	  长期 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  过去 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (PN 我))
+		  (VP (VA 高兴)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (PN 他))
+					  (VP (VP (VV 拉成)
+						  (NP-OBJ (NN 条)))
+					      (PU ，)
+					      (VP (VV 围)
+						  (PP-LOC (P 在)
+							  (LCP (NP (NN 腰))
+							       (LC 上)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  在 腰 上 
+	  </arg>
+	  <arg n="2">
+	  他 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 中午)
+		      (NN 闭市)
+		      (NN 时间))
+	      (PU ，)
+	      (LCP-LOC (NP (NN 证券)
+			   (NN 营业部))
+		       (LC 里))
+	      (NP-SBJ (QP (CD 不少))
+		      (NP (NN 股民)))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 围)
+		      (ADVP (AD 在一起))))) 
+	  </parse>
+	  <arg n="2">
+	  不少 股民 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在一起 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="loc">
+	  证券 营业部 里 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  中午 闭市 时间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

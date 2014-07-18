@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 婉谢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 turns down courteously"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NN 老婆))
+		  (VP (ADVP (AD 当然))
+		      (VP (VV 婉谢)
+			  (AS 了))))
+	      (PU ，)
+	      (PP (P 因为)
+		  (IP (NP-SBJ (NN 老婆))
+		      (VP (ADVP (AD 更))
+			  (VP (VV 希望)
+			      (IP-OBJ (NP-SBJ (PN 自己))
+				      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						       (VP (VV 下班)))
+						   (LC 後))
+					  (VP (VV 照顾)
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (VV 生病)))
+							      (DEC 的)))
+						      (NP-PN (NR 千千))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  老婆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  当然 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 老婆 更 希望 自己 *PRO* 下班 後 照顾 *OP* *T*-1 生病 的 千千 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

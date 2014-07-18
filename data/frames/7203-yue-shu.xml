@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 约束 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 places restrictions on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 政府))
+	    (VP (VP (PP-DIR (P 对)
+			    (NP (NN 国片)))
+		    (VP (VP-FOC (VV 约束))
+			(VP (ADVP (AD 太))
+			    (VP (VA 紧)))))
+		(PU ，)
+		(VP (PP-DIR (P 对)
+			    (NP (NN 西片)
+				(PU 、)
+				(NN 港片)))
+		    (VP (ADVP (AD 太))
+			(VP (VA 松)))))
+	    (PU ，)
+	    (VP (VV 让)
+		(NP-OBJ (NN 港片))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VE 有)
+			    (NP-OBJ (NN 机会)))
+			(VP (VV 入侵)))))) 
+	</parse>
+	<arg n="0">
+	政府 
+	</arg>
+	<arg n="1">
+	对 国片 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 活跃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 活跃)
+			  (NP-OBJ (NP (NN 消费)
+				      (NN 市场))
+				  (NP (ADVP (AD 特别是))
+				      (NP (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (VA 广阔)))
+						  (DEC 的)))
+					  (NP (NN 农村)
+					      (NN 市场))))))
+		      (PU 、)
+		      (VP (VV 培育)
+			  (NP-OBJ (NP (NN 消费)
+				      (NN 热点))
+				  (CC 和)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VA 新)))
+					      (DEC 的)))
+				      (NP (NN 经济)
+					  (NN 增长点))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  消费 市场 特别是 *OP* *T*-2 广阔 的 农村 市场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 外商))
+		      (VP (VV 投资)
+			  (NP-PN-OBJ (NR 广西))))
+	      (VP (ADVP (AD 相当))
+		  (VP (VA 活跃))))
+	  </parse>
+	  <arg n="1">
+	  外商 投资 广西 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相当 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

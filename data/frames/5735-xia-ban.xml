@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 下班 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (NP-TMP (NT 早上)
+			(NT 三点))
+		(ADVP (AD 就))
+		(VP (VV 下班)))
+	    (SP 了)) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	早上 三点 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

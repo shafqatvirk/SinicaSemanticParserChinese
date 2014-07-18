@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 擦擦 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 wipes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NN 孩子) )
+			 (VP (VV 惊吓)))
+		     (LC 之馀))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 却))
+		(VP (VP (VV 擦擦)
+			(NP-OBJ (NN 眼泪) ))
+		    (PU ，)
+		    (VP (DVP (VP (VA 畅快))
+			     (DEV 地))
+			(VP (VV 说)
+			    (PU ：)
+			    (NP-OBJ (NP (ADJP (JJ 好))
+					(NP (NN 诗) ))
+				    (PU ，)
+				    (NP (ADJP (JJ 好))
+					(NP (NN 诗) )))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	眼泪 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="tmp">
+	孩子 惊吓 之馀 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

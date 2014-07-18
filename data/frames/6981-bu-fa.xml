@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不乏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is not short of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 其中))
+	    (VP (ADVP (AD 更))
+		(VP (VV 不乏)
+		    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *T*-3))
+				    (VP (VE 有)
+					(NP-OBJ (NN 博士)
+						(NN 资格)))))
+			    (NP (NN 者)))))) 
+	</parse>
+	<arg n="0">
+	其中 
+	</arg>
+	<arg n="1">
+	*OP* *T*-3 有 博士 资格 者 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

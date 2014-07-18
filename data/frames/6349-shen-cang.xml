@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 深藏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is hidden deeply"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			     (CP (IP (NP-SBJ (-NONE- *T*-1))
+				     (VP (VCD (VA 幽黯)
+					      (VA 潮湿))))
+				 (DEC 的)))
+			 (NP (NN 林地)))
+		     (LC 之下))
+	    (PU ，)
+	    (VP (VV 深藏)
+		(NP-OBJ (NP-PN (NR 台湾))
+			(DNP (QP (CD 三分之一))
+			     (DEG 的))
+			(NP (NN 蕨类))))) 
+	</parse>
+	<arg n="0">
+	台湾 三分之一 的 蕨类 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 幽黯 潮湿 的 林地 之下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

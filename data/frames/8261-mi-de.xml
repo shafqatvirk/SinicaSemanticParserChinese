@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 觅得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 finds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (IP-TMP (NP-SBJ (NN 年))
+				  (VP (VV 近)
+				      (QP-OBJ (CD 半百))))
+			  (ADVP (AD 终於))
+			  (VP (VV 觅得)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VV 有)
+						  (NP-OBJ (NN 缘)))))
+				      (NP (NN 人))))))
+	      (PU ，)
+	      (VP (VV 让)
+		  (NP-OBJ (DNP (NP (PN 他))
+			       (DEG 的))
+			  (NP (NN 哀乐)
+			      (NN 中年)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 多出)
+			  (NP-OBJ (QP (CD 许多))
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VA 甜蜜)))
+					  (DEC 的)))
+				  (NP (NN 负担))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 有 缘 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  终於 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  年 近 半百 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

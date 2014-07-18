@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跟进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="follower"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不过))
+	      (PU ，)
+	      (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 保持)
+			      (NP-OBJ (NN 市场)
+				      (NN 占有率)))))
+	      (PU ，)
+	      (NP-SBJ (NN 台商))
+	      (VP (ADVP (AD 只有))
+		  (VP (VSB (VV 咬牙)
+			   (VV 跟进))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  台商 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 *PRO* 保持 市场 占有率 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只有 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="follow up on">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing followed up on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-ADV (NN 其中))
+	      (QP-SBJ (ADVP (AD 只有))
+		      (QP (CD 一百四十八)
+			  (CLP (M 宗))))
+	      (VP (PP-MNR (P 经)
+			  (NP (NN 转介)))
+		  (VP (VV 予)
+		      (NP-PN-OBJ (NN 惩教署))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 跟进))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推广 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing popularized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 甘肃省))
+	      (VP (VP (ADVP (AD 积极))
+		      (VP (VV 实施)
+			  (NP-OBJ (IP-APP (NP-SBJ (NN 科技))
+					  (VP (VV 兴)
+					      (NP-OBJ (NN 农))))
+				  (NP (NN 战略)))))
+		  (PU ，)
+		  (VP (VV 推广)
+		      (NP-OBJ (NP-APP (NP (NN 地膜)
+					  (NN 覆盖))
+				      (PU 、)
+				      (NP (ADJP (JJ 节水))
+					  (NP (NN 灌溉)))
+				      (PU 、)
+				      (NP (ADJP (JJ 集雨))
+					  (NP (NN 节灌)))
+				      (ETC 等))
+			      (NP (NN 农业)
+				  (NN 适用)
+				  (NN 技术)
+				  (CC 和)
+				  (NN 增产)
+				  (NN 措施)))))) 
+	  </parse>
+	  <arg n="0">
+	  甘肃省 
+	  </arg>
+	  <arg n="1">
+	  地膜 覆盖 、 节水 灌溉 、 集雨 节灌 等 农业 适用 技术 和 增产 措施 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 广东))
+				      (VP (VV 引进)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP (NN 国外)
+			      (NN 动植物)
+			      (NN 良种)))
+		  (VP (ADVP (AD 就))
+		      (VP (VE 有)
+			  (NP-OBJ (QP (CD 一千一百多)
+				      (CLP (M 个)))
+				  (NP (NN 品系))))))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 其中))
+		  (VP (ADVP (AD 已))
+		      (VP (VV 推广)
+			  (QP-OBJ (CD 三百多)
+				  (CLP (M 个))))))) 
+	  </parse>
+	  <arg n="1">
+	  其中 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三百多 个 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

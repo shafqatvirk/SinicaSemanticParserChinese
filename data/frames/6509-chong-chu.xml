@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冲出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 breaks through and achieves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 去年))
+	    (NP-SBJ (QP (CD 部分))
+		    (NP (NN 领导)
+			(NN 品牌)))
+	    (VP (VV 冲出)
+		(NP-OBJ (DNP (QP (CD 百分之两百))
+			     (DEG 的))
+			(NP (NN 业绩))))) 
+	</parse>
+	<arg n="0">
+	部分 领导 品牌 
+	</arg>
+	<arg n="1">
+	百分之两百 的 业绩 
+	</arg>
+	<arg n="m" f="tmp">
+	去年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 plows through"/>
+    <role argnum="2" argrole="thing arg0 creates in arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (DNP (NP-PN (NR 台湾))
+				     (DEG 的))
+				(NP (NN 政党)
+				    (NN 政治)))
+			(VP (VV 冲出)
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 道)))
+				    (NP (NN 裂隙))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	台湾 的 政党 政治 
+	</arg>
+	<arg n="2">
+	一 道 裂隙 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

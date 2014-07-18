@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合并 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 韩国)
+			     (NN 政府)))
+	      (VP (VV 合并)
+		  (NP-PN-OBJ (NR 现代)
+			     (NN 电子)
+			     (CC 和)
+			     (NR ＬＧ)
+			     (NN 半导体)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  韩国 政府 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  现代 电子 和 ＬＧ 半导体 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 现代)
+			 (NN 电子)
+			 (CC 和)
+			 (NR ＬＧ)
+			 (NN 半导体))
+	      (VP (VV 合并))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  现代 电子 和 ＬＧ 半导体 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

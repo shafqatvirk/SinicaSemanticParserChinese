@@ -1,0 +1,192 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 执行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 过往))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP-PN (NR 联合国)))
+				      (VP (VV 实施)
+					  (NP-OBJ (-NONE- *-2)))))
+			      (DEC 的)))
+		      (NP (NN 经济)
+			  (NN 制裁)))
+	      (VP (VC 是)
+		  (VP (PP-MNR (P 依靠)
+			      (NP (NP (DNP (NP-PN (NR 英国))
+					   (DEG 的))
+				      (NP-PN (NN 枢密院)))
+				  (NN 颁令)))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 香港)))
+		      (VP (VV 执行))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 由 联合国 实施 *-2 的 经济 制裁 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 香港 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依靠 英国 的 枢密院 颁令 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  过往 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 中外))
+				      (VP (VSB (VV 合作)
+					       (VV 经营))
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (NP (NN 企业)))
+			  (CC 和)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 外商))
+				      (VP (ADVP (AD 独资))
+					  (VP (VV 经营)
+					      (NP-OBJ (-NONE- *T*-2))))))
+			      (NP (NN 企业))))
+		  (VP (PP (P 比照)
+			  (NP (DP (DT 本))
+			      (NP (NN 规定))))
+		      (VP (VV 执行)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 中外 合作 经营 *T*-1 企业 和 *OP* 外商 独资 经营 *T*-2 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比照 本 规定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 工作)
+		      (NN 重点))
+	      (VP (VC 是)
+		  (VP (ADVP (AD 坚决))
+		      (VP (VSB (VV 贯彻)
+			       (VV 执行))
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-MNR (P 按)
+					      (NP (NN 保护价)))
+				      (VP (VSB (VV 敞开)
+					       (VV 收购))
+					  (NP-OBJ (NN 余粮))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 按 保护价 敞开 收购 余粮 
+	  </arg>
+	  <arg n="m" f="adv">
+	  坚决 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (-NONE- *pro*))
+		  (VP (DVP (VP (VA 坚定不移))
+			   (DEV 地))
+		      (VP (VV 执行)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 自力更生))
+						  (PU 、)
+						  (VP (ADVP (AD 艰苦))
+						      (VP (VV 奋斗)))
+						  (PU 、)
+						  (VP (ADVP (AD 勤俭))
+						      (VP (VV 建)
+							  (NP-OBJ (NN 国))))))
+					  (DEC 的))
+				  (NP (NN 方针)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 自力更生 、 艰苦 奋斗 、 勤俭 建 国 的 方针 
+	  </arg>
+	  <arg n="m" f="adv">
+	  坚定不移 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+			      (VP (PP-LGS (P 由)
+					  (NP (NP-PN-APP (NR 美)
+							 (PU 、)
+							 (NR 英)
+							 (PU 、)
+							 (NR 法))
+					      (QP (CD 三))
+					      (NP (NN 国))))
+				  (ADVP (AD 共同))
+				  (VP (VV 执行)
+				      (NP-OBJ (-NONE- *-2)))))
+			  (DEC 的)))
+		  (DNP (PP (P 对)
+			   (NP (NP-PN (NR 伊))
+			       (NP (NN 南部))))
+		       (DEG 的))
+		  (NP (NN 空中)
+		      (NN 监视))
+		  (NP (NN 行动))) 
+	  </parse>
+	  <arg n="0">
+	  由 美 、 英 、 法 三 国 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共同 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

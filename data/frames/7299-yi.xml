@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC (NP-SBJ (-NONE- *pro*))
+		    (VP (VE 有)
+			(NP-OBJ (DNP (DP (PN 此))
+				     (DEG 之))
+				(NP (NN 名)))))
+	    (NP-SBJ (NN 典故))
+	    (VP (ADVP (AD 不))
+		(VP (VA 一)))) 
+	</parse>
+	<arg n="0" f="psr">
+	*pro* 有 此 之 名 
+	</arg>
+	<arg n="0" f="pse">
+	典故 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

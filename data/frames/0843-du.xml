@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 毒 </id>
+    <frameset id="f1" edef="poison">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 次)))
+		      (IP-APP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 毒)
+				  (NP-OBJ (NN 鹤))))
+		      (NP (NN 事件)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (LCP-TMP (NP (NT 近年))
+						   (LC 来))
+					  (VP (VA 罕见))))
+				  (DEC 的)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  鹤 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="poisonous">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 特别))
+	      (PP-LOC (P 在)
+		      (LCP (NP (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 以毒攻毒)))
+				       (PU 、)
+				       (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VP (ADVP (AD 越))
+						   (VP (VA 毒)))
+					       (VP (ADVP (AD 越))
+						   (VP (VA 补))))))
+			       (NP (NN 观念) ))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 毒))
+		      (NP (NN 蛇) ))
+	      (VP (ADVP (AD 一直))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 珍贵)))
+				      (DEC 的)))
+			      (NP (NN 山产) ))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  越 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

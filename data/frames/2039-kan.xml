@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing published"/>
+      <role argnum="1" argrole="place published in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 特区)
+			  (NN 护照)
+			  (NN 条例)
+			  (NN 草案))
+		  (VP (NP-TMP (NT 今日))
+		      (VP (VV 刊)
+			  (NP-OBJ (NN 宪))))) 
+	  </parse>
+	  <arg n="0">
+	  特区 护照 条例 草案 
+	  </arg>
+	  <arg n="1">
+	  宪 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

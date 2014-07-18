@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采集 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="collector"/>
+    <role argnum="1" argrole="thing arg0 collects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP-PN (NR 甲午战))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (NN 日本人))
+	    (VP (VP (ADVP (AD 一边))
+		    (PP (P 与)
+			(NP (NP-PN (NR 台湾))
+			    (ADJP (JJ 反抗))
+			    (NP (NN 势力))))
+		    (VP (VV 战斗)))
+		(PU ，)
+		(VP (ADVP (AD 一边))
+		    (VP (VP (VV 登)
+			    (NP-OBJ (NN 山)))
+			(VP (VV 采集)
+			    (NP-OBJ (NN 标本))))))) 
+	</parse>
+	<arg n="0">
+	日本人 
+	</arg>
+	<arg n="1">
+	标本 
+	</arg>
+	<arg n="m" f="adv">
+	一边 
+	</arg>
+	<arg n="m" f="tmp">
+	甲午战 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 一八九六年))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 日本))
+		    (NP (NN 学者)))
+	    (VP (PP-LOC (P 在)
+			(NP-PN (NR 玉山)))
+		(VP (VRD (VV 采集)
+			 (VV 到))
+		    (NP-OBJ (QP (OD 第一)
+				(CLP (M 份)))
+			    (NP (NN 红桧)
+				(NN 标本)))))) 
+	</parse>
+	<arg n="0">
+	日本 学者 
+	</arg>
+	<arg n="1">
+	第一 份 红桧 标本 
+	</arg>
+	<arg n="m" f="loc">
+	在 玉山 
+	</arg>
+	<arg n="m" f="tmp">
+	一八九六年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

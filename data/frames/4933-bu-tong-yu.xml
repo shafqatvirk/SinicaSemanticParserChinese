@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不同於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is different from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (NN 治国))
+		(VP (VV 不同於)
+		    (NP-OBJ (NN 竞选)))) 
+	</parse>
+	<arg n="0">
+	治国 
+	</arg>
+	<arg n="1">
+	竞选 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 不同於)
+		    (IP-OBJ (NP-SBJ (NP-PN (NR 美国))
+				    (NP (NN 消费者)))
+			    (VP (ADVP (AD 事先))
+				(VP (VP (VV 剪下)
+					(NP-OBJ (NN 折扣券)))
+				    (CC 并)
+				    (VP (VV 做好)
+					(NP-OBJ (NN 分类)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	美国 消费者 事先 剪下 折扣券 并 做好 分类 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

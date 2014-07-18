@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遇见 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 runs into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TTL (PU 《)
+		(NP-SBJ (-NONE- *PRO*))
+		(VP (VV 遇见)
+		    (NP-OBJ (DNP (QP (CD 百分之百))
+				 (DEG 的))
+			    (NP-PN (NR 连战))))
+		(PU 》)) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	百分之百 的 连战 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 遇见)
+		    (IP-OBJ (LCP-SBJ (NP (QP (CD 一)
+					     (CLP (M 只)))
+					 (NP (NN 木头)
+					     (NN 方盒子) ))
+				     (LC 里))
+			    (PU ，)
+			    (VP (ADVP (AD 竟))
+				(VP (VE 有)
+				    (IP-OBJ (NP-SBJ (NN 人) )
+					    (VP (VV 唱)
+						(AS 著)
+						(NP-OBJ (NN 京戏) )))))))) 
+	    </parse>
+	    <arg n="0">
+	    *pro* 
+	    </arg>
+	    <arg n="1">
+	    一 只 木头 方盒子 里 ， 竟 有 人 唱 著 京戏 
+	    </arg>
+	    <V/>
+	  </example>
+	</frame>
+      </frameset>
+    </verb>

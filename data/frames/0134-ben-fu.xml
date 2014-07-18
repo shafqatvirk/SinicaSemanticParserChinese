@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 奔赴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="goal"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-PN (NN 国家)
+                     (NN 环境)
+                     (NN 保护)
+                     (NN 总局))
+              (ADJP (JJ 主要))
+              (NP (NN 负责)
+                  (NN 官员)))
+      (VP (NP-TMP (NT 目前))
+          (ADVP (AD 已))
+          (VP (VV 奔赴)
+              (NP-OBJ (NP-PN (NR 太湖))
+                      (NP (NN 流域)))))))
+	</parse>
+	<arg n="0"> 国家 环境 保护 总局 主要 负责 官员 </arg>
+	<arg n="M" f="TMP"> 目前 </arg>
+	<arg n="M" f="ADV"> 已 </arg>
+	<V/>
+	<arg n="1"> 太湖 流域 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

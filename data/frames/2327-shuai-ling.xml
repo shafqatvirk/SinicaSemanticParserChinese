@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 率领 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="leader"/>
+      <role argnum="1" argrole="follower"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 卢森博格))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 上任)))
+			   (LC 之初))
+		  (ADVP (AD 便))
+		  (VP (VV 发誓)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (PN 他))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 率领)
+				      (NP-PN-OBJ (NR 巴西队))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 出现)
+					      (PP (P 在)
+						  (LCP (NP (NP (NT ２００２年))
+							   (NP-PN (NR 世界杯))
+							   (NP (NN 赛场)))
+						       (LC 上))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  巴西队 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 出现 在 ２００２年 世界杯 赛场 上 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP-PN (NR 田纪云)
+						     (NN 副委员长)))
+				      (VP (VV 率领))))
+			      (DEC 的)))
+		      (NP-PN (NR 中国))
+		      (NP-PN (NP (DP (DT 全))
+				 (NP (NN 国)))
+			     (NP (NN 人大)))
+		      (NP (NN 代表团)))
+	      (VP (VP (VV 结束)
+		      (AS 了)
+		      (NP-OBJ (PP (P 对)
+				  (NP-PN (NR 新西兰)))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 为期)
+					      (QP-OBJ (CD ６)
+						      (CLP (M 天)))))
+				      (DEC 的)))
+			      (NP (NN 访问))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 今晚))
+		      (VP (VP (VV 离开)
+			      (NP-OBJ (PN 这里)))
+			  (VP (VV 前往)
+			      (NP-OBJ (NP-APP (NP-PN (NR 西萨摩亚))
+					      (NP (NN 首都)))
+				      (NP-PN (NR 阿皮亚)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  由 田纪云 副委员长 
+	  </arg>
+	  <arg n="1">
+	  (*T*-1)->(中国全国人大代表团) 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

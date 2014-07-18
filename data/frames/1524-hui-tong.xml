@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 会同 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="collaborators"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (NP (DP (DT 这些))
+			    (ADJP (JJ 珍贵))
+			    (NP (NN 木材)))
+			(NP (NP (NN 名录))
+			    (CC 及)
+			    (NP (NP (NN 年度))
+				(NP (NN 限制)
+				    (NN 出口))
+				(NP (NN 总量)))))
+	      (PU ，)
+	      (VP (VP (PP-LGS (P 由)
+			      (NP-PN (NN 林业部)))
+		      (VP (VP (VV 会同)
+			      (NP-OBJ (ADJP (JJ 有关))
+				      (NP (NN 部门))))
+			  (VP (VV 制定)
+			      (NP-OBJ (-NONE- *-1)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 报)
+		      (NP-PN-OBJ (NN 国务院))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 批准)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  由 林业部 	  
+	  </arg>
+	  <arg n="0" f="CRD">
+	  有关 部门 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,122 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 废弃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 discards/abandons"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (VP (PP-DIR (P 向)
+			    (NP-PN (NN 市)
+				   (NN 政府)))
+		    (VP (VV 购买)
+			(AS 了)
+			(NP-OBJ (QP (CD 二)
+				    (CLP (M 个)))
+				(NP (NN 垃圾)
+				    (NN 回收箱)))))
+		(PU ，)
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (DP-ADV (DT 每)
+							    (CLP (M 天)))
+						    (VP (VV 废弃)
+							(NP-OBJ (-NONE- *T*-1)))))
+					    (DEC 的)))
+				    (NP (NN 果菜)
+					(NN 食物))
+				    (NP (NN 残渣)))
+			    (VP (VP (VV 丢到)
+				    (NP-OBJ (NN 里面)))
+				(VP (VV 去)))))
+		(PU ，)
+		(VP (ADVP (AD 再))
+		    (DVP (QP (QP (CD 一)
+				 (CLP (M 层)))
+			     (QP (CD 一)
+				 (CLP (M 层))))
+			 (DEV 的))
+		    (VP (VRD (VV 覆盖)
+			     (VV 上))
+			(NP-OBJ (NN 泥土)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	每 天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-ADV (P 除了)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (BA 将)
+				(IP-OBJ (NP-SBJ (NN 菸楼))
+					(VP (VV 改成)
+					    (NP-OBJ (NN 录音室)))))))
+		(PU ，)
+		(ADVP (AD 也))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (BA 把)
+				(IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (VV 废弃)))
+							(DEC 的)))
+						(NP (NN 菸楼)))
+					(VP (VV 改成)
+					    (NP-OBJ (NN 陶艺)
+						    (NN 教室))))))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 菸楼))
+	    (VP (DVP (ADVP (AD 慢慢))
+		     (DEV 地))
+		(VP (SB 被)
+		    (VP (VP (VV 废弃))
+			(VP (ADVP (AD 不))
+			    (VP (VV 用))))))) 
+	</parse>
+	<arg n="1">
+	菸楼 
+	</arg>
+	<arg n="m" f="adv">
+	慢慢 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

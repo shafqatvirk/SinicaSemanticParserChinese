@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 造福 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 brings benefit to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (PP-TMP (P 从)
+			      (LCP (NP (NT 现在))
+				   (LC 起)))
+		      (PU ，)
+		      (VP (VV 要)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 用)
+				      (NP-OBJ (DNP (QP (QP (CD 三)
+							   (CLP (M 年)))
+						       (QP (CD 多)))
+						   (DEG 的))
+					      (NP (NN 时间))))
+				  (PU ，)
+				  (VP (VV 力争)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 使)
+						  (NP-OBJ (NR 淮河)
+							  (NN 水质))
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (ADVP (AD 初步))
+							  (VP (VRD (VV 变)
+								   (VA 清))))))))
+				  (PU ，)
+				  (VP (VV 造福)
+				      (NP-OBJ (NP (ADJP (JJ 当代))
+						  (NP (NN 人民)))
+					      (CC 和)
+					      (NP (NN 子孙)
+						  (NN 后代))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  当代 人民 和 子孙 后代 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

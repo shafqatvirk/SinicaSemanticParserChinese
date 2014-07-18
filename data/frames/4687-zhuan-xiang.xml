@@ -1,0 +1,231 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转向 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing whose direction is changed"/>
+      <role argnum="2" argrole="the changed direction"/>
+      <role argnum="3" argrole="the original direction"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 由)
+			  (NP (DNP (NP (NN 初期))
+				   (DEG 的))
+			      (IP (NP-SBJ (NP-APP (QP (OD 第三))
+						  (NP (NN 产业)))
+					  (PU ，)
+					  (NP (ADVP (AD 如))
+					      (NP (NP (NN 房地产)
+						      (NN 开发))
+						  (CC 以及)
+						  (NP (NP (NN 商业)
+							  (CC 和)
+							  (NN 旅游)
+							  (NN 设施))
+						      (NP (NN 建设)))
+						  (ETC 等))))
+				  (VP (VV 为主)))))
+		  (PU ，)
+		  (VP (VV 转向)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-MNR (P 以)
+					  (NP (PP (P 对)
+						  (NP (NP (QP (OD 第二))
+							  (NP (NN 产业)))
+						      (NP (ADVP (AD 特别是))
+							  (NP (ADJP (JJ 国有))
+							      (ADJP (JJ 大中型))
+							      (NP (NN 企业))))))
+					      (NP (NN 投资))))
+				  (VP (VV 为主))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 以 对 第二 产业 特别是 国有 大中型 企业 投资 为主 
+	  </arg>
+	  <arg n="3">
+	  由 初期 的 第三 产业 ， 如 房地产 开发 以及 商业 和 旅游 设施 建设 等 为主 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (IP (NP-SBJ (NN 改革)
+				      (NN 措施))
+			      (VP (ADVP (AD 不))
+				  (VP (VA 得力))))
+			  (PU ，)
+			  (IP (NP-SBJ (NN 信心)
+				      (NN 危机))
+			      (VP (ADVP (AD 依然))
+				  (VP (VV 存在))))))
+	      (PU ，)
+	      (ADVP (AD 那么))
+	      (NP-SBJ (NN 投资者))
+	      (VP (ADVP (AD 就))
+		  (VP (VP (VE 有)
+			  (NP-OBJ (NN 可能)))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (NN 注意力))
+				  (VP (VV 转向)
+				      (NP-OBJ (DP (DT 其他))
+					      (ADJP (JJ 新兴))
+					      (NP (NN 市场))))))))) 
+	  </parse>
+	  <arg n="0">
+	  投资者 
+	  </arg>
+	  <arg n="1">
+	  注意力 
+	  </arg>
+	  <arg n="2">
+	  其他 新兴 市场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 商品)
+		      (NN 供求)
+		      (NN 关系))
+	      (VP (ADVP (AD 已))
+		  (PP-DIR (P 由)
+			  (NP (PU “)
+			      (NN 买方)
+			      (NN 市场)
+			      (PU ”)))
+		  (VP (VV 转向)
+		      (NP-OBJ (DNP (NP (NN 整体性))
+				   (DEG 的))
+			      (NP (PU “)
+				  (NN 卖方)
+				  (NN 市场)
+				  (PU ”)))))) 
+	  </parse>
+	  <arg n="1">
+	  商品 供求 关系 
+	  </arg>
+	  <arg n="2">
+	  整体性 的 “ 卖方 市场 ” 
+	  </arg>
+	  <arg n="3">
+	  由 “ 买方 市场 ” 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (PP-LOC (P 在)
+			(LCP (NP (CP-APP (IP (IP (NP-SBJ (NP (DP (DT 其他))
+							     (NP (NN 国家)))
+							 (NP (NN 贬值)
+							     (NN 幅度)))
+						 (VP (ADVP (AD 都))
+						     (VP (VV 超过)
+							 (NP-PN-OBJ (NR 台湾)))))
+					     (PU 、)
+					     (IP (NP-SBJ (NN 产品))
+						 (VP (PU 「)
+						     (VA 便宜)
+						     (CC 又)
+						     (VA 大碗)
+						     (PU 」))))
+					 (DEC 的))
+				 (NP (NN 诱惑)))
+			     (LC 下)))
+		(PU ，)
+		(NP-SBJ (NP-PN (NR 欧)
+			       (NR 美))
+			(NP (NN 订单)))
+		(VP (VNV (VV 会)
+			 (AD 不)
+			 (VV 会))
+		    (VP (VV 转向)))) 
+	  </parse>
+	  <arg n="1">
+	  欧 美 订单 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 其他 国家 贬值 幅度 都 超过 台湾 、 产品 「 便宜 又 大碗 」 的 诱惑 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NN 碰撞))
+		       (LC 后))
+	      (LCP-TMP (QP (CD 十五)
+			   (CLP (M 分钟)))
+		       (LC 内))
+	      (PU ，)
+	      (NP-SBJ (NN 碰撞)
+		      (NN 地区))
+	      (VP (VV 开始)
+		  (VP (VV 转向)
+		      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-4))
+				      (VP (VV 面对)
+					  (NP-OBJ (NN 地球)))))
+			      (QP (CD 一))
+			      (NP (NN 面)))))) 
+	  </parse>
+	  <arg n="1">
+	  碰撞 地区 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-4 面对 地球 一 面 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  十五 分钟 内 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  碰撞 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

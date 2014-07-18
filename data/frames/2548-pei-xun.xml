@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 培训 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people trained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (VV 培训)
+		      (NP-OBJ (NP (ADJP (JJ 跨国))
+				  (NP (NN 经营)))
+			      (NP (ADJP (JJ 高级))
+				  (NP (NN 管理)
+				      (NN 人才)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  跨国 经营 高级 管理 人才 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 接受)
+	      (NP-OBJ (QP (CD 二百二十多)
+			  (CLP (M 名)))
+		      (NP-PN (NR 台湾))
+		      (NP (NN 中医师)))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VCD (VV 进修)
+			   (VV 培训))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

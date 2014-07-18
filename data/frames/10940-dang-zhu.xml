@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挡住 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 blocks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-TMP (NT 近年))
+	    (PU ，)
+	    (LCP-ADV (ADVP (AD 突然))
+		     (LC 之间))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VV 会)
+		    (VP (VP (VV 冒出)
+			    (NP-OBJ (QP (CD 两)
+					(CLP (M 栋)))
+				    (NP (NN 大楼)
+					(PU 、)
+					(NN 公寓))))
+			(VP (VV 挡住)
+			    (NP-OBJ (NN 视线))))))) 
+	</parse>
+	<arg n="0">
+	两 栋 大楼 、 公寓 
+	</arg>
+	<arg n="1">
+	视线 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

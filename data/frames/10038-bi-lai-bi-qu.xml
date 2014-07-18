@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 比来比去 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entities arg0 compares again and again"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 喜欢)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 比来比去))))
+		(PU ，)
+		(VP (VP (VV 看到)
+			(NP-OBJ (NN 别人))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 买)
+				(NP-OBJ (PN 什麽)))))
+		    (VP (ADVP (AD 也))
+			(VP (VV 会)
+			    (VP (VV 跟进))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

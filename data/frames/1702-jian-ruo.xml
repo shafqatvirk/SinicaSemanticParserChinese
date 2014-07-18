@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减弱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP (NP-SBJ (NP-PN (NR 洞庭湖))
+			      (NP (NN 湖面)))
+		      (VP (VV 缩小)))
+		  (PU ，)
+		  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 调蓄)
+					      (NP-OBJ (NN 洪水))))
+				      (DEC 的))
+			      (NP (NN 能力)))
+		      (VP (VV 减弱)))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 调蓄 洪水 的 能力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

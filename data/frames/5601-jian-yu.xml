@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 见於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is seen"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 林边))
+		    (NP (NN 地名)))
+	    (VP (ADVP (AD 最早))
+		(VP (VV 见於)
+		    (LCP-OBJ (NP (LCP (NP-PN (PU 「)
+					     (NP (QP (CD 三))
+						 (NP (NN 山)))
+					     (NP (NN 国王)
+						 (NN 庙))
+					     (PU 」))
+				      (LC 旁))
+				 (PU 、)
+				 (CP (WHNP-1 (-NONE- *OP*))
+				     (CP (IP (NP-SBJ (-NONE- *T*-1))
+					     (VP (VV 立於)
+						 (QP-OBJ (NP-PN (NR 乾隆))
+							 (QP (CD 二十六)
+							     (CLP (M 年))))))
+					 (DEC 的)))
+				 (NP (NN 石碑)))
+			     (LC 上))))) 
+	</parse>
+	<arg n="0">
+	林边 地名 
+	</arg>
+	<arg n="1">
+	「 三 山 国王 庙 」 旁 、 *OP* *T*-1 立於 乾隆 二十六 年 的 石碑 上 
+	</arg>
+	<arg n="m" f="adv">
+	最早 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看病 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="patient"/>
+      <role argnum="1" argrole="doctor"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 不))
+			    (VP (VV 要)
+				(VP (VV 说)
+				    (NP-OBJ (NP-APP (NN 升学)
+						    (PU 、)
+						    (NN 招工)
+						    (PU 、)
+						    (NN 当兵)
+						    (PU 、)
+						    (NN 提干))
+					    (DP (DT 这些))
+					    (NP (NN 人生))
+					    (ADJP (JJ 大))
+					    (NP (NN 事)))))))
+		(PU ，)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 就))
+				(ADVP (AD 连))
+				(VP (VP (VV 去)
+					(NP-OBJ (NN 医院)))
+				    (VP (VV 看病)))))
+		    (VP (ADVP (AD 也))
+			(VP (VV 要)
+			    (VP (ADVP (AD 先))
+				(VP (VV 说明)
+				    (NP-OBJ (NN 出身)))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

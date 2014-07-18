@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 引发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 特别是))
+	      (NP-SBJ (DNP (PP (P 有关)
+			       (NP (NP-PN (NR 香港))
+				   (LCP (NP (NN 回归))
+					(LC 后))
+				   (PP (P 与)
+				       (NP (NN 内地)))
+				   (NP (NN 经贸)
+				       (NN 关系))))
+			   (DEG 的))
+		      (NP (NN 法律)
+			  (NN 调整)
+			  (NN 问题)))
+	      (PU ，)
+	      (VP (VV 引发)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP (NN 与会者))
+			       (DEG 的))
+			  (ADJP (JJ 积极))
+			  (NP (NN 讨论))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  有关 香港 回归 后 与 内地 经贸 关系 的 法律 调整 问题 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  与会者 的 积极 讨论 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 此))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VA 先进)))
+			      (DEC 的)))
+		      (NP (NN 电子)
+			  (NN 撞车)
+			  (NN 传感器)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (ADJP (ADVP (AD 更))
+					 (ADJP (JJ 短)))
+				   (NP (NN 时间)))
+			       (LC 内)))
+		  (PU ，)
+		  (VP (VV 引发)
+		      (NP-OBJ (ADJP (JJ 防撞))
+			      (NP (NN 气囊)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 迅速))
+			      (VP (VV 起爆))))))) 
+	  </parse>
+	  <arg n="0">
+	  此 *OP* (*T*-2)->(电子撞车传感器) 先进 的 电子 撞车 传感器 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 更 短 时间 内 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  防撞 气囊 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 迅速 起爆 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

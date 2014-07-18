@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 登陆 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 lands on/arrives at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-TMP (NT 千禧年))
+		(NP-SBJ (NP-PN (NR 欧)
+			       (NR 美))
+			(ADJP (JJ 大型))
+			(NP (NN 健身))
+			(ADJP (JJ 连锁))
+			(NP (NN 公司)))
+		(VP (VP (ADVP (AD 也))
+			(VP (VV 看上)
+			    (NP-OBJ (NP-PN (NR 台湾))
+				    (NP (NN 市场)))))
+		    (PU ，)
+		    (VP (VP (VV 夹)
+			    (AS 着)
+			    (NP-OBJ (DNP (NP (ADJP (JJ 高))
+					     (NP (NN 知名度)))
+					 (DEG 的))
+				    (ADJP (JJ 闪亮))
+				    (NP (NN 招牌))))
+			(VP (VV 登陆)))
+		    (PU ，)
+		    (VP (PP (P 与)
+			    (NP (NN 本土)
+				(NN 业者)))
+			(ADVP (AD 争))
+			(VP (VV 食)
+			    (NP-OBJ (ADJP (JJ 大))
+				    (NP (NN 饼))))))) 
+	</parse>
+	<arg n="0">
+	欧 美 大型 健身 连锁 公司 
+	</arg>
+	<arg n="m" f="tmp">
+	千禧年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

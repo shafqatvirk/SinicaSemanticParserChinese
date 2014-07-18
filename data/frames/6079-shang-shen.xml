@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上身 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing (clothing) that is put on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 孙燕姿))
+	    (VP (VP (PP-TMP (P 在)
+			    (NP (NN 隆冬)))
+		    (VP (VP (VV 穿上)
+			    (NP-OBJ (NN 皮海)
+				    (NN 大衣)))
+			(VP (VV 拍摄)
+			    (NP-OBJ (NN MTV)))))
+		(PU ，)
+		(VP (DVP (VP (VA 兴奋)
+			     (PU 、)
+			     (VA 新鲜))
+			 (DEV 地))
+		    (PP-DIR (P 向)
+			    (NP (PN 大家)))
+		    (VP (VV 炫耀)
+			(NP-OBJ (NP (PN 她))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (QP-ADV (OD 第一)
+							(CLP (M 次)))
+						(VP (VV 上身))))
+					(DEC 的)))
+				(NP (NN 冬衣))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	第一 次 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

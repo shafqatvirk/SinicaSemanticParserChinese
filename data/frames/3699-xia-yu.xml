@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下雨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="whoever has the power to rain"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 一开始))
+		      (PP-LGS (P 由)
+			      (NP (DNP (NP (NN 福利院))
+				       (DEG 的))
+				  (NP (NN 老师))))
+		      (VP (VV 接送)))
+		  (PU ，)
+		  (VP (LCP-TMP (NP (NN 初二))
+			       (LC 后))
+		      (VP (VV 住校)))
+		  (PU ，)
+		  (VP (NP-TMP (DP (DT 每)
+				  (CLP (M 个)))
+			      (NP (NT 星期六)))
+		      (VP (VV 回到)
+			  (NP-OBJ (NN 福利院))))
+		  (PU ，)
+		  (VP (CP-ADV (ADVP (CS 无论))
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VCD (VV 刮风)
+					   (VV 下雨)))))
+		      (PU ，)
+		      (ADVP (AD 从))
+		      (ADVP (AD 不))
+		      (VP (VV 缺课))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

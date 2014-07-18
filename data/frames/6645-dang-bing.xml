@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 当兵 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person joining army"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 当兵)))
+			 (LC 时))
+		(VP (VP (DP-ADV (DT 每)
+				(CLP (M 天)))
+			(VP (VV 坐)
+			    (NP-OBJ (NN 交通车))))
+		    (PU ，)
+		    (VP (ADVP (AD 都))
+			(VP (VV 会)
+			    (VP (VV 经过)
+				(LCP-OBJ (NP-PN (NR 忠孝东路)
+						(PU 、)
+						(NR 敦化南路))
+					 (LC 口)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,149 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 猜测 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 guesses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VV 继续)
+		(VP (VP (VP (VV 卖弄)
+			    (NP-OBJ (-NONE- *RNR*-2)))
+			(PU 、)
+			(VP (VV 炫耀)
+			    (NP-OBJ-2 (NP (ADJP (JJ 老))
+					  (NP (NN 智慧)))
+				      (PU 、)
+				      (NP (ADJP (JJ 老))
+					  (NP (NN 规矩))))))
+		    (PU ，)
+		    (VP (PP-MNR (P 用)
+				(NP (NP (ADJP (JJ 老))
+					(NP (NN 智慧)))
+				    (PU 、)
+				    (NP (ADJP (JJ 老))
+					(NP (NN 规矩)))))
+			(VP (MSP 来)
+			    (VP (VV 揣摩)
+				(NP-OBJ (-NONE- *RNR*-3)))
+			    (PU 、)
+			    (VP (VV 猜测)
+				(NP-OBJ-3 (ADJP (JJ 新))
+					  (NP (NN 社会))))))))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="1">
+	新 社会 
+	</arg>
+	<arg n="m" f="mnr">
+	用 老 智慧 、 老 规矩 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (PP-MNR (P 凭著)
+		    (NP (NP (QP (OD 第六))
+			    (NP (NN 感官)))
+			(CC 与)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (DNP (ADJP (JJ 共同))
+						     (DEG 的))
+						(NP (NN 社会主义)
+						    (NN 历练)))
+					(VP (MSP 而)
+					    (VP (VV 形成)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的)))
+			    (NP (NN 精神)
+				(NN 世界)))))
+	    (PU ，)
+	    (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 便))
+		(VP (VV 能)
+		    (VP (ADVP (AD 准确))
+			(VP (VRD (VV 猜测)
+				 (VV 出))
+			    (IP-OBJ (NP-SBJ (PN 他们))
+				    (VP (VV 来自)
+					(NP-OBJ (NP-PN (NR 东欧))
+						(NP (NN 社会)))))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	他们 来自 东欧 社会 
+	</arg>
+	<arg n="m" f="adv">
+	准确 
+	</arg>
+	<arg n="m" f="adv">
+	便 
+	</arg>
+	<arg n="m" f="mnr">
+	凭著 第六 感官 与 *OP* 共同 的 社会主义 历练 而 形成 *T*-1 的 精神 世界 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-ADV (ADVP (CS 不论))
+		    (IP (NP-SBJ (PN 我))
+			(VP (VV 猜测)
+			    (IP-OBJ (NP-SBJ (PN 他))
+				    (VP (VC 是)
+					(NP-PRD (NP (NN 富者))
+						(CC 或)
+						(NP (ADJP (JJ 穷))
+						    (NP (NN 人)))))))))
+	    (PU ，)
+	    (NP-SBJ (NN 购物)
+		    (NN 风格))
+	    (PU ：)
+	    (VP (ADVP (AD 几乎))
+		(ADVP (AD 从))
+		(ADVP (AD 不))
+		(VP (VV 讲价)))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	他 是 富者 或 穷 人 
+	</arg>
+	<arg n="m" f="dis">
+	不论 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

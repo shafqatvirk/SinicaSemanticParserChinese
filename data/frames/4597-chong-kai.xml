@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing restarted/reopened"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-MNR (P 作为)
+		      (NP (DNP (NP (NN 军事)
+				   (NN 措施))
+			       (DEG 的))
+			  (NP (NN 辅助)
+			      (NN 手段))))
+	      (PU ，)
+	      (IP-SBJ (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 重开)
+			  (NP-OBJ (NN 谈判))))
+	      (VP (ADVP (AD 同样))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 必要)))
+				      (DEC 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  谈判 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

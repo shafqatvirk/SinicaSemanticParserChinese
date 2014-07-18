@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 tranmits arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 有朝一日))
+		  (VP (VV 要)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (DNP (NP (NN 他乡))
+					       (DEG 的))
+					  (NP (NN 所见所闻)))
+				  (VP (VV 传回)
+				      (NP-PN-OBJ (NR 台湾)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  他乡 的 所见所闻 
+	  </arg>
+	  <arg n="2">
+	  台湾 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  有朝一日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

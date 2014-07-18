@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 确信 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing believed in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 确信)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (NP-PN-APP (NR 加)
+					     (PU 、)
+					     (NR 中))
+				  (QP (CD 两))
+				  (NP (NN 国)))
+			  (VP (VV 可以)
+			      (VP (VV 成为)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (ADVP (AD 很))
+							  (VP (VA 好))))
+						  (DEC 的)))
+					  (NP (NN 合作)
+					      (NN 伙伴)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  加 、 中 两 国 可以 成为 *OP* *T*-1 很 好 的 合作 伙伴 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

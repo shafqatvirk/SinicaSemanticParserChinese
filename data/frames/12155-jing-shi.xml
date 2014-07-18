@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 警示 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 gives warning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP (ADVP (AD 就))
+		      (PP (P 好像)
+			  (NP (NN 保全)
+			      (NN 公司))))
+		  (PU ，)
+		  (VP (VV 能)
+		      (VP (ADVP (AD 自动))
+			  (VP (VV 侦察)
+			      (NP-OBJ (NN 系统)
+				      (NN 状态)))
+			  (PU ，)
+			  (VP (VV 提出)
+			      (NP-OBJ (NN 警示))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  自动 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

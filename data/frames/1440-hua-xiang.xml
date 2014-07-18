@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 滑向 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="from"/>
+      <role argnum="2" argrole="to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NP (NP-PN (NR 东亚))
+					  (DP (DT 各))
+					  (NP (NN 国)))
+				      (NP (NN 经济)))
+			      (VP (PP-TMP (-NONE- *T*-2))
+				  (PP-DIR (P 由)
+					  (NP (NN 巅峰)))
+				  (VP (VV 滑向)
+				      (NP-OBJ (NN 谷底)))))
+			  (DEC 的)))
+		  (NP (NN 转折点))) 
+	  </parse>
+	  <arg n="0">
+	  东亚 各 国 经济 
+	  </arg>
+	  <arg n="1">
+	  由 巅峰 
+	  </arg>
+	  <arg n="2">
+	  谷底 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

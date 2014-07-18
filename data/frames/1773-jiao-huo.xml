@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缴获 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing seized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 政府军))
+	      (VP (VP (ADVP (AD 顽强))
+		      (VP (VV 抵抗)))
+		  (PU ，)
+		  (VP (VV 击毙)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 数十)
+				  (CLP (M 名)))
+			      (NP-PN (NR 安盟))
+			      (NP (NN 士兵))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 缴获)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 批)))
+			      (ADJP (JJ 轻)
+				    (JJ 重))
+			      (NP (NN 武器)))))) 
+	  </parse>
+	  <arg n="0">
+	  政府军 
+	  </arg>
+	  <arg n="1">
+	  一 批 轻 重 武器 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

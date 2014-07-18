@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 招兵买马 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使得)
+		  (NP-OBJ (PN 他))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-TMP (P 在)
+				  (LCP (NP (NT 新年))
+				       (LC 之际)))
+			  (VP (VV 可以)
+			      (VP (ADVP (AD 尽兴))
+				  (PP-BNF (P 为)
+					  (NP-PN (NR 纽卡斯尔联队)))
+				  (VP (VV 招兵买马)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 纽卡斯尔联队 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽兴 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 新年 之际 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

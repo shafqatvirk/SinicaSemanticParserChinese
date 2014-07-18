@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调派 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="dispatcher"/>
+      <role argnum="1" argrole="dispatched people"/>
+      <role argnum="2" argrole="proposition"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 截至)
+		      (LCP (NP (NT 目前))
+			   (LC 为止)))
+	      (PU ，)
+	      (NP-PN-SBJ (ADJP (JJ 土力))
+			 (NP (NN 工程处)))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 调派)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 五十)
+				  (CLP (M 名)))
+			      (NP (ADJP (JJ 土力))
+				  (NP (NN 工程)))
+			      (NP (NN 人员)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VSB (VV 前往)
+				   (VV 处理))
+			      (NP-OBJ (NN 山泥)
+				      (NN 倾泻)
+				      (NN 事件))))))) 
+	  </parse>
+	  <arg n="0">
+	  土力 工程处 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  共 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  五十 名 土力 工程 人员 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 前往 处理 山泥 倾泻 事件 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 到期 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="what's expiring"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 卢森博格))
+		      (DNP (PP (P 与)
+			       (NP-PN (NR 科林迪亚斯队)))
+			   (DEG 的))
+		      (NP (NN 合同)))
+	      (VP (PP-TMP (P 截止)
+			  (NP (NT 今年)
+			      (NT １２月)
+			      (NT ３１日)))
+		  (VP (VV 到期)))) 
+	  </parse>
+	  <arg n="0">
+	  卢森博格 与 科林迪亚斯队 的 合同 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  截止 今年 １２月 ３１日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

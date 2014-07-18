@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 邀访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 invites arg1 to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (PP-TMP (P 在)
+		      (LCP (NP (NT 四月))
+			   (LC 间)))
+	      (PU ，)
+	      (NP-PN-SBJ (NN 行政院)
+			 (NN 陆委会))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 曾))
+		  (VP (VV 邀访)
+		      (NP-OBJ (NP (NP-PN (NR 澳门))
+				  (NP (NN 大专)
+				      (NN 校友会)))
+			      (NP (NN 成员)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 回来)
+				  (NP-PN-OBJ (NR 台湾)))
+			      (VP (VV 看看))))))) 
+	  </parse>
+	  <arg n="0">
+	  行政院 陆委会 
+	  </arg>
+	  <arg n="1">
+	  澳门 大专 校友会 成员 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 回来 台湾 看看 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 四月 间 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

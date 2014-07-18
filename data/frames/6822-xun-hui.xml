@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 巡回 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="places arg0 goes around"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 十三)
+			 (CLP (M 年)))
+		     (LC 来))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NP-PN (NR 台北))
+				   (ADJP (JJ 市立))
+				   (NP (NN 妇幼)
+				       (NN 医院)))
+			    (NP (NN 小儿科))
+			    (ADJP (JJ 主治))
+			    (NP (NN 医师)))
+		    (NP-PN (NR 谢从宾)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 利用)
+			    (NP-OBJ (NN 工作)
+				    (NN 之馀))))
+		(PU ，)
+		(VP (VP (VV 巡回)
+			(NP-OBJ (DP (DT 各))
+				(NP (NN 小学))))
+		    (PU ，)
+		    (VP (ADVP (AD 义务))
+			(PP-BNF (P 为)
+				(NP (NN 学童)
+				    (CC 及)
+				    (NN 老师)))
+			(VP (VV 做)
+			    (NP-OBJ (NN 超音波)
+				    (NN 检查))))))) 
+	</parse>
+	<arg n="0">
+	台北 市立 妇幼 医院 小儿科 主治 医师 谢从宾 
+	</arg>
+	<arg n="1">
+	各 小学 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 利用 工作 之馀 
+	</arg>
+	<arg n="m" f="tmp">
+	十三 年 来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

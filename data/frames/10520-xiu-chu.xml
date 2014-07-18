@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 秀出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 shows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今天))
+	    (NP-SBJ (NN 外在)
+		    (NN 条件))
+	    (VP (VV 提供)
+		(NP-OBJ (PN 他们))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 可以)
+			(VP (VP (VV 秀出)
+				(NP-OBJ (NN 外型美)))
+			    (PU ，)
+			    (VP (VP (VRD (VV 展现)
+					 (VV 出))
+				    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-3))
+							(VP (ADVP (AD 比较))
+							    (VP (VA 软))))
+						    (DEC 的)))
+					    (NP (NN 调子))))
+				(VP (VV 来)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	外型美 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

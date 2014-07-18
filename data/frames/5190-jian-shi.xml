@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 检视 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 checks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 检视)
+		(NP-OBJ (NN 资源)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	资源 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 你))
+	    (VP (VV 要)
+		(VP (VV 检视)
+		    (PU ：)
+		    (IP-OBJ (IP-Q (LST (CD 1))
+				  (PU ．)
+				  (NP-SBJ (DNP (NP (NN 你))
+					       (DEG 的))
+					  (NP (NN 企业)))
+				  (VP (VV 准备)
+				      (IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (ADVP-WH (AD 如何))
+						    (ADVP (AD 快速))
+						    (VP (VV 成长))))))
+			    (IP (LST (CD 2))
+				(PU ．)
+				(NP-SBJ (NN 科技)
+					(NN 企业))
+				(VP (VV 不进则退)))
+			    (PU ，)
+			    (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 快速))
+					    (VP (VV 成长))))
+				(VP (VC 是)
+				    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *pro*))
+							(VP (VV 必须)
+							    (VP (VV 要)
+								(VP (VV 走)
+								    (NP-OBJ (-NONE- *T*-1))))))
+						    (DEC 的)))
+					    (NP (NN 路)))))
+			    (IP (LST (CD 3))
+				(PU ．)
+				(IP-SBJ (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 积极进取)))
+					(CC 与)
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 一厢情愿))))
+				(PU ，)
+				(VP (ADVP (AD 只))
+				    (VP (VE 有)
+					(NP-OBJ (DNP (NP (QP (CD 一))
+							 (NP (NN 线)))
+						     (DEG 之))
+						(NP (NN 隔))))))
+			    (IP (LST (CD 4))
+				(PU ．)
+				(NP-SBJ (NN 推理)
+					(NN 逻辑))
+				(VP (PP (P 比)
+					(NP (NN 结果)))
+				    (ADVP (AD 更为))
+				    (VP (VA 重要)))))))) 
+	</parse>
+	<arg n="0">
+	你 
+	</arg>
+	<arg n="1">
+	1 ． 你 的 企业 准备 *PRO* 如何 快速 成长 2 ． 科技 企业 不进则退 ， *PRO* 快速 成长 是 *OP* *pro* 必须 要 走 *T*-1 的 路 3 ． *PRO* 积极进取 与 *PRO* 一厢情愿 ， 只 有 一 线 之 隔 4 ． 推理 逻辑 比 结果 更为 重要 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

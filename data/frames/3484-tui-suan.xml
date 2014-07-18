@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推算 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing predicted through calculation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 推算)
+		  (IP-OBJ (NP-SBJ (NN 预期)
+				  (NN 寿命))
+			  (VP (VV 会)
+			      (VP (PP-TMP (P 在)
+					  (QP (NP (NT 未来))
+					      (QP (CD 二十)
+						  (CLP (M 年)))))
+				  (VP (VV 继续)
+				      (VP (VV 上升)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  预期 寿命 会 在 未来 二十 年 继续 上升 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing obtained through calculation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NP (NP-APP (NP (ADJP (JJ 大))
+					  (NP (NN 熊猫)))
+				      (NP (NN 专家)))
+			      (NP-PN (NR 冯文和)
+				     (NN 教授)))
+			  (NP (NN 介绍))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (NP (NN 数字)))
+	      (VP (ADVP (AD 仅仅))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TMP (NT 七十年代)
+						  (NN 中期))
+					  (PU ，)
+					  (NP-SBJ (NP-PN (NR 中国))
+						  (ADJP (JJ 野外))
+						  (NP (NN 调查队)))
+					  (VP (VP (VV 用)
+						  (NP-OBJ (DNP (QP (CD 单一))
+							       (DEG 的))
+							  (NP (NN 路线)
+							      (NN 调查法))))
+					      (VP (VRD (VV 推算)
+						       (VV 出来))
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 野外 调查队 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  七十年代 中期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

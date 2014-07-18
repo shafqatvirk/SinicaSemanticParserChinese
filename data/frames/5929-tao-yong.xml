@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 套用 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 borrows and uses"/>
+    <role argnum="2" argrole="thing arg1 is used for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (NP-TMP (NT 当年))
+			     (VP (VV 败选))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 陈水扁))
+	    (VP (DVP (VP (ADVP (AD 极))
+			 (VP (VE 有)
+			     (NP-OBJ (NN 风度))))
+		     (DEV 地))
+		(VP (VP (VV 套用)
+			(AS 了)
+			(IP-OBJ (NP-APP (QP (CD 一)
+					    (CLP (M 句)))
+					(DNP (NP-PN (NR 邱吉尔))
+					     (DEG 的))
+					(NP (NN 名言)))
+				(IP-TTL (PU 「)
+					(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (PP-DIR (P 对)
+							    (NP (ADJP (JJ 进步))
+								(NP (NN 团队))))
+						    (VP (VA 无情))))
+					(PU ，)
+					(VP (VC 是)
+					    (NP-PRD (DNP (NP (ADJP (JJ 伟大))
+							     (NP (NN 城市)))
+							 (DEG 的))
+						    (NP (NN 象徵))))
+					(PU 」))))
+		    (VP (MSP 来)
+			(VP (VV 表明)
+			    (NP-OBJ (DNP (NP (PN 自己))
+					 (DEG 的))
+				    (NP (NN 无怨无尤)))))))) 
+	</parse>
+	<arg n="0">
+	陈水扁 
+	</arg>
+	<arg n="1">
+	一 句 邱吉尔 的 名言 「 *PRO* 对 进步 团队 无情 ， 是 伟大 城市 的 象徵 」 
+	</arg>
+	<arg n="m" f="adv">
+	极 有 风度 地 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 当年 败选 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VCD (VA 磅礴)
+					 (VA 华丽))))
+			    (DEC 的)))
+		    (NP-PN (NR 美国))
+		    (NP (NN 模式)))
+	    (PU ，)
+	    (VP (ADVP (AD 显然))
+		(ADVP (AD 难以))
+		(VP (VV 套用)
+		    (PP (P 在)
+			(NP (NP (DNP (ADJP (NP-PN (NR 台湾))
+					   (ADJP (JJ 这样)))
+				     (DEG 的))
+				(DNP (ADJP (ADJP (JJ 小型))
+					   (ADJP (JJ 浅碟式)))
+				     (DEG 的))
+				(NP (NN 经济体)))
+			    (NP (NN 身上))))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-2 磅礴 华丽 的 美国 模式 
+	</arg>
+	<arg n="2">
+	在 台湾 这样 的 小型 浅碟式 的 经济体 身上 
+	</arg>
+	<arg n="m" f="adv">
+	难以 
+	</arg>
+	<arg n="m" f="adv">
+	显然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

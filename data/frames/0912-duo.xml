@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 躲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="hider"/>
+      <role argnum="1" argrole="hiding from"/>
+      <role argnum="2" argrole="hiding place"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 躲)
+				      (PP (P 在)
+					  (NP (NN 里面)))))
+			      (DEC 的)))
+		      (QP (ADVP (AD 至少))
+			  (QP (CD ５００)
+			      (CLP (M 名))))
+		      (NP (NN 平民)))
+	      (VP (SB 被)
+		  (VP (VV 炸死)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 躲 在 里面 的 至少 ５００ 名 平民 
+	  </arg>
+	  <arg n="2">
+	  在 里面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

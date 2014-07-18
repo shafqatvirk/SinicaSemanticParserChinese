@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 调理 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 designs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 何况))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (PN 她))
+				(VP (ADVP (AD 亲手))
+				    (VP (VV 调理)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (ADJP (JJ 营养))
+		    (NP (NN 食谱)))
+	    (PU ，)
+	    (VP (PP-DIR (P 对)
+			(NP (DNP (NP-PN (NR 千千))
+				 (DEG 的))
+			    (NP (NN 成长))))
+		(ADVP (AD 更))
+		(VP (VA 好)))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	亲手 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

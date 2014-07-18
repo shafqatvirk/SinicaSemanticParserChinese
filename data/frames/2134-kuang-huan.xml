@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 狂欢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party celebrating"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (PN 我))
+		(VP (VV 希望)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (DP-TMP (DT 这)
+					(CLP (M 次)))
+				(VP (VV 能)
+				    (VP (PP (P 跟着)
+					    (NP-PN (NR 理查德)))
+					(VP (VV 狂欢)
+					    (ADVP (AD 一下))))))))
+		(PU 。)
+		(PU ”))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 次 
+	  </arg>
+	  <arg n="m" f="adv">
+	  跟着 理查德 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

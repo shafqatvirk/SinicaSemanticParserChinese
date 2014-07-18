@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 享誉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="range within which arg0 enjoys fame"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-MNR (P 以)
+					      (NP (NP-PN (NR 秦))
+						  (NP (NN 兵马俑))))
+				      (VP (VV 为)
+					  (NP-OBJ (NN 代表)))))
+			      (DEC 的)))
+		      (ADJP (JJ 众多))
+		      (ADJP (JJ 人文))
+		      (NP (NN 景观)))
+	      (VP (VV 享誉)
+		  (NP-OBJ (NN 中外)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 以 秦 兵马俑 为 代表 的 众多 人文 景观 
+	  </arg>
+	  <arg n="1">
+	  中外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

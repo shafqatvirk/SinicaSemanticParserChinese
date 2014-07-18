@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 胸怀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 has in mind"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 针对)
+		      (NP (CP-APP (IP (NP-PN-SBJ (NR 汉代))
+				      (VP (VV 贫富不均)))
+				  (DEC 的))
+			  (NP (NN 痼疾))))
+	      (PU ，)
+	      (NP-SBJ (NN 朝廷))
+	      (VP (ADVP (AD 始终))
+		  (VP (VE 有)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 批)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 胸怀)
+					      (NP-OBJ (NN 改革)
+						      (NN 抱负))))
+				      (DEC 的)))
+			      (NP (NN 士大夫)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  改革 抱负 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

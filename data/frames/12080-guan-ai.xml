@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关爱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 loves and takes care of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 纺织))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 可)
+			      (VP (VV 谓))))
+		  (VP (VV 集)
+		      (NP-OBJ (NN 全民)
+			      (NN 关爱))
+		      (PP (P 于)
+			  (NP (NN 一身)))))) 
+	  </parse>
+	  <arg n="0">
+	  全民 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

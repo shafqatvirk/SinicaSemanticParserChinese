@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 强打 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 stages strongly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (DP (DT 某)
+					    (CLP (M 家)))
+					(NP (NN 美商)
+					    (NN 银行)))
+				(VP (NP-TMP (NT 最近))
+				    (ADVP (AD 密集))
+				    (VP (VV 强打)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 广告)))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (NP-PRD (QP (CD 一)
+				(CLP (M 个)))
+			    (NP (NN 例子)))))) 
+	</parse>
+	<arg n="0">
+	某 家 美商 银行 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	密集 
+	</arg>
+	<arg n="m" f="tmp">
+	最近 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

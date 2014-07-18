@@ -1,0 +1,69 @@
+<!--
+Frames File DTD for chinese frames, 6/11/2007
+-->
+
+<!-- 
+    the top level entity, we associate with each verb frame file
+    a set of 'frameset's
+-->
+<!ELEMENT verb (id, (comment | frameset)*)>
+
+<!ELEMENT comment (#PCDATA)>
+
+<!--
+    A frameset contains a set of roles and a set of frames>
+-->
+<!ELEMENT frameset (role,(comment | role)*,frame, (comment | frame)*)>
+
+<!--
+    Each frameset has an identifier, and associates the verb
+    with a verbclass (classid).  Optionally, chinese and english definitions 
+    or glosses are allowed
+-->
+<!ATTLIST frameset
+    id ID  #REQUIRED
+    cdef CDATA #IMPLIED
+    edef CDATA #IMPLIED>
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT role EMPTY>
+<!ATTLIST role
+    argnum (0|1|2|3|4|5|6|7|8|9) #REQUIRED
+    argrole CDATA #REQUIRED>
+
+<!--
+    A frame consists of a set of tuples of mapping and example elements
+-->
+<!ELEMENT frame (comment?, mapping,example,(comment?,example)*) >
+
+<!--
+    A mapping is an ordered list of mapitems, with a verb in there somewhere
+
+    eg
+
+    <mapping>
+        <mapitem src="sNP" trg="arg0"/>
+        <V/>
+        <mapitem src="dNP" trg="arg1"/>
+    </mapping>
+-->
+        
+<!ELEMENT mapping (V, mapitem,(mapitem | comment)*)>
+<!ELEMENT mapitem EMPTY>
+<!ATTLIST mapitem 
+    src (sbj|npobj|ipobj|ext|dir|controlip|io|other) #REQUIRED
+    trg (arg0|arg1|arg2|arg3|arg4|arg5|argM) #REQUIRED>
+<!ELEMENT V EMPTY>
+
+<!--
+    finally, an example is completely unstructured, but we may optionally
+    specify of source.
+-->
+<!ELEMENT example (parse, arg, comment*, (arg|V)*)>
+
+
+<!ELEMENT parse (#PCDATA)>
+<!ELEMENT arg (#PCDATA)>
+<!ATTLIST arg
+  n CDATA #REQUIRED
+  f CDATA #IMPLIED>

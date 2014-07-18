@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 折下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 snaps off"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VV 作)
+			     (NP-OBJ (NN 陶猪))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VP (VP (VV 起身))
+		    (VP (VV 到)
+			(NP-OBJ (DNP (LCP (NP (NN 屋))
+					  (LC 前))
+				     (DEG 的))
+				(NP (NN 竹林)))))
+		(PU ，)
+		(VP (VP (ADVP (AD 随手))
+			(VP (VV 折下)
+			    (NP-OBJ (NN 竹枝))))
+		    (PU ，)
+		    (VP (MSP 来)
+			(VP (VV 点)
+			    (NP-OBJ (NN 猪)
+				    (NN 鼻孔))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	竹枝 
+	</arg>
+	<arg n="m" f="adv">
+	随手 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 作 陶猪 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

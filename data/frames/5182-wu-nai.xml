@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无奈 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 has no way to deal with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-DIR (P 对於)
+			(IP (NP-SBJ (NN 媒体))
+			    (VP (VP (VV 围)
+				    (AS 著)
+				    (NP-OBJ (ADJP (JJ 真)
+						  (JJ 假))
+					    (NP-PN (NR 大宝)
+						   (NN 法王))))
+				(VP (VV 大作)
+				    (NP-OBJ (NN 报导))))))
+		(ADVP (AD 也))
+		(ADVP (AD 十分))
+		(VP (VA 无奈)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	对於 媒体 围 著 真 假 大宝 法王 大作 报导 
+	</arg>
+	<arg n="m" f="adv">
+	十分 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 无奈)))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(PU ，)
+		(IP-PRD (IP (NP-SBJ (PU 「)
+				    (NN 三通)
+				    (PU 」))
+			    (VP (VP-FOC (ADVP (AD 一))
+					(VP (VV 搁)))
+				(VP (QP-PRD (CD 十)
+					    (CLP (M 年))))))
+			(PU ，)
+			(IP (NP-PN-SBJ (NR 高雄)
+				       (CC 和)
+				       (NR 台中))
+			    (VP (VP (ADVP (AD 空))
+				    (VP (VE 有)
+					(NP-OBJ (NN 良港))))
+				(VP (ADVP (AD 却))
+				    (VP (VP (VV 困守)
+					    (NP-OBJ (NN 围城)))
+					(PU ，)
+					(VP (PU 「)
+					    (VPT (VV 走)
+						 (AD 不)
+						 (VV 出去))
+					    (PU 」))))))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 特别是))
+	    (DP-SBJ (DT 下)
+		    (QP (CD 一)
+			(CLP (M 代))))
+	    (PU ，)
+	    (VP (VP (VV 面临)
+		    (NP-OBJ (CP-APP (IP-Q (NP-SBJ (PN 自己))
+					  (VP (ADVP (AD 究竟))
+					      (VP (VC 是)
+						  (NP-PRD (NN 日本人)
+							  (PU 、)
+							  (NN 台湾人)
+							  (PU 、)
+							  (NN 泰雅人)
+							  (CC 还是)
+							  (NN 中国人)))))
+				    (DEC 的))
+			    (NP (NN 认同)
+				(NN 问题))))
+		(PU ，)
+		(VP (CC 既)
+		    (VP (VA 无辜))
+		    (CC 且)
+		    (VP (VA 无奈))))) 
+	</parse>
+	<arg n="0">
+	下 一 代 
+	</arg>
+	<arg n="m" f="adv">
+	特别是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

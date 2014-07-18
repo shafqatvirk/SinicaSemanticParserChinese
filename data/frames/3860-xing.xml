@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 形 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity formed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 虽然))
+			  (VP (VP (VRD (VV 开发)
+				       (VE 有))
+				  (NP-OBJ (ADJP (JJ 整车))
+					  (NP (NN 产品)))
+				  (NP-EXT (NP (QP (CD 三)
+						  (CLP (M 个)))
+					      (NP (NN 系列)))
+					  (NP (QP (CD 二十三)
+						  (CLP (M 个)))
+					      (NP (NN 品种)))))
+			      (PU ，)
+			      (VP (NP-OBJ (NN 改装车)
+					  (NN 产品))
+				  (NP-EXT (NP (QP (CD 三)
+						  (CLP (M 个)))
+					      (NP (NN 系列)))
+					  (NP (QP (CD 十二)
+						  (CLP (M 个)))
+					      (NP (NN 品种))))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 均))
+		  (VP (VP (VV 属)
+			  (NP-OBJ (NP (ADJP (JJ 小))
+				      (NP (NN 批量)))
+				  (NP (NN 产品))))
+		      (PU ，)
+		      (VP (VNV (VV 形)
+			       (AD 不)
+			       (VV 成))
+			  (NP-OBJ (NN 规模)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  规模 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 虽然 开发 有 整车 产品 三 个 系列 二十三 个 品种 ， 改装车 产品 三 个 系列 十二 个 品种 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

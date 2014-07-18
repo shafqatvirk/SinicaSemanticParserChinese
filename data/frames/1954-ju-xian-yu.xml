@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 局限于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="range arg0 is limited/confined to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 当今))
+		  (PU ，)
+		  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NP (ADJP (JJ 大型))
+						  (NP (NN 运动会)))
+					      (CC 和)
+					      (NP (ADJP (JJ 重要))
+						  (NP (NN 比赛))))
+				      (VP (NP-ADV (-NONE- *T*-1))
+					  (VP (VV 受)
+					      (NP-OBJ (NN 关注)))))
+				  (DEC 的)))
+			  (NP (NN 范围)))
+		  (PU ，)
+		  (VP (ADVP (AD 远远))
+		      (ADVP (AD 不))
+		      (VP (VV 局限于)
+			  (NP-OBJ (NN 举办地))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 大型 运动会 和 重要 比赛 *T*-1 受 关注 的 范围 
+	  </arg>
+	  <arg n="1">
+	  举办地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  远远 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

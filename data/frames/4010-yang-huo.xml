@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 养活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity provided for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 中国))
+		  (VP (VP (VE 有)
+			  (NP-OBJ (NN 能力))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 养活)
+				  (NP-OBJ (DNP (NP (PN 自己))
+					       (DEG 的))
+					  (NP (NN 人民))))))
+		      (PU ，)
+		      (CC 而)
+		      (VP (ADVP (AD 不))
+			  (VP (VV 会)
+			      (VP (VV 出现)
+				  (NP-OBJ (DNP (ADJP (JJ 所谓))
+					       (DEG 的))
+					  (NP (NN 粮食)
+					      (NN 危机)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  自己 的 人民 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

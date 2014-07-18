@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过完 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="period of time arg0 lives through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-LOC (P 在)
+			  (NP (NN 大陆)))
+		  (PU ，)
+		  (NP-SBJ (NT 五四))
+		  (VP (LCP-LOC (NP (DP (DT 某)
+				       (QP (CD 一)
+					   (CLP (M 种))))
+				   (NP (NN 程度)))
+			       (LC 上))
+		      (VP (VV 没有)
+			  (VP (VV 过完))))) 
+	  </parse>
+	  <arg n="1">
+	  五四 
+	  </arg>
+	  <arg n="m" f="loc">
+	  某 一 种 程度 上 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 大陆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

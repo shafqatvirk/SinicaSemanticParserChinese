@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 栽种 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 plants"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 讲求)
+				    (NP-OBJ (NN 速效))))
+			    (DEC 的)))
+		    (NP (NN 台湾人)))
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (NN 桧木林))
+				 (VP (VV 伐除)))
+			     (LC 後)))
+		(PU ，)
+		(ADVP (AD 通常))
+		(ADVP (AD 都))
+		(VP (VV 栽种)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (QP-ADV (CD 二十)
+						    (CLP (M 年)))
+					    (ADVP (AD 即))
+					    (VP (VV 可)
+						(VP (VV 砍伐)))))
+				    (DEC 的)))
+			    (NP (NN 柳杉)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 讲求 速效 的 台湾人 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 二十 年 即 可 砍伐 的 柳杉 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	通常 
+	</arg>
+	<arg n="m" f="tmp">
+	在 桧木林 伐除 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

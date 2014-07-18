@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摩拳擦掌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 国外)
+			(NN 制造商)
+			(PU 、)
+			(NN 广告商)))
+	    (VP (ADVP (AD 都))
+		(VP (VP (VV 虎视眈眈))
+		    (PU 、)
+		    (VP (VV 摩拳擦掌))
+		    (VP (VV 准备)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 进攻)
+				    (NP-OBJ (DP (DT 这)
+						(QP (CD 一)
+						    (CLP (M 块))))
+					    (ADJP (JJ 大))
+					    (NP (NN 饼))))))))) 
+	</parse>
+	<arg n="0">
+	许多 国外 制造商 、 广告商 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 喜悦 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 is happy about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 林)
+			     (NN 小姐))
+		      (CP (WHNP-4 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-4))
+				  (VP (VV 闪)
+				      (AS 过)
+				      (NP-OBJ (NN 脑海))))
+			      (DEC 的)))
+		      (QP (OD 第一)
+			  (CLP (M 个)))
+		      (NP (NN 念头)))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VC 是)
+			  (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 捡到)
+						  (NP-OBJ (NN 便宜货))))
+					  (DEC 的))
+				  (NP (NN 喜悦)))))
+		  (PU ，)
+		  (VP (ADVP (AD 却))
+		      (VP (VC 是)
+			  (IP-PRD (IP-IJ (NP-SBJ (-NONE- *pro*))
+					 (VP (VV 完)
+					     (AS 了)))
+				  (PU ，)
+				  (IP-Q (NP-PN-SBJ (NR 台湾))
+					(VP (ADVP (AD 以後))
+					    (ADVP-WH (AD 怎麽))
+					    (PP (P 跟)
+						(NP-PN (NR 韩国)))
+					    (VP (VV 竞争))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 捡到 便宜货 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

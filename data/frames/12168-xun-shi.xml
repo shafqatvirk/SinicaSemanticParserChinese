@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 训示 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="teacher"/>
+      <role argnum="1" argrole="thing arg0 teaches"/>
+      <role argnum="2" argrole="person arg1 is taught to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (PP (P 从)
+			  (NP (NN 小)))
+		      (PP (P 到)
+			  (NP (NN 大))))
+	      (PU ，)
+	      (LCP-SBJ (NP (NN 教科书))
+		       (LC 里))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 提到)
+				   (NP-OBJ (NN 金钱))))
+			   (LC 时))
+		  (PU ，)
+		  (ADVP (AD 只))
+		  (VP (VE 有)
+		      (NP-OBJ (DNP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					       (VP (VP (PU 「)
+						       (VV 勤俭)
+						       (VV 致富)
+						       (PU 」))
+						   (PU 、)
+						   (VP (PU 「)
+						       (VV 乐善好施)
+						       (PU 」))))
+				       (NP (NN 之类)))
+				   (DEG 的))
+			      (NP (NN 道德)
+				  (NN 训示)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 「 勤俭 致富 」 、 「 乐善好施 」 之类 
+	  </arg>
+	  <arg n="m" f="loc">
+	  道德 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 足 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="number/amount arg0 reaches"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 职工)
+					  (NN 人数))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 足)
+					  (QP-OBJ (CD ５)
+						  (CLP (M 名))))))
+			      (DEC 的)))
+		      (ADJP (JJ 微型)
+			    (CC 或)
+			    (JJ 家庭型))
+		      (NP (NN 企业)))
+	      (PU ，)
+	      (QP-SBJ (ADVP (AD 大约))
+		      (QP (CD 四分之一)))
+	      (VP (VV 加入)
+		  (AS 了)
+		  (NP-OBJ (NN 互联)
+			  (NN 网络)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  职工 人数 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  ５ 名 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (ADJP (JJ 国有))
+		      (NP (NN 企业)))
+	      (NP-SBJ (NN 活力))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 足)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  活力 
+	  </arg>
+	  <arg n="0" f="psr">
+	  国有 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing which can said to be true of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 可)
+		  (VP (VV 谓)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 妙趣横生)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 妙趣横生 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 可)
+		  (VP (VV 谓)
+		      (VP (VV 五花八门)
+			  (PU ，)
+			  (VV 应有尽有))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  五花八门 ， 应有尽有 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (QP (OD 第一))
+		      (NP (NN 阶段)))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 可)
+			  (VP (VV 谓))))
+	      (PU “)
+	      (NP-SBJ (QP (OD 首))
+		      (NP (NN 战)))
+	      (VP (VV 告捷))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing talked about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (PN 彼))
+			      (VP (VV 谓)
+				  (NP-OBJ (-NONE- *T*-1)))))
+		      (NP (NN 国家)
+			  (NN 事)))
+	      (PU ，)
+	      (VP (ADVP (AD 接))
+		  (VP (VV 由)
+		      (NP-OBJ (NP-APP (PN 汝))
+			      (NP (NN 书生))))))
+	  (SP 耳) 
+	  </parse>
+	  <arg n="0">
+	  彼	  	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 即位 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person taking the position"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 文帝))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 即位)))
+			 (LC 後))
+		(PU ，)
+		(VP (VV 免)
+		    (NP-IO (NN 民))
+		    (NP-OBJ (NN 租税))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

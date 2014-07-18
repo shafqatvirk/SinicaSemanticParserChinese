@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="size of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP (NN 科学家))
+			  (DNP (PP (P 比)
+				   (NP (NN 企业家)))
+			       (DEG 的))
+			  (NP (NN 贡献)))
+		  (VP (VA 大))) 
+	  </parse>
+	  <arg n="0">
+	  科学家 比 企业家 的 贡献 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 像是))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-ADV (NN 指头))
+				      (VP (VA 大))))
+			      (DEC 的)))
+		      (NP (NN 小卷)))
+	      (PU ，)
+	      (VP (VP (DP-ADV (DT 每)
+			      (CLP (M 年)))
+		      (VP (VP (VV 跟著)
+			      (NP-OBJ (DNP (NP (NN 海水))
+					   (DEG 的))
+				      (NP (NN 等温线))))
+			  (VP (VV 南移))))
+		  (PU ，)
+		  (VP (PP-TMP (P 在)
+			      (NP (NT 夏天)))
+		      (VP (VP (VV 来到)
+			      (LCP-OBJ (NP (NP-PN (NR 台湾))
+					   (CP (WHNP-2 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-2))
+						       (VP (VA 温暖)))
+						   (DEC 的)))
+					   (NP (NN 海洋)))
+				       (LC 中)))
+			  (VP (VV 产卵)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  指头 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

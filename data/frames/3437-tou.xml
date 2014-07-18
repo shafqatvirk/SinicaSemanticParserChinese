@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing cast/put in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美)
+			 (PU 、)
+			 (NR 英)
+			 (PU 、)
+			 (NN 法)
+			 (PU 、)
+			 (NR 苏))
+	      (VP (VV 投)
+		  (AS 了)
+		  (NP-OBJ (NN 赞成票)))) 
+	  </parse>
+	  <arg n="0">
+	  美 、 英 、 法 、 苏 
+	  </arg>
+	  <arg n="1">
+	  赞成票 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 王翔))
+	      (VP (VP (VV 投)
+		      (NP-OBJ (NN 巨资))
+		      (NP-EXT (QP (CD 一点二七亿)
+				  (CLP (M 元)))
+			      (NP (NN 人民币))))
+		  (VP (VV 参与)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NP-PN (NR 九江)
+					      (NN 火车站))
+				       (NP (NN 站场)))
+				   (DEG 的))
+			      (NP (NN 建设)))))) 
+	  </parse>
+	  <arg n="0">
+	  王翔 
+	  </arg>
+	  <arg n="1">
+	  巨资 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一点二七亿 元 人民币 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 计算 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity doing calculation"/>
+      <role argnum="1" argrole="thing calculated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHPP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-MNR (-NONE- *T*-3))
+				  (VP (VV 计算)
+				      (NP-OBJ (NN 中心)
+					      (NN 汇率)
+					      (NN 标准)))))
+			  (DEC 的)))
+		  (NP (NN 货币)
+		      (NN 单位))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  中心 汇率 标准 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-PN-SBJ (NR 香港))
+		  (VP (VC 是)
+		      (NP-PRD (NP (NN 全球))
+			      (ADJP (QP (OD 第九))
+				    (ADJP (JJ 大)))
+			      (NP (NN 服务)
+				  (NN 输出地)))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (IP-ADV (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-MNR (P 以)
+					  (NP (NN 价值)))
+				  (VP (VV 计算))))
+		      (PU ，)
+		      (ADVP (AD 平均))
+		      (DP-ADV (DT 每)
+			      (CLP (M 年)))
+		      (VP (VV 增加)
+			  (QP-OBJ (CD 百分之十六点四))))))
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 价值 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

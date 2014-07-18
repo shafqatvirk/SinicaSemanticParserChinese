@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缩编 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity reducing its size"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NN 铁路局))
+			   (DEG 的))
+		      (NP (NN 机械)
+			  (NN 制造)
+			  (CC 与)
+			  (NN 维修)))
+	      (VP (ADVP (AD 一直))
+		  (ADVP (AD 在))
+		  (VP (VV 缩编)))) 
+	  </parse>
+	  <arg n="0">
+	  铁路局 的 机械 制造 与 维修 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

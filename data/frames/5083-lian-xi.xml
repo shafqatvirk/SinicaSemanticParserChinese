@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 练习 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 practices"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(VP (VV 试图)
+	    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 民心))
+				(VP (VV 拉回)
+				    (PP-LOC (P 到)
+					    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+						     (VP (VV 练习)
+							 (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								 (VP (VV 射箭)))))
+						 (LC 上)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*PRO* 射箭 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VP (PP-LOC (P 在)
+			    (LCP (NP (NN 生活)
+				     (NN 供给))
+				 (LC 上)))
+		    (VP (VE 没有)
+			(NP-OBJ (NN 问题))))
+		(PU ，)
+		(VP (VP (VE 有)
+			(NP-OBJ (NN 时间)))
+		    (VP (VV 练习)
+			(NP-OBJ (QP (CD 各)
+				    (CLP (M 项)))
+				(NP (NN 运动)))))
+		(PU ，)
+		(VP (PP-DIR (P 从)
+			    (LCP (NP (NN 运动))
+				 (LC 中)))
+		    (VP (VV 找回)
+			(NP-OBJ (NP (DNP (NP (NN 生命))
+					 (DEG 的))
+				    (NP (NN 价值)))
+				(CC 与)
+				(NP (NN 国家)
+				    (NN 荣耀))))))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="1">
+	各 项 运动 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 中华队))
+			 (DEG 的))
+		    (NP (NN 选手)))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (VP (VP (VV 来自)
+			    (NP-OBJ (NN 各行各业)))
+			(PU ，)
+			(VP (ADVP (AD 多))
+			    (PP-PRP (P 因)
+				    (NP (NN 兴趣)))
+			    (VP (MSP 而)
+				(VP (VV 练习))))
+			(PU ，)
+			(VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+				    (VP (ADVP (CS 若))
+					(ADVP (AD 专心))
+					(VP (VV 投入))))
+			    (ADVP (AD 则))
+			    (ADVP (AD 无法))
+			    (VP (VV 工作))))))) 
+	</parse>
+	<arg n="0">
+	中华队 的 选手 
+	</arg>
+	<arg n="m" f="prp">
+	因 兴趣 
+	</arg>
+	<arg n="m" f="adv">
+	多 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

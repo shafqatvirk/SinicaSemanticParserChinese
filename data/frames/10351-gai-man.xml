@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 盖满 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="builder"/>
+    <role argnum="1" argrole="thing built"/>
+    <role argnum="2" argrole="place arg0 builds arg1 all over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 山坡地)
+		    (NN 植被))
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 盖满)
+				     (NP-OBJ (NN 房子))))
+			     (LC 後)))
+		(ADVP (AD 严重))
+		(VP (VV 减少)))) 
+	</parse>
+	<arg n="1">
+	房子 
+	</arg>
+	<arg n="2">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 巡视 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 inspects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 举)
+			      (NP-OBJ (QP (CD 一))
+				      (NP (NN 例))))
+			  (VP (MSP 来)
+			      (VP (VV 说)))))
+	      (PU ：)
+	      (QP-TMP (NP-PN (NR 民国))
+		      (QP (OD 八十四)
+			  (CLP (M 年))))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (CP (WHNP-5 (-NONE- *OP*))
+				  (CP (IP (NP (-NONE- *T*-5))
+					  (VP (ADVP (AD 现))
+					      (ADVP (AD 已))
+					      (VP (VV 卸任))))
+				      (DEC 的)))
+			      (NP (NN 省长)))
+		      (NP-PN (NR 宋楚瑜)))
+	      (VP (VP (VV 至)
+		      (NP-OBJ (NP-PN (NR 云林)
+				     (NR 浊水溪))
+			      (NP (NN 上游))))
+		  (VP (VV 巡视)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 中沙)
+							 (NN 大桥))
+						  (NP (NN 桥基)))
+					  (VP (VV 裸露)))
+				      (DEC 的))
+			      (NP (NN 情形)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-5 现 已 卸任 的 省长 宋楚瑜 
+	  </arg>
+	  <arg n="1">
+	  中沙 大桥 桥基 裸露 的 情形 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  民国 八十四 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 举 一 例 来 说 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

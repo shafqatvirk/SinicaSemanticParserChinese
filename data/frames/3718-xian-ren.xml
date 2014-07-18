@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 现任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="position arg0 currently holds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP (CP-APP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (NP-TMP (NT 当年))
+					      (ADVP (AD 曾))
+					      (VP (VV 参加)
+						  (AS 过)
+						  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (VCD (VV 开发)
+								   (VV 建设))
+							      (NP-OBJ (PU “)
+								      (CP (WHNP-2 (-NONE- *OP*))
+									  (IP (NP-SBJ (-NONE- *pro*))
+									      (VP (NP-LOC (-NONE- *T*-2))
+										  (VP (VE 无)
+										      (NP-OBJ (NN 人))))))
+								      (NP (NN 区))
+								      (PU ”))))))
+					  (PU 、)
+					  (VP (VV 现任)
+					      (NP-OBJ (NP (NP-PN (NR 那曲))
+							  (NP (NN 地区)))
+						      (NP (NN 行署))
+						      (NP (NN 专员))))))
+				  (DEC 的)))
+		      (NP-PN (NR 土登才旺)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  那曲 地区 行署 专员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

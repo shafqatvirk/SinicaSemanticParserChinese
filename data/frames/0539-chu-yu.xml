@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 处于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="location, state, status"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 德国))
+	      (VP (ADVP (AD 此后))
+		  (ADVP (AD 长期))
+		  (VP (VV 处于)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VE 无)
+						  (NP-OBJ (NN 权)))
+					      (CC 和)
+					      (VP (SB 被)
+						  (VP (VV 分裂)))))
+				      (DEC 的))
+			      (NP (NN 状态)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  德国 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 无 权 和 被 分裂 的 状态 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  此后 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  长期 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

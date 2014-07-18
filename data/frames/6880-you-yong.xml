@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有用 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is useful to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (PP-DIR (P 对)
+					(NP (PN 他)))
+				(VP (VA 有用))))
+			(DEC 的)))
+		(NP (NN 产品))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	对 他 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 连战))
+	    (VP (ADVP (AD 也))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VV 迷信)
+						(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 送)
+								    (NP-OBJ (NN 钱))))
+							(VP (VV 有用))))))
+				    (DEC 的)))
+			    (NP (NN 候选人)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 送 钱 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

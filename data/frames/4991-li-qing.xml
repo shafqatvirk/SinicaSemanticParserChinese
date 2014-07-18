@@ -1,0 +1,151 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 厘清 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 sorts out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 曾经))
+				    (VP (VC 是)
+					(VP (VV 压抑)
+					    (PU 、)
+					    (VV 封闭)))))
+			    (DEC 的)))
+		    (NP-PN (NR 台湾))
+		    (NP (NN 社会)))
+	    (PU ，)
+	    (VP (ADVP (AD 至今))
+		(ADVP (AD 也))
+		(ADVP (AD 还))
+		(VP (VV 没有)
+		    (VP (VV 厘清)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 属於)
+						(NP-OBJ (PN 自己))))
+					(DEC 的)))
+				(NP (NN 道路))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 曾经 是 压抑 、 封闭 的 台湾 社会 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 属於 自己 的 道路 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	至今 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 有)
+		(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 厘清) ))
+				(DEC 的))
+			(NP (NN 必要) )))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 厘清)
+		    (IP-Q-OBJ (ADVP (AD 究竟))
+			      (NP-WH-SBJ (PN 谁))
+			      (VP (VP (VE 有)
+				      (NP-OBJ (NN 权)))
+				  (VP (MSP 来)
+				      (VP (VV 做)
+					  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (VV 停止)
+								  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+									  (VP (VV 执行)
+									      (NP-OBJ (NN 核四)
+										      (NN 预算))))))
+							  (DEC 的))
+						  (NP (NN 决定))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	究竟 谁 有 权 来 做 *PRO* 停止 *PRO* 执行 核四 预算 的 决定 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ-5 (-NONE- *PRO*))
+	    (VP (VP (ADVP (AD 逐渐))
+		    (VP (SB 被)
+			(VP (VP (VV 分析)
+				(NP-OBJ (-NONE- *RNR*-6)))
+			    (PU 、)
+			    (VP (VV 厘清)
+				(NP-OBJ-6 (-NONE- *-5))))))
+		(PU ，)
+		(VP (VV 成为)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 种)))
+			    (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (VV 可以)
+					    (VP (VV 利用)
+						(NP-OBJ (-NONE- *T*-4)))))
+				    (DEC 的)))
+			    (NP (NN know-how)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	逐渐 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

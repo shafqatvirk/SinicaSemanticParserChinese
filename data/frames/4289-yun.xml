@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity transported"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 原材料)
+		      (CC 及)
+		      (NN 能源)
+		      (NN 物资))
+	      (VP (ADVP (AD 无法))
+		  (PP-MNR (P 按)
+			  (NP (NN 计划)))
+		  (VP (VRD (VV 运)
+			   (VV 进来))))) 
+	  </parse>
+	  <arg n="1">
+	  原材料 及 能源 物资 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 计划 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 产成品))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 难以))
+		  (VP (VRD (VV 运)
+			   (VV 出去))))) 
+	  </parse>
+	  <arg n="1">
+	  产成品 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难以 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

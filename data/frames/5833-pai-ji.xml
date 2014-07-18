@@ -1,0 +1,135 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 排挤 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 pushes aside"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NN 教育界))
+		(VP (VP (ADVP (AD 不))
+			(VP (VV 想)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 当)
+					(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 扩大)
+								(NP-OBJ (NN 国债))))
+							(DEC 的))
+						(NP (NN 帮凶)))))))
+		    (PU ，)
+		    (VP (ADVP (AD 不))
+			(VP (VV 需要)
+			    (NP-OBJ (NN 政府))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (DVP (VP (VE 无)
+					     (NP-OBJ (NN 上限)))
+					 (DEV 的))
+				    (VP (VV 投入)
+					(NP-OBJ (NN 资源)))))))
+		    (PU ，)
+		    (VP (CP-CND (ADVP (CS 只要))
+				(IP (NP-SBJ (NN 教育)
+					    (NN 经费))
+				    (VP (ADVP (AD 不))
+					(VP (SB 被)
+					    (VP (VV 排挤))))))
+			(ADVP (AD 就))
+			(VP (VA 好))))) 
+	</parse>
+	<arg n="1">
+	教育 经费 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="dis">
+	只要 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-SBJ (NP-PN (NR 好莱坞))
+			    (NP (NN 电影)))
+		    (DNP (PP (P 在)
+			     (LCP (NP (NN 全球)
+				      (NN 市场))
+				  (LC 上)))
+			 (DEG 的))
+		    (NP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 独霸)))
+			    (NP (NN 地位)))
+			(PU 、)
+			(NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 排挤)))
+			    (NP (NN 效应)))))
+	    (PU ，)
+	    (VP (VV 使得)
+		(NP-OBJ (NP (DP (DT 各))
+			    (NP (NN 国)))
+			(NP (NN 电影)
+			    (NN 工业)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 极度))
+			(VP (VV 萎缩)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 因为)
+		    (IP (NP-SBJ (NN 施政者))
+			(VP (VV 可能)
+			    (VP (ADVP (AD 无法))
+				(PP-TMP (P 在)
+					(NP (NN 任内)))
+				(VP (VV 看到)
+				    (NP-OBJ (NN 回收)))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 容易))
+		(VP (LB 被)
+		    (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ (ADJP (JJ 一般))
+					(NP (NN 施政)))
+				(VP (VV 排挤)
+				    (NP-OBJ (-NONE- *T*-1)))))))) 
+	</parse>
+	<arg n="0">
+	一般 施政 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	容易 
+	</arg>
+	<arg n="m" f="prp">
+	因为 施政者 可能 无法 在 任内 看到 回收 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

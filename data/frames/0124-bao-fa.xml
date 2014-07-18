@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 爆发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="parties involved"/>
+    <role argnum="1" argrole="incident"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (LCP-TMP (IP (LCP-TMP (NP (NT １０月))
+                            (LC 底))
+                   (NP-PN-SBJ (NR 伊拉克))
+                   (VP (VV 宣布)
+                       (IP-OBJ (NP-SBJ (-NONE- *pro*))
+                               (VP (ADVP (AD 全面))
+                                   (VP (VV 停止)
+                                       (NP-OBJ (DNP (PP (P 与)
+                                                        (NP-PN (NR 联合国)
+                                                               (NN 特委会)))
+                                                    (DEG 的))
+                                               (NP (NN 合作))))))))
+               (LC 后))
+      (PU ，)
+      (NP-PN-SBJ (NR 美)
+                 (NR 伊))
+      (VP (VV 爆发)
+          (AS 了)
+          (NP-OBJ (QP (QP (OD 第三)
+                          (CLP (M 次)))
+                      (CC 也是)
+                      (QP (CP (WHNP-2 (-NONE- *OP*))
+                              (CP (IP (NP-SBJ (-NONE- *T*-2))
+                                      (VP (ADVP (AD 最))
+                                          (VP (VA 严重))))
+                                  (DEC 的)))
+                          (QP (CD 一)
+                              (CLP (M 次)))))
+                  (NP (NN 危机))))
+      (PU 。)))
+	</parse>
+	<arg n="M" f="TMP"> １０月 底 伊拉克 宣布 *pro* 全面 停止 与 联合国 特委会 的 合作 后 </arg>
+	<arg n="0"> 美 伊 </arg>
+	<V/>
+	<arg n="1"> 第三 次 也是 *OP* (*T*-2)->(一次) 最 严重 的 一 次 危机 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NT １９９４年))
+      (NP-SBJ (NP-PN (NR 墨西哥))
+              (NP (NN 金融)
+                  (NN 危机)))
+      (VP (VV 爆发))))
+        </parse>
+	<arg n="M" f="TMP"> １９９４年 </arg>
+	<arg n="1"> 墨西哥 金融 危机 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

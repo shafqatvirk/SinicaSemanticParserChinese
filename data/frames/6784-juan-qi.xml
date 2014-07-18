@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 卷起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place arg0 is occurring"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (ADVP (AD 正))
+		(VP (VV 卷起)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 股)))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 怀旧)))
+				    (DEC 的))
+			    (NP (NN 风潮)))))) 
+	</parse>
+	<arg n="0">
+	一 股 *PRO* 怀旧 的 风潮 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 rolls up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 首先))
+	    (NP-SBJ (PN 他))
+	    (VP (VP (VV 改变)
+		    (NP-OBJ (DNP (NP (NN 检查))
+				 (DEG 的))
+			    (NP (NN 姿势))))
+		(PU ，)
+		(VP (VV 让)
+		    (NP-OBJ (NN 学童))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 卷起)
+				(NP-OBJ (DNP (NP (NN 背部))
+					     (DEG 的))
+					(NP (NN 衣服))))
+			    (PU ，)
+			    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 站)
+					    (AS 著)))
+				(VP (VV 接受)
+				    (NP-OBJ (NN 检查))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	背部 的 衣服 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

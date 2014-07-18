@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 裁抑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity whose power arg0 cuts and suppresses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 又))
+		      (VP (VV 写)
+			  (NP-TTL-OBJ (PU 〈)
+				      (IP-APP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 论)
+						  (NP-OBJ (NN 政事))))
+				      (NP (NN 疏))
+				      (PU 〉))))
+		  (PU ，)
+		  (VP (VV 提醒)
+		      (NP-PN-OBJ (NR 文帝))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 裁抑)
+				  (NP-OBJ (NN 诸王)))
+			      (PU 、)
+			      (VP (VV 捍御)
+				  (NP-PN-OBJ (NR 匈奴)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  诸王 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

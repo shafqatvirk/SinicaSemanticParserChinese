@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 称道 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="praiser"/>
+      <role argnum="1" argrole="thing praised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-5 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NN 经济界))
+			      (VP (ADVP (AD 广为))
+				  (VP (VV 称道)
+				      (NP-OBJ (-NONE- *T*-5)))))
+			  (DEC 的)))
+		  (NP (PU “)
+		      (NP-PN (NR 福津))
+		      (NP (NN 现象))
+		      (PU ”))) 
+	  </parse>
+	  <arg n="0">
+	  经济界 
+	  </arg>
+	  <arg n="1">
+	  *T*-5 
+	  </arg>
+	  <arg n="m" f="adv">
+	  广为 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

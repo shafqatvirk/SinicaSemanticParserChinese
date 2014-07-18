@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 涵盖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 covers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 辩论)
+		    (NN 内容))
+	    (VP (VV 涵盖)
+		(NP-OBJ (DNP (NP (NN 整体)
+				 (NN 国家)
+				 (NN 经济)
+				 (NN 政策)
+				 (CC 与)
+				 (NN 外交)
+				 (NN 发展))
+			     (DEG 的))
+			(NP (NN 走向))))) 
+	</parse>
+	<arg n="0">
+	辩论 内容 
+	</arg>
+	<arg n="1">
+	整体 国家 经济 政策 与 外交 发展 的 走向 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

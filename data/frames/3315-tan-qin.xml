@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 探亲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (DNP (QP (CD 六十五)
+				       (CLP (M 岁)))
+				   (DEG 的))
+			      (NP-PN (NR 香港))
+			      (NP (NN 居民)))
+		      (NP-PN (NR 卢光辉)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (LCP-TMP (QP (CD 五)
+						(CLP (M 年)))
+					    (LC 前))
+				   (VP (VP (VV 回)
+					   (NP-PN-OBJ (NR 广东)))
+				       (VP (VV 探亲)))))
+			   (LC 时))
+		  (PU ，)
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 从)
+				      (NP-PN (NR 深圳)))
+			      (VP (VV 坐)
+				  (NP-OBJ (NN 汽车))
+				  (PP (P 到)
+				      (NP-PN (NR 广州))))))
+		  (VP (VV 花费)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 四)
+				  (CLP (M 个)))
+			      (NP (NN 小时)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  五 年 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

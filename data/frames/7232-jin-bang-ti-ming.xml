@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 金榜题名 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 到)
+			(AS 了)
+			(NP-PN-OBJ (NR 宋朝))))
+	    (VP (DP-ADV (DT 每)
+			(CLP (M 年)))
+		(ADVP (AD 都))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (QP (CD 上百))
+				    (NP (NN 人)))
+			    (VP (VV 金榜题名)))))) 
+	</parse>
+	<arg n="0">
+	上百 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设校 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="school described"/>
+      <role argnum="1" argrole="place arg0 is set up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 曾经))
+				      (PP-PRP (P 因为)
+					      (NP (NN 建地)
+						  (CC 与)
+						  (NN 经费)))
+				      (ADVP (AD 无法))
+				      (PP-LOC (P 在)
+					      (NP-PN (NR 淡水)))
+				      (VP (VV 设校))))
+			      (DEC 的)))
+		      (NP-PN (NR 淡江)
+			     (NN 大学)))
+	      (PU ，)
+	      (VP (ADVP (AD 最终))
+		  (ADVP (AD 还是))
+		  (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (NN 淡水人))
+				   (VP (VP (ADVP (AD 廉价))
+					   (VP (VV 卖)
+					       (NP-OBJ (NN 地))))
+				       (PU 、)
+				       (VP (VV 捐款))
+				       (PU 、)
+				       (CC 与)
+				       (VP (NP-ADV (NN 四处))
+					   (VP (VV 奔走)))))
+			       (LC 後)))
+		  (PU ，)
+		  (VP (VP (VV 留)
+			  (PP (P 在)
+			      (NP (ADJP (JJ 小))
+				  (NP (NN 镇)))))
+		      (VP (VV 生根))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  在 淡水 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 建地 与 经费 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 洗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing washed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 过去))
+	      (NP-SBJ (NN 妇女))
+	      (VP (ADVP (AD 都))
+		  (PP-LOC (P 在)
+			  (LCP (NP (NN 河))
+			       (LC 边)))
+		  (VP (VV 洗)
+		      (NP-OBJ (NN 衣服))))) 
+	  </parse>
+	  <arg n="0">
+	  妇女 	
+	  </arg>
+	  <arg n="1">
+	  衣服 	
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 河 边 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	
+	  </arg>
+	  <arg n="m" f="tmp">
+	  过去 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 棉)
+		      (NN 衣裤))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 一))
+			      (VP (VV 洗))))
+		  (ADVP (AD 就))
+		  (VP (VV 缩水)))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-2 (NN 大楼)
+			(NN 外墙))
+	      (VP (VRD (VV 洗)
+		       (VA 乾净))
+		  (NP-OBJ (-NONE- *-2)))) 
+	  </parse>
+	  <arg n="1">
+	  大楼 外墙 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

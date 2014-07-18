@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 小气 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-IMP (NP-SBJ (-NONE- *pro*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 买)
+				(NP-OBJ (NN 东西))))
+		    (VP (VV 要)
+			(VP (VP (VV 装)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VCD (VA 没钱)
+							 (VA 小气)))))
+					(NP (NN 人))))
+			    (PU ，)
+			    (VP (VP (VP-FOC (VV 问))
+				    (VP (VA 清楚)))
+				(PU 、)
+				(VP (VP-FOC (VV 讲))
+				    (VP (VA 明白)))
+				(VP (ADVP (AD 才))
+				    (VP (VV 付)
+					(NP-OBJ (NN 钱))))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

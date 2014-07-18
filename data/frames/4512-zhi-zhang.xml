@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 执掌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 is in charge of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (VV 替代)
+					  (NP-PN-OBJ (NR 扎加洛)))
+				      (VP (QP-ADV (OD 第一)
+						  (CLP (M 次)))
+					  (VP (VV 执掌)
+					      (NP-OBJ (NN 国家队)
+						      (NN 教鞭))))))
+			      (DEC 的)))
+		      (NP-PN (NR 卢森博格)))
+	      (VP (PP-MNR (P 按)
+			  (NP (DNP (NP (PN 自己))
+				   (DEG 的))
+			      (NP (NN 定位)
+				  (NN 目标))))
+		  (VP (VV 组建)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (NP (NN 国家队)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  国家队 教鞭 
+	  </arg>
+	  <arg n="m" f="adv">
+	  第一 次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 非得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 needs"/>
+      <role argnum="2" argrole="thing arg1 is needed for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 只要))
+			  (ADVP (AD 同步))
+			  (VP (VV 收音))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 非得)
+		  (NP-OBJ (ADJP (ADVP (AD 这麽))
+				(ADJP (JJ 多)))
+			  (NP (NN 钱))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  这麽 多 钱 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 只要 同步 收音 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

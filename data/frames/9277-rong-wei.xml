@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 溶为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 dissolves"/>
+      <role argnum="2" argrole="thing arg1 dissolves to form"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VC 是)
+		      (NP-PRD (LCP (NP (NN 河))
+				   (LC 中))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 溶为)
+					      (NP-OBJ (NN 一体))))
+				      (DEC 的)))
+			      (NP (NN 倒影))))
+		  (PU ，)
+		  (CC 也)
+		  (VP (VC 是)
+		      (NP-PRD (QP (CD 一)
+				  (CLP (M 尊)))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (ADVP (AD 独自))
+					      (VP (VV 停伫)
+						  (LCP-OBJ (NP (NN 岸))
+							   (LC 边)))))
+				      (DEC 的)))
+			      (NP (NN 雕像)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  一体 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

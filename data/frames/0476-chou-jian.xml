@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抽检 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="inspecter"/>
+      <role argnum="1" argrole="thing inspected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国家))
+	      (VP (PP-DIR (P 对)
+			  (NP (QP (CD 五十六)
+				  (CLP (M 家)))
+			      (NP (NN 羽绒)
+				  (NN 服装)
+				  (NN 企业))))
+		  (VP (VV 抽检)))) 
+	  </parse>
+	  <arg n="0">
+	  国家 
+	  </arg>
+	  <arg n="1">
+	  对 五十六 家 羽绒 服装 企业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

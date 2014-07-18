@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 倾倒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 dumps"/>
+    <role argnum="2" argrole="loaction arg1 is dumped into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 司机))
+	    (VP (VP (VP (VV 坐)
+			(PP (P 在)
+			    (LCP (NP (NN 车))
+				 (LC 里))))
+		    (VP (VV 伸出)
+			(NP-OBJ (NN 机器)
+				(NN 怪手)))
+		    (VP (VV 夹起)
+			(NP-OBJ (NN 垃圾)
+				(NN 桶))))
+		(PU ，)
+		(VP (ADVP (AD 直接))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 垃圾))
+				(VP (VV 倾倒)
+				    (PP (P 於)
+					(LCP (NP (CP (WHNP-4 (-NONE- *OP*))
+						     (CP (IP (NP-SBJ (-NONE- *T*-4))
+							     (VP (VA 封闭)))
+							 (DEC 的)))
+						 (NP (NN 车箱)))
+					     (LC 中))))))))) 
+	</parse>
+	<arg n="0">
+	司机 
+	</arg>
+	<arg n="1">
+	垃圾 
+	</arg>
+	<arg n="2">
+	於 *OP* *T*-4 封闭 的 车箱 中 
+	</arg>
+	<arg n="m" f="adv">
+	直接 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 废弃物)
+		    (NN 垃圾))
+	    (VP (ADVP (AD 随意))
+		(VP (VV 倾倒)))) 
+	</parse>
+	<arg n="1">
+	废弃物 垃圾 
+	</arg>
+	<arg n="m" f="adv">
+	随意 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

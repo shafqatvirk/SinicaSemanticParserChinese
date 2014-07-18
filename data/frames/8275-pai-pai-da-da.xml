@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拍拍打打 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 看)
+		      (NP-OBJ (PN 他))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (DVP (VP (VA 随兴))
+				       (DEV 地))
+				  (VP (VV 拍拍打打)))
+			      (PU ，)
+			      (VP (VV 接合)
+				  (NP-OBJ (NN 罐身))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随兴 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

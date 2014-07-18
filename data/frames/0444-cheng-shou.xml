@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承受 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="endurer, bearer"/>
+      <role argnum="1" argrole="pain, disease, or burden"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC-3 (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VA 昂贵)))
+				(DEC 的)))
+			(NP (NN 干扰素)))
+	      (NP-SBJ (QP (CD 大多数))
+		      (NP (NN 患者)))
+	      (VP (ADVP (AD 难以))
+		  (VP (VV 承受)
+		      (NP-OBJ (-NONE- *T*-3))))) 
+	  </parse>
+	  <arg n="0">
+	  大多数 患者 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难以 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

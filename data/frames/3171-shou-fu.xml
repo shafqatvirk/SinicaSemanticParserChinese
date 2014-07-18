@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收复 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing recovered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NP (DP (DT 各))
+					    (NP (NN 国)))
+					(NP (NN 军队)))
+				    (DEG 的))
+			       (NP (NN 协助)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 刚果)
+			     (PRN (PU （)
+				  (NP-PN (NR 金))
+				  (PU ）)))
+		      (NP (NN 政府军)))
+	      (VP (ADVP (AD 连连))
+		  (VP (VV 收复)
+		      (NP-OBJ (NN 失地))))) 
+	  </parse>
+	  <arg n="0">
+	  刚果 （ 金 ） 政府军 
+	  </arg>
+	  <arg n="1">
+	  失地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连连 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 各 国 军队 的 协助 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

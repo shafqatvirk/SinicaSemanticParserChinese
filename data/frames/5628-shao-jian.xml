@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 少见 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="area arg0 is rare"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 昂起)
+					(NP-OBJ (ADJP (JJ 大))
+						(NP (NN 头))))
+				    (PU 、)
+				    (VP (VV 张大)
+					(NP-OBJ (NN 嘴巴)))))
+			    (DEC 的)))
+		    (ADJP (JJ 金))
+		    (NP (NN 虎)))
+	    (PU ，)
+	    (VP (VRD (VV 凸显)
+		     (VV 出))
+		(NP-OBJ (DNP (NP (NP-PN (NR 三星堆))
+				 (P 与)
+				 (NP (CP (WHNP-2 (-NONE- *OP*))
+					 (IP (NP-SBJ (-NONE- *T*-2))
+					     (VP (VV 少见)
+						 (NP-OBJ (NN 金器)))))
+				     (NP (NP (NP-PN (NR 黄河))
+					     (NP (NN 流域)))
+					 (NP (NN 文明)))))
+			     (DEG 的))
+			(NP (NN 大异))))) 
+	</parse>
+	<arg n="0">
+	金器 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (VP (CC 不仅 (VP (VC 是)
+			    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (NP-PN-LOC (NR 中国))
+						    (ADVP (AD 历来))
+						    (VP (VV 少见))))
+					    (DEC 的)))
+				    (ADJP (JJ 巨大))
+				    (NP (NN 人像)))))
+		    (PU ，)
+		    (CC 也)
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (LCP-LOC (NP (NP (ADJP (JJ 同))
+								 (NP (NN 时期)))
+							     (NP (NN 世界)
+								 (NN 文明)))
+							 (LC 中))
+						(ADVP (AD 极为))
+						(VP (VA 罕见))))
+					(DEC 的)))
+				(NP (ADJP (JJ 大))
+				    (NP (NN 铜)
+					(NN 人)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	中国 
+	</arg>
+	<arg n="m" f="adv">
+	历来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

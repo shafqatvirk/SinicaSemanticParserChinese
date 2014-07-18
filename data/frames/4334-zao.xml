@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 早 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 自)
+		  (LCP (IP (NP-TMP (NT 一九八０年))
+			   (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (NP-LOC (ADJP (JJ 新))
+							   (NP-PN (NR 中国)))
+						   (ADVP (AD 最))
+						   (VP (VA 早))))
+					   (DEC 的)))
+				   (QP (CD 一)
+				       (CLP (M 家)))
+				   (NP (NN 外商)
+				       (NN 投资)
+				       (NN 企业))
+				   (PRN (PU ——)
+					(NP-PN (NR 北京)
+					       (NN 国际)
+					       (NN 配餐)
+					       (NN 公司))))
+			   (VP (VV 成立)))
+		       (LC 以来))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <arg n="m" f="loc">
+	  新 中国 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (PP (P 比)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (ADVP (AD 以往))
+					  (VP (VV 发现)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (NN 早期)
+			      (NN 被子)
+			      (NN 植物)
+			      (NN 化石))))
+		  (VP (VA 早)
+		      (QP-EXT (QP (CD 一千五百万)
+				  (CLP (M 年)))
+			      (CC 至)
+			      (QP (CD 二千万)
+				  (CLP (M 年))))))) 
+	  </parse>
+	  <arg n="0">
+	  它 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一千五百万 年 至 二千万 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 *OP* *pro* 以往 发现 *T*-1 的 早期 被子 植物 化石 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

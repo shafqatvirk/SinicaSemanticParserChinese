@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 纳闷 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 wonders about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 仰望)
+			    (NP-OBJ (DP (DT 那)
+					(QP (CD 一)
+					    (CLP (M 尊尊))))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (IP (NP-TPC (-NONE- *T*-1))
+						    (NP-SBJ (NN 高度))
+						    (VP (VV 在)
+							(LCP-OBJ (QP (CD 一百八十)
+								     (CLP (M 公分)))
+								 (LC 以上))))
+						(PU ，)
+						(IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (PP (P 比)
+							    (NP (NN 现代人)))
+							(ADVP (AD 还))
+							(VP (VCD (VA 高大)
+								 (VA 英勇))))))
+					    (DEC 的)))
+				    (NP (NN 人俑)))))
+		(PU ，)
+		(ADVP (AD 不禁))
+		(VP (VV 纳闷)
+		    (CP-Q-OBJ (IP (NP-SBJ (DNP (NP (NT 当时))
+					       (DEG 的))
+					  (NP (NN 男儿)))
+				  (VP (ADVP (AD 都))
+				      (ADVP (AD 如此))
+				      (VP (VA 高大))))
+			      (SP 吗))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	当时 的 男儿 都 如此 高大 吗 
+	</arg>
+	<arg n="m" f="adv">
+	不禁 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 仰望 那 一 尊尊 *OP* *T*-1 高度 在 一百八十 公分 以上 ， *T*-1 比 现代人 还 高大 英勇 的 人俑 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

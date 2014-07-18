@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 警告 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="warner"/>
+      <role argnum="1" argrole="warned person"/>
+      <role argnum="2" argrole="warning"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 叶利钦))
+		  (VP (VV 警告)
+		      (NP-OBJ (NN 西方))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 要)
+				  (VP (VV 空袭)
+				      (NP-OBJ (NP (NP-PN (NR 波黑))
+						  (NP (NN 塞族)))
+					      (NP (NN 阵地))))))))) 
+	  </parse>
+	  <arg n="0">
+	  叶利钦 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  西方 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 不 要 空袭 波黑 塞族 阵地 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb> 

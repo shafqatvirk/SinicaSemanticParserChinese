@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 节约 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 兑现)
+			      (NP-OBJ (DP (DT 这)
+					  (QP (CD 一)))
+				      (NP (NN 承诺))))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 日本))
+		      (NP (NN 政府)))
+	      (VP (VV 修改)
+		  (AS 了)
+		  (NP-TTL-OBJ (PU 《)
+			      (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 节约)
+					  (NP-OBJ (NN 能源))))
+			      (NP (NN 法))
+			      (PU 》)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  能源 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TPC (ADVP (AD 仅))
+		      (DP (DT 此)
+			  (QP (CD 一)
+			      (CLP (M 项)))))
+	      (NP-SBJ (ADJP (JJ 大))
+		      (NP (NN 运河)))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 就))
+		  (PP-BNF (P 为)
+			  (NP (NN 厂家)))
+		  (VP (VV 节约)
+		      (NP-OBJ (NN 成本))
+		      (QP-EXT (CD 二千多万)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  大 运河 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  成本 	  	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  二千多万 元 	  	  	  
+	  </arg>
+	  <arg n="m" f="tpc">
+	  仅 此 一 项 	  	  
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 厂家 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="thrifty">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  No example yet. 
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

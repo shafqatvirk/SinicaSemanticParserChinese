@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 割 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity cut"/>
+    <role argnum="2" argrole="thing created through cutting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 男士)))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (VP (VP (LB 被)
+			    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (NN 太太))
+					(VP (VV 逼)
+					    (AS 著)
+					    (NP-OBJ (-NONE- *T*-2))))))
+			(VP (MSP 去)
+			    (VP (VP (VV 割)
+				    (NP-OBJ (NN 双眼皮)))
+				(PU 、)
+				(VP (VV 抽脂)))))))) 
+	</parse>
+	<arg n="0">
+	许多 男士 
+	</arg>
+	<arg n="2">
+	双眼皮 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 应)
+					(NP-OBJ (NN 都市)
+						(NN 计划)))
+				    (VP (MSP 而)
+					(VP (VV 生)))))
+			    (DEC 的)))
+		    (NP (NN 街道)))
+	    (PU ，)
+	    (VP (DVP (QP (QP (CD 一)
+			     (CLP (M 笔)))
+			 (QP (CD 一)
+			     (CLP (M 划))))
+		     (DEV 地))
+		(VP (VV 割)
+		    (PP (P 在)
+			(LCP (NP (NP-PN (NR 八里))
+				 (NP (NN 土地)))
+			     (LC 上)))))) 
+	</parse>
+	<arg n="1">
+	在 八里 土地 上 
+	</arg>
+	<arg n="2">
+	*OP* *T*-1 应 都市 计划 而 生 的 街道 
+	</arg>
+	<arg n="m" f="adv">
+	一 笔 一 划 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

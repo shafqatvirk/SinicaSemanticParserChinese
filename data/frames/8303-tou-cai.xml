@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投柴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 没有)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 投柴)
+					  (PU 、)
+					  (VV 烟熏)))
+				  (DEC 的))
+			  (NP (NN 接触))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扩散 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing spread"/>
+      <role argnum="2" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 应用)
+			  (NP-OBJ (-NONE- *RNR*-1)))
+		      (PU 、)
+		      (VP (VV 转移)
+			  (NP-OBJ (-NONE- *RNR*-1)))
+		      (PU 、)
+		      (VP (VV 扩散)
+			  (NP-OBJ-1 (ADJP (JJ 新))
+				    (NP (NN 技术)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  新 技术 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DP (DT 这些))
+			(NP (NN 企业)))
+		(VP (ADVP (AD 还))
+		    (VP (VP (BA 把)
+			    (IP-OBJ (NP-SBJ (QP (CD 三点六万)
+						(CLP (M 项)))
+					    (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VV 拥有)
+							    (NP-OBJ (NN 自主)
+								    (NN 知识)
+								    (NN 产权))))
+						    (DEC 的)))
+					    (NP (NN 技术)))
+				    (VP (PP-DIR (P 向)
+						(NP (DP (DT 其它))
+						    (NP (NN 企业)
+							(PU 、)
+							(NN 机构))))
+					(VP (VV 转移)
+					    (CC 和)
+					    (VV 扩散)))))
+			(PU ，)
+			(VP (VV 创造)
+			    (NP-OBJ (NN 收入))
+			    (QP-EXT (CD 四十四点三亿)
+				    (CLP (M 元))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  这些 企业 
+	  </arg>
+	  <arg n="1">
+	  三点六万 项 *OP* *T*-1 拥有 自主 知识 产权 的 技术 
+	  </arg>
+	  <arg n="2">
+	  向 其它 企业 、 机构 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

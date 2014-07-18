@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上市 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity going on the market"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国)
+				 (NN 电信)
+				 (PRN (PU （)
+				      (NP-PN (NR 香港))
+				      (PU ）)))
+			  (NP (NN 股票)))
+		  (VP (PP-LOC (P 在)
+			      (NP-PN (NR 香港)
+				     (PU 、)
+				     (NR 纽约)))
+		      (ADVP (AD 同时))
+		      (VP (VV 上市)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 电信 （ 香港 ） 股票 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 香港 、 纽约 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (IP-APP (NP-SBJ (DP (DT 这)
+					  (CLP (M 家)))
+				      (NP (NN 公司)))
+			      (VP (VV 上市)
+				  (NP-OBJ (NN 全球))))
+		      (ADJP (JJ 主))
+		      (NP (NN 承销商)
+			  (CC 和)
+			  (NN 保荐人)))
+	      (VP (VC 为)
+		  (NP-PRD (NP-PN (NP-PN (NR 中国))
+				 (NP (NN 国际)
+				     (NN 金融))
+				 (ADJP (JJ 有限))
+				 (NP (NN 公司)))
+			  (CC 和)
+			  (NP-PN (NR 美国)
+				 (NR 高盛)
+				 (NN 公司))))) 
+	  </parse>
+	  <arg n="0">
+	  这 家 公司 
+	  </arg>
+	  <arg n="m" f="loc">
+	  全球 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 广州市))
+	      (NP-TMP (NT 近期))
+	      (NP-SBJ (CP (WHNP-SBJ-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (NN 蔬菜))
+			      (VP (ADVP (AD 日))
+				  (VP (VV 上市)
+				      (NP-EXT (-NONE- *-1))))))
+		      (NP (NN 量)))
+	      (VP (VV 保持)
+		  (PP (P 在)
+		      (LCP (QP (CD 二百五十万)
+			       (CLP (M 公斤)))
+			   (LC 以上))))) 
+	  </parse>
+	  <arg n="0">
+	  蔬菜 
+	  </arg>
+	  <arg n="0" f="QTY">
+	  *-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

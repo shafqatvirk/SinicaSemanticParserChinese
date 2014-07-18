@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 爬行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 别看))
+	      (NP-SBJ (ADJP (JJ 小))
+		      (NP (NN 海龟)))
+	      (VP (VP-FOC (PP-LOC (P 在)
+				  (LCP (NP (NN 沙滩))
+				       (LC 上)))
+			  (VP (VV 爬行)))
+		  (VP (ADVP (AD 往往))
+		      (VP (VV 显得)
+			  (VP (VA 笨拙)))))) 
+	  </parse>
+	  <arg n="0">
+	  小 海龟 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 沙滩 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

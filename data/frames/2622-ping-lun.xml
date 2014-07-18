@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 评论 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity commented on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 董建华))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (VV 评论)
+				       (NP-OBJ (DP (DT 该))
+					       (NP (NN 指数)))))
+			       (LC 时)))
+		  (VP (VV 表示)
+		      (PU ，)
+		      (IP-OBJ (NP-PN-SBJ (NR 香港))
+			      (VP (ADVP (AD 已))
+				  (QP-ADV (ADVP (AD 连续))
+					  (QP (CD 四)
+					      (CLP (M 年))))
+				  (VP (VV 成为)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (NP-LOC (NN 全球))
+							      (ADVP (AD 最))
+							      (VP (VA 自由))))
+						      (DEC 的)))
+					      (NP (NN 经济)
+						  (NN 体系)))))))) ) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  该 指数 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="comment given"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 舆论))
+		  (VP (VP (VV 评论))
+		      (VP (VV 说)
+			  (PU ：)
+			  (IP-OBJ (PU “)
+				  (NP-SBJ (DP (DT 这)
+					      (CLP (M 场)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VA 空前)))
+						  (DEC 的)))
+					  (NP (NN 金融)
+					      (NN 浩劫)))
+				  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 至少))
+						  (VP (VV 提前)
+						      (QP-OBJ (CD 二十)
+							      (CLP (M 年))))))
+				      (VP (BA 把)
+					  (IP-OBJ (NP-PN-SBJ (NR 中国))
+						  (VP (VV 推上)
+						      (AS 了)
+						      (NP-OBJ (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+									  (CP (IP (NP-SBJ (-NONE- *T*-2))
+										  (VP (VV 影响)
+										      (NP-OBJ (NN 全球)
+											      (NN 金融))))
+									      (DEC 的)))
+								      (ADJP (JJ 大))
+								      (NP (NN 国)))
+							      (NP (NN 地位))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  舆论 
+	  </arg>
+	  <arg n="1">
+	  “ 这 场 *OP* *T*-1 空前 的 金融 浩劫 *PRO* 至少 提前 二十 年 把 中国 推上 了 *OP* *T*-2 影响 全球 金融 的 大 国 地位 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

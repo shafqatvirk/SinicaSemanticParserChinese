@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 刮到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing (wind) described"/>
+    <role argnum="1" argrole="place arg0 reaches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (PU 「)
+				(NP-SBJ (NN 新))
+				(VP (ADVP (AD 就))
+				    (VP (VC 是)
+					(NP-PRD (NN 好))))
+				(PU 」))
+			    (DEC 的))
+		    (NP (NN 投资)
+			(NN 歪风)))
+	    (VP (ADVP (AD 同样))
+		(VP (VV 刮到)
+		    (NP-PN-OBJ (NR 台湾))))) 
+	</parse>
+	<arg n="0">
+	「 新 就 是 好 」 的 投资 歪风 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<arg n="m" f="adv">
+	同样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

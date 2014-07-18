@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 直言 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 says frankly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 丁松筠))
+	    (VP (VV 直言)
+		(PU ，)
+		(IP-OBJ (NP-TPC (CP-APP (IP (NP-TPC (NN 电视界))
+					    (NP-SBJ (NN 竞争))
+					    (VP (VA 激烈)))
+					(DEC 的))
+				(NP (NN 生态)))
+			(PU ，)
+			(NP-PN-SBJ (NR 光启社))
+			(VP (ADVP (AD 还))
+			    (VP (VV 没有)
+				(VP (ADVP (AD 完全))
+				    (VP (VRD (VV 适应)
+					     (VV 过来))))))))) 
+	</parse>
+	<arg n="0">
+	丁松筠 
+	</arg>
+	<arg n="1">
+	电视界 竞争 激烈 的 生态 ， 光启社 还 没有 完全 适应 过来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

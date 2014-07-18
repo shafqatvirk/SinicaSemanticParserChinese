@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 距 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="distance/difference between entities of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VP (VV 距)
+				      (NP-PN-OBJ (NR 成都))
+				      (QP-EXT (CD 八十六)
+					      (CLP (M 公里))))
+				  (PU ，)
+				  (VP (VV 占地)
+				      (QP-OBJ (CD 一千)
+					      (CLP (M 亩))))))
+			  (DEC 的)))
+		  (NP (NP-PN (NR 花水湾))
+		      (NP (NN 温泉)))
+		  (NP (NN 开发区))) 
+	  </parse>
+	  <arg n="0" f="crd">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="0" f="crd">
+	  成都 	  
+	  </arg>
+	  <arg n="1">
+	  八十六 公里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-TMP (NT 目前))
+		  (PU ，)
+		  (NP-SBJ (DP (DT 该))
+			  (NP (NN 指数)))
+		  (VP (PP (P 比)
+			  (NP (NT 年初)))
+		      (VP (VV 升高)
+			  (QP-OBJ (CD 百分之十六点七)))))
+	      (PU ，)
+	      (IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 距)
+			      (QP-OBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *pro*))
+							  (VP (NP-TMP (NT １１月)
+								      (NT ２３日))
+							      (VP (MSP 所)
+								  (VP (VV 创)
+								      (NP-OBJ (-NONE- *T*-1))))))
+						      (DEC 的)))
+					      (NP (NN 历史)
+						  (NN 最高点)))
+				      (QP (CD ９３７４．２７)
+					  (CLP (M 点))))))
+		  (VP (ADVP (AD 只))
+		      (VP (VV 差)
+			  (QP-OBJ (CD １４７)
+				  (CLP (M 点))))))) 
+	  </parse>
+	  <arg n="0" f="crd">
+	  *pro* 	  
+	  </arg>
+	  <arg n="0" f="crd">
+	  *OP* *pro* １１月 ２３日 所 创 *T*-1 的 历史 最高点 ９３７４．２７ 点 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

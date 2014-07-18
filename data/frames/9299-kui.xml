@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 窥 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 sees"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 让)
+		  (NP-OBJ (NN 後人))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 得)
+			  (VP (VV 窥)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 古代)
+							  (NN 大学生))
+						  (VP (VV 上课)))
+					      (DEC 的))
+				      (NP (NN 情景)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  古代 大学生 上课 的 情景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

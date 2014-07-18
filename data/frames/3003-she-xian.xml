@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 涉嫌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity suspected"/>
+      <role argnum="1" argrole="thing suspected to have done"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 检察)
+		      (NN 机关))
+	      (VP (VV 决定)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 对)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 涉嫌)
+							  (NP-OBJ (NN 犯罪))))
+						  (DEC 的)))
+					  (QP (CD 九))
+					  (NP (NN 人))))
+			      (VP (VV 予以)
+				  (NP-OBJ (NN 逮捕))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  犯罪 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD ２))
+	      (PU ．)
+	      (NP-SBJ (NN 足坛))
+	      (VP (VV 发生)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 涉嫌)
+					  (IP-OBJ (NP-SBJ (NN 运动员))
+						  (VP (VV 打假球)))))
+				  (DEC 的))
+			  (NP (NN 丑闻))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  运动员 打假球 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

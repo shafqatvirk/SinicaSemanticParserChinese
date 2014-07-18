@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 决定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing decided/determined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VP (NP-TMP (NT 过去))
+		      (VP (VV 没有)
+			  (VP (VV 屈服)
+			      (PP-EXT (P 于)
+				      (NP (DP (DT 任何))
+					  (ADJP (JJ 外来))
+					  (NP (NN 压力)))))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 现在))
+		      (ADVP (AD 仍然))
+		      (DVP (VP (VA 始终不渝))
+			   (DEV 地))
+		      (VP (VV 维护)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (PN 自己))
+					      (VP (VV 决定)
+						  (NP-OBJ (PN 自己)
+							  (NT 未来))))
+					  (DEC 的))
+				  (NP (NN 权利))))))) 
+	  </parse>
+	  <arg n="0">
+	  自己 
+	  </arg>
+	  <arg n="1">
+	  自己 未来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-PN-SBJ (NN 进出口)
+			     (NN 银行))
+		  (VP (VV 决定)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 先))
+				  (PP-LOC (P 在)
+					  (NP-PN (NR 日本)))
+				  (VP (VV 取得)
+				      (NP-OBJ (NN 信用)
+					      (NN 评级))))))) 
+	  </parse>
+	  <arg n="0">
+	  进出口 银行 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 先 在 日本 取得 信用 评级 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ-2 (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 是否))
+			    (VP (VP (VV 增加)
+				    (NP-OBJ (-NONE- *RNR*-1)))
+				(CC 或)
+				(VP (VV 减少)
+				    (NP-OBJ-1 (PU “)
+					      (NN 闰秒)
+					      (PU ”))))))
+	      (VP (ADVP (AD 主要))
+		  (PP-LGS (P 由)
+			  (NP-PN (NN 国际)
+				 (NN 地球)
+				 (NN 自转)
+				 (NN 研究)
+				 (NN 中心)))
+		  (VP (VV 决定)
+		      (IP-OBJ (-NONE- *-2))))) 
+	  </parse>
+	  <arg n="0">
+	  由 国际 地球 自转 研究 中心 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

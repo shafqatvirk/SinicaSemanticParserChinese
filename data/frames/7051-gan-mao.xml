@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 感冒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (DP-ADV (DT 那)
+		    (CLP (M 次)))
+	    (NP-PN-SBJ (NR 千千))
+	    (VP (PP-PRP (P 因)
+			(IP (NP-SBJ (NN 寒流))
+			    (VP (VV 来袭))))
+		(VP (VCD (VV 感冒)
+			 (VV 发烧))))) 
+	</parse>
+	<arg n="0">
+	千千 
+	</arg>
+	<arg n="m" f="prp">
+	因 寒流 来袭 
+	</arg>
+	<arg n="m" f="adv">
+	那 次 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

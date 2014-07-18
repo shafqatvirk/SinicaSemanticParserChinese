@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 热卖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place argo sells well"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NN 招财物))
+		    (VP (VV 热卖)))
+	    (VP (ADVP (AD 其实))
+		(ADVP (AD 不))
+		(VP (VV 分)
+		    (IP-OBJ (NP-SBJ (NN 景气))
+			    (VP (VCD (VA 好)
+				     (VA 坏))))))) 
+	</parse>
+	<arg n="0">
+	招财物 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 过去))
+				    (VP (VV 热卖))))
+			    (DEC 的)))
+		    (NP (NN 外销)
+			(NN 市场)))
+	    (VP (ADVP (AD 早))
+		(PP-PRP (P 因)
+			(NP (IP-APP (IP (NP-PN-TPC (NR 台湾))
+					(IP (IP (NP-SBJ (NN 工资))
+						(VP (VV 上涨)))
+					    (PU 、)
+					    (IP (NP-SBJ (NN 成本))
+						(VP (VV 提升)))))
+				    (PU ，)
+				    (CC 与)
+				    (IP (NP-SBJ (NN 国际)
+						(NN 茶叶)
+						(NN 市场))
+					(VP (VA 饱和)))
+				    (ETC 等))
+			    (NP (NN 因素))))
+		(VP (MSP 而)
+		    (VP (VV 失去)
+			(NP-OBJ (NN 竞争)
+				(NN 优势)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="tmp">
+	过去 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="level the sale of arg0 reaches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 结果))
+	    (NP-SBJ (DNP (NP (DP (DT 当)
+				 (CLP (M 期)))
+			     (NP (NN 杂志)))
+			 (DEG 的))
+		    (NP (NN 销售量)))
+	    (VP (ADVP (AD 竟然))
+		(VP (VP (VV 一飞冲天))
+		    (PU ，)
+		    (VP (VRD (VV 热卖)
+			     (VV 成))
+			(QP-OBJ (NP (DP (DT 该))
+				    (NP (NN 刊)))
+				(QP (ADVP (AD 有史以来))
+				    (QP (OD 第五)
+					(CLP (ADJP (JJ 高))
+					     (CLP (M 位)))))))))) 
+	</parse>
+	<arg n="0">
+	当 期 杂志 的 销售量 
+	</arg>
+	<arg n="1">
+	该 刊 有史以来 第五 高 位 
+	</arg>
+	<arg n="m" f="adv">
+	竟然 
+	</arg>
+	<arg n="m" f="adv">
+	结果 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

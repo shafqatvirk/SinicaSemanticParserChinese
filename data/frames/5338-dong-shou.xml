@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 动手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (DP (DT 这)
+			     (QP (CD 一)
+				 (CLP (M 次))))
+			 (DEG 的))
+		    (QP-PN (NP-PN (NR 阿里山))
+			   (QP (OD 二十六)
+			       (CLP (M 号))))
+		    (NP (NN 修复)
+			(NN 计划)))
+	    (PU ，)
+	    (NP-TPC (QP (CD 许多))
+		    (NP (NN 工作)))
+	    (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 都))
+		(ADVP (AD 亲自))
+		(VP (VV 动手)))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="m" f="adv">
+	亲自 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tpc">
+	许多 工作 
+	</arg>
+	<arg n="m" f="tpc">
+	这 一 次 的 阿里山 二十六 号 修复 计划 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VE 没有)
+			     (NP-OBJ (DNP (ADJP (JJ 现成))
+					  (DEG 的))
+				     (NP (NN 工具)))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (NP-ADV (PN 自己))
+		(VP (VV 动手)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 做)))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="m" f="adv">
+	自己 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 没有 现成 的 工具 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 天差地远 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 离)
+			(QP-OBJ (DNP (LCP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (LCP-ADV (QP (CD 五)
+							       (CLP (M 年)))
+							   (LC 前))
+						  (ADVP (AD 初))
+						  (VP (VV 上市))))
+					  (LC 时))
+				     (DEG 的))
+				(QP (CD 十四)
+				    (CLP (M 美元))))))
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (VP (VV 天差地远))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 离 *pro* 五 年 前 初 上市 时 的 十四 美元 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

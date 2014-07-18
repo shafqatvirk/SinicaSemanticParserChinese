@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 焚烧 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 burns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-PN-SBJ (NR 秦始皇))
+			 (VP (VV 焚书坑儒)))
+		     (LC 之後))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 项羽))
+	    (VP (ADVP (AD 又))
+		(VP (VV 焚烧)
+		    (NP-PN-OBJ (NR 咸阳城))))) 
+	</parse>
+	<arg n="0">
+	项羽 
+	</arg>
+	<arg n="1">
+	咸阳城 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="tmp">
+	秦始皇 焚书坑儒 之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NN 祭祀))
+			 (VP (VV 完毕)))
+		     (LC 之後))
+	    (PU ，)
+	    (PP-PRP (ADVP (AD 或许是))
+		    (PP (P 因为)
+			(NP (DNP (NP (NN 王朝))
+				 (DEG 的))
+			    (NP (NN 更迭)))))
+	    (PU ，)
+	    (NP-PRP (ADVP (AD 或许是))
+		    (QP (CD 一)
+			(CLP (M 种)))
+		    (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-MNR (P 藉由)
+					(NP (NN 焚烧)))
+				(VP (VV 上达)
+				    (NP-OBJ (NN 天神)))))
+		    (NP (NN 用意)))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VA 精美)
+				    (DEC 的)))))
+		    (NP (NN 神像)
+			(CC 与)
+			(NN 礼器)))
+	    (VP (VP (PP-LOC (P 在)
+			    (LCP (NP (NN 熊熊烈火))
+				 (LC 中)))
+		    (VP (VV 焚烧)
+			(PU 、)
+			(VV 损毁)))
+		(PU ，)
+		(VP (ADVP (AD 再))
+		    (VP (VV 埋入)
+			(LCP-OBJ (NP (NN 土坑))
+				 (LC 之中)))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-2 精美 的 神像 与 礼器 
+	</arg>
+	<arg n="m" f="loc">
+	在 熊熊烈火 中 
+	</arg>
+	<arg n="m" f="prp">
+	或许是 一 种 *PRO* 藉由 焚烧 上达 天神 用意 
+	</arg>
+	<arg n="m" f="prp">
+	或许是 因为 王朝 的 更迭 
+	</arg>
+	<arg n="m" f="tmp">
+	祭祀 完毕 之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 祭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (NP (NN 国际)
+		      (NN 儒学)
+		      (NN 研讨会))
+		  (CC 及)
+		  (NP (ADJP (JJ 大型))
+		      (IP-APP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 祭)
+				  (NP-PN-OBJ (NR 孔))))
+		      (NP (NN 活动)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  孔 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

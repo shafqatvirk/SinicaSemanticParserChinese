@@ -1,0 +1,125 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回答 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="replier"/>
+      <role argnum="1" argrole="question"/>
+      <role argnum="2" argrole="answer arg0 gives"/>
+      <role argnum="3" argrole="person arg0 answers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 签字)
+				   (NN 仪式))
+			   (VP (VV 结束)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 阿卡耶夫)
+			     (NN 总统))
+		      (CC 和)
+		      (NP-PN (NR 李鹏)
+			     (NN 总理)))
+	      (VP (ADVP (AD 分别))
+		  (VP (VV 回答)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 记者))
+				   (DEG 的))
+			      (NP (NN 提问)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  阿卡耶夫 总统 和 李鹏 总理 	  
+	  </arg>
+	  <arg n="1">
+	  记者 的 提问 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  签字 仪式 结束 后 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP-OBJ (NP-SBJ (DNP (QP (CD 五成三))
+				       (DEG 的))
+				  (NP (NN 人)))
+			  (VP (VV 回答)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 知道)))))))) 
+	  </parse>
+	  <arg n="0">
+	  五成三 的 人 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 不 知道 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 邱复生))
+		  (VP (VP (VV 回答)
+			  (NP-OBJ (PN 他)))
+		      (VP (VV 说)
+			  (PU ，)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (ADVP (AD 就))
+					  (VP (VC 是)
+					      (VP (VV 要)
+						  (VP (VV 找)
+						      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+								  (CP (IP (NP-SBJ (-NONE- *T*-1))
+									  (VP (VP (VC 非)
+										  (VP (NP-DIR (NN 电视))
+										      (VP (VV 出身))))
+									      (VP (ADVP (AD 又))
+										  (VP (VV 懂)
+										      (NP-OBJ (NN 新闻))))))
+								      (DEC 的)))
+							      (NP (NN 人)))))))
+				      (PU ，)
+				      (VP (ADVP (AD 才))
+					  (VP (VV 可以)
+					      (VP (VV 摆脱)
+						  (NP-OBJ (DNP (ADJP (ADJP (JJ 传统))
+								     (ADJP (JJ 制式)))
+							       (DEG 的))
+							  (NP (NN 报导)
+							      (NN 方式))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  邱复生 
+	  </arg>
+	  <arg n="3">
+	  他 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

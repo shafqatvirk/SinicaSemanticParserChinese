@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伤害 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity injured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 指明)
+	      (NP-OBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (ADVP (AD 严重))
+					  (VP (VP (VV 伤害)
+						  (NP-OBJ (NP (NP (QP (CD 两))
+								  (NP (NN 岸)))
+							      (NP (NN 同胞)))
+							  (NP (NN 感情))))
+					      (PU 、)
+					      (VP (VV 破坏)
+						  (NP-OBJ (NP (QP (CD 两))
+							      (NP (NN 岸)))
+							  (ADJP (JJ 和谐))
+							  (NP (NN 气氛))))))))
+			      (DEC 的)))
+		      (ADJP (JJ 不人道))
+		      (NP (NN 行为)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  两 岸 同胞 感情 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

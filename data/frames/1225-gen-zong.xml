@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跟踪 </id>
+    <frameset id="f1" edef="keep track of">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 包括)
+					      (LCP-OBJ (NP (NP-PN (NR 港)
+								  (NR 澳))
+							   (NP (NN 地区)))
+						       (LC 在内))))
+				      (DEC 的)))
+			      (NP-PN (NR 中国))
+			      (DP (DT 各))
+			      (NP (NN 地)))
+			  (NP (NN 乘客)
+			      (CC 和)
+			      (NN 货主)))
+		  (VP (PP-MNR (P 通过)
+			      (NP (DP (DT 该))
+				  (NP (NN 网))))
+		      (VP (VP (VV 查询)
+			      (NP-OBJ (NN 铁路)
+				      (NN 运行)
+				      (NN 情况)))
+			  (PU ，)
+			  (VP (ADVP (AD 提前))
+			      (VP (VV 预订)
+				  (NP-OBJ (NN 客票)
+					  (CC 或)
+					  (NN 货位))))
+			  (PU ，)
+			  (CC 以及)
+			  (VP (VV 跟踪)
+			      (NP-OBJ (NP (NN 货物))
+				      (NP (NN 发)
+					  (PU 、)
+					  (NN 到站))
+				      (NP (NN 位置))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 包括 港 澳 地区 在内 的 中国 各 地 乘客 和 货主 
+	  </arg>
+	  <arg n="1">
+	  货物 发 、 到站 位置 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 该 网 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

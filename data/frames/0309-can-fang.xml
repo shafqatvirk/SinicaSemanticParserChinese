@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 参访 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="visitor"/>
+    <role argnum="1" argrole="thing, place visited"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 祖国)
+              (NN 大陆))
+      (VP (VP (VV 采取)
+              (NP-OBJ (ADJP (JJ 积极))
+                      (NP (NN 措施))))
+          (VP (VV 推动)
+              (NP-OBJ (NP (QP (CD 两))
+                          (NP (NN 岸)))
+                      (NP (NN 政治)
+                          (NN 谈判))))
+          (PU ，)
+          (VP (VV 促成)
+              (NP-OBJ (NP-APP (NP-PN (NR 台湾)
+                                     (NN 海峡)
+                                     (NN 交流)
+                                     (NN 基金会))
+                              (NP (NN 董事长)))
+                      (NP-PN (NR 辜振甫)))
+              (IP (NP-SBJ (-NONE- *PRO*))
+                  (VP (VP (VV 率)
+                          (NP-OBJ (NN 团)))
+                      (VP (VSB (VV 前来)
+                               (VV 参访)))))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 捐赠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="donator"/>
+      <role argnum="1" argrole="thing donated"/>
+      <role argnum="2" argrole="recipient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 统计)))
+	      (PU ，)
+	      (PP-TMP (P 到)
+		      (LCP (NP (NT 目前))
+			   (LC 为止)))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 全))
+		      (NP (NN 市)))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 接受)
+		      (NP-OBJ (NP (NN 华侨))
+			      (PU 、)
+			      (NP (NP-PN (NR 港)
+					 (NR 澳))
+				  (NP (NN 同胞))))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 捐赠)
+			      (NP-OBJ (QP (ADVP (AD 近))
+					  (QP (CD 五亿)
+					      (CLP (M 元))))
+				      (NP (NN 人民币)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  近 五亿 元 人民币 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

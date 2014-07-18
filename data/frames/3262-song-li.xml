@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 耸立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing towering aloft"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 作为)
+		  (NP (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-PN-LOC (NR 亚洲))
+				      (ADVP (AD 最))
+				      (VP (VA 大))))
+			      (DEC 的)))
+		      (NP (NN 镍)
+			  (NN 生产)
+			  (NN 基地))))
+	      (PU ，)
+	      (NP-SBJ (PN 这里))
+	      (VP (VV 耸立)
+		  (AS 着)
+		  (NP-OBJ (ADJP (NP-PN (NR 亚洲))
+				(ADJP (JJ 最大)))
+			  (PU 、)
+			  (QP (NP (NN 世界))
+			      (QP (OD 第五)
+				  (CLP (M 座))))
+			  (NP (NN 镍))
+			  (ADJP (JJ 闪速))
+			  (NP (NN 熔炼)
+			      (NN 炉))))) 
+	  </parse>
+	  <arg n="0">
+	  亚洲 最大 、 世界 第五 座 镍 闪速 熔炼 炉 
+	  </arg>
+	  <arg n="1">
+	  这里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  作为 *OP* *T*-1 亚洲 最 大 的 镍 生产 基地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

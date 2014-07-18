@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 解决 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 龙永图))
+		  (VP (VV 强调)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 妥善))
+				  (VP (VV 解决)
+				      (NP-OBJ (NP-PN (NR 中)
+						     (NR 美))
+					      (NP (NN 贸易)
+						  (NN 问题)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  妥善 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中 美 贸易 问题 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VE 没有)
+			  (IP-OBJ (NP-PN-SBJ (NR 俄))
+				  (VP (VV 参与)))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 里海))
+		      (NP (NN 问题)))
+	      (VP (ADVP (AD 就))
+		  (ADVP (AD 无法))
+		  (VP (VV 解决)))) 
+	  </parse>
+	  <arg n="1">
+	  里海 问题 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  就 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  无法 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

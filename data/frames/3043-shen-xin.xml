@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深信 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="believer"/>
+      <role argnum="1" argrole="thing believed in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 更))
+		  (VP (VV 深信)
+		      (NP-OBJ (DNP (NP (NN 同心协力))
+				   (DEG 的))
+			      (NP (NN 重要)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  同心协力 的 重要 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (VV 深信)
+		  (PU ，)
+		  (IP-OBJ (PP-LOC (P 在)
+				  (LCP (NP (DNP (NP (NP-PN (NR 中)
+							   (NR 美))
+						    (NP (PN 双方)))
+						(DEG 的))
+					   (ADJP (JJ 共同))
+					   (NP (NN 努力)))
+				       (LC 下)))
+			  (PU ，)
+			  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-PN-SBJ (NR 尼克松)
+							 (NN 先生))
+					      (VP (ADVP (AD 生前))
+						  (VP (MSP 所)
+						      (VP (VV 关心)
+							  (NP-OBJ (-NONE- *T*-1))))))
+					  (DEC 的)))
+				  (NP-PN (NR 中)
+					 (NR 美))
+				  (NP (NN 关系)))
+			  (VP (ADVP (AD 一定))
+			      (VP (VV 会)
+				  (VP (VV 得到)
+				      (NP-OBJ (ADJP (JJ 进一步))
+					      (NP (NN 改善)
+						  (CC 和)
+						  (NN 发展))))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  在 中 美 双方 的 共同 努力 下 ， *OP* 尼克松 先生 生前 所 关心 *T*-1 的 中 美 关系 一定 会 得到 进一步 改善 和 发展 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

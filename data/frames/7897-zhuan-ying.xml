@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 专映 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing (movie) arg0 shows"/>
+    <role argnum="2" argrole="place arg1 is shown exclusively"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NN 新闻局))
+	    (VP (VV 计画)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 继续)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 协调)
+					    (NP-OBJ (NN 业者)))))
+			    (PU ，)
+			    (VP (VV 规划)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 个)))
+					(NP (NN 院线)))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 专映)
+					(NP-OBJ (NN 国片))))))))) 
+	</parse>
+	<arg n="1">
+	国片 
+	</arg>
+	<arg n="2">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

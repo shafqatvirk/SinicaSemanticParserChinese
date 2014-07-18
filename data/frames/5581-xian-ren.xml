@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 咸认 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="view arg0 holds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 一般))
+		(VP (VV 咸认)
+		    (PU ，)
+		    (IP-OBJ (NP-SBJ (NP-SBJ (NN 外界))
+				    (DNP (PP (P 对)
+					     (IP (NP-SBJ (NN 国代))
+						 (VP (VV 自肥))))
+					 (DEG 的))
+				    (NP (NN 批评)))
+			    (VP (ADVP (AD 确实))
+				(ADVP (AD 将))
+				(VP (VV 影响)
+				    (NP-OBJ (DNP (NP (NT 明年)
+						     (NT 三月))
+						 (DEG 的))
+					    (NP (NN 总统)
+						(NN 大选))
+					    (NP (NN 选情))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	外界 对 国代 自肥 的 批评 确实 将 影响 明年 三月 的 总统 大选 选情 
+	</arg>
+	<arg n="m" f="adv">
+	一般 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 一般))
+		(VP (VV 咸认)
+		    (VP (VE 有)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (PP-TMP (P 在)
+							(LCP (NP (NP-PN (NR 美国))
+								 (NP (NN 总统)
+								     (NN 大选)))
+							     (LC 之前)))
+						(VP (VV 消除)
+						    (NP-OBJ (DNP (NP (NP-PN (NR 美国))
+								     (ADJP (JJ 反共))
+								     (NP (NN 势力)))
+								 (DEG 的))
+							    (IP-APP (PU 「)
+								    (NP-SBJ (-NONE- *PRO*))
+								    (VP (VV 妖魔化)
+									(NP-PN-OBJ (NR 中国)))
+								    (PU 」))
+							    (ADJP (JJ 负面))
+							    (NP (NN 印象))))))
+					(DEC 的))
+				(NP (NN 效果))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	有 *PRO* 在 美国 总统 大选 之前 消除 美国 反共 势力 的 「 *PRO* 妖魔化 中国 」 负面 印象 的 效果 
+	</arg>
+	<arg n="m" f="adv">
+	一般 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

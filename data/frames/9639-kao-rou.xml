@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 烤肉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 他))
+		      (CC 和)
+		      (NP (NP (NN 公司))
+			  (ADJP (JJ 年轻))
+			  (NP (NN 职员))))
+	      (VP (ADVP (AD 相))
+		  (VP (VV 约)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 去)
+				  (VP (VV 烤肉))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

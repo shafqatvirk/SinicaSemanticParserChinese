@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="obtainer"/>
+      <role argnum="1" argrole="conclusion, result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 亲子)
+		      (NN 鉴定))
+	      (VP (VC 是)
+		  (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-MNR (P 通过)
+						  (NP (DNP (PP (P 对)
+							       (NP (NN ＤＮＡ)))
+							   (DEG 的))
+						      (NP (NN 分析))))
+					  (PU ，)
+					  (VP (MSP 来)
+					      (VP (VV 得出)
+						  (NP-OBJ (NN 个人)
+							  (NN 身份))))))
+				  (DEC 的))
+			  (NP (NN 鉴定))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  个人 身份 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 对 ＤＮＡ 的 分析 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

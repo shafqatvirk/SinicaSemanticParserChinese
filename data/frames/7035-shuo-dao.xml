@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 说道 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 says"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-62 (PU 「)
+		       (PP-ADV (P 除了)
+			       (LCP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+							 (VP (VV 追)
+							     (NP-OBJ (ADJP (JJ 女))
+								     (NP (NN 朋友)))))
+						     (LC 时))
+					    (ADVP (AD 很))
+					    (VP (VA 方便))))
+				    (LC 之外)))
+		       (PU ，)
+		       (CP-CND (ADVP (CS 如果))
+			       (IP (NP-SBJ (NN 老师))
+				   (VP (ADVP (AD 临时))
+				       (VP (VV 决定)
+					   (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 要)
+						       (VP (ADVP (AD 随堂))
+							   (VP (VV 测验)))))))))
+		       (PU ，)
+		       (NP-SBJ (-NONE- *pro*))
+		       (VP (ADVP (AD 还))
+			   (VP (VV 可)
+			       (VP (ADVP (AD 即时))
+				   (VP (VV 通知)
+				       (NP-OBJ (DP (DT 那些))
+					       (CP (WHNP-61 (-NONE- *OP*))
+						   (CP (IP (NP-SBJ (-NONE- *T*-61))
+							   (VP (VV 翘课)))
+						       (DEC 的)))
+					       (NP (NN 同学)))
+				       (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (ADVP (AD 赶快))
+					       (VP (VV 到)
+						   (NP-OBJ (NN 学校))))))))))
+	    (PU ，)
+	    (PU 」)
+	    (NP-SBJ (PN 他))
+	    (VP (VV 说道)
+		(IP-OBJ (-NONE- *T*-62)))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*T*-62 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

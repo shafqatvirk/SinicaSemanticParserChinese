@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 结亲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 becomes a relative of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 鼓励)
+		  (NP-OBJ (ADJP (JJ 国有))
+			  (ADJP (JJ 小))
+			  (NP (NN 企业)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VP (VP (VV 跨)
+				      (NP-OBJ (NN 行业)))
+				  (PU 、)
+				  (VP (VV 跨)
+				      (NP-OBJ (NN 地区)))
+				  (PU 、)
+				  (VP (VV 跨)
+				      (NP-OBJ (NN 所有制))))
+			      (VP (VV 寻找)
+				  (NP-OBJ (NN 合作)
+					  (NN 对象))))
+			  (PU ，)
+			  (VP (ADVP (AD 主动))
+			      (PP (P 与)
+				  (NP (NN 优势)
+				      (NN 企业)))
+			      (VP (VP (VCD (PU “)
+					   (VV 联姻)
+					   (VV 结亲)
+					   (PU ”)))
+				  (CC 和)
+				  (VP (ADVP (AD 互相))
+				      (VP (VV 兼并))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  与 优势 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主动 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

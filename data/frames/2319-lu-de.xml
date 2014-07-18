@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 录得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing recorded"/>
+      <role argnum="2" argrole="location recording is done"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-SBJ (NP-PN (NR 沙田))
+			   (NP-PN (NN 中文)
+				  (NN 大学))
+			   (NP (NN 地区)))
+		   (VP (PP-TMP (P 在)
+			       (LCP (NP (QP (CD 二十四))
+					(NP (NN 小时)))
+				    (LC 内)))
+		       (ADVP (AD 共))
+		       (VP (VV 录得)
+			   (NP-OBJ (DNP (QP (ADVP (AD 约))
+					    (QP (CD 八百)
+						(CLP (M 毫米))))
+					(DEG 的))
+				   (NP (NN 雨量)))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="1">
+	  约 八百 毫米 的 雨量 
+	  </arg>
+	  <arg n="2">
+	  沙田 中文 大学 地区 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 二十四 小时 内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

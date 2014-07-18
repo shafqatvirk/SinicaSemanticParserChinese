@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挂号 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="registerer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (PU ，)
+	      (PP-TMP (P 随着)
+		      (NP (DNP (NP (NN 电脑)
+				   (NN 事业))
+			       (DEG 的))
+			  (ADJP (JJ 迅速))
+			  (NP (NN 发展))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 越来越))
+				      (VP (VA 多))))
+			      (DEC 的)))
+		      (NP (NN 电脑)
+			  (NN 用户)))
+	      (VP (VP (ADVP (AD 纷纷))
+		      (VP (VP (VV 前来))
+			  (VP (PU “)
+			      (VCD (VV 排队)
+				   (VV 挂号))
+			      (PU ”))))
+		  (PU ，)
+		  (VP (VV 购买)
+		      (NP-OBJ (NP (NP (PU “)
+				      (ADJP (JJ 五笔))
+				      (NP (NN 字型))
+				      (PU ”))
+				  (ADJP (JJ 新))
+				  (NP (NN 版本)))
+			      (CC 和)
+			      (NP (NP-PN (NR 王码))
+				  (NP (NN 汉字)
+				      (NN 操作)
+				      (NN 系统))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 越来越 多 的 电脑 用户 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随着 电脑 事业 的 迅速 发展 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纷纷 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

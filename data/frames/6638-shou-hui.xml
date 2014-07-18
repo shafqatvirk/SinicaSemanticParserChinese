@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 受惠 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 benefits from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 双方))
+	    (VP (ADVP (AD 皆))
+		(VP (VV 可)
+		    (VP (VV 受惠))))) 
+	</parse>
+	<arg n="0">
+	双方 
+	</arg>
+	<arg n="m" f="adv">
+	皆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PU ，)
+	    (IP-SBJ (DP (DT 这))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (PU 「)
+				  (AD 顺便)
+				  (PU 」))
+			    (ADVP (AD 一))
+			    (VP (VV 看)))))
+	    (VP (ADVP (AD 已))
+		(VP (VV 使)
+		    (NP-OBJ (QP (CD 不少))
+			    (NP (NN 老师)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-PRP (P 因)
+				    (NP (PN 此)))
+			    (VP (VV 受惠))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	因 此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

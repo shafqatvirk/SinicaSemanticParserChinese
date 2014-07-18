@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 就业 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (ADVP (AD 共))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 二百四十五万))
+				      (NP (NN 人)))
+			      (VP (ADVP (AD 重新))
+				  (VP (VV 就业))))))) 
+	  </parse>
+	  <arg n="0">
+	  二百四十五万 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  重新 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

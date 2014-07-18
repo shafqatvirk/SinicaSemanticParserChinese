@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 灵活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PP (P 对)
+			      (NP (NN 外)))
+			  (NP (NN 往来)))
+		      (NP (NN 方式)))
+	      (VP (ADVP (AD 更加))
+		  (VP (VA 灵活)))) 
+	  </parse>
+	  <arg n="0">
+	  对 外 往来 方式 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更加 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP (ADVP (AD 别看))
+		  (NP-SBJ (ADJP (JJ 小))
+			  (NP (NN 海龟)))
+		  (VP (VP-FOC (PP-LOC (P 在)
+				      (LCP (NP (NN 沙滩))
+					   (LC 上)))
+			      (VP (VV 爬行)))
+		      (VP (ADVP (AD 往往))
+			  (VP (VV 显得)
+			      (VP (VA 笨拙))))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (CS 一旦))
+				  (VP (VV 到)
+				      (AS 了)
+				      (LCP-OBJ (NP (NN 海))
+					       (LC 里)))))
+		      (PU ，)
+		      (ADVP (AD 就))
+		      (VP (VV 变得)
+			  (VP (VA 灵活)
+			      (VA 自如)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

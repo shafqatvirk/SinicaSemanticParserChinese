@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 安静 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 安静)
+			    (AS 了)
+			    (NP-EXT (NN 一会儿))))
+		(PU ，)
+		(ADVP (AD 终於))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (ADVP (AD 忍不住))
+				(VP (VV 说))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	一会儿 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 问及 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity asked about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 当)
+		  (LCP (IP (NP-SBJ (NN 记者))
+			   (VP (VV 问及)
+			       (NP-OBJ (DNP (NP (NP-PN (NR 中)
+						       (NR 俄))
+						(NP (NN 关系)))
+					    (DEG 的))
+				       (NP (NN 现状)
+					   (CC 和)
+					   (NN 合作)
+					   (NN 前景)))))
+		       (LC 时))) 
+	  </parse>
+	  <arg n="0">
+	  记者 
+	  </arg>
+	  <arg n="1">
+	  中 俄 关系 的 现状 和 合作 前景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 当)
+		  (LCP (IP (NP-SBJ (NN 记者))
+			   (VP (VV 问及)
+			       (IP-OBJ (NP-SBJ (NP (QP (CD 一)
+						       (CLP (M 个)))
+						   (CP (WHNP-1 (-NONE- *OP*))
+						       (CP (IP (NP-SBJ (-NONE- *T*-1))
+							       (VP (PP (P 与)
+								       (NP-PN (NR 中国)))
+								   (VP (VV 保持)
+								       (NP-OBJ (NN 外交)
+									       (NN 关系)))))
+							   (DEC 的)))
+						   (NP (NN 国家)))
+					       (DNP (PP (P 与)
+							(NP-PN (NR 台湾)))
+						    (DEG 的))
+					       (NP (NN 接触)))
+				       (VP (VV 可以)
+					   (VP (VV 达到)
+					       (NP-OBJ (DP (DT 何)
+							   (QP (M 种)))
+						       (NP (NN 程度))))))))
+		       (LC 时))) 
+	  </parse>
+	  <arg n="0">
+	  记者 
+	  </arg>
+	  <arg n="1">
+	  一 个 *OP* *T*-1 与 中国 保持 外交 关系 的 国家 与 台湾 的 接触 可以 达到 何 种 程度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

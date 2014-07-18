@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出具 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="proof provider"/>
+      <role argnum="1" argrole="proof"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-7 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (NP (NN 音像))
+				  (ADJP (JJ 归口))
+				  (NP (NN 管理)
+				      (NN 部门)))
+			  (VP (VV 出具)
+			      (NP-OBJ (-NONE- *T*-7))))
+		      (DEC 的)))
+	      (NP (NN 批准)
+		  (NN 证明))) 
+	  </parse>
+	  <arg n="0">
+	  音像 归口 管理 部门 
+	  </arg>
+	  <arg n="1">
+	  *T*-7 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

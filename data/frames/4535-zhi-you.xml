@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 只有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity that exists"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 达到)
+				      (NP-OBJ (NN 室外)
+					      (NN 跳远)
+					      (NN 标准))))
+			      (DEC 的)))
+		      (NP (NN 选手)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 只有)
+		      (NP-OBJ (QP (CD １３))
+			      (NP (NN 人)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 达到 室外 跳远 标准 的 选手 
+	  </arg>
+	  <arg n="0" f="QTY">
+	  １３ 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

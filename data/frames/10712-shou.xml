@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 瘦 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="extent arg0 is thinner"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 不但))
+	    (NP-SBJ (DP (DT 整)
+			(CLP (M 个)))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 整整))
+		(VP (VV 瘦)
+		    (AS 了)
+		    (QP-EXT (CD 一)
+			    (CLP (M 圈)))))) 
+	</parse>
+	<arg n="0">
+	整 个 人 
+	</arg>
+	<arg n="1">
+	一 圈 
+	</arg>
+	<arg n="m" f="adv">
+	整整 
+	</arg>
+	<arg n="m" f="dis">
+	不但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

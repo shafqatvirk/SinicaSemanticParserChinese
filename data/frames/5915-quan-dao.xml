@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 全倒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing totally collapsing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VV 全倒)
+				(CC 与)
+				(VV 半倒))))
+		    (NP (NN 房屋)))
+	    (VP (ADVP (AD 高))
+		(VP (VV 达)
+		    (QP-OBJ (ADVP (AD 近))
+			    (QP (CD 十二万)
+				(CLP (M 栋))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 房屋))
+	    (VP (VP (VV 全倒)
+		    (QP-EXT (CD 一千二百多)
+			    (CLP (M 栋))))
+		(PU ，)
+		(VP (VV 半倒)
+		    (QP-EXT (CD 五百多)
+			    (CLP (M 栋)))))) 
+	</parse>
+	<arg n="0">
+	房屋 
+	</arg>
+	<arg n="0" f="qty">
+	一千二百多 栋 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,118 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 定居 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 settles down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (PP-LOC (P 在)
+					    (NP-PN (NR 八里)))
+				    (VP (VV 长大)))
+				(PU ，)
+				(VP (ADVP (AD 现))
+				    (VP (VV 定居)
+					(PP (P 於)
+					    (NP (NN 家乡)))))))
+			(DEC 的)))
+		(NP-PN (NR 林一宏))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	於 家乡 
+	</arg>
+	<arg n="m" f="tmp">
+	现 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NN 台商))
+		    (NP-PN (NR 陈彬)))
+	    (PU ，)
+	    (VP (VP (VP (VV 定居)
+			(NP-PN-OBJ (-NONE- *RNR*-1))
+			(QP-EXT (-NONE- *RNR*-2)))
+		    (CC 与)
+		    (VP (VV 投资)
+			(NP-PN-OBJ-1 (NR 上海))
+			(QP-EXT-2 (CD 十多)
+				  (CLP (M 年)))))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (NP-PN (NR 上海)))
+		    (VP (VP (VV 经营)
+			    (NP-OBJ (NN 火锅店)
+				    (PU 、)
+				    (NN 面包厂)))
+			(PU ，)
+			(VP (VV 开)
+			    (AS 过)
+			    (NP-OBJ (NN 餐厅)
+				    (PU 、)
+				    (NN 快餐店))))))) 
+	</parse>
+	<arg n="0">
+	台商 陈彬 
+	</arg>
+	<arg n="1">
+	*RNR*-1 
+	</arg>
+	<arg n="m" f="ext">
+	*RNR*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 家)))
+		    (QP (CD 四))
+		    (NP (NN 兄弟)))
+	    (VP (VP (ADVP (AD 就))
+		    (ADVP (AD 都))
+		    (VP (VSB (VV 迁来)
+			     (VV 定居))))
+		(PU ，)
+		(VP (VV 发展)
+		    (NP-OBJ (NN 米粉)
+			    (NN 产业))))) 
+	</parse>
+	<arg n="0">
+	一 家 四 兄弟 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

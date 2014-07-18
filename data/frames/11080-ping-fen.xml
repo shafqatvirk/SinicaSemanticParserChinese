@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 评分 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 gives grades to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 包括)
+				(NP-PN-OBJ (NR 人本)
+					   (NN 教育)
+					   (NN 基金会)
+					   (PU 、)
+					   (NR 振铎)
+					   (NN 学会)
+					   (ETC 等)))))
+		    (QP (CD 三十三)
+			(CLP (M 个)))
+		    (NP (NN 教改)
+			(NN 团体)))
+	    (VP (ADVP (AD 曾))
+		(PP-DIR (P 针对)
+			(NP (DNP (NP (QP (CD 五)
+					 (CLP (M 位)))
+				     (NP (NN 候选人)))
+				 (DEG 的))
+			    (NP (NN 教育)
+				(NN 政见))))
+		(VP (VV 评分)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 包括 人本 教育 基金会 、 振铎 学会 等 三十三 个 教改 团体 
+	</arg>
+	<arg n="1">
+	针对 五 位 候选人 的 教育 政见 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

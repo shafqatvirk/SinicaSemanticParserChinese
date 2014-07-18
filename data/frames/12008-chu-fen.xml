@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 处分 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 punishes"/>
+      <role argnum="2" argrole="punishment"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VV 力挺)
+				      (NP-OBJ (NN 延任案))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 过关)))))
+			      (DEC 的)))
+		      (NP-APP (NP-PN (NN 国大))
+			      (NP (NN 议长)))
+		      (NP-PN (NR 苏南成)))
+	      (PU ，)
+	      (VP (ADVP (AD 随即))
+		  (VP (VV 遭到)
+		      (NP-OBJ (NP-PN (NR 国民党))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 开除)
+					      (NP-OBJ (NN 党纪))))
+				      (DEC 的))
+			      (NP (NN 处分)))))) 
+	  </parse>
+	  <arg n="0">
+	  国民党 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-3 力挺 延任案 *PRO* 过关 的 国大 议长 苏南成 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 开除 党纪 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

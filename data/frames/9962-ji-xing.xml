@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 疾行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entitiy moving at high speed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 赶)
+				      (AS 著)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 上班)))))
+			      (DEC 的)))
+		      (NP (NN 省府)
+			  (NN 员工)))
+	      (VP (VP (ADVP (AD 或))
+		      (VP (VV 搭)
+			  (NP-OBJ (NN 交通)
+				  (NN 车))))
+		  (PU ，)
+		  (VP (ADVP (AD 或))
+		      (VP (VP (VV 骑)
+			      (NP-OBJ (NN 摩托车)))
+			  (VP (VV 疾行)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 赶 著 *PRO* 上班 的 省府 员工 
+	  </arg>
+	  <arg n="m" f="adv">
+	  或 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

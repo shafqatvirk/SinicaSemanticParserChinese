@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 激荡 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity exciting"/>
+    <role argnum="1" argrole="entity arg0 excites"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADVP (AD 至於))
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 曾经))
+					(PP-PRP (P 因)
+						(NP-PN (NP (NR 云门)
+							   (NN 舞集))
+						       (PU 、)
+						       (NP (NR 雅音)
+							   (NN 小集))
+						       (PU 、)
+						       (NP (NN 表演)
+							   (NN 工作坊))))
+					(VP (MSP 而)
+					    (VP (VV 激荡)
+						(NP-EXT (NN 一时))))))
+				(DEC 的)))
+			(NP (NN 表演)
+			    (NN 艺术))))
+	    (PU ，)
+	    (VP (NP-TMP (NT 目前))
+		(ADVP (AD 已))
+		(VP (VV 露出)
+		    (NP-OBJ (NN 疲态))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="ext">
+	一时 
+	</arg>
+	<arg n="m" f="prp">
+	因 云门 舞集 、 雅音 小集 、 表演 工作坊 
+	</arg>
+	<arg n="m" f="adv">
+	曾经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 creates through excitement"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 场)))
+		    (ADJP (JJ 土)
+			  (JJ 洋))
+		    (NP (NN 市场)
+			(NN 争霸战)))
+	    (VP (VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 健身)
+				    (NN 风))
+			    (VP (VV 炒到)
+				(VP-EXT (ADVP (AD 最))
+					(VP (VA 热))))))
+		(PU ，)
+		(VP (VRD (VV 激荡)
+			 (VV 出))
+		    (NP-SBJ (NP (NN 国内))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VA 多元)
+					    (PU 、)
+					    (VA 新兴)))
+				    (DEC 的)))
+			    (NP (NN 健身)
+				(NN 观念)))))) 
+	</parse>
+	<arg n="0">
+	一 场 土 洋 市场 争霸战 
+	</arg>
+	<arg n="1">
+	国内 *OP* *T*-1 多元 、 新兴 的 健身 观念 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

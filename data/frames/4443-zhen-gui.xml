@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 珍贵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 大))
+		      (NP (NN 熊猫)))
+	      (VP (VP (VC 是)
+		      (NP-PRD (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (LCP-LOC (NP (NN 世界))
+							   (LC 上))
+						  (ADVP (AD 最))
+						  (VP (VA 珍贵))))
+					  (DEC 的)))
+				  (ADJP (JJ 濒危))
+				  (NP (NN 动物)))
+			      (NP (NN 之一))))
+		  (PU ，)
+		  (VP (SB 被)
+		      (VP (VV 称为)
+			  (NP-OBJ (ADJP (JJ 活))
+				  (NP (NN 化石))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <arg n="m" f="loc">
+	  世界 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

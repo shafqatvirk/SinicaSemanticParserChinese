@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 召集 </id>
+    <frameset id="f1" edef="call a meeting">
+      <role argnum="0" argrole="caller"/>
+      <role argnum="1" argrole="meeting"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP-APP (NP (NN 集体)
+					       (NN 项目)
+					       (NN 建设))
+					   (ETC 等))
+				   (ADJP (JJ 大))
+				   (NP (NN 事)))
+			       (LC 上)))
+		  (PU ，)
+		  (VP (VV 让)
+		      (NP-OBJ (NN 村民))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 通过)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 召集)
+					      (NP-OBJ (NP (ADJP (JJ 全体))
+							  (NP (NN 村民)
+							      (CC 或)
+							      (NN 村民)
+							      (NN 代表)))
+						      (NP (NN 会议))))))
+			      (ADVP (AD 广泛))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 讨论)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  全体 村民 或 村民 代表 会议 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="invite">
+      <role argnum="0" argrole="inviter"/>
+      <role argnum="1" argrole="invitee"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 联合国))
+			 (NP (NN 教)
+			     (NN 科)
+			     (NN 文))
+			 (NP (NN 组织)))
+	      (VP (VP (ADVP (AD 特地))
+		      (VP (VV 召集)
+			  (NP-OBJ (DNP (NP (QP (CD ３０多)
+					       (CLP (M 个)))
+					   (NP (NN 国家)))
+				       (DEG 的))
+				  (ADJP (JJ 权威))
+				  (NP (NN 水利)
+				      (NN 专家)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 汇聚)
+				  (NP-OBJ (PN 这里))))))
+		  (VP (PP-DIR (P 对)
+			      (NP (NN 水)
+				  (NN 文化)))
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 探讨)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  联合国 教 科 文 组织 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  特地 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  ３０多 个 国家 的 权威 水利 专家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 汇聚 这里 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

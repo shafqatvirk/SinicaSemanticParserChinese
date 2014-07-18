@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出借 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="lender"/>
+    <role argnum="1" argrole="entity arg0 loans"/>
+    <role argnum="2" argrole="entity arg1 is loaned to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 地主))
+				(VP (ADVP (AD 无偿))
+				    (VP (VV 出借)
+					(NP-OBJ (-NONE- *T*-3)))))
+			    (DEC 的)))
+		    (NP (NN 泥泞地)))
+	    (PU ，)
+	    (VP (NP-TMP (NT 现在))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-4))
+					(NP-SBJ (NN 锦鲤))
+					(VP (VV 悠游)
+					    (NP-OBJ (NN 其中))))
+				    (DEC 的)))
+			    (NP (NN 莲花池)))))) 
+	</parse>
+	<arg n="0">
+	地主 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="adv">
+	无偿 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (QP (DNP-APP (NP (CP (WHNP-2 (-NONE- *OP*))
+				 (IP (NP-SBJ (-NONE- *pro*))
+				     (VP (ADVP (AD 历来))
+					 (VP (VV 出借)
+					     (NP-OBJ (-NONE- *pro*))
+					     (NP-EXT (-NONE- *T*-2))))))
+			     (ADJP (ADVP (AD 最))
+				   (ADJP (JJ 高)))
+			     (NP (NN 数目)))
+			 (DEG 的))
+		(QP (CD 十七)
+		    (CLP (M 件))))
+	    (NP (NN 兵马俑)
+		(NN 真品))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="1" f="qty">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	历来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

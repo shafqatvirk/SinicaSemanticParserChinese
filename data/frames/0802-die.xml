@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="range"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP (P 比)
+		      (NP (NT 昨天)))
+		  (ADVP (AD 微))
+		  (VP (VV 跌)
+		      (AS 了)
+		      (QP-OBJ (CD 四)
+			      (CLP (M 点)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  四 点 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 昨天 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  微 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (FRAG (PU （)
+		    (NP (ADJP (JJ 小))
+			(NP (NN 标题)))
+		    (PU ）))
+	      (NP-SBJ (NP (NP-PN (NR 纽约))
+			  (NP (NN 汇市)))
+		      (NP (NN 美元)
+			  (NN 汇率)))
+	      (VP (ADVP (AD 微))
+		  (VP (VV 跌)))) 
+	  </parse>
+	  <arg n="0">
+	  纽约 汇市 美元 汇率 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  微 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

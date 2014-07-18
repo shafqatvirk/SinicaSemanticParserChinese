@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 顾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-PN-SBJ (NR 张学良))
+		  (VP (VP (ADVP (AD 不))
+			  (VP (VV 顾)
+			      (NP-OBJ (DNP (NP-PN (NR 日本))
+					   (DEG 的))
+				      (NP (NN 阻挠)
+					  (CC 和)
+					  (NN 干涉)))))
+		      (PU ，)
+		      (VP (ADVP (AD 毅然))
+			  (VP (VV 决定)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 易帜))))))) 
+	  </parse>
+	  <arg n="0">
+	  张学良 
+	  </arg>
+	  <arg n="1">
+	  日本 的 阻挠 和 干涉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

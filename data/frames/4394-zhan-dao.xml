@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 占到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 consitutes"/>
+      <role argnum="2" argrole="entity among which arg0 constitutes arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (CP (WHNP-3 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-3))
+					   (VP (VV 参与)
+					       (NP-OBJ (QP (CD 三)
+							   (CLP (M 项)))
+						       (NP (NN 改革)
+							   (NN 试点)))))
+				       (DEC 的)))
+			       (ADJP (JJ 国有))
+			       (NP (NN 企业)))
+			   (DEG 的))
+		      (NP (NN 资产)
+			  (PU 、)
+			  (NN 销售)
+			  (NN 收入)))
+	      (VP (ADVP (AD 均))
+		  (VP (VV 占到)
+		      (LCP-OBJ (DNP (NP (DP (DT 全部))
+					(ADJP (JJ 国有))
+					(NP (NN 工业)))
+				    (DEG 的))
+			       (LCP (QP (CD 百分之七十))
+				    (LC 以上)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 参与 三 项 改革 试点 的 国有 企业 的 资产 、 销售 收入 
+	  </arg>
+	  <arg n="1">
+	  全部 国有 工业 的 百分之七十 以上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-TMP (P 在)
+			  (NP (DNP (NP (NT １９９７年)
+				       (CC 至)
+				       (NT ２００２年))
+				   (DEG 的))
+			      (QP (CD 五)
+				  (CLP (M 年)))
+			      (NP (NN 期间))))
+		  (PU ，)
+		  (NP-SBJ (NP (NP-PN (NR 韩国))
+			      (NP (NN 政府)))
+			  (NP (NN 科研)
+			      (NN 投入)))
+		  (VP (VV 应)
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (NP (NN 政府))
+					   (ADJP (JJ 总))
+					   (NP (NN 预算)))
+				       (LC 中)))
+			  (VP (VV 占到)
+			      (QP-OBJ (CD 百分之五)))))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 政府 科研 投入 
+	  </arg>
+	  <arg n="1">
+	  百分之五 
+	  </arg>
+	  <arg n="2">
+	  在 政府 总 预算 中 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 １９９７年 至 ２００２年 的 五 年 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

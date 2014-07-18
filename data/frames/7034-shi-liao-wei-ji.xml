@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 始料未及 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 doesn't anticipate"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 至於)
+		    (IP (NP-SBJ (-NONE- *pro*))
+			(VP (ADVP (AD 因此))
+			    (VP (VV 遭到)
+				(NP-OBJ (-NONE- *pro*))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 开除)
+					(NP-OBJ (NN 党籍))))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-1))
+					(NP-SBJ (PN 她))
+					(VP (VV 始料未及)))
+				    (DEC 的))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

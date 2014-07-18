@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="receiver"/>
+      <role argnum="1" argrole="thing received"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 此)
+			  (CLP (M 次)))
+		      (NP (NN 研讨会)))
+	      (VP (VV 收到)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一些))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 海外)
+					      (NN 人士))
+				      (VP (VV 发来)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP (NN 贺电))))) 
+	  </parse>
+	  <arg n="0">
+	  此 次 研讨会 
+	  </arg>
+	  <arg n="1">
+	  一些 *OP* 海外 人士 发来 *T*-1 的 贺电 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 淘洗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 washes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VV 必须)
+		  (VP (NP-ADV (PN 自己))
+		      (VP (VV 去)
+			  (VP (VP (VV 挖)
+				  (NP-OBJ (NN 土)))
+			      (PU 、)
+			      (VP (VV 淘洗))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

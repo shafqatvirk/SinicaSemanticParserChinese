@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 治疗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 六十三)
+			  (CLP (M 名)))
+		      (NP (NN 受伤者)))
+	      (VP (ADVP (AD 仍))
+		  (PP-LOC (P 在)
+			  (NP (NN 医院)))
+		  (VP (VV 治疗)))) 
+	  </parse>
+	  <arg n="1">
+	  六十三 名 受伤者 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 医院 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 is remedy for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP-SBJ (NP-PN-SBJ (NR 中国))
+			  (VP (VV 利用)
+			      (NP-OBJ (NN 草药))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 治疗)
+				      (NP-OBJ (NN 糖尿病))))))
+		  (VP (VV 获)
+		      (NP-OBJ (ADJP (JJ 重大))
+			      (NP (NN 进展))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  糖尿病 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

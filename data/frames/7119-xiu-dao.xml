@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 嗅到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 smells"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 乘坐)
+				(NP-OBJ (NN 拖曳伞)))
+			    (VP (VV 飘)
+				(PP (P 到)
+				    (NP (NN 空中))))))
+		(PU ，)
+		(ADVP (AD 还))
+		(DVP (ADVP (AD 隐约))
+		     (DEV 地))
+		(VP (VV 可以)
+		    (VP (VV 嗅到)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 股)))
+				(DNP (NP (NN 天堂))
+				     (DEG 的))
+				(NP (NN 芬芳))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一 股 天堂 的 芬芳 
+	</arg>
+	<arg n="m" f="adv">
+	隐约 地 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 乘坐 拖曳伞 飘 到 空中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

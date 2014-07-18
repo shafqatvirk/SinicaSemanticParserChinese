@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 得力於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 gets help from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NP-PN (NR 台湾))
+			    (NP (NN 经济)
+				(NN 奇迹)))
+		    (PU ，)
+		    (VP (VV 得力於)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 充沛)))
+					(DEC 的)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VP (VV 受)
+						    (AS 过)
+						    (NP-OBJ (NN 教育)))
+						(PU 、)
+						(VP (VA 温顺)
+						    (CC 而)
+						    (VA 勤奋))))
+					(DEC 的)))
+				(ADJP (JJ 高))
+				(NP (NN 品质)
+				    (NN 劳工)))))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NN 举世))
+				    (VP (VV 公认)
+					(NP-OBJ (-NONE- *T*-3))))
+				(DEC 的)))))) 
+	</parse>
+	<arg n="0">
+	台湾 经济 奇迹 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 充沛 的 *OP* *T*-1 受 过 教育 、 温顺 而 勤奋 的 高 品质 劳工 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,188 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看好 </id>
+    <frameset id="f1" edef="be optimistic about">
+      <role argnum="0" argrole="watcher"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 海外)
+		      (NN 投资者))
+	      (VP (VV 看好)
+		  (NP-OBJ (NP (NP-PN (NR-SHORT 深)
+				     (NR 港))
+			      (NP (NN 经济)
+				  (NN 合作)))
+			  (NP (NN 前景))))) 
+	  </parse>
+	  <arg n="0">
+	  海外 投资者 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  深 港 经济 合作 前景 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 他))
+		  (VP (PP-DIR (P 对)
+			      (NP (CP-APP (IP (NP-PN-SBJ (NR 江泽民)
+							 (NN 主席))
+					      (VP (ADVP (AD 即将))
+						  (PP-DIR (P 对)
+							  (NP-PN (NR 美国)))
+						  (VP (VV 访问))))
+					  (DEC 的))
+				  (NP (NN 成果))))
+		      (VP (VV 看好)))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  对 江泽民 主席 即将 对 美国 访问 的 成果 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-TPC (NP-PN (NR 福建))
+			  (NP (ADJP (JJ 高))
+			      (ADJP (JJ 新))
+			      (NP (NN 技术)))
+			  (NP (NN 产业)))
+		  (NP-SBJ (NN 发展)
+			  (NN 前景))
+		  (VP (VV 看好))) 
+	  </parse>
+	  <arg n="1">
+	  发展 前景 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 制约)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 吸引)
+						  (NP-OBJ (NN 外资))))))
+			      (DEC 的)))
+		      (NP (NN 城市)
+			  (NN 基础)
+			  (NN 设施)
+			  (NN 建设)))
+	      (PU ，)
+	      (VP (NP-TMP (NT 如今))
+		  (ADVP (AD 却))
+		  (VP (VP (LB 被)
+			  (IP-OBJ (NP-SBJ (NN 外商))
+				  (VP (VV 看好))))
+		      (PU ，)
+		      (VP (VV 成为)
+			  (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+				      (CP (IP (PP (P 继)
+						  (LCP (NP (NN 资源)
+							   (NN 开发))
+						       (LC 之后)))
+					      (NP-PN-SBJ (NR 青海))
+					      (VP (PP-LOC (-NONE- *T*-2))
+						  (ADVP (AD 集中))
+						  (VP (VV 利用)
+						      (NP-OBJ (NN 外资)))))
+					  (DEC 的)))
+				  (ADJP (JJ 新))
+				  (NP (NN 领域))))))) 
+	  </parse>
+	  <arg n="0">
+	  外商 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 制约 *PRO* 吸引 外资 的 城市 基础 设施 建设 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="expect">
+      <role argnum="0" argrole="watcher"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 大概))
+		  (VP (VC 是)
+		      (PP-PRD (P 由于)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VE 没有)
+				      (IP-OBJ (NP-SBJ (QP (CD 一)
+							  (CLP (M 个)))
+						      (NP (NN 人)))
+					      (VP (LCP-TMP (NP (NN 赛))
+							   (LC 前))
+						  (VP (VV 看好)
+						      (NP-PN-OBJ (NR 鲍萨))
+						      (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 会)
+							      (VP (VV 爆)
+								  (NP-OBJ (NN 冷门)))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  一个人 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  赛 前 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  鲍萨 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 会 爆 冷门 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谱成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing composed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (ADVP (AD 於是))
+		   (PU ，)
+		   (NP-PN-SBJ (NR 吴)
+			      (NN 医生))
+		   (VP (VP (ADVP (AD 初步))
+			   (VP (VV 构思)
+			       (AS 了)
+			       (NP-OBJ (NN 曲调))))
+		       (PU ，)
+		       (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 再))
+					    (PP (P 与)
+						(NP-PN (NR 董太)))
+					    (VP (VV 研究))))
+				    (LC 後))
+			   (VP (VV 谱成)
+			       (NP-TTL-OBJ (PU 《)
+					   (NP (NN 回归颂))
+					   (PU 》)))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  吴 医生 
+	  </arg>
+	  <arg n="1">
+	  《 回归颂 》 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *pro* 再 与 董太 研究 後 
+	  </arg>
+	  <arg n="m" f="adv">
+	  於是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

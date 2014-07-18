@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 话说 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 tells"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 话说)
+		  (IP-OBJ (IP (NP-PN-SBJ (NR 四川省)
+					 (NR 广汉市))
+			      (VP (VE 有)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 个)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP (-NONE- *T*-1))
+						      (VP (VV 叫)
+							  (NP-PN-OBJ (NR 月亮湾))))
+						  (DEC 的)))
+					  (NP (NN 台地)))))
+			  (PU ，)
+			  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (PP (P 与)
+							  (NP-PN (NR 月亮湾)))
+						      (VP (VV 隔)
+							  (AS 著)
+							  (NP-OBJ (QP (CD 一)
+								      (CLP (M 条)))
+								  (NP-PN (NR 马牧河))))))
+					      (DEC 的)))
+				      (NP (NN 对岸)))
+			      (PU ，)
+			      (VP (ADVP (AD 则))
+				  (PP-PRP (P 因为)
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VE 有)
+						  (NP-OBJ (QP (CD 三)
+							      (CLP (M 座)))
+							  (CP (WHNP-3 (-NONE- *OP*))
+							      (CP (IP (NP-SBJ (-NONE- *T*-3))
+								      (VP (VP (IP-ADV (NP-SBJ (NN 人))
+										      (VP (VA 一般)))
+									      (VP (VA 高)))
+									  (VP (VV 相连))))
+								  (DEC 的)))
+							  (ADJP (JJ 大))
+							  (NP (NN 土堆))))))
+				  (VP (MSP 而)
+				      (VP (VV 叫)
+					  (NP-PN-OBJ (NR 三星堆))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  四川省 广汉市 有 一 个 *OP* *T*-1 叫 月亮湾 的 台地 ， *OP* *T*-2 与 月亮湾 隔 著 一 条 马牧河 的 对岸 ， 则 因为 *PRO* 有 三 座 *OP* *T*-3 人 一般 高 相连 的 大 土堆 而 叫 三星堆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

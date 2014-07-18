@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 当完 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 finishes serving as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 开)
+			      (NP-OBJ (NN 饼)
+				      (NN 店)))
+			  (VP (VV 开出)
+			      (NP-OBJ (NN 心得)))))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 最))
+					      (VP (VA 小))))
+				      (DEC 的)))
+			      (NP (NN 弟弟)))
+		      (NP-PN (NR 蔡国隆)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 当完)
+			      (NP-OBJ (NN 兵))))
+		  (PU ，)
+		  (ADVP (AD 也))
+		  (VP (VP (VV 踏上)
+			  (NP-OBJ (DNP (NP (NN 兄长))
+				       (DEG 的))
+				  (NP (NN 路))))
+		      (PU ，)
+		      (VP (VP (VV 到)
+			      (NP-OBJ (DNP (NP (NN 邻近))
+					   (DEG 的))
+				      (NP-PN (NR 四湖乡))))
+			  (VP (VV 去)
+			      (VP (VV 开)
+				  (NP-OBJ (NN 店)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  兵 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

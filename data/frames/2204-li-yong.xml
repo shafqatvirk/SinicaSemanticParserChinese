@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 利用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="utilizer"/>
+      <role argnum="1" argrole="thing utilized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 今年))
+		      (NP (NT-SHORT 一)
+			  (CC 至)
+			  (NT 十一月)))
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (ADVP (AD 实际))
+		  (VP (VV 利用)
+		      (NP-OBJ (NN 外资))
+		      (QP-EXT (CD 四百六十九点五九亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  今年 一 至 十一月 	  
+	  </arg>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外资 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  四百六十九点五九亿 美元 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 广西))
+	      (VP (VV 出台)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 系列)))
+			  (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 利用)
+					  (NP-OBJ (NN 外资))))
+				  (DEC 的))
+			  (NP (NN 政策))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外资 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

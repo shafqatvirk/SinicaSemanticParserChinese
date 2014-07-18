@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 召开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="meeting arg0 convenes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 另))
+	      (PP (P 据)
+		  (IP (NP-SBJ (NP-PN (NR 俄通社))
+			      (PRN (PU —)
+				   (NP-PN (NR 塔斯社))))
+		      (VP (VV 报道))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 俄))
+		      (NP (NP (NN 航天)
+			      (NN 轨道站))
+			  (NP (NN 运行)))
+		      (ADJP (JJ 跨部门))
+		      (NP (NN 委员会)))
+	      (VP (NP-TMP (NT 今天))
+		  (ADVP (AD 也))
+		  (VP (VP (VV 召开)
+			  (NP-OBJ (NN 会议)))
+		      (VP (VV 研究)
+			  (NP-OBJ (NN 对策)))))) 
+	  </parse>
+	  <arg n="0">
+	  俄 航天 轨道站 运行 跨部门 委员会 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  今天 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  会议 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (AD 正))
+				  (PP-LOC (P 在)
+					  (NP (NN 此间)))
+				  (VP (VV 召开))))
+			  (DEC 的)))
+		  (NP-PN (NP (DP (DT 全))
+			     (NP (NN 国)))
+			 (NP (NN 人大)))) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(全国人大) 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  正 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 此间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

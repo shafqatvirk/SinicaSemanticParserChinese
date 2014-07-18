@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 随附 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 attaches"/>
+    <role argnum="2" argrole="thing arg1 is attached onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 市)
+		    (NN 政府))
+	    (VP (ADVP (AD 并))
+		(VP (VV 随附)
+		    (NP-OBJ (NN 年历表))))) 
+	</parse>
+	<arg n="0">
+	市 政府 
+	</arg>
+	<arg n="1">
+	年历表 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

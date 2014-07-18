@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 调来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 transfers arg1 to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (VP (ADVP (AD 当初))
+		    (PP-LOC (P 在)
+			    (NP (NP-PN (NR 国民党))
+				(NP (NN 民众)
+				    (NN 服务站))))
+		    (VP (VV 工作)))
+		(PU ，)
+		(VP (SB 被)
+		    (VP (VV 调来)
+			(NP-PN-OBJ (NR 八里)))))) 
+	</parse>
+	<arg n="1">
+	我 
+	</arg>
+	<arg n="2">
+	八里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

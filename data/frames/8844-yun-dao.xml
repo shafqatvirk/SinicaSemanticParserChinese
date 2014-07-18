@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 transports arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-1 (LCP-TMP (IP (NP-PN-SBJ (NR 国)
+					    (NR 共))
+				 (VP (VV 内战)))
+			     (LC 时))
+		    (PU ，)
+		    (NP-SBJ (DNP (NP-PN (NR 台湾))
+				 (DEG 的))
+			    (NP (NN 粮米)
+				(NN 物资)))
+		    (VP (ADVP (AD 纷纷))
+			(VP (VP (VV 运到)
+				(NP-OBJ (NN 大陆)))
+			    (VP (MSP 去)
+				(VP (VV 支援)
+				    (NP-OBJ (NN 作战))))))) 
+	  </parse>
+	  <arg n="1">
+	  台湾 的 粮米 物资 
+	  </arg>
+	  <arg n="2">
+	  大陆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纷纷 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  国 共 内战 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

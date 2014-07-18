@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迁居 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity moving"/>
+    <role argnum="1" argrole="place arg0 moves to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (PP-PRP (P 为)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 迁居)
+				(NP-PN-OBJ (NR 台中)))))
+		(PU ，)
+		(ADVP (AD 才))
+		(ADVP (AD 刚))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (NP-PN (NR 台北))
+				    (NP (NN 住房)))
+			    (VP (VRD (VV 处理)
+				     (VV 掉))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

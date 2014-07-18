@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 散布 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="area scatter in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 一)
+			      (CLP (M 批)))
+			  (NP (NN 学员)))
+		  (VP (VV 散布)
+		      (NP-OBJ (NP (NN 世界))
+			      (DP (DT 各))
+			      (NP (NN 地))))) 
+	  </parse>
+	  <arg n="0">
+	  一 批 学员 
+	  </arg>
+	  <arg n="1">
+	  世界 各 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VCD (VV 擢举)
+		   (VV 广征))
+	      (NP-OBJ (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-2))
+					   (VP (VP (VV 散布)
+						   (PP-LOC (P 在)
+							   (NP (DP (DT 各))
+							       (NP (NN 地)))))
+					       (VP (ADVP (AD 最新))
+						   (VP (VV 成长)))))
+				       (DEC 的)))
+			       (NP (NN 书家们)))
+			   (DEG 的))
+		      (NP (NN 书作)
+			  (NN 珍品)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  在 各 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing spread"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

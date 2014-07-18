@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 取缔 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 bans"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (NP (NP-PN (NR 阿扁))
+			(NP (NN 市长)))
+		    (NP (NN 任内)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 强力))
+		    (VP (VV 扫荡)
+			(NP-OBJ (NN 色情))))
+		(PU 、)
+		(VP (VV 取缔)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 酒醉))
+				(VP (VV 驾车)))))
+		(PU 、)
+		(VP (ADVP (AD 强制))
+		    (VP (VV 推行)
+			(NP-OBJ (NN 机车)
+				(NN 安全帽)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 酒醉 驾车 
+	</arg>
+	<arg n="m" f="tmp">
+	阿扁 市长 任内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (ADJP (JJ 新))
+			(NP (NN 政府)))
+		(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 上台)))
+			     (LC 後))
+		    (PU ，)
+		    (ADVP (AD 大力))
+		    (VP (VV 取缔)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (ADVP (AD 非法))
+						(VP (VV 交易)
+						    (NP-OBJ (-NONE- *T*-2)))))
+					(DEC 的)))
+				(NP (NN 固网)
+				    (NN 股条)))))) 
+	</parse>
+	<arg n="0">
+	新 政府 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 非法 交易 *T*-2 的 固网 股条 
+	</arg>
+	<arg n="m" f="adv">
+	大力 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 上台 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-ADV (ADVP (CS 即使))
+		    (IP (NP-SBJ (NP (NN 其中))
+				(QP (CD 一)
+				    (CLP (M 个)))
+				(NP (NN 县)))
+			(VP (ADVP (AD 严加))
+			    (VP (VV 取缔)))))
+	    (PU ，)
+	    (IP-CND (NP-SBJ (DP (DT 另)
+				(QP (CD 一)
+				    (CLP (M 个))))
+			    (NP (NN 县)))
+		    (VP (ADVP (AD 不))
+			(VP (VV 能)
+			    (VP (VV 配合)))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VC 是)
+		    (VP (ADVP (AD 无法))
+			(VP (VV 达到)
+			    (NP-OBJ (NN 效果))))))) 
+	</parse>
+	<arg n="0">
+	其中 一 个 县 
+	</arg>
+	<arg n="m" f="adv">
+	严加 
+	</arg>
+	<arg n="m" f="dis">
+	即使 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

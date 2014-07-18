@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出示 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="submitter"/>
+      <role argnum="1" argrole="proof"/>
+      <role argnum="2" argrole="submitting to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TPC (P 至於)
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 居住)
+					  (PP-LOC (P 在)
+						  (NP (NN 内地)))))
+				  (DEC 的)))
+			  (NP (NN 儿童))))
+	      (PU ，)
+	      (NP-SBJ (PN 他们))
+	      (VP (VV 必须)
+		  (VP (VP (VV 出示)
+			  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VP (PP-LGS (P 由)
+							      (NP (NP-PN (NN 入境)
+									 (NN 事务处))
+								  (NP (NN 处长))))
+						      (VP (VV 签发)))
+						  (CC 而)
+						  (VP (VV 附加)
+						      (PP-LOC (P 在)
+							      (LCP (NP (NP (PN 其))
+								       (NP (NN 单程)
+									   (NN 通行证)))
+								   (LC 上))))))
+					  (DEC 的)))
+				  (NP (NN 居留权)
+				      (NN 证明书))))
+		      (PU ，)
+		      (VP (VV 证明)
+			  (NP-OBJ (NP (PN 其))
+				  (NP (NN 居留权))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-3 由 入境 事务处 处长 签发 而 附加 在 其 单程 通行证 上 的 居留权 证明书 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  至於 *OP* *T*-2 居住 在 内地 的 儿童 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

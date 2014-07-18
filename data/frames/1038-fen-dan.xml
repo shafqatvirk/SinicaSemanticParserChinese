@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分担 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="responsibility, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使)
+		  (NP-OBJ (NN 政府)
+			  (PU 、)
+			  (NN 国际)
+			  (NN 机构)
+			  (PU 、)
+			  (NN 债务人)
+			  (CC 及)
+			  (NN 债权人))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 能)
+			  (VP (ADVP (AD 合理))
+			      (VP (VV 分担)
+				  (NP-OBJ (NN 责任)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  责任 
+	  </arg>
+	  <arg n="m" f="adv">
+	  合理 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

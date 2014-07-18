@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寄 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 汇款))
+	      (VP (VV 请)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 寄)
+			      (PU ：)
+			      (NP-OBJ (NP-PN (NR 湖北省)
+					     (NR 广水市))
+				      (NP-PN (NR 天童))
+				      (NP (ADJP (JJ 新))
+					  (NP (NN 技术)))
+				      (NP (NN 开发部))
+				      (PRN (PU （)
+					   (NP (NN 气象局)
+					       (NN 院内))
+					   (PU ）))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="2">
+	  湖北省 广水市 天童 新 技术 开发部 （ 气象局 院内 ） 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

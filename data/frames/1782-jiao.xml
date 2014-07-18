@@ -1,0 +1,174 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 叫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="named entity"/>
+      <role argnum="1" argrole="actual name"/>
+      <role argnum="2" argrole="entity who gives arg1 to arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (DP (DT 本)
+				   (CLP (M 届)))
+			       (NP-PN (NN 世界)
+				      (NN 游泳)
+				      (NN 锦标赛)))
+			   (DEG 的))
+		      (NP (NN 吉祥物)))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CD 一)
+			      (CLP (M 只)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 名))
+				      (VP (VV 叫)
+					  (NP-PN-OBJ (PU “)
+						     (NR 卡洛塔)
+						     (PU ”))))
+				  (DEC 的)))
+			  (ADJP (JJ 小))
+			  (NP (NN 海龟))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="0" f="pse">
+	  名 	  
+	  </arg>
+	  <arg n="1">
+	  “ 卡洛塔 ” 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 大人))
+	      (VP (VV 叫)
+		  (NP-IO (DP (DT 这些))
+			 (NP (NN 小孩)))
+		  (NP-OBJ (ADJP (JJ 空))
+			  (NP (NN 囝仔))))) 
+	  </parse>
+	  <arg n="0">
+	  这些 小孩 
+	  </arg>
+	  <arg n="1">
+	  空 囝仔 
+	  </arg>
+	  <arg n="2">
+	  大人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 orders"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (PP-LOC (P 在)
+					   (NP (ADJP (JJ 港式))
+					       (NP (NN 茶楼))))
+				   (VP (VV 饮茶))))
+			   (LC 之际))
+		  (VP (VCD (VV 叫)
+			   (VV 点))
+		      (QP-OBJ (CD 一)
+			      (CLP (M 份)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  一 份 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 在 港式 茶楼 饮茶 之际 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 shouts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (DP (DT 前))
+		      (NP (NN 一阵子)))
+	      (NP-SBJ (NP (PN 她))
+		      (CP (WHNP-58 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-58))
+				  (VP (VV 就读)
+				      (NP-OBJ (NN 高职))))
+			      (DEC 的)))
+		      (NP (NN 弟弟)))
+	      (VP (VP (PP-PRP (P 因为)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VPT (VV 缴)
+					   (AD 不)
+					   (VV 出))
+				      (NP-OBJ (NN 通话费)))))
+		      (VP (MSP 而)
+			  (VP (SB 被)
+			      (VP (VV 停机)))))
+		  (PU ，)
+		  (VP (VV 懊恼)
+		      (AS 了)
+		      (NP-EXT (NN 好久)))
+		  (PU ，)
+		  (VP (ADVP (AD 直))
+		      (VP (VV 叫)
+			  (IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (ADVP-WH (AD 怎麽))
+					(VP (VV 出去)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 见)
+							(NP-OBJ (NN 人))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 *OP* *T*-58 就读 高职 的 弟弟 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 怎麽 出去 *PRO* 见 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  前 一阵子 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

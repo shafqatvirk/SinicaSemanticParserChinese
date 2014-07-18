@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 旅 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 lives away from home country"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (VV 旅)
+				    (NP-PN-OBJ (NR 欧))
+				    (QP-EXT (CD 多)
+					    (CLP (M 年))))
+				(PU ，)
+				(VP (NP-TMP (NT 最近))
+				    (ADVP (AD 才))
+				    (VP (VV 应)
+					(NP-OBJ (DNP (NP-PN (NR 马英九))
+						     (DEG 之))
+						(NP (NN 邀)))))
+				(PU ，)
+				(VP (ADVP (AD 即将))
+				    (VP (VV 担任)
+					(NP-OBJ (NP-PN (NR 台北市)
+						       (NN 文化局))
+						(NP (NN 局长)))))))
+			(DEC 的)))
+		(NP-APP (NN 作家))
+		(NP-PN (NR 龙应台))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	欧 
+	</arg>
+	<arg n="m" f="ext">
+	多 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跑出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing achieved through running"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP (NP-PN (NR 美国))
+				  (DP (DT 另)
+				      (QP (CD 一)
+					  (CLP (M 名))))
+				  (NP (NN 好手)))
+			      (PU 、)
+			      (NP (NP (NN 男子))
+				  (QP (CD ４００)
+				      (CLP (M 米)))
+				  (NP (NN 名将))))
+		      (NP-PN (NR 米·约翰逊)))
+	      (VP (PP-MNR (P 以)
+			  (QP (QP (CD ４４)
+				  (CLP (M 秒)))
+			      (QP (CD ０４))))
+		  (VP (VV 跑出)
+		      (AS 了))
+		  (NP-OBJ (NP (DP (DT 该))
+			      (NP (NN 项目)))
+			  (DNP (NP (DP (DT 本))
+				   (NP (NN 赛季)))
+			       (DEG 的))
+			  (NP (NN 世界))
+			  (ADJP (JJ 最好))
+			  (NP (NN 成绩))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 另 一 名 好手 、 男子 ４００ 米 名将 米·约翰逊 
+	  </arg>
+	  <arg n="1">
+	  该 项目 本 赛季 的 世界 最好 成绩 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 ４４ 秒 ０４ 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

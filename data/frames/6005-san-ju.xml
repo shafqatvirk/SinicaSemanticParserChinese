@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 散居 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people described"/>
+    <role argnum="1" argrole="place arg0 lives scattered "/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 散居)
+				(NP-OBJ (NN 都市))))
+			(DEC 的)))
+		(NP (NN 客家人))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	都市 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-SBJ (CD 绝大部份))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VV 散居)
+					(PP (P 在)
+					    (LCP (NP (DP (DT 各)
+							 (CLP (M 个)))
+						     (NP (NN 家庭)))
+						 (LC 中)))))
+				(DEC 的)))
+			(NP (NN 菲佣)
+			    (PU 、)
+			    (NN 印佣)
+			    (CC 和)
+			    (NN 监护工))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	在 各 个 家庭 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

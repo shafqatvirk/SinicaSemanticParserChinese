@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传讯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="supoena issuer"/>
+      <role argnum="1" argrole="supoena receiver"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 法警))
+	      (VP (VP (NP-LOC (NN 头))
+		      (VP (VV 戴)
+			  (NP-OBJ (NN 大沿帽))))
+		  (PU 、)
+		  (VP (NP-LOC (NN 手))
+		      (VP (VV 执)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 带有)
+						  (NP-OBJ (NN 水)
+							  (NN 标志))))
+					  (DEC 的)
+					  (DEC 的)))
+				  (NP (NN 警矛)))))
+		  (PU ，)
+		  (VP (NP-ADV (ADJP (JJ 高))
+			      (NP (NN 声)))
+		      (VP (VV 传讯)
+			  (NP-OBJ (NN 被告))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 到场))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  法警 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  高 声 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  被告 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 到场 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １２月)
+		      (NT ９日))
+	      (PU ，)
+	      (NP-PN-SBJ (NP-PN (NR 印尼))
+			 (ADJP (JJ 最高))
+			 (NP (NN 检察院)))
+	      (VP (ADVP (AD 就))
+		  (PP-DIR (P 对)
+			  (NP (IP-APP (NP-PN-SBJ (NR 苏哈托))
+				      (VP (VP (VV 滥用)
+					      (NP-OBJ (NN 慈善)
+						      (NN 基金会)
+						      (NN 资金)))
+					  (PU 、)
+					  (VP (VP (VV 滥用)
+						  (NP-OBJ (NN 职权)))
+					      (VP (VV 发展)
+						  (NP-OBJ (NP (PU “)
+							      (ADJP (JJ 国产))
+							      (NP (NN 汽车))
+							      (PU ”))
+							  (NP (NN 项目)))))
+					  (ETC 等)))
+			      (NP (NN 指控))))
+		  (VP (VV 传讯)
+		      (AS 了)
+		      (NP-OBJ (NP-PN (NR 苏哈托))
+			      (NP (PN 本人)))))) 
+	  </parse>
+	  <arg n="0">
+	  印尼 最高 检察院 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  就 	  
+	  </arg>
+	  <arg n="M" f="DIR">
+	  对 苏哈托 滥用 慈善 基金会 资金 、 滥用 职权 发展 “ 国产 汽车 ” 项目 等 指控 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  苏哈托 本人 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

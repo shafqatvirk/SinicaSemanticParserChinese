@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 叫停 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="terminated projects, plans, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP (IP (NP-SBJ (NN 金融)
+			       (NN 风暴))
+		       (VP (VV 发生)))
+		   (LC 後))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VV 包括)
+				      (NP-PN-OBJ (NR 泰国)
+						 (CC 与)
+						 (NR 印尼))))
+			      (DEC 的)))
+		      (NP (NN 扩厂)
+			  (NN 计划)))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 已))
+		  (VP (VV 叫停)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 包括 泰国 与 印尼 的 扩厂 计划 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  金融 风暴 发生 後 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 信手拈来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 takes randomly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (NN 墙))
+		     (LC 上))
+	    (VP (ADVP (AD 则))
+		(VP (VV 贴满)
+		    (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (PN 他))
+					(VP (VV 信手拈来)
+					    (NP-OBJ (-NONE- *T*-4))))
+				    (DEC 的)))
+			    (NP (NN 打油诗)))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

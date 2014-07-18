@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 举例 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="example arg0 gives"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 曾旭正))
+	    (VP (VV 举例))) 
+	</parse>
+	<arg n="0">
+	曾旭正 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP-PN (NR 龙祥)
+				   (NN 电影)
+				   (NN 公司))
+			    (NP (NN 董事长)))
+		    (NP-PN (NR 王应祥)))
+	    (VP (VV 举例)
+		(PU ，)
+		(IP-OBJ (IP (NP-SBJ (NN 大陆)
+				    (NN 戏院))
+			    (VP (ADVP (AD 都))
+				(VP (VE 有)
+				    (NP-OBJ (QP (CD 四))
+					    (NP (NN 声道))))))
+			(PU ，)
+			(IP (NP-SBJ (QP (CD 部分))
+				    (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VV 放映)
+						    (NP-OBJ (NN 国片))))
+					    (DEC 的)))
+				    (NP (NN 戏院)))
+			    (VP (ADVP (AD 却))
+				(ADVP (AD 还))
+				(VP (VC 是)
+				    (NP-PRD (QP (CD 单))
+					    (NP (NN 声道))))))
+			(PU ，)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 等於)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 回到)
+					    (NP-OBJ (NN 台语片)
+						    (NN 时代))))))
+			(PU ，)
+			(IP (NP-TPC (ADVP (AD 光是))
+				    (NP (DNP (NP (NN 戏院))
+					     (DEG 的))
+					(NP (NN 声光)
+					    (NN 效果))))
+			    (NP-SBJ (-NONE- *pro*))
+			    (VP (ADVP (AD 就))
+				(VP (SB 被)
+				    (VP (VRD (VV 比)
+					     (VV 下去))))))))) 
+	</parse>
+	<arg n="0">
+	龙祥 电影 公司 董事长 王应祥 
+	</arg>
+	<arg n="1">
+	大陆 戏院 都 有 四 声道 ， 部分 *OP* *T*-2 放映 国片 的 戏院 却 还 是 单 声道 ， *pro* 等於 *PRO* 回到 台语片 时代 ， 光是 戏院 的 声光 效果 *pro* 就 被 比 下去 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 经常))
+				    (VP (SB 被)
+					(VP (VV 举例)))))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(NP-PRD (DNP (NP-PN (NR 叶宏灯))
+			     (DEG 的))
+			(NP-PN (NR 东聚)
+			       (NN 电业))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	经常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

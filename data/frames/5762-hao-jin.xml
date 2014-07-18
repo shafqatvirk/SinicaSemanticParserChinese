@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 耗尽 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 uses up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 贫户)
+		    (NN 寒门))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 过)
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 次)))
+				    (NP (NN 年)))))
+		(PU ，)
+		(ADVP (AD 往往))
+		(VP (VV 耗尽)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (PN 他们))
+					(VP (ADVP (AD 终年))
+					    (VP (VV 辛勤)
+						(NP-OBJ (-NONE- *T*-2)))))
+				    (DEC 的)))
+			    (NP (NN 积蓄)))))) 
+	</parse>
+	<arg n="0">
+	贫户 寒门 
+	</arg>
+	<arg n="1">
+	*OP* 他们 终年 辛勤 *T*-2 的 积蓄 
+	</arg>
+	<arg n="m" f="adv">
+	往往 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 过 一 次 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 没))
+		(VP (VV 想到)
+		    (IP-OBJ (NP-TMP (NT 不久))
+			    (NP-SBJ (NN 本钱))
+			    (VP (VV 耗尽)))))) 
+	</parse>
+	<arg n="1">
+	本钱 
+	</arg>
+	<arg n="m" f="tmp">
+	不久 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

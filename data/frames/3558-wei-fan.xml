@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 违反 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="violator"/>
+      <role argnum="1" argrole="thing violated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NN 被告))
+		      (NP-PN (QP (OD 第一))
+			     (NP (NN 国民)
+				 (NN 银行))))
+	      (VP (ADVP (AD 明显))
+		  (VP (VV 违反)
+		      (AS 了)
+		      (QP-OBJ (QP (NP-PN (NR 美国)
+					 (NN 商法典))
+				  (QP (OD 第四)
+				      (CLP (M 章))))
+			      (CC 和)
+			      (QP (DNP (NP-PN (NN 国际)
+					      (NN 商会))
+				       (DEG 的))
+				  (QP (OD 第三二二)
+				      (CLP (M 条款)))))))) 
+	  </parse>
+	  <arg n="0">
+	  被告 第一 国民 银行 
+	  </arg>
+	  <arg n="1">
+	  美国 商法典 第四 章 和 国际 商会 的 第三二二 条款 
+	  </arg>
+	  <arg n="m" f="adv">
+	  明显 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-SBJ (NP-PN-SBJ (NR 美国))
+			  (VP (PP-LOC (P 在)
+				      (NP-PN-SBJ (NR 关塔那摩)))
+			      (VP (VV 设立)
+				  (NP-OBJ (PU “)
+					  (NN 难民营)
+					  (PU ”)))))
+		  (VP (VV 违反)
+		      (AS 了)
+		      (NP-OBJ (DNP (PP (P 关于)
+				       (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 使用)
+					       (NP-OBJ (NN 军事)
+						       (NN 基地)))))
+				   (DEG 的))
+			      (NP (NN 国际)
+				  (NN 协议))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 在 关塔那摩 设立 “ 难民营 ” 
+	  </arg>
+	  <arg n="1">
+	  关于 *PRO* 使用 军事 基地 的 国际 协议 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

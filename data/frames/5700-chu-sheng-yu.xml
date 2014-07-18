@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出生於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="time/place arg0 was born"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 出生於)
+				(QP-OBJ (NP-PN (NR 民国))
+					(QP (OD 五十八)
+					    (CLP (M 年))))))
+			(DEC 的)))
+		(NP-PN (NR 马跃．比吼))
+		(PRN (PU （)
+		     (NP-PN (NR 彭世生))
+		     (PU ）))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	民国 五十八 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 老虎．伍兹))
+	    (VP (VP (PP-TMP (P 於)
+			    (NP (NT 一九七五年)))
+		    (VP (VV 出生於)
+			(NP-PN-OBJ (NR 美国)
+				   (NR 加州))))
+		(PU ，)
+		(VP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+			    (VP (NP-ADV (QP (CD 六)
+					    (CLP (M 个)))
+					(NP (NN 月)))
+				(VP (VA 大))))
+		    (ADVP (AD 就))
+		    (VP (VV 会)
+			(VP (VV 模仿)
+			    (NP-OBJ (NN 父亲))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-LOC (P 在)
+					    (LCP (NP (NN 练习场))
+						 (LC 上)))
+				    (VP (VV 挥杆)))))))
+		(PU ，)
+		(VP (QP-WH (CD 三)
+			   (CLP (M 岁)))
+		    (ADVP (AD 就))
+		    (PP-MNR (P 以)
+			    (QP (CD 四十八)
+				(CLP (M 杆))))
+		    (VP (VV 打完)
+			(NP-OBJ (QP (CD 九))
+				(NP (NN 洞))))))) 
+	</parse>
+	<arg n="0">
+	老虎．伍兹 
+	</arg>
+	<arg n="1">
+	美国 加州 
+	</arg>
+	<arg n="m" f="tmp">
+	於 一九七五年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

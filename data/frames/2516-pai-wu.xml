@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 排污 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity waste drained into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对)
+			  (NP (DP (DT 所有))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (PP-DIR (P 向)
+						      (NP (NP (NP-PN (NR 淮河))
+							      (NP (NN 流域)))
+							  (NP (NN 河流))))
+					      (VP (VV 排污))))
+				      (DEC 的)))
+			      (NP (NN 企业))))
+		  (PU ，)
+		  (VP (VV 要)
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 限期)
+				  (NN 治理)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  向 淮河 流域 河流 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

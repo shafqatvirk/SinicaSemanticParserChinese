@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 独占 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 occupies exclusively"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VP (VV 侵入)
+		    (NP-OBJ (CP (WHNP-7 (-NONE- *OP*))
+				(CP (IP (NP-SBJ-8 (-NONE- *T*-7))
+					(VP (NP-TMP (NT 过去))
+					    (PP-LGS (P 由)
+						    (NP (NN 妇女)))
+					    (VP (MSP 所)
+						(VP (VV 独占)
+						    (NP-OBJ (-NONE- *-8))))))
+				    (DEC 的)))
+			    (NP (NN 领域))))
+		(PU ，)
+		(VP (NP-ADV (ADJP (JJ 大))
+			    (NP (NN 声)))
+		    (VP (VV 宣告)
+			(PU ：)
+			(IP-IMP-OBJ (NP-VOC (NN 女人))
+				    (PU ，)
+				    (NP-SBJ (NN 美貌))
+				    (VP (ADVP (AD 不))
+					(ADVP (AD 再))
+					(VP (VC 是)
+					    (NP-PRD (DNP (NP (PN 你))
+							 (DEG 的))
+						    (NP (NN 专利)))))))))) 
+	</parse>
+	<arg n="0">
+	由 妇女 
+	</arg>
+	<arg n="1">
+	*T*-7 
+	</arg>
+	<arg n="m" f="tmp">
+	过去 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 以往) )
+				    (VP (VV 独占)
+					(NP-OBJ (NP (ADJP (JJ 分类))
+						    (NP (NN 广告)))
+						(NP (NN 市场) )))))
+			    (DEC 的)))
+		    (NP (NN 报纸) ))
+	    (VP (ADVP (AD 不))
+		(VP (VV 会)
+		    (VP (VV 透露)
+			(NP-OBJ (ADJP (JJ 实际))
+				(NP (NN 营收) )))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	分类 广告 市场 
+	</arg>
+	<arg n="m" f="tmp">
+	以往 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 安装 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="installer"/>
+    <role argnum="1" argrole="thing installed"/>
+    <role argnum="2" argrole="location"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NR 联合国)
+                 (NN 特委会))
+      (VP (PP-LOC (P 在)
+                  (NP (QP (CD ５８８)
+                          (CLP (M 处)))
+                      (CP (WHNP-1 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                  (VP (VA 重要)))
+                              (DEC 的)))
+                      (NP (NN 场所))))
+          (VP (VV 安装)
+              (AS 了)
+              (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (-NONE- *T*-2))
+                                  (VP (VA 现代化)))
+                              (DEC 的)))
+                      (NP (NN 监视))
+                      (NP (NN 仪器)
+                          (CC 和)
+                          (NN 设备)))))))
+	</parse>
+	<arg n="0"> 联合国 特委会 </arg>
+	<V/>
+	<arg n="2"> 在 ５８８ 处 *OP* (*T*-1)->(场所) 重要 的 场所 </arg>
+	<arg n="1"> *OP* (*T*-2)->(监视仪器和设备) 现代化 的 监视 仪器 和 设备 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-MNR (P 据)
+              (NP (NN 介绍)))
+      (PU ，)
+      (NP-SBJ (NP-PN (NR 湘江))
+              (NP-PN (NR 大源渡))
+              (NP (NN 航电)
+                  (NN 枢纽)))
+      (VP (VRD (VV 安装)
+               (VE 有))
+          (NP-OBJ (QP (CD 四)
+                      (CLP (M 台)))
+                  (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-TPC (-NONE- *T*-1))
+                              (NP-TMP (NT 目前))
+                              (NP-LOC (NN 国内))
+                              (NP-SBJ (NN 单机)
+                                      (NN 容量))
+                              (VP (ADVP (AD 最))
+                                  (VP (VA 大))))
+                          (DEC 的)))
+                  (QP (CD 三万)
+                      (CLP (M 千瓦)))
+                  (ADJP (JJ 贯流式))
+                  (NP (NN 发电)
+                      (NN 机组))))))
+	</parse>
+	<arg n="2"> 湘江 大源渡 航电 枢纽 </arg>
+	<V/>
+	<arg n="1"> 四 台 *OP* (*T*-1)->(三万千瓦贯流式发电机组) 目前 国内 单机 容量 最 大 的 三万 千瓦 贯流式 发电 机组 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DP (DT 全部))
+              (NP (NN 设备)))
+      (VP (ADVP (AD 将))
+          (PP-TMP (P 于)
+                  (LCP (NP (NT 今年))
+                       (LCP (NP (NN 年))
+                            (LC 内))))
+          (VP (VP-FOC (VP (VV 生产))
+                      (PU 、)
+                      (VP (VV 安装)))
+              (VP (VV 完毕))))
+      (PU 。)))
+	</parse>
+	<arg n="1"> 全部 设备 </arg>
+	<arg n="M" f="ADV"> 将 </arg>
+	<arg n="M" f="TMP"> 于 今年 年 内 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

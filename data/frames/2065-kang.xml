@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扛 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity carried"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-PN-SBJ (NR 中国))
+		(VP (VP (VP (VV 付出)
+			    (NP-OBJ (ADJP (JJ 巨大))
+				    (NP (NN 代价))))
+			(VP (VV 坚守)
+			    (IP-OBJ (NP-SBJ (NN 人民币))
+				    (VP (ADVP (AD 不))
+					(VP (VV 贬值))))))
+		    (PU ，)
+		    (VP (PU “)
+			(BA 把)
+			(IP-OBJ (NP-SBJ (DP (DT 一切))
+					(NP (NN 麻烦)))
+				(VP (NP-ADV (PN 自己))
+				    (VP (VV 扛))))
+			(PU ”))
+		    (PU ，)
+		    (CC 并)
+		    (VP (PP-DIR (P 对)
+				(NP (NP-PN (NR 亚洲))
+				    (QP (CD 一些))
+				    (NP (NN 国家))))
+			(ADVP (AD 慷慨))
+			(VP (VV 解囊相助))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  一切 麻烦 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自己 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减半 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="level arg0 reduces arg1 by half to be"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (OD 第五)
+		      (CLP (M 届)))
+	      (VP (VRD (VV 减半)
+		       (VV 为))
+		  (NP-OBJ (QP (CD 一百五十))
+			  (NP (NN 人))))) 
+	  </parse>
+	  <arg n="1">
+	  第五 届 
+	  </arg>
+	  <arg n="2">
+	  一百五十 人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

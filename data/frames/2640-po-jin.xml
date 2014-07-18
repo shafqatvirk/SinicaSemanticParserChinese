@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迫近 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 中国))
+				  (VP (PP-TMP (-NONE- *T*-1))
+				      (PP-DIR (P 对)
+					      (NP-PN (NR 澳门)))
+				      (VP (VV 恢复)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 行使)
+						      (NP-OBJ (NN 主权)))))))
+			      (DEC 的)))
+		      (NP (NN 日期)))
+	      (VP (ADVP (AD 日益))
+		  (VP (VV 迫近)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 中国 *T*-1 对 澳门 恢复 *PRO* 行使 主权 的 日期 
+	  </arg>
+	  <arg n="m" f="adv">
+	  日益 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

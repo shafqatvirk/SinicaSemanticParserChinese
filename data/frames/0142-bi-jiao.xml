@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 比较 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="comparer"/>
+      <role argnum="1" argrole="thing compared"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (PP (P 与)
+			    (NP (NP (NT 九六年))
+				(DP (DT 同))
+				(NP (NN 季))))
+			(VP (VV 比较))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="1" f="CRD">
+	  与 九六年 同 季 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

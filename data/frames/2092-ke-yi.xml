@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 可以 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing that could pass, be feasible"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 去)
+			  (DER 个)
+			  (QP-EXT (QP (CD 四)
+				      (CLP (-NONE- *RNR*-1)))
+				  (PU 、)
+				  (QP (CD 五)
+				      (CLP-1 (M 次))))))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 可以)
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 去 个 四 *RNR*-1 、 五 次	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  就	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

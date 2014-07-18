@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 借镜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 learns from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (PN 这些))
+		(VP (ADVP (AD 都))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-PN-SBJ (NR 台湾))
+					    (VP (VV 可以)
+						(VP (VV 借镜)
+						    (NP-OBJ (-NONE- *T*-1)))))
+					(DEC 的)))
+				(NP (NN 民主)
+				    (NN 典范)))))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (DP-SBJ (DT 这)
+		    (CLP (M 点)))
+	    (VP (VV 值得)
+		(NP-PN-OBJ (NR 台湾))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 学习)
+			(CC 与)
+			(VV 借镜))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

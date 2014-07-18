@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赞佩不已 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 praises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 难怪))
+	      (NP-PN-SBJ (NR 马大维))
+	      (VP (PP (P 对)
+		      (NP-PN (NR 马修)))
+		  (VP (VV 赞佩不已)))) 
+	  </parse>
+	  <arg n="0">
+	  马大维 
+	  </arg>
+	  <arg n="1">
+	  对 马修 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难怪 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

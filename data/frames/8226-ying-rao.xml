@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 萦绕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place arg0 lingers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (QP (CD 两)
+		      (CLP (M 件)))
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 萦绕)
+				      (NP-OBJ (NN 脑海))))
+			      (PU 、)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 念念不忘)
+				      (NP-OBJ (-NONE- *T*-2)))))
+			  (DEC 的)))
+		  (ADJP (JJ 陈年))
+		  (NP (NN 恨事))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  脑海 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

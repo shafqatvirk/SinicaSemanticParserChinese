@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 洞若观火 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 美国))
+			  (NP (NN 舆论)))
+		      (PU 、)
+		      (NP (ADVP (AD 特别是))
+			  (NP (NP-PN (NR 共和党))
+			      (NP (NN 议员)))))
+	      (VP (PP-DIR (P 对)
+			  (NP (PN 此)))
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 可)
+			      (VP (VV 谓))))
+		  (VP (VC 是)
+		      (VP (VV 洞若观火))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 舆论 、 特别是 共和党 议员 
+	  </arg>
+	  <arg n="1">
+	  对 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

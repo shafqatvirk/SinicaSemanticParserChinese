@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 只得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 causes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (PN 这样))
+			 (DEG 的))
+		    (NP (NN 经验)))
+	    (PU ，)
+	    (VP (VV 只得)
+		(NP-OBJ (DNP (NP (PN 他))
+			     (DEG 的))
+			(NP (NN 小说)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VE 有)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 种)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 特殊)))
+					(DEC 的)))
+				(NP (PU 「)
+				    (ADJP (JJ 隔代))
+				    (NP (NN 个性))
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	这样 的 经验 
+	</arg>
+	<arg n="1">
+	他 的 小说 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 有 一 种 *OP* *T*-1 特殊 的 「 隔代 个性 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

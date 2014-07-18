@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 创作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="composer, artist, writer, etc."/>
+      <role argnum="1" argrole="work"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 多)
+			   (CLP (M 年)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 巴廖尼))
+	      (VP (VV 创作)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 首)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 名))
+				      (VP (VV 叫)
+					  (IP-TTL-OBJ (PU 《)
+						      (NP-SBJ (ADJP (JJ 小小))
+							      (NP (NN 爱情)))
+						      (VP (VA 深)
+							  (PP-EXT (P 似)
+								  (NP (NN 海))))
+						      (PU 》)))))
+			      (DEC 的))
+			  (NP (NN 歌曲))))) 
+	  </parse>
+	  <arg n="0">
+	  巴廖尼 	  
+	  </arg>
+	  <arg n="1">
+	  一 首 *OP* *T*-1 名 叫 《 小小 爱情 深 似 海 》 的 歌曲 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  多 年 前 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 香港)
+			 (NN 各界)
+			 (NN 庆祝)
+			 (NN 回归)
+			 (NN 委员会))
+	      (VP (ADVP (AD 特别))
+		  (VP (VV 委托)
+		      (NP-OBJ (-NONE- *pro*))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 创作)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 终究))
+		  (ADVP (AD 不))
+		  (VP (VV 能)
+		      (VP (VRD (VV 创作)
+			       (VV 出))
+			  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 可以)
+						  (VP (VV 作为)
+						      (NP-OBJ (NN 书教)))))
+					  (DEC 的)))
+				  (NP (NN 作品))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-3 可以 作为 书教 的 作品 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  终究 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,123 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 劫持 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD ３)
+			      (CLP (M 名)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (LB 遭)
+					  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+						  (IP (NP-SBJ (NN 恐怖)
+							      (NN 分子))
+						      (VP (VV 劫持)
+							  (NP-OBJ (-NONE- *T*-1))))))))
+			      (DEC 的))
+			  (NP (NN 西方)
+			      (NN 游客)))
+		  (VP (NP-TMP (NT 当天)
+			      (NT 下午))
+		      (PP-LOC (P 在)
+			      (NP (NP (NP-PN (NR 也门))
+				      (NP (NN 南部)))
+				  (NP-PN (NR 阿比洋省)
+					 (NR 埃马利布))
+				  (NP (NN 地区))))
+		      (VP (SB 被)
+			  (VP (VV 杀害))))) 
+	  </parse>
+	  <arg n="0">
+	  恐怖 分子 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 阻止)
+		      (NP-OBJ (DNP (NP (NN 事件))
+				   (DEG 的))
+			      (ADJP (JJ 进一步))
+			      (NP (NN 扩大))))
+		  (CC 和)
+		  (VP (VV 营救)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+					  (VP (SB 被)
+					      (VP (VV 劫持)
+						  (NP-OBJ (-NONE- *-2)))))
+				      (DEC 的)))
+			      (DP (DT 其他))
+			      (NP (NN 游客)))))) 
+	  </parse>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				      (VP (NP-TMP (NT ２８日))
+					  (PP-LOC (P 在)
+						  (NP-PN (NR 阿比洋省)))
+					  (PP (P 与)
+					      (NP (QP (ADJP (JJ 另外))
+						      (QP (CD １３)
+							  (CLP (M 名))))
+						  (NP (NN 外国)
+						      (NN 游客))))
+					  (ADVP (AD 一起))
+					  (VP (SB 被)
+					      (VP (VV 劫持)
+						  (NP-OBJ (-NONE- *-2))))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <arg n="1">
+	  与 另外 １３ 名 外国 游客 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一起 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 阿比洋省 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ２８日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

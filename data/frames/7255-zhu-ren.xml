@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 住人 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing inhabited by humans"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (QP (CD 一)
+		    (CLP (M 座)))
+		(CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VP (VCD (VV 通风)
+					 (VV 透雨)))
+				(PU 、)
+				(VP (ADVP (AD 不))
+				    (VP (VV 堪)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 住人)))))))
+			(DEC 的)))
+		(NP (NN 防空洞))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

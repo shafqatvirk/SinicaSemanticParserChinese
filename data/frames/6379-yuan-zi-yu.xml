@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 源自於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 originates from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NP (NN 海峡))
+			(QP (CD 两))
+			(NP (NN 岸)))
+		    (NP (NN 人民)))
+	    (VP (VV 源自於)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VA 相同)))
+				(DEC 的)))
+			(NP (NN 血缘)
+			    (PU 、)
+			    (NN 文化)
+			    (CC 和)
+			    (NN 历史)
+			    (NN 背景))))) 
+	</parse>
+	<arg n="0">
+	海峡 两 岸 人民 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 相同 的 血缘 、 文化 和 历史 背景 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

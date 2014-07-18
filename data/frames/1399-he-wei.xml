@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="merging entities"/>
+      <role argnum="2" argrole="merging into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (ADVP (AD 从而))
+	      (VP (VV 产生)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP (P 与)
+					      (NP (PN 它)))
+					  (VP (VV 合为)
+					      (NP-OBJ (NN 一体)))))
+				  (DEC 的))
+			  (NP (NN 念头))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  与 它 
+	  </arg>
+	  <arg n="2">
+	  一体 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

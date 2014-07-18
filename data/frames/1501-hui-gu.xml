@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回顾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="reviewer"/>
+      <role argnum="1" argrole="thing reviewed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 唐龙彬)
+			 (NN 大使))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 祝酒辞))
+			       (LC 中)))
+		  (PU ，)
+		  (VP (VV 回顾)
+		      (NP-OBJ (NP (CP-APP (IP (NP-TMP (NT 去年))
+					      (NP-PN-SBJ (NR 中国))
+					      (VP (ADVP (AD 稳定))
+						  (VP (VV 发展))))
+					  (DEC 的))
+				  (NP (NN 政治)
+				      (NN 经济)
+				      (NN 形势))))))) 
+	  </parse>
+	  <arg n="0">
+	  唐龙彬 大使 
+	  </arg>
+	  <arg n="1">
+	  去年 中国 稳定 发展 的 政治 经济 形势 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 祝酒辞 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

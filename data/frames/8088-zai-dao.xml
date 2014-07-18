@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 载到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 takes arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC-1 (NP-TMP (NT 以前))
+			(IP-TPC (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 搭)
+					(NP-OBJ (NN 计程车)))
+				    (VP (VV 到)
+					(NP-PN-OBJ (NR 光启社)))))
+			(PU ，)
+			(IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 不))
+				    (VP (VV 用)
+					(VP (VV 说)
+					    (NP-OBJ (NN 地址))))))
+			(PU ，)
+			(NP-SBJ (NN 司机))
+			(VP (ADVP (AD 就))
+			    (VP (VV 知道)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (BA 把)
+					    (IP-OBJ (NP-SBJ (PN 我))
+						    (VP (VV 载到)
+							(NP-OBJ (PN 那里)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  我 
+	  </arg>
+	  <arg n="2">
+	  那里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

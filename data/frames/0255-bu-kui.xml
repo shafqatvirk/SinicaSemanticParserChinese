@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 补亏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (-NONE- *T*-1))
+                          (VP (VV 实行)
+                              (NP-OBJ (NN 兼并))))
+                      (DEC 的))))
+      (PU ，)
+      (NP-SBJ (NN 兼并方))
+      (VP (VP (VV 享受)
+              (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+                                              (IP (NP-SBJ (-NONE- *T*-3))
+                                                  (VP (SB 被)
+                                                      (VP (VV 并)
+                                                          (NP-OBJ (-NONE- *T*-3))))))
+                                          (NP (NN 企业)))
+                                  (VP (ADVP (AD 原))
+                                      (VP (VE 有)
+                                          (NP-OBJ (-NONE- *T*-2)))))
+                              (DEC 的)))
+                      (ADJP (JJ 政策性))
+                      (NP (NN 亏损)
+                          (NN 补贴))))
+          (PU ，)
+          (VP (ADVP (AD 也))
+              (VP (VV 可)
+                  (VP (PP-MNR (P 用)
+                              (NP (NN 企业)
+                                  (NN 公积金)))
+                      (VP (VV 补亏))))))))
+	</parse>
+	<arg n="M" f="TPC"> *OP* (*T*-1)->(兼并方) 实行 兼并 的 </arg>
+	<arg n="0"> 兼并方 </arg>
+	<arg n="M" f="ADV"> 也 </arg>
+	<arg n="M" f="MNR"> 用 企业 公积金 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

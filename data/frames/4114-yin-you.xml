@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 印有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing printed"/>
+      <role argnum="1" argrole="location where arg0 is printed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 纸币))
+			   (DEG 的))
+		      (NP (NN 正面)))
+	      (VP (VV 印有)
+		  (NP-OBJ (NP (DNP (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (VV 发行)
+							   (NP-OBJ (NN 欧元))))
+						   (DEC 的)))
+					   (NP-PN (NR 欧洲)
+						  (NN 中央)
+						  (NN 银行)))
+				       (NP (NN 名称)))
+				   (DEG 的))
+			      (DNP (NP (QP (CD 5)
+					   (CLP (M 种)))
+				       (NP (NN 语言)))
+				   (DEG 的))
+			      (NP (NN 缩写)))
+			  (CC 以及)
+			  (NP (DNP (NP (NP-PN (NN 中央)
+					      (NN 银行))
+				       (NP (NN 行长)))
+				   (DEG 的))
+			      (NP (NN 签名)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 发行 欧元 的 欧洲 中央 银行 名称 的 5 种 语言 的 缩写 以及 中央 银行 行长 的 签名 
+	  </arg>
+	  <arg n="1">
+	  纸币 的 正面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

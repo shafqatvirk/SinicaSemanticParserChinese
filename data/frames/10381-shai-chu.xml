@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 晒出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 最後))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 再))
+		(VP (VP (VV 晒)
+			(NP-OBJ (QP (QP (CD 两)
+					(CLP (-NONE- *RNR*-1)))
+				    (QP (CD 三)
+					(CLP-1 (M 天))))
+				(NP (NN 太阳))))
+		    (PU ，)
+		    (VP (VV 晒出)
+			(NP-OBJ (DNP (ADJP (JJ 多馀))
+				     (DEG 的))
+				(NP (NN 油份))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	多馀 的 油份 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 定票 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-ADV (ADVP (CS 尽管))
+		      (IP (NP-SBJ (DNP (NP (NN 演唱会))
+				       (DEG 的))
+				  (ADJP (ADVP (AD 最))
+					(ADJP (JJ 高)))
+				  (NP (NN 票价)))
+			  (VP (ADVP (AD 高))
+			      (VP (VV 达)
+				  (QP-OBJ (CD 五百)
+					  (CLP (M 元)))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 前来)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 定票)))))
+			      (DEC 的)))
+		      (NP (NN 歌迷)))
+	      (VP (ADVP (AD 还是))
+		  (VP (VV 络绎不绝)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

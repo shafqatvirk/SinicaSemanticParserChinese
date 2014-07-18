@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 起音 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="music in which arg0 plays the 1st tune"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LGS (P 由)
+			(NP (NP-APP (NN 大陆)
+				    (NP (NN 古琴)
+					(NN 名家)))
+			    (NP-PN (NR 成公亮))))
+		(VP (VV 起音)
+		    (PU ，)
+		    (VP (VV 带出)
+			(NP-OBJ (CP-APP (IP (NP-LOC (ADJP (JJ 高))
+						    (NP (NN 山)))
+					    (NP-LOC (ADJP (JJ 深))
+						    (NP (NN 谷)))
+					    (NP-SBJ (NN 流水))
+					    (VP (VV 淙淙)))
+					(DEC 的))
+				(NP (NN 意境))))))) 
+	</parse>
+	<arg n="0">
+	由 大陆 古琴 名家 成公亮 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

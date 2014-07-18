@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 空缺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (NN 研讨会))
+	      (VP (ADVP (AD 尚))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 少量))
+				      (NP (NN 名额)))
+			      (VP (VA 空缺)))))) 
+	  </parse>
+	  <arg n="0">
+	  少量 名额 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

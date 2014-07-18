@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 高达 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="quantity, amount"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 投资)
+		      (NN 总额))
+	      (VP (VV 高达)
+		  (QP-OBJ (CD 三点二亿)
+			  (CLP (M 元))))) 
+	  </parse>
+	  <arg n="0">
+	  投资 总额 
+	  </arg>
+	  <arg n="1">
+	  三点二亿 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

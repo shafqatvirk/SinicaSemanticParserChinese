@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拟定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing drafted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 他们))
+		  (VP (ADVP (AD 将))
+		      (PP-TMP (P 在)
+			      (LCP (NP (NT 一九九九年)
+				       (NT 六月))
+				   (LC 之前)))
+		      (PU ，)
+		      (VP (VP (VV 拟定)
+			      (NP-OBJ (NP (NN 试点)
+					  (NN 工作)
+					  (NN 总结)
+					  (NN 报告))
+				      (CC 和)
+				      (NP (NP (NP (NN 体系))
+					      (ADJP (JJ 持续))
+					      (NP (NN 改进)))
+					  (NP (NN 意见)))))
+			  (PU ，)
+			  (VP (VV 召开)
+			      (NP-OBJ (NN 体系)
+				      (NN 管理)
+				      (NN 评审)
+				      (NN 会议)))
+			  (PU ，)
+			  (VP (VV 力争)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (P 通过)
+					      (NP-OBJ (DNP (NP-PN (NN 国家)
+								  (NN 环保)
+								  (NN 总局))
+							   (DEG 的))
+						      (NP (NN 验收))))
+					  (PU ，)
+					  (VP (VV 获得)
+					      (NP-OBJ (NN 认证))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  试点 工作 总结 报告 和 体系 持续 改进 意见 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 一九九九年 六月 之前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

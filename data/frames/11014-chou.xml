@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 仇 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 has hatred against"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-2))
+			(VP (ADVP (AD 明白))
+			    (VP (VV 仇)
+				(NP-PN-OBJ (NR 日)))))
+		    (DEC 的)))
+	    (IP-TTL (PU 《)
+		    (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 莎哟哪拉)
+			(PU ．)
+			(VV 再见))
+		    (PU 》))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	日 
+	</arg>
+	<arg n="m" f="adv">
+	明白 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

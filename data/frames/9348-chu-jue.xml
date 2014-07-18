@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 处决 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 executes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (NP-LOC (-NONE- *T*-1))
+				      (NP-TMP (NT 昔时))
+				      (VP (VCD (VV 审讯)
+					       (VV 处决))
+					  (NP-OBJ (NP (ADJP (JJ 白色))
+						      (NP (NN 恐怖)))
+						  (NP (NN 犯人))))))
+			      (DEC 的)))
+		      (NP-PN (NR 马场町)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  白色 恐怖 犯人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  昔时 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

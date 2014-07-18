@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坚信 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="believer"/>
+      <role argnum="1" argrole="belief"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VV 坚信)
+		  (PU ，)
+		  (IP-OBJ (IP-TPC (NP-PN-SBJ (NR 香港))
+				  (VP (VP (VV 回归)
+					  (NP-OBJ (NN 祖国)))
+				      (PU ，)
+				      (VP (VV 实行)
+					  (NP-OBJ (PU 「)
+						  (NP (QP (CD 一))
+						      (NP (NN 国)))
+						  (NP (QP (CD 两))
+						      (NP (NN 制)))
+						  (PU 」)))))
+			  (PU ，)
+			  (NP-SBJ (NN 前途))
+			  (VP (ADVP (AD 必定))
+			      (ADVP (AD 更加))
+			      (VP (VA 辉煌)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  香港 回归 祖国 ， 实行 「 一 国 两 制 」 ， 前途 必定 更加 辉煌 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

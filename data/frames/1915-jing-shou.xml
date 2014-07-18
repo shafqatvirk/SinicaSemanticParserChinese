@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 经手 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 handles"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-ADV (DT 每)
+		      (CLP (M 天)))
+	      (NP-SBJ (PN 她))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *pro*))
+						       (VP (VV 经手)
+							   (NP-OBJ (-NONE- *T*-1))))
+						   (DEC 的)))
+					   (NP (NN 衬衫)))
+				       (LC 上)))
+			  (VP (VV 缝上)
+			      (NP-OBJ (DNP (NP-PN (PU “)
+						  (NR 中国)
+						  (NR 大寨)
+						  (PU ”))
+					   (DEG 的))
+				      (NP (NN 注册)
+					  (NN 商标)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

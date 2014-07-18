@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 念出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 reads out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-LOC (QP (CD 一)
+			(CLP (M 间)))
+		    (NP (NN 教室)))
+	    (NP-SBJ (QP (QP (CD 七)
+			    (CLP (-NONE- *RNR*-1)))
+			(PU 、)
+			(QP (CD 八)
+			    (CLP-1 (M 位))))
+		    (NP (NN 学生)))
+	    (VP (VP (VV 看)
+		    (AS 著)
+		    (NP-OBJ (DNP (LCP (NP (NN 黑板))
+				      (LC 上))
+				 (DEG 的))
+			    (NP (NN 音标))))
+		(PU ，)
+		(VP (ADVP (AD 大声))
+		    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 跟)
+				(AS 著)
+				(NP-OBJ (NN 老师))))
+		    (VP (VV 念出)
+			(NP-OBJ (NN 单字))))
+		(PU ，)
+		(VP (VV 练习)
+		    (NP-OBJ (DNP (NP (NN 音标)
+				     (CC 和)
+				     (NN 字母))
+				 (DEG 的))
+			    (NP (NN 关系)))))) 
+	</parse>
+	<arg n="0">
+	七 *RNR*-1 、 八 位 学生 
+	</arg>
+	<arg n="1">
+	单字 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 跟 著 老师 
+	</arg>
+	<arg n="m" f="adv">
+	大声 
+	</arg>
+	<arg n="m" f="loc">
+	一 间 教室 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

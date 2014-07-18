@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 学好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 learns well"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 要)
+		(VP (ADVP (AD 早点))
+		    (VP (VV 学好)
+			(NP-OBJ (DNP (NP (NN 理财))
+				     (DEG 之))
+				(NP (NN 道))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	理财 之 道 
+	</arg>
+	<arg n="m" f="adv">
+	早点 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

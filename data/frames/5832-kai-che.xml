@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开车 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 游客))
+	    (VP (VV 可)
+		(VP (VP (ADVP (AD 自行))
+			(VP (VP (VV 开车))
+			    (VP (PP-DIR (P 沿)
+					(NP-PN (NP (NN 省道))
+					       (NP-PN (NR 台))
+					       (QP (CD 十七))
+					       (NP (NN 公路))))
+				(VP (VV 前往)))))
+		    (PU ，)
+		    (CC 或)
+		    (VP (VP (VV 搭)
+			    (NP-OBJ (NP (NN 火车))
+				    (PU 、)
+				    (NP (ADJP (JJ 公民营))
+					(NP (NN 客运)))))
+			(VP (VV 至)
+			    (NP-PN-OBJ (NR 林边)
+				       (NN 火车站))))))) 
+	</parse>
+	<arg n="0">
+	游客 
+	</arg>
+	<arg n="m" f="adv">
+	自行 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

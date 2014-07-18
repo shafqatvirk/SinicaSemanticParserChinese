@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合法 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (DP (DT 这)
+		      (CLP (M 对)))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VA 合法)))
+			  (DEC 的)))
+		  (NP (NP (ADJP (JJ 老))
+			  (NP (NN 夫)))
+		      (NP (ADJP (JJ 少))
+			  (NP (NN 妻))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

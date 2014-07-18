@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 初学 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is a beginner in learning"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NN 老师))
+		    (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 上课)))
+			(ADVP (AD 全))
+			(VP (VV 用)
+			    (NP-OBJ (NN 英文)))))
+	    (PU ，)
+	    (VP (VV 会)
+		(VP (VV 吓坏)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 初学)))
+				    (DEC 的)))
+			    (ADJP (JJ 小))
+			    (NP (NN 朋友)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

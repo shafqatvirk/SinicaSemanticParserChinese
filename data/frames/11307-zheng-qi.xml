@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 争气 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="person arg0 doesn't let down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 好在))
+	    (NP-SBJ (QP (CD 四)
+			(CLP (M 个)))
+		    (NP (NN 孩子)))
+	    (VP (ADVP (AD 都))
+		(VP (VP (VV 争气))
+		    (PU ，)
+		    (VP (ADVP (AD 顺利))
+			(VP (VV 考上)
+			    (NP-OBJ (NN 大学))))))) 
+	</parse>
+	<arg n="0">
+	四 个 孩子 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	好在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

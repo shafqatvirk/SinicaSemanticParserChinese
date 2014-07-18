@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 探视 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 visits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-PN-SBJ (NR 侯德建))
+		(VP (VP (VV 赴)
+			(NP-OBJ (NP-PN (NR 泰)
+				       (NR 缅))
+				(NP (NN 边境))))
+		    (VP (VV 探视)
+			(NP-OBJ (NN 华侨))))) 
+	</parse>
+	<arg n="0">
+	侯德建 
+	</arg>
+	<arg n="1">
+	华侨 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC (DP-ADV (DT 这)
+			    (CLP (M 次)))
+		    (NP-PN-SBJ (NR 马修))
+		    (VP (VV 前来)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 杨锦聪))
+	    (VP (VP (ADVP (AD 再))
+		    (VP (VV 带)
+			(NP-OBJ (PN 他))))
+		(VP (VV 前往)
+		    (NP-OBJ (NN 灾区)))
+		(VP (VV 探视)
+		    (QP-EXT (CD 两)
+			    (CLP (M 次)))))) 
+	</parse>
+	<arg n="0">
+	杨锦聪 
+	</arg>
+	<arg n="m" f="ext">
+	两 次 
+	</arg>
+	<arg n="m" f="tpc">
+	这 次 马修 前来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

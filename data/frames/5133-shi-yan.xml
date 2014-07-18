@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 饰演 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="role arg0 plays"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(CLP (M 出)))
+		    (CP (WHNP-38 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-38))
+				(VP (VV 描述)
+				    (IP-OBJ (NP-SBJ (NN 後母))
+					    (VP (VV 难为))))))
+			(DEC 的))
+		    (NP (NN 连续剧)))
+	    (PU ，)
+	    (VP (VV 让)
+		(NP-PN-OBJ (NR 白冰冰))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 饰演)
+			(NP-OBJ (CP (WHNP-39 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-39))
+					    (VP (ADVP (AD 一))
+						(VP (VV 反)
+						    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+								    (VP (VV 苦毒)
+									(NP-OBJ (NN 小孩))))
+							    (NP (NN 刻板印象))))))
+					(DEC 的)))
+				(NP (NN 後母))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-39 一 反 *PRO* 苦毒 小孩 刻板印象 的 後母 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-TTL (PU 《)
+				 (ADJP (JJ 惊世))
+				 (NP (NN 媳妇))
+				 (PU 》))
+			 (DEG 的))
+		    (NP (NN 故事)))
+	    (VP (VP (ADVP (AD 十分))
+		    (VP (VA 简单)))
+		(PU ，)
+		(VP (VV 描写)
+		    (NP-OBJ (CP (WHNP-19 (-NONE- *OP*))
+				(CP (IP (NP-SBJ-20 (-NONE- *T*-19))
+					(VP (PP-LGS (P 由)
+						    (NP-PN (NR 张玉燕)))
+					    (VP (VV 饰演)
+						(NP-OBJ (-NONE- *-20)))))
+				    (DEC 的)))
+			    (NP (NN 媳妇)))))) 
+	</parse>
+	<arg n="0">
+	由 张玉燕 
+	</arg>
+	<arg n="1">
+	*T*-19 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

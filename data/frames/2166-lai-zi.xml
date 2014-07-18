@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 来自 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ-2 (-NONE- *T*-1))
+				(VP (SB 被)
+				    (VP (VV 害)
+					(NP-OBJ (-NONE- *-2))))))
+			(NP (NN 游客)))
+		(VP (ADVP (AD 分别))
+		    (VP (VV 来自)
+			(NP-PN-OBJ (NR 美国)
+				   (PU 、)
+				   (NR 英国)
+				   (CC 和)
+				   (NR 澳大利亚))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 被 害 *-2 游客 
+	  </arg>
+	  <arg n="1">
+	  美国 、 英国 和 澳大利亚 
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

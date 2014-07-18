@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奉行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="policy, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (DP (DT 这)
+			       (QP (CD 一)
+				   (CLP (M 年))))
+			   (LC 里)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (VV 继续)
+		  (VP (VV 奉行)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 独立自主)))
+				      (DEC 的))
+			      (NP (NN 和平)
+				  (NN 外交)
+				  (NN 政策)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 独立自主 的 和平 外交 政策 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 这 一 年 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

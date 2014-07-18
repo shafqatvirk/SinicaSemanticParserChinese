@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 签字 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing signed on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-APP (NP-PN (NR 缅甸))
+				  (NP (NN 贸易)
+				      (NN 部长)))
+			  (NP-PN (NR 吞基)))
+		      (CC 和)
+		      (NP (NP-APP (NP-PN (NR 泰国))
+				  (NP (NN 外交)
+				      (NN 部长)))
+			  (NP-PN (NR 格森·格森西))))
+	      (VP (ADVP (AD 分别))
+		  (VP (VP (VV 代表)
+			  (NP-OBJ (NP (DP (DT 本))
+				      (NP (NN 国)))
+				  (NP (NN 政府))))
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (NN 协定))
+				       (LC 上)))
+			  (VP (VV 签字)))))) 
+	  </parse>
+	  <arg n="0">
+	  缅甸 贸易 部长 吞基 和 泰国 外交 部长 格森·格森西 
+	  </arg>
+	  <arg n="1">
+	  在 协定 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 上午))
+				      (PP-LOC (P 在)
+					      (NP (PN 这里)))
+				      (VP (VV 签字))))
+			      (DEC 的))))
+	      (VP (VC 是)
+		  (NP-PRD (NP-APP (NN 知识)
+				  (NN 信息)
+				  (NN 网络)
+				  (NN 通讯)
+				  (NN 技术)
+				  (CC 和)
+				  (NN 脱氧核糖核酸)
+				  (NN 生物)
+				  (NN 技术))
+			  (QP (CD 两)
+			      (CLP (M 个)))
+			  (NP (NN 项目))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这里 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  上午 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

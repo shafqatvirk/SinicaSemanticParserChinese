@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 派驻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity dispatched"/>
+      <role argnum="2" argrole="location stationed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 会见)
+	      (AS 了)
+	      (NP-PN-OBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+				     (CP (IP (NP-PN-SBJ (-NONE- *T*-1))
+					     (VP (ADVP (AD 刚刚))
+						 (VP (VV 到任))))
+					 (DEC 的)))
+				 (CP (WHNP-2 (-NONE- *OP*))
+				     (CP (IP (NP-SBJ (NP-PN (NR 联合国))
+						     (NP (NN 秘书长)))
+					     (VP (VV 派驻)
+						 (NP-OBJ (-NONE- *T*-2))
+						 (NP-PN-OBJ (NR 柬埔寨))))
+					 (DEC 的)))
+				 (NP (NN 代表)))
+			 (NP-PN (NR 本尼·威迪奥诺)))) 
+	  </parse>
+	  <arg n="0">
+	  联合国 秘书长 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  柬埔寨 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP-APP (IP (NP-PN-SBJ (NP-PN (NR 中国))
+					     (NP (PP (P 对)
+						     (NP (NN 外)))
+						 (NP (NN 经济)
+						     (NN 贸易)))
+					     (NP (NN 合作部)))
+				  (VP (VV 派驻)
+				      (NP-PN-OBJ (NR 澳门))))
+			      (DEC 的))
+		      (ADJP (JJ 直属))
+		      (NP (NN 企业)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 对 外 经济 贸易 合作部 
+	  </arg>
+	  <arg n="2">
+	  澳门 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP-FOC (PP-DIR (P 向)
+							  (NP (DP (DT 该))
+							      (NP (NN 地区))))
+						  (VP (VV 派驻)
+						      (NP-OBJ (NN 蓝盔)
+							      (NN 部队))))
+					  (VP (ADVP (AD 最))
+					      (VP (VA 多)))))
+				  (DEC 的)))
+			  (NP (NN 西方)
+			      (NN 国家))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  蓝盔 部队 
+	  </arg>
+	  <arg n="2">
+	  向 该 地区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

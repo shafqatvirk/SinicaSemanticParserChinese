@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跳出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="result created through jumping"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 如))
+		      (NP (NP-PN (NR 河北队))
+			  (DNP (QP (CD １７)
+				   (CLP (M 岁)))
+			       (DEG 的))
+			  (NP-PN (NR 冯婕))))
+	      (VP (VP (PP-LOC (P 在)
+			      (LCP (NP (NN 女子)
+				       (NN 跳远)
+				       (NN 决赛))
+				   (LC 中)))
+		      (VP (VV 跳出)
+			  (AS 了)
+			  (NP-OBJ (DNP (QP (CD ６．５８)
+					   (CLP (M 米)))
+				       (DEG 的))
+				  (ADJP (JJ 好))
+				  (NP (NN 成绩)))))
+		  (PU ，)
+		  (VP (VV 夺得)
+		      (NP-OBJ (NP (DP (DT 该))
+				  (NP (NN 项目)))
+			      (NP (NN 银牌))))
+		  (PU ，)
+		  (VP (VV 打破)
+		      (AS 了)
+		      (NP-OBJ (NP (DP (DT 全))
+				  (NP (NN 国)))
+			      (NP (NN 少年)
+				  (NN 纪录)))))) 
+	  </parse>
+	  <arg n="0">
+	  如 河北队 １７ 岁 的 冯婕 
+	  </arg>
+	  <arg n="1">
+	  ６．５８ 米 的 好 成绩 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 女子 跳远 决赛 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location jumped out from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

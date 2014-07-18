@@ -1,0 +1,121 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 逛逛 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 takes a walk"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PU 「)
+	    (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					     (VP (NP-TMP (NT 早上))
+						 (VP (VV 起来))))
+				     (VP (VP (VV 坐)
+					     (NP-OBJ (QP (OD 第一)
+							 (CLP (M 班)))
+						     (NP (NN 飞机))))
+					 (VP (VV 到)
+					     (NP-PN-OBJ (NR 澳门))))))
+			     (LC 後))
+		    (PP-LOC (P 在)
+			    (NP-PN (NR 威斯京)
+				   (NN 酒店)))
+		    (VP (VP (VV 喝)
+			    (NP-OBJ (NN 咖啡)))
+			(VP (VV 谈)
+			    (NP-OBJ (NN 公务)))))
+		(PU ，)
+		(VP (NP-TMP (NT 下午))
+		    (VP (VP (VP (VV 到)
+				(NP-OBJ (NP-PN (NR 澳门))
+					(NP (NN 离岛))))
+			    (VP (VV 打)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 场)))
+					(NP (NN 高尔夫球)))))
+			(PU ，)
+			(VP (VV 逛逛)
+			    (NP-OBJ (NN 本岛)
+				    (NN 闹区)))))
+		(PU ，)
+		(VP (NP-TMP (NT 晚上))
+		    (VP (VP (VV 搭)
+			    (NP-OBJ (QP (ADJP (JJ 最後))
+					(QP (CD 一)
+					    (CLP (M 班))))
+				    (NP (NN 飞机))))
+			(VP (VV 离去))))
+		(PU ，)
+		(VP (LCP-TMP (QP (CD 一)
+				 (CLP (M 天)))
+			     (LC 之内))
+		    (ADVP (AD 就))
+		    (VP (VV 可)
+			(VP (VV 往返)))))
+	    (PU 」)) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	本岛 闹区 
+	</arg>
+	<arg n="m" f="tmp">
+	下午 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 shops for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 下午))
+	    (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (VE 没)
+			(NP-OBJ (NN 事))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 会)
+		(VP (ADVP (AD 先))
+		    (VP (VP (VV 去)
+			    (NP-PN-OBJ (NR 特力屋)))
+			(VP (VV 逛逛)
+			    (NP-OBJ (ADJP (JJ 家饰))
+				    (NP (NN 用品)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	家饰 用品 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 没 事 
+	</arg>
+	<arg n="m" f="tmp">
+	下午 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无所谓 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing which doesn't matter to arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-ADV (ADVP (CS 一旦))
+		    (IP (NP-SBJ (PN 你))
+			(VP (VE 有)
+			    (AS 了)
+			    (QP-OBJ (CD 三千万)))))
+	    (PU ，)
+	    (IP-Q-SBJ (NP-SBJ (-NONE- *pro*))
+		      (VP (VNV-WH (VV 要)
+				  (AD 不)
+				  (VV 要))
+			  (VP (VV 退休))))
+	    (VP (ADVP (AD 都))
+		(VP (VV 无所谓)))) 
+	</parse>
+	<arg n="1">
+	*pro* 要 不 要 退休 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	一旦 你 有 了 三千万 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 有)
+		(IP-OBJ (NP-SBJ (NN 人))
+			(VP (VV 觉得)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 无所谓))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

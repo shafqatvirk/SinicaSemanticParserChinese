@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跑完 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="distance arg0 finishes running"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 成)))
+		      (VP (ADVP (AD 也))
+			  (VP (VA 好))))
+	      (PU 、)
+	      (IP-ADV (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 败)))
+		      (VP (ADVP (AD 也))
+			  (VP (VV 罢))))
+	      (PU ，)
+	      (NP-SBJ (PN 你))
+	      (VP (VV 要)
+		  (VP (VP (VV 咬牙))
+		      (VP (VV 跑完)
+			  (NP-OBJ (PN 它)))))) 
+	  </parse>
+	  <arg n="0">
+	  你 
+	  </arg>
+	  <arg n="1">
+	  它 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 败 也 罢 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 成 也 好 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

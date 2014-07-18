@@ -1,0 +1,140 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 推展 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 promotes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 推展)
+		(NP-OBJ (PU 「)
+			(NN 人权)
+			(NN 外交)
+			(PU 」)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	「 人权 外交 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LGS (P 由)
+			(NP (NN 工业局)))
+		(VP (VP (VCD (VV 领衔)
+			     (VV 挂帅)))
+		    (PU ，)
+		    (VP (VV 成立)
+			(NP-PN-OBJ (PU 「)
+				   (NT Ｙ２Ｋ)
+				   (NN 服务团)
+				   (PU 」)))
+		    (PU ，)
+		    (VP (VV 结合)
+			(NP-OBJ (NP-APP (NP-PN (NN 资策会)
+					       (PU 、)
+					       (NN 工研院))
+					(CC 与)
+					(NP-PN (ADJP (JJ 中卫))
+					       (NP (NN 中心)))
+					(ETC 等))
+				(NP (NN 单位))))
+		    (PU ，)
+		    (VP (ADVP (AD 大力))
+			(VP (VV 推展)
+			    (NP-OBJ (DNP (PP (P 对)
+					     (NP (NN 厂商)))
+					 (DEG 的))
+				    (NP (NN 辅导)
+					(NN 工作)))))))) 
+	</parse>
+	<arg n="0">
+	由 工业局 
+	</arg>
+	<arg n="1">
+	对 厂商 的 辅导 工作 
+	</arg>
+	<arg n="m" f="adv">
+	大力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 环保)
+		    (NN 观念))
+	    (VP (VP-FOC (VV 推展))
+		(VP (VA 缓慢)))) 
+	</parse>
+	<arg n="1">
+	环保 观念 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 promotes"/>
+    <role argnum="2" argrole="level arg1 is promoted to"/>
+    <role argnum="3" argrole="level arg1 is promoted from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+	<mapitem src="dir" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(VP (VV 依据)
+	    (NP-OBJ (CP-APP (IP (NP-PN (NR 孙中山))
+				(VP (PP-DIR (P 从)
+					    (NP (NN 军政)
+						(PU 、)
+						(NN 训政)))
+				    (VP (VRD (VV 推展)
+					     (VV 到))
+					(NP-OBJ (NN 宪政)
+						(NN 时期)))))
+			    (DEC 的))
+		    (NP (NN 设计)))) 
+	</parse>
+	<arg n="0">
+	
+	</arg>
+	<arg n="2">
+	宪政 时期 
+	</arg>
+	<arg n="3">
+	从 军政 、 训政 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 脱胎换骨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 块)))
+		    (NP (NN 布)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 只要))
+			    (VP (VV 掺进)
+				(QP-OBJ (DNP (QP (CD 百分之十五)
+						 (CC 到)
+						 (CD 二十))
+					     (DEG 的))
+					(QP (NP (NN 尼龙))
+					    (QP (CD 六六)))))))
+		(PU ，)
+		(ADVP (AD 就))
+		(VP (VV 可以)
+		    (VP (VV 脱胎换骨))))) 
+	</parse>
+	<arg n="0">
+	一 块 布 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 只要 掺进 百分之十五 到 二十 的 尼龙 六六 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

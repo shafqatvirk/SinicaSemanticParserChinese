@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 缠 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 pesters arg1 for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (QP (CD 五)
+			     (CLP (M 岁)))
+			 (DEG 的))
+		    (NP (NN 儿子)))
+	    (VP (ADVP (AD 则))
+		(VP (VV 缠)
+		    (AS 著)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 要)
+				(VP (VV 买)
+				    (NP-OBJ (NP-APP (NP-PN (NR 日本))
+						    (NP (NN 口袋)
+							(NN 怪兽)))
+					    (NP-PN (NR 皮卡丘))))))))) 
+	</parse>
+	<arg n="0">
+	五 岁 的 儿子 
+	</arg>
+	<arg n="2">
+	*PRO* 要 买 日本 口袋 怪兽 皮卡丘 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

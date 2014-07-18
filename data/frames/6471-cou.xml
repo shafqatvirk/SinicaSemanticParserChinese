@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 凑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities getting together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (DP (DT 这些))
+			(NP (NN 变数)))
+		(VP (ADVP (AD 统统))
+		    (VP (VV 凑)
+			(ADVP (AD 在一起))))) 
+	</parse>
+	<arg n="0">
+	这些 变数 
+	</arg>
+	<arg n="m" f="adv">
+	在一起 
+	</arg>
+	<arg n="m" f="adv">
+	统统 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="money arg0 raises"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (PP-DIR (P 对於)
+				(NP (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-TPC (-NONE- *T*-2))
+						(NP-SBJ (NP (QP (CD 一)
+								(CLP (M 个)))
+							    (NP (NN 月)))
+							(NP (NN 军饷)))
+						(VP (ADVP (AD 只有))
+						    (VP (QP-PRD (CD 二十五)
+								(CLP (M 元))))))
+					    (DEC 的)))
+				    (NP-PN (NR 夏阳))))
+			(VP (MSP 而)
+			    (VP (VV 言)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 再))
+			    (ADVP (AD 怎麽))
+			    (VP (VCD (VV 缩衣)
+				     (VV 节食)))))
+		(ADVP (AD 也))
+		(VP (VP (VPT (VV 凑)
+			     (AD 不)
+			     (VV 出))
+			(NP-OBJ (NN 学费)))
+		    (VP (VV 来))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	学费 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 再 怎麽 缩衣 节食 
+	</arg>
+	<arg n="m" f="adv">
+	*pro* 对於 *OP* *T*-2 一 个 月 军饷 只有 二十五 元 的 夏阳 而 言 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

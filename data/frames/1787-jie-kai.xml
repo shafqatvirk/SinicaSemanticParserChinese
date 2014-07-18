@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揭开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="starting event"/>
+      <role argnum="1" argrole="thing started"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 揭开)
+		      (NP-OBJ (DNP (NP (NP (NP (NT 一九九九))
+					   (NP-PN (NR 中国)
+						  (PRN (PU （)
+						       (NP-PN (NR 广州))
+						       (PU ）)))
+					   (NP (NN 生态)
+					       (NN 环境)
+					       (NN 游)))
+				       (NP (NN 活动)))
+				   (DEG 的))
+			      (NP (NN 序幕)))))) 
+	  </parse>
+	  <arg n="0">
+	  它 
+	  </arg>
+	  <arg n="1">
+	  一九九九 中国 （ 广州 ） 生态 环境 游 活动 的 序幕 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

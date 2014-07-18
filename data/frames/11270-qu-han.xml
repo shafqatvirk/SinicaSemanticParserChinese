@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 去函 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 sends letter to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 虽))
+			(VP (VV 说)
+			    (IP-OBJ (NP-SBJ (NN 超音波)
+					    (NN 检查))
+				    (VP (VE 没有)
+					(NP-OBJ (DNP (LCP (NP (NN 安全))
+							  (LC 上))
+						     (DEG 的))
+						(NP (NN 顾虑))))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (LCP-TMP (ADVP (AD 一直))
+		     (LC 以来))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 谢从宾))
+		    (DP (DT 这)
+			(CLP (M 项)))
+		    (NP (NN 肾脏)
+			(NN 筛检)))
+	    (VP (VV 必须)
+		(VP (VP (PP-MNR (P 透过)
+				(NP-PN (NN 教育局)))
+			(VP (VV 去函)
+			    (NP-OBJ (DP (DT 各))
+				    (NP (NN 学校)))))
+		    (PU ，)
+		    (CC 并)
+		    (VP (PP-LOC (P 在)
+				(LCP (NP (DNP (NP (NN 家长))
+					      (DEG 的))
+					 (NP (NN 同意)))
+				     (LC 下)))
+			(VP (VV 实施)))))) 
+	</parse>
+	<arg n="1">
+	各 学校 
+	</arg>
+	<arg n="m" f="mnr">
+	透过 教育局 
+	</arg>
+	<arg n="m" f="tpc">
+	谢从宾 这 项 肾脏 筛检 
+	</arg>
+	<arg n="m" f="adv">
+	一直 以来 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	*pro* 虽 说 超音波 检查 没有 安全 上 的 顾虑 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

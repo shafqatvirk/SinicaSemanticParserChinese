@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 起家 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="means arg0 gets initial development with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (VC 是)
+		(VP (PP-MNR (P 以)
+			    (NP (NN 贸易)))
+		    (VP (VV 起家))))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	以 贸易 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (PU 「)
+			    (VV 卖)
+			    (NP-OBJ (NN 书))
+			    (PU 」)))
+		(VP (VV 起家))) 
+	</parse>
+	<arg n="1">
+	*PRO* 「 卖 书 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (ADVP (AD 也))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 这样))
+					    (VP (VV 起家))))
+				    (DEC 的))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	这样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-DIR (P 从)
+			    (NP (NN 录音室)))
+		    (VP (VV 起家)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	从 录音室 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

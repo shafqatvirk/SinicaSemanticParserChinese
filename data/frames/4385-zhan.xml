@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 斩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity chopped"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NR 波尔))
+		      (DP (DT 这)
+			  (CLP (M 位)))
+		      (NP (NN 女中豪杰)))
+	      (PU ，)
+	      (VP (VP (LCP-TMP (DP (DT 这些)
+				   (CLP (M 年)))
+			       (LC 来))
+		      (VP (PU “)
+			  (VP (VV 劈)
+			      (NP-OBJ (NN 波)))
+			  (VP (VV 斩)
+			      (NP-OBJ (NN 浪)))
+			  (PU ”)))
+		  (PU ，)
+		  (VP (PP-LOC (P 在)
+			      (NP (NP-PN (NR 拉美))
+				  (NP (NN 地区))))
+		      (ADVP (AD 早))
+		      (ADVP (AD 已))
+		      (VP (VV 家喻户晓))))) 
+	  </parse>
+	  <arg n="0">
+	  波尔 这 位 女中豪杰 
+	  </arg>
+	  <arg n="1">
+	  浪 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这些 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

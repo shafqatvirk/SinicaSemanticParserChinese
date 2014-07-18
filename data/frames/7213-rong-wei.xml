@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 融为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 integrates"/>
+    <role argnum="2" argrole="entity arg1 is integrated to become"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DNP (ADJP (JJ 最终))
+			     (DEG 的))
+			(NP (NN 理想)))
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 与)
+				    (NP (NP (DP (DT 各))
+					    (NP (NN 军种)))
+					(NP (NN 官科))))
+				(VP (VV 融为)
+				    (NP-OBJ (NN 一体))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="1" f="crd">
+	与 各 军种 官科 
+	</arg>
+	<arg n="2">
+	一体 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

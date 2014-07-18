@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 走去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="walker"/>
+      <role argnum="1" argrole="place arg0 walks to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 一路))
+			      (VP (VV 走去))))
+		  (PU ，)
+		  (ADVP (AD 才))
+		  (VP (VV 知)
+		      (IP-OBJ (NP-SBJ (DP (DT 每)
+					  (CLP (M 座)))
+				      (NP (NN 帐篷)))
+			      (VP (ADVP (AD 都))
+				  (VP (VV 备有)
+				      (NP-OBJ (NN 电话)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一路 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

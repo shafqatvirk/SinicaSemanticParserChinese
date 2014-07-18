@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相同 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由于)
+		      (NP (NN 时差)
+			  (NN 关系)))
+	      (PU ，)
+	      (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (DP (DT 各))
+					  (NP (NN 成员国)))
+				  (VP (PP-TMP (-NONE- *T*-1))
+				      (VP (VV 启用)
+					  (NP-OBJ (NN 欧元)))))
+			      (DEC 的)))
+		      (NP (NN 时间)))
+	      (VP (ADVP (AD 并))
+		  (ADVP (AD 不))
+		  (ADVP (AD 完全))
+		  (VP (VA 相同)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 各 成员国 *T*-1 启用 欧元 的 时间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 时差 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

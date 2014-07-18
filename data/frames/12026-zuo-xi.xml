@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作息 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (NP-ADV (QP (CD 一))
+					      (NP (NN 星期)))
+				      (VP (VV 打)
+					  (NP-OBJ (QP (CD 三)
+						      (CLP (M 次)))
+						  (NP (NN 篮球))))))
+			      (PU ，)
+			      (IP (NP-TPC (-NONE- *T*-2))
+				  (NP-SBJ (NN 作息))
+				  (VP (VA 正常)))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (NP-TMP (NN 中年))
+				      (VP (VV 得)
+					  (NP-OBJ (NN 子))))))
+			  (DEC 的)))
+		  (NP-PN (NR 赵宁))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 动摇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 从)
+				  (NP (NT 目前)))
+			  (VP (MSP 来)
+			      (VP (VV 看)))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 美)
+				  (NR 英))
+			   (DEG 的))
+		      (NP (NN 军事)
+			  (NN 打击)))
+	      (VP (VV 没有)
+		  (VP (VV 动摇)
+		      (NP-OBJ (NP-PN (NR 萨达姆))
+			      (NP (NN 政权)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  美 英 的 军事 打击 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  萨达姆 政权 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP (NN 党))
+			       (DEG 的))
+			  (NP (NN 农村))
+			  (ADJP (JJ 基本))
+			  (NP (NN 政策)))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 动摇)))) 
+	  </parse>
+	  <arg n="1">
+	  党 的 农村 基本 政策 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

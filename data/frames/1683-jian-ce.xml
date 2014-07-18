@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 检测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="inspecter"/>
+      <role argnum="1" argrole="thing inspected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VV 可)
+				  (VP (VP (VV 检测)
+					  (NP-OBJ (-NONE- *RNR*-1)))
+				      (CC 和)
+				      (VP (VV 清除)
+					  (NP-OBJ-1 (PU “)
+						    (ADJP (JJ 远程))
+						    (NP (NN 探险者))
+						    (PU ”))))))
+			  (DEC 的)))
+		  (NP (NN 程序))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

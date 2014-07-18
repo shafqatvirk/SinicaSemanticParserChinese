@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="co-operators"/>
+      <role argnum="1" argrole="project, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 厦门))
+			 (NP-PN (NR 福兰普利))
+			 (NP (NN 超市))
+			 (ADJP (JJ 有限))
+			 (NP (NN 公司)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (PP-LGS (NP (NP-APP (NP-PN (NR 美国)
+								     (NR 必纯士)
+								     (NN 国际)
+								     (NN 实业)
+								     (NN 集团))
+							      (CC 和)
+							      (NP-PN (NP-PN (NR 中国)
+									    (NR 厦门))
+								     (ADJP (JJ 对外))
+								     (NP (NN 供应))
+								     (ADJP (JJ 总))
+								     (NP (NN 公司)))
+							      (PU 、)
+							      (NP-PN (NR 菲律宾)
+								     (NR 菲力环球)
+								     (NN 国际)
+								     (NN 公司)))
+						      (QP (CD 三))
+						      (NP (NN 方))))
+					  (VP (VV 合作))))
+				  (DEC 的)))
+			  (NP-PN (NR 福建省))
+			  (QP (OD 首)
+			      (CLP (M 家)))
+			  (NP (NN 零售业))
+			  (ADJP (NP (NN 中外))
+				(ADJP (JJ 合资)))
+			  (NP (NN 企业))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  美国 必纯士 国际 实业 集团 和 中国 厦门 对外 供应 总 公司 、 菲律宾 菲力环球 国际 公司 三 方 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (QP (CD 不少))
+		      (NP (NN 公司)))
+	      (VP (PP (P 与)
+		      (NP (NP-PN (NR 中国))
+			  (NP (NN 公司))))
+		  (VP (VP (VCD (VV 合资)
+			       (VV 合作)))
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 建设))))))
+	  </parse>
+	  <arg n="0">
+	  不少 公司 
+	  </arg>
+	  <arg n="0">
+	  与 中国 公司 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

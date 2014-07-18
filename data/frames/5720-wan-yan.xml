@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 蜿蜒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place arg0 meanders"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 有)
+		(NP-PN-OBJ (NR 北势溪))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 蜿蜒)
+			(NP-OBJ (NN 全境)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	全境 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VA 蜿蜒)))
+			    (DEC 的)))
+		    (NP-PN (NR 北势溪)))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (VRD (VA 清澈)
+						 (VA 见底))))
+				    (DEC 的)))
+			    (NP (NN 水晶)
+				(NN 碧绿)))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

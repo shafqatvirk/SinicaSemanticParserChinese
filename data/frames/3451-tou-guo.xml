@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 透过 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="penetrator"/>
+      <role argnum="1" argrole="entity penetrated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (PP-TMP (P 在)
+			      (NP (CP (WHPP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (PP-TMP (-NONE- *T*-3))
+						  (VP (VP (VP (VV 使用)
+							      (NP-OBJ (ADJP (JJ 原))
+								      (NP (NN 产地)))))
+						      (VP (VV 统计)))))
+					  (DEC 的)))
+				  (NP (NN 同时))))
+		      (PU ，)
+		      (VP (VV 必须)
+			  (VP (VP (ADVP (AD 充分))
+				  (VP (VV 认识)
+				      (NP-OBJ (DNP (NP (PN 它))
+						   (DEG 的))
+					      (NP (NN 局限性)))))
+			      (PU ，)
+			      (VP (VV 透过)
+				  (NP-OBJ (NN 表面)
+					  (NN 数字)))
+			      (PU ，)
+			      (VP (ADVP (AD 认真))
+				  (VP (VV 分析)
+				      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (DP (DT 各))
+								  (NP (NN 方)))
+							  (VP (PP-LOC (P 在)
+								      (LCP (NP (NN 贸易))
+									   (LC 中)))
+							      (VP (VV 获得)
+								  (NP-OBJ (-NONE- *T*-2)))))
+						      (DEC 的)))
+					      (ADJP (JJ 实际))
+					      (NP (NN 利益))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  表面 数字 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  在 *OP* *pro* *T*-3 使用 原 产地 统计 的 同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

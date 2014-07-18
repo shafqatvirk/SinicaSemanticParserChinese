@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 草率 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (VV 可能)
+		(VP (ADVP (AD 也))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHPP-3 (-NONE- *OP*))
+				    (CP (IP (ADVP (AD 後来))
+					    (NP-SBJ (NN 收尾))
+					    (VP (PP-PRP (-NONE- *T*-3))
+						(VP (VA 草率))))
+					(DEC 的)))
+				(NP (NN 原因))))))) 
+	</parse>
+	<arg n="0">
+	收尾 
+	</arg>
+	<arg n="m" f="prp">
+	*T*-3 
+	</arg>
+	<arg n="m" f="adv">
+	後来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

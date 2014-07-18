@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 埋首 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 buries his head"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 鸵鸟))
+	    (VP (VV 埋首)
+		(LCP-OBJ (NP (NN 沙))
+			 (LC 中)))) 
+	</parse>
+	<arg n="0">
+	鸵鸟 
+	</arg>
+	<arg n="1">
+	沙 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 微软))
+	    (VP (VP (VV 靠)
+		    (AS 著)
+		    (NP-OBJ (QP (CD 数万)
+				(CLP (M 名)))
+			    (NP (NN 工程师)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VP (VV 埋首)
+				    (LCP-EXT (NP (NN 电脑))
+					     (LC 前)))
+				(VP (VV 写)
+				    (NP-OBJ (NN 程式))))
+			    (PU ，)
+			    (CC 及)
+			    (VP (VV 做)
+				(NP-OBJ (DP (DT 各)
+					    (CLP (M 种)))
+					(NP (NN 技术)
+					    (NN 支援)
+					    (NN 服务)))))))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (PP-BNF (P 替)
+			    (NP (NP-APP (NN 老板))
+				(NP-PN (NR 比尔盖兹))))
+		    (VP (VV 赚进)
+			(AS 了)
+			(QP-OBJ (CD 数百亿)
+				(CLP (M 美金))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	电脑 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

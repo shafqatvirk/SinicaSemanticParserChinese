@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开演 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 performs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 就))
+		  (PP-LOC (P 在)
+			  (LCP (NP (DP (DT 这)
+				       (QP (CD 一)
+					   (CLP (M 次))))
+				   (DNP (NP (NN 童稚) )
+					(DEG 的))
+				   (NP (NN 惊讶) ))
+			       (LC 中)))
+		  (PU ，)
+		  (ADVP (AD 正式))
+		  (VP (VV 开演)
+		      (AS 了)
+		      (NP-OBJ (NP (PN 他))
+			      (DNP (PP (P 在)
+				       (NP-PN (NR 台湾) ))
+				   (DEG 的))
+			      (NP (NN 人生)
+				  (NN 大戏) ))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  他 在 台湾 的 人生 大戏 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正式 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这 一 次 童稚 的 惊讶 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

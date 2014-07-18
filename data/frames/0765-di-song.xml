@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 递送 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-PN-SBJ (NP-PN (NR 美国))
+			 (QP (OD 第一))
+			 (NP (NN 国民)
+			     (NN 银行)))
+	      (VP (ADVP (AD 私下))
+		  (ADVP (AD 一直))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-PN-SBJ (NR 中国))
+						  (VP (VV 寄来)
+						      (NP-OBJ (-NONE- *T*-1))))
+					      (DEC 的)))
+				      (NP (NN 快件))
+				      (PRN (PU （)
+					   (IP (NP-SBJ (NN 其中))
+					       (VP (VV 包括)
+						   (NP-OBJ (NP-APP (NN 提单)
+								   (ETC 等))
+							   (NP (NN 商业)
+							       (NN 票据)))))
+					   (PU ）)))
+			      (VP (DVP (ADVP (AD 无偿))
+				       (DEV 地))
+				  (VP (VRD (VV 递送)
+					   (VV 给))
+				      (NP-PN-OBJ (NR ＣＲ)
+						 (NN 公司)))))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 第一 国民 银行 
+	  </arg>
+	  <arg n="1">
+	  *OP* 中国 寄来 *T*-1 的 快件 （ 其中 包括 提单 等 商业 票据 ） 
+	  </arg>
+	  <arg n="2">
+	  ＣＲ 公司 
+	  </arg>
+	  <arg n="m" f="adv">
+	  私下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无偿 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

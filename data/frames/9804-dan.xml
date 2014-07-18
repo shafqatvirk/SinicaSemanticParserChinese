@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 淡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DNP (NP (NN 产品)
+			       (NN 介绍))
+			   (DEG 的))
+		      (NP (NN 新闻)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 还))
+		      (VP (VV 可以)
+			  (VP (VP (VV 包装))
+			      (ADVP (AD 一下)))))
+		  (PU ，)
+		  (VP (VV 让)
+		      (NP-OBJ (NN 宣传)
+			      (NN 意味))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VA 淡))
+			      (ADVP (AD 一点))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

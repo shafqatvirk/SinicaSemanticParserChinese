@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 雷同 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities that are similar"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 不仅))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (VV 使用)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NN 教材)))
+	    (VP (ADVP (AD 大致))
+		(PP (P 与)
+		    (NP (DNP (NP-PN (NR 台湾))
+			     (DEG 的))
+			(NP (NN 小学))))
+		(VP (VV 雷同)))) 
+	</parse>
+	<arg n="0">
+	*OP* *pro* 使用 *T*-1 的 教材 
+	</arg>
+	<arg n="0" f="crd">
+	与 台湾 的 小学 
+	</arg>
+	<arg n="m" f="adv">
+	大致 
+	</arg>
+	<arg n="m" f="dis">
+	不仅 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

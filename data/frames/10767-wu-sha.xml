@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 误杀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 kills by mistake"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (LB 被)
+		    (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ (NN 流浪汉))
+				(VP (VP (VV 偷)
+					(NP-OBJ (-NONE- *RNR*-2)))
+				    (VP (VV 抢)
+					(NP-OBJ-2 (-NONE- *T*-1)))))))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (VP (VV 误杀)
+			(NP-OBJ (NN 华人)
+				(NN 黑帮))))
+		(PU ，)
+		(VP (ADVP (AD 终於))
+		    (VP (VV 沦为)
+			(NP-OBJ (DNP (NP (ADJP (JJ 华裔))
+					 (ADJP (JJ 小))
+					 (NP (NN 妓女)))
+				     (DEG 的))
+				(NP (NN 皮条客))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	华人 黑帮 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

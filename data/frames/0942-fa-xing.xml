@@ -1,0 +1,185 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="issuer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 部分)))
+		      (NP (NN 资金)))
+	      (VP (VP (ADVP (AD 将))
+		      (ADVP (AD 全部))
+		      (VP (VV 来源于)
+			  (NP-OBJ (NN 国家)
+				  (NN 金融)
+				  (NN 机构))))
+		  (PU ，)
+		  (VP (ADVP (AD 不))
+		      (PP-DIR (P 对)
+			      (NP (NN 社会)
+				  (NN 公众)))
+		      (VP (VV 发行)
+			  (NP-OBJ (NN 金融)
+				  (NN 债券)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  这 部分 资金 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不 	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  对 社会 公众 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1" f="pse">
+	  金融 债券 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 到)
+		      (LCP (NP (NT 目前))
+			   (LC 为止)))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 中国))
+			   (DEG 的))
+		      (ADJP (JJ 有关))
+		      (NP (NN 部门)
+			  (CC 和)
+			  (NN 机构)))
+	      (VP (PP-LOC (P 在)
+			  (NP (NP-PN (NR 美国))
+			      (NP (NN 市场))))
+		  (ADVP (AD 共))
+		  (VP (VV 发行)
+		      (NP-OBJ (NN 债券))
+		      (QP-EXT (CD 四十七点二亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 的 有关 部门 和 机构 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 美国 市场 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  共 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  债券 	  	  	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  四十七点二亿 美元 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 国家)
+			 (NN 开发)
+			 (NN 银行))
+	      (VP (NP-TMP (NT 日前))
+		  (PP-LOC (P 在)
+			  (NP (NP-PN (NR 日本))
+			      (NP (NN 资本)
+				  (NN 市场))))
+		  (DVP (VP (VA 成功))
+		       (DEV 地))
+		  (VP (VV 发行)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 三百亿)
+				  (CLP (M 日元)))
+			      (NP (NN 武士)
+				  (NN 债券)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国家 开发 银行 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  日前 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 日本 资本 市场 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  三百亿 日元 武士 债券 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ-1 (DNP (LCP (NP-TTL (PU 《)
+					  (NN 全集)
+					  (PU 》))
+				  (LC 中))
+			     (DEG 的))
+			(QP (CD 三)
+			    (CLP (M 卷))))
+	      (VP (ADVP (AD 已))
+		  (VP (VP (PP-LGS (P 由)
+				  (NP-PN (NR 台湾)
+					 (NN 商务)
+					 (NN 印书馆)))
+			  (VP (VV 重印)
+			      (QP-OBJ (-NONE- *-1))))
+		      (PU ，)
+		      (VP (PP-LOC (P 在)
+				  (NP-PN (NR 台北)
+					 (PU 、)
+					 (NR 香港)
+					 (PU 、)
+					 (NR 新加坡)
+					 (PU 、)
+					 (NR 吉隆坡)
+					 (PU 、)
+					 (NR 洛杉矶)))
+			  (VP (VV 发行)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  《 全集 》 中 的 三 卷 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 台北 、 香港 、 新加坡 、 吉隆坡 、 洛杉矶 	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

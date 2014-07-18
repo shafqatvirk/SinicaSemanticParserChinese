@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 答疑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person whose question arg0 answers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 可以)
+		      (VP (VP (ADVP (AD 直接))
+			      (PP-MNR (P 通过)
+				      (NP (NN 网络)))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 课堂)
+					  (NN 讨论)
+					  (PU 、)
+					  (NN 提问)
+					  (NN 答疑)))))))) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 网络 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  直接 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 碰上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 runs into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 当)
+		      (IP (NP-SBJ (PN 她))
+			  (VP (ADVP (AD 刚))
+			      (VP (VV 到)
+				  (NP-PN-OBJ (NR 英国))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 便))
+		  (VP (VV 碰上)
+		      (IP-OBJ (NP-SBJ (NP (NT 六四))
+				      (NP-PN (NR 天安门))
+				      (NP (NN 事件)))
+			      (VP (VV 爆发)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  六四 天安门 事件 爆发 
+	  </arg>
+	  <arg n="m" f="adv">
+	  便 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当 她 刚 到 英国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

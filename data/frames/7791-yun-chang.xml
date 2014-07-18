@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 匀长 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (DP-SBJ (DT 另)
+		    (QP (CD 一)
+			(CLP (M 头))))
+	    (VP (ADVP (AD 则))
+		(VP (VV 并列)
+		    (AS 著)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-1))
+					(NP-SBJ (NN 枝条) )
+					(VP (VV 匀长)))
+				    (DEC 的)))
+			    (NP (ADJP (JJ 金))
+				(NP (NN 钱)))
+			    (NP (NN 树)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	枝条 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

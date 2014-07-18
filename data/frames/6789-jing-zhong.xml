@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 敬重 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 respects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 乡下)
+		    (NN 父母))
+	    (VP (PP-DIR (P 对)
+			(NP (DNP (NP (NN 孩子))
+				 (DEG 的))
+			    (NP (NN 教育))))
+		(ADVP (AD 几乎))
+		(VP (VC 是)
+		    (NP-PRD (QP (CD 一)
+				(CLP (M 种)))
+			    (CP-APP (IP (PU 「)
+					(NP-SBJ (-NONE- *PRO*))
+					(VP (VV 敬重)
+					    (NP-OBJ (NN 读书)
+						    (NN 人)))
+					(PU 」))
+				    (DEC 的))
+			    (NP (NN 虔敬)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	读书 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 将))
+		(VP (VV 任命)
+		    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (ADVP (AD 备))
+					    (VP (VV 受)
+						(NP-OBJ (NN 各界))
+						(IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 敬重))))))
+				    (DEC 的)))
+			    (NP-APP (NP-PN (NR 中研院))
+				    (NP (NN 院长)))
+			    (NP-PN (NR 李远哲)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 担任)
+			    (NP-OBJ (NN 阁揆))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

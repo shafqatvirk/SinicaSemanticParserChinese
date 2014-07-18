@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 表演 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="performer"/>
+    <role argnum="1" argrole="thing performed"/>
+    <role argnum="2" argrole="audience"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 不过))
+      (NP-SBJ (QP (CD 十二)
+                  (CLP (M 条)))
+              (CP (WHNP-2 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (-NONE- *T*-2))
+                          (VP (VA 高大)
+                              (PU 、)
+                              (VA 凶猛)))
+                      (DEC 的)))
+              (NP (NN 德国犬)))
+      (VP (ADVP (AD 却))
+          (DVP (VP (ADVP (AD 非常))
+                   (VP (VA 温顺)))
+               (DEC 的))
+          (PP-DIR (P 向)
+                  (NP (NN 记者)))
+          (VP (VV 表演)
+              (AS 了)
+              (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+                                  (VP (ADVP (AD 就地))
+                                      (VP (VV 打滚))))
+                              (DEC 的))
+                      (NP (NN 动作)))))))
+	</parse>
+	<arg n="0"> 十二 条 *OP* (*T*-2)->(德国犬) 高大 、 凶猛 的 德国犬 </arg>
+	<arg n="M" f="ADV"> 却 </arg>
+	<arg n="M" f="ADV"> 非常 温顺 的 </arg>
+	<arg n="2"> 向 记者 </arg>
+	<V/>
+	<arg n="1"> *PRO* 就地 打滚 的 动作 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>(IP (NP-SBJ (QP (CD 一千多)
+( (IP (NP-SBJ (QP (CD 一千多)
+                  (CLP (M 名)))
+              (NP (NN 幼稚园)
+                  (NN 学生)))
+      (VP (VP (VV 表演)
+              (NP-OBJ (NN 舞蹈)))
+          (VP (VV 庆祝)
+              (IP-OBJ (NP-PN-SBJ (NR 香港))
+                      (VP (VV 回归)
+                          (NP-OBJ (NN 祖国))))))))
+	</parse>
+	<arg n="0"> 一千多 名 幼稚园 学生 </arg>
+	<V/>
+	<arg n="1"> 舞蹈 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

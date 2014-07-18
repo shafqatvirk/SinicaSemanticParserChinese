@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 停留 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="location arg0 stays in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NN 教改))
+		(VP (ADVP (AD 不))
+		    (VP (VV 能)
+			(VP (VP (ADVP (AD 只))
+				(VP (VV 停留)
+				    (PP-LOC (P 在)
+					    (NP (DNP (NP (NN 教育))
+						     (DEG 的))
+						(ADJP (JJ 技术性))
+						(NP (NN 层面))))))
+			    (PU ，)
+			    (CC 而)
+			    (VP (VV 缺乏)
+				(NP-OBJ (DNP (PP (P 对)
+						 (NP (NP (NN 人文))
+						     (NP (NN 思想))))
+					     (DEG 的))
+					(ADJP (JJ 真正))
+					(NP (NN 重视)))))))) 
+	</parse>
+	<arg n="0">
+	教改 
+	</arg>
+	<arg n="1">
+	在 教育 的 技术性 层面 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 来)
+			(DER 得)
+			(VP-EXT (ADVP (AD 越))
+				(VP (VA 多))))
+		    (PU 、)
+		    (VP (VV 停留)
+			(DER 得)
+			(VP-EXT (ADVP (AD 越))
+				(VP (VA 长)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	越 长 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-3 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (PN 你))
+			(VP (ADVP (AD 曾经))
+			    (VP (VCD (VV 伫足)
+				     (VV 停留))
+				(AS 过)
+				(NP-OBJ (-NONE- *T*-3)))))
+		    (DEC 的)))
+	    (NP (NN 美好))) 
+	</parse>
+	<arg n="0">
+	你 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="adv">
+	曾经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

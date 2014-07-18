@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 停办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 stops operation of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 依据)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NN 国民)
+						 (NN 大会))
+				      (VP (MSP 所)
+					  (VP (VV 通过)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (NN 延任案))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 原))
+				      (VP (VV 定)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (NP-TMP (NT 明年)
+							      (NT 三月)
+							      (NT 十八日))
+						      (PP (P 与)
+							  (NP (NN 总统)
+							      (NN 选举)))
+						      (ADVP (AD 一并))
+						      (VP (VV 举行)))))))
+			      (DEC 之)))
+		      (NP (NN 国代)
+			  (NN 选举)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 停办)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-2 原 定 *PRO* 明年 三月 十八日 与 总统 选举 一并 举行 之 国代 选举 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依据 *OP* 国民 大会 所 通过 *T*-1 的 延任案 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迈入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location stepped into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD ４８００多万))
+			  (NP-PN (NR 美国))
+			  (NP (NN 老年人)))
+		  (VP (PP-TMP (P 在)
+			      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 迈入)
+					   (NP-OBJ (NT ２０００年))))
+				   (LC 时)))
+		      (VP (VV 能够)
+			  (VP (NP-ADV (DP (DT 每))
+				      (NP (NN 月)))
+			      (ADVP (AD 按时))
+			      (VP (VV 领到)
+				  (NP-OBJ (DNP (NP (PN 他们))
+					       (DEG 的))
+					  (NP (NN 社会)
+					      (NN 补助)
+					      (CC 和)
+					      (NN 退休)
+					      (NN 津贴)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  ２０００年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

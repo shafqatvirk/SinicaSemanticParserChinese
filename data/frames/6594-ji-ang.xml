@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 激昂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 causes to be excited"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (NT 五四))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VV 激昂)
+						(NP-OBJ (NN 人心)))))
+				    (DEC 的)))
+			    (NP (NN 口号)))
+		    (PU ，)
+		    (NP-PN (NR 德)
+			   (NN 先生)
+			   (CC 与)
+			   (NR 赛)
+			   (NN 先生)))
+	    (PU ，)
+	    (VP (LCP-TMP (QP (CD 八十)
+			     (CLP (M 年)))
+			 (LC 後))
+		(ADVP (AD 仍))
+		(VP (VC 是)
+		    (NP-PRD (DNP (NP (NP (NN 神州)
+					 (NN 大地))
+				     (ADJP (JJ 许许多多))
+				     (NP (NN 人)))
+				 (DEG 的))
+			    (NP (NN 向往)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	人心 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 情绪))
+	    (VP (VP (VA 激昂))
+		(VP (ADVP (AD 无法))
+		    (VP (VV 遏止))))) 
+	</parse>
+	<arg n="1">
+	情绪 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

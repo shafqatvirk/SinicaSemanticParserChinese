@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 心存期待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 has expectations for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (ADVP (AD 纵然))
+		      (NP-SBJ (NN 务农))
+		      (VP (ADVP (AD 已))
+			  (VP (VC 是)
+			      (NP-PRD (PU 「)
+				      (QP (OD 末)
+					  (CLP (M 代)))
+				      (NP (NN 产业))
+				      (PU 」)))))
+	      (PU ，)
+	      (ADVP (AD 但是))
+	      (NP-PN-SBJ (NR 美浓)
+			 (CC 与)
+			 (NR 六家))
+	      (VP (PP-DIR (P 对於)
+			  (NP (NN 水库)
+			      (CC 或)
+			      (NN 高铁)))
+		  (ADVP (AD 并))
+		  (ADVP (AD 未))
+		  (PP-PRP (P 因)
+			  (NP (PN 此)))
+		  (NP-ADV (PN 人人))
+		  (VP (VV 心存期待)))) 
+	  </parse>
+	  <arg n="0">
+	  美浓 与 六家 
+	  </arg>
+	  <arg n="1">
+	  对於 水库 或 高铁 
+	  </arg>
+	  <arg n="m" f="adv">
+	  人人 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但是 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纵然 务农 已 是 「 末 代 产业 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

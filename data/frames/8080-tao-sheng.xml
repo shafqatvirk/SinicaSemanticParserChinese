@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逃生 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person fleeing for life"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 於是))
+	      (NP-SBJ (PN 他))
+	      (VP (PP-DIR (P 由)
+			  (NP (NP (QP (CD 三)
+				      (CLP (M 楼)))
+				  (NP (NN 住处)))
+			      (NP (NN 窗户))))
+		  (VP (VP (VV 拉)
+			  (NP-OBJ (NN 绳子)))
+		      (VP (VV 逃生))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="m" f="dir">
+	  由 三 楼 住处 窗户 
+	  </arg>
+	  <arg n="m" f="adv">
+	  於是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

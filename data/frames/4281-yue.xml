@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 越 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="time period arg0 passes through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 四百余)
+			      (CLP (M 只)))
+			  (NP (NN 丹顶鹤)))
+		  (VP (ADVP (AD 陆续))
+		      (VP (VP (VV 飞抵)
+			      (NP-OBJ (NP-PN (NR 江苏)
+					     (NR 盐城))
+				      (NP (NN 沿海)
+					  (NN 滩涂))))
+			  (VP (VV 越)
+			      (NP-OBJ (NN 冬)))))) 
+	  </parse>
+	  <arg n="0">
+	  四百余 只 丹顶鹤 
+	  </arg>
+	  <arg n="1">
+	  冬 
+	  </arg>
+	  <arg n="m" f="adv">
+	  陆续 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="jump over">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

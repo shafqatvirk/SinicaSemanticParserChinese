@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 奢望 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 hopes for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可是))
+	    (NP-SBJ (NP (PN 我们))
+		    (NP (NN 理财)
+			(NN 顾问)))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VC 是)
+			(NP-PRD (NN 气象)
+				(NN 预报员))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (ADVP (AD 不))
+		    (VP (VV 奢望)
+			(IP-OBJ (NP-SBJ (PN 自己))
+				(VP (VV 能)
+				    (VP (VV 未卜先知)))))))) 
+	</parse>
+	<arg n="0">
+	我们 理财 顾问 
+	</arg>
+	<arg n="1">
+	自己 能 未卜先知 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="dis">
+	可是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

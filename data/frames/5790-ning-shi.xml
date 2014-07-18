@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 凝视 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person staring"/>
+    <role argnum="1" argrole="entity arg0 stares"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 马修))
+		    (NP (NN 乐迷)))
+	    (VP (DVP (VP (VA 静静))
+		     (DEV 地))
+		(VP (VP (VV 凝视)
+			(AS 著)
+			(NP-OBJ (NN 舞台)))
+		    (PU 、)
+		    (VP (VV 倾听)
+			(AS 著)
+			(NP-OBJ (NP-PN (NR 马修))
+				(CP (WHNP-4 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-4))
+					    (VP (ADVP (AD 略))
+						(VP (VV 带)
+						    (NP-OBJ (NN 忧郁)))))
+					(DEC 的)))
+				(ADJP (JJ 温柔))
+				(NP (NN 歌声))))))) 
+	</parse>
+	<arg n="0">
+	马修 乐迷 
+	</arg>
+	<arg n="1">
+	舞台 
+	</arg>
+	<arg n="m" f="adv">
+	静静 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

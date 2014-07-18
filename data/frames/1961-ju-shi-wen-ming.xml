@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 举世闻名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 举世闻名)))
+			      (DEC 的)))
+		      (NP-PN (NR 白云鄂博矿)))
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 已))
+				      (VP (VV 探明)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (NP (NN 稀土)
+			  (NN 保存)
+			  (NN 储量)))
+	      (VP (VP (VV 占)
+		      (QP-OBJ (DNP (NP (NN 世界))
+				   (DEG 的))
+			      (QP (CD 百分之七十))))
+		  (PU ，)
+		  (VP (VV 占)
+		      (LCP-OBJ (QP (DNP (NP-PN (NR 中国))
+					(DEG 的))
+				   (QP (CD 百分之九十)))
+			       (LC 以上))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

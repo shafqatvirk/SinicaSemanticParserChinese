@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 完毕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美国))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 没))
+			      (VP (VV 等)
+				  (NP-PN-OBJ (NN 安理会))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VP-FOC (VV 审议))
+					      (VP (VV 完毕)))
+					  (CC 并)
+					  (VP (VV 作出)
+					      (NP-OBJ (NN 决定))))))))
+		  (PU ，)
+		  (ADVP (AD 就))
+		  (ADVP (AD 擅自))
+		  (VP (VV 采取)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-PN-SBJ (NN 安理会))
+					  (VP (ADVP (AD 一贯))
+					      (VP (VV 希望)
+						  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 避免)
+							      (NP-OBJ (-NONE- *T*-1)))))))
+				      (DEC 的)))
+			      (NP (NN 军事)
+				  (NN 行动)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="0" f="prd">
+	  审议 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 全部))
+		      (NP (NN 设备)))
+	      (VP (ADVP (AD 将))
+		  (PP-TMP (P 于)
+			  (LCP (NP (NT 今年))
+			       (LCP (NP (NN 年))
+				    (LC 内))))
+		  (VP (VP-FOC (VP (VV 生产))
+			      (PU 、)
+			      (VP (VV 安装)))
+		      (VP (VV 完毕))))) 
+	  </parse>
+	  <arg n="0">
+	  全部 设备 	  
+	  </arg>
+	  <arg n="0" f="prd">
+	  生产 、 安装 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 今年 年 内 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

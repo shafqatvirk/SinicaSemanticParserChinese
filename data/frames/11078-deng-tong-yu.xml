@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 等同於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 equals to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 特别))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NP (ADJP (JJ 新))
+					    (NP (NN 文化)))
+					(NP (NN 运动)))
+				(VP (VV 追求)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP-PN (PU 「)
+			   (NR 德)
+			   (NN 先生)
+			   (CC 与)
+			   (NR 赛)
+			   (NN 先生)
+			   (PU 」)))
+	    (PU ，)
+	    (VP (ADVP (AD 几乎))
+		(VP (VV 等同於)
+		    (NP-OBJ (NT 五四)
+			    (NN 精神))))) 
+	</parse>
+	<arg n="0">
+	*OP* 新 文化 运动 追求 *T*-1 的 「 德 先生 与 赛 先生 」 
+	</arg>
+	<arg n="1">
+	五四 精神 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<arg n="m" f="adv">
+	特别 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

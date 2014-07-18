@@ -1,0 +1,147 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刺激 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="stimulus"/>
+      <role argnum="1" argrole="entity stimulated"/>
+      <role argnum="2" argrole="thing arg1 is stimulated to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (DNP (NP (NN 电子)
+			       (NN 商务))
+			   (DEG 的))
+		      (NP (NN 发展)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 使)
+			  (NP-OBJ (NN 消费者))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (DVP (VP (ADVP (AD 更))
+					   (VP (VA 快)))
+				       (DEV 地))
+				  (VP (VV 获得)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 物美价廉)))
+						      (DEC 的)))
+					      (NP (NN 商品)
+						  (CC 和)
+						  (NN 劳务)))))))
+		      (PU ，)
+		      (VP (ADVP (AD 同时))
+			  (VP (VP (VV 促进)
+				  (NP-OBJ (NN 贸易)))
+			      (PU 、)
+			      (VP (VV 刺激)
+				  (NP-OBJ (NN 创新)
+					  (CC 和)
+					  (NN 竞争)))
+			      (PU ，)
+			      (CC 并)
+			      (VP (VV 创造)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (ADVP (AD 更))
+							  (VP (VA 多))))
+						  (DEC 的)))
+					  (NP (NN 就业)
+					      (NN 机会))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  电子 商务 的 发展 	  	  
+	  </arg>
+	  <arg n="1">
+	  创新 和 竞争 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 刺激)
+				      (NP-PN-OBJ (NR 台湾))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 改变)))))
+			      (DEC 的))))
+	      (VP (ADVP (AD 正))
+		  (VP (VC 是)
+		      (NP-PRD (NP-PN (NR 中共))
+			      (LCP (NP (NT 近年))
+				   (LC 来))
+			      (DNP (PP (P 针对)
+				       (NP-PN (NR 台湾)))
+				   (DEG 的))
+			      (ADJP (JJ 积极))
+			      (NP (NN 军事)
+				  (NN 部署)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  台湾 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 改变 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP (P 比)
+		      (NP (ADJP (JJ 传统))
+			  (NP (NN 健身)
+			      (NN 中心) )))
+		  (VP (VP (ADVP (AD 更))
+			  (VP (VA 酷)))
+		      (PU 、)
+		      (VP (ADVP (AD 更))
+			  (VP (VA 刺激)))
+		      (PU 、)
+		      (VP (ADVP (AD 更))
+			  (VP (VA 有趣)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 传统 健身 中心 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

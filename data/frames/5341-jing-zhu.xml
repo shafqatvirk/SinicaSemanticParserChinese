@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 竞逐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 competes for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VPT (VV 看)
+					     (AD 不)
+					     (VA 清))
+					(NP-OBJ (NN 趋势))))
+				(PU 、)
+				(IP (NP-TPC (-NONE- *T*-1))
+				    (NP-SBJ (NN 脑筋))
+				    (VP (VPT (VV 转)
+					     (AD 不)
+					     (VV 过来)))))
+			    (DEC 的)))
+		    (NP (NN 人)))
+	    (PU ，)
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (CP (WHNP-2 (-NONE- *OP*))
+				     (CP (IP (NP-SBJ (-NONE- *pro*))
+					     (VP (NP-LOC (-NONE- *T*-2))
+						 (VP (VV 竞逐)
+						     (NP-OBJ (NN 财富)))))
+					 (DEC 的)))
+				 (NP (NN 路)))
+			     (LC 上)))
+		(ADVP (AD 只好))
+		(VP (VV 沦为)
+		    (NP-OBJ (NN 输家))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	财富 
+	</arg>
+	<arg n="m" f="loc">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

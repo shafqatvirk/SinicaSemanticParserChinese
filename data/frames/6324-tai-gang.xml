@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抬杠 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities arguing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VE 没)
+		    (NP-OBJ (NN 必要)))
+		(VP (PP (P 和)
+			(NP (NN 上海人)))
+		    (VP (VV 争辩)
+			(PU 、)
+			(VV 抬杠))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="crd">
+	和 上海人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (NP-TMP (NT 六点钟))
+			     (VP (VV 到达)
+				 (LCP-OBJ (NP (NN 山))
+					  (LC 顶)))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 一)
+			(CLP (M 夥)))
+		    (NP (NN 山友)))
+	    (VP (ADVP (AD 就))
+		(VP (VP (VV 聚)
+			(PP (P 在)
+			    (LCP (NP (ADJP (JJ 小))
+				     (NP (NN 农舍)))
+				 (LC 里))))
+		    (VP (VCD (VV 泡茶)
+			     (VV 抬杠)))
+		    (PU ，)
+		    (VP (ADVP (AD 静静))
+			(VP (VV 等待)
+			    (NP-OBJ (NN 黎明))))))) 
+	</parse>
+	<arg n="0">
+	一 夥 山友 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 六点钟 到达 山 顶 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 毕业 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="school"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+              (CP (IP (NP-SBJ (-NONE- *T*-1))
+                      (VP (NP-LOC (NR 武汉)
+                                  (NN 大学))
+                          (VP (VV 毕业))))
+                  (DEC 的)))))
+	</parse>
+	<arg n="0"> *T*-1 </arg>
+	<arg n="1"> 武汉 大学 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

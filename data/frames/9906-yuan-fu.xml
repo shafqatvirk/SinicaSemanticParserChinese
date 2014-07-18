@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 远赴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 goes a long way to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LST (CD 二))
+		  (VP (VC 是)
+		      (UCP-PRD (IP (NP-APP (QP (CD 六十)
+					       (CLP (M 分钟)))
+					   (NP (NN 新闻)
+					       (NN 专题)
+					       (NN 报导))
+					   (NP (NN 节目)))
+				   (IP-TTL (PU 《)
+					   (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 远离)
+					       (NP-PN-OBJ (NR 台湾)))
+					   (PU 》)))
+			       (PU ，)
+			       (CC 以及)
+			       (NP (DNP (NP (IP-APP (NP-SBJ (PN 她))
+						    (VP (VP (VV 远赴)
+							    (NP-PN-OBJ (NR 非洲)
+								       (NR 马拉威)))
+							(VP (VV 拍摄)
+							    (NP-OBJ (NP (NP (PN 我))
+									(NP (NN 国)))
+								    (NP (NN 农耕队))))))
+					    (NP (NN 专题)))
+					(DEG 的))
+				   (NP (NN 样带))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <arg n="1">
+	  非洲 马拉威 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

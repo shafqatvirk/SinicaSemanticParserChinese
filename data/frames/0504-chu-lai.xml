@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 就))
+	      (PP-TMP (P 在)
+		      (NP (CP (WHPP-4 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 人们))
+				      (VP (PP-TMP (-NONE- *T*-4))
+					  (VP (VV 议论纷纷))))
+				  (DEC 之)))
+			  (NP (NN 际))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 又))
+		  (DVP (VP (VA 神秘))
+		       (DEV 地))
+		  (PP-DIR (P 从)
+			  (NP (NN 幕后)))
+		  (VP (VP (VV 走)
+			  (AS 了))
+		      (VP (VV 出来))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* 人们 *T*-4 议论纷纷 之 际 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  神秘 地 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 幕后 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

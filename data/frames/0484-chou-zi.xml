@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹资 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="borrower"/>
+      <role argnum="1" argrole="amount"/>
+      <role argnum="2" argrole="borrowing from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 筹资)
+		      (QP-OBJ (CD 三百零六亿)
+			      (CLP (M 港元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  三百零六亿 港元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国)
+			     (NN 国家)
+			     (NN 开发)
+			     (NN 银行))
+		  (VP (NP-TMP (NT 今年))
+		      (ADVP (AD 将))
+		      (ADVP (AD 不))
+		      (PP-DIR (P 向)
+			      (NP (NN 公众)))
+		      (VP (VV 筹资))))
+	  </parse>
+	  <arg n="0">
+	  中国 国家 开发 银行 
+	  </arg>
+	  <arg n="2">
+	  向 公众 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 地方))
+	      (VP (ADVP (AD 联合))
+		  (VP (VV 筹资))))
+	  </parse>
+	  <arg n="0">
+	  地方 
+	  </arg>
+	  <arg n="m" f="adv">
+	  联合 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

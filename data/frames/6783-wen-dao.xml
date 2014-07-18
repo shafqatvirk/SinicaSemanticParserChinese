@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 问道 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="question arg0 asks"/>
+    <role argnum="2" argrole="person arg0 asks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 傻不愣登))
+		(VP (VV 问道)
+		    (PU ：)
+		    (CP-Q-OBJ (IP (LCP-SBJ (NP (DP (DT 这))
+					       (NP (NN 盒) ))
+					   (LC 里))
+				  (VP (VE 有)
+				      (NP-OBJ (NN 人) )))
+			      (SP 吗))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	这 盒 里 有 人 吗 
+	</arg>
+	<arg n="m" f="adv">
+	傻不愣登 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

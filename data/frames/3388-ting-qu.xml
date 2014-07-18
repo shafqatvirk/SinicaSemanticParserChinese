@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 听取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="listener"/>
+      <role argnum="1" argrole="content"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (DNP (NP (NT 过去))
+				(DEG 的))
+			   (LCP (QP (CD 一)
+				    (CLP (M 年)))
+				(LC 内))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 各)
+			  (CLP (M 级)))
+		      (NP (NN 外商)
+			  (NN 投资)
+			  (NN 管理)
+			  (NN 部门)))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 依法))
+		      (VP (VV 行政)))
+		  (PU ，)
+		  (VP (QP-ADV (CD 多)
+			      (CLP (M 次)))
+		      (VP (VV 听取)
+			  (NP-OBJ (DNP (NP (NN 外商))
+				       (DEG 的))
+				  (NP (NN 意见))))))) 
+	  </parse>
+	  <arg n="0">
+	  各 级 外商 投资 管理 部门 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  多 次 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外商 的 意见 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="listener"/>
+      <role argnum="1" argrole="source"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 分散)
+				      (PP (P 在)
+					  (NP (DP (DT 各))
+					      (NP (NN 地))))))
+			      (DEC 的)))
+		      (NP (NN 学生)))
+	      (VP (VV 可以)
+		  (VP (VP (VV 听取)
+			  (NP-OBJ (DNP (PP (ADVP (AD 远))
+					   (PP (P 在)
+					       (NP-PN (NR 杭州))))
+				       (DEG 的))
+				  (NP (NN 教师)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 授课))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-2)->(学生) 分散 在 各 地 的 学生 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  远 在 杭州 的 教师 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 授课 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

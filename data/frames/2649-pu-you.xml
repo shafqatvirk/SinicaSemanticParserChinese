@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 铺有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing spread, laid"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (DNP (LCP (NP (NN 客厅))
+				     (LC 里))
+				(DEG 的))
+			   (NP (NN 钢丝床)))
+		       (LC 上))
+	      (VP (VV 铺有)
+		  (NP-OBJ (DNP (ADJP (JJ 龙凤呈祥))
+			       (DEG 的))
+			  (NP (NN 卡垫))))) 
+	  </parse>
+	  <arg n="0">
+	  龙凤呈祥 的 卡垫 
+	  </arg>
+	  <arg n="1">
+	  客厅 里 的 钢丝床 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

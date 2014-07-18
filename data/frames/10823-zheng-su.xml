@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 整肃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (QP (CD 一)
+		    (CLP (M 名)))
+		(CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 奉命)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 整肃)
+					    (NP-OBJ (PU 「)
+						    (NN 匪谍)
+						    (PU 」))))))
+			(DEC 的)))
+		(ADJP (JJ 警备))
+		(NP (NN 人员))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	「 匪谍 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

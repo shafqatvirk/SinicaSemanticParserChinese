@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关怀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="carer"/>
+      <role argnum="1" argrole="caring about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 获)
+				      (NP-OBJ (NN 授勋))))
+			      (DEC 的)))
+		      (NP (NN 人士)))
+	      (PU ，)
+	      (VP (ADVP (AD 均))
+		  (ADVP (AD 曾))
+		  (ADVP (AD 长期))
+		  (PU ：)
+		  (VP (VP (LST (PU ＊))
+			  (VP (VV 推动)
+			      (NP-OBJ (NP-PN (NR 香港))
+				      (NP (NN 市民)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 热爱)
+				      (NP-OBJ (NN 祖国))))))
+		      (PU ；)
+		      (VP (LST (PU ＊))
+			  (VP (VP (VV 关怀)
+				  (NP-OBJ (-NONE- *RNR*-1)))
+			      (PU 、)
+			      (VP (VV 支持)
+				  (NP-OBJ (-NONE- *RNR*-1)))
+			      (CC 和)
+			      (VP (VV 认同)
+				  (NP-OBJ-1 (NN 祖国)
+					    (NN 事业)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 获 授勋 的 人士 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <arg n="m" f="adv">
+	  长期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开机 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 turns on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 行动)
+		    (NN 电话))
+	    (VP (VP (QP-ADV (CD 24)
+			    (CLP (M 小时)))
+		    (VP (VV 开机)))
+		(PU ，)
+		(VP (ADVP (AD 随时))
+		    (VP (VE 有)
+			(NP-OBJ (ADJP (JJ 不同))
+				(NP (NN 用途))))))) 
+	</parse>
+	<arg n="1">
+	行动 电话 
+	</arg>
+	<arg n="m" f="adv">
+	24 小时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 到)
+			    (NP-PN-OBJ (NR 香港))))
+		(NP-SBJ (PN 我))
+		(VP (VV 会)
+		    (VP (NP-ADV (NN 全程))
+			(VP (VV 开机))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="m" f="adv">
+	全程 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 到 香港 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

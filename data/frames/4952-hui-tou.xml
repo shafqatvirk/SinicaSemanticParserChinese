@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 回头 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 回头))
+		    (VP (ADVP (AD 一))
+			(VP (VV 看))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 已经))
+					(VP (VC 是)
+					    (ADJP-PRD (JJ 博士级)))))
+				(DEC 的)))
+			(NP (NN 在职生)))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (VP (VV 回头)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 念)
+				    (NP-OBJ (NN 硕士))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 已经 是 博士级 的 在职生 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

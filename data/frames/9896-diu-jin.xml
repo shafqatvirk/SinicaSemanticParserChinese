@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 丢进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 throws arg1 into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 最後))
+		  (ADVP (AD 只好))
+		  (VP (VP (VV 丢进)
+			  (NP-OBJ (NN 垃圾)
+				  (NN 桶)))
+		      (VP (VV 去))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  垃圾 桶 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只好 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

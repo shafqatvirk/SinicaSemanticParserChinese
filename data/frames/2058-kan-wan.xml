@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看完 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing watched/read to the end"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (ADVP (AD 即使))
+		      (PP (P 在)
+			  (NP (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 台风))
+					  (VP (PP-TMP (-NONE- *T*-1))
+					      (ADVP (AD 将))
+					      (VP (VV 至))))
+				      (DEC 的)))
+			      (NP (NN 晚上)))))
+	      (PU ，)
+	      (NP-SBJ (NN 观众))
+	      (VP (ADVP (AD 依然))
+		  (PP-LOC (P 在)
+			  (LCP (NP (ADJP (JJ 霏霏))
+				   (NP (NN 细雨)))
+			       (LC 中)))
+		  (VP (VV 看完)
+		      (NP-OBJ (NN 演出))))) 
+	  </parse>
+	  <arg n="0">
+	  观众 
+	  </arg>
+	  <arg n="1">
+	  演出 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 霏霏 细雨 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依然 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  即使 在 *OP* 台风 *T*-1 将 至 的 晚上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 播送 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="broadcaster"/>
+    <role argnum="1" argrole="news"/>
+    <role argnum="2" argrole="audience"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NP-PN (NR 美国))
+                 (NP (ADJP (JJ 有线))
+                     (NP (NN 广播)))
+                 (NP (NN 电视网)))
+      (VP (VP (PP-DIR (P 对)
+                      (NP (PN 此)))
+              (VP (VV 制作)
+                  (NP-OBJ (ADJP (JJ 特别))
+                          (NP (NN 电视)
+                              (NN 节目)))
+                  (QP-EXT (CD 多)
+                          (CLP (M 次)))))
+          (VP (PP-DIR (P 向)
+                      (NP (NN 全球)))
+              (VP (VV 播送))))))
+	</parse>
+	<arg n="0"> 美国 有线 广播 电视网 </arg>
+	<arg n="2"> 向 全球 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

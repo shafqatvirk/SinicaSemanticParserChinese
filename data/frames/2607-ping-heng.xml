@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 平衡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing balanced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 平衡)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (IP-SBJ (NP (NN 地球)
+								  (NN 自转)
+								  (NN 速度))
+							      (VP (VV 变慢)))
+						      (VP (PP-BNF (P 给)
+								  (NP (NN 世界)
+								      (NN 时间)))
+							  (VP (VV 带来)
+							      (NP-OBJ (-NONE- *T*-1)))))
+						  (DEC 的)))
+					  (NP (NN 误差))))))
+		  (PU ，)
+		  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 设)
+					  (PP (P 在)
+					      (NP-PN (NR 巴黎)))))
+				  (DEC 的)))
+			  (NP-PN (NN 国际)
+				 (NN 地球)
+				 (NN 自转)
+				 (NN 研究)
+				 (NN 中心)))
+		  (VP (ADVP (AD 已))
+		      (VP (VV 决定)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-TMP (P 在)
+					      (QP (DNP (NP (NT 今年)
+							   (NT １２月)
+							   (NT ３１日))
+						       (DEG 的))
+						  (ADJP (JJ 最后))
+						  (QP (CD 一)
+						      (CLP (M 分钟)))))
+				      (VP (VV 增加)
+					  (NP-OBJ (QP (CD 一)
+						      (CLP (M 个)))
+						  (NP (PU “)
+						      (NN 闰秒)
+						      (PU ”))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* 地球 自转 速度 变慢 给 世界 时间 带来 *T*-1 的 误差 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DP (DT 各)
+			  (CLP (M 类)))
+		      (NP (NN 贸易)
+			  (NN 方式)))
+	      (NP-SBJ (NN 发展))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 平衡)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  发展 
+	  </arg>
+	  <arg n="0" f="psr">
+	  各 类 贸易 方式 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 农产品)
+		      (NN 总量))
+	      (VP (VP (ADVP (AD 基本))
+		      (VP (VA 平衡)))
+		  (PU 、)
+		  (VP (VCD (VV 丰年)
+			   (VV 有余))))) 
+	  </parse>
+	  <arg n="0">
+	  农产品 总量 
+	  </arg>
+	  <arg n="m" f="adv">
+	  基本 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

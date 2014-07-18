@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入眠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person falling asleep"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (VV 入夜)))
+				(LC 时))
+			   (DEG 的))
+		      (NP (NN 灯火)))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 令)
+		      (NP-OBJ (NN 乡民))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VA 兴奋)
+			      (DER 得)
+			      (VP-EXT (ADVP (AD 难以))
+				      (VP (VV 入眠)))))))) 
+	  </parse>
+	  <arg n="m" f="adv">
+	  难以 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

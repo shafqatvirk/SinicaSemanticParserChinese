@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带头 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="leader"/>
+      <role argnum="1" argrole="thing arg0 plays the leader role in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			  (ADJP (JJ 中直))
+			  (NP (NN 机关)))
+		  (VP (VV 决定)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 带头))
+				  (VP (VV 过)
+				      (NP-OBJ (ADJP (JJ 紧))
+					      (NP (NN 日子)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (NP (NN 老板))
+			  (NP (PN 自己)))
+		  (VP (VP (VV 带头)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 进修))))
+		      (PU ，)
+		      (VP (PP-BNF (P 为)
+				  (NP (NN 经理人)))
+			  (VP (VV 做)
+			      (NP-OBJ (NN 模范)))))) 
+	  </parse>
+	  <arg n="0">
+	  老板 自己 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 进修 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

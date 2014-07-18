@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贿选 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 彰化)
+		       (NN 地检署) )
+	    (VP (VP (VV 侦办)
+		    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+				    (VP (NP-LOC (NN 总统)
+						(NN 大选))
+					(VP (VV 贿选))))
+			    (NP (NN 案)) ))
+		(PU ，)
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NP-APP (NP (NP-PN (NR 员林) )
+						(NP (NN 镇长) ))
+					    (ETC 等))
+				    (QP (CD 二百多))
+				    (NP (NN 人) ))
+			    (VP (VP (PP-MNR (P 依)
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 违反)
+						    (NP-OBJ (NN 选罢法) ))))
+				    (VP (VV 提起)
+					(NP-OBJ (NN 公诉) )))
+				(PU ，)
+				(VP (ADVP (AD 分别))
+				    (VP (VV 求处)
+					(NP-OBJ (UCP-APP (QP (CD 三)
+							     (CLP (M 年)))
+							 (CC 至)
+							 (NP (QP (CD 二)
+								 (CLP (M 个)))
+							     (NP (NN 月) )))
+						(CP (WHNP-1 (-NONE- *OP*))
+						    (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (ADVP (AD 不))
+							    (VP (VA 等)))))
+						(NP (NN 徒刑) ))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="loc">
+	总统 大选 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

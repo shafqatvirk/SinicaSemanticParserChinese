@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 砸穿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 大楼))
+		    (ADJP (JJ 巨型))
+		    (NP (NN 吊车)))
+	    (VP (VV 砸穿)
+		(NP-OBJ (NN 民宅)))) 
+	</parse>
+	<arg n="0">
+	大楼 巨型 吊车 
+	</arg>
+	<arg n="1">
+	民宅 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 存有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 owns"/>
+    <role argnum="2" argrole="place arg1 is stored"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-1))
+			(VP (NP-TMP (NT 目前))
+			    (ADVP (AD 尚))
+			    (VP (VV 存有)
+				(NP-OBJ (NN 制陶)
+					(NN 技术)))))
+		    (DEC 的)))
+	    (NP-PN (NR 阿美)
+		   (CC 与)
+		   (NR 雅美))
+	    (QP (CD 两))
+	    (NP (NN 族))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	制陶 技术 
+	</arg>
+	<arg n="m" f="adv">
+	尚 
+	</arg>
+	<arg n="m" f="tmp">
+	目前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 大陆))
+		    (NP-PN (NR 上海)
+			   (NN 博物馆)))
+	    (VP (ADVP (AD 就))
+		(VP (VV 存有)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 幅)))
+			    (NP (NP (NN 仕女)
+				    (NN 步打球))
+				(NP (NN 图画))))))) 
+	</parse>
+	<arg n="1">
+	一 幅 仕女 步打球 图画 
+	</arg>
+	<arg n="2">
+	大陆 上海 博物馆 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

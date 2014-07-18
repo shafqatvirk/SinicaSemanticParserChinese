@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冷却 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 cools down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PU 「)
+		    (DNP (NP (NN 场地))
+			 (DEG 的))
+		    (NP (NN 限制))
+		    (PU 」))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 捶丸))
+					(VP (NP-PRP (-NONE- *T*-2))
+					    (VP (VP (ADVP (AD 逐渐))
+						    (VP (VV 冷却)))
+						(PU ，)
+						(VP (ADVP (AD 并))
+						    (ADVP (AD 未))
+						    (ADVP (AD 广泛))
+						    (VP (VV 流行))))))
+				    (DEC 的)))
+			    (NP (NN 原因)))))) 
+	</parse>
+	<arg n="1">
+	捶丸 
+	</arg>
+	<arg n="m" f="adv">
+	逐渐 
+	</arg>
+	<arg n="m" f="prp">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

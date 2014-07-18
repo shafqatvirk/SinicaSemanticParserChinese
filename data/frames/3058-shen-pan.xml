@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 审判 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people tried"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (IP (NP-SBJ (PN 其))
+			      (VP (VV 审判)
+				  (NP-OBJ (-NONE- *T*-3)))))
+		      (NP (NN 对象)))
+	      (VP (VC 是)
+		  (NP-PRD (NP (NN 当地))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (ADVP (AD 违法))
+					  (VP (VV 用)
+					      (NP-OBJ (NN 水)))))
+				  (DEC 的)))
+			  (NP (NN 人))))) 
+	  </parse>
+	  <arg n="0">
+	  其 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

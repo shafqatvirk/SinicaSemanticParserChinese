@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著述 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="writer"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (NP-TMP (NT 近年))
+					(IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (PP-MNR (P 以)
+							    (NP (NN 饮食)
+								(NN 文化)))
+						    (VP (VV 为)
+							(NP-OBJ (NN 题)))))
+					(VP (VP-FOC (VV 著述))
+					    (VP (ADVP (AD 甚))
+						(VP (VA 多))))))
+				(DEC 的)))
+			(NP (NN 文学家)))
+		(NP-PN (NR 林文月))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 以 饮食 文化 为 题 
+	</arg>
+	<arg n="m" f="tmp">
+	近年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

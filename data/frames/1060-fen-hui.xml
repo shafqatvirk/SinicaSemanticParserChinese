@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 焚毁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="destroyer"/>
+      <role argnum="1" argrole="thing destroyed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT １９９８年))
+		  (NP-SBJ (NN 警方))
+		  (VP (ADVP (AD 还))
+		      (VP (VP (VV 擒获)
+			      (NP-OBJ (NP (NP-APP (NN 北)
+						  (NN 海岸)
+						  (CC 和)
+						  (NN 东部)
+						  (NN 平原)
+						  (ETC 等))
+					  (NP (NN 地)))
+				      (NP (NN 贩毒)
+					  (NN 集团))
+				      (NP (NN 毒枭)))
+			      (NP-EXT (QP (CD １２))
+				      (NP (NN 人))))
+			  (PU ，)
+			  (VP (VV 焚毁)
+			      (NP-OBJ (NN 毒品)
+				      (NN 作物))
+			      (QP-EXT (CD ６·３万)
+				      (CLP (M 公顷))))))) 
+	  </parse>
+	  <arg n="0">
+	  警方 	  
+	  </arg>
+	  <arg n="1">
+	  毒品 作物 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９９８年 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  
+	  </arg>
+	  <arg n="1" f="qty">
+	  ６·３万 公顷 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

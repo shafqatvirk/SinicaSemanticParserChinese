@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 精於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is good at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 加上))
+	    (NP-SBJ (QP (CD 两)
+			(CLP (M 位)))
+		    (NP (NN 副手)
+			(NN 人选)))
+	    (VP (VP (ADVP (AD 各))
+		    (VP (VE 有)
+			(NP-OBJ (NN 专业)
+				(NN 成就))))
+		(PU ，)
+		(CC 且)
+		(VP (ADVP (AD 都))
+		    (ADVP (AD 不))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VP (ADVP (AD 久))
+						    (PP-LOC (P 在)
+							    (NP (NN 宦场)))
+						    (VP (VV 打滚)))
+						(PU 、)
+						(VP (VV 精於)
+						    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 见风转舵))))))
+					(DEC 的)))
+				(NP (NN 老手))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	*PRO* 见风转舵 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

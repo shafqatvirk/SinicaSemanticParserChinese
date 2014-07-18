@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 找寻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (ADVP (AD 无法))
+				  (VP (VV 升级))))
+			  (DEC 的)))
+	      (VP (ADVP (AD 则))
+		  (VP (VP (VV 遍布)
+			  (NP-OBJ (NN 海外)))
+		      (VP (VV 找寻)
+			  (NP-OBJ (NN 据点)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 无法 升级 的 
+	  </arg>
+	  <arg n="1">
+	  据点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

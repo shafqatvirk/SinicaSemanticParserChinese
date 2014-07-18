@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 服 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="duty/punishment arg0 serves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ-1 (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 纳)
+			      (NP-OBJ (NN 赋税)))
+			  (PU ，)
+			  (VP (VV 服)
+			      (NP-OBJ (NN 兵役)))))
+	    (PU ，)
+	    (VP (ADVP (AD 均))
+		(PP-LGS (P 由)
+			(NP (NN 法令)))
+		(VP (VV 规定)
+		    (IP-OBJ (-NONE- *-1))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	兵役 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 trusts in and obeys"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (ADJP (JJ 远))
+			    (NP (NN 人)))
+		    (VP (ADVP (AD 不))
+			(VP (VV 服))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 则))
+		(VP (VP (VV 修)
+			(NP-OBJ (NN 文德)))
+		    (VP (MSP 以)
+			(VP (VV 来)
+			    (NP-OBJ (PN 之))))))) 
+	</parse>
+	<arg n="0">
+	远 人 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

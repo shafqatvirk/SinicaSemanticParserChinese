@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 为过 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (DP (DT 这)
+				  (CLP (M 张)))
+			      (NP (NN 专辑)))
+		      (VP (VE 有)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 这麽))
+						  (VP (VA 好))))
+					  (DEC 的)))
+				  (NP (NN 销售)
+				      (NN 成绩)))))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (DVP (VP (VA 严格))
+				   (DEV 的))
+			      (VP (VV 说))))
+		  (VP (ADVP (AD 并))
+		      (ADVP (AD 不))
+		      (VP (VV 为过))))) 
+	  </parse>
+	  <arg n="0">
+	  这 张 专辑 有 *OP* *T*-1 这麽 好 的 销售 成绩 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 严格 的 说 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

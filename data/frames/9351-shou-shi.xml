@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收尸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person whose body arg0 buries"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-DIR (NP-PN (NR 台湾))
+			  (NP (NN 本岛)))
+		  (VP (VE 没)
+		      (IP-OBJ (NP-SBJ (NN 人))
+			      (VP (VV 来)
+				  (VP (VV 收尸))))))) 
+	  </parse>
+	  <arg n="0">
+	  人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

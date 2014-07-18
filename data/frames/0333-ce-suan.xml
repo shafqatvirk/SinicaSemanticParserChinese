@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 测算 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent, person doing the calculation"/>
+    <role argnum="1" argrole="thing calculated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-MNR (P 按)
+              (NP (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *pro*))
+                              (VP (NP-TMP (NT 目前))
+                                  (VP (VV 测算)
+                                      (NP-OBJ (-NONE- *T*-1)))))
+                          (DEC 的)))
+                  (NP (NN 财务)
+                      (NN 指标))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="TMP"> 目前 </arg>
+	<arg n="1"> (*T*-1)->(财务指标) </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

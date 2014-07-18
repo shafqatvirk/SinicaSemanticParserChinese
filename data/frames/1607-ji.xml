@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 计 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing calculated"/>
+      <role argnum="1" argrole="result of calculation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP (QP (CD 两))
+			      (NP (NN 岸)))
+			  (NP (NN 交流)))
+		      (NP (NN 项目)))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 计)
+		      (QP-OBJ (CD 一千九百多)
+			      (CLP (M 个)))))) 
+	  </parse>
+	  <arg n="0">
+	  两 岸 交流 项目 	  
+	  </arg>
+	  <arg n="1">
+	  一千九百多 个 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing calculated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 采取)
+		      (NP-OBJ (DNP (UCP (NP (NP (QP (CD 双))
+						(NP (NN 人)))
+					    (NP (NN 淘汰)))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (ADVP (AD 不))
+						(VP (VV 计)
+						    (NP-OBJ (NN 成绩))))))
+				   (DEG 的))
+			      (NP (NN 方式))))
+		  (VP (VV 进行)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  成绩 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 参观者))
+	      (ADVP (AD 已))
+	      (NP-SBJ (NN 数))
+	      (VP (PP-MNR (P 以)
+			  (QP (CD 十万)))
+		  (VP (VV 计)))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  参观者 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  数 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 十万 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

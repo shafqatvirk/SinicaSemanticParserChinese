@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 种满 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 plants"/>
+    <role argnum="2" argrole="place arg1 is planted all over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (NN 岸))
+		     (LC 上))
+	    (VP (VV 种满)
+		(AS 了)
+		(NP-OBJ (DNP (ADJP (JJ 青绿))
+			     (DEG 的))
+			(NP (NN 杨柳))))) 
+	</parse>
+	<arg n="1">
+	青绿 的 杨柳 
+	</arg>
+	<arg n="2">
+	岸 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

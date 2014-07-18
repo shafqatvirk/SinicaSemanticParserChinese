@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坚称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="claimer"/>
+      <role argnum="1" argrole="claim"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 塞))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 则))
+		  (VP (VV 坚称)
+		      (PU ，)
+		      (IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 订购)
+					  (NP-OBJ (NN 导弹))))
+			      (VP (VP (VC 是)
+				      (DNP-PRD (ADJP (JJ 防御性))
+					       (DEG 的)))
+				  (PU ，)
+				  (VP (VC 是)
+				      (PP-PRD (P 为了)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 保护)
+						      (NP-OBJ (NP (PN 其))
+							      (DNP (NP (NN 西海岸))
+								   (DEG 的))
+							      (NP (NN 空军)
+								  (NN 基地)))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  塞 政府 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 订购 导弹 是 防御性 的 ， 是 为了 *PRO* 保护 其 西海岸 的 空军 基地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 勘察 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NT 一九九四年))
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 科学家)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (ADVP (AD 实地))
+				   (VP (VV 勘察))))
+			   (LC 后))
+		  (VP (VV 确认)
+		      (IP-OBJ (NP-SBJ (PN 其))
+			      (VP (VC 为)
+				  (NP-PRD (ADJP (QP (NP (NN 世界))
+						    (QP (OD 第一)))
+						(ADJP (JJ 大)))
+					  (NP (NN 峡谷)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  实地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

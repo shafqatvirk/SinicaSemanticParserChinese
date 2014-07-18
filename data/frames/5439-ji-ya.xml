@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挤压 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 presses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-TPC (NR 台湾岛))
+	    (PP-TMP (P 从)
+		    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (IP-ADV (NP-SBJ (NN 板块))
+					 (VP (VV 挤压)))
+				 (VP (VV 诞生))))
+			 (LC 後)))
+	    (PU ，)
+	    (NP-SBJ (NN 地体))
+	    (VP (PP-DIR (P 由)
+			(NN 破碎))
+		(VP (MSP 而)
+		    (VP (ADVP (AD 逐渐))
+			(VP (VA 稳定)))))) 
+	</parse>
+	<arg n="0">
+	板块 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

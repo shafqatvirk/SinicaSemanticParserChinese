@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 编纂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 compiles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 加上)
+			(NP-OBJ (DNP (NP (NN 木刻)
+					 (NN 雕版))
+				     (DEG 的))
+				(NP (NN 兴盛)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (LCP-TMP (NP (NN 建国))
+			     (LC 之初))
+		    (ADVP (AD 就))
+		    (ADVP (AD 已经))
+		    (VP (VV 编纂)
+			(AS 了)
+			(NP-OBJ (NP-APP (NP-TTL (PU 《)
+						(NN 太平)
+						(NN 广记)
+						(PU 》))
+					(PU 、)
+					(NP-TTL (PU 《)
+						(NN 太平)
+						(NN 御览)
+						(PU 》))
+					(ETC 等))
+				(ADJP (JJ 大))
+				(NP (NN 百科全书)))))
+		(PU ，)
+		(VP (ADVP (AD 还))
+		    (VP (VP (VV 花)
+			    (NP-OBJ (QP (ADVP (AD 近))
+					(QP (CD 二十)
+					    (CLP (M 年))))
+				    (NP (NN 时间))))
+			(VP (ADVP (AD 重新))
+			    (VP (VV 编印)
+				(NP-OBJ (QP (CD 五))
+					(NP (NN 经))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	《 太平 广记 》 、 《 太平 御览 》 等 大 百科全书 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	建国 之初 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 加上 木刻 雕版 的 兴盛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

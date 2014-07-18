@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 伫足 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 stands still at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 摊开)
+			  (NP-OBJ (NN 地图))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 台湾))
+			   (DEG 的))
+		      (QP (CD 三○九)
+			  (CLP (M 个)))
+		      (NP (NN 乡镇)))
+	      (VP (VC 是)
+		  (NP-PRD (NP (QP (QP (CD 一)
+				      (CLP (M 个)))
+				  (CC 又)
+				  (QP (CD 一)
+				      (CLP (M 个))))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VA 陌生))))
+				  (DEC 的))
+			      (NP (NN 符号)))
+			  (PU ，)
+			  (CC 还是)
+			  (NP (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (PN 你))
+					  (VP (ADVP (AD 曾经))
+					      (VP (VCD (VV 伫足)
+						       (VV 停留))
+						  (AS 过)
+						  (NP-OBJ (-NONE- *T*-3)))))
+				      (DEC 的)))
+			      (NP (NN 美好)))))) 
+	</parse>
+	<arg n="0">
+	你 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="adv">
+	曾经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 曾))
+		    (VP (VV 伫足)
+			(PP-LOC (P 在)
+				(LCP (NP (NP (QP (CD 一)
+						 (CLP (M 位)))
+					     (CP (WHNP-2 (-NONE- *OP*))
+						 (CP (IP (NP-SBJ (-NONE- *T*-2))
+							 (VP (NP-PN-LOC (NR 岗山)
+									(NN 公园))
+							     (VP (VV 弹奏)
+								 (NP-OBJ (NN 三弦)))))
+						     (DEC 的)))
+					     (ADJP (JJ 老))
+					     (NP (NN 人)))
+					 (NP (NN 身)))
+				     (LC 边)))
+			(ADVP (AD 良久))))
+		(CC 并)
+		(VP (VSB (VV 上前)
+			 (VV 攀谈))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	在 一 位 *OP* *T*-2 岗山 公园 弹奏 三弦 的 老 人 身 边 
+	</arg>
+	<arg n="m" f="ext">
+	良久 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

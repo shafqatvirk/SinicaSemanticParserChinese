@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 失重 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 太空人))
+	    (VP (VV 处)
+		(PP (P 於)
+		    (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 失重)))
+				(DEC 的))
+			(NP (NN 状态)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

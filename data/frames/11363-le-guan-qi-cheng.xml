@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 乐观其成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is happy to see it a success"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 因为)
+		    (IP (NP-SBJ (DP (DT 这)
+				    (CLP (M 项)))
+				(NP (NN 检查)))
+			(VP (PP-DIR (P 对)
+				    (NP (NN 学童)))
+			    (VP (VE 有)
+				(NP-OBJ (DNP (ADJP (JJ 正面))
+					     (DEG 的))
+					(NP (NN 帮助)))))))
+	    (PU ，)
+	    (ADVP (AD 因此))
+	    (NP-PN-SBJ (NN 教育局))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 站)
+			    (PP (P 在)
+				(NP (DNP (NP (NN 支持))
+					 (DEG 的))
+				    (NP (NN 立场))))))
+		(PU ，)
+		(VP (VV 乐观其成)))) 
+	</parse>
+	<arg n="0">
+	教育局 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 站 在 支持 的 立场 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<arg n="m" f="prp">
+	因为 这 项 检查 对 学童 有 正面 的 帮助 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

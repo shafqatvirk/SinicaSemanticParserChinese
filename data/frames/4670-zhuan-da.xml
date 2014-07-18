@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转达 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="entity arg1 is passed on to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李鹏)
+			 (NN 总理))
+	      (VP (ADVP (AD 首先))
+		  (VP (VV 转达)
+		      (AS 了)
+		      (NP-OBJ (NP-PN (NR 江泽民)
+				     (NN 主席))
+			      (DNP (PP (P 对)
+				       (NP-PN (NR 阿卡耶夫)
+					      (NN 总统)))
+				   (DEG 的))
+			      (ADJP (JJ 亲切))
+			      (NP (NN 问候)))))) 
+	  </parse>
+	  <arg n="0">
+	  李鹏 总理 
+	  </arg>
+	  <arg n="1">
+	  江泽民 主席 对 阿卡耶夫 总统 的 亲切 问候 
+	  </arg>
+	  <arg n="m" f="adv">
+	  首先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="entity arg1 is passed on to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 威迪奥诺))
+	      (VP (VV 表示)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 将))
+			      (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (DP (DT 此))
+						  (NP (NN 意见)))
+					  (VP (VRD (VV 转达)
+						   (VV 给))
+					      (NP-OBJ (NP-OBJ (NR 联合国))
+						      (NP (NN 秘书长)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  此 意见 
+	  </arg>
+	  <arg n="2">
+	  联合国 秘书长 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

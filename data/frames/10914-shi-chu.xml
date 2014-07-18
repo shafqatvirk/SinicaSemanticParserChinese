@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 试出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tests to find out"/>
+    <role argnum="2" argrole="thing with which arg1 is found out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (IP (NP-SBJ (PN 有的))
+			(VP (VV 磨光)))
+		    (PU ，)
+		    (IP (NP-SBJ (PN 有的))
+			(VP (ADVP (AD 不))
+			    (VP (VV 磨)))))
+	    (PU ，)
+	    (VP (MSP 以)
+		(VP (VV 试出)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VV 接近))))
+				    (DEC 的)))
+			    (NP (NN 整体感)))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-1 最 接近 的 整体感 
+	</arg>
+	<arg n="2">
+	有的 磨光 ， 有的 不 磨 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

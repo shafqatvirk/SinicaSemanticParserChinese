@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打烊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity (store) closing at end of day"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 记得)
+		(IP-OBJ (NP-TMP (DP (DT 那)
+				    (CLP (M 年)))
+				(NP (NN 除夕夜)))
+			(PU ，)
+			(NP-SBJ (-NONE- *pro*))
+			(VP (VP (VV 想)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 打烊))))
+			    (VP (ADVP (AD 都))
+				(VP (VE 没)
+				    (NP-OBJ (NN 办法)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

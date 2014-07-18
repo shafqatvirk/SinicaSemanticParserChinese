@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 保 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="keeper"/>
+      <role argnum="1" argrole="thing kept"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-PN (NR 温州))
+			(NP (NN 人民)))
+		(VP (VP (NP-TMP (NT 目前))
+			(ADVP (AD 紧急))
+			(VP (VRD (VV 行动)
+				 (VV 起来))))
+		    (PU ，)
+		    (VP (VP (VV 抢)
+			    (NP-OBJ (NN 险)))
+			(VP (VV 筑)
+			    (NP-OBJ (NN 坝)))
+			(VP (VV 保)
+			    (NP-OBJ (NN 家园)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  温州 人民 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  家园 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

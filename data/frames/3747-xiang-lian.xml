@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相连 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="things described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国)
+			 (CC 和)
+			 (NR 越南))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 山水))
+				      (VP (VV 相连)))
+				  (DEC 的)))
+			  (NP (NN 邻邦))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  山水 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国)
+			 (NR 唐家河)
+			 (NN 自然)
+			 (NN 保护区))
+	      (VP (VP (VV 位)
+		      (PP-LOC (P 于)
+			      (NP (NP (NP-PN (NR 四川省))
+				      (NP (NN 北部)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (PP (P 与)
+						      (NP-PN (NR 甘肃省)))
+						  (VP (VV 交界))))
+					  (DEC 的)))
+				  (NP-PN (NR 龙门))
+				  (NP (NN 山区)))))
+		  (PU ，)
+		  (VP (PP (P 与)
+			  (NP (DNP (NP (NP (PN 其))
+				       (NP (NN 西面)))
+				   (DEG 的))
+			      (NP-PN (NP-PN (NR 九寨沟)
+					    (PU 、)
+					    (NR 王朗))
+				     (NP (NN 自然)
+					 (NN 保护区)))))
+		      (VP (VV 相连)))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (NP-PN (NR 四川省))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-2))
+					  (NP-SBJ (ADJP (JJ 大))
+						  (NP (NN 熊猫)))
+					  (VP (VP-FOC (VV 分布))
+					      (VP (ADVP (AD 最))
+						  (VP (VA 东)))))
+				      (DEC 的)))
+			      (NP (NN 保护区)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 唐家河 自然 保护区 
+	  </arg>
+	  <arg n="0">
+	  与 其 西面 的 九寨沟 、 王朗 自然 保护区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 实现)
+		  (IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (NP (NP-APP (NN 省会))
+						  (NP-PN (NR 广州))))
+				      (VP (VV 到)
+					  (NP-OBJ (DP (DT 各))
+						  (NP (NN 地级)
+						      (NN 市))))))
+			  (VP (PP-MNR (P 由)
+				      (NP (ADJP (JJ 高速))
+					  (NP (NN 公路))))
+			      (VP (VV 相连)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 省会 广州 到 各 地级 市 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  由 高速 公路 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

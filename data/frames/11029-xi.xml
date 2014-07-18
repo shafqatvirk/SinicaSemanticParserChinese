@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 刘海))
+	    (VP (VV 吸)
+		(NP-OBJ (ADJP (JJ 金))
+			(NP (NN 蟾))))) 
+	</parse>
+	<arg n="0">
+	刘海 
+	</arg>
+	<arg n="1">
+	金 蟾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

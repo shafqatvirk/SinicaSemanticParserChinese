@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 考上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person admitted"/>
+      <role argnum="1" argrole="institution admitted into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 丁豪))
+		  (VP (VV 考上)
+		      (NP-OBJ (NN 大学)))) 
+	  </parse>
+	  <arg n="0">
+	  丁豪 
+	  </arg>
+	  <arg n="1">
+	  大学 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

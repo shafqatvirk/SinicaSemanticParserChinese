@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 簇拥 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="entity arg0 crowds around"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 放眼))
+			  (VP (ADVP (AD 一))
+			      (VP (VV 看)))))
+	      (PU ，)
+	      (LCP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-2))
+				       (VP (VA 小小)))
+				   (DEC 的)))
+			   (NP (NN 店门口) ))
+		       (LC 前))
+	      (PU ，)
+	      (VP (VV 簇拥)
+		  (AS 著)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 盆盆)))
+			  (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VA 珠光宝气)))
+				  (DEC 的)))
+			  (NP (NN 元宝)
+			      (NN 树) )))) 
+	  </parse>
+	  <arg n="0">
+	  一 盆盆 *OP* *T*-3 珠光宝气 的 元宝 树 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 小小 的 店门口 前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 放眼 一 看 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

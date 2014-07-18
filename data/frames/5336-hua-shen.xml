@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 化身 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is embodied in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-PN-SBJ (NR 弥勒佛))
+		(VP (ADVP (AD 曾))
+		    (VP (VV 化身)
+			(NP-OBJ (NN 布袋)
+				(NN 和尚))))) 
+	</parse>
+	<arg n="0">
+	弥勒佛 
+	</arg>
+	<arg n="1">
+	布袋 和尚 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-PN-SBJ (NR 黄春明))
+		(VP (ADVP (AD 似乎))
+		    (ADVP (AD 同时))
+		    (VP (VRD (VV 化身)
+			     (VV 成))
+			(NP-OBJ (QP (CD 两)
+				    (CLP (M 个)))
+				(NP (NN 角色)))))) 
+	</parse>
+	<arg n="0">
+	黄春明 
+	</arg>
+	<arg n="1">
+	两 个 角色 
+	</arg>
+	<arg n="m" f="adv">
+	同时 
+	</arg>
+	<arg n="m" f="adv">
+	似乎 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

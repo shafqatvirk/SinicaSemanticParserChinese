@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 了然於心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is well aware of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (PU ，)
+	    (NP-SBJ (NN 创业者))
+	    (VP (VV 必须)
+		(VP (PP-DIR (P 对)
+			    (NP (NP (NN 风险))
+				(CC 和)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 可能)))
+					    (DEC 的)))
+				    (NP (NN 失败)))))
+		    (VP (VV 了然於心))))) 
+	</parse>
+	<arg n="0">
+	创业者 
+	</arg>
+	<arg n="1">
+	对 风险 和 *OP* *T*-1 可能 的 失败 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

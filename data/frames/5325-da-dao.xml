@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打倒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 topples"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-TMP (P 在)
+		(NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 打倒)
+				(NP-OBJ (ADJP (JJ 旧))
+					(NP (NN 思想)))))
+		    (NP (NN 同时)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	旧 思想 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-1(IP-ADV (NP-SBJ (PN 我们))
+				 (VP (ADVP (AD 一))
+				     (VP (VRD (VV 做)
+					      (VV 出来)))))
+			 (PU ，)
+			 (NP-SBJ (NP-APP (NN 美商))
+				 (NP-PN (NR 杜邦)))
+			 (VP (VP (ADVP (AD 立刻))
+				 (VP (VV 降价)))
+			     (PU ，)
+			     (VP (VV 希望)
+				 (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					 (VP (BA 将)
+					     (IP-OBJ (NP-SBJ (PN 我们))
+						     (VP (ADVP (AD 一举))
+							 (VP (VV 打倒))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	我们 
+	</arg>
+	<arg n="m" f="adv">
+	一举 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

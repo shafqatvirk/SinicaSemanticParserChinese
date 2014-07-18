@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 补偿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 compensates"/>
+      <role argnum="2" argrole="thing arg0 compensates for"/>
+      <role argnum="3" argrole="thing arg0 compensates with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (DNP (NP-PN (NR 六家))
+				   (DEG 的))
+			      (NP (NN 居民)))
+		      (VP (PP-TMP (P 在)
+				  (LCP (NP (NN 区段)
+					   (NN 徵收))
+				       (LC 後)))
+			  (PU ，)
+			  (ADVP (CS 虽然))
+			  (VP (VV 可)
+			      (VP (VV 配还)
+				  (NP-OBJ (DNP (QP (CD 四成))
+					       (DEG 的))
+					  (NP (NN 土地)))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 补偿)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 钱)))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 足够)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 买)
+				  (NP-OBJ (NN 地))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="3">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

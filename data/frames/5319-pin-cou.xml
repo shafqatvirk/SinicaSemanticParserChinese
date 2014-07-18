@@ -1,0 +1,202 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拼凑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 puts together"/>
+    <role argnum="2" argrole="result of arg1 being put together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 後人))
+				(VP (VV 读)
+				    (NP-OBJ (-NONE- *T*-3))))
+			    (DEC 的)))
+		    (ADJP (JJ 先秦))
+		    (NP (NN 书籍)))
+	    (PU ，)
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				(IP (NP-SBJ (QP (CD 一)
+						(CLP (M 群群)))
+					    (NP-PN (NR 汉代))
+					    (NP (NN 学者)))
+				    (VP (VP (QP-ADV (CD 一)
+						    (CLP (M 段段)))
+					    (VP (VP (VV 编定)
+						    (NP-OBJ (-NONE- *RNR*-5)))
+						(PU 、)
+						(VP (VV 拼凑)
+						    (NP-OBJ-5 (-NONE- *T*-4)))))
+					(VP (MSP 而)
+					    (VP (VV 成)))))))))) 
+	</parse>
+	<arg n="0">
+	一 群群 汉代 学者 
+	</arg>
+	<arg n="2">
+	*T*-4 
+	</arg>
+	<arg n="m" f="adv">
+	一 段段 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 不))
+			(VP (VV 愿)
+			    (IP-OBJ (NP-SBJ (DNP (NP (NT 当年))
+						 (DEG 的))
+					    (NP (NN 冤屈)))
+				    (VP (SB 被)
+					(VP (VV 遗忘)))))))
+	    (PU ，)
+	    (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				    (VP (PP-LGS (P 由)
+						(NP (NN 受难者)))
+					(VP (VV 组成)
+					    (NP-OBJ (-NONE- *-2)))))
+				(DEC 的)))
+			(NP-PN (PU 「)
+			       (NP-PN (NR 台北市))
+			       (NP (ADJP (JJ 白色))
+				   (NP (NN 恐怖)))
+			       (NP (NN 平反)
+				   (NN 促进会))
+			       (PU 」)))
+		    (NP (NN 会员们)))
+	    (PU ，)
+	    (VP (ADVP (AD 共同))
+		(VP (VP (VV 拼凑)
+			(NP-OBJ (NN 记忆)))
+		    (PU ，)
+		    (VP (VV 画下)
+			(NP-OBJ (NP (CP (WHNP-3 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-3))
+						(VP (ADVP (AD 已经))
+						    (VP (VV 拆除))))
+					    (DEC 的)))
+				    (NP-PN (PU 「)
+					   (NN 新生)
+					   (NN 训导处)
+					   (PU 」))
+				    (NP (NN 营区)))
+				(NP (NN 全貌))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 由 受难者 组成 *-2 的 「 台北市 白色 恐怖 平反 促进会 」 会员们 
+	</arg>
+	<arg n="1">
+	记忆 
+	</arg>
+	<arg n="m" f="adv">
+	共同 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 不 愿 当年 的 冤屈 被 遗忘 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 看到)
+			    (NP-OBJ (QP (CD 几)
+					(CLP (M 块)))
+				    (NP (NN 破片)
+					(NN 标本)))))
+		(PU ，)
+		(ADVP (AD 就))
+		(VP (VV 要)
+		    (VP (VRD (VV 拼凑)
+			     (VV 出))
+			(NP-OBJ (DNP (NP (LCP (NP (DP (DT 整)
+						      (CLP (M 个)))
+						  (NP (NN 陶器)))
+					      (LC 上))
+					 (NP (NN 图案)))
+				     (DEG 的))
+				(NP (NN 走向))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="2">
+	整 个 陶器 上 图案 的 走向 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 看到 几 块 破片 标本 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 郑永国))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 发挥)
+			    (NP-OBJ (NN 侦探)
+				    (NN 精神))))
+		(PU ，)
+		(PP-DIR (P 从)
+			(NP (NN 破片)
+			    (NN 标本)))
+		(VP (VRD (VV 拼凑)
+			 (VV 出))
+		    (NP-OBJ (DNP (LCP (NP (NN 史前陶))
+				      (LC 上))
+				 (DEG 的))
+			    (NP (NN 图案)))))) 
+	</parse>
+	<arg n="0">
+	郑永国 
+	</arg>
+	<arg n="1">
+	从 破片 标本 
+	</arg>
+	<arg n="2">
+	史前陶 上 的 图案 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 发挥 侦探 精神 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

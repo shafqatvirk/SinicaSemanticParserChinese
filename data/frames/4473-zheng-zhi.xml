@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 整治 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (NP-SBJ (PN 我们))
+		  (VP (VV 必须)
+		      (VP (VP (VV 整治)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 日益))
+						      (VP (VV 侵蚀)
+							  (NP-OBJ (NN 耕地)))))
+					      (DEC 的)))
+				      (NP (NN 沙漠))))
+			  (PU ，)
+			  (VP (VV 开发)
+			      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (VA 新)))
+					      (DEC 的)))
+				      (NP (NN 水源))))
+			  (PU ，)
+			  (VP (VV 实施)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VA 新)))
+					      (DEC 的)))
+				      (NP (NN 工程)
+					  (NN 项目))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 日益 侵蚀 耕地 的 沙漠 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (NN 运河))
+		       (VP (VV 整治)))
+		   (LC 后)) 
+	  </parse>
+	  <arg n="1">
+	  运河 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

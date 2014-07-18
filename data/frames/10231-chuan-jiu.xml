@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 穿久 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 wears for a long time"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 有效))
+		(VP (VV 改善)
+		    (AS 了)
+		    (NP-OBJ (CP-APP (IP (NP-TMP (NT 以往))
+					(NP-SBJ (ADJP (JJ 亲水型))
+						(NP (NN 防水衣)))
+					(VP (VP (PP-LOC (P 在)
+							(LCP (NP (NN 雨))
+							     (LC 中)))
+						(VP (VV 穿久)
+						    (AS 了)))
+					    (VP (ADVP (AD 就))
+						(VP (VV 黏)
+						    (PP (P 在)
+							(LCP (NP (NN 身))
+							     (LC 上)))))))
+				    (DEC 的))
+			    (ADJP (JJ 不舒服))
+			    (NP (NN 感觉)))))) 
+	</parse>
+	<arg n="1">
+	亲水型 防水衣 
+	</arg>
+	<arg n="m" f="loc">
+	在 雨 中 
+	</arg>
+	<arg n="m" f="tmp">
+	以往 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

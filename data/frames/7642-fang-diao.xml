@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放掉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 releases"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (ADJP (JJ 老))
+			    (NP (NN 人)))
+		    (NP-PN (NR 阿尾)))
+	    (VP (VP (DVP (VP (VV 莫名其妙)))
+		    (VP (VV 去)
+			(VP (VV 抓)
+			    (AS 了)
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 只)))
+				    (NP (NN 鹭鸶))))))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (DVP (VP (VV 莫名其妙))
+			 (DEV 地))
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (PN 它))
+				(VP (VV 放掉))))))) 
+	</parse>
+	<arg n="0">
+	老 人 阿尾 
+	</arg>
+	<arg n="1">
+	它 
+	</arg>
+	<arg n="m" f="adv">
+	莫名其妙 地 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

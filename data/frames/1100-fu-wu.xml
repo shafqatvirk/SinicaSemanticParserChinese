@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 服务 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="service provider"/>
+      <role argnum="1" argrole="party receiving service"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 服务)
+				  (NP-OBJ (NP-PN (NR 三峡))
+					  (NP (NN 工程)))))
+			  (DEC 的)))
+		  (NP (NN 专业)
+		      (NN 机构))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  三峡 工程 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP-PN (NR 天津市))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (AD 专门))
+				  (PP-BNF (P 为)
+					  (NP (NN 台商)))
+				  (VP (VV 服务))))
+			  (DEC 的)))
+		  (ADJP (JJ 主要))
+		  (NP (NN 官员))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  为 台商 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  专门 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

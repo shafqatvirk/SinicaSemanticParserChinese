@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 访求 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 looks for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (ADVP (AD 早点))
+			(VP (VV 退休)))
+		    (PU ，)
+		    (VP (VP (VV 去)
+			    (NP-OBJ (NR 印度)))
+			(VP (VV 访求)
+			    (NP-OBJ (NN 灵师))))
+		    (PU 、)
+		    (VP (VV 投入)
+			(NP-OBJ (NN 义工)
+				(NN 组织)))
+		    (PU ，)
+		    (VP (VV 作)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (PN 自己))
+					    (VP (VV 爱)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 做)
+							    (NP-OBJ (-NONE- *T*-2)))))
+					    (DEC 的))))
+				(NP (NN 事)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	灵师 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 洽公 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (ADVP (AD 经常))
+				(PP-LOC (P 在)
+					(NP (NP (NN 世界))
+					    (DP (DT 各))
+					    (NP (NN 地))))
+				(VP (VV 洽公))))
+			(DEC 的)))
+		(NP (PU 「)
+		    (NN 全球族)
+		    (PU 」))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="m" f="loc">
+	在 世界 各 地 
+	</arg>
+	<arg n="m" f="adv">
+	经常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

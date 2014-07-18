@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 站稳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 secures a footing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (ADVP (AD 早))
+				      (ADVP (AD 已))
+				      (VP (VV 站稳)
+					  (NP-OBJ (NP (ADJP (JJ 传统))
+						      (NP (NN 媒体)))
+						  (NP (NN 市场))))))
+			      (DEC 的)))
+		      (NP-PN (NR 联合报系)))
+	      (VP (VP (LCP-TMP (QP (ADVP (AD 近))
+				   (QP (CD 一)
+				       (CLP (M 年))))
+			       (LC 前))
+		      (PP-LOC (P 在)
+			      (LCP (NP (ADJP (JJ 联合))
+				       (NP (NN 新闻网)))
+				   (LC 下)))
+		      (VP (VV 架设)
+			  (AS 了)
+			  (NP-OBJ (NP-PN (PU 「)
+					 (NR udnjob)
+					 (PU 」))
+				  (NP (NN 人力)
+				      (NN 网站)))))
+		  (PU ，)
+		  (VP (ADVP (AD 如今))
+		      (ADVP (AD 又))
+		      (VP (VP (VV 投下)
+			      (NP-OBJ (QP (CD 二亿)
+					  (CLP (M 元)))
+				      (NP (NN 资本))))
+			  (VP (VV 跨足)
+			      (NP-OBJ (NN 就业)
+				      (NN 情报志))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  传统 媒体 市场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  早 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

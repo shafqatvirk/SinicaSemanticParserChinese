@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吃饭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="eater"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU “)
+	      (NP-SBJ (NP-PN (NR 贵州))
+		      (NP (NN 农村)
+			  (NN 生产力)))
+	      (VP (VP (ADVP (AD 已))
+		      (PP-DIR (P 由)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 主要))
+				      (VP (VV 解决)
+					  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+							  (VP (PU ‘)
+							      (VV 吃饭)
+							      (PU ’)))
+						  (NP (NN 问题)))))))
+		      (VP (VV 转向)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 主要))
+				      (VP (VV 解决)
+					  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+							  (VP (PU ‘)
+							      (VV 用)
+							      (NP-OBJ (NN 钱))
+							      (PU ’)))
+						  (NP (NN 问题)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

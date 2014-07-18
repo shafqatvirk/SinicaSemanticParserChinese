@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 changes into showing"/>
+      <role argnum="2" argrole="original state of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 贸易)))
+	      (VP (PP-DIR (P 由)
+			  (NP (NN 顺差)))
+		  (VP (VV 转现)
+		      (NP-OBJ (NN 赤字))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 贸易 
+	  </arg>
+	  <arg n="1">
+	  赤字 
+	  </arg>
+	  <arg n="2">
+	  由 顺差 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

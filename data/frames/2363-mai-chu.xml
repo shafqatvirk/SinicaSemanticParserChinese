@@ -1,0 +1,159 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迈出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="area progress made"/>
+      <role argnum="2" argrole="steps/progress made"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 人民)))
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 实现)
+						       (IP-OBJ (NP-SBJ (NN 祖国))
+							       (VP (ADVP (AD 完全))
+								   (VP (VV 统一))))))
+					       (DEC 的))
+				       (NP (NN 道路)))
+				   (LC 上)))
+		      (ADVP (AD 又))
+		      (VP (VV 迈出)
+			  (QP-OBJ (ADJP (JJ 重要))
+				  (QP (CD 一)
+				      (CLP (M 步))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 人民 
+	  </arg>
+	  <arg n="1">
+	  在 *PRO* 实现 祖国 完全 统一 的 道路 上 
+	  </arg>
+	  <arg n="2">
+	  重要 一 步 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年))
+	      (NP-SBJ (NP (DP (DT 全))
+			  (NP (NN 省)))
+		      (PP (P 对)
+			  (NP (NN 外)))
+		      (NP (NN 开放)))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 迈出)
+		      (NP-OBJ (ADJP (JJ 新))
+			      (NP (NN 步伐)))))) 
+	  </parse>
+	  <arg n="1">
+	  全 省 对 外 开放 
+	  </arg>
+	  <arg n="2">
+	  新 步伐 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 一九九六年))
+		(PU ，)
+		(NP-SBJ (QP (CD 四)
+			    (CLP (M 家)))
+			(ADJP (JJ 国有))
+			(ADJP (JJ 独资))
+			(NP (NN 商业)
+			    (NN 银行)))
+		(VP (VV 继续)
+		    (VP (PP-MNR (P 按照)
+				(NP (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (VV 建立)
+						    (NP-OBJ (ADJP (JJ 现代))
+							    (NP (NN 商业)
+								(NN 银行)))))
+					    (DEC 的))
+				    (NP (NN 要求))))
+			(PU ，)
+			(VP (VP (VV 加强)
+				(NP-OBJ (NN 内部)
+					(NN 管理)))
+			    (PU ，)
+			    (VP (VV 防范)
+				(NP-OBJ (NN 金融)
+					(NN 风险)))
+			    (PU ，)
+			    (VP (VV 强化)
+				(NP-OBJ (NP (NN 统一)
+					    (NN 法人)
+					    (NN 体制))
+					(CC 和)
+					(NP (NP (NN 总行))
+					    (DNP (PP (P 对)
+						     (NP (NP (NN 分支)
+							     (NN 机构))
+							 (NP (NN 业务)
+							     (NN 活动))))
+						 (DEG 的))
+					    (NP (NN 统一)
+						(NN 调度)))))
+			    (PU 、)
+			    (VP (ADVP (AD 严格))
+				(VP (VV 监督)))
+			    (PU ，)
+			    (VP (PP-DIR (P 向)
+					(NP (NN 集约化)
+					    (NN 经营)))
+				(VP (VV 迈出)
+				    (NP-OBJ (ADJP (JJ 重要))
+					    (NP (NN 步伐))))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  四 家 国有 独资 商业 银行 
+	  </arg>
+	  <arg n="2">
+	  重要 步伐 
+	  </arg>
+	  <arg n="m" f="dir">
+	  向 集约化 经营 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九六年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

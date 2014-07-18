@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谋求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing sought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 保))
+		  (VP (NP-TMP (NT 明年))
+		      (ADVP (AD 将))
+		      (VP (VV 努力)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 谋求)
+				      (NP-OBJ (NN 地区)
+					      (NN 稳定))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  地区 稳定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-PN-SBJ (NN 安理会))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 能)
+				  (VP (VV 通过)
+				      (NP-OBJ (DNP (NP (PN 这样))
+						   (DEG 的))
+					      (NP (NN 决议))))))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 谋求)
+		      (IP-OBJ (NP-PN-SBJ (NR 美国))
+			      (VP (ADVP (AD 单方面))
+				  (VP (VV 解除)
+				      (NP-OBJ (DNP (PP (P 对)
+						       (NP-PN (NR 波黑)))
+						   (DEG 的))
+					      (NP (NN 武器)
+						  (NN 禁运))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  美国 单方面 解除 对 波黑 的 武器 禁运 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 安理会 不 能 通过 这样 的 决议 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

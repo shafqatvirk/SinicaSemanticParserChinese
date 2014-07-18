@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 醒酒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people made sober"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-ADV (DT 每)
+		      (CLP (M 年)))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-3 (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (VV 强制)
+					  (NP-OBJ (-NONE- *-3))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 醒酒)))))))
+			  (DEC 的))
+		      (NP (NN 人)))
+	      (VP (VV 达)
+		  (NP-OBJ (DNP (QP (CD １０万))
+			       (DEG 之))
+			  (NP (NN 众))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

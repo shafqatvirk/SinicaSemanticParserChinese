@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 联网 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities connected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 网站))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 将))
+		  (VP (VP (PP (P 与)
+			      (NP (NP (NN 国内))
+				  (QP-APP (CD 一四八))
+				  (NP (NN 法律)
+				      (NN 服务)
+				      (NN 热线))))
+			  (VP (VV 联网)))
+		      (PU ，)
+		      (VP (VV 拓宽)
+			  (NP-OBJ (NN 法律)
+				  (NN 服务)
+				  (NN 领域)))))) 
+	  </parse>
+	  <arg n="1">
+	  网站 
+	  </arg>
+	  <arg n="1">
+	  与 国内 一四八 法律 服务 热线 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

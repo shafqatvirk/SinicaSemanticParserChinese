@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 观看 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="spectator"/>
+      <role argnum="1" argrole="thing observed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD ６万))
+		      (NP (NN 观众)))
+	      (VP (VV 观看)
+		  (AS 了)
+		  (NP-OBJ (DP (DT 这)
+			      (CLP (M 场)))
+			  (NP (NN 决赛))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  ６万 观众 
+	  </arg>
+	  <arg n="1">
+	  这 场 决赛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

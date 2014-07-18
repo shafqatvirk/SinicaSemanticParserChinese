@@ -1,0 +1,163 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 停 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="stopper"/>
+      <role argnum="1" argrole="thing stopped"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (LCP-TMP (NP (NN 激战))
+			       (LC 中))
+		      (ADVP (AD 无法))
+		      (VP (VV 置)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 侵入)
+						  (NP-OBJ (NP (ADJP (JJ 白))
+							      (NP (NN 棋)))
+							  (NP (NN 阵地)))))
+					  (DEC 的)))
+				  (QP (CD 一)
+				      (CLP (M 队)))
+				  (ADJP (JJ 黑))
+				  (NP (NN 子)))
+			  (PP-LOC (P 于)
+				  (NP (NN 死地)))))
+		  (PU ，)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (CP-APP (IP (NP-SBJ (NN 实空))
+						   (VP (ADVP (AD 明显))
+						       (ADVP (AD 不))
+						       (VP (VA 够))))
+					       (DEC 的))
+				       (NP (NN 情况)))
+				   (LC 下)))
+		      (PU ，)
+		      (ADVP (AD 只))
+		      (VP (VV 得)
+			  (VP (VP (VV 停)
+				  (NP-OBJ (NN 钟)))
+			      (VP (VV 认输))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  钟 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 实空 明显 不 够 的 情况 下 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VRD (VV 整改)
+					(VV 完成))))
+			   (LC 前)))
+	      (NP-SBJ (NP (NN 国家))
+		      (ADJP (JJ 有关))
+		      (NP (NN 部门)))
+	      (VP (ADVP (AD 暂))
+		  (VP (VV 停)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 拨付)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ-3 (-NONE- *T*-2))
+						      (VP (PP-LGS (P 由)
+								  (NP (NN 国家)
+								      (NN 财政)
+								      (NN 债券)))
+							  (VP (VV 安排)
+							      (NP-OBJ (-NONE- *-3)))))
+						  (DEC 的)))
+					  (NP (NN 公路)
+					      (NN 建设)
+					      (NN 资金)))))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 有关 部门 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 拨付 *OP* *T*-2 由 国家 财政 债券 安排 *-3 的 公路 建设 资金 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  暂 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 整改 完成 前 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 大量))
+		      (NP (NN 外企)
+			  (NN 职工)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (PP-LOC (P 在)
+						  (LCP (NP (NN 加工车))
+						       (LC 间)))
+					  (VP (VA 忙)
+					      (DER 个)
+					      (VP (ADVP (AD 不))
+						  (VP (VV 停))))))
+				  (DEC 的)))
+			  (NP (NN 蓝领)
+			      (NN 工人))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 传销))
+		  (VP (VV 停)
+		      (PU 、)
+		      (VV 看)
+		      (PU 、)
+		      (VV 听))) 
+	  </parse>
+	  <arg n="1">
+	  传销 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

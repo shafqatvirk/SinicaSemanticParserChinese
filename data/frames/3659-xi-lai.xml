@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 袭来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="attacker"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 新)))
+			      (DEC 的)))
+		      (NP (NN 台风)
+			  (NN 暴雨)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 随时))
+		  (VP (VV 可能)
+		      (VP (VV 袭来))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 新 的 台风 暴雨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

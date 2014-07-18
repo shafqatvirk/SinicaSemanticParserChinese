@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 祈祷 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="prayer"/>
+    <role argnum="2" argrole="entity arg0 prays for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 朝野)))
+	    (PU ，)
+	    (VP (PP (P 除了)
+		    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (ADVP (AD 尽力))
+				 (VP (VV 监督)
+				     (NP-OBJ (DNP (NP (NN 核四)
+						      (NN 工程))
+						  (DEG 的))
+					     (NP (NN 进行))))))
+			 (LC 外)))
+		(PU ，)
+		(ADVP (AD 也))
+		(ADVP (AD 只))
+		(VP (VV 能)
+		    (VP (PP (P 与)
+			    (NP (PN 他)))
+			(NP-MNR (DP (DT 同))
+				(NP (NN 心)))
+			(VP (VV 祈祷)
+			    (PU ，)
+			    (IP-OBJ (NP-SBJ (NP (NT 今天))
+					    (DNP (NP (NN 人民))
+						 (DEG 的))
+					    (NP (NN 选择)))
+				    (PU ，)
+				    (VP (VV 会)
+					(VP (VC 是)
+					    (NP-PRD (DNP (NP (NT 未来)
+							     (NN 子孙))
+							 (DEG 的))
+						    (NP (NN 福祉))))))))))) 
+	</parse>
+	<arg n="0">
+	台湾 朝野 
+	</arg>
+	<arg n="0" f="crd">
+	与 他 
+	</arg>
+	<arg n="1">
+	今天 人民 的 选择 ， 会 是 未来 子孙 的 福祉 
+	</arg>
+	<arg n="m" f="adv">
+	同 心 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	除了 *PRO* 尽力 监督 核四 工程 的 进行 外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

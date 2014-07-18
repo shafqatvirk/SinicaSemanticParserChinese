@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 告知 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tells"/>
+    <role argnum="2" argrole="entity arg1 is told to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 位)))
+		    (DNP (PP (P 在)
+			     (NP-PN (NR 美国)))
+			 (DEG 的))
+		    (NP (NN 友人)))
+	    (VP (VP (VV 来)
+		    (NP-OBJ (NN 信)))
+		(VP (VV 告知)
+		    (PU ：)
+		    (IP-OBJ (NP-LOC (PN 这里))
+			    (NP-SBJ (NN 生活))
+			    (VP (VV 要)
+				(VP (VP (VA 容易))
+				    (ADVP (AD 些)))))))) 
+	</parse>
+	<arg n="0">
+	一 位 在 美国 的 友人 
+	</arg>
+	<arg n="1">
+	这里 生活 要 容易 些 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 夺下)
+		    (QP-OBJ (OD 第一)))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (VP (VV 要)
+			(VP (VV 告知)
+			    (NP-OBJ (NN 天下))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="2">
+	天下 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg2"/>
+	<mapitem src="ext" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 所有))
+		    (NP (NN 媒体)))
+	    (VP (ADVP (AD 均))
+		(VP (SB 被)
+		    (VP (VP (VV 告知)
+			    (IP-OBJ (PU 「)
+				    (NP-PN-SBJ (NR 区)
+					       (NN 司长))
+				    (VP (ADVP (AD 太))
+					(VP (VA 忙)))
+				    (PU 」)))
+			(VP (MSP 而)
+			    (VP (VV 拒绝))))))) 
+	</parse>
+	<arg n="1">
+	「 区 司长 太 忙 」 
+	</arg>
+	<arg n="2">
+	所有 媒体 
+	</arg>
+	<arg n="m" f="adv">
+	均 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

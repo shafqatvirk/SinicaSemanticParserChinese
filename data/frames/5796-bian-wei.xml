@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 变为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 changes"/>
+    <role argnum="2" argrole="entity arg1 is changed to"/>
+    <role argnum="3" argrole="original state of arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VCD (VV 变法)
+						 (VV 禅让))))
+				    (DEC 的))
+			    (NP (NN 政治)
+				(NN 理论)))
+		    (VP (ADVP (AD 从此))
+			(VP (VV 消失))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 渐))
+			(VP (VV 变为)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 帝王))
+						(VP (NP-ADV (QP (CD 万))
+							    (NP (NN 世)))
+						    (VP (VV 统一))))
+					    (DEC 的))
+				    (NP (NN 思想))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	帝王 万 世 统一 的 思想 
+	</arg>
+	<arg n="m" f="adv">
+	渐 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="ipobj" trg="arg2"/>
+	<mapitem src="dir" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (NP-LOC (NN 国会))
+					(NP-MNR (ADJP (JJ 高))
+						(NP (NN 声)))
+					(VP (VV 质询)))))
+			(PU ，)
+			(ADVP (AD 一))
+			(VP (VV 变为)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VSB (VV 上台)
+					     (VV 备询)))))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP-PN (NR 陈水扁))
+			 (DEG 的))
+		    (NP (NN 角色)
+			(NN 转换)))
+	    (VP (ADVP (AD 似乎))
+		(ADVP (AD 有些))
+		(VP (VP-FOC (VV 适应))
+		    (VP (VV 不良))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	*PRO* 上台 备询 
+	</arg>
+	<arg n="3">
+	从 *PRO* 国会 高 声 质询 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

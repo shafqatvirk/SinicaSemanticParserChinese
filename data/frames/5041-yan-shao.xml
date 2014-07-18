@@ -1,0 +1,155 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 延烧 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity burning"/>
+    <role argnum="1" argrole="area arg0 is burning"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (DNP (NP (NN 高尔夫)
+				 (NN 运动))
+			     (DEG 的))
+			(NP (NN 热潮)))
+		(VP (ADVP (AD 逐渐))
+		    (VP (VV 延烧)
+			(NP-OBJ (NP (NN 海峡))
+				(QP (CD 两))
+				(NP (NN 岸)))))) 
+	</parse>
+	<arg n="0">
+	高尔夫 运动 的 热潮 
+	</arg>
+	<arg n="1">
+	海峡 两 岸 
+	</arg>
+	<arg n="M" f="adv">
+	逐渐 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (NP-SBJ (NN 业者) )
+			(VP (VV 强调)
+			    (IP-OBJ (IP (NP-SBJ (NN 水晶) )
+					(VP (VE 有)
+					    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 调整)
+								    (NP-OBJ (NN 磁场) )))
+							    (DEC 的))
+						    (NP (NN 作用) ))))
+				    (PU ，)
+				    (IP (NP-SBJ (-NONE- *pro*))
+					(VP (PP (P 除了)
+						(IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 健身)
+							(PU 、)
+							(VV 调气))))
+					    (PU ，)
+					    (ADVP (AD 还))
+					    (VP (VE 有)
+						(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+								    (VP (VE 聚财)))
+								(DEC 之))
+							(NP (NN 效) )))))))))
+	    (PU ，)
+	    (LCP-TMP (QP (CD 十)
+			 (CLP (M 年)))
+		     (LC 来))
+	    (PU ，)
+	    (NP-SBJ (NN 水晶)
+		    (NN 热) )
+	    (VP (ADVP (AD 不断))
+		(VP (VV 延烧)))) 
+	</parse>
+	<arg n="0">
+	水晶 热 
+	</arg>
+	<arg n="m" f="adv">
+	不断 
+	</arg>
+	<arg n="m" f="tmp">
+	十 年 来 
+	</arg>
+	<arg n="m" f="prp">
+	由於 业者 强调 水晶 有 *PRO* 调整 磁场 的 作用 ， *pro* 除了 *PRO* 健身 、 调气 ， 还 有 *PRO* 聚财 之 效 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (LCP-TMP (NP (QP (CD 半))
+						 (NP (NN 世纪)))
+					     (LC 前))
+				    (ADVP (AD 早))
+				    (ADVP (AD 已))
+				    (VP (VV 结束))))
+			    (DEC 的)))
+		    (NP-PN (NR 国)
+			   (NR 共))
+		    (NP (NN 内战)))
+	    (PU ，)
+	    (VP (ADVP (AD 依然))
+		(PP-LOC (P 在)
+			(NP (NN 外交)
+			    (NN 战场)))
+		(VP (VV 延烧)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 半 世纪 前 早 已 结束 的 国 共 内战 
+	</arg>
+	<arg n="1">
+	在 外交 战场 
+	</arg>
+	<arg n="m" f="adv">
+	依然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (NN 风波))
+		(VP (VV 延烧)
+		    (PP (P 到)
+			(NP (NN 政界))))) 
+	</parse>
+	<arg n="0">
+	风波 
+	</arg>
+	<arg n="1">
+	到 政界 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 办好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *PRO*))
+      (VP (VV 办好)
+          (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-1))
+                              (VP (NP-TMP (NT 明年))
+                                  (PP-LOC (P 在)
+                                          (NP-PN (NR 昆明)))
+                                  (VP (VV 举行))))
+                          (DEC 的)))
+                  (NP-PN (NN 世界)
+                         (NN 园艺)
+                         (NN 博览会))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> *OP* (*T*-1)->(世界园艺博览会) 明年 在 昆明 举行 的 世界 园艺 博览会 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

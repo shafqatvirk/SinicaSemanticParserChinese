@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 命令 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="order giver"/>
+      <role argnum="1" argrole="order receiver"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不一会))
+	      (PU ，)
+	      (PP-LOC (P 在)
+		      (NP (QP (CD 一)
+			      (CLP (ADJP (JJ 小))
+				   (CLP (M 片))))
+			  (NP (NN 开阔地))))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 导游))
+		      (PRN (PU ———)
+			   (NP (QP (CD 一)
+				   (CLP (M 位)))
+			       (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VV 会)
+					       (VP (VV 操)
+						   (NP-OBJ (QP (CD ５)
+							       (CLP (M 种)))
+							   (NP (NR 欧洲)
+							       (NN 语言))))))
+				       (DEC 的)))
+			       (NP (NN 女郎)))
+			   (PU ———)))
+	      (VP (VV 命令)
+		  (NP-OBJ (NN 车子))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 停下))))) 
+	  </parse>
+	  <arg n="0">
+	  导游 ——— 一 位 *OP* (*T*-1)->(女郎) 会 操 ５ 种 欧洲 语言 的 女郎——— 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  车子 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 停下 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

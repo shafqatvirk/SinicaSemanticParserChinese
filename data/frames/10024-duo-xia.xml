@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夺下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 captures"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 夺下)
+		    (QP-OBJ (OD 第一)))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (VP (VV 要)
+			(VP (VV 告知)
+			    (NP-OBJ (NN 天下))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	第一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 提名 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 nominates"/>
+    <role argnum="2" argrole="thing arg1 is nominated for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (CP (WHNP-6 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-6))
+				(VP (ADVP (AD 正))
+				    (VP (VV 处於)
+					(NP-OBJ (NN 泡沫化)
+						(NN 危机)))))
+			    (DEC 的)))
+		    (NP-PN (NR 新党)))
+	    (PU ，)
+	    (VP (ADVP (AD 则))
+		(VP (VV 提名)
+		    (NP-OBJ (NP-APP (DNP (ADJP (JJ 非新党籍))
+					 (DEG 的))
+				    (ADJP (JJ 知名))
+				    (NP (NN 作家)))
+			    (NP-PN (NR 李敖)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 参选)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-6 正 处於 泡沫化 危机 的 新党 
+	</arg>
+	<arg n="1">
+	非新党籍 的 知名 作家 李敖 
+	</arg>
+	<arg n="2">
+	*PRO* 参选 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+		    (CP (IP (NP-PN-SBJ (NR 民进党))
+			    (VP (VV 提名)
+				(NP-OBJ (-NONE- *T*-3))))
+			(DEC 的)))
+		(NP-PN (NR 陈水扁))) 
+	</parse>
+	<arg n="0">
+	民进党 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

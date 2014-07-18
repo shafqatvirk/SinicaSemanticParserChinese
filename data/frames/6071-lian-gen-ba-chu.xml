@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 连根拔除 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 roots out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-HLN (NP-SBJ (-NONE- *PRO*))
+		  (VP (PU 「)
+		      (VV 连根拔除)
+		      (PU 」)
+		      (NP-OBJ (NP-PN (NR 客家))
+			      (NP (NN 文化))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	客家 文化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NN 高铁))
+				    (VP (VV 带来)
+					(NP-OBJ (-NONE- *T*-2))))
+				(DEC 的))))
+		(VP (VP (ADVP (AD 不))
+			(VP (VC 是)
+			    (NP-PRD (NN 都市化))))
+		    (PU ，)
+		    (CC 而)
+		    (VP (VC 是)
+			(IP-PRD (NP-SBJ (-NONE- *PRO*))
+				(VP (BA 将)
+				    (IP-OBJ (NP-SBJ (ADJP (JJ 传统))
+						    (NP-PN (NR 客家))
+						    (NP (NN 文化)))
+					    (VP (PU 「)
+						(VV 连根拔除)
+						(PU 」)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	传统 客家 文化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

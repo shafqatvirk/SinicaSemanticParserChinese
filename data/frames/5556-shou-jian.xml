@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 受检 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity receiving examination"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VRD (VV 平均)
+			     (VV 下来))))
+	    (PU ，)
+	    (NP-SBJ (NP (QP (CD 一)
+			    (CLP (M 个)))
+			(NP (NN 学童)))
+		    (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 受检)))
+		    (NP (NN 时间)))
+	    (VP (ADVP (AD 还))
+		(VP (QP-PRD (ADVP (AD 不到))
+			    (QP (CD 十)
+				(CLP (M 秒钟))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兼任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="position"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NN 委员会))
+		  (VP (PP-LGS (P 由)
+			      (NP (DNP (NP (NP-APP (NP (NP-PN (NN 国务院))
+						       (ADJP (JJ 有关))
+						       (NP (NN 部委)))
+						   (CC 及)
+						   (NP (NN 新闻))
+						   (CC 和)
+						   (NP (NN 学术)
+						       (NN 研究))
+						   (ETC 等))
+					   (QP (CD 三十五)
+					       (CLP (M 个)))
+					   (NP (NN 单位)))
+				       (DEG 的))
+				  (NP (NN 负责人))))
+		      (VP (VV 组成))))
+	      (PU ，)
+	      (IP (NP-PN-SBJ (NR 钱其琛))
+		  (VP (VV 兼任)
+		      (NP-OBJ (NN 主任))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  钱其琛 
+	  </arg>
+	  <arg n="1">
+	  主任 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 偏废 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 neglects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 稳固)))
+			    (DEC 的)))
+		    (NP (NN 国防)))
+	    (VP (VC 是)
+		(VP (ADVP (AD 不))
+		    (VP (VV 能)
+			(VP (VV 偏废)
+			    (NP-OBJ (DP (DT 任何)
+					(QP (CD 一)
+					    (CLP (M 个))))
+				    (NP (NN 面向)))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 稳固 的 国防 
+	</arg>
+	<arg n="1">
+	任何 一 个 面向 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP (ADJP (JJ 先秦))
+			    (QP (CD 六))
+			    (NP (NN 家)))
+			(NP (NN 思想)))
+		(VP (ADVP (AD 不))
+		    (VP (VV 可)
+			(VP (VV 偏废))))) 
+	</parse>
+	<arg n="1">
+	先秦 六 家 思想 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

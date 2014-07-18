@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 怒骂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 看)
+			  (AS 著)
+			  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VCD (VV 嘻笑)
+						   (VV 怒骂)))
+					  (DEC 的)))
+				  (NP (NN 孩子)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 想起)
+		  (NP-OBJ (CP (WHPP-4 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 台湾人)
+					      (CC 与)
+					      (NN 日本人))
+				      (VP (PP-TMP (-NONE- *T*-4))
+					  (ADVP (AD 不))
+					  (VP (VV 准)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (NP-LOC (ADJP (JJ 同))
+								  (NP (NN 校)))
+							  (VP (VV 求学)))))))
+				  (DEC 的)))
+			  (ADJP (JJ 皇民化))
+			  (NP (NN 时代))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

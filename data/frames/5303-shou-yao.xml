@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 受邀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is invited to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 常常))
+		    (VP (VV 受邀)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 上)
+					(NP-OBJ (NN 电视)))
+				    (VP (VV 表演))))))
+		(PU ，)
+		(VP (ADVP (AD 曾经))
+		    (PP-LOC (P 在)
+			    (NP (NP-APP (NP (DNP (NP-PN (NR 台视))
+						 (DEG 的))
+					    (NP-TTL (PU 《)
+						    (ADJP (JJ 快乐))
+						    (NP (NN 农家))
+						    (PU 》)))
+					(PU 、)
+					(NP (DNP (NP-PN (NR 中视))
+						 (DEG 的))
+					    (NP-TTL (PU 《)
+						    (NP-PN (NR 蓬莱))
+						    (NP (NN 仙岛))
+						    (PU 》)))
+					(ETC 等))
+				(NP (NN 节目))))
+		    (VP (VV 演唱)
+			(NP-OBJ (NP-APP (NN 闽南语)
+					(NN 歌))
+				(NP-TTL (PU 「)
+					(ADJP (JJ 烧))
+					(NP (NN 肉粽))
+					(PU 」)))))
+		(PU ，)
+		(VP (ADVP (AD 还))
+		    (PP-LOC (P 在)
+			    (NP (NP-APP (NP-PN (NR 中视))
+					(NP (NN 连续剧)))
+				(NP-PN-TTL (PU 《)
+					   (NR 香妃)
+					   (PU 》))))
+		    (PU ，)
+		    (VP (VV 饰演)
+			(AS 过)
+			(NP-OBJ (NP-APP (NP-PN (NR 清朝))
+					(NP (NN 宫廷))
+					(DNP (ADJP (JJ 有名))
+					     (DEG 的))
+					(NP (NN 画家)))
+				(PU 、)
+				(NP-APP (NN 耶稣会)
+					(NN 修士))
+				(NP-PN (NR 郎世宁))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*PRO* 上 电视 表演 
+	</arg>
+	<arg n="m" f="adv">
+	常常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

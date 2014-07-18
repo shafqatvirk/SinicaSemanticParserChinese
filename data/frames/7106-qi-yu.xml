@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 起於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="time/place arg0 starts from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (DNP (NP-PN (NR 台湾))
+			   (DEG 的))
+		      (ADJP (JJ 超高层))
+		      (NP (NN 大楼)))
+	      (VP (VV 起於)
+		  (NP-OBJ-WH (PN 何时)))) 
+	</parse>
+	<arg n="0">
+	台湾 的 超高层 大楼 
+	</arg>
+	<arg n="1">
+	何时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

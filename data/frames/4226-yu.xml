@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="quantity arg0 exceeds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 考虑)
+					(NP-OBJ (NN 增支)
+						(NN 因素))))
+				(LC 后))
+			   (DEG 的))
+		      (NP (NN 动态))
+		      (ADJP (JJ 总))
+		      (NP (NN 投资)))
+	      (VP (VV 逾)
+		  (NP-OBJ (QP (CD 二千亿)
+			      (CLP (M 元)))
+			  (NP (NN 人民币))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 考虑 增支 因素 后 的 动态 总 投资 
+	  </arg>
+	  <arg n="1">
+	  二千亿 元 人民币 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

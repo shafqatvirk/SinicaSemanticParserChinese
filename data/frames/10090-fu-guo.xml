@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 富过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="duration arg0 is rich longer than"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 只要))
+			    (VP (PU 「)
+				(VV 富过)
+				(QP-OBJ (CD 三)
+					(CLP (M 代)))
+				(PU 」))))
+		(PU ，)
+		(NP-SBJ (NN 台湾人))
+		(VP (VV 应该)
+		    (VP (VV 会)
+			(VP (VV 找出)
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 套)))
+				    (CP (WHNP-112 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-112))
+						(VP (ADVP (AD 更))
+						    (VP (VP (VE 有)
+							    (NP-OBJ (NN 内涵)))
+							(CC 与)
+							(VP (VA 实际)))))
+					    (DEC 的)))
+				    (NP (NN 消费)
+					(NN 观念))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	三 代 
+	</arg>
+	<arg n="m" f="adv">
+	只要 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

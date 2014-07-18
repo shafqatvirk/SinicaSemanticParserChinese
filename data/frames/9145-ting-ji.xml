@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 停机 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="person whose arg0 disconnects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (DP (DT 前))
+		      (NP (NN 一阵子)))
+	      (NP-SBJ (NP (PN 她))
+		      (CP (WHNP-58 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-58))
+				  (VP (VV 就读)
+				      (NP-OBJ (NN 高职))))
+			      (DEC 的)))
+		      (NP (NN 弟弟)))
+	      (VP (VP (PP-PRP (P 因为)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VPT (VV 缴)
+					   (AD 不)
+					   (VV 出))
+				      (NP-OBJ (NN 通话费)))))
+		      (VP (MSP 而)
+			  (VP (SB 被)
+			      (VP (VV 停机)))))
+		  (PU ，)
+		  (VP (VV 懊恼)
+		      (AS 了)
+		      (NP-EXT (NN 好久)))
+		  (PU ，)
+		  (VP (ADVP (AD 直))
+		      (VP (VV 叫)
+			  (IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (ADVP-WH (AD 怎麽))
+					(VP (VV 出去)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 见)
+							(NP-OBJ (NN 人))))))))))) 
+	  </parse>
+	  <arg n="1">
+	  她 *OP* *T*-58 就读 高职 的 弟弟 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 *PRO* 缴 不 出 通话费 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  前 一阵子 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

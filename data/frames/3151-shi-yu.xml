@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 适于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing suitable for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 形成)
+	      (AS 了)
+	      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 适于)
+				      (NP-OBJ (NP (NP (ADJP (JJ 高新))
+						      (NP (NN 技术)))
+						  (NP (NN 产业)))
+					      (NP (NN 发展)))))
+			      (DEC 的)))
+		      (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (ADVP (AD 较为))
+				      (VP (VA 完善))))
+			      (DEC 的)))
+		      (NP (NN 支撑)
+			  (NN 服务)
+			  (NN 体系)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  高新 技术 产业 发展 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

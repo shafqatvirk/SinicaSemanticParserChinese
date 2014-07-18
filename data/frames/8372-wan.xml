@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 弯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 bends"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 父亲))
+			   (DEG 的))
+		      (NP (NN 胳臂)))
+	      (VP (ADVP (AD 往外))
+		  (VP (VV 弯)))) 
+	  </parse>
+	  <arg n="1">
+	  父亲 的 胳臂 
+	  </arg>
+	  <arg n="m" f="adv">
+	  往外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

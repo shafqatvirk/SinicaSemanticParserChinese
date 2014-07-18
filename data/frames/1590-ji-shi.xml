@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 疾驶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="vehicle"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 于是))
+	      (PU ，)
+	      (NP-MNR (NN 轻舟)
+		      (NN 熟路))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 我们))
+				  (VP (VV 乘坐)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 旅游))
+		      (ADJP (JJ 大))
+		      (NP (NN 轿车)))
+	      (VP (ADVP (AD 径))
+		  (PP-DIR (P 向)
+			  (NP (NP (NN 西南))
+			      (PRN (PU ———)
+				   (NP (NP-PN (NR 富士山))
+				       (NP (NN 方向))))))
+		  (VP (VV 疾驶)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 我们 乘坐 *T*-1 的 旅游 大 轿车 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  轻舟 熟路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  径 
+	  </arg>
+	  <arg n="m" f="dir">
+	  向 西南 ——— 富士山 方向 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

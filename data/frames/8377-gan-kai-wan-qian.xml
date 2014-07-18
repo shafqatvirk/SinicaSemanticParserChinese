@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感慨万千 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 谈起)
+			  (NP-OBJ (NN 客家)
+				  (NN 事务))))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (PU 「)
+			      (NN 客籍)
+			      (NN 大老)
+			      (PU 」))
+		      (NP-PN (NR 吴伯雄)))
+	      (VP (VV 感慨万千))) 
+	  </parse>
+	  <arg n="0">
+	  「 客籍 大老 」 吴伯雄 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 谈起 客家 事务 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

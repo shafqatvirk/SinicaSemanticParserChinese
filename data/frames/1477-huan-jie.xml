@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缓解 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 吸引)
+			  (NP-OBJ (NN 外资))))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (DP (DT 这)
+						      (CLP (M 个)))
+						  (QP (NP (NN 世界))
+						      (QP (OD 第一)))
+						  (NP (NN 人口))
+						  (ADJP (JJ 大))
+						  (NP (NN 国)))
+					  (VP (PP-MNR (-NONE- *T*-1))
+					      (VP (VV 缓解)
+						  (NP-OBJ (NN 就业)
+							  (NN 压力)))))
+				      (DEC 的)))
+			      (ADJP (JJ 有效))
+			      (NP (NN 办法)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  这 个 世界 第一 人口 大 国 
+	  </arg>
+	  <arg n="M" f="MNR">
+	  (*T*-1)->(有效办法) 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  就业 压力 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (DP-TMP (DT 前)
+					      (QP (CD 几)
+						  (CLP (M 年))))
+				      (VP (VV 抑制)
+					  (NP-OBJ (NN 经济)
+						  (NN 增长)))))
+			      (DEC 的)))
+		      (ADJP (JJ 主要))
+		      (NP (NN 障碍))
+		      (PRN (PU －－)
+			   (NP (NP (NN 通货膨胀))
+			       (CC 和)
+			       (NP (NP (NN 基础)
+				       (NN 产业))
+				   (NP (PU “)
+				       (NN 瓶颈)
+				       (PU ”))))))
+	      (VP (ADVP (AD 均))
+		  (ADVP (AD 已))
+		  (ADVP (AD 明显))
+		  (VP (VV 缓解)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* (*T*-1)->(主要障碍－－通货膨胀和基础产业“瓶颈”) 前 几 年 抑制 经济 增长 的 主要 障碍 －－ 通货膨胀 和 基础 产业 “ 瓶颈 ” 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  均 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  明显 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

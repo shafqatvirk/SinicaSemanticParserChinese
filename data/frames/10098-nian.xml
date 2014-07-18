@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 碾 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 rolls over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (NN 握拳)
+			     (CC 与)
+			     (NN 松手) )
+			 (LC 之间)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 八里) )
+	    (VP (DVP (VP (ADVP (AD 有点儿))
+			 (VP (VV 不知所措)))
+		     (DEV 地))
+		(VP (VV 看)
+		    (AS 著)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 时代)
+						(NN 巨轮) )
+					(VP (PP-LOC (P 在)
+						    (NP (NP (PN 它))
+							(NP (NN 身上) )))
+					    (VP (VP (VV 碾)
+						    (AS 过))
+						(VP (VCD (VV 来)
+							 (VV 去))))))
+				    (DEC 的))
+			    (NP (NN 痕迹) ))))) 
+	</parse>
+	<arg n="0">
+	时代 巨轮 
+	</arg>
+	<arg n="1">
+	在 它 身上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

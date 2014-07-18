@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拘捕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NP (QP (CD 三)
+				  (CLP (M 名)))
+			      (NP (NN 被告)))
+			  (CC 及)
+			  (NP (QP (CD 两)
+				  (CLP (M 名)))
+			      (NP-PN (NR 中国))
+			      (NP (NN 人士)))))
+	      (VP (PP-TMP (P 於)
+			  (NP (NT 二月)
+			      (NT 二十四日)))
+		  (PP-LOC (P 在)
+			  (NP (NN 机场)
+			      (NN 离境)
+			      (NN 大堂)))
+		  (VP (LB 被)
+		      (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (ADVP (AD 一直))
+							  (ADVP (AD 在))
+							  (VP (VV 监视)
+							      (NP-OBJ (PN 他们)))))
+						  (DEC 的)))
+					  (NP (NN 入境处)
+					      (NN 职员)))
+				  (VP (MSP 所)
+				      (VP (VV 拘捕)
+					  (NP-OBJ (-NONE- *T*-1))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 一直 在 监视 他们 的 入境处 职员 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 机场 离境 大堂 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  於 二月 二十四日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (ADVP (AD 正))
+		      (PP (P 当)
+			  (IP (NP-SBJ (NN 交易))
+			      (VP (VV 完成)))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NN 入境处))
+		      (NP (NN 职员)))
+	      (VP (ADVP (AD 即))
+		  (VP (VP (VV 上前))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (QP (CD 五))
+					  (NP (NN 人)))
+				  (VP (VV 拘捕))))))) 
+	  </parse>
+	  <arg n="0">
+	  入境处 职员 
+	  </arg>
+	  <arg n="1">
+	  五 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  正 当 交易 完成 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

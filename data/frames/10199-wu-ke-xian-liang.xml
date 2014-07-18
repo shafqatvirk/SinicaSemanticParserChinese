@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无可限量 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 目前))
+				    (ADVP (AD 已))
+				    (PP-LOC (P 在)
+					    (NP (NN 实验室)
+						(PU 、)
+						(NN 研究)
+						(NN 单位)))
+				    (ADVP (AD 广泛))
+				    (VP (VV 应用))))
+			    (DEC 的)))
+		    (NP (NN 微阵列)
+			(NN 晶片)))
+	    (PU ，)
+	    (NP-SBJ (NN 前景))
+	    (VP (ADVP (AD 也))
+		(VP (VV 无可限量)))) 
+	</parse>
+	<arg n="0" f="psr">
+	*OP* *T*-1 目前 已 在 实验室 、 研究 单位 广泛 应用 的 微阵列 晶片 
+	</arg>
+	<arg n="0" f="pse">
+	前景 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

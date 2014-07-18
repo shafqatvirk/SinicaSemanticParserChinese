@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 解码 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 decodes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NN 人体)
+				 (NN 基因))
+			 (VP (VV 解码)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 推算)
+		(IP-OBJ (NP-SBJ (NN 标的))
+			(VP (VV 会)
+			    (VP (VV 增加)
+				(QP-EXT (CD 十)
+					(CLP (M 倍)))))))) 
+	</parse>
+	<arg n="1">
+	人体 基因 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搁浅 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity which runs aground"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 不料))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (NT 下午))
+		(PP-LOC (P 在)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (NP-PRD (NP (NP-PN (NR 鹅銮鼻))
+						    (NP (NN 东方)))
+						(QP (ADVP (AD 约))
+						    (QP (CD 一)
+							(CLP (M 公里))))
+						(NP (NN 海域))))))
+			    (NP (NN 处))))
+		(VP (VV 搁浅)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="loc">
+	在 *OP* *T*-1 鹅銮鼻 东方 约 一 公里 海域 处 
+	</arg>
+	<arg n="m" f="tmp">
+	下午 
+	</arg>
+	<arg n="m" f="adv">
+	不料 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

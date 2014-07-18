@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 背下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 memorizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (OD 第二)
+		    (CLP (M 天)))
+	    (NP-SBJ (NP (NN 姊妹))
+		    (NP (PN 俩)))
+	    (VP (VP (VV 得)
+		    (VP (ADVP (AD 全数))
+			(VP (VV 背下))))
+		(PU ，)
+		(CC 并且)
+		(VP (VV 能)
+		    (VP (VCD (VV 活用)
+			     (VV 造句)))))) 
+	</parse>
+	<arg n="0">
+	姊妹 俩 
+	</arg>
+	<arg n="m" f="adv">
+	全数 
+	</arg>
+	<arg n="m" f="tmp">
+	第二 天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

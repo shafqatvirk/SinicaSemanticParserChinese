@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 求大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 可惜))
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 野心勃勃)))
+			      (DEC 的)))
+		      (NP-PN (NR 韩国))
+		      (NP (NN 业者)))
+	      (VP (ADVP (AD 却))
+		  (ADVP (AD 仍))
+		  (ADVP (AD 一味))
+		  (VP (VV 求大)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 野心勃勃 的 韩国 业者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一味 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="adv">
+	  可惜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

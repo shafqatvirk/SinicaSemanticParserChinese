@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 退货 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="merchandise returned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 像是))
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (QP-SBJ (CD 一)
+					      (CLP (M 张)))
+				      (VP (QP-PRD (ADVP (AD 上))
+						  (QP (CD 百万)
+						      (CLP (M 元))))))
+				  (DEC 的)))
+			  (NP (NN 健康)
+			      (NN 床组))))
+	      (PU ，)
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 一旦))
+			      (VP (VV 拆封))))
+		  (ADVP (AD 就))
+		  (ADVP (AD 不))
+		  (VP (VV 能)
+		      (VP (VV 退货))))) 
+	  </parse>
+	  <arg n="1">
+	  像是 *OP* *T*-1 一 张 上 百万 元 的 健康 床组 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 一旦 拆封 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

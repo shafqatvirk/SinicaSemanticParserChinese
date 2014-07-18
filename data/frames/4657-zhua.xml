@@ -1,0 +1,149 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 决))
+		      (ADVP (AD 不))
+		      (VP (VV 能)
+			  (VP (VV 顾此失彼))))
+		  (PU ，)
+		  (VP (ADVP (AD 不))
+		      (VP (VV 能)
+			  (VP (ADVP (AD 单纯))
+			      (PP-DIR (P 就)
+				      (NP (NN 经济)))
+			      (VP (VV 抓)
+				  (NP-OBJ (NN 经济)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  经济 
+	  </arg>
+	  <arg n="m" f="dir">
+	  就 经济 
+	  </arg>
+	  <arg n="m" f="adv">
+	  单纯 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 坚持)
+	      (NP-OBJ (CP-APP (IP (NP-TPC (NP (NN 物质)
+					      (NN 文明)
+					      (CC 和)
+					      (NN 精神)
+					      (NN 文明))
+					  (NP (NN 建设)))
+				  (NP-SBJ (-NONE- *pro*))
+				  (VP (NP-ADV (QP (CD 两))
+					      (NP (NN 手)))
+				      (VP (VV 抓))))
+			      (DEC 的))
+		      (NP (NN 方针)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  物质 文明 和 精神 文明 建设 
+	  </arg>
+	  <arg n="m" f="adv">
+	  两 手 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 要)
+		      (VP (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DP (DT 这)
+						  (CLP (M 项)))
+					      (NP (NN 工作)))
+				      (VP (PP-MNR (P 作为)
+						  (NP (DNP (NP (NN 政治)
+							       (NN 体制)
+							       (NN 改革))
+							   (DEG 的))
+						      (QP (CD 一)
+							  (CLP (M 件)))
+						      (ADJP (JJ 大))
+						      (NP (NN 事))))
+					  (VP (MSP 来)
+					      (VP (VV 抓))))))
+			  (PU ，)
+			  (VP (VP (VV 结合)
+				  (NP-OBJ (NN 改革)))
+			      (PU 、)
+			      (VP (VV 精简)
+				  (NP-OBJ (NN 机构)))
+			      (VP (MSP 来)
+				  (VP (VV 推行)
+				      (NP-OBJ (NN 公务员)
+					      (NN 制度)))))))
+		  (PU ；)
+		  (VP (VV 要)
+		      (VP (VP (VV 形成)
+			      (NP-OBJ (DNP (NP (NN 公务员))
+					   (DEG 的))
+				      (NP (NN 新陈代谢)
+					  (NN 机制))))
+			  (PU ，)
+			  (VP (VV 使)
+			      (NP-OBJ (NN 青年)
+				      (NN 人才))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (DVP (VP (VA 不断))
+					   (DEV 地))
+				      (VP (VRD (VV 进入)
+					       (VV 到))
+					  (NP-OBJ (NN 公务员)
+						  (NN 队伍)
+						  (NN 当中)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  这 项 工作 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  作为 政治 体制 改革 的 一 件 大 事 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

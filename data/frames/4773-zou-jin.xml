@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 走进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 enters"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (ADVP (AD 近))
+		      (QP (CD 几)
+			  (CLP (M 年))))
+	      (NP-SBJ (QP (CD 一些))
+		      (NP (NN 中方)
+			  (NN 职员)))
+	      (VP (VV 走进)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (ADVP (AD 零星))
+					  (VP (VV 出现))))
+				  (DEC 的)))
+			  (NP (NN 外资)
+			      (NN 金融)
+			      (NN 机构))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 中方 职员 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 零星 出现 的 外资 金融 机构 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近 几 年 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (NN 移动)
+		      (NN 电话)
+		      (PU 、)
+		      (NN 电脑)
+		      (PU 、)
+		      (NN 网络))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 正在))
+		  (ADVP (AD 迅速))
+		  (VP (VV 走进)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 普通))
+				       (NP (NN 人)))
+				   (DEG 的))
+			      (NP (NN 生活)))))) 
+	  </parse>
+	  <arg n="0">
+	  移动 电话 、 电脑 、 网络 
+	  </arg>
+	  <arg n="1">
+	  普通 人 的 生活 
+	  </arg>
+	  <arg n="m" f="adv">
+	  迅速 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

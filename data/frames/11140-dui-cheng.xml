@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 堆成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="things arg0 piles"/>
+    <role argnum="2" argrole="thing arg1 is piled into being"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-DIR (PP (P 由)
+			    (NP (NN 大)))
+			(PP (P 到)
+			    (NP (NN 小))))
+		(VP (VV 堆成)
+		    (NP-OBJ (ADJP (JJ 小))
+			    (NP (NN 塔)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	小 塔 
+	</arg>
+	<arg n="m" f="dir">
+	由 大 到 小 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

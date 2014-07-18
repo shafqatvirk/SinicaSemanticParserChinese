@@ -1,0 +1,213 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 提及 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 mentions"/>
+    <role argnum="2" argrole="place arg1 is mentioned"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (ADVP (AD 直))
+		    (PP (P 到)
+			(NP (NP-PN (NR 民国))
+			    (NP (NT 六十八年)))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 许常惠))
+	    (VP (VP (VP (VV 到)
+			(NP-PN-OBJ (NR 三重)
+				   (NR 扶轮社)))
+		    (VP (VV 演讲)))
+		(PU ，)
+		(VP (DVP (NP (NN 满腹苦水))
+			 (DEV 地))
+		    (VP (VV 提及)
+			(NP-OBJ (DP (DT 此))
+				(NP (NN 事)))))
+		(PU ，)
+		(VP (ADVP (AD 没))
+		    (VP (VV 想到)
+			(IP-OBJ (LCP-SBJ (NP (NN 台))
+					 (LC 下))
+				(VP (ADVP (AD 竟))
+				    (VP (VE 有)
+					(NP-OBJ (NN 知音))))))))) 
+	</parse>
+	<arg n="0">
+	许常惠 
+	</arg>
+	<arg n="1">
+	此 事 
+	</arg>
+	<arg n="m" f="adv">
+	满腹苦水 地 
+	</arg>
+	<arg n="m" f="tmp">
+	直 到 民国 六十八年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 解释文))
+	    (VP (VP (VV 指出)
+		    (IP-OBJ (NP-PN-SBJ (NN 行政院))
+			    (VP (VE 有)
+				(NP-OBJ (NN 程序)
+					(NN 瑕疵)))))
+		(PU ，)
+		(VP (ADVP (AD 但))
+		    (ADVP (AD 未))
+		    (VP (VV 提及)
+			(NP-OBJ (NN 违宪)
+				(CC 或)
+				(NN 违法)))))) 
+	</parse>
+	<arg n="1">
+	违宪 或 违法 
+	</arg>
+	<arg n="2">
+	解释文 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 根据)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+					     (CP (IP (NP-SBJ (NN 晋人))
+						     (VP (MSP 所)
+							 (VP (VV 撰写)
+							     (NP-OBJ (-NONE- *T*-1)))))
+						 (DEC 的)))
+					 (NP-TTL (PU 《)
+						 (NP-PN (NR 华阳国))
+						 (NP (NN 志))
+						 (PU 》)))
+				     (LC 中))
+			    (VP (VV 提及)))))
+	    (PU ：)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VE 有)
+		    (IP-OBJ (NP-TPC (NP-APP (NP-PN (NR 蜀))
+					    (NP (NN 侯)))
+				    (NP-PN (NR 蚕丛)))
+			    (PU ，)
+			    (IP (NP-SBJ (PN 其)
+					(NN 目))
+				(VP (VV 纵)))
+			    (PU ，)
+			    (IP (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 始))
+				    (VP (VV 称)
+					(NP-OBJ (NN 王))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	*OP* 晋人 所 撰写 *T*-1 的 《 华阳国 志 》 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 黄春明))
+	    (VP (ADVP (AD 也))
+		(PP-LOC (P 在)
+			(LCP (NP-TTL (PU 〈)
+				     (NN 自序)
+				     (PU 〉))
+			     (LC 里)))
+		(VP (VV 提及)
+		    (IP-OBJ (NP-SBJ (PN 自己))
+			    (VP (ADVP (AD 也))
+				(VP (VV 开始)
+				    (VP (VV 步入)
+					(NP-OBJ (NN 老年))))))))) 
+	</parse>
+	<arg n="0">
+	黄春明 
+	</arg>
+	<arg n="1">
+	自己 也 开始 步入 老年 
+	</arg>
+	<arg n="2">
+	在 〈 自序 〉 里 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (QP (CD 一)
+		    (CLP (M 项)))
+		(CP (WHNP-3 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-3))
+			    (VP (PP-LOC (P 在)
+					(LCP (NP (NN 选战))
+					     (LC 中)))
+				(ADVP (AD 鲜少))
+				(VP (SB 被)
+				    (VP (VV 提及)))))
+			(DEC 的)))
+		(ADJP (JJ 隐晦))
+		(NP (NN 意义))) 
+	</parse>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="2">
+	在 选战 中 
+	</arg>
+	<arg n="m" f="adv">
+	鲜少 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 感触良深 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 has strong feelings about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (NN 其中))
+	    (NP-SBJ (NP (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 总其成)))
+					(DEC 的)))
+				(NP (NN 负责人)))
+			(NP-APP (NP-PN (NN 铁路局))
+				(NP (NN 工作)
+				    (NN 指挥)))
+			(NP-PN (NR 郑万经)))
+		    (CC 与)
+		    (NP (NP-APP (NP (NP-PN (NN 林务局))
+				    (NP (NN 复驶)
+					(NN 计划)))
+				(NP (NN 主持人)))
+			(NP-PN (NR 林墨山))))
+	    (VP (PP-DIR (P 对)
+			(NP (DNP (NP (ADJP (JJ 老))
+				     (NP (NN 火车)))
+				 (DEG 的))
+			    (NP (NN 维修)
+				(PU 、)
+				(NN 薪传))))
+		(PU ，)
+		(ADVP (AD 都))
+		(VP (VP (ADVP (AD 各))
+			(VP (VE 有)
+			    (NP-OBJ (NN 心得))))
+		    (PU ，)
+		    (VP (VV 感触良深))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 总其成 的 负责人 铁路局 工作 指挥 郑万经 与 林务局 复驶 计划 主持人 林墨山 
+	</arg>
+	<arg n="1">
+	对 老 火车 的 维修 、 薪传 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	其中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

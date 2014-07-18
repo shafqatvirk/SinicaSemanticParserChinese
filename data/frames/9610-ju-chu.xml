@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 举出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 cites"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-SBJ (NN 作者))
+	      (VP (VV 举出)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 买)
+					  (NP-OBJ (NN 房)))))
+			  (NP (NN 原则))))) 
+	  </parse>
+	  <arg n="0">
+	  作者 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 买 房 原则 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

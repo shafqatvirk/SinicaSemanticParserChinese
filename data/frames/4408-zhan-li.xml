@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 站立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 stands"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今天))
+	      (PU ，)
+	      (NP-SBJ (PN 我们))
+	      (VP (DVP (VP (VA 幸运))
+		       (DEV 地))
+		  (VP (VV 站立)
+		      (PP-LOC (P 在)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 先贤))
+					      (VP (VV 梦寐以求)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 理想)
+				      (NN 高地))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  在 *OP* 先贤 梦寐以求 *T*-1 的 理想 高地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  幸运 地 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

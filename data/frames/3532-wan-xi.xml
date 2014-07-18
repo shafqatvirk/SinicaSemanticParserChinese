@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惋惜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people feeling sorry"/>
+      <role argnum="1" argrole="entity arg0 feels sorry for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 大家))
+	      (VP (CC 既)
+		  (VP (PP-BNF (P 为)
+			      (NP (PN 他们)))
+		      (VP (VV 惋惜)))
+		  (PU ，)
+		  (CC 又)
+		  (VP (VV 觉得)
+		      (IP-OBJ (NP-SBJ (PN 这))
+			      (VP (VC 是)
+				  (NP-PRD (QP (CD 一)
+					      (CLP (M 个)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (ADVP (AD 非常))
+							  (VP (VV 值得)
+							      (NP-OBJ (NN 忧虑)))))
+						  (DEC 的)))
+					  (NP (NN 问题)))))))) 
+	  </parse>
+	  <arg n="0">
+	  大家 
+	  </arg>
+	  <arg n="1">
+	  为 他们 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

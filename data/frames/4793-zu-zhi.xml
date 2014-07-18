@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 阻止 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="preventer"/>
+      <role argnum="1" argrole="activity prevented"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 能)
+		      (VP (ADVP (AD 顺利))
+			  (VP (VV 查清)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (ADVP (AD 已))
+						      (VP (VV 发现)
+							  (NP-OBJ (-NONE- *T*-1)))))
+					      (DEC 的)))
+				      (NP (NN 核)
+					  (NN 材料)
+					  (NN 走私)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (ADVP (AD 及时))
+			  (VP (VV 阻止)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VA 新)))
+					      (DEC 的)))
+				      (NP (NN 核)
+					  (NN 材料)
+					  (NN 走私)
+					  (NN 活动))))))
+		  (PU ”)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  及时 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-2)->(核材料走私活动) 新 的 核 材料 走私 活动 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="preventer"/>
+      <role argnum="1" argrole="party prevented"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 同时))
+		  (ADVP (AD 将))
+		  (VP (VV 阻止)
+		      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (VV 欠缴)
+					      (NP-OBJ (NN 税款))))
+				      (DEC 的)))
+			      (NP (NN 纳税人)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 出境)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  同时 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-3)->(纳税人) 欠缴 税款 的 纳税人 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 出境 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

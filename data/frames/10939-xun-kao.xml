@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 熏烤 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 smokes and bakes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然後))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 用)
+		    (NP-OBJ (NN 甘蔗)
+			    (NN 皮)
+			    (PU 、)
+			    (NN 木炭)
+			    (PU 、)
+			    (NN 橘子)
+			    (NN 皮)
+			    (PU 、)
+			    (NN 稻壳)
+			    (ETC 等))
+		    (PP (P 作为)
+			(NP (NN 燃烧)
+			    (NN 材料))))
+		(VP (VV 熏烤)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	然後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

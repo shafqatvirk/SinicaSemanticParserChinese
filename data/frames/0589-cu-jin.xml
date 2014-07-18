@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 促进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause/agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 澳))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 继续)
+			  (VP (VV 促进)
+			      (NP-OBJ (DNP (NP (NP-PN (NR 澳)
+						      (NR 中))
+					       (NP (NN 经济)))
+					   (DEG 的))
+				      (NP (NN 互补性)
+					  (NN 合作)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 开辟)
+			  (NP-OBJ (NP (NP-PN (NR 澳)
+					     (NR 华))
+				      (NP (NN 商界)))
+				  (DNP (PP (P 与)
+					   (NP-PN (NR 中国)))
+				       (DEG 的))
+				  (NP (NN 联系))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  澳 政府 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  澳 中 经济 的 互补性 合作 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 外商)
+			  (NN 投资))
+		  (VP (VV 促进)
+		      (NP-OBJ (NP-PN (NR 中国))
+			      (NP (NN 进出口)
+				  (NN 贸易)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 快速))
+			      (VP (VV 发展)))))) 
+	  </parse>
+	  <arg n="0">
+	  外商 投资 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中国 进出口 贸易 	  	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 快速 发展 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="cause/agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ-3 (CP-APP (IP (LCP-SBJ (NP (NN 体育)
+					     (CC 和)
+					     (NN 经济))
+					 (LC 之间))
+				(VP (ADVP (AD 相互))
+				    (VP (VV 促进))))
+			    (DEC 的))
+		    (NP (NN 关系))) 
+	  </parse>
+	  <arg n="0">
+	  体育 和 经济 之间 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  相互 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

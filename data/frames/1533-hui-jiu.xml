@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 绘就 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="designer"/>
+      <role argnum="1" argrole="plan,design"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 深圳)
+			     (NR 沙头角)
+			     (NN 保税区))
+		  (VP (VV 绘就)
+		      (NP-OBJ (NP (PU “)
+				  (NT 九五)
+				  (PU ”))
+			      (ADJP (JJ 新))
+			      (NP (NN 规划))))) 
+	  </parse>
+	  <arg n="0">
+	  深圳 沙头角 保税区 
+	  </arg>
+	  <arg n="1">
+	  “ 九五 ” 新 规划 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

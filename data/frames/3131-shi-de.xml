@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 使得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="thing affected"/>
+      <role argnum="2" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 使得)
+		      (NP-OBJ (LCP (NP (NN 世界))
+				   (LC 上))
+			      (DNP (NP (NN 能源)
+				       (NN 投资)
+				       (NN 开放))
+				   (DEG 的))
+			      (NP (NN 地区)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 增加)
+			      (AS 了)
+			      (LCP-OBJ (QP (CD 三分之一))
+				       (LC 以上))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  这 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  世界 上 能源 投资 开放 的 地区 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 增加 了 三分之一 以上 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

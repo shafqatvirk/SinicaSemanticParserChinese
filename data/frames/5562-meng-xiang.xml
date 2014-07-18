@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 梦想 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 dreams of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 年纪))
+				(VP (VV 相仿)))
+			    (DEC 的)))
+		    (NP (NN 上班族)))
+	    (PU ，)
+	    (VP (ADVP (AD 却))
+		(VP (VV 梦想)
+		    (AS 著)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (ADVP (AD 早点))
+				    (VP (VV 退休)))
+				(PU ，)
+				(VP (VP (VV 去)
+					(NP-OBJ (NR 印度)))
+				    (VP (VV 访求)
+					(NP-OBJ (NN 灵师))))
+				(PU 、)
+				(VP (VV 投入)
+				    (NP-OBJ (NN 义工)
+					    (NN 组织)))
+				(PU ，)
+				(VP (VV 作)
+				    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (PN 自己))
+							(VP (VV 爱)
+							    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								    (VP (VV 做)
+									(NP-OBJ (-NONE- *T*-2)))))
+							(DEC 的))))
+					    (NP (NN 事))))))))) 
+	</parse>
+	<arg n="0">
+	许多 *OP* *T*-1 年纪 相仿 的 上班族 
+	</arg>
+	<arg n="1">
+	*PRO* 早点 退休 ， 去 印度 访求 灵师 、 投入 义工 组织 ， 作 *OP* 自己 爱 *PRO* 做 *T*-2 的 事 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (CP-CND (ADVP (CS 尽管))
+			(IP (NP-PN-SBJ (NR 台)
+				       (NR 澎)
+				       (NR 金)
+				       (NR 马))
+			    (VP (ADVP (AD 只))
+				(VP (VC 是)
+				    (NP-PRD (DNP (LCP (NP-PN (NR 太平洋))
+						      (LC 边))
+						 (DEG 的))
+					    (NP (NN 蕞尔小岛)))))))
+		(PU ，)
+		(CP-CND (ADVP (CS 只要))
+			(IP (NP-SBJ (QP (CD 两千三百万))
+				    (NP (NN 同胞)))
+			    (VP (VP (ADVP (AD 不))
+				    (VP (VV 畏)
+					(NP-OBJ (NN 艰难))))
+				(PU 、)
+				(VP (VSB (VV 携手)
+					 (VV 向前))))))
+		(PU ，)
+		(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (PN 我们))
+				    (VP (VV 梦想)
+					(NP-OBJ (-NONE- *T*-1))))
+				(DEC 的)))
+			(NP (NN 地图)))
+		(VP (ADVP (AD 将))
+		    (VP (VV 会)
+			(VP (VP (ADVP (AD 无限))
+				(VP (VA 远大)))
+			    (PU ，)
+			    (VP (ADVP (AD 一直))
+				(VP (VV 延伸)
+				    (PP (P 到)
+					(NP (DNP (NP (NN 地平线))
+						 (DEG 的))
+					    (NP (NN 尽头)))))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

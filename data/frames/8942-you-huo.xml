@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 诱惑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 lures arg1 into doing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 除了)
+		      (IP (NP-SBJ (NP (NN 商业)
+				      (NN 社会))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 强大)))
+					  (DEC 的)))
+				  (NP (NN 广告)
+				      (CC 与)
+				      (NN 推销)
+				      (NN 手法)))
+			  (VP (PU 「)
+			      (VV 诱惑)
+			      (PU 」)
+			      (AS 著)
+			      (NP-OBJ (NN 男人))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 踏入)
+				      (NP-OBJ (ADJP (JJ 美丽))
+					      (NP (NN 陷阱))))))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 人)))
+	      (VP (VRD (VV 观察)
+		       (VV 到))
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (DNP (NP (IP-APP (NP-SBJ (NN 男士))
+						   (VP (VV 爱美)))
+					   (NP (NN 风气)))
+				       (DEG 的))
+				  (ADJP (JJ 重要))
+				  (NP (NN 推手)))
+			  (PU ，)
+			  (VP (ADVP (AD 常))
+			      (VP (VC 是)
+				  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (PP (P 与)
+							      (NP (PN 自己)))
+							  (ADVP (AD 最))
+							  (VP (VA 亲密))))
+						  (DEC 的)))
+					  (NP (NN 女人)))))))) 
+	  </parse>
+	  <arg n="0">
+	  商业 社会 *OP* *T*-1 强大 的 广告 与 推销 手法 
+	  </arg>
+	  <arg n="1">
+	  男人 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 踏入 美丽 陷阱 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

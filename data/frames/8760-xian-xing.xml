@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 现形 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 causes to show true colors"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 透过)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 影片))
+				      (VP (VCD (VV 还原)
+					       (VV 现形)))))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (VV 学会)
+		  (AS 了)
+		  (IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP-WH (AD 如何))
+				(VP (VP (VV 拍)
+					(NP-OBJ (NN 卡通)))
+				    (PU 、)
+				    (VP (VV 画)
+					(NP-OBJ (NN 卡通)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  影片 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

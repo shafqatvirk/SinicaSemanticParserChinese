@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 品评 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 comments on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 纽西兰人))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (MSP 所)
+					      (VP (VV 购)
+						  (NP-OBJ (-NONE- *T*-3)))))
+				      (DEC 之)))
+			      (NP (NN 物))))
+		  (ADVP (AD 总是))
+		  (VP (VV 品评)
+		      (NP-OBJ (NN 优点))))) 
+	  </parse>
+	  <arg n="0">
+	  纽西兰人 
+	  </arg>
+	  <arg n="1" f="psr">
+	  对 *OP* *pro* 所 购 *T*-3 之 物 
+	  </arg>
+	  <arg n="1" f="pse">
+	  优点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  总是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="quantity"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (-NONE- *T*-1))
+                          (VP (VA 陡峭)))
+                      (DEC 的)))
+              (NP (NN 坡壁)))
+      (VP (VV 不下)
+          (QP-OBJ (CD ６０多)
+                  (CLP (M 度))))))
+	</parse>
+	<arg n="0"> *OP* (*T*-1)->(坡壁) 陡峭 的 坡壁 </arg>
+	<V/>
+	<arg n="1"> ６０多 度 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

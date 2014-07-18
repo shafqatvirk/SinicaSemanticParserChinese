@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有利於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 benefits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NP-PN (NR 台湾))
+			    (NP (ADJP (JJ 高))
+				(NP (NN 科技)))
+			    (NP (NN 产业)))
+		    (VP (VV 移师)
+			(NP-OBJ (NN 大陆))))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 将))
+		    (VP (VV 有利於)
+			(NP-OBJ (DNP (NP (NP (NT 未来))
+					 (NP (PU 「)
+					     (NN 华人)
+					     (NN 经济圈)
+					     (PU 」)))
+				     (DEG 的))
+				(NP (NN 建构)))))
+		(PU ，)
+		(CC 并)
+		(VP (ADVP (AD 可望))
+		    (VP (VV 提高)
+			(NP-OBJ (NP (QP (CD 两))
+				    (NP (NN 岸)))
+				(DNP (PP (P 在)
+					 (LCP (NP (NN 国际)
+						  (NN 经贸)
+						  (NN 事务))
+					      (LC 上)))
+				     (DEG 的))
+				(NP (NN 决策)
+				    (NN 地位))))))) 
+	</parse>
+	<arg n="0">
+	台湾 高 科技 产业 移师 大陆 
+	</arg>
+	<arg n="1">
+	未来 「 华人 经济圈 」 的 建构 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 一旦))
+		    (IP (NP-SBJ (CP-APP (IP (NP-TMP (QP (OD 二十一))
+						    (NP (NN 世纪)))
+					    (NP-SBJ (NN 经贸))
+					    (VP (VE 无)
+						(NP-OBJ (NN 国界))))
+					(DEC 的))
+				(NP (NN 趋势)))
+			(VP (VV 形成))))
+	    (PU ，)
+	    (NP-SBJ (NP (QP (CD 两))
+			(NP (NN 岸)))
+		    (NP (NN 三通)))
+	    (VP (ADVP (AD 将))
+		(VP (VV 有利於)
+		    (NP-OBJ (NN 企业))
+		    (IP (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 扩展)
+				(NP-OBJ (DNP (NP (NN 经贸))
+					     (DEG 的))
+					(NP (NN 空间)))))
+			(PU ，)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 促进)
+				(NP-OBJ (NN 产业)
+					(NN 升级)))))))) 
+	</parse>
+	<arg n="0">
+	两 岸 三通 
+	</arg>
+	<arg n="1">
+	企业 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 扩展 经贸 的 空间 ， *PRO* 促进 产业 升级 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<arg n="m" f="cnd">
+	一旦 二十一 世纪 经贸 无 国界 的 趋势 形成 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

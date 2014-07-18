@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 书写 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing written"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VP (VV 书写)
+					      (NP-OBJ (-NONE- *T*-1)))
+					  (CC 及)
+					  (VP (VV 发出)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (NN 信件)))
+		      (NP (NN 数量)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 不))
+		  (VP (VV 受)
+		      (NP-OBJ (NN 限制))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

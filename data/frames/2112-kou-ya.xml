@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扣押 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity detained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 要)
+	      (VP (PP-DIR (P 对)
+			  (NP (PN 其)))
+		  (VP (VV 采取)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 暂时))
+					      (VP (VP (VV 扣押)
+						      (NP-OBJ (-NONE- *RNR*-6)))
+						  (PU 、)
+						  (VP (VV 查封)
+						      (NP-OBJ-6 (NP (PN 其))
+								(NP (NN 商品)
+								    (CC 和)
+								    (NN 财产)))))))
+				      (DEC 的))
+			      (NP (NN 措施)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-6 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

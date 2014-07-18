@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, causer"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (DNP (PP (P 和)
+					   (NP-PN (PU “)
+						  (NN 小狗)
+						  (PU ”)))
+				       (DEG 的))
+				  (NP (NN 合影)))
+			  (VP (VP (VV 放大))
+			      (PU ，)
+			      (VP (VV 挂)
+				  (PP-LOC (P 在)
+					  (LCP (NP (NN 墙))
+					       (LC 上)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  和 “ 小狗 ” 的 合影 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

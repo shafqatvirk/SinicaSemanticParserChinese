@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 关乎 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 concerns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (PN 他))
+				(VP (VV 看到)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NN 冲突点)))
+	    (VP (VP (ADVP (AD 却))
+		    (ADVP (AD 不))
+		    (VP (VC 是)
+			(NP-PRD (DNP (NP-PN (NR 民进党))
+				     (DEG 的))
+				(NP (NN 台独)
+				    (NN 倾向)))))
+		(PU ，)
+		(VP (ADVP (AD 而))
+		    (VP (VC 是)
+			(NP-PRD (LCP-APP (NP (NP (ADJP (JJ 黑))
+						 (NP (NN 金)))
+					     (NP (NN 政治)))
+					 (LC 上))
+				(PU ，)
+				(NP (ADVP (AD 如))
+				    (NP (NP-APP (NN 证交税)
+						(ETC 等))
+					(PU ，)
+					(CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (VV 可能)
+							(VP (VV 关乎)
+							    (NP-OBJ (NP (QP (CD 一些))
+									(NP (NN 立委)))
+								    (NP (NN 利益))))))
+						(DEC 的)))
+					(NP (NN 法案))))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	一些 立委 利益 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

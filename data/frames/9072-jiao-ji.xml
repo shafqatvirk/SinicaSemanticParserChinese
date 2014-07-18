@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="things coming together"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 又))
+		    (VP (VE 有)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (-NONE- *T*-2))
+					(VP-WH (VV 怎样))))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 悲喜))
+					    (VP (VV 交集)))
+					(DEC 的)))
+				(NP (NN 台商)
+				    (NN 故事)))))) 
+	  </parse>
+	  <arg n="0">
+	  悲喜 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

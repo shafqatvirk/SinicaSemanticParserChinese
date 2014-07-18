@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 封杀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 blocks and kills"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 之前))
+	    (NP-TPC (CP-APP (IP (NP-SBJ (NP-PN-APP (NR 国)
+						   (PU 、)
+						   (NR 民))
+					(QP (CD 两))
+					(ADJP (JJ 大))
+					(NP (NN 党)))
+				(VP (VV 封杀)
+				    (NP-OBJ (NN 国代)
+					    (NN 延任案))))
+			    (DEC 的))
+		    (NP (NN 政策)
+			(NN 宣示)))
+	    (PU ，)
+	    (NP-SBJ (NN 国代))
+	    (VP (ADVP (AD 显然))
+		(VP (VV 充耳未闻)))) 
+	</parse>
+	<arg n="0">
+	国 、 民 两 大 党 
+	</arg>
+	<arg n="1">
+	国代 延任案 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

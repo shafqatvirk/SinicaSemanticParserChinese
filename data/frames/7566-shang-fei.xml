@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上肥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 gives fertilizer to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可以)
+		(VP (VV 用来)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-BNF (P 给)
+					(NP (NN 花草)
+					    (NN 果树)))
+				(VP (VV 上肥))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	给 花草 果树 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

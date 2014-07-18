@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="experience"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (NP-TMP (NT 现在))
+		  (PP-BNF (P 为)
+			  (IP (NP-SBJ (PN 自己))
+			      (VP (VC 是)
+				  (NP-PRD (QP (CLP (M 个)))
+					  (NP-PN (NR ＮＢＡ))
+					  (NP (NN 球员))))))
+		  (VP (MSP 而)
+		      (VP (VV 感到)
+			  (NP-OBJ (NN 恶心)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  恶心 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 自己 是 个 ＮＢＡ 球员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

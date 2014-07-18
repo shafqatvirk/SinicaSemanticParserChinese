@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 锺情 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 loves"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 泰雅族人))
+	      (VP (VP (ADVP (AD 特别))
+		      (VP (VV 锺情)
+			  (NP-OBJ (NN 螺钱贝))))
+		  (PU ，)
+		  (VP (VV 用作)
+		      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 勇士))
+					  (VP (ADVP (AD 才))
+					      (VP (VV 能)
+						  (VP (VV 佩带)
+						      (NP-OBJ (-NONE- *T*-3))))))
+				      (DEC 的)))
+			      (QP (CD 一)
+				  (CLP (M 种)))
+			      (NP (NN 饰品)))))) 
+	  </parse>
+	  <arg n="0">
+	  泰雅族人 
+	  </arg>
+	  <arg n="1">
+	  螺钱贝 
+	  </arg>
+	  <arg n="m" f="adv">
+	  特别 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

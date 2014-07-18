@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 盘踞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="occupant"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LOC (P 在)
+			  (NP (NN 大陆)
+			      (NN 版图)
+			      (NN 上方)))
+		  (PU ，)
+		  (PP-LOC (P 沿)
+			  (NP (NP (NN 东北)
+				  (PU 、)
+				  (NR 华北)
+				  (CC 至)
+				  (NN 西北))
+			      (NP (NN 国境线))))
+		  (PU ，)
+		  (VP (VV 盘踞)
+		      (AS 着)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 条)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (NN 口))
+					  (VP (VV 衔)
+					      (NP-OBJ (NN 明珠))))
+				      (DEC 的)))
+			      (ADJP (JJ 巨))
+			      (NP (NN 龙)))))) 
+	  </parse>
+	  <arg n="0">
+	  一 条 *OP* *T*-1 口 衔 明珠 的 巨 龙 
+	  </arg>
+	  <arg n="1">
+	  在 大陆 版图 上方 
+	  </arg>
+	  <arg n="1">
+	  沿 东北 、 华北 至 西北 国境线 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

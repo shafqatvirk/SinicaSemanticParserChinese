@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 成熟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (NP-ADV (-NONE- *T*-1))
+				      (VP (VV 遣返)
+					  (NP-OBJ (NN 难民)))))
+			      (DEC 的)))
+		      (NP (NN 条件)))
+	      (VP (ADVP (AD 日趋))
+		  (VP (VA 成熟)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *pro* *T*-1 遣返 难民 的 条件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  日趋 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

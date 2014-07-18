@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 汇款 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="remitter"/>
+      <role argnum="1" argrole="remitting to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 诸如))
+		      (VP (VV 禁止)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 旅居)
+						  (NP-PN-OBJ (NR 美国))))
+					  (DEC 的)))
+				  (NP-PN (NR 古巴))
+				  (NP (NN 侨民)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-DIR (P 向)
+					  (NP (NN 国内)
+					      (NN 家属)))
+				  (VP (VP (VV 汇款))
+				      (CC 和)
+				      (VP (VV 邮寄)
+					  (NP-OBJ (NN 物品))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  向 国内 家属 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

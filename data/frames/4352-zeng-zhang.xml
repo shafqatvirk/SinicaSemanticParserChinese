@@ -1,0 +1,154 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增长 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="extent arg0 is increased"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT-SHORT 一)
+		      (CC 至)
+		      (NT 十月))
+	      (NP-SBJ (NN 进出口)
+		      (NN 总额))
+	      (VP (VP (QP-PRD (CD 六十四点一亿)
+			      (CLP (M 美元))))
+		  (PU ，)
+		  (VP (VV 增长)
+		      (QP-EXT (CD 百分之十三点六))))) 
+	  </parse>
+	  <arg n="0">
+	  进出口 总额 
+	  </arg>
+	  <arg n="1">
+	  百分之十三点六 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一 至 十月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 中国)
+			 (CC 与)
+			 (NR 韩国))
+	      (NP-SBJ (ADJP (JJ 双边))
+		      (NP (NN 贸易额)))
+	      (VP (PP-TMP (-NONE- *T*-1))
+		  (ADVP (AD 大幅))
+		  (VP (VV 增长)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  双边 贸易额 
+	  </arg>
+	  <arg n="0" f="psr">
+	  中国 与 韩国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大幅 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="level arg0 grows to"/>
+      <role argnum="2" argrole="original level of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 该))
+			  (NP (NN 公司)))
+		      (NP (NN 营业额)))
+	      (VP (PP-DIR (P 从)
+			  (QP (DNP (NP (NT 过去))
+				   (DEG 的))
+			      (QP (CD 五千万)
+				  (CLP (M 美元)))))
+		  (VP (VRD (VV 增长)
+			   (VV 到))
+		      (QP-OBJ (DNP (NP (NT 去年))
+				   (DEG 的))
+			      (QP (CD 二十亿)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  该 公司 营业额 
+	  </arg>
+	  <arg n="1">
+	  去年 的 二十亿 美元 
+	  </arg>
+	  <arg n="2">
+	  从 过去 的 五千万 美元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 西非))
+			  (NP (NN 经济)))
+		      (CC 和)
+		      (NP (DNP (NP (NP-PN (NN 货币)
+					  (NN 联盟))
+				   (DP (DT 各))
+				   (NP (NN 成员国)))
+			       (DEG 的))
+			  (ADJP (JJ 平均))
+			  (ADJP (JJ 年))
+			  (NP (NN 经济)
+			      (NN 增长率))))
+	      (VP (VP (NP-TMP (NT １９９６年))
+		      (ADVP (AD 已))
+		      (VP (VRD (VV 恢复)
+			       (VV 到))
+			  (QP-OBJ (CD 百分之五点九))))
+		  (PU ，)
+		  (VP (NP-TMP (NT １９９７年))
+		      (VP (VRD (VV 增长)
+			       (VV 到))
+			  (QP-OBJ (CD 百分之六点三)))))) 
+	  </parse>
+	  <arg n="0">
+	  西非 经济 和 货币 联盟 各 成员国 的 平均 年 经济 增长率 
+	  </arg>
+	  <arg n="1">
+	  百分之六点三 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９９７年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

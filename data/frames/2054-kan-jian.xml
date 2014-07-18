@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看见 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity seen"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 现在))
+	      (NP-SBJ (PN 那里))
+	      (VP (ADVP (AD 已经))
+		  (ADVP (AD 很))
+		  (ADVP (AD 难))
+		  (VP (VV 看见)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 大)))
+				      (DEC 的)))
+			      (ADJP (JJ 野生))
+			      (NP (NN 动物)))))
+	      (SP 了)) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 大 的 野生 动物 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 难 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="loc">
+	  那里
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

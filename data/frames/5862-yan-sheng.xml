@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 衍生 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 generates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *pro*))
+			(VP (LCP-TMP (NP (NN 事))
+				     (LC 後))
+			    (VP (VV 衍生)
+				(NP-OBJ (-NONE- *T*-1)))))
+		    (DEC 的)))
+	    (NP (NN 问题))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="tmp">
+	事 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 知识)
+		    (NN 细胞))
+	    (VP (VP (VV 置身)
+		    (NP-OBJ (NN 其中)))
+		(PU ，)
+		(VP (VV 会)
+		    (VP (VP (ADVP (AD 自动))
+			    (VP (VV 分裂)))
+			(PU 、)
+			(VP (VV 连结))
+			(PU 、)
+			(VP (VV 衍生))
+			(PU 、)
+			(VP (ADVP (AD 无限))
+			    (VP (VV 复制))))))) 
+	</parse>
+	<arg n="0">
+	知识 细胞 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 衍生)))
+			    (DEC 的)))
+		    (NP (NN 问题)))
+	    (VP (VV 层出不穷))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

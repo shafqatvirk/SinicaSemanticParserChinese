@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 滞后于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 lags behind"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 交通)
+		      (NN 运输))
+	      (VP (VV 滞后于)
+		  (NP-OBJ (NN 经济)
+			  (NN 发展)))) 
+	  </parse>
+	  <arg n="0">
+	  交通 运输 
+	  </arg>
+	  <arg n="1">
+	  经济 发展 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

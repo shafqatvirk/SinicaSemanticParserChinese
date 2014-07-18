@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 悦 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity being happy"/>
+    <role argnum="1" argrole="entity who pleases arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 千百)
+			 (CLP (M 年)))
+		     (LC 来))
+	    (PU 「)
+	    (NP-SBJ (NN 女))
+	    (VP (PP-BNF (P 为)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 悦)
+					(NP-OBJ (PN 己)))))
+			    (NP (NN 者))))
+		(VP (VV 容)))
+	    (PU 」)) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	己 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 行)
+			(NP-OBJ (NN 仁政))))
+	    (VP (ADVP (AD 必))
+		(VP (VV 能)
+		    (VP (VP (VV 使)
+			    (PU 「)
+			    (NP-OBJ (NN 近者))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 悦))))
+			(PU 、)
+			(VP (NP-OBJ (NN 远者))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 来)))
+			    (PU 」)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

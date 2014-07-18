@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遗失 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 loses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (DNP (NP (PN 我们))
+			      (DEG 的))
+			 (NP (NN 亲朋好友)))
+		     (LC 之中))
+	    (PU ，)
+	    (VP (PP-ADV (ADVP (AD 每))
+			(PP (P 隔)
+			    (QP (CD 几)
+				(CLP (M 天)))))
+		(ADVP (AD 就))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (VV 遗失)
+				(NP-OBJ (NN 钱包)
+					(PU 、)
+					(NN 文件))))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="1">
+	钱包 、 文件 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 要)
+		    (VP (VV 让)
+			(NP-OBJ (NN 国片))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不))
+				(VP (VV 遗失)
+				    (PP (P 在)
+					(LCP (NP (NN 洪流))
+					     (LC 中))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="loc">
+	在 洪流 中 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

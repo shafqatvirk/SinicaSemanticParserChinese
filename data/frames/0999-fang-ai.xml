@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 妨碍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="impediment"/>
+      <role argnum="1" argrole="thing hindered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 包括)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 解决)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 妨碍)
+						      (NP-OBJ (NN 经贸)
+							      (NN 合作)
+							      (NN 发展))))
+					      (DEC 的)))
+				      (NP (NN 交通)
+					  (NN 运输)
+					  (NN 问题))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  经贸 合作 发展 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

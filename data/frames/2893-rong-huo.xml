@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 荣获 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing received"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-DIR (P 向)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 荣获)
+					  (NP-OBJ (NP (NT 今年))
+						  (NP-PN (NR 麦格赛赛)
+							 (NN 奖)))))
+				  (DEC 的)))
+			  (QP (CD ６)
+			      (CLP (M 名)))
+			  (ADJP (JJ 杰出))
+			  (NP (NN 人士))))
+	      (VP (VV 颁发)
+		  (AS 了)
+		  (NP-OBJ (NN 奖章)
+			  (PU 、)
+			  (NN 奖金)
+			  (CC 和)
+			  (NN 证书)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  今年 麦格赛赛 奖 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

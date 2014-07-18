@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重作 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 redoes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VP (PP-DIR (P 对)
+			    (NP (DNP (NP-TTL (PU 《)
+					     (NN 秋月)
+					     (PU 》))
+				     (DEG 的))
+				(NP (NN 声音)
+				    (NN 效果))))
+		    (ADVP (AD 很))
+		    (ADVP (AD 不))
+		    (VP (VA 满意)))
+		(PU ，)
+		(VP (ADVP (AD 於是))
+		    (VP (VP (VV 到)
+			    (NP-PN-OBJ (NR 澳洲)))
+			(VP (VV 重作)))))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="m" f="adv">
+	於是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

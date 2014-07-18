@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 试想 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 imagines"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 试想)
+		(IP-OBJ (NP-TMP (NT 十一世纪))
+			(NP-PN-SBJ (NR 马可波罗))
+			(VP (NP-ADV (NN 东))
+			    (VP (VV 游)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	十一世纪 马可波罗 东 游 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

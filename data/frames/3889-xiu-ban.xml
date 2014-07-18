@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 休班 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 工作)
+			       (NN 安排))
+			   (DEG 的))
+		      (NP (NN 协议)))
+	      (VP (ADVP (AD 一般))
+		  (VP (VV 应)
+		      (VP (VV 包括)
+			  (NP-OBJ (NP (DNP (NP (NN 上班))
+					   (DEG 的))
+				      (NP (NN 规定)))
+				  (PU 、)
+				  (NP (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (PP-TMP (P 在)
+							      (NP (NN 工作)
+								  (NN 期间)))
+						      (ADVP (AD 提早))
+						      (VP (VV 休班))))
+					      (DEC 的))
+				      (NP (NN 规定)))
+				  (PU 、)
+				  (NP (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (VV 复工)))
+					      (DEC 的))
+				      (NP (NN 规定)))
+				  (CC 和)
+				  (NP (NP (DNP (NP (NN 工资))
+					       (DEG 的))
+					  (NP (NN 计算)))
+				      (NP (NN 方法)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  提早 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 工作 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 签收 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing receipt of which acknowledged"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 取得)
+	      (AS 了)
+	      (NP-OBJ (NP (DNP (NP (NN 文件)
+				   (NN 送递))
+			       (DEG 的))
+			  (NP (NN 快件)
+			      (NN 号码)))
+		      (CC 和)
+		      (NP (CP-APP (IP (NP-PN-SBJ (QP (OD 第一))
+						 (NP (NN 国民)
+						     (NN 银行)))
+				      (VP (VV 签收)))
+				  (DEC 的))
+			  (NP (NN 证据))))) 
+	  </parse>
+	  <arg n="0">
+	  第一 国民 银行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

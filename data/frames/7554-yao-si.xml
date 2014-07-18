@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 咬死 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (IP-TTL-APP (PU 《)
+					 (NP-SBJ (-NONE- *pro*))
+					 (VP (ADVP (AD 别))
+					     (VP (LB 被)
+						 (IP-OBJ (NP-SBJ (NT 千禧)
+								 (NN 虫))
+							 (VP (VV 咬死)))))
+					 (PU 》))
+			     (NP (DP (DT 这)
+				     (CLP (M 本)))
+				 (NP (NN 书))))
+			 (LC 中)))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NN 作者))
+		    (NP-PN (NR 弗莱契)))
+	    (VP (VP (VV 用)
+		    (IP-OBJ (PU 「)
+			    (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 换)
+				(NP-OBJ (NN 灯泡)))
+			    (PU 」)))
+		(VP (MSP 来)
+		    (VP (VV 比喻)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 抓)
+				    (NP-OBJ (NT 千禧)
+					    (NN 虫)))))))) 
+	</parse>
+	<arg n="0">
+	千禧 虫 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	别 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

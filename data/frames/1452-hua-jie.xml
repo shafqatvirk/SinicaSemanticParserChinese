@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 化解 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 各))
+		      (NP (NN 地)))
+	      (VP (VV 要)
+		  (VP (VP (VV 防范)
+			  (NP-OBJ (-NONE- *RNR*-1)))
+		      (CC 和)
+		      (VP (VV 化解)
+			  (NP-OBJ-1 (NN 农村)
+				    (NN 金融)
+				    (NN 风险)))))) 
+	  </parse>
+	  <arg n="0">
+	  各 地 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  农村 金融 风险 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １１月)
+		      (NN 中旬))
+	      (NP-SBJ (NP-PN (NR 伊拉克))
+		      (NP (NN 武器)
+			  (NN 核查)
+			  (NN 危机)))
+	      (VP (VV 化解))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  １１月 中旬 	  
+	  </arg>
+	  <arg n="1">
+	  伊拉克 武器 核查 危机 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

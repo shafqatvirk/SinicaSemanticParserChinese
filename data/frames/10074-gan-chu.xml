@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赶出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 drives arg1 out of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (ADVP (AD 就))
+		    (PP (P 在)
+			(LCP (UCP (IP (NP-SBJ (PN 她))
+				      (VP (VV 比手画脚)))
+				  (CC 和)
+				  (NP (DNP (NP (NN 女儿))
+					   (DEG 的))
+				      (NP (NN 嚎啕大哭声))))
+			     (LC 中))))
+	    (PU ，)
+	    (NP-SBJ (PN 我))
+	    (VP (SB 被)
+		(VP (VV 赶出)
+		    (LCP-OBJ (NP (NN 门))
+			     (LC 外))))) 
+	</parse>
+	<arg n="1">
+	我 
+	</arg>
+	<arg n="2">
+	门 外 
+	</arg>
+	<arg n="m" f="loc">
+	就 在 她 比手画脚 和 女儿 的 嚎啕大哭声 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

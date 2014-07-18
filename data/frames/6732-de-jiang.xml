@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 得奖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="award winner"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (QP-ADV (OD 第一)
+				    (CLP (M 次)))
+			    (VP (VV 写)
+				(NP-OBJ (NN 报导)
+					(NN 文学))))
+			(VP (ADVP (AD 就))
+			    (DVP (VP (PU 「)
+				     (VA 迷迷糊糊)
+				     (PU 」)))
+			    (VP (VV 得奖)))))
+	    (PU ，)
+	    (VP (VV 让)
+		(NP-PN-OBJ (NR 邓相扬))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 倍感)
+			(NP-OBJ (NN 压力)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	「 迷迷糊糊 」 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 makes/causes to be bigger"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 西藏)
+			 (NN 自治区))
+	      (VP (VP (PP-LOC (P 在)
+			      (LCP (NP (DNP (NP (NN 中央)
+						(NN 政府))
+					    (DEG 的))
+				       (NP (NN 支持)))
+				   (LC 下)))
+		      (PU ，)
+		      (ADVP (AD 不断))
+		      (VP (VV 增大)
+			  (NP-OBJ (NN 投资)
+				  (NN 力度))))
+		  (PU ，)
+		  (VP (MSP 以)
+		      (VP (VV 加快)
+			  (NP-OBJ (NP (DNP (NP (NP (PU “)
+						   (NP (QP (CD 三))
+						       (NP (NN 纵)))
+						   (NP (QP (CD 两))
+						       (NP (NN 横)))
+						   (PU ”))
+					       (NP (NN 公路网)))
+					   (DEG 的))
+				      (NP (NN 整治)
+					  (CC 及)
+					  (NN 建设)))
+				  (NP (NN 步伐))))))) 
+	  </parse>
+	  <arg n="0">
+	  西藏 自治区 
+	  </arg>
+	  <arg n="1">
+	  投资 力度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不断 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 中央 政府 的 支持 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 金融)
+			  (NN 危机))
+		      (DNP (PP (P 对)
+			       (NP (NN 外界)))
+			   (DEG 的))
+		      (NP (NN 影响)))
+	      (VP (VV 增大))) 
+	  </parse>
+	  <arg n="1">
+	  金融 危机 对 外界 的 影响 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

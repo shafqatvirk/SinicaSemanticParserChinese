@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 修整 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 repairs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (PP-MNR (P 用)
+						  (NP (NN 烂泥)))
+					  (VP (VP (VV 混充)
+						  (NP-OBJ (NN 混凝土)))
+					      (VP (VV 填入)
+						  (NP-OBJ (NN 沉井)))))))
+			      (DEC 的)))
+		      (NP-PN (NR 钱塘江))
+		      (QP (CD 部分))
+		      (NP (NN 江堤)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 得到)
+		      (NP-OBJ (ADJP (JJ 重新))
+			      (NP (NN 修整)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 被 用 烂泥 混充 混凝土 填入 沉井 的 钱塘江 部分 江堤 
+	  </arg>
+	  <arg n="m" f="adv">
+	  重新 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

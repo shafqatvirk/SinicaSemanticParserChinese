@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 孜孜以求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seeker"/>
+      <role argnum="1" argrole="entity sought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NP-PN (NR 中国))
+					  (NP (NN 政府)))
+				  (VP (LCP-TMP (QP (CD 多)
+						   (CLP (M 年)))
+					       (LC 来))
+				      (VP (VP (VV 孜孜以求)
+					      (NP-OBJ (-NONE- *T*-2)))
+					  (PU ，)
+					  (VP (VV 希望)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 维持)
+							  (NP-OBJ (-NONE- *T*-2))))))))
+			      (DEC 的)))
+		      (NP (NN 东西)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 政府 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  多 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

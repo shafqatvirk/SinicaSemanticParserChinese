@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 照护 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 takes care of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 推)
+			(AS 著)
+			(NP-OBJ (NN 轮椅) ))
+		    (PU ，)
+		    (VP (VV 照护)
+			(AS 著)
+			(NP-OBJ (ADJP (JJ 年迈))
+				(NP (NN 双亲) ))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	年迈 双亲 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 怕)
+		(IP-OBJ (NP-SBJ (NN 父母))
+			(VP (VP (VA 老)
+				(VA 弱)
+				(VA 病)
+				(VA 残))
+			    (VP (ADVP (AD 难以))
+				(VP (VV 照护))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	难以 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

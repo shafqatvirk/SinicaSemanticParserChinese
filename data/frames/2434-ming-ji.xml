@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 铭记 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing remembered"/>
+      <role argnum="2" argrole="location of memory"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 中华))
+			  (NP (NN 民族)))
+		      (DNP (NP (NN 近代)
+			       (NN 历史))
+			   (DEG 的))
+		      (NP (NN 荣辱)
+			  (NN 兴衰)))
+	      (PU ，)
+	      (VP (VV 值得)
+		  (IP-OBJ (NP-SBJ (PN 我们))
+			  (VP (VV 铭记))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

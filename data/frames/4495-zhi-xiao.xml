@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 知晓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 knows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九一年))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (ADVP (AD 曾))
+					  (PP (P 与)
+					      (NP-PN (NR 大寨)))
+					  (ADVP (AD 一同))
+					  (VP (LB 被)
+					      (CP-OBJ (WHNP-5 (-NONE- *OP*))
+						      (IP (NP-SBJ (NN 人们))
+							  (VP (VV 知晓)
+							      (NP-OBJ (-NONE- *T*-5)))))))
+				      (PU 、)
+				      (VP (VE 有)
+					  (NP-OBJ (DNP (NP (PU “)
+							   (ADJP (JJ 铁))
+							   (NP (NN 姑娘))
+							   (PU ”))
+						       (DEG 之))
+						  (NP (NN 称))))))
+			      (DEC 的)))
+		      (NP-PN (NR 郭凤莲)))
+	      (VP (VV 重返)
+		  (AS 了)
+		  (NP-PN-OBJ (NR 大寨)))) 
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="1">
+	  *T*-5 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一同 
+	  </arg>
+	  <arg n="m" f="adv">
+	  与 大寨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

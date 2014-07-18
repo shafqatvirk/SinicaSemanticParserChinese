@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宰羊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 knows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 河河))
+	      (VP (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 典型)))
+				      (DEC 的)))
+			      (NP (NN 北部))
+			      (NP (ADJP (JJ 外省))
+				  (NP (NN 家庭)))
+			      (NP (NN 小孩))))
+		  (PU ，)
+		  (VP (PP-PRP (P 由於)
+			      (IP (NP-LOC (NN 家里)
+					  (CC 和)
+					  (NN 学校))
+				  (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 都))
+				      (VP (VV 说)
+					  (NP-OBJ (NN 国语))))))
+		      (PU ，)
+		      (PP-TMP (ADVP (AD 一直))
+			      (PP (P 到)
+				  (NP (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (NP-TMP (-NONE- *T*-2))
+						      (ADVP (AD 快))
+						      (VP (VV 上)
+							  (NP-OBJ (NN 国中)))))
+					      (DEC 的)))
+				      (NP (NN 年龄)))))
+		      (PU ，)
+		      (PP-DIR (P 对)
+			      (NP (NN 台语)))
+		      (ADVP (AD 还是))
+		      (VP (PU 「)
+			  (ADVP (AD 莫))
+			  (VP (VV 宰羊))
+			  (PU 」)
+			  (PRN (PU （)
+			       (NP (NP (NN 台语))
+				   (CP-APP (IP (PU 「)
+					       (NP-SBJ (-NONE- *PRO*))
+					       (VP (ADVP (AD 不))
+						   (VP (VV 知道)))
+					       (PU 」))
+					   (DEC 之))
+				   (NP (NN 意)))
+			       (PU ）)))))) 
+	  </parse>
+	  <arg n="0">
+	  河河 
+	  </arg>
+	  <arg n="1">
+	  对 台语 
+	  </arg>
+	  <arg n="m" f="adv">
+	  莫 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还是 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一直 到 *OP* *pro* *T*-2 快 上 国中 的 年龄 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 家里 和 学校 *pro* 都 说 国语 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

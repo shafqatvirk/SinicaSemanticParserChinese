@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="position arg0 rises/jumps to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 今年))
+		      (NP (NT 一)
+			  (CC 至)
+			  (NT 四月份)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 天津))
+		      (NP (NN 外商)
+			  (NN 投资额)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 跃)
+		      (NP-OBJ (DNP (NP (NP-PN (NR 中国))
+				       (DP (DT 各))
+				       (ADJP (JJ 大))
+				       (NP (NN 城市)))
+				   (DEG 之))
+			      (NP (NN 首)))))) 
+	  </parse>
+	  <arg n="0">
+	  天津 外商 投资额 
+	  </arg>
+	  <arg n="1">
+	  中国 各 大 城市 之 首 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 一 至 四月份 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

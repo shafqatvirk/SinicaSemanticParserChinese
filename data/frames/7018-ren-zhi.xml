@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 认知 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 understands"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (IP (NP-PN-SBJ (NR 台湾))
+			 (VP (ADVP (AD 慢慢))
+			     (ADVP (AD 在))
+			     (VP (VRD (VV 走)
+				      (VV 到))
+				 (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					 (VP (VV 认知)
+					     (IP-OBJ (NP-PN-SBJ (NR 中)
+								(PU 、)
+								(NR 台))
+						     (VP (VC 是)
+							 (NP-PRD (ADJP (JJ 不同))
+								 (NP (NN 政权))))))))))
+		     (LC 之外))
+	    (PU ，)
+	    (NP-SBJ (NN 文化))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 在))
+		(VP (PU 「)
+		    (VV 划清)
+		    (NP-OBJ (NN 界限))
+		    (PU 」)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	中 、 台 是 不同 政权 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (NP (NN 事实))
+		     (LC 上))
+	    (PU ，)
+	    (IP-Q-SBJ (NP-SBJ (NN 候选人))
+		      (VP (VV 开出)
+			  (NP-OBJ (DP-WH (DT 什麽))
+				  (NP (NN 支票)))))
+	    (PU ，)
+	    (VP (PP-ADV (P 和)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (PN 他))
+					(VP (MSP 所)
+					    (VP (VV 认知)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的)))
+			    (NP (NN 政府)
+				(NN 角色))))
+		(VP (VE 有)
+		    (NP-OBJ (ADJP (ADVP (AD 很))
+				  (ADJP (JJ 大)))
+			    (NP (NN 关系)))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

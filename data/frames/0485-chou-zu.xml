@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹足 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="borrower"/>
+      <role argnum="1" argrole="fund"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP-Q (IP (LCP-TMP (IP (NP-SBJ (DNP (NP (NN 对手)
+						  (NN 厂商))
+					      (DEG 的))
+					 (NP (NN 库存)))
+				 (VP (VRD (VV 卖)
+					  (VV 完))))
+			     (LC 後))
+		    (PU ，)
+		    (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 还))
+			(VP (VP (VE 有)
+				(NP-OBJ (NN 能力)))
+			    (VP (VP (VV 筹足)
+				    (NP-OBJ (NN 美金)))
+				(VP-PRP (VV 买)
+					(NP-OBJ (NN 原料)))))))
+		(SP 吗)
+		(PU ？)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  美金 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  对手 厂商 的 库存 卖 完 後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

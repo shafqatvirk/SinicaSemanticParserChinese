@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 递交 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="submitter"/>
+      <role argnum="1" argrole="thing submitted"/>
+      <role argnum="2" argrole="submitting to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 经过)
+		      (NP (DNP (NP (QP (CD 一)
+				       (CLP (M 段)))
+				   (NP (NN 时间)))
+			       (DEG 的))
+			  (NP (NN 准备))))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-APP (ADJP (JJ 留美))
+				  (NP (NN 硕士)))
+			  (NP-PN (NR 段祺华)
+				 (NN 律师)))
+		      (CC 与)
+		      (NP (DNP (NP (NP-PN (NR 新墨西哥州))
+				   (NP (NN 当地)))
+			       (DEG 的))
+			  (NP (NN 律师))))
+	      (VP (ADVP (AD 正式))
+		  (PP-DIR (P 向)
+			  (NP-PN (NR 美国)
+				 (NR 新墨西哥州)
+				 (NN 联邦)
+				 (NN 地方)
+				 (NN 法院)))
+		  (VP (VV 递交)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 状告)
+					      (NP-PN-OBJ (NP-PN (NR 美国))
+							 (QP (OD 第一))
+							 (NP (NN 国民)
+							     (NN 银行)))))
+				      (DEC 的))
+			      (NP (NN 诉状)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  留美 硕士 段祺华 律师 与 新墨西哥州 当地 的 律师 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 状告 美国 第一 国民 银行 的 诉状 
+	  </arg>
+	  <arg n="2">
+	  向 美国 新墨西哥州 联邦 地方 法院 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  经过 一 段 时间 的 准备 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正式 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 必须)
+		  (VP (PP-TMP (P 於)
+			      (LCP (NP (NN 截止)
+				       (NN 期限))
+				   (LC 前)))
+		      (VP (VV 递交)
+			  (NP-OBJ (NN 申请书))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  申请书 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  於 截止 期限 前 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

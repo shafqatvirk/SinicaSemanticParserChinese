@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摆有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="location"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (QP-SBJ (CD 一)
+                  (CLP (M 间)))
+          (VP (VV 摆有)
+              (NP-OBJ (NP-APP (NN 烟)
+                              (PU 、)
+                              (NN 酒)
+                              (PU 、)
+                              (NN 糖)
+                              (ETC 等))
+                      (NP (NN 日用品))))))
+	</parse>
+	<arg n="0"> 一 间 </arg>
+	<V/>
+	<arg n="1"> 烟 、 酒 、 糖 等 日用品 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 紧贴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity pressed"/>
+      <role argnum="2" argrole="entity arg1 is pressed against"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VP (ADVP (AD 几乎))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (NN 眼睛))
+				  (VP (VRD (VV 紧贴)
+					   (VV 在))
+				      (AS 了)
+				      (LCP-OBJ (NP (NN 车窗)
+						   (NN 玻璃))
+					       (LC 上))))))
+		  (PU ，)
+		  (VP (PP-DIR (P 朝)
+			      (NP (NN 后面)))
+		      (VP (VV 仰望))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  眼睛 
+	  </arg>
+	  <arg n="2">
+	  车窗 玻璃 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  几乎 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

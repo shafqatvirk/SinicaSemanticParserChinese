@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放映 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="movie arg0 shows"/>
+    <role argnum="2" argrole="place arg1 is shown"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-ADV (P 除了)
+		(LCP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VP (VV 办)
+				 (NP-OBJ (NN 说明会)))
+			     (PU 、)
+			     (VP (VV 放映)
+				 (NP-OBJ (NN 幻灯片)))))
+		     (LC 外))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	幻灯片 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 陶器)
+			(NN 展示区))
+		    (NP (NN 上方)))
+	    (VP (VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 电视))
+			    (PU ，)
+			    (VP (VV 放映)
+				(NP-OBJ (NP (NN 陶器)
+					    (NN 制作))
+					(NP (NN 影片)))))))) 
+	</parse>
+	<arg n="1">
+	陶器 制作 影片 
+	</arg>
+	<arg n="2">
+	电视 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 尔後))
+	    (NP-TTL-SBJ (PU 《)
+			(NN 秋月)
+			(PU 》))
+	    (VP (PP-LOC (P 在)
+			(NP (NP-PN (NR 雪梨))
+			    (NP (NN 电影节))))
+		(VP (VV 放映)))) 
+	</parse>
+	<arg n="1">
+	《 秋月 》 
+	</arg>
+	<arg n="m" f="loc">
+	在 雪梨 电影节 
+	</arg>
+	<arg n="m" f="adv">
+	尔後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

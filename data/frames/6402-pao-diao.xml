@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抛掉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 throws out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 抛掉)
+		(NP-OBJ (NN 政治)
+			(NN 压力)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	政治 压力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 虽))
+			(VP (VV 说)
+			    (IP-OBJ (NP-SBJ (CP-APP (IP (PU 「)
+							(NP-SBJ (DNP (NP (NN 男人))
+								     (DEG 的))
+								(NP (NN 魅力)))
+							(VP (VV 来自)
+							    (NP-OBJ (NN 权势)))
+							(PU 」))
+						    (DEC 的))
+					    (NP (NN 定律)))
+				    (VP (ADVP (AD 并))
+					(ADVP (AD 未))
+					(VP (VV 改变)))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (NP-TMP (NT 过去))
+	    (NP-SBJ (NN 男人))
+	    (VP (ADVP (AD 常))
+		(ADVP (AD 因此))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (DNP (NP (NN 身体))
+					 (DEG 的))
+				    (NP (NN 魅力)))
+			    (VP (VV 抛掉)))))) 
+	</parse>
+	<arg n="0">
+	男人 
+	</arg>
+	<arg n="1">
+	身体 的 魅力 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<arg n="m" f="tmp">
+	过去 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	*pro* 虽 说 「 男人 的 魅力 来自 权势 」 的 定律 并 未 改变 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

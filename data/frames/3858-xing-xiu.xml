@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兴修 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 湖南))
+		  (VP (VP (VV 投资)
+			  (QP-OBJ (CD 五十亿)
+				  (CLP (M 元))))
+		      (VP (VV 兴修)
+			  (NP-OBJ (NN 水利))))) 
+	  </parse>
+	  <arg n="0">
+	  湖南 
+	  </arg>
+	  <arg n="1">
+	  水利 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

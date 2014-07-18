@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 村庄)))
+	      (VP (ADVP (AD 曾))
+		  (VP (VP (VV 自力更生))
+		      (PU ，)
+		      (VP (ADVP (AD 艰苦))
+			  (VP (VV 奋斗)))
+		      (PU ，)
+		      (VP (VP (VV 搬)
+			      (NP-OBJ (NN 山)))
+			  (VP (VV 填)
+			      (NP-OBJ (NN 沟)))
+			  (VP (VV 造)
+			      (NP-OBJ (NN 平原))))
+		      (PU ，)
+		      (VP (VV 成为)
+			  (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 中国))
+					      (VP (VV 发展)
+						  (NP-OBJ (NN 山区)
+							  (NN 农业))))
+					  (DEC 的))
+				  (NP (NN 典型))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 村庄 
+	  </arg>
+	  <arg n="1">
+	  平原 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

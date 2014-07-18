@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 憋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 holds back"/>
+      <role argnum="2" argrole="place arg1 is held back in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 尤其))
+	      (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PU 「)
+				      (VP (VE 有)
+					  (NP-OBJ (NN 话)))
+				      (VP (ADVP (AD 不))
+					  (ADVP (AD 轻))
+					  (VP (VV 谈)))
+				      (PU 」)))
+			      (DEC 的)))
+		      (NP (NN 男性们)))
+	      (PU ，)
+	      (VP (ADVP (AD 常))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 情绪))
+			      (VP (VV 憋)
+				  (PP (P 在)
+				      (LCP (NP (NN 心))
+					   (LC 里)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 「 有 话 不 轻 谈 」 的 男性们 
+	  </arg>
+	  <arg n="1">
+	  情绪 
+	  </arg>
+	  <arg n="2">
+	  在 心 里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  常 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尤其 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

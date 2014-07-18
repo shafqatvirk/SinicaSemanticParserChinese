@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贩售 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 buys and then sells"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-MNR (P 藉由)
+			    (NP (DNP (NP-PN (NR 淡水))
+				     (DEG 的))
+				(NP (NN 风情))))
+		    (PU ，)
+		    (VP (VV 贩售)
+			(NP-OBJ (NP-APP (NN 咖啡)
+					(PU 、)
+					(NN 海鲜)
+					(NN 快炒)
+					(PU 、)
+					(NN 小吃)
+					(PU 、)
+					(CC 与)
+					(NN 古物))
+				(NP (NN 诸如此类)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	咖啡 、 海鲜 快炒 、 小吃 、 与 古物 诸如此类 
+	</arg>
+	<arg n="m" f="mnr">
+	藉由 淡水 的 风情 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关停转 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对)
+			  (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-1))
+					      (IP (IP (NP-SBJ (NN 污染))
+						      (VP (VA 严重)))
+						  (IP (NP-SBJ (NN 治理))
+						      (VP (VV 无望)))))
+					  (DEC 的)))
+				  (NP (NN 企业)))
+			      (PU ，)
+			      (NP (ADVP (AD 包括))
+				  (NP (ADJP (JJ 大))
+				      (NP (NN 企业))))))
+		  (PU ，)
+		  (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (ADVP (AD 依法))
+			  (ADVP (AD 坚决))
+			  (VP (VV 关停转)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-1 污染 严重 治理 无望 的 企业 ， 包括 大 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依法 
+	  </arg>
+	  <arg n="m" f="adv">
+	  坚决 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

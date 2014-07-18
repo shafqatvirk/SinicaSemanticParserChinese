@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 支援 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 赞扬)
+		  (NP-OBJ (NN 侨胞)
+			  (NN 台胞))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-PRP (P 为)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 支援)
+					  (NP-OBJ (DNP (NP (NN 祖国))
+						       (DEG 的))
+						  (NP (NN 社会主义)
+						      (NN 建设))))))
+			  (VP (VV 做出)
+			      (AS 了)
+			      (NP-OBJ (ADJP (JJ 重要))
+				      (NP (NN 贡献)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  祖国 的 社会主义 建设 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="goal"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (QP (CD 一))
+		      (NP (NN 方面)))
+	      (NP-SBJ (NN 政府))
+	      (VP (VV 要)
+		  (VP (PP-MNR (P 藉)
+			      (NP (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 转)
+						  (NP-OBJ (NN 融资))))
+					  (ETC 等))
+				  (NP (NN 方式))))
+		      (VP (VV 支援)
+			  (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-4))
+					      (VP (ADVP (AD 已))
+						  (VP (VV 在)
+						      (NP-OBJ (NN 当地)))))
+					  (DEC 的)))
+				  (NP (NN 台商)))
+			  (PU ，)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 巩固)
+				  (NP-OBJ (DNP (NP (PN 他们))
+					       (DEG 的))
+					  (ADJP (JJ 现有))
+					  (NP (NN 基础))))))))) 
+	  </parse>
+	  <arg n="0">
+	  政府 
+	  </arg>
+	  <arg n="M" f="MNR">
+	  藉 *PRO* 转 融资 等 方式 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-4)->(台商) 已 在 当地 的 台商 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 巩固 他们 的 现有 基础 
+	  </arg>
+	</example>
+      </frame> 
+    </frameset>
+  </verb>

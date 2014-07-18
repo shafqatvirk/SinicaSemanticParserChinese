@@ -1,0 +1,133 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 促销 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 promotes the sale of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (QP (CD 许多))
+				    (NP (NN 金融)
+					(NN 机构)))
+			    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					     (VP (VV 促销)
+						 (NP-OBJ (NN 理财)
+							 (NN 产品))))
+					 (LC 时))
+				(VP (VV 惯用)
+				    (NP-OBJ (-NONE- *T*-1)))))
+			(DEC 的)))
+		(NP (NN 手法))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	理财 产品 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (IP (NP-SBJ (NN 利润))
+			    (VP (ADVP (AD 越来越))
+				(VP (VA 低))))
+			(PU ，)
+			(IP (NP-SBJ (NN 国内)
+				    (NN 旅行业))
+			    (VP (ADVP (AD 不))
+				(ADVP (AD 再))
+				(ADVP (AD 强力))
+				(VP (VV 促销)))))
+		(VP (VC 是)
+		    (NP-PRD (NN 主因)))) 
+	</parse>
+	<arg n="0">
+	国内 旅行业 
+	</arg>
+	<arg n="m" f="adv">
+	强力 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 主要))
+	    (PP-PRP (P 因为)
+		    (IP (NP-SBJ (DNP (NP-PN (NR 北美))
+				     (DEG 的))
+				(NP (NN 音乐)
+				    (NN 工业)))
+			(VP (VP (ADVP (AD 已))
+				(ADVP (AD 十分))
+				(VP (VA 成熟)))
+			    (PU ，)
+			    (VP (VP (VV 分门别类))
+				(VP-EXT (ADVP (AD 很))
+					(VP (VA 清楚)))))))
+	    (PU ，)
+	    (ADVP (AD 而))
+	    (IP (NP-SBJ (DNP (NP-PN (NR 马修))
+			     (DEG 的))
+			(NP (NN 音乐)))
+		(VP (VP (ADVP (AD 却))
+			(ADVP (AD 很))
+			(VP (VA 难)
+			    (VP (VV 归类))))))
+	    (PU ，)
+	    (ADVP (AD 因此))
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 不))
+		    (VP (VA 易)
+			(VP (VP (VV 纳入)
+				(NP-OBJ (NN 主流)
+					(NN 音乐)
+					(NN 机制)))
+			    (VP (ADVP (AD 大力))
+				(VP (VV 促销)))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	大力 
+	</arg>
+	<arg n="m" f="dis">
+	因此 
+	</arg>
+	<arg n="m" f="prp">
+	因为 北美 的 音乐 工业 已 十分 成熟 ， 分门别类 很 清楚 
+	</arg>
+	<arg n="m" f="adv">
+	主要 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

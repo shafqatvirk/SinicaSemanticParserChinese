@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 碰面 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people meeting each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (PP (P 和)
+		    (NP (NP (DP (DT 某)
+				(CLP (M 家)))
+			    (ADJP (JJ 大型))
+			    (NP (NN 美商)
+				(NN 银行)))
+			(NP (NN 总裁))))
+		(VP (VV 碰面)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="crd">
+	和 某 家 大型 美商 银行 总裁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 公之于世 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-MNR (P 以)
+					      (NP (NP-APP (ADJP (JJ 著名))
+							  (NP (NN 油画)))
+						  (NP-TTL (PU 《)
+							  (NN 良宵)
+							  (PU 》))))
+				      (VP (VV 轰动)
+					  (NP-OBJ (NN 画坛)))))
+			      (DEC 的)))
+		      (NP-APP (NP (NN 画家)))
+		      (NP-PN (NR 刘宇一)
+			     (NN 教授)))
+	      (PU ，)
+	      (VP (NP-TMP (NT 日前))
+		  (PP-LOC (P 在)
+			  (NP-PN (NR 南京)))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (PN 他))
+						      (VP (VV 发现)
+							  (NP-OBJ (-NONE- *T*-2))))
+						  (DEC 的)))
+					  (QP (CD 一)
+					      (CLP (M 块)))
+					  (NP (NN 雨花石))
+					  (PRN (PU ——)
+					       (NP (PU “)
+						   (NP (NN 神州))
+						   (NP (QP (CD 五))
+						       (NP (NN 绝)))
+						   (NP (NN 石))
+						   (PU ”)))))
+			      (VP (VV 公之于世)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 以 著名 油画 《 良宵 》 轰动 画坛 的 画家 刘宇一 教授 
+	  </arg>
+	  <arg n="1">
+	  *OP* 他 发现 *T*-2 的 一 块 雨花石 —— “ 神州 五 绝 石 ” 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日前 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 南京 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

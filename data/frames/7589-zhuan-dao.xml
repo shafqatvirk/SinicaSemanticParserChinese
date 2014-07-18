@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转道 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 goes on to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VV 结束)
+			     (NP-OBJ (DNP (NP-PN (NR 中南美))
+					  (DEG 之))
+				     (NP (NN 行)))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-PN-SBJ (NP-PN (NR 陈))
+		       (NP (NN 总统)))
+	    (VP (NP-TMP (NT 二十日))
+		(VP (VV 转道)
+		    (NP-PN-OBJ (NR 非洲))))) 
+	</parse>
+	<arg n="0">
+	陈 总统 
+	</arg>
+	<arg n="1">
+	非洲 
+	</arg>
+	<arg n="m" f="tmp">
+	二十日 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 结束 中南美 之 行 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

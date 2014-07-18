@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 志 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 marks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 内))
+		      (VP (VE 有)
+			  (IP-OBJ (NP-SBJ (QP (CD 一)
+					      (CLP (M 张)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-TPC (-NONE- *T*-1))
+						      (NP-SBJ (NN 面额))
+						      (VP (QP-PRD (NP (NN 人民币))
+								  (QP (CD 五十)
+								      (CLP (M 元))))))
+						  (DEC 的)))
+					  (NP (NN 金箔)
+					      (NN 小型张))))))
+	      (PU ，)
+	      (VP (MSP 以)
+		  (VP (VV 志)
+		      (IP-OBJ (NP-PN-SBJ (NR 香港))
+			      (VP (VV 回归)
+				  (NP-PN-OBJ (NR 中国))))))) 
+	  </parse>
+	  <arg n="0">
+	  内 有 一 张 *OP* *T*-1 面额 人民币 五十 元 的 金箔 小型张 
+	  </arg>
+	  <arg n="1">
+	  香港 回归 中国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

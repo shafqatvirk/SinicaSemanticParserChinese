@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="causer, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 内蒙古)
+			     (NR 呼伦贝尔盟))
+		  (VP (VV 加大)
+		      (NP-OBJ (NN 开放)
+			      (NN 力度)))) 
+	  </parse>
+	  <arg n="0">
+	  内蒙古 呼伦贝尔盟 
+	  </arg>
+	  <arg n="1">
+	  开放 力度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 感情)
+			  (CC 和)
+			  (NN 精神))
+		      (NP (NN 因素)))
+	      (VP (ADVP (AD 逐渐))
+		  (VP (VV 加大))))
+	  </parse>
+	  <arg n="1">
+	  感情 和 精神 因素 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐渐 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

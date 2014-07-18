@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 应 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 responds to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 日本))
+	      (VP (ADVP (AD 还))
+		  (VP (VP (VV 应)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 中国))
+					   (ADJP (JJ 有关))
+					   (NP (NN 部门)))
+				       (DEG 之))
+				  (NP (NN 邀))))
+		      (PU ，)
+		      (VP (PP-DIR (P 对)
+				  (NP (NP (DNP (NP (NP-PN (NR 中国))
+						   (NP-PN (NR 长春)
+							  (CC 至)
+							  (NR 珲春)))
+					       (DEG 的))
+					  (NP (NN 铁路)
+					      (NN 沿线)
+					      (NN 地区)))
+				      (ADJP (JJ 综合))
+				      (NP (NN 开发))))
+			  (VP (VV 进行)
+			      (NP-OBJ (NN 调查))))))) 
+	  </parse>
+	  <arg n="0">
+	  日本 
+	  </arg>
+	  <arg n="1">
+	  中国 有关 部门 之 邀 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="auxiliary">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

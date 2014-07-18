@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 产生 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 台湾))
+			  (QP (CD 一))
+			  (NP (NN 经济学家)))
+		  (VP (VV 指出)
+		      (IP-OBJ (NP-SBJ (PU “)
+				      (NN 戒急用忍)
+				      (PU ”))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 产生)
+				      (NP-OBJ (QP (CD 诸多))
+					      (NP (NN 弊端)))))))) 
+	  </parse>
+	  <arg n="0">
+	  “ 戒急用忍 ” 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  诸多 弊端 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (LCP-LOC (NP (NN 核查)
+					       (NN 工作))
+					   (LC 中))
+				  (VP (VV 产生))))
+			  (DEC 的)))
+		  (NP (NN 争端)
+		      (CC 和)
+		      (NN 分歧))) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(争端和分歧) 	  
+	  </arg>
+	  <arg n="M" f="LOC">
+	  核查 工作 中 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="source"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (LCP-LOC (NP (QP (CD １００)
+					       (CLP (M 条)))
+					   (NP (NN 新闻)))
+				       (LC 中))
+			      (VP (VE 有)
+				  (IP-OBJ (QP-SBJ (CD 一)
+						  (CLP (M 条)))
+					  (VP (VC 是)
+					      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-2))
+								  (VP (VA 假)))
+							      (DEC 的))))))))))
+	      (PU ，)
+	      (NP-SBJ (NN 读者))
+	      (VP (PP-DIR (P 对)
+			  (QP (ADVP (AD 另外))
+			      (QP (CD ９９)
+				  (CLP (M 条)))))
+		  (ADVP (AD 也))
+		  (VP (VV 会)
+		      (VP (VV 产生)
+			  (NP-OBJ (NN 怀疑)))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  读者 
+	  </arg>
+	  <arg n="1">
+	  怀疑 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 *pro* １００ 条 新闻 中 有 一 条 是 *OP* *T*-2 假 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

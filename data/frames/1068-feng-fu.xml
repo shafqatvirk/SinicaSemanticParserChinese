@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 丰富 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今后))
+	      (NP-SBJ (QP (CD 两))
+		      (NP (NN 国)))
+	      (VP (VV 要)
+		  (VP (ADVP (AD 不断))
+		      (VP (VV 丰富)
+			  (NP-OBJ (NN 合作)
+				  (NN 形式)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  两 国 
+	  </arg>
+	  <arg n="1">
+	  合作 形式 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不断 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (DNP (NP-PN (NR 四川省)
+				  (CC 和)
+				  (NR 重庆市))
+			   (DEG 的))
+		      (NP (NN 天然气)
+			  (NN 资源)))
+	      (VP (ADVP (AD 最为))
+		  (VP (VA 丰富))))
+	  </parse>
+	  <arg n="1">
+	  四川省 和 重庆市 的 天然气 资源 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最为 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

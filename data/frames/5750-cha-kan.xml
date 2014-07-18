@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 察看 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 inspects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (ADJP (JJ 小))
+			(NP (NN 岛)))
+		    (NP (NN 原住民)))
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 察看)
+				     (NP-OBJ (NN 陶土)
+					     (NN 品质))))
+			     (LC 时)))
+		(PU ，)
+		(ADVP (AD 更))
+		(VP (VV 让)
+		    (NP-OBJ (NN 人))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VA 印象深刻)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	陶土 品质 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (NN 研究)
+				(NN 典藏组))
+			    (NP (NN 组长)))
+		    (NP-PN (NR 卢秀琴)))
+	    (VP (ADVP (AD 连忙))
+		(VP (VP (VV 冲进)
+			(NP-OBJ (NN 现场)))
+		    (VP (VV 察看))))) 
+	</parse>
+	<arg n="0">
+	研究 典藏组 组长 卢秀琴 
+	</arg>
+	<arg n="m" f="adv">
+	连忙 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

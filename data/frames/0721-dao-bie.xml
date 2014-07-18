@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 道别 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person saying good-bye"/>
+      <role argnum="1" argrole="saying good-bye to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 典礼))
+			   (VP (VV 完成)))
+		       (LC 後))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 钱其琛))
+	      (VP (PP-LOC (P 在)
+			  (NP (NP-PN (NR 香港)
+				     (NN 会议)
+				     (NN 展览)
+				     (NN 中心))
+			      (NP (NN 新翼))))
+		  (PP-DIR (P 向)
+			  (NP-PN (NR 威尔斯)
+				 (NN 亲王)
+				 (CC 和)
+				 (NR 彭定康)))
+		  (VP (VV 道别)))) 
+	  </parse>
+	  <arg n="0">
+	  钱其琛 
+	  </arg>
+	  <arg n="1">
+	  向 威尔斯 亲王 和 彭定康 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  典礼 完成 後 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 香港 会议 展览 中心 新翼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

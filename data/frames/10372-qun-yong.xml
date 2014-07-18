@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 群涌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity arriving in large quantity"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 尽早))
+			    (VP (VV 未雨绸缪))))
+		(PU ，)
+		(ADVP (AD 才))
+		(ADVP (AD 不))
+		(VP (VV 会)
+		    (VP (ADVP (AD 一下子))
+			(VP (LB 被)
+			    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (VP (VV 群涌))
+								(VP (MSP 而)
+								    (VP (VV 来)))))
+							(DEC 的)))
+						(NP (NN 压力)))
+					(VP (VV 击垮)
+					    (NP-OBJ (-NONE- *T*-2)))))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

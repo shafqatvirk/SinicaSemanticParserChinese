@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 规划 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="planner"/>
+      <role argnum="1" argrole="thing planned"/>
+      <role argnum="2" argrole="thing arg1 is planned to be"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-PN-SBJ (NR 吉林省)
+					 (NR 长春市))
+			      (VP (NP-TMP (NT 今年))
+				  (VP (VV 规划)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (NP (QP (OD 首)
+			  (CLP (M 批)))
+		      (ADJP (JJ 经济))
+		      (ADJP (JJ 适用))
+		      (NP (NN 房)))
+		  (NP (NN 工程))) 
+	  </parse>
+	  <arg n="0">
+	  吉林省 长春市 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (NN 莲雾园))
+		(VP (VNV-WH (VV 能)
+			    (AD 不)
+			    (VV 能))
+		    (VP (VRD (VV 规划)
+			     (VV 成))
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 让)
+						(NP-OBJ (NN 亲子))
+						(IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (ADVP (AD 共))
+							(VP (VV 游))))))
+					(DEC 的)))
+				(NP (NN 观光)
+				    (NN 农园)))))) 
+	  </parse>
+	  <arg n="1">
+	  莲雾园 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 让 亲子 *PRO* 共 游 的 观光 农园 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

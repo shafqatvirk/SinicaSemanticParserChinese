@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上涨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing rising"/>
+      <role argnum="1" argrole="extent of rising"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-TMP (NT １月份))
+					  (VP (VV 交货))))
+				  (DEC 的)))
+			  (NP (NN 原油)))
+		      (NP (NN 价格)))
+	      (VP (VP (VV 报收于)
+		      (QP-OBJ (DP (DT 每)
+				  (CLP (M 桶)))
+			      (QP (CD １１．７２)
+				  (CLP (M 美元)))))
+		  (PU ，)
+		  (VP (PP (P 比)
+			  (NP (DP (DT 前)
+				  (QP (CD 一)))
+			      (NP (NN 交易日))))
+		      (VP (VV 上涨)
+			  (QP-OBJ (CD ２６)
+				  (CLP (M 美分))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 １月份 交货 的 原油 价格 
+	  </arg>
+	  <arg n="1">
+	  ２６ 美分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 前 一 交易日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 所以))
+	      (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 一))
+			  (VP (VV 到)
+			      (NP-OBJ (NN 汛期)))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 上涨)))
+			      (DEC 的)))
+		      (NP-PN (NR 长江))
+		      (NP (NN 水)))
+	      (VP (VV 倒灌))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

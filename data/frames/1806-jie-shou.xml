@@ -1,0 +1,137 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接收 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 云南))
+	      (VP (ADVP (AD 先后))
+		  (VP (VCD (VV 接收)
+			   (VV 安置))
+		      (NP-OBJ (NN 难民))
+		      (NP-EXT (QP (CD 六万四千一百余))
+			      (NP (NN 人)))))) 
+	  </parse>
+	  <arg n="0">
+	  云南 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  先后 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  难民 	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  六万四千一百余 人 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP (DP (DT 全))
+		      (NP (NN 国)))
+		  (IP-APP (NP-PN-SBJ (NP (NP (NP (NP (NN 军队))
+						 (NP (NN 武警)
+						     (NN 部队))
+						 (NP (NN 政法)
+						     (NN 机关)))
+					     (NP (NN 企业)))
+					 (NP (NN 交接)
+					     (NN 工作)))
+				     (NP (NN 办公室)))
+			  (VP (VV 接收)
+			      (NP-OBJ (NN 企业))))
+		  (NP (NN 工作)
+		      (NN 会议))) 
+	  </parse>
+	  <arg n="0">
+	  军队 武警 部队 政法 机关 企业 交接 工作 办公室 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  企业 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+		       (VP (VRD (VV 接收)
+				(VV 到))
+			   (NP-OBJ (DP (DT 这些))
+				   (NP (NN 信息)))))
+		   (LC 后)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  这些 信息 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 老挝))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 主动))
+		  (VP (VV 表示)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 愿意)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 接收)
+					      (NP-OBJ (PP (P 在)
+							  (NP-PN (NR 华)))
+						      (NP-PN (NR 老挝))
+						      (NP (NN 难民)))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 回国)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  在 华 老挝 难民 	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 回国 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夜宿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 spends the night"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (LCP-TMP (QP (CD 十)
+						 (CLP (M 年)))
+					     (LC 前))
+				    (VP (VV 发动)
+					(NP-OBJ (QP (CD 万))
+						(NP (NN 人)))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 夜宿)
+						(NP-PN-OBJ (NR 台北市)
+							   (NR 忠孝东路)))))))
+			    (DEC 的)))
+		    (NP-PN (PU 「)
+			   (NN 无住屋者)
+			   (NN 团结)
+			   (NN 组织)
+			   (PU 」)))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (CP-APP (IP (NP-TMP (NP-PN (NR 民国))
+					    (QP (CD 七十))
+					    (NP (NN 年代)))
+				    (NP-SBJ (NN 社会力))
+				    (VP (VV 奔放)))
+				(DEC 的))
+			(QP (CD 一)
+			    (CLP (M 个)))
+			(NP (NN 代表)
+			    (NN 团体))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台北市 忠孝东路 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今年)
+		    (NT 九月))
+	    (PU ，)
+	    (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VE 无)
+				(NP-OBJ (NN 住屋))))
+		    (NP (NN 组织)))
+	    (VP (VP (ADVP (AD 重))
+		    (VP (VV 回)
+			(NP-PN-OBJ (NR 忠孝东路))))
+		(VP (VV 夜宿)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 无 住屋 组织 
+	</arg>
+	<arg n="m" f="tmp">
+	今年 九月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

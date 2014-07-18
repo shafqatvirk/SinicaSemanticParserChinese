@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 阻隔 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 blocks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 再))
+			  (VP (VV 加上)
+			      (UCP-OBJ (NP (DNP (NP-PN (NR 美浓)
+						       (NN 山脉)
+						       (PU 、)
+						       (NR 茶顶)
+						       (NN 山脉)
+						       (PU 、)
+						       (NR 老浓溪))
+						(DEG 的))
+					   (ADJP (JJ 天然))
+					   (NP (NN 阻隔)))
+				       (PU ，)
+				       (IP (NP-SBJ (NN 地形))
+					   (VP (VV 封闭)))
+				       (PU 、)
+				       (IP (NP-SBJ (NN 交通))
+					   (VP (ADVP (AD 又))
+					       (ADVP (AD 不))
+					       (VP (VC 是)
+						   (VP (ADVP (AD 那么))
+						       (VP (VA 便利))))))))))
+	      (PU ，)
+	      (NP-SBJ (NN 文化))
+	      (VP (VV 流失)
+		  (DER 得)
+		  (VP-EXT (ADVP (AD 较))
+			  (VP (VA 慢))))) 
+	  </parse>
+	  <arg n="0">
+	  美浓 山脉 、 茶顶 山脉 、 老浓溪 
+	  </arg>
+	  <arg n="m" f="adv">
+	  天然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

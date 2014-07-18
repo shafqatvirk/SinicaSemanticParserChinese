@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 丰 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP-TPC (NP-SBJ (NN 台商))
+			  (VP (PP-LOC (P 在)
+				      (NP-PN (NR 天津)))
+			      (VP (VV 投资))))
+		  (NP-SBJ (NN 获利))
+		  (VP (ADVP (AD 颇))
+		      (VP (VA 丰)))) 
+	  </parse>
+	  <arg n="0">
+	  获利 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  台商 在 天津 投资 
+	  </arg>
+	  <arg n="m" f="adv">
+	  颇 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

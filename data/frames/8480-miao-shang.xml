@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 描上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 paints"/>
+      <role argnum="2" argrole="place arg1 is painted onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VA 大大)))
+				  (DEC 的)))
+			  (NP (NN 眼眶)))
+		      (NP (NN 周围)))
+	      (VP (VV 描上)
+		  (AS 了)
+		  (NP-OBJ (DNP (ADJP (JJ 深蓝色))
+			       (DEG 的))
+			  (NP (NN 眼影))))) 
+	  </parse>
+	  <arg n="1">
+	  深蓝色 的 眼影 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 大大 的 眼眶 周围 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

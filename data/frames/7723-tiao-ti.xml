@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挑剔 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 exams"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (DNP (NP (PN 我))
+				     (DEG 的))
+				(NP (NN 存货)))
+			(VP (ADVP (AD 仔细))
+			    (VP (VV 挑剔)
+				(AS 了)
+				(QP-OBJ (CD 一)
+					(CLP (M 遍)))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	我 的 存货 
+	</arg>
+	<arg n="m" f="ext">
+	一 遍 
+	</arg>
+	<arg n="m" f="adv">
+	仔细 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

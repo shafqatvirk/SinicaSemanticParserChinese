@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遇有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing that happens to arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 遇有)
+				 (NP-OBJ (NP-APP (NN 水灾)
+						 (PU 、)
+						 (NN 盗贼)
+						 (PU 、)
+						 (NN 疾病)
+						 (ETC 等))
+					 (NP (NN 灾变)))))
+			 (LC 时))
+		(PU ，)
+		(ADVP (AD 则))
+		(ADVP (AD 相互))
+		(VP (VV 救济)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	水灾 、 盗贼 、 疾病 等 灾变 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

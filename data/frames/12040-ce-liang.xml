@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 测量 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 measures"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 科学家))
+	      (VP (VP (VP (VV 利用)
+			  (NP-OBJ (NP-APP (NN 全球)
+					  (NN 定位)
+					  (NN 系统)
+					  (CC 和)
+					  (NN 激光)
+					  (NN 测距仪)
+					  (ETC 等))
+				  (NP (ADJP (JJ 高))
+				      (NP (NN 科技)))
+				  (NP (NN 手段))))
+		      (VP (PP-DIR (P 对)
+				  (NP (ADJP (JJ 大))
+				      (NP (NN 峡谷))))
+			  (VP (VV 进行)
+			      (NP-OBJ (NN 测量))))))) 
+	  </parse>
+	  <arg n="0">
+	  科学家 
+	  </arg>
+	  <arg n="1">
+	  对 大 峡谷 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

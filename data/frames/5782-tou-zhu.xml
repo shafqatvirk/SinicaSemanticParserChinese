@@ -1,0 +1,117 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 投注 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 pours"/>
+    <role argnum="2" argrole="place arg1 is poured into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 中小型))
+		    (NP (NN 企业)))
+	    (VP (VP (ADVP (AD 一向))
+		    (VP (VV 长於)
+			(IP-OBJ (PU 「)
+				(NP-SBJ (-NONE- *PRO*))
+				(VP (BA 把)
+				    (IP-OBJ (NP-SBJ (NN 东西))
+					    (VP (VRD (VV 卖)
+						     (VV 出去)))))
+				(PU 」))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (VP (VV 拙於)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-LOC (P 在)
+					    (LCP (NP (NN 生产)
+						     (NN 研发))
+						 (LC 上)))
+				    (VP (VV 投注)
+					(NP-OBJ (NN 心力))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	心力 
+	</arg>
+	<arg n="2">
+	在 生产 研发 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (QP-TMP (CD 十几)
+			    (CLP (M 年)))
+		    (VP (VV 投注)
+			(PP (P 在)
+			    (NP (NN 其中)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	在 其中 
+	</arg>
+	<arg n="m" f="tmp">
+	十几 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 标榜)
+				    (NP-OBJ (NN 文治主义))))
+			    (DEC 的)))
+		    (NP-PN (NR 宋朝)))
+	    (PU ，)
+	    (VP (PP-DIR (P 对)
+			(NP (NN 文化)
+			    (NN 事业)))
+		(VP (VV 投注)
+		    (NP-OBJ (DNP (QP (CD 大量))
+				 (DEG 的))
+			    (NP (NN 金钱)
+				(CC 与)
+				(NN 人力)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 标榜 文治主义 的 宋朝 
+	</arg>
+	<arg n="1">
+	大量 的 金钱 与 人力 
+	</arg>
+	<arg n="2">
+	对 文化 事业 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

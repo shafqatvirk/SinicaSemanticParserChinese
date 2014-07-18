@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 擦出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 cause to be created through rubbing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 澳洲))
+			  (NP (NN 大地)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 原始)))
+			      (DEC 的)))
+		      (NP (NN 风貌)))
+	      (VP (PP-BNF (P 为)
+			  (NP (DNP (NP-PN (NR 罗卓瑶))
+				   (DEG 的))
+			      (NP (NN 创作))))
+		  (VP (VV 擦出)
+		      (NP-OBJ (ADJP (JJ 新))
+			      (NP (NN 火花)))))) 
+	  </parse>
+	  <arg n="0">
+	  澳洲 大地 *OP* *T*-1 原始 的 风貌 
+	  </arg>
+	  <arg n="1">
+	  新 火花 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 罗卓瑶 的 创作 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

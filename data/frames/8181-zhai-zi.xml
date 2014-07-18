@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 摘自 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="quotation"/>
+      <role argnum="1" argrole="place arg0 is quoted from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 摘自)
+		  (IP-OBJ (NP-PN (NR 董桥))
+			  (IP-TTL (PU 〈)
+				  (NP-SBJ (NN 中年))
+				  (VP (VC 是)
+				      (NP-PRD (NT 下午)
+					      (NN 茶)))
+				  (PU 〉))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  董桥 〈 中年 是 下午 茶 〉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

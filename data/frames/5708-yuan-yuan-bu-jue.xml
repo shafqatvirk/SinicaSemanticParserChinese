@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 源源不绝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NN 地震))
+			 (VP (ADVP (AD 刚))
+			     (VP (VV 发生))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NN 外界))
+			 (DEG 的))
+		    (NP (NN 援助)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 可)
+			    (VP (VV 说)
+				(VP (VC 是)))))
+		(VP (VV 源源不绝)))) 
+	</parse>
+	<arg n="0">
+	外界 的 援助 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 可 说 是 
+	</arg>
+	<arg n="m" f="tmp">
+	地震 刚 发生 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发扬 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 进入)
+			  (NP-OBJ (NT ９０年代))))
+	      (PU ，)
+	      (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 实现)
+			      (NP-OBJ (DNP (NP (NP (NP (PN 我))
+						   (NP (NN 国)))
+					       (NP (NN 现代化)
+						   (NN 建设)))
+					   (DEG 的))
+				      (QP (OD 第二)
+					  (CLP (M 个)))
+				      (NP (NN 战略)
+					  (NN 目标))))))
+	      (PU ，)
+	      (NP-SBJ (NN 侨胞)
+		      (CC 和)
+		      (NN 台胞))
+	      (VP (ADVP (AD 一定))
+		  (VP (VV 会)
+		      (VP (VP (VV 继续)
+			      (VP (VV 发扬)
+				  (NP-OBJ (ADJP (JJ 爱国))
+					  (NP (NN 传统)))))
+			  (PU ，)
+			  (VP (PP-PRP (P 为)
+				      (IP (NP-SBJ (NN 祖国))
+					  (VP (VCD (VA 繁荣)
+						   (VA 富强)))))
+			      (VP (VV 做出)
+				  (NP-OBJ (ADJP (JJ 更大))
+					  (NP (NN 贡献))))))))) 
+	  </parse>
+	  <arg n="0">
+	  侨胞 和 台胞 
+	  </arg>
+	  <arg n="1">
+	  爱国 传统 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 进入 ９０年代 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 实现 我 国 现代化 建设 的 第二 个 战略 目标 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

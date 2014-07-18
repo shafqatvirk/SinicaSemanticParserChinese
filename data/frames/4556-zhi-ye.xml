@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 置业 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 美国))
+			  (NP-PN (NR 加德士)
+				 (PU 、)
+				 (NR 卡特彼勒)))
+		      (PU 、)
+		      (NP (DNP (NP-PN (NR 日本))
+			       (DEG 的))
+			  (NP-PN (NR 伊藤忠)))
+		      (PU 、)
+		      (NP-PN (NR 韩国)
+			     (NR 大宇))
+		      (PU 、)
+		      (NP-PN (NP-PN (NR 香港))
+			     (NP (ADJP (JJ 新))
+				 (NP (NN 世界)))
+			     (NP (NN 集团))))
+	      (VP (ADVP (AD 纷纷))
+		  (VP (VP (VV 入)
+			  (NP-OBJ (NN 区)))
+		      (VP-PRP (VCD (VV 投资)
+				   (VV 置业)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 加德士 、 卡特彼勒 、 日本 的 伊藤忠 、 韩国 大宇 、 香港 新 世界 集团 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纷纷 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

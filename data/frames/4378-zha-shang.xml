@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 炸伤 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="people injured by explosion"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (VV 见义勇为))
+					  (VP (SB 被)
+					      (VP (VV 炸伤)))
+					  (VP (ADVP (AD 仍))
+					      (PP-LOC (P 在)
+						      (NP (NN 医院)))
+					      (VP (VV 接受)
+						  (NP-OBJ (NN 治疗))))))
+				  (DEC 的)))
+			  (NP-PN (NR 王振年))
+			  (ETC 等))
+		  (NP (NN 人))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

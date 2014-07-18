@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 声明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing announced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 政府)))
+		  (VP (ADVP (AD 已))
+		      (ADVP (AD 一再))
+		      (VP (VV 声明)
+			  (PU ，)
+			  (IP-OBJ (NP-SBJ (NP-PN (NP-PN (NR 香港))
+						 (ADJP (JJ 特别))
+						 (NP (NN 行政区)))
+					  (NP (NP (QP (OD 第一)
+						      (CLP (M 届)))
+						  (NP (NN 立法会)))
+					      (CC 和)
+					      (NP (NN 区域)
+						  (NN 组织))))
+				  (VP (ADVP (AD 将))
+				      (PP-MNR (P 依据)
+					      (NP (NP (NN 基本法))
+						  (CC 和)
+						  (NP (DNP (NP (NP-PN (NP (DP (DT 全))
+									  (NP (NN 国)))
+								      (NP (NN 人大)))
+							       (ADJP (JJ 有关))
+							       (NP (NN 决定)))
+							   (DEG 的))
+						      (NP (NN 规定)))))
+				      (VP (VV 组建))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 政府 
+	  </arg>
+	  <arg n="1">
+	  香港 特别 行政区 第一 届 立法会 和 区域 组织 将 依据 基本法 和 全 国 人大 有关 决定 的 规定 组建 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (QP (OD 第九)
+				     (CLP (M 届)))
+				 (NP (DP (DT 全))
+				     (NP (NN 国)))
+				 (NP (NN 人民)
+				     (NN 代表)
+				     (NN 大会)))
+			  (ADJP (JJ 常务))
+			  (NP (NN 委员会)))
+		      (QP (OD 第六)
+			  (CLP (M 次)))
+		      (NP (NN 会议)))
+	      (VP (VP (VV 通过)
+		      (NP-TTL-OBJ (PU 《)
+				  (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 准予)
+						  (NP-OBJ (NN 就业))))
+				      (ADJP (JJ 最低))
+				      (NP (NN 年龄)))
+				  (NP (NN 公约))
+				  (PU 》)))
+		  (PU ，)
+		  (VP (ADVP (AD 同时))
+		      (PU ，)
+		      (VP (VV 声明)
+			  (ADVP (AD 如下)))))) 
+	  </parse>
+	  <arg n="0">
+	  第九 届 全 国 人民 代表 大会 常务 委员会 第六 次 会议 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

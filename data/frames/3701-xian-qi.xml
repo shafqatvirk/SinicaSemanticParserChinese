@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掀起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing set off"/>
+      <role argnum="2" argrole="entity arg1 is set off for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (PRN (PU （)
+		       (NP (ADJP (JJ 小))
+			   (NP (NN 标题)))
+		       (PU ）))
+		  (NP-SBJ (NN 外商))
+		  (VP (ADVP (AD 再次))
+		      (VP (VV 掀起)
+			  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 投资)
+					      (NP-PN-OBJ (NR 北海))))
+				  (NP (NN 热)))))) 
+	  </parse>
+	  <arg n="0">
+	  外商 
+	  </arg>
+	  <arg n="1">
+	  *pro* 投资 北海 热 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 继)
+		  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (NP-TMP (NT 去年))
+			       (VP (VP (VV 实现)
+				       (NP-OBJ (ADJP (JJ 年))
+					       (NP (NN 吞吐量)))
+				       (QP-EXT (CD 五百多万)
+					       (CLP (M 吨))))
+				   (PU 、)
+				   (VP (ADVP (AD 顺利))
+				       (VP (VV 进入)
+					   (NP-OBJ (NP (NP (NN 国家))
+						       (ADJP (JJ 中型))
+						       (NP (NN 港口)))
+						   (NP (NN 行列))))))))
+		       (LC 之后)))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP-PN (NR 湄州湾))
+			       (NP (NN 南岸)))
+			   (DEG 的))
+		      (NP (NN 基础)
+			  (NN 设施))
+		      (NP (NN 建设)))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 掀起)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (NP (NN 热潮)))))) 
+	  </parse>
+	  <arg n="2">
+	  湄州湾 南岸 的 基础 设施 建设 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 新 的 热潮 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="adv">
+	  继 *PRO* 去年 实现 年 吞吐量 五百多万 吨 、 顺利 进入 国家 中型 港口 行列 之后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

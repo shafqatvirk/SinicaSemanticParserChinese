@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加盟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="joiner"/>
+      <role argnum="1" argrole="thing joined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 三浦知良))
+		  (VP (VV 加盟)
+		      (NP-PN-OBJ (NR 克罗地亚)
+				 (NN 俱乐部)))) 
+	  </parse>
+	  <arg n="0">
+	  三浦知良 
+	  </arg>
+	  <arg n="1">
+	  克罗地亚 俱乐部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

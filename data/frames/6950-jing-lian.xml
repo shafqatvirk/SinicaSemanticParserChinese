@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 精炼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 extracts and refines"/>
+    <role argnum="2" argrole="thing arg1 is extracted from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-DIR (P 从)
+					  (LCP (NP (DNP (NP (NN 植物))
+							(DEG 的))
+						   (NP (NN 花)
+						       (PU 、)
+						       (NN 叶)
+						       (PU 、)
+						       (NN 果皮)
+						       (CC 或)
+						       (NN 树皮)))
+					       (LC 中)))
+				  (VP (VV 精炼)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (DP (DT 各)
+		      (CLP (M 种)))
+		  (ADJP (JJ 芳香))
+		  (NP (NN 精油)
+		      (CC 与)
+		      (NN 稀释)
+		      (NN 油))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	从 植物 的 花 、 叶 、 果皮 或 树皮 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (PP-PRP (P 由於)
+			    (IP (NP-SBJ (NN 选片))
+				(VP (VA 精炼))))
+		    (PU ，)
+		    (DVP (VP (ADVP (AD 很))
+			     (VP (VA 快))))
+		    (ADVP (AD 便))
+		    (VP (VV 引起)
+			(NP-OBJ (DNP (NP (NN 业界)
+					 (CC 与)
+					 (NN 媒体))
+				     (DEG 的))
+				(NP (NN 注意)))))
+		(PU ，)
+		(VP (VV 成为)
+		    (NP-OBJ (NP (NP-PN (NR 欧洲))
+				(ADJP (JJ 重要))
+				(NP (NN 影展)))
+			    (NP (NN 之一)))))) 
+	</parse>
+	<arg n="1">
+	选片 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

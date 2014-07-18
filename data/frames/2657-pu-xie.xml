@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谱写 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing composed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-CND (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (CS 如果))
+			      (VP (VV 能)
+				  (VP (PP-BNF (P 为)
+					      (NP (NN 回归)))
+				      (VP (VV 谱写)
+					  (NP-OBJ (QP (CD 一)
+						      (CLP (M 首)))
+						  (ADJP (JJ 新))
+						  (NP (NN 曲))))))))
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 实在))
+		      (ADVP (AD 很))
+		      (VP (VA 有意义)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  一 首 新 曲 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 回归 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

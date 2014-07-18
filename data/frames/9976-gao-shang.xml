@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 高上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="comparison"/>
+      <role argnum="2" argrole="extent arg0 is higher than arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 比)
+		      (NP (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 渔民))
+				      (VP (NP-TMP (NT 初春))
+					  (VP (VP (VV 赶到)
+						  (NP-PN-OBJ (NR 钓鱼台)
+							     (CC 或)
+							     (NR 东海)))
+					      (VP (MSP 去)
+						  (VP (VV 拦截)
+						      (NP-OBJ (-NONE- *T*-3)))))))
+				  (DEC 的)))
+			  (ADJP (JJ 小))
+			  (NP (NN 小卷))))
+	      (NP-SBJ (NN 价钱))
+	      (VP (VV 要)
+		  (VP (VV 高上)
+		      (LCP-OBJ (QP (CD 一倍半))
+			       (LC 左右))))) 
+	  </parse>
+	  <arg n="0">
+	  价钱 
+	  </arg>
+	  <arg n="1">
+	  比 *OP* 渔民 初春 赶到 钓鱼台 或 东海 去 拦截 *T*-3 的 小 小卷 
+	  </arg>
+	  <arg n="2">
+	  一倍半 左右 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

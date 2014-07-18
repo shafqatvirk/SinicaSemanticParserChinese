@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 再造 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 rebuilds/reforms"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DNP (NP (PN 自己))
+			     (DEG 的))
+			(NP (NN 组织)))
+		(VP (ADVP (AD 居然))
+		    (VP (VV 变成)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (VV 再造)
+						(NP-OBJ (-NONE- *T*-2))))
+					(DEC 的)))
+				(NP (NN 对象)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NP (NN 水)
+				(NN 资源))
+			    (NP (NN 组织)))
+		    (VP (VV 再造)))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-32 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (NP-MNR (-NONE- *T*-32))
+					(VP (VV 改善)
+					    (NP-OBJ (NP-PN (NR 台湾))
+						    (NP (NP (NN 水)
+							    (NN 资源))
+							(NP (NN 议题)))))))
+				(DEC 的)))
+			(QP (OD 第一)
+			    (CLP (M 步)))))) 
+	</parse>
+	<arg n="1">
+	水 资源 组织 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

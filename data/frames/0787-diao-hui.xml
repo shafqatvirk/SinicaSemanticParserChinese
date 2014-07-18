@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="withdrawer"/>
+      <role argnum="1" argrole="thing withdrawn"/>
+      <role argnum="2" argrole="withdrawing from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 政府)))
+		  (VP (VV 决定)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 调回)
+				  (NP-OBJ (DNP (LCP (NP-PN (NP-PN (NR 朝鲜))
+							   (NP (NN 军事)
+							       (NN 停战)
+							       (NN 委员会)))
+						    (LC 中))
+					       (DEG 的))
+					  (NP-PN (NR 中国))
+					  (NP (NN 人民)
+					      (NN 志愿军)
+					      (NN 代表团))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  朝鲜 军事 停战 委员会 中 的 中国 人民 志愿军 代表团 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

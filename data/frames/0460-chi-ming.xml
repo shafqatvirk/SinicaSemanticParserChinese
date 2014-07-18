@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驰名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (NP-LOC (NN 国家))
+			      (VP (VV 驰名)))))
+		  (NP (NP-APP (NN 商标))
+		      (NP-PN (PU “)
+			     (NR 常柴牌)
+			     (PU ”)))
+		  (NP (NN 单缸)
+		      (NN 柴油机))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  国家 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

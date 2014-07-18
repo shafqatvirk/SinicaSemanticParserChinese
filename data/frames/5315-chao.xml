@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 炒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 fries"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (VP (VP (BA 把)
+			(IP-OBJ (NP-SBJ (NN 房屋))
+				(VP (VV 拿去)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 抵押))))))
+		    (VP (VV 炒)
+			(NP-OBJ (NN 股票))))
+		(PU 、)
+		(VP (ADVP (AD 再))
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (NN 股票))
+				(VP (VV 拿去)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VCD (VV 融资)
+						     (VV 加码)))))))))) 
+	</parse>
+	<arg n="0">
+	许多 人 
+	</arg>
+	<arg n="1">
+	股票 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (CC 不但)
+		(VP (VV 让)
+		    (NP-OBJ (PN 他))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 赚进)
+			    (AS 了)
+			    (NP-OBJ (QP (CLP (ADJP (JJ 大))
+					     (CLP (M 笔))))
+				    (NP (NN 授权金))))))
+		(PU ，)
+		(CC 还)
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 影迷)
+				    (NN 期待)
+				    (NN 心理))
+			    (VP (VV 炒)
+				(PP (P 到)
+				    (NP (ADJP (ADVP (AD 最))
+					      (ADJP (JJ 高)))
+					(NP (NN 点))))))))) 
+	</parse>
+	<arg n="0">
+	
+	</arg>
+	<arg n="1">
+	影迷 期待 心理 
+	</arg>
+	<arg n="m" f="adv">
+	到 最 高 点 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-4))
+			    (VP (NP-MNR (ADJP (JJ 小))
+					(NP (NN 火)))
+				(ADVP (AD 乾))
+				(VP (VV 炒)
+				    (AS 过))))
+			(DEC 的)))
+		(NP (NN 五香)
+		    (PU 、)
+		    (NN 八角))) 
+	</parse>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<arg n="m" f="adv">
+	乾 
+	</arg>
+	<arg n="m" f="mnr">
+	小 火 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

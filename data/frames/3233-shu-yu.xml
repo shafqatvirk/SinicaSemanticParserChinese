@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 属於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 belongs to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (PP-DIR (P 从)
+				  (NP (NN 统计)
+				      (NN 分类)))
+			  (VP (MSP 来)
+			      (VP (VV 说)))))
+	      (PU ，)
+	      (NP-ADV (NN 其中))
+	      (QP-SBJ (CD 大部分))
+	      (VP (VV 属於)
+		  (NP-OBJ (NN 服务业)))) 
+	  </parse>
+	  <arg n="0">
+	  大部分 
+	  </arg>
+	  <arg n="1">
+	  服务业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  其中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *pro* 从 统计 分类 来 说 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

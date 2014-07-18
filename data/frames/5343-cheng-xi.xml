@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 承袭 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 inherits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 等)
+		    (LCP (IP (NP-SBJ (NP-APP (NN 二弟))
+				     (NP-PN (NR 蔡瑞庭))
+				     (PRN (PU （)
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (PP-DIR (P 从)
+							  (NP (NN 父)))
+						  (VP (VV 姓))))
+					  (PU ）)))
+			     (VP (VV 结婚)))
+			 (LC 後)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VP (VV 承袭)
+			(NP-OBJ (DNP (NP (NN 哥哥))
+				     (DEG 的))
+				(NP (NN 生意))))
+		    (PU ，)
+		    (VP (VV 经营)
+			(NP-OBJ (NN 饼店)
+				(CC 和)
+				(NN 饮料)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	哥哥 的 生意 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	等 二弟 蔡瑞庭 （ *PRO* 从 父 姓 ） 结婚 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

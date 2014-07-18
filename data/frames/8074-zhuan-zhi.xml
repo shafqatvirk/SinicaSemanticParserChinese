@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 专职 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 works exclusively as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NN 研究))
+		      (VP (VV 做完)))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (VP (ADVP (AD 也))
+		      (PP (P 就)
+			  (NP (PN 此)))
+		      (VP (VP (VP (VV 留)
+				  (AS 了))
+			      (VP (VV 下来)))
+			  (PU ，)
+			  (VP (VV 成)
+			      (AS 了)
+			      (NP-OBJ (PU 「)
+				      (NN 北埔人)
+				      (PU 」)))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 如今))
+		      (VP (VV 专职)
+			  (NP-OBJ (NP-PN (NR 大隘社))
+				  (NP (NN 总干事))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  大隘社 总干事 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 
+	  </arg>
+	  <arg n="m" f="adv">
+	  研究 做完 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

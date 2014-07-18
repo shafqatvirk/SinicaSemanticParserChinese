@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 主审 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (NP (NT 今早))
+	      (QP (CD 一)
+		  (CLP (M 宗)))
+	      (CP (WHNP-2 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ-3 (-NONE- *T*-2))
+			  (VP (PP-LGS (P 由)
+				      (NP (NP-APP (ADJP (JJ 暂委))
+						  (NP (NN 法官)))
+					  (NP-PN (NR 马永新))))
+			      (VP (VV 主审)
+				  (NP-OBJ (-NONE- *-3)))))
+		      (DEC 的)))
+	      (NP (NN 案件))) 
+	  </parse>
+	  <arg n="0">
+	  由 暂委 法官 马永新 
+	  </arg>
+	  <arg n="1">
+	  *-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

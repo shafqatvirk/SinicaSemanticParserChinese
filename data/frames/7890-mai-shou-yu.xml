@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 埋首於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="work arg0 buries its head in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 汉代))
+	    (VP (VV 埋首於)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 整理)
+			    (NP-OBJ (NP (ADJP (JJ 前))
+					(NP (NN 朝)))
+				    (NP (NN 经典))))))) 
+	</parse>
+	<arg n="0">
+	汉代 
+	</arg>
+	<arg n="1">
+	*PRO* 整理 前 朝 经典 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

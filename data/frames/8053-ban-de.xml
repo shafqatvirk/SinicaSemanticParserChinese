@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 颁得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing which is awarded to arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-PRP (P 由於)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 热心))
+				  (VP (VV 服务)))))
+		  (PU ，)
+		  (NP-TMP (NT 年初))
+		  (ADVP (AD 刚))
+		  (VP (VV 颁得)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 项)))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ-3 (-NONE- *T*-2))
+					  (VP (PP-LGS (P 由)
+						      (NP (NN 女王)))
+					      (VP (VV 受勋)
+						  (NP-OBJ (-NONE- *-3)))))
+				      (DEC 的)))
+			      (NP (NN 爵位)
+				  (NN 女王))
+			      (NP (NN 服务)
+				  (NN 奖章)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  一 项 *OP* *T*-2 由 女王 受勋 *-3 的 爵位 女王 服务 奖章 
+	  </arg>
+	  <arg n="m" f="adv">
+	  刚 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  年初 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 *PRO* 热心 服务 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 雇用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="employer"/>
+      <role argnum="1" argrole="employee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 自)
+		  (LCP (IP (NP-SBJ (-NONE- *pro*))
+			   (VP (VP (NP-TMP (NT 一九七九年))
+				   (PP-LOC (P 在)
+					   (NP-PN (NR 京)))
+				   (VP (VV 成立)
+				       (NP-OBJ (NN 办事处))))
+			       (PU 、)
+			       (CC 并)
+			       (VP (PP-DIR (P 从)
+					   (NP (ADJP (JJ 总))
+					       (NP (NN 公司))))
+				   (VP (VV 雇用)
+				       (AS 了)
+				       (NP-OBJ (QP (OD 第一)
+						   (CLP (M 位)))
+					       (NP-PN (NR 中国))
+					       (NP (NN 雇员)))))))
+		       (LC 以来))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  第一 位 中国 雇员 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 总 公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

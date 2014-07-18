@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 终结 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (QP (CD 一百一十一)
+			  (CLP (M 个)))
+		      (NP (NN 试点)
+			  (NN 城市)))
+	      (NP-SBJ (ADJP (JJ 国有))
+		      (NP (NN 企业)))
+	      (VP (VCD (VV 破产)
+		       (VV 终结))
+		  (QP-OBJ (CD 三百八十九)
+			  (CLP (M 户))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  国有 企业 	  
+	  </arg>
+	  <arg n="0" f="psr">
+	  一百一十一 个 试点 城市 	  
+	  </arg>
+	  <arg n="0" f="QTY">
+	  三百八十九 户 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 中华)
+				  (NN 人民)
+				  (NN 共和国))
+			   (DEG 的))
+		      (NP (NN 成立)))
+	      (PU ，)
+	      (VP (VC 是)
+		  (NP-PRD (CP-APP (IP (NP-SBJ (DP (DT 这)
+						  (QP (CD 一)))
+					      (NP (NN 革命)
+						  (NN 阶段)))
+				      (VP (VV 终结)))
+				  (DEC 的))
+			  (NP (NN 标志))))) 
+	  </parse>
+	  <arg n="0">
+	  这 一 革命 阶段 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme arg0 ended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (-NONE- *PRO*))
+	  (VP (VV 终结)
+	      (NP-OBJ (NN 黑金))) 
+	  </parse>
+	  <arg n="0">
+	  *pro*	  
+	  </arg>
+	  <arg n="1">
+	  黑金	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

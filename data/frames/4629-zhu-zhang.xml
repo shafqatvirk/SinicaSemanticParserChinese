@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 主张 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 advocates/stands for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 马吉德))
+		  (VP (VV 主张)
+		      (IP-OBJ (NP-PN-SBJ (NR 伊拉克))
+			      (VP (PP (P 就)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 入侵)
+					      (NP-PN-OBJ (NR 科威特)))))
+				  (ADVP (AD 正式))
+				  (VP (VV 道歉)))))) 
+	  </parse>
+	  <arg n="0">
+	  马吉德 
+	  </arg>
+	  <arg n="1">
+	  伊拉克 就 *PRO* 入侵 科威特 正式 道歉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-6 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-6))
+				  (VP (VP (VV 主张)
+					  (NP-OBJ (-NONE- *RNR*-4)))
+				      (CC 和)
+				      (VP (VV 维护)
+					  (NP-OBJ-4 (ADJP (JJ 平稳))
+						    (NP (NN 过渡))))))
+			      (DEC 的)))
+		      (NP (NN 力量)))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 更加))
+		  (VP (VV 增强)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-6 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-4 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

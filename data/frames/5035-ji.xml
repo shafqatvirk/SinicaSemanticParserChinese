@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 急 </id>
+  <frameset id="f1" edef="urgent">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 万事))
+	    (VP (ADVP (AD 莫))
+		(PP (P 如)
+		    (NP (NN 重建)))
+		(VP (VA 急)))) 
+	</parse>
+	<arg n="0">
+	万事 
+	</arg>
+	<arg n="m" f="adv">
+	如 重建 
+	</arg>
+	<arg n="m" f="adv">
+	莫 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="rush into action">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 rushes into action with respect to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 越))
+		    (PP-LOC (P 在)
+			    (NP (DP (DT 这))
+				(NP (NN 行))))
+		    (VP (VV 待久)
+			(AS 了)))
+		(PU ，)
+		(VP (ADVP (AD 越))
+		    (VP (VV 觉得)
+			(IP-OBJ (NP-SBJ (DP (DT 凡))
+					(NP (NN 事)))
+				(VP (VPT (VA 急)
+					 (AD 不)
+					 (VV 得)))))))) 
+	</parse>
+	<arg n="1">
+	凡 事 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3" edef="fast">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 水))
+	    (VP (VA 急))) 
+	</parse>
+	<arg n="0">
+	水 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f4" edef="worry">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is worried about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 只))
+		(VP (VV 能)
+		    (VP (VA 急)
+			(DER 得)
+			(VP-EXT (VV 跳脚)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	跳脚 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

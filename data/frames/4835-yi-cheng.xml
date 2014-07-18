@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 弈成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="result of chess game between entities of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DNP (NP-PN (NR 中国))
+			       (DEG 的))
+			  (NP-PN (NR 叶江川)))
+		      (CC 与)
+		      (NP (DNP (NP-PN (NR 捷克))
+			       (DEG 的))
+			  (NP-PN (NR 让切克))))
+	      (VP (VV 弈成)
+		  (NP-OBJ (NN 平局)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 的 叶江川 与 捷克 的 让切克 
+	  </arg>
+	  <arg n="1">
+	  平局 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

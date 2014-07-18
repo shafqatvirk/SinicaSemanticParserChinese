@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 接合 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 connects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 再))
+		    (PP-MNR (P 以)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 相同)))
+					(DEC 的)))
+				(NP (NN 方法))))
+		    (VP (VV 制作)
+			(NP-OBJ (DP (DT 上))
+				(NP (NN 半段)))))
+		(PU ，)
+		(VP (ADVP (AD 然後))
+		    (VP (BA 将)
+			(IP-OBJ (QP-SBJ (NP-APP (NN 上)
+						(NN 下))
+					(QP (CD 两)
+					    (CLP (M 段))))
+				(VP (VV 接合))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	上 下 两 段 
+	</arg>
+	<arg n="m" f="adv">
+	然後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 看)
+		    (NP-OBJ (PN 他))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (DVP (VP (VA 随兴))
+				     (DEV 地))
+				(VP (VV 拍拍打打)))
+			    (PU ，)
+			    (VP (VV 接合)
+				(NP-OBJ (NN 罐身))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	罐身 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VRD (VV 接合)
+			     (VV 起来))))
+	    (PU ，)
+	    (VP (ADVP (AD 才))
+		(VP (VV 会)
+		    (VP (VA 准))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

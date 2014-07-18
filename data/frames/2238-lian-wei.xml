@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 连为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="connector"/>
+      <role argnum="1" argrole="entities connected"/>
+      <role argnum="2" argrole="entity arg1 connected to form"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 至此))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP (NP-PN (NR 长江))
+				  (NP (NN 流域)))
+			      (QP (CD 五)
+				  (CLP (M 个)))
+			      (ADJP (JJ 特大))
+			      (NP (NN 城市)))
+		      (NP-PN (NR 上海)
+			     (PU 、)
+			     (NR 南京)
+			     (PU 、)
+			     (NR 合肥)
+			     (PU 、)
+			     (NR 南昌)
+			     (PU 、)
+			     (NR 武汉)))
+	      (VP (PP-MNR (P 通过)
+			  (NP (ADJP (JJ 高速))
+			      (NP (NN 公路))))
+		  (VP (VV 连为)
+		      (NP-OBJ (NN 一体))))) 
+	  </parse>
+	  <arg n="0">
+	  通过 高速 公路 
+	  </arg>
+	  <arg n="1">
+	  长江 流域 五 个 特大 城市 上海 、 南京 、 合肥 、 南昌 、 武汉 
+	  </arg>
+	  <arg n="2">
+	  一体 
+	  </arg>
+	  <arg n="m" f="adv">
+	  至此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 运河))
+			   (VP (VV 整治)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 苏钢))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP (NN 运河)
+				  (NN 对岸)))
+		      (VP (VV 建)
+			  (AS 了)
+			  (NP-OBJ (ADJP (JJ 新))
+				  (NP (NN 厂区)))
+			  (PU ，)))
+		  (CC 并)
+		  (VP (VP (VP (VV 自筹)
+			      (NP-OBJ (NN 资金)))
+			  (VP (VV 建设)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 座)))
+				      (ADJP (JJ 跨运河))
+				      (ADJP (JJ 大))
+				      (NP (NN 桥)))))
+		      (PU ，)
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (NP (ADJP (JJ 新))
+					      (NP (NN 厂)))
+					  (PU 、)
+					  (NP (ADJP (JJ 老))
+					      (NP (NN 厂))))
+				  (VP (VV 连为)
+				      (NP-OBJ (NN 一体)))))))) 
+	  </parse>
+	  <arg n="0">
+	  苏钢 
+	  </arg>
+	  <arg n="1">
+	  新 厂 、 老 厂 
+	  </arg>
+	  <arg n="2">
+	  一体 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  运河 整治 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

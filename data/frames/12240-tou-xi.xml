@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 偷袭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 launches a surprise attack on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (DNP (NP (NP-APP (NN 反对派))
+				       (NP-PN (IP-APP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 争取)
+							  (IP-OBJ (NP-PN-SBJ (NR 安哥拉))
+								  (VP (ADVP (AD 彻底))
+								      (VP (VA 独立))))))
+					      (NP (DP (DT 全))
+						  (NP (NN 国)))
+					      (NP (NN 联盟)))
+				       (PRN (PU （)
+					    (NP-PN (NR 安盟))
+					    (PU ）)))
+				   (DEG 的))
+			      (NP (NN 武装)))
+		      (QP (CD 数百))
+		      (NP (NN 人)))
+	      (VP (NP-TMP (NT ２９日)
+			  (NN 晨))
+		  (PP-DIR (P 向)
+			  (NP (DNP (NP (QP (LCP (NP (NP-APP (NP-PN (NR 比耶省))
+							    (NP (NN 省会)))
+						    (NP-PN (NR 奎托)))
+						(LC 以北))
+					   (QP (CD ３０)
+					       (CLP (M 公里))))
+				       (NP (NN 处)))
+				   (DEG 的))
+			      (NP-PN (NR 库宁加市))))
+		  (VP (VV 发动)
+		      (NP-OBJ (NN 偷袭))))) 
+	  </parse>
+	  <arg n="0">
+	  反对派 *PRO* 争取 安哥拉 彻底 独立 全 国 联盟 （ 安盟 ） 的 武装 数百 人 
+	  </arg>
+	  <arg n="1">
+	  向 比耶省 省会 奎托 以北 ３０ 公里 处 的 库宁加市 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ２９日 晨 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

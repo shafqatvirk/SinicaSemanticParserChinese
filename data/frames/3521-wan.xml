@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 玩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing played"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-TMP (P 在)
+			  (NP (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 全球))
+					  (VP (PP-TMP (-NONE- *T*-1))
+					      (VP (VV 竞争))))
+				      (DEC 的)))
+			      (NP (NN 时代))))
+		  (PU ，)
+		  (IP-ADV (NP-SBJ (NN 别人))
+			  (VP (ADVP (CS 既))
+			      (VP (VV 能)
+				  (VP (VPT (VV 出)
+					   (DER 得)
+					   (VV 起))
+				      (NP-OBJ (DP (DT 这)
+						  (CLP (M 种)))
+					      (NP (NN 低价)))))))
+		  (PU ，)
+		  (NP-SBJ (PN 你))
+		  (VP (VP (ADVP (AD 也))
+			  (VP (VV 必须)
+			      (VP (VV 跟进))))
+		      (PU ，)
+		      (VP (ADVP (AD 否则))
+			  (ADVP (AD 就))
+			  (VP (VPT (VV 玩)
+				   (AD 不)
+				   (VV 下去))
+			      (AS 了))))) 
+	  </parse>
+	  <arg n="0">
+	  你 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  否则 
+	  </arg>
+	  <arg n="m" f="adv">
+	  别人 既 能 出 得 起 这 种 低价 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* 全球 *T*-1 竞争 的 时代 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

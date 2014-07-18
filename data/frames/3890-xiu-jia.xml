@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 休假 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 其次))
+	      (PU ，)
+	      (NP-SBJ (NP (ADJP (JJ 相当))
+			  (NP (NN 数量)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 从事)
+				      (NP-OBJ (NN 股市)
+					      (NN 交易))))
+			      (DEC 的)))
+		      (NP (NN 人)))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 在))
+		  (VP (VV 休假)))) 
+	  </parse>
+	  <arg n="0">
+	  相当 数量 *OP* *T*-1 从事 股市 交易 的 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  其次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

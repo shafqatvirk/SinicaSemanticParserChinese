@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 才华横溢 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (DVP (VP (ADVP (AD 很))
+			 (VP (VA 幸运)))
+		     (DEV 地))
+		(VP (VV 拥有)
+		    (NP-OBJ (QP (CD 多)
+				(CLP (M 位)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VP (VV 才华横溢))
+					    (CC 与)
+					    (VP (VV 坚持)
+						(NP-OBJ (NN 理想)))))
+				    (DEC 的)))
+			    (NP (NN 电影人)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

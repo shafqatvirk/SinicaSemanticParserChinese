@@ -1,0 +1,149 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 陪伴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 accompanies"/>
+    <role argnum="2" argrole="thing arg0 accompanied arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-TPC (NN 女性))
+				(NP-SBJ (-NONE- *T*-2))
+				(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					    (VP (PP-LGS (P 由)
+							(NP (NN 丈夫)
+							    (CC 或)
+							    (NN 男友)))
+						(VP (VV 陪伴))))
+				    (VP (VV 来)
+					(VP (VV 整型)))))
+			    (DEC 的))))
+	    (PU ，)
+	    (NP-SBJ (LCP (NP (NN 术))
+			 (LC 後))
+		    (NP (NN 情况)))
+	    (VP (ADVP (AD 通常))
+		(ADVP (AD 比较))
+		(VP (VA 好)))) 
+	</parse>
+	<arg n="0">
+	由 丈夫 或 男友 
+	</arg>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 多))
+		    (VP (VV 陪伴)
+			(NP-OBJ (NN 父母))))
+		(PU ，)
+		(CC 并且)
+		(VP (VV 鼓励)
+		    (NP-OBJ (PN 他们))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VSB (VV 运动)
+				 (VV 养生))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	父母 
+	</arg>
+	<arg n="m" f="adv">
+	多 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 值此之时))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP-PN (NR 北埔))
+			 (DEG 的))
+		    (NP-PN (PU 「)
+			   (NR 大隘社)
+			   (PU 」)))
+	    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (BA 将)
+				(IP-OBJ (NP-SBJ (DNP (NP (NN 北埔人))
+						     (DEG 的))
+						(ADJP (JJ 小))
+						(NP (NN 爱)))
+					(VP (VV 化为)
+					    (NP-OBJ (ADJP (JJ 大))
+						    (NP (NN 爱)))))))
+		    (PU ，)
+		    (VP (VP (VV 伸出)
+			    (NP-OBJ (NN 援手)))
+			(VP (VV 协助)
+			    (NP-PN-OBJ (NR 石冈)))))
+		(PU ，)
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 运用)
+				(NP-OBJ (DNP (NP-PN (NR 北埔))
+					     (DEG 的))
+					(NP (NN 社区)
+					    (NN 经验)))))
+		    (PU ，)
+		    (VP (VV 陪伴)
+			(NP-PN-OBJ (NR 石冈))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 走)
+				(AS 过)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (VA 艰辛)
+							(PU 、)
+							(VA 漫长)))
+						(DEC 的)))
+					(DNP (NP (NN 重建))
+					     (DEG 之))
+					(NP (NN 路))))))))) 
+	</parse>
+	<arg n="0">
+	北埔 的 「 大隘社 」 
+	</arg>
+	<arg n="1">
+	石冈 
+	</arg>
+	<arg n="2">
+	*PRO* 走 过 *OP* *T*-1 艰辛 、 漫长 的 重建 之 路 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 运用 北埔 的 社区 经验 
+	</arg>
+	<arg n="m" f="tmp">
+	值此之时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

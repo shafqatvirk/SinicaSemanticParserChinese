@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转投资 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 gets around to invest in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 去年))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-PN-SBJ (NR 明基)
+					   (NN 企业))
+				(VP (VV 转投资)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (PU 「)
+			(NN 酷才网)
+			(PU 」)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 同时))
+		(VP (VV 发行)
+		    (NP-TTL-OBJ (PU 「)
+				(NN 酷才)
+				(NN 周报)
+				(PU 」))))) 
+	</parse>
+	<arg n="0">
+	明基 企业 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

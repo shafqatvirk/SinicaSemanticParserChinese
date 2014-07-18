@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 前来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 欢迎)
+	      (NP-PN-OBJ (NR 辜振甫)
+			 (NN 先生))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 率)
+			  (NP-OBJ (NN 团)))
+		      (VP (VV 前来)
+			  (NP-OBJ (NN 祖国)
+				  (NN 大陆)))
+		      (VP (VV 访问))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  祖国 大陆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-APP (NP (NP-PN (NR 台湾))
+					  (NP (NN 记者)))
+				      (NP (NN 采访团)))
+			      (NP (NN 一行)))
+		      (QP (CD 十二))
+		      (NP (NN 人)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 专程))
+					  (VP (VP (VV 前来))
+					      (VP (VV 采访)
+						  (NP-OBJ (NP (NP-PN (NR 长江))
+							      (NP (NN 三角洲)))
+							  (NP (NN 经济)
+							      (NN 发展)
+							      (NN 状况)))))))
+				  (SP 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  专程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

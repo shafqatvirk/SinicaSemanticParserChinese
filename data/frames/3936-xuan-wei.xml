@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 选为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people elected"/>
+      <role argnum="2" argrole="position arg1 is elected to function"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NT ３月)
+					(NT ２４日))
+				    (DEG 的))
+			       (NP-PN (NR 港协))
+			       (NP (NN 代表)
+				   (NN 大会)))
+			   (LC 上)))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NN 副会长))
+		      (NP-PN (NR 霍震霆)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					       (VP (VE 没有)
+						   (NP-OBJ (NN 竞争)
+							   (NN 对手))))
+					   (DEC 的))
+				   (NP (NN 情况)))
+			       (LC 下)))
+		  (VP (SB 被)
+		      (VP (VV 选为)
+			  (NP-OBJ (NN 会长)))))) 
+	  </parse>
+	  <arg n="1">
+	  副会长 霍震霆 
+	  </arg>
+	  <arg n="2">
+	  会长 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *pro* 没有 竞争 对手 的 情况 下 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 ３月 ２４日 的 港协 代表 大会 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

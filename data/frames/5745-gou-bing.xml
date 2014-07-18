@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 诟病 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 denounces"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 国民党))
+		    (NP (ADJP (JJ 黑))
+			(NP (NN 金)))
+		    (NP (NN 政治)))
+	    (VP (NP-TMP (NN 长期))
+		(VP (LB 为)
+		    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			    (IP (NP-SBJ (NN 人))
+				(VP (VV 诟病)
+				    (NP-OBJ (-NONE- *T*-2)))))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="1">
+	国民党 黑 金 政治 
+	</arg>
+	<arg n="m" f="adv">
+	长期 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-TMP (NT 目前))
+				(NP-SBJ (NN 政府))
+				(VP (VP (VV 重)
+					(NP-OBJ (NN 开发)))
+				    (PU 、)
+				    (VP (VV 轻)
+					(NP-OBJ (NN 保育)))))
+			    (DEC 的))
+		    (NP (NN 情形)))
+	    (PU ，)
+	    (VP (ADVP (AD 常))
+		(VP (LB 为)
+		    (IP-OBJ (NP-SBJ (NN 保育)
+				    (NN 团体))
+			    (VP (MSP 所)
+				(VP (VV 诟病))))))) 
+	</parse>
+	<arg n="0">
+	保育 团体 
+	</arg>
+	<arg n="1">
+	目前 政府 重 开发 、 轻 保育 的 情形 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 习惯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is accustomed to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (ADJP (JJ 大))
+			     (NP (NN 部分)))
+			 (DEG 的))
+		    (NP (NN 网路)
+			(NN 作家)))
+	    (VP (ADVP (AD 都))
+		(VP (VV 习惯)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(LCP (NP (NN 线))
+					     (LC 上)))
+				(ADVP (AD 直接))
+				(VP (VV 创作))))))) 
+	</parse>
+	<arg n="0">
+	大 部分 的 网路 作家 
+	</arg>
+	<arg n="1">
+	*PRO* 在 线 上 直接 创作 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (NN 内地))
+			    (VP (VV 习惯)
+				(NP-OBJ (-NONE- *T*-2))))
+			(DEC 的)))
+		(NP (NN 社会主义)
+		    (NN 法))) 
+	</parse>
+	<arg n="0">
+	内地 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 很多))
+		    (NP (NN 乡亲)))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VA 习惯))))) 
+	</parse>
+	<arg n="0">
+	很多 乡亲 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

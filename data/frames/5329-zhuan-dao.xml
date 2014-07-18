@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赚到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 earns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 服务)
+		    (NP-OBJ (PN 她))
+		    (NP-EXT (ADVP (AD 将近))
+			    (NP (QP (CD 一)
+				    (CLP (M 个)))
+				(NP (NN 钟头)))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 只))
+		    (VP (VV 赚到)
+			(NP-OBJ (QP (CD 五)
+				    (CLP (M 毛)))
+				(NP (NN 钱))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	五 毛 钱 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

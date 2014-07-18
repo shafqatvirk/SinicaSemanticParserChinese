@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 部署 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="deployer"/>
+      <role argnum="1" argrole="thing deployed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-PN-SBJ (NN 国务院))
+		    (VP (VV 部署)
+			(NP-OBJ (NP (NP-PN (NR 淮河))
+				    (NP (NN 流域)))
+				(NP (NN 水污染)
+				    (NN 防治)
+				    (NN 工作)))))) 
+	  </parse>
+	  <arg n="0">
+	  国务院 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  淮河 流域 水污染 防治 工作 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-ADV (NN 其中))
+		(QP-SBJ (ADVP (AD 约))
+			(QP (CD 半数)))
+		(VP (VV 部署)
+		    (PP (P 在)
+			(NP (NP-PN (NR 弗里敦))
+			    (NP (NN 周围))))))) 
+	  </parse>
+	  <arg n="1">
+	  约 半数 
+	  </arg>
+	  <V/>
+	  <arg n="M" f="LOC">
+	  在 弗里敦 周围 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

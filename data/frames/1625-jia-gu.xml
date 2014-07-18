@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加固 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 政府军))
+	      (VP (VP (NP-TMP (NT 最近))
+		      (PP-LOC (P 在)
+			      (NP (NN 中部)))
+		      (VP (VV 收复)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 一些))
+				  (NP-OBJ (NN 战略)
+					  (NN 要地)))))
+		  (PU ，)
+		  (CC 并且)
+		  (VP (VV 加固)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *T*-1))
+						   (VP (VV 受到)
+						       (NP-OBJ (ADJP (JJ 反政府))
+							       (NP (NN 武装)))
+						       (IP (NP-SBJ (-NONE- *PRO*))
+							   (VP (VV 围困)))))
+					       (DEC 的)))
+				       (NP-PN (NR 万博)
+					      (CC 和)
+					      (NR 奎托市)))
+				   (DEG 的))
+			      (NP (NN 防线)))))) 
+	  </parse>
+	  <arg n="0">
+	  政府军 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 受到 反政府 武装 *PRO* 围困 的 万博 和 奎托市 的 防线 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

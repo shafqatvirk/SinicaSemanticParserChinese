@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 散发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing distributed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (DP (DT 该))
+				      (NP (NN 俱乐部)))
+			      (VP (NP-TMP (NT 昨天)
+					  (NT 晚上))
+				  (VP (VV 散发)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (QP (CD 一)
+		      (CLP (M 份)))
+		  (NP (NN 新闻)
+		      (NN 公报))) 
+	  </parse>
+	  <arg n="0">
+	  该 俱乐部 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  昨天 晚上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

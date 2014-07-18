@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 装 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg1 is put"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (DNP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 装)
+				   (NP-OBJ (NN 箱))))
+		       (NP (NN 效率)))
+		   (DEG 的))
+	      (NP (NN 提高))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  箱 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (PN 我))
+		  (VP (VV 愿意)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (PN 他))
+					  (VP (VP (VV 揉成)
+						  (NP-OBJ (NN 团)))
+					      (PU ，)
+					      (VP (VV 装)
+						  (PP (P 在)
+						      (LCP (NP (NN 口袋))
+							   (LC 里)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  他 
+	  </arg>
+	  <arg n="2">
+	  在 口袋 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

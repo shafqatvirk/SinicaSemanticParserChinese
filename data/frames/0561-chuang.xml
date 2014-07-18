@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 创 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="record, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 墨西哥))
+			  (PP (P 对)
+			      (NP (NN 外)))
+			  (NP (NN 贸易)))
+		      (NP (NN 总额)))
+	      (VP (VP (NP-TMP (NT １９９７年))
+		      (VP (VV 突破)
+			  (QP-OBJ (CD ２２００亿)
+				  (CLP (M 美元)))))
+		  (PU ，)
+		  (VP (VV 创)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (NP (NN 历史)
+				  (NN 纪录)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  墨西哥 对 外 贸易 总额 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 新 的 历史 纪录 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="creator, producer"/>
+      <role argnum="1" argrole="thing created"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (DP-TMP (DT 全)
+			  (CLP (M 年)))
+		  (VP (VV 创)
+		      (NP-OBJ (NN 利润))
+		      (NP-EXT (QP (CD 一百零九亿)
+				  (CLP (M 元)))
+			      (NP (NN 人民币))))))
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  利润 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一百零九亿 元 人民币 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  全 年 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

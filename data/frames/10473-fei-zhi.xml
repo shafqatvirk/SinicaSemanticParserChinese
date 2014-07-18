@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 废止 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 abolishes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 例如))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 废止)
+		(NP-TTL-OBJ (PU 「)
+			    (NP (NN 动员)
+				(NN 戡乱)
+				(NN 时期))
+			    (NP (NN 国片)
+				(NN 处理))
+			    (NP (NN 办法))
+			    (PU 」)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	「 动员 戡乱 时期 国片 处理 办法 」 
+	</arg>
+	<arg n="m" f="adv">
+	例如 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

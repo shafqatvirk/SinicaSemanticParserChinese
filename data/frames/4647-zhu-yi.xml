@@ -1,0 +1,186 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 注意 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 pays attention to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 注意)
+		  (AS 了)
+		  (NP-OBJ (NN 节地)
+			  (NN 造地)
+			  (CC 和)
+			  (NN 环保)
+			  (NN 工作)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  节地 造地 和 环保 工作 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 随着)
+		      (NP (DNP (NP (NN 中国人)
+				   (NN 生活)
+				   (NN 水平))
+			       (DEG 的))
+			  (NP (NN 提高))))
+	      (PU ，)
+	      (NP-SBJ (NN 人们))
+	      (VP (ADVP (AD 更))
+		  (VP (VV 注意)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 食用)
+				  (NP-OBJ (ADJP (JJ 健康))
+					  (NP (NN 食品)))))))) 
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 食用 健康 食品 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  随着 中国人 生活 水平 的 提高 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 产品))
+			   (DEG 的))
+		      (NP (NN 售价)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 要)
+		      (VP (VV 注意))))) 
+	  </parse>
+	  <arg n="1">
+	  产品 的 售价 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 notices"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 我们))
+		  (VP (VRD (VV 注意)
+			   (VV 到))
+		      (IP-OBJ (DP-TMP (NP (NT 今年))
+				      (DP (DT 上)
+					  (QP (CD 半)
+					      (CLP (M 年)))))
+			      (PU ，)
+			      (NP-SBJ (NP (NP-PN (NR 中)
+						 (NR 俄))
+					  (QP (CD 两))
+					  (NP (NN 国)))
+				      (NP (NN 贸易额)))
+			      (VP (PP (P 比)
+				      (NP (NP (NT 去年))
+					  (DP (DT 同))
+					  (NP (NN 期))))
+				  (VP (VV 下降)))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  今年 上 半 年 ， 中 俄 两 国 贸易额 比 去年 同 期 下降 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 要)
+		      (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 加入)))
+				       (LC 时))
+			      (VP (VV 满怀)
+				  (NP-OBJ (NN 发财梦))))
+			  (PU ，)
+			  (VP (ADVP (AD 只))
+			      (VP (VRD (VV 注意)
+				       (VV 到))
+				  (NP-OBJ (NP (DNP (NP (NN 奖金))
+						   (DEG 的))
+					      (NP (NN 额度)))
+					  (CC 和)
+					  (NP (NP-APP (NN 国外)
+						      (NN 旅游)
+						      (PU 、)
+						      (NN 钻石)
+						      (NN 翡翠)
+						      (ETC 等))
+					      (NP (NN 荣衔))))))
+			  (PU ，)
+			  (VP (ADVP (AD 却))
+			      (VP (VV 忽略)
+				  (AS 了)
+				  (NP-OBJ (DNP (NP (NT 将来))
+					       (DEG 的))
+					  (NP (NN 退路))))))))) 
+	  </parse>
+	  <arg n="0">
+	  只 
+	  </arg>
+	  <arg n="1">
+	  奖金 的 额度 和 国外 旅游 、 钻石 翡翠 等 荣衔 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

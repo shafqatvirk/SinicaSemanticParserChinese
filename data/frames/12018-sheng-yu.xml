@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 生育 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity giving birth"/>
+      <role argnum="1" argrole="entity arg0 gives birth to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 照顾)
+			      (NP-OBJ (DNP (LCP (NP (NN 生育))
+						(LC 后))
+					   (DEG 的))
+				      (NP (NN 警犬)
+					  (CC 和)
+					  (NN 幼崽))))))
+	      (PU ，)
+	      (NP-SBJ (NN 战士))
+	      (VP (ADVP (AD 甚至))
+		  (ADVP (AD 彻夜))
+		  (VP (VV 守护)
+		      (PP-LOC (P 在)
+			      (NP (NN 犬舍)))))) 
+	  </parse>
+	  <arg n="0">
+	  警犬 
+	  </arg>
+	  <arg n="1">
+	  幼崽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

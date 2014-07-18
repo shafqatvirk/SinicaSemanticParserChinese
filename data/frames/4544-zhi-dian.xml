@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致电 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 calls"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 市民))
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 如))
+			      (VP (VE 有)
+				  (NP-OBJ (NN 查询)))))
+		  (PU ，)
+		  (VP (VV 可)
+		      (VP (VV 致电)
+			  (QP-OBJ (CD 二)
+				  (CD 八)
+				  (CD 二)
+				  (CD 四)
+				  (CD 六)
+				  (CD 一)
+				  (CD 一)
+				  (CD 一)))))) 
+	  </parse>
+	  <arg n="0">
+	  市民 
+	  </arg>
+	  <arg n="1">
+	  二 八 二 四 六 一 一 一 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 如 有 查询 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揭幕 </id>
+    <frameset id="f1" edef="present">
+      <role argnum="0" argrole="presenter"/>
+      <role argnum="1" argrole="thing presented"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-APP (NP-PN (NP-PN (NR 香港))
+					 (ADJP (JJ 特别))
+					 (NP (NN 行政区)))
+				  (NP (NN 行政)
+				      (NN 长官)))
+			  (NP-PN (NR 董建华)))
+		      (CC 与)
+		      (NP (NP-APP (NP-PN (NR 中国))
+				  (NP (NN 副总理)
+				      (CC 兼)
+				      (NN 外长)))
+			  (NP-PN (NR 钱其琛))))
+	      (VP (NP-TMP (NT 今天)
+			  (NT 早上))
+		  (PP-TMP (P 在)
+			  (LCP (NP (NP (NP-PN (NR 香港)
+					      (NN 会议)
+					      (NN 展览)
+					      (NN 中心))
+				       (NP (NN 新翼)))
+				   (NP (NP-PN (NP-PN (NR 香港))
+					      (ADJP (JJ 特别))
+					      (NP (NN 行政区)))
+				       (NP (NN 成立)
+					   (NN 庆典))))
+			       (LC 後)))
+		  (PP-BNF (P 为)
+			  (NP (NP-TTL (PU 「)
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 永远))
+						      (VP (VV 盛开))))
+					      (DEC 的)))
+				      (NP (NN 紫荆花))
+				      (PU 」))
+			      (NP (NN 雕塑))))
+		  (VP (VV 揭幕)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  香港 特别 行政区 行政 长官 董建华 与 中国 副总理 兼 外长 钱其琛 
+	  </arg>
+	  <arg n="1">
+	  为 「 *OP* *T*-1 永远 盛开 的 紫荆花 」 雕塑 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 早上 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 香港 会议 展览 中心 新翼 香港 特别 行政区 成立 庆典 後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="open, start">
+      <role argnum="0" argrole="opening event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (IP (NP-SBJ (QP (OD 第三十四)
+			      (CLP (M 届)))
+			  (NP-PN (NR 哥斯达黎加)
+				 (NN 自行车赛)))
+		  (VP (VC 是)
+		      (VP (NP-TMP (NT １２月)
+				  (NT １８日))
+			  (PP-LOC (P 在)
+				  (NP (NP-APP (NP-PN (NR 哥斯达黎加))
+					      (NP (NN 首都)))
+				      (NP-PN (NR 圣何塞))))
+			  (VP (VV 揭幕)))))
+	      (SP 的)
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  第三十四 届 哥斯达黎加 自行车赛 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １２月 １８日 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 哥斯达黎加 首都 圣何塞 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

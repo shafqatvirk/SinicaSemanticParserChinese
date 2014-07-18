@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person relocated"/>
+      <role argnum="2" argrole="destination"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (PU “)
+			 (NN 小狗)
+			 (PU ”))
+	      (VP (ADVP (AD 也))
+		  (VP (VP (SB 被)
+			  (VP (VV 调往)
+			      (NP-PN-OBJ (NR 云南))))
+		      (VP (VV 缉毒))))) 
+	  </parse>
+	  <arg n="1">
+	  “ 小狗 ” 
+	  </arg>
+	  <arg n="2">
+	  云南 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

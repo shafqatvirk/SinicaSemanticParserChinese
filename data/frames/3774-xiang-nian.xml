@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 享年 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="length of life"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP (NN 此间)
+			      (NN 报纸))
+			  (VP (NP-TMP (NT 今天))
+			      (VP (VV 报道)))))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NR 朝鲜)
+				     (NR 劳动党))
+			      (NP (NN 中央)
+				  (NN 委员)))
+		      (PU 、)
+		      (NP-APP (NP (NP-PN (NP-PN (NR 朝鲜))
+					 (ADJP (ADVP (AD 最))
+					       (ADJP (JJ 高)))
+					 (NP (NN 人民)
+					     (NN 会议)))
+				  (ADJP (JJ 常任))
+				  (NP (NN 委员会)))
+			      (ADJP (JJ 名誉))
+			      (NP (NN 副委员长)))
+		      (NP-PN (NR 全文燮)))
+	      (VP (VP (PP-PRP (P 因)
+			      (NP (NN 病)))
+		      (PP-TMP (P 于)
+			      (NP (NT ２９日)))
+		      (VP (VV 逝世)))
+		  (PU ，)
+		  (VP (VV 享年)
+		      (NP-OBJ (QP (CD ７９)
+				  (CLP (M 岁))))))) 
+	  </parse>
+	  <arg n="0">
+	  朝鲜 劳动党 中央 委员 、 朝鲜 最 高 人民 会议 常任 委员会 名誉 副委员长 全文燮 
+	  </arg>
+	  <arg n="1">
+	  ７９ 岁 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 此间 报纸 今天 报道 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

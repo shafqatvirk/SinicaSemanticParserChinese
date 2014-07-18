@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 配备 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity equipped/allocated"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而且))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-LOC (NP (DP (DT 这)
+				   (CLP (M 颗)))
+			       (NP (NN 卫星)))
+			   (LC 上))
+		  (VP (VV 配备)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 应)
+					      (VP (VE 有)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的)))
+			      (NP (NN 电力)
+				  (NN 机器)
+				  (CC 和)
+				  (NN 传感器)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 应 有 *T*-1 的 电力 机器 和 传感器 
+	  </arg>
+	  <arg n="2">
+	  这 颗 卫星 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  而且 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 政府))
+		      (DP (DT 各))
+		      (NP (NN 机关)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 配备)
+		      (AS 了)
+		      (NP-OBJ (ADJP (JJ 双语))
+			      (NP (NN 译员)))))) 
+	  </parse>
+	  <arg n="1">
+	  双语 译员 
+	  </arg>
+	  <arg n="2">
+	  政府 各 机关 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

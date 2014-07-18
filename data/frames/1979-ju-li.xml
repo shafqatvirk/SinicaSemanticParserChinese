@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 距离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="distance/difference between entities of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VP (VV 距离)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP (-NONE- *T*-1))
+					  (VP (ADVP (AD 已))
+					      (VP (VCD (VV 投产)
+						       (VV 发电)))))
+				      (DEC 的)))
+			      (NP-PN (NR 大亚湾)
+				     (NN 核电站)))
+		      (QP-EXT (ADVP (AD 仅))
+			      (QP (CD 一点二)
+				  (CLP (M 公里)))))
+		  (PU ，)
+		  (VP (VSB (VV 规划)
+			   (VV 建造))
+		      (NP-OBJ (QP (CD 四)
+				  (CLP (M 台)))
+			      (NP (QP (CD 百万)
+				      (CLP (M 千瓦)))
+				  (NP (NN 级)))
+			      (NP (NN 核电)
+				  (NN 机组)))))) 
+	  </parse>
+	  <arg n="0">
+	  它 
+	  </arg>
+	  <arg n="0">
+	  *OP* *T*-1 已 投产 发电 的 大亚湾 核电站 
+	  </arg>
+	  <arg n="1">
+	  仅 一点二 公里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 整)
+			  (CLP (M 个)))
+		      (NP (NN 联赛)))
+	      (VP (VP-FOC (VV 距离)
+			  (NP-OBJ (NN 冻僵)))
+		  (VP (ADVP (AD 仅))
+		      (VP (VV 余)
+			  (QP-OBJ (CD ８)
+				  (CLP (M 日))))))) 
+	  </parse>
+	  <arg n="0">
+	  整 个 联赛 
+	  </arg>
+	  <arg n="0">
+	  冻僵 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

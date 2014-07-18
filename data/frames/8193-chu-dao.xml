@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出道 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 台湾))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 从)
+				  (NP (NP (NP (QP (CD 三))
+					      (NP (NN 厅)))
+					  (NP (NN 电影)))
+				      (NP (NN 时代))))
+			  (VP (VV 开始))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN-APP (NR 秦汉)
+				 (PU 、)
+				 (NR 秦祥林)
+				 (PU 、)
+				 (NR 刘文正)
+				 (ETC 等))
+		      (NP (NN 人)))
+	      (VP (VV 出道))) 
+	  </parse>
+	  <arg n="0">
+	  秦汉 、 秦祥林 、 刘文正 等 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 从 三 厅 电影 时代 开始 
+	  </arg>
+	  <arg n="m" f="loc">
+	  台湾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

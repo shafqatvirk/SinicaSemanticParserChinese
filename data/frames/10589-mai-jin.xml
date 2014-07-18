@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 埋进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 buries arg1 into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-ADV (ADVP (CS 虽然))
+		    (IP (NP-SBJ (PN 大家))
+			(VP (ADVP (AD 都))
+			    (ADVP (AD 不))
+			    (VP (VV 知道)
+				(IP-Q-OBJ (NP-SBJ (NN 瓦爷))
+					  (VP (VC 是)
+					      (NP-PRD (DP-WH (DT 什麽))
+						      (NP (NN 东西)))))))))
+	    (PU ，)
+	    (ADVP (AD 因此))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 只要))
+			    (VP (VV 挖到)
+				(NP-OBJ (DP (DT 这)
+					    (CLP (M 种)))
+					(NP (NN 陶片))))))
+		(PU ，)
+		(IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 担心)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 得罪)
+					(AS 了)
+					(NP-OBJ (NN 瓦爷))))))
+		(PU ，)
+		(ADVP (AD 就))
+		(ADVP (AD 赶紧))
+		(ADVP (AD 再))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (NN 瓦片))
+			    (VP (VV 埋进)
+				(LCP-OBJ (NP (NN 土))
+					 (LC 里))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	瓦片 
+	</arg>
+	<arg n="2">
+	土 里 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	赶紧 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 担心 *PRO* 得罪 了 瓦爷 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 只要 挖到 这 种 陶片 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<arg n="m" f="adv">
+	虽然 大家 都 不 知道 瓦爷 是 什麽 东西 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

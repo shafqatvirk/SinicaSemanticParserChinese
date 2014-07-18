@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 哭掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person crying"/>
+      <role argnum="1" argrole="thing falling because of arg0's crying"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 看)
+				  (NP-TTL-OBJ (PU 《)
+					      (NN 涨潮日)
+					      (PU 》))))
+		      (NP-SBJ (NP (PN 我))
+			      (NP (NN 眼镜)))
+		      (VP (ADVP (AD 都))
+			  (VP (VV 哭掉)
+			      (AS 了))))
+		  (PU ！)
+		  (PP (P 因为)
+		      (IP (NP-SBJ (PN 他))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ-1 (NP (PN 我们))
+						(DNP (NP (NN 早年))
+						     (DEG 的))
+						(NP (NN 愁苦)
+						    (PU 、)
+						    (NN 困顿)))
+				      (VP (ADVP (AD 都))
+					  (VP (VRD (VV 写)
+						   (VV 出来))
+					      (AS 了)
+					      (NP-OBJ (-NONE- *-1))))))))) 
+	  </parse>
+	  <arg n="1">
+	  我 眼镜 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 看 《 涨潮日 》 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 他 把 我们 早年 的 愁苦 、 困顿 都 写 出来 了 *-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

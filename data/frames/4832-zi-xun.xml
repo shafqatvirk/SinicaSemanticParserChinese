@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谘询 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people consulted"/>
+      <role argnum="2" argrole="matter concerning which arg1 is consulted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 届时))
+		  (ADVP (AD 将))
+		  (VP (VV 谘询)
+		      (NP-OBJ (NP-APP (NP (NN 劳工)
+					  (NN 事宜))
+				      (NP (QP (CD 三))
+					  (NP (NN 方)))
+				      (NP (NN 谘询)
+					  (NN 机构)))
+			      (PU -)
+			      (PU -)
+			      (NP-PN (NN 劳工)
+				     (NN 顾问)
+				     (NN 委员会))
+			      (PRN (PU （)
+				   (NP-PN (NN 劳顾会))
+				   (PU ）)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  劳工 事宜 三 方 谘询 机构 - - 劳工 顾问 委员会 （ 劳顾会 ） 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  届时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

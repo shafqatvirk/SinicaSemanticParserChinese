@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 蹦出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 utters suddenly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 这时))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 站)
+				      (PP (P 在)
+					  (NP (NP (PN 他))
+					      (NP (NN 旁边))))))
+			      (DEC 的)))
+		      (QP (CD 一)
+			  (CLP (M 个)))
+		      (ADJP (JJ 小))
+		      (NP (NN 男孩)))
+	      (VP (VP (VV 蹦出)
+		      (QP-OBJ (CD 一)
+			      (CLP (M 句))))
+		  (PU ，)
+		  (VP (VV 续上)
+		      (NP-OBJ (DNP (NP (NP (PN 他))
+				       (NP (NN 父亲)))
+				   (DEG 的))
+			      (DP (DT 下)
+				  (QP (CD 半)
+				      (CLP (M 句)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 站 在 他 旁边 的 一 个 小 男孩 
+	  </arg>
+	  <arg n="1">
+	  一 句 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

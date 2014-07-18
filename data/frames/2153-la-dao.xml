@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拉到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (LCP-TMP (NP (NN 联赛))
+			     (LC 之后))
+		    (ADVP (AD 立即))
+		    (VP (VP (BA 将)
+			    (IP-OBJ (NP-SBJ (NN 集训)
+					    (NN 队员))
+				    (VP (VV 拉到)
+					(NP-PN-OBJ (NR 昆明)))))
+			(PU ，)
+			(VP (VV 进行)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 为期)
+						    (NP-OBJ (QP (CD 一)
+								(CLP (M 个)))
+							    (NP (NN 月)))))
+					    (DEC 的)))
+				    (NP (NN 训练))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  集训 队员 
+	  </arg>
+	  <arg n="2">
+	  昆明 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  联赛 之后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  立即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

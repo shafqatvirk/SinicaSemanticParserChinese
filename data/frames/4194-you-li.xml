@@ -1,0 +1,146 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有利 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is favorable for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 有利)
+		  (IP-OBJ (NP-SBJ (NP-PN (NR 香港))
+				  (NP (NN 经济)))
+			  (VP (ADVP (AD 长期))
+			      (VP (VCD (VA 繁荣)
+				       (VA 稳定))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  香港 经济 长期 繁荣 稳定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (NP (NT 今后))
+		      (QP (CD 三)
+			  (CLP (M 年))))
+	      (NP-SBJ (NP (DNP (NP (NN 世界)
+				   (NN 经济)
+				   (NN 发展))
+			       (DEG 的))
+			  (NP (NN 趋势)))
+		      (CC 和)
+		      (NP (DNP (NP (NP (NN 国家))
+				   (ADJP (JJ 宏观))
+				   (NP (NN 调控)))
+			       (DEG 的))
+			  (NP (NN 政策)
+			      (NN 取向))))
+	      (PU ，)
+	      (VP (LCP-ADV (NP (NN 总体))
+			   (LC 上))
+		  (ADVP (AD 将))
+		  (VP (VV 有利)
+		      (PP (P 于)
+			  (NP (DNP (NP (NP-PN (NR 上海))
+				       (NP (NN 经济)))
+				   (DEG 的))
+			      (NP (NN 发展))))))) 
+	  </parse>
+	  <arg n="0">
+	  世界 经济 发展 的 趋势 和 国家 宏观 调控 的 政策 取向 
+	  </arg>
+	  <arg n="1">
+	  于 上海 经济 的 发展 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  总体 上 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今后 三 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 提供)
+	      (AS 了)
+	      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (ADVP (AD 比较))
+				      (VP (VA 有利))))
+			      (DEC 的)))
+		      (NP (NN 国际)
+			  (NN 环境)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比较 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (PP (P 对)
+					  (NP (NP-PN (NR 中国))
+					      (NP (NN 经济)
+						  (NN 发展))))
+				      (ADVP (AD 十分))
+				      (VP (VA 有利))))
+			      (DEC 的)))
+		      (NP (NN 条件)))
+	      (VP (ADVP (AD 主要))
+		  (VP (VE 有)
+		      (NP-OBJ (QP (CD 两))
+			      (NP (NN 方面)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  对 中国 经济 发展 
+	  </arg>
+	  <arg n="m" f="adv">
+	  十分 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

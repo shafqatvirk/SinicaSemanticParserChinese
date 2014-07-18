@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 涨价 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing price of which arg0 raises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-6 (-NONE- *OP*))
+		  (CP (IP (NP-TPC (-NONE- *T*-6))
+			  (NP-SBJ (NN 群众))
+			  (VP (VRD (VV 反映)
+				   (VA 强烈))))
+		      (DEC 的)))
+	      (CP (WHNP-7 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-7))
+			  (VP (VP (ADVP (AD 乱))
+				  (VP (VV 涨价)))
+			      (PU 、)
+			      (VP (ADVP (AD 乱))
+				  (VP (VV 收费)))
+			      (PU 、)
+			      (VP (ADVP (AD 乱))
+				  (VP (VV 罚款)))))
+		      (DEC 的)))
+	      (NP (NN 部门)
+		  (CC 和)
+		  (NN 单位))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-7 
+	  </arg>
+	  <arg n="m" f="adv">
+	  乱 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 造成)
+	      (NP-OBJ (IP-APP (NP-LOC (NN 世界))
+			      (NP-SBJ (NN 粮食))
+			      (VP (VV 涨价)))
+		      (NP (NN 现象)))) 
+	  </parse>
+	  <arg n="1">
+	  粮食 
+	  </arg>
+	  <arg n="m" f="loc">
+	  世界 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

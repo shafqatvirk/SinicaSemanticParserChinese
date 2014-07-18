@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 折合 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 is converted to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 共))
+		      (VP (VV 筹资)
+			  (QP-OBJ (CD 三百零六亿)
+				  (CLP (M 港元))))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 折合)
+		      (QP-OBJ (ADVP (AD 约))
+			      (QP (CD 四十亿)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  约 四十亿 美元 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-SBJ (PP-TMP (P 到)
+			  (LCP (NP (NT 目前))
+			       (LC 为止)))
+		  (PU ，)
+		  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (NP-PN (NR 中国))
+					  (NP (NN 境内)
+					      (NN 机构)))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (NN 国际)
+						       (NN 资本)
+						       (NN 市场))
+						   (LC 上)))
+				      (ADVP (AD 累计))
+				      (VP (VV 发行)
+					  (NP-OBJ (-NONE- *T*-1))))))
+			  (NP (NN 外币)
+			      (NN 债务)))
+		  (VP (VP (VV 折合)
+			  (NP-OBJ (NN 美元)))
+		      (VP (ADVP (AD 约))
+			  (VP (VC 为)
+			      (QP-PRD (CD 一百七十亿)
+				      (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 中国 境内 机构 在 国际 资本 市场 上 累计 发行 *T*-1 外币 债务 
+	  </arg>
+	  <arg n="1">
+	  美元 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 目前 为止 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

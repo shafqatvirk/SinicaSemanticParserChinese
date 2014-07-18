@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 引用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing quoted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 刘春曙))
+	      (VP (VP (VV 引用)
+		      (NP-OBJ (NP-PN (NR 李白))
+			      (DNP (LCP (IP (PU 《)
+					    (NP-SBJ (-NONE- *PRO*))
+					    (VP (NP-TMP (NN 春夜))
+						(NP-PN-LOC (NR 洛城))
+						(VP (VV 闻)
+						    (NP-OBJ (NN 笛))))
+					    (PU 》))
+					(LC 中))
+				   (DEG 的))
+			      (NP (NN 诗句))))
+		  (VP (MSP 来)
+		      (VP (VV 形容)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (QP (CD 两))
+						      (NP (NN 岸)))
+					      (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 越来越))
+						  (VP (VA 广泛))))
+					  (DEC 的)))
+				  (NP (NN 文化)
+				      (NN 交流))))))) 
+	  </parse>
+	  <arg n="0">
+	  刘春曙 
+	  </arg>
+	  <arg n="1">
+	  李白 《 *PRO* 春夜 洛城 闻 笛 》 中 的 诗句 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

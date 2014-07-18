@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 仿做 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 imitates and makes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-ADV (ADVP (CS 虽然))
+		    (IP (NP-SBJ (-NONE- *pro*))
+			(VP (ADVP (AD 日後))
+			    (VP (VE 有)
+				(IP-OBJ (NP-SBJ (DP (DT 其他))
+						(NP (NN 商号)))
+					(VP (ADVP (AD 也))
+					    (VP (VV 会)
+						(VP (VV 仿做)))))))))
+	    (PU ，)
+	    (ADVP (AD 但是))
+	    (NP-SBJ (NN 新竹人))
+	    (VP (VP (VV 认定)
+		    (IP (NP-PN-SBJ (NP-PN (NR 竹堑))
+				   (NP (NN 饼)))
+			(VP (ADVP (AD 只))
+			    (VP (VE 有)
+				(IP-OBJ (NP-SBJ (DNP (NP-PN (ADJP (JJ 新))
+							    (NP-PN (NR 复珍)))
+						     (DEG 的)))
+					(VP (VP (ADVP (AD 最))
+						(VP (VA 正宗)))
+					    (PU 、)
+					    (VP (ADVP (AD 最))
+						(VP (VA 好吃))))))))))) 
+	</parse>
+	<arg n="0">
+	其他 商号 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

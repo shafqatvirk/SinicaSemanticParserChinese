@@ -1,0 +1,169 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 支付 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="payer"/>
+      <role argnum="1" argrole="payment"/>
+      <role argnum="2" argrole="payee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (ADVP (AD 再))
+			      (VP (VV 利用)
+				  (NP-OBJ (NP-APP (NN 抵押)
+						  (PU 、)
+						  (NN 担保)
+						  (PU 、)
+						  (NN 按揭)
+						  (ETC 等))
+					  (NP (NN 贷款)))))
+			  (VP (VV 支付))))
+	      (PU ，)
+	      (NP-SBJ (NN 职工))
+	      (VP (ADVP (AD 完全))
+		  (VP (VV 可以)
+		      (VP (VV 承受))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 安置)
+					  (NP-OBJ (NN 职工)))))
+			      (DEC 的))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHPP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-MNR (-NONE- *T*-3))
+				      (VP (VV 买断)
+					  (NP-OBJ (NP (ADJP (JJ 国有))
+						      (NP (NN 职工)))
+						  (NP (NN 工龄))))))
+			      (DEC 的)))
+		      (NP (NN 费用)))
+	      (PU ，)
+	      (VP (PP-MNR (P 按)
+			  (NP (NN 财务)
+			      (NN 隶属)
+			      (NN 关系)))
+		  (PU ，)
+		  (PP-LOC (P 在)
+			  (LCP (NP (NP (ADJP (JJ 国有))
+				       (ADJP (JJ 净))
+				       (NP (NN 资产)))
+				   (NP (NN 出售)
+				       (NN 收入)))
+			       (LC 中)))
+		  (VP (VV 支付)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 不 安置 职工 的 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* *T*-3 买断 国有 职工 工龄 的 费用 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 国有 净 资产 出售 收入 中 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 财务 隶属 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 否则))
+	      (PU ，)
+	      (NP-SBJ-1 (DNP (NP (NN 败诉者))
+			     (DEG 的))
+			(NP (NN 罚款)))
+	      (VP (PP-LGS (P 由)
+			  (NP (NN 法庭)))
+		  (VP (VV 支付)
+		      (NP-OBJ (-NONE- *-1))))) 
+	  </parse>
+	  <arg n="0">
+	  由 法庭 
+	  </arg>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  否则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (CP-CND (ADVP (CS 虽然))
+			  (IP (NP-PN-SBJ (NR 美国)
+					 (CC 和)
+					 (NN 世界)
+					 (NN 银行))
+			      (VP (NP-TMP (NT 目前))
+				  (PP-DIR (P 对)
+					  (NP (DNP (NP-PN (NR 巴勒斯坦))
+						   (DEG 的))
+					      (NP (NN 会计)
+						  (NN 工作))))
+				  (ADVP (AD 不))
+				  (ADVP (AD 完全))
+				  (VP (VA 满意)))))
+		  (PU ，)
+		  (ADVP (AD 但))
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 还是))
+		      (VP (VV 同意)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 尽快))
+				      (VP (VV 支付)
+					  (NP-OBJ (QP (CD 一)
+						      (CLP (M 部分)))
+						  (NP (NN 款项))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一 部分 款项 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽快 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

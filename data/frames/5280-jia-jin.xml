@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 加进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 adds"/>
+    <role argnum="2" argrole="entity arg1 is added into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 不))
+		(VP (VV 苟同)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 本地)
+						(NN 业者))
+					(VP (BA 将)
+					    (IP-OBJ (NP-SBJ (NP (NN SPA))
+							    (PU 、)
+							    (NP (ADJP (JJ 芳香))
+								(NP (NN 疗法))))
+						    (VP (VV 加进)
+							(NP-OBJ (NN 健身)
+								(NN 中心))))))
+				    (DEC 的))
+			    (NP (NN 做法)))))) 
+	</parse>
+	<arg n="0">
+	本地 业者 
+	</arg>
+	<arg n="1">
+	SPA 、 芳香 疗法 
+	</arg>
+	<arg n="2">
+	健身 中心 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (PN 我们))
+		    (DNP (PP (P 在)
+			     (NP-PN (NR 亚洲) ))
+			 (DEG 的))
+		    (NP (NN 连锁店) ))
+	    (VP (VV 加进)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 更))
+					(VP (VA 多))))
+				(DEC 的)))
+			(NP (NN 灯光)
+			    (PU 、)
+			    (NN 装潢) )))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-1 更 多 的 灯光 、 装潢 
+	</arg>
+	<arg n="2">
+	我们 在 亚洲 的 连锁店 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

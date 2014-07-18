@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 毕业自 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="school arg0 graduates from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 出生)
+				    (NP-OBJ (NP-PN (NR 苗栗))
+					    (NP (NN 客家庄)))))
+			    (DEC 的)))
+		    (NP-PN (NR 叶菊兰)))
+	    (PU ，)
+	    (VP (VP (VV 毕业自)
+		    (NP-PN-OBJ (NP-PN (NR 辅大))
+			       (NP (NN 法律)
+				   (NN 系))))
+		(PU ，)
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 掌管)
+					    (NP-OBJ (NP (QP (CD 十二万)
+							    (CLP (M 名)))
+							(NP (NN 员工)))
+						    (PU ，)
+						    (NP (NP-APP (QP (CD 一)
+								    (CLP (M 年)))
+								(NP (QP (CD 四千多亿))
+								    (NP (NN 台币))))
+							(NP (NN 预算))))))
+				    (DEC 的)))
+			    (ADJP (JJ 新任))
+			    (NP (NN 交通)
+				(NN 部长)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 出生 苗栗 客家庄 的 叶菊兰 
+	</arg>
+	<arg n="1">
+	辅大 法律 系 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

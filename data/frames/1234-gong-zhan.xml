@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 攻占 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 塞拉利昂))
+			  (NP (NN 叛军)))
+		  (VP (VV 攻占)
+		      (NP-OBJ (NP-APP (NN 中部)
+				      (NN 重镇))
+			      (NP-PN (NR 马克尼))))) 
+	  </parse>
+	  <arg n="0">
+	  塞拉利昂 叛军 
+	  </arg>
+	  <arg n="1">
+	  中部 重镇 马克尼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

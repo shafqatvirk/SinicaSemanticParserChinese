@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 就任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="position arg0 assumes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 冀)
+			 (NN 大使))
+	      (VP (NP-TMP (NT 不久))
+		  (ADVP (AD 将))
+		  (VP (VP (VV 到)
+			  (NP-PN-OBJ (NR 纽约)))
+		      (VP (VV 就任)
+			  (NP-OBJ (NP-PN (NR 联合国))
+				  (NP (NN 副秘书长))))))) 
+	  </parse>
+	  <arg n="0">
+	  冀 大使 
+	  </arg>
+	  <arg n="1">
+	  联合国 副秘书长 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  不久 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 行政)
+			  (NN 长官))
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 就任)))
+			       (LC 时))
+		      (VP (VV 应)
+			  (VP (PP-DIR (P 向)
+				      (NP (NP (ADJP (JJ 终审))
+					      (NP (NN 法院)))
+					  (NP (NN 首席)
+					      (NN 法官))))
+			      (VP (VV 申报)
+				  (NP-OBJ (NN 财产))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

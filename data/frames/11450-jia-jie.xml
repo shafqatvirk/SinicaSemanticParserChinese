@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 嫁接 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="thing arg0 grafts arg1 onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP-WH (AD 如何))
+		  (VP (VV 选种)
+		      (PU 、)
+		      (VV 藏种)
+		      (PU 、)
+		      (VV 嫁接)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	如何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

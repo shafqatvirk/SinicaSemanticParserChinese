@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 结局 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 ends in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 最後))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 终於))
+		    (VP (VV 守得云开见月明)))
+		(PU ，)
+		(VP (ADVP (AD 圆满))
+		    (VP (VV 结局))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	圆满 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

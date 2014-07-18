@@ -1,0 +1,188 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 培育 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity cultivated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 培育)
+		      (NP-OBJ (ADJP (JJ 无毒))
+			      (NP (NN 果树)
+				  (NN 苗木)))
+		      (QP-EXT (CD 二十万)
+			      (CLP (M 株)))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  无毒 果树 苗木 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  二十万 株 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity cultivated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (QP (CD 两)
+			       (CLP (M 年)))
+			   (LC 来))
+		  (ADVP (AD 已))
+		  (ADVP (AD 先后))
+		  (VP (VP (PP-DIR (P 从)
+				  (NP (NP-PN-APP (NR 美国)
+						 (PU 、)
+						 (NR 日本)
+						 (ETC 等))
+				      (NP (NN 国家))))
+			  (VP (VV 引进)
+			      (NP-OBJ (QP (CD 五十多)
+					  (CLP (M 个)))
+				      (NP-APP (NN 瓜)
+					      (PU 、)
+					      (NN 菜)
+					      (PU 、)
+					      (NN 花卉)
+					      (PU 、)
+					      (NN 果树)
+					      (ETC 等))
+				      (ADJP (JJ 新))
+				      (NP (NN 品种)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VRD (VV 培育)
+			       (VV 出))
+			  (NP-OBJ (ADJP (JJ 优良))
+				  (NP (NN 苗木)))
+			  (QP-EXT (CD 三百五十万)
+				  (CLP (M 株))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  优良 苗木 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三百五十万 株 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  两 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity cultivated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 发挥)
+	      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 平日))
+				      (VP (VRD (VV 培育)
+					       (VV 起来))
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 力量)
+			  (CC 和)
+			  (NN 技巧)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  平日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity cultivated successfully"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT ７月)
+		      (NT ２３日))
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 个)))
+		      (NP (NN 国际)
+			  (NN 科研)
+			  (NN 小组)))
+	      (VP (ADVP (AD 又))
+		  (PP-LOC (P 在)
+			  (LCP (NP (NP-PN (NR 英国))
+				   (NP-TTL (PU 《)
+					   (NN 自然)
+					   (PU 》))
+				   (NP (NN 杂志)))
+			       (LC 上)))
+		  (VP (VV 宣布)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VRD (VV 培育)
+				       (VA 成功))
+				  (NP-OBJ (QP (CD 三)
+					      (CLP (M 代)))
+					  (NP (NN 克隆)
+					      (NN 鼠)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  三 代 克隆 鼠 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

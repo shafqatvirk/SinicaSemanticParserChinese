@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吝啬 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is stingy in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (VV 希望)
+		(NP-OBJ (PN 她))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (ADVP (AD 不))
+			    (VP (VV 要)
+				(VP (VV 吝啬)
+				    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						(IP (NP-SBJ (PN 自己))
+						    (VP (VP (VV 学习))
+							(VP (MSP 所)
+							    (VP (VV 得)
+								(NP-OBJ (-NONE- *T*-2)))))))))))
+			(PU ，)
+			(VP (VV 能)
+			    (VP (PP (P 跟)
+				    (NP (DP (DT 其他))
+					(NP (NN 同学))))
+				(VP (VV 分享)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* 自己 学习 所 得 *T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

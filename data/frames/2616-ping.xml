@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 凭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing relied on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 厂商))
+	      (VP (VV 要)
+		  (VP (VP (VV 凭)
+			  (NP-OBJ (DNP (NP (PN 自己))
+				       (DEG 的))
+				  (NP (NN 力量))))
+		      (VP (MSP 去)
+			  (VP (VV 单打独斗)))))) 
+	  </parse>
+	  <arg n="0">
+	  厂商 
+	  </arg>
+	  <arg n="1">
+	  自己 的 力量 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

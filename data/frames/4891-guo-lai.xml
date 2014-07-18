@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 过来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity moving"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (ADJP (JJ 高龄))
+			(NP (NN 阿嬷)))
+		    (CC 及)
+		    (NP (NN 兄弟))
+		    (PU 、)
+		    (NP (NN 妯娌))
+		    (PU 、)
+		    (NP (NN 侄子))
+		    (ETC 等))
+	    (VP (ADVP (AD 都))
+		(PP-DIR (P 从)
+			(NP (NN 附近)
+			    (NN 乡镇)))
+		(VP (VV 过来)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 团聚)))))) 
+	</parse>
+	<arg n="0">
+	高龄 阿嬷 及 兄弟 、 妯娌 、 侄子 等 
+	</arg>
+	<arg n="m" f="dir">
+	从 附近 乡镇 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

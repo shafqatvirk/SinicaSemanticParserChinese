@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 恐怕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 worries about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 在))
+		      (VP (VP (VV 感慨)
+			      (IP-OBJ (NP-SBJ (NN 人事)
+					      (PU 、)
+					      (NN 景物))
+				      (VP (VV 变幻无常))))
+			  (PU ，)
+			  (VP (VV 恐怕)
+			      (IP-OBJ (NP-SBJ (NN 昔时)
+					      (NN 事迹))
+				      (PU ，)
+				      (VP (ADVP (AD 即将))
+					  (ADVP (AD 渐渐))
+					  (VP (VV 湮灭)))))))
+		  (PU ，)
+		  (VP (MSP 而)
+		      (VP (PP-TMP (P 於)
+				  (LCP (QP (CD 三)
+					   (CLP (M 年)))
+				       (LC 前)))
+			  (VP (VP (VV 组织)
+				  (NP-OBJ (NN 基金会)))
+			      (PU ，)
+			      (VP (VV 筹募)
+				  (NP-OBJ (NN 经费))))))
+		  (PU ，)
+		  (VP (VV 游说)
+		      (NP-OBJ (NN 政府))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-LOC (P 在)
+				      (LCP (LCP (NP (NN 监狱)
+						    (NN 门))
+						(LC 前))
+					   (LCP (NP (NN 海岸))
+						(LC 上))))
+			      (VP (VV 树立)
+				  (NP-OBJ (NN 纪念碑)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  昔时 事迹 ， 即将 渐渐 湮灭 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

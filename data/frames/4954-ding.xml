@@ -1,0 +1,138 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 订 </id>
+  <frameset id="f1" edef="book,reserve,subscribe to,...">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 books/subscribes to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (VV 代)
+		    (NP-OBJ (NN 客)))
+		(VP (VV 订)
+		    (NP-OBJ (NN 机票))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	机票 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="decide on,set up, draw up (plan)">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 decides on/sets up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 自))
+		(VP (VV 订)
+		    (NP-OBJ (NN 游戏)
+			    (NN 规则))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	游戏 规则 
+	</arg>
+	<arg n="m" f="adv">
+	自 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3" edef="stipulate">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 stipulates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (LST (CD 三))
+		(PU 、)
+		(NP-TTL-TPC (PU 「)
+			    (IP-APP (NP-SBJ (NP (NN 国家)
+						(NN 金融)
+						(NN 安定))
+					    (NP (NN 基金)))
+				    (VP (VV 设置)
+					(CC 及)
+					(VV 管理)))
+			    (NP (NN 条例))
+			    (PU 」))
+		(PU ：)
+		(IP-SBJ (NP-SBJ (NN 政府))
+			(VP (PP-BNF (P 为)
+				    (NP (NN 股市)))
+			    (VP (VV 护盘))))
+		(VP (ADVP (AD 将))
+		    (VP (VE 有)
+			(NP-OBJ (NN 法源)))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 明))
+		    (VP (VV 订)
+			(IP-OBJ (LCP-TMP (IP (NP-SBJ (NN 国家)
+						     (NN 安定))
+					     (VP (VV 受)
+						 (NP-OBJ (NN 威胁))))
+					 (LC 时)
+					 (PRN (PU ——)
+					      (UCP (ADVP (AD 如))
+						   (UCP (NP (NP (NN 国内外))
+							    (ADJP (JJ 重大))
+							    (NP (NN 事件)))
+							(PU 、)
+							(LCP (IP (IP (NP-SBJ (NN 国际)
+									     (NN 资金))
+								     (VP (ADVP (AD 大幅))
+									 (VP (VV 移动))))
+								 (PU ，)
+								 (IP (NP-SBJ (-NONE- *pro*))
+								     (VP (ADVP (AD 显著))
+									 (VP (VV 影响)
+									     (NP-OBJ (NN 资本)
+										     (NN 市场))))))
+							     (LC 时))))))
+				(PU ，)
+				(NP-SBJ (-NONE- *pro*))
+				(VP (VV 得)
+				    (VP (VV 动用)
+					(NP-OBJ (QP (CD 五千亿))
+						(NP (NN 基金)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	国家 安定 受 威胁 时 —— 如 国内外 重大 事件 、 国际 资金 大幅 移动 ， *pro* 显著 影响 资本 市场 时 ， *pro* 得 动用 五千亿 基金 
+	</arg>
+	<arg n="m" f="adv">
+	明 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

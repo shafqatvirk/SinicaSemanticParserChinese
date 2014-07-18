@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 刮起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 stirs up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (DNP (NP (NT 九六年))
+					     (DEG 的))
+					(NP (NN 飞弹)
+					    (NN 试射)))
+				(VP (PP-LOC (P 在)
+					    (LCP (NP (NN 民众)
+						     (NN 心目))
+						 (LC 中)))
+				    (VP (MSP 所)
+					(VP (VV 刮起)
+					    (NP-OBJ (-NONE- *T*-1))))))
+			    (DEC 的)))
+		    (NP (NN 涟漪)))
+	    (PU ，)
+	    (VP (ADVP (AD 至今))
+		(VP (VV 馀波荡漾)))) 
+	</parse>
+	<arg n="0">
+	九六年 的 飞弹 试射 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="loc">
+	在 民众 心目 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="thing (wind) which is blowing"/>
+    <role argnum="1" argrole="place arg0 blows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-PN-SBJ (NR 台北)
+			   (NN 国际)
+			   (NN 书展))
+		(PU ，)
+		(VP (VV 刮起)
+		    (NP-OBJ (NP-PN (NR 高行健))
+			    (NP (NN 旋风))))) 
+	</parse>
+	<arg n="0">
+	高行健 旋风 
+	</arg>
+	<arg n="1">
+	台北 国际 书展 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

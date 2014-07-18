@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奄奄一息 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (QP-ADV (CD 千)
+					      (CLP (M 年)))
+				      (ADVP (AD 不))
+				      (VP (VA 坏))))
+			      (DEC 的)))
+		      (NP (NN 神木)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 奄奄一息)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 千 年 不 坏 的 神木 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

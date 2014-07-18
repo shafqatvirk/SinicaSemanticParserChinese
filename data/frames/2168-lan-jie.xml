@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拦截 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity intercepted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 公报))
+		(VP (VV 认为)
+		    (PU ，)
+		    (IP-OBJ (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					    (VP (ADVP (AD 诸如))
+						(VP (VP (VV 禁止)
+							(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+								    (CP (IP (NP-SBJ (-NONE- *T*-1))
+									    (VP (VV 旅居)
+										(NP-PN-OBJ (NR 美国))))
+									(DEC 的)))
+								(NP-PN (NR 古巴))
+								(NP (NN 侨民)))
+							(IP (NP-SBJ (-NONE- *PRO*))
+							    (VP (PP-DIR (P 向)
+									(NP (NN 国内)
+									    (NN 家属)))
+								(VP (VP (VV 汇款))
+								    (CC 和)
+								    (VP (VV 邮寄)
+									(NP-OBJ (NN 物品)))))))
+						    (PU 、)
+						    (VP (BA 把)
+							(IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+									    (CP (IP (NP-SBJ (-NONE- *T*-2))
+										    (VP (PP-LOC (P 在)
+												(LCP (NP (NN 公海))
+												     (LC 上)))
+											(VP (VV 拦截))))
+										(DEC 的)))
+									(NP-PN (NR 古巴))
+									(NP (NN 偷渡者)))
+								(VP (VV 送到)
+								    (NP-OBJ (NP-PN (NR 关塔那摩))
+									    (NP (NN 海军)
+										(NN 基地))))))
+						    (ETC 等))))
+				    (NP (NN 做法)))
+			    (PU ，)
+			    (VP (VC 是)
+				(VP (VP (PP-DIR (P 对)
+						(NP (NP-PN (NR 古巴))
+						    (NP (NN 政府))))
+					(VP (VV 施加)
+					    (NP-OBJ (NN 压力))))
+				    (PU ，)
+				    (VP (VV 企图)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VP (VV 破坏)
+							(NP-OBJ (-NONE- *RNR*-3)))
+						    (CC 和)
+						    (VP (VV 推迟)
+							(NP-OBJ-3 (CP-APP (IP (NP-PN-SBJ (NR 古巴))
+									      (VP (VV 恢复)
+										  (NP-OBJ (NN 经济))))
+									  (DEC 的))
+								  (NP (NN 进程)))))))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 公海 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

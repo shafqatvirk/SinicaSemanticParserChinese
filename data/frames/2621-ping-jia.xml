@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 评价 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing evaluated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 阿卡耶夫))
+	      (VP (ADVP (AD 高度))
+		  (VP (VV 评价)
+		      (AS 了)
+		      (NP-OBJ (DNP (PP (P 与)
+				       (NP-PN (NR 李鹏)
+					      (NN 总理)))
+				   (DEG 的))
+			      (NP (NN 会谈)
+				  (NN 结果)))))) 
+	  </parse>
+	  <arg n="0">
+	  阿卡耶夫 
+	  </arg>
+	  <arg n="1">
+	  与 李鹏 总理 的 会谈 结果 
+	  </arg>
+	  <arg n="m" f="adv">
+	  高度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="comment given"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 文章))
+	      (VP (VP (VV 评价))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (PN 这))
+			      (VP (VP (VC 是)
+				      (NP-PRD (DNP (PP (P 对)
+						       (NP (NN 时代)
+							   (NN 脉搏)))
+						   (DEG 的))
+					      (ADJP (JJ 准确))
+					      (NP (NN 把握))))
+				  (PU ，)
+				  (VP (VC 是)
+				      (NP-PRD (DNP (PP (PP (P 对)
+							   (NP (LCP (NP (NT 近代))
+								    (LC 以来))
+							       (NP (NN 世界)
+								   (NN 历史)
+								   (NN 发展))))
+						       (PU ，)
+						       (PP (ADVP (AD 特别是))
+							   (PP (P 对)
+							       (NP (NP (NT 当前))
+								   (LCP (NP (NN 国际))
+									(LC 上))
+								   (ADJP (JJ 剧烈))
+								   (NP (NN 竞争))))))
+						   (DEG 的))
+					      (ADJP (JJ 科学))
+					      (NP (NN 概括))))
+				  (PU ，)
+				  (VP (VC 是)
+				      (NP-PRD (QP (CD 一)
+						  (CLP (M 个)))
+					      (DNP (NP (NN 马克思主义))
+						   (DEG 的))
+					      (ADJP (JJ 重要))
+					      (NP (NN 论断))))))))) 
+	  </parse>
+	  <arg n="0">
+	  文章 
+	  </arg>
+	  <arg n="1">
+	  这 是 对 时代 脉搏 的 准确 把握 ， 是 对 近代 以来 世界 历史 发展 ， 特别是 对 当前 国际 上 剧烈 竞争 的 科学 概括 ， 是 一 个 马克思主义 的 重要 论断 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

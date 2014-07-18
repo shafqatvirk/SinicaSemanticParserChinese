@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挤入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 squeezes into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 企业)
+		    (NN 人士))
+	    (VP (ADVP (AD 争相))
+		(VP (VV 挤入)
+		    (NP-OBJ (NP-APP (QP (OD 第一))
+				    (NP (NN 学府)))
+			    (PRN (PU ——)
+				 (NP-PN (NR 台湾)
+					(NN 大学)))
+			    (NP (NN 企管)
+				(NN 硕士))
+			    (NP (NN 班)))))) 
+	</parse>
+	<arg n="0">
+	企业 人士 
+	</arg>
+	<arg n="1">
+	第一 学府 —— 台湾 大学 企管 硕士 班 
+	</arg>
+	<arg n="m" f="adv">
+	争相 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

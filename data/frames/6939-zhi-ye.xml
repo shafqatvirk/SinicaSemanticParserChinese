@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 执业 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP-PN (NR 金鼎))
+			    (NP (NN 董事长)))
+		    (PU ，)
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 人))
+				(VP (VV 称)
+				    (NP-PN-OBJ (PU 「)
+					       (NR 张)
+					       (NN 医师)
+					       (PU 」))))
+			    (DEC 的)))
+		    (NP-PN (NR 张金石)))
+	    (PU ，)
+	    (VP (NP-TMP (NT 目前))
+		(ADVP (AD 仍))
+		(VP (VC 为)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 执业)))
+				    (DEC 的)))
+			    (NP (NN 牙科)
+				(NN 医师)))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

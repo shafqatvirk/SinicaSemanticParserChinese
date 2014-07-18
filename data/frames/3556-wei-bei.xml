@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 违背 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing violated/run counter to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 能)
+		      (VP (VP (VV 违背)
+			      (NP-OBJ (NP (QP (CD 三))
+					  (NP (NN 省)))
+				      (NP (NN 民心))))
+			  (VP (MSP 而)
+			      (VP (VV 有所)
+				  (NP-OBJ (NN 作为)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  三 省 民心 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-PN-SBJ (NR 美国))
+		      (VP (ADVP (AD 悍然))
+			  (VP (VV 动武))))
+	      (PU ，)
+	      (VP (CC 既)
+		  (VP (VV 侵犯)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP-PN (NR 伊拉克))
+				   (DEG 的))
+			      (NP (NN 主权))))
+		  (PU ，)
+		  (CC 也)
+		  (VP (VV 违背)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 国际)
+				       (NN 社会))
+				   (DEG 的))
+			      (ADJP (JJ 共同))
+			      (NP (NN 意愿)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 悍然 动武 
+	  </arg>
+	  <arg n="1">
+	  国际 社会 的 共同 意愿 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

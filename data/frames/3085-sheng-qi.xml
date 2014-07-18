@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 升起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing hoisted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 三)
+			  (CLP (M 名)))
+		      (NP-PN (NR 香港)
+			     (NN 警务处))
+		      (NP (NN 人员)))
+	      (VP (ADVP (AD 则))
+		  (VP (VV 负责)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 升起)
+				  (NP-OBJ (NN 特区)
+					  (NN 区旗))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  特区 区旗 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 中国))
+			  (NP (NN 国旗)))
+		      (CC 及)
+		      (NP (NP-PN (NP-PN (NR 香港))
+				 (ADJP (JJ 特别))
+				 (NP (NN 行政区)))
+			  (NP (NN 区旗))))
+	      (VP (ADVP (AD 亦))
+		  (ADVP (AD 冉冉))
+		  (VP (VV 升起)))) 
+	  </parse>
+	  <arg n="1">
+	  中国 国旗 及 香港 特别 行政区 区旗 
+	  </arg>
+	  <arg n="m" f="adv">
+	  冉冉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亦 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing rising"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 北海))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (LCP-LOC (IP (NP-PN-SBJ (NR 中国))
+							   (VP (PP-DIR (P 对)
+								       (NP (NN 外)))
+							       (VP (VV 开放))))
+						       (LC 中))
+					      (VP (VV 升起))))
+				      (DEC 的)))
+			      (QP (CD 一)
+				  (CLP (M 颗)))
+			      (NP (NN 明星)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="loc">
+	  中国 对 外 开放 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 竞争 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="thing arg0 competes to win"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-PN-SBJ (NR 台湾))
+		(VP (ADVP (AD 以後))
+		    (ADVP-WH (AD 怎麽))
+		    (PP (P 跟)
+			(NP-PN (NR 韩国)))
+		    (VP (VV 竞争)))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 
+	  </arg>
+	  <arg n="0">
+	  跟 韩国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  怎麽 
+	  </arg>
+	  <arg n="m" f="adv">
+	  以後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (NP (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 全球))
+				  (VP (PP-TMP (-NONE- *T*-1))
+				      (VP (VV 竞争))))
+			      (DEC 的)))
+		      (NP (NN 时代)))) 
+	  </parse>
+	  <arg n="0">
+	  全球 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

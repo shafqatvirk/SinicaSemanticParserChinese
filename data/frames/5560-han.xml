@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 恨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 hates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (PN 他))
+		    (DNP (PP (P 对)
+			     (NP-PN (NR 宋朝)))
+			 (DEG 的))
+		    (NP (NN 感觉)))
+	    (VP (VC 是)
+		(IP-PRD (NP-SBJ (-NONE- *PRO*))
+			(VP (CC 又)
+			    (VV 爱)
+			    (CC 又)
+			    (VV 恨))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 犹))
+		(VP (VV 恨)
+		    (NP-OBJ (NN 笙歌))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VE 无)
+			    (NP-OBJ (ADJP (JJ 妙))
+				    (NP (NN 曲)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	笙歌 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 无 妙 曲 
+	</arg>
+	<arg n="m" f="adv">
+	犹 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 cannot wait to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 美国人))
+	    (VP (VP (VV 重视)
+		    (NP-OBJ (DNP (NP (PN 自我))
+				 (DEG 的))
+			    (NP (NN 空间))))
+		(PU ，)
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 下)
+				(AS 了)
+				(NP-OBJ (NN 班))))
+		    (VP (VPT (VV 恨)
+			     (AD 不)
+			     (VV 得))
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (NP-TPC (DP (DT 什麽))
+					    (NP (NN 电话)))
+				    (ADVP (AD 都))
+				    (ADVP (AD 不))
+				    (ADVP (VV 接)))))))) 
+	</parse>
+	<arg n="0">
+	美国人 
+	</arg>
+	<arg n="1">
+	*PRO* 什麽 电话 都 不 接 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 下 了 班 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

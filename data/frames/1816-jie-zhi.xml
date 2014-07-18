@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 截止 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="time arg0 stops"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP-SBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 申请)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 营运)
+					  (NP-OBJ (NP (ADJP (JJ 新)))
+						  (NP (NN 专线)
+						      (NN 小巴))
+						  (NP (NN 路线)))))))
+		  (VP (NP-TMP (NT 周一))
+		      (VP (VV 截止)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 申请 *PRO* 营运 新 专线 小巴 路线 
+	  </arg>
+	  <arg n="1">
+	  周一 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP (DP (DT 全))
+				   (NP-PN (NR 港)))
+			       (QP (ADVP (AD 共))
+				   (QP (CD 二十七)
+				       (CLP (M 条))))
+			       (ADJP (JJ 新))
+			       (NP (NN 专线)
+				   (NN 小巴))
+			       (NP (NN 路线)))
+			   (DEG 的))
+		      (NP (NN 营运权)))
+	      (PU ，)
+	      (VP (ADVP (AD 将))
+		  (PP-TMP (P 於)
+			  (NP (NT 星期一)
+			      (PRN (PU （)
+				   (NP (NT 七月)
+				       (NT 七日))
+				   (PU ）))
+			      (NT 中午)
+			      (NT 十二时)))
+		  (VP (VV 截止)
+		      (NP-OBJ (NN 申请))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  申请 
+	  </arg>
+	  <arg n="0" f="psr">
+	  全 港 共 二十七 条 新 专线 小巴 路线 的 营运权 
+	  </arg>
+	  <arg n="1">
+	  於 星期一 （ 七月 七日 ） 中午 十二时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

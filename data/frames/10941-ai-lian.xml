@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 爱恋 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 loves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 去年))
+	    (NP-SBJ (NP-APP (NP-PN (NN 中央)
+				   (NN 研究院))
+			    (NP (NN 研究员)))
+		    (NP-PN (NR 胡台丽)))
+	    (VP (VV 发表)
+		(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-3))
+				    (VP (VV 记录)
+					(NP-OBJ (NP (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+								(IP (NP-SBJ (-NONE- *T*-2))
+								    (VP (VV 吹)
+									(NP-OBJ (NN 鼻笛)))))
+							    (ADJP (JJ 老))
+							    (NP (NN 人)))
+						    (NP-PN (NR 乐玛立子)))
+						(NP (NN 事迹)))))
+				(DEC 的)))
+			(IP-TTL-APP (PU 《)
+				    (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 爱恋)
+					(NP-OBJ (NP-PN (NR 排湾))
+						(NP (NN 笛))))
+				    (PU 》))
+			(NP (NN 影片))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	排湾 笛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

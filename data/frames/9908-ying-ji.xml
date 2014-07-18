@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迎击 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 meets head on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VP (VV 没有)
+		      (VP (VV 逃避)))
+		  (PU ，)
+		  (VP (ADVP (AD 反而))
+		      (VP (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NN 危机) )
+				      (VP (VV 当做)
+					  (NP-OBJ (NN 挑战) ))))
+			  (PU ，)
+			  (VP (ADVP (AD 勇敢))
+			      (VP (VRD (VV 迎击)
+				       (VV 回去)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="m" f="adv">
+	  勇敢 
+	  </arg>
+	  <arg n="m" f="adv">
+	  反而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

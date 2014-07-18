@@ -1,0 +1,141 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="point touched on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (NP-TMP (NT 周三))
+					       (VP (VV 举行))))
+				       (DEC 的)))
+			       (NP (IP-APP (NP-PN-SBJ (NP-PN (NR 中国))
+						      (NP (NP (ADJP (JJ 野生))
+							      (NP (NN 动物)))
+							  (NP (NN 保护)))
+						      (NP (NN 协会)))
+					   (VP (VV 成立)))
+				   (QP (CD 十五))
+				   (NP (NN 周年)))
+			       (NP (NN 座谈会)))
+			   (LC 上)))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 专家)))
+	      (VP (DVP (ADVP (AD 不约而同))
+		       (DEV 地))
+		  (VP (VV 提到)
+		      (AS 了)
+		      (NP-PN-OBJ (NR 可可西里))))) 
+	  </parse>
+	  <arg n="0">
+	  许多 专家 
+	  </arg>
+	  <arg n="1">
+	  可可西里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不约而同 地 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *OP* *T*-1 周三 举行 的 中国 野生 动物 保护 协会 成立 十五 周年 座谈会 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李鹏)
+			 (NN 总理))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP-TTL (PU 《)
+				       (NP (NN 政府)
+					   (NN 工作)
+					   (NN 报告))
+				       (PU 》))
+			       (LC 中)))
+		  (VP (VV 提到)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 要)
+				  (VP (ADVP (AD 优先))
+				      (VP (VV 发展)
+					  (NP-OBJ (NN 基础)
+						  (NN 设施)
+						  (CC 和)
+						  (NN 中西部)
+						  (NN 地区)
+						  (NN 经济))))))))) 
+	  </parse>
+	  <arg n="0">
+	  李鹏 总理 
+	  </arg>
+	  <arg n="1">
+	  *pro* 要 优先 发展 基础 设施 和 中西部 地区 经济 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 《 政府 工作 报告 》 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity raised"/>
+      <role argnum="2" argrole="position raised to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 《)
+			  (NN 决定)
+			  (PU 》))
+	      (VP (BA 把)
+		  (IP-OBJ (UCP-SBJ (NP (NN 水利)
+				       (NN 建设))
+				   (CC 和)
+				   (IP (NP-SBJ (NN 科教))
+				       (VP (VV 兴)
+					   (NP-OBJ (NN 农)))))
+			  (VP (VV 提到)
+			      (AS 了)
+			      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *T*-4))
+					      (VP (VA 突出))))
+				      (NP (NN 位置))))))) 
+	  </parse>
+	  <arg n="0">
+	  《 决定 》 
+	  </arg>
+	  <arg n="1">
+	  水利 建设 和 科教 兴 农 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-4 突出 位置 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

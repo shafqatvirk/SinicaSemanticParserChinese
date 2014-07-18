@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 歌颂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="eulogizer"/>
+      <role argnum="1" argrole="thing eulogized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 参加)
+				      (NP-OBJ (NN 座谈会))))
+			      (DEC 的)))
+		      (NP (NN 同志)))
+	      (VP (ADVP (AD 热情))
+		  (VP (VV 歌颂)
+		      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-PN-SBJ (NR 新四军))
+					  (VP (PP-PRP (P 为)
+						      (UCP (NP (NN 民族)
+							       (NN 解放))
+							   (PU 、)
+							   (IP (NP-SBJ (-NONE- *PRO*))
+							       (VP (VV 创立)
+								   (NP-OBJ (ADJP (JJ 新))
+									   (NP-PN (NR 中国)))))))
+					      (VP (MSP 所)
+						  (VP (VV 建立)
+						      (NP-OBJ (-NONE- *T*-3))))))
+				      (DEC 的)))
+			      (ADJP (JJ 伟大))
+			      (NP (NN 功绩)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 参加 座谈会 的 同志 
+	  </arg>
+	  <arg n="1">
+	  *OP* 新四军 为 民族 解放 、 *PRO* 创立 新 中国 所 建立 *T*-3 的 伟大 功绩 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

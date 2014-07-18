@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 位 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 is located at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 雅鲁藏布))
+			 (ADJP (JJ 大))
+			 (NP (NN 峡谷)))
+	      (VP (VV 位)
+		  (PP (P 于)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-LOC (NN 世界))
+				      (NP-SBJ (NN 海拔))
+				      (VP (ADVP (AD 最))
+					  (VP (VA 高))))
+				  (DEC 的)))
+			  (NP-PN (NR 青藏)
+				 (NN 高原)))))) 
+	  </parse>
+	  <arg n="0">
+	  雅鲁藏布 大 峡谷 
+	  </arg>
+	  <arg n="1">
+	  于 *OP* *T*-1 世界 海拔 最 高 的 青藏 高原 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 持 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="holder"/>
+      <role argnum="1" argrole="thing, opinion held"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 不少))
+		      (NP (NN 外国)
+			  (NN 公司)))
+	      (VP (PP-DIR (P 对)
+			  (NP (DNP (LCP (NP (NP-PN (NR 香港))
+					    (NP (NN 经济)
+						(NN 调整)))
+					(LC 后))
+				   (DEG 的))
+			      (NP (NN 前景))))
+		  (ADVP (AD 依然))
+		  (VP (VV 持)
+		      (NP-OBJ (ADJP (JJ 乐观))
+			      (NP (NN 态度)))))) 
+	  </parse>
+	  <arg n="0">
+	  不少 外国 公司 
+	  </arg>
+	  <arg n="1">
+	  乐观 态度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

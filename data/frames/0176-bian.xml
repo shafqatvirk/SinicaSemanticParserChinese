@@ -1,0 +1,178 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 变 </id>
+    <frameset id="f1" edef="change">
+      <role argnum="0" argrole="causer"/>
+      <role argnum="1" argrole="initial state"/>
+      <role argnum="2" argrole="final state"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-PN-SBJ (NR 俄))
+		  (VP (VV 变)
+		      (NP-OBJ (PU “)
+			      (ADJP (JJ 消极))
+			      (NP (NN 防守))
+			      (PU ”))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 为)
+			      (NP-OBJ (PU “)
+				      (ADJP (JJ 积极))
+				      (NP (NN 防守))
+				      (PU ”)))))) 
+	  </parse>
+	  <arg n="0">
+	  俄 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  “ 消极 防守 ” 	  	  	  
+	  </arg>
+	  <arg n="2" f="into">
+	  *PRO* 为 “ 积极 防守 ” 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 经过)
+		      (NP (DNP (QP (CD １３)
+				   (CLP (M 年)))
+			       (DEG 的))
+			  (NP (NN 开发)
+			      (NN 建设))))
+	      (PU ，)
+	      (NP-TPC (NP-PN (NR 文部))
+		      (DNP (QP (CD １２万)
+			       (CLP (M 平方公里)))
+			   (DEG 的))
+		      (NP (NN 草原)))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 旧))
+		      (NP (NN 貌)))
+	      (VP (VV 变)
+		  (NP-OBJ (ADJP (JJ 新))
+			  (NP (NN 颜))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  文部 １２万 平方公里 的 草原 	  	  	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  旧 貌 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  新 颜 	  	  	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  经过 １３ 年 的 开发 建设 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (UCP (NP (PU “)
+					(NP (QP (CD 一))
+					    (NP (NN 国)))
+					(NP (QP (CD 两))
+					    (NP (NN 制)))
+					(PU ”))
+				    (PU 、)
+				    (IP (PU “)
+					(NP-SBJ (NN 港人))
+					(VP (VV 治)
+					    (NP-PN-OBJ (NR 港)))
+					(PU ”))
+				    (PU 、)
+				    (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 高度))
+					    (VP (VV 自治)))))
+			       (DEG 的))
+			  (NP (NN 政策)))
+		  (VP (QP-ADV (CD 五十)
+			      (CLP (M 年)))
+		      (ADVP (AD 不))
+		      (VP (VV 变)))) 
+	  </parse>
+	  <arg n="1">
+	  “ 一 国 两 制 ” 、 “ 港人 治 港 ” 、 *pro* 高度 自治 的 政策 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  五十 年 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 的确))
+	      (PU ，)
+	      (PP-LOC (P 在)
+		      (NP (DNP (NP (NT 今天))
+			       (DEG 的))
+			  (NP-PN (NR 珠江)
+				 (NN 三角洲))))
+	      (PU ，)
+	      (NP-SBJ (DNP (LCP (NP (QP (CD 大部分))
+				    (NP (NN 城市)))
+				(LC 之间))
+			   (DEG 的))
+		      (NP (NN 距离)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 时间)
+				   (NN 概念))
+			       (LC 上)))
+		  (ADVP (AD 正))
+		  (VP (VV 变)
+		      (DER 得)
+		      (VP-EXT (ADVP (AD 越来越))
+			      (VP (VA 短)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  大部分 城市 之间 的 距离 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  越来越 短 	  	  	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 今天 的 珠江 三角洲 	  	  	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 时间 概念 上 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

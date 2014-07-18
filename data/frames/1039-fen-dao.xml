@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="obtainer"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (QP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (PN 他))
+			      (VP (VV 分到)
+				  (NP-OBJ (-NONE- *T*-2))))
+			  (DEC 的)))
+		  (QP (CD 一)
+		      (CLP (M 份)))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-2 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="place/class arg0 sends arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (NN 孩子))
+		  (VP (SB 被)
+		      (VP (VV 分到)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-2))
+					      (NP-SBJ (NN 英文))
+					      (VP (ADVP (AD 不))
+						  (VP (VA 好))))
+					  (DEC 的)))
+				  (NP (NN 班)))))) 
+	  </parse>
+	  <arg n="1">
+	  孩子 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 英文 不 好 的 班 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

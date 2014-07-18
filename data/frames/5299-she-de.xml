@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 舍得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 doesn't grudge doing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-1 (IP (NP-SBJ (QP (CD 四)
+				  (CLP (M 天)))
+			      (NP (NN 工)))
+		      (VP (VV 赚)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 斗)))
+				  (NP (NN 米)))))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 那里))
+			  (VP (VV 舍得)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 吃))))))
+		  (PU ，)
+		  (IP (ADVP (AD 结果))
+		      (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 拿去)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 缴)
+				      (NP-OBJ (NN 税))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 吃 
+	</arg>
+	<arg n="m" f="adv">
+	那里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 追逐)
+				    (NP-OBJ (NN 美丽))))
+			    (DEC 的)))
+		    (NP (NN 男士)))
+	    (VP (ADVP (AD 也))
+		(PP (P 以)
+		    (NP (ADJP (JJ 年轻))
+			(NP (NN 人口))))
+		(VP (VP (ADVP (AD 最))
+			(VP (VV 敢)))
+		    (CC 也)
+		    (VP (ADVP (AD 最))
+			(VP (VV 舍得)))))) 
+	</parse>
+	<arg n="0">
+	以 年轻 人口 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tpc">
+	*OP* *T*-1 追逐 美丽 的 男士 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

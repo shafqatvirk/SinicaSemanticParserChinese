@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 申 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing (wrong) arg0 rights"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 引爆)
+		(AS 了)
+		(NP-OBJ (DP (DT 那)
+			    (CLP (M 个)))
+			(CP (WHNP-3 (-NONE- *OP*))
+			    (IP (PU 「)
+				(IP (NP-SBJ (-NONE- *pro*))
+				    (VP (NP-LOC (-NONE- *T*-3))
+					(IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (VE 有)
+						    (NP-OBJ (NN 冤))))
+					(VP (VP (VE 无)
+						(NP-OBJ (NN 处)))
+					    (VP (VV 申)))))
+				(PU 、)
+				(IP (NP-TPC (NN 痛苦))
+				    (NP-SBJ (-NONE- *pro*))
+				    (VP (NP-LOC (-NONE- *T*-3))
+					(VP (VP (VE 无)
+						(NP-OBJ (NP (NN 处))))
+					    (VP (VV 喊)))))
+				(PU 」)))
+			(PU 、)
+			(CP (WHNP-4 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-4))
+				    (VP (VV 闷坏)
+					(AS 了)))
+				(DEC 的)))
+			(NP (NN 社会))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 有 冤 
+	</arg>
+	<arg n="m" f="loc">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

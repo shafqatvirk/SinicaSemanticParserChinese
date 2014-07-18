@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遍地 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity found everywhere"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+		    (CP (NP-TPC (-NONE- *T*-3))
+			(IP (IP (NP-SBJ (NN 油污))
+				(VP (VV 遍地)))
+			    (PU 、)
+			    (IP (NP-SBJ (NN 烈焰))
+				(VP (VV 熏)
+				    (NP-OBJ (NN 天)))))
+			(DEC 的)))
+		(NP (NN 石油厂))) 
+	</parse>
+	<arg n="0">
+	油污 
+	</arg>
+	<arg n="m" f="loc">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

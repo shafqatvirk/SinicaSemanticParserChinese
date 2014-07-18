@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 隐瞒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing hidden"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 现年))
+				  (VP (QP-PRD (CD 十八)
+					      (CLP (M 岁)))))
+			      (DEC 的)))
+		      (NP-APP (DNP (NP-PN (NR 郭辉))
+				   (DEG 的))
+			      (NP (NN 女友)))
+		      (NP-PN (NR 阮芳)))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 明))
+		      (VP (VV 知)
+			  (IP-OBJ (NP-PN-SBJ (NR 郭辉))
+				  (VP (VV 犯有)
+				      (NP-OBJ (NP-APP (NN 抢劫)
+						      (PU 、)
+						      (NN 杀人)
+						      (ETC 等))
+					      (NP (NN 罪行)))))))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (NN 公安)
+					   (NN 机关))
+				   (VP (QP-ADV (CD 两)
+					       (CLP (M 次)))
+				       (PP-DIR (P 向)
+					       (NP (PN 她)))
+				       (VP (VV 调查))))
+			       (LC 时))
+		      (PU ，)
+		      (ADVP (AD 仍))
+		      (VP (VP (VV 隐瞒)
+			      (NP-OBJ (NN 事实)))
+			  (PU ，)
+			  (VP (VV 提供)
+			      (NP-OBJ (NN 伪证)))
+			  (PU ，)
+			  (VP (PP-DIR (P 对)
+				      (NP-PN (NR 郭辉)))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 包庇)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 现年 十八 岁 的 郭辉 的 女友 阮芳 
+	  </arg>
+	  <arg n="1">
+	  事实 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  公安 机关 两 次 向 她 调查 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (VP (VV 隐瞒))
+					      (VP (ADVP (AD 不))
+						  (VP (VV 报))))
+					  (PU 、)
+					  (VP (VP-FOC (VV 制止))
+					      (VP (DVP (AD 不))
+						  (VP (VV 力))))))
+				  (DEC 的)))))
+	      (PU ，)
+	      (PP-MNR (ADVP (AD 一))
+		      (PP (P 经)
+			  (NP (NN 查实))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 要)
+		  (VP (ADVP (AD 严肃))
+		      (VP (VV 处理))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

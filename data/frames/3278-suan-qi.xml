@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 算起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="point arg0 starts counting from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHPP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (NN 欧元))
+			      (VP (PP-TMP (-NONE- *T*-2))
+				  (VP (VV 启动)))))
+		      (NP (NN 时间)))
+	      (VP (VC 是)
+		  (VP (PP-TMP (P 从)
+			      (NP (NT １月)
+				  (NT １日)
+				  (NT 零时)))
+		      (VP (VV 算起))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 欧元 *T*-2 启动 时间 
+	  </arg>
+	  <arg n="1">
+	  从 １月 １日 零时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

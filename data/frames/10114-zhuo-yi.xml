@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著意 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 pays attention to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (ADVP (AD 直))
+		    (PP (P 到)
+			(LCP (NP (NP (NP-PN (NR 西汉))
+				     (NP (NN 中叶)))
+				 (NP-PN (NR 汉武帝)))
+			     (LC 以下))))
+	    (PU ，)
+	    (NP-SBJ (NN 朝野))
+	    (VP (ADVP (AD 更))
+		(VP (VP (VV 著意)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 发展)
+				    (NP-OBJ (NN 教育)))))
+		    (PU ，)
+		    (VP (VV 设立)
+			(NP-OBJ (NP (QP (CD 五))
+				    (NP (NN 经)))
+				(NP (NN 博士))))))) 
+	</parse>
+	<arg n="0">
+	朝野 
+	</arg>
+	<arg n="1">
+	*PRO* 发展 教育 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="tmp">
+	直 到 西汉 中叶 汉武帝 以下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

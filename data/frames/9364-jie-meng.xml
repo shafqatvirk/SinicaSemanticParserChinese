@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 结盟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities arg0 causes to form alliance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (LCP-TMP (NP (NT 九二一))
+			   (LC 之後))
+		  (PU ∶)
+		  (NP-PN-SBJ (NR 大隘社))
+		  (VP (PP-BNF (P 为)
+			      (NP-PN (NR 北埔)
+				     (PU ．)
+				     (NR 石冈)))
+		      (VP (VV 结盟)))) 
+	  </parse>
+	  <arg n="0">
+	  大隘社 
+	  </arg>
+	  <arg n="1">
+	  为 北埔 ． 石冈 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  九二一 之後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

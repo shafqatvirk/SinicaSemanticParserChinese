@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 穿起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="clothing arg0 puts on/wears"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 近来))
+	    (NP-SBJ (NP-PN (NR 港)
+			   (NR 台))
+		    (NP (NN 流行)
+			(NN 歌唱界))
+		    (QP (CD 四))
+		    (ADJP (JJ 大))
+		    (NP (NN 天王)))
+	    (VP (ADVP (AD 争相))
+		(PP-LOC (P 在)
+			(LCP (NP (NN 舞台))
+			     (LC 上)))
+		(VP (VV 穿起)
+		    (NP-OBJ (NN 裙子))))) 
+	</parse>
+	<arg n="0">
+	港 台 流行 歌唱界 四 大 天王 
+	</arg>
+	<arg n="1">
+	裙子 
+	</arg>
+	<arg n="m" f="loc">
+	在 舞台 上 
+	</arg>
+	<arg n="m" f="adv">
+	争相 
+	</arg>
+	<arg n="m" f="tmp">
+	近来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

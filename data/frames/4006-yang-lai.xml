@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 仰赖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="relier"/>
+      <role argnum="1" argrole="thing relied on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-PN-SBJ (NR 韩国))
+		      (VP (PP (P 和)
+			      (NP-PN (NR 台湾)))
+			  (VP (VA 一样))))
+	      (PU ，)
+	      (NP-SBJ (NN 石油))
+	      (VP (VV 要)
+		  (VP (VV 仰赖)
+		      (NP-OBJ (NN 进口))))) 
+	  </parse>
+	  <arg n="0">
+	  石油 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  进口 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 对於)
+				(NP (QP (CD 成千上万)
+					(CLP (M 家)))
+				    (PU 、)
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 仰赖)
+						    (NP-OBJ (NN 大陆))
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VC 为)
+							    (NP-PRD (ADJP (ADVP (AD 最))
+									  (ADJP (JJ 重要)))
+								    (NP (NN 市场)
+									(CC 与)
+									(NN 生产)
+									(NN 基地)))))))
+					    (DEC 的)))
+				    (NP (NN 台商))))
+			(VP (MSP 来)
+			    (VP (VV 说)))))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(台商) 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  大陆 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 为 最 重要 市场 与 生产 基地 的 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

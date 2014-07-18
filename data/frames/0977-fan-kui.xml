@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 反馈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party giving feedback"/>
+      <role argnum="1" argrole="the feedback"/>
+      <role argnum="2" argrole="party receiving feedback"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 处理)
+					   (NP-OBJ (NN 领事)
+						   (NN 保护)
+						   (NN 案件))))
+			       (NP (NN 过程)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-PN-SBJ (NN 公署))
+	      (VP (VP (ADVP (AD 及时))
+		      (VP (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (NP-PN (NR 中国))
+								  (ADJP (JJ 驻外))
+								  (NP (NN 使领馆)
+								      (NN 官员)))
+							  (VP (VV 提供)
+							      (NP-OBJ (-NONE- *T*-3))))
+						      (DEC 的)))
+					      (CP (WHNP-4 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-4))
+							  (VP (VV 涉及)
+							      (NP-OBJ (NP-PN (NR 香港))
+								      (NP (NN 居民)))))
+						      (DEC 的)))
+					      (NP (NN 情况)))
+				      (VP (VV 转告)
+					  (NP-OBJ (NN 特区)
+						  (NN 政府)))))
+			  (PU ，)
+			  (CC 并)
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (DNP (NP (NP (PN 其))
+						       (NP (NN 家属)))
+						   (DEG 的))
+					      (ADJP (JJ 有关))
+					      (NP (NN 要求)))
+				      (VP (ADVP (AD 及时))
+					  (VP (VRD (VV 反馈)
+						   (VV 给))
+					      (NP-OBJ (NP (NP-PN (NR 中国))
+							  (ADJP (JJ 驻外))
+							  (NP (NN 使领馆)))
+						      (CC 及)
+						      (NP (NN 当事人))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  公署 
+	  </arg>
+	  <arg n="1">
+	  其 家属 的 有关 要求 
+	  </arg>
+	  <arg n="2">
+	  中国 驻外 使领馆 及 当事人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 处理 领事 保护 案件 过程 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  及时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

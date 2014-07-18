@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 延期 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 postpones"/>
+      <role argnum="2" argrole="time arg1 is postponed until"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 控方))
+	      (VP (VV 会)
+		  (VP (VV 反对)
+		      (NP-OBJ (DP (DT 所有))
+			      (DNP (PP (P 有关)
+				       (IP (NP-SBJ (-NONE- *pro*))
+					   (VP (PP-MNR (IP (NP-SBJ (-NONE- *PRO*))
+							   (VP (VV 等待)
+							       (NP-OBJ (NN 上诉)
+								       (NN 结果)))))
+					       (VP (VV 为)
+						   (NP-OBJ (NN 理由))))))
+				   (DEG 的))
+			      (DNP (NP (NN 延期)
+				       (NN 审讯))
+				   (DEG 的))
+			      (NP (NN 申请)))))) 
+	  </parse>
+	  <arg n="1">
+	  审讯 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

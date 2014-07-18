@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 弥封 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="exam at which arg0 covers up examinee's name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 参加)
+						  (NP-OBJ (NN 考试))))
+					  (DEC 的)))
+				  (NP (NN 人数)))
+			  (VP (VV 激增))))
+	      (PU ，)
+	      (PP-PRP (P 为了)
+		      (IP (NP-SBJ (NN 公平))
+			  (VP (VV 起见))))
+	      (PU ，)
+	      (PP-TMP (P 在)
+		      (NP (ADJP (JJ 西元))
+			  (NP (NT 九九九年))))
+	      (PU ，)
+	      (NP-SBJ (NN 省试))
+	      (VP (VV 弥封))) 
+	  </parse>
+	  <arg n="1">
+	  省试 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 西元 九九九年 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 公平 起见 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 *OP* *T*-1 参加 考试 的 人数 激增 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

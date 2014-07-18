@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 加分 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 adds points for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 虽然))
+			(VP (VV 引起)
+			    (NP-OBJ (DNP (NP (QP (CD 许多))
+					     (NP (NN 基督教)
+						 (NN 团体)))
+					 (DEG 的))
+				    (ADJP (JJ 猛力))
+				    (NP (NN 挞伐))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(NP (CP-APP (IP (NP-SBJ (NN 外侨))
+						(VP (ADVP (AD 踊跃))
+						    (VP (VV 参与))))
+					    (DEC 的))
+				    (NP (NN 热情))))
+			(VP (VV 观察))))
+	    (PU ，)
+	    (DP-SBJ (NP-PN (NR 台北))
+		    (DP (DT 这)
+			(QP (CD 一)
+			    (CLP (M 步)))))
+	    (PU ，)
+	    (VP (VP (VV 代表)
+		    (AS 了)
+		    (NP-OBJ (NN 多元)
+			    (PU 、)
+			    (NN 包容)
+			    (CC 与)
+			    (NN 开放)))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (NN 国际)
+				     (NN 人士))
+				 (LCP (NP (NN 眼))
+				      (LC 中))))
+		    (ADVP (AD 无疑))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 可以)
+						(VP (VV 加分))))
+					(DEC 的)))))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

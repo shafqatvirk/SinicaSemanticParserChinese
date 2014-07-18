@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投以 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing cast"/>
+      <role argnum="2" argrole="entity cast for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 毛里求斯))
+			  (NP (NN 政府)))
+		  (VP (PP (P 对)
+			  (NP (NN 特区)
+			      (NN 护照)))
+		      (VP (VV 投以)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 极))
+						  (VP (VV 具)
+						      (NP-OBJ (NN 信心)))))
+					  (DEC 的)))
+				  (QP (CD 一))
+				  (NP (NN 票)))))) 
+	  </parse>
+	  <arg n="0">
+	  毛里求斯 政府 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 极 具 信心 的 一 票 
+	  </arg>
+	  <arg n="2">
+	  对 特区 护照 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

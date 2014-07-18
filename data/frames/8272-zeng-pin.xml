@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增聘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="employer"/>
+      <role argnum="1" argrole="person argo hires in addition"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (PP-PRP (P 为)
+						(NP (NT Ｙ２Ｋ)))
+					(VP (VV 增聘))))
+				(DEC 的)))
+			(NP (NN 人手)))
+		(PU ，)
+		(VP (IP-TMP (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 到)
+				(NP-OBJ (NN 时候))))
+		    (VP (ADVP-WH (AD 难道))
+			(ADVP (AD 又))
+			(VP (VV 要)
+			    (VP (VV 解雇)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 Ｙ２Ｋ 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

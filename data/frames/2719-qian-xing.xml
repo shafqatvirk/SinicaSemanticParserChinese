@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 前行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving ahead"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP (NP-PN (NR 中国))
+			      (NP (NN 金融)))
+			  (PP (P 对)
+			      (NP (NN 外)))
+			  (NP (NN 开放)))
+		  (VP (ADVP (AD 稳步))
+		      (VP (VV 前行)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 金融 对 外 开放 
+	  </arg>
+	  <arg n="m" f="adv">
+	  稳步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

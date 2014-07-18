@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seer"/>
+      <role argnum="1" argrole="things seen"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NP-PN (NR 汉城))
+					(NP (NN 市中心)))
+				    (DEG 的))
+			       (NP (NN 百货)
+				   (NN 公司)))
+			   (LC 里)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 林)
+			 (NN 小姐))
+	      (VP (ADVP (AD 果然))
+		  (VP (VV 看到)
+		      (NP-OBJ (QP (CD 许多))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 令)
+					      (NP-OBJ (PN 她))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 心动)))))
+				      (DEC 的)))
+			      (NP (NN 商品)))))
+	      (PU ：)) 
+	  </parse>
+	  <arg n="0">
+	  林 小姐 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  果然 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  许多 *OP* (*T*-1)->(商品) 令 她 *PRO* 心动 的 商品 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (DVP (VP (VA 高兴))
+		       (DEV 地))
+		  (VP (VV 看到)
+		      (IP-OBJ (NP-PN-SBJ (NR 中国))
+			      (VP (PP-LOC (P 在)
+					  (NP (NP (NN 经济)
+						  (CC 和)
+						  (NN 社会)
+						  (NN 生活))
+					      (NP (NN 方面))))
+				  (VP (VV 取得)
+				      (AS 了)
+				      (NP-OBJ (ADJP (JJ 重大))
+					      (NP (NN 进展))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中国 在 经济 和 社会 生活 方面 取得 了 重大 进展 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

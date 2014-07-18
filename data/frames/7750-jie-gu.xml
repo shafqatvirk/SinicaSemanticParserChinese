@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 解雇 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 lays off"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-PRP (P 为)
+					      (NP (NT Ｙ２Ｋ)))
+				      (VP (VV 增聘))))
+			      (DEC 的)))
+		      (NP (NN 人手)))
+	      (PU ，)
+	      (VP (IP-TMP (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 到)
+			      (NP-OBJ (NN 时候))))
+		  (VP (ADVP-WH (AD 难道))
+		      (ADVP (AD 又))
+		      (VP (VV 要)
+			  (VP (VV 解雇)))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-1 为 Ｙ２Ｋ 增聘 的 人手 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="adv">
+	难道 
+	</arg>
+	<arg n="m" f="tmp">
+	*pro* 到 时候 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

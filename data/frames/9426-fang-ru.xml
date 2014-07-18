@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 彷如 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is like"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 解放军))
+	      (VP (ADVP (AD 更))
+		  (PP-TMP (ADVP (AD 早))
+			  (PP (P 在)
+			      (NP (NT 四月))))
+		  (ADVP (AD 就))
+		  (VP (VV 进入)
+		      (NP-OBJ (NP-APP (DNP (NP (NN 学生)
+					       (NN 运动))
+					   (DEG 的))
+				      (NP (NN 发起地)))
+			      (PU 、)
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 彷如)
+					      (NP-OBJ (NN 地震)
+						      (NN 震央))))
+				      (DEC 的)))
+			      (NP-PN (NR 北京)
+				     (NN 大学)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  地震 震央 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

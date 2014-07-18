@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开讲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 gives lectures on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 小学)
+		    (NN 英语))
+	    (VP (ADVP (AD 全面))
+		(VP (VV 开讲)))) 
+	</parse>
+	<arg n="1">
+	小学 英语 
+	</arg>
+	<arg n="m" f="adv">
+	全面 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN-APP (NR 李国修)
+			       (PU 、)
+			       (NR 郎祖筠)
+			       (ETC 等))
+		    (NP (NN 剧场)
+			(NN 名人)))
+	    (VP (VP (VV 到)
+		    (NP-OBJ (NN 校)))
+		(VP (VV 开讲)))) 
+	</parse>
+	<arg n="0">
+	李国修 、 郎祖筠 等 剧场 名人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

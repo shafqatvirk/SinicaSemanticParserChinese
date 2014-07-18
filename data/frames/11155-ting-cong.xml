@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 听从 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 obeys"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (NP-SBJ (NN 时间))
+			(VP (VA 有限))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 马玉山))
+	    (VP (VP (VV 听从)
+		    (NP-OBJ (NP (NP-PN (NR 台大))
+				(NP (NN 老师)))
+			    (NP (NN 建议))))
+		(PU ，)
+		(VP (VV 认为)
+		    (IP-OBJ (NP-SBJ (ADJP (JJ 高阶))
+				    (NP (NN 主管)))
+			    (VP (ADVP (AD 不))
+				(VP (VV 应)
+				    (VP (VV 单打独斗)))))))) 
+	</parse>
+	<arg n="0">
+	马玉山 
+	</arg>
+	<arg n="1">
+	台大 老师 建议 
+	</arg>
+	<arg n="m" f="prp">
+	由於 时间 有限 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

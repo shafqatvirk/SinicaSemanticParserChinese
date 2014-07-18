@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 佩服 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="admirer"/>
+      <role argnum="1" argrole="entity admired"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 提起)
+			  (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				      (CP (IP (NP-TMP (NT 当年))
+					      (NP-SBJ (NN 大寨人))
+					      (VP (PP-MNR (-NONE- *T*-1))
+						  (ADVP (AD 艰苦))
+						  (VP (VV 创业))))
+					  (DEC 的)))
+				  (NP (NN 精神)))))
+	      (PU ，)
+	      (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 还是))
+		  (PP-DIR (P 打)
+			  (LCP (NP (NN 心眼))
+			       (LC 里)))
+		  (VP (VV 佩服)))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="m" f="dir">
+	  打 心眼 里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还是 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 提起 *OP* 当年 大寨人 *T*-1 艰苦 创业 的 精神 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

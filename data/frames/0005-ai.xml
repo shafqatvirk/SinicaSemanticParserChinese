@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 爱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="love giver"/>
+      <role argnum="1" argrole="thing, person loved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (VP (VV 爱)
+					(NP-OBJ (NN 国)))
+				    (VP (VV 爱)
+					(NP-PN-OBJ (NR 港)))))
+			    (DEC 的))
+		    (NP (NN 精神)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  国 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 意大利人))
+		(VP (ADVP (AD 更))
+		    (VP (VV 爱)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-BNF (P 为)
+					    (NP (NN 足球)))
+				    (VP (MSP 而)
+					(VP (VV 激动))))))))) 
+	  </parse>
+	  <arg n="0">
+	  意大利人 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 为 足球 而 激动 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

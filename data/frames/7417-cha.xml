@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 插 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 inserts"/>
+    <role argnum="2" argrole="place arg1 is inserted into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 渔船))
+	    (VP (VP (VV 插)
+		    (AS 著)
+		    (NP-OBJ (QP (CD 八)
+				(CLP (M 面)))
+			    (NP (NN 国旗))))
+		(VP (VSB (VV 风光)
+			 (VV 进港))))) 
+	</parse>
+	<arg n="1">
+	八 面 国旗 
+	</arg>
+	<arg n="2">
+	渔船 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

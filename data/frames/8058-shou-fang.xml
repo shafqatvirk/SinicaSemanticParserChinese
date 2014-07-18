@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity being polled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (QP (CD 百分之八十四))
+			       (DEG 的))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 受访))))
+			  (NP (NN 民众)))
+		  (VP (DP-ADV (DT 每)
+			      (CLP (M 天)))
+		      (ADVP (AD 都))
+		      (VP (VV 会)
+			  (VP (VV 收看)
+			      (NP-OBJ (NN 电视)
+				      (NN 新闻)
+				      (CC 及)
+				      (NN 气象)
+				      (NN 预报)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

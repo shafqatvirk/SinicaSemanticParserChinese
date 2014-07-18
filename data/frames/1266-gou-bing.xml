@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 购并 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="thing bought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 最近))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 想)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 赴)
+						      (NP-PN-OBJ (NR 韩国)
+								 (CC 及)
+								 (NR 东南亚)))
+						  (VP-PRP (VV 购并)
+							  (PU 、)
+							  (VV 投资))))))
+			      (DEC 的)))
+		      (NP (NN 企业)))
+	      (VP (VA 不少))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

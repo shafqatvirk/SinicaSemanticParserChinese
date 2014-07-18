@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 立体化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 makes 3-dimensional"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 启发)
+		(AS 了)
+		(NP-OBJ (NP (PN 他))
+			(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (BA 将)
+					(IP-OBJ (NP-SBJ (NN 毛毛人))
+						(VP (VV 立体化)))))
+				(DEC 的))
+			(NP (NN 动机))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	毛毛人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

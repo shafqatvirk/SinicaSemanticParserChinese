@@ -1,0 +1,138 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宣布 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="declarer"/>
+      <role argnum="1" argrole="utterance"/>
+      <role argnum="2" argrole="hearer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (PP-DIR (P 向)
+			  (NP (ADJP (JJ 众多))
+			      (NP (NN 记者))))
+		  (VP (VV 宣布)
+		      (NP-OBJ (DP (DT 这)
+				  (CLP (M 个)))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 失败)))
+				      (DEC 的))
+			      (NP (NN 消息)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="2">
+	  向 众多 记者 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  这 个 *PRO* 失败 的 消息 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 英))
+		  (VP (VV 宣布)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 参加)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 入侵)
+							  (NP-PN-OBJ (NR 海地))))
+						  (DEC 的)))
+					  (ADJP (JJ 多国))
+					  (NP (NN 部队))))))) 
+	  </parse>
+	  <arg n="0">
+	  英 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 参加 *OP* (*T*-1)->(多国部队) 入侵 海地 的 多国 部队 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 当)
+		      (LCP (IP (NP-SBJ (NN 服务))
+			       (VP (VV 恢复)))
+			   (LC 时)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 另行))
+		  (VP (VV 宣布)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  另行 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-2))
+				  (NP-SBJ (NN 资金)
+					  (NN 状况))
+				  (VP (ADVP (AD 最))
+				      (VP (VA 差))))
+			      (DEC 的)))
+		      (NP (NP-PN (QP (OD 第一))
+				 (NP (NN 银行)))
+			  (CC 和)
+			  (NP-PN (NR 汉城)
+				 (NN 银行))))
+	      (VP (SB 被)
+		  (VP (VV 宣布)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 准备)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VRD (VV 出售)
+						   (VV 给))
+					      (NP-OBJ (NN 外国人))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* (*T*-2)->(第一银行和汉城银行) 资金 状况 最 差 的 第一 银行 和 汉城 银行 	  
+	  </arg>
+	  <V/>
+	  <arg n="1" f="prd">
+	  *PRO* 准备 *PRO* 出售 给 外国人 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

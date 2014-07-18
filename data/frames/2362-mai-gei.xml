@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 卖给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="goods"/>
+      <role argnum="2" argrole="buyer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 克雷)
+			 (NN 公司))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 卖给)
+		      (NP-IO (PN 我们))
+		      (NP-OBJ (QP (CD 两)
+				  (CLP (M 台)))
+			      (NP (NN 处理器)))))) 
+	  </parse>
+	  <arg n="0">
+	  克雷 公司 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  只 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  两 台 处理器 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-IJ-TPC-1 (PU 「)
+		       (IP-CND (NP-SBJ (-NONE- *pro*))
+			       (VP (ADVP (CS 如果))
+				   (VP (VV 等)
+				       (IP-OBJ (NP-SBJ (NN 情势))
+					       (VP (ADVP (AD 完全))
+						   (VP (VA 明朗)))))))
+		       (PU ，)
+		       (NP-SBJ (NN 人家))
+		       (VP (ADVP (AD 就))
+			   (ADVP (AD 不))
+			   (VP (VV 卖给)
+			       (NP-OBJ (VV 你))))
+		       (SP 了)
+		       (PU ！)
+		       (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  人家 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  就 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  你 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

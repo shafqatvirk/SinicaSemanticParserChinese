@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缴纳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="payer"/>
+      <role argnum="1" argrole="thing paid"/>
+      <role argnum="2" argrole="payee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NP (DP (DT 全))
+					  (NP (NN 国)))
+				      (NP (NN 外商)
+					  (NN 投资)
+					  (NN 企业)
+					  (CC 和)
+					  (NN 外国)
+					  (NN 企业)))
+			      (VP (VV 缴纳)
+				  (NP-OBJ (-NONE- *T*-2))))
+			  (DEC 的)))
+		  (NP (NN 所得税))) 
+	  </parse>
+	  <arg n="0">
+	  全 国 外商 投资 企业 和 外国 企业 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

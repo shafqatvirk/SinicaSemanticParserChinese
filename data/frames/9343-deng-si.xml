@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 等死 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity waiting to die"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DNP (NP (NT 那时))
+			   (DEG 的))
+		      (NP (NN 感觉)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (PU 『)
+		  (ADVP (AD 只))
+		  (VP (VV 能)
+		      (VP (VP (VV 用)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 等死))))
+			  (PU 』)
+			  (VP (MSP 来)
+			      (VP (VV 形容))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 订购 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="commodity"/>
+      <role argnum="2" argrole="seller"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 组委会))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 紧急))
+		  (PP-DIR (P 从)
+			  (NP (NN 国外)))
+		  (VP (VV 订购)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 价值)
+					      (QP-OBJ (CD １２０万)
+						      (CLP (M 元)))))
+				      (DEC 的)))
+			      (QP (CD ５)
+				  (CLP (M 台)))
+			      (ADJP (JJ 人工))
+			      (NP (NN 造雪机)))))) 
+	  </parse>
+	  <arg n="0">
+	  组委会 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 价值 １２０万 元 的 ５ 台 人工 造雪机 
+	  </arg>
+	  <arg n="2">
+	  从 国外 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧急 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (PN 他))
+			      (VP (MSP 所)
+				  (VP (VV 订购)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (NP (NN 商品)))
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 仿制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="imitator"/>
+      <role argnum="1" argrole="product"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (LCP-TMP (NP (NN 长期))
+					   (LC 以来))
+				  (PP-MNR (P 以)
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 大量))
+						  (VP (VP (VV 生产)
+							  (NP-OBJ (NN 原料药)))
+						      (CC 和)
+						      (VP (VV 仿制)
+							  (NP-OBJ (NN 外国)
+								  (NN 化学)
+								  (NN 药品)))))))
+				  (VP (VV 为主))))
+			  (DEC 的)))
+		  (NP-PN (NR 中国))
+		  (NP (NN 制药业))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  外国 化学 药品 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  大量 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

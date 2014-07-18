@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回吐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (DP (DT 前)
+						  (QP (CD 几)
+						      (CLP (M 个))))
+					      (NP (NN 交易日)))
+				      (VP (VV 紧俏))))
+			      (DEC 的)))
+		      (NP (NN 因特网股)))
+	      (VP (ADVP (AD 则))
+		  (PP-PRP (P 因)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VCD (VV 获利)
+				       (VV 回吐)))))
+		  (VP (MSP 而)
+		      (VP (VV 下跌))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 起死回生 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 revives"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 人家))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 要)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NP (NN 缝纫机))
+			  (PU 、)
+			  (NP (ADJP (JJ 大))
+			      (NP (NN 相机)
+				  (NN 镜头)))))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 到)
+			      (AS 了)
+			      (LCP-OBJ (NP (NP (PN 他))
+					   (NP (NN 手)))
+				       (LC 上))))
+		  (PU ，)
+		  (ADVP (AD 都))
+		  (VP (VV 能)
+		      (VP (VP (VV 起死回生))
+			  (PU ，)
+			  (VP (VV 变成)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VA 好用)))
+					      (DEC 的)))
+				      (NP (NN 东西)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 人家 不 要 *T*-1 的 缝纫机 、 大 相机 镜头 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 到 了 他 手 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

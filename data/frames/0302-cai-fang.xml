@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采访 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="interviewer"/>
+    <role argnum="1" argrole="interviewee"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NR 鲍恩))
+      (VP (ADVP (AD 曾))
+          (VP (VP (VV 到)
+                  (NP-OBJ (NN 现场)))
+              (VP (VV 采访)
+                  (AS 了)
+                  (NP-OBJ (DP (DT 这)
+                              (CLP (M 个)))
+                          (CP (WHNP-2 (-NONE- *OP*))
+                              (CP (IP (NP-SBJ (-NONE- *T*-2))
+                                      (VP (SB 被)
+                                          (VP (VV 炸毁))))
+                                  (DEC 的)))
+                          (NP (NN 防空洞))))))))
+	</parse>
+	<arg n="0"> 鲍恩 </arg>
+	<arg n="M" f="ADV"> 曾 </arg>
+	<V/>
+	<arg n="1"> 这 个 *OP* (*T*-2)->(防空洞) 被 炸毁 的 防空洞 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 记者))
+      (VP (NP-TMP (NT 近日))
+          (VP (VP (VRD (VV 驱车)
+                       (VV 到))
+                  (NP-OBJ (NP-APP (NP-PN (NR 广西))
+                                  (NP-PN (NR 防城港)
+                                         (PU 、)
+                                         (NR 钦州)
+                                         (PU 、)
+                                         (NR 北海)
+                                         (PU 、)
+                                         (NR 湛江)
+                                         (ETC 等)))
+                          (NP (NN 市))))
+              (VP (VV 采访))))))
+	</parse>
+	<arg n="0"> 记者 </arg>
+	<arg n="1" f="TMP"> 近日 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

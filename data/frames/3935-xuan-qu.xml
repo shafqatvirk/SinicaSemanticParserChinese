@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 选取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity selected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 经过)
+		      (NP (DNP (NP (NN 国家)
+				   (NN 重点)
+				   (NN 实验室))
+			       (DEG 的))
+			  (NP (NN 建立)
+			      (CC 与)
+			      (NN 建设))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (VV 利用)
+					  (NP-OBJ (DP (DT 各)
+						      (CLP (M 种)))
+						  (ADJP (JJ 综合))
+						  (NP (NN 优势))))
+				      (VP (MSP 所)
+					  (VP (VV 选取)
+					      (NP-OBJ (-NONE- *T*-1))))))
+			      (DEC 的)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 具有)
+				      (NP-OBJ (NN 国际)
+					      (NN 水平))))
+			      (DEC 的)))
+		      (NP (NN 课题)))
+	      (PU ，)
+	      (VP (ADVP (AD 大大))
+		  (VP (VV 促进)
+		      (AS 了)
+		      (NP-OBJ (NP (ADJP (JJ 有关))
+				  (NP (NN 学科)))
+			      (DNP (PP (P 在)
+				       (NP-PN (NR 中国)))
+				   (DEG 的))
+			      (NP (NN 建设)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

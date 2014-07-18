@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 念兹在兹 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 will not forget"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 办)
+			    (NP-OBJ (NN 英文报))))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-1))
+					(NP-PN-SBJ (NR 司马文武))
+					(VP (VV 念兹在兹)))
+				    (DEC 的)))
+			    (NP (NN 梦想))))) 
+	</parse>
+	<arg n="0">
+	司马文武 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VV 值得)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VP (VV 关心)
+							(NP-OBJ (NN 国家)
+								(NN 安全)))
+						    (CC 与)
+						    (VP (VV 决定)
+							(NP-OBJ (NN 国家)
+								(NN 安全)
+								(NN 战略))))))
+					(NP (NN 者)))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 念兹在兹)))))
+			(DEC 的)))
+		(NP (NN 努力)
+		    (NN 方向))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

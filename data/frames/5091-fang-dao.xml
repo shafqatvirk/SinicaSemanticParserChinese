@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 puts"/>
+      <role argnum="2" argrole="place arg1 is put"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 开始)
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (NN 主播)
+				      (NN 消息))
+			      (VP (VV 放到)
+				  (NP-OBJ (NN 影剧版))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	
+	  </arg>
+	  <arg n="1">
+	  主播 消息 	
+	  </arg>
+	  <arg n="2">
+	  影剧版 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (DP (DT 这)
+			      (CLP (M 种)))
+			  (NP (NN 观念)))
+		  (VP (ADVP (CS 一旦))
+		      (VP (VV 放到)
+			  (LCP-OBJ (NP (NN 教育))
+				   (LC 上))))) 
+	  </parse>
+	  <arg n="1">
+	  这 种 观念 	
+	  </arg>
+	  <arg n="2">
+	  教育 上 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 比如))
+	      (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 看到)
+			  (NP-OBJ (NN 女性)
+				  (NN 朋友))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VE 有)
+				  (IP-OBJ (NP-SBJ (NN 头发))
+					  (VP (VV 掉到)
+					      (LCP-OBJ (NP (NN 肩膀))
+						       (LC 上))))))))
+	      (PU ，)
+	      (NP-SBJ (PN 你))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 应该)
+		      (VP (DVP (VP (VA 轻轻))
+			       (DEV 地))
+			  (VP (VV 帮)
+			      (NP-OBJ (PN 她))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VRD (VV 捻)
+					       (VV 起来)))
+				      (PU ，)
+				      (VP (VV 丢掉))
+				      (PU 、)
+				      (CC 或)
+				      (VP (VV 放到)
+					  (LCP-OBJ (NP (DNP (NP (PN 自己))
+							    (DEG 的))
+						       (NP (NN 口袋)))
+						   (LC 里)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	
+	  </arg>
+	  <arg n="2">
+	  自己 的 口袋 里 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 broadcasts/shows"/>
+      <role argnum="2" argrole="thing through which arg1 is broadcasted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	    
+	  </arg>
+	  <arg n="2">
+	  喇叭 上 	    
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

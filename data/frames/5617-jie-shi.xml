@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 结识 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="person arg0 gets to know"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-LOC (P 在)
+				(NP (NN 客家庄)))
+			(VP (VV 待)
+			    (AS 了)
+			    (NP-OBJ (ADJP (JJ 好))
+				    (NP (NN 一阵子))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 舒诗伟))
+	    (VP (VP (ADVP (AD 慢慢))
+		    (VP (VV 融入)
+			(NP-OBJ (DNP (NP (NN 北埔人))
+				     (DEG 的))
+				(NP (NN 生活圈)))))
+		(PU ，)
+		(VP (VV 结识)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 一些))
+			    (NP (NN 朋友)))))) 
+	</parse>
+	<arg n="0">
+	舒诗伟 
+	</arg>
+	<arg n="1">
+	一些 朋友 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 在 客家庄 待 了 好 一阵子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

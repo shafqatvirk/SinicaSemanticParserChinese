@@ -1,0 +1,121 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拍完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 finishes shooting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (LCP-TMP (NP (NT 一九九三年)
+				     (CC 至)
+				     (NT 九四年))
+				 (LC 间))
+			(PU ，)
+			(VP (VV 拍完)
+			    (NP-OBJ (NP-APP (NP-TTL (PU 《)
+						    (NN 诱僧)
+						    (PU 》))
+					    (CC 和)
+					    (NP-TTL (PU 《)
+						    (NN 云吞)
+						    (NN 汤)
+						    (PU 》)))
+				    (QP (CD 两)
+					(CLP (M 部)))
+				    (NP (NN 电影))))))
+	    (PU ，)
+	    (NP-SBJ (NP (NN 夫妻))
+		    (QP (CD 两))
+		    (NP (NN 人)))
+	    (VP (VP (VP (VP (VV 到)
+			    (NP-PN-OBJ (NR 澳洲)))
+			(VP (VV 探望)
+			    (NP-OBJ (NN 亲戚))))
+		    (CC 并)
+		    (VP (VV 休息)))
+		(PU ，)
+		(VP (ADVP (AD 才))
+		    (VP (VV 发现)
+			(IP-OBJ (NP-SBJ (DNP (NP-PN (NR 澳洲))
+					     (DEG 的))
+					(NP (NN 电影)
+					    (NN 後制作))
+					(NP (NN 技术)
+					    (NN 水准)))
+				(VP (ADVP (AD 很))
+				    (VP (VA 高)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	《 诱僧 》 和 《 云吞 汤 》 两 部 电影 
+	</arg>
+	<arg n="m" f="tmp">
+	一九九三年 至 九四年 间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 有些))
+		    (NP (NN 人)))
+	    (VP (VV 可以)
+		(VP (QP-MNR (CD 七百万))
+		    (ADVP (AD 就))
+		    (VP (VV 拍完))))) 
+	</parse>
+	<arg n="0">
+	有些 人 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="mnr">
+	七百万 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (DP (DT 有些))
+			(NP (NN 国片)))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 拍完)
+				(AS 了)))
+		    (PU ，)
+		    (ADVP (AD 也))
+		    (VP (VNV (VV 找)
+			     (AD 不)
+			     (VV 到))
+			(NP-OBJ (NN 戏院))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 上映)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

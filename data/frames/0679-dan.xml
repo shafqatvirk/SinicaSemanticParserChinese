@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 担 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="bearer"/>
+      <role argnum="1" argrole="burden, responsibility"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (PP (P 作为)
+				      (NP (NN 公众)
+					  (NN 人物)))
+				  (LCP-LOC (NP (NN 身))
+					   (LC 上))
+				  (VP (MSP 所)
+				      (VP (VV 担)
+					  (NP-OBJ (-NONE- *T*-2))))))
+			  (DEC 的)))
+		  (NP (NN 责任))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  作为 公众 人物 
+	  </arg>
+	  <arg n="m" f="loc">
+	  身 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

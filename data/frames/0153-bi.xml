@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 必 </id>
+    <frameset id="f1" edef="auxiliary">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 needs"/>
+      <role argnum="2" argrole="thing arg1 is needed for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (IP-SBJ (NP-SBJ (NN 台商))
+		      (VP (VV 谈)
+			  (NP-OBJ (NN 生意))))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 必)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 冗长)))
+				      (DEC 的)))
+			      (NP (NN 契约)
+				  (NN 过程)))))) 
+	  </parse>
+	  <arg n="2">
+	  台商 谈 生意 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 冗长 的 契约 过程 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

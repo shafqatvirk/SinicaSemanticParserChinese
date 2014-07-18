@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 招致 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing caused"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 有的))
+	      (VP (ADVP (AD 还))
+		  (VP (VP (VV 招致)
+			  (NP-OBJ (NN 法律)
+				  (NN 诉讼)))
+		      (CC 或)
+		      (VP (SB 被)
+			  (VP (VV 判)
+			      (NP-OBJ (ADJP (JJ 巨额))
+				      (NP (NN 赔偿)))))))) 
+	  </parse>
+	  <arg n="0">
+	  有的 
+	  </arg>
+	  <arg n="1">
+	  法律 诉讼 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 立传 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity whose biography arg0 writes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VC 是)
+		  (NP-PRD (CP-APP (IP (NP-PN-SBJ (NR 中国))
+				      (VP (LCP-LOC (NP (NN 历史))
+						   (LC 上))
+					  (QP-ADV (OD 第一)
+						  (CLP (M 次)))
+					  (PP-BNF (P 为)
+						  (NP (NN 女性)))
+					  (VP (VV 立传))))
+				  (DEC 的))
+			  (NP (NN 专书))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  为 女性 
+	  </arg>
+	  <arg n="m" f="adv">
+	  第一 次 
+	  </arg>
+	  <arg n="m" f="loc">
+	  历史 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

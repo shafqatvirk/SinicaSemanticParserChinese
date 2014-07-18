@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 揉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 kneads/rubs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (P 从)
+		    (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 剥)
+				    (NP-OBJ (NN 皮)))
+				(VP (VV 取)
+				    (NP-OBJ (NN 丝)))
+				(PU 、)
+				(VP (VP (VV 捻)
+					(NP-OBJ (NN 丝)))
+				    (VP (VV 成)
+					(NP-OBJ (NN 线))))
+				(PU 、)
+				(VP (VV 框)
+				    (NP-OBJ (NN 线)))
+				(PU 、)
+				(VP (VV 揉)
+				    (NP-OBJ (NN 线)))
+				(PU 、)
+				(VP (VV 漂白))
+				(PU 、)
+				(VP (VV 染色))
+				(ETC 等))
+			(NP (NN 步骤))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (CP-APP (IP (NP-SBJ (NN 女性))
+					(VP (VV 学习)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 纺织)))))
+				    (DEC 的))
+			    (NP (NN 重点)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	线 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

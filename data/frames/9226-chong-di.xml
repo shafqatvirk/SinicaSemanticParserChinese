@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 充抵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 offsets"/>
+      <role argnum="2" argrole="thing arg0 uses to serve as and offset arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 鸿荣)
+			 (NN 片厂)
+			 (CC 和)
+			 (NR 台北)
+			 (NN 冲印厂))
+	      (VP (PP-MNR (P 以)
+			  (NP (NP (NN 摄影)
+				  (NN 机器)
+				  (NN 设备))
+			      (PU 、)
+			      (NP (QP (CD 部分))
+				  (NP (NN 工作)
+				      (NN 人员)))
+			      (PU 、)
+			      (NP (NN 冲印费))
+			      (ETC 等)))
+		  (VP (VV 充抵)
+		      (NP-OBJ (NN 投资))))) 
+	  </parse>
+	  <arg n="0">
+	  鸿荣 片厂 和 台北 冲印厂 
+	  </arg>
+	  <arg n="1">
+	  投资 
+	  </arg>
+	  <arg n="2">
+	  以 摄影 机器 设备 、 部分 工作 人员 、 冲印费 等 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

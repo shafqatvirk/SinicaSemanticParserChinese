@@ -1,0 +1,138 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 批 </id>
+    <frameset id="f1" edef="give permission to">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity given permission to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-PN-SBJ (NR 中国))
+			      (VP (ADVP (AD 新))
+				  (VP (VV 批)
+				      (NP-OBJ (-NONE- *T*-1))))))
+		      (NP (NN 外商)
+			  (NN 投资))
+		      (NP (NN 项目)
+			  (NN 数)
+			  (CC 和)
+			  (NN 合同)
+			  (NN 金额)))
+	      (VP (PP (P 比)
+		      (NP (DP (DT 上)
+			      (CLP (M 年)))
+			  (DP (DT 同))
+			  (NP (NN 期))))
+		  (ADVP (AD 分别))
+		  (VP (VV 下降)
+		      (QP-EXT (CD 百分之十五点三九)
+			      (CC 和)
+			      (CD 百分之三十三点五二))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  新 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 山东省))
+		      (DP (DT 各)
+			  (CLP (M 类)))
+		      (NP (NN 经济)
+			  (NN 开发区)))
+	      (VP (VP (ADVP (AD 新))
+		      (VP (VV 批)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 利用)
+					      (NP-OBJ (NN 外资)))))
+				  (NP (NN 项目)))
+			  (QP-EXT (CD 一千四百八十多)
+				  (CLP (M 个)))))
+		  (PU ，)
+		  (VP (VV 占)
+		      (LCP-OBJ (DNP (NP (NP (DP (DT 全))
+					    (NP (NN 省)))
+					(NP (NN 总数)))
+				    (DEG 的))
+			       (LCP (QP (CD 百分之二十四))
+				    (LC 以上)))))) 
+	  </parse>
+	  <arg n="0">
+	  山东省 各 类 经济 开发区 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 利用 外资 项目 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一千四百八十多 个 
+	  </arg>
+	  <arg n="m" f="adv">
+	  新 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="write comment (on report)">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="criticize">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

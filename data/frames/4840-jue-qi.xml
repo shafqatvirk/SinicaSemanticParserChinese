@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 崛起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 rises/appears"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今天))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 水口村))
+	      (VP (ADVP (AD 已))
+		  (VP (VP (VV 崛起)
+			  (AS 了)
+			  (NP-OBJ (QP (CLP (M 座座)))
+				  (ADJP (JJ 现代化))
+				  (NP (NN 工业区)
+				      (CC 和)
+				      (NN 厂房))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 建起)
+			  (AS 了)
+			  (NP-OBJ (NN 公园)
+				  (PU 、)
+				  (NN 影剧院)
+				  (PU 、)
+				  (NN 酒家)
+				  (PU 、)
+				  (NN 商场)))))) 
+	  </parse>
+	  <arg n="0">
+	  座座 现代化 工业区 和 厂房 
+	  </arg>
+	  <arg n="1">
+	  水口村 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NP-PN (NR 中国))
+				 (NP-PN (NR 京杭))
+				 (ADJP (JJ 大))
+				 (NP (NN 运河)))
+			  (NP (NN 经济带)))
+		  (VP (ADVP (AD 迅速))
+		      (VP (VV 崛起)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 京杭 大 运河 经济带 
+	  </arg>
+	  <arg n="m" f="adv">
+	  迅速 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

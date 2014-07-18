@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 涉入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 gets involved in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 於是))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 激起)
+		(AS 了)
+		(NP-OBJ (CP-APP (IP (NP-SBJ (PN 他们))
+				    (VP (VV 涉入)
+					(NP-OBJ (DP (DT 此)
+						    (QP (CD 一)))
+						(NP (NN 领域)))))
+				(DEC 的))
+			(NP (NN 企图心))))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="1">
+	此 一 领域 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 参与))
+		    (PU ，)
+		    (VP (ADVP (AD 但))
+			(ADVP (AD 不))
+			(ADVP (AD 过分))
+			(VP (VV 涉入))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	过分 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (PP-DIR (P 对)
+			(NP (NN 地方)
+			    (NN 事务)))
+		(VP (VP-FOC (VV 涉入))
+		    (VP (ADVP (AD 太))
+			(VP (VA 深)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	对 地方 事务 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 领导 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 leads arg1 to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 卡巴)
+					     (NN 总统))
+				  (VP (VV 领导)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 政府)))
+	      (VP (SB 被)
+		  (VP (VV 推翻)))) 
+	  </parse>
+	  <arg n="0">
+	  卡巴 总统 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (IP (NP-SBJ (NP (NN 中央)
+				       (NN 人民)
+				       (NN 政府))
+				   (CC 和)
+				   (NP-PN (NN 外交部)))
+			   (VP (VV 领导)))
+		       (LC 下))) 
+	  </parse>
+	  <arg n="0">
+	  中央 人民 政府 和 外交部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

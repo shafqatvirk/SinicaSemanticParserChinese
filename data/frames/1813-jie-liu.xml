@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 截留 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 holds back"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-ADV (QP (CD 一))
+			      (NP (NN 方面)))
+		      (VP (VV 防止)
+			  (NP-OBJ (DNP (LCP (NP (NN 赛道))
+					    (LC 上))
+				       (DEG 的))
+				  (NP (NN 雪)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (LB 被)
+				  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+					  (IP (NP-SBJ (NN 风))
+					      (VP (VV 刮跑)
+						  (NP-OBJ (-NONE- *T*-1)))))))))
+		  (PU ，)
+		  (VP (NP-ADV (QP (CD 一))
+			      (NP (NN 方面)))
+		      (VP (VV 截留)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (PP-PRP (P 因)
+							  (NP (NN 风)))
+						  (VP (VV 移动))))
+					  (DEC 的)))
+				  (NP (NN 雪))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 因 风 移动 的 雪 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 方面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

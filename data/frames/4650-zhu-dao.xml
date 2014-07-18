@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 祝祷 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 prays for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NP-PN (NR 香港))
+				     (ADJP (JJ 特别))
+				     (NP (NN 行政区)))
+			      (NP (NN 行政)
+				  (NN 长官)))
+		      (NP-PN (NR 董建华)))
+	      (VP (NP-TMP (NT 今日)
+			  (PRN (PU （)
+			       (NP (NT 星期二))
+			       (PU ）)))
+		  (PP (P 与)
+		      (NP (QP (CD 四万)
+			      (CLP (M 名)))
+			  (NP (NN 信众))))
+		  (VP (VP (VV 出席)
+			  (NP-OBJ (IP-APP (NP-SBJ (NN 佛教界))
+					  (VP (VV 庆祝)
+					      (IP-OBJ (NP-PN-SBJ (NR 香港))
+						      (VP (VV 回归)))))
+				  (NP (NN 祈福)
+				      (NN 大会))))
+		      (PU ，)
+		      (VP (PP-BNF (P 为)
+				  (NP (NP (DNP (NP-PN (NR 香港))
+					       (DEG 的))
+					  (NP (NN 繁荣)
+					      (NN 安定)))
+				      (CC 及)
+				      (NP (NN 世界)
+					  (NN 和平))))
+			  (VP (VV 祝祷)))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 特别 行政区 行政 长官 董建华 
+	  </arg>
+	  <arg n="0">
+	  与 四万 名 信众 
+	  </arg>
+	  <arg n="1">
+	  为 香港 的 繁荣 安定 及 世界 和平 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 （ 星期二 ） 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

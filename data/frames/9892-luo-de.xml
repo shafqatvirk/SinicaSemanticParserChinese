@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 落得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="state arg0 ends up in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 将来))
+			  (ADVP (CS 若))
+			  (VP (LB 被)
+			      (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (NN 地头蛇))
+					  (VP (VV 欺负)
+					      (NP-OBJ (-NONE- *T*-1))))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 对簿公堂)))
+			   (LC 时))
+		  (ADVP (AD 才))
+		  (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (VV 落得)
+			  (NP-OBJ (NN 哑口无言)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  哑口无言 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 对簿公堂 时 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *pro* 将来 若 被 *OP* 地头蛇 欺负 *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

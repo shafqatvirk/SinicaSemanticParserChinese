@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 历历 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VV 聆听)
+			       (NP-OBJ (NN 音乐))))
+		       (LC 时))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 伴随)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 阅读)
+				      (NP-OBJ (DNP (LCP (NP (NN CD))
+							(LC 中))
+						   (DEG 的))
+					      (NP (NN 曲目)
+						  (NN 解说)))))))
+	      (PU ，)
+	      (NP-SBJ (DNP (LCP (NP (DP (DT 每)
+					(QP (CD 一)
+					    (CLP (M 首))))
+				    (NP (NN 曲)))
+				(LC 中))
+			   (DEG 的))
+		      (NP (NN 景像)))
+	      (VP (VV 历历))) 
+	  </parse>
+	  <arg n="0">
+	  每 一 首 曲 中 的 景像 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 伴随 *PRO* 阅读 CD 中 的 曲目 解说 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 聆听 音乐 时 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

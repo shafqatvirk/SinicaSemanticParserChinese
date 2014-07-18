@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 唱衰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity declining"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (PP (P 随著)
+					(NP (NN 哈日风)))
+				    (ADVP (AD 远道))
+				    (VP (MSP 而)
+					(VP (VV 来)))))
+			    (DEC 的)))
+		    (NP (NN 招财)
+			(NN 猫)))
+	    (PU ，)
+	    (VP (ADVP (AD 可))
+		(VP (VV 没有)
+		    (VP (PP-PRP (P 因著)
+				(IP (NP-SBJ (NN 景气))
+				    (VP (VA 萧条))))
+			(NP-ADV (NN 买气))
+			(VP (ADVP (AD 就))
+			    (VP (VA 唱衰))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*OP* *T*-1 随著 哈日风 远道 而 来 的 招财 猫 
+	</arg>
+	<arg n="0" f="pse">
+	买气 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	可 
+	</arg>
+	<arg n="m" f="prp">
+	因著 景气 萧条 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

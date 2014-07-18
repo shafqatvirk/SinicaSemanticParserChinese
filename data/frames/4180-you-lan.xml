@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 游览 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location toured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (NP-APP (NT 今)
+			      (NT 昨))
+		      (QP (CD 两)
+			  (CLP (M 天))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 香港)
+			     (NN 特区))
+		      (NP (NP (DP (DT 全))
+			      (NP (NN 国)))
+			  (NP (NN 政协)))
+		      (NP (NN 委员)))
+	      (VP (ADVP (AD 还))
+		  (VP (VP (VV 视察)
+			  (AS 了)
+			  (NP-OBJ (NP (NP-PN (NR 宁波))
+				      (NP (NN 开发区)))
+				  (PU 、)
+				  (NP-PN (NP-PN (NR 宁波)
+						(NR 西田信))
+					 (NP (NN 染织))
+					 (ADJP (JJ 有限))
+					 (NP (NN 公司)))))
+		      (PU ，)
+		      (VP (VV 游览)
+			  (AS 了)
+			  (NP-OBJ (NP-PN (NR 天一阁))
+				  (PU 、)
+				  (NP (NP-PN (NR 蒋氏))
+				      (NP (NN 祖居)))))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 特区 全 国 政协 委员 
+	  </arg>
+	  <arg n="1">
+	  天一阁 、 蒋氏 祖居 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今 昨 两 天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 运动会))
+			   (VP (VV 闭幕)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (PP-LOC (P 在)
+				  (NP-PN (NR 北京)))
+			  (VP (VV 继续)
+			      (VP (VV 逗留)
+				  (QP-EXT (CD 两)
+					  (CLP (M 天))))))
+		      (PU ，)
+		      (VP (PP (P 同)
+			      (NP (NP-PN (NR 中国))
+				  (ADJP (JJ 有关))
+				  (NP (NN 方面))))
+			  (VP (VV 开展)
+			      (NP-OBJ (NN 交流)
+				      (NN 活动))))
+		      (CC 并)
+		      (VP (VCD (VV 参观)
+			       (VV 游览)))
+		      (PU ，)
+		      (VP (PP-TMP (P 于)
+				  (NP (NT １３日)))
+			  (VP (VV 返回)
+			      (NP-PN-OBJ (NR 日本))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  运动会 闭幕 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搬迁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="mover"/>
+      <role argnum="1" argrole="people, thing moved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-PN-SBJ (NR 湖南省))
+		(VP (VP (ADVP (AD 将))
+			(VP (VV 搬迁)
+			    (NP-OBJ (NN 农户))
+			    (NP-EXT (QP (CD 五万一千余))
+				    (NP (NN 人)))))
+		    (PU ，)
+		    (VP (VV 使)
+			(NP-OBJ (NP-PN (NR 洞庭湖))
+				(NP (NN 水面)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 增加)
+				(QP-OBJ (CD 一千九百多)
+					(CLP (M 平方公里))))))))) 
+	  </parse>
+	  <arg n="0">
+	  湖南省 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  农户 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  五万一千余 人 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (CC 既)
+		    (VP (VV 盘活)
+			(AS 了)
+			(NP-OBJ (NP (NN 存量))
+				(ADJP (JJ 国有))
+				(NP (NN 资产))))
+		    (PU ，)
+		    (CC 又)
+		    (VP (ADVP (AD 顺利))
+			(VP (VV 搬迁)
+			    (AS 了)
+			    (NP-OBJ (ADJP (JJ 淹没))
+				    (NP (NN 企业)))))
+		    (PU ，)
+		    (VP (VV 安置)
+			(AS 了)
+			(NP-OBJ (QP (CD 大量))
+				(NP (NN 移民))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  顺利 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  淹没 企业 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 一般))
+		    (ADVP (AD 不))
+		    (ADVP (AD 再))
+		    (VP (VV 搬迁)
+			(PU 、)
+			(VV 重建))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  一般 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  再 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

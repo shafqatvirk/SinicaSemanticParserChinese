@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 近 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is close to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (QP (CD 一)
+				   (CLP (M 座)))
+			       (CP (WHNP-2 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-2))
+					   (VP (VV 投资)
+					       (QP-OBJ (CD 六千万)
+						       (CLP (M 元)))))
+				       (DEC 的)))
+			       (ADJP (JJ 多功能))
+			       (NP (NN 现代化)
+				   (NN 商城))
+			       (PRN (PU ——)
+				    (NP-PN (NN 金三角)
+					   (NN 新庄))))
+			   (DEG 的))
+		      (NP (NN 建设)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 近)
+		      (NP-OBJ (NN 尾声))))) 
+	  </parse>
+	  <arg n="0">
+	  一 座 *OP* *T*-2 投资 六千万 元 的 多功能 现代化 商城 —— 金三角 新庄 的 建设 
+	  </arg>
+	  <arg n="1">
+	  尾声 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

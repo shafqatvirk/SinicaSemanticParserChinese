@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亡佚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing being lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NP-PN (NR 汉代))
+					  (NP-PN (NR 杨雄)))
+				  (VP (VV 写)
+				      (AS 过)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP-TTL (PU 《)
+			      (NP-PN (NR 蜀王))
+			      (NP (NN 本纪))
+			      (PU 》)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 亡佚)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 汉代 杨雄 写 过 *T*-1 的 《 蜀王 本纪 》 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 乾洗 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 dry-cleans"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VA 好)
+				    (ADVP (AD 一点))))
+			    (DEC 的)))
+		    (NP (NN 衣服)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 都))
+		(VP (VV 要)
+		    (VP (VP (VV 花)
+			    (NP-OBJ (NN 钱)))
+			(VP (VV 送去)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 乾洗)))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 记名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NT 过去))
+		      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 记名)))
+			      (DEC 的))
+		      (NP (NN 考试)
+			  (NN 方式)))
+	      (VP (VV 变成)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 知)
+					      (NP-OBJ (NN 名)))))
+				  (DEC 的))
+			  (NP (NN 弥封)
+			      (NN 制度))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

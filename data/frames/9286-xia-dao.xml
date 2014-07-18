@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吓到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="person arg0 frightens"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-ADV (DT 这)
+		      (CLP (M 回)))
+	      (ADVP (AD 连))
+	      (NP-SBJ (NN 考古)
+		      (NN 人员))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 吓到)
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="1">
+	  考古 人员 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 回 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

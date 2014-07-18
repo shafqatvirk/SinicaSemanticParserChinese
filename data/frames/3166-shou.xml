@@ -1,0 +1,241 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="receiver"/>
+      <role argnum="1" argrole="thing received"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 保证)
+		      (IP-OBJ (NP-PN-SBJ (NR 振华)
+					 (NN 公司))
+			      (VP (PP-MNR (P 按)
+					  (NP (NN 合同)
+					      (NN 规定)))
+				  (ADVP (AD 安全))
+				  (VP (VV 收)
+				      (NP-OBJ (NN 汇)))))))) 
+	  </parse>
+	  <arg n="0">
+	  振华 公司 	  	  
+	  </arg>
+	  <arg n="1">
+	  汇 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  安全 	  	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 合同 规定 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing collected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ-1 (-NONE- *T*-1))
+						  (VP (VV 可)
+						      (VP (VV 盈利)
+							  (LCP-OBJ (QP (CD 百万)
+								       (CLP (M 元)))
+								   (LC 以上)))))
+					      (DEC 的)))
+				      (QP (CD 一)
+					  (CLP (ADJP (JJ 整))
+					       (CLP (M 套))))
+				      (NP (PU “)
+					  (NP (NP-PN (NR 王码))
+					      (NP (NN 软件)))
+					  (NP (NN 精品))
+					  (PU ”)))
+			      (PU ，)
+			      (VP (VP (VV 免)
+				      (VP (VV 收)
+					  (NP-OBJ (NN 技术)
+						  (NN 费用))))
+				  (PU ，)
+				  (VP (ADVP (AD 全部))
+				      (PP-MNR (P 以)
+					      (NP (CP (WHNP-2 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-2))
+							      (VP (ADVP (AD 不))
+								  (VP (VV 加密))))
+							  (DEC 的)))
+						  (NP (NN 软盘)
+						      (NN 方式))))
+				      (PP-DIR (P 对)
+					      (NP (NN 国内)))
+				      (VP (PU “)
+					  (VV 开放)
+					  (PU ”)))
+				  (PU ，)
+				  (VP (ADVP (AD 从而))
+				      (VP (VV 使)
+					  (NP-OBJ (NP (NN 国内))
+						  (DP (DT 任何))
+						  (NP (NN 微机)
+						      (NN 用户)))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 都))
+						  (VP (VV 可以)
+						      (VP (VCD (VV 拷贝)
+							       (VV 使用)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1" f="psr">
+	  *OP* *T*-1 可 盈利 百万 元 以上 的 一 整 套 “ 王码 软件 精品 ” 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  技术 费用 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing taken back"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC-1 (DNP (ADJP (JJ 所有))
+			     (DEG 的))
+			(NP (NN 收益)))
+	      (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 没有)
+		      (VP (VRD (VV 收)
+			       (VV 回去))
+			  (NP-OBJ (-NONE- *T*-1)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 	  	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 accept to be a student"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 无论))
+			      (VP (VV 如何))))
+		  (VP (VV 要)
+		      (VP (VV 收)
+			  (NP-OBJ (DNP (NP (PN 他))
+				       (DEG 的))
+				  (NP (NN 孩子))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO*	  	  
+	  </arg>
+	  <arg n="1">
+	  他 的 孩子	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  无论 如何	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 harvests"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 能)
+		      (VP (PU 「)
+			  (QP-ADV (CLP (M 亩)))
+			  (VP (VV 收)
+			      (QP-OBJ (CD 百)
+				      (CLP (M 石))))
+			  (PU 」))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  百 石	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  亩	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6">
+      <role argnum="0" argrole="entity that is tightened"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 电视)
+		      (NN 新闻))
+	      (VP (VP (ADVP (AD 一))
+		      (VP (VV 收)))
+		  (VP (ADVP (AD 一))
+		      (VP (VV 放))))) 
+	  </parse>
+	  <arg n="0">
+	  电视 新闻	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

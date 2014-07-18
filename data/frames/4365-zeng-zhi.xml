@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增植 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing additionally planted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 湖北省))
+	      (VP (PP (P 除了)
+		      (LCP (IP (NP-SBJ (-NONE- *pro*))
+			       (VP (ADVP (AD 进一步))
+				   (VP (VV 组织)
+				       (NP-OBJ (LCP (NP (NN 省))
+						    (LC 内))
+					       (NP (NN 企业)))
+				       (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VP (VV 参与)
+						   (NP-OBJ (NN 工程)
+							   (NN 竞标)))
+					       (CC 和)
+					       (VP (VV 促进)
+						   (NP-OBJ (NN 产业)
+							   (NN 产品)
+							   (NN 结构)
+							   (NN 调整))))))))
+			   (LC 外)))
+		  (PU ，)
+		  (ADVP (AD 将))
+		  (ADVP (AD 积极))
+		  (VP (VV 增植)
+		      (NP-OBJ (NP (NN 库区))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (NP (NN 经济)
+				  (NN 增长点)))))) 
+	  </parse>
+	  <arg n="0">
+	  湖北省 
+	  </arg>
+	  <arg n="1">
+	  库区 *OP* *T*-1 新 的 经济 增长点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  除了 *pro* 进一步 组织 省 内 企业 *PRO* 参与 工程 竞标 和 促进 产业 产品 结构 调整 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

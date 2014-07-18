@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 另眼相看 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 looks at differently"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NN 同学们))
+		(VP (PP-DIR (P 对)
+			    (NP (PN 他)))
+		    (ADVP (AD 都))
+		    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 像)
+				    (NP (PU 「)
+					(ADJP (JJ 稀有))
+					(NP (NN 动物))
+					(PU 」)))
+				(VP (VA 般))))
+		    (VP (VV 另眼相看)))) 
+	</parse>
+	<arg n="0">
+	同学们 
+	</arg>
+	<arg n="1">
+	对 他 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 像 「 稀有 动物 」 般 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VP (VV 到)
+				 (LCP-OBJ (NP (NN 店))
+					  (LC 里)))
+			     (VP (VV 去)
+				 (VP (VV 买)
+				     (NP-OBJ (NN 米粉))))))
+		     (LC 时))
+	    (PU ，)
+	    (CP-CND (ADVP (CS 如果))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VPT (VV 叫)
+				 (DER 得)
+				 (VV 出))
+			    (NP-OBJ (PU 「)
+				    (NN 水粉)
+				    (PU 」)
+				    (CC 与)
+				    (PU 「)
+				    (NN 炊粉)
+				    (PU 」)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 可能)
+		(VP (VV 博得)
+		    (IP-OBJ (NP-SBJ (NN 业主))
+			    (VP (VV 另眼相看)))))) 
+	</parse>
+	<arg n="0">
+	业主 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

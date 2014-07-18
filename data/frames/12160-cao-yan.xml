@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 操演 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity doing drills"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 图))
+	      (VP (VC 为)
+		  (NP-PRD (CP-APP (IP (NP-TMP (NT 今年)
+					      (NT 春天))
+				      (NP-SBJ (NN 国军))
+				      (VP (PP-LOC (P 在)
+						  (NP-PN (NR 澎湖)))
+					  (VP (VV 进行)
+					      (NP-OBJ (PU 「)
+						      (NN 成功)
+						      (NN 操演)
+						      (PU 」)))))
+				  (DEC 的))
+			  (NP (NN 情形))))) 
+	  </parse>
+	  <arg n="0">
+	  国军 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  成功 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 澎湖 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 春天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

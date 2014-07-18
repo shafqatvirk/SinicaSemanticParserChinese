@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 陈列 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 exhibits"/>
+    <role argnum="2" argrole="location arg1 is exhibited"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(IP (IP (QP-SBJ (NP (NN 博物馆))
+					(QP (OD 三)
+					    (CLP (M 楼))))
+				(VP (MSP 所)
+				    (VP (VCD (VV 陈列)
+					     (VV 展示))
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 罕见))))
+			(DEC 的))
+		    (NP (NN 琉璃珠)))
+	    (PU ，)
+	    (VP (VC 是)
+		(VP (VV 属)
+		    (IP-OBJ (NP-SBJ (NN 排湾族))
+			    (VP (MSP 所)
+				(VP (VE 有))))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	博物馆 三 楼 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (PU ，)
+	    (NP-SBJ (NN 博物馆))
+	    (VP (VP (ADVP (AD 只))
+		    (VP (VV 得)
+			(VP (VP (VV 找)
+				(NP-OBJ (NN 人)))
+			    (VP (VV 仿制)
+				(NP-OBJ (NN 标本))))))
+		(PU ，)
+		(VP (MSP 以)
+		    (VP (VV 应)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VCD (VV 陈列)
+						     (VV 展示))))
+					(DEC 之))
+				(NP (NN 需))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (ADVP (AD 不))
+		    (VP (VV 愿意)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 让)
+				    (NP-OBJ (NN 脚踏车))
+				    (IP (NP-SBJ-SBJ (-NONE- *PRO*))
+					(VP (VP (VV 放)
+						(PP (P 在)
+						    (LCP (NP (NN 店))
+							 (LC 里))))
+					    (VP (VV 陈列))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

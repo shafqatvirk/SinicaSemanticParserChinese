@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进步 </id>
+    <frameset id="f1" edef="make progress">
+      <role argnum="0" argrole="entity making progress"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 加速)
+	      (NP-OBJ (NN 科技))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VA 进步)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="progressive">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TPC (DP (DT 这)
+			      (CLP (M 项)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (VA 文明))
+					  (PU 、)
+					  (VP (VA 进步))))
+				  (DEC 的)))
+			  (NP (NN 事业)))
+		  (NP-SBJ (NN 前景))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (VA 美好)))
+				      (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

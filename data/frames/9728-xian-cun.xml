@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 现存 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 keeps now"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 譬如))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (VP (NP-SBJ (DP (DT 某)
+						  (CLP (M 家)))
+					      (NP (NN 银行)))
+				      (VP (VV 现存)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (ADJP (ADVP (AD 最))
+			    (ADJP (JJ 早)))
+		      (NP (NN 开户)
+			  (NN 记录)))
+	      (VP (VC 是)
+		  (NP-PRD (NT 一九五八年)))) 
+	  </parse>
+	  <arg n="0">
+	  某 家 银行 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

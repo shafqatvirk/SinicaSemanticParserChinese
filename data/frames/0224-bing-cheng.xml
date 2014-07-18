@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 秉承 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="inheritor"/>
+    <role argnum="1" argrole="things inherited"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-PN (NR 香港))
+              (NP (NN 同胞)))
+      (VP (VV 秉承)
+          (AS 了)
+          (NP-OBJ (DNP (NP (NP-PN (NR 中华))
+                           (NP (NN 民族)))
+                       (DEG 的))
+                  (NP (NP (NN 智慧))
+                      (PU 、)
+                      (NP (NN 勤劳))
+                      (CC 和)
+                      (NP (CP (WHNP-2 (-NONE- *OP*))
+                              (CP (IP (NP-SBJ (-NONE- *T*-2))
+                                      (VP (VA 特有)))
+                                  (DEC 的)))
+                          (NP (NN 适应)
+                              (NN 能力))))))))
+	</parse>
+	<arg n="0"> 香港 同胞 </arg>
+	<V/>
+	<arg n="1"> 中华 民族 的 智慧 、 勤劳 和 *OP* (*T*-2)->(适应能力) 特有 的 适应 能力 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

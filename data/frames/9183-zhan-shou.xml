@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 斩首 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 beheads"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 成帝))
+	      (VP (ADVP (AD 却))
+		  (VP (VV 令)
+		      (NP-OBJ (NN 卫士))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VSB (VV 拉出)
+				   (VV 斩首))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

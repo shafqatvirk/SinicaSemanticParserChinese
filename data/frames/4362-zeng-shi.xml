@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增施 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing applied"/>
+      <role argnum="2" argrole="entity arg1 is applied to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 八十年代))
+		       (LC 以来))
+	      (PU ，)
+	      (PP-MNR (P 随着)
+		      (NP (NP (DNP (NP (NP (NP-PN (NR 中国))
+					   (DP (DT 各))
+					   (NP (NN 地)))
+				       (ADJP (JJ 高产))
+				       (ADJP (JJ 优质))
+				       (ADJP (JJ 高效))
+				       (NP (NN 农作物)
+					   (NN 品种)))
+				   (DEG 的))
+			      (NP (NN 推广)))
+			  (PU ，)
+			  (NP (DNP (NP (NN 土地)
+				       (NN 复种)
+				       (NN 指数))
+				   (DEG 的))
+			      (NP (NN 提高)))))
+	      (PU ，)
+	      (NP-SBJ (NN 农民))
+	      (VP (VV 注重)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 向)
+				      (NP (NN 土地)))
+			      (VP (VV 增施)
+				  (NP-OBJ (NN 氮肥)
+					  (CC 和)
+					  (NN 磷肥))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  氮肥 和 磷肥 
+	  </arg>
+	  <arg n="2">
+	  向 土地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 披星戴月 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-1 (NP-SBJ (-NONE- *pro*))
+		    (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					 (VP (VP (VV 吃完)
+						 (NP-OBJ (NN 宵夜)))
+					     (VP (VV 回来))))
+				     (LC 後))
+			    (VP (VV 继续)
+				(VP (VV 干))))
+			(PU ，)
+			(VP (VV 熬到)
+			    (IP-OBJ (NP-SBJ (QP (CD 两))
+					    (NP (NN 眼)))
+				    (VP (VV 发直))))
+			(PU ，)
+			(VP (ADVP (AD 才))
+			    (VP (VP (VV 披星戴月))
+				(VP (VV 回)
+				    (NP-OBJ (NN 宿舍))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

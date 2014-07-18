@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 聘任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 hires"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP (NP-SBJ (QP (CD 两))
+				  (NP (NN 岸)))
+			  (VP (VP-FOC (VV 交流))
+			      (VP (ADVP (AD 越来越))
+				  (VP (VA 频繁))))))
+	      (PU ，)
+	      (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (NP-SBJ (NP (QP (CD 两))
+			  (NP (NN 岸)))
+		      (NP (QP (CD 三))
+			  (NP (NN 地))))
+	      (VP (VV 流行)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 以)
+				      (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VP (VV 协拍))
+							  (PU ，)
+							  (CC 或)
+							  (VP (ADVP (AD 单独))
+							      (VP (VV 聘任)
+								  (NP-OBJ (NN 技术)
+									  (NN 人才))))))
+						  (DEC 的))
+					  (NP (NN 方式))))
+			      (VP (VV 拍摄)
+				  (NP-OBJ (NN 连续剧))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  技术 人才 
+	  </arg>
+	  <arg n="m" f="adv">
+	  单独 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

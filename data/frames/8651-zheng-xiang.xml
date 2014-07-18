@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 正向 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对於)
+			  (NP (DNP (NP (NN 长久))
+				   (DEG 的))
+			      (NP (NN 族群))
+			      (ADJP (JJ 和谐))
+			      (NP (NN 共处))))
+		  (PU ，)
+		  (VP (VV 应该)
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 非常))
+						  (VP (VA 正向))))
+					  (DEC 的)))
+				  (NP (NN 调整))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  非常 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

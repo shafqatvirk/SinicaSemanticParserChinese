@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 releases"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 所以))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NN 选战))
+			     (LC 中)))
+		(ADVP (AD 就))
+		(ADVP (AD 曾))
+		(VP (VV 放出)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 将))
+					    (VP (VV 任命)
+						(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+							    (CP (IP (NP-SBJ (-NONE- *T*-3))
+								    (VP (ADVP (AD 备))
+									(VP (VV 受)
+									    (NP-OBJ (NN 各界))
+									    (IP (NP-SBJ (-NONE- *PRO*))
+										(VP (VV 敬重))))))
+								(DEC 的)))
+							(NP-APP (NP-PN (NR 中研院))
+								(NP (NN 院长)))
+							(NP-PN (NR 李远哲)))
+						(IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 担任)
+							(NP-OBJ (NN 阁揆)))))))
+				    (DEC 的))
+			    (NP (NN 消息)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*pro* 将 任命 *OP* *T*-3 备 受 各界 *PRO* 敬重 的 中研院 院长 李远哲 *PRO* 担任 阁揆 的 消息 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="loc">
+	在 选战 中 
+	</arg>
+	<arg n="m" f="adv">
+	所以 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

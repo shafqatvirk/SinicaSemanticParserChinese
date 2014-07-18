@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 划出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="purpose"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 十)
+			  (CLP (M 个)))
+		      (NP (NN 农业))
+		      (NP (ADJP (JJ 高))
+			  (ADJP (JJ 新))
+			  (NP (NN 技术)))
+		      (NP (NN 开发)
+			  (NN 示范区)))
+	      (PU ，)
+	      (VP (ADVP (AD 已))
+		  (VP (VV 划出)
+		      (AS 了)
+		      (NP-OBJ (NP (QP (CD 十八万)
+				      (CLP (M 亩)))
+				  (NP (NN 土地)))
+			      (PP-EXT (P 作为)
+				      (NP-OBJ (NN 中心)
+					      (NN 示范区))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  目前 
+	  </arg>
+	  <arg n="0">
+	  十 个 农业 高 新 技术 开发 示范区 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  十八万 亩 土地 作为 中心 示范区 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

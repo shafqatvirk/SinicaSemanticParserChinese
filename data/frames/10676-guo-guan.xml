@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 过惯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is used to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 自己))
+	    (VP (VP (LCP-TMP (NP (NN 少年))
+			     (LC 时))
+		    (NP-TPC (ADJP (JJ 穷))
+			    (NP (NN 日子)))
+		    (VP (VV 过惯)
+			(AS 了)))
+		(PU ，)
+		(VP (ADVP (AD 只))
+		    (VP (VV 盼)
+			(IP-OBJ (NP-SBJ (NN 孩子))
+				(VP (ADVP (AD 少))
+				    (VP (VV 吃)
+					(NP-OBJ (QP (CLP (M 点)))
+						(NP (NN 苦)))))))))) 
+	</parse>
+	<arg n="0">
+	自己 
+	</arg>
+	<arg n="1">
+	穷 日子 
+	</arg>
+	<arg n="m" f="tmp">
+	少年 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

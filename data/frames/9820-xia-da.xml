@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吓大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="person arg0 scares as he grows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (PP-DIR (P 从)
+			  (NP (NN 小)))
+		  (ADVP (AD 就))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (LB 被)
+					      (CP-OBJ (WHNP-3 (-NONE- *OP*))
+						      (IP (NP-SBJ (NN 大人))
+							  (VP (VP (VV 用)
+								  (NP-OBJ (PU 『)
+									  (NN 番婆)
+									  (NN 鬼)
+									  (PU 』)))
+							      (VP (VV 吓大)
+								  (NP-OBJ (-NONE- *T*-3))))))))
+				      (DEC 的)))))))
+	  </parse>
+	  <arg n="0">
+	  大人 
+	  </arg>
+	  <arg n="1">
+	  *T*-4 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

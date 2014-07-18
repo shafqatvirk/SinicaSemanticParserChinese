@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 包容 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 tolerates and includes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 教导)
+		    (DP-OBJ (DT 下)
+			    (QP (CD 一)
+				(CLP (M 代))))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 了解)
+				(NP-OBJ (-NONE- *RNR*-1)))
+			    (CC 与)
+			    (VP (VV 包容)
+				(NP-OBJ-1 (DP (DT 其他))
+					  (NP (NN 民族)
+					      (NN 文化)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	其他 民族 文化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (VP (VV 必须)
+		    (VP (VP (VV 敞开)
+			    (NP-OBJ (NN 心胸)))
+			(PU 、)
+			(VP (VCD (VV 包容)
+				 (VV 尊重))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

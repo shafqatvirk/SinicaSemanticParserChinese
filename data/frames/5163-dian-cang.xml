@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 典藏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="collector"/>
+    <role argnum="1" argrole="thing arg0 collects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 其实))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (NN 博物馆))
+				(VP (VV 典藏)
+				    (NP-OBJ (NN 陶器))))
+			    (DEC 的))
+		    (NP (NN 大宗)))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 并))
+		    (VP (VC 非)
+			(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 产量))
+					    (VP (VA 丰富)))
+					(DEC 的)))
+				(NP (NP (NP-PN (NN 雅美))
+					(CC 与)
+					(NP (NN 阿美族)))
+				    (NP (NN 陶器))))))
+		(PU ，)
+		(VP (ADVP (AD 而))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-2))
+					    (IP (NP-SBJ (NN 制造)
+							(NN 技术))
+						(VP (ADVP (AD 业已))
+						    (VP (VV 失传))))
+					    (PU ，)
+					    (CC 且)
+					    (IP (NP-SBJ (NN 装饰性))
+						(VP (VA 强烈))))
+					(DEC 的)))
+				(NP (NN 排湾族)
+				    (NN 陶器))))))) 
+	</parse>
+	<arg n="0">
+	博物馆 
+	</arg>
+	<arg n="1">
+	陶器 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-PN-SBJ (NR 顺益)
+			   (NN 博物馆))
+		(VP (ADVP (AD 不))
+		    (ADVP (AD 只))
+		    (ADVP (AD 在))
+		    (VP (VV 做)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (VV 典藏))
+						(CC 与)
+						(VP (VV 展示))))
+					(DEC 的))
+				(NP (NN 工作)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

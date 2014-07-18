@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 营 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="business arg0 is engaged in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 随着)
+		      (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 越来越))
+						  (VP (VA 多))))
+					  (DEC 的)))
+				  (NP (NN 中国人)))
+			  (VP (PP-MNR (P 通过)
+				      (NP (ADJP (JJ 国产))
+					  (ADJP (JJ 程控))
+					  (NP (NN 交换机))))
+			      (VP (VV 传递)
+				  (NP-OBJ (NN 语音))))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 个)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 主))
+				      (VP (VV 营)
+					  (NP-OBJ (NN 电信)
+						  (NN 设备)))))
+			      (DEC 的)))
+		      (ADJP (JJ 民营))
+		      (NP (NN 科技)
+			  (NN 企业)))
+	      (VP (VV 创造)
+		  (AS 了)
+		  (NP-OBJ (DNP (ADJP (JJ 奇迹般))
+			       (DEG 的))
+			  (NP (NN 发展)
+			      (NN 速度))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  电信 设备 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

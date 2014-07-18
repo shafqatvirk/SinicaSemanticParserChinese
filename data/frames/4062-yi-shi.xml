@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 移师 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="troops moving"/>
+      <role argnum="1" argrole="location arg0 moves to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 中)
+				 (NR 韩))
+			  (QP (CD 两))
+			  (NP (NN 国)))
+		      (NP (NN 围棋队)))
+	      (VP (VP (ADVP (AD 将))
+		      (PP-TMP (P 于)
+			      (NP (NT ９月)
+				  (NT １日)))
+		      (VP (VV 移师)
+			  (NP-PN-OBJ (NR 汉城))))
+		  (PU ，)
+		  (VP (NP-TMP (NT ２日))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 乐天)
+				     (NN 饭店)))
+		      (VP (VV 举行)
+			  (NP-OBJ (QP (OD 第二)
+				      (CLP (M 场)))
+				  (NP (NN 比赛))))))) 
+	  </parse>
+	  <arg n="0">
+	  中 韩 两 国 围棋队 
+	  </arg>
+	  <arg n="1">
+	  汉城 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 ９月 １日 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

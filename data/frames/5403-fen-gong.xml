@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分工 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="work arg0 divides"/>
+    <role argnum="2" argrole="entities arg1 is divided among"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-SBJ (NP-SBJ (NP-PN (NR 台湾))
+			  (NP (NN 电影)))
+		  (VP (ADVP-WH (AD 是否))
+		      (VP (VV 能)
+			  (VP (VP (VV 借力使力))
+			      (PU ，)
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (CP-APP (IP (NP-SBJ (NN 全球))
+							       (VP (VV 分工)))
+							   (DEC 的))
+						   (NP (NN 原则)))
+					       (LC 下)))
+				  (VP (VRD (VV 寻找)
+					   (VV 到))
+				      (NP-OBJ (NN 生存)
+					      (NN 空间)))))))) 
+	</parse>
+	<arg n="2">
+	全球 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-MNR (P 藉)
+			    (NP (PN 此)))
+		    (VP (VP (VV 明订)
+			    (IP-OBJ (NP-SBJ (DP (DT 各))
+					    (NP (NN 情治)
+						(NN 单位)))
+				    (VP (VV 严守)
+					(NP-OBJ (NN 行政)
+						(NN 中立)))))
+			(PU ，)
+			(CC 并)
+			(VP (BA 将)
+			    (IP-OBJ (NP-SBJ (NP (DP (DT 各))
+						(NP (NN 情治)
+						    (NN 机关)))
+					    (NP (NN 权责)
+						(NN 范围)))
+				    (VP (ADVP (AD 明确))
+					(VP (VV 分工)))))
+			(PU ，)
+			(CC 并)
+			(VP (PP-DIR (P 对)
+				    (NP (PN 其)))
+			    (VP (VV 监督)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	各 情治 机关 权责 范围 
+	</arg>
+	<arg n="m" f="adv">
+	明确 
+	</arg>
+	<arg n="m" f="mnr">
+	藉 此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VCP (VV 分工)
+				     (VV 合作))))
+			(DEC 的)))
+		(NP (NN 朋友))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 梦 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity dreamed of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-LOC (P 在)
+		      (LCP (NP (UCP-APP (NP (NN 拉木鼓)
+					    (NN 人头祭))
+					(PU 、)
+					(IP (NP-SBJ (NN 影子))
+					    (VP (VV 梦)
+						(NP-OBJ (NN 游魂))))
+					(ETC 等))
+			       (NP (NN 节目)))
+			   (LC 中)))
+	      (VP (VV 担任)
+		  (NP-OBJ (NN 主演)))) 
+	  </parse>
+	  <arg n="0">
+	  影子 
+	  </arg>
+	  <arg n="1">
+	  游魂 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

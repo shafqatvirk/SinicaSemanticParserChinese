@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 费工 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (QP (CD 一))
+		      (NP (NN 方面)))
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 送到)
+			      (NP-OBJ (NN 国外)))
+			  (VP (VV 做)
+			      (NP-OBJ (NN 品质)
+				      (NN 验证)))))
+	      (VP (ADVP (AD 又))
+		  (VP (VCD (VV 费时)
+			   (VV 费工))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 送到 国外 做 品质 验证 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="dis">
+	  一 方面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 注重 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 gives importance to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (DP (DT 全))
+			      (NP (NN 行业)))
+		      (VP (VP (VV 利用)
+			      (NP-OBJ (NP-PN (NR 中国))
+				      (NP (NN 资源)
+					  (PU 、)
+					  (NN 人力))
+				      (NP (NN 优势))))
+			  (PU ，)
+			  (VP (ADVP (AD 加上))
+			      (VP (VCD (VV 注重)
+				       (VV 引进))
+				  (NP-OBJ (NP (NN 国外))
+					  (ADJP (JJ 先进))
+					  (NP (NN 技术)
+					      (CC 与)
+					      (NN 设备)))))))
+	      (PU ，)
+	      (NP-SBJ (NN 产品)
+		      (NP (NN 产量)
+			  (CC 和)
+			  (NN 质量)))
+	      (VP (VV 得以)
+		  (VP (ADVP (AD 大幅度))
+		      (VP (VV 提高))))) 
+	  </parse>
+	  <arg n="0">
+	  全 行业 
+	  </arg>
+	  <arg n="1">
+	  国外 先进 技术 与 设备 
+	  </arg>
+	  <arg n="m" f="adv">
+	  加上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 三峡)
+			 (NN 开发)
+			 (NN 总公司))
+	      (VP (PP-TMP (P 在)
+			  (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 积极))
+					      (VP (VV 作好)
+						  (NP-OBJ (NN 风险)
+							  (NN 防范)))))
+				      (DEC 的))
+			      (NP (NN 同时))))
+		  (PU ，)
+		  (ADVP (AD 也))
+		  (ADVP (AD 十分))
+		  (VP (VV 注重)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-DIR (P 向)
+					  (NP (NN 保险)
+					      (NN 公司)))
+				  (VP (VV 分散)
+				      (NP-OBJ (NN 风险)))))))) 
+	  </parse>
+	  <arg n="0">
+	  三峡 开发 总公司 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 向 保险 公司 分散 风险 
+	  </arg>
+	  <arg n="m" f="adv">
+	  十分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 积极 作好 风险 防范 的 同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

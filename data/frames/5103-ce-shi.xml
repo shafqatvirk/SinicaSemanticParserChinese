@@ -1,0 +1,196 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 测试 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 tests"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (NP-PN (NR 日本))
+			(NP (NN 技师)))
+		(VP (ADVP (AD 正在))
+		    (VP (VV 测试)
+			(NP-OBJ (NN 抗风)
+				(NN 阻尼器))))) 
+	</parse>
+	<arg n="0">
+	日本 技师 
+	</arg>
+	<arg n="1">
+	抗风 阻尼器 
+	</arg>
+	<arg n="m" f="adv">
+	正在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (QP (CD 一)
+			     (CLP (M 片)))
+			 (DNP (ADJP (JJ 小小))
+			      (DEG 的))
+			 (NP (NN 生物)
+			     (NN 晶片)))
+		     (LC 上))
+	    (PU ，)
+	    (VP (VV 可以)
+		(VP (VP (VV 布放)
+			(NP-OBJ (QP (CD 数万)
+				    (CLP (M 个)))
+				(NP (NN 基因)
+				    (NN 片段))))
+		    (PU ，)
+		    (VP (ADVP (AD 同时))
+			(VP (VV 测试)
+			    (NP-OBJ (DNP (NP (QP (CD 数万)
+						 (CLP (M 个)))
+					     (NP (NN 基因)))
+					 (DEG 的))
+				    (NP (NN 表现)))))))) 
+	</parse>
+	<arg n="1">
+	数万 个 基因 的 表现 
+	</arg>
+	<arg n="2">
+	一 片 小小 的 生物 晶片 上 
+	</arg>
+	<arg n="m" f="adv">
+	同时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 晶宇))
+	    (VP (ADVP (AD 正))
+		(VP (VP (PP (P 与)
+			    (NP-PN (NR 台北)
+				   (NR 荣总)))
+			(VP (VV 合作)))
+		    (PU ，)
+		    (VP (VV 取得)
+			(NP-OBJ (DNP (NP (IP-APP (NP-SBJ (NN 检体)
+							 (VP (VV 测试)
+							     (NP-OBJ (NN 肠)
+								     (NN 病毒))))
+						 (NP (NN 晶片)))
+					 (DEG 的))
+				     (NP (NN 准确度)))))))) 
+	</parse>
+	<arg n="1">
+	肠 病毒 
+	</arg>
+	<arg n="2">
+	检体 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 人才) )
+	    (VP (VV 会)
+		(VP (VP (ADVP (AD 先))
+			(VP (VP (PP-MNR (P 经过)
+					(NP (DNP (NP (NN 专业))
+						 (DEG 的))
+					    (NP (NN 心理)
+						(NN 谘询)
+						(NN 顾问) )))
+				(VP (VV 筛选)))
+			    (PU ，)
+			    (VP (PP-MNR (P 以)
+					(NP (NP (QP (CD 一)
+						    (CC 对)
+						    (CD 一))
+						(NP (NN 面谈)))
+					    (NP (NN 方式))))
+				(VP (VV 测试)
+				    (NP-OBJ (NN 个性) )
+				    (PU ，)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 是否))
+					    (VP (VV 吻合)
+						(NP-OBJ (DNP (NP (DP (DT 该))
+								 (NP (NN 公司) ))
+							     (DEG 的))
+							(NP (NN 企业)
+							    (NN 文化) )))))))))
+		    (PU ，)
+		    (VP (ADVP (AD 再))
+			(VP (VRD (VV 推荐)
+				 (VV 给))
+			    (NP-OBJ (NN 客户) )))))) 
+	</parse>
+	<arg n="1" f="psr">
+	人才 
+	</arg>
+	<arg n="1" f="pse">
+	个性 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 是否 吻合 该 公司 的 企业 文化 
+	</arg>
+	<arg n="m" f="mnr">
+	以 一 对 一 面谈 方式 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-TPC (CP-APP (IP (NP-PN-SBJ (NR 晶宇))
+			    (VP (VP (PP (P 与)
+					(NP-PN (NR 长庚)
+					       (PU 、)
+					       (NR 成大)))
+				    (VP (VV 合作)))
+				(VP (VV 测试))))
+			(DEC 的))
+		(ADJP (JJ 初步))
+		(NP (NN 结果))) 
+	</parse>
+	<arg n="0">
+	晶宇 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

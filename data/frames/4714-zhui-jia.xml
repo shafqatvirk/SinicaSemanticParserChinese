@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 追加 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 adds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 山东))
+		      (NP-PN (NR 三星))
+		      (NP (NN 电子)
+			  (NN 通信))
+		      (ADJP (JJ 用限))
+		      (NP (NN 公司)))
+	      (VP (VP (QP-ADV (CD 两)
+			      (CLP (M 次)))
+		      (VP (VV 追加)
+			  (NP-OBJ (NN 投资))))
+		  (PU ，)
+		  (VP (VV 成为)
+		      (NP-OBJ (NP-PN (NR 韩国)
+				     (NR 三星)
+				     (NN 集团))
+			      (DNP (PP (P 在)
+				       (NP-PN (NR 中国)))
+				   (DEG 的))
+			      (QP (CD 三))
+			      (ADJP (JJ 大))
+			      (NP (NN 生产)
+				  (NN 基地)
+				  (NN 之一)))))) 
+	  </parse>
+	  <arg n="0">
+	  山东 三星 电子 通信 用限 公司 
+	  </arg>
+	  <arg n="1">
+	  投资 
+	  </arg>
+	  <arg n="m" f="adv">
+	  两 次 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 如今))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 家)))
+		      (ADJP (JJ 跨国))
+		      (NP (NN 集团)))
+	      (VP (VP (ADVP (AD 已))
+		      (ADVP (AD 陆续))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 上海)))
+		      (VP (VV 追加)
+			  (NP-OBJ (NN 投资))
+			  (QP-EXT (CD 二千多万)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 家 跨国 集团 
+	  </arg>
+	  <arg n="1">
+	  投资 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  二千多万 美元 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 上海 
+	  </arg>
+	  <arg n="m" f="adv">
+	  陆续 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

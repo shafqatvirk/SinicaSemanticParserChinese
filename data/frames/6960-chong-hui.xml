@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重回 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 returns to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-MNR (P 藉)
+					(NP (CP-APP (IP (NP-SBJ (DNP (NP (NN 西历))
+								     (DEG 的))
+								(NP (NN 日期)
+								    (CC 和)
+								    (NN 星期))
+								(NP (NN 对应)))
+							(VP (DP-ADV (DT 每)
+								    (QP (CD 二十八)
+									(CLP (M 年))))
+							    (ADVP (AD 将))
+							    (VP (VV 重复)
+								(QP-ADV (CD 一)
+									(CLP (M 次))))))
+						    (DEC 的))
+					    (NP (NN 特性))
+					    (PRN (PU （)
+						 (IP (ADVP (AD 例如))
+						     (IP (IP (NP-SBJ (NP (NT 今年))
+								     (NP (NT 一月)
+									 (NT 一日)))
+							     (VP (VC 是)
+								 (NP-PRD (NT 星期五))))
+							 (PU ，)
+							 (IP (NP-SBJ (-NONE- *pro*))
+							     (VP (LCP-TMP (NP (NT 二十八年))
+									  (LC 後))
+								 (ADVP (AD 又))
+								 (VP (VC 是)
+								     (VP (VV 如此)))))))
+						 (PU ）))))
+				(PU ，)
+				(VP (BA 将)
+				    (IP-OBJ (NP-SBJ (NN 系统))
+					    (VP (VP (VV 倒退)
+						    (QP-OBJ (CD 二十八)
+							    (CLP (M 年))))
+						(PU ，)
+						(VP (VV 重回)
+						    (NP-OBJ (NT 一九七○)
+							    (NN 年代))))))))))) 
+	</parse>
+	<arg n="0">
+	系统 
+	</arg>
+	<arg n="1">
+	一九七○ 年代 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

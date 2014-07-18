@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location entered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP (NN 境内))
+			(NP-PN (NR 湘江)
+			       (PU 、)
+			       (NR 资江)
+			       (PU 、)
+			       (NR 沅江)
+			       (CC 和)
+			       (NR 澧水)))
+		(VP (PP-MNR (P 经)
+			    (NP-PN (NR 洞庭湖)))
+		    (VP (VV 流入)
+			(NP-PN-OBJ (NR 长江))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  境内 湘江 、 资江 、 沅江 和 澧水 
+	  </arg>
+	  <arg n="1">
+	  长江 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  经 洞庭湖 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而且))
+	      (NP-SBJ (NN 外资))
+	      (VP (DVP (VP (ADVP (AD 更))
+			   (VP (VA 多)))
+		       (DEV 地))
+		  (VP (VV 流入)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 国家))
+				      (VP (VV 鼓励)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (NP (NN 投资类)
+				  (NN 项目)))))) 
+	  </parse>
+	  <arg n="0">
+	  外资 
+	  </arg>
+	  <arg n="1">
+	  *OP* 国家 鼓励 *T*-1 投资类 项目 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 多 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  而且 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

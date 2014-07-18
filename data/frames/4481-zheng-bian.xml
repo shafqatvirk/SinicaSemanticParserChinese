@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 政变 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 政变))))
+		      (NP (NN 军人)))
+	      (VP (VP (PP (P 同)
+			  (NP (DNP (ADJP (JJ 反政府))
+				   (DEG 的))
+			      (NP-PN (NR 塞拉里昂))
+			      (NP (NN 革命))
+			      (ADJP (JJ 联合))
+			      (NP (NN 阵线))))
+		      (VP (VV 结成)
+			  (NP-OBJ (NN 联盟))))
+		  (PU ，)
+		  (VP (VV 继续)
+		      (VP (PP-LOC (P 在)
+				  (NP (DNP (NP (DP (DT 该))
+					       (NP (NN 国)))
+					   (DEG 的))
+				      (NP-APP (NN 东部)
+					      (CC 和)
+					      (NN 北部)
+					      (ETC 等))
+				      (NP (NN 地))))
+			  (VP (VV 活动)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

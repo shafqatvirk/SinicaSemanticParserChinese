@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 新鲜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (NP-PN (NR 寿光市))
+			       (NP (NN 蔬菜)
+				   (NN 批发)
+				   (NN 市场)))
+			   (LC 上)))
+	      (IP (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 新鲜)))
+				      (DEC 的)))
+			      (NP (NN 蔬菜)))
+		      (VP (DP-TMP (DT 全)
+				  (CLP (M 年)))
+			  (VP (VV 可)
+			      (VP (VV 见)))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 蔬菜)
+			      (NN 品种))
+		      (VP (VV 达)
+			  (QP-OBJ (CD 一百二十多)
+				  (CLP (M 个))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 比美 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is not as good as"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-3))
+							(VP (VP (NP-TMP (NT 目前))
+								(NP-LOC (NN 世界))
+								(VP (VV 通行)))
+							    (PU 、)
+							    (VP (NP-PRD (ADVP (AD 至多))
+									(NP (QP (CD 三千))
+									    (NP (NN 色)))))))
+						    (DEC 的)))
+					    (NP (NN 色典)))
+				    (VP (MSP 所)
+					(VP (ADVP (AD 难以))
+					    (VP (VV 比美)
+						(NP-OBJ (-NONE- *T*-4))))))
+				(DEC 的)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-3 目前 世界 通行 、 至多 三千 色 的 色典 
+	</arg>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<arg n="m" f="adv">
+	难以 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entities competing in terms of beauty"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 现代))
+		    (NP (NN 男人)))
+	    (VP (VP (ADVP (AD 不))
+		    (ADVP (AD 只))
+		    (VP (VV 要)
+			(VP (VV 比美))))
+		(PU ，)
+		(VP (ADVP (AD 更))
+		    (VP (VV 要)
+			(VP (VV 比)
+			    (IP-OBJ-Q (NP-WH-SBJ (PN 谁))
+				      (VP (ADVP (AD 最))
+					  (VP (VV 会)
+					      (VP (VV 妆点)
+						  (NP-OBJ (PN 自己))))))))))) 
+	</parse>
+	<arg n="0">
+	现代 男人 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

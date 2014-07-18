@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 观 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="thing looked at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 反))
+		      (VP (VV 观)
+			  (NP-PN-OBJ (NR 台湾))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  台湾 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  反 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

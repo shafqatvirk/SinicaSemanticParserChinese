@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 供 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="provided thing"/>
+      <role argnum="1" argrole="person to which thing provided"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-TPC (NR 中国))
+				  (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 可)
+				      (VP (VV 供)
+					  (NP-OBJ (NN 出口)))))
+			      (DEC 的)))
+		      (NP (NN 技术)))
+	      (VP (VV 达)
+		  (QP-OBJ (CD 五十二)
+			  (CLP (M 项))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  中国 
+	  </arg>
+	  <arg n="0" f="pse">
+	  (*T*-1)->(技术) 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  出口 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 三十一)
+			  (CLP (M 件)))
+		      (NP (NN 贺礼)))
+	      (VP (PP-TMP (P 於)
+			  (NP (NP (NT 七月)
+				  (NT 三日)
+				  (CC 及)
+				  (NT 四日))
+			      (NP (NT 上午)
+				  (NT 十时)
+				  (CC 至)
+				  (NT 下午)
+				  (NT 五时))))
+		  (PP-LOC (P 在)
+			  (NP (NP-PN (NR 香港)
+				     (NN 会展)
+				     (NN 中心))
+			      (QP (CD 五)
+				  (CLP (M 楼)))
+			      (NP (NN 展览厅))))
+		  (VP (VP (VV 展出))
+		      (PU ，)
+		      (VP (VV 供)
+			  (NP-OBJ (NN 市民))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 参观))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  三十一 件 贺礼 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  市民 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 参观 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  於 七月 三日 及 四日 上午 十时 至 下午 五时 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 香港 会展 中心 五 楼 展览厅 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

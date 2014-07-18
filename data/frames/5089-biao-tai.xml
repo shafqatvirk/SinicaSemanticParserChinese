@@ -1,0 +1,182 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 表态 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="attitude arg0 makes clear"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-TMP (NT 今年)
+				 (NT 八月))
+			 (NP-PN-SBJ (NR 陈水扁)
+				    (NN 总统))
+			 (VP (VV 访问)
+			     (NP-PN-OBJ (NR 哥斯大黎加))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 哥国))
+			    (NP (NN 总统)))
+		    (NP-PN (NR 罗德里格斯)))
+	    (VP (QP-ADV (OD 首)
+			(CLP (M 度)))
+		(VP (VV 表态)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 愿意)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 协助)
+					    (NP-OBJ (PN 我))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 加入)
+						    (NP-PN-OBJ (NR 联合国))))))))))) 
+	</parse>
+	<arg n="0">
+	哥国 总统 罗德里格斯 
+	</arg>
+	<arg n="1">
+	*PRO* 愿意 *PRO* 协助 我 *PRO* 加入 联合国 
+	</arg>
+	<arg n="m" f="adv">
+	首 度 
+	</arg>
+	<arg n="m" f="tmp">
+	今年 八月 陈水扁 总统 访问 哥斯大黎加 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一些))
+		    (DNP (NP (PU 「)
+			     (NP (NP-PN (NR 连))
+				 (NP (NN 皮)))
+			     (NP (NP-PN (NR 宋))
+				 (NP (NN 骨)))
+			     (PU 」))
+			 (DEG 的))
+		    (NP (NN 党员)))
+	    (VP (ADVP (AD 尚))
+		(ADVP (AD 不))
+		(VP (VV 敢)
+		    (VP (ADVP (AD 明显))
+			(VP (VV 表态)))))) 
+	</parse>
+	<arg n="0">
+	一些 「 连 皮 宋 骨 」 的 党员 
+	</arg>
+	<arg n="m" f="adv">
+	明显 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	尚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (LCP-TMP (NP (NT 去年))
+				  (LC 底))
+			 (NP-PN-SBJ (NR 连战))
+			 (VP (VV 提出)
+			     (NP-OBJ (DNP (NP (ADJP (JJ 长程))
+					      (NP (NN 飞弹)))
+					  (DEG 的))
+				     (NP (NN 计划)))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 美国))
+		    (NP (NN 政府)))
+	    (VP (ADVP (AD 随即))
+		(PP-LOC (P 在)
+			(LCP (NP (DNP (NP-PN (NN 国务院))
+				      (DEG 的))
+				 (NP (NN 年终)
+				     (NN 记者会)))
+			     (LC 中)))
+		(PU ，)
+		(PP-LGS (P 由)
+			(NP (NP-APP (NN 国务次卿))
+			    (NP-PN (NR 赫伦))))
+		(VP (VV 表态)
+		    (PU ：)
+		    (IP-OBJ (IP (NP-PN-SBJ (NR 美国))
+				(VP (ADVP (AD 不))
+				    (VP (VV 愿)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 见到)
+						    (NP-PN-OBJ (NR 台湾))
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 做出)
+							    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+									(CP (IP (NP-SBJ (-NONE- *T*-1))
+										(VP (VV 违反)
+										    (NP-OBJ (NP (NT 一九八七年))
+											    (NP (PU 「)
+												(NP (NP (NN 导弹)
+													(NN 技术))
+												    (NP (NN 管制)))
+												(NP (NN 建置))
+												(PU 」))
+											    (ADJP (JJ 基本))
+											    (NP (NN 规范)))))
+									    (DEC 的)))
+								    (NP (NN 举动))))))))))
+			    (PU ，)
+			    (IP (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 亦))
+				    (VP (VC 即)
+					(VP (ADVP (AD 并))
+					    (ADVP (AD 不))
+					    (VP (VV 乐见)
+						(IP-OBJ (NP-PN-SBJ (NR 台湾))
+							(VP (VV 发展)
+							    (NP-OBJ (DNP (ADJP (JJ 攻击性))
+									 (DEG 的))
+								    (NP (ADJP (JJ 长程))
+									(NP (NN 飞弹)))
+								    (NP (NN 系统)))))))))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	美国 政府 
+	</arg>
+	<arg n="0" f="pse">
+	由 国务次卿 赫伦 
+	</arg>
+	<arg n="1">
+	美国 不 愿 *PRO* 见到 台湾 *PRO* 做出 *OP* *T*-1 违反 一九八七年 「 导弹 技术 管制 建置 」 基本 规范 的 举动 ， *pro* 亦 即 并 不 乐见 台湾 发展 攻击性 的 长程 飞弹 系统 
+	</arg>
+	<arg n="m" f="loc">
+	在 国务院 的 年终 记者会 中 
+	</arg>
+	<arg n="m" f="adv">
+	随即 
+	</arg>
+	<arg n="m" f="tmp">
+	去年 底 连战 提出 长程 飞弹 的 计划 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

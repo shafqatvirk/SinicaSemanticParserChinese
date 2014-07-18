@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 puts up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP (P 和)
+		      (NP (NP-APP (DNP (NP (NP-APP (NN 美商))
+					   (NP-PN (NR 杜邦)))
+				       (DEG 的))
+				  (NP (ADJP (JJ 同))
+				      (NP (NN 级)))
+				  (NP (NN 产品)))
+			  (NP-PN (PU 「)
+				 (NR COOLMAX)
+				 (PU 」))))
+		  (VP (VV 打起)
+		      (NP-OBJ (NN 对台))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="0" f="crd">
+	  和 美商 杜邦 的 同 级 产品 「 COOLMAX 」 
+	  </arg>
+	  <arg n="1">
+	  对台 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 为文 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 文人们))
+	    (VP (ADVP (AD 经常))
+		(PP-MNR (P 以)
+			(NP (NN 包子)
+			    (PU 、)
+			    (NN 馒头)))
+		(VP (MSP 来)
+		    (VP (VCD (VV 为文)
+			     (VV 作诗)))))) 
+	</parse>
+	<arg n="0">
+	文人们 
+	</arg>
+	<arg n="m" f="mnr">
+	以 包子 、 馒头 
+	</arg>
+	<arg n="m" f="adv">
+	经常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 已经))
+				    (VP (VV 退出)
+					(NP-OBJ (ADJP (JJ 跨党派))
+						(NP (NN 小组))))))
+			    (DEC 的)))
+		    (NP-PN (NR 新党)))
+	    (PU ，)
+	    (VP (NP-TMP (NT 二十四日))
+		(PP-LGS (P 由)
+			(NP (NP-APP (NP-APP (NN 全委会)
+					    (NN 顾问))
+				    (NP-PN (NR 郁慕明)
+					   (PU 、)
+					   (NR 陈癸淼)
+					   (ETC 等)))
+			    (NP (NN 人))))
+		(ADVP (AD 联名))
+		(PP-LOC (P 在)
+			(LCP (NP (NN 报))
+			     (LC 上)))
+		(VP (VV 为文)))) 
+	</parse>
+	<arg n="0" f="psr">
+	*OP* *T*-1 已经 退出 跨党派 小组 的 新党 
+	</arg>
+	<arg n="0" f="pse">
+	由 全委会 顾问 郁慕明 、 陈癸淼 等 人 
+	</arg>
+	<arg n="m" f="loc">
+	在 报 上 
+	</arg>
+	<arg n="m" f="adv">
+	联名 
+	</arg>
+	<arg n="m" f="tmp">
+	二十四日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

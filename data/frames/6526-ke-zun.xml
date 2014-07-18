@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 恪遵 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 abides by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 目前))
+				    (PP-LOC (P 在)
+					    (NP-PN (NR 斗六)
+						   (NN 高中)))
+				    (VP (VV 任教))))
+			    (DEC 的)))
+		    (NP (NP-PN (NR 吴))
+			(NP (NN 家)))
+		    (NP (NN 大姐)))
+	    (PU ，)
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (VP (PP-DIR (P 从)
+				(NP (NN 小)))
+			(VP (VV 恪遵)
+			    (NP-OBJ (CP-APP (IP (PU 「)
+						(NP-SBJ (-NONE- *PRO*))
+						(VP (ADVP (AD 不))
+						    (VP (VV 准)
+							(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 说)
+								    (NP-OBJ (NN 台语))))))
+						(PU 」))
+					    (DEC 的))
+				    (NP (NN 校训)))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 目前 在 斗六 高中 任教 的 吴 家 大姐 
+	</arg>
+	<arg n="1">
+	「 *PRO* 不 准 *PRO* 说 台语 」 的 校训 
+	</arg>
+	<arg n="m" f="dir">
+	从 小 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

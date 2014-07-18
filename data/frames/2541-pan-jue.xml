@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 判决 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity ruled on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 移交)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (VV 判决)
+					  (NP-OBJ (-NONE- *-2))))))
+			  (NP (NN 人))))) 
+	  </parse>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

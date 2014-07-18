@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 定点 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国家))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (NP (ADJP (JJ 电动))
+				      (NP (NN 汽车)))
+				  (NP (NN 运行)
+				      (NN 试验)
+				      (NN 示范区)))
+			  (VP (VV 定点)
+			      (PP-LOC (P 在)
+				      (NP-PN (NR 汕头市)
+					     (NR 南澳县))))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 
+	  </arg>
+	  <arg n="1">
+	  电动 汽车 运行 试验 示范区 
+	  </arg>
+	  <arg n="2">
+	  在 汕头市 南澳县 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

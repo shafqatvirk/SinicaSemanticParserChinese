@@ -1,0 +1,254 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 处理 </id>
+    <frameset id="f1" edef="punish">
+      <role argnum="0" argrole="punisher"/>
+      <role argnum="1" argrole="party punished"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 索珠乡)
+							      (NR 丁拉村))
+						       (NP (NN 村支书)
+							   (CC 与)
+							   (NN 村委)
+							   (NN 主任)))
+					       (VP (ADVP (AD 私))
+						   (VP (VV 分)
+						       (NP-OBJ (NN 公款)))))
+					   (DEC 的))
+				   (NP (NN 情况)))
+			   (PU ，)
+			   (VP (PP-TMP (P 在)
+				       (LCP (IP (NP-SBJ (NN 财务)
+							(NN 帐目))
+						(VP (VV 公开)))
+					    (LC 时)))
+			       (VP (LB 被)
+				   (CP-OBJ (WHNP-2 (-NONE- *OP*))
+					   (IP (NP-SBJ (NN 群众))
+					       (VP (VV 发现)
+						   (NP-OBJ (-NONE- *T*-2))))))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 及时))
+		      (VP (VV 挽回)
+			  (AS 了)
+			  (NP-OBJ (NN 损失))))
+		  (PU ，)
+		  (VP (ADVP (AD 依法))
+		      (VP (VV 处理)
+			  (AS 了)
+			  (NP-OBJ (NN 当事人))))
+		  (PU ，)
+		  (VP (VV 推选)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 更为))
+					      (VP (VA 合适))))
+				      (DEC 的)))
+			      (NP (NN 村委)
+				  (NN 主任))
+			      (NP (NN 人选)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  当事人 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  索珠乡 丁拉村 村支书 与 村委 主任 私 分 公款 的 情况 ， 在 财务 帐目 公开 时 被 *OP* 群众 发现 *T*-2 后 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依法 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (NP (ADJP (JJ 直接))
+			      (NP (NN 责任人)))
+			  (CC 和)
+			  (NP (NN 主管)
+			      (NN 领导人))))
+	      (PU ，)
+	      (CP-CND (ADVP (CS 不论))
+		      (IP (NP-SBJ (NN 工作))
+			  (VP (ADVP (AD 是否))
+			      (VP (VV 变动)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (VP (VV 追究)
+			      (NP-OBJ (NN 责任)))
+			  (CC 并)
+			  (VP (ADVP (AD 严肃))
+			      (VP (VV 处理))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  对 直接 责任人 和 主管 领导人 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  不论 工作 是否 变动 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  严肃 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="deal with">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NP-PN (NN 外交部))
+			     (NP (ADJP (JJ 驻港))
+				 (NP (NN 特派员)))
+			     (NP (NN 公署)))
+		  (VP (VV 致力)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 协助)
+				  (NP-OBJ (NN 特区)
+					  (NN 政府))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 处理)
+					  (NP-OBJ (DNP (PP (P 经)
+							   (NP (NN 授权)))
+						       (DEG 的))
+						  (PP (P 对)
+						      (NP (NN 外)))
+						  (NP (NN 事务))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  经 授权 的 对 外 事务 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (ADVP (AD 举凡))
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 涉及)
+					  (NP-OBJ (NP (NN 世界))
+						  (NP (NN 和平)
+						      (CC 与)
+						      (NN 安全)))))
+				  (DEC 的)))
+			  (ADJP (JJ 重大))
+			  (NP (NN 事件))))
+	      (PU ，)
+	      (NP-SBJ (ADVP (AD 只有))
+		      (NP-PN (NN 安理会)))
+	      (VP (ADVP (AD 才))
+		  (VP (VP (VE 有)
+			  (NP-OBJ (NN 权)))
+		      (VP (VV 决定)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 如何))
+				      (VP (VV 处理)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  如何 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="deal with into">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="thing arg0 processes arg1 into being"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 只要))
+		      (IP (IP (NP-SBJ (PU 「)
+				      (NN 包装)
+				      (PU 」))
+			      (VP (VP (VA 好))
+				  (ADVP (AD 一点))))
+			  (PU ，)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VP (VRD (VV 处理)
+					   (VV 成))
+				      (NP-OBJ (NN 流行)
+					      (NN 趋势)
+					      (PU 、)
+					      (NN 理财)
+					      (NN 资讯)))
+				  (PU ，)
+				  (VP (ADVP (AD 不))
+				      (VP (VV 要)
+					  (VP (ADVP (AD 太))
+					      (VP (PP-PRD (P 像)
+							  (NP (NN 广告)))))))))))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 一般))
+		      (NP (NN 民众)))
+	      (VP (ADVP (AD 大概))
+		  (VP (VPT (VV 看)
+			   (AD 不)
+			   (VV 出来))
+		      (NP-OBJ (DNP (NP (NN 新闻)
+				       (NN 後面))
+				   (DEG 的))
+			      (NP (NN 商业)
+				  (NN 利益)))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  流行 趋势 、 理财 资讯 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

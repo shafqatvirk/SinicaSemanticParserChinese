@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 漠视 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 pays no attention to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-PN-SBJ (NR 台湾))
+		(VP (VV 漠视)
+		    (NP-OBJ (NT 五四)))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	五四 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 现代))
+		    (NP (NN 人)))
+	    (VP (VV 习於)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-DIR (P 对)
+				    (NP (NN 周遭)
+					(NN 事物)))
+			    (VP (VCD (VV 漠视)
+				     (VV 冷感))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	对 周遭 事物 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (PP-ADV (ADVP (AD 不管))
+			(PP (PP (P 在)
+				(NP (DP (DT 任何)
+					(QP (CD 一)
+					    (CLP (M 个))))
+				    (NP (NN 时代))))
+			    (PU 、)
+			    (PP (P 在)
+				(NP (DNP (NP (NN 地球))
+					 (DEG 的))
+				    (DP (DT 任何)
+					(QP (CD 一)
+					    (CLP (M 个))))
+				    (NP (NN 角落))))))
+		(PU ，)
+		(NP-SBJ (DNP (NP (NN 自由)
+				 (PU 、)
+				 (NN 民主)
+				 (PU 、)
+				 (NN 人权))
+			     (DEG 的))
+			(NP (NN 意义)
+			    (CC 和)
+			    (NN 价值)))
+		(VP (ADVP (AD 都))
+		    (ADVP (AD 不))
+		    (VP (VV 能)
+			(VP (SB 被)
+			    (VP (VV 漠视)
+				(CC 或)
+				(VV 改变)))))) 
+	</parse>
+	<arg n="1">
+	自由 、 民主 、 人权 的 意义 和 价值 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	不管 在 任何 一 个 时代 、 在 地球 的 任何 一 个 角落 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

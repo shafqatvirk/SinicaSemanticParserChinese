@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 孤立 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 isolates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 连带))
+		(VP (VV 导致)
+		    (NP-PN-OBJ (NR 台北市))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (LB 被)
+			    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (DP (DT 各))
+						(NP (NN 县)
+						    (NN 市)))
+					(VP (VCD (VV 围剿)
+						 (VV 孤立))
+					    (NP-OBJ (-NONE- *T*-2)))))))))) 
+	</parse>
+	<arg n="0">
+	各 县 市 
+	</arg>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-TPC (NR 台湾))
+	    (NP-SBJ (NN 情势))
+	    (VP (VP (VV 孤立))
+		(PU ，)
+		(VP (VV 面对)
+		    (NP-OBJ (NP (NP-PN (NR 中共))
+				(NP (NN 威胁)))
+			    (PU 、)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 险恶)))
+					(DEC 的)))
+				(NP (NN 国际)
+				    (NN 情势))))))) 
+	</parse>
+	<arg n="1" f="psr">
+	台湾 
+	</arg>
+	<arg n="1" f="pse">
+	情势 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

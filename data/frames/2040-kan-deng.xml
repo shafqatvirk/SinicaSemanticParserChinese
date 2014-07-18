@@ -1,0 +1,173 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刊登 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/causer"/>
+      <role argnum="1" argrole="location"/>
+      <role argnum="2" argrole="entity published"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-PN (NP-PN (NR 香港))
+			       (ADJP (JJ 特别))
+			       (NP (NN 行政区)))
+			(NP (NN 政府)))
+		(VP (NP-TMP (NT 今日)
+			    (PRN (PU （)
+				 (NP (NT 星期二))
+				 (PU ）)))
+		    (PP-LOC (P 在)
+			    (NP (NN 宪报)))
+		    (VP (VV 刊登)
+			(NP-OBJ (PU 《)
+				(NP-PN (NP-PN (NR 香港))
+				       (ADJP (JJ 特别))
+				       (NP (NN 行政区)))
+				(NP (NN 护照)
+				    (NN 条例)
+				    (NN 草案))
+				(PU 》))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  香港 特别 行政区 政府 
+	  </arg>
+	  <arg n="1">
+	  在 宪报 
+	  </arg>
+	  <arg n="2">
+	  《 香港 特别 行政区 护照 条例 草案 》 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 （ 星期二 ） 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PP (P 据)
+		    (IP (NP-PN-SBJ (NR 德新社))
+			(VP (NP-TMP (NT ２３日))
+			    (VP (VV 报道)))))
+		(PU ，)
+		(NP-PN-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-PN-SBJ (-NONE- *T*-1))
+				       (VP (ADVP (AD 将))
+					   (PP-TMP (P 于)
+						   (NP (NP (DP (DT 本))
+							   (NP (NN 月)))
+						       (NP (NT ２５日))))
+					   (VP (VV 出版))))
+				   (DEC 的)))
+			   (NP (NP-TTL (PU 《)
+				       (NN 明镜)
+				       (PU 》))
+			       (NP (NN 周刊))))
+		(VP (ADVP (AD 将))
+		    (VP (VV 刊登)
+			(NP-OBJ (DNP (NP-PN (NR 叶利钦))
+				     (DEG 的))
+				(ADJP (JJ 有关))
+				(NP (NN 谈话)))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 将 于 本 月 ２５日 出版 的 《 明镜 》 周刊 
+	  </arg>
+	  <arg n="2">
+	  叶利钦 的 有关 谈话 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-PN-SBJ (NR 蒙古))
+		    (VP (VV 禁止)
+			(NP-OBJ (NN 新闻)
+				(NN 媒体))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 刊登)
+				(NP-OBJ (NN 酒类)
+					(NN 广告))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  酒类 广告 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PP-SBJ (P 有关)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (BA 将)
+				(IP-OBJ (NP-SBJ (NT 十月)
+						(NT 一日))
+					(VP (VV 列为)
+					    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							(IP (NP-SBJ (-NONE- *pro*))
+							    (VP (ADVP (AD 新))
+								(VP (VV 增)
+								    (NP-OBJ (-NONE- *T*-1))))))
+						    (ADJP (JJ 法定))
+						    (NP (NN 假日))))))))
+		(VP (ADVP (AD 已))
+		    (PP-TMP (P 於)
+			    (NP (NT 七月)
+				(NT 一日)))
+		    (PP-LOC (P 在)
+			    (NP (NP-PN (NP-PN (NR 香港))
+				       (ADJP (JJ 特别))
+				       (NP (NN 行政区)))
+				(NP (NN 政府)
+				    (NN 宪报))))
+		    (VP (VV 刊登)))
+		(PU 。))) 
+	  </parse>
+	  <arg n="2">
+	  有关 *pro* 将 十月 一日 列为 *OP* *pro* 新 增 *T*-1 法定 假日 
+	  </arg>
+	  <arg n="1">
+	  在 香港 特别 行政区 政府 宪报 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  於 七月 一日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

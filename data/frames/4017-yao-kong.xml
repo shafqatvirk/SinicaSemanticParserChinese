@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遥控 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 负责)
+				      (NP-OBJ (DP (DT 这)
+						  (CLP (M 项)))
+					      (NP (NN 发射)
+						  (NN 工作)))))
+			      (DEC 的)))
+		      (NP-PN (NR 日本)
+			     (NN 宇宙)
+			     (NN 开发)
+			     (NN 事业团)))
+	      (VP (PP-TMP (P 在)
+			  (NP (NP (NT ８月))
+			      (NP (NT ３０日)
+				  (CC 和)
+				  (NT ３１日))))
+		  (VP (VP (ADVP (AD 连续))
+			  (QP-ADV (CD 多)
+				  (CLP (M 次)))
+			  (VP (VV 遥控)
+			      (NP-OBJ (NN 卫星))))
+		      (VP (ADVP (AD 却))
+			  (ADVP (AD 连))
+			  (VP (VV 遭)
+			      (NP-OBJ (NN 失败))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 负责 这 项 发射 工作 的 日本 宇宙 开发 事业团 
+	  </arg>
+	  <arg n="1">
+	  卫星 
+	  </arg>
+	  <arg n="m" f="adv">
+	  多 次 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连续 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 ８月 ３０日 和 ３１日 
+	  </arg>
+	  <arg n="m" f="adv">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

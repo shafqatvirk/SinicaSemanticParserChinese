@@ -1,0 +1,25 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刮风 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="weather"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP-ADV (ADVP (CS 无论))
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VCD (VV 刮风)
+			       (VV 下雨))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

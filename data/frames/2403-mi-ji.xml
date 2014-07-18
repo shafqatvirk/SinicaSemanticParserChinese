@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 密集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 出现)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 批)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 技术)
+					      (CC 和)
+					      (NN 资金))
+				      (VP (ADVP (AD 特别))
+					  (VP (VA 密集))))
+				  (DEC 的)))
+			  (NP (NN 项目))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <arg n="0" f="pse">
+	  技术 和 资金 
+	  </arg>
+	  <arg n="m" f="adv">
+	  特别 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

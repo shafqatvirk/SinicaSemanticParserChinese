@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 培肥 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing fostered"/>
+      <role argnum="2" argrole="means"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 由于))
+		      (IP (NP-TPC (DP (DT 这)
+				      (CLP (M 种)))
+				  (NP (NN 生物)
+				      (NN 钾肥)))
+			  (IP (IP (NP-SBJ (NN 价格))
+				  (VP (VA 便宜)))
+			      (PU ，)
+			      (IP (NP-SBJ (NN 增产)
+					  (NN 增收)
+					  (NN 效果))
+				  (VP (VA 显著)))
+			      (PU ，)
+			      (IP (NP-SBJ (NN 使用))
+				  (VP (VA 方便)))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VE 没有)
+				      (NP-OBJ (NN 污染))))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (NP-TMP (NT 同时))
+				      (VP (VV 可以)
+					  (VP (VV 培肥)
+					      (NP-OBJ (NN 地力)))))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 深受)
+		  (NP-OBJ (NN 农民))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 欢迎))))) 
+	  </parse>
+	  <arg n="2">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  地力 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

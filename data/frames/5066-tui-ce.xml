@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 推测 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 infers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 外界))
+	    (VP (PP-MNR (P 根据)
+			(NP (DNP (NP (PN 他))
+				 (DEG 的))
+			    (NP (NN 谈话))))
+		(VP (VV 推测)
+		    (PU ，)
+		    (IP-OBJ (NP-SBJ (NP (PN 我))
+				    (NP (NN 国)))
+			    (VP (VV 可能)
+				(VP (PP-TMP (P 在)
+					    (LCP (NP (NT 近期))
+						 (LC 内)))
+				    (VP (VV 会)
+					(VP (VP (PP-LOC (P 在)
+							(NP-PN (NR 欧洲)))
+						(ADVP (AD 再))
+						(VP (VV 下)
+						    (NP-OBJ (QP (CD 一))
+							    (NP (NN 城)))))
+					    (PU ，)
+					    (VP (PP (P 与)
+						    (NP (CP (WHNP-1 (-NONE- *OP*))
+							    (CP (IP (NP-SBJ (-NONE- *T*-1))
+								    (VP (VA 新)))
+								(DEC 的)))
+							(NP (NN 朋友))))
+						(VP (VV 建交))))))))))) 
+	</parse>
+	<arg n="0">
+	外界 
+	</arg>
+	<arg n="1">
+	我 国 可能 在 近期 内 会 在 欧洲 再 下 一 城 ， 与 *OP* *T*-1 新 的 朋友 建交 
+	</arg>
+	<arg n="m" f="mnr">
+	根据 他 的 谈话 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 有的))
+	    (VP (VV 推测)
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (NN 额头)
+				    (NN 中间))
+			    (VP (ADVP (AD 多))
+				(VP (VV 长)
+				    (NP-OBJ (QP (CD 一)
+						(CLP (M 只)))
+					    (NP (NN 眼睛))))))))) 
+	</parse>
+	<arg n="0">
+	有的 
+	</arg>
+	<arg n="1">
+	是 额头 中间 多 长 一 只 眼睛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

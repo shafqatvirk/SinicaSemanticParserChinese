@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 创造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="generator, creator"/>
+      <role argnum="1" argrole="thing created, generated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NN 乡镇)
+				      (NN 企业))
+			      (VP (VV 创造)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP (NN 国民)
+		      (NN 生产)
+		      (NN 总值))) 
+	  </parse>
+	  <arg n="0">
+	  乡镇 企业 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 机械)
+		      (NN 行业))
+	      (NP-SBJ (ADVP (AD 仅))
+		      (NP (IP-APP (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (VV 推广)
+					  (NP-OBJ (-NONE- *RNR*-1)))
+				      (VP (VV 应用)
+					  (NP-OBJ-1 (NN 楔横轧)))))
+			  (QP (CD 一)
+			      (CLP (M 项)))
+			  (NP (NN 技术))))
+	      (PU ，)
+	      (VP (VV 创造)
+		  (NP-OBJ (ADJP (JJ 直接))
+			  (NP (NN 经济)
+			      (NN 效益)))
+		  (QP-EXT (CD 四亿多)
+			  (CLP (M 元))))) 
+	  </parse>
+	  <arg n="0">
+	  机械 行业 	  
+	  </arg>
+	  <arg n="0">
+	  仅 *pro* 推广 *RNR*-1 应用 楔横轧 一 项 技术 	  
+	  </arg>
+	  <arg n="1">
+	  直接 经济 效益 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  四亿多 元 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

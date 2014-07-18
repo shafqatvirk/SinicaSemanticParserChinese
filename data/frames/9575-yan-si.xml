@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 淹死 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="person arg0 drowns"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 侄儿))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 做)
+				       (NP-OBJ (NN 田野)
+					       (NN 调查))))
+			       (LC 时)))
+		  (VP (VP (VV 掉落)
+			  (NP-PN-OBJ (NR 日月潭)))
+		      (VP (VV 淹死))))) 
+	  </parse>
+	  <arg n="1">
+	  侄儿 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 做 田野 调查 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

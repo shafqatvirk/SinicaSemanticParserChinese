@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 溃散 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity being routed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 借)
+					(NP-OBJ (NT 五四)))
+				    (VP (VV 还魂))))
+			    (DEC 的)))
+		    (NP (NT 六四)))
+	    (PU ，)
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NP-PN (NR 共党))
+				 (CP-APP (IP (PU 「)
+					     (NP-SBJ (NN 枪杆子))
+					     (VP (VV 出)
+						 (NP-OBJ (NN 政权)))
+					     (PU 」))
+					 (DEC 的))
+				 (ADJP (JJ 一贯))
+				 (NP (NN 思想)))
+			     (LC 下)))
+		(VP (VV 溃散)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 借 五四 还魂 的 六四 
+	</arg>
+	<arg n="m" f="loc">
+	在 共党 「 枪杆子 出 政权 」 的 一贯 思想 下 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

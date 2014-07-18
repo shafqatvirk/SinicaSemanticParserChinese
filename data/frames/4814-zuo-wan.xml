@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 做完 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 finishes doing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 只有))
+		      (IP (NP-SBJ (NN 上篇)
+				  (NN 文章)
+				  (PRN (PU ——)
+				       (NP (DNP (PP (P 在)
+						    (NP (NP-PN (NR 共产党))
+							(NP (NN 领导))))
+						(DEG 的))
+					   (ADJP (JJ 民主))
+					   (NP (NN 革命)))))
+			  (VP (ADVP (AD 一一))
+			      (VP (VV 做完)
+				  (AS 了)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 才))
+		  (VP (VV 能)
+		      (VP (VV 做)
+			  (NP-OBJ (DNP (NP (NN 社会主义))
+				       (DEG 的))
+				  (NP (NN 下篇)
+				      (NN 文章))))))) 
+	  </parse>
+	  <arg n="1">
+	  上篇 文章 —— 在 共产党 领导 的 民主 革命 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一一 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

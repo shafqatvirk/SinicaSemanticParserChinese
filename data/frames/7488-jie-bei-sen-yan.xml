@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 戒备森严 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="place described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (LCP (NP (NN 眼))
+			 (LC 前))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 开阔)))
+			    (DEC 的)))
+		    (NP-PN (NR 凯达格兰大道)))
+	    (PU ，)
+	    (VP (LCP-TMP (QP (CD 数)
+			     (CLP (M 年)))
+			 (LC 之前))
+		(ADVP (AD 仍然))
+		(VP (VV 戒备森严)))) 
+	</parse>
+	<arg n="0">
+	眼 前 *OP* *T*-1 开阔 的 凯达格兰大道 
+	</arg>
+	<arg n="m" f="adv">
+	仍然 
+	</arg>
+	<arg n="m" f="tmp">
+	数 年 之前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

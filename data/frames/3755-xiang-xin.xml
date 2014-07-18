@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相信 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity believed in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 相信)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (PN 自己))
+					  (VP (MSP 所)
+					      (VP (VV 特有)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的)))
+			      (NP (NN 道路)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  *OP* 自己 所 特有 *T*-1 的 道路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 相信)
+		  (PU ，)
+		  (IP-OBJ (PP-TMP (P 在)
+				  (LCP (QP (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (VA 新)))
+						   (DEC 的)))
+					   (QP (CD 一)
+					       (CLP (M 年))))
+				       (LC 里)))
+			  (PU ，)
+			  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-PN-SBJ (NR 中国))
+					      (VP (PP-LOC (P 在)
+							  (LCP (NP (NP (NN 国际))
+								   (NP (NN 政治)
+								       (CC 和)
+								       (NN 经济)))
+							       (LC 中)))
+						  (VP (VV 起)
+						      (NP-OBJ (-NONE- *T*-2)))))
+					  (DEC 的)))
+				  (NP (NN 作用)))
+			  (VP (ADVP (AD 将))
+			      (ADVP (AD 越来越))
+			      (VP (VA 大)))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  在 *OP* *T*-1 新 的 一 年 里 ， *OP* 中国 在 国际 政治 和 经济 中 起 *T*-2 的 作用 将 越来越 大 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

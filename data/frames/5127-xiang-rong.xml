@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相容 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities compatible"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (NP (ADJP (JJ 传统))
+					(NP (NN 文化)))
+				    (CC 和)
+				    (NP (ADJP (JJ 现代))
+					(NP (NN 生活))))
+			    (VP (DVP (ADVP (AD 笼统))
+				     (DEV 地))
+				(VP (VV 看做)
+				    (NP-OBJ (QP (CD 两)
+						(CLP (M 个)))
+					    (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (ADVP (AD 不))
+							    (VP (VV 相容))))
+						    (DEC 的)))
+					    (NP (NN 对立体)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

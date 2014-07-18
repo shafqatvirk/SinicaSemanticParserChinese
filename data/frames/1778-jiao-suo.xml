@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 教唆 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="enticer"/>
+      <role argnum="1" argrole="party enticed"/>
+      <role argnum="2" argrole="activity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-4 (NP-APP (QP (OD 第二))
+				(NP (NN 被告)))
+			(PU ，)
+			(DNP (QP (CD 二十九)
+				 (CLP (M 岁))))
+			(NP (NN 资料)
+			    (NN 输入员)))
+	      (PU ，)
+	      (VP (SB 被)
+		  (VP (VV 告)
+		      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+				      (VP (VP (VV 协助)
+					      (NP-OBJ (-NONE- *RNR*-1))
+					      (IP (-NONE- *RNR*-2)))
+					  (CC 和)
+					  (VP (VV 教唆)
+					      (NP-OBJ-1 (PN 他人))
+					      (IP-2 (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 使用)
+							(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+								    (IP (NP-SBJ (-NONE- *T*-3))
+									(VP (VA 虚假))))
+								(NP (NP (NP-PN (NR 英国))
+									(NP (NN 国民))
+									(PRN (PU （)
+									     (NP (NN 海外))
+									     (PU ）))
+									(NP (NN 护照)))
+								    (CC 及)
+								    (NP (NP-PN (NR 香港))
+									(NP (NN 身分)
+									    (NN 证明书))))))))))
+			      (QP (CD 两))
+			      (NP (NN 罪)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  他人 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 使用 *OP* *T*-3 虚假 英国 国民 （ 海外 ） 护照 及 香港 身分 证明书 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

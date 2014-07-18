@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 参阅 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="reference"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TPC (DP (DT 其他))
+              (NP (NN 详情)))
+      (PU ：)
+      (NP-SBJ (-NONE- *pro*))
+      (VP (VV 请)
+          (VP (VP (VV 参阅)
+                  (NP-OBJ (NN 资料)
+                          (NN 备忘录)))
+              (CC 或)
+              (VP (PP-DIR (P 向)
+                          (NP (NP (NN 市场)
+                                  (NN 庄家))
+                              (CC 和)
+                              (NP (ADJP (JJ 认可))
+                                  (NP (NN 交易商)))))
+                  (VP (VV 查询)))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> 资料 备忘录 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

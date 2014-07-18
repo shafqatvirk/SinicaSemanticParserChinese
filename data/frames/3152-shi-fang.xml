@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 释放 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity released"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 释放)
+		      (NP-OBJ (NN 政治犯)))
+		  (CC 和)
+		  (VP (VV 允许)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 流亡)
+					      (NP-OBJ (NN 国外))))
+				      (DEC 的)))
+			      (NP (NN 人)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 回国)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  政治犯 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 通胀)
+		      (NN 压力))
+	      (VP (ADVP (AD 进一步))
+		  (VP (VV 释放)))) 
+	  </parse>
+	  <arg n="1">
+	  通胀 压力 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing released"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (NP (NN 药剂)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 水))
+			       (LC 中)))
+		  (VP (VV 会)
+		      (VP (ADVP (AD 逐渐))
+			  (VP (VRD (VV 释放)
+				   (VV 出))
+			      (NP-OBJ (NN 植物)
+				      (NN 细胞)
+				      (NN 霉素))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 种 药剂 
+	  </arg>
+	  <arg n="1">
+	  植物 细胞 霉素 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐渐 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 水 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

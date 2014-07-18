@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 护 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="protector"/>
+    <role argnum="1" argrole="entity arg0 protects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 坪林))
+		    (NP (NN 乡民)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 组成)
+			    (NP-OBJ (NN 护鱼队))))
+		(VP (VP-FOC (VV 护)
+			    (NP-OBJ (NN 溪)))
+		    (VP (VV 有成))))) 
+	</parse>
+	<arg n="0">
+	坪林 乡民 
+	</arg>
+	<arg n="1">
+	溪 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

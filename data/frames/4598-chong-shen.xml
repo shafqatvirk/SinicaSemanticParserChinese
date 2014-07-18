@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重申 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing reiterated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 重申)
+		      (IP-OBJ (NP-PN-SBJ (NR 美国))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 支持)
+				      (NP-OBJ (NP-PN (NR 伊拉克))
+					      (NP (NN 反对派)))
+				      (PU ，)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 颠覆)
+					      (NP-OBJ (NP-PN (NR 萨达姆))
+						      (NP (NN 政权))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  美国 将 支持 伊拉克 反对派 ， *PRO* 颠覆 萨达姆 政权 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 海协))
+	      (VP (VP (ADVP (AD 再次))
+		      (VP (VV 重申)
+			  (NP-OBJ (ADJP (JJ 上述))
+				  (NP (NN 邀请)))))
+		  (PU ，)
+		  (VP (VV 望)
+		      (IP-OBJ (NP-PN-SBJ (NR 海基会))
+			      (VP (ADVP (AD 早日))
+				  (VP (VV 提出)
+				      (NP-OBJ (NN 行期)
+					      (CC 和)
+					      (NN 名单)))))))) 
+	  </parse>
+	  <arg n="0">
+	  海协 
+	  </arg>
+	  <arg n="1">
+	  上述 邀请 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

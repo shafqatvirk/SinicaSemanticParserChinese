@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 还政 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 returns power to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 却))
+		(VP (VP (VV 迫於)
+			(NP-OBJ (NN 天命)))
+		    (PU ，)
+		    (VP (ADVP (AD 不))
+			(VP (VV 能)
+			    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					(VP (PP-ADV (P 像)
+						    (NP-PN (NR 周公)))
+					    (VP (VA 一样))))
+				(VP (VV 还政)))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 像 周公 一样 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

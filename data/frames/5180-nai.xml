@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 耐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is able to endure"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 此外))
+	    (PU ，)
+	    (NP-SBJ (NN 大楼)
+		    (NN 结构))
+	    (VP (VV 可)
+		(VP (VV 耐)
+		    (NP-OBJ (QP (CD 九)
+				(CLP (M 级)))
+			    (NP (NN 地震)))))) 
+	</parse>
+	<arg n="0">
+	大楼 结构 
+	</arg>
+	<arg n="1">
+	九 级 地震 
+	</arg>
+	<arg n="m" f="dis">
+	此外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tries to control"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (VP (ADVP (AD 已))
+		    (ADVP (AD 极))
+		    (ADVP (AD 不))
+		    (VP (VV 耐烦)))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (VP (VV 须)
+			(VP (VV 耐)
+			    (AS 著)
+			    (NP-OBJ (NN 性子))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	性子 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

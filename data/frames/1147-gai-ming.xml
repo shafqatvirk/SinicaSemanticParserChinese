@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="original name of arg1"/>
+      <role argnum="3" argrole="new name arg0 gives arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (VP (ADVP (AD 正))
+		      (VP (VV 研议)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VCD (VV 扩张)
+					   (VV 改版))))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 可能)
+		      (VP (VRD (VV 改名)
+			       (VV 为))
+			  (NP-PN-OBJ (PU 《)
+				     (NR Taiwan)
+				     (NR News)
+				     (PU 》)))))) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <arg n="3">
+	  《 Taiwan News 》 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

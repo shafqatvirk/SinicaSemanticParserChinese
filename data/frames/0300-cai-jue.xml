@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 裁决 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="arbitrator"/>
+    <role argnum="1" argrole="case"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (LCP-LOC (NP (NN 法庭))
+                   (LC 上))
+          (VP (VP (VE 无)
+                  (IP-OBJ (NP-SBJ (NN 辩护)
+                                  (NN 律师))
+                          (VP (VV 到场))))
+              (PU ，)
+              (VP (ADVP (AD 也))
+                  (VP (VE 无)
+                      (IP-OBJ (NP-SBJ (NN 上诉)
+                                      (NN 法院))
+                              (VP (VV 裁决)))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 上诉 法院 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

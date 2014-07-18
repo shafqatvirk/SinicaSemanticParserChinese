@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 退件 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 turns down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 送件)
+					    (NP-OBJ (NN IPO))))
+				(VP (SB 被)
+				    (VP (VV 退件))))
+			    (DEC 的))
+		    (NP (NN 传言)))
+	    (VP (VV 甚嚣尘上))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

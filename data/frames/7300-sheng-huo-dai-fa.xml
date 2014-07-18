@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 生火待发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-5 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-5))
+			(VP (PP-LOC (P 在)
+				    (LCP (NP (NN 港))
+					 (LC 内)))
+			    (VP (VV 生火待发))))
+		    (DEC 的)))
+	    (NP (NN 战车)
+		(NN 登陆艇))) 
+	</parse>
+	<arg n="0">
+	*T*-5 
+	</arg>
+	<arg n="m" f="loc">
+	在 港 内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

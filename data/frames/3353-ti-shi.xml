@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提示 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing reminded of/hinted at"/>
+      <role argnum="2" argrole="people reminded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 虽))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 经)
+				      (NP-PN (NR 海协)))
+			      (VP (VV 提示)))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-PN-SBJ (NR 海基会))
+	      (VP (ADVP (AD 仍))
+		  (ADVP (AD 一再))
+		  (VP (VV 坚持)))) 
+	  </parse>
+	  <arg n="0">
+	  经 海协 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

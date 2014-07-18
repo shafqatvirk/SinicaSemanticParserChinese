@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 嗜好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 enjoys doing as a hobby"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (DP (DT 别))
+			   (DEG 的))
+		      (NP (NN 民族)))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (VP (VE 有)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 还价)))
+				      (DEC 的))
+			      (NP (NN 嗜好)))))) 
+	  </parse>
+	  <arg n="0">
+	  别 的 民族 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 还价 
+	  </arg>
+	  <arg n="m" f="dis">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

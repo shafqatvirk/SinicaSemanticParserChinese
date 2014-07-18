@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冲突 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities conflicting with each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (DNP (NP (NN 中年))
+				     (DEG 的))
+				(NP (PN 自我)))
+			    (PU 、)
+			    (NP (NN 家庭))
+			    (CC 与)
+			    (NP (NN 社会))
+			    (ETC 等))
+		    (QP (CD 多)
+			(CLP (M 重)))
+		    (NP (NN 角色)))
+	    (VP (NP-ADV (PN 彼此))
+		(VP (VV 冲突)))) 
+	</parse>
+	<arg n="0">
+	中年 的 自我 、 家庭 与 社会 等 多 重 角色 
+	</arg>
+	<arg n="m" f="adv">
+	彼此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (ADVP (AD 还有))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (PN 自己))
+			   (DEG 的))
+		      (NP (NN 需求)))
+	      (VP (VNV-WH (VV 会)
+			  (AD 不)
+			  (VV 会))
+		  (VP (PP (P 和)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 必须)
+					      (VP (VV 克尽)
+						  (NP-OBJ (-NONE- *T*-2)))))
+				      (DEC 的)))
+			      (NP (NN 人生)
+				  (NN 责任))))
+		      (ADVP (AD 相))
+		      (VP (VV 冲突))))) 
+	</parse>
+	<arg n="0">
+	自己 的 需求 
+	</arg>
+	<arg n="0" f="crd">
+	和 *OP* *pro* 必须 克尽 *T*-2 的 人生 责任 
+	</arg>
+	<arg n="m" f="adv">
+	相 
+	</arg>
+	<arg n="m" f="dis">
+	还有 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

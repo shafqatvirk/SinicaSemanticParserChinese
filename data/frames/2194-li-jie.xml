@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 理解 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 understands"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 中方))
+		  (VP (VV 理解)
+		      (NP-OBJ (NP (NN 美方))
+			      (DNP (PP (P 对于)
+				       (IP (NP-SBJ (NP-PN (NR 中)
+							  (NR 美))
+						   (NP (NN 贸易)))
+					   (VP (ADVP (AD 不))
+					       (VP (VA 平衡)))))
+				   (DEG 的))
+			      (NP (NN 关切))))) 
+	  </parse>
+	  <arg n="0">
+	  中方 
+	  </arg>
+	  <arg n="1">
+	  美方 对于 中 美 贸易 不 平衡 的 关切 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 完全))
+		      (VP (VV 理解)
+			  (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 中国))
+					       (DEG 的))
+					  (NP (NN 现代化)
+					      (NN 建设)))
+				  (VP (VV 需要)
+				      (VP (PP-LOC (P 在)
+						  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+							       (CP (IP (NP-SBJ (-NONE- *T*-1))
+								       (VP (VA 稳定)))
+								   (DEC 的)))
+							   (NP (NN 情况)))
+						       (LC 下)))
+					  (VP (VV 进行)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  中国 的 现代化 建设 需要 在 *OP* *T*-1 稳定 的 情况 下 进行 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (PN 他))
+				  (VP (VV 想)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 评)
+						  (NP-OBJ (ADJP (JJ 好))
+							  (NP (NN 稿)))))))
+			      (DEC 的))
+		      (NP (NN 心情)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 可)
+					  (VP (VV 理解))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

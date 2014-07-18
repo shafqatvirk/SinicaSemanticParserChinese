@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 称赞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="praiser"/>
+      <role argnum="1" argrole="thing/person praised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 利比亚))
+		      (NP (NN 外交部)
+			  (NN 发言人)))
+	      (VP (VP (DP-TMP (DT 同)
+			      (QP (CD 一)
+				  (CLP (M 天))))
+		      (ADVP (AD 还))
+		      (PP-DIR (P 就)
+			      (IP (NP-PN-SBJ (NR 伊))
+				  (VP (VV 拒绝)
+				      (NP-PN-OBJ (NR 联合国)
+						 (NN 特委会))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (ADVP (AD 重))
+						  (VP (VV 返)
+						      (NP-PN-OBJ (NR 伊))))
+					      (VP (VV 进行)
+						  (NP-OBJ (NN 武器)
+							  (NN 核查))))))))
+		      (VP (VV 发表)
+			  (NP-OBJ (NN 谈话))))
+		  (PU ，)
+		  (VP (VV 称赞)
+		      (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 伊拉克))
+					   (DEG 的))
+				      (DP (DT 这)
+					  (QP (CD 一)))
+				      (NP (NN 决定)))
+			      (VP (VC 是)
+				  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 维护)
+							  (NP-OBJ (NP (NN 国家)
+								      (NN 尊严))
+								  (PU 、)
+								  (NP (NP (NN 领土)
+									  (CC 及)
+									  (NN 主权))
+								      (NP (NN 完整))))))
+						  (DEC 的)))
+					  (ADJP (JJ 正确))
+					  (NP (NN 决定)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  利比亚 外交部 发言人 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  伊拉克 的 这 一 决定 是 *OP* *T*-1 维护 国家 尊严 、 领土 及 主权 完整 的 正确 决定 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

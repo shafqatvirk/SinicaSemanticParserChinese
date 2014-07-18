@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 附上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 attaches onto arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而且))
+	      (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 竟然))
+		  (ADVP (AD 还))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (DP (DT 整)
+					  (CLP (M 篇)))
+				      (NP (NN 小说)))
+			      (VP (VV 附上)
+				  (NP-OBJ (QP (CD 许多))
+					  (DNP (NP (NP (NN 喜剧))
+						   (NP (ADVP (AD 甚至))
+						       (NP (NN 闹剧))))
+					       (DEG 的))
+					  (NP (NN 片段)
+					      (NN 细节)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  整 篇 小说 
+	  </arg>
+	  <arg n="2">
+	  许多 喜剧 甚至 闹剧 的 片段 细节 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  竟然 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而且 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

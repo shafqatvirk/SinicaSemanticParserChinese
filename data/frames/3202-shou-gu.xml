@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受雇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people employed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-MNR (P 按)
+					  (NP (NN 连续性)
+					      (NN 雇佣)
+					      (NN 合约)))
+				  (VP (VV 受雇))))
+			  (DEC 的)))
+		  (NP (NN 雇员))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 连续性 雇佣 合约 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

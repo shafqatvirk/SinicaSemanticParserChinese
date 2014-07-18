@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 触犯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="violator"/>
+      <role argnum="1" argrole="law"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (QP (CD 两)
+				       (CLP (M 起)))
+				   (NP (NN 汽车)
+				       (NN 走私案)))
+			       (LC 中)))
+		  (VP (VP (VV 触犯)
+			  (NP-OBJ (NN 刑律)))
+		      (PU ，)
+		      (VP (VV 构成)
+			  (NP-OBJ (NN 走私罪)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  刑律 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 两 起 汽车 走私案 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

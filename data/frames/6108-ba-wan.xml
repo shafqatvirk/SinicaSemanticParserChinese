@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 把玩 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 plays with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (CP (WHNP-63 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-63))
+					(VP (VV 坐)
+					    (PP (P 在)
+						(NP (NN 一旁)))))
+				    (DEC 的)))
+			    (NP (NN 女友)))
+		    (NP-PN (NR 陈晓雯)))
+	    (PU ，)
+	    (VP (VP (LCP-LOC (NP (NN 手))
+			     (LC 里))
+		    (ADVP (AD 一边))
+		    (VP (VV 把玩)
+			(AS 著)
+			(NP-OBJ (NP (NN 麻将)
+				    (NN 形状))
+				(NP (NN 手机)
+				    (NN 感应器)))))
+		(PU ，)
+		(VP (ADVP (AD 一边))
+		    (VP (VSB (VV 点头)
+			     (VV 附和)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-63 坐 在 一旁 的 女友 陈晓雯 
+	</arg>
+	<arg n="1">
+	麻将 形状 手机 感应器 
+	</arg>
+	<arg n="m" f="adv">
+	一边 
+	</arg>
+	<arg n="m" f="loc">
+	手 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADVP (AD 只有))
+		    (NP (QP (CD 少数))
+			(NP (NN 人))))
+	    (VP (ADVP (AD 才))
+		(VP (VV 能)
+		    (VCD (VV 拥有)
+			 (VV 把玩))))) 
+	</parse>
+	<arg n="0">
+	只有 少数 人 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

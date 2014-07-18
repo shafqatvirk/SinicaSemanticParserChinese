@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 快乐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (ADVP (AD 最后))
+		(PU ，)
+		(NP-SBJ (PN 我))
+		(VP (PP-DIR (P 从)
+			    (NP-PN (NR 北京)))
+		    (VP (VV 祝)
+			(NP-OBJ (PN 大家))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (NP-TMP (NT 新年))
+				(VP (VA 快乐))))))
+		(PU ！))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  新年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

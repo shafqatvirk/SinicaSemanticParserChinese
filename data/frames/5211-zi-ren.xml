@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自认 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people described"/>
+    <role argnum="1" argrole="thing arg0 thinks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VP (VV 自认)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (VE 无)
+							    (NP-OBJ (NT Ｙ２Ｋ)
+								    (NN 问题)))))
+					    (CC 和)
+					    (VP (ADVP (AD 仍))
+						(ADVP (AD 在))
+						(VP (VV 拟定)
+						    (NP-OBJ (NN 计画)
+							    (AS 中))))))
+				    (DEC 的))))
+			(NP (NN 比例)))
+		(VP (ADVP (AD 合计))
+		    (ADVP (AD 高))
+		    (VP (VV 达)
+			(QP-OBJ (CD 百分之三十六))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	*PRO* 无 Ｙ２Ｋ 问题 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 台北人))
+	    (VP (VP (VV 自认)
+		    (NP-OBJ (-NONE- *pro*))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VC 是)
+			    (NP-PRD (DNP (NP (PU 「)
+					     (NN 国际村)
+					     (PU 」))
+					 (DEG 的))
+				    (QP (CD 一))
+				    (NP (NN 份子)))))))) 
+	</parse>
+	<arg n="0">
+	台北人 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 是 「 国际村 」 的 一 份子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伪装 </id>
+    <frameset id="f1" edef="disguise">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity disguised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 反驳)
+	      (AS 了)
+	      (IP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NP-PN (NR 美国))
+					  (NP (NN 官方)))
+				  (VP (MSP 所)
+				      (VP (VV 声称)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (IP (NP-SBJ (DP (DT 这)
+				      (CLP (M 个)))
+				  (NP (NN 防空洞)))
+			  (VP (VC 是)
+			      (NP-PRD (QP (CD 一)
+					  (CLP (M 个)))
+				      (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (SB 被)
+						      (VP (VV 伪装))))
+					      (DEC 的)))
+				      (ADJP (JJ 军事))
+				      (NP (NN 掩体))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="pretend">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

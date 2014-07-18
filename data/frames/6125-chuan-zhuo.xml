@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 穿著 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *T*-1))
+	    (VP (VV 会)
+		(VP (VV 注意)
+		    (IP-OBJ (IP-Q (NP-SBJ (LCP (NP (NN 街))
+					       (LC 上))
+					  (NP (NN 人们)))
+				  (VP (ADVP-WH (AD 怎麽))
+				      (VP (VV 穿著))))
+			    (PU ，)
+			    (IP-Q (NP-SBJ (LCP (NP (NN 专柜))
+					       (LC 里))
+					  (NP (NN 衣服)))
+				  (VP (ADVP-WH (AD 怎麽))
+				      (VP (VV 搭配)))))))) 
+	</parse>
+	<arg n="0">
+	街 上 人们 
+	</arg>
+	<arg n="m" f="adv">
+	怎麽 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

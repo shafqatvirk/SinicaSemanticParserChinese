@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拍照 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 takes a picture of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 球迷)))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NN 球场))
+			     (LC 上)))
+		(VP (VP (VP (VV 打)
+			    (NP-OBJ (NN 手机)))
+			(VP (ADVP (AD 随意))
+			    (VP (VV 走动)))
+			(PU ，)
+			(VP (PP-DIR (P 对著)
+				    (NP (NN 球星)))
+			    (VP (VV 拍照))))
+		    (VP (VV 干扰)
+			(NP-OBJ (NN 比赛)))))) 
+	</parse>
+	<arg n="0">
+	台湾 球迷 
+	</arg>
+	<arg n="m" f="dir">
+	对著 球星 
+	</arg>
+	<arg n="m" f="loc">
+	在 球场 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

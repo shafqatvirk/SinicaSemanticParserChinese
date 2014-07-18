@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 示 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 shows"/>
+    <role argnum="2" argrole="thing arg0 show arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 旅居)
+				    (NP-PN-OBJ (NR 加州))))
+			    (DEC 的)))
+		    (NP (PU 「)
+			(NN 台美人)
+			(PU 」)))
+	    (VP (VP (VP (PP-PRP (P 为)
+				(NP (PN 此)))
+			(ADVP (AD 临时))
+			(VP (VV 动员)))
+		    (PU ，)
+		    (VP (VV 号召)
+			(NP-OBJ (QP (QP (CD 五)
+					(CLP (-NONE- *RNR*-3)))
+				    (PU 、)
+				    (QP (CD 六百)
+					(CLP-3 (M 位))))
+				(ADJP (JJ 旅美)
+				      (JJ 台籍))
+				(NP (NN 乡亲)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(LCP (NP (CP (WHNP-2 (-NONE- *OP*))
+						     (CP (IP (NP-PN-SBJ (NR 陈水扁))
+							     (VP (VV 下榻)
+								 (NP-OBJ (-NONE- *T*-2))))
+							 (DEC 的)))
+						 (NP (NN 旅馆)))
+					     (LC 前)))
+				(ADVP (AD 盛大))
+				(VP (VV 欢迎))))))
+		(PU ，)
+		(VP (MSP 以)
+		    (VP (VV 示)
+			(NP-OBJ (DNP (PP (P 对)
+					 (IP (NP-SBJ (NP-PN (NR 美国))
+						     (NP (NN 政府)))
+					     (VP (PU 「)
+						 (VP (VV 媚)
+						     (NP-PN-OBJ (NR 共)))
+						 (VP (VV 轻)
+						     (NP-PN-OBJ (NR 台)))
+						 (PU 」))))
+				     (DEG 的))
+				(NP (NN 抗议))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 旅居 加州 的 「 台美人 」 
+	</arg>
+	<arg n="1">
+	对 美国 政府 「 媚 共 轻 台 」 的 抗议 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

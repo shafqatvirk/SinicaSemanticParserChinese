@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迈向 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 开发区)
+		      (NN 建设))
+	      (VP (ADVP (AD 已))
+		  (PP-DIR (P 由)
+			  (NP (NN 土地)
+			      (NN 开发)))
+		  (VP (VV 迈向)
+		      (NP-OBJ (DNP (NP (NN 工业)
+				       (NN 项目)
+				       (NN 建设))
+				   (DEG 的))
+			      (ADJP (JJ 新))
+			      (NP (NN 阶段)))))) 
+	  </parse>
+	  <arg n="0">
+	  开发区 建设 
+	  </arg>
+	  <arg n="1">
+	  工业 项目 建设 的 新 阶段 
+	  </arg>
+	  <arg n="m" f="dir">
+	  由 土地 开发 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

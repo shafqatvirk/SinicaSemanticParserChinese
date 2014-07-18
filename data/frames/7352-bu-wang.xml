@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不忘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 remembers to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (DP-ADV (DT 每)
+				    (CLP (M 次)))
+			    (VP (VV 开)
+				(NP-OBJ (NN 派对)))))
+		(ADVP (AD 都))
+		(VP (VV 不忘)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (PP-LOC (P 在)
+					    (LCP (NP (NN 门))
+						 (LC 口)))
+				    (VP (VV 摆)
+					(NP-OBJ (CLP (M 个))
+						(ADJP (JJ 大))
+						(NP (NN 藤篮)))))
+				(PU ，)
+				(VP (VV 让)
+				    (NP-OBJ (PN 我们))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (BA 把)
+					    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+								(CP (IP (NP-SBJ (-NONE- *pro*))
+									(VP (LCP-DIR (NP (NN 家))
+										     (LC 里))
+									    (VP (VV 带来)
+										(NP-OBJ (-NONE- *T*-1)))))
+								    (DEC 的)))
+							    (NP (NN 罐头)
+								(CC 或)
+								(NN 乾粮)))
+						    (VP (VRD (VV 丢)
+							     (VV 进去)))))))
+				(PU ，)
+				(VP (LCP-TMP (NP (NN 下课))
+					     (LC 後))
+				    (ADVP (AD 再))
+				    (PP-LGS (P 由)
+					    (NP (PN 她)))
+				    (VP (VP (VV 开)
+					    (AS 著)
+					    (NP-OBJ (NN 箱型车)))
+					(VP (VV 送到)
+					    (NP-PN-OBJ (NR Samaritan)
+						       (NR House)))
+					(VP (PP-BNF (P 给)
+						    (NP (DP (DT 那些))
+							(CP (WHNP-2 (-NONE- *OP*))
+							    (CP (IP (NP-SBJ (-NONE- *T*-2))
+								    (VP (VV 无家可归)))
+								(DEC 的)))
+							(NP (NN 人))))
+					    (VP (VV 分享)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 在 门 口 摆 个 大 藤篮 ， 让 我们 *PRO* 把 *OP* *pro* 家 里 带来 *T*-1 的 罐头 或 乾粮 丢 进去 ， 下课 後 再 由 她 开 著 箱型车 送到 Samaritan House 给 那些 *OP* *T*-2 无家可归 的 人 分享 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 每 次 开 派对 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

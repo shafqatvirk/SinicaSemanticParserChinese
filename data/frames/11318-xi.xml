@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 希 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 hopes for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-SBJ (CD 二))
+	    (VP (VC 是)
+		(IP-PRD (NP-SBJ (NP-PN (NR 中共))
+				(NP (NN 军方)))
+			(VP (VV 希)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (PP-MNR (P 藉)
+						(NP (NP-PN (NR 台湾))
+						    (NP (NN 问题))))
+					(VP (VV 增加)
+					    (NP-OBJ (NP (PN 其))
+						    (DNP (PP (P 在)
+							     (NP (NN 内部)))
+							 (DEG 的))
+						    (NP (NN 影响力)))))))))) 
+	</parse>
+	<arg n="0">
+	中共 军方 
+	</arg>
+	<arg n="1">
+	*PRO* 藉 台湾 问题 增加 其 在 内部 的 影响力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

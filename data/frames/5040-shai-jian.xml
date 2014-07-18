@@ -1,0 +1,160 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 筛检 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 screens"/>
+    <role argnum="2" argrole="entity arg0 tries to find"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (NP-MNR (-NONE- *T*-1))
+				    (VP (VV 筛检)
+					(NP-OBJ (NN 肾脏)
+						(NN 疾病)))))
+			    (DEC 的)))
+		    (NP (NN 方法)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 通常))
+		(VP (VV 使用)
+		    (QP-OBJ (NP-APP (NN 尿液)
+				    (PU 、)
+				    (NN 血液)
+				    (PU 、)
+				    (NN 超音波)
+				    (NN 显影))
+			    (QP (CD 三)
+				(CLP (M 种))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="2">
+	肾脏 疾病 
+	</arg>
+	<arg n="m" f="mnr">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-MNR (P 根据)
+		(NP (NP-PN (NR 谢从宾))
+		    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (LCP-TMP (QP (CD 十三)
+						 (CLP (M 年)))
+					     (LC 来))
+				    (VP (VV 筛检)
+					(NP-OBJ (QP (CD 上百万)
+						    (CLP (M 名)))
+						(NP (NN 学童))))))
+			    (DEC 的))
+		    (NP (NN 发现)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	上百万 名 学童 
+	</arg>
+	<arg n="m" f="tmp">
+	十三 年 来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 其中))
+	    (VP (VP (VV 不乏)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 重复))
+					    (VP (VV 造访)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的)))))
+		(PU ，)
+		(VP (ADVP (AD 更))
+		    (VP (VE 有)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (ADVP (AD 主动))
+						(VP (VV 邀请)
+						    (NP-PN-OBJ (NR 谢从宾))
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 前去)
+							    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								    (VP (VV 筛检))))))))
+					(DEC 的)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 sifts out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 杨永福))
+			 (DEG 的))
+		    (NP (NN 女儿)))
+	    (VP (VP (ADVP (AD 也))
+		    (PP-TMP (P 在)
+			    (LCP (NP (NP (NN 小学))
+				     (QP (OD 四))
+				     (NP (NN 年级)))
+				 (LC 时)))
+		    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (SB 被)
+				(VP (VRD (VV 筛检)
+					 (VV 出)))))
+		    (VP (VE 有)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (NN 肾))
+					    (VP (VV 积水)))
+					(DEC 的))
+				(NP (NN 现象)))))
+		(PU ，)
+		(VP (PP-MNR (P 经过)
+			    (NP (NN 治疗)))
+		    (ADVP (AD 已))
+		    (VP (VV 痊愈))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

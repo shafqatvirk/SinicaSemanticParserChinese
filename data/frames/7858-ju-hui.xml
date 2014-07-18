@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 聚会 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people having a meeting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 朝野))
+				(VP (NP-TMP (-NONE- *T*-1))
+				    (VP (VV 纷扰))))
+			    (DEC 之)))
+		    (NP (NN 际)))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 台湾))
+			    (DNP (NP (NN 企业)
+				     (NN 经营))
+				 (DEG 之))
+			    (NP (NN 神)))
+		    (NP-PN (NR 王永庆)))
+	    (VP (PP (P 与)
+		    (NP (NP (DP (DT 各))
+			    (NP (NN 产业)))
+			(NP (NN 龙头))))
+		(VP (VV 聚会)))) 
+	</parse>
+	<arg n="0">
+	台湾 企业 经营 之 神 王永庆 
+	</arg>
+	<arg n="0" f="crd">
+	与 各 产业 龙头 
+	</arg>
+	<arg n="m" f="tmp">
+	*OP* 朝野 *T*-1 纷扰 之 际 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

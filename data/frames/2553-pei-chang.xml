@@ -1,0 +1,168 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赔偿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity compensated"/>
+      <role argnum="2" argrole="compensation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 企业)))
+		  (VP (VV 状告)
+		      (NP-PN-OBJ (NP-PN (NR 美国))
+				 (QP (OD 第一))
+				 (NP (NN 国民)
+				     (NN 银行)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 赔偿))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="io" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 美国))
+			 (QP (OD 第一))
+			 (NP (NN 国民)
+			     (NN 银行)))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 赔偿)
+		      (NP-IO (QP (CD 三)
+				 (CLP (M 家)))
+			     (NP-PN (NR 中国))
+			     (NP (NN 企业)))
+		      (QP-OBJ (CD 一百八十五万五千)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 第一 国民 银行 
+	  </arg>
+	  <arg n="1">
+	  三 家 中国 企业 
+	  </arg>
+	  <arg n="2">
+	  一百八十五万五千 美元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 要求)
+	      (NP-OBJ (NP-APP (NN 肇事)
+			      (NN 船)
+			      (NN 船东))
+		      (NP (NP-PN (NR 巴拿马))
+			  (DP (DT 某))
+			  (NP (NN 海运))
+			  (NP (NN 股份))
+			  (ADJP (JJ 有限))
+			  (NP (NN 公司))))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 赔偿)
+			  (NP-OBJ (NN 船货)
+				  (NN 损失))
+			  (QP-EXT (CD 一千一百八十八万)
+				  (CLP (M 元))))
+		      (CC 和)
+		      (VP (NP-OBJ (NN 船员)
+				  (NN 人身)
+				  (NN 伤亡)
+				  (NN 损失))
+			  (QP-EXT (CD 三百五十万)
+				  (CLP (M 元))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  船货 损失 
+	  </arg>
+	  <arg n="2" f="QTY">
+	  一千一百八十八万 元 
+	  </arg>
+	  <arg n="2">
+	  船员 人身 伤亡 损失 
+	  </arg>
+	  <arg n="2" f="QTY">
+	  三百五十万 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LGS (P 由)
+			  (NP (NP-PN (NR 巴拿马))
+			      (DP (DT 某))
+			      (NP (NN 海运))
+			      (NP (NN 股份))
+			      (ADJP (JJ 有限))
+			      (NP (NN 公司))))
+		  (VP (VP (VV 赔偿)
+			  (NP-OBJ (NP-PN (NR 舟山市)
+					 (NR 普陀)
+					 (NN 渔业)
+					 (NN 集团)
+					 (NN 海洋)
+					 (NN 运输)
+					 (NN 公司))
+				  (NP (NP (NN 船舶))
+				      (PU 、)
+				      (NP (NN 货物))
+				      (CC 及)
+				      (NP (DP (DT 其他))
+					  (NP (NN 损失)))))
+			  (QP-EXT (CD 八十一万)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  由 巴拿马 某 海运 股份 有限 公司 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  舟山市 普陀 渔业 集团 海洋 运输 公司 船舶 、 货物 及 其他 损失 
+	  </arg>
+	  <arg n="2" f="QTY">
+	  八十一万 美元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

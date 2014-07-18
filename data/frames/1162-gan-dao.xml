@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赶到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 火灾))
+			   (VP (VV 发生)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NN 消防队员))
+	      (VP (ADVP (AD 立即))
+		  (VP (VV 赶到)
+		      (NP-OBJ (NN 出事)
+			      (NN 现场))))) 
+	  </parse>
+	  <arg n="0">
+	  消防队员 
+	  </arg>
+	  <arg n="1">
+	  出事 现场 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  火灾 发生 后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  立即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

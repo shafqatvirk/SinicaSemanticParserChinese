@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 返抵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 returns to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 陈水扁))
+			 (NP (NN 总统)))
+	      (VP (VP (PP-TMP (P 在)
+			      (NP (NT 八月)
+				  (NT 二十四日)))
+		      (VP (VV 结束)
+			  (NP-OBJ (DNP (QP (OD 第一)
+					   (CLP (M 次)))
+				       (DEG 的))
+				  (DNP (NP (NN 外交))
+				       (DEG 之))
+				  (NP (NN 旅)))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 二十五日))
+		      (VP (VV 返抵)
+			  (NP-OBJ (NN 国门)))))) 
+	  </parse>
+	  <arg n="0">
+	  陈水扁 总统 
+	  </arg>
+	  <arg n="1">
+	  国门 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十五日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

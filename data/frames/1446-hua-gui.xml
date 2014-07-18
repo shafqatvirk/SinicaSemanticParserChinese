@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 划归 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent,causer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="allocated to"/>
+      <role argnum="3" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="controlip" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 按照)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NN 国务院))
+				      (VP (VV 提出)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP (NN 议案))))
+	      (PU ，)
+	      (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VV 设立)
+			       (NP-PN-OBJ (NR 重庆)
+					  (NN 直辖市))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (NP-PN (NR 万县市))
+				      (PU 、)
+				      (NP-PN (NR 涪陵市))
+				      (PU 、)
+				      (NP-PN (NR 黔江)
+					     (NN 地区)))
+			      (VP (MSP 所)
+				  (VP (VV 辖)
+				      (NP-OBJ (-NONE- *T*-2))))))
+		      (NP (NN 行政)
+			  (NN 区域)))
+	      (VP (VV 划归)
+		  (NP-PN-OBJ (NR 重庆市))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 管辖))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  重庆市 	  
+	  </arg>
+	  <arg n="3">
+	  *PRO* 管辖 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按照 *OP* 国务院 提出 *T*-1 的 议案 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 设立 重庆 直辖市 后 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

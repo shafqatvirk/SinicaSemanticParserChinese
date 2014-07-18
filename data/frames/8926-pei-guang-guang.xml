@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赔光光 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing all of which arg0 loses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (QP (CD 许多))
+					  (NP (NN 投资人)))
+				  (VP (LCP-TMP (QP (NP (NT 过去))
+						   (QP (CD 数)
+						       (CLP (M 年))))
+					       (LC 内))
+				      (VP (VV 累积)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 获利)))
+	      (PU ，)
+	      (VP (ADVP (AD 都))
+		  (PP-TMP (P 在)
+			  (LCP (QP (ADVP (AD 短短))
+				   (QP (CD 数)
+				       (CLP (M 周))))
+			       (LC 内)))
+		  (VP (VV 赔光光)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 许多 投资人 过去 数 年 内 累积 *T*-1 的 获利 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 短短 数 周 内 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

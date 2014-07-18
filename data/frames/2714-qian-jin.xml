@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 前进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving ahead"/>
+      <role argnum="1" argrole="distance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (NP-SBJ (PN 它))
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 统一)
+						       (NP-OBJ (NP (PN 其))
+							       (NP (NN 外交)
+								   (CC 和)
+								   (NN 安全))
+							       (NP (NN 政策)))))
+					       (DEC 的))
+				       (NP (NN 道路)))
+				   (LC 上)))
+		      (ADVP (AD 又))
+		      (VP (VV 前进)
+			  (AS 了)
+			  (QP-OBJ (CD 一)
+				  (CLP (M 步)))))) 
+	  </parse>
+	  <arg n="0">
+	  它 
+	  </arg>
+	  <arg n="1">
+	  一 步 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *PRO* 统一 其 外交 和 安全 政策 的 道路 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP (NP-SBJ (PN 这))
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (LCP-LOC (IP (NP-SBJ (NP (QP (CD 两))
+									   (NP (NN 国)))
+								       (NP (NN 关系)))
+							       (VP (VV 前进)))
+							   (LC 中))
+						  (VP (VV 出现))))
+					  (DEC 的)))
+				  (NP (NN 问题)))))) 
+	  </parse>
+	  <arg n="0">
+	  两 国 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

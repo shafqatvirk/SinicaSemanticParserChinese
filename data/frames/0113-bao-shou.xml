@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 报收 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="index"/>
+    <role argnum="1" argrole="closing at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 但))
+      (NP-SBJ (-NONE- *pro*))
+      (VP (VP (NP-TMP (DP (DT 全))
+                      (NP (NN 天)))
+              (ADVP (AD 仅))
+              (ADVP (AD 微))
+              (VP (VV 升)
+                  (QP-OBJ (CD ８．７６)
+                          (CLP (M 点)))))
+          (PU ，)
+          (VP (VV 报收)
+              (PP (P 于)
+                  (QP (CD ９２２６．７５)
+                      (CLP (M 点))))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> 于 ９２２６．７５ 点 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

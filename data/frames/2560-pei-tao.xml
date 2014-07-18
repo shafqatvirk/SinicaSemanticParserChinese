@@ -1,0 +1,161 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 配套 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity complemented"/>
+      <role argnum="2" argrole="entity complemented with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VP (VP (VV 增发)
+			      (NP-OBJ (QP (CD 一千亿)
+					  (CLP (M 元)))
+				      (NP (NN 国债))))
+			  (PU ，)
+			  (VP (ADVP (AD 专项))
+			      (VP (VV 用)
+				  (PP (P 于)
+				      (NP (NP-APP (NN 农)
+						  (PU 、)
+						  (NN 林)
+						  (PU 、)
+						  (NN 水)
+						  (ETC 等))
+					  (NP (NN 基础)
+					      (NN 设施)
+					      (NN 建设)))))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 配套)
+			  (NP-OBJ (QP (CD 一千亿))
+				  (NP (NN 贷款)))))
+		  (ETC 等))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  一千亿 贷款 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 仅))
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (PP-BNF (P 为)
+						  (NP (PN 其)))
+					  (VP (VV 配套))))
+				  (DEC 的)))
+			  (NP (NN 工业)
+			      (NN 生产)
+			      (NN 企业))))
+	      (PU ，)
+	      (VP (PP-TMP (P 到)
+			  (LCP (NP (DP (DT 本))
+				   (NP (NN 世纪)))
+			       (LC 末)))
+		  (ADVP (AD 就))
+		  (ADVP (AD 将))
+		  (VP (VV 达到)
+		      (QP-OBJ (CD 二千)
+			      (CLP (M 家)))))) 
+	  </parse>
+	  <arg n="2">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  为 其 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entities complementing each other"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 形成)
+	      (AS 了)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 水)
+					  (PU 、)
+					  (NN 电)
+					  (PU 、)
+					  (NN 路)
+					  (PU 、)
+					  (NN 码头)
+					  (PU 、)
+					  (NN 通讯)
+					  (PU 、)
+					  (NN 仓储)
+					  (ETC 等))
+				  (VP (ADVP (AD 相互))
+				      (VP (VV 配套))))
+			      (DEC 的))
+		      (NP (NN 招商)
+			  (NN 引资))
+		      (NP (NN 环境)))) 
+	  </parse>
+	  <arg n="0">
+	  水 、 电 、 路 、 码头 、 通讯 、 仓储 等 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相互 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 形成)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (ADJP (JJ 主要))
+					  (NP (NN 总成)
+					      (CC 和)
+					      (NN 零部件)))
+				  (VP (PP (P 与)
+					  (NP (NN 整车)))
+				      (ADVP (AD 相))
+				      (VP (VV 配套))))
+			      (DEC 的))
+		      (ADJP (JJ 初级))
+		      (NP (NN 规模)))) 
+	  </parse>
+	  <arg n="0">
+	  主要 总成 和 零部件 
+	  </arg>
+	  <arg n="0">
+	  与 整车 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

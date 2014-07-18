@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 低吟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="singer"/>
+      <role argnum="1" argrole="thing arg0 sings in a low voice"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 已婚者))
+	      (VP (VV 低吟)
+		  (IP-OBJ (PU 「)
+			  (NP-TPC-1 (DNP (NP (NN 二奶))
+					 (DEG 的))
+				    (NP (NN 生计)))
+			  (NP-SBJ (PN 我))
+			  (VP (ADVP (AD 全))
+			      (VP (VV 包)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (PU 」)))) 
+	  </parse>
+	  <arg n="0">
+	  已婚者 
+	  </arg>
+	  <arg n="1">
+	  「 二奶 的 生计 我 全 包 *T*-1 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

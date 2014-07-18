@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致死 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity arg0 causes to die"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP (NP-PN (NR 台湾))
+				  (NP (NN 林业界)))
+			      (NP (NN 前辈)))
+		      (NP-PN (NR 柳缙)))
+	      (VP (ADVP (AD 曾经))
+		  (VP (VV 形容)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 幸存)))
+					      (DEC 的)))
+				      (NP (NN 桧木)))
+			      (VP (VC 是)
+				  (IP-PRD (PU 「)
+					  (NP-SBJ (NN 寂寞))
+					  (VP (VV 致死))
+					  (PU 」))))))) 
+	  </parse>
+	  <arg n="0">
+	  寂寞 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 梳 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 combs"/>
+    <role argnum="2" argrole="hairstyle"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 有的))
+	    (VP (VV 梳)
+		(AS 著)
+		(NP-OBJ (ADJP (JJ 蝴蝶型))
+			(NP (NN 发髻))))) 
+	</parse>
+	<arg n="0">
+	有的 
+	</arg>
+	<arg n="2">
+	蝴蝶型 发髻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-3))
+				(NP-SBJ (NN 头发))
+				(VP (ADVP (AD 总是))
+				    (VP (VV 梳)
+					(DER 得)
+					(VP-EXT (VA 美美)))))
+			    (DEC 的)))
+		    (NP-PN (NR 谢霆峰)
+			   (PU 、)
+			   (NR 陈晓东)))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-4))
+					(VP (ADVP (AD 十分))
+					    (VP (VV 受)
+						(NP-OBJ (NN 欢迎)))))
+				    (DEC 的)))
+			    (ADJP (JJ 俊美))
+			    (NP (NN 偶像)))))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<arg n="1">
+	头发 
+	</arg>
+	<arg n="m" f="adv">
+	美美 
+	</arg>
+	<arg n="m" f="adv">
+	总是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

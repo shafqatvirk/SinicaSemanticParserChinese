@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 密告 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity secretly reported"/>
+      <role argnum="2" argrole="entity arg1 is reported to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 可是))
+	      (LCP-TMP (IP (NP-SBJ (NN 案子))
+			   (VP (VP (PP-MNR (P 经)
+					   (NP (NN 人)))
+				   (VP (VV 密告)))
+			       (VP (MSP 而)
+				   (VP (VV 揭发)))))
+		       (LC 时))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 正))
+		  (VP (VV 逢)
+		      (NP-OBJ (CP (WHPP-3 (-NONE- *OP*))
+				  (CP (IP (PP-TMP (-NONE- *T*-3))
+					  (IP (IP (NP-PN-SBJ (NR 韩国))
+						  (VP (ADVP (AD 已))
+						      (VP (VV 接受)
+							  (NP-OBJ (DNP (NP (NP-PN-APP (NN 国际)
+										      (NN 货币)
+										      (NN 基金))
+									   (NP-PN (NR IMF)))
+								       (DEG 的))
+								  (ADJP (JJ 钜额))
+								  (NP (NN 金援))))))
+					      (PU 、)
+					      (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (VV 形同)
+						      (NP-OBJ (PU 「)
+							      (NN 经济)
+							      (NN 托管)
+							      (PU 」))))
+					      (PU ，)
+					      (IP (NP-SBJ (NP-PN (NR 韩国))
+							  (NP (NN 上下)))
+						  (VP (VV 视为)
+						      (NP-OBJ (PU 「)
+							      (NN 国耻)
+							      (PU 」))))
+					      (CC 而)
+					      (IP (NP-SBJ (NN 民族)
+							  (NN 情绪))
+						  (VP (VV 沸腾)))))
+				      (DEC 之)))
+			      (NP (NN 际)))))) 
+	  </parse>
+	  <arg n="0">
+	  经 人 	  
+	  </arg>
+	  <arg n="1">
+	  案子 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

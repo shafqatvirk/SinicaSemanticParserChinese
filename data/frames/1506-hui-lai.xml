@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="returning from"/>
+      <role argnum="2" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (AD 刚刚))
+				  (PP-DIR (P 从)
+					  (NP-PN (NR 台湾)))
+				  (VP (VP (VV 办)
+					  (NP-OBJ (NN 展)))
+				      (VP (VV 回来)))))
+			  (DEC 的)))
+		  (NP-APP (NP-PN (NR 福建省))
+			  (NP (NN 文化厅)
+			      (NN 官员)))
+		  (NP-PN (NR 卢鸿筠))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  从 台湾 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  刚刚 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (PP-TMP (P 在)
+		      (LCP (NP (NT 四月))
+			   (LC 间)))
+	      (PU ，)
+	      (NP-PN-SBJ (NN 行政院)
+			 (NN 陆委会))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 曾))
+		  (VP (VV 邀访)
+		      (NP-OBJ (NP (NP-PN (NR 澳门))
+				  (NP (NN 大专)
+				      (NN 校友会)))
+			      (NP (NN 成员)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 回来)
+				  (NP-PN-OBJ (NR 台湾)))
+			      (VP (VV 看看))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  台湾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

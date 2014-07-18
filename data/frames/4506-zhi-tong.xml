@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 直通 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 reaches directly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 实现)
+	      (AS 了)
+	      (IP-OBJ (DNP (NP (NN 国际)
+			       (NN 贸易)
+			       (NN 货物))
+			   (DEG 的))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 直通)
+			      (NP-OBJ (NN 保税区)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  保税区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

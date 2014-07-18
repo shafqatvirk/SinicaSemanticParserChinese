@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 下榻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place (hotel) arg0 stays at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 当晚))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 七百多)
+			(CLP (M 名)))
+		    (NP (NN 台商)
+			(CC 和)
+			(NN 侨胞)))
+	    (VP (PP-LOC (P 在)
+			(NP (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 总统))
+					(VP (VV 下榻)
+					    (NP-OBJ (-NONE- *T*-2))))
+				    (DEC 的)))
+			    (NP (NN 饭店))))
+		(VP (VV 举办)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 场)))
+			    (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (VV 充满)
+					    (NP-OBJ (NP-PN (NR 台湾))
+						    (NP (NN 风情)))))
+				    (DEC 的)))
+			    (NP (PU 「)
+				(DNP (NP-PN (NR 阿扁))
+				     (DEG 之))
+				(NP (NN 夜))
+				(PU 」)))))) 
+	</parse>
+	<arg n="0">
+	总统 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

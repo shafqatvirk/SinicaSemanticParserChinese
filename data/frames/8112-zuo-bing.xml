@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 做兵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person joining the military"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 吴建乐))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (QP-TMP (CD 二十)
+					   (CLP (M 岁)))
+				   (VP (VV 去)
+				       (VP (VV 做兵))
+				       (PRN (PU （)
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 服)
+						    (NP-OBJ (NN 兵役))))
+					    (PU ）)))))
+			   (LC 时))
+		  (PU ，)
+		  (VP (VV 认识)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 个)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 做)
+					      (NP-OBJ (NN 糕饼))))
+				      (DEC 的)))
+			      (NP (NN 朋友)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十 岁 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

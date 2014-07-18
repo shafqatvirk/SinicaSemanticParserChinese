@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 印刷 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 prints"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (UCP (NP (NN 地铁)
+				    (NN 车站))
+				(CC 和)
+				(LCP (NP (NN 路))
+				     (LC 边)))
+			   (NP (NN 广告牌)))
+		       (LC 上))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 换上)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (NN 印刷))
+					  (VP (VA 精美)))
+				      (DEC 的)))
+			      (NP (NN 演唱会))
+			      (ADJP (JJ 大幅))
+			      (NP (NN 海报)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

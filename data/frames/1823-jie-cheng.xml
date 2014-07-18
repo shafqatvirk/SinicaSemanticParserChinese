@@ -1,0 +1,148 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 结成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities connected/combined"/>
+      <role argnum="2" argrole="entity arg1 connected to form"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-TMP (NT 一九七三年))
+	      (NP-PN-SBJ (NR 中国)
+			 (NR 天津市)
+			 (CC 与)
+			 (NR 日本)
+			 (NR 神户))
+	      (VP (VV 结成)
+		  (NP-OBJ (QP (OD 第一)
+			      (CLP (M 对)))
+			  (NP (NN 中外))
+			  (ADJP (JJ 友好))
+			  (NP (NN 城市))))) 
+	  </parse>
+	  <arg n="1">
+	  中国 天津市 与 日本 神户 	  
+	  </arg>
+	  <arg n="2">
+	  第一 对 中外 友好 城市 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九七三年 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  据悉 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 政变))))
+		      (NP (NN 军人)))
+	      (VP (VP (PP (P 同)
+			  (NP (DNP (ADJP (JJ 反政府))
+				   (DEG 的))
+			      (NP-PN (NR 塞拉里昂))
+			      (NP (NN 革命))
+			      (ADJP (JJ 联合))
+			      (NP (NN 阵线))))
+		      (VP (VV 结成)
+			  (NP-OBJ (NN 联盟))))
+		  (PU ，)
+		  (VP (VV 继续)
+		      (VP (PP-LOC (P 在)
+				  (NP (DNP (NP (DP (DT 该))
+					       (NP (NN 国)))
+					   (DEG 的))
+				      (NP-APP (NN 东部)
+					      (CC 和)
+					      (NN 北部)
+					      (ETC 等))
+				      (NP (NN 地))))
+			  (VP (VV 活动)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 政变 军人 	  
+	  </arg>
+	  <arg n="1">
+	  同 反政府 的 塞拉里昂 革命 联合 阵线 	  
+	  </arg>
+	  <arg n="2">
+	  联盟 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-PN-SBJ (NR 哥伦比亚)
+			     (NN 医疗)
+			     (NN 公司))
+		  (VP (VP (NP-TMP (NT 去年))
+			  (PP-TMP (P 在)
+				  (LCP (NP (QP (CD 一)
+					       (CLP (M 个)))
+					   (NP (NN 月)))
+				       (LC 之间)))
+			  (VP (VV 收购)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 两)
+					  (CLP (M 家)))
+				      (NP (NN 医院)
+					  (NN 集团)))))
+		      (PU ，)
+		      (VP (ADVP (AD 从而))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 制药)
+					      (PU 、)
+					      (NN 医疗)
+					      (CC 和)
+					      (NN 销售))
+				      (VP (VV 结成)
+					  (NP-OBJ (NN 一体)))))))) 
+	  </parse>
+	  <arg n="0">
+	  哥伦比亚 医疗 公司 	  
+	  </arg>
+	  <arg n="1">
+	  制药 、 医疗 和 销售 	  
+	  </arg>
+	  <arg n="2">
+	  一体 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  从而 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

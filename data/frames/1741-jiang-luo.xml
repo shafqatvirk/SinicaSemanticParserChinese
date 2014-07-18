@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降落 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="flying objects"/>
+      <role argnum="1" argrole="location of the landing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 新建)
+				      (NP-OBJ (-NONE- *T*-3))))
+			      (DEC 的)))
+		      (NP-PN (NR 江北)
+			     (NN 机场)))
+	      (VP (VV 可)
+		  (VP (VV 降落)
+		      (NP-OBJ (NP-PN (NR 波音))
+			      (QP (CD ７４７))
+			      (NP (NN 客机)))))) 
+	  </parse>
+	  <arg n="0">
+	  波音 ７４７ 客机 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 新建 *T*-3 的 江北 机场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

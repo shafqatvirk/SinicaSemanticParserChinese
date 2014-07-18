@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 浪费 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing wasted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DNP (NP (NN 水)
+				 (NN 法庭))
+			     (DEG 的))
+			(NP (NN 受理)
+			    (NN 对象)))
+		(VP (VC 是)
+		    (NP-PRD (NP (IP-APP (LCP-SBJ (NP (NN 用户))
+						 (LC 之间))
+					(VP (VV 争夺)
+					    (NP-OBJ (NN 用水))))
+				(NP (NN 事件)))
+			    (CC 和)
+			    (NP (IP-APP (NP-SBJ (NN 用户))
+					(VP (VV 浪费)
+					    (NP-OBJ (NN 水))))
+				(NP (NN 事件)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  用户 
+	  </arg>
+	  <arg n="1">
+	  水 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

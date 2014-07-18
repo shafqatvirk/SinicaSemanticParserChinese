@@ -1,0 +1,117 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 汇集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="collecter"/>
+      <role argnum="1" argrole="thing collected"/>
+      <role argnum="2" argrole="collection"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP-PN (NR 中国)
+						     (NN 经贸)
+						     (NN 合作)
+						     (NN 信息)
+						     (NN 网络)
+						     (NN 中心)))
+				      (VP (VCD (VV 组织)
+					       (VV 开发)))))
+			      (DEC 的)))
+		      (NP (NN 信息网)))
+	      (PU ，)
+	      (VP (VCD (VV 整理)
+		       (VV 汇集))
+		  (AS 了)
+		  (NP-OBJ (NP (NP-PN (NR 中国))
+			      (DP (DT 各))
+			      (NP (NN 省)
+				  (NN 市)))
+			  (DNP (PP (P 经过)
+				   (NP (NN 审核)))
+			       (DEG 的))
+			  (NP (NP (NN 经济)
+				  (NN 贸易)
+				  (NN 信息))
+			      (CC 和)
+			      (NP (NP (PP (P 对)
+					  (NP (NN 外)))
+				      (NP (NN 合作)))
+				  (NP (NN 项目))))))) 
+	  </parse>
+	  <arg n="2">
+	  这 个 *OP* *T*-1 由 中国 经贸 合作 信息 网络 中心 组织 开发 的 信息网 
+	  </arg>
+	  <arg n="1">
+	  中国 各 省 市 经过 审核 的 经济 贸易 信息 和 对 外 合作 项目 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="gatherer"/>
+      <role argnum="1" argrole="location of the gathering"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 便于)
+			      (NP-OBJ (ADJP (JJ 机械化))
+				      (ADJP (JJ 清淤))
+				      (NP (NN 作业))))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP (NN 首都))
+			       (QP (CD 二十二)
+				   (CLP (M 所)))
+			       (NP (NN 高校)))
+			   (DEG 的))
+		      (QP (CD 二万多)
+			  (CLP (M 名)))
+		      (NP (NN 大学生)))
+	      (VP (VP (VV 汇集)
+		      (LCP-OBJ (NP-PN (NR 万寿山))
+			       (LC 下)))
+		  (PU ，)
+		  (VP (VP (VV 挥镐))
+		      (VP-PRP (VV 清除)
+			      (NP-OBJ (LCP (NP (NN 湖面))
+					   (LC 上))
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-TPC (-NONE- *T*-1))
+						  (NP-SBJ (NN 厚))
+						  (VP (VV 达)
+						      (QP-OBJ (CD 十)
+							      (CLP (M 厘米)))))
+					      (DEC 的)))
+				      (NP (NN 冰层))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  首都 二十二 所 高校 的 二万多 名 大学生 
+	  </arg>
+	  <arg n="1">
+	  万寿山 下 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 便于 机械化 清淤 作业 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

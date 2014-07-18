@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坑烧 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 虽然))
+			      (VP (VA 安全))))
+		  (PU ，)
+		  (ADVP (AD 但是))
+		  (VP (VE 没有)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 史前陶))
+					  (VP (PP-PRP (P 因)
+						      (IP (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (NP-LOC (NN 户外))
+								  (VP (VV 坑烧))))
+							  (PU 、)
+							  (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (VP-FOC (VV 受热))
+								  (VP (ADVP (AD 不))
+								      (VP (VA 均)))))))
+					      (VP (MSP 而)
+						  (VP (VV 产生)
+						      (NP-OBJ (-NONE- *T*-1))))))
+				      (DEC 的)))
+			      (NP (NN 烙痕)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="loc">
+	  户外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

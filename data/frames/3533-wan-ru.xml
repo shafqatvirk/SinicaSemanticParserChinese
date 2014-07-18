@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宛如 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is like"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (ADVP (AD 正))
+		  (PP (P 如)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NP-PN (NR 惠普)
+						     (NN 公司))
+					      (NP-PN (NR 黄河明)))
+				      (VP (VV 形容)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的))))))
+	      (PU ，)
+	      (NP-SBJ (NN 金融)
+		      (NN 风暴))
+	      (VP (VV 宛如)
+		  (IP-OBJ (NP-SBJ (QP (CD 一)
+				      (CLP (M 颗)))
+				  (NP (NN 巨石)))
+			  (VP (VV 投入)
+			      (LCP-OBJ (NP (NN 湖))
+				       (LC 中)))))) 
+	  </parse>
+	  <arg n="0">
+	  金融 风暴 
+	  </arg>
+	  <arg n="1">
+	  一 颗 巨石 投入 湖 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 如 *OP* 惠普 公司 黄河明 形容 *T*-1 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

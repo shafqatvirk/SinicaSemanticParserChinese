@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 把握 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (QP (CD 两)
+                  (CLP (M 名)))
+              (NP-PN (NR 中国))
+              (NP (NN 棋手)))
+      (VP (VP (VV 利用)
+              (NP-OBJ (CP-APP (IP (NP-SBJ (ADJP (JJ 黑))
+                                          (NP (NN 棋)))
+                                  (VP (ADVP (AD 先))
+                                      (VP (VV 行))))
+                              (DEC 的))
+                      (ADJP (JJ 有利))
+                      (NP (NN 条件))))
+          (PU ，)
+          (VP (ADVP (AD 一直))
+              (VP (VV 把握)
+                  (AS 着)
+                  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                              (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                      (VP (VA 微弱)))
+                                  (DEC 的)))
+                          (NP (NN 先手))))))))
+	</parse>
+	<arg n="0"> 两 名 中国 棋手 </arg>
+	<V/>
+	<arg n="1"> *OP* (*T*-1)->(先手) 微弱 的 先手 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

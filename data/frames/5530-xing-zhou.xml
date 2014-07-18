@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 行走 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="walker"/>
+    <role argnum="1" argrole="place arg0 walks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 经过)
+		    (NP (NP (QP (CD 五十)
+				(CLP (M 岁)))
+			    (NP (NN 时期)))
+			(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (PU 「)
+					(ADVP (AD 故))
+					(VP (VV 作异))
+					(PU 」)))
+				(DEC 的))
+			(NP (NN 创新)
+			    (NN 求变))
+			(NP (NN 实验))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VSB (VV 回头)
+		     (VV 行走))
+		(NP-OBJ (NP (ADJP (JJ 传统))
+			    (NP (NN 艺术)))
+			(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (PU 「)
+					(ADVP (AD 自然))
+					(VP (VA 异))
+					(PU 」)))
+				(DEC 的))
+			(NP (NN 路子))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	传统 艺术 *PRO* 「 自然 异 」 的 路子 
+	</arg>
+	<arg n="m" f="adv">
+	经过 五十 岁 时期 *PRO* 「 故 作异 」 的 创新 求变 实验 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 大哥))
+	    (VP (VP (VV 戴)
+		    (AS 著)
+		    (NP-OBJ (NN 墨镜)))
+		(PU ，)
+		(VP (VV 身穿)
+		    (NP-OBJ (ADJP (JJ 黑色))
+			    (NP (NN 披风))))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (DNP (NP (QP (CD 众))
+					      (NP (NN 喽罗)))
+					  (DEG 的))
+				     (NP (NN 簇拥)))
+				 (LC 下)))
+		    (ADVP (AD 威风))
+		    (VP (VV 行走))))) 
+	</parse>
+	<arg n="0">
+	大哥 
+	</arg>
+	<arg n="m" f="adv">
+	威风 
+	</arg>
+	<arg n="m" f="loc">
+	在 众 喽罗 的 簇拥 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

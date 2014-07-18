@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 启用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 欧洲人))
+		  (VP (ADVP (AD 如何))
+		      (VP (VV 启用)
+			  (NP-OBJ (NN 欧元))))) 
+	  </parse>
+	  <arg n="0">
+	  欧洲人 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  如何 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  欧元 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-SBJ (ADJP (JJ 总))
+				      (NP (NN 投资)))
+			      (VP (VV 逾)
+				  (QP-OBJ (CD 三十亿)
+					  (CLP (M 元))))))
+		      (PU 、)
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 可)
+				      (VP (VV 停靠)
+					  (NP-OBJ (ADJP (NP (NT 当今))
+							(NP (NN 世界))
+							(ADJP (JJ 最大)))
+						  (NP (NN 客机))))))
+			      (DEC 的)))
+		      (NP-APP (NP (NN 国际))
+			      (ADJP (JJ 标准型))
+			      (NP (NN 机场)))
+		      (NP-PN (NR 长乐)
+			     (NN 国际)
+			     (NN 机场)))
+	      (VP (ADVP (AD 正式))
+		  (VP (VV 启用)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* (*T*-1)->(国际标准型机场长乐国际机场) 总 投资 逾 三十亿 元 、 *OP* (*T*-2)->(国际标准型机场长乐国际机场) 可 停靠 当今 世界 最大 客机 的 国际 标准型 机场 长乐 国际 机场 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  正式 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调配 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="things arg0 mixes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (ADJP (JJ 所谓))
+			   (DEG 的))
+		      (NP (PU 「)
+			  (ADJP (JJ 芳香))
+			  (NP (NN 疗法))
+			  (PU 」)))
+	      (VP (VC 是)
+		  (VP (VV 指)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (-NONE- *pro*))
+								(VP (PP-DIR (P 从)
+									    (LCP (NP (DNP (NP (NN 植物))
+											  (DEG 的))
+										     (NP (NN 花)
+											 (PU 、)
+											 (NN 叶)
+											 (PU 、)
+											 (NN 果皮)
+											 (CC 或)
+											 (NN 树皮)))
+										 (LC 中)))
+								    (VP (VV 精炼)
+									(NP-OBJ (-NONE- *T*-1)))))
+							    (DEC 的)))
+						    (DP (DT 各)
+							(CLP (M 种)))
+						    (ADJP (JJ 芳香))
+						    (NP (NN 精油)
+							(CC 与)
+							(NN 稀释)
+							(NN 油)))
+					  (VP (VP (VV 调配)
+						  (NP-OBJ (-NONE- *-2)))
+					      (PU ，)
+					      (VP (PP-MNR (P 依)
+							  (NP (DP (DT 各)
+								  (CLP (M 种)))
+							      (ADJP (JJ 不同))
+							      (NP (NN 用途)
+								  (CC 及)
+								  (NN 疗效))))
+						  (VP (VV 做)
+						      (NP-OBJ (NP-APP (NN 按摩)
+								      (PU 、)
+								      (NN 燃香)
+								      (PU 、)
+								      (NN 沐浴)
+								      (ETC 等))
+							      (ADJP (JJ 不同))
+							      (NP (NN 使用)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 从 植物 的 花 、 叶 、 果皮 或 树皮 中 精炼 *T*-1 的 各 种 芳香 精油 与 稀释 油 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

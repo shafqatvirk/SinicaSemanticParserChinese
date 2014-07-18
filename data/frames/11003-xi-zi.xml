@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 袭自 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 is copied from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (DNP (NP-PN (NR 辽))
+			 (DEG 的))
+		    (NP (NN 科举)
+			(NN 制度)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 袭自)
+		    (NP-OBJ (NN 汉人))))) 
+	</parse>
+	<arg n="0">
+	辽 的 科举 制度 
+	</arg>
+	<arg n="1">
+	汉人 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

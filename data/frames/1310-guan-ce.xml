@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 观测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="observer"/>
+      <role argnum="1" argrole="phenomenon"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 天文))
+		      (NP (NN 工作者)
+			  (CC 和)
+			  (NN 爱好者)))
+	      (VP (VV 观测)
+		  (NP-OBJ (DP (DT 这)
+			      (QP (CD 一)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 人类))
+				      (VP (VV 罕见)
+					  (NP-OBJ (-NONE- *T*-2))))
+				  (DEC 的)))
+			  (NP (NN 天文)
+			      (NN 现象))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 天文 工作者 和 爱好者 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  这 一 *OP* 人类 罕见 (*T*-2)->(天文现象) 的 天文 现象 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 天文)
+		      (NN 爱好者))
+	      (VP (VV 可)
+		  (VP (PP-MNR (P 用)
+			      (NP (ADJP (JJ 小型))
+				  (CP (WHNP-6 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-6))
+					      (VP (VA 合适)))
+					  (DEC 的)))
+				  (NP (NN 天文)
+				      (NN 望远镜))))
+		      (VP (VV 观测))))) 
+	  </parse>
+	  <arg n="0">
+	  天文 爱好者 
+	  </arg>
+	  <arg n="M" f="MNR">
+	  用 小型 *OP* (*T*-6)->(天文望远镜) 合适 的 天文 望远镜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="observer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 南京)
+			     (NR 紫金山)
+			     (NN 天文台))
+		  (VP (VRD (VV 预测)
+			   (VV 出))
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (NP-TMP (-NONE- *T*-1))
+					      (NP-PN-LOC (NR 中国))
+					      (VP (VV 观测)
+						  (NP-OBJ (NN 彗星))
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 撞击)
+							  (NP-OBJ-PN (NR 木星)))))))
+				      (DEC 的)))
+			      (ADJP (JJ 具体))
+			      (NP (NN 时间))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  彗星 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 撞击 木星 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 高谈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 talks about eloquently"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (NP (NT 六四)
+				    (NN 阴影))
+				(LC 下))
+			   (DEG 的))
+		      (NP (NN 大陆)
+			  (NN 知识份子)))
+	      (VP (VV 高谈)
+		  (NP-OBJ (NT 五四)
+			  (NN 精神)))) 
+	  </parse>
+	  <arg n="0">
+	  六四 阴影 下 的 大陆 知识份子 
+	  </arg>
+	  <arg n="1">
+	  五四 精神 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

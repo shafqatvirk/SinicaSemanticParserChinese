@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减小 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="initiator"/>
+      <role argnum="1" argrole="thing reduced"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (VV 会)
+		  (VP (VP (ADVP (AD 进一步))
+			  (VP (VV 深化)
+			      (NP-OBJ (NN 金融)
+				      (NN 体制)
+				      (NN 改革))))
+		      (PU ，)
+		      (VP (VV 加强)
+			  (NP-OBJ (NN 金融)
+				  (NN 监管)
+				  (NN 力度)))
+		      (PU ，)
+		      (VP (VV 化解)
+			  (NP-OBJ (NN 金融)
+				  (NN 风险)))
+		      (PU ，)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (NP-PN (NR 亚洲))
+							      (NP (NN 金融)
+								  (NN 危机)))
+						      (VP (PP-DIR (P 对)
+								  (NP (PN 我们)))
+							  (VP (VV 造成)
+							      (NP-OBJ (-NONE- *T*-3)))))
+						  (DEC 的)))
+					  (ADJP (JJ 不良))
+					  (NP (NN 影响)))
+				  (VP (VRD (VV 减小)
+					   (VV 到))
+				      (NP-OBJ (ADJP (JJ 最低))
+					      (NP (NN 程度))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  *OP* 亚洲 金融 危机 对 我们 造成 *T*-3 的 不良 影响 
+	  </arg>
+	  <arg n="3">
+	  最低 程度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

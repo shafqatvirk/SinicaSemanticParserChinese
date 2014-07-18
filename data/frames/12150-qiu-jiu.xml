@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 求救 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="help seeker"/>
+      <role argnum="1" argrole="entity arg0 seeks help for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九七年))
+	      (PU ，)
+	      (NP-PN-SBJ (PU 「)
+			 (NP (NN 世界))
+			 (IP-APP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 保护)
+				     (NP-OBJ (NN 自然))))
+			 (NP (NN 基金会))
+			 (PU 」))
+	      (VP (VV 发出)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 份)))
+			  (DNP (NP (NN 黑鲔))
+			       (DEG 的))
+			  (NP (NN 求救)
+			      (NN 报告))))) 
+	  </parse>
+	  <arg n="1">
+	  黑鲔 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

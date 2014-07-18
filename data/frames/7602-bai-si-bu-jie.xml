@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 百思不解 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 cannot figure out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 过去))
+	    (NP-SBJ (NN 学者们))
+	    (VP (PP-DIR (P 对於)
+			(NP (DNP (NP (PU 「)
+				     (NN 纵目)
+				     (PU 」))
+				 (DEG 的))
+			    (NP (NN 意义))))
+		(VP (VV 百思不解)))) 
+	</parse>
+	<arg n="0">
+	学者们 
+	</arg>
+	<arg n="1">
+	对於 「 纵目 」 的 意义 
+	</arg>
+	<arg n="m" f="tmp">
+	过去 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

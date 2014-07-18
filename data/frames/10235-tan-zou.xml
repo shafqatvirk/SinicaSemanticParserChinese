@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 弹奏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="music arg0 plays"/>
+    <role argnum="2" argrole="instrument arg0 plays"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (QP (CD 一)
+		(CLP (M 位)))
+	    (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-2))
+			(VP (NP-PN-LOC (NR 岗山)
+				       (NN 公园))
+			    (VP (VV 弹奏)
+				(NP-OBJ (NN 三弦)))))
+		    (DEC 的)))
+	    (ADJP (JJ 老))
+	    (NP (NN 人))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	三弦 
+	</arg>
+	<arg n="m" f="loc">
+	岗山 公园 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

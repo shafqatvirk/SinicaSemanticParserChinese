@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借宿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place (as a borrowed place) arg0 lives"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 千)
+			  (CLP (M 年)))
+		      (NP (NN 桧木)))
+	      (VP (VP (ADVP (AD 更))
+		      (VP (VC 是)
+			  (NP-PRD (DNP (NP (ADJP (JJ 附生))
+					   (NP (NN 植物)))
+				       (DEG 的))
+				  (NP (NN 天堂)))))
+		  (PU ，)
+		  (VP (VV 可以)
+		      (VP (ADVP (AD 同时))
+			  (VP (VE 有)
+			      (IP-OBJ (NP-SBJ (QP (CD 八十)
+						  (CLP (M 种)))
+					      (NP (NN 植物)))
+				      (VP (VV 借宿)
+					  (NP-OBJ (NP (PN 其))
+						  (NP (NN 上)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  八十 种 植物 
+	  </arg>
+	  <arg n="1">
+	  其 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

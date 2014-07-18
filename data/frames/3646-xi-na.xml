@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吸纳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity absorbed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 广东))
+		  (VP (VV 重视)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 吸纳)
+				  (NP-OBJ (NN 人才)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  人才 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 吸纳)
+		      (NP-OBJ (NN 外资))
+		      (QP-EXT (CD 二点六五亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  外资 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  二点六五亿 美元 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity absorbed"/>
+      <role argnum="2" argrole="place arg1 is absorbed into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

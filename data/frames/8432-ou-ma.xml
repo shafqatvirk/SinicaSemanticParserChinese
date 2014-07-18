@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 殴骂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 子孙))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VE 有)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VCD (VV 殴骂)
+							   (VA 不孝))))
+					      (DEC 的))
+				      (NP (NN 行为)))))
+		  (PU ，)
+		  (VP (LB 被)
+		      (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (NN 父母))
+				  (VP (VV 杀死)
+				      (NP-OBJ (-NONE- *T*-1)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

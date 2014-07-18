@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 定价 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="price set for arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (QP (QP (CD 五十)
+				 (CLP (M 坪)))
+			     (PU 、)
+			     (QP (CD 四)
+				 (CLP (M 楼))))
+			 (DEG 的))
+		    (NP (NN 透天厝)))
+	    (PU ，)
+	    (VP (ADVP (AD 原来))
+		(VP (VV 定价)
+		    (QP-OBJ (CD 一千万))))) 
+	</parse>
+	<arg n="0">
+	五十 坪 、 四 楼 的 透天厝 	
+	</arg>
+	<arg n="1">
+	一千万 	
+	</arg>
+	<arg n="m" f="adv">
+	原来 	
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(VP (VRD (VV 反映)
+		 (VV 出))
+	    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 知识))
+				(VP (ADVP (AD 难以))
+				    (VP (VV 定价))))
+			    (DEC 的))
+		    (NP (NN 困扰)))) 
+	</parse>
+	<arg n="0">
+	知识 	
+	</arg>
+	<arg n="m" f="adv">
+	难以 	
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

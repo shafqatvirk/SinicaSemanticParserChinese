@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 犹似 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is like"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 林怀民))
+	      (VP (PP-PRP (P 在)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NP-PN (NR 台湾))
+						  (NP (NN 舞蹈界)))
+					  (VP (NP-TMP (-NONE- *T*-1))
+					      (VP (VV 犹似)
+						  (NP-OBJ (QP (CD 一)
+							      (CLP (M 片)))
+							  (NP (NN 荒漠))))))
+				      (DEC 的)))
+			      (NP-PN (NR 民国))
+			      (QP (CD 六十))
+			      (NP (NN 年代))))
+		  (VP (VV 创办)
+		      (NP-PN-OBJ (PU 「)
+				 (NR 云门)
+				 (NN 舞集)
+				 (PU 」))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 舞蹈界 
+	  </arg>
+	  <arg n="1">
+	  一 片 荒漠 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

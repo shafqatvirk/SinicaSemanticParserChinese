@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迫於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is forced by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 却))
+		(VP (VP (VV 迫於)
+			(NP-OBJ (NN 天命)))
+		    (PU ，)
+		    (VP (ADVP (AD 不))
+			(VP (VV 能)
+			    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					(VP (PP-ADV (P 像)
+						    (NP-PN (NR 周公)))
+					    (VP (VA 一样))))
+				(VP (VV 还政)))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	天命 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

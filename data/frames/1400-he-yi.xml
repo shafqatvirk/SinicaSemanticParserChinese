@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合一 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="entity causing arg0 to become one"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 政)
+		      (NN 企))
+	      (VP (VV 合一))) 
+	  </parse>
+	  <arg n="0">
+	  政 企 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 唯有))
+		      (VP (VV 成立)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 岸)
+						      (NN 海))
+					      (VP (VV 一体)))
+					  (DEC 的))
+				  (NP-PN (NN 海岸)
+					 (NN 巡防署)))))
+		  (PU ，)
+		  (VP (ADVP (AD 才))
+		      (VP (VV 能)
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NP (UCP (NP (NN 海岸))
+						       (PU 、)
+						       (LCP (NP (NN 岸))
+							    (LC 际)))
+						  (NP (NN 执法)))
+					      (PU ，)
+					      (CC 与)
+					      (NP (NN 渔港)
+						  (NN 安检)
+						  (NN 工作)))
+				      (VP (VV 合一)))))))) 
+	  </parse>
+	  <arg n="0">
+	  海岸 、 岸 际 执法 ， 与 渔港 安检 工作 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

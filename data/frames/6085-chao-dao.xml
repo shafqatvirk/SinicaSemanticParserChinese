@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 炒到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 speculates on"/>
+    <role argnum="2" argrole="position arg1 reaches due to speculation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 场)))
+		    (ADJP (JJ 土)
+			  (JJ 洋))
+		    (NP (NN 市场)
+			(NN 争霸战)))
+	    (VP (VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 健身)
+				    (NN 风))
+			    (VP (VV 炒到)
+				(VP-EXT (ADVP (AD 最))
+					(VP (VA 热))))))
+		(PU ，)
+		(VP (VRD (VV 激荡)
+			 (VV 出))
+		    (NP-SBJ (NP (NN 国内))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VA 多元)
+					    (PU 、)
+					    (VA 新兴)))
+				    (DEC 的)))
+			    (NP (NN 健身)
+				(NN 观念)))))) 
+	</parse>
+	<arg n="0">
+	一 场 土 洋 市场 争霸战 
+	</arg>
+	<arg n="1">
+	健身 风 
+	</arg>
+	<arg n="2">
+	最 热 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 风水)
+		    (NN 鱼缸)
+		    (CC 与)
+		    (NN 水晶))
+	    (PU ，)
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (VP (PP-TMP (P 在)
+				(LCP (IP (NP-SBJ (NN 股市))
+					 (VP (VV 炒到)
+					     (NP-OBJ (NN 最高点))))
+				     (LC 时)))
+			(VP (VV 造成)
+			    (NP-OBJ (NN 抢风))))))) 
+	</parse>
+	<arg n="1">
+	股市 
+	</arg>
+	<arg n="2">
+	最高点 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

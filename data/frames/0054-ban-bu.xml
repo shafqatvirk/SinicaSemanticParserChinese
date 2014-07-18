@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 颁布 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="issuer"/>
+      <role argnum="1" argrole="law, policy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 截至)
+		      (NP (NT 目前)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 天津市))
+		      (NP (NN-SHORT 人大)
+			  (CC 和)
+			  (NN 政府)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 颁布)
+		      (NP-OBJ (NP (ADJP (JJ 有关))
+				  (NP (NN 外商)
+				      (NN 投资)))
+			      (NP (NN 地方))
+			      (NP (NN 法规)
+				  (CC 和)
+				  (NN 规章)))
+		      (QP-EXT (CD 三十多)
+			      (CLP (M 件)))))) 
+	  </parse>
+	  <arg n="0">
+	  天津市 人大 和 政府 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  有关 外商 投资 地方 法规 和 规章 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三十多 件 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (VV 颁布)
+		      (NP-OBJ (QP (OD 第一)
+				  (CLP (M 部)))
+			      (NP (NN 证券法))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  第一 部 证券法 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (DT 这)
+			  (CLP (M 部)))
+		      (ADJP (JJ 地方性))
+		      (NP (NN 法规)))
+	      (VP (ADVP (AD 不久))
+		  (ADVP (AD 将))
+		  (VP (VCD (VV 颁布)
+			   (VV 实施))))) 
+	  </parse>
+	  <arg n="1">
+	  这 部 地方性 法规 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

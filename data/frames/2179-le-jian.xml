@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 乐见 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing liked"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (ADJP (JJ 这样))
+			   (DEG 的))
+		      (NP (NN 商谈)))
+	      (VP (ADVP (AD 不))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NP (QP (CD 两))
+						      (NP (NN 岸)))
+						  (NP (NN 同胞)))
+					  (VP (MSP 所)
+					      (VP (VV 乐见)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  两 岸 同胞 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摆明 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes clear"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-TPC (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-1))
+				    (NP-SBJ (QP (CD 两))
+					    (NP (NN 岸)))
+				    (VP (ADVP (AD 都))
+					(ADVP (AD 积极))
+					(VP (VV 争取)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (ADVP (AD 早日))
+							(VP (VV 入会)))))))
+				(DEC 的)))
+			(NP (NN 国际)
+			    (NN 组织)))
+		    (NP (ADVP (AD 如))
+			(NP-PN (NN 世界)
+			       (NN 贸易)
+			       (NN 组织))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 中共))
+	    (VP (ADVP (AD 也))
+		(PP-MNR (P 以)
+			(NP (NP (PN 其))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 强大)))
+				    (DEC 的)))
+			    (NP (NN 外交)
+				(NN 优势))))
+		(VP (VV 摆明)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 必须)
+				(VP (VP (VV 先)
+					(NP-OBJ (PN 我)))
+				    (VP (VV 入会)))))))) 
+	</parse>
+	<arg n="0">
+	中共 
+	</arg>
+	<arg n="1">
+	*PRO* 必须 先 我 入会 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="mnr">
+	以 其 *OP* *T*-2 强大 的 外交 优势 
+	</arg>
+	<arg n="m" f="tpc">
+	*OP* *T*-1 两 岸 都 积极 争取 *PRO* 早日 入会 的 国际 组织 如 世界 贸易 组织 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

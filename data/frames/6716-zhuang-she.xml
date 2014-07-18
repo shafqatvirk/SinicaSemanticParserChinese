@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 装设 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 installs"/>
+    <role argnum="2" argrole="place arg1 is installed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (DP-TMP (DT 前)
+		    (QP (CD 几)
+			(CLP (M 年))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (NP (NN 金主) ))
+	    (VP (VV 抢)
+		(AS 著)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-LOC (P 在)
+				    (UCP (LCP (NP (NN 家) )
+					      (LC 里))
+					 (PU 、)
+					 (NP (NN 公司) )))
+			    (VP (VV 装设)
+				(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-TPC (-NONE- *T*-2))
+						    (NP-SBJ (NN 造价) )
+						    (VP (QP-PRD (CD 二)
+								(PU 、)
+								(CD 三十万))))
+						(DEC 的)))
+					(NP (NN 风水)
+					    (NN 鱼缸) ))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 造价 二 、 三十万 的 风水 鱼缸 
+	</arg>
+	<arg n="2">
+	在 家 里 、 公司 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 也))
+	    (NP-SBJ (PN 有的))
+	    (VP (VV 装设)
+		(NP-OBJ (NN 管线)))) 
+	</parse>
+	<arg n="0">
+	有的 
+	</arg>
+	<arg n="1">
+	管线 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

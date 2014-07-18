@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 筹 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 prepares"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 加上))
+	    (NP-PN-SBJ (NN 教育部))
+	    (VP (VV 要求)
+		(NP-OBJ (ADJP (JJ 国立))
+			(NP (NN 大学)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 自))
+			(VP (VV 筹)
+			    (NP-OBJ (QP (CD 部分))
+				    (NP (NN 经费)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	部分 经费 
+	</arg>
+	<arg n="m" f="adv">
+	自 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

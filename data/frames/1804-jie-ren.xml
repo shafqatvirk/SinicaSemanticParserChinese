@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="position/work arg0 takes over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 位)))
+		      (NP (NN 大臣)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (PP-LOC (P 在)
+							       (LCP (NP (NN 记者)
+									(NN 招待会))
+								    (LC 上)))
+						       (VP (VV 介绍)
+							   (IP-OBJ (NP-PN-SBJ (NR 西班牙))
+								   (VP (PP-TMP (P 从)
+									       (LCP (NP (NT ９月)
+											(NT １日))
+										    (LC 起)))
+								       (VP (VV 接任)
+									   (NP-OBJ (DNP (NP (NP-PN (NR 联合国)
+												   (NN 安理会))
+											    (NP (NN 主席国)))
+											(DEG 的))
+										   (NP (NN 工作)
+										       (NN 任务)))))))))
+					       (LC 时))
+				      (VP (VV 说)
+					  (NP-OBJ (DP (DT 这)
+						      (CLP (M 番)))
+						  (NP (NN 话))))))
+			      (DEC 的))))) 
+	  </parse>
+	  <arg n="0">
+	  西班牙 
+	  </arg>
+	  <arg n="1">
+	  联合国 安理会 主席国 的 工作 任务 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  从 ９月 １日 起 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

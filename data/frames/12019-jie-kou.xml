@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借口 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="excuse arg0 uses"/>
+      <role argnum="2" argrole="thing arg1 is used for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (QP (CD 一些))
+			  (NP (NN 工业)
+			      (NN 国家)))
+		  (VP (VP (PP-MNR (P 以)
+				  (NP (NN 劳工)
+				      (NN 标准)
+				      (PU 、)
+				      (NN 环境)
+				      (CC 和)
+				      (NN 人权)
+				      (ETC 等)))
+			  (VP (VV 为)
+			      (NP-OBJ (NN 借口))))
+		      (CC 而)
+		      (VP (ADVP (AD 动辄))
+			  (VP (VV 采取)
+			      (NP-OBJ (NN 贸易)
+				      (NN 保护)
+				      (NN 措施)))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 工业 国家 
+	  </arg>
+	  <arg n="1">
+	  以 劳工 标准 、 环境 和 人权 等 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

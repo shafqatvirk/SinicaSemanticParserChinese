@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 派出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="person sent"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 浙江省))
+		      (NP (NN 教育)
+			  (NN 部门)))
+	      (VP (NP-TMP (NT 最近))
+		  (VP (VV 派出)
+		      (NP-OBJ (NN 工作组))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 分))
+				  (VP (VV 赴)
+				      (NP-OBJ (NP-APP-PN (NR 温州)
+							 (PU 、)
+							 (NR 台州)
+							 (ETC 等))
+					      (NP (NN 地)))))
+			      (VP (VV 指导)
+				  (NP-OBJ (NN 灾区)
+					  (NN 教育)
+					  (NN 恢复)
+					  (NN 工作)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  浙江省 教育 部门 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  最近 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  工作组 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 分 赴 温州 、 台州 等 地 指导 灾区 教育 恢复 工作 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 美国)
+			     (NN 商会))
+		      (NP-PN (NR 中国)
+			     (NN 分会)))
+	      (VP (NP-TMP (NT 近日))
+		  (VP (VV 派出)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 个)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (QP (CD ２５))
+						  (NP (NN 人)))
+					  (VP (VV 组成)
+					      (NP-OBJ (-NONE- *T*-1))))
+				      (DEC 的)))
+			      (NP (NN 代表团)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 商会 中国 分会 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  近日 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一 个 *OP* ２５ 人 组成 (*T*-1)->(代表团) 的 代表团 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 意识 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 realizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 纺织)
+			  (NN 行业))
+		      (ADJP (JJ 广大))
+		      (NP (NN 干部)
+			  (NN 职工)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VRD (VV 意识)
+			   (VV 到))
+		      (NP-OBJ (NP (DNP (NP (CP (WHNP-3 (-NONE- *OP*))
+					       (IP (NP-SBJ (-NONE- *pro*))
+						   (VP (VV 面临)
+						       (NP-OBJ (-NONE- *T*-3)))))
+					   (NP (NN 困难)))
+				       (DEG 的))
+				  (NP (NN 严重性)))
+			      (PU 、)
+			      (NP (DNP (NP (NN 扭亏)
+					   (NN 解困))
+				       (DEG 的))
+				  (NP (NN 紧迫性))))))) 
+	  </parse>
+	  <arg n="0">
+	  纺织 行业 广大 干部 职工 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 面临 *T*-3 困难 的 严重性 、 扭亏 解困 的 紧迫性 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 随着)
+		      (NP (DNP (NP (NP-PN (NR 中国))
+				   (NP (NN 改革)
+				       (NN 开放)))
+			       (DEG 的))
+			  (ADJP (JJ 逐步))
+			  (NP (NN 深入))))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 眼看)
+			  (AS 着)
+			  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (NP-TMP (NT 过去))
+						      (ADVP (AD 曾))
+						      (VP (VP (VV 到)
+							      (NP-PN-OBJ (NR 大寨)))
+							  (VP (VCD (VV 学习)
+								   (VV 取经))))))
+					      (DEC 的)))
+				      (NP (NP (ADJP (JJ 贫))
+					      (NP (NN 乡)))
+					  (NP (ADJP (JJ 穷))
+					      (NP (NN 镇)))))
+			      (VP (VP (VV 摇身一变))
+				  (VP (VV 成为)
+				      (NP-OBJ (PU “)
+					      (QP (CD 亿)
+						  (CLP (M 元)))
+					      (NP (NN 镇))
+					      (PU ”)))))))
+	      (PU ，)
+	      (NP-SBJ (NN 大寨人))
+	      (VP (VV 开始)
+		  (VP (VRD (VV 意识)
+			   (VV 到))
+		      (IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 解放)
+					      (NP-OBJ (NN 思想)))
+					  (PU ，)
+					  (VP (VV 更新)
+					      (NP-OBJ (NN 观念)))))
+			      (VP (VC 是)
+				  (VP (DVP (ADVP (AD 多么))
+					   (DEV 的))
+				      (VP (VA 重要)))))))) 
+	  </parse>
+	  <arg n="0">
+	  大寨人 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 解放 思想 ， 更新 观念 是 多么 的 重要 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 眼看 着 *OP* *T*-1 过去 曾 到 大寨 学习 取经 的 贫 乡 穷 镇 摇身一变 成为 “ 亿 元 镇 ” 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  随着 中国 改革 开放 的 逐步 深入 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

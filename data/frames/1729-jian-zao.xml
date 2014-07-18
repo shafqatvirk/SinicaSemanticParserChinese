@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 建造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="builder"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中)
+			     (NR 美))
+		  (VP (ADVP (AD 将))
+		      (VP (VSB (VV 合作)
+			       (VV 建造))
+			  (NP-OBJ (NP-PN (NR 中国))
+				  (QP (OD 第一)
+				      (CLP (M 座)))
+				  (NP (ADJP (JJ 大))
+				      (NP (NN 容量)))
+				  (NP (NN 天然气)
+				      (NN 发电厂)))))) 
+	  </parse>
+	  <arg n="0">
+	  中 美 
+	  </arg>
+	  <arg n="1">
+	  中国 第一 座 大 容量 天然气 发电厂 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-MNR (P 按照)
+					  (NP (NP (NT 九十年代))
+					      (NP (NN 国际))
+					      (ADJP (JJ 先进))
+					      (NP (NN 水平))))
+				  (VP (VCD (VV 设计)
+					   (VV 建造)))))
+			  (DEC 的)))
+		  (NP (NN 现代化)
+		      (NN 制药)
+		      (NN 企业)))
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按照 九十年代 国际 先进 水平 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

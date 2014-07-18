@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迫使 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="forcer"/>
+      <role argnum="1" argrole="forced party"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 紧密)))
+			      (DEC 的)))
+		      (NP (NN 政治)
+			  (PU 、)
+			  (NN 军事)
+			  (PU 、)
+			  (NN 经济)
+			  (CC 和)
+			  (NN 社会))
+		      (NP (NN 联系)))
+	      (VP (VV 迫使)
+		  (NP-OBJ (NP-PN (NR 塞))
+			  (NP (NN 政府)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 必须)
+			  (VP (VV 考虑)
+			      (NP-OBJ (DNP (NP (NP-PN (NR 希腊))
+					       (NP (NN 方面)))
+					   (DEG 的))
+				      (NP (NN 态度)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(政治、军事、经济和社会联系) 紧密 的 政治 、 军事 、 经济 和 社会 联系 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  塞 政府 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 必须 考虑 希腊 方面 的 态度 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传递 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="message"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 越来越))
+				      (VP (VA 多))))
+			      (DEC 的)))
+		      (NP (NN 中国人)))
+	      (VP (PP-MNR (P 通过)
+			  (NP (ADJP (JJ 国产))
+			      (ADJP (JJ 程控))
+			      (NP (NN 交换机))))
+		  (VP (VV 传递)
+		      (NP-OBJ (NN 语音))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 越来越 多 的 中国人 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 国产 程控 交换机 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

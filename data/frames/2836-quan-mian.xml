@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 全面 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 伊拉克))
+		  (VP (ADVP (AD 未))
+		      (VP (VV 能)
+			  (VP (PP (P 同)
+				  (NP (NP-PN (NR 联合国))
+				      (NP (NN 武器)
+					  (NN 核查)
+					  (NN 人员))))
+			      (VP (VV 进行)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VP (VA 全面))
+							  (CC 和)
+							  (VP (VE 无)
+							      (NP-OBJ (NN 条件)))))
+						  (DEC 的)))
+					  (NP (NN 合作)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

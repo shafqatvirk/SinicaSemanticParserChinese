@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一以贯之 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is consistent about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 其後))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 秉持)
+		    (NP-OBJ (NP (DNP (NP (NN 客家人))
+				     (DEG 的))
+				(NP (NN 硬颈)
+				    (NN 精神)))
+			    (CC 与)
+			    (NP (CP-APP (IP (NP-SBJ (NN 学术))
+					    (VP (VA 独立))))
+				(NP (NN 立场)))))
+		(PU ，)
+		(VP (PP-DIR (P 对)
+			    (NP (NP (PN 其))
+				(NP (NN 主张))))
+		    (VP (VP (VV 一以贯之))
+			(VP (MSP 而)
+			    (VP (ADVP (AD 不))
+				(VP (VV 妥协)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	对 其 主张 
+	</arg>
+	<arg n="m" f="tmp">
+	其後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

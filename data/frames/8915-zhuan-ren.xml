@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="position arg0 transfers to hold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (ADVP (AD 然而))
+		(NP-TMP (QP (ADVP (AD 不到))
+			    (QP (CD 两)
+				(CLP (M 个))))
+			(NP (NN 月)))
+		(PU ，)
+		(NP-PN-SBJ (NR 周天瑞))
+		(VP (ADVP-WH (AD 为什麽))
+		    (ADVP (AD 又))
+		    (VP (VV 转任)
+			(NP-OBJ (NP-PN (NR 自立)
+				       (NN 晚报))
+				(NP (NN 社长)))))) 
+	  </parse>
+	  <arg n="0">
+	  周天瑞 
+	  </arg>
+	  <arg n="1">
+	  自立 晚报 社长 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="adv">
+	  为什麽 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  不到 两 个 月 
+	  </arg>
+	  <arg n="m" f="dis">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

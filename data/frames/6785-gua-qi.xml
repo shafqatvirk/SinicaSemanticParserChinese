@@ -1,0 +1,117 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挂起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 hangs up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VP (VV 嗅)
+					(AS 著)
+					(NP-OBJ (NN 商机)))
+				    (VP (VV 前来))))
+			    (DEC 的)))
+		    (NP (NN 外地)
+			(NN 生意人)))
+	    (PU ，)
+	    (VP (ADVP (AD 则))
+		(VP (VP (DVP (ADVP (AD 大喇喇))
+			     (DEV 地))
+			(VP (VV 挂起)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VA 俗丽))
+					    (DEC 的)))
+				    (NP (NN 霓红灯)
+					(CC 与)
+					(NN 招牌)))))
+		    (PU ，)
+		    (VP (VV 希望)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-MNR (P 藉由)
+					    (NP (DNP (NP-PN (NR 淡水))
+						     (DEG 的))
+						(NP (NN 风情))))
+				    (PU ，)
+				    (VP (VV 贩售)
+					(NP-OBJ (NP-APP (NN 咖啡)
+							(PU 、)
+							(NN 海鲜)
+							(NN 快炒)
+							(PU 、)
+							(NN 小吃)
+							(PU 、)
+							(CC 与)
+							(NN 古物))
+						(NP (NN 诸如此类)))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 嗅 著 商机 前来 的 外地 生意人 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 俗丽 的 霓红灯 与 招牌 
+	</arg>
+	<arg n="m" f="adv">
+	大喇喇 地 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 走近))
+			(VP (ADVP (AD 一))
+			    (VP (VV 看)))))
+	    (PU ，)
+	    (NP-LOC (DNP (NP (NN 玻璃)
+			     (NN 帷幕))
+			 (DEG 的))
+		    (NP (NN 外墙)))
+	    (NP-SBJ (CP-APP (IP (PU 「)
+				(NP-PN (NR 建台)
+				       (NR 大丸)
+				       (NN 百货))
+				(VP (ADVP (AD 即将))
+				    (VP (VV 开幕)))
+				(PU 」))
+			    (DEC 的))
+		    (NP (ADJP (JJ 红))
+			(ADJP (JJ 长))
+			(NP (NN 布幅))))
+	    (VP (ADVP (AD 已经))
+		(VP (VV 挂起)))) 
+	</parse>
+	<arg n="1">
+	「 建台 大丸 百货 即将 开幕 」 的 红 长 布幅 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="loc">
+	玻璃 帷幕 的 外墙 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 走近 一 看 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

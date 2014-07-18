@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 雪上加霜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity for which arg0 adds frost onto snow"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 仅))
+				    (VP (VV 馀)
+					(NP-OBJ (QP (CD 两百八十二))
+						(NP (NN 人))))))
+			    (DEC 的)))
+		    (NP (NN 邵族)))
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (VP (VV 雪上加霜)
+			(PU 、)
+			(VV 百废待举))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-1 仅 馀 两百八十二 人 的 邵族 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

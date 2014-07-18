@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 慢跑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="distance arg0 runs slowly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ext" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现在))
+	    (NP-SBJ (PN 她))
+	    (VP (VP (NP-TMP (NT 周末))
+		    (VP (VV 打)
+			(NP-OBJ (NN 网球))))
+		(PU ，)
+		(VP (DP-ADV (DT 每)
+			    (CLP (M 天)))
+		    (VP (VV 慢跑)
+			(QP-EXT (QP (CD 三)
+				    (CLP (-NONE- *RNR*-2)))
+				(CC 至)
+				(QP (CD 四)
+				    (CLP-2 (M 公里)))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	三 *RNR*-2 至 四 公里 
+	</arg>
+	<arg n="m" f="adv">
+	每 天 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

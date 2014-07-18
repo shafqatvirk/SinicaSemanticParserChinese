@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="domain, location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 德波尔))
+	      (VP (VP (VV 大名鼎鼎))
+		  (PU ，)
+		  (VP (NP-TMP (NT 今年))
+		      (VP (VV 入选)
+			  (NP-PN-OBJ (NR 荷兰队))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (NP-PN (NR 法国))
+				       (NP (NN 世界杯赛)))
+				   (LC 上)))
+		      (VP (VV 打入)
+			  (NP-OBJ (NN 半决赛)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  德波尔 	  
+	  </arg>
+	  <arg n="1">
+	  半决赛 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 法国 世界杯赛 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="place arg0 puts/condemns arg1 into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 房市))
+	      (VP (ADVP (AD 也))
+		  (VP (SB 被)
+		      (VP (VV 打入)
+			  (NP-OBJ (NN 冷宫)))))) 
+	  </parse>
+	  <arg n="1">
+	  房市 
+	  </arg>
+	  <arg n="2">
+	  冷宫 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

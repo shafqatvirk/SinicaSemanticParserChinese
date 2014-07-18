@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调度 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 以便))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 调度)
+		      (NP-OBJ (NN 资金)))
+		  (VP (VV 保证)
+		      (NP-OBJ (NN 支付))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  资金 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (ADJP (JJ 典型))
+		      (NP (NN 布局)))
+	      (VP (VV 可)
+		  (VP (VV 让)
+		      (NP-OBJ (NP-PN (NR 台湾))
+			      (NP (NN 产业)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 灵活))
+				  (VP (VV 调度)))
+			      (PU 、)
+			      (VP (VV 减低)
+				  (NP-OBJ (NN 冲击))))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  灵活 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

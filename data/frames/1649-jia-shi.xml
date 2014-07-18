@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驾驶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="driver"/>
+      <role argnum="1" argrole="vehicle"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 张学良))
+	      (VP (ADVP (AD 亲自))
+		  (VP (VP (VV 驾驶)
+			  (NP-OBJ (NN 飞机)))
+		      (VP (VV 开辟)
+			  (NP-OBJ (DNP (NP-PN (NR 奉天)
+					      (CC 至)
+					      (NR 营口))
+				       (DEG 的))
+				  (NP (NN 航线))))))) 
+	  </parse>
+	  <arg n="0">
+	  张学良 
+	  </arg>
+	  <arg n="1">
+	  飞机 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亲自 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

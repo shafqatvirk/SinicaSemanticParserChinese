@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 领悟 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 comprehends"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 如果))
+			(VP (VV 用心)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 体会))))))
+	    (PU ，)
+	    (NP-SBJ (NN 海内外)
+		    (NN 同胞))
+	    (VP (VP (VV 应该))
+		(VP (ADVP (AD 都))
+		    (VP (VV 能)
+			(VP (VV 领悟)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (DP-SBJ (DT 这)
+							(QP (CD 一)
+							    (CLP (M 刻))))
+						(VP (MSP 所)
+						    (VP (VV 代表)
+							(NP-OBJ (-NONE- *T*-1)))))
+					    (DEC 的)))
+				    (ADJP (JJ 深远))
+				    (NP (NN 意义))
+				    (PRN (PU ——)
+					 (IP (IP (NP-SBJ (NN 威权)
+							 (CC 和)
+							 (NN 武力))
+						 (VP (ADVP (AD 只))
+						     (VP (VV 能)
+							 (VP (VV 让)
+							     (NP-OBJ (NN 人))
+							     (IP (NP-SBJ (-NONE- *PRO*))
+								 (VP (ADVP (AD 一时))
+								     (VP (VV 屈服))))))))
+					     (PU ，)
+					     (IP (NP-SBJ (NN 民主)
+							 (NN 自由))
+						 (VP (ADVP (AD 才))
+						     (VP (VC 是)
+							 (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+								     (CP (IP (NP-SBJ (-NONE- *T*-2))
+									     (VP (VV 永垂不朽)))
+									 (DEC 的)))
+								 (NP (NN 价值)))))))))))))) 
+	</parse>
+	<arg n="0">
+	海内外 同胞 
+	</arg>
+	<arg n="1">
+	*OP* 这 一 刻 所 代表 *T*-1 的 深远 意义 —— 威权 和 武力 只 能 让 人 *PRO* 一时 屈服 ， 民主 自由 才 是 *OP* *T*-2 永垂不朽 的 价值 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 如果 用心 *PRO* 体会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (BA 把)
+		    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			    (IP (NP-SBJ (QP (CD 一)
+					    (CLP (M 格格)))
+					(NP (NN 样片)))
+				(VP (VP (VP (VV 贴)
+					    (PP (P 在)
+						(LCP (NP (NN 墙))
+						     (LC 上))))
+					(VP (VV 临摹)
+					    (NP-OBJ (-NONE- *T*-2))))
+				    (PU ，)
+				    (VP (VV 画成)
+					(NP-OBJ (DNP (QP (CD 一)
+							 (CLP (M 张张)))
+						     (DEG 的))
+						(NP (NN 动画)
+						    (NN 纸))))))))
+		(PU ，)
+		(VP (PP-DIR (P 从)
+			    (NP (NN 中)))
+		    (VP (VV 领悟)
+			(IP-OBJ (NP-APP (NN 卡通)
+					(NN 原理))
+				(PU ，)
+				(IP (IP (QP-SBJ (CD 一)
+						(CLP (M 秒)))
+					(VP (VV 应)
+					    (VP (VV 有)
+						(QP-OBJ (CD 多少)
+							(CLP (M 格))))))
+				    (PU ，)
+				    (IP (NP-SBJ (QP (CD 一)
+						    (CLP (M 个)))
+						(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 走路)))
+							(DEC 的))
+						(NP (NN 动作)))
+					(VP (VV 应)
+					    (VP (VV 有)
+						(QP-OBJ (CD 多少)
+							(CLP (M 张)))))))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	卡通 原理 ， 一 秒 应 有 多少 格 ， 一 个 *PRO* 走路 的 动作 应 有 多少 张 
+	</arg>
+	<arg n="m" f="dir">
+	从 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

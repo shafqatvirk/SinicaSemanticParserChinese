@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 影响 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 has an effect on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 尤其是))
+	      (NP-SBJ (CP (IP (NP-SBJ (NN 企业))
+			      (VP (VV 欠缴)
+				  (NP-OBJ (NP-APP (NN 增值税)
+						  (CC 和)
+						  (NN 消费税))
+					  (DP (DT 这))
+					  (NP (PU “)
+					      (QP (CD 两))
+					      (NP (NN 税))
+					      (PU ”)))))
+			  (DEC 的))
+		      (NP (NN 问题)))
+	      (VP (VP (VA 突出))
+		  (PU ，)
+		  (VP (ADVP (AD 严重))
+		      (VP (VV 影响)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NP (NT 今年))
+					   (NP (PU “)
+					       (QP (CD 两))
+					       (NP (NN 税))
+					       (PU ”))
+					   (NP (NN 任务)))
+				       (DEG 的))
+				  (NP (NN 完成))))))) 
+	  </parse>
+	  <arg n="0">
+	  企业 欠缴 增值税 和 消费税 这 “ 两 税 ” 的 问题 	  
+	  </arg>
+	  <arg n="1">
+	  今年 “ 两 税 ” 任务 的 完成 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  严重 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  尤其是 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PU “)
+		      (QP (CD 三))
+		      (ADJP (JJ 大))
+		      (NP (NN 问题))
+		      (PU ”))
+	      (VP (VP (ADVP (AD 互相))
+		      (VP (VV 交叉)))
+		  (PU ，)
+		  (VP (ADVP (AD 互相))
+		      (VP (VV 影响)))
+		  (PU ，)
+		  (VP (ADVP (AD 因此))
+		      (PP-LOC (P 在)
+			      (LCP (NP (NN 解决)
+				       (NN 进程))
+				   (LC 上)))
+		      (ADVP (AD 也))
+		      (VP (VV 应该)
+			  (VP (VV 同步)))))) 
+	  </parse>
+	  <arg n="0">
+	  “ 三 大 问题 ” 
+	  </arg>
+	  <arg n="m" f="adv">
+	  互相 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

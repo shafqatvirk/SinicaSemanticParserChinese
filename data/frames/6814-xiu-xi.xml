@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 修习 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 studies"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (QP-TMP (NP-PN (NR 民国))
+					    (QP (OD 十八)
+						(CLP (M 年))))
+				    (VP (VV 生)
+					(PP (P 於)
+					    (NP (NP-PN (NR 彰化))
+						(NP (NN 医师)
+						    (NN 世家)))))))
+			    (DEC 的)))
+		    (NP-PN (NR 许常惠)))
+	    (PU ，)
+	    (VP (NP-ADV (NN 早年))
+		(VP (VP (VV 赴)
+			(NP-PN-OBJ (NR 日本)))
+		    (VP (VV 修习)
+			(NP-OBJ (NN 小提琴)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 民国 十八 年 生 於 彰化 医师 世家 的 许常惠 
+	</arg>
+	<arg n="1">
+	小提琴 
+	</arg>
+	<arg n="m" f="tmp">
+	早年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

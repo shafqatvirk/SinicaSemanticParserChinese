@@ -1,0 +1,171 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 刻画 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 portrays"/>
+    <role argnum="2" argrole="thing arg1 is portrayed in"/>
+    <role argnum="3" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 擅长)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 刻画)
+						(NP-OBJ (NN 移民)
+							(NN 心态))))))
+			    (DEC 的)))
+		    (NP-PN (NR 罗卓瑶)))
+	    (PU ，)
+	    (NP-SBJ (NN 风格))
+	    (VP (VV 多变))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	移民 心态 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg3"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VA 锐利)))
+			    (DEC 的)))
+		    (NP (NN 线条)))
+	    (VP (VRD (VV 刻画)
+		     (VV 出))
+		(NP-OBJ (NP (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (VA 突出)))
+				    (DEC 的)))
+			    (NP (ADJP (JJ 大))
+				(NP (NN 眼))))
+			(PU 、)
+			(NP (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-4))
+					(VP (VV 紧闭)))
+				    (DEC 的)))
+			    (QP (CD 双))
+			    (NP (NN 唇)))))) 
+	</parse>
+	<arg n="3">
+	*OP* *T*-2 锐利 的 线条 
+	</arg>
+	<arg n="1">
+	*OP* *T*-3 突出 的 大 眼 、 *OP* *T*-4 紧闭 的 双 唇 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (NN 展场))
+		     (LC 中))
+	    (NP-SBJ (QP (CD 一)
+			(CLP (M 块)))
+		    (DNP (ADJP (JJ 圆形))
+			 (DEG 的))
+		    (NP (PU 「)
+			(NN 奔鹿纹瓦当)
+			(PU 」)))
+	    (PU ，)
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (NP (NN 鹿))
+				(DP (DT 那))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VP (VCD (VA 优美)
+							 (VA 矫健)))
+						(PU 、)
+						(VP (VV 充满)
+						    (NP-OBJ (NN 活力)))))
+					(DEC 的)))
+				(NP (NN 身躯)))
+			(VP (VV 刻画)
+			    (DER 的)
+			    (VP-EXT (VV 淋漓尽致)))))) 
+	</parse>
+	<arg n="1">
+	鹿 那 *OP* *T*-1 优美 矫健 、 充满 活力 的 身躯 
+	</arg>
+	<arg n="2">
+	一 块 圆形 的 「 奔鹿纹瓦当 」 
+	</arg>
+	<arg n="m" f="adv">
+	淋漓尽致 
+	</arg>
+	<arg n="m" f="loc">
+	展场 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (NP-SBJ (PN 我))
+	    (VP (VV 认为)
+		(IP-OBJ (NP-SBJ (DNP (NP (NT 以前))
+				     (DEG 的))
+				(NP (NN 制陶者)))
+			(VP (VP (ADVP (AD 也))
+				(VP (VC 是)
+				    (VP (VP (VV 率性))
+					(VP (MSP 而)
+					    (VP (VV 做))))))
+			    (PU ，)
+			    (VP (ADVP (AD 并))
+				(ADVP (AD 不))
+				(VP (VC 是)
+				    (VP (QP-ADV (QP (CD 一)
+						    (CLP (M 点)))
+						(QP (CD 一)
+						    (CLP (M 点))))
+					(VP (VRD (VV 刻画)
+						 (VV 上去)))))))))) 
+	</parse>
+	<arg n="0">
+	以前 的 制陶者 
+	</arg>
+	<arg n="m" f="adv">
+	一 点 一 点 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

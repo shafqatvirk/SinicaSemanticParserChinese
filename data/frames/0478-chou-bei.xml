@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹备 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="planner"/>
+      <role argnum="1" argrole="thing planned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NP-PN (NR 香港))
+				 (ADJP (JJ 特别))
+				 (NP (NN 行政区)))
+			  (NP (NN 筹委会)))
+		  (VP (ADVP (AD 将))
+		      (PP-MNR (P 根据)
+			      (NP (NP-PN (NP (DP (DT 全))
+					     (NP (NN 国)))
+					 (NP (NN 人大)))
+				  (DNP (PP (P 关于)
+					   (NP (NP (NP-PN (NP-PN (NR 香港))
+							  (ADJP (JJ 特别))
+							  (NP (NN 行政区)))
+						   (QP (OD 第一)
+						       (CLP (M 届)))
+						   (NP (NN 政府)
+						       (CC 和)
+						       (NN 立法会)))
+					       (NP (NN 产生)
+						   (NN 办法))))
+				       (DEG 的))
+				  (NP (NN 决定))))
+		      (PU ，)
+		      (VP (VP (VV 负责)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 筹备)
+					  (NP-OBJ (NP (ADJP (JJ 特别))
+						      (NP (NN 行政区)))
+						  (ADJP (JJ 有关))
+						  (NP (NN 事宜))))))
+			  (PU ，)
+			  (VP (VV 规定)
+			      (NP-OBJ (DNP (NP (NP (PN 其))
+					       (QP (OD 第一)
+						   (CLP (M 届)))
+					       (NP (NN 立法会)))
+					   (DEG 的))
+				      (ADJP (JJ 具体))
+				      (NP (NN 产生)
+					  (NN 办法))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  特别 行政区 有关 事宜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (ADJP (JJ 总))
+					  (NP (NN 投资)))
+				  (VP (QP-PRD (CD 三十多亿)
+					      (CLP (M 元)))))
+			      (DEC 的)))
+		      (NP-PN (NR 杭州)
+			     (NR 萧山)
+			     (NN 国际)
+			     (NN 机场)))
+	      (VP (VP (ADVP (AD 正))
+		      (VP (VV 在)
+			  (LCP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (ADVP (AD 加紧))
+					   (VP (VV 筹备))))
+				   (LC 之中))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 不久))
+		      (ADVP (AD 即将))
+		      (VP (VCD (VV 动工)
+			       (VV 兴建)))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  加紧 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

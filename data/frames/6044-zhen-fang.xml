@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 侦防 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 investigates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (PN 这))
+	    (VP (VP (VV 必须)
+		    (VP (VV 取得)
+			(NP-OBJ (DNP (NP (NN 企业)
+					 (CC 或)
+					 (NN 政府)
+					 (NN 部门))
+				     (DEG 的))
+				(NP (NN 契约)
+				    (NN 授权)))))
+		(PU ，)
+		(VP (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VV 扮演)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (ADVP (AD 主动))
+						    (VP (VV 侦防))))
+					    (DEC 的))
+				    (NP (NN 角色)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	主动 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (NN 其中))
+	    (NP-SBJ (NN 政情)
+		    (NN 调查))
+	    (VP (VP (VV 包括)
+		    (NP-OBJ (NP (PU 「)
+				(NN 政府)
+				(NN 施政)
+				(PU 」))
+			    (PU 、)
+			    (NP (PU 「)
+				(NP (NN 选举)
+				    (NN 治安))
+				(NP (NN 维护))
+				(PU 」))
+			    (PU 、)
+			    (NP (PU 「)
+				(IP-APP (NP-SBJ (QP (CD 两))
+						(NP (NN 岸)))
+					(VP (VV 互动)))
+				(NP (NN 状况))
+				(PU 」))
+			    (ETC 等)))
+		(PU ，)
+		(VP (ADVP (AD 绝))
+		    (VP (VC 非)
+			(VP (PP-DIR (P 针对)
+				    (NP (NN 个人)))
+			    (VP (VV 侦防))))))) 
+	</parse>
+	<arg n="1">
+	针对 个人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

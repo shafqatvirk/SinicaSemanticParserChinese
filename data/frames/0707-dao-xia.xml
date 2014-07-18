@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 倒下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing that falls"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 东亚))
+		      (QP (CD 诸))
+		      (NP (NN 国)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (ADVP (AD 宛))
+				  (PP (P 如)
+				      (NP (NN 骨牌))))
+			      (VP (VA 般))))
+		  (ADVP (AD 连番))
+		  (VP (VV 倒下)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  东亚 诸 国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 宛 如 骨牌 般 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连番 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

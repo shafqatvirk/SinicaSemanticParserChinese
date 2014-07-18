@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 露面 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 目前))
+				      (PP-LOC (P 在)
+					      (NP (NN 世界)
+						  (NN 网坛)))
+				      (VP (VV 排名)
+					  (QP-OBJ (OD 第一)))))
+			      (DEC 的)))
+		      (NP-APP (NP-PN (NR 美国))
+			      (NP (NN 选手)))
+		      (NP-PN (NR 桑普拉斯)))
+	      (PU ，)
+	      (VP (PP-TMP (P 自)
+			  (LCP (NP (NT ７月)
+				   (NN 中旬))
+			       (LC 以来)))
+		  (ADVP (AD 就))
+		  (ADVP (AD 一直))
+		  (ADVP (AD 未))
+		  (PP-LOC (P 在)
+			  (LCP (NP (NN 比赛场))
+			       (LC 上)))
+		  (VP (VV 露面)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 目前 在 世界 网坛 排名 第一 的 美国 选手 桑普拉斯 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 比赛场 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 ７月 中旬 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 便於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 makes it easy to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 顺应)
+			(NP-OBJ (DNP (NP (PN 这样))
+				     (DEG 的))
+				(NP (NN 读书)
+				    (NN 习惯)))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 便於)
+				    (NP-OBJ (NN 跳读))))
+			    (DEC 的)))
+		    (NP (PU 「)
+			(NN 笔记)
+			(NN 文体)
+			(PU 」)))
+	    (VP (VV 跟)
+		(AS 著)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 兴起))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	跳读 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

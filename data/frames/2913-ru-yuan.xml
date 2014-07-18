@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 如愿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person whose wish being described"/>
+      <role argnum="1" argrole="thing the wish concerns"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 受)
+			  (NP-OBJ (NT 当时)
+				  (NN 国力))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (MSP 所)
+				  (VP (VV 限))))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 宏伟)))
+			      (DEC 的)))
+		      (NP (NN 规划)))
+	      (VP (ADVP (AD 未))
+		  (VP (VV 能)
+		      (VP (VV 如愿))))) 
+	  </parse>
+	  <arg n="1">
+	  这 一 *OP* *T*-1 宏伟 的 规划 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *pro* 受 当时 国力 *PRO* 所 限 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

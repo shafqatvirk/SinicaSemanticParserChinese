@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 达致 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TTL (PU 「)
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (PP-MNR (P 透过)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 推行)
+				      (NP-OBJ (NP (IP-APP (NP-SBJ (NN 目标))
+							  (VP (VV 为)
+							      (NP-OBJ (NN 本))))
+						  (NP (NN 课程)))
+					      (CC 及)
+					      (NP (NP (NN 学校)
+						      (NN 管理))
+						  (ADJP (JJ 新))
+						  (NP (NN 措施)))))))
+		      (VP (VV 达致)
+			  (NP-OBJ (ADJP (JJ 优质))
+				  (NP (NN 教育)))))
+		  (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  优质 教育 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  透过 *pro* 推行 目标 为 本 课程 及 学校 管理 新 措施 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

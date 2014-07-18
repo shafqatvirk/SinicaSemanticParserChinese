@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 finds"/>
+      <role argnum="2" argrole="entities arg1 is found between"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (ADJP (JJ 精密))
+			  (NP (NN 陶瓷)))
+		      (PU 、)
+		      (NP (ADJP (JJ 不锈))
+			  (NP (NN 钢)))
+		      (PU 、)
+		      (NP (NN 虾蟹壳))
+		      (PU …)
+		      (PU …))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 乍看)))
+		  (VP (VV 似乎)
+		      (VP (PP (P 和)
+			      (NP (NN 纺纱)
+				  (NN 织布)))
+			  (VP (VPT (VV 扯)
+				   (AD 不)
+				   (VV 上))
+			      (NP-OBJ (NN 关系))))))) 
+	  </parse>
+	  <arg n="1">
+	  关系 
+	  </arg>
+	  <arg n="2">
+	  精密 陶瓷 、 不锈 钢 、 虾蟹壳 … … 
+	  </arg>
+	  <arg n="2" f="crd">
+	  和 纺纱 织布 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 乍看 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 散 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 spreads"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 捻起)
+		    (NP-OBJ (QP (CD 几)
+				(CLP (M 片)))
+			    (NP (NN 包种)
+				(NN 茶叶))))
+		(PU ，)
+		(VP (VV 散)
+		    (PP (P 在)
+			(LCP (NP (NN 瓷杯))
+			     (LC 中)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="loc">
+	在 瓷杯 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (NN 人))
+		(VP (ADVP (AD 都))
+		    (VP (VV 散)))
+		(SP 了)) 
+	</parse>
+	<arg n="1">
+	人 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

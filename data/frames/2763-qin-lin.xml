@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亲临 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location to appear at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 王国)
+			       (NN 政府))
+			   (DEG 的))
+		      (NP (NN 部长们)))
+	      (VP (VP (VV 亲临)
+		      (NP-OBJ (NN 法庭)
+			      (NN 现场)))
+		  (VP (VV 旁听)))) 
+	  </parse>
+	  <arg n="0">
+	  王国 政府 的 部长们 
+	  </arg>
+	  <arg n="1">
+	  法庭 现场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

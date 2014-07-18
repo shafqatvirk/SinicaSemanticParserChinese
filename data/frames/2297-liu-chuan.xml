@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流传 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="circle in which arg0 circulates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (NP (NN 介绍)))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 十二月)
+					      (NT 八日))
+				      (PP-LOC (P 在)
+					      (NP (NP-PN (NR 深圳))
+						  (NP (NN 体育馆))))
+				      (VP (VV 开幕))))
+			      (DEC 的)))
+		      (NP (NN 艺术节)))
+	      (PU ，)
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 集中))
+		  (VP (VV 展示)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (NP-TMP (QP (OD 二十))
+						      (NP (NN 世纪)))
+					      (ADVP (AD 广为))
+					      (VP (VV 流传))))
+				      (DEC 的)))
+			      (NP (NP-PN (NR 中华))
+				  (NP (NN 民族)))
+			      (NP (NN 艺术)
+				  (NN 精品)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  广为 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十 世纪 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

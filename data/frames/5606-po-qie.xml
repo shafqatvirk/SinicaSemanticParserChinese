@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迫切 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 反而))
+	    (NP-SBJ (DNP (NP (DP (DT 同)
+				 (QP (CD 一)))
+			     (NP (NN 血脉)))
+			 (DEG 的))
+		    (NP-PN (NR 中共))
+		    (NP (NN 政权)))
+	    (VP (PP-BNF (P 给)
+			(NP-PN (NR 台湾)))
+		(VP (VV 带来)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VA 迫切))))
+				    (DEC 的)))
+			    (NP (NN 生存)
+				(NN 危机)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

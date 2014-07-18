@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 狭窄 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 大))
+		      (NP (NN 峡谷)))
+	      (VP (PP (P 比)
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 人们))
+				      (VP (ADVP (AD 原先))
+					  (VP (VV 认为)
+					      (NP-OBJ (-NONE- *T*-2)))))
+				  (DEC 的)))))
+		  (ADVP (AD 更))
+		  (VP (VA 狭窄)))) 
+	  </parse>
+	  <arg n="0">
+	  大 峡谷 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 *OP* 人们 原先 认为 *T*-2 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

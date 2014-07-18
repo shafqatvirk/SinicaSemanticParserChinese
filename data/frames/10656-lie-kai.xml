@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 列开 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity spreading out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (NN 影展))
+		     (LC 中))
+	    (NP-SBJ (DNP (NP (DP (DT 所有))
+			     (CP (WHNP-1 (-NONE- *OP*))
+				 (CP (IP (NP-SBJ (-NONE- *T*-1))
+					 (VP (VV 参展)))))
+			     (NP (NN 国家)))
+			 (DEG 的))
+		    (NP (NN 国旗)))
+	    (VP (NP-ADV (QP-APP (CD 一))
+			(NP (NN 字)))
+		(VP (VV 列开)))) 
+	</parse>
+	<arg n="0">
+	所有 *OP* *T*-1 参展 国家 的 国旗 
+	</arg>
+	<arg n="m" f="adv">
+	一 字 
+	</arg>
+	<arg n="m" f="loc">
+	影展 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

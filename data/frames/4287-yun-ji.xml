@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 云集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location where arg0 gathers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP (NN 世界))
+			  (DP (DT 各))
+			  (NP (NN 国)))
+		      (NP (NN 客商)))
+	      (VP (VV 云集)
+		  (NP-OBJ (NN 广交会)))) 
+	  </parse>
+	  <arg n="0">
+	  世界 各 国 客商 
+	  </arg>
+	  <arg n="1">
+	  广交会 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 女子)
+		      (NN 高低杠)
+		      (NN 比赛))
+	      (NP-SBJ (NN 强手))
+	      (VP (VV 云集))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  强手 
+	  </arg>
+	  <arg n="0" f="psr">
+	  女子 高低杠 比赛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-LOC (QP (CD 两))
+		      (NP (NN 岸)))
+	      (NP-SBJ (NN 商贾))
+	      (VP (VV 云集))) 
+	  </parse>
+	  <arg n="0">
+	  商贾 
+	  </arg>
+	  <arg n="1">
+	  两 岸 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

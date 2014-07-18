@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 铺路 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 立足)
+				  (NP-OBJ (NN 内地)))
+			      (PU ，)
+			      (VP (PP-BNF (P 为)
+					  (NP (NN 当地)
+					      (NN 经济)
+					      (NN 发展)))
+				  (VP (PU ‘)
+				      (VCD (VV 修桥)
+					   (VV 铺路))
+				      (PU ’)))))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (NP (PN 我))
+			      (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VA 明智)))
+				      (DEC 的)))
+			      (NP (NN 选择))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 当地 经济 发展 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

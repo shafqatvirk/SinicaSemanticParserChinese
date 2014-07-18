@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 digs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (NP-PN (NR 陕西省))
+			   (QP (CD 一)
+			       (CLP (M 处)))
+			   (NP (NN 农村)))
+		       (LC 里))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-APP (NN 农民))
+			  (NP-PN (NR 杨志发)))
+		      (CC 和)
+		      (NP (DNP (NP (PN 他))
+			       (DEG 的))
+			  (NP (NN 乡亲))))
+	      (VP (ADVP (AD 一同))
+		  (ADVP (AD 在))
+		  (VP (VP (VV 挖)
+			  (NP-OBJ (NN 土)))
+		      (VP (VV 掘)
+			  (NP-OBJ (NN 井)))))) 
+	  </parse>
+	  <arg n="0">
+	  农民 杨志发 和 他 的 乡亲 
+	  </arg>
+	  <arg n="1">
+	  井 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一同 
+	  </arg>
+	  <arg n="m" f="loc">
+	  陕西省 一 处 农村 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

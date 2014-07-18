@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 签属 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="document signed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 阿))
+	      (VP (VV 表示)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 将))
+			      (PP (P 同)
+				  (NP-PN (NR 俄)))
+			      (VP (VV 签属)
+				  (NP-OBJ (ADJP (JJ 类似))
+					  (NP (NN 协议)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="0">
+	  同 俄 
+	  </arg>
+	  <arg n="1">
+	  类似 协议 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

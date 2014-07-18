@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 一笔勾消 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 removes in one stroke"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 到)
+			      (LCP-OBJ (NP (NN 世纪))
+				       (LC 末))))
+		  (ADVP (AD 总))
+		  (VP (VV 会)
+		      (VP (VE 有)
+			  (IP-OBJ (NP-SBJ (NN 人))
+				  (VP (VP (VV 神来一笔))
+				      (PU ，)
+				      (VP (BA 将)
+					  (IP-OBJ (NP-SBJ (DNP (DP (DT 所有))
+							       (DEG 的))
+							  (NP (NN 年序)
+							      (NN 问题)))
+						  (VP (VV 一笔勾消)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  人 
+	  </arg>
+	  <arg n="1">
+	  所有 的 年序 问题 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 侵入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity invaded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 置)
+	      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 侵入)
+				      (NP-OBJ (NP (ADJP (JJ 白))
+						  (NP (NN 棋)))
+					      (NP (NN 阵地)))))
+			      (DEC 的)))
+		      (QP (CD 一)
+			  (CLP (M 队)))
+		      (ADJP (JJ 黑))
+		      (NP (NN 子)))
+	      (PP-LOC (P 于)
+		      (NP (NN 死地)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  白 棋 阵地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

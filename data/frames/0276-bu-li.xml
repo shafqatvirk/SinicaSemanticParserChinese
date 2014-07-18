@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不利 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="party affected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (PN 他))
+                          (VP (PP-BNF (P 给)
+                                      (NP (NN 球员们)))
+                              (VP (VV 传)
+                                  (NP-OBJ (-NONE- *T*-1)))))
+                      (DEC 的)))
+              (NP (NN 方案)))
+      (VP (ADVP (AD 已经))
+          (PP-DIR (P 对)
+                  (NP (NN 资方)))
+          (VP (PU “)
+              (ADVP (AD 非常))
+              (VP (VA 不利))
+              (PU ”)))))
+	</parse>
+	<arg n="0"> *OP* 他 给 球员们 传 (*T*-1)->(方案) 的 方案 </arg>
+	<arg n="M" f="ADV"> 已经 </arg>
+	<arg n="1"> 对 资方 </arg>
+	<arg n="M" f="ADV"> 非常 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

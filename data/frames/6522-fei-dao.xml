@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飞到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 flies to"/>
+    <role argnum="2" argrole="place arg0 flies from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (ADVP (AD 还))
+		(ADVP (AD 不时))
+		(VP (VP (VV 飞到)
+			(NP-OBJ (NP-PN (NR 澳洲)
+				       (PU 、)
+				       (NR 美)
+				       (PU 、)
+				       (NR 英)
+				       (PU 、)
+				       (NR 日)
+				       (ETC 等))
+				(NP (NN 地))))
+		    (PU ，)
+		    (VP (VV 视察)
+			(NP-OBJ (NN 工厂)))
+		    (PU 、)
+		    (VP (VV 考察)
+			(NP-OBJ (NN 投资)
+				(NN 趋势)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	澳洲 、 美 、 英 、 日 等 地 
+	</arg>
+	<arg n="m" f="adv">
+	不时 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

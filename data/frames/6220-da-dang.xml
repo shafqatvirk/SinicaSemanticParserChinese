@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搭档 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities acting as partners"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李敖))
+	      (VP (ADVP (AD 同时))
+		  (VP (VV 允诺)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PU 「)
+				  (VV 说服)
+				  (PU 」)
+				  (NP-PN-OBJ (NR 陈文茜))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP (P 和)
+					      (NP-PN (NR 李庆华)))
+					  (VP (VV 搭档))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	
+	  </arg>
+	  <arg n="0" f="crd">
+	  和 李庆华 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

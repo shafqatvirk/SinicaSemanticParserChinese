@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 蝉联 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="honor, award"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (QP-ADV (ADVP (AD 连续))
+                  (QP (CD 多)
+                      (CLP (M 年))))
+          (VP (VV 蝉联)
+              (NP-OBJ (PU “)
+                      (NP (DP (DT 全))
+                          (NP (NN 国)))
+                      (NP (NN 冠军))
+                      (PU ”))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="ADV"> 连续 多 年 </arg>
+	<V/>
+	<arg n="1"> “ 全 国 冠军 ” </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

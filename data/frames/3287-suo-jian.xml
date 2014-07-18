@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缩减 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity reduced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 缩减)
+			  (NP-OBJ (NP (NP (DP (DT 每))
+					  (NP (NN 班)))
+				      (NP (NN 学生)))
+				  (NP (NN 人数))))
+		      (PU 、)
+		      (VP (VV 取消)
+			  (NP-OBJ (NN 中学)
+				  (NN 浮动班)))
+		      (ETC 等))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  每 班 学生 人数 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity reduced"/>
+      <role argnum="1" argrole="result to be reduced"/>
+      <role argnum="2" argrole="origin to reduce from"/>
+      <role argnum="3" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NN 参加者))
+	      (VP (ADVP (AD 已))
+		  (PP-DIR (P 从)
+			  (NP (DNP (LCP (QP (CD 十)
+					    (CLP (M 年)))
+					(LC 前))
+				   (DEG 的))
+			      (QP (CD 四万))
+			      (NP (NN 人))))
+		  (VP (VRD (VV 缩减)
+			   (VV 为))
+		      (NP-OBJ (QP (CD 四千))
+			      (NP (NN 人)))))) 
+	  </parse>
+	  <arg n="0">
+	  参加者	  
+	  </arg>
+	  <arg n="1">
+	  四千人	  
+	  </arg>
+	  <arg n="2">
+	  从 十 年 前 的 四万 人	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

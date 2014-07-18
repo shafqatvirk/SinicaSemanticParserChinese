@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 张贴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing posted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这些))
+		      (NP (NN 规章)
+			  (NN 制度)))
+	      (VP (VP (LCP-TMP (IP (NP-SBJ-1 (-NONE- *PRO*))
+				   (VP (PP-LGS (P 由)
+					       (NP (NN 村民)
+						   (NN 大会)))
+				       (VP (VV 通过)
+					   (NP-OBJ (-NONE- *-1)))))
+			       (LC 后))
+		      (PU ，)
+		      (VP (VV 张贴)
+			  (PP (P 于)
+			      (NP (NN 村委)
+				  (NN 办公室)))))
+		  (PU ，)
+		  (VP (ADVP (AD 直接))
+		      (VP (VV 受)
+			  (NP-OBJ (NN 群众)
+				  (NN 监督)))))) 
+	  </parse>
+	  <arg n="1">
+	  这些 规章 制度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  于 村委 办公室 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 由 村民 大会 通过 *-1 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

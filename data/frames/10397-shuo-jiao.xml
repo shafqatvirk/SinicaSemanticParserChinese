@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 说教 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="preacher"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 做)
+				(NP-OBJ (NN 节目))))
+		    (ADJP (ADVP (AD 最))
+			  (ADJP (JJ 大)))
+		    (NP (NN 挑战)))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (IP-Q-PRD (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP-WH (AD 如何))
+				  (VP (PU 『)
+				      (ADVP (AD 不))
+				      (VP (VV 说教))
+				      (PU 』))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	如何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

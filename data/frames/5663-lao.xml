@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捞 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 fishes out/grabs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 穷))
+		    (NP (NN 人)))
+	    (VP (VV 希望)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 捞)
+			    (QP-OBJ (CD 一)
+				    (CLP (M 笔))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	一 笔 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (PP-DIR (P 从)
+			    (NP (NN 头)))
+		    (VP (VA 红)
+			(PP (P 到)
+			    (NP (NN 脚)))))
+		(PU ，)
+		(VP (PP (P 像)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-DIR (P 从)
+					(LCP (NP (ADJP (JJ 红))
+						 (NP (NN 果汁)))
+					     (LC 里)))
+				(VP (VRD (VV 捞)
+					 (VV 出来))))))
+		    (VP (VA 一般))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="dir">
+	从 红 果汁 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 捞)
+			(DER 得)
+			(IP-EXT (NP-SBJ (NN 鱼)
+					(NN 虾))
+				(VP (NP-PRD (ADJP (JJ 满))
+					    (NP (NN 网)))))))
+	    (PU ，)
+	    (IP (IP (NP-SBJ (NN 渔民))
+		    (VP (VV 丰收)))
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 也))
+			(VP (VV 满足)
+			    (AS 了)
+			    (NP-OBJ (NN 食客)
+				    (NN 口腹))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	鱼 虾 满 网 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

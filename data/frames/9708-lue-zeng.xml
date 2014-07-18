@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 略增 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="level arg0 increases slightly to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 关心)
+				      (NP-OBJ (NN 财经)
+					      (NN 问题))))
+			      (DEC 的)))
+		      (NP (NN 人)))
+	      (VP (ADVP (AD 也))
+		  (VP (VRD (VV 略增)
+			   (VV 到))
+		      (QP-OBJ (CD 三成一))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 关心 财经 问题 的 人 
+	  </arg>
+	  <arg n="1">
+	  三成一 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

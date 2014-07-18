@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 埋怨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 complains about"/>
+    <role argnum="2" argrole="reason why arg0 complains"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (PP-PRP (P 为了)
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 抓)
+						(NP-OBJ (NN 虫)))))
+				(PU ，)
+				(NP-SBJ (-NONE- *T*-1))
+				(VP (DP-ADV (DT 每)
+					    (CLP (M 天)))
+				    (VP (VV 要)
+					(VP (VV 看)
+					    (NP-OBJ (QP (CD 上千)
+							(CLP (M 行)))
+						    (ADJP (JJ 旧))
+						    (NP (NN 程式)))))))
+			    (DEC 的)))
+		    (NP-APP (NP-PN (NR 凌群)
+				   (NN 电脑))
+			    (NP (NN 市场处))
+			    (ADJP (JJ 总))
+			    (NP (NN 工程师)))
+		    (NP-PN (NR 陈建国)))
+	    (VP (VP (ADVP (AD 就))
+		    (DVP (VP (ADVP (AD 半))
+			     (VP (VV 开)
+				 (NP-OBJ (NN 玩笑))))
+			 (DEV 地))
+		    (VP (VV 埋怨)))
+		(PU ，)
+		(VP (ADVP (AD 有时))
+		    (VP (VPT (VV 忍)
+			     (AD 不)
+			     (VV 住))
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (ADVP (AD 边))
+					(VP (VV 改)))
+				    (VP (ADVP (AD 边))
+					(VP (VV 骂)
+					    (PU ：)
+					    (IP-OBJ (NP-SBJ (DP (DT 哪)
+								(CLP (M 个)))
+							    (NP (NN 蠢蛋)))
+						    (PU ，)
+						    (VP (VV 写)
+							(NP-OBJ (DP (DT 这些))
+								(CP (WHNP-2 (-NONE- *OP*))
+								    (CP (IP (NP-SBJ (-NONE- *T*-2))
+									    (VP (VP (VV 缺德))
+										(VP (VE 没)
+										    (NP-OBJ (NN 大脑)))))
+									(DEC 的)))
+								(NP (NN 程式))))))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* 为了 *PRO* 抓 虫 ， *T*-1 每 天 要 看 上千 行 旧 程式 的 凌群 电脑 市场处 总 工程师 陈建国 
+	</arg>
+	<arg n="m" f="adv">
+	半 开 玩笑 地 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

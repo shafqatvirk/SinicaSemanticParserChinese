@@ -1,0 +1,125 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="thing given"/>
+      <role argnum="2" argrole="given to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	  <mapitem src="controlip" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 当地)
+		      (NN 政府))
+	      (VP (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 鼓励)
+				  (NP-OBJ (NN 投资者)))))
+		  (PU ，)
+		  (ADVP (AD 已))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-PN-SBJ (NR 王翔))
+						      (VP (VCD (VV 投资)
+							       (VV 建设))
+							  (NP-OBJ (-NONE- *T*-2))))
+						  (DEC 的)))
+					  (NP-PN (NR 九江)
+						 (NN 火车站))
+					  (NP (NN 站场)))
+				      (CC 和)
+				      (NP (NP (DNP (LCP (IP (NP-SBJ (-NONE- *pro*))
+							    (VP (VV 填平)))
+							(LC 后))
+						   (DEG 的))
+					      (NP-PN (NR 龙开河)))
+					  (CLP (M 部分))
+					  (NP (NN 地带))))
+			      (VP (VV 交给)
+				  (NP-PN-OBJ (NR 王翔))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VCD (VV 治理)
+					       (VV 开发))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  当地 政府 
+	  </arg>
+	  <arg n="1">
+	  *OP* 王翔 投资 建设 *T*-2 的 九江 火车站 站场 和 *pro* 填平 后 的 龙开河 部分 地带 
+	  </arg>
+	  <arg n="2">
+	  王翔 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 鼓励 投资者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="ext">
+	  *PRO* 治理 开发 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (ADVP (AD 专程))
+				      (VP (VSB (VV 前来)
+					       (VV 参加))
+					  (NP-OBJ (NN 交接)
+						  (NN 仪式)))))
+			      (DEC 的)))
+		      (NP-APP (NP-PN (NR 中国)
+				     (NN 机械)
+				     (NN 工业部))
+			      (NP (NN 部长)))
+		      (NP-PN (NR 包叙定)))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (DP (DT 这)
+				      (CLP (M 批)))
+				  (CP (WHNP-4 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-4))
+					      (NP-SBJ (ADJP (JJ 总))
+						      (NP (NN 价值)))
+					      (VP (VC 为)
+						  (QP-PRD (CD ５５０万)
+							  (CLP (M 美元)))))
+					  (DEC 的)))
+				  (NP (NN 机械)
+				      (NN 产品)))
+			  (VP (VV 交给)
+			      (AS 了)
+			      (NP-OBJ (NP-APP (NP-PN (NR 拉里奥哈))
+					      (NP (NN 省长)))
+				      (NP-PN (NR 马萨)))))))
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 专程 前来 参加 交接 仪式 的 中国 机械 工业部 部长 包叙定 
+	  </arg>
+	  <arg n="1">
+	  这 批 *OP* *T*-4 总 价值 为 ５５０万 美元 的 机械 产品 
+	  </arg>
+	  <arg n="2">
+	  拉里奥哈 省长 马萨 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

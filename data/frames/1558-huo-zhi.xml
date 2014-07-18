@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获知 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="informed party"/>
+      <role argnum="1" argrole="information"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 事后))
+		  (VP (VV 获知)
+		      (PU ，)
+		      (IP-OBJ (LCP-SBJ (NP (NN 货车))
+				       (LC 里))
+			      (VP (VV 装有)
+				  (NP-OBJ (NP (QP (CD 六万)
+						  (CLP (M 支)))
+					      (NP (NN 雷管)))
+					  (CC 和)
+					  (NP (QP (CD 四万)
+						  (CLP (M 米)))
+					      (NP (NN 导火索))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  货车 里 装有 六万 支 雷管 和 四万 米 导火索 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  事后 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

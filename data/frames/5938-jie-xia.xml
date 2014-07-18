@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 接下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 takes over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 一九八○年))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 丁松筠))
+	    (VP (VV 接下)
+		(NP-OBJ (NN 社长)
+			(NN 职务)))) 
+	</parse>
+	<arg n="0">
+	丁松筠 
+	</arg>
+	<arg n="1">
+	社长 职务 
+	</arg>
+	<arg n="m" f="tmp">
+	一九八○年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

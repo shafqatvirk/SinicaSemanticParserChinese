@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 爬 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing climbed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+		    (VP (PP-DIR (P 从)
+				(NP (PN 这里)))
+			(PP-DIR (P 到)
+				(NP (NN 顶峰)))
+			(PU ，)
+			(ADVP (AD 徒步))
+			(VP (VV 要)
+			    (VP (VV 爬)
+				(NP-OBJ (PN 多久)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  多久 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  徒步 	  	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  到 顶峰 	  	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 这里 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (LCP (NP (NN 货车))
+			       (LC 上))
+			  (DP (DT 那)
+			      (CLP (M 位)))
+			  (NP (NN 重伤者)))
+		  (VP (VP (VRD (VV 爬)
+			       (VV 出来)))
+		      (VP (VV 告诉)
+			  (NP-OBJ (NN 救援)
+				  (NN 人员))))) 
+	  </parse>
+	  <arg n="0">
+	  货车 上 那 位 重伤者 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 我))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 会)
+			  (VP (VV 活)
+			      (AS 着)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VRD (VV 爬)
+					       (VV 起来)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 鲍萨))
+		  (VP (VV 会)
+		      (VP (LB 被)
+			  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (DNP (NP-PN (NR 泰森))
+						   (DEG 的))
+					      (ADJP (JJ 铁))
+					      (NP (NN 拳)))
+				      (VP (VV 打)
+					  (DER 得)
+					  (VP-EXT (VNV (VV 爬)
+						       (AD 不)
+						       (VV 起来))))))))) 
+	  </parse>
+	  <arg n="0">
+	  鲍萨 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相比 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity being compared"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 刚果))
+		      (NP (NN 法郎)))
+	      (VP (IP-ADV (NP (-NONE- *PRO*))
+			  (VP (PP (P 与)
+				  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (NP-TMP (NT 去年)
+						       (NT ７月))
+					       (VP (VV 发行))))
+				       (LC 时)))
+			      (VP (VV 相比))))
+		  (ADVP (AD 已))
+		  (VP (VV 贬值)
+		      (QP-EXT (CD 百分之六十点三))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="0" f="CRD">
+	  与 *PRO* 去年 ７月 发行 时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

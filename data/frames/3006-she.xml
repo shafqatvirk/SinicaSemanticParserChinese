@@ -1,0 +1,195 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing set up"/>
+      <role argnum="2" argrole="benefactive"/>
+      <role argnum="3" argrole="location of set up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NR 广州)
+				 (PU 、)
+				 (NR 深圳)
+				 (ETC 等))
+		      (QP (CD 十四)
+			  (CLP (M 个)))
+		      (NP (NN 城市)))
+	      (VP (VP-FOC (VP (VV 到)
+			      (NP-PN-OBJ (NR 北京)))
+			  (VP (VV 参加)
+			      (NP-OBJ (NP (DP (DT 全))
+					  (NP (NN 国)))
+				      (QP (OD 首)
+					  (CLP (M 届)))
+				      (NP (NN 人才)
+					  (NN 技术)
+					  (NN 交流会)))))
+		  (PU ，)
+		  (VP (ADVP (AD 共))
+		      (VP (VV 设)
+			  (NP-OBJ (NN 招聘点))
+			  (QP-EXT (CD 一百)
+				  (CLP (M 个))))))) 
+	  </parse>
+	  <arg n="0">
+	  广州 、 深圳 等 十四 个 城市 	  
+	  </arg>
+	  <arg n="1">
+	  招聘点 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一百 个 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 总部))
+	      (VP (ADVP (AD 仍))
+		  (VP (VV 设)
+		      (PP (P 在)
+			  (NP-PN (NR 法兰克福)))))) 
+	  </parse>
+	  <arg n="1">
+	  总部 	  
+	  </arg>
+	  <arg n="3">
+	  在 法兰克福 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 奖学金))
+	      (VP (ADVP (AD 则))
+		  (PP-BNF (P 为)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 修读)
+					      (NP-OBJ (NN 学士)
+						      (NN 学位)
+						      (NN 课程))))
+				      (DEC 的)))
+			      (NP (NN 人士))))
+		  (VP (MSP 而)
+		      (VP (VV 设))))) 
+	  </parse>
+	  <arg n="1">
+	  奖学金 	  
+	  </arg>
+	  <arg n="2">
+	  为 *OP* *T*-2 修读 学士 学位 课程 的 人士 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg3"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 本)
+			  (CLP (M 届)))
+		      (NP (NN 比赛)))
+	      (VP (VV 设)
+		  (NP-OBJ (QP (CD １２)
+			      (CLP (M 个)))
+			  (NP (NN 赛段))))) 
+	  </parse>
+	  <arg n="3">
+	  本 届 比赛 	  
+	  </arg>
+	  <arg n="1">
+	  １２ 个 赛段 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC-2 (-NONE- *T*-1))
+				  (IP (IP (NP-SBJ (NN 总部))
+					  (VP (VV 设)
+					      (PP (P 在)
+						  (NP-PN (NR 美国)
+							 (NR 加州)))))
+				      (PU 、)
+				      (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (PP-LOC (P 在)
+						      (NP (NN 全球)))
+					      (VP (VV 拥有)
+						  (NP-OBJ (QP (CD 一千三百亿)
+							      (CLP (M 美元)))
+							  (NP (NN 注册)
+							      (NN 资金))))))))
+			      (DEC 的)))
+		      (NP-PN (NR 富兰克林·邓普顿)
+			     (NN 公司)))
+	      (PU ，)
+	      (VP (VV 决定)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NP (PN 其))
+					      (DNP (NP (NP-PN (NR 中国))
+						       (NP (NN 地区)))
+						   (DEG 的))
+					      (NP (NN 总部)))
+				      (VP (VV 设)
+					  (PP (P 在)
+					      (NP-PN (NR 浦东))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  其 中国 地区 的 总部 	  
+	  </arg>
+	  <arg n="3">
+	  在 浦东 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

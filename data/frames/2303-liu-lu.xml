@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流露 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing shown"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 回忆)
+			  (NP-OBJ (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (QP-ADV (OD 初)
+							    (CLP (M 次)))
+						    (VP (VV 访)
+							(NP-PN-OBJ (NR 台)))))
+					    (LC 时))
+				       (DEG 的))
+				  (NP (NN 情景)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 刘春曙))
+	      (VP (ADVP (AD 仍然))
+		  (VP (VRD (VV 流露)
+			   (VV 出))
+		      (NP-OBJ (NN 兴奋))))) 
+	  </parse>
+	  <arg n="0">
+	  刘春曙 
+	  </arg>
+	  <arg n="1">
+	  兴奋 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍然 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 回忆 *PRO* 初 次 访 台 时 的 情景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

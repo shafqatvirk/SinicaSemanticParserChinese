@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 鼎足三立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不仅))
+	      (NP-PN-SBJ (NR 台中市))
+	      (VP (ADVP (AD 可望))
+		  (VP (VP (VRD (VV 升格)
+			       (VV 为))
+			  (NP-OBJ (NN 直辖市)))
+		      (PU ，)
+		      (VP (PP (P 和)
+			      (NP-PN (NR 台北)
+				     (PU 、)
+				     (NR 高雄)))
+			  (VP (VV 鼎足三立)))))) 
+	  </parse>
+	  <arg n="0">
+	  台中市 
+	  </arg>
+	  <arg n="0" f="crd">
+	  和 台北 、 高雄 
+	  </arg>
+	  <arg n="m" f="adv">
+	  可望 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不仅 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

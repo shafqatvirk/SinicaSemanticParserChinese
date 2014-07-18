@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 谋取 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tries to obtain"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 要)
+		    (VP (PP-BNF (P 为)
+				(NP (QP (ADVP (AD 最))
+					(QP (CD 大多数)))
+				    (NP (NN 人))))
+			(VP (VV 谋取)
+			    (NP-OBJ (ADJP (ADVP (AD 最))
+					  (ADJP (JJ 大)))
+				    (NP (NN 福祉))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	最 大 福祉 
+	</arg>
+	<arg n="m" f="bnf">
+	为 最 大多数 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

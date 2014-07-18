@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="receiver"/>
+      <role argnum="1" argrole="person received"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (NP-TMP (NT 今年))
+				      (VP (VV 举办))))
+			      (DEC 的)))
+		      (QP (OD 第五)
+			  (CLP (M 届)))
+		      (NP-PN (NN 昆交会)))
+	      (VP (VP (VV 接待)
+		      (AS 了)
+		      (NP-OBJ (NP (QP (CD 五十六)
+				      (CLP (M 个)))
+				  (NP (NN 国家)
+				      (CC 和)
+				      (NN 地区)))
+			      (QP (CD 八千七百余)
+				  (CLP (M 名)))
+			      (NP (NN 宾客))))
+		  (PU ，)
+		  (VP (VV 成交)
+		      (QP-OBJ (ADVP (AD 近))
+			      (QP (CD 十六亿)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-3)->(第五届昆交会) 今年 举办 的 第五 届 昆交会 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  五十六 个 国家 和 地区 八千七百余 名 宾客 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (NP (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 接待)
+				      (NP-OBJ (NN 外国)
+					      (NN 元首))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 访)
+					      (NP-PN-OBJ (NR 港))))))
+			      (CC 和)
+			      (IP (NP-SBJ (NN 特区)
+					  (NN 政府)
+					  (NN 领导人))
+				  (VP (VV 出访))))
+		      (NP (NN 方面)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外国 元首 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 访 港 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

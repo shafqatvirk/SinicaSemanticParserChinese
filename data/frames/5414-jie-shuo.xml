@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 解说 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 explains"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 一)
+			    (CLP (M 块)))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (ADJP (JJ 透明))
+					    (NP (NN 玻璃)))
+				    (VP (VV 制)
+					(NP-OBJ (-NONE- *T*-1))))
+				(DEC 的)))
+			(NP (NN 地图)))
+		(PU ，)
+		(VP (VV 解说)
+		    (AS 著)
+		    (NP-OBJ (DNP (NP (NP-PN (NR 台湾))
+				     (NP (NN 原住民)))
+				 (DEG 的))
+			    (NP (NN 起源))))) 
+	</parse>
+	<arg n="1">
+	台湾 原住民 的 起源 
+	</arg>
+	<arg n="2">
+	一 块 *OP* 透明 玻璃 制 *T*-1 的 地图 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (NN 图))
+		     (LC 中))
+	    (NP-SBJ (NN 解说员))
+	    (VP (ADVP (AD 正))
+		(PP-BNF (P 为)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 参加)
+					    (NP-OBJ (NN 课外)
+						    (NN 教学))))
+				    (DEC 的)))
+			    (ADJP (JJ 小))
+			    (NP (NN 朋友))))
+		(VP (VV 解说)
+		    (NP-OBJ (DNP (NP (NN 排湾族)
+				     (NN 石板屋))
+				 (DEG 的))
+			    (NP (NN 特色)))))) 
+	</parse>
+	<arg n="0">
+	解说员 
+	</arg>
+	<arg n="1">
+	排湾族 石板屋 的 特色 
+	</arg>
+	<arg n="m" f="bnf">
+	为 *OP* *T*-1 参加 课外 教学 的 小 朋友 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<arg n="m" f="loc">
+	图 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-4))
+			    (VP (PP-LOC (P 在)
+					(NP (NN 现场)))
+				(VP (VV 解说))))
+			(DEC 的)))
+		(NP-APP (NN 果农))
+		(NP-PN (NR 陈胜宗))) 
+	</parse>
+	<arg n="0">
+	*T*-4 
+	</arg>
+	<arg n="m" f="adv">
+	在 现场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

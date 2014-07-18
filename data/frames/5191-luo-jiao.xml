@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 落脚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 settles down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(CP-Q (IP (ADVP (AD 然而))
+		  (PU ，)
+		  (IP-SBJ (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 移民)
+				  (NP-PN-OBJ (NN 大陆))))
+			  (PU 、)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 落脚)
+				  (NP-PN-OBJ (NR 上海)))))
+		  (VP (ADVP (AD 真的))
+		      (VP (VA 好))))
+	      (SP 吗)) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	上海 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (CP (WHNP-2 (-NONE- *OP*))
+			     (CP (IP (NP-SBJ (-NONE- *T*-2))
+				     (VP (NP-TMP (QP (CD 六十))
+						 (NP (NN 年代)))
+					 (VP (VV 启动))))
+				 (DEC 的)))
+			 (QP (CD 十))
+			 (ADJP (JJ 大))
+			 (NP (NN 建设)))
+		     (LC 中))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 中船)
+		       (PU 、)
+		       (NR 中钢))
+	    (VP (ADVP (AD 也))
+		(VP (VV 选)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(NP-PN (NR 高雄)))
+				(VP (VV 落脚))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	在 高雄 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

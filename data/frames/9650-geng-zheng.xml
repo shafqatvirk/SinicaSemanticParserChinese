@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 更正 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 corrects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 即使))
+			  (ADVP (AD 事後))
+			  (VP (VV 追踪)
+			      (CC 或)
+			      (VV 更正))))
+	      (PU ，)
+	      (NP-SBJ (NN 意义))
+	      (VP (ADVP (AD 已经))
+		  (ADVP (AD 不))
+		  (VP (VA 大)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  事後 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即使 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

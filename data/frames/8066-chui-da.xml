@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吹打 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing (wind) blowing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (IP (IP (NP-SBJ (NN 坡峦) )
+					  (VP (VV 起伏)))
+				      (PU ，)
+				      (IP (NP-SBJ (NN 劲风) )
+					  (VP (VV 吹打)))))
+			      (DEC 的)))
+		      (NP-PN (NR 八里) ))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 好))
+		      (NP (NN 耕地) ))
+	      (VP (ADVP (AD 并))
+		  (ADVP (AD 不))
+		  (VP (VA 多)))) 
+	  </parse>
+	  <arg n="0">
+	  劲风 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

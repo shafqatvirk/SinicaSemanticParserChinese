@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 锦上添花 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 adds good things onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 就)
+				  (NP (DNP (NP (NN 经济)
+					       (NN 学者))
+					   (DEG 的))
+				      (NP (NN 立场))))
+			  (VP (MSP 来)
+			      (VP (VV 说)))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (VP (ADVP (AD 一贯))
+		      (VP (VV 主张)
+			  (NP-OBJ (ADJP (JJ 自由))
+				  (NP (NN 经济)))))
+		  (PU ，)
+		  (VP (VV 认为)
+		      (IP-OBJ (NP-SBJ (NN 政府)
+				      (NN 政策))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 需)
+				      (VP (ADVP (AD 太过))
+					  (VP (VV 锦上添花))))))))) 
+	  </parse>
+	  <arg n="0">
+	  政府 政策 
+	  </arg>
+	  <arg n="m" f="adv">
+	  太过 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

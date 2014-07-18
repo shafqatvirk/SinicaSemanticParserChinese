@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开启 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-PRP (P 由於)
+			  (NP (ADJP (JJ 连场))
+			      (NP (NN 大雨))))
+		  (PU ，)
+		  (NP-PN-SBJ (NN 水务署))
+		  (VP (PP-LOC (P 在)
+			      (NP (NN 城门)
+				  (NN 水塘)))
+		      (VP (VP (VV 开启)
+			      (NP-OBJ (NN 水闸)))
+			  (VP (VV 排洪))))) 
+	  </parse>
+	  <arg n="0">
+	  水务署 
+	  </arg>
+	  <arg n="1">
+	  水闸 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 连场 大雨 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 城门 水塘 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (LCP (IP (NP-SBJ (DP (DT 该))
+				   (NP (NN 信件)))
+			   (VP (VP (VV 开启))
+			       (CC 和)
+			       (VP (VV 搜查))))
+		       (LC 时))) 
+	  </parse>
+	  <arg n="1">
+	  该 信件 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

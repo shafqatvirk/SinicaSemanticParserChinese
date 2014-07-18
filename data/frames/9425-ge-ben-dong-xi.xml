@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 各奔东西 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people going different directions"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (QP (CD 一)
+			  (CLP (M 家)))
+		      (NP (NN 人)))
+	      (IP (IP (NP-SBJ (NN 经济))
+		      (VP (VA 拮据)))
+		  (PU 、)
+		  (IP (NP-SBJ (NN 生活))
+		      (VP (VA 困顿)))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VA 穷愁)
+			  (VA 潦倒)))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 各奔东西))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  一 家 人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

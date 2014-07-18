@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减慢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity slowing down"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 只是))
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (QP-ADV (OD 第一)
+					      (CLP (M 个)))
+				      (VP (VV 出生))))
+			      (DEC 的)))
+		      (NP (NN 男婴)))
+	      (VP (PP-TMP (P 在)
+			  (NP (NT 二十八日)))
+		  (VP (VV 出现)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 频发)
+				  (IP-OBJ (NP-SBJ (NN 呼吸)
+						  (NN 暂停))
+					  (PU ，)
+					  (VP (VV 伴)
+					      (NP-OBJ (NN 心率)
+						      (NN 减慢))))))))) 
+	  </parse>
+	  <arg n="0">
+	  心率 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

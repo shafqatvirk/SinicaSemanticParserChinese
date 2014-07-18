@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 播放 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="broadcaster"/>
+    <role argnum="1" argrole="news"/>
+    <role argnum="2" argrole="audience"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (DP-TMP (DT 这)
+              (QP (CD 几)
+                  (CLP (M 天))))
+      (PU ，)
+      (NP-SBJ (DNP (NP-PN (NR 上海))
+                   (DEG 的))
+              (NP (NN 广播)
+                  (NN 电台)
+                  (PU 、)
+                  (NN 电视台)))
+      (VP (ADVP (AD 陆续))
+          (VP (VV 播放)
+              (AS 了)
+              (NP-OBJ (QP (CD 不少))
+                      (DNP (PP (P 有关)
+                               (NP (NN 欧元)))
+                           (DEG 的))
+                      (ADJP (JJ 特别))
+                      (NP (NN 节目)))))))
+	</parse>
+	<arg n="M" f="TMP"> 这 几 天 </arg>
+	<arg n="0"> 上海 的 广播 电台 、 电视台 </arg>
+	<arg n="M" f="ADV"> 陆续 </arg>
+	<V/>
+	<arg n="1"> 不少 有关 欧元 的 特别 节目 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

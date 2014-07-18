@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 输往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing transported"/>
+      <role argnum="2" argrole="location transported to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (ADVP (AD 同时))
+	      (VP (BA 将)
+		  (IP-OBJ (LCP-SBJ (QP (DNP (NP (NP (CP (WHNP-11 (-NONE- *OP*))
+							(IP (NP-SBJ (-NONE- *T*-11))
+							    (VP (VV 输往)
+								(NP-PN-OBJ (NR 欧)
+									   (NR 美)))))
+						    (NP (NN 纺织品)))
+						(NP (NN 协议)
+						    (NN 配额)
+						    (NN 总量)))
+					    (DEG 的))
+				       (QP (CD 百分之十五)))
+				   (LC 以上))
+			  (VP (VP (ADVP (AD 直接))
+				  (VP (PU “)
+				      (VV 戴)
+				      (NP-OBJ (NN 帽))
+				      (PU ”)))
+			      (VP (VSB (VV 分配)
+				       (VV 给))
+				  (NP-OBJ (NP (NN 纺织))
+					  (ADJP (JJ 自营))
+					  (NP (NN 出口)
+					      (NN 企业)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-11 
+	  </arg>
+	  <arg n="2">
+	  欧 美 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

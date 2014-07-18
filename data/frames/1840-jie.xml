@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 藉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 depends on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 三)
+			  (CLP (M 位)))
+		      (NP (NN 创作人)))
+	      (VP (VP (VV 藉)
+		      (AS 着)
+		      (NP-TTL-OBJ (PU 《)
+				  (NP (NN 回归颂))
+				  (PU 》)))
+		  (VP (VV 表达)
+		      (NP-OBJ (DNP (NP (PN 自己))
+				   (DEG 的))
+			      (NP (NN 内心)
+				  (NN 感受)))))) 
+	  </parse>
+	  <arg n="0">
+	  三 位 创作人 
+	  </arg>
+	  <arg n="1">
+	  《 回归颂 》 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

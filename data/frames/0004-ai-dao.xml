@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 哀悼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="condoler"/>
+      <role argnum="1" argrole="person/event condoled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-PN (NR 中国))
+			(NP (NN 党政)
+			    (NN 领导人)
+			    (CC 和)
+			    (NN 人民)))
+		(VP (VV 哀悼)
+		    (NP-PN-OBJ (NR 金日成)
+			       (NN 主席))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 逝世)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 党政 领导人 和 人民 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  金日成 主席 	  	  	  	  
+	  </arg>
+	  <arg n="1" f="PRD">
+	  *PRO* 逝世 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

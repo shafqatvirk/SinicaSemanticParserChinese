@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下跌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="extent of fall"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 价格))
+	      (VP (VV 下跌))) 
+	  </parse>
+	  <arg n="0">
+	  价格 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP (P 与)
+			      (NP (NP (NT 九六年))
+				  (QP (OD 第四))
+				  (NP (NN 季))))
+			  (VP (VV 比较))))
+	      (PU ，)
+	      (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (ADJP (JJ 主要))
+				      (NP (NN 承建商)))
+			      (VP (PP-TMP (P 於)
+					  (NP (NP (NT 九七年))
+					      (QP (OD 第一))
+					      (NP (NN 季))))
+				  (VP (MSP 所)
+				      (VP (VV 完成)
+					  (NP-OBJ (-NONE- *T*-1)))))))
+		      (NP (NN 工程)))
+	      (NP-SBJ (NN 名义)
+		      (NN 总值))
+	      (VP (VV 下跌)
+		  (QP-EXT (CD 百分之二点三)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  名义 总值 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *OP* 主要 承建商 於 九七年 第一 季 所 完成 *T*-1 工程 
+	  </arg>
+	  <arg n="1">
+	  百分之二点三 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 与 九六年 第四 季 比较 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

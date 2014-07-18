@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承兑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="financial institution"/>
+      <role argnum="1" argrole="check, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (VV 同意)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 采用)
+				  (NP-OBJ (CP-APP (WHNP (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (NN 银行))
+							  (VP (VV 托收)))
+						      (DEC 的)))
+					  (NP (NN 方式))))
+			      (VP (VP (VV 付款))
+				  (VP (VV 承兑)
+				      (NP-OBJ (NN 商业)
+					      (NN 票据)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  商业 票据 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

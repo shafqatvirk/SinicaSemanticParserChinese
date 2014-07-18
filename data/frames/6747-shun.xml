@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 顺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 conforms to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 顺)
+			(AS 著)
+			(NP-OBJ (DP (DT 这)
+				    (CLP (M 股)))
+				(NP (NN 创作)
+				    (NN 风气)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-TMP (ADVP (AD 一直))
+			(PP (P 到)
+			    (NP (NP-APP (QP (CD 七○))
+					(NP (NN 年代)))
+				(DNP (NP (NN 民歌))
+				     (DEG 的))
+				(NP (NN 末期)))))
+		(ADVP (AD 突然))
+		(VP (VV 出现)
+		    (NP-OBJ (NP-APP (QP (CD 一些))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (ADVP (AD 大))
+						    (VP (VV 受)
+							(NP-OBJ (NN 欢迎)))))
+					    (DEC 的)))
+				    (NP (NN 国语)
+					(NN 摇滚)
+					(NN 乐团)))
+			    (PU ，)
+			    (NP (ADVP (AD 如))
+				(NP (NP-PN (PU 「)
+					   (NR 丘丘)
+					   (NN 合唱团)
+					   (PU 」))
+				    (PU 、)
+				    (NP-PN (PU 「)
+					   (NP-PN (ADJP (JJ 红))
+						  (NP (NN 蚂蚁)))
+					   (NP (NN 合唱团))
+					   (PU 」))
+				    (PU 、)
+				    (NP (NP-PN (NR 薛岳))
+					(CC 与)
+					(NP (CP (WHNP-2 (-NONE- *OP*))
+						(IP (NP-TPC (-NONE- *T*-2))
+						    (NP-SBJ (PN 其))
+						    (VP (MSP 所)
+							(VP (VV 属)))))
+					    (NP (NN 乐团))))
+				    (ETC 等等))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	这 股 创作 风气 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (NN 风))
+		    (VP (ADVP (AD 不))
+			(VP (VV 调))))
+		(IP (NP-SBJ (NN 雨))
+		    (VP (ADVP (AD 不))
+			(VP (VV 顺))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 影响)
+			(NP-OBJ (NN 百姓)
+				(NN 生活))))) 
+	</parse>
+	<arg n="0">
+	雨 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 神游 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 makes a virtual tour"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-3))
+				    (VP (VSB (VV 有心)
+					     (VV 观赏))))
+				(DEC 的)))
+			(NP (NN 民众)))
+		(VP (VP (ADVP (AD 最好))
+			(ADVP (AD 不))
+			(VP (VV 要)
+			    (VP (ADVP (AD 一窝蜂))
+				(ADVP (AD 争先))
+				(VP (VV 目睹)))))
+		    (PU ，)
+		    (VP (VP (ADVP (AD 不妨))
+			    (VP (VV 进入)
+				(NP-OBJ (NP (NN 兵马俑)
+					    (NN 展览))
+					(ADJP (JJ 专属))
+					(NP (NN 网站)))))
+			(PU ，)
+			(VP (PP-MNR (P 透过)
+				    (NP (NN 滑鼠)))
+			    (DVP (UCP (QP (CD 三百六十)
+					  (CLP (M 度)))
+				      (ADJP (JJ 全方位)))
+				 (DEV 地))
+			    (VP (VP (VV 欣赏)
+				    (NP-OBJ (NN 秦俑)))
+				(PU ，)
+				(VP (VV 神游)
+				    (NP-OBJ (NN 秦陵地宫))))))
+		    (PU ，)
+		    (VP (VP (VV 等到)
+			    (LCP-OBJ (IP (NP-SBJ (NN 人潮))
+					 (VP (ADVP (AD 稍))
+					     (VP (VV 退))))
+				     (LC 之後)))
+			(PU ，)
+			(VP (ADVP (AD 再))
+			    (VP (VP (VV 来))
+				(VP (PP (P 与)
+					(NP (NN 兵马俑)))
+				    (ADVP (AD 好好))
+				    (VP (VV 对看)
+					(QP-EXT (CD 一)
+						(CLP (M 番)))))))
+			(PU ，)
+			(VP (ADVP (AD 反而))
+			    (ADVP (AD 更))
+			    (VP (VV 能)
+				(VP (VV 尽兴))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-3 有心 观赏 的 民众 
+	</arg>
+	<arg n="1">
+	秦陵地宫 
+	</arg>
+	<arg n="m" f="adv">
+	三百六十 度 全方位 地 
+	</arg>
+	<arg n="m" f="mnr">
+	透过 滑鼠 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

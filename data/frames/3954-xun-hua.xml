@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驯化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 山东省)
+			 (NR 莱芜市))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (NP (NN 农业)))
+				   (NP (ADJP (JJ 高))
+				       (ADJP (JJ 新))
+				       (NP (NN 技术)))
+				   (NP (NN 开发)
+				       (NN 示范区)))
+			       (LC 内)))
+		  (PU ，)
+		  (VP (VP (VRD (VV 建立)
+			       (VV 起))
+			  (NP-OBJ (NN 细胞)
+				  (NN 组培)
+				  (NN 中心)))
+		      (PU ，)
+		      (VP (VCD (VV 引进)
+			       (VV 驯化))
+			  (NP-OBJ (NP (NN 国内外))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 优良)))
+					  (DEC 的)))
+				  (NP (NN 苗木)
+				      (PU 、)
+				      (NN 花卉)
+				      (CC 和)
+				      (NN 蔬菜)
+				      (NN 品种))))))) 
+	  </parse>
+	  <arg n="0">
+	  山东省 莱芜市 
+	  </arg>
+	  <arg n="1">
+	  国内外 *OP* *T*-1 优良 的 苗木 、 花卉 和 蔬菜 品种 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 农业 高 新 技术 开发 示范区 内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

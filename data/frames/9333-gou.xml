@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 苟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 is careless in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-MNR (P 以)
+		  (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PU 「)
+				      (QP-ADV (CD 一)
+					      (CLP (M 笔)))
+				      (ADVP (AD 不))
+				      (VP (VA 苟))
+				      (PU 」)))
+			      (DEC 的))
+		      (NP (NN 创作)
+			  (NN 态度) ))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一 笔 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

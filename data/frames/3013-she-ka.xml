@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设卡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 制止)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (ADVP (AD 乱))
+			      (VP (VV 收费)))
+			  (PU 、)
+			  (VP (ADVP (AD 乱))
+			      (VP (VV 罚款)))
+			  (CC 和)
+			  (VP (ADVP (AD 乱))
+			      (VP (VV 设卡))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  乱 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

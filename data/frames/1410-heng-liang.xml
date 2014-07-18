@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 衡量 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="measurer"/>
+      <role argnum="1" argrole="thing measured"/>
+      <role argnum="2" argrole="metric"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (ADVP (AD 再))
+			  (VP (VV 利用)
+			      (NP-OBJ (DNP (ADJP (JJ 传统))
+					   (DEG 的))
+				      (NP (NN 贸易)
+					  (NN 收支)
+					  (NN 平衡)
+					  (NN 方式)))))
+		      (VP (MSP 来)
+			  (VP (VV 衡量)
+			      (NP-OBJ (DNP (LCP (NP (NN 国)
+						    (CC 与)
+						    (NN 国))
+						(LC 之间))
+					   (DEG 的))
+				      (NP (NN 贸易)
+					  (NN 关系))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  国 与 国 之间 的 贸易 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

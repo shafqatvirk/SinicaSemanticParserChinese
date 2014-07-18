@@ -1,0 +1,210 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 输入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity imported"/>
+      <role argnum="2" argrole="entity imported to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VP (ADVP (AD 还))
+		      (PP-DIR (P 对)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (ADJP (JJ 有关))
+						      (NP (NN 国家)))
+					      (VP (VV 提出)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 工业)
+				      (NN 项目))))
+		      (VP (VV 邀请)
+			  (NP-OBJ (NN 专家))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 评估))))))
+		  (PU ，)
+		  (VP (LCP-TMP (NP (NN 评估))
+			       (LC 之后))
+		      (ADVP (AD 再))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (DP (DT 这些))
+					  (NP (NN 项目)))
+				  (VP (VP (VV 输入)
+					  (NP-OBJ (DNP (NP (ADJP (JJ 工发))
+							   (NP (NN 组织)))
+						       (DEG 的))
+						  (NP (NN 网络))))
+				      (VP (VV 进行)
+					  (NP-OBJ (NN 国际)
+						  (NN 招商))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  这些 项目 
+	  </arg>
+	  <arg n="2">
+	  工发 组织 的 网络 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  评估 之后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 当天)
+		      (NT 中午))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 欧盟)
+			 (NN 财政)
+			 (NN 部长)
+			 (NN 理事会))
+	      (VP (VP (ADVP (AD 将))
+		      (VP (VV 举行)
+			  (NP-OBJ (ADJP (JJ 特别))
+				  (NP (NN 会议)))))
+		  (PU ，)
+		  (VP (ADVP (AD 最后))
+		      (VP (VV 锁定)
+			  (NP-OBJ (NP (NP (DP (DT 各))
+					  (NP (NN 成员国)))
+				      (NP (NN 货币)))
+				  (DNP (PP (P 与)
+					   (NP (NN 欧元)))
+				       (DEG 的))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (ADVP (AD 不))
+					      (VP (VV 可)
+						  (VP (VV 更改)
+						      (NP-OBJ (-NONE- *T*-1)))))))
+				  (NP (NN 兑换率)))))
+		  (PU ，)
+		  (VP (ADVP (AD 随后))
+		      (VP (VV 输入)
+			  (LCP-OBJ (NP (DNP (NP (NN 成员国)
+						(NN 银行)
+						(NN 系统))
+					    (DEG 的))
+				       (NP (NN 互联网)))
+				   (LC 中)))))) 
+	  </parse>
+	  <arg n="0">
+	  欧盟 财政 部长 理事会 
+	  </arg>
+	  <arg n="2">
+	  成员国 银行 系统 的 互联网 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随后 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当天 中午 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 二十六日))
+	      (PU ，)
+	      (NP-SBJ (NN 医生))
+	      (VP (VP (PP-MNR (P 通过)
+			      (NP (CP (WHNP-6 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-6))
+					      (VP (VA 特殊)))
+					  (DEC 的)))
+				  (NP (NN 装置))))
+		      (PP-BNF (P 为)
+			      (NP (DP (DT 这)
+				      (CLP (M 个)))
+				  (NP (NN 女婴))))
+		      (VP (VV 输入)
+			  (NP-OBJ (QP (CD 十)
+				      (CLP (M 毫升)))
+				  (NP (NN 血)))))
+		  (PU ，)
+		  (VP (ADVP (AD 还))
+		      (VP (VP (VV 启用)
+			      (AS 了)
+			      (NP-OBJ (NN 呼吸机)))
+			  (VP (VV 维持)
+			      (NP-OBJ (NN 生命))))))) 
+	  </parse>
+	  <arg n="0">
+	  医生 
+	  </arg>
+	  <arg n="1">
+	  十 毫升 血 
+	  </arg>
+	  <arg n="2">
+	  为 这 个 女婴 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 *OP* *T*-6 特殊 的 装置 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十六日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 网站))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 输入)
+		      (NP-OBJ (DNP (QP (ADVP (AD 近))
+				       (QP (CD 六亿)
+					   (CLP (M 字))))
+				   (DEG 的))
+			      (NP (NN 信息)
+				  (NN 资料)))))) 
+	  </parse>
+	  <arg n="1">
+	  近 六亿 字 的 信息 资料 
+	  </arg>
+	  <arg n="2">
+	  网站 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

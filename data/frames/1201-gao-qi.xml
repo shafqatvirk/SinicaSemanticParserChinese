@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搞起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 少数))
+		      (NP (NN 领导者)))
+	      (VP (VP (VV 见利忘义))
+		  (PU ，)
+		  (VP (DVP (VP (VV 肆无忌惮))
+			   (DEV 地))
+		      (VP (VV 搞起)
+			  (AS 了)
+			  (NP-OBJ (NP (PU “)
+				      (NN 豆腐渣)
+				      (PU ”))
+				  (NP (NN 工程))))))) 
+	  </parse>
+	  <arg n="0">
+	  少数 领导者 
+	  </arg>
+	  <arg n="1">
+	  “ 豆腐渣 ” 工程 
+	  </arg>
+	  <arg n="m" f="adv">
+	  肆无忌惮 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 熔炼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 melts and extracts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (UCP (QP (NP-PN (NR 中国))
+			   (QP (OD 第一)))
+		       (PU 、)
+		       (ADJP (NP-PN (NR 亚洲))
+			     (ADJP (JJ 最大)))
+		       (PU 、)
+		       (QP (NP (NN 世界))
+			   (QP (OD 第五)
+			       (CLP (M 座)))))
+		  (NP (NN 镍))
+		  (ADJP (JJ 闪速))
+		  (NP (NN 熔炼)
+		      (NN 炉))) 
+	  </parse>
+	  <arg n="1">
+	  镍 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  闪速 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

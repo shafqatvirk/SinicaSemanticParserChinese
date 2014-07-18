@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 据 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 occupies/owns"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 三))
+		      (NP (NN 强)))
+	      (VP (ADVP (AD 各))
+		  (VP (VV 据)
+		      (NP-OBJ (QP (CD 一))
+			      (NP (NN 方)))))) 
+	  </parse>
+	  <arg n="0">
+	  三 强 		
+	  </arg>
+	  <arg n="1">
+	  一 方 		
+	  </arg>
+	  <arg n="m" f="adv">
+	  各 		
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 uses as basis"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-Q-SBJ (NP-PN-SBJ (NR 陈水扁)
+				   (NN 总统))
+			(VP (ADVP-WH (AD 如何))
+			    (VP (VP (VV 据)
+				    (NP-OBJ (-NONE- *pro*)))
+				(VP (MSP 以)
+				    (VP (VV 作为)
+					(NP-OBJ (DNP (NP (NP (QP (CD 两))
+							     (NP (NN 岸)))
+							 (NP (NN 政策)))
+						     (DEG 的))
+						(NP (NN 参考))))))))
+	      (PU ，)
+	      (VP (ADVP (AD 实在))
+		  (VP (VV 令)
+		      (NP-OBJ (NN 人))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 怀疑)))))) 
+	  </parse>
+	  <arg n="0">
+	  陈水扁 总统 		
+	  </arg>
+	  <arg n="1">
+	  *pro* 		
+	  </arg>
+	  <arg n="m" f="adv">
+	  如何 		
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 owns"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *T*-1))
+	      (VP (ADVP (AD 各))
+		  (VP (VV 据)
+		      (NP-OBJ (NN 特色))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*		
+	  </arg>
+	  <arg n="1">
+	  特色		
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

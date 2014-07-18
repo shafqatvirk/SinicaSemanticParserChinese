@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 调 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 adjusts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DP (DT 那))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-1))
+				    (ADVP (AD 平生))
+				    (NP-SBJ (NN 志气)
+					    (NN 运) )
+				    (VP (ADVP (AD 不))
+					(VP (VA 通))))
+				(DEC 的)))
+			(NP (NN 人) ))
+		(PU ，)
+		(VP (ADVP (AD 不时))
+		    (PP-MNR (P 根据)
+			    (NP (NN 师父)
+				(NN 指点) ))
+		    (PU ，)
+		    (VP (VP (VP (VV 装)
+				(NP-OBJ (QP (CLP (M 个)))
+					(NP (NN 风水缸) )))
+			    (PU 、)
+			    (VP (VV 弄)
+				(NP-OBJ (QP (CLP (M 个)))
+					(NP (NN 水晶座) ))))
+			(VP (MSP 来)
+			    (VP (VP (VV 调)
+				    (NP-OBJ (NN 阴阳) ))
+				(PU 、)
+				(VP (VV 去)
+				    (NP-OBJ (NN 晦气) ))))))) 
+	</parse>
+	<arg n="0">
+	那 *OP* *T*-1 平生 志气 运 不 通 的 人 
+	</arg>
+	<arg n="1">
+	阴阳 
+	</arg>
+	<arg n="m" f="mnr">
+	根据 师父 指点 
+	</arg>
+	<arg n="m" f="adv">
+	不时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VV 担心)
+		(IP-OBJ (IP (NP-SBJ (NN 风))
+			    (VP (ADVP (AD 不))
+				(VP (VV 调))))
+			(IP (NP-SBJ (NN 雨))
+			    (VP (ADVP (AD 不))
+				(VP (VV 顺))))
+			(PU ，)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 影响)
+				(NP-OBJ (NN 百姓)
+					(NN 生活))))))) 
+	</parse>
+	<arg n="0">
+	风 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

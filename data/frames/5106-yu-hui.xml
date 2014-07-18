@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 与会 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people attending meeting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 超过)
+				    (QP-OBJ (CD 五百)
+					    (CLP (M 名)))))
+			    (DEC 的)))
+		    (NP (NP (NN 记者))
+			(CC 及)
+			(NP (NP (NN 电影))
+			    (ADJP (JJ 从业))
+			    (NP (NN 人员)))))
+	    (VP (VV 与会))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 超过 五百 名 的 记者 及 电影 从业 人员 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

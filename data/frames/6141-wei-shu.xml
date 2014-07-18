@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 为数 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="quantity of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VV 为数)
+				(QP-OBJ (ADVP (AD 约))
+					(QP (CD 七千五百万)))))
+			(DEC 的)))
+		(NP (PU 「)
+		    (NN 婴儿潮)
+		    (PU 」))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	约 七千五百万 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (NN 家))
+		     (LC 中))
+	    (NP-SBJ (NN 长辈)
+		    (CC 与)
+		    (NN 後辈))
+	    (VP (VP-FOC (VV 为数))
+		(VP (VA 众多)))) 
+	</parse>
+	<arg n="0">
+	长辈 与 後辈 
+	</arg>
+	<arg n="m" f="loc">
+	家 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 洒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 sprays"/>
+    <role argnum="2" argrole="entity arg1 is sprayed on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-ADV (NP-SBJ (NN 骂))
+		    (VP (VV 归)
+			(NP-OBJ (NN 骂))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-28 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-28))
+				(VP (VV 洒)
+				    (NP-OBJ (NN 狗)
+					    (NN 血))))
+			    (DEC 的)))
+		    (NP (NN 戏)))
+	    (VP (ADVP (AD 还是))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (VV 看)))))) 
+	</parse>
+	<arg n="1">
+	狗 血 
+	</arg>
+	<arg n="2">
+	*T*-28 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-LOC (ADJP (JJ 满))
+			(NP (NN 地)))
+		(VP (VV 洒)
+		    (NP-OBJ (ADJP (JJ 金))
+			    (NP (NN 钱)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	金 钱 
+	</arg>
+	<arg n="2">
+	满 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 金))
+		    (NP (NN 钱)))
+	    (VP (VV 洒)
+		(PP (P 在)
+		    (LCP (NP (NN 宝府))
+			 (LC 内))))) 
+	</parse>
+	<arg n="1">
+	金 钱 
+	</arg>
+	<arg n="2">
+	在 宝府 内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

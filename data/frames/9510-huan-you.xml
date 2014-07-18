@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 患有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="disease arg0 has"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-41 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-41))
+			  (VP (VV 患有)
+			      (NP-OBJ (NN 精神)
+				      (NN 病))))
+		      (DEC 的)))
+	      (NP (NN 大老婆))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-41 
+	  </arg>
+	  <arg n="1">
+	  精神 病 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

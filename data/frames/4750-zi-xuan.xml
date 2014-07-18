@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自选 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 来自)
+				      (NP-OBJ (NN 国内外))))
+			      (DEC 的)))
+		      (NP (NN 业主们)))
+	      (VP (PP-MNR (P 经过)
+			  (NP (NN 考察)
+			      (NN 论证)))
+		  (PU ，)
+		  (PP-LOC (P 在)
+			  (LCP (IP (NP-SBJ (NN 开发区))
+				   (VP (ADVP (AD 统一))
+				       (VP (VV 规划))))
+			       (LC 下)))
+		  (VP (VP (VV 自选)
+			  (NP-OBJ (NN 项目)))
+		      (PU ，)
+		      (VP (VV 自带)
+			  (NP-OBJ (NP (NN 资金))
+				  (PU 、)
+				  (NP (NN 货源))))
+		      (PU ，)
+		      (VP (ADVP (AD 自主))
+			  (VP (VV 经营)))
+		      (PU ，)
+		      (VP (ADVP (AD 自))
+			  (VP (VV 负)
+			      (NP-OBJ (NN 盈亏))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 来自 国内外 的 业主们 
+	  </arg>
+	  <arg n="1">
+	  项目 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 开发区 统一 规划 下 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  经过 考察 论证 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

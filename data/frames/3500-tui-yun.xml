@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 退运 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (CP (WHNP-6 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-6))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 能)
+					      (VP (VV 提供)
+						  (NP-OBJ (ADJP (JJ 合法))
+							  (NP (NN 证明)))))))
+				  (DEC 的)))
+			  (NP (NN 货物))))
+	      (PU ，)
+	      (NP-SBJ (NN 海关))
+	      (VP (VP (VE 有)
+		      (NP-OBJ (NN 权))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 予以)
+			      (VP (VV 退运))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

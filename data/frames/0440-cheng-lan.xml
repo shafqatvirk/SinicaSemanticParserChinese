@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承揽 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="contractor"/>
+      <role argnum="1" argrole="project, task"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST-SBJ (CD 二))
+	      (VP (VC 是)
+		  (VP (VV 支持)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (NP (DP (DT 全))
+						       (NP (NN 国)))
+						   (NP (NN 范围)))
+					       (LC 内)))
+				  (ADVP (AD 跨地区)
+					(PU 、)
+					(AD 跨部门))
+				  (VP (VV 承揽)
+				      (NP-OBJ (NN 工程)
+					      (NN 任务)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  工程 任务 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 全 国 范围 内 
+	  </arg>
+	  <arg n="m" f="adv">
+	  跨地区 、 跨部门 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

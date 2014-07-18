@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 定为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="decision-maker"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="decision"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 卫生部))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (VV 颁发)
+			  (NP-OBJ (NN 文件))))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (PN 其))
+			      (VP (VV 定为)
+				  (NP-OBJ (ADJP (JJ 国家级))
+					  (NP (ADJP (JJ 新))
+					      (NP (NN 药)))
+					  (NP (NN 保密)
+					      (NN 品种)))))))) 
+	  </parse>
+	  <arg n="0">
+	  卫生部 
+	  </arg>
+	  <arg n="1">
+	  其 
+	  </arg>
+	  <arg n="2">
+	  国家级 新 药 保密 品种 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

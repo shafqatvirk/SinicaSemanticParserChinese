@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 动用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="user"/>
+      <role argnum="1" argrole="thing utilized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VV 开户))))
+		      (NP (NN 单位)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 动用)
+				  (NP-OBJ (ADJP (JJ 大额))
+					  (NP (NN 资金))))
+			      (VP (ADVP (AD 特别是))
+				  (VP (VV 动用)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 存)
+							      (PP (P 在)
+								  (NP (ADJP (JJ 中)
+									    (JJ 小))
+								      (NP (NN 金融)
+									  (NN 机构))))))
+						      (DEC 的)))
+					      (ADJP (JJ 大额))
+					      (NP (NN 资金)))))))
+		  (PU ，)
+		  (VP (VV 应)
+		      (VP (ADVP (AD 提前))
+			  (VP (VV 通知)
+			      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 开户))))
+				      (NP (NN 金融)
+					  (NN 机构)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  大额 资金 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

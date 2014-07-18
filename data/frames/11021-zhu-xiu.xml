@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 主修 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 majors in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 一九八二年))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 罗卓瑶))
+	    (VP (VP (VP (VV 到)
+			(NP-PN-OBJ (NR 英国)))
+		    (VP (VV 攻读)
+			(NP-OBJ (NN 硕士))))
+		(PU ，)
+		(VP (VV 主修)
+		    (NP-OBJ (NN 导演)
+			    (CC 和)
+			    (NN 编剧))))) 
+	</parse>
+	<arg n="0">
+	罗卓瑶 
+	</arg>
+	<arg n="1">
+	导演 和 编剧 
+	</arg>
+	<arg n="m" f="tmp">
+	一九八二年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

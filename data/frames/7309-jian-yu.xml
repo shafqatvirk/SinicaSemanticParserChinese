@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 建於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="time/place arg0 is built"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 最))
+				    (VP (VA 典型))))
+			    (DEC 的)))
+		    (NP (NN 例子)))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VV 建於)
+					(NP-OBJ (QP (OD 十七))
+						(NP (NN 世纪)))))
+				(DEC 的)))
+			(NP-PN (NR 圣保禄)
+			       (NN 教堂))
+			(PRN (PU （)
+			     (NP-PN (NR 大三巴)
+				    (NN 牌坊))
+			     (PU ）))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	十七 世纪 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

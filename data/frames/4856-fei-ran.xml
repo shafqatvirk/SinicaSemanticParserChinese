@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 斐然 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 哥伦比亚))
+			  (NP (NN 缉毒)
+			      (NN 成绩)))
+		  (VP (VA 斐然))) 
+	  </parse>
+	  <arg n="0">
+	  哥伦比亚 缉毒 成绩 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-HLN (IP-TPC (NP-PN-SBJ (NR 广西))
+			  (VP (PP-DIR (P 对)
+				      (NP (NN 外)))
+			      (VP (VV 开放))))
+		  (NP-SBJ (NN 成绩))
+		  (VP (VV 斐然))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  成绩 
+	  </arg>
+	  <arg n="0" f="psr">
+	  广西 对 外 开放 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

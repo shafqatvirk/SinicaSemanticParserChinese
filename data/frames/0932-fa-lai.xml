@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 红十字会))
+		      (CC 与)
+		      (NP (NP-APP (NP-PN (NR 红新月会)
+					 (NN 国际)
+					 (NN 联合会))
+				  (NP (NN 秘书长)))
+			  (NP-PN (NR 乔治·韦伯))))
+	      (VP (PP-DIR (P 向)
+			  (NP (DNP (NP (NT 今天))
+				   (DEG 的))
+			      (NP (NN 大会))))
+		  (VP (VV 发来)
+		      (AS 了)
+		      (NP-OBJ (NN 贺信))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  红十字会 与 红新月会 国际 联合会 秘书长 乔治·韦伯 
+	  </arg>
+	  <arg n="1">
+	  贺信 
+	  </arg>
+	  <arg n="2">
+	  向 今天 的 大会 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 此)
+			  (CLP (M 次)))
+		      (NP (NN 研讨会)))
+	      (VP (VV 收到)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一些))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 海外)
+					      (NN 人士))
+				      (VP (VV 发来)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP (NN 贺电))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  海外 人士 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

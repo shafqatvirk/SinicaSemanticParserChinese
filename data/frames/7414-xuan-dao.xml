@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 宣导 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 do propaganda on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (NP-PN (NR 民国))
+		    (QP (OD 四十二)
+			(CLP (M 年))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 打)
+				    (AS 著)
+				    (NP-OBJ (NN 赤脚))))
+			    (DEC 的)))
+		    (ADJP (JJ 纯朴))
+		    (NP (NN 村民)))
+	    (VP (VP (ADVP (AD 高))
+		    (VP (VV 举)
+			(NP-OBJ (IP-APP (PU 「)
+					(NP-SBJ (-NONE- *PRO*))
+					(VP (VV 庆祝)
+					    (IP-OBJ (NP-SBJ (NN 耕者))
+						    (VP (VE 有)
+							(NP-OBJ (NP (PN 其))
+								(NP (NN 田))))))
+					(PU 」))
+				(NP (NN 布条)))))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (NN 村))
+				 (LC 里)))
+		    (VP (VCD (VV 宣导)
+			     (VV 游行)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 打 著 赤脚 的 纯朴 村民 
+	</arg>
+	<arg n="m" f="loc">
+	在 村 里 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 四十二 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

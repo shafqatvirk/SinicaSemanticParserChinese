@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 炒作 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP (ADJP (JJ 国有))
+                  (NP (NN 企业)))
+              (CC 和)
+              (NP (CP (WHNP-1 (-NONE- *OP*))
+                      (IP (NP-TPC (-NONE- *T*-1))
+                          (NP-SBJ (ADJP (JJ 国有))
+                                  (NP (NN 资产)))
+                          (VP (VV 控股))))
+                  (NP (NN 企业))))
+      (VP (ADVP (AD 不))
+          (VP (VV 得)
+              (VP (VV 炒作)
+                  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+                              (IP (NP-SBJ (-NONE- *T*-2))
+                                  (VP (VSB (VV 上市)
+                                           (VV 交易)))))
+                          (NP (NN 股票))))))))
+	</parse>
+	<arg n="0"> 国有 企业 和 *OP* (*T*-1)->(企业) 国有 资产 控股 企业 </arg>
+	<arg n="M" f="ADV"> 不 </arg>
+	<V/>
+	<arg n="1"> *OP* (*T*-2)->(股票) 上市 交易 股票 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (QP (CD 一些))
+                  (NP (NN 国际)
+                      (NN 投机)
+                      (NN 资本)))
+          (PU ，)
+          (VP (VP (VP (VV 混入)
+                      (NP-OBJ (ADJP (JJ 经常))
+                              (NP (NN 项目))))
+                  (VP (VV 汇入)
+                      (NP-OBJ (NN 境内))))
+              (PU ，)
+              (CC 或)
+              (VP (VP (VV 入)
+                      (NP-OBJ (NN 境内)
+                              (NN 股市)))
+                  (VP (VV 炒作))))))
+	</parse>
+	<arg n="0"> 一些 国际 投机 资本 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 布放 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="things arg0 lays out/puts"/>
+    <role argnum="2" argrole="place arg1 is put"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (QP (CD 一)
+			     (CLP (M 片)))
+			 (DNP (ADJP (JJ 小小))
+			      (DEG 的))
+			 (NP (NN 生物)
+			     (NN 晶片)))
+		     (LC 上))
+	    (PU ，)
+	    (VP (VV 可以)
+		(VP (VP (VV 布放)
+			(NP-OBJ (QP (CD 数万)
+				    (CLP (M 个)))
+				(NP (NN 基因)
+				    (NN 片段))))
+		    (PU ，)
+		    (VP (ADVP (AD 同时))
+			(VP (VV 测试)
+			    (NP-OBJ (DNP (NP (QP (CD 数万)
+						 (CLP (M 个)))
+					     (NP (NN 基因)))
+					 (DEG 的))
+				    (NP (NN 表现)))))))) 
+	</parse>
+	<arg n="1">
+	数万 个 基因 片段 
+	</arg>
+	<arg n="2">
+	一 片 小小 的 生物 晶片 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

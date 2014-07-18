@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有助於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 is helpful for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 毫无疑问))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 泰国)
+				  (CC 和)
+				  (NR 香港))
+			   (DEG 的))
+		      (IP-APP (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 免)
+				  (NP-OBJ (NN 签证))))
+		      (NP (NN 协议)))
+	      (PU ，)
+	      (VP (ADVP (AD 将))
+		  (VP (VV 会)
+		      (VP (VV 有助於)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 进一步))
+				      (VP (VV 发展)
+					  (NP-OBJ (NP (PN 双方))
+						  (DNP (PP (P 在)
+							   (NP (NN 贸易)
+							       (PU ，)
+							       (NN 商业)
+							       (CC 和)
+							       (NN 旅游)))
+						       (DEG 的))
+						  (NP (NN 联系)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  泰国 和 香港 的 *pro* 免 签证 协议 
+	  </arg>
+	  <arg n="1">
+	  *pro* 进一步 发展 双方 在 贸易 ， 商业 和 旅游 的 联系 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  毫无疑问 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

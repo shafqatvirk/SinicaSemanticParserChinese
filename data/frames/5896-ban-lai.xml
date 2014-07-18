@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搬来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 moves"/>
+    <role argnum="2" argrole="place arg1 is moved to"/>
+    <role argnum="3" argrole="place arg1 is moved from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 後来))
+	    (PP-PRP (P 因为)
+		    (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 录制)
+						(NP-OBJ (NN 广播)
+							(NN 节目))))
+					(DEC 的)))
+				(ADJP (JJ 好))
+				(NP (NN 演员)))
+			(VP (ADVP (AD 都))
+			    (VP (PP-PRD (P 在)
+					(NP-PN (NR 台北)))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 卜)
+		       (NN 神父))
+	    (VP (ADVP (AD 才))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 录音间))
+			    (VP (VV 搬来)
+				(NP-PN-OBJ (NR 台北))))))) 
+	</parse>
+	<arg n="0">
+	卜 神父 
+	</arg>
+	<arg n="1">
+	录音间 
+	</arg>
+	<arg n="2">
+	台北 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="prp">
+	因为 *OP* *T*-1 录制 广播 节目 的 好 演员 都 在 台北 
+	</arg>
+	<arg n="m" f="adv">
+	後来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 将来))
+	    (NP-SBJ (NP-PN (NR 台北))
+		    (QP (CD 一些))
+		    (NP (NN 政府)
+			(NN 机关)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 会)
+		    (VP (VV 搬来))))) 
+	</parse>
+	<arg n="1">
+	台北 一些 政府 机关 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	将来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 十)
+			 (CLP (M 年)))
+		     (LC 前))
+	    (NP-SBJ (PN 他))
+	    (VP (VP (VV 搬来)
+		    (NP-PN-OBJ (NR 埔里)))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (VP (VC 是)
+			(VP (VV 想)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 写)
+					(NP-PN-OBJ (NR 浊水溪))))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="2">
+	埔里 
+	</arg>
+	<arg n="m" f="tmp">
+	十 年 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

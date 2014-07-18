@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 治本 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 cures"/>
+      <role argnum="2" argrole="thing with which arg0 cures arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 中央)
+			  (CC 与)
+			  (NN 省))
+		      (NP (NN 政府)))
+	      (VP (PP-PRP (P 为)
+			  (NP (CP-APP (IP (NP-TPC (NN 治水)
+						  (NN 方案))
+					  (NP-SBJ (NN 治标)
+						  (PU 、)
+						  (NN 治本))
+					  (VP (VV 孰先孰后)))
+				      (DEC 的))
+			      (NP (NN 问题))))
+		  (VP (VV 吵)
+		      (DER 得)
+		      (VP-EXT (VV 不可开交))))) 
+	  </parse>
+	  <arg n="2">
+	  治水 方案 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

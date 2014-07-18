@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 明定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 stipulates clearly"/>
+      <role argnum="2" argrole="place arg1 is stipulated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-SBJ (NP (NN 修正案) )
+			   (LC 中))
+		  (VP (VV 明定)
+		      (IP-OBJ (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 曾))
+						      (VP (VP (VV 犯)
+							      (NP-OBJ (DNP (NP (PU 「)
+									       (NP (NP (ADJP (JJ 组织))
+										       (NP (NN 犯罪)))
+										   (NP (NN 防治)))
+									       (NP (NN 条例) )
+									       (PU 」))
+									   (DEG 之))
+								      (NP (NN 罪) )))
+							  (PU ，)
+							  (VP (PP-LGS (P 经)
+								      (NP (-NONE- *pro*)))
+							      (VP (VP-FOC (VV 判处)
+									  (LCP-OBJ (NP (NN 徒刑) )
+										   (LC 以上)))
+								  (VP (VV 确定))))))))
+					  (NP (NN 者) ))
+				  (PU ，)
+				  (VP (ADVP (AD 终身))
+				      (ADVP (AD 不))
+				      (VP (VV 得)
+					  (VP (VSB (VV 登记)
+						   (VV 参选))
+					      (NP-OBJ (NN 公职) )))))
+			      (PU ；)
+			      (IP (NP-SBJ (ADVP (AD 凡是))
+					  (NP (CP (WHNP (-NONE- *OP*))
+						  (IP (VP (VP-FOC (VV 受)
+								  (NP-OBJ (DNP (NP (NP (NN 死刑) )
+										   (PU 、)
+										   (NP (ADJP (JJ 无期))
+										       (NP (NN 徒刑) ))
+										   (CC 或)
+										   (NP (LCP (QP (CD 十)
+												(CLP (M 年)))
+											    (LC 以上))
+										       (ADJP (JJ 有期))
+										       (NP (NN 徒刑) )))
+									       (DEG 之))
+									  (NP (NN 判决) )))
+							  (VP (ADVP (AD 尚))
+							      (ADVP (AD 未))
+							      (VP (VV 确定))))))
+					      (NP (NN 者) )))
+				  (PU ，)
+				  (VP (ADVP (AD 不))
+				      (VP (VV 得)
+					  (VP (VRD (VV 登记)
+						   (VV 为))
+					      (NP-OBJ (NN 候选人) ))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 曾 犯 「 组织 犯罪 防治 条例 」 之 罪 ， 经 *pro* 判处 徒刑 以上 确定 者 ， 终身 不 得 登记 参选 公职 ； 凡是 *OP* 受 死刑 、 无期 徒刑 或 十 年 以上 有期 徒刑 之 判决 尚 未 确定 者 ， 不 得 登记 为 候选人 
+	  </arg>
+	  <arg n="2">
+	  修正案 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

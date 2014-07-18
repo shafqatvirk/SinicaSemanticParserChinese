@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传 </id>
+    <frameset id="f1" edef="arrive (news)">
+      <role argnum="0" argrole="location"/>
+      <role argnum="1" argrole="news"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 青海)
+			 (NN 油田))
+	      (VP (NP-TMP (NT 新年))
+		  (ADVP (AD 再))
+		  (VP (VV 传)
+		      (NP-OBJ (NN 捷报))))) 
+	  </parse>
+	  <arg n="0">
+	  青海 油田 	  
+	  </arg>
+	  <arg n="1">
+	  捷报 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  新年 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="send">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (PN 他))
+			      (VP (PP-DIR (P 给)
+					  (NP (NN 球员们)))
+				  (VP (VV 传)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (NP (NN 方案))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="2">
+	  给 球员们 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

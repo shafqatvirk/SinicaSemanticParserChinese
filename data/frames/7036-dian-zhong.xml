@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 点中 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 点中)
+		    (NP-OBJ (PU 「)
+			    (ADJP (JJ 死))
+			    (NP (NN 穴))
+			    (PU 」)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	「 死 穴 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-CND (NP-SBJ-1 (-NONE- *PRO*))
+			(VP (ADVP (CS 一旦))
+			    (VP (SB 被)
+				(VP (VV 点中)
+				    (NP-OBJ (-NONE- *-1))))))
+		(ADVP (AD 就))
+		(VP (VV 动弹不得)))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一旦 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

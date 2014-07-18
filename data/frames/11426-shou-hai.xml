@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 受害 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is harmed by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-TPC (NP-PN (NR 亚洲))
+			(NP (NN 金融)
+			    (NN 风暴)))
+		(NP-SBJ (IP-APP (NP-PN-SBJ (NR 台湾))
+				(VP (VV 受害)))
+			(NP (NN 程度)))
+		(VP (ADVP (AD 最))
+		    (VP (VA 小)))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

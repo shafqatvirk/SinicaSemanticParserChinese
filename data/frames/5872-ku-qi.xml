@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 哭泣 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="weeper"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 多少))
+			(NP (NN 母亲)))
+		(PU ，)
+		(VP (PP-BNF (P 为)
+			    (NP (NP (PN 他们))
+				(CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 囚禁)
+						(PP-LOC (P 在)
+							(LCP (NP-PN (NR 绿岛))
+							     (LC 上)))))
+					(DEC 的)))
+				(NP (NN 孩子))))
+		    (PU ，)
+		    (NP-TMP (ADJP (JJ 长))
+			    (NP (NN 夜)))
+		    (VP (VV 哭泣)))) 
+	</parse>
+	<arg n="0">
+	多少 母亲 
+	</arg>
+	<arg n="m" f="adv">
+	长 夜 
+	</arg>
+	<arg n="m" f="prp">
+	为 他们 *OP* *T*-2 囚禁 在 绿岛 上 的 孩子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

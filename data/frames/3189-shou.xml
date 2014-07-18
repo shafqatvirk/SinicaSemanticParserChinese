@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 守 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing defended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 基本))
+		      (NP (NN 态势)))
+	      (VP (ADVP (AD 仍然))
+		  (VP (VC 是)
+		      (IP-PRD (PU “)
+			      (IP (NP-PN-SBJ (NR 美))
+				  (VP (VV 攻)))
+			      (IP (NP-PN-SBJ (NR 俄))
+				  (VP (VV 守)))
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  俄 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing abided by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 提高)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 执)
+					  (NP-OBJ (NN 法)))
+				      (PU 、)
+				      (VP (VV 守)
+					  (NP-OBJ (NN 法)))))
+			      (DEC 的))
+		      (NP (NN 自觉性)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

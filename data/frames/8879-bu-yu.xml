@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 哺育 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 raises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 原来))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 群)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VE 有)
+				      (NP-OBJ (DNP (QP (CD 十数万)
+						       (CLP (M 头)))
+						   (DEG 之))
+					      (NP (NN 多)))))
+			      (DEC 的)))
+		      (NP (NN 驯鹿群)))
+	      (PU ，)
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 都))
+		  (PP-LOC (P 在)
+			  (NP (NP-PN (NP-PN (NR 阿拉斯加))
+				     (NP (NN 国家))
+				     (NP (ADJP (JJ 野生))
+					 (NP (NN 动物)))
+				     (NP (NN 保护区)))
+			      (PU ，)
+			      (QP (CD 一)
+				  (CLP (M 块)))
+			      (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (QP-PRD (QP (ADVP (AD 大约))
+							      (QP (CD 二十)
+								  (CLP (-NONE- *RNR*-3)))
+							      (CC 到)
+							      (QP (CD 三十)
+								  (CLP-3 (M 英哩)))))))
+					  (DEC 的))))
+			      (NP (NN 水滨))
+			      (ADJP (JJ 鲜美))
+			      (NP (NN 绿地))))
+		  (VP (VV 繁殖))
+		  (PU 、)
+		  (VP (VV 哺育)
+		      (NP-OBJ (NN 幼鹿))))) 
+	  </parse>
+	  <arg n="0">
+	  这 群 *OP* *T*-1 有 十数万 头 之 多 的 驯鹿群 
+	  </arg>
+	  <arg n="1">
+	  幼鹿 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 阿拉斯加 国家 野生 动物 保护区 ， 一 块 *OP* *T*-2 大约 二十 *RNR*-3 到 三十 英哩 的 水滨 鲜美 绿地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  原来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

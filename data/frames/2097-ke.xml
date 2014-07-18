@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing carved"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 回归))
+			   (DEG 的))
+		      (NP (NN 骄傲)))
+	      (PU ，)
+	      (VP (ADVP (AD 永))
+		  (VP (VV 刻)
+		      (PP-LOC (P 在)
+			      (LCP (NP (PN 我))
+				   (LCP (NP (NN 心))
+					(LC 上))))))) 
+	  </parse>
+	  <arg n="1">
+	  回归 的 骄傲 
+	  </arg>
+	  <arg n="2">
+	  在 我 心 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  永 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

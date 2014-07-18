@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 随 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="follower"/>
+      <role argnum="1" argrole="people followed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (DP-ADV (DT 这)
+					      (CLP (M 次)))
+				      (VP (VP (VV 随)
+					      (NP-OBJ (PN 我)))
+					  (VP (VV 来访)))))
+			      (DEC 的))))
+	      (VP (VE 有)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 批)))
+			  (NP (NN 企业家))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  我 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  这 次 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 is decided on by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (PN 我))
+		      (VP (VV 愿意)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (BA 把)
+				      (IP-OBJ (NP-SBJ (PN 他))
+					      (VP (VP (VV 揉成)
+						      (NP-OBJ (NN 团)))
+						  (PU ，)
+						  (VP (VV 装)
+						      (PP (P 在)
+							  (LCP (NP (NN 口袋))
+							       (LC 里))))))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 随)
+		  (NP-OBJ (PN 我)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  我 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  我 愿意 *PRO* 把 他 揉成 团 ， 装 在 口袋 里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

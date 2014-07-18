@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保卫 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="protector"/>
+    <role argnum="1" argrole="thing protected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 民兵))
+      (VP (VC 是)
+          (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-1))
+                              (VP (VP (VV 保卫)
+                                      (NP-OBJ (NN 国家)
+                                              (NN 安全)))
+                                  (PU 、)
+                                  (VP (VV 维护)
+                                      (NP-OBJ (NN 祖国)
+                                              (NN 统一)))))
+                          (DEC 的)))
+                  (QP (CD 一)
+                      (CLP (M 支)))
+                  (ADJP (JJ 重要))
+                  (NP (NN 力量))))))
+	</parse>
+	<arg n="0"> (*T*-1)->(一支重要力量) </arg>
+	<V/>
+	<arg n="1"> 国家 安全 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

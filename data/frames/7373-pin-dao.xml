@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拼到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 works hard to earn"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 如果))
+		    (IP (ADVP (AD 不幸))
+			(NP-SBJ (QP (CD 一)
+				    (CLP (M 阵)))
+				(NP (NN 风)))
+			(VP (VV 刮来))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-5 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 原本))
+				    (VP (VV 拼到)
+					(NP-OBJ (-NONE- *T*-5)))))
+			    (DEC 的))))
+	    (VP (ADVP (AD 也))
+		(VP (VV 飞)
+		    (AS 了)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-5 
+	</arg>
+	<arg n="m" f="adv">
+	原本 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

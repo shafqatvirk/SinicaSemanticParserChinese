@@ -1,0 +1,132 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 比喻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 compares"/>
+    <role argnum="2" argrole="entity arg1 is compared to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 用)
+			(NP-OBJ (NN 灯泡)))
+		    (VP (MSP 来)
+			(VP (VV 比喻)
+			    (NP-OBJ (NT 千禧)
+				    (NN 虫)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	千禧 虫 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (IP-TTL-APP (PU 《)
+					 (NP-SBJ (-NONE- *pro*))
+					 (VP (ADVP (AD 别))
+					     (VP (LB 被)
+						 (IP-OBJ (NP-SBJ (NT 千禧)
+								 (NN 虫))
+							 (VP (VV 咬死)))))
+					 (PU 》))
+			     (NP (DP (DT 这)
+				     (CLP (M 本)))
+				 (NP (NN 书))))
+			 (LC 中)))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NN 作者))
+		    (NP-PN (NR 弗莱契)))
+	    (VP (VP (VV 用)
+		    (IP-OBJ (PU 「)
+			    (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 换)
+				(NP-OBJ (NN 灯泡)))
+			    (PU 」)))
+		(VP (MSP 来)
+		    (VP (VV 比喻)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 抓)
+				    (NP-OBJ (NT 千禧)
+					    (NN 虫)))))))) 
+	</parse>
+	<arg n="0">
+	作者 弗莱契 
+	</arg>
+	<arg n="1">
+	*PRO* 抓 千禧 虫 
+	</arg>
+	<arg n="m" f="loc">
+	在 《 *pro* 别 被 千禧 虫 咬死 》 这 本 书 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 says metaphorically"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 柯庆明))
+	    (VP (VV 比喻)
+		(IP-OBJ (IP (NP-SBJ (NT 五四))
+			    (VP (VP (PP-DIR (P 对)
+					    (NP (NN 台湾人)))
+				    (ADVP (AD 就))
+				    (VP (PP-PRD (P 像)
+						(NP (QP (CD 二八六))
+						    (NP (NN 电脑))))))
+				(PU ，)
+				(VP (VV 可以)
+				    (VP (PP-TMP (P 在)
+						(LCP (IP (NP-SBJ (-NONE- *PRO*))
+							 (VP (VV 发)
+							     (NP-OBJ (NN 思古之幽情))))
+						     (LC 时)))
+					(VP (VNV (VV 看)
+						 (CD 一)
+						 (VV 看)))))))
+			(PU ，)
+			(IP-Q (ADVP (AD 但))
+			      (NP-WH-SBJ (PN 谁))
+			      (VP (ADVP (AD 还))
+				  (VP (VPT (VV 用)
+					   (DER 的)
+					   (VV 著))
+				      (NP-OBJ (PN 它)))))))) 
+	</parse>
+	<arg n="0">
+	柯庆明 
+	</arg>
+	<arg n="1">
+	五四 对 台湾人 就 像 二八六 电脑 ， 可以 在 *PRO* 发 思古之幽情 时 看 一 看 ， 但 谁 还 用 的 著 它 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

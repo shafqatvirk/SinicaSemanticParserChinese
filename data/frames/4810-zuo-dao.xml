@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 做到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 accomplishes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 从)
+		      (LCP (NP (NT 现在))
+			   (LC 起)))
+	      (PP-MNR (P 用)
+		      (NP (DNP (QP (QP (CD 三)
+				       (CLP (M 年)))
+				   (QP (CD 多)))
+			       (DEG 的))
+			  (NP (NN 时间))))
+	      (PU ，)
+	      (NP-SBJ (DNP (DP (DT 所有))
+			   (DEG 的))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (VV 做到)
+			  (NP-OBJ (ADJP (JJ 达标))
+				  (NP (NN 排放))))))) 
+	  </parse>
+	  <arg n="0">
+	  所有 的 企业 
+	  </arg>
+	  <arg n="1">
+	  达标 排放 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 三 年 多 的 时间 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  从 现在 起 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 要)
+		  (VP (VP (VV 加强)
+			  (NP-OBJ (ADJP (JJ 军政))
+				  (PU 、)
+				  (ADJP (JJ 军民))
+				  (NP (NN 团结))))
+		      (PU ，)
+		      (VP (ADVP (AD 真正))
+			  (VP (VV 做到)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP (P 与)
+					      (NP (NP (DP (DT 各))
+						      (NP (NN 族)))
+						  (NP (NN 人民))))
+					  (VP (VP (ADVP (AD 同))
+						  (VP (VV 呼吸)))
+					      (PU 、)
+					      (VP (VV 共)
+						  (NP-OBJ (NN 命运)))
+					      (PU 、)
+					      (VP (VV 心连心)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 与 各 族 人民 同 呼吸 、 共 命运 、 心连心 
+	  </arg>
+	  <arg n="m" f="adv">
+	  真正 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

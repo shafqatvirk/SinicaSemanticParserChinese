@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 绵延 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="length arg0 extends"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 堤面))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 铺上)
+				 (NP-OBJ (NP (ADJP (JJ 绿))
+					     (NP (NN 草皮)))
+					 (PU 、)
+					 (NP (NN 花台)))))
+			 (LC 後))
+		(PU ，)
+		(VP (VV 成为)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 绵延)
+					    (QP-OBJ (CD 一千二百)
+						    (CLP (M 公尺)))))
+				    (DEC 的)))
+			    (ADJP (JJ 绿色))
+			    (NP (NN 长城)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	一千二百 公尺 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 绵延)))
+				(DEC 的)))
+			(ADJP (JJ 白色))
+			(NP (NN 沙滩)))
+		    (PU 、)
+		    (NP (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VA 丰富)))
+				(DEC 的)))
+			(NP (NN 海滨)
+			    (NN 植物))
+			(NP (NN 景观)))
+		    (PU 、)
+		    (NP (CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-3))
+				    (VP (VA 奇特)))
+				(DEC 的)))
+			(NP (NN 瀑布))))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(ADVP (AD 极))
+		(VP (VV 具)
+		    (NP-OBJ (NN 魅力))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

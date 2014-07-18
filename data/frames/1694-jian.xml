@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing cut"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (CP-PRP (ADVP (CS 由于))
+			  (IP (NP-SBJ (NP-PN (NR 香港)
+					     (CC 和)
+					     (NR 美国))
+				      (NP (NN 息)
+					  (NN 差)))
+			      (VP (VV 达)
+				  (QP-OBJ (CD 一百二十五)
+					  (CLP (M 点))))))
+		  (PU ，)
+		  (CP-CND (ADVP (CS 如果))
+			  (IP (NP-SBJ (NN 市场))
+			      (VP (PP-DIR (P 对)
+					  (NP (NP-PN (NR 香港))
+					      (NP (NN 经济)
+						  (NN 前景))))
+				  (VP (VV 充满)
+				      (NP-OBJ (NN 信心))))))
+		  (PU ，)
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 仍))
+		      (VP (VE 有)
+			  (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP-LOC (-NONE- *T*-1))
+					      (VP (VV 减)
+						  (NP-OBJ (NN 息))))))
+				  (NP (NN 空间)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  息 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing diminishing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (IP-APP (NP-SBJ (ADJP (JJ 跨国))
+				      (NP (NN 公司)))
+			      (VP (PP-LOC (P 在)
+					  (NP-PN (NR 山东)))
+				  (VP (VV 投资))))
+		      (NP (NN 势头)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 减)))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  跨国 公司 在 山东 投资 势头 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

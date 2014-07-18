@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赞美 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 praises"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (PN 我))
+		(VP (VV 会)
+		    (VP (PP-MNR (P 用)
+				(NP-OBJ (IP-APP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (ADVP (AD 好))
+							(VP (VA 棒))))
+						(PU 、)
+						(IP (NP-SBJ (-NONE- *pro*))
+						    (VP (ADVP (AD 好))
+							(VP (VA 乖))))
+						(ETC 等))
+					(NP (NN 方式))))
+			(VP (VV 赞美)
+			    (NP-OBJ (NN 孩子)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	孩子 
+	</arg>
+	<arg n="m" f="mnr">
+	用 *pro* 好 棒 、 *pro* 好 乖 等 方式 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

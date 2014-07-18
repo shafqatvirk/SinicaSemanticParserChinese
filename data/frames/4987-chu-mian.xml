@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出面 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 takes charge of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (NT 九八年))
+		(PP-LGS (P 由)
+			(NP (NP-PN (NR 石))
+			    (NP (NN 处长))))
+		(VP (VP (VV 出面))
+		    (PU ，)
+		    (VP (VV 促使)
+			(NP-PN-OBJ (NR 华夏)
+				   (NN 协会)
+				   (CC 与)
+				   (NR 亚协))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 联合))
+				(VP (VV 主办)))))))) 
+	</parse>
+	<arg n="0">
+	由 石 处长 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	九八年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 後来))
+	    (NP-SBJ (NP-APP (NP-PN (NR 中影))
+			    (DP (DT 前)
+				(CLP (M 任)))
+			    (ADJP (JJ 副))
+			    (NP (NN 董事长)))
+		    (NP-PN (NR 徐立功)))
+	    (VP (VV 出面)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 协调))))) 
+	</parse>
+	<arg n="0">
+	中影 前 任 副 董事长 徐立功 
+	</arg>
+	<arg n="1">
+	*PRO* 协调 
+	</arg>
+	<arg n="m" f="tmp">
+	後来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (PP-LGS (P 由)
+			    (NP (NN 政府)))
+		    (VP (VV 出面)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP (P 与)
+					(NP (NN 他国)
+					    (CC 及)
+					    (NN 国际)
+					    (NN 组织)))
+				    (VP (VV 谈判)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VP (VV 建构)
+							(NP-OBJ (NN 市场)))
+						    (PU ，)
+						    (VP (VV 扩展)
+							(NP-OBJ (NN 商机))))))))))
+		(PU ，)
+		(CC 并)
+		(VP (PP-LGS (P 由)
+			    (NP (NN 企业)))
+		    (NP-ADV (NN 集体))
+		    (VP (VP (VV 至)
+			    (QP-OBJ (OD 第一)
+				    (CLP (M 线))))
+			(VP (VV 布桩)))))) 
+	</parse>
+	<arg n="0">
+	由 政府 
+	</arg>
+	<arg n="1">
+	*PRO* 与 他国 及 国际 组织 谈判 *PRO* 建构 市场 ， 扩展 商机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

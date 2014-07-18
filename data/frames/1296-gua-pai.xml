@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挂牌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (NP-PN-LOC (NR 中国))
+					      (ADVP (AD 最))
+					      (VP (VA 大))))
+				      (DEC 的)))
+			      (NP (NN 钢铁)
+				  (NN 公司)))
+			  (PRN (PU ——)
+			       (NP-PN (NR 鞍钢))))
+		      (NP (NN Ｈ股)))
+	      (PU ，)
+	      (VP (ADVP (AD 已))
+		  (PP-LOC (P 在)
+			  (NP-PN (NR 香港)))
+		  (VP (VV 挂牌)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-4 中国 最 大 的 钢铁 公司 —— 鞍钢 Ｈ股 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 香港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

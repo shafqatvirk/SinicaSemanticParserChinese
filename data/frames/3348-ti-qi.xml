@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity mentioned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 提起)
+			  (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				      (CP (IP (NP-TMP (NT 当年))
+					      (NP-SBJ (NN 大寨人))
+					      (VP (PP-MNR (-NONE- *T*-1))
+						  (ADVP (AD 艰苦))
+						  (VP (VV 创业))))
+					  (DEC 的)))
+				  (NP (NN 精神)))))
+	      (PU ，)
+	      (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 还是))
+		  (PP-DIR (P 打)
+			  (LCP (NP (NN 心眼))
+			       (LC 里)))
+		  (VP (VV 佩服)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* 当年 大寨人 *T*-1 艰苦 创业 的 精神 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset edef="submit to" id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 submits"/>
+      <role argnum="2" argrole="target arg1 is submitted to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

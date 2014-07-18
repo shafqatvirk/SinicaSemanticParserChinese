@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 结出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing forming"/>
+      <role argnum="1" argrole="thing arg0 is forming on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 希望)
+		  (IP-OBJ (NP-SBJ (DP (DT 这)
+				      (CLP (M 种)))
+				  (NP (NN 合作)
+				      (NN 关系)))
+			  (VP (VP (ADVP (AD 不断))
+				  (VP (VV 发展)))
+			      (PU ，)
+			      (CC 并)
+			      (VP (VV 结出)
+				  (NP-OBJ (ADJP (JJ 丰硕))
+					  (NP (NN 果实)))))))) 
+	  </parse>
+	  <arg n="0">
+	  丰硕 果实 
+	  </arg>
+	  <arg n="1">
+	  这 种 合作 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

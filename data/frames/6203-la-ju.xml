@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拉锯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="area within which arg0 goes up and down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (ADVP (AD 长期))
+		     (LC 以来))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NP (PN 我))
+			     (NP (NN 国)))
+			 (DEG 的))
+		    (NP (NN 邦交国)
+			(NN 数目)))
+	    (VP (ADVP (AD 一直))
+		(PP-LOC (P 在)
+			(LCP (QP (QP (CD 二十八)
+				     (CLP (-NONE- *RNR*-1)))
+				 (CC 到)
+				 (QP (CD 三十)
+				     (CLP-1 (M 个))))
+			     (LC 之间)))
+		(VP (VV 拉锯)))) 
+	</parse>
+	<arg n="0">
+	我 国 的 邦交国 数目 
+	</arg>
+	<arg n="1">
+	在 二十八 *RNR*-1 到 三十 个 之间 
+	</arg>
+	<arg n="m" f="adv">
+	一直 
+	</arg>
+	<arg n="m" f="tmp">
+	长期 以来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

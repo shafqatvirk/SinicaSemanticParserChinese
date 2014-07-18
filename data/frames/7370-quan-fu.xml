@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 劝服 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 persuades"/>
+    <role argnum="2" argrole="thing arg1 is persuaded to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 推动)
+			(IP-OBJ (NP-SBJ (ADJP (JJ 老))
+					(NP (NN 国代)))
+				(VP (VV 退职)))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (QP-TPC-6 (CD 一)
+			  (CLP (M 位位)))
+		(ADVP (AD 亲自))
+		(VP (VV 劝服)
+		    (QP-OBJ (-NONE- *T*-6))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*T*-6 
+	</arg>
+	<arg n="m" f="adv">
+	亲自 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 推动 老 国代 退职 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

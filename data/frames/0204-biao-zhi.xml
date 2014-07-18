@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 标志 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="signal"/>
+    <role argnum="1" argrole="significance"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-HLN (NP-SBJ (ADJP (JJ 庄严))
+                  (NP (NN 仪式)))
+          (VP (VV 标志)
+              (NP-OBJ (NN 回归)))))
+	</parse>
+	<arg n="0"> 庄严 仪式 </arg>
+	<V/>
+	<arg n="1"> 回归 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (PN 它))
+      (VP (VV 标志)
+          (AS 着)
+          (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+                              (CP (IP (NP-SBJ (NP-APP (NP-PN (NR 美国))
+                                                      (ADJP (JJ 大型))
+                                                      (ADJP (JJ 跨国))
+                                                      (NP (NN 集团)))
+                                              (NP-PN (NR 必纯士)
+                                                     (NN 公司)))
+                                      (VP (VV 占有)
+                                          (NP-OBJ (-NONE- *T*-2))
+                                          (NP-EXT (QP (CD 六成))
+                                                  (NP (NN 股份)))))
+                                  (DEC 的)))
+                          (NP-PN (NP-PN (NR 厦门))
+                                 (NP-PN (NR 福兰普利))
+                                 (NP (NN 超市))
+                                 (ADJP (JJ 有限))
+                                 (NP (NN 公司))))
+                  (VP (ADVP (AD 正式))
+                      (VP (VV 启动)))))
+      (PU 。)))
+        </parse>
+	<arg n="0"> 它 </arg>
+	<V/>
+	<arg n="1"> *OP* 美国 大型 跨国 集团 必纯士 公司 占有 (*T*-2)->(厦门福兰普利超市有限公司) 六成 股份 的 厦门 福兰普利 超市 有限 公司 正式 启动 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

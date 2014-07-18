@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 决出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 determines through competition"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 本)
+			  (CLP (M 届)))
+		      (NP (NN 锦标赛)))
+	      (VP (PP-TMP (P 到)
+			  (LCP (NP (NT 今天))
+			       (LC 为止)))
+		  (PU ，)
+		  (ADVP (AD 已))
+		  (VP (VV 决出)
+		      (NP-OBJ (QP (CD ７)
+				  (CLP (M 枚)))
+			      (NP (NN 金牌)))))) 
+	  </parse>
+	  <arg n="1" f="pse">
+	  ７ 枚 金牌 
+	  </arg>
+	  <arg n="1" f="psr">
+	  本 届 锦标赛 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 今天 为止 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

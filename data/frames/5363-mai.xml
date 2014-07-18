@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 埋 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 buries"/>
+    <role argnum="2" argrole="place arg1 is buried"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (NP-PN (NR 台湾))
+				(NP (NN 社会)))
+			(VP (ADVP (AD 深))
+			    (VP (VV 埋)
+				(NP-OBJ (-NONE- *T*-1)))))
+		    (DEC 的)))
+	    (ADJP (JJ 丰富))
+	    (NP (NN 元素))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	台湾 社会 
+	</arg>
+	<arg n="m" f="adv">
+	深 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 於是))
+	    (PU ，)
+	    (NP-SBJ (DP (DT 这))
+		    (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (ADVP (AD 深))
+				    (VP (VV 埋)
+					(LCP-OBJ (NP (NN 地))
+						 (LC 底))
+					(QP-EXT (CD 两千多)
+						(CLP (M 年))))))
+			    (DEC 的)))
+		    (ADJP (JJ 地下))
+		    (NP (NN 兵团)))
+	    (VP (ADVP (AD 终於))
+		(VP (VV 出土)))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	地 底 
+	</arg>
+	<arg n="m" f="adv">
+	深 
+	</arg>
+	<arg n="m" f="ext">
+	两千多 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADVP (AD 将近))
+		    (NP (NP (QP (CD 两百六十多)
+				(CLP (M 栋)))
+			    (NP (NN 房屋)))
+			(PU ，)
+			(NP (QP (CD 一千两百多)
+				(CLP (M 位)))
+			    (NP-PN (NR 萨国))
+			    (NP (NN 民众)))))
+	    (VP (PP-TMP (P 在)
+			(NP (NN 瞬间)))
+		(VP (SB 被)
+		    (VP (ADVP (AD 深))
+			(VP (VV 埋)
+			    (PP (P 於)
+				(NP (NN 土石)
+				    (NN 里面)))))))) 
+	</parse>
+	<arg n="1">
+	将近 两百六十多 栋 房屋 ， 一千两百多 位 萨国 民众 
+	</arg>
+	<arg n="2">
+	於 土石 里面 
+	</arg>
+	<arg n="m" f="adv">
+	深 
+	</arg>
+	<arg n="m" f="tmp">
+	在 瞬间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

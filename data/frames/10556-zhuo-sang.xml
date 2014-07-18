@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 斫丧 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 cuts and damages"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (ADVP (AD 正))
+		    (PP (P 如)
+			(IP (NP-PN-SBJ (NR 高行健))
+			    (VP (PP-LOC (P 在)
+					(LCP (NP (NP-PN (NR 诺贝尔))
+						 (NP (NN 颁奖)
+						     (NN 典礼)))
+					     (LC 上)))
+				(VP (VV 直陈))))))
+	    (PU ，)
+	    (NP-SBJ (NN 共产)
+		    (NN 专制))
+	    (VP (VV 斫丧)
+		(AS 了)
+		(NP-OBJ (NP (NN 大陆)
+			    (NN 文学))
+			(DNP (NP (NN 发展))
+			     (DEG 的))
+			(NP (NN 生机))))) 
+	</parse>
+	<arg n="0">
+	共产 专制 
+	</arg>
+	<arg n="1">
+	大陆 文学 发展 的 生机 
+	</arg>
+	<arg n="m" f="adv">
+	正 如 高行健 在 诺贝尔 颁奖 典礼 上 直陈 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

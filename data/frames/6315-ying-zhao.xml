@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 映照 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 reflects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 文学))
+	    (PU ，)
+	    (VP (VP (VC 是)
+		    (NP-PRD (DNP (NP (NN 白杨)
+				     (NN 树))
+				 (DEG 的))
+			    (LCP (NP (NN 湖))
+				 (LC 中))
+			    (NP (NN 倒影))))
+		(PU ，)
+		(VP (VRD (VV 映照)
+			 (VV 出))
+		    (NP-OBJ (DNP (LCP (NP (NN 感官)
+					  (NN 现实))
+				      (LC 外))
+				 (DEG 的))
+			    (DP (DT 另)
+				(QP (CD 一)
+				    (CLP (M 种))))
+			    (NP (NN 真实)))))) 
+	</parse>
+	<arg n="0">
+	文学 
+	</arg>
+	<arg n="1">
+	感官 现实 外 的 另 一 种 真实 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

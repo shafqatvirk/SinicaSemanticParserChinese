@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 摔掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国王))
+	      (VP (VV 要)
+		  (VP (BA 将)
+		      (IP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 公主))
+					      (VP (ADVP (AD 亲手))
+						  (VP (VV 献上)
+						      (NP-OBJ (-NONE- *T*-1)))))
+					  (DEC 的)))
+				  (NP (NN 蛋糕)))
+			      (VP (VV 摔掉)))))) 
+	  </parse>
+	  <arg n="0">
+	  国王 
+	  </arg>
+	  <arg n="1">
+	  *OP* 公主 亲手 献上 *T*-1 的 蛋糕 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 种稻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (NP-PRD (NP-PN (NR 浙江) )
+			    (NP (NN 永嘉人) )))
+		(PU ，)
+		(VP (NP-TMP (NT 一九三七年) )
+		    (VP (VV 生)
+			(PP (P 於)
+			    (NP-PN (NR 上海) ))))
+		(PU ，)
+		(VP (LCP-TMP (QP (CD 七)
+				 (CLP (M 岁)))
+			     (LC 时))
+		    (VP (LB 被)
+			(CP-OBJ (WHNP-2 (-NONE- *OP*))
+				(IP (NP-SBJ (NN 父母) )
+				    (VP (VP (VV 送到)
+					    (NP-OBJ (NP-PN (NR 江苏)
+							   (NR 昆山) )
+						    (QP (CD 一)
+							(CLP (M 位)))
+						    (NP (NP-PN (NR 顾) )
+							(NP (NN 姓)))
+						    (NP (NN 人家))))
+					(VP (VV 寄养)
+					    (NP-OBJ (-NONE- *T*-2))))))))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (NP (NN 农村) ))
+		    (VP (VCD (VV 种稻)
+			     (VV 插秧)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="loc">
+	在 农村 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (DNP (NP-PN (NR 竹北))
+			     (DEG 的))
+			(NP-PN (NR 六家庄)))
+		(VP (VP (VE 有)
+			(NP-OBJ (DNP (ADJP (JJ 所谓))
+				     (DEG 的))
+				(NP (PU 「)
+				    (ADJP (JJ 九降))
+				    (NP (NN 风))
+				    (PU 」))))
+		    (PU ，)
+		    (VP (ADVP (AD 无法))
+			(PP (P 像)
+			    (NP (NP-PN (NR 美浓))
+				(NP (NN 地区))))
+			(VP (VV 转作)
+			    (NP-OBJ (NP-APP (NN 水果)
+					    (PU 、)
+					    (NN 槟榔)
+					    (ETC 等))
+				    (ADJP (JJ 经济))
+				    (NP (NN 作物)))))
+		    (PU ，)
+		    (VP (ADVP (AD 只))
+			(VP (VV 能)
+			    (VP (VV 种稻)))))) 
+	</parse>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="loc">
+	竹北 的 六家庄 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

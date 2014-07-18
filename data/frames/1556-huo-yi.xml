@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获益 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="beneficiary"/>
+      <role argnum="1" argrole="benefitting from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NN 内地)
+			      (NN 经济))
+		      (VP (ADVP (AD 长期))
+			  (DVP (VP (VA 稳定))
+			       (DEV 地))
+			  (VP (VV 增长))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 香港))
+		      (NP (NN 经济)))
+	      (VP (ADVP (AD 将))
+		  (PP-DIR (P 从)
+			  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (VV 充满)
+						   (NP-OBJ (NN 活力))))
+					   (DEC 的)))
+				   (NP (NN 内地)
+				       (NN 经济)))
+			       (LC 中)))
+		  (VP (VV 获益)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  香港 经济 
+	  </arg>
+	  <arg n="1">
+	  从 *OP* *T*-1 充满 活力 的 内地 经济 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  内地 经济 长期 稳定 地 增长 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

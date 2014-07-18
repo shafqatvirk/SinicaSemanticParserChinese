@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 安度 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="period of time arg0 lives through safely"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP-WH (AD 如何))
+		  (VP (VV 安度)
+		      (NP-OBJ (NN 中年)
+			      (NN 变迁))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	中年 变迁 
+	</arg>
+	<arg n="m" f="adv">
+	如何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

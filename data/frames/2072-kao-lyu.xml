@@ -1,0 +1,178 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 考虑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity considered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 新西兰))
+			   (DEG 的))
+		      (NP-PN (NR ＭＩＬ)
+			     (NN 公司)))
+	      (VP (ADVP (AD 正在))
+		  (VP (VV 考虑)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 投资)
+				  (NP-OBJ (DNP (NP (NP-PN (NR 万县)
+							  (CC 至)
+							  (NR 梁平))
+						   (PU 、)
+						   (NP-PN (NR 重庆)
+							  (CC 至)
+							  (NR 长寿))
+						   (PU 、)
+						   (NP-PN (NR 长寿)
+							  (CC 至)
+							  (NR 梁平)))
+					       (DEG 的))
+					  (NP (ADJP (JJ 高速))
+					      (NP (NN 公路)))
+					  (NP (NN 建设)
+					      (NN 项目)))))))) 
+	  </parse>
+	  <arg n="0">
+	  新西兰 的 ＭＩＬ 公司 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 投资 万县 至 梁平 、 重庆 至 长寿 、 长寿 至 梁平 的 高速 公路 建设 项目 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 考虑)
+					(NP-OBJ (NN 增支)
+						(NN 因素))))
+				(LC 后))
+			   (DEG 的))
+		      (NP (NN 动态))
+		      (ADJP (JJ 总))
+		      (NP (NN 投资)))
+	      (VP (VV 逾)
+		  (NP-OBJ (QP (CD 二千亿)
+			      (CLP (M 元)))
+			  (NP (NN 人民币))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  增支 因素 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-MNR (P 经过)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (ADVP (AD 认真))
+				       (VP (VV 考虑))))
+			       (LC 后)))
+		  (VP (VV 作出)
+		      (NP-OBJ (-NONE- *T*-1))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  认真 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VRD (VV 考虑)
+			   (VV 到))
+		      (NP-OBJ (DNP (NP-PN (NR 澳门))
+				   (DEG 的))
+			      (NP (NP (NN 历史)
+				      (NN 背景))
+				  (CC 和)
+				  (NP (ADJP (JJ 现实))
+				      (NP (NN 情况))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  澳门 的 历史 背景 和 现实 情况 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VRD (VV 考虑)
+			   (VV 到))
+		      (IP-OBJ (IP (NP-SBJ (NN 职业)
+					  (NN 棒球)
+					  (NN 队员))
+				  (VP (ADVP (AD 将))
+				      (VP (VV 参加)
+					  (NP-OBJ (NN 比赛)))))
+			      (PU ，)
+			      (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 使用)
+					      (NP-OBJ (NN 金属棒))))
+				  (VP (VP (VE 有)
+					  (NP-OBJ (NN 可能)))
+				      (VP (VV 发生)
+					  (NP-OBJ (NN 人身)
+						  (NN 事故)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  职业 棒球 队员 将 参加 比赛 ， *PRO* 使用 金属棒 有 可能 发生 人身 事故 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

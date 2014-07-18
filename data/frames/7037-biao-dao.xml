@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飙到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="level arg0 rises to"/>
+    <role argnum="2" argrole="original level of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 台北市))
+			 (DEG 的))
+		    (ADJP (JJ 平均))
+		    (NP (NN 房价)))
+	    (VP (ADVP (AD 也))
+		(PP-DIR (P 从)
+			(QP (DNP (QP (OD 七十五)
+				     (CLP (M 年)))
+				 (DEG 的))
+			    (DP (DT 每)
+				(CLP (M 坪)))
+			    (QP (CD 七．二万)
+				(CLP (M 元)))))
+		(VP (VV 飙到)
+		    (QP-OBJ (DNP (QP (OD 七十八)
+				     (CLP (M 年)))
+				 (DEG 的))
+			    (QP (CD 二十八．五万)))))) 
+	</parse>
+	<arg n="0">
+	台北市 的 平均 房价 
+	</arg>
+	<arg n="1">
+	七十八 年 的 二十八．五万 
+	</arg>
+	<arg n="2">
+	从 七十五 年 的 每 坪 七．二万 元 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (ADJP (JJ 前))
+		    (NP (NN 阵子)))
+	    (NP-PN-SBJ (NR 台凤))
+	    (VP (VV 飙到)
+		(QP-OBJ (DP (DT 每)
+			    (CLP (M 股)))
+			(QP (CD 二百多)
+			    (CLP (M 元)))))) 
+	</parse>
+	<arg n="0">
+	台凤 
+	</arg>
+	<arg n="1">
+	每 股 二百多 元 
+	</arg>
+	<arg n="m" f="tmp">
+	前 阵子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

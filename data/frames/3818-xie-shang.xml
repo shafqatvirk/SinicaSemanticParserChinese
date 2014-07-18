@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 写上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing written"/>
+      <role argnum="2" argrole="location arg1 is written on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 随後))
+	      (PU ，)
+	      (NP-SBJ (QP (ADVP (AD 合))
+			  (ADVP (AD 共))
+			  (QP (CD 五百)
+			      (CLP (M 名))))
+		      (NP (NN 学生)))
+	      (VP (VP (VV 手持)
+		      (NP-OBJ (NP (NP-PN (NR 中国))
+				  (NP (NN 国旗)))
+			      (PU 、)
+			      (NP (NP (ADJP (JJ 特别))
+				      (NP (NN 行政区)))
+				  (NP (NN 区旗)))
+			      (CC 及)
+			      (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VV 写上)
+						  (NP-OBJ (NN 佛教)
+							  (NN 信条))))
+					  (DEC 的)))
+				  (NP (NN 旗帜)))))
+		  (VP (VSB (VV 列队)
+			   (VV 进场))))) 
+	  </parse>
+	  <arg n="2">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  佛教 信条 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

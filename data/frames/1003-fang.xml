@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="visitor"/>
+      <role argnum="1" argrole="place, etc. visited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP (NP-PN (NR 乍得))
+			      (ADJP (JJ 新))
+			      (NP (NN 领导人)))
+			  (NP-PN (NR 代比)))
+		  (VP (VV 访)
+		      (NP-PN-OBJ (NR 法)))) 
+	  </parse>
+	  <arg n="0">
+	  乍得 新 领导人 代比 
+	  </arg>
+	  <arg n="1">
+	  法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

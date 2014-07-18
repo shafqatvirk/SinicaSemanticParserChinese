@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 见近於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 gets closer to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VP (ADVP (AD 渐))
+			(VP (VA 老)))
+		    (VP (ADVP (AD 渐))
+			(VP (VA 熟))))
+		(PU ，)
+		(VP (VP (ADVP (AD 渐))
+			(VP (VA 熟)))
+		    (VP (ADVP (AD 渐))
+			(VP (VV 离))))
+		(PU ，)
+		(VP (VP (ADVP (AD 渐))
+			(VP (VV 离)))
+		    (VP (VV 见近於)
+			(NP-OBJ (NN 平淡)
+				(NN 自然) ))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	平淡 自然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

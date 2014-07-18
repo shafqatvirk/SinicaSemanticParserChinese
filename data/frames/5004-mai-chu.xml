@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 卖出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="seller"/>
+    <role argnum="1" argrole="thing sold"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (QP (CD 两)
+			 (CLP (M 天)))
+		     (LC 内))
+	    (NP-SBJ (NP (DP (DT 全))
+			(NP (NN 省)))
+		    (NP (NN 分店)))
+	    (VP (VV 卖出)
+		(QP-OBJ (CD 七万多)
+			(CLP (M 颗))))) 
+	</parse>
+	<arg n="0">
+	全 省 分店 
+	</arg>
+	<arg n="1">
+	七万多 颗 
+	</arg>
+	<arg n="m" f="adv">
+	两 天 内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-ADV (NP-SBJ (QP (CD 六)
+				    (CLP (M 天)))
+				(NP (NN 展期)))
+			(VP (VV 下来)))
+		(PU ，)
+		(NP-TTL-SBJ (PU 《)
+			    (ADJP (JJ 灵))
+			    (NP (NN 山))
+			    (PU 》))
+		(VP (VP (VV 卖出)
+			(AS 了)
+			(QP-OBJ (ADVP (AD 近))
+				(QP (CD 万)
+				    (CLP (M 本))))))) 
+	</parse>
+	<arg n="1">
+	《 灵 山 》 
+	</arg>
+	<arg n="1" f="qty">
+	近 万 本 
+	</arg>
+	<arg n="m" f="adv">
+	六 天 展期 下来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 接著))
+	    (LCP-TMP (IP (NP-PN-SBJ (NR 阿扁))
+			 (VP (VV 当选)))
+		     (LC 时))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 又))
+		    (VP (VSB (VV 误)
+			     (VV 以为))
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 大势已去)))))
+		(PU ，)
+		(VP (ADVP (AD 匆忙))
+		    (VP (VSB (VV 挂单)
+			     (VV 卖出)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	匆忙 
+	</arg>
+	<arg n="m" f="tmp">
+	阿扁 当选 时 
+	</arg>
+	<arg n="m" f="adv">
+	接著 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

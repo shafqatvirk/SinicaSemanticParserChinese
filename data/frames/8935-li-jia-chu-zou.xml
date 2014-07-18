@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 离家出走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person leaving home"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 原本))
+				      (VP (VV 想)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 听听)
+						      (NP-OBJ (NN 天籁)))))))
+			      (DEC 的)))
+		      (NP (PN 我)))
+	      (PU ，)
+	      (VP (ADVP (AD 只好))
+		  (VP (PU 『)
+		      (VV 离家出走)
+		      (PU 』)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 原本 想 *PRO* 听听 天籁 的 我 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只好 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

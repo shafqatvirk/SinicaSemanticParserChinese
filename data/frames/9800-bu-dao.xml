@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 不到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity that hasn't been reached"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (QP (CD 一)
+				      (CLP (M 个)))
+				  (NP (NN 月)))
+			  (VP (VV 不到)))
+		  (ADVP (AD 就))
+		  (VP (VV 烂)
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="0">
+	  一 个 月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

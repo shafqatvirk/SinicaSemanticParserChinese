@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 伸展 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place arg0 extends to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 榕树)
+		    (NN 须根))
+	    (VP (VV 伸展)
+		(PP (P 到)
+		    (LCP (NP (NP (NP-APP (NP-PN (NR 潢涌村))
+					 (CP (WHNP-2 (-NONE- *OP*))
+					     (CP (IP (NP-SBJ (-NONE- *T*-2))
+						     (VP (PP-DIR (P 从)
+								 (NP-PN (NR 宋朝)))
+							 (ADVP (AD 就))
+							 (VP (VE 有))))
+						 (DEC 的)))
+					 (NP (NN 大姓)))
+				 (PU 「)
+				 (NP-PN (NR 黎氏)))
+			     (NP (NN 宗祠))
+			     (PU 」))
+			 (LC 边))))) 
+	</parse>
+	<arg n="0">
+	榕树 须根 
+	</arg>
+	<arg n="1">
+	到 潢涌村 *OP* *T*-2 从 宋朝 就 有 的 大姓 「 黎氏 宗祠 」 边 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 除了)
+		    (NP (DNP (NP (ADJP (JJ 老))
+				 (NP (NN 街)))
+			     (DEG 的))
+			(NP (NN 人文)
+			    (NN 生态))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP-PN (NR 大隘社))
+			 (DEG 的))
+		    (NP (NN 触角)))
+	    (VP (ADVP (AD 也))
+		(VP (VRD (VV 伸展)
+			 (VV 到))
+		    (NP-OBJ (DNP (NP-PN (NR 北埔))
+				 (DEG 的))
+			    (NP (NN 自然)
+				(NN 生态)))))) 
+	</parse>
+	<arg n="0">
+	大隘社 的 触角 
+	</arg>
+	<arg n="1">
+	北埔 的 自然 生态 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	除了 老 街 的 人文 生态 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 补充 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing added"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 因此))
+      (NP-SBJ (-NONE- *pro*))
+      (VP (VV 需要)
+          (VP (DVP (VP (ADVP (AD 较))
+                       (VP (VA 多)))
+                   (DEV 地))
+              (VP (VV 补充)
+                  (NP-OBJ (ADJP (JJ 新))
+                          (NP (NN 队员))))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="ADV"> 较 多 地 </arg>
+	<V/>
+	<arg n="1"> 新 队员 </arg>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="things that complement one another"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (LCP-SBJ (NP (PN 它们))
+               (LC 之间))
+      (VP (ADVP (AD 主要))
+          (VP (VC 是)
+              (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+                                  (VP (VP (ADVP (AD 各))
+                                          (VP (VV 具)
+                                              (NP-OBJ (NN 特色))))
+                                      (PU 、)
+                                      (VP (ADVP (AD 相互))
+                                          (VP (VV 补充)))
+                                      (PU 、)
+                                      (VP (ADVP (AD 相互))
+                                          (VP (VV 促进)))
+                                      (PU 、)
+                                      (VP (ADVP (AD 共同))
+                                          (VP (VV 发展)))))
+                              (DEC 的))
+                      (NP (NN 关系)))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="1" f="ADV"> 相互 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3">
+    <role argnum="0" argrole="speaker"/>
+    <role argnum="1" argrole="added remark"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 发言人))
+      (VP (VV 补充)
+          (PU ，)
+          (IP-OBJ (NP-SBJ (-NONE- *pro*))
+                  (VP (VV 欢迎)
+                      (NP-OBJ (NP-PN (NR 毛里求斯))
+                              (NP (NN 国民)))
+                      (IP (NP-SBJ (-NONE- *PRO*))
+                          (VP (VV 继续)
+                              (VP (VV 到访)
+                                  (NP-PN-OBJ (NR 香港))))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 发言人 </arg>
+	<V/>
+	<arg n="1"> *pro* 欢迎 毛里求斯 国民 *PRO* 继续 到访 香港 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推荐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity recommended"/>
+      <role argnum="2" argrole="entity recommended to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST-SBJ (CD 四))
+	      (VP (VC 是)
+		  (VP (VP (ADVP (AD 重点))
+			  (PP-DIR (P 向)
+				  (NP (NP (ADJP (JJ 对外))
+					  (NP (NN 经济)
+					      (NN 贸易)))
+				      (NP (NN 主管)
+					  (NN 部门))))
+			  (VP (VV 推荐)
+			      (NP-OBJ (DP (DT 这些))
+				      (NP (NN 企业)))))
+		      (PU ，)
+		      (VP (VV 使)
+			  (NP-OBJ (PN 其))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 获得)
+				  (NP-OBJ (NP (PP (P 对)
+						  (NP (NN 外)))
+					      (NP (NN 承包)
+						  (NN 工程)))
+					  (NP (NN 经营权)
+					      (PU 、)
+					      (NN 进出口)
+					      (NN 经营权)
+					      (CC 和)
+					      (NN 外事)
+					      (NN 审批权))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  这些 企业 
+	  </arg>
+	  <arg n="2">
+	  向 对外 经济 贸易 主管 部门 
+	  </arg>
+	  <arg n="m" f="adv">
+	  重点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 华文)
+		      (NN 教育))
+	      (PU ，)
+	      (VP (VP (VV 介绍)
+		      (NP-OBJ (NP (NP-PN-APP (NR 广州)
+					     (NR 暨南)
+					     (NN 大学)
+					     (PU 、)
+					     (NR 泉州)
+					     (NN 华侨)
+					     (NN 大学)
+					     (ETC 等))
+				  (ADJP (JJ 相关))
+				  (NP (NN 学校)))
+			      (NP (NN 教学)
+				  (NN 招生)
+				  (NN 情况))))
+		  (PU ，)
+		  (VP (ADVP (AD 同时))
+		      (VP (VV 推荐)
+			  (NP-OBJ (NN 华文)
+				  (NN 教材)))))) 
+	  </parse>
+	  <arg n="0">
+	  华文 教育 
+	  </arg>
+	  <arg n="1">
+	  华文 教材 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

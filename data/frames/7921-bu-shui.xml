@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 补税 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="tax payer"/>
+    <role argnum="1" argrole="thing arg0 pays tax on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 产品))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 内销)))
+		(ADVP (AD 未))
+		(VP (VV 补税)))) 
+	</parse>
+	<arg n="1">
+	产品 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 内销 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

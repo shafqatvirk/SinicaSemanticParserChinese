@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 找到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 亚太))
+			  (NP (NN 地区)))
+		  (VP (VV 必须)
+		      (VP (VV 找到)
+			  (NP-OBJ (DNP (NP (PN 自己))
+				       (DEG 的))
+				  (NP (NN 发展)
+				      (NN 方式)))))) 
+	  </parse>
+	  <arg n="0">
+	  亚太 地区 
+	  </arg>
+	  <arg n="1">
+	  自己 的 发展 方式 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (CC 或者)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VV 能)
+		    (VP (ADVP (AD 及时))
+			(VP (VV 找到)
+			    (NP-OBJ (NN 外资))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 奥援))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  外资 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 奥援 
+	  </arg>
+	  <arg n="m" f="adv">
+	  及时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

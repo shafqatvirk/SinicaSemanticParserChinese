@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拟人化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 personates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NN 陶器))
+		    (VP (VV 分)
+			(NP-OBJ (NN 公)
+				(NN 母))))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (NP-PRD (CP-APP (IP (NP-SBJ (NN 排湾族))
+					(VP (BA 将)
+					    (IP-OBJ (NP-SBJ (PN 之))
+						    (VP (VV 拟人化)))))
+				    (DEC 的))
+			    (NP (NN 结果)))))) 
+	</parse>
+	<arg n="0">
+	排湾族 
+	</arg>
+	<arg n="1">
+	之 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

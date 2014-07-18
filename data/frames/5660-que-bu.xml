@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 却步 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity in front of which arg0 stops"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (NP-SBJ (DP (DT 各))
+		    (ADJP (JJ 大))
+		    (NP (NN 电视台)))
+	    (VP (PP-DIR (P 对於)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (PP (P 与)
+					(NP-PN (NR 张桂越)))
+				    (VP (VV 签约)))
+				(CC 或是)
+				(VP (VV 购买)
+				    (NP-OBJ (DNP (NP (PN 她))
+						 (DEG 的))
+					    (NP (NN 专题)
+						(NN 报导)))))))
+		(ADVP (AD 仍然))
+		(VP (VV 却步)))) 
+	</parse>
+	<arg n="0">
+	各 大 电视台 
+	</arg>
+	<arg n="1">
+	对於 *PRO* 与 张桂越 签约 或是 购买 她 的 专题 报导 
+	</arg>
+	<arg n="m" f="adv">
+	仍然 
+	</arg>
+	<arg n="m" f="dis">
+	但是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (PN 他们)
+			     (NN 作品))
+			 (DEG 的))
+		    (NP (NN 严肃性)))
+	    (VP (VP (ADVP (AD 也许))
+		    (VP (VV 使得)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 习於)
+						(NP-PN-OBJ (NR 好莱坞)
+							   (CC 与)
+							   (NR 迪士尼))))
+					(DEC 的)))
+				(NP (NN 大众)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 却步)))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (VP (VV 帮助)
+			(NP-OBJ (NP (NP-PN (NR 台湾))
+				    (CC 与)
+				    (NP (NN 世界)
+					(NN 各地)))
+				(QP (CD 许多))
+				(DNP (ADJP (JJ 认真))
+				     (DEG 的))
+				(NP (NN 观众)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (DVP (VP (ADVP (AD 更))
+					 (VP (VA 真诚)))
+				     (DEV 的))
+				(VP (MSP 去)
+				    (VP (VV 面对)
+					(NP-OBJ (NN 生命))))))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 让)
+			(NP-PN-OBJ (NR 台湾))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 一再))
+				(PP-LOC (P 在)
+					(LCP (NP (NN 国际))
+					     (LC 上)))
+				(VP (VV 曝光))))))
+		(PU ，)
+		(VP (VV 让)
+		    (NP-OBJ (NP (NN 文化))
+			    (NP-PN (NR 台湾)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 突破)
+			    (AS 了)
+			    (NP-OBJ (DNP (NP (NN 国际)
+					     (NN 政治))
+					 (DEG 的))
+				    (NP (NN 禁忌)
+					(CC 与)
+					(NN 角力)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

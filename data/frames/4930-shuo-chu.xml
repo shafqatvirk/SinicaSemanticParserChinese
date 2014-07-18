@@ -1,0 +1,117 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 说出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 gives mouth to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 政治)
+		    (NN 学者))
+	    (VP (ADVP (AD 或许))
+		(VP (VV 可以)
+		    (VP (VV 说出)
+			(NP-OBJ (QP (CD 许多))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 复杂)))
+					(DEC 的)))
+				(NP (NN 近因))))))) 
+	</parse>
+	<arg n="0">
+	政治 学者 
+	</arg>
+	<arg n="1">
+	许多 *OP* *T*-1 复杂 的 近因 
+	</arg>
+	<arg n="m" f="adv">
+	或许 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (IP-SBJ (NP-APP (DNP (NP (NN 宗教))
+				 (DEG 的))
+			    (NP (NN 讯息)
+				(PU 、)
+				(NN 价值观)))
+		    (PU ，)
+		    (IP (ADVP (AD 例如))
+			(IP (PU 「)
+			    (NP-SBJ (DNP (ADJP (JJ 贫穷))
+					 (DEG 的))
+				    (NP (NN 人)))
+			    (VP (VE 有)
+				(NP-OBJ (NN 福)))
+			    (SP 了)
+			    (PU 」))))
+	    (PU ，)
+	    (VP (VV 应该)
+		(VP (ADVP (AD 不))
+		    (VP (VV 必)
+			(VP (ADVP (AD 直接))
+			    (VP (VV 说出))))))) 
+	</parse>
+	<arg n="1">
+	宗教 的 讯息 、 价值观 ， 例如 「 贫穷 的 人 有 福 了 」 
+	</arg>
+	<arg n="m" f="adv">
+	直接 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 同学))
+	    (VP (VV 要)
+		(VP (PP-MNR (P 用)
+			    (NP (NN 英文)))
+		    (VP (VV 说出)
+			(IP-Q-OBJ (PU 「)
+				  (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 在))
+				      (VP (VV 做)
+					  (NP-WH-OBJ (PN 什麽))))
+				  (PU 」)))))) 
+	</parse>
+	<arg n="0">
+	同学 
+	</arg>
+	<arg n="1">
+	「 *pro* 在 做 什麽 」 
+	</arg>
+	<arg n="m" f="mnr">
+	用 英文 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

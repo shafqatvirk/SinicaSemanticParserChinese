@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 攒到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 saves"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 民众))
+	      (VP (VP (ADVP (AD 根本))
+		      (VP (VE 无)
+			  (IP-OBJ (NP-SBJ (NN 财))
+				  (VP (VV 可)
+				      (VP (VV 理))))))
+		  (PU ；)
+		  (VP (PP-PRP (ADVP (AD 又))
+			      (PP (P 为了)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 怕)
+					  (NP-OBJ (NN 打仗))))))
+		      (PU ，)
+		      (VP (VP (ADVP (AD 一))
+			      (VP (VV 攒到)
+				  (NP-OBJ (NN 钱))))
+			  (VP (ADVP (AD 就))
+			      (VP (VV 去)
+				  (VP (VP (VV 买)
+					  (NP-OBJ (NN 黄金)))
+				      (PU 、)
+				      (VP (VV 换)
+					  (NP-OBJ (NN 黑市)
+						  (NN 美钞)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  民众 
+	  </arg>
+	  <arg n="1">
+	  钱 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 
+	  </arg>
+	  <arg n="m" f="prp">
+	  又 为了 *PRO* 怕 打仗 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

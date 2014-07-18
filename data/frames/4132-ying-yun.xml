@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 营运 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="business operated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 运输署))
+		      (NP (NN 发言人)))
+	      (VP (NP-TMP (NT 今日)
+			  (PRN (PU （)
+			       (NP (NT 星期六))
+			       (PU ）)))
+		  (VP (VV 提醒)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (VE 有)
+						  (NP-OBJ (NN 兴趣)))
+					      (VP (VV 申请)
+						  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 营运)
+							      (NP-OBJ (DP (DT 该)
+									  (CLP (M 等)))
+								      (NP (NN 小巴)
+									  (NN 路线))))))))
+				      (DEC 的)))
+			      (NP (NN 人士)))
+		      (PU ，)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 必须)
+			      (VP (PP-TMP (P 於)
+					  (LCP (NP (NN 截止)
+						   (NN 期限))
+					       (LC 前)))
+				  (VP (VV 递交)
+				      (NP-OBJ (NN 申请书))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  该 等 小巴 路线 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抚养 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 raises"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 九)
+			 (CLP (M 岁)))
+		     (LC 时))
+	    (IP (IP (NP-SBJ (NN 祖母))
+		    (VP (VV 过世)))
+		(PU ，)
+		(IP (NP-SBJ-1 (-NONE- *pro*))
+		    (VP (ADVP (AD 转而))
+			(PP-LGS (P 由)
+				(NP (NN 三叔)
+				    (NN 祖母)))
+			(VP (VV 扶养)
+			    (NP-OBJ (-NONE- *-1))))))) 
+	</parse>
+	<arg n="0">
+	由 三叔 祖母 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	转而 
+	</arg>
+	<arg n="m" f="tmp">
+	九 岁 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

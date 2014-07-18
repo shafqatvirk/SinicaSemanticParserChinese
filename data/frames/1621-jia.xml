@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="adder"/>
+      <role argnum="1" argrole="thing added"/>
+      <role argnum="2" argrole="adding to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (AD 未))
+				  (VP (VV 加)
+				      (NP-OBJ (NN 附加值)))))
+			  (DEC 的)))
+		  (NP (NN 药材))) 
+	  </parse>
+	  <arg n="2">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  附加值 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="add mathematically">
+      <role argnum="0" argrole="adder"/>
+      <role argnum="1" argrole="parts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (QP-SBJ (CD 两)
+			  (CLP (M 项)))
+		  (VP (ADVP (AD 相))
+		      (VP (VV 加))))
+	  </parse>
+	  <arg n="1">
+	  两 项 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

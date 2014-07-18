@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 乃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="predicative"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (VV 藏有)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (VV 伪造)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (NP (NN 旅行)
+					  (NN 证件))))
+			  (CC 或)
+			  (VP (ADVP (AD 非法))
+			      (VP (VV 更改)
+				  (NP-OBJ (NN 旅行)
+					  (NN 证件))))))
+	      (VP (VC 乃)
+		  (NP-PRD (ADJP (JJ 严重))
+			  (NP (NN 罪行))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 藏有 *OP* *pro* 伪造 *T*-1 旅行 证件 或 非法 更改 旅行 证件 
+	  </arg>
+	  <arg n="1">
+	  严重 罪行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

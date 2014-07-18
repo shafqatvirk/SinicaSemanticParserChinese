@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 轮候 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing waited for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (NP (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 推行)
+					  (NP-OBJ (QP (CD 多)
+						      (CLP (M 项)))
+						  (NP (NN 措施)))))
+				  (DEC 的))
+			  (NP (NN 成果))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-TMP (-NONE- *T*-1))
+				      (VP (VV 轮候)
+					  (NP-OBJ (NN 出租)
+						  (NN 公屋)))))
+			      (DEC 的)))
+		      (ADJP (JJ 平均))
+		      (NP (NN 时间)))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 逐渐))
+		  (PP-DIR (P 由)
+			  (QP (CD 九)
+			      (CLP (M 年))))
+		  (VP (VRD (VV 缩短)
+			   (VV 至))
+		      (QP-OBJ (DNP (NP (NT 现时))
+				   (DEG 的))
+			      (QP (QP (CD 六)
+				      (CLP (M 年)))
+				  (QP (CD 半))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  出租 公屋 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

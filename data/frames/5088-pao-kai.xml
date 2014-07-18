@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抛开 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 discards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 在野))
+		    (NP (NN 联盟)))
+	    (VP (ADVP (AD 则))
+		(VP (VV 期盼)
+		    (NP-PN-OBJ (NR 民进党))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 能)
+			    (VP (PU 「)
+				(VV 抛开)
+				(NP-OBJ (DNP (NP (NN 意识型态))
+					     (DEG 的))
+					(ADJP (JJ 大))
+					(NP (NN 石头)))
+				(PU 」))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	意识型态 的 大 石头 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

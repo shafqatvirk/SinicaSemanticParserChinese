@@ -1,0 +1,150 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 混 </id>
+  <frameset id="f1" edef="mix">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 mixes together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP-WH (AD 为何))
+		  (VP (VV 要)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 公帐)
+					  (PU 、)
+					  (NN 私帐))
+				  (VP (VV 混)
+				      (ADVP (AD 在一起)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	公帐 、 私帐 
+	</arg>
+	<arg n="m" f="adv">
+	在一起 
+	</arg>
+	<arg n="m" f="adv">
+	为何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 海参)
+		    (NN 花枝)
+		    (CC 和)
+		    (NN 肉丸))
+	    (PU ，)
+	    (VP (VP (QP-ADV (CD 三))
+		    (VP (VV 分)
+			(NP-OBJ (NN 天下))))
+		(VP (VP (VV 混))
+		    (QP-OBJ (CD 一)
+			    (CLP (M 团)))))) 
+	</parse>
+	<arg n="1">
+	海参 花枝 和 肉丸 
+	</arg>
+	<arg n="m" f="adv">
+	一 团 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="drift along">
+    <role argnum="0" argrole="entity drifting along"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADVP (AD 只有))
+		    (NP (NN 小孩)))
+	    (VP (PP-LOC (P 在)
+			(NP (NN 网路)
+			    (NN 上面)))
+		(VP (VV 混)))) 
+	</parse>
+	<arg n="0">
+	只有 小孩 
+	</arg>
+	<arg n="m" f="loc">
+	在 网路 上面 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (ADJP (JJ 年轻))
+			    (NP (NN 人)))
+		    (VP (VV 回乡)))
+	    (VP (ADVP (AD 总))
+		(VP (SB 被)
+		    (VP (VV 视为)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-LOC (P 在)
+					    (NP (NN 外面)))
+				    (VP (VPT (VV 混)
+					     (AD 不)
+					     (VV 下去))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="loc">
+	在 外面 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3" edef="sneak in">
+    <role argnum="0" argrole="entity sneaking in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 让)
+		(NP-OBJ (ADJP (JJ 错误))
+			(NP (NN 日期)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VRD (PU 「)
+			     (VV 混)
+			     (PU 」)
+			     (VV 进来)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

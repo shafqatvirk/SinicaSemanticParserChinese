@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 舒缓 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 mitigates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (LCP-LOC (NP (ADJP (JJ 芳香))
+						 (NP (NN 疗法)))
+					     (LC 中))
+				    (VP (VV 使用)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP-APP (NN 薰衣草)
+			    (PU 、)
+			    (NN 檀香木)
+			    (ETC 等))
+		    (NP (NN 香精)))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 确实))
+		    (VP (VE 有)
+			(NP-OBJ (CP-APP (IP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 让)
+						    (NP-OBJ (NN 人))
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 放松)
+							    (NP-OBJ (NN 心情))))))
+					    (PU 、)
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 帮助)
+						    (NP-OBJ (NN 睡眠)))))
+					(DEC 的))
+				(NP (NN 效果)))))
+		(PU ，)
+		(VP (PP-DIR (P 对)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 舒缓)
+				    (NP-OBJ (ADJP (JJ 紧张性))
+					    (NP (NN 头痛))))))
+		    (ADVP (AD 也))
+		    (VP (VA 有效))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	紧张性 头痛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 薰衣草))
+	    (VP (VV 可以)
+		(VP (VP (VCD (VV 舒缓)
+			     (VV 镇定)))
+		    (PU 、)
+		    (VP (VV 消除)
+			(NP-OBJ (NN 疲劳)))))) 
+	</parse>
+	<arg n="0">
+	薰衣草 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 服从 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="subordinator"/>
+      <role argnum="1" argrole="supervisor, leader, command"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九二八年)
+		      (NT 十二月)
+		      (NT 二十九日))
+	      (PU ，)
+	      (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (ADVP (AD 时))
+					  (VP (VV 任)
+					      (NP-OBJ (NP-PN (NR 东三省))
+						      (NP (NN 保安)
+							  (NN 司令))))))
+				  (DEC 的)))
+			  (NP-PN (NR 张学良)))
+		      (CC 和)
+		      (NP-PN (NR 张作相))
+		      (PU 、)
+		      (NP-PN (NR 万福麟))
+		      (ETC 等))
+	      (VP (VP (ADVP (AD 联名))
+		      (PP-DIR (P 向)
+			      (NP (DP (DT 全))
+				  (NP (NN 国))))
+		      (VP (VV 发出)
+			  (NP-OBJ (NN 通电))))
+		  (PU ，)
+		  (VP (VV 宣布)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 遵守)
+				      (NP-OBJ (NN 三民主义)))
+				  (PU ，)
+				  (VP (VV 服从)
+				      (NP-OBJ (NN 国民)
+					      (NN 政府)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  国民 政府 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

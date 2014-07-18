@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 授与 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="thing given"/>
+      <role argnum="2" argrole="entity arg1 is given to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 随後))
+	      (NP-PN-SBJ (NR 陈水扁))
+	      (VP (VP (VV 接受)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NP-APP (NN 立法)
+						      (NN 院长))
+					      (NP-PN (NR 王金平)))
+				      (VP (VV 授与)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (NP (NP (PU 「)
+				      (DNP (NP-PN (NR 中华)
+						  (NN 民国))
+					   (DEG 之))
+				      (NP (NN 玺))
+				      (PU 」))
+				  (PU 、)
+				  (NP (PU 「)
+				      (DNP (NP (NN 荣典))
+					   (DEG 之))
+				      (NP (NN 玺))
+				      (PU 」))
+				  (PU 、)
+				  (NP (PU 「)
+				      (DNP (NP (NN 总统))
+					   (DEG 之))
+				      (NP (NN 印))
+				      (PU 」))
+				  (CC 与)
+				  (NP (PU 「)
+				      (DNP (NP (NN 总统))
+					   (DEG 之))
+				      (NP (NN 章))
+				      (PU 」)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-LOC (P 於)
+			      (NP (NN 总统府)))
+		      (VP (VV 签署)
+			  (NP-OBJ (QP (OD 第一)
+				      (CLP (M 道)))
+				  (NP (NN 人事)
+				      (NN 命令)))))
+		  (PU ，)
+		  (VP (VP (VV 任命)
+			  (NP-PN-OBJ (NR 唐飞))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 担任)
+				  (NP-OBJ (NN 行政)
+					  (NN 院长)))))
+		      (PU ，)
+		      (VP (NP-PN-OBJ (NR 张俊雄))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 为)
+				  (NP-OBJ (NN 总统府)
+					  (NN 秘书长)))))
+		      (PU ，)
+		      (VP (NP-PN-OBJ (NR 庄铭耀))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 为)
+				  (NP-OBJ (NP-PN (NN 国安会))
+					  (NP (NN 秘书长))))))))) 
+	  </parse>
+	  <arg n="0">
+	  立法 院长 王金平 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

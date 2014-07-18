@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 学坏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person learning from bad example"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-2 (NP-SBJ (PN 我们))
+		    (VP (VP (DVP (VP (VV 没日没夜))
+				 (DEV 的))
+			    (VP (VP (VV 做)
+				    (NP-OBJ (NN 饼)))
+				(PU 、)
+				(VP (VV 做)
+				    (NP-OBJ (NN 买卖)))))
+			(PU ，)
+			(VP (VV 怕)
+			    (IP-OBJ (NP-SBJ (NN 孩子))
+				    (VP (VP (VPT (VV 顾)
+						 (AD 不)
+						 (VA 好)))
+					(PU ，)
+					(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 进)
+							(NP-OBJ (NN 国中))))
+					    (VP (VV 学坏)))))))) 
+	  </parse>
+	  <arg n="0">
+	  孩子 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 进 国中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

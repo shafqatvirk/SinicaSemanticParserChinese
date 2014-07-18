@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拾 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 picks up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 附庸风雅)))
+			(VP (ADVP (AD 也))
+			    (VP (VV 罢))))
+		    (PU ，)
+		    (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (NP-ADV (NN 真心))
+				    (VP (VV 喜爱))))
+			(VP (ADVP (AD 也))
+			    (VP (VV 罢)))))
+	    (PU ，)
+	    (IP-CND (NP-SBJ (DNP (NP-PN (NR 台湾))
+				 (DEG 的))
+			    (NP (NN 读者)))
+		    (VP (ADVP (CS 若))
+			(VP (VV 能)
+			    (VP (PP-PRP (P 因)
+					(NP-PN (NR 高行健)))
+				(VP (MSP 而)
+				    (VP (ADVP (AD 重))
+					(VP (VV 拾)
+					    (NP-OBJ (DNP (PP (P 对)
+							     (NP (ADJP (JJ 纯))
+								 (NP (NN 文学))))
+							 (DEG 的))
+						    (NP (NN 兴趣)
+							(CC 和)
+							(NN 信心))))))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 总))
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (ADJP (JJ 好))
+				    (NP (NN 事)))
+			    (VP (QP-PRD (CD 一)
+					(CLP (M 桩)))))))) 
+	</parse>
+	<arg n="0">
+	台湾 的 读者 
+	</arg>
+	<arg n="1">
+	对 纯 文学 的 兴趣 和 信心 
+	</arg>
+	<arg n="m" f="adv">
+	重 
+	</arg>
+	<arg n="m" f="prp">
+	因 高行健 
+	</arg>
+	<arg n="m" f="dis">
+	若 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

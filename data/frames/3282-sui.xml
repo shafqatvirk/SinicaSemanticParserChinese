@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing fulfilled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 古力特))
+	      (VP (VP (ADVP (AD 以前))
+		      (VP (VC 是)
+			  (VP (VP (VV 想)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 引进)
+					      (NP-OBJ (NN 球员)))))
+			      (CC 而)
+			      (VP (LCP-LOC (NP (NN 手))
+					   (LC 中))
+				  (VP (VE 无)
+				      (NP-OBJ (NN 钱)))))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 现在))
+		      (IP-ADV (NP (-NONE- *PRO*))
+			      (IP (VP (ADVP (AD 好不容易))
+				      (VP (VE 有)
+					  (NP-OBJ (NN 钱))))
+				  (SP 了)))
+		      (ADVP (AD 却))
+		      (ADVP (AD 也))
+		      (ADVP (AD 难))
+		      (VP (VV 遂)
+			  (NP-OBJ (NN 心愿)))))) 
+	  </parse>
+	  <arg n="0">
+	  古力特 	  
+	  </arg>
+	  <arg n="1">
+	  心愿 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  难 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  *PRO* 好不容易 有 钱 了 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

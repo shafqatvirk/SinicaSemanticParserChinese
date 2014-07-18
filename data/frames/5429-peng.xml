@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 碰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 touches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (PP-TMP (P 在)
+			(LCP (QP (NP-PN (NR 民国))
+				 (QP (OD 七十)
+				     (CLP (M 年))))
+			     (LC 以後)))
+		(VP (VV 开始)
+		    (VP (VV 碰)
+			(NP-OBJ (NP-PN (NR 雾社))
+				(NP (NN 事件))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	雾社 事件 
+	</arg>
+	<arg n="m" f="tmp">
+	
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NN 早年))
+	    (NP-TPC (NN 台湾史))
+	    (NP-SBJ (QP (CD 很多))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 不))
+		(VP (VV 敢)
+		    (VP (VV 碰))))) 
+	</parse>
+	<arg n="0">
+	很多 人 
+	</arg>
+	<arg n="1">
+	台湾史 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="tmp">
+	早年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 bumps into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 看)
+		    (NP-OBJ (PN 她))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 时常))
+			    (VP (VV 碰)
+				(DER 得)
+				(VP-EXT (VV 头破血流))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	头破血流 
+	</arg>
+	<arg n="m" f="adv">
+	时常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

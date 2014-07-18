@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保管 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="maintainer"/>
+    <role argnum="1" argrole="thing maintained"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 塞方))
+      (VP (BA 将)
+          (IP-OBJ (NP-SBJ (ADJP (JJ 重))
+                          (NP (NN 武器)))
+                  (VP (ADVP (AD 直接))
+                      (VP (VV 交给)
+                          (NP-OBJ (NP-PN (NR 联合国))
+                                  (ADJP (JJ 维和))
+                                  (NP (NN 部队)))
+                          (IP (NP-SBJ (-NONE- *PRO*))
+                              (VP (VV 保管)))))))))
+	</parse>
+	<arg n="1"> 重 武器 </arg>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

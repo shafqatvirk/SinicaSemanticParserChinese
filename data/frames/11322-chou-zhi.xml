@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抽脂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person from whom arg0 extracts fat"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 男士)))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (VP (VP (LB 被)
+			    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (NN 太太))
+					(VP (VV 逼)
+					    (AS 著)
+					    (NP-OBJ (-NONE- *T*-2))))))
+			(VP (MSP 去)
+			    (VP (VP (VV 割)
+				    (NP-OBJ (NN 双眼皮)))
+				(PU 、)
+				(VP (VV 抽脂)))))))) 
+	</parse>
+	<arg n="1">
+	许多 男士 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

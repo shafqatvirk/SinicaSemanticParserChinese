@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无情 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is not compassionate/ruthless to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-DIR (P 对)
+			    (NP (ADJP (JJ 进步))
+				(NP (NN 团队))))
+		    (VP (VA 无情)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	对 进步 团队 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 竞争))
+	    (VP (VA 无情)
+		(CC 又)
+		(VA 激烈))) 
+	</parse>
+	<arg n="0">
+	竞争 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

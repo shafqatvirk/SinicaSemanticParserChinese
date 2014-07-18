@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受益 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity which benefits"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 不少))
+		      (ADJP (JJ 发展中))
+		      (NP (NN 国家)))
+	      (VP (ADVP (AD 并))
+		  (ADVP (AD 未))
+		  (PP-DIR (P 从)
+			  (LCP (NP (NN 全球化)
+				   (NN 进程))
+			       (LC 中)))
+		  (VP (VV 受益)))) 
+	  </parse>
+	  <arg n="0">
+	  不少 发展中 国家 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 全球化 进程 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

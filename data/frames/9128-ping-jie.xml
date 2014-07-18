@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 凭藉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 relies on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP-SBJ (NP-SBJ (NN 台币))
+			      (VP (ADVP (AD 大幅))
+				  (VP (VV 升值)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 台湾))
+				      (VP (ADVP (AD 向来))
+					  (VP (VV 凭藉)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (IP-APP (NP-SBJ (NN 劳力))
+				  (VP (VV 密集)))
+			  (NP (NN 产业)
+			      (NN 型态)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 骤))
+			  (VP (VV 生)
+			      (NP-OBJ (NN 巨变))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  向来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

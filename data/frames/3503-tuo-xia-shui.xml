@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拖下水 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU 「)
+	      (IP (NP-SBJ (NN 韩圜))
+		  (VP (VV 贬值)))
+	      (PU 、)
+	      (IP (NP-SBJ (NP-PN (NR 韩国))
+			  (NP (NN 厂商)))
+		  (VP (PP-PRP (P 为了)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 抢)
+				      (NP-OBJ (NN 美金)))))
+		      (VP (MSP 而)
+			  (VP (PU 『)
+			      (VV 跳楼大拍卖)
+			      (PU 』)))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (NN 台商))
+			      (VP (ADVP (AD 也))
+				  (VP (VV 拖下水))))))
+	      (PU ，)
+	      (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  台商 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

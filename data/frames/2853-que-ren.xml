@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 确认 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing identified"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 村民)
+		      (NN 自治))
+	      (VP (ADVP (AD 进一步))
+		  (VP (VV 确认)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (PN 我们))
+					  (VP (VCD (VV 当家)
+						   (VV 作主))))
+				      (DEC 的))
+			      (NP (NN 权利)))))) 
+	  </parse>
+	  <arg n="0">
+	  村民 自治 
+	  </arg>
+	  <arg n="1">
+	  我们 当家 作主 的 权利 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NT 一九九四年))
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 科学家)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (ADVP (AD 实地))
+				   (VP (VV 勘察))))
+			   (LC 后))
+		  (VP (VV 确认)
+		      (IP-OBJ (NP-SBJ (PN 其))
+			      (VP (VC 为)
+				  (NP-PRD (ADJP (QP (NP (NN 世界))
+						    (QP (OD 第一)))
+						(ADJP (JJ 大)))
+					  (NP (NN 峡谷)))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 科学家 
+	  </arg>
+	  <arg n="1">
+	  其 为 世界 第一 大 峡谷 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 实地 勘察 后 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九四年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity identified"/>
+      <role argnum="2" argrole="thing entity identified to be"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九二年))
+	      (NP-PN-SBJ (NR 武汉))
+	      (VP (SB 被)
+		  (VP (VCP (VV 确认)
+			   (VC 为))
+		      (NP-OBJ (NP (NN 沿江))
+			      (NP (PP (P 对)
+				      (NP (NN 外)))
+				  (NP (NN 开放)))
+			      (NP (NN 城市)))))) 
+	  </parse>
+	  <arg n="1">
+	  武汉 
+	  </arg>
+	  <arg n="2">
+	  沿江 对 外 开放 城市 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九二年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

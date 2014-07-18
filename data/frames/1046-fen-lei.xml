@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分类 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="classifier"/>
+      <role argnum="1" argrole="thing classified"/>
+      <role argnum="2" argrole="classified by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *pro*))
+		  (VP (PP-MNR (P 按)
+			      (NP (NN 项目)
+				  (NN 行业)))
+		      (VP (VV 分类)))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  按 项目 行业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

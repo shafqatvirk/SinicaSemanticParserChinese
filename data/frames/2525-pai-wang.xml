@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 派往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people sent"/>
+      <role argnum="2" argrole="place sent to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 就))
+	      (PP-TMP (P 在)
+		      (DP (DP (DT 那))
+			  (QP (CD 一)
+			      (CLP (M 年)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 查瑞传))
+	      (VP (VP (SB 被)
+		      (VP (VV 派往)
+			  (NP-OBJ (NP-PN-APP (NR 英)
+					     (PU 、)
+					     (NR 美)
+					     (PU 、)
+					     (NR 法)
+					     (ETC 等))
+				  (NP (NN 国)))))
+		  (VP (VV 进行)
+		      (NP-OBJ (NN 学术)
+			      (NN 交流))))) 
+	  </parse>
+	  <arg n="1">
+	  查瑞传 
+	  </arg>
+	  <arg n="2">
+	  英 、 美 、 法 等 国 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 那 一 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

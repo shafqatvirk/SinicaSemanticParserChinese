@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赠与 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="giver"/>
+    <role argnum="1" argrole="thing given"/>
+    <role argnum="2" argrole="entity arg1 is given to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(QP (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NP-APP (NP-PN (NR 空总))
+						(NP (NN 同袍)))
+					(NP-PN (NR 张传忍)))
+				(VP (ADVP (AD 慨然))
+				    (VP (VV 赠与)
+					(NP-OBJ (-NONE- *T*-2)))))
+			    (DEC 的)))
+		    (DP (DT 全部))
+		    (NP (NN 积蓄)))
+	    (QP (CD 五千)
+		(CLP (M 元)))) 
+	</parse>
+	<arg n="0">
+	空总 同袍 张传忍 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	慨然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

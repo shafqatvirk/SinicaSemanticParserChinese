@@ -1,0 +1,123 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 列为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity listed"/>
+      <role argnum="2" argrole="entity arg1 is listed as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 到)
+		  (LCP (NP (NT 目前))
+		       (LC 为止)))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 省)))
+	      (VP (ADVP (AD 共))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 三十四)
+					  (CLP (M 个)))
+				      (NP (NN 市)
+					  (PU 、)
+					  (NN 县)))
+			      (VP (SB 被)
+				  (VP (VV 列为)
+				      (NP-OBJ (NP (NN 沿海)
+						  (NN 经济)
+						  (NN 开放))
+					      (NP (NN 市)
+						  (NN 县))))))))) 
+	  </parse>
+	  <arg n="1">
+	  三十四 个 市 、 县 
+	  </arg>
+	  <arg n="2">
+	  沿海 经济 开放 市 县 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (LB 被)
+				  (IP-OBJ (NP-PN-SBJ (NR 中国)
+						     (NN 国务院))
+					  (VP (VV 列为)
+					      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *pro*))
+								  (VP (ADVP (AD 重点))
+								      (VP (VV 开发)
+									  (NP-OBJ (-NONE- *T*-2)))))
+							      (DEC 的)))
+						      (QP (CD 四)
+							  (CLP (M 个)))
+						      (NP (NN 国际)
+							  (NN 深水)
+							  (NN 枢纽港)
+							  (NN 之一)))))))
+			  (DEC 的)))
+		  (NP-PN (NR 宁波港))) 
+	  </parse>
+	  <arg n="0">
+	  中国 国务院 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  *OP* *pro* 重点 开发 *T*-2 的 四 个 国际 深水 枢纽港 之一 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (NT 十月)
+				  (NT 一日))
+			  (VP (VV 列为)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (ADVP (AD 新))
+						  (VP (VV 增)
+						      (NP-OBJ (-NONE- *T*-1))))))
+				      (ADJP (JJ 法定))
+				      (NP (NN 假日))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  十月 一日 
+	  </arg>
+	  <arg n="2">
+	  *OP* *pro* 新 增 *T*-1 法定 假日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

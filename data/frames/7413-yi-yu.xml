@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 易於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 is easy for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-6 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-6))
+			(VP (VV 易於)
+			    (NP-OBJ (NN 投资))))
+		    (DEC 的)))
+	    (ADJP (JJ 定期)
+		  (JJ 定额))
+	    (NP (NN 基金))) 
+	</parse>
+	<arg n="0">
+	*T*-6 
+	</arg>
+	<arg n="1">
+	投资 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

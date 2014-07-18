@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 合用 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 is suitable for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 共同))
+		    (NP (NN 节目带)))
+	    (VP (ADVP (AD 不见得))
+		(VP (VV 合用)))) 
+	</parse>
+	<arg n="0">
+	共同 节目带 
+	</arg>
+	<arg n="m" f="adv">
+	不见得 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

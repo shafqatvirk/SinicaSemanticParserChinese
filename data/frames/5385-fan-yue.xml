@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 翻阅 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="reader"/>
+    <role argnum="1" argrole="thing arg0 reads"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 多)
+			 (CLP (M 年)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (PN 我))
+	    (VP (VV 翻阅)
+		(NP-OBJ (NP (PN 他))
+			(DNP (NP (NT 当时))
+			     (DEG 的))
+			(NP (NN 日记))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	他 当时 的 日记 
+	</arg>
+	<arg n="m" f="tmp">
+	多 年 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

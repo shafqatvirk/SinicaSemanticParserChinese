@@ -1,0 +1,147 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 忙 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing busy at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 工人))
+	      (VP (ADVP (AD 正))
+		  (VP (VV 忙)
+		      (AS 着)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 完成)
+				  (NP-OBJ (DNP (ADJP (JJ 最后))
+					       (DEG 的))
+					  (NP (NN 工程)))))))) 
+	  </parse>
+	  <arg n="0">
+	  工人 	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 完成 最后 的 工程 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (QP (CD 大量))
+			(NP (NN 外企)
+			    (NN 职工)))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (PP-LOC (P 在)
+						    (LCP (NP (NN 加工车))
+							 (LC 间)))
+					    (VP (VA 忙)
+						(DER 个)
+						(VP (ADVP (AD 不))
+						    (VP (VV 停))))))
+				    (DEC 的)))
+			    (NP (NN 蓝领)
+				(NN 工人))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 加工车 间 	  	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 她))
+		  (VP (VP (QP-TMP (DP (DT 每)
+				      (CLP (M 天)))
+				  (NP (NT 早上))
+				  (QP (CD 七)
+				      (CLP (M 点))))
+			  (ADVP (AD 就))
+			  (VP (VV 要)
+			      (VP (VP (VV 到)
+				      (NP-OBJ (NN 大棚)))
+				  (VP (VV 来)))))
+		      (PU ，)
+		      (VP (ADVP (AD 一直))
+			  (VP (VV 要)
+			      (VP (VA 忙)
+				  (PP-TMP (P 到)
+					  (NP (NT 晚上)
+					      (NT 六点)))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 晚上 六点 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而且))
+	      (NP-SBJ (NP-APP (PN 我们))
+		      (DP (DT 这些))
+		      (NP (NN 经理人)))
+	      (VP (VP (ADVP (AD 很))
+		      (VP (VA 怪)))
+		  (PU ，)
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 不))
+				  (VP (BA 把)
+				      (IP-OBJ (NP-SBJ (PN 自己))
+					      (VP (VV 忙)
+						  (PP (P 到)
+						      (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (ADVP (AD 很))
+							      (VP (VA 累))))))))))
+		      (ADVP (AD 就))
+		      (VP (VV 会)
+			  (VP (VV 生病)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="0">
+	  自己 
+	  </arg>
+	  <arg n="m" f="adv">
+	  到 *PRO* 很 累 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

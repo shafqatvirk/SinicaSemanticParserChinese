@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 依恃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 relies on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (ADVP (AD 同样))
+			    (VP (VV 属於)
+				(NP-OBJ (ADJP (JJ 可携带式))
+					(NP (NN 家电)
+					    (NN 产品)))))
+			(PU ，)
+			(VP (ADVP (AD 同样))
+			    (VP (VV 依恃)
+				(NP-OBJ (NP (ADJP (JJ 光电))
+					    (ADJP (JJ 薄))
+					    (NP (NN 膜)))
+					(NP (NN 技术)))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 铼德))
+	    (VP (VP (PP-TMP (P 从)
+			    (LCP (QP (QP (CD 一)
+					 (CLP (M 年)))
+				     (QP (CD 半)))
+				 (LC 前)))
+		    (VP (VP (VV 转投资))
+			(VP (VV 生产)
+			    (NP-OBJ (NN OLED)
+				    (PRN (PU （)
+					 (NP (NP (ADJP (JJ 小))
+						 (NP (NN 尺寸)))
+					     (NP (ADJP (JJ 有机))
+						 (CP (WHNP-1 (-NONE- *OP*))
+						     (IP (NP-SBJ (-NONE- *T*-1))
+							 (VP (VV 发光))))
+						 (NP (NN 二极体)))
+					     (NP (NN 显示器)))
+					 (PU ）))))))
+		(PU ，)
+		(VP (NP-TMP (NT 目前))
+		    (ADVP (AD 已))
+		    (VP (VC 是)
+			(NP-PRD (NP (NN 全球)
+				    (NN OLED))
+				(ADJP (QP (OD 第一))
+				      (ADJP (JJ 大)))
+				(NP (NN 厂))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	光电 薄 膜 技术 
+	</arg>
+	<arg n="m" f="adv">
+	同样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

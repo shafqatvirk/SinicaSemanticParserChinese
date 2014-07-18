@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 年产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing produced annually"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 形成)
+		  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 年产)
+				      (NP-OBJ (NN 羽绒)
+					      (NN 制品))
+				      (QP-EXT (CD 五千多万)
+					      (CLP (M 件)))))
+			  (NP (NN 生产)
+			      (NN 能力))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  羽绒 制品 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  五千多万 件 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

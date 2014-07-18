@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 解除 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 安理会))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 应)
+		      (VP (VP (VV 履行)
+			      (NP-OBJ (NN 承诺)))
+			  (PU ，)
+			  (VP (VV 解除)
+			      (NP-OBJ (PP (P 对)
+					  (NP-PN (NR 伊)))
+				      (NP (NN 制裁)))))))) 
+	  </parse>
+	  <arg n="0">
+	  安理会 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  对 伊 制裁 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VSB (VV 流血)
+					       (VV 输出))))
+				  (CC 或)
+				  (IP (NP-SBJ (NN 订单))
+				      (VP (VV 流失))))
+			      (DEC 的))
+		      (NP (NN 忧虑)))
+	      (VP (ADVP (AD 才))
+		  (VP (VV 能)
+		      (VP (ADVP (AD 真正))
+			  (VP (VV 解除)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 流血 输出 或 订单 流失 的 忧虑 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  真正 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

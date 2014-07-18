@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 穿过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 passes through"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 利用)
+			(NP-OBJ (DNP (NP (NN 相机)
+					 (NN 慢速)
+					 (NN 快门))
+				     (DEG 的))
+				(NP (NN 技巧)
+				    (NN 原理)))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 夏阳))
+	    (VP (VV 让)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 熙来攘往)))
+				(DEC 的)))
+			(NP (NN 人群)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (DVP (VP (VA 模糊)
+				 (PU ，)
+				 (VA 飘倏))
+			     (DEV 地))
+			(VP (VV 穿过)
+			    (LCP-OBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+					     (CP (IP (NP-SBJ (-NONE- *T*-2))
+						     (VP (ADVP (AD 极端))
+							 (VP (VA 写实))))
+						 (DEC 的)))
+					 (NP-PN (NR 纽约))
+					 (NP (NN 市街)))
+				     (LC 里))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 极端 写实 的 纽约 市街 里 
+	</arg>
+	<arg n="m" f="adv">
+	模糊 ， 飘倏 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

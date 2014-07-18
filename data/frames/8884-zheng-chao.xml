@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 争吵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 fights over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 学生)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 戏))
+			       (LC 中)))
+		  (VP (VV 梦到)
+		      (IP-OBJ (NP-SBJ (QP (CD 两)
+					  (CLP (M 个)))
+				      (NP (NN 木偶)))
+			      (VP (VP (ADVP (AD 也))
+				      (ADVP (AD 在))
+				      (VP (VV 争吵)
+					  (NP-OBJ (DNP (NP (PN 同样))
+						       (DEG 的))
+						  (NP (NN 事)))))
+				  (PU ，)
+				  (VP (VV 吵)
+				      (DER 得)
+				      (IP-EXT (NP-SBJ (QP-APP (PN 他))
+						      (DP (DT 这)
+							  (CLP (M 个)))
+						      (NP (NN 旁观者)))
+					      (VP (VP (ADVP (AD 不))
+						      (VP (VV 能)
+							  (VP (VV 睡))))
+						  (PU ，)
+						  (VP (VRD (VV 站)
+							   (VV 出来)))
+						  (VP (ADVP (AD 大))
+						      (VP (VV 叫)
+							  (IP-OBJ (QP (CD 一)
+								      (CLP (M 声)))
+								  (PU ：)
+								  (IP (NP-SBJ (-NONE- *pro*))
+								      (VP (ADVP (AD 不))
+									  (VP (VV 要)
+									      (VP (VV 吵))))
+								      (SP 了))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  两 个 木偶 
+	  </arg>
+	  <arg n="1">
+	  同样 的 事 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 磨蹭 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (ADVP (AD 不))
+				    (VP (VV 习惯)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VP (VV 拿)
+							(NP-OBJ (NN 笔)))
+						    (VP (VV 写)
+							(NP-OBJ (NN 文章))))))))
+			    (DEC 的)))
+		    (NP (NN 乡民)))
+	    (PU ，)
+	    (VP (NP-TPC (QP (CD 一)
+			    (CLP (M 篇)))
+			(DNP (NP (QP (CD 几百))
+				 (NP (NN 字)))
+			     (DEC 的))
+			(NP (NN 稿子)))
+		(VP (VV 可能)
+		    (VP (VV 得)
+			(VP (VV 磨蹭)
+			    (NP-EXT (QP (QP (CD 三)
+					    (CLP (-NONE- *RNR*-3)))
+					(PU 、)
+					(QP (CD 五)
+					    (CLP-3 (M 个))))
+				    (NP (NN 小时)))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 不 习惯 *PRO* 拿 笔 写 文章 的 乡民 
+	</arg>
+	<arg n="m" f="ext">
+	三 *RNR*-3 、 五 个 小时 
+	</arg>
+	<arg n="m" f="tpc">
+	一 篇 几百 字 的 稿子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

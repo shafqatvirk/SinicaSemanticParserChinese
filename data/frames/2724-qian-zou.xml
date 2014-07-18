@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遣走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people sent away"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 入境)
+			     (NN 事务处))
+		      (NP (NN 处长)))
+	      (VP (VV 需要)
+		  (VP (VP (VE 有)
+			  (NP-OBJ (DNP (ADJP (JJ 法定))
+				       (DEG 的))
+				  (NP (NN 权力))))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 遣走)
+			      (NP-OBJ (DP (DT 那些))
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (LCP-TMP (IP (NP-SBJ (NN 居留权)
+									   (NN 资格))
+								   (VP (ADVP (AD 未))
+								       (VP (VV 获)
+									   (NP-OBJ (ADJP (JJ 正式))
+										   (NP (NN 核实))))))
+							       (LC 之前))
+						      (ADVP (AD 已))
+						      (VP (VV 来)
+							  (NP-PN-OBJ (NR 港)))))
+					      (DEC 的)))
+				      (NP (NN 人士)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  那些 *OP* *T*-1 居留权 资格 未 获 正式 核实 之前 已 来 港 的 人士 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

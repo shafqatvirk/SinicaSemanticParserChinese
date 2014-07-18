@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 囿於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is constrained by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-PRP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 囿於)
+			(IP-OBJ (IP (NP-SBJ (NN 市场))
+				    (VP (ADVP (AD 太))
+					(VP (VA 小))))
+				(PU 、)
+				(IP (NP-SBJ (NN 英文)
+					    (NN 编采)
+					    (NN 人才))
+				    (VP (ADVP (AD 难))
+					(VP (VV 找)))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 少))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (VV 想)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 办)
+					    (NP-OBJ (NN 英文报))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	市场 太 小 、 英文 编采 人才 难 找 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 联通 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="connector"/>
+      <role argnum="1" argrole="entities connected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国)
+			 (NN 铁道部))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 利用)
+			  (NP-OBJ (NP-PN (NN 世界)
+					 (NN 银行))
+				  (NP (NN 铁路)
+				      (NN 项目)
+				      (NN 贷款))))
+		      (VP (VV 建设)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 联通)
+						  (NP-OBJ (DP (DT 全))
+							  (NP (NN 国)))))
+					  (DEC 的)))
+				  (NP (NN 铁路))
+				  (ADJP (JJ 专用))
+				  (NP (NN 通讯)
+				      (NN 网络))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  全 国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

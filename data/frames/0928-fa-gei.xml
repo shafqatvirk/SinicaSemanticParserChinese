@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="provider"/>
+      <role argnum="1" argrole="thing provided"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (DP (DT 任何))
+	      (CP (WHNP-2 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-2))
+			  (VP (VP (PP-LGS (P 由)
+					  (NP (PU 「)
+					      (NP (DNP (ADJP (JJ 指明))
+						       (DEG 的))
+						  (NP (NN 人)))
+					      (PU 」)))
+				  (VP (VV 发给)
+				      (NP-OBJ (NN 囚犯))))
+			      (CC 或)
+			      (VP (PP-LGS (P 由)
+					  (NP (NN 囚犯)))
+				  (VP (VV 致予)
+				      (NP-OBJ (PU 「)
+					      (NP (DNP (ADJP (JJ 指明))
+						       (DEG 的))
+						  (NP (NN 人)))
+					      (PU 」))))))
+		      (DEC 的)))
+	      (NP (NN 信件))) 
+	  </parse>
+	  <arg n="0">
+	  由 「 指明 的 人 」 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="2">
+	  囚犯 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 核定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="decision maker"/>
+      <role argnum="1" argrole="thing decided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国)
+			 (NN 人民)
+			 (NN 银行))
+	      (VP (VV 授权)
+		  (NP-PN-OBJ (NN 国家)
+			     (NN 外汇)
+			     (NN 管理局))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 核定)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 中资)
+						      (NN 企业))
+					      (VP (VV 可)
+						  (VP (VV 保留)
+						      (NP-OBJ (NN 外汇))
+						      (NP-EXT (-NONE- *T*-1)))))
+					  (DEC 的)))
+				  (ADJP (JJ 最高))
+				  (NP (NN 金额))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* 中资 企业 可 保留 外汇 *T*-1 的 最高 金额 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="collaborators"/>
+      <role argnum="1" argrole="project, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+			   (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				   (VP (VP (PP-LGS (P 由)
+						   (NP (NP-PN (NN 教育署))
+						       (CC 及)
+						       (NP (QP (CD 两)
+							       (CLP (M 间)))
+							   (NP (NN 传播)
+							       (NN 机构)))))
+					   (VP (VV 合办)
+					       (NP-OBJ (-NONE- *-2))))
+				       (VP (PP-MNR (P 以)
+						   (IP (PU 「)
+						       (IP (NP-SBJ (-NONE- *pro*))
+							   (VP (VV 敬)
+							       (NP-OBJ (NN 师))))
+						       (IP (NP-SBJ (-NONE- *pro*))
+							   (VP (VV 爱)
+							       (NP-OBJ (NN 生))))
+						       (PU 」)))
+					   (VP (VV 为)
+					       (NP-OBJ (NN 主题))))))
+			       (DEC 的)))
+		       (NP (NN 剧本)
+			   (NN 创作))
+		       (NP (NN 比赛)))
+		   (LC 中)) 
+	  </parse>
+	  <arg n="0">
+	  由 教育署 及 两 间 传播 机构 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

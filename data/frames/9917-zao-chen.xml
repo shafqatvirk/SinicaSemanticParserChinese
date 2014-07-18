@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 凿沉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 scuttles"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 那))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (IP-ADV (LCP-TMP (NP (NP-PN (NR 中)
+								      (NR 法))
+							       (NP (NN 战争)))
+							   (LC 时))
+						  (PU ，)
+						  (NP-PN-SBJ (NR 刘铭传))
+						  (VP (PP-PRP (P 为)
+							      (IP (NP-SBJ (-NONE- *PRO*))
+								  (VP (VV 阻挠)
+								      (NP-OBJ (NN 法军))
+								      (IP (VP (ADVP (AD 顺利))
+									      (VP (VV 上岸)))))))
+						      (PU ，)
+						      (VP (VV 凿沉)
+							  (AS 了)
+							  (NP-OBJ (QP (CD 数十)
+								      (CLP (M 艘)))
+								  (NP (NN 戎克船))))))
+					  (VP (MSP 而)
+					      (VP (VE 有)
+						  (NP-OBJ (-NONE- *T*-1))))))
+				  (DEC 的)))
+			  (NP (NN 典故))))) 
+	  </parse>
+	  <arg n="0">
+	  刘铭传 
+	  </arg>
+	  <arg n="1">
+	  数十 艘 戎克船 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 阻挠 法军 顺利 上岸 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  中 法 战争 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

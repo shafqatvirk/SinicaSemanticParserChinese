@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 鹤立鸡群 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使)
+		  (NP-OBJ (PN 她))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (NP (NN 世界))
+					   (ADJP (JJ 无数))
+					   (NP (NN 火山)
+					       (NN 遗迹)))
+				       (LC 中)))
+			  (PU ，)
+			  (ADVP (AD 如))
+			  (VP (VV 鹤立鸡群)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 世界 无数 火山 遗迹 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

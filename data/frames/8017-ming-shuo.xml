@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 明说 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 says openly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 从)
+				      (LCP (NP (DP (DT 这些))
+					       (CP (WHNP-3 (-NONE- *OP*))
+						   (CP (IP (NP-SBJ (PN 他们))
+							   (VP (ADVP (AD 无法))
+							       (VP (VV 明说)
+								   (NP-OBJ (-NONE- *T*-3)))))
+						       (DEC 的)))
+					       (NP (NN 宇宙观)))
+					   (LC 里)))
+			      (VP (VRD (VV 看)
+				       (VV 出去)))))
+		  (PU ，)
+		  (VP (VV 会)
+		      (VP (VV 看到)
+			  (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-4))
+					      (VP (ADVP (AD 很))
+						  (ADVP (AD 不))
+						  (VP (VA 一样))))
+					  (DEC 的)))
+				  (NP (NN 意义)
+				      (CC 与)
+				      (NN 美感)
+				      (NN 价值))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

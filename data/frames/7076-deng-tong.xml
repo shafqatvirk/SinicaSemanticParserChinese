@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 等同 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities equal to each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (NN 话) )
+		    (VP (ADVP (CS 虽))
+			(VP (VV 如此))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 逛)
+			(NP-OBJ (NN 公园) )))
+	    (VP (ADVP (AD 到底))
+		(ADVP (AD 并))
+		(ADVP (AD 不))
+		(VP (VV 等同)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VCD (VV 持续)
+						 (VV 渐进))))
+				    (DEC 的)))
+			    (NP (NN 健身房)
+				(NN 运动) ))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 逛 公园 
+	</arg>
+	<arg n="0" f="crd">
+	*OP* *T*-1 持续 渐进 的 健身房 运动 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<arg n="m" f="adv">
+	到底 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	话 虽 如此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

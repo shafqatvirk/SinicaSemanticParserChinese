@@ -1,0 +1,163 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 保持 </id>
+    <frameset id="f1" edef="maintain">
+      <role argnum="0" argrole="maintainer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="status,momentum,level"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 今年))
+		      (NP (NT-SHORT 一)
+			  (CC 至)
+			  (NT 二月份)))
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (PP (P 对)
+			  (NP (NN 外)))
+		      (NP (NN 贸易)
+			  (NN 进出口)))
+	      (VP (VV 继续)
+		  (VP (VV 保持)
+		      (NP-OBJ (NN 增长)
+			      (NN 势头))))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  今年 一 至 二月份 	  	  
+	  </arg>
+	  <arg n="1">
+	  中国 对 外 贸易 进出口 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  增长 势头 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 贵州省))
+		      (NP (NN 粮食))
+		      (ADJP (JJ 总))
+		      (NP (NN 产量)))
+	      (VP (VP (ADVP (AD 已))
+		      (QP-ADV (ADVP (AD 连续))
+			      (QP (CD 三)
+				  (CLP (M 年))))
+		      (VP (VV 保持)
+			  (PP (P 在)
+			      (LCP (QP (CD 一千万)
+				       (CLP (M 吨)))
+				   (LC 以上)))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 今年))
+		      (VP (VV 达到)
+			  (QP-OBJ (CD 一千一百万)
+				  (CLP (M 吨))))))) 
+	  </parse>
+	  <arg n="1">
+	  贵州省 粮食 总 产量 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  连续 三 年 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  一千万 吨 以上 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 相信)
+		  (IP-OBJ (NP-SBJ (DP (DT 这)
+				      (CLP (M 种)))
+				  (NP (NN 关系)))
+			  (VP (PP-TMP (P 在)
+				      (LCP (NP (NP (NT 今后))
+					       (CP (WHNP-1 (-NONE- *OP*))
+						   (CP (IP (NP-SBJ (-NONE- *T*-1))
+							   (VP (ADVP (AD 相当))
+							       (VP (VA 长))))
+						       (DEC 的)))
+					       (NP (NN 时期)))
+					   (LC 内)))
+			      (VP (VV 会)
+				  (VP (VV 继续)
+				      (VP (VV 保持)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  这 种 关系 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="maintainer"/>
+      <role argnum="1" argrole="proposition"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (VV 计划)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 通过)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 保持)
+					      (IP-OBJ (NP-SBJ (NN 投资)
+							      (PU 、)
+							      (NN 消费)
+							      (CC 和)
+							      (NN 出口))
+						      (VP (ADVP (AD 适度))
+							  (ADVP (AD 稳定))
+							  (VP (VV 增长)))))))
+			      (PU ，)
+			      (PP-DIR (P 对)
+				      (NP (NN 经济)
+					  (NN 成长)))
+			      (VP (VV 形成)
+				  (NP-OBJ (ADJP (JJ 有效))
+					  (NP (NN 拉力)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	    
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  投资 、 消费 和 出口 适度 稳定 增长 	  	    
+	  </arg>
+	</example>
+      </frame> 
+    </frameset>
+  </verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 折磨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="person arg0 tortures"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="io" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 黄春明))
+		  (VP (ADVP (AD 甚至))
+		      (VP (VPT (VV 舍)
+			       (AD 不)
+			       (VV 得))
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 给)
+				      (NP-IO (DNP (LCP (NP (DNP (NP (PN 他))
+								(DEG 的))
+							   (NP (NN 笔)))
+						       (LC 下))
+						  (DEG 的))
+					     (ADJP (JJ 老))
+					     (NP (NN 人)))
+				      (NP-OBJ (DNP (ADJP (JJ 纯然))
+						   (DEG 的))
+					      (NP (NN 痛苦)
+						  (NN 折磨)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  他 的 笔 下 的 老 人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

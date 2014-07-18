@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 破坏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing sabotaged"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 企图)
+	      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 破坏)
+			      (NP-OBJ (-NONE- *RNR*-3)))
+			  (CC 和)
+			  (VP (VV 推迟)
+			      (NP-OBJ-3 (CP-APP (IP (NP-PN-SBJ (NR 古巴))
+						    (VP (VV 恢复)
+							(NP-OBJ (NN 经济))))
+						(DEC 的))
+					(NP (NN 进程))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-3 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-PN-SBJ (NR 美国))
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (DP (DT 此))
+					   (NP (NN 问题)))
+				       (LC 上)))
+			  (PP-DIR (P 对)
+				  (NP-PN (NR 朝鲜)))
+			  (VP (VV 施加)
+			      (NP-OBJ (NN 压力)))))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 会)
+		      (VP (VV 破坏)
+			  (NP-OBJ (NN 和平)
+				  (CC 与)
+				  (NN 稳定)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 在 此 问题 上 对 朝鲜 施加 压力 
+	  </arg>
+	  <arg n="1">
+	  和平 与 稳定 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

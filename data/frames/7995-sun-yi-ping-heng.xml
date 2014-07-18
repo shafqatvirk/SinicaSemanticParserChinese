@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 损益平衡 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (NN 人力)
+			(NN 银行)
+			(NN 指标)
+			(PRN (PU ——)
+			     (NP-PN (NN 104)
+				    (NN 人力)
+				    (NN 银行))))
+		(VP (PP-TMP (P 在)
+			    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 成立)
+					 (QP-EXT (QP (CD 一)
+						     (CLP (M 年)))
+						 (QP (CD 半)))))
+				 (LC 後)))
+		    (ADVP (AD 就))
+		    (ADVP (AD 已经))
+		    (VP (VV 损益平衡)))) 
+	</parse>
+	<arg n="0">
+	人力 银行 指标 —— 104 人力 银行 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 成立 一 年 半 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

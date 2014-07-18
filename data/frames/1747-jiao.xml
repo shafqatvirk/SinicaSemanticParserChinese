@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交 </id>
+    <frameset id="f1" edef="send, pay, submit">
+      <role argnum="0" argrole="sender, payer"/>
+      <role argnum="1" argrole="thing sent, paid"/>
+      <role argnum="2" argrole="receiver, payee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 信众))
+			   (VP (VV 加入)
+			       (NP-OBJ (NN 合唱))))
+		       (LC 时))
+	      (PU ，)
+	      (NP-SBJ (NN 演出者))
+	      (VP (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 灯))
+			      (VP (VSB (VV 传)
+				       (VV 交))
+				  (NP-OBJ (DP (DT 各))
+					  (NP (NN 人))))))
+		  (PU ，)
+		  (VP (PP-BNF (P 为)
+			      (NP (PN 他们)))
+		      (VP (VV 带来)
+			  (NP-OBJ (NN 好运)
+				  (CC 与)
+				  (NN 幸福)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  演出者 
+	  </arg>
+	  <arg n="1">
+	  灯 
+	  </arg>
+	  <arg n="2">
+	  各 人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  信众 加入 合唱 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="make (friends)">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-PRP (P 为)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 适应)
+						      (NP-OBJ (NP (NP (ADJP (JJ 新))
+								      (NP (NN 技术)))
+								  (NP (NN 发展)))
+							      (CC 和)
+							      (NP (NN 就业)
+								  (NN 要求))))))
+				      (VP (MSP 而)
+					  (VP (ADVP (AD 紧张))
+					      (VP (VV 工作)
+						  (CC 或)
+						  (VV 学习))))))
+			      (DEC 的)))
+		      (NP (NN 年轻人)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 无暇)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 谈恋爱))
+				  (PU 、)
+				  (VP (VV 交)
+				      (NP-OBJ (NN 朋友)))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  朋友 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

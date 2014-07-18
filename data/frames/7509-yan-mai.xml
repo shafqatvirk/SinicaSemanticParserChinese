@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掩埋 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 buries"/>
+    <role argnum="2" argrole="thing arg1 is buried in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可能)
+		(VP (ADVP (AD 也))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 造成)
+						(IP-OBJ (NP-SBJ (DP (DT 全))
+								(NP (NN 村)))
+							(VP (LB 被)
+							    (CP-OBJ (WHNP-3 (-NONE- *OP*))
+								    (IP (NP-SBJ (NN 土石))
+									(VP (VV 掩埋)
+									    (NP-OBJ (-NONE- *T*-3)))))))))
+					(DEC 的)))
+				(NP (NN 原因)
+				    (NN 之一))))))) 
+	</parse>
+	<arg n="1">
+	全 村 
+	</arg>
+	<arg n="2">
+	土石 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

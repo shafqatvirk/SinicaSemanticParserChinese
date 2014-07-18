@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 听 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="listener"/>
+      <role argnum="1" argrole="entity listened to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 需要)
+		      (VP (VV 听)
+			  (NP-OBJ (DNP (NP (NN 球员))
+				       (DEG 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  球员 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 传销))
+		  (VP (VV 停)
+		      (PU 、)
+		      (VV 看)
+		      (PU 、)
+		      (VV 听))) 
+	  </parse>
+	  <arg n="1">
+	  传销 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

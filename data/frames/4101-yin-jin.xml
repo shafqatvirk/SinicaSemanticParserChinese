@@ -1,0 +1,165 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 引进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity imported"/>
+      <role argnum="2" argrole="location arg1 is imported from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 制定)
+	      (AS 了)
+	      (NP-OBJ (IP-APP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 引进)
+				      (NP-OBJ (NN 外资))))
+			      (PU 、)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 加强)
+				      (NP-OBJ (ADJP (JJ 横向))
+					      (NP (NN 经济)
+						  (NN 联合)))))
+			      (CC 和)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-DIR (P 对)
+					      (NP (NN 外)))
+				      (VP (VV 下放)
+					  (NP-OBJ (NN 权))))))
+		      (QP (CD 三)
+			  (CLP (M 个)))
+		      (NP (NN 文件)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  外资 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VP (PP-DIR (P 从)
+			      (NP (NP (NN 世界))
+				  (DP (DT 各))
+				  (NP (NN 国))))
+		      (VP (VV 引进)
+			  (NP-OBJ (NP (ADJP (JJ 新))
+				      (NP (NN 技术)))
+				  (CC 和)
+				  (NP (ADJP (JJ 先进))
+				      (NP (NN 设备))))))
+		  (PU ，)
+		  (VP (ADVP (AD 大量))
+		      (VP (VV 采用)
+			  (NP-OBJ (NP (DP (DT 本))
+				      (NP (NN 国)))
+				  (ADJP (JJ 最新))
+				  (NP (NN 科研)
+				      (NN 成果)))))
+		  (PU ，)
+		  (VP (VV 建成)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VA 长)
+					      (QP-EXT (CD 六千五百)
+						      (CLP (M 米)))))
+				      (DEC 的)))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (NP-PN-LOC (NR 亚洲))
+					      (ADVP (AD 最))
+					      (VP (VA 长))))
+				      (DEC 的)))
+			      (NP (NN 矿山))
+			      (ADJP (JJ 主))
+			      (NP (NN 斜坡)
+				  (NN 隧道)))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  新 技术 和 先进 设备 
+	  </arg>
+	  <arg n="2">
+	  从 世界 各 国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 引进)
+		      (NP-OBJ (DP (DT 各)
+				  (CLP (M 种)))
+			      (ADJP (JJ 独资)
+				    (PU 、)
+				    (JJ 合资))
+			      (NP (NN 项目)))
+		      (QP-EXT (CD 一千二百多)
+			      (CLP (M 个)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  各 种 独资 、 合资 项目 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一千二百多 个 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VE 有)
+	      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (PP-DIR (P 从)
+					      (NP (NN 国外)))
+				      (VP (VV 引进))))
+			      (DEC 的)))
+		      (ADJP (JJ 新))
+		      (NP (NN 品种)))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  从 国外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

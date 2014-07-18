@@ -1,0 +1,129 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 在意 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is concerned with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (ADVP (AD 最))
+					(VP (VV 在意)
+					    (NP-OBJ (NP (PN 自己)
+							(CC 和)
+							(PN 他人))
+						    (NP (NN 身材)
+							(NN 比例))))))
+				(DEC 的)))
+			(NP (NN 年龄层)))
+		(PU ，)
+		(VP (ADVP (AD 竟))
+		    (VP (VC 是)
+			(NP-PRD (DNP (LCP (QP (CD 六十)
+					      (CLP (M 岁)))
+					  (LC 以上))
+				     (DEG 的))
+				(NP (NN 男性)))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	自己 和 他人 身材 比例 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (NN 医检所))
+		    (VP (VV 毁)
+			(AS 了)))
+	    (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 不))
+		(VP (VV 在意)))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	医检所 毁 了 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VV 得到)
+			     (NP-OBJ (NP-APP (NN 国家)
+					     (NN 文艺奖))
+				     (ADJP (JJ 这样))
+				     (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (-NONE- *T*-1))
+						 (VP (VV 肯定)
+						     (NP-OBJ (NN 一生)
+							     (NN 成就))))
+					     (DEC 的)))
+				     (NP (NN 大奖)))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VCD (VA 温厚)
+					 (VA 豁达))))
+			    (DEC 的)))
+		    (NP-PN (NR 夏阳)))
+	    (VP (ADVP (AD 并))
+		(ADVP (AD 不))
+		(ADVP (AD 十分))
+		(VP (VV 在意)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 温厚 豁达 的 夏阳 
+	</arg>
+	<arg n="m" f="adv">
+	十分 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 得到 国家 文艺奖 这样 *OP* *T*-1 肯定 一生 成就 的 大奖 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 碰到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity run into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 常昊)
+			 (CC 和)
+			 (NR 周鹤洋))
+	      (VP (NP-TMP (NT 今天))
+		  (ADVP (AD 分别))
+		  (VP (VV 碰到)
+		      (AS 了)
+		      (NP-OBJ (NP (NP-APP (NP-PN (NR 韩国))
+					  (NP (NN 新秀)))
+				  (NP-PN (NR 睦镇硕))
+				  (QP (CD 四)
+				      (CLP (M 段))))
+			      (CC 和)
+			      (NP (NP-APP (NP-PN (NR 日本))
+					  (NP (NN 名将)))
+				  (NP-PN (NR 彦坂直人))
+				  (QP (CD 九)
+				      (CLP (M 段)))))))) 
+	  </parse>
+	  <arg n="0">
+	  常昊 和 周鹤洋 
+	  </arg>
+	  <arg n="1">
+	  韩国 新秀 睦镇硕 四 段 和 日本 名将 彦坂直人 九 段 
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

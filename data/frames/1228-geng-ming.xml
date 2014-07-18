@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 更名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="original name"/>
+      <role argnum="3" argrole="new name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 本)
+			  (CLP (M 次)))
+		      (NP (NN 大会)))
+	      (VP (PP-LGS (P 由)
+			  (NP (DNP (DP (DT 前)
+				       (QP (CD 两)
+					   (CLP (M 届))))
+				   (DEG 的))
+			      (NP-TTL (PU “)
+				      (NR 乌鲁木齐)
+				      (NN 边境)
+				      (NN 地方)
+				      (NN 贸易)
+				      (NN 洽谈会)
+				      (PU ”))))
+		  (VP (VRD (VV 更名)
+			   (VV 为))
+		      (NP-TTL-OBJ (PU “)
+				  (NP-PN (NR 乌鲁木齐))
+				  (NP (PP (P 对)
+					  (NP (NN 外)))
+				      (NP (NN 经济)
+					  (NN 贸易)))
+				  (NP (NN 洽谈会))
+				  (PU ”))))) 
+	  </parse>
+	  <arg n="1">
+	  本 次 大会 
+	  </arg>
+	  <arg n="2">
+	  由 前 两 届 的 “ 乌鲁木齐 边境 地方 贸易 洽谈会 ” 
+	  </arg>
+	  <arg n="3" f="into">
+	  “ 乌鲁木齐 对 外 经济 贸易 洽谈会 ” 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

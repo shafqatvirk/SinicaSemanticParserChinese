@@ -1,0 +1,122 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 载明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing included"/>
+      <role argnum="2" argrole="location arg1 is included"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 事实上))
+	      (PU ，)
+	      (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 避免)
+			      (NP-OBJ (IP-APP (IP (NP-SBJ (NN 直销商))
+						  (VP (VP (ADVP (AD 不当))
+							  (VP (VV 囤货)))
+						      (VP (MSP 来)
+							  (VP (VV 假造)
+							      (NP-OBJ (ADJP (PU 「)
+									    (JJ 灌水)
+									    (PU 」))
+								      (NP (NN 业绩)))))))
+					      (PU ，)
+					      (CC 或是)
+					      (IP (NP-SBJ (PN 自己))
+						  (VP (VP (VP (VV 当起)
+							      (NP-OBJ (NN 大盘商)))
+							  (VP-PRP (VV 赚取)
+								  (NP-OBJ (NN 差价))))
+						      (PU ，)
+						      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+								  (VP (VPT (VV 卖)
+									   (AD 不)
+									   (VV 完))))
+							  (ADVP (AD 再))
+							  (VP (BA 把)
+							      (IP-OBJ (NP-SBJ (NN 货))
+								      (VP (VRD (PU 「)
+									       (VV 倒)
+									       (PU 」)
+									       (VV 回))
+									  (NP-OBJ (NN 公司))))))))
+					      (ETC 等))
+				      (NP (NN 困扰))))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 正规)))
+			      (DEC 的)))
+		      (NP (NN 传销)
+			  (NN 公司)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 会)
+		      (VP (VP (PP-LOC (P 在)
+				      (LCP (NP (NN 营业)
+					       (NN 守则))
+					   (LC 中)))
+			      (VP (VV 载明)
+				  (NP-OBJ (DNP (NP (NP-APP (ADVP (AD 如))
+							   (NP (PU 「)
+							       (QP (CD 百分之七十))
+							       (NP (NN 销货)
+								   (NN 原则))
+							       (PU 」)))
+						   (NP (NN 之类)))
+					       (DEG 的))
+					  (NP (NN 规定)))))
+			  (PU ，)
+			  (VP (VV 要)
+			      (NP-OBJ (NN 传销商))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+						   (VP (BA 将)
+						       (IP-OBJ (QP-SBJ (DNP (NP (NN 进货量))
+									    (DEG 的))
+								       (QP (CD 百分之七十)))
+							       (VP (VRD (VV 去化)
+									(VV 完毕))))))
+					       (LC 後))
+				      (PU ，)
+				      (ADVP (AD 才))
+				      (VP (VV 能)
+					  (VP (VP (VV 领取)
+						  (NP-OBJ (NN 业绩)
+							  (NN 奖金)))
+					      (CC 或是)
+					      (VP (ADVP (AD 再))
+						  (VP (VV 补)
+						      (NP-OBJ (ADJP (JJ 新))
+							      (NP (NN 货)))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 正规 的 传销 公司 
+	  </arg>
+	  <arg n="1">
+	  如 「 百分之七十 销货 原则 」 之类 的 规定 
+	  </arg>
+	  <arg n="2">
+	  在 营业 守则 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 *PRO* 避免 直销商 不当 囤货 来 假造 「 灌水 」 业绩 ， 或是 自己 当起 大盘商 赚取 差价 ， *PRO* 卖 不 完 再 把 货 「 倒 」 回 公司 等 困扰 
+	  </arg>
+	  <arg n="m" f="adv">
+	  事实上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

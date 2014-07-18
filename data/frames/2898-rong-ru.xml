@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 融入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity blend into"/>
+      <role argnum="2" argrole="cause of blending"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 实现)
+	      (AS 了)
+	      (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 西班牙))
+				  (VP (ADVP (AD 长期))
+				      (VP (VV 希冀)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VP (VV 重返)
+							  (NP-OBJ-PN (NR 欧洲)))
+						      (CC 和)
+						      (VP (VV 融入)
+							  (NP-OBJ-PN (NR 欧洲))))))))
+			      (DEC 的))
+		      (NP (NN 目标)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  欧洲 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 王壮为))
+	      (VP (VP (ADVP (AD 却))
+		      (VP (VV 儆醒)
+			  (NP-IO (PN 自己))
+			  (IP-OBJ (PU 「)
+				  (IP-SBJ (NP-SBJ (-NONE- *pro*))
+					  (VP (ADVP (AD 太过))
+					      (VP (VA 漂亮))))
+				  (VP (ADVP (AD 也))
+				      (VP (VC 是)
+					  (NP-PRD (QP (CD 一)
+						      (CLP (M 种)))
+						  (NP (NN 缺点)))))
+				  (PU 」))))
+		  (PU ，)
+		  (VP (ADVP (AD 特意))
+		      (VP (VV 开始)
+			  (VP (PP-LOC (P 在)
+				      (LCP (NP (NN 书法))
+					   (LC 中)))
+			      (PU ，)
+			      (VP (VV 融入)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VCD (VA 刚健)
+							       (VA 有力))))
+						  (DEC 的)))
+					  (NP (NN 碑学)
+					      (NN 风格)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 刻意))
+		      (VP (VV 追求)
+			  (NP-OBJ (DNP (NP (PU 「)
+					   (NN 生)
+					   (PU 、)
+					   (NN 狠)
+					   (PU 、)
+					   (NN 辣)
+					   (PU 」))
+				       (DEG 的))
+				  (NP (NN 笔意))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 刚健 有力 的 碑学 风格 
+	  </arg>
+	  <arg n="1">
+	  在 书法 中 
+	  </arg>
+	  <arg n="2">
+	  王壮为 
+	  </arg>
+	  <arg n="m" f="adv">
+	  特意 
+	  </arg>
+	  <arg n="m" f="dis">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

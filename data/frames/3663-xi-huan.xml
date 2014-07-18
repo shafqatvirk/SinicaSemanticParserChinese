@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 喜欢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 likes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VV 喜欢)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-LOC (P 在)
+				      (LCP (NP (NT 晚上)
+					       (NN 灯光))
+					   (LC 下)))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 比赛))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 在 晚上 灯光 下 进行 比赛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

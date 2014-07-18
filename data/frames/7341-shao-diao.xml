@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 少掉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="extent arg0 is reduced"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DNP (NP (NN 娱乐界))
+			     (DEG 的))
+			(NP (NN 公关费)))
+		(VP (VV 少掉)
+		    (QP-OBJ (CD 一半)))) 
+	</parse>
+	<arg n="0">
+	娱乐界 的 公关费 
+	</arg>
+	<arg n="1">
+	一半 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

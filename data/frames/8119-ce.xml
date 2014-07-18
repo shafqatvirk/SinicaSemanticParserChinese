@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 observes/measures"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-TMP (ADVP (AD 早))
+		      (PP (P 在)
+			  (NP (LCP (NP (NN 纪元))
+				   (LC 前))
+			      (NP (NT 七十四年)))))
+	      (NP-SBJ (NP-APP (DNP (LCP (NP-PN (NR 西汉)
+					       (NR 宣帝))
+					(LC 时))
+				   (DEG 的))
+			      (NP (PU 「)
+				  (NN 农业)
+				  (NN 部长)
+				  (PU 」)))
+		      (NP-PN (NR 耿寿昌)))
+	      (PU ，)
+	      (VP (ADVP (AD 已))
+		  (VP (PU 「)
+		      (VP (VV 铸)
+			  (NP-OBJ (NN 铜))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 为)
+				  (NP-OBJ (NN 浑象仪)))))
+		      (PU ，)
+		      (VP (MSP 以)
+			  (VP (VV 测)
+			      (NP-OBJ (NN 天文))))
+		      (PU 」)))) 
+	  </parse>
+	  <arg n="0">
+	  西汉 宣帝 时 的 「 农业 部长 」 耿寿昌 
+	  </arg>
+	  <arg n="1">
+	  天文 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  早 在 纪元 前 七十四年 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

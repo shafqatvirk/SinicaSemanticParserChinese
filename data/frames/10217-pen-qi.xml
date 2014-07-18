@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 喷漆 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 sprays paint on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 更有甚者))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-MNR (P 以)
+			(NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 喷漆)))
+				    (DEC 的))
+			    (NP (NN 方式))))
+		(VP (VV 让)
+		    (NP-OBJ (DNP (NP (PN 自己))
+				 (DEG 的))
+			    (NP (NN 手机)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PU 「)
+			    (VV 与众不同)
+			    (PU 」)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

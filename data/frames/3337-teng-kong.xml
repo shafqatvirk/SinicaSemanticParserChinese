@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 腾空 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place vacated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PP-PRP (P 因)
+					      (NP (CP (WHNP-2 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-2))
+							      (VP (PP-DIR (P 向)
+									  (NP (NP-PN (NN 房屋)
+										     (NN 委员会))
+									      (CC 或)
+									      (NP (ADJP (JJ 私人))
+										  (NP (NN 机构)))))
+								  (VP (VV 购买)
+								      (NP-OBJ (ADJP (JJ 自置))
+									      (NP (NN 居所))))))
+							  (DEC 的)))
+						  (NP (NN 住户))))
+				      (VP (MSP 所)
+					  (VP (VV 腾空)))))
+			      (DEC 的)))
+		      (NP (NN 出租)
+			  (NN 单位)))
+	      (VP (ADVP (AD 亦))
+		  (ADVP (AD 已))
+		  (ADVP (AD 再))
+		  (VP (VSB (VV 分配)
+			   (VV 予))
+		      (NP-OBJ (DNP (LCP (NP (NP (ADJP (JJ 公共))
+						(NP (NN 房屋)))
+					    (NP (NN 轮候册)))
+					(LC 上))
+				   (DEG 的))
+			      (NP (NN 申请人)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 *OP* *T*-2 向 房屋 委员会 或 私人 机构 购买 自置 居所 的 住户 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity rising to the sky"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PU “)
+		      (NN 火箭)
+		      (NN 炮)
+		      (PU ”))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 腾空)))
+			   (LC 后))
+		  (VP (VV 钻进)
+		      (AS 了)
+		      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP-LOC (-NONE- *T*-1))
+					      (VP (VV 存放)
+						  (NP-OBJ (NN 烟火)
+							  (NN 爆竹)))))
+				      (DEC 的)))
+			      (NP (NN 仓库)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

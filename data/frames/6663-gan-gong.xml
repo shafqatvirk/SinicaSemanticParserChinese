@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赶工 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (PP-PRP (P 为了)
+					    (NP (NT 十月)
+						(NN 庆典)))
+				    (VP (MSP 而)
+					(VP (VV 进行)))))
+			    (DEC 的)))
+		    (NP (NN 翻修)))
+	    (VP (ADVP (AD 正))
+		(ADVP (AD 加紧))
+		(VP (VV 赶工)))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-1 为了 十月 庆典 而 进行 的 翻修 
+	</arg>
+	<arg n="m" f="adv">
+	加紧 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (ADVP (AD 又))
+		    (VP (VV 需要)
+			(VP (PP-TMP (P 在)
+				    (NP (NN 半夜)))
+			    (VP (VV 赶工)))))
+		(PU ，)
+		(VP (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VP (VP (VV 赶)
+				    (PP-TMP (P 在)
+					    (NP (NN 早晨))))
+				(VP (VV 完成)))
+			    (PU ，)
+			    (VP (VP (VRD (VV 拿))
+				    (VV 出去))
+				(VP (VV 晒)
+				    (NP-OBJ (NN 太阳))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	在 半夜 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

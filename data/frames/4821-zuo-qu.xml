@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作曲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing music of which arg0 composes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 《)
+			  (NP (NN 回归颂))
+			  (PU 》))
+	      (VP (VP (PP-LGS (P 由)
+			      (NP-PN=66 (NR 吴敬文)
+					(CC 和)
+					(NR 董赵洪娉)))
+		      (VP (VV 作曲)))
+		  (PU ，)
+		  (VP (PP-LGS (NP-PN=66 (NR 翁月华)
+					(CC 和)
+					(NR 董赵洪娉)))
+		      (VP (VV 填词))))) 
+	  </parse>
+	  <arg n="0">
+	  由 吴敬文 和 董赵洪娉 
+	  </arg>
+	  <arg n="1">
+	  《 回归颂 》 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

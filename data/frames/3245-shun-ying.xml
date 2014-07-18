@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 顺应 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent,event"/>
+      <role argnum="1" argrole="thing complied with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 台湾))
+			  (NP (NN 当局)))
+		  (VP (VP (VV 顺应)
+			  (NP-OBJ (NN 历史)
+				  (NN 发展)
+				  (NN 潮流)))
+		      (PU ，)
+		      (VP (VV 把握)
+			  (NP-OBJ (NN 时机)))
+		      (PU ，)
+		      (VP (PP (P 就)
+			      (NP (NP (QP (CD 两))
+				      (NP (NN 岸)))
+				  (NP (NN 政治)
+				      (NN 谈判))))
+			  (VP (VV 作出)
+			      (NP-OBJ (NP (ADJP (JJ 积极))
+					  (NP (NN 回应)))
+				      (CC 和)
+				      (NP (ADJP (JJ 明智))
+					  (NP (NN 选择)))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 当局 	  
+	  </arg>
+	  <arg n="1">
+	  历史 发展 潮流 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 祖国)
+		      (NN 统一))
+	      (VP (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 顺应)
+					      (NP-OBJ (NN 历史)
+						      (NN 潮流))))
+				      (DEC 的)))
+			      (ADJP (JJ 伟大))
+			      (NP (NN 事业))))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (DNP (NP (NP (NP (NN 海峡))
+					   (QP (CD 两))
+					   (NP (NN 岸)))
+				       (NP (NN 人民)))
+				   (DEG 的))
+			      (ADJP (JJ 共同))
+			      (NP (NN 愿望)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  历史 潮流 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

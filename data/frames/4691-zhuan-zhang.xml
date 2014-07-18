@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转帐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (ADVP (AD 无论))
+			      (NP (DP (DT 什么))
+				  (NP (NN 企业)
+				      (CC 和)
+				      (NN 公司))))
+		      (PU ，)
+		      (VP (ADVP (CS 如果))
+			  (VP (VV 提出)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-MNR (P 用)
+						  (NP (NN 欧元)))
+					  (VP (VV 转帐)))))))
+	      (PU ，)
+	      (NP-SBJ (PN 我们))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 将))
+		  (PP-MNR (P 按)
+			  (NP (NP (PN 其))
+			      (NP (NN 要求))))
+		  (VP (VV 办理)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 欧元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

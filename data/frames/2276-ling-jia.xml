@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 凌驾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 places"/>
+      <role argnum="2" argrole="entity arg1 is placed above"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (CD 一))
+	      (VP (VC 是)
+		  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (DNP (NP (QP (CD 一))
+							   (NP (NN 国)))
+						       (DEG 的))
+						  (NP (NN 国家)
+						      (NN 利益)))
+					  (VP (VV 凌驾)
+					      (PP (P 于)
+						  (NP (DNP (NP (NN 国际法))
+							   (DEG 之))
+						      (NP (NN 上)))))))
+			      (PU ，)
+			      (VP (ADVP (AD 不))
+				  (VP (VV 惜)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 撇开)
+						      (NP-PN-OBJ (NR 联合国)))
+						  (PU ，)
+						  (VP (VP (PP-MNR (P 用)
+								  (NP (NN 武力)))
+							  (VP (VV 侵犯)
+							      (NP-OBJ (DNP (NP (DP (DT 别))
+									       (NP (NN 国)))
+									   (DEG 的))
+								      (NP (NN 主权)))))
+						      (VP (MSP 来)
+							  (VP (VV 推行)
+							      (NP-OBJ (DNP (NP (PN 自己))
+									   (DEG 的))
+								      (NP (NN 全球)
+									  (NN 战略)))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一 国 的 国家 利益 
+	  </arg>
+	  <arg n="2">
+	  于 国际法 之 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

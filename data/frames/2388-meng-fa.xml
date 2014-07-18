@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 萌发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="things sprouted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 上海)
+					     (NN 植物园))
+				  (VP (VV 种植)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 白玉兰)))
+	      (PU ，)
+	      (IP (IP (DP-TMP (DT 这)
+			      (QP (CD 几)
+				  (CLP (M 天))))
+		      (NP-SBJ (NN 枝头))
+		      (VP (VV 萌发)
+			  (NP-OBJ (QP (CD 大批))
+				  (NP (NN 花蕾)))))
+		  (PU ，)
+		  (IP (NP-SBJ (PN 有的))
+		      (VP (ADVP (AD 已))
+			  (VP (VV 开出)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (CC 或)
+						      (VA 白)
+						      (CC 或)
+						      (VA 紫)))
+					      (DEC 的)))
+				      (NP (NN 花朵))))))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 出现)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 花)
+						      (NN 叶))
+					      (VP (VV 并存)))
+					  (DEC 的))
+				  (NP (NN 奇景))))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  枝头 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *OP* 上海 植物园 种植 *T*-1 的 白玉兰 
+	  </arg>
+	  <arg n="1">
+	  大批 花蕾 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 几 天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

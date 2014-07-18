@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 任凭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 lets"/>
+      <role argnum="2" argrole="thing arg0 lets arg1 do freely"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (IP (NP-SBJ (NP (NN 电脑)
+				  (NN 年序))
+			      (NP (NN 问题)))
+		      (VP (ADVP (AD 何等))
+			  (VP (VA 重要))))
+		  (PU ，)
+		  (CP-Q (IP (ADVP-WH (AD 为什麽))
+			    (NP-SBJ (NN 资讯界))
+			    (VP (VP (VPT (VV 想)
+					 (AD 不)
+					 (VV 出))
+				    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VV 斧底抽薪)))
+						    (DEC 的)))
+					    (NP (NN 办法))))
+				(PU ，)
+				(VP (ADVP (AD 却))
+				    (VP (VV 任凭)
+					(NP-OBJ (PN 大家))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (ADVP (AD 各))
+						    (VP (VV 出)
+							(NP-OBJ (NN 奇招))))
+						(PU ，)
+						(VP (ADVP (AD 但))
+						    (VP (VV 求)
+							(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								(VP (VRD (PU 「)
+									 (VV 蒙混)
+									 (PU 」)
+									 (VV 过))
+								    (NP-OBJ (DNP (NP (NN 眼前))
+										 (DEG 的))
+									    (NP (NN 难关))))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  资讯界 
+	  </arg>
+	  <arg n="1">
+	  大家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 各 出 奇招 ， 但 求 *PRO* 「 蒙混 」 过 眼前 的 难关 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为什麽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

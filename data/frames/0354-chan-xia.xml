@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 产下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-MNR (P 据)
+              (NP (NP (NN 此间)
+                      (NN 媒体))
+                  (NP (NT 今天))
+                  (NP (NN 报道))))
+      (PU ，)
+      (NP-SBJ (NP-PN (NR 日本)
+                     (NR 静冈县))
+              (QP (CD 一)
+                  (CLP (M 位)))
+              (QP (CD ３０)
+                  (CLP (M 岁)))
+              (NP (NN 妇女)))
+      (VP (NP-TMP (NT 上月))
+          (VP (VV 产下)
+              (NP-OBJ (NN 五胞胎))))))
+	</parse>
+	<arg n="M" f="MNR"> 据 此间 媒体 今天 报道 </arg>
+	<arg n="0"> 日本 静冈县 一 位 ３０ 岁 妇女 </arg>
+	<arg n="M" f="TMP"> 上月 </arg>
+	<V/>
+	<arg n="1"> 五胞胎 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

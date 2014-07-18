@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寄上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 每))
+			  (VP (VV 逢)
+			      (NP-OBJ (NT 新年)))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (PP-BNF (P 给)
+				  (NP (DNP (NP (NN 海峡)
+					       (NN 对岸))
+					   (DEG 的))
+				      (NP (NN 新知)
+					  (NN 旧友))))
+			  (VP (VV 寄上)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 份)))
+				      (NP (NN 祝福)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  一 份 祝福 
+	  </arg>
+	  <arg n="2">
+	  给 海峡 对岸 的 新知 旧友 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 每 逢 新年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

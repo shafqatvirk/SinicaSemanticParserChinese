@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 停战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity which stops fighting"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (DNP (QP (CD ５６％))
+			       (DEG 的))
+			  (NP (NN 法国人)))
+		  (VP (VV 要求)
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 立即))
+			      (VP (VV 停战)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  立即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

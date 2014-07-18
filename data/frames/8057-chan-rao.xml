@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缠绕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 winds around"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP-PN (NR 中兴)
+			      (NN 医院))
+		       (LC 边))
+	      (VP (ADVP (AD 还))
+		  (VP (VE 有)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 棵)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (IP (IP (NP-SBJ (NN 盘根))
+						  (VP (VV 缠绕)))
+					      (PU 、)
+					      (IP (NP-SBJ (NN 绿荫))
+						  (VP (VV 遮天)))))
+				      (DEC 的)))
+			      (ADJP (JJ 老))
+			      (NP (NN 茄冬)))))) 
+	  </parse>
+	  <arg n="0">
+	  盘根 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

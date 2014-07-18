@@ -1,0 +1,121 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 确保 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing guaranteed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 四))
+	      (PU 、)
+	      (NP-PN-SBJ (NN 人民)
+			 (NN 银行))
+	      (VP (VV 要)
+		  (VP (VP (ADVP (AD 认真))
+			  (VP (VV 做好)
+			      (NP-OBJ (DNP (PP (P 对)
+					       (NP (NN 金融)
+						   (NN 机构)))
+					   (DEG 的))
+				      (NP (NN 监管)
+					  (NN 工作)))))
+		      (PU ，)
+		      (VP (VV 确保)
+			  (NP-OBJ (DNP (NP (NN 金融)
+					   (NN 体系))
+				       (DEG 的))
+				  (NP (NN 稳定))))))) 
+	  </parse>
+	  <arg n="0">
+	  人民 银行 	  
+	  </arg>
+	  <arg n="1">
+	  金融 体系 的 稳定 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 深圳市))
+		      (NP (NN 政府)))
+	      (VP (VP (ADVP (AD 已))
+		      (PP (P 与)
+			  (NP-PN (PU “)
+				 (NR 深圳)
+				 (NN 高速)
+				 (PU ”)))
+		      (VP (VV 签订)
+			  (AS 了)
+			  (NP-OBJ (PU “)
+				  (ADJP (JJ 专营))
+				  (NP (NN 协议))
+				  (PU ”))))
+		  (PU ，)
+		  (VP (VV 确保)
+		      (IP-OBJ (NP-SBJ (PN 它))
+			      (VP (PP-LOC (P 在)
+					  (NP (NN 公路)
+					      (NN 建设)
+					      (NN 方面)))
+				  (VP (VE 有)
+				      (NP-OBJ (ADJP (JJ 优先))
+					      (NP (NN 发展权))))))))) 
+	  </parse>
+	  <arg n="0">
+	  深圳市 政府 	  
+	  </arg>
+	  <arg n="1">
+	  它 在 公路 建设 方面 有 优先 发展权 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP-PN (NN-SHORT 临立会))
+			       (DEG 的))
+			  (NP (NN 成员)))
+		  (VP (VV 会)
+		      (VP (VP (VP (VV 谅解))
+			      (CC 并)
+			      (VP (VV 合作)))
+			  (VP (VV 确保)
+			      (NP-OBJ (NN 草案))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 得以)
+				      (VP (ADVP (AD 迅速))
+					  (VP (VV 通过))))))))) 
+	  </parse>
+	  <arg n="0">
+	  临立会 的 成员 
+	  </arg>
+	  <arg n="1">
+	  草案 
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 得以 迅速 通过 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

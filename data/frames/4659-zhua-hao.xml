@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抓好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (NP-SBJ (NN 保税区))
+	      (VP (VP (ADVP (AD 大力))
+		      (VP (VV 抓好)
+			  (NP-OBJ (DNP (NP (LCP (NP (NN 区))
+						(LC 内))
+					   (NP (NN 信息))
+					   (ADJP (JJ 高速))
+					   (NP (NN 公路)))
+				       (DEG 的))
+				  (NP (NN 网络)
+				      (NN 体系)
+				      (NN 建设)))))
+		  (PU ，)
+		  (VP (PP-BNF (P 为)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 实现)
+				      (NP-OBJ (NN 现代化)
+					      (NN 管理)))))
+		      (VP (VV 创造)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 良好)))
+					  (DEC 的)))
+				  (NP (NN 配套)
+				      (NN 条件))))))) 
+	  </parse>
+	  <arg n="0">
+	  保税区 
+	  </arg>
+	  <arg n="1">
+	  区 内 信息 高速 公路 的 网络 体系 建设 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大力 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

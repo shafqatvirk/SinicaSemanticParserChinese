@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亮出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 takes out and shows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (PN 她))
+			       (VP (VP (VV 下杠))
+				   (VP (ADVP (AD 稳稳))
+				       (VP (VV 站住)))))
+			   (LC 后)))
+	      (PU ，)
+	      (NP-SBJ (NN 裁判))
+	      (VP (PP-MNR (P 以)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 最))
+					      (VP (VA 快))))
+				      (DEC 的)))
+			      (NP (NN 速度))))
+		  (PP (P 给)
+		      (NP (PN 她)))
+		  (VP (VV 亮出)
+		      (AS 了)
+		      (NP-OBJ (DNP (QP (CD ９·９１２))
+				   (DEG 的))
+			      (NP (NT 今晚)
+				  (NN 最高分)))))) 
+	  </parse>
+	  <arg n="0">
+	  裁判 
+	  </arg>
+	  <arg n="1">
+	  ９·９１２ 的 今晚 最高分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  给 她 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 *OP* *T*-1 最 快 的 速度 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 她 下杠 稳稳 站住 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

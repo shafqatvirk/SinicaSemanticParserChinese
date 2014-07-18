@@ -1,0 +1,147 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 见 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person who sees"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 记者))
+	      (VP (VP (ADVP (AD 特意))
+		      (VP (VV 来到)
+			  (NP-OBJ (NP-PN (NR 罗马))
+				  (NP (NN 市中心))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 繁华)))
+					  (DEC 的)))
+				  (NP-PN (NP (PU “)
+					     (NN 复兴)
+					     (PU ”))
+					 (ADJP (JJ 百货))
+					 (NP (NN 公司))))))
+		  (PU ，)
+		  (VP (VV 发现)
+		      (IP-OBJ (NP-SBJ (DNP (NP (PN 那里))
+					   (DEG 的))
+				      (NP (NN 商品)))
+			      (VP (ADVP (AD 仍))
+				  (PP-MNR (P 用)
+					  (NP (NP-PN (NR 意大利))
+					      (NP (NN 里拉))))
+				  (VP (VV 标价)))))
+		  (PU ，)
+		  (VP (ADVP (AD 未))
+		      (VP (VV 见)
+			  (NP-OBJ (DNP (NP (NN 欧元))
+				       (DEG 的))
+				  (NP (NN 踪迹))))))) 
+	  </parse>
+	  <arg n="0">
+	  记者 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  欧元 的 踪迹 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (NP (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 金融)
+					  (NN 风暴))
+				  (VP (NP-TMP (-NONE- *T*-3))
+				      (ADVP (AD 未))
+				      (VP (VV 见)
+					  (NP-OBJ (NN 缓和)))))
+			      (DEC 的)))
+		      (NP (NT 今天)))) 
+	  </parse>
+	  <arg n="1">
+	  金融 风暴 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1" f="prd">
+	  缓和 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (NN 经济))
+				  (VP (ADVP (AD 迅速))
+				      (VP (VV 增长))))
+			      (DEC 的))
+		      (NP (NN 迹象)))
+	      (VP (ADVP (AD 处处))
+		  (VP (VV 可)
+		      (VP (VV 见))))) 
+	  </parse>
+	  <arg n="1">
+	  经济 迅速 增长 的 迹象 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VP (VV 伸了伸)
+		      (NP-OBJ (NN 舌头)))
+		  (PU ，)
+		  (VP (VP (VV 仰头))
+		      (VP (VV 想)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 望)
+				      (ADVP (AD 一眼))
+				      (NP-OBJ (NN 峰巅))))))
+		  (PU ，)
+		  (VP (ADVP (AD 只))
+		      (VP (VV 见)
+			  (NP-OBJ (NN 云雾))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 缭绕))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  只 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  云雾 	  	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 缭绕 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

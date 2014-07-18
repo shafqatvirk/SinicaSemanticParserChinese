@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 历时 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="length of time arg0 lasts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 证券法))
+	      (VP (PP (PP-DIR (P 从)
+			      (NP (NN 起草)))
+		      (PP-DIR (P 到)
+			      (NP (NN 通过))))
+		  (PU ，)
+		  (VP (VV 历时)
+		      (QP-OBJ (CD 六)
+			      (CLP (M 年)))))) 
+	  </parse>
+	  <arg n="0">
+	  证券法 
+	  </arg>
+	  <arg n="1">
+	  六 年 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 起草 到 通过 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

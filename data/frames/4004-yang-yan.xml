@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扬言 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="words spread"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-TMP (NT 现在))
+		      (NP-SBJ (DNP (NP-PN (NR 美国))
+				   (DEG 的))
+			      (NP (NN 空袭)))
+		      (VP (ADVP (CS 虽))
+			  (ADVP (AD 已))
+			  (VP (VV 告)
+			      (NP-OBJ (QP (CD 一))
+				      (NP (NN 段落))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-PN-SBJ (NR 克林顿))
+	      (VP (VP (VV 宣布)
+		      (IP-OBJ (NP-PN-SBJ (NR 美国))
+			      (VP (ADVP (AD 仍))
+				  (VP (VV 要)
+				      (VP (PP-LOC (P 在)
+						  (NP-PN (NR 波斯湾)))
+					  (VP (VV 保持)
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (VA 强大)))
+							      (DEC 的)))
+						      (NP (NN 军事)
+							  (NN 实力)))))))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 扬言)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+					       (VP (VV 必要)))
+					   (LC 时))
+				  (ADVP (AD 将))
+				  (ADVP (AD 再次))
+				  (VP (VV 使用)
+				      (NP-OBJ (NN 武力)))))))) 
+	  </parse>
+	  <arg n="0">
+	  克林顿 
+	  </arg>
+	  <arg n="1">
+	  *PRO* *pro* 必要 时 将 再次 使用 武力 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  现在 美国 的 空袭 虽 已 告 一 段落 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

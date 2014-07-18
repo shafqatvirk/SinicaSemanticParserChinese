@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 认捐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing promised to donate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 占)
+		  (QP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (IP (NP-SBJ (-NONE- *pro*))
+					   (VP (ADVP (AD 当初))
+					       (VP (VV 认捐)
+						   (NP-OBJ (-NONE- *T*-1))))))
+				   (NP (NN 数)))
+			       (DEG 的))
+			  (QP (CD 百分之九十九))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  当初 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VP (PP-TMP (P 在)
+					      (NP (NP (PU “)
+						      (NN 晚会)
+						      (PU ”))
+						  (NP (NN 期间))))
+				      (ADVP (AD 正式))
+				      (VP (VV 认捐)))
+				  (CC 且)
+				  (VP (PP-MNR (P 经)
+					      (NP (NN 核实)))
+				      (ADVP (AD 准确))
+				      (VP (VE 无)
+					  (NP-OBJ (NN 误))))))
+			  (DEC 的)))
+		  (NP (NN 单位)
+		      (CC 和)
+		      (NN 个人))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正式 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 “ 晚会 ” 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 擅长 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is good at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 擅长)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 刻画)
+						(NP-OBJ (NN 移民)
+							(NN 心态))))))
+			    (DEC 的)))
+		    (NP-PN (NR 罗卓瑶)))
+	    (PU ，)
+	    (NP-SBJ (NN 风格))
+	    (VP (VV 多变))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	*PRO* 刻画 移民 心态 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (VV 擅长)
+		    (NP-OBJ (NN 雕刻)
+			    (PU 、)
+			    (NN 制陶)))
+		(PU ，)
+		(VP (ADVP (AD 亦))
+		    (VP (VV 从事)
+			(NP-OBJ (NP (NN 装置)
+				    (NN 艺术))
+				(NP (NN 创作))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	雕刻 、 制陶 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

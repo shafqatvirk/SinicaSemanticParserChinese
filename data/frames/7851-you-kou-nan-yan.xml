@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有口难言 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 finds it difficult to say"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (DVP (VP (VV 不厌其烦))
+		     (DEV 的))
+		(ADVP (AD 私下))
+		(PP-BNF (P 为)
+			(NP (NP-APP (PN 我们))
+			    (NP (DP (DT 这些))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (PU 「)
+						(VV 有口难言)
+						(PU 」)))
+					(DEC 的)))
+				(NP (NN 异乡人)))))
+		(VP (VV 解决)
+		    (NP-OBJ (DNP (LCP (NP (NN 生活))
+				      (LC 上))
+				 (DEG 的))
+			    (DP (DT 各)
+				(CLP (M 种)))
+			    (NP (NN 疑难杂症)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

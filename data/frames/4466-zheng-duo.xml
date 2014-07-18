@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 争夺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (QP (OD 第一)
+				   (CLP (M 轮)))
+			       (NP (NN 比赛)))
+			   (DEG 的))
+		      (NP (NN 胜方)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 争夺)
+		      (NP-OBJ (NN 冠军))))) 
+	  </parse>
+	  <arg n="0">
+	  第一 轮 比赛 的 胜方 
+	  </arg>
+	  <arg n="1">
+	  冠军 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

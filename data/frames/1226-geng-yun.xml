@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 耕耘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (QP-ADV (CD 多)
+				  (CLP (M 年)))
+			  (VP (VV 耕耘)))
+		      (PU ，)
+		      (VP (ADVP (AD 而))
+			  (PP-TMP (P 在)
+				  (NP (CP (WHPP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (PP-TMP (-NONE- *T*-1))
+						      (ADVP (AD 最))
+						      (VP (VV 需要))))
+					      (DEC 的)))
+				      (NP (NN 时候))))
+			  (VP (VV 丰收))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  多 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

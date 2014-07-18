@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 译成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 translates"/>
+    <role argnum="2" argrole="thing arg1 is translated into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 西夏))
+	    (VP (DVP (QP (CD 大量))
+		     (DEV 地))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NP (QP (CD 四))
+					(NP (NN 书)))
+				    (NP (QP (CD 五))
+					(NP (NN 经))))
+			    (VP (VV 译成)
+				(NP-OBJ (NN 西夏文))))))) 
+	</parse>
+	<arg n="0">
+	西夏 
+	</arg>
+	<arg n="1">
+	四 书 五 经 
+	</arg>
+	<arg n="2">
+	西夏文 
+	</arg>
+	<arg n="m" f="adv">
+	大量 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

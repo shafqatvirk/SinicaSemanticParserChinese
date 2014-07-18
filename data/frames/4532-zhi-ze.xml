@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指责 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="accuser"/>
+      <role argnum="1" argrole="activity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-PN-SBJ (NR 美国))
+		      (VP (LCP-TMP (NP (NT 今年)
+				       (NT ８月))
+				   (LC 以来))
+			  (QP-ADV (CD 多)
+				  (CLP (M 次)))
+			  (VP (VP (VV 提出)
+				  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 要)
+					      (VP (VV 检查)
+						  (NP-OBJ (DNP (NP-PN (NR 朝鲜))
+							       (DEG 的))
+							  (ADJP (JJ 所谓))
+							  (NP (PU “)
+							      (ADJP (JJ 地下))
+							      (NP (NN 核)
+								  (NN 设施))
+							      (PU ”)))))))
+			      (PU ，)
+			      (VP (VV 指责)
+				  (NP-OBJ (DNP (NP-PN (NR 朝鲜))
+					       (DEG 的))
+					  (ADJP (JJ 所谓))
+					  (NP (PU “)
+					      (NN 导弹)
+					      (NN 威胁)
+					      (PU ”)))))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  朝鲜 的 所谓 “ 导弹 威胁 ” 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="accuser"/>
+      <role argnum="1" argrole="accusee"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 事))
+			   (VP (VV 发)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 刚果)
+			     (PRN (PU （)
+				  (NP-PN (NR 布))
+				  (PU ）)))
+		      (NP (NN 政府)))
+	      (VP (VV 指责)
+		  (NP-OBJ (ADJP (JJ 某))
+			  (NP (NN 国)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-BNF (P 为)
+				  (NP (PN 之)))
+			  (VP (VV 提供)
+			      (AS 了)
+			      (NP-OBJ (NN 基地))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  事 发 后 
+	  </arg>
+	  <arg n="0">
+	  刚果 （ 布 ） 政府 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  某 国 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 之 提供 了 基地 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb> 

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 骑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity ridden on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-DIR (P 对于)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-TMP (NT 今日))
+					  (VP (VP (VV 骑)
+						  (NP-OBJ (NN 摩托车)))
+					      (PU 、)
+					      (VP (VV 看)
+						  (NP-OBJ (NP (ADJP (JJ 大))
+							      (NP (NN 屏幕)))
+							  (NP (NN 彩电)))))))
+				  (DEC 的)))
+			  (NP-PN (NR 大寨))
+			  (NP (NN 年轻人))))
+	      (VP (MSP 而)
+		  (VP (VV 言)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  摩托车 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加印 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing printed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (LCP-SBJ (NP (NN 背面))
+			   (LC 右侧))
+		  (VP (ADVP (AD 还))
+		      (VP (VV 留下)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 相当于)
+						  (NP-OBJ (QP (NP (NN 钞票))
+							      (QP (CD 五分之一)))
+							  (NP (NN 大小)))))
+					  (DEC 的)))
+				  (NP (NN 空白))))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 让)
+		      (NP-OBJ (DP (DT 各))
+			      (NP (NN 欧元国)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VRD (VV 加印)
+				   (VV 上))
+			      (NP-OBJ (NP (NP (PN 各自))
+					  (NP (NN 国家)))
+				      (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VA 独特)))
+					      (DEC 的)))
+				      (NP (NN 标记)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  各自 国家 *OP* *T*-2 独特 的 标记 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

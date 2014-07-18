@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 促使 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity prodding"/>
+      <role argnum="1" argrole="party prodded"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 索拉纳))
+	      (VP (ADVP (AD 同时))
+		  (VP (VV 表示)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 西班牙))
+				      (NP (NN 政府)))
+			      (VP (VP (PP-DIR (P 对)
+					      (NP (DNP (NP (NP-PN (NR 古巴))
+							   (PU “)
+							   (NN 偷渡者))
+						       (DEG 的))
+						  (NP (NN 惨境))
+						  (PU ”)))
+				      (ADVP (AD 深为))
+				      (VP (VV 关切)))
+				  (PU ，)
+				  (CC 并)
+				  (VP (VV 愿)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 作)
+					      (NP-OBJ (DNP (ADJP (JJ 必要))
+							   (DEG 的))
+						      (NP (NN 努力))))))
+				  (PU ，)
+				  (VP (VV 促使)
+				      (LCP-OBJ (NP-PN (NR 哈瓦那)
+						      (CC 和)
+						      (NR 华盛顿))
+					       (LC 之间))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 对话))))
+				  (PU ，)
+				  (VP (VV 寻找)
+				      (NP-OBJ (NN 解决)
+					      (NN 办法)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  西班牙 政府 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  哈瓦那 和 华盛顿 之间 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 对话 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

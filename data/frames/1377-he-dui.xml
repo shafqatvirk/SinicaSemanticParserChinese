@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 核对 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="checker"/>
+      <role argnum="1" argrole="thing checked"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 由於)
+		  (IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 核对)
+				  (NP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+						       (IP (NP-SBJ (-NONE- *T*-1))
+							   (VP (VV 提出)
+							       (NP-OBJ (NN 要求)))))
+						   (NP (NN 人士)))
+					       (DEG 的))
+					  (NP (NN 身分)))))
+		      (VP (VV 需)
+			  (NP-OBJ (NN 时))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 提出 要求 人士 的 身分 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-LOC (P 在)
+				  (NP (NN 本地)))
+			  (VP (VV 核对))))
+	      (VP (ADVP (AD 至少))
+		  (VP (VV 需)
+		      (QP-OBJ (CD 三)
+			      (CLP (M 天))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 本地 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 善 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (NN 贷款人)
+			  (NN 风险)
+			  (NN 管理))
+		  (VP (ADVP (AD 不))
+		      (VP (VA 善)))) 
+	  </parse>
+	  <arg n="0">
+	  贷款人 风险 管理 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is good at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 具有)
+			  (NP-OBJ (ADJP (JJ 强烈))
+				  (NP (NN 个人主义)
+				      (CC 或)
+				      (NN 无政府)
+				      (NN 倾向))))
+		      (PU ，)
+		      (VP (VE 有)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 征服)
+						  (NP-OBJ (NN 权威))))
+					  (DEC 的))
+				  (NP (NN 表现欲))))
+		      (PU ，)
+		      (VP (VA 内向))
+		      (PU 、)
+		      (VP (ADVP (AD 不))
+			  (VP (VV 善)
+			      (NP-OBJ (ADJP (JJ 人际))
+				      (NP (NN 关系))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  人际 关系 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

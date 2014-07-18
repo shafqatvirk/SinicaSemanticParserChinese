@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 祭拜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 does memorial service to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 八里) )
+		    (NP (NN 乡民) ))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (PN 其))
+			(VP (VP (VV 奉为)
+				(NP-OBJ (NN 神祈) ))
+			    (VP (VV 祭拜)))))) 
+	</parse>
+	<arg n="0">
+	八里 乡民 
+	</arg>
+	<arg n="1">
+	其 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 跪)
+		    (PP-LOC (P 在)
+			    (LCP (NP (NN 地))
+				 (LC 上))))
+		(VP (VV 祭拜)
+		    (NP-OBJ (NN 山神))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	山神 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 去年)
+		    (NT 一月))
+	    (NP-SBJ (PN 我))
+	    (VP (VP (VP (VV 去)
+			(LCP-OBJ (NP (NP-PN (NR 日本))
+				     (DNP (NP (PN 他))
+					  (DEG 的))
+				     (NP (NN 坟)))
+				 (LC 前)))
+		    (VP (VV 祭拜)))
+		(PU ，)
+		(VP (VV 发现)
+		    (IP-OBJ (NP-SBJ (DNP (LCP (NP (NP (PN 他))
+						  (NP (NN 墓)))
+					      (LC 上))
+					 (DEG 的))
+				    (NP (NN 文字)))
+			    (VP (VC 是)
+				(NP-PRD (DNP (NP (NN 泰雅语))
+					     (DEG 的))
+					(NP (NN 拼音)))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="m" f="tmp">
+	去年 一月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

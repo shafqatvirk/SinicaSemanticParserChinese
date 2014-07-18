@@ -1,0 +1,106 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 归 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="belonging to"/>
+      <role argnum="2" argrole="thing arg1 is entitled to do to arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 三))
+	      (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-TMP (NT 过去))
+					  (ADVP (AD 过量))
+					  (VP (VV 宰杀)
+					      (NP-OBJ (-NONE- *T*-2)))))
+				  (DEC 的)))
+			  (NP (NN 牲畜)))
+		      (NP (NN 头数)))
+	      (VP (VV 要)
+		  (VP (VRD (VV 恢复)
+			   (VV 到))
+		      (NP-OBJ (DNP (LCP (IP (NP-SBJ (NN 牲畜))
+					    (VP (VV 归)
+						(NP-OBJ (NN 户))))
+					(LC 时))
+				   (DEG 的))
+			      (NP (NN 水平)))))) 
+	  </parse>
+	  <arg n="0">
+	  牲畜 	  	  
+	  </arg>
+	  <arg n="1">
+	  户 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 盐)
+			  (PU 、)
+			  (NN 铁)
+			  (PU 、)
+			  (NN 酒)
+			  (PU 、)
+			  (NN 名山)
+			  (NN 大泽)
+			  (PU 、)
+			  (NN 钱布)
+			  (NN 铜冶)
+			  (ETC 等))
+		  (VP (ADVP (AD 皆))
+		      (VP (VV 归)
+			  (NP-OBJ (NN 国家))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 管理)))))) 
+	  </parse>
+	  <arg n="0">
+	  盐 、 铁 、 酒 、 名山 大泽 、 钱布 铜冶 等 
+	  </arg>
+	  <arg n="1">
+	  国家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 管理 
+	  </arg>
+	  <arg n="m" f="adv">
+	  皆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

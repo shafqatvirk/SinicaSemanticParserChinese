@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抓获 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (LCP-TMP (IP (NP-SBJ (QP (CD ３)
+					   (CLP (M 名)))
+				       (NP (NN 游客)))
+			       (VP (SB 被)
+				   (VP (VV 害))))
+			   (LC 后))
+		  (PU ，)
+		  (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 阻止)
+				      (NP-OBJ (DNP (NP (NN 事件))
+						   (DEG 的))
+					      (ADJP (JJ 进一步))
+					      (NP (NN 扩大))))
+				  (CC 和)
+				  (VP (VV 营救)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+							  (VP (SB 被)
+							      (VP (VV 劫持)
+								  (NP-OBJ (-NONE- *-2)))))
+						      (DEC 的)))
+					      (DP (DT 其他))
+					      (NP (NN 游客)))))))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 也门))
+			  (NP (NN 保安)
+			      (NN 人员)))
+		  (VP (VP (PP (P 同)
+			      (NP (NN 恐怖)
+				  (NN 分子)))
+			  (VP (VV 发生)
+			      (NP-OBJ (NN 交火))))
+		      (PU ，)
+		      (VP (VV 打死)
+			  (NP-OBJ (QP (CD ３)
+				      (CLP (M 名)))
+				  (NP (NN 恐怖)
+				      (NN 分子))))
+		      (PU ，)
+		      (VP (ADVP (AD 另外))
+			  (VP (VV 抓获)
+			      (NP-OBJ (QP (CD ３))
+				      (NP (NN 人))))))) 
+	  </parse>
+	  <arg n="0">
+	  也门 保安 人员 
+	  </arg>
+	  <arg n="1">
+	  ３ 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  另外 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 阻止 事件 的 进一步 扩大 和 营救 *OP* *T*-1 被 劫持 *-2 的 其他 游客 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ３ 名 游客 被 害 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 严惩)
+	      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (VV 抓获)
+					  (NP-OBJ (-NONE- *-2)))))
+			      (DEC 的)))
+		      (NP (NN 恐怖)
+			  (NN 分子)))) 
+	  </parse>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

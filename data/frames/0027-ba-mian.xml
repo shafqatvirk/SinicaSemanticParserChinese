@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 罢免 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="post"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 去年))
+		(PU ，)
+		(NP-SBJ (NP-PN (NR 结巴乡))
+			(QP (CD 一))
+			(NP (NN 村干部)))
+		(VP (VP (PP-PRP (P 因)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 建)
+					(NP-OBJ (NN 房)))))
+			(VP (VV 占用)
+			    (NP-OBJ (NN 农田))))
+		    (PU ，)
+		    (VP (LB 被)
+			(IP-OBJ (NP-SBJ (NN 村民)
+					(NN 代表)
+					(NN 大会))
+				(VP (VV 罢免)
+				    (NP-OBJ (NN 职务))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="1">
+	  结巴乡 一 村干部 
+	  </arg>
+	  <arg n="0">
+	  村民 代表 大会 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  职务 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 罢免)
+		    (AS 了)
+		    (NP-OBJ (DNP (NP (NP-APP (ADJP (JJ 原))
+					     (NP-PN (NR 辽宁省)
+						    (NR 丹东市))
+					     (NP (NN 市长)))
+				     (NP-PN (NR 常义)))
+				 (DEG 的))
+			    (NP (NP-PN (NP (DP (DT 全))
+					   (NP (NN 国)))
+				       (NP (NN 人大)))
+				(NP (NN 代表)))
+			    (NP (NN 资格))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  原 辽宁省 丹东市 市长 常义 的 全 国 人大 代表 资格 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

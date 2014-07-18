@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分家 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people (family members) described"/>
+    <role argnum="1" argrole="property divided among arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 加上)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 尚))
+						(ADVP (AD 未))
+						(VP (VV 分家))))
+					(DEC 的)))
+				(ADJP (JJ 祖传))
+				(NP (NN 农地)))))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 算算)))
+	    (NP-SBJ (DP (DT 全))
+		    (NP (NN 家族)))
+	    (VP (ADVP (AD 已))
+		(VP (VV 拥有)
+		    (NP-OBJ (DNP (QP (CD 上亿)
+				     (CLP (M 元)))
+				 (DEG 的))
+			    (NP (NN 身价)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	尚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-SBJ (DP (DT 有些))
+			(NP (NN 人)))
+		(VP (ADVP (AD 很))
+		    (VP (VA 高兴))))
+	    (PU ，)
+	    (PP (P 因为)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VP (VV 可以)
+			    (VP (ADVP (AD 不))
+				(VP (VV 用)
+				    (VP (VV 耕田)))))
+			(PU ，)
+			(VP (ADVP (AD 立刻))
+			    (VP (VV 可以)
+				(VP (VP (VV 分家))
+				    (PU 、)
+				    (VP (VV 拿)
+					(NP-OBJ (NN 钱)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	立刻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 铺 </id>
+    <frameset id="f1" edef="lay, install">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing laid, installed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (NP (PN 此)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 罗))
+	      (VP (VV 计划)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-TMP (P 在)
+				      (LCP (QP (NP (NT 今后))
+					       (QP (CD 十)
+						   (CLP (M 年))))
+					   (LC 内)))
+			      (VP (VP (ADVP (AD 新))
+				      (VP (VV 铺)
+					  (NP-OBJ (NN 地铁)
+						  (NN 线路))
+					  (QP-EXT (CD ６０)
+						  (CLP (M 公里)))))
+				  (PU ，)
+				  (VP (ADVP (AD 新))
+				      (VP (VV 建)
+					  (NP-OBJ (NN 车站))
+					  (QP-EXT (CD ５０)
+						  (CLP (M 个)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  地铁 线路 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  ６０ 公里 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  新 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="spread">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing spread"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="pave">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing paved"/>
+      <role argnum="2" argrole="material"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

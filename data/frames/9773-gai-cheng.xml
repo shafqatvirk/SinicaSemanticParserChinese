@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 概称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 calls"/>
+      <role argnum="2" argrole="name arg1 is called as a whole"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (DP (DT 这)
+				  (QP (CD 二)))
+			      (NP (NN 者)))
+		      (VP (NP-TMP (NT 现今))
+			  (ADVP (CS 虽))
+			  (VP (VRD (VV 概称)
+				   (VV 为))
+			      (NP-OBJ (NN 米粉)))))
+	      (PU ，)
+	      (ADVP (AD 不过))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 内行))
+		      (NP (NN 人)))
+	      (VP (VV 知道)
+		  (PU ，)
+		  (CP-OBJ (IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VP (VV 到)
+						   (LCP-OBJ (NP (NN 店))
+							    (LC 里)))
+					       (VP (VV 去)
+						   (VP (VV 买)
+						       (NP-OBJ (NN 米粉))))))
+				       (LC 时))
+			      (PU ，)
+			      (CP-CND (ADVP (CS 如果))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VPT (VV 叫)
+						   (DER 得)
+						   (VV 出))
+					      (NP-OBJ (PU 「)
+						      (NN 水粉)
+						      (PU 」)
+						      (CC 与)
+						      (PU 「)
+						      (NN 炊粉)
+						      (PU 」)))))
+			      (PU ，)
+			      (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 可能)
+				  (VP (VV 博得)
+				      (IP-OBJ (NP-SBJ (NN 业主))
+					      (VP (VV 另眼相看))))))
+			  (SP 喔)))) 
+	  </parse>
+	  <arg n="1">
+	  这 二 者 
+	  </arg>
+	  <arg n="2">
+	  米粉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  虽 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

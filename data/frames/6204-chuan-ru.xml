@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 传入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is introduced into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-TPC (NR 西藏))
+	    (ADVP (AD 则))
+	    (PP-PRP (P 因为)
+		    (IP (IP (NP-SBJ (NN 地理)
+				    (NN 风俗))
+			    (VP (VV 迥异於)
+				(NP-OBJ (NN 中原))))
+			(PU ，)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (ADVP (AD 又))
+				(VP (VV 靠近)
+				    (NP-OBJ (NP (NP-PN (NR 印度))
+						(NP (NN 北部)))
+					    (CC 和)
+					    (NP-PN (NR 尼泊尔))))))))
+	    (PU ，)
+	    (PP-TMP (P 在)
+		    (LCP (IP (IP (NP-TMP (QP (OD 十二))
+					 (NP (NN 世纪)))
+				 (NP-PN-SBJ (NR 印度))
+				 (VP (LB 被)
+				     (CP-OBJ (WHNP-3 (-NONE- *OP*))
+					     (IP (NP-SBJ (NN 回族))
+						 (VP (VV 入侵)
+						     (NP-OBJ (-NONE- *T*-3)))))))
+			     (PU ，)
+			     (IP (NP-SBJ (-NONE- *pro*))
+				 (VP (VV 致)
+				     (NP-OBJ (NN 佛教))
+				     (IP (NP-SBJ (-NONE- *PRO*))
+					 (VP (PP-LOC (P 在)
+						     (NP-PN (NR 印度)))
+					     (VP (VV 灭亡)))))))
+			 (LC 後)))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (NP (NN 大师)
+			(CC 及)
+			(NN 经典)))
+	    (VP (ADVP (AD 因此))
+		(VP (MSP 而)
+		    (VP (ADVP (AD 大量))
+			(VP (VV 传入)
+			    (NP-PN-OBJ (NR 西藏))))))) 
+	</parse>
+	<arg n="0">
+	许多 大师 及 经典 
+	</arg>
+	<arg n="1">
+	西藏 
+	</arg>
+	<arg n="m" f="adv">
+	大量 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<arg n="m" f="tmp">
+	在 十二 世纪 印度 被 *OP* 回族 入侵 *T*-3 ， *pro* 致 佛教 *PRO* 在 印度 灭亡 後 
+	</arg>
+	<arg n="m" f="prp">
+	因为 地理 风俗 迥异於 中原 ， *pro* 又 靠近 印度 北部 和 尼泊尔 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="tpc">
+	西藏 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 棉布))
+	    (VP (VV 传入))) 
+	</parse>
+	<arg n="0">
+	棉布 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

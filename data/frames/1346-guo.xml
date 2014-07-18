@@ -1,0 +1,277 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过 </id>
+    <frameset id="f1" edef="experience">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="thing experienced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 老板们))
+	      (VP (VP (ADVP (AD 宁可))
+		      (VP (VV 放弃)
+			  (NP-OBJ (NN 赛季))))
+		  (PU ，)
+		  (VP (ADVP (AD 也))
+		      (ADVP (AD 不))
+		      (VP (VV 肯)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (DNP (ADJP (JJ 现存))
+							    (DEG 的))
+						       (NP (NN 劳工)
+							   (NN 系统)))
+						   (LC 下)))
+				      (VP (VV 过)
+					  (NP-OBJ (NN 日子))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  日子 	  	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 现存 的 劳工 系统 下 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="surpass">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="time frame, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 其他)
+			  (QP (CD 四)
+			      (CLP (M 个))))
+		      (NP (NN 孩子)))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 没有)
+		      (VP (VV 过)
+			  (NP-OBJ (NN 危险期)))))) 
+	  </parse>
+	  <arg n="0">
+	  其他 四 个 孩子 	  	  
+	  </arg>
+	  <arg n="1">
+	  危险期 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (NN 水灾))
+		       (VP (VV 过)))
+		   (LC 后)) 
+	  </parse>
+	  <arg n="1">
+	  水灾 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="thing expired"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+			       (CP (IP (IP (NP-SBJ (-NONE- *T*-2))
+					   (VP (ADVP (AD 未))
+					       (VP (VV 持有)
+						   (NP-OBJ (NP (NP-PN (NR 港)
+								      (NR 澳))
+							       (NP (NN 同胞)))
+							   (NP (NN 回乡证))))))
+				       (CC 以及)
+				       (IP (NP-TPC (-NONE- *T*-2))
+					   (NP-SBJ (NN 回乡证)
+						   (NN 有效期))
+					   (VP (ADVP (AD 已))
+					       (VP (VV 过)))))
+				   (DEC 的)))
+			   (NP (NN 申请人)))
+		       (DEG 的))
+		  (NP (NN 申请))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="0" f="pse">
+	  回乡证 有效期 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 does well in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 回顾)
+			  (NP-OBJ (DP (DT 这)
+				      (QP (CD 两)
+					  (CLP (M 项))))
+				  (DNP (NP (PN 我))
+				       (DEG 的))
+				  (NP (NN 最爱)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 可以)
+		      (VP (VV 算)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VPT (VV 过)
+					   (DER 得)
+					   (VV 去)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 passes by/goes through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 船))
+		      (VP (VV 过)))
+	      (VP (VE 无)
+		  (NP-OBJ (NN 痕)))) 
+	  </parse>
+	  <arg n="0">
+	  船 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 surpasses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 功))
+	      (VP (VV 过)
+		  (NP-OBJ (QP (CD 五))
+			  (NP (NN 帝))))) 
+	  </parse>
+	  <arg n="0">
+	  功 
+	  </arg>
+	  <arg n="1">
+	  五 帝 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f7">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="test/exam arg0 passes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 更))
+		  (PP-TMP (P 在)
+			  (NP (NT 今年)
+			      (NT 九月)))
+		  (PP-PRP (P 因)
+			  (IP (NP-SBJ (NN 环评))
+			      (VP (ADVP (AD 未))
+				  (VP (VV 过)))))
+		  (VP (VV 停止)
+		      (NP-OBJ (NN 动工)
+			      (NN 计画))))) 
+	  </parse>
+	  <arg n="1">
+	  环评 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f8">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 comes over to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 好莱坞))
+		  (VP (VV 过)
+		      (NP-PN-OBJ (NR 台湾)))
+		  (PRN (PU ——)
+		       (IP-Q (NP-SBJ (ADJP (JJ 大))
+				     (NP (NN 鱼)))
+			     (VP (VV 吃)
+				 (NP-OBJ (ADJP (JJ 小))
+					 (NP (NN 鱼))))))) 
+	  </parse>
+	  <arg n="0">
+	  好莱坞 
+	  </arg>
+	  <arg n="1">
+	  台湾 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

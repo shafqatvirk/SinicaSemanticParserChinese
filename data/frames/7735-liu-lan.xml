@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 浏览 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 goes over/looks through"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (PU 「)
+					 (NN 美国化)
+					 (PU 」))
+				 (VP (VV 席卷)
+				     (NP-OBJ (NN 全球))))
+			     (LC 之际)))
+		(PU ，)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VV 能)
+		    (VP (VP (VV 让)
+			    (NP-OBJ (NP-PN (NR 台湾))
+				    (NP (NN 读者)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VP (VE 有)
+					    (NP-OBJ (NN 机会)))
+					(VP (VV 浏览)
+					    (NP-OBJ (NP-PN (NR 欧洲))
+						    (NP (NN 文化)))))
+				    (PU ，)
+				    (VP (VV 换)
+					(NP-OBJ (QP (CD 一)
+						    (CLP (M 种)))
+						(NP (NN 视野)))))))
+			(PU ，)
+			(VP (VV 提供)
+			    (NP-OBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (ADVP (AD 更))
+							(VP (VA 全面))))
+						(DEC 的)))
+					(NP (NN 观照)))
+				    (CC 和)
+				    (NP (DNP (NP (NN 多元化))
+					     (DEG 的))
+					(NP (NN 思考)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	欧洲 文化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

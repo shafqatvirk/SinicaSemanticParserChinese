@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 检察 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 检察)
+		      (NN 机关))
+	      (VP (VV 决定)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 对)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 涉嫌)
+							  (NP-OBJ (NN 犯罪))))
+						  (DEC 的)))
+					  (QP (CD 九))
+					  (NP (NN 人))))
+			      (VP (VV 予以)
+				  (NP-OBJ (NN 逮捕))))))) 
+	  </parse>
+	  <arg n="0">
+	  机关 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 乐得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is happy to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 随著)
+		    (IP (NP-SBJ (NN 股市) )
+			(VP (ADVP (AD 直直))
+			    (VP (VV 落)))))
+	    (PU ，)
+	    (IP (IP (NP-SBJ (NN 水族业者) )
+		    (VP (ADVP (AD 纷纷))
+			(VP (VSB (VV 降价)
+				 (VV 求售)))))
+		(PU ，)
+		(IP (NP-SBJ (NN 消费者) )
+		    (VP (ADVP (AD 也))
+			(VP (VV 乐得)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 逢)
+						    (NP-OBJ (NN 低) )))
+					(VP (VV 买进))))))))) 
+	</parse>
+	<arg n="0">
+	消费者 
+	</arg>
+	<arg n="1">
+	*PRO* *PRO* 逢 低 买进 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="mnr">
+	随著 股市 直直 落 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

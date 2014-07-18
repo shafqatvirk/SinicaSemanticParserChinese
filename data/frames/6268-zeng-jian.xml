@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 增建 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 builds and expands"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 房舍))
+	    (VP (ADVP (AD 也))
+		(VP (VP (ADVP (AD 不))
+			(VP (VV 能)
+			    (VP (PP-PRP (P 因)
+					(IP (NP-SBJ (NN 人口))
+					    (VP (VV 增加))))
+				(VP (MSP 而)
+				    (VP (VV 增建))))))
+		    (PU ，)
+		    (VP (ADVP (AD 只))
+			(VP (VV 能)
+			    (VP (PP-LOC (P 在)
+					(LCP (NP (DNP (ADJP (JJ 原有))
+						      (DEG 的))
+						 (NP (NN 住宅)))
+					     (LC 上)))
+				(VP (VV 做)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VA 小小)))
+						    (DEC 的)))
+					    (NP (NN 翻修)
+						(CC 与)
+						(NN 整新)))))))))) 
+	</parse>
+	<arg n="1">
+	房舍 
+	</arg>
+	<arg n="m" f="prp">
+	因 人口 增加 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 想要)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 盖)
+					(NP-OBJ (NN 房子)))
+				    (CC 或是)
+				    (VP (VV 增建))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VV 会)
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ (NN 人))
+				(VP (VV 来)
+				    (VP (VV 查)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

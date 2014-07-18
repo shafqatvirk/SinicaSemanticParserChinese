@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迁都 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="place arg0 moves the capital to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 中央)
+			  (NN 政府))
+		  (VP (VP (ADVP-WH (AD 怎))
+			  (VP (VV 能)
+			      (VP (VP (VV 僻处)
+				      (NP-OBJ (NP (NN 北部))
+					      (QP (CD 一))
+					      (NP (NN 隅))))
+				  (PU ，)
+				  (VP (VV 让)
+				      (NP-OBJ (NP (DP (DT 全))
+						  (NP (NN 省)))
+					      (NP (NN 官民)))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 长途))
+					      (VP (VV 奔波))))))))
+		      (PU ？)
+		      (VP (ADVP (AD 不如))
+			  (VP (VV 迁都)
+			      (NP-PN-OBJ (NR 台中)))))) 
+	  </parse>
+	  <arg n="0">
+	  中央 政府 
+	  </arg>
+	  <arg n="1">
+	  台中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不如 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

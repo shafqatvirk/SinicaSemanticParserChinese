@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 敷上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 applies"/>
+    <role argnum="2" argrole="entity arg1 is applied on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (QP (CD 一)
+				(CLP (M 首)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 广为))
+					    (VP (VV 流传))))
+				    (DEC 的)))
+			    (ADJP (JJ 流行))
+			    (NP (NN 歌曲)))
+		    (NP-TTL (PU 「)
+			    (NP-PN (NR 绿岛))
+			    (ADJP (JJ 小))
+			    (NP (NN 夜曲))
+			    (PU 」)))
+	    (PU ，)
+	    (VP (PP-BNF (P 为)
+			(NP (PN 它)))
+		(VP (VV 敷上)
+		    (AS 了)
+		    (NP-OBJ (ADJP (JJ 浪漫))
+			    (ADJP (JJ 纯情))
+			    (NP (NN 色彩)))))) 
+	</parse>
+	<arg n="0">
+	一 首 *OP* *T*-1 广为 流传 的 流行 歌曲 「 绿岛 小 夜曲 」 
+	</arg>
+	<arg n="1">
+	浪漫 纯情 色彩 
+	</arg>
+	<arg n="2">
+	为 它 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 只是))
+		    (VP (VV 敷上)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 层)))
+				(NP (NN 灰泥)))))
+		(PU ，)
+		(VP (VV 咬咬)
+		    (NP-OBJ (NN 牙)))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (VP (VV 继续)
+			(VP (VV 干活)))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	一 层 灰泥 
+	</arg>
+	<arg n="m" f="adv">
+	只是 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

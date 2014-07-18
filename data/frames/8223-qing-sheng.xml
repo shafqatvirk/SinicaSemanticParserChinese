@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 庆生 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 celebrates the birthday of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 图) )
+	      (VP (VC 为)
+		  (NP-PRD (IP-APP (NP-SBJ (NP (PN 她))
+					  (CC 与)
+					  (NP (NP-APP (NN 艺文界)
+						      (NN 友人) )
+					      (NP-PN-APP (NR 柴宝琳)
+							 (PRN (PU （)
+							      (QP (NP (NN 右) )
+								  (QP (CD 一)))
+							      (PU ）))
+							 (PU 、)
+							 (NR 晨曦)
+							 (PRN (PU （)
+							      (QP (NP (NN 左) )
+								  (QP (CD 二)))
+							      (PU ）))
+							 (ETC 等))
+					      (NP (NN 人) )))
+				  (VP (VV 庆生)))
+			  (QP (CD 一))
+			  (NP (NN 景) )))) 
+	  </parse>
+	  <arg n="0">
+	  她 与 艺文界 友人 柴宝琳 （ 右 一 ） 、 晨曦 （ 左 二 ） 等 人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

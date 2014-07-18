@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采矿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="miner"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DP (DT 每))
+              (NP (NN 人)))
+      (VP (DP-ADV (DT 每)
+                  (CLP (M 班)))
+          (ADVP (AD 平均))
+          (VP (VV 采矿)
+              (QP-OBJ (CD 十七点六)
+                      (CLP (M 吨)))))))
+	</parse>
+	<arg n="0"> 每 人 </arg>
+	<arg n="M" f="ADV"> 每 班 </arg>
+	<arg n="M" f="ADV"> 平均 </arg>
+	<V/>
+	<arg n="M" f="EXT"> 十七点六 吨 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 安养 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="time arg0 spends in comfort"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 有鉴於)
+			(IP-OBJ (LCP-TMP (LCP (NP-PN (NR 唐))
+					      (LC 末))
+					 (LC 以来))
+				(IP (IP (NP-SBJ (NN 君))
+					(VP (VA 弱)))
+				    (IP (NP-SBJ (NN 臣))
+					(VP (VA 强)))
+				    (PU 、)
+				    (IP (NP-SBJ (NN 藩镇))
+					(VP (VV 割据)))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 宋太祖))
+	    (VP (ADVP (AD 先))
+		(VP (VC 是)
+		    (VP (VP (VV 导演)
+			    (AS 了)
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 出)))
+				    (CP-APP (IP (PU 「)
+						(NP-SBJ (NN 杯酒))
+						(VP (VV 释)
+						    (NP-OBJ (NN 兵权)))
+						(PU 」))
+					    (DEC 的))
+				    (ADJP (JJ 好))
+				    (NP (NN 戏))))
+			(PU ，)
+			(VP (VV 让)
+			    (NP-OBJ (NN 开国)
+				    (NN 元老))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (ADVP (AD 自动))
+					(VP (VV 告老还乡)))
+				    (PU ，)
+				    (VP (VV 去)
+					(VP (VP (VP (VV 买)
+						    (NP-OBJ (NN 田)))
+						(VP (VV 置屋)))
+					    (PU 、)
+					    (VP (DVP (VP (VCD (VV 饮酒)
+							      (VA 欢乐)))
+						     (DEV 的))
+						(VP (VV 安养)
+						    (NP-OBJ (NN 天年))))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	天年 
+	</arg>
+	<arg n="m" f="adv">
+	饮酒 欢乐 的 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交织 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="things woven together"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (QP-PRD (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 希望)
+					  (CC 与)
+					  (NN 失望))
+				  (VP (PP-TMP (-NONE- *T*-1))
+				      (ADVP (AD 相))
+				      (VP (VV 交织))))
+			      (DEC 的)))
+		      (QP (CD 一)
+			  (CLP (M 年))))) 
+	  </parse>
+	  <arg n="0">
+	  希望 与 失望 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  相 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (DP (DT 该)
+			    (CLP (M 首)))
+			(ADJP (JJ 大型))
+			(NP (NN 交响曲)
+			    (CC 及)
+			    (NN 合唱)
+			    (NN 作品)))
+	      (VP (PP-LGS (P 由)
+			  (NP (NP (NP-PN (NR 中国))
+				  (NP (NN 古代)
+				      (NN 编钟)))
+			      (PU 、)
+			      (NP (NN 交响)
+				  (NN 乐团))
+			      (PU 、)
+			      (NP (NN 大提琴)
+				  (NN 独奏))
+			      (CC 和)
+			      (NP (DNP (NP (NN 儿童))
+				       (DEG 的))
+				  (ADJP (JJ 纯美))
+				  (NP (NN 歌声)))))
+		  (VP (VP (VV 交织)
+			  (NP-OBJ (-NONE- *-1)))
+		      (VP (MSP 而)
+			  (VP (VV 成)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 中国 古代 编钟 、 交响 乐团 、 大提琴 独奏 和 儿童 的 纯美 歌声 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="things described"/>
+      <role argnum="1" argrole="thing arg0 is woven together to form"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (ADJP (JJ 不同))
+			  (NP (NN 元素)))
+		  (VP (VRD (VV 交织)
+			   (VV 成))
+		      (NP-OBJ (NN 织锦缎)))) 
+	  </parse>
+	  <arg n="0">
+	  不同 元素 
+	  </arg>
+	  <arg n="1">
+	  织锦缎 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="components"/>
+      <role argnum="2" argrole="whole"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 宁波港))
+	      (VP (VP (PP-LGS (P 由)
+			      (NP (NP-PN (NR 北仑)
+					 (NN 港区))
+				  (PU 、)
+				  (NP-PN (NR 镇海)
+					 (NN 港区))
+				  (CC 和)
+				  (NP-PN (NR 宁波)
+					 (NN 港区))))
+		      (VP (VV 组成)))
+		  (PU ，)
+		  (VP (VV 集)
+		      (NP-OBJ (NN 内河港)
+			      (PU 、)
+			      (NN 河口港)
+			      (CC 和)
+			      (NN 海港))
+		      (PP-LOC (P 于)
+			      (NP (NN 一体)))))) 
+	  </parse>
+	  <arg n="0">
+	  宁波港 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  内河港 、 河口港 和 海港 
+	  </arg>
+	  <arg n="2">
+	  于 一体 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

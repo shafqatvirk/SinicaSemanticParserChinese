@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 绝望 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 loses hope in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (ADJP (JJ 电))
+			(NP (PN 吉他)))
+		(VP (DVP (VP (VA 狂暴))
+			 (DEV 地))
+		    (VP (VV 描绘)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (NN 人类))
+					    (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 绝望)))
+					(DEC 的)))
+				(NP (NN 情绪)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	人类 
+	</arg>
+	<arg n="0" f="pse">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不))
+		(VP (VV 要)
+		    (VP (VV 绝望)
+			(DER 得)
+			(VP-EXT (ADVP (AD 太))
+				(VP (VA 早))))))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 不))
+		(VP (VV 要)
+		    (VP (VV 讳疾忌医))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	太 早 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

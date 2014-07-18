@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投工 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="amount of labor put in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 截止)
+		      (NP (NT 八月)
+			  (NT 三十日)))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 市)))
+	      (VP (VP (ADVP (AD 日))
+		      (VP (VV 投)
+			  (NP-OBJ (NN 劳力))
+			  (QP-EXT (CD 十五点八三万)
+				  (CLP (M 个)))))
+		  (PU ，)
+		  (VP (ADVP (AD 累计))
+		      (VP (VV 投工)
+			  (NP-OBJ (QP (CD 九十三点六五万))
+				  (NP (NN 工)))))
+		  (PU ，)
+		  (VP (ADVP (AD 已))
+		      (VP (VV 完成)
+			  (NP-OBJ (NN 土石方))
+			  (QP-EXT (CD 七十三万)
+				  (CLP (M 立方米))))))) 
+	  </parse>
+	  <arg n="0">
+	  该 市 
+	  </arg>
+	  <arg n="1">
+	  九十三点六五万 工 
+	  </arg>
+	  <arg n="m" f="adv">
+	  累计 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  截止 八月 三十日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 悬 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity hung"/>
+      <role argnum="2" argrole="location arg1 is hung"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-DIR (P 往)
+					  (LCP (NP (NN 车窗))
+					       (LC 外)))
+				  (ADVP (AD 一))
+				  (VP (VV 看))))
+		      (PU ，)
+		      (ADVP (AD 才))
+		      (VP (VV 知)
+			  (IP-OBJ (NP-SBJ (NN 车子))
+				  (VP (ADVP (AD 已经))
+				      (VP (VV 悬)
+					  (PP-LOC (P 在)
+						  (LCP (NP (NN 山腰))
+						       (LC 间)))))))))
+	      (SP 了)) 
+	  </parse>
+	  <arg n="1">
+	  车子 
+	  </arg>
+	  <arg n="2">
+	  在 山腰 间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

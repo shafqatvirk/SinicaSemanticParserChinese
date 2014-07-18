@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转战 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place/position arg0 moves to"/>
+    <role argnum="2" argrole="place/position arg0 moves from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (LCP-TMP (QP (CD 半)
+					     (CLP (M 年)))
+					 (LC 前))
+				(ADVP (AD 才))
+				(PP-DIR (P 从)
+					(NP (NP (NP-PN (NR 国科会))
+						(NP (NN 企画)
+						    (NN 处长)))
+					    (QP (CD 一))
+					    (NP (NN 职))))
+				(VP (VV 转战)
+				    (NP-OBJ (NN 民间)))))
+			(DEC 的)))
+		(NP-APP (NP-PN (NR 安基)
+			       (NN 资讯))
+			(NP (NN 总经理)))
+		(NP-PN (NR 张善政))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	民间 
+	</arg>
+	<arg n="2">
+	从 国科会 企画 处长 一 职 
+	</arg>
+	<arg n="m" f="tmp">
+	半 年 前 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 一))
+			(VP (VRD (VV 问)
+				 (VV 起来)))))
+	    (NP-SBJ (QP (CD 许多))
+		    (NP (NN 孩子)))
+	    (VP (ADVP (AD 都))
+		(VP (PU 「)
+		    (VV 转战)
+		    (PU 」)
+		    (AS 过)
+		    (NP-OBJ (DNP (NP (NP-PN (NR 美国))
+				     (PU 、)
+				     (NP-PN (NR 台湾))
+				     (PU ，)
+				     (CC 或是)
+				     (NP (NN 大陆)))
+				 (DEG 的))
+			    (QP (CD 好几)
+				(CLP (M 所)))
+			    (NP (NN 学校)))))) 
+	</parse>
+	<arg n="0">
+	许多 孩子 
+	</arg>
+	<arg n="1">
+	美国 、 台湾 ， 或是 大陆 的 好几 所 学校 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 一 问 起来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

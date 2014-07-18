@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 彻悟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 understands thoroughly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP(PP-DIR (P 对于)
+			     (NP (NN 亲情)
+				 (CC 和)
+				 (NN 感情) ))
+		     (PU ，)
+		     (NP-PN-SBJ (NR 姜)
+				(NN 小姐) )
+		     (VP (ADVP (AD 也))
+			 (VP (VE 有)
+			     (NP-OBJ (QP (CD 一)
+					 (CLP (M 番)))
+				     (NP (NN 彻悟)))))) 
+	  </parse>
+	  <arg n="0">
+	  姜 小姐 
+	  </arg>
+	  <arg n="1">
+	  对于 亲情 和 感情 
+	  </arg>
+	  <arg n="m" f="dis">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

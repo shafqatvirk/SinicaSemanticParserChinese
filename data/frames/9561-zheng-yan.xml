@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 睁眼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity opening eyes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-4 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (NN 社会))
+			  (VP (ADVP (AD 似乎))
+			      (VP (VP (VV 睁眼))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 见)
+					  (NP-OBJ (-NONE- *T*-4)))))))
+		      (DEC 的)))
+	      (NP (NN 患者))) 
+	  </parse>
+	  <arg n="0">
+	  社会 
+	  </arg>
+	  <arg n="m" f="adv">
+	  似乎 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

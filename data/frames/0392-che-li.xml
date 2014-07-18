@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="withdrawer"/>
+      <role argnum="1" argrole="withdrawing from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年)
+		      (NT ８月)
+		      (NT ３１日))
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-PN-TPC (NR 俄))
+				  (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 驻)
+				      (NP-PN-OBJ (NR 拉脱维亚))))
+			      (DEC 的)))
+		      (NP (NN 军队)))
+	      (VP (ADVP (AD 全部))
+		  (VP (VV 撤离)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 俄 *T*-2 驻 拉脱维亚 的 军队 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 ８月 ３１日 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP-PN-APP (NR 美)
+					  (PU 、)
+					  (NR 英)
+					  (PU 、)
+					  (NR 法))
+			       (QP (CD 三))
+			       (NP (NN 国)))
+			   (DEG 的))
+		      (NP (NN 士兵)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 将))
+		  (PP-TMP (P 于)
+			  (LCP (NP (NT ９月))
+			       (LC 初)))
+		  (ADVP (AD 最后))
+		  (VP (VV 撤离)
+		      (NP-PN-OBJ (NR 柏林))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  美 、 英 、 法 三 国 的 士兵 
+	  </arg>
+	  <arg n="1">
+	  柏林 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 ９月 初 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最后 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

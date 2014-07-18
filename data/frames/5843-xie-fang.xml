@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 协防 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 helps defend"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (ADVP (AD 而))
+		    (NP-SBJ (DNP (NP-PN (NR 台湾))
+				 (DEG 的))
+			    (QP (CD 两)
+				(CLP (M 家)))
+			    (NP (NN 英文报)))
+		    (VP (ADVP (CS 虽然))
+			(ADVP (AD 都))
+			(VP (VE 有)
+			    (NP-OBJ (QP (CD 四十多)
+					(CLP (M 年)))
+				    (NP (NN 历史))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 创办)
+					(NP-OBJ (NN 初期)
+						(NN 英文报)))
+				    (VP (VV 诉诸)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (ADJP (JJ 主要))
+		    (NP (NN 读者)))
+	    (VP (VC 是)
+		(NP-PRD (ADJP (JJ 外籍))
+			(NP (NN 人士))
+			(PU ，)
+			(PRN (ADVP (AD 尤其是))
+			     (NP (DNP (LCP (IP (NP-SBJ (NN 美军))
+					       (VP (VV 协防)
+						   (NP-PN-OBJ (NR 台湾))))
+					   (LC 时))
+				      (DEG 的))
+				 (QP (CD 大量))
+				 (ADJP (JJ 驻台))
+				 (NP (NN 美军))))))) 
+	</parse>
+	<arg n="0">
+	美军 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 加入)
+			(NP-PN-OBJ (NR TMD))))
+	    (VP (ADVP (AD 将))
+		(VP (VV 使)
+		    (NP-PN-OBJ (NR 台湾))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 回到)
+			    (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 美国))
+						(VP (VV 协防)))
+					    (DEC 的))
+				    (NP (NN 状态)))))))) 
+	</parse>
+	<arg n="0">
+	美国 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

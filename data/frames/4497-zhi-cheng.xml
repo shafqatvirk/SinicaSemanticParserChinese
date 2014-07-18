@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 织成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 knits"/>
+      <role argnum="2" argrole="material arg0 knits arg1 with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-MNR (P 以)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 可以)
+						  (VP (VP (VV 纺成)
+							  (NP-OBJ (DP (DT 各)
+								      (CLP (M 种)))
+								  (NP (NN 纱线))))
+						      (PU ，)
+						      (VP (ADVP (AD 再))
+							  (ADVP (AD 进一步))
+							  (VP (VV 织成)
+							      (NP-OBJ (DP (DT 各)
+									  (CLP (M 类)))
+								      (NP (NP (NN 衣料))
+									  (PU 、)
+									  (NP (ADJP (JJ 人造))
+									      (NP (NN 皮))))))))))
+					  (DEC 的)))
+				  (NP (NN 加工)
+				      (NN 丝))))
+		      (VP (MSP 来)
+			  (VP (VV 说))))) 
+	  </parse>
+	  <arg n="1">
+	  各 类 衣料 、 人造 皮 
+	  </arg>
+	  <arg n="2">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

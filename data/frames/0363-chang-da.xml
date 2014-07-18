@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 长达 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="length"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-OBJ (QP (CD 一)
+              (CLP (M 场)))
+          (CP (WHNP-1 (-NONE- *OP*))
+              (CP (IP (NP-SBJ (-NONE- *T*-1))
+                      (VP (VV 长达)
+                          (QP-OBJ (CD 十)
+                                  (CLP (M 年)))))
+                  (DEC 的)))
+          (IP-APP (PU “)
+                  (NP-TPC (NN 农业))
+                  (NP-SBJ (-NONE- *pro*))
+                  (VP (VV 学)
+                      (NP-PN-OBJ (NR 大寨)))
+                  (PU ”))
+          (NP (NN 活动))))
+	</parse>
+	<arg n="0"> (*T*-1)->(“农业*pro*学大寨”活动) </arg>
+	<V/>
+	<arg n="1"> 十 年 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

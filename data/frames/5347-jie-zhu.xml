@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 揭橥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 upholds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 一九九二年))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 美国))
+			    (NP (NN 总统)))
+		    (NP-PN (NR 柯林顿)))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 上台)))
+			 (LC 之初))
+		(PU ，)
+		(VP (VV 揭橥)
+		    (AS 了)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 强调)
+					    (NP-OBJ (NN 研发)
+						    (CC 与)
+						    (NN 创新))))
+				    (DEC 的)))
+			    (NP (PU 「)
+				(ADJP (JJ 新))
+				(NP (NN 经济))
+				(PU 」))
+			    (NP (NN 目标)))))) 
+	</parse>
+	<arg n="0">
+	美国 总统 柯林顿 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 强调 研发 与 创新 的 「 新 经济 」 目标 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 上台 之初 
+	</arg>
+	<arg n="m" f="tmp">
+	一九九二年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

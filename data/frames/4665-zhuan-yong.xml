@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 专用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing used"/>
+      <role argnum="2" argrole="entity arg1 is used for/on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 并))
+		  (PP-DIR (P 从)
+			  (LCP (NP (NN 教育)
+				   (NN 经费))
+			       (LC 中)))
+		  (VP (VP (VV 挤出)
+			  (NP-OBJ (QP (CD 二十万)
+				      (CLP (M 元)))
+				  (NP (NN 经费)))
+			  (VP (VV 专用)
+			      (PP (P 于)
+				  (NP (NN 教育)
+				      (NN 救灾)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  于 教育 救灾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-MNR (P 用)
+		  (NP (QP (CD 一)
+			  (CLP (M 种)))
+		      (CP (WHNP-7 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 新生儿))
+				  (VP (VV 专用)
+				      (NP-OBJ (-NONE- *T*-7))))
+			      (DEC 的)))
+		      (NP (NN 输液泵)))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-7 
+	  </arg>
+	  <arg n="2">
+	  新生儿 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

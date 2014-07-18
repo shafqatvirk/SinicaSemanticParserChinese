@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 囊括 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing taken"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (ADVP (AD 此后))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 运动员)))
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *pro*))
+						   (VP (MSP 所)
+						       (VP (VV 参加)
+							   (NP-OBJ (-NONE- *T*-1)))))
+					       (DEC 的)))
+				       (DP (DT 每)
+					   (CLP (M 届)))
+				       (NP (NN 世乒赛)))
+				   (LC 上)))
+		      (ADVP (AD 都))
+		      (VP (VV 获得)
+			  (AS 了)
+			  (NP-OBJ (NN 冠军)))))
+	      (PU ，)
+	      (IP (NP-ADV (NN 其中))
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 还))
+		      (PP-LOC (P 在)
+			      (LCP (NP (QP (CD 两)
+					   (CLP (M 届)))
+				       (NP (NN 世乒赛)))
+				   (LC 上)))
+		      (VP (VV 囊括)
+			  (NP-OBJ (DP (DT 全部)
+				      (QP (CD 七)
+					  (CLP (M 项))))
+				  (NP (NN 冠军))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  全部 七 项 冠军 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 两 届 世乒赛 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  其中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,166 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进口 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="importer"/>
+      <role argnum="1" argrole="thing imported"/>
+      <role argnum="2" argrole="entity arg1 is imported from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 延长)
+			  (NP-OBJ (IP-APP (NP-SBJ (NN 外商)
+						  (NN 投资)
+						  (NN 企业))
+					  (VP (ADVP (AD 免税))
+					      (VP (VV 进口)
+						  (NP-OBJ (NN 设备)
+							  (CC 和)
+							  (NN 原材料)))))
+				  (NP (NN 宽限期)))))) 
+	  </parse>
+	  <arg n="0">
+	  外商 投资 企业 
+	  </arg>
+	  <arg n="1">
+	  设备 和 原材料 
+	  </arg>
+	  <arg n="m" f="adv">
+	  免税 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (PP (P 与)
+			  (NP (PN 此)))
+		      (NP (NN 同时)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (PP-DIR (P 从)
+			  (NP (QP (CD 三十多)
+				  (CLP (M 个)))
+			      (NP (NN 国家)
+				  (CC 和)
+				  (NN 地区))))
+		  (VP (VV 进口)
+		      (NP-OBJ (NP (NN 技术))
+			      (CC 和)
+			      (NP (ADJP (JJ 成套))
+				  (NP (NN 设备))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  技术 和 成套 设备 
+	  </arg>
+	  <arg n="2">
+	  从 三十多 个 国家 和 地区 
+	  </arg>
+	  <arg n="m" f="adv">
+	  与 此 同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 侵犯)
+				      (NP-OBJ (NN 知识)
+					      (NN 产权)
+					      (PRN (PU （)
+						   (VP (VV 包括)
+						       (NP-OBJ (NN 商标)
+							       (NN 专用权)
+							       (PU 、)
+							       (NN 著作权)
+							       (CC 和)
+							       (NN 专利权)))
+						   (PU ）)))))
+			      (DEC 的)))
+		      (NP (NN 货物)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 准)
+		      (VP (VV 进口)
+			  (CC 或者)
+			  (VV 出口))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 侵犯 知识 产权 （ 包括 商标 专用权 、 著作权 和 专利权 ） 的 货物 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (PU ，)
+	      (NP-SBJ (NP (ADJP (JJ 初级))
+			  (NP (NN 形状)))
+		      (NP (NN 塑料)))
+	      (VP (VP (VV 进口)
+		      (QP-EXT (CD 一百一十万)
+			      (CLP (M 吨))))
+		  (PU ，)
+		  (VP (VV 增长)
+		      (QP-EXT (CD 百分之四十七点七)))
+		  (PU ，)
+		  (VP (VV 价值)
+		      (QP-OBJ (CD 九点五亿)
+			      (CLP (M 美元))))
+		  (PU ，)
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (LCP-TMP (NP (NT 今年))
+						       (LC 以来))
+					      (NP-PN-LOC (NR 中国))
+					      (ADVP (AD 最))
+					      (VP (VA 大))))
+				      (DEC 的)))
+			      (NP (NN 单项)
+				  (NN 进口)
+				  (NN 商品)))))) 
+	  </parse>
+	  <arg n="1">
+	  初级 形状 塑料 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一百一十万 吨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  其中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

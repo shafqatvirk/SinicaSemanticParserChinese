@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 震 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause (earthquake)"/>
+    <role argnum="1" argrole="thing that is lost due to arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 至少))
+		(VP (VRD (PU 「)
+			 (VV 震)
+			 (PU 」)
+			 (VV 掉))
+		    (AS 了)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (NP-PRD (QP (ADVP (AD 近))
+							(QP (CD 百亿)
+							    (CLP (M 元))))
+						    (NP (NN 台币)))))
+				    (DEC 的)))
+			    (NP (NN 纺织品)
+				(NN 订单)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 近 百亿 元 台币 的 纺织品 订单 
+	</arg>
+	<arg n="m" f="adv">
+	至少 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

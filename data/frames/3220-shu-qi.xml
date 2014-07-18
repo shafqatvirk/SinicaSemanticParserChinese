@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 输棋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loser"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-PRP (-NONE- *T*-1))
+				      (VP (VV 输棋))))
+			      (DEC 的)))
+		      (NP (NN 原因)))
+	      (VP (ADVP (AD 却))
+		  (DP-ADV (DT 各))
+		  (VP (VE 有)
+		      (NP-OBJ (NN 不同))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="prp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

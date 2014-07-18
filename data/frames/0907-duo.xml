@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 夺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (IP-APP (NP-SBJ (NP-PN (NR 韩国))
+				  (NP (NN 棋手)))
+			  (VP (VV 夺)
+			      (NP-OBJ (NN 冠))))
+		  (NP (NN 次数))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 棋手 
+	  </arg>
+	  <arg n="1">
+	  冠 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤换 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="dismisser"/>
+      <role argnum="1" argrole="person dismissed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 能)
+					  (VP (ADVP (AD 如期))
+					      (VP (VV 实现)
+						  (NP-OBJ (NN 扭亏)))))))
+			      (DEC 的)))
+		      (NP (NN 企业)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 要)
+		  (VP (ADVP (AD 坚决))
+		      (VP (VV 撤换)
+			  (NP-OBJ (NN 负责人)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  负责人 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  *OP* *T*-1 不 能 如期 实现 扭亏 的 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  坚决 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

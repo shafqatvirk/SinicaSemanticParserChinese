@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 身着 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="clothes to be dressed in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 每))
+			  (VP (VV 逢)
+			      (NP-OBJ (NN 选举)))))
+	      (PU ，)
+	      (NP-SBJ (NN 村民们))
+	      (VP (VP (VV 身着)
+		      (NP-OBJ (DNP (NP (NN 节日))
+				   (DEG 的))
+			      (NP (NN 盛装))))
+		  (PU ，)
+		  (VP (VV 扶老携幼))
+		  (VP (DVP (VP (VA 早早))
+			   (DEV 地))
+		      (VP (VV 来到)
+			  (NP-OBJ (NN 村民)
+				  (NN 委员会)
+				  (NN 大院))))
+		  (PU ，)
+		  (VP (VV 等待)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 庄严))
+				       (NP (NN 时刻)))
+				   (DEG 的))
+			      (NP (NN 到来)))))) 
+	  </parse>
+	  <arg n="0">
+	  村民们 
+	  </arg>
+	  <arg n="1">
+	  节日 的 盛装 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 每 逢 选举 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

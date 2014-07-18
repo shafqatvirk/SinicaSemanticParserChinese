@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 扫黑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 新))
+		    (NP (NN 政府)))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 扫黑)
+				 (QP-EXT (CD 半)
+					 (CLP (M 年)))))
+			 (LC 以来))
+		(ADVP (AD 再度))
+		(VP (VV 告捷)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	半 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

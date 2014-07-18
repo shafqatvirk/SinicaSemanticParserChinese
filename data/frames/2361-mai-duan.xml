@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 卖断 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing sold completely"/>
+      <role argnum="2" argrole="party sold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 国内)
+			      (NN 贸易))
+		      (VP (VV 卖断)
+			  (NP-OBJ (NN 保税区))))
+	      (VP (VV 视同)
+		  (NP-OBJ (NN 出口)))) 
+	  </parse>
+	  <arg n="0">
+	  国内 贸易 
+	  </arg>
+	  <arg n="2">
+	  保税区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

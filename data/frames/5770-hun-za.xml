@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 混杂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entities which are mixed together in arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 如今))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 混杂)
+				    (AS 著)
+				    (NP-OBJ (DP (DT 各)
+						(CLP (M 类)))
+					    (NP (NN 文化)
+						(NN 影响)))))
+			    (DEC 的)))
+		    (NP (PU 「)
+			(NN 澳门式)
+			(PU 」)))
+	    (VP (ADVP (AD 已))
+		(VP (VV 成)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (NP-LOC (NP-PN (NR 澳门))
+						    (NP (NN 文化)))
+					    (ADVP (AD 最))
+					    (VP (VA 精彩))))
+				    (DEC 的)))
+			    (NP (NN 部分)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	各 类 文化 影响 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-4))
+				    (VP (VV 混杂)))
+				(DEC 的)))
+			(NP (NN 文化)))
+		(VP (VC 是)
+		    (NP-PRD (NP-PN (NR 澳门))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VA 重要))))
+				    (DEC 的)))
+			    (NP (NN 资财))))) 
+	</parse>
+	<arg n="0">
+	*T*-4 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

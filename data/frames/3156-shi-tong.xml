@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 视同 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is considered the same as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 出口)
+			  (NN 信贷))
+		      (PU 、)
+		      (NP (NN 国际)
+			  (NN 融资)
+			  (NN 租赁)
+			  (PU 、))
+		      (NP (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (PP-MNR (P 以)
+						  (NP (NN 外汇)
+						      (NN 方式)))
+					  (VP (VV 偿还))))
+				  (DEC 的)))
+			  (NP (NN 补偿)
+			      (NN 贸易)))
+		      (PU 、)
+		      (NP (NP (NN 境外))
+			  (NP (NN 机构)
+			      (CC 和)
+			      (NN 个人))
+			  (NP (NN 外汇)
+			      (NN 存款))
+			  (PRN (PU （)
+			       (VP (ADVP (AD 不))
+				   (VP (VV 包括)
+				       (NP-OBJ (DNP (PP (P 在)
+							(LCP (NP (CP (WHNP-4 (-NONE- *OP*))
+								     (IP (NP-SBJ (-NONE- *T*-4))
+									 (VP (PP-MNR (P 经)
+										     (NP (NN 批准)))
+									     (VP (VV 经营)
+										 (NP-OBJ (ADJP (JJ 离岸))
+											 (NP (NN 业务)))))))
+								 (NP (NN 银行)))
+							     (LC 中)))
+						    (DEG 的))
+					       (NP (NN 外汇)
+						   (NN 存款)))))
+			       (PU ）)))
+		      (PU 、)
+		      (NP (NN 项目)
+			  (NN 融资))
+		      (PU 、)
+		      (NP (DNP (LCP (QP (CD 九十)
+					(CLP (M 天)))
+				    (LC 以上))
+			       (DEG 的))
+			  (LCP (NP (NN 贸易)
+				   (NN 项))
+			       (LC 下))
+			  (NP (NN 融资)))
+		      (CC 以及)
+		      (NP (DNP (NP (DP (DT 其他))
+				   (NP (NN 形式)))
+			       (DEG 的))
+			  (NP (NN 外汇)
+			      (NN 贷款))))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 视同)
+		      (NP-OBJ (NN 国际)
+			      (NN 商业)
+			      (NN 贷款)
+			      (NN 管理))))) 
+	  </parse>
+	  <arg n="0">
+	  出口 信贷 、 国际 融资 租赁 、 *OP* *T*-3 以 外汇 方式 偿还 的 补偿 贸易 、 境外 机构 和 个人 外汇 存款 （ 不 包括 在 *OP* *T*-4 经 批准 经营 离岸 业务 银行 中 的 外汇 存款 ） 、 项目 融资 、 九十 天 以上 的 贸易 项 下 融资 以及 其他 形式 的 外汇 贷款 
+	  </arg>
+	  <arg n="1">
+	  国际 商业 贷款 管理 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 国内)
+			      (NN 贸易))
+		      (VP (VV 卖断)
+			  (NP-OBJ (NN 保税区))))
+	      (VP (VV 视同)
+		  (NP-OBJ (NN 出口)))) 
+	  </parse>
+	  <arg n="0">
+	  国内 贸易 卖断 保税区 
+	  </arg>
+	  <arg n="1">
+	  出口 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

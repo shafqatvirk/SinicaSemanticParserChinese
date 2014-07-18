@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遥想 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 thinks of/imagines remotely"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 人们))
+	    (VP (ADVP (AD 已))
+		(ADVP (AD 不))
+		(VP (VV 需)
+		    (VP (PP-MNR (ADVP (AD 只))
+				(PP (P 靠)
+				    (NP (ADJP (JJ 书面))
+					(NP (NN 史料)))))
+			(VP (VV 遥想)
+			    (NP-OBJ (NP (ADJP (JJ 大))
+					(NP-PN (NR 汉)))
+				    (NP (NN 天威)))))))) 
+	</parse>
+	<arg n="0">
+	人们 
+	</arg>
+	<arg n="1">
+	大 汉 天威 
+	</arg>
+	<arg n="m" f="mnr">
+	只 靠 书面 史料 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

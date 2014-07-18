@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 围困 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity surrounded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (LCP-TMP (LCP (NP (DP (DT 本))
+				(NP (NN 月)))
+			    (LC 初))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 安盟))
+		      (NP (NN 军队)))
+	      (VP (VP (VV 开始)
+		      (VP (VV 反攻)))
+		  (PU ，)
+		  (VP (VV 围困)
+		      (AS 了)
+		      (NP-OBJ-PN (NR 万博市)
+				 (CC 和)
+				 (NR 奎托市))))) 
+	  </parse>
+	  <arg n="0">
+	  安盟 军队 
+	  </arg>
+	  <arg n="1">
+	  万博市 和 奎托市 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  本 月 初 以来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 加固)
+	      (AS 了)
+	      (NP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VV 受到)
+					       (NP-OBJ (ADJP (JJ 反政府))
+						       (NP (NN 武装)))
+					       (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 围困)))))
+				       (DEC 的)))
+			       (NP-PN (NR 万博)
+				      (CC 和)
+				      (NR 奎托市)))
+			   (DEG 的))
+		      (NP (NN 防线)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

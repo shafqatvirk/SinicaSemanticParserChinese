@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 束之高阁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 puts in attic"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (NP-PN (NR 民国))
+		      (QP (OD 八十四)
+			  (CLP (M 年))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 索性))
+		  (VP (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (VP (VV 调查))
+							  (VP (MSP 所)
+							      (VP (VV 得)
+								  (NP-OBJ (-NONE- *T*-1))))))
+						  (DEC 的)))
+					  (NP (NN 史料)))
+				  (VP (VV 束之高阁))))
+		      (PU ，)
+		      (VP (VP (VV 带)
+			      (AS 著)
+			      (NP-OBJ (NN 妻儿)))
+			  (VP (VV 出走)
+			      (NP-PN-OBJ (NR 纽西兰))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 调查 所 得 *T*-1 的 史料 
+	  </arg>
+	  <arg n="m" f="adv">
+	  索性 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  民国 八十四 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

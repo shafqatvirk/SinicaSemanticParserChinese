@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入狱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people going to prison"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (SB 被)
+	      (VP (VV 判)
+		  (NP-OBJ (-NONE- *-2))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 入狱)
+			  (NP-EXT (QP (CD 二十)
+				      (CLP (M 个)))
+				  (NP (NN 月))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  二十 个 月 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

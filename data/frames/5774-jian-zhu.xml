@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 建筑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 constructs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (NN 政府))
+	      (VP (VP (ADVP (CS 既然))
+		      (VP (VE 有)
+			  (NP-OBJ (NN 诚意)))
+		      (VP (VV 建筑)
+			  (NP-OBJ (NN 纪念碑))))
+		  (PU ，)
+		  (VP (ADVP-WH (AD 为什麽))
+		      (ADVP (AD 不))
+		      (VP (VV 敢)
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DP (DT 这些))
+					      (ADJP (JJ 旧))
+					      (NP (NN 遗迹)))
+				      (VP (ADVP (AD 也))
+					  (VP (VRD (VV 保存)
+						   (VV 下来)))))))))) 
+	</parse>
+	<arg n="0">
+	政府 
+	</arg>
+	<arg n="1">
+	纪念碑 
+	</arg>
+	<arg n="m" f="dis">
+	既然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="argM"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 南港)
+				(CC 与)
+				(NR 汐止))
+			 (DEG 的))
+		    (NP (NN 河川地)))
+	    (VP (SB 遭)
+		(VP (VCD (VV 填土)
+			 (VV 建筑))))) 
+	</parse>
+	<arg n="m" f="loc">
+	南港 与 汐止 的 河川地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

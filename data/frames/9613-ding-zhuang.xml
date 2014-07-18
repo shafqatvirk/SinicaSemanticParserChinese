@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 定桩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 finalizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (NP-ADV (QP (CD 一)
+						  (CLP (M 场)))
+					      (NP (NN 高尔夫球)))
+				      (VP (VV 打)
+					  (NP-OBJ (QP (CD 十八))
+						  (NP (NN 洞))))))
+			      (DEC 的))
+		      (NP (NN 规则)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 就此))
+		  (VP (VV 定桩)))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 一 场 高尔夫球 打 十八 洞 的 规则 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

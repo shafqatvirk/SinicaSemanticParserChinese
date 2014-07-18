@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 外销 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing sold"/>
+      <role argnum="2" argrole="location arg1 is sold at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 地方)
+		      (NN 工业)
+		      (NN 产品))
+	      (QP-SBJ (ADVP (AD 近))
+		      (QP (CD 百分之五十)))
+	      (VP (VV 外销))) 
+	  </parse>
+	  <arg n="1" f="pse">
+	  近 百分之五十 
+	  </arg>
+	  <arg n="1" f="psr">
+	  地方 工业 产品 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

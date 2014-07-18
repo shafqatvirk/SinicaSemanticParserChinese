@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下属 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 has as subordinates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 王翔))
+				  (VP (VV 创业)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP-PN (NN 民生)
+			     (NN 集团)))
+	      (PU ，)
+	      (VP (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (NP-PN-LOC (NR 江西省))
+					      (ADVP (AD 最))
+					      (ADVP (AD 早))
+					      (VP (VV 成立))))
+				      (DEC 的)))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (PP-LGS (P 由)
+						      (NP (NN 台属)
+							  (PU 、)
+							  (NN 侨属)
+							  (ETC 等)))
+					      (VSB (VV 集资)
+						   (VV 兴办))))
+				      (DEC 的)))
+			      (NP (NN 集体)
+				  (NN 企业))))
+		  (PU ，)
+		  (VP (PP-TMP (P 到)
+			      (NP (NT 今天)))
+		      (ADVP (AD 已))
+		      (VP (VV 经历)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 十一)
+				      (CLP (M 个)))
+				  (NP (NN 春秋)))))
+		  (PU ，)
+		  (VP (VV 下属)
+		      (NP-OBJ (QP (CD 二十二)
+				  (CLP (M 个)))
+			      (NP (NN 子公司)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 王翔 创业 *T*-1 的 民生 集团 
+	  </arg>
+	  <arg n="1">
+	  二十二 个 子公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

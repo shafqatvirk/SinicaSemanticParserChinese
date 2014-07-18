@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 称为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="name giver"/>
+      <role argnum="1" argrole="name receiver"/>
+      <role argnum="2" argrole="name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (CP-CND (ADVP (CS 如果))
+			  (CP (IP (NP-SBJ (DNP (LCP (NP (NN 传说))
+						    (LC 中))
+					       (DEG 的))
+					  (NP (PU “)
+					      (NN 西天)
+					      (PU ”)))
+				  (VP (VC 是)
+				      (NP-PRD (CLP (M 个))
+					      (NP (PU “)
+						  (NN 极乐世界)
+						  (PU ”)))))
+			      (SP 的话)))
+		  (PU ，)
+		  (ADVP (AD 那么))
+		  (NP-SBJ (NP-PN (NR 文部))
+			  (NP (NN 草原)))
+		  (VP (VV 应当)
+		      (VP (VV 称为)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (ADJP (JJ 当代))
+						      (NP-PN (NR 藏族))
+						      (NP (NN 牧民)))
+					      (VP (PP-LOC (-NONE- *T*-1))
+						  (VP (VV 过上)
+						      (NP-OBJ (NP (NN 社会主义))
+							      (ADJP (JJ 新))
+							      (NP (NN 生活))))))
+					  (DEC 的)))
+				  (NP (PU “)
+				      (NN 乐园)
+				      (PU ”)))))) 
+	  </parse>
+	  <arg n="1">
+	  文部 草原 
+	  </arg>
+	  <arg n="2">
+	  *OP* 当代 藏族 牧民 *T*-1 过上 社会主义 新 生活 的 “ 乐园 ” 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 传说 中 的 “ 西天 ” 是 个 “ 极乐世界 ” 的话 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 防城港)
+			 (PU 、)
+			 (NR 钦州)
+			 (PU 、)
+			 (NR 北海)
+			 (CC 和)
+			 (NR 湛江))
+	      (PU ，)
+	      (VP (LB 被)
+		  (IP-OBJ (NP-SBJ (NN 人们))
+			  (VP (VV 称为)
+			      (NP-OBJ (DNP (NP (NP (NN 西南))
+					       (ADJP (JJ 出海))
+					       (ADJP (JJ 大))
+					       (NP (NN 通道)))
+					   (DEG 的))
+				      (NP (PU “)
+					  (NN 龙头)
+					  (PU ”)))))))
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="1">
+	  防城港 、 钦州 、 北海 和 湛江 
+	  </arg>
+	  <arg n="2">
+	  西南 出海 大 通道 的 “ 龙头 ” 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

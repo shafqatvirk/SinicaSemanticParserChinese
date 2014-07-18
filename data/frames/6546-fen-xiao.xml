@@ -1,0 +1,148 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分销 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 distributes in sales"/>
+    <role argnum="2" argrole="place arg1 is distributed to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 像)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (NP-TMP (NT 如今))
+					(NP-LOC (DP (DT 全))
+						(NP (NN 省)))
+					(VP (VV 闻名))))
+				(DEC 的)))
+			(NP-PN (PU 「)
+			       (NR 海瑞)
+			       (PU 」))
+			(NP (NN 品牌))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (IP-PRD (LCP-TMP (IP (PP-TMP (ADVP (AD 早))
+						 (PP (P 在)
+						     (NP (NP-PN (NR 民国))
+							 (QP (CD 四)
+							     (PU 、)
+							     (CD 五十))
+							 (NP (NN 年代)))))
+					 (PU ，)
+					 (NP-SBJ (NN 国人))
+					 (VP (ADVP (AD 还))
+					     (ADVP (AD 不))
+					     (VP (VV 懂得)
+						 (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							 (VP (VV 树立)
+							     (NP-OBJ (NN 品牌)))))))
+				     (LC 时))
+			    (PU ，)
+			    (NP-SBJ (NN 业者))
+			    (VP (ADVP (AD 就))
+				(VP (VP (VV 设立)
+					(NP-OBJ (NN 商号)
+						(PU 、)
+						(NN 品牌)))
+				    (PU ，)
+				    (VP (VV 利用)
+					(NP-OBJ (DNP (NP (NN 鱼)
+							 (NN 虾))
+						     (DEG 的))
+						(NP (NN 冷藏)
+						    (NN 技术))))
+				    (PU ，)
+				    (VP (VV 分销)
+					(NP-OBJ (NP-PN (NR 桃)
+						       (PU 、)
+						       (NR 竹)
+						       (PU 、)
+						       (NR 苗))
+						(NP (NN 一带))))
+				    (PU ，)
+				    (VP (VRD (VV 建立)
+					     (VV 起))
+					(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VP (VV 吃)
+								    (NP-OBJ (NN 贡丸)))
+								(VP (VV 要)
+								    (NP-PN-OBJ (NR 新竹)
+									       (NR 海瑞)))))
+							(DEC 的))
+						(NP (NN 印象)))))))))) 
+	</parse>
+	<arg n="0">
+	业者 
+	</arg>
+	<arg n="2">
+	桃 、 竹 、 苗 一带 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	早 在 民国 四 、 五十 年代 ， 国人 还 不 懂得 *PRO* 树立 品牌 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (DP (DT 这))
+		    (NP (NN 饼)))
+	    (VP (VP (ADVP (AD 又))
+		    (ADVP (AD 非))
+		    (VP (VV 得)
+			(IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-TPC (-NONE- *T*-1))
+						    (NP-SBJ (NN 经验))
+						    (VP (VA 丰厚)))
+						(DEC 的)))
+					(NP (NN 师傅)))
+				(VP (ADVP (AD 才))
+				    (VP (VPT (VV 掌握)
+					     (DER 得)
+					     (VV 住))
+					(NP-OBJ (NN 口味)
+						(CC 与)
+						(NN 口感)))))))
+		(PU ，)
+		(VP (ADVP (AD 无法))
+		    (VP (VP (VV 用)
+			    (NP-OBJ (NN 机器)))
+			(VP (ADVP (AD 大量))
+			    (VP (VP (VV 生产))
+				(PU 、)
+				(VP (VV 分销)))))))) 
+	</parse>
+	<arg n="1">
+	这 饼 
+	</arg>
+	<arg n="m" f="adv">
+	大量 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

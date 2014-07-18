@@ -1,0 +1,159 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 包覆 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 covers"/>
+    <role argnum="2" argrole="thing arg1 is covered with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (BA 将)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (VV 揉好)
+						    (NP-OBJ (-NONE- *T*-1))))
+					    (DEC 的)))
+				    (NP (NN 陶土)))
+			    (VP (VP (VV 包覆)
+				    (PP (P 在)
+					(NP (NN 外))))
+				(PU ，)
+				(VP (PP-MNR (P 用)
+					    (NP (NN 木棒)))
+				    (ADVP (AD 轻轻))
+				    (VP (VV 拍打))))))
+		(PU ，)
+		(VP (MSP 好)
+		    (VP (VV 让)
+			(NP-OBJ (NN 陶土))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 变)
+				(DER 得)
+				(VP-EXT (VA 紧实)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	在 外 
+	</arg>
+	<arg n="2">
+	*OP* *pro* 揉好 *T*-1 的 陶土 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+	<mapitem src="ext" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VE 有)
+			(AS 了)
+			(NP-OBJ (DNP (NP (PN 这样))
+				     (DEG 的))
+				(NP (NN 领悟)))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 郑永国))
+	    (VP (VP (ADVP (AD 首先))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (QP (CD 一)
+					    (CLP (M 把)))
+					(NP (NN 砂)))
+				(VP (ADVP (AD 仔细))
+				    (VP (VV 筛)
+					(AS 过))
+				    (PU ，)
+				    (VP (VV 掺入)
+					(LCP-LOC (NP (NN 陶土))
+						 (LC 中)))
+				    (PU ，)
+				    (VP (DVP (VP (VV 使劲))
+					     (DEV 地))
+					(VP (VV 搓揉)))))))
+		(PU ，)
+		(VP (ADVP (AD 然後))
+		    (VP (VP (VV 拿出)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (ADVP (AD 事先))
+						    (PP-MNR (P 依)
+							    (NP (NN 标本)
+								(NN 形状)))
+						    (VP (VV 做好))))
+					    (DEC 的)))
+				    (NP (NN 内模))))
+			(PU ，)
+			(VP (BA 将)
+			    (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VV 搓)
+							    (DER 得)
+							    (VP-EXT (PP (P 像)
+									(NP (NN 披萨皮))))))
+						    (DEC 的)))
+					    (NP (NN 陶土)))
+				    (VP (VV 包覆)
+					(NP-OBJ (NP (PN 其))
+						(NP (NN 上))))))))
+		(PU ，)
+		(VP (ADVP (AD 再))
+		    (PP-MNR (P 以)
+			    (NP (CP (WHNP-3 (-NONE- *OP*))
+				    (CP (IP (IP (NP-SBJ (PN 自己))
+						(VP (VV 刨削)
+						    (NP-OBJ (-NONE- *T*-3))))
+					    (PU 、)
+					    (IP (NP-TPC (-NONE- *T*-3))
+						(NP-SBJ (NN 上面))
+						(VP (VV 刻)
+						    (AS 著)
+						    (NP-OBJ (NN 方格纹)))))
+					(DEC 的)))
+				(ADJP (JJ 短))
+				(NP (NN 木棒))))
+		    (VP (VP (VV 拍打))
+			(PU ，)
+			(VP (VRD (VV 切割)
+				 (VV 出))
+			    (NP-OBJ (DNP (NP (NN 陶罐))
+					 (DEG 的))
+				    (DP (DT 下))
+				    (NP (NN 半段))))))
+		(PU ，)
+		(VP (ADVP (AD 小心))
+		    (VP (VV 取下))))) 
+	</parse>
+	<arg n="0">
+	郑永国 
+	</arg>
+	<arg n="1">
+	其 上 
+	</arg>
+	<arg n="2">
+	*OP* *T*-2 搓 得 像 披萨皮 的 陶土 
+	</arg>
+	<arg n="m" f="adv">
+	然後 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 有 了 这样 的 领悟 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

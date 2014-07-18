@@ -1,0 +1,141 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 播出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="broadcaster"/>
+    <role argnum="1" argrole="thing broadcasted"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (QP-SBJ (CD 三)
+			(CLP (M 家)))
+		(VP (VV 播出)
+		    (NP-OBJ (NN 乡土剧)))) 
+	</parse>
+	<arg n="0">
+	三 家 
+	</arg>
+	<arg n="1">
+	乡土剧 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (ADVP (AD 例如))
+		(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 最))
+					(VP (VA 有名))))
+				(DEC 的)))
+			(NP (NN 节目)
+			    (NN 之一)))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VP (VV 用)
+						    (NP-OBJ (ADJP (JJ 大型))
+							    (NP (NN 布偶))))
+						(VP (VV 搭配)
+						    (NP-OBJ (ADJP (JJ 真))
+							    (NP (NN 人))))
+						(VP (VV 演出))))
+					(DEC 的)))
+				(NP-TTL (PU 《)
+					(NN 婆婆妈妈)
+					(PU 》))))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 一共))
+		    (VP (VV 播出)
+			(QP-OBJ (CD 三百八十一)
+				(CLP (M 集))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="1" f="qty">
+	三百八十一 集 
+	</arg>
+	<arg n="m" f="adv">
+	一共 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(LCP-SBJ (IP (NP-TTL-SBJ (PU 《)
+				 (NP-PN (NR 台湾))
+				 (NP (NN 水浒传))
+				 (PU 》))
+		     (VP (VV 播出)))
+		 (LC 之前)) 
+	</parse>
+	<arg n="1">
+	《 台湾 水浒传 》 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 卜)
+		       (NN 神父))
+	    (VP (ADVP (AD 常))
+		(VP (VP (VV 制作)
+			(NP-OBJ (NP (NP (ADJP (JJ 古典))
+					(NP (NN 音乐)))
+				    (NP (NN 节目)))
+				(CC 或)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-TPC (-NONE- *T*-1))
+						(QP-SBJ (CD 一)
+							(CLP (M 则)))
+						(VP (QP-PRD (CD 五)
+							    (CLP (M 分钟)))))
+					    (DEC 的)))
+				    (NP (NP (ADJP (JJ 小))
+					    (NP (NN 故事)))
+					(PU 、)
+					(NP (NN 广播)
+					    (NN 短剧))))))
+		    (PU ，)
+		    (VP (ADVP (AD 免费))
+			(VP (VV 送给)
+			    (NP-OBJ (DP (DT 各))
+				    (NP (NN 电台)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 播出)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

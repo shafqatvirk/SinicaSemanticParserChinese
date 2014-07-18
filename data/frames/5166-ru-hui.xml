@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 入会 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity joining"/>
+    <role argnum="1" argrole="entity arg0 joins"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (DVP (ADVP (AD 连带))
+		 (DEV 地))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (NP (PN 我))
+					(NP (NN 国)))
+				(VP (VV 入会)))
+			    (DEC 的))
+		    (NP (NN 时程)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 大))
+		(VP (VV 受)
+		    (NP-OBJ (NN 影响))))) 
+	</parse>
+	<arg n="0">
+	我 国 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-TPC (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-1))
+				    (NP-SBJ (QP (CD 两))
+					    (NP (NN 岸)))
+				    (VP (ADVP (AD 都))
+					(ADVP (AD 积极))
+					(VP (VV 争取)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (ADVP (AD 早日))
+							(VP (VV 入会)))))))
+				(DEC 的)))
+			(NP (NN 国际)
+			    (NN 组织)))
+		    (NP (ADVP (AD 如))
+			(NP-PN (NN 世界)
+			       (NN 贸易)
+			       (NN 组织))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 中共))
+	    (VP (ADVP (AD 也))
+		(PP-MNR (P 以)
+			(NP (NP (PN 其))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 强大)))
+				    (DEC 的)))
+			    (NP (NN 外交)
+				(NN 优势))))
+		(VP (VV 摆明)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 必须)
+				(VP (VP (VV 先)
+					(NP-OBJ (PN 我)))
+				    (VP (VV 入会)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	早日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

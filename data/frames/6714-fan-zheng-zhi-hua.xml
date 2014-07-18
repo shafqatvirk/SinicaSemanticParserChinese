@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 泛政治化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 politicizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 语言)
+			       (CC 与)
+			       (NN 历史))
+			   (DEG 的))
+		      (NP (NN 情节)))
+	      (VP (VV 使得)
+		  (NP-OBJ (DNP (NP (NN 乡土剧))
+			       (DEG 的))
+			  (NP (NN 播出)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (SB 被)
+			  (VP (VV 泛政治化)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 泛政治化))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

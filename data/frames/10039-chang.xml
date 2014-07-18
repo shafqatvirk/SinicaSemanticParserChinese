@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 偿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 causes to be realized"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (NP (NN 事实))
+		     (LC 上))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 马修))
+		    (DNP (QP (OD 第一)
+			     (CLP (M 次)))
+			 (DEG 的))
+		    (DNP (NP-PN (NR 台湾))
+			 (DEG 之))
+		    (NP (NN 行)))
+	    (VP (VP (ADVP (AD 不但))
+		    (ADVP (AD 一))
+		    (VP (VV 偿)
+			(NP-OBJ (NP (PN 他))
+				(CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (VV 认识)
+						(NP (NR 台湾))))
+					(DEC 的))
+				(NP (NN 夙愿)))))
+		(PU ，)
+		(VP (PP (P 对)
+			(NP (DNP (NP (NP (PN 他))
+				     (NP (NT 日後))
+				     (NP (NN 音乐)
+					 (NN 生涯)))
+				 (DEG 的))
+			    (NP (NN 规划))))
+		    (VP (ADVP (AD 也))
+			(ADVP (AD 颇))
+			(VP (VE 有)
+			    (NP-OBJ (NN 影响))))))) 
+	</parse>
+	<arg n="0">
+	马修 第一 次 的 台湾 之 行 
+	</arg>
+	<arg n="1">
+	他 *pro* 认识 台湾 的 夙愿 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<arg n="m" f="dis">
+	不但 
+	</arg>
+	<arg n="m" f="loc">
+	事实 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

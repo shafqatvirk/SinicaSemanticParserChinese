@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一统 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 rules"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (NN 政治)
+			    (NN 教化))
+		    (VP (ADVP (AD 亦))
+			(VP (VV 需)
+			    (VP (ADVP (AD 随时))
+				(VP (VV 变革))))))
+		(PU ，)
+		(IP (NP-SBJ (NN 人世))
+		    (VP (VE 没有)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (QP (CD 万))
+						    (NP (NN 世)))
+					    (VP (VV 一统)))
+					(DEC 的)))
+				(NP (NN 王朝)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	万 世 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

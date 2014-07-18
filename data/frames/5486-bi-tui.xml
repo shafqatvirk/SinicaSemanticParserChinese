@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 逼退 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 forces to retreat/retire"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 随著)
+		    (IP (NP-SBJ (IP-APP (NP-SBJ (NN 台湾人) )
+					(VP (VV 开发)))
+				(NP (NN 脚步) ))
+			(VP (PP-DIR (P 往)
+				    (NP (NN 山林) ))
+			    (VP (VV 延伸)))))
+	    (PU ，)
+	    (NP-SBJ-1 (NN 百步蛇) )
+	    (VP (ADVP (AD 更))
+		(VP (SB 被)
+		    (VP (ADVP (AD 节节))
+			(VP (VV 逼退)
+			    (NP-OBJ (-NONE- *-1))))))) 
+	</parse>
+	<arg n="1">
+	百步蛇 
+	</arg>
+	<arg n="m" f="adv">
+	节节 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="adv">
+	随著 台湾人 开发 脚步 往 山林 延伸 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

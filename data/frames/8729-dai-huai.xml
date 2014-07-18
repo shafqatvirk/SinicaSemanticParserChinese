@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带坏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 gives bad influence to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 偷跑)))
+			  (NP-SBJ (-NONE- *pro*))
+			  (VP (VE 没有)
+			      (IP-OBJ (NP-SBJ (NN 人))
+				      (VP (VV 谴责))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 会)
+		      (VP (VV 带坏)
+			  (NP-OBJ (DP (DT 其他))
+				  (NP (NN 人))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  其他 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 *PRO* 偷跑 *pro* 没有 人 谴责 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

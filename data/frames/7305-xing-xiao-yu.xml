@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 行销於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place arg0 sells well"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADVP (AD 不论是))
+		    (NP (NP (DNP (NP-PN (NR 江西)
+					(NR 景德镇))
+				 (DEG 的))
+			    (NP (NN 瓷器)))
+			(PU ，)
+			(NP (DNP (NP-PN (NR 杭州))
+				 (DEG 的))
+			    (NP (NN 绸缎)))))
+	    (VP (ADVP (AD 都))
+		(VP (VV 行销於)
+		    (NP-OBJ (DP (DT 全))
+			    (NP (NN 国)))))) 
+	</parse>
+	<arg n="0">
+	不论是 江西 景德镇 的 瓷器 ， 杭州 的 绸缎 
+	</arg>
+	<arg n="1">
+	全 国 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

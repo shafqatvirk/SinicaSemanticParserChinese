@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 到资 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="amount"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (ADVP (AD 实际))
+				  (VP (VV 到资))))))
+	      (VP (QP-PRD (CD 十九点一亿)
+			  (CLP (M 美元))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  实际 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

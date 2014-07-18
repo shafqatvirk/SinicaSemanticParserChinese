@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 说说话 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person speaking"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 让)
+			(NP-OBJ (NN 学生))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 认识)
+				    (NP-OBJ (NN 戏剧)))))))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VC 是)
+			(VP (VP (VV 去)
+				(VP (VV 治疗)
+				    (NP-OBJ (PN 他们))))
+			    (PU ，)
+			    (CC 或是)
+			    (VP (VV 预防)
+				(NP-OBJ (NN 犯罪))))))
+		(PU ，)
+		(VP (VP (ADVP (AD 只是))
+			(VP (VV 让)
+			    (NP-OBJ (NN 青少年))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 试)
+					(AS 著)
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 去)
+						(VP (VP (VV 感觉)
+							(NP-OBJ (NN 人生)))
+						    (PU 、)
+						    (VP (ADVP (AD 多))
+							(VP (VV 说说话)))))))))))
+		    (ADVP (AD 而已))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	多 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

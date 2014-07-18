@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设置 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing set up"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (LCP-TMP (IP (NP-SBJ (NN 海湾)
+				       (NN 战争))
+			       (VP (VV 结束)))
+			   (LC 后))
+		  (PU ，)
+		  (NP-PN-SBJ (NR 美)
+			     (PU 、)
+			     (NR 英))
+		  (VP (ADVP (AD 仍))
+		      (PP-LOC (P 在)
+			      (NP (NP-PN (NR 伊拉克))
+				  (NP (NN 南部)
+				      (CC 和)
+				      (NN 北部))))
+		      (VP (VV 设置)
+			  (NP-OBJ (NN 禁飞区))))) 
+	  </parse>
+	  <arg n="0">
+	  美 、 英 
+	  </arg>
+	  <arg n="1">
+	  禁飞区 
+	  </arg>
+	  <arg n="2">
+	  在 伊拉克 南部 和 北部 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  海湾 战争 结束 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 新疆))
+		      (NP (NN 建设)
+			  (NN 兵团)))
+	      (VP (VV 设置)
+		  (NP-OBJ (NN 法院)
+			  (CC 和)
+			  (NN 检察院)))) 
+	  </parse>
+	  <arg n="0">
+	  新疆 建设 兵团 
+	  </arg>
+	  <arg n="1">
+	  法院 和 检察院 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

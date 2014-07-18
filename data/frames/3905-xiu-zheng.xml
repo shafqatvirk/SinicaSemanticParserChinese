@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 修正 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing adjusted/corrected"/>
+      <role argnum="2" argrole="extent of adjustment"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 这))
+			  (DNP (QP (CD 七十五亿)
+				   (CLP (M 美元)))
+			       (DEG 的))
+			  (ADJP (JJ 高额))
+			  (NP (NN 劳务)
+			      (NN 贸易)
+			      (NN 逆差)))
+		  (PU ，)
+		  (VP (VV 足以)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 让))
+				  (NP-OBJ (NP-PN (NR 台湾))
+					  (NP (NN 经济)
+					      (NN 增长率)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 向下))
+					  (VP (VV 修正)
+					      (NP-OBJ (QP (CD 两)
+							  (CLP (M 个)))
+						      (NP (NN 百分点)))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  两 个 百分点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  向下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

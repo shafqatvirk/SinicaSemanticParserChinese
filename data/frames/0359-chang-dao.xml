@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 尝到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-MNR (P 通过)
+              (NP-PN (NR 上海)
+                     (NR 施贵宝)))
+      (PU ，)
+      (NP-PN-SBJ (NR 美国)
+                 (NR 百时美)
+                 (NR 施贵宝)
+                 (NN 公司))
+      (VP (VV 尝到)
+          (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+                              (VP (PP-LOC (P 在)
+                                          (NP-PN (NR 中国)))
+                                  (VP (VV 投资))))
+                          (DEC 的))
+                  (NP (NN 甜头))))))
+	</parse>
+	<arg n="M" f="MNR"> 通过 上海 施贵宝 </arg>
+	<arg n="0"> 美国 百时美 施贵宝 公司 </arg>
+	<V/>
+	<arg n="1"> *pro* 在 中国 投资 的 甜头 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

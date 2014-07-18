@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 变形 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity undergoing change"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (ADVP (AD 已))
+			      (VP (VV 变形))))
+		      (DEC 的)))
+	      (NP (NN 客车))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(客车) 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

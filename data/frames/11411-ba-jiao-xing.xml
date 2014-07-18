@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 八角形 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 中兴)
+			   (NN 高中))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (NP-PRD (QP (CD 四)
+						    (CLP (M 层)))
+						(NP (NN 楼))))
+				    (VP (VA 八角形))))
+			    (DEC 的)))
+		    (NP (NN 科学馆)))
+	    (VP (VP (VC 为)
+		    (IP-PRD (NP-SBJ (NP-APP (ADJP (JJ 名))
+					    (NP (NN 建筑师)))
+				    (NP-PN (NR 修泽兰)))
+			    (VP (VV 设计))))
+		(PU ，)
+		(VP (NP-TMP (NT 如今))
+		    (VP (ADVP (AD 已))
+			(VP (VV 成)
+			    (NP-OBJ (NP-PN (NP-PN (NR 中兴))
+					   (ADJP (JJ 新))
+					   (NP (NN 村)))
+				    (NP (NN 地标)
+					(NN 之一)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

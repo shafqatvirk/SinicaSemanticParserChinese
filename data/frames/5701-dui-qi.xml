@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 堆砌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 piles up and builds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NT 当年))
+			 (DEG 的))
+		    (NP (NN 政治)
+			(NN 受难者)))
+	    (VP (VV 要)
+		(VP (VP (ADVP (AD 亲手))
+			(VP (VV 堆砌)
+			    (NP-OBJ (NN 石头)
+				    (NN 围墙)
+				    (PU 、)
+				    (NN 碉堡))))
+		    (PU ，)
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (PN 自己))
+				(VP (VRD (VV 监禁)
+					 (VV 起来)))))))) 
+	</parse>
+	<arg n="0">
+	当年 的 政治 受难者 
+	</arg>
+	<arg n="1">
+	石头 围墙 、 碉堡 
+	</arg>
+	<arg n="m" f="adv">
+	亲手 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

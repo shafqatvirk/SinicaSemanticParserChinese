@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 派遣 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="person sent"/>
+      <role argnum="2" argrole="action,predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (ADJP (JJ 大型))
+		      (NP (NN 专业性)
+			  (NN 外贸)
+			  (NN 公司)))
+	      (VP (VP (ADVP (AD 亦))
+		      (PP-TMP (P 从)
+			      (LCP (NP (NT 去年))
+				   (LC 底)))
+		      (VP (VV 开始)))
+		  (PU ，)
+		  (VP (VSB (VV 抓紧)
+			   (VV 派遣))
+		      (NP-OBJ (NN 推销)
+			      (NN 小组)
+			      (PU 、)
+			      (NN 展销团)
+			      (ETC 等))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 进入)
+				  (NP-PN-OBJ (NR 俄罗斯)))
+			      (PU ，)
+			      (VP (VV 寻求)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 扩大)
+					      (NP-OBJ (NN 业务)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  一些 大型 专业性 外贸 公司 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  推销 小组 、 展销团 等 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 进入 俄罗斯 ， 寻求 *PRO* 扩大 业务 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

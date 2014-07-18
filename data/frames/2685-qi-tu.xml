@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 企图 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people making attempts"/>
+      <role argnum="1" argrole="thing attempted to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-SBJ (NP-APP (NP-PN (NR 万博省))
+					  (NP (NN 副省长)))
+				  (NP-PN (NR 席尔瓦)))
+			  (VP (VV 介绍))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 安盟))
+		      (NP (NN 军队)))
+	      (VP (NP-TMP (NT ２８日))
+		  (VP (VV 企图)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 占领)
+				  (NP-OBJ (DNP (NP (QP (LCP (NP (DP (DT 该))
+								(NP (NN 市)))
+							    (LC 以西))
+						       (QP (CD ３０多)
+							   (CLP (M 公里))))
+						   (NP (NN 处)))
+					       (DEG 的))
+					  (NP-PN (NR 卡伦加镇)))))))) 
+	  </parse>
+	  <arg n="0">
+	  安盟 军队 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 占领 该 市 以西 ３０多 公里 处 的 卡伦加镇 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ２８日 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 万博省 副省长 席尔瓦 介绍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

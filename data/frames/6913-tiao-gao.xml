@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挑高 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NP-PN (NR 北投))
+				 (NP (NN 半山)))
+			     (LC 上)))
+		(VP (VV 租下)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 栋)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 光线))
+					    (VP (ADVP (AD 极))
+						(VP (VA 佳))))
+					(PU ，)
+					(IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 空间))
+					    (VP (VA 挑高)))
+					(PU ，)
+					(IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 极))
+						(VP (VV 适合)
+						    (NP-OBJ (NN 画图))))))
+				    (DEC 的)))
+			    (QP (CD 三)
+				(CLP (M 层)))
+			    (NP (NN 楼房)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	空间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

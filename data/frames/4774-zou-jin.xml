@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 走近 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 moves closer to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 不少))
+		      (NP (NN 市民)))
+	      (VP (VP (ADVP (AD 特意))
+		      (VP (VV 赶到)
+			  (NP-OBJ (DNP (NP-PN (NR 工行))
+				       (DEG 的))
+				  (NP (NN 营业)
+				      (NN 网点)))))
+		  (PU ，)
+		  (VP (VV 领取)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (DP (DT 这)
+						      (CLP (M 家)))
+						  (NP (NN 银行)))
+					  (VP (VV 印制)
+					      (NP-OBJ (-NONE- *T*-1))))
+				      (DEC 的)))
+			      (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PU 《)
+					  (VV 走近)
+					  (NP-OBJ (NN 欧元))
+					  (PU 》)))
+			      (NP (NN 宣传)
+				  (NN 材料)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  欧元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

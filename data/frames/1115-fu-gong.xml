@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 复工 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 resumes work on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (CP-CND (ADVP (CS 若))
+			  (IP (NP-SBJ (NN 暴两)
+				      (NN 警号))
+			      (VP (PP-TMP (P 在)
+					  (LCP (NP (NN 办公)
+						   (NN 时间))
+					       (LC 内)))
+				  (VP (VV 除下)))))
+		  (PU ，)
+		  (NP-SBJ (NN 雇员))
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (DP (DT 何)
+					   (CLP (M 种)))
+				       (NP (NN 情况)))
+				   (LC 下)))
+		      (VP (VV 复工)))) 
+	  </parse>
+	  <arg n="0">
+	  雇员 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  若 暴两 警号 在 办公 时间 内 除下 	  
+	  </arg>
+	  <arg n="m">
+	  在 何 种 情况 下 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 核四))
+		  (VP (VV 应)
+		      (VP (ADVP (AD 即))
+			  (VP (VV 复工))))) 
+	  </parse>
+	  <arg n="1">
+	  核四 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

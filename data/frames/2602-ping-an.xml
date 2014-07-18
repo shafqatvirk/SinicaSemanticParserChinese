@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 平安 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (CP (WHNP-9 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-9))
+				      (VP (ADVP (AD 最后))
+					  (VP (VV 出生))))
+				  (DEC 的)))
+			  (NP (NN 老六)))
+		  (VP (ADVP (AD 一直))
+		      (VP (VP (VA 平安))
+			  (VP (VE 无)
+			      (NP-OBJ (NN 事)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-9 最后 出生 的 老六 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

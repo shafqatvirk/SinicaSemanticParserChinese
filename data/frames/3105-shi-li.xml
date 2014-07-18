@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 失利 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity suffering loss/setback"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 英国))
+			      (QP (CD 百)
+				  (CLP (M 米)))
+			      (NP (NN 好手)))
+		      (NP-PN (NR 克里斯蒂)))
+	      (VP (PP-TMP (P 在)
+			  (LCP (QP (CD 三)
+				   (CLP (M 天)))
+			       (LC 内)))
+		  (QP-ADV (CD 两)
+			  (CLP (M 度)))
+		  (VP (VV 失利)))) 
+	  </parse>
+	  <arg n="0">
+	  英国 百 米 好手 克里斯蒂 
+	  </arg>
+	  <arg n="m" f="adv">
+	  两 度 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 三 天 内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

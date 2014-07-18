@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 让渡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 transfers"/>
+      <role argnum="2" argrole="entity arg1 is transferred to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 购屋人))
+	      (VP (VP (ADVP (AD 只有))
+		      (VP (VV 让渡)
+			  (NP-OBJ (NN 使用权)))
+		      (PU ，))
+		  (CC 而非)
+		  (VP (VV 买卖)
+		      (NP-OBJ (NN 使用权))))) 
+	  </parse>
+	  <arg n="2">
+	  购屋人 
+	  </arg>
+	  <arg n="1">
+	  使用权 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只有 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

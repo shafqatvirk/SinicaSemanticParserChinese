@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 利於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 benefits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 既然))
+		    (IP (NP-SBJ (NN 水) )
+			(VP (VV 能)
+			    (VP (PU 「)
+				(VV 滚)
+				(NP-OBJ (NN 财) )
+				(PU 」)))))
+	    (PU ，)
+	    (NP-SBJ (NN 饮水机)
+		    (CC 或)
+		    (NN 热水瓶) )
+	    (VP (VP (ADVP (AD 自然))
+		    (ADVP (AD 也))
+		    (VP (VV 能)
+			(VP (VV 充当)
+			    (NP-OBJ (NN 招财物) ))))
+		(PU ，)
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 摆)
+				(PP (P 在)
+				    (LCP (NP (NN 财位) )
+					 (LC 上)))))
+		    (PU ，)
+		    (ADVP (AD 据说))
+		    (VP (VV 利於)
+			(NP-OBJ (NN 财运)
+				(CC 与)
+				(NN 事业)
+				(NN 发展) ))))) 
+	</parse>
+	<arg n="0">
+	饮水机 或 热水瓶 
+	</arg>
+	<arg n="1">
+	财运 与 事业 发展 
+	</arg>
+	<arg n="m" f="adv">
+	据说 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 摆 在 财位 上 
+	</arg>
+	<arg n="m" f="adv">
+	既然 水 能 「 滚 财 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 像))
+	    (NP-SBJ (PN 她))
+	    (VP (VP (ADVP (AD 一向))
+		    (VP (VV 习惯)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 拍完))
+				    (VP (ADVP (AD 才))
+					(VP (VV 播)))))))
+		(PU ，)
+		(VP (MSP 以)
+		    (VP (VV 利於)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 控制)
+				    (NP-OBJ (NN 品质)))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	*PRO* 控制 品质 
+	</arg>
+	<arg n="m" f="adv">
+	像 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

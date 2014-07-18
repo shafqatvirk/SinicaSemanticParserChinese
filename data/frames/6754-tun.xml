@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 褪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing fading"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (ADJP (JJ 女))
+			     (NP (NN 状元)))
+			 (DEG 的))
+		    (NP (NN 光环)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 很))
+			    (VP (VV 快))))
+		(ADVP (AD 就))
+		(VP (VV 要)
+		    (VP (VRD (VV 褪)
+			     (VV 下来)))))) 
+	</parse>
+	<arg n="0">
+	女 状元 的 光环 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 很 快 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

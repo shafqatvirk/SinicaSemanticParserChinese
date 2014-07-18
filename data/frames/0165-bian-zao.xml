@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 编造 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="fabricator"/>
+    <role argnum="1" argrole="thing fabricated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NT 去年)
+              (NT １２月)
+              (NT ２６日))
+      (PU ，)
+      (NP-TTL-SBJ (PU 《)
+                  (NR 湖北)
+                  (NN 日报)
+                  (PU 》))
+      (VP (VP (VV 发表)
+              (NP-OBJ (QP (CD 一)
+                          (CLP (M 组)))
+                      (NP (NN 文章))))
+          (PU ，)
+          (VP (ADVP (AD 点名))
+              (VP (VV 批评)
+                  (NP-OBJ (QP (CD 一)
+                              (CLP (M 位)))
+                          (NP (NN 乡)
+                              (NN 广播站)
+                              (NN 同志)))
+                  (IP (NP-SBJ (-NONE- *PRO*))
+                      (VP (VV 编造)
+                          (NP-OBJ (IP-TTL-APP (PU 《)
+                                              (NP-PN-SBJ (NR 巴国甫))
+                                              (VP (VV 撞)
+                                                  (NP-OBJ (NN 路卡)))
+                                              (PU 》))
+                                  (NP (NN 新闻稿))))))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> 《 巴国甫 撞 路卡 》 新闻稿 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

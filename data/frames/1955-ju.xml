@@ -1,0 +1,160 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 举 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 cites"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (VV 举)
+		      (NP-OBJ (NN 例)))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (NP-TMP (NT 过去))
+			      (NP-SBJ (DNP (NP (NN 台资)
+					       (NN 企业))
+					   (DEG 的))
+				      (ADJP (JJ 高级))
+				      (NP (NN 雇员)))
+			      (VP (VP (VP (VV 到)
+					  (NP-OBJ (NN 国外)))
+				      (VP (VV 经商)))
+				  (VP (VV 需要)
+				      (VP (VP (VV 回)
+					      (NP-PN-OBJ (NR 台湾)))
+					  (VP (VV 办理)
+					      (NP-OBJ (NN 手续)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  例 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 raises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (ADVP (AD 近))
+			   (QP (CD 几)
+			       (CLP (M 天))))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 长春市))
+		      (NP (NP (NN 九冬会))
+			  (DP (DT 各))
+			  (NP (NN 赛场)))
+		      (NP (NN 周围)))
+	      (PU ，)
+	      (VP (ADVP (AD 到处))
+		  (VP (VV 可以)
+		      (VP (VV 看到)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 举)
+						  (AS 着)
+						  (NP-OBJ (NN 队旗))))
+					  (DEC 的)))
+				  (NP (NN 大学生)
+				      (NN 志愿们))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  队旗 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VRD (VV 制定)
+		   (VV 出))
+	      (NP-OBJ (CP-APP (IP (PU “)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 稳定)
+					  (NP-OBJ (NN 东部))))
+				  (PU 、)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 发展)
+					  (NP-OBJ (NN 西部))))
+				  (PU 、)
+				  (IP (NP-SBJ (NN 油)
+					      (NN 气))
+				      (VP (ADVP (AD 并))
+					  (VP (VV 举))))
+				  (PU ”))
+			      (DEC 的))
+		      (NP (NN 陆上)
+			  (NN 石油)
+			  (NN 工业)
+			  (NN 发展)
+			  (NN 战略)))) 
+	  </parse>
+	  <arg n="1">
+	  油 气 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 王翔))
+	      (VP (VP (VV 举)
+		      (NP-OBJ (NN 全力)))
+		  (VP (VV 投资)
+		      (NP-OBJ (QP (CD 一点二亿)
+				  (CLP (M 元)))
+			      (NP (NN 人民币))))
+		  (VP (VV 兴建)
+		      (NP-OBJ (NN 防洪)
+			      (NN 工程))))) 
+	  </parse>
+	  <arg n="0">
+	  王翔 
+	  </arg>
+	  <arg n="1">
+	  全力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

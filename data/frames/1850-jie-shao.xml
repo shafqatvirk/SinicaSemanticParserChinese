@@ -1,0 +1,493 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 介绍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="information provided"/>
+      <role argnum="2" argrole="entity arg1 is privided for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 广东))
+		  (VP (VP (VV 举行)
+			  (NP-OBJ (NN 研讨会)))
+		      (VP (VV 介绍)
+			  (NP-OBJ (NN 税改)
+				  (CC 及)
+				  (NN 加工)
+				  (NN 贸易)
+				  (NN 台帐)
+				  (NN 制度))))) 
+	  </parse>
+	  <arg n="0">
+	  广东 	  
+	  </arg>
+	  <arg n="1">
+	  税改 及 加工 贸易 台帐 制度 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 进出口)
+			 (NN 银行))
+	      (VP (VP (PP-MNR (P 通过)
+			      (NP (NP-APP (NP (ADJP (JJ 书面))
+					      (NP (NN 介绍)))
+					  (PU 、)
+					  (NP (ADJP (JJ 实地))
+					      (NP (NN 考察)))
+					  (ETC 等))
+				  (NP (NN 形式))))
+		      (PP-DIR (P 向)
+			      (NP-PN (NR 日本)
+				     (NN 公社债)
+				     (NN 研究所)))
+		      (ADVP (AD 全面))
+		      (VP (VV 介绍)
+			  (AS 了)
+			  (NP-OBJ (LCP (NP (NT 今年))
+				       (LC 来))
+				  (NP (NP (DNP (NP (NP-PN (NR 中国))
+						   (NP (NN 金融)
+						       (NN 体制)
+						       (NN 改革)))
+					       (DEG 的))
+					  (NP (NN 情况)))
+				      (PU 、)
+				      (NP (CP-APP (IP (NP-SBJ (NN 银行))
+						      (VP (VV 成立)))
+						  (DEC 的))
+					  (NP (NN 背景)))
+				      (PU 、)
+				      (NP (NP (NN 银行))
+					  (NP (NN 管理)
+					      (CC 和)
+					      (NN 运营))
+					  (NP (NN 机制)))
+				      (PU 、)
+				      (NP (NN 银行)
+					  (NN 业务)
+					  (NN 发展)
+					  (NN 现状))
+				      (CC 以及)
+				      (NP (DNP (LCP (LC 以后))
+					       (DEG 的))
+					  (NP (NN 发展)
+					      (NN 目标)))))))
+		  (PU ，)
+		  (VP (VV 使)
+		      (NP-OBJ (PN 之))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (P 对)
+				  (NP-PN (NR 中国)
+					 (NN 进出口)
+					 (NN 银行)))
+			      (VP (VE 有)
+				  (AS 了)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (ADVP (AD 较))
+							  (VP (VA 深))))
+						  (DEC 的)))
+					  (NP (NN 了解))))))))) 
+	  </parse>
+	  <arg n="0">
+	  进出口 银行 	  
+	  </arg>
+	  <arg n="1">
+	  今年 来 中国 金融 体制 改革 的 情况 、 银行 成立 的 背景 、 银行 管理 和 运营 机制 、 银行 业务 发展 现状 以及 以后 的 发展 目标 	  
+	  </arg>
+	  <arg n="2">
+	  向 日本 公社债 研究所 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  全面 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 书面 介绍 、 实地 考察 等 形式 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP (P 据)
+	      (IP (NP-SBJ (NP-APP (NP (NP-PN (NR 中国)
+					     (NN 人民)
+					     (NN 银行))
+				      (NP-PN (NR 西藏)
+					     (NN 自治区)
+					     (NN 分行)))
+				  (NP (NN 行长)))
+			  (NP-PN (NR 索朗达吉)))
+		  (VP (VV 介绍)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 人民 银行 西藏 自治区 分行 行长 索朗达吉 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 朱)
+			 (NN 大使))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 讲话))
+			       (LC 中)))
+		  (PP-DIR (P 向)
+			  (NP (NN 华侨)
+			      (CC 和)
+			      (NN 华人)))
+		  (VP (VV 介绍)
+		      (IP-OBJ (LCP-TMP (QP (CD 一)
+					   (CLP (M 年)))
+				       (LC 来))
+			      (NP-PN-SBJ (NR 中国))
+			      (VP (VP (VV 坚持)
+				      (NP-OBJ (NP (NN 改革)
+						  (NN 开放))
+					      (NP (NN 政策))))
+				  (PU ，)
+				  (VP (VV 坚持)
+				      (NP-OBJ (NN 社会主义)
+					      (NN 道路)))
+				  (PU ，)
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (NN 经济)
+						       (NN 发展))
+						   (LC 上)))
+				      (VP (VV 取得)
+					  (AS 了)
+					  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (VA 新)))
+							  (DEC 的)))
+						  (NP (NN 成果)))))
+				  (PU ，)
+				  (VP (ADVP (AD 进一步))
+				      (VP (VV 促进)
+					  (AS 了)
+					  (NP-OBJ (DNP (NP (DP (DT 全))
+							   (NP (NN 国)))
+						       (DEG 的))
+						  (NP (NN 政治)
+						      (NN 稳定)
+						      (CC 和)
+						      (NN 社会)
+						      (NN 稳定)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  朱 大使 	  
+	  </arg>
+	  <arg n="1">
+	  一 年 来 中国 坚持 改革 开放 政策 ， 坚持 社会主义 道路 ， 在 经济 发展 上 取得 了 *OP* *T*-1 新 的 成果 ， 进一步 促进 了 全 国 的 政治 稳定 和 社会 稳定 	  
+	  </arg>
+	  <arg n="2">
+	  向 华侨 和 华人 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 讲话 中 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 国家)
+			     (NN 计委))
+		      (ADJP (JJ 有关))
+		      (NP (NN 部门)))
+	      (VP (VV 介绍)
+		  (PU ，)
+		  (IP-OBJ (PP-PRP (P 为)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 拓宽)
+					  (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *pro*))
+							      (VP (PP-MNR (-NONE- *T*-2))
+								  (VP (VV 利用)
+								      (NP-OBJ (NN 外资)))))
+							  (DEC 的)))
+						  (NP (NN 渠道))))))
+			  (PU ，)
+			  (NP-PN-SBJ (NR 中国))
+			  (VP (ADVP (AD 将))
+			      (PP-DIR (P 对于)
+				      (NP (UCP-APP (NP (NN ＢＯＴ))
+						   (PU 、)
+						   (NP (NN 项目)
+						       (NN 融资))
+						   (PU 、)
+						   (IP (NP-SBJ (-NONE- *PRO*))
+						       (VP (PP-LOC (P 在)
+								   (NP (NN 海外)))
+							   (VP (VV 发行)
+							       (NP-OBJ (NN 股票)))))
+						   (ETC 等))
+					  (QP (CD 多)
+					      (CLP (M 种)))
+					  (NP (NN 方式))))
+			      (VP (VP (ADVP (AD 积极))
+				      (VP (VV 试点)))
+				  (VP (ADVP (AD 逐步))
+				      (VP (VV 开展)))))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 计委 有关 部门 	  
+	  </arg>
+	  <arg n="1">
+	  为 *PRO* 拓宽 *OP* *pro* *T*-2 利用 外资 的 渠道 ， 中国 将 对于 ＢＯＴ 、 项目 融资 、 *PRO* 在 海外 发行 股票 等 多 种 方式 积极 试点 逐步 开展 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="information provided"/>
+      <role argnum="2" argrole="entity arg1 is privided for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 研究)
+		      (NN 人员))
+	      (VP (VP (VV 介绍))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (NP-LOC (NN 国外))
+						      (NP-TMP (NT 目前))
+						      (ADVP (AD 普遍))
+						      (VP (VV 使用)
+							  (NP-OBJ (-NONE- *T*-1)))))
+					      (DEC 的)))
+				      (DP (DT 各)
+					  (CLP (M 种)))
+				      (ADJP (NP (NN 化学))
+					    (ADJP (JJ 合成)))
+				      (ADJP (JJ 降糖))
+				      (NP (NN 药)))
+			      (VP (PP-DIR (P 对)
+					  (NP (NN 糖尿病)
+					      (NN 并发症)))
+				  (ADVP (AD 均))
+				  (VP (VE 无)
+				      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						  (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (ADVP (AD 多))
+							  (VP (VA 大)))))
+					      (NP (NN 防治)
+						  (NN 作用))))))))) 
+	  </parse>
+	  <arg n="0">
+	  研究 人员 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 国外 目前 普遍 使用 *T*-1 的 各 种 化学 合成 降糖 药 对 糖尿病 并发症 均 无 *OP* *T*-2 多 大 防治 作用 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-ADV (P 据)
+		  (IP (NP-SBJ (NP (DP (DT 该))
+				  (NP (NN 港口)))
+			      (NP (NN 负责人)))
+		      (VP (VCD (VV 介绍)
+			       (VV 说))))) 
+	  </parse>
+	  <arg n="0">
+	  该 港口 负责人 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity introduced"/>
+      <role argnum="2" argrole="place arg1 is introduced to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-ADV (P 作为)
+		  (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 最早))
+					  (VP (SB 被)
+					      (VP (VRD (VV 介绍)
+						       (VV 到))
+						  (NP-PN-OBJ (NR 中国))))))
+				  (DEC 的)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-2))
+				      (NP-SBJ (NN 为数))
+				      (VP (ADVP (AD 不))
+					  (VP (VA 多))))
+				  (DEC 的)))
+			  (QP (CD 几)
+			      (CLP (M 名)))
+			  (NP-PN (NR 欧)
+				 (NR 美))
+			  (NP (NN 歌星)))
+		      (NP (NN 之一)))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="2">
+	  中国 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  最早 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity introduced"/>
+      <role argnum="2" argrole="entity arg1 is introduced to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 recommends/introduces arg1 to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (PP-LOC (P 在)
+			      (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 研习)))
+					       (DEC 的))
+				       (NP (NN 过程)))
+				   (LC 中)))
+		      (PU ，)
+		      (ADVP (AD 不但))
+		      (VP (VV 可以)
+			  (VP (VV 介绍)
+			      (NP-OBJ (PN 他们))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 接触)
+				      (NP-OBJ (DNP (NP (NN 国内))
+						   (DEG 的))
+					      (NP (NN 媒体)
+						  (NN 人才)
+						  (CC 及)
+						  (NN 环境)
+						  (NN 设施))))))))
+		  (PU ；)
+		  (VP (ADVP (AD 更))
+		      (VP (VV 能)
+			  (VP (VV 让)
+			      (NP-OBJ (PN 他们))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (PP-DIR (P 对)
+						  (NP (DNP (NP-PN (NR 中华)
+								  (NN 民国))
+							   (DEG 的))
+						      (NP (NN 风土)
+							  (NN 民情))))
+					  (VP (VV 有所)
+					      (NP-OBJ (NN 了解))))
+				      (PU ，)
+				      (CC 并)
+				      (VP (ADVP (AD 进一步))
+					  (PP (P 与)
+					      (NP (NP (PN 其))
+						  (NP (NN 国人))))
+					  (VP (VV 分享)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  他们 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 接触 国内 的 媒体 人才 及 环境 设施 
+	  </arg>
+	  <arg n="m" f="dis">
+	  不但 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *PRO* 研习 的 过程 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

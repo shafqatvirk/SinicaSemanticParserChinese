@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 洗澡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person taking bath"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NT 九点)
+			       (CC 到)
+			       (NT 九点半))
+			   (DEG 的))
+		      (NP (QP (CD 半))
+			  (NP (NN 小时)))
+		      (NP (NN 时间)))
+	      (VP (VP (ADVP (AD 向来))
+		      (VP (SB 被)
+			  (VP (VV 称为)
+			      (NP-OBJ (PU 「)
+				      (NN 洗澡)
+				      (NN 时间)
+				      (PU 」)))))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (NN 收视率))
+					  (VP (ADVP (AD 不))
+					      (VP (VA 高))))
+				      (DEC 的)))
+			      (ADJP (JJ 冷门))
+			      (NP (NN 时段)))))) 
+	  </parse>
+	  <arg n="m" f="tmp">
+	  时间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

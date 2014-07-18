@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 悬殊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP (NN 教学))
+			       (DEG 的))
+			  (ADJP (ADVP (AD 最))
+				(ADJP (JJ 大)))
+			  (NP (NN 困难)))
+		  (VP (ADVP (AD 就))
+		      (VP (VV 在)
+			  (IP-OBJ (NP-SBJ (NN 学生)
+					  (NN 程度))
+				  (VP (VA 悬殊)))))) 
+	  </parse>
+	  <arg n="0">
+	  学生 程度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

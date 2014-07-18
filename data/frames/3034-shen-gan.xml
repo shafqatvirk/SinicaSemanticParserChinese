@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深感 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing felt"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 佩雷斯·德奎利亚尔))
+		  (VP (PP-DIR (P 对)
+			      (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (ADVP (AD 如此))
+							  (VP (VA 多))))
+						  (DEC 的)))
+					  (NP-PN (NR 伊拉克))
+					  (NP (NN 平民)))
+				  (VP (VV 死)
+				      (PP (P 于)
+					  (NP (NN 空袭))))))
+		      (VP (VV 深感)
+			  (NP-OBJ (NN 悲痛))))) 
+	  </parse>
+	  <arg n="0">
+	  佩雷斯·德奎利亚尔 	  
+	  </arg>
+	  <arg n="1">
+	  悲痛 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU 「)
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 能)
+			      (VP (VV 获得)
+				  (NP-OBJ (DP (DT 这)
+					      (QP (CD 几)
+						  (CLP (M 位))))
+					  (DNP (NP (NP-PN (NR 香港))
+						   (NP (NN 金融界)))
+					       (DEG 的))
+					  (ADJP (JJ 显赫))
+					  (NP (NN 人士)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 接受)
+					      (NP-OBJ (NN 邀请)))
+					  (PU ，)
+					  (VP (VV 担任)
+					      (NP-OBJ (NP (NN 土地)
+							  (NN 基金)
+							  (NN 谘询)
+							  (NN 委员会))
+						      (NP (NN 成员)))))))))
+		  (PU ，)
+		  (NP-SBJ (PN 本人))
+		  (VP (VV 深感)
+		      (IP (VP (VA 高兴))))) 
+	  </parse>
+	  <arg n="0">
+	  本人 	  
+	  </arg>
+	  <arg n="1">
+	  高兴 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 能 获得 这 几 位 香港 金融界 的 显赫 人士 *PRO* 接受 邀请 ， 担任 土地 基金 谘询 委员会 成员 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 戏称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="caller"/>
+    <role argnum="1" argrole="entity arg0 calls"/>
+    <role argnum="2" argrole="name arg0 jokingly calls arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-TPC (-NONE- *T*-2))
+			(NP-SBJ (NN 当地)
+				(NN 人))
+			(VP (VV 戏称)
+			    (NP-PN-OBJ (PU 「)
+				       (NR 台湾街)
+				       (PU 」))))
+		    (DEC 的)))
+	    (NP (NN 地方))) 
+	</parse>
+	<arg n="0">
+	当地 人 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	「 台湾街 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 jokingly states"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 媒体))
+	    (VP (VV 戏称)
+		(IP-OBJ (NP-SBJ (NP (NP-PN (NR 华纳)
+					   (NN 唱片))
+				    (NP (NN 员工)))
+				(DNP (NP (NT 去年))
+				     (DEG 的))
+				(NP (NN 年终)
+				    (NN 奖金)))
+			(VP (ADVP (AD 就))
+			    (VP (VV 靠)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (ADVP (AD 同))
+							(VP (VC 是)
+							    (VP (NP-PN-DIR (NR 新加坡))
+								(VP (VV 来))))))
+						(DEC 的)))
+					(NP (NP (PN 她))
+					    (CC 与)
+					    (NP (NP-APP (NN 制作人))
+						(NP-PN (NR 李聪菘)))))))))) 
+	</parse>
+	<arg n="0">
+	媒体 
+	</arg>
+	<arg n="1">
+	华纳 唱片 员工 去年 的 年终 奖金 就 靠 *OP* *T*-1 同 是 新加坡 来 的 她 与 制作人 李聪菘 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

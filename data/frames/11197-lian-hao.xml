@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 练好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 practices to get good at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (BA 把)
+			    (IP-OBJ (NP-SBJ (NN 姿态))
+				    (VP (VV 练好))))
+			(PU ，)
+			(VP (ADVP (AD 小))
+			    (VP (VE 有)
+				(NP-OBJ (NN 肌肉))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *PRO*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 穿)
+			    (NP-OBJ (NN 衣服))))
+		(ADVP (AD 更))
+		(VP (VA 好看)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	姿态 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

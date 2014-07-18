@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无益 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 is not beneficial to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-ADV (IP-SBJ (NP-APP (NP-SBJ (NP (PN 我))
+						(NP (NN 国)))
+					(DNP (PP (P 对)
+						 (NP-PN (NR 尼国)))
+					     (DEG 的))
+					(NP (NN 援助)
+					    (NN 方式)))
+				(PU ，)
+				(IP (ADVP (AD 例如))
+				    (PU ：)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 协建)
+					    (NP-OBJ (NN 总统府)
+						    (PU 、)
+						    (NN 外交部)
+						    (NN 大厦)
+						    (ETC 等))))))
+			(PU ，)
+			(VP (ADVP (AD 不仅))
+			    (VP (LB 被)
+				(IP-OBJ (NP-SBJ (NP-PN (NR 尼国))
+						(NP (NN 在野党)
+						    (NN 人士)))
+					(VP (VRD (VV 批评)
+						 (VC 为))
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 无益)
+							(NP-OBJ (NN 大众)
+								(NN 民生)))))))))
+		(PU ，)
+		(NP-SBJ (NP-PN (NR 欧)
+			       (NR 美))
+			(DP (DT 各))
+			(NP (NN 国)))
+		(VP (ADVP (AD 亦))
+		    (VP (VV 颇有微词)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	大众 民生 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VPT (VV 求)
+					 (AD 不)
+					 (VV 得))))
+			    (DEC 的))))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 再))
+		(VP (VP-FOC (VV 奢求))
+		    (VP (VV 无益))))) 
+	</parse>
+	<arg n="0">
+	奢求 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tpc">
+	*OP* *T*-2 求 不 得 的 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

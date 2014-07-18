@@ -1,0 +1,158 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查询 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="inquirer"/>
+    <role argnum="1" argrole="thing inquired about"/>
+    <role argnum="2" argrole="to whom the inquiry is made"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 发言人))
+      (VP (VV 说)
+          (PU ∶)
+          (IP (PU 「)
+              (CP-CND (ADVP (CS 假如))
+                      (IP (IP (NP-SBJ (NN 情况))
+                              (VP (VA 可疑)))
+                          (CC 或)
+                          (IP (NP-SBJ (NN 资料))
+                              (VP (ADVP (AD 不))
+                                  (VP (VV 符))))))
+              (PU ，)
+              (NP-PN-SBJ (NN 入境处))
+              (VP (VV 会)
+                  (VP (VP (VV 要求)
+                          (NP-OBJ (NN 内地)
+                                  (NN 当局))
+                          (IP (NP-SBJ (-NONE- *PRO*))
+                              (VP (VP (VV 提交)
+                                      (NP-OBJ (DNP (NP (ADJP (JJ 有关))
+                                                       (NP (NN 证明)
+                                                           (NN 文件)))
+                                                   (DEG 的))
+                                              (NP (NN 副本)))))))
+                      (PU ，)
+                      (CC 并)
+                      (VP (PP-DIR (P 向)
+                                  (NP (PN 他们)))
+                          (VP (VV 查询)
+                              (NP-OBJ (DNP (NP (NN 文件))
+                                           (DEG 的))
+                                      (NP (NN 真确性)))))))))
+      (PU 。)
+      (PU 」)))
+	</parse>
+	<arg n="M" f="CND"> 假如 情况 可疑 或 资料 不 符 </arg>
+	<arg n="0"> 入境处 </arg>
+	<arg n="2"> 向 他们 </arg>
+	<V/>
+	<arg n="1"> 文件 的 真确性 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TPC (DP (DT 其他))
+              (NP (NN 详情)))
+      (PU ：)
+      (NP-SBJ (-NONE- *pro*))
+      (VP (VV 请)
+          (VP (VP (VV 参阅)
+                  (NP-OBJ (NN 资料)
+                          (NN 备忘录)))
+              (CC 或)
+              (VP (PP-DIR (P 向)
+                          (NP (NP (NN 市场)
+                                  (NN 庄家))
+                              (CC 和)
+                              (NP (ADJP (JJ 认可))
+                                  (NP (NN 交易商)))))
+                  (VP (VV 查询)))))
+      (PU 。)))
+	</parse>
+	<arg n="M" f="TPC"> 其他 详情 </arg>
+	<arg n="0"> *pro* </arg>
+	<arg n="2"> 向 市场 庄家 和 认可 交易商 </arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (ADVP (AD 平均))
+          (DP-ADV (DT 每)
+                  (CLP (M 天)))
+          (VP (VE 有)
+              (IP-OBJ (NP-SBJ (QP (CD 二千))
+                              (NP (NN 人)))
+                      (VP (VV 来)
+                          (VP (VV 参观)
+                              (PU 、)
+                              (VV 查询))))))))
+	</parse>
+	<arg n="0"> 二千 人 </arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                  (VP (VV 包括)
+                                      (LCP-OBJ (NP (NP-PN (NR 港)
+                                                          (NR 澳))
+                                                   (NP (NN 地区)))
+                                               (LC 在内))))
+                              (DEC 的)))
+                      (NP-PN (NR 中国))
+                      (DP (DT 各))
+                      (NP (NN 地)))
+                  (NP (NN 乘客)
+                      (CC 和)
+                      (NN 货主)))
+          (VP (PP-MNR (P 通过)
+                      (NP (DP (DT 该))
+                          (NP (NN 网))))
+              (VP (VP (VV 查询)
+                      (NP-OBJ (NN 铁路)
+                              (NN 运行)
+                              (NN 情况)))
+                  (PU ，)
+                  (VP (ADVP (AD 提前))
+                      (VP (VV 预订)
+                          (NP-OBJ (NN 客票)
+                                  (CC 或)
+                                  (NN 货位))))))))
+	</parse>
+	<arg n="0"> *OP* (*T*-1)->(中国各地) 包括 港 澳 地区 在内 的 中国 各 地 乘客 和 货主 </arg>
+	<arg n="M" f="MNR"> 通过 该 网 </arg>
+	<V/>
+	<arg n="1"> 铁路 运行 情况 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

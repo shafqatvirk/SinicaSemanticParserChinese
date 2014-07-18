@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 传往 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 spreads"/>
+    <role argnum="2" argrole="place arg1 spreads to"/>
+    <role argnum="3" argrole="place arg1 spreads from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+	<mapitem src="dir" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-ADV (NN 南向))
+		(PP-DIR (P 由)
+			(NP-PN (NR 印度)
+			       (PU 、)
+			       (NR 斯里兰卡)))
+		(VP (VV 传往)
+		    (NP-OBJ (NP-APP (NP-PN (NR 东南亚))
+				    (NP (NN 国家)))
+			    (PU ，)
+			    (NP (ADVP (AD 如))
+				(NP-PN (NR 缅甸)
+				       (PU 、)
+				       (NR 泰国)
+				       (PU 、)
+				       (NR 越南))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	东南亚 国家 ， 如 缅甸 、 泰国 、 越南 
+	</arg>
+	<arg n="3">
+	由 印度 、 斯里兰卡 
+	</arg>
+	<arg n="m" f="adv">
+	南向 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

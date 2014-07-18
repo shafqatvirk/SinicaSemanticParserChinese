@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 处於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place/situation arg0 is in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (QP-SBJ (CD 四分之一))
+		(VP (VV 处於)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VA 严重)))
+				    (DEC 的)))
+			    (ADJP (JJ 过渔))
+			    (NP (NN 状态))))) 
+	</parse>
+	<arg n="0">
+	四分之一 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 严重 的 过渔 状态 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

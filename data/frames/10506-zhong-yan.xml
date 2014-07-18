@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 种菸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 美浓))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-DIR (P 从)
+				    (NP (ADJP (JJ 日据))
+					(NP (NN 时代))))
+			    (VP (VV 开始))))
+		(VP (VV 发展)
+		    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 种菸)))
+			    (NP (NN 产业)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

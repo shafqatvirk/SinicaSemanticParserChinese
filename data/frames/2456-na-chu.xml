@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拿出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing taken out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 联合国)
+			 (NN 特委会))
+	      (VP (ADVP (AD 至今))
+		  (ADVP (AD 并))
+		  (VP (VV 没有)
+		      (VP (VP (VV 拿出)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 令)
+						      (NP-OBJ (NN 人))
+						      (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 信服)))))
+					      (DEC 的)))
+				      (NP (NN 证据))))
+			  (PU ，)
+			  (VP (VV 证明)
+			      (IP-OBJ (NP-PN-SBJ (NR 伊))
+				      (VP (ADVP (AD 仍))
+					  (VP (VV 拥有)
+					      (NP-OBJ (NP (ADJP (JJ 大))
+							  (NP (NN 规模)))
+						      (ADJP (JJ 杀伤性))
+						      (NP (NN 武器))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  联合国 特委会 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 令 人 *PRO* 信服 的 证据 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="adv">
+	  至今 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但是 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 推动)
+			      (NP-OBJ (NP (NP-PN (NR 图们江))
+					  (NP (NN 地区)))
+				      (NP (NN 开发))))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 韩国))
+	      (VP (VP (VP (VV 捐款)
+			  (QP-OBJ (CD 一百万)
+				  (CLP (M 美元))))
+		      (VP-PRP (VV 设立)
+			      (AS 了)
+			      (NP-OBJ (NP-PN (NR 图们江))
+				      (NP (NN 发展)
+					  (NN 基金)))))
+		  (PU ，)
+		  (VP (VP (NP-TMP (NT 目前))
+			  (PP-DIR (P 从)
+				  (LCP (NP (DP (DT 该))
+					   (NP (NN 基金)))
+				       (LC 中)))
+			  (VP (VV 拿出)
+			      (QP-OBJ (CD 十万)
+				      (CLP (M 美元)))))
+		      (VP (ADVP (AD 正在))
+			  (VP (VV 进行)
+			      (NP-OBJ (NP (NP-PN (NR 中国)
+						 (NR 珲春))
+					  (NP (NN 边境)
+					      (NN 合作区)))
+				      (NP (NN 环境)
+					  (NN 评估)
+					  (NN 项目)))))
+		      (PU ，)
+		      (VP (MSP 以)
+			  (VP (VV 期)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-DIR (P 对)
+						  (IP (NP-SBJ (NN 外资))
+						      (VP (ADVP (AD 大规模))
+							  (VP (VV 进入)
+							      (NP-OBJ (DP (DT 这)
+									  (CLP (M 个)))
+								      (NP (NN 地区)))))))
+					  (VP (VV 提供)
+					      (NP-OBJ (DNP (NP (NN 环境)
+							       (NN 方面))
+							   (DEG 的))
+						      (NP (NN 咨询))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 
+	  </arg>
+	  <arg n="1">
+	  十万 美元 
+	  </arg>
+	  <arg n="m" f="loc">
+	  从 该 基金 中 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 推动 图们江 地区 开发 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

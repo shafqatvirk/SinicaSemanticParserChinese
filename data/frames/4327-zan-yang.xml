@@ -1,0 +1,126 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赞扬 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="praiser"/>
+      <role argnum="1" argrole="praised"/>
+      <role argnum="2" argrole="proposition"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 赞扬)
+		  (NP-OBJ (NN 侨胞)
+			  (NN 台胞))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-PRP (P 为)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 支援)
+					  (NP-OBJ (DNP (NP (NN 祖国))
+						       (DEG 的))
+						  (NP (NN 社会主义)
+						      (NN 建设))))))
+			  (VP (VV 做出)
+			      (AS 了)
+			      (NP-OBJ (ADJP (JJ 重要))
+				      (NP (NN 贡献)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  侨胞 台胞 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 *PRO* 支援 祖国 的 社会主义 建设 做出 了 重要 贡献 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="praiser"/>
+      <role argnum="1" argrole="praised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 西班牙))
+		      (NP (NN 国王)))
+	      (VP (VV 赞扬)
+		  (NP-OBJ (NP (PN 其))
+			  (NP (NN 权威))))) 
+	  </parse>
+	  <arg n="0">
+	  西班牙 国王 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  其 权威 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NR 郭凤莲))
+		      (PU ，)
+		      (DP (DT 这)
+			  (CLP (M 位)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (NP-TMP (NT 当年))
+						       (VP (VCD (VV 开山)
+								(VV 造地)))))
+					       (LC 时))
+				      (VP (VV 巾帼不让须眉))))
+			      (DEC 的)))
+		      (NP (PU “)
+			  (NN 铁)
+			  (NN 姑娘)
+			  (PU ”)))
+	      (PU ，)
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 市场)
+						  (NN 经济))
+					  (VP (PP-BNF (P 给)
+						      (NP (NN 大寨人)))
+					      (VP (VV 带来)
+						  (NP-OBJ (-NONE- *T*-3)))))
+				      (DEC 的)))
+			      (NP (NN 好处))))
+		  (ADVP (AD 大加))
+		  (VP (VV 赞扬)))) 
+	  </parse>
+	  <arg n="0">
+	  郭凤莲 ， 这 位 *OP* (*T*-2)->(“铁姑娘”) *PRO* 当年 开山 造地 时 巾帼不让须眉 的 “ 铁姑娘 ” 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* 市场 经济 给 大寨人 带来 (*T*-3)->(好处) 的 好处 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  大加 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

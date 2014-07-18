@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 品裳 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 finds to taste"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					 (VP (PU 「)
+					     (VP (VV 盖)
+						 (NP-OBJ (NN 网)))
+					     (VP (VV 催花))
+					     (PU 」)))
+				 (NP (NN 技术)))
+			 (VP (VV 出现)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (QP (CD 一)
+			     (CLP (M 年)))
+			 (LC 中))
+		(PP (P 除了)
+		    (NP (NN 梅雨)
+			(NN 台风季)))
+		(PU ，)
+		(NP-TMP (DP (DT 其他)
+			    (QP (CD 三)))
+			(NP (NN 季)))
+		(ADVP (AD 都))
+		(VP (VV 可以)
+		    (VP (VRD (VV 品裳)
+			     (VV 到))
+			(NP-OBJ (NN 黑珍珠)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	黑珍珠 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tmp">
+	其他 三 季 
+	</arg>
+	<arg n="m" f="adv">
+	除了 梅雨 台风季 
+	</arg>
+	<arg n="m" f="tmp">
+	一 年 中 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 「 盖 网 催花 」 技术 出现 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 并称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities described"/>
+    <role argnum="1" argrole="name arg0 together is called"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NN 早期))
+	    (NP-SBJ (NP-PN-APP (NR 北埔)
+			       (PU 、)
+			       (NR 宝山)
+			       (CC 和)
+			       (NR 峨眉))
+		    (QP (CD 三))
+		    (NP (NN 乡)))
+	    (VP (VP (VV 并称)
+		    (NP-PN-OBJ (NR 大隘)))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (NP (NP (NN 客家))
+					 (NP-PN (NR 义民庙)))
+				     (QP (CD 十五))
+				     (NP (NN 联庄)))
+				 (LC 中)))
+		    (VP (VV 属於)
+			(NP-OBJ (NP-APP (DP (DT 同)
+					    (QP (CD 一)
+						(CLP (M 个))))
+					(NP (NN 祭典)
+					    (NN 区)))
+				(NP (PU 「)
+				    (NP-PN (NR 大隘))
+				    (NP (NN 联庄))
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	北埔 、 宝山 和 峨眉 三 乡 
+	</arg>
+	<arg n="1">
+	大隘 
+	</arg>
+	<arg n="m" f="tmp">
+	早期 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 估计)
+		(IP-OBJ (IP-ADV (NP-SBJ (QP (CD 六)
+					    (CLP (M 天)))
+					(NP (NN 展期)))
+				(VP (VV 下来)))
+			(PU ，)
+			(NP-TTL-SBJ (PU 《)
+				    (ADJP (JJ 灵))
+				    (NP (NN 山))
+				    (PU 》))
+			(VP (VP (VV 卖出)
+				(AS 了)
+				(QP-OBJ (ADVP (AD 近))
+					(QP (CD 万)
+					    (CLP (M 本)))))
+			    (PU ，)
+			    (VP (PP (P 和)
+				    (NP (NP (NP-APP (DNP (NP (NP-PN (NR 日本))
+							     (NP-APP (NN AV)
+								     (NN 女星))
+							     (NP-PN (NR 饭岛爱)))
+							 (DEG 的))
+						    (NP (NN 自传)))
+					    (NP-TTL (PU 《)
+						    (ADJP (JJ 柏拉图式))
+						    (NP (NN 性)
+							(NN 爱))
+						    (PU 》)))
+					(PU ，)
+					(CC 与)
+					(NP (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (ADVP (AD 狂))
+							    (VP (VV 销)
+								(NP-OBJ (NN 全球)))))
+						    (DEC 的)))
+					    (NP-PN-TTL (PU 《)
+						       (NR 哈利波特)
+						       (PU 》)))))
+				(VP (VV 并称)
+				    (NP-OBJ (NP (NN 国际)
+						(NN 书展))
+					    (QP (CD 三))
+					    (ADJP (JJ 大))
+					    (NP (NN 畅销)
+						(NN 书))))))))) 
+	</parse>
+	<arg n="0">
+	《 灵 山 》 
+	</arg>
+	<arg n="0" f="crd">
+	和 日本 AV 女星 饭岛爱 的 自传 《 柏拉图式 性 爱 》 ， 与 *OP* *T*-1 狂 销 全球 的 《 哈利波特 》 
+	</arg>
+	<arg n="1">
+	国际 书展 三 大 畅销 书 
+	</arg>
+	<arg n="m" f="adv">
+	六 天 展期 下来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 逼近 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is approaching"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 几乎))
+		(VP (VV 逼近)
+		    (NP-OBJ (DNP (QP (CD ○．三)
+				     (CLP (M 美元)))
+				 (DEG 的))
+			    (NP (NN 成本价)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	○．三 美元 的 成本价 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (NN 年关))
+		(VP (VV 逼近))) 
+	</parse>
+	<arg n="0">
+	年关 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

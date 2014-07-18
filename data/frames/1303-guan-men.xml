@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关门 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (ADJP (JJ 女))
+			      (NP (NN 营业员)))
+		      (NP-PN (NR 张丽)))
+	      (VP (ADVP (AD 正))
+		  (VP (VV 准备)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 关门)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

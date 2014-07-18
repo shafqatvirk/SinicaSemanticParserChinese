@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 输球 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loser"/>
+      <role argnum="1" argrole="point lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (QP-ADV (CD 两)
+			  (CLP (M 场)))
+		  (VP (VV 输球)
+		      (QP-EXT (CD １１)
+			      (CLP (M 个)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  １１ 个 
+	  </arg>
+	  <arg n="m" f="adv">
+	  两 场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 致使)
+	      (NP-PN-OBJ (NR 香港队))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 输球)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

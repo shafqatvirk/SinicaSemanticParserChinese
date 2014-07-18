@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 装有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing stored"/>
+      <role argnum="1" argrole="location arg0 is stored"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (LCP-SBJ (NP (NN 货车))
+			   (LC 里))
+		  (VP (VV 装有)
+		      (NP-OBJ (NP (QP (CD 六万)
+				      (CLP (M 支)))
+				  (NP (NN 雷管)))
+			      (CC 和)
+			      (NP (QP (CD 四万)
+				      (CLP (M 米)))
+				  (NP (NN 导火索)))))) 
+	  </parse>
+	  <arg n="0">
+	  六万 支 雷管 和 四万 米 导火索 
+	  </arg>
+	  <arg n="1">
+	  货车 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

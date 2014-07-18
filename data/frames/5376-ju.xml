@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 聚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 gathers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 据说))
+		    (VP (VV 能)
+			(VP (VV 聚)
+			    (NP-OBJ (NN 财气)))))
+		(PU ，)
+		(VP (ADVP (AD 一度))
+		    (VP (VV 成为)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 格调)
+						    (CC 与)
+						    (NN 身价))
+					    (VP (ADVP (AD 最))
+						(VP (VA 高))))
+					(DEC 的)))
+				(NP (NN 招财物))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	财气 
+	</arg>
+	<arg n="m" f="mnr">
+	据说 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 就))
+	    (ADVP (AD 这样))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 一)
+			(CLP (M 群)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 热爱)
+				    (NP-OBJ (NN 乡土))))
+			    (DEC 的)))
+		    (NP (NN 人士)))
+	    (VP (ADVP (AD 经常))
+		(VP (VP (VV 聚)
+			(ADVP (AD 在一起)))
+		    (PU ，)
+		    (VP (VV 商讨)
+			(NP-OBJ (DNP (LCP (NP (NN 地方))
+					  (LC 上))
+				     (DEG 的))
+				(NP (NN 事务))))))) 
+	</parse>
+	<arg n="1">
+	一 群 *OP* *T*-1 热爱 乡土 的 人士 
+	</arg>
+	<arg n="m" f="adv">
+	在一起 
+	</arg>
+	<arg n="m" f="adv">
+	经常 
+	</arg>
+	<arg n="m" f="adv">
+	这样 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

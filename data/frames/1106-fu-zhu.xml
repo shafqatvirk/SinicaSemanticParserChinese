@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 辅助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (LCP-SBJ (NP-TTL (PU 《)
+				   (NN 国史)
+				   (NN 大纲)
+				   (PU 》))
+			   (LC 里))
+		  (VP (VV 列举)
+		      (NP-OBJ (NP-PN (NR 汉朝))
+			      (DNP (PP (P 在)
+				       (LCP (NP (NN 政治))
+					    (LC 上)))
+				   (DEG 的))
+			      (QP (CD 几))
+			      (ADJP (JJ 大))
+			      (NP (NN 目标)))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 包括)
+		      (PU ：)
+		      (IP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-LGS (P 由)
+					      (NP (NN 丞相)))
+				      (VP (VV 辅助)
+					  (NP-OBJ (NN 皇帝)))))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 为)
+				      (NP-OBJ (NN 政府)
+					      (NN 领袖))))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 担负)
+				      (NP-OBJ (ADJP (JJ 实际))
+					      (NP (NN 行政)
+						  (NN 责任)))))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 选贤与能))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  由 丞相 
+	  </arg>
+	  <arg n="1">
+	  皇帝 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

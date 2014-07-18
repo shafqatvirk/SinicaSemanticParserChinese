@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拉近 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 shortens"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 场)))
+		    (ADJP (JJ 大))
+		    (NP (NN 地震)))
+	    (PU ，)
+	    (VP (VP (VV 震碎)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 许多))
+			    (NP (NN 家庭))))
+		(PU 、)
+		(VP (VV 震垮)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 许多))
+			    (NP (NN 房子))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (VP (VV 拉近)
+			(AS 了)
+			(NP-OBJ (NP (DNP (NP (NN 人)
+					     (CC 与)
+					     (NN 人))
+					 (DEG 的))
+				    (NP (NN 感情)))
+				(PU ，)
+				(NP (DNP (NP (NN 地方)
+					     (CC 和)
+					     (NN 地方))
+					 (DEG 的))
+				    (NP (NN 距离)))))))) 
+	</parse>
+	<arg n="0">
+	一 场 大 地震 
+	</arg>
+	<arg n="1">
+	人 与 人 的 感情 ， 地方 和 地方 的 距离 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

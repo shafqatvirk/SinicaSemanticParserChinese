@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跨到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 steps into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 一定))
+		(VP (VV 要)
+		    (VP (VP (VV 跨到)
+			    (NP-OBJ (NN 主流)))
+			(VP (VV 来)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	主流 
+	</arg>
+	<arg n="m" f="adv">
+	一定 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

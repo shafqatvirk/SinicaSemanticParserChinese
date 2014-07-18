@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减免 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="exempter"/>
+      <role argnum="1" argrole="exempted"/>
+      <role argnum="2" argrole="beneficiary"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP (NN 灾区))
+			       (DP (DT 各))
+			       (NP (NN 地)
+				   (NN 市)
+				   (NN 县)))
+			   (DEG 的))
+		      (NP (NN 教育)
+			  (NN 行政)
+			  (NN 部门)))
+	      (PU ，)
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (PP-PRP (P 因)
+							  (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (VV 受灾))))
+						  (VP (VV 造成)
+						      (NP-OBJ (NN 家庭)
+							      (NN 经济))
+						      (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VA 困难)))))
+					      (VP (MSP 而)
+						  (VP (ADVP (AD 无法))
+						      (VP (VV 缴纳)
+							  (NP-OBJ (NN 学费))))))))
+				  (DEC 的))
+			      (NP (NN 学生))))
+		  (PU ，)
+		  (VP (VP (VV 予以)
+			  (VP (VV 减免)
+			      (NP-OBJ (NN 学费))))
+		      (CC 或)
+		      (VP (VV 给予)
+			  (NP-OBJ (ADJP (JJ 一定))
+				  (NP (NN 救助))))))) 
+	  </parse>
+	  <arg n="0">
+	  灾区 各 地 市 县 的 教育 行政 部门 
+	  </arg>
+	  <arg n="1">
+	  学费 
+	  </arg>
+	  <arg n="2">
+	  对 *OP* *T*-1 因 *PRO* 受灾 造成 家庭 经济 *PRO* 困难 而 无法 缴纳 学费 的 学生 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-PRP (P 因)
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 减免)
+						  (NP-OBJ (NN 关税)))))
+				  (VP (MSP 而)
+				      (VP (VV 造成)
+					  (NP-OBJ (-NONE- *T*-1))))))
+			  (DEC 的)))
+		  (NP (NN 税收)
+		      (NN 损失)))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  关税 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

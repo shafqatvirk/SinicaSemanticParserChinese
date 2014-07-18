@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转型 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 正))
+		  (VP (VRD (VV 反映)
+			   (VV 出))
+		      (NP-OBJ (CP-APP (IP (LCP-TMP (NP (NT 近年))
+						   (LC 来))
+					  (NP-SBJ (NP-PN (NR 台湾))
+						  (NP (NN 整体)
+						      (NN 产业)))
+					  (VP (VV 转型)
+					      (CC 与)
+					      (VV 升级)))
+				      (DEC 的))
+			      (NP (NN 成果)))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 整体 产业 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

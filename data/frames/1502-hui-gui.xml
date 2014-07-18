@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回归 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-PN-SBJ (NR 香港))
+		       (VP (VV 回归)
+			   (NP-OBJ (NN 祖国))))
+		   (LC 以后)) 
+	  </parse>
+	  <arg n="0">
+	  香港 
+	  </arg>
+	  <arg n="1">
+	  祖国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-PN-SBJ (NR 香港))
+		       (VP (VV 回归)))
+		   (LC 后))
+	  </parse>
+	  <arg n="0">
+	  香港 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

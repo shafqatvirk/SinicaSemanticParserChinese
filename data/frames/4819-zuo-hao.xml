@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 央行))
+	      (VP (VP (ADVP (AD 还))
+		      (VP (VV 作好)
+			  (AS 了)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 随时))
+						  (PP-DIR (P 向)
+							  (NP-PN (NR 欧洲)
+								 (NN 中央)
+								 (NN 银行)))
+						  (VP (VV 通报)
+						      (CC 和)
+						      (VV 建议))))
+					  (DEC 的))
+				  (NP (NN 准备)))))
+		  (PU ，)
+		  (VP (ADVP (AD 以便))
+		      (VP (VV 纠正)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 可能)
+						  (VP (VV 出现))))
+					  (DEC 的)))
+				  (NP (NN 毛病))))))) 
+	  </parse>
+	  <arg n="0">
+	  央行 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 随时 向 欧洲 中央 银行 通报 和 建议 的 准备 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 虚级化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 最後))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 新))
+				    (VP (VV 成立))))
+			    (DEC 的)))
+		    (NP-PN (NR 亲民党))
+		    (NP-PN (NN 国大))
+		    (NP (NN 党团)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 同意)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 虚级化)
+				(NP-PN-OBJ (NN 国大))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	国大 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(VP (VV 达成)
+	    (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NN 国民)
+					   (NN 大会))
+				(VP (VV 虚级化)))
+			    (DEC 的))
+		    (NP (NN 共识)))) 
+	</parse>
+	<arg n="1">
+	国民 大会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,232 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拍 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="content of arg0's shooting"/>
+    <role argnum="2" argrole="product of arg0's shooting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-LOC (P 在)
+			    (NP-PN (NR 香港)))
+		    (VP (VV 拍)
+			(NP-OBJ (NN 电影))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	电影 
+	</arg>
+	<arg n="m" f="loc">
+	在 香港 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *pro*))
+		(VP (VP (VV 来)
+			(VP (VV 拍)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (PN 我))
+						(VP (VV 工作)))
+					    (DEC 的))
+				    (NP (NN 情形)))))
+		    (VP (ADVP (AD 就))
+			(VP (VA 好))))
+		(SP 了)) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	我 工作 的 情形 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (NN 连续剧))
+		    (VP (VV 卖座)))
+	    (PU ，)
+	    (NP-SBJ (NN 电视台))
+	    (VP (ADVP (AD 就))
+		(DVP (VP (VV 没完没了))
+		     (DEV 地))
+		(VP (VRD (VV 拍)
+			 (VV 下去))))) 
+	</parse>
+	<arg n="0">
+	电视台 
+	</arg>
+	<arg n="m" f="adv">
+	没完没了 地 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="cnd">
+	连续剧 卖座 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-2 (PU 「)
+		  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (CS 虽然))
+				  (VP (VV 故作)
+				      (NP-OBJ (NN 奇情)))))
+		      (PU ，)
+		      (ADVP (AD 但))
+		      (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (VV 能够)
+			      (VP (VP (ADVP (AD 另))
+				      (VP (VV 创)
+					  (NP-OBJ (QP (CD 一))
+						  (NP (NN 格)))))
+				  (PU ，)
+				  (VP (VV 做到)
+				      (UCP-OBJ (IP (NP-SBJ (NN 剧情))
+						   (VP (VA 曲折)))
+					       (PU ，)
+					       (NP (DNP (NP (NN 情欲)
+							    (CC 与)
+							    (NN 情杀))
+							(DEG 的))
+						   (NP (NN 怪状)))))))
+			  (PU ，)
+			  (VP (ADVP (AD 还))
+			      (VP (VV 能)
+				  (VP (BA 把)
+				      (IP-OBJ (NP-PN-SBJ (NR 王祖贤))
+					      (VP (VV 拍)
+						  (DER 得)
+						  (VP-EXT (VA 幽幽艳艳)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	王祖贤 
+	</arg>
+	<arg n="m" f="adv">
+	幽幽艳艳 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 虽然 故作 奇情 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (QP (OD 第二)
+				(CLP (M 部)))
+			    (NP (NN 电影)))
+		    (NP-TTL (PU 《)
+			    (DNP (NP-PN (NR 潘金莲))
+				 (DEG 之))
+			    (NP (NN 前世)
+				(NN 今生))
+			    (PU 》)))
+	    (VP (VP (VC 是)
+		    (NP-PRD (DNP (NP (NP (NP-APP (NP (ADJP (JJ 古代))
+						     (NP (NN 小说)))
+						 (ADJP (JJ 奇))
+						 (NP (NN 女子)))
+					 (NP-PN (NR 潘金莲)))
+				     (NP (NN 故事)))
+				 (DEG 的))
+			    (NP (NN 现代版))))
+		(PU ，)
+		(VP (VV 拍)
+		    (DER 得)
+		    (VP-EXT (ADVP (AD 更))
+			    (VP (VCD (VA 挥洒)
+				     (VA 流利))))))) 
+	</parse>
+	<arg n="2">
+	第二 部 电影 《 潘金莲 之 前世 今生 》 
+	</arg>
+	<arg n="m" f="adv">
+	更 挥洒 流利 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="slap">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NN 法务部))
+	    (VP (VV 展现)
+		(AS 了)
+		(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (PU 「)
+					(VP (VV 拍)
+					    (NP-OBJ (NN 苍蝇)))
+					(CC 也)
+					(VP (VV 打)
+					    (NP-OBJ (NN 老虎)))
+					(PU 」)))
+				(DEC 的))
+			(NP (NN 成绩))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	苍蝇 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

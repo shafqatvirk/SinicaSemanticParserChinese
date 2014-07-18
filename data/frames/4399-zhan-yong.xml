@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 占用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing occupied and used"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 结巴乡))
+		      (QP (CD 一))
+		      (NP (NN 村)
+			  (NN 干部)))
+	      (VP (VP (PP-PRP (P 因)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 建)
+				      (NP-OBJ (NN 房)))))
+		      (VP (VV 占用)
+			  (NP-OBJ (NN 农田))))
+		  (PU ，)
+		  (VP (LB 被)
+		      (IP-OBJ (NP-SBJ (NN 村民)
+				      (NN 代表)
+				      (NN 大会))
+			      (VP (VV 罢免)
+				  (NP-OBJ (NN 职务))))))) 
+	  </parse>
+	  <arg n="0">
+	  结巴乡 一 村 干部 
+	  </arg>
+	  <arg n="1">
+	  农田 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 *PRO* 建 房 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

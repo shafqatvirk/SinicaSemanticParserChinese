@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="entity sent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (DP (DT 此))
+			  (NP (NN 期间))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 西非))
+		      (ADJP (JJ 维和))
+		      (NP (NN 部队)))
+	      (VP (ADVP (AD 曾))
+		  (VP (VP (VV 出动)
+			  (NP-OBJ (NN 战斗机)))
+		      (VP (VV 轰炸)
+			  (NP-OBJ (NN 叛军)
+				  (NN 阵地)))
+		      (PU ，)
+		      (VP (VV 炸死)
+			  (NP-OBJ (NN 叛军))
+			  (NP-EXT (QP (ADVP (AD 约))
+				      (QP (CD ５０余)))
+				  (NP (NN 人))))))) 
+	  </parse>
+	  <arg n="0">
+	  西非 维和 部队 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  曾 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  战斗机 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

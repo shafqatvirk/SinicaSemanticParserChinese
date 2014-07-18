@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 养成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing cultivated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 创业者))
+	    (VP (VV 应该)
+		(VP (PP-DIR (P 从)
+			    (NP (NN 起步)))
+		    (ADVP (AD 就))
+		    (VP (VV 养成)
+			(NP-OBJ (DNP (NP (PN 以下))
+				     (DEG 的))
+				(NP (NN 习惯))))))) 
+	</parse>
+	<arg n="0">
+	创业者 
+	</arg>
+	<arg n="1">
+	以下 的 习惯 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="dir">
+	从 起步 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 运动)
+		    (NN 习惯))
+	    (VP (VV 要)
+		(VP (VV 靠)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (NP-ADV (NN 长期))
+				(VP (NN 养成))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	长期 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

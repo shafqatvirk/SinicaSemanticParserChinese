@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="gambler"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (ADVP-WH (AD 为什麽))
+	      (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 电影业)))
+	      (VP (NP-FOC (ADVP (AD 连))
+			  (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PU 『)
+					      (VV 赌)
+					      (PU 』)
+					      (ADVP (AD 一下))))
+				      (DEC 的))
+			      (NP (NN 意愿))))
+		  (ADVP (AD 都))
+		  (VP (VE 没有)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	一下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

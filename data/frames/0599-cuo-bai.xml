@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挫败 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="winner"/>
+      <role argnum="1" argrole="loser"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NN 人大)
+				  (NN 常委会))
+			   (DEG 的))
+		      (NP (NN 决定)))
+	      (PU ，)
+	      (VP (VV 挫败)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 港)
+						     (NR 英))
+					      (NP (NN 当局)))
+				      (VP (PP-LOC (P 在)
+						  (LCP (NP (NN 政制)
+							   (NN 问题))
+						       (LC 上)))
+					  (VP (VV 搞乱)
+					      (NP-OBJ (NN 人心)))))
+				  (DEC 的))
+			  (NP (NN 企图))))) 
+	  </parse>
+	  <arg n="0">
+	  人大 常委会 的 决定 
+	  </arg>
+	  <arg n="1">
+	  港 英 当局 在 政制 问题 上 搞乱 人心 的 企图 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

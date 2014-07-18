@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 对映 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities being in contrast to each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-ADV (P 与)
+				    (NP (DNP (ADJP (JJ 红色))
+					     (DEG 的))
+					(NP (NN 城门))))
+			    (VP (VRD (VV 对映)
+				     (VV 起来)))))
+		(PU ，)
+		(ADVP (AD 煞是))
+		(VP (VA 好看)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="crd">
+	与 红色 的 城门 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

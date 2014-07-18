@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 震动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity arg0 shakes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PU 「)
+					  (NP (NT 九二一))
+					  (NP-PN (NR 集集))
+					  (ADJP (JJ 大))
+					  (NP (NN 地震))
+					  (PU 」))
+				  (VP (VV 造成)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (ADJP (JJ 大))
+		      (NP (NN 停电)))
+	      (PU ，)
+	      (VP (VP (VV 使)
+		      (NP-PN-OBJ (NR 新竹)
+				 (NN 科学)
+				 (NN 园区))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 损失惨重))))
+		  (PU ，)
+		  (VP (ADVP (AD 也))
+		      (ADVP (AD 连带))
+		      (VP (VV 使得)
+			  (NP-OBJ (NN 全球)
+				  (NN 资讯业))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-PRP (P 为)
+					  (NP (PN 之)))
+				  (VP (VV 震动)))))))) 
+	  </parse>
+	  <arg n="0">
+	  为 之 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

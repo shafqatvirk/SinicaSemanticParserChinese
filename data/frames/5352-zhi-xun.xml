@@ -1,0 +1,126 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 质询 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 makes inquiries to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NN 财政)
+			    (NN 部长))
+		    (NP-PN (NR 邱正雄)))
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (NP-TMP (NT 去年)
+					     (NT 十二月)
+					     (NT 二十二日))
+				     (PP-LOC (P 於)
+					     (NP-PN (NN 立法院)))
+				     (VP (VV 质询))))
+			     (LC 时)))
+		(PU ，)
+		(ADVP (AD 正式))
+		(VP (VV 公布)
+		    (NP-OBJ (NP-PN (NN 财政部))
+			    (DNP (PP (P 对)
+				     (NP (NP-APP (NP (NP-APP (DNP (NP-PN (NR 宋楚瑜))
+								  (DEG 之))
+							     (NP (NN 子)))
+						     (NP-PN (NR 宋镇远)))
+						 (DNP (ADJP (JJ 巨额))
+						      (DEG 的))
+						 (NP-PN (NR 中兴)
+							(NN 票券))
+						 (NP (NN 买卖)))
+					 (QP (CD 一))
+					 (NP (NN 事))))
+				 (DEG 的))
+			    (QP (CD 部分))
+			    (NP (NN 调查)
+				(NN 结果)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="loc">
+	於 立法院 
+	</arg>
+	<arg n="m" f="tmp">
+	去年 十二月 二十二日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NN 财政)
+			    (NN 部长))
+		    (NP-PN (NR 邱正雄)))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (DNP (UCP (NP (NN 舆论))
+					   (CC 及)
+					   (IP (NP-SBJ (NN 立法)
+						       (NN 委员))
+					       (VP (VV 质询))))
+				      (DEG 的))
+				 (NP (NN 压力)))
+			     (LC 下)))
+		(PU ，)
+		(ADVP (AD 乃))
+		(PP-TMP (P 於)
+			(NP (NT 十二月)
+			    (NT 二十二日)))
+		(VP (VV 公布)
+		    (NP-OBJ (ADJP (JJ 前述))
+			    (NP (NN 调查)
+				(NN 结果)))))) 
+	</parse>
+	<arg n="0">
+	立法 委员 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (QP (CD 十几)
+			(CLP (M 个)))
+		    (NP (NN 人)))
+	    (PU ，)
+	    (NP-SBJ (NN 立法)
+		    (NN 委员们))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 不))
+		(VP (VV 知道)
+		    (IP-OBJ-Q (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (PP-DIR (P 从)
+					      (NP-WH (PN 谁)))
+				      (VP (VV 质询)))
+				  (VP (VV 起))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	谁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

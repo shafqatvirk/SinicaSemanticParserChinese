@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贬抑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 plays down and suppresses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 过度))
+			  (VP (VV 崇扬)
+			      (CC 与)
+			      (VV 贬抑))))
+	      (PU ，)
+	      (VP (PP-DIR (P 对)
+			  (NP (NT 五四)
+			      (NN 精神)))
+		  (ADVP (AD 都))
+		  (VP (VC 是)
+		      (NP-PRD (NN 伤害))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  过度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

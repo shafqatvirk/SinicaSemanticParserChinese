@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开市 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-SBJ (NP-TPC (NP-PN (NR 西欧))
+				  (NP (NN 股市)))
+			  (QP-TMP (CP (WHPP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-TMP (-NONE- *T*-1))
+					      (LCP-TMP (NP (NN 节))
+						       (LC 后))
+					      (VP (VV 开市)))))
+				  (QP (OD 第一)
+				      (CLP (M 天))))
+			  (NP-SBJ (NN 交易))
+			  (VP (ADVP (AD 不))
+			      (VP (VA 活跃))))
+		  (VP (VE 有)
+		      (NP-OBJ (ADJP (JJ 以下))
+			      (QP (CD 几)
+				  (CLP (M 个)))
+			      (NP (NN 原因))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  节 后 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

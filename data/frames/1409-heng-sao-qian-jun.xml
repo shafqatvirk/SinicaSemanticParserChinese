@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 横扫千军 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 巴西)
+			 (NN 女子)
+			 (NN 国家队))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-PN-SBJ (NR 阿根廷))
+					       (VP (VV 举行)
+						   (NP-OBJ (-NONE- *T*-1))))
+					   (DEC 的)))
+				   (NP-PN (NR 南美))
+				   (NP (NN 足球赛)))
+			       (LC 上)))
+		  (PU ，)
+		  (VP (VP (VV 横扫千军)
+			  (PP (P 如)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 卷)
+				      (NP-OBJ (NN 席))))))
+		      (PU ，)
+		      (VP (VV 登上)
+			  (AS 了)
+			  (NP-OBJ (NN 冠军)
+				  (NN 宝座)))))) 
+	  </parse>
+	  <arg n="0">
+	  巴西 女子 国家队 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *OP* 阿根廷 举行 *T*-1 的 南美 足球赛 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如 *PRO* 卷 席 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

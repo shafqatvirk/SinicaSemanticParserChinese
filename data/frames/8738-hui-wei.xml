@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回味 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 retrospects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 回首)
+			      (NP-PN-OBJ (NR 东方)))
+			  (PU ，)
+			  (VP (VV 回味)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (NP-TMP (NT 过去))
+						      (VP (VV 叱吒)
+							  (NP-OBJ (NN 画坛)))))
+					      (DEC 的)))
+				      (QP (CD 八))
+				      (ADJP (JJ 大))
+				      (NP (NN 响马))))))
+	      (PU ，)
+	      (CP-ADV (ADVP (CS 尽管))
+		      (PU ，)
+		      (IP (IP (NP-PN-SBJ (NR 陈道明))
+			      (VP (ADVP (AD 已经))
+				  (VP (VCD (VV 转业)
+					   (VV 经商))))
+			      (PU ，))
+			  (IP (NP-PN-SBJ (NR 李元佳))
+			      (VP (PP-LOC (P 在)
+					  (NP-PN (NR 英国)))
+				  (VP (VV 过世))))
+			  (PU ，)
+			  (CC 而)
+			  (IP (NP-PN-SBJ (NR 欧阳文苑))
+			      (VP (ADVP (AD 则))
+				  (PP-PRP (P 因为)
+					  (NP (NN 精神)
+					      (NN 问题)))
+				  (ADVP (AD 无法))
+				  (VP (VV 创作))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 过去 叱吒 画坛 的 八 大 响马 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

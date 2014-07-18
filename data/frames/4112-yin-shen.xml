@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 隐身 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location arg0 is hiding"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NN 总裁))
+		      (NP-PN (NR 斯特恩)))
+	      (VP (ADVP (AD 依然))
+		  (VP (VV 隐身)
+		      (PP (P 在)
+			  (NP-PN (NR 阿斯彭)))))) 
+	  </parse>
+	  <arg n="0">
+	  总裁 斯特恩 
+	  </arg>
+	  <arg n="1">
+	  在 阿斯彭 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

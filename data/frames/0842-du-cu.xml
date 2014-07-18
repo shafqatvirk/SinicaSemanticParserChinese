@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 督促 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="prodder"/>
+      <role argnum="1" argrole="party prodded"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 同时))
+		  (PU ，)
+		  (VP (VP (VV 加强)
+			  (AS 了)
+			  (NP-OBJ (DNP (PP (P 对)
+					   (NP (NN 外商)
+					       (NN 投资)
+					       (NN 企业)
+					       (NN 合同)
+					       (NN 履约)))
+				       (DEG 的))
+				  (NP (NN 监管)
+				      (NN 工作))))
+		      (PU ，)
+		      (VP (VV 督促)
+			  (NP-OBJ (NN 企业))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 自觉))
+				  (VP (VV 履行)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (NN 合同))
+							  (VP (VV 规定)
+							      (NP-OBJ (-NONE- *T*-1))))
+						      (DEC 的)))
+					      (NP (NN 权力)
+						  (PU 、)
+						  (NN 义务)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  企业 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 自觉 履行 *OP* 合同 规定 *T*-1 的 权力 、 义务 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

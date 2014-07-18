@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搬入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="mover"/>
+    <role argnum="1" argrole="goal"/>
+    <role argnum="2" argrole="move from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (QP (CD 七成))
+                  (NP (NN 灾民)))
+          (VP (ADVP (AD 陆续))
+              (VP (VV 搬入)
+                  (NP-OBJ (NN 新居))))))
+	</parse>
+	<arg n="0"> 七成 灾民 </arg>
+	<arg n="M" f="ADV"> 陆续 </arg>
+	<V/>
+	<arg n="1"> 新居 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

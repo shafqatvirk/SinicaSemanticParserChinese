@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 信奉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 believes in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (PN 它))
+			 (DEG 的))
+		    (NP (NN 蛋)))
+	    (VP (VP (ADVP (AD 曾))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (NN 排湾族)
+						    (NN 人))
+					    (VP (VV 信奉)
+						(NP-OBJ (-NONE- *T*-1))))
+					(DEC 的)))
+				(NP (NN 祖先)))))
+		(PU ，)
+		(VP (ADVP (AD 如今))
+		    (VP (VP (VV 装)
+			    (PP (P 在)
+				(LCP (NP (CP (WHNP-2 (-NONE- *OP*))
+					     (CP (IP (NP-SBJ (-NONE- *T*-2))
+						     (VP (VA 透明)))
+						 (DEC 的)))
+					 (ADJP (JJ 大))
+					 (NP (NN 药)
+					     (NN 瓶)))
+				     (LC 里))))
+			(PU ，)
+			(VP (VV 成为)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 鼓动)
+						    (NP-OBJ (NN 城市)
+							    (NN 欲望))))
+					    (DEC 的))
+				    (NP (NN 工具)))))))) 
+	</parse>
+	<arg n="0">
+	排湾族 人 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

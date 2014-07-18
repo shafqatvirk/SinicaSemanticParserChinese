@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 强制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity forced"/>
+      <role argnum="2" argrole="thing forced to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-ADV (DT 每)
+		      (CLP (M 年)))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-3 (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (VV 强制)
+					  (NP-OBJ (-NONE- *-3))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 醒酒)))))))
+			  (DEC 的))
+		      (NP (NN 人)))
+	      (VP (VV 达)
+		  (NP-OBJ (DNP (QP (CD １０万))
+			       (DEG 之))
+			  (NP (NN 众))))) 
+	  </parse>
+	  <arg n="1">
+	  *-3 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 醒酒 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

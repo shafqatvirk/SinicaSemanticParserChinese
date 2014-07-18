@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity arg0 startles"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 举座))
+	      (VP (ADVP (AD 大))
+		  (VP (VA 惊)))) 
+	  </parse>
+	  <arg n="1">
+	  举座 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  大 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 安全))
+			  (VP (VV 上网))))
+		  (PU ，)
+		  (IP (NP-TPC (NN 骇客))
+		      (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 免))
+			  (VP (VV 惊))))) 
+	  </parse>
+	  <arg n="0">
+	  骇客 	
+	  </arg>
+	  <arg n="1">
+	  *pro* 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  免 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

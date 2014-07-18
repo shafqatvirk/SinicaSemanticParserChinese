@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 招待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 会谈))
+			   (VP (VV 结束)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 麦克拉伦))
+	      (VP (VP (VV 设)
+		      (NP-OBJ (NN 晚宴)))
+		  (VP-PRP (VV 招待)
+			  (AS 了)
+			  (NP-OBJ (NP-PN (NR 邹家华))
+				  (NP (NN 一行)))))) 
+	  </parse>
+	  <arg n="0">
+	  麦克拉伦 
+	  </arg>
+	  <arg n="1">
+	  邹家华 一行 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  会谈 结束 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

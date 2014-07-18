@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 投靠 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 goes to and depends on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 叔婶))
+	    (VP (ADVP (AD 却))
+		(VP (VV 要)
+		    (NP-OBJ (PN 他))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 去)
+				(NP-PN-OBJ (NR 长沙)))
+			    (VP (VV 投靠)
+				(NP-OBJ (NN 哥哥)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	哥哥 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

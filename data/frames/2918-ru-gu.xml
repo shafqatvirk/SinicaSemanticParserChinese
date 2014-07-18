@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入股 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="stock buyer"/>
+      <role argnum="1" argrole="entity stock of which bought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VC 是)
+		  (NP-PRD (NP-PN (NR 中国))
+			  (QP (OD 首)
+			      (CLP (M 家)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 主要))
+					  (PP-LGS (P 由)
+						  (NP (ADJP (JJ 民营))
+						      (NP (NN 企业))))
+					  (VP (VCD (VV 投资)
+						   (VV 入股)))))
+				  (DEC 的)))
+			  (ADJP (JJ 全国性))
+			  (NP (NN 股份制)
+			      (NN 商业)
+			      (NN 银行))))) 
+	  </parse>
+	  <arg n="0">
+	  由 民营 企业 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

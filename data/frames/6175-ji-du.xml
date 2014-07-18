@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 嫉妒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is envious of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-PN-SBJ (NR 八里) )
+		(VP (ADVP (AD 是否))
+		    (VP (VV 会)
+			(VP (DVP (ADVP (AD 偷偷))
+				 (DEV 地))
+			    (VP (VV 嫉妒)
+				(AS 著)
+				(NP-PN-OBJ (NR 淡水) )))))) 
+	</parse>
+	<arg n="0">
+	八里 
+	</arg>
+	<arg n="1">
+	淡水 
+	</arg>
+	<arg n="m" f="adv">
+	偷偷 地 
+	</arg>
+	<arg n="m" f="adv">
+	是否 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(NP (DP (DT 某)
+					(CLP (M 个)))
+				    (NP (NN 角度))))
+			(VP (MSP 来)
+			    (VP (VV 说)))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-3))
+				(NP-SBJ (NN 年纪))
+				(VP (PP (P 与)
+					(NP (PN 他)))
+				    (VP (VA 一样))))
+			    (DEC 的)))
+		    (QP (CD 许多))
+		    (NP (NN 男人)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 看到)
+			    (NP-OBJ (DNP (NP (NN 年轻人))
+					 (DEG 的))
+				    (NP (NN 写真集)
+					(CC 与)
+					(NN 打扮)))))
+		(PU ，)
+		(ADVP (AD 恐怕))
+		(VP (VV 会)
+		    (VP (VP (ADVP (AD 很))
+			    (VP (VV 嫉妒)))
+			(PU ，)
+			(VP (ADVP (AD 甚至))
+			    (VP (VE 有)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 种)))
+					(NP (NN 失落感))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-3 年纪 与 他 一样 的 许多 男人 
+	</arg>
+	<arg n="m" f="adv">
+	很 
+	</arg>
+	<arg n="m" f="adv">
+	恐怕 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 看到 年轻人 的 写真集 与 打扮 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 从 某 个 角度 来 说 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

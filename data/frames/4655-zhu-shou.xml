@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驻守 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 is stationed and guards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 解放军))
+		      (VP (PP-LOC (P 於)
+				  (NP-PN (NR 香港)))
+			  (VP (VV 驻守))))
+	      (VP (VC 是)
+		  (NP-PRD (DNP (NP (NN 主权))
+			       (DEG 的))
+			  (NP (NN 体现))))) 
+	  </parse>
+	  <arg n="0">
+	  解放军 
+	  </arg>
+	  <arg n="1">
+	  於 香港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吹掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 blows away"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (ADVP (AD 就))
+		      (PP (P 像)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 贴)
+					      (PP (P 在)
+						  (LCP (NP (NN 布告栏))
+						       (LC 上)))))
+				      (DEC 的)))
+			      (NP (NN 宣传品)))))
+	      (PU ，)
+	      (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (LB 被)
+			  (IP-OBJ (NP-SBJ (NN 风))
+				  (VP (VV 吹掉)
+				      (AS 了)))))
+	      (PU ，)
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 再))
+			  (VP (VV 贴)
+			      (QP-OBJ (CD 一)
+				      (CLP (M 张))))))
+	      (VP (ADVP (AD 就))
+		  (VP (VA 好)))) 
+	  </parse>
+	  <arg n="0">
+	  风 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

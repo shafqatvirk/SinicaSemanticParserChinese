@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 在位 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-PN-SBJ (NR 刘向))
+			 (VP (VV 死)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 在位)
+				    (QP-EXT (ADVP (AD 只有))
+					    (QP (CD 六)
+						(CLP (M 年))))))
+			    (DEC 的)))
+		    (NP-PN (NR 汉哀帝)))
+	    (PU ，)
+	    (VP (VV 命)
+		(NP-OBJ (NP-APP (NP-PN (NR 刘向))
+				(NP (NN 儿子)))
+			(NP-PN (NR 刘歆)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 继续)
+			(NP-OBJ (NP (NP (PN 其))
+				    (NP (NN 父)))
+				(NP (NN 工作))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="ext">
+	只有 六 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CP (WHNP-1 (-NONE- *OP*))
+			     (CP (IP (NP-PN-SBJ (NR 宋太宗))
+				     (VP (VV 在位)
+					 (NP-OBJ (-NONE- *T*-1))))
+				 (DEC 的)))
+			 (QP (CD 二十)
+			     (CLP (M 年))))
+		     (LC 间))
+	    (PU ，)
+	    (NP-SBJ (NN 录取)
+		    (NN 名单))
+	    (VP (NP-PRD (QP (ADVP (AD 将近))
+			    (QP (CD 万)))
+			(NP (NN 人))))) 
+	</parse>
+	<arg n="0">
+	宋太宗 
+	</arg>
+	<arg n="m" f="ext">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

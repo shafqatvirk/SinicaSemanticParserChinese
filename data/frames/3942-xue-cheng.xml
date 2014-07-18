@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 学成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-TMP (P 在)
+			      (LCP (IP (NP-SBJ (-NONE- *pro*))
+				       (VP (VP (VV 学成))
+					   (VP (VV 返)
+					       (NP-PN-OBJ (NR 港)))))
+				   (LC 後)))
+		      (PU ，)
+		      (PP-BNF (P 为)
+			      (NP (NN 社会)))
+		      (VP (VV 作出)
+			  (NP-OBJ (NN 贡献))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

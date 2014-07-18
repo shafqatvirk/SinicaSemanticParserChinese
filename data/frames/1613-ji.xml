@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 记 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity doing recording"/>
+      <role argnum="1" argrole="thing recorded"/>
+      <role argnum="2" argrole="recording for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 别人))
+	      (VP (VV 记)
+		  (NP-OBJ (QP (CD 十)
+			      (CLP (M 个)))
+			  (NP (NN 工分))))) 
+	  </parse>
+	  <arg n="2">
+	  别人 	  	  
+	  </arg>
+	  <arg n="1">
+	  十 个 工分 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 remembers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 薛晓岚))
+	      (VP (ADVP (AD 已经))
+		  (VP (VPT (VV 记)
+			   (AD 不)
+			   (VA 清楚))
+		      (IP-OBJ (PP-TMP (P 在)
+				      (NP (NP-PN (NR 资迅人))
+					  (NP (NN 草创)
+					      (NN 时期))))
+			      (PU ，)
+			      (NP-SBJ (-NONE- *pro*))
+			      (VP (VE 有)
+				  (IP-OBJ (NP-SBJ (QP (CD 多少)
+						      (CLP (M 个)))
+						  (NP (NN 夜晚)))
+					  (VP (VC 是)
+					      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+							  (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (PP-LOC (P 在)
+									  (NP (NN 办公室)))
+								  (VP (VV 度过))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  薛晓岚 
+	  </arg>
+	  <arg n="1">
+	  在 资迅人 草创 时期 ， *pro* 有 多少 个 夜晚 是 *OP* *T*-1 在 办公室 度过 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

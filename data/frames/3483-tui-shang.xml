@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity pushed"/>
+      <role argnum="2" argrole="location arg1 pushed onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 这)
+			      (CLP (M 场)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 空前)))
+				  (DEC 的)))
+			  (NP (NN 金融)
+			      (NN 浩劫)))
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 至少))
+				  (VP (VV 提前)
+				      (QP-OBJ (CD 二十)
+					      (CLP (M 年))))))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-PN-SBJ (NR 中国))
+				  (VP (VV 推上)
+				      (AS 了)
+				      (NP-OBJ (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-2))
+								  (VP (VV 影响)
+								      (NP-OBJ (NN 全球)
+									      (NN 金融))))
+							      (DEC 的)))
+						      (ADJP (JJ 大))
+						      (NP (NN 国)))
+					      (NP (NN 地位)))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 场 *OP* *T*-1 空前 的 金融 浩劫 
+	  </arg>
+	  <arg n="1">
+	  中国 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 影响 全球 金融 的 大 国 地位 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 至少 提前 二十 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

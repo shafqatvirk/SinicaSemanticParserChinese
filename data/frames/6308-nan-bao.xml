@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 难保 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 cannot guarantee"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 难保)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 不))
+			    (PP (P 与)
+				(NP-PN (NN 立法院)))
+			    (VP (VV 起)
+				(NP-OBJ (NN 冲突))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 不 与 立法院 起 冲突 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (DP (DT 其他))
+			(NP (ADJP (JJ 高))
+			    (NP (NN 科技)))
+			(NP (NN 武器)))
+		    (NP (NN 人才)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 难保)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不))
+				(VP (VV 会)
+				    (VP (VE 有)
+					(NP-OBJ (DNP (NP (PN 如此))
+						     (DEG 的))
+						(NP (NN 现象)))))))))) 
+	</parse>
+	<arg n="1">
+	其他 高 科技 武器 人才 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 不 会 有 如此 的 现象 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

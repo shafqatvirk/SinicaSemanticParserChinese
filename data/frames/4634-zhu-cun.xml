@@ -1,0 +1,140 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贮存 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity stored"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NP-PN (NR 巴伦西亚))
+		      (NP (NN 地区)))
+	      (VP (PP-PRP (P 因)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 执行)
+				      (NP-OBJ (DP (DT 这)
+						  (QP (CD 一)))
+					      (NP (PU “)
+						  (DNP (NP (NN 铁))
+						       (DEG 的))
+						  (NP (NN 法则))
+						  (PU ”))))
+				  (VP (MSP 而)
+				      (VP (VV 贮存)
+					  (AS 了)
+					  (NP-OBJ (DNP (QP (CD 两)
+							   (CLP (M 年)))
+						       (DEG 的))
+						  (NP (NN 用水))))))))
+		  (PU ，)
+		  (ADVP (AD 从而))
+		  (VP (VV 幸免于)
+		      (NP-OBJ (DP (DT 这)
+				  (CLP (M 场)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (-NONE- *pro*))
+					  (VP (QP-ADV (CD 百)
+						      (CLP (M 年)))
+					      (ADVP (AD 不))
+					      (VP (VV 遇))))
+				      (DEC 的)))
+			      (NP (NN 旱灾)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  两 年 的 用水 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (PP-TMP (P 在)
+			      (LCP (NP (NN 端午)
+				       (CC 至)
+				       (NN 重阳节))
+				   (LC 之间)))
+		      (VP (VV 酿制)))
+		  (PU ，)
+		  (VP (ADVP (AD 共))
+		      (VP (VV 需)
+			  (VP (VV 经过)
+			      (NP-OBJ (NP (QP (CD 两)
+					      (CLP (M 次)))
+					  (NP (NN 投料)))
+				      (PU ，)
+				      (NP (QP (CD 七)
+					      (CLP (M 次)))
+					  (NP (NN 蒸馏)))
+				      (PU ，)
+				      (NP (QP (CD 八)
+					      (CLP (M 次)))
+					  (NP (NN 发酵)))
+				      (PU 、)
+				      (NP (QP (CD 九)
+					      (CLP (M 次)))
+					  (NP (NN 蒸煮)))))))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (VP (VV 历时)
+					   (NP-OBJ (QP (CD 十))
+						   (NP (NN 月))))
+				       (VP (VV 酿成))))
+			       (LC 后))
+		      (PU ，)
+		      (ADVP (AD 还))
+		      (VP (VV 须)
+			  (VP (VP (VV 放入)
+				  (LCP-OBJ (NP (DNP (ADJP (JJ 特制))
+						    (DEG 的))
+					       (NP (NN 陶土)
+						   (NN 酒坛)))
+					   (LC 中)))
+			      (VP (VCD (VV 密封)
+				       (VV 贮存))
+				  (LCP-EXT (QP (CD 三)
+					       (CLP (M 年)))
+					   (LC 以上))))))
+		  (PU ，)
+		  (VP (ADVP (AD 最后))
+		      (VP (VP (PP-LGS (P 由)
+				      (NP (CP (WHNP-4 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-4))
+						      (VP (VV 经验丰富)))
+						  (DEC 的)))
+					  (ADJP (JJ 老))
+					  (NP (NN 酒师))))
+			      (ADVP (AD 精心))
+			      (VP (VV 勾兑)))
+			  (VP (MSP 而)
+			      (VP (VV 成))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  三 年 以上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

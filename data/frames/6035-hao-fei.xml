@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 耗费 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="comsumer"/>
+    <role argnum="1" argrole="thing arg0 consumes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VSB (VV 屈指)
+			     (VV 算算))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-LOC (NN 世界))
+				    (ADVP (AD 最))
+				    (VP (VA 贵))))
+			    (DEC 的)))
+		    (NP (ADJP (JJ 大))
+			(NP-PN (NR 台北)))
+		    (NP (NN 捷运网)))
+	    (VP (VV 耗费)
+		(QP-OBJ (CD 四千四百亿)
+			(CLP (M 元))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 世界 最 贵 的 大 台北 捷运网 
+	</arg>
+	<arg n="1">
+	四千四百亿 元 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 屈指 算算 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

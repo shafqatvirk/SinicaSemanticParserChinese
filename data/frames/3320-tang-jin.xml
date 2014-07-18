@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 躺进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity lying"/>
+      <role argnum="1" argrole="location arg0 is inside"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 昨天))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 三)
+			  (CLP (M 位)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 代表)
+				      (AS 着)
+				      (NP-OBJ (QP (CD ３３)
+						  (CLP (M 名)))
+					      (NP (NN 球员)))))
+			      (DEC 的)))
+		      (NP (NN 经纪人)))
+	      (PU ，)
+	      (VP (PP-DIR (P 朝)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 已经))
+					      (VP (VV 躺进)
+						  (NP-OBJ (NN 棺材)))))
+				      (DEC 的)))
+			      (NP (NN 赛季))))
+		  (ADVP (AD 又))
+		  (VP (VV 敲上)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 颗)))
+			      (NP (NN 钉子)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  棺材 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

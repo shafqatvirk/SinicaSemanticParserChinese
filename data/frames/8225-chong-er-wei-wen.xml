@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 充耳未闻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 doesn't hear of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 之前))
+	      (NP-TPC (CP-APP (IP (NP-SBJ (NP-PN-APP (NR 国)
+						     (PU 、)
+						     (NR 民))
+					  (QP (CD 两))
+					  (ADJP (JJ 大))
+					  (NP (NN 党)))
+				  (VP (VV 封杀)
+				      (NP-OBJ (NN 国代)
+					      (NN 延任案))))
+			      (DEC 的))
+		      (NP (NN 政策)
+			  (NN 宣示)))
+	      (PU ，)
+	      (NP-SBJ (NN 国代))
+	      (VP (ADVP (AD 显然))
+		  (VP (VV 充耳未闻)))) 
+	  </parse>
+	  <arg n="0">
+	  国代 
+	  </arg>
+	  <arg n="1">
+	  国 、 民 两 大 党 封杀 国代 延任案 的 政策 宣示 
+	  </arg>
+	  <arg n="m" f="adv">
+	  显然 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  之前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

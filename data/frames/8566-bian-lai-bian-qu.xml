@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 变来变去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 changes back and forth"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 生产)
+		      (NN 条件))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 变来变去)))) 
+	  </parse>
+	  <arg n="1">
+	  生产 条件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

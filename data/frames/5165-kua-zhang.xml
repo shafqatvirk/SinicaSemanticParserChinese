@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夸张 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 exaggerates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *pro*))
+	      (VP (VC 是)
+		  (IP-PRD (IP (NP-SBJ (NN 古代)
+				      (NN 男儿)
+				      (NN 体格))
+			      (VP (ADVP (AD 果然))
+				  (VP (VA 壮硕))))
+			  (PU ，)
+			  (CC 还是)
+			  (IP (NP-SBJ (NP-PN (NR 秦皇))
+				      (ADJP (JJ 大))
+				      (NP (NN 军)))
+			      (VP (ADVP (AD 皆))
+				  (VP (VC 为)
+				      (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (LCP-LOC (QP (CD 千))
+								       (LC 中))
+							      (VP (VV 选)
+								  (QP-OBJ (CD 一)))))
+						      (DEC 的))
+					      (NP (NN 壮丁))))))
+			  (PU ，)
+			  (CC 亦或是)
+			  (IP (NP-SBJ (NN 工匠们))
+			      (VP (ADVP (AD 特意))
+				  (VP (VV 夸张))))))) 
+	</parse>
+	<arg n="0">
+	工匠们 
+	</arg>
+	<arg n="m" f="adv">
+	特意 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (ADVP (AD 一点))
+		(ADVP (AD 都))
+		(ADVP (AD 不))
+		(VP (VV 夸张)))) 
+	</parse>
+	<arg n="1">
+	这 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	一点 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

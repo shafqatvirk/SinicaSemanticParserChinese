@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 心存敬畏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="person arg0 holds in awe"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (DP-TMP (DT 这)
+				    (QP (CD 几)
+					(CLP (M 年))))
+			    (VP (VRD (VV 工作)
+				     (VV 下来)))))
+		(PU ，)
+		(VP (VV 让)
+		    (NP-OBJ (PN 他))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-DIR (P 对)
+				    (NP (DNP (NP (NN 科技))
+					     (DEG 的))
+					(NP (NN 奥秘))))
+			    (ADVP (AD 更加))
+			    (VP (VV 心存敬畏)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	对 科技 的 奥秘 
+	</arg>
+	<arg n="m" f="adv">
+	更加 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

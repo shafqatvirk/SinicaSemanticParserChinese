@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撞坏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 bumps into and damages"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (VP (VV 想到)
+			(IP-OBJ (NP-SBJ (-NONE- *pro*))
+				(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						 (VP (PP-LOC (P 在)
+							     (NP (NN 博物馆)))
+						     (VP (VV 搬来搬去))))
+					     (LC 时))
+				    (VP (VV 可能)
+					(VP (VV 会)
+					    (VP (VV 撞坏)))))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 在 博物馆 搬来搬去 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 办理 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP (P 随着)
+          (NP (DNP (NP-PN (NR 崇明)
+                          (NN 海关)
+                          (NN 办事处))
+                   (DEG 的))
+              (NP (NN 设立))))
+      (PU ，)
+      (NP-SBJ (DNP (LCP (NP-PN (NR 崇明县))
+                        (LC 内))
+                   (DEG 的))
+              (NP (NN 单位)))
+      (VP (IP-ADV (NP-SBJ (NN 足))
+                  (VP (ADVP (AD 不))
+                      (VP (VV 出)
+                          (NP-OBJ (NN 岛)))))
+          (ADVP (AD 就))
+          (VP (VV 可以)
+              (VP (VV 办理)
+                  (NP-OBJ (DP (DT 一切))
+                          (NP (NN 海关)
+                              (NN 手续))))))))
+	</parse>
+	<arg n="M" f="ADV"> 随着 崇明 海关 办事处 的 设立 </arg>
+	<arg n="0"> 崇明县 内 的 单位 </arg>
+	<arg n="M" f="ADV"> 足 不 出岛 </arg>
+	<arg n="M" f="ADV"> 就 </arg>
+	<V/>
+	<arg n="1"> 一切 海关 手续 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (IP-CND (NP-SBJ (ADVP (AD 无论))
+                      (NP (DP (DT 什么))
+                          (NP (NN 企业)
+                              (CC 和)
+                              (NN 公司))))
+              (PU ，)
+              (VP (ADVP (CS 如果))
+                  (VP (VV 提出)
+                      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                              (VP (PP-MNR (P 用)
+                                          (NP (NN 欧元)))
+                                  (VP (VV 转帐)))))))
+      (PU ，)
+      (NP-SBJ (PN 我们))
+      (VP (ADVP (AD 都))
+          (ADVP (AD 将))
+          (PP-MNR (P 按)
+                  (NP (NP (PN 其))
+                      (NP (NN 要求))))
+          (VP (VV 办理)))
+      (PU 。)
+      (PU ”)))
+	</parse>
+	<arg n="M" f="CND"> 无论 什么 企业 和 公司 ， 如果 提出 *PRO* 用 欧元 转帐 </arg>
+	<arg n="0"> 我们 </arg>
+	<arg n="M" f="ADV"> 都 </arg>
+	<arg n="M" f="ADV"> 将 </arg>
+	<arg n="M" f="MNR"> 按 其 要求 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

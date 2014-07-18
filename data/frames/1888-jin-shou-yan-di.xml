@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 尽收眼底 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity all of which seen clearly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VCD (VV 来往)
+					   (VV 穿梭))))
+			      (DEC 的)))
+		      (NP (NN 登山车)
+			  (PU 、)
+			  (NN 电缆车)
+			  (CC 和)
+			  (NN 空中)
+			  (NN 吊车)))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (DP (DT 这))
+				  (NP (PN 一切)))
+			  (VP (VV 尽收眼底))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-3 来往 穿梭 的 登山车 、 电缆车 和 空中 吊车 
+	  </arg>
+	  <arg n="1">
+	  这 一切 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CLP (M 层层))
+		      (NP (NN 梯田)))
+	      (VP (VV 尽收眼底))) 
+	  </parse>
+	  <arg n="1">
+	  层层 梯田 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

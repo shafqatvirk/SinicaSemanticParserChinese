@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person"/>
+      <role argnum="1" argrole="position"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 一九六二年))
+		  (VP (VV 调任)
+		      (NP-OBJ (NP (NP-PN (NR 一机部))
+				  (NP-PN (NR 上海)
+					 (NN 电器)
+					 (NN 科学)
+					 (NN 研究所))
+				  (NP (NN 副所长)))
+			      (PU ，)
+			      (NP (NP-PN (NR 一机部))
+				  (NP-PN (NP-PN (NR 武汉))
+					 (NP (ADJP (JJ 热工))
+					     (NP (NN 机械)))
+					 (NP (NN 研究所)))
+				  (NP (NP (NN 所长))
+				      (PU 、)
+				      (NP (ADJP (JJ 代理))
+					  (NP (NN 党委)
+					      (NN 书记)))))
+			      (PU ，)
+			      (NP (NP-PN (NR 一机部))
+				  (NP (NP (NN 外事局))
+				      (NP (NN 副局长)
+					  (PU 、)
+					  (NN 局长)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  一机部 上海 电器 科学 研究所 副所长 ， 一机部 武汉 热工 机械 研究所 所长 、 代理 党委 书记 ， 一机部 外事局 副局长 、 局长 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九六二年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

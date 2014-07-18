@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 改装 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 re-dresses"/>
+    <role argnum="2" argrole="entity arg1 is changed into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 这样))
+		(VP (VV 可以)
+		    (VP (VP (VV 拖延)
+			    (QP-OBJ (QP (CLP (M 个)))
+				    (QP (CD 十一)
+					(CLP (M 年)))))
+			(PU ，)
+			(VP (BA 将)
+			    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VV 迫)
+							    (PP-LOC (P 在)
+								    (NP (NN 眼前)))))
+						    (DEC 的)))
+					    (NP (NT 千禧)
+						(NN 虫)))
+				    (VP (VRD (VV 改装)
+					     (VV 为))
+					(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (NP-TMP (NP-PN (NR 民国))
+									(QP (OD 一百)
+									    (CLP (M 年))))
+								(ADVP (AD 才))
+								(VP (VV 会)
+								    (VP (VV 发作)))))
+							(DEC 的)))
+						(PU 「)
+						(QP (CD 百)
+						    (CLP (M 年)))
+						(NP (NN 虫))
+						(PU 」))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 迫 在 眼前 的 千禧 虫 
+	</arg>
+	<arg n="2">
+	*OP* *T*-2 民国 一百 年 才 会 发作 的 「 百 年 虫 」 
+	</arg>
+	<arg n="m" f="adv">
+	这样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

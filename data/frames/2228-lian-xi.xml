@@ -1,0 +1,307 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 联系 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 contacts"/>
+      <role argnum="2" argrole="matter arg1 is contacted about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NN 公署))
+		  (VP (VP (ADVP (AD 还))
+			  (VP (VP (ADVP (AD 积极))
+				  (VP (VV 配合)
+				      (NP-OBJ (NP-PN (NR 中国))
+					      (ADJP (JJ 驻外))
+					      (NP (NN 使领馆)))))
+			      (PU ，)
+			      (VP (ADVP (AD 密切))
+				  (PP (P 与)
+				      (NP (NP (NN 特区)
+					      (NN 政府))
+					  (ADJP (JJ 有关))
+					  (NP (NN 部门))))
+				  (VP (VP (VV 联系))
+				      (CC 与)
+				      (VP (VV 合作)))))))) 
+	  </parse>
+	  <arg n="0">
+	  公署 	  
+	  </arg>
+	  <arg n="1">
+	  与 特区 政府 有关 部门 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  密切 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NP-APP (NN 内陆)
+						     (NN 省份))
+					     (NP-PN (NR 山西省)))
+				  (VP (PP (-NONE- *T*-2))
+				      (PP-DIR (P 对)
+					      (NP (NN 外)))
+				      (VP (VV 联系))))
+			      (DEC 的)))
+		      (ADJP (JJ 新))
+		      (NP (NN 通道)))) 
+	  </parse>
+	  <arg n="0">
+	  内陆 省份 山西省 	  
+	  </arg>
+	  <arg n="1">
+	  对 外 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *T*-2 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (PP-MNR (P 以)
+				  (NP (NP (NP-PN (NR 中华))
+					  (NP (NN 民族)))
+				      (NP (NN 传统)
+					  (NN 文化))))
+			  (VP (VV 为)
+			      (NP-OBJ (NN 纽带))))
+		      (PU ，)
+		      (VP (VP (VV 联系)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (CC 和)
+			  (VP (VV 团结)
+			      (NP-OBJ-1 (NN 海内外)
+					(NN 同胞))))
+		      (PU ，)
+		      (VP (VV 弘扬)
+			  (NP-OBJ (NN 民族)
+				  (NN 文化)))
+		      (PU ，)
+		      (VP (VV 展示)
+			  (NP-OBJ (DNP (NP (NP (NN 祖国))
+					   (ADJP (JJ 优秀))
+					   (NP (NN 艺术)))
+				       (DEG 的))
+				  (NP (NN 魅力))))
+		      (PU ，)
+		      (VP (VV 展示)
+			  (NP-OBJ (NP (NP (NN 华侨))
+				      (PU 、)
+				      (NP (NN 华人)
+					  (NN 艺术家)))
+				  (DNP (PP (P 在)
+					   (LCP (NP (NN 艺术)
+						    (NN 领域)
+						    (CC 和)
+						    (NN 世界)
+						    (NN 文化)
+						    (NN 交流))
+						(LC 中)))
+				       (DEG 的))
+				  (NP (NN 成就)
+				      (CC 和)
+				      (NN 风采)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  *RNR*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="things associated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 要)
+		      (VP (VP (PP-DIR (P 从)
+				      (NP (NN 战略)
+					  (NN 高度)))
+			      (VP (VV 看待)
+				  (NP-OBJ (NN 学习))))
+			  (PU ，)
+			  (VP (PP-MNR (P 以)
+				      (NP (DNP (ADJP (JJ 高度))
+					       (DEG 的))
+					  (NP (NN 历史)
+					      (NN 使命感)
+					      (CC 和)
+					      (NN 现实)
+					      (NN 紧迫感))))
+			      (VP (MSP 来)
+				  (VP (VV 强化)
+				      (NP-OBJ (NN 学习)))))
+			  (PU ，)
+			  (VP (VP (ADVP (AD 密切))
+				  (VP (VV 联系)
+				      (NP-OBJ (NP (ADJP (JJ 新))
+						  (NP (NN 形势)))
+					      (NP (ADJP (JJ 新))
+						  (NP (NN 任务)))
+					      (NP (ADJP (JJ 新))
+						  (NP (NN 实践))))))
+			      (VP (MSP 来)
+				  (VP (VV 开展)
+				      (NP-OBJ (NN 学习)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  新 形势 新 任务 新 实践 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  密切 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VRD (VV 联系)
+			       (VV 到))
+			  (NP-OBJ (NP-PN (NR 美国))
+				  (DP (DT 这)
+				      (CLP (M 次)))
+				  (DNP (PP (P 对)
+					   (NP-PN (NR 伊拉克)))
+				       (DEG 的))
+				  (NP (NN 军事)
+				      (NN 行动)))))
+	      (PU ，)
+	      (NP-SBJ (NN 人们))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 难)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 看出)
+				  (PU ，)
+				  (IP-OBJ (NP-PN-SBJ (NR 美国))
+					  (VP (VC 是)
+					      (VP (VV 想)
+						  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (VP (VV 利用)
+								  (NP-OBJ (NP (PN 其))
+									  (DNP (PP (P 对)
+										   (NP-PN (NR 北约)))
+									       (DEG 的))
+									  (NP (NN 控制权))))
+							      (PU ，)
+							      (VP (BA 把)
+								  (IP-OBJ (NP-PN-SBJ (NR 北约))
+									  (VP (VV 作为)
+									      (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+											  (CP (IP (NP-SBJ (PN 其))
+												  (VP (PP-MNR (-NONE- *T*-2))
+												      (VP (VP (VV 推行)
+													      (NP-OBJ (NN 全球)
+														      (NN 战略)))
+													  (PU 、)
+													  (VP (VV 为所欲为)))))
+											      (DEC 的)))
+										      (CP (WHNP-1 (-NONE- *OP*))
+											  (CP (IP (NP-SBJ (-NONE- *T*-1))
+												  (VP (VV 得心应手)))
+											      (DEC 的)))
+										      (NP (NN 工具)))))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  美国 这 次 对 伊拉克 的 军事 行动 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="things connected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 寄望)
+		      (NP-PN-OBJ (NR 香港))
+		      (IP (NP-TPC (-NONE- *PRO*))
+			  (PP-LOC (P 在)
+				  (NP (IP-APP (NP-SBJ (-NONE- *pro*))
+					      (VP (VP (VV 联系)
+						      (NP-OBJ (-NONE- *RNR*-1)))
+						  (CC 和)
+						  (VP (VV 安排)
+						      (NP-OBJ-1 (ADJP (JJ 跨国))
+								(NP (NN 买卖)
+								    (CC 和)
+								    (NN 生产))
+								(NP (NN 活动))))))
+				      (NP (NN 方面))))
+			  (PU ，)
+			  (NP-SBJ (NN 效率))
+			  (VP (VA 过人)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="2">
+	  *RNR*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

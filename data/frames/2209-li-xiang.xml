@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 立项 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing registered as official project"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-PN-SBJ (NP-PN (NR 香港))
+					 (NP-PN (NR 德成))
+					 (NP (NN 化工))
+					 (ADJP (JJ 有限))
+					 (NP (NN 公司)))
+			      (VP (VP (VV 投资)
+				      (NP-OBJ (QP (CD 二点五亿)
+						  (CLP (M 元)))
+					      (NP (NN 人民币))))
+				  (VP (VV 兴建)
+				      (NP-OBJ (-NONE- *T*-1))))))
+		      (NP (QP (CD 二万)
+			      (CLP (M 吨)))
+			  (NP (NN 级)))
+		      (NP (NN 聚脂)
+			  (NN 切片)
+			  (NN 工程)))
+	      (VP (VP (ADVP (AD 也))
+		      (ADVP (AD 已))
+		      (VP (VCD (VV 签约)
+			       (VV 立项))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 进入)
+		      (AS 了)
+		      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 全面))
+					  (VP (VV 筹建))))
+			      (NP (NN 阶段)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 香港 德成 化工 有限 公司 投资 二点五亿 元 人民币 兴建 *T*-1 二万 吨 级 聚脂 切片 工程 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

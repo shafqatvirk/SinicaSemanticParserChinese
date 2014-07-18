@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 取经 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 过去))
+				      (ADVP (AD 曾))
+				      (VP (VP (VV 到)
+					      (NP-PN-OBJ (NR 大寨)))
+					  (VP (VCD (VV 学习)
+						   (VV 取经))))))
+			      (DEC 的)))
+		      (NP (NP (ADJP (JJ 贫))
+			      (NP (NN 乡)))
+			  (NP (ADJP (JJ 穷))
+			      (NP (NN 镇)))))
+	      (VP (VP (VV 摇身一变))
+		  (VP (VV 成为)
+		      (NP-OBJ (PU “)
+			      (QP (CD 亿)
+				  (CLP (M 元)))
+			      (NP (NN 镇))
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  过去 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

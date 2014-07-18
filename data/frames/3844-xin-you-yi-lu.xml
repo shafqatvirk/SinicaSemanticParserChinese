@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 心有疑虑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 has doubt about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-ADV (ADVP (CS 虽然))
+		      (IP (NP-SBJ (NP-PN (NR 东南亚))
+				  (NP (NN 金融)
+				      (NN 危机)))
+			  (VP (VV 使)
+			      (NP-OBJ (QP (CD 一些))
+				      (NP-PN (NR 欧)
+					     (NR 美))
+				      (NP (NN 公司)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 对)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 投资)
+						      (NP-OBJ (NP-PN (NR 亚洲))
+							      (NP (NN 国家))))))
+				      (VP (VV 心有疑虑)))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-PN-SBJ (NR 西门子))
+	      (VP (ADVP (AD 仍))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 亚洲))
+				      (PU 、)
+				      (NP (ADVP (AD 特别是))
+					  (NP-PN (NR 中国))))
+			      (VP (VCP (VV 看成)
+				       (VC 是))
+				  (NP-OBJ (NP (PN 其))
+					  (NP (NN 投资)
+					      (NN 对象)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  对 *PRO* 投资 亚洲 国家 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

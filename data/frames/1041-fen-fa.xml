@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="distributor"/>
+      <role argnum="1" argrole="thing distributed"/>
+      <role argnum="2" argrole="distributing to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 指南)))
+	      (VP (ADVP (AD 并))
+		  (ADVP (AD 已))
+		  (VP (VV 分发)
+		      (NP-OBJ (DP (DT 各))
+			      (ADJP (JJ 有关))
+			      (NP (NN 人士)))))) 
+	  </parse>
+	  <arg n="1">
+	  该 指南 
+	  </arg>
+	  <arg n="2">
+	  各 有关 人士 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

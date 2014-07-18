@@ -1,0 +1,246 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 改 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 changes"/>
+    <role argnum="2" argrole="entity arg1 is changed into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 後来))
+	    (PP-PRP (P 由於)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 担心)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 年迈)))
+					    (DEC 的)))
+				    (NP (NN 父母)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 太过))
+				    (VP (VV 劳累)))))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VV 说服)
+		(NP-OBJ (NN 父母))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 改)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-LOC (P 在)
+					    (NP (NP (PN 他))
+						(NP (NN 家))))
+				    (VP (VV 围炉)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	*PRO* 在 他 家 围炉 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 东)
+		       (PU 、)
+		       (NR 西沙岛))
+	    (VP (ADVP (AD 将))
+		(VP (VV 改)
+		    (IP-OBJ (NP-SBJ-3 (-NONE- *PRO*))
+			    (VP (PP-LGS (P 由)
+					(NP-PN (NN 海岸)
+					       (NN 巡防)
+					       (NN 总署)))
+				(VP (VV 驻守)
+				    (NP-OBJ (-NONE- *-3)))))))) 
+	</parse>
+	<arg n="2">
+	东 、 西沙岛 
+	</arg>
+	<arg n="2" f="prd">
+	*PRO* 由 海岸 巡防 总署 驻守 *-3 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 再))
+			(VP (VV 谈起)
+			    (NP-OBJ (NN 统)
+				    (NN 独)
+				    (PU 、)
+				    (NN 政治)))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 吴建乐))
+	    (VP (ADVP (AD 却))
+		(ADVP (AD 一))
+		(VP (VV 改)
+		    (NP-OBJ (NN 坦率))))) 
+	</parse>
+	<arg n="0">
+	吴建乐 
+	</arg>
+	<arg n="1">
+	坦率 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 再 谈起 统 独 、 政治 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (VV 露出)
+		    (NP-OBJ (NN 狼子野心)))
+		(PU ，)
+		(VP (VCD (VV 篡位)
+			 (VV 登基)))
+		(PU 、)
+		(VP (VV 改)
+		    (NP-OBJ (NN 国号))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 为)
+			    (NP-PN-OBJ (ADJP (PU 「)
+					     (JJ 新)
+					     (PU 」))
+				       (NP (NN 朝)))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	国号 
+	</arg>
+	<arg n="2">
+	*PRO* 为 「 新 」 朝 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 青山))
+	    (VP (ADVP (AD 不))
+		(VP (VV 改)))) 
+	</parse>
+	<arg n="1">
+	青山 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 绿岛))
+	    (PU ，)
+	    (VP (VP (PP-PRP (P 因)
+			    (IP (NP-SBJ (NN 岛屿))
+				(VP (VC 为)
+				    (NP-PRD (NN 火山岩)))))
+		    (PU ，)
+		    (NP-TMP (NT 早年))
+		    (VP (SB 被)
+			(VP (VV 称为)
+			    (NP-PN-OBJ (PU 「)
+				       (NN 火烧岛)
+				       (PU 」)))))
+		(PU ，)
+		(VP (QP-TMP (NP-PN (NR 民国))
+			    (QP (OD 三十八)
+				(CLP (M 年))))
+		    (VP (VV 改)
+			(VP (PP-PRP (P 以)
+				    (IP (LCP-LOC (NP (NN 岛))
+						 (LC 上))
+					(ADVP (AD 终年))
+					(NP-SBJ (NN 牧草))
+					(VP (VV 长青))))
+			    (VP (MSP 而)
+				(VP (VV 命名)
+				    (NP-PN-OBJ (PU 「)
+					       (NR 绿岛)
+					       (PU 」))))))))) 
+	</parse>
+	<arg n="1">
+	绿岛 
+	</arg>
+	<arg n="2">
+	以 岛 上 终年 牧草 长青 而 命名 「 绿岛 」 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 三十八 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VRD (VV 改)
+		     (VV 过来)))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

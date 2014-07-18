@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 充足 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (NP-PN (NR 香港))
+					  (NP (NN 银行)))
+				  (NP-SBJ (NN 资本))
+				  (VP (PP-MNR (-NONE- *T*-1))
+				      (VA 充足)))))
+		      (NP (NN 比率)))
+	      (VP (ADVP (AD 偏))
+		  (VP (VA 高)))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  香港 银行 
+	  </arg>
+	  <arg n="0" f="pse">
+	  资本 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

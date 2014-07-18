@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 播完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 finishes broadcasting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (NP-SBJ (NP-PN (NR 光启社))
+				(QP (CD 很多))
+				(NP (NN 节目)))
+			(VP (ADVP (AD 都))
+			    (VP (VC 是)
+				(IP-PRD (QP-SBJ (CD 三)
+						(CLP (M 台)))
+					(VP (VV 委托)
+					    (NP-OBJ (-NONE- *pro*))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 制作)))))))))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (NN 节目))
+		    (VP (VV 播完)))
+	    (NP-SBJ (NN 版权))
+	    (VP (ADVP (AD 并))
+		(ADVP (AD 不))
+		(VP (VV 属於)
+		    (NP-OBJ (PN 他们))))) 
+	</parse>
+	<arg n="1">
+	节目 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

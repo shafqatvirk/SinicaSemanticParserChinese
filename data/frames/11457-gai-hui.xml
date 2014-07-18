@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 改回 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="thing arg0 changes arg1 back to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 例如))
+	    (NP-PN-SBJ (NR 范仲淹))
+	    (VP (VP (NP-TMP (NT 小时候))
+		    (ADVP (AD 就))
+		    (VP (VC 是)
+			(VP (VP (VV 跟)
+				(AS 著)
+				(NP-OBJ (DNP (NP (NN 母亲))
+					     (DEG 的))
+					(NP (NN 改嫁))))
+			    (VP (MSP 而)
+				(VP (VV 姓)
+				    (NP-PN-OBJ (NR 朱)))))))
+		(PU ，)
+		(VP (PP-TMP (ADVP (AD 直))
+			    (PP (P 到)
+				(LCP (IP (NP-SBJ (-NONE- *PRO*))
+					 (VP (VV 显贵)))
+				     (LC 以後))))
+		    (ADVP (AD 才))
+		    (VP (VV 改回)
+			(NP-OBJ (NN 原名)))))) 
+	</parse>
+	<arg n="0">
+	范仲淹 
+	</arg>
+	<arg n="2">
+	原名 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="tmp">
+	直 到 *PRO* 显贵 以後 
+	</arg>
+	<arg n="m" f="adv">
+	例如 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

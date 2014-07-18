@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一飞冲天 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 结果))
+	    (NP-SBJ (DNP (NP (DP (DT 当)
+				 (CLP (M 期)))
+			     (NP (NN 杂志)))
+			 (DEG 的))
+		    (NP (NN 销售量)))
+	    (VP (ADVP (AD 竟然))
+		(VP (VP (VV 一飞冲天))
+		    (PU ，)
+		    (VP (VRD (VV 热卖)
+			     (VV 成))
+			(QP-OBJ (NP (DP (DT 该))
+				    (NP (NN 刊)))
+				(QP (ADVP (AD 有史以来))
+				    (QP (OD 第五)
+					(CLP (ADJP (JJ 高))
+					     (CLP (M 位)))))))))) 
+	</parse>
+	<arg n="0">
+	当 期 杂志 的 销售量 
+	</arg>
+	<arg n="m" f="adv">
+	竟然 
+	</arg>
+	<arg n="m" f="adv">
+	结果 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

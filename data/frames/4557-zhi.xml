@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing manufactured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一)
+			  (CLP (M 台)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 三星))
+				  (VP (VV 制)
+				      (NP-OBJ (-NONE- *T*-2))))
+			      (DEC 的)))
+		      (NP (NN 摄影机)))
+	      (VP (QP-PRD (ADVP (AD 不到))
+			  (QP (NP (NN 台币))
+			      (QP (CD 一万)
+				  (CLP (M 元))))))) 
+	  </parse>
+	  <arg n="0">
+	  三星 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

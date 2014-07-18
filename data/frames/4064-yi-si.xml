@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 疑似 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is suspected of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 最近))
+				      (VP (VV 震惊)
+					  (NP-OBJ (NN 国人)))))
+			      (DEC 的)))
+		      (IP-APP (NP-PN-SBJ (NR 台湾)
+					 (NR 南亚)
+					 (NN 科技)
+					 (NN 公司))
+			      (VP (VV 疑似)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (PU 「)
+					      (VV 窃取)
+					      (PU 」)
+					      (NP-OBJ (NP-PN (NR 韩国))
+						      (NP (NN 半导体)
+							  (NN 技术)))))))
+		      (NP (NN 案)))
+	      (PU ，)
+	      (VP (ADVP (AD 却))
+		  (ADVP (AD 骤然))
+		  (VP (VV 浇熄)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 众人))
+				   (DEG 的))
+			      (NP (NN 想望)))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 南亚 科技 公司 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 「 窃取 」 韩国 半导体 技术 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

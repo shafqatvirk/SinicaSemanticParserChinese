@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 禁运 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 places embargo against"/>
+      <role argnum="2" argrole="thing not allowed to ship to arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-PN-SBJ (NR 美国))
+		  (VP (PP-DIR (P 对)
+			      (NP-PN (NR 古巴)))
+		      (VP (VV 实行)
+			  (NP-OBJ (NN 禁运))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 
+	  </arg>
+	  <arg n="1">
+	  对 古巴 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="dir" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 美国))
+		  (VP (ADVP (AD 单方面))
+		      (VP (VV 解除)
+			  (NP-OBJ (DNP (PP (P 对)
+					   (NP-PN (NR 波黑)))
+				       (DEG 的))
+				  (NP (NN 武器)
+				      (NN 禁运)))))) 
+	  </parse>
+	  <arg n="1">
+	  对 波黑 
+	  </arg>
+	  <arg n="2">
+	  武器 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

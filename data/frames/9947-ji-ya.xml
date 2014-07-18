@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 羁押 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 detains"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 「)
+			  (NP (NP (NN 刑事)
+				  (NN 诉讼法))
+			      (QP (CD 部分))
+			      (NP (NN 条文)))
+			  (NP (NN 修正案))
+			  (PU 」))
+	      (VP (ADVP (AD 则))
+		  (ADVP (AD 另外))
+		  (VP (VV 增定)
+		      (NP-TTL-OBJ (PU 「)
+				  (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VRD (VV 羁押)
+						   (VV 回笼))))
+				  (NP (NN 条款))
+				  (PU 」))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

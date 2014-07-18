@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著重 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 pays special attention to"/>
+    <role argnum="2" argrole="area arg1 is paid special attention"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 未来))
+	    (NP-SBJ (PP (P 与)
+			(NP-PN (NR 欧)
+			       (NR 美)))
+		    (NP (NN 关系)))
+	    (VP (ADVP (AD 将))
+		(ADVP (AD 更))
+		(VP (VV 著重)
+		    (NP-OBJ (DNP (PP (P 与)
+				     (NP (DP (DT 这))
+					 (QP (CD 三))
+					 (NP (NN 方面))))
+				 (DEG 的))
+			    (NP (NN 联系)))))) 
+	</parse>
+	<arg n="1">
+	与 这 三 方面 的 联系 
+	</arg>
+	<arg n="2">
+	与 欧 美 关系 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<arg n="m" f="tmp">
+	未来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 市场)
+			(NN 主流))
+		    (NP (NN 唱片)
+			(NN 业者)))
+	    (VP (VV 著重)
+		(NP-OBJ (NP (NN 本地)
+			    (CC 与)
+			    (NN 华人))
+			(NP (NN 市场))))) 
+	</parse>
+	<arg n="0">
+	市场 主流 唱片 业者 
+	</arg>
+	<arg n="1">
+	本地 与 华人 市场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (LCP-TMP (NP (NN 精省))
+			 (LC 之後))
+		(NP-SBJ (DNP (NP (NP (NN 水)
+				     (NN 资源))
+				 (NP (NN 行政)
+				     (NN 体系)))
+			     (DEG 的))
+			(NP (NN 规画)))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 应该)
+			(VP (VV 著重)
+			    (PP-LOC (P 在)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 解决)
+					    (NP-OBJ (DP (DT 这)
+							(QP (CD 两)
+							    (CLP (M 个))))
+						    (NP (NN 问题)))))))))) 
+	</parse>
+	<arg n="1">
+	在 *PRO* 解决 这 两 个 问题 
+	</arg>
+	<arg n="2">
+	水 资源 行政 体系 的 规画 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	精省 之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

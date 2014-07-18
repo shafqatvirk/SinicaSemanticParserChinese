@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="battling parties"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU “)
+	      (NP-PN-SBJ (NR 俄罗斯)
+			 (CC 和)
+			 (NR 德国))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 永远))
+		  (ADVP (AD 也))
+		  (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (ADVP (AD 再))
+			  (VP (VV 交战)))))
+	      (PU ”)) 
+	  </parse>
+	  <arg n="0">
+	  俄罗斯 和 德国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  永远 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

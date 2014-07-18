@@ -1,0 +1,144 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 讥为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 ridicules"/>
+    <role argnum="2" argrole="thing arg1 is ridiculed to be"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PU 「)
+		    (NN 经济)
+		    (NN 援助)
+		    (PU 」))
+	    (VP (VP (ADVP (AD 则))
+		    (VP (VC 为)
+			(NP-PRD (NP (NP (PN 我))
+				    (NP (NN 国)))
+				(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 维系)
+						(NP-OBJ (NN 邦谊))))
+					(DEC 的))
+				(ADJP (JJ 重要))
+				(NP (NN 筹码)))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 也))
+		    (ADVP (AD 一直))
+		    (VP (LB 被)
+			(IP-OBJ (NP-SBJ (NN 外界))
+				(VP (VV 讥为)
+				    (NP-OBJ (NP (PU 「)
+						(NN 金钱)
+						(NN 外交)
+						(PU 」))
+					    (CC 或)
+					    (NP (PU 「)
+						(NN 凯子)
+						(NN 外交)
+						(PU 」))))))))) 
+	</parse>
+	<arg n="0">
+	外界 
+	</arg>
+	<arg n="1">
+	「 经济 援助 」 
+	</arg>
+	<arg n="2">
+	「 金钱 外交 」 或 「 凯子 外交 」 
+	</arg>
+	<arg n="m" f="adv">
+	一直 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (DP (DT 某些))
+			     (NP (NN 个股)))
+			 (DEG 的))
+		    (NP (NN 本益比)))
+	    (VP (VP (ADVP (AD 甚至))
+		    (ADVP (AD 高))
+		    (VP (VV 达)
+			(QP-OBJ (CD 五百)))
+		    (PRN (PU （)
+			 (IP (NP-SBJ (NN 股价))
+			     (VP (VC 是)
+				 (QP-PRD (DNP (NP (NN 获利))
+					      (DEG 的))
+					 (QP (CD 五百)
+					     (CLP (M 倍))))))
+			 (PU ）)))
+		(PU ，)
+		(VP (MSP 以致)
+		    (VP (SB 被)
+			(VP (VV 讥为)
+			    (NP-OBJ (PU 「)
+				    (NN 本梦比)
+				    (PU 」))))))) 
+	</parse>
+	<arg n="1">
+	某些 个股 的 本益比 
+	</arg>
+	<arg n="2">
+	「 本梦比 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 动辄))
+			(VP (VV 修宪))))
+	    (PU ，)
+	    (VP (SB 被)
+		(VP (VV 讥为)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 比)
+				    (NP (NN 民)
+					(PU 、)
+					(NN 刑法)))
+				(VP (VV 动)
+				    (DER 得)
+				    (VP-EXT (ADVP (AD 更))
+					    (VP (VA 频繁))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 动辄 修宪 
+	</arg>
+	<arg n="2">
+	*PRO* 比 民 、 刑法 动 得 更 频繁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

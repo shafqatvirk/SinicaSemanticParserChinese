@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 填写 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing filled out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 居民))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 可以)
+		      (VP (PP-MNR (P 用)
+				  (NP (NN 中文)))
+			  (VP (VV 填写)
+			      (NP-OBJ (DP (DT 各)
+					  (CLP (M 种)))
+				      (NP (NN 表格)
+					  (PU 、)
+					  (NN 申请)))))))) 
+	  </parse>
+	  <arg n="0">
+	  居民 
+	  </arg>
+	  <arg n="1">
+	  各 种 表格 、 申请 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 中文 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

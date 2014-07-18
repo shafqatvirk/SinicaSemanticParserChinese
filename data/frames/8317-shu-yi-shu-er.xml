@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 数一数二 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 彭巧之))
+	      (NP-TMP (NT 那时))
+	      (NP-SBJ (NN 功课))
+	      (VP (VP (ADVP (AD 就))
+		      (ADVP (AD 相当))
+		      (VP (VA 不错)))
+		  (PU ，)
+		  (VP (PP-LOC (P 在)
+			      (UCP (LCP (NP (NN 班))
+					(LC 上))
+				   (PU 、)
+				   (NP (DP (DT 全))
+				       (NP (NN 校)))))
+		      (VP (VV 算是)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 数一数二)))
+					  (DEC 的)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

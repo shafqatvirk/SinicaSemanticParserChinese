@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 干格不入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities which don't mix"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (PP (P 和)
+		      (NP (DNP (NP (NP-PN (NR 台湾))
+				   (NP (NN 史学界)))
+			       (DEG 的))
+			  (NP (NN 集体)
+			      (NN 氛围))))
+		  (VP (VV 干格不入)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="0" f="crd">
+	  和 台湾 史学界 的 集体 氛围 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

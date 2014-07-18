@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 讨论 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 俄)
+				 (NR 美))
+			  (NP (NN 总统)))
+		  (VP (VP (VV 通)
+			  (NP-OBJ (NN 电话)))
+		      (VP (VV 讨论)
+			  (NP-OBJ (NP-PN (NR 伊拉克))
+				  (NP (NN 问题)))))) 
+	  </parse>
+	  <arg n="0">
+	  俄 美 总统 
+	  </arg>
+	  <arg n="1">
+	  伊拉克 问题 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 总统)
+		      (CC 和)
+		      (NN 外长))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 讨论)
+		      (AS 了)
+		      (IP-OBJ (NP-PN-SBJ (NR 乌))
+			      (VP (ADVP (AD 如何))
+				  (PP-TMP (P 在)
+					  (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 加入)
+							      (NP-OBJ (NP-PN (NR 欧洲)
+									     (NR 大西洋))
+								      (NP (NN 一体化)))))
+						      (DEC 的))
+					      (NP (NN 同时))))
+				  (VP (VV 发展)
+				      (NP-OBJ (DNP (PP (PP (P 同)
+							   (NP (DP (DT 所有))
+							       (NP (NN 邻国))))
+						       (PU ，)
+						       (PP (ADVP (AD 首先是))
+							   (PP (P 同)
+							       (NP-PN (NR 俄罗斯)))))
+						   (DEG 的))
+					      (NP (NN 平等)
+						  (NN 伙伴)
+						  (NN 关系))))))))) 
+	  </parse>
+	  <arg n="0">
+	  总统 和 外长 
+	  </arg>
+	  <arg n="1">
+	  乌 如何 在 *PRO* 加入 欧洲 大西洋 一体化 的 同时 发展 同 所有 邻国 ， 首先是 同 俄罗斯 的 平等 伙伴 关系 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 提交)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (PP-TMP (P 在)
+						      (NP (NT ２月)
+							  (NT ２６日)))
+					      (VP (VV 举行))))
+				      (DEC 的)))
+			      (NP (NN 政府)
+				  (NN 扩大)
+				  (NN 会议)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 讨论))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

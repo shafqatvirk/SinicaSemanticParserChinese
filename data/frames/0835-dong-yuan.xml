@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 动员 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="motivator"/>
+      <role argnum="1" argrole="motivated entity"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 当)
+		      (NP (CP (WHPP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NP (NT 夏季))
+					      (ADJP (JJ 特大))
+					      (NP (NN 洪水)))
+				      (VP (PP-TMP (-NONE- *T*-1))
+					  (VP (VV 袭来))))
+				  (DEC 的)))
+			  (NP (NN 时候))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (VV 动员)
+		  (AS 了)
+		  (NP-OBJ (NP (QP (CD 八百多万))
+			      (NP (NN 民众)))
+			  (CC 和)
+			  (NP (QP (CD 十三万))
+			      (NP (NN 解放军)
+				  (PU 、)
+				  (NN 武警))
+			      (NP (NN 官兵))))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 投入)
+			  (NP-OBJ (NN 抗洪)
+				  (NN 抢险)))))) 
+	  </parse>
+	  <arg n="m" f="tmp">
+	  当 *OP* 夏季 特大 洪水 *T*-1 袭来 的 时候 
+	  </arg>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  八百多万 民众 和 十三万 解放军 、 武警 官兵 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 投入 抗洪 抢险 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

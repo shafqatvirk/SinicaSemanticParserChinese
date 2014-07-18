@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 流泄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place arg0 flows out of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 怎))
+		(VP (VV 知)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (LCP (NP (NN 书))
+							     (LC 中))
+							(NP (NN 字字句句)))
+						(VP (MSP 所)
+						    (VP (VP (VV 挥洒)
+							    (NP-OBJ (-NONE- *RNR*-5)))
+							(PU 、)
+							(VP (VRD (VV 流泄)
+								 (VV 出来))
+							    (NP-OBJ-5 (-NONE- *T*-4))))))
+					    (DEC 的))))
+			    (PU ，)
+			    (VP (ADVP (AD 却))
+				(VP (VC 是)
+				    (NP-PRD (QP (CD 一)
+						(CLP (M 篇篇)))
+					    (CP (WHNP-6 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-6))
+							(VP (VV 不堪回首)))
+						    (DEC 的)))
+					    (NP (NN 童年)
+						(NN 记忆))))))))) 
+	</parse>
+	<arg n="0">
+	*T*-4 
+	</arg>
+	<arg n="1">
+	书 中 字字句句 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 戍守 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 guards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 震惊)
+				    (NP-OBJ (NN 世人))))
+			    (DEC 的)))
+		    (NP-PN (NR 秦始皇))
+		    (ADJP (JJ 地下))
+		    (NP (NN 兵团)))
+	    (PU ，)
+	    (VP (VP (VV 戍守)
+		    (AS 著)
+		    (NP-OBJ (DNP (NP-PN (NR 始皇))
+				 (DEG 的))
+			    (NP (NN 长生))
+			    (ADJP (JJ 美))
+			    (NP (NN 梦))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 提醒)
+			(NP-IO (NN 世人))
+			(NP-OBJ (DNP (NP (NP-PN (NR 中国))
+					 (ADJP (JJ 古))
+					 (NP (NN 文明)))
+				     (DEG 的))
+				(NP (NN 博大)
+				    (NN 精深))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 震惊 世人 的 秦始皇 地下 兵团 
+	</arg>
+	<arg n="1">
+	始皇 的 长生 美 梦 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

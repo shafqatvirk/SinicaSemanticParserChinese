@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 常驻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is stationed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP-PN (NR 大隘社))
+			    (NP (NN 专案)
+				(NN 秘书)))
+		    (NP-PN (NR 李杰颖)))
+	    (VP (PP-DIR (P 从)
+			(LCP (NP-TMP (NT 十月))
+			     (LC 起)))
+		(ADVP (AD 就))
+		(VP (VV 常驻)
+		    (PP (P 在)
+			(NP (NP-PN (NR 石冈仔))
+			    (NP (NN 工作)
+				(NN 站))))))) 
+	</parse>
+	<arg n="0">
+	大隘社 专案 秘书 李杰颖 
+	</arg>
+	<arg n="1">
+	在 石冈仔 工作 站 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	从 十月 起 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 烧焦 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity burned to charcoal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 找到)
+	      (NP-OBJ (QP (CD ７)
+			  (CLP (M 具)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (VV 烧焦)
+					  (NP (-NONE- *-2)))))
+			      (DEC 的)))
+		      (NP (NN 尸体)))) 
+	  </parse>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,125 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 限于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="range"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 适用)
+		      (NN 范围))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 限于)
+		      (NP-OBJ (NN 民间))))) 
+	  </parse>
+	  <arg n="0">
+	  适用 范围 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  民间 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (PN 这))
+		      (NP (NN 期间)))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 新))
+				      (VP (VV 启用)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 欧元)))
+	      (VP (ADVP (AD 仍))
+		  (VP (VV 限于)
+		      (IP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (ADJP (JJ 非现金))
+						       (NP (NN 交易)))
+						   (LC 中)))
+				      (VP (VV 使用))))
+			      (PU ，)
+			      (NP (ADVP (AD 如))
+				  (NP (NN 银行)
+				      (NN 记帐)
+				      (PU 、)
+				      (NN 支票)
+				      (PU 、)
+				      (NN 结算)
+				      (ETC 等))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *pro* 新 启用 (*T*-1)->(欧元) 的 欧元 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  仍 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 在 非现金 交易 中 使用 ， 如 银行 记帐 、 支票 、 结算 等 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing limited"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (ADVP (AD 仅))
+			      (VP (VV 限于)
+				  (NP-OBJ (NN 主权)
+					  (NN 国家))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 参加))))))
+		      (DEC 的)))
+	      (NP (NN 国际)
+		  (NN 金融)
+		  (NN 组织))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(国际金融组织) 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  仅 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  主权 国家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 参加 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

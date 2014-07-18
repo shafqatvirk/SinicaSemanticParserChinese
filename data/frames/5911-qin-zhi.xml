@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 亲炙 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 studies/learn from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (NP-ADV (ADJP (JJ 近))
+				(NP (NN 距离)))
+			(VP (VV 亲炙)
+			    (NP-PN-OBJ (NR 高行健)))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 国人))
+				(VP (VV 关注)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NN 焦点)))
+	    (VP (ADVP (AD 自然))
+		(VP (VC 是)
+		    (VP (PP-PRD (P 在)
+				(LCP (NP (DNP (NP (PN 他))
+					      (DEG 的))
+					 (NP (NN 创作))
+					 (NP (NN 理念)
+					     (CC 和)
+					     (NN 历程)))
+				     (LC 上))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	高行健 
+	</arg>
+	<arg n="m" f="adv">
+	近 距离 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

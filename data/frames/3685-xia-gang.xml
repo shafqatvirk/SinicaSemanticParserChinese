@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下岗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people laid off"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 大量))
+			  (ADJP (JJ 富余))
+			  (NP (NN 人员)))
+		  (VP (VP (VCD (VV 下岗)
+			       (VV 分流)))
+		      (CC 和)
+		      (VP (ADVP (AD 再))
+			  (VP (VV 就业))))) 
+	  </parse>
+	  <arg n="0">
+	  大量 富余 人员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

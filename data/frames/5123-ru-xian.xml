@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 入宪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 writes into constitution"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (UCP-SBJ (NP (DNP (NP-PN (NR 连战))
+			      (DEG 的))
+			 (NP (PU 「)
+			     (NP-PN (NR 台海))
+			     (NP (NN 和平区))
+			     (PU 」)))
+		     (PU ，)
+		     (IP (DNP (NP-PN (NR 宋楚瑜))
+			      (DEG 的))
+			 (IP-APP (NP-SBJ (-NONE- *PRO*))
+				 (VP (PU 「)
+				     (VV 签署)
+				     (NP-OBJ (NN 和平)
+					     (NN 协议))
+				     (PU 」))))
+		     (PU ，)
+		     (CC 以及)
+		     (NP (NP-PN (NR 陈水扁))
+			 (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (PU 「)
+					 (VP (ADVP (AD 不))
+					     (VP (VV 会)
+						 (VP (VV 台独))))
+					 (CC 也)
+					 (VP (ADVP (AD 不))
+					     (VP (VV 会)
+						 (VP (BA 将)
+						     (IP-OBJ (NP-SBJ (NN 两国论))
+							     (VP (VV 入宪))))))
+					 (PU 」)))
+				 (DEC 的))
+			 (NP (NN 宣告))))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(VP (VV 意在)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 维持)
+				(NP-OBJ (NP-PN (NR 台海))
+					(NP (NN 和平)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	两国论 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 两国论))
+	    (VP (ADVP (AD 不))
+		(VP (VV 入宪)))) 
+	</parse>
+	<arg n="1">
+	两国论 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 统治 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 rules"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (QP (CD 一))
+		    (NP (NN 方面)))
+	    (PP-PRP (P 因为)
+		    (IP (NP-SBJ (NP-PN (NR 澳)
+				       (NR 葡))
+				(NP (NN 政府)))
+			(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					 (VP (VV 统治)
+					     (NP-PN-OBJ (NR 澳门))
+					     (QP-EXT (CD 四百)
+						     (CLP (M 年)))))
+				     (LC 来))
+			    (PU ，)
+			    (ADVP (AD 从未))
+			    (VP (VV 正视)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 培养)
+					    (NP-OBJ (NP (NN 华人))
+						    (NP (NP-PN (NR 葡国))
+							(NP (NN 语言)))
+						    (NP (NN 能力)))))))))
+	    (PU ，)
+	    (LCP-TMP (ADVP (AD 长期))
+		     (LC 以来))
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 精通)
+				    (NP-OBJ (NN 葡文))))
+			    (DEC 的)))
+		    (NP (NN 中国人)))
+	    (VP (ADVP (AD 很))
+		(VP (VA 少)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	澳门 
+	</arg>
+	<arg n="m" f="ext">
+	四百 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP (NT 近代)
+				      (NN 西方)
+				      (NN 帝国主义))
+				  (DEG 的))
+			     (NP (NN 扩张史)))
+			 (LC 中)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 台湾)
+		       (CC 与)
+		       (NR 帛琉))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 都))
+		(VP (VP (ADVP (AD 曾))
+			(VP (VV 遭受)
+			    (NP-OBJ (NN 异族))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 统治)))))
+		    (PU ，)
+		    (VP (MSP 而)
+			(VP (VV 留下)
+			    (NP-OBJ (DNP (NP (NP-PN-APP (NR 西班牙)
+							(PU 、)
+							(NR 日本)
+							(ETC 等))
+					     (NP (NN 国家)))
+					 (DEG 的))
+				    (NP (NN 足迹)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

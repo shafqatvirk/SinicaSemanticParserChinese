@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 胁迫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people coerced"/>
+      <role argnum="2" argrole="thing arg1 is coerced to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 加入)))
+					  (DEC 的)))
+				  (NP (NN 传销商)))
+			  (VP (VP (VV 算是)
+				  (NP-OBJ (PU 「)
+					  (ADJP (JJ 独立))
+					  (NP (NN 经营者))
+					  (PU 」)))
+			      (PU ，)
+			      (VP (PP (P 和)
+				      (NP (NN 传销)
+					  (NN 公司)))
+				  (ADVP (AD 并))
+				  (VP (VE 没有)
+				      (NP-OBJ (DP (DT 任何))
+					      (ADJP (JJ 雇佣))
+					      (NP (NN 关系))))))))
+	      (PU ，)
+	      (IP-CND (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 参加))))
+			      (NP (NN 者)))
+		      (VP (ADVP (CS 若))
+			  (VP (VV 想)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 退出))))))
+	      (PU ，)
+	      (NP-SBJ (NN 业者))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 可以)
+		      (VP (VV 胁迫)
+			  (CC 或是)
+			  (VV 刁难))))) 
+	  </parse>
+	  <arg n="0">
+	  业者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *OP* *T*-2 参加 者 若 想 *PRO* 退出 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 *OP* *T*-1 加入 的 传销商 算是 「 独立 经营者 」 ， 和 传销 公司 并 没有 任何 雇佣 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

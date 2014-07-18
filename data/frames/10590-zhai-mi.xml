@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著迷 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 is fascinated by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 澳洲))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP (-NONE- *T*-1))
+				(VP (VV 一望无际)))
+			    (DEC 的)))
+		    (NP (NN 大地)
+			(PU 、)
+			(NN 沙漠)))
+	    (PU ，)
+	    (VP (VV 让)
+		(NP-PN-OBJ (NR 罗卓瑶))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (CC 又)
+			(VV 怕)
+			(CC 又)
+			(VV 著迷))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

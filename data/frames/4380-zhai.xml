@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 摘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing taken off"/>
+      <role argnum="2" argrole="recipient of what arg0 does"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (PU “)
+			  (ADJP (JJ 黑))
+			  (QP (CD 五)
+			      (CLP (M 类)))
+			  (PU ”))
+		      (NP (PN 本身)))
+	      (VP (ADVP (AD 也))
+		  (VP (SB 被)
+		      (VP (PU “)
+			  (VV 摘)
+			  (AS 了)
+			  (NP-OBJ (NN 帽子))
+			  (PU ”))))) 
+	  </parse>
+	  <arg n="1">
+	  帽子 	  
+	  </arg>
+	  <arg n="2">
+	  “ 黑 五 类 ” 本身 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing quoted"/>
+      <role argnum="2" argrole="entity arg1 quoted from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="1">
+	  
+	  </arg>
+	  <arg n="2">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

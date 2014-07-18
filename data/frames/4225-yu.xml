@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 余 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity remaining"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 云南))
+	      (VP (ADVP (AD 尚))
+		  (VP (VV 余)
+		      (NP-OBJ (QP (CD 一千零七十五)
+				  (CLP (M 名)))
+			      (NP-PN (NR 老挝))
+			      (NP (NN 难民)))))) 
+	  </parse>
+	  <arg n="0">
+	  云南 
+	  </arg>
+	  <arg n="1">
+	  一千零七十五 名 老挝 难民 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尚 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据悉 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 整)
+			  (CLP (M 个)))
+		      (NP (NN 联赛)))
+	      (VP (VP-FOC (VV 距离)
+			  (NP-OBJ (NN 冻僵)))
+		  (VP (ADVP (AD 仅))
+		      (VP (VV 余)
+			  (QP-OBJ (CD ８)
+				  (CLP (M 日))))))) 
+	  </parse>
+	  <arg n="0">
+	  整 个 联赛 
+	  </arg>
+	  <arg n="1">
+	  ８ 日 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

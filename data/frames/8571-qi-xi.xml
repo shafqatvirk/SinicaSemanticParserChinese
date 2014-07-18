@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 栖息 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 is resting"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (VA 高)
+					   (QP-EXT (ADVP (AD 近))
+						   (QP (CD 四)
+						       (CLP (M 公尺))))))
+				   (DEC 的)))
+			   (NP (NN 神树)))
+		       (LC 上))
+	      (PU ，)
+	      (VP (VV 栖息)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 九)
+			      (CLP (M 只)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-2))
+				      (NP-SBJ (NN 羽毛))
+				      (VP (VA 漂亮)))
+				  (DEC 的)))
+			  (NP (NN 鸟儿))))) 
+	  </parse>
+	  <arg n="0">
+	  九 只 *OP* *T*-2 羽毛 漂亮 的 鸟儿 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 高 近 四 公尺 的 神树 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

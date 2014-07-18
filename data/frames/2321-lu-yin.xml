@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 录音 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing recorded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 行政)
+		      (NN 长官))
+	      (VP (VP (PP-DIR (P 向)
+			      (NP (ADJP (JJ 与会))
+				  (NP (NN 信众))))
+		      (VP (VV 发表)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 段)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 预先))
+						  (VP (VV 录音))))
+					  (DEC 的)))
+				  (NP (NN 祝词))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  预先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

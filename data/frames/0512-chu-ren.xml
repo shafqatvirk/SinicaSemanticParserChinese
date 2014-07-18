@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person taking a position"/>
+      <role argnum="1" argrole="position"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 本人))
+	      (VP (VP (VV 受)
+		      (NP-OBJ (NP (NN 国家)
+				  (CC 和)
+				  (NN 人民))
+			      (NN 重托)))
+		  (PU ，)
+		  (VP (VV 出任)
+		      (NP-OBJ (NP-PN (NR 中华)
+				     (NN 人民)
+				     (NN 共和国))
+			      (NP-PN (NP-PN (NR 香港))
+				     (ADJP (JJ 特别))
+				     (NP (NN 行政区)))
+			      (QP (OD 首)
+				  (CLP (M 任)))
+			      (NP (NN 行政)
+				  (NN 长官)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  本人 
+	  </arg>
+	  <arg n="1">
+	  中华 人民 共和国 香港 特别 行政区 首 任 行政 长官 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

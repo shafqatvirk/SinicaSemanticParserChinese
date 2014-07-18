@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤消 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 cancels"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 凡))
+						  (PP-LOC (P 在)
+							  (NP (NP (NN 农渔会))
+							      (CC 或)
+							      (NP (DP (DT 其他))
+								  (NP (NN 金融)
+								      (NN 机构)))))
+						  (VP (VV 借款))))
+				      (VP (VV 有)
+					  (VP (LCP-ADV (QP (CD 一)
+							   (CLP (M 年)))
+						       (LC 以上))
+					      (VP (VV 延滞)
+						  (NP-OBJ (NP (NN 本金)
+							      (CC 或)
+							      (NN 利息))
+							  (NP (NN 缴纳)))))))))
+			  (NP (NN 者)))
+		  (PU ，)
+		  (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (CS 即使))
+				  (VP (VV 当选)
+				      (NP-OBJ (NN 理监事)
+					      (CC 或)
+					      (NN 总干事)))))
+		      (PU ，)
+		      (ADVP (AD 也))
+		      (VP (VV 要)
+			  (VP (VV 撤消))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 *PRO* 凡 在 农渔会 或 其他 金融 机构 借款 有 一 年 以上 延滞 本金 或 利息 缴纳 者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 即使 当选 理监事 或 总干事 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

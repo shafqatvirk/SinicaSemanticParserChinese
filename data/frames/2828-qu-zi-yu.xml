@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 取自于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 其))
+		      (NP (NN 名)))
+	      (VP (VV 取自于)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 位)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VCD (VA 天真)
+					       (VA 可爱))))
+				  (DEC 的)))
+			  (NP-PN (NR 意大利))
+			  (ADJP (JJ 小))
+			  (NP (NN 女孩))))) 
+	  </parse>
+	  <arg n="0">
+	  其 名 
+	  </arg>
+	  <arg n="1">
+	  一 位 *OP* *T*-1 天真 可爱 的 意大利 小 女孩 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

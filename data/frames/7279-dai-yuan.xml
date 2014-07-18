@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 待援 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity waiting for help to come"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 想想)
+			(IP-Q-OBJ (LCP-SBJ (NP (NN 世界))
+					   (LC 上))
+				  (VP (ADVP (AD 还))
+				      (VP (VE 有)
+					  (NP-OBJ (QP-WH (CD 多少))
+						  (CP (WHNP-3 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-3))
+							      (VP (VA 饥饿)
+								  (VV 待援)))
+							  (DEC 的)))
+						  (NP (NN 难民))))))))
+	    (PU ，)
+	    (NP-SBJ (PN 自己))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 更))
+		(ADVP (AD 不))
+		(VP (VV 能)
+		    (VP (ADVP (AD 这样))
+			(VP (VV 浪费)))))
+	    (SP 了)) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

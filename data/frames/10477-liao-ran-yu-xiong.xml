@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 了然於胸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 knows clearly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP-PN (NR 林中斌))
+			(DNP (PP (P 做为)
+				 (NP (QP (CD 一)
+					 (CLP (M 个)))
+				     (NP (NN 战略家))))
+			     (DEG 的))
+			(NP (NN 学术)
+			    (NN 专业)))
+		(PU ，)
+		(VP (ADVP (AD 早))
+		    (ADVP (AD 已))
+		    (PP-DIR (P 对)
+			    (NP (DNP (NP-PN (NR 中共))
+				     (DEG 的))
+				(NP (NN 算盘))))
+		    (VP (VV 了然於胸)))) 
+	</parse>
+	<arg n="0">
+	林中斌 
+	</arg>
+	<arg n="1">
+	对 中共 的 算盘 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="adv">
+	早 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

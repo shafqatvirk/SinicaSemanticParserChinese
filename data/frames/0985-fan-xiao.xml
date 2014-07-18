@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 返销 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="merchandise"/>
+      <role argnum="2" argrole="buyer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (DNP (NP (NN 产品))
+			       (DEG 的))
+			  (NP (NN 国内)
+			      (NN 市场)
+			      (NN 占有率)
+			      (CC 和)
+			      (NN 品种)
+			      (NN 覆盖率)))
+		  (VP (ADVP (AD 分别))
+		      (VP (VV 达到)
+			  (QP-OBJ (CD 百分之七十)
+				  (CC 和)
+				  (CD 百分之九十)))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 并))
+		      (VP (VP (VV 返销)
+			      (NP-PN-OBJ (NR 日本)))
+			  (PU ，)
+			  (VP (VV 出口)
+			      (NP-OBJ (NP-PN-APP (NR 韩国)
+						 (CC 和)
+						 (NR 印度)
+						 (ETC 等))
+				      (NP (NN 国家)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  日本 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

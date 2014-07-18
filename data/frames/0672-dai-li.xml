@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 代理 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="proxy"/>
+      <role argnum="1" argrole="business"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (QP (CD 三)
+			      (CLP (M 家))))
+		      (NP (NN 企业)))
+	      (VP (VV 聘请)
+		  (NP-OBJ (NP-PN (NR 上海))
+			  (NP-PN (PU “)
+				 (NR 段和段)
+				 (NN 律师)
+				 (NN 事务所)
+				 (PU ”)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 全权))
+			  (VP (VV 代理)
+			      (NP-OBJ (DNP (PP (P 在)
+					       (NP-PN (NR 美国)))
+					   (DEG 的))
+				      (NP-APP (NN 起诉)
+					      (PU 、)
+					      (NN 索赔)
+					      (ETC 等))
+				      (NP (NN 法律)
+					  (NN 事务)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  在 美国 的 起诉 、 索赔 等 法律 事务 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  全权 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出走 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity going away"/>
+    <role argnum="1" argrole="location arg0 goes to"/>
+    <role argnum="2" argrole="location arg0 leaves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (NP-PN (NR 民国))
+		    (QP (OD 八十四)
+			(CLP (M 年))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 索性))
+		(VP (VP (BA 将)
+			(IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (VP (VV 调查))
+							(VP (MSP 所)
+							    (VP (VV 得)
+								(NP-OBJ (-NONE- *T*-1))))))
+						(DEC 的)))
+					(NP (NN 史料)))
+				(VP (VV 束之高阁))))
+		    (PU ，)
+		    (VP (VP (VV 带)
+			    (AS 著)
+			    (NP-OBJ (NN 妻儿)))
+			(VP (VV 出走)
+			    (NP-PN-OBJ (NR 纽西兰))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	纽西兰 
+	</arg>
+	<arg n="m" f="adv">
+	索性 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 八十四 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 出走)))
+			(DEC 的)))
+		(NP (NN 台商))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (PP-DIR (P 从)
+					(NP-PN (NR 国民党)))
+				(VP (VV 出走))))
+			(DEC 的)))
+		(NP-PN (NR 宋楚瑜))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	从 国民党 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

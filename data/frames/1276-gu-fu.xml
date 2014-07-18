@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 辜负 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="expectation, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 决))
+		  (ADVP (AD 不))
+		  (VP (VV 辜负)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (ADJP (JJ 友好))
+						  (NP (NN 邻邦)))
+					  (VP (VV 给)
+					      (NP-IO (PN 我))
+					      (NP-OBJ (-NONE- *T*-1))))
+				      (DEC 的)))
+			      (NP (NN 鼓励)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  *OP* 友好 邻邦 给 我 *T*-1 的 鼓励 
+	  </arg>
+	  <arg n="m" f="adv">
+	  决 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

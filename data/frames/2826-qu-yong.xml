@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 取用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing used"/>
+      <role argnum="2" argrole="entity thing used for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 它))
+				  (VP (MSP 所)
+				      (VP (VV 取用)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (NP (NN 水)))
+	      (VP (VV 取自)
+		  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VV 流经)
+					  (NP-OBJ (ADJP (JJ 朱砂))
+						  (NP (NN 土质)))))
+				  (DEC 的)))
+			  (NP-PN (NR 赤水河))))) 
+	  </parse>
+	  <arg n="2">
+	  它 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 存在 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="location"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (NP-SBJ (NN 国内))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 存在)
+		      (NP-OBJ (QP (CD 不少))
+			      (NP (NN 问题)))))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  去年 	  	  
+	  </arg>
+	  <arg n="0">
+	  国内 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  不少 问题 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 经济)
+			       (NN 发展))
+			   (DEG 的))
+		      (ADJP (JJ 有利))
+		      (NP (NN 因素)))
+	      (VP (ADVP (AD 依然))
+		  (VP (VV 存在)))) 
+	  </parse>
+	  <arg n="1">
+	  经济 发展 的 有利 因素 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  依然 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

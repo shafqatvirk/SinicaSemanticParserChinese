@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 唱出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="singer"/>
+    <role argnum="1" argrole="sone"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+              (CP (IP (NP-SBJ (QP (OD 第一)
+                                  (CLP (M 支)))
+                              (NP (NN 大陆)
+                                  (NN 歌团)))
+                      (VP (VP (VP (VV 带)
+                                  (AS 着)
+                                  (NP-OBJ (PU ‘)
+                                          (NP (ADJP (JJ 同))
+                                              (NP (NN 曲)))
+                                          (NP (ADJP (JJ 同))
+                                              (NP (NN 源)))
+                                          (PU ’)))
+                              (VP (VV 抵)
+                                  (NP-PN-OBJ (NR 台))))
+                          (PU ，)
+                          (VP (VSB (VV 开口)
+                                   (VV 唱出))
+                              (NP-OBJ (-NONE- *T*-2)))))))
+          (NP (NP (PU ‘)
+                  (NN 七字调)
+                  (PU ’))
+              (PU 、)
+              (NP (PU ‘)
+                  (NN 都马调)
+                  (PU ’)))))
+	</parse>
+	<arg n="0"> 第一 支 大陆 歌团 </arg>
+	<V/>
+	<arg n="1"> (*T*-2)->(‘七字调’、‘都马调’) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

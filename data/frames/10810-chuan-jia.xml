@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 传家 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people described"/>
+    <role argnum="1" argrole="thing arg0 passes from generation to generation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-SBJ (NN 耕读))
+				(VP (VV 传家)))
+			    (DEC 的))
+		    (NP (NN 传统)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 让)
+		    (NP-OBJ (PN 她))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-DIR (P 对)
+				    (NP (NN 汉文)))
+			    (ADVP (AD 并))
+			    (ADVP (AD 不))
+			    (VP (VV 陌生))))))) 
+	</parse>
+	<arg n="1">
+	耕读 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

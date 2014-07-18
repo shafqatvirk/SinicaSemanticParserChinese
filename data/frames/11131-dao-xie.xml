@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 道谢 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 expresses thanks to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (LCP (NP (NN 节目)
+			     (NN 终场))
+			 (LC 时)))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (NP-PN (NR 纽西兰))
+		    (NP (NN 友人)))
+	    (VP (VP (VV 前来))
+		(VP (PP-DIR (P 向)
+			    (NP (NN 司仪)))
+		    (VP (VV 道谢))))) 
+	</parse>
+	<arg n="0">
+	许多 纽西兰 友人 
+	</arg>
+	<arg n="1">
+	向 司仪 
+	</arg>
+	<arg n="m" f="tmp">
+	在 节目 终场 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

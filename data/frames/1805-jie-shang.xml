@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接上 </id>
+    <frameset id="f1" edef="take over">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 新手))
+	      (VP (ADVP (AD 刚刚))
+		  (VP (VV 接上)))) 
+	  </parse>
+	  <arg n="0">
+	  新手 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  刚刚 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="connect">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="thing with which arg0 connects arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 那时))
+	      (NP-SBJ (NN 海口)
+		      (NN 一带))
+	      (VP (ADVP (AD 才))
+		  (ADVP (AD 刚))
+		  (VP (VV 接上)
+		      (NP-OBJ (NN 电线))))) 
+	  </parse>
+	  <arg n="1">
+	  海口 一带 
+	  </arg>
+	  <arg n="2">
+	  电线 
+	  </arg>
+	  <arg n="m" f="adv">
+	  刚 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  那时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

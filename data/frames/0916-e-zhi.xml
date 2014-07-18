@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遏止 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="deterrer"/>
+      <role argnum="1" argrole="thing deterred"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VA 新)))
+				(DEC 的)))
+			(IP-APP (NP-SBJ (NN 粮食))
+				(VP (VV 亏损)))
+			(NP (NN 挂帐)))
+	      (VP (SB 被)
+		  (VP (VV 遏止)
+		      (NP-OBJ (-NONE- *-2))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 新 的 粮食 亏损 挂帐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

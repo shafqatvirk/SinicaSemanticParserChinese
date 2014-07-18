@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挥去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 gets rid of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 若说))
+		      (IP (NP-SBJ (NN 书写)
+				  (NN 治疗))
+			  (VP (VV 可以)
+			      (VP (VV 挥去)
+				  (NP-OBJ (NP (NT 幼时))
+					  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VA 自卑)
+							  (PU 、)
+							  (VA 孤独)
+							  (PU 、)
+							  (VA 落寞)))
+						  (DEC 的))
+					  (NP (NN 经验)))))))
+	      (PU ，)
+	      (LCP-TMP (NP (NN 成书))
+		       (LC 後))
+	      (NP-SBJ (NN 心情))
+	      (VP (ADVP (AD 倒))
+		  (ADVP (AD 也))
+		  (VP (VCD (VA 轻松)
+			   (VA 快活))))) 
+	  </parse>
+	  <arg n="0">
+	  书写 治疗 
+	  </arg>
+	  <arg n="1">
+	  幼时 *PRO* 自卑 、 孤独 、 落寞 的 经验 
+	  </arg>
+	  <arg n="m" f="adv">
+	  若说 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

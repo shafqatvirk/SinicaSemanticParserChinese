@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 亲如 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people described"/>
+    <role argnum="1" argrole="entity arg0 is as close as"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 面对)
+			(NP-OBJ (DNP (ADJP (JJ 那样))
+				     (DEG 的))
+				(ADJP (JJ 大))
+				(NP (NN 环境)))))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 即使))
+			(VP (VV 亲如)
+			    (NP-OBJ (NN 父女)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VV 无能为力)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	父女 
+	</arg>
+	<arg n="m" f="adv">
+	即使 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 选书 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 从)
+		      (NP (DNP (NP (NT 历年))
+			       (DEG 的))
+			  (IP-APP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 选)
+				      (NP-OBJ (NN 书))))
+			  (NP (NN 心得))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 鲍佳欣))
+	      (VP (VV 建议)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 尽量))
+			      (VP (VV 让)
+				  (NP-OBJ (NN 孩子))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (NP-ADV (PN 自己))
+					  (VP (VV 选书))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自己 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

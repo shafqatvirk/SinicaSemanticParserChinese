@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放学 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="student dismissed after school"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (QP (OD 一)
+			    (PU 、)
+			    (OD 二))
+			(NP (NN 年级)))
+		    (NP (NN 小学生)))
+	    (VP (NP-TMP (NT 中午))
+		(ADVP (AD 就))
+		(VP (VV 该)
+		    (VP (VV 放学)
+			(AS 了))))) 
+	</parse>
+	<arg n="0">
+	一 、 二 年级 小学生 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	中午 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

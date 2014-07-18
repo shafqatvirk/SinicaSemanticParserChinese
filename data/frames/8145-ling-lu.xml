@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 领路 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity for which arg0 leads the way"/>
+      <role argnum="2" argrole="thing in which arg0 leads the way"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (PP-LGS (P 由)
+			      (NP (NN 政府)))
+		      (VP (VV 领路)))
+		  (PU ，)
+		  (VP (VV 提供)
+		      (NP-IO (NN 民间)
+			     (NN 团体))
+		      (NP-OBJ (NP (ADJP (JJ 充分))
+				  (NP (NN 资讯)))
+			      (CC 与)
+			      (NP (DNP (ADJP (JJ 事务性))
+				       (DEG 的))
+				  (NP (NN 协助))))))) 
+	  </parse>
+	  <arg n="0">
+	  由 政府 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

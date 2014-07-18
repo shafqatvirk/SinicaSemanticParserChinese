@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 紧邻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is a next-door neighbor of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 屏东县)
+		       (NR 林边乡))
+	    (VP (VP (VV 位)
+		    (PP (P 於)
+			(NP (NP (NP-PN (NR 屏东)
+				       (NN 平原))
+				(NP (NN 南部)))
+			    (PU 、)
+			    (NP (NP (NP-PN (NR 林边溪))
+				    (NP (NN 下游)))
+				(NP (NN 出海口))))))
+		(PU ，)
+		(VP (VV 紧邻)
+		    (NP-OBJ (DNP (LCP (NP (NN 规划))
+				      (LC 中))
+				 (DEG 的))
+			    (NP-PN (NR 大鹏湾)
+				   (NN 风景)
+				   (NN 特定区))))
+		(PU ，)
+		(VP (VC 是)
+		    (NP-PRD (NP-PN (NR 南二高))
+			    (ADJP (JJ 预定))
+			    (NP (NN 终点站)))))) 
+	</parse>
+	<arg n="0">
+	屏东县 林边乡 
+	</arg>
+	<arg n="1">
+	规划 中 的 大鹏湾 风景 特定区 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

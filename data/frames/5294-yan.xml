@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掩 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 hides/covers up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 吴宗升))
+	    (VP (ADVP (AD 难))
+		(VP (VV 掩)
+		    (NP-OBJ (NN 遗憾))))) 
+	</parse>
+	<arg n="0">
+	吴宗升 
+	</arg>
+	<arg n="1">
+	遗憾 
+	</arg>
+	<arg n="m" f="adv">
+	难 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 谦怀)))
+			    (DEC 的)))
+		    (NP (PN 他)))
+	    (VP (LCP-LOC (NP (NN 眉宇))
+			 (LC 间))
+		(VP (VPT (VV 掩)
+			 (AD 不)
+			 (VV 住))
+		    (NP-OBJ (DNP (PP (P 对)
+				     (NP (NP (NP (PN 自))
+					     (NP (NN 家)))
+					 (NP (NN 茶叶))))
+				 (DEG 的))
+			    (NP (NN 信心)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 谦怀 的 他 
+	</arg>
+	<arg n="1">
+	对 自 家 茶叶 的 信心 
+	</arg>
+	<arg n="m" f="loc">
+	眉宇 间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

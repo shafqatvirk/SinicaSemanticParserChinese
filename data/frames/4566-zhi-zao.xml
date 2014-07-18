@@ -1,0 +1,122 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 制造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing manufactured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 制造)
+		  (AS 了)
+		  (NP-OBJ (NP-PN (NR 中国))
+			  (QP (OD 第一)
+			      (CLP (M 台)))
+			  (ADJP (JJ 载重))
+			  (NP (NN 汽车))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  中国 第一 台 载重 汽车 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (LCP-TMP (QP (CD ５０)
+						   (CLP (M 年)))
+					       (LC 前))
+				      (VP (VV 发生))))
+			      (DEC 的)))
+		      (NP-PN (NR 皖南))
+		      (NP (NN 事变)))
+	      (PU ，)
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (PP-LOC (P 在)
+						  (NP (CP-APP (IP (NP-SBJ (NP-PN (NR 中华))
+									  (NP (NN 民族)))
+								  (VP (VV 处于)
+								      (NP-OBJ (NN 生死)
+									      (NN 存亡))))
+							      (DEC 的))
+						      (NP (NN 危难)
+							  (NN 关头))))
+					  (PU ，)
+					  (PP-LGS (P 由)
+						  (NP (NP-PN (NR 国民党))
+						      (NP (NN 顽固派))))
+					  (ADVP (AD 蓄谋))
+					  (VP (VV 制造))))
+				  (DEC 的)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 震惊)
+					  (NP-OBJ (NN 中外))))
+				  (DEC 的)))
+			  (NP (NN 惨案))))) 
+	  </parse>
+	  <arg n="0">
+	  由 国民党 顽固派 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  蓄谋 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 中华 民族 处于 生死 存亡 的 危难 关头 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 棒球)
+				   (NN 比赛))
+			       (LC 中)))
+		  (VP (VV 使用)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (PP-MNR (NP (NN 金属)))
+					      (VP (VV 制造))))
+				      (DEC 的)))
+			      (NP (NN 球棒)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  金属 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

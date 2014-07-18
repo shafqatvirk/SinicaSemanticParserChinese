@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拆放 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loan provider"/>
+      <role argnum="1" argrole="loan receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 利率))
+	      (VP (VC 为)
+		  (NP-PRD (NP (NP (NP-PN (NR 伦敦))
+				  (NP (NN 同业)))
+			      (NP (NN 拆放)
+				  (NN 利率)))
+			  (CC 加)
+			  (NP (QP (CD 三十三)
+				  (CLP (M 个)))
+			      (NP (NN 百分点)))))) 
+	  </parse>
+	  <arg n="0">
+	  伦敦 同业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

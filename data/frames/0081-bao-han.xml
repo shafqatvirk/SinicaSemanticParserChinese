@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 包含 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing including"/>
+    <role argnum="1" argrole="thing included"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 合作)
+              (NN 项目))
+      (VP (VP (ADVP (AD 不))
+              (ADVP (AD 单纯))
+              (VP (VC 是)
+                  (NP-PRD (NN 设备)
+                          (NN 转移)
+                          (CC 及)
+                          (NN 技术)
+                          (NN 转移))))
+          (PU ，)
+          (VP (ADVP (AD 也))
+              (VP (VV 包含)
+                  (AS 了)
+                  (NP-OBJ (DNP (NP (NN 设计)
+                                   (NN 技术))
+                               (DEG 的))
+                          (NP (NN 转移))))))))
+	</parse>
+	<arg n="0"> 合作 项目 </arg>
+	<arg n="M" f="ADV"> 也 </arg>
+	<V/>
+	<arg n="1"> 设计 技术 的 转移 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

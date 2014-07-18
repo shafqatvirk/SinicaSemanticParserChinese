@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 破掉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (DNP (NP (DP (DT 这)
+					 (CLP (M 个)))
+				     (NP (NN 陶罐)))
+				 (DEG 的))
+			    (NP (NN 壁)))
+		    (VP (ADVP (AD 很))
+			(VP (VA 薄))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 如果))
+				    (VP (VC 是)
+					(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+							 (VP (VV 做好)
+							     (NP-OBJ (NN 罐形))))
+						     (LC 之后))
+					    (ADVP (AD 再))
+					    (VP (VRD (VV 拍打)
+						     (VV 出))
+						(NP-OBJ (NN 花纹)))))))
+			(PU ，)
+			(ADVP (AD 一定))
+			(VP (VV 会)
+			    (VP (VV 破掉)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	一定 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 如果 是 *PRO* 做好 罐形 之后 再 拍打 出 花纹 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

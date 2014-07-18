@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流亡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people in exile"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DP (DT 这)
+			    (QP (CD 一)))
+			(ADJP (JJ 重大))
+			(NP (NN 突破)))
+		(VP (PP-BNF (P 为)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 释放)
+					(NP-OBJ (NN 政治犯)))
+				    (CC 和)
+				    (VP (VV 允许)
+					(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (VV 流亡)
+								(NP-OBJ (NN 国外))))
+							(DEC 的)))
+						(NP (NN 人)))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 回国)))))))
+		    (VP (VV 铺平)
+			(AS 了)
+			(NP-OBJ (NN 道路))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  国外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 就读於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="school of which arg0 is a student"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-50 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-50))
+			    (VP (VV 就读於)
+				(NP-OBJ (NP-PN (NR 华夏)
+					       (NN 工专))
+					(NP (NP (NN 电子)
+						(NN 工程))
+					    (NP (NN 科)))
+					(NP (NN 夜间部)))))
+			(DEC 的)))
+		(NP-PN (NR 郭品良))) 
+	</parse>
+	<arg n="0">
+	*T*-50 
+	</arg>
+	<arg n="1">
+	华夏 工专 电子 工程 科 夜间部 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

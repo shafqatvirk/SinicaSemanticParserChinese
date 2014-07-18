@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing additionally issued"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 今年))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 政府)))
+	      (VP (VP (VV 采取)
+		      (AS 了)
+		      (NP-OBJ (NP (QP (CD 一)
+				      (CLP (M 系列)))
+				  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 增加)
+						      (NP-OBJ (NN 投资)))
+						  (PU ，)
+						  (VP (VV 扩大)
+						      (NP-OBJ (NN 内需)))))
+					  (DEC 的))
+				  (NP (NN 措施)))
+			      (PU ，)
+			      (IP (ADVP (AD 如))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VP (VP (VV 增发)
+						      (NP-OBJ (QP (CD 一千亿)
+								  (CLP (M 元)))
+							      (NP (NN 国债))))
+						  (PU ，)
+						  (VP (ADVP (AD 专项))
+						      (VP (VV 用)
+							  (PP (P 于)
+							      (NP (NP-APP (NN 农)
+									  (PU 、)
+									  (NN 林)
+									  (PU 、)
+									  (NN 水)
+									  (ETC 等))
+								  (NP (NN 基础)
+								      (NN 设施)
+								      (NN 建设)))))))
+					      (PU ，)
+					      (CC 并)
+					      (VP (VV 配套)
+						  (NP-OBJ (QP (CD 一千亿))
+							  (NP (NN 贷款)))))
+					  (ETC 等)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一千亿 元 国债 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 苦毒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 abuses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 饰演)
+		(NP-OBJ (CP (WHNP-39 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-39))
+				    (VP (ADVP (AD 一))
+					(VP (VV 反)
+					    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 苦毒)
+								(NP-OBJ (NN 小孩))))
+						    (NP (NN 刻板印象))))))
+				(DEC 的)))
+			(NP (NN 後母))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	小孩 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 痛打)
+			(NP-OBJ (NN 小孩))))
+	    (PU ，)
+	    (VP (PRN (IP (ADVP (AD 不管是))
+			 (IP-PRD (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 恨铁不成钢)))
+				 (PU ，)
+				 (CC 或)
+				 (IP (NP-SBJ (NN 後母))
+				     (VP (VCD (VV 苦毒)
+					      (VV 虐待)))))))
+		(PU ，)
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (NP-LOC (NN 连续剧))
+					    (ADVP (AD 经常))
+					    (VP (VV 出现))))
+				    (DEC 的)))
+			    (NP (NN 剧情)))))) 
+	</parse>
+	<arg n="0">
+	後母 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

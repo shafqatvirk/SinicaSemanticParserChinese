@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 种养 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 raises/grows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 尝到)
+				      (NP-OBJ (NP (NN 创汇)
+						  (NN 农业))
+					      (NP (NN 甜头)))))
+			      (DEC 的)))
+		      (NP (NP-PN (NR 广东))
+			  (NP (NN 农民))))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 积极))
+		      (VP (VV 引进)
+			  (NP-OBJ (-NONE- *RNR*-3))))
+		  (PU ，)
+		  (VP (ADVP (AD 精心))
+		      (VP (VV 种养)
+			  (NP-OBJ-3 (ADJP (JJ 优稀))
+				    (ADJP (JJ 名贵))
+				    (NP (NN 品种))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 尝到 创汇 农业 甜头 的 广东 农民 
+	  </arg>
+	  <arg n="1">
+	  优稀 名贵 品种 
+	  </arg>
+	  <arg n="m" f="adv">
+	  精心 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

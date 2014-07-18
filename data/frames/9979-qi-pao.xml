@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 起泡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity blistering"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 一))
+			  (VP (VV 晒))))
+	      (NP-SBJ (NN 皮肤))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 起泡)))) 
+	  </parse>
+	  <arg n="0">
+	  皮肤 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *pro* 一 晒 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

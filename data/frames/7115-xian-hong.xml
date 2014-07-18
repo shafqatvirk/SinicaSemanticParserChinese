@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 鲜红 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 颜色))
+				(VP (VA 鲜红)
+				    (PP (P 如)
+					(NP (NN 樱花)))))
+			    (DEC 的)))
+		    (NP (NN 樱花虾)))
+	    (NP-SBJ (ADVP (AD 只有))
+		    (NP (NP-PN (NR 日本)
+			       (NR 骏河湾))
+			(CC 和)
+			(NP (NP-PN (NR 台湾)
+				   (NR 东港))
+			    (NP (NN 外海)))))
+	    (VP (VV 生产))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	颜色 
+	</arg>
+	<arg n="m" f="adv">
+	如 樱花 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

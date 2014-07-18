@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作育 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 raises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 当时))
+	      (QP-SBJ (NP-APP (NN 作秀))
+		      (QP (CD 二)
+			  (CLP (M 字))))
+	      (VP (VC 是)
+		  (NP-PRD (CP-APP (IP (PU 「)
+				      (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 作育)
+					  (NP-OBJ (NN 秀苗)))
+				      (PU 」))
+				  (DEC 的))
+			  (NP (NN 意思))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  秀苗 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

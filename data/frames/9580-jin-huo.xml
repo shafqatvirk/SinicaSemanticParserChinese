@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进货 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity replenishing its stock"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 还是))
+		  (PP-MNR (P 靠著)
+			  (NP (DNP (NP (NN 丈人))
+				   (DEG 的))
+			      (NP (NN 接济))))
+		  (ADVP (AD 才))
+		  (VP (VV 能)
+		      (VP (VP (VV 借票)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 进货))))
+			  (PU ，)
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NN 生意))
+				      (VP (VRD (VV 维持)
+					       (VV 下来))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

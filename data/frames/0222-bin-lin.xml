@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 濒临 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="theme"/>
+    <role argnum="1" argrole="activity"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP (CP (WHNP-1 (-NONE- *OP*))
+          (CP (IP (IP (NP-TPC (-NONE- *T*-1))
+                      (NP-SBJ (NN 资))
+                      (VP (ADVP (AD 不))
+                          (VP (VV 抵)
+                              (NP-OBJ (NN 债)))))
+                  (PU 、)
+                  (IP (NP-SBJ (-NONE- *T*-1))
+                      (VP (VV 濒临)
+                          (NP-OBJ (NN 破产)))))
+              (DEC 的)))
+      (NP (NN 企业))))
+	</parse>
+	<arg n="0"> (*T*-1)->(企业) </arg>
+	<V/>
+	<arg n="1"> 破产 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

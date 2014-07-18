@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扭转 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing turned around"/>
+      <role argnum="2" argrole="area of turn-around"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 尽快))
+			      (VP (VV 扭转)
+				  (NP-OBJ (DP (DT 这)
+					      (QP (CD 一)))
+					  (ADJP (JJ 被动))
+					  (NP (NN 局面)))))))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 中央)
+			  (NN 政府))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (DNP (NP (NT 一九九六)
+								(CC 至)
+								(NT 二０００年))
+							    (DEG 的))
+						       (NP (PU “)
+							   (NT 九五)
+							   (PU ”))
+						       (NP (NN 计划)))
+						   (LC 内)))
+				      (PU ，)
+				      (VP (VV 用)
+					  (PP (P 于)
+					      (NP (NP-PN (NR 西藏))
+						  (NP (NN 公路)
+						      (NN 建设)))))))
+			      (DEC 的)))
+		      (NP (NN 投资)))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 达)
+		      (QP-OBJ (CD 二十三亿)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  这 一 被动 局面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽快 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １９９７年))
+	      (NP-SBJ (NN 世界)
+		      (NN 贸易))
+	      (VP (VP (VV 增长)
+		      (QP-EXT (CD 百分之九点四)))
+		  (PU ，)
+		  (VP (VV 扭转)
+		      (NP-OBJ (NP (NT １９９６年))
+			      (DNP (QP (CD 百分之五点三))
+				   (DEG 的))
+			      (NP (ADJP (JJ 低))
+				  (NP (NN 增长)))
+			      (NP (NN 状态)))))) 
+	  </parse>
+	  <arg n="1">
+	  １９９６年 百分之五点三 的 低 增长 状态 
+	  </arg>
+	  <arg n="2">
+	  世界 贸易 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９９７年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

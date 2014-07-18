@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运输 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing transported"/>
+      <role argnum="2" argrole="goal"/>
+      <role argnum="3" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 二百)
+			      (CLP (M 辆)))
+			  (NP (NN 卡车)))
+		  (VP (PP-DIR (P 向)
+			      (NP (NN 首都)))
+		      (VP (VV 运输)
+			  (NP-OBJ (ADJP (JJ 新鲜))
+				  (NP (NN 蔬菜)))))) 
+	  </parse>
+	  <arg n="0">
+	  二百 辆 卡车 
+	  </arg>
+	  <arg n="1">
+	  新鲜 蔬菜 
+	  </arg>
+	  <arg n="2">
+	  向 首都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-SBJ (NP-PN (NR 江苏)
+				     (NR 苏钢)
+				     (NN 集团)
+				     (NN 公司))
+			      (NP (NN 负责人)))
+		      (VP (VV 介绍))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 苏钢))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (VP (VV 要)
+		      (VP (PP (P 靠)
+			      (NP (ADJP (JJ 大))
+				  (NP (NN 运河))))
+			  (VP (VV 运输)
+			      (NP-OBJ (NN 原料)
+				      (PU 、)
+				      (NN 成品))
+			      (QP-EXT (CD 一百五十万)
+				      (CLP (M 吨)))))))) 
+	  </parse>
+	  <arg n="0">
+	  苏钢 
+	  </arg>
+	  <arg n="1">
+	  原料 、 成品 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一百五十万 吨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  靠 大 运河 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据 江苏 苏钢 集团 公司 负责人 介绍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

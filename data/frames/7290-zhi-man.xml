@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 植满 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 plants"/>
+    <role argnum="2" argrole="place filled with arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-5 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-5))
+				(VP (PP-DIR (P 由)
+					    (NP (NP (NN 市区))
+						(NP-PN (NR 中山路))))
+				    (VP (VV 通往)
+					(UCP-OBJ (NP (CP (WHPP-1 (-NONE- *OP*))
+							 (CP (IP (NP-SBJ (NN 乡民))
+								 (VP (PP-LOC (-NONE- *T*-1))
+								     (NP-TMP (NN 晨昏))
+								     (VP (VV 休闲))))
+							     (DEC 的)))
+						     (NP-PN (NN 河滨)
+							    (NN 公园)))
+						 (PU 、)
+						 (LCP (NP-PN (NR 林边溪))
+						      (LC 畔))))))
+			    (DEC 的)))
+		    (NP (NN 道路)))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 原))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-2))
+					    (IP (IP (NP-SBJ (NN 杂草))
+						    (VP (VV 丛生)))
+						(PU 、)
+						(IP (NP-SBJ (NN 废弃物)
+							    (NN 垃圾))
+						    (VP (ADVP (AD 随意))
+							(VP (VV 倾倒))))))
+					(DEC 的)))
+				(ADJP (JJ 小))
+				(NP (NN 路)))))
+		(PU ，)
+		(VP (PP-MNR (P 经过)
+			    (IP (NP-SBJ (NN 义工))
+				(VP (PP (P 与)
+					(NP (NN 居民)
+					    (PU 、)
+					    (NN 地主)))
+				    (VP (VV 沟通)))))
+		    (PU ，)
+		    (NP-TMP (NT 如今))
+		    (QP-LOC (CD 两)
+			    (CLP (M 旁)))
+		    (VP (VV 植满)
+			(NP-OBJ (NN 向日葵)
+				(PU 、)
+				(NN 马樱丹)))))) 
+	</parse>
+	<arg n="1">
+	向日葵 、 马樱丹 
+	</arg>
+	<arg n="2">
+	*OP* *T*-5 由 市区 中山路 通往 *OP* 乡民 *T*-1 晨昏 休闲 的 河滨 公园 、 林边溪 畔 的 道路 
+	</arg>
+	<arg n="m" f="loc">
+	两 旁 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<arg n="m" f="mnr">
+	经过 义工 与 居民 、 地主 沟通 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

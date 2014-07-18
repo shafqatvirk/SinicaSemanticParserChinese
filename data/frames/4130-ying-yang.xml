@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 营养 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 绿色))
+		      (NP (NN 食品)))
+	      (VP (VC 是)
+		  (VP (VV 指)
+		      (NP-OBJ (DP (DT 那些))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VE 无)
+					      (NP-OBJ (NN 污染))))
+				      (DEC 的)))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VA 安全)
+					      (PU 、)
+					      (VA 优质)
+					      (PU 、)
+					      (VA 营养)))
+				      (DEC 的)))
+			      (NP (NN 食品)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

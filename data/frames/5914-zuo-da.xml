@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 坐大 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 causes to grow larger"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (NN 媒体))
+	    (VP (ADVP (AD 都))
+		(DVP (VP (VV 有意))
+		     (DEV 的))
+		(VP (VV 要)
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (PN 它))
+				(VP (VV 坐大))))))) 
+	</parse>
+	<arg n="0">
+	媒体 
+	</arg>
+	<arg n="1">
+	它 
+	</arg>
+	<arg n="m" f="adv">
+	有意 的 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 担心)
+		    (IP-OBJ (NP-PN-SBJ (NR 亲民党))
+			    (VP (VV 坐大))))) 
+	</parse>
+	<arg n="1">
+	亲民党 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

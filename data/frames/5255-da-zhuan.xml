@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打转 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 所谓))
+		    (NP (NN 共识)))
+	    (VP (ADVP (AD 不过))
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(NP (NN 原地)))
+				(VP (VV 打转))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="loc">
+	在 原地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

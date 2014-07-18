@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="visitor"/>
+      <role argnum="1" argrole="place visited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 江泽民)
+			 (NN 主席))
+	      (VP (ADVP (AD 即将))
+		  (VP (VV 出访)
+		      (NP-PN-OBJ (NR 俄罗斯)
+				 (PU 、)
+				 (NR 乌克兰)
+				 (CC 和)
+				 (NR 法国))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  江泽民 主席 
+	  </arg>
+	  <arg n="1">
+	  俄罗斯 、 乌克兰 和 法国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 特区)
+		      (NN 政府)
+		      (NN 领导人))
+	      (VP (VV 出访)))
+	  </parse>
+	  <arg n="0">
+	  特区 政府 领导人 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

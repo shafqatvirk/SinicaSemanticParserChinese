@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自承 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 admits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-ADV (ADJP (JJ 满))
+					    (NP (NN 头)))
+				    (VP (NP-PRD (NN 华发)))))
+			    (DEC 的)))
+		    (NP (PN 他)))
+	    (VP (VV 自承)
+		(PU ，)
+		(IP-OBJ (IP (NP-SBJ (NN 社会))
+			    (VP (VV 变)
+				(DER 的)
+				(VP-EXT (ADVP (AD 太))
+					(VP (VA 快)))))
+			(PU ，)
+			(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 面对)
+					(NP-OBJ (ADJP (JJ 新))
+						(NP (NN 事务)))))
+			    (PU ，)
+			    (NP-SBJ (DP (DT 每)
+					(CLP (M 个)))
+				    (NP (NN 人)))
+			    (VP (ADVP (AD 都))
+				(ADVP (AD 在))
+				(VP (VV 摸索))))
+			(PU ，)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VE 没有)
+				(IP-OBJ (NP-SBJ (DP (DT 什麽))
+						(NP (NN 人生)
+						    (NN 经验)))
+					(VP (VC 是)
+					    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (-NONE- *T*-2))
+								(VP (VP (VV 足以)
+									(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+										(VP (VV 傲人))))
+								    (PU 、)
+								    (VP (VV 可以)
+									(VP (NP-ADV (NN 世代))
+									    (VP (VV 相传))))))
+							    (DEC 的))))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 满 头 华发 的 他 
+	</arg>
+	<arg n="1">
+	社会 变 的 太 快 ， *PRO* 面对 新 事务 ， 每 个 人 都 在 摸索 ， *pro* 没有 什麽 人生 经验 是 *OP* *T*-2 足以 *PRO* 傲人 、 可以 世代 相传 的 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

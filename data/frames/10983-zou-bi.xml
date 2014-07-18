@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 走避 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 goes to to avoid disaster"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (QP-TMP (NP-PN (NR 民国))
+					(QP (OD 八十三)
+					    (CLP (M 年))))
+				(PU ，)
+				(PP-PRP (P 因)
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 倡导)
+						(IP-OBJ (NP-PN-SBJ (NR 台湾))
+							(VP (VA 独立))))))
+				(VP (MSP 而)
+				    (VP (VV 走避)
+					(NP-OBJ (NN 海外))))))
+			(DEC 的)))
+		(NP-APP (NN 政治)
+			(NN 学者))
+		(NP-PN (NR 彭明敏))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	海外 
+	</arg>
+	<arg n="m" f="prp">
+	因 *PRO* 倡导 台湾 独立 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 八十三 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

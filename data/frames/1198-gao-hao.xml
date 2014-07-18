@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搞好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 保证)
+			      (NP-OBJ (DNP (NP (NN 企业)
+					       (NN 改革))
+					   (DEG 的))
+				      (ADJP (JJ 顺利))
+				      (NP (NN 推进))))))
+	      (PU ，)
+	      (NP-SBJ (NP (DP (DT 各))
+			  (NP (NN 地)))
+		      (CC 和)
+		      (NP (DP (DT 各))
+			  (ADJP (JJ 有关))
+			  (NP (NN 方面))))
+	      (VP (NP-TMP (NT 今年))
+		  (ADVP (AD 将))
+		  (VP (DVP (NP (NN 千方百计))
+			   (DEV 地))
+		      (VP (VV 搞好)
+			  (NP-OBJ (NN 下岗)
+				  (NN 职工)
+				  (NN 安置)
+				  (NN 工作)))))) 
+	  </parse>
+	  <arg n="0">
+	  各 地 和 各 有关 方面 
+	  </arg>
+	  <arg n="1">
+	  下岗 职工 安置 工作 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 *PRO* 保证 企业 改革 的 顺利 推进 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

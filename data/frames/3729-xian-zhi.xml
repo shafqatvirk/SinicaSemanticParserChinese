@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 限制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="restriction imposer"/>
+      <role argnum="1" argrole="restrictions imposed on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (NP (NN 政策)))
+	      (VP (PP-TMP (P 在)
+			  (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 阻碍)
+					      (NP-OBJ (NP (DP (DT 本))
+							  (NP (NN 地)))
+						      (NP (NN 企业)))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 发展)))))
+				      (DEC 的))
+			      (NP (NN 同时))))
+		  (PU ，)
+		  (ADVP (AD 也))
+		  (VP (VV 限制)
+		      (AS 了)
+		      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 外商))
+					  (VP (PP (-NONE- *T*-1))
+					      (VP (VV 投资)
+						  (NP-PN-OBJ (NR 台湾)))))
+				      (DEC 的)))
+			      (NP (NN 意愿)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  这 一 政策 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  在 *PRO* 阻碍 本 地 企业 *PRO* 发展 的 同时 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* 外商 (*T*-1)->(意愿) 投资 台湾 的 意愿 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="restriction imposer"/>
+      <role argnum="1" argrole="person restriction is imposed on"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 当局)))
+	      (VP (VV 说)
+		  (IP-OBJ (NP-SBJ (PU “)
+				  (NN 戒急用忍)
+				  (PU ”))
+			  (VP (VP-PRD (VC 是)
+				      (VP (VV 限制)
+					  (NP-OBJ (ADJP (JJ 大型))
+						  (NP (NN 企业)))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 赴)
+						      (NP-OBJ (NN 祖国)
+							      (NN 大陆)))
+						  (VP (VV 投资))))))
+			      (PU ，)
+			      (VP (PP-DIR (P 对)
+					  (NP (NN 中小企业)))
+				  (ADVP (AD 并))
+				  (VP (VE 无)
+				      (NP-OBJ (NN 影响)))))))) 
+	  </parse>
+	  <arg n="0">
+	  “ 戒急用忍 ” 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  大型 企业 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 赴 祖国 大陆 投资 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 草案))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 提出)
+		      (IP-OBJ (NP-SBJ (NN 国家))
+			      (VP (VV 要)
+				  (VP (VP (VV 禁止)
+					  (IP-OBJ (-NONE- *RNR*-1)))
+				      (PU 、)
+				      (VP (VV 限制)
+					  (IP-OBJ-1 (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 出口)
+							(NP-OBJ (ADJP (JJ 珍贵))
+								(NP (NN 木材)))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国家 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *PRO* 出口 珍贵 木材 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 送来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="sender"/>
+    <role argnum="1" argrole="entity arg0 sends"/>
+    <role argnum="2" argrole="place arg1 is sent to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP-PN (NR 北埔))
+				  (DEG 的))
+			     (ADJP (JJ 跨年))
+			     (NP (NN 晚会)))
+			 (LC 上)))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 石冈))
+			    (NP (NN 乡长)))
+		    (NP-PN (NR 谢震颖)))
+	    (VP (VP (VV 送来)
+		    (AS 了)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 份)))
+			    (NP (NN 礼物))))
+		(PU ，)
+		(VP (VV 答谢)
+		    (NP-OBJ (DNP (NP (NP-PN (NR 北埔))
+				     (NP (NN 乡民)))
+				 (DEG 的))
+			    (ADJP (JJ 大))
+			    (NP (NN 爱)))))) 
+	</parse>
+	<arg n="0">
+	石冈 乡长 谢震颖 
+	</arg>
+	<arg n="1">
+	一 份 礼物 
+	</arg>
+	<arg n="m" f="loc">
+	在 北埔 的 跨年 晚会 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (QP-TMP (CD 十)
+				     (CLP (M 岁)))
+			     (VP (VV 送来)
+				 (NP-OBJ (NP-PN (NR 吴))
+					 (NP (NN 家))))))
+		     (LC 後))
+	    (PU ，)
+	    (QP-TMP (ADVP (AD 不到))
+		    (QP (CD 半)
+			(CLP (M 年))))
+	    (PU ，)
+	    (NP-SBJ (NN 养父母))
+	    (VP (ADVP (AD 竟))
+		(ADVP (AD 双双))
+		(VP (VV 亡故)))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	吴 家 
+	</arg>
+	<arg n="m" f="tmp">
+	十 岁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

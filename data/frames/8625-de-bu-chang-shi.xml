@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得不偿失 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing in doing which arg0 loses more than gains"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 此)
+			  (QP (CD 一)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 看似)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (PU 「)
+						  (VCD (VV 除旧)
+						       (VV 更新))
+						  (PU 」)))))
+			      (DEC 的)))
+		      (NP (NN 政策)))
+	      (PU ，)
+	      (VP (ADVP (AD 却))
+		  (VP (VV 让)
+		      (NP-OBJ (NN 居民))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 得不偿失))
+			      (PU ，)
+			      (VP (VP-FOC (VV 後悔))
+				  (VP (VV 不已)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

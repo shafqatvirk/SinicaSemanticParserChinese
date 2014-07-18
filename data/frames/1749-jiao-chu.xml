@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing given up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 随着)
+		      (NP (DNP (NP (NN 卫冕))
+			       (DEG 的))
+			  (NP (NN 失败))))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (ADJP (JJ 老))
+			      (NP (NN 教头)))
+		      (NP-PN (NR 扎加洛)))
+	      (VP (NP-TMP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 回国)))
+			       (LC 后))
+			  (NP (NT 不久)))
+		  (ADVP (AD 便))
+		  (VP (VV 交出)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 国家队))
+				   (DEG 的))
+			      (NP (NN 教鞭)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  老 教头 扎加洛 
+	  </arg>
+	  <arg n="1">
+	  国家队 的 教鞭 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随着 卫冕 的 失败 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 回国 后 不久 
+	  </arg>
+	  <arg n="m" f="adv">
+	  便 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

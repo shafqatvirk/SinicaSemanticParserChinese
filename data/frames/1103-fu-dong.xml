@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 浮动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="range"/>
+      <role argnum="2" argrole="start poing"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 改进)
+		      (NP-OBJ (NN 棉花)
+			      (NN 供应)
+			      (NN 办法)))
+		  (PU ，)
+		  (VP (VV 允许)
+		      (NP-OBJ (NN 价格))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 浮动)
+			      (QP-EXT (CD 百分之六))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  百分之六 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

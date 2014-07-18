@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关闭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (ADVP (AD 已))
+		      (PP-LOC (P 在)
+			      (NP (NP-PN (NR 太湖))
+				  (NP (NN 流域))))
+		      (VP (VV 关闭)
+			  (NP-OBJ (QP (CD 一百四十余)
+				      (CLP (M 家)))
+				  (NP (NN 污染)
+				      (NN 企业)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 太湖 流域 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一百四十余 家 污染 企业 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NN 新闻)
+			     (NN 广播)
+			     (NN 中心))
+		  (VP (NP-TMP (NT 星期三))
+		      (VP (VV 关闭)))) 
+	  </parse>
+	  <arg n="1">
+	  新闻 广播 中心 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  星期三 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

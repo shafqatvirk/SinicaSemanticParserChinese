@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夹击 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="attacker"/>
+    <role argnum="1" argrole="entity arg0 attacks on both sides"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-55 (NP-SBJ (DNP (NP (ADJP (JJ 小))
+				    (NP (NN 市镇)))
+				(DEG 的))
+			   (NP (NN 阿公)
+			       (NN 阿妈))
+			   (NP (NN 店)))
+		   (VP (VP (VV 首当其冲))
+		       (PU ，)
+		       (VP (LB 被)
+			   (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				   (IP (NP-SBJ (NN 超市)
+					       (PU 、)
+					       (NN 便利)
+					       (NN 商店)
+					       (PU 、)
+					       (NN 量贩)
+					       (NN 店))
+				       (VP (NP-ADV (NN 左右))
+					   (VP (VV 夹击)
+					       (NP-OBJ (-NONE- *T*-1))))))))) 
+	</parse>
+	<arg n="0">
+	超市 、 便利 商店 、 量贩 店 
+	</arg>
+	<arg n="1">
+	小 市镇 的 阿公 阿妈 店 
+	</arg>
+	<arg n="m" f="adv">
+	左右 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-LOC (IP (NP-SBJ (NN 内外))
+			 (VP (VV 夹击)))
+		     (LC 下))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (IP (NP-TPC (-NONE- *T*-1))
+				    (NP-SBJ (NN 劳力))
+				    (VP (VA 密集)))
+				(PU 、)
+				(IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 需要)
+					(NP-OBJ (QP (CD 大量))
+						(NP (NN 车缝)
+						    (NN 工人))))))
+			    (DEC 的)))
+		    (NP (NN 成衣业)))
+	    (VP (DVP (CLP (CLP (ADJP (JJ 整))
+			       (CLP (M 批)))
+			  (CLP (ADJP (JJ 整))
+			       (CLP (M 批))))
+		     (DEV 地))
+		(VP (VP (VV 关厂))
+		    (PU ，)
+		    (VP (VV 移往)
+			(NP-OBJ (NP (NN 大陆))
+				(CC 及)
+				(NP-PN (NR 东南亚))))))) 
+	</parse>
+	<arg n="0">
+	内外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

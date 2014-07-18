@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 亡故 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person passing away"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (QP-TMP (CD 十)
+				     (CLP (M 岁)))
+			     (VP (VV 送来)
+				 (NP-OBJ (NP-PN (NR 吴))
+					 (NP (NN 家))))))
+		     (LC 後))
+	    (PU ，)
+	    (QP-TMP (ADVP (AD 不到))
+		    (QP (CD 半)
+			(CLP (M 年))))
+	    (PU ，)
+	    (NP-SBJ (NN 养父母))
+	    (VP (ADVP (AD 竟))
+		(ADVP (AD 双双))
+		(VP (VV 亡故)))) 
+	</parse>
+	<arg n="0">
+	养父母 
+	</arg>
+	<arg n="m" f="adv">
+	双双 
+	</arg>
+	<arg n="m" f="adv">
+	竟 
+	</arg>
+	<arg n="m" f="tmp">
+	不到 半 年 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 十 岁 送来 吴 家 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

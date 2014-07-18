@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 扯上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity agr0 draws in"/>
+    <role argnum="2" argrole="entity arg1 is drawn into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (NN 三通))
+		(VP (ADVP (AD 不))
+		    (VP (VV 必)
+			(VP (VV 扯上)
+			    (NP-OBJ (DNP (NP (NN 统)
+					     (NN 独))
+					 (DEG 之))
+				    (NP (NN 争))))))) 
+	</parse>
+	<arg n="2">
+	三通 
+	</arg>
+	<arg n="1">
+	统 独 之 争 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

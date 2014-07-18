@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运转 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 结果))
+	      (VP (VV 表明)
+		  (IP-OBJ (NP-SBJ (NP (PN 其))
+				  (NP (NN 电脑)
+				      (NN 系统)))
+			  (VP (PP-TMP (P 在)
+				      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+					       (VP (VV 进入)
+						   (NP-OBJ (NT ２０００年))))
+					   (LC 时)))
+			      (ADVP (AD 将))
+			      (VP (VV 会)
+				  (VP (ADVP (AD 正常))
+				      (VP (VV 运转)))))))) 
+	  </parse>
+	  <arg n="0">
+	  其 电脑 系统 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 进入 ２０００年 时 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-SBJ (NN 专家))
+		      (VP (VV 介绍))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 木星))
+	      (VP (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (LCP-LOC (NP (NN 太阳系))
+						       (LC 中))
+					      (ADVP (AD 最))
+					      (VP (VA 大))))
+				      (DEC 的)))
+			      (QP (CD 一)
+				  (CLP (M 颗)))
+			      (NP (NN 行星))))
+		  (PU ，)
+		  (VP (IP-ADV (NP-SBJ (-NONE- *pro*))
+			      (VP (PP (P 与)
+				      (NP (NN 地球)))
+				  (VP (VA 一样))))
+		      (VP (VV 环绕)
+			  (NP-OBJ (NN 太阳)))
+		      (VP (VV 运转))))) 
+	  </parse>
+	  <arg n="0">
+	  木星 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *pro* 与 地球 一样 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据 专家 介绍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

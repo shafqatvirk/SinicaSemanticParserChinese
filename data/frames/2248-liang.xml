@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亮 </id>
+    <frameset id="f1" edef="light up">
+      <role argnum="0" argrole="thing lit up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-LOC (NP (NN 村))
+			   (LC 里))
+		  (VP (VRD (VV 亮)
+			   (VV 起))
+		      (NP-OBJ (NN 电灯))))) 
+	  </parse>
+	  <arg n="0">
+	  电灯 
+	  </arg>
+	  <arg n="m" f="loc">
+	  村 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="bright">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

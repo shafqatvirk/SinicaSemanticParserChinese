@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 借牌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="borrower"/>
+    <role argnum="1" argrole="lender"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (IP (NP-SBJ (NN 辅导金))
+			    (VP (VV 规定)
+				(IP-OBJ (NP-SBJ (QP (CD 一)
+						    (CLP (M 家)))
+						(NP (NN 电影)
+						    (NN 公司)))
+					(VP (ADVP (AD 只))
+					    (VP (VV 能)
+						(VP (VV 申请)
+						    (NP-OBJ (QP (CD 两)
+								(CLP (M 部)))
+							    (NP (NN 影片)))))))))
+			(PU ，)
+			(IP (NP-TMP (NT 当时))
+			    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-PN-SBJ (NR 中影))
+						(VP (NP-MNR (-NONE- *T*-1))
+						    (VP (VV 申请)
+							(NP-OBJ (NN 辅导金)))))
+					    (DEC 的)))
+				    (NP (NN 名额)))
+			    (VP (ADVP (AD 已))
+				(VP (VA 满))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 於是))
+		(ADVP (AD 就))
+		(PP-DIR (P 向)
+			(NP (NP-PN-APP (NR 春晖)
+				       (PU 、)
+				       (NR 台影))
+			    (QP (CD 两)
+				(CLP (M 家)))
+			    (NP (NN 同业))))
+		(VP (PU 「)
+		    (VV 借牌)
+		    (PU 」)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	向 春晖 、 台影 两 家 同业 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	於是 
+	</arg>
+	<arg n="m" f="prp">
+	由於 辅导金 规定 一 家 电影 公司 只 能 申请 两 部 影片 ， 当时 *OP* 中影 *T*-1 申请 辅导金 的 名额 已 满 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 一九九七年))
+	    (NP-SBJ (NP (NN 电影界))
+		    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VCD (PU 「)
+					 (VV 借牌)
+					 (VV 靠行)
+					 (PU 」))))
+			    (DEC 的))
+		    (NP (NN 纷争)))
+	    (VP (ADVP (AD 正式))
+		(VP (VV 上)
+		    (AS 了)
+		    (NP-OBJ (NN 台面))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

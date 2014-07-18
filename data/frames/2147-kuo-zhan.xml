@@ -1,0 +1,162 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扩展 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity expanded"/>
+      <role argnum="2" argrole="source"/>
+      <role argnum="3" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 北约))
+	      (VP (PP-LOC (P 在)
+			  (NP (NP-PN (NR 中亚))
+			      (CC 和)
+			      (NP (NP (ADJP (JJ 原))
+				      (NP-PN (NR 苏联)))
+				  (DP (DT 其他))
+				  (NP (NN 地区)))))
+		  (VP (VV 扩展)
+		      (NP-OBJ (NN 影响))))) 
+	  </parse>
+	  <arg n="0">
+	  北约 
+	  </arg>
+	  <arg n="1">
+	  影响 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 中亚 和 原 苏联 其他 地区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 迄今))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 可)
+				      (VP (VV 经营)
+					  (NP-OBJ (NN 人民币)
+						  (NN 业务)))))
+			      (DEC 的)))
+		      (NP (NN 外资)
+			  (NN 银行)))
+	      (VP (ADVP (AD 已))
+		  (VP (VRD (VV 扩展)
+			   (VV 到))
+		      (QP-OBJ (CD 九)
+			      (CLP (M 家)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 可 经营 人民币 业务 的 外资 银行 
+	  </arg>
+	  <arg n="3">
+	  九 家 
+	  </arg>
+	  <arg n="m" f="adv">
+	  迄今 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 招商)
+		      (NN 范围))
+	      (VP (PP-DIR (P 由)
+			  (NP (NN 周边)
+			      (NN 国家)))
+		  (VP (VRD (VV 扩展)
+			   (VV 到))
+		      (NP-OBJ (NP-PN-APP (NR 欧)
+					 (NR 美)
+					 (PU 、)
+					 (NR 东南亚)
+					 (PU 、)
+					 (NR 西亚)
+					 (PU 、)
+					 (NR 中东)
+					 (ETC 等))
+			      (QP (ADVP (AD 近))
+				  (QP (CD 一百)
+				      (CLP (M 个))))
+			      (NP (NN 国家)
+				  (CC 和)
+				  (NN 地区)))))) 
+	  </parse>
+	  <arg n="1">
+	  招商 范围 
+	  </arg>
+	  <arg n="2">
+	  由 周边 国家 
+	  </arg>
+	  <arg n="3">
+	  欧 美 、 东南亚 、 西亚 、 中东 等 近 一百 个 国家 和 地区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 其))
+		      (NP (NN 销售)
+			  (NN 市场)))
+	      (VP (ADVP (AD 已))
+		  (PP-DIR (P 从)
+			  (NP (NP (NN 国内))
+			      (CC 和)
+			      (NP-PN (NR 东南亚))))
+		  (VP (VV 扩展)
+		      (NP-OBJ (NP-PN (NR 欧)
+				     (NR 美))
+			      (QP (CD 许多))
+			      (NP (NN 国家)))))) 
+	  </parse>
+	  <arg n="1">
+	  其 销售 市场 
+	  </arg>
+	  <arg n="2">
+	  从 国内 和 东南亚 
+	  </arg>
+	  <arg n="3">
+	  欧 美 许多 国家 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

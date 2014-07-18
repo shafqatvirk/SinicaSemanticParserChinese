@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 分段 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 divides into sections"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (PP-LOC (P 在)
+			    (LCP (NP (NN 制作))
+				 (LC 上)))
+		    (VP (VE 有)
+			(AS 著)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (PP-ADV (P 和)
+							(NP (NP-PN (NR 殷商))
+							    (NP (NN 鼎)
+								(PU 、)
+								(NN 尊类))
+							    (NP (NN 铜器))))
+						(ADVP (AD 大))
+						(ADVP (AD 不))
+						(VP (VA 相同))))
+					(DEC 的)))
+				(NP (NN 技术)))))
+		(PU ，)
+		(VP (VV 必须)
+		    (VP (PP-MNR (P 以)
+				(NP (ADJP (JJ 复杂))
+				    (IP-APP (NP-SBJ (-NONE- *PRO*))
+					    (VP (PU 「)
+						(VP (VV 分段))
+						(VP (VV 铸造))
+						(PU 」)))
+				    (NP (NN 技术))))
+			(VP (MSP 来)
+			    (VP (VV 完成))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

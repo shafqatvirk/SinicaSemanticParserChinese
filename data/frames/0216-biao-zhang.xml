@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 表彰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="party giving praise"/>
+    <role argnum="1" argrole="party receiving praise"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-HLN (IP (NP-SBJ (QP (CD 百)
+                          (CLP (M 家)))
+                      (NP (NN 乡镇)
+                          (NN 企业)))
+              (VP (VV 重视)
+                  (NP-OBJ (NN 思想)
+                          (NN 政治)
+                          (NN 工作))))
+          (IP (NP-SBJ (NP-PN (NR 中宣部))
+                      (NP-PN (NR 农业部)))
+              (VP (ADVP (AD 联合))
+                  (VP (VV 表彰))))
+          (IP (NP-SBJ (NP-PN (NR 李瑞环))
+                      (ETC 等))
+              (VP (VV 颁奖)))))
+	</parse>
+	<arg n="0"> 中宣部 农业部 </arg>
+	<arg n="M" f="ADV"> 联合 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 罚款 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="fine levier"/>
+      <role argnum="1" argrole="party fined"/>
+      <role argnum="2" argrole="fined amount"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 了解)))
+	      (PU ，)
+	      (PP-MNR (P 根据)
+		      (NP (NP (DNP (NP (NN 群众))
+				   (DEG 的))
+			      (NP (NN 举报)
+				  (CC 和)
+				  (NN 暗访)))
+			  (NP (NN 结果))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 北京市)
+			 (NN 公费)
+			 (NN 医疗)
+			 (NN 管理)
+			 (NN 委员会))
+	      (VP (PP-DIR (P 对)
+			  (NP (QP (CD 四)
+				  (CLP (M 所)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 超出)
+					      (NP-OBJ (NP (ADJP (JJ 人均))
+							  (NP (NN 医疗)
+							      (NN 支出)))
+						      (NP (NN 控制)
+							  (NN 指标)))))
+				      (DEC 的)))
+			      (NP (NN 医院))))
+		  (VP (VV 罚款)
+		      (QP-OBJ (CD 三十八万)
+			      (CLP (M 元)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  北京市 公费 医疗 管理 委员会 
+	  </arg>
+	  <arg n="1">
+	  对 四 所 *OP* *T*-1 超出 人均 医疗 支出 控制 指标 的 医院 
+	  </arg>
+	  <arg n="2">
+	  三十八万 元 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 群众 的 举报 和 暗访 结果 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-6 (-NONE- *OP*))
+		  (CP (IP (NP-TPC (-NONE- *T*-6))
+			  (NP-SBJ (NN 群众))
+			  (VP (VRD (VV 反映)
+				   (VA 强烈))))
+		      (DEC 的)))
+	      (CP (WHNP-7 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-7))
+			  (VP (VP (ADVP (AD 乱))
+				  (VP (VV 涨价)))
+			      (PU 、)
+			      (VP (ADVP (AD 乱))
+				  (VP (VV 收费)))
+			      (PU 、)
+			      (VP (ADVP (AD 乱))
+				  (VP (VV 罚款)))))
+		      (DEC 的)))
+	      (NP (NN 部门)
+		  (CC 和)
+		  (NN 单位)))
+	  </parse>
+	  <arg n="0">
+	  *T*-7 
+	  </arg>
+	  <arg n="m" f="adv">
+	  乱 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

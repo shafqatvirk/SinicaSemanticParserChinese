@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 为止 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 stops"/>
+    <role argnum="2" argrole="time arg1 stops"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-DIR (P 至)
+			(IP (NP-SBJ (PN 其))
+			    (VP (VV 成年))))
+		(VP (VV 为止)))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	至 其 成年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 包括)
+			(NP-OBJ (NP (DNP (NP (NN 产业))
+					 (DEG 的))
+				    (NP (NN 复苏)))
+				(CC 和)
+				(NP (DNP (NP (NN 心灵))
+					 (DEG 的))
+				    (NP (NN 重建))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 必须)
+		(VP (VP (VV 做到)
+			(IP-SBJ (NP-SBJ (NP (DNP (NP (QP (ADJP (JJ 最後))
+							 (QP (CD 一)))
+						     (NP (NN 人)))
+						 (DEG 的))
+					    (NP (NN 照顾)))
+					(PU 、)
+					(NP (DNP (NP (QP (ADJP (JJ 最後))
+							 (QP (CD 一)))
+						     (NP (NN 处)))
+						 (DEG 的))
+					    (NP (NN 重建))))
+				(VP (VV 完成))))
+		    (VP (VV 为止))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 包括 产业 的 复苏 和 心灵 的 重建 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逼迫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 forces arg1 to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 美国))
+		  (VP (ADVP (AD 必然))
+		      (VP (VV 会)
+			  (VP (VV 逼迫)
+			      (NP-PN-OBJ (NR 日本))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 开放)
+				      (NP-OBJ (NN 牛肉)
+					      (NN 市场)))))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 
+	  </arg>
+	  <arg n="1">
+	  日本 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 开放 牛肉 市场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  必然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

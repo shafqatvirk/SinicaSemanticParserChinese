@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 判别 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 judges and tells"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 肠)
+			(NN 病毒))
+		    (NP (NN 检测)
+			(NN 晶片)))
+	    (VP (VV 可以)
+		(VP (VRD (VV 判别)
+			 (VV 出))
+		    (IP-OBJ (IP-Q (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP-WH (AD 是否))
+				      (VP (VV 感染)
+					  (NP-OBJ (NN 肠)
+						  (NN 病毒)))))
+			    (PU ？)
+			    (IP-Q (NP-SBJ (-NONE- *pro*))
+				  (VP (VNV-WH (VC 是)
+					      (AD 不)
+					      (VC 是))
+				      (QP-PRD (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VA 致命)))
+						      (DEC 的)))
+					      (NP (NN 肠)
+						  (NN 病毒))
+					      (QP (OD 七十一)
+						  (CLP (M 型))))))
+			    (PU ？)
+			    (IP-Q (NP-SBJ (-NONE- *pro*))
+				  (VP (VNV-WH (VC 是)
+					      (AD 不)
+					      (VC 是))
+				      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (ADVP (AD 容易))
+							      (PP (P 与)
+								  (QP (NP (NN 肠)
+									  (NN 病毒))
+								      (QP (OD 七十一)
+									  (CLP (M 型)))))
+							      (VP (VV 混淆))))
+						      (DEC 的)))
+					      (NP-PN (NR 沙克奇))
+					      (ADJP (JJ A16))
+					      (NP (NN 病毒))))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 是否 感染 肠 病毒 ？ *pro* 是 不 是 *OP* *T*-1 致命 的 肠 病毒 七十一 型 ？ *pro* 是 不 是 *OP* *T*-2 容易 与 肠 病毒 七十一 型 混淆 的 沙克奇 A16 病毒 
+	</arg>
+	<arg n="2">
+	肠 病毒 检测 晶片 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

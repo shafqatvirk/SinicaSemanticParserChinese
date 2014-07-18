@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 捻起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 takes up with fingers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 捻起)
+		      (NP-OBJ (QP (CD 几)
+				  (CLP (M 片)))
+			      (NP (NN 包种)
+				  (NN 茶叶))))
+		  (PU ，)
+		  (VP (VV 散)
+		      (PP (P 在)
+			  (LCP (NP (NN 瓷杯))
+			       (LC 中)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  几 片 包种 茶叶 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 不多 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 不过))
+	      (NP-ADV (NN 其中))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 属於)
+				      (NP-OBJ (NP (PU 「)
+						  (NN 发明)
+						  (PU 」))
+					      (NP (NN 型)))))
+			      (DEC 的)))
+		      (ADJP (JJ 原创式))
+		      (NP (NN 专利)))
+	      (VP (VA 不多))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 属於 「 发明 」 型 的 原创式 专利 
+	  </arg>
+	  <arg n="m" f="loc">
+	  其中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不过 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 四顾 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity looking around"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (NN 人))
+		    (VP (VV 到)
+			(NP-OBJ (NN 中年)
+				(NN 十字)
+				(NN 路口))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP-FOC (VV 四顾))
+			(VP (VA 茫然))))
+	    (VP (VC 是)
+		(NP-PRD (CP (NP-1 (-NONE- *PRO*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VA 必然)))
+				(DEC 的)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

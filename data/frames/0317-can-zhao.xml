@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 参照 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="benchmark"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 同时))
+      (PU ，)
+      (NP-SBJ (NN 国家)
+              (NN 税务)
+              (NN 部门))
+      (VP (VV 参照)
+          (NP-OBJ (NN 国际)
+                  (NN 惯例)))))
+	</parse>
+	<arg n="M" f="ADV"> 同时 </arg>
+	<arg n="0"> 国家 税务 部门 </arg>
+	<V/>
+	<arg n="1"> 国际 惯例 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

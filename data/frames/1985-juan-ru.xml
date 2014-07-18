@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 卷入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity embroiled"/>
+      <role argnum="2" argrole="thing arg1 is embroiled in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 那时))
+	      (NP-SBJ (PN 谁))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 不))
+		  (VP (VV 知道)
+		      (IP-OBJ (NP-PN-SBJ (NR 韩国))
+			      (VP (ADVP (AD 即将))
+				  (VP (VV 卷入)
+				      (NP-OBJ (NN 金融)
+					      (NN 风暴)))))))) 
+	  </parse>
+	  <arg n="1">
+	  韩国 
+	  </arg>
+	  <arg n="2">
+	  金融 风暴 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

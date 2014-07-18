@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自叹弗如 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 admits it is not as good as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP (PN 其))
+		      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 付款)))
+			      (DEC 的))
+		      (ADJP (JJ 爽快))
+		      (NP (NN 风格)))
+	      (PU ，)
+	      (NP-SBJ (ADVP (AD 连))
+		      (NP (NN 本地)
+			  (NN 白人)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 自叹弗如)))) 
+	  </parse>
+	  <arg n="0">
+	  连 本地 白人 
+	  </arg>
+	  <arg n="1">
+	  其 *PRO* 付款 的 爽快 风格 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

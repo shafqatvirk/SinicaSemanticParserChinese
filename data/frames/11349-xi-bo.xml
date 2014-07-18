@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 稀薄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (LCP (NP (NN 墙))
+			 (LC 上))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 日益))
+				    (VP (VA 稀薄))))
+			    (DEC 的)))
+		    (NP (NN 历纸)))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (DNP (LCP (NP (NN 橱窗))
+					  (LC 中))
+				     (DEG 的))
+				(NP (NN 古玩)))
+			(VP (VRD (VV 擦拭)
+				 (VV 出))
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 种)))
+				    (DNP (NP (PU 「)
+					     (NN 时间)
+					     (PU 」))
+					 (DEG 的))
+				    (NP (NN 亮度))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	日益 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

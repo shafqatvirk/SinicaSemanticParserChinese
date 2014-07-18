@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 荣膺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing received"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 萨米·索萨))
+	      (VP (VP (ADVP (AD 长年))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 美国)))
+		      (VP (VV 参加)
+			  (NP-OBJ (NN 棒球)
+				  (NN 职业赛))))
+		  (PU ，)
+		  (VP (VV 荣膺)
+		      (NP-OBJ (NP (NP (DP (DT 本))
+				      (NP (NN 赛季)))
+				  (NP (PU “)
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 最))
+						  (VP (VE 有)
+						      (NP-OBJ (NN 价值))))))
+				      (NP (NN 球员))
+				      (PU ”)))
+			      (NP (NN 称号)))))) 
+	  </parse>
+	  <arg n="0">
+	  萨米·索萨 
+	  </arg>
+	  <arg n="1">
+	  本 赛季 “ *OP* *T*-1 最 有 价值 球员 ” 称号 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

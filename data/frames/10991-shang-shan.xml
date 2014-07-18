@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上山 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person going up the mountain"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 後来))
+	    (NP-PN-SBJ (NR 邓相扬))
+	    (VP (VV 邀)
+		(NP-OBJ (PN 他))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 一起))
+			(VP (VP (VV 上山))
+			    (VP (VV 访问)
+				(NP-OBJ (NN 老人家)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一起 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

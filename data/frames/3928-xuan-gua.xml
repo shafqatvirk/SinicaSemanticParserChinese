@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 悬挂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing hung"/>
+      <role argnum="2" argrole="location arg1 is hung"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 改为)
+	      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 悬挂)
+			  (NP-OBJ (UCP-APP (NP (ADJP (JJ 青))
+					       (NP (NN 天)))
+					   (NP (ADJP (JJ 白))
+					       (NP (NN 日)))
+					   (IP (NP-SBJ (ADJP (JJ 满))
+						       (NP (NN 地)))
+					       (VP (VA 红))))
+				  (NP (NN 国旗)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  青 天 白 日 满 地 红 国旗 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

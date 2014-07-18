@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跳脱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 jumps off from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 质疑)
+		(IP-OBJ (NP-SBJ (ADJP (JJ 新))
+				(NP (NN 政府)))
+			(VP (ADVP (AD 未))
+			    (VP (VV 跳脱)
+				(NP-OBJ (NP (ADJP (JJ 旧))
+					    (NP (NN 政府)))
+					(DNP (NP (PU 「)
+						 (NN 金钱)
+						 (NN 外交)
+						 (PU 」))
+					     (DEG 的))
+					(NP (NN 模式)))))))) 
+	</parse>
+	<arg n="0">
+	新 政府 
+	</arg>
+	<arg n="1">
+	旧 政府 「 金钱 外交 」 的 模式 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (VV 必须)
+		(VP (PP-LOC (P 从)
+			    (LCP (NP (CP-APP (IP (PU 「)
+						 (NP-SBJ (NN 经济)
+							 (NN 发展))
+						 (VP (VV 至上))
+						 (PU 」))
+					     (DEC 的))
+				     (NP (NN 迷思)))
+				 (LC 中)))
+		    (VP (VV 跳脱))))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	从 「 经济 发展 至上 」 的 迷思 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

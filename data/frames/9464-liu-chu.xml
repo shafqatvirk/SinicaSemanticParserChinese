@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place arg0 flows out of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 重油))
+	      (VP (PP-DIR (P 由)
+			  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (VV 搁浅)))
+					   (DEC 的)))
+				   (NP-PN (NR 阿玛斯号))
+				   (NP (NN 船)))
+			       (LC 上)))
+		  (ADVP (AD 源源))
+		  (VP (VV 流出)))) 
+	  </parse>
+	  <arg n="0">
+	  重油 
+	  </arg>
+	  <arg n="1">
+	  由 *OP* *T*-1 搁浅 的 阿玛斯号 船 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  源源 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

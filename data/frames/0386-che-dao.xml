@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撤到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="causer"/>
+    <role argnum="1" argrole="withdrawer"/>
+    <role argnum="2" argrole="location withdrawing to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (PP-PRP (P 由于)
+                  (IP (NP-SBJ (NP-PN (NR 塞拉利昂))
+                              (NP (NN 局势)))
+                      (VP (ADVP (AD 日趋))
+                          (VP (VA 紧张)))))
+          (PU ，)
+          (NP-PN-SBJ (NR 联合国))
+          (VP (ADVP (AD 已))
+              (VP (VV 决定)
+                  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                          (VP (BA 将)
+                              (IP-OBJ (NP-SBJ (QP (ADVP (AD 大约))
+                                                  (QP (CD ４０)
+                                                      (CLP (M 名))))
+                                              (NP (NN 工作)
+                                                  (NN 人员)))
+                                      (VP (VV 撤到)
+                                          (NP-OBJ (DNP (NP (NN 临近))
+                                                       (DEG 的))
+                                                  (NP-PN (NR 几内亚)))))))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="1"> 大约 ４０ 名 工作 人员 </arg>
+	<V/>
+	<arg n="2"> 临近 的 几内亚 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

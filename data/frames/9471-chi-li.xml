@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吃力 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 feels difficult"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 从))
+				      (ADVP (AD 未))
+				      (VP (VV 接触)
+					  (NP-OBJ (NN 英文)))))
+			      (DEC 的)))
+		      (NP (NN 孩子)))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 觉得)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 很))
+				  (VP (VV 吃力))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

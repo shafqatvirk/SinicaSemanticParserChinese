@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 积 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="accumulator"/>
+      <role argnum="1" argrole="thing accumulated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (DNP (NP-PN (NR 印尼))
+				   (DEG 的))
+			      (NP (NN 国际)
+				  (NN 大师)))
+		      (NP-PN (NR 韩多哥)))
+	      (VP (VP (NP-TMP (NT 今天))
+		      (PP-LOC (P 在)
+			      (LCP (NP (DNP (NP (NP (NN 国际)
+						    (NN 象棋))
+						(NP (NP (NN 国际))
+						    (ADJP (JJ 特级))
+						    (NP (NN 大师)))
+						(NP (NN 邀请赛)))
+					    (DEG 的))
+				       (QP (OD 第十)
+					   (CLP (M 轮)))
+				       (NP (NN 比赛)))
+				   (LC 中)))
+		      (PU ，)
+		      (VP (VV 战胜)
+			  (AS 了)
+			  (NP-OBJ (NP-APP (NN 同胞))
+				  (NP-PN (NR 阿迪安多)))))
+		  (PU ，)
+		  (VP (VV 积)
+		      (QP-OBJ (CD ６)
+			      (CLP (M 分))))
+		  (VP (VV 居)
+		      (NP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (VV 参赛))))
+				       (NP (NN 队员)))
+				   (DEG 之))
+			      (NP (NN 首)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  印尼 的 国际 大师 韩多哥 	  
+	  </arg>
+	  <arg n="1">
+	  ６ 分 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

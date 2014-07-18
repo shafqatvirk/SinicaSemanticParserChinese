@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 够 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="enough for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 基础)
+		      (NN 知识))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 够)))) 
+	  </parse>
+	  <arg n="0">
+	  基础 知识 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 否认)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (LCP (NP (NN 轨道站))
+						   (LC 上))
+					      (NP (NN 食品)
+						  (NN 储备)))
+				      (VP (ADVP (AD 只))
+					  (VP (VV 够)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 维持)
+							  (QP-OBJ (CD １０)
+								  (CLP (M 天))))))))
+				  (DEC 的))
+			  (NP (NN 说法))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  轨道站 上 食品 储备 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 维持 １０ 天 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 印制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing printed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (NP (NN 欧元区))
+					  (DP (DT 各))
+					  (NP (NN 中央)
+					      (NN 银行)))
+				  (VP (VV 印制)
+				      (NP-OBJ (NP (NN 欧元))
+					      (NP (NN 纸币)
+						  (CC 和)
+						  (NN 硬币)))))
+			      (DEC 的))
+		      (NP (NN 工作)))
+	      (VP (ADVP (AD 正在))
+		  (ADVP (AD 加紧))
+		  (VP (VV 进行)))) 
+	  </parse>
+	  <arg n="0">
+	  欧元区 各 中央 银行 
+	  </arg>
+	  <arg n="1">
+	  欧元 纸币 和 硬币 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

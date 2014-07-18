@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跑好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 goes and collects well"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 跑好)
+			(NP-OBJ (NN 新闻)))
+		    (CC 或)
+		    (VP (VV 得到)
+			(NP-OBJ (DNP (NP (NN 女性))
+				     (DEG 的))
+				(NP (NN 青睐)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	新闻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

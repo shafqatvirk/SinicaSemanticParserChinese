@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通航 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing open to navigation"/>
+      <role argnum="1" argrole="type of traffic open to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 可)
+		  (VP (ADVP (AD 常年))
+		      (VP (VV 通航)
+			  (NP-OBJ (NP (QP (CD 千)
+					  (CLP (M 吨)))
+				      (NP (NN 级)))
+				  (ADJP (JJ 大型))
+				  (NP (NN 顶推)
+				      (NN 轮驳)
+				      (NN 船队))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  千 吨 级 大型 顶推 轮驳 船队 
+	  </arg>
+	  <arg n="m" f="adv">
+	  常年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 景德镇)
+			     (NN 机场))
+		      (CC 和)
+		      (NP-PN (NR 赣州)
+			     (NN 机场)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 通航)))) 
+	  </parse>
+	  <arg n="0">
+	  景德镇 机场 和 赣州 机场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

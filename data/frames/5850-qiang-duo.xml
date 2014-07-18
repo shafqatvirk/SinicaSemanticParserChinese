@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抢夺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 fights to obtain"/>
+    <role argnum="2" argrole="entity arg1 is obtained from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 抢夺)
+			    (NP-OBJ (NN 先机)))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (PP-LOC (P 在)
+			(NP-PN (NR 美国)))
+		(VP (VP (VV 买下)
+			(NP-OBJ (NN 牧场)))
+		    (VP (VV 养)
+			(NP-OBJ (NN 牛)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	先机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 如何))
+		      (VP (VV 防止)
+			  (NP-OBJ (NN 竞争者))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP (P 与)
+				      (NP (PN 你)))
+				  (VP (VV 抢夺)
+				      (NP-OBJ (DNP (LCP (NP (DP (DT 同)
+								(QP (CD 一)))
+							    (NP (NN 市场)
+								(NN 区隔)))
+							(LC 内))
+						   (DEG 的))
+					      (NP (NN 顾客))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	同 一 市场 区隔 内 的 顾客 
+	</arg>
+	<arg n="2">
+	与 你 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 取自 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 它))
+				  (VP (MSP 所)
+				      (VP (VV 取用)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (NP (NN 水)))
+	      (VP (VV 取自)
+		  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VV 流经)
+					  (NP-OBJ (ADJP (JJ 朱砂))
+						  (NP (NN 土质)))))
+				  (DEC 的)))
+			  (NP-PN (NR 赤水河))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 它 所 取用 *T*-2 的 水 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-3 流经 朱砂 土质 的 赤水河 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

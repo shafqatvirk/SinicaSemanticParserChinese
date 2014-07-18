@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 裁员 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="person arg0 lays off"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 电子)
+		    (NN 媒体))
+	    (VP (VP (NP-ADV (PN 有的))
+		    (VP (VV 发烧)))
+		(PU ，)
+		(VP (NP-ADV (PN 有的))
+		    (VP (VV 裁员))))) 
+	</parse>
+	<arg n="0">
+	电子 媒体 
+	</arg>
+	<arg n="m" f="adv">
+	有的 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 先生))
+	    (VP (SB 被)
+		(VP (VV 裁员)))) 
+	</parse>
+	<arg n="1">
+	先生 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

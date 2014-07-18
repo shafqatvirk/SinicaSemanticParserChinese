@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拍实 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing beaten solid"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			   (VP (VV 下雪)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 北大湖)
+			 (NN 滑雪场))
+	      (VP (VP (ADVP (AD 又))
+		      (VP (VV 调集)
+			  (NP-OBJ (NN 人力))))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 雪))
+			      (VP (VV 拍实))))
+		  (PU ，)
+		  (VP (VV 防止)
+		      (NP-OBJ (-NONE- *pro*))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (LB 被)
+			      (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (NN 风))
+					  (VP (VV 刮走)
+					      (NP-OBJ (-NONE- *T*-1))))))))
+		  (PU ，)
+		  (VP (QP-TMP (NP-TMP (NT 最近))
+			      (QP-TMP (CD １０来)
+				      (CLP (M 天))))
+		      (ADVP (AD 又))
+		      (VP (VV 采取)
+			  (AS 了)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (BA 把)
+						  (IP-OBJ (NP-SBJ (DNP (NP (NN 雪道)
+									   (NN 附近))
+								       (DEG 的))
+								  (NP (NN 雪)))
+							  (VP (VRD (VV 移)
+								   (VV 到))
+							      (LCP-OBJ (NP (NN 雪道))
+								       (LC 上))))))
+					  (DEC 的))
+				  (ADJP (JJ 备雪))
+				  (NP (NN 办法))))))) 
+	  </parse>
+	  <arg n="0">
+	  北大湖 滑雪场 
+	  </arg>
+	  <arg n="1">
+	  雪 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *pro* 下雪 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

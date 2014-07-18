@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 南移 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving south"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 像是))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-ADV (NN 指头))
+				      (VP (VA 大))))
+			      (DEC 的)))
+		      (NP (NN 小卷)))
+	      (PU ，)
+	      (VP (VP (DP-ADV (DT 每)
+			      (CLP (M 年)))
+		      (VP (VP (VV 跟著)
+			      (NP-OBJ (DNP (NP (NN 海水))
+					   (DEG 的))
+				      (NP (NN 等温线))))
+			  (VP (VV 南移))))
+		  (PU ，)
+		  (VP (PP-TMP (P 在)
+			      (NP (NT 夏天)))
+		      (VP (VP (VV 来到)
+			      (LCP-OBJ (NP (NP-PN (NR 台湾))
+					   (CP (WHNP-2 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-2))
+						       (VP (VA 温暖)))
+						   (DEC 的)))
+					   (NP (NN 海洋)))
+				       (LC 中)))
+			  (VP (VV 产卵)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 指头 大 的 小卷 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  像是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

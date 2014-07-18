@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 复育 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (PU 「)
+			(VV 复育)
+			(NP-PN-OBJ (NR 台湾))
+			(PU 」)))
+	    (VP (VV 刻不容缓))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 produces"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 右图))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (NP-TMP (NT 去年)
+						(NT 八月))
+					(VP (VRD (VV 复育)
+						 (VV 出))
+					    (NP-OBJ (-NONE- *T*-1)))))
+				(DEC 的)))
+			(NP (NN 百步蛇)
+			    (NN 宝宝))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="tmp">
+	去年 八月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

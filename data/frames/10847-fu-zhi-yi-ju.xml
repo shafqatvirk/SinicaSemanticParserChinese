@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 付之一炬 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 burns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 面对)
+			(NP-OBJ (DNP (NP (NN 核四) )
+				     (DEG 的))
+				(NP (NN 复工) ))))
+	    (PU ，)
+	    (NP-SBJ (NP (NP-PN (NR 贡寮) )
+			(NP (NN 乡民) ))
+		    (DNP (LCP (QP (CD 十多)
+				  (CLP (M 年)))
+			      (LC 来))
+			 (DEG 的))
+		    (NP (NN 抗争) ))
+	    (VP (VV 付之一炬))) 
+	</parse>
+	<arg n="1">
+	贡寮 乡民 十多 年 来 的 抗争 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 面对 核四 的 复工 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 远销 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing sold"/>
+      <role argnum="2" argrole="area arg1 is sold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (VV 誉为)
+					  (NP-OBJ (PU “)
+						  (NP-PN (NR 中华))
+						  (NP (NN Ｂ超))
+						  (PU ”)))))
+			      (DEC 的)))
+		      (NP (NN 超声)
+			  (NN 显像)
+			  (NN 诊断仪)))
+	      (VP (VV 远销)
+		  (NP-OBJ (NP (NP-PN (NR 欧)
+				     (NR 美))
+			      (NP (NN 国家)))
+			  (CC 和)
+			  (NP (DP (DT 其他))
+			      (NP (NN 地区)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 被 誉为 “ 中华 Ｂ超 ” 的 超声 显像 诊断仪 
+	  </arg>
+	  <arg n="1">
+	  欧 美 国家 和 其他 地区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

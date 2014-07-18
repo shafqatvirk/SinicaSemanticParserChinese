@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交货 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing delivered"/>
+      <role argnum="1" argrole="deliverer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-TMP (NT １月份))
+					  (VP (VV 交货))))
+				  (DEC 的)))
+			  (NP (NN 原油)))
+		      (NP (NN 价格)))
+	      (VP (VP (VV 报收于)
+		      (QP-OBJ (DP (DT 每)
+				  (CLP (M 桶)))
+			      (QP (CD １１．７２)
+				  (CLP (M 美元)))))
+		  (PU ，)
+		  (VP (PP (P 比)
+			  (NP (DP (DT 前)
+				  (QP (CD 一)))
+			      (NP (NN 交易日))))
+		      (VP (VV 上涨)
+			  (QP-OBJ (CD ２６)
+				  (CLP (M 美分))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １月份 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-CND (NP-SBJ (NN 台商))
+		      (VP (VV 接单)))
+	      (PU ，)
+	      (QP-TPC (CD 十五)
+		      (CLP (M 天)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 可)
+		      (VP (VV 交货))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  十五 天 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  台商 接单 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

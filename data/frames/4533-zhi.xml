@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 止 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="point where arg0 stops"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 欧元)
+		      (NN 更新期))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (PP-DIR (P 从)
+				  (NP (NT ２００２年)
+				      (NT １月)
+				      (NT １日))))
+		      (VP (PP-DIR (P 到)
+				  (NP (NT ６月)
+				      (NT ３０日)))
+			  (VP (VV 止)))))) 
+	  </parse>
+	  <arg n="0">
+	  欧元 更新期 	  
+	  </arg>
+	  <arg n="1">
+	  到 ６月 ３０日 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 ２００２年 １月 １日 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

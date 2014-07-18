@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 省出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 saves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (BA 将)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (VP (VV 用)
+							(NP-OBJ (-NONE- *T*-1)))
+						    (VP (MSP 来)
+							(VP (VV 买)
+							    (NP-OBJ (NN 机票))))))
+					    (DEC 的)))
+				    (QP (CD 二百)
+					(CLP (M 美金)))
+				    (NP (NN 支票)))
+			    (VP (VV 卖掉))))
+		(PU ，)
+		(VP (VV 买)
+		    (AS 了)
+		    (NP-OBJ (DNP (PP (PP (P 从)
+					 (NP-PN (NR 基隆)))
+				     (PP (P 到)
+					 (NP-PN (NR 日本)
+						(NR 神户))))
+				 (DEG 的))
+			    (NP-PN (NR 海鸥轮))
+			    (NP (NN 船票))))
+		(PU ，)
+		(VP (VV 省出)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (ADJP (JJ 大))
+				     (CLP (M 笔))))
+			    (NP (NN 钱)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 交给)
+			    (NP-OBJ (NN 父亲))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	一 大 笔 钱 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 居住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="place arg0 lives"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *-1))
+				      (VP (VV 居住)
+					  (NP-PN-OBJ (NR 美国))))
+				  (DEC 的)))
+			  (NP (NN 华侨)
+			      (PU 、)
+			      (NN 华人)))
+		  (VP (VV 继续)
+		      (VP (PP-PRP (P 为)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 促进)
+					  (NP-OBJ (DNP (NP-PN (NR 中国))
+						       (DEG 的))
+						  (NP (NN 经济)
+						      (NN 发展)
+						      (CC 和)
+						      (NN 国家)
+						      (NN 统一))))))
+			  (VP (VV 作出)
+			      (NP-OBJ (CP (WHNP-6 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-6))
+						  (VP (ADVP (AD 更))
+						      (VP (VA 积极))))
+					      (DEC 的)))
+				      (NP (NN 努力))))))) 
+	  </parse>
+	  <arg n="0">
+	  *-1 
+	  </arg>
+	  <arg n="1">
+	  美国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TPC (P 至於)
+		  (NP (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 居住)
+				      (PP-LOC (P 在)
+					      (NP (NN 内地)))))
+			      (DEC 的)))
+		      (NP (NN 儿童)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  在 内地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 低估 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party making estimate"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP-PN (NR 东南亚))
+			       (NP (NN 金融)
+				   (NN 危机)))
+			   (DEG 的))
+		      (NP (NN 影响)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 可)
+		      (VP (VV 低估))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  东南亚 金融 危机 的 影响 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

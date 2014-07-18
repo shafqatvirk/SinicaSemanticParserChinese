@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 颠覆 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="subverter"/>
+      <role argnum="1" argrole="establishment, project"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 重申)
+		      (IP-OBJ (NP-PN-SBJ (NR 美国))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 支持)
+				      (NP-OBJ (NP-PN (NR 伊拉克))
+					      (NP (NN 反对派)))
+				      (PU ，)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 颠覆)
+					      (NP-OBJ (NP-PN (NR 萨达姆))
+						      (NP (NN 政权))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  萨达姆 政权 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

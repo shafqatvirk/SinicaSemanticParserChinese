@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 屏息以待 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is waiting for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (QP (CD 万))
+			     (NP (NN 人)))
+			 (DEG 的))
+		    (NP (NN 场子)))
+	    (VP (VV 屏息以待))) 
+	</parse>
+	<arg n="0">
+	万 人 的 场子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-Q-TPC (NP-SBJ (QP (CD 一)
+				  (CLP (M 场)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 攸关)
+					      (NP-OBJ (NN 国家)
+						      (NN 宪政)
+						      (NN 体制)
+						      (CC 与)
+						      (NN 传统))))
+				      (DEC 的)))
+			      (NP (NN 风波)))
+		      (VP (VV 该)
+			  (VP (ADVP-WH (AD 如何))
+			      (VP (VV 平息)))))
+	    (PU ，)
+	    (NP-SBJ (NN 全民))
+	    (VP (ADVP (AD 正))
+		(VP (VV 屏息以待)))) 
+	</parse>
+	<arg n="0">
+	全民 
+	</arg>
+	<arg n="1">
+	一 场 *OP* *T*-1 攸关 国家 宪政 体制 与 传统 的 风波 该 如何 平息 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

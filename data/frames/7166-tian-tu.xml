@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 填土 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 fills with dirt"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 南港)
+				(CC 与)
+				(NR 汐止))
+			 (DEG 的))
+		    (NP (NN 河川地)))
+	    (VP (SB 遭)
+		(VP (VCD (VV 填土)
+			 (VV 建筑))))) 
+	</parse>
+	<arg n="1">
+	南港 与 汐止 的 河川地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

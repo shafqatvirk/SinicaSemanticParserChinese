@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 慢于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="comparison"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 居民))
+				  (VP (VP (PP-MNR (P 用)
+						  (NP (NN 中文)))
+					  (VP (VP (VV 写)
+						  (NP-OBJ (NN 申请)))
+					      (PU 、)
+					      (VP (VV 填)
+						  (NP-OBJ (NN 表格)))))
+				      (PU ，)
+				      (VP (PP-TMP (-NONE- *T*-1))
+					  (VP (VV 得到)
+					      (NP-OBJ (NN 批准)
+						      (CC 或)
+						      (NN 答复))))))
+			      (DEC 的)))
+		      (NP (NN 时间)))
+	      (VP (ADVP (AD 明显))
+		  (VP (VV 慢于)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 使用)
+				  (NP-OBJ (NN 葡文))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 居民 用 中文 写 申请 、 填 表格 ， *T*-1 得到 批准 或 答复 的 时间 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 使用 葡文 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

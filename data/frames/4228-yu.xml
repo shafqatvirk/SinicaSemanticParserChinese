@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 予 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="thing given"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PP-PRP (P 因)
+					      (NP (CP (WHNP-2 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-2))
+							      (VP (PP-DIR (P 向)
+									  (NP (NP-PN (NN 房屋)
+										     (NN 委员会))
+									      (CC 或)
+									      (NP (ADJP (JJ 私人))
+										  (NP (NN 机构)))))
+								  (VP (VV 购买)
+								      (NP-OBJ (ADJP (JJ 自置))
+									      (NP (NN 居所))))))
+							  (DEC 的)))
+						  (NP (NN 住户))))
+				      (VP (MSP 所)
+					  (VP (VV 腾空)))))
+			      (DEC 的)))
+		      (NP (NN 出租)
+			  (NN 单位)))
+	      (VP (ADVP (AD 亦))
+		  (ADVP (AD 已))
+		  (ADVP (AD 再))
+		  (VP (VSB (VV 分配)
+			   (VV 予))
+		      (NP-OBJ (DNP (LCP (NP (NP (ADJP (JJ 公共))
+						(NP (NN 房屋)))
+					    (NP (NN 轮候册)))
+					(LC 上))
+				   (DEG 的))
+			      (NP (NN 申请人)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* (*T*-3)->(出租单位) 因 *OP* (*T*-2)->(住户) 向 房屋 委员会 或 私人 机构 购买 自置 居所 的 住户 所 腾空 的 出租 单位 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  亦 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  再 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  公共 房屋 轮候册 上 的 申请人 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 自古以来))
+				  (PP-DIR (P 对)
+					  (NP (NN 海洋)))
+				  (VP (VP (ADVP (AD 只))
+					  (VP (VV 取)))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 予))))))
+			  (DEC 的))
+		  (NP (NN 做法))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="2">
+	  对 海洋 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-ADV (NN 其中))
+	      (QP-SBJ (ADVP (AD 只有))
+		      (QP (CD 一百四十八)
+			  (CLP (M 宗))))
+	      (VP (PP-MNR (P 经)
+			  (NP (NN 转介)))
+		  (VP (VV 予)
+		      (NP-OBJ (NN 惩教署))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 跟进)))))) 
+	  </parse>
+	  <arg n="M" f="ADV">
+	  但 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  其中 	  
+	  </arg>
+	  <arg n="1">
+	  只有 一百四十八 宗 	  
+	  </arg>
+	  <arg n="M" f="MNR">
+	  经 转介 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  惩教署 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

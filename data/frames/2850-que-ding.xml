@@ -1,0 +1,171 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 确定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="decider"/>
+      <role argnum="1" argrole="thing decided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 浙江))
+		  (VP (VV 确定)
+		      (NP-OBJ (NP (PU “)
+				  (NT 九五)
+				  (PU ”))
+			      (NP (PP (P 对)
+				      (NP (NN 外)))
+				  (NP (NN 经贸)))
+			      (NP (NN 发展)
+				  (NN 规划))))) 
+	  </parse>
+	  <arg n="0">
+	  浙江 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  “ 九五 ” 对 外 经贸 发展 规划 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (NP (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (IP-APP (NP-PN-SBJ (NR 库尔尼科娃))
+						  (VP (VV 参赛)))
+					  (NP (NN 前景)))
+				  (VP (PP-TMP (-NONE- *T*-1))
+				      (ADVP (AD 无法))
+				      (VP (VV 确定))))
+			      (DEC 的)))
+		      (NP (NN 时候)))) 
+	  </parse>
+	  <arg n="1">
+	  库尔尼科娃 参赛 前景 	  	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  (*T*-1)->(时候) 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  无法 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (DP-TMP (DT 这)
+			  (QP (CD 几)
+			      (CLP (M 年))))
+		  (NP-SBJ (DNP (PP (P 有关)
+				   (NP (NN 证券)))
+			       (DEG 的))
+			  (NP (NN 法规)
+			      (PU 、)
+			      (NN 政策)))
+		  (VP (VP (VV 出)
+			  (AS 了)
+			  (QP-OBJ (CD 不少)))
+		      (PU ，)
+		      (VP (ADVP (AD 可))
+			  (VP (ADVP (AD 都))
+			      (VP (VV 没有)
+				  (VP (PP-MNR (P 用)
+					      (NP (DNP (NP (NN 法律))
+						       (DEG 的))
+						  (NP (NN 形式))))
+				      (VP (VRD (VV 确定)
+					       (VV 下来))))))))) 
+	  </parse>
+	  <arg n="1">
+	  有关 证券 的 法规 、 政策 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 中国))
+			 (NP (NN 石油)
+			     (NN 天然气))
+			 (ADJP (JJ 总))
+			 (NP (NN 公司)))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (VV 确定)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (BA 把)
+				      (IP-OBJ (NP-PN-SBJ (NR 柴达木)
+							 (NN 盆地))
+					      (VP (VV 列为)
+						  (NP-OBJ (NP-PN (NR 中国))
+							  (NP (NN 油气)
+							      (NN 勘探)
+							      (NN 重点)
+							      (NN 地区))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 石油 天然气 总 公司 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 把 柴达木 盆地 列为 中国 油气 勘探 重点 地区 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 日本)
+			 (NN 公社债)
+			 (NN 研究所))
+	      (VP (VV 确定)
+		  (IP-OBJ (NP-SBJ (NP-PN (NR 中国)
+					 (NN 进出口)
+					 (NN 银行))
+				  (NP (NN 债券)
+				      (NN 信用)
+				      (NN 等级)))
+			  (VP (VC 为)
+			      (NP-PRD (FW ＡＡ－)))))) 
+	  </parse>
+	  <arg n="0">
+	  日本 公社债 研究所 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中国 进出口 银行 债券 信用 等级 为 ＡＡ－ 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

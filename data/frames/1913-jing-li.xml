@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 经历 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 goes through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 证券)
+			      (NN 市场)))
+		  (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 从)
+					      (LCP (NP (NT 九十年代))
+						   (LC 初)))
+				      (VP (VV 发展)
+					  (PP (P 到)
+					      (NP (NT 今天))))))
+			  (PU ，)
+			  (VP (VV 经历)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 许多))
+				      (NP (NN 风风雨雨)))))
+		      (PU ，)
+		      (VP (ADVP (AD 其间))
+			  (IP-CND (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (CS 虽然))
+				      (VP (ADVP (AD 陆续))
+					  (VP (VV 出台)
+					      (AS 了)
+					      (NP-OBJ (DP (DT 各)
+							  (CLP (M 种)))
+						      (ADJP (JJ 有关))
+						      (NP (NN 法规)))))))
+			  (PU ，)
+			  (ADVP (AD 但))
+			  (ADVP (AD 一直))
+			  (VP (VE 没有)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 部)))
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (PP-DIR (P 对)
+							      (NP (NN 市场)))
+						      (ADVP (AD 真正))
+						      (VP (VV 起到)
+							  (NP-OBJ (NN 规范)
+								  (NN 作用)))))
+					      (DEC 的)))
+				      (NP (PU “)
+					  (NN 母法)
+					  (PU ”))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 证券 市场 
+	  </arg>
+	  <arg n="1">
+	  许多 风风雨雨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 从 九十年代 初 发展 到 今天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

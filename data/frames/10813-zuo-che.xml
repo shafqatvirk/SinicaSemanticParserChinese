@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 坐车 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现在))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 到)
+			(NP-PN-OBJ (NR 香港)
+				   (NN 机场))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (ADVP (AD 一))
+				(VP (VV 下)
+				    (NP-OBJ (NN 飞机))))
+			    (VP (VV 出)
+				(AS 了)
+				(NP-OBJ (NN 关口)))))
+		(PU ，)
+		(ADVP (AD 就))
+		(VP (VV 可)
+		    (VP (VV 看到)
+			(IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (IP (NP-TPC (-NONE- *T*-1))
+							(NP-SBJ (NN 身))
+							(VP (VV 背)
+							    (NP-OBJ (NN 彩带))))
+						    (IP (NP-SBJ (-NONE- *pro*))
+							(VP (VV 写)
+							    (AS 著)
+							    (NP-OBJ (NP-PN (PU 「)
+									   (NR 通宝)
+									   (NN 巴士)
+									   (PU 」))
+								    (NP (NN 字样))))))
+						(DEC 的)))
+					(NP (NN 小姐)))
+				(PU ，)
+				(VP (PP-MNR (P 以)
+					    (NP (ADJP (JJ 小))
+						(NP (NN 推车))))
+				    (VP (VV 领)
+					(AS 著)
+					(NP-OBJ (NN 客人))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 坐车)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

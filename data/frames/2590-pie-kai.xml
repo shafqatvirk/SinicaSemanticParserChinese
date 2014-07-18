@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撇开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity bypassed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 二))
+	      (PU 、)
+	      (NP-PN-SBJ (NR 北约))
+	      (VP (VV 要)
+		  (VP (VP (VV 撇开)
+			  (NP-PN-OBJ (NR 联合国)))
+		      (VP (ADVP (AD 自行))
+			  (VP (VV 执行)
+			      (NP-OBJ (NN 使命))))))) 
+	  </parse>
+	  <arg n="0">
+	  北约 
+	  </arg>
+	  <arg n="1">
+	  联合国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

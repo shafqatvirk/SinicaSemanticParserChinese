@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 大势已去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 接著))
+	      (LCP-TMP (IP (NP-PN-SBJ (NR 阿扁))
+			   (VP (VV 当选)))
+		       (LC 时))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 又))
+		      (VP (VSB (VV 误)
+			       (VV 以为))
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 大势已去)))))
+		  (PU ，)
+		  (VP (ADVP (AD 匆忙))
+		      (VP (VSB (VV 挂单)
+			       (VV 卖出)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

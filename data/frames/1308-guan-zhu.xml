@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关注 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="paying attention to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 柯赫男)
+			 (NN 先生))
+	      (VP (PP-MNR (P 以)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 极))
+					      (VP (VA 大))))
+				      (DEC 的)))
+			      (NP (NN 热情))))
+		  (VP (VV 关注)
+		      (AS 着)
+		      (NP-OBJ (PU “)
+			      (QP (CD 两))
+			      (NP (NN 会))
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  柯赫男 先生 
+	  </arg>
+	  <arg n="1">
+	  “ 两 会 ” 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 *OP* *T*-1 极 大 的 热情 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国内外)
+		      (NN 专家)
+		      (NN 学者))
+	      (VP (PP-DIR (P 对)
+			  (NP (DP (DT 这)
+				  (QP (CD 一)))
+			      (ADJP (JJ 重要))
+			      (NP (NN 发现))))
+		  (ADVP (AD 极为))
+		  (VP (VV 关注)))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  国内外 专家 学者 
+	  </arg>
+	  <arg n="1">
+	  对 这 一 重要 发现 
+	  </arg>
+	  <arg n="m" f="adv">
+	  极为 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

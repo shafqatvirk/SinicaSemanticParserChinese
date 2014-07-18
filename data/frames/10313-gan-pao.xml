@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赶跑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 drives away"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 甚至))
+	    (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (VE 有)
+			(NP-OBJ (NN 时候))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 只要))
+			    (VP (VV 养成)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 项)))
+					(NP (NN 运动)
+					    (NN 习惯))))))
+		(PU ，)
+		(ADVP (AD 就))
+		(VP (VV 可以)
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (NN 中年)
+					(NN 忧郁))
+				(VP (VV 赶跑))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	中年 忧郁 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 只要 养成 一 项 运动 习惯 
+	</arg>
+	<arg n="m" f="tmp">
+	*pro* 有 时候 
+	</arg>
+	<arg n="m" f="adv">
+	甚至 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

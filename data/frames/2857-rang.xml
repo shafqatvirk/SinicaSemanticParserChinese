@@ -1,0 +1,123 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 让 </id>
+    <frameset id="f1" edef="give in">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing yieded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (ADVP (AD 还))
+		      (PP-DIR (P 给)
+			      (NP (NN 媒体)))
+		      (VP (VV 传去)
+			  (NP-OBJ (NN 资方)
+				  (NN 方案))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 标出)
+		      (IP-OBJ (NP-SBJ (PN 他们))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (DP-WH (DT 哪些))
+						   (NP (NN 环节)))
+					       (LC 上)))
+				  (VP (VV 让)
+				      (AS 了)
+				      (NP-OBJ (NN 步)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 	  	  
+	  </arg>
+	  <arg n="1">
+	  步 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 哪些 环节 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="allow">
+      <role argnum="0" argrole="permitter"/>
+      <role argnum="1" argrole="party allowed"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 发言人))
+	      (VP (VV 说)
+		  (PU ∶)
+		  (IP-OBJ (PU 「)
+			  (NP-TPC (NN 计划))
+			  (NP-SBJ (NN 旨))
+			  (VP (VV 在)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 让)
+					  (NP-OBJ (NN 内地)
+						  (NN 儿童))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (PP-MNR (P 通过)
+							  (NP (NN 单程)
+							      (NN 通行证)
+							      (NN 制度)))
+						  (DVP (VP (VE 有)
+							   (NP-OBJ (NN 秩序)))
+						       (DEV 地))
+						  (VP (VV 来)
+						      (NP-PN-OBJ (NR 港))))))))))
+	      (PU 。)
+	      (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  内地 儿童 	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 通过 单程 通行证 制度 有 秩序 地 来 港 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="give in">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing yielded"/>
+      <role argnum="2" argrole="recipient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="1">
+	  这 一 桂冠 	  	  
+	  </arg>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="2">
+	  给 印度人 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

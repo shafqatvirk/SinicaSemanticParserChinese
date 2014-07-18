@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 起源於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 originates from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 日後))
+	    (NP-SBJ (DNP (NP (NP-PN (NR 北欧))
+			     (DP (DT 各)
+				 (CLP (M 种)))
+			     (NP (NN 球杆)
+				 (CC 与)
+				 (NN 球类型)))
+			 (DEG 的))
+		    (NP (NN 游戏))
+		    (PU ，)
+		    (PRN (VP (VV 包括)
+			     (NP-OBJ (DNP (NP (NP-APP (NR 比利时)
+						      (PU 、)
+						      (NR 卢森堡)
+						      (ETC 等))
+					      (NP (NN 低地国)))
+					  (DEG 的))
+				     (NP (NN 高尔夫球))))))
+	    (VP (ADVP (AD 都))
+		(VP (VV 起源於)
+		    (NP-OBJ (PN 此))))) 
+	</parse>
+	<arg n="0">
+	北欧 各 种 球杆 与 球类型 的 游戏 ， 包括 比利时 、 卢森堡 等 低地国 的 高尔夫球 
+	</arg>
+	<arg n="1">
+	此 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	日後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

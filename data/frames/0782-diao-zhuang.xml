@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吊装 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 天)))
+		  (VP (VV 可)
+		      (VP (VV 吊装)
+			  (NP-OBJ (QP (CD 一百二十八)
+				      (CLP (M 只)))
+				  (NP (NN 标准)
+				      (NN 集装箱))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  一百二十八 只 标准 集装箱 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

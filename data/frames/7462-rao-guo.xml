@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 绕过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 goes around"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 一)
+			    (CLP (ADJP (JJ 小))
+				 (CLP (M 群))))
+			(NP (NN 人)))
+		(VP (VP (VP (VV 利用)
+			    (NP-OBJ (DNP (NP (NN 电话))
+					 (DEG 的))
+				    (NP (NN 拨号)
+					(NN 音调))))
+			(VP (VV 绕过)
+			    (NP-OBJ (DNP (NP (NN 电话)
+					     (NN 公司))
+					 (DEG 的))
+				    (NP (NN 计费)
+					(NN 系统)))))
+		    (PU ，)
+		    (VP (ADVP (AD 好))
+			(VP (VV 打)
+			    (NP-OBJ (ADJP (JJ 免费))
+				    (NP (NN 电话))))))) 
+	</parse>
+	<arg n="0">
+	一 小 群 人 
+	</arg>
+	<arg n="1">
+	电话 公司 的 计费 系统 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

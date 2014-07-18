@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 值得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="causer, what makes it worthwhile"/>
+      <role argnum="1" argrole="theme, what is worthwhile"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 认识)))
+	      (VP (VP (VV 来)
+		      (DER 之)
+		      (VP-EXT (ADVP (AD 不))
+			      (VP (VA 易))))
+		  (PU ，)
+		  (VP (VV 值得)
+		      (NP-OBJ (QP (CD 万)
+				  (CLP (M 分)))
+			      (NP (NN 珍惜)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 认识 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  万 分 珍惜 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-SBJ (NP-APP (NT 一九九七年)
+			      (NT 七月)
+			      (NT 一日))
+		      (DP (DT 这)
+			  (QP (CD 一)
+			      (CLP (M 天)))))
+	      (PU ，)
+	      (VP (ADVP (AD 将))
+		  (PP-MNR (P 作为)
+			  (NP-MNR (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 值得)
+						  (IP-OBJ (NP-SBJ (NN 人们))
+							  (VP (ADVP (AD 永远))
+							      (VP (VV 纪念))))))
+					  (DEC 的)))
+				  (NP (NN 日子))))
+		  (VP (VV 载入)
+		      (NP-OBJ (NN 史册))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-3)->(日子) 
+	  </arg>
+	  <arg n="1">
+	  人们 永远 纪念 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP-Q (IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (VP (VV 花费)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (ADVP (AD 这么))
+							    (VP (VA 大))))
+						    (DEC 的)))
+					    (NP (NN 代价))))
+				(PU ，)
+				(VP-PRP (VV 聘请)
+					(NP-OBJ (DP (DT 这些))
+						(NP (NN 咨询)
+						    (NN 专家))))))
+		    (VP (VV 值得)))
+		(SP 吗)) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 花费 *OP* (*T*-1)->(代价) 这么 大 的 代价 ， 聘请 这些 咨询 专家 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

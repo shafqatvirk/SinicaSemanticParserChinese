@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 染黑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 dyes black"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 外泄)))
+			    (DEC 的)))
+		    (NP (NN 油污)))
+	    (VP (VP (ADVP (AD 已))
+		    (VP (VV 扩散)
+			(NP-OBJ (NN 海岸))
+			(IP-EXT (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 长))
+				    (VP (VV 达)
+					(QP-OBJ (CD 三)
+						(CLP (M 公里))))))))
+		(PU ，)
+		(VP (VV 染黑)
+		    (AS 了)
+		    (NP-OBJ (NP (NP (NN 南))
+				(NP-PN (NR 台湾)))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (ADVP (AD 最))
+					    (VP (VCD (VA 亮丽)
+						     (VA 湛蓝)))))
+				    (DEC 的)))
+			    (NP (NN 海域)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 外泄 的 油污 
+	</arg>
+	<arg n="1">
+	南 台湾 *OP* *T*-2 最 亮丽 湛蓝 的 海域 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

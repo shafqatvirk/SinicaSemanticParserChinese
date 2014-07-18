@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 生态)
+		      (NN 环境))
+	      (VP (VA 好))) 
+	  </parse>
+	  <arg n="0">
+	  生态 环境 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 loves to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 好事者))
+	      (VP (ADVP (AD 多))
+		  (VP (VV 好)
+		      (NP-OBJ (NN 捶丸))))) 
+	  </parse>
+	  <arg n="0">
+	  好事者 
+	  </arg>
+	  <arg n="1">
+	  捶丸 
+	  </arg>
+	  <arg n="m" f="adv">
+	  多 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

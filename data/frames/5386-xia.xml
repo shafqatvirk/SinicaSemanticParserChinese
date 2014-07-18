@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吓 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 scares"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 恐怕))
+	    (ADVP (AD 还是))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (PN 自己))
+				(VP (VV 吓)
+				    (NP-OBJ (PN 自己))))
+			    (DEC 的))
+		    (NP (NN 成分)))
+	    (VP (VV 居多))) 
+	</parse>
+	<arg n="0">
+	自己 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *pro*))
+		(VP (VV 听)
+		    (NP-OBJ (NN 同事))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 说)
+			    (PU ，)
+			    (IP-OBJ (IP (NP-SBJ (NP (PN 她))
+						(NP (NN 小孩)))
+					(VP (QP-TMP (IP-APP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 上)
+								(NP-OBJ (NN 幼稚园))))
+						    (QP (OD 第一)
+							(CLP (M 天))))
+					    (PU ，)
+					    (ADVP (AD 就))
+					    (VP (LB 被)
+						(IP-OBJ (NP-SBJ (QP (CD 一)
+								    (CLP (M 群)))
+								(ADJP (JJ 小))
+								(NP (NN 老法)))
+							(VP (PU 「)
+							    (VV 群起而攻之)
+							    (PU 」))))))
+				    (PU ，)
+				    (IP (NP-SBJ (-NONE- *pro*))
+					(VP (VV 吓)
+					    (DER 得)
+					    (IP-EXT (NP-SBJ (PN 她))
+						    (VP (ADVP (AD 不))
+							(VP (VV 敢)
+							    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								    (VP (ADVP (AD 再))
+									(VP (VV 让)
+									    (NP-OBJ (NN 孩子))
+									    (IP (NP-SBJ (-NONE- *PRO*))
+										(VP (VV 上学)))))))))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	她 不 敢 *PRO* 再 让 孩子 *PRO* 上学 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (VV 吓)
+		    (AS 了)
+		    (QP-EXT (CD 一)
+			    (CLP (M 跳))))
+		(PU ，)
+		(VP (LCP-TMP (NP (NN 一时))
+			     (LC 之间))
+		    (ADVP (AD 不))
+		    (VP (VV 知)
+			(IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 发生)
+				      (AS 了)
+				      (NP-OBJ (DP-WH (DT 什麽))
+					      (NP (NN 事))))))))) 
+	</parse>
+	<arg n="1">
+	他 
+	</arg>
+	<arg n="m" f="adv">
+	一 跳 
+	</arg>
+	<V/>
+      </example>
+    </frame> 
+  </frameset>
+</verb>

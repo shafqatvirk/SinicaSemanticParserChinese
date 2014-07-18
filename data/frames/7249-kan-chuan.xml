@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 看穿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 sees through"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (VP (VV 眯眼))
+		(VP (VV 笑)
+		    (AS 著))
+		(PU ，)
+		(VP (ADVP (AD 彷佛))
+		    (VP (VV 看穿)
+			(AS 了)
+			(NP-OBJ (DNP (NP (PN 我))
+				     (DEG 的))
+				(NP (NN 心事))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	我 的 心事 
+	</arg>
+	<arg n="m" f="adv">
+	彷佛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

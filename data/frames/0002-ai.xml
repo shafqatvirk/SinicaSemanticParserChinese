@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="endurer"/>
+      <role argnum="1" argrole="stuff endured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *pro*))
+			    (VP (VA 重)))
+		    (ADVP (AD 则))
+		    (VP (VP (VV 受)
+			    (NP-OBJ (NN 审查)))
+			(PU 、)
+			(VP (VV 挨)
+			    (NP-OBJ (NN 批判))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  批判 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

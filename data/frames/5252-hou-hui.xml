@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 後悔 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 regrets"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (VV 开始)
+		(VP (VV 後悔)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VRD (VV 转班)
+				     (VV 过来))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	*PRO* 转班 过来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (NT 如今))
+		(ADVP (AD 有点))
+		(VP (VV 後悔)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	有点 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

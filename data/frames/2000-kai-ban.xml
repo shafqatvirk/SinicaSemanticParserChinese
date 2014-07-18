@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 美国))
+			  (QP (CD 一))
+			  (ADJP (JJ 跨国))
+			  (NP (NN 公司)))
+		  (VP (ADVP (AD 将))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 福建)))
+		      (VP (VV 开办)
+			  (NP-OBJ (QP (CD 三百)
+				      (CLP (M 家)))
+				  (ADJP (JJ 连锁))
+				  (NP (NN 超市)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 一 跨国 公司 
+	  </arg>
+	  <arg n="1">
+	  三百 家 连锁 超市 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 福建 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (IP-SBJ (NP-SBJ (NN 外资)
+			      (NN 银行)
+			      (NN 人民币)
+			      (NN 业务))
+		      (VP (VV 开办)))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (VP (VV 促进)
+		      (NP-OBJ (DNP (LCP (NP (NN 中外)
+					    (NN 金融)
+					    (NN 机构))
+					(LC 之间))
+				   (DEG 的))
+			      (ADJP (JJ 进一步))
+			      (NP (NN 合作)))))) 
+	  </parse>
+	  <arg n="1">
+	  外资 银行 人民币 业务 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (NP-OBJ (DNP (LCP (IP (NP-SBJ (NP-PN (NR 中国))
+					(NP (NN 证券)
+					    (NN 市场)))
+				(VP (VV 开办)
+				    (QP-EXT (CD 八)
+					    (CLP (M 年)))))
+			    (LC 来))
+		       (DEG 的))
+		  (QP (OD 第一)
+		      (CLP (M 部)))
+		  (NP (NN 证券法))) 
+	  </parse>
+	  <arg n="1">
+	  中国 证券 市场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  八 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

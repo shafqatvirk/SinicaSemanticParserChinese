@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 生吞活剥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 skins alive and swallows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 要)
+			(VP (PP-TMP (P 在)
+				    (LCP (NP (ADJP (JJ 短短))
+					     (NP (NN 时间)))
+					 (LC 内)))
+			    (PU 、)
+			    (PP-DIR (P 从)
+				    (LCP (NP (ADJP (JJ 薄薄))
+					     (QP (CD 几)
+						 (CLP (M 本)))
+					     (NP (NN 读本)))
+					 (LC 里)))
+			    (VP (BA 把)
+				(IP-OBJ (NP-SBJ (QP (CD 一)
+						    (CLP (M 个)))
+						(CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (VCD (VA 巨大)
+								     (VA 悠远))))
+							(DEC 的)))
+						(NP-PN (NR 中国)))
+					(VP (VV 生吞活剥)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	一 个 *OP* *T*-1 巨大 悠远 的 中国 
+	</arg>
+	<arg n="m" f="dir">
+	从 薄薄 几 本 读本 里 
+	</arg>
+	<arg n="m" f="tmp">
+	在 短短 时间 内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

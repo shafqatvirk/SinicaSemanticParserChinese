@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 豪华 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (NP (DNP (NP (NP-PN (NR 富士))
+				    (NP (NN 山麓)))
+				(DEG 的))
+			   (QP (CD 一)
+			       (CLP (M 家)))
+			   (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (VCD (VA 宽敞)
+						(VA 豪华))))
+				   (DEC 的)))
+			   (NP (NN 餐厅)))
+		       (LC 里))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

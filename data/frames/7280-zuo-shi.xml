@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 坐实 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 proves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NT 去年))
+			 (DEG 的))
+		    (NP (NN 延任案)))
+	    (VP (ADVP (AD 更))
+		(VP (VV 坐实)
+		    (IP-OBJ (NP-SBJ (DNP (LCP (NP (NN 社会)
+						  (NN 眼))
+					      (LC 中))
+					 (DEG 的))
+				    (NP-PN (NN 国大)))
+			    (VP (ADVP (AD 只))
+				(VP (VC 是)
+				    (NP-PRD (NN 政争)
+					    (NN 工具)
+					    (PU 、)
+					    (NN 自肥)
+					    (NN 机构)))))))) 
+	</parse>
+	<arg n="0">
+	去年 的 延任案 
+	</arg>
+	<arg n="1">
+	社会 眼 中 的 国大 只 是 政争 工具 、 自肥 机构 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

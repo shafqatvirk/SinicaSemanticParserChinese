@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 次於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="second to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-PN-SBJ (NR 东南亚))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (VC 是)
+			  (NP-PRD (DNP (NP-PN (NR 台湾))
+				       (DEG 的))
+				  (ADJP (QP (OD 第四))
+					(ADJP (JJ 大)))
+				  (NP (NN 外销)
+				      (NN 市场)))))
+		  (PU ，)
+		  (VP (VV 次於)
+		      (NP-OBJ (NP-PN (NR 美国))
+			      (PU 、)
+			      (NP (NN 大陆))
+			      (PU 、)
+			      (CC 和)
+			      (NP-PN (NR 欧盟)))))) 
+	  </parse>
+	  <arg n="0">
+	  东南亚 
+	  </arg>
+	  <arg n="1">
+	  美国 、 大陆 、 和 欧盟 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

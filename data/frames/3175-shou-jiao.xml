@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收缴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing collected/captured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 收缴)
+		  (NP-OBJ (NN 费用)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  费用 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 案件))
+				  (VP (VV 涉及)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (ADJP (JJ 非法))
+		      (NP (NN 出版物)))
+	      (VP (ADVP (AD 已经))
+		  (ADVP (AD 全部))
+		  (VP (VV 收缴)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 案件 涉及 *T*-1 的 非法 出版物 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全部 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

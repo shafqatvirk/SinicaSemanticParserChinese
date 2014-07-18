@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 加油 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 works harder on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-TPC (NN 外交))
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VP (ADVP (AD 不))
+			(VP (VV 能)
+			    (VP (VV 休兵))))
+		    (PU ，)
+		    (VP (ADVP (AD 反而))
+			(VP (VV 要)
+			    (VP (VV 加油)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	外交 
+	</arg>
+	<arg n="m" f="dis">
+	反而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="person getting gas"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 加油站))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 特别))
+		(VP (VV 提醒)
+		    (NP-OBJ (NN 民众))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					     (VP (VV 加油)))
+					 (LC 时))
+				(VP (VV 关机)))
+			    (PU ，)
+			    (VP (ADVP (AD 以免))
+				(VP (VV 引起)
+				    (NP-OBJ (NN 气爆))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 互换 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="exchangers"/>
+      <role argnum="1" argrole="thing exchanged"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 互换)
+			  (NP-OBJ (NP (QP (CD 两))
+				      (NP (NN 国)))
+				  (NP (NN 领事)
+				      (NN 条约)))))
+	      (NP (NN 批准书))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  两 国 领事 条约 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

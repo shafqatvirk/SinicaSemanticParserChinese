@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 为难 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="people things made difficult for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP-OBJ (NP-SBJ (QP (CD 一)
+				      (CLP (M 种)))
+				  (NP (NN 情况)))
+			  (VP (VV 使)
+			      (NP-OBJ (NN 评委们))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 有些))
+				      (VP (VA 为难)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  有些 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

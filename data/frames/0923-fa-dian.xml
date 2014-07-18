@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发电 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="generator, agent"/>
+      <role argnum="1" argrole="fuel, power"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP (NP-PN (NR 湘江))
+			      (NP-PN (NR 大源渡))
+			      (NP (NN 航电)
+				  (NN 枢纽)))
+			  (QP (OD 首)
+			      (CLP (M 台)))
+			  (NP (NN 机组)))
+		  (VP (VV 发电))) 
+	  </parse>
+	  <arg n="0">
+	  湘江 大源渡 航电 枢纽 首 台 机组 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

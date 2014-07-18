@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 看坏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is pessimistic about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 国际)
+		    (NN 媒体))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 不))
+		(VP (VV 看坏)
+		    (NP-OBJ (DNP (NP-PN (NR 亚洲))
+				 (DEG 的))
+			    (NP (NN 英文报)
+				(NN 市场)))))) 
+	</parse>
+	<arg n="0">
+	国际 媒体 
+	</arg>
+	<arg n="1">
+	亚洲 的 英文报 市场 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (ADVP (AD 不))
+		    (ADVP (AD 就))
+		    (PP (P 因为)
+			(IP (NP-SBJ (NN 景气))
+			    (VP (VV 看坏)))))
+	    (PU ，)
+	    (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 开)
+					(NP-OBJ (NN 花)
+						(NN 店)))
+				    (PU 、)
+				    (VP (ADVP (AD 专))
+					(VP (VV 卖)
+					    (NP-OBJ (NN 切花))))))
+			    (DEC 的)))
+		    (NP-APP (NN 老板))
+		    (NP-PN (NR 王年丰)))
+	    (ADVP (AD 近来))
+	    (NP-SBJ (NN 唉声))
+	    (VP (VV 连连))) 
+	</parse>
+	<arg n="1">
+	景气 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

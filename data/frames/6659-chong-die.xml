@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重叠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities overlapping"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NN 工作)
+		      (NN 范围))
+	      (VP (ADVP (AD 又))
+		  (PP (P 与)
+		      (NP-PN (NN 国安局)))
+		  (VP (VV 重叠)))) 
+	  </parse>
+	  <arg n="0">
+	  工作 范围 		
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 国安局 		
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 		
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 		
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 overlaps"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

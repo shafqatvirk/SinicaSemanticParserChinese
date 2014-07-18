@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开庭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="court"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-PN-SBJ (NP-PN (NR 北京市))
+			      (QP (OD 第一))
+			      (ADJP (JJ 中级))
+			      (NP (NN 人民)
+				  (NN 法院)))
+		   (VP (NP-TMP (NT 今天)
+			       (NT 上午))
+		       (VP (VP (VV 开庭))
+			   (VP (VV 审理)
+			       (AS 了)
+			       (NP-OBJ (IP-APP (NP-PN-SBJ (NR 郭辉))
+					       (VP (VP (VV 持)
+						       (NP-OBJ (NN 械)))
+						   (VP (VV 抢劫)
+						       (NP-OBJ (NN 邮政)
+							       (NN 储蓄所)))
+						   (PU 、)
+						   (VP (VV 杀死)
+						       (NP-OBJ (NN 营业员)))))
+				       (NP (NN 案))))
+			   (PU ，)
+			   (VP (VV 认定)
+			       (IP-OBJ (NP-PN-SBJ (NR 郭辉))
+				       (VP (VV 犯)
+					   (NP-OBJ (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+							       (VP (ADVP (AD 故意))
+								   (VP (VV 杀)
+								       (NP-OBJ (NN 人)))))
+						       (NP (NN 罪)))
+						   (PU 、)
+						   (NP (NN 抢劫罪))))))
+			   (PU ，)
+			   (VP (ADVP (AD 依法))
+			       (VP (VP (VV 判处)
+				       (NP-PN-IO (NR 郭辉))
+				       (NP-OBJ (NN 死刑)))
+				   (PU ，)
+				   (VP (VV 剥夺)
+				       (NP-OBJ (NN 政治)
+					       (NN 权利))
+				       (NP-EXT (NN 终身)))))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  北京市 第一 中级 人民 法院 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 上午 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

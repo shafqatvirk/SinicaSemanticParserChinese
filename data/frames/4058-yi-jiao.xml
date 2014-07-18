@@ -1,0 +1,233 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 移交 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity turned over"/>
+      <role argnum="2" argrole="entity arg1 is turned over to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-IMP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 移交)
+		      (NP-OBJ (NN 土地)
+			      (NN 基金))
+		      (PP (P 予)
+			  (NP-PN (NP-PN (NR 香港))
+				 (ADJP (JJ 特别))
+				 (NP (NN 行政区)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  土地 基金 
+	  </arg>
+	  <arg n="2">
+	  予 香港 特别 行政区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 土地)
+		      (NN 基金))
+	      (VP (PP-TMP (P 在)
+			  (NP (NT 七月)
+			      (NT 一日)))
+		  (VP (VV 移交)
+		      (NP-OBJ (NP-PN (NP-PN (NR 香港))
+				     (ADJP (JJ 特别))
+				     (NP (NN 行政区)))
+			      (NP (NN 政府)))))) 
+	  </parse>
+	  <arg n="1">
+	  土地 基金 
+	  </arg>
+	  <arg n="2">
+	  香港 特别 行政区 政府 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 七月 一日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 移交)
+		  (NP-OBJ (NN 逃犯)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  逃犯 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 中央)
+		      (NN 政府))
+	      (VP (NP-TMP (NT 今日))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 土地)
+				      (NN 基金))
+			      (VP (VV 移交)
+				  (NP-OBJ (NN 特区)
+					  (NN 政府))))))) 
+	  </parse>
+	  <arg n="0">
+	  中央 政府 
+	  </arg>
+	  <arg n="1">
+	  土地 基金 
+	  </arg>
+	  <arg n="2">
+	  特区 政府 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity turned over"/>  
+      <role argnum="2" argrole="entity arg1 is turned over to"/>
+      <role argnum="3" argrole="action arg2 performs to arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="controlip" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 今后))
+		  (PU ，)
+		  (NP-SBJ (NN 外汇)
+			  (NN 管理)
+			  (NN 部门))
+		  (VP (VP (PP (P 除)
+			      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 继续)
+					   (VP (VV 完善)
+					       (NP-OBJ (DNP (NP (NN 外汇)
+								(NN 管理))
+							    (DEG 的))
+						       (NP (NN 法律)
+							   (PU 、)
+							   (NN 法规))))))
+				   (LC 外)))
+			  (PU ，)
+			  (ADVP (AD 还))
+			  (ADVP (AD 将))
+			  (VP (VV 继续)
+			      (VP (VV 加强)
+				  (NP-OBJ (DNP (PP (P 对)
+						   (NP (ADJP (JJ 违规))
+						       (ADJP (JJ 违法))
+						       (NP (NN 案件))))
+					       (DEG 的))
+					  (NP (NN 查处)
+					      (NN 力度))))))
+		      (PU ，)
+		      (VP (PP-DIR (P 对)
+				  (NP (DNP (ADJP (JJ 违法)
+						 (JJ 违规))
+					   (DEG 的))
+				      (ADJP (JJ 有关))
+				      (NP (NN 机构)
+					  (CC 和)
+					  (NN 单位))))
+			  (PU ，)
+			  (PP (P 在)
+			      (LCP (NP (NN 处罚))
+				   (LC 之外)))
+			  (ADVP (AD 还))
+			  (VP (VV 要)
+			      (VP (VV 加强)
+				  (NP-OBJ (DNP (PP-DIR (P 对)
+						       (IP (NP-SBJ (PN 其))
+							   (VP (NP-TMP (NT 日后))
+							       (VP (VV 购汇)))))
+					       (DEG 的))
+					  (NP (NN 监管))))))
+		      (PU ，)
+		      (VP (PP-DIR (P 对)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 触犯)
+						      (NP-OBJ (NN 刑律))))
+					      (DEC 的)))))
+			  (ADVP (AD 将))
+			  (VP (VV 移交)
+			      (NP-OBJ (NN 公安)
+				      (NN 部门))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 处理)))))
+		      (PU ，)
+		      (VP (MSP 以)
+			  (VP (VV 维护)
+			      (NP-OBJ (DNP (NP (NN 金融)
+					       (NN 秩序))
+					   (DEG 的))
+				      (NP (NN 稳定))))))) 
+	  </parse>
+	  <arg n="0">
+	  外汇 管理 部门 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-1 触犯 刑律 的 
+	  </arg>
+	  <arg n="2">
+	  公安 部门 
+	  </arg>
+	  <arg n="3">
+	  *PRO* 处理 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

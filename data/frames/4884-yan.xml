@@ -1,0 +1,175 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 演 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 puts on stage"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-PN-SBJ (NR 李登辉))
+				(VP (VV 演)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(NP-PRD (NN 歌仔戏)))) 
+	</parse>
+	<arg n="0">
+	李登辉 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 公主))
+	    (VP (VP (ADVP (AD 不但))
+		    (ADVP (AD 真的))
+		    (VP (VA 痛)
+			(DER 得)
+			(VP-EXT (VRD (VV 哭)
+				     (VV 出来)))))
+		(PU ，)
+		(VP (ADVP (AD 还))
+		    (VP (VV 躲到)
+			(NP-OBJ (NN 後台)))
+		    (VP (ADVP (AD 不))
+			(VP (VV 演)
+			    (AS 了)))))) 
+	</parse>
+	<arg n="0">
+	公主 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (DNP (NP-PN (NP-PN (NR 香港))
+					(ADJP (JJ 无线))
+					(NP (NN 电视台)))
+				 (DEG 的))
+			    (NP (NN 写实剧)))
+		    (NP-TTL (PU 《)
+			    (ADJP (JJ 真))
+			    (NP (NN 情))
+			    (PU 》)))
+	    (VP (VP (ADVP (AD 大))
+		    (VP (VV 受)
+			(NP-OBJ (NN 欢迎))))
+		(PU ，)
+		(VP (VP (ADVP (AD 一))
+			(VP (VV 演)
+			    (QP-EXT (CD 好几)
+				    (CLP (M 年)))))
+		    (VP (VPT (VV 停)
+			     (AD 不)
+			     (VV 了)))))) 
+	</parse>
+	<arg n="1">
+	香港 无线 电视台 的 写实剧 《 真 情 》 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<arg n="m" f="ext">
+	好几 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="role arg0 plays"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP(QP-SBJ (CD 一)
+			   (CLP (M 个)))
+		   (VP (VV 演)
+		       (NP-OBJ (NN 老鼠)))) 
+	</parse>
+	<arg n="0">
+	一 个 
+	</arg>
+	<arg n="1">
+	老鼠 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3" edef="evolve">
+    <role argnum="0" argrole="thing which evolves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (QP (CD 七)
+			     (CLP (-NONE- *RNR*-3)))
+			 (PU 、)
+			 (QP (CD 八)
+			     (CLP-3 (M 年))))
+		     (LC 来))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NN 美浓人))
+			 (DEG 的))
+		    (IP-APP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 爱)
+				    (NP-OBJ (NN 乡)))
+				(VP (VV 护)
+				    (NP-OBJ (NN 土)))))
+		    (NP (NN 运动)))
+	    (VP (VP (ADVP (AD 越))
+		    (VP (VV 演)))
+		(VP (ADVP (AD 越))
+		    (VP (VA 烈))))) 
+	</parse>
+	<arg n="0">
+	美浓人 的 *PRO* 爱 乡 护 土 运动 
+	</arg>
+	<arg n="m" f="adv">
+	越 
+	</arg>
+	<arg n="m" f="tmp">
+	七 *RNR*-3 、 八 年 来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

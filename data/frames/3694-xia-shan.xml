@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下山 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving down the hill"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 这样))
+			  (VP (VV 看来))))
+	      (PU ，)
+	      (NP-SBJ (NN 车子))
+	      (VP (ADVP (AD 确实))
+		  (ADVP (AD 在))
+		  (VP (VP (VV 载)
+			  (NP-OBJ (PN 我们)))
+		      (VP (VV 下山))
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="0">
+	  车子 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  确实 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 这样 看来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

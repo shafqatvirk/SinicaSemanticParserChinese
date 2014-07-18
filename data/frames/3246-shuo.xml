@@ -1,0 +1,458 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 说 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing said"/>
+      <role argnum="2" argrole="text where the quotation is from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 爱尔兰)
+			 (NR 共和军))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (QP (CD 一)
+				       (CLP (M 份)))
+				   (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *pro*))
+					       (VP (PP-DIR (P 向)
+							   (NP (NP-PN (NR 英国)
+								      (CC 和)
+								      (NR 爱尔兰))
+							       (NP (NN 新闻)
+								   (NN 传媒))))
+						   (VP (VV 发表)
+						       (NP-OBJ (-NONE- *T*-1)))))
+					   (DEC 的)))
+				   (NP (NN 声明)))
+			       (LC 中)))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (UCP-ADV (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VRD (VV 考虑)
+						    (VV 到))
+					       (NP-OBJ (DNP (NP (NT 当前))
+							    (DEG 的))
+						       (NP (NN 形势)))))
+				       (CC 和)
+				       (PP-PRP (P 为了)
+					       (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 推进)
+						       (NP-OBJ (NP-PN (NR 北爱尔兰))
+							       (NP (NN 和平)
+								   (NN 进程)))))))
+			      (PU ，)
+			      (NP-SBJ (DP (DT 该))
+				      (NP (NN 组织)))
+			      (VP (VP (VV 作出)
+				      (AS 了)
+				      (NP-OBJ (ADJP (JJ 上述))
+					      (NP (NN 决定)))
+				      (PU ，))
+				  (CC 并)
+				  (VP (BA 把)
+				      (IP-OBJ (NP-SBJ (DP (DT 这)
+							  (QP (CD 一)))
+						      (NP (NN 决定)))
+					      (VP (VV 通知)
+						  (AS 了)
+						  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							      (CP (IP (NP-SBJ (PN 它))
+								      (VP (VV 下属)
+									  (NP-OBJ (-NONE- *T*-2))))
+								  (DEC 的)))
+							  (DP (DT 所有))
+							  (NP (NN 部队))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  爱尔兰 共和军 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 考虑 到 当前 的 形势 和 为了 *PRO* 推进 北爱尔兰 和平 进程 ， 该 组织 作出 了 上述 决定 ， 并 把 这 一 决定 通知 了 *OP* 它 下属 *T*-2 的 所有 部队 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  在 一 份 *OP* *pro* 向 英国 和 爱尔兰 新闻 传媒 发表 *T*-1 的 声明 中 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 叶利钦))
+	      (VP (VV 说)
+		  (PU ，)
+		  (IP-OBJ (IP-ADV (PU “)
+				  (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 对)
+					      (NP (NP-PN (NR 俄罗斯))
+						  (PU 、)
+						  (NP-PN (NR 德国))
+						  (CC 和)
+						  (NP (DP (DT 整)
+							  (CLP (M 个)))
+						      (NP-PN (NR 欧洲))
+						      (NP (NN 历史)))))
+				      (VP (MSP 来)
+					  (VP (VV 说))))
+				  (PU ”))
+			  (PU ，)
+			  (NP-SBJ (NT １９９４年)
+				  (NT ８月)
+				  (NT ３１日))
+			  (VP (ADVP (AD 都))
+			      (VP (VC 是)
+				  (NP-PRD (QP (CD 一)
+					      (CLP (M 个)))
+					  (NP (NN 转折点)))))))) 
+	  </parse>
+	  <arg n="0">
+	  叶利钦 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  “ *PRO* 对 俄罗斯 、 德国 和 整 个 欧洲 历史 来 说 ” ， １９９４年 ８月 ３１日 都 是 一 个 转折点 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 唐纳))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (PP-TMP (P 在)
+						  (LCP (IP (NP-SBJ (-NONE- *pro*))
+							   (VP (PP-DIR (P 对)
+								       (NP (NN 外国)
+									   (NN 记者)))
+							       (VP (VV 阐述)
+								   (NP-OBJ (DNP (NP (NP-PN (NR 澳))
+										    (PP (P 对)
+											(NP-PN (NR 亚洲)))
+										    (NP (NN 政策)))
+										(DEG 的))
+									   (NP (NN 框架))))))
+						       (LC 时)))
+					  (VP (VV 说)
+					      (NP-OBJ (DP (DT 这)
+							  (CLP (M 番)))
+						      (NP (NN 话))))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  这 番 话 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *pro* 对 外国 记者 阐述 澳 对 亚洲 政策 的 框架 时 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 声明))
+	      (VP (VV 说)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-PN-SBJ (NR 爱尔兰)
+							 (NN 共和军))
+					      (VP (VV 宣布)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 停火)))
+			  (PU ，)
+			  (VP (PP-PRP (P 为)
+				      (NP (DNP (NP (NP-PN (NR 北爱尔兰))
+						   (NP (NN 问题)))
+					       (DEG 的))
+					  (NP (PU “)
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VA 公正)
+							      (CC 和)
+							      (VA 永久)))
+						      (DEC 的)))
+					      (NP (NN 解决))
+					      (PU ”))))
+			      (VP (VV 提供)
+				  (AS 了)
+				  (NP-OBJ (NN 机会))))))) 
+	  </parse>
+	  <arg n="2">
+	  声明 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  *OP* 爱尔兰 共和军 宣布 *T*-1 的 停火 ， 为 北爱尔兰 问题 的 “ *OP* *T*-2 公正 和 永久 的 解决 ” 提供 了 机会 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NR 齐宝芳))
+		      (PU ，)
+		      (DNP (NP-PN (NR 山东省)
+				  (NR 寿光市))
+			   (DEG 的))
+		      (QP (CD 一)
+			  (CLP (M 位)))
+		      (NP (NN 菜农)))
+	      (PU ，)
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 前来)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 视察)))))
+				      (DEC 的)))
+			      (NP (NN 人大)
+				  (NN 代表))))
+		  (ADVP (AD 这样))
+		  (VP (VV 说)))) 
+	  </parse>
+	  <arg n="0">
+	  齐宝芳 ， 山东省 寿光市 的 一 位 菜农 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  这样 	  	  	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 *OP* *T*-1 前来 *PRO* 视察 的 人大 代表 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity considered"/>
+      <role argnum="1" argrole="perspective considered from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (P 对于)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 正))
+						      (VP (VV 处在)
+							  (LCP-OBJ (NP (ADJP (ADVP (AD 有史以来))
+									     (ADJP (JJ 最好)))
+								       (NP (NN 经济)
+									   (NN 发展)
+									   (NN 环境)))
+								   (LC 中)))))
+					      (DEC 的)))
+				      (NP-PN (NR 上海))))
+			      (VP (MSP 来)
+				  (VP (VV 说)))))
+		  (PU ，)
+		  (NP-SBJ (DP (DT 这)
+			      (CLP (M 个)))
+			  (NP (NN 发展)
+			      (NN 速度)))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 完全))
+					      (VP (VV 可能)
+						  (VP (VV 达到)))))
+				      (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  对于 *OP* *T*-1 正 处在 有史以来 最好 经济 发展 环境 中 的 上海 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="speaker"/>
+      <role argnum="1" argrole="language"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 说)
+			  (NP-OBJ (NN 英语))))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (P 如同)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 讲)
+					  (NP-OBJ (NN 普通话)))))
+			      (VP (VA 一样))))
+		  (VP (VCD (VA 流利)
+			   (VA 通顺))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  英语 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="determiner"/>
+      <role argnum="1" argrole="thing determined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (CS 只要))
+			      (VP (VP (VE 有)
+				      (IP-OBJ (NP-SBJ (ADJP (JJ 好))
+						      (NN 教练))
+					      (VP (VV 扶持))))
+				  (PU 、)
+				  (VP (VV 改进)
+				      (NP-OBJ (NN 战术)
+					      (CC 与)
+					      (NN 技巧))))))
+		  (PU ，)
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (NP-ADV (DP (DT 下)
+					  (QP (CD 一)))
+				      (NP (NN 回合)))
+			      (VP (VV 卷土重来))))
+		  (PU ，)
+		  (IP-SBJ (NP-SBJ (NN 胜负))
+			  (VP (VA 如何)))
+		  (PU ，)
+		  (VP (ADVP (AD 还))
+		      (VP (VPT (VV 说)
+			       (AD 不)
+			       (VV 准)))))
+	      (SP 呢)
+	      (PU 。)
+	      (PU 」)) 
+	  </parse>
+	  <arg n="1">
+	  胜负 如何 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *pro* 只要 有 好 教练 扶持 、 改进 战术 与 技巧 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 下 一 回合 卷土重来 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="predicate that doesn't apply to arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((NP-SBJ (QP (CD 许多))
+			   (NP (NN 中年族) ))
+		   (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			       (VP (ADVP (CS 虽然))
+				   (VP (VPT (VV 说)
+					    (AD 不)
+					    (VV 上))
+				       (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					       (VP (VV 失业)))))))) 
+	  </parse>
+	  <arg n="0">
+	  许多中年族	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  虽然	  
+	  </arg>
+	  <arg n="1">
+	  失业	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 要)
+			  (NP-OBJ (PN 他))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (NP-ADV (QP (CD 一))
+					  (NP (NN 人)))
+				  (VP (VV 承担)
+				      (NP-OBJ (NN 後果)))))))
+	      (VP (ADVP (AD 实在))
+		  (VP (VPT (VV 说)
+			   (AD 不)
+			   (VV 过去))))) 
+	  </parse>
+	  <arg n="1">
+	  要 他 一 人 承担 後果	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  实在	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

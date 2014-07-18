@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 研读 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing studied"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 一)
+			      (CLP (M 群)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 来自)
+					  (NP-PN-OBJ (NR 台湾))))
+				  (DEC 的)))
+			  (NP (NN 学生)))
+		  (VP (ADVP (AD 正))
+		      (ADVP (AD 在))
+		      (LCP-ADV (NP (DNP (NP (NN 老师))
+					(DEG 的))
+				   (NP (NN 指导)))
+			       (LC 下))
+		      (PU ，)
+		      (ADVP (AD 悉心))
+		      (VP (VV 研读)
+			  (NP-OBJ (NN 中医)
+				  (NN 理论)
+				  (NN 课程)
+				  (PRN (PU －－)
+				       (NP-TTL (PU 《)
+					       (NN 本草)
+					       (NN 纲目)
+					       (PU 》))))))) 
+	  </parse>
+	  <arg n="0">
+	  一 群 *OP* *T*-1 来自 台湾 的 学生 	  
+	  </arg>
+	  <arg n="1">
+	  中医 理论 课程 －－ 《 本草 纲目 》 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  悉心 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  老师 的 指导 下 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

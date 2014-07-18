@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 前往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 嘉宾))
+	      (VP (ADVP (AD 则))
+		  (PP-TMP (P 在)
+			  (LCP (NP (NN 典礼))
+			       (LC 後)))
+		  (VP (VP (VV 前往)
+			  (QP-OBJ (NP (NN 会展)
+				      (NN 中心))
+				  (QP (CD 五)
+				      (CLP (M 楼)))))
+		      (VP (VV 观赏))))) 
+	  </parse>
+	  <arg n="0">
+	  嘉宾 
+	  </arg>
+	  <arg n="1">
+	  会展 中心 五 楼 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 典礼 後 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

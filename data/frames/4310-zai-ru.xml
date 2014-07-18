@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 载入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is written into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-SBJ (NP-APP (NT 一九九七年)
+			      (NT 七月)
+			      (NT 一日))
+		      (DP (DT 这)
+			  (QP (CD 一)
+			      (CLP (M 天)))))
+	      (PU ，)
+	      (VP (ADVP (AD 将))
+		  (PP-MNR (P 作为)
+			  (NP-MNR (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 值得)
+						  (IP-OBJ (NP-SBJ (NN 人们))
+							  (VP (ADVP (AD 永远))
+							      (VP (VV 纪念))))))
+					  (DEC 的)))
+				  (NP (NN 日子))))
+		  (VP (VV 载入)
+		      (NP-OBJ (NN 史册))))) 
+	  </parse>
+	  <arg n="0">
+	  一九九七年 七月 一日 这 一 天 
+	  </arg>
+	  <arg n="1">
+	  史册 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  作为 *OP* *T*-3 值得 人们 永远 纪念 的 日子 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

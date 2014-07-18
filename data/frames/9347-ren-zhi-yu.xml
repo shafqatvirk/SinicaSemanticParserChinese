@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 任职於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 holds a position"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-93 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-93))
+			      (VP (VV 任职於)
+				  (NP-OBJ (NN 传播)
+					  (NN 公司))))
+			  (DEC 的)))
+		  (NP-PN (NR 张晓方))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-93 
+	  </arg>
+	  <arg n="1">
+	  传播 公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

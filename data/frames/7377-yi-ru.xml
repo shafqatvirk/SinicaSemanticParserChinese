@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 移入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 moves"/>
+    <role argnum="2" argrole="place arg1 is moved into"/>
+    <role argnum="3" argrole="place arg1 is moved from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-SBJ (DNP (DP (DT 其他))
+			 (DEG 的))
+		    (QP (CD 五分之四)))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-5 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-5))
+					(VP (PP-DIR (P 从)
+						    (NP (NN 外地)))
+					    (VP (VV 移入))))
+				    (DEC 的))))))) 
+	</parse>
+	<arg n="0">
+	*T*-5 
+	</arg>
+	<arg n="3">
+	从 外地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

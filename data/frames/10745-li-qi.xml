@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 离弃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 deserts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 它们))
+	    (VP (VP (ADVP (AD 彷佛))
+		    (VP (LB 被)
+			(CP-OBJ (WHNP-4 (-NONE- *OP*))
+				(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VCD (VV 相依)
+								 (VV 相持))
+							    (QP-EXT (CD 千)
+								    (CLP (M 年)))))
+						    (DEC 的)))
+					    (NP (NN 同伴)))
+				    (VP (VV 离弃)
+					(NP-OBJ (-NONE- *T*-4)))))))
+		(PU ，)
+		(VP (DVP (VP (VA 孤独)))
+		    (VP (VV 承受)
+			(NP-OBJ (NN 环境)
+				(NN 压力)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 相依 相持 千 年 的 同伴 
+	</arg>
+	<arg n="1">
+	它们 
+	</arg>
+	<arg n="m" f="adv">
+	彷佛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

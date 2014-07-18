@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 激战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities fighting"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 安哥拉))
+			  (NP (NN 政府军)))
+		      (CC 和)
+		      (NP-PN (NR 安盟)))
+	      (VP (ADVP (AD 正))
+		  (PP-LOC (P 在)
+			  (NP (NP (DP (DT 该))
+				  (NP (NN 国)))
+			      (NP (NN 中部)
+				  (NN 地区))))
+		  (VP (VV 进行)
+		      (NP-OBJ (NN 激战))))) 
+	  </parse>
+	  <arg n="0">
+	  安哥拉 政府军 和 安盟 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 该 国 中部 地区 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 震乱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity arg0 interrupts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 场)))
+		      (ADJP (JJ 大))
+		      (NP (NN 地震)))
+	      (VP (VV 震乱)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP-PN (NR 邓相扬))
+			       (DEG 的))
+			  (NP (NN 计画))))) 
+	  </parse>
+	  <arg n="0">
+	  一 场 大 地震 
+	  </arg>
+	  <arg n="1">
+	  邓相扬 的 计画 
+	  </arg>
+	  <arg n="m" f="dis">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

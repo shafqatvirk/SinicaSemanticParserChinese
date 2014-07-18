@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 比比看 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="respect in which arg0 competes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP-Q (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 比比看)
+			    (PU ，)
+			    (IP-OBJ (NP-WH-SBJ (PN 谁))
+				    (VP (ADVP (AD 最))
+					(VP (VA 帅))))))
+		  (PU ？)
+		  (PRN (PU ——)
+		       (NP (NP (NN 世界))
+			   (ADJP (JJ 著名))
+			   (ADJP (JJ 摩天))
+			   (NP (NN 大楼))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  谁 最 帅 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

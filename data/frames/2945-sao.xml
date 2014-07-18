@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扫 </id>
+    <frameset id="f1" edef="sweep">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing swept"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (CC 或)
+		  (VP (VV 扫)
+		      (NP-OBJ (NN 雪)))
+		  (PU ，)
+		  (CC 或)
+		  (VP (PP-LOC (P 在)
+			      (NP (NP (NN 街道))
+				  (QP (CD 两))
+				  (NP (NN 边))))
+		      (VP (VV 宣传)
+			  (NP-OBJ (NN 九冬会)))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 	  
+	  </arg>
+	  <arg n="1">
+	  雪 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="pass quickly">
+      <role argnum="0" argrole="thing passing quickly"/>
+      <role argnum="1" argrole="location passed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-PN-SBJ (NR 台湾))
+		      (VP (ADVP (CS 虽))
+			  (VP (ADVP (AD 只))
+			      (VP (VV 遭)
+				  (IP-OBJ (NP-SBJ (NN 风暴)
+						  (NN 边缘))
+					  (VP (VV 扫)
+					      (AS 过)))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (ADJP (JJ 後续))
+		      (NP (NN 冲击)))
+	      (VP (ADVP (AD 将))
+		  (QP-ADV (CD 一)
+			  (CLP (M 波波)))
+		  (VP (VV 涌到)))) 
+	  </parse>
+	  <arg n="0">
+	  风暴 边缘 	  
+	  </arg>
+	  <arg n="1">
+	  台湾 
+	  </arg>
+	  <arg n="m" f="dis">
+	  虽 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

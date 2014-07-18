@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="fighting for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 韩国))
+		      (NP (NN 厂商)))
+	      (VP (PP-PRP (P 为了)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 抢)
+				  (NP-OBJ (NN 美金)))))
+		  (VP (MSP 而)
+		      (VP (PU 『)
+			  (VV 跳楼大拍卖)
+			  (PU 』))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  美金 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing done in a hurry"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 温州))
+		      (NP (NN 人民)))
+	      (VP (VP (NP-TMP (NT 目前))
+		      (ADVP (AD 紧急))
+		      (VP (VRD (VV 行动)
+			       (VV 起来))))
+		  (PU ，)
+		  (VP (VP (VV 抢)
+			  (NP-OBJ (NN 险)))
+		      (VP (VV 筑)
+			  (NP-OBJ (NN 坝)))
+		      (VP (VV 保)
+			  (NP-OBJ (NN 家园)))))) 
+	  </parse>
+	  <arg n="0">
+	  温州 人民 	  
+	  </arg>
+	  <arg n="1">
+	  险 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="position move to quickly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 九六年)
+		      (NT 年底))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 韩国))
+	      (VP (VP (VV 抢)
+		      (PP (P 在)
+			  (LCP (NP (DP (DT 其他))
+				   (ADJP (JJ 小))
+				   (NP (NN 龙)))
+			       (LC 之前))))
+		  (PU ，)
+		  (VP (VV 加入)
+		      (NP-OBJ (CP (WHNP-5 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-5))
+					  (VP (VE 有)
+					      (NP-OBJ (DNP (NP (PU 「)
+							       (NP (ADJP (JJ 富))
+								   (NP (NN 国)))
+							       (NP (NN 俱乐部))
+							       (PU 」))
+							   (DEG 之))
+						      (NP (NN 称)))))
+				      (DEC 的)))
+			      (NP-PN-APP (PU 「)
+					 (NP (NP (NN 经济))
+					     (NP (NN 合作)
+						 (CC 暨)
+						 (NN 发展)))
+					 (NP (NN 组织))
+					 (PU 」))
+			      (NP-PN (NR OECD)))))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 	  
+	  </arg>
+	  <arg n="1">
+	  在 其他 小 龙 之前 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  九六年 年底 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

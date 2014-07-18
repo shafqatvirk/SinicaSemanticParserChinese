@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 哄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NP-APP (DNP (NP (PN 我))
+				 (DEG 的))
+			    (NP (NN 小时候)))
+		    (PU ＞)
+		    (NP (CP (WHPP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (PP-TMP (-NONE- *T*-1))
+					(VP (VCD (VV 吵闹)
+						 (VV 任性)))))
+				(DEC 的)))
+			(NP (NN 时候))))
+	    (PU ＞)
+	    (NP-SBJ (DNP (NP (PN 我))
+			 (DEG 的))
+		    (NP (NN 外婆)))
+	    (VP (ADVP (AD 总))
+		(VP (VV 会)
+		    (VP (VP (VV 唱歌))
+			(VP (VV 哄)
+			    (NP-OBJ (PN 我))))))) 
+	</parse>
+	<arg n="0">
+	我 的 外婆 
+	</arg>
+	<arg n="1">
+	我 
+	</arg>
+	<arg n="m" f="adv">
+	总 
+	</arg>
+	<arg n="m" f="tmp">
+	我 的 小时候 ＞ *OP* *pro* *T*-1 吵闹 任性 的 时候 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (LCP (IP (DNP (NP (PN 她))
+				  (DEG 的))
+			     (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VP (ADVP (AD 半))
+					 (VP (VV 哄)))
+				     (VP (ADVP (AD 半))
+					 (VP (VV 逼))))))
+			 (LC 下)))
+	    (PU ，)
+	    (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 还))
+		(ADVP (AD 曾))
+		(VP (VP (VV 用)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 有限)))
+					(DEC 的)))
+				(NP (NN 字汇))))
+		    (VP (VV 写)
+			(AS 了)
+			(NP-OBJ (QP (CD 几)
+				    (CLP (M 首)))
+				(NP (NN 英文)
+				    (NN 诗))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	半 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

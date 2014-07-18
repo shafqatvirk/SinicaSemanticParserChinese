@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 烹煮 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cook"/>
+    <role argnum="1" argrole="thing arg0 cooks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 选择)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (NP-LOC (NN 现场))
+					    (NP-MNR (NN 手工))
+					    (VP (VV 制作)
+						(PU 、)
+						(VP (VRD (VV 烹煮)
+							 (VV 出来))))))
+				    (DEC 的)))
+			    (ADJP (JJ 新鲜))
+			    (NP (NN 贡丸))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="mnr">
+	手工 
+	</arg>
+	<arg n="m" f="loc">
+	现场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

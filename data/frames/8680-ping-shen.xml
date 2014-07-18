@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 评审 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 evaluates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (QP-ADV (OD 首)
+			      (CLP (M 次)))
+		      (VP (VP (VV 分成)
+			      (QP-OBJ (NP-APP (NN 艺术)
+					      (PU 、)
+					      (NN 商业))
+				      (QP (CD 两)
+					  (CLP (M 类)))))
+			  (VP (VV 评审))))
+		  (PU ，)
+		  (VP (VV 让)
+		      (NP-OBJ (-NONE- *pro*))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 井水不犯河水))))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 各))
+			  (VP (VV 选)
+			      (NP-OBJ (QP (CD 五)
+					  (CLP (M 部)))
+				      (NP (NN 影片)))))
+		      (VP (VV 补助)
+			  (QP-OBJ (CD 一千万)
+				  (CP (M 元))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  首 次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

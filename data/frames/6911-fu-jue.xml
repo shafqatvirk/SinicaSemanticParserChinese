@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 复决 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes decision on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 复决)
+				(NP-OBJ (NP-PN (NN 立法院))
+					(NP (NN 修宪案)))))
+			(PU 、)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 弹劾)
+				(NP-OBJ (NN 正副总统))))
+			(CC 及)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 议决)
+				(NP-OBJ (NP (NN 领土)
+					    (NN 变更))
+					(NP (NN 案)))))
+			(ETC 等))
+		(QP (CD 三))
+		(NP (NN 权))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	立法院 修宪案 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ-1 (-NONE- *pro*))
+		(VP (VP (PP-LGS (P 由)
+				(NP-PN (NN 立法院)))
+			(VP (VV 提出)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 冻结)
+					(NP-OBJ (NP-PN (NN 国大))
+						(NP (NN 修宪案)))))))
+		    (PU ，)
+		    (VP (PP-LGS (P 由)
+				(NP-PN (NN 国大)))
+			(VP (VP (VV 召开)
+				(NP-OBJ (NN 临时会)))
+			    (VP (VV 复决)
+				(NP-OBJ (-NONE- *-1))))))) 
+	</parse>
+	<arg n="0">
+	由 国大 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

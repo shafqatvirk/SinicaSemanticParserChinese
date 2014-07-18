@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 直指 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 points directly at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (DP-ADV (DT 这)
+		      (CLP (M 次)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 更))
+		  (VP (VV 直指)
+		      (NP-OBJ (DNP (NP (PU 「)
+				       (NT 二二八)
+				       (NN 事件)
+				       (PU 」))
+				   (DEG 的))
+			      (NP (NN 政治)
+				  (NN 禁忌)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  「 二二八 事件 」 的 政治 禁忌 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这 次 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

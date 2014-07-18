@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扩充 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing expanded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP-PN (NR 韩国))
+				    (DEG 的))
+			       (NP (NN 错误)
+				   (NN 示范)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 泰国)
+			     (PU 、)
+			     (NR 印尼))
+		      (NP (NN 石化业)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 纷纷))
+		  (VP (VSB (VV 举债)
+			   (VV 扩充))))) 
+	  </parse>
+	  <arg n="0">
+	  泰国 、 印尼 石化业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纷纷 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 韩国 的 错误 示范 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

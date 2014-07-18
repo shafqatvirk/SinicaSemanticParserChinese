@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 咆哮 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity roaring"/>
+      <role argnum="1" argrole="thing arg0 utters"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 迎接)
+				      (NP-OBJ (NN 风浪))
+				      (VP-EXT (ADVP (AD 最))
+					      (VP (VA 烈)))))
+			      (DEC 的)))
+		      (LCP (NP (NN 北))
+			   (LC 端))
+		      (NP-PN (NR 公馆)
+			     (NN 海岸)))
+	      (PU ，)
+	      (VP (ADVP (AD 更))
+		  (VP (VC 是)
+		      (VP (NP-ADV (NN 日日夜夜))
+			  (VP (VV 发出)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP (-NONE- *T*-2))
+						  (VP (PP (P 与)
+							  (NP (NN 天)))
+						      (VP (VV 抗争))))
+					      (DEC 的)))
+				      (NP (NN 咆哮)
+					  (NN 怒吼)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 迎接 风浪 最 烈 的 北 端 公馆 海岸 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日日夜夜 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,167 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 注入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="2" argrole="entity filled"/>
+      <role argnum="1" argrole="thing arg2 is filled with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-PN-SBJ (NR 厦门港))
+			   (VP (NP-TMP (NT 今年))
+			       (VP (VV 成为)
+				   (NP-OBJ (CP (WHPP-3 (-NONE- *OP*))
+					       (IP (NP-SBJ (NP (NN 海峡))
+							   (QP (CD 两))
+							   (NP (NN 岸)))
+						   (VP (PP-LOC (-NONE- *T*-3))
+						       (VP (VV 直航)))))
+					   (NP (NN 试点港))))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NN 货物)
+		      (NN 运输))
+	      (VP (SB 被)
+		  (VP (VV 注入)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (NP (NN 生机)
+				  (CC 和)
+				  (NN 活力)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 新 的 生机 和 活力 
+	  </arg>
+	  <arg n="2">
+	  货物 运输 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  厦门港 今年 成为 *OP* 海峡 两 岸 *T*-3 直航 试点港 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (QP (OD 第六)
+				      (CLP (M 届)))
+				  (NP (NP-PN (NR 远东))
+				      (CC 及)
+				      (NP (NP (NN 南))
+					  (NP-PN (NR 太平洋))
+					  (NP (NN 地区))))
+				  (NP (NN 残疾人)
+				      (NN 运动会)))
+			   (DEG 的))
+		      (NP (NN 举行)))
+	      (PU ，)
+	      (VP (ADVP (AD 必))
+		  (ADVP (AD 将))
+		  (VP (PP-BNF (P 给)
+			      (NP (PN 她)))
+		      (VP (VV 注入)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 新)))
+					  (DEC 的)))
+				  (NP (NN 活力))))))) 
+	  </parse>
+	  <arg n="0">
+	  第六 届 远东 及 南 太平洋 地区 残疾人 运动会 的 举行 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 新 的 活力 
+	  </arg>
+	  <arg n="2">
+	  给 她 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  必 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 深圳))
+		      (ADJP (JJ 有关))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 负责))))
+		      (NP (NN 官员)))
+	      (VP (VV 表示)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VP (VV 要)
+				  (VP (BA 将)
+				      (IP-OBJ (NP-SBJ (PU “)
+						      (NR 深业)
+						      (NN 控股)
+						      (PU ”))
+					      (VP (VV 建成)
+						  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							      (CP (IP (NP-PN-TPC (NR 深圳))
+								      (NP-SBJ (-NONE- *T*-2))
+								      (VP (VV 参与)
+									  (NP-OBJ (NN 国际)
+										  (NN 资本)
+										  (NN 市场))))
+								  (DEC 的)))
+							  (NP (PU “)
+							      (NN 龙头)
+							      (PU ”)
+							      (NN 机构)))))))
+			      (PU ，)
+			      (VP (NP-TMP (ADJP (JJ 适当))
+					  (NP (NN 时候)))
+				  (ADVP (AD 将))
+				  (VP (VP (VV 注入)
+					  (NP-OBJ (DNP (NP (NN 母公司))
+						       (DEG 的))
+						  (ADJP (JJ 优质))
+						  (NP (NN 资产))))
+				      (VP (VV 加快)
+					  (NP-OBJ (NN 发展))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  母公司 的 优质 资产 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  适当 时候 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

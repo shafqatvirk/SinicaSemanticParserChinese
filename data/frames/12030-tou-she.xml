@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投射 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 project"/>
+      <role argnum="2" argrole="thing arg1 is projected onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (DNP (NP (NN 人民)
+		       (NN 解放军))
+		   (DEG 之))
+	      (NP (NN 武力)
+		  (NN 投射))) 
+	  </parse>
+	  <arg n="0">
+	  人民 解放军 
+	  </arg>
+	  <arg n="1">
+	  武力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 拥有)
+		  (NP-OBJ (DNP (QP (CD 一百二十寸))
+			       (DEG 的))
+			  (NP (NN 投射)
+			      (NN 萤幕))))) 
+	  </parse>
+	  <arg n="2">
+	  萤幕 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 信 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity believed in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC-1 (IP (NP-SBJ (PN 我))
+			    (VP (NP-TMP (NT 现在))
+				(PP-DIR (P 对)
+					(NP (DNP (UCP (LCP (NP (NN 报纸))
+							   (LC 上))
+						      (CC 和)
+						      (NP (NN 经纪人)))
+						 (DEG 的))
+					    (NP (NN 话))))
+				(ADVP (AD 都))
+				(ADVP (AD 不))
+				(VP (VV 信))))
+			(PU ，)
+			(IP (NP-SBJ (PN 我))
+			    (VP (ADVP (AD 只))
+				(VP (VV 需要)
+				    (VP (VV 听)
+					(NP-OBJ (DNP (NP (NN 球员))
+						     (DEG 的)))))))
+			(PU ，)
+			(PU ”))
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 位)))
+		      (NP (NN 谈判)
+			  (NN 委员)))
+	      (VP (VV 说)
+		  (IP-OBJ (-NONE- *T*-1)))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  对 报纸 上 和 经纪人 的 话 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

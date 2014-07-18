@@ -1,0 +1,118 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掏出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 digs out"/>
+    <role argnum="2" argrole="place arg1 is dug out from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 想)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 让)
+				(NP-OBJ (NN 投资人))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (PP-DIR (P 从)
+						(LCP (NP (NN 荷包))
+						     (LC 里)))
+					(VP (VP (VV 掏出)
+						(NP-OBJ (NN 钱)))
+					    (VP (VV 来))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	钱 
+	</arg>
+	<arg n="2">
+	从 荷包 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(QP (CD 一)))
+		    (NP (NN 掏)))
+	    (VP (ADVP (AD 却))
+		(VP (VV 掏出)
+		    (AS 了)
+		    (NP-OBJ (DNP (NP (QP (CD 一))
+				     (ADJP (JJ 大))
+				     (NP (NN 坑)))
+				 (DEG 的))
+			    (NP (NN 玉器)))))) 
+	</parse>
+	<arg n="1">
+	一 大 坑 的 玉器 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="adv">
+	这 一 掏 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然後))
+	    (NP-SBJ (PN 她))
+	    (VP (VP (PP-LOC (P 在)
+			    (LCP (NP (NN 身))
+				 (LC 上)))
+		    (ADVP (AD 又))
+		    (VP (VV 摸)
+			(AS 了)
+			(QP-OBJ (CD 一)
+				(CLP (M 通)))))
+		(PU ，)
+		(VP (ADVP (AD 好不容易))
+		    (ADVP (AD 又))
+		    (VP (VV 掏出)
+			(NP-OBJ (QP (CD 五)
+				    (CLP (M 毛)))
+				(NP (NN 钱))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	五 毛 钱 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="adv">
+	好不容易 
+	</arg>
+	<arg n="m" f="adv">
+	然後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

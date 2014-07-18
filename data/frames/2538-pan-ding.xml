@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 判定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="judge"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 判定)
+				       (NP-OBJ (NP (NN 进口)
+						   (NN 货物))
+					       (ADJP (JJ 原))
+					       (NP (NN 产地)))))
+			       (LC 时)))
+		  (ADVP (AD 往往))
+		  (VP (VV 存在)
+		      (NP-OBJ (NN 随意性))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  进口 货物 原 产地 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="judge"/>
+      <role argnum="1" argrole="party judged"/>
+      <role argnum="2" argrole="judgement"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 并))
+		  (VP (VV 委托)
+		      (NP-PN-OBJ (NR 美国)
+				 (NR ＡＤＬ)
+				 (NN 公司))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-LOC (P 在)
+				      (LCP (NP (DP (DT 这)
+						   (QP (CD 两)
+						       (CLP (M 家))))
+					       (NP (NN 公司)))
+					   (LC 中)))
+			      (VP (VV 判定)
+				  (QP-OBJ (CD 一)
+					  (CLP (M 家)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VC 为)
+					  (NP-PRD (NN 经营)
+						  (NN 主体)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 这 两 家 公司 中 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一 家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 经营 主体 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 丧失 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loser"/>
+      <role argnum="1" argrole="thing lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (NN 大陆))
+		  (VP (ADVP (CS 若))
+		      (VP (VC 是)
+			  (VP (PP-PRP (P 因为)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 坚守)
+					      (NP-OBJ (NN 人民币)
+						      (NN 汇率)))))
+			      (VP (MSP 而)
+				  (VP (VV 丧失)
+				      (NP-OBJ (NN 出口)
+					      (NN 竞争)
+					      (NN 优势)))))))) 
+	  </parse>
+	  <arg n="0">
+	  大陆 
+	  </arg>
+	  <arg n="1">
+	  出口 竞争 优势 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 *PRO* 坚守 人民币 汇率 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

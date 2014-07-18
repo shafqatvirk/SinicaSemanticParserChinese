@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 当作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="considerer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="considered as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-LOC (P 在)
+		      (NP (NN 城镇)))
+	      (PU ，)
+	      (NP-SBJ (NN 住房))
+	      (VP (ADVP (AD 却))
+		  (VP (SB 被)
+		      (VP (VV 当作)
+			  (NP-OBJ (NN 职工)
+				  (NN 福利)))))) 
+	  </parse>
+	  <arg n="1">
+	  住房 
+	  </arg>
+	  <arg n="2">
+	  职工 福利 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 城镇 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相距 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <role argnum="1" argrole="distance between members of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 例如))
+	      (NP-TPC (QP (CD 一)
+			  (CLP (M 只)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-2))
+				  (LCP-SBJ (NP (NN 铜尊))
+					   (LC 上))
+				  (VP (VV 出现)
+				      (AS 著)
+				      (NP (IP-APP (NP-SBJ (NN 虎))
+						  (VP (VV 食)
+						      (NP-OBJ (NN 人))))
+					  (NP (NN 浮雕)))))
+			      (DEC 的)))
+		      (NP (PU 「)
+			  (NN 龙虎尊)
+			  (PU 」)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LOC (P 在)
+			  (NP (CP (WHNP-3 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VV 相距)
+					  (LCP-OBJ (QP (ADVP (AD 近))
+						       (QP (CD 两千)
+							   (CLP (M 公里))))
+						   (LC 外)))))
+			      (PU 、)
+			      (DNP (NP-PN (NR 淮河)
+					  (NN 流域))
+				   (DEG 的))
+			      (NP-PN (NR 安徽省))))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-4))
+						  (VP (VV 酷似)))
+					      (DEC 的)))
+				      (NP (NN 文物)))
+			      (VP (VV 出土)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  近 两千 公里 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

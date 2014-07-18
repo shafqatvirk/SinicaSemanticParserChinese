@@ -1,0 +1,162 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="developer"/>
+      <role argnum="1" argrole="thing developed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-SBJ (DP (DT 这)
+				      (CLP (M 位)))
+				  (NP (NN 官员)))
+			  (VP (VV 介绍))))
+	      (PU ，)
+	      (NP-TMP (NT 目前))
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (ADVP (AD 共))
+		  (VP (VP (VV 开发)
+			  (NP-OBJ=1 (NN 油田))
+			  (QP-EXT=2 (CD 三百五十)
+				    (CLP (M 个))))
+		      (PU ，)
+		      (VP (NP-OBJ=1 (NN 气田))
+			  (QP-EXT=2 (CD 一百一十)
+				    (CLP (M 个))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  共 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  油田 	  	  
+	  </arg>
+	  <arg n="1" f="qty">
+	  三百五十 个 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 九江))
+	      (VP (VP (VC 是)
+		      (NP-PRD (DNP (NP-PN (NR 江西))
+				   (DEG 的))
+			      (NP (NN 北)
+				  (NN 大门))))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (PP-LOC (P 沿)
+						      (NP-PN (NR 长江)))
+					      (VP (VCD (VV 开放)
+						       (VV 开发)))))
+				      (DEC 的)))
+			      (NP (NN 重点)
+				  (NN 城市)
+				  (NN 之一)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(重点城市之一) 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  沿 长江 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (CS 虽然))
+		      (VP (VP (VRD (VV 开发)
+				   (VE 有))
+			      (NP-OBJ (ADJP (JJ 整车))
+				      (NP (NN 产品)))
+			      (NP-EXT (NP (QP (CD 三)
+					      (CLP (M 个)))
+					  (NP (NN 系列)))
+				      (NP (QP (CD 二十三)
+					      (CLP (M 个)))
+					  (NP (NN 品种)))))
+			  (PU ，)
+			  (VP (NP-OBJ (NN 改装车)
+				      (NN 产品))
+			      (NP-EXT (NP (QP (CD 三)
+					      (CLP (M 个)))
+					  (NP (NN 系列)))
+				      (NP (QP (CD 十二)
+					      (CLP (M 个)))
+					  (NP (NN 品种)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  整车 产品 	  	  
+	  </arg>
+	  <arg n="1" f="qty">
+	  三 个 系列 二十三 个 品种 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-TMP (P 到)
+			      (LCP (NP (DP (DT 本))
+				       (NP (NN 世纪)))
+				   (LC 末)))
+		      (PU ，)
+		      (VP (VP (VRD (VV 开发)
+				   (VV 出))
+			      (NP-OBJ (QP (CD 十)
+					  (CLP (M 个)))
+				      (NP (NN 专利)
+					  (NN 保护))
+				      (ADJP (JJ 新))
+				      (NP (NN 药))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  十 个 专利 保护 新 药 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

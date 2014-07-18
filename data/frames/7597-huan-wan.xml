@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 还完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="bargainer"/>
+    <role argnum="1" argrole="thing arg0 finishes bargaining"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 还完)
+				      (NP-OBJ (NN 价))))
+			  (PU ，)
+			  (ADVP (AD 并))
+			  (ADVP (AD 不))
+			  (VP (VV 买))))
+	      (PU ，)
+	      (VP (VC 是)
+		  (VP (VP (IP-ADV (NP-SBJ (NN 日子))
+				  (VP (VA 闷)
+				      (DER 得)
+				      (VP-EXT (VV 慌))))
+			  (VP (VP (VV 找)
+				  (NP-OBJ (NN 人)))
+			      (VP (VV 聊天))))
+		      (PU ？)
+		      (CC 还是)
+		      (VP (VV 作)
+			  (NP-OBJ (NP (NN 市场)
+				      (NN 价格))
+				  (NP (NN 调查))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	价 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

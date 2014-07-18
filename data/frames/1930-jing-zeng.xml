@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 净增 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="amount/number arg0 increases by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (PU “)
+			  (NT 八五)
+			  (PU ”))
+		      (NP (NN 期间)))
+	      (NP-SBJ (DP (DT 各)
+			  (CLP (M 项)))
+		      (NP (NN 存款)))
+	      (VP (VP (PP (P 比)
+			  (LCP (NP (NP (PU “)
+				       (NT 七五)
+				       (PU ”))
+				   (PRN (PU （)
+					(NP (NT 一九八六)
+					    (CC 至)
+					    (NT 一九九０年))
+					(PU ）)))
+			       (LC 末)))
+		      (VP (VV 净增)
+			  (QP-EXT (CD 五十亿)
+				  (CLP (M 元)))))
+		  (PU ，)
+		  (VP (ADVP (AD 年))
+		      (ADVP (AD 平均))
+		      (VP (VV 增长)
+			  (QP-EXT (CD 百分之二十七点四九)))))) 
+	  </parse>
+	  <arg n="0">
+	  各 项 存款 
+	  </arg>
+	  <arg n="1">
+	  五十亿 元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 “ 七五 ” （ 一九八六 至 一九九０年 ） 末 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  “ 八五 ” 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

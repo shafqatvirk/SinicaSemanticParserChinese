@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 闭上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 closes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 有些))
+		    (NP (NN 人)))
+	    (VP (VP (ADVP (AD 乾脆))
+		    (VP (VV 闭上)
+			(NP-OBJ (NN 眼睛))))
+		(PU 、)
+		(VP (ADVP (AD 微微))
+		    (VP (VV 轻晃)
+			(AS 著)))
+		(VP (VV 打)
+		    (NP-OBJ (NN 拍子)))
+		(PU ，)
+		(VP (ADVP (AD 彷佛))
+		    (VP (VV 在)
+			(NP-OBJ (NN 自家)
+				(NN 卧室)))))) 
+	</parse>
+	<arg n="0">
+	有些 人 
+	</arg>
+	<arg n="1">
+	眼睛 
+	</arg>
+	<arg n="m" f="adv">
+	乾脆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

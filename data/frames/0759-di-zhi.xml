@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抵制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 带头)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 执行)
+				  (NP-OBJ (DNP (NP (NN 国家))
+					       (DEG 的))
+					  (NP (NN 物价)
+					      (NN 政策))))))
+		  (PU ，)
+		  (VP (VV 加强)
+		      (NP-OBJ (NN 商品)
+			      (NN 质量)
+			      (NN 管理)))
+		  (PU ，)
+		  (VP (ADVP (AD 自觉))
+		      (VP (VV 抵制)
+			  (NP-OBJ (ADJP (JJ 假冒)
+					(JJ 伪劣))
+				  (NP (NN 商品)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 流入)
+				  (NP-OBJ (NN 市场))))))
+		  (PU ，)
+		  (VP (VV 确保)
+		      (NP-OBJ (NN 消费者)
+			      (NN 利益))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  自觉 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  假冒 伪劣 商品 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 流入 市场 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 球迷))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 心理))
+			       (LC 上)))
+		  (ADVP (AD 也))
+		  (VP (VV 会)
+		      (VP (VE 有)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 个)))
+				  (CP (WHPP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (PP-TMP (-NONE- *T*-3))
+						  (VP (VV 抵制)
+						      (NP-PN-OBJ (NR ＮＢＡ)))))
+					  (DEC 的)))
+				  (NP (NN 过程))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  ＮＢＡ 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  ＮＢＡ 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

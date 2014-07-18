@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 管有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="possessor"/>
+      <role argnum="1" argrole="thing in possession"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (IP-APP (NP-SBJ-2 (PN 他))
+			  (VP (SB 被)
+			      (VP (VV 判)
+				  (NP-OBJ (-NONE- *-2))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 管有)
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (IP (NP-SBJ (-NONE- *pro*))
+							      (VP (VV 伪造)
+								  (NP-OBJ (-NONE- *T*-1)))))
+						      (NP-PN (NR 香港))
+						      (NP (NN 身分)
+							  (NN 证明书))))
+					  (CC 和)
+					  (VP (VV 误导)
+					      (NP-OBJ (NN 警务)
+						      (NN 人员))))))))
+		  (NP (NN 罪名))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 伪造 *T*-1 香港 身分 证明书 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

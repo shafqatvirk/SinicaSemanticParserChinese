@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 递降 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (PU ，)
+	      (PP-TMP (P 在)
+		      (LCP (QP (NP (NT 过去))
+			       (QP (CD 三)
+				   (CLP (M 年))))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 墨西哥))
+		      (NP (NN 贸易)
+			  (NN 顺差额)))
+	      (VP (VV 呈)
+		  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 大幅))
+				      (VP (VV 递降))))
+			  (NP (NN 趋势))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大幅 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

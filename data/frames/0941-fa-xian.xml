@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="discoverer"/>
+      <role argnum="1" argrole="thing discovered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (NP-TMP (NT 去年))
+		      (VP (VV 发现)
+			  (NP-OBJ (QP (CD 十)
+				      (CLP (M 个)))
+				  (DNP (NP (NP (QP (CD 亿)
+						   (CLP (M 吨)))
+					       (NP (NN 级)))
+					   (NP (NN 储量)
+					       (NN 规模)))
+				       (DEG 的))
+				  (NP (NN 油气区)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  十 个 亿 吨 级 储量 规模 的 油气区 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-PN-SBJ (NP-PN (NR 苏联))
+				 (NP-PN (NP-TTL (PU 《)
+						(NN 科学)
+						(CC 与)
+						(NN 生活)
+						(PU 》))
+					(NP (NN 杂志))))
+		      (VP (VV 报道))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 莫斯科))
+		      (NP (NN 生物学家)))
+	      (VP (VV 发现)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (NN 植物)
+				  (NN 细胞)
+				  (NN 霉素))
+			  (VP (CC 不仅)
+			      (VP (VV 能够)
+				  (VP (VV 抑制)
+				      (NP-OBJ (DNP (NP (NN 蚊子)
+						       (NN 体内)
+						       (NN 疟原虫))
+						   (DEG 的))
+					      (NP (NN 繁殖)))))
+			      (PU ，)
+			      (CC 而且)
+			      (VP (ADVP (AD 还))
+				  (VP (VV 可)
+				      (VP (VV 灭杀)
+					  (NP-OBJ (NN 蚊子))))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  莫斯科 生物学家 
+	  </arg>
+	  <arg n="1">
+	  植物 细胞 霉素 不仅 能够 抑制 蚊子 体内 疟原虫 的 繁殖 ， 而且 还 可 灭杀 蚊子 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 苏联 《 科学 与 生活 》 杂志 报道 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

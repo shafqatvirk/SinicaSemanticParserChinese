@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 教养 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 raises and educates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 该))
+		    (NP (NN 信托)
+			(NN 基金)))
+	    (VP (VP (ADVP (AD 非))
+		    (VP (VC 为)
+			(NP-PRD (CP-APP (IP (NP-SBJ (NN 未成年人))
+					    (VP (VV 教养)))
+					(DEC 之))
+				(NP (NN 需要)))))
+		(VP (ADVP (AD 不))
+		    (VP (VV 得)
+			(VP (VV 支用)))))) 
+	</parse>
+	<arg n="1">
+	未成年人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

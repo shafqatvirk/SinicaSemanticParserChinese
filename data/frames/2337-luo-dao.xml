@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 落到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity falling"/>
+      <role argnum="2" argrole="location falled onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (ADVP (AD 进一步))
+		      (VP (VV 提高)
+			  (NP-OBJ (DNP (PP (P 对)
+					   (NP (IP-APP (NP-SBJ (NN 军队)
+							       (PU 、)
+							       (NN 武警)
+							       (NN 部队))
+						       (VP (ADVP (AD 不))
+							   (ADVP (AD 再))
+							   (VP (VV 经商))))
+					       (DP (DT 这)
+						   (QP (CD 一)))
+					       (ADJP (JJ 重大))
+					       (NP (NN 决策))))
+				       (DEG 的))
+				  (NP (NN 认识)))))
+		  (PU ，)
+		  (VP (VV 引导)
+		      (NP-OBJ (ADJP (JJ 广大))
+			      (NP (NN 职工)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 从)
+				      (LCP (LCP (NP (NN 政治))
+						(LC 上))
+					   (PU 、)
+					   (LCP (NP (NN 大局))
+						(LC 上))))
+			      (VP (VV 看)
+				  (NP-OBJ (NN 问题))))))
+		  (PU ，)
+		  (VP (DVP (VP (VP (VA 坚定不移))
+			       (PU 、)
+			       (VP (ADVP (AD 毫))
+				   (ADVP (AD 不))
+				   (VP (VA 含糊))))
+			   (DEV 地))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (DNP (NP (NN 中央))
+					       (DEG 的))
+					  (DP (DT 这)
+					      (QP (CD 一)))
+					  (ADJP (JJ 重大))
+					  (NP (NN 决策)))
+				  (VP (VV 落到)
+				      (NP-OBJ (NN 实处)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  中央 的 这 一 重大 决策 
+	  </arg>
+	  <arg n="2">
+	  实处 
+	  </arg>
+	  <arg n="m" f="adv">
+	  坚定不移 、 毫 不 含糊 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

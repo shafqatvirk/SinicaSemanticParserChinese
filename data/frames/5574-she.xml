@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 舍 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 gives up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *PRO*))
+		(VP (LCP-LOC (NP (NN 笔))
+			     (LC 下))
+		    (VP (VP (ADVP (AD 不))
+			    (VP (VV 忍)))
+			(PU 、)
+			(VP (ADVP (AD 不))
+			    (VP (VV 舍)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="loc">
+	笔 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is loath to part with/do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-PN-SBJ (NR 黄春明))
+		(VP (ADVP (AD 甚至))
+		    (VP (VPT (VV 舍)
+			     (AD 不)
+			     (VV 得))
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 给)
+				    (NP-IO (DNP (LCP (NP (DNP (NP (PN 他))
+							      (DEG 的))
+							 (NP (NN 笔)))
+						     (LC 下))
+						(DEG 的))
+					   (ADJP (JJ 老))
+					   (NP (NN 人)))
+				    (NP-OBJ (DNP (ADJP (JJ 纯然))
+						 (DEG 的))
+					    (NP (NN 痛苦)
+						(NN 折磨)))))))) 
+	</parse>
+	<arg n="0">
+	黄春明 
+	</arg>
+	<arg n="1">
+	*PRO* 给 他 的 笔 下 的 老 人 纯然 的 痛苦 折磨 
+	</arg>
+	<arg n="m" f="adv">
+	甚至 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 停歇 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PU ，)
+	    (PP-TMP (P 在)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (PU 「)
+					    (NP (ADJP (JJ 大))
+						(NP-PN (NR 中国)))
+					    (NP (NN 思想))
+					    (PU 」))
+				    (VP (NP-TMP (-NONE- *T*-1))
+					(ADVP (AD 不断))
+					(VP (VV 深化)))))
+			    (DEC 的))
+			(NP (NN 同时))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 台湾))
+		    (DNP (NP (NN 现代化))
+			 (DEG 的))
+		    (NP (NN 脚步)))
+	    (VP (ADVP (AD 一直))
+		(VP (VV 没有)
+		    (VP (VV 停歇))))) 
+	</parse>
+	<arg n="0">
+	台湾 现代化 的 脚步 
+	</arg>
+	<arg n="m" f="adv">
+	一直 
+	</arg>
+	<arg n="m" f="adv">
+	在 *OP* 「 大 中国 思想 」 *T*-1 不断 深化 的 同时 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

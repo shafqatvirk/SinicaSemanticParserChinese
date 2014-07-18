@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 喊停 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 terminates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-ADV (ADVP (CS 虽然))
+		      (IP (NP-PN-SBJ (NR 顺益)
+				     (NN 博物馆))
+			  (VP (PP-TMP (P 在)
+				      (NP (DNP (NP (NN 成立))
+					       (DEG 的))
+					  (NP (NN 初期))))
+			      (ADVP (AD 亦))
+			      (VP (VV 想)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 支持)
+					      (NP-OBJ (NN 学术)
+						      (NN 研究))))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (IP-SBJ (NP-SBJ (DNP (NP (NN 博物馆)
+				       (PN 本身))
+				   (DEG 的))
+			      (NP (NN 收益)))
+		      (VP (ADVP (AD 无法))
+			  (VP (VV 自足))))
+	      (PU ，)
+	      (VP (VV 导致)
+		  (IP-OBJ (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 支助)
+						  (NP-OBJ (NN 学术)
+							  (NN 研究))))
+					  (DEC 的))
+				  (NP (NN 计划)))
+			  (VP (VV 必须)
+			      (VP (ADVP (AD 逐渐))
+				  (VP (VV 喊停))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 支助 学术 研究 的 计划 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐渐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

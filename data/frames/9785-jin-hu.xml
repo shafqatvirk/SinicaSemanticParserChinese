@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 近乎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is close to being"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 例如))
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (NP-MNR (-NONE- *T*-2))
+				      (PP-DIR (P 对)
+					      (NP (NN 青少年)))
+				      (VP (VV 实施)
+					  (NP-OBJ (NN 宵禁)))))
+			      (DEC 的)))
+		      (NP (NN 方式)))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 近乎)
+		      (NP-OBJ (NN 独断))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *pro* *T*-2 对 青少年 实施 宵禁 的 方式 
+	  </arg>
+	  <arg n="1">
+	  独断 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  例如 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 创下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="record, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (NP-SBJ (NN 民间)
+		      (NN 投资)
+		      (NN 成长率))
+	      (VP (VP (VV 高达)
+		      (QP-OBJ (CD 百分之十四)))
+		  (PU ，)
+		  (VP (VV 创下)
+		      (NP-OBJ (DNP (LCP (QP (CD 五)
+					    (CLP (M 年)))
+					(LC 来))
+				   (DEG 的))
+			      (ADJP (JJ 新))
+			      (NP (NN 高)))))) 
+	  </parse>
+	  <arg n="0">
+	  民间 投资 成长率 
+	  </arg>
+	  <arg n="1">
+	  五 年 来 的 新 高 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

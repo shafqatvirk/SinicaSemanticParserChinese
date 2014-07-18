@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 录好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 records"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (DP-ADV (DT 每)
+				(CLP (M 次)))
+			(VP (VV 做)
+			    (NP-OBJ (NN 节目)))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (ADVP (AD 先))
+				    (PP-LOC (P 在)
+					    (NP-PN (NR 光启社)))
+				    (VP (VV 录好)))
+				(PU ，)
+				(VP (ADVP (AD 再))
+				    (VP (BA 将)
+					(IP-OBJ (NP-SBJ (NN 机器))
+						(VP (VP (VV 搬到)
+							(NP-OBJ (DNP (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+										  (IP (NP-SBJ (-NONE- *T*-1))
+										      (VP (ADVP (AD 原来))
+											  (VP (PP-PRD (P 在)
+												      (NP-PN (NR 南海路)))))))
+									      (NP (NN 植物园)))
+									  (LC 内))
+								     (DEG 的))
+								(NP-PN (NN 教育)
+								       (NN 电视台))))
+						    (VP (VV 播出))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="loc">
+	在 光启社 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

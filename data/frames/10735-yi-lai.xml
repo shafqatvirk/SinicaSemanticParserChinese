@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 倚赖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 relies on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (IP (NP-TPC (-NONE- *T*-1))
+			    (NP-SBJ (NP (NN 传统)
+					(NN 产业))
+				    (NP (NN 比重)))
+			    (VP (VA 高)))
+			(PU ，)
+			(CC 而且)
+			(IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (ADVP (AD 非常))
+				    (VP (VV 倚赖)
+					(NP-OBJ (NN 代工)
+						(NN 制造))))
+				(VP (MSP 来)
+				    (VP (VV 获利))))))
+		    (DEC 的)))
+	    (NP-PN (NR 台湾))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	代工 制造 
+	</arg>
+	<arg n="m" f="adv">
+	非常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

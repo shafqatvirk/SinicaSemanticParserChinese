@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 唱给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 sings"/>
+      <role argnum="2" argrole="entity arg0 sings arg1 for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 原来))
+	      (NP-SBJ (DNP (NP (NN 外婆))
+			   (DEG 的))
+		      (NP (NN 道理)))
+	      (VP (ADVP (AD 早))
+		  (ADVP (AD 就))
+		  (VP (VV 唱给)
+		      (NP-OBJ (PN 我))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 听)))))) 
+	  </parse>
+	  <arg n="1">
+	  外婆 的 道理 
+	  </arg>
+	  <arg n="2">
+	  我 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  早 
+	  </arg>
+	  <arg n="m" f="adv">
+	  原来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

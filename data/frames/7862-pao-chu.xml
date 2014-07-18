@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抛出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 throws out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 对方))
+	    (VP (VP (VV 摸到)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (PN 我))
+					(VP (VV 坚守)
+					    (NP-OBJ (-NONE- *T*-1))))
+				    (DEC 的)))
+			    (NP (NN 底线)))
+		    (AS 了))
+		(PU ，)
+		(VP (VV 抛出)
+		    (UCP-OBJ (QP-APP (CD 一)
+				     (CLP (M 句)))
+			     (PU ：)
+			     (UCP (IP (NP-SBJ (PN 我))
+				      (VP (VV 买)
+					  (QP-OBJ (CD 两)
+						  (CLP (M 个)))))
+				  (PU ，)
+				  (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (QP-PRD (CD 三十三)
+						  (CLP (M 元)))))
+				  (PU ；)
+				  (IP-Q (NP-SBJ (-NONE- *pro*))
+					(VP-WH (VV 怎麽样)))
+				  (PU ，)
+				  (NP (QP (CD 一)
+					  (CLP (M 口)))
+				      (NP (NN 价)))))))) 
+	</parse>
+	<arg n="0">
+	对方 
+	</arg>
+	<arg n="1">
+	一 句 ： 我 买 两 个 ， *pro* 三十三 元 ； *pro* 怎麽样 ， 一 口 价 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

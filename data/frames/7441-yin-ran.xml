@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 引燃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 ignites"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 电焊)
+		    (NN 火花))
+	    (VP (VV 引燃)
+		(NP-OBJ (NP (NN 冷却)
+			    (NN 水塔))
+			(NP (NN 塑胶)
+			    (NN 滤网))))) 
+	</parse>
+	<arg n="0">
+	电焊 火花 
+	</arg>
+	<arg n="1">
+	冷却 水塔 塑胶 滤网 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

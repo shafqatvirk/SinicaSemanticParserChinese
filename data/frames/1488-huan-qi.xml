@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 唤起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="arouser"/>
+      <role argnum="1" argrole="thing aroused"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 为)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 进一步))
+			  (VP (VV 唤起)
+			      (NP-OBJ (NP (NP (NN 社会))
+					  (DP (DT 各))
+					  (NP (NN 界)))
+				      (DNP (PP (P 对)
+					       (NP (NN 灾区)))
+					   (DEG 的))
+				      (NP (NN 支持))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  社会 各 界 对 灾区 的 支持 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

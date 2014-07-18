@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著想 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 takes into consideration"/>
+    <role argnum="2" argrole="thing in doing which attention is paid to arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 至於)
+		    (NP-PN (NR 宋楚瑜)))
+	    (PU ，)
+	    (IP-TPC-2 (PU 「)
+		      (NP-SBJ (DNP (NP (PN 他))
+				   (DEG 的))
+			      (NP (NN 施政)))
+		      (VP (ADVP (AD 比较))
+			  (VP (VP (VA 扶弱))
+			      (PU ，)
+			      (VP (PP-BNF (P 为)
+					  (NP (ADJP (JJ 穷))
+					      (NP (NN 人))))
+				  (VP (VV 著想))))))
+	    (PU ，)
+	    (PU 」)
+	    (NP-PN-SBJ (NR 丁志仁))
+	    (VP (VV 说)
+		(IP-OBJ (-NONE- *T*-2)))) 
+	</parse>
+	<arg n="1">
+	为 穷 人 
+	</arg>
+	<arg n="2">
+	他 的 施政 
+	</arg>
+	<arg n="m" f="adv">
+	比较 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,262 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 整合 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 reorganizes"/>
+    <role argnum="2" argrole="result of reorganization"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 整合)
+		(NP-OBJ (NN 战力)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	战力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (CP (WHNP-14 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 省)
+						(NN 政府))
+					(VP (ADVP (AD 实验性))
+					    (VP (VV 特设)
+						(NP-OBJ (-NONE- *T*-14)))))
+				    (DEC 的)))
+			    (NP-PN (NP (NP-PN (NR 台北))
+				       (NP (NN 水源)
+					   (NN 特定区)))
+				   (NP (NN 管理)
+				       (NN 委员会)) ))
+		    (PU ，)
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (DNP (LCP (NP (NP-PN (NR 翡翠)
+							     (NN 水库))
+						      (NP (NN 水源)
+							  (NN 特定区)))
+						  (LC 内))
+					     (DEG 的))
+					(NP (NN 建管权)
+					    (CC 与)
+					    (NN 警察权)))
+				(VP (VV 整合)
+				    (PP-LOC (P 在)
+					    (NP (QP (CD 一)
+						    (CLP (M 个)))
+						(NP (NN 单位))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* 省 政府 实验性 特设 *T*-14 的 台北 水源 特定区 管理 委员会 
+	</arg>
+	<arg n="1">
+	翡翠 水库 水源 特定区 内 的 建管权 与 警察权 
+	</arg>
+	<arg n="2">
+	在 一 个 单位 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP (NP (DP (DT 各))
+				(NP (NN 部会)))
+			    (PU 、)
+			    (NP (NN 地方)
+				(NN 政府)))
+			(IP-APP (NP-SBJ (-NONE- *PRO*))
+				(VP (VCD (VV 整合)
+					 (VV 应变))))
+			(NP (NN 能力)))
+		(VP (VA 不足))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 经过)
+		    (NP (NN 整顿)))
+	    (PU ，)
+	    (NP-SBJ (NP (NN 省府))
+		    (ADJP (NP (NN 水)
+			      (NN 资源))
+			  (NP (NN 执行))
+			  (ADJP (JJ 相关)))
+		    (NP (NN 业务)))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 已经))
+		    (VP (VV 整合)
+			(PP-LOC (P 在)
+				(LCP (NP (NP (NN 水利处)
+					     (PRN (PU （)
+						  (NP (NN 水利)
+						      (NN 行政)
+						      (CC 与)
+						      (NN 供水))
+						  (PU ）)))
+					 (PU 、)
+					 (NP (NN 农林厅)
+					     (PRN (PU （)
+						  (NP (NN 水源)
+						      (NN 保护))
+						  (PU ）)))
+					 (PU 、)
+					 (NP (NN 环保处)
+					     (PRN (PU （)
+						  (NP (NN 水质))
+						  (PU ）))))
+				     (LC 之下)))))
+		(PU ，)
+		(CC 并且)
+		(VP (VV 提高)
+		    (NP-OBJ (NP (NP (NN 水)
+				    (NN 资源))
+				(NP (NN 议题)))
+			    (NN 层级))))) 
+	</parse>
+	<arg n="1">
+	省府 水 资源 执行 相关 业务 
+	</arg>
+	<arg n="2">
+	在 水利处 （ 水利 行政 与 供水 ） 、 农林厅 （ 水源 保护 ） 、 环保处 （ 水质 ） 之下 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="mnr">
+	经过 整顿 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(LCP-TMP (IP (NP-SBJ (NP (NN 水)
+				 (NN 资源))
+			     (NP (NN 业务)))
+		     (VP (VV 整合)))
+		 (LC 之後)) 
+	</parse>
+	<arg n="1">
+	水 资源 业务 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 人力)
+		    (NN 万象网) )
+	    (VP (VP (NP-TMP (NT 现在))
+		    (VP (SB 被)
+			(VP (VRD (VV 整合)
+				 (VV 到))
+			    (NP-OBJ (DNP (NP (NP-PN (NR 中时)
+						    (NN 科网))
+					     (NP (NN 旗下)))
+					 (DEG 的))
+				    (QP (CD 一)
+					(CLP (M 个)))
+				    (NP (NN 点))))))
+		(PU ，)
+		(VP (ADVP (AD 不))
+		    (VP (VC 是)
+			(NP-PRD (NN 主力)))))) 
+	</parse>
+	<arg n="1">
+	人力 万象网 
+	</arg>
+	<arg n="2">
+	中时 科网 旗下 的 一 个 点 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-MNR (P 藉著)
+			    (NP (DP (DT 这)
+				    (CLP (M 个)))
+				(NP (NN 过程))))
+		    (VP (DVP (QP (QP (CD 一)
+				     (CLP (M 片)))
+				 (QP (CD 一)
+				     (CLP (M 片))))
+			     (DEV 地))
+			(VP (BA 把)
+			    (IP-OBJ (NP-SBJ (NN 人生))
+				    (VP (VRD (VV 整合)
+					     (VV 起来))))) ))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	人生 
+	</arg>
+	<arg n="m" f="mnr">
+	一 片 一 片 地 
+	</arg>
+	<arg n="m" f="adv">
+	藉著 这 个 过程 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

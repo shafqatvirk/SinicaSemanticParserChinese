@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 白发苍苍 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (PP-TMP (P 到)
+			    (QP (CD 六十)
+				(CLP (M 岁))))
+		    (ADVP (AD 才))
+		    (VP (VRD (VV 放)
+			     (VV 出来))))
+		(PU ，)
+		(VP (ADVP (AD 已))
+		    (VP (VV 白发苍苍)
+			(AS 了))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

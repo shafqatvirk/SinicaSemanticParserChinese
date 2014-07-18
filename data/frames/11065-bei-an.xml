@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 备案 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 files"/>
+    <role argnum="2" argrole="place arg1 is filed at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 盗卖)
+		(NP-OBJ (NP (NN 海关))
+			(IP-APP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 备案)))
+			(NP (NN 合同))))) 
+	</parse>
+	<arg n="2">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

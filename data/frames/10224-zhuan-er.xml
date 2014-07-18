@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转而 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 moves on to"/>
+    <role argnum="2" argrole="thing arg0 moves from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (PP-ADV (P 随著)
+		    (IP (NP-SBJ (NP-APP (NN 电子)
+					(PU 、)
+					(NN 航太)
+					(PU 、)
+					(NN 生物)
+					(NN 医学)
+					(PU …)
+					(PU …)
+					(ETC 等))
+				(ADJP (JJ 新兴))
+				(NP (NN 产业)))
+			(VP (VV 崛起))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NN 纺织品))
+			 (DEG 的))
+		    (NP (NN 应用)
+			(NN 领域)))
+	    (VP (ADVP (AD 也))
+		(VP (VP (PP-DIR (P 从)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VA 单纯)))
+					    (DEC 的)))
+				    (NP (NN 人体))))
+			(VP (VV 转而)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 上天入地)))))
+		    (PU ，)
+		    (VP (ADVP (AD 越来越))
+			(VP (VA 广)))))) 
+	</parse>
+	<arg n="0">
+	纺织品 的 应用 领域 
+	</arg>
+	<arg n="1">
+	*PRO* 上天入地 
+	</arg>
+	<arg n="2">
+	从 *OP* *T*-1 单纯 的 人体 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="mnr">
+	随著 电子 、 航太 、 生物 医学 … … 等 新兴 产业 崛起 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

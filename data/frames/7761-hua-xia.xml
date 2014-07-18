@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 划下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 draws"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 自)
+		    (LCP (NP (NT 去年)
+			     (NT 十月)
+			     (NT 二十七日))
+			 (LC 以来)))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 纷扰)
+				    (NP-EXT (QP (CD 数))
+					    (NP (NN 月)))))
+			    (DEC 的)))
+		    (NP (NN 核四)
+			(NN 风波)))
+	    (PU ，)
+	    (VP (ADVP (AD 终於))
+		(PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *pro*))
+				 (VP (NP-TMP (NT 二月)
+					     (NT 十三日))
+				     (PP-LGS (P 由)
+					     (NP (NP (NP-APP (NN 行政)
+							     (NN 院长))
+						     (NP-PN (NR 张俊雄)))
+						 (CC 与)
+						 (NP (NP-APP (NN 立法)
+							     (NN 院长))
+						     (NP-PN (NR 王金平)))))
+				     (ADVP (AD 共同))
+				     (PP-LOC (P 於)
+					     (NP-PN (NR 台北)
+						    (NN 宾馆)))
+				     (VP (VV 签署)
+					 (NP-OBJ (PU 「)
+						 (NN 核四)
+						 (NN 复工)
+						 (NN 协议书)
+						 (PU 」)))))
+			     (LC 之後)))
+		(PU ，)
+		(ADVP (AD 暂时))
+		(VP (VV 划下)
+		    (AS 了)
+		    (NP-OBJ (NN 休止符))))) 
+	</parse>
+	<arg n="1" f="psr">
+	*OP* *T*-1 纷扰 数 月 的 核四 风波 
+	</arg>
+	<arg n="1" f="pse">
+	休止符 
+	</arg>
+	<arg n="m" f="adv">
+	暂时 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *pro* 二月 十三日 由 行政 院长 张俊雄 与 立法 院长 王金平 共同 於 台北 宾馆 签署 「 核四 复工 协议书 」 之後 
+	</arg>
+	<arg n="m" f="adv">
+	终於 
+	</arg>
+	<arg n="m" f="tmp">
+	自 去年 十月 二十七日 以来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

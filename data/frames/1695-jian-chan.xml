@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (NP-TMP (NT 今年)
+						       (NT １１月)
+						       (NT ２６日))
+					       (VP (VV 召开))))
+				       (DEC 的)))
+			       (NP-PN (NR 欧佩克))
+			       (NP (NN 石油)
+				   (NN 部长))
+			       (NP (NN 会议)))
+			   (LC 上)))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 组织)))
+	      (VP (PP-PRP (P 由于)
+			  (IP (NP-SBJ (NN 成员国)
+				      (NN 意见))
+			      (VP (VV 分歧))))
+		  (ADVP (AD 未))
+		  (VP (VV 能)
+		      (VP (VV 作出)
+			  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (QP-ADV (OD 第三)
+						      (CLP (M 次)))
+					      (VP (VV 减产))))
+				  (NP (NN 决定))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  第三 次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

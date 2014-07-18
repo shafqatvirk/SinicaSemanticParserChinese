@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 节省 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing saved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因而))
+	      (IP (IP (NP-SBJ (DNP (NP (NN 型号)
+				       (NN 产品))
+				   (DEG 的))
+			      (NP (NN 技术)
+				  (NN 继承性)))
+		      (VP (VA 好)))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (VV 缩短)
+			      (AS 了)
+			      (NP-OBJ (NN 研制)
+				      (NN 周期)))
+			  (PU ，)
+			  (VP (VV 节省)
+			      (AS 了)
+			      (NP-OBJ (NN 研制)
+				      (NN 经费)))
+			  (PU ，)
+			  (VP (VV 提高)
+			      (AS 了)
+			      (NP-OBJ (DNP (NP (NN 产品))
+					   (DEG 的))
+				      (NP (NN 质量)
+					  (CC 和)
+					  (NN 可靠性)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  研制 经费 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因而 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 在)
+		      (LCP (NP (NP (DP (DT 这)
+				       (CLP (M 项)))
+				   (ADJP (JJ 免税))
+				   (NP (NN 政策)))
+			       (NP (NN 照顾)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-PN-SBJ (NN 国际)
+			 (NR 奥委会))
+	      (VP (QP-ADV (CD 一)
+			  (CLP (M 年)))
+		  (VP (VV 可以)
+		      (VP (VV 节省)
+			  (NP-OBJ (DNP (QP (CD ２００万)
+					   (CLP (NP-PN (NR 瑞士))
+						(CLP (M 法郎))))
+				       (DEG 的))
+				  (NP (NN 资金))))))) 
+	  </parse>
+	  <arg n="0">
+	  国际 奥委会 
+	  </arg>
+	  <arg n="1">
+	  ２００万 瑞士 法郎 的 资金 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 这 项 免税 政策 照顾 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (CD 三))
+	      (VP (VC 是)
+		  (IP-PRD (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP (P 与)
+					  (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (ADVP (AD 成套))
+						  (VP (VV 引进)
+						      (NP-OBJ (NN 国外)
+							      (NN 技术)
+							      (CC 和)
+							      (NN 设备))))))
+				      (VP (VV 相比))))
+			  (PU ，)
+			  (NP-SBJ (NN 投资))
+			  (VP (ADVP (AD 大大))
+			      (VP (VV 节省)))))) 
+	  </parse>
+	  <arg n="1">
+	  投资 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大大 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 与 *pro* 成套 引进 国外 技术 和 设备 相比 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

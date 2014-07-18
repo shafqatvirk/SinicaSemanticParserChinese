@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过敏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is allergic to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (-NONE- *pro*))
+		(VP (VC 是)
+		    (IP-PRD (NP-Q-SBJ (NP (NN 灰尘))
+				      (PU 、)
+				      (NP (NN 花香))
+				      (PU 、)
+				      (NP (NN 香水))
+				      (PU 、)
+				      (NP (NN 胡椒))
+				      (PU ，)
+				      (CC 还是)
+				      (NP (DP-WH (DT 什麽))
+					  (NP (NN 原因))))
+			    (VP (VV 让)
+				(NP-OBJ (DNP (NP (PN 他))
+					     (DEG 的))
+					(NP (NN 鼻子)))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (ADVP (AD 这麽))
+					(VP (VA 过敏)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这麽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

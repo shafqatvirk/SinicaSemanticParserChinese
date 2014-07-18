@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 对上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="contestant"/>
+      <role argnum="1" argrole="opponent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (DNP (NP-PN (NR 中国))
+			       (DEG 的))
+			  (NP-PN (NR 常昊)
+				 (CC 和)
+				 (NR 周鹤洋)))
+		  (VP (VSB (VV 抽签)
+			   (VV 对上))
+		      (NP-OBJ (NP-APP (DNP (NP-PN (NR 韩国))
+					   (DEG 的))
+				      (QP (CD 两)
+					  (CLP (M 名)))
+				      (NP (NN 世界)
+					  (NN 冠军)))
+			      (NP-PN (NN 刘昌赫)
+				     (CC 和)
+				     (NR 曹薰铉))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 的 常昊 和 周鹤洋 
+	  </arg>
+	  <arg n="1">
+	  韩国 的 两 名 世界 冠军 刘昌赫 和 曹薰铉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

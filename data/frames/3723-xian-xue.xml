@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 献血 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 无锡市))
+			 (NP (NP (NP-APP (NN 市长))
+				 (NP-PN (NR 王宏民)))
+			     (PU ，)
+			     (NP (NP-APP (NN 副市长))
+				 (NP-PN (NR 洪锦)
+					(PU 、)
+					(NR 张怀西))))
+			 (PU ，)
+			 (NP (NP-APP (NP-PN (NR 无锡))
+				     (NP (NN 军分区)
+					 (NN 副司令员)))
+			     (NP-PN (NR 承焕兴))))
+	      (VP (ADVP (AD 在))
+		  (ADVP (AD 义务))
+		  (VP (VV 献血)))) 
+	  </parse>
+	  <arg n="0">
+	  无锡市 市长 王宏民 ， 副市长 洪锦 、 张怀西 ， 无锡 军分区 副司令员 承焕兴 
+	  </arg>
+	  <arg n="m" f="adv">
+	  义务 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

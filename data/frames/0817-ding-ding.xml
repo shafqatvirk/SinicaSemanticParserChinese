@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 订定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="agreement"/>
+      <role argnum="2" argrole="co-agreer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 雇主)
+			  (NN 雇员))
+		  (VP (VV 应)
+		      (VP (VV 订定)
+			  (NP-OBJ (LCP (NP (NN 暴雨))
+				       (LC 下))
+				  (NP (NN 工作)
+				      (NN 守则)))))) 
+	  </parse>
+	  <arg n="0">
+	  雇主 雇员 
+	  </arg>
+	  <arg n="1">
+	  暴雨 下 工作 守则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

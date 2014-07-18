@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搭建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="builder"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LOC (P 在)
+			  (NP (NN 赛道)
+			      (NN 中间)))
+		  (VP (VP (VV 用)
+			  (NP-OBJ (NN 树枝)))
+		      (VP (VV 搭建)
+			  (AS 了)
+			  (NP-OBJ (NN 挡雪墙)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  挡雪墙 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 赛道 中间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

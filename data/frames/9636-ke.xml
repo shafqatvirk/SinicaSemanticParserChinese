@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 渴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity thirsty"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 渴)
+			  (AS 了)))
+	      (PU ，)
+	      (LCP-SBJ (NP (NN 凉饮)
+			   (NN 店))
+		       (LC 里))
+	      (VP (VP (VE 有)
+		      (NP-OBJ (NP (ADJP (JJ 姜蜜))
+				  (NP (NN 水)))
+			      (PU 、)
+			      (NP (NN 甘豆)
+				  (NN 汤))
+			      (NR 、)
+			      (NP (NN 紫苏饮))))
+		  (PU ，)
+		  (VP (ADVP (AD 还))
+		      (VP (VE 有)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VP (PP-MNR (P 用)
+							      (NP (NN 药草)))
+						      (VP (VV 熬煮)))
+						  (PU 、)
+						  (VP (VV 具有)
+						      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+								      (VP (VV 通汗)))
+							      (NP (NN 效果))))))
+					  (DEC 的)))
+				  (NP (NN 饮子))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

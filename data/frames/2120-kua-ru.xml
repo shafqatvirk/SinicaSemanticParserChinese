@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跨入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entering entity"/>
+      <role argnum="1" argrole="location entered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			    (NP (NN 镍)
+				(NN 工业)
+				(NN 技术)))
+		    (VP (VV 跨入)
+			(NP-OBJ (NP (NN 世界))
+				(ADJP (JJ 先进))
+				(NP (NN 行列))))) ) 
+	  </parse>
+	  <arg n="0">
+	  中国 镍 工业 技术 
+	  </arg>
+	  <arg n="1">
+	  世界 先进 行列 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 目前))
+		(PU ，)
+		(NP-SBJ (DNP (NP (DP (DT 这)
+				     (CLP (M 家)))
+				 (NP (NN 外企)
+				     (NN 服务))
+				 (ADJP (JJ 总))
+				 (NP (NN 公司)))
+			     (DEG 的))
+			(NP (NN 人才)
+			    (NN 资源)
+			    (NN 服务)))
+		(VP (ADVP (AD 已))
+		    (VP (VV 跨入)
+			(NP-OBJ (NN 海外)
+				(NN 市场))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  这 家 外企 服务 总 公司 的 人才 资源 服务 
+	  </arg>
+	  <arg n="1">
+	  海外 市场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

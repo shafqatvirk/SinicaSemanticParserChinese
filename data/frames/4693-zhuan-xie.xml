@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撰写 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 新华)
+					     (NN 通讯社))
+				  (VP (VV 主办)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP-PN-TTL (PU 《)
+				 (NN 经济)
+				 (NN 参考报)
+				 (PU 》)))
+	      (VP (NP-TMP (NT １２月)
+			  (NT ２９日))
+		  (VP (VV 刊登)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-PN-SBJ (NR 姜岩))
+					  (VP (VV 撰写)
+					      (NP-OBJ (-NONE- *T*-2))))
+				      (DEC 的)))
+			      (QP (CD 一)
+				  (CLP (M 篇)))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-3))
+					  (NP-SBJ (NN 题))
+					  (VP (VC 为)
+					      (NP-PRD (PU “)
+						      (NN 知识)
+						      (NN 经济)
+						      (NN 发展)
+						      (NN 战略)
+						      (PU ”))))
+				      (DEC 的)))
+			      (NP (NN 文章)))))) 
+	  </parse>
+	  <arg n="0">
+	  姜岩 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+			      (VP (PP-LGS (P 由)
+					  (NP (NN 专家)))
+				  (VP (VV 撰写)
+				      (NP-OBJ (-NONE- *-2)))))
+			  (DEC 的)))
+		  (DP (DT 这)
+		      (CLP (M 套)))
+		  (NP (NN 图书))) 
+	  </parse>
+	  <arg n="0">
+	  由 专家 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

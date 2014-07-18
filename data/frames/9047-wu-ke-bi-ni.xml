@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无可比拟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (CP (WHNP-60 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 其))
+				  (VP (MSP 所)
+				      (VP (VV 带来)
+					  (NP-OBJ (-NONE- *T*-60)))))
+			      (DEC 的)))
+		      (NP (NN 方便性)))
+	      (VP (ADVP (AD 却))
+		  (VP (VV 无可比拟)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 其 所 带来 *T*-60 的 方便性 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

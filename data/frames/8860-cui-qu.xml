@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 粹取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 purifies and extracts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 纯化)))
+		      (PU 、)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (NP-TPC (NN 核酸))
+			      (VP (VV 粹取))))
+		      (PU 、)
+		      (IP (NP-SBJ (NN 核酸))
+			  (VP (VP (VCD (VV 复制)
+				       (VV 放大)))
+			      (PU 、)
+			      (VP (VV 标示))))
+		      (ETC 等))
+	      (NP (NN 步骤))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  核酸 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

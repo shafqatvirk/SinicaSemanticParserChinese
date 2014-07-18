@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抽 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 extracts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (PP-PRP (P 因)
+		    (IP (NP-SBJ (PN 其))
+			(VP (PP (P 与)
+				(NP-PN (NR 哥国)))
+			    (VP (VE 没有)
+				(NP-OBJ (NN 邦交)
+					(NN 关系))))))
+	    (PU ，)
+	    (ADVP (AD 因此))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 要)
+		(VP (VV 抽)
+		    (NP-OBJ (DNP (QP (CD 百分之四十))
+				 (DEG 的))
+			    (NP (NN 关税)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	百分之四十 的 关税 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<arg n="m" f="prp">
+	因 其 与 哥国 没有 邦交 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 地下))
+		    (NP (NN 水)))
+	    (VP (ADVP (AD 超))
+		(VP (VV 抽)))) 
+	</parse>
+	<arg n="1">
+	地下 水 
+	</arg>
+	<arg n="m" f="adv">
+	超 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

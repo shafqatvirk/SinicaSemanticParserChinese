@@ -1,0 +1,248 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提供 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="provider"/>
+      <role argnum="1" argrole="thing provided"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 最近))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国)
+			 (NN 银行))
+	      (VP (PP-DIR (P 向)
+			  (NP-PN (NR 阿根廷)))
+		  (VP (VV 提供)
+		      (AS 了)
+		      (NP-OBJ (DNP (QP (CD ２０００万)
+				       (CLP (M 美元)))
+				   (DEG 的))
+			      (NP (NN 贷款)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 银行 	  	  
+	  </arg>
+	  <arg n="1">
+	  ２０００万 美元 的 贷款 	  	  
+	  </arg>
+	  <arg n="2">
+	  向 阿根廷 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  最近 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 还))
+		  (PP-BNF (P 为)
+			  (NP (NP-APP (NN 国家)
+				      (NN 重点)
+				      (NN 工程))
+			      (NP-PN (NR 兰化)
+				     (NN 化肥厂))
+			      (NP (NN 改扩建)
+				  (NN 工程))))
+		  (VP (VV 提供)
+		      (AS 了)
+		      (NP-OBJ (DNP (QP (CD 一点九亿)
+				       (CLP (M 美元)))
+				   (DEG 的))
+			      (NP (NN 安装)
+				  (NN 工程)
+				  (NN 保险)
+				  (NN 保障)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他们 	  	  
+	  </arg>
+	  <arg n="1">
+	  一点九亿 美元 的 安装 工程 保险 保障 	  	  
+	  </arg>
+	  <arg n="2">
+	  为 国家 重点 工程 兰化 化肥厂 改扩建 工程 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  	  
+	  </arg>
+	</example>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (DNP (NP (NN 恐龙)
+			       (NN 骨骼)
+			       (NN 化石))
+			   (DEG 的))
+		      (NP (NN 发现)))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (PP-BNF (P 为)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 进一步))
+				  (VP (VV 寻找)
+				      (NP-OBJ (NN 恐龙)
+					      (NN 化石))))))
+		  (PP-LOC (P 在)
+			  (LCP (LCP (NP (NN 地域))
+				    (LC 上))
+			       (PU 、)
+			       (LCP (NP (NN 埋藏)
+					(NN 规律))
+				    (LC 上))))
+		  (VP (VV 提供)
+		      (AS 了)
+		      (NP-OBJ (ADJP (JJ 重要))
+			      (NP (NN 线索)))))) 
+	  </parse>
+	  <arg n="0">
+	  恐龙 骨骼 化石 的 发现 
+	  </arg>
+	  <arg n="1">
+	  重要 线索 
+	  </arg>
+	  <arg n="2">
+	  为 *pro* 进一步 寻找 恐龙 化石 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 地域 上 、 埋藏 规律 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  而 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-DIR (P 对)
+		  (NP (CP (WHNP-6 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-6))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 能)
+					  (VP (VV 提供)
+					      (NP-OBJ (ADJP (JJ 合法))
+						      (NP (NN 证明)))))))
+			      (DEC 的)))
+		      (NP (NN 货物)))) 
+	  </parse>
+	  <arg n="1">
+	  合法 证明 
+	  </arg>
+	  <arg n="2">
+	  *T*-6 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	</example> 
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NP-PN (NR 海口))
+				      (NP (NN 统计)
+					  (NN 部门)))
+			      (VP (VV 提供)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP (NN 数据))) 
+	  </parse>
+	  <arg n="0">
+	  海口 统计 部门 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	</example> 
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (NP (DP (DT 全))
+				   (NP (NN 市)))
+			       (NP (NN 农业))
+			       (ADJP (JJ 年))
+			       (NP (NN 出口)
+				   (NN 创汇额)))
+			   (LC 中)))
+	      (PU ，)
+	      (QP-SBJ (CD 百分之六十))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *-2))
+				      (VP (PP-LGS (P 由)
+						  (NP (NP (NN 农业))
+						      (ADJP (JJ 外向型))
+						      (NP (NN 企业))))
+					  (VP (VV 提供)
+					      (NP-OBJ-2 (-NONE- *T*-1)))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 农业 外向型 企业 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	</example> 
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU （)
+	      (NP-PN-SBJ (NR 台塑)
+			 (NN 企业))
+	      (VP (VV 提供))
+	      (PU ）)) 
+	  </parse>
+	  <arg n="0">
+	  台塑 企业 	  	  
+	  </arg>
+	</example> 
+      </frame>
+    </frameset>
+  </verb>

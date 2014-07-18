@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 追击 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DNP (NP-PN (NR 香港)
+			      (NN 电视台))
+		       (DEG 的))
+		  (NP-TTL (PU 《)
+			  (NN 城市)
+			  (NN 追击)
+			  (PU 》))
+		  (NP (NN 节目))) 
+	  </parse>
+	  <arg n="m" f="loc">
+	  城市 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

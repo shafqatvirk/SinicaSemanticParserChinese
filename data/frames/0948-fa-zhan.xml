@@ -1,0 +1,412 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发展 </id>
+    <frameset id="f1" cdef="发展">
+      <role argnum="0" argrole="cause/agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="initial state"/>
+      <role argnum="3" argrole="towards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NP-PN (NR 包头))
+			     (NP-PN (NR 鹿西罗纳))
+			     (NP (NN 稀土))
+			     (ADJP (JJ 有限))
+			     (NP (NN 公司)))
+		  (VP (VP (ADVP (AD 原))
+			  (VP (VC 为)
+			      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+					  (IP (NP-TPC (-NONE- *T*-1))
+					      (NP-PN-SBJ (NR 中)
+							 (NR 美))
+					      (VP (VV 合资))))
+				      (NP (NN 企业)))))
+		      (PU ，)
+		      (VP (NP-TMP (NT 一九九六年))
+			  (VP (VP (ADVP (AD 又))
+				  (VP (VV 吸收)
+				      (AS 了)
+				      (NP-OBJ (DNP (NP-PN (NR 法国)
+							  (NR 罗纳普郎克)
+							  (NN 公司))
+						   (DEG 的))
+					      (NP (NN 股份)))))
+			      (PU ，)
+			      (VP (PP-DIR (P 由)
+					  (NP (NN 稀土)
+					      (NN 初加工)))
+				  (PP-DIR (P 向)
+					  (NP (NN 深加工)))
+				  (VP (VV 发展))))))) 
+	  </parse>
+	  <arg n="1">
+	  包头 鹿西罗纳 稀土 有限 公司 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  由 稀土 初加工 	  	  	  
+	  </arg>
+	  <arg n="3">
+	  向 深加工 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九六年 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 俄罗斯))
+		      (NP (NN 国内))
+		      (PP (P 对)
+			  (NP (NN 工业品)))
+		      (NP (NN 需求)))
+	      (VP (PP-DIR (P 向)
+			  (NP (NN 中高档)
+			      (NN 方向)))
+		  (VP (VV 发展)))) 
+	  </parse>
+	  <arg n="1">
+	  俄罗斯 国内 对 工业品 需求 	  	  	  
+	  </arg>
+	  <arg n="3">
+	  向 中高档 方向 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-PN-SBJ (NR 福建))
+		  (VP (VV 发展)
+		      (NP-OBJ (NP (ADJP (JJ 高))
+				  (ADJP (JJ 新))
+				  (NP (NN 技术)))
+			      (NP (NN 产业))))) 
+	  </parse>
+	  <arg n="0">
+	  福建 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  高 新 技术 产业 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (NP-SBJ (NP-PN (NR 广东省))
+		      (PP (P 对)
+			  (NP (NN 外)))
+		      (NP (NN 经贸)))
+	      (VP (ADVP (AD 迅速))
+		  (VP (VV 发展)))) 
+	  </parse>
+	  <arg n="1">
+	  广东省 对 外 经贸 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  迅速 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" cdef="发展 到">
+      <role argnum="0" argrole="cause/agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="initial state"/>
+      <role argnum="3" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (NN 投资)
+			  (NN 地域))
+		  (VP (VP (ADVP (AD 不断))
+			  (VP (VV 扩大)))
+		      (PU ，)
+		      (VP (PP-DIR (P 由)
+				  (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-TMP (NT 过去))
+					  (VP (VV 集中)
+					      (PP-LOC (P 于)
+						      (NP-PN (NR 海口)
+							     (PU 、)
+							     (NR 三亚)))))))
+			  (VP (VRD (VV 发展)
+				   (VV 到))
+			      (NP-OBJ (DNP (NP (NT 现在))
+					   (DEG 的))
+				      (NP (DP (DT 全))
+					  (NP (NN 省)))
+				      (QP (CD 十九)
+					  (CLP (M 个)))
+				      (NP (NN 县)
+					  (NN 市))))))) 
+	  </parse>
+	  <arg n="1">
+	  投资 地域 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  由 *pro* 过去 集中 于 海口 、 三亚 	  	  	  
+	  </arg>
+	  <arg n="3">
+	  现在 的 全 省 十九 个 县 市 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (DNP (LCP (NP (NN 县))
+				(LC 以上))
+			   (DEG 的))
+		      (NP (NN 包装)
+			  (NN 企业)))
+	      (VP (ADVP (AD 已))
+		  (VP (VRD (VV 发展)
+			   (VV 到))
+		      (QP-OBJ (CD 一万五千)
+			      (CLP (M 家)))))) 
+	  </parse>
+	  <arg n="1">
+	  中国 县 以上 的 包装 企业 	  	  	  
+	  </arg>
+	  <arg n="3">
+	  一万五千 家 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" cdef="发展 成为">
+      <role argnum="0" argrole="cause/agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="initial state"/>
+      <role argnum="3" argrole="end state"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 成立)
+					  (PP-TMP (P 于)
+						  (NP (NT 一九七九年)))))
+				  (DEC 的)))
+			  (DP (DT 这)
+			      (CLP (M 家)))
+			  (NP (NN 公司)))
+		  (PU ，)
+		  (VP (NP-TMP (NT 目前))
+		      (ADVP (AD 已))
+		      (PP-DIR (P 由)
+			      (NP (IP-APP (NP-SBJ (-NONE- *pro*))
+					  (VP (NP-TMP (NN 初期))
+					      (VP (VP (VV 提供)
+						      (NP-OBJ (NN 介绍)))
+						  (PU 、)
+						  (VP (VV 招聘)
+						      (NP-OBJ (NN 雇员)))
+						  (ETC 等))))
+				  (ADJP (JJ 简易))
+				  (NP (NN 服务))))
+		      (PU ，)
+		      (VP (VRD (VV 发展)
+			       (VV 成为))
+			  (NP-OBJ (DNP (UCP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (VP (PP-MNR (P 以)
+								(NP (NN 人力)
+								    (NN 资源)
+								    (NN 服务)))
+							(VP (VV 为主)))
+						    (PU 、)
+						    (VP (VV 带动)
+							(NP-OBJ (NP-APP (NN 旅游)
+									(PU 、)
+									(NN 航空)
+									(PU 、)
+									(NN 仓储)
+									(PU 、)
+									(NN 办公)
+									(NN 自动化)
+									(NN 设备)
+									(NN 销售)
+									(PU 、)
+									(NN 电子)
+									(NN 信息)
+									(PU 、)
+									(NN 房地产)
+									(NN 开发)
+									(ETC 等))
+								(NP (NN 成龙)
+								    (NN 配套)
+								    (ETC 等))))))
+					    (ADJP (JJ 大型))
+					    (ADJP (JJ 专业化)))
+				       (DEG 的))
+				  (NP (NN 国际)
+				      (NN 服务)
+				      (NN 贸易)
+				      (NN 公司)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 成立 于 一九七九年 的 这 家 公司 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  由 *pro* 初期 提供 介绍 、 招聘 雇员 等 简易 服务 	  	  	  
+	  </arg>
+	  <arg n="3">
+	  *pro* 以 人力 资源 服务 为主 、 带动 旅游 、 航空 、 仓储 、 办公 自动化 设备 销售 、 电子 信息 、 房地产 开发 等 成龙 配套 等 大型 专业化 的 国际 服务 贸易 公司 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 如今))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 家)))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 已))
+		  (VP (VRD (VV 发展)
+			   (VV 成为))
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 个)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 拥有)
+					      (NP-OBJ (NP (QP (CD 四)
+							      (CLP (M 个)))
+							  (NP (NN 子公司)))
+						      (PU 、)
+						      (NP (QP (CD 十多)
+							      (CLP (M 个)))
+							  (NP (NN 羊绒)
+							      (NN 生产))
+							  (NP (NN 基地))))))
+				      (DEC 的)))
+			      (NP (NN 企业)
+				  (NN 集团)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  这 家 企业 	  	  	  
+	  </arg>
+	  <arg n="3">
+	  一 个 *OP* *T*-1 拥有 四 个 子公司 、 十多 个 羊绒 生产 基地 的 企业 集团 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="recruiter"/>
+      <role argnum="1" argrole="entity recruited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-PN-SBJ (NR ＣＥＣ))
+	      (VP (NP-TMP (NT 目前))
+		  (PP-LOC (P 在)
+			  (NP (NP (NN 世界))
+			      (QP (CD 一百六十)
+				  (CLP (M 个)))
+			      (NP (NN 国家)
+				  (CC 和)
+				  (NN 地区))))
+		  (VP (VV 发展)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 八千多万)
+				  (CLP (M 个)))
+			      (NP (NN 用户)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  ＣＥＣ 	  
+	  </arg>
+	  <arg n="1">
+	  八千多万 个 用户 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  据悉 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 世界 一百六十 个 国家 和 地区 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 备询 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity which receives and answers inquiries"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-DIR (P 从)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (NP-LOC (NN 国会))
+				    (NP-MNR (ADJP (JJ 高))
+					    (NP (NN 声)))
+				    (VP (VV 质询)))))
+		    (PU ，)
+		    (ADVP (AD 一))
+		    (VP (VV 变为)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VSB (VV 上台)
+					 (VV 备询))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

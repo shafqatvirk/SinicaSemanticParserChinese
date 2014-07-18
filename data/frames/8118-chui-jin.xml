@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吹进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place arg0 enters (like wind)"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 各)
+			  (CLP (M 种)))
+		      (NP (NN 思潮)))
+	      (VP (ADVP (AD 再度))
+		  (VP (VV 吹进)
+		      (NP-OBJ (NN 大陆))))) 
+	  </parse>
+	  <arg n="0">
+	  各 种 思潮 
+	  </arg>
+	  <arg n="1">
+	  大陆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

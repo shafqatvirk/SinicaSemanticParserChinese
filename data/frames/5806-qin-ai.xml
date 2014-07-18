@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 亲爱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TTL (PU 《)
+		(NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VA 亲爱)))
+				(DEC 的)))
+			(NP (NN 米酒)))
+		(PU ，)
+		(NP-SBJ (PN 你))
+		(VP (LB 被)
+		    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			    (IP (NP-SBJ (PN 我))
+				(VP (VV 打败)
+				    (AS 了)
+				    (NP-OBJ (-NONE- *T*-2))))))
+		(PU 》)) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

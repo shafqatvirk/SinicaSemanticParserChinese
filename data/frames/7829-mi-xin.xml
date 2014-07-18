@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迷信 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 believes in superstitiously"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 连战))
+	    (VP (ADVP (AD 也))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VV 迷信)
+						(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 送)
+								    (NP-OBJ (NN 钱))))
+							(VP (VV 有用))))))
+				    (DEC 的)))
+			    (NP (NN 候选人)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	*PRO* 送 钱 有用 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

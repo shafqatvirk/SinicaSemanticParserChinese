@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 倒帐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (SB 被)
+		(IP-OBJ (NP-SBJ (NN 人))
+			(VP (VV 倒帐))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 曾))
+		(PP-PRP (P 为了)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 找)
+				(NP-OBJ (NN 经销商))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 卖)
+					(NP-OBJ (NN 书)))))))
+		(VP (SB 被)
+		    (VP (VV 倒帐))))) 
+	</parse>
+	<arg n="1">
+	他们 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 找 经销商 *PRO* 卖 书 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

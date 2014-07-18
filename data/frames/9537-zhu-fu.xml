@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 祝福 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="well wisher"/>
+      <role argnum="1" argrole="entity wish is given to"/>
+      <role argnum="2" argrole="wish"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 陈水扁))
+		      (NP (NN 总统)))
+	      (VP (DVP (VP (VA 高兴))
+		       (DEV 地))
+		  (VP (VV 祝福)
+		      (NP-OBJ (NN 新人))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 早日))
+				  (VP (VV 生产)
+				      (NP-OBJ (PU 「)
+					      (NN 人权)
+					      (NN 宝宝)
+					      (PU 」))))
+			      (PU ，)
+			      (VP (PP-BNF (P 为)
+					  (NP (NN 人权)
+					      (NN 社会)
+					      (NN 愿景)))
+				  (VP (VV 打头阵)))
+			      (PU ，)
+			      (VP (VV 作)
+				  (NP-OBJ (DNP (NP (NN 人权)
+						   (NN 教育)
+						   (NN 传承))
+					       (DEG 的))
+					  (ADJP (JJ 最佳))
+					  (NP (NN 范本))))))))) 
+	  </parse>
+	  <arg n="0">
+	  陈水扁 总统 
+	  </arg>
+	  <arg n="1">
+	  新人 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 早日 生产 「 人权 宝宝 」 ， 为 人权 社会 愿景 打头阵 ， 作 人权 教育 传承 的 最佳 范本 
+	  </arg>
+	  <arg n="m" f="adv">
+	  高兴 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

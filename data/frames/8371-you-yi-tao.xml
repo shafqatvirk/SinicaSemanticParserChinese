@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有一套 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is good at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-APP (DNP (NP-PN (NR 千千))
+				       (DEG 的))
+				  (ADJP (JJ 法籍))
+				  (NP (NN 褓母)))
+			  (NP-PN (NR 马汀娜)))
+		  (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP (P 和)
+					  (NP (NN 老婆)))
+				      (VP (VA 一样))))
+			  (PU ，)
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (PN 她))
+				      (VP (VP (VV 当)
+					      (NP-OBJ (NN 心肝宝贝)))
+					  (VP (MSP 来)
+					      (VP (VV 疼)))))))
+		      (PU ，)
+		      (CC 而且)
+		      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 带)
+				      (NP-OBJ (NN 小孩))))
+			  (ADVP (AD 还))
+			  (ADVP (AD 真))
+			  (VP (VV 有一套))))) 
+	  </parse>
+	  <arg n="0">
+	  千千 的 法籍 褓母 马汀娜 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 带 小孩 
+	  </arg>
+	  <arg n="m" f="adv">
+	  真 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 采 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 mines/picks/adopts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (PU “)
+		    (VP (PP (P 以)
+			    (NP (PN 我)))
+			(VP (VV 为主)))
+		    (PU 、)
+		    (VP (ADVP (AD 博))
+			(VP (VV 采)
+			    (NP-OBJ (NN 众)
+				    (NN 长))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  博 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  众 长 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

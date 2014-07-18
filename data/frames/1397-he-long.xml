@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合龙 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="project"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-PN-SBJ (NR 中国))
+				      (VP (VV 援建)
+					  (NP-PN-OBJ (NR 多哥))))
+				  (DEC 的)))
+			  (NP-APP (NP (QP (CD ３万))
+				      (NP (NN 人)))
+				  (NP (NN 体育场)))
+			  (NP (NN 工程)))
+		      (QP (OD 第一)
+			  (CLP (M 期)))
+		      (PRN (PU ──)
+			   (NP (NP (NP (NN 主体))
+				   (NP (NN 柱)
+				       (PU 、)
+				       (NN 梁)))
+			       (NP (NN 基础)
+				   (NN 工程)))))
+	      (VP (PP-TMP (P 于)
+			  (NP (NT ２２日)))
+		  (PP-LOC (P 在)
+			  (QP (OD 第１０)
+			      (CLP (M 轴))))
+		  (VP (VV 合龙)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 中国 援建 多哥 的 ３万 人 体育场 工程 第一 期 ── 主体 柱 、 梁 基础 工程 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 ２２日 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 第１０ 轴 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

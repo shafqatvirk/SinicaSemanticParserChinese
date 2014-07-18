@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改变 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 医药业)))
+	      (VP (VV 应)
+		  (VP (VV 改变)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VV 重)
+						  (NP-OBJ (NN 原料药)
+							  (NN 生产)))
+					      (PU 、)
+					      (VP (VV 轻)
+						  (NP-OBJ (NN 制剂)
+							  (NN 开发)))))
+				      (DEC 的))
+			      (NP (NN 做法)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 医药业 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 重 原料药 生产 、轻 制剂 开发 的 做法 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 许多))
+		      (NP (NN 计划)))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 不得不))
+		  (VP (VV 改变)))) 
+	  </parse>
+	  <arg n="1">
+	  许多 计划 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  都 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不得不 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,212 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发 </id>
+    <frameset id="f1" edef="publish">
+      <role argnum="0" argrole="publisher, issuer, deliverer"/>
+      <role argnum="1" argrole="article, speech, etc"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年)
+		      (NT １２月)
+		      (NT ２６日))
+	      (PU ，)
+	      (NP-TTL-SBJ (PU 《)
+			  (NR 湖北)
+			  (NN 日报)
+			  (PU 》))
+	      (VP (VP (VV 发)
+		      (NP-OBJ (NN 评论员)
+			      (NN 文章)))
+		  (VP (VV 指出)
+		      (PU ：)
+		      (IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 坚持)
+					  (NP-OBJ (NN 新闻)
+						  (NN 真实性)
+						  (NN 原则))))
+			      (PU ，)
+			      (VP (VC 是)
+				  (NP-PRD (DNP (NP (DNP (NP (NN 党))
+							(DEG 的))
+						   (NP (NN 新闻)
+						       (NN 事业)))
+					       (DEG 的))
+					  (ADJP (JJ 优良))
+					  (NP (NN 传统)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  《 湖北 日报 》 	  
+	  </arg>
+	  <arg n="1">
+	  一 组 文章 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 １２月 ２６日 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="send, give">
+      <role argnum="0" argrole="giver, sender"/>
+      <role argnum="1" argrole="thing sent, given"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 国家))
+		      (ADJP (JJ 主要))
+		      (NP (NN 领导人)))
+	      (VP (ADVP (AD 已))
+		  (VP (VP (VV 发)
+			  (NP-OBJ (NN 唁电)))
+		      (VP (VV 致悼))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 国家 主要 领导人 	  
+	  </arg>
+	  <arg n="1">
+	  唁电 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="get (a fever)">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="illness"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-PRP (P 因)
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 发)
+						  (NP-OBJ (NN 高烧)))))
+				  (VP (VV 缺阵))))
+			  (DEC 的)))
+		  (NP-APP (NN 队友))
+		  (NP-PN (NR 阿·本岑))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  高烧 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (IP (NP-TPC (-NONE- *T*-2))
+			  (NP-SBJ (NN 公路)
+				  (NN 病害))
+			  (VP (ADVP (AD 多))
+			      (VP (VV 发)))))
+		  (NP (NN 区段))) 
+	  </parse>
+	  <arg n="0">
+	  公路 病害 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  多 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-2 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5" edef="start">
+      <role argnum="0" argrole="starter"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 千))
+		      (NP (NN 帆)))
+	      (VP (VSB (VV 竞)
+		       (VV 发)))) 
+	  </parse>
+	  <arg n="0">
+	  千 帆 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6" edef="make (fortune)">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing (fortune) arg0 makes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (ADVP (AD 连))
+		  (NP (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (QP-ADV (CD 一)
+					      (CLP (M 生)))
+				      (ADVP (AD 没))
+				      (VP (VV 发)
+					  (AS 过)
+					  (NP-OBJ (NN 财) ))))
+			      (DEC 的)))
+		      (NP-APP (ADJP (JJ 盖世))
+			      (NP (NN 英雄) ))
+		      (NP-PN (NR 关帝爷) ))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  财 
+	  </arg>
+	  <arg n="m" f="adv">
+	  没 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 生 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

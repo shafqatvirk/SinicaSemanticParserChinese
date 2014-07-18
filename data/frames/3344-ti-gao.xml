@@ -1,0 +1,192 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提高 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <role argnum="4" argrole="range"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 两))
+			  (NP (NN 国)))
+		  (VP (ADVP (AD 将))
+		      (PP-LOC (P 在)
+			      (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VCD (VA 平等)
+							    (VV 互利))))
+					       (DEC 的))
+				       (NP (NN 基础)))
+				   (LC 上)))
+		      (PU ，)
+		      (VP (VP (ADVP (AD 进一步))
+			      (VP (VV 发展)
+				  (NP-OBJ (NP (NP (QP (CD 两))
+						  (NP (NN 国)))
+					      (PU 、)
+					      (NP (QP (CD 两))
+						  (NP (NN 军))))
+					  (DNP (PP-LOC (P 在)
+						       (LCP (NP (DP (DT 各)
+								    (CLP (M 个)))
+								(NP (NN 领域)))
+							    (LC 里)))
+					       (DEG 的))
+					  (NP (NN 合作)))))
+			  (PU ，)
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DNP (LCP (NP (QP (CD 两))
+							    (NP (NN 国)))
+							(LC 间))
+						   (DEG 的))
+					      (ADJP (JJ 友好))
+					      (NP (NN 合作)
+						  (NN 关系)))
+				      (VP (VV 提高)
+					  (PP-EXT (P 到)
+						  (NP (QP (CD 一)
+							  (CLP (M 个)))
+						      (ADJP (JJ 新))
+						      (NP (NN 水平)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  两国 
+	  </arg>
+	  <arg n="1">
+	  两国 间 的 友好 合作 关系 
+	  </arg>
+	  <V/>
+	  <arg n="3">
+	  到 一 个 新 水平 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 贵州)
+			     (NR 茅台)
+			     (NN 酒厂))
+		  (VP (ADVP (AD 将))
+		      (ADVP (AD 进一步))
+		      (VP (VV 提高)
+			  (NP-OBJ (NN 产量))))) 
+	  </parse>
+	  <arg n="0">
+	  贵州 茅台 酒厂 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  进一步 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  产量 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 占)
+				      (NP-OBJ (NP (DP (DT 全))
+						  (NP (NN 国)))
+					      (NP (NN 进出口)
+						  (NN 总值)))
+				      (NP-EXT (-NONE- *T*-2))))
+			      (DEC 的)))
+		      (NP (NN 比重)))
+	      (VP (PP-DIR (P 由)
+			  (QP (DNP (DP (DT 上)
+				       (CLP (M 年)))
+				   (DEG 的))
+			      (QP (CD 百分之三十七))))
+		  (VP (VRD (VV 提高)
+			   (VV 到))
+		      (QP-OBJ (CD 百分之三十九))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *pro* 占 全 国 进出口 总值 (*T*-2)->(比重) 的 比重 
+	  </arg>
+	  <arg n="2">
+	  由 上 年 的 百分之三十七 
+	  </arg>
+	  <V/>
+	  <arg n="3">
+	  百分之三十九 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg4"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 增幅))
+	      (VP (PP (P 比)
+		      (DP (DT 上)
+			  (CLP (M 年))))
+		  (VP (VV 提高)
+		      (NP-EXT (QP (CD 零点三)
+				  (CLP (M 个)))
+			      (NP (NN 百分点)))))) 
+	  </parse>
+	  <arg n="1">
+	  增幅 
+	  </arg>
+	  <V/>
+	  <arg n="4">
+	  零点三 个 百分点 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 农业)
+		      (NN 生产)
+		      (NN 水平))
+	      (VP (ADVP (AD 明显))
+		  (VP (VV 提高)))) 
+	  </parse>
+	  <arg n="1">
+	  农业 生产 水平 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  明显 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

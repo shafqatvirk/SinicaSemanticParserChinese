@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跑来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="runner"/>
+    <role argnum="1" argrole="place arg0 runs to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (NT 以前))
+		(ADVP (AD 常))
+		(VP (VP (VV 跑来)
+			(NP-PN-OBJ (NR 乐山)))
+		    (VP (VV 玩))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	乐山 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<arg n="m" f="tmp">
+	以前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撩动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 stirs up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (IP (NP-PN-SBJ (NN 国大))
+		    (VP (ADVP (AD 自行))
+			(VP (VV 延任))))
+		(PU /)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 撩动)
+			(NP-OBJ (NN 宪政)
+				(NN 风波))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	宪政 风波 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 杀伤 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 kills/injures"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 包括)
+		(NP-OBJ (NP-APP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (ADVP (AD 硬))
+						(VP (VV 杀伤))))
+					(DEC 的))
+				(NP (NN 武器)))
+			(PU ，)
+			(NP (ADVP (AD 例如))
+			    (PU ：)
+			    (NP (NP (NN 巡弋)
+				    (NN 飞弹))
+				(PU 、)
+				(NP (ADJP (JJ 反辐射))
+				    (NP (NN 导弹)))
+				(PU 、)
+				(NP (ADJP (JJ 制导))
+				    (NP (NN 炸弹))
+				    (PRN (PU （)
+					 (NP (NN 炮弹))
+					 (PU ）)))
+				(PU 、)
+				(NP (ADJP (JJ 遥感))
+				    (NP (NN 地雷))
+				    (PRN (PU （)
+					 (NP (NN 水雷))
+					 (PU ）)))
+				(PU 、)
+				(NP (ADJP (JJ 遥感))
+				    (NP (NN 引信)))
+				(CC 和)
+				(NP (ADJP (JJ 遥感))
+				    (NP (NN 炮弹)))
+				(ETC 等)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="mnr">
+	硬 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

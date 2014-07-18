@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 意想不到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 doesn't expect"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (NP (NN 健康)
+			 (PU 、)
+			 (NN 婚姻)
+			 (PU 、)
+			 (NN 事业))
+		     (LC 之外))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (VV 意想不到)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NN 转折)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 可能)
+		    (VP (PP-TMP (P 在)
+				(NP (NN 中年)))
+			(VP (VV 发生)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TTL-SBJ (PU 《)
+			(NN 晴天)
+			(NN 娃娃)
+			(PU 》))
+	    (VP (VP (ADVP (AD 才))
+		    (VP (VV 贴)
+			(QP-EXT (CD 几)
+				(CLP (M 次)))))
+		(VP (ADVP (AD 就))
+		    (VP (VV 得到)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (-NONE- *pro*))
+					    (VP (VV 意想不到)))
+					(DEC 的)))
+				(NP (NN 支持))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 反)
+			(NP-OBJ (NN 水库))))
+	    (VP (ADVP (AD 也))
+		(VP (VV 带来)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 意想不到)))
+				    (DEC 的)))
+			    (NP (NN 收获)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 就渎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="school arg0 goes to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (LCP-TMP (IP (NP-PN-SBJ (NR 孙燕姿))
+			       (VP (PP-LOC (P 在)
+					   (NP (CP (WHNP-2 (-NONE- *OP*))
+						   (CP (IP (NP-SBJ (PN 他))
+							   (VP (VV 创办)
+							       (NP-OBJ (-NONE- *T*-2))))
+						       (DEC 的)))
+					       (NP (NN 音乐)
+						   (NN 学院))))
+				   (VP (VV 就渎))))
+			   (LC 时))
+		  (NP-SBJ (NN 表现))
+		  (VP (ADVP (AD 并))
+		      (VP (VC 非)
+			  (VP (ADVP (AD 最))
+			      (VP (VA 出色)))))) 
+	  </parse>
+	  <arg n="0">
+	  孙燕姿 
+	  </arg>
+	  <arg n="1">
+	  在 *OP* 他 创办 *T*-2 的 音乐 学院 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

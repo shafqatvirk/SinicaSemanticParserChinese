@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 动怒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person who becomes angry"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (CP-ADV (ADVP (CS 一旦))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 听到)
+			    (IP-OBJ (NP-SBJ (NN 问题))
+				    (VP (ADVP (AD 还))
+					(ADVP (AD 没))
+					(VP (VV 解决)))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 却))
+		(ADVP (AD 又))
+		(ADVP (AD 难免))
+		(VP (VV 动怒)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	难免 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="adv">
+	一旦 *PRO* 听到 问题 还 没 解决 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

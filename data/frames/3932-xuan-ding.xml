@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 选定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="picker"/>
+      <role argnum="1" argrole="entity selected"/>
+      <role argnum="2" argrole="select as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 记者))
+	      (VP (PP-DIR (P 从)
+			  (NP (NP-PN (NR 海南省))
+			      (NP (NN 交通)
+				  (NN 运输厅))))
+		  (VP (VV 获悉)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 海南省))
+				      (NP (NN 政府)))
+			      (VP (NP-TMP (NT 日前))
+				  (ADVP (AD 已))
+				  (VP (VV 选定)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (PP-LGS (P 由)
+								      (NP-PN (NP-PN (NR 泰国))
+									     (NP-PN (NR ＥＶＰＥＣ))
+									     (NP (NN 国际))
+									     (ADJP (JJ 有限))
+									     (NP (NN 公司))))
+							      (VP (VCD (VV 授权)
+								       (VV 委托)))))
+						      (DEC 的)))
+					      (NP-PN (NP-PN (NR 海口))
+						     (NP-PN (NR 旭峰))
+						     (NP (NN 旅业)
+							 (NN 发展))
+						     (ADJP (JJ 有限))
+						     (NP (NN 公司))))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 为)
+					      (NP-OBJ (NP (NN 西线))
+						      (NP (ADJP (JJ 高速))
+							  (NP (NN 公路)))
+						      (NP (NN 投资)
+							  (NN 经营)
+							  (NN 业主))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  海南省 政府 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  日前 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-1)->(海口旭峰旅业发展有限公司) 由 泰国 ＥＶＰＥＣ 国际 有限 公司 授权 委托 的 海口 旭峰 旅业 发展 有限 公司 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 西线 高速 公路 投资 经营 业主 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-MNR (P 经)
+			  (IP (NP-SBJ (NN 专家组))
+			      (VP (PP-DIR (P 对)
+					  (NP (QP (CD ３)
+						  (CLP (M 个)))
+					      (NP (NN 方案))))
+				  (VP (VV 进行)
+				      (AS 了)
+				      (NP-OBJ (DNP (NP (QP (ADVP (AD 近))
+							   (QP (CD 两)
+							       (CLP (M 个))))
+						       (NP (NN 月)))
+						   (DEG 的))
+					      (NP (NN 审议)
+						  (CC 和)
+						  (NN 谈判)))))))
+		  (PU ，)
+		  (ADVP (AD 最终))
+		  (VP (VV 选定)
+		      (NP-OBJ (NP-PN (NR 美国)
+				     (NR ＮＥＢ)
+				     (NN 设计)
+				     (NN 集团))
+			      (NP (NN 方案)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="MNR">
+	  经 专家组 对 ３ 个 方案 进行 了 近 两 个 月 的 审议 和 谈判 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  最终 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  美国 ＮＥＢ 设计 集团 方案 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

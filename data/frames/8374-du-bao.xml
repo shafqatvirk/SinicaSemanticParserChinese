@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 读报 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="newspaper reader"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 淡水))
+		      (NP (NN 阿伯)))
+	      (VP (VP (VV 跷)
+		      (AS 著)
+		      (NP-OBJ (NN 二郎腿)))
+		  (VP (DVP (VP (VA 悠哉))
+			   (DEV 地))
+		      (VP (VV 读报))))) 
+	  </parse>
+	  <arg n="0">
+	  淡水 阿伯 
+	  </arg>
+	  <arg n="m" f="adv">
+	  悠哉 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

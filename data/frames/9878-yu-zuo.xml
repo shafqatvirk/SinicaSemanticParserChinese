@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes in advance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 自己))
+		  (VP (VP (VV 可能)
+			  (VP (VV 活)
+			      (PP (P 到)
+				  (QP (CD 八十五)
+				      (CLP (M 岁))))))
+		      (PU ，)
+		      (VP (QP-TMP (NP (NT 未来))
+				  (QP (CD 二十五)
+				      (CLP (M 年))))
+			  (VP (VP (VV 要)
+				  (VP (VV 吃)))
+			      (VP (VV 要)
+				  (VP (VV 喝)))
+			      (PU 、)
+			      (VP (VV 要)
+				  (VP (VSB (VV 出国)
+					   (VV 旅游))))
+			      (PU ，)
+			      (VP (ADVP (AD 还))
+				  (VP (VV 要)
+				      (VP (PP-BNF (P 为)
+						  (NP (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (VA 庞大)))
+							      (DEC 的)))
+						      (NP (NN 医疗)
+							  (NN 看护费))))
+					  (VP (VV 预作)
+					      (NP-OBJ (NN 准备)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  自己 
+	  </arg>
+	  <arg n="1">
+	  准备 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 *OP* *T*-1 庞大 的 医疗 看护费 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

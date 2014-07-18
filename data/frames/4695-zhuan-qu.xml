@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赚取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="profit maker"/>
+      <role argnum="1" argrole="money/profit arg0 makes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 外贸)
+		      (NN 公司))
+	      (VP (DVP (VP (VE 无)
+			   (NP-OBJ (NN 成本)))
+		       (DEV 地))
+		  (VP (VV 赚取)
+		      (NP-OBJ (NN 代理)
+			      (NN 手续费))))) 
+	  </parse>
+	  <arg n="0">
+	  外贸 公司 
+	  </arg>
+	  <arg n="1">
+	  代理 手续费 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无 成本 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

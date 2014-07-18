@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 徵 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="collector"/>
+    <role argnum="1" argrole="thing (tax) arg0 collects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (NP-TMP (-NONE- *T*-1))
+				(ADVP (AD 免))
+				(VP (VV 徵)))))
+		    (NP (NN 期间)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 最))
+			    (VP (VA 长))))
+		(VP (QP-PRD (CD 三)
+			    (CLP (M 年)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	免 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

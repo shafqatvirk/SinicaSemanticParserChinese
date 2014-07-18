@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 夺回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 女排)))
+	      (VP (VP (PP-LOC (P 在)
+			      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *T*-1))
+						   (VP (NP-PN-LOC (NR 日本))
+						       (VP (VV 举行))))
+					       (DEC 的)))
+				       (NP (NN 世界)
+					   (NN 锦标赛)))
+				   (LC 上)))
+		      (ADVP (AD 再))
+		      (VP (VV 获)
+			  (NP-OBJ (NN 亚军))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP-PN (NR 曼谷)
+					  (NR 亚运会))
+				   (LC 上)))
+		      (PP (P 同)
+			  (NP (NP-PN (NR 中国))
+			      (NP (NN 男排))))
+		      (ADVP (AD 一起))
+		      (ADVP (AD 双双))
+		      (VP (VV 夺回)
+			  (NP-OBJ (NN 冠军)
+				  (NN 奖杯)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 女排 
+	  </arg>
+	  <arg n="1">
+	  冠军 奖杯 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 曼谷 亚运会 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同 中国 男排 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一起 
+	  </arg>
+	  <arg n="m" f="adv">
+	  双双 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 侦查 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 investigates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 毒)
+				  (NP-OBJ (NN 鹤))))
+		      (NP (NN 案件)))
+	      (VP (ADVP (AD 正))
+		  (VP (PP-PRD (P 在)
+			      (LCP (NP (NN 侦查))
+				   (LC 中)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 毒 鹤 案件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

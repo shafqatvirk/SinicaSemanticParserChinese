@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 齐平 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities being on the same level"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 位)
+				    (PP (P 於)
+					(NP (NP-PN (NR 林边)
+						   (PU 、)
+						   (NR 佳冬))
+					    (NP (NN 沿海))))))
+			    (DEC 的)))
+		    (NP (NN 房子)))
+	    (PU ，)
+	    (NP-TPC (PN 有些))
+	    (IP (IP (NP-SBJ (-NONE- *pro*))
+		    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 伸手)))
+			(ADVP (AD 就))
+			(VP (VV 可)
+			    (VP (VV 摸到)
+				(NP-OBJ (NN 屋顶))))))
+		(PU 、)
+		(CC 或者)
+		(IP (NP-SBJ (NN 窗子))
+		    (VP (ADVP (AD 已))
+			(PP (P 与)
+			    (NP (NN 路面)))
+			(VP (VV 齐平)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*OP* *T*-1 位 於 林边 、 佳冬 沿海 的 房子 
+	</arg>
+	<arg n="0" f="psr">
+	有些 
+	</arg>
+	<arg n="0" f="pse">
+	窗子 
+	</arg>
+	<arg n="0" f="crd">
+	与 路面 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

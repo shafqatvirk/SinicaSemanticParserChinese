@@ -1,0 +1,152 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 判 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people sentenced"/>
+      <role argnum="2" argrole="penalty"/>
+      <role argnum="3" argrole="crime"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 北京))
+			  (QP (CD 一))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 抢劫)
+				      (NP-OBJ (NN 邮政)
+					      (NN 储蓄所)))))
+			  (NP (NN 罪犯)))
+		  (VP (SB 被)
+		      (VP (VV 判)
+			  (NP-OBJ (NN 死刑))))) 
+	  </parse>
+	  <arg n="1">
+	  北京 一 *OP* *T*-1 抢劫 邮政 储蓄所 罪犯 
+	  </arg>
+	  <arg n="2">
+	  死刑 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>						
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ-1 (-NONE- *pro*))
+		  (VP (VP (VV 伪造)
+			  (NP-OBJ (NN 旅行)
+				  (NN 证件)
+				  (CC 和)
+				  (NN 身分证)))
+		      (VP (SB 被)
+			  (VP (VV 判)
+			      (NP-OBJ (-NONE- *-1))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 入狱))))))) 
+	  </parse>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 入狱 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg3"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-4 (QP (OD 第二)
+			    (CLP (M 项)))
+			(NP (NN 控罪)))
+	      (VP (SB 被)
+		  (VP (VV 判)
+		      (NP-OBJ (-NONE- *-4))
+		      (VP (VV 入狱)
+			  (NP-EXT (QP (CD 两)
+				      (CLP (M 个)))
+				  (NP (NN 月))))))) 
+	  </parse>
+	  <arg n="3">
+	  第二 项 控罪 
+	  </arg>
+	  <arg n="1">
+	  *-4 
+	  </arg>
+	  <arg n="2">
+	  入狱 两 个 月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people sentenced"/>
+      <role argnum="2" argrole="penalty"/>
+      <role argnum="3" argrole="crime"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg3"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU 「)
+		  (IP-SBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 藏有)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (VV 伪造)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (NP (NN 身分证)))))
+		  (VP (VP (VC 为)
+			  (NP-PRD (ADJP (JJ 严重))
+				  (NP (NN 罪行))))
+		      (PU ，)
+		      (VP (ADVP (AD 最高))
+			  (VP (VV 可)
+			      (VP (SB 被)
+				  (VP (VP (VCD (VV 判)
+					       (VV 罚))
+					  (NP-OBJ=5 (NN 入狱))
+					  (QP-EXT=6 (CD 十)
+						    (CLP (M 年))))
+				      (CC 及)
+				      (VP (NP-OBJ=5 (NN 罚款))
+					  (QP-EXT=6 (QP (CD 十万)
+							(CLP (M 元)))
+						    (ADVP (AD 正)))))))))) 
+	  </parse>
+	  <arg n="3">
+	  *pro* 藏有 *OP* *pro* 伪造 *T*-1 身分证 
+	  </arg>
+	  <arg n="2">
+	  入狱 十 年 及 罚款 十万 元 正 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最高 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

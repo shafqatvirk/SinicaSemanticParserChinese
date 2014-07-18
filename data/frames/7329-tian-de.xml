@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 添得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 adds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TPC (QP (NP (NN 男子)
+			    (NN 站立)
+			    (NN 组))
+			(QP (OD 第九)
+			    (CLP (M 级))))
+		    (PU 、)
+		    (QP (NP (NN 女子)
+			    (NN 轮椅))
+			(QP (QP (OD 第四)
+				(CLP (-NONE- *RNR*-1)))
+			    (CC 和)
+			    (QP (OD 第五)
+				(CLP-1 (ADJP (JJ 合))
+				       (CLP (M 级)))))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 皆))
+		(VP (VV 添得)
+		    (NP-OBJ (QP (CD 一))
+			    (NP (NN 铜)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一 铜 
+	</arg>
+	<arg n="m" f="adv">
+	皆 
+	</arg>
+	<arg n="m" f="tpc">
+	男子 站立 组 第九 级 、 女子 轮椅 第四 *RNR*-1 和 第五 合 级 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

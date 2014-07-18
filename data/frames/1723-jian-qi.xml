@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 建起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="establisher"/>
+      <role argnum="1" argrole="thing established"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NR 海拉尔)
+				 (PU 、)
+				 (NR 满洲里)
+				 (ETC 等))
+		      (NP (NN 城市)))
+	      (VP (ADVP (AD 先后))
+		  (VP (VV 建起)
+		      (NP-OBJ (ADJP (JJ 星级))
+			      (NP (NN 宾馆)
+				  (NN 饭店)))
+		      (QP-EXT (CD 十余)
+			      (CLP (M 所)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  海拉尔 、 满洲里 等 城市 
+	  </arg>
+	  <arg n="1">
+	  星级 宾馆 饭店 
+	  </arg>
+	  <arg n="1" f="qty">
+	  十余 所 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今天))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 水口村))
+	      (VP (ADVP (AD 已))
+		  (VP (VP (VV 崛起)
+			  (AS 了)
+			  (NP-OBJ (QP (CLP (M 座座)))
+				  (ADJP (JJ 现代化))
+				  (NP (NN 工业区)
+				      (CC 和)
+				      (NN 厂房))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 建起)
+			  (AS 了)
+			  (NP-OBJ (NN 公园)
+				  (PU 、)
+				  (NN 影剧院)
+				  (PU 、)
+				  (NN 酒家)
+				  (PU 、)
+				  (NN 商场))))))
+	  </parse>
+	  <arg n="0">
+	  水口村 
+	  </arg>
+	  <arg n="1">
+	  公园 、 影剧院 、 酒家 、 商场 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

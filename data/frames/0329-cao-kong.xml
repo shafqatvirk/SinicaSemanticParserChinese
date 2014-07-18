@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 操控 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="manipulator"/>
+    <role argnum="1" argrole="thing manipulated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (LCP-TMP (LCP (NP (NT 一九九八年)
+                            (NT 八月))
+                        (LC 底))
+                   (LC 以来))
+          (ADVP (AD 再))
+          (VP (VE 没有)
+              (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+                                  (VP (VV 操控)
+                                      (NP-OBJ (NN 市场))))
+                              (DEC 的))
+                      (NP (NN 迹象)))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> 市场 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

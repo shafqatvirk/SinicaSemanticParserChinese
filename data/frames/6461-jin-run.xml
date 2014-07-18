@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 浸润 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is soaked with/in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (LCP (NP (NN 林))
+			 (LC 中))
+		    (NP (NN 万物)))
+	    (VP (VV 浸润)
+		(PP (P 在)
+		    (LCP (NP (ADJP (JJ 氤氲))
+			     (NP (NN 水气)))
+			 (LC 中))))) 
+	</parse>
+	<arg n="0">
+	林 中 万物 
+	</arg>
+	<arg n="1">
+	在 氤氲 水气 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (LCP-TMP (QP (CD 千馀)
+			 (CLP (M 年)))
+		     (LC 来))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VCD (VV 相沿)
+					 (VV 浸润))))
+			    (DEC 的)))
+		    (NP (NN 民俗)))
+	    (PU ，)
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (DNP (NP (PN 我们))
+				      (DEG 的))
+				 (NP (NN 生活)
+				     (CC 和)
+				     (NN 情感)))
+			     (LC 里)))
+		(ADVP (AD 仍))
+		(VP (VV 占有)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 不可或缺)))
+				    (DEG 之)))
+			    (NP (NN 地)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

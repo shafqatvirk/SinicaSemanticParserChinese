@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 定名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="name giver"/>
+      <role argnum="1" argrole="thing receiving name"/>
+      <role argnum="2" argrole="name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 另))
+	      (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 科学家)))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (DP (DT 这)
+				      (CLP (M 类)))
+				  (NP (NN 始祖鸟)
+				      (NN 化石)))
+			  (VP (ADVP (AD 暂))
+			      (VP (VRD (VV 定名)
+				       (VV 为))
+				  (NP-OBJ (PU “)
+					  (NN 神州)
+					  (NN 始祖鸟)
+					  (PU ”))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 科学家 
+	  </arg>
+	  <arg n="1">
+	  这 类 始祖鸟 化石 
+	  </arg>
+	  <arg n="2" f="as">
+	  “ 神州 始祖鸟 ” 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据悉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  暂 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

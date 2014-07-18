@@ -1,0 +1,129 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 满 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location/container filled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (ADVP (AD 已))
+	      (VP (VV 成)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 牛)
+					      (NN 羊))
+				      (VP (VV 满)
+					  (NP-OBJ (NN 山坡))))
+				  (DEC 的)))
+			  (ADJP (JJ 新))
+			  (NP (NN 牧区))))) 
+	  </parse>
+	  <arg n="0">
+	  牛 羊 	  
+	  </arg>
+	  <arg n="1">
+	  山坡 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="point reached"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 刚))
+					(VP (VV 满)
+					    (QP-OBJ (CD １９)
+						    (CLP (M 岁))))))
+				(DEC 的)))
+			(NP-PN (NR 欧文)))
+		(VP (NP-TMP (NT 现在))
+		    (VP (VV 效力)
+			(NP-PN-OBJ (NR 利物浦队))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  １９ 岁 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  刚 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (NN 缓缴期))
+			       (VP (VV 满)))
+			   (LC 后)))
+	      (ADVP (AD 即))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (NN 税款))
+			  (VP (VCD (VV 补缴)
+				   (VV 入库)))))) 
+	  </parse>
+	  <arg n="1">
+	  缓缴期 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent be satisfied"/>
+      <role argnum="1" argrole="entity that satisfies the agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DNP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				   (VP (ADVP (AD 不))
+				       (VP (VV 满)
+					   (NP-OBJ (NT 目前)
+						   (NN 政治)
+						   (NN 现状)))))
+			   (NP (NN 者)))
+		       (DEG 的))
+		  (NP (NN 集结))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO*	  
+	  </arg>
+	  <arg n="1">
+	  目前 政治 现状	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

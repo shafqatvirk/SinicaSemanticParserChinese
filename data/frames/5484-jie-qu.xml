@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撷取 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 takes in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 换)
+			    (NP-OBJ (QP (CLP (M 句)))
+				    (NP (NN 话))))
+			(VP (VV 说))))
+	    (PU ，)
+	    (CP-ADV (ADVP (CS 只要))
+		    (IP (NP-SBJ (-NONE- *pro*))
+			(VP (VV 撷取)
+			    (NP-OBJ (DNP (NP (NN 东西方))
+					 (DEG 的))
+				    (NP (NN 优点))))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 亚洲))
+		    (NP (NN 价值)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 就))
+		(VP (VC 是)
+		    (NP-PRD (NN 世界)
+			    (NN 价值))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	东西方 的 优点 
+	</arg>
+	<arg n="m" f="dis">
+	只要 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

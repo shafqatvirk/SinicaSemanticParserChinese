@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 填饱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="thing arg0 fills arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 勉强))
+			    (VP (VV 填饱)
+				(NP-OBJ (NN 肚子) ))))
+		    (DEC 的))
+	    (NP (NN 状况))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	肚子 
+	</arg>
+	<arg n="m" f="adv">
+	勉强 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

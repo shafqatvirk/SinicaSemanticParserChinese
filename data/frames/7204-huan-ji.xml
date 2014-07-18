@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 还击 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 retaliates upon"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (PN 有的))
+		    (VP (VV 扛)
+			(AS 著)
+			(NP-OBJ (ADJP (JJ 迫击))
+				(ADJP (JJ 重))
+				(NP (NN 炮)))))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (PN 有的))
+		    (VP (VV 举起)
+			(NP-OBJ (NN 机关枪))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (QP-ADV (CD 一)
+			(CLP (M 连串)))
+		(PP-DIR (P 对著)
+			(NP (PN 他)))
+		(VP (VV 还击)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	对著 他 
+	</arg>
+	<arg n="m" f="adv">
+	一 连串 
+	</arg>
+	<arg n="m" f="adv">
+	有的 举起 机关枪 
+	</arg>
+	<arg n="m" f="adv">
+	有的 扛 著 迫击 重 炮 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

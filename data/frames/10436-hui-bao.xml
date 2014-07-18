@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 回报 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 reports"/>
+    <role argnum="2" argrole="entity arg1 is reported to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VNV (VV 要)
+		     (AD 不)
+		     (VV 要))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 听讲)
+				    (NN 内容))
+			    (VP (ADVP (AD 据实))
+				(VP (VV 回报))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	听讲 内容 
+	</arg>
+	<arg n="m" f="adv">
+	据实 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

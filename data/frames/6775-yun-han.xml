@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 蕴含 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 contains"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (DNP (NP (NN 文化)
+				 (NN 义工))
+			     (DEG 的))
+			(NP (NN 培训)))
+		    (PU ，)
+		    (NP (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+				     (IP (NP-SBJ (-NONE- *T*-1))
+					 (VP (PP (P 与)
+						 (NP (NN 茶叶)))
+					     (VP (VA 相关)))))
+				 (NP (NN 活动)))
+			     (DEG 的))
+			(NP (NN 举办)))
+		    (PU 、)
+		    (NP (DNP (NP (NN 乡志)
+				 (NN 乡史))
+			     (DEG 的))
+			(NP (NN 制作)
+			    (CC 与)
+			    (NN 保存))))
+	    (PU ，)
+	    (VP (ADVP (AD 在在))
+		(ADVP (AD 都))
+		(VP (VV 蕴含)
+		    (AS 著)
+		    (NP-OBJ (NN 茶风)
+			    (CC 与)
+			    (NN 茶情))))) 
+	</parse>
+	<arg n="0">
+	文化 义工 的 培训 ， *OP* *T*-1 与 茶叶 相关 活动 的 举办 、 乡志 乡史 的 制作 与 保存 
+	</arg>
+	<arg n="1">
+	茶风 与 茶情 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	在在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

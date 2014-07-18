@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掌握在 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity that controls arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 仅))
+				    (VP (VE 有)
+					(NP-OBJ (QP (CD 一百多)
+						    (CLP (M 支)))
+						(ADJP (JJ 上市))
+						(NP (NN 股票))))))
+			    (PU 、)
+			    (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 涨)
+					(NN 跌))
+				(VP (ADVP (AD 都))
+				    (VP (VV 掌握在)
+					(LCP-OBJ (NP (NP (NN 主力)
+							 (NN 炒手))
+						     (NP (NN 手)))
+						 (LC 上))))))
+			(DEC 的)))
+		(NP-PN (NR 台湾))
+		(NP (NN 股市))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	涨 跌 
+	</arg>
+	<arg n="1">
+	主力 炒手 手 上 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

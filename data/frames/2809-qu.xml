@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 曲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 芗剧))
+		      (CC 与)
+		      (NP (NP-PN (NR 台湾))
+			  (NP (NN 歌仔戏))))
+	      (VP (VP (VC 是)
+		      (NP-PRD (NP-PN (NR 闽)
+				     (NR 台))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (ADVP (AD 共))
+						  (VP (VV 育)))
+					      (VP (ADVP (AD 共))
+						  (VP (VV 曲)))))
+				      (DEC 的)))
+			      (NP (NN 姐妹)
+				  (NN 剧种))))
+		  (PU ，)
+		  (VP (PP-TMP (P 在)
+			      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 阔别)
+					   (QP-OBJ (CD 四十)
+						   (CLP (M 年)))))
+				   (LC 后)))
+		      (QP-ADV (OD 第一)
+			      (CLP (M 次)))
+		      (PP-LOC (P 在)
+			      (NP (NN 宝岛)))
+		      (VP (VV 团聚))))) 
+	  </parse>
+	  <arg n="0">
+	  闽 台 
+	  </arg>
+	  <arg n="1">
+	  姐妹 剧种 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

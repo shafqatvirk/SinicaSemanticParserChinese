@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 误解 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 misunderstands"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TTL-SBJ (PU 《)
+			(NN 爱)
+			(PU 》))
+	    (VP (VC 是)
+		(VP (VV 描写)
+		    (NP-OBJ (CP-APP (IP (LCP-TMP (NP (QP (NP-PN (NR 民国))
+							 (QP (OD 四十八)
+							     (CLP (M 年))))
+						     (NP (NT 八七)
+							 (NN 水灾)))
+						 (LC 前後))
+					(PU ，)
+					(NP-SBJ (NN 本省人)
+						(CC 与)
+						(NN 外省人))
+					(VP (PP-PRD (PP-DIR (P 从)
+							    (IP (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 误解))))
+						    (PP-DIR (P 到)
+							    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								    (VP (ADVP (AD 相互))
+									(VP (VV 体谅))))))))
+				    (DEC 的))
+			    (NP (NN 故事)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

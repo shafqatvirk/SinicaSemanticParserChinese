@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谱出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="music arg0 composes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 如今))
+	      (NP-SBJ (NN 林边人))
+	      (VP (VV 思索)
+		  (AS 著)
+		  (IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP-WH (AD 如何))
+				(VP (VV 谱出)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VV 属於)
+							    (NP-OBJ (PN 自己))))
+						    (DEC 的)))
+					    (ADJP (JJ 主))
+					    (NP (NN 旋律)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 属於 自己 的 主 旋律 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如何 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

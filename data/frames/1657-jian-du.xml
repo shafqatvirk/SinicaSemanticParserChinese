@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 监督 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="watcher"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 经)
+		      (IP (NP-SBJ (PN 双方))
+			  (VP (VV 协商))))
+	      (PU ，)
+	      (NP-PN-SBJ (NN 国家)
+			 (NN 开发)
+			 (NN 银行))
+	      (VP (VV 委托)
+		  (NP-OBJ-PN (NN 建设)
+			     (NN 银行))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 监督)
+			      (NP-OBJ (DNP (NP (NN 借款)
+					       (NN 合同))
+					   (DEG 的))
+				      (NP (NN 执行))))
+			  (PU ，)
+			  (VP (VV 办理)
+			      (NP-OBJ (NP-APP (NN 贷款)
+					      (CC 和)
+					      (NN 资金)
+					      (NN 拨付)
+					      (ETC 等))
+				      (NP (NN 业务))))
+			  (PU ，)
+			  (VP (VV 监督)
+			      (NP-OBJ (DNP (NP (NN 贷款))
+					   (DEG 的))
+				      (NP (NN 使用))))
+			  (PU ，)
+			  (VP (VSB (VV 协助)
+				   (VV 做好))
+			      (NP-OBJ (NN 贷款)
+				      (NN 回收)
+				      (NN 工作))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  借款 合同 的 执行 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

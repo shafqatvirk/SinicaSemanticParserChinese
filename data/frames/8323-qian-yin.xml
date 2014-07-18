@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 牵引 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 pulls"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (PP-LOC (P 在)
+			(LCP (IP (NP-SBJ (ADJP (JJ 大))
+					 (NP (NN 环境)))
+				 (VP (VV 牵引)))
+			     (LC 下)))
+		(PU ，)
+		(NP-SBJ (CP-APP (IP (NP-SBJ (NN 南)
+					    (NN 北))
+				    (VP (VA 平衡)))
+				(DEC 的))
+			(NP (NN 杠杆)))
+		(VP-WH (VV 何在))) 
+	  </parse>
+	  <arg n="0">
+	  大 环境 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

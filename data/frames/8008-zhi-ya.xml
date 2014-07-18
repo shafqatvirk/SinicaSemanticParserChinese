@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 质押 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 mortgages"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 公司)
+			  (NN 董监事))
+		      (NP (NN 持股)))
+	      (VP (NP-MNR (ADJP (JJ 高))
+			  (NP (NN 比例)))
+		  (VP (VV 质押)))) 
+	  </parse>
+	  <arg n="1">
+	  公司 董监事 持股 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  高 比例 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

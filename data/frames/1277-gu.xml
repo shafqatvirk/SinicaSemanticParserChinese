@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 估 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="estimator"/>
+      <role argnum="1" argrole="thing estimated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 由於)
+		  (IP (IP (NP-SBJ (NN 币值))
+			  (VP (ADVP (AD 高))
+			      (VP (VV 估))))
+		      (PU 、)
+		      (IP (NP-SBJ (NN 工资))
+			  (VP (ADVP (AD 高))
+			      (VP (VV 涨)))))) 
+	  </parse>
+	  <arg n="1">
+	  币值 
+	  </arg>
+	  <arg n="m" f="adv">
+	  高 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

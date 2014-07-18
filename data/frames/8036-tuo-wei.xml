@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拓为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 expands"/>
+      <role argnum="2" argrole="thing arg1 is expanded into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (ADJP (JJ 原来))
+			   (DEG 的))
+		      (NP-PN (NR 中山路)))
+	      (VP (VV 拓为)
+		  (NP-OBJ (ADJP (JJ 今))
+			  (QP (NP-PN (NR 台))
+			      (QP (OD 十五)
+				  (CLP (M 线))))
+			  (NP (NN 省道))))) 
+	  </parse>
+	  <arg n="1">
+	  原来 的 中山路 
+	  </arg>
+	  <arg n="2">
+	  今 台 十五 线 省道 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

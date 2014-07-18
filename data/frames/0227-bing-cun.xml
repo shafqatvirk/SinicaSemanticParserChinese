@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 并存 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing that exists"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 胜利)
+			(CC 与)
+			(NN 失败))
+		(VP (VV 并存)))) 
+	  </parse>
+	  <arg n="0">
+	  胜利 与 失败 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="things arg0 puts somewhere/on display together"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-5 (PP-PRP (P 因为)
+			    (IP (NP-SBJ (NN 原住民)
+					(NN 文化))
+				(VP (VP (VC 是)
+					(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (PU 『)
+								(VA 活)
+								(AS 著)
+								(PU 』)))
+							(DEC 的)))
+						(NP (NN 文化))))
+				    (PU ，)
+				    (VP (ADVP (AD 不))
+					(VP (VC 是)
+					    (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+									    (CP (IP (NP-SBJ (-NONE- *T*-2))
+										    (VP (VA 有限)))
+										(DEC 的)))
+									(ADJP (JJ 古))
+									(NP (NN 文物)))
+								(VP (ADVP (AD 就))
+								    (VP (VV 可以)
+									(VP (VV 说明)
+									    (NP-OBJ (-NONE- *T*-3))
+									    (VP-EXT (VA 清楚))))))
+							    (DEC 的)))))))))
+		    (PU ，)
+		    (ADVP (AD 所以))
+		    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 有别於)
+				(IP-OBJ (NP-SBJ (ADJP (JJ 一般))
+						(NP (NN 博物馆)))
+					(VP (ADVP (AD 只))
+					    (VP (VV 展出)
+						(NP-OBJ (ADJP (JJ 历史))
+							(NP (NN 文物))))))))
+		    (PU ，)
+		    (NP-PN-SBJ (NR 顺益)
+			       (NN 博物馆))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NP (NP-APP (DNP (NP (ADJP (JJ 现代))
+							     (NP (NN 原住民)
+								 (NN 创作者)))
+							 (DEG 的))
+						    (NP (NP (NN 工艺)
+							    (NN 装置品))
+							(PU 、)
+							(NP (CP (WHNP-4 (-NONE- *OP*))
+								(IP (NP-SBJ (-NONE- *T*-4))
+								    (VP (VV 仿古))))
+							    (NP (NN 复制品)))
+							(PU 、)
+							(CC 与)
+							(NP (ADJP (JJ 现代))
+							    (NP (NN 原住民))
+							    (NP (NN 艺术品)))))
+					    (QP (CD 三)
+						(CLP (M 种)))
+					    (NP (PU 『)
+						(ADJP (JJ 新))
+						(NP (NN 制品))
+						(PU 』)))
+					(P 与)
+					(NP (ADJP (JJ 古))
+					    (NP (NN 文物))))
+				(VP (VV 并存))))) 
+	  </parse>
+	  <arg n="0">
+	  顺益 博物馆 
+	  </arg>
+	  <arg n="1">
+	  现代 原住民 创作者 的 工艺 装置品 、 *OP* *T*-4 仿古 复制品 、 与 现代 原住民 艺术品 三 种 『 新 制品 』 与 古 文物 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 有别於 一般 博物馆 只 展出 历史 文物 
+	  </arg>
+	  <arg n="m" f="adv">
+	  所以 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 原住民 文化 是 *OP* *T*-1 『 活 著 』 的 文化 ， 不 是 *OP* *OP* *T*-2 有限 的 古 文物 就 可以 说明 *T*-3 清楚 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

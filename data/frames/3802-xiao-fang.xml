@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 效仿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity imitated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 欧盟))
+		      (DP (DT 其他))
+		      (NP (NN 成员国)))
+	      (VP (VP (VV 受到)
+		      (NP-OBJ (NN 启发)))
+		  (PU ，)
+		  (VP (ADVP (AD 不断))
+		      (VP (VV 派)
+			  (NP-OBJ (NN 人))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VSB (VV 前来)
+				       (VCD (VV 参观)
+					    (VV 效仿))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

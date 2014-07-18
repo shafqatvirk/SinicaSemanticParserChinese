@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转归 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing"/>
+      <role argnum="1" argrole="owner"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (ADJP (JJ 原))
+				   (NP-PN (NR 苏联)))
+			   (VP (VV 解体)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 军队)
+			  (NN 集群)))
+	      (VP (VV 转归)
+		  (NP-PN-OBJ (NR 俄罗斯))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (MSP 所)
+			  (VP (VV 有)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  原 苏联 解体 后 
+	  </arg>
+	  <arg n="0">
+	  该 军队 集群 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  俄罗斯 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 所 有 
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

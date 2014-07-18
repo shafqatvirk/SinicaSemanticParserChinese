@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 踏上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location stepped onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (PP (P 作为)
+			       (NP (NP-PN (NR 中国))
+				   (NP (NN 镍)
+				       (NN 工业)
+				       (NN 代表))))
+			   (DEG 的))
+		      (DP (DT 这)
+			  (CLP (M 家)))
+		      (NP (NN 企业)))
+	      (VP (PP-DIR (P 由)
+			  (NP (PN 此)))
+		  (VP (VV 踏上)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VV 依靠)
+						  (NP-OBJ (NN 科技)
+							  (NN 进步)))
+					      (VP (VV 求)
+						  (NP-OBJ (NN 振兴)))))
+				      (DEC 的))
+			      (DNP (NP (NN 发展))
+				   (DEG 之))
+			      (NP (NN 路)))))) 
+	  </parse>
+	  <arg n="0">
+	  作为 中国 镍 工业 代表 的 这 家 企业 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 依靠 科技 进步 求 振兴 的 发展 之 路 
+	  </arg>
+	  <arg n="m" f="dir">
+	  由 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

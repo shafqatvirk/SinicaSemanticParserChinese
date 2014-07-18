@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 写完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 finishes writing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TTL-TPC-1 (PU 《)
+			  (ADJP (JJ 破))
+			  (NP (NN 袜子))
+			  (PU 》))
+	    (NP-SBJ (PN 我))
+	    (VP (VP (ADVP (AD 只))
+		    (VP (VV 花)
+			(NP-OBJ (QP (QP (CD 一)
+					(CLP (M 个)))
+				    (QP (CD 半)))
+				(NP (NN 月)))))
+		(VP (ADVP (AD 就))
+		    (VP (VV 写完)
+			(NP-TTL-OBJ (-NONE- *T*-1)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 原先))
+		(ADVP (AD 根本))
+		(VP (VV 没)
+		    (VP (VV 打算)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 写完))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

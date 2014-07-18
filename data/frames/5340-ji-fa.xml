@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 激发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 stimulates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-PRP (P 为了)
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 激发)
+			    (NP-OBJ (NN 灵感)))
+			(PU 、)
+			(VP (VV 寻找)
+			    (NP-OBJ (NP (ADJP (JJ 新))
+					(NP (NN 片)))
+				    (NP (NN 题材))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	灵感 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (NN 台湾人))
+	      (VP (VV 能否)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (QP (CD 一)
+					   (CLP (M 页)))
+				       (NP (NN 桧木)
+					   (NN 沧桑史)))
+				   (LC 中)))
+		      (VP (VRD (VV 激发)
+			       (VV 出))
+			  (NP-OBJ (PP (P 对)
+				      (NP (NN 土地)))
+				  (DNP (NP (NN 真心))
+				       (DEG 的))
+				  (NP (NN 认同))))))) 
+	</parse>
+	<arg n="1" f="psr">
+	台湾人 
+	</arg>
+	<arg n="1" f="pse">
+	对 土地 真心 的 认同 
+	</arg>
+	<arg n="m" f="loc">
+	在 一 页 桧木 沧桑史 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (NP-SBJ (DNP (NP (DNP (NP (PN 他))
+				  (DEG 的))
+			     (QP (CD 众))
+			     (NP (NN 儿女)))
+			 (DEG 的))
+		    (NP (NN 记忆)))
+	    (VP (PP-TMP (P 在)
+			(NP (NN 瞬间)))
+		(ADVP (AD 也))
+		(VP (SB 被)
+		    (VP (VV 激发)
+			(AS 了))))) 
+	</parse>
+	<arg n="1">
+	他 的 众 儿女 的 记忆 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	在 瞬间 
+	</arg>
+	<arg n="m" f="dis">
+	因此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

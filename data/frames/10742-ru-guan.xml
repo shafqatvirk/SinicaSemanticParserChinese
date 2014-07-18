@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 入关 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person entering through border control"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(NP (NP-PN (NR 德国)
+					   (NR 法兰克福))
+				    (NP (NN 边境))))
+			(ADVP (AD 一))
+			(VP (VV 入关))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 指向)
+				    (NP-PN-OBJ (NR 巴黎))))
+			    (DEC 的)))
+		    (NP (NN 路标)))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 赫然))
+		(VP (VV 矗立)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<arg n="m" f="dir">
+	从 德国 法兰克福 边境 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 盼望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing hoped for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 歌迷)))
+	      (VP (ADVP (AD 翘首))
+		  (VP (VV 盼望)
+		      (NP-OBJ (NP (NP (NN 世界))
+				  (NP (NN 流行乐))
+				  (ADJP (JJ 超级))
+				  (NP (NN 巨星)))
+			      (NP (NN 演唱会)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 歌迷 
+	  </arg>
+	  <arg n="1">
+	  世界 流行乐 超级 巨星 演唱会 
+	  </arg>
+	  <arg n="m" f="adv">
+	  翘首 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 北京))
+		      (NP (NN 市民)))
+	      (VP (DVP (VP (VA 热切))
+		       (DEV 地))
+		  (VP (VV 盼望)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 远南))
+				      (NP (NN 运动会)))
+			      (VP (ADVP (AD 隆重))
+				  (VP (VV 开幕))))))) 
+	  </parse>
+	  <arg n="0">
+	  北京 市民 
+	  </arg>
+	  <arg n="1">
+	  远南 运动会 隆重 开幕 
+	  </arg>
+	  <arg n="m" f="adv">
+	  热切 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

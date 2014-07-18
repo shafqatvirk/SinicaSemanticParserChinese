@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 谦虚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NN 党)
+			    (NN 主席))
+		    (NP-PN (NR 林义雄)))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NN 宴会))
+			     (LC 中)))
+		(VP (VV 期勉)
+		    (NP-OBJ (NN 党员)
+			    (NN 同志))
+		    (IP (PU 「)
+			(NP-SBJ (-NONE- *PRO*))
+			(VP (VV 应)
+			    (VP (PP-LOC (P 在)
+					(NP (DNP (NP (NN 权力))
+						 (DEG 的))
+					    (NP (NN 面前))))
+				(VP (VA 谦虚))))
+			(PU 」))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="loc">
+	在 权力 的 面前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

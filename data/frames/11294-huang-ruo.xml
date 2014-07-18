@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 恍若 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 seems like"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP (NP-LOC (NP (NN 溽暑))
+			 (NP (NN 南)
+			     (NR 台湾))
+			 (NP (NN 艳阳)))
+		 (LC 下))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 座落)
+				    (PP-LOC (P 在)
+					    (NP (NP-PN (NR 高雄)
+						       (NR 前镇区))
+						(NP (NN 港口)
+						    (NN 附近))))))
+			    (DEC 的)))
+		    (NP-PN (CD 八五)
+			   (NN 国际)
+			   (NN 广场)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 远远))
+			    (VP (VV 望去))))
+		(VP (VV 恍若)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 个)))
+			    (NP (ADJP (JJ 高))
+				(NP (NN 脚)))
+			    (NP (NN 巨汉)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 座落 在 高雄 前镇区 港口 附近 的 八五 国际 广场 
+	</arg>
+	<arg n="1">
+	一 个 高 脚 巨汉 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 远远 望去 
+	</arg>
+	<arg n="m" f="loc">
+	溽暑 南 台湾 艳阳 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

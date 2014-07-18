@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 载 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing(vehicle/newspaper) described"/>
+      <role argnum="1" argrole="entity arg0 carries"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 这样))
+			  (VP (VV 看来))))
+	      (PU ，)
+	      (NP-SBJ (NN 车子))
+	      (VP (ADVP (AD 确实))
+		  (ADVP (AD 在))
+		  (VP (VP (VV 载)
+			  (NP-OBJ (PN 我们)))
+		      (VP (VV 下山))
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="0">
+	  车子 
+	  </arg>
+	  <arg n="1">
+	  我们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  确实 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 这样 看来 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+		      (CP (IP (NP-TMP (NT 今日))
+			      (NP-SBJ (QP (CD 一)
+					  (CLP (M 份)))
+				      (NP (NN 报章)))
+			      (VP (MSP 所)
+				  (VP (VV 载)
+				      (NP-OBJ (-NONE- *T*-4)))))
+			  (DEC 的)))
+		  (NP (NN 数字))) 
+	  </parse>
+	  <arg n="0">
+	  一 份 报章 
+	  </arg>
+	  <arg n="1">
+	  *T*-4 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

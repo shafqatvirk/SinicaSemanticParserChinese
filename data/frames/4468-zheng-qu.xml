@@ -1,0 +1,233 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 争取 </id>
+    <frameset id="f1" edef="attain, try to get">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VP (ADVP (AD 竭力))
+		      (VP (VV 发挥)
+			  (NP-OBJ (DNP (LCP (NP-PN (NR 东西欧))
+					    (LC 间))
+				       (DEG 的))
+				  (NP (PU “)
+				      (NN 桥梁)
+				      (NN 作用)
+				      (PU ”)))))
+		  (PU ，)
+		  (VP (VV 参与)
+		      (NP-OBJ (DNP (LCP (NP (NP-PN (NR 联合国))
+					    (NP (NN 旗帜)))
+					(LC 下))
+				   (DEG 的))
+			      (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 维护)
+					  (NP-OBJ (PU “)
+						  (NN 和平))))
+			      (NP (NN 使命))
+			      (PU ”)))
+		  (PU ，)
+		  (VP (VV 争取)
+		      (NP-OBJ (DNP (NP (NP-PN (NR 联合国)
+					      (NN 安理会))
+				       (ADJP (JJ 常任))
+				       (NP (NN 理事国)))
+				   (DEG 的))
+			      (NP (NN 席位)))))) 
+	  </parse>
+	  <arg n="0">
+	  它 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  联合国 安理会 常任 理事国 的 席位 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 这)
+			      (CLP (M 个)))
+			  (NP (NN 省)))
+		  (VP (NP-TMP (NT 今年))
+		      (VP (VV 计划)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 扩大)
+					  (NP-OBJ (NN 招商)
+						  (NN 引资)))
+				      (PU ，)
+				      (CC 并)
+				      (VP (VV 推出)
+					  (NP-OBJ (QP (CD 二百)
+						      (CLP (M 个)))
+						  (CP (WHNP-1 (-NONE- *OP*))
+						      (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (PP-DIR (P 对)
+								      (NP (NN 外)))
+							      (VP (VV 引资)))))
+						  (NP (NN 项目))))
+				      (PU ，)
+				      (VP (VV 争取)
+					  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+							      (IP (NP-SBJ (-NONE- *pro*))
+								  (VP (DP-ADV (DT 全)
+									      (CLP (M 年)))
+								      (VP (VV 利用)
+									  (NP-OBJ (-NONE- *T*-2))))))
+							  (NP (NN 外资)))
+						  (VP (VV 突破)
+						      (QP-OBJ (CD 十亿)
+							      (CLP (M 美元))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* *pro* 全 年 利用 (*T*-2)->(外资) 外资 突破 十亿 美元 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="try">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 政府)))
+	      (VP (VV 决定)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (PP-TMP (P 在)
+					  (NP (NT 九十年代)))
+				  (ADVP (AD 加速))
+				  (VP (VV 发展)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (CC 并)
+			      (VP (VV 争取)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-MNR (P 用)
+						      (NP (QP (CD 二十)
+							      (CLP (M 年)))
+							  (NP (NN 时间))))
+					      (ADVP (AD 基本))
+					      (VP (VV 实现)
+						  (NP-OBJ (NN 现代化)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 用 二十 年 时间 基本 实现 现代化 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 深圳))
+		      (NP (NN 方面)))
+	      (VP (VP (ADVP (AD 也))
+		      (ADVP (AD 正在))
+		      (VP (VV 创造)
+			  (NP-OBJ (NN 条件))))
+		  (PU ，)
+		  (VP-PRP (VV 争取)
+			  (NP-OBJ (DNP (NP-PN (NR 香港))
+				       (DEG 的))
+				  (NP-PN (NR 中国))
+				  (NP (NN 概念股)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-LOC (P 在)
+					  (NP-PN (NR 深交所)))
+				  (VP (VV 挂牌))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  深圳 方面 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  香港 的 中国 概念股 	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 在 深交所 挂牌 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PRD (NP (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VP-PRP (VRD (VV 争取)
+						   (VV 到))
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (VA 有限)))
+							      (DEC 的)))
+						      (NP (NN 政府)
+							  (NN 武器)
+							  (NN 采购)
+							  (NN 合同))))
+				      (VP (MSP 所)
+					  (VP (VV 必备)
+					      (NP-OBJ (-NONE- *T*-2))))))
+			      (DEC 的)))
+		      (NP (NN 条件)
+			  (NN 之一)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-1)->(政府武器采购合同) 有限 的 政府 武器 采购 合同 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

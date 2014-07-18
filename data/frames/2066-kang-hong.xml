@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抗洪 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使)
+		  (NP-OBJ (NP-PN (NR 龙开河))
+			  (NP (NN 下游段)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 成)
+			  (AS 了)
+			  (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (PP-LOC (-NONE- *T*-1))
+						  (NP-TMP (NT 历年))
+						  (ADVP (AD 紧张))
+						  (VP (VV 抗洪))))
+					  (DEC 的)))
+				  (NP (NN 战场))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  历年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧张 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

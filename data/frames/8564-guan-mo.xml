@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 观摩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 watches and learns"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP (P 与)
+			      (NP (NN 名将)))
+			  (VP (NP-PRD (ADJP (JJ 同))
+				      (NP (NN 组))))))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 让)
+		      (NP-OBJ (PN 他))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VRD (VV 观摩)
+				   (VV 到))
+			      (NP-OBJ (QP (CD 不少))
+				      (NP (NN 战术)
+					  (NN 球技)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  不少 战术 球技 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

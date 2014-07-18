@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 在场 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 囚犯)))
+	      (VP (VV 表示)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 欲)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-TMP (P 在)
+						      (LCP (IP (NP-SBJ (DP (DT 该))
+								       (NP (NN 信件)))
+							       (VP (VP (VV 开启))
+								   (CC 和)
+								   (VP (VV 搜查))))
+							   (LC 时)))
+					      (VP (VV 在场))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 该 信件 开启 和 搜查 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 问候 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 sends greetings to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李鹏)
+			 (NN 总理))
+	      (VP (ADVP (AD 首先))
+		  (VP (VV 转达)
+		      (AS 了)
+		      (NP-OBJ (NP-PN (NR 江泽民)
+				     (NN 主席))
+			      (DNP (PP (P 对)
+				       (NP-PN (NR 阿卡耶夫)
+					      (NN 总统)))
+				   (DEG 的))
+			      (ADJP (JJ 亲切))
+			      (NP (NN 问候)))))) 
+	  </parse>
+	  <arg n="0">
+	  江泽民 主席 
+	  </arg>
+	  <arg n="1">
+	  对 阿卡耶夫 总统 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

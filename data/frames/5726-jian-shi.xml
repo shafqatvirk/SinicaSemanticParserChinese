@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 见识 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 sees/experiences"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (ADVP (AD 也))
+		    (ADVP (AD 或许))
+		    (VP (VC 是)
+			(VP (NP-TMP (NN 童年)
+				    (NN 时光))
+			    (PU ，)
+			    (VP (VV 见识)
+				(AS 过)
+				(NP-OBJ (DNP (NP (NP-PN (NR 中国))
+						 (NP (NN 艺术)))
+					     (DEG 的))
+					(NP (NN 精髓)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	中国 艺术 的 精髓 
+	</arg>
+	<arg n="m" f="adv">
+	或许 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (PP (P 与)
+			     (NP (NN 阿公) ))
+			 (DEG 的))
+		    (NP (NN 朝夕相处)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 马跃) )
+	    (VP (ADVP (AD 更))
+		(VP (VRD (VV 见识)
+			 (VV 到))
+		    (NP-OBJ (NP (NN 阿公) )
+			    (DNP (PP (P 对於)
+				     (NP (NP-PN (NR 阿美))
+					 (NP (NN 文化)) ))
+				 (DEG 的))
+			    (NP (NN 坚持)
+				(CC 与)
+				(NN 要求) ))))) 
+	</parse>
+	<arg n="0">
+	马跃 
+	</arg>
+	<arg n="1">
+	阿公 对於 阿美 文化 的 坚持 与 要求 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="tpc">
+	与 阿公 的 朝夕相处 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

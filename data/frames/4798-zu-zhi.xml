@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 组织 </id>
+    <frameset id="f1" edef="collect">
+      <role argnum="0" argrole="collector"/>
+      <role argnum="1" argrole="thing collected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 按)
+		      (NP (NN 协议)))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 电厂))
+				  (VP (VV 使用)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 天然气)
+			  (NN 货源)))
+	      (VP (PP-LGS (P 由)
+			  (NP-PN (NR 威尔)
+				 (NN 集团)))
+		  (VP (VV 负责)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (NN 国际)
+						   (NN 市场))
+					       (LC 上)))
+				  (VP (VV 组织))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 国际 市场 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="arranger"/>
+      <role argnum="1" argrole="entity arrangement is for"/>
+      <role argnum="2" argrole="activity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 起步))
+				  (VP (ADVP (AD 较))
+				      (VP (VA 晚))))
+			      (DEC 的)))
+		      (NP-PN (NR 钦州港)))
+	      (PU ，)
+	      (VP (ADVP (AD 积极))
+		  (VP (VP (VV 引入)
+			  (NP-OBJ (NN 市场)
+				  (NN 机制)))
+		      (VP (VV 推动)
+			  (NP-OBJ (NN 港口)
+				  (NN 开发)))
+		      (PU ，)
+		      (VP (VV 组织)
+			  (NP-OBJ (NP (NN 国内外))
+				  (NP (NP (ADJP (JJ 大))
+					  (NP (NN 财团)))
+				      (PU 、)
+				      (NP (ADJP (JJ 大))
+					  (NP (NN 公司)))))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 成立)
+				      (NP-OBJ (NN 招商)
+					      (NN 集团)))
+				  (VP (ADVP (AD 联合))
+				      (VP (VV 招商))))))
+		      (PU ，)
+		      (VP (VP (VV 推行)
+			      (NP-OBJ (NN 业主制)))
+			  (VP (VV 兴建)
+			      (NP-OBJ (NN 码头))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(钦州港) 起步 较 晚 的 钦州港 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  国内外 大 财团 、 大 公司 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 成立 招商 集团 联合 招商 
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

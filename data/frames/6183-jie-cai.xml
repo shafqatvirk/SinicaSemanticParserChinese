@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 借才 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="borrower"/>
+    <role argnum="1" argrole="entity arg0 borrows talent from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 填满)
+			    (NP-OBJ (DNP (LCP (NP (NN 扩充))
+					      (LC 後))
+					 (DEG 的))
+				    (NP (NN 电视)
+					(NN 新闻))
+				    (NP (NN 时段))))))
+	    (PU ，)
+	    (NP-SBJ (NN 电视台))
+	    (VP (ADVP (AD 大举))
+		(PP-DIR (P 向)
+			(NP (NN 报社)))
+		(VP (VV 借才)))) 
+	</parse>
+	<arg n="0">
+	电视台 
+	</arg>
+	<arg n="1">
+	向 报社 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 填满 扩充 後 的 电视 新闻 时段 
+	</arg>
+	<arg n="m" f="adv">
+	大举 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

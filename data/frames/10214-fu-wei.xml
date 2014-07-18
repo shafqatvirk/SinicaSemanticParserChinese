@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抚慰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 consoles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 马修))
+	    (VP (PP-MNR (P 以)
+			(NP (NP-TTL-APP (PU 「)
+					(DNP (NP (NN 大地))
+					     (DEG 的))
+					(NP (NN 呼唤))
+					(PU 」))
+			    (DP (DT 这)
+				(CLP (M 首)))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (PP-BNF (P 为)
+						    (NP (NP (NT 九二一))
+							(ADJP (JJ 大))
+							(NP (NN 地震))))
+					    (VP (MSP 而)
+						(VP (VV 作)
+						    (NP-OBJ (-NONE- *T*-2))))))
+				    (DEC 的)))
+			    (NP (NN 新曲))))
+		(VP (VV 抚慰)
+		    (AS 著)
+		    (NP-OBJ (DP (DT 所有))
+			    (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (VA 创痛)))
+				    (DEC 的)))
+			    (NP (NN 心灵)))))) 
+	</parse>
+	<arg n="0">
+	马修 
+	</arg>
+	<arg n="1">
+	所有 *OP* *T*-3 创痛 的 心灵 
+	</arg>
+	<arg n="m" f="mnr">
+	以 「 大地 的 呼唤 」 这 首 *OP* *pro* 为 九二一 大 地震 而 作 *T*-2 的 新曲 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

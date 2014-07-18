@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 枕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 rests his head on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (PP (P 从)
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 采)
+							  (NP-OBJ (NN 茶)))))
+					      (PP (P 到)
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 做)
+							  (NP-OBJ (NN 茶))))))
+				      (VP (VV 一气呵成))))
+			  (VP (ADVP (AD 至少))
+			      (VP (VV 要)
+				  (NP-OBJ (QP (CD 十多)
+					      (CLP (M 个)))
+					  (NP (NN 小时)))))))
+	      (PU ，)
+	      (NP-SBJ (NN 茶农))
+	      (VP (DP-TMP (DT 每)
+			  (CLP (M 日)))
+		  (VP (VP (VP (VV 枕)
+			      (AS 著)
+			      (NP-OBJ (NN 茶香)))
+			  (VP (VV 睡)))
+		      (PU ，)
+		      (VP (VP (VV 伴)
+			      (AS 著)
+			      (NP-OBJ (NN 茶香)))
+			  (VP (VV 醒)))))) 
+	  </parse>
+	  <arg n="0">
+	  茶农 
+	  </arg>
+	  <arg n="1">
+	  茶香 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 日 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 *PRO* 从 *PRO* 采 茶 到 *PRO* 做 茶 一气呵成 至少 要 十多 个 小时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

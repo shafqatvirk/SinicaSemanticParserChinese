@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 标有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing bearing symbol"/>
+    <role argnum="1" argrole="symbol"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-OBJ (QP (CD 一)
+              (CLP (M 张)))
+          (CP (WHNP-2 (-NONE- *OP*))
+              (CP (IP (NP-SBJ (-NONE- *T*-2))
+                      (VP (VV 标有)
+                          (NP-OBJ (NN 欧元))))
+                  (DEC 的)))
+          (NP (NN 价签))))
+	</parse>
+	<arg n="0"> (*T*-2)->(价签) </arg>
+	<V/>
+	<arg n="1"> 欧元 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

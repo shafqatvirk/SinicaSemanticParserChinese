@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 历任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="positions arg0 has held"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (VV 从政)
+		      (QP-EXT (CD 二十多)
+			      (CLP (M 年))))
+		  (PU ，)
+		  (VP (VV 历任)
+		      (NP-OBJ (NP-APP (NP (NN 交通)
+					  (NN 部长))
+				      (PU 、)
+				      (NP (NN 外交)
+					  (NN 部长))
+				      (PU 、)
+				      (NP (NP-PN (NR 台湾省))
+					  (NP (NN 主席)))
+				      (PU 、)
+				      (NP (NN 行政)
+					  (NN 院长))
+				      (PU 、)
+				      (NP (NN 副总统))
+				      (ETC 等))
+			      (NP (NN 官职)))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  交通 部长 、 外交 部长 、 台湾省 主席 、 行政 院长 、 副总统 等 官职 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

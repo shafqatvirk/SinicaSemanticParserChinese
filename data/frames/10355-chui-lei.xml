@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 垂泪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person shedding tears"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *pro*))
+		(VP (VV 让)
+		    (NP-OBJ (NN 母亲))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 不))
+			    (ADVP (AD 再))
+			    (VP (VV 垂泪)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

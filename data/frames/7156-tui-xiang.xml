@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 推想 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="guess arg0 makes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 有的))
+	    (VP (VV 推想)
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(LCP (NP (NN 眼睛))
+					     (LC 上)))
+				(VP (VV 刺青))))))) 
+	</parse>
+	<arg n="0">
+	有的 
+	</arg>
+	<arg n="1">
+	是 *PRO* 在 眼睛 上 刺青 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

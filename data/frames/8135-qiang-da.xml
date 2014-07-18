@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抢搭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 competes to take a ride in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (PP (P 在)
+			  (NP (PN 此)))
+		      (NP (NN 同时)))
+	      (PU ，)
+	      (NP-SBJ (NP-SBJ (DP (DT 全))
+			      (NP-PN (NR 台湾)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 抢搭)
+				      (NP-OBJ (NN 房市)
+					      (NN 热潮))))
+			      (DEC 的)))
+		      (NP (NN 建商)))
+	      (VP (ADVP (AD 不断))
+		  (VP (VV 推出)
+		      (NP-OBJ (NN 新案))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  房市 热潮 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

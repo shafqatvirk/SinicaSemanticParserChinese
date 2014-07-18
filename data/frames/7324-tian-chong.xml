@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 填充 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 fills in"/>
+    <role argnum="2" argrole="thing arg1 is filled with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 於是))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 便))
+		(VP (VE 有)
+		    (AS 了)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (PP-MNR (P 用)
+						    (NP (NN 厕纸)))
+					    (VP (VV 填充))))
+				    (DEC 的))
+			    (ADJP (JJ 新))
+			    (NP (NN 意念)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	用 厕纸 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

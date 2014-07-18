@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挑空 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="height of clearance arg0 has"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (QP (CD 二)
+		    (CLP (M 个)))
+		(CP (WHNP-3 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-3))
+			    (VP (VV 挑空)
+				(NP-OBJ (QP (CD 二)
+					    (CLP (M 层)))
+					(NP (NN 楼)))))
+			(DEC 的)))
+		(NP (NN 摄影棚))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<arg n="1">
+	二 层 楼 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

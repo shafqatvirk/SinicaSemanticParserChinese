@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 侵害 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 invades and harms"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 全面))
+				      (VP (VV 过滤)
+					  (NP-OBJ (NN 资讯)))))
+			      (DEC 的))
+		      (NP (NN 作法)))
+	      (PU ，)
+	      (VP (VE 有)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 侵害)
+					  (NP-OBJ (NN 言论)
+						  (NN 自由))))
+				  (DEC 之))
+			  (NP (NN 虞))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  言论 自由 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

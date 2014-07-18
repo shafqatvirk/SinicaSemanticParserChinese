@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 负伤 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person wounded"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 李应辰))
+	    (VP (VP (PP-PRP (P 因)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 抗日))))
+		    (VP (VV 负伤)))
+		(VP (VRD (VV 奔逃)
+			 (VV 至))
+		    (NP-OBJ (NN 大陆)))
+		(PU ，)
+		(VP (VCD (VV 落地)
+			 (VV 生根))))) 
+	</parse>
+	<arg n="0">
+	李应辰 
+	</arg>
+	<arg n="m" f="prp">
+	因 *PRO* 抗日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

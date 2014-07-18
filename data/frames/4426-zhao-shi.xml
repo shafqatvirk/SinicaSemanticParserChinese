@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 昭示 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 shows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 「)
+			  (CP (WHNP-4 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-4))
+				      (VP (ADVP (AD 永远))
+					  (VP (VV 盛开))))
+				  (DEC 的)))
+			  (NP (NN 紫荆花))
+			  (PU 」))
+	      (VP (VV 昭示)
+		  (IP-OBJ (NP-PN-SBJ (NR 香港))
+			  (VP (NP-TMP (NT 未来))
+			      (VP (VCD (VA 繁荣)
+				       (VA 昌盛))))))) 
+	  </parse>
+	  <arg n="0">
+	  「 *OP* *T*-4 永远 盛开 的 紫荆花 」 
+	  </arg>
+	  <arg n="1">
+	  香港 未来 繁荣 昌盛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

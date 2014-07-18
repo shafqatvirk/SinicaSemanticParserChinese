@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 请求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="requester"/>
+      <role argnum="1" argrole="requestee"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 知识)
+		      (NN 产权)
+		      (NN 所有人))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 请求)
+				   (NP-OBJ (NN 海关))
+				   (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 查处)
+					   (NP-OBJ (ADJP (JJ 侵权))
+						   (NP (NN 货物)))))))
+			   (LC 时))
+		  (PU ，)
+		  (VP (VV 应)
+		      (VP (VP (PP-DIR (P 对)
+				      (IP (NP-SBJ (NN 进出口)
+						  (NN 货物))
+					  (VP (VV 构成)
+					      (NP-OBJ (ADJP (JJ 侵权))
+						      (NP (NN 行为))))))
+			      (VP (VV 承担)
+				  (NP-OBJ (NN 举证)
+					  (NN 责任))))
+			  (PU ，)
+			  (VP (VV 协助)
+			      (NP-OBJ (NN 海关))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 开展)
+				      (NP-OBJ (NN 查缉)
+					      (NN 工作)))))
+			  (CC 并)
+			  (VP (VV 支付)
+			      (NP-OBJ (UCP (NP (DNP (NP (ADJP (JJ 有关))
+							(NP (NN 货物)))
+						    (DEG 的))
+					       (NP (NN 鉴定)
+						   (PU 、)
+						   (NN 调查)))
+					   (CC 以及)
+					   (UCP (DP (DT 其他))
+						(ADJP (JJ 相关))))
+				      (NP (NN 费用)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  海关 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 查处 侵权 货物 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="requester"/>
+      <role argnum="1" argrole="requestee"/>
+      <role argnum="2" argrole="thing/award/compensation requested"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0" f="psr">
+	  被 执行 死刑 者	  
+	  </arg>
+	  <arg n="0" f="pse">
+	  *pro*	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  六百万 赔偿	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 高	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

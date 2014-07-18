@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 直挺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 浓眉阔目)))
+			    (DEC 的)))
+		    (NP (NN 铜)
+			(NN 人)))
+	    (IP (NP-SBJ (NN 眼神))
+		(VP (VA 锐利)))
+	    (PU 、)
+	    (IP (NP-SBJ (NN 鼻梁))
+		(VP (VV 直挺)))
+	    (PU ，)
+	    (IP (NP-SBJ (NN 嘴巴))
+		(VP (VP (VV 紧闭))
+		    (PU 、)
+		    (VP (VV 宽咧)
+			(PP-EXT (P 到)
+				(NP (QP (CD 两))
+				    (NP (NN 腮)))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*OP* *T*-1 浓眉阔目 的 铜 人 
+	</arg>
+	<arg n="0" f="pse">
+	鼻梁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

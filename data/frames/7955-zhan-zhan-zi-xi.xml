@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 沾沾自喜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 feels complacent over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 还))
+		(PP-MNR (P 以)
+			(NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 省)
+					    (NP-OBJ (NN 钱))))
+				    (DEC 的))
+			    (NP (NN 本事))))
+		(VP (VV 沾沾自喜)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	以 *PRO* 省 钱 的 本事 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揖助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="helped"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (NP (NN 台商))
+		      (DNP (PP (P 对)
+			       (NP-PN (NR 澳门)))
+			   (DEG 的))
+		      (NP (NN 揖助)))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 坦白))
+			      (VP (VV 说))))
+		  (PU ，)
+		  (ADVP (AD 还))
+		  (VP (VV 不如)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (PP-LOC (P 在)
+						      (NP-PN (NR 珠海)))
+					      (VP (VV 投资))))
+				      (DEC 的)))
+			      (NP (NN 港商)))))) 
+	  </parse>
+	  <arg n="0">
+	  台商 
+	  </arg>
+	  <arg n="1">
+	  对 澳门 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

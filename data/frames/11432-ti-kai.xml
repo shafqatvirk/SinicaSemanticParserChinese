@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 踢开 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可是))
+	    (LCP-TMP (QP (CD 几)
+			 (CLP (M 年)))
+		     (LC 後))
+	    (PU ，)
+	    (PP-TMP (P 当)
+		    (LCP (IP (NP-SBJ-1 (DNP (NP (NN 台商))
+					    (DEG 的))
+				       (NP (NN 手法)))
+			     (VP (SB 被)
+				 (VP (VP (VV 摸透)
+					 (NP-OBJ (-NONE- *-1)))
+				     (PU 、)
+				     (VP (VV 模仿)
+					 (NP-OBJ (-NONE- *-1))))))
+			 (LC 後)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (LB 被)
+		    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			    (IP (NP-SBJ (DNP (NP (NN 当地))
+					     (DEG 的))
+					(NP (NN 合夥人)))
+				(VP (QP-MNR (CD 一)
+					    (CLP (M 脚)))
+				    (VP (VV 踢开)
+					(NP-OBJ (-NONE- *T*-2))))))))) 
+	</parse>
+	<arg n="0">
+	当地 的 合夥人 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="mnr">
+	一 脚 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	当 台商 的 手法 被 摸透 *-1 、 模仿 *-1 後 
+	</arg>
+	<arg n="m" f="tmp">
+	几 年 後 
+	</arg>
+	<arg n="m" f="dis">
+	可是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

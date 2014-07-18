@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看护 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 guards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VRD (VV 流浪)
+					   (VV 到))
+				      (NP-PN-OBJ (NR 八里))))
+			      (DEC 的)))
+		      (NP (NN 先民们)))
+	      (VP (VP (VV 淹没)
+		      (PP (P 在)
+			  (LCP (NP (NN 尘土))
+			       (LC 中))))
+		  (PU ，)
+		  (VP (DVP (ADVP (AD 静静))
+			   (DEV 地))
+		      (VP (VV 看护)
+			  (AS 著)
+			  (NP-PN-OBJ (NR 八里坌)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 流浪 到 八里 的 先民们 
+	  </arg>
+	  <arg n="1">
+	  八里坌 
+	  </arg>
+	  <arg n="m" f="adv">
+	  静静 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 烤 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 roasts/bakes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NN 感恩节))
+	    (NP-SBJ (PN 她))
+	    (VP (VV 烤)
+		(AS 了)
+		(NP-OBJ (QP (CD 一)
+			    (CLP (M 只)))
+			(ADJP (JJ 大))
+			(NP (NN 火鸡))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	一 只 大 火鸡 
+	</arg>
+	<arg n="m" f="tmp">
+	感恩节 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 一))
+			(VP (VRD (VV 烤)
+				 (VV 出来)))))
+	    (PU ，)
+	    (NP-SBJ (NN 饼香))
+	    (VP (VV 传)
+		(QP-EXT (CD 十)
+			(CLP (M 里))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

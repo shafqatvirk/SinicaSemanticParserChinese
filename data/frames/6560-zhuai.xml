@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拽 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 pulls"/>
+      <role argnum="2" argrole="place arg1 is pulled to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (ADVP (AD 可是))
+		(IP-ADV (NP-SBJ (DNP (NP-PN (NR 任建诚))
+				     (DEG 的))
+				(NP (NN 手)))
+			(ADVP (AD 早))
+			(ADVP (AD 就))
+			(ADVP (AD 已经))
+			(VP (VV 离开)
+			    (NP-OBJ (DNP (NP (NN 团员))
+					 (DEG 的))
+				    (NP (NN 头)))))
+		(PU ，)
+		(ADVP-WH (AD 怎麽))
+		(NP-SBJ (DNP (NP (DP (DT 那)
+				     (CLP (M 个)))
+				 (NP (NN 人)))
+			     (DEG 的))
+			(NP (NN 头)))
+		(VP (ADVP (AD 还是))
+		    (DVP (ADVP (AD 一股脑))
+			 (DEV 地))
+		    (PP-DIR (P 往)
+			    (LCP (NP (NN 地))
+				 (LC 上)))
+		    (VP (VV 拽)))) 
+	  </parse>
+	  <arg n="1">
+	  那 个 人 的 头 	
+	  </arg>
+	  <arg n="2">
+	  往 地 上 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  一股脑 地 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  还是 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  怎麽 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  任建诚 的 手 早 就 已经 离开 团员 的 头 	
+	  </arg>
+	  <arg n="m" f="dis">
+	  可是 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 台))
+			       (LC 上)))
+		  (VP (VV 抓)
+		      (AS 著)
+		      (NP-OBJ (DNP (NP (QP (CD 一)
+					   (CLP (M 个)))
+				       (NP (NN 团员)))
+				   (DEG 的))
+			      (NP (NN 头发))))
+		  (VP (ADVP (AD 直))
+		      (PP-DIR (P 往)
+			      (LCP (NP (NN 地))
+				   (LC 上)))
+		      (VP (VV 拽))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	    
+	  </arg>
+	  <arg n="2">
+	  往 地 上 	    
+	  </arg>
+	  <arg n="m" f="adv">
+	  直 	    
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 台 上 	    
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

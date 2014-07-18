@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回收 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="recycler"/>
+      <role argnum="1" argrole="thing recycled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-PN-SBJ (NR 金川)
+					 (NN 公司))
+			      (VP (VV 可)
+				  (VP (VV 回收)
+				      (NP-OBJ (-NONE- *T*-2)))))
+			  (DEC 的)))
+		  (ADJP (JJ 有价))
+		  (NP (NN 元素))) 
+	  </parse>
+	  <arg n="0">
+	  金川 公司 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

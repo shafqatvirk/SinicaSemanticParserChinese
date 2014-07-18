@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 对准 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 points"/>
+    <role argnum="2" argrole="entity arg1 is pointed squarely at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 新))
+		    (NP (NN 电视台)))
+	    (VP (ADVP (AD 首先))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 挖角)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (NP (NN 目标)))
+			    (VP (VV 对准)
+				(NP-OBJ (QP (CD 三)
+					    (CLP (M 台)))
+					(CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (VE 有)
+							(NP-OBJ (NN 经验))))
+						(DEC 的)))
+					(NP (NN 记者)))))))) 
+	</parse>
+	<arg n="0">
+	新 电视台 
+	</arg>
+	<arg n="1">
+	*OP* *PRO* 挖角 *T*-1 目标 
+	</arg>
+	<arg n="2">
+	三 台 *OP* *T*-2 有 经验 的 记者 
+	</arg>
+	<arg n="m" f="adv">
+	首先 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-PRD (CP-APP (IP (IP (NP-SBJ (NN 外星人))
+					(VP (VV 攻击)
+					    (NP-OBJ (NN 地球))))
+				    (PU ，)
+				    (IP (NP-SBJ (NN 目标))
+					(VP (VV 对准)
+					    (NP-PN-OBJ (NR 美国)
+						       (NR 白宫))))
+				    (PU ，)
+				    (IP (NP-SBJ (NP-PN (NR 美国))
+						(NP (NN 总统)))
+					(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+							 (VP (VV 遭遇)
+							     (NP-OBJ (NN 危机))))
+						     (LC 後))
+					    (VP (ADVP (AD 又))
+						(VP (VV 解救)
+						    (NP-OBJ (NN 危机)))))))
+				(DEC 的))
+			(NP (NN 英雄)
+			    (NN 科幻片))))) 
+	</parse>
+	<arg n="1">
+	目标 
+	</arg>
+	<arg n="2">
+	美国 白宫 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

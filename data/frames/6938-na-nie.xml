@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拿捏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (VV 拿捏)
+		    (NP-OBJ (NN 时间)))
+		(VP (VV 摘采)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	时间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (ADVP (AD 不断))
+			     (VP (VV 搓揉)
+				 (PU 、)
+				 (VV 拿捏))))
+		     (LC 外))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 再))
+		(PP-MNR (P 以)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VE 有)
+					    (NP-OBJ (NN 方格)
+						    (NN 花纹))))
+				    (DEC 的)))
+			    (NP (NN 木棒))))
+		(VP (VV 拍打)))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不断 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

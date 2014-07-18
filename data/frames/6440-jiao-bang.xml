@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 交棒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 hands the baton to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 中央)
+		    (NN 政权))
+	    (VP (ADVP (AD 迟迟))
+		(VP (VV 交棒)))) 
+	</parse>
+	<arg n="0">
+	中央 政权 
+	</arg>
+	<arg n="m" f="adv">
+	迟迟 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

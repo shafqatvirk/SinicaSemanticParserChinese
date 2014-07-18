@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捐献 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="donator"/>
+    <role argnum="1" argrole="thing arg0 donates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 信义)
+		       (NN 房屋))
+	    (VP (VV 捐献)
+		(QP-OBJ (CD 一百万)))) 
+	</parse>
+	<arg n="0">
+	信义 房屋 
+	</arg>
+	<arg n="1">
+	一百万 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-MNR (P 靠著)
+			    (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (VV 制作)
+						(NP-OBJ (NP (NN 节目))
+							(PU 、)
+							(NP (NP (NN 工商)
+								(NN 简介))
+							    (NP (NN 短片)))
+							(PU 、)
+							(NP (NP (NN 英语)
+								(NN 教学))
+							    (NP (NN 光碟)))))
+					    (PU 、)
+					    (VP (VV 租棚))
+					    (ETC 等)))
+				(NP (NN 业务))))
+		    (PU ，)
+		    (LCP-TMP (QP (CD 十)
+				 (CLP (M 年)))
+			     (LC 来))
+		    (ADVP (AD 不))
+		    (VP (VV 须)
+			(NP-OBJ (NN 教会))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 捐献)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

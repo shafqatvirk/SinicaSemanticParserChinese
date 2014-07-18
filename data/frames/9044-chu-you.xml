@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出游 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP (AD 一起))
+		  (VP (VP (ADVP (AD 静静))
+			  (VP (VV 看)
+			      (NP-OBJ (NN 书))))
+		      (PU 、)
+		      (VP (VV 听)
+			  (NP-OBJ (NN 音乐)))
+		      (PU 、)
+		      (VP (NP-ADV (NN 家族))
+			  (VP (VV 出游)))
+		      (CC 或)
+		      (VP (VV 回顾)
+			  (NP-OBJ (LCP (QP (NP (NT 过去))
+					   (QP (CD 一)
+					       (CLP (M 年))))
+				       (LC 里))
+				  (NP (NN 家人))
+				  (DNP (NP (NN 点点滴滴))
+				       (DEG 的))
+				  (NP (NN 欢喜)
+				      (NN 悲愁))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  家族 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一起 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

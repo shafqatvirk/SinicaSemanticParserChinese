@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抨击 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 criticizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NP (ADJP (JJ 新))
+					    (NP (NN 青年)))
+					(PU 、)
+					(NP-PN (NN 新潮社)))
+				(VP (VV 代表)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NT 五四)
+			(NN 主流)
+			(NN 人物)))
+	    (VP (VP (ADVP (AD 积极))
+		    (VP (VV 推展)
+			(NP-OBJ (PU 「)
+				(ADJP (JJ 新))
+				(NP (NN 文化))
+				(PU 」))))
+		(PU ，)
+		(VP (PP (P 除)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 强调)
+				(NP-OBJ (NP (NN 科学)
+					    (PU 、)
+					    (NN 民主))
+					(NP (NN 观念))))))
+		    (PU ，)
+		    (ADVP (AD 更))
+		    (VP (VV 抨击)
+			(NP-OBJ (NP-PN (NR 中国))
+				(ADJP (JJ 传统))
+				(NP (NN 伦理)
+				    (PU 、)
+				    (NN 风俗)
+				    (CC 与)
+				    (NN 历史)
+				    (PU 、)
+				    (NN 文学))))))) 
+	</parse>
+	<arg n="0">
+	*OP* 新 青年 、 新潮社 代表 *T*-1 的 五四 主流 人物 
+	</arg>
+	<arg n="1">
+	中国 传统 伦理 、 风俗 与 历史 、 文学 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="adv">
+	除 *PRO* 强调 科学 、 民主 观念 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (NN 大陆)
+			(NN 官方)
+			(NN 高层))
+		(VP (PP-DIR (P 对)
+			    (NP (PU 「)
+				(ADJP (JJ 小))
+				(NP (NN 三通))
+				(PU 」)))
+		    (VP (CC 不但)
+			(VP (VPT (VV 热)
+				 (AD 不)
+				 (VV 起来)))
+			(PU ，)
+			(CC 还)
+			(VP (ADVP (AD 大肆))
+			    (VP (VV 抨击)))))) 
+	</parse>
+	<arg n="0">
+	大陆 官方 高层 
+	</arg>
+	<arg n="1">
+	对 「 小 三通 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

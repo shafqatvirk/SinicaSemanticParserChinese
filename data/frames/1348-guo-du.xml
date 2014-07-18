@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过渡 </id>
+    <frameset id="f1" edef="transition">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="initial state"/>
+      <role argnum="2" argrole="end state"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 一汽)
+			     (NN 集团))
+		      (NP (NN 投资)
+			  (NN 主体)))
+	      (VP (VP (ADVP (AD 正))
+		      (ADVP (AD 日益))
+		      (VP (VV 多元化)))
+		  (PU ，)
+		  (CC 并)
+		  (VP (ADVP (AD 逐步))
+		      (PP-DIR (P 向)
+			      (NP (NN 资产)
+				  (NN 经营)
+				  (NN 管理)
+				  (NN 公司)))
+		      (VP (VV 过渡))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  一汽 集团 投资 主体 
+	  </arg>
+	  <arg n="2">
+	  向 资产 经营 管理 公司 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 澳门))
+	      (VP (ADVP (AD 平稳))
+		  (VP (VV 过渡))))
+	  </parse>
+	  <arg n="0">
+	  澳门 
+	  </arg>
+	  <arg n="m" f="adv">
+	  平稳 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

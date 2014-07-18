@@ -1,0 +1,106 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 腌制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 pickles"/>
+      <role argnum="2" argrole="thing arg1 is turned into after being pickled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 住)
+				      (PP (P 在)
+					  (NP (NP-PN (NR 桃园))
+					      (NP (NN 眷村))))))
+			      (DEC 的)))
+		      (NP-PN (NR 卜))
+		      (NP (NN 妈妈)))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 看)
+			      (AS 著)
+			      (IP-OBJ (NP-SBJ (DNP (LCP (NP (NT 十二月))
+							(LC 末))
+						   (DEG 的))
+					      (NP (NN 冬阳)))
+				      (VP (VCD (VA 乾爽)
+					       (VA 宜人))))))
+		  (PU ，)
+		  (ADVP (AD 赶忙))
+		  (VP (VP (VV 订)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 四十)
+				      (CLP (M 斤)))
+				  (NP (NN 五花肉))))
+		      (PU ，)
+		      (VP (VV 切成)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 块块)))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (QP-ADV (ADVP (AD 约))
+							  (QP (CD 一)
+							      (CLP (M 斤))))
+						  (VP (VA 重))))
+					  (DEC 的)))
+				  (NP (NN 长条))))
+		      (PU ，)
+		      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 用)
+				      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-4))
+							  (VP (NP-MNR (ADJP (JJ 小))
+								      (NP (NN 火)))
+							      (ADVP (AD 乾))
+							      (VP (VV 炒)
+								  (AS 过))))
+						      (DEC 的)))
+					      (NP (NN 五香)
+						  (PU 、)
+						  (NN 八角)))))
+			  (PU ，)
+			  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 再))
+				      (VP (VV 配上)
+					  (NP-OBJ (NP-APP (NN 冰糖)
+							  (PU 、)
+							  (NN 盐巴)
+							  (PU 、)
+							  (NN 高粱酒)
+							  (ETC 等))
+						  (NP (NN 香料))))))
+			  (PU ，)
+			  (VP (VRD (VV 腌制)
+				   (VV 成))
+			      (NP-OBJ (NN 腊肉))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 住 在 桃园 眷村 的 卜 妈妈 
+	  </arg>
+	  <arg n="2">
+	  腊肉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 再 配上 冰糖 、 盐巴 、 高粱酒 等 香料 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 用 *OP* *T*-4 小 火 乾 炒 过 的 五香 、 八角 
+	  </arg>
+	  <arg n="m" f="adv">
+	  赶忙 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 看 著 十二月 末 的 冬阳 乾爽 宜人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

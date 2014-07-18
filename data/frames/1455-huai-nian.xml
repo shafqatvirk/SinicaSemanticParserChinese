@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 怀念 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (DNP (NP (NN 新春)
+				   (NN 佳节))
+			       (DEG 之))
+			  (NP (NN 际))))
+	      (PU ，)
+	      (NP-SBJ (PN 我们))
+	      (VP (ADVP (AD 更加))
+		  (VP (VV 怀念)
+		      (NP-OBJ (NP-PN (NR 台湾))
+			      (NP (NN 同胞)))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 	  
+	  </arg>
+	  <arg n="1">
+	  台湾 同胞 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 新春 佳节 之 际 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  更加 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 「)
+			  (NP (NN 人))
+			  (PU 」))
+	      (VP (VV 怀念)
+		  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (ADVP (AD 勇))
+					      (VP (VV 战)
+						  (NP-OBJ (NN 沙场))))
+					  (CC 和)
+					  (VP (VV 饱受)
+					      (NP-OBJ (DNP (NP (NN 战乱))
+							   (DEG 之))
+						      (NP (NN 苦))))))
+				  (DEC 的)))
+			  (NP (NN 人)))))
+	  </parse>
+	  <arg n="2">
+	  「 人 」 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 勇 战 沙场 和 饱受 战乱 之 苦 的 人 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

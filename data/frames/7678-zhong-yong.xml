@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 中用 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 当时))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (NP-DIR (NN 国外))
+				    (VP (VV 进口)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 电脑)
+			(NN 配色)
+			(NN 软体)))
+	    (VP (PU 「)
+		(VP (VV 中看))
+		(VP (ADVP (AD 不))
+		    (VP (VV 中用)))
+		(PU 」))) 
+	</parse>
+	<arg n="0">
+	*OP* *pro* 国外 进口 *T*-1 的 电脑 配色 软体 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="tmp">
+	当时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

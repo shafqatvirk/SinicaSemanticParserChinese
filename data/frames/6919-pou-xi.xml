@@ -1,0 +1,138 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 剖析 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 analyzes"/>
+    <role argnum="2" argrole="analysis arg0 gives"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-Q-SBJ (IP-TPC (DP-ADV (DT 这)
+				      (CLP (M 次)))
+			      (NP-SBJ (NP (NP-PN (NR 台湾))
+					  (NP (NN 地区)))
+				      (NP (NN 主教)))
+			      (VP (VV 受封)))
+		      (PU ，)
+		      (LCP-LOC (NP (DNP (PP (P 在)
+					    (LCP (NP (NN 宗教))
+						 (LC 上)))
+					(DEG 的))
+				   (NP (NN 意义)))
+			       (LC 之外))
+		      (PU ，)
+		      (LCP-SBJ (NP (NN 背))
+			       (LC 後))
+		      (VP (ADVP-WH (AD 是否))
+			  (VP (VE 有)
+			      (NP-OBJ (NP (QP (CD 两))
+					  (NP (NN 岸)))
+				      (NP (NN 角力))))))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 新闻人))
+					(VP (VV 应该)
+					    (VP (VV 剖析)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的))))))) 
+	</parse>
+	<arg n="0">
+	新闻人 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (ADVP (AD 一向))
+					(VP (VC 是)
+					    (NP-PRD (NP (NN 女性主义))
+						    (ADJP (JJ 强烈))
+						    (NP (NN 拥护者)))))
+				    (PU 、)
+				    (VP (LCP-TMP (NP (NT 近年))
+						 (LC 来))
+					(ADVP (AD 更))
+					(ADVP (AD 首))
+					(VP (VV 开)
+					    (NP-OBJ (NP (NN 国内))
+						    (NP (PU 「)
+							(NN 男性)
+							(NN 研究)
+							(PU 」))
+						    (NP (NN 风气)))))))
+			    (DEC 的)))
+		    (NP-APP (NP (NP-PN (NR 台北)
+				       (NN 大学))
+				(NP (NN 社会系)))
+			    (NP (NN 教授)))
+		    (NP-PN (NR 王雅各)))
+	    (VP (VV 剖析)
+		(PU ，)
+		(IP-OBJ (IP-SBJ (NP-SBJ (PU 「)
+					(NN 中年)
+					(NN 危机)
+					(PU 」))
+				(VP (PP-LOC (P 在)
+					    (NP-PN (NR 美国)))
+				    (VP (VV 形成)
+					(NP-OBJ (ADJP (JJ 热门))
+						(NP (NN 议题))))))
+			(PU ，)
+			(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 探究)
+					(NP-OBJ (NN 原因))))
+			    (PU ，)
+			    (VP (VC 是)
+				(IP-PRD (LCP-TMP (IP (LCP-SBJ (NP-APP (NT 一九四六年))
+							      (LCP (IP (NP-SBJ (QP (OD 二)
+										   (CLP (M 次)))
+									       (NP (NN 大战)))
+								       (VP (VV 结束)))
+								   (LC 後)))
+						     (VP (VV 以迄)
+							 (NP-OBJ (NT 一九六四年))))
+						 (LC 间))
+					(PU ，)
+					(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (VV 为数)
+								(QP-OBJ (ADVP (AD 约))
+									(QP (CD 七千五百万)))))
+							(DEC 的)))
+						(NP (PU 「)
+						    (NN 婴儿潮)
+						    (PU 」)))
+					(VP (ADVP (AD 陆续))
+					    (VP (VV 出生))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 一向 是 女性主义 强烈 拥护者 、 近年 来 更 首 开 国内 「 男性 研究 」 风气 的 台北 大学 社会系 教授 王雅各 
+	</arg>
+	<arg n="2">
+	「 中年 危机 」 在 美国 形成 热门 议题 ， *PRO* 探究 原因 ， 是 一九四六年 二 次 大战 结束 後 以迄 一九六四年 间 ， *OP* *T*-2 为数 约 七千五百万 的 「 婴儿潮 」 陆续 出生 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

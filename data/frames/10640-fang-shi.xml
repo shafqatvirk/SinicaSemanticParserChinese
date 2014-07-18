@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 访视 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 visits and watches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (ADVP (AD 曾))
+				(ADVP (AD 实际))
+				(VP (VV 访视)
+				    (NP-OBJ (NP (QP (CD 多)
+						    (CLP (M 所)))
+						(NP (NN 小学)))
+					    (NP (NN 英文)
+						(NN 教学))))))
+			(DEC 的)))
+		(NP-PN (NR 朱惠美))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	多 所 小学 英文 教学 
+	</arg>
+	<arg n="m" f="adv">
+	实际 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

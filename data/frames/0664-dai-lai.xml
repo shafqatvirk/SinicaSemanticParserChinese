@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="beneficiary"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 全球)
+		      (NN 经济)
+		      (NN 发展))
+	      (VP (ADVP (AD 将))
+		  (PP-BNF (P 给)
+			  (NP-PN (NR 中国)))
+		  (VP (VV 带来)
+		      (NP-OBJ (QP (CD 很多))
+			      (NP (NN 机遇)))))) 
+	  </parse>
+	  <arg n="0">
+	  全球 经济 发展 	  
+	  </arg>
+	  <arg n="1">
+	  很多 机遇 	  
+	  </arg>
+	  <arg n="2">
+	  给 中国 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="place arg0 takes arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (ADVP (AD 直))
+		      (PP (P 到)
+			  (QP (NP (NT 一九九二年)
+				  (NT 七月))
+			      (CP-APP (IP (NP-SBJ (PN 她))
+					  (VP (VV 考完)
+					      (NP-OBJ (NN 高中)
+						      (NN 联考))))
+				      (DEC 的))
+			      (QP (OD 第二)
+				  (CLP (M 天))))))
+	      (PU ，)
+	      (NP-SBJ (PN 我))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (PN 她))
+			  (VP (VV 带来)
+			      (NP-PN-OBJ (NR 纽西兰)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  她 
+	  </arg>
+	  <arg n="2">
+	  纽西兰 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  直 到 一九九二年 七月 她 考完 高中 联考 的 第二 天 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

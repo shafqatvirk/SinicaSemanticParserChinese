@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出钱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 supplies funding for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 所以))
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-TMP (-NONE- *T*-2))
+				(NP-SBJ (NN 纳税人))
+				(VP (VV 出钱)))
+			    (DEC 的)))
+		    (NP (NN 电影)
+			(NN 辅导金)))
+	    (VP (VV 该)
+		(VP (VP (VE 有)
+			(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-3))
+					    (VP (VA 长远)
+						(CC 而)
+						(VA 宽阔)))
+					(DEC 的)))
+				(NP (NN 视野))))
+		    (PU ，)
+		    (VP (VV 鼓励)
+			(NP-OBJ (NN 文化)
+				(NN 创作)))))) 
+	</parse>
+	<arg n="0">
+	纳税人 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

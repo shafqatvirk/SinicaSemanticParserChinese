@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 请 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="inviter"/>
+      <role argnum="1" argrole="invitee"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 王翔))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			       (VP (VV 得知)))
+			   (LC 后))
+		  (ADVP (AD 立即))
+		  (VP (VV 请)
+		      (NP-OBJ (NN 专家))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 论证)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  王翔 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  *pro* 得知 后 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  立即 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  专家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 论证 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

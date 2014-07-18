@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 管教 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 takes care of and educates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 子女))
+	      (PP-PRP (P 因)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 乏)
+			      (NP-OBJ (NN 人))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 管教))))))
+	      (PU 、)
+	      (NP-TPC (NN 配偶))
+	      (PP-PRP (P 因)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 长期))
+			      (VP (VA 孤单)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 造成)
+		  (NP-OBJ (QP (CD 不少))
+			  (NP (NN 家庭)
+			      (CC 及)
+			      (NN 社会))
+			  (NP (NN 问题))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

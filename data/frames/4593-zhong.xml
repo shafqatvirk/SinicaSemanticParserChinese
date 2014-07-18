@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 gives importance to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 医药业)))
+		  (VP (VV 应)
+		      (VP (VP (VV 改变)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VP (VV 重)
+							  (NP-OBJ (NN 原料药)
+								  (NN 生产)))
+						      (PU 、)
+						      (VP (VV 轻)
+							  (NP-OBJ (NN 制剂)
+								  (NN 开发)))))
+					      (DEC 的))
+				      (NP (NN 做法))))
+			  (PU ，)
+			  (VP (ADVP (AD 尽快))
+			      (VP (VV 赶上)
+				  (NP-OBJ (DNP (NP (NN 世界)
+						   (NN 制药业))
+					       (DEG 的))
+					  (NP (NN 发展)
+					      (NN 潮流)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  原料药 生产 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 任务))
+	      (VP (ADVP (AD 很))
+		  (VP (VA 重)))) 
+	  </parse>
+	  <arg n="0">
+	  任务 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="weight of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (CD 部分))
+	      (VP (VRD (VA 重)
+		       (VV 达))
+		  (QP-OBJ (QP (CD 一千)
+			      (CLP (-NONE- *RNR*-1)))
+			  (CC 至)
+			  (QP (CD 三千)
+			      (CLP-1 (M 公斤)))))) 
+	  </parse>
+	  <arg n="0">
+	  部分 
+	  </arg>
+	  <arg n="1">
+	  一千 *RNR*-1 至 三千 公斤 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CLP (M 个)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 重)
+					  (QP-EXT (ADVP (AD 约))
+						  (QP (CD 九百一十)
+						      (CLP (M 克))))))
+				  (DEC 的)))
+			  (NP (NN 男婴))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  约 九百一十 克 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

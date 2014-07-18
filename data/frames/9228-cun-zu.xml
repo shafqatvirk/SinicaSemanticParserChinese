@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 存足 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 has enough of in store"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 存足)
+				       (NP-OBJ (DP (DT 其他))
+					       (NP (NN 颜色)))))
+			       (LC 之前)))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 只好))
+			  (ADVP (AD 不时))
+			  (VP (VV 打开)
+			      (NP-OBJ (-NONE- *pro*))))
+		      (VP (MSP 来)
+			  (VP (VP (VNV (VV 闻)
+				       (CD 一)
+				       (VV 闻))
+				  (NP-OBJ (DP (DT 那))
+					  (DNP (NP (NN 亚麻油))
+					       (DEG 的))
+					  (NP (NN 味道))))
+			      (VP (VV 过过)
+				  (NP-OBJ (NN 乾瘾)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  其他 颜色 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

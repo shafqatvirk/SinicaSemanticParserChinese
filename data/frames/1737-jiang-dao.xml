@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 美国))
+		      (NP (NT １２月份))
+		      (NP (NN 消费者)
+			  (NN 信心)
+			  (NN 指数)))
+	      (VP (PP-DIR (P 从)
+			  (QP (DNP (NP (NT １１月份))
+				   (DEG 的))
+			      (QP (CD １２６．４)
+				  (CLP (M 点)))))
+		  (ADVP (AD 微))
+		  (VP (VV 降到)
+		      (QP-OBJ (CD １２６．１)
+			      (CLP (M 点)))))) 
+	  </parse>
+	  <arg n="1">
+	  美国 １２月份 消费者 信心 指数 	  
+	  </arg>
+	  <arg n="2">
+	  从 １１月份 的 １２６．４ 点 	  
+	  </arg>
+	  <arg n="3">
+	  １２６．１ 点 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  微 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 通货膨胀率))
+	      (VP (VV 要)
+		  (VP (VV 降到)
+		      (QP-OBJ (CD 百分之五)
+			      (CC 至)
+			      (CD 百分之八))))) 
+	  </parse>
+	  <arg n="1">
+	  通货膨胀率 	  
+	  </arg>
+	  <arg n="3">
+	  百分之五 至 百分之八 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

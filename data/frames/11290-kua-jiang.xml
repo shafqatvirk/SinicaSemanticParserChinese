@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夸奖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="thing arg0 praises arg1 for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="io" trg="arg1"/>
+	<mapitem src="ipobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 夸奖)
+		(NP-IO (PN 她们))
+		(IP-OBJ (PU 「)
+			(NP-SBJ (NN 英语))
+			(VP (VP (VA 厉害))
+			    (PU ，)
+			    (VP (VV 念)
+				(DER 得)
+				(VP-EXT (ADVP (AD 好好))
+					(VP (VV 听)))))
+			(PU 」)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	她们 
+	</arg>
+	<arg n="2">
+	「 英语 厉害 ， 念 得 好好 听 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

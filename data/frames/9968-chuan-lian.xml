@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 串连 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities arg0 connects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 利用)
+		      (NP-OBJ (DNP (NP (NN 电脑))
+				   (DEG 的))
+			      (NP (NN 存档)
+				  (PU 、)
+				  (NN 连结)
+				  (CC 与)
+				  (NN 搜寻)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 可以)
+		  (VP (VP (BA 将)
+			  (IP-OBJ (NP-SBJ-1 (DNP (QP (CD 上万)
+						     (CLP (M 笔)))
+						 (DEG 的))
+					    (NP (NN 订单)))
+				  (VP (VRD (VV 串连)
+					   (VV 起来))
+				      (NP-OBJ (-NONE- *-1)))))
+		      (PU ，)
+		      (VP (VRD (VV 归纳)
+			       (VV 出))
+			  (NP-OBJ (DNP (NP (NN 其中))
+				       (DEG 的))
+				  (NP (NN 规律)
+				      (CC 和)
+				      (NN 起伏))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  上万 笔 的 订单 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *PRO* 利用 电脑 的 存档 、 连结 与 搜寻 
+	  </arg>
+	  <arg n="m" f="dis">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

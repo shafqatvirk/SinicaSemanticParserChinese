@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 演说 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="speaker"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中共))
+	      (VP (VP (PP-TMP (P 在)
+			      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *T*-1))
+						   (VP (ADVP (AD 极))
+						       (VP (VA 短))))
+					       (DEC 的)))
+				       (NP (NN 时间)))
+				   (LC 内)))
+		      (ADVP (AD 也))
+		      (VP (VV 回应)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP-PN (NR 陈水扁))
+				       (DEG 的))
+				  (NP (NN 演说))))))) 
+	  </parse>
+	  <arg n="0">
+	  陈水扁 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

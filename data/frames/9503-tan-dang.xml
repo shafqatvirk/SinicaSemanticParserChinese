@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坦荡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-PN-SBJ (NR 台湾))
+		(VP (ADVP-WH (AD 如何))
+		    (PP-LOC (P 在)
+			    (LCP (NP (NN 冲突)
+				     (CC 与)
+				     (NN 和平))
+				 (LC 间)))
+		    (VP (VV 走出)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 条)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 坦荡)))
+					(DEC 的)))
+				(NP (NN 路)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

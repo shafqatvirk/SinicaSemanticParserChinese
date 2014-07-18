@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 毁坏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="destroyer"/>
+      <role argnum="1" argrole="thing destroyed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 该))
+			  (NP (NN 市)))
+		  (VP (ADVP (AD 正))
+		      (ADVP (AD 全力))
+		      (ADVP (AD 加紧))
+		      (VP (VV 抢修)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (LB 遭)
+						  (CP-OBJ (WHNP-3 (-NONE- *OP*))
+							  (IP (NP-SBJ (QP (CD 十七)
+									  (CLP (M 号)))
+								      (NP (NN 台风)))
+							      (VP (VCD (VV 袭击)
+								       (VV 毁坏))
+								  (NP-OBJ (-NONE- *T*-3)))))))
+					  (DEC 的)))
+				  (NP (NN 水利)
+				      (NN 工程)))))) 
+	  </parse>
+	  <arg n="0">
+	  十七 号 台风 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

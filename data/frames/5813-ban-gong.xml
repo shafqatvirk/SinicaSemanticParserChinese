@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 办公 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (NP-SBJ (DNP (NP (NN 业主))
+			 (DEG 的))
+		    (NP (NN 保证)))
+	    (VP (ADVP (AD 却))
+		(ADVP (AD 不))
+		(VP (VV 能)
+		    (VP (VV 解决)
+			(NP-OBJ (DNP (NP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 碰到)
+						      (NP-OBJ (NN 天灾))))
+					      (LC 时))
+					 (PU ，)
+					 (NP (CP (WHNP-1 (-NONE- *OP*))
+						 (CP (IP (NP-SBJ (-NONE- *T*-1))
+							 (VP (PP-LOC (P 在)
+								     (NP (NN 高楼)))
+							     (VP (VV 办公))))
+						     (DEC 的)))
+					     (NP (NN 人们))))
+				     (DEG 的))
+				(NP (NN 惊惧感))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="loc">
+	在 高楼 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

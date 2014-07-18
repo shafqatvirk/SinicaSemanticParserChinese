@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 派驻有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people stationed"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-TMP (NT １９９２年)
+				   (NT ２月))
+			   (NP-SBJ (NP-PN (NR 波黑))
+				   (NP (NN 冲突)))
+			   (VP (VV 爆发)))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 法国))
+	      (VP (PP-LOC (P 在)
+			  (NP-PN (NR 波黑)))
+		  (ADVP (AD 一直))
+		  (VP (VV 派驻有)
+		      (NP-OBJ (QP (ADVP (AD 约))
+				  (QP (CD ４０００)
+				      (CLP (M 名))))
+			      (NP (NN 官兵)))))) 
+	  </parse>
+	  <arg n="0">
+	  法国 
+	  </arg>
+	  <arg n="1">
+	  约 ４０００ 名 官兵 
+	  </arg>
+	  <arg n="2">
+	  在 波黑 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９９２年 ２月 波黑 冲突 爆发 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 规劝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="advice giver"/>
+    <role argnum="1" argrole="entity arg0 gives advice to"/>
+    <role argnum="2" argrole="advice"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 乡民))
+	    (VP (VP (ADVP (AD 自由))
+		    (VP (VV 加入)
+			(NP-OBJ (NN 组织))))
+		(PU ，)
+		(VP (ADVP (AD 共同))
+		    (VP (VV 订定)
+			(NP-OBJ (PU 「)
+				(NN 乡约)
+				(PU 」))))
+		(PU ，)
+		(VP (VV 推举)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 年高德劭))))
+			    (NP (NN 者)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 为)
+			    (NP-OBJ (PU 「)
+				    (NN 约正)
+				    (PU 」)))))
+		(PU ，)
+		(VP (NP-TMP (DP (DT 每)
+				(CLP (M 个)))
+			    (NP (NN 月终)))
+		    (PU ，)
+		    (ADVP (AD 分别))
+		    (PP-DIR (P 对於)
+			    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					(IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VE 有)
+						(NP-OBJ (NN 善行)
+							(CC 或)
+							(NN 过错)))))
+				    (NP (NN 者))))
+		    (VP (VV 加以)
+			(VP (VV 规劝)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 年高德劭 者 
+	</arg>
+	<arg n="1">
+	对於 *OP* *T*-2 有 善行 或 过错 者 
+	</arg>
+	<arg n="m" f="adv">
+	分别 
+	</arg>
+	<arg n="m" f="tmp">
+	每 个 月终 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

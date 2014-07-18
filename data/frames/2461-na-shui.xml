@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 纳税 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="tax payer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-MNR (P 依)
+			      (NP (NN 法)))
+		      (VP (VV 纳税)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依 法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 汇流 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities described"/>
+    <role argnum="1" argrole="place arg0 flows together into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-SBJ (NN 科技)
+					(PU 、)
+					(NN 人文)
+					(PU 、)
+					(NN 经济))
+				(VP (VV 汇流)))
+			    (DEC 的))
+		    (NP (NN 知识)
+			(NN 狂潮)))
+	    (PU ，)
+	    (VP (VV 让)
+		(NP-OBJ (LCP (NP (NN 世纪))
+			     (LC 末))
+			(NP (NN 人们)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VRD (VV 感受)
+			     (VV 到))
+			(NP-OBJ (NN 学习)
+				(NN 风气)))))) 
+	</parse>
+	<arg n="0">
+	科技 、 人文 、 经济 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-PN-SBJ (NR 皮尔)
+					   (NN 山谷))
+				(VP (VP (VV 汇流)
+					(NP-OBJ (ADJP (JJ 众))
+						(NP (NN 水))))
+				    (PU ，)
+				    (VP (DNP (VP (VV 万马奔腾))
+					     (DEV 地))
+					(VP (VV 冲入)
+					    (NP-PN-OBJ (NR 北极海))))))
+			    (DEC 的))
+		    (NP (NN 壮阔)))
+	    (VP (ADVP (AD 似))
+		(VP (VV 在)
+		    (LCP-LOC (NP (NN 眼))
+			     (LC 前))))) 
+	</parse>
+	<arg n="0">
+	众 水 
+	</arg>
+	<arg n="1">
+	皮尔 山谷 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

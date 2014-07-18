@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冲洗 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 develops and prints"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 家乐福))
+	    (VP (VP (ADVP (AD 则))
+		    (PP-LOC (P 在)
+			    (NP (NN 卖场)))
+		    (VP (VV 加入)
+			(NP-OBJ (NN 美食)
+				(NN 街)
+				(PU 、)
+				(NN 精品)
+				(NN 店))))
+		(PU ，)
+		(VP (PP-MNR (P 以)
+			    (NP (NN 成本价)))
+		    (PP-BNF (P 为)
+			    (NP (NN 客户)))
+		    (VP (VV 冲洗)
+			(NP-OBJ (NN 照片))))
+		(PU ，)
+		(VP (ADVP (AD 还))
+		    (VP (VV 提供)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 更换)
+						(NP-OBJ (NN 轮胎))))
+					(DEC 的))
+				(NP (NN 服务))))))) 
+	</parse>
+	<arg n="0">
+	家乐福 
+	</arg>
+	<arg n="1">
+	照片 
+	</arg>
+	<arg n="m" f="bnf">
+	为 客户 
+	</arg>
+	<arg n="m" f="mnr">
+	以 成本价 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

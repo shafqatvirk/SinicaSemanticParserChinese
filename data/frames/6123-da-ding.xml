@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打定 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing (mind) arg0 makes up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 小))
+		    (NP (NN 夫妻)))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 结婚)))
+			 (LC 之初))
+		(ADVP (AD 就))
+		(VP (VP (VV 打定)
+			(NP-OBJ (NN 主意)))
+		    (VP (VV 当)
+			(NP-OBJ (NN 顶客族)))))) 
+	</parse>
+	<arg n="0">
+	小 夫妻 
+	</arg>
+	<arg n="1">
+	主意 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 结婚 之初 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

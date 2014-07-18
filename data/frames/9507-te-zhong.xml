@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 特重 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 lays emphasis on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-PN-SBJ (NR 顺益)
+					     (NN 博物馆))
+				  (VP (VV 典藏)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (NP (NN 文物)))
+		  (VP (VP (VV 始於)
+			  (NP-OBJ (DNP (NP (NP-APP (NN 董事长))
+					   (NP-PN (NR 林清富)))
+				       (DEG 的))
+				  (NP (NN 个人)
+				      (NN 收藏))))
+		      (PU ，)
+		      (VP (VV 特重)
+			  (NP-OBJ (NN 艺术性))))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  *OP* 顺益 博物馆 典藏 *T*-1 文物 
+	  </arg>
+	  <arg n="1" f="pse">
+	  艺术性 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

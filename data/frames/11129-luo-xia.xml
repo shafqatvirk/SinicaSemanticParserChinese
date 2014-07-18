@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 烙下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 burns arg1 onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-Q-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 不管))
+			  (VP (VNV-WH (VV 了)
+				      (AD 不)
+				      (VV 了解))
+			      (IP-OBJ (NP-PN-SBJ (NR 胡适))
+				      (VP (PP-PRP (P 因)
+						  (NP (PN 何)))
+					  (VP (VV 发出)
+					      (NP-OBJ (CP-APP (IP (PU 「)
+								  (NP-SBJ (-NONE- *pro*))
+								  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+									      (VP (VV 做)
+										  (AS 了)
+										  (NP-OBJ (NN 过河卒子))))
+								      (PU ，)
+								      (ADVP (AD 只有))
+								      (ADVP (AD 奋力))
+								      (VP (VV 向前)))
+								  (PU 」))
+							      (DEC 的))
+						      (NP (NN 鸣声)))))))))
+	    (PU ，)
+	    (NP-SBJ (PN 它))
+	    (VP (ADVP (AD 却))
+		(PP-LOC (P 在)
+			(NP (NP (QP (CD 许多))
+				(ADJP (JJ 年轻))
+				(NP (NN 人)))
+			    (NP (NN 脑海))))
+		(VP (VV 烙下)
+		    (NP-OBJ (ADJP (JJ 深刻))
+			    (NP (NN 印痕)))))) 
+	</parse>
+	<arg n="0">
+	它 
+	</arg>
+	<arg n="1">
+	深刻 印痕 
+	</arg>
+	<arg n="2">
+	在 许多 年轻 人 脑海 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 不管 了 不 了解 胡适 因 何 发出 「 *pro* *PRO* 做 了 过河卒子 ， 只有 奋力 向前 」 的 鸣声 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

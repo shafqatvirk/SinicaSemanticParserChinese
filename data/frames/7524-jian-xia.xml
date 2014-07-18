@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 剪下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 cuts down"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 不同於)
+			(IP-OBJ (NP-SBJ (NP-PN (NR 美国))
+					(NP (NN 消费者)))
+				(VP (ADVP (AD 事先))
+				    (VP (VP (VV 剪下)
+					    (NP-OBJ (NN 折扣券)))
+					(CC 并)
+					(VP (VV 做好)
+					    (NP-OBJ (NN 分类))))))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 民众)))
+	    (VP (VP (ADVP (AD 比较))
+		    (VP (VC 是)
+			(VP (ADVP (AD 冲动性))
+			    (VP (VV 购买)))))
+		(PU ，)
+		(VP (ADVP (AD 不))
+		    (VP (VC 是)
+			(VP (ADVP (AD 计画式))
+			    (VP (VV 购买))))))) 
+	</parse>
+	<arg n="0">
+	美国 消费者 
+	</arg>
+	<arg n="1">
+	折扣券 
+	</arg>
+	<arg n="m" f="adv">
+	事先 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

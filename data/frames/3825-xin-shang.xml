@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 欣赏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity appreciated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 卢森博格))
+	      (VP (VP (ADVP (AD 非常))
+		      (VP (VV 欣赏)
+			  (NP-OBJ (NP-APP (NP (DP (DT 本))
+					      (NP (NN 年度)))
+					  (NP-PN (NR 巴西))
+					  (ADJP (ADVP (AD 最))
+						(ADJP (JJ 佳)))
+					  (NP (NN 球员)))
+				  (NP-PN (NR 加马拉))))))) 
+	  </parse>
+	  <arg n="0">
+	  卢森博格 
+	  </arg>
+	  <arg n="1">
+	  本 年度 巴西 最 佳 球员 加马拉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  非常 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 让)
+	      (NP-OBJ (NN 市民))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 欣赏)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

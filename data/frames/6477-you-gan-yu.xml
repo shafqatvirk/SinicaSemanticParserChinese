@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有感於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is touched/inspired by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 有感於)
+		(IP-OBJ (NP-PN-SBJ (NR 台湾))
+			(VP (VV 必须)
+			    (VP (PP-DIR (P 朝)
+					(NP (NP (NN 生物)
+						(NN 科技))
+					    (NP (NN 产业))))
+				(VP (VV 发展))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台湾 必须 朝 生物 科技 产业 发展 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (LCP (QP (CD 五十多)
+			     (CLP (M 岁)))
+			 (LC 时)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 王壮为))
+	    (VP (VP (VV 有感於)
+		    (NP-OBJ (CP-APP (IP (PU 「)
+					(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 写)
+						    (NP-OBJ (NN 字))))
+					(VP (ADVP (AD 就))
+					    (VP (VC 是)
+						(IP-PRD (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 画)
+							    (NP-OBJ (NN 画))))))
+					(PU 」))
+				    (DEC 的))
+			    (NP (NN 想法))))
+		(PU ，)
+		(VP (PP-DIR (P 对)
+			    (NP (NN 书法)))
+		    (VP (VV 作)
+			(AS 了)
+			(NP-OBJ (DNP (QP (CD 许多))
+				     (DEG 的))
+				(NP (NN 创新)
+				    (NN 实验))))))) 
+	</parse>
+	<arg n="0">
+	王壮为 
+	</arg>
+	<arg n="1">
+	「 *PRO* 写 字 就 是 *PRO* 画 画 」 的 想法 
+	</arg>
+	<arg n="m" f="tmp">
+	在 五十多 岁 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

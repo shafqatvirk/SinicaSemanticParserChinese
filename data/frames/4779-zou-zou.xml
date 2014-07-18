@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 走走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 说)
+		  (PU ：)
+		  (IP-OBJ (PU “)
+			  (PP-ADV (P 趁)
+				  (IP (NP-TMP (NT 现在))
+				      (NP-SBJ (NN 身体))
+				      (VP (ADVP (AD 还))
+					  (VP (VA 好)))))
+			  (PU ，)
+			  (NP-SBJ (PN 我))
+			  (VP (VV 要)
+			      (VP (ADVP (AD 多))
+				  (VP (VSB (VV 出去)
+					   (VV 走走)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="m" f="adv">
+	  多 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

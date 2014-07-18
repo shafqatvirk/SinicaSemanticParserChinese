@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 帮 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="helped"/>
+      <role argnum="2" argrole="thing arg0 helps arg1 with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-1 (PU “)
+		    (NP-SBJ (-NONE- *pro*))
+		    (VP (VC 是)
+			(IP (NP-SBJ (NN 农村)
+				    (NN 工业化))
+			    (VP (VV 帮)
+				(NP-OBJ (NN 农民))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 圆)
+					(AS 了)
+					(NP-OBJ (NN 城市)
+						(NN 梦)))))))) 
+	  </parse>
+	  <arg n="0">
+	  农村 工业化 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  农民 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 圆 了 城市 梦 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 帮忙))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 不))
+		  (ADVP (AD 一定))
+		  (VP (VV 要)
+		      (VP (VV 帮)
+			  (NP-OBJ (ADJP (JJ 什麽))
+				  (ADJP (JJ 大))
+				  (NP (NN 忙))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  什麽 大 忙 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一定 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  帮忙 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

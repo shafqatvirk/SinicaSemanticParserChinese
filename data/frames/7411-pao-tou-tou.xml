@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跑透透 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="places arg0 travels to all of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (NP (NN 省长))
+			(QP (CD 五)
+			    (CLP (M 年)))
+			(NP (NN 任内)))
+		(VP (VV 跑透透)
+		    (NP-OBJ (NP-PN (NR 台湾))
+			    (QP (CD 三百零九)
+				(CLP (M 个)))
+			    (NP (NN 乡镇)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	台湾 三百零九 个 乡镇 
+	</arg>
+	<arg n="m" f="tmp">
+	省长 五 年 任内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

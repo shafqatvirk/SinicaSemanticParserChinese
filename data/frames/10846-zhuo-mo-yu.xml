@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著墨於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 depicts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (DNP (NP (NN 乡土剧))
+				 (DEG 的))
+			    (NP (NN 题材)))
+		    (VP (VV 会)
+			(VP (VV 著墨於)
+			    (NP-OBJ (NP (NT 过去))
+				    (DNP (NP (NN 市井小民))
+					 (DEG 的))
+				    (NP (NN 生活))))))
+	    (PU ，)
+	    (VP (PP (P 与)
+		    (NP (NP (PN 其))
+			(NP (NN 发展)
+			    (NN 过程))))
+		(VP (VV 有关)))) 
+	</parse>
+	<arg n="0">
+	乡土剧 的 题材 
+	</arg>
+	<arg n="1">
+	过去 市井小民 的 生活 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

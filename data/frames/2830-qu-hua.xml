@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 去化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 要)
+	      (NP-OBJ (NN 传销商))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (BA 将)
+				       (IP-OBJ (QP-SBJ (DNP (NP (NN 进货量))
+							    (DEG 的))
+						       (QP (CD 百分之七十)))
+					       (VP (VRD (VV 去化)
+							(VV 完毕))))))
+			       (LC 後))
+		      (PU ，)
+		      (ADVP (AD 才))
+		      (VP (VV 能)
+			  (VP (VP (VV 领取)
+				  (NP-OBJ (NN 业绩)
+					  (NN 奖金)))
+			      (CC 或是)
+			      (VP (ADVP (AD 再))
+				  (VP (VV 补)
+				      (NP-OBJ (ADJP (JJ 新))
+					      (NP (NN 货)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  进货量 的 百分之七十 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

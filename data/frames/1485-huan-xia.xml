@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 换下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing elimiminated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 东北))
+		      (DP (DT 各))
+		      (NP (NN 地)))
+	      (VP (VV 换下)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (ADVP (AD 原先))
+					  (VP (VV 悬挂)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (NN 五色旗))))) 
+	  </parse>
+	  <arg n="0">
+	  东北 各 地 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 原先 悬挂 *T*-1 的 五色旗 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

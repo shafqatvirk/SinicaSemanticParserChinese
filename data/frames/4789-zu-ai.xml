@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 阻碍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="hinderer"/>
+      <role argnum="1" argrole="thing hindered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (LCP (NP-PN (NR 台湾岛))
+				    (LC 内))
+			       (NP (NN 分裂)
+				   (NN 倾向)))
+			   (DEG 的))
+		      (NP (NN 发展)))
+	      (PU ，)
+	      (VP (ADVP (AD 严重))
+		  (VP (VV 阻碍)
+		      (AS 着)
+		      (NP-OBJ (DNP (NP (NN 和平)
+				       (NN 统一))
+				   (DEG 的))
+			      (NP (NN 进程)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  台湾岛 内 分裂 倾向 的 发展 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  严重 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  和平 统一 的 进程 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="hinderer"/>
+      <role argnum="1" argrole="party hindered"/>
+      <role argnum="2" argrole="action hindered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 侯家驹))
+	      (VP (VV 指出)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (NP (PU “)
+				      (NN 戒急用忍)
+				      (PU ”))
+				  (NP (NN 政策)))
+			  (VP (ADVP (AD 也))
+			      (VP (VV 阻碍)
+				  (AS 了)
+				  (NP-OBJ (NN 外商))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 投资)
+					  (NP-PN-OBJ (NR 台湾))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  “ 戒急用忍 ” 政策 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外商 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 投资 台湾 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

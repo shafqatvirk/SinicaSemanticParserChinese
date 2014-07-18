@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 爱国 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="love giver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (NP-SBJ (DP (DT 一切))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 爱国)))
+			    (DEC 的)))
+		    (NP (NN 中国人)))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(中国人) 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

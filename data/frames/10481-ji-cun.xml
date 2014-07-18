@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 寄存 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="entity arg0 places arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 以往))
+	    (NP-SBJ (NN 人类)
+		    (NN 资讯))
+	    (VP (ADVP (AD 都))
+		(VP (VV 必须)
+		    (VP (VV 寄存)
+			(PP (P 於)
+			    (LCP (NP (NN 物质))
+				 (LC 上))))))) 
+	</parse>
+	<arg n="1">
+	人类 资讯 
+	</arg>
+	<arg n="2">
+	於 物质 上 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tmp">
+	以往 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挪移 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 moves arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 连))
+		      (NP (NP (ADJP (JJ 高))
+			      (NP (NN 科技)))
+			  (NP (NN 产业))))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 慢慢))
+		  (PP-DIR (P 向)
+			  (NP (NN 大陆)))
+		  (VP (VV 挪移)))) 
+	  </parse>
+	  <arg n="1">
+	  连 高 科技 产业 
+	  </arg>
+	  <arg n="2">
+	  向 大陆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  慢慢 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

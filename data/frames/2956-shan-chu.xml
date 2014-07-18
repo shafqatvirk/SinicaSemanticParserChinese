@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 删除 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing deleted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VP (ADVP (AD 将))
+		      (ADVP (AD 不))
+		      (ADVP (AD 单单))
+		      (VP (VC 是)
+			  (VP (PP-DIR (P 对)
+				      (NP (NN 文件)))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 加密))))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (ADVP (AD 还))
+		      (VP (VV 会)
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 文件))
+				      (VP (VV 删除)))))))) 
+	  </parse>
+	  <arg n="0">
+	  它 
+	  </arg>
+	  <arg n="1">
+	  文件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 演变 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-SBJ (DNP (LCP (NP (PU 「)
+					 (NN 长)
+					 (PU 」))
+				     (LC 之後))
+				(DEG 的))
+			   (NP (NN 情况)))
+		   (VP (ADVP (AD 又))
+		       (ADVP (AD 将))
+		       (ADVP (AD 如何))
+		       (VP (VV 演变)))
+		   (PU ？))) 
+	  </parse>
+	  <arg n="0">
+	  「 长 」 之後 的 情况 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  如何 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entiy arg0 revolves into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 外国)
+			       (NN 军队))
+			   (DEG 的))
+		      (ADJP (JJ 直接))
+		      (NP (NN 卷入)))
+	      (VP (VV 使)
+		  (NP-OBJ (DNP (NP-PN (NR 刚果)
+				      (PRN (PU （)
+					   (NP-PN (NR 金))
+					   (PU ）)))
+			       (DEG 的))
+			  (NP (NN 内战)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (ADVP (AD 更))
+			      (VP (VV 趋)
+				  (NP-OBJ (NN 错综复杂))))
+			  (PU ，)
+			  (VP (ADVP (AD 随时))
+			      (ADVP (AD 都))
+			      (VP (VV 会)
+				  (VP (VRD (VV 演变)
+					   (VV 成为))
+				      (NP-OBJ (DNP (NP (ADJP (JJ 大))
+						       (NP (NN 规模)))
+						   (DEG 的))
+					      (ADJP (JJ 地区性))
+					      (NP (NN 冲突)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  大 规模 的 地区性 冲突 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  随时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

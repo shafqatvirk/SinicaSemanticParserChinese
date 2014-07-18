@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 红花绿叶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP (LCP (NP (NN 家))
+				   (LC 中))
+			      (LCP (NP (NN 阳台))
+				   (LC 上))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (NP-TMP (NT 春)
+						      (NT 秋季))
+					      (ADVP (AD 才))
+					      (VP (VV 开)
+						  (NP-OBJ (NN 花)))))
+				      (DEC 的)))
+			      (NP (NN 盆花)))
+			  (PRN (NP (ADVP (AD 如))
+				   (NP (NP (NN 一串红)
+					   (PU 、)
+					   (NN 二乔玉兰))
+				       (ETC 等)))))
+		  (PU ，)
+		  (VP (ADVP (AD 现时))
+		      (ADVP (AD 也))
+		      (VP (VP (VV 红花绿叶))
+			  (PU ，)
+			  (VP (ADVP (AD 十分))
+			      (VP (VA 美丽)))))) 
+	  </parse>
+	  <arg n="0">
+	  家 中 阳台 上 *OP* *T*-1 春 秋季 才 开 花 的 盆花 如 一串红 、 二乔玉兰 等 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 料定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 predicts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NT 未来))
+			   (DEG 的))
+		      (NP (NN 胜负)))
+	      (VP (ADVP (AD 尚))
+		  (ADVP (AD 难))
+		  (VP (VV 料定)))) 
+	  </parse>
+	  <arg n="1">
+	  未来 的 胜负 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尚 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

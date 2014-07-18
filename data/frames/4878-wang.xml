@@ -1,0 +1,106 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 忘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 forgets"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (PU 「)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VP (ADVP (AD 宁))
+			(VP (VV 卖)
+			    (NP-OBJ (NN 祖宗)
+				    (NN 田))))
+		    (PU ，)
+		    (VP (ADVP (AD 莫))
+			(VP (VV 忘)
+			    (NP-OBJ (NN 祖宗)
+				    (NN 言)))))
+		(PU 」)) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	祖宗 言 
+	</arg>
+	<arg n="m" f="adv">
+	莫 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (PU 「)
+		(VP (ADVP (AD 多))
+		    (VP (VV 读)))
+		(VP (VV 补)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 多))
+				(VP (VV 忘)))))
+		(PU 」))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	多 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 要)
+			(VP (ADVP (AD 再))
+			    (VP (VV 隐形)
+				(AS 了)))))
+		(PU ，)
+		(VP (ADVP (AD 别))
+		    (VP (VV 忘)
+			(AS 了)
+			(IP-OBJ (NP-SBJ (PN 你))
+				(VP (ADVP (AD 也))
+				    (VP (VC 是)
+					(NP-PRD (DNP (NP (DP (DT 这)
+							     (CLP (M 块)))
+							 (NP (NN 土地)))
+						     (DEG 的))
+						(NP (NN 主人)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	你 也 是 这 块 土地 的 主人 
+	</arg>
+	<arg n="m" f="adv">
+	别 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

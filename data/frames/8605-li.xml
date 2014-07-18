@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 利 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 makes it easy for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP (NP-SBJ (NN 博物馆)
+				  (NN 场地)
+				  (CC 与)
+				  (NN 展览品))
+			  (VP (VA 有限))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 所以))
+				      (VP (VV 展出))))
+			      (DEC 的)))
+		      (NP (NN 形式)))
+	      (VP (VP (ADVP (AD 不))
+		      (PP-MNR (P 以)
+			      (NP (NN 族群)))
+		      (VP (VV 做)
+			  (NP-OBJ (NN 区分))))
+		  (PU ，)
+		  (VP (ADVP (AD 而))
+		      (PP-MNR (P 以)
+			      (NP (NN 器物)
+				  (NN 用途)))
+		      (VP (VV 分类)))
+		  (PU ，)
+		  (CC 并且)
+		  (VP (VV 夹杂)
+		      (NP-OBJ (NP (ADJP (JJ 现代))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 仿古))))
+				  (NP (NN 制品)))
+			      (PU 、)
+			      (NP (NN 照片))
+			      (CC 与)
+			      (NP (NN 模型))))
+		  (PU ，)
+		  (VP (MSP 以)
+		      (VP (VV 利)
+			  (NP-OBJ (NN 说明)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 所以 展出 的 形式 
+	  </arg>
+	  <arg n="1">
+	  说明 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 博物馆 场地 与 展览品 有限 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

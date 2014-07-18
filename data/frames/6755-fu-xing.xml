@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 复兴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 revives"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 复兴)
+			(NP-OBJ (NP-PN (NR 中华))
+				(NP (NN 文化))))
+		    (PU 、)
+		    (VP (VV 承续)
+			(NP-OBJ (NN 道统))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	中华 文化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (QP (CD 八○))
+		    (NP (NN 年代)))
+	    (LCP-LOC (NP (IP-APP (NP-SBJ (NN 乐团))
+				 (VP (VV 复兴)))
+			 (NP (NN 声)))
+		     (LC 中))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 却))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (QP (CD 一)
+					(CLP (M 个)))
+				    (NP (NN 现象)))
+			    (VP (ADVP (AD 颇))
+				(VP (VV 值得)
+				    (NP-OBJ (NN 注意)))))))) 
+	</parse>
+	<arg n="1">
+	乐团 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

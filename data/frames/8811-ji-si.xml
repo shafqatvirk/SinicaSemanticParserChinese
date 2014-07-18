@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 祭祀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 offers sacrifice to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 即使))
+			  (VP (PP-PRD (P 在)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (NP-TMP (-NONE- *T*-1))
+							  (ADVP (AD 最))
+							  (VP (VA 苦))))
+						  (DEC 的)))
+					  (NP (NN 年代)))))))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 每))
+			  (VP (VV 逢)
+			      (NP-OBJ (NN 民俗)
+				      (NN 节日)))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-2))
+				  (NP-SBJ (NN 信仰))
+				  (VP (VA 虔诚)))
+			      (DEC 的)))
+		      (NP (NN 民众)))
+	      (VP (VP (ADVP (AD 总))
+		      (VP (VV 要)
+			  (VP (VP (VV 摆起)
+				  (NP-OBJ (NP (ADJP (JJ 满))
+					      (NP (NN 桌)))
+					  (NP (NN 供品))))
+			      (PU ，)
+			      (VP (VV 祭祀)
+				  (NP-OBJ (NP (NN 祖先))
+					  (CC 及)
+					  (NP (ADJP (JJ 过往))
+					      (NP (NN 神灵)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 信仰 虔诚 的 民众 
+	  </arg>
+	  <arg n="1">
+	  祖先 及 过往 神灵 
+	  </arg>
+	  <arg n="m" f="adv">
+	  总 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 每 逢 民俗 节日 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 即使 在 *OP* *pro* *T*-1 最 苦 的 年代 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 否决 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="vetoer"/>
+      <role argnum="1" argrole="bill, decision, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-3 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-3))
+			  (VP (VE 没有)
+			      (NP-OBJ (IP-APP (NP-PN-SBJ (NR 联合国))
+					      (VP (VV 否决)))
+				      (NP (NN 危险)))))
+		      (DEC 的)))
+	      (CP (WHNP-2 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-2))
+			  (VP (VCD (VA 独立)
+				   (VA 自主))))
+		      (DEC 的)))
+	      (NP (NN 联盟))) 
+	  </parse>
+	  <arg n="0">
+	  联合国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

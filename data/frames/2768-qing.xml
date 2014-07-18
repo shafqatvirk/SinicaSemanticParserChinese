@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 轻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (QP-ADV (OD 第五)
+					      (CLP (M 个)))
+				      (VP (VV 出生))))
+			      (DEC 的)))
+		      (NP (NN 男婴)))
+	      (NP-SBJ (NN 体重))
+	      (VP (VP (ADVP (AD 最))
+		      (VP (VA 轻)))
+		  (PU ，)
+		  (VP (ADVP (AD 只))
+		      (VP (VV 有)
+			  (QP-OBJ (CD 四百九十五)
+				  (CLP (M 克))))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  体重 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *OP* *T*-1 第五 个 出生 的 男婴 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity made light of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 改变)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 重)
+					  (NP-OBJ (NN 原料药)
+						  (NN 生产)))
+				      (PU 、)
+				      (VP (VV 轻)
+					  (NP-OBJ (NN 制剂)
+						  (NN 开发)))))
+			      (DEC 的))
+		      (NP (NN 做法)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  制剂 开发 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity waited for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 有些))
+	      (VP (VP (ADVP (AD 还))
+		      (ADVP (AD 只))
+		      (VP (VC 是)
+			  (NP-PRD (ADJP (JJ 暂行))
+				  (NP (NN 规定)))))
+		  (PU ，)
+		  (VP (VV 有待)
+		      (NP-OBJ (-NONE- *pro*))
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (NN 实践))
+					       (LC 中)))
+				  (ADVP (AD 逐步))
+				  (VP (VV 完善))))))) 
+	  </parse>
+	  <arg n="0">
+	  有些 	  
+	  </arg>
+	  <arg n="1">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1" f="PRD">
+	  *PRO* 在 实践 中 逐步 完善 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (PP-TMP (P 在)
+			  (NP (CP (WHPP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 金融)
+						  (NN 资产)
+						  (NN 数量))
+					  (VP (PP-TMP (-NONE- *T*-2))
+					      (ADVP (AD 迅速))
+					      (VP (VV 增长))))
+				      (DEC 的)))
+			      (NP (NN 同时))))
+		  (PU ，)
+		  (NP-SBJ (NN 金融)
+			  (NN 资产)
+			  (NN 质量))
+		  (VP (VV 有待)
+		      (NP-OBJ (ADJP (JJ 进一步))
+			      (NP (NN 提高))))) 
+	  </parse>
+	  <arg n="0">
+	  金融 资产 质量 	  
+	  </arg>
+	  <arg n="1">
+	  进一步 提高 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* 金融 资产 数量 *T*-2 迅速 增长 的 同时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

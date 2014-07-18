@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 协建 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 assists in building"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 协建)
+		(NP-OBJ (NN 总统府)
+			(PU 、)
+			(NN 外交部)
+			(NN 大厦)
+			(ETC 等)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	总统府 、 外交部 大厦 等 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

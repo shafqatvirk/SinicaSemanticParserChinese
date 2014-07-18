@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转趋 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place/state arg0 changes and goes towards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 各)
+			(CLP (M 种)))
+		    (NP (NN 社运)
+			(NN 诉求)))
+	    (VP (ADVP (AD 都))
+		(VP (VV 转趋)
+		    (NP-OBJ (NN 沈寂))))) 
+	</parse>
+	<arg n="0">
+	各 种 社运 诉求 
+	</arg>
+	<arg n="1">
+	沈寂 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

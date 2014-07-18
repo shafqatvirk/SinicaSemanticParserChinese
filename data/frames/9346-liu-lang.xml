@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流浪 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 wanders to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VRD (VV 流浪)
+					   (VV 到))
+				      (NP-PN-OBJ (NR 八里))))
+			      (DEC 的)))
+		      (NP (NN 先民们)))
+	      (VP (VP (VV 淹没)
+		      (PP (P 在)
+			  (LCP (NP (NN 尘土))
+			       (LC 中))))
+		  (PU ，)
+		  (VP (DVP (ADVP (AD 静静))
+			   (DEV 地))
+		      (VP (VV 看护)
+			  (AS 著)
+			  (NP-PN-OBJ (NR 八里坌)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  八里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放眼望去 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity looking ahead"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (NP-PN (NR 美浓)))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 放眼望去)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 一定))
+		(VP (VC 是)
+		    (VP (PP-MNR (P 以)
+				(NP (NN 山)))
+			(VP (VV 为)
+			    (NP-OBJ (NN 终点))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

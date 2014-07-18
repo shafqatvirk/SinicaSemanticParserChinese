@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 估测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 estimates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 其实))
+	      (PP-MNR (P 据)
+		      (IP (NP-SBJ (NN 专家))
+			  (VP (VV 估测))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (PN 那儿))
+			   (DEG 的))
+		      (NP (NN 油藏)))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 能)
+		      (VP (VV 供应)
+			  (NP-OBJ (NP (NP-PN (NR 美国))
+				      (QP (CD 一))
+				      (NP (NN 地)))
+				  (DNP (QP (ADVP (AD 不到))
+					   (QP (CD 两百)
+					       (CLP (M 天))))
+				       (DEG 的))
+				  (NP (NN 用途))))))) 
+	  </parse>
+	  <arg n="0">
+	  专家 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

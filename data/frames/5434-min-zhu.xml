@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 民主 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (ADVP (AD 终於))
+		(ADVP (AD 勇敢))
+		(VP (VV 踏出)
+		    (QP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 真正))
+					    (VP (VA 民主))))
+				    (DEC 的))
+			    (QP (OD 第一)
+				(CLP (M 步))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	真正 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

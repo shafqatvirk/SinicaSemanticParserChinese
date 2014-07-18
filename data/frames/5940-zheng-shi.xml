@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 争食 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 fights for the chance to eat"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (OD 八十七)
+			 (CLP (M 年)))
+		     (LC 初))
+	    (LCP-TMP (IP (NP-SBJ (NN 行动)
+				 (NN 电话))
+			 (VP (ADVP (AD 正式))
+			     (VP (VV 开放)
+				 (NP-OBJ (NN 民营)))))
+		     (LC 之後))
+	    (PU ，)
+	    (NP-SBJ (NN 系统)
+		    (NN 业者)
+		    (CC 与)
+		    (NN 话机)
+		    (NN 厂商))
+	    (VP (ADVP (AD 纷纷))
+		(VP (VP (VV 卯足全劲))
+		    (PU ，)
+		    (VP (VV 争食)
+			(NP-OBJ (NN 市场)
+				(NN 大饼)))))) 
+	</parse>
+	<arg n="0">
+	系统 业者 与 话机 厂商 
+	</arg>
+	<arg n="1">
+	市场 大饼 
+	</arg>
+	<arg n="m" f="adv">
+	纷纷 
+	</arg>
+	<arg n="m" f="tmp">
+	行动 电话 正式 开放 民营 之後 
+	</arg>
+	<arg n="m" f="tmp">
+	八十七 年 初 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

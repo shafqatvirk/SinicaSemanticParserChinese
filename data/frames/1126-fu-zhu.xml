@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 付诸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="predicate of theme"/>
+      <role argnum="2" argrole="agent/cause"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 并))
+		  (ADVP (AD 将))
+		  (PP-TMP (P 于)
+			  (LCP (LCP (NP (NT １９９８年)
+					(LC 底)))
+			       (LC 之前)))
+		  (VP (VV 付诸)
+		      (NP-OBJ (NN 实施))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  实施 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 １９９８年 底 之前 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP-WH (AD 如何))
+		      (VP (VV 督促)
+			  (NP-OBJ (NN 政府))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NP (PN 其))
+						  (NP (NP (NN 理想))
+						      (PU 、)
+						      (NP (DNP (PP (P 对)
+								   (NP (NN 人民)))
+							       (DEG 的))
+							  (NP (NN 承诺)))))
+					  (VP (VV 付诸)
+					      (NP-OBJ (NN 行动))))))))) 
+	  </parse>
+	  <arg n="0">
+	  其 理想 、 对 人民 的 承诺 	  
+	  </arg>
+	  <arg n="1">
+	  行动 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

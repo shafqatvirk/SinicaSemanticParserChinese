@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 换手 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people exchanging positions"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 新党))
+			      (ADJP (JJ 现任))
+			      (NP (NR 党)
+				  (NN 主席)))
+		      (NP-PN (NR 李庆华)))
+	      (VP (PP (P 和)
+		      (NP (PN 他)))
+		  (VP (PU 「)
+		      (VV 换手)
+		      (PU 」))
+		  (PRN (PU ——)
+		       (IP (IP (NP-SBJ (PN 他))
+			       (VP (VV 退出)
+				   (NP-OBJ (NN 总统)
+					   (NN 选举))))
+			   (PU ，)
+			   (IP (NP-SBJ-3 (-NONE- *pro*))
+			       (VP (PP-LGS (P 由)
+					   (NP-PN (NR 李庆华)))
+				   (VP (VV 接手)
+				       (NP-OBJ (-NONE- *-3))))))))) 
+	  </parse>
+	  <arg n="0">
+	  新党 现任 党 主席 李庆华 
+	  </arg>
+	  <arg n="0" f="crd">
+	  和 他 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

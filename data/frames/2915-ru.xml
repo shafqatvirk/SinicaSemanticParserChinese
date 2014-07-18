@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving"/>
+      <role argnum="1" argrole="space entered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NR 新加坡)
+				     (NN 华侨)
+				     (NN 银行))
+			      (PU 、)
+			      (NP-PN (NR 澳大利亚)
+				     (NR 国卫)
+				     (NN 人寿)
+				     (NN 保险)
+				     (NN 公司))
+			      (ETC 等))
+		      (QP (CD 九)
+			  (CLP (M 家)))
+		      (NP (NN 外资)
+			  (NN 金融)
+			  (NN 机构)))
+	      (VP (ADVP (AD 相继))
+		  (VP (VP (VV 入)
+			  (NP-PN-OBJ (NR 川)))
+		      (VP-PRP (VV 落户))))) 
+	  </parse>
+	  <arg n="0">
+	  新加坡 华侨 银行 、 澳大利亚 国卫 人寿 保险 公司 等 九 家 外资 金融 机构 
+	  </arg>
+	  <arg n="1">
+	  川 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相继 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

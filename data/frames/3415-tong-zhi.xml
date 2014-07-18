@@ -1,0 +1,199 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通知 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="notifier"/>
+      <role argnum="2" argrole="party notified"/>
+      <role argnum="1" argrole="message"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (ADJP (JJ 以上))
+				  (NP (NN 信息)))
+			  (VP (VV 通知)
+			      (AS 了)
+			      (NP-OBJ (DP (DT 全体))
+				      (NP (NN 球员))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  以上 信息 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  全体 球员 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VV 开户))))
+		      (NP (NN 单位)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 动用)
+				  (NP-OBJ (ADJP (JJ 大额))
+					  (NP (NN 资金))))
+			      (VP (ADVP (AD 特别是))
+				  (VP (VV 动用)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 存)
+							      (PP (P 在)
+								  (NP (ADJP (JJ 中)
+									    (JJ 小))
+								      (NP (NN 金融)
+									  (NN 机构))))))
+						      (DEC 的)))
+					      (ADJP (JJ 大额))
+					      (NP (NN 资金)))))))
+		  (PU ，)
+		  (VP (VV 应)
+		      (VP (ADVP (AD 提前))
+			  (VP (VV 通知)
+			      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 开户))))
+				      (NP (NN 金融)
+					  (NN 机构)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-2)->(单位) 开户 单位 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  提前 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *OP* (*T*-3)->(金融机构) 开户 金融 机构 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 二))
+	      (PU 、)
+	      (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (NP-PN (NR 中华)
+					      (NN 人民)
+					      (NN 共和国))
+				       (NP (NN 政府)))
+			       (VP (ADVP (AD 另行))
+				   (VP (VV 通知))))
+			   (LC 前)))
+	      (PU ，)
+	      (NP-TTL-SBJ (PU 《)
+			  (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 准予)
+					  (NP-OBJ (NN 就业))))
+			      (ADJP (JJ 最低))
+			      (NP (NN 年龄)))
+			  (NP (NN 公约))
+			  (PU 》))
+	      (VP (ADVP (AD 暂))
+		  (ADVP (AD 不))
+		  (VP (VV 适用于)
+		      (NP-OBJ (NP-PN (NR 中华)
+				     (NN 人民)
+				     (NN 共和国))
+			      (NP-PN (NP-PN (NR 香港))
+				     (ADJP (JJ 特别))
+				     (NP (NN 行政区))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中华 人民 共和国 政府 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  另行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="notifier"/>
+      <role argnum="1" argrole="party notified"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 医院))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 将))
+		  (PP-MNR (P 根据)
+			  (NP (DNP (LCP (NP (NN 急救卡))
+					(LC 上))
+				   (DEG 的))
+			      (ADJP (JJ 有关))
+			      (NP (NN 内容))))
+		  (ADVP (AD 及时))
+		  (VP (VV 通知)
+		      (NP-OBJ (NP (NN 当地))
+			      (NP (NN 区)
+				  (NN 县))
+			      (NP (NN 保险)
+				  (NN 公司)))
+		      (IP (NP (-NONE- *PRO*))
+			  (VP (VP (VV 前往)
+				  (NP-OBJ (NN 急救)
+					  (NN 医院)))
+			      (VP (VV 提供)
+				  (NP-OBJ (NN 保险)
+					  (NN 服务)))))))) 
+	  </parse>
+	  <arg n="0">
+	  医院 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <arg n="M" f="MNR">
+	  根据 急救卡 上 的 有关 内容 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  及时 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  当地 区 县 保险 公司 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 前往 急救 医院 提供 保险 服务 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

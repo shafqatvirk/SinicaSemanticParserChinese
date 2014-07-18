@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承前启后 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VP (ADVP (AD 将))
+		      (VP (VC 是)
+			  (QP-PRD (NP (NP-PN (NR 中国))
+				      (NP (NN 改革)
+					  (NN 开放)
+					  (CC 和)
+					  (NN 社会主义)
+					  (NN 现代化)
+					  (NN 建设)))
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (VV 承前启后))))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 重要)))
+					  (DEC 的)))
+				  (QP (CD 一)
+				      (CLP (M 年)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

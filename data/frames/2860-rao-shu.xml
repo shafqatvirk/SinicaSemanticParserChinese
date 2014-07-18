@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 饶恕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity forgiven"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VE 没)
+		      (IP (NP-SBJ (NN 人))
+			  (VP (VV 认为)
+			      (IP-OBJ (NP-SBJ (DP (DT 这)
+						  (CLP (M 起)))
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (PU “)
+						      (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VP (VA 凶恶))
+							      (CC 和)
+							      (VP (ADVP (AD 不))
+								  (VP (VV 可)
+								      (VP (VV 饶恕))))))
+						      (DEC 的)
+						      (PU ”)))
+					      (NP (NN 轰炸)))
+				      (VP (VC 是)
+					  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (VA 正义)))
+							  (DEC 的)))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

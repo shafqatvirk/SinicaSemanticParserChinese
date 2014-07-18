@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 苦於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 suffers from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (ADVP (AD 有时))
+		(NP-SBJ (NN 同学们))
+		(VP (VP (VV 想)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 看)
+				(NP-OBJ (CLP (M 个))
+					(NP (NN 戏))))))
+		    (PU ，)
+		    (VP (ADVP (AD 却))
+			(VP (VV 苦於)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VE 无)
+					(IP-OBJ (NP-SBJ (NN 戏))
+						(VP (VV 可)
+						    (VP (VV 看)))))))))) 
+	</parse>
+	<arg n="0">
+	同学们 
+	</arg>
+	<arg n="1">
+	*PRO* 无 戏 可 看 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="adv">
+	有时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

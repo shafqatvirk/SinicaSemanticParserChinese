@@ -1,0 +1,218 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 存 </id>
+    <frameset id="f1" edef="deposit">
+      <role argnum="0" argrole="depositer"/>
+      <role argnum="1" argrole="thing deposited"/>
+      <role argnum="2" argrole="financial institution"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (LCP-TMP (QP (CD 二十)
+			   (CLP (M 年)))
+		       (LC 前))
+	      (NP-SBJ (DP (DT 每))
+		      (NP (NN 人)))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 平均))
+		  (ADVP (AD 才))
+		  (VP (VV 存)
+		      (NP-OBJ (QP (CD 二十)
+				  (CLP (M 元)))
+			      (NP (NN 钱)))))) 
+	  </parse>
+	  <arg n="0">
+	  每 人 	  
+	  </arg>
+	  <arg n="1">
+	  二十 元 钱 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十 年 前 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  平均 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 存)
+				  (PP (P 在)
+				      (NP (ADJP (JJ 中)
+						(JJ 小))
+					  (NP (NN 金融)
+					      (NN 机构))))))
+			  (DEC 的)))
+		  (ADJP (JJ 大额))
+		  (NP (NN 资金))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="2">
+	  在 中 小 金融 机构 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="exist">
+      <role argnum="0" argrole="location"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 现))
+	      (NP-SBJ (NN 全球))
+	      (VP (ADVP (AD 仅))
+		  (VP (VV 存)
+		      (QP-OBJ (CD 一千多)
+			      (CLP (M 只)))))) 
+	  </parse>
+	  <arg n="0">
+	  全球 	  
+	  </arg>
+	  <arg n="1">
+	  一千多 只 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DNP (NP (NP (ADJP (JJ 大))
+			       (NP (NN 熊猫)))
+			   (ADJP (JJ 野生))
+			   (NP (NN 种群)))
+		       (DEG 的))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (ADVP (AD 现))
+			      (VP (VV 存)))))
+		  (NP (NN 数量))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  现 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing kept"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					       (VP (VP (ADVP (AD 相互))
+						       (VP (VV 尊重)))
+						   (PU 、)
+						   (VP (ADVP (AD 平等))
+						       (ADVP (AD 相))
+						       (VP (VV 待)))
+						   (PU 、)
+						   (VP (VP (VV 求)
+							   (NP-OBJ (NN 同)))
+						       (VP (VV 存)
+							   (NP-OBJ (NN 异))))))
+					   (DEC 的))
+				   (NP (NN 基础)))
+			       (LC 上)))
+		  (PU ，)
+		  (PP-MNR (P 通过)
+			  (NP (NN 对话)
+			      (CC 而不是)
+			      (NN 对抗)))
+		  (VP (VV 解决)
+		      (NP-OBJ (NN 分歧)))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  异 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 方志))
+	      (VP (VV 具有)
+		  (NP-OBJ (CP-APP (IP (PU “)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 存)
+					      (NP-OBJ (NN 史))))
+				      (PU 、)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 资)
+					      (NP-OBJ (NN 治))))
+				      (PU 、)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 教化)))
+				      (PU ”))
+				  (DEC 的))
+			  (NP (NN 功能)))))
+	  </parse>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  史 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

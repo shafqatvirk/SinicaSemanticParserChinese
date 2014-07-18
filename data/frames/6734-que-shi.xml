@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 确实 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 它))
+	    (VP (VV 代表)
+		(AS 了)
+		(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (QP (ADJP (JJ 新))
+						(QP (CD 一)
+						    (CLP (M 代))))
+					    (NP (NN 公司)))
+				    (VP (MSP 所)
+					(VP (VV 强调)
+					    (NP-OBJ (-NONE- *T*-2)))))
+				(DEC 的)))
+			(NP (NP (NN 弹性))
+			    (PU 、)
+			    (NP (NN 效率))
+			    (CC 与)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 确实)))
+					(DEC 的)))
+				(NP (NN 实践))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 包括)
+		(IP-OBJ (IP (NP-SBJ (NN 建厂)
+				    (NN 执照) )
+			    (VP (ADVP (AD 不当))
+				(VP (VV 发放))))
+			(PU ，)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP-FOC (VV 纠正)
+					(NP-OBJ (NN 环评) ))
+				(VP (ADVP (AD 不))
+				    (VP (VA 确实)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="prd">
+	纠正 环评 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

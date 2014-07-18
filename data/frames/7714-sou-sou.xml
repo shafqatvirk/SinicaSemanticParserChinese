@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搜搜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (ADVP (AD 即使))
+		    (PP (P 在)
+			(NP (ADJP (JJ 平常))
+			    (NP (NN 日子)))))
+	    (PU ，)
+	    (NP-SBJ (DP (DT 有些))
+		    (NP (NN 父母)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 会)
+		    (VP (VP (VV 搜搜)
+			    (NP-OBJ (NN 小孩)
+				    (NN 书包)))
+			(PU ，)
+			(VP (VV 看看)
+			    (IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+				      (VP (VNV-WH (VC 是)
+						  (AD 不)
+						  (VC 是))
+					  (VP (VV 藏)
+					      (AS 了)
+					      (NP-OBJ (DP-WH (DT 什麽))
+						      (CP (WHNP-24 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-24))
+								  (VP (ADVP (AD 不))
+								      (VP (VV 该)
+									  (VP (VE 有)))))
+							      (DEC 的)))
+						      (NP (NN 东西))))))))))) 
+	</parse>
+	<arg n="0">
+	有些 父母 
+	</arg>
+	<arg n="1">
+	小孩 书包 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	即使 在 平常 日子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

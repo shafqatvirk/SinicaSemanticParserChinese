@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-APP (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 剥)
+		    (NP-OBJ (NN 皮)))
+		(VP (VV 取)
+		    (NP-OBJ (NN 丝)))
+		(PU 、)
+		(VP (VP (VV 捻)
+			(NP-OBJ (NN 丝)))
+		    (VP (VV 成)
+			(NP-OBJ (NN 线))))
+		(PU 、)
+		(VP (VV 框)
+		    (NP-OBJ (NN 线)))
+		(PU 、)
+		(VP (VV 揉)
+		    (NP-OBJ (NN 线)))
+		(PU 、)
+		(VP (VV 漂白))
+		(PU 、)
+		(VP (VV 染色))
+		(ETC 等)) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	丝 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 比如))
+	    (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 看到)
+			(NP-OBJ (NN 女性)
+				(NN 朋友))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VE 有)
+				(IP-OBJ (NP-SBJ (NN 头发))
+					(VP (VV 掉到)
+					    (LCP-OBJ (NP (NN 肩膀))
+						     (LC 上))))))))
+	    (PU ，)
+	    (NP-SBJ (PN 你))
+	    (VP (ADVP (AD 就))
+		(VP (VV 应该)
+		    (VP (DVP (VP (VA 轻轻))
+			     (DEV 地))
+			(VP (VV 帮)
+			    (NP-OBJ (PN 她))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VRD (VV 捻)
+					     (VV 起来)))
+				    (PU ，)
+				    (VP (VV 丢掉))
+				    (PU 、)
+				    (CC 或)
+				    (VP (VV 放到)
+					(LCP-OBJ (NP (DNP (NP (PN 自己))
+							  (DEG 的))
+						     (NP (NN 口袋)))
+						 (LC 里)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

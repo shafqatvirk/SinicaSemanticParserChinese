@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 枯燥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可惜))
+	    (NP-SBJ (NN 内容))
+	    (VP (VP (ADVP (AD 多))
+		    (VP (VV 著重)
+			(PP-LOC (P 在)
+				(LCP (NP (DNP (NP (ADJP (JJ 纯))
+						  (NP (NN 技术性)))
+					      (DEG 的))
+					 (NP (NN 介绍)))
+				     (LC 上)))))
+		(PU ，)
+		(VP (VV 缺少)
+		    (NP-OBJ (NN 故事性)))
+		(PU ，)
+		(VP (ADVP (AD 较为))
+		    (VP (VA 枯燥))))) 
+	</parse>
+	<arg n="0">
+	内容 
+	</arg>
+	<arg n="m" f="adv">
+	较为 
+	</arg>
+	<arg n="m" f="adv">
+	可惜 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

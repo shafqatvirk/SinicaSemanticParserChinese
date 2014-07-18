@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 租用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="renter"/>
+      <role argnum="1" argrole="thing rented"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一百一十六)
+			  (CLP (M 个)))
+		      (NP (NN 传媒)
+			  (NN 机构))
+		      (PRN (PU （)
+			   (VP (VV 包括)
+			       (NP-OBJ (NP (QP (CD 六十二)
+					       (CLP (M 间)))
+					   (NP (NN 电视)
+					       (CC 及)
+					       (NN 电台))
+					   (NP (NN 机构)))
+				       (CC 和)
+				       (NP (QP (CD 五十四)
+					       (CLP (M 间)))
+					   (NP (NN 文字)
+					       (NN 传媒)
+					       (NN 机构)))))
+			   (PU ）)))
+	      (VP (PP-LOC (P 在)
+			  (NP-PN (NP (NN 新闻)
+				     (CC 及)
+				     (NN 广播))
+				 (NP (NN 中心))))
+		  (VP (VV 租用)
+		      (NP-OBJ (QP (ADVP (AD 共))
+				  (QP (CD 二百二十五)
+				      (CLP (M 个))))
+			      (ADJP (JJ 专用))
+			      (NP (NN 工作间)))))) 
+	  </parse>
+	  <arg n="0">
+	  一百一十六 个 传媒 机构 （ 包括 六十二 间 电视 及 电台 机构 和 五十四 间 文字 传媒 机构 ） 
+	  </arg>
+	  <arg n="1">
+	  共 二百二十五 个 专用 工作间 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 新闻 及 广播 中心 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

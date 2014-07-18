@@ -1,0 +1,144 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 敲上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing struck onto something"/>
+      <role argnum="2" argrole="entity arg1 is struck onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 昨天))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 三)
+			  (CLP (M 位)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 代表)
+				      (AS 着)
+				      (NP-OBJ (QP (CD ３３)
+						  (CLP (M 名)))
+					      (NP (NN 球员)))))
+			      (DEC 的)))
+		      (NP (NN 经纪人)))
+	      (PU ，)
+	      (VP (PP-DIR (P 朝)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 已经))
+					      (VP (VV 躺进)
+						  (NP-OBJ (NN 棺材)))))
+				      (DEC 的)))
+			      (NP (NN 赛季))))
+		  (ADVP (AD 又))
+		  (VP (VV 敲上)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 颗)))
+			      (NP (NN 钉子)))))) 
+	  </parse>
+	  <arg n="0">
+	  三 位 *OP* *T*-1 代表 着 ３３ 名 球员 的 经纪人 	  
+	  </arg>
+	  <arg n="1">
+	  一 颗 钉子 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  朝 *OP* *T*-2 已经 躺进 棺材 的 赛季 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  昨天 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 十三日))
+	      (NP-TPC (DNP (NP (QP (OD 第三))
+			       (NP (NN 回合)))
+			   (DEG 的))
+		      (QP (OD 第十六))
+		      (NP (NN 洞)))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (NN 球))
+		      (VP (ADVP (CS 虽))
+			  (VP (VV 滚到)
+			      (NP-OBJ (NN 树区)
+				      (NN 长草堆)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 伍兹))
+	      (VP (VP (ADVP (AD 并))
+		      (ADVP (AD 不))
+		      (VP (VV 采用)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (BA 将)
+						      (IP-OBJ (NP-SBJ (NN 球))
+							      (VP (VV 拨回)
+								  (NP-OBJ (NN 球道)))))
+						  (VP (MSP 以)
+						      (VP (VV 损失)
+							  (QP-OBJ (CD 一)
+								  (CLP (M 杆)))))))
+					  (DEC 的))
+				  (NP (NN 作法)))))
+		  (PU ，)
+		  (VP (ADVP (AD 却))
+		      (ADVP (AD 奋力))
+		      (PP-DIR (P 从)
+			      (NP (NN 树区)))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 球))
+				  (VP (ADVP (AD 硬))
+				      (VP (VV 敲上)
+					  (NP-OBJ (NN 果岭))))))))) 
+	  </parse>
+	  <arg n="0">
+	  伍兹 
+	  </arg>
+	  <arg n="1">
+	  球 
+	  </arg>
+	  <arg n="2">
+	  果岭 
+	  </arg>
+	  <arg n="m" f="adv">
+	  硬 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 树区 
+	  </arg>
+	  <arg n="m" f="adv">
+	  奋力 
+	  </arg>
+	  <arg n="m" f="dis">
+	  却 
+	  </arg>
+	  <arg n="m" f="adv">
+	  球 虽 滚到 树区 长草堆 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  第三 回合 的 第十六 洞 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  十三日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

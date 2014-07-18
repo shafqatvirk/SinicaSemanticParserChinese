@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 踏入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location stepped into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 踏入)
+			  (NP-OBJ (NT 星期二)
+				  (NT 零时))))
+	      (PU ，)
+	      (IP (IP (LCP-LOC (NP (NN 会场))
+			       (LC 内))
+		      (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 便))
+			  (VP (VV 奏起)
+			      (NP-OBJ (NP-PN (NR 中国))
+				      (NP (NN 国歌))))))
+		  (PU ，)
+		  (IP (NP-SBJ (NP (NP-PN (NR 中国))
+				  (NP (NN 国旗)))
+			      (CC 及)
+			      (NP (NP-PN (NP-PN (NR 香港))
+					 (ADJP (JJ 特别))
+					 (NP (NN 行政区)))
+				  (NP (NN 区旗))))
+		      (VP (ADVP (AD 亦))
+			  (ADVP (AD 冉冉))
+			  (VP (VV 升起)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  星期二 零时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

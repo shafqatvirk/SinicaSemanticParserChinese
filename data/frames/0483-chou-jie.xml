@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹借 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="borrower"/>
+      <role argnum="1" argrole="fund"/>
+      <role argnum="2" argrole="borrowing from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NN 境内)
+				      (NN 机构))
+			      (VP (PP-DIR (P 向)
+					  (NP (NP (DNP (NP (NP-PN (NR 中国))
+							   (NP (NN 境外)))
+						       (DEG 的))
+						  (NP (NP (NN 金融)
+							  (NN 机构))
+						      (PU 、)
+						      (NP (NN 企业))
+						      (PU 、)
+						      (NP (NN 个人))
+						      (CC 或)
+						      (NP (DP (DT 其他))
+							  (NP (NN 经济)
+							      (NN 组织)))))
+					      (CC 以及)
+					      (NP (DNP (PP (P 在)
+							   (NP (NP-PN (NR 中国))
+							       (NP (NN 境内))))
+						       (DEG 的))
+						  (NP (NN 外资)
+						      (NN 金融)
+						      (NN 机构)))))
+				  (VP (VV 筹借)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (PU ，)
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (PP-MNR (P 以)
+					  (NP (NN 外国)
+					      (NN 货币)))
+				  (VP (VV 承担)
+				      (NP-OBJ (NN 契约性)
+					      (NN 偿还)
+					      (NN 义务)))))
+			  (DEC 的)))
+		  (NP (NN 款项))) 
+	  </parse>
+	  <arg n="0">
+	  境内 机构 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  向 中国 境外 的 金融 机构 、 企业 、 个人 或 其他 经济 组织 以及 在 中国 境内 的 外资 金融 机构 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

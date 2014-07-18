@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 游行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (NP (NP (NP-PN (NR 约旦))
+			      (NP (NN 首都)))
+			  (NP-PN (NR 安曼))))
+	      (PU ，)
+	      (NP-SBJ (QP (ADVP (AD 上))
+			  (QP (CD 千)
+			      (CLP (M 名))))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 愤怒)))
+			      (DEC 的)))
+		      (NP (NN 群众)))
+	      (VP (PP-LOC (P 在)
+			  (NP (NP (NP-PN (NR 美国))
+				  (NP (NN 使馆)))
+			      (NP (NN 门前))))
+		  (VP (VP (VCD (VV 游行)
+			       (VV 示威)))
+		      (PU ，)
+		      (VP (VV 抗议)
+			  (IP (NP-SBJ (DNP (NP (ADJP (JJ 多国))
+					       (NP (NN 部队)))
+					   (DEG 的))
+				      (NP (NN 轰炸)))
+			      (VP (VV 杀害)
+				  (NP-OBJ (NP-PN (NR 巴格达))
+					  (ADJP (JJ 无辜))
+					  (NP (NN 平民))))))))) 
+	  </parse>
+	  <arg n="0">
+	  上 千 名 *OP* *T*-1 愤怒 的 群众 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 美国 使馆 门前 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 约旦 首都 安曼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

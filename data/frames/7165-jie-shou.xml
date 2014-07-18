@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撷收 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 harvests/collects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (PP-TMP (ADVP (AD 早))
+						(PP (P 在)
+						    (LCP (QP (NP-PN (NR 民国))
+							     (QP (OD 七十)
+								 (CLP (M 年))))
+							 (LC 初))))
+					(VP (VV 开始)
+					    (VP (VV 扎根)))))
+				(DEC 的)))
+			(NP-APP (NN 电脑)
+				(PU 、)
+				(NN 资讯)
+				(ETC 等))
+			(NP (ADJP (JJ 高))
+			    (NP (NN 科技)))
+			(ADJP (JJ 新兴))
+			(NP (NN 产业)))
+		(PU ，)
+		(VP (VP (NP-TMP (NT 此时))
+			(VP (VV 开始)
+			    (VP (VV 撷收)
+				(NP-OBJ (NN 成果)))))
+		    (PU ，)
+		    (VP (VV 填补)
+			(AS 了)
+			(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				    (CP (IP (IP-SBJ (NP-SBJ (ADJP (JJ 传统))
+							    (NP (NN 产业)))
+						    (VP (VV 出走)))
+					    (VP (VV 留下)
+						(NP-OBJ (-NONE- *T*-3))))
+					(DEC 的)))
+				(NP (NN 空白))))
+		    (PU ，)
+		    (CC 并)
+		    (VP (PP-BNF (P 为)
+				(NP (NP-PN (NR 台湾))
+				    (NP (NN 经济))))
+			(VP (VV 开创)
+			    (AS 了)
+			    (NP-OBJ (QP (OD 第二))
+				    (NP (NN 春))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 早 在 民国 七十 年 初 开始 扎根 的 电脑 、 资讯 等 高 科技 新兴 产业 
+	</arg>
+	<arg n="1">
+	成果 
+	</arg>
+	<arg n="m" f="tmp">
+	此时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

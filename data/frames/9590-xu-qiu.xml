@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 需求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 needs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (LCP-LOC (NP (CP-APP (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+						   (IP (NP-SBJ (-NONE- *PRO*))
+						       (VP (VV 需求)
+							   (NP-OBJ (-NONE- *T*-3)))))
+					       (NP (NN 人力)))
+				       (VP (VA 高)))
+				   (DEC 的))
+			   (NP (NN 情况)))
+		       (LC 下))
+	      (PU ，)
+	      (NP-SBJ (NP (ADJP (JJ 平面))
+			  (NP (NN 媒体)))
+		      (NP (NN 记者)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (ADJP (JJ 新))
+						  (NP (NN 电视台)))
+					  (VP (VV 延揽)
+					      (NP-OBJ (-NONE- *T*-4))))
+				      (DEC 的)))
+			      (NP (NN 对象)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 租住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="housing arg0 rents to live in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 平均))
+			  (VP (MSP 来)
+			      (VP (VV 说)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 约))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 一万四千)
+					  (CLP (M 个)))
+				      (DNP (PP (P 在)
+					       (LCP (NP (NN 轮候册))
+						    (LC 上)))
+					   (DEG 的))
+				      (NP (NN 家庭)))
+			      (VP (VRD (VV 获)
+				       (VRD (VV 编配)
+					    (VV 到)))
+				  (NP-OBJ (NN 租住)
+					  (NN 单位))))))) 
+	  </parse>
+	  <arg n="1">
+	  单位 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

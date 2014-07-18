@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 噙 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 holds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 黄春明))
+			 (DEG 的))
+		    (NP (NN 小说)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 写到)
+			    (NP-OBJ (NN 辛酸)
+				    (NN 处))))
+		(PU ，)
+		(ADVP (AD 真的))
+		(VP (VV 可以)
+		    (VP (VV 教)
+			(NP-OBJ (NN 人))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (ADVP (AD 边))
+				    (VP (VV 读)))
+				(VP (ADVP (AD 边))
+				    (VP (VV 噙)
+					(AS 著)
+					(NP-OBJ (NN 泪水)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	泪水 
+	</arg>
+	<arg n="m" f="adv">
+	边 
+	</arg>
+	<V/> 
+      </example>
+    </frame>
+  </frameset>
+</verb>

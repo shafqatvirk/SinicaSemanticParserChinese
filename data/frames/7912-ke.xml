@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 咳 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person coughing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (ADVP (AD 大))
+		    (VP (VV 咳)
+			(QP-OBJ (CD 一)
+				(CLP (M 声)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	一 声 
+	</arg>
+	<arg n="m" f="adv">
+	大 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

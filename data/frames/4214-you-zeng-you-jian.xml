@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有增有减 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (NN 国际)
+			       (NN 贸易))
+			   (LC 中)))
+	      (PU ，)
+	      (IP-SBJ (NP-SBJ (NN 贸易额))
+		      (VP (VV 有增有减)))
+	      (VP (VC 是)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 经常))
+					  (VP (VV 出现))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  贸易额 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

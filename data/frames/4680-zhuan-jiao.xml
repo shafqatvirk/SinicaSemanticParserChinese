@@ -1,0 +1,291 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转交 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="recipient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (NN 会见))
+		       (LC 中))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 武韬))
+	      (VP (VV 转交)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 朱（容加金旁）基)
+						 (NN 总理))
+				      (VP (VV 致)
+					  (NP-PN-IO (NR 普里马科夫)
+						    (NN 总理))
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP (NN 信))))) 
+	  </parse>
+	  <arg n="0">
+	  武韬 
+	  </arg>
+	  <arg n="1">
+	  *OP* 朱（容加金旁）基 总理 致 普里马科夫 总理 *T*-1 的 信 
+	  </arg>
+	  <arg n="m" f="loc">
+	  会见 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-LOC (P 在)
+			  (LCP (IP (NP-SBJ (NP (NN 中央)
+					       (NN 人民)
+					       (NN 政府))
+					   (CC 和)
+					   (NP-PN (NN 外交部)))
+				   (VP (VV 领导)))
+			       (LC 下)))
+		  (PU ，)
+		  (LCP-TMP (QP (CD 半)
+			       (CLP (M 年)))
+			   (LC 来))
+		  (PU ，)
+		  (NP-PN-SBJ (NN 公署))
+		  (VP (VP (VV 协助)
+			  (NP-OBJ (DNP (NP (NN 特区)
+					   (NN 政府))
+				       (DEG 的))
+				  (NP (NN 代表)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-MNR (P 作为)
+					  (NP (DNP (NP (NP (NP-PN (NR 中国))
+							   (NP (NN 政府)))
+						       (NP (NN 代表团)))
+						   (DEG 的))
+					      (NP (NN 成员))))
+				  (VP (VV 参加)
+				      (AS 了)
+				      (NP-OBJ (QP (ADVP (AD 近))
+						  (QP (CD 三十)
+						      (CLP (M 个))))
+					      (NP (NN 国际)
+						  (NN 会议)))))))
+		      (PU ；)
+		      (VP (PP-DIR (P 向)
+				  (NP (NN 特区)
+				      (NN 政府)))
+			  (VP (VV 转交)
+			      (AS 了)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (NN 中央))
+						  (VP (VV 给)
+						      (NP-IO (NN 特区)
+							     (NN 政府))
+						      (NP-OBJ (-NONE- *T*-1))))
+					      (DEC 的)))
+				      (QP (CD 多)
+					  (CLP (M 项)))
+				      (NP (NN 授权书)))))
+		      (PU ；)
+		      (VP (VV 同意)
+			  (NP-OBJ (DNP (NP (CP (WHNP-4 (-NONE- *OP*))
+					       (IP (NP-SBJ (NN 特区)
+							   (NN 政府))
+						   (VP (PP-LOC (P 在)
+							       (LCP (NP (QP (CD 六)
+									    (CLP (M 个)))
+									(NP (NN 领域)))
+								    (LC 中)))
+						       (PP (P 与)
+							   (NP (QP (CD 三十多)
+								   (CLP (M 个)))
+							       (NP (NN 国家))))
+						       (VP (VV 谈判)
+							   (NP-OBJ (-NONE- *T*-4))))))
+					   (QP (CD 四十多)
+					       (CLP (M 个)))
+					   (ADJP (JJ 双边))
+					   (NP (NN 协定)))
+				       (DEG 的))
+				  (NP (NN 文本))))
+		      (PU ；)
+		      (VP (VP (PP-DIR (P 向)
+				      (NP (NN 特区)
+					  (NN 政府)))
+			      (VP (VV 提供)
+				  (NP-OBJ (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+						       (CP (IP (NP-SBJ (-NONE- *T*-2))
+							       (VP (VV 适用于)
+								   (NP-PN-OBJ (NR 香港))))
+							   (DEC 的)))
+						   (QP (CD 二百多)
+						       (CLP (M 个)))
+						   (NP (NN 国际)
+						       (NN 条约)))
+					       (DEG 的))
+					  (NP (NN 清单)))))
+			  (PU ，)
+			  (CC 并)
+			  (VP (VV 帮助)
+			      (NP-OBJ (NN 特区)
+				      (NN 政府))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 解决)
+				      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-3))
+							  (VP (VV 涉及)
+							      (NP-OBJ (NP (NN 国际))
+								      (NP (NN 权利)
+									  (CC 和)
+									  (NN 义务))
+								      (NP (NN 方面)))))
+						      (DEC 的)))
+					      (NP (NN 法律)
+						  (NN 问题)))))))
+		      (PU ；)
+		      (VP (VV 协助)
+			  (NP-OBJ (NN 特区)
+				  (NN 政府))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 实施)
+				  (NP-OBJ (DNP (NP-PN (NR 联合国)
+						      (NN 安理会))
+					       (DEG 的))
+					  (QP (CD 十一)
+					      (CLP (M 项)))
+					  (NP (NN 制裁)
+					      (NN 决议))))))
+		      (PU ；)
+		      (VP (VV 协助)
+			  (NP-OBJ (NN 特区)
+				  (NN 政府))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 组织)
+				  (NP-OBJ (DNP (NP (NP-PN (NN 世界)
+							  (NN 银行)
+							  (NN 年会))
+						   (CC 和)
+						   (NP-PN (NN 国际)
+							  (NN 货币)
+							  (NN 基金)
+							  (NN 组织)
+							  (NN 年会)))
+					       (DEG 的))
+					  (NP (NN 筹备)
+					      (NN 工作))))))
+		      (PU ；)
+		      (VP (PP-LOC (P 在)
+				  (NP (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 接待)
+						      (NP-OBJ (NN 外国)
+							      (NN 元首))
+						      (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 访)
+							      (NP-PN-OBJ (NR 港))))))
+					      (CC 和)
+					      (IP (NP-SBJ (NN 特区)
+							  (NN 政府)
+							  (NN 领导人))
+						  (VP (VV 出访))))
+				      (NP (NN 方面))))
+			  (VP (VV 给予)
+			      (NP-OBJ (NN 配合)
+				      (CC 和)
+				      (NN 支持)))))) 
+	  </parse>
+	  <arg n="0">
+	  公署 
+	  </arg>
+	  <arg n="1">
+	  *OP* 中央 给 特区 政府 *T*-1 的 多 项 授权书 
+	  </arg>
+	  <arg n="2">
+	  向 特区 政府 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 中央 人民 政府 和 外交部 领导 下 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  半 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="recipient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 按照)
+		      (NP (CP-APP (IP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 转变)
+					      (NP-OBJ (NN 职能))))
+				      (PU 、)
+				      (IP (NP-SBJ (NN 政)
+						  (NN 企))
+					  (VP (VV 分开))))
+				  (DEC 的))
+			  (NP (NN 要求))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (PP-MNR (P 通过)
+					  (NP (NN 改革)))
+				  (PU ，)
+				  (NP-SBJ (DP (DT 各))
+					  (NP (NN 部门)))
+				  (VP (VRD (VV 转交)
+					   (VV 给))
+				      (NP-IO (NN 企业)
+					     (PU 、)
+					     (NN 社会)
+					     (NN 中介)
+					     (NN 组织)
+					     (CC 和)
+					     (NN 地方))
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 职能)))
+	      (VP (ADVP (AD 共))
+		  (VP (VE 有)
+		      (QP-OBJ (CD 二百多)
+			      (CLP (M 项)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  企业 、 社会 中介 组织 和 地方 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 改革 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

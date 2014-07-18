@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 找遍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities arg0 contacts all of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP (NN 拜年)
+			  (PU 、))
+		      (NP (NN 聊天))
+		      (PU 、)
+		      (NP (NN 查勤))
+		      (PU ，)
+		      (CC 到)
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VA 无聊)))
+				  (DEC 的)))
+			  (ADJP (JJ 定点))
+			  (NP (NN 报时)))
+		      (PU …)
+		      (PU …))
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 家)))
+		      (NP (NN 人)))
+	      (VP (VP (ADVP (AD 各))
+		      (VP (VV 讲)
+			  (NP-OBJ (DP (DT 各))
+				  (NP (NN 话)))))
+		  (PU ，)
+		  (VP (VV 找遍)
+		      (AS 了)
+		      (NP-OBJ (NN 亲戚)
+			      (NN 朋友))))) 
+	  </parse>
+	  <arg n="0">
+	  一 家 人 
+	  </arg>
+	  <arg n="1">
+	  亲戚 朋友 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  拜年 、 聊天 、 查勤 ， 到 *OP* *T*-2 无聊 的 定点 报时 … … 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

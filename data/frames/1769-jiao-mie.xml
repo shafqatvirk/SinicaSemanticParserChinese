@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 浇灭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="fire, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 救援)
+		      (NN 人员))
+	      (VP (VP (PP-MNR (P 用)
+			      (NP (NN 水)))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (ADVP (AD 已))
+							      (VP (VV 变形))))
+						      (DEC 的)))
+					      (NP (NN 客车)))
+					  (NP (NN 火)))
+				  (VP (VV 浇灭)))))
+		  (PU ，)
+		  (VP (VV 集中)
+		      (NP-OBJ (NN 力量)))
+		  (VP (VV 抢救)
+		      (NP-OBJ (NN 伤员))))) 
+	  </parse>
+	  <arg n="0">
+	  救援 人员 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 已 变形 的 客车 火 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 水 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

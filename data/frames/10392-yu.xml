@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NP-PN (NR 澳门))
+				 (NP (NN 治权)))
+			 (VP (VV 移交)))
+		     (LC 之後))
+	    (PU ，)
+	    (PP-MNR (P 随著)
+		    (NP (DNP (NP (NN 时空)
+				 (NN 气氛))
+			     (DEG 的))
+			(NP (NN 转移))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NP-PN (NR 台)
+				    (NR 澳))
+			     (NP (NN 关系)))
+			 (DEG 的))
+		    (NP (NN 发展)))
+	    (VP (VV 当)
+		(VP (ADVP (AD 不))
+		    (ADVP (AD 仅))
+		    (VP (VV 於)
+			(NP-OBJ (PN 此)))))) 
+	</parse>
+	<arg n="0">
+	台 澳 关系 的 发展 
+	</arg>
+	<arg n="1">
+	此 
+	</arg>
+	<arg n="m" f="adv">
+	仅 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="mnr">
+	随著 时空 气氛 的 转移 
+	</arg>
+	<arg n="m" f="tmp">
+	澳门 治权 移交 之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

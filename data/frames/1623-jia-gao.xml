@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加高 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-PN-SBJ (NR 湖南省))
+				  (VP (NP-TMP (NT 今年))
+				      (VP (VV 兴修)
+					  (NP-OBJ (NN 水利)))))
+			      (DEC 的))
+		      (NP (NN 重点)))
+	      (VP (VC 是)
+		  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (PP-MNR (P 根据)
+					  (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (NP-TMP (NP (NT 今年))
+									  (NP (NN 洪灾)
+									      (NN 期间)))
+								  (VP (VV 出现))))
+							  (DEC 的)))
+						  (CP (WHNP-2 (-NONE- *OP*))
+						      (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (NP-LOC (NN 历史))
+							      (ADVP (AD 最))
+							      (VP (VA 高)))))
+						  (NP (NN 水位)))
+					      (NP (NN 情况))))
+				  (PU ，)
+				  (VP (VV 提高)
+				      (NP-OBJ (DNP (NP (NN 境内)
+						       (NN 水利)
+						       (NN 工程))
+						   (DEG 的))
+					      (NP (NN 防洪)
+						  (NN 标准)))))
+			      (PU ，)
+			      (VP (VCD (VV 加固)
+				       (VV 加高))
+				  (NP-OBJ (NP-PN (NR 长江))
+					  (ADJP (JJ 大))
+					  (NP (NN 提)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  长江 大 提 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 混淆 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is confused about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *pro*))
+	      (VP (VNV-WH (VC 是)
+			  (AD 不)
+			  (VC 是))
+		  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (ADVP (AD 容易))
+					  (PP (P 与)
+					      (QP (NP (NN 肠)
+						      (NN 病毒))
+						  (QP (OD 七十一)
+						      (CLP (M 型)))))
+					  (VP (VV 混淆))))
+				  (DEC 的)))
+			  (NP-PN (NR 沙克奇))
+			  (ADJP (JJ A16))
+			  (NP (NN 病毒))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="1" f="crd">
+	与 肠 病毒 七十一 型 
+	</arg>
+	<arg n="m" f="adv">
+	容易 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 令)
+		    (NP-OBJ (NN 人))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 混淆))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

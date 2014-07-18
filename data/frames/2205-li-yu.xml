@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 利于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity benefited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 例如))
+	      (IP (NP-PN-SBJ (NR 中国))
+		  (VP (VP (VP (VV 降低)
+			      (NP-OBJ (NN 关税)))
+			  (VP (MSP 以)
+			      (VP (VV 利于)
+				  (NP-OBJ (NN 进口)))))
+		      (PU ，)
+		      (VP (VP (VV 采取)
+			      (NP-OBJ (NN 优惠)
+				      (NN 政策)))
+			  (VP (VV 鼓励)
+			      (NP-OBJ (NN 外商)
+				      (NN 投资))))
+		      (PU ，)
+		      (VP (VP (VV 采取)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VV 鼓励)
+						      (NP-OBJ (NN 出口))))
+					      (DEC 的)))
+				      (QP (CD 一些))
+				      (NP (NN 措施))))
+			  (PU ，)
+			  (VP (VV 优化)
+			      (NP-OBJ (NN 出口)
+				      (NN 结构))))
+		      (ETC 等)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  进口 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

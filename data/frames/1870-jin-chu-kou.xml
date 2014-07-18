@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进出口 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 imports and exports"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 要求)
+		  (NP-OBJ (CP (WHNP-5 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-5))
+				      (VP (VV 进出口)
+					  (NP-OBJ (NN 货物))))
+				  (DEC 的)))
+			  (NP (NN 货人)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 提供)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 使用)
+						      (NP-OBJ (ADJP (JJ 有关))
+							      (NP (NN 知识)
+								  (NN 产权)))))
+					      (DEC 的))
+				      (ADJP (JJ 合法))
+				      (NP (NN 证明))))
+			  (CC 及)
+			  (VP (PP (P 对)
+				  (NP (DNP (NP (NP (PN 其))
+					       (NP (NN 货物)))
+					   (DEG 的))
+				      (NP (NN 知识)
+					  (NN 产权)
+					  (NN 状况))))
+			      (PP-DIR (P 向)
+				      (NP (NN 海关)))
+			      (VP (VV 作出)
+				  (NP-OBJ (NN 补充)
+					  (NN 申报)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-5 	  
+	  </arg>
+	  <arg n="1">
+	  货物 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 请求)
+	      (NP-OBJ (NN 海关))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-TMP (P 在)
+			      (LCP (IP (NP-SBJ (ADJP (JJ 侵权))
+					       (NP (NN 货物)))
+				       (VP (VV 进出口)))
+				   (LC 时)))
+		      (VP (VV 予以)
+			  (VP (VV 查处)))))) 
+	  </parse>
+	  <arg n="1">
+	  侵权 货物 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

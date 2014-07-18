@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 同意 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agreer"/>
+      <role argnum="1" argrole="thing agreed to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 法国))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 会)
+			  (VP (VV 同意)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (PP-PRP (P 为)
+							      (IP (NP-SBJ (-NONE- *PRO*))
+								  (VP (ADVP (AD 重新))
+								      (VP (VV 分配)
+									  (NP-OBJ (NP-PN (NN 安理会))
+										  (NP (QP (CD 五))
+										      (ADJP (JJ 常任))
+										      (NP (NN 理事国)))
+										  (NP (NN 席位)))))))
+						      (VP (MSP 而)
+							  (VP (VV 修改)
+							      (NP-OBJ (NP-PN (NR 联合国))
+								      (NP (NN 宪章)))))))
+					      (DEC 的))
+				      (NP (NN 要求))))))) 
+	  </parse>
+	  <arg n="0">
+	  法国 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 为 *PRO* 重新 分配 安理会 五 常任 理事国 席位 而 修改 联合国 宪章 的 要求 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agreer"/>
+      <role argnum="1" argrole="proposition"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (ADVP (AD 原则))
+		  (VP (VV 同意)
+		      (IP-OBJ (NP-SBJ (DP (DT 下)
+					  (CLP (M 次)))
+				      (NP (NN 会议)))
+			      (VP (PP-TMP (P 于)
+					  (LCP (LCP (NP (NT 一九九四年))
+						    (LC 底))
+					       (LC 前后)))
+				  (PP-LOC (P 在)
+					  (NP-PN (NR 新德里)))
+				  (VP (VV 举行))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  原则 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  下 次 会议 于 一九九四年 底 前后 在 新德里 举行 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (VV 同意)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 采用)
+				  (NP-OBJ (CP-APP (WHNP (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (NN 银行))
+							  (VP (VV 托收)))
+						      (DEC 的)))
+					  (NP (NN 方式))))
+			      (VP (VP (VV 付款))
+				  (VP (VV 承兑)
+				      (NP-OBJ (NN 商业)
+					      (NN 票据)))))))) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 采用 *OP* 银行 托收 的 方式 付款 承兑 商业 票据 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

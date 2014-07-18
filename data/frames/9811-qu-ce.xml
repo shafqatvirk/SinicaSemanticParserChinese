@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驱策 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 drives"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-PRP (P 因为)
+		      (IP (NP-SBJ (NN 其中))
+			  (VP (VV 含有)
+			      (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 驱策)
+							  (NP-OBJ (NN 电脑)
+								  (NN 运算))))
+						  (DEC 的)))
+					  (ADJP (JJ 独门))
+					  (NP (NN 知识)))
+				      (PU ，)
+				      (CC 以及)
+				      (NP (CP-APP (IP (PU 「)
+						      (NP-PN-SBJ (NR 英特尔))
+						      (VP (VV 内建))
+						      (PU 」))
+						  (DEC 的))
+					  (NP (NN 品牌)
+					      (NN 威力)))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 硬是))
+		  (VP (VV 叫价)
+		      (QP-OBJ (ADVP (AD 近))
+			      (QP (CD 千)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  电脑 运算 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

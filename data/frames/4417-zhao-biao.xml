@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 招标 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 invites bids for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (IP (NP-SBJ (NN 国际)
+				      (NN 金融)
+				      (NN 组织))
+			      (VP (VV 贷款)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (CC 并)
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-LGS (P 由)
+					  (NP (NN 国际)))
+				  (ADVP (AD 公开))
+				  (VP (VV 招标)))))
+		      (DEC 的)))
+	      (NP (NN 工程))) 
+	  </parse>
+	  <arg n="0">
+	  由 国际 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  公开 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

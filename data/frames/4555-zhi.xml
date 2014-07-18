@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 置 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 places"/>
+      <role argnum="2" argrole="location arg1 is placed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (PN 他))
+	      (VP (VV 谴责)
+		  (NP-PN-OBJ (NP-APP (NP-PN (NR 伊拉克))
+				     (NP (NN 总统)))
+			     (NP-PN (NR 萨达姆)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 平民))
+				      (VP (VV 安排)
+					  (PP (P 在)
+					      (LCP (NP (ADJP (JJ 军事))
+						       (NP (NN 设施)))
+						   (LC 内))))))
+			  (PU ，)
+			  (VP (VV 置)
+			      (NP-OBJ (PN 他们))
+			      (PP (P 于)
+				  (NP (NN 险地)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  他们 
+	  </arg>
+	  <arg n="2">
+	  于 险地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing set up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 隋)
+			 (NR 唐))
+	      (VP (VV 置)
+		  (NP-PN-OBJ (NR 渝州)))) 
+	  </parse>
+	  <arg n="0">
+	  隋 唐 
+	  </arg>
+	  <arg n="1">
+	  渝州 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

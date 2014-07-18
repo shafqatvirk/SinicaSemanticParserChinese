@@ -1,0 +1,106 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 确立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing established"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 湖北省))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 确立)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PU “)
+					      (VP (VP-FOC (VV 全力以赴))
+						  (VP (VV 支援)
+						      (NP-OBJ (NP-PN (NR 三峡))
+							      (NP (NN 工程)))))
+					      (PU ，)
+					      (VP (VP (VV 抓住)
+						      (NP-OBJ (NN 机遇)))
+						  (VP (VV 发展)
+						      (NP-OBJ (NP-PN (NR 湖北))
+							      (NP (NN 经济)))))
+					      (PU ”)))
+				      (DEC 的))
+			      (NP (NN 指导)
+				  (NN 思想)))))) 
+	  </parse>
+	  <arg n="0">
+	  湖北省 
+	  </arg>
+	  <arg n="1">
+	  *pro* “ 全力以赴 支援 三峡 工程 ， 抓住 机遇 发展 湖北 经济 ” 的 指导 思想 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (NP-PN-APP (NR 日)
+				     (NR 中))
+			  (QP (CD 两))
+			  (NP (NN 国)))
+		  (VP (VV 确立)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 发展)
+				  (NP-OBJ (NP (ADJP (JJ 友好))
+					      (NP (NN 合作)))
+					  (NP (NN 关系))))))) 
+	  </parse>
+	  <arg n="0">
+	  日 中 两 国 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 发展 友好 合作 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity something established for"/>
+      <role argnum="1" argrole="thing established"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-4 (-NONE- *OP*))
+		  (IP (NP-SBJ (-NONE- *T*-4))
+		      (VP (VSB (VV 获)
+			       (VV 确立))
+			  (NP-OBJ (ADJP (JJ 婚生))
+				  (NP (NN 地位))))))
+	      (NP (NN 子女))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-4 
+	  </arg>
+	  <arg n="1">
+	  婚生 地位 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

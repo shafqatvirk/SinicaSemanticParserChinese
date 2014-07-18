@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 首推 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity which is the #1 example of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 最))
+				    (VP (VV 具)
+					(NP-OBJ (NN 代表性)))))
+			    (DEC 的))))
+	    (VP (VV 首推)
+		(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VRD (VV 号称)
+					     (VC 为))
+					(NP-OBJ (PU 「)
+						(NN 东方)
+						(NN 巨人)
+						(PU 」))))
+				(DEC 的)))
+			(ADJP (JJ 大))
+			(NP (NN 铜)
+			    (NN 人))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 最 具 代表性 的 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 号称 为 「 东方 巨人 」 的 大 铜 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

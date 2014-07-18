@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 奔逃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entityb fleeing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 狼))
+	    (VP (VP (PP-LOC (P 在)
+			    (LCP (NP (DNP (NP (NN 直升机)
+					      (NN 猎枪))
+					  (DEG 的))
+				     (NP (NN 扫射)))
+				 (LC 下)))
+		    (ADVP (AD 仓惶))
+		    (VP (VV 奔逃)))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 不))
+		    (VP (VV 忘)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VSB (VV 回头)
+					 (VV 凝视))
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (VV 倒卧)
+							    (PP-LOC (P 在)
+								    (LCP (NP (NN 血泊))
+									 (LC 中)))))
+						    (DEC 的)))
+					    (ADJP (JJ 终生))
+					    (NP (NN 伴侣))))))))) 
+	</parse>
+	<arg n="0">
+	狼 
+	</arg>
+	<arg n="m" f="adv">
+	仓惶 
+	</arg>
+	<arg n="m" f="loc">
+	在 直升机 猎枪 的 扫射 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity fleeing"/>
+    <role argnum="1" argrole="place arg0 flees to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 李应辰))
+	    (VP (VP (PP-PRP (P 因)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 抗日))))
+		    (VP (VV 负伤)))
+		(VP (VRD (VV 奔逃)
+			 (VV 至))
+		    (NP-OBJ (NN 大陆)))
+		(PU ，)
+		(VP (VCD (VV 落地)
+			 (VV 生根))))) 
+	</parse>
+	<arg n="0">
+	李应辰 
+	</arg>
+	<arg n="1">
+	大陆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

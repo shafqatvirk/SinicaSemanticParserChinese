@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 为乐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 considers as pleasure"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-5 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-5))
+				(VP (ADVP (AD 一向))
+				    (VP (VA 懒)
+					(DER 得)
+					(VP-EXT (VV 运动)))))
+			    (DEC 的)))
+		    (NP (NN 台湾人) ))
+	    (VP (LCP-TMP (NP (NN 一时))
+			 (LC 间))
+		(ADVP (AD 纷纷))
+		(PP-MNR (P 以)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 进)
+				(NP-OBJ (NN 健身房) ))))
+		(VP (VV 为乐)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-5 一向 懒 得 运动 的 台湾人 
+	</arg>
+	<arg n="1">
+	以 *PRO* 进 健身房 
+	</arg>
+	<arg n="m" f="adv">
+	纷纷 
+	</arg>
+	<arg n="m" f="tmp">
+	一时 间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

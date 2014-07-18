@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 热涨冷缩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (PU ，)
+	      (IP-SBJ (NP-SBJ (PN 他们))
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (NN 陶土))
+				       (LC 中)))
+			  (VP (VV 夹)
+			      (NP-OBJ (NN 砂)))))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 就))
+			      (VP (PP-PRD (P 像)
+					  (IP-SBJ (NP-SBJ (NN 混凝土))
+						  (VP (VV 加入)
+						      (NP-OBJ (NN 石子))))))))
+		  (PU ，)
+		  (VP (VV 可以)
+		      (VP (VP (VV 增加)
+			      (NP-OBJ (NN 强度)))
+			  (PU ，)
+			  (VP (VV 避免)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						       (VP (VV 烧成)))
+						   (LC 时))
+					  (VP (VP (VV 热涨冷缩))
+					      (VP (MSP 而)
+						  (VP (VV 破裂))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 烧成 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 猝不及防 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is not prepared for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 有)
+		(IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (ADVP (AD 太))
+						(VP (VA 多))))
+					(DEC 的)))
+				(NP (NN 变) ))
+			(PU ，)
+			(VP (ADVP (AD 却))
+			    (VP (VC 是)
+				(VP (VV 身不由己)
+				    (PU ，)
+				    (VV 猝不及防))))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-2 太 多 的 变 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

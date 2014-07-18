@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 化为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause, agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="turning into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (ADJP (JJ 有关))
+			  (DP (DT 各))
+			  (NP (NN 国)))
+		  (VP (VP (VV 汲取)
+			  (NP-OBJ (NN 教训)))
+		      (PU ，)
+		      (VP (VV 总结)
+			  (NP-OBJ (NN 经验)))
+		      (PU ，)
+		      (VP (VV 完善)
+			  (NP-OBJ (NN 金融)
+				  (NN 体系)))
+		      (PU ，)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 危机))
+				  (VP (VV 化为)
+				      (NP-OBJ (NN 机会))))))) 
+	  </parse>
+	  <arg n="0">
+	  有关 各 国 	  
+	  </arg>
+	  <arg n="1">
+	  危机 	  
+	  </arg>
+	  <arg n="2">
+	  机会 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (VE 没有)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 稳定)))
+					  (DEC 的)))
+				  (PU 、)
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VCD (VA 安定)
+						       (VV 团结))))
+					  (DEC 的)))
+				  (NP (NN 政治)
+				      (NN 局面)))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 一切))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 美好)))
+			      (DEC 的)))
+		      (NP (NN 蓝图)))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 将))
+		  (VP (VV 化为)
+		      (NP-OBJ (NN 泡影))))) 
+	  </parse>
+	  <arg n="1">
+	  一切 *OP* *T*-1 美好 的 蓝图 	  
+	  </arg>
+	  <arg n="2">
+	  泡影 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

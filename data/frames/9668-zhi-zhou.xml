@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掣肘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 impedes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 投资人))
+	      (VP (VP (ADVP (AD 毫))
+		      (VP (VE 无)
+			  (NP-OBJ (NN 理由))))
+		  (VP (VV 要)
+		      (VP (VV 掣肘)
+			  (NP-OBJ (NN 创业者)))))) 
+	  </parse>
+	  <arg n="0">
+	  投资人 
+	  </arg>
+	  <arg n="1">
+	  创业者 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

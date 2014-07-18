@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 失和 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities losing good terms with each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 是否))
+		    (ADVP (AD 因此))
+		    (VP (VV 埋下)
+			(AS 了)
+			(NP-OBJ (CP-APP (IP (NP-TMP (NT 今日))
+					    (NP-SBJ (NP (NN 总统府))
+						    (CC 与)
+						    (NP-PN (NR 台北市)))
+					    (VP (VV 失和)))
+					(DEC 的))
+				(NP (NN 伏笔)))))) 
+	</parse>
+	<arg n="0">
+	总统府 与 台北市 
+	</arg>
+	<arg n="m" f="tmp">
+	今日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

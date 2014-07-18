@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 屡见不鲜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 sees often"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 环顾)
+			(NP-OBJ (NN 全球))))
+	    (PU ，)
+	    (NP-TPC (NP (ADVP (AD 不论是))
+			(NP-PN (NR 美)
+			       (PU 、)
+			       (NR 日)
+			       (PU 、)
+			       (NR 香港)))
+		    (PU ，)
+		    (NP (ADVP (AD 甚至))
+			(NP (NP-PN (NR 中国))
+			    (NP (NN 大陆)))))
+	    (PU ，)
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (NN 房市))
+				(VP (VV 变调)))
+			    (DEC 的))
+		    (NP (NN 例子)))
+	    (VP (ADVP (AD 都))
+		(VP (VV 屡见不鲜)))) 
+	</parse>
+	<arg n="1" f="psr">
+	不论是 美 、 日 、 香港 ， 甚至 中国 大陆 
+	</arg>
+	<arg n="1" f="pse">
+	房市 变调 的 例子 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 环顾 全球 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

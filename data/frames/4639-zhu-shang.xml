@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 住上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="place arg0 is able to live in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (NP-PN (NR 陈忠发))
+		      (QP (CD 一)
+			  (CLP (M 家))))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (VP (VP (PP (P 和)
+			      (NP (DP (DT 其他))
+				  (NP (NN 村民))))
+			  (VP (VA 一样)))
+		      (PU ，)
+		      (VP (VV 住上)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 漂亮)))
+					  (DEC 的)))
+				  (ADJP (JJ 小))
+				  (NP (NN 洋楼))))))) 
+	  </parse>
+	  <arg n="0">
+	  陈忠发 一 家 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 漂亮 的 小 洋楼 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

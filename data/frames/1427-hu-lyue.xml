@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 忽略 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing ignored, overlooked"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 要)
+		      (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 加入)))
+				       (LC 时))
+			      (VP (VV 满怀)
+				  (NP-OBJ (NN 发财梦))))
+			  (PU ，)
+			  (VP (ADVP (AD 只))
+			      (VP (VRD (VV 注意)
+				       (VV 到))
+				  (NP-OBJ (NP (DNP (NP (NN 奖金))
+						   (DEG 的))
+					      (NP (NN 额度)))
+					  (CC 和)
+					  (NP (NP-APP (NN 国外)
+						      (NN 旅游)
+						      (PU 、)
+						      (NN 钻石)
+						      (NN 翡翠)
+						      (ETC 等))
+					      (NP (NN 荣衔))))))
+			  (PU ，)
+			  (VP (ADVP (AD 却))
+			      (VP (VV 忽略)
+				  (AS 了)
+				  (NP-OBJ (DNP (NP (NT 将来))
+					       (DEG 的))
+					  (NP (NN 退路))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  将来 的 退路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

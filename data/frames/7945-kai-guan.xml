@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开馆 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity that starts operation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (LCP-TMP (IP (NP-PN-SBJ (NR 木栅)
+				    (NN 动物园))
+			 (VP (VV 开馆)
+			     (QP-EXT (CD 十多)
+				     (CLP (M 年)))))
+		     (LC 来))
+	    (PU ，)
+	    (ADVP (AD 迄今))
+	    (NP-SBJ (NN 建造费))
+	    (VP (ADVP (AD 也))
+		(VP (VV 达到)
+		    (QP-OBJ (QP (CD 四)
+				(CLP (-NONE- *RNR*-2)))
+			    (PU 、)
+			    (QP (CD 五十亿)
+				(CLP-2 (M 元))))))) 
+	</parse>
+	<arg n="0">
+	木栅 动物园 
+	</arg>
+	<arg n="m" f="ext">
+	十多 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

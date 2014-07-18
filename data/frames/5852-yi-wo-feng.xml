@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一窝蜂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (CP-ADV (ADVP (CS 虽说))
+		      (IP (NP-SBJ (PN 这))
+			  (VP (ADVP (AD 只))
+			      (VP (VC 是)
+				  (NP-PRD (NN 个案))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (PN 这))
+	      (VP (ADVP-WH (AD 是否))
+		  (VP (VV 显示)
+		      (NP-OBJ (NP (NN 台湾人))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 一窝蜂)))
+				      (DEC 的))
+			      (NP (NN 消费)
+				  (NN 习惯)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

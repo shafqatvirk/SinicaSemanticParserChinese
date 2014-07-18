@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借款 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loan receiver"/>
+      <role argnum="1" argrole="amount borrowed/loaned"/>
+      <role argnum="2" argrole="loan provider"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 新))
+		  (VP (VV 借款)
+		      (QP-OBJ (CD 一百六十六点零亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  一百六十六点零亿 美元 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  新 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

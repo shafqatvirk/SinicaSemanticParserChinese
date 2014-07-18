@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缺少 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity lacking"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 巴))
+		      (NP (NN 自治)
+			  (NN 地区)))
+	      (VP (VV 缺少)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 必要)))
+				  (DEC 的)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 处理)
+					  (NP-OBJ (NN 援助款))))
+				  (DEC 的)))
+			  (NP (NN 机制)
+			      (CC 和)
+			      (NN 会计)
+			      (NN 帐目))))) 
+	  </parse>
+	  <arg n="0">
+	  巴 自治 地区 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 必要 的 *OP* *T*-2 处理 援助款 的 机制 和 会计 帐目 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 中国))
+			   (DEG 的))
+		      (NP (NN 观测)
+			  (NN 资料)))
+	      (VP (VC 是)
+		  (NP-PRD (LCP (NP (NN 国际)
+				   (NN 联测))
+			       (LC 中))
+			  (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 可)
+					      (VP (VP (VV 缺少))
+						  (CC 或)
+						  (VP (VV 替代))))))
+				  (DEC 的)))
+			  (NP (NN 组成)
+			      (NN 部分))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

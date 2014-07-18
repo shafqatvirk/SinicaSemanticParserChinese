@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查验 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="inspector"/>
+    <role argnum="1" argrole="thing inspected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (NN 出入境)
+                  (NN 边防)
+                  (NN 检查)
+                  (NN 机关))
+          (VP (VP (VV 采用)
+                  (NP-OBJ (NN 机器)))
+              (VP (VV 查验)
+                  (NP-OBJ (NN 证件))))))
+	</parse>
+	<arg n="0"> 出入境 边防 检查 机关 </arg>
+	<V/>
+	<arg n="1"> 证件 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

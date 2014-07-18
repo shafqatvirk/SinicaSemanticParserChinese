@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 耕田 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (DP (DT 有些))
+			  (NP (NN 人)))
+		  (VP (ADVP (AD 很))
+		      (VP (VA 高兴))))
+	      (PU ，)
+	      (PP (P 因为)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (VV 可以)
+			      (VP (ADVP (AD 不))
+				  (VP (VV 用)
+				      (VP (VV 耕田)))))
+			  (PU ，)
+			  (VP (ADVP (AD 立刻))
+			      (VP (VV 可以)
+				  (VP (VP (VV 分家))
+				      (PU 、)
+				      (VP (VV 拿)
+					  (NP-OBJ (NN 钱)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

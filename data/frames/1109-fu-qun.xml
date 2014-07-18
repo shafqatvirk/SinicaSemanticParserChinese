@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赋权 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="granter"/>
+      <role argnum="1" argrole="receiver"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DP (DT 该))
+		      (NP (NN 草案)))
+	      (NP-SBJ (NN 旨))
+	      (VP (VV 在)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 赋权)
+			      (NP-OBJ (NN 行政)
+				      (NN 长官))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-TMP (P 在)
+					      (LCP (IP (NP-SBJ (-NONE- *pro*))
+						       (VP (VV 收到)
+							   (NP-OBJ (DNP (NP (NN 中央)
+									    (NN 人民)
+									    (NN 政府))
+									(DEG 的))
+								   (NP (NN 指令)))))
+						   (LC 後)))
+				      (PU ，)
+				      (VP (VP (VV 制定)
+					      (NP-OBJ (NN 规例)))
+					  (VP (MSP 以)
+					      (VP (VV 执行)
+						  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							      (CP (IP (NP-PN-SBJ (NP-PN (NR 联合国))
+										 (NP (NN 安全)
+										     (NN 理事会)))
+								      (VP (MSP 所)
+									  (VP (VV 实施)
+									      (NP-OBJ (-NONE- *T*-1)))))
+								  (DEC 的)))
+							  (NP (NN 制裁)))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  行政 长官 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 在 *pro* 收到 中央 人民 政府 的 指令 後 ， 制定 规例 以 执行 *OP* 联合国 安全 理事会 所 实施 (*T*-1)->(制裁) 的 制裁 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> ¿Ø </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="crime arg0 sues arg1 for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (NN ¸¸Ä¸))
+		(VP (VV ¿Ø)
+		    (NP-OBJ (NN ×Ó)))) 
+	</parse>
+	<arg n="0">
+	¸¸Ä¸ 
+	</arg>
+	<arg n="1">
+	×Ó 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(VP (ADVP (AD ¼´))
+	    (PP-MNR (P ÕÕ)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (MSP Ëù)
+					(VP (VV ¿Ø)
+					    (NP-OBJ (-NONE- *T*-1)))))))))
+	    (VP (VV °ìÀí))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="2">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

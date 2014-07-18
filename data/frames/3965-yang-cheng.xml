@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 压成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity pressed"/>
+      <role argnum="2" argrole="entity arg1 turns into after being pressed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 植被))
+	      (VP (LB 被)
+		  (IP-OBJ (NP-SBJ (ADJP (JJ 大))
+				  (NP (NN 车)))
+			  (VP (VV 压成)
+			      (AS 了)
+			      (NP-OBJ (NN 路面)))))) 
+	  </parse>
+	  <arg n="0">
+	  大 车 
+	  </arg>
+	  <arg n="1">
+	  植被 
+	  </arg>
+	  <arg n="2">
+	  路面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

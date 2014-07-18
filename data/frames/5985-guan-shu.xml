@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 灌输 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 pours"/>
+    <role argnum="2" argrole="entity arg1 is poured into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="io" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (IP (NP-SBJ (-NONE- *pro*))
+			     (VP (NP-TMP (NN 寒暑假))
+				 (VP (VV 回)
+				     (NP-PN-OBJ (NR 台)))))
+			 (CC 或)
+			 (IP (NP-SBJ (PN 他们))
+			     (VP (VP (VV 去)
+				     (NP-PN-OBJ (NR 美国)))
+				 (VP (VV 游玩)))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 常))
+		(VP (VP (VV 利用)
+			(NP-OBJ (NN 机会)))
+		    (VP (VV 想)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 灌输)
+				    (NP-IO (PN 他们))
+				    (NP-OBJ (QP (CD 一些))
+					    (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VA 正确)))
+						    (DEC 的)))
+					    (NP (NN 人生)
+						(NN 观念))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	一些 *OP* *T*-2 正确 的 人生 观念 
+	</arg>
+	<arg n="2">
+	他们 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 老师))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 常))
+		(VP (VV 灌输)
+		    (NP-OBJ (NN 新知))))) 
+	</parse>
+	<arg n="0">
+	老师 
+	</arg>
+	<arg n="1">
+	新知 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

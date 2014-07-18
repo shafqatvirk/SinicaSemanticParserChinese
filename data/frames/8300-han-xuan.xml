@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寒暄 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people exchanging greetings"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-2))
+				      (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-LOC (NN 旁边))
+					  (VP (VV 寒暄))))
+				  (DEC 的))))
+		  (VP (ADVP (AD 都))
+		      (VP (VC 是)
+			  (IP-PRD (CP-Q (PU 『)
+					(IP (NP-SBJ (-NONE- *pro*))
+					    (VP (NP-TMP (NT 最近))
+						(VP (VV 出国))))
+					(SP 吗))
+				  (PU ？)
+				  (PU 』)
+				  (PU 、)
+				  (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (ADVP (AD 刚))
+					  (VP (VV 回来)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="loc">
+	  旁边 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

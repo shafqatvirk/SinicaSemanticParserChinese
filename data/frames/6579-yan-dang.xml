@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 延宕 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (NP (PN 其))
+		    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 入会)))
+			    (DEC 的))
+		    (NP (NN 行动)))
+	    (VP (PP-PRP (P 因)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 早前))
+				(VP (VP-FOC (PP (P 与)
+						(NP-PN (NR 美国)))
+					    (VP (VV 谈判)))
+				    (VP (VV 未果))))))
+		(PU ，)
+		(ADVP (AD 一直))
+		(VP (VV 延宕)))) 
+	</parse>
+	<arg n="0">
+	其 *PRO* 入会 的 行动 
+	</arg>
+	<arg n="m" f="adv">
+	一直 
+	</arg>
+	<arg n="m" f="prp">
+	因 *PRO* 早前 与 美国 谈判 未果 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

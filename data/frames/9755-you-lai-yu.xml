@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有赖於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 depends on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NN 中央)
+				     (NN 研究院))
+			      (NP (NN 民族)
+				  (NN 研究所))
+			      (NP (NN 研究员)))
+		      (NP-PN (NR 许木柱)))
+	      (VP (VV 说)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VP (VV 有赖於)
+				  (IP-OBJ (NP-PN-SBJ (NR 邓相扬))
+					  (VP (PP-DIR (P 对於)
+						      (NP (LCP (NP (NN 部落))
+							       (LC 中))
+							  (QP (CD 一些))
+							  (NP (NN 家族)
+							      (NN 血缘))
+							  (NP (NN 关系))))
+					      (ADVP (AD 十分))
+					      (VP (VV 了解)))))
+			      (PU ，)
+			      (VP (ADVP (AD 才))
+				  (VP (VV 能)
+				      (VP (VP (VV 找到)
+					      (NP-OBJ (DNP (ADJP (JJ 纯种))
+							   (DEG 的))
+						      (NP (NN 血缘))))
+					  (VP (VV 加以)
+					      (NP-OBJ (NN 研究)
+						      (NN 分析)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  邓相扬 对於 部落 中 一些 家族 血缘 关系 十分 了解 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 滴到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 drips arg1 onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 使用者))
+	    (VP (VP (ADVP (AD 只要))
+		    (ADVP (AD 直接))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 血液))
+				(VP (VV 滴到)
+				    (LCP-OBJ (NP (ADJP (JJ 处理型))
+						 (NP (NN 晶片)))
+					     (LC 上))))))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (VP (VV 可以)
+			(VP (VV 得知)
+			    (NP-OBJ (NN 结果))))))) 
+	</parse>
+	<arg n="0">
+	使用者 
+	</arg>
+	<arg n="1">
+	血液 
+	</arg>
+	<arg n="2">
+	处理型 晶片 上 
+	</arg>
+	<arg n="m" f="adv">
+	直接 
+	</arg>
+	<arg n="m" f="adv">
+	只要 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

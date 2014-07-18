@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 失效 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing expiring"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这些))
+		      (NP (NN 颁令)))
+	      (VP (ADVP (AD 已))
+		  (PP-TMP (P 在)
+			  (LCP (NP (NT 一九九七年)
+				   (NT 六月)
+				   (NT 三十日))
+			       (LC 後)))
+		  (VP (VV 失效)))) 
+	  </parse>
+	  <arg n="0">
+	  这些 颁令 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 一九九七年 六月 三十日 後 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

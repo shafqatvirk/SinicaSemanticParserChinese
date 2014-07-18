@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飙高 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 causes to rise rapidly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PU 「)
+		    (NP (NN 伍兹热))
+		    (PU 」))
+	    (VP (CC 不仅)
+		(VP (VV 飙高)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 日益))
+					    (VP (VV 风行))))
+				    (DEC 的)))
+			    (NP-PN (NR 台湾))
+			    (NP (NN 高球)
+				(NN 运动))))
+		(PU ，)
+		(CC 也)
+		(VP (PP-BNF (P 为)
+			    (NP (NT 九二一)
+				(NN 赈灾)))
+		    (VP (VV 募集)
+			(NP-OBJ (NP (QP (CD 三千多万))
+				    (NP (NN 台币)))
+				(NP (NN 款项))))))) 
+	</parse>
+	<arg n="0">
+	「 伍兹热 」 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 日益 风行 的 台湾 高球 运动 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 飙高))
+	    (PU ：)
+	    (PRN (IP (NP-SBJ (ADJP (JJ 摩天))
+			     (NP (NN 大楼)))
+		     (VP (VV 改写)
+			 (NP-OBJ (NP-PN (NR 台湾))
+				 (NP (NN 天际线))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

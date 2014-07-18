@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 刺瞎 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 pricks and causes it to be blind"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (QP (CD 十一)
+			     (CLP (M 岁)))
+			 (LC 时))
+		(ADVP (AD 又))
+		(ADVP (AD 不幸))
+		(VP (VP (PP-LOC (P 在)
+				(LCP (NP (NN 甘蔗)
+					 (NN 田))
+				     (LC 里)))
+			(VP (VV 摔倒)))
+		    (PU ，)
+		    (VP (VV 刺瞎)
+			(AS 了)
+			(NP-OBJ (ADJP (JJ 左))
+				(NP (NN 眼))))))) 
+	</parse>
+	<arg n="1" f="psr">
+	*pro* 
+	</arg>
+	<arg n="1" f="pse">
+	左 眼 
+	</arg>
+	<arg n="m" f="adv">
+	不幸 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="tmp">
+	十一 岁 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

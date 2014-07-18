@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 捣毁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="destroyer"/>
+      <role argnum="1" argrole="thing destroyed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT １９９８年))
+		  (NP-SBJ (NN 警方))
+		  (VP (ADVP (AD 还))
+		      (VP (VV 捣毁)
+			  (AS 了)
+			  (NP-OBJ (NP (QP (CD ３８)
+					  (CLP (M 条)))
+				      (ADJP (JJ 秘密))
+				      (NP (NN 飞机)
+					  (NN 跑道)))
+				  (CC 和)
+				  (NP (QP (CD １８５)
+					  (CLP (M 个)))
+				      (ADJP (JJ 地下))
+				      (NP (NN 毒品)
+					  (NN 加厂))))))) 
+	  </parse>
+	  <arg n="0">
+	  警方 
+	  </arg>
+	  <arg n="1">
+	  ３８ 条 秘密 飞机 跑道 和 １８５ 个 地下 毒品 加厂 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９９８年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

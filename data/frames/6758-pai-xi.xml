@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拍戏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (PN 她))
+		(VP (VP (ADVP (AD 不))
+			(VP (VC 是)
+			    (VP (ADVP (AD 真的))
+				(NP-ADV (NN 肚子))
+				(VP (VV 饿)))))
+		    (PU ，)
+		    (VP (ADVP (AD 只是))
+			(IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (QP-ADV (OD 第一)
+					    (CLP (M 次)))
+				    (VP (VV 拍戏))))
+			(PU ，)
+			(ADVP (AD 有时))
+			(ADVP (AD 无法))
+			(VP (VV 专心))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	第一 次 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

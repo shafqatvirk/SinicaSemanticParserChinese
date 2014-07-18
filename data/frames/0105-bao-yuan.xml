@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抱怨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="complainer"/>
+    <role argnum="1" argrole="thing complained about"/>
+    <role argnum="2" argrole="complaining towards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+              (CP (IP (NP-SBJ (-NONE- *T*-1))
+                      (VP (ADVP (AD 一直))
+                          (VP (VV 抱怨)
+                              (IP-OBJ (NP-SBJ (-NONE- *pro*))
+                                      (VP (LCP-LOC (NP (NN 手))
+                                                   (LC 中))
+                                          (VP (VE 无)
+                                              (NP-OBJ (NN 钱))))))))
+                  (DEC 的)))
+          (NP-PN (NR 古力特))))
+	</parse>
+	<arg n="0"> (*T*-1)->(古力特) </arg>
+	<V/>
+	<arg n="1"> *pro* 手 中 无 钱 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

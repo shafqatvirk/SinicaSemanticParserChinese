@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一般 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is like"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (DVP (VP (PP (P 彷佛)
+			     (NP (NP-PN (NR 中国))
+				 (NP (NN 庙会))))
+			 (VP (VA 一般))))
+		(VP (VA 热闹)))) 
+	</parse>
+	<arg n="1">
+	彷佛 中国 庙会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 对)
+				(NP (NN 渔民)))
+			(VP (MSP 而)
+			    (VP (VV 言)))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-LOC (P 在)
+				(LCP (NP (NN 大海))
+				     (LC 中)))
+			(VP (VV 看见)
+			    (NP-OBJ (NN 黑鲔)))))
+	    (PU ，)
+	    (VP (ADVP (AD 就))
+		(PP (P 如同)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-LOC (P 在)
+				    (LCP (NP (NN 陆地))
+					 (LC 上)))
+			    (VP (VV 看见)
+				(AS 了)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 部)))
+					(ADJP (JJ 高级))
+					(NP (NN 进口)
+					    (NN 轿车)))))))
+		(VP (VV 一般)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 在 大海 中 看见 黑鲔 
+	</arg>
+	<arg n="1">
+	如同 *PRO* 在 陆地 上 看见 了 一 部 高级 进口 轿车 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 对 渔民 而 言 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

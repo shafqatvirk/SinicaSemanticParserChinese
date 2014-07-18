@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 内蕴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 contains"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VV 使得)
+		  (NP-OBJ (DNP (NP (PN 他))
+			       (DEG 的))
+			  (NP (NN 书法)))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (VA 流美)))
+						   (DEC 的)))
+					   (NP (NN 运笔)))
+				       (LC 中)))
+			  (PU ，)
+			  (ADVP (AD 又))
+			  (VP (VV 内蕴)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VCD (VA 沈著)
+							   (VA 劲涩))))
+					      (DEC 的)))
+				      (NP (NN 笔趣)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 沈著 劲涩 的 笔趣 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *OP* *T*-1 流美 的 运笔 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

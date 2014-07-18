@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 构筑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="constructor"/>
+      <role argnum="1" argrole="thing constructed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 山东)
+			     (NR 日照))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 构筑)
+			  (NP-OBJ (ADJP (JJ 新))
+				  (NP (NN 交通)
+				      (NN 格局)))))) 
+	  </parse>
+	  <arg n="0">
+	  山东 日照 
+	  </arg>
+	  <arg n="1">
+	  新 交通 格局 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

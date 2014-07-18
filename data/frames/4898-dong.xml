@@ -1,0 +1,152 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 moves/disturbs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 担心)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 动)
+			    (AS 了)
+			    (NP-OBJ (NP (ADJP (JJ 母))
+					(NP (NN 蛇)))
+				    (NP (NN 胎气))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	母 蛇 胎气 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (ADJP (JJ 大))
+			    (NP (NN 卖场)))
+		    (VP (VV 开幕)))
+	    (PU ，)
+	    (NP-SBJ (NN 商人)
+		    (NN 头脑))
+	    (VP (VPT (VV 动)
+		     (DER 得)
+		     (VA 快)))) 
+	</parse>
+	<arg n="1">
+	商人 头脑 
+	</arg>
+	<arg n="m" f="adv">
+	快 
+	</arg>
+	<arg n="m" f="adv">
+	大 卖场 开幕 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *pro*))
+	      (VP (VNV-WH (VC 是)
+			  (AD 不)
+			  (VC 是))
+		  (VP (SB 被)
+		      (VP (VV 动)
+			  (AS 了)
+			  (NP-OBJ (NN 手脚)))))) 
+	</parse>
+	<arg n="1" f="psr">
+	*pro* 
+	</arg>
+	<arg n="1" f="pse">
+	手脚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 塑身) )
+			 (DEG 的))
+		    (NP (NN 动机) ))
+	    (VP (VV 可能)
+		(VP (ADVP (AD 也))
+		    (ADVP (AD 不))
+		    (VP (VV 足以)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 让)
+				    (NP-OBJ (NN 人) )
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VRD (VV 动)
+						 (VV 起来)) )))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-SBJ (NN 宪法))
+		(VP (VC 为)
+		    (NP-PRD (NN 国家)
+			    (NN 大法))))
+	    (PU ，)
+	    (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 动辄))
+			    (VP (VV 修宪))))
+		(PU ，)
+		(VP (SB 被)
+		    (VP (VV 讥为)
+			(IP-PRD (NP-SBJ (-NONE- *PRO*))
+				(VP (PP (P 比)
+					(NP (NN 民)
+					    (PU 、)
+					    (NN 刑法)))
+				    (VP (VV 动)
+					(DER 得)
+					(VP-EXT (ADVP (AD 更))
+						(VP (VA 频繁)))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	更 频繁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

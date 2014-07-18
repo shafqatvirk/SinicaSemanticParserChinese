@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 售出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing sold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (QP (OD 首)
+				   (CLP (M 次)))
+			       (NP (NN 公募)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国)
+			 (NN 电信)
+			 (PRN (PU （)
+			      (NP-PN (NR 香港))
+			      (PU ）)))
+	      (VP (ADVP (AD 公开))
+		  (VP (VV 售出)
+		      (QP-OBJ (CD 二十六亿)
+			      (CLP (M 股)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 电信 （ 香港 ） 
+	  </arg>
+	  <arg n="1">
+	  二十六亿 股 
+	  </arg>
+	  <arg n="m" f="adv">
+	  公开 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 首 次 公募 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (DNP (QP (ADVP (AD 仅))
+			       (QP (QP (CD 一)
+				       (CLP (M 年)))
+				   (ADVP (AD 多))))
+			   (DEG 的))
+		      (NP (NN 时间)))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (DP (DT 这)
+					      (CLP (M 个)))
+					  (NP (NN 公司)))
+				  (VP (VV 生产)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP-PN (PU “)
+			     (NR 大寨春)
+			     (PU ”)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 售出)
+		      (AS 了)
+		      (QP-OBJ (ADVP (AD 近))
+			      (QP (CD 二千)
+				  (CLP (M 吨))))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 这 个 公司 生产 *T*-1 的 “ 大寨春 ” 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  近 二千 吨 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 一 年 多 的 时间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

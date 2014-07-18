@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 在座 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-APP (NP-PN (NN 外交)
+					(NN 学会))
+				 (NP (NN 会长)))
+			 (NP-PN (NR 刘述卿)))
+	      (VP (LCP-TMP (NP (NN 会见))
+			   (LC 时))
+		  (VP (VV 在座)))) 
+	  </parse>
+	  <arg n="0">
+	  外交 学会 会长 刘述卿 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  会见 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

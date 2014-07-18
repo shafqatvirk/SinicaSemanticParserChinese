@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 哑口无言 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (VV 颤抖)))
+			    (DEC 的)))
+		    (NP (NN 嘴唇)))
+	    (VP (VP (ADVP (AD 还))
+		    (VP (VV 想)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 再))
+				    (VP (VV 诉说)
+					(NP-OBJ (PN 什麽)))))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 也))
+		    (VP (VV 哑口无言)
+			(AS 了))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-3 颤抖 的 嘴唇 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

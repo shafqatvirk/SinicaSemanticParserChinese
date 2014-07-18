@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 斟酌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 weighs and considers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 教改))
+			   (DEG 的))
+		      (NP (NN 细节)))
+	      (VP (ADVP (AD 或许))
+		  (VP (VV 要)
+		      (VP (ADVP (AD 再))
+			  (VP (VV 斟酌)))))) 
+	  </parse>
+	  <arg n="1">
+	  教改 的 细节 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  或许 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

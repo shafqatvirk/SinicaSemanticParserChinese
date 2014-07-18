@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="winner"/>
+      <role argnum="1" argrole="thing won/people defeated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-PN-SBJ (NR 台湾))
+		(VP (VV 会)
+		    (VP (VP (VC 是)
+			    (NP-PRD (LCP (NP (NN 浩劫))
+					 (LC 後))
+				    (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (ADVP (AD 极))
+						    (VP (VA 少数))))
+					    (DEC 的)))
+				    (NP (NN 幸运儿))))
+			(PU ？)
+			(CC 还是)
+			(VP (VP (VV 赢)
+				(AS 了)
+				(NP-OBJ (DP (DT 这)
+					    (QP (CD 一)))
+					(NP (NN 回合))))
+			    (PU 、)
+			    (VP (VV 输)
+				(AS 了)
+				(NP-OBJ (DP (DT 下)
+					    (QP (CD 一)))
+					(NP (NN 回合)))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 
+	  </arg>
+	  <arg n="1">
+	  这 一 回合 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 他))
+		  (IP (VP (PP-TMP (P 在)
+				  (LCP (NP (NP-APP (NT 中午))
+					   (NP (NN 封棋)))
+				       (LC 时)))
+			  (ADVP (AD 就))
+			  (ADVP (AD 已经))
+			  (VP (VV 觉得)
+			      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 能)
+					  (VP (VV 赢)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

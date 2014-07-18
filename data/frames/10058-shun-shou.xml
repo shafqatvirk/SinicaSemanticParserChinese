@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 顺手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing it is convenient for arg0 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VE 有)
+			(AS 了)
+			(NP-OBJ (NN 工具))))
+	    (PU ，)
+	    (NP-SBJ (NN 人人))
+	    (VP (VP-FOC (VV 做)
+			(NP-OBJ (NN 垃圾)
+				(NN 分类)))
+		(VP (ADVP (AD 就))
+		    (ADVP (AD 更))
+		    (VP (VA 顺手))))) 
+	</parse>
+	<arg n="0">
+	人人 
+	</arg>
+	<arg n="1">
+	做 垃圾 分类 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 有 了 工具 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

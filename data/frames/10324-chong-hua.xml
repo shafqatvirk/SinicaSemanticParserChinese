@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重划 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 re-divides and re-assigns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 政府))
+	    (VP (VP (PP-MNR (P 以)
+			    (NP (CP-APP (IP (NP-SBJ (NN 市地))
+					    (VP (VV 重划)))
+					(DEC 的))
+				(NP (NN 方式))))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 耕地))
+				(VP (VV 划为)
+				    (NP-OBJ (NP-APP (NN 住宅区)
+						    (PU 、)
+						    (NN 工业区)
+						    (ETC 等))
+					    (NP (NN 用途)))))))
+		(PU ，)
+		(VP (MSP 以)
+		    (VP (VV 换取)
+			(NP-OBJ (NN 厂区)
+				(NN 用地)))))) 
+	</parse>
+	<arg n="1">
+	市地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

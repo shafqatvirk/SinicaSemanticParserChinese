@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 叨念 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 keeps talking about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (LCP (NP (NN 家))
+			   (LC 中))
+		      (ADJP (JJ 老))
+		      (NP (NN 奶奶)))
+	      (VP (ADVP (AD 至今))
+		  (VP (VV 叨念)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 日式))
+				       (NP (NN 房子)
+					   (NN 床板)))
+				   (DEG 的))
+			      (NP (NN 经久)
+				  (NN 耐用)))))) 
+	  </parse>
+	  <arg n="0">
+	  家 中 老 奶奶 
+	  </arg>
+	  <arg n="1">
+	  日式 房子 床板 的 经久 耐用 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  至今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

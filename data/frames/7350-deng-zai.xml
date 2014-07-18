@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 登载 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="article described"/>
+    <role argnum="1" argrole="place arg0 is carried"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (QP (NP-PN (NN 天下)
+				(NN 杂志))
+			 (QP (OD 一九九)
+			     (CLP (M 期))))
+		     (LC 中))
+	    (VP (VV 登载)
+		(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-PN-SBJ (NR 杨玛利))
+				    (VP (VV 报导)
+					(NP-OBJ (-NONE- *T*-3))))
+				(DEC 的)))
+			(NP-TTL (PU 「)
+				(IP-APP (NP-PN-SBJ (NR 坎培拉))
+					(VP (VV 迎接)
+					    (NP-OBJ (QP (CD 零))
+						    (NP (NN 垃圾)))))
+				(NP (NN 计划))
+				(PU 」))
+			(QP (CD 一))
+			(NP (NN 文))))) 
+	</parse>
+	<arg n="0">
+	*OP* 杨玛利 报导 *T*-3 的 「 坎培拉 迎接 零 垃圾 计划 」 一 文 
+	</arg>
+	<arg n="1">
+	天下 杂志 一九九 期 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

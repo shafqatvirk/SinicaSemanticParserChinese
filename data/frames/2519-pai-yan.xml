@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 排演 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing rehearsed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 区)
+		      (NN 歌舞团))
+	      (VP (ADVP (AD 先后))
+		  (VP (VV 排演)
+		      (AS 了)
+		      (NP-OBJ (UCP-APP (NP-PN-TTL (PU 《)
+						  (NR 马江宏梦)
+						  (PU 》))
+				       (PU 、)
+				       (IP-PN-TTL (PU 《)
+						  (NP-SBJ (NN 情))
+						  (VP (VV 系)
+						      (NP-PN-OBJ (NR 罗星塔)))
+						  (PU 》))
+				       (ETC 等))
+			      (ADJP (JJ 大型))
+			      (NP (NN 歌舞)))))) 
+	  </parse>
+	  <arg n="0">
+	  区 歌舞团 
+	  </arg>
+	  <arg n="1">
+	  《 马江宏梦 》 、 《 情 系 罗星塔 》 等 大型 歌舞 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

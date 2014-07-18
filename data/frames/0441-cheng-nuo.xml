@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承诺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="promiser"/>
+      <role argnum="1" argrole="things promised"/>
+      <role argnum="2" argrole="to whom promise is made"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-OBJ (QP (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (NN 外国)
+						(NN 政府))
+					(VP (PP-DIR (P 向)
+						    (NP-PN (NR 中国)))
+					    (VP (VV 承诺)
+						(NP-OBJ (-NONE- *T*-2))))))
+				(NP (NN 贷款额)))
+			    (DEG 的))
+		       (QP (CD 百分之四十)))
+		   (LC 以上)) 
+	  </parse>
+	  <arg n="0">
+	  外国 政府 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="2">
+	  向 中国 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NP-PN (NR 日本))
+				      (NP (NN 政府)))
+			      (VP (VV 承诺)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (DEC 的)))
+		  (NP (NN 贷款))) 
+	  </parse>
+	  <arg n="0">
+	  日本 政府 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (DP (DT 各))
+			  (NP (NN 国)))
+		  (VP (VP (PP-MNR (P 通过)
+				  (NP (NN 对话)
+				      (CC 与)
+				      (NN 合作)))
+			  (VP (VV 增进)
+			      (NP-OBJ (NP (NP (PN 相互)))
+				      (NP (NN 了解)
+					  (CC 和)
+					  (NN 信任)))))
+		      (PU ，)
+		      (VP (VV 承诺)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-MNR (P 以)
+					      (NP (NN 和平)
+						  (NN 方式)))
+				      (VP (VV 解决)
+					  (NP-OBJ (DNP (LCP (NP (NN 国家))
+							    (LC 间))
+						       (DEG 的))
+						  (NP (NN 分歧)
+						      (CC 和)
+						      (NN 争端))))))))) 
+	  </parse>
+	  <arg n="0">
+	  各 国 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 以 和平 方式 解决 国家 间 的 分歧 和 争端 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (ADVP (AD 亦))
+		  (ADVP (AD 已))
+		  (VP (VV 承诺)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 会)
+				  (VP (PP-TMP (P 在)
+					      (NP (DNP (NP (NT 未来))
+						       (DEG 的))
+						  (NP (NN 日子))))
+				      (ADVP (AD 再))
+				      (ADVP (AD 进一步))
+				      (VP (VV 缩短)
+					  (NP-OBJ (DP (DT 这))
+						  (NP (NN 时间)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 	  
+	  </arg>
+	  <arg n="1">
+	  *pro* 会 在 未来 的 日子 再 进一步 缩短 这 时间 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

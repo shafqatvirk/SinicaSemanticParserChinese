@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 设站 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 sets up station "/>
+    <role argnum="2" argrole="entity station is set up for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (NN 高铁))
+		(VP (PP-LOC (P 在)
+			    (NP (PN 此)))
+		    (VP (VV 设站)))) 
+	</parse>
+	<arg n="1">
+	在 此 
+	</arg>
+	<arg n="2">
+	高铁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 高铁))
+	    (VP (VV 设站))) 
+	</parse>
+	<arg n="2">
+	高铁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

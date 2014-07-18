@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 歇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 stops at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (ADVP (AD 直))
+		      (PP (P 到)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 遇见)
+				  (IP-OBJ (LCP-SBJ (NP (QP (CD 一)
+							   (CLP (M 只)))
+						       (NP (NN 木头)
+							   (NN 方盒子) ))
+						   (LC 里))
+					  (PU ，)
+					  (VP (ADVP (AD 竟))
+					      (VP (VE 有)
+						  (IP-OBJ (NP-SBJ (NN 人) )
+							  (VP (VV 唱)
+							      (AS 著)
+							      (NP-OBJ (NN 京戏) ))))))))))
+	      (PU ，)
+	      (NP-SBJ (NN 哭声) )
+	      (VP (ADVP (AD 才))
+		  (VP (VV 歇)
+		      (PP (P 在)
+			  (LCP (NP (NN 方盒子) )
+			       (LC 上)))))) 
+	  </parse>
+	  <arg n="0">
+	  哭声 
+	  </arg>
+	  <arg n="1">
+	  在 方盒子 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  直 到 *pro* 遇见 一 只 木头 方盒子 里 ， 竟 有 人 唱 著 京戏 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惹来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 causes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 惹来)
+		(NP-OBJ (NN 学生))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 嘘声四起))
+			(PU 、)
+			(VP (VSB (VV 跺脚)
+				 (VV 抗议))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	学生 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 嘘声四起 、 跺脚 抗议 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 送交 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity handed in"/>
+      <role argnum="2" argrole="entity handed to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (NN 契约))
+			  (VP (VP (VV 送交)
+				  (NP-OBJ (DP (DT 该))
+					  (NP (NN 处))))
+			      (VP (VV 登记)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  契约 
+	  </arg>
+	  <arg n="2">
+	  该 处 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 十一万零九百八十)
+			      (CLP (M 份)))
+			  (NP (NN 楼宇)
+			      (NN 转让)
+			      (NN 契约)))
+		  (VP (VP (VV 送交)
+			  (NP-OBJ (DP (DT 该))
+				  (NP (NN 处))))
+		      (VP (VV 注册)))) 
+	  </parse>
+	  <arg n="1">
+	  十一万零九百八十 份 楼宇 转让 契约 
+	  </arg>
+	  <arg n="2">
+	  该 处 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

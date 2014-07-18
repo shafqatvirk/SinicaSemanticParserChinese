@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 还原 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity restored to the original state"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (CC 不仅)
+		(VP (VV 要)
+		    (VP (VV 复原)
+			(NP-OBJ (NN 史前陶))))
+		(PU ，)
+		(CC 也)
+		(VP (VV 要)
+		    (VP (VV 还原)
+			(NP-OBJ (DNP (NP (NN 史前陶))
+				     (DEG 的))
+				(NP (NN 精神))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	史前陶 的 精神 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (QP (CD 一)
+			    (CLP (M 片)))
+			(NP (NN 土)))
+		(VP (VV 还原)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 个)))
+			    (NP (NN 世界))))
+		(PRN (PU ——)
+		     (NP (NP-PN (NR 郑永国))
+			 (CC 与)
+			 (NP (NN 史前陶))))) 
+	</parse>
+	<arg n="1">
+	一 个 世界 
+	</arg>
+	<arg n="2">
+	一 片 土 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (NN 影片))
+			(VP (VCD (VV 还原)
+				 (VV 现形)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	影片 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

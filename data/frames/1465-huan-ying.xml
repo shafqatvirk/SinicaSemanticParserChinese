@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 欢迎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity extending welcome"/>
+      <role argnum="1" argrole="entity receiving welcome"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 德))
+			  (NP (NN 外长)))
+		  (VP (VV 欢迎)
+		      (NP-OBJ (NP-PN (NR 北约))
+			      (DNP (PP (P 对)
+				       (NP (NN 塞族)))
+				   (DEG 的))
+			      (ADJP (JJ 最后))
+			      (NP (NN 通牒))))) 
+	  </parse>
+	  <arg n="0">
+	  德 外长 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  北约 对 塞族 的 最后 通牒 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (VV 代表)
+		      (NP-OBJ (NP-PN (NR 中国))
+			      (NP (NN 政府))))
+		  (VP (VV 欢迎)
+		      (NP-OBJ (NN 与会者))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (NP-TMP (NT 今年)
+				      (NT ９月))
+			      (VP (VP (VV 赴)
+				      (NP-PN-OBJ (NR 中国)
+						 (NR 香港)))
+				  (VP (VV 出席)
+				      (NP-OBJ (NP-PN (NN 国际)
+						     (NN 货币)
+						     (NN 基金)
+						     (NN 组织)
+						     (NN 临委会))
+					      (NP (NP (DP (DT 下)
+							  (QP (CD 一)
+							      (CLP (M 次))))
+						      (NP (NN 会议)))
+						  (CC 和)
+						  (NP (NT １９９７年)
+						      (NN 年会))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  与会者 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 今年 ９月 赴 中国 香港 出席 国际 货币 基金 组织 临委会 下 一 次 会议 和 １９９７年 年会 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发放 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="provider"/>
+      <role argnum="1" argrole="thing provided"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+		      (CP (IP (NP-PN-SBJ (NR 中国)
+					 (NN 银行))
+			      (VP (PP-DIR (P 向)
+					  (NP (NN 外商)
+					      (NN 投资)
+					      (NN 企业)))
+				  (ADVP (AD 累计))
+				  (VP (VV 发放)
+				      (NP-OBJ (-NONE- *T*-4)))))
+			  (DEC 的)))
+		  (NP (NN 外汇)
+		      (NN 现汇)
+		      (NN 贷款)
+		      (CC 和)
+		      (NN 人民币)
+		      (NN 贷款))) 
+	  </parse>
+	  <arg n="0">
+	  中国 银行 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-4 	  
+	  </arg>
+	  <arg n="2">
+	  向 外商 投资 企业 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  累计 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

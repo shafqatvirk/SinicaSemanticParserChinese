@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 准 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="allower"/>
+      <role argnum="1" argrole="entity allowed"/>
+      <role argnum="2" argrole="thing arg0 is allowed to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 监护)
+		      (NN 人员))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 得)
+			  (VP (VV 离开)
+			      (NP-OBJ (NN 抢救室)))))
+		  (PU ，)
+		  (VP (ADVP (AD 甚至))
+		      (ADVP (AD 不))
+		      (VP (VV 准)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 接)
+				      (NP-OBJ (NN 电话)))))))) 
+	  </parse>
+	  <arg n="1">
+	  监护 人员 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 接 电话 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  甚至 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

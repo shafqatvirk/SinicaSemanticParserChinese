@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拨付 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="payer"/>
+    <role argnum="1" argrole="fund"/>
+    <role argnum="2" argrole="payee"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+          (VP (PP-DIR (P 对)
+                      (NP (DP (DT 那)
+                              (CLP (M 个)))
+                          (NP (NN 地方))))
+              (VP (VP (VV 拨付)
+                      (NP-OBJ (NN 建设)
+                              (NN 资金)))
+                  (CC 和)
+                  (VP (VV 审批)
+                      (NP-OBJ (NN 建设)
+                              (NN 项目)))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="2"> 对 那 个 地方 </arg>
+	<V/>
+	<arg n="1"> 建设 资金 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+              (CP (IP (NP-SBJ (NN 公司))
+                      (VP (ADVP (AD 已经))
+                          (VP (VV 拨付)
+                              (NP-OBJ (-NONE- *T*-3)))))
+                  (DEC 的)))
+          (DP (DT 各)
+              (CLP (M 项)))
+          (NP (NN 奖金))))
+	</parse>
+	<arg n="0"> 公司 </arg>
+	<arg n="M" f="ADV"> 已经 </arg>
+	<V/>
+	<arg n="1"> (*T*-3)->(各项奖金) </arg>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="payer"/>
+    <role argnum="1" argrole="fund"/>
+    <role argnum="2" argrole="payee"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DNP (QP (ADVP (AD 近))
+                       (QP (CD 百分之七十)))
+                   (DEG 的))
+              (NP (NN 贷款)))
+      (VP (VC 是)
+          (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-2))
+                              (VP (PP-MNR (P 通过)
+                                          (NP (NP-PN (NR 中国)
+                                                     (NN 银行)
+                                                     (NN 总行))
+                                              (CC 及)
+                                              (NP (NP (PN 其))
+                                                  (NP (NN 分支)
+                                                      (NN 机构)))))
+                                  (VP (VRD (VV 拨付)
+                                           (VV 到))
+                                      (NP-OBJ (NN 企业)))))
+                          (DEC 的)))))))
+	</parse>
+	<arg n="1"> (*T*-2)->(近百分之七十的贷款) </arg>
+	<arg n="M" f="MNR"> 通过 中国 银行 总行 及 其 分支 机构 </arg>
+	<V/>
+	<arg n="2"> 企业 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

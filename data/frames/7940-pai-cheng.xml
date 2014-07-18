@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拍成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes"/>
+    <role argnum="2" argrole="thing/condition arg1 is made to be like "/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-1 (PU 「)
+		      (ADVP (AD 但))
+		      (IP-Q-SBJ (NP-SBJ (NN 电影))
+				(VP (VV 会)
+				    (VP (VV 拍成)
+					(NP-OBJ (DP-WH (DT 什麽))
+						(NP (NN 样子))))))
+		      (PU ，)
+		      (VP (VP (VE 有)
+			      (NP-OBJ (ADJP (ADVP (AD 太))
+					    (ADJP (JJ 多)))
+				      (NP (NN 变数))))
+			  (PU ，)
+			  (VP (PP-LOC (P 在)
+				      (LCP (NP (NN 企画案))
+					   (LC 中)))
+			      (VP (VPT (VV 看)
+				       (AD 不)
+				       (VV 出来))))))
+	    (PU ，)
+	    (PU 」)
+	    (NP-SBJ (NP-APP (NP-PN (NN 新闻局))
+			    (NP (NN 电影处))
+			    (ADJP (JJ 专门))
+			    (NP (NN 委员)))
+		    (NP-PN (NR 陈俊哲)))
+	    (VP (VV 说)
+		(IP-OBJ (-NONE- *T*-1)))) 
+	</parse>
+	<arg n="1">
+	电影 
+	</arg>
+	<arg n="2">
+	什麽 样子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

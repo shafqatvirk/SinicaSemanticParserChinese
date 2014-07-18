@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 嫁给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="marrying person"/>
+      <role argnum="1" argrole="married to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 到)
+			  (AS 了)
+			  (NP-OBJ (NN 结婚)
+				  (NN 年龄))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 却))
+		  (VP (VE 没有)
+		      (IP-OBJ (NP-SBJ (NN 姑娘))
+			      (VP (VV 愿意)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 嫁给)
+					      (NP-OBJ (PN 他))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  他 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

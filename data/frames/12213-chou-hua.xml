@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹画 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 plans and designs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (DP (DT 本)
+				   (CLP (M 届)))
+			       (NP (PU 「)
+				   (NP-PN (NR 法国))
+				   (NP (NN 国家)
+				       (NN 主题馆))
+				   (PU 」)))
+			   (DEG 的))
+		      (ADJP (JJ 精心))
+		      (NP (NN 筹画)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 颇))
+		  (VP (VV 具)
+		      (NP-OBJ (NN 特色))))) 
+	  </parse>
+	  <arg n="1">
+	  本 届 「 法国 国家 主题馆 」 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  精心 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

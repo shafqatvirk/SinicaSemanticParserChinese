@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 簇成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="components, parts"/>
+      <role argnum="1" argrole="whole"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 簇成)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 部)))
+			  (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VCD (VA 灿烂)
+					       (VA 辉煌))))
+				  (DEC 的)))
+			  (NP (NN 书史))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  一 部 *OP* *T*-3 灿烂 辉煌 的 书史 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

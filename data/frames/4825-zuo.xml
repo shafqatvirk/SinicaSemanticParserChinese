@@ -1,0 +1,145 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people sitting"/>
+      <role argnum="1" argrole="location arg0 sits"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 运动员)
+		      (PU 、)
+		      (NN 教练员)
+		      (PU 、)
+		      (NN 医生)
+		      (PU 、)
+		      (NN 护士)
+		      (CC 和)
+		      (NN 代表团)
+		      (NN 官员))
+	      (VP (DVP (VP (VA 整齐))
+		       (DEV 地))
+		  (VP (VV 坐)
+		      (PP-LOC (P 在)
+			      (NP (NN 台下)))))) 
+	  </parse>
+	  <arg n="0">
+	  运动员 、 教练员 、 医生 、 护士 和 代表团 官员 
+	  </arg>
+	  <arg n="1">
+	  在 台下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  整齐 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 相信)
+		  (IP-OBJ (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 坐)
+					   (ADVP (AD 在一起))))
+				   (LC 后))
+			  (PU ，)
+			  (NP-SBJ (NN 分歧))
+			  (VP (ADVP (AD 依然))
+			      (VP (VV 存在)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在一起 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="vehicle arg0 rides on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-DIR (P 从)
+			      (NP-PN (NR 深圳)))
+		      (VP (VV 坐)
+			  (NP-OBJ (NN 汽车))
+			  (PP (P 到)
+			      (NP-PN (NR 广州)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  汽车 
+	  </arg>
+	  <arg n="m" f="adv">
+	  到 广州 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 深圳 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 我们)
+			  (CC 和)
+			  (PN 她))
+		  (VP (ADVP (AD 至少))
+		      (ADVP (AD 还))
+		      (VP (VV 可以)
+			  (VP (VP (VP (VRD (VV 坐)
+					   (VV 下来)))
+				  (VP (VV 交换)
+				      (NP-OBJ (NN 看法))))
+			      (PU ，)
+			      (VP (VV 缩小)
+				  (NP-OBJ (DNP (NP (PN 双方))
+					       (DEG 的))
+					  (NP (NN 距离)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 和 她 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  至少 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

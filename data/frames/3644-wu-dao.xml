@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 误导 </id>
+    <frameset id="f1" edef="mislead">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity misled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 构思)
+		  (IP-OBJ (PP-DIR (P 对)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 曾))
+						      (VP (VP (ADVP (AD 公开))
+							      (VP (VV 声明)))
+							  (VP (VV 误导)
+							      (NP-OBJ (NN 投资者)))
+							  (VP (VV 令)
+							      (NP-OBJ (PN 其))
+							      (IP (NP-SBJ (-NONE- *PRO*))
+								  (VP (VV 损失)))))))
+					      (DEC 的)))
+				      (NP (NN 上市)
+					  (NN 公司)
+					  (CC 或)
+					  (NN 中介)
+					  (NN 团体))))
+			  (PU ，)
+			  (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 需)
+			      (VP (VV 承担)
+				  (NP-OBJ (NN 民事)
+					  (NN 责任))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  投资者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="misleading">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (ADVP (AD 最))
+					      (VP (VA 有效)))
+					  (PU 、)
+					  (VP (ADVP (AD 却))
+					      (ADVP (AD 也))
+					      (ADVP (AD 最))
+					      (VP (VA 误导)))))
+				  (DEC 的)))
+			  (NP (NN 号召)
+			      (NN 方式))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

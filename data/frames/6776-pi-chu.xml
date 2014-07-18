@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 僻处 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is located"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (NP (CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-3))
+				    (VP (VV 僻处)
+					(NP-PN-OBJ (NR 南投))))
+				(DEC 的)))
+			(NP-PN (NR 暨南)
+			       (NN 大学)))
+		    (CC 和)
+		    (NP (DNP (NP-PN (NR 嘉义))
+			     (DEG 的))
+			(NP-PN (NR 中正)
+			       (NN 大学))))
+	    (PU ，)
+	    (VP (ADVP (AD 同样))
+		(VP (VE 有)
+		    (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-4))
+					(VP (VA 一流)))
+				    (DEC 的)))
+			    (NP (NN 师资)
+				(CC 和)
+				(NN 课程)))))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<arg n="1">
+	南投 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

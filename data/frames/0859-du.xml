@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 度 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="time"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (ADVP (AD 始终))
+		      (ADVP (AD 不))
+		      (VP (VV 能)
+			  (VP (VV 获得)
+			      (NP-OBJ (NN 信任)))))
+		  (PU ，)
+		  (VP (ADVP (AD 虚))
+		      (VP (VV 度)
+			  (AS 了)
+			  (NP-OBJ (NN 青春)
+				  (NN 年华)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  青春 年华 
+	  </arg>
+	  <arg n="m" f="adv">
+	  虚 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

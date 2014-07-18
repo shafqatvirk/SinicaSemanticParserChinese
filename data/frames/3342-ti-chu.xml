@@ -1,0 +1,151 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing put forward"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 陕西省))
+	      (VP (VV 提出)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (NP-TMP (NT 明年))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NP (DP (DT 全))
+						      (NP (NN 省)))
+						  (ADJP (JJ 国有))
+						  (ADJP (JJ 小))
+						  (NP (NN 企业)))
+					  (VP (ADVP (AD 基本上))
+					      (VP (VCD (VV 放开)
+						       (VV 搞活)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  陕西省 	  
+	  </arg>
+	  <arg n="1">
+	  *pro* 明年 将 全 省 国有 小 企业 基本上 放开 搞活 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NN 经济)
+			  (NN 专家))
+		  (VP (VV 提出)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (ADVP (AD 进一步))
+					      (VP (VV 扩大)
+						  (NP-OBJ (NP-PN (NR 海南))
+							  (PP (P 对)
+							      (NP (NN 外)))
+							  (NP (NN 开放))))))
+				      (DEC 的))
+			      (NP (NN 系列)
+				  (NN 建议))))) 
+	  </parse>
+	  <arg n="0">
+	  经济 专家 	  
+	  </arg>
+	  <arg n="1">
+	  *pro* 进一步 扩大 海南 对 外 开放 的 系列 建议 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 举行)
+				      (NP-OBJ (ADJP (JJ 秘密))
+					      (NP (NN 会议)))))
+			      (DEC 的))
+		      (NP (NN 提案)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (PP-LGS (P 由)
+						  (NP-PN (NR 英国)))
+					  (VP (VV 提出))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 英国 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 份)))
+		      (NP (NN 报告)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-LGS (P 由)
+						  (NP (DNP (NP (NP-PN (NR 美国))
+							       (NP (NP-PN (NR 哈佛)
+									  (NN 大学))
+								   (CC 和)
+								   (NP-PN (NR 加州)
+									  (NN 大学))))
+							   (DEG 的))
+						      (ADJP (JJ 知名))
+						      (NP (NN 专家)
+							  (NN 学者))))
+					  (PP-MNR (P 经过)
+						  (LCP (NP (DNP (NP (QP (ADVP (AD 近))
+									(QP (CD ６)
+									    (CLP (M 个))))
+								    (NP (NN 月)))
+								(DEG 的))
+							   (NP (NN 研究)))
+						       (LC 后)))
+					  (VP (VV 提出)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 美国 哈佛 大学 和 加州 大学 的 知名 专家 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  经过 近 ６ 个 月 的 研究 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

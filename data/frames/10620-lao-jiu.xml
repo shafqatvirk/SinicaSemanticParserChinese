@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 老旧 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 当)
+		    (IP (NP-SBJ (NN 林业))
+			(VP (ADVP (AD 逐渐))
+			    (VP (VV 失色)))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 藏)
+				    (PP (P 在)
+					(NP-PN-OBJ (NR 中央)
+						   (NN 山脉)))))
+			    (DEC 的)))
+		    (NP (ADJP (JJ 日据))
+			(NP (NN 时代)))
+		    (NP (NN 林班)
+			(NN 房舍)))
+	    (VP (VCD (VA 老旧)
+		     (VA 荒废)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 藏 在 中央 山脉 的 日据 时代 林班 房舍 
+	</arg>
+	<arg n="m" f="tmp">
+	当 林业 逐渐 失色 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

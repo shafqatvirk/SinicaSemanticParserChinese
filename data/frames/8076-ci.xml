@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 书))
+		       (LC 中))
+	      (VP (VP (VV 批)
+		      (NP-PN-OBJ (NR 孔子)))
+		  (PU 、)
+		  (VP (VV 评)
+		      (NP-PN-OBJ (NR 孟子)))
+		  (PU 、)
+		  (VP (VV 刺)
+		      (NP-PN-OBJ (NR 韩非))))) 
+	  </parse>
+	  <arg n="1">
+	  韩非 
+	  </arg>
+	  <arg n="m" f="loc">
+	  书 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

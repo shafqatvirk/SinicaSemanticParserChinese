@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 digs out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PU ——)
+	    (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 并))
+		    (VP (VV 没有)
+			(VP (VV 掏)
+			    (NP-OBJ (NN 钱)))))
+		(PU ，)
+		(VP (ADVP (AD 只是))
+		    (VP (VV 说)
+			(PU ：)
+			(IP-OBJ (NP-SBJ (PN 我))
+				(VP (ADVP (AD 一会))
+				    (VP (VV 回头)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 买)))))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	钱 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

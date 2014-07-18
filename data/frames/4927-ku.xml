@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 哭 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person weeping"/>
+    <role argnum="1" argrole="entity arg0 weeps for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP (NN 贫家))
+		    (QP (CD 一)
+			(CLP (M 盏)))
+		    (NP (NN 灯)))
+	    (PU ，)
+	    (NP-SBJ (NN 父子))
+	    (VP (ADVP (AD 相对))
+		(VP (VV 哭)))) 
+	</parse>
+	<arg n="0">
+	父子 
+	</arg>
+	<arg n="m" f="adv">
+	相对 
+	</arg>
+	<arg n="m" f="tpc">
+	贫家 一 盏 灯 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ-Q (NP-IJ (ADJP (JJ 傻))
+			 (NP (NN 孩子)))
+		  (PU ，)
+		  (IP-ADV (NP-SBJ (PN 自己)
+				  (NN 民族))
+			  (VP (VV 战胜)
+			      (AS 了)))
+		  (PU ，)
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 还))
+		      (VP (VE 有)
+			  (NP-OBJ (NP-WH (PN 什麽))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 好))
+						  (VP (VV 哭))))
+					  (DEC 的))))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	好 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

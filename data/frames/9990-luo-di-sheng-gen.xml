@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 落地生根 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 takes root"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 中南部)))
+	      (VP (ADVP (AD 也))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 许多))
+				      (NP (NN 剧团)))
+			      (VP (ADVP (AD 逐渐))
+				  (VP (VV 落地生根))))))) 
+	  </parse>
+	  <arg n="0">
+	  许多 剧团 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐渐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

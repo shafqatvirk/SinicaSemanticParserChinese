@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承包 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="renter"/>
+      <role argnum="1" argrole="thing rented"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 赫风英))
+	      (VP (VP (VV 承包)
+		      (AS 了)
+		      (NP-OBJ (DNP (QP (CD 六百)
+				       (CLP (M 平方米)))
+				   (DEG 的))
+			      (NP (NN 蔬菜)
+				  (NN 大棚))))
+		  (PU ，)
+		  (VP (VV 种植)
+		      (NP-OBJ (NN 葫芦))))) 
+	  </parse>
+	  <arg n="0">
+	  赫风英 
+	  </arg>
+	  <arg n="1">
+	  六百 平方米 的 蔬菜 大棚 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

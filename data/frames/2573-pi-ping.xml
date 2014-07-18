@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 批评 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="critic"/>
+      <role argnum="1" argrole="thing critized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 法))
+		  (VP (VV 批评)
+		      (NP-OBJ (NP-PN (NR 美国))
+			      (DNP (PP (P 对)
+				       (NP-PN (NR 古巴)))
+				   (DEG 的))
+			      (NP (NN 禁运)
+				  (NN 政策))))) 
+	  </parse>
+	  <arg n="0">
+	  法 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  美国 对 古巴 的 禁运 政策 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="critic"/>
+      <role argnum="1" argrole="person criticized"/>
+      <role argnum="2" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 批评)
+		  (NP-PN-OBJ (NR 美国))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 在))
+			  (PP-MNR (P 用)
+				  (NP (QP (CD 一)
+					  (CLP (M 种)))
+				      (CP (PU “)
+					  (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VA 原始)))
+					      (DEC 的))
+					  (PU ”))
+				      (NP (NN 办法))))
+			  (VP (VV 对付)
+			      (NP-PN-OBJ (NR 古巴))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  美国 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 在 用 一 种 “ *OP*- (*T*-1)->(办法) 原始 的 ” 办法 对付 古巴 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

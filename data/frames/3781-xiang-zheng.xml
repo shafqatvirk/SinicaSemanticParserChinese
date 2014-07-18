@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 象征 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 symbolizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 背面))
+	      (VP (VP (VC 是)
+		      (NP-PRD (QP (CD 一)
+				  (CLP (M 座)))
+			      (NP (NN 桥))))
+		  (PU ，)
+		  (VP (VV 象征)
+		      (AS 着)
+		      (NP-OBJ (NN 交流)
+			      (CC 与)
+			      (NN 沟通))))) 
+	  </parse>
+	  <arg n="0">
+	  背面 
+	  </arg>
+	  <arg n="1">
+	  交流 与 沟通 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 正面))
+			   (DEG 的))
+		      (NP (NN 图案)))
+	      (VP (VP (VC 是)
+		      (NP-PRD (DNP (NP (NN 窗户)
+				       (CC 和)
+				       (NN 建筑物))
+				   (DEG 的))
+			      (NP (NN 大门))))
+		  (PU ，)
+		  (VP (VV 象征)
+		      (AS 着)
+		      (IP-OBJ (NP-PN-SBJ (NR 欧洲))
+			      (VP (PP-DIR (P 向)
+					  (NP (NN 世界)))
+				  (VP (VV 开放))))))) 
+	  </parse>
+	  <arg n="0">
+	  正面 的 图案 
+	  </arg>
+	  <arg n="1">
+	  欧洲 向 世界 开放 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

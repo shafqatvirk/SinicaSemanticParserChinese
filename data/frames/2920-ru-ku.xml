@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入库 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing entering warehouse"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (VE 有)
+						  (NP-OBJ (ADJP (JJ 特殊))
+							  (NP (NN 困难))))
+					      (VP (VV 需要)
+						  (VP (VV 缓缴)
+						      (NP-OBJ (NN 税款))))))
+				      (DEC 的)))
+			      (NP (NN 企业))))
+		  (PU ，)
+		  (VP (VV 要)
+		      (VP (VP (PP-MNR (P 依)
+				      (NP (NN 法)))
+			      (ADVP (AD 从严))
+			      (VP (VV 审批)))
+			  (PU ，)
+			  (CC 并)
+			  (VP (PP-TMP (P 在)
+				      (LCP (IP (NP-SBJ (NN 缓缴期))
+					       (VP (VV 满)))
+					   (LC 后)))
+			      (ADVP (AD 即))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NN 税款))
+					  (VP (VCD (VV 补缴)
+						   (VV 入库))))))))
+		  (PU ，)
+		  (VP (ADVP (AD 绝))
+		      (ADVP (AD 不))
+		      (VP (VV 允许)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (PP-MNR (P 以)
+						  (NP (NN 困难)))
+					  (VP (VV 为)
+					      (NP-OBJ (NN 由))))
+				      (VP (ADVP (AD 长期))
+					  (VP (VV 拖欠)
+					      (NP-OBJ (NN 国家)
+						      (NN 税款)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  税款 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 缓缴期 满 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

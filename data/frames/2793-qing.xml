@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 庆 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing celebrated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (QP (CD 四千))
+			  (NP (NN 嘉宾)))
+		  (VP (ADVP (AD 共))
+		      (VP (VV 庆)
+			  (NP-OBJ (NN 回归))))) 
+	  </parse>
+	  <arg n="0">
+	  四千 嘉宾 
+	  </arg>
+	  <arg n="1">
+	  回归 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

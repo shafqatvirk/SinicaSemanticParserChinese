@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 载来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="carrier"/>
+    <role argnum="1" argrole="thing arg0 carries"/>
+    <role argnum="2" argrole="place arg1 is carried to"/>
+    <role argnum="3" argrole="place arg1 is carried from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 还))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 发)
+						    (AS 著)
+						    (NP-OBJ (QP (CD 一)
+								(CLP (M 股)))
+							    (ADJP (JJ 腥膻))
+							    (NP (NN 味道)))))
+					    (DEC 的)))
+				    (NP (NN 骆驼)))
+			    (VP (PP-DIR (P 自)
+					(NP (NN 远方)))
+				(VP (VV 载来)
+				    (NP-OBJ (NP-APP (NP (NP (NN 香料))
+							(CC 或是)
+							(NP (ADJP (JJ 蕃))
+							    (NP (NN 笛))))
+						    (ETC 等))
+					    (NP (NN 外国)
+						(NN 货))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 发 著 一 股 腥膻 味道 的 骆驼 
+	</arg>
+	<arg n="1">
+	香料 或是 蕃 笛 等 外国 货 
+	</arg>
+	<arg n="3">
+	自 远方 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

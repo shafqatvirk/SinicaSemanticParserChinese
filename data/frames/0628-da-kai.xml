@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT ７０年代))
+		       (LC 初))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-PN-APP (NR 中)
+				     (NR 美))
+			  (QP (CD 两))
+			  (NP (NN 国)))
+		      (NP (NN 领导人)))
+	      (VP (PP-MNR (P 以)
+			  (NP (DNP (NP (NN 政治家))
+				   (DEG 的))
+			      (NP (NN 远见)
+				  (NN 卓识)
+				  (CC 和)
+				  (NN 胆略))))
+		  (PU ，)
+		  (ADVP (AD 果断))
+		  (VP (VV 打开)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NP-PN (NR 中)
+					      (NR 美))
+				       (NP (NN 交往)))
+				   (DEG 的))
+			      (NP (NN 大门)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中 美 两 国 领导人 
+	  </arg>
+	  <arg n="1">
+	  中 美 交往 的 大门 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ７０年代 初 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 政治家 的 远见 卓识 和 胆略 
+	  </arg>
+	  <arg n="m" f="adv">
+	  果断 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

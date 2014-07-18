@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 本地化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity localized"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (NP (NP-PN (NR 澳门))
+		    (NP (NN 政府)))
+		(CP-APP (IP (PU 「)
+			    (NP-SBJ (NN 公务员))
+			    (VP (VV 本地化))
+			    (PU 」))
+			(DEC 的))
+		(NP (NN 政策))) 
+	</parse>
+	<arg n="1">
+	公务员 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity localized"/>
+    <role argnum="2" argrole="entity arg1 is changed into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NP-PN (NR 葡国))
+				 (NP (NN 政权)))
+			 (VP (VV 转移)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 大量))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (NP-TMP (NN 殖民地)
+					    (NN 时期))
+				    (VP (VV 留下)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 葡文)
+			(NN 法律)))
+	    (VP (VP (VV 要)
+		    (VP (VCD (VV 修改)
+			     (VV 重建))))
+		(PU ，)
+		(VP (VV 要)
+		    (VP (VRD (PU 「)
+			     (VV 本地化)
+			     (PU 」)
+			     (VV 为))
+			(NP-OBJ (NN 中文)))))) 
+	</parse>
+	<arg n="1">
+	大量 *OP* *pro* 殖民地 时期 留下 *T*-1 的 葡文 法律 
+	</arg>
+	<arg n="2">
+	中文 
+	</arg>
+	<arg n="m" f="tmp">
+	葡国 政权 转移 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

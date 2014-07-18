@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 介乎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entities arg0 lies between"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 另外))
+	      (PP-PRP (P 由于)
+		      (IP (NP-TPC (QP (CD 部分))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (ADVP (AD 新))
+						  (VP (VV 发展)
+						      (NP-OBJ (-NONE- *T*-1)))))
+					  (DEC 的)))
+				  (NP (NN 衍生)
+				      (NN 工具)))
+			  (PU ，)
+			  (NP-SBJ (NN 性质))
+			  (VP (VV 介乎)
+			      (LCP-OBJ (NP (NN 期货)
+					   (CC 与)
+					   (NN 证券))
+				       (LC 之间)))))
+	      (PU ，)
+	      (NP-TMP (NT 未来))
+	      (NP-SBJ (DNP (PP (P 在)
+			       (NP (NN 互联网)))
+			   (DEG 的))
+		      (NP (NN 交易)))
+	      (VP (VV 会)
+		  (VP (ADVP (AD 更加))
+		      (VP (VA 困难))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  性质 
+	  </arg>
+	  <arg n="0" f="psr">
+	  部分 *OP* *pro* 新 发展 *T*-1 的 衍生 工具 
+	  </arg>
+	  <arg n="1">
+	  期货 与 证券 之间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

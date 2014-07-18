@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 岂有此理 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-SBJ (DNP (NP (NN 父亲))
+			     (DEG 的))
+			(NP (NN 胳臂)))
+		(VP (ADVP (AD 往外))
+		    (VP (VV 弯))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 真))
+		    (VP (VC 是)
+			(VP (VV 岂有此理)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	真 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

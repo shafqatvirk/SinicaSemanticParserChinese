@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 延 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 extends"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-CND (NP-SBJ (NN 戏))
+		    (VP (VV 卖座)))
+	    (PU ，)
+	    (NP-SBJ (NN 电视台))
+	    (VP (ADVP (AD 就))
+		(VP (VV 想)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 延)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

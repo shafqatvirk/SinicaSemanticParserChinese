@@ -1,0 +1,218 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 实行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="implementer"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="target"/>
+      <role argnum="3" argrole="duration"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 国家))
+		(VP (VV 取消)
+		    (AS 了)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (PP-DIR (P 对)
+						    (NP (ADJP (JJ 国有))
+							(NP (NN 商业)
+							    (NN 银行))))
+					    (VP (VV 实行)
+						(NP-OBJ (-NONE- *T*-1))
+						(QP-EXT (CD 多)
+							(CLP (M 年))))))
+				    (DEC 的)))
+			    (NP (NN 贷款)
+				(NN 限额)
+				(NN 控制)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="2">
+	  对 国有 商业 银行 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*T*-1)->(贷款限额控制) 	  
+	  </arg>
+	  <arg n="3">
+	  多年 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九五四年)
+		      (CC 至)
+		      (NT 一九五八年))
+	      (PU ，)
+	      (NP-SBJ (NN 国家))
+	      (VP (PP-DIR (P 对)
+			  (NP (PN 其)))
+		  (VP (VV 实行)
+		      (NP-OBJ (NN 计划)
+			      (NN 单列)
+			      (NN 体制))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国家 	  
+	  </arg>
+	  <arg n="2">
+	  对其 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  计划 单列 体制 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 陕西省))
+	      (VP (PP-DIR (P 对)
+			  (NP (NP (NN 旅游)
+				  (NN 景点))
+			      (PU 、)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 开放)))
+					  (DEC 的)))
+				  (NP (NN 文)
+				      (NN 博)
+				      (NN 单位)))))
+		  (VP (VV 实行)
+		      (IP-OBJ (IP (NP-SBJ (NN 政)
+					  (NN 企))
+				  (VP (VV 分开)))
+			      (PU 、)
+			      (IP (NP-SBJ (NN 事)
+					  (NN 企))
+				  (VP (VV 分开)))
+			      (PU 、)
+			      (IP (NP-SBJ (NN 所有权)
+					  (CC 与)
+					  (NN 经营权))
+				  (VP (VV 分离))))))) 
+	  </parse>
+	  <arg n="0">
+	  陕西省 
+	  </arg>
+	  <arg n="2">
+	  对 旅游 景点 、 *OP* *T*-1 开放 的 文 博 单位 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  政 企 分开 、 事 企 分开 、 所有权 与 经营权 分离 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此外 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 继续)
+			  (VP (VV 实行)
+			      (NP-OBJ (IP-APP (NP-SBJ (NN 金融))
+					      (VP (PP-DIR (P 对)
+							  (NP (NN 外)))
+						  (VP (VV 开放))))
+				      (NP (NN 政策))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  金融 对 外 开放 政策 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-12 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-12))
+				  (VP (PP-MNR (P 用)
+					      (NP (NN 新疆棉)))
+				      (VP (VP (VV 顶)
+					      (NP-OBJ (NN 进口棉)))
+					  (VP (VV 出口)))))
+			      (DEC 的)))
+		      (NP (NN 产品)))
+	      (VP (VV 实行)
+		  (NP-OBJ (NN 零税率)))) 
+	  </parse>
+	  <arg n="2">
+	  *OP* *T*-12 用 新疆棉 顶 进口棉 出口 的 产品 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  零税率 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 经济)
+			  (CC 及)
+			  (NN 金融))
+		      (NP (NN 改革)
+			  (NN 措施)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 能)
+		      (VP (VCD (VV 贯彻)
+			       (VV 实行)))))) 
+	  </parse>
+	  <arg n="1">
+	  经济 及 金融 改革 措施 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

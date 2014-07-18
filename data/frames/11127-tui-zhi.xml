@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 推知 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 predicts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-4 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-4))
+			(VP (ADVP (AD 无从))
+			    (VP (VV 推知))))
+		    (DEC 的)))
+	    (NP (NT 未来))) 
+	</parse>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<arg n="m" f="adv">
+	无从 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

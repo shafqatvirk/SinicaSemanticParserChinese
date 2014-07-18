@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 退回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity returned"/>
+      <role argnum="2" argrole="entity returned to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 消费者))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 使用)
+				   (NP-OBJ (NN 产品))))
+			   (LC 後))
+		  (PU ，)
+		  (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 若))
+			      (VP (VV 觉得)
+				  (IP-OBJ (NP-SBJ (NN 品质))
+					  (VP (ADVP (AD 不))
+					      (VP (VA 合)))))))
+		  (PU ，)
+		  (VP (VV 应)
+		      (VP (VP (VE 有)
+			      (NP-OBJ (NN 权利)))
+			  (VP (VV 退回)
+			      (NP-OBJ (NN 货品))))))) 
+	  </parse>
+	  <arg n="0">
+	  消费者 	  
+	  </arg>
+	  <arg n="1">
+	  货品 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 若 觉得 品质 不 合 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 使用 产品 後 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 retreats to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <arg n="1">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

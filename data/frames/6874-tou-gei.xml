@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 投给 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 casts"/>
+    <role argnum="2" argrole="entity arg1 is cast to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 外省))
+		    (NP (NN 族群)))
+	    (VP (ADVP (AD 几乎))
+		(ADVP (AD 都))
+		(VP (VV 投给)
+		    (NP-PN-OBJ (NR 马英九))))) 
+	</parse>
+	<arg n="0">
+	外省 族群 
+	</arg>
+	<arg n="2">
+	马英九 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

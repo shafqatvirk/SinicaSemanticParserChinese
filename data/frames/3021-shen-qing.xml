@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 申请 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing applied for"/>
+      <role argnum="2" argrole="applying to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 求职者))
+	      (VP (VV 可)
+		  (VP (VP (NP-ADV (NN 即场))
+			  (VP (VV 登记)))
+		      (PU ，)
+		      (VP (VV 申请)
+			  (NP-OBJ (DP (DT 这些))
+				  (NP (NN 空缺))))))) 
+	  </parse>
+	  <arg n="0">
+	  求职者 	  
+	  </arg>
+	  <arg n="1">
+	  这些 空缺 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 持证人))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 可)
+		      (VP (VV 申请)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 换发)
+				      (NP-OBJ (NN 通行证)))))))) 
+	  </parse>
+	  <arg n="0">
+	  持证人 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 换发 通行证 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 符合)
+				      (NP-OBJ (NN 条件))))
+			      (DEC 的)))
+		      (NP (NN 中资)
+			  (NN 企业)))
+	      (VP (VP (IP-ADV (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-DIR (P 从)
+					  (NP (NT 今年)
+					      (NT 十月)
+					      (NT 十五日)))
+				  (VP (VV 起))))
+		      (PU ，)
+		      (VP (VV 可以)
+			  (VP (PP-DIR (P 向)
+				      (NP (NP (NN 当地))
+					  (NP-PN (NN 国家)
+						 (NN 外汇)
+						 (NN 管理局))))
+			      (VP (VV 申请)))))
+		  (PU ，)
+		  (VP (LCP-TMP (PP (P 经)
+				   (IP (NP-SBJ (-NONE- *pro*))
+				       (VP (VV 批准))))
+			       (LC 后))
+		      (VP (VV 可以)
+			  (VP (VP (VV 到)
+				  (NP-OBJ (NP (NN 中资))
+					  (NP (NN 外汇))
+					  (ADJP (JJ 指定))
+					  (NP (NN 银行))))
+			      (VP-PRP (VV 开立)
+				      (NP-OBJ (NN 外汇)
+					      (NN 结算)
+					      (NN 帐户)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 符合 条件 的 中资 企业 	  
+	  </arg>
+	  <arg n="2">
+	  向 当地 国家 外汇 管理局 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *pro* 从 今年 十月 十五日 起 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

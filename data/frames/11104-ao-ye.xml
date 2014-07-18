@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 熬夜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person burning midnight oil"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 虽然))
+			(ADVP (AD 经常))
+			(PP-PRP (P 因)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 念书))
+					(PU 、)
+					(VP (VV 写)
+					    (NP-OBJ (NN 作业))))))
+			(VP (VV 熬夜)
+			    (PP (P 到)
+				(NP (NT 两)
+				    (PU 、)
+				    (NT 三点))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (NP-SBJ (PN 她))
+	    (VP (VV 认为)
+		(PU ，)
+		(IP-OBJ (IP (NP-SBJ (DNP (NP (ADJP (JJ 高阶))
+					     (NP (NN 管理班)))
+					 (DEG 的))
+				    (NP (NN 同学)))
+			    (VP (ADVP (AD 都))
+				(VP (VV 来自)
+				    (NP-OBJ (NP (NN 社会))
+					    (ADJP (JJ 不同))
+					    (NP (NN 领域))))))
+			(PU ，)
+			(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(IP (NP-SBJ (-NONE- *pro*))
+					    (VP (NP-ADV (-NONE- *T*-1))
+						(VP (VV 交流)))))
+				    (NP (NN 对象)))
+			    (VP (ADVP (AD 很))
+				(VP (VA 多元化))))
+			(PU ，)
+			(IP (NP-SBJ (NN 老师))
+			    (VP (ADVP (AD 也))
+				(ADVP (AD 常))
+				(VP (VV 灌输)
+				    (NP-OBJ (NN 新知)))))
+			(PU ，)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 让)
+				(NP-OBJ (NP (PN 她))
+					(NP (NN 头脑)))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (ADVP (AD 更))
+					(VP (VA 活泼))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	到 两 、 三点 
+	</arg>
+	<arg n="m" f="prp">
+	因 *PRO* 念书 、 写 作业 
+	</arg>
+	<arg n="m" f="adv">
+	经常 
+	</arg>
+	<arg n="m" f="adv">
+	虽然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 波及 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="affecter"/>
+    <role argnum="1" argrole="affectee"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DP (DT 这)
+                  (QP (CD 一)))
+              (NP (NN 风潮)))
+      (VP (ADVP (AD 还))
+          (ADVP (AD 广泛))
+          (VP (VV 波及)
+              (NP-OBJ (NP (NP (NP (NP (NN 药品))
+                                  (CC 和)
+                                  (NP (NN 医疗)
+                                      (NN 仪器)))
+                              (NP (NN 公司)))
+                          (PU 、)
+                          (NP (NP (NP (NN 电信))
+                                  (CC 和)
+                                  (NP (ADJP (JJ 高))
+                                      (NP (NN 技术))))
+                              (NP (NN 公司)))
+                          (CC 以及)
+                          (NP (NP (NN 零售)
+                                  (PU 、)
+                                  (NN 银行)
+                                  (CC 和)
+                                  (NN 铁路))
+                              (NP (NN 公司))))
+                      (ETC 等))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 这 一 风潮 </arg>
+	<arg n="M" f="ADV"> 还 </arg>
+	<arg n="M" f="ADV"> 广泛 </arg>
+	<V/>
+	<arg n="1"> 药品 和 医疗 仪器 公司 、 电信 和 高 技术 公司 以及 零售 、 银行 和 铁路 公司 等 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 妊娠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity pregnant with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 自然))
+				      (VP (VV 妊娠)
+					  (NP-OBJ (QP (CD 六)
+						      (CLP (M 胞)))
+						  (NP (NN 胎))))))
+			      (DEC 的))
+		      (NP (NN 机率)))
+	      (VP (VV 在)
+		  (QP-OBJ (CD 四千亿分之一)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  六 胞 胎 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			      (IP (QP-TPC (NP-PN (NR 中国))
+					  (QP (OD 首)
+					      (CLP (M 例)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 自然))
+						      (VP (VV 妊娠)))))
+					  (QP (CD 六)
+					      (CLP (M 胞)))
+					  (NP (NN 胎)))
+				  (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 存活))))
+			  (NP (NN 婴儿)))
+		  (NP-SBJ (NN 健康)
+			  (NN 状况))
+		  (VP (VA 良好))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP (NP-APP (DNP (QP (CD 三十三)
+								   (CLP (M 岁)))
+							       (DEG 的))
+							  (NP (NN 产妇)))
+						  (NP-PN (NR 姚红))))
+				      (VP (VP (ADVP (AD 自然))
+					      (VP (VV 妊娠)
+						  (NP-OBJ (-NONE- *-2))))
+					  (VP (VV 出生)
+					      (NP-OBJ (-NONE- *-2))))))
+			      (DEC 的)))
+		      (QP (NP-PN (NR 中国))
+			  (QP (OD 首)
+			      (CLP (M 例))))
+		      (QP (CD 六)
+			  (CLP (M 胞)))
+		      (NP (NN 胎)))
+	      (VP (NP-TMP (NT 目前))
+		  (VP (ADVP (AD 先后))
+		      (VP (VE 有)
+			  (IP-OBJ (QP-SBJ (CD 两)
+					  (CLP (M 名)))
+				  (VP (VV 死亡))))))) 
+	  </parse>
+	  <arg n="0">
+	  由 三十三 岁 的 产妇 姚红 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

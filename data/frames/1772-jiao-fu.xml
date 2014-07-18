@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缴付 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="payer"/>
+      <role argnum="1" argrole="thing paid"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP (CP (WHNP-3 (-NONE- *OP*))
+				       (IP (NP-SBJ (NN 中外))
+					   (VP (VSB (VV 合资)
+						    (VV 经营))
+					       (NP-OBJ (-NONE- *T*-3)))))
+				   (NP (NN 企业)))
+			       (DEG 的))
+			  (NP (NN 投资者)))
+		  (VP (ADVP (AD 均))
+		      (VP (VV 须)
+			  (VP (PP-MNR (P 按)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (NN 合同))
+						      (VP (VV 规定)
+							  (NP-OBJ (-NONE- *T*-1))))
+						  (DEC 的)))
+					  (NP (NN 比例)
+					      (CC 和)
+					      (NN 期限))))
+			      (ADVP (AD 同步))
+			      (VP (VV 缴付)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (VV 认缴)
+							  (NP-OBJ (-NONE- *T*-2))))
+						  (DEC 的)))
+					  (NP (NN 出资额)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 中外 合资 经营 *T*-3 企业 的 投资者 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 认缴 *T*-2 的 出资额 
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 *OP* 合同 规定 *T*-1 的 比例 和 期限 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-PRP (P 因)
+					  (NP (ADJP (JJ 特殊))
+					      (NP (NN 情况))))
+				  (ADVP (AD 不))
+				  (VP (VV 能)
+				      (VP (ADVP (AD 同步))
+					  (VP (VV 缴付))))))
+			  (DEC 的))))
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 特殊 情况 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同步 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

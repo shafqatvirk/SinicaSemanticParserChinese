@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 盖起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 builds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (QP (CD 七○))
+			 (NP (NN 年代)))
+		     (LC 起))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP-PN (NR 川西)
+				(NN 平原))
+			 (DEG 的))
+		    (DP (DT 各)
+			(CLP (M 个)))
+		    (ADJP (JJ 小))
+		    (NP (NN 村庄)))
+	    (VP (PP-PRP (P 因为)
+			(NP (NP (NN 都市)
+				(NN 发展))
+			    (NP (NN 需要))))
+		(PU ，)
+		(ADVP (AD 纷纷))
+		(VP (VV 盖起)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 就地))
+					    (VP (VV 取土))))
+				    (DEC 的)))
+			    (NP (NN 砖瓦厂)))))) 
+	</parse>
+	<arg n="0">
+	川西 平原 的 各 个 小 村庄 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 就地 取土 的 砖瓦厂 
+	</arg>
+	<arg n="m" f="adv">
+	纷纷 
+	</arg>
+	<arg n="m" f="prp">
+	因为 都市 发展 需要 
+	</arg>
+	<arg n="m" f="tmp">
+	七○ 年代 起 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (LCP (NP (NN 家))
+			      (LC 里))
+			 (DEG 的))
+		    (NP (NN 地)))
+	    (VP (ADVP (AD 都))
+		(VP (VV 盖起)
+		    (NP-OBJ (NN 房子))))) 
+	</parse>
+	<arg n="1">
+	房子 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="loc">
+	家 里 的 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飞行 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity flying"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (LCP-TMP (IP (NP-SBJ (NN 飞机))
+			     (VP (VV 飞行)))
+			 (LC 中))
+		(PU ，)
+		(NP-SBJ (NN 旅客))
+		(VP (VP (VV 必须)
+			(VP (NP-ADV (NN 全程))
+			    (VP (VV 关机))))
+		    (PU ，)
+		    (VP (ADVP (AD 以免))
+			(VP (VV 影响)
+			    (NP-OBJ (NN 飞航)
+				    (NN 安全)))))) 
+	</parse>
+	<arg n="0">
+	飞机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

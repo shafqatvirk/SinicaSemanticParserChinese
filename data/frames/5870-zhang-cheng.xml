@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 长成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 grows into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (P 从)
+		    (LCP (NP (DNP (QP (CD ○．三)
+				      (CLP (M 公分)))
+				  (DEG 的))
+			     (NP (NN 球果)))
+			 (LC 内)))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-2))
+				(NP-SBJ (NN 芝麻))
+				(VP (VA 般)))
+			    (DEC 的)))
+		    (NP (NN 种子)))
+	    (PU ，)
+	    (VP (VV 长成)
+		(NP-OBJ (DNP (NP (QP (CD 四十)
+				     (CLP (M 公尺)))
+				 (NP (NN 高)))
+			     (DEG 的))
+			(ADJP (JJ 参天))
+			(NP (NN 巨木))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 芝麻 般 的 种子 
+	</arg>
+	<arg n="1">
+	四十 公尺 高 的 参天 巨木 
+	</arg>
+	<arg n="m" f="dir">
+	从 ○．三 公分 的 球果 内 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

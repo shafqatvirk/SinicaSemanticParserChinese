@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搭对 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is correctly paired with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 加上)
+			  (IP-OBJ (NP-SBJ (NN 人))
+				  (VP (VV 搭对)
+				      (AS 了)
+				      (NP-OBJ (NN 歌))))))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-APP (NN 制作人))
+			  (NP-PN (NR 李聪菘)))
+		      (CP (WHNP-4 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-4))
+				  (VP (VP (VE 有)
+					  (NP-OBJ (NN 味道)))
+				      (VP (ADVP (AD 但))
+					  (ADVP (AD 又))
+					  (ADVP (AD 不))
+					  (ADVP (AD 那麽))
+					  (VP (VA 前卫)))))
+			      (DEC 的)))
+		      (NP (NN 曲风)))
+	      (PU ，)
+	      (VP (VV 让)
+		  (NP-PN-OBJ (NR 孙燕姿))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 不同於)
+			  (NP-OBJ (DP (DT 其他))
+				  (NP (PU 「)
+				      (NN 芭乐)
+				      (PU 」))
+				  (PRN (VP (PU （)
+					   (VV 迎合)
+					   (NP-OBJ (NN 市场))
+					   (PU ）)))
+				  (NP (NN 歌手))))))) 
+	  </parse>
+	  <arg n="0">
+	  人 
+	  </arg>
+	  <arg n="1">
+	  歌 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

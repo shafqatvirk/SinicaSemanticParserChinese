@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 比起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is in contrast to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 比起)
+			(NP-OBJ (DNP (NP (DP (DT 各)
+					     (CLP (M 组)))
+					 (NP (NN 候选人)))
+				     (DEG 的))
+				(NP (NN 热闹滚滚)))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 民进党)
+		       (NR 陈水扁))
+	    (VP (ADVP (AD 也))
+		(VP (VE 有)
+		    (NP-OBJ (NN 惊人之举))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	各 组 候选人 的 热闹滚滚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

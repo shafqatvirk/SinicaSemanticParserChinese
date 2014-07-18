@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 来往於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="locations arg0 travels between"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 趁著)
+		    (NP (NT 农历年)
+			(NN 假期)))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 来往於)
+				    (NP-OBJ (NP (NN 海峡))
+					    (QP (CD 两))
+					    (NP (NN 岸)))))
+			    (DEC 的)))
+		    (NP (NN 台商)))
+	    (VP (ADVP (AD 纷纷))
+		(VP (VP (VV 回来)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 过年))))
+		    (CC 并)
+		    (VP (PP (P 与)
+			    (NP (NN 家人)))
+			(VP (VV 团聚)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	海峡 两 岸 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 来往於)
+				      (LCP-LOC (NP (NN 校园)
+						   (CC 和)
+						   (NN 办公室))
+					       (LC 之间))))
+			      (DEC 的)))
+		      (NP (PN 他们)))
+	      (PU ，)
+	      (VP (VNV-WH (VE 有)
+			  (VE 没有))
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 蜡烛))
+				      (VP (NP-DIR (QP (CD 两))
+						  (NP (NN 头)))
+					  (VP (VV 烧))))
+				  (DEC 的))
+			  (NP (NN 感觉))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	校园 和 办公室 之间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

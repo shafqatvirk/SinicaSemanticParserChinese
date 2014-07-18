@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 连连 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (ADVP (AD 不))
+		      (ADVP (AD 就))
+		      (PP (P 因为)
+			  (IP (NP-SBJ (NN 景气))
+			      (VP (VV 看坏)))))
+	      (PU ，)
+	      (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (VV 开)
+					  (NP-OBJ (NN 花)
+						  (NN 店)))
+				      (PU 、)
+				      (VP (ADVP (AD 专))
+					  (VP (VV 卖)
+					      (NP-OBJ (NN 切花))))))
+			      (DEC 的)))
+		      (NP-APP (NN 老板))
+		      (NP-PN (NR 王年丰)))
+	      (ADVP (AD 近来))
+	      (NP-SBJ (NN 唉声))
+	      (VP (VV 连连))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *OP* *T*-1 开 花 店 、 专 卖 切花 的 老板 王年丰 
+	  </arg>
+	  <arg n="0" f="pse">
+	  唉声 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近来 
+	  </arg>
+	  <arg n="m" f="prp">
+	  不 就 因为 景气 看坏 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

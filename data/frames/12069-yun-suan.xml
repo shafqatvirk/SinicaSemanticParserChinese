@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运算 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="calculator"/>
+      <role argnum="1" argrole="calculated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 其中))
+	      (VP (VV 含有)
+		  (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 驱策)
+					      (NP-OBJ (NN 电脑)
+						      (NN 运算))))
+				      (DEC 的)))
+			      (ADJP (JJ 独门))
+			      (NP (NN 知识)))
+			  (PU ，)
+			  (CC 以及)
+			  (NP (CP-APP (IP (PU 「)
+					  (NP-PN-SBJ (NR 英特尔))
+					  (VP (VV 内建))
+					  (PU 」))
+				      (DEC 的))
+			      (NP (NN 品牌)
+				  (NN 威力)))))) 
+	  </parse>
+	  <arg n="0">
+	  电脑 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

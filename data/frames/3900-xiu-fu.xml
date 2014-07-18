@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 修复 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 目的))
+	      (VP (ADVP (AD 就))
+		  (VP (VC 是)
+		      (VP (VP (VV 修复)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (CC 和)
+			  (VP (VV 巩固)
+			      (NP-OBJ-1 (NP-PN (NR 俄))
+					(DNP (PP (P 在)
+						 (NP (DP (DT 该))
+						     (NP (NN 地区))))
+					     (DEG 的))
+					(NP (NN 传统)
+					    (NN 地位)))))))) 
+	  </parse>
+	  <arg n="0">
+	  目的 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*RNR*-1)->(俄 在 该 地区 的 传统 地位) 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-TMP (P 在)
+			  (LCP (NP (NP (NN 农历)
+				       (NT 八月)
+				       (NT 初三))
+				   (ADJP (JJ 大))
+				   (NP (NN 潮汛)))
+			       (LC 前)))
+		  (PU ，)
+		  (NP-SBJ (DNP (NP (NP (DP (DT 全))
+				       (NP (NN 市)))
+				   (ADJP (JJ 水毁))
+				   (NP (NN 堤坝)))
+			       (DEG 的))
+			  (NP (NN 绝大部分)))
+		  (VP (ADVP (AD 可望))
+		      (PP-MNR (P 用)
+			      (NP (NN 土筑)
+				  (NN 方式)))
+		      (ADVP (AD 应急性))
+		      (VP (VV 修复)))) 
+	  </parse>
+	  <arg n="1">
+	  全 市 水毁 堤坝 的 绝大部分 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  可望 
+	  </arg>
+	  <arg n="M" f="MNR">
+	  用 土筑 方式 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  应急性 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

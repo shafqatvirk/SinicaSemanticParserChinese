@@ -1,0 +1,129 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打造 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 builds"/>
+    <role argnum="2" argrole="entity arg1 is built with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 打造)
+		    (NP-OBJ (NP-PN (NR 台北))
+			    (NP (PU 「)
+				(ADJP (JJ 新))
+				(NP (NN 故乡))
+				(PU 」))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台北 「 新 故乡 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-TPC (QP (OD 一)
+			    (CLP (M 等)))
+			(NP (NN 国民)))
+		(PU ，)
+		(NP-SBJ (NN 生活)
+			(NN 周遭))
+		(VP (ADVP (AD 皆))
+		    (VP (VC 是)
+			(VP (NP-MNR (NN 重金))
+			    (VP (VV 打造)))))) 
+	</parse>
+	<arg n="1" f="psr">
+	一 等 国民 
+	</arg>
+	<arg n="1" f="pse">
+	生活 周遭 
+	</arg>
+	<arg n="2">
+	重金 
+	</arg>
+	<arg n="m" f="adv">
+	皆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg1"/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (IP (NP-TPC (-NONE- *T*-1))
+						     (NP-SBJ (NN 泥砖))
+						     (VP (VV 打造)))
+						 (PU 、)
+						 (IP (NP-SBJ (-NONE- *T*-1))
+						     (VP (VV 挑高))))
+					     (DEC 的)))
+				     (NP (NN 菸楼)))
+				 (LC 里)))
+		    (VP (VV 录音)))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	泥砖 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 才))
+		(VP (VRD (VV 打造)
+			 (VV 完成))
+		    (NP-OBJ (DP (DT 这)
+				(QP (CD 一)
+				    (CLP (M 座))))
+			    (ADJP (JJ 地下))
+			    (NP (NN 皇城)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	这 一 座 地下 皇城 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 瞪大 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing (eyes) arg0 opens wide"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 当场))
+	    (NP-SBJ (ADJP (JJ 澳洲籍))
+		    (ADJP (JJ 副))
+		    (NP (NN 导演)))
+	    (VP (VP (VV 瞪大)
+		    (NP-OBJ (NN 眼睛)))
+		(PU 、)
+		(VP (ADVP (AD 非常))
+		    (VP (VA 惊讶))))) 
+	</parse>
+	<arg n="0">
+	澳洲籍 副 导演 
+	</arg>
+	<arg n="1">
+	眼睛 
+	</arg>
+	<arg n="m" f="tmp">
+	当场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

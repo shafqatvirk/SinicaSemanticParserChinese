@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 throws out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (PP-TMP (P 在)
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TMP (-NONE- *T*-1))
+				    (IP (IP (NP-SBJ (NN 国内)
+						    (NN 财政))
+					    (VP (VV 吃紧)))
+					(PU ，)
+					(CC 且)
+					(IP (NP-SBJ (-NONE- *pro*))
+					    (VP (ADVP (AD 尚))
+						(VP (VE 有)
+						    (IP-OBJ (NP-SBJ (NN 天灾))
+							    (VP (ADVP (AD 未))
+								(VP (VV 弭平)))))))))
+				(DEG 之)))
+			(NP (NN 时)))
+		(PU ，)
+		(NP-SBJ (NN 政府))
+		(VP (ADVP (AD 还))
+		    (PP-LOC (P 在)
+			    (NP (NN 海外)))
+		    (VP (VV 撒)
+			(NP-OBJ (ADJP (JJ 大))
+				(NP (NN 钱)))))) 
+	</parse>
+	<arg n="0">
+	政府 
+	</arg>
+	<arg n="1">
+	大 钱 
+	</arg>
+	<arg n="m" f="loc">
+	在 海外 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *OP* *T*-1 国内 财政 吃紧 ， 且 *pro* 尚 有 天灾 未 弭平 之 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

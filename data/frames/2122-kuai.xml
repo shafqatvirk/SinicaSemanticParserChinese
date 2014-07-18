@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 快 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 发展)
+		      (NN 速度))
+	      (VP (VA 快))) 
+	  </parse>
+	  <arg n="0">
+	  发展 速度 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TPC (NN 化工)
+			  (NN 重点)
+			  (NN 项目))
+		  (NP-SBJ (NN 建设)
+			  (NN 进展))
+		  (VP (ADVP (AD 较))
+		      (VP (VA 快)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  建设 进展 
+	  </arg>
+	  <arg n="0" f="psr">
+	  化工 重点 项目 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NP (ADJP (JJ 初级))
+				  (NP (NN 产品)))
+			      (NP (NN 贸易)))
+		      (VP (VV 增长)))
+	      (VP (ADVP (AD 较))
+		  (VP (VA 快)))) 
+	  </parse>
+	  <arg n="0">
+	  初级 产品 贸易 增长 
+	  </arg>
+	  <arg n="m" f="adv">
+	  较 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

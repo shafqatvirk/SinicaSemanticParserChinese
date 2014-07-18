@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 摇摇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity shaken/waved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 当)
+		      (LCP (IP (NP-SBJ (NN 记者))
+			       (VP (VV 问)
+				   (NP-IO (PN 他))
+				   (IP-OBJ (NP-SBJ (-NONE- *pro*))
+					   (VP (NP-TMP-WH (PN 何时))
+					       (ADVP (AD 再))
+					       (PP-BNF (P 给)
+						       (NP (NN 国外)))
+					       (VP (VV 输送)
+						   (NP-OBJ (NN 警犬)))))))
+			   (LC 时)))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (DVP (VP (ADVP (AD 很))
+			   (VP (VA 坚定)))
+		       (DEV 地))
+		  (VP (VP (VV 摇摇)
+			  (NP-OBJ (NN 头)))
+		      (VP (VV 说)
+			  (PU ：)
+			  (IP-OBJ (PU “)
+				  (IP (NP-SBJ (PN 我们))
+				      (VP (ADVP (AD 已经))
+					  (VP (VV 证明)
+					      (IP-OBJ (NP-PN-SBJ (NR 中国))
+						      (VP (VV 能)
+							  (VP (VRD (VV 训练)
+								   (VV 出))
+							      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+									  (CP (IP (NP-SBJ (-NONE- *T*-1))
+										  (VP (NP-LOC (NN 世界))
+										      (ADVP (AD 最))
+										      (VP (VA 好))))
+									      (DEC 的)))
+								      (NP (NN 警犬)))))))))
+				  (PU ，)
+				  (IP (NP-SBJ (PN 这))
+				      (VP (ADVP (AD 就))
+					  (VP (VV 足够)
+					      (AS 了))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  头 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 坚定 地 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当 记者 问 他 *pro* 何时 再 给 国外 输送 警犬 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

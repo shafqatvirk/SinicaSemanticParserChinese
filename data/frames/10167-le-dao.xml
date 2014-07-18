@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 乐道 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 talks about favorably"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (ADVP (AD 最))
+				    (VP (LB 为)
+					(CP-OBJ (WHNP-3 (-NONE- *OP*))
+						(IP (NP-SBJ (NN 人))
+						    (VP (VV 乐道)
+							(NP-OBJ (-NONE- *T*-3))))))))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(PU ，)
+		(IP-PRD (NP-SBJ (PN 他))
+			(VP (ADVP (AD 真的))
+			    (VP (VV 能)
+				(VP (VP-FOC (PU 「)
+					    (VV 倒背)
+					    (PU 」))
+				    (VP (VV 如流)))))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

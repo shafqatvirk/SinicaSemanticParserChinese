@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 满意 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity satisfied with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美国)
+			 (CC 和)
+			 (NN 世界)
+			 (NN 银行))
+	      (VP (NP-TMP (NT 目前))
+		  (PP-DIR (P 对)
+			  (NP (DNP (NP-PN (NR 巴勒斯坦))
+				   (DEG 的))
+			      (NP (NN 会计)
+				  (NN 工作))))
+		  (ADVP (AD 不))
+		  (ADVP (AD 完全))
+		  (VP (VA 满意)))) 
+	  </parse>
+	  <arg n="0">
+	  美国 和 世界 银行 
+	  </arg>
+	  <arg n="1">
+	  对 巴勒斯坦 的 会计 工作 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 感到)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 很))
+			  (VP (VA 满意)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

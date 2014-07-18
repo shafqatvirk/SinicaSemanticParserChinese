@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 暴涨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="extent arg0 rises"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 三十八年)
+		    (NT 六月))
+	    (PU ，)
+	    (NP-SBJ (NN 趸售)
+		    (NN 物价))
+	    (VP (PP (P 较)
+		    (DP (NP-APP (NN 光复))
+			(DP (DT 那)
+			    (CLP (M 年)))))
+		(VP (VV 暴涨)
+		    (AS 了)
+		    (QP-OBJ (ADVP (AD 近))
+			    (QP (CD 五千六百)
+				(CLP (M 倍))))))) 
+	</parse>
+	<arg n="0">
+	趸售 物价 
+	</arg>
+	<arg n="1">
+	近 五千六百 倍 
+	</arg>
+	<arg n="m" f="adv">
+	较 光复 那 年 
+	</arg>
+	<arg n="m" f="tmp">
+	三十八年 六月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 再))
+			(VP (VV 说))))
+	    (PU ，)
+	    (NP-SBJ (NT Ｙ２Ｋ)
+		    (NN 危机))
+	    (VP (ADVP (CS 虽然))
+		(VP (VV 使得)
+		    (NP-OBJ (NN 资讯)
+			    (NN 人员))
+		    (IP (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 炙手可热)))
+			(PU ，)
+			(IP (NP-TPC (-NONE- *PRO*))
+			    (NP-SBJ (NN 身价))
+			    (VP (VV 暴涨))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*PRO* 
+	</arg>
+	<arg n="0" f="pse">
+	身价 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

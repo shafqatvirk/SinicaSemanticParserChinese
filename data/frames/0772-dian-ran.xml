@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 点燃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据称))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 名)))
+		      (NP (NN 烟火)
+			  (NN 产品))
+		      (NP (NN 商贩)))
+	      (VP (VV 点燃)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 个)))
+			  (NP (PU “)
+			      (NN 火箭)
+			      (NN 炮)
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  一 名 烟火 产品 商贩 
+	  </arg>
+	  <arg n="1">
+	  一 个 “ 火箭 炮 ” 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据称 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

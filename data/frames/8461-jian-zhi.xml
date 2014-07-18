@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兼制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (PU 「)
+			 (NR 大新)
+			 (PU 」))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP-PN (NR 台湾)))
+		      (ADVP (AD 原))
+		      (ADVP (AD 只))
+		      (VP (VV 制作)
+			  (NP-OBJ (NN 纸箱))))
+		  (PU ，)
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 来到)
+				  (NP-PN-OBJ (NR 东莞))))
+		      (VP (VV 发现)
+			  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (NP-MNR (-NONE- *T*-1))
+							  (VP (VV 制作)
+							      (NP-OBJ (NN 纸箱)))))
+						  (DEC 的)))
+					  (NP (NN 纸板)))
+				  (VP (ADVP (AD 难以))
+				      (VP (VV 取得))))))
+		  (PU ，)
+		  (VP (ADVP (AD 於是))
+		      (VP (VP (VV 研发)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 制造)
+					  (NP-OBJ (NN 纸板)))))
+			  (PU ，)
+			  (VP (VRD (PU 「)
+				   (VV 升级)
+				   (PU 」)
+				   (VV 成为))
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (NP-TPC (UCP (NP (NN 纸板)
+								       (NN 纸箱))
+								   (PU 、)
+								   (ADJP (NP (NN 平版))
+									 (ADJP (JJ 彩色)))))
+						      (VP (VV 兼制))))
+					      (DEC 的)))
+				      (NP (NN 纸箱厂)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  纸板 纸箱 、 平版 彩色 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

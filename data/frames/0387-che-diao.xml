@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="eliminator"/>
+      <role argnum="1" argrole="thing eliminated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 全))
+		      (NP (NN 盟)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 撤掉)
+		      (NP-OBJ (DP (DT 各)
+				  (CLP (M 类)))
+			      (NP (NN 堵卡站)))
+		      (QP-EXT (CD 二十多)
+			      (CLP (M 个)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  全 盟 
+	  </arg>
+	  <arg n="1">
+	  各 类 堵卡站 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="ext">
+	  二十多 个 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

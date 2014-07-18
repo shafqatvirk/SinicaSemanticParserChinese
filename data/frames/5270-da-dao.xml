@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 topples"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (DNP (NP (NN 摄影机))
+			     (DEG 的))
+			(NP (NN 镜头)))
+		(VP (VP (VV 掉下))
+		    (PU ，)
+		    (VP (VV 打到)
+			(AS 了)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 件)))
+				(DNP (NP (NP-PN (NR 圆山))
+					 (NP (NN 文化)))
+				     (DEG 的))
+				(NP (NN 陶罐)))))) 
+	</parse>
+	<arg n="0">
+	摄影机 的 镜头 
+	</arg>
+	<arg n="1">
+	一 件 圆山 文化 的 陶罐 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (ADVP (AD 不到))
+		    (QP (CD 两)
+			(CLP (M 年))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 台凤))
+	    (VP (ADVP (AD 已))
+		(VP (VP (SB 被)
+			(VP (VRD (VV 打到)
+				 (VV 下市))))
+		    (PU 、)
+		    (VP (VV 成为)
+			(QP-OBJ (NP (NN 废纸))
+				(QP (CD 一)
+				    (CLP (M 堆)))))))) 
+	</parse>
+	<arg n="1">
+	台凤 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="tmp">
+	不到 两 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="score arg0 scores"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (ADJP (ADVP (AD 最))
+			  (ADJP (JJ 高)))
+		    (NP (NN 纪录)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 打到)
+		(QP-OBJ (CD 几万)
+			(CLP (M 分))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	几万 分 
+	</arg>
+	<arg n="m" f="tpc">
+	最 高 纪录 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 hits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 蛋糕))
+	    (VP (VV 打到)
+		(NP-OBJ (NN 公主)))) 
+	</parse>
+	<arg n="0">
+	蛋糕 
+	</arg>
+	<arg n="1">
+	公主 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

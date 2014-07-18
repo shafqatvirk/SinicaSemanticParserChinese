@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寻求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity sought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (NP (PN 此)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 必须)
+		  (VP (VP (VV 培育)
+			  (NP-OBJ (DNP (ADJP (JJ 新型))
+				       (DEG 的))
+				  (NP (NN 安全观))))
+		      (PU ，)
+		      (VP (VV 寻求)
+			  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 维护)
+						  (NP-OBJ (NN 和平))))
+					  (DEC 的)))
+				  (ADJP (JJ 新))
+				  (NP (NN 方法))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-3 维护 和平 的 新 方法 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (ADJP (JJ 大型))
+		      (NP (NN 专业性)
+			  (NN 外贸)
+			  (NN 公司)))
+	      (VP (VP (ADVP (AD 亦))
+		      (PP-TMP (P 从)
+			      (LCP (NP (NT 去年))
+				   (LC 底)))
+		      (VP (VV 开始)))
+		  (PU ，)
+		  (VP (VSB (VV 抓紧)
+			   (VV 派遣))
+		      (NP-OBJ (NN 推销)
+			      (NN 小组)
+			      (PU 、)
+			      (NN 展销团)
+			      (ETC 等))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 进入)
+				  (NP-PN-OBJ (NR 俄罗斯)))
+			      (PU ，)
+			      (VP (VV 寻求)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 扩大)
+					      (NP-OBJ (NN 业务)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 扩大 业务 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity found by/for arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (QP (CD 二十)
+			  (CLP (M 个)))
+		      (NP (NN 项目)))
+	      (VP (ADVP (AD 已))
+		  (VP (VRD (VV 寻求)
+			   (VV 到))
+		      (NP-OBJ (NN 合作)
+			      (NN 伙伴))))) 
+	  </parse>
+	  <arg n="0">
+	  二十 个 项目 
+	  </arg>
+	  <arg n="1">
+	  合作 伙伴 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  其中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

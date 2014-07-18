@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 步出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 steps out of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 步出)
+				  (NP-OBJ (NN 戏院))))
+			  (LC 後))
+		     (DEG 的))
+		(NP (NN 人们))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	戏院 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

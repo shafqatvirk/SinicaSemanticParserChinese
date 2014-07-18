@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 供奉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 enshrines and worships arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 供奉)
+				      (AS 著)
+				      (NP-OBJ (NP-PN (NR 张李莫府))
+					      (NP (NN 千岁)))))
+			      (DEC 的)))
+		      (NP-PN (NR 五条港)
+			     (NR 安西府)))
+	      (PU ，)
+	      (VP (ADVP (AD 更))
+		  (VP (VC 是)
+		      (NP-PRD (NP (NN 海口)
+				  (NN 地带))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (VA 重要)))
+				      (DEC 的)))
+			      (NP (NN 信仰)
+				  (NN 中心)))))) 
+	  </parse>
+	  <arg n="1">
+	  张李莫府 千岁 
+	  </arg>
+	  <arg n="2">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

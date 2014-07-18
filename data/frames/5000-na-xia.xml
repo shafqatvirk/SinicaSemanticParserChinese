@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拿下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 secures"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 十月)
+		    (NT 二十八日))
+	    (NP-PN-SBJ (NR 周长生))
+	    (VP (ADVP (AD 再))
+		(VP (VV 拿下)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 面)))
+			    (NP (NN 个人赛)
+				(NN 银牌)))))) 
+	</parse>
+	<arg n="0">
+	周长生 
+	</arg>
+	<arg n="1">
+	一 面 个人赛 银牌 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="tmp">
+	十月 二十八日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

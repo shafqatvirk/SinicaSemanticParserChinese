@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 告慰於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 rests gratified"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 华人))
+		    (ADJP (JJ 老))
+		    (NP (NN 祖先)))
+	    (VP (ADVP (AD 或))
+		(VP (VV 可)
+		    (VP (VV 告慰於)
+			(NP-OBJ (NN 九泉)))))) 
+	</parse>
+	<arg n="0">
+	华人 老 祖先 
+	</arg>
+	<arg n="1">
+	九泉 
+	</arg>
+	<arg n="m" f="adv">
+	或 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

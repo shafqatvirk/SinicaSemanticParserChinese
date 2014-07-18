@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 在於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 lies in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (PU 「)
+			     (NP-PN (NR 亚太))
+			     (NP (NN 营运)
+				 (NN 中心))
+			     (PU 」))
+			 (DEG 的))
+		    (NP (NN 宗旨)))
+	    (VP (VV 在於)
+		(NP-OBJ (NN 松绑)
+			(PU 、)
+			(NN 自由化)))) 
+	</parse>
+	<arg n="0">
+	「 亚太 营运 中心 」 的 宗旨 
+	</arg>
+	<arg n="1">
+	松绑 、 自由化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 沟通)
+			     (CC 与)
+			     (NN 传播))
+			 (DEG 的))
+		    (ADJP (JJ 首要))
+		    (NP (NN 重点)))
+	    (VP (VV 在於)
+		(IP-OBJ (IP-Q (NP-SBJ (PN 你))
+			      (VP (VNV-WH (VV 能)
+					  (AD 不)
+					  (VV 能))
+				  (VP (VV 化繁为简))))
+			(PU ，)
+			(CC 以及)
+			(IP-Q (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP-WH (AD 如何))
+				  (VP (VP (VV 运用)
+					  (NP-OBJ (DNP (NP (NN 对方))
+						       (DEG 的))
+						  (NP (NN 语言))))
+				      (VP (VCD (VV 沟通)
+					       (VV 传播))))))))) 
+	</parse>
+	<arg n="0">
+	沟通 与 传播 的 首要 重点 
+	</arg>
+	<arg n="1">
+	你 能 不 能 化繁为简 ， 以及 *pro* 如何 运用 对方 的 语言 沟通 传播 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

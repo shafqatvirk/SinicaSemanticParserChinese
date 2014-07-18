@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 报销 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 gets reimbursed"/>
+      <role argnum="2" argrole="entity arg1 is reimbursed from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (DNP (NP (NN 用药)
+			   (NN 报销)
+			   (NN 范围))
+		       (DEG 的))
+		  (NP (NN 制定))) 
+	  </parse>
+	  <arg n="1">
+	  用药 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

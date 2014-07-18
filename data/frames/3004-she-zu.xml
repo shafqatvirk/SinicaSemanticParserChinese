@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 涉足 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity set foot on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 广州市))
+		      (ADJP (JJ 私营))
+		      (NP (NN 企业)))
+	      (VP (VV 开始)
+		  (VP (VV 涉足)
+		      (NP-OBJ (NP (NP (ADJP (JJ 高)
+					    (PU 、)
+					    (JJ 新))
+				      (NP (NN 技术)))
+				  (NP (NN 产业)))
+			      (NP (NN 领域)))))) 
+	  </parse>
+	  <arg n="0">
+	  广州市 私营 企业 
+	  </arg>
+	  <arg n="1">
+	  高 、 新 技术 产业 领域 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

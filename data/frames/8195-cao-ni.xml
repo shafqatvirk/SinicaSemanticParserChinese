@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 草拟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 drafts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 调改会))
+	      (VP (VP (ADVP (AD 因此))
+		      (VP (VV 草拟)
+			  (NP-OBJ (PU 「)
+				  (NP (NN 情治))
+				  (NP (NN 中立)
+				      (CC 暨)
+				      (NN 监督))
+				  (NP (NN 法))
+				  (PU 」))))
+		  (PU ，)
+		  (VP (VV 希望)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-MNR (P 藉)
+					  (NP (PN 此)))
+				  (VP (VP (VV 明订)
+					  (IP-OBJ (NP-SBJ (DP (DT 各))
+							  (NP (NN 情治)
+							      (NN 单位)))
+						  (VP (VV 严守)
+						      (NP-OBJ (NN 行政)
+							      (NN 中立)))))
+				      (PU ，)
+				      (CC 并)
+				      (VP (BA 将)
+					  (IP-OBJ (NP-SBJ (NP (DP (DT 各))
+							      (NP (NN 情治)
+								  (NN 机关)))
+							  (NP (NN 权责)
+							      (NN 范围)))
+						  (VP (ADVP (AD 明确))
+						      (VP (VV 分工)))))
+				      (PU ，)
+				      (CC 并)
+				      (VP (PP-DIR (P 对)
+						  (NP (PN 其)))
+					  (VP (VV 监督))))))))) 
+	  </parse>
+	  <arg n="0">
+	  调改会 
+	  </arg>
+	  <arg n="1">
+	  「 情治 中立 暨 监督 法 」 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

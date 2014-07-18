@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing no hope to be realized for arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 日本))
+				  (VP (VV 发射)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP-APP (ADJP (JJ 大型))
+			      (NP (NN 科学)
+				  (NN 试验)
+				  (NN 卫星)))
+		      (QP-PN (PU “)
+			     (NP (NN 菊花))
+			     (QP (CD ６)
+				 (CLP (M 号)))
+			     (PU ”)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 无望)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 进入)
+				  (NP-OBJ (NP (NN 地球))
+					  (ADJP (JJ 同步))
+					  (NP (NN 轨道)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 日本 发射 *T*-1 的 大型 科学 试验 卫星 “ 菊花 ６ 号 ” 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 进入 地球 同步 轨道 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP-SBJ (NP-SBJ (NP-PN (NR 日本))
+				  (NP (NN 科学)
+				      (NN 试验)
+				      (NN 卫星)))
+			  (VP (VV 入)
+			      (NP-OBJ (NN 轨))))
+		  (VP (VV 无望))) 
+	  </parse>
+	  <arg n="1">
+	  日本 科学 试验 卫星 入 轨 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

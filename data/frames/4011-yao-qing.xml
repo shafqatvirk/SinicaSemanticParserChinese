@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 邀请 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="inviter"/>
+      <role argnum="1" argrole="invitee"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李鹏)
+			 (NN 总理))
+	      (VP (VV 邀请)
+		  (NP-PN-OBJ (NR 朱马古洛夫)
+			     (NN 总理))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-TMP (P 在)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VA 方便)))
+					      (DEC 的)))
+				      (NP (NN 时候))))
+			  (VP (VV 访)
+			      (NP-PN-OBJ (NR 华))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  李鹏 总理 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  朱马古洛夫 总理 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 在 *OP* (*T*-1)->(时候) 方便 的 时候 访 华 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 邀请)
+		  (NP-OBJ (NP (NN 海外)
+			      (NN 客商))
+			  (PU 、)
+			  (NP (NP (ADJP (JJ 驻华))
+				  (NP (NN 机构)))
+			      (NP (NN 代表))))
+		  (NP-EXT (QP (ADVP (AD 约))
+			      (QP (CD 一千)))
+			  (NP (NN 人))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  海外 客商 、 驻华 机构 代表 	  
+	  </arg>
+	  <arg n="1" f="qty">
+	  约 一千 人 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 各))
+		      (ADJP (JJ 大))
+		      (NP (NN 报纸)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 纷纷))
+		  (VP (VV 邀请)
+		      (NP-OBJ (NN 金融)
+			      (NN 专家))))) 
+	  </parse>
+	  <arg n="0">
+	  各 大 报纸 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  也 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  纷纷 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  金融 专家 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

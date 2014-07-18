@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驻扎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 stations"/>
+      <role argnum="2" argrole="location arg1 is stationed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (QP (CD 两))
+				   (NP-PN (NR 德)))
+			   (VP (VV 统一)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 原))
+		      (NP-PN (NR 苏联)))
+	      (VP (PP-LOC (P 在)
+			  (NP (ADJP (JJ 前))
+			      (NP-PN (NR 民主德国))))
+		  (VP (VV 驻扎)
+		      (NP-OBJ (QP (ADVP (AD 约))
+				  (QP (CD ３８万)))
+			      (NP (NN 军队)))))) 
+	  </parse>
+	  <arg n="0">
+	  原 苏联 
+	  </arg>
+	  <arg n="1">
+	  约 ３８万 军队 
+	  </arg>
+	  <arg n="2">
+	  在 前 民主德国 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  两 德 统一 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 参加)
+				      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+						      (VP (PP-DIR (P 对)
+								  (NP (NP-PN (NR 伊))
+								      (NP (NN 南部))
+								      (NP (PU “)
+									  (NN 禁飞区)
+									  (PU ”))))
+							  (VP (VV 执行)
+							      (NP-OBJ (NN 监视)))))
+					      (NP (NN 行动)))))
+			      (DEC 的)))
+		      (NP-PN (NR 法国))
+		      (NP (NN 空军)))
+	      (VP (VV 驻扎)
+		  (PP-LOC (P 在)
+			  (NP (DNP (NP-PN (NR 沙特阿拉伯))
+				   (DEG 的))
+			      (NP (NN 军事)
+				  (NN 基地)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 参加 *PRO* 对 伊 南部 “ 禁飞区 ” 执行 监视 行动 的 法国 空军 
+	  </arg>
+	  <arg n="2">
+	  在 沙特阿拉伯 的 军事 基地 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

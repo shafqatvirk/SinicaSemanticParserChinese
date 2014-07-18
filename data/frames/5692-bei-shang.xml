@@ -1,0 +1,92 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 北上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 goes north to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 反)
+			    (NP-OBJ (NN 水库)))))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 担任)
+					    (NP-OBJ (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 反)
+								    (NP-OBJ (NN 水库))))
+							(ADJP (JJ 大))
+							(NP (NN 联盟)))
+						    (NP (NN 执事)))))
+				    (DEC 的)))
+			    (NP (NN 退休)
+				(NN 老师)))
+		    (NP-PN (NR 杨乾昌)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 跟)
+		    (AS 著)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VP (VV 北上)
+					(NP-PN-OBJ (NN 立法院)))
+				    (PU 、)
+				    (VP (NP-LOC (NN 头))
+					(VP (VV 绑)
+					    (NP-OBJ (ADJP (JJ 白))
+						    (NP (NN 布条))))))
+				(VP (VV 抗议))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	立法院 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-PRP (P 为了)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 和)
+				    (NP-PN (NR 郑南榕)))
+				(VP (VV 在)
+				    (ADVP (AD 一起))))))
+		(PU ，)
+		(ADVP (AD 又))
+		(VP (VV 北上)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 工作)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 和 郑南榕 在 一起 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 起眼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 主要))
+		      (NP (NN 产品)))
+	      (VP (ADVP (AD 又))
+		  (VP (VC 是)
+		      (QP-PRD (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (ADVP (AD 毫))
+					      (ADVP (AD 不))
+					      (VP (VV 起眼))))
+				      (DEC 的)))
+			      (ADJP (JJ 薄薄))
+			      (NP (NN 磁碟)))
+		      (QP-EXT (CD 数)
+			      (CLP (M 片)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  毫 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

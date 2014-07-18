@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 殃及 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 brings harm to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NP (NN 大陆))
+			      (NP (NN 出口)
+				  (NN 竞争力)))
+		      (VP (VV 衰退)))
+	      (VP (MSP 而)
+		  (VP (VV 殃及)
+		      (NP-OBJ (NN 台商))))) 
+	  </parse>
+	  <arg n="0">
+	  大陆 出口 竞争力 衰退 
+	  </arg>
+	  <arg n="1">
+	  台商 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

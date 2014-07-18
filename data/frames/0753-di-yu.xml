@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 低于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing compared"/>
+      <role argnum="1" argrole="compared to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-ADV (P 由于)
+		      (IP (NP-SBJ (NN 科技)
+				  (NN 含量))
+			  (VP (VA 低))))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 产品))
+		      (DNP (PP (P 在)
+			       (LCP (NP (NN 国际)
+					(NN 市场))
+				    (LC 上)))
+			   (DEG 的))
+		      (NP (NN 售价)))
+	      (VP (VP (VV 低于)
+		      (QP-OBJ (DNP (NP (ADJP (JJ 正常))
+				       (NP (NN 价格)))
+				   (DEG 的))
+			      (QP (CD 百分之二十)
+				  (CC 至)
+				  (CD 三十))))
+		  (PU ，)
+		  (VP (DP-ADV (DT 每)
+			      (CLP (M 年)))
+		      (ADVP (AD 仅))
+		      (VP (VV 能)
+			  (VP (VV 换回)
+			      (NP-OBJ (DNP (QP (CD 十多亿)
+					       (CLP (M 美元)))
+					   (DEG 的))
+				      (NP (NN 外汇)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  产品 在 国际 市场 上 的 售价 
+	  </arg>
+	  <arg n="1">
+	  正常 价格 的 百分之二十 至 三十 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 科技 含量 低 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

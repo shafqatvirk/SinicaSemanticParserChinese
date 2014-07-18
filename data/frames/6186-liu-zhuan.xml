@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 流转 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity rotating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (IP (NP-SBJ (NN 人世))
+		    (VP (VV 流转)))
+		(PU ，)
+		(IP (NP-SBJ (NN 桧木))
+		    (VP (ADVP (AD 恒))
+			(VP (VA 长))))) 
+	</parse>
+	<arg n="0">
+	人世 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity rotating"/>
+    <role argnum="1" argrole="entity created through arg0's rotation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (NP (ADJP (JJ 黑))
+			    (NP (NN 胶)))
+			(NP (NN 唱片)))
+		(VP (VRD (VV 流转)
+			 (VV 出))
+		    (NP-OBJ (ADJP (JJ 亮丽))
+			    (NP (NN 人生))))
+		(PRN (PU ——)
+		     (NP (NP-APP (NP-PN (NR 铼德)
+					(NN 集团))
+				 (NP (NN 董事长)))
+			 (NP-PN (NR 叶进泰))))) 
+	</parse>
+	<arg n="0">
+	黑 胶 唱片 
+	</arg>
+	<arg n="1">
+	亮丽 人生 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

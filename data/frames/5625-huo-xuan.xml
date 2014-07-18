@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 获选 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity which gets elected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 无怪乎))
+	    (NP-SBJ (DP (DT 有的))
+		    (NP (NN 艺术家)))
+	    (VP (VP (ADVP (AD 宁可))
+		    (VP (VV 拒绝)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 担任)
+						(NP-OBJ (NP (ADJP (JJ 公共))
+							    (NP (NN 艺术)))
+							(NP (NN 审议)
+							    (NN 委员)))))
+					(DEC 的))
+				(NP (NN 荣耀)))))
+		(PU ，)
+		(VP (MSP 而)
+		    (VP (VV 保有)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VSB (VV 参赛)
+						     (VV 获选))))
+					(DEC 的))
+				(NP (NN 机会))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is elected to be"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-TTL-APP (PU 《)
+				(NP-PN (NR 雾社))
+				(NP (NN 事件))
+				(PU 》))
+		    (QP (CD 一))
+		    (NP (NN 书)))
+	    (PU ，)
+	    (VP (VP (PP-ADV (P 除了)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (DVP (VP (VA 完整))
+					 (DEV 地))
+				    (VP (VV 记录)
+					(AS 了)
+					(NP-OBJ (DNP (NP (NP-PN (NR 雾社))
+							 (NP (NN 事件)))
+						     (DEG 的))
+						(NP (NN 始末)))))))
+		    (PU ，)
+		    (ADVP (AD 还))
+		    (VP (VV 收录)
+			(AS 了)
+			(NP-OBJ (QP (CD 许多))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 珍贵)))
+					(DEC 的)))
+				(NP (NN 历史)
+				    (NN 照片)))))
+		(PU ，)
+		(VP (VRD (VV 获选)
+			 (VV 为))
+		    (NP-OBJ (DNP (NP (NT 当年))
+				 (DEG 的))
+			    (QP (CD 十))
+			    (ADJP (JJ 大))
+			    (ADJP (JJ 好))
+			    (NP (NN 书)))))) 
+	</parse>
+	<arg n="0">
+	《 雾社 事件 》 一 书 
+	</arg>
+	<arg n="1">
+	当年 的 十 大 好 书 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

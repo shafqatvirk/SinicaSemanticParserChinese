@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 清算 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing calculated and cleared"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 用以)
+	      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VP (VV 清算)
+				  (NP-OBJ (DNP (LCP (NP (NN 成员国))
+						    (LC 之间))
+					       (DEG 的))
+					  (NP (NN 国际)
+					      (NN 收支))))
+			      (VP (MSP 以)
+				  (VP (VV 充当)
+				      (NP-OBJ (NN 外汇)
+					      (NN 储备)))))
+			  (CC 以及)
+			  (VP (VV 作为)
+			      (NP-OBJ (CP (WHPP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (PP-MNR (-NONE- *T*-3))
+						      (VP (VV 计算)
+							  (NP-OBJ (NN 中心)
+								  (NN 汇率)
+								  (NN 标准)))))
+					      (DEC 的)))
+				      (NP (NN 货币)
+					  (NN 单位))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  成员国 之间 的 国际 收支 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

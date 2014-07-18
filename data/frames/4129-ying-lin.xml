@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 营林 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 林地)
+		      (NN 使用权)
+		      (CC 和)
+		      (NN 林木))
+	      (VP (VV 可以)
+		  (VP (VV 作为)
+		      (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP-MNR (-NONE- *T*-2))
+					      (VP (VP (VV 合资))
+						  (PU 、)
+						  (VP (VSB (VV 合作)
+							   (VV 造林)))
+						  (PU 、)
+						  (VP (VV 营林)))))
+				      (DEC 的)))
+			      (NP (NN 出资)
+				  (CC 或者)
+				  (NN 合作))
+			      (NP (NN 条件)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

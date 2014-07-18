@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 养殖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 raises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-TPC (DNP (NP (DP (DT 该))
+			       (NP (NN 地)))
+			   (DEG 的))
+		      (NP (NN 干贝)))
+	      (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+			      (VP (NP-ADV (ADJP (JJ 小))
+					  (NP (NN 规模)))
+				  (VP (VV 养殖))))
+		      (NP (NN 成果)))
+	      (VP (VA 不错))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  小 规模 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

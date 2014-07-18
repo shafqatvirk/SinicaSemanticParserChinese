@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 申明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing declared"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 年中))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NR 美国))
+			      (NP (NN 总统)))
+		      (NP-PN (NR 克林顿)))
+	      (VP (VP (VV 回访)
+		      (NP-PN-OBJ (NR 中国)))
+		  (PU ，)
+		  (VP (ADVP (AD 公开))
+		      (VP (VV 申明)
+			  (IP-OBJ (NP-PN-SBJ (NR 美国))
+				  (VP (VP (ADVP (AD 不))
+					  (VP (VV 支持)
+					      (NP-PN-OBJ (NR 台湾))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VA 独立)))))
+				      (PU ，)
+				      (VP (ADVP (AD 不))
+					  (VP (VV 支持)
+					      (NP-OBJ (NP (PU “)
+							  (NP (QP (CD 一))
+							      (NP-PN (NR 中)))
+							  (NP (QP (CD 一))
+							      (NP-PN (NR 台)))
+							  (PU ”))
+						      (PU 、)
+						      (NP (PU “)
+							  (QP (CD 两)
+							      (CLP (M 个)))
+							  (NP-PN (NR 中国))
+							  (PU ”)))))
+				      (PU ，)
+				      (VP (ADVP (AD 不))
+					  (VP (VV 支持)
+					      (NP-PN-OBJ (NR 台湾))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 加入)
+						      (NP-OBJ (DP (DT 任何))
+							      (CP (WHNP-1 (-NONE- *OP*))
+								  (CP (IP (NP-SBJ (-NONE- *T*-1))
+									  (VP (PP-MNR (P 以)
+										      (NP (NN 主权)
+											  (NN 国家)))
+									      (VP (VV 为)
+										  (NP-OBJ (NN 条件)))))
+								      (DEC 的)))
+							      (NP (NN 国际)
+								  (NN 组织))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 总统 克林顿 
+	  </arg>
+	  <arg n="1">
+	  美国 不 支持 台湾 *PRO* 独立 ， 不 支持 “ 一 中 一 台 ” 、 “ 两 个 中国 ” ， 不 支持 台湾 *PRO* 加入 任何 *OP* *T*-1 以 主权 国家 为 条件 的 国际 组织 
+	  </arg>
+	  <arg n="m" f="adv">
+	  公开 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  年中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

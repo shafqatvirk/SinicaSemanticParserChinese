@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 担负 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="bearer"/>
+      <role argnum="1" argrole="function, responsibility"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (NP (PN 此)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 欧洲)
+			 (NN 中央)
+			 (NN 银行))
+	      (VP (ADVP (AD 将))
+		  (VP (VRD (VV 担负)
+			   (VV 起))
+		      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 掌管)
+					      (NP-OBJ (NP (NN 欧元区))
+						      (NP (QP (CD １１))
+							  (NP (NN 国)))
+						      (NP (NN 货币)
+							  (NN 政策))))
+					  (PU 、)
+					  (VP (VV 确定)
+					      (NP-OBJ (NN 利率)))
+					  (PU 、)
+					  (VP (VV 管理)
+					      (NP-OBJ (NN 货币)
+						      (NN 储备)))
+					  (CC 及)
+					  (VP (VV 决定)
+					      (NP-OBJ (NN 货币)
+						      (NN 发行量)))
+					  (ETC 等)))
+			      (NP (NN 职能)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  欧洲 中央 银行 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 掌管 欧元区 １１ 国 货币 政策 、 确定 利率 、 管理 货币 储备 及 决定 货币 发行量 等 职能 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

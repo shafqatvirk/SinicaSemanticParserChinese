@@ -1,0 +1,160 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity changed"/>
+      <role argnum="2" argrole="state arg1 changes into"/>
+      <role argnum="3" argrole="original state of arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DNP (NP (NN 改制)
+			       (NN 企业))
+			   (DEG 的))
+		      (ADJP (JJ 非))
+		      (NP (NN 银行)
+			  (NN 债务)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 可)
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 债权))
+			      (VP (VV 转为)
+				  (NP-OBJ (NN 股权))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  债权 
+	  </arg>
+	  <arg n="2">
+	  股权 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-TMP (NT 现在))
+		      (ADVP (AD 已))
+		      (VP (VV 转为)
+			  (NP-OBJ (NP (NN 军民))
+				  (QP (CD 两))
+				  (NP (NN 用)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 可)
+		      (VP (PP-BNF (P 为)
+				  (NP (NN 国外)
+				      (NN 客户)))
+			  (VP (VV 服务)))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  军民 两 用 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 广东))
+		      (NP (NN 电子)
+			  (NN 工业)))
+	      (VP (VV 实现)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (PU “)
+				      (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-DIR (P 从)
+						  (IP (NP-SBJ (NN 内销))
+						      (VP (VV 为主))))
+					  (VP (VV 转为)
+					      (IP-OBJ (NP-SBJ (NN 外销))
+						      (VP (VV 为主)))))
+				      (PU ”))
+				  (DEC 的))
+			  (NP (NN 战略)
+			      (NN 转移))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  外销 为主 
+	  </arg>
+	  <arg n="3">
+	  从 内销 为主 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 伊拉克人))
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 结束)
+				      (NP-OBJ (NN 核查)))
+				  (CC 和)
+				  (VP (VV 解除)
+				      (NP-OBJ (NN 制裁))))))
+		  (VP (VV 开始)
+		      (VP (PP-DIR (P 由)
+				  (NP (NN 失望)))
+			  (VP (VV 转为)
+			      (NP-OBJ (NN 绝望))))))) 
+	  </parse>
+	  <arg n="1">
+	  伊拉克人 
+	  </arg>
+	  <arg n="2">
+	  绝望 
+	  </arg>
+	  <arg n="3">
+	  由 失望 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 *PRO* 结束 核查 和 解除 制裁 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

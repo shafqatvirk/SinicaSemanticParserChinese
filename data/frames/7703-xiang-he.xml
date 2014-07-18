@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相合 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities which fit each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 对)
+				(NP (QP (CD 一些))
+				    (NP (NN 人))))
+			(VP (MSP 而)
+			    (VP (VV 言)))))
+	    (PU ，)
+	    (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 除非))
+			(NP-TMP (NT 未来))
+			(ADVP (AD 真))
+			(VP (VE 有)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (NN 理念))
+					    (VP (NP-LOC (-NONE- *T*-1))
+						(VP (VV 相合))))
+					(DEC 的)))
+				(NP (NN 环境))))))
+	    (PU ，)
+	    (ADVP (AD 否则))
+	    (NP-SBJ (NN 跑道))
+	    (VP (ADVP (AD 已然))
+		(VP (VV 转向)
+		    (AS 了)))) 
+	</parse>
+	<arg n="0">
+	理念 
+	</arg>
+	<arg n="m" f="loc">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

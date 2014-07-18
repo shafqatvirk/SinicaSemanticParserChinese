@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 一如既往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 所有))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 保护)
+				      (NP-OBJ (ADJP (JJ 平等))
+					      (NP (NN 竞争)))))
+			      (DEC 的)))
+		      (NP (NN 游戏)
+			  (NN 规则)))
+	      (VP (ADVP (AD 仍))
+		  (ADVP (AD 将))
+		  (VP (VV 一如既往)))) 
+	  </parse>
+	  <arg n="0">
+	  所有 *OP* *T*-1 保护 平等 竞争 的 游戏 规则 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 头疼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity which is a headache for arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 这下))
+	      (NP-SBJ (NP (PN 我))
+		      (CC 和)
+		      (NP (NN 老婆)))
+	      (VP (VV 头疼)
+		  (AS 了))) 
+	  </parse>
+	  <arg n="0">
+	  我 和 老婆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

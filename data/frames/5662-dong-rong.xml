@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 动容 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person who is moved"/>
+    <role argnum="1" argrole="thing arg0 is moved by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 林献仁))
+			 (DEG 的))
+		    (NP (NN 话)))
+	    (VP (VV 令)
+		(NP-OBJ (NN 人))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 动容))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

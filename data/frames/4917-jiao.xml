@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 缴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="payer"/>
+    <role argnum="1" argrole="payment"/>
+    <role argnum="2" argrole="payee"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-PN-SBJ (NR 台北市))
+			    (VP (VV 缴)
+				(NP-OBJ (-NONE- *T*-1))
+				(PP (P 给)
+				    (NP (NN 中央)))))
+			(DEC 的)))
+		(NP (NN 税款))) 
+	</parse>
+	<arg n="0">
+	台北市 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	给 中央 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (DVP (NP (NN 象徵性))
+			 (DEV 地))
+		    (VP (VV 缴)
+			(AS 了)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 点)))
+				(NP (NN 钱)))))
+		(PU ，)
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (NN 技术))
+			    (VP (VV 买去)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	一 点 钱 
+	</arg>
+	<arg n="m" f="adv">
+	象徵性 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 不管))
+			(VP (VNV-WH (VE 有)
+				    (VE 没有))
+			    (NP-OBJ (NN 收成)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			(VP (VPT (VV 缴)
+				 (AD 不)
+				 (VV 出来))))
+		(ADVP (AD 就))
+		(VP (VP (VV 抓))
+		    (VP (MSP 去)
+			(VP (VV 关)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 念念不忘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 cannot forget"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (PN 他))
+				(VP (VV 念念不忘)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的))))
+	    (PU ，)
+	    (VP (VC 是)
+		(IP-PRD (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 要)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 创造)
+					    (NP-OBJ (QP (CD 一)
+							(CLP (M 部)))
+						    (CP (WHNP-2 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (-NONE- *T*-2))
+								(VP (ADVP (AD 真正))
+								    (VP (VV 好用))))
+							    (DEC 的)))
+						    (NP (PU 「)
+							(NN 色典)
+							(PU 」))))
+					(PU ，)
+					(VP (VV 解决)
+					    (NP-OBJ (NP (NN 染整业))
+						    (CP-APP (IP (LCP-TMP (NP (NN 长年))
+									 (LC 以来))
+								(NP-SBJ (NN 色彩))
+								(VP (ADVP (AD 无法))
+								    (VP (PU 「)
+									(VV 标准化)
+									(PU 、)
+									(VV 规格化)
+									(PU 」))))
+							    (DEC 的))
+						    (NP (NN 困扰)))))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 许多))
+			(NP (NN 人)))
+		(VP (PP-DIR (P 对)
+			    (NP (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (VV 征服)
+						(NP-OBJ (NN 高度))))
+					(DEC 的))
+				(NP (NN 挑战))))
+		    (VP (VV 念念不忘)))) 
+	</parse>
+	<arg n="0">
+	许多 人 
+	</arg>
+	<arg n="1">
+	对 *pro* 征服 高度 的 挑战 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

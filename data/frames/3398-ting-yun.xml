@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 停运 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="stopper"/>
+      <role argnum="1" argrole="thing operation of which stopped"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (NP (NN 达标)
+			  (NN 企业)))
+	      (VP (PP-TMP (P 在)
+			  (LCP (QP (NP (NT 过去))
+				   (QP (CD 几)
+				       (CLP (M 天))))
+			       (LC 里)))
+		  (PP-PRP (P 由于)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 擅自))
+				  (VP (VV 停运)
+				      (NP-OBJ (NN 污水)
+					      (NN 处理)
+					      (NN 设施))))))
+		  (VP (VV 遭到)
+		      (AS 了)
+		      (NP-OBJ (ADJP (JJ 严厉))
+			      (NP (NN 惩处)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  污水 处理 设施 
+	  </arg>
+	  <arg n="m" f="adv">
+	  擅自 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-DIR (P 对)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 擅自))
+				      (VP (VV 停运)))))
+			  (NP (NN 者))))
+	      (ADVP (AD 从重))
+	      (ADVP (AD 从严))
+	      (VP (VV 处罚))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  擅自 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 射出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 shoots"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 毕竟))
+	    (PU ，)
+	    (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VA 年轻)))
+		     (LC 时))
+	    (IP (IP (NP-SBJ (NN 箭囊))
+		    (VP (VA 满满)))
+		(PU ，)
+		(IP (NP-SBJ (NN 机会))
+		    (VP (VA 无限)))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 可以)
+			(VP (ADVP (AD 随兴))
+			    (VP (VV 射出))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 年轻 时 
+	</arg>
+	<arg n="m" f="adv">
+	随兴 
+	</arg>
+	<arg n="m" f="adv">
+	毕竟 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

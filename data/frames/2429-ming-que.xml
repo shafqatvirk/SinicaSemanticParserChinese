@@ -1,0 +1,389 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 明确 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing clarified"/>
+      <role argnum="2" argrole="location clarification made"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １９８９年))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 时))
+				      (VP (VV 任)
+					  (NP-OBJ (NP-PN (NR 欧共体)
+							 (NN 委员会))
+						  (NP (NN 主席))))))
+			      (DEC 的)))
+		      (NP-PN (NR 德洛尔)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (PN 他))
+				   (NP-TTL (PU 《)
+					   (DNP (PP (P 关于)
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 实现)
+							    (NP-OBJ (NP (NN 经济)
+									(CC 与)
+									(NN 货币))
+								    (NP (NN 联盟))))))
+						(DEG 的))
+					   (NP (NN 报告))
+					   (PU 》)))
+			       (LC 中)))
+		  (VP (VV 明确)
+		      (AS 了)
+		      (IP-OBJ (NP-SBJ (DNP (NP-PN (NN 货币)
+						  (NN 联盟))
+					   (DEG 的))
+				      (ADJP (JJ 最终))
+				      (NP (NN 目标)))
+			      (VP (VC 是)
+				  (VP (VV 发行)
+				      (NP-OBJ (NN 统一)
+					      (NN 货币)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 时 任 欧共体 委员会 主席 的 德洛尔 
+	  </arg>
+	  <arg n="1">
+	  货币 联盟 的 最终 目标 是 发行 统一 货币 
+	  </arg>
+	  <arg n="2">
+	  在 他 《 关于 *PRO* 实现 经济 与 货币 联盟 的 报告 》 中 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９８９年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (PU ，)
+	      (LCP-SBJ (NP (NN 省))
+		       (LC 里))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 明确)
+		      (IP-OBJ (NP-SBJ (NN 汽车)
+				      (NN 制造))
+			      (VP (ADVP (AD 不))
+				  (ADVP (AD 再))
+				  (VP (VV 作为)
+				      (NP-OBJ (NN 支柱)
+					      (NN 产业)))))))) 
+	  </parse>
+	  <arg n="0">
+	  省 里 
+	  </arg>
+	  <arg n="1">
+	  汽车 制造 不 再 作为 支柱 产业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 补充)
+		      (NN 规定))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 明确)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (DNP (NP (CP (WHNP-3 (-NONE- *OP*))
+						   (IP (NP-SBJ (NN 中外))
+						       (VP (VSB (VV 合资)
+								(VV 经营))
+							   (NP-OBJ (-NONE- *T*-3)))))
+					       (NP (NN 企业)))
+					   (DEG 的))
+				      (NP (NN 投资者)))
+			      (VP (ADVP (AD 均))
+				  (VP (VV 须)
+				      (VP (PP-MNR (P 按)
+						  (NP (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (NN 合同))
+								  (VP (VV 规定)
+								      (NP-OBJ (-NONE- *T*-1))))
+							      (DEC 的)))
+						      (NP (NN 比例)
+							  (CC 和)
+							  (NN 期限))))
+					  (ADVP (AD 同步))
+					  (VP (VV 缴付)
+					      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *pro*))
+								  (VP (VV 认缴)
+								      (NP-OBJ (-NONE- *T*-2))))
+							      (DEC 的)))
+						      (NP (NN 出资额))))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* 中外 合资 经营 *T*-3 企业 的 投资者 均 须 按 *OP* 合同 规定 *T*-1 的 比例 和 期限 同步 缴付 *OP* *pro* 认缴 *T*-2 的 出资额 
+	  </arg>
+	  <arg n="2">
+	  补充 规定 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 《)
+			  (NN 决定)
+			  (PU 》))
+	      (VP (VP (VV 总结)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (QP (CD 二十)
+					   (CLP (M 年)))
+				       (NP (NN 农村)
+					   (NN 改革)))
+				   (DEG 的))
+			      (ADJP (JJ 基本))
+			      (NP (NN 经验))))
+		  (PU ；)
+		  (VP (VV 确定)
+		      (AS 了)
+		      (NP-PRD (PP (P 从)
+				  (LCP (NP (NT 现在))
+				       (LC 起)))
+			      (PP (P 到)
+				  (NP (NT 二０一０年)))
+			      (DNP (NP (NP (NP-PN (NR 中国))
+					   (NP (NN 农村)))
+				       (NP (NN 经济)
+					   (PU 、)
+					   (NN 政治)
+					   (PU 、)
+					   (NN 文化))
+				       (NP (NN 建设)))
+				   (DEG 的))
+			      (NP (NN 目标)
+				  (CC 和)
+				  (NN 任务))))
+		  (PU ；)
+		  (VP (VV 阐述)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-TMP (NP (NN 社会主义))
+						  (ADJP (JJ 初级))
+						  (NP (NN 阶段)))
+					  (NP-SBJ (NN 农村))
+					  (VP (ADVP (AD 尤其))
+					      (ADVP (AD 不))
+					      (VP (VA 发达))))
+				      (DEC 的))
+			      (ADJP (JJ 主要))
+			      (NP (NN 特征))))
+		  (PU ；)
+		  (VP (PP-DIR (P 对)
+			      (NP (NP (NP-PN (NR 中国))
+				      (NP (NN 农村)))
+				  (ADJP (JJ 基本))
+				  (NP (NN 经营)
+				      (NN 制度))))
+		      (VP (VV 作)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VP (ADVP (AD 更))
+						      (VP (VA 科学)))
+						  (PU 、)
+						  (VP (ADVP (AD 更))
+						      (VP (VA 准确)))))
+					  (DEC 的)))
+				  (ADJP (JJ 新))
+				  (NP (NN 概括)))))
+		  (PU ；)
+		  (VP (VV 提出)
+		      (NP-OBJ (CP-APP (IP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (VV 坚持)
+						  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (PP-MNR (P 以)
+								      (NP (NN 公有制)))
+							      (VP (VV 为)
+								  (NP-OBJ (NN 主体)))))))
+					  (PU 、)
+					  (IP (NP-SBJ (QP (CD 多)
+							  (CLP (M 种)))
+						      (NP (NN 所有制)
+							  (NN 经济)))
+					      (VP (ADVP (AD 共同))
+						  (VP (VV 发展)))))
+				      (DEC 的))
+			      (ADJP (JJ 基本))
+			      (NP (NN 经济)
+				  (NN 制度))))
+		  (PU ；)
+		  (VP (VV 提出)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 坚持)
+				  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-3))
+						      (VP (PP-MNR (P 以)
+								  (NP (NN 市场)))
+							  (VP (VV 为)
+							      (NP-OBJ (NN 取向)))))
+						  (DEC 的)))
+					  (NP (NN 改革))))))
+		  (PU ，)
+		  (VP (ADVP (AD 进一步))
+		      (VP (VV 明确)
+			  (AS 了)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 深化)
+						  (NP-OBJ (NN 农村)
+							  (NN 改革))))
+					  (DEC 的))
+				  (NP (NN 方向)
+				      (CC 和)
+				      (NN 目标)))))
+		  (PU ；)
+		  (VP (BA 把)
+		      (IP-OBJ (UCP-SBJ (NP (NN 水利)
+					   (NN 建设))
+				       (CC 和)
+				       (IP (NP-SBJ (NN 科教))
+					   (VP (VV 兴)
+					       (NP-OBJ (NN 农)))))
+			      (VP (VV 提到)
+				  (AS 了)
+				  (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-4))
+						  (VP (VA 突出))))
+					  (NP (NN 位置))))))
+		  (PU ；)
+		  (VP (VV 指出)
+		      (IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 增加)
+					      (NP-OBJ (NN 农民)
+						      (NN 收入)))
+					  (PU ，)
+					  (VP (VV 减轻)
+					      (NP-OBJ (NN 农民)
+						      (NN 负担)))))
+			      (VP (VC 是)
+				  (NP-PRD (CP-APP (IP (NP-SBJ (NN 农村))
+						      (VP (VV 实现)
+							  (NP-OBJ (NN 小康))))
+						  (DEC 的))
+					  (ADJP (JJ 基本))
+					  (NP (NN 条件))))))
+		  (PU ；)
+		  (VP (DVP (VP (VA 系统))
+			   (DEV 地))
+		      (VP (VV 提出)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NN 农村)
+					   (NN 基层)
+					   (NN 民主)
+					   (NN 建设))
+				       (DEG 的))
+				  (NP (NP (ADJP (JJ 具体))
+					  (NP (NN 任务)))
+				      (CC 和)
+				      (NP (NN 指导)
+					  (NN 原则))))))
+		  (PU ；)
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (NP (NN 党))
+				      (DNP (PP (P 对)
+					       (NP (NN 农村)
+						   (NN 工作)))
+					   (DEG 的))
+				      (NP (NN 领导)))
+			      (VP (VV 提到)
+				  (AS 了)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 个)))
+					  (CP (WHNP-5 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-5))
+						      (VP (VA 新)))
+						  (DEC 的)))
+					  (NP (NN 高度)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 深化 农村 改革 的 方向 和 目标 
+	  </arg>
+	  <arg n="2">
+	  《 决定 》 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 方向))
+	      (VP (VA 明确))) 
+	  </parse>
+	  <arg n="1">
+	  方向 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (ADJP (JJ 宏观))
+		      (NP (NN 调控)))
+	      (NP-SBJ (NP (NN 目标)))
+	      (VP (VA 明确))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  宏观 调控 
+	  </arg>
+	  <arg n="1" f="pse">
+	  目标 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

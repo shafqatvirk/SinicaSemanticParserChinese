@@ -1,0 +1,25 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 比赛 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="contestant"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+          (VP (PP-TMP (P 在)
+                      (NP (NT 晚上)))
+              (VP (VV 比赛)))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="M" f="TMP"> 在 晚上 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

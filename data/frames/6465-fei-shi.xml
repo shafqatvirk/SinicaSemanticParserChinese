@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 费时 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="amount of time arg0 needs to spend"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 只是))
+	    (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 业者)))
+	    (VP (VP (ADVP (AD 以往))
+		    (VP (VV 可能)
+			(VP (VV 要)
+			    (VP (VV 费时)
+				(QP-OBJ (CD 多)
+					(CLP (M 年)))))))
+		(VP (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VRD (VV 摸索)
+				 (VA 清楚))))))) 
+	</parse>
+	<arg n="0">
+	台湾 业者 
+	</arg>
+	<arg n="1">
+	多 年 
+	</arg>
+	<arg n="m" f="tmp">
+	以往 
+	</arg>
+	<arg n="m" f="adv">
+	只是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="thing being time-consuming"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (QP (CD 一))
+		    (NP (NN 方面)))
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 送到)
+			    (NP-OBJ (NN 国外)))
+			(VP (VV 做)
+			    (NP-OBJ (NN 品质)
+				    (NN 验证)))))
+	    (VP (ADVP (AD 又))
+		(VP (VCD (VV 费时)
+			 (VV 费工))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 送到 国外 做 品质 验证 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="dis">
+	一 方面 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

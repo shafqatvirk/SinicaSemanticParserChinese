@@ -1,0 +1,294 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 认定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity identified"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 已))
+				      (VP (LB 被)
+					  (IP-OBJ (NP-SBJ (NP-PN (NR 广东省))
+							  (NP (NN 科委)))
+						  (VP (VV 认定)
+						      (NP-OBJ (-NONE- *T*-2)))))))
+			      (DEC 的)))
+		      (NP (ADJP (JJ 高新))
+			  (NP (NN 技术)))
+		      (NP (NN 企业)))
+	      (VP (QP-PRD (CD 二十)
+			  (CLP (M 家))))) 
+	  </parse>
+	  <arg n="0">
+	  广东省 科委 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 去年))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (LCP-LOC (NP (DP (DT 这些))
+						   (NP (NN 科技)
+						       (NN 园区)))
+					       (LC 内))
+				      (VP (SB 被)
+					  (VP (ADVP (AD 正式))
+					      (VP (VV 认定)
+						  (NP-OBJ (NN 资格)))))))
+			      (DEC 的)))
+		      (NP (ADJP (JJ 高))
+			  (ADJP (JJ 新))
+			  (NP (NN 技术)))
+		      (NP (NN 企业)))
+	      (VP (VV 达)
+		  (QP-OBJ (CD 一百五十)
+			  (CLP (M 家))))) 
+	  </parse>
+	  <arg n="1" f="pse">
+	  资格 
+	  </arg>
+	  <arg n="1" f="psr">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正式 
+	  </arg>
+	  <arg n="m" f="loc">
+	  这些 科技 园区 内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-MNR (P 经)
+					      (NP (NN 省)))
+				      (VP (VV 认定))))
+			      (DEC 的)))
+		      (NP (ADJP (JJ 高新))
+			  (NP (NN 技术)))
+		      (NP (NN 企业)))
+	      (VP (VV 达)
+		  (QP-OBJ (CD 五百六十九)
+			  (CLP (M 家))))) 
+	  </parse>
+	  <arg n="0">
+	  经 省 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity identified"/>
+      <role argnum="2" argrole="entity identified as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NN 超声)
+				 (PU 、)
+				 (NN 海洋))
+		      (QP (CD 两)
+			  (CLP (M 家)))
+		      (NP (NN 集团)
+			  (NN 公司)))
+	      (VP (ADVP (AD 已))
+		  (VP (LB 被)
+		      (IP-OBJ (NP-SBJ (NN 国家)
+				      (NN 科委))
+			      (VP (VSB (VV 认定)
+				       (VV 为))
+				  (NP-OBJ (NP (DP (DT 全))
+					      (NP (NN 国)))
+					  (QP (OD 首)
+					      (CLP (M 批)))
+					  (NP (NN 国家)
+					      (NN 重点))
+					  (NP (ADJP (JJ 高新))
+					      (NP (NN 技术)))
+					  (NP (NN 企业)
+					      (NN 集团)))))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 科委 
+	  </arg>
+	  <arg n="1">
+	  超声 、 海洋 两 家 集团 公司 
+	  </arg>
+	  <arg n="2">
+	  全 国 首 批 国家 重点 高新 技术 企业 集团 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 青啤)
+				  (NN 公司)
+				  (PU 、)
+				  (NR 海尔)
+				  (NN 集团)
+				  (CC 和)
+				  (NR 双星)
+				  (NN 集团))
+			   (DEG 的))
+		      (NP (NN 产品)
+			  (NN 品牌)))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 先后))
+		  (VP (SB 被)
+		      (VP (VRD (VV 认定)
+			       (VV 为))
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (NP-PN-LOC (NR 中国))
+					      (VP (VV 驰名)))))
+				  (NP (NN 商标))))))) 
+	  </parse>
+	  <arg n="1">
+	  青啤 公司 、 海尔 集团 和 双星 集团 的 产品 品牌 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 中国 驰名 商标 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing to be convinced of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (LCP-TMP (IP (NP-SBJ (NP-PN (NR 小浪底))
+				   (NP (NN 大坝)
+				       (NN 工程)))
+			   (VP (VV 开工)
+			       (NP-EXT (DNP (QP (ADVP (AD 不到))
+						(QP (CD 一)
+						    (CLP (M 年))))
+					    (DEG 的))
+				       (NP (NN 时间)))))
+		       (LC 里))
+	      (PU ，)
+	      (NP-SBJ (NN 业主))
+	      (VP (VP (ADVP (AD 就))
+		      (VP (VV 收到)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 一百四十七)
+				      (CLP (M 封)))
+				  (NP (NN 索赔信)))))
+		  (PU ，)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (DNP (NP-PN (NR ＣＩＰＭ))
+					    (DEG 的))
+				       (NP (NN 协助)))
+				   (LC 下)))
+		      (PU ，)
+		      (ADVP (AD 最终))
+		      (VP (VV 认定)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 只))
+				      (VP (VE 有)
+					  (IP-OBJ (NP-SBJ (DNP (NP (QP (CD 四十七)
+								       (CLP (M 封)))
+								   (NP (NN 信函)))
+							       (DEG 的))
+							  (NP (NN 索赔)
+							      (NN 理由)))
+						  (VP (VC 是)
+						      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+								  (CP (IP (NP-SBJ (-NONE- *T*-1))
+									  (VP (VV 站得住脚)))
+								      (DEC 的))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  业主 
+	  </arg>
+	  <arg n="1">
+	  *pro* 只 有 四十七 封 信函 的 索赔 理由 是 *OP* *T*-1 站得住脚 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最终 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 ＣＩＰＭ 的 协助 下 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  小浪底 大坝 工程 开工 不到 一 年 的 时间 里 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 介绍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

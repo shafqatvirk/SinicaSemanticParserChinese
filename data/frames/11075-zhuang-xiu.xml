@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 装修 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 有的))
+	    (VP (VV 装修)
+		(NP-OBJ (NN 浴室)
+			(NN 磁砖)))) 
+	</parse>
+	<arg n="0">
+	有的 
+	</arg>
+	<arg n="1">
+	浴室 磁砖 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

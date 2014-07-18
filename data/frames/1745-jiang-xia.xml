@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 三)
+			  (CLP (M 名)))
+		      (NP-PN (NN 皇家)
+			     (NR 香港)
+			     (NN 警务处))
+		      (NP (NN 人员)))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (NP-PN (NR 香港))
+				  (NP (NN 旗)))
+			  (VP (VV 降下))))) 
+	  </parse>
+	  <arg n="0">
+	  三 名 皇家 香港 警务处 人员 
+	  </arg>
+	  <arg n="1">
+	  香港旗 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 英国))
+			  (NP (NN 国旗)))
+		      (CC 和)
+		      (NP (NP-PN (NR 香港))
+			  (NP (NN 旗))))
+	      (VP (ADVP (AD 徐徐))
+		  (VP (VV 降下)))) 
+	  </parse>
+	  <arg n="1">
+	  英国 国旗 和 香港 旗 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  徐徐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

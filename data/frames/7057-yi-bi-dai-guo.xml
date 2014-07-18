@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一笔带过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="writer"/>
+    <role argnum="1" argrole="entity arg0 barely touches on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (NT 七○)
+			 (NN 年代))
+		     (LC 之前))
+	    (PU ，)
+	    (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NP-PN (NR 台湾))
+					(NP (NN 学生)))
+				(VP (MSP 所)
+				    (VP (VV 读)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 现代史)))
+	    (PU ，)
+	    (QP-SBJ (NP (NT 五四))
+		    (QP (CD 一)
+			(CLP (M 章))))
+	    (VP (SB 被)
+		(VP (VV 轻描淡写)
+		    (PU 、)
+		    (VV 一笔带过)))) 
+	</parse>
+	<arg n="1" f="psr">
+	*OP* 台湾 学生 所 读 *T*-1 的 现代史 
+	</arg>
+	<arg n="1" f="pse">
+	五四 一 章 
+	</arg>
+	<arg n="m" f="tmp">
+	七○ 年代 之前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

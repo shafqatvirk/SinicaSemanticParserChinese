@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 生养 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 gives birth to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 同样的))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-PN-LOC (NR 台湾))
+				    (VP (VV 俗称)
+					(NP-OBJ (PU 「)
+						(NN 油串)
+						(PU 」)))))
+			    (DEC 的)))
+		    (NP (NN 南方)
+			(NN 黑鲔)))
+	    (VP (VP (ADVP (AD 也))
+		    (VP (VV 要)
+			(QP-OBJ (CD 八)
+				(CLP (M 岁)))))
+		(VP (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VV 生养)
+			    (NP-OBJ (NN 儿女))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 台湾 俗称 「 油串 」 的 南方 黑鲔 
+	</arg>
+	<arg n="1">
+	儿女 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="adv">
+	同样的 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

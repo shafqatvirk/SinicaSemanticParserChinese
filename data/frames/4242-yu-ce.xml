@@ -1,0 +1,196 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing forecasted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NN 国家)
+			     (NN 统计局))
+		  (VP (VV 预测)
+		      (PU ：)
+		      (IP-OBJ (NP-SBJ (NN 全球)
+				      (NN 经济)
+				      (NN 发展))
+			      (VP (ADVP (AD 将))
+				  (PP-BNF (P 给)
+					  (NP-PN (NR 中国)))
+				  (VP (VV 带来)
+				      (NP-OBJ (QP (CD 很多))
+					      (NP (NN 机遇)))))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 统计局 	  
+	  </arg>
+	  <arg n="1">
+	  全球 经济 发展 将 给 中国 带来 很多 机遇 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-TPC-3 (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 是否))
+			    (ADVP (AD 还))
+			    (VP (VV 能)
+				(VP (VE 有)
+				    (NP-OBJ (QP (CLP (M 个)))
+					    (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VV 缩水)))
+						    (DEC 的)))
+					    (NP (NN 赛季)))))))
+	      (PU ，)
+	      (NP-SBJ (PN 谁))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 无法))
+		  (ADVP (AD 准确))
+		  (VP (VV 预测)
+		      (IP-OBJ (-NONE- *T*-3))))) 
+	  </parse>
+	  <arg n="0">
+	  谁 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-3 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  准确 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 联合国))
+		  (VP (VV 预测)
+		      (NP-OBJ (NT 明年)
+			      (NN 世界)
+			      (NN 经济)
+			      (NN 增长率)))) 
+	  </parse>
+	  <arg n="0">
+	  联合国 	  
+	  </arg>
+	  <arg n="1">
+	  明年 世界 经济 增长率 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-SBJ (NN 专家))
+		      (VP (VV 预测))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP-PN (NR 中国))
+			       (NP (NN 国民)
+				   (NN 生产)
+				   (NN 总值)
+				   (CC 与)
+				   (NN 进出口)
+				   (NN 总额)))
+			   (DEG 的))
+		      (NP (NN 依存度)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 接近)
+		      (QP-OBJ (CD 百分之五十))))) 
+	  </parse>
+	  <arg n="0">
+	  专家 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 南京)
+			     (NR 紫金山)
+			     (NN 天文台))
+		  (VP (VRD (VV 预测)
+			   (VV 出))
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (NP-TMP (-NONE- *T*-1))
+					      (NP-PN-LOC (NR 中国))
+					      (VP (VV 观测)
+						  (NP-OBJ (NN 彗星))
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 撞击)
+							  (NP-OBJ-PN (NR 木星)))))))
+				      (DEC 的)))
+			      (ADJP (JJ 具体))
+			      (NP (NN 时间))))) 
+	  </parse>
+	  <arg n="0">
+	  南京 紫金山 天文台 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* *T*-1 中国 观测 彗星 *PRO* 撞击 木星 的 具体 时间 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九八年))
+	      (NP-SBJ (NP (DP (DT 每))
+			  (NP (NN 股)))
+		      (LCP (NP (NN 税))
+			   (LC 后))
+		      (NP (NN 利润)))
+	      (VP (VP (VRD (VV 预测)
+			   (VC 为))
+		      (QP-OBJ (CD 零点六零八)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="1">
+	  每 股 税 后 利润 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  为 零点六零八 元 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九八年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

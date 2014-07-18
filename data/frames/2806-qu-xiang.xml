@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 趋向 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="state tend towards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 产业)
+		      (NN 结构))
+	      (VP (VV 趋向)
+		  (NP-OBJ (NN 合理)))) 
+	  </parse>
+	  <arg n="0">
+	  产业 结构 
+	  </arg>
+	  <arg n="1">
+	  合理 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 利用)
+			  (NP-OBJ (NN 外资))))
+	      (VP (VV 趋向)
+		  (NP-OBJ (NN 多元化)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 利用 外资 
+	  </arg>
+	  <arg n="1">
+	  多元化 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

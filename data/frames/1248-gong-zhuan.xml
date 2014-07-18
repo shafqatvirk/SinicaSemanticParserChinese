@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 公转 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHPP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (NN 地球))
+			  (VP (PP-TMP (-NONE- *T*-1))
+			      (VP (VP (VP (VV 绕)
+					  (NP-OBJ (NP (PN 其))
+						  (NP (NN 轴心))))
+				      (VP (VV 自转)))
+				  (CC 和)
+				  (VP (VP (VV 绕)
+					  (NP-OBJ (NN 太阳)))
+				      (VP (VV 公转))))))
+		      (DEC 的)))
+	      (NP (NN 周期))) 
+	  </parse>
+	  <arg n="0">
+	  地球 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

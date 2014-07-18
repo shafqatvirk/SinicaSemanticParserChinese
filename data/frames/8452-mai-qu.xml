@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 买去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="thing arg0 buys"/>
+      <role argnum="2" argrole="seller"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 无奈))
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 业者)))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VP (DVP (NP (NN 象徵性))
+					    (DEV 地))
+				       (VP (VV 缴)
+					   (AS 了)
+					   (NP-OBJ (QP (CD 一)
+						       (CLP (M 点)))
+						   (NP (NN 钱)))))
+				   (PU ，)
+				   (VP (BA 把)
+				       (IP-OBJ (NP-SBJ (NN 技术))
+					       (VP (VV 买去))))))
+			   (LC 後))
+		  (PU ，)
+		  (ADVP (AD 却))
+		  (VP (VV 没有)
+		      (VP (DVP (VP (VA 好好))
+			       (DEV 的))
+			  (VP (VV 珍惜)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  技术 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

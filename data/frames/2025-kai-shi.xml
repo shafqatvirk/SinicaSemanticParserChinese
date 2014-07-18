@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开始 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing started"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 目前))
+		(PU ，)
+		(NP-PN-SBJ (NR 王翔))
+		(VP (ADVP (AD 又))
+		    (VP (VV 开始)
+			(AS 了)
+			(NP-OBJ (DNP (NP-PN (NR 九龙街))
+				     (DEG 的))
+				(NP (NN 建设)))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  王翔 	  	  
+	  </arg>
+	  <arg n="1">
+	  九龙街 的 建设 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (LCP-TMP (IP (NP-PN-SBJ (NR 德国))
+			     (VP (VV 统一)))
+			 (LC 后))
+		(PU ，)
+		(NP-SBJ (ADJP (JJ 原))
+			(ADJP (JJ 驻德))
+			(NP (NN 苏军)))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-TMP (P 从)
+					(NP (NT １９９１年)))
+				(VP (VV 开始))))
+		    (ADVP (AD 分批))
+		    (VP (VV 撤离)))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  从 １９９１年 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 活动))
+	      (VP (ADVP (AD 将))
+		  (PP-TMP (P 于)
+			  (NP (NT 元旦)
+			      (NT 上午)
+			      (NT 十时三十分)))
+		  (VP (VV 开始)))) 
+	  </parse>
+	  <arg n="1">
+	  活动 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 元旦 上午 十时三十分 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

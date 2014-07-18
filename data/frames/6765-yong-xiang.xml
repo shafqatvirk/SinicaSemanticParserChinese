@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 涌向 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 pours to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 车潮))
+	    (VP (VV 涌向)
+		(NP-OBJ (NP-APP (NP-PN (NR 台北))
+				(NP (NN 郊区)))
+			(PU 、)
+			(NP (CP (WHNP-5 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-5))
+					(VP (VA 开阔)))
+				    (DEC 的)))
+			    (NP-PN (NR 内湖))
+			    (NP (NN 河川)
+				(NN 整治地)))))) 
+	</parse>
+	<arg n="0">
+	车潮 
+	</arg>
+	<arg n="1">
+	台北 郊区 、 *OP* *T*-5 开阔 的 内湖 河川 整治地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

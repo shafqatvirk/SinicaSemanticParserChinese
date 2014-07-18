@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 淘汰 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity eliminated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 搞好)
+		  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VCD (VV 压缩)
+					   (VV 淘汰))
+				      (NP-OBJ (ADJP (JJ 落后))
+					      (NP (NN 棉纺锭)))))
+			  (NP (NN 工作))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  落后 棉纺锭 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (NP-APP (NP (NN 女单))
+				(QP (CD １２)
+				    (CLP (M 号)))
+				(NP (NN 种子)))
+			(PU 、)
+			(NP-APP (NP-PN (NR 德国))
+				(NP (NN 选手)))
+			(NP-PN (NR 哈克)))
+	      (VP (ADVP (AD 也))
+		  (PP-LOC (P 在)
+			  (LCP (NP (QP (OD 第一)
+				       (CLP (M 轮)))
+				   (NP (NN 比赛)))
+			       (LC 中)))
+		  (VP (SB 被)
+		      (VP (VV 淘汰)
+			  (NP-OBJ (-NONE- *-1)))))) 
+	  </parse>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 第一 轮 比赛 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

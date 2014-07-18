@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 渡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="temporal or spatial entity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (CS 只要))
+		      (VP (VV 渡)
+			  (AS 过)
+			  (NP-OBJ (CP-APP (IP (NP-TMP (NT 眼前))
+					      (IP (IP (NP-SBJ (NN 价格))
+						      (VP (VV 混乱)))
+						  (PU 、)
+						  (IP (NP-SBJ (NN 景气))
+						      (VP (VA 浑沌)))))
+					  (DEC 的))
+				  (NP (NN 调整期)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  眼前 价格 混乱 、 景气 浑沌 的 调整期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

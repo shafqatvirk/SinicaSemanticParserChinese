@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 巴望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 hopes for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (PN 你))
+			  (VP (VP (VP (VV 用)
+				      (QP-OBJ (DP (DT 每)
+						  (CLP (M 股)))
+					      (QP (CD 一百五十)
+						  (CLP (M 元)))))
+				  (VP (VV 买)
+				      (AS 了)
+				      (NP-PN-OBJ (NR 台积电))))
+			      (PU ，)
+			      (VP (ADVP (AD 却))
+				  (VP (VV 巴望)
+				      (IP-OBJ (IP (NP-SBJ (PN 它))
+						  (VP (PP-TMP (P 在)
+							      (LCP (NP (QP (CD 两)
+									   (CLP (M 个)))
+								       (NP (NN 月)))
+								   (LC 内)))
+						      (VP (VV 涨)
+							  (PP (P 到)
+							      (QP (CD 二百二十)
+								  (CLP (M 元)))))))
+					      (PU ，)
+					      (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (ADVP (AD 好))
+						      (VP (VV 让)
+							  (NP-OBJ (PN 你))
+							  (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (VPT (VV 赶)
+								       (DER 得)
+								       (VV 上))
+								  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+									  (VP (PP-BNF (P 替)
+										      (NP (CP (WHNP-2 (-NONE- *OP*))
+											      (CP (IP (NP-SBJ (-NONE- *pro*))
+												      (VP (ADVP (AD 新))
+													  (VP (VV 买)
+													      (NP-OBJ (-NONE- *T*-2)))))
+												  (DEC 的)))
+											  (NP (NN 房子))))
+									      (VP (VV 付)
+										  (NP-OBJ (NN 尾款))))))))))))))))
+	      (PU 。)
+	      (ADVP (AD 结果))
+	      (CP-ADV (ADVP (CS 那怕))
+		      (IP (NP-SBJ (PN 它))
+			  (VP (VV 涨)
+			      (PP (P 到)
+				  (QP (CD 二百)
+				      (CLP (M 元)))))))
+	      (PU ，)
+	      (NP-SBJ (PN 你))
+	      (VP (ADVP (AD 还是))
+		  (ADVP (AD 不))
+		  (VP (VA 满意)))) 
+	  </parse>
+	  <arg n="0">
+	  你 
+	  </arg>
+	  <arg n="1">
+	  它 在 两 个 月 内 涨 到 二百二十 元 ， *pro* 好 让 你 *PRO* 赶 得 上 *PRO* 替 *OP* *pro* 新 买 *T*-2 的 房子 付 尾款 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如果 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

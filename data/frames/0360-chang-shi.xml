@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 尝试 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="trier"/>
+    <role argnum="1" argrole="thing tried"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-PRP (P 为)
+              (IP (NP-SBJ (-NONE- *PRO*))
+                  (VP (VV 解决)
+                      (NP-OBJ (ADJP (JJ 庞大))
+                              (NP (NN 资金)
+                                  (NN 需求))))))
+      (PU ，)
+      (NP-SBJ (NN 公司))
+      (VP (ADVP (AD 正))
+          (VP (VV 争取)
+              (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                      (VP (VP (VV 发行)
+                              (NP-OBJ (NN 股票)))
+                          (CC 和)
+                          (VP (VV 尝试)
+                              (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                                          (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                                  (VP (ADVP (AD 更))
+                                                      (VP (VA 多))))
+                                              (DEC 的)))
+                                      (NP (NN 融资)
+                                          (NN 渠道))))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<V/>
+	<arg n="1"> *OP* (*T*-1)->(融资渠道) 更 多 的 融资 渠道 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (PU 「)
+          (NP-SBJ (PN 我们))
+          (VP (VV 需要)
+              (VP (VP (VV 用)
+                      (NP-OBJ (DP (DT 这))
+                              (ADJP (JJ 特快))
+                              (NP (NN 程序))))
+                  (VP (MSP 以)
+                      (VP (ADVP (AD 尽量))
+                          (VP (VV 减少)
+                              (NP-OBJ (DP (DT 任何))
+                                      (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+                                                  (VP (VV 尝试)
+                                                      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                                                              (VP (VP (VV 利用)
+                                                                      (NP-PN-OBJ (NR 香港)))
+                                                                  (VP (VV 作为)
+                                                                      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                                                                              (VP (VV 规避)
+                                                                                  (NP-OBJ (NP-PN (NR 联合国))
+                                                                                          (ADJP (JJ 有关))
+                                                                                          (NP (NN 制裁))))))))))
+                                              (DEC 的))
+                                      (NP (NN 可能))))))))
+          (PU 。)
+          (PU 」)))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> *PRO* 利用 香港 作为 *PRO* 规避 联合国 有关 制裁 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

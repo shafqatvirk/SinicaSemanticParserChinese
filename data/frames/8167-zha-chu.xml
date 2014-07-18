@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 榨出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 squeezes out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 水源)
+			       (NN 保护区))
+			   (DEG 的))
+		      (QP (CD 诸多))
+		      (NP (NN 限制)))
+	      (VP (VP (VV 维护)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP-PN (NR 坪林))
+				   (DEG 的))
+			      (NP (NN 青山)
+				  (NN 绿水))))
+		  (PU ，)
+		  (VP (ADVP (AD 却))
+		      (ADVP (AD 也))
+		      (VP (VV 榨出)
+			  (AS 了)
+			  (NP-OBJ (NP (NP-PN (NR 坪林))
+				      (NP (NN 乡民)))
+				  (NP (ADJP (JJ 满))
+				      (NP (NN 腹)))
+				  (NP (NN 苦水))))))) 
+	  </parse>
+	  <arg n="0">
+	  水源 保护区 的 诸多 限制 
+	  </arg>
+	  <arg n="1">
+	  坪林 乡民 满 腹 苦水 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

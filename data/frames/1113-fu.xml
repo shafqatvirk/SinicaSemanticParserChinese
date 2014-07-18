@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 复 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="predicate of theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TMP (IP-APP (NP-PN (NP-PN (NR 中)
+					(NR 越))
+				 (NP (NN 铁路)))
+			  (VP (VV 复)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 通)))))
+		  (NP (NN 初期))) 
+	  </parse>
+	  <arg n="0">
+	  中 越 铁路 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 通 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

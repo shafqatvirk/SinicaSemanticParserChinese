@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 审理 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="case tried"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 北京市))
+			 (QP (OD 第一))
+			 (ADJP (JJ 中级))
+			 (NP (NN 人民)
+			     (NN 法院)))
+	      (VP (NP-TMP (NT 今天)
+			  (NT 上午))
+		  (VP (VP (VV 开庭))
+		      (VP (VV 审理)
+			  (AS 了)
+			  (NP-OBJ (IP-APP (NP-PN-SBJ (NR 郭辉))
+					  (VP (VP (VV 持)
+						  (NP-OBJ (NN 械)))
+					      (VP (VV 抢劫)
+						  (NP-OBJ (NN 邮政)
+							  (NN 储蓄所)))
+					      (PU 、)
+					      (VP (VV 杀死)
+						  (NP-OBJ (NN 营业员)))))
+				  (NP (NN 案))))
+		      (PU ，)
+		      (VP (VV 认定)
+			  (IP-OBJ (NP-PN-SBJ (NR 郭辉))
+				  (VP (VV 犯)
+				      (NP-OBJ (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+							  (VP (ADVP (AD 故意))
+							      (VP (VV 杀)
+								  (NP-OBJ (NN 人)))))
+						  (NP (NN 罪)))
+					      (PU 、)
+					      (NP (NN 抢劫罪))))))
+		      (PU ，)
+		      (VP (ADVP (AD 依法))
+			  (VP (VP (VV 判处)
+				  (NP-PN-IO (NR 郭辉))
+				  (NP-OBJ (NN 死刑)))
+			      (PU ，)
+			      (VP (VV 剥夺)
+				  (NP-OBJ (NN 政治)
+					  (NN 权利))
+				  (NP-EXT (NN 终身)))))))) 
+	  </parse>
+	  <arg n="0">
+	  北京市 第一 中级 人民 法院 
+	  </arg>
+	  <arg n="1">
+	  郭辉 持 械 抢劫 邮政 储蓄所 、 杀死 营业员 案 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 上午 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (CLP (NP (NN 法庭))
+			   (LC 上)))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 起)))
+		      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 滥用)
+				      (NP-OBJ (NN 水))))
+			      (DEC 的))
+		      (NP (NN 案件)))
+	      (VP (ADVP (AD 正在))
+		  (VP (VV 审理)))) 
+	  </parse>
+	  <arg n="1">
+	  一 起 *PRO* 滥用 水 的 案件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 法庭 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对)
+			  (NP (ADJP (JJ 个别))
+			      (NP (NN 案件))))
+		  (VP (VV 开始)
+		      (VP (ADVP (AD 直接))
+			  (PP-MNR (P 用)
+				  (NP (NN 中文)))
+			  (VP (VV 审理)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  对 个别 案件 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 中文 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直接 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 暴露 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="exposer"/>
+    <role argnum="1" argrole="thing exposed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (ADVP (AD 长期))
+          (VP (VV 暴露)
+              (PP-LOC (P 于)
+                      (NP (NN 地表)))))))
+	</parse>
+	<arg n="1"> *pro* </arg>
+	<arg n="M" f="ADV"> 长期 </arg>
+	<V/>
+	<arg n="M" f="LOC"> 于 地表 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+          (VP (DVP (VP (ADVP (AD 如此))
+                       (VP (VA 早)))
+                   (DEV 地))
+              (VP (VRD (VV 暴露)
+                       (VV 出))
+                  (NP-OBJ (DNP (NP (PN 他))
+                               (DEG 的))
+                          (NP (NN 心得)
+                              (CC 和)
+                              (NN 战术))))))
+        </parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="M" f="ADV"> 如此 早 地 </arg>
+	<V/>
+	<arg n="1"> 他 的 心得 和 战术 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

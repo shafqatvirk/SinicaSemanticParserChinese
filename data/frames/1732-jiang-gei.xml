@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奖给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="rewarder"/>
+      <role argnum="1" argrole="entity rewarder"/>
+      <role argnum="2" argrole="reward"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="io" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU ‘)
+	      (NP-SBJ (NN 税务)
+		      (NN 局长))
+	      (VP (ADVP (AD 硬))
+		  (VP (VV 要)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 奖给)
+				  (NP-PN-IO (NR 巴国甫))
+				  (QP-OBJ (CD ５０)
+					  (CLP (M 元)))))))
+	      (PU ’)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  巴国甫 
+	  </arg>
+	  <arg n="2">
+	  ５０ 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

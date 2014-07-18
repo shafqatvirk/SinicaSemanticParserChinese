@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 失眠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (LCP-TMP (NP (NN 夜) )
+			       (LC 里))
+		      (VP (VV 辗转反侧)))
+		  (PU ，)
+		  (VP (ADVP (AD 又))
+		      (VP (VV 担心)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (LCP-TMP (NP (NN 失眠) )
+					       (LC 后))
+				      (NP-TMP (NT 早上) )
+				      (VP (VV 会)
+					  (VP (VPT (VV 爬)
+						   (AD 不)
+						   (VV 起来)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

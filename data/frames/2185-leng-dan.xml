@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冷淡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity cold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 生活)
+					  (PP (P 在)
+					      (NP (NP-PN (NR 中国))
+						  (NP (NN 政治)
+						      (PU 、)
+						      (NN 文化))
+						  (NP (NN 中心))))))
+				  (DEC 的)))
+			  (NP-PN (NR 北京))
+			  (NP (NN 青年)))
+		  (VP (VP (PP-DIR (P 对)
+				  (NP (NN 农业)
+				      (NN 科技)))
+			  (ADVP (AD 较为))
+			  (VP (VA 冷淡)))
+		      (PU ，)
+		      (VP (ADVP (AD 也))
+			  (ADVP (AD 并))
+			  (ADVP (AD 不))
+			  (VP (PU “)
+			      (VV 感激)
+			      (PU ”)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (NN 农业)
+							  (NN 技术))
+						  (VP (PP-BNF (P 为)
+							      (NP (PN 他们)))
+						      (VP (VV 带来)
+							  (NP-OBJ (-NONE- *T*-2)))))
+					      (DEC 的)))
+				      (NP (NN 好处))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 生活 在 中国 政治 、 文化 中心 的 北京 青年 
+	  </arg>
+	  <arg n="1">
+	  对 农业 科技 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

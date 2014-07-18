@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 返 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 伊))
+	      (VP (VV 拒绝)
+		  (NP-PN-OBJ (NR 联合国)
+			     (NN 特委会))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (ADVP (AD 重))
+			      (VP (VV 返)
+				  (NP-PN-OBJ (NR 伊))))
+			  (VP (VV 进行)
+			      (NP-OBJ (NN 武器)
+				      (NN 核查))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  伊 
+	  </arg>
+	  <arg n="m" f="adv">
+	  重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

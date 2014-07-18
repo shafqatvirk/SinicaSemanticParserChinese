@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 明知故犯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不))
+		(VP (VV 知道)
+		    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (VC 是)
+				(VP (VP (ADVP (AD 不))
+					(VP (VV 懂)))
+				    (CC 还是)
+				    (VP (VV 明知故犯)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

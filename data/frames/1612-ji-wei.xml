@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 计为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity doing calculation"/>
+      <role argnum="1" argrole="thing calculated"/>
+      <role argnum="2" argrole="calculated as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (CS 如果))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-TPC (-NONE- *T*-1))
+						      (PP-LOC (P 在)
+							      (NP-PN (NR 香港)))
+						      (NP-SBJ (NN 增值))
+						      (VP (ADVP (AD 较))
+							  (VP (VA 大))))
+						  (DEC 的)))
+					  (NP (NN 部分)))
+				  (VP (VV 计为)
+				      (NP-OBJ (DNP (NP-PN (NR 香港))
+						   (DEG 的))
+					      (NP (NN 出口)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 在 香港 增值 较 大 的 部分 
+	  </arg>
+	  <arg n="2">
+	  香港 的 出口 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

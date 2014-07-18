@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 侦办 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 彰化)
+		       (NN 地检署) )
+	    (VP (VV 侦办)
+		(NP-OBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+				(VP (NP-LOC (NN 总统)
+					    (NN 大选))
+				    (VP (VV 贿选))))
+			(NP (NN 案))))) 
+	</parse>
+	<arg n="0">
+	彰化 地检署 
+	</arg>
+	<arg n="1">
+	*pro* 总统 大选 贿选 案 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-DIR (P 对於)
+			(NP (NP-APP (NP (NN 国家)
+					(NN 安全))
+				    (PU 、)
+				    (NP (NN 社会)
+					(NN 安全))
+				    (PU 、)
+				    (NP (NN 经济)
+					(NN 安全))
+				    (PU 、)
+				    (NP (ADJP (JJ 重大))
+					(NP (NN 犯罪))))
+			    (PU ，)
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 依法))
+					    (VP (VV 应)
+						(VP (VV 侦办)))))
+				    (DEC 的)))
+			    (NP (NN 事项))))
+		(ADVP (AD 则))
+		(ADVP (AD 不))
+		(VP (VV 可)
+		    (VP (VV 轻忽))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	依法 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

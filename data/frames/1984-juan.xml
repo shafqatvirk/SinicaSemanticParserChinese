@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 卷 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 rolls up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 巴西)
+			 (NN 女子)
+			 (NN 国家队))
+	      (VP (VP (PP-LOC (P 在)
+			      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-PN-SBJ (NR 阿根廷))
+						   (VP (VV 举行)
+						       (NP-OBJ (-NONE- *T*-1))))
+					       (DEC 的)))
+				       (NP-PN (NR 南美))
+				       (NP (NN 足球赛)))
+				   (LC 上)))
+		      (PU ，)
+		      (VP (VP (VV 横扫千军)
+			      (PP (P 如)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 卷)
+					  (NP-OBJ (NN 席))))))
+			  (PU ，)
+			  (VP (VV 登上)
+			      (AS 了)
+			      (NP-OBJ (NN 冠军)
+				      (NN 宝座)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (ADVP (AD 将))
+		      (VP (VP (VV 代表)
+			      (NP-OBJ (NP-PN (NR 南美))
+				      (NP (NN 地区))))
+			  (VP (VV 参加)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (NP-TMP (NT 明年)
+							      (NT ６月))
+						      (PP-LOC (P 在)
+							      (NP-PN (NR 美国)))
+						      (VP (VV 举行))))
+					      (DEC 的)))
+				      (NP-PN (NN 世界)
+					     (NN 女子)
+					     (NN 足球)
+					     (NN 锦标赛)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  席 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

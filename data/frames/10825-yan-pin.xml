@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 延聘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 hires arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今年))
+	    (NP-PN-SBJ (NR 交大))
+	    (VP (ADVP (AD 又))
+		(VP (VV 延聘)
+		    (AS 了)
+		    (NP-OBJ (NP-APP (NP-PN (NR 宏基)
+					   (NN 集团))
+				    (NP (NN 董事长)))
+			    (NP-PN (NR 施振荣)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 前来)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 授课)))))))) 
+	</parse>
+	<arg n="0">
+	交大 
+	</arg>
+	<arg n="1">
+	宏基 集团 董事长 施振荣 
+	</arg>
+	<arg n="2">
+	*PRO* 前来 *PRO* 授课 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="tmp">
+	今年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

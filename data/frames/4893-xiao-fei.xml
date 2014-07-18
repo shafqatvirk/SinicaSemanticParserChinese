@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 消费 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="consumer"/>
+    <role argnum="1" argrole="thing consumed"/>
+    <role argnum="2" argrole="amount of money consumed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-TMP (NT 去年)
+			(NN 圣诞节))
+		(PU ，)
+		(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NP-PN (NR 美国))
+					    (NP (NN 民众)))
+				    (VP (PP-MNR (P 透过)
+						(NP (NN 网路)))
+					(VP (VV 消费)
+					    (NP-OBJ (-NONE- *T*-2)))))
+				(DEC 的)))
+			(NP (NN 金额)))
+		(VP (VV 达到)
+		    (QP-OBJ (CD 十亿)
+			    (CLP (M 美金))))) 
+	</parse>
+	<arg n="0">
+	美国 民众 
+	</arg>
+	<arg n="2">
+	*T*-2 
+	</arg>
+	<arg n="m" f="mnr">
+	透过 网路 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (ADJP (ADVP (AD 较))
+			       (ADJP (JJ 新型)))
+			 (DEG 的))
+		    (NP (NN 手机)))
+	    (VP (VP (QP-ADV (CD 一)
+			    (CLP (M 支)))
+		    (VP (QP-PRD (CD 好几万))))
+		(PU ，)
+		(VP (ADVP (AD 不))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-84 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (NN 青少年))
+					    (VP (VPT (VV 消费)
+						     (DER 得)
+						     (VV 起))
+						(NP-OBJ (-NONE- *T*-84))))
+					(DEC 的)))))))) 
+	</parse>
+	<arg n="0">
+	青少年 
+	</arg>
+	<arg n="1">
+	*T*-84 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (VV 消费)))
+			    (DEC 的)))
+		    (NP (NN 顾客)))
+	    (VP (ADVP (AD 主要))
+		(VP (VC 是)
+		    (NP-PRD (NN 台商))))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

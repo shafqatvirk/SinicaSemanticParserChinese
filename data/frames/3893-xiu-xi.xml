@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 休息 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity resting/closed"/>
+      <role argnum="1" argrole="time when arg0 is resting/closed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NT 星期日)
+		      (CC 及)
+		      (NN 公众)
+		      (NN 假期))
+	      (VP (VV 休息))) 
+	  </parse>
+	  <arg n="1">
+	  星期日 及 公众 假期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

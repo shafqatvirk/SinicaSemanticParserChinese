@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 应允 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 agrees to do"/>
+    <role argnum="2" argrole="entity whose request arg0 accepts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 当时))
+				    (VP (VC 是)
+					(NP-PRD (NP-PN (PU 「)
+						       (NR 第一)
+						       (NN 唱片)
+						       (PU 」))
+						(NP (NN 负责人))))))
+			    (DEC 的)))
+		    (NP-PN (NR 叶进泰)))
+	    (VP (ADVP (AD 慨然))
+		(VP (VV 应允)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 当时 是 「 第一 唱片 」 负责人 的 叶进泰 
+	</arg>
+	<arg n="m" f="adv">
+	慨然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

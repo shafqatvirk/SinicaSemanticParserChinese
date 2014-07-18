@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吞下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 swallows"/>
+      <role argnum="2" argrole="place arg1 goes to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 到)
+			  (LCP-OBJ (NP (DNP (NP-PN (PU 『)
+						   (NR 她骂姊)
+						   (PU 』))
+					    (DEG 的))
+				       (NP (NN 店)))
+				   (LC 里)))
+		      (VP (VV 叫)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 碗)))
+				  (NP (NN 板条))))
+		      (PU ，)
+		      (VP (DVP (ADVP (AD 呼噜呼噜))
+			       (DEV 的))
+			  (PU ，)
+			  (ADVP (AD 一股脑))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DP (DT 那))
+					      (CP (WHNP-4 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-4))
+							  (VP (VA 浓浓)))
+						      (DEC 的)))
+					      (NP (NN 乡愁)))
+				      (VP (VV 吞下)
+					  (NP-OBJ (NN 肚)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  那 *OP* *T*-4 浓浓 的 乡愁 
+	  </arg>
+	  <arg n="2">
+	  肚 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一股脑 
+	  </arg>
+	  <arg n="m" f="adv">
+	  呼噜呼噜 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

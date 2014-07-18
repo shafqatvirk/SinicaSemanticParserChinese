@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 卸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 unloads arg1 from"/>
+    <role argnum="3" argrole="place arg1 is unloaded to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 尤其))
+	    (PP-TMP (P 在)
+		    (LCP (IP (NP-SBJ (DP (DT 该))
+				     (NP (NN 公司)))
+			     (VP (VV 取得)
+				 (NP-OBJ (NP (DP (DT 该))
+					     (NP (NN 地)))
+					 (QP (CD 七十五)
+					     (CLP (M 年)))
+					 (NP (NN 捕鱼权)))))
+			 (LC 後)))
+	    (PU ，)
+	    (NP-TMP (DNP (NP (NT 五月)
+			     (CC 至)
+			     (NT 十月))
+			 (DEG 的))
+		    (NP (NN 旺季)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (DP-ADV (DT 每)
+			(CLP (M 天)))
+		(VP (VV 可以)
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ (DNP (QP (CD 十几)
+						 (CLP (M 艘)))
+					     (DEG 的))
+					(NP (NN 鲔钓)
+					    (NN 渔船)))
+				(VP (VV 前来)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (VV 卸)
+						    (NP-OBJ (NN 鱼)))
+						(CC 与)
+						(VP (VV 补给)))))))))) 
+	</parse>
+	<arg n="1">
+	鱼 
+	</arg>
+	<arg n="2">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

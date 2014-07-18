@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing refused"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 通过)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 对)
+				      (NP (DNP (NP (NP (NN 医疗)
+						       (NN 照顾)
+						       (NN 人员))
+						   (LCP (QP (CD 三万)
+							    (CLP (M 元)))
+							(LC 以上))
+						   (NP (NN 支出)))
+					       (DEG 的))
+					  (ADJP (JJ 大额))
+					  (NP (NN 病例))))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 核查))))))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 有关))
+		      (NP (NN 部门)))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 拒)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 付)
+				  (NP-OBJ (ADJP (JJ 违规))
+					  (NP (NN 金额)))
+				  (QP-EXT (CD 四百七十多万)
+					  (CLP (M 元)))))))) 
+	  </parse>
+	  <arg n="0">
+	  有关 部门 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 付 违规 金额 四百七十多万 元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 *PRO* 对 医疗 照顾 人员 三万 元 以上 支出 的 大额 病例 进行 核查 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

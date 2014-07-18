@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 忙成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="state arg0 is in because it is busy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NN 开馆)
+		      (NN 前夕))
+	      (PU ，)
+	      (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 座落)
+				      (PP (P 在)
+					  (LCP (NP (NP-PN (NR 北二高))
+						   (NP (NN 交流道)))
+					       (LC 附近)))))
+			      (DEC 的)))
+		      (NP-PN (NR 莺歌)
+			     (NN 陶瓷)
+			     (NN 博物馆)))
+	      (NP-SBJ (NN 里里外外))
+	      (VP (VV 忙成)
+		  (QP-OBJ (CD 一)
+			  (CLP (M 团))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *OP* *T*-1 座落 在 北二高 交流道 附近 的 莺歌 陶瓷 博物馆 
+	  </arg>
+	  <arg n="0" f="pse">
+	  里里外外 
+	  </arg>
+	  <arg n="1">
+	  一 团 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  开馆 前夕 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

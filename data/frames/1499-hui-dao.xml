@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="returning to"/>
+      <role argnum="2" argrole="returning from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 从)
+				      (NP-PN (NR 深圳)))
+			      (VP (VV 回到)
+				  (NP-PN-OBJ (NR 广州)))))
+		  (ADVP (AD 仅))
+		  (VP (VV 用)
+		      (AS 了)
+		      (QP-OBJ (CD 九十)
+			      (CLP (M 分钟)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  广州 
+	  </arg>
+	  <arg n="2">
+	  从 深圳 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (QP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VA 新)))
+				       (DEC 的)))
+			       (QP (CD 一)
+				   (CLP (M 年))))
+			   (LC 里)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 澳门))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 回到)
+		      (NP-OBJ (NN 祖国)
+			      (NN 怀抱))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  澳门 
+	  </arg>
+	  <arg n="1">
+	  祖国 怀抱 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* *T*-1 新 的 一 年 里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

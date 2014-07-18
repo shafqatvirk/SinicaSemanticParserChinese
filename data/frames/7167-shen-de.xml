@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 深得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 receives"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 尤其))
+	    (NP-SBJ (NN 捶丸))
+	    (VP (VP (VV 深得)
+		    (NP-OBJ (NN 帝王)
+			    (NN 喜爱)))
+		(PU ，)
+		(VP (ADVP (AD 哪))
+		    (VP (VV 会)
+			(VP (VE 有)
+			    (NP-OBJ (DP (DT 什麽))
+				    (DNP (NP (NN 场地))
+					 (DEG 的))
+				    (NP (NN 限制)))))))) 
+	</parse>
+	<arg n="0">
+	捶丸 
+	</arg>
+	<arg n="1">
+	帝王 喜爱 
+	</arg>
+	<arg n="m" f="adv">
+	尤其 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

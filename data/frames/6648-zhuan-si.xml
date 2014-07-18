@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 专司 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is exclusively engaged in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (NN 其中) )
+	    (NP-TPC (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (VV 专司)
+				    (NP-OBJ (NN 招财) )))
+			    (DEC 的)))
+		    (NP-PN (NR 黄喵喵) ))
+	    (PU ，)
+	    (NP-SBJ (NN 买气) )
+	    (VP (ADVP (AD 已然))
+		(VP (VV 凌驾)
+		    (LCP-OBJ (NP (NN 招财)
+				 (NN 猫) )
+			     (LC 之上))))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<arg n="1">
+	招财 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

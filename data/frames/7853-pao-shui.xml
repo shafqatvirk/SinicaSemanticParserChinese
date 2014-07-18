@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 泡水 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 soaks in water"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (QP (ADVP (AD 短短))
+			 (QP (CD 十)
+			     (CLP (M 天))))
+		     (LC 内))
+	    (NP-SBJ (QP (CD 两)
+			(CLP (M 次)))
+		    (NP (NN 台风)))
+	    (PU ，)
+	    (VP (VV 让)
+		(NP-OBJ (NP-PN (NR 汐止))
+			(QP (CD 上万))
+			(NP (NN 民宅)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (QP-ADV (CD 二)
+				(CLP (M 度)))
+			(VP (VV 泡水)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	二 度 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

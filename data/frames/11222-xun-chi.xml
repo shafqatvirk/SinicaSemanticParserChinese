@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 训斥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 reprimands"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 平日))
+				    (VP (VV 活像)
+					(NP-OBJ (QP (CD 一)
+						    (CLP (M 尊)))
+						(NP (NN 弥勒佛))))))
+			    (DEC 的)))
+		    (NP-PN (NR 玛丽安)))
+	    (VP (VP (VV 敛收)
+		    (NP-OBJ (NN 笑容)))
+		(PU ，)
+		(VP (DVP (VP (VA 严峻))
+			 (DEV 地))
+		    (ADVP (AD 当众))
+		    (VP (VV 训斥)
+			(NP-OBJ (DP (DT 那)
+				    (CLP (M 个)))
+				(DNP (ADJP (JJ 淘气))
+				     (DEG 的))
+				(ADJP (JJ 年轻))
+				(NP (NN 人))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 平日 活像 一 尊 弥勒佛 的 玛丽安 
+	</arg>
+	<arg n="1">
+	那 个 淘气 的 年轻 人 
+	</arg>
+	<arg n="m" f="adv">
+	当众 
+	</arg>
+	<arg n="m" f="adv">
+	严峻 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

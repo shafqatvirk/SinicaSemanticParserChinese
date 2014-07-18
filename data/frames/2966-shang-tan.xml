@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 商谈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-LOC (P 在)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 商谈)
+				   (NP-OBJ (PU “)
+					   (NP (NP (NN 台商))
+					       (NP (PP-LOC (P 在)
+							   (NP (NN 大陆)))
+						   (NP (NN 投资)))
+					       (NP (NN 权益)))
+					   (CC 及)
+					   (NP (ADJP (JJ 相关))
+					       (NP (NN 问题)))
+					   (PU ”))))
+			   (LC 中)))
+	      (VP (VV 交换)
+		  (NP-OBJ (NN 意见)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  “ 台商 在 大陆 投资 权益 及 相关 问题 ” 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 指派)
+	      (NP-OBJ (NP (NN 县政府))
+		      (NP (NN 办公室)
+			  (CC 和)
+			  (NN 行政科))
+		      (NP (NN 人士)))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP (P 与)
+			  (NP (NN 县)
+			      (NN 水利局)))
+		      (VP (VV 商谈)
+			  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 购买)
+					      (NP-OBJ (NN 小汽车))))
+				  (NP (NN 事宜))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="0">
+	  与 县 水利局 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 购买 小汽车 事宜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,145 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="issuer"/>
+      <role argnum="1" argrole="notice, warning"/>
+      <role argnum="2" argrole="issued to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (LCP (IP (NP-SBJ (NP-PN (NR ＮＢＡ))
+				   (NP (NN 资方)))
+			   (VP (PP-DIR (P 向)
+				       (NP (NN 劳方)))
+			       (VP (VV 发出)
+				   (NP-OBJ (NP (ADJP (PU “)
+						     (JJ 最后)
+						     (PU ”))
+					       (NP (NN 让步)))
+					   (NP (NN 通牒))))))
+		       (LC 后))) 
+	  </parse>
+	  <arg n="0">
+	  ＮＢＡ 资方 	  
+	  </arg>
+	  <arg n="1">
+	  “ 最后 ” 让步 通牒 	  
+	  </arg>
+	  <arg n="2">
+	  向 劳方 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 海关)
+			 (NN 总署))
+	      (VP (NP-TMP (NT 日前))
+		  (VP (VV 发出)
+		      (NP-OBJ (NN 公告))))) 
+	  </parse>
+	  <arg n="0">
+	  海关 总署 	  
+	  </arg>
+	  <arg n="1">
+	  公告 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日前 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="generate">
+      <role argnum="0" argrole="generator"/>
+      <role argnum="1" argrole="thing generated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VP (ADVP (AD 又))
+		      (VP (VV 可)
+			  (VP (VV 带动)
+			      (NP-OBJ (NN 锅炉))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 产生)
+				      (NP-OBJ (NN 蒸汽)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 继而))
+		      (VP (VV 带动)
+			  (NP-OBJ (NN 汽轮机))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 再))
+				  (VP (VV 发出)
+				      (NP-OBJ (NN 电能))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  电能 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="starting point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (PP-DIR (P 从)
+					  (NP-PN (NR 武汉)))
+				  (VP (VV 发出))))
+			  (DEC 的)))
+		  (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (VV 供应)
+				  (NP-PN-IO (NR 香港))
+				  (NP-OBJ (ADJP (JJ 鲜活))
+					  (NP (NN 商品)))))
+			  (DEC 的)))
+		  (NP (NN 运输)
+		      (NN 专列)))
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  从 武汉 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

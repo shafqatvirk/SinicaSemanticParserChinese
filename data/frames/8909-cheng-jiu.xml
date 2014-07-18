@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 成就 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 accomplishes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 成就)
+		  (AS 了)
+		  (NP-OBJ (NP-APP (DP (DT 这)
+				      (CLP (M 部)))
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-TPC (-NONE- *T*-3))
+					      (NP-SBJ (NN 视觉)
+						      (NN 风格))
+					      (VP (VCD (VA 奇幻)
+						       (VA 瑰丽))))
+					  (DEC 的)))
+				  (NP (NN 新作)))
+			  (NP-TTL (PU 《)
+				  (NP (ADJP (JJ 女))
+				      (NP (NN 神)))
+				  (NP (NT 一九六七))
+				  (PU 》))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  这 部 *OP* *T*-3 视觉 风格 奇幻 瑰丽 的 新作 《 女 神 一九六七 》 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

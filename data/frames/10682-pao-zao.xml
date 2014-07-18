@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 泡澡 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person taking a soaking bath"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (NP-TMP (NT 现在))
+		(ADVP (AD 都))
+		(VP (VP-FOC (VP (VV 买)
+				(NP-OBJ (NN 香精)))
+			    (VP (PP-LOC (P 在)
+					(NP (NN 家)))
+				(VP (VP (NP-ADV (PN 自己))
+					(VP (VV 燃香)
+					    (PU 、)
+					    (VV 泡澡)))
+				    (VP (VV 做做)
+					(NP-OBJ (NN HOME)
+						(NN SPA))))))
+		    (VP (ADVP (AD 比较))
+			(VP (VA 划算)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="m" f="adv">
+	自己 
+	</arg>
+	<arg n="m" f="loc">
+	在 家 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

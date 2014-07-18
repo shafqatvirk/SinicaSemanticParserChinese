@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 美化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 beautifies"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (NN 男人))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 在))
+		(VP (VV 享受)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 美化)
+				(NP-OBJ (PN 自己))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (NP-PN (NR 北埔)
+		       (NR 下街))
+		(IP-APP (NP-SBJ (NN 环境))
+			(VP (VV 美化)))
+		(NP (NN 活动))) 
+	</parse>
+	<arg n="1">
+	环境 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PU 「)
+		    (ADJP (JJ 新))
+		    (NP (NN 男人))
+		    (PU 」))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (BA 将)
+				 (IP-OBJ (NP-SBJ (PN 自己))
+					 (VP (PP-DIR (PP (P 从)
+							 (NP (NN 头)))
+						     (PP (P 到)
+							 (NP (NN 脚))))
+					     (VP (VV 美化)
+						 (QP-ADV (CD 一)
+							 (CLP (M 番))))))))
+			 (LC 後))
+		(PU ，)
+		(ADVP (AD 努力))
+		(VP (VV 展现)
+		    (NP-OBJ (CP (WHNP-6 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-6))
+					(VP (VA 妩媚)))
+				    (DEC 的)))
+			    (QP (CD 一))
+			    (NP (NN 面)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<arg n="m" f="dir">
+	从 头 到 脚 
+	</arg>
+	<arg n="m" f="ext">
+	一 番 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 象徵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 symbolizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VP (VV 环衬))))
+			      (DEC 的)))
+		      (NP-PN (NR 长城))
+		      (NP (NN 图案)))
+	      (PU ，)
+	      (VP (VV 象徵)
+		  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VA 伟大)))
+				  (DEC 的)))
+			  (NP (NN 祖国))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 环衬 的 长城 图案 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-3 伟大 的 祖国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

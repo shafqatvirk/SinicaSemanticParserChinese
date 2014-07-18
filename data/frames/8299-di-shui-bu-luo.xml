@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 滴水不漏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-APP (NP (NP-APP (NN 导演))
+		      (NP-PN (NR 乔治鲁卡斯)))
+		  (PP (P 在)
+		      (LCP (IP (NP-SBJ (NN 影片))
+			       (VP (ADVP (AD 未))
+				   (VP (VV 上映))))
+			   (LC 前)))
+		  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 滴水不漏)))
+			  (DEC 的))
+		  (NP (NN 行销)
+		      (NN 策略))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

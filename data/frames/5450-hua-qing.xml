@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 划清 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 draws clearly"/>
+    <role argnum="2" argrole="area arg1 is drawn"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-HLN (NP-SBJ (NN 商业)
+			  (PU 、)
+			  (NN 艺术))
+		  (VP (PU 「)
+		      (VV 划清)
+		      (NP-OBJ (NN 界线))
+		      (PU 」))) 
+	</parse>
+	<arg n="1">
+	界线 
+	</arg>
+	<arg n="2">
+	商业 、 艺术 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 李登辉))
+	    (VP (VV 主张)
+		(IP-OBJ (NP-PN-SBJ (NR 台湾))
+			(VP (VV 应)
+			    (VP (PP (P 和)
+				    (NP-PN (NR 中国)))
+				(VP (PU 「)
+				    (VV 划清)
+				    (NP-OBJ (NN 界限))
+				    (PU 」))))))) 
+	</parse>
+	<arg n="2">
+	台湾 
+	</arg>
+	<arg n="2" f="crd">
+	和 中国 
+	</arg>
+	<arg n="1">
+	界限 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

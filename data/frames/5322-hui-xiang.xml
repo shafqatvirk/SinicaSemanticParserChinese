@@ -1,0 +1,150 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 回想 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 looks back at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 带)
+			(AS 著)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (PP-MNR (P 犹如)
+							(NP (NN 先知)))
+						(VP (VA 般))))
+					(DEC 的)))
+				(NP (NN 自信)
+				    (NN 口吻)))))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 资迅人))
+			    (NP (NN 副总裁)))
+		    (NP-PN (NR 薛晓岚)))
+	    (VP (VV 回想)
+		(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 创业)))
+				(DEC 的))
+			(NP (NN 过程))))) 
+	</parse>
+	<arg n="0">
+	资迅人 副总裁 薛晓岚 
+	</arg>
+	<arg n="1">
+	*PRO* 创业 的 过程 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 带 著 *OP* *T*-1 犹如 先知 般 的 自信 口吻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-1 (PU 「)
+		      (IP (NP-SBJ (NN 中央)
+				  (NN 政权))
+			  (VP (ADVP (AD 迟迟))
+			      (VP (VV 交棒))))
+		      (PU ，)
+		      (IP (NP-SBJ (NN 地方)
+				  (NN 民主)
+				  (NN 观念))
+			  (VP (ADVP (AD 却))
+			      (ADVP (AD 早))
+			      (VP (VV 开始)
+				  (AS 了))))
+		      (PU ，)
+		      (IP (ADVP (AD 加上))
+			  (NP-SBJ (ADJP (JJ 日据))
+				  (NP (NN 时代)))
+			  (VP (ADVP (AD 也))
+			      (VP (VE 有)
+				  (NP-OBJ (DNP (LCP (NP (NN 形式))
+						    (LC 上))
+					       (DEG 的))
+					  (NP (NN 民意)
+					      (NN 代表))))))
+		      (PU ，)
+		      (IP (PP-DIR (P 对)
+				  (QP (NP (NT 今天))
+				      (NP (NN 中年))
+				      (QP (CD 一)
+					  (CLP (M 代)))))
+			  (PU ，)
+			  (NP-SBJ (NN 选举)
+				  (NN 意识)
+				  (PU 、)
+				  (NN 参政)
+				  (NN 观念))
+			  (VP (PP-TMP (P 在)
+				      (NP (NT 当时)))
+			      (ADVP (AD 已))
+			      (VP (VC 是)
+				  (NP-PRD (NN 家常便饭))))))
+	    (PU ，)
+	    (PU 」)
+	    (NP-PN-SBJ (NR 柯庆明))
+	    (VP (VV 回想)
+		(IP-OBJ (-NONE- *T*-1)))) 
+	</parse>
+	<arg n="0">
+	柯庆明 
+	</arg>
+	<arg n="1">
+	「 中央 政权 迟迟 交棒 ， 地方 民主 观念 却 早 开始 了 ， 加上 日据 时代 也 有 形式 上 的 民意 代表 ， 对 今天 中年 一 代 ， 选举 意识 、 参政 观念 在 当时 已 是 家常便饭 ， 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (NP-TMP (NT 如今))
+			(VP (VRD (VV 回想)
+				 (VV 起来)))))
+	    (PU ，)
+	    (NP-SBJ (NN 爸)
+		    (NN 妈))
+	    (VP (ADVP (AD 其实))
+		(IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 很))
+			    (VP (VA 早))))
+		(ADVP (AD 就))
+		(VP (VV 开始)
+		    (VP (VV 鼓励)
+			(NP-OBJ (PN 我们))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 向上)
+				      (PU 、)
+				      (AD 向外))
+				(VP (VV 发展)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

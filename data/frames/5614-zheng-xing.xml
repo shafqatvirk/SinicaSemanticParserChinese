@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 整型 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 does plastic surgery to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (ADVP (AD 常))
+				(PP-BNF (P 为)
+					(NP (NN 政界)
+					    (NN 名人)))
+				(VP (VV 整型))))
+			(DEC 的)))
+		(NP-PN (NR 林静芸))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	为 政界 名人 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-TPC (NN 女性))
+				(NP-SBJ (-NONE- *T*-2))
+				(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					    (VP (PP-LGS (P 由)
+							(NP (NN 丈夫)
+							    (CC 或)
+							    (NN 男友)))
+						(VP (VV 陪伴))))
+				    (VP (VV 来)
+					(VP (VV 整型)))))
+			    (DEC 的))))
+	    (PU ，)
+	    (NP-SBJ (LCP (NP (NN 术))
+			 (LC 後))
+		    (NP (NN 情况)))
+	    (VP (ADVP (AD 通常))
+		(ADVP (AD 比较))
+		(VP (VA 好)))) 
+	</parse>
+	<arg n="1" f="psr">
+	女性 
+	</arg>
+	<arg n="1" f="pse">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 由 丈夫 或 男友 陪伴 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

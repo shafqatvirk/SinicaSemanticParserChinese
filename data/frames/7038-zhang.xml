@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 holds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 总统))
+	    (VP (ADVP (AD 仍))
+		(VP (VV 掌)
+		    (NP-OBJ (NN 三军)
+			    (NN 统帅))))) 
+	</parse>
+	<arg n="0">
+	总统 
+	</arg>
+	<arg n="1">
+	三军 统帅 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

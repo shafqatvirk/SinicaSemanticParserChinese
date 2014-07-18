@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贯穿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity"/>
+      <role argnum="1" argrole="domain"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 会议))
+	      (VP (VV 贯穿)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 保持)
+					  (NP-OBJ (NN 稳定))))
+				  (DEC 的))
+			  (NP (NN 基调))))) 
+	  </parse>
+	  <arg n="0">
+	  会议 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 保持 稳定 的 基调 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

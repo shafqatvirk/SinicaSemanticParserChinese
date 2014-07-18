@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 落进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location fallen into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-ADV (CP-APP (IP (NP-SBJ (NN 风险))
+				       (VP (VV 分摊)))
+				   (DEC 的))
+			   (NP (NN 结果)))
+		   (PU ，)
+		   (IP-ADV (ADVP (AD 不管))
+			   (NP-SBJ (NN 产品))
+			   (VP (VP (VV 卖到)
+				   (NP-OBJ (PN 哪里)))
+			       (PU 、)
+			       (VP (PP-LOC (P 在)
+					   (NP (PN 哪里)))
+				   (VP (VV 生产)))))
+		   (PU ，)
+		   (NP-SBJ (NN 钱))
+		   (VP (ADVP (AD 都))
+		       (DVP (VP (VA 扎扎实实))
+			    (DEV 地))
+		       (VP (VV 落进)
+			   (NP-OBJ (DNP (NP (NN 台商))
+					(DEG 的))
+				   (NP (NN 口袋)))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  钱 
+	  </arg>
+	  <arg n="1">
+	  台商 的 口袋 
+	  </arg>
+	  <arg n="m" f="adv">
+	  扎扎实实 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不管 产品 卖到 哪里 、 在 哪里 生产 
+	  </arg>
+	  <arg n="m" f="adv">
+	  风险 分摊 的 结果 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 合称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="caller"/>
+    <role argnum="1" argrole="entities arg0 calls"/>
+    <role argnum="2" argrole="name for the whole arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 进而))
+		    (VP (VV 组成)
+			(NP-PN-OBJ (NR 东方)
+				   (NN 画会))))
+		(PU ，)
+		(VP (SB 被)
+		    (VP (VCP (VV 合称)
+			     (VC 为))
+			(NP-OBJ (PU 「)
+				(QP (CD 八))
+				(ADJP (JJ 大))
+				(NP (NN 响马))
+				(PU 」))))
+		(PU ，)
+		(VP (VV 引领)
+		    (NP-OBJ (DNP (NP (NN 当代))
+				 (DEG 的))
+			    (NP (NN 美术)
+				(NN 风气)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	「 八 大 响马 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-PN-SBJ (NR 台湾))
+		(VP (VV 拥有)
+		    (NP-OBJ (QP-APP (NP (NN 其中))
+				    (QP (CD 两)
+					(CLP (M 种))))
+			    (PU ：)
+			    (NP (NN 红桧)
+				(CC 与)
+				(NN 扁柏)))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 合称)
+		    (NP-OBJ (NN 桧木))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	桧木 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

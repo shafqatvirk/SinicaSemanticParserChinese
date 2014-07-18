@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (DNP (PP (P 和)
+					   (NP-PN (PU “)
+						  (NN 小狗)
+						  (PU ”)))
+				       (DEG 的))
+				  (NP (NN 合影)))
+			  (VP (VP (VV 放大))
+			      (PU ，)
+			      (VP (VV 挂)
+				  (PP-LOC (P 在)
+					  (LCP (NP (NN 墙))
+					       (LC 上)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  和 “ 小狗 ” 的 合影 
+	  </arg>
+	  <arg n="2">
+	  在 墙 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP-APP (DT 全)
+			      (CLP (M 套)))
+		      (QP (CD 六十五)
+			  (CLP (M 个)))
+		      (NP (NN 钟)))
+	      (VP (VP (VV 分)
+		      (QP-OBJ (CD 三)
+			      (CLP (M 层))))
+		  (VP (VV 挂)
+		      (PP-LOC (P 在)
+			      (LCP (NP (ADJP (JJ 曲尺形))
+				       (NP (NN 钟架)))
+				   (LC 上)))))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  全 套 六十五 个 钟 
+	  </arg>
+	  <arg n="2">
+	  在 曲尺形 钟架 上 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-LOC (NP (NN 主席台))
+			   (LC 上))
+		  (VP (VV 挂)
+		      (AS 着)
+		      (NP-OBJ (NP-PN (NR 日本))
+			      (NP (NN 国旗)))))
+	      (PU 。))
+	  </parse>
+	  <arg n="2">
+	  主席台 上 
+	  </arg>
+	  <arg n="1">
+	  日本 国旗 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 注册 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity registered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 兵团))
+	      (VP (VV 注册)
+		  (NP-OBJ (NN 外商)
+			  (NN 投资)
+			  (NN 企业))
+		  (QP-EXT (CD 七十)
+			  (CLP (M 家))))) 
+	  </parse>
+	  <arg n="0">
+	  兵团 
+	  </arg>
+	  <arg n="1">
+	  外商 投资 企业 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  七十 家 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (NP (NN 统计)))
+	      (PU ，)
+	      (PP-TMP (P 到)
+		      (NP (NP (NT 今年))
+			  (QP (OD 第一))
+			  (NP (NN 季度))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 广州))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VCD (VV 登记)
+					   (VV 注册))))
+			      (DEC 的)))
+		      (ADJP (JJ 私营))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 达)
+		      (QP-OBJ (CD 七千六百四十六)
+			      (CLP (M 家)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 专攻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NN 资策会))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 专攻)
+					      (NP-OBJ (NP-PN (NR 韩国))
+						      (NP (NN 市场)
+							  (NN 调查)))))
+				      (DEC 的)))
+			      (NP (NN 产业)
+				  (NN 分析师)))
+		      (NP-PN (NR 胡令珠)))
+	      (VP (VV 提出)
+		  (NP-OBJ (NN 质疑)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  韩国 市场 调查 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

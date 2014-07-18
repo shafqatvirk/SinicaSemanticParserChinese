@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相持 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities facing each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 它们))
+	    (VP (VP (ADVP (AD 彷佛))
+		    (VP (LB 被)
+			(CP-OBJ (WHNP-4 (-NONE- *OP*))
+				(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VCD (VV 相依)
+								 (VV 相持))
+							    (QP-EXT (CD 千)
+								    (CLP (M 年)))))
+						    (DEC 的)))
+					    (NP (NN 同伴)))
+				    (VP (VV 离弃)
+					(NP-OBJ (-NONE- *T*-4)))))))
+		(PU ，)
+		(VP (DVP (VP (VA 孤独)))
+		    (VP (VV 承受)
+			(NP-OBJ (NN 环境)
+				(NN 压力)))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="m" f="ext">
+	千 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

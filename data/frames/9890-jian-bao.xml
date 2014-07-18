@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 简报 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 briefs on"/>
+      <role argnum="2" argrole="entity arg0 briefs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP (PN 我))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 驻)
+					  (NP-PN-OBJ (NR 尼加拉瓜)))))
+			      (NP (NN 大使)))
+		      (NP-PN (NR 蔡德三)))
+	      (VP (ADVP (AD 则))
+		  (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (PP-DIR (P 向)
+					       (NP (NN 总统)))
+				       (VP (VV 简报)
+					   (NP-OBJ (NP-PN (NR 尼国))
+						   (NP (NN 政情))))))
+			       (LC 时)))
+		  (VP (VV 直言)
+		      (PU ，)
+		      (IP-OBJ (IP-ADV (IP-SBJ (NP-APP (NP-SBJ (NP (PN 我))
+							      (NP (NN 国)))
+						      (DNP (PP (P 对)
+							       (NP-PN (NR 尼国)))
+							   (DEG 的))
+						      (NP (NN 援助)
+							  (NN 方式)))
+					      (PU ，)
+					      (IP (ADVP (AD 例如))
+						  (PU ：)
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 协建)
+							  (NP-OBJ (NN 总统府)
+								  (PU 、)
+								  (NN 外交部)
+								  (NN 大厦)
+								  (ETC 等))))))
+				      (PU ，)
+				      (VP (ADVP (AD 不仅))
+					  (VP (LB 被)
+					      (IP-OBJ (NP-SBJ (NP-PN (NR 尼国))
+							      (NP (NN 在野党)
+								  (NN 人士)))
+						      (VP (VRD (VV 批评)
+							       (VC 为))
+							  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								  (VP (VV 无益)
+								      (NP-OBJ (NN 大众)
+									      (NN 民生)))))))))
+			      (PU ，)
+			      (NP-SBJ (NP-PN (NR 欧)
+					     (NR 美))
+				      (DP (DT 各))
+				      (NP (NN 国)))
+			      (VP (ADVP (AD 亦))
+				  (VP (VV 颇有微词))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  尼国 政情 
+	  </arg>
+	  <arg n="2">
+	  向 总统 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

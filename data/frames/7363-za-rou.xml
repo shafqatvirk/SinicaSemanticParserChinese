@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 杂揉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 mixes together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 至於)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NN 晋人))
+				    (VP (VV 撰写)
+					(NP-OBJ (-NONE- *T*-1))))
+				(DEC 的)))
+			(NP-TTL (PU 《)
+				(NP-PN (NR 华阳国))
+				(NP (NN 志))
+				(PU 》))))
+	    (PU ，)
+	    (NP-SBJ (NN 历史)
+		    (CC 与)
+		    (NN 神话))
+	    (VP (VV 杂揉))) 
+	</parse>
+	<arg n="1">
+	历史 与 神话 
+	</arg>
+	<arg n="m" f="tpc">
+	至於 *OP* 晋人 撰写 *T*-1 的 《 华阳国 志 》 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

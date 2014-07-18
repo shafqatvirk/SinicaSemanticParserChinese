@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 研制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing produced through research"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 日本))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 研制)
+			  (NP-OBJ (DP (DT 下)
+				      (QP (CD 一)
+					  (CLP (M 代))))
+				  (NP (ADJP (JJ 集成))
+				      (NP (NN 电路)))
+				  (NP (NN 芯片)))))) 
+	  </parse>
+	  <arg n="0">
+	  日本 	  	  
+	  </arg>
+	  <arg n="1">
+	  下 一 代 集成 电路 芯片 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ-1 (-NONE- *T*-3))
+			      (VP (SB 被)
+				  (VP (VRD (VCD (VV 研制)
+						(VV 开发))
+					   (VV 出))
+				      (NP-OBJ (-NONE- *-1)))))
+			  (DEC 的)))
+		  (NP (NN 科技)
+		      (NN 成果))) 
+	  </parse>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 对照 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entities arg0 looks at in contrast"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 因)
+		    (IP (IP (NP-SBJ (NN 地理)
+				    (NN 位置))
+			    (VP (PP (P 与)
+				    (NP (NN 大陆)))
+				(VP (VV 临近))))
+			(PU ，)
+			(CC 且)
+			(IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VV 靠)
+				(NP-OBJ (NN 出海口))))))
+	    (PU ，)
+	    (ADVP (AD 故))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 虽))
+			    (ADVP (AD 不))
+			    (VP (VC 是)
+				(NP-PRD (ADJP (JJ 天然))
+					(NP (NN 良港))))))
+		(PU ，)
+		(ADVP (AD 也))
+		(PP-TMP (P 在)
+			(QP (NP-PN (NR 乾隆))
+			    (QP (OD 二十三)
+				(CLP (M 年)))
+			    (PRN (PU （)
+				 (NP (NT 一七五七))
+				 (PU ）))))
+		(VP (VP (SB 被)
+			(VP (VCP (VV 指定)
+				 (VC 为))
+			    (NP-PRD (QP (CD 少数))
+				    (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (PP (P 与)
+							(NP (NN 大陆)))
+						    (VP (VV 对渡))))
+					    (DEC 的)))
+				    (NP (NN 港口)
+					(NN 之一)))))
+		    (PU ，)
+		    (VP (VV 开始)
+			(AS 了)
+			(NP-OBJ (NP-PN (NR 八里))
+				(CP-APP (IP (IP (NP-SBJ (NP (ADJP (JJ 大))
+							    (NP (NN 船)))
+							(NP (NN 巨舶)))
+						(VP (VV 送往迎来)))
+					    (PU ，)
+					    (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 对照)
+							    (NP-OBJ (NN 今昔))))
+						(NP-SBJ (-NONE- *pro*))
+						(VP (ADVP (AD 难以))
+						    (VP (VV 想像)))))
+					(DEC 的))
+				(NP (NN 兴旺))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	今昔 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (PP (P 和)
+					(NP (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VA 俭朴)
+							    (PU 、)
+							    (VA 务实)))
+						    (DEC 的)))
+					    (NP (NN 生活)
+						(NN 态度))))
+				    (ADVP (AD 相))
+				    (VP (VV 对照))))
+			    (DEC 的))))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (NP (NP-PN (NR 吴建乐))
+			    (NP (NN 夫妇)))
+			(DNP (PP (P 对)
+				 (NP (NN 子女)
+				     (NN 教育)))
+			     (DEG 的))
+			(NP (NN 慷慨)
+			    (NN 大度))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="1" f="crd">
+	和 *OP* *T*-2 俭朴 、 务实 的 生活 态度 
+	</arg>
+	<arg n="m" f="adv">
+	相 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

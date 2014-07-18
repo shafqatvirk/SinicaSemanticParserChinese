@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 管 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity in charge"/>
+      <role argnum="1" argrole="in charge of"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 海关))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (VV 管)
+					      (NP-OBJ (NN 钱)))
+					  (PU 、)
+					  (VP (VV 管)
+					      (NP-OBJ (NN 物)))))
+				  (DEC 的)))
+			  (NP (NN 单位))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  钱 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 公平会))
+	      (VP (ADVP (AD 也))
+		  (VP (VE 无)
+		      (IP-OBJ (NP-SBJ (NN 法))
+			      (VP (VV 可)
+				  (VP (VV 管))))))) 
+	  </parse>
+	  <arg n="2">
+	  法 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

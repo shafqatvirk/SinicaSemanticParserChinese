@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 完备 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing which is completely readied"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 继续)
+		  (VP (VV 完备)
+		      (NP-OBJ (NP (DNP (ADJP (JJ 相应))
+				       (DEG 的))
+				  (NP (NN 物质)
+				      (NN 条件)))
+			      (CC 和)
+			      (NP (NP-APP (NN 政策)
+					  (NN 法规)
+					  (PU 、)
+					  (NN 管理)
+					  (NN 体制)
+					  (PU 、)
+					  (NN 运作)
+					  (NN 机制)
+					  (PU 、)
+					  (NN 人才)
+					  (ETC 等))
+				  (NP (NN 条件))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  相应 的 物质 条件 和 政策 法规 、 管理 体制 、 运作 机制 、 人才 等 条件 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 形成)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 完备)))
+				      (DEC 的)))
+			      (NP-APP (NN 水)
+				      (PU 、)
+				      (NN 电)
+				      (PU 、)
+				      (NN 气)
+				      (PU 、)
+				      (NN 热)
+				      (PU 、)
+				      (NN 通讯)
+				      (ETC 等))
+			      (NP (NN 基础)
+				  (NN 设施)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

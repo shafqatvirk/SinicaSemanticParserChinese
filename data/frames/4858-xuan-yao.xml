@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 炫耀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 shows off"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 炫耀)
+		      (NP-OBJ (NP (PN 其))
+			      (DNP (PP (P 作为)
+				       (NP (ADJP (NP (NN 世界))
+						 (ADJP (JJ 唯一)))
+					   (ADJP (JJ 超级))
+					   (ADJP (JJ 大))
+					   (NP (NN 国))))
+				   (DEG 的))
+			      (NP (NN 实力)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  其 作为 世界 唯一 超级 大 国 的 实力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

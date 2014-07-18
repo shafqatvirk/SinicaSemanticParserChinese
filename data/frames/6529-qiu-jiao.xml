@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 求教 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 seeks instruction from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 收藏家))
+	    (VP (VP (ADVP (AD 不便))
+		    (VP (VV 去)
+			(VP (VV 问)
+			    (NP-PN-OBJ (NR 张大千)))))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (VP (VV 会)
+			(VP (ADVP (AD 赶紧))
+			    (VP (VV 来)
+				(VP (PP-DIR (P 向)
+					    (NP-PN (NR 王壮为)))
+				    (VP (VV 求教))))))))) 
+	</parse>
+	<arg n="0">
+	收藏家 
+	</arg>
+	<arg n="1">
+	向 王壮为 
+	</arg>
+	<arg n="m" f="adv">
+	赶紧 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

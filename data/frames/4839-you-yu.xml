@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 囿于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is limited/blinded by"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 冷战))
+			   (VP (VV 结束)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 美国))
+		      (DP (DT 有些))
+		      (NP (NN 人)))
+	      (VP (VP (VV 囿于)
+		      (NP-OBJ (NN 冷战)
+			      (NN 思维)))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (NP-PN (NR 中国))
+				  (NP (NN 社会)
+				      (NN 制度)
+				      (CC 和)
+				      (NN 发展)
+				      (NN 状况))))
+		      (ADVP (AD 肆意))
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 歪曲)
+				  (CC 和)
+				  (NN 攻击))))
+		  (PU ，)
+		  (VP (VV 干涉)
+		      (NP-OBJ (NP-PN (NR 中国))
+			      (NP (NN 内政)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 有些 人 
+	  </arg>
+	  <arg n="1">
+	  冷战 思维 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  冷战 结束 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

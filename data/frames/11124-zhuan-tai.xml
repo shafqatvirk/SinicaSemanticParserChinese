@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转台 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity changing station"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 争取)
+			    (NP-OBJ (NN 客户)))))
+	    (PU ，)
+	    (NP-SBJ (DP (DT 各)
+			(CLP (M 家)))
+		    (NP (NN 网路商)))
+	    (VP (ADVP (AD 纷纷))
+		(VP (VV 推出)
+		    (NP-OBJ (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 优惠)
+					    (NP-OBJ (-NONE- *pro*))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 转台)))))
+				    (PU 、)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 免费))
+					    (VP (VV 试打))))
+				    (ETC 等))
+			    (NP (NN 活动)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

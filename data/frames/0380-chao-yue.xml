@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 超越 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="transgressor"/>
+    <role argnum="1" argrole="thing violated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+                          (CP (IP (NP-TPC (-NONE- *T*-1))
+                                  (NP-PN-SBJ (NR 美国))
+                                  (VP (VV 为首)))
+                              (DEC 的)))
+                      (ADJP (JJ 多国))
+                      (NP (NN 部队)))
+                  (DNP (PP (P 对)
+                           (NP-PN (NR 伊拉克)))
+                       (DEG 的))
+                  (NP (NN 空袭)))
+          (VP (VV 超越)
+              (AS 了)
+              (NP-OBJ (DNP (NP-PN (NN 安理会))
+                           (DEG 的))
+                      (NP (NN 授权)
+                          (NN 范围))))))
+	</parse>
+	<arg n="0"> *OP* (*T*-1)->(多国部队) 美国 为首 的 多国 部队 对 伊拉克 的 空袭 </arg>
+	<V/>
+	<arg n="1"> 安理会 的 授权 范围 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

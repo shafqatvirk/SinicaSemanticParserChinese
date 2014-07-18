@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不满 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is not satisfied with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (ADVP (AD 近))
+			    (QP (CD 七成)))
+			(NP (NN 民众)))
+		(VP (VV 不满)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 政府))
+					(VP (VV 处理)
+					    (NP-OBJ (NN 油污)
+						    (NN 事件))))
+				    (DEC 的))
+			    (NP (NN 效率)
+				(CC 与)
+				(NN 过程))))) 
+	</parse>
+	<arg n="0">
+	近 七成 民众 
+	</arg>
+	<arg n="1">
+	政府 处理 油污 事件 的 效率 与 过程 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (DP (DT 某些))
+			(NP (NN 党国大老)))
+		(VP (VP (PP-DIR (P 对)
+				(NP (PN 他)))
+			(VP (VV 不满)))
+		    (PU ，)
+		    (VP (VV 认为)
+			(IP-OBJ (NP-SBJ (PN 他))
+				(VP (VC 是)
+				    (NP-PRD (DNP (NP-PN (NR 李登辉))
+						 (DEG 的))
+					    (NP (NN 走狗)))))))) 
+	</parse>
+	<arg n="0">
+	某些 党国大老 
+	</arg>
+	<arg n="1">
+	对 他 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

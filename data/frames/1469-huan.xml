@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 还 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="thing returned"/>
+      <role argnum="2" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 湖南省))
+	      (VP (NP-TMP (NT 今年))
+		  (ADVP (AD 将))
+		  (NP-ADV (ADJP (JJ 大))
+			  (NP (NN 规模)))
+		  (VP (VV 实行)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 平)
+				      (NP-OBJ (NN 垸)))
+				  (VP (VV 行)
+				      (NP-OBJ (NN 洪)))
+				  (PU 、)
+				  (VP (VV 退)
+				      (NP-OBJ (NN 田)))
+				  (VP (VV 还)
+				      (NP-OBJ (NN 湖)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  湖 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

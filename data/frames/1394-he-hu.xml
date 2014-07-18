@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合乎 </id>
+    <frameset id="f1" edef="match">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="requirements, conditions, trends, etc. "/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这些))
+		      (NP (NN 条款)))
+	      (VP (ADVP (AD 是否))
+		  (ADVP (AD 确实))
+		  (VP (VV 合乎)
+		      (NP-OBJ (NN 公众)
+			      (NN 利益))))) 
+	  </parse>
+	  <arg n="0">
+	  这些 条款 
+	  </arg>
+	  <arg n="1">
+	  公众 利益 
+	  </arg>
+	  <arg n="m" f="adv">
+	  是否 
+	  </arg>
+	  <arg n="m" f="adv">
+	  确实 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

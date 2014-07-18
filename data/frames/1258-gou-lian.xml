@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 勾联 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="2" argrole="instrument"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="3" argrole="linked with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PP (P 与)
+					  (NP-PN (NR 南昆)
+						 (NN 铁路)))
+				      (VP (VV 配套))))
+			      (DEC 的)))
+		      (NP-PN (NP-PN (NR 南防)
+				    (CC 和)
+				    (NR 钦北))
+			     (NP (NN 铁路))))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (NP-PN-APP (NR 北海)
+					     (PU 、)
+					     (NR 钦州)
+					     (CC 和)
+					     (NR 防城港))
+				  (QP (CD 三)
+				      (CLP (M 个)))
+				  (NP (NN 港口)
+				      (NN 城市)))
+			  (VP (PP (P 与)
+				  (NP (ADJP (JJ 大))
+				      (NP (NN 西南))))
+			      (ADVP (AD 紧密))
+			      (VP (VV 勾联)))))) 
+	  </parse>
+	  <arg n="2">
+	  *OP* *T*-3 与 南昆 铁路 配套 的 南防 和 钦北 铁路 
+	  </arg>
+	  <arg n="1">
+	  北海 、 钦州 和 防城港 三 个 港口 城市 
+	  </arg>
+	  <arg n="3">
+	  与 大 西南 
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧密 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

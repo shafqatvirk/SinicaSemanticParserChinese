@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 投降 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 surrenders to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 日本))
+					(NP (NN 天皇)))
+				(VP (VV 投降)))
+			    (DEC 的))
+		    (NP (NN 消息)))
+	    (VP (VV 传来))) 
+	</parse>
+	<arg n="0">
+	日本 天皇 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

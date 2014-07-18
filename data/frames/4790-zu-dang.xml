@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 阻挡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 blocks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 发展)
+			  (NP-OBJ (NP-PN (NR 中)
+					 (NR 美))
+				  (ADJP (JJ 友好))
+				  (NP (NN 关系)))))
+	      (VP (VP (VC 是)
+		      (NP-PRD (DNP (NP (NP (QP (CD 两))
+					   (NP (NN 国)))
+				       (NP (NN 人民)))
+				   (DEG 的))
+			      (ADJP (JJ 共同))
+			      (NP (NN 愿望))))
+		  (PU ，)
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 不))
+					      (VP (VV 可)
+						  (VP (VV 阻挡)))))
+				      (DEC 的)))
+			      (NP (NN 历史)
+				  (NN 潮流)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

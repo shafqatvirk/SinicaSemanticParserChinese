@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 起到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="role player"/>
+      <role argnum="1" argrole="role played"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (DP (DT 这))
+		      (NP (NN 其中)))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP (ADJP (JJ 三资))
+				   (NP (NN 企业)))
+			       (NP (NN 出口)))
+			   (DEG 的))
+		      (ADJP (JJ 稳步))
+		      (NP (NN 增长)))
+	      (VP (VV 起到)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP (NN 主力军))
+			       (DEG 的))
+			  (NP (NN 作用))))) 
+	  </parse>
+	  <arg n="0">
+	  三资 企业 出口 的 稳步 增长 
+	  </arg>
+	  <arg n="1">
+	  主力军 的 作用 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这 其中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 兼具 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="things arg0 owns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 兼具)
+				(NP-OBJ (NP-APP (NN 微多孔)
+						(CC 及)
+						(NN 亲水))
+					(QP (CD 两)
+					    (CLP (M 种)))
+					(NP (NN 特性)))))
+			(DEC 的)))
+		(ADJP (JJ 防水))
+		(NP (NN 布种))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	微多孔 及 亲水 两 种 特性 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (QP (CD 一)
+		    (CLP (M 个)))
+		(NP (PU 「)
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (NN 知性))
+				(VP (VV 兼具)
+				    (NP-OBJ (NN 感性))))
+			    (DEC 的)))
+		    (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (VA 难忘)
+				    (NP-OBJ (-NONE- *T*-2))))
+			    (DEC 之)))
+		    (NP (NN 旅))
+		    (PU 」))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	知性 
+	</arg>
+	<arg n="1" f="crd">
+	感性 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (DP (DT 这)
+		    (CLP (M 种)))
+		(CP-APP (IP (PU 「)
+			    (NP-SBJ (NN 啼)
+				    (NN 笑))
+			    (VP (VV 兼具))
+			    (PU 」))
+			(DEC 的))
+		(NP (NN 特色))) 
+	</parse>
+	<arg n="1">
+	啼 笑 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

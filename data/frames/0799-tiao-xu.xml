@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调蓄 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="water"/>
+      <role argnum="2" argrole="reservior"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 由于)
+		  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (NP-TMP (NT 过去))
+				  (NP-ADV (NN 长期))
+				  (VP (VP (VV 围)
+					  (NP-OBJ (NN 湖)))
+				      (VP (VV 造)
+					  (NP-OBJ (NN 田))))))
+		      (VP (VV 造成)
+			  (IP-OBJ (IP (NP-SBJ (NP-PN (NR 洞庭湖))
+					      (NP (NN 湖面)))
+				      (VP (VV 缩小)))
+				  (PU ，)
+				  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 调蓄)
+							      (NP-OBJ (NN 洪水))))
+						      (DEC 的))
+					      (NP (NN 能力)))
+				      (VP (VV 减弱))))))) 
+	  </parse>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  洪水 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

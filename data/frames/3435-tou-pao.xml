@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 偷跑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP (NP-SBJ (PN 这))
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-PN-SBJ (NR 李伟))
+					      (VP (VV 训养)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 警犬)))))
+		  (PU ，)
+		  (CP (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 知)
+					  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+						  (VP (ADVP-WH (AD 怎么))
+						      (PP-DIR (P 从)
+							      (LCP (NP (NN 犬舍))
+								   (LC 里)))
+						      (VP (VRD (VV 偷跑)
+							       (VV 出来))))))))
+			  (PU ，)
+			  (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 正在))
+			      (VP (VV 找)
+				  (NP-OBJ (DNP (NP (PN 它))
+					       (DEG 的))
+					  (NP (NN 主人))))))
+		      (SP 呢))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 犬舍 里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  怎么 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

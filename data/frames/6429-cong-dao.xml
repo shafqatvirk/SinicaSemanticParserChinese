@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重蹈 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 steps on again"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (VP (VV 应该)
+		    (VP (VP (PU 「)
+			    (VP (VV 避)
+				(NP-OBJ (NN 实)))
+			    (VP (VV 击)
+				(NP-OBJ (NN 虚)))
+			    (PU 」))
+			(PU ，)
+			(VP (ADVP (AD 多方))
+			    (VP (VV 研究)
+				(NP-OBJ (NN 因应之道))))
+			(PU ，)
+			(VP (VV 避免)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 重蹈)
+					(NP-OBJ (DNP (NP (NP (NT 一九九六年))
+							 (NP-PN (NR 台海))
+							 (NP (NN 危机)))
+						     (DEG 之))
+						(NP (NN 覆辙)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	一九九六年 台海 危机 之 覆辙 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

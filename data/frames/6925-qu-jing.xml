@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 取景 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 takes as setting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 标榜)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (NP-LOC (NN 大陆))
+						(VP (VV 取景))))))
+			    (DEC 的)))
+		    (NP (NN 武侠)
+			(CC 与)
+			(NN 爱情片)))
+	    (VP (VV 当道))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	大陆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (NT 八月))
+		     (LC 初))
+	    (PU ，)
+	    (NP-SBJ (NP-PN-TTL (PU 《)
+			       (NR 天公金)
+			       (PU 》))
+		    (QP (CD 二十多)
+			(CLP (M 位)))
+		    (NP (NN 电影)
+			(NN 工作者)))
+	    (VP (VP (BA 将)
+		    (IP-OBJ (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 拍片)))
+				    (NP (NN 现场)))
+			    (VP (VV 拉到)
+				(NP-PN-OBJ (NR 松山)
+					   (NN 机场)))))
+		(VP (VV 取景)))) 
+	</parse>
+	<arg n="0">
+	《 天公金 》 二十多 位 电影 工作者 
+	</arg>
+	<arg n="m" f="tmp">
+	八月 初 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

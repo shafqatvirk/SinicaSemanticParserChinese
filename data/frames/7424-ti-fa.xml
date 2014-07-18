@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 体罚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 physically punishes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (NN 台湾人))
+		(VP (PP-TMP (P 到)
+			    (NP (NT 现在)))
+		    (ADVP (AD 普遍))
+		    (ADVP (AD 还))
+		    (VP (VE 有)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 体罚)
+						(NP (NN 小孩))))
+					(DEC 的))
+				(NP (NN 现象)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	小孩 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

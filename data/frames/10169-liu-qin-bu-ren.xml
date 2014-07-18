@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 六亲不认 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-IMP (NP-SBJ (-NONE- *pro*))
+		(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 争取)
+				     (NP-OBJ (NN 权益))))
+			     (LC 时))
+		    (VP (VP (VV 须)
+			    (VP (VV 六亲不认)))
+			(PU ，)
+			(VP (ADVP (AD 不))
+			    (VP (VV 要)
+				(VP (LB 被)
+				    (CP-OBJ (WHNP-6 (-NONE- *OP*))
+					    (IP (NP-SBJ (NN 大陆)
+							(NN 亲朋好友))
+						(VP (VV 左右)
+						    (NP-OBJ (-NONE- *T*-6))))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 争取 权益 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

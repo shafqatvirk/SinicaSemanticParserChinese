@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 维生 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity by which arg0 makes a living"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 雅美族))
+	    (VP (VP (VV 居住)
+		    (PP-LOC (P 於)
+			    (LCP (NP-PN (NR 兰屿岛))
+				 (LC 上))))
+		(PU ，)
+		(VP (PP-MNR (P 以)
+			    (NP (NN 捕鱼)))
+		    (VP (VV 维生))))) 
+	</parse>
+	<arg n="0">
+	雅美族 
+	</arg>
+	<arg n="1">
+	以 捕鱼 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (NP-PN (NP (NN 北))
+				       (NP-PN (NR 台湾)))
+				(QP (CD 百万))
+				(NP (NN 人)))
+			(VP (VV 赖)
+			    (NP-OBJ (-NONE- *T*-1))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (MSP 以)
+				    (VP (VV 维生))))))
+		    (DEC 的)))
+	    (NP-PN (NR 石门)
+		   (NN 水库)
+		   (PU 、)
+		   (NR 淡水河)
+		   (PU 、)
+		   (NR 兰阳溪))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

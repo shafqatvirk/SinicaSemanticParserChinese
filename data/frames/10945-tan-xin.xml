@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贪心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person being greedy"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-1 (NP-SBJ (PN 我们))
+		  (VP (VP (VE 没有)
+			  (NP-OBJ (NN 投资)
+				  (NN 观念)))
+		      (PU ，)
+		      (VP (ADVP (AD 不))
+			  (VP (VV 会)
+			      (VP (VV 贪心))))
+		      (PU ，)
+		      (VP (ADVP (AD 都))
+			  (VP (VC 是)
+			      (VP (IP-ADV (NP-SBJ (PN 本身))
+					  (VP (VE 有)
+					      (NP-OBJ (NN 切用))))
+				  (ADVP (AD 才))
+				  (VP (VV 买))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得意 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing that makes arg0 exult"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VV 号称)
+					      (NP-OBJ (PU “)
+						      (NN 狗)
+						      (NN 司令)
+						      (PU ”))))
+				      (DEC 的)))
+			      (NP (NN 少校)))
+		      (NP-PN (NR 郝峰)))
+	      (VP (ADVP (AD 很))
+		  (VP (VA 得意)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-4 号称 “ 狗 司令 ” 的 少校 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (NP-TMP (NT 去年))
+				      (VP (VV 转投资)
+					  (NP-PN-OBJ (NR 台晶)
+						     (NN 科技)))))
+			      (DEG 的))
+		      (NP (NN 光纤)
+			  (NN 网路)
+			  (NN 接头)))
+	      (PU ，)
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 叶进泰))
+				      (VP (ADVP (AD 最))
+					  (VP (VA 得意)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (ADJP (JJ 新))
+			      (NP (NN 产品)))
+			  (NP (NN 之一))))) 
+	  </parse>
+	  <arg n="0">
+	  叶进泰 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

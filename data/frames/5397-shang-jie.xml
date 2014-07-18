@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上街 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person going to streets"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN-APP (NR 澄社)
+			       (ETC 等))
+		    (NP (NN 民间)
+			(NN 单位)))
+	    (VP (ADVP (AD 更))
+		(VP (VP (VV 发动)
+			(NP-OBJ (NN 市民))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 上街))))
+		    (PU ，)
+		    (VP (VV 要求)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 废除)
+				    (NP-PN-OBJ (NN 国大)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 立刻))
+		    (DVP (ADVP (AD 一溜烟))
+			 (DEV 地))
+		    (VP (VV 上街)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VRD (VV 采访)
+					 (VV 去))
+				    (AS 了)))))
+		(PU ，)
+		(VP (NP-TMP (NT 当天))
+		    (ADVP (AD 就))
+		    (VP (VP (PP (P 和)
+				(NP-PN (NR 华视)))
+			    (VP (VV 连线)))
+			(VP (VV 播报)
+			    (NP-OBJ (NN 新闻)
+				    (NN 现场))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	一溜烟 地 
+	</arg>
+	<arg n="m" f="adv">
+	立刻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

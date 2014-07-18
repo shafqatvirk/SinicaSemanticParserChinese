@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 镇压 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-TMP (NT 一九五一年))
+			 (NP-PN-SBJ (NR 共产党))
+			 (VP (ADVP (AD 大))
+			     (VP (VV 镇压))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (PN 我))
+	    (VP (PP-PRD (P 在)
+			(LCP (NP (NN 黑牢))
+			     (LC 中))))) 
+	</parse>
+	<arg n="0">
+	共产党 
+	</arg>
+	<arg n="m" f="adv">
+	大 
+	</arg>
+	<arg n="m" f="tmp">
+	一九五一年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

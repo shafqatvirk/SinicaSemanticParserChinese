@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 电 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 electrifies"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 除了)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VP (VV 办)
+				       (NP-OBJ (NN 说明会)))
+				   (PU 、)
+				   (VP (VV 放映)
+				       (NP-OBJ (NN 幻灯片)))))
+			   (LC 外)))
+	      (PU ，)
+	      (NP-TMP (NT 五月)
+		      (NN 中旬))
+	      (PU ，)
+	      (NP-SBJ (NN 护溪队))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP (NP-PN (NR 大坪溪))
+				  (NP (NN 沿岸))))
+		      (VP (VV 设立)
+			  (NP-OBJ (NN 告示牌))))
+		  (PU ，)
+		  (VP (VV 希望)
+		      (NP-OBJ (DNP (NP (NN 当地)
+				       (CC 与)
+				       (NN 外地))
+				   (DEG 的))
+			      (NP (NN 朋友)))
+		      (PU ，)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 要)
+				  (VP (PP-LOC (P 在)
+					      (NP-PN (NR 大坪溪)))
+				      (VP (VV 从事)
+					  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (VP (VV 毒)
+								      (NP-OBJ (NN 鱼)))
+								  (PU 、)
+								  (VP (VV 电)
+								      (NP-OBJ (NN 鱼)))
+								  (PU 、)
+								  (VP (VV 网)
+								      (NP-OBJ (NN 鱼)))))
+							  (DEC 的))
+						  (NP (NN 行为))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  鱼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

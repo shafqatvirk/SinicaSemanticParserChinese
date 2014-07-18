@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 劝说 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people persuaded"/>
+      <role argnum="2" argrole="thing persuaded to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 所以))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 美)
+			 (NR 英))
+	      (VP (ADVP (AD 一再))
+		  (VP (VV 劝说)
+		      (NP-OBJ (NP-PN (NR 塞))
+			      (NP (NN 当局)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 取消)
+			      (NP-OBJ (NN 导弹)
+				      (NN 协议))))))) 
+	  </parse>
+	  <arg n="0">
+	  美 英 	  
+	  </arg>
+	  <arg n="1">
+	  塞 当局 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 取消 导弹 协议 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一再 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  所以 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

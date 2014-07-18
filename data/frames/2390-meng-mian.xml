@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 蒙面 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 张))
+					   (DEG 的))
+				      (NP (NN 手)
+					  (NN 脚)))
+			      (VP (VV 捆绑))))
+		  (CC 并)
+		  (VP (VV 蒙面))
+		  (PU 、)
+		  (VP (VV 堵嘴)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

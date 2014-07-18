@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 喧腾一时 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 两)
+			 (CLP (M 年)))
+		     (LC 前))
+	    (IP-SBJ (NP-SBJ (NP-APP (ADJP (JJ 名))
+				    (NP (NN 主播)))
+			    (NP-PN (NR 李四端)))
+		    (VP (VP (VV 离开)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (NP-LOC (-NONE- *T*-1))
+						    (VP (VV 工作)
+							(QP-EXT (CD 十三)
+								(CLP (M 年))))))
+					    (DEC 的)))
+				    (NP-PN (NN 台视))))
+			(PU ，)
+			(VP (VV 转往)
+			    (NP-OBJ (NP-APP (ADJP (JJ 有线))
+					    (NP (NN 电视)))
+				    (NP-PN (NR TVBS))))))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 曾))
+		(VP (VV 喧腾一时)))) 
+	</parse>
+	<arg n="0">
+	名 主播 李四端 离开 *OP* *pro* *T*-1 工作 十三 年 的 台视 ， 转往 有线 电视 TVBS 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	两 年 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 善於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is good at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (NN 青少年))
+	    (VP (VV 善於)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 模仿)
+			    (NP-OBJ (NN 成人)
+				    (NN 社会)))))) 
+	</parse>
+	<arg n="0">
+	青少年 
+	</arg>
+	<arg n="1">
+	*PRO* 模仿 成人 社会 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

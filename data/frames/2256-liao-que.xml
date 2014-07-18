@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 了却 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 fulfils"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 加入)
+			  (NP-OBJ (NP-APP (NP-PN (NR 欧洲))
+					  (ADJP (JJ 单一))
+					  (NP (NN 货币)))
+				  (NP (NN 欧元)))))
+	      (PU ，)
+	      (VP (VP (VV 实现)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 西班牙))
+					  (VP (ADVP (AD 长期))
+					      (VP (VV 希冀)
+						  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (VP (VV 重返)
+								  (NP-OBJ-PN (NR 欧洲)))
+							      (CC 和)
+							      (VP (VV 融入)
+								  (NP-OBJ-PN (NR 欧洲))))))))
+				      (DEC 的))
+			      (NP (NN 目标))))
+		  (PU ，)
+		  (VP (VV 了却)
+		      (AS 了)
+		      (NP-OBJ (NP (PN 它))
+			      (DNP (PP (P 在)
+				       (LCP (IP (NP-SBJ (NT ２１纪))
+						(VP (VV 到来)))
+					    (LC 之前)))
+				   (DEG 的))
+			      (NP (NN 宿愿)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 加入 欧洲 单一 货币 欧元 
+	  </arg>
+	  <arg n="1">
+	  它 在 ２１纪 到来 之前 的 宿愿 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

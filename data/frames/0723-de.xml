@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得 </id>
+    <frameset id="f1" edef="get">
+      <role argnum="0" argrole="getter"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 却))
+		  (ADVP (AD 只))
+		  (VP (VV 能)
+		      (VP (VV 得)
+			  (QP-OBJ (CD 七)
+				  (CLP (M 分))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  七 分 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

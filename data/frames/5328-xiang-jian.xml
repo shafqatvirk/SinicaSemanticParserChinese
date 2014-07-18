@@ -1,0 +1,121 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 想见 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 imagines"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可以)
+		(VP (VV 想见)
+		    (NP-OBJ (CP-APP (IP (NP-TMP (NT 当年))
+					(NP-SBJ (NP (ADJP (JJ 白色))
+						    (NP (NN 恐怖)))
+						(NP (NN 受难者)))
+					(VP (VP (VV 身处)
+						(NP-OBJ (NN 囹圄)))
+					    (PU ，)
+					    (VP (NP-ADV (NN 日日))
+						(VP (VV 望乡)))))
+				    (DEC 的))
+			    (ADJP (JJ 苦闷))
+			    (NP (NN 心情)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	当年 白色 恐怖 受难者 身处 囹圄 ， 日日 望乡 的 苦闷 心情 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-1))
+				    (IP (IP (NP-TPC (NN 东西)
+						    (NN 价值观))
+					    (NP-SBJ (NN 优)
+						    (NN 劣))
+					    (VP (ADVP (AD 互))
+						(VP (VV 见))))
+					(PU 、)
+					(IP (NP-SBJ (ADJP (JJ 新)
+							  (JJ 旧))
+						    (NP (NN 观念)))
+					    (VP (VV 夹陈)))))
+				(DEC 的)))
+			(NP (NN 现代))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+				 (CP (IP (NP-SBJ (-NONE- *T*-2))
+					 (VP (VV 为)
+					     (NP-OBJ (NN 人)
+						     (NN 父母))))))
+			     (NP (NN 者)))
+			 (DEG 的))
+		    (NP (NN 为难)))
+	    (VP (VV 可以)
+		(VP (VV 想见)))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-2 为 人 父母 者 的 为难 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *OP* *T*-1 东西 价值观 优 劣 互 见 、 新 旧 观念 夹陈 的 现代 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可以)
+		(VP (VV 想见)
+		    (PU ，)
+		    (IP-OBJ (LCP-TMP (NP (NT 不久))
+				     (LC 之後))
+			    (LCP-LOC (NP (NN 街头))
+				     (LC 上))
+			    (NP-SBJ (-NONE- *pro*))
+			    (VP (ADVP (AD 就))
+				(VP (VV 可以)
+				    (VP (VRD (VV 欣赏)
+					     (VV 到))
+					(NP-OBJ (CP-APP (IP (NP-SBJ (NN 男人))
+							    (VP (VV 穿)
+								(NP-OBJ (NN 裙子))))
+							(DEC 的))
+						(NP (NN 风光)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	不久 之後 街头 上 *pro* 就 可以 欣赏 到 男人 穿 裙子 的 风光 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

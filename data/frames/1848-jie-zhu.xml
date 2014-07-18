@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 gets help from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 借助)
+			  (NP-OBJ (NP (NN 商业)
+				      (NN 银行))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VV 遍布)
+						  (NP-OBJ (DP (DT 全))
+							  (NP (NN 国)))))
+					  (DEC 的)))
+				  (NP (NP (ADJP (JJ 营业性))
+					  (NP (NN 分支)
+					      (NN 机构)
+					      (NN 网络)))
+				      (CC 和)
+				      (NP (NN 优势)))))
+		      (PU ，)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (ADJP (JJ 政策性))
+					  (NP (NN 金融)
+					      (NN 业务)))
+				  (VP (VRD (VV 委托)
+					   (VV 给))
+				      (NP-OBJ (NN 商业)
+					      (NN 银行))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 代理)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  商业 银行 *OP* *T*-2 遍布 全 国 的 营业性 分支 机构 网络 和 优势 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 锋利 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 难怪))
+	      (NP-SBJ (NP-APP (NN 诗人))
+		      (NP-PN (NR 周邦彦)))
+	      (VP (VV 要)
+		  (VP (VV 赞叹)
+		      (NP-OBJ (DNP (NP-PN (NR 山西)
+					  (NR 太原))
+				   (DEG 的))
+			      (NP (NN 刀)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-ADV (P 像)
+						  (NP (NN 水)))
+					  (VP (VA 一般))))
+			      (VP (VCD (VA 光亮)
+				       (VA 锋利)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 像 水 一般 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 购足 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="buyer"/>
+    <role argnum="1" argrole="thing arg0 buys enough of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 既))
+			(ADVP (AD 无法))
+			(QP-ADV (CD 一)
+				(CLP (M 次)))
+			(VP (VV 购足))))
+	    (PU 、)
+	    (NP-SBJ (NN 生鲜)
+		    (NN 服务))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 逐渐))
+		(VP (LB 被)
+		    (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ (NN 量贩)
+					(NN 店))
+				(VP (VV 取代)
+				    (NP-OBJ (-NONE- *T*-1)))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	一 次 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<arg n="m" f="adv">
+	既 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

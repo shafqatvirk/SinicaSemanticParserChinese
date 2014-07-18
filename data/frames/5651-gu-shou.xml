@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 固守 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 defends"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-CND (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 固守)
+			    (NP-OBJ (DNP (ADJP (JJ 旧有))
+					 (DEG 的))
+				    (NP (NN 形式)))))
+		(PU ，)
+		(NP-SBJ (DNP (NP-PN (NR 中国))
+			     (DEG 的))
+			(NP (NN 传统)
+			    (NN 艺术)))
+		(VP (ADVP (AD 必然))
+		    (VP (VV 没落)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	旧有 的 形式 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *pro*))
+		(VP (VP (ADVP (AD 不))
+			(VP (VV 能)
+			    (VP (VV 放弃))))
+		    (PU ，)
+		    (VP (ADVP (AD 但))
+			(ADVP (AD 也))
+			(ADVP (AD 不))
+			(VP (VV 能)
+			    (VP (VV 固守)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 战略)
+		    (NN 构想))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 将))
+		(PP-DIR (P 从)
+			(IP (PU 「)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 防卫)
+				    (VV 固守)))
+			    (PU 、)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 有效))
+				    (VP (VV 吓阻))))
+			    (PU 」)))
+		(PU ，)
+		(VP (VV 改为)
+		    (IP-OBJ (PU 「)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 积极))
+				    (VP (VV 防御))))
+			    (PU 、)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 有效))
+				    (VP (VV 吓阻))))
+			    (PU 」))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

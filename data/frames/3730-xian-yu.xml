@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 限於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="range"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 根据)
+		      (NP (DNP (NP-PN (NR 台经院))
+			       (DEG 的))
+			  (NP (NN 研究))))
+	      (PU ，)
+	      (NP-SBJ (CP-APP (IP (IP-TPC (NP-SBJ (NP-PN (NR 东南亚))
+						  (NP (NN 货币)))
+					  (VP (ADVP (AD 大幅))
+					      (VP (VV 贬值))))
+				  (PU ，)
+				  (VP (PP-DIR (P 对)
+					      (NP-PN (NR 台湾))))
+				  (NP-SBJ (NN 影响))
+				  (VP (ADVP (AD 较))
+				      (VP (VA 大))))
+			      (DEC 的))
+		      (NP (NN 出口)
+			  (NN 产业)))
+	      (PU ，)
+	      (VP (ADVP (AD 只))
+		  (VP (VV 限於)
+		      (NP-OBJ (NP-APP (NN 木竹)
+				      (PU 、)
+				      (NN 家具)
+				      (PU 、)
+				      (NN 皮革)
+				      (PU 、)
+				      (NN 橡胶)
+				      (PU 、)
+				      (NN 纺织)
+				      (ETC 等))
+			      (NP (NN 传统)
+				  (NN 产业)))))) 
+	  </parse>
+	  <arg n="0">
+	  东南亚 货币 大幅 贬值 ， 对 台湾 影响 较 大 的 出口 产业 
+	  </arg>
+	  <arg n="1">
+	  木竹 、 家具 、 皮革 、 橡胶 、 纺织 等 传统 产业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 台经院 的 研究 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

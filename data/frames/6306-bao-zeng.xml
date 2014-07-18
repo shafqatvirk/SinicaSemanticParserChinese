@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 暴增 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 社会)
+		    (NN 压力))
+	    (VP (VV 暴增))) 
+	</parse>
+	<arg n="0">
+	社会 压力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="level arg0 increases to"/>
+    <role argnum="2" argrole="original level of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (ADJP (JJ 同样))
+			 (DEG 的))
+		    (QP (CD 三千)
+			(CLP (M 名)))
+		    (NP (NN 员工)))
+	    (PU ，)
+	    (NP-SBJ (ADJP (JJ 月))
+		    (NP (NN 产量)))
+	    (VP (ADVP (AD 则))
+		(PP-DIR (P 从)
+			(QP (CD 二十万)
+			    (CLP (M 片))))
+		(VP (VRD (VV 暴增)
+			 (VV 到))
+		    (QP-OBJ (CD 二亿)
+			    (CLP (M 片)))))) 
+	</parse>
+	<arg n="0">
+	月 产量 
+	</arg>
+	<arg n="1">
+	二亿 片 
+	</arg>
+	<arg n="2">
+	从 二十万 片 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="tpc">
+	同样 的 三千 名 员工 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

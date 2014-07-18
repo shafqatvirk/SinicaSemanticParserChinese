@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 偷 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 steals"/>
+    <role argnum="2" argrole="entity arg0 steals from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 偷)
+			(NP-OBJ (NN 银行))))
+	    (VP (ADVP (AD 比较))
+		(VP (VA 快)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	银行 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 真))
+				    (VP (VE 有)
+					(NP-OBJ (NN 功力)))))
+			    (DEC 的)))
+		    (NP (NN 骇客)))
+	    (PU ，)
+	    (VP (ADVP (AD 不))
+		(VP (VV 会)
+		    (VP (VV 来)
+			(VP (VV 偷)
+			    (NP-OBJ (NN 信用卡))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 真 有 功力 的 骇客 
+	</arg>
+	<arg n="1">
+	信用卡 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (LB 被)
+		    (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ (NN 流浪汉))
+				(VP (VP (VV 偷)
+					(NP-OBJ (-NONE- *RNR*-2)))
+				    (VP (VV 抢)
+					(NP-OBJ-2 (-NONE- *T*-1)))))))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (VP (VV 误杀)
+			(NP-OBJ (NN 华人)
+				(NN 黑帮))))
+		(PU ，)
+		(VP (ADVP (AD 终於))
+		    (VP (VV 沦为)
+			(NP-OBJ (DNP (NP (ADJP (JJ 华裔))
+					 (ADJP (JJ 小))
+					 (NP (NN 妓女)))
+				     (DEG 的))
+				(NP (NN 皮条客))))))) 
+	</parse>
+	<arg n="0">
+	流浪汉 
+	</arg>
+	<arg n="2">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

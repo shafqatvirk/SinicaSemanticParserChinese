@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搭乘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="passenger"/>
+      <role argnum="1" argrole="means of transportation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 磁谱仪)))
+	      (VP (VP (VV 搭乘)
+		      (NP-OBJ (NP-PN (NR 美国))
+			      (NP-PN (PU “)
+				     (NR 发现号)
+				     (PU ”))
+			      (ADJP (JJ 航天))
+			      (NP (NN 飞机))))
+		  (VP (ADVP (AD 顺利))
+		      (VP (VV 进入)
+			  (NP-OBJ (NN 太空))))
+		  (CC 并)
+		  (VP (VV 返回)
+		      (NP-OBJ (NN 地面))))) 
+	  </parse>
+	  <arg n="0">
+	  该 磁谱仪 
+	  </arg>
+	  <arg n="1">
+	  美国 “ 发现号 ” 航天 飞机 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

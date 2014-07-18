@@ -1,0 +1,117 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加快 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="accelerator"/>
+      <role argnum="1" argrole="thing accelerated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 最近))
+		      (QP (CD 一)
+			  (CLP (M 个)))
+		      (NP (NN 时期)))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 地处)
+				      (NP-OBJ (NP-PN (NR 中国))
+					      (NP (NN 沿边)
+						  (NN 开放)
+						  (NN 前沿)))))
+			      (DEC 的)))
+		      (NP-PN (NR 内蒙古)
+			     (NR 呼伦贝尔盟)))
+	      (VP (VP (VV 采取)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 系列)))
+			      (NP (NN 措施))))
+		  (PU ，)
+		  (VP (ADVP (AD 大力))
+		      (VP (VV 改善)
+			  (NP-OBJ (NN 投资)
+				  (NN 环境))))
+		  (PU ，)
+		  (VP (VV 加快)
+		      (NP-OBJ (NP (PP (P 对)
+				      (NP (NN 外)))
+				  (NP (NN 开放)))
+			      (NP (NN 步伐)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 地处 中国 沿边 开放 前沿 的 内蒙古 呼伦贝尔盟 	  
+	  </arg>
+	  <arg n="1">
+	  对 外 开放 步伐 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  最近 一 个 时期 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (PP (P 与)
+			  (NP (PN 此)))
+		      (NP (NN 同时)))
+	      (PU ，)
+	      (NP-SBJ (NN 人才)
+		      (NN 市场)
+		      (NN 建设))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 在))
+		  (VP (VV 加快)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  人才 市场 建设 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  与 此 同时 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 三))
+		      (ADJP (JJ 大))
+		      (NP (NN 法典)))
+	      (VP (VV 需)
+		  (VP (VV 加快)
+		      (NP-OBJ (NN 出台)
+			      (NN 进程))))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  三 大 法典 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  出台 进程 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

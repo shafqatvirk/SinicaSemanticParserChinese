@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 连载 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 publishes"/>
+    <role argnum="2" argrole="place arg1 is published"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 排遣)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 写作)
+						    (NP-OBJ (NN 博士)
+							    (NN 论文))))
+					    (DEC 的))
+				    (ADJP (JJ 巨大))
+				    (NP (NN 压力))))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VV 开始)
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (DNP (NP (NN BBS))
+					  (DEG 的))
+				     (NP (NN 连线版)))
+				 (LC 上)))
+		    (VP (VV 连载)
+			(NP-OBJ (NP-APP (DNP (NP (PN 自己))
+					     (DEG 的))
+					(NP (NN 爱情)
+					    (NN 故事)))
+				(NP-TTL (PU 《)
+					(DNP (QP (OD 第一)
+						 (CLP (M 次)))
+					     (DEG 的))
+					(ADJP (JJ 亲密))
+					(NP (NN 接触))
+					(PU 》))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	自己 的 爱情 故事 《 第一 次 的 亲密 接触 》 
+	</arg>
+	<arg n="2">
+	在 BBS 的 连线版 上 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 排遣 *PRO* 写作 博士 论文 的 巨大 压力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 网路)
+		    (NN 写作))
+	    (VP (VP (ADVP (AD 都))
+		    (ADVP (AD 只))
+		    (VP (VC 是)
+			(NP-PRD (DNP (NP (NN 网友))
+				     (DEG 的))
+				(NP (NN 消遣)
+				    (NN 方式)))))
+		(PU ，)
+		(CC 且)
+		(VP (ADVP (AD 往往))
+		    (VP (VE 有)
+			(NP-OBJ (CP-APP (IP (QP-SBJ (NP (QP (CD 一))
+							(NP (NN 人)))
+						    (QP (CD 多)
+							(CLP (M 篇))))
+					    (VP (ADVP (AD 同时))
+						(VP (VV 连载))))
+					(DEC 的))
+				(NP (NN 情形))))))) 
+	</parse>
+	<arg n="1">
+	一 人 多 篇 
+	</arg>
+	<arg n="m" f="adv">
+	同时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

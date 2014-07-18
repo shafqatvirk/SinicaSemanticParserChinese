@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 卖完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="seller"/>
+    <role argnum="1" argrole="thing arg0 sells all of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 加上)
+		(IP-OBJ (IP (NP-SBJ (NN 产量))
+			    (VP (VA 有限)))
+			(PU ，)
+			(IP (NP-SBJ (NN 老板))
+			    (VP (VP (VV 卖完))
+				(VP (ADVP (AD 就))
+				    (VP (VV 收摊)
+					(AS 了)))))))) 
+	</parse>
+	<arg n="0">
+	老板 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

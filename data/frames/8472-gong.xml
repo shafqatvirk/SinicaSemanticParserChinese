@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 工 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 pays attention to details in doing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CC 不论是)
+		      (NP (DNP (NP (NN 汉印) )
+			       (DEG 的))
+			  (NP (NN 横)
+			      (NN 平)
+			      (NN 竖)
+			      (NN 直) ))
+		      (PU ，)
+		      (CC 或是)
+		      (NP (DNP (NP (NN 小篆) )
+			       (DEG 的))
+			  (NP (NN 迂回)
+			      (NN 曲线) )))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 都))
+		  (VP (VP (VV 能)
+			  (VP (VV 工)))
+		      (VP (VV 能)
+			  (VP (VV 放)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  不论是 汉印 的 横 平 竖 直 ， 或是 小篆 的 迂回 曲线 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

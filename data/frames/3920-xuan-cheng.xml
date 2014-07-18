@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宣称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 claims"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 宣称)
+		  (PU ：)
+		  (IP-OBJ (CP-CND (ADVP (CS 只要))
+				  (IP (NP-SBJ (DNP (NP (PN 我))
+						   (DEG 的))
+					      (NP (NN 犬)))
+				      (VP (ADVP (AD 一))
+					  (VP (VV 露面)))))
+			  (PU ，)
+			  (NP-SBJ (DP (DT 其他))
+				  (NP (NN 部队)))
+			  (VP (ADVP (AD 就))
+			      (DVP (VP (VPT (VA 忙)
+					    (AD 不)
+					    (VV 迭)))
+				   (DEV 的))
+			      (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (DNP (NP (PN 自己))
+						       (DEG 的))
+						  (NP (NN 警犬)))
+					  (VP (VRD (VV 藏)
+						   (VV 起来))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  只要 我 的 犬 一 露面 ， 其他 部队 就 忙 不 迭 的 把 自己 的 警犬 藏 起来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 答应 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person making promise"/>
+      <role argnum="1" argrole="promise made to"/>
+      <role argnum="2" argrole="thing promised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="io" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (PN 大家))
+			  (VP (VV 推选)
+			      (NP-OBJ (PN 我))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 为)
+				      (NP-OBJ (NN 村委会)
+					      (NN 成员)))))))
+	      (PU ，)
+	      (ADVP (AD 那))
+	      (NP-SBJ (PN 你们))
+	      (VP (VV 得)
+		  (VP (VV 答应)
+		      (NP-IO (PN 我))
+		      (NP-OBJ (QP (CD 三)
+				  (CLP (M 条)))
+			      (NP (NN 要求)))))) 
+	  </parse>
+	  <arg n="0">
+	  你们 	  
+	  </arg>
+	  <arg n="2">
+	  三 条 要求 	  
+	  </arg>
+	  <arg n="1">
+	  我 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 大家 推选 我 *PRO* 为 村委会 成员 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  那 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

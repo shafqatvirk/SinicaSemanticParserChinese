@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 避开 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 avoids"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 以前))
+	    (NP-SBJ (PN 我们))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 报导)
+			    (NP-OBJ (NN 雏妓)
+				    (PU 、)
+				    (NN 爱滋)
+				    (NN 病患))))
+		(PU ，)
+		(VP (VV 会)
+		    (VP (VP (VP (VV 避开)
+				(NP-OBJ (DNP (NP (PN 他们))
+					     (DEG 的))
+					(NP (NN 脸))))
+			    (PU 、)
+			    (VP (VV 作)
+				(NP-OBJ (NN 变声)
+					(NN 处理))))
+			(PU ，)
+			(VP (VV 顾及)
+			    (NP-OBJ (DNP (NP (PN 他们))
+					 (DEG 的))
+				    (NP (NN 人权)))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	他们 的 脸 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 报导 雏妓 、 爱滋 病患 
+	</arg>
+	<arg n="m" f="tmp">
+	以前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

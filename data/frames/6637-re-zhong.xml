@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 热中 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is interested in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (NP-APP (PN 他们))
+		(DP (DT 这些))
+		(CP (WHNP-14 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-14))
+			    (VP (VV 热中)
+				(NP-OBJ (NN 反对)
+					(NN 运动))))
+			(DEC 的)))
+		(NP (NN 学生))) 
+	</parse>
+	<arg n="0">
+	*T*-14 
+	</arg>
+	<arg n="1">
+	反对 运动 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (NN 问题))
+	      (VP (VC 是)
+		  (PU ，)
+		  (IP-PRD (NP-SBJ (NN 青少年))
+			  (VP (ADVP-WH (AD 为何))
+			      (ADVP (AD 如此))
+			      (VP (VV 热中)))))) 
+	</parse>
+	<arg n="0">
+	青少年 
+	</arg>
+	<arg n="m" f="adv">
+	如此 
+	</arg>
+	<arg n="m" f="adv">
+	为何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

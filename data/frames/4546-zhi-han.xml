@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致函 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 writes a letter to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 海协))
+		  (VP (VP (VV 致函)
+			  (NP-PN-OBJ (NR 台湾)
+				     (NR 海基会)))
+		      (VP (PP (P 就)
+			      (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 涉及)
+					      (NP-OBJ (NP (NN 大陆)
+							  (NN 同胞)
+							  (PU 、)
+							  (NR 台湾)
+							  (NN 同胞))
+						      (NP (NN 生命)
+							  (NN 财产)
+							  (NN 损害)))))
+				  (NP (NN 事件))))
+			  (VP (VV 交换)
+			      (NP-OBJ (NN 意见)))))) 
+	  </parse>
+	  <arg n="0">
+	  海协 
+	  </arg>
+	  <arg n="1">
+	  台湾 海基会 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

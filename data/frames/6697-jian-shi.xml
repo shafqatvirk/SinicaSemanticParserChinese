@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捡拾 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 picks up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可能)
+		(VP (VC 是)
+		    (VP (VP (ADVP (AD 随手))
+			    (VP (VRD (VV 捡拾)
+				     (VV 起))
+				(NP-OBJ (NP (NN 身边))
+					(QP (CD 一)
+					    (CLP (M 个)))
+					(CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (VV 破掉)))
+						(DEC 的)))
+					(NP (NN 陶瓮)))))
+			(VP (MSP 来)
+			    (VP (VV 支撑))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	身边 一 个 *OP* *T*-1 破掉 的 陶瓮 
+	</arg>
+	<arg n="m" f="adv">
+	随手 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

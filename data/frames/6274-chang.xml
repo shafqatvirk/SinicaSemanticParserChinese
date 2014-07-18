@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 尝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 tastes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ-1 (-NONE- *pro*))
+	    (VP (VP (ADVP (CS 如果))
+		    (VP (VV 去)
+			(AS 过)
+			(NP-PN-OBJ (NR 新竹))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 没))
+		    (VP (VV 尝)
+			(AS 过)
+			(NP-OBJ (DP (DT 这)
+				    (QP (CD 三)
+					(CLP (M 样))))
+				(NP (NN 特产)))))
+		(PU ，)
+		(VP (ADVP (AD 可))
+		    (VP (VC 是)
+			(VP (VV 会)
+			    (VP (LB 被)
+				(IP-OBJ (NP-SBJ (NN 人))
+					(VP (VV 嘲笑)
+					    (PU ：)
+					    (NP-OBJ (-NONE- *-1))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (ADVP (AD 不))
+						    (VP (VV 懂)
+							(NP-OBJ (NN 门道))))))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	这 三 样 特产 
+	</arg>
+	<arg n="m" f="adv">
+	没 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 只有))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 尝)
+				    (AS 过)))
+			    (DEC 的)))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 才))
+		(VP (VV 知道)))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

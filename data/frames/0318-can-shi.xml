@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 蚕食 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (QP (CD 一些))
+              (NP (NN 地方)))
+      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+                  (VP (PP-DIR (P 从)
+                              (NP (QP (CD 局部))
+                                  (NP (NN 利益))))
+                      (VP (VV 出发))))
+          (PU ，)
+          (PP-MNR (P 通过)
+                  (IP (NP-SBJ (-NONE- *PRO*))
+                      (VP (VP (VV 确)
+                              (NP-OBJ (NN 权)))
+                          (VP (VV 发)
+                              (NP-OBJ (NN 证))))))
+          (VP (VV 蚕食)
+              (NP-OBJ (NN 重点)
+                      (NN 林区))))))
+	</parse>
+	<arg n="0"> 一些 地方 </arg>
+	<arg n="M" f="ADV"> *PRO* 从 局部 利益 出发 </arg>
+	<arg n="M" f="MNR"> 通过 *PRO* 确 权 发 证 </arg>
+	<V/>
+	<arg n="1"> 重点 林区 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

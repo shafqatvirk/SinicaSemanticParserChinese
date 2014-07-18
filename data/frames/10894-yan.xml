@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 研 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 studies"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (ADVP (AD 专))
+				(VP (VV 研)
+				    (NP-OBJ (NN 鱼类)))))
+			(DEC 的)))
+		(NP (NN 鱼)
+		    (NN 博士))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	鱼类 
+	</arg>
+	<arg n="m" f="adv">
+	专 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

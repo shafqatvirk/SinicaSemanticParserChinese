@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通告 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 tells"/>
+      <role argnum="2" argrole="entity arg1 is told to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-ADV (QP (CD 一))
+			      (NP (NN 方面)))
+		      (VP (VV 通告)
+			  (NP-OBJ (NN 代表们))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (CS 若))
+					      (ADVP (AD 不))
+					      (VP (VV 支持)
+						  (NP-OBJ (NN 虚级化)
+							  (NN 主张)))))
+				  (ADVP (AD 将))
+				  (VP (SB 被)
+				      (VP (VV 开除)
+					  (NP-OBJ (NN 党籍))))))))
+		  (PU ，)
+		  (VP (ADVP (AD 同时))
+		      (PP-DIR (P 对)
+			      (NP (NN 国代)))
+		      (VP (VV 展开)
+			  (NP-OBJ (NN 安抚)
+				  (NN 动作)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* *PRO* 若 不 支持 虚级化 主张 将 被 开除 党籍 
+	  </arg>
+	  <arg n="2">
+	  代表们 
+	  </arg>
+	  <arg n="m" f="dis">
+	  一 方面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

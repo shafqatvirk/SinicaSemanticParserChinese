@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 斩获 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 wins"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-PN-SBJ (NR 中华队))
+	    (VP (VP (ADVP (AD 也))
+		    (VP (VV 有所)
+			(VP (VV 斩获))))
+		(PU ，)
+		(VP (ADVP (AD 共))
+		    (VP (VV 夺得)
+			(NP-OBJ (NP (QP (CD 一))
+				    (NP (NN 金)))
+				(NP (QP (CD 二))
+				    (NP (NN 银)))
+				(NP (QP (CD 四))
+				    (NP (NN 铜)))))))) 
+	</parse>
+	<arg n="0">
+	中华队 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改良 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 野))
+		      (NP (NN 牦牛)))
+	      (VP (VV 可)
+		  (VP (VV 作)
+		      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP-MNR (-NONE- *T*-1))
+					      (VP (VV 改良)
+						  (NP-OBJ (NN 家畜)
+							  (NN 品种)))))
+				      (DEC 的)))
+			      (NP (NN 资源)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  家畜 品种 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

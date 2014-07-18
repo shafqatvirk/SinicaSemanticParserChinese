@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 移往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="location moved to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 台商))
+	      (VP (ADVP (AD 陆续))
+		  (VP (VV 移往)
+		      (NP-PN-OBJ (NR 东南亚))))) 
+	  </parse>
+	  <arg n="0">
+	  台商 
+	  </arg>
+	  <arg n="2">
+	  东南亚 
+	  </arg>
+	  <arg n="m" f="adv">
+	  陆续 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

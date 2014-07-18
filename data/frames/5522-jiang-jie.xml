@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 讲解 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 explains"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (QP (OD 第一)
+			    (CLP (M 个)))
+			(NP (NN 钟头)))
+		(VP (VV 讲解)
+		    (NP-OBJ (NN 理论))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	理论 
+	</arg>
+	<arg n="m" f="tmp">
+	第一 个 钟头 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 任建诚))
+	    (VP (VP (ADVP (AD 一边))
+		    (VP (VV 示范)))
+		(PU ，)
+		(VP (ADVP (AD 一边))
+		    (VP (VV 讲解))))) 
+	</parse>
+	<arg n="0">
+	任建诚 
+	</arg>
+	<arg n="m" f="adv">
+	一边 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

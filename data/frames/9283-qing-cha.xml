@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 清查 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 checks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 同时))
+		  (VP (VP (VV 清查)
+			  (NP-OBJ (DNP (ADJP (JJ 现有))
+				       (DEG 的))
+				  (NP (NN 帐棚)
+				      (CC 与)
+				      (NN 睡袋))))
+		      (PU ，)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NP (NN 受灾))
+					  (ADJP (JJ 必要))
+					  (NP (NN 用品)))
+				  (VP (VV 送到)
+				      (NP-OBJ (NN 灾区)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  现有 的 帐棚 与 睡袋 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

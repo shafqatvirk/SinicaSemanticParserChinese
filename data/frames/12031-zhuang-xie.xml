@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 装卸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 loads and unloads"/>
+      <role argnum="2" argrole="vehicle onto/from which arg1 is loaded/unloaded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (NN 码头))
+		       (LC 上))
+	      (NP-SBJ (NN 货物)
+		      (NN 装卸))
+	      (VP (VCD (VA 紧张)
+		       (VA 繁忙)))) 
+	  </parse>
+	  <arg n="1">
+	  货物 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

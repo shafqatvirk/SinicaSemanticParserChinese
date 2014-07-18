@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刮损 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 scratches and damages"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VP (PP-MNR (P 靠著)
+						  (NP (NN 雷射)
+						      (NN 光线)))
+					  (VP (VV 读取)
+					      (NP-OBJ (NN 信号))))
+				      (PU 、)
+				      (VP (ADVP (AD 不))
+					  (VP (VV 怕)
+					      (NP-OBJ (NN 磁头))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 刮损)))))))
+			      (DEC 的)))
+		      (NP (NN 光碟)))
+	      (PU ，)
+	      (VP (VV 可以)
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 影音)
+				      (NN 资料))
+			      (VP (ADVP (AD 长久))
+				  (VP (VV 保存))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

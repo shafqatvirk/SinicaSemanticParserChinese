@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 据说 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing which is said to be true"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 行政)
+		      (NN 长官))
+	      (VP (VP (PP-DIR (P 向)
+			      (NP (ADJP (JJ 与会))
+				  (NP (NN 信众))))
+		      (VP (VV 发表)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 段)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 预先))
+						  (VP (VV 录音))))
+					  (DEC 的)))
+				  (NP (NN 祝词)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 接受)
+		      (NP-OBJ (NN 佛教)
+			      (NN 代表))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 致送)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 尊)))
+				      (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VV 据说)
+						      (VP (VV 会)
+							  (VP (VV 带来)
+							      (NP-OBJ (NN 吉祥)
+								      (PU 、)
+								      (NN 健康)
+								      (CC 和)
+								      (NN 快乐))))))
+					      (DEC 的)))
+				      (NP (NN 玉如意)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="0" f="prd">
+	  会 带来 吉祥 、 健康 和 快乐 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中堂镇))
+	      (VP (VCP (VV 据说)
+		       (VC 是))
+		  (NP-OBJ (NP (NN 科举)
+			      (NN 时代))
+			  (NP-PN (NR 东莞))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 出)
+					  (NP-OBJ (NN 状元))))
+				  (DEC 的)))
+			  (NP (NN 宝地))))) 
+	  </parse>
+	  <arg n="0">
+	  中堂镇 
+	  </arg>
+	  <arg n="0" f="prd">
+	  科举 时代 东莞 *OP* *T*-1 出 状元 的 宝地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

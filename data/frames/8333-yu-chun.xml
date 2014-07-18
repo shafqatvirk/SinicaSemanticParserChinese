@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 愚蠢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (PN 你))
+		(VP (VP (PP-DIR (P 从)
+				(NP-PN (NR 台湾)))
+			(ADVP (AD 那麽))
+			(ADVP (AD 大老远))
+			(VP (VP (VV 跑到)
+				(NP-PN-OBJ (NR 荷兰)))
+			    (VP (MSP 来)
+				(VP (VV 找)
+				    (NP-OBJ (PN 我们))))))
+		    (PU ，)
+		    (ADVP (AD 就))
+		    (VP (VC 是)
+			(PP-PRD (P 为了)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (ADVP (AD 这麽))
+						    (VP (VV 愚蠢))))
+					    (DEC 的)))
+				    (QP (CD 一)
+					(CLP (M 个)))
+				    (NP (NN 计划))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这麽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

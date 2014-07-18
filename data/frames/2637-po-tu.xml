@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 破土 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="project ground broken for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (QP (ADVP (AD 又))
+			  (QP (CD 一)
+			      (CLP (M 条))))
+		      (NP (NN 煤炭)
+			  (NN 运输))
+		      (ADJP (JJ 大))
+		      (NP (NN 通道))
+		      (PRN (PU ──)
+			   (NP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VV 连接)
+					       (LCP-OBJ (NP (NP-PN (NR 天津))
+							    (NP-PN (NR 蓟县)
+								   (CC 与)
+								   (NR 天津港)))
+							(LC 之间))))
+				       (DEC 的)))
+			       (NP-PN (NR 蓟港)
+				      (NN 铁路)))))
+	      (VP (NP-TMP (NT 日前))
+		  (VP (VCD (VV 破土)
+			   (VV 动工))))) 
+	  </parse>
+	  <arg n="1">
+	  中国 又 一 条 煤炭 运输 大 通道 ── *OP* *T*-1 连接 天津 蓟县 与 天津港 之间 的 蓟港 铁路 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

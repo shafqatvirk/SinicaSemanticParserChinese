@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拜托 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 asks arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 像))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 有)
+		(IP-OBJ (NP-SBJ (QP (CLP (M 位)))
+				(NP (NN 台商)))
+			(VP (ADVP (AD 就))
+			    (VP (VV 拜托)
+				(NP-PN-OBJ (NR 黄苏))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (ADVP (AD 无论))
+						    (VP (VV 如何))))
+					(VP (VV 要)
+					    (VP (VV 收)
+						(NP-OBJ (DNP (NP (PN 他))
+							     (DEG 的))
+							(NP (NN 孩子)))))))))))) 
+	</parse>
+	<arg n="0">
+	位 台商 
+	</arg>
+	<arg n="1">
+	黄苏 
+	</arg>
+	<arg n="2">
+	*PRO* *PRO* 无论 如何 要 收 他 的 孩子 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 企业)))
+	    (VP (PP-PRP (P 为了)
+			(NP (NT Ｙ２Ｋ)))
+		(VP (MSP 而)
+		    (VP (VP (VV 登门))
+			(VP (VV 拜托)))))) 
+	</parse>
+	<arg n="0">
+	许多 企业 
+	</arg>
+	<arg n="m" f="prp">
+	为了 Ｙ２Ｋ 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

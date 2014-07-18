@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 叱吒风云 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (PP-LOC (P 在)
+			  (NP (DNP (NP (PN 我))
+				   (DEG 的))
+			      (NP (NN 领域))))
+		  (ADVP (AD 本来))
+		  (ADVP (AD 就))
+		  (VP (VC 是)
+		      (NP-PRD (QP (CLP (M 位)))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 叱吒风云)))
+				      (DEC 的)))
+			      (ADJP (JJ 女))
+			      (NP (NN 主管)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

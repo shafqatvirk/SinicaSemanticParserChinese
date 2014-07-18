@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 统合於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities arg0 coordinates"/>
+      <role argnum="2" argrole="place arg1 is coordinated at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 各))
+			  (NP (NN 军种)))
+		      (DNP (ADJP (JJ 现有))
+			   (DEG 的))
+		      (NP (NN 情报)
+			  (CC 及)
+			  (NN 作战))
+		      (NP (NN 单位)))
+	      (PU ，)
+	      (VP (NP-TMP (NT 未来))
+		  (VP (VV 可能)
+		      (VP (VV 统合於)
+			  (NP-OBJ (NN 参谋)
+				  (NN 本部)))))) 
+	  </parse>
+	  <arg n="1">
+	  各 军种 现有 的 情报 及 作战 单位 
+	  </arg>
+	  <arg n="2">
+	  参谋 本部 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  未来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

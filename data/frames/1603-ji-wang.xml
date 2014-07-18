@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寄望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="proposition"/>
+      <role argnum="3" argrole="thing arg0 places on arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VV 寄望)
+		  (NP-PN-OBJ (NR 香港))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (NP-TMP (NT 将来))
+			  (VP (VP (VV 带领)
+				  (NP-OBJ (-NONE- *RNR*-1)))
+			      (CC 和)
+			      (VP (VV 开创)
+				  (NP-OBJ-1 (DNP (LCP (NP (NN 区))
+						      (LC 内))
+						 (DEG 的))
+					    (NP (NN 时装)
+						(PU 、)
+						(NN 设计)
+						(PU 、)
+						(NN 艺术)
+						(CC 和)
+						(NN 文化))
+					    (NP (NN 潮流))))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  香港 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 将来 带领 (*RNR*-1)->(区内的时装、设计、艺术和文化潮流) 和 开创 区 内 的 时装 、 设计 、 艺术 和 文化 潮流 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CC 或者)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (NN 希望))
+			  (VP (VV 寄望)
+			      (PP-LOC (P 在)
+				      (LCP (NP (DP (DT 下)
+						   (QP (CD 一)
+						       (CLP (M 个))))
+					       (NP (DNP (NP (NN 跳槽))
+							(DEG 的))
+						   (NP (NN 机会))))
+					   (LC 上))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  在 下 一 个 跳槽 的 机会 上 
+	  </arg>
+	  <arg n="3">
+	  希望 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

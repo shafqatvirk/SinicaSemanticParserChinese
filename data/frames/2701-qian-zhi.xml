@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迁址 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving"/>
+      <role argnum="1" argrole="location move to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 另)
+			  (QP (CD 一些)))
+		      (NP (NN 外资)
+			  (NN 金融)
+			  (NN 机构)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 竞相))
+		  (VP (VV 迁址)
+		      (NP-PN-OBJ (NR 浦东))))) 
+	  </parse>
+	  <arg n="0">
+	  另 一些 外资 金融 机构 
+	  </arg>
+	  <arg n="1">
+	  浦东 
+	  </arg>
+	  <arg n="m" f="adv">
+	  竞相 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

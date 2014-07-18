@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不明 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity which arg0 is not clear about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 下载)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 来路))
+					    (VP (VA 不明)))
+					(DEC 的)))
+				(NP (NN 软体)))))
+	    (VP (VV 导致)
+		(NP-OBJ (NN 电脑))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 中毒))))) 
+	</parse>
+	<arg n="1" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="1" f="pse">
+	来路 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

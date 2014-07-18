@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 厌弃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 is disgusted with and discards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 身为)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VP (VV 厌弃)
+							  (NP-OBJ (ADJP (JJ 独裁))
+								  (NP (NN 政权))))
+						      (PU 、)
+						      (VP (VV 甘愿)
+							  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								  (VP (VV 羁旅)
+								      (NP-OBJ (NN 海外)))))))
+					      (DEC 的)))
+				      (ADJP (JJ 华裔))
+				      (NP (NN 作家)))))
+		  (PU ，)
+		  (NP-SBJ (DNP (NP-PN (NR 高行健))
+			       (DEG 的))
+			  (NP (NN 文学)))
+		  (VP (ADVP-WH (AD 是否))
+		      (VP (VV 带有)
+			  (NP-OBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VA 崇高)))
+					      (DEC 的)))
+				      (NP (NN 理念)))
+				  (CC 和)
+				  (NP (NN 人道)
+				      (NN 坚持)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	独裁 政权 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

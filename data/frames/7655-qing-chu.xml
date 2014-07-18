@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 请出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 invites to come into play"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 碰到)
+				    (LCP-OBJ (IP (NP-SBJ (NN 国家))
+						 (VP (VE 有)
+						     (NP-OBJ (NN 事))))
+					     (LC 时))))
+			(VP (VV 要)
+			    (VP (VV 请出)
+				(NP-OBJ (PU 「)
+					(NN 大老)
+					(PU 」))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 请)
+		(VP (VV 问)
+		    (IP-Q-OBJ (NP-SBJ (NP (NT 现在))
+				      (DNP (NP (NN 客家人))
+					   (DEG 的))
+				      (NP (PU 「)
+					  (NN 大老)
+					  (PU 」)))
+			      (VP (PP-PRD (P 在)
+					  (NP-WH (PN 那里)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	「 大老 」 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 碰到 国家 有 事 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

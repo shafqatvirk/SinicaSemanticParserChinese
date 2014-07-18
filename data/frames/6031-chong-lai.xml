@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 does once again"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (NT 如今))
+		(ADVP (AD 却))
+		(ADVP (AD 又))
+		(VP (VV 要)
+		    (VP (VV 重来)
+			(QP-EXT (CD 一)
+				(CLP (M 次))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="ext">
+	一 次 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

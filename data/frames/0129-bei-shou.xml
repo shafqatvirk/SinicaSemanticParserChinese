@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 倍受 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="receiver"/>
+    <role argnum="1" argrole="thing received"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (LCP-TMP (IP (NP-PN-SBJ (NR 香港))
+                   (VP (VV 回归)
+                       (NP-OBJ (NN 祖国))))
+               (LC 以后))
+      (PU ，)
+      (NP-SBJ (NP (NP (NN 海峡))
+                  (QP (CD 两))
+                  (NP (NN 岸)))
+              (NP (NN 关系)))
+      (VP (VV 倍受)
+          (NP-OBJ (NN 关注)))
+      (PU 。)))
+	</parse>
+	<arg n="M" f="TMP"> 香港 回归 祖国 以后 </arg>
+	<arg n="0"> 海峡 两 岸 关系 </arg>
+	<V/>
+	<arg n="1"> 关注 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

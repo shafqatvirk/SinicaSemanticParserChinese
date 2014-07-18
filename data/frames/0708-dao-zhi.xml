@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 导致 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT ７０年代))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 美国)
+				  (NN 钢铁厂))
+			   (DEG 的))
+		      (NP (NN 兼并)))
+	      (VP (ADVP (AD 直接))
+		  (VP (VV 导致)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (QP (CD 一些))
+				       (ADJP (JJ 大型))
+				       (ADJP (JJ 一体化))
+				       (NP (NN 钢铁)
+					   (NN 公司)))
+				   (DEG 的))
+			      (NP (NN 诞生)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 钢铁厂 的 兼并 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一些 大型 一体化 钢铁 公司 的 诞生 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 任何))
+		      (NP (NN 延误)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 会)
+		      (VP (VP (VV 让)
+			      (NP-OBJ (NN 蛇头))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 有机可乘))
+				      (PU ，)
+				      (VP (VV 散播)
+					  (NP-OBJ (DNP (NP (NN 特赦))
+						       (DEG 的))
+						  (NP (NN 谣言)))))))
+			  (PU ，)
+			  (VP (VV 导致)
+			      (IP-OBJ (NP-SBJ (QP (CD 大量))
+					      (NP (NN 儿童)))
+				      (VP (VV 涌入)))))))) 
+	  </parse>
+	  <arg n="0">
+	  任何 延误 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  大量 儿童 涌入 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

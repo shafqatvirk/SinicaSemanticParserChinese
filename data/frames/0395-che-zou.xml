@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="withdrawal inducer"/>
+      <role argnum="1" argrole="entity withdrawing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 法国))
+	      (VP (VV 撤走)
+		  (NP-OBJ (NP (PN 其))
+			  (NP (NN 蓝盔)
+			      (NN 部队))))) 
+	  </parse>
+	  <arg n="0">
+	  法国 
+	  </arg>
+	  <arg n="1">
+	  其 蓝盔 部队 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

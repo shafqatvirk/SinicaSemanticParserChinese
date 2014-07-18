@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 观赏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="obsever"/>
+      <role argnum="1" argrole="thing observed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 大家))
+	      (VP (VP (ADVP (AD 匆匆))
+		      (VP (VV 撇下)
+			  (NP-OBJ (NN 杯盘))))
+		  (VP (ADVP (AD 便))
+		      (ADVP (AD 径自))
+		      (VP (VV 到)
+			  (NP-OBJ (NN 附近))))
+		  (VP (VV 观赏)
+		      (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 著名)))
+					  (DEC 的)))
+				  (DNP-APP (QP (DNP (NP (PU “)
+							(NP-PN (NR 富士))
+							(QP (CD 五))
+							(NP (NN 湖))
+							(PU ”))
+						    (DEG 之))
+					       (QP (CD 一)))
+					   (DEG 的))
+				  (NP-PN (NR 河口湖)))
+			      (CC 及)
+			      (NP (DNP (NP (NP (PN 其))
+					   (NP (NN 周围)))
+				       (DEG 的))
+				  (ADJP (JJ 旖旎))
+				  (NP (NN 风光))))))
+	      (SP 了)
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  大家 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 著名 的 “ 富士 五 湖 ” 之 一 的 河口湖 及 其 周围 的 旖旎 风光 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 嘉宾))
+	      (VP (ADVP (AD 则))
+		  (PP-TMP (P 在)
+			  (LCP (NP (NN 典礼))
+			       (LC 後)))
+		  (VP (VP (VV 前往)
+			  (QP-OBJ (NP (NN 会展)
+				      (NN 中心))
+				  (QP (CD 五)
+				      (CLP (M 楼)))))
+		      (VP (VV 观赏)))))
+	  </parse>
+	  <arg n="0">
+	  嘉宾 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 典礼 後 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

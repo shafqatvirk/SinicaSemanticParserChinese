@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 烙印 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 burns"/>
+    <role argnum="2" argrole="place arg1 is burned onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 看)
+			(NP-OBJ (PN 他))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (DVP (VP (VA 随兴))
+					 (DEV 地))
+				    (VP (VV 拍拍打打)))
+				(PU ，)
+				(VP (VV 接合)
+				    (NP-OBJ (NN 罐身)))))))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 仔细))
+			(ADVP (AD 一))
+			(VP (VV 看))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 一)
+			(CLP (M 环)))
+		    (ADJP (JJ 正))
+		    (NP (NN 方格纹)))
+	    (VP (VP (ADVP (AD 已))
+		    (VP (VV 烙印)
+			(PP (P 在)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (IP (NP-TPC (NN 罐身))
+					(NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VA 宽阔)))))
+				(NP (NN 处)))))))) 
+	</parse>
+	<arg n="1">
+	一 环 正 方格纹 
+	</arg>
+	<arg n="2">
+	在 *OP* 罐身 *T*-1 最 宽阔 处 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 仔细 一 看 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 看 他 *PRO* 随兴 地 拍拍打打 ， 接合 罐身 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

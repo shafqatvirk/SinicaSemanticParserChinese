@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摸透 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 figures out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 可是))
+	    (LCP-TMP (QP (CD 几)
+			 (CLP (M 年)))
+		     (LC 後))
+	    (PU ，)
+	    (PP-TMP (P 当)
+		    (LCP (IP (NP-SBJ-1 (DNP (NP (NN 台商))
+					    (DEG 的))
+				       (NP (NN 手法)))
+			     (VP (SB 被)
+				 (VP (VP (VV 摸透)
+					 (NP-OBJ (-NONE- *-1)))
+				     (PU 、)
+				     (VP (VV 模仿)
+					 (NP-OBJ (-NONE- *-1))))))
+			 (LC 後)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (LB 被)
+		    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			    (IP (NP-SBJ (DNP (NP (NN 当地))
+					     (DEG 的))
+					(NP (NN 合夥人)))
+				(VP (QP-MNR (CD 一)
+					    (CLP (M 脚)))
+				    (VP (VV 踢开)
+					(NP-OBJ (-NONE- *T*-2))))))))) 
+	</parse>
+	<arg n="1">
+	台商 的 手法 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

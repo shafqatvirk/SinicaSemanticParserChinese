@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 格格不入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities that do not fit each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-7 (ADVP (AD 但))
+		  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 内地))
+				      (VP (VV 习惯)
+					  (NP-OBJ (-NONE- *T*-2))))
+				  (DEC 的)))
+			  (NP (NN 社会主义)
+			      (NN 法)))
+		  (VP (PP (P 与)
+			  (NP (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (ADVP (AD 已经))
+					      (VP (VV 资本主义化))))
+				      (DEC 的)))
+			      (NP-PN (NR 澳门))
+			      (NP (NN 法律))))
+		      (PU ，)
+		      (PP-LOC (ADVP (AD 不管))
+			      (PP (P 在)
+				  (LCP (NP (NN 观念)
+					   (CC 或)
+					   (NN 精神))
+				       (LC 上))))
+		      (ADVP (AD 都))
+		      (VP (VV 格格不入)))) 
+	</parse>
+	<arg n="0">
+	*OP* 内地 习惯 *T*-2 的 社会主义 法 
+	</arg>
+	<arg n="0" f="crd">
+	与 *OP* *T*-3 已经 资本主义化 的 澳门 法律 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="loc">
+	不管 在 观念 或 精神 上 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

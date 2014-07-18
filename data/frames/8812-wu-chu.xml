@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 悟出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 figures out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 当)
+		      (IP (NP-SBJ (NN 上海人))
+			  (VP (VV 说)
+			      (IP-OBJ (PU 「)
+				      (NP-SBJ (DP (DT 这))
+					      (NP (NN 问题)))
+				      (VP (ADVP (AD 不))
+					  (VP (VA 大)))
+				      (PU 」)))))
+	      (PU ，)
+	      (NP-SBJ (PN 你))
+	      (VP (VV 得)
+		  (VP (VV 悟出)
+		      (IP-Q-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (LCP-LOC (NP (NN 背))
+								 (LC 後))
+							(VP (VV 隐藏))))
+						(DEC 的)))
+					(NP (NN 部份)))
+				(VP (ADVP-WH (AD 究竟))
+				    (VP (VV 有)
+					(VP (ADVP-WH (AD 多))
+					    (VP (VA 严重))))))))) 
+	  </parse>
+	  <arg n="0">
+	  你 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 背 後 隐藏 的 部份 究竟 有 多 严重 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当 上海人 说 「 这 问题 不 大 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

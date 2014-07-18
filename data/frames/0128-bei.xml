@@ -1,0 +1,170 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 背 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 hides from/has its back towards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 背)
+			(AS 着)
+			(NP-OBJ (NN 对方))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  对方 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VC 是)
+		      (NP-PRD (DNP (NP (NP (CP (WHPP-1 (-NONE- *OP*))
+					       (IP (NP-SBJ (NN 凯达格兰族))
+						   (VP (PP-LOC (-NONE- *T*-1))
+						       (VP (VV 居住)))))
+					   (NP (NN 地)))
+				       (NP (NN 名)))
+				   (DEG 之))
+			      (NP (NN 音译))))
+		  (PU ，)
+		  (VP (VV 位)
+		      (PP (P 於)
+			  (NP (NP-PN (NR 台湾))
+			      (NP (NN 西北端)))))
+		  (PU ，)
+		  (VP (NP-ADV (NN 西北))
+		      (VP (VV 临)
+			  (NP-PN-OBJ (NR 台湾)
+				     (NN 海峡))))
+		  (PU ，)
+		  (VP (NP-ADV (NN 东南))
+		      (VP (VV 背)
+			  (NP-PN-OBJ (NR 观音山))))
+		  (PU ，)
+		  (VP (NP-ADV (NN 东北))
+		      (VP (VP (VV 隔)
+			      (NP-PN-OBJ (NR 淡水河)))
+			  (VP (PP (P 与)
+				  (NP-PN (NR 淡水镇)))
+			      (VP (VV 对望))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  观音山 
+	  </arg>
+	  <arg n="m" f="loc">
+	  东南 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 memorizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-FOC (ADVP (AD 连))
+		  (NP (CP (WHNP-55 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (NP-MNR (-NONE- *T*-55))
+				      (VP (VV 背)
+					  (NP-OBJ (NN 剧本)))))
+			      (DEC 的)))
+		      (NP (NN 时间)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  剧本 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-55 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 carries on back"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 仔细))
+			  (VP (VV 看看)
+			      (NP-OBJ (DNP (LCP (NP (NN 人家))
+						(LCP (LCP (NP (NN 店))
+							  (LC 里))
+						     (PU 、)
+						     (LCP (NP (NN 家))
+							  (LC 里))))
+					   (DEG 的))
+				      (NP-PN (NR 弥勒佛))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-LOC (NP (NN 背))
+			   (LC 上))
+		  (ADVP (AD 常常))
+		  (VP (VV 背)
+		      (AS 著)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 圆鼓鼓)))
+				      (DEC 的)))
+			      (ADJP (JJ 大))
+			      (NP (NN 布袋)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* *T*-1 圆鼓鼓 的 大 布袋 
+	  </arg>
+	  <arg n="m" f="adv">
+	  常常 
+	  </arg>
+	  <arg n="m" f="loc">
+	  背 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *pro* 仔细 看看 人家 店 里 、 家 里 的 弥勒佛 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

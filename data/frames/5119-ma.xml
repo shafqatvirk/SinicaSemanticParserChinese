@@ -1,0 +1,148 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 骂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity scolding"/>
+    <role argnum="1" argrole="entity arg0 scolds"/>
+    <role argnum="2" argrole="reason arg1 is scolded"/>
+    <role argnum="3" argrole="words arg0 says in scolding"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (NN 孩子))
+	      (VP (ADVP-WH (AD 为何))
+		  (ADVP (AD 这样))
+		  (VP (VV 骂)))) 
+	</parse>
+	<arg n="0">
+	孩子 
+	</arg>
+	<arg n="m" f="adv">
+	这样 
+	</arg>
+	<arg n="m" f="adv">
+	为何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 孩子))
+	    (VP (VP (VV 回来))
+		(VP (VP (ADVP (AD 大))
+			(VP (VV 唱)
+			    (NP-OBJ (NP-PN (NR 中共))
+				    (NP (NN 国歌)))))
+		    (PU ，)
+		    (CC 又)
+		    (VP (ADVP (AD 大))
+			(VP (VV 骂)
+			    (NP-OBJ (NP (NP-PN (NR 蒋))
+					(NP (NN 匪帮)))
+				    (PU 、)
+				    (NP-PN (NR 李登辉)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VC 是)
+				    (NP-PRD (NN 历史)
+					    (NN 败类))))))))) 
+	</parse>
+	<arg n="0">
+	孩子 
+	</arg>
+	<arg n="1">
+	蒋 匪帮 、 李登辉 
+	</arg>
+	<arg n="2">
+	*PRO* 是 历史 败类 
+	</arg>
+	<arg n="m" f="adv">
+	大 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (ADVP (AD 边))
+			(VP (VV 改)))
+		    (VP (ADVP (AD 边))
+			(VP (VV 骂)
+			    (PU ：)
+			    (IP-OBJ (NP-SBJ (DP (DT 哪)
+						(CLP (M 个)))
+					    (NP (NN 蠢蛋)))
+				    (PU ，)
+				    (VP (VV 写)
+					(NP-OBJ (DP (DT 这些))
+						(CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (VP (VV 缺德))
+								(VP (VE 没)
+								    (NP-OBJ (NN 大脑)))))
+							(DEC 的)))
+						(NP (NN 程式))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="3">
+	哪 个 蠢蛋 ， 写 这些 *OP* *T*-2 缺德 没 大脑 的 程式 
+	</arg>
+	<arg n="m" f="adv">
+	边 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 大家))
+	    (VP (ADVP (AD 都))
+		(ADVP (AD 在))
+		(VP (VV 骂)
+		    (IP-OBJ (NP-SBJ (NN 社会)
+				    (NN 新闻))
+			    (VP (VV 挂帅)))))) 
+	</parse>
+	<arg n="0">
+	大家 
+	</arg>
+	<arg n="2">
+	社会 新闻 挂帅 
+	</arg>
+	<arg n="m" f="adv">
+	在 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

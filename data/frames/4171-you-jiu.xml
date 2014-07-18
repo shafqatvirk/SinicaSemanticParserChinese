@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 悠久 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (SB 被)
+				      (VP (VV 誉为)
+					  (NP-OBJ (NP-PN (NR 中国))
+						  (NP (PU “)
+						      (NN 国酒)
+						      (PU ”))))))
+			      (DEC 的)))
+		      (NP-PN (NN 茅台酒)))
+	      (NP-SBJ (NN 历史))
+	      (VP (VA 悠久))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  历史 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *OP* *T*-1 被 誉为 中国 “ 国酒 ” 的 茅台酒 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

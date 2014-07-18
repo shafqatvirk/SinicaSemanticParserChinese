@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 整发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person whose hair arg0 does"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 过去))
+	    (IP-SBJ (NP-SBJ (NN 父亲们))
+		    (VP (VP (VV 上)
+			    (NP-OBJ (NN 美容院)))
+			(VP (VP (VV 刮)
+				(NP-OBJ (NN 胡子)))
+			    (PU 、)
+			    (VP (VV 整发)))))
+	    (VP (ADVP (AD 已))
+		(VP (VV 算)
+		    (NP-OBJ (NN 奢侈))))) 
+	</parse>
+	<arg n="1">
+	父亲们 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

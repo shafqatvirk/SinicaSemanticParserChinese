@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降 </id>
+    <frameset id="f1" edef="decrease, fall">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="range"/>
+      <role argnum="3" argrole="starting point"/>
+      <role argnum="4" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg3"/>
+	  <mapitem src="npobj" trg="arg4"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 预测)
+		  (IP-OBJ (NP-TMP (NT 今年))
+			  (NP-SBJ (NP (NN 世界)
+				      (NN 经济))
+				  (ADJP (JJ 实际))
+				  (NP (NN 增长率)))
+			  (VP (ADVP (AD 将))
+			      (PP-DIR (P 从)
+				      (QP (DNP (NP (NT 九七年))
+					       (DEG 的))
+					  (QP (CD 百分之三点九))))
+			      (VP (VRD (VV 降)
+				       (VV 至))
+				  (QP-OBJ (CD 百分之三))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  世界 经济 实际 增长率 	  
+	  </arg>
+	  <arg n="3">
+	  从 九七年 的 百分之三点九 	  
+	  </arg>
+	  <arg n="4">
+	  百分之三 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg4"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 预计)
+		  (IP-OBJ (IP (NP-TMP (NT 今年))
+			      (NP-SBJ (NN 全球)
+				      (NN 贸易)
+				      (NN 增长)
+				      (NN 幅度))
+			      (VP (VC 为)
+				  (QP-PRD (CD 百分之八点六))))
+			  (PU ，)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (NP-TMP (NT 明年))
+				  (VP (VRD (VV 降)
+					   (VV 为))
+				      (QP-OBJ (CD 百分之六点二)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  明年 	  
+	  </arg>
+	  <arg n="4">
+	  百分之六点二 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="lower">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-IMP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 降)
+		      (NP-OBJ (NP (NP-PN (NR 英国))
+				  (NP (NN 国旗)))
+			      (CC 及)
+			      (NP (NP-PN (NR 香港))
+				  (NP (NN 旗)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  英国 国旗 及 香港 旗 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

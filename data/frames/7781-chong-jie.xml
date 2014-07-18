@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冲解 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 flushes away"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 能)
+		(VP (VRD (VV 冲解)
+			 (VV 掉))
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 喝)
+							(NP-OBJ (NN 酒))))
+					    (VP (VV 留下)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的)))
+			    (NP (NN 辛酸)
+				(NN 苦味)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* *pro* *PRO* 喝 酒 留下 *T*-1 的 辛酸 苦味 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

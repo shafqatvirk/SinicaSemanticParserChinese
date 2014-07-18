@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 专责 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is exclusively responsible for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 专责)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 整治)
+			    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VV 受)
+						    (NP-OBJ (NN 污染))))
+					    (DEC 的)))
+				    (NP (NN 土壤)
+					(CC 及)
+					(NN 地下)
+					(NN 水))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 整治 *OP* *T*-2 受 污染 的 土壤 及 地下 水 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 专责)
+		(UCP-OBJ (NP (NN 海防))
+			 (PU 、)
+			 (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 查缉)
+				 (NP-OBJ (NN 走私)
+					 (CC 及)
+					 (NN 偷渡))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	海防 、 *PRO* 查缉 走私 及 偷渡 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

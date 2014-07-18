@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 显形 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing that forms in arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-PN-SBJ (NR 中国)
+			       (NN 文明))
+		    (VP (PP-TMP (P 在)
+				(LCP (QP (ADJP (JJ 公元))
+					 (ADJP (JJ 前))
+					 (QP (CD 四千)
+					     (CLP (M 年))))
+				     (LC 前)))
+			(PU ，)
+			(ADVP (AD 已经))
+			(VP (VV 显形)
+			    (AS 了)
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 个)))
+				    (NP (NP (NN 交互)
+					    (NN 作用))
+					(NP (NN 圈)))))))) 
+	</parse>
+	<arg n="0">
+	中国 文明 
+	</arg>
+	<arg n="1">
+	一 个 交互 作用 圈 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="tmp">
+	在 公元 前 四千 年 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

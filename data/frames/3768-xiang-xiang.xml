@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 想象 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing imagined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 对于)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (NP-TMP (NT 今日))
+						      (VP (VP (VV 骑)
+							      (NP-OBJ (NN 摩托车)))
+							  (PU 、)
+							  (VP (VV 看)
+							      (NP-OBJ (NP (ADJP (JJ 大))
+									  (NP (NN 屏幕)))
+								      (NP (NN 彩电)))))))
+					      (DEC 的)))
+				      (NP-PN (NR 大寨))
+				      (NP (NN 年轻人))))
+			  (VP (MSP 而)
+			      (VP (VV 言)))))
+	      (PU ，)
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (NN 前辈们))
+				  (VP (PP-MNR (P 用)
+					      (NP (NN 锄镐)
+						  (NN 犁具)))
+				      (VP (VV 征服)
+					  (NP-OBJ (NN 大自然)))))
+			      (DEC 的))
+		      (NP (NN 事)))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 很))
+		  (ADVP (AD 难))
+		  (VP (VV 想象)))) 
+	  </parse>
+	  <arg n="1">
+	  前辈们 用 锄镐 犁具 征服 大自然 的 事 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 对于 *OP* *T*-1 今日 骑 摩托车 、 看 大 屏幕 彩电 的 大寨 年轻人 而 言 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

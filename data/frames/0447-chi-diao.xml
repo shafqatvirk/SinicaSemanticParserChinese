@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吃掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="consumer"/>
+      <role argnum="1" argrole="thing consumed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 如果))
+			  (VP (VV 要)
+			      (VP (VV 外销)))))
+	      (PU ，)
+	      (NP-SBJ (NN 利润))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 会)
+		      (VP (LB 被)
+			  (CP-OBJ (WHNP-5 (-NONE- *OP*))
+				  (IP-OBJ (NP-SBJ (NN 运费)
+						  (CC 和)
+						  (NN 关税))
+					  (VP (VV 吃掉)
+					      (NP-OBJ (-NONE- *T*-5))))))))) 
+	  </parse>
+	  <arg n="0">
+	  运费 和 关税 
+	  </arg>
+	  <arg n="1">
+	  利润 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *pro* 如果 要 外销 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

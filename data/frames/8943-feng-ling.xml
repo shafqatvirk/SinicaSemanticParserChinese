@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奉令 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is ordered to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 队员们))
+	      (VP (VV 奉令)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 到)
+				  (NP-OBJ (NN 海边)))
+			      (VP (VV 捡拾)
+				  (NP-OBJ (NN 岩石)))
+			      (PU ，)
+			      (VP (VV 筑出)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 道)))
+					  (NP (NN 碉堡)
+					      (NN 围墙)))))))) 
+	  </parse>
+	  <arg n="0">
+	  队员们 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 到 海边 捡拾 岩石 ， 筑出 一 道 碉堡 围墙 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

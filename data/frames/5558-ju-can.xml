@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 聚餐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people eating together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (ADVP (AD 平时))
+		(NP-SBJ (NN 中心))
+		(VP (PP (P 跟)
+			(NP (PN 他们)))
+		    (VP (VP (VV 打打)
+			    (NP-OBJ (NN 电话)))
+			(PU 、)
+			(VP (VV 提供)
+			    (NP-OBJ (NN 资料)))
+			(PU 、)
+			(VP (VCD (VV 聚餐)
+				 (VV 联谊)))
+			(ETC 等)))) 
+	</parse>
+	<arg n="0">
+	中心 
+	</arg>
+	<arg n="0" f="crd">
+	跟 他们 
+	</arg>
+	<arg n="m" f="adv">
+	平时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VCD (VV 吃饭)
+			     (VV 聚餐))))
+	    (VP (VC 是)
+		(NP-PRD (QP (CD 一)
+			    (CLP (M 回)))
+			(NP (NN 事))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 起草 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing drafted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VP (ADVP (AD 正在))
+			  (VP (VV 起草)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VA 新)))
+					      (DEC 的)))
+				      (NP (NN 结构)
+					  (NN 改革)
+					  (CC 和)
+					  (NN 经济)
+					  (NN 增长))
+				      (NP (NN 计划)))))
+		      (PU ，)
+		      (VP (VV 准备)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 提交)
+				      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (PP-TMP (P 在)
+								      (NP (NT ２月)
+									  (NT ２６日)))
+							      (VP (VV 举行))))
+						      (DEC 的)))
+					      (NP (NN 政府)
+						  (NN 扩大)
+						  (NN 会议)))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 讨论)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 新 的 结构 改革 和 经济 增长 计划 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

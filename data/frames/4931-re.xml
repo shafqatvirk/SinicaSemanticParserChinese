@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 热 </id>
+  <frameset id="f1" edef="hot">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 市场))
+		    (DNP (PP (P 对)
+			     (NP (NN 乐团)))
+			 (DEG 的))
+		    (NP (NN 反应)))
+	    (VP (ADVP (AD 不))
+		(VP (VA 热)))) 
+	</parse>
+	<arg n="0">
+	市场 对 乐团 的 反应 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="enthusiastic">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is enthusiastic about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (NN 大陆)
+			(NN 官方)
+			(NN 高层))
+		(VP (PP-DIR (P 对)
+			    (NP (PU 「)
+				(ADJP (JJ 小))
+				(NP (NN 三通))
+				(PU 」)))
+		    (VP (CC 不但)
+			(VP (VPT (VV 热)
+				 (AD 不)
+				 (VV 起来)))
+			(PU ，)
+			(CC 还)
+			(VP (ADVP (AD 大肆))
+			    (VP (VV 抨击)))))) 
+	</parse>
+	<arg n="0">
+	大陆 官方 高层 
+	</arg>
+	<arg n="1">
+	对 「 小 三通 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

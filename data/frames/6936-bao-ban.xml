@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 包办 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 takes care of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (DP-ADV (DT 每)
+		    (CLP (M 年)))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-PN-SBJ (NR 好莱坞))
+				(VP (VV 出产)
+				    (NP-OBJ (-NONE- *T*-1))))
+			    (DEC 的)))
+		    (NP (NN 电影)))
+	    (VP (ADVP (AD 平均))
+		(VP (VV 包办)
+		    (NP-OBJ (NP-PN (NR 台湾))
+			    (DNP (QP (CD 百分之六十五))
+				 (DEG 的))
+			    (NP (NN 票房)))))) 
+	</parse>
+	<arg n="0">
+	*OP* 好莱坞 出产 *T*-1 的 电影 
+	</arg>
+	<arg n="1">
+	台湾 百分之六十五 的 票房 
+	</arg>
+	<arg n="m" f="adv">
+	平均 
+	</arg>
+	<arg n="m" f="adv">
+	每 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

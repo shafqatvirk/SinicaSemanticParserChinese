@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分判 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="contractor"/>
+      <role argnum="1" argrole="project"/>
+      <role argnum="2" argrole="subcontractor"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 由於)
+		  (IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 分判)
+				  (NP-OBJ (NN 工程))))
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (NN 建造业))
+				       (LC 内)))
+			  (ADVP (AD 十分))
+			  (VP (VA 普遍))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  工程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

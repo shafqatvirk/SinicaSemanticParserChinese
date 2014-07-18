@@ -1,0 +1,155 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出售 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="commodity"/>
+      <role argnum="2" argrole="selling to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美)
+			 (NN 国防部))
+	      (VP (ADVP (AD 也))
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 顾)
+				  (NP-OBJ (NP-PN (NR 中国))
+					  (NP (NN 反对))))))
+		  (PU ，)
+		  (VP (VV 坚持)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 继续)
+				  (VP (PP-DIR (P 向)
+					      (NP-PN (NR 台湾)))
+				      (VP (VV 出售)
+					  (NP-OBJ (NN 武器))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  武器 
+	  </arg>
+	  <arg n="2">
+	  向 台湾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP (NP-APP (NP-PN (NR 阿索乡))
+					  (NP (NN 牧民)))
+				  (NP-PN (NR 阿珍)))
+			      (NP (NN 一家)))
+		      (QP (CD １５)
+			  (CLP (M 口)))
+		      (NP (NN 人)))
+	      (PU ，)
+	      (VP (ADVP (AD 已))
+		  (PP-DIR (P 向)
+			  (NP (NN 国家)))
+		  (VP (VV 出售)
+		      (NP-OBJ (NN 羊毛))
+		      (QP-EXT (CD ７５０)
+			      (CLP (M 公斤))))))
+	  </parse>
+	  <arg n="0">
+	  阿索乡 牧民 阿珍 一家 １５ 口 人 
+	  </arg>
+	  <arg n="1">
+	  羊毛 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  ７５０ 公斤 
+	  </arg>
+	  <arg n="2">
+	  向 国家 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-PN-SBJ (NR 索尼)
+				     (NN 公司))
+			  (VP (NP-TMP (NT 今年))
+			      (VP (VV 出售)
+				  (NP-OBJ (-NONE- *T*-1)))))
+		      (DEC 的)))
+	      (DP (DT 所有))
+	      (NP (NN 音响)
+		  (NN 设备)))
+	  </parse>
+	  <arg n="0">
+	  索尼 公司 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 出售)
+				      (PP (P 给)
+					  (NP (NP (DP (DT 本))
+						  (NP (NN 企业)))
+					      (DP (DT 全体))
+					      (NP (NN 职工))))))
+			      (DEC 的))))
+	      (PU ，)
+	      (NP-SBJ (NN 企业)
+		      (NN 所有制)
+		      (NN 形式)
+		      (CC 和)
+		      (NN 职工)
+		      (NN 身份))
+	      (VP (ADVP (AD 同时))
+		  (VP (VV 改变)))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  给 本 企业 全体 职工 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

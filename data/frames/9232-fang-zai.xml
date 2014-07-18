@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放在 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 places arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 日後))
+		  (NP-SBJ (DNP (NP (NP-PN (NR 石冈仔))
+				   (NP (NN 工作)
+				       (NN 站)))
+			       (DEG 的))
+			  (NP (NN 工作)
+			      (NN 重点)))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 放在)
+			  (PU ：)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 发掘)
+					  (NP-OBJ (-NONE- *RNR*-2)))
+				      (PU 、)
+				      (VP (VV 了解)
+					  (NP-OBJ-2 (LCP (NP (NN 灾))
+							 (LC 後))
+						    (NP (NN 安置)
+							(NN 问题))))))))) 
+	  </parse>
+	  <arg n="1">
+	  石冈仔 工作 站 的 工作 重点 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 发掘 *RNR*-2 、 了解 灾 後 安置 问题 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

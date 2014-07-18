@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 用以 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing used"/>
+      <role argnum="1" argrole="thing arg0 is used for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (PP-TMP (P 自)
+			  (LCP (NP (NT 今年)
+				   (NT ２月))
+			       (LC 以来)))
+		  (PU ，)
+		  (NP-SBJ (DP (DT 该))
+			  (NP (NN 基金)))
+		  (VP (VV 开始)
+		      (VP (PP-DIR (P 向)
+				  (NP (QP (CD 一些))
+				      (ADJP (ADVP (AD 最))
+					    (ADVP (AD 不))
+					    (ADJP (JJ 发达)))
+				      (NP (NN 国家))))
+			  (VP (VV 拨款)))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 用以)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 实施)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 促进)
+						      (NP-OBJ (NP (PN 其))
+							      (NP (NN 出口)
+								  (PU 、)
+								  (NN 贸易)
+								  (PU 、)
+								  (NN 投资)
+								  (CC 和)
+								  (NN 企业)
+								  (NN 发展)))))
+					      (DEC 的)))
+				      (NP (NN 计划)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 实施 *OP* *T*-1 促进 其 出口 、 贸易 、 投资 和 企业 发展 的 计划 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 该))
+			  (NP (NN 厂)))
+		  (VP (ADVP (AD 年))
+		      (VP (VV 产)
+			  (NP-OBJ (NN 棉纱))
+			  (QP-EXT (CD ２.４万)
+				  (CLP (M 吨)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 用以)
+				  (NP-OBJ (NN 出口))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  出口 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

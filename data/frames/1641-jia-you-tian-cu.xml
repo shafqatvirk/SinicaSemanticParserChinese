@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加油添醋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 鼓励)
+	      (NP-OBJ (NN 加入者))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (ADVP (AD 先))
+			  (PP-DIR (P 从)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 使用)
+					      (NP-OBJ (NN 产品)))))
+			  (VP (VV 开始)))
+		      (PU ，)
+		      (VP (LCP-TMP (NP (NN 销售))
+				   (LC 时))
+			  (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (CS 只要))
+					      (VP (BA 将)
+						  (IP-OBJ (NP-SBJ (DNP (NP (NN 产品))
+								       (DEG 的))
+								  (NP (NN 使用)
+								      (NN 心得)))
+							  (VP (DVP (VP (VA 平实))
+								   (DEV 地))
+							      (VP (VRD (VV 说)
+								       (VV 出来))))))))
+				  (ADVP (AD 就))
+				  (VP (VA 好)))
+			      (PU ，)
+			      (VP (ADVP (AD 不))
+				  (VP (VV 必)
+				      (VP (VV 加油添醋))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  销售 时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

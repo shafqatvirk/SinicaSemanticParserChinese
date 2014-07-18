@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相视 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities looking at each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (QP (CD 两)
+			(CLP (M 双)))
+		    (DNP (ADJP (JJ 童稚))
+			 (DEG 的))
+		    (NP (NN 眼神)))
+	    (VP (VP (VV 相视))
+		(VP (MSP 而)
+		    (VP (VV 笑))))) 
+	</parse>
+	<arg n="0">
+	两 双 童稚 的 眼神 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

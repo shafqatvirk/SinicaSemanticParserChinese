@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 擦拭 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 creates on arg1 by wiping it"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (LCP (NP (NN 墙))
+			 (LC 上))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 日益))
+				    (VP (VA 稀薄))))
+			    (DEC 的)))
+		    (NP (NN 历纸)))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (DNP (LCP (NP (NN 橱窗))
+					  (LC 中))
+				     (DEG 的))
+				(NP (NN 古玩)))
+			(VP (VRD (VV 擦拭)
+				 (VV 出))
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 种)))
+				    (DNP (NP (PU 「)
+					     (NN 时间)
+					     (PU 」))
+					 (DEG 的))
+				    (NP (NN 亮度))))))) 
+	</parse>
+	<arg n="0">
+	墙 上 *OP* *T*-1 日益 稀薄 的 历纸 
+	</arg>
+	<arg n="1">
+	橱窗 中 的 古玩 
+	</arg>
+	<arg n="2">
+	一 种 「 时间 」 的 亮度 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

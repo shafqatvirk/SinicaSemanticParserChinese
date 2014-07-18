@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 票选 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 polls on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-APP (NP-TMP (NT 近日))
+		(NP-PN-SBJ (NR 信谊)
+			   (NN 文教)
+			   (NN 基金会))
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (NN 网路))
+				 (LC 上)))
+		    (VP (VV 票选)
+			(NP-OBJ (PU 「)
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (NN 父母))
+					    (VP (ADVP (AD 最))
+						(ADVP (AD 常))
+						(VP (VV 使用)
+						    (NP-OBJ (-NONE- *T*-1)))))
+					(DEC 的)))
+				(NP (NN 教养))
+				(NP (NN 模式)
+				    (CC 或)
+				    (NN 观念))
+				(PU 」))))) 
+	</parse>
+	<arg n="0">
+	信谊 文教 基金会 
+	</arg>
+	<arg n="1">
+	「 *OP* 父母 最 常 使用 *T*-1 的 教养 模式 或 观念 」 
+	</arg>
+	<arg n="m" f="loc">
+	在 网路 上 
+	</arg>
+	<arg n="m" f="tmp">
+	近日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

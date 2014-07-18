@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 不外乎 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="range arg0 falls in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (NN 经贸)
+					  (NN 外交))
+				  (NP-SBJ (NN 政府))
+				  (VP (VV 能)
+				      (VP (VV 作)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的))))
+	      (VP (VV 不外乎)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 提供)
+				  (NP-OBJ (NN 资讯)))
+			      (PU 、)
+			      (VP (VV 促成)
+				  (NP-OBJ (NN 便利))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 经贸 外交 政府 能 作 *T*-1 的 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 提供 资讯 、 促成 便利 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

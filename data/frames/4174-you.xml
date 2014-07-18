@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 由 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="people arg0 arg0 will let make decision"/>
+      <role argnum="2" argrole="thing arg1 makes decision on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (PN 我))
+		      (VP (VA 高兴)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (BA 把)
+				      (IP-OBJ (NP-SBJ (PN 他))
+					      (VP (VP (VV 拉成)
+						      (NP-OBJ (NN 条)))
+						  (PU ，)
+						  (VP (VV 围)
+						      (PP-LOC (P 在)
+							      (LCP (NP (NN 腰))
+								   (LC 上))))))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 由)
+		      (NP-OBJ (PN 我))))) 
+	  </parse>
+	  <arg n="2">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  我 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  我 高兴 *PRO* 把 他 拉成 条 ， 围 在 腰 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

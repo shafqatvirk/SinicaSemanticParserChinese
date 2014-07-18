@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 车水马龙 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 尤其))
+	    (PP-TMP (P 在)
+		    (DP (NP (NP-APP (DP (DT 每)
+					(CLP (M 年)))
+				    (NP (NN 农历) )
+				    (NP (NT 十月)
+					(NT 二十六) ))
+			    (NP (NN 祭典日) ))
+			(DP (DT 那)
+			    (CLP (M 天)))))
+	    (PU ，)
+	    (LCP-SBJ (NP (NN 庙) )
+		     (LC 前))
+	    (VP (VV 车水马龙))) 
+	</parse>
+	<arg n="0">
+	庙 前 
+	</arg>
+	<arg n="m" f="tmp">
+	在 每 年 农历 十月 二十六 祭典日 那 天 
+	</arg>
+	<arg n="m" f="dis">
+	尤其 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

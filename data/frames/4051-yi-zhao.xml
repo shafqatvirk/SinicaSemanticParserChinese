@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 依照 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing followed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP (NP (QP (CD 两))
+				  (NP (NN 会)))
+			      (DNP (NP (NT 目前))
+				   (DEG 的))
+			      (NP (NN 联系)
+				  (CC 与)
+				  (NN 合作)))
+			  (NP (NN 方式)))
+		  (PU ，)
+		  (VP (VV 应)
+		      (VP (ADVP (AD 严格))
+			  (VP (VV 依照)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (NP-TMP (NT 去年))
+						      (VP (VV 签署)
+							  (NP-OBJ (-NONE- *T*-1)))))
+					      (DEC 的)))
+				      (NP-TTL (PU 《)
+					      (NP (NP (NP (QP (CD 两))
+							  (NP (NN 会)))
+						      (NP (NN 联系)
+							  (CC 与)
+							  (NN 会谈)))
+						  (NP (NN 制度)))
+					      (NP (NN 协议))
+					      (PU 》))))))) 
+	  </parse>
+	  <arg n="0">
+	  两 会 目前 的 联系 与 合作 方式 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 去年 签署 *T*-1 的 《 两 会 联系 与 会谈 制度 协议 》 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严格 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

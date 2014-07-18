@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 讲足 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="speaker"/>
+    <role argnum="1" argrole="time length arg0 speaks for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 全)
+			(CLP (M 家)))
+		    (NP (NN 人)))
+	    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 卯足)
+				(NP-OBJ (NN 劲儿))))
+		    (ADVP (AD 在))
+		    (VP (PU 『)
+			(VV 赚)
+			(NP-OBJ (NN 钱))
+			(PU 』)))
+		(PU ，)
+		(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 讲足)
+				     (AS 了)
+				     (NP-OBJ (QP (CD 一)
+						 (CLP (M 个)))
+					     (NP (NN 钟头)))))
+			     (LC 後))
+		    (PU ，)
+		    (VP (VV 继续)
+			(VP (VV 昭告)
+			    (NP-IO (DP (DT 诸))
+				   (NP (NN 亲友)))
+			    (IP-OBJ (PU 『)
+				    (NP-SBJ (PN 我))
+				    (VP (VV 赚到)
+					(AS 了))
+				    (PU 』))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	一 个 钟头 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

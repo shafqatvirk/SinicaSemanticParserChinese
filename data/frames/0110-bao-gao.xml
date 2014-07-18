@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 报告 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="reporter"/>
+    <role argnum="1" argrole="content reported"/>
+    <role argnum="2" argrole="reporting to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-PN (NN 人民)
+                     (NN 银行))
+              (DP (DT 各)
+                  (CLP (M 级)))
+              (NP (NN 分支)
+                  (NN 机构)))
+      (VP (VV 要)
+          (VP (ADVP (AD 及时))
+              (PP-DIR (P 向)
+                      (NP (NN 上级)
+                          (NN 部门)))
+              (VP (VV 报告))))))
+	</parse>
+	<arg n="0"> 人民 银行 各 级 分支 机构 </arg>
+	<arg n="M" f="ADV"> 及时 </arg>
+	<arg n="2"> 向 上级 部门 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 解构 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 takes apart/analyzes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(VP (VV 让)
+	    (NP-OBJ (PN 我们))
+	    (IP (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 解构)
+			(NP-OBJ (DNP (NP (NN 人民)
+					 (NN 解放军))
+				     (DEG 的))
+				(ADJP (JJ 真正))
+				(NP (NN 实力))))
+		    (PU ，)
+		    (VP (MSP 以)
+			(VP (VV 达)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 知己知彼))
+					(PU ，)
+					(VP (ADVP (AD 才))
+					    (VP (VV 可)
+						(VP (VV 百战不殆))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	人民 解放军 的 真正 实力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 家庭))
+	    (VP (VV 解构))) 
+	</parse>
+	<arg n="1">
+	家庭 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

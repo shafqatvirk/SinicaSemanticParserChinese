@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 派 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="person sent"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 政府)))
+	      (VP (VP (VV 予以)
+		      (NP-OBJ (ADJP (JJ 高度))
+			      (NP (NN 重视))))
+		  (PU ，)
+		  (VP (ADVP (AD 将))
+		      (VP (VV 派)
+			  (NP-OBJ (NN 代表团))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 出席)
+				  (NP-OBJ (NN 会议)))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 政府 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  代表团 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 出席 会议 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 派)
+			  (NP-OBJ (QP (CD 五)
+				      (CLP (M 个)))
+				  (NP (NN 人)))))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 不))
+		  (VP (VA 够)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  五 个 人 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

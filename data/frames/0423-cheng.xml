@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 呈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity discussed"/>
+      <role argnum="1" argrole="trend, characteristics"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 青岛))
+			   (DEG 的))
+		      (NP (NN 资本)
+			  (NN 运营)
+			  (NN 形式)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 呈)
+		      (NP-OBJ (NP-APP (NN 兼并)
+				      (PU 、)
+				      (NN 联合)
+				      (PU 、)
+				      (NN 参股)
+				      (PU 、)
+				      (NN 控股)
+				      (PU 、)
+				      (NN 收购)
+				      (ETC 等))
+			      (NP (NN 多元化)
+				  (NN 态势)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  青岛 的 资本 运营 形式 	  
+	  </arg>
+	  <arg n="1">
+	  兼并 、 联合 、 参股 、 控股 、 收购 等 多元化 态势 	  
+	  </arg>
+	  <arg n="m">
+	  目前 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

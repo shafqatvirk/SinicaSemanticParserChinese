@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扬起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place arg0 sounds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (DP (DT 每))
+			  (NP (NT 周三)))
+		      (NP (NT 晚上)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 大隘社))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 会)
+		      (VP (VV 扬起)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 高亢)
+						  (PU 、)
+						  (VA 悠扬)))
+					  (DEC 的)))
+				  (NP (NN 客家)
+				      (NN 山歌))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 高亢 、 悠扬 的 客家 山歌 
+	  </arg>
+	  <arg n="1">
+	  大隘社 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  每 周三 晚上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

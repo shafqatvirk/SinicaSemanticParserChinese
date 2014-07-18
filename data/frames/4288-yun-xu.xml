@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 允许 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="allower"/>
+      <role argnum="1" argrole="allowed party"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 鼓励)
+			  (NP-OBJ (NN 中外))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 合资))
+				  (VP (VP (VV 建设)
+					  (NP-OBJ (-NONE- *RNR*-1)))
+				      (CC 并)
+				      (VP (VV 经营)
+					  (NP-OBJ-1 (ADJP (JJ 公用))
+						    (NP (NN 码头)
+							(NN 泊位))))))))
+		      (PU ，)
+		      (VP (VV 允许)
+			  (NP-OBJ (NN 外商))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 独资))
+				  (VP (VV 建设)
+				      (NP-OBJ (NP (NN 货主)
+						  (NN 码头))
+					      (CC 及)
+					      (NP (NP (PN 其))
+						  (ADJP (JJ 专用))
+						  (NP (NN 航道))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外商 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 独资 建设 货主 码头 及 其 专用 航道 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (VE 有)
+						  (NP-OBJ (ADJP (JJ 特殊))
+							  (NP (NN 困难))))
+					      (VP (VV 需要)
+						  (VP (VV 缓缴)
+						      (NP-OBJ (NN 税款))))))
+				      (DEC 的)))
+			      (NP (NN 企业))))
+		  (PU ，)
+		  (VP (ADVP (AD 绝))
+		      (ADVP (AD 不))
+		      (VP (VV 允许)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (PP-MNR (P 以)
+						  (NP (NN 困难)))
+					  (VP (VV 为)
+					      (NP-OBJ (NN 由))))
+				      (VP (ADVP (AD 长期))
+					  (VP (VV 拖欠)
+					      (NP-OBJ (NN 国家)
+						      (NN 税款)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  绝 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *pro* 以 困难 为 由 长期 拖欠 国家 税款 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

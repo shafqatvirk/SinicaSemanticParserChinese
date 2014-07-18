@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 专访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people visited/interviewed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 记者))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP (PN 这里)))
+		      (VP (VV 专访)
+			  (NP-OBJ (NP-APP (NP (NP-PN (NR 欧盟))
+					      (NP-PN (NR 欧洲)
+						     (NN 委员会))
+					      (ADJP (JJ 驻华))
+					      (NP (NN 代表团)))
+					  (NP (NN 团长)))
+				  (NP-PN (NR 魏根深)
+					 (NN 大使)))))
+		  (PU ，)
+		  (VP (VV 请)
+		      (NP-OBJ (PN 他))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 评价)
+			      (NP-OBJ (LCP-TMP (DP (DT 这)
+						   (QP (CD 一)
+						       (CLP (M 年))))
+					       (LC 来))
+				      (DNP (NP (PN 双方))
+					   (DEG 的))
+				      (NP (NN 合作)
+					  (NN 成果)))))))) 
+	  </parse>
+	  <arg n="0">
+	  记者 
+	  </arg>
+	  <arg n="1">
+	  欧盟 欧洲 委员会 驻华 代表团 团长 魏根深 大使 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

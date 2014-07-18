@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 捣 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (LCP-SBJ (NP (NN 腰))
+			       (LC 间))
+		      (VP (VV 挂)
+			  (AS 著)
+			  (NP-OBJ (NN 行动)
+				  (NN 电话))))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (NN 头))
+		      (VP (VV 戴)
+			  (NP-OBJ (NN 耳机))))
+	      (PU ，)
+	      (NP-SBJ (NN 玉兔))
+	      (VP (VP (ADVP (AD 一面))
+		      (VP (VV 捣)
+			  (NP-OBJ (NN 药))))
+		  (PU ，)
+		  (VP (ADVP (AD 一面))
+		      (PP (P 与)
+			  (NP (CP (WHNP-115 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-115))
+					  (VP (PP-PRD (ADVP (AD 远))
+						      (PP (P 在)
+							  (LCP (NP (NN 月宫))
+							       (LC 中))))))
+				      (DEC 的)))
+			      (NP (NN 嫦娥))))
+		      (VP (VV 通)
+			  (NP-OBJ (NN 电话)))))) 
+	  </parse>
+	  <arg n="0">
+	  玉兔 
+	  </arg>
+	  <arg n="1">
+	  药 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  头 戴 耳机 
+	  </arg>
+	  <arg n="m" f="adv">
+	  腰 间 挂 著 行动 电话 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

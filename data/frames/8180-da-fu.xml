@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 答覆 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="question/entity arg0 answers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (NP-APP (NP-PN (NN 陆委会))
+			      (NP (NN 副主委)))
+		      (NP-PN (NR 陈明通)))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 答覆)
+				       (IP-OBJ (NP-APP (NN 立委)
+						       (NN 质询))
+					       (IP-Q (NP-PN-SBJ (NR 李光耀))
+						     (VP (ADVP-WH (AD 是否))
+							 (PP-BNF (P 为)
+								 (NP (NN 大陆)))
+							 (VP (VV 传话)))))))
+			       (LC 时)))
+		  (PU ，)
+		  (ADVP (AD 也))
+		  (ADVP (AD 明确))
+		  (VP (VV 回答)
+		      (IP-OBJ (PU 「)
+			      (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 保证)
+				  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 没有))))
+			      (PU 」))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  立委 质询 李光耀 是否 为 大陆 传话 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 组队 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 五)
+			 (CLP (M 年)))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 也))
+				    (VP (VV 收藏有)
+					(NP-OBJ (QP (CD 部份))
+						(NP-PN (NR 广汉)
+						       (NN 玉器))))))
+			    (DEC 的)))
+		    (NP-PN (NP-PN (NR 华西)
+				  (NN 大学))
+			   (NP (NN 博物馆))))
+	    (VP (VP (ADVP (AD 正式))
+		    (VP (VV 组队)))
+		(VP (VV 开始)
+		    (VP (PP-LOC (P 在)
+				(NP (NN 出土)
+				    (NN 地点)))
+			(VP (VP (VV 调查))
+			    (CC 与)
+			    (VP (VV 挖掘)))))
+		(PU ，)
+		(VP (PP-ADV (P 除了)
+			    (NP (NN 玉器)))
+		    (PU ，)
+		    (ADVP (AD 又))
+		    (VP (VV 挖到)
+			(NP-OBJ (QP (CD 不少))
+				(NP (NN 陶器))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 也 收藏有 部份 广汉 玉器 的 华西 大学 博物馆 
+	</arg>
+	<arg n="m" f="adv">
+	正式 
+	</arg>
+	<arg n="m" f="tmp">
+	五 年 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 使 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 良好)))
+			      (DEC 的)))
+		      (NP (NN 投资)
+			  (NN 环境)))
+	      (VP (VV 使)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 外商))
+				      (VP (PP-LOC (P 在)
+						  (NP-PN (NR 沪)))
+					  (VP (VV 投资))))
+				  (DEC 的))
+			  (NP (NN 成功率)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 达到)
+			  (QP-OBJ (CD 百分之八十)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(投资环境) 良好 的 投资 环境 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外商 在 沪 投资 的 成功率 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 达到 百分之八十 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

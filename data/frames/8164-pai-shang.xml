@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拍上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 shoots"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC (DNP (NP-PN (NR 侯孝贤))
+			   (DEG 的))
+		      (IP-TTL (PU 《)
+			      (NP-PN-SBJ (NR 南国))
+			      (VP (VV 再见))
+			      (PU ，)
+			      (NP-PN-IJ (NR 南国))
+			      (PU 》)))
+	      (NP-SBJ (NP (DP (DT 每)
+			      (QP (CD 一)
+				  (CLP (M 场))))
+			  (NP (NN 戏)))
+		      (PU 、)
+		      (NP (DP (DT 每)
+			      (QP (CD 一)
+				  (CLP (M 个))))
+			  (NP (NN 事件)))
+		      (PU 、)
+		      (NP (DP (DT 每)
+			      (QP (CD 一)
+				  (CLP (M 个))))
+			  (NP (NN 镜头))))
+	      (PU ，)
+	      (VP (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (VP (DVP (VP (VA 静静))
+				   (DEV 地))
+			      (VP (VV 拍上)
+				  (QP-OBJ (ADJP (JJ 好))
+					  (QP (CD 一)
+					      (CLP (M 段))))))
+			  (PU ，)
+			  (VP (ADVP (AD 才))
+			      (VP (VV 开始)
+				  (VP (VV 进入)
+				      (NP-OBJ (NN 戏剧)
+					      (NN 内容))))))))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  侯孝贤 的 《 南国 再见 ， 南国 》 
+	  </arg>
+	  <arg n="1" f="pse">
+	  每 一 场 戏 、 每 一 个 事件 、 每 一 个 镜头 
+	  </arg>
+	  <arg n="1" f="qty">
+	  好 一 段 
+	  </arg>
+	  <arg n="m" f="adv">
+	  静静 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

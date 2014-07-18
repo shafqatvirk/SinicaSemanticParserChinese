@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进阶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="level arg0 moves arg1 up to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 中共))
+			       (DEG 的))
+			  (NP (NN 外交)
+			      (NN 手腕)))
+		  (VP (ADVP (AD 已))
+		      (VP (VRD (VV 进阶)
+			       (VV 到))
+			  (NP-OBJ (DNP (NP (NN 商战))
+				       (DEG 的))
+				  (NP (NN 部分)))))) 
+	  </parse>
+	  <arg n="1">
+	  中共 的 外交 手腕 
+	  </arg>
+	  <arg n="2">
+	  商战 的 部分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 检举 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 reports to the authority"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP (NP-PN (NR 宋))
+			(NP (NN 家)))
+		    (ADJP (JJ 相关))
+		    (NP (NN 帐户)))
+	    (PU ，)
+	    (PP-ADV (P 除)
+		    (LCP (QP (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (NP-APP (NN 立委))
+							 (NP-PN (NR 杨吉雄)))
+						 (VP (VV 检举)
+						     (NP-OBJ (-NONE- *T*-2))))
+					     (DEC 的)))
+				     (QP (CD 两)
+					 (CLP (M 笔)))
+				     (NP (NN 资金)))
+			     (QP (QP (CD 一亿四千万)
+				     (CLP (-NONE- *RNR*-3)))
+				 (CC 与)
+				 (QP (CD 四亿七千万)
+				     (CLP-3 (M 元)))))
+			 (LC 之外)))
+	    (PU ，)
+	    (NP-SBJ (NP (DP (DT 其馀))
+			(ADJP (JJ 秘密))
+			(NP (NN 帐户)))
+		    (CP (WHNP-4 (-NONE- *OP*))
+			(IP (NP-TPC (-NONE- *T*-4))
+			    (NP-SBJ (NN 金额))
+			    (VP (ADVP (AD 较))
+				(VP (VA 大)))))
+		    (NP (NN 者)))
+	    (PU ，)
+	    (VP (ADVP (AD 高))
+		(VP (VV 达)
+		    (QP-OBJ (CD 三亿多))))) 
+	</parse>
+	<arg n="0">
+	立委 杨吉雄 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 不))
+			(VP (VV 去)
+			    (VP (VV 查)))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VV 会)
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ (NN 民众))
+				(VP (VV 来)
+				    (VP (VV 检举)))))))) 
+	</parse>
+	<arg n="0">
+	民众 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

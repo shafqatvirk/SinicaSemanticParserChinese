@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 报收于 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="index"/>
+    <role argnum="1" argrole="closing at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP (NN 美元))
+              (PP (P 对)
+                  (NP (NN 日元)))
+              (NP (NN 汇率)))
+      (VP (VV 报收于)
+          (QP-OBJ (CD １)
+                  (CC 比)
+                  (CD １１５．５３)))))
+	</parse>
+	<arg n="0"> 美元 对 日元 汇率 </arg>
+	<V/>
+	<arg n="1"> １ 比 １１５．５３ </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 领先于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is in the lead before"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 二百多)
+					  (CLP (M 项)))
+				      (ADJP (JJ 重大))
+				      (NP (NN 成果)))
+			      (VP (VV 获)
+				  (NP-OBJ (NP (NN 国家)
+					      (PU 、)
+					      (NN 部)
+					      (PU 、)
+					      (NN 省级))
+					  (NP (NN 奖励))))))
+		  (PU ，)
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 二十多)
+					  (CLP (M 项)))
+				      (NP (NN 稀土)
+					  (NN 选冶)
+					  (NN 流程)
+					  (CC 和)
+					  (NN 工艺)
+					  (NN 技术)))
+			      (VP (VV 领先于)
+				  (NP-OBJ (NN 国际)
+					  (NN 水平))))))) 
+	  </parse>
+	  <arg n="0">
+	  二十多 项 稀土 选冶 流程 和 工艺 技术 
+	  </arg>
+	  <arg n="1">
+	  国际 水平 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

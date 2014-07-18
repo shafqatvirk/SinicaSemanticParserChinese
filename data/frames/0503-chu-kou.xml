@@ -1,0 +1,302 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出口 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="exporter"/>
+      <role argnum="1" argrole="commodity"/>
+      <role argnum="2" argrole="exporting to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 了解)))
+	      (PU ，)
+	      (PP-TMP (P 自)
+		      (LCP (IP (LCP-TMP (NP (NT 一九九二年))
+					(LC 底))
+			       (NP-PN-SBJ (NR 武汉)
+					  (NR 长飞)
+					  (NN 光纤)
+					  (NN 光缆)
+					  (NN 公司))
+			       (VP (PP (P 与)
+				       (NP-PN (NR 美国)))
+				   (VP (VV 签订)
+				       (NP-OBJ (NP-PN (NR 中国))
+					       (QP (OD 第一)
+						   (CLP (M 份)))
+					       (NP (NN 光纤)
+						   (NN 产品))
+					       (NP (NN 外销)
+						   (NN 合同))))))
+			   (LC 以来)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 累计))
+		  (PP-DIR (P 向)
+			  (NP (NN 国外)))
+		  (VP (VV 出口)
+		      (NP-OBJ (NN 光纤))
+		      (QP-EXT (CD 四十多万)
+			      (CLP (M 公里)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <arg n="1">
+	  光纤 	  
+	  </arg>
+	  <arg n="2">
+	  向 国外 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 了解 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 一九九二年 底 武汉 长飞 光纤 光缆 公司 与 美国 签订 中国 第一 份 光纤 产品 外销 合同 以来 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  累计 	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  四十多万 公里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 并))
+		  (PP-DIR (P 向)
+			  (NP (NP (NN 世界))
+			      (QP (CD 五十多)
+				  (CLP (M 个)))
+			      (NP (NN 国家)
+				  (CC 和)
+				  (NN 地区))))
+		  (VP (VV 出口)
+		      (NP-OBJ (NN 技术))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  技术 	  
+	  </arg>
+	  <arg n="2">
+	  向 世界 五十多 个 国家 和 地区 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 通用)
+			     (NN 汽车)
+			     (NN 公司))
+		      (DNP (PP (P 在)
+			       (NP-PN (NR 上海)))
+			   (DEG 的))
+		      (NP (NN 合作)
+			  (NN 项目)))
+	      (VP (PP-BNF (P 为)
+			  (IP (NP-SBJ (DP (DT 该))
+				      (NP (NN 公司)))
+			      (VP (PP-DIR (P 向)
+					  (NP-PN (NR 中国)))
+				  (VP (VV 出口)))))
+		  (VP (VV 提供)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 极))
+					      (VP (VA 好))))
+				      (DEC 的)))
+			      (NP (NN 机会)))))) 
+	  </parse>
+	  <arg n="0">
+	  该 公司 	  
+	  </arg>
+	  <arg n="2">
+	  向 中国 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 加工)))
+				(LC 后))
+			   (DEG 的))
+		      (NP (NN 精米)))
+	      (QP-SBJ (CD 百分之七十))
+	      (VP (VV 出口))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  *PRO* 加工 后 的 精米 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  百分之七十 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP (ADJP (JJ 电解))
+				  (NP (NN 镍)))
+			      (PU 、)
+			      (NP (NN 硫酸镍))
+			      (PU 、)
+			      (NP (NN 铂铑)
+				  (NN 制品))
+			      (PU 、)
+			      (NP (NP (ADJP (JJ 不锈))
+				      (NP (NN 钢)))
+				  (NP (NN 制品)))
+			      (ETC 等))
+		      (QP (CD 十多)
+			  (CLP (M 种)))
+		      (NP (NN 产品)))
+	      (VP (VV 出口)
+		  (NP-OBJ (NP-PN-APP (NR 美)
+				     (PU 、)
+				     (NR 日)
+				     (PU 、)
+				     (NR 英)
+				     (PU 、)
+				     (NR 法)
+				     (PU 、)
+				     (NR 伊朗)
+				     (PU 、)
+				     (NR 阿联酋)
+				     (PU 、)
+				     (NR 沙特阿拉伯)
+				     (ETC 等))
+			  (NP (NN 国))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  电解 镍 、 硫酸镍 、 铂铑 制品 、 不锈 钢 制品 等 十多 种 产品 	  
+	  </arg>
+	  <arg n="2">
+	  美 、 日 、 英 、 法 、 伊朗 、 阿联酋 、 沙特阿拉伯 等 国 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 草案))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 提出)
+		      (IP-OBJ (NP-SBJ (NN 国家))
+			      (VP (VV 要)
+				  (VP (VP (VV 禁止)
+					  (IP-OBJ (-NONE- *RNR*-1)))
+				      (PU 、)
+				      (VP (VV 限制)
+					  (IP-OBJ-1 (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 出口)
+							(NP-OBJ (ADJP (JJ 珍贵))
+								(NP (NN 木材)))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  珍贵 木材 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (NP (ADJP (JJ 不完全))
+		      (NP (NN 统计))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (LCP-TMP (QP (CD 三)
+			       (CLP (M 年)))
+			   (LC 来))
+		  (VP (VV 出口)
+		      (NP-OBJ (NP-APP (NP (NN 蒽醌法)
+					  (NN 双氧水))
+				      (PU 、)
+				      (NP (ADJP (JJ 变压))
+					  (NP (NN 吸附)))
+				      (ETC 等))
+			      (NP (NN 技术)))
+		      (QP-EXT (CD 二十余)
+			      (CLP (M 项)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <arg n="1">
+	  蒽醌法 双氧水 、 变压 吸附 等 技术 	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  二十余 项 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  据 不完全 统计 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  三 年 来 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 算命 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity whose fortune arg0 tells"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 像是))
+		      (NP (DP (DT 那)
+			      (CLP (M 个)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 戴)
+					  (AS 著)
+					  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VE 有)
+							      (NP-OBJ (NN 垂带)))))
+						  (NP (NN 帽子)))))
+				  (DEC 的)))
+			  (ADJP (JJ 老))
+			  (NP (NN 先生))))
+	      (PU ，)
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 要))
+			      (ADVP (AD 不))
+			      (VP (VC 是)
+				  (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-3))
+						      (VP (VV 卖)
+							  (NP-OBJ (NN 药))))
+						  (DEC 的)))))))
+		  (ADVP (AD 就))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VV 算命)))
+				      (DEC 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-4 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

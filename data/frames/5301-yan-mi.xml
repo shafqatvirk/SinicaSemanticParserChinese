@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 严密 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP (NN 户籍))
+				  (DEG 的))
+			     (NP (NN 设立)
+				 (CC 与)
+				 (NN 管理)))
+			 (LC 上)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 汉代))
+	    (VP (ADVP (AD 也))
+		(VP (VE 有)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 相当))
+					    (VP (VA 严密))))
+				    (DEC 的)))
+			    (NP (NN 制度)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	相当 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 逼使 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 forces"/>
+    <role argnum="2" argrole="thing arg1 is forced to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 逼使)
+		(NP-PN-OBJ (NR 台湾))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-LOC (P 在)
+				(LCP (IP (NP-SBJ (-NONE- *PRO*))
+					 (VP (VP (VE 无)
+						 (NP-OBJ (NN 路)))
+					     (VP (VV 可)
+						 (VP (VV 逃)))))
+				     (LC 之下)))
+			(PU ，)
+			(ADVP (AD 勇敢))
+			(VP (VV 面对)
+			    (NP-OBJ (DNP (NP (NN 自由化)
+					     (PU 、)
+					     (NN 国际化))
+					 (DEG 的))
+				    (NP (NN 挑战)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<arg n="2">
+	*PRO* 在 *PRO* 无 路 可 逃 之下 ， 勇敢 面对 自由化 、 国际化 的 挑战 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

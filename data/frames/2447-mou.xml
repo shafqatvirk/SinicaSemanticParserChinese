@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing sought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 东盟))
+	      (VP (VP (PP (P 同)
+			  (NP-PN (NR 中)
+				 (NR 日)
+				 (NR 韩)))
+		      (VP (VV 加强)
+			  (NP-OBJ (NN 合作))))
+		  (PU ，)
+		  (VP (ADVP (AD 共))
+		      (VP (VV 谋)
+			  (NP-OBJ (NN 发展))))
+		  (PU ，)
+		  (VP (ADVP (AD 将))
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VV 举足轻重)))
+					  (DEC 的)))
+				  (NP (NN 力量))))))) 
+	  </parse>
+	  <arg n="0">
+	  东盟 
+	  </arg>
+	  <arg n="1">
+	  发展 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

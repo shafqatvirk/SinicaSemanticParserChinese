@@ -1,0 +1,123 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 著手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 starts working on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 丰富)))
+			    (DEC 的)))
+		    (NP (NN 城市)
+			(NN 生活)))
+	    (VP (VV 吸引)
+		(AS 了)
+		(NP-OBJ (QP (CD 许多))
+			(NP (NN 画家)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 著手)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 描绘)
+				    (NP-OBJ (NN 市井)
+					    (NN 生活)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*PRO* 描绘 市井 生活 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-MNR (P 用)
+				(NP (NN 科技)
+				    (NN 方式)))
+			(VP (VV 防范)
+			    (NP-OBJ (ADJP (JJ 不当))
+				    (NP (NN 资讯)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-MNR (P 透过)
+					    (NP (NN 网路)))
+				    (VP (VV 直达)
+					(NP-OBJ (NN 家庭)
+						(CC 或)
+						(NN 学校))))))))
+	    (PU ，)
+	    (VP (VV 可)
+		(VP (PP-DIR (P 从)
+			    (NP (QP (CD 两))
+				(NP (NN 方面))))
+		    (VP (VV 著手))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 用 科技 方式 防范 不当 资讯 *PRO* 透过 网路 直达 家庭 或 学校 
+	</arg>
+	<arg n="m" f="dir">
+	从 两 方面 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 谢从宾))
+	    (VP (VP (VV 选择)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-DIR (P 从)
+					(NP (PU 「)
+					    (NN 预防)
+					    (PU 」)))
+				(VP (VV 著手)))))
+		(PU ，)
+		(VP (VP (VV 开始)
+			(VP (PP-BNF (P 为)
+				    (NP (NN 小学生)))
+			    (VP (VV 做)
+				(NP-OBJ (NP (NN 肾脏)
+					    (NN 疾病))
+					(NP (NN 筛检))))))
+		    (PU ，)
+		    (VP (MSP 以)
+			(VP (VV 期)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (ADVP (AD 及早))
+					    (VP (VV 发现)))
+					(PU 、)
+					(VP (ADVP (AD 及早))
+					    (VP (VV 治疗)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="dir">
+	从 「 预防 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

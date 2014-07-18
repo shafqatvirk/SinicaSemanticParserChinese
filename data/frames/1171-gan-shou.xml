@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感受 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="thing experienced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 初))
+			  (VP (VV 到)
+			      (NP-OBJ (NP-APP (NP-PN (NR 欧洲))
+					      (ADJP (JJ 古))
+					      (NP (NN 国)))
+				      (NP-PN (NR 意大利))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 本))
+		  (VP (VV 想)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 赶)
+				      (PP-TMP (P 在)
+					      (NP (NN 欧元)
+						  (NN 启动)
+						  (NN 前夕))))
+				  (PU ，)
+				  (VP (VV 感受)
+				      (ADVP (AD 一下))
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VA 浓郁)
+							      (CC 而)
+							      (VA 热烈)))
+						      (DEC 的)))
+					      (NP (NN 欧元)
+						  (NN 气息))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 浓郁 而 热烈 的 欧元 气息 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

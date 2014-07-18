@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 生气勃勃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DP (DT 这)
+				   (CLP (M 个)))
+			       (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (NP-TMP (NT 当时))
+					       (NP-LOC (NN 世界))
+					       (ADVP (AD 最))
+					       (VP (VA 大))))
+				       (DEC 的)))
+			       (NP (NN 都市)))
+			   (LC 里)))
+	      (PU ，)
+	      (LCP-SBJ (NP (NN 市街))
+		       (LC 上))
+	      (VP (CC 不但)
+		  (VP (VCD (VA 热闹)
+			   (VV 拥挤)))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (VV 显得)
+		      (VP (VV 生气勃勃))))) 
+	  </parse>
+	  <arg n="0">
+	  市街 上 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这 个 *OP* *T*-1 当时 世界 最 大 的 都市 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

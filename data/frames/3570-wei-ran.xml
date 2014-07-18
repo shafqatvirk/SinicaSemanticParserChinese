@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 为然 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="things of arg0 which are true of some statement"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 其中))
+	      (PP-LGS (P 以)
+		      (NP (NP-APP (NP (NN 雇员))
+				  (NP (NN 代表权)
+				      (PU 、)
+				      (NN 谘询权)
+				      (CC 和)
+				      (NN 集体)
+				      (NN 谈判权))
+				  (ETC 等))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-2))
+				      (NP-SBJ (NN 影响))
+				      (VP (VA 深远)))
+				  (DEC 的)))
+			  (NP (NN 事宜))))
+	      (VP (VV 为然))) 
+	  </parse>
+	  <arg n="0">
+	  其中 
+	  </arg>
+	  <arg n="1">
+	  以 雇员 代表权 、 谘询权 和 集体 谈判权 等 *OP* *T*-2 影响 深远 的 事宜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

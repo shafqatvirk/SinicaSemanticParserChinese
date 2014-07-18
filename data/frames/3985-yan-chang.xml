@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 延长 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing extended"/>
+      <role argnum="2" argrole="duration before extension"/>
+      <role argnum="3" argrole="duration after extension"/>
+      <role argnum="4" argrole="range of extension"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 延长)
+			  (NP-OBJ (IP-APP (NP-SBJ (NN 外商)
+						  (NN 投资)
+						  (NN 企业))
+					  (VP (ADVP (AD 免税))
+					      (VP (VV 进口)
+						  (NP-OBJ (NN 设备)
+							  (CC 和)
+							  (NN 原材料)))))
+				  (NP (NN 宽限期)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <arg n="1">
+	  外商 投资 企业 免税 进口 设备 和 原材料 宽限期 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 柬埔寨))
+		      (QP (CD 两)
+			  (CLP (M 位)))
+		      (NP (NN 首相)))
+	      (VP (VV 要求)
+		  (NP-OBJ (NP-PN (NR 联合国))
+			  (NP (NN 秘书长)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+						       (CP (IP (NP-SBJ (PN 其))
+							       (VP (VV 派驻)
+								   (NP-OBJ (-NONE- *T*-1))
+								   (NP-PN-OBJ (NR 柬埔寨))))
+							   (DEC 的)))
+						   (NP (NN 代表)))
+					       (DEG 的))
+					  (ADJP (JJ 留驻))
+					  (NP (NN 时间)))
+				  (VP (VRD (VV 延长)
+					   (VV 为))
+				      (UCP-OBJ (NP (QP (CD ６)
+						       (CLP (M 个)))
+						   (NP (NN 月)))
+					       (CC 或)
+					       (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (ADVP (AD 更))
+						       (VP (VA 长)
+							   (QP-EXT (CD 一些)))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* 其 派驻 *T*-1 柬埔寨 的 代表 的 留驻 时间 	  
+	  </arg>
+	  <arg n="3">
+	  ６ 个 月 或 *PRO* 更 长 一些 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg4"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 自)
+		  (LCP (IP (NP-TMP (NT 今年))
+			   (NP-SBJ (NP-PN (NR 中共))
+				   (QP (OD 十五)
+				       (CLP (M 届)))
+				   (QP (OD 三))
+				   (NP (NN 中)
+				       (NN 全会)))
+			   (VP (VV 决定)
+			       (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				       (VP (BA 将)
+					   (IP-OBJ (NP-SBJ (NN 土地)
+							   (NN 承包期))
+						   (VP (ADVP (AD 再))
+						       (VP (VV 延长)
+							   (QP-EXT (CD 三十)
+								   (CLP (M 年))))))))))
+		       (LC 后))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  土地 承包期 	  
+	  </arg>
+	  <arg n="4">
+	  三十 年 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 创办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="establisher"/>
+      <role argnum="1" argrole="enterprise"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (QP (CD 一)
+			      (CLP (M 批)))
+			  (NP (NN 国内外)
+			      (NN 客商)))
+		      (NP (ADVP (AD 特别是))
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 来自)
+					      (NP-OBJ (ADJP (JJ 大))
+						      (NP (NN 西南)))))
+				      (DEC 的)))
+			      (NP (NN 有识之士)))))
+	      (VP (VP (ADVP (AD 纷纷))
+		      (VP (VP (VV 来)
+			      (NP-OBJ (PN 此)))
+			  (VP (VV 落户))))
+		  (PU ，)
+		  (VP (VV 创办)
+		      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VP (ADVP (AD 大))
+						  (VP (VV 进)))
+					      (VP (ADVP (AD 大))
+						  (VP (VV 出)))))
+				      (DEC 的)))
+			      (NP (NN 加工业)))))) 
+	  </parse>
+	  <arg n="0">
+	  一 批 国内外 客商 特别是 *OP* *T*-1 来自 大 西南 的 有识之士 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-4 大 进 大 出 的 加工业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

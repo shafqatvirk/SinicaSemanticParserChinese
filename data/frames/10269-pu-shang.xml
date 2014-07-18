@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 铺上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 paves/covers"/>
+    <role argnum="2" argrole="thing arg0 paves/covers arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 堤面))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 铺上)
+				 (NP-OBJ (NP (ADJP (JJ 绿))
+					     (NP (NN 草皮)))
+					 (PU 、)
+					 (NP (NN 花台)))))
+			 (LC 後))
+		(PU ，)
+		(VP (VV 成为)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 绵延)
+					    (QP-OBJ (CD 一千二百)
+						    (CLP (M 公尺)))))
+				    (DEC 的)))
+			    (ADJP (JJ 绿色))
+			    (NP (NN 长城)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	绿 草皮 、 花台 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

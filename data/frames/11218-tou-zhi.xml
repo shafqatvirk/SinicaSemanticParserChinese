@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 投掷 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 throws"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-3 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-3))
+			(VP (VV 记取)
+			    (NP-OBJ (DNP (IP (NP-PN-SBJ (NR 美国))
+					     (VP (VV 投掷)
+						 (NP-OBJ (NN 原子弹))))
+					 (DEG 之))
+				    (NP (NN 害)))))
+		    (DEC 的)))
+	    (NP-PN (NR 日本)
+		   (NR 广岛)
+		   (NN 和平)
+		   (NN 纪念)
+		   (NN 公园))) 
+	</parse>
+	<arg n="0">
+	美国 
+	</arg>
+	<arg n="1">
+	原子弹 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

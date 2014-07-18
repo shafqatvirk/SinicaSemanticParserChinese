@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 会见 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="meeter"/>
+      <role argnum="1" argrole="person met"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (CP (WHPP-1 (-NONE- *OP*))
+			  (IP (NP-PN-SBJ (NR 阿齐兹))
+			      (VP (PP-TMP (-NONE- *T*-1))
+				  (VP (VV 在)
+				      (NP-PN-OBJ (NR 莫斯科))))))
+		      (NP (NN 期间)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 戈尔巴乔夫)
+			 (NN 总统))
+	      (VP (VV 可能)
+		  (VP (VV 会见)
+		      (NP-OBJ (PN 他))))) 
+	  </parse>
+	  <arg n="0">
+	  戈尔巴乔夫 总统 
+	  </arg>
+	  <arg n="1">
+	  他 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *OP* 阿齐兹 *T*-1 在 莫斯科 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (NP-TMP (NT １９９１年)
+			  (CC 和)
+			  (NT １９９２年))
+		  (PP (P 同)
+		      (NP-PN (NR 李鹏)
+			     (NN 总理)))
+		  (QP-ADV (CD 两)
+			  (CLP (M 次)))
+		  (VP (VV 会见))))
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  同 李鹏 总理 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９９１年 和 １９９２年 
+	  </arg>
+	  <arg n="m" f="frq">
+	  两 次 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

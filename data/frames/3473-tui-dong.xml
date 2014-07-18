@@ -1,0 +1,159 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity pushed forward"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 并))
+		  (VP (VV 推动)
+		      (NP-OBJ (NP-PN (NR 上海))
+			      (NP (QP (OD 第二))
+				  (NP (NN 产业)))
+			      (NP (NN 增加值)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 年均))
+			      (VP (VV 增长)
+				  (QP-EXT (CD 百分之九)
+					  (CC 至)
+					  (CD 百分之十)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  上海 第二 产业 增加值 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 年均 增长 百分之九 至 百分之十 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 人民)))
+	      (VP (VV 愿)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (PP (P 与)
+				      (NP (NP (NP (NN 世界))
+					      (DP (DT 各))
+					      (NP (NN 国)))
+					  (NP (NN 人民))))
+				  (VP (VV 一道)))
+			      (PU ，)
+			      (VP (PP-BNF (P 为)
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 积极))
+						  (VP (VV 推动)
+						      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							      (VP (VV 解决)
+								  (NP-OBJ (DP (DT 这些))
+									  (NP (NN 问题)))))))))
+				  (VP (MSP 而)
+				      (VP (ADVP (AD 不懈))
+					  (VP (VV 奋斗))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 解决 这些 问题 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing pushed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 扩大)
+			  (NP-OBJ (DNP (NP (NN 港股))
+				       (DEG 的))
+				  (NP (NN 规模))))
+		      (PU 、)
+		      (VP (VV 改善)
+			  (NP-OBJ (NN 股市)
+				  (NN 结构)))
+		      (PU ，)
+		      (VP (VV 推动)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 香港))
+					   (NP (NN 债券)
+					       (NN 市场)))
+				       (DEG 的))
+				  (NP (NN 发展))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 	  
+	  </arg>
+	  <arg n="1">
+	  香港 债券 市场 的 发展 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 体育)
+		      (CC 和)
+		      (NN 经济))
+	      (VP (VV 可以)
+		  (VP (VV 起到)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 相互))
+					      (VP (VV 推动))))
+				      (DEC 的))
+			      (NP (NN 作用)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  相互 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

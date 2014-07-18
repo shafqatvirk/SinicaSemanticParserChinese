@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 想尽 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 tries to come up with exhaustively"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 故事))
+	      (VP (VV 叙述)
+		  (IP-OBJ (NP-SBJ (QP (CD 一)
+				      (CLP (M 对)))
+				  (NP (NN 大陆)
+				      (NN 夫妇)))
+			  (VP (VP (VV 想尽)
+				  (NP-OBJ (NN 办法)))
+			      (VP (VV 出国)))))) 
+	  </parse>
+	  <arg n="0">
+	  一 对 大陆 夫妇 
+	  </arg>
+	  <arg n="1">
+	  办法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

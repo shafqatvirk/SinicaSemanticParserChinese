@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 就学 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 goes to school"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (NP-PN (NR 台湾))
+			       (NP (NN 学生)))
+		       (VP (VP (VV 来)
+			       (NP-OBJ (NN 祖国)
+				       (NN 大陆)))
+			   (VP (VV 就学))))
+		   (LC 后)) 
+	  </parse>
+	  <arg n="0">
+	  台湾 学生 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

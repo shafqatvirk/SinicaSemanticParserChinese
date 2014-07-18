@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拉快 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 makes faster"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-Q-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP-WH (AD 如何))
+			  (VP (VP (VV 扫除)
+				  (NP-OBJ (LCP (NP (NN 路))
+					       (LC 上))
+					  (NP (NN 障碍))))
+			      (PU ，)
+			      (VP (VV 让)
+				  (NP-OBJ (DNP (NP (NN 进展))
+					       (DEG 的))
+					  (NP (NN 脚步)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 尽量))
+					  (VP (VV 拉大)
+					      (PU 、)
+					      (VV 拉快))))))))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (DNP (NP-PN (NR 台湾))
+			     (DEG 的))
+			(NP (NN 当务之急))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	尽量 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

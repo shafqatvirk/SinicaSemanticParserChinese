@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 烧有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing that is burned onto arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一)
+			  (CLP (M 张)))
+		      (DNP (NP (NN 名片)
+			       (NN 大小))
+			   (DEG 的))
+		      (NP (NN CPU)))
+	      (PU ，)
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 说穿)
+			      (AS 了)))
+		  (ADVP (AD 就))
+		  (VP (VC 是)
+		      (NP-PRD (QP (CD 一)
+				  (CLP (M 块)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 烧有)
+					      (NP-OBJ (ADJP (JJ 复杂))
+						      (NP (NN 电路图)))))
+				      (DEC 的)))
+			      (NP (NN 矽)
+				  (NN 晶板)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  复杂 电路图 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

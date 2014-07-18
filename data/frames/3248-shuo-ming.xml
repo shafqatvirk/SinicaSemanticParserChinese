@@ -1,0 +1,168 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 说明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing made clear"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 惩教署))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (VA 新)))
+						   (DEC 的)))
+					   (NP (NN 修订)))
+				   (VP (VV 施行)))
+			       (LC 之前)))
+		  (ADVP (AD 已))
+		  (VP (VV 说明)
+		      (IP-OBJ (NP-SBJ (ADJP (JJ 有关))
+				      (NP (NN 信件)))
+			      (PU ，)
+			      (VP (VP (LST (PU （)
+					   (QP (CD 一))
+					   (PU ）))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 得)
+					      (VP (VV 予以)
+						  (VP-OBJ (NN 开启)
+							  (CC 或)
+							  (NN 搜查))))))
+				  (PU ，)
+				  (PRN (IP (ADVP (AD 但))
+					   (CP-CND (ADVP (CS 如))
+						   (IP (IP (NP-SBJ (DP (DT 该))
+								   (NP (NN 信件)))
+							   (VP (VC 是)
+							       (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+									   (CP (IP (NP-SBJ (-NONE- *pro*))
+										   (VP (PP-LOC (P 在)
+											       (NP (NP (DP (DT 该))
+												       (NP (NN 囚犯)))
+												   (NP (NN 面前))))
+										       (VP (VP (VV 开启)
+											       (NP-OBJ (-NONE- *RNR*-3)))
+											   (CC 和)
+											   (VP (VV 搜查)
+											       (NP-OBJ-3 (-NONE- *T*-2))))))
+									       (DEC 的))))))
+						       (PU ，)
+						       (CC 或)
+						       (IP (NP-SBJ (DP (DT 该))
+								   (NP (NN 囚犯)))
+							   (VP (VV 表示)
+							       (IP-OBJ (NP-SBJ (-NONE- *pro*))
+								       (VP (ADVP (AD 不))
+									   (VP (VV 欲)
+									       (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+										       (VP (PP-TMP (P 在)
+												   (LCP (IP (NP-SBJ (DP (DT 该))
+														    (NP (NN 信件)))
+													    (VP (VP (VV 开启))
+														(CC 和)
+														(VP (VV 搜查))))
+													(LC 时)))
+											   (VP (VV 在场)))))))))))
+					   (PU ，)
+					   (NP-SBJ (-NONE- *pro*))
+					   (VP (ADVP (AD 则))
+					       (VP (VV 属)
+						   (NP-OBJ (NN 例外))))))
+				  (PU ；)
+				  (CC 及)
+				  (VP (LST (PU （)
+					   (QP (CD 二))
+					   (PU ）))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 得)
+					      (VP (VV 予以)
+						  (NP-OBJ (NN 阅读))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  惩教署 
+	  </arg>
+	  <arg n="1">
+	  有关 信件 ， （ 一 ） 不 得 予以 开启 或 搜查 ， 但 如 该 信件 是 *OP* *pro* 在 该 囚犯 面前 开启 *RNR*-3 和 搜查 *T*-2 的 ， 或 该 囚犯 表示 *pro* 不 欲 *PRO* 在 该 信件 开启 和 搜查 时 在场 ， *pro* 则 属 例外 ； 及 （ 二 ） 不 得 予以 阅读 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* *T*-1 新 的 修订 施行 之前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 又))
+		  (VP (VP (VV 列举)
+			  (NP-OBJ (QP (CD 一些))
+				  (ADJP (JJ 重要))
+				  (NP (NN 数据))))
+		      (PU ，)
+		      (VP-PRP (VV 说明)
+			      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (NP-PN (NR 香港))
+							  (NP (NN 经济)))
+						  (VP (PP (-NONE- *T*-1))
+						      (VP (VV 依赖)
+							  (NP-OBJ (NN 服务业)))))
+					      (DEC 的)))
+				      (NP (NN 程度))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  *OP* 香港 经济 *T*-1 依赖 服务业 的 程度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 shows"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 说明)
+		  (IP-OBJ (NP-SBJ (NN 水平))
+			  (VP (ADVP (AD 在))
+			      (VP (VV 下降)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  水平 在 下降 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

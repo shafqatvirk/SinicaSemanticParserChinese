@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 眼见 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 sees"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 眼见)
+			(IP-OBJ (NP-SBJ (QP (CD 五千)
+					    (CLP (M 年)))
+					(NP (NN 文化)))
+				(VP (VV 遭受)
+				    (NP-OBJ (NN 浩劫))))))
+	    (PU ，)
+	    (IP-SBJ (PU 「)
+		    (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 复兴)
+			    (NP-OBJ (NP-PN (NR 中华))
+				    (NP (NN 文化))))
+			(PU 、)
+			(VP (VV 承续)
+			    (NP-OBJ (NN 道统))))
+		    (PU 」))
+	    (VP (VV 成)
+		(AS 了)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (NP-PN-APP (NR 台湾))
+					    (NP (DP (DT 这))
+						(NP (NN 蕞尔小岛))))
+				    (VP (ADVP (AD 不))
+					(VP (VV 可)
+					    (VP (VV 承受)
+						(NP-OBJ (-NONE- *T*-1))))))
+				(DEC 的)))
+			(NP (NN 重))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	五千 年 文化 遭受 浩劫 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

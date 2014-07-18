@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing spanned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美国)
+			 (NN 国会))
+	      (VP (NP-TMP (NT 最近))
+		  (VP (VP (VV 通过)
+			  (AS 了)
+			  (NP (ADJP (JJ 州际))
+			      (NP (NN 银行法))))
+		      (PU ，)
+		      (VP (VV 允许)
+			  (NP-OBJ (NN 地方)
+				  (NN 银行))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 跨)
+				      (NP-OBJ (NN 州)))
+				  (VP (VV 经营)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  州 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 编钟))
+	      (NP-SBJ (NN 音域))
+	      (VP (VP (VA 宽广))
+		  (PU ，)
+		  (VP (VV 跨)
+		      (NP-OBJ (QP (CD 六)
+				  (CLP (M 个)))
+			      (QP (CD 八)
+				  (CLP (M 度)))
+			      (NP (NN 音程)))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  音域 
+	  </arg>
+	  <arg n="0" f="psr">
+	  编钟 
+	  </arg>
+	  <arg n="1">
+	  六 个 八 度 音程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing crossed over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

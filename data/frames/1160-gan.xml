@@ -1,0 +1,157 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赶 </id>
+    <frameset id="f1" edef="catch up">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="catching up with"/>
+      <role argnum="2" argrole="amount arg0 rushes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 哈尔滨))
+			  (QP (CD 五十万)
+			      (CLP (M 只)))
+			  (NP (NN 蜜蜂)))
+		  (VP (VP (VV 乘)
+			  (NP-OBJ (NN 飞机)))
+		      (VP (NP-ADV (NN 南))
+			  (VP (VV 下)
+			      (NP-PN-OBJ (NR 福建))))
+		      (VP (VV 赶)
+			  (NP-OBJ (NN 花季))))) 
+	  </parse>
+	  <arg n="0">
+	  哈尔滨 五十万 只 蜜蜂 	  
+	  </arg>
+	  <arg n="1">
+	  花季 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (IP (NP-SBJ (NN 天气))
+			       (VP (VA 晴朗)))
+			   (LC 时))
+		  (ADVP (AD 多))
+		  (VP (VV 赶)
+		      (NP-OBJ (QP (CD 一点))
+			      (NP (NN 进度)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  一点 进度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  多 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  天气 晴朗 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 本))
+		  (VP (VV 想)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 赶)
+				      (PP-TMP (P 在)
+					      (NP (NN 欧元)
+						  (NN 启动)
+						  (NN 前夕))))
+				  (PU ，)
+				  (VP (VV 感受)
+				      (ADVP (AD 一下))
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VA 浓郁)
+							      (CC 而)
+							      (VA 热烈)))
+						      (DEC 的)))
+					      (NP (NN 欧元)
+						  (NN 气息))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  在 欧元 启动 前夕 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" cdef="赶 下台">
+      <role argnum="0" argrole="ouster"/>
+      <role argnum="1" argrole="ousted party"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NN 国际)
+					(NN 社会))
+				    (DEG 的))
+			       (NP (NN 支持)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 西非))
+		      (ADJP (JJ 维和))
+		      (NP (NN 部队)))
+	      (VP (PP-TMP (P 于)
+			  (NP (NT 今年)
+			      (NT ２月)))
+		  (VP (VP (VV 采取)
+			  (NP-OBJ (NN 军事)
+				  (NN 行动)))
+		      (PU ，)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VV 政变))))
+					  (NP (NN 军政权)))
+				  (VP (VRD (VV 赶)
+					   (VV 下台)))))))) 
+	  </parse>
+	  <arg n="0">
+	  西非 维和 部队 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 政变 军政权 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  在 国际 社会 的 支持 下 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 今年 ２月 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

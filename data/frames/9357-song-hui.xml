@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 送回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 returns arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 鼓励)
+		  (NP-OBJ (NN 人们))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (LCP (NP (NN 家))
+					       (LC 里))
+					  (DNP (ADJP (JJ 多馀))
+					       (DEG 的))
+					  (NP (NN 塑胶袋)))
+				  (VP (VV 送回))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  家 里 多馀 的 塑胶袋 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

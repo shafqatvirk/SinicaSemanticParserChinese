@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 积压 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="owner"/>
+      <role argnum="1" argrole="commodity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (NP (NN 了解)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 大约))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 六千六百万)
+					  (CLP (M 平方米)))
+				      (NP (NN 商品房)))
+			      (VP (VV 积压)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  六千六百万 平方米 商品房 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

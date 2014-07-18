@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回馈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="thing returned"/>
+      <role argnum="2" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 传销)
+		      (NN 原意))
+	      (VP (ADVP (AD 本))
+		  (VP (VC 是)
+		      (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 避免)
+				      (NP-OBJ (NP (DNP (NP (NP (NN 传统)
+							       (NN 通路))
+							   (NP (NN 大盘)
+							       (PU 、)
+							       (NN 中盘)
+							       (PU 、)
+							       (NN 小盘)
+							       (ETC 等)))
+						       (DEG 的))
+						  (NP (NN 层层)
+						      (NN 剥削)))
+					      (PU ，)
+					      (CC 以及)
+					      (NP (DNP (NP (NP-APP (NN 广告)
+								   (PU 、)
+								   (NN 店铺)
+								   (NN 租金)
+								   (PU 、)
+								   (NN 工作)
+								   (NN 人员)
+								   (NN 薪水))
+							   (NP (NN 之类)))
+						       (DEG 的))
+						  (NP (NN 支出)))))
+				  (PU ，)
+				  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+						   (VP (BA 将)
+						       (IP-OBJ (NP-SBJ (NN 费用))
+							       (VP (VRD (VV 省)
+									(VV 下来))))))
+					       (LC 後))
+				      (ADVP (AD 直接))
+				      (VP (VV 回馈)
+					  (NP-OBJ (NN 消费者))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  消费者 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *pro* 将 费用 省 下来 後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

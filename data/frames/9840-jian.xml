@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 捡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 picks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-5 (LCP-TMP (IP (NP-SBJ (NN 精省)
+					 (NN 消息))
+				 (VP (VV 传出)))
+			     (LC 後))
+		    (PU ，)
+		    (NP-SBJ (PN 我们))
+		    (VP (VP (BA 将)
+			    (IP-OBJ (NP-SBJ (NN 长期)
+					    (NN 计画))
+				    (VP (ADVP (AD 先))
+					(VP (VV 搁下)))))
+			(PU ，)
+			(VP (ADVP (AD 先))
+			    (VP (VP (VV 捡)
+				    (NP-OBJ (DNP (NP (NN 短期))
+						 (DEG 的))))
+				(VP (VV 做)))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  短期 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  精省 消息 传出 後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

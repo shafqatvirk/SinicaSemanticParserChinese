@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 燃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing(fire) started"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 今年)
+			   (NT ８月))
+		       (LC 初))
+	      (PU ，)
+	      (NP-PN-TPC (NR 刚果)
+			 (PRN (PU （)
+			      (NP-PN (NR 金))
+			      (PU ）)))
+	      (NP-SBJ (NN 战火))
+	      (VP (ADVP (AD 再))
+		  (VP (VV 燃)))) 
+	  </parse>
+	  <arg n="1" f="pse">
+	  战火 
+	  </arg>
+	  <arg n="1" f="psr">
+	  刚果 （ 金 ） 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 ８月 初 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

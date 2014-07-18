@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 蒸熟 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 steams until it is done"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (ADJP (JJ 传统))
+			 (DEG 的))
+		    (NP (NN 米粉)))
+	    (VP (VP (ADVP (AD 比较))
+		    (VP (VA 粗)))
+		(PU ，)
+		(VP (ADVP (AD 而且))
+		    (PP-PRP (P 因为)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						 (VP (VRD (VV 压制)
+							  (VA 好))
+						     (AS 了)))
+					     (LC 後))
+				    (PU ，)
+				    (VP (VV 要)
+					(VP (VP (VV 放入)
+						(LCP-OBJ (NP (NP (ADJP (JJ 大))
+								 (NP (NN 锅)))
+							     (NP (NN 开水)))
+							 (LC 中)))
+					    (VP (VV 煮熟)))))))
+		    (PU ，)
+		    (VP (ADVP (AD 所以))
+			(ADVP (AD 又))
+			(VP (VV 叫)
+			    (NP-OBJ (PU 「)
+				    (NN 水粉)
+				    (PU 」))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 压制 好 了 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 简称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="namer"/>
+      <role argnum="1" argrole="thing named"/>
+      <role argnum="2" argrole="abbreviation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 《)
+			  (NP (NP-PN (NP-PN (NR 香港))
+				     (ADJP (JJ 特别))
+				     (NP (NN 行政区)))
+			      (NP (NN 政府)))
+			  (NP (NN 土地)
+			      (NN 基金)
+			      (NN 信托)
+			      (NN 声明书))
+			  (PU 》))
+	      (VP (PU （)
+		  (VV 简称)
+		  (NP-TTL-OBJ (PU 《)
+			      (ADJP (JJ 信托))
+			      (NP (NN 声明书))
+			      (PU 》)))
+	      (PU ）)) 
+	  </parse>
+	  <arg n="1">
+	  《 香港 特别 行政区 政府 土地 基金 信托 声明书 》 
+	  </arg>
+	  <arg n="2">
+	  《 信托 声明书 》 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

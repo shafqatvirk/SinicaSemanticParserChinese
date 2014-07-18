@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传至 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 spreads"/>
+      <role argnum="2" argrole="place arg1 spreads to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 佛教))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (PP-LOC (P 在)
+					   (NP-PN (NR 印度)))
+				   (VP (VV 创立))))
+			   (LC 後))
+		  (PU ，)
+		  (VP (VP (VV 分)
+			  (NP-OBJ (NP-APP (NN 南)
+					  (NN 北))
+				  (QP (CD 两))
+				  (NP (NN 路))))
+		      (VP (VV 传至)
+			  (NP-PN-OBJ (NR 亚洲)))))) 
+	  </parse>
+	  <arg n="1">
+	  佛教 
+	  </arg>
+	  <arg n="2">
+	  亚洲 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 在 印度 创立 後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

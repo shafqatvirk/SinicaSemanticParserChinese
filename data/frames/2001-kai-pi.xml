@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开辟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing opened up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (PN 他))
+		(VP (PP-TMP (P 在)
+			    (NP (CP (WHPP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (PP-TMP (-NONE- *T*-2))
+					    (VP (VV 担任)
+						(NP-OBJ (NP-PN (NR 美国))
+							(NP (NN 总统)))))))
+				(NP (NN 期间))))
+		    (PU ，)
+		    (PP (P 同)
+			(NP (DNP (ADJP (JJ 已故))
+				 (DEG 的))
+			    (NP (NP-PN (NR 毛泽东)
+				       (NN 主席))
+				(CC 和)
+				(NP-PN (NR 周恩来)
+				       (NN 总理)))))
+		    (ADVP (AD 一起))
+		    (VP (VP (VV 打开)
+			    (AS 了)
+			    (NP-OBJ (DNP (NP (NP-PN (NR 中)
+						    (NR 美))
+					     (NP (NN 关系)))
+					 (DEG 的))
+				    (ADJP (JJ 大))
+				    (NP (NN 门))))
+			(PU ，)
+			(VP (VV 开辟)
+			    (AS 了)
+			    (NP-OBJ (DNP (NP (NP (QP (CD 两))
+						 (NP (NN 国)))
+					     (NP (NN 关系)))
+					 (DEG 的))
+				    (ADJP (JJ 新))
+				    (NP (NN 局面))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  两 国 关系 的 新 局面 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一起 	  
+	  </arg>
+	  <arg n="0" f="crd">
+	  同 已故 的 毛泽东 主席 和 周恩来 总理 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* *PRO* *T*-2 担任 美国 总统 期间 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP (NN 国际))
+			       (ADJP (JJ 大))
+			       (NP (NN 公司)))
+			   (DEG 的))
+		      (ADJP (JJ 进一步))
+		      (NP (NN 加盟)))
+	      (VP (VV 使)
+		  (NP-OBJ (NP-PN (NR 上海港))
+			  (NP (NN 国际)
+			      (NN 航线)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (LCP-TMP (CLP (M 年))
+				   (LC 内))
+			  (ADVP (AD 又))
+			  (VP (VV 开辟)
+			      (AS 了)
+			      (QP-OBJ (CD 十六)
+				      (CLP (M 条)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  十六 条 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  年 内 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 针对 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is directed against"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (ADJP (JJ 初步))
+			  (NP (NN 调查))))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 恐怖)
+			  (NN 分子))
+		      (DNP (NP (DP (DT 此)
+				   (CLP (M 次)))
+			       (NP (NN 行动)))
+			   (DEG 的))
+		      (NP (NN 目的)))
+	      (VP (ADVP (AD 主要))
+		  (VP (VV 针对)
+		      (NP-OBJ (NP-PN (NR 美)
+				     (NR 英))
+			      (NP (NN 游客)))))) 
+	  </parse>
+	  <arg n="0">
+	  恐怖 分子 此 次 行动 的 目的 
+	  </arg>
+	  <arg n="1">
+	  美 英 游客 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 初步 调查 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

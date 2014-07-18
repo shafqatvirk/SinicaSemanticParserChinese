@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 收藏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="collector"/>
+    <role argnum="1" argrole="thing arg0 collects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 收藏)
+				(NP-OBJ (QP (CD 诸多))
+					(NP (NN 文人)
+					    (NN 雅士))
+					(NP (NN 图章)))))
+			(DEC 的)))
+		(NP-PN (NR 黄天才))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	诸多 文人 雅士 图章 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-DIR (P 针对)
+		(NP (CP-APP (IP (NP-SBJ (NN 馆方))
+				(VP (VV 收藏)))
+			    (DEC 的))
+		    (NP (NN 情形)))) 
+	</parse>
+	<arg n="0">
+	馆方 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 places and keeps"/>
+    <role argnum="2" argrole="place arg1 is kept"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VV 结束)
+			     (NP-OBJ (NN 球戏))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (QP (CD 两))
+			     (NP (NN 人)))
+			 (DEG 的))
+		    (NP (NN 球具)))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 装)
+			(PP-LOC (P 在)
+				(NP (NN 球袋)))))
+		(CC 而)
+		(VP (VV 收藏)
+		    (PP-LOC (P 在)
+			    (LCP (NP (NN 锦盒))
+				 (LC 中)))))) 
+	</parse>
+	<arg n="1">
+	两 人 的 球具 
+	</arg>
+	<arg n="2">
+	在 锦盒 中 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 结束 球戏 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

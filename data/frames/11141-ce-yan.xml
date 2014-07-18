@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 测验 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 gives a test to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 老师))
+	    (VP (ADVP (AD 临时))
+		(VP (VV 决定)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 要)
+				(VP (ADVP (AD 随堂))
+				    (VP (VV 测验)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	随堂 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

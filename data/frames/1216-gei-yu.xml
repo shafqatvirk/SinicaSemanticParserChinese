@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 给于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="thing given"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 美国))
+			  (NP (NN 银行)))
+		  (VP (VV 给于)
+		      (NP-IO (PP (P 对)
+				 (NP-PN (NR 华)))
+			     (NP (NN 出口)))
+		      (PP (P 以)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 积极)))
+				      (DEC 的)))
+			      (NP (NN 支持)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 银行 
+	  </arg>
+	  <arg n="2">
+	  对 华 出口 
+	  </arg>
+	  <arg n="1">
+	  以 *OP* *T*-1 积极 的 支持 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

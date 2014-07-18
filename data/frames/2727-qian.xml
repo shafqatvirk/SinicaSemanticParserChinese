@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 欠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="debtor"/>
+      <role argnum="1" argrole="creditor"/>
+      <role argnum="2" argrole="debt"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 新))
+		      (NP (NN 税)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 欠)))) 
+	  </parse>
+	  <arg n="2">
+	  新 税 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-3 (NP-SBJ (NP (PN 我们))
+			    (NP (NN 祖先)))
+		    (VP (VV 欠)
+			(NP-OBJ (DNP (NP (PN 他))
+				     (DEG 的))
+				(NP (NN 情))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 祖先 
+	  </arg>
+	  <arg n="2">
+	  他 的 情 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,176 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 没有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 doesn't exist"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NP-PN (NR 东亚))
+			   (DP (DT 各))
+			   (NP (NN 国)))
+		       (LC 间))
+	      (VP (ADVP (AD 并))
+		  (VP (VC 非)
+		      (VP (ADVP (AD 完全))
+			  (VP (VE 没有)
+			      (NP-OBJ (NN 矛盾)
+				      (CC 和)
+				      (NN 分歧))))))) 
+	  </parse>
+	  <arg n="0">
+	  矛盾 和 分歧 
+	  </arg>
+	  <arg n="1">
+	  东亚 各 国 间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  任何 迹象 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="not have">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 doesn't have"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 政府))
+		  (VP (VE 没有)
+		      (IP-OBJ (NP-SBJ (NN 角色))
+			      (VP (VV 要)
+				  (VP (VV 担当)))))) 
+	  </parse>
+	  <arg n="0">
+	  政府 
+	  </arg>
+	  <arg n="1">
+	  角色 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 美国))
+				      (VP (PP-DIR (P 对)
+						  (NP-PN (NR 古巴)))
+					  (VP (VV 实行)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (NN 禁运)))
+		  (VP (VP (VC 是)
+			  (DNP-PRD (PU “)
+				   (NP (NN 单方面))
+				   (DEG 的)
+				   (PU ”)))
+		      (PU ，)
+		      (VP (PU “)
+			  (PP-DIR (P 对)
+				  (NP-PN (NR 法国)))
+			  (VP (VE 没有)
+			      (NP-OBJ (NN 约束力)))
+			  (PU ”)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 美国 对 古巴 实行 *T*-1 的 禁运 
+	  </arg>
+	  <arg n="1">
+	  约束力 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 法国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 再))
+			  (VP (VV 讲)
+			      (NP-OBJ (DNP (DP (DT 其他))
+					   (DEG 的))))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TPC-1 (QP (CD 一)
+				(CLP (M 点)))
+			    (NP (NN 用)))
+		  (ADVP (AD 也))
+		  (VP (VE 没有)
+		      (NP-OBJ (-NONE- *T*-1))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3" edef="negation">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

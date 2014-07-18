@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 蹉商 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 discusses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (LCP (NP (NT 去年))
+			    (LC 初))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 台湾))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 最))
+				      (VP (VV 具)
+					  (NP-OBJ (NN 实力)))))
+			      (DEC 的)))
+		      (NP (NN 汽车)
+			  (NN 公司))
+		      (PRN (PU ——)
+			   (NP-PN (NP-PN (NR 裕隆)
+					 (NN 集团))
+				  (NP-PN (NR 中华)
+					 (NN 汽车)
+					 (NN 公司)))))
+	      (VP (VP (QP-ADV (CD 多)
+			      (CLP (M 次)))
+		      (VP (VP (VV 组)
+			      (NP-OBJ (NN 团)))
+			  (VP (VV 访)
+			      (NP-PN-OBJ (NR 闽)))))
+		  (PU ，)
+		  (VP (PP-DIR (P 就)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VSB (VV 合作)
+					   (VV 发展))
+				      (NP-OBJ (NN 汽车)
+					      (NN 工业)))))
+		      (VP (VV 进行)
+			  (AS 了)
+			  (NP-OBJ (CP (NP-2 (-NONE- *pro*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 积极)))
+					  (DEC 的)))
+				  (NP (NN 蹉商))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 *OP* *T*-1 最 具 实力 的 汽车 公司 —— 裕隆 集团 中华 汽车 公司 
+	  </arg>
+	  <arg n="1">
+	  就 *PRO* 合作 发展 汽车 工业 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-2 积极 的 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 初 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

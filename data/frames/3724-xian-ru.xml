@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 陷入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location/state arg0 falls into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 德波尔)
+				  (NN 兄弟)
+				  (CC 同)
+				  (NR 阿姆斯特丹队))
+			   (DEG 的))
+		      (NP (NN 关系)))
+	      (VP (VV 陷入)
+		  (NP-OBJ (NN 僵局)))) 
+	  </parse>
+	  <arg n="0">
+	  德波尔 兄弟 同 阿姆斯特丹队 的 关系 
+	  </arg>
+	  <arg n="1">
+	  僵局 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

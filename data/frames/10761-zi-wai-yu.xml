@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自外於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 alienates itself from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 中华)
+		       (NN 民国))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 能)
+			(VP (-NONE- *RNR*-2))))
+		(CC 也)
+		(VP (ADVP (AD 不))
+		    (VP (VV 会)
+			(VP-2 (VV 自外於)
+			      (NP-OBJ (DNP (NP (NN 世界)
+					       (NN 人权))
+					   (DEG 的))
+				      (NP (NN 潮流)))))))) 
+	</parse>
+	<arg n="0">
+	中华 民国 
+	</arg>
+	<arg n="1">
+	世界 人权 的 潮流 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

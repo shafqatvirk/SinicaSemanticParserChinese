@@ -1,0 +1,203 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 pastes"/>
+    <role argnum="2" argrole="place arg1 is pasted"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 长满)
+				    (NP-OBJ (NN 茧))))
+			    (DEC 的)))
+		    (DNP (NP (NN 茶农))
+			 (DEG 之))
+		    (NP (NN 手)))
+	    (VP (VP (VV 贴)
+		    (AS 著)
+		    (NP-OBJ (DNP (NP (NN 茶叶))
+				 (DEG 的))
+			    (NP (NN 气息))))
+		(VP (VV 过活)))) 
+	</parse>
+	<arg n="1">
+	茶叶 的 气息 
+	</arg>
+	<arg n="2">
+	*OP* *T*-1 长满 茧 的 茶农 之 手 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (ADVP (AD 就))
+		    (PP (P 像)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 贴)
+					    (PP (P 在)
+						(LCP (NP (NN 布告栏))
+						     (LC 上)))))
+				    (DEC 的)))
+			    (NP (NN 宣传品)))))
+	    (PU ，)
+	    (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (LB 被)
+			(IP-OBJ (NP-SBJ (NN 风))
+				(VP (VV 吹掉)
+				    (AS 了)))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 再))
+			(VP (VV 贴)
+			    (QP-OBJ (CD 一)
+				    (CLP (M 张))))))
+	    (VP (ADVP (AD 就))
+		(VP (VA 好)))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	在 布告栏 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (BA 把)
+		    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			    (IP (NP-SBJ (QP (CD 一)
+					    (CLP (M 格格)))
+					(NP (NN 样片)))
+				(VP (VP (VP (VV 贴)
+					    (PP (P 在)
+						(LCP (NP (NN 墙))
+						     (LC 上))))
+					(VP (VV 临摹)
+					    (NP-OBJ (-NONE- *T*-2))))
+				    (PU ，)
+				    (VP (VV 画成)
+					(NP-OBJ (DNP (QP (CD 一)
+							 (CLP (M 张张)))
+						     (DEG 的))
+						(NP (NN 动画)
+						    (NN 纸)))))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	一 格格 样片 
+	</arg>
+	<arg n="2">
+	在 墙 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-4 (IP (NP-TTL-SBJ (PU 《)
+				  (NN 晴天)
+				  (NN 娃娃)
+				  (PU 》))
+		      (VP (VP (ADVP (AD 才))
+			      (VP (VV 贴)
+				  (QP-EXT (CD 几)
+					  (CLP (M 次)))))
+			  (VP (ADVP (AD 就))
+			      (VP (VV 得到)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-TPC (-NONE- *T*-1))
+						      (NP-SBJ (-NONE- *pro*))
+						      (VP (VV 意想不到)))
+						  (DEC 的)))
+					  (NP (NN 支持)))))))) 
+	</parse>
+	<arg n="1">
+	《 晴天 娃娃 》 
+	</arg>
+	<arg n="m" f="ext">
+	几 次 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 近千)
+			    (CLP (M 名)))
+			(CP (WHNP-3 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-3))
+				    (VP (VV 来自)
+					(NP-OBJ (NN 官方)
+						(CC 和)
+						(NN 民间))))
+				(DEC 的)))
+			(NP (NN 陶工)))
+		(VP (ADVP (AD 合力))
+		    (VP (VV 完成)
+			(NP-OBJ (DP (DT 这些))
+				(CP (WHNP-4 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-4))
+					    (VP (VV 需要)
+						(VP (VV 塑)
+						    (PU 、)
+						    (VV 堆)
+						    (PU 、)
+						    (VV 捏)
+						    (PU 、)
+						    (VV 贴)
+						    (PU 、)
+						    (VV 刻)
+						    (PU 、)
+						    (VV 画))))
+					(DEC 的)))
+				(NP (NN 陶俑)))))) 
+	</parse>
+	<arg n="2">
+	*T*-4 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 辟为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="goal"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NT 一九八三年)
+              (NT 二月))
+      (PU ，)
+      (NP-SBJ (NP-PN (NR 中共)
+                     (NN 中央))
+              (PU 、)
+              (NP-PN (NN 国务院)))
+      (VP (VV 决定)
+          (IP (NP-SBJ (-NONE- *PRO*))
+              (VP (VP (BA 将)
+                      (IP (NP-PN-SBJ (NR 重庆))
+                          (VP (VP (VV 作为)
+                                  (NP-OBJ (QP (OD 首)
+                                              (CLP (M 批)))
+                                          (NP (NP (DNP (NP (NN 经济)
+                                                           (NN 体制)
+                                                           (NN 改革))
+                                                       (DEG 的))
+                                                  (NP (NN 试点)
+                                                      (NN 城市)))
+                                              (CC 和)
+                                              (NP (NN 计划)
+                                                  (NN 单列)
+                                                  (NN 城市)))))
+                              (PU ，)
+                              (VP (VV 赋予)
+                                  (NP-OBJ (ADJP (JJ 省级))
+                                          (NP (NN 经济)
+                                              (NN 管理)
+                                              (NN 权限))))
+                              (PU ，)
+                              (CC 并)
+                              (VP (VV 辟为)
+                                  (NP-OBJ (NN 外贸)
+                                          (NN 口岸)))))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="1"> 重庆 </arg>
+	<V/>
+	<arg n="2"> 外贸 口岸 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NT 一八九一年))
+      (NP-PN-SBJ (NR 重庆))
+      (VP (VV 辟为)
+          (NP-OBJ (NN 通商)
+                  (NN 口岸)))))
+        </parse>
+	<arg n="M" f="TMP"> 一八九一年 </arg>
+	<arg n="1"> 重庆 </arg>
+	<V/>
+	<arg n="2"> 通商 口岸 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

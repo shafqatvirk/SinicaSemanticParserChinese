@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 助阵 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 assists"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (ADVP (AD 举凡))
+		    (NP (DNP (NP-PN (NR 客家))
+			     (DEG 的))
+			(NP (NN 活动))))
+	    (PU ，)
+	    (NP-SBJ (PN 他们))
+	    (VP (ADVP (AD 都))
+		(VP (VV 会)
+		    (VP (VV 应邀)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VSB (VV 到场)
+					 (VV 助阵)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 服刑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="convict"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (QP (CD 一))
+		      (NP (NN 人)))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (SB 被)
+			  (VP (VV 判)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 入狱)
+					  (NP-EXT (QP (CD １２)
+						      (CLP (M 个)))
+						  (NP (NN 月))))))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 目前))
+		      (ADVP (AD 正在))
+		      (VP (VV 服刑))))) 
+	  </parse>
+	  <arg n="0">
+	  一 人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

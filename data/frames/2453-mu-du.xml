@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 目睹 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seer"/>
+      <role argnum="1" argrole="thing seen"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 西门子)
+			 (NN 公司))
+	      (VP (ADVP (AD 亲眼))
+		  (VP (VV 目睹)
+		      (AS 了)
+		      (NP-OBJ (DNP (LCP (QP (NP (NP-PN (NR 中国))
+						(NP (NN 改革)
+						    (NN 开放)))
+					    (QP (CD 二十)
+						(CLP (M 年))))
+					(LC 来))
+				   (DEG 的))
+			      (ADJP (JJ 惊人))
+			      (NP (NN 变化)))))) 
+	  </parse>
+	  <arg n="0">
+	  西门子 公司 
+	  </arg>
+	  <arg n="1">
+	  中国 改革 开放 二十 年 来 的 惊人 变化 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亲眼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

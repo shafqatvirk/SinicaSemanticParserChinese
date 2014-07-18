@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 稀释 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 dilutes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 已))
+		(VP (LB 被)
+		    (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ (QP (DP (DT 每)
+						(CLP (M 天)))
+					    (QP (CD 上百)
+						(CLP (M 个))))
+					(NP (NN 电视)
+					    (NN 节目)))
+				(VP (VRD (VV 稀释)
+					 (VV 掉))
+				    (NP-OBJ (-NONE- *T*-1)))))))) 
+	</parse>
+	<arg n="0">
+	每 天 上百 个 电视 节目 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

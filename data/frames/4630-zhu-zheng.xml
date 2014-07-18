@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 主政 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 administers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 张学良))
+	      (VP (VP (PP-TMP (P 在)
+			      (NP (NT 一九二八年)))
+		      (VP (VV 主政)
+			  (NP-OBJ (NN 东北))
+			  (QP-EXT (QP (CD 三)
+				      (CLP (M 年)))
+				  (ADVP (AD 多)))))
+		  (PU ，)
+		  (VP (PP-BNF (P 为)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VCD (VV 开发)
+					   (VV 建设))
+				      (NP-OBJ (NN 东北)))))
+		      (VP (VE 有)
+			  (AS 过)
+			  (NP-OBJ (QP (CD 许多))
+				  (ADJP (JJ 重要))
+				  (NP (NN 举措))))))) 
+	  </parse>
+	  <arg n="0">
+	  张学良 
+	  </arg>
+	  <arg n="1">
+	  东北 
+	  </arg>
+	  <arg n="m" f="adv">
+	  三 年 多 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 一九二八年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

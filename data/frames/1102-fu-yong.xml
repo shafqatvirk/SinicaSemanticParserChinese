@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 服用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (DP (DT 这)
+					      (CLP (M 位)))
+					  (NP (NN 妇女)))
+				  (VP (PP-PRP (-NONE- *T*-1))
+				      (VP (VV 生产)
+					  (NP-OBJ (NN 多胞胎)))))
+			      (DEC 的)))
+		      (NP (NN 原因)))
+	      (VP (VC 是)
+		  (PP-PRD (P 因为)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 服用)
+				  (AS 了)
+				  (NP-OBJ (NN 排卵)
+					  (NN 诱发剂))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  排卵 诱发剂 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

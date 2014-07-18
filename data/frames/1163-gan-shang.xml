@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赶上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="chaser"/>
+      <role argnum="1" argrole="catching up with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 专家))
+	      (VP (VV 呼吁)
+		  (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+				  (NP (NN 医药业)))
+			  (VP (VV 应)
+			      (VP (VP (VV 改变)
+				      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VP (VV 重)
+								  (NP-OBJ (NN 原料药)
+									  (NN 生产)))
+							      (PU 、)
+							      (VP (VV 轻)
+								  (NP-OBJ (NN 制剂)
+									  (NN 开发)))))
+						      (DEC 的))
+					      (NP (NN 做法))))
+				  (PU ，)
+				  (VP (ADVP (AD 尽快))
+				      (VP (VV 赶上)
+					  (NP-OBJ (DNP (NP (NN 世界)
+							   (NN 制药业))
+						       (DEG 的))
+						  (NP (NN 发展)
+						      (NN 潮流)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 医药业 	  
+	  </arg>
+	  <arg n="1">
+	  世界 制药业 的 发展 潮流 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  尽快 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 drives/herds arg1 onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 每)
+			  (CLP (M 个)))
+		      (NP (NN 人)))
+	      (VP (VP (VV 分发)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 三)
+				  (CLP (M 个)))
+			      (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VV 发霉)))
+				      (DEC 的)))
+			      (NP (NN 面包))))
+		  (PU ，)
+		  (VP (ADVP (AD 便))
+		      (VP (SB 被)
+			  (VP (VV 赶上)
+			      (AS 了)
+			      (LCP-LOC (NP (DNP (NP (CP (WHNP-5 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (-NONE- *T*-5))
+								(VP (PP-LOC (P 在)
+									    (LCP (NP (NN 港))
+										 (LC 内)))
+								    (VP (VV 生火待发))))
+							    (DEC 的)))
+						    (NP (NN 战车)
+							(NN 登陆艇)))
+						(DEG 的))
+					   (NP (NN 底舱)))
+				       (LC 里))))))) 
+	  </parse>
+	  <arg n="1">
+	  每 个 人 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-5 在 港 内 生火待发 的 战车 登陆艇 的 底舱 里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  便 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

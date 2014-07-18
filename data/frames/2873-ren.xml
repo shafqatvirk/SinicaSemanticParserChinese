@@ -1,0 +1,140 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="position held"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 如今))
+	      (NP-PN-SBJ (NR 查瑞传))
+	      (VP (VP (VV 担任)
+		      (AS 着)
+		      (NP-OBJ (NP (NN 研究所)
+				  (NN 副所长))
+			      (NP (NN 职务))))
+		  (PU ，)
+		  (VP (ADVP (AD 还))
+		      (ADVP (AD 曾))
+		      (ADVP (AD 连))
+		      (VP (VV 任)
+			  (NP-OBJ (QP (CD 两)
+				      (CLP (M 届)))
+				  (NP-PN (NR 北京市))
+				  (NP (NN 人大)
+				      (NN 常委))))))) 
+	  </parse>
+	  <arg n="0">
+	  查瑞传 	  
+	  </arg>
+	  <arg n="1">
+	  两 届 北京市 人大 常委 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 成立)
+	      (AS 了)
+	      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PP-LGS (P 由)
+					      (NP (NP (NP-APP (NN 省委)
+							      (NN 书记))
+						      (NP-PN (NR 贾庆林)))
+						  (PU 、)
+						  (NP (NP-APP (NN 省长))
+						      (NP-PN (NR 陈明义)))))
+				      (VP (VV 任)
+					  (NP-OBJ (ADJP (JJ 正)
+							(PU 、)
+							(JJ 副))
+						  (NP (NN 组长))))))
+			      (DEC 的)))
+		      (NP (NN 省)
+			  (NN 汽车)
+			  (NN 工业)
+			  (NN 领导)
+			  (NN 小组)))) 
+	  </parse>
+	  <arg n="0">
+	  由 省委 书记 贾庆林 、 省长 陈明义 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  正 、 副 组长 	  
+	  </arg>
+	  <arg n="1" f="psr">
+	  *T*-3 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 新))
+				      (VP (VV 任)))))
+			  (NP-PN (NN 国务院))
+			  (NP (NN 总理)))
+		  (NP-PN (NR 朱（容加金旁）基))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  新 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="let">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

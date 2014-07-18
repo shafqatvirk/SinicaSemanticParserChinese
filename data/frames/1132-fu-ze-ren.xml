@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 负责任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-ADV (P 作为)
+		  (NP (QP (CD 一)
+			  (CLP (M 个)))
+		      (NP (PU “)
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 负责任)))
+				  (DEC 的)))
+			  (ADJP (JJ 大))
+			  (NP (NN 国))
+			  (PU ”)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

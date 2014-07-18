@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作兴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place where arg0 is in practice"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 荒僻)))
+				  (DEC 的)))
+			  (NP (NN 海口)
+			      (NN 乡镇)))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 作兴)
+			  (NP-OBJ (DP (DT 这些))
+				  (ADJP (JJ 时髦))
+				  (NP (NN 玩意)))))) 
+	  </parse>
+	  <arg n="0">
+	  这些 时髦 玩意 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 荒僻 的 海口 乡镇 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

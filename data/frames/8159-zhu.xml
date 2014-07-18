@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 chases"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 印地安人))
+	      (VP (VP (VV 逐)
+		      (NP-OBJ (NN 野牛)))
+		  (VP (MSP 而)
+		      (VP (VV 居)))
+		  (PU ，)
+		  (VP (VV 徜徉)
+		      (PP-LOC (P 在)
+			      (LCP (NP (NN 天地))
+				   (LC 之间)))))) 
+	  </parse>
+	  <arg n="0">
+	  印地安人 
+	  </arg>
+	  <arg n="1">
+	  野牛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

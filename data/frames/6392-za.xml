@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 砸 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 puts down/dumps"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-ADV (DP (DT 另)
+			(QP (CD 一)))
+		    (NP (NN 方面)))
+	    (PU ，)
+	    (PP-TMP (P 当)
+		    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 面临)
+				 (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						     (VP (VCD (VV 升级)
+							      (VV 发展))))
+						 (DEC 的))
+					 (NP (NN 契机)))))
+			 (LC 时)))
+	    (PU ，)
+	    (NP-SBJ-PN (NR 叶进泰))
+	    (VP (VV 可以)
+		(VP (DVP (VP (ADVP (AD 毫不))
+			     (VP (VA 犹豫)))
+			 (DEV 地))
+		    (VP (VP (VV 砸)
+			    (NP-OBJ (NN 钱)))
+			(VP (VV 投资)))))) 
+	</parse>
+	<arg n="0">
+	叶进泰 
+	</arg>
+	<arg n="1">
+	钱 
+	</arg>
+	<arg n="m" f="adv">
+	毫不 犹豫 地 
+	</arg>
+	<arg n="m" f="tmp">
+	当 *PRO* 面临 *PRO* 升级 发展 的 契机 时 
+	</arg>
+	<arg n="m" f="dis">
+	另 一 方面 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>    
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 早点))
+		    (VP (VV 懂得)
+			(NP-OBJ (NN 理财))))
+		(PU ，)
+		(VP (LCP-TMP (IP (QP-TMP (OD 七十九)
+					 (CLP (M 年)))
+				 (NP-SBJ (NN 股市))
+				 (VP (VV 暴跌)))
+			     (LC 时))
+		    (VP (BA 把)
+			(IP-OBJ (NP-SBJ (DP (DT 所有))
+					(NP (NN 积蓄)))
+				(VP (PU 「)
+				    (ADVP (AD 全部))
+				    (VP (VRD (VV 砸)
+					     (VV 下去)))
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	所有 积蓄 
+	</arg>
+	<arg n="m" f="adv">
+	全部 
+	</arg>
+	<arg n="m" f="tmp">
+	七十九 年 股市 暴跌 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

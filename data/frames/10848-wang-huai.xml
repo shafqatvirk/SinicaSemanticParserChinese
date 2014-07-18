@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 忘怀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 cannot forget"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 上述))
+		    (NP (NN 景象)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-DIR (P 对)
+				    (NP (QP (CD 大部分))
+					(DNP (NP-PN (NR 台湾))
+					     (DEG 的))
+					(NP (NN 老百姓))))
+			    (VP (MSP 而)
+				(VP (VV 言)))))
+		(VP (VC 是)
+		    (VP (VP (VV 历历在目))
+			(PU ，)
+			(VP (ADVP (AD 难以))
+			    (VP (VV 忘怀))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 对 大部分 台湾 的 老百姓 而 言 
+	</arg>
+	<arg n="1">
+	上述 景象 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

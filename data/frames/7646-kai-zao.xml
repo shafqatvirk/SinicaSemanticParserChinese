@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开凿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 digs to open up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (PP-TMP (P 在)
+			(LCP (QP (CD 三千多)
+				 (CLP (M 年)))
+			     (LC 前)))
+		(PU ，)
+		(NP-SBJ (DNP (NP (PN 这里))
+			     (DEG 的))
+			(NP (NN 人们)))
+		(VP (VP (ADVP (AD 已经))
+			(VP (VV 懂得)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 开凿)
+					    (NP-OBJ (NN 矿井)))
+					(PU ，)
+					(VP (VV 制作)
+					    (NP-OBJ (NN 运输)
+						    (NN 工具)))
+					(CC 及)
+					(VP (VV 解决)
+					    (NP-OBJ (NN 通风)
+						    (NN 问题)))))))
+		    (PU ，)
+		    (VP (ADVP (AD 才))
+			(VP (VV 能)
+			    (VP (VP (VV 深入)
+				    (NP-OBJ (NN 地下)))
+				(VP (VV 去)
+				    (VP (VV 开采)
+					(NP-OBJ (NN 铜矿))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	矿井 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

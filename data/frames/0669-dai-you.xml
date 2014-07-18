@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 带有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing brought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (QP (CD 一)
+		  (CLP (M 项)))
+	      (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (VV 带有)
+			      (NP-OBJ (NN 政治)
+				      (NN 歧视性))))
+		      (DEC 的)))
+	      (CP (WHNP-2 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-2))
+			  (VP (PP-DIR (P 对)
+				      (NP-PN (NR 中国)))
+			      (ADVP (AD 极))
+			      (ADVP (AD 不))
+			      (VP (VA 友好))))
+		      (DEC 的)))
+	      (NP (NN 法案))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  政治 歧视性 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

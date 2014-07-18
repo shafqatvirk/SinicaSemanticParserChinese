@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 议价 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing price of which arg0 negotiates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (PN 这样))
+			 (DEG 的))
+		    (NP (NN 投资)
+			(NN 条件)))
+	    (VP (ADVP (AD 还))
+		(VP (VV 可以)
+		    (VP (VE 有)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 议价)))
+					(DEC 的))
+				(NP (NN 空间))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 创作)
+		    (NN 素材))
+	    (VP (SB 被)
+		(VP (PP (P 比照)
+			(NP (NN 建筑)
+			    (NN 材料)))
+		    (VP (MSP 来)
+			(VP (VV 议价)))))) 
+	</parse>
+	<arg n="1">
+	创作 素材 
+	</arg>
+	<arg n="m" f="adv">
+	比照 建筑 材料 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

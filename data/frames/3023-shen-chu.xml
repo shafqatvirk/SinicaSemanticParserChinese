@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 伸出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing extended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 社会)
+		      (NN 各界))
+	      (VP (ADVP (AD 也))
+		  (PP-DIR (P 向)
+			  (NP (PN 他)))
+		  (VP (VV 伸出)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 援助)))
+				      (DEC 之)))
+			      (NP (NN 手)))))) 
+	  </parse>
+	  <arg n="0">
+	  社会 各界 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 援助 之 手 
+	  </arg>
+	  <arg n="m" f="dir">
+	  向 他 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

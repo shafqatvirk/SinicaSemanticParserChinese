@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 林林总总 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (NP (DP (DT 这))
+			   (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (VA 林林总总)))
+				   (DEC 的)))
+			   (NP (NN 书籍)))
+		       (LC 中))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

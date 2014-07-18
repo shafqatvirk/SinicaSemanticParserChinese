@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 补选 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="electorate"/>
+    <role argnum="1" argrole="party elected"/>
+    <role argnum="2" argrole="post"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (VP (VV 选举)
+              (NP-OBJ (-NONE- *RNR*-1)))
+          (PU 、)
+          (VP (VV 补选)
+              (NP-OBJ-1 (NP-PN (NP (DP (DT 全))
+                                   (NP (NN 国)))
+                               (NP (NN 人大)))
+                        (NP (NN 代表)))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="2"> 全 国 人大 代表 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 穿有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="things that are threaded and exist on arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 枝条) )
+		       (LC 上))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 绑)
+		      (AS 著)
+		      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VV 穿有)
+					      (NP-OBJ (NN 珠子) )))
+				      (DEC 的)))
+			      (ADJP (JJ 红色))
+			      (NP (NN 蝴蝶)
+				  (NN 结) ))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-4 
+	  </arg>
+	  <arg n="1">
+	  珠子 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

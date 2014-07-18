@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出生 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 斯通))
+	      (VP (VP (ADVP (AD 就))
+		      (VP (VV 出生)
+			  (PP-LOC (P 在)
+				  (NP (NP-PN (NR 英格兰))
+				      (NP (NN 东北部))))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 现在))
+		      (VP (VV 效力于)
+			  (NP-PN-OBJ (NR 诺丁汉)
+				     (NR 森林队)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  斯通 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 英格兰 东北部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

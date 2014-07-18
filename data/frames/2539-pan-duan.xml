@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 判断 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="judge"/>
+      <role argnum="1" argrole="thing determined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-MNR (P 根据)
+			      (IP (NP-SBJ (QP (CD 一)
+					      (CLP (M 个)))
+					  (NP (NN 人)))
+				  (VP (VV 出身)
+				      (PP-LOC (P 于)
+					      (NP (DP (DT 哪)
+						      (CLP (M 个)))
+						  (NP (NN 阶级)
+						      (CC 和)
+						      (NN 阶层)))))))
+		      (VP (MSP 来)
+			  (VP (VV 判断)
+			      (NP-OBJ (DNP (NP (NP (PN 其))
+					       (NP (NN 本质)))
+					   (DEG 的))
+				      (NP (NN 好坏))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  其 本质 的 好坏 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 一 个 人 出身 于 哪 个 阶级 和 阶层 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP (P 据)
+			  (NP (NN 专家)))
+		      (VP (VV 判断)))) 
+	  </parse>
+	  <arg n="0">
+	  据 专家 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

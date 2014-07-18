@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 低 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is lower than"/>
+      <role argnum="2" argrole="extent arg0 is lower than arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 办事)
+				      (NN 效率))
+			      (VP (VA 低)))
+			  (DEC 的))
+		  (NP (NN 整顿)
+		      (NN 问题))) 
+	  </parse>
+	  <arg n="0">
+	  办事 效率 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 郑永国))
+	      (VP (VA 低)
+		  (NP-OBJ (PN 我))
+		  (QP-EXT (CD 三)
+			  (CLP (M 届))))) 
+	  </parse>
+	  <arg n="0">
+	  郑永国 	  
+	  </arg>
+	  <arg n="1">
+	  我 	  
+	  </arg>
+	  <arg n="2">
+	  三 届 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent, usually a person"/>
+      <role argnum="1" argrole="thing lowered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人类))
+	      (VP (PP-MNR (P 像)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VP (VV 低)
+						  (NP-OBJ (NN 头)))
+					      (VP (VA 忙碌))))
+				      (DEC 的)))
+			      (NP (NN 工蚁))))
+		  (VP (VP (ADVP (AD 源源))
+			  (VP (VV 进入)
+			      (NP-OBJ (NN 山区))))
+		      (PU ，)
+		      (VP (VV 进行)
+			  (AS 著)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 变本加厉)))
+					  (DEC 的)))
+				  (NP (NN 掠夺)))))))
+	  </parse>
+	  <arg n="0">
+	  *T*-2->工蚁
+	  </arg>
+	  <arg n="1">
+	  头
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 杀死 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (IP-APP (NP-PN-SBJ (NR 郭辉))
+			  (VP (VP (VV 持)
+				  (NP-OBJ (NN 械)))
+			      (VP (VV 抢劫)
+				  (NP-OBJ (NN 邮政)
+					  (NN 储蓄所)))
+			      (PU 、)
+			      (VP (VV 杀死)
+				  (NP-OBJ (NN 营业员)))))
+		  (NP (NN 案))) 
+	  </parse>
+	  <arg n="0">
+	  郭辉 
+	  </arg>
+	  <arg n="1">
+	  营业员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

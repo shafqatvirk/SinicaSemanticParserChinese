@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接轨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="be consistent with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 外汇)
+		      (NN 体制)
+		      (NN 改革))
+	      (VP (VV 实现)
+		  (AS 了)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (P 与)
+				  (NP (DP (DT 全))
+				      (NP (NN 国))))
+			      (VP (VV 接轨)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  与 全 国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="link">
+      <role argnum="0" argrole="things linked together"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 中)
+				(NR 蒙))
+			 (NP (NN 铁路)))
+	      (VP (VV 接轨)))
+	  </parse>
+	  <arg n="0">
+	  中 蒙 铁路 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 募得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="donation arg0 solicits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (NN 震灾))
+		     (LC 後))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 大隘社))
+	    (VP (PP-LOC (P 在)
+			(NP (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-4))
+					(VP (VA 小小)))
+				    (DEC 的)))
+			    (NP-PN (NR 北埔))
+			    (NP (NN 地区))))
+		(VP (VV 募得)
+		    (AS 了)
+		    (UCP-OBJ (NP (NP (QP (CD 三))
+				     (NP (NN 卡车)))
+				 (NP (NN 资源)))
+			     (CC 和)
+			     (QP (CD 四十多万)
+				 (CLP (M 元))))))) 
+	</parse>
+	<arg n="0">
+	大隘社 
+	</arg>
+	<arg n="1">
+	三 卡车 资源 和 四十多万 元 
+	</arg>
+	<arg n="m" f="loc">
+	在 *OP* *T*-4 小小 的 北埔 地区 
+	</arg>
+	<arg n="m" f="tmp">
+	震灾 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

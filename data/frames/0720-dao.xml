@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 道 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="speaker"/>
+      <role argnum="1" argrole="utterance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 陈)
+			 (NN 女士))
+	      (VP (VP (VV 回忆))
+		  (VP (VV 道)
+		      (PU ，)
+		      (IP-OBJ (LCP-TMP (QP (CD 十)
+					   (CLP (M 年)))
+				       (LC 前))
+			      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VP (VV 来)
+							  (NP-OBJ (NN 祖国)
+								  (NN 大陆)))
+						      (VP (VV 就读))))
+					      (DEC 的)))
+				      (NP-PN (NR 台湾))
+				      (NP (NN 学生)))
+			      (VP (VV 屈指可数)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  陈 女士 
+	  </arg>
+	  <arg n="1">
+	  十 年 前 *OP* *T*-1 来 祖国 大陆 就读 的 台湾 学生 屈指可数 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

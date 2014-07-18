@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 教训 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person giving lesson"/>
+      <role argnum="1" argrole="person receiving lesson"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 要)
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (NP (NT １月)
+					   (NT １６日))
+				       (NP (NN 拳战)))
+				   (LC 中)))
+		      (PU ，)
+		      (PP (P 象)
+			  (NP-PN (NR 霍利菲尔德)))
+		      (ADVP (AD 那样))
+		      (ADVP (AD 好好))
+		      (VP (VV 教训)
+			  (ADVP (AD 一下))
+			  (NP-OBJ (PU “)
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (LCP-LOC (NP (NN 世界))
+							   (LC 上))
+						  (ADVP (AD 最))
+						  (VP (VA 坏))))
+					  (DEC 的)))
+				  (NP (NN 人))
+				  (PU ”)))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  “ *OP* *T*-3 世界 上 最 坏 的 人 ” 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 １月 １６日 拳战 中 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  象 霍利菲尔德 
+	  </arg>
+	  <arg n="m" f="adv">
+	  那样 
+	  </arg>
+	  <arg n="m" f="adv">
+	  好好 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

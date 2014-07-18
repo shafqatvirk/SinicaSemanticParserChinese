@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 舍弃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 abandons"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 新))
+		      (NP (NN 政府)))
+	      (VP (VV 坚持)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 要)
+			      (VP (VP (VV 舍弃)
+				      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VP (VV 源出)
+								  (NP-OBJ (NN 大陆)))
+							      (PU 、)
+							      (VP (PP-LOC (P 在)
+									  (LCP (NP (NN 国际))
+									       (LC 上)))
+								  (VP (VV 行之有年)))))
+						      (DEC 的)))
+					      (NP (PU 「)
+						  (NN 汉语)
+						  (NN 拼音法)
+						  (PU 」))))
+				  (PU ，)
+				  (VP (VV 改采)
+				      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (NP-PN (NR 台湾))
+								  (NP (NN 学者)))
+							  (VP (VV 自创)
+							      (NP-OBJ (-NONE- *T*-3))))
+						      (DEC 的)))
+					      (NP (PU 「)
+						  (ADJP (JJ 通用))
+						  (NP (NN 拼音法))
+						  (PU 」))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 源出 大陆 、 在 国际 上 行之有年 的 「 汉语 拼音法 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

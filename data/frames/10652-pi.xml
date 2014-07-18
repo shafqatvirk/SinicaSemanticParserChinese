@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 疲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is tired of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *pro*))
+			(VP (DP-ADV (DT 每)
+				    (CLP (M 次)))
+			    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 喜孜孜)))
+			    (VP (VP-FOC (VV 细数)
+					(NP-OBJ (-NONE- *T*-2)))
+				(VP (ADVP (AD 不))
+				    (VP (VV 疲))))))
+		    (DEC 的)))
+	    (NP (NN 纽币))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	细数 *T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 喜孜孜 
+	</arg>
+	<arg n="m" f="adv">
+	每 次 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

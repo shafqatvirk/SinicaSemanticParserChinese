@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 富集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-TPC (-NONE- *T*-1))
+			  (NP-LOC (NP-PN (NR 中国))
+				  (NP (NN 陆上)))
+			  (NP-SBJ (QP (OD 三))
+				  (ADJP (JJ 大))
+				  (NP (NN 天然气)))
+			  (VP (ADVP (AD 最))
+			      (VP (VA 富集))))
+		      (DEC 的)))
+	      (NP-PN (NR 四川)
+		     (NN 盆地))) 
+	  </parse>
+	  <arg n="0">
+	  三 大 天然气 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  中国 陆上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

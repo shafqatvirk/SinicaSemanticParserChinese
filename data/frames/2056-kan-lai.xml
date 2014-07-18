@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 views"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 在)
+				  (NP (NN 伊拉克人)))
+			  (VP (VV 看来))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VCD (VV 旷日)
+					   (VV 持久))))
+			      (DEC 的)))
+		      (NP (NN 武器)
+			  (NN 核查)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+				  (CP (IP (NP-PN-SBJ (NR 美国))
+					  (VP (PP-MNR (-NONE- *T*-2))
+					      (VP (VP (VV 制造)
+						      (NP-OBJ (NN 危机)))
+						  (PU ，)
+						  (VP (VV 达到)
+						      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							      (VP (VV 阻挠)
+								  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+									  (VP (PP-DIR (P 对)
+										      (NP-PN (NR 伊)))
+									      (VP (VV 解除)
+										  (NP-OBJ (NN 制裁)))))))))))
+				      (DEC 的)))
+			      (NP (NN 政治)
+				  (NN 工具)))))) 
+	  </parse>
+	  <arg n="0">
+	  在 伊拉克人 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 这样))
+			  (VP (VV 看来))))
+	      (PU ，)
+	      (NP-SBJ (NN 车子))
+	      (VP (ADVP (AD 确实))
+		  (ADVP (AD 在))
+		  (VP (VP (VV 载)
+			  (NP-OBJ (PN 我们)))
+		      (VP (VV 下山))
+		      (AS 了)))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这样 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing which seems to be true"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 鲍萨))
+	      (VP (VV 看来)
+		  (VP (VP (VV 下)
+			  (AS 了)
+			  (NP-OBJ (NN 苦功)))
+		      (VP (PU “)
+			  (VV 备课)
+			  (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  鲍萨 
+	  </arg>
+	  <arg n="0" f="prd">
+	  下 了 苦功 “ 备课 ” 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

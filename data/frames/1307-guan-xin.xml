@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关心 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="carer"/>
+      <role argnum="1" argrole="caring about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 北京))
+			  (NP (NN 青年)))
+		  (VP (VV 关心)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (PP (P 与)
+						  (NP (NN 生活)))
+					      (VP (VV 贴近))))
+				      (DEC 的)))
+			      (NP (NN 科技)
+				  (NN 进展))))) 
+	  </parse>
+	  <arg n="0">
+	  北京 青年 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 与 生活 贴近 的 科技 进展 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

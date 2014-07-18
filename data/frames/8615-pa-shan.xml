@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 爬山 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 叶进泰))
+	      (VP (VP (NP-TMP (NP (DP (DT 每))
+				  (NP (NN 晚)))
+			      (NP (NT 八点半)))
+		      (ADVP (AD 准时))
+		      (VP (VV 上床)))
+		  (PU ，)
+		  (VP (NP-TMP (NT 四点))
+		      (IP-TMP (NP-SBJ (NN 天))
+			      (VP (ADVP (AD 未))
+				  (VP (VA 亮))))
+		      (ADVP (AD 就))
+		      (VP (VV 起身)))
+		  (PU ，)
+		  (VP (NP-TMP (NT 五点))
+		      (VP (VP (VV 到达)
+			      (LCP-OBJ (NP (NP-PN (NR 阳明山))
+					   (NP (NN 花钟)))
+				       (LC 前)))
+			  (VP (VV 开始)
+			      (VP (VV 爬山))))))) 
+	  </parse>
+	  <arg n="0">
+	  叶进泰 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  五点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

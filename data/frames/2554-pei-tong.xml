@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 陪同 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people accompanied"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VE 有)
+	      (NP-OBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (VV 陪同)
+					      (NP-PN-OBJ (NR 鲁杰罗)))
+					  (VP (VV 来)
+					      (NP-PN-OBJ (NR 沪)))))
+				  (DEC 的)))
+			  (NP-APP (NP-PN (NR 中国)
+					 (NN 外经贸部))
+				  (NP (NN 副部长)))
+			  (NP-PN (NR 龙永图))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  鲁杰罗 
+	  </arg>
+	  <arg n="2">
+	  来 沪 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (PP-LOC (P 在)
+		      (LCP (IP (NP-SBJ (QP (OD 第一)
+					   (CC 和)
+					   (OD 第三))
+				       (NP (NN 被告)))
+			       (VP (VV 陪同)))
+			   (LC 下)))
+	      (VP (VV 往)
+		  (NP-OBJ (NN 机场)))) 
+	  </parse>
+	  <arg n="0">
+	  第一 和 第三 被告 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

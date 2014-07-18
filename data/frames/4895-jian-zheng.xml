@@ -1,0 +1,138 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 见证 </id>
+  <frameset id="f1" edef="witness">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 witnesses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (ADVP (AD 曾经))
+				(VP (VV 见证)
+				    (NP-OBJ (NP (NN 省府))
+					    (DP (DT 整)
+						(CLP (M 个)))
+					    (NP (NN 疏迁)
+						(NN 过程))))))
+			(DEC 的)))
+		(NP-APP (ADJP (JJ 资深))
+			(NP (NN 省政)
+			    (NN 记者)))
+		(NP-PN (NR 余如季))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	省府 整 个 疏迁 过程 
+	</arg>
+	<arg n="m" f="adv">
+	曾经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (UCP-APP (NP (DNP (NP (NN 战争)
+					  (NN 末期))
+				      (DEG 的))
+				 (NP (NN 凋弊)))
+			     (PU ，)
+			     (IP (DNP (LCP (IP (NP-PN-SBJ (NR 台湾))
+					       (VP (VV 光复)))
+					   (LC 时))
+				      (DEG 的))
+				 (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VP (ADVP (AD 亦))
+					     (VP (VV 喜)))
+					 (VP (ADVP (AD 亦))
+					     (VP (VV 悲))))))
+			     (PU ，)
+			     (PP (PP (P 从)
+				     (NP (ADJP (JJ 荒僻))
+					 (NP (NN 农村))))
+				 (PP (P 到)
+				     (NP (ADJP (JJ 富足))
+					 (ADJP (JJ 小))
+					 (NP (NN 镇)))))
+			     (PU …)
+			     (PU …))
+		    (PU ，)
+		    (ADJP (JJ 种种))
+		    (NP (NN 变化)))
+	    (PU ，)
+	    (NP-SBJ (PN 他们))
+	    (VP (ADVP (AD 都))
+		(ADVP (AD 深刻))
+		(VP (VV 见证)
+		    (AS 著)))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="1">
+	战争 末期 的 凋弊 ， 台湾 光复 时 的 *PRO* 亦 喜 亦 悲 ， 从 荒僻 农村 到 富足 小 镇 … … ， 种种 变化 
+	</arg>
+	<arg n="m" f="adv">
+	深刻 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="bear witness to">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 bears witness to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 纺研))
+			 (DEG 的))
+		    (QP (CD 四十))
+		    (NP (NN 春秋)))
+	    (PU ，)
+	    (VP (ADVP (AD 正好))
+		(VP (VV 见证)
+		    (NP-OBJ (DNP (NP (NP-PN (NR 台湾))
+				     (NP (NN 纺织)
+					 (NN 工业)))
+				 (DEG 的))
+			    (NP (NN 兴衰)
+				(NN 起伏)))))) 
+	</parse>
+	<arg n="0">
+	纺研 的 四十 春秋 
+	</arg>
+	<arg n="1">
+	台湾 纺织 工业 的 兴衰 起伏 
+	</arg>
+	<arg n="m" f="adv">
+	正好 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

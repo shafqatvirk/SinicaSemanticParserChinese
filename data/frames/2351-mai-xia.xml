@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 埋下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 buries/lays down"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (PP-LOC (P 在)
+			  (LCP (NP (DNP (NP-PN (NR 韩国))
+					(DEG 的))
+				   (NP (NN 错误)
+				       (NN 示范)))
+			       (LC 下)))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 泰国)
+				 (PU 、)
+				 (NR 印尼))
+			  (NP (NN 石化业)))
+		  (VP (ADVP (AD 也))
+		      (ADVP (AD 纷纷))
+		      (VP (VSB (VV 举债)
+			       (VV 扩充)))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 埋下)
+		      (NP-OBJ (DNP (NP (NN 今日))
+				   (DEG 的))
+			      (NP (NN 败因)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  今日 的 败因 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

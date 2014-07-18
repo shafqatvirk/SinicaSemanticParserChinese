@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 仅於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is limited to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 老虎))
+		    (NP (NN 旋风)))
+	    (VP (ADVP (AD 还))
+		(ADVP (AD 不))
+		(VP (VV 仅於)
+		    (NP-OBJ (NN 球技))))) 
+	</parse>
+	<arg n="0">
+	老虎 旋风 
+	</arg>
+	<arg n="1">
+	球技 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

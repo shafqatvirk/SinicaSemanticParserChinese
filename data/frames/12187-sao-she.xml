@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扫射 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 shoots at"/>
+      <role argnum="2" argrole="gun arg0 shoots with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 狼))
+	      (VP (VP (PP-LOC (P 在)
+			      (LCP (NP (DNP (NP (NN 直升机)
+						(NN 猎枪))
+					    (DEG 的))
+				       (NP (NN 扫射)))
+				   (LC 下)))
+		      (ADVP (AD 仓惶))
+		      (VP (VV 奔逃)))
+		  (PU ，)
+		  (VP (ADVP (AD 却))
+		      (ADVP (AD 不))
+		      (VP (VV 忘)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VSB (VV 回头)
+					   (VV 凝视))
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 倒卧)
+							      (PP-LOC (P 在)
+								      (LCP (NP (NN 血泊))
+									   (LC 中)))))
+						      (DEC 的)))
+					      (ADJP (JJ 终生))
+					      (NP (NN 伴侣))))))))) 
+	  </parse>
+	  <arg n="1">
+	  狼 
+	  </arg>
+	  <arg n="2">
+	  直升机 猎枪 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

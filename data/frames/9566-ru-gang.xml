@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入港 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity getting into harbor"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 在)
+			  (NP (NT 星期五)
+			      (PU 、)
+			      (NT 六)
+			      (PU 、)
+			      (NT 日)))
+		  (VP (VPT (VV 看)
+			   (AD 不)
+			   (VV 到))
+		      (NP-OBJ (NN 樱花虾))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 入港)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

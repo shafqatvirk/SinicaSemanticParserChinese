@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 名列前茅 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 其))
+		      (NP (NN 数量)
+			  (NN 比例)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (DP (DT 全))
+				       (NP (NN 国)))
+				   (NP (NP (ADJP (JJ 高))
+					   (ADJP (JJ 新))
+					   (NP (NN 技术)))
+				       (NP (NN 产业)))
+				   (NP (NN 开发区)))
+			       (LC 中)))
+		  (VP (VV 名列前茅)))) 
+	  </parse>
+	  <arg n="0">
+	  其 数量 比例 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 全 国 高 新 技术 产业 开发区 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

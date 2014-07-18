@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 游走 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 wanders"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP-FOC (VV 游走)
+			(NP-OBJ (ADJP (JJ 不同))
+				(NP (NN 音域))))
+		(VP (ADVP (AD 都))
+		    (VP (VV 游刃有馀))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	不同 音域 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 不论))
+			(VP (VV 成名)
+			    (ADVP (AD 与否)))))
+	    (PU ，)
+	    (NP-SBJ (PN 他们))
+	    (VP (ADVP (AD 仍))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (LCP-LOC (NP (NN 网路))
+						     (LC 上))
+					    (ADVP (AD 自由))
+					    (VP (VV 游走))))
+				    (DEC 的)))
+			    (NP (NN 灵魂)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	网路 上 
+	</arg>
+	<arg n="m" f="adv">
+	自由 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

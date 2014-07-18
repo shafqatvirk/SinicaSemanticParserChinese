@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 经受 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 goes through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-SBJ (NP-APP (NP-PN (NN 铁道部))
+					  (ADJP (JJ 总))
+					  (NP (NN 工程师)))
+				  (NP-PN (NR 华茂昆)))
+			  (VP (VV 介绍))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 京九)
+			 (NN 铁路))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			       (VP (VSB (VV 开通)
+					(VV 运营))
+				   (QP-EXT (CD 一)
+					   (CLP (M 年)))))
+			   (LC 来))
+		  (PU ，)
+		  (VP (VP (VV 经受)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NN 严冬)
+					   (NN 盛夏)
+					   (CC 和)
+					   (NN 洪水))
+				       (DEG 的))
+				  (NP (NN 考验))))
+		      (PU ，)
+		      (VP (VV 保证)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NN 运输))
+				       (DEG 的))
+				  (NP (NN 安全)
+				      (NN 畅通))))
+		      (PU ，)
+		      (VP (VV 发挥)
+			  (AS 了)
+			  (NP-OBJ (NN 社会)
+				  (NN 经济)
+				  (NN 效益)))))) 
+	  </parse>
+	  <arg n="0">
+	  京九 铁路 	  
+	  </arg>
+	  <arg n="1">
+	  严冬 盛夏 和 洪水 的 考验 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *pro* 开通 运营 一 年 来 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 铁道部 总 工程师 华茂昆 介绍 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (QP (DNP (NP (NT 过去))
+				    (DEG 的))
+			       (QP (CD 一)
+				   (CLP (M 年))))
+			   (LC 里)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国))
+	      (VP (VRD (VV 经受)
+		       (VV 住))
+		  (AS 了)
+		  (NP-OBJ (DNP (NP (NP (NP-PN (NR 亚洲))
+				       (NP (NN 金融)
+					   (NN 风暴)))
+				   (CC 和)
+				   (NP (NN 洪涝)
+				       (NN 灾害)))
+			       (DEG 的))
+			  (NP (NN 考验))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <arg n="1">
+	  亚洲 金融 风暴 和 洪涝 灾害 的 考验 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 过去 的 一 年 里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

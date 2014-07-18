@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 伴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="accompanier"/>
+    <role argnum="1" argrole="accompanied"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (LCP-LOC (NP (NN 林))
+               (LC 中))
+      (PU ，)
+      (NP-SBJ (DNP (NP (NN 鸟))
+                   (DEG 的))
+              (NP (NN 鸣啭)))
+      (VP (VV 伴)
+          (AS 着)
+          (NP-OBJ (DNP (NP (NN 花))
+                       (DEG 的))
+                  (NP (NN 欢颜))))))
+	</parse>
+	<arg n="M" f="LOC"> 林 中 </arg>
+	<arg n="0"> 鸟 的 鸣啭 </arg>
+	<V/>
+	<arg n="1"> 花 的 欢颜 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跨前 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing (forward steps) arg0 makes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (QP (CD 一))
+		      (NP (NN 方面)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 鼓励)
+		      (NP-OBJ (CP (WHNP-5 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-5))
+				      (VP (VE 有)
+					  (NP-OBJ (NN 馀力)))))
+			      (NP (NN 者)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 跨前)
+				  (QP-OBJ (CD 一)
+					  (CLP (M 步))))
+			      (PU ，)
+			      (VP (VV 可以)
+				  (VP (VV 进行)
+				      (NP-OBJ (CP (WHNP-6 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-6))
+							  (VP (VA 新)))
+						      (DEC 的)))
+					      (NP (NN 投资)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一 步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

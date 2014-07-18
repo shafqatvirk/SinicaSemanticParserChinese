@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 破获 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="case solved/criminal arrested"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (PP-MNR (P 据)
+			   (IP (NP-SBJ (NP (DP (DT 全))
+					   (NP (NN 国)))
+				       (NP (NN 扫黄办)))
+			       (VP (VV 介绍))))
+		   (PU ，)
+		   (LCP-TMP (NP (NT 今年))
+			    (LC 以来))
+		   (NP-SBJ (NP-PN (NR 中国))
+			   (NP (NP (DP (DT 各))
+				   (NP (NN 地)))
+			       (CC 和)
+			       (NP (DP (DT 各))
+				   (ADJP (JJ 有关))
+				   (NP (NN 部门)))))
+		   (PU ，)
+		   (VP (VP (ADVP (AD 进一步))
+			   (VP (VV 加强)
+			       (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					       (VP (VCD (VV 扫黄)
+							(VV 打非))))
+				       (NP (NN 斗争)))))
+		       (PU ，)
+		       (VP (VV 加大)
+			   (NP-OBJ (DNP (PP (P 对)
+					    (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+							(VP (VP (VV 走私)
+								(NP-OBJ (-NONE- *RNR*-1)))
+							    (PU 、)
+							    (VP (VV 制作)
+								(NP-OBJ (-NONE- *RNR*-1)))
+							    (PU 、)
+							    (VP (VV 贩卖)
+								(NP-OBJ-1 (ADJP (JJ 非法))
+									  (NP (NN 出版物))))))
+						(ADJP (JJ 大))
+						(NP (NN 要案))))
+					(DEG 的))
+				   (NP (NN 查处)
+				       (NN 力度)
+				       (CC 和)
+				       (NN 刑事)
+				       (NN 处罚)
+				       (NN 力度))))
+		       (PU ，)
+		       (VP (VP (VV 破获)
+			       (NP-OBJ (-NONE- *RNR*-3)))
+			   (CC 并)
+			   (VP (VV 审结)
+			       (NP-OBJ-3 (QP (CD 一)
+					     (CLP (M 批)))
+					 (CP (WHNP-2 (-NONE- *OP*))
+					     (CP (IP (NP-TPC (-NONE- *T*-2))
+						     (NP-SBJ (NN 情节))
+						     (VP (VA 严重)))
+						 (DEC 的)))
+					 (ADJP (JJ 典型))
+					 (NP (NN 案件)))))
+		       (PU ，)
+		       (VP (PP-DIR (P 对)
+				   (NP (NN 犯罪)
+				       (NN 分子)))
+			   (VP (VV 给予)
+			       (NP-OBJ (ADJP (JJ 有效))
+				       (NP (NN 打击)))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 各 地 和 各 有关 部门 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-3 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 以来 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 全 国 扫黄办 介绍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 害 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 harms"/>
+      <role argnum="2" argrole="thing arg1 suffers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 坑)
+				      (NP-OBJ (NN 农)))
+				  (VP (VV 害)
+				      (NP-OBJ (NN 农)))))
+		      (NP (NN 案件)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 屡屡))
+		  (VP (VV 发生)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  农 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 搞)
+			      (VP-EXT (ADVP (AD 不))
+				      (VP (VA 好)))))
+		  (ADVP (AD 还))
+		  (VP (VV 会)
+		      (VP (VV 害)
+			  (NP-OBJ (PRN (PU （)
+				       (NP (NN 资讯部))
+				       (PU ）))
+				  (NN 老板))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (SB 被)
+				  (VP (VV 炒鱿鱼)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  （ 资讯部 ） 老板 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 被 炒鱿鱼 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 搞 不 好 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 指称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 claims"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (LCP-TMP (NP (NT 九月))
+						 (LC 初))
+					(VP (VV 成立))))
+				(DEC 的)))
+			(NP-PN (NN 调改会)))
+		    (NP (NN 成员)))
+	    (VP (VV 指称)
+		(PU ，)
+		(IP-OBJ (NP-SBJ (ADJP (JJ 新))
+				(NP (NN 政府)))
+			(VP (VP (VV 循)
+				(NP-OBJ (NP (NP-PN (NR 国民党))
+					    (NP (NN 时代)))
+					(NP (NN 做法))))
+			    (PU ，)
+			    (VP (PP-MNR (P 藉)
+					(NP (DNP (NP (PU 「)
+						     (NN 国情)
+						     (NN 调查)
+						     (PU 」))
+						 (DEG 之))
+					    (NP (NN 名))))
+				(VP (VV 行)
+				    (NP-OBJ (DNP (NP (PU 「)
+						     (NN 政治)
+						     (NN 侦防)
+						     (PU 」))
+						 (DEG 之))
+					    (NP (NN 实))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 九月 初 成立 的 调改会 成员 
+	</arg>
+	<arg n="1">
+	新 政府 循 国民党 时代 做法 ， 藉 「 国情 调查 」 之 名 行 「 政治 侦防 」 之 实 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-ADV (P 至於)
+		(NP (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (LB 被)
+				    (IP-OBJ (NP-SBJ (NP-PN (NN 调改会))
+						    (NP (NN 成员)))
+					    (VP (VV 指称)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 执行)
+							    (NP-OBJ (NP (PU 「)
+									(NN 政治)
+									(NN 侦防)
+									(PU 」))
+								    (NP (NN 业务)))))))))
+			    (DEC 的)))
+		    (NP-PN (NN 调查局)))) 
+	</parse>
+	<arg n="0">
+	调改会 成员 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 执行 「 政治 侦防 」 业务 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

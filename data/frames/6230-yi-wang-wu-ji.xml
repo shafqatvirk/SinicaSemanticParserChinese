@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一望无际 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (ADVP (AD 就))
+		    (PP (P 像)
+			(NP (DNP (NP (NT 以往))
+				 (DEG 的))
+			    (NP-PN (NR 美国))
+			    (NP (NN 西部)))))
+	    (PU ，)
+	    (NP-SBJ (DNP (QP (CD 上万)
+			     (CLP (M 头)))
+			 (DEG 的))
+		    (NP (NN 野牛)))
+	    (VP (VV 奔驰)
+		(PP-LOC (P 在)
+			(LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				     (CP (IP (NP-SBJ (-NONE- *T*-1))
+					     (VP (VV 一望无际)))
+					 (DEC 的)))
+				 (NP (NN 平原)))
+			     (LC 上))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

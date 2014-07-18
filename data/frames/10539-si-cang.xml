@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 私藏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 stores/hides in secret place"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (PN 大家))
+	    (VP (VP (ADVP (AD 只))
+		    (VP (VV 知道)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 私藏)
+					(NP-OBJ (NN 知识)))
+				    (PU 、)
+				    (VP (VP (VV 埋头))
+					(VP (VV 赚)
+					    (NP-OBJ (NN 钱))))))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 不))
+		    (VP (VV 知道)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 广授)
+					(NP-OBJ (NN 知识)))
+				    (PU ，)
+				    (VP (VV 让)
+					(NP-OBJ (NN 别人))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (PP-BNF (P 替)
+							(NP (PN 自己)))
+						(VP (VV 赚)
+						    (NP-OBJ (NN 钱)))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	知识 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

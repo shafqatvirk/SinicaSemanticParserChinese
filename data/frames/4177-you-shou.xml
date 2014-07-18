@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 邮售 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing sold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 我))
+		      (NP (NN 部)))
+	      (VP (ADVP (AD 现))
+		  (ADVP (AD 优惠))
+		  (VP (VV 邮售)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-PN-SBJ (NR 三环)
+						     (NN 出版社))
+					  (VP (VV 发行)
+					      (NP-OBJ (-NONE- *T*-1))))
+				      (DEC 的)))
+			      (DP (DT 全)
+				  (CLP (M 套)))
+			      (NP (NN 教材)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 部 
+	  </arg>
+	  <arg n="1">
+	  *OP* 三环 出版社 发行 *T*-1 的 全 套 教材 
+	  </arg>
+	  <arg n="m" f="adv">
+	  优惠 
+	  </arg>
+	  <arg n="m" f="adv">
+	  现 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

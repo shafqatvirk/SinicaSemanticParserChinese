@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 护卫 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 guards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (VV 热爱)
+				    (NP-PN-OBJ (NR 淡水))))
+			    (DEC 的)))
+		    (NP (NN 人们)))
+	    (PU ，)
+	    (VP (VP (DVP (VP (VA 小心翼翼))
+			 (DEV 地))
+		    (VP (VV 护卫)
+			(AS 著)
+			(NP-PN-OBJ (NR 淡水))))
+		(PU ，)
+		(VP (ADVP (AD 随时))
+		    (VP (VV 害怕)
+			(NP-OBJ (NN 巨兽))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 来袭))
+				(PU ，)
+				(VP (DVP (NP (NP (QP (CD 一))
+						 (NP (NN 土)))
+					     (NP (QP (CD 一))
+						 (NP (NN 掘))))
+					 (DEV 地))
+				    (VP (VV 挖掉)
+					(NP-PN-OBJ (NR 淡水))))))))
+		(PU ，)
+		(VP (VV 害怕)
+		    (NP-OBJ (NN 子子孙孙))
+		    (PU ，)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 也))
+			    (VP (VV 要)
+				(VP (PP (P 像)
+					(NP (PN 他们)))
+				    (ADVP (AD 拼命))
+				    (PP-DIR (P 由)
+					    (LCP (NP (NN 图像)
+						     (CC 与)
+						     (NN 记忆))
+						 (LC 中)))
+				    (VP (VV 寻找)
+					(NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+							(CP (IP (NP-PN-SBJ (NN 淡水))
+								(VP (ADVP (AD 曾))
+								    (VP (VE 有)
+									(NP-OBJ (-NONE- *T*-1)))))
+							    (DEC 的)))
+						    (NP (NN 古朴)))
+						(PU 、)
+						(NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+								(VP (PP (P 与)
+									(NP (NN 自然)))
+								    (VP (VV 亲近))))
+							    (DEC 的))
+						    (NP (NN 欢乐)))))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-3 热爱 淡水 的 人们 
+	</arg>
+	<arg n="1">
+	淡水 
+	</arg>
+	<arg n="m" f="adv">
+	小心翼翼 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

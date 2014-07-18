@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 快过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is faster than"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-1 (NP-TPC (DNP (NP (NN 时代))
+			       (DEG 的))
+			  (NP (NN 变化)))
+		  (QP-SBJ (CD 一)
+			  (CLP (M 波)))
+		  (VP (VV 快过)
+		      (QP-OBJ (CD 一)
+			      (CLP (M 波))))) 
+	</parse>
+	<arg n="0" f="psr">
+	时代 的 变化 
+	</arg>
+	<arg n="0" f="pse">
+	一 波 
+	</arg>
+	<arg n="1" f="psr">
+	时代 的 变化 
+	</arg>
+	<arg n="1" f="pse">
+	一 波 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

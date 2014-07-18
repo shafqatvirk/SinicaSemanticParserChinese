@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赶搭 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 catches and rides on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 想)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 充电)))))
+			    (DEC 的)))
+		    (NP (NN 社会)
+			(NN 老鸟)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 赶搭)
+		    (NP-OBJ (DP (DT 这)
+				(CLP (M 班)))
+			    (NP (NN 学习)
+				(NN 列车)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 想 *PRO* 充电 的 社会 老鸟 
+	</arg>
+	<arg n="1">
+	这 班 学习 列车 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

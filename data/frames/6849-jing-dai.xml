@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 静待 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 waits for"/>
+    <role argnum="2" argrole="thing arg0 waits to obtain"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 保持)
+		    (NP-OBJ (NN 从容)
+			    (NN 心境)))
+		(PU ，)
+		(VP (VV 静待)
+		    (NP-OBJ (NN 机会))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 来临)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	机会 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 来临 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 实际))
+		    (NP (NN 调查)
+			(NN 结果)))
+	    (PU ，)
+	    (VP (VV 需)
+		(VP (VV 静待)
+		    (NP-OBJ (NN 司法)
+			    (NN 单位))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 调查)))))) 
+	</parse>
+	<arg n="2">
+	实际 调查 结果 
+	</arg>
+	<arg n="1">
+	司法 单位 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 调查 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

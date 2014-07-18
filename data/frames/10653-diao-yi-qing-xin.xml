@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 掉以轻心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 doesn't pay enough attention to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 虽))
+			(PP-PRP (P 因)
+				(NP (NP (CP (WHNP-1 (-NONE- *OP*))
+					    (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 委托)
+						    (NP-OBJ (-NONE- *pro*)))))
+					(NP (NN 企业)))
+				    (NP (NN 家数))))
+			(ADVP (AD 高))
+			(VP (VV 居)
+			    (NP-OBJ (NP (NN 市场))
+				    (QP (OD 第一))
+				    (NP (NN 品牌))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NN 104))
+	    (VP (ADVP (AD 仍))
+		(ADVP (AD 不))
+		(VP (VV 敢)
+		    (VP (VV 掉以轻心))))) 
+	</parse>
+	<arg n="0">
+	104 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 虽 因 *OP* *T*-1 委托 *pro* 企业 家数 高 居 市场 第一 品牌 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

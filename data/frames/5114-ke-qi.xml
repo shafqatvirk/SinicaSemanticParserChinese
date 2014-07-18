@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 客气 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is friendly to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 很))
+		    (VP (VA 客气)))
+		(PU ，)
+		(VP (ADVP (AD 总))
+		    (VP (VV 说)
+			(CP-OBJ (IP (NP-SBJ (PN 自己))
+				    (VP (ADVP (AD 不))
+					(VP (VC 是)
+					    (NP-PRD (NN 专家)))))
+				(PU ，)
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 只是))
+					    (ADVP (AD 顺便))
+					    (VP (VP (VV 帮)
+						    (NP-OBJ (PN 我们)))
+						(VP (VV 看)
+						    (ADVP (AD 一下))))))
+				    (SP 而已))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="m" f="adv">
+	很 
+	</arg>
+	<arg n="m" f="dis">
+	但是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

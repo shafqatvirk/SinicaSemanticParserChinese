@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 接手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 takes over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ-3 (-NONE- *pro*))
+	    (VP (PP-LGS (P 由)
+			(NP-PN (NR 李庆华)))
+		(VP (VV 接手)
+		    (NP-OBJ (-NONE- *-3))))) 
+	</parse>
+	<arg n="0">
+	由 李庆华 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-WH-SBJ (PN 谁))
+	      (VP (VV 能)
+		  (VP (VV 接手)
+		      (NP-OBJ (DNP (NP (PN 你))
+				   (DEG 的))
+			      (NP (NN 工作)))))) 
+	</parse>
+	<arg n="0">
+	谁 
+	</arg>
+	<arg n="1">
+	你 的 工作 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (ADJP (JJ 已故))
+			 (DEG 的)))
+	    (PU ，)
+	    (VP (VE 有)
+		(IP-OBJ (NP-SBJ (QP (OD 第二)
+				    (CLP (M 代))))
+			(VP (VV 接手))))) 
+	</parse>
+	<arg n="0">
+	第二 代 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

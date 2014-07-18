@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 has the intention to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 朝野))
+		    (NP (NP (DP (DT 各))
+			    (NN 党)))
+		    (CP (WHNP-2 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VV 有心)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 参选))))))
+		    (NP (NN 人士)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 蠢蠢欲动)))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	*PRO* 参选 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 诚))
+			(VP (PP-PRD (P 如)
+				    (IP (NP-PN-SBJ (NR 陈水扁)
+						   (NN 总统))
+					(VP (MSP 所)
+					    (VP (VV 言))))))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 有心)))
+	    (VP (ADVP (AD 就))
+		(VP (VE 有)
+		    (NP-OBJ (NN 力量))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

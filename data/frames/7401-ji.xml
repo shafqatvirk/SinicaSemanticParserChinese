@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 济 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 relieves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (IP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-MNR (P 靠著)
+					      (NP (NN 中央)
+						  (NN 政府)))
+				      (VP (PU 「)
+					  (VP (VV 削)
+					      (NP-OBJ (DNP (NP-PN (NR 台北))
+							   (DEG 之))
+						      (NP (NN 富))))
+					  (PU 、)
+					  (VP (VV 济)
+					      (NP-OBJ (DNP (NP (NN 县)
+							       (NN 市))
+							   (DEG 之))
+						      (NP (NN 穷))))
+					  (PU 」))))
+			      (DEC 的))
+		      (IP (NP-SBJ (NN 财政))
+			  (VP (ADVP (AD 重))
+			      (VP (VV 分配)))))
+	      (PU ，)
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 扭转)
+				  (NP-OBJ (NN 局势)))))
+		  (ADVP (AD 又))
+		  (VP (VE 有)
+		      (NP-OBJ (QP-WH (CD 多少))
+			      (NP (NN 助益)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	县 市 之 穷 
+	</arg>
+	<arg n="m" f="mnr">
+	靠著 中央 政府 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

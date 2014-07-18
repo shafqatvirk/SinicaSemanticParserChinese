@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 决裂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 breaks away from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VP (VPT (VV 看)
+			 (AD 不)
+			 (VA 清))
+		    (IP-Q-OBJ (NP-SBJ (DNP (NP (NT 清末))
+					   (DEG 的))
+				      (NP (NN 积弱不振)))
+			      (PU ，)
+			      (VP (VC 是)
+				  (NP-PRD (NP (DNP (NP (NN 时代))
+						   (DEG 的))
+					      (NP (NN 问题)))
+					  (PU ，)
+					  (CC 还是)
+					  (NP (DNP (NP (NN 传统))
+						   (DEG 的))
+					      (NP (NN 问题)))))))
+		(PU ，)
+		(VP (ADVP (AD 因此))
+		    (PP-LOC (P 在)
+			    (LCP (NP (NN 激情))
+				 (LC 中)))
+		    (PP-DIR (P 对)
+			    (NP (NN 文化)))
+		    (VP (VV 采取)
+			(IP-OBJ (DNP (ADJP (JJ 一刀斩断式))
+				     (DEG 的))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (PP (P 与)
+					    (NP (PN 之)))
+					(VP (VV 决裂))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	与 之 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

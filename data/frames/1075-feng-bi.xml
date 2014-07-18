@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 封闭 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-TMP (NT 昨日))
+					  (VP (VV 发出)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (NP (NN 封闭令)))
+		  (PU ，)
+		  (VP (VV 封闭)
+		      (NP-OBJ (NP (DNP (LCP (NP (NN 寺))
+					    (LC 内))
+				       (DEG 的))
+				  (NP (NN 主庙宇)
+				      (CC 和)
+				      (NN 主塔)
+				      (PU 、)
+				      (NN 龛堂)
+				      (PU 、)
+				      (NN 宿舍)))
+			      (CC 及)
+			      (NP (NP (PN 其))
+				  (ADJP (JJ 附属))
+				  (NP (NN 建筑物)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *pro* 昨日 发出 (*T*-1)->(封闭令) 的 封闭令 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  寺 内 的 主庙宇 和 主塔 、 龛堂 、 宿舍 及 其 附属 建筑物 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TMP (DT 该)
+		      (CLP (M 日)))
+	      (NP-SBJ (DNP (NP-PN (NR 尖沙咀))
+			   (DEG 的))
+		      (QP (CD 大部分))
+		      (ADJP (JJ 主要))
+		      (NP (NN 街道)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 封闭)))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  该 日 	  
+	  </arg>
+	  <arg n="1">
+	  尖沙咀 的 大部分 主要 街道 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 饱尝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 tastes/experiences"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (PP-TMP (ADVP (AD 正))
+		    (PP (P 当)
+			(IP (NP-SBJ (NN 人们))
+			    (VP (VV 庆幸)
+				(IP-OBJ (NP-SBJ (NN 夏季))
+					(VP (ADVP (AD 已))
+					    (VP (VV 过))))))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NT 十月份))
+			 (DEG 的))
+		    (QP (CD 两)
+			(CLP (M 个)))
+		    (NP (NN 秋台)
+			(PRN (PU ——)
+			     (NP-PN (NR 瑞伯)
+				    (CC 和)
+				    (NR 芭比丝)))))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 轻))
+		    (VP (VV 扫)
+			(NP-OBJ (NN 裙摆))))
+		(PU ，)
+		(VP (VV 让)
+		    (NP-OBJ (NN 北部)
+			    (NN 地区))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 也))
+			    (VP (VV 饱尝)
+				(NP-OBJ (DNP (NP (NN 淹水))
+					     (DEG 之))
+					(NP (NN 苦))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	淹水 之 苦 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无效 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VP (ADVP (AD 未))
+					  (VP (PP-PRD (P 经)
+						      (NP (NN 批准)))))
+				      (CC 而)
+				      (VP (ADVP (AD 擅自))
+					  (VP (VV 签订)))))
+			      (DEC 的)))
+		      (NP (NN 国际)
+			  (NN 商业)
+			  (NN 贷款)
+			  (NN 协议)))
+	      (VP (VV 无效))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 未 经 批准 而 擅自 签订 的 国际 商业 贷款 协议 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

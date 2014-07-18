@@ -1,0 +1,160 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 晒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="entity arg1 is bathed in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 最後))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 再))
+		(VP (VP (VV 晒)
+			(NP-OBJ (QP (QP (CD 两)
+					(CLP (-NONE- *RNR*-1)))
+				    (QP (CD 三)
+					(CLP-1 (M 天))))
+				(NP (NN 太阳))))
+		    (PU ，)
+		    (VP (VV 晒出)
+			(NP-OBJ (DNP (ADJP (JJ 多馀))
+				     (DEG 的))
+				(NP (NN 油份))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	两 *RNR*-1 三 天 太阳 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (DNP (NP-PN (NR 新竹))
+			 (DEG 的))
+		    (IP (IP (NP-SBJ (NN 风))
+			    (VP (VA 强)))
+			(IP (NP-SBJ (NN 日))
+			    (VP (VA 烈)))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 很))
+			(VP (VV 适合)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 晒)
+					(NP-OBJ (NN 米粉)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	米粉 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 一))
+			(VP (VV 晒))))
+	    (NP-SBJ (NN 皮肤))
+	    (VP (ADVP (AD 就))
+		(VP (VV 起泡)))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VPT (VV 禁)
+		     (AD 不)
+		     (VV 起))
+		(IP-OBJ (NP-SBJ (NN 太阳))
+			(VP (VV 晒))))) 
+	</parse>
+	<arg n="2">
+	太阳 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 puts under the sun"/>
+    <role argnum="2" argrole="entity created by sunshine on arg1"/>
+    <role argnum="3" argrole="the sunshine"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg3"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (LCP (NP (NN 背))
+		     (LC 上))
+		(CP (WHNP-3 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-3))
+			    (VP (LB 被)
+				(CP-OBJ (WHNP-2 (-NONE- *OP*))
+					(IP (NP-SBJ (NP-PN (NR 帛琉))
+						    (NP (NN 阳光)))
+					    (VP (VRD (VV 晒)
+						     (VV 出来))
+						(NP-OBJ (-NONE- *T*-2)))))))
+			(DEC 的)))
+		(NP (NN 泳装)
+		    (NN 痕迹))) 
+	</parse>
+	<arg n="2">
+	*T*-3 
+	</arg>
+	<arg n="3">
+	帛琉 阳光 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

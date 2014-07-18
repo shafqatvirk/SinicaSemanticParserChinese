@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 锐减 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing diminishing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由于)
+		      (IP (NP-TMP (NT 今年))
+			  (NP-SBJ (NN 石油)
+				  (NN 收入))
+			  (VP (VV 锐减))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 尼))
+		      (NP (NN 政府)
+			  (NN 财政)))
+	      (VP (VV 入不敷出))) 
+	  </parse>
+	  <arg n="0">
+	  石油 收入 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing diminishing"/>
+      <role argnum="1" argrole="amount reached"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 到)
+			  (NP (NT １０月份)))
+		  (ADVP (AD 则))
+		  (VP (VRD (VV 锐减)
+			   (VV 到))
+		      (QP-OBJ (CD ３．６８亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  ３．６８亿 美元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 １０月份 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

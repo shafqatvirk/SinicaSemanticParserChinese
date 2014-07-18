@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 操 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="speaker"/>
+    <role argnum="1" argrole="languages, dialects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-SBJ (NP (NN 导游))
+          (PRN (PU ———)
+               (NP (QP (CD 一)
+                       (CLP (M 位)))
+                   (CP (WHNP-1 (-NONE- *OP*))
+                       (CP (IP (NP-SBJ (-NONE- *T*-1))
+                               (VP (VV 会)
+                                   (VP (VV 操)
+                                       (NP-OBJ (QP (CD ５)
+                                                   (CLP (M 种)))
+                                               (NP (NR 欧洲)
+                                                   (NN 语言))))))
+                           (DEC 的)))
+                   (NP (NN 女郎)))
+               (PU ———))))
+	</parse>
+	<arg n="0"> (*T*-1)->(女郎) </arg>
+	<V/>
+	<arg n="1"> ５ 种 欧洲 语言 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

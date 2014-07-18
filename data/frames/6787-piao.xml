@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity floating"/>
+    <role argnum="1" argrole="place arg0 floats"/>
+    <role argnum="2" argrole="place arg0 floats to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 有的))
+	    (VP (VV 飘)
+		(AS 著)
+		(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VA 长长)))
+				(DEC 的)))
+			(NP (NN 羽毛))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 长长 的 羽毛 
+	</arg>
+	<arg n="1">
+	有的 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 乘坐)
+				(NP-OBJ (NN 拖曳伞)))
+			    (VP (VV 飘)
+				(PP (P 到)
+				    (NP (NN 空中))))))
+		(PU ，)
+		(ADVP (AD 还))
+		(DVP (ADVP (AD 隐约))
+		     (DEV 地))
+		(VP (VV 可以)
+		    (VP (VV 嗅到)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 股)))
+				(DNP (NP (NN 天堂))
+				     (DEG 的))
+				(NP (NN 芬芳))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	到 空中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

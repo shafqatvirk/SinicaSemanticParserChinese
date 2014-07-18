@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贴上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing pasted"/>
+      <role argnum="2" argrole="location pasted onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-PRP (P 由於)
+		      (IP (NP-SBJ (NN 天气))
+			  (VP (VA 恶劣))))
+	      (PU ，)
+	      (ADVP (AD 故))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 未))
+		  (VP (VV 能)
+		      (VP (ADVP (AD 如期))
+			  (PP-LOC (P 在)
+				  (NP (NN 现场)))
+			  (PP-BNF (P 为)
+				  (NP (DP (DT 这)
+					  (CLP (M 个)))
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (QP-ADV (CD 六)
+							  (CLP (M 米)))
+						  (VP (VA 高)))))
+				      (PU 、)
+				      (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-TPC (-NONE- *T*-2))
+						  (NP-SBJ (NN 表面))
+						  (VP (VP (VSB (PU 「)
+							       (VV 晋金)
+							       (PU 」)
+							       (VV 喷涂)))
+						      (PU 、)
+						      (CC 并)
+						      (VP (VV 贴上)
+							  (NP-OBJ (NN 金箔)))))
+					      (DEC 的)))
+				      (ADJP (JJ 铜铸))
+				      (NP (NN 雕塑))))
+			  (VP (VV 举行)
+			      (NP-OBJ (ADJP (JJ 揭幕))
+				      (NP (NN 仪式)))))))) 
+	  </parse>
+	  <arg n="2" f="pse">
+	  表面 
+	  </arg>
+	  <arg n="2" f="psr">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  金箔 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 入境)
+			     (NN 事务处))
+		      (NP (NN 处长)))
+	      (VP (VV 可)
+		  (VP (VP (VV 授权)
+			  (NP-PN-OBJ (NN 公安局))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 保存)
+				  (NP-OBJ (NN 居留权)
+					  (NN 证明书)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (PP-TMP (P 在)
+				  (LCP (IP (NP-SBJ (-NONE- *pro*))
+					   (VP (PP-MNR (P 按照)
+						       (NP (NN 次序)))
+					       (VP (VV 签发)
+						   (NP-OBJ (NN 单程)
+							   (NN 通行证)))))
+				       (LC 时)))
+			  (PU ，)
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 居留权)
+					      (NN 证明书))
+				      (VP (VV 贴上)))))))) 
+	  </parse>
+	  <arg n="0">
+	  入境 事务处 处长 
+	  </arg>
+	  <arg n="1">
+	  居留权 证明书 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *pro* 按照 次序 签发 单程 通行证 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

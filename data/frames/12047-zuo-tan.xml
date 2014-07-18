@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 座谈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 sits and talks about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年)
+		      (NT 六月))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 关心)
+				      (NP-OBJ (NP (NP-PN (NR 台湾))
+						  (NP (NN 电影)))
+					      (NP (NN 发展)))))
+			      (DEC 的)))
+		      (NP (NN 民间)
+			  (NN 团体)))
+	      (VP (VV 邀请)
+		  (NP-OBJ (NN 主管)
+			  (NN 机关)
+			  (PU 、)
+			  (NN 学者)
+			  (PU 、)
+			  (NN 民意)
+			  (NN 代表))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 举行)
+			  (NP-OBJ (NN 座谈)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

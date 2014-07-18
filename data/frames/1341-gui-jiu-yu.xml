@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 归咎於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="blamer"/>
+      <role argnum="1" argrole="blamed for"/>
+      <role argnum="2" argrole="blamed on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 许多))
+		      (NP (NN 学者)))
+	      (VP (ADVP (AD 都))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (DNP (NP (NP-PN (NR 东南亚))
+					       (NP (NN 风暴)))
+					   (DEG 的))
+				      (NP (NN 远因)))
+			      (PU ，)
+			      (VP (VV 归咎於)
+				  (IP-OBJ (IP-SBJ (NP-TMP (NT 九四年))
+						  (NP-SBJ (NN 人民币))
+						  (VP (ADVP (AD 骤))
+						      (VP (VV 贬)
+							  (QP-EXT (CD 百分之三十三)))))
+					  (PU ，)
+					  (VP (VP (VV 导致)
+						  (IP-OBJ (NP-SBJ (NP (NN 大陆))
+								  (NP (NN 出口)
+								      (NN 竞争力)))
+							  (VP (VV 大增))))
+					      (PU ，)
+					      (VP (ADVP (AD 才))
+						  (VP (VV 使得)
+						      (NP-PN-OBJ (NR 东南亚))
+						      (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 落居)
+							      (NP-OBJ (NN 下风))))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  许多 学者 
+	  </arg>
+	  <arg n="1">
+	  东南亚 风暴 的 远因 
+	  </arg>
+	  <arg n="2">
+	  九四年 人民币 骤 贬 百分之三十三 ， 导致 大陆 出口 竞争力 大增 ， 才 使得 东南亚 *PRO* 落居 下风 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

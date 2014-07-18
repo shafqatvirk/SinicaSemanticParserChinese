@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 认养 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 adopts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NP-PN (NR 中华)
+			      (NN 民国))
+		       (NP (NP (NN 儿童)
+			       (CC 暨)
+			       (NN 家庭))
+			   (NP (NN 扶助)))
+		       (NP (NN 基金会)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 将))
+		(VP (VV 认养)
+		    (NP-OBJ (NP-PN (NR 萨国))
+			    (DNP (QP (CD 两千)
+				     (CLP (M 名)))
+				 (DEG 的))
+			    (NP (NN 灾童)))))) 
+	</parse>
+	<arg n="0">
+	中华 民国 儿童 暨 家庭 扶助 基金会 
+	</arg>
+	<arg n="1">
+	萨国 两千 名 的 灾童 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (ADVP (AD 先))
+		(VP (VV 让)
+		    (NP-OBJ (NN 义工))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 认养)
+			    (QP-EXT (CD 两)
+				    (CLP (M 年)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	两 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

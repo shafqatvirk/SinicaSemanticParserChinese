@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 勘探 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing prospected for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (PP-DIR (P 对)
+				      (NP (NN 外)))
+			      (VP (VV 合作)))
+			  (VP (VCD (VV 勘探)
+				   (VV 开发))
+			      (NP-OBJ (NN 石油)
+				      (NN 天然气)
+				      (NN 资源)))))
+	      (PU ，)
+	      (VP (VC 是)
+		  (NP-PRD (DNP (NP-PN (NR 中国))
+			       (DEG 的))
+			  (QP (CD 一)
+			      (CLP (M 项)))
+			  (ADJP (JJ 重大))
+			  (NP (NN 能源)
+			      (NN 战略)
+			      (NN 决策))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  石油 天然气 资源 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (PP-TMP (P 自)
+			    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (NP-TMP (NT 一九五四年))
+					 (VP (VCD (VV 勘探)
+						  (VV 开发)))))
+				 (LC 以来)))
+		    (PU ，)
+		    (VP (ADVP (AD 已))
+			(ADVP (AD 累计))
+			(VP (VP (VV 生产)
+				(NP-OBJ (NN 原油))
+				(QP-EXT (CD 一千五百五十多万)
+					(CLP (M 吨))))
+			    (PU ，)
+			    (VP (VV 加工)
+				(NP-OBJ (NN 原油))
+				(QP-EXT (ADVP (AD 近))
+					(QP (CD 八百万)
+					    (CLP (M 吨))))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九五四年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

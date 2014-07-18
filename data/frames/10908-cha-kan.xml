@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查勘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 inspects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 十日))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NN 行政)
+			    (NN 院长))
+		    (NP-PN (NR 张俊雄)))
+	    (VP (VP (VV 率)
+		    (NP-OBJ (NP (ADJP (JJ 相关))
+				(NP (NN 部会)))
+			    (NP (NN 首长))))
+		(VP (VV 搭)
+		    (NP-OBJ (NP-PN (NR 海鸥))
+			    (NP (NN 直升机))))
+		(PU ，)
+		(VP (PP-DIR (P 从)
+			    (NP (NN 空中)))
+		    (VP (VV 查勘)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 污染))))
+				(NP (NN 海域)))))
+		(PU ，)
+		(CC 并)
+		(VP (VV 要求)
+		    (NP-OBJ (NP-PN-APP (NN 交通部)
+				       (CC 与)
+				       (NN 国防部)
+				       (ETC 等))
+			    (ADJP (JJ 相关))
+			    (NP (NN 单位)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-TMP (P 在)
+				    (LCP (NP (QP (CD 三十)
+						 (CLP (M 个)))
+					     (NP (NN 工作天)))
+					 (LC 内)))
+			    (VP (VV 清除)
+				(NP-OBJ (NN 油污)))))))) 
+	</parse>
+	<arg n="0">
+	行政 院长 张俊雄 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 污染 海域 
+	</arg>
+	<arg n="m" f="dir">
+	从 空中 
+	</arg>
+	<arg n="m" f="tmp">
+	十日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

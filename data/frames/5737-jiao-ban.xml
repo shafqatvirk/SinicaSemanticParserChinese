@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搅拌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 stirs and mixes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 登上)
+			(QP-OBJ (OD 二)
+				(CLP (M 楼)))))
+	    (PU ，)
+	    (NP-SBJ (NN 泥水)
+		    (NN 师傅))
+	    (VP (VP (PP-LOC (P 在)
+			    (NP (QP (OD 二○一))
+				(NP (NN 室))))
+		    (DVP (VP (VA 奋力))
+			 (DEV 地))
+		    (VP (VV 搅拌)
+			(NP-OBJ (NN 水泥))))
+		(PU ，)
+		(VP (VV 要)
+		    (VP (VV 砌起)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 道)))
+				(CP (WHNP-3 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-3))
+					    (VP (VSB (VV 装饰)
+						     (VV 用))))
+					(DEC 的)))
+				(NP (NN 瓮墙))))))) 
+	</parse>
+	<arg n="0">
+	泥水 师傅 
+	</arg>
+	<arg n="1">
+	水泥 
+	</arg>
+	<arg n="m" f="adv">
+	奋力 地 
+	</arg>
+	<arg n="m" f="loc">
+	在 二○一 室 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 登上 二 楼 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (NN 猪肉))
+			(VP (VP (VV 切成)
+				(NP-OBJ (NN 小块)))
+			    (PU ，)
+			    (VP (VV 搅拌))
+			    (PU 、)
+			    (VP (VRD (VV 槌打)
+				     (VV 成))
+				(NP-OBJ (NN 浆))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	猪肉 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (VP (VV 用)
+			(NP-OBJ (NN 绞肉)))
+		    (VP (VV 混和)
+			(NP-OBJ (NP (CP (WHNP-3 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (VV 切碎)
+						    (NP-OBJ (-NONE- *T*-3))))
+					    (DEC 的)))
+				    (NP-APP (NN 葱)
+					    (PU 、)
+					    (NN 姜)
+					    (PU 、)
+					    (NN 蒜)
+					    (ETC 等))
+				    (NP (NN 材料)))
+				(CC 及)
+				(NP (DNP (NP (QP (CD 七)
+						 (CLP (M 分)))
+					     (NP (NN 熟)))
+					 (DEG 的))
+				    (NP (NN 面线))))))
+		(VP (ADVP (AD 一起))
+		    (VP (VV 搅拌))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一起 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 类似 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities which are similar"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (-NONE- *pro*))
+		  (VP (VP (VV 建成)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VP (VV 类似)
+						      (NP-PN-OBJ (NR 浦东)))
+						  (ADVP (AD 那样))))
+					  (DEC 的)))
+				  (NP (NN 开发区)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 	  	  
+	  </arg>
+	  <arg n="0" f="CRD">
+	  浦东 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一百一十多)
+			  (CLP (M 幢)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 类似)))
+			      (DEC 的)))
+		      (NP (NN 楼房)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 已经))
+		  (VP (VV 拔地而起)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

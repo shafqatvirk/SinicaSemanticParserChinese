@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分割 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="divider"/>
+      <role argnum="1" argrole="thing divided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 台湾))
+	      (VP (VC 是)
+		  (NP-PRD (NP-PN (NR 中国))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 可)
+					      (VP (VV 分割)))))
+				  (DEC 的)))
+			  (QP (CD 一))
+			  (NP (NN 部分))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

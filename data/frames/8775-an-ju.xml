@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 安居 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 resides safely"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人类) )
+	      (VP (ADVP (AD 才))
+		  (VP (VV 能)
+		      (VP (VV 安居)
+			  (LCP-OBJ (NP (NN 大地) )
+				   (LC 之上)))))) 
+	  </parse>
+	  <arg n="0">
+	  人类 
+	  </arg>
+	  <arg n="1">
+	  大地 之上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 独步 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="range where arg0 finds no competition"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ-SBJ (-NONE- *pro*))
+	    (VP (VV 让)
+		(NP-OBJ (NP (NN 台商))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 独步)
+					(NP-OBJ (NN 全球))))
+				(DEC 的)))
+			(ADJP (JJ 灵活))
+			(NP (NN 经营)
+			    (NN 模式)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 得以)
+			(NP-OBJ (NN 复制)
+				(PU 、)
+				(NN 授权)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	全球 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (NP-LOC (DP (DT 全))
+					(NP-PN (NR 台)))
+				(VP (VV 独步))))
+			(DEC 的)))
+		(NP (NN 污水)
+		    (NN 处理)
+		    (CC 及)
+		    (NN 雨水)
+		    (NN 下水道))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	全 台 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

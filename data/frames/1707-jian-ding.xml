@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 鉴定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="certifier"/>
+      <role argnum="1" argrole="thing certified"/>
+      <role argnum="2" argrole="certifying as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这些))
+		      (NP (NN 产品)))
+	      (VP (ADVP (AD 已))
+		  (VP (LB 被)
+		      (IP-OBJ (NP-SBJ (NN 行家们))
+			      (VP (VRD (VV 鉴定)
+				       (VV 为))
+				  (NP-OBJ (CP (WHNP-5 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-5))
+						      (VP (VV 具有)
+							  (NP-OBJ (NP (NN 国际)
+								      (CC 或)
+								      (NN 国内))
+								  (ADJP (JJ 先进))
+								  (NP (NN 水平)))))
+						  (DEC 的)))
+					  (NP (ADJP (JJ 高))
+					      (NP (NN 科技)))
+					  (NP (NN 产品)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  行家们 
+	  </arg>
+	  <arg n="1">
+	  这些 产品 
+	  </arg>
+	  <arg n="2" f="as">
+	  *OP* *T*-5 具有 国际 或 国内 先进 水平 的 高 科技 产品 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

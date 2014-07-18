@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 空转 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 报关)
+			      (NN 手续))
+		      (VP (ADVP (AD 不))
+			  (VP (VV 合)
+			      (NP-OBJ (NN 规定)))))
+	      (PU ，)
+	      (VP (VRD (VV 延伸)
+		       (VV 出))
+		  (IP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 盗卖)
+				  (NP-OBJ (NN 合同))))
+			  (PU 、)
+			  (IP (NP-SBJ (NN 产品))
+			      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 内销)))
+				  (ADVP (AD 未))
+				  (VP (VV 补税))))
+			  (PU 、)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 空转)))
+			  (PU 、)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 盗卖)
+				  (NP-OBJ (NP (NN 海关))
+					  (IP-APP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 备案)))
+					  (NP (NN 合同)))))
+			  (ETC 等)))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

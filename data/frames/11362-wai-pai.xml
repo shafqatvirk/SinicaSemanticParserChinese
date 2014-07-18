@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 外派 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 dispatches arg1 to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-TPC (-NONE- *T*-1))
+			    (NP-SBJ (NP (PN 我))
+				    (NP (NN 国)))
+			    (VP (VV 外派)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 至)
+					    (NP-OBJ (PN 此))))))
+			(DEC 的)))
+		(NP (NN 农业)
+		    (NN 专家))) 
+	</parse>
+	<arg n="0">
+	我 国 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

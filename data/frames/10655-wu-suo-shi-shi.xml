@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无所事事 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (QP (CD 一))
+		    (NP (NN 时间)))
+	    (NP-SBJ (NP (NP (ADJP (JJ 小))
+			    (NP (NN 镇)))
+			(NP (NN 街头)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 无所事事)))
+			    (DEC 的)))
+		    (ADJP (JJ 年轻))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 似乎))
+		(VP (VV 减少)
+		    (AS 了)
+		    (ADVP (AD 些))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

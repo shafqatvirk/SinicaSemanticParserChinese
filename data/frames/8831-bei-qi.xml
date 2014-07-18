@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 背弃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 betrays"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 讲)
+			  (IP-OBJ (NP-SBJ (NN 台商))
+				  (VP (VV 背弃)
+				      (NP-PN-OBJ (NR 台湾))))))
+	      (VP (ADVP (AD 很))
+		  (ADVP (AD 不))
+		  (VP (VA 公平)))) 
+	  </parse>
+	  <arg n="0">
+	  台商 
+	  </arg>
+	  <arg n="1">
+	  台湾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 大作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 does in big way"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对於)
+			  (IP (NP-SBJ (NN 媒体))
+			      (VP (VP (VV 围)
+				      (AS 著)
+				      (NP-OBJ (ADJP (JJ 真)
+						    (JJ 假))
+					      (NP-PN (NR 大宝)
+						     (NN 法王))))
+				  (VP (VV 大作)
+				      (NP-OBJ (NN 报导))))))
+		  (ADVP (AD 也))
+		  (ADVP (AD 十分))
+		  (VP (VA 无奈)))) 
+	  </parse>
+	  <arg n="0">
+	  媒体 
+	  </arg>
+	  <arg n="1">
+	  报导 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

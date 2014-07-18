@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 往访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 goes to visit"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (NP-APP (NN 副总统))
+		      (NP-PN (NR 吕秀莲)))
+	      (VP (ADVP (AD 则))
+		  (PP-TMP (P 於)
+			  (LCP (NP (NT 九月))
+			       (LC 底)))
+		  (PP-TMP (P 继)
+			  (LCP (NP-PN (NR 陈)
+				      (NN 总统))
+			       (LC 之後)))
+		  (ADVP (AD 再))
+		  (VP (VP (VV 赴)
+			  (NP-PN-OBJ (NR 中南美)))
+		      (PU ，)
+		      (VP (VV 往访)
+			  (NP-OBJ (NP-PN (NR 中美))
+				  (NP (NN 邦交国))))))) 
+	  </parse>
+	  <arg n="0">
+	  副总统 吕秀莲 
+	  </arg>
+	  <arg n="1">
+	  中美 邦交国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  继 陈 总统 之後 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  於 九月 底 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

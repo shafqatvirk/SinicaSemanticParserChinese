@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 南下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 goes south to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 原本))
+	    (NP-SBJ (NN 乌鱼))
+	    (VP (VV 应该)
+		(VP (PP (P 随著)
+			(NP (NN 东北)
+			    (NN 季风)))
+		    (VP (VP (VV 南下)
+			    (NP-OBJ (NP-PN (NR 嘉南))
+				    (NP (NN 沿海))))
+			(VP (VV 产卵)))))) 
+	</parse>
+	<arg n="0">
+	乌鱼 
+	</arg>
+	<arg n="1">
+	嘉南 沿海 
+	</arg>
+	<arg n="m" f="adv">
+	随著 东北 季风 
+	</arg>
+	<arg n="m" f="adv">
+	原本 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NN 署长))
+		    (NP-PN (NR 林俊义)))
+	    (VP (VV 南下)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 现勘))))) 
+	</parse>
+	<arg n="0">
+	署长 林俊义 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

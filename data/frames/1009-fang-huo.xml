@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, causer"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 各))
+		      (NP (NN 地)))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 加快)
+		      (AS 了)
+		      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP (-NONE- *T*-1))
+					      (VP (VV 放活)
+						  (NP-OBJ (ADJP (JJ 小))
+							  (NP (NN 企业))))))
+				      (DEC 的)))
+			      (NP (NN 步伐)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  小 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

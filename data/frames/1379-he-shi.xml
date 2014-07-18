@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 核实 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="checker and confirmer"/>
+      <role argnum="1" argrole="thing confirmed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NP (DP (DT 整)
+			      (CLP (M 个)))
+			  (NP (NN 峡谷)))
+		      (NP (NP (NN 长度))
+			  (PU 、)
+			  (NP (ADJP (JJ 平均))
+			      (NP (NN 深度)))
+			  (CC 和)
+			  (NP (ADJP (JJ 最大))
+			      (NP (NN 深度)))))
+	      (VP (VP (ADVP (AD 仍))
+		      (VP (VV 需)
+			  (NP-OBJ (NN 测绘)
+				  (NN 部门))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 进一步))
+				  (VP (VV 核实))))))
+		  (VP (ADVP (AD 才))
+		      (VP (VV 能)
+			  (VP (VV 公布)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

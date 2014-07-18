@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 熬煮 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 boils and stews"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (PP-MNR (P 用)
+					    (NP (NN 药草)))
+				    (VP (VV 熬煮)))
+				(PU 、)
+				(VP (VV 具有)
+				    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 通汗)))
+					    (NP (NN 效果))))))
+			(DEC 的)))
+		(NP (NN 饮子))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="mnr">
+	用 药草 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

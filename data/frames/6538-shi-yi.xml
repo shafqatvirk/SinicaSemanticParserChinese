@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 饰以 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 decorates"/>
+    <role argnum="2" argrole="thing arg1 is decorated with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 母陶))
+	    (VP (ADVP (AD 则))
+		(VP (VV 饰以)
+		    (NP-OBJ (NN 乳丁))))) 
+	</parse>
+	<arg n="1">
+	母陶 
+	</arg>
+	<arg n="2">
+	乳丁 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 剥)
+					    (NP-OBJ (NN 皮)))
+					(VP (VV 取)
+					    (NP-OBJ (NN 丝)))
+					(PU 、)
+					(VP (VV 框)
+					    (NP-OBJ (NN 线)))
+					(PU 、)
+					(VP (VV 晒)
+					    (NP-OBJ (NN 麻)))
+					(PU 、)
+					(VP (VV 染色))
+					(PU 、)
+					(VP (VV 织布))
+					(PU 、)
+					(VP (VV 制衣)))))
+			(PU ，)
+			(VP (ADVP (AD 最後))
+			    (VP (VV 饰以)
+				(NP-OBJ (NN 刺绣))))))
+	    (PU ，)
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (DNP (NP (NN 女人))
+				 (DEG 的))
+			    (NP (NN 工作)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	刺绣 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<arg n="m" f="dir">
+	从 *PRO* 剥 皮 取 丝 、 框 线 、 晒 麻 、 染色 、 织布 、 制衣 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

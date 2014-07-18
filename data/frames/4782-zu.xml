@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 租 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity renting out"/>
+      <role argnum="1" argrole="thing rented"/>
+      <role argnum="2" argrole="entity renting from arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (CP-CND (ADVP (CS 虽然))
+			  (IP (NP-SBJ (DNP (NP (NN 房改))
+					   (DEG 的))
+				      (NP (NN 目的)))
+			      (VP (VC 是)
+				  (VP (VV 实现)
+				      (UCP-OBJ (IP (PU “)
+						   (NP-SBJ (NN 居者))
+						   (VP (VE 有)
+						       (NP-OBJ (NP (PN 其))
+							       (NP (NN 屋))))
+						   (PU ”))
+					       (CC 和)
+					       (NP (DNP (NP (NN 住房))
+							(DEG 的))
+						   (NP (NN 商品化))))))))
+		  (PU ，)
+		  (ADVP (AD 但))
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VRD (VV 考虑)
+				   (VV 到))
+			      (NP-OBJ (NN 政府)
+				      (NN 财力)
+				      (PU 、)
+				      (NN 企业)
+				      (NN 经营)
+				      (NN 状况)
+				      (CC 和)
+				      (NN 职工)
+				      (NN 收入)
+				      (NN 水平))))
+		  (PU ，)
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (NP (NT 目前))
+		      (ADVP (AD 还))
+		      (ADVP (AD 只))
+		      (VP (VV 能)
+			  (VP (VV 实行)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (NP-ADV (NN 成本价))
+					  (VP (VP (VV 售)
+						  (NP-OBJ (NN 房)))
+					      (CC 和)
+					      (VP (VV 租)
+						  (NP-OBJ (NN 房)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  房 
+	  </arg>
+	  <arg n="m" f="adv">
+	  成本价 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

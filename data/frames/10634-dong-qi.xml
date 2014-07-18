@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 动起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 starts moving"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VP (VV 动起)
+			(NP-OBJ (NN 手)))
+		    (VP (VV 来)))
+		(VP (ADVP (AD 却))
+		    (VP (VV 发现)
+			(IP-OBJ (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 不))
+				    (VP (VC 是)
+					(NP-PRD (DP (DT 那麽)
+						    (QP (CD 一)
+							(CLP (M 回))))
+						(NP (NN 事)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	手 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

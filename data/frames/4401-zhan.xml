@@ -1,0 +1,140 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 fights against"/>
+      <role argnum="2" argrole="location of fight"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 「)
+			  (NP (NN 人))
+			  (PU 」))
+	      (VP (VV 怀念)
+		  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (ADVP (AD 勇))
+					      (VP (VV 战)
+						  (NP-OBJ (NN 沙场))))
+					  (CC 和)
+					  (VP (VV 饱受)
+					      (NP-OBJ (DNP (NP (NN 战乱))
+							   (DEG 之))
+						      (NP (NN 苦))))))
+				  (DEC 的)))
+			  (NP (NN 人))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  沙场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  勇 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 韩国))
+			   (DEG 的))
+		      (NP (NP-PN (NR 刘昌赫))
+			  (QP (CD 九)
+			      (CLP (M 段)))))
+	      (VP (VP (VV 执黑))
+		  (VP (PP (P 与)
+			  (NP (DNP (NP-PN (NR 日本))
+				   (DEG 的))
+			      (NP (NP-PN (NR 结城聪))
+				  (QP (CD 九)
+				      (CLP (M 段))))))
+		      (ADVP (AD 大))
+		      (VP (VV 战)
+			  (QP-EXT (CD ３０５)
+				  (CLP (M 手)))))
+		  (PU ，)
+		  (VP (ADVP (AD 最后))
+		      (PP-MNR (P 以)
+			      (NP (QP (CD 四分之三))
+				  (NP (NN 子))))
+		      (ADVP (AD 险))
+		      (VP (VV 胜))))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 的 刘昌赫 九 段 
+	  </arg>
+	  <arg n="1">
+	  与 日本 的 结城聪 九 段 
+	  </arg>
+	  <arg n="m" f="adv">
+	  ３０５ 手 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 至於)
+		  (IP (IP-Q (NP-SBJ (-NONE- *pro*))
+			    (VP (NP-WH (PN 何时))
+				(VP (VV 涌到))))
+		      (PU ？)
+		      (IP-Q (NP-SBJ (NN 力道))
+			    (VP (ADVP-WH (AD 多))
+				(VP (VA 强))))
+		      (PU ？)))
+	      (NP-SBJ (NP-PN (NR 台湾))
+		      (NP (NN 产业)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 只))
+		  (VP (VV 能)
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (NN 浑沌))
+				       (LC 中)))
+			  (VP (VP (ADVP (AD 且))
+				  (VP (VV 战)))
+			      (VP (ADVP (AD 且))
+				  (VP (VV 行)))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 产业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  且 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 浑沌 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  至於 *pro* 何时 涌到 ？ 力道 多 强 ？ 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

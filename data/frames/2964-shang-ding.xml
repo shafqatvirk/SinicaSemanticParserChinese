@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 商定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing got agreed on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 当前))
+		  (NP-SBJ (PN 双方))
+		  (VP (VV 应)
+		      (VP (VP (ADVP (AD 首先))
+			      (VP (VV 商定)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (PP (-NONE- *T*-1))
+							  (VP (VV 交换)
+							      (NP-OBJ (NN 意见)))))
+						  (DEC 的)))
+					  (NP (NN 议题)
+					      (CC 和)
+					      (NN 内容)))))
+			  (PU ，)
+			  (VP (ADVP (AD 再))
+			      (VP (VV 来)
+				  (VP (VV 考虑)
+				      (NP-OBJ (NP-APP (NN 人员)
+						      (NN 层级)
+						      (CC 及)
+						      (NN 时间)
+						      (PU 、)
+						      (NN 地点)
+						      (ETC 等))
+					      (NP (NN 问题))))))))) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* *T*-1 交换 意见 的 议题 和 内容 
+	  </arg>
+	  <arg n="m" f="adv">
+	  首先 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-MNR (P 经)
+		  (IP (NP-SBJ (NP-PN (NP-PN (NR 中华)
+					    (NN 人民)
+					    (NN 共和国))
+				     (NP (NN 铁道部)))
+			      (CC 与)
+			      (NP-PN (NP-PN (NR 越南)
+					    (NN 社会主义)
+					    (NN 共和国))
+				     (NP (NN 交通)
+					 (NN 运输部))))
+		      (VP (VV 商定)))) 
+	  </parse>
+	  <arg n="0">
+	  中华 人民 共和国 铁道部 与 越南 社会主义 共和国 交通 运输部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

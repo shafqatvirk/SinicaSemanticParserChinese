@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 夸赞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 says in praise"/>
+      <role argnum="2" argrole="entity arg1 is said to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 老师))
+	      (VP (PP-DIR (P 跟)
+			  (NP (NN 老婆)))
+		  (VP (VV 夸赞)
+		      (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 千千))
+					   (DEG 的))
+				      (NP (NN 法语)))
+			      (VP (VV 说)
+				  (DER 得)
+				  (VP-EXT (ADVP (AD 很))
+					  (VP (VA 好)))))))) 
+	  </parse>
+	  <arg n="0">
+	  老师 
+	  </arg>
+	  <arg n="1">
+	  千千 的 法语 说 得 很 好 
+	  </arg>
+	  <arg n="2">
+	  跟 老婆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

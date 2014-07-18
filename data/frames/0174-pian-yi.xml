@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 便宜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="commodity, price"/>
+    <role argnum="1" argrole="range"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TPC (DP (DT 这)
+                  (CLP (M 种)))
+              (NP (NN 生物)
+                  (NN 钾肥)))
+      (NP-SBJ (NN 价格))
+      (VP (VA 便宜))))
+	</parse>
+	<arg n="0" f="PSR"> 这 种 生物 钾肥 </arg>
+	<arg n="0" f="PSE"> 价格 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

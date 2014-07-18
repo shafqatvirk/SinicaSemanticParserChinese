@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 变身 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity changing itself"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (OD 第十二))
+		      (NP (NN 问)))
+	      (PU ：)
+	      (VP (IP-PRD (IP-Q (ADVP-WH (AD 何时))
+				(NP-SBJ (NN 损益))
+				(VP (VA 平衡)))
+			  (PU ？)
+			  (IP-Q (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP-WH (AD 如何))
+				    (VP (VV 推论))))
+			  (PU ？)
+			  (IP-Q (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP-WH (AD 如何))
+				    (VP (VV 变身))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  如何 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

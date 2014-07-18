@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="blocker"/>
+      <role argnum="1" argrole="party blocked"/>
+      <role argnum="2" argrole="result of the blocking"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (NP-TMP (NT ２月份))
+					   (PP-LOC (P 在)
+						   (NP-PN (NR 美国)))
+					   (VP (VV 进行))))
+				   (DEC 的)))
+			   (NP-PN (NR 金杯赛)))
+		       (LC 上))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 巴西队))
+	      (VP (LB 被)
+		  (IP-OBJ (NP-SBJ (NP-APP (NN 东道主))
+				  (NP-PN (NR 美国队)))
+			  (VP (VV 挡)
+			      (PP (P 在)
+				  (LCP (NP (NN 决赛圈))
+				       (LC 外))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  东道主 美国队 
+	  </arg>
+	  <arg n="1">
+	  巴西队 
+	  </arg>
+	  <arg n="2">
+	  在 决赛圈 外 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *OP* *T*-1 ２月份 在 美国 进行 的 金杯赛 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

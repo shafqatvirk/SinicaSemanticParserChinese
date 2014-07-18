@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 置办 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 prepares"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LGS (P 由)
+			(NP (NP (NN 妻子))
+			    (CC 和)
+			    (NP (DP (DT 其他))
+				(NP (NN 姊妹)))))
+		(ADVP (AD 一起))
+		(VP (VV 置办)
+		    (NP-OBJ (NN 年菜))))) 
+	</parse>
+	<arg n="0">
+	由 妻子 和 其他 姊妹 
+	</arg>
+	<arg n="1">
+	年菜 
+	</arg>
+	<arg n="m" f="adv">
+	一起 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

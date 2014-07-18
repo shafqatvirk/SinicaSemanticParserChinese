@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遭受 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 suffers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 饱))
+				      (VP (VV 经)
+					  (NP-OBJ (DNP (NP (NN 战争)
+							   (CC 与)
+							   (NN 制裁))
+						       (DEG 之))
+						  (NP (NN 苦))))))
+			      (DEC 的)))
+		      (NP-PN (NR 伊拉克))
+		      (NP (NN 人民)))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 遭受)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (PP (P 自)
+					   (LCP (IP (NP-SBJ (NN 海湾)
+							    (NN 战争))
+						    (VP (VV 结束)))
+						(LC 以来)))
+				       (ADJP (JJ 最大))
+				       (NP (NN 规模)))
+				   (DEG 的))
+			      (NP (NN 军事)
+				  (NN 打击)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 饱 经 战争 与 制裁 之 苦 的 伊拉克 人民 
+	  </arg>
+	  <arg n="1">
+	  自 海湾 战争 结束 以来 最大 规模 的 军事 打击 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 侵吞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="money embezzled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (DP (DT 那些))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (VV 侵吞)
+					      (NP-OBJ (-NONE- *RNR*-1)))
+					  (PU 、)
+					  (VP (VV 挤占)
+					      (NP-OBJ (-NONE- *RNR*-1)))
+					  (PU 、)
+					  (VP (VV 挪用)
+					      (NP-OBJ-1 (NN 移民)
+							(NN 资金)))))
+				  (DEC 的)))
+			  (NP (NN 单位)
+			      (CC 和)
+			      (NN 个人))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 要)
+		  (VP (VP (ADVP (AD 依法))
+			  (VP (VP (VV 追究)
+				  (NP-OBJ (NN 责任)))
+			      (PU ，)
+			      (VP (ADVP (AD 严肃))
+				  (VP (VV 查处)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 曝光)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

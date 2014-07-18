@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扣上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 puts on arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (SB 被)
+				      (VP (VV 叫到))))
+			      (DEC 的))))
+	      (VP (VP (ADVP (AD 便))
+		      (VP (VV 收拾)
+			  (NP-OBJ (NN 行李))))
+		  (PU ，)
+		  (VP (ADVP (AD 然後))
+		      (VP (SB 被)
+			  (VP (VV 带到)
+			      (NP-OBJ (NN 广场)))))
+		  (PU ，)
+		  (VP (ADVP (AD 尔後))
+		      (ADVP (AD 再))
+		      (DVP (IP (NP-SBJ (QP (CD 两)
+					   (CLP (M 个)))
+				       (NP (NN 人)))
+			       (VP (VV 成)
+				   (QP-OBJ (CD 一)
+					   (CLP (M 对)))))
+			   (DEV 的))
+		      (VP (SB 被)
+			  (VP (VV 扣上)
+			      (NP-OBJ (NN 手铐))))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-3 被 叫到 的 
+	  </arg>
+	  <arg n="2">
+	  手铐 
+	  </arg>
+	  <arg n="m" f="adv">
+	  两 个 人 成 一 对 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尔後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

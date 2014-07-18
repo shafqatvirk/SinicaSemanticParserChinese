@@ -1,0 +1,131 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 游说 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 lobbies"/>
+    <role argnum="2" argrole="thing arg1 is asked to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 後来))
+	    (NP-SBJ (NP-APP (DNP (NP-PN (NR 超视))
+				 (DEG 的))
+			    (ADJP (JJ 新))
+			    (NP (NN 买主)))
+		    (NP-PN (NR 美国)
+			   (NR 新力)
+			   (NN 公司)))
+	    (VP (VE 有)
+		(IP-OBJ (NP-SBJ (NN 人))
+			(VP (VP (VV 游说)
+				(NP-OBJ (PN 他)))
+			    (PU ，)
+			    (VP (VV 希望)
+				(IP-OBJ (NP-SBJ (PN 他))
+					(VP (VV 能)
+					    (VP (VV 协助)
+						(NP-PN-OBJ (NR 超视))
+						(IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VP (VV 脱离)
+							    (NP-OBJ (DNP (NP (ADJP (DP (DT 每)
+										       (CLP (M 天)))
+										   (ADJP (JJ 例行性)))
+									     (NP (NN 新闻)))
+									 (DEC 的))
+								    (NP (NN 厮杀)
+									(NN 战场))))
+							(PU ，)
+							(VP (ADVP (AD 而))
+							    (VP (VV 专注)
+								(PP-LOC (P 在)
+									(LCP (NP (NN 专题)
+										 (NN 报导))
+									     (LC 上))))))))))))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="1">
+	他 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 十多)
+			 (CLP (M 年)))
+		     (LC 来))
+	    (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 到处))
+		    (VP (VV 游说)
+			(NP-OBJ (NN 企业界)
+				(PU 、)
+				(NN 文化界)
+				(PU 、)
+				(NN 新闻界))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 办)
+				(NP-OBJ (NN 英文报)))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	企业界 、 文化界 、 新闻界 
+	</arg>
+	<arg n="2">
+	*PRO* 办 英文报 
+	</arg>
+	<arg n="m" f="adv">
+	到处 
+	</arg>
+	<arg n="m" f="tmp">
+	十多 年 来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 当初))
+		(VP (VC 是)
+		    (VP (PP-PRP (P 为了)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 锻炼)
+					(NP-OBJ (NN 身材)))))
+			(PU ，)
+			(PP-LOC (P 在)
+				(LCP (IP (NP-SBJ (NN 朋友))
+					 (VP (VV 游说)))
+				     (LC 下)))
+			(ADVP (AD 一同))
+			(VP (VV 加入)))))) 
+	</parse>
+	<arg n="0">
+	朋友 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

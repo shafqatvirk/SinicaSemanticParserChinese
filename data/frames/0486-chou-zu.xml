@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹组 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="organizer"/>
+      <role argnum="1" argrole="organization"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年)
+		      (NT 年初))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 南光)
+			 (NN 集团))
+	      (VP (ADVP (AD 又))
+		  (PP (P 与)
+		      (NP (NP-PN (NR 宝法德)
+				 (NN 公司))
+			  (CC 及)
+			  (NP (NP-PN (NR 深圳))
+			      (ADJP (JJ 有关))
+			      (NP (NN 方面)))))
+		  (VP (VP (ADVP (AD 正式))
+			  (VP (VV 签约)))
+		      (PU ，)
+		      (VP (VV 筹组)
+			  (NP-PN-OBJ (PU “)
+				     (NP-PN (NR 澳科))
+				     (NP (ADJP (JJ 精密))
+					 (NP (NN 工业)))
+				     (ADJP (JJ 有限))
+				     (NP (NN 公司))
+				     (PU ”)))))) 
+	  </parse>
+	  <arg n="0">
+	  南光 集团 
+	  </arg>
+	  <arg n="1">
+	  “ 澳科 精密 工业 有限 公司 ” 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 年初 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="adv">
+	  与 宝法德 公司 及 深圳 有关 方面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

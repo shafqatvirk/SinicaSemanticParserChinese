@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吩咐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 tells arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 成帝))
+	    (VP (VP (ADVP (AD 终))
+		    (VP (VV 赦)
+			(NP-PN-OBJ (NR 朱云))))
+		(PU ，)
+		(VP (ADVP (AD 并))
+		    (VP (VV 吩咐)
+			(NP-OBJ (-NONE- *pro*))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (ADVP (AD 不))
+				    (VP (VV 换)
+					(NP-OBJ (ADJP (JJ 新))
+						(NP (NN 槛)))))
+				(PU ，)
+				(VP (VP (VV 留)
+					(NP-OBJ (-NONE- *pro*)))
+				    (VP (MSP 以)
+					(VP (VV 表彰)
+					    (NP-OBJ (NN 贤臣))))))))))) 
+	</parse>
+	<arg n="0">
+	成帝 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	*PRO* 不 换 新 槛 ， 留 *pro* 以 表彰 贤臣 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

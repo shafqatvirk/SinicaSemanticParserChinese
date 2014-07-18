@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-TMP (P 从)
+				    (NP (NT 一九八四年)))
+			    (VP (VV 至今))))
+		(PU ，)
+		(IP (IP (PP-LOC (P 在)
+				(NP (NP-PN (NR 青海)
+					   (NR 太阳湖))
+				    (NP (NN 地区))))
+			(NP-SBJ (QP (CD 许多))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 挖)
+						(NP-OBJ (NN 金))))
+					(DEC 的)))
+				(NP (NN 农民)))
+			(VP (BA 把)
+			    (IP-OBJ (NP-SBJ (NN 拖拉机)
+					    (PU 、)
+					    (NN 卡车))
+				    (VP (VV 开进)
+					(AS 了)
+					(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VE 无)
+							    (NP-OBJ (NN 人)))))
+						(NP (NN 区)))))))
+		    (PU ，)
+		    (IP (NP-SBJ (DNP (NP (QP (CD 一两万))
+					 (NP (NN 人)))
+				     (DEG 的))
+				(NP (NN 生活)
+				    (NN 垃圾)))
+			(VP (VV 污染)
+			    (AS 了)
+			    (NP-OBJ (NN 环境))))
+		    (PU ，)
+		    (IP (NP-SBJ (ADJP (JJ 珍稀))
+				(ADJP (JJ 野生))
+				(NP (NN 动物)))
+			(VP (VV 成)
+			    (AS 了)
+			    (NP-OBJ (NN 猎食)
+				    (NN 对象))))
+		    (PU ，)
+		    (IP (NP-SBJ (NN 植被))
+			(VP (LB 被)
+			    (IP-OBJ (NP-SBJ (ADJP (JJ 大))
+					    (NP (NN 车)))
+				    (VP (VV 压成)
+					(AS 了)
+					(NP-OBJ (NN 路面))))))
+		    (PU ，)
+		    (IP (NP-TPC-3 (CP (WHNP-4 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (VP (VV 淘金))
+						  (VP (MSP 所)
+						      (VP (VV 挖)
+							  (NP-OBJ (-NONE- *T*-4))))))
+					  (DEC 的)))
+				  (DNP (QP (CD 十几)
+					   (CLP (M 米)))
+				       (DEG 的))
+				  (NP (NN 洞)))
+			(NP-SBJ (PN 到处))
+			(VP (ADVP (AD 都))
+			    (VP (VC 是)
+				(NP-PRD (-NONE- *-3))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  许多 *OP* *T*-1 挖 金 的 农民 
+	  </arg>
+	  <arg n="1">
+	  拖拉机 、 卡车 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 无 人 区 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 青海 太阳湖 地区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

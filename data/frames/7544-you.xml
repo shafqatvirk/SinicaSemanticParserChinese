@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 诱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 lures arg1 into doing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 鬼))
+	    (VP (VC 是)
+		(VP (VV 诱)
+		    (NP-OBJ (NN 人))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 为)
+			    (NP-OBJ (NN 恶))))))) 
+	</parse>
+	<arg n="0">
+	鬼 
+	</arg>
+	<arg n="1">
+	人 
+	</arg>
+	<arg n="2">
+	*PRO* 为 恶 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

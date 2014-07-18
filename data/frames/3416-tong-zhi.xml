@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通指 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 generally refers to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 劳务)
+		      (NN 贸易))
+	      (PU ，)
+	      (VP (VV 通指)
+		  (NP-OBJ (LCP (NP (PN 相互))
+			       (LC 之间))
+			  (DNP (PP (P 在)
+				   (NP (NP-APP (NN 通信)
+					       (NN 服务)
+					       (PU 、)
+					       (NN 金融)
+					       (NN 服务)
+					       (PU 、)
+					       (NN 教育)
+					       (NN 服务)
+					       (CC 和)
+					       (NN 旅游)
+					       (NN 服务)
+					       (ETC 等))
+				       (NP (NN 方面))))
+			       (DEG 的))
+			  (NP (NN 劳务))
+			  (NP (NN 输入)
+			      (CC 与)
+			      (NN 输出))))) 
+	  </parse>
+	  <arg n="0">
+	  劳务 贸易 
+	  </arg>
+	  <arg n="1">
+	  相互 之间 在 通信 服务 、 金融 服务 、 教育 服务 和 旅游 服务 等 方面 的 劳务 输入 与 输出 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

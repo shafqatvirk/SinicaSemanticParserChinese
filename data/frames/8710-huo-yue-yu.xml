@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 活跃於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="time/place arg0 is active in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PRD (CP (WHNP-6 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-6))
+			      (VP (VP (NP-DIR (NN 平民))
+				      (VP (VV 出身)))
+				  (PU ，)
+				  (VP (PP-MNR (P 经过)
+					      (NP (NN 科考)))
+				      (VP (MSP 而)
+					  (VP (VV 活跃於)
+					      (NP-OBJ (NT 当时)))))))
+			  (DEC 的)))
+		  (NP (NN 文人))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-6 
+	  </arg>
+	  <arg n="1">
+	  当时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

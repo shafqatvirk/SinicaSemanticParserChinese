@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惊呼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 shouts in shock"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 看)
+			  (AS 过)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-PN-SBJ (NN 大陆)
+							 (NR 故宫))
+					      (VP (VV 收藏)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NP-PN (NR 明朝))
+				      (NP-TTL (PU 〈)
+					      (IP-APP (NP-PN-SBJ (NR 宣宗))
+						      (VP (VV 行乐)))
+					      (NP (NN 图))
+					      (PU 〉))))))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 任)
+			  (NP-OBJ (PN 谁))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 不免))
+		  (VP (VV 要)
+		      (VP (VV 惊呼)
+			  (PU ：)
+			  (IP-OBJ-Q (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (NP-DIR-WH (PN 哪))
+							    (VP (VV 来))))
+						    (DEC 的)))
+					    (NP (NN 古装)
+						(NN 人物)))
+				    (VP (VV 学)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 打)
+						    (NP-OBJ (ADJP (JJ 现代))
+							    (NP (NN 高尔夫))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 哪 来 的 古装 人物 学 *PRO* 打 现代 高尔夫 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不免 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 看 过 *OP* 大陆 故宫 收藏 *T*-1 的 明朝 〈 宣宗 行乐 图 〉 	    
+	  </arg>
+	  <V/>
+	</example>  
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,123 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 鼓励 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="encourager"/>
+      <role argnum="1" argrole="behavior,event"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而且))
+	      (NP-SBJ (NN 外资))
+	      (VP (DVP (VP (ADVP (AD 更))
+			   (VP (VA 多)))
+		       (DEV 地))
+		  (VP (VV 流入)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 国家))
+				      (VP (VV 鼓励)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (NP (NN 投资类)
+				  (NN 项目)))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*T*-1)->(投资类项目) 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="encourager"/>
+      <role argnum="1" argrole="party encouraged"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (NP (PN 此)))
+	      (PU ，)
+	      (NP-SBJ (NN 政府))
+	      (VP (VP (VV 采取)
+		      (NP-OBJ (DP (DT 各)
+				  (CLP (M 种)))
+			      (NP (NN 优惠)
+				  (NN 政策))))
+		  (VP (MSP 以)
+		      (VP (VV 鼓励)
+			  (NP-OBJ (NN 外商))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 投资)
+				  (NP-OBJ (NN 工业)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  政府 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外商 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 投资 工业 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 新))
+				      (VP (VV 当选))))
+			      (DEC 的)))
+		      (NP-PN (NR 自由党)
+			     (CC 和)
+			     (NR 国家党))
+		      (NP (NN 联盟)
+			  (NN 政府)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 鼓励)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP (P 与)
+				      (NP-PN (NR 中国)))
+				  (ADVP (AD 全面))
+				  (VP (VV 发展)
+				      (NP-OBJ (NP (NN 贸易)
+						  (CC 和)
+						  (NN 投资))
+					      (NP (NN 联系))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(自由党和国家党联盟政府) 新 当选 的 自由党 和 国家党 联盟 政府 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *PRO* 与 中国 全面 发展 贸易 和 投资 联系 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

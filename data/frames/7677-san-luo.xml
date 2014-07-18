@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 散落 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is scattered around"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (ADVP (AD 全面))
+			(VP (VV 盘点)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 散落)
+						    (PP (P 在)
+							(NP (NP (NN 公司))
+							    (DP (DT 各))
+							    (NP (NN 部门))))))
+					    (DEC 的)))
+				    (ADJP (JJ 无形))
+				    (NP (NN 资产))
+				    (PRN (PU ——)
+					 (NP (NN 知识))))))
+		    (PU ，)
+		    (VP (ADVP (AD 尤其))
+			(VP (VV 要)
+			    (VP (VRD (PU 「)
+				     (VV 挖)
+				     (PU 」)
+				     (VV 出))
+				(NP-OBJ (LCP (NP (DNP (NP (ADJP (JJ 资深))
+							  (NP (NN 人员)))
+						      (DEG 的))
+						 (NP (NN 脑)))
+					     (LC 中))
+					(NP (NN 宝藏)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	在 公司 各 部门 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 配戴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 puts on"/>
+    <role argnum="2" argrole="place arg1 is put on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 当)
+		    (LCP (IP (NP-SBJ (PN 我))
+			     (VP (PP-BNF (P 为)
+					 (NP (NN 总理)))
+				 (VP (VV 配戴)
+				     (NP-OBJ (-NONE- *pro*)))))
+			 (LC 时)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 特别))
+		(VP (VP (VV 解释))
+		    (VP (PP (P 给)
+			    (NP-OBJ (PN 她)))
+			(VP (VV 听)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="bnf">
+	为 总理 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 身上))
+				(VP (VV 配戴)
+				    (NP-OBJ (-NONE- *T*-2))))
+			    (DEC 的)))
+		    (ADJP (JJ 香))
+		    (NP (NN 球)))
+	    (VP (ADVP (AD 就))
+		(VP (VV 传来)
+		    (NP-OBJ (QP (CLP (M 阵阵)))
+			    (NP (NN 香气)))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	身上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 一贯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 入境)
+			 (NN 事务处))
+	      (VP (VV 会)
+		  (VP (PP-MNR (P 依照)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (QP-SBJ (-NONE- *T*-1))
+					      (VP (VA 一贯)))
+					  (DEC 的)))
+				  (NP (NN 做法))))
+		      (VP (VV 处理)
+			  (NP-OBJ (DNP (NP (ADJP (JJ 有关))
+					   (NP (NN 入境)
+					       (NN 身分)))
+				       (DEG 的))
+				  (NP (NN 要求))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

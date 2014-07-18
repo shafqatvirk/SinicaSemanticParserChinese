@@ -1,0 +1,191 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 协助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="assiter"/>
+      <role argnum="1" argrole="matter assisted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (PN 他))
+			   (DEG 的))
+		      (NP (NN 旅行)
+			  (NN 证件)))
+	      (VP (ADVP (AD 其後))
+		  (VP (SB 被)
+		      (VP (VV 用於)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (VV 协助)
+					  (NP-OBJ (QP (NP (NN 其中))
+						      (QP (CD 一)
+							  (CLP (M 名))))
+						  (NP-PN (NR 中国))
+						  (NP (NN 人士))))
+				      (VP-PRP (MSP 以)
+					      (VP (VV 办理)
+						  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+								      (VP (VV 前往)
+									  (NP-PN-OBJ (NR 澳洲))))
+								  (DEC 的))
+							  (NP (NN 登机)
+							      (NN 手续))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  其中 一 名 中国 人士 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="assister"/>
+      <role argnum="1" argrole="party assited"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NP-PN (NN 外交部))
+			     (NP (ADJP (JJ 驻港))
+				 (NP (NN 特派员)))
+			     (NP (NN 公署)))
+		  (VP (VV 致力)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 协助)
+				  (NP-OBJ (NN 特区)
+					  (NN 政府))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 处理)
+					  (NP-OBJ (DNP (PP (P 经)
+							   (NP (NN 授权)))
+						       (DEG 的))
+						  (PP (P 对)
+						      (NP (NN 外)))
+						  (NP (NN 事务))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  特区 政府 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 处理 经 授权 的 对 外 事务 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 说)
+		  (PU ，)
+		  (IP-OBJ (NP-PN-SBJ (NN 公署))
+			  (VP (VP (ADVP (AD 还))
+				  (VP (VP (ADVP (AD 积极))
+					  (VP (VV 配合)
+					      (NP-OBJ (NP-PN (NR 中国))
+						      (ADJP (JJ 驻外))
+						      (NP (NN 使领馆)))))
+				      (PU ，)
+				      (VP (ADVP (AD 密切))
+					  (PP (P 与)
+					      (NP (NP (NN 特区)
+						      (NN 政府))
+						  (ADJP (JJ 有关))
+						  (NP (NN 部门))))
+					  (VP (VP (VV 联系))
+					      (CC 与)
+					      (VP (VV 合作))))
+				      (PU ，)
+				      (VP (VV 协助)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 处理)
+						      (AS 了)
+						      (NP-OBJ (NP (QP (CD 七)
+								      (CLP (M 起)))
+								  (CP (WHNP-1 (-NONE- *OP*))
+								      (CP (IP (NP-SBJ (-NONE- *T*-1))
+									      (VP (ADVP (AD 较))
+										  (VP (VA 大))))
+									  (DEC 的)))
+								  (CP (WHNP-2 (-NONE- *OP*))
+								      (CP (IP (NP-SBJ (-NONE- *T*-2))
+									      (VP (VV 涉及)
+										  (NP-OBJ (NP (NP-PN (NR 香港))
+											      (NP (NN 居民)))
+											  (NP (NP (NN 利益))
+											      (CC 和)
+											      (NP (NN 生命)
+												  (NN 安全))))))
+									  (DEC 的)))
+								  (ADJP (JJ 突发性))
+								  (NP (NN 事件)))
+							      (PU ，)
+							      (NP (ADVP (AD 如))
+								  (NP (NP (NP-PN (NR 金边))
+									  (NP (NN 空难)))
+								      (PU 、)
+								      (NP (IP-APP (NP-SBJ (NP-PN (NR 菲律宾))
+											  (NP (NN 游船)))
+										  (VP (VV 翻船)))
+									  (NP (NN 案)))
+								      (PU 、)
+								      (NP (IP-APP (NP-SBJ (NP-PN (NR 香港))
+											  (NP (NN 渔船)))
+										  (VP (LB 被)
+										      (IP-OBJ (NP-PN-SBJ (NR 菲律宾)
+													 (CC 和)
+													 (NR 日本))
+											      (VP (VV 扣留)))))
+									  (NP (NN 案)))
+								      (PU ，)
+								      (CC 以及)
+								      (NP (NP-PN (NR 金边))
+									  (NP (NN 军事)
+									      (NN 冲突)))
+								      (ETC 等)))))))))
+			      (PU ；)
+			      (VP (ADVP (AD 此外))
+				  (PU ，)
+				  (ADVP (AD 还))
+				  (VP (VV 处理)
+				      (AS 了)
+				      (NP-OBJ (QP (CD 九十余)
+						  (CLP (M 起)))
+					      (DP (DT 其它))
+					      (NP (NN 领事)
+						  (NN 保护)
+						  (NN 案件))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  公署 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *PRO* 处理 了 七 起 *OP* (*T*-1)->(突发性事件) 较 大 的 *OP* (*T*-2)->(突发性事件) 涉及 香港 居民 利益 和 生命 安全 的 突发性 事件 ， 如 金边 空难 、 菲律宾 游船 翻船 案 、 香港 渔船 被 菲律宾 和 日本 扣留 案 ，以及 金边 军事 冲突 等 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

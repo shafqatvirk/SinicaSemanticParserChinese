@@ -1,0 +1,123 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 产 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="producer"/>
+      <role argnum="1" argrole="product"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 产)
+				    (PP-LOC (P 于)
+					    (NP (NP (NP-PN (NR 中国))
+						    (NN 西南))
+						(NP (NP-PN (NR 贵州省))
+						    (NN 北部))
+						(NP-PN (NR 赤水)
+						       (NN 河谷))
+						(NP (NN 地带))))))
+			    (DEC 的)))
+		    (NP-PN (NN 茅台酒)))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	  <arg n="M" f="LOC">
+	  于 中国 西南 贵州省 北部 赤水 河谷 地带 	  	    	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (DP (DT 这)
+			    (CLP (M 个)))
+			(DNP (NP (ADJP (NP (DP (DT 全))
+					   (NP (NN 国)))
+				       (ADJP (JJ 最大)))
+				 (NP (NN 规模)))
+			     (DEG 的))
+			(NP (NN 木浆厂)))
+		(VP (ADVP (AD 将))
+		    (VP (VP (PP-LGS (P 由)
+				    (NP-PN (NP-PN (NR 新加坡))
+					   (NP-PN (NR 亚洲))
+					   (NP (NN 浆纸业))
+					   (NP (NN 股份))
+					   (ADJP (JJ 有限))
+					   (NP (NN 公司))))
+			    (VP (VP (VV 投资)
+				    (QP-OBJ (CD 十二点八三亿)
+					    (CLP (M 美元))))
+				(VP (VV 兴建))))
+			(PU ，)
+			(VP (ADVP (AD 年))
+			    (VP (VV 产)
+				(NP-OBJ (ADJP (JJ 漂白))
+					(NP (NN 商品)
+					    (NN 木浆)))
+				(QP-EXT (CD 六十万)
+					(CLP (M 吨)))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 全 国 最大 规模 的 木浆厂 	  	    	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  	    	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  年 	  	    	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  漂白 商品 木浆 	  	    	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  六十万 吨 	  	    	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-APP (NP-PN-SBJ (NR 格尔木)
+			       (NN 炼油厂))
+		    (VP (ADVP (AD 年))
+			(VP (VV 产)
+			    (NP-OBJ (QP (CD 十万)
+					(CLP (M 吨)))
+				    (NP (NN 甲醇))))))) 
+	  </parse>
+	  <arg n="0">
+	  格尔木 炼油厂 	  	    	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  年 	  	    	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  十万 吨 甲醇 	  	    	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

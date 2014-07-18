@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 趋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="state tend towards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 房地产)
+		      (NN 市场))
+	      (VP (ADVP (AD 渐))
+		  (VP (VV 趋)
+		      (NP-OBJ (NN 回暖))))) 
+	  </parse>
+	  <arg n="0">
+	  房地产 市场 
+	  </arg>
+	  <arg n="1">
+	  回暖 
+	  </arg>
+	  <arg n="m" f="adv">
+	  渐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

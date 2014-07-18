@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拖延 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing delayed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR ＣＲ)
+			 (NN 公司))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (PP-MNR (P 凭)
+					       (NP (NN 提单)))
+				       (VP (VV 拿到)
+					   (NP-OBJ (NN 货物)))))
+			       (LC 后)))
+		  (PU ，)
+		  (VP (VP (VV 拖延)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 付)
+				      (NP-OBJ (NN 货款)))))
+		      (CC 或)
+		      (VP (ADVP (AD 不))
+			  (VP (VV 付款)))))) 
+	  </parse>
+	  <arg n="0">
+	  ＣＲ 公司 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 付 货款 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 凭 提单 拿到 货物 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 至於)
+		  (IP (NP-SBJ (NN 时机))
+		      (VP (VV 拖延))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 倒))
+		  (VP (VE 无)
+		      (NP-OBJ (NN 大碍))))) 
+	  </parse>
+	  <arg n="1">
+	  时机 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

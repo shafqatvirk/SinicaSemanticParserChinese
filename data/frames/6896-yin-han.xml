@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 隐含 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 contains hidden"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP-APP (IP (NP-SBJ (NP (NT 现今))
+					    (NP-PN (NR 台湾))
+					    (NP (NN 建筑)))
+				    (VP (ADVP (AD 一再))
+					(VP (VV 要)
+					    (VP (VV 抢)
+						(NP-OBJ (PU 「)
+							(NN 世界)
+							(NN 第一)
+							(PU 」))))))
+				(DEC 的))
+			(NP (NN 心态)))
+		(PU ，)
+		(VP (VV 隐含)
+		    (AS 著)
+		    (NP-OBJ (NP (NN 人们))
+			    (DNP (PP (P 对)
+				     (NP (ADJP (JJ 美式))
+					 (NP (NN 商业)
+					     (NN 城市))))
+				 (DEG 的))
+			    (NP (NN 认同))))) 
+	</parse>
+	<arg n="0">
+	现今 台湾 建筑 一再 要 抢 「 世界 第一 」 的 心态 
+	</arg>
+	<arg n="1">
+	人们 对 美式 商业 城市 的 认同 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

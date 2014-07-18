@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 次于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="second to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (VP (NP-TMP (NT 目前))
+		      (VP (VE 有)
+			  (NP-OBJ (QP (CD 两千多万))
+				  (NP (NN 糖尿病)
+				      (NN 患者)))))
+		  (PU ，)
+		  (VP (ADVP (AD 仅))
+		      (VP (VV 次于)
+			  (NP-PN-OBJ (NR 美国))))
+		  (PU ，)
+		  (VP (VV 居)
+		      (QP-OBJ (NP (NN 世界))
+			      (QP (OD 第二)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  美国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

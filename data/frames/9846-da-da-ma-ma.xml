@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打打骂骂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 打打骂骂)))
+				  (PU 、)
+				  (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VSB (VV 波折)
+					       (VV 起伏)))))
+			      (DEC 的)))
+		      (NP (NN 爱情)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (ADJP (JJ 现实))
+				   (NP (NN 生活)))
+			       (LC 中)))
+		  (ADVP (AD 并))
+		  (ADVP (AD 不))
+		  (VP (VV 存在)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

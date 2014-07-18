@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 外乎 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is other than"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-TMP (NT 以前))
+		    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 估算)
+				(NP-OBJ (DNP (NP (QP (CD 一)
+						     (CLP (M 家)))
+						 (NP (NN 公司)))
+					     (DEG 的))
+					(NP (NN 股价)
+					    (NN 净值)))))
+		    (PU ，)
+		    (VP (ADVP (AD 总))
+			(ADVP (AD 不))
+			(VP (VV 外乎)
+			    (NP-OBJ (NP (DNP (NP (NN 土地)
+						 (NN 厂房)
+						 (NN 之类))
+					     (DEG 的))
+					(ADJP (JJ 固定))
+					(NP (NN 资产)))
+				    (PU ，)
+				    (CC 和)
+				    (NP (NP-APP (NP (ADJP (JJ 库存))
+						    (NP (NN 现金)))
+						(ETC 等))
+					(ADJP (JJ 流动))
+					(NP (NN 资产)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 估算 一 家 公司 的 股价 净值 
+	</arg>
+	<arg n="1">
+	土地 厂房 之类 的 固定 资产 ， 和 库存 现金 等 流动 资产 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	总 
+	</arg>
+	<arg n="m" f="tmp">
+	以前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

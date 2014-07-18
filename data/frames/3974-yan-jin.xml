@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 严谨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 上市)
+			  (NN 委员会))
+		      (DNP (PP (P 对)
+			       (NP (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+						(IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (ADVP (AD 新))
+							(VP (VV 上市)))))
+					    (NP (NN 公司)))
+					(DEG 的))
+				   (NP (NN 资料)
+				       (CC 及)
+				       (NN 董事局)
+				       (NN 成员))))
+			   (DEG 的))
+		      (NP (NN 审批)))
+	      (VP (ADVP (AD 亦))
+		  (VP (VV 会)
+		      (VP (VA 严谨))))) 
+	  </parse>
+	  <arg n="0">
+	  上市 委员会 对 *OP* *T*-2 新 上市 公司 的 资料 及 董事局 成员 的 审批 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亦 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

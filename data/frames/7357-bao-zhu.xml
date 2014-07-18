@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 包住 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 wraps up/surrounds"/>
+    <role argnum="2" argrole="thing arg1 is surrounded with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 使得)
+		(NP-OBJ (NN 母口))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 包住)
+			(NP-OBJ (NN 子口)))))) 
+	</parse>
+	<arg n="1">
+	子口 
+	</arg>
+	<arg n="2">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

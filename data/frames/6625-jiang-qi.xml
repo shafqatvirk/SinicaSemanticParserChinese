@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 讲起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 talks about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (QP-TMP (CD 多)
+					    (CLP (M 年)))
+				    (PP-BNF (P 为)
+					    (NP (NN 台商)
+						(NN 问题)))
+				    (VP (VV 奔走))))
+			    (DEC 的)))
+		    (NP-PN (NR 叶宏灯)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 一))
+			    (VP (VV 讲起)
+				(NP-OBJ (DNP (NP (NN 台商)
+						 (NN 子女))
+					     (DEG 的))
+					(NP (NN 教育)
+					    (NN 问题))))))
+		(PU ，)
+		(ADVP (AD 满))
+		(VP (VC 是)
+		    (NP-PRD (NN 辛酸))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台商 子女 的 教育 问题 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

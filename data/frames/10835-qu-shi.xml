@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 取士 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="number of scholars arg0 selects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP-PN (NR 唐朝))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (DP (DT 每)
+			(CLP (M 次)))
+		    (NP (NN 科举)))
+	    (VP (ADVP (AD 只))
+		(VP (VV 取士)
+		    (NP-OBJ (QP (CD 数十))
+			    (NP (NN 人)))))) 
+	</parse>
+	<arg n="1">
+	数十 人 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="loc">
+	每 次 科举 
+	</arg>
+	<arg n="m" f="tmp">
+	唐朝 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

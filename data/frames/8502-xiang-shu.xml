@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 详述 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 explains in detail"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 具体))
+		  (VP (VV 详述)
+		      (IP-OBJ (NP-SBJ (QP (CD 两))
+				      (NP (NN 性)))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (NN 婚姻))
+					       (LC 中)))
+				  (VP (VV 应该)
+				      (VP (ADVP (AD 如何))
+					  (VP (VV 享有)
+					      (NP-OBJ (DNP (ADJP (JJ 平等))
+							   (DEG 的))
+						      (NP (NN 权利))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  两 性 在 婚姻 中 应该 如何 享有 平等 的 权利 
+	  </arg>
+	  <arg n="m" f="adv">
+	  具体 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

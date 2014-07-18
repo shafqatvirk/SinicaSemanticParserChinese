@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出刊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing which is printed out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (NP-PN-SBJ (PU 《)
+		       (NR 英文)
+		       (NR 中国)
+		       (NN 日报)
+		       (PU 》))
+	    (VP (ADVP (AD 一直))
+		(VP (VC 是)
+		    (VP (NP-TMP (NT 下午))
+			(VP (VV 出刊)))))) 
+	</parse>
+	<arg n="0">
+	《 英文 中国 日报 》 
+	</arg>
+	<arg n="m" f="tmp">
+	下午 
+	</arg>
+	<arg n="m" f="adv">
+	一直 
+	</arg>
+	<arg n="m" f="adv">
+	因此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP (NP-APP (PU 《)
+			    (NR 南华)
+			    (NN 早报)
+			    (PU 》)
+			    (PU 、)
+			    (PU 《)
+			    (NR 香港)
+			    (NN 虎报)
+			    (PU 》))
+		    (QP (CD 两)
+			(CLP (M 家)))
+		    (NP (NN 英文报)))
+		(PU ，)
+		(VP (DP-ADV (DT 每)
+			    (CLP (M 日)))
+		    (VP (VV 出刊)
+			(QP-OBJ (ADVP (AD 将近))
+				(QP (CD 一百)
+				    (CLP (M 页))))))) 
+	</parse>
+	<arg n="0">
+	《 南华 早报 》 、 《 香港 虎报 》 两 家 英文报 
+	</arg>
+	<arg n="0" f="qty">
+	将近 一百 页 
+	</arg>
+	<arg n="m" f="adv">
+	每 日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

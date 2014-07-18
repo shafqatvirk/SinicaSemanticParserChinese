@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 大费周章 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing for which arg0 spends lots of time and energy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 可惜))
+	      (PP-PRP (P 由於)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 缺乏)
+			      (NP-OBJ (NN 经费)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 总是))
+		  (PP-PRP (P 为了)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 寻找)
+				  (NP-OBJ (NN 协办)
+					  (NN 单位)))))
+		  (VP (MSP 而)
+		      (VP (VV 大费周章))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  为了 *PRO* 寻找 协办 单位 
+	  </arg>
+	  <arg n="m" f="adv">
+	  总是 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 *PRO* 缺乏 经费 
+	  </arg>
+	  <arg n="m" f="adv">
+	  可惜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

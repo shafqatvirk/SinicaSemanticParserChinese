@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 经办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP (NP-SBJ (QP (CD 八)
+				  (CLP (M 家)))
+			      (NP (NN 外资)
+				  (NN 银行)))
+		      (VP (VV 获准)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-LOC (P 在)
+					  (NP-PN (NR 上海)
+						 (NR 浦东)))
+				  (VP (VV 经办)
+				      (NP-OBJ (NN 人民币)
+					      (NN 业务))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  人民币 业务 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 上海 浦东 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

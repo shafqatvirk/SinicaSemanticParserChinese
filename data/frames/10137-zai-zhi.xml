@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 栽植 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 plants"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 刻意))
+				    (VP (VV 栽植)
+					(NP-OBJ (-NONE- *T*-2)))))
+			    (DEC 的)))
+		    (NP-APP (NN 樟树)
+			    (PU 、)
+			    (NN 菩提树)
+			    (PU 、)
+			    (NN 七里香)
+			    (NN 绿篱)
+			    (ETC 等))
+		    (NP (NN 花木)))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(VP (VV 使得)
+		    (LCP-OBJ (NP (NN 社区))
+			     (LC 里))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 绿意处处)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	刻意 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

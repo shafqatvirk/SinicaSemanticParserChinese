@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 费力 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes efforts to achieve"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q-HLN (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP-WH (AD 为什麽))
+			(VP (VV 要)
+			    (VP (ADVP (AD 这样))
+				(VP (VV 费力)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 推广)
+						(NP-OBJ (ADJP (JJ 新))
+							(NP (NN 纤维)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 推广 新 纤维 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这样 
+	  </arg>
+	  <arg n="m" f="adv">
+	  为什麽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

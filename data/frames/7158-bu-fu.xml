@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不复 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="state arg0 cannot re-appear in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 荣景))
+	    (VP (VV 不复)
+		(NP-OBJ (NT 当年)))) 
+	</parse>
+	<arg n="0">
+	荣景 
+	</arg>
+	<arg n="1">
+	当年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 对开 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities running in opposite directions"/>
+    <role argnum="1" argrole="places arg0 runs between"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 前年)
+		    (NT 十一月))
+	    (NP-PN-SBJ (NR 香港)
+		       (NN 机场))
+	    (VP (ADVP (AD 还))
+		(VP (VV 开)
+		    (AS 了)
+		    (NP-OBJ (QP (CLP (M 条)))
+			    (CP-APP (IP (NP-PN-SBJ (NR 香港)
+						   (PU ——)
+						   (NR 东莞))
+					(VP (VV 对开)))
+				    (DEC 的))
+			    (NP-PN (PU 「)
+				   (NR 通宝)
+				   (NN 巴士)
+				   (PU 」)))))) 
+	</parse>
+	<arg n="1">
+	香港 —— 东莞 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 逗 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 amuses/teases"/>
+    <role argnum="2" argrole="predicate"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 马修))
+	    (VP (VP (ADVP (AD 最))
+		    (VP (VV 喜欢)
+			(NP-OBJ (NN 小孩))))
+		(PU ，)
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 每))
+				(VP (VV 到)
+				    (NP-OBJ (QP (CD 一)
+						(CLP (M 处)))
+					    (NP (NN 国小))))))
+		    (ADVP (AD 就))
+		    (VP (VV 会)
+			(VP (VP (VV 表演)
+				(CC 或)
+				(VV 耍宝))
+			    (VP (VV 逗)
+				(NP-OBJ (NN 孩子))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 开心))))))))) 
+	</parse>
+	<arg n="0">
+	马修 
+	</arg>
+	<arg n="1">
+	孩子 
+	</arg>
+	<arg n="2">
+	*PRO* 开心 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 每 到 一 处 国小 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 糟糕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 尤其))
+				      (VP (VA 糟糕))))
+			      (DEC 的))))
+	      (VP (VC 是)
+		  (PU ，)
+		  (IP-PRD (IP (NP-SBJ (DNP (DP (DT 所有))
+					   (DEG 的))
+				      (NP (NN 工作)))
+			      (VP (VV 必须)
+				  (VP (PP-TMP (P 於)
+					      (LCP (NP (QP (CD 两))
+						       (NP (NN 星期)))
+						   (LC 内)))
+				      (VP (VV 完成)))))
+			  (PU ，)
+			  (IP (QP-SBJ (CD 一)
+				      (CLP (M 分钟)))
+			      (VP (ADVP (AD 都))
+				  (VP (VV 延迟)
+				      (VP-EXT (ADVP (AD 不))
+					      (VP (VV 得))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尤其 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

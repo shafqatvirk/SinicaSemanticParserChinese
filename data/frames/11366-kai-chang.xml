@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开场 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 opens up"/>
+    <role argnum="2" argrole="thing arg1 is opened up with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-SBJ (CP (WHNP-7 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-7))
+				(VP (VV 开场)))
+			    (DEC 的)))
+		    (QP (CD 十几)
+			(CLP (M 集))))
+	    (VP (VV 做完)
+		(NP-OBJ (DNP (NP (NN 时代)
+				 (NN 背景))
+			     (DEG 的))
+			(NP (NN 交代))))) 
+	</parse>
+	<arg n="2">
+	*T*-7 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

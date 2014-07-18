@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遵循 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 complies with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 此)
+			  (CLP (M 次)))
+		      (NP (NN 采购)))
+	      (VP (ADVP (AD 即))
+		  (VP (VP (VV 遵循)
+			  (NP-OBJ (NN 国际)
+				  (NN 惯例)))
+		      (VP (VV 进行))))) 
+	  </parse>
+	  <arg n="0">
+	  此 次 采购 
+	  </arg>
+	  <arg n="1">
+	  国际 惯例 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 公司))
+				  (VP (ADVP (AD 始终如一))
+				      (VP (VV 遵循)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 宗旨)))) 
+	  </parse>
+	  <arg n="0">
+	  公司 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  始终如一 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

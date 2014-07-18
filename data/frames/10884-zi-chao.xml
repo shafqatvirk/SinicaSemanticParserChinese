@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自嘲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 says in amusing himself"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 林茂寅))
+	    (VP (VV 笑道)
+		(PU ，)
+		(IP-OBJ (IP (-NONE- *T*-1))
+			(IP (NP-TMP (NT 那时))
+			    (NP-SBJ (PN 我们))
+			    (VP (ADVP (AD 常常))
+				(VP (VV 自嘲)
+				    (PU ，)
+				    (IP-OBJ (PU 『)
+					    (CP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (VC 是)))
+						(SP 啊))
+					    (PU ，)
+					    (IP (NP-SBJ (PN 我们))
+						(VP (PP (P 比)
+							(NP (NN 别人)))
+						    (ADVP (AD 早))
+						    (VP (VV 下班)))
+						(PRN (PU ——)
+						     (IP (NP-SBJ (PN 我们))
+							 (VP (NP-TMP (NT 早上)
+								     (NT 三点))
+							     (ADVP (AD 就))
+							     (VP (VV 下班)))
+							 (SP 了)))))
+				    (PU ！)
+				    (PU 』))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	『 *pro* 是 啊 ， 我们 比 别人 早 下班 —— 我们 早上 三点 就 下班 了 ！ 』 
+	</arg>
+	<arg n="m" f="adv">
+	常常 
+	</arg>
+	<arg n="m" f="tmp">
+	那时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

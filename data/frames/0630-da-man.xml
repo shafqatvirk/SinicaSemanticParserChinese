@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打满 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="competition, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (ADJP (JJ 总))
+			  (NP (NN 决赛)))
+		      (NP (NN 期间)))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 交战))
+		      (NP (NN 队伍)))
+	      (VP (ADVP (AD 常))
+		  (VP (VV 可以)
+		      (VP (VP (VE 无)
+			      (VP (VV 需)
+				  (VP (VV 打满)
+				      (QP-OBJ (CD ７)
+					      (CLP (M 场))))))
+			  (VP (ADVP (AD 便))
+			      (VP (VV 可)
+				  (VP (VV 定)
+				      (NP-OBJ (NN 输赢))))))))) 
+	  </parse>
+	  <arg n="0">
+	  交战 队伍 
+	  </arg>
+	  <arg n="1">
+	  ７ 场 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  总 决赛 期间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  常 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这))
+		      (NP (NN 阶段)))
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 全部))
+			      (VP (VV 打满))))
+		  (ADVP (AD 将))
+		  (VP (VE 有)
+		      (NP-OBJ (QP (CD ２６)
+				  (CLP (M 场)))
+			      (NP (NN 比赛))))))
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全部 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

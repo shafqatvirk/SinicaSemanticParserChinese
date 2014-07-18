@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 成亲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people getting married"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (PP (P 与)
+				    (NP (PN 他)))
+				(ADVP (AD 才))
+				(VP (VV 成亲)
+				    (ADVP (AD 不久)))))
+			(DEC 的)))
+		(NP-APP (DNP (NP-PN (NR 张润生)
+				    (NN 将军))
+			     (DEG 之))
+			(NP (NN 女)))
+		(NP-PN (NR 张明随))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="0" f="crd">
+	与 他 
+	</arg>
+	<arg n="m" f="adv">
+	不久 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

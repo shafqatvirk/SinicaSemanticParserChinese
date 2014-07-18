@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贴满 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing pasted"/>
+      <role argnum="2" argrole="location pasted onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 麦克缔尔))
+	      (VP (VP (NP-ADV (DP (DT 全))
+			      (NP (NN 身)))
+		      (VP (VV 贴满)
+			  (NP-OBJ (NN 毛发))))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (PN 自己))
+			      (VP (VRD (VV 打扮)
+				       (VV 成))
+				  (NP-OBJ (NN 猩猩))))))) 
+	  </parse>
+	  <arg n="0">
+	  麦克缔尔 
+	  </arg>
+	  <arg n="1">
+	  毛发 
+	  </arg>
+	  <arg n="2">
+	  全 身 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

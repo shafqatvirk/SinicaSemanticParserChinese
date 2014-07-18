@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 主导 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 plays a guiding role in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP (DP (DT 该))
+		      (NP (NN 区域)))
+		  (IP-APP (NP-SBJ (ADJP (JJ 高))
+				  (ADJP (JJ 新))
+				  (NP (NN 技术)))
+			  (VP (VV 主导)
+			      (NP-OBJ (NN 产业)
+				      (NN 结构))))
+		  (NP (NN 格局))) 
+	  </parse>
+	  <arg n="0">
+	  高 新 技术 
+	  </arg>
+	  <arg n="1">
+	  产业 结构 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 推行)
+	      (NP-OBJ (NP (PN 其))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 旨))
+				  (VP (VV 在)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 建立)
+						  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							      (CP (IP (NP-SBJ-3 (-NONE- *T*-2))
+								      (VP (PP-LGS (P 由)
+										  (NP-PN (NR 美国)))
+									  (VP (VV 主导)
+									      (NP-OBJ (-NONE- *-3)))))
+								  (DEC 的)))
+							  (NP (NN 国际)
+							      (NN 政治))
+							  (ADJP (JJ 新))
+							  (NP (NN 秩序)))))))
+			      (DEC 的)))
+		      (NP (NN 全球)
+			  (NN 战略)))) 
+	  </parse>
+	  <arg n="0">
+	  由 美国 
+	  </arg>
+	  <arg n="1">
+	  *-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

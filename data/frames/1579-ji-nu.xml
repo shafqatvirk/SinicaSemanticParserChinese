@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 激怒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="infuriater"/>
+      <role argnum="1" argrole="entity infuriated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (DVP (VP (ADVP (AD 如此))
+				   (VP (VA 早)))
+			       (DEV 地))
+			  (VP (VRD (VV 暴露)
+				   (VV 出))
+			      (NP-OBJ (DNP (NP (PN 他))
+					   (DEG 的))
+				      (NP (NN 心得)
+					  (CC 和)
+					  (NN 战术))))))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 显然))
+		      (ADVP (AD 并))
+		      (ADVP (AD 不))
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 高明)))
+					  (DEC 之)))
+				  (NP (NN 举)))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (VP (VE 有)
+			  (NP-OBJ (NN 可能)))
+		      (VP (VV 会)
+			  (VP (VV 激怒)
+			      (NP-PN-OBJ (NR 泰森))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 如此 早 地 暴露 出 他 的 心得 和 战术 
+	  </arg>
+	  <arg n="1">
+	  泰森 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

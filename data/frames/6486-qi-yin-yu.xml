@@ -1,0 +1,117 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 起因於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 is caused by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (P 至於)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 生产)
+			    (NP-OBJ (NN 唱片)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 则))
+		(VP (VV 起因於)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 个)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VA 美丽)))
+				    (DEC 的)))
+			    (NP (NN 错误)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一 个 *OP* *T*-1 美丽 的 错误 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="tpc">
+	至於 *PRO* 生产 唱片 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可能)
+		(VP (VV 起因於)
+		    (IP-OBJ (IP (NP-TMP (NT 当时))
+				(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (NP-PRP (NN 战乱))
+							(VP (VV 逃亡))))
+						(DEC 的)))
+					(NP (NN 人家)))
+				(VP (VP (ADVP (AD 不))
+					(VP (VA 方便)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 携带)
+							(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+								    (CP (IP (NP-SBJ (-NONE- *T*-2))
+									    (VP (VCD (VA 细)
+										     (VA 碎))))
+									(DEC 的)))
+								(NP (NN 白米)))))))
+				    (PU ，)
+				    (VP (ADVP (AD 就))
+					(VP (BA 将)
+					    (IP-OBJ (NP-SBJ (NN 米))
+						    (VP (VRD (VV 碾磨)
+							     (VV 成))
+							(VP-OBJ (NN 浆))))))
+				    (PU ，)
+				    (VP (ADVP (AD 再)
+					      (VP (VRD (VV 压制)
+						       (VV 成))
+						  (NP-OBJ (NN 线条状)))))))
+			    (PU ，)
+			    (IP (NP-SBJ (-NONE- *pro*))
+				(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+						 (VP (VV 煮熟)
+						     (PU 、)
+						     (VV 风乾)))
+					     (LC 後))
+				    (PU ，)
+				    (ADVP (AD 就))
+				    (VP (VV 成为)
+					(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-3))
+							    (VP (CC 既)
+								(VP (VV 轻便))
+								(CC 又)
+								(VP (VV 可)
+								    (VP (ADVP (AD 长久))
+									(VP (VV 贮存))))))
+							(DEC 的)))
+						(NP (NN 食品)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	当时 *OP* *T*-1 战乱 逃亡 的 人家 不 方便 *PRO* 携带 *OP* *T*-2 细 碎 的 白米 ， 就 将 米 碾磨 成 浆 ， 再 压制 成 线条状 ， *pro* *PRO* 煮熟 、 风乾 後 ， 就 成为 *OP* *T*-3 既 轻便 又 可 长久 贮存 的 食品 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,118 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 造成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 美国))
+			   (DEG 的))
+		      (DP (DT 这)
+			  (CLP (M 次)))
+		      (NP (NN 军事)
+			  (NN 行动)))
+	      (VP (PP-DIR (P 对)
+			  (NP (DNP (NP (NP (NP-PN (NR 波斯湾))
+					   (NP (NN 地区)))
+				       (CC 和)
+				       (NP (NN 世界)))
+				   (DEG 的))
+			      (NP (NN 和平)
+				  (CC 与)
+				  (NN 安全))))
+		  (VP (VV 造成)
+		      (AS 了)
+		      (NP-OBJ (ADJP (JJ 严重))
+			      (NP (NN 后果)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 的 这 次 军事 行动 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  严重 后果 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 由于)
+		  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (NP-TMP (NT 过去))
+				  (NP-ADV (NN 长期))
+				  (VP (VP (VV 围)
+					  (NP-OBJ (NN 湖)))
+				      (VP (VV 造)
+					  (NP-OBJ (NN 田))))))
+		      (VP (VV 造成)
+			  (IP-OBJ (IP (NP-SBJ (NP-PN (NR 洞庭湖))
+					      (NP (NN 湖面)))
+				      (VP (VV 缩小)))
+				  (PU ，)
+				  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 调蓄)
+							      (NP-OBJ (NN 洪水))))
+						      (DEC 的))
+					      (NP (NN 能力)))
+				      (VP (VV 减弱))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 过去 长期 围 湖 造 田 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  洞庭湖 湖面 缩小 ， *PRO* 调蓄 洪水 的 能力 减弱 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 造成)
+				      (NP-OBJ (NN 新闻))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VA 失实)))))
+			      (DEC 的)))
+		      (NP (NN 原因)))
+	      (VP (VP (ADVP (AD 很))
+		      (VP (VA 多)))
+		  (PU ，)
+		  (VP (ADVP (AD 主要))
+		      (VP (VC 是)
+			  (NP-PRD (ADJP (JJ 主观))
+				  (NP (NN 原因))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  新闻 
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 失实 
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

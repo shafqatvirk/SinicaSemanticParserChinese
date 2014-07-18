@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 小于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="level arg0 is smaller than"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (LCP (NP (NP (PU “)
+				   (NN 协调)
+				   (NN 世界时)
+				   (PU ”))
+			       (CC 与)
+			       (NP (NP-PN (NR 格林尼治))
+				   (NP (NN 世界时))))
+			   (LC 之间))
+		      (NP (NN 误差)))
+	      (VP (VV 应)
+		  (VP (VV 小于)
+		      (QP-OBJ (CD ０．９)
+			      (CLP (M 秒)))))) 
+	  </parse>
+	  <arg n="0">
+	  “ 协调 世界时 ” 与 格林尼治 世界时 之间 误差 
+	  </arg>
+	  <arg n="1">
+	  ０．９ 秒 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 救济 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 aids financially"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (ADVP (AD 不仅))
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 原本))
+					    (VP (VV 希望)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 救济)
+							    (NP-OBJ (-NONE- *T*-1)))))))
+				    (DEC 的)))
+			    (NP (NN 小农))))
+		(VP (VV 蓄积)
+		    (NP-OBJ (QP (CD 许多))
+			    (NP (NN 不满))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 遇有)
+				 (NP-OBJ (NP-APP (NN 水灾)
+						 (PU 、)
+						 (NN 盗贼)
+						 (PU 、)
+						 (NN 疾病)
+						 (ETC 等))
+					 (NP (NN 灾变)))))
+			 (LC 时))
+		(PU ，)
+		(ADVP (AD 则))
+		(ADVP (AD 相互))
+		(VP (VV 救济)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	相互 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 遇有 水灾 、 盗贼 、 疾病 等 灾变 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

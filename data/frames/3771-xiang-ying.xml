@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 响应 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 responds to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 中央))
+		      (ADJP (JJ 直属))
+		      (NP (NN 机关)))
+	      (VP (VV 要)
+		  (VP (VP (VV 带头))
+		      (VP (VV 响应)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 中共)
+						  (NN 中央))
+					   (PU 、)
+					   (NP-PN (NN 国务院)))
+				       (DEG 的))
+				  (NP (NN 号召)))))
+		  (PU ，)
+		  (VP (PP-DIR (P 从)
+			      (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 保证)
+						  (NP-OBJ (NP (NN 经济)
+							      (NN 建设))
+							  (DP (DT 这)
+							      (QP (CD 一)))
+							  (NP (NN 中心)
+							      (NN 任务)))))
+					  (DEC 的))
+				  (NP (NN 大局))))
+		      (VP (VV 出发)))
+		  (PU ，)
+		  (VP (VV 加强)
+		      (NP-OBJ (NN 预算)
+			      (NN 管理)))
+		  (PU ，)
+		  (VP (VV 做好)
+		      (NP-OBJ (NN 财务)
+			      (NN 管理)
+			      (NN 工作))))) 
+	  </parse>
+	  <arg n="0">
+	  中央 直属 机关 
+	  </arg>
+	  <arg n="1">
+	  中共 中央 、 国务院 的 号召 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

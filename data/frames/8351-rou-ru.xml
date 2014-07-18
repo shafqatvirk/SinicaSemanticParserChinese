@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揉入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 gets arg1 into by kneading"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 新竹))
+			   (DEG 的))
+		      (NP (NN 米粉)))
+	      (VP (VP (NP-TMP (NT 如今))
+		      (ADVP (AD 也))
+		      (PP-DIR (P 朝)
+			      (NP (NN 速食化)
+				  (CC 与)
+				  (NN 休闲化)))
+		      (VP (VV 发展)))
+		  (PU ，)
+		  (VP (VRD (VV 开发)
+			   (VV 出))
+		      (NP-OBJ (QP (CD 不少))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (VV 冲泡))
+					      (VP (ADVP (AD 即))
+						  (VP (VV 可)
+						      (VP (VV 食用))))))
+				      (DEC 的)))
+			      (NP (NN 速食品))))
+		  (PU ，)
+		  (CC 以及)
+		  (VP (VV 揉入)
+		      (NP-OBJ (ADJP (JJ 不同))
+			      (NP (NN 原料)
+				  (CC 或)
+				  (NN 口味))
+			      (PU ，)
+			      (PRN (NP (ADVP (AD 如))
+				       (NP (NN 菠菜)
+					   (PU 、)
+					   (NN 胡萝卜)
+					   (PU 、)
+					   (NN 芋头)
+					   (ETC 等)))))))) 
+	  </parse>
+	  <arg n="1">
+	  不同 原料 或 口味 ， 如 菠菜 、 胡萝卜 、 芋头 等 
+	  </arg>
+	  <arg n="2">
+	  新竹 的 米粉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

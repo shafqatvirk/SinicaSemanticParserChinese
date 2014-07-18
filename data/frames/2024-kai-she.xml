@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开设 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 十多)
+			      (CLP (M 家)))
+			  (NP (NN 企业)))
+		  (VP (PP-LOC (P 在)
+			      (NP-PN (NR 俄)))
+		      (VP (VV 开设)
+			  (AS 了)
+			  (NP-OBJ (NN 公司)
+				  (CC 或)
+				  (NN 代表处))))) 
+	  </parse>
+	  <arg n="0">
+	  十多 家 企业 
+	  </arg>
+	  <arg n="1">
+	  公司 或 代表处 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 俄 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  ( (IP (IP (NP-SBJ (NN 福利)
+			    (NN 工厂))
+		    (VP (VV 开展)
+			(NP-OBJ (NP-APP (NN 广播)
+					(NN 体操)
+					(ETC 等))
+				(NP (NN 活动)))))
+		(PU ，)
+		(IP (NP-SBJ (NN 学校))
+		    (VP (VV 开设)
+			(NP-OBJ (NN 体育课))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  学校 
+	  </arg>
+	  <arg n="1">
+	  体育课 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 网站))
+	      (VP (VP (VV 开设)
+		      (AS 了)
+		      (NP-OBJ (NN 求助)
+			      (NN 热线))))) 
+	  </parse>
+	  <arg n="0">
+	  网站 
+	  </arg>
+	  <arg n="1">
+	  求助 热线 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

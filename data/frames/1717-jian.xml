@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="constructor"/>
+      <role argnum="1" argrole="thing constructed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 自)
+		      (LCP (NP (NT 一九九五年))
+			   (LC 以来)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 南宁市))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 新))
+		  (VP (VV 建)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 包括)
+					      (LCP-OBJ (NP (NP-APP (NN 棕榈园)
+								   (PU 、)
+								   (NN 鳄鱼湖)
+								   (PU 、)
+								   (NN 香花园)
+								   (PU 、)
+								   (NN 金花茶)
+								   (NN 公园)
+								   (ETC 等))
+							   (NP (NN 重点)
+							       (NN 景区)))
+						       (LC 在内))))
+				      (DEC 的)))
+			      (NP (NP (QP (CD 三)
+					  (CLP (M 个)))
+				      (NP (NN 公园)))
+				  (CC 和)
+				  (NP (QP (CD 二十多)
+					  (CLP (M 处)))
+				      (ADJP (JJ 游园))
+				      (NP (NN 绿地)))))))) 
+	  </parse>
+	  <arg n="0">
+	  南宁市 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 包括 棕榈园 、 鳄鱼湖 、 香花园 、 金花茶 公园 等 重点 景区 在内 的 三 个 公园 和 二十多 处 游园 绿地 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 一九九五年 以来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  新 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 生产线))
+	      (VP (VV 建)
+		  (PP-LOC (P 在)
+			  (LCP (NP-PN (NP-PN (NR 保定))
+				      (NP (NN 国家))
+				      (NP (NP (ADJP (JJ 高新))
+					      (NP (NN 技术)))
+					  (NP (NN 产业)))
+				      (NP (NN 开发区)))
+			       (LC 内)))))
+	  </parse>
+	  <arg n="1">
+	  生产线 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 保定 国家 高新 技术 产业 开发区 内 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

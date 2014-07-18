@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 探勘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 尤其))
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 无法))
+			  (ADVP (AD 长期))
+			  (ADVP (AD 实地))
+			  (VP (VV 探勘)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+						  (VP (PP-LGS (P 由)
+							      (NP (PN 他)))
+						      (NP-ADV (QP (CD 一))
+							      (NP (NN 手)))
+						      (VP (VV 推动)
+							  (NP-OBJ (-NONE- *-2)))))
+					      (DEC 的)))
+				      (PU 、)
+				      (NP (NP (NN 大陆))
+					  (NP-PN (NR 豫东))
+					  (NP-PN (NR 商邱))
+					  (NP (NN 遗址)))
+				      (ADJP (JJ 大型))
+				      (NP (NN 计画))))))
+	      (PU ，)
+	      (VP (ADVP (AD 最))
+		  (VP (VV 令)
+		      (NP-PN-OBJ (NR 张光直))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VE 有)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 壮志未酬)))
+					      (DEC 之))
+				      (NP (NN 憾)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 由 他 一 手 推动 *-2 的 、 大陆 豫东 商邱 遗址 大型 计画 
+	  </arg>
+	  <arg n="m" f="adv">
+	  实地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  长期 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

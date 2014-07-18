@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 胜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="winner"/>
+      <role argnum="1" argrole="loser"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美国队))
+	      (VP (PP-MNR (P 以)
+			  (QP (CD １０)
+			      (PU ：)
+			      (CD ５)))
+		  (VP (VV 胜)
+		      (NP-PN-OBJ (NR 哈萨克斯坦队))))) 
+	  </parse>
+	  <arg n="0">
+	  美国队 	  
+	  </arg>
+	  <arg n="1">
+	  哈萨克斯坦队 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 １０ ： ５ 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 韩国))
+			   (DEG 的))
+		      (NP (NP-PN (NR 刘昌赫))
+			  (QP (CD 九)
+			      (CLP (M 段)))))
+	      (VP (VP (VV 执黑))
+		  (VP (PP (P 与)
+			  (NP (DNP (NP-PN (NR 日本))
+				   (DEG 的))
+			      (NP (NP-PN (NR 结城聪))
+				  (QP (CD 九)
+				      (CLP (M 段))))))
+		      (ADVP (AD 大))
+		      (VP (VV 战)
+			  (QP-EXT (CD ３０５)
+				  (CLP (M 手)))))
+		  (PU ，)
+		  (VP (ADVP (AD 最后))
+		      (PP-MNR (P 以)
+			      (NP (QP (CD 四分之三))
+				  (NP (NN 子))))
+		      (ADVP (AD 险))
+		      (VP (VV 胜))))) 
+	  </parse>
+	  <arg n="0">
+	  韩国 的 刘昌赫 九 段 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  险 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 四分之三 子 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  最后 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity to bear"/>
+      <role argnum="1" argrole="burden or responsibility"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (NN 冰果)
+			       (NN 生意))
+		       (VP (PP-PRP (P 因)
+				   (IP (NP-SBJ (NN 体力))
+				       (VP (ADVP (AD 不))
+					   (VP (VV 胜)
+					       (NP-OBJ (NN 负荷))))))
+			   (VP (VV 收掉))))
+		   (LC 後)) 
+	  </parse>
+	  <arg n="0">
+	  体力 	  
+	  </arg>
+	  <arg n="1">
+	  负荷 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

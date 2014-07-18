@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 百花齐放 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 一))
+			    (VP (VV 追究))))
+		(ADVP (AD 竟然))
+		(VP (VV 百花齐放)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	竟然 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 一 追究 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收拾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity tidied up/punished"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-3 (NP-SBJ (NP-APP (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (ADVP (AD 以前))
+						    (PU ，)
+						    (VP (LB 被)
+							(CP-OBJ (WHNP-1 (-NONE- *OP*))
+								(IP (NP-SBJ (PN 他))
+								    (VP (VV 收拾)
+									(NP-OBJ (-NONE- *T*-1))))))))
+					    (DEC 的)))
+				    (NP (NN 拳手)))
+			    (NP-PN (NR 舍尔顿)
+				   (CC 和)
+				   (NR 布鲁诺)))
+		    (VP (ADVP (AD 都))
+			(VP (VV 吃)
+			    (AS 了)
+			    (NP-OBJ (DP (DT 这)
+					(CLP (M 个)))
+				    (NP (NN 亏)))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  以前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

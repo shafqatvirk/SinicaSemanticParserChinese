@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 免税 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing the tax on which is exempted for arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然後))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 又))
+		    (VP (VV 利用)
+			(NP-OBJ (NP-PN (NR 日本))
+				(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 入境)))
+						(VP (VV 免税))))
+					(DEC 的))
+				(NP (NN 优惠)))))
+		(PU ，)
+		(VP (PP-TMP (P 在)
+			    (LCP (IP (NP (-NONE- *PRO*))
+				     (VP (VV 上)
+					 (NP-OBJ (NN 船))))
+				 (LC 前)))
+		    (VP (VV 买)
+			(AS 了)
+			(NP-OBJ (NP (QP (CD 三)
+					(CLP (M 篓)))
+				    (NP (NN 香蕉)))
+				(PU 、)
+				(NP (QP (CD 三)
+					(CLP (M 箱)))
+				    (NP (NN 凤梨)
+					(NN 罐头)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 入境 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

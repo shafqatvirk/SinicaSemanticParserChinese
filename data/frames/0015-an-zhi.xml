@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 安置 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (PP-BNF (P 为)
+			    (NP (NN 库区)))
+		    (VP (VV 安置)
+			(NP-OBJ (NN 移民))
+			(NP-EXT (QP (ADVP (AD 近))
+				    (QP (CD 三百)))
+				(NP (NN 人))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  移民 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  近 三百 人 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (CP-APP (IP (NP-SBJ (NN 资产))
+				    (VP (VV 变现)))
+				(DEC 的))
+			(NP (NN 收入)))
+		(VP (ADVP (AD 首先))
+		    (VP (VV 用)
+			(PP-LOC (P 于)
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 安置)
+					(NP-OBJ (NN 职工))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  职工 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

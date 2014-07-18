@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打圆场 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity for whome arg0 redeems the situation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (NP-TMP (NP-APP (NT 隔天))
+				    (ADJP (JJ 大年))
+				    (NP (NT 初一)))
+			    (VP (VP (VV 到)
+				    (NP-OBJ (NN 父母)
+					    (NN 家)))
+				(VP (VV 拜年)))))
+		(PU ，)
+		(ADVP (AD 还))
+		(ADVP (AD 特地))
+		(VP (VV 要)
+		    (NP-OBJ (NN 儿女))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-BNF (P 替)
+				    (NP (PN 他)))
+			    (VP (VV 打圆场))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	替 他 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

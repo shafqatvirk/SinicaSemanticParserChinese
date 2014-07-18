@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 养 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity raised/provided for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (PP-MNR (P 以)
+			  (NP (NN 路)))
+		  (VP (VV 养)
+		      (NP-OBJ (NN 路))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  路 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 路 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity provided for to survive"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 光))
+			  (VP (VV 靠)
+			      (NP-OBJ (NN 国内)
+				      (NN 市场)))))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 可以)
+		      (VP (VPT (VV 养)
+			       (DER 得)
+			       (VA 活))
+			  (NP-PN-OBJ (NR 台塑)))))
+	      (SP 了)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 光 靠 国内 市场 
+	  </arg>
+	  <arg n="1">
+	  台塑 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

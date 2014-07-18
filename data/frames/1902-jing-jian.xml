@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 精简 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 要)
+		      (VP (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DP (DT 这)
+						  (CLP (M 项)))
+					      (NP (NN 工作)))
+				      (VP (PP-MNR (P 作为)
+						  (NP (DNP (NP (NN 政治)
+							       (NN 体制)
+							       (NN 改革))
+							   (DEG 的))
+						      (QP (CD 一)
+							  (CLP (M 件)))
+						      (ADJP (JJ 大))
+						      (NP (NN 事))))
+					  (VP (MSP 来)
+					      (VP (VV 抓))))))
+			  (PU ，)
+			  (VP (VP (VV 结合)
+				  (NP-OBJ (NN 改革)))
+			      (PU 、)
+			      (VP (VV 精简)
+				  (NP-OBJ (NN 机构)))
+			      (VP (MSP 来)
+				  (VP (VV 推行)
+				      (NP-OBJ (NN 公务员)
+					      (NN 制度))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  机构 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人员)
+		      (NN 编制)
+		      (NN 总数))
+	      (VP (ADVP (AD 基本))
+		  (VP (VV 达到)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 精简)
+					      (QP-OBJ (CD 一半))))
+				      (DEC 的))
+			      (ADJP (JJ 预期))
+			      (NP (NN 目标)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一半 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

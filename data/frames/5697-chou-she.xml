@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 筹设 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 sets up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (PP-MNR (P 以)
+					    (NP (NP (NN 华人))
+						(NP-PN (NR CNN))))
+				    (VP (VV 自许))))
+			    (DEC 的)))
+		    (NP-APP (NP-PN (NR 香港))
+			    (ADJP (JJ 有线))
+			    (NP (NN 电视台)))
+		    (NP-PN (PU 「)
+			   (NR 传讯)
+			   (NN 电视)
+			   (PU 」)))
+	    (PU ，)
+	    (VP (PP-TMP (P 於)
+			(NP (NT 一九九三年)))
+		(VP (VV 委托)
+		    (NP-PN-OBJ (NR 张桂越))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 广布)
+				(NP-OBJ (NN 人脉)))
+			    (PU ，)
+			    (VP (VV 筹设)
+				(NP-OBJ (NP-PN (NR 伦敦))
+					(NP (NN 分社))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	伦敦 分社 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

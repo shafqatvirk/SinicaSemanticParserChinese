@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 驻足 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 stops walking and stays in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-ADV (ADVP (CS 不管))
+		    (IP (NP-SBJ (NN 路人)
+				(NN 行脚))
+			(VP (VA 匆匆))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 隐地))
+	    (VP (ADVP (AD 依然))
+		(VP (VV 坚持)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 驻足)
+				    (PP (P 在)
+					(LCP (NP (NN 文学)
+						 (NN 花园))
+					     (LC 里))))
+				(VP (VV 耕耘))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	在 文学 花园 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 经过)
+					(LCP-OBJ (NP (NN 摊))
+						 (LC 前)))
+				    (PU ，)
+				    (VP (ADVP (AD 偶尔))
+					(VP (VV 驻足)))))
+			    (DEC 的)))
+		    (NP (NN 同胞)))
+	    (PU ，)
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 不管))
+			    (VP (VP (VV 买))
+				(CC 或)
+				(VP (ADVP (AD 不))
+				    (VP (VV 买))))))
+		(PU ，)
+		(ADVP (AD 有意)
+		      (AD 无意))
+		(PU ，)
+		(ADVP (AD 总))
+		(VP (VV 要)
+		    (VP (VP (VP (VNV (VV 摸)
+				     (CD 一)
+				     (VV 摸))
+				(NP-OBJ (-NONE- *RNR*-2)))
+			    (PU 、)
+			    (VP (VNV (VV 翻)
+				     (CD 一)
+				     (VV 翻))
+				(NP-OBJ-2 (NN 样品))))
+			(PU ，)
+			(VP (VNV (VV 还)
+				 (CD 一)
+				 (VV 还))
+			    (NP-OBJ (NN 价))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	偶尔 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

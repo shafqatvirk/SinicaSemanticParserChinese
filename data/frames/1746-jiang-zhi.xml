@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降至 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="initiator, cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 机构)))
+	      (VP (ADVP (AD 已))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (DNP (NP (NT 今年)
+					       (NN 全球)
+					       (NN 原油)
+					       (NN 需求量))
+					   (DEG 的))
+				      (NP (NN 增长率)))
+			      (VP (PP-DIR (P 从)
+					  (QP (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *pro*))
+							  (VP (ADVP (AD 早先))
+							      (VP (VV 估计)
+								  (NP-OBJ (-NONE- *T*-1)))))
+						      (DEC 的)))
+					      (QP (CD 百分之二点五))))
+				  (VP (VV 降至)
+				      (QP-OBJ (CD 百分之二点二)))))))) 
+	  </parse>
+	  <arg n="0">
+	  该 机构 
+	  </arg>
+	  <arg n="1">
+	  今年 全球 原油 需求量 的 增长率 
+	  </arg>
+	  <arg n="2">
+	  从 *OP* *pro* 早先 估计 *T*-1 的 百分之二点五 
+	  </arg>
+	  <arg n="3">
+	  百分之二点二 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU 「)
+	      (NP-TMP (NT 目前))
+	      (NP-SBJ (DNP (NP-PN (NR 远东区))
+			   (DEG 的))
+		      (NP (NN PVC)
+			  (NN 价格)))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 已))
+		      (PP-DIR (P 从)
+			      (QP (QP (CD 七百)
+				      (CLP (M 美元)))
+				  (QP (CD 一)
+				      (CLP (M 吨)))))
+		      (VP (VV 降至)
+			  (QP-OBJ (CD 六百))))
+		  (PU ，)
+		  (VP (PP (P 比)
+			  (NP (NN 国际)
+			      (NN 行情)))
+		      (VP (VA 低)
+			  (AS 了)
+			  (QP-EXT (CD 一)
+				  (CLP (M 截))))))
+	      (PU ，)
+	      (PU 」))
+	  </parse>
+	  <arg n="1">
+	  远东区 的 PVC 价格 
+	  </arg>
+	  <arg n="2">
+	  从 七百 美元 一 吨 
+	  </arg>
+	  <arg n="3">
+	  六百 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

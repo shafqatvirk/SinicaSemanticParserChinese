@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 议 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NT 过去))
+	      (PU ，)
+	      (CP-CND (ADVP (CS 由于))
+		      (IP (IP (NP-SBJ (NN 交通))
+			      (VP (VA 不便)))
+			  (CC 和)
+			  (IP (NP-SBJ (NN 工程))
+			      (VP (VP-FOC (ADVP (AD 久))
+					  (VP (VV 议)))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 决)))))))
+	      (PU ，)
+	      (IP (IP (NP-SBJ (NP-PN (NR 三峡))
+			      (NP (NN 库区)))
+		      (VP (ADVP (AD 迟迟))
+			  (VP (VV 得不到)
+			      (NP-OBJ (ADJP (JJ 有效))
+				      (NP (NN 开发))))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 发展))
+		      (VP (ADVP (AD 相对))
+			  (VP (VP (VA 缓慢))
+			      (VP (VV 滞后))))))) 
+	  </parse>
+	  <arg n="1">
+	  工程 
+	  </arg>
+	  <arg n="m" f="adv">
+	  久 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 好像 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing which seems to be true"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 如果))
+			(ADVP (AD 只是))
+			(VP (VP (VV 蹦蹦跳跳))
+			    (PU 、)
+			    (VP (ADVP (AD 大声))
+				(VP (VV 练习)
+				    (NP-OBJ (NN 发音)))))))
+	    (PU ，)
+	    (NP-SBJ (ADJP (JJ 小))
+		    (NP (NN 朋友)))
+	    (VP (VV 会)
+		(VP (VV 产生)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 英文))
+					(VP (VV 好像)
+					    (VP (PU 「)
+						(ADVP (AD 很))
+						(VP (VV 聒噪))
+						(PU 」))))
+				    (DEC 的))
+			    (NP (NN 错觉)))))) 
+	</parse>
+	<arg n="0">
+	英文 
+	</arg>
+	<arg n="0" f="prd">
+	「 很 聒噪 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 很多))
+			(NP (NN 父母)))
+		(VP (PP-TMP (P 在)
+			    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 赞美)
+					 (NP-OBJ (NN 孩子))))
+				 (LC 时)))
+		    (VP (VP (ADVP (AD 并))
+			    (VP (VV 没有)
+				(VP (DVP (VP (VA 明确))
+					 (DEV 的))
+				    (VP (VV 告诉)
+					(NP-IO (NN 孩子))
+					(IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+						  (VP (ADVP-WH (AD 为什麽))
+						      (VP (VV 赞美)
+							  (NP-OBJ (PN 他)))))))))
+			(PU ，)
+			(VP (VV 好像)
+			    (CP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (ADVP (AD 在))
+						(VP (PU 「)
+						    (VV 骗)
+						    (PU 」)
+						    (NP-OBJ (NN 孩子))))
+					    (VP (VA 似))))
+				    (SP 的)))
+			(PU ，)
+			(VP (ADVP (AD 并))
+			    (VP (VV 没有)
+				(VP (DVP (VP (VA 真正))
+					 (DEV 的))
+				    (VP (VV 尊重)
+					(NP-OBJ (NN 孩子))))))))) 
+	</parse>
+	<arg n="0">
+	很多 父母 
+	</arg>
+	<arg n="0" f="prd">
+	*PRO* 在 「 骗 」 孩子 似 的 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 赞美 孩子 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 好像)
+		(NP-OBJ (DP (DT 另)
+			    (QP (CD 一)
+				(CLP (M 个))))
+			(NP (NN 世界)))
+		(ADVP (AD 似的)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="prd">
+	另 一 个 世界 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

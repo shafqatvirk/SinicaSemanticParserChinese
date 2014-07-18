@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 紧蹙 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 has it knitted"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 叶宏灯))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 说话)))
+			 (LC 时))
+		(VP (VP (VV 紧蹙)
+			(AS 著)
+			(NP-OBJ (NN 眉头)))
+		    (PU ，)
+		    (VP (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (ADVP (AD 十分))
+						(VP (VV 困扰))))
+					(DEC 的))
+				(NP (NN 样子))))))) 
+	</parse>
+	<arg n="0">
+	叶宏灯 
+	</arg>
+	<arg n="1">
+	眉头 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 说话 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

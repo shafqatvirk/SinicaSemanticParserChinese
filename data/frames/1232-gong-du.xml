@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 攻读 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="degree, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (AD 正))
+				  (PP-LOC (P 在)
+					  (NP-PN (NR 北京)
+						 (NN 广播)
+						 (NN 学院)))
+				  (VP (VV 攻读)
+				      (NP-OBJ (NN 硕士)
+					      (NN 学位)))))
+			  (DEC 的)))
+		  (NP-PN (NR 宋菁))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  硕士 学位 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 北京 广播 学院 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

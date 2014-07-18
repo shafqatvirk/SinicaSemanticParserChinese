@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 盛载 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 carries a lot of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 盛载)
+				      (AS 著)
+				      (NP-OBJ (ADJP (JJ 众多))
+					      (NP (NN 期望)))))
+			      (DEC 的)))
+		      (NP-PN (NP (NN 台商)
+				 (NN 子弟))
+			     (NP (NN 学校))))
+	      (NP-SBJ (NN 校地))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 选定)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  众多 期望 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

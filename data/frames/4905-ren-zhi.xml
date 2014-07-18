@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 任职 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="position arg0 holds"/>
+    <role argnum="2" argrole="place where arg0 holds arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (NP-TMP (NT 今年))
+				    (VP (QP-PRD (CD 五十一)
+						(CLP (M 岁)))))
+				(PU 、)
+				(VP (PP-LOC (P 在)
+					    (NP (NN 报社)))
+				    (VP (VV 任职)
+					(NP-OBJ (NN 主管))))))
+			(DEC 的)))
+		(NP-PN (NR 项纪台))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	主管 
+	</arg>
+	<arg n="2">
+	在 报社 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-1))
+			(VP (VV 任职)
+			    (NP-OBJ (NN 仲介)
+				    (NN 公司))))
+		    (DEC 的)))
+	    (NP (NN 太太))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	仲介 公司 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (PP-LOC (P 在)
+					(NP-PN (NR 美国)
+					       (NR 休斯)
+					       (NN 公司)))
+				(VP (VV 任职))))
+			(DEC 的)))
+		(NP-PN (NR 黑幼龙))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	在 美国 休斯 公司 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

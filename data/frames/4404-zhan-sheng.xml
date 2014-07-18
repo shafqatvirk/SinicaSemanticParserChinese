@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 战胜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity defeated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 霍氏))
+	      (VP (ADVP (AD 曾))
+		  (QP-ADV (CD 两)
+			  (CLP (M 次)))
+		  (VP (VV 战胜)
+		      (NP-OBJ (NP-APP (ADJP (JJ 前))
+				      (NP (NN 拳王)))
+			      (NP-PN (NR 泰森)))))) 
+	  </parse>
+	  <arg n="0">
+	  霍氏 
+	  </arg>
+	  <arg n="1">
+	  前 拳王 泰森 
+	  </arg>
+	  <arg n="m" f="adv">
+	  两 次 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (PN 我们))
+		  (VP (VV 战胜)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (NP-LOC (NN 历史))
+					      (VP (VA 罕见))))
+				      (DEC 的)))
+			      (ADJP (JJ 特大))
+			      (NP (NN 洪涝)
+				  (NN 灾害))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 历史 罕见 的 特大 洪涝 灾害 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

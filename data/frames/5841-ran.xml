@@ -1,0 +1,150 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 染 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 dyes"/>
+    <role argnum="2" argrole="color"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (PN 他们))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VCD (VV 刚硬)
+					 (VV 粗直))))
+			    (DEC 的)))
+		    (NP (NN 眉毛)))
+	    (VP (PU 「)
+		(VV 染)
+		(PU 」)
+		(NP-OBJ (NN 深绿色)))) 
+	</parse>
+	<arg n="1">
+	他们 *OP* *T*-1 刚硬 粗直 的 眉毛 
+	</arg>
+	<arg n="2">
+	深绿色 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (NP-TMP (NT 目前))
+		    (ADVP (AD 已))
+		    (ADVP (AD 成功))
+		    (VP (VRD (VV 发展)
+			     (VV 出))
+			(NP-OBJ (NP-APP (QP (NP (NN 尼龙))
+					    (QP (CD 六六)))
+					(P 和)
+					(NP (NN 压克力)
+					    (NN 纤维))
+					(PU 、)
+					(NP (NN 聚酯丝)
+					    (NN 混纺))
+					(ETC 等))
+				(DP (DT 各)
+				    (CLP (M 种)))
+				(ADJP (JJ 新))
+				(NP (NN 布种)))))
+		(PU ，)
+		(VP (ADVP (AD 并))
+		    (VP (VP (VV 举办)
+			    (NP-OBJ (QP (CD 多)
+					(CLP (M 场)))
+				    (NP (NN 研讨会))))
+			(PU 、)
+			(VP (NP-ADV (NN 四处))
+			    (VP (VV 拜访)
+				(NP-OBJ (NN 厂商))))
+			(PU ，)
+			(VP (VV 教)
+			    (NP-IO (NN 下游)
+				   (NN 业者))
+			    (IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (ADVP-WH (AD 怎麽))
+					      (VP (VV 织)))
+					  (PU 、)
+					  (VP (ADVP-WH (AD 怎麽))
+					      (VP (VV 染)))
+					  (PU 、)
+					  (VP (ADVP-WH (AD 怎麽))
+					      (VP (VV 设计)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	怎麽 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 acquires"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 中南部)
+		    (NN 工业区)
+		    (NN 居民))
+	    (VP (VP (VRD (VV 意识)
+			 (VV 到))
+		    (IP-OBJ (NP-SBJ (PN 自己))
+			    (VP (ADVP (AD 已))
+				(VP (VV 染)
+				    (AS 了)
+				    (NP-OBJ (DNP (NP (QP (CD 一))
+						     (NP (NN 身)))
+						 (DEG 的))
+					    (NP (NP (ADJP (JJ 毒))
+						    (NP (NN 水)))
+						(CC 和)
+						(NP (NN 落尘))))))))
+		(PU ，)
+		(VP (PP-DIR (P 对)
+			    (NP (ADJP (JJ 重))
+				(NP (NN 工业))))
+		    (VP (VV 产生)
+			(AS 了)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 极))
+						(VP (VA 大))))
+					(DEC 的)))
+				(NP (NN 抗拒))))))) 
+	</parse>
+	<arg n="0">
+	自己 
+	</arg>
+	<arg n="1">
+	一 身 的 毒 水 和 落尘 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

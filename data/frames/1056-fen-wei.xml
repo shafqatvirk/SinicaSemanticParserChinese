@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="divider"/>
+      <role argnum="1" argrole="thing divided"/>
+      <role argnum="2" argrole="dividing into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 了解)))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP-PN (NR 中国))
+			       (ADJP (JJ 大型))
+			       (NP (NN 铁路)
+				   (NN 工程)))
+			   (DEG 的))
+		      (NP (NN 建设)))
+	      (VP (ADVP (AD 一般))
+		  (VP (VV 分为)
+		      (NP-OBJ (QP-APP (CD 三)
+				      (CLP (M 步)))
+			      (PU ，)
+			      (NP (ADVP (AD 即))
+				  (NP (NP (NN 铁轨)
+					  (NN 铺通))
+				      (PU 、)
+				      (NP (NN 通车))
+				      (PU 、)
+				      (NP (NN 国家)
+					  (NN 验收)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  中国 大型 铁路 工程 的 建设 
+	  </arg>
+	  <arg n="2">
+	  三 步 ， 即 铁轨 铺通 、 通车 、 国家 验收 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 了解 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一般 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

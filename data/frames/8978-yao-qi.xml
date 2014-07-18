@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 舀起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 scoops up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 相对)
+		      (NP (DNP (NP-PN (NR 阿玛斯号) )
+			       (DEG 的))
+			  (NP (NN 油污)
+			      (NN 事件) )))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 犹))
+		  (VP (VV 可)
+		      (VP (VV 见)
+			  (NP-OBJ (NN 民众)
+				  (CC 及)
+				  (NN 军方) )
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (DVP (VP (VCD (VA 积极)
+						(VA 努力)))
+				       (DEV 的))
+				  (DVP (QP (QP (CD 一)
+					       (CLP (M 桶)))
+					   (QP (CD 一)
+					       (CLP (M 桶))))
+				       (DEV 的))
+				  (VP (VV 舀起)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 桶 一 桶 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 努力 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

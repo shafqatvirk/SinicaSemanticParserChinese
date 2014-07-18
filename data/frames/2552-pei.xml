@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赔 </id>
+    <frameset id="f1" edef="lose (money)">
+      <role argnum="0" argrole="entity/business described"/>
+      <role argnum="1" argrole="money lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VCP (VV 等於)
+		       (VC 是))
+		  (IP-PRD (PU 「)
+			  (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VP-FOC (VV 做))
+				  (VP (ADVP (AD 越))
+				      (VP (VA 多))))
+			      (VP (VP-FOC (VV 赔))
+				  (VP (ADVP (AD 越))
+				      (VP (VA 多)))))
+			  (PU 」)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="pay back">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people paid"/>
+      <role argnum="2" argrole="thing paid"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

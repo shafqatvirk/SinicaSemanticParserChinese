@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 浩大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TPC (DP (DT 这)
+		      (CLP (M 个)))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-SBJ (NN 工程))
+			      (VP (VA 浩大)))
+			  (DEC 的)))
+		  (NP (NN 援建)
+		      (NN 项目))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <arg n="0" f="pse">
+	  工程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

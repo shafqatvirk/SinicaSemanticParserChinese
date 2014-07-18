@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 播报 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 reports on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 立刻))
+		    (DVP (ADVP (AD 一溜烟))
+			 (DEV 地))
+		    (VP (VV 上街)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VRD (VV 采访)
+					 (VV 去))
+				    (AS 了)))))
+		(PU ，)
+		(VP (NP-TMP (NT 当天))
+		    (ADVP (AD 就))
+		    (VP (VP (PP (P 和)
+				(NP-PN (NR 华视)))
+			    (VP (VV 连线)))
+			(VP (VV 播报)
+			    (NP-OBJ (NN 新闻)
+				    (NN 现场))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	新闻 现场 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	当天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

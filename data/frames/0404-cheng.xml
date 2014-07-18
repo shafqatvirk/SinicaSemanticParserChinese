@@ -1,0 +1,281 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="name assigner"/>
+      <role argnum="1" argrole="name receiver"/>
+      <role argnum="2" argrole="name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 人))
+				  (VP (VV 称)
+				      (NP-IO (-NONE- *T*-1))
+				      (NP-OBJ (NP-PN (NR 黄河))
+					      (NP (PU “)
+						  (NN 金三角)
+						  (PU ”)))))
+			      (DEC 的)))
+		      (NP-PN (NR 风陵渡)
+			     (NN 经济)
+			     (NN 开发区)))) 
+	  </parse>
+	  <arg n="0">
+	  人 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *T*-1 	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  黄河 “ 金三角 ” 	  	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 无怪乎))
+	      (NP-SBJ (NN 日本人))
+	      (VP (VP (VV 视)
+		      (NP-OBJ (PN 之))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VC 为)
+			      (NP-PRD (DNP (NP (NN 大自然))
+					   (DEG 的))
+				      (NP (NN 馈赠))))))
+		  (PU ，)
+		  (VP (VV 称)
+		      (NP-OBJ (PN 之))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VC 为)
+			      (NP-PRD (PU “)
+				      (NN 圣岳)
+				      (PU ”))))))) 
+	  </parse>
+	  <arg n="M" f="ADV">
+	  无怪乎 	  	  	  	  	  
+	  </arg>
+	  <arg n="0">
+	  日本人 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  之 	  	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 “ 圣岳 ” 	  	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP (P 与)
+		      (NP (NP (DNP (NP-PN (NR 法国))
+				   (DEG 的))
+			      (NP-PN (NR 科涅克))
+			      (NP (NN 白酒)))
+			  (PU 、)
+			  (NP (DNP (NP-PN (NR 英国))
+				   (DEG 的))
+			      (NP-PN (NR 苏格兰))
+			      (NP (NN 威士忌)))))
+		  (ADVP (AD 并))
+		  (VP (VV 称)
+		      (NP-OBJ (NP (NN 世界))
+			      (QP (CD 三))
+			      (ADJP (JJ 大))
+			      (NP (NP (NN 蒸馏))
+				  (ADJP (JJ 名))
+				  (NP (NN 酒)))
+			      (NP (NN 之一)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  并 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  世界 三 大 蒸馏 名 酒 之一 	  	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-TMP (NT １８６５年))
+		  (PU ，)
+		  (NP-PN-SBJ (NR 意大利)
+			     (PU 、)
+			     (NR 法国)
+			     (PU 、)
+			     (NR 比利时)
+			     (CC 和)
+			     (NR 瑞士))
+		  (VP (ADVP (AD 曾经))
+		      (VP (VV 签署)
+			  (AS 过)
+			  (NP-OBJ (QP (LCP (NP (NP-PN (NR 欧洲))
+					       (NP (NN 历史)))
+					   (LC 上))
+				      (QP (OD 第一)
+					  (CLP (M 个))))
+				  (NP (NN 统一)
+				      (NN 货币)
+				      (NN 条约))))))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 史))
+		  (VP (VV 称)
+		      (NP-TTL-OBJ (PU 《)
+				  (NP-PN (NR 拉丁))
+				  (NP (NN 统一)
+				      (NN 货币)
+				      (NN 条约))
+				  (PU 》))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  史 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  《 拉丁 统一 货币 条约 》 	  	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 所以))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VPT (VV 称)
+		       (AD 不)
+		       (VV 上))
+		  (NP-OBJ (ADJP (JJ 创作型))
+			  (NP (NN 歌手) )))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  创作型 歌手 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  所以 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="claimer"/>
+      <role argnum="1" argrole="thing claimed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 科特迪瓦))
+			  (NP (NN 财长)))
+		  (VP (VV 称)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 西非))
+				      (NP (NN 经济)))
+			      (VP (ADVP (AD 明显))
+				  (VP (VV 恢复)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 增长)))))))) 
+	  </parse>
+	  <arg n="0">
+	  科特迪瓦 财长 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  西非 经济 明显 恢复 *PRO* 增长 	  	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-SBJ (ADJP (JJ 有关))
+				  (NP (NN 人士)))
+			  (VP (VV 称))))
+	      (PU ，)
+	      (NP-SBJ (PN 这))
+	      (VP (VP (VC 是)
+		      (IP-PRD (LCP-SBJ (NP (NN 世界))
+				       (LC 上))
+			      (VP (QP-ADV (OD 首)
+					  (CLP (M 次)))
+				  (PP-DIR (P 对)
+					  (NP (NP (ADJP (JJ 野生))
+						  (ADJP (JJ 大))
+						  (NP (NN 熊猫)))
+					      (NP (NN 数量))))
+				  (VP (VV 进行)
+				      (NP-OBJ (ADJP (PU “)
+						    (JJ 户口化)
+						    (PU ”))
+					      (NP (NN 管理)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 将))
+		      (VP (VV 有助于)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 确定)
+				      (NP-OBJ (DNP (NP (NP-PN (NR 中国))
+						       (ADJP (JJ 野生))
+						       (ADJP (JJ 大))
+						       (NP (NN 熊猫)))
+						   (DEG 的))
+					      (ADJP (JJ 真实))
+					      (NP (NN 数量))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  有关 人士 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

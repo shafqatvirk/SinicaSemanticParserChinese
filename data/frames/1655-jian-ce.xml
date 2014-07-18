@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 监测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="monitor"/>
+      <role argnum="1" argrole="thing monitored"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-PN-SBJ (NR 联合国))
+				       (VP (PP-TMP (P 自)
+						   (LCP (NP (NT １９９３年))
+							(LC 以来)))
+					   (VP (MSP 所)
+					       (VP (VV 监测)
+						   (NP-OBJ (-NONE- *T*-1))))))
+				   (DEC 的)))
+			   (QP (CD １４３)
+			       (CLP (M 个)))
+			   (NP (NN 国家)))
+		       (LC 中))) 
+	  </parse>
+	  <arg n="0">
+	  联合国 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 １９９３年 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

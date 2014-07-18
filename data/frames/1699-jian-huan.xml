@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减缓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 效益))
+				  (VP (PP-MNR (-NONE- *T*-1))
+				      (VP (VV 下滑))))
+			      (DEC 的)))
+		      (NP (NN 速度)))
+	      (VP (ADVP (AD 已经))
+		  (ADVP (AD 在))
+		  (VP (VV 减缓)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 效益 *T*-1 下滑 的 速度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

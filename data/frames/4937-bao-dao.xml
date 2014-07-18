@@ -1,0 +1,137 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 报导 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="reporter"/>
+    <role argnum="1" argrole="thing reported"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 报导)
+				(NP-OBJ (NP (QP (CD 二十一))
+					    (NP (NN 县)
+						(NN 市)))
+					(NP (NN 选情)))))
+			(DEC 的)))
+		(NP (NN 队伍))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	二十一 县 市 选情 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 报导)
+		(NP-OBJ (QP (CD 一)
+			    (CLP (M 位)))
+			(NP (NN 香港人)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-LOC (P 在)
+				(NP (NN 大陆)))
+			(VP (PU 「)
+			    (VV 包)
+			    (NP-OBJ (NN 二奶))
+			    (PU 」)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一 位 香港人 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 在 大陆 「 包 二奶 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (PN 你))
+		(VP (ADVP (AD 不))
+		    (VP (VV 报导)))) 
+	</parse>
+	<arg n="0">
+	你 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-1 (PU 「)
+		      (IP (NP-TMP (NT 过去))
+			  (NP-SBJ (PN 大家))
+			  (VP (ADVP (AD 都))
+			      (VP (VV 认为)
+				  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (NN 高尔夫)
+								      (NN 选手))
+							      (VP (NP-LOC (-NONE- *T*-2))
+								  (ADVP (AD 最))
+								  (VP (VA 成熟)
+								      (PU 、)
+								      (VA 稳定))))
+							  (DEC 的)))
+						  (NP (NN 阶段)))
+					  (VP (PP-PRD (P 在)
+						      (LCP (QP (CD 三十)
+							       (CLP (M 岁)))
+							   (LC 以後))))))))
+		      (PU ，)
+		      (IP (NP-PN-SBJ (NR 伍兹))
+			  (VP (ADVP (AD 却))
+			      (VP (VV 颠覆)
+				  (NP-OBJ (DNP (NP (PN 这样))
+					       (DEG 的))
+					  (NP (NN 观念)))))))
+	    (PU ，)
+	    (PU 」)
+	    (NP-PN-SBJ (NR 民生报))
+	    (VP (VV 报导)
+		(IP-OBJ (-NONE- *T*-1)))) 
+	</parse>
+	<arg n="0">
+	民生报 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

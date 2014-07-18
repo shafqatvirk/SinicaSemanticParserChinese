@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 汇出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="remitter"/>
+      <role argnum="1" argrole="fund, money"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 借款)
+		      (NN 本息))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 得)
+		      (VP (ADVP (AD 擅自))
+			  (VP (VV 汇出)))))) 
+	  </parse>
+	  <arg n="1">
+	  借款 本息 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  擅自 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

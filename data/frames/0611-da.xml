@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 答 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="replier"/>
+      <role argnum="1" argrole="question"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 外交部))
+			  (NP (NN 发言人)))
+		  (VP (VV 答)
+		      (NP-OBJ (NN 记者)
+			      (NN 问)))) 
+	  </parse>
+	  <arg n="0">
+	  外交部 发言人 
+	  </arg>
+	  <arg n="1">
+	  记者 问 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="replier"/>
+      <role argnum="1" argrole="answer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VCD (VV 答)
+		       (VV 曰))
+		  (PU ：)
+		  (NP-OBJ (QP (QP (CD ４)
+				  (CLP (-NONE- *RNR*-1)))
+			      (CC 至)
+			      (QP (CD ７)
+				  (CLP-1 (M 个))))
+			  (NP (NN 钟头))))
+	      (PU ！))
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  ４ *RNR*-1 至 ７ 个 钟头 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

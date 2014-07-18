@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 往来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people traveling"/>
+      <role argnum="1" argrole="location coming to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 台胞))
+	      (VP (PP-LOC (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 取得)
+				       (NP-TTL-OBJ (PU 《)
+						   (IP-APP (NP-SBJ (NP-PN (NR 台湾))
+								   (NP (NN 居民)))
+							   (VP (VV 往来)
+							       (NP-OBJ (NN 大陆))))
+						   (NP (NN 通行证))
+						   (PU 》))))
+			       (LC 后)))
+		  (PU ，)
+		  (ADVP (AD 即))
+		  (VP (VV 可)
+		      (VP (PP-LOC (P 在)
+				  (NP (ADJP (JJ 有关))
+				      (NP (NN 地区))))
+			  (VP (VV 从事)
+			      (NP-OBJ (NP (NN 投资)
+					  (PU 、)
+					  (NN 贸易))
+				      (NP (NN 活动)))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 居民 	  
+	  </arg>
+	  <arg n="1">
+	  大陆 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="people to socialize with each other"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

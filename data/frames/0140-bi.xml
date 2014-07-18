@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="threatener"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (ADJP (JJ 反政府))
+			(NP (NN 武装)))
+		(VP (PP-DIR (P 从)
+			    (NP (NP-APP (NP-PN (NR 刚果)
+					       (PRN (PU （)
+						    (NP-PN (NR 金))
+						    (PU ）)))
+					(NP (NN 东)
+					    (PU 、)
+					    (NN 西)))
+				(QP (CD 两))
+				(NP (NN 路))))
+		    (ADVP (AD 直))
+		    (VP (VV 逼)
+			(NP-OBJ (NP-APP (NN 首都))
+				(NP-PN (NR 金沙萨))))))) 
+	  </parse>
+	  <arg n="0">
+	  反政府 武装 	  	  	  
+	  </arg>
+	  <arg n="M" f="DIR">
+	  从 刚果 （ 金 ） 东 、 西 两 路 	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  直 	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  首都 金沙萨 	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="forcer"/>
+      <role argnum="1" argrole="entity forced"/>
+      <role argnum="2" argrole="action arg1 forced to take"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (CP-CND (ADVP (CS 如果))
+			  (IP (NP-SBJ (NN 性格))
+			      (VP (ADVP (AD 比较))
+				  (VP (PU 「)
+				      (VA 鸡婆)
+				      (PU 」)))))
+		  (PU ，)
+		  (ADVP (AD 就))
+		  (VP (VV 会)
+		      (VP (SB 被)
+			  (VP (VV 逼)
+			      (DER 得)
+			      (VP-EXT (VV 去)
+				      (VP (VV 管)
+					  (NP-OBJ (QP (CD 很多))
+						  (NP (NN 事)))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 		      	    
+	  </arg>
+	  <arg n="2">
+	  去 管 很多 事 	    
+	  </arg>
+	  <arg n="n" f="cnd">
+	  如果 性格 比较 「 鸡婆 」 	    
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 		      	    
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

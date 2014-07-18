@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抹成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 paints"/>
+      <role argnum="2" argrole="thing arg1 is painted to be"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (LCP (NP (NN 图像))
+				(LC 中))
+			   (DEG 的))
+		      (NP-PN (NR 淡水)))
+	      (VP (SB 被)
+		  (VP (VV 抹成)
+		      (NP-OBJ (NP (QP (CD 一)
+				      (CLP (M 笔)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (ADVP (AD 不))
+						  (VP (VV 可)
+						      (VP (VV 攻击)
+							  (NP-OBJ (-NONE- *T*-1))))))
+					  (DEC 的)))
+				  (NP (NN 美)))
+			      (PU ，)
+			      (NP (QP (CD 一)
+				      (CLP (M 方)))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VP (VA 牢))
+						  (VP (ADVP (AD 不))
+						      (VP (VV 可)
+							  (VP (VV 破))))))
+					  (DEC 的)))
+				  (NP (NN 传说))))))) 
+	  </parse>
+	  <arg n="1">
+	  图像 中 的 淡水 
+	  </arg>
+	  <arg n="2">
+	  一 笔 *OP* *pro* 不 可 攻击 *T*-1 的 美 ， 一 方 *OP* *T*-2 牢 不 可 破 的 传说 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

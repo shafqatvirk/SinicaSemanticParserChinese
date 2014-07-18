@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 斟上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 fills the glass with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 客人))
+	    (VP (VP (VV 拿起)
+		    (NP-OBJ (NN 银壶)))
+		(VP (PP-BNF (P 为)
+			    (NP (NN 朋友)))
+		    (VP (VV 斟上)
+			(NP-OBJ (NN 佳酿)))))) 
+	</parse>
+	<arg n="0">
+	客人 
+	</arg>
+	<arg n="1">
+	佳酿 
+	</arg>
+	<arg n="m" f="bnf">
+	为 朋友 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

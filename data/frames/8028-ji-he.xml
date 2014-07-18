@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 集合 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities arg0 calls together"/>
+      <role argnum="2" argrole="place arg1 gathers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 於是))
+	      (NP-SBJ (NN 学校))
+	      (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 利用)
+				  (NP-OBJ (NN 早自习)
+					  (NN 时间))))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (ADJP (JJ 中)
+						(JJ 低))
+					  (NP (NN 年级)))
+				  (VP (VV 集合)
+				      (PP (P 在)
+					  (NP (ADJP (JJ 大))
+					      (NP (NN 礼堂))))))))
+		  (PU ，)
+		  (VP (ADVP (AD 大班式))
+		      (VP (VV 进行)
+			  (AS 了)
+			  (QP-OBJ (CD 两)
+				  (CLP (M 年))))))) 
+	  </parse>
+	  <arg n="0">
+	  学校 
+	  </arg>
+	  <arg n="1">
+	  中 低 年级 
+	  </arg>
+	  <arg n="2">
+	  在 大 礼堂 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 利用 早自习 时间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  於是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

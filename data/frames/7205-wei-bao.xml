@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 喂饱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 provides enough food for"/>
+    <role argnum="2" argrole="food"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 要)
+		    (VP (VCD (VV 置)
+			     (VV 办))
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 桌)))
+				(CP (WHNP-3 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-3))
+					    (VP (VV 可以)
+						(VP (VV 喂饱)
+						    (NP-OBJ (NP (DP (DT 全))
+								(NP (NN 家)))
+							    (NP (NN 人))))))
+					(DEC 的)))
+				(NP (NN 年夜饭)))))) 
+	</parse>
+	<arg n="1">
+	全 家 人 
+	</arg>
+	<arg n="2">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

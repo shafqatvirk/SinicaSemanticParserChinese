@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 绿化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 makes green"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (CD 八十八)
+		      (CLP (M 年)))
+	      (NP-PN-SBJ (NR 曹启鸿))
+	      (VP (VP (VV 得知)
+		      (IP-OBJ (NP-PN-SBJ (NP (NN 水利处))
+					 (QP (OD 第七))
+					 (NP (NN 河川局)))
+			      (VP (VV 有意)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 再次))
+					      (VP (VV 整修)
+						  (NP-OBJ (NN 河堤))))))))
+		  (PU ，)
+		  (VP (VV 提议)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 绿化)
+				  (NP-OBJ (DNP (NP (NN 河堤)
+						   (NN 周遭))
+					       (DEG 的))
+					  (NP (NN 休闲地)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  河堤 周遭 的 休闲地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

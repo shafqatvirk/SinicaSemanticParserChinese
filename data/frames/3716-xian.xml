@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="rntity displayed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-TMP (P 在)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 即将))
+						  (VP (VV 到来))))
+					  (DEC 的)))
+				  (NP (NT 一九九九年))))
+		      (PU ，)
+		      (VP (VV 让)
+			  (NP-OBJ (DP (DT 这)
+				      (CLP (M 个)))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (ADVP (AD 严重))
+						  (VP (VV 污染))))
+					  (DEC 的)))
+				  (ADJP (QP (OD 第三))
+					(ADJP (JJ 大)))
+				  (NP (NN 淡水湖)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (ADVP (AD 重))
+				      (VP (VV 现)
+					  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (VV 碧波荡漾)))
+							  (DEC 的))
+						  (NP (NN 美景)))))
+				  (PU ，)
+				  (VP (ADVP (AD 进而))
+				      (PP-TMP (P 在)
+					      (NP (ADJP (JJ 新))
+						  (NP (NN 世纪))))
+				      (ADVP (AD 彻底))
+				      (VP (VV 告别)
+					  (NP-OBJ (NN 污浊))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 碧波荡漾 的 美景 
+	  </arg>
+	  <arg n="m" f="adv">
+	  重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 举行)
+	      (NP-OBJ (CP-APP (IP (IP (PU 「)
+				      (IP (NP-SBJ (NN 花))
+					  (VP (VV 开)))
+				      (IP (NP-SBJ (NN 佛))
+					  (VP (VV 现)))
+				      (PU 」))
+				  (CC 和)
+				  (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 放)
+					  (NP-OBJ (NN 和平鸽)))))
+			      (DEC 的))
+		      (NP (NN 仪式)))) 
+	  </parse>
+	  <arg n="1">
+	  佛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

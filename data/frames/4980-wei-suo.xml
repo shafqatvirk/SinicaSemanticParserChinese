@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 萎缩 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-SBJ (DNP (NP (NN 孩子))
+				 (DEG 的))
+			    (NP (NN 膀胱)
+				(NN 输尿管)))
+		    (VP (VV 回流)))
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 造成)
+			(NP-OBJ (NN 肾脏))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 萎缩)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 shrinks into being"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (NP-TMP (NT 一九九七年))
+		    (ADVP (AD 曾))
+		    (ADVP (AD 高))
+		    (VP (VV 达)
+			(QP-OBJ (CD 三万多)
+				(CLP (M 人次)))))
+		(PU ，)
+		(VP (NP-TMP (NT 现在))
+		    (ADVP (AD 也))
+		    (VP (VRD (VV 萎缩)
+			     (VV 为))
+			(QP-OBJ (CD 一万多)
+				(CLP (M 人次))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一万多 人次 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	现在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

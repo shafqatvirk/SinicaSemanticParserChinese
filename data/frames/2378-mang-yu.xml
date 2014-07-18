@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 忙于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing engaged in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (ADVP (AD 此外))
+		(PU ，)
+		(NP-SBJ (DP (DT 有些))
+			(NP (NN 投资者)))
+		(VP (ADVP (AD 正))
+		    (VP (VV 忙于)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-BNF (P 为)
+					    (NP (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (ADVP (AD 行将))
+								(VP (VV 启动))))
+							(DEC 的)))
+						(NP (NN 欧元))))
+				    (VP (VV 做)
+					(NP-OBJ (DNP (NP (NP (NN 电子)
+							     (NN 交易))
+							 (NP (NN 设备)))
+						     (DEG 的))
+						(NP (NN 测试)
+						    (NN 工作))))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  有些 投资者 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 为 *OP* *T*-1 行将 启动 的 欧元 做 电子 交易 设备 的 测试 工作 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (PU “)
+		(DP-TMP (DP (DT 本))
+			(NP (NN 周)))
+		(NP-SBJ (PN 我))
+		(VP (VP (ADVP (AD 一直))
+			(ADVP (AD 都))
+			(ADVP (AD 在))
+			(VP (VV 忙于)
+			    (NP-OBJ (DP (DT 此))
+				    (NP (NN 事)))))
+		    (PU ，)
+		    (VP (ADVP (AD 已经))
+			(PP-DIR (P 就)
+				(NP (DNP (NP (QP (CD 一)
+						 (CLP (M 名)))
+					     (NP (NN 球员)))
+					 (DEG 的))
+				    (NP (NN 转会费))))
+			(VP (VV 达成)
+			    (AS 了)
+			    (NP-OBJ (NN 协议)))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  此 事 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  本 周 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

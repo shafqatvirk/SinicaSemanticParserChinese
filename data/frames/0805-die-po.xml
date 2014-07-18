@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跌破 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="price"/>
+      <role argnum="1" argrole="threshold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VV 进入)
+			       (NP-OBJ (NT １２月))))
+		       (LC 以后))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-PN (NR 欧佩克))
+			  (NP (NN 原油)))
+		      (NP (NN 价格)))
+	      (VP (VP (VV 跌破)
+		      (AS 了)
+		      (NP-OBJ (QP (DP (DT 每)
+				      (CLP (M 桶)))
+				  (QP (CD １０)
+				      (CLP (M 美元))))
+			      (NP (NN 大关))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (ADVP (AD 仍))
+		      (ADVP (AD 在))
+		      (ADVP (AD 一路))
+		      (VP (VV 下滑))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  欧佩克 原油 价格 
+	  </arg>
+	  <arg n="1">
+	  每 桶 １０ 美元 大关 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 进入 １２月 以后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤销 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="eliminator"/>
+      <role argnum="1" argrole="thing eliminated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (PU “)
+			  (NT 八五)
+			  (PU ”))
+		      (NP (NN 期间)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 西藏)
+			 (NN 自治区)
+			 (NN 分行))
+	      (VP (PP (P 在)
+		      (NP (DP (DT 全))
+			  (NP (NN 国))))
+		  (ADVP (AD 率先))
+		  (VP (VV 撤销)
+		      (AS 了)
+		      (NP-OBJ (NN 人民)
+			      (NN 银行)
+			      (NN 县支行))))) 
+	  </parse>
+	  <arg n="0">
+	  西藏 自治区 分行 
+	  </arg>
+	  <arg n="1">
+	  人民 银行 县支行 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  “ 八五 ” 期间 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 全 国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  率先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

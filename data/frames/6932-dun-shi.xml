@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 顿失 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 suddenly loses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 一旦))
+			(VP (VE 没有)
+			    (NP-OBJ (NN 田地)))))
+	    (PU ，)
+	    (NP-SBJ (NN 生活))
+	    (VP (VV 会)
+		(VP (VV 顿失)
+		    (NP-OBJ (NN 依据))))) 
+	</parse>
+	<arg n="0">
+	生活 
+	</arg>
+	<arg n="1">
+	依据 
+	</arg>
+	<arg n="m" f="cnd">
+	*pro* 一旦 没有 田地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 决策 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes decision on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 中国))
+				      (NP (NN 政府)))
+			      (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (NN 人口)
+						  (NN 问题)
+						  (CC 与)
+						  (NN 社会)
+						  (NN 经济)
+						  (NN 问题))
+					  (VP (VP (ADVP (AD 一同))
+						  (VP (VV 规划)))
+					      (PU 、)
+					      (VP (ADVP (AD 一同))
+						  (VP (VV 决策)))
+					      (PU 、)
+					      (VP (ADVP (AD 一同))
+						  (VP (VV 实施)))))))
+			  (DEC 的))
+		  (NP (NN 方针))) 
+	  </parse>
+	  <arg n="0">
+	  中国 政府 
+	  </arg>
+	  <arg n="1">
+	  人口 问题 与 社会 经济 问题 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一同 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

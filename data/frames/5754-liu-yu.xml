@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 流於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 becomes/falls into being"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 流於)
+			(NP-OBJ (NP (ADJP (JJ 一般))
+				    (NP (NN 歌手)))
+				(DNP (NP (ADJP (JJ 洒狗血式))
+					 (NP (NN 唱腔)))
+				     (DEG 的))
+				(NP (NN 俗套))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一般 歌手 洒狗血式 唱腔 的 俗套 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 结论)
+		    (NN 文字))
+	    (VP (VP (ADVP (AD 过於))
+		    (VP (VA 模糊)))
+		(PU ，)
+		(VP (VV 流於)
+		    (IP-OBJ (PU 「)
+			    (NP-TPC (QP (CD 一)
+					(CLP (M 个)))
+				    (NP (NN 共识)))
+			    (PU ，)
+			    (NP-SBJ (PN 各自))
+			    (VP (VV 表述))
+			    (PU 」))))) 
+	</parse>
+	<arg n="0">
+	结论 文字 
+	</arg>
+	<arg n="1">
+	「 一 个 共识 ， 各自 表述 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

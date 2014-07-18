@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搁 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 puts away arg1 at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PU 「)
+		    (NN 三通)
+		    (PU 」))
+	    (VP (VP-FOC (ADVP (AD 一))
+			(VP (VV 搁)))
+		(VP (QP-PRD (CD 十)
+			    (CLP (M 年)))))) 
+	</parse>
+	<arg n="1">
+	「 三通 」 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

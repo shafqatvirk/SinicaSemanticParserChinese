@@ -1,0 +1,159 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 避免 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="avoider"/>
+      <role argnum="1" argrole="thing avoided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (CP-CND (ADVP (CS 如果))
+			  (IP (NP-SBJ (NP-APP (NP-PN (NR 伊拉克))
+					      (NP (NN 总统)))
+				      (NP-PN (NR 萨达姆)))
+			      (VP (VV 能)
+				  (VP (ADVP (AD 及早))
+				      (PP (P 就)
+					  (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+						      (VP (NP-TMP (NT １９９０年))
+							  (VP (VV 入侵)
+							      (NP-PN-OBJ (NR 科威特)))))
+					      (NP (NN 事件))))
+				      (VP (VV 进行)
+					  (NP-OBJ (NN 道歉)))))))
+		  (PU ，)
+		  (NP-PN-SBJ (NR 伊))
+		  (VP (VV 可能)
+		      (VP (VV 会)
+			  (VP (VV 避免)
+			      (NP-OBJ (QP (CD 许多))
+				      (NP (NN 灾难))))))) 
+	  </parse>
+	  <arg n="0">
+	  伊 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  许多 灾难 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (NP-PN (NR 伊))
+				  (NP (NN 政府)))
+			  (VP (VV 能)
+			      (VP (PP (P 就)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 入侵)
+					      (NP-PN-OBJ (NR 科威特)))))
+				  (ADVP (AD 正式))
+				  (VP (VV 道歉))))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NT 目前))
+			   (DEG 的))
+		      (NP (NN 危机)))
+	      (VP (ADVP (AD 也许))
+		  (VP (VV 可以)
+		      (VP (VV 避免))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  目前 的 危机 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 提高)
+					   (NP-OBJ (NP (ADJP (JJ 私营))
+						       (NP (NN 机构)))
+						   (NP (NN 资金)
+						       (NN 透明度)))))
+			       (NP (NN 问题)))
+			   (LC 上)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 曾阴权))
+	      (VP (VV 指出)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (NN 金融)
+				  (NN 市场)
+				  (NN 人士))
+			  (VP (VV 应)
+			      (VP (VP (VV 公开)
+				      (NP-OBJ (ADJP (ADVP (AD 更))
+						    (ADJP (JJ 多)))
+					      (DNP (PP (P 在)
+						       (NP (ADJP (JJ 不同))
+							   (NP (NN 市场))))
+						   (DEG 的))
+					      (ADJP (JJ 大额))
+					      (NP (NN 持仓)
+						  (NN 资料)
+						  (CC 和)
+						  (NN 杠杆)
+						  (NN 比率))))
+				  (PU ，)
+				  (VP (VV 让)
+				      (NP-OBJ (NP (NN 监管)
+						  (NN 机构))
+					      (CC 和)
+					      (NP (DP (DT 其他))
+						  (NP (NN 投资者))))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 能够)
+					      (VP (VP (VV 掌握)
+						      (NP-OBJ (-NONE- *RNR*-2)))
+						  (CC 及)
+						  (VP (VV 监察)
+						      (NP-OBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+								    (CP (IP (NP-SBJ (-NONE- *pro*))
+									    (VP (VV 囤积)
+										(NP-OBJ (-NONE- *T*-1))))
+									(DEC 的)))
+								(NP (NN 持仓))))))))
+				  (PU ，)
+				  (VP (ADVP (AD 从而))
+				      (VP (VV 避免)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 出现)
+						      (NP-OBJ (NP (NN 操控)
+								  (CC 和)
+								  (NN 垄断))
+							      (NP (NN 行为)))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  金融 市场 人士 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  从而 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 出现 操控 和 垄断 行为 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

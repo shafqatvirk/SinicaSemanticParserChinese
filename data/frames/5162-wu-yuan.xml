@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无缘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 doesn't have luck to do/be with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (ADVP (AD 却))
+		(VP (VV 无缘)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 享受)
+				(NP-OBJ (DP (DT 这)
+					    (CLP (M 份)))
+					(NP (NN 幸运)))))))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="1">
+	*PRO* 享受 这 份 幸运 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 自己))
+	    (VP (ADVP (AD 却))
+		(ADVP (AD 似乎))
+		(PP (P 与)
+		    (NP (NN 富贵)))
+		(VP (VV 无缘)))) 
+	</parse>
+	<arg n="0">
+	自己 
+	</arg>
+	<arg n="1">
+	与 富贵 
+	</arg>
+	<arg n="m" f="adv">
+	似乎 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

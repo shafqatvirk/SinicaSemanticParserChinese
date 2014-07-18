@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 标出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing marked"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-Q (NP-SBJ (NN 店家))
+		  (VP (ADVP-WH (AD 为何))
+		      (ADVP (AD 不))
+		      (PP-LOC (P 在)
+			      (LCP (NP (DNP (NP (NN 商品))
+					    (DEG 的))
+				       (NP (NN 价签)))
+				   (LC 上)))
+		      (ADVP (AD 同时))
+		      (VP (VV 标出)
+			  (NP-OBJ (NN 欧元)
+				  (NN 价格)))))) 
+	  </parse>
+	  <arg n="0">
+	  店家 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  为何 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不 
+	  </arg>
+	  <arg n="2">
+	  在 商品 的 价签 上 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  同时 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  欧元 价格 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (QP (CD 两)
+			    (CLP (M 种)))
+			(NP (NN 价格)))
+		(VP (ADVP (AD 同时))
+		    (VP (VV 标出))))) 
+	  </parse>
+	  <arg n="1">
+	  两 种 价格 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (PN 他))
+		(VP (VP (ADVP (AD 还))
+			(PP-DIR (P 给)
+				(NP (NN 媒体)))
+			(VP (VV 传去)
+			    (NP-OBJ (NN 资方)
+				    (NN 方案))))
+		    (PU ，)
+		    (CC 并)
+		    (VP (VV 标出)
+			(IP-OBJ (NP-SBJ (PN 他们))
+				(VP (PP-LOC (P 在)
+					    (LCP (NP (DP-WH (DT 哪些))
+						     (NP (NN 环节)))
+						 (LC 上)))
+				    (VP (VV 让)
+					(AS 了)
+					(NP-OBJ (NN 步))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  他们 在 哪些 环节 上 让 了 步 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

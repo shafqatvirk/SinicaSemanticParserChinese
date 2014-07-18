@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 教授 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="teacher"/>
+    <role argnum="1" argrole="thing arg0 teaches"/>
+    <role argnum="2" argrole="student"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (IP (NP-SBJ (-NONE- *T*-1))
+			(VP (VV 教授)
+			    (NP-OBJ (NN 行销)
+				    (NN 管理)))))
+		(PU 、)
+		(NP-APP (NP-PN (NR 台湾)
+			       (NR 科大))
+			(NP (NN 副教授)))
+		(NP-PN (NR 林孟彦))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	行销 管理 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

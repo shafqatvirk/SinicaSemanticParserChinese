@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 耽 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *pro*))
+		(VP (PU 「)
+		    (VP (VP (VV 耽)
+			    (NP-OBJ (NN 书)))
+			(VP (ADVP (AD 恰))
+			    (VP (VE 有)
+				(NP-OBJ (NN 诗))
+				(QP-EXT (CD 几)
+					(CLP (M 首))))))
+		    (PU ，)
+		    (VP (VP (VV 觅)
+			    (NP-OBJ (NN 句)))
+			(VP (ADVP (AD 多))
+			    (VP (VV 凭)
+				(NP-OBJ (NN 酒))
+				(QP-EXT (CD 半)
+					(CLP (M 壶))))))
+		    (PU 」))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	书 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

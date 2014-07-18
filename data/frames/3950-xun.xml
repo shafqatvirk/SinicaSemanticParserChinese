@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity looked for/found"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 甚至))
+	      (LCP-SBJ (NP (DNP (LCP (NP (NN 店铺))
+				     (LC 中))
+				(DEG 的))
+			   (NP (NN 商品)))
+		       (LC 上))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 难))
+		  (VP (VV 寻)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 张)))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 标有)
+					      (NP-OBJ (NN 欧元))))
+				      (DEC 的)))
+			      (NP (NN 价签)))))) 
+	  </parse>
+	  <arg n="2">
+	  店铺 中 的 商品 上 
+	  </arg>
+	  <arg n="1">
+	  一 张 *OP* *T*-2 标有 欧元 的 价签 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  甚至 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 跨国))
+		      (NP (NN 人才)))
+	      (VP (ADVP (AD 难))
+		  (VP (VV 寻)))) 
+	  </parse>
+	  <arg n="1">
+	  跨国 人才 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

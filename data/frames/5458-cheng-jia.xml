@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 成家 </id>
+  <frameset id="f1" edef="marry">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 儿女))
+	    (VP (ADVP (AD 都))
+		(NP-ADV (PN 各自))
+		(VP (VV 成家)))) 
+	</parse>
+	<arg n="0">
+	儿女 
+	</arg>
+	<arg n="m" f="adv">
+	各自 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="become expert/form school/style">
+  <role argnum="0" argrole="entity described"/>
+  <frame>
+    <mapping>
+      <V/>
+      <mapitem src="sbj" trg="arg0"/>
+    </mapping>
+    <example>
+      <parse>
+      (IP (NP-SBJ (DNP (NP-PN (NR 王壮为) )
+		       (DEG 的))
+		  (NP (NN 书风) ))
+	  (VP (VP-FOC (VV 成家))
+	      (VP (ADVP (AD 甚))
+		  (VP (VA 早))))) 
+      </parse>
+      <arg n="0">
+      王壮为 的 书风 
+      </arg>
+      <V/>
+    </example>
+  </frame>
+</frameset>
+      </verb>

@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="obtainer"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 获)
+		      (NP-OBJ (NN 气田))
+		      (QP-EXT (CD 八十六)
+			      (CLP (M 个)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  共 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  气田 
+	  </arg>
+	  <arg n="1" f="qty">
+	  八十六 个 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国)
+			     (NN 进出口)
+			     (NN 银行))
+		  (VP (PP-LOC (P 在)
+			      (NP-PN (NR 日本)))
+		      (VP (VV 获)
+			  (NP-OBJ (NN 债券)
+				  (NN 信用)
+				  (NN 高等级))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 进出口 银行 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 日本 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  债券 信用 高等级 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 香港))
+			 (ADJP (JJ 特别))
+			 (NP (NN 行政区)))
+	      (VP (NP-TMP (NT 今日)
+			  (PRN (PU （)
+			       (NP (NT 星期二))
+			       (PU ）)))
+		  (VP (VV 获)
+		      (IP-OBJ (NP-SBJ (NP-PN (NR 中华)
+					     (NN 人民)
+					     (NN 共和国))
+				      (NP (NN 中央)
+					  (NN 人民)
+					  (NN 政府)))
+			      (VP (VV 送赠)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 份)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VA 金碧辉煌)))
+						  (DEC 的)))
+					  (NP (NN 礼物)))))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 特别 行政区 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  今日 （ 星期二 ） 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中华 人民 共和国 中央 人民 政府 送赠 一 份 *OP* (*T*-1)->(礼物) 金碧辉煌 的 礼物 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

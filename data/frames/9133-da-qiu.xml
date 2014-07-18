@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打球 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="player"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 平均))
+		  (DP-ADV (DT 每)
+			  (CLP (M 天)))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 一千))
+				      (NP (NN 人)))
+			      (VP (VV 打球)))))) 
+	  </parse>
+	  <arg n="0">
+	  一千 人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

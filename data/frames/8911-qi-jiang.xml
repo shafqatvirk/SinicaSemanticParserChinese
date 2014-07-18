@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 起降 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="plane described"/>
+      <role argnum="1" argrole="place arg0 takes off and lands"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NP-PN (NR 松山)
+					     (NN 机场))
+				      (NP (NN 航班)))
+			      (VP (NP-MNR (-NONE- *T*-2))
+				  (VP (VV 起降)))))
+		      (DEC 的))
+		  (NP (NN 飞行))
+		  (NP (NN 路线)
+		      (CC 与)
+		      (NN 高度))) 
+	  </parse>
+	  <arg n="0">
+	  松山 机场 航班 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

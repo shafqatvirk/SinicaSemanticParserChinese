@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 评鉴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 evaluates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 丁志仁))
+	    (VP (VV 承认)
+		(IP-OBJ (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 评鉴)
+					 (NP-OBJ (NN 教育)
+						 (NN 政见))))
+				 (LC 时))
+			(PU ，)
+			(NP-SBJ (DNP (ADJP (JJ 现任))
+				     (DEG 的))
+				(NP (NN 施政者)))
+			(VP (ADVP (AD 比较))
+			    (VP (VV 吃亏)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	教育 政见 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

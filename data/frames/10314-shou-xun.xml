@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 受勋 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 confers"/>
+    <role argnum="2" argrole="person arg0 confers arg1 on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-PRP (P 由於)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 热心))
+				(VP (VV 服务)))))
+		(PU ，)
+		(NP-TMP (NT 年初))
+		(ADVP (AD 刚))
+		(VP (VV 颁得)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 项)))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ-3 (-NONE- *T*-2))
+					(VP (PP-LGS (P 由)
+						    (NP (NN 女王)))
+					    (VP (VV 受勋)
+						(NP-OBJ (-NONE- *-3)))))
+				    (DEC 的)))
+			    (NP (NN 爵位)
+				(NN 女王))
+			    (NP (NN 服务)
+				(NN 奖章)))))) 
+	</parse>
+	<arg n="0">
+	由 女王 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

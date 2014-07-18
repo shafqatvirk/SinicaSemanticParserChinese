@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 消化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 digests"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VP (VV 过)
+				    (AS 了)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (NP-TMP (-NONE- *T*-1))
+							    (VP (VV 看)
+								(NP-OBJ (NN 儿童)
+									(NN 剧)))))
+						    (DEC 的)))
+					    (NP (NN 年龄))))
+				(PU ，)
+				(CC 又)
+				(VP (ADVP (AD 无法))
+				    (VP (VV 消化)
+					(NP-OBJ (NP (NN 成人)
+						    (NN 戏剧))
+						(NP (NN 嘲讽)
+						    (NN 批判)))))))
+			(DEC 的)))
+		(NP (NN 青少年))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	成人 戏剧 嘲讽 批判 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 否则))
+	    (PU ，)
+	    (LCP-SBJ (NP (NN 冰柜))
+		     (LC 中))
+	    (VP (VV 可能)
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VV 存)
+						    (AS 了)
+						    (NP-EXT (NN 年馀))))
+					    (DEC 的)))
+				    (NP (NN 食品)))
+			    (VP (ADVP (AD 尚))
+				(ADVP (AD 未))
+				(VP (VV 消化))))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-2 存 了 年馀 的 食品 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	尚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

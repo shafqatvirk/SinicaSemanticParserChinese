@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自由 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 香港))
+		  (VP (ADVP (AD 已))
+		      (QP-ADV (ADVP (AD 连续))
+			      (QP (CD 四)
+				  (CLP (M 年))))
+		      (VP (VV 成为)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (NP-LOC (NN 全球))
+						  (ADVP (AD 最))
+						  (VP (VA 自由))))
+					  (DEC 的)))
+				  (NP (NN 经济)
+				      (NN 体系)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <arg n="m" f="loc">
+	  全球 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

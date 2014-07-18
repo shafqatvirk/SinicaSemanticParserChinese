@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 辞掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="resigner"/>
+      <role argnum="1" argrole="job"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 一))
+					      (VP (VV 开始))))
+				  (ADVP (AD 就))
+				  (VP (VV 鼓吹)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 辞掉)
+						      (NP-OBJ (NN 工作)))
+						  (VP (VRD (VV 跳)
+							   (VV 进来))))))))
+			  (DEC 的)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  工作 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

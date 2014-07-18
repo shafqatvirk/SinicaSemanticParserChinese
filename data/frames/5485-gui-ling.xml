@@ -1,0 +1,112 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 归零 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 抛开)
+			    (NP-OBJ (PU 「)
+				    (ADJP (JJ 老))
+				    (NP (PN 我))
+				    (PU 」)))
+			(PU 、)
+			(VP (BA 把)
+			    (IP-OBJ (NP-SBJ (PN 自己))
+				    (VP (PU 「)
+					(VV 归零)
+					(PU 」))))))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (ADVP (AD 非常))
+					(VP (VA 必要))))
+				(DEC 的)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (LST (CD 二))
+		(PU ．)
+		(IP (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 抛开)
+			    (NP-OBJ (PU 「)
+				    (ADJP (JJ 老))
+				    (NP (PN 我))
+				    (PU 」))))
+		    (PU ，)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 随时))
+			    (VP (PU 「)
+				(VV 归零)
+				(PU 」)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	随时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="state arg1 becomes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 日期))
+	    (VP (ADVP (AD 将))
+		(VP (VRD (VV 归零)
+			 (VV 为))
+		    (QP-OBJ (CD 1980)
+			    (PU ／)
+			    (CD 1)
+			    (PU ／)
+			    (CD 5))))) 
+	</parse>
+	<arg n="1">
+	日期 
+	</arg>
+	<arg n="2">
+	1980 ／ 1 ／ 5 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

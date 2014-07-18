@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 waves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-TPC (NN 阿嬷))
+		(NP-SBJ (QP (CD 两))
+			(NP (NN 手)))
+		(VP (ADVP (AD 一))
+		    (VP (VV 挥)))) 
+	</parse>
+	<arg n="0">
+	阿嬷 
+	</arg>
+	<arg n="1">
+	两 手 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VE 有)
+			(QP-OBJ (CLP (M 次)))))
+	    (IP-ADV (NP-SBJ (NN 镰刀))
+		    (VP (ADVP (AD 一))
+			(VP (VV 挥))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 差点))
+		(VP (BA 将)
+		    (IP-OBJ (QP-SBJ (NP (NN 手指))
+				    (QP (CD 一)
+					(CLP (M 截))))
+			    (VP (ADVP (AD 齐齐))
+				(VP (VV 削去))))))) 
+	</parse>
+	<arg n="1">
+	镰刀 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 难怪))
+	    (NP-PN-SBJ (NR 伍兹))
+	    (VP (VV 可以)
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 一))
+				(VP (VV 挥))))
+		    (VP (QP-PRD (CD 三百)
+				(CLP (M 码))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 brushes away"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (NT 近年))
+		     (LC 来))
+	    (NP-SBJ (NN 水患)
+		    (NN 问题))
+	    (VP (ADVP (AD 已))
+		(VP (VV 成为)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NP-PN (NR 台湾))
+						(NP (NN 民众)))
+					(VP (VPT (VV 挥)
+						 (AD 不)
+						 (VV 去))
+					    (NP-OBJ (-NONE- *T*-1))))
+				    (DEC 的)))
+			    (NP (NN 梦魇)))))) 
+	</parse>
+	<arg n="0">
+	台湾 民众 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

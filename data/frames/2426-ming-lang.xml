@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 明朗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="people thing clear to "/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-IJ-TPC-1 (PU 「)
+		       (IP-CND (NP-SBJ (-NONE- *pro*))
+			       (VP (ADVP (CS 如果))
+				   (VP (VV 等)
+				       (IP-OBJ (NP-SBJ (NN 情势))
+					       (VP (ADVP (AD 完全))
+						   (VP (VA 明朗)))))))
+		       (PU ，)
+		       (NP-SBJ (NN 人家))
+		       (VP (ADVP (AD 就))
+			   (ADVP (AD 不))
+			   (VP (VV 卖给)
+			       (NP-OBJ (VV 你))))
+		       (SP 了)
+		       (PU ！)
+		       (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  情势 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="dir" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 首先))
+	      (PU ，)
+	      (PP-PRP (P 由于)
+		      (IP (NP-SBJ (NN 城乡)
+				  (NN 集体)
+				  (CC 和)
+				  (NN 个人))
+			  (VP (PP-DIR (P 对)
+				      (NP (NN 投资)
+					  (NN 前景)))
+			      (ADVP (AD 不))
+			      (VP (VA 明朗)))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (ADJP (JJ 非国有))
+			       (NP (NN 部分)))
+			   (DEG 的))
+		      (NP (NN 投资)
+			  (NN 增长)))
+	      (VP (ADVP (AD 几乎))
+		  (VP (VC 是)
+		      (QP-PRD (CD 零))))) 
+	  </parse>
+	  <arg n="0">
+	  对 投资 前景 
+	  </arg>
+	  <arg n="1">
+	  城乡 集体 和 个人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

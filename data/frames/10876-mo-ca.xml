@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摩擦 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 rubs against each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 有时))
+		(ADVP (AD 更))
+		(VP (VV 成为)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 亲人))
+					(VP (NP-PRP (-NONE- *T*-2))
+					    (VP (VV 摩擦))))
+				    (DEC 的)))
+			    (NP (NN 导火线)))))) 
+	</parse>
+	<arg n="1">
+	亲人 
+	</arg>
+	<arg n="m" f="prp">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

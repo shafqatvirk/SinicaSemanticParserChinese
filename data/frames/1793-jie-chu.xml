@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接触 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="contacting parties"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP-APP (IP (NP-SBJ (QP (CD 一)
+				      (CLP (M 名)))
+				  (NP (NN 中四)
+				      (NN 学生)))
+			  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (QP-ADV (OD 第一)
+						       (CLP (M 日)))
+					       (VP (VP (VV 前往)
+						       (NP-OBJ (QP (CD 一)
+								   (CLP (M 间)))
+							       (NP (NN 学校))))
+						   (VP (VSB (VV 插班)
+							    (VV 报到))))))
+				       (LC 时))
+			      (VP (VV 接触)
+				  (NP-OBJ (NN 教师)
+					  (CC 和)
+					  (NN 校长)))))
+		      (DEC 的))
+	      (NP (NN 经历))) 
+	  </parse>
+	  <arg n="0" f="crd">
+	  一 名 中四 学生 
+	  </arg>
+	  <arg n="0" f="crd">
+	  教师 和 校长 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 第一 日 前往 一 间 学校 插班 报到 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 双方))
+		      (NP (NN 企业界)))
+	      (VP (VP (ADVP (AD 广泛))
+		      (VP (VV 接触)))
+		  (PU ，)
+		  (VP (ADVP (AD 深入))
+		      (VP (VV 洽谈)))))
+	  </parse>
+	  <arg n="0">
+	  双方 企业界 
+	  </arg>
+	  <arg n="m" f="adv">
+	  广泛 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (-NONE- *pro*))
+		  (VP (PP (P 与)
+			  (NP-PN (NR 台湾)))
+		      (ADVP (AD 非正式))
+		      (VP (VV 接触))))
+	  </parse>
+	  <arg n="0" f="crd">
+	  *pro* 
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 台湾 
+	  </arg>
+	  <arg n="m" f="adv">
+	  非正式 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

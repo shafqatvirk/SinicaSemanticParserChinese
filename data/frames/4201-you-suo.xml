@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有所 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="event/state that exists with respect to arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 出口)
+		      (NN 增长)
+		      (NN 速度))
+	      (VP (VV 有所)
+		  (NP-OBJ (NN 放慢)))) 
+	  </parse>
+	  <arg n="0">
+	  出口 增长 速度 
+	  </arg>
+	  <arg n="1">
+	  放慢 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

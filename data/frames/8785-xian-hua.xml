@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 献花 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 presents flower to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 犹))
+				      (VP (VC 是)
+					  (NP-PRD (NN 童星)))))
+			      (DEC 的)))
+		      (NP-PN (NR 张小燕)))
+	      (VP (VSB (VV 前往)
+		       (VV 献花)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 犹 是 童星 的 张小燕 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

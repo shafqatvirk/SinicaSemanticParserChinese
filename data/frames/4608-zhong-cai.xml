@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 仲裁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 arbitrates"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据称))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-TTL (PU 《)
+				   (NN 仲裁法)
+				   (PU 》))
+			   (DEG 的))
+		      (NP (NN 制定)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 保证)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (DVP (VP (VP (VA 公正))
+						   (PU 、)
+						   (VP (VA 及时)))
+					       (DEV 地))
+					  (VP (VV 仲裁)
+					      (NP-OBJ (NN 经济)
+						      (NN 纠纷))))
+				      (PU ，)
+				      (VP (VV 保护)
+					  (NP-OBJ (DNP (NP (NN 当事人))
+						       (DEG 的))
+						  (ADJP (JJ 合法))
+						  (NP (NN 权益)))))))
+		      (PU ，)
+		      (VP (ADVP (AD 从而))
+			  (VP (VV 保障)
+			      (NP-OBJ (DNP (NP (NN 社会主义)
+					       (NN 市场)
+					       (NN 经济))
+					   (DEG 的))
+				      (ADJP (JJ 健康))
+				      (NP (NN 发展)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  经济 纠纷 
+	  </arg>
+	  <arg n="m" f="adv">
+	  公正 、 及时 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

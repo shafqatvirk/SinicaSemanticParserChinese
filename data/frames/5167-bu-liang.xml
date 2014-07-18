@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不良 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-4 (-NONE- *OP*))
+		(CP (IP (NP-TPC (-NONE- *T*-4))
+			(NP-SBJ (NN 营养))
+			(VP (VV 不良)))
+		    (DEC 的)))
+	    (NP (NN 反对党))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-4 
+	</arg>
+	<arg n="0" f="pse">
+	营养 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 换)
+			    (NP-OBJ (QP (CLP (M 句)))
+				    (NP (NN 话))))
+			(VP (VV 说))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NN 中年)
+			     (NN 危机))
+			 (DEG 的))
+		    (NP (NN 高危险群)))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (DP (DT 那些))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (PP-LOC (P 在)
+						(NP (NN 早年)
+						    (NN 阶段)))
+					(ADVP (AD 就))
+					(VP (VE 有)
+					    (AS 过)
+					    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VP-FOC (VV 适应))
+								(VP (VA 不良))))
+						    (NP (NN 经验))))))
+				(DEC 的)))
+			(NP (NN 人))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="prd">
+	适应 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

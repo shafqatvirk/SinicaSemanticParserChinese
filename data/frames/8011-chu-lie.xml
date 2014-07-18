@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出列 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 舒展)
+			  (AS 过)
+			  (NP-OBJ (NN 筋骨))))
+	      (PU ，)
+	      (NP-SBJ (NN 老师))
+	      (VP (VV 请)
+		  (NP-OBJ (QP (CD 两)
+			      (CLP (M 位)))
+			  (NP (NN 同学)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 出列))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

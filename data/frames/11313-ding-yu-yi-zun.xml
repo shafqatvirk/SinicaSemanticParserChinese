@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 定於一尊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity for which arg0 sets up standards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (PP (P 从)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 崇尚)
+					    (NP-OBJ (DNP (NP-PN (NR 黄)
+								(NR 老))
+							 (DEG 之))
+						    (NP (NN 道)))))
+				    (DEC 的)))
+			    (NP-PN (NR 文帝)
+				   (PU 、)
+				   (NR 景帝))))
+		    (PU ，)
+		    (PP (P 到)
+			(IP (NP-PN-SBJ (NR 武帝))
+			    (VP (PU 「)
+				(ADVP (AD 独))
+				(VP (VV 尊)
+				    (NP-OBJ (NN 儒术)))
+				(PU 」)))))
+	    (PU ，)
+	    (NP-SBJ (NN 思想))
+	    (VP (ADVP (AD 逐渐))
+		(VP (VV 定於一尊)))) 
+	</parse>
+	<arg n="1">
+	思想 
+	</arg>
+	<arg n="m" f="adv">
+	逐渐 
+	</arg>
+	<arg n="m" f="dir">
+	从 *OP* *T*-1 崇尚 黄 老 之 道 的 文帝 、 景帝 ， 到 武帝 「 独 尊 儒术 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

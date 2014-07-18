@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 飞来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 flies to"/>
+      <role argnum="2" argrole="place arg0 flies from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对於)
+		      (NP (DP (DT 这)
+			      (CLP (M 个)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (LCP-DIR (NP (NN 天))
+						   (LC 外))
+					  (VP (VV 飞来))))
+				  (DEC 的)))
+			  (NP (NN 变化)
+			      (NN 球))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (DP (DT 每)
+				   (CLP (M 个)))
+			       (NP (NN 人)))
+			   (DEG 的))
+		      (NP (NN 反应)))
+	      (VP (VV 不一))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  天 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

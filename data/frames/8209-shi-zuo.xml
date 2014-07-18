@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 试做 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes an attempt to make"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 经过)
+		      (NP (NN 打听)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 莺歌)
+			 (NN 陶瓷)
+			 (NN 博物馆))
+	      (VP (VV 找)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 位)))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 曾))
+					  (PP-BNF (P 替)
+						  (NP-PN (ADJP (JJ 史前))
+							 (NP (NN 博物馆))))
+					  (VP (VV 仿制))))
+				  (DEC 的)))
+			  (ADJP (JJ 老))
+			  (NP (NN 先生)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 试做))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

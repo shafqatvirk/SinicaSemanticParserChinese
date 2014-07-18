@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 巩固 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 互访)
+		      (NN 活动))
+	      (VP (CC 不仅)
+		  (VP (VV 加强)
+		      (AS 了)
+		      (NP-OBJ (DNP (LCP (NP (NP-PN (NR 香港))
+					    (CC 与)
+					    (NP (NP (NN 世界))
+						(DP (DT 各))
+						(NP (NN 国))))
+					(LC 间))
+				   (DEG 的))
+			      (NP (NN 了解)
+				  (CC 与)
+				  (NN 合作))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (VP (VV 巩固)
+			  (NP-OBJ (-NONE- *RNR*-1)))
+		      (CC 和)
+		      (VP (VV 发展)
+			  (AS 了)
+			  (NP-OBJ-1 (DNP (NP (PN 彼此))
+					 (DEG 的))
+				    (ADJP (JJ 双边))
+				    (NP (NN 关系))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  互访 活动 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*RNR*-1)->(彼此的双边关系) 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (PP (P 同)
+			       (NP (ADJP (JJ 广大))
+				   (ADJP (JJ 发展中))
+				   (NP (NN 国家))))
+			   (DEG 的))
+		      (NP (NN 团结)
+			  (NN 合作)))
+	      (VP (ADVP (AD 进一步))
+		  (VP (VV 巩固)))) 
+	  </parse>
+	  <arg n="1">
+	  同 广大 发展中 国家 的 团结 合作 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 衬 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing which shows better in contrast with arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 衬)
+		  (DER 得)
+		  (IP-EXT (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (PP (ADVP (AD 每))
+						      (PP (P 隔)
+							  (NP (QP (CD 一)
+								  (CLP (M 段)))
+							      (NP (NN 路)))))
+						  (ADVP (AD 就))
+						  (VP (VV 耸立))))
+					  (DEC 的)))
+				  (ADJP (JJ 辉煌))
+				  (NP (NN 庙宇)
+				      (PU 、)
+				      (NN 宫观)))
+			  (VP (ADVP (AD 特别))
+			      (VP (VA 突兀)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 每 隔 一 段 路 就 耸立 的 辉煌 庙宇 、 宫观 特别 突兀 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

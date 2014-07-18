@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发射 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="shooter, launcher"/>
+      <role argnum="1" argrole="thing launched"/>
+      <role argnum="2" argrole="target"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 安盟))
+		  (VP (PP-DIR (P 向)
+			      (NP (DP (DT 该))
+				  (NP (NN 地))))
+		      (VP (VV 发射)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 密集)))
+					  (DEC 的)))
+				  (NP (NN 火箭炮)))))) 
+	  </parse>
+	  <arg n="0">
+	  安盟 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 密集 的 火箭炮 
+	  </arg>
+	  <arg n="2">
+	  向 该 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 俄))
+		  (VP (ADVP (AD 又))
+		      (VP (VV 发射)
+			  (NP-OBJ (QP (CD 三)
+				      (CLP (M 颗)))
+				  (NP (NN 全球)
+				      (NN 定位)
+				      (NN 卫星))))))
+	  </parse>
+	  <arg n="0">
+	  俄 
+	  </arg>
+	  <arg n="1">
+	  三 颗 全球 定位 卫星 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

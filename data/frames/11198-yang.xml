@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 痒 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity itching"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (NN 尼龙衣))
+		    (VP (VV 穿)
+			(PP (P 在)
+			    (LCP (NP (NN 身))
+				 (LC 上)))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (CC 又)
+		(VA 红)
+		(CC 又)
+		(VA 痒))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="cnd">
+	尼龙衣 穿 在 身 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

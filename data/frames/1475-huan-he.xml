@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缓和 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 中方))
+	      (VP (VV 希望)
+		  (IP-OBJ (NP-SBJ (ADJP (JJ 有关))
+				  (DP (DT 各))
+				  (NP (NN 方)))
+			  (VP (PP-BNF (P 为)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 缓和)
+					      (NP-OBJ (NP-PN (NR 朝鲜)
+							     (NN 半岛))
+						      (NP (NN 局势))))))
+			      (VP (VV 继续)
+				  (VP (VV 做出)
+				      (NP-OBJ (NN 建设性)
+					      (NN 努力)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  朝鲜 半岛 局势 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 随着)
+		      (IP (NP-SBJ (NP (NP (QP (CD 两))
+					  (NP (NN 岸)))
+				      (NP (NN 关系)))
+				  (NP (NN 气氛)))
+			  (VP (VP (VV 缓和))
+			      (PU ，)
+			      (VP (VV 趋向)
+				  (NP-OBJ (NN 稳定))))))
+	      (PU ，)
+	      (LCP-TMP (NP (NT 今年))
+		       (LC 来))
+	      (NP-SBJ (NP (QP (CD 两))
+			  (NP (NN 岸)))
+		      (NP (NP (NN 经贸)
+			      (NN 合作))
+			  (CC 和)
+			  (NP (NP (NN 科技)
+				  (PU 、)
+				  (NN 文化))
+			      (NP (NN 交流)
+				  (CC 以及)
+				  (NN 人员)
+				  (NN 往来)))))
+	      (VP (ADVP (VV 持续))
+		  (VP (VV 发展)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  两 岸 关系 气氛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

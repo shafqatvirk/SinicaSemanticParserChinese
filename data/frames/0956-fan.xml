@@ -1,0 +1,129 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 翻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="extent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (NP (NT 今后)
+			       (NT １０年))
+			   (LC 内)))
+	      (PU ，)
+	      (NP-SBJ (PN 我们))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 计划)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NN 国民)
+					      (NN 生产)
+					      (NN 总值))
+				      (VP (ADVP (AD 再))
+					  (VP (VV 翻)
+					      (QP-OBJ (CD 一)
+						      (CLP (M 番))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  国民 生产 总值 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 	  
+	  </arg>
+	  <arg n="2">
+	  一 番 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 中国))
+			   (DEG 的))
+		      (NP (NN 粮食))
+		      (ADJP (JJ 总))
+		      (NP (NN 产量)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 会)
+		      (VP (VV 翻)
+			  (QP-EXT (CD 一)
+				  (CLP (M 番))))))) 
+	  </parse>
+	  <arg n="1">
+	  中国 的 粮食 总 产量 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <arg n="2">
+	  一 番 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities arg0 goes through"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VV 解决)
+			       (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+					       (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (NP-MNR (-NONE- *T*-1))
+						       (VP (VV 办报)))))
+					   (NP (NN 资金)))
+				       (NP (NN 问题)))))
+		       (LC 後))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 司马文武))
+	      (VP (BA 把)
+		  (IP-OBJ (PU 「)
+			  (NP-SBJ (DNP (NP-PN (NR 台湾))
+				       (DEG 的))
+				  (NP (NN 英文)
+				      (NN 人才)))
+			  (VP (VV 翻)
+			      (QP-EXT (CD 一)
+				      (CLP (M 遍))))
+			  (PU 」)))) 
+	  </parse>
+	  <arg n="0">
+	  司马文武 
+	  </arg>
+	  <arg n="1">
+	  台湾 的 英文 人才 
+	  </arg>
+	  <arg n="m" f="ext">
+	  一 遍 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 解决 *OP* *PRO* *T*-1 办报 资金 问题 後 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

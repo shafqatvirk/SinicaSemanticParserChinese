@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 划定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 draws"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 捶丸))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 划定)
+		      (NP-OBJ (NP (NN 击球)
+				  (NN 点))
+			      (PRN (VP (VV 称为)
+				       (NP-OBJ (PU 「)
+					       (NN 基)
+					       (PU 」)))))))) 
+	  </parse>
+	  <arg n="1">
+	  击球 点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  捶丸 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

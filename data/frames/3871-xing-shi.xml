@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 行使 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing exercised/used"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (QP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VA 新)))
+				       (DEC 的)))
+			       (QP (CD 一)
+				   (CLP (M 年))))
+			   (LC 里)))
+	      (PU ，)
+	      (NP-SBJ (PN 我们))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 迎来)
+			  (NP-OBJ (IP-APP (NP-PN-SBJ (NR 中华)
+						     (NN 人民)
+						     (NN 共和国))
+					  (VP (VV 建国)))
+				  (QP (CD 五十))
+				  (NP (NN 周年))))
+		      (CC 和)
+		      (VP (VV 恢复)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 对)
+					      (NP-PN (NR 澳门)))
+				      (VP (VV 行使)
+					  (NP-OBJ (NN 主权))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  主权 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 澳门 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宣读 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing read out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 政府))
+	      (VP (VV 宣读)
+		  (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NP (NN 中央)
+						  (NN 人民)
+						  (NN 政府))
+					      (CC 及)
+					      (NP (QP (CD 三十一))
+						  (NP (NN 省)
+						      (PU 、)
+						      (NN 自治区)
+						      (PU 、)
+						      (NN 直辖市))))
+				      (VP (VV 赠予)
+					  (NP-PN-IO (NP-PN (NR 香港))
+						    (ADJP (JJ 特别))
+						    (NP (NN 行政区)))
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (NP (NN 贺礼)))
+			  (NP (NN 礼单))))) 
+	  </parse>
+	  <arg n="0">
+	  政府 
+	  </arg>
+	  <arg n="1">
+	  *OP* 中央 人民 政府 及 三十一 省 、 自治区 、 直辖市 赠予 香港 特别 行政区 *T*-1 贺礼 礼单 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

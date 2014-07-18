@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指派 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="designater"/>
+      <role argnum="1" argrole="designatee"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 三月)
+		      (NT 二十六日))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 崔广华))
+	      (VP (VV 指派)
+		  (NP-OBJ (NP (NN 县政府))
+			  (NP (NN 办公室)
+			      (CC 和)
+			      (NN 行政科))
+			  (NP (NN 人士)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP (P 与)
+			      (NP (NN 县)
+				  (NN 水利局)))
+			  (VP (VV 商谈)
+			      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 购买)
+						  (NP-OBJ (NN 小汽车))))
+				      (NP (NN 事宜)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  三月 二十六日 
+	  </arg>
+	  <arg n="0">
+	  崔广华 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  县政府 办公室 和 行政科 人士 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 与 县 水利局 商谈 *PRO* 购买 小汽车 事宜 
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

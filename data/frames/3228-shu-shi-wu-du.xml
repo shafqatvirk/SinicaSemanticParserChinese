@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 熟视无睹 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity being blind"/>
+      <role argnum="1" argrole="thing blind to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美国))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 应)
+		      (VP (PP-DIR (P 对)
+				  (NP (PN 此)))
+			  (VP (VV 熟视无睹)))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 
+	  </arg>
+	  <arg n="1">
+	  对 此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

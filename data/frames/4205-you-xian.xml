@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有限 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 由于)
+		      (IP (NP-PN-TPC (NN 茅台酒))
+			  (IP (IP (NP-SBJ (NN 制作)
+					  (NN 工艺))
+				  (VP (VA 复杂)))
+			      (PU ，)
+			      (IP (NP-SBJ (NN 生产)
+					  (NN 周期))
+				  (VP (VA 长))))))
+	      (PU ，)
+	      (ADVP (AD 因而))
+	      (NP-SBJ (NP (PN 其))
+		      (NP (NN 产量)))
+	      (VP (ADVP (AD 十分))
+		  (VP (VA 有限)))) 
+	  </parse>
+	  <arg n="0">
+	  其 产量 
+	  </arg>
+	  <arg n="m" f="adv">
+	  十分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因而 
+	  </arg>
+	  <arg n="m" f="adv">
+	  由于 茅台酒 制作 工艺 复杂 ， 生产 周期 长 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

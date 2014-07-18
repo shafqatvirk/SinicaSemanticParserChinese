@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 咬回 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 努力))
+		(PP-BNF (P 为)
+			(NP (NN 主人) ))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 钱) )
+			    (VP (VV 咬回)
+				(NP-OBJ (NN 家) )))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	钱 
+	</arg>
+	<arg n="2">
+	家 
+	</arg>
+	<arg n="m" f="bnf">
+	为 主人 
+	</arg>
+	<arg n="m" f="adv">
+	努力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

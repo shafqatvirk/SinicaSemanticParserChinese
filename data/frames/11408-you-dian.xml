@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有点 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing that exists to some extent with respect to arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 这))
+	    (VP (VP (VV 可能)
+		    (VP (VV 形成)
+			(NP-OBJ (DP (DT 某)
+				    (CLP (M 种)))
+				(DNP (NP (NN 互动)
+					 (PU 、)
+					 (NN 伙伴))
+				     (DEG 的))
+				(NP (NN 关系)))))
+		(PU ，)
+		(VP (ADVP (AD 甚至))
+		    (VP (VV 有点)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 回到)
+						(NP-OBJ (NN 部落)
+							(NN 时代))))
+					(DEC 的))
+				(NP (NN 感觉))))))) 
+	</parse>
+	<arg n="0">
+	这 
+	</arg>
+	<arg n="1">
+	*PRO* 回到 部落 时代 的 感觉 
+	</arg>
+	<arg n="m" f="adv">
+	甚至 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

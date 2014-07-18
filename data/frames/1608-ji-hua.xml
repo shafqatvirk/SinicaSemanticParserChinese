@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 计划 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="planner"/>
+      <role argnum="1" argrole="thing planned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 陕西))
+		  (VP (VV 计划)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 加速))
+				  (VP (VV 发展)
+				      (NP-OBJ (NN 旅游业))))))) 
+	  </parse>
+	  <arg n="0">
+	  陕西 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 加速 发展 旅游业 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 年赛))
+	      (VP (VV 计划)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (DP-TMP (DT 每)
+				      (QP (CD 两)
+					  (CLP (M 年))))
+			      (VP (VV 举行)
+				  (QP-EXT (CD 一)
+					  (CLP (M 次)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  年赛 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 每 两 年 举行 一 次 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

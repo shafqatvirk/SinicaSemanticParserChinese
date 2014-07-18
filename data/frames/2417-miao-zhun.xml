@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 瞄准 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing trained"/>
+      <role argnum="2" argrole="entity trained upon"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 河南)
+			 (NR 春都)
+			 (NN 集团))
+	      (VP (VP (VV 瞄准)
+		      (NP-OBJ (NP-PN (NR 三峡))
+			      (NP (NN 库区))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 丰富)))
+				      (DEC 的)))
+			      (NP (NN 生猪)
+				  (NN 资源))))
+		  (PU ，)
+		  (VP (PP (P 与)
+			  (NP-PN (NR 万县市)
+				 (NN 食品)
+				 (NN 罐头厂)))
+		      (VP (VV 合作))))) 
+	  </parse>
+	  <arg n="0">
+	  河南 春都 集团 
+	  </arg>
+	  <arg n="2">
+	  三峡 库区 *OP* *T*-1 丰富 的 生猪 资源 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

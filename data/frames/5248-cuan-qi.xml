@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 窜起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity rising"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (PP-LOC (P 沿著)
+					    (NP (NN 大马路)))
+				    (VP (MSP 而)
+					(VP (VV 筑)))))
+			    (DEC 的)))
+		    (NP (NN 高楼)
+			(NN 大厦)))
+	    (PU ，)
+	    (VP (DVP (VP (VA 迅速))
+		     (DEV 地))
+		(VP (VV 窜起)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 沿著 大马路 而 筑 的 高楼 大厦 
+	</arg>
+	<arg n="m" f="adv">
+	迅速 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 千禧年))
+	    (NP-PN-SBJ (NR 台湾))
+	    (VP (VV 窜起)
+		(NP-OBJ (QP (CD 一)
+			    (CLP (M 位)))
+			(NP (NN 歌手))))) 
+	</parse>
+	<arg n="0">
+	一 位 歌手 
+	</arg>
+	<arg n="m" f="loc">
+	台湾 
+	</arg>
+	<arg n="m" f="tmp">
+	千禧年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

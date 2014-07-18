@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 大败于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loser"/>
+      <role argnum="1" argrole="winner"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD ５))
+	      (PU ．)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 参加)
+				      (NP-PN-OBJ (NR 曼谷)
+						 (NR 亚运会))))
+			      (DEC 的)))
+		      (NP-PN (NR 中国)
+			     (NR 香港)
+			     (NN 足球队)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 小组赛))
+			       (LC 中)))
+		  (PP-MNR (P 以)
+			  (QP (QP (CD ０)
+				  (PU ：)
+				  (CD ５))
+			      (CC 和)
+			      (QP (CD ０)
+				  (PU ：)
+				  (CD ６))))
+		  (VP (VV 大败于)
+		      (NP-PN-OBJ (NR 泰国队)
+				 (CC 和)
+				 (NR 阿曼队))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 参加 曼谷 亚运会 的 中国 香港 足球队 
+	  </arg>
+	  <arg n="1">
+	  泰国队 和 阿曼队 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 小组赛 中 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 ０ ： ５ 和 ０ ： ６ 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

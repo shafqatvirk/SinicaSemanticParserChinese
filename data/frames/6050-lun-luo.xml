@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 沦落 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="state arg0 falls into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (VP (ADVP (AD 就))
+		    (VP (VC 是)
+			(PP-PRP (P 因为)
+				(IP (NP-PN-TPC (PU 『)
+					       (NR 作秀)
+					       (NN 小学)
+					       (PU 』))
+				    (NP-SBJ (-NONE- *pro*))
+				    (VP (VV 没)
+					(VP (VV 毕业)))))))
+		(PU ，)
+		(VP (ADVP (AD 才))
+		    (VP (VV 会)
+			(VP (VRD (VV 沦落)
+				 (VV 到))
+			    (NP-OBJ (DNP (NP (NT 今天))
+					 (DEG 的))
+				    (NP (NN 地步)))))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	今天 的 地步 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 falls to be"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (LCP (NP (NN 剧))
+				 (LC 中))
+			    (NP (NN 主角)))
+		    (NP (PU 「)
+			(NN 天行者)
+			(PU 」)))
+	    (VP (VRD (VV 沦落)
+		     (VV 为))
+		(NP-OBJ (ADJP (JJ 大))
+			(NP (NN 魔头))))) 
+	</parse>
+	<arg n="0">
+	剧 中 主角 「 天行者 」 
+	</arg>
+	<arg n="1">
+	大 魔头 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

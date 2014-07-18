@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 倒退 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 turns back"/>
+    <role argnum="2" argrole="extent arg1 goes back"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-MNR (P 藉)
+					(NP (CP-APP (IP (NP-SBJ (DNP (NP (NN 西历))
+								     (DEG 的))
+								(NP (NN 日期)
+								    (CC 和)
+								    (NN 星期))
+								(NP (NN 对应)))
+							(VP (DP-ADV (DT 每)
+								    (QP (CD 二十八)
+									(CLP (M 年))))
+							    (ADVP (AD 将))
+							    (VP (VV 重复)
+								(QP-ADV (CD 一)
+									(CLP (M 次))))))
+						    (DEC 的))
+					    (NP (NN 特性))
+					    (PRN (PU （)
+						 (IP (ADVP (AD 例如))
+						     (IP (IP (NP-SBJ (NP (NT 今年))
+								     (NP (NT 一月)
+									 (NT 一日)))
+							     (VP (VC 是)
+								 (NP-PRD (NT 星期五))))
+							 (PU ，)
+							 (IP (NP-SBJ (-NONE- *pro*))
+							     (VP (LCP-TMP (NP (NT 二十八年))
+									  (LC 後))
+								 (ADVP (AD 又))
+								 (VP (VC 是)
+								     (VP (VV 如此)))))))
+						 (PU ）))))
+				(PU ，)
+				(VP (BA 将)
+				    (IP-OBJ (NP-SBJ (NN 系统))
+					    (VP (VP (VV 倒退)
+						    (QP-OBJ (CD 二十八)
+							    (CLP (M 年))))
+						(PU ，)
+						(VP (VV 重回)
+						    (NP-OBJ (NT 一九七○)
+							    (NN 年代))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	系统 
+	</arg>
+	<arg n="2">
+	二十八 年 
+	</arg>
+	<arg n="m" f="mnr">
+	藉 西历 的 日期 和 星期 对应 每 二十八 年 将 重复 一 次 的 特性 （ 例如 今年 一月 一日 是 星期五 ， *pro* 二十八年 後 又 是 如此 ） 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (PU 「)
+		(VV 倒退)
+		(QP-OBJ (CD 二十八)
+			(CLP (M 年)))
+		(PU 」))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	二十八 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

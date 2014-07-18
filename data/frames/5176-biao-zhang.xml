@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飙涨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="level price of arg0 rises to"/>
+    <role argnum="2" argrole="original level of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (ADVP (AD 当初))
+					(VP (QP-PRD (QP (CD 三千)
+							(CLP (M 元)))
+						    (QP (CD 一)
+							(CLP (M 坪)))))))
+				(DEC 的)))
+			(NP (NN 地)))
+		(PU ，)
+		(VP (LCP-TMP (QP (CD 三十)
+				 (CLP (M 年)))
+			     (LC 後))
+		    (VP (VV 飙涨)
+			(PP (P 到)
+			    (QP (CD 十来万)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 当初 三千 元 一 坪 的 地 
+	</arg>
+	<arg n="1">
+	到 十来万 
+	</arg>
+	<arg n="m" f="tmp">
+	三十 年 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (DNP (NP (QP (CD 六)
+				     (PU 、)
+				     (CD 七十))
+				 (NP (NN 年代)))
+			     (DEG 的))
+			(NP-PN (NR 美国))
+			(NP (NN 房市)))
+		(VP (VV 飙涨))) 
+	</parse>
+	<arg n="0">
+	六 、 七十 年代 的 美国 房市 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-ADV (ADVP (AD 就))
+		    (PP (P 如同)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 已))
+					    (VP (VE 有)
+						(NP-OBJ (QP (CD 二十九)
+							    (CLP (M 年)))
+							(NP (NN 历史))))))
+				    (DEC 的)))
+			    (NP-PN (NR 美国)
+				   (NR 那斯达克))
+			    (NP (NN 指数)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-TMP (P 从)
+			(LCP (NP (NP (NT 去年))
+				 (NP (NT 十月)
+				     (NN 中旬)))
+			     (LC 起)))
+		(PU ，)
+		(ADVP (AD 突然))
+		(PP-DIR (P 由)
+			(QP (CD 二千八百)
+			    (CLP (M 点))))
+		(ADVP (AD 一路))
+		(VP (VRD (VV 飙涨)
+			 (VV 到))
+		    (QP-OBJ (DNP (LCP (NP (NT 今年))
+				      (LCP (NP (NT 三月))
+					   (LC 中)))
+				 (DEG 的))
+			    (QP (CD 五千多)
+				(CLP (M 点))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	今年 三月 中 的 五千多 点 
+	</arg>
+	<arg n="2">
+	由 二千八百 点 
+	</arg>
+	<arg n="m" f="adv">
+	一路 
+	</arg>
+	<arg n="m" f="adv">
+	突然 
+	</arg>
+	<arg n="m" f="tmp">
+	从 去年 十月 中旬 起 
+	</arg>
+	<arg n="m" f="adv">
+	就 如同 *OP* *T*-1 已 有 二十九 年 历史 的 美国 那斯达克 指数 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

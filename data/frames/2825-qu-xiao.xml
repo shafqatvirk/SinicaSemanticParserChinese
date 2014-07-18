@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 取消 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 有关))
+		      (NP (NN 部门)))
+	      (VP (VP (ADJP (AD 还))
+		      (VP (VV 取消)
+			  (AS 了)
+			  (NP-OBJ (QP (CD 一些))
+				  (NP (NN 收费)
+				      (NN 项目)))))
+		  (PU ，)
+		  (VP-PRP (MSP 以)
+			  (VP (VV 降低)
+			      (NP-OBJ (NN 住宅)
+				      (NN 建设)
+				      (NN 成本)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  有关 部门 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  还 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一些 收费 项目 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP-PN (NR 美国))
+			       (NP (NN 政府)))
+			   (DEG 的))
+		      (PP (P 对)
+			  (NP-PN (NR 华)))
+		      (NP (NN 制裁)))
+	      (VP (ADVP (AD 至今))
+		  (ADVP (AD 仍))
+		  (ADVP (AD 未))
+		  (ADVP (AD 完全))
+		  (VP (VV 取消)))) 
+	  </parse>
+	  <arg n="1">
+	  美国 政府 的 对 华 制裁 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  至今 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  仍 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  未 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  完全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

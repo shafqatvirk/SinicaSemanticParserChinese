@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 多彩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VE 有)
+				      (NP-OBJ (NP-APP (NP-PN (NR 中国))
+						      (NP (PU “)
+							  (DNP (NP (NN 荷藕))
+							       (DEG 之))
+							  (NP (NN 乡))
+							  (PU ”)))
+					      (NP (NN 美誉)))))
+			      (DEC 的)))
+		      (NP-PN (NR 江苏省)
+			     (NR 宝应县)))
+	      (NP-SBJ (NN 荷藕)
+		      (NN 产品))
+	      (VP (VCD (VA 丰富)
+		       (VA 多彩)))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *OP* *T*-1 有 中国 “ 荷藕 之 乡 ” 美誉 的 江苏省 宝应县 
+	  </arg>
+	  <arg n="0" f="pse">
+	  荷藕 产品 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

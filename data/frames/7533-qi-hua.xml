@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 企画 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 plans and prepares"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (NP-DIR (NP (NP-PN (NR 江苏))
+						    (NP-PN (NR 南京)
+							   (NN 大学)))
+						(NP (NN 中文)
+						    (NN 系)))
+					(VP (VV 毕业)))
+				    (PU ，)
+				    (VP (VV 南下)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (PP-BNF (P 为)
+							    (NP (NP-PN (NR 东莞))
+								(NP (NN 台商))))
+						    (VP (VV 企画)
+							(NP-OBJ (NN 活动))))))))
+			    (DEC 的)))
+		    (NP-PN (NR 高文来)))
+	    (VP (ADVP (AD 一口气))
+		(VP (VV 说出)
+		    (NP-OBJ (QP (CD 许多))
+			    (NP (CP (WHNP-2 (-NONE- *OP*))
+				    (IP (PU 「)
+					(NP-TPC (-NONE- *T*-2))
+					(NP-PN-SBJ (NR 东莞))
+					(VP (QP-PRD (OD 第一)))
+					(PU 」)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	活动 
+	</arg>
+	<arg n="m" f="bnf">
+	为 东莞 台商 
+	</arg>
+	<V/> 
+      </example>
+    </frame>
+  </frameset>
+</verb>

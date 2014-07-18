@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 诈欺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 cheats"/>
+      <role argnum="2" argrole="thing arg0 cheats out of arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (NP-APP (NN 立委))
+			  (NP-PN (NR 林瑞图)))
+		  (VP (VV 涉及)
+		      (NP-OBJ (NP-PN (NR 台北)
+				     (NN 银行))
+			      (NP (NN 诈欺)
+				  (NN 超贷))))) 
+	  </parse>
+	  <arg n="0">
+	  台北 银行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

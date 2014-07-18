@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吐出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 spits out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 紧邻)
+					  (NP-PN-OBJ (QP (CD 八五))
+						     (NP (NN 国际)
+							 (NN 广场)))))
+				  (DEC 的)))
+			  (QP (CD 一)
+			      (CLP (M 栋)))
+			  (QP (CD 四)
+			      (CLP (M 层)))
+			  (NP (NN 民宅)))
+		      (NP (NN 住户)))
+	      (VP (VP (ADVP (AD 一))
+		      (VP (VV 提起)
+			  (NP-OBJ (QP (CD 八五))
+				  (NP (NN 国际)
+				      (NN 广场)))))
+		  (PU ，)
+		  (VP (DVP (IP (NP-SBJ (NN 连珠炮))
+			       (VP (VA 似)))
+			   (DEV 地))
+		      (VP (VV 吐出)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (ADJP (JJ 大))
+					   (CLP (M 堆))))
+				  (NP (NN 委屈))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 紧邻 八五 国际 广场 的 一 栋 四 层 民宅 住户 
+	  </arg>
+	  <arg n="1">
+	  一 大 堆 委屈 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连珠炮 似 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

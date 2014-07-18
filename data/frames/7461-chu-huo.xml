@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出货 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 ships"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (NP-ADV (QP (CD 一)
+			    (CLP (M 个)))
+			(NP (NN 月)))
+		(VP (VV 要)
+		    (VP (VV 出货)
+			(NP-OBJ (QP (QP (CD 三)
+					(CLP (-NONE- *RNR*-1)))
+				    (CC 到)
+				    (NP (CD 五百)
+					(CLP-1 (M 个))))
+				(NP (NN 货柜))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	三 *RNR*-1 到 五百 个 货柜 
+	</arg>
+	<arg n="m" f="adv">
+	一 个 月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

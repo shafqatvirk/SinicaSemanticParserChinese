@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改约 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 invites"/>
+      <role argnum="2" argrole="thing arg1 is invited to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 现在))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 则))
+		  (VP (VV 改约)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 类似))
+				       (NP (NN 情况)))
+				   (DEG 的))
+			      (NP (NN 朋友)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VCD (VV 围炉)
+				   (VV 聚餐))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  类似 情况 的 朋友 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 围炉 聚餐 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

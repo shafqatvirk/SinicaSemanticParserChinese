@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="collector"/>
+      <role argnum="1" argrole="thing collected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 国家)
+			 (NN 开发)
+			 (NN 银行))
+	      (VP (PP-TMP (P 自)
+			  (LCP (NP (NN 成立))
+			       (LC 以来)))
+		  (PU ，)
+		  (PP-BNF (P 为)
+			  (NP (NN 国家)
+			      (NN 重点)
+			      (NN 建设)
+			      (NN 项目)))
+		  (VP (VV 筹集)
+		      (AS 了)
+		      (NP-OBJ (CLP (ADJP (JJ 大))
+				   (CLP (M 批)))
+			      (NP (NN 资金)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国家 开发 银行 
+	  </arg>
+	  <arg n="1">
+	  大 批 资金 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 成立 以来 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 国家 重点 建设 项目 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

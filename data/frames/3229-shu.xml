@@ -1,0 +1,232 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 属 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity predicated"/>
+      <role argnum="1" argrole="predicative"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (LCP (NP-PN (NR 西峡)
+					   (NN 盆地))
+				    (LC 中))
+			       (QP (CD 大量))
+			       (ADJP (JJ 珍贵))
+			       (NP (NN 恐龙蛋)
+				   (NN 化石)))
+			   (DEG 的))
+		      (NP (NN 发现)))
+	      (PU ，)
+	      (VP (ADVP (AD 已))
+		  (VP (VV 属)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (NP-LOC (NN 世界))
+				  (VP (VA 罕见))))))) 
+	  </parse>
+	  <arg n="0">
+	  西峡 盆地 中 大量 珍贵 恐龙蛋 化石 的 发现 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 世界 罕见 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 今年))
+				      (VP (ADVP (AD 最))
+					  (VP (VA 大)))))
+			      (DEC 的)))
+		      (NP (NN 赛事)))
+	      (VP (ADVP (AD 当))
+		  (VP (VV 属)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (PP-LOC (P 在)
+						      (NP-PN (NR 法国)))
+					      (VP (VV 进行))))
+				      (DEC 的)))
+			      (NP (NN 世界杯赛)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 今年 最 大 的 赛事 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 在 法国 进行 的 世界杯赛 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  当 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity belonging to arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-BNF (P 为)
+					  (NP (NP-PN (NR 唐家河))
+					      (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (ADVP (AD 分))
+							      (VP (VV 属)
+								  (NP-OBJ (QP (CD 六)
+									      (CLP (M 个)))
+									  (NP (NN 系))))))
+						      (DEC 的)))
+					      (QP (CD 三十七)
+						  (CLP (M 只)))
+					      (ADJP (JJ 大))
+					      (NP (NN 熊猫))))
+				  (VP (VV 建立)
+				      (NP-OBJ (-NONE- *T*-2)))))
+			  (DEC 的)))
+		  (NP (NN 户籍)
+		      (NN 管理)
+		      (NN 档案))) 
+	  </parse>
+	  <arg n="0">
+	  六 个 系 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  分 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 不论))
+		      (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 塌下)))
+					  (DEC 的)))
+				  (NP (NN 斜坡)))
+			  (NP-SBJ (NN 业权))
+			  (VP (NP-FOC-2 (PN 谁))
+			      (VP (VV 属)
+				  (NP-OBJ (-NONE- *-2))))))
+	      (PU ，)
+	      (NP-SBJ (PN 他们))
+	      (VP (ADVP (AD 均))
+		  (PP-DIR (P 向)
+			  (NP (NP (ADJP (JJ 紧急))
+				  (NP (NN 救援)))
+			      (NP (NN 队伍))))
+		  (NP-ADV (NN 即场))
+		  (VP (VV 提供)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 土力))
+				       (NP (NN 工程)))
+				   (DEG 的))
+			      (NP (NN 专业)
+				  (NN 意见)
+				  (CC 和)
+				  (NN 指导)))))) 
+	  </parse>
+	  <arg n="0">
+	  *-2 	  
+	  </arg>
+	  <arg n="1" f="pse">
+	  业权 	  
+	  </arg>
+	  <arg n="1" f="psr">
+	  *OP* *T*-1 塌下 的 斜坡 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (IP (NP-SBJ (NN 国内)
+			      (NN 贸易部))
+		      (VP (MSP 所)
+			  (VP (VV 属)
+			      (NP-OBJ (-NONE- *T*-1))))))
+	      (NP-PN (NR 中国)
+		     (NN 糖业)
+		     (NN 酒类)
+		     (NN 集团)
+		     (NN 公司))) 
+	  </parse>
+	  <arg n="0">
+	  国内 贸易部 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-2 (-NONE- *OP*))
+		  (IP (NP-TPC (-NONE- *T*-2))
+		      (NP-PN-SBJ (NN 国务院)
+				 (NN 侨办))
+		      (VP (MSP 所)
+			  (VP (VV 属)))))
+	      (NP-PN (NR 中国)
+		     (NN 海外)
+		     (NN 交流)
+		     (NN 协会))) 
+	  </parse>
+	  <arg n="0">
+	  国务院 侨办 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

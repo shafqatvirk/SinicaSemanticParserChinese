@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开拓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing opened up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VP (VP (VV 整顿)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (CC 和)
+			  (VP (VV 规范)
+			      (NP-OBJ-1 (NN 市场)
+					(NN 秩序))))
+		      (PU ，)
+		      (VP (VV 鼓励)
+			  (NP-OBJ (NN 企业))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 积极))
+				  (VP (VV 开拓)
+				      (NP-OBJ (NN 海内外)
+					      (NN 市场)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  海内外 市场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

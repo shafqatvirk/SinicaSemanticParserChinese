@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 违宪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (IP-SBJ (NP-PN-SBJ (NN 行政院))
+		      (VP (VV 宣布)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 停建)
+				      (NP-OBJ (NN 核四))))))
+	      (VP (ADVP-WH (AD 是否))
+		  (VP (VV 违宪)))) 
+	</parse>
+	<arg n="0">
+	行政院 宣布 *PRO* 停建 核四 
+	</arg>
+	<arg n="m" f="adv">
+	是否 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 辟 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 opens up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 来到)
+			(NP-PN-OBJ (NP-PN-APP (NR 澳洲))
+				   (DP (DT 这)
+				       (CLP (M 个)))
+				   (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-TPC (-NONE- *T*-1))
+					       (IP (IP (NP-SBJ (NN 地))
+						       (VP (VA 大)))
+						   (IP (NP-SBJ (NN 人))
+						       (VP (VA 稀)))))
+					   (DEC 的)))
+				   (NP (NN 国家)))))
+	    (PU ，)
+	    (NP-SBJ (PN 我们))
+	    (VP (VP (NP-TMP (NN 天天))
+		    (VP (VV 享受)
+			(NP-OBJ (NN 阳光)
+				(PU 、)
+				(NN 空气)
+				(PU 、)
+				(NN 水))))
+		(PU ，)
+		(VP (VV 学习)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 和)
+				    (NP (NN 大自然)))
+				(VP (VV 做)
+				    (NP-OBJ (NN 朋友))))))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (NP (NN 自家)
+				(NN 後院)))
+		    (VP (VV 辟)
+			(AS 了)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 块)))
+				(NP (NN 菜圃)))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 学习)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VRD (VV 做)
+					     (VV 起))
+					(NP-OBJ (NN 老农)))
+				    (VP (VV 来)))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	一 块 菜圃 
+	</arg>
+	<arg n="m" f="loc">
+	在 自家 後院 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 来到 澳洲 这 个 *OP* *T*-1 地 大 人 稀 的 国家 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

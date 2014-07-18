@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing borrowed"/>
+      <role argnum="2" argrole="loan provider"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (VV 实施)
+		      (NP-TTL-OBJ (PU 《)
+				  (IP-APP (NP-SBJ (NN 境内)
+						  (NN 机构))
+					  (VP (VV 借用)
+					      (NP-OBJ (NN 国际)
+						      (NN 商业)
+						      (NN 贷款))))
+				  (NP (NN 管理)
+				      (NN 办法))
+				  (PU 》)))) 
+	  </parse>
+	  <arg n="0">
+	  境内 机构 
+	  </arg>
+	  <arg n="1">
+	  国际 商业 贷款 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-5 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-5))
+			      (VP (PP-DIR (P 对)
+					  (NP (NN 外)))
+				  (ADVP (AD 直接))
+				  (VP (VV 借用)
+				      (NP-OBJ (NN 国际)
+					      (NN 商业)
+					      (NN 贷款)))))
+			  (DEC 的)))
+		  (NP (ADJP (JJ 非))
+		      (NP (NN 金融)
+			  (NN 企业)))
+		  (NP (NN 法人))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-5 
+	  </arg>
+	  <arg n="1">
+	  国际 商业 贷款 
+	  </arg>
+	  <arg n="2">
+	  对 外 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直接 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

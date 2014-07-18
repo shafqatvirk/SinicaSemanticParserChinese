@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 耗用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="consumer"/>
+      <role argnum="1" argrole="thing arg0 consumes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NN 比赛)
+			  (NN 期间))
+		  (VP (VV 耗用)
+		      (NP-OBJ (NN 纸张))
+		      (QP-EXT (ADVP (AD 超过))
+			      (QP (CD 四万)
+				  (CLP (M 张))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  纸张 
+	  </arg>
+	  <arg n="1" f="qty">
+	  超过 四万 张 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  比赛 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

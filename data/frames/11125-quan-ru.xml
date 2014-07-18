@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 圈入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 encircles arg1 in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-TMP (NT 如今))
+	    (PU ，)
+	    (NP-SBJ (NN 野牛)
+		    (CC 和)
+		    (NN 印地安人))
+	    (VP (ADVP (AD 都))
+		(VP (SB 被)
+		    (VP (VV 圈入)
+			(NP-OBJ (NN 保留区)))))) 
+	</parse>
+	<arg n="1">
+	野牛 和 印地安人 
+	</arg>
+	<arg n="2">
+	保留区 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

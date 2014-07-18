@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 辞去 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 resigns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 随後))
+	    (NP-PN-SBJ (NR 胡志强))
+	    (VP (ADVP (AD 也))
+		(VP (VV 宣布)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 辞去)
+				    (NP-OBJ (NP (NN 外交)
+						(NN 部长))
+					    (QP (CD 一))
+					    (NP (NN 职))))
+				(PU ，)
+				(VP (ADVP (AD 转))
+				    (VP (VV 任)
+					(NP-OBJ (DNP (NP (NP-APP (ADJP (JJ 副))
+								 (NP (NN 总统)))
+							 (NP-PN (NR 连战)))
+						     (DEG 的))
+						(NP (NN 竞选))
+						(ADJP (JJ 总))
+						(NP (NN 干事)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	外交 部长 一 职 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

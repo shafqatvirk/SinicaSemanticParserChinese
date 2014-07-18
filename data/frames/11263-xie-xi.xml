@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 歇息 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity taking a rest"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 保卫)
+				    (NP-OBJ (NP-PN (NR 台湾))
+					    (NP (NN 土地)))))
+			    (DEG 的)))
+		    (ADJP (JJ 巨))
+		    (NP (NN 树)))
+	    (VP (ADVP (AD 总算))
+		(VP (VV 可以)
+		    (VP (ADVP (AD 稍事))
+			(VP (VV 歇息)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 保卫 台湾 土地 的 巨 树 
+	</arg>
+	<arg n="m" f="adv">
+	稍事 
+	</arg>
+	<arg n="m" f="adv">
+	总算 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摔 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 throws"/>
+    <role argnum="2" argrole="place arg1 is thrown to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (LCP-LOC (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (ADVP (AD 不))
+				 (VP (VV 甘)
+				     (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					     (VP (PU 「)
+						 (VV 受骗)
+						 (PU 」))))))
+			 (LC 下))
+		(PU ，)
+		(VP (VP (VA 忿))
+		    (VP (MSP 而)
+			(VP (BA 把)
+			    (IP-OBJ (NP-SBJ (NN 简介))
+				    (VP (VV 摔)
+					(PP (P 在)
+					    (NP (NN 地上)))))))))) 
+	</parse>
+	<arg n="0">
+	许多 人 
+	</arg>
+	<arg n="1">
+	简介 
+	</arg>
+	<arg n="2">
+	在 地上 
+	</arg>
+	<arg n="m" f="loc">
+	*PRO* 不 甘 *PRO* 「 受骗 」 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

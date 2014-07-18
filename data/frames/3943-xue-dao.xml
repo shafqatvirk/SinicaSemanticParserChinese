@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 学到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing learned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 小青))
+	      (VP (VV 说)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 学成)))
+				       (LC 以后))
+			      (ADVP (AD 只))
+			      (VP (VV 想)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VP (VV 回到)
+						      (NP-PN-OBJ (NR 台北)))
+						  (VP (VV 当)
+						      (NP-OBJ (QP (CD 一)
+								  (CLP (M 名)))
+							      (NP (NN 民族)
+								  (NN 舞蹈))
+							      (NP (NN 教师)))))
+					      (PU ，)
+					      (VP (BA 把)
+						  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+								      (CP (IP (NP-SBJ (-NONE- *pro*))
+									      (VP (PP-LOC (P 在)
+											  (NP-PN (NR 北京)))
+										  (VP (VV 学到)
+										      (NP-OBJ (-NONE- *T*-1)))))
+									  (DEC 的))))
+							  (VP (VV 传给)
+							      (NP-OBJ (DP (DT 那些))
+								      (CP (WHNP-2 (-NONE- *OP*))
+									  (CP (IP (NP-SBJ (-NONE- *T*-2))
+										  (VP (VP (VV 热爱)
+											  (NP-OBJ (NN 民族)
+												  (NN 舞蹈)))
+										      (CC 又)
+										      (VP (ADVP (AD 无法))
+											  (VP (VSB (VV 前来)
+												   (VV 学习))))))
+									      (DEC 的)))
+								      (NP (NN 孩子们))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 北京 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

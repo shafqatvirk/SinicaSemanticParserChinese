@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 缘自 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 originates from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (PN 它))
+		(VP (VV 缘自)
+		    (IP-OBJ (NP-APP (CP (WHNP-3 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-3))
+						(VP (VP-FOC (VV 传)
+							    (NP-OBJ (PN 之)))
+						    (VP (VA 久远))))
+					    (DEC 的)))
+				    (NP (NN 民间)
+					(NN 故事) ))
+			    (IP-TTL (PU 《)
+				    (NP-PN-SBJ (NR 刘海) )
+				    (VP (VV 戏)
+					(NP-OBJ (ADJP (JJ 金))
+						(NP (NN 蟾) )))
+				    (PU 》))))) 
+	</parse>
+	<arg n="0">
+	它 
+	</arg>
+	<arg n="1">
+	*OP* *T*-3 传 之 久远 的 民间 故事 《 刘海 戏 金 蟾 》 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 长出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing growing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-OBJ (IP (LCP-TMP (QP (CD 上万)
+				   (CLP (M 年)))
+			       (LC 来))
+		      (PU ，)
+		      (NP-TPC (NN 桧木))
+		      (IP (IP (NP-SBJ (PN 自))
+			      (VP (VV 生)))
+			  (IP (NP-SBJ (PN 自))
+			      (VP (VV 长)))))
+		  (PU ，)
+		  (IP-Q (NP-SBJ (-NONE- *pro*))
+			(VP (ADVP (AD 又))
+			    (ADVP-WH (AD 何))
+			    (VP (VP (VV 需)
+				    (NP-OBJ (NN 人类)
+					    (NN 帮助)))
+				(VP (ADVP (AD 才))
+				    (VP (VV 能)
+					(VP (VV 长出)
+					    (NP-OBJ (NN 幼苗))))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*pro* 
+	</arg>
+	<arg n="0" f="pse">
+	幼苗 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="adv">
+	何 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 曾))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (VV 提出)
+				(IP-OBJ (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 就))
+					    (VP (VC 是)
+						(IP-PRD (NP-SBJ (NN 眼睛))
+							(VP (ADVP (AD 向外))
+							    (VP (VV 长出)))))))))))) 
+	</parse>
+	<arg n="0">
+	眼睛 
+	</arg>
+	<arg n="m" f="dir">
+	向外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重演 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing being repeated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 要求)
+	      (NP-PN-OBJ (NR 联合国)
+			 (NN 安理会))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 防止)
+		      (NP-OBJ (ADJP (JJ 类似))
+			      (NP (NN 事件)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 重演)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

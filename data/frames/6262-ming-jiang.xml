@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 明讲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 states openly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 排除)
+			(NP-PN-OBJ (NR 台湾))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (ADVP (AD 未))
+		    (VP (VV 明讲)
+			(IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP-WH (AD 是否))
+				      (VP (BA 将)
+					  (IP-OBJ (NP-PN-SBJ (NR 台湾))
+						  (VP (VV 纳入)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 是否 将 台湾 纳入 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DP (DT 这)
+			(CLP (M 种)))
+		    (NP (NN 事情)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不))
+		(VP (VV 用)
+		    (VP (VV 明讲))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	这 种 事情 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

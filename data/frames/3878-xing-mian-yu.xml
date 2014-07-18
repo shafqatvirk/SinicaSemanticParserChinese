@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 幸免于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing luckily escaped"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NP-PN (NR 巴伦西亚))
+		      (NP (NN 地区)))
+	      (VP (PP-PRP (P 因)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 执行)
+				      (NP-OBJ (DP (DT 这)
+						  (QP (CD 一)))
+					      (NP (PU “)
+						  (DNP (NP (NN 铁))
+						       (DEG 的))
+						  (NP (NN 法则))
+						  (PU ”))))
+				  (VP (MSP 而)
+				      (VP (VV 贮存)
+					  (AS 了)
+					  (NP-OBJ (DNP (QP (CD 两)
+							   (CLP (M 年)))
+						       (DEG 的))
+						  (NP (NN 用水))))))))
+		  (PU ，)
+		  (ADVP (AD 从而))
+		  (VP (VV 幸免于)
+		      (NP-OBJ (DP (DT 这)
+				  (CLP (M 场)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (-NONE- *pro*))
+					  (VP (QP-ADV (CD 百)
+						      (CLP (M 年)))
+					      (ADVP (AD 不))
+					      (VP (VV 遇))))
+				      (DEC 的)))
+			      (NP (NN 旱灾)))))) 
+	  </parse>
+	  <arg n="0">
+	  巴伦西亚 地区 
+	  </arg>
+	  <arg n="1">
+	  这 场 *OP* *T*-1 *pro* 百 年 不 遇 的 旱灾 
+	  </arg>
+	  <arg n="m" f="adv">
+	  从而 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 *PRO* 执行 这 一 “ 铁 的 法则 ” 而 贮存 了 两 年 的 用水 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

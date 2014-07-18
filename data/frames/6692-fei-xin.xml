@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 费心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 takes the trouble to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 从此))
+	    (NP-PN-SBJ (NR 周)
+		       (NN 先生) )
+	    (VP (VP (VV 认清)
+		    (AS 了)
+		    (NP-OBJ (DNP (NP (PN 自己))
+				 (DEG 的))
+			    (NP (NN 定位) )))
+		(PU ，)
+		(VP (ADVP (AD 不))
+		    (ADVP (AD 再))
+		    (VP (VV 费心)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PU 「)
+				    (VV 取悦)
+				    (PU 」)
+				    (NP-OBJ (ADJP (JJ 年轻))
+					    (NP (NN 职员) )))))))) 
+	</parse>
+	<arg n="0">
+	周 先生 
+	</arg>
+	<arg n="1">
+	*PRO* 「 取悦 」 年轻 职员 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	从此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-ADV (CD 一)
+		    (CLP (M 来)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 要)
+		(VP (ADVP (AD 多))
+		    (VP (VV 费心))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	多 
+	</arg>
+	<arg n="m" f="dis">
+	一 来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

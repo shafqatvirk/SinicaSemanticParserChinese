@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 直驱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 goes directly to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 原来))
+		  (ADVP (AD 只))
+		  (VP (VC 是)
+		      (NP-PRD (DNP (LCP (NP (CP-APP (IP (NP-SBJ (NN 游人))
+							(VP (VV 直驱)
+							    (NP-PN-OBJ (NR 垦丁)))))
+					    (NP (NN 途)))
+					(LC 中))
+				   (DEG 的))
+			      (ADJP (JJ 小))
+			      (NP (NN 插曲)))))) 
+	  </parse>
+	  <arg n="0">
+	  游人 
+	  </arg>
+	  <arg n="1">
+	  垦丁 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

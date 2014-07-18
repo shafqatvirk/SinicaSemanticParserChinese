@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 模糊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity made fuzzy"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 模糊)
+			  (AS 了)
+			  (NP-OBJ (NN 脸孔))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 维纳斯))
+	      (VP (ADVP-WH (AD 是否))
+		  (ADVP (AD 还))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 美丽)))
+				      (DEC 的)))
+			      (NP (NN 象徵)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	脸孔 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (ADJP (JJ 私))
+			     (NP (NN 领域)))
+			 (DEG 的))
+		    (NP (NN 界线)))
+	    (VP (VA 模糊))) 
+	</parse>
+	<arg n="1">
+	私 领域 的 界线 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

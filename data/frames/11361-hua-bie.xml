@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 话别 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 says good-bye to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 好多))
+		    (NP (NN 人)))
+	    (VP (VV 等)
+		(AS 著)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (PP (P 和)
+				(NP-PN (NR 玛丽安)))
+			    (VP (VV 话别)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	和 玛丽安 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

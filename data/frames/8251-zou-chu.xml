@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奏出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing (music) described"/>
+      <role argnum="1" argrole="entity arg0 depicts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 克尔特))
+			  (ADJP (JJ 主))
+			  (NP (NN 旋律)))
+		  (VP (IP-ADV (NP-SBJ (NN 炫技))
+			      (VP (VA 似)))
+		      (VP (VV 奏出)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 湍急)))
+					  (DEC 的)))
+				  (NP (NN 飞鼠)
+				      (NN 溪)))))) 
+	  </parse>
+	  <arg n="0">
+	  克尔特 主 旋律 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 湍急 的 飞鼠 溪 
+	  </arg>
+	  <arg n="m" f="adv">
+	  炫技 似 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

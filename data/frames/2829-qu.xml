@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity going"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 可以)
+		      (VP (PP-MNR (P 用)
+				  (NP (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (ADVP (AD 更))
+						      (VP (VA 低廉))))
+					      (DEC 的)))
+				      (NP (NN 价格))))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NN 货品))
+				      (VP (VP (VV 卖到)
+					      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-2))
+								  (VP (PP-MNR (P 以)
+									      (NP (NN 美元)))
+								      (VP (VV 计价))))
+							      (DEC 的)))
+						      (NP (NN 国际)
+							  (NN 市场))))
+					  (VP (VV 去)))))))) 
+	  </parse>
+	  <arg n="0">
+	  货品 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (ADVP (AD 到时候))
+		  (NP-SBJ (PN 我))
+		  (VP (ADVP (AD 一定))
+		      (VP (VV 要)
+			  (VP (VP (VV 去)
+				  (NP-OBJ (NN 现场)))
+			      (VP (VV 看看)
+				  (NP-OBJ (DNP (NP (DP (DT 这)
+						       (CLP (M 位)))
+						   (ADJP (NP (NN 世界))
+							 (ADJP (JJ 顶级)))
+						   (NP (NN 歌手)))
+					       (DEG 的))
+					  (NP (NN 风采)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 	  
+	  </arg>
+	  <arg n="1">
+	  现场 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一定 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  到时候 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 要)
+		      (NP-OBJ (NN 寻常人))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 去)
+			      (VP (VV 推销)
+				  (NP-OBJ (DP (DT 这)
+					      (CLP (M 类)))
+					  (NP (NN 商品)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="thing got rid of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  *PRO*	  
+	  </arg>
+	  <arg n="1">
+	  角质          
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

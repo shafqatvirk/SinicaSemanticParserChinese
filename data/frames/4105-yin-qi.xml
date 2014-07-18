@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 引起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 迅速))
+				      (VP (VV 崛起))))
+			      (DEC 的)))
+		      (NP (NN 金三角)))
+	      (VP (VV 引起)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP (NN 境外)
+				   (NN 客商))
+			       (DEG 的))
+			  (NP (NN 注视))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(金三角) 迅速 崛起 的 金三角 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  境外 客商 的 注视 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 安玻人))
+	      (VP (VP (PP-LOC (P 在)
+			      (LCP (NP (NP (QP (CD 二)
+					       (CLP (M 期)))
+					   (NP (NN 工程)))
+				       (NP (NN 建设)))
+				   (LC 中)))
+		      (PU ，)
+		      (VP (VV 创造)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 引起)
+						  (IP-OBJ (NP-SBJ (NP (NN 国内外))
+								  (ADJP (JJ 同))
+								  (NP (NN 行业)))
+							  (VP (ADVP (AD 广泛))
+							      (VP (VV 注目))))))
+					  (DEC 的)))
+				  (QP (CD 多)
+				      (CLP (M 项)))
+				  (NP (NN 奇迹)))))
+		  (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(多项奇迹) 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  国内外 同 行业 广泛 注目 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

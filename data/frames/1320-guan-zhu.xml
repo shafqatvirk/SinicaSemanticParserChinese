@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 管住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="authority"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 要)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 真正))
+				      (VP (VV 实现)
+					  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							      (VP (VV 让)
+								  (NP-PN-OBJ (NR 太湖))
+								  (IP (NP-SBJ (-NONE- *PRO*))
+								      (VP (VRD (VV 变)
+									       (VA 清))))))
+							  (DEC 的))
+						  (NP (NN 目标))))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 必须)
+		  (VP (VV 管住)
+		      (NP-OBJ (DNP (NP (NN 城镇)
+				       (NN 居民))
+				   (DEG 的))
+			      (NP (NN 生活)
+				  (NN 污水)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  城镇 居民 的 生活 污水 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  *PRO* 要 *PRO* 真正 实现 *PRO* 让 太湖 *PRO* 变 清 的 目标 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

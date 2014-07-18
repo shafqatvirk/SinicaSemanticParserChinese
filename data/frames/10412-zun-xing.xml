@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遵行 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 abides by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-3 (IP-ADV (NP-SBJ (NN 政府))
+			  (VP (ADVP (CS 既))
+			      (VP (VV 提出)
+				  (NP-OBJ (NP (PU 「)
+					      (NN 精省)
+					      (PU 」))
+					  (NP (NN 政策))))))
+		  (PU ，)
+		  (NP-SBJ (PN 我们))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 可能)
+			  (VP (ADVP (AD 不))
+			      (VP (VV 遵行)))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	政府 既 提出 「 精省 」 政策 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

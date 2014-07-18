@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 展露 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 shows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这些))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-LOC (NN 中原))
+				    (VP (VA 罕见))))
+			    (DEC 的)))
+		    (NP (NN 人像)
+			(CC 或)
+			(NN 神像)))
+	    (PU ，)
+	    (VP (DVP (VP (VA 神秘))
+		     (DEV 地))
+		(VP (VV 展露)
+		    (AS 著)
+		    (NP-OBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-SBJ (ADJP (JJ 古))
+						(NP-PN (NR 蜀)))
+					(VP (NP-TMP (-NONE- *T*-2))
+					    (VP (VV 繁盛)))))
+				(NP (NN 时期)))
+			    (NP (NN 蜀国人))
+			    (CP (WHNP-3 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-3))
+					(VP (VV 多变)))
+				    (DEC 的)))
+			    (NP (NN 装扮)
+				(CC 及)
+				(NN 发型)))))) 
+	</parse>
+	<arg n="0">
+	这些 *OP* *T*-1 中原 罕见 的 人像 或 神像 
+	</arg>
+	<arg n="1">
+	*OP* 古 蜀 *T*-2 繁盛 时期 蜀国人 *OP* *T*-3 多变 的 装扮 及 发型 
+	</arg>
+	<arg n="m" f="adv">
+	神秘 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

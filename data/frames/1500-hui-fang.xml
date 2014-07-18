@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 回访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="visitor"/>
+      <role argnum="1" argrole="place visited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 年中))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NR 美国))
+			      (NP (NN 总统)))
+		      (NP-PN (NR 克林顿)))
+	      (VP (VV 回访)
+		  (NP-PN-OBJ (NR 中国)))) 
+	  </parse>
+	  <arg n="0">
+	  美国 总统 克林顿 
+	  </arg>
+	  <arg n="1">
+	  中国 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  年中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

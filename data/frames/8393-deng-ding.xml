@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 登顶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 明明))
+		  (VP (VV 觉得)
+		      (IP-OBJ (IP (NP-SBJ (PN 自己))
+				  (VP (ADVP (AD 犹))
+				      (VP (VV 当)
+					  (NP-OBJ (NN 盛年)))))
+			      (PU ，)
+			      (IP (NP-SBJ (NN 人生))
+				  (VP (ADVP (AD 尚))
+				      (ADVP (AD 未))
+				      (VP (VV 登顶)))))))) 
+	  </parse>
+	  <arg n="0">
+	  人生 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尚 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

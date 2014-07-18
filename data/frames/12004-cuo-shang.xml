@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 磋商 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 negotiates about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 双方))
+	      (VP (VP (PP (P 就)
+			  (NP (ADJP (JJ 有关))
+			      (ADJP (JJ 具体))
+			      (NP (NN 问题))))
+		      (VP (VV 进行)
+			  (AS 了)
+			  (NP-OBJ (NN 磋商))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 达成)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 广泛)))
+				      (DEC 的)))
+			      (NP (NN 一致)))))) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <arg n="1">
+	  就 有关 具体 问题 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

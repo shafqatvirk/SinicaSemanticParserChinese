@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 leaves behind"/>
+      <role argnum="2" argrole="entity arg1 is left to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 遗)
+			      (NP-IO (NN 子))
+			      (NP-OBJ (NN 黄金))
+			      (NP-EXT (ADJP (JJ 满))
+				      (NP (NN 赢)))))
+		  (PU ，)
+		  (VP (ADVP (AD 不))
+		      (VP (VV 如)
+			  (NP-OBJ (QP (CD 一))
+				  (NP (NN 经)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  黄金 
+	  </arg>
+	  <arg n="1" f="qty">
+	  满 赢 
+	  </arg>
+	  <arg n="2">
+	  子 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

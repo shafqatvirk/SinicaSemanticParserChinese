@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 磨去 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 rubs off"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 就))
+		    (PP-LOC (P 在)
+			    (NP (NN 旧书摊)))
+		    (VP (VV 寻得)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 方)))
+				(CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 适宜)))
+					(DEC 的)))
+				(ADJP (JJ 旧))
+				(NP (NN 章子)))))
+		(PU ，)
+		(VP (VV 请)
+		    (NP-PN-OBJ (NR 壮老))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (BA 将)
+			    (IP-OBJ (NP-SBJ (DNP (NP (NN 上面))
+						 (DEG 的))
+					    (NP (NN 印文)))
+				    (VP (VP (VV 磨去))
+					(VP (ADVP (AD 重))
+					    (VP (VV 刻)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	上面 的 印文 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

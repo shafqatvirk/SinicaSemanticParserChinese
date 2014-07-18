@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 莫属 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 belongs to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(NP (CP-APP (IP (NP-SBJ (NP-PN (NR 美国))
+							(NP (NN 影迷)))
+						(VP (VV 愿意)
+						    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							    (VP (VP (VV 排队)
+								    (QP-EXT (CD 数)
+									    (CLP (M 小时))))
+								(VP (VV 买)
+								    (NP-OBJ (QP (CLP (M 张)))
+									    (NP (NN 首映)
+										(NN 票))))))))
+					    (DEC 的))
+				    (NP (NN 热情))))
+			(VP (MSP 来)
+			    (VP (VV 看)))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NT 今年))
+			 (DEG 的))
+		    (NP (NN 行销)
+			(NN 高手)))
+	    (VP (VP (VC 非)
+		    (NP-TTL-PRD (PU 《)
+				(NP (NN 星际)
+				    (NN 大战))
+				(QP (OD 首)
+				    (CLP (M 部)))
+				(NP (NN 曲))
+				(PU 》)))
+		(VP (VV 莫属)))) 
+	</parse>
+	<arg n="0">
+	今年 的 行销 高手 
+	</arg>
+	<arg n="1">
+	《 星际 大战 首 部 曲 》 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 从 美国 影迷 愿意 *PRO* 排队 数 小时 买 张 首映 票 的 热情 来 看 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

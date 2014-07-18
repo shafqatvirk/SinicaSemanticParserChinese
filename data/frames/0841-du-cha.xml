@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 督查 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="inspecter"/>
+      <role argnum="1" argrole="thing inspected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP (NP-PN-APP (NR 江苏)
+					 (PU 、)
+					 (NR 浙江)
+					 (CC 和)
+					 (NR 上海))
+			      (DP (DT 各))
+			      (NP (NN 地)))
+			  (NP (NN 党政)
+			      (CC 及)
+			      (NN 环保)
+			      (NN 部门)))
+		      (NP (NN 人员)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 赴)
+			  (NP-OBJ (NN 现场)))
+		      (VP (VV 督查)
+			  (NP-OBJ (NN 企业)
+				  (NN 达标)
+				  (NN 排放)
+				  (NN 情况)
+				  (CC 和)
+				  (NN 沿湖)
+				  (NN 水质)
+				  (NN 状况)))))) 
+	  </parse>
+	  <arg n="0">
+	  江苏 、 浙江 和 上海 各 地 党政 及 环保 部门 人员 
+	  </arg>
+	  <arg n="1">
+	  企业 达标 排放 情况 和 沿湖 水质 状况 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

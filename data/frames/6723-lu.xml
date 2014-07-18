@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 录 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 records"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 保有)
+			    (NP-OBJ (DNP (NP (NN 语音)
+					     (PU 、)
+					     (NN 语调))
+					 (DEG 的))
+				    (NP (NN 生动)
+					(NN 鲜活))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 高行健))
+	    (VP (ADVP (AD 往往))
+		(ADVP (AD 先))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(IP (NP-SBJ (-NONE- *pro*))
+					    (VP (LCP-LOC (NP (NN 心))
+							 (LC 中))
+						(VP (VP (MSP 所)
+							(VP (VV 思)
+							    (NP-OBJ (-NONE- *RNR*-2))))
+						    (VP (MSP 所)
+							(VP (VV 想)
+							    (NP-OBJ-2 (-NONE- *T*-1)))))))))
+			    (VP (VRD (PU 「)
+				     (VV 说)
+				     (PU 」)
+				     (VV 出来))
+				(PU 、)
+				(VRD (VV 录)
+				     (VV 下来))))))) 
+	</parse>
+	<arg n="0">
+	高行健 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 心 中 所 思 *RNR*-2 所 想 *T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<arg n="m" f="adv">
+	往往 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 保有 语音 、 语调 的 生动 鲜活 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (DNP (NP-PN (NR 紫薇))
+				 (DEG 的))
+			    (QP (OD 第一)
+				(CLP (M 张)))
+			    (NP (NN 唱片)))
+		    (NP-TTL (PU 『)
+			    (NP-PN (NR 绿岛))
+			    (ADJP (JJ 小))
+			    (NP (NN 夜曲))
+			    (PU 』)))
+	    (VP (ADVP (AD 就))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (PN 我们))
+					(VP (VV 录)
+					    (NP-OBJ (-NONE- *T*-1))))
+				    (DEC 的))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

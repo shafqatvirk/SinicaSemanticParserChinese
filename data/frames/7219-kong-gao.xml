@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 控告 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="accuser"/>
+    <role argnum="1" argrole="accused"/>
+    <role argnum="2" argrole="offense"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 美国)
+		       (NN 民权)
+		       (NN 联盟))
+	    (VP (ADVP (AD 更))
+		(ADVP (AD 一举))
+		(VP (VV 控告)
+		    (NP-OBJ (NN 联邦)
+			    (NN 政府))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VA 违宪)))))) 
+	</parse>
+	<arg n="0">
+	美国 民权 联盟 
+	</arg>
+	<arg n="1">
+	联邦 政府 
+	</arg>
+	<arg n="2">
+	*PRO* 违宪 
+	</arg>
+	<arg n="m" f="adv">
+	一举 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

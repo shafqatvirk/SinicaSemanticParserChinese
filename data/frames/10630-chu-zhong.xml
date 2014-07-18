@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出众 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (NP-PN (NR 吴宗升))
+		    (NP (NN 姊弟)))
+	    (VP (PP-LOC (P 在)
+			(NP (DP (DT 这))
+			    (ADJP (JJ 滨海))
+			    (ADJP (JJ 小))
+			    (NP (NN 镇))))
+		(PU ，)
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-1))
+					(NP-SBJ (NN 气质))
+					(VP (VV 出众)))
+				    (DEC 的)))
+			    (NP (PU 「)
+				(NN 读书)
+				(NN 人)
+				(PU 」)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	气质 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

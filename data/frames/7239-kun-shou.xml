@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 困守 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 is besieged in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 高雄)
+		       (CC 和)
+		       (NR 台中))
+	    (VP (VP (ADVP (AD 空))
+		    (VP (VE 有)
+			(NP-OBJ (NN 良港))))
+		(VP (ADVP (AD 却))
+		    (VP (VP (VV 困守)
+			    (NP-OBJ (NN 围城)))
+			(PU ，)
+			(VP (PU 「)
+			    (VPT (VV 走)
+				 (AD 不)
+				 (VV 出去))
+			    (PU 」)))))) 
+	</parse>
+	<arg n="0">
+	高雄 和 台中 
+	</arg>
+	<arg n="1">
+	围城 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

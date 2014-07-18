@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 稳定化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 stabilizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 桧木))
+		      (VP (VV 成)
+			  (NP-OBJ (NN 林))))
+	      (VP (VV 代表)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-4))
+							  (VP (VV 滚动)))))
+					      (NP (NN 山河)))
+				      (VP (VV 稳定化)))
+				  (DEC 的))
+			  (NP (NN 过程))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-4 滚动 山河 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

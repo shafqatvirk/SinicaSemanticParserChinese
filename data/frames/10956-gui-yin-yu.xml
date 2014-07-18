@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 归因於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="entity arg0 attributes arg1 to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (VV 喜欢)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (BA 将)
+			    (IP-OBJ (NP-SBJ (NP (DP (DT 这)
+						    (CLP (M 群)))
+						(NP (NN 人)))
+					    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VCD (VA 辛勤)
+								 (VA 刻苦))))
+						    (DEC 的))
+					    (NP (NN 工作)
+						(NN 精神)))
+				    (PU ，)
+				    (VP (VV 归因於)
+					(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (PN 他们))
+							    (VP (MSP 所)
+								(VP (VV 继承)
+								    (NP-OBJ (-NONE- *T*-2)))))
+							(DEC 的)))
+						(NP (NN 客家)
+						    (NN 传统))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	这 群 人 *PRO* 辛勤 刻苦 的 工作 精神 
+	</arg>
+	<arg n="2">
+	*OP* 他们 所 继承 *T*-2 的 客家 传统 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

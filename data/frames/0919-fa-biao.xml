@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发表 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="audience"/>
+      <role argnum="3" argrole="subject matter"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (NN 酒会))
+			   (LC 上)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 蔡)
+			 (NN 大使))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 一向))
+					      (VP (VV 关心)
+						  (NP-OBJ (NN 祖国)
+							  (NN 建设)))))
+				      (DEC 的)))
+			      (NP (NN 海外)
+				  (NN 父老兄弟))))
+		  (VP (VV 发表)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (NN 热情))
+					  (VP (VV 洋溢)))
+				      (DEC 的)))
+			      (NP (NN 讲话)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  蔡 大使 	  
+	  </arg>
+	  <arg n="2">
+	  对 *OP* *T*-2 一向 关心 祖国 建设 的 海外 父老兄弟 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* *T*-1 热情 洋溢 的 讲话 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 日本)
+				 (NN 外务省))
+			  (NP (NN 发言人)))
+		  (VP (PP-DIR (P 就)
+			      (NP (NP-PN (NR 东史郎))
+				  (NP (NN 诉讼案))))
+		      (VP (VV 发表)
+			  (NP-OBJ (NN 谈话))))) 
+	  </parse>
+	  <arg n="0">
+	  日本 外务省 发言人 	  
+	  </arg>
+	  <arg n="3">
+	  就 东史郎 诉讼案 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  谈话 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP (NP-PN (NR 波罗的海))
+			      (NP (QP (CD 三))
+				  (NP (NN 国))))
+			  (NP (NN 总统)))
+		  (VP (PP (P 就)
+			  (IP (NP-PN-SBJ (NR 俄))
+			      (VP (VV 撤军))))
+		      (VP (VV 发表)
+			  (NP-OBJ (NN 声明))))) 
+	  </parse>
+	  <arg n="0">
+	  波罗的海 三 国 总统 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  声明 	  
+	  </arg>
+	  <arg n="3">
+	  就 俄 撤军 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP (NP (NT 九七年))
+			      (NP (NT 上半年)
+				  (CC 及)
+				  (NT 六月份)))
+			  (NP (NN 土地)
+			      (NN 注册)
+			      (NN 数字)))
+		  (VP (VV 发表))) 
+	  </parse>
+	  <arg n="1">
+	  九七年 上半年 及 六月份 土地 注册 数字 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

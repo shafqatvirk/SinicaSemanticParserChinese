@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贬值 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="currency"/>
+    <role argnum="2" argrole="extent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (IP (NP-SBJ (NP-PN (NR 刚果))
+                  (NP (NN 法郎)))
+          (VP (IP-ADV (NP (-NONE- *PRO*))
+                      (VP (PP (P 与)
+                              (LCP (IP (NP-SBJ (-NONE- *PRO*))
+                                       (VP (NP-TMP (NT 去年)
+                                                   (NT ７月))
+                                           (VP (VV 发行))))
+                                   (LC 时)))
+                          (VP (VV 相比))))
+              (ADVP (AD 已))
+              (VP (VV 贬值)
+                  (QP-EXT (CD 百分之六十点三)))))))
+	</parse>
+	<arg n="1"> 刚果 法郎 </arg>
+	<arg n="M" f="ADV"> *PRO* 与 *PRO* 去年 ７月 发行 时 相比 </arg>
+	<arg n="M" f="ADV"> 已 </arg>
+	<V/>
+	<arg n="2"> 百分之六十点三 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-TPC (DP (DT 这些))
+                  (NP (NN 国家)))
+          (NP-SBJ (NN 货币))
+          (VP (ADVP (AD 已))
+              (ADVP (AD 大幅度))
+              (VP (VV 贬值)))))
+        </parse>
+	<arg n="1" f="PSR"> 这些 国家 </arg>
+	<arg n="1" f="PSE"> 货币 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

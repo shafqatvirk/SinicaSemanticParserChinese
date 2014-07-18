@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无助於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 is not helpful for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 战争))
+		  (VP (VP (ADVP (AD 只))
+			  (VP (VV 会)
+			      (VP (VV 引来)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (ADVP (AD 更))
+							  (VP (VA 多))))
+						  (DEC 的)))
+					  (NP (NN 仇恨)
+					      (CC 与)
+					      (NN 敌意))))))
+		      (PU ，)
+		      (VP (ADVP (AD 丝毫))
+			  (VP (VV 无助於)
+			      (NP-OBJ (DNP (NP (NP (PN 彼此))
+					       (NP (NN 关系)))
+					   (DEG 的))
+				      (NP (NN 发展))))))) 
+	  </parse>
+	  <arg n="0">
+	  战争 
+	  </arg>
+	  <arg n="1">
+	  彼此 关系 的 发展 
+	  </arg>
+	  <arg n="m" f="adv">
+	  丝毫 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

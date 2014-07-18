@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 载运 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 carries and transports"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (ADJP (JJ 希腊籍))
+			    (NP (NN 货轮)))
+		    (NP-PN (PU 「)
+			   (NR 阿玛斯号)
+			   (PU 」)))
+	    (VP (VP (PP-DIR (P 由)
+			    (NP-PN (NR 印度)))
+		    (VP (VV 载运)
+			(NP-OBJ (NN 矿砂))))
+		(VP (VV 准备)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 前往)
+				    (NP-OBJ (NP (NN 大陆))
+					    (NP-PN (NR 南通港))))
+				(VP (VV 卸货))))))) 
+	</parse>
+	<arg n="0">
+	希腊籍 货轮 「 阿玛斯号 」 
+	</arg>
+	<arg n="1">
+	矿砂 
+	</arg>
+	<arg n="m" f="dir">
+	由 印度 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

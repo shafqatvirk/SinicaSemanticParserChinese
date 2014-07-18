@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 夸口 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 boasts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九八年))
+	      (NP-PN-SBJ (NR 中共))
+	      (VP (VP (ADVP (AD 曾))
+		      (VP (VV 夸口)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 要)
+				      (NP-OBJ (NP (PN 我))
+					      (NP (NN 国)))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-TMP (P 在)
+						      (NP (ADJP (JJ 公元))
+							  (NP (NT 两千年))))
+					      (VP (NP-PRD (PU 「)
+							  (QP (CD 零))
+							  (NP (NN 邦交国))
+							  (PU 」)))))))))
+		  (PU ，)
+		  (VP (MSP 而)
+		      (VP (ADVP (AD 到处))
+			  (VP (VV 挖)
+			      (NP-OBJ (NP (PN 我))
+				      (NP (NN 墙角)))))))) 
+	  </parse>
+	  <arg n="0">
+	  中共 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 要 我 国 *PRO* 在 公元 两千年 「 零 邦交国 」 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九八年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

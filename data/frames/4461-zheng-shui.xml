@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 征税 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 collects tax from/on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 瑞士))
+		  (VP (VV 可能)
+		      (VP (PP-DIR (P 对)
+				  (NP-PN (NN 国际)
+					 (NR 奥委会)))
+			  (VP (VV 征税))))) 
+	  </parse>
+	  <arg n="0">
+	  瑞士 
+	  </arg>
+	  <arg n="1">
+	  对 国际 奥委会 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 一九九七年))
+		  (NP-SBJ (NP (DP (DT 全))
+			      (NP (NN 国)))
+			  (NP (NN 海关)
+			      (NN 系统)))
+		  (VP (VP (ADVP (AD 依法))
+			  (VP (VV 征税)))
+		      (PU 、)
+		      (VP (VV 打击)
+			  (NP-OBJ (NN 走私)
+				  (CC 和)
+				  (NN 骗税)))
+		      (PU ，)
+		      (VP (ADVP (AD 超额))
+			  (VP (VV 完成)
+			      (NP-OBJ (NN 国家)
+				      (NN 税收)
+				      (NN 计划))))
+		      (PU ，)
+		      (VP (VV 维护)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NN 国家))
+				       (DEG 的))
+				  (NP (NN 尊严)
+				      (CC 和)
+				      (NN 法纪))))
+		      (PU ，)
+		      (VP (VV 整顿)
+			  (AS 了)
+			  (NP-OBJ (NN 经济)
+				  (NN 秩序)))
+		      (PU ，)
+		      (VP (DVP (VP (VA 有力))
+			       (DEV 地))
+			  (VP (VV 支持)
+			      (AS 了)
+			      (NP-OBJ (NN 国家)
+				      (NN 财政)
+				      (CC 和)
+				      (NN 经济)
+				      (NN 建设)))))) 
+	  </parse>
+	  <arg n="0">
+	  全 国 海关 系统 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依法 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九七年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,143 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 刮 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 shaves/scratches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 过去))
+	    (IP-SBJ (NP-SBJ (NN 父亲们))
+		    (VP (VP (VV 上)
+			    (NP-OBJ (NN 美容院)))
+			(VP (VP (VV 刮)
+				(NP-OBJ (NN 胡子)))
+			    (PU 、)
+			    (VP (VV 整发)))))
+	    (VP (ADVP (AD 已))
+		(VP (VV 算)
+		    (NP-OBJ (NN 奢侈))))) 
+	</parse>
+	<arg n="0">
+	父亲们 
+	</arg>
+	<arg n="1">
+	胡子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 丝袜))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 一))
+			    (VP (VV 刮))))
+		(ADVP (AD 就))
+		(VP (VV 破)))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="thing (wind) blowing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 行动)
+			(NN 电话))
+		    (NP (NN 风潮)))
+	    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (ADVP (AD 就))
+				    (PP (P 像)
+					(NP (QP (CD 一)
+						(CLP (M 阵)))
+					    (NP (NN 狂风)))))
+				(VP (VA 般))))
+		    (PU ，)
+		    (VP (VV 席卷)
+			(NP-OBJ (DP (DT 全))
+				(NP-PN (NR 台)))))
+		(PU ，)
+		(VP (LCP-TMP (QP (QP (CD 一)
+				     (CLP (M 年)))
+				 (QP (CD 多)))
+			     (LC 来))
+		    (ADVP (AD 并))
+		    (ADVP (AD 未))
+		    (VP (VV 平息)))
+		(PU ，)
+		(VP (ADVP (AD 甚至))
+		    (VP (VE 有)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (ADVP (AD 越))
+						    (VP (VV 刮)))
+						(VP (ADVP (AD 越))
+						    (VP (VA 猛)))))
+					(DEC 的))
+				(NP (NN 趋势))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	越 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 hits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 你))
+	    (VP (VV 刮)
+		(NP-OBJ (PN 我))
+		(NP-EXT (QP (CD 一)
+			    (CLP (M 记)))
+			(NP (NN 耳光))))) 
+	</parse>
+	<arg n="0">
+	你 
+	</arg>
+	<arg n="1">
+	我 
+	</arg>
+	<arg n="m" f="ext">
+	一 记 耳光 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

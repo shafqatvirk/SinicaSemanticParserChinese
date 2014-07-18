@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 除役 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity which is demobilized"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (UCP-SBJ (NP (NN 核一))
+		     (PU 、)
+		     (QP (CD 二))
+		     (PU 、)
+		     (QP (OD 三)))
+	    (VP (LCP-TMP (IP (NP-SBJ (NN 运转)
+				     (NN 年限) )
+			     (VP (VV 到期)))
+			 (LC 後))
+		(ADVP (AD 即))
+		(VP (VV 除役)))) 
+	</parse>
+	<arg n="0">
+	核一 、 二 、 三 
+	</arg>
+	<arg n="m" f="adv">
+	即 
+	</arg>
+	<arg n="m" f="tmp">
+	运转 年限 到期 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

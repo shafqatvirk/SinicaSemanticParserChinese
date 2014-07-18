@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 enjoys the view of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 想)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 去)
+				(NP-PN-OBJ (NR 合欢山)))
+			    (VP (VV 赏)
+				(NP-OBJ (NN 雪))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	雪 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

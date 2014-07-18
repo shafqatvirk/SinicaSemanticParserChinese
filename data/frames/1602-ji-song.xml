@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寄送 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent"/>
+      <role argnum="2" argrole="entity arg1 is  sent to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CC 不管是)
+		      (NP (DNP (ADJP (JJ 国际性))
+			       (DEG 的))
+			  (NP (NN 文化)
+			      (NN 活动)))
+		      (PU 、)
+		      (CC 或)
+		      (NP (NP-PN (NR 台北市))
+			  (DNP (PP (P 在)
+				   (LCP (NP (NN 文化)
+					    (NN 政策))
+					(LC 上)))
+			       (DEG 的))
+			  (QP (CD 一些))
+			  (ADJP (JJ 新))
+			  (NP (NN 措施))))
+	      (PU ，)
+	      (NP-SBJ (PN 她))
+	      (VP (VP (ADVP (AD 都))
+		      (ADVP (AD 一律))
+		      (VP (VP (VV 发函))
+			  (VP (VV 请)
+			      (NP-OBJ (DP (DT 各))
+				      (NP (NN 县)
+					  (NN 市)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 参加))))))
+		  (PU ，)
+		  (CC 或)
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 资料))
+			      (VP (VV 寄送)
+				  (PP (P 给)
+				      (NP (DP (DT 各))
+					  (NP (NN 县)
+					      (NN 市))))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 参考)))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 
+	  </arg>
+	  <arg n="1">
+	  资料 
+	  </arg>
+	  <arg n="2">
+	  给 各 县 市 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  不管是 国际性 的 文化 活动 、 或 台北市 在 文化 政策 上 的 一些 新 措施 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (NN 庭审))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (NP (PN 对方))
+		      (NP (NN 律师)))
+	      (VP (ADVP (AD 竟))
+		  (PP-DIR (P 对)
+			  (NP (CP-APP (IP (NP-SBJ (NP (NN 中方))
+						  (ADJP (JJ 托收))
+						  (NP (NN 银行)))
+					  (VP (VV 寄送)
+					      (NP-OBJ (ADJP (JJ 托受))
+						      (NP (NN 文件)))))
+				      (DEC 的))
+			      (NP (NN 事实))))
+		  (ADVP (AD 全盘))
+		  (VP (VV 否认)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中方 托收 银行 	  	  
+	  </arg>
+	  <arg n="1">
+	  托受 文件 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

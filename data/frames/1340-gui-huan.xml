@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 归还 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="returner"/>
+      <role argnum="1" argrole="thing returned"/>
+      <role argnum="2" argrole="returning to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 余下))
+		      (QP (CD 百分之八十五))
+		      (NP (NN 款项)))
+	      (VP (VP (VV 分)
+		      (QP-OBJ (CD 八)
+			      (CLP (M 年))))
+		  (VP (VV 归还)))) 
+	  </parse>
+	  <arg n="1">
+	  余下 百分之八十五 款项 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

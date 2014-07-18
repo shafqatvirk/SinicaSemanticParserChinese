@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 主编 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *-1))
+				  (VP (PP-LGS (P 由)
+					      (NP-PN (NP-PN (NN 国务院)
+							    (NN 发展)
+							    (NN 研究)
+							    (NN 中心))
+						     (NP (NP (NP (ADJP (JJ 名誉))
+								 (NP (NN 主任)))
+							     (NP-PN (NR 马洪)))
+							 (PU 、)
+							 (NP (NP (NN 主任))
+							     (NP-PN (NR 孙尚清))))))
+				      (VP (VV 主编)))))
+			  (DEC 的))
+		      (NP (NN 经济)
+			  (NN 白皮书)))
+	      (PU ，)
+	      (VP (ADVP (AD 曾))
+		  (VP (VV 获)
+		      (NP-OBJ (NP-APP (PU “)
+				      (NP-PN (NR 中国))
+				      (ADJP (JJ 十佳))
+				      (NP (NN 经济)
+					  (NN 读物))
+				      (PU ”))
+			      (NP (NN 称号)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 国务院 发展 研究 中心 名誉 主任 马洪 、 主任 孙尚清 
+	  </arg>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

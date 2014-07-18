@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刻有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing/location where carving is"/>
+      <role argnum="2" argrole="thing carved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NP (NN 东面))
+			   (QP (CD 两)
+			       (CLP (M 块)))
+			   (NP (NN 石碑)))
+		       (LC 上))
+	      (VP (ADVP (AD 分别))
+		  (VP (VV 刻有)
+		      (NP-OBJ (NP (PU “)
+				  (NP-PN (NR 新四军))
+				  (NP (NN 军歌))
+				  (PU ”))
+			      (CC 和)
+			      (NP (PU “)
+				  (LCP (NP (NP (NP-PN (NR 新四军))
+					       (NP (NN 军部)))
+					   (NP (NN 成立)))
+				       (LC 前后))
+				  (NP (NN 史记))
+				  (PU ”)))))) 
+	  </parse>
+	  <arg n="1">
+	  东面 两 块 石碑 上 
+	  </arg>
+	  <arg n="2">
+	  “ 新四军 军歌 ” 和 “ 新四军 军部 成立 前后 史记 ” 
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  ((IP (NP-SBJ (NN 编钟))
+		   (VP (VP (PP-MNR (P 以)
+				   (NP (NN 青铜)))
+			   (VP (VV 铸成)))
+		       (PU ，)
+		       (VP (VV 刻有)
+			   (NP-OBJ (NP-APP (NN 龙)
+					   (PU 、)
+					   (NN 兽)
+					   (CC 或)
+					   (NN 花)
+					   (ETC 等))
+				   (NP (NN 图案)))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="1">
+	  编钟 
+	  </arg>
+	  <arg n="2">
+	  龙 、 兽 或 花 等 图案 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 构思 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="planner"/>
+      <role argnum="1" argrole="thing planned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 於是))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 吴)
+			 (NN 医生))
+	      (VP (VP (ADVP (AD 初步))
+		      (VP (VV 构思)
+			  (AS 了)
+			  (NP-OBJ (NN 曲调))))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+				   (VP (ADVP (AD 再))
+				       (PP (P 与)
+					   (NP-PN (NR 董太)))
+				       (VP (VV 研究))))
+			       (LC 後))
+		      (VP (VV 谱成)
+			  (NP-TTL-OBJ (PU 《)
+				      (NP (NN 回归颂))
+				      (PU 》)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  吴 医生 
+	  </arg>
+	  <arg n="1">
+	  曲调 
+	  </arg>
+	  <arg n="m" f="adv">
+	  初步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 大吃大喝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person eating and drinking a lot"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP-APP (IP (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 大吃大喝)))
+			(PU 、)
+			(IP (NP-SBJ (NN 物质))
+			    (VP (VV 泛滥))))
+		    (DEC 的))
+	    (NP (NN 情况))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

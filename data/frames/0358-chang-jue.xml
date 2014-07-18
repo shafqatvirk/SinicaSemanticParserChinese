@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 猖獗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 日益))
+				    (VP (VA 猖獗))))
+			    (DEC 的)))
+		    (NP (NN 贩毒)
+			(NN 活动)))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(贩毒活动) 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  日益 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 读取 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 reads"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (PP-MNR (P 靠著)
+					    (NP (NN 雷射)
+						(NN 光线)))
+				    (VP (VV 读取)
+					(NP-OBJ (NN 信号))))
+				(PU 、)
+				(VP (ADVP (AD 不))
+				    (VP (VV 怕)
+					(NP-OBJ (NN 磁头))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 刮损)))))))
+			(DEC 的)))
+		(NP (NN 光碟))) 
+	</parse>
+	<arg n="1">
+	信号 
+	</arg>
+	<arg n="m" f="mnr">
+	靠著 雷射 光线 
+	</arg>
+	<arg n="m" f="tpc">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

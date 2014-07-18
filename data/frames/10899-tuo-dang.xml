@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 脱党 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person quitting party"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (QP (CD 两)
+		    (CLP (M 位)))
+		(CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (VV 脱党))
+				(VP (ADVP (AD 自行))
+				    (VP (VV 参选)))))
+			(DEC 的)))
+		(NP (NN 候选人))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调查 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="investigator"/>
+      <role argnum="1" argrole="thing investigated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-3 (-NONE- *OP*))
+		  (CP (IP (NP-PN-SBJ (NN 公平会))
+			  (VP (VV 调查)
+			      (NP-OBJ (-NONE- *T*-3))))
+		      (DEC 的)))
+	      (QP (CD 二百一十)
+		  (CLP (M 家)))
+	      (NP (NN 传销)
+		  (NN 公司))) 
+	  </parse>
+	  <arg n="0">
+	  公平会 
+	  </arg>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-ADV (P 据)
+		  (IP (NP-PN-SBJ (NR 浦东)
+				 (NN 新区)
+				 (NN 经贸局))
+		      (VP (PP-DIR (P 对)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-PN-SBJ (NR 浦东))
+						  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+								   (VP (VV 开发)
+								       (QP-EXT (CD 七)
+									       (CLP (M 年)))))
+							       (LC 来))
+						      (VP (VV 引进)
+							  (NP-OBJ (-NONE- *T*-1)))))
+					      (DEC 的)))
+				      (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VV 投资)
+						      (LCP-OBJ (QP (CD 一千万)
+								   (CLP (M 美元)))
+							       (LC 以上))))
+					      (DEC 的)))
+				      (QP (CD 一百五十七)
+					  (CLP (M 个)))
+				      (NP (NN 工业))
+				      (ADJP (JJ 大))
+				      (NP (NN 项目))))
+			  (VP (VSB (VV 跟踪)
+				   (VV 调查))))))
+	  </parse>
+	  <arg n="0">
+	  浦东 新区 经贸局 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* 浦东 *PRO* 开发 七 年 来 引进 *T*-1 的 *OP* *T*-2 投资 一千万 美元 以上 的 一百五十七 个 工业 大 项目 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP (P 据)
+	      (IP (NP-SBJ (ADJP (JJ 有关))
+			  (NP (NN 方面)))
+		  (VP (ADVP (AD 初步))
+		      (VP (VV 调查)))))
+	  </parse>
+	  <arg n="0">
+	  有关 方面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  初步 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

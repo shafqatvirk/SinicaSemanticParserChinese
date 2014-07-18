@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接洽 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="contact initiator"/>
+      <role argnum="1" argrole="party contacted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 於)
+		      (NP (DP (DT 本)
+			      (CLP (M 年)))
+			  (NP (NT 二月))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 名)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 绰号))
+				  (VP (NP-TTL-PRD (PU ＂)
+						  (NP (NN 老细))
+						  (PU ＂))))
+			      (DEC 的)))
+		      (NP (NN 男子)))
+	      (VP (PP-LOC (P 在)
+			  (NP-PN (NR 中国)
+				 (NR 福建)))
+		  (PP (P 和)
+		      (NP (QP (CD 两)
+			      (CLP (M 名)))
+			  (NP (NN 当地)
+			      (NN 人士))))
+		  (VP (VV 接洽)))) 
+	  </parse>
+	  <arg n="0">
+	  一 名 *OP* *T*-1 绰号 ＂ 老细 ＂ 的 男子 
+	  </arg>
+	  <arg n="1">
+	  和 两 名 当地 人士 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  於 本 年 二月 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 中国 福建 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

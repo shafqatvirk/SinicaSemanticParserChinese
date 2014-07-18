@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="experience"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 美国))
+		      (NP (NN 商界)))
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP (P 与)
+				      (NP-PN (NR 上海)))
+				  (VP (VV 建立)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VA 良好)))
+						      (DEC 的)))
+					      (NP (NN 关系)))))))
+		  (ADVP (AD 很))
+		  (VP (VV 感)
+		      (NP-OBJ (NN 兴趣))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  美国 商界 
+	  </arg>
+	  <arg n="1">
+	  兴趣 
+	  </arg>
+	  <arg n="m" f="adv">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

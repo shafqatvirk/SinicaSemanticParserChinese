@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 省下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 saves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NN 理财)
+			    (NN 资讯))
+		    (VP (VV 爆炸)))
+	    (PU ，)
+	    (VP (LCP-LOC (NP (NN 理论))
+			 (LC 上))
+		(VP (VV 应该)
+		    (VP (VV 让)
+			(NP-OBJ (NN 投资人))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 省下)
+				(NP-OBJ (QP (CD 很多))
+					(NP (NN 心力))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	很多 心力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

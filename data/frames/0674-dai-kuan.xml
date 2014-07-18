@@ -1,0 +1,133 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贷款 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="debtor"/>
+      <role argnum="1" argrole="lender"/>
+      <role argnum="2" argrole="amount"/>
+      <role argnum="3" argrole="purpose"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 向)
+			  (NP (NP-PN (NN 国家)
+				     (NN 开发)
+				     (NN 银行))
+			      (CC 和)
+			      (NP (DNP (NP (NN 国内))
+				       (DEG 的))
+				  (NP (NN 商业)
+				      (NN 银行)))))
+		  (VP (VV 贷款)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  向 国家 开发 银行 和 国内 的 商业 银行 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 贷款))
+		    (VP (VV 修)
+			(NP-OBJ (NN 路)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (IP (NP-SBJ (NN 国际)
+				      (NN 金融)
+				      (NN 组织))
+			      (VP (VV 贷款)
+				  (NP-OBJ (-NONE- *T*-1))))
+			  (CC 并)
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-LGS (P 由)
+					  (NP (NN 国际)))
+				  (ADVP (AD 公开))
+				  (VP (VV 招标)))))
+		      (DEC 的)))
+	      (NP (NN 工程))) 
+	  </parse>
+	  <arg n="1">
+	  国际 金融 组织 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="3">
+	  *T*-1 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="controlip" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 意大利))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 则))
+		  (VP (VV 准备)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 贷款)
+				  (QP-OBJ (CD 三百九十万)
+					  (CLP (M 美元)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 用于)
+					  (NP-OBJ (DNP (NP (NN 库区)
+							   (NN 上游))
+						       (DEG 的))
+						  (NP (PU “)
+						      (NP-PN (NR 大足))
+						      (NP (NN 城市)
+							  (NN 生活)
+							  (NN 污水)
+							  (NN 处理))
+						      (PU ”))
+						  (NP (NN 项目)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  三百九十万 美元 	  	  
+	  </arg>
+	  <arg n="3">
+	  *PRO* 用于 库区 上游 的 “ 大足 城市 生活 污水 处理 ” 项目 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

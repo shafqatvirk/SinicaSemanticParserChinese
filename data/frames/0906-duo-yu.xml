@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 多於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing compared"/>
+      <role argnum="1" argrole="thing compared to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NN 房屋)
+						 (NN 委员会))
+				      (VP (PP-TMP (P 在)
+						  (LCP (NP (DP (DT 该)
+							       (CLP (M 段)))
+							   (NP (NN 期间)))
+						       (LC 内)))
+					  (VP (MSP 所)
+					      (VP (VV 兴建)
+						  (NP-OBJ (-NONE- *T*-2))))))
+				  (DEC 的)))
+			  (NP (NN 出租)
+			      (NN 公屋)))
+		      (NP (NN 数量))
+		      (PRN (PU （)
+			   (QP (CD 九万六千三百六十九)
+			       (CLP (M 个)))
+			   (PU ）)))
+	      (VP (ADVP (AD 仍))
+		  (VP (VV 多於)
+		      (NP-OBJ (NP (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (MSP 所)
+						  (VP (VV 拆卸)
+						      (NP-OBJ (-NONE- *T*-3)))))
+					  (DEC 的)))
+				  (NP (NN 单位)))
+			      (NP (NN 数量))
+			      (PRN (PU （)
+				   (QP (CD 七万五千四百)
+				       (CLP (M 个)))
+				   (PU ）)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 房屋 委员会 在 该 段 期间 内 所 兴建 *T*-2 的 出租 公屋 数量 （ 九万六千三百六十九 个 ） 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 所 拆卸 *T*-3 的 单位 数量 （ 七万五千四百 个 ） 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

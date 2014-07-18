@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 始于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="time/location started"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 报道)))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-PN (NR 塞拉里昂))
+			  (NP (NN 叛军)))
+		      (DNP (PP (P 对)
+			       (NP-PN (NR 马克尼)))
+			   (DEG 的))
+		      (NP (NN 进攻)))
+	      (VP (VV 始于)
+		  (NP-OBJ (NT ２３日)))) 
+	  </parse>
+	  <arg n="0">
+	  塞拉里昂 叛军 对 马克尼 的 进攻 
+	  </arg>
+	  <arg n="1">
+	  ２３日 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 报道 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NP-PN (NR 中国))
+			      (NP (NN 建筑业)))
+		      (VP (PP (P 对)
+			      (NP (NN 外)))
+			  (VP (VV 开放))))
+	      (VP (VV 始于)
+		  (NP-OBJ (NT 八十年代)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 建筑业 对 外 开放 
+	  </arg>
+	  <arg n="1">
+	  八十年代 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NP-PN (NR 巴伦西亚))
+					  (NP (NN 地区)))
+				  (VP (PP-MNR (-NONE- *T*-1))
+				      (PP-DIR (P 就)
+					      (NP (IP-APP (NP (-NONE- *PRO*))
+							  (VP (VV 滥用)
+							      (NP-OBJ (NN 水))))
+						  (NP (NN 问题))))
+				      (VP (VV 进行)
+					  (NP-OBJ (NN 审判)))))
+			      (DEC 的)))
+		      (NP (NN 形式)))
+	      (VP (VV 始于)
+		  (NP-OBJ (NN 民间)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 巴伦西亚 地区 *T*-1 就 *PRO* 滥用 水 问题 进行 审判 的 形式 
+	  </arg>
+	  <arg n="1">
+	  民间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

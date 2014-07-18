@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="honor arg0 carries"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VE 有)
+				      (NP-OBJ (NN 份量))))
+			      (DEC 的)))
+		      (NP (NN 年度))
+		      (ADJP (JJ 好))
+		      (NP (NN 书)))
+	      (PU ，)
+	      (VP (QP-ADV (CD 大部份))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VV 冠)
+					      (AS 著)
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (PU 「)
+							  (ADVP (AD 荣))
+							  (VP (VV 获)
+							      (IP-OBJ (NP-SBJ (NP-PN (NR 美国))
+									      (NP (NN ○○)
+										  (NN 排行)))
+								      (VP (VV 推荐))))
+							  (PU 」)))))
+				      (DEC 的)))
+			      (NP (NN 翻译)
+				  (NN 书)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 「 荣 获 美国 ○○ 排行 推荐 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 盗 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 steals"/>
+    <role argnum="2" argrole="entity arg0 steals from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-OBJ (PP-TMP (P 当)
+			  (IP (NP-SBJ (NN 电子)
+				      (NN 商务))
+			      (VP (ADVP (AD 越来越))
+				  (VP (VA 蓬勃)))))
+		  (PU ，)
+		  (CP-CND (ADVP (CS 如果))
+			  (IP (NP-SBJ (NN 电脑)
+				      (NN 系统))
+			      (VP (ADVP (AD 这麽))
+				  (VP (VA 容易)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (SB 被)
+						  (VP (VV 侵入))))))))
+		  (PU ，)
+		  (LCP-TMP (IP (NP-SBJ (PN 自己))
+			       (VP (PP-LOC (P 在)
+					   (LCP (NP (NN 网))
+						(LC 上)))
+				   (VP (VV 购物))))
+			   (LC 时))
+		  (PU ，)
+		  (NP-SBJ (NN 信用卡)
+			  (NN 帐号))
+		  (VP (VNV-WH (VV 会)
+			      (AD 不)
+			      (VV 会))
+		      (VP (ADVP (AD 轻易))
+			  (VP (SB 被)
+			      (VP (VV 盗)))))) 
+	</parse>
+	<arg n="1">
+	信用卡 帐号 
+	</arg>
+	<arg n="m" f="adv">
+	轻易 
+	</arg>
+	<arg n="m" f="tmp">
+	自己 在 网 上 购物 时 
+	</arg>
+	<arg n="m" f="cnd">
+	如果 电脑 系统 这麽 容易 *PRO* 被 侵入 
+	</arg>
+	<arg n="m" f="tmp">
+	当 电子 商务 越来越 蓬勃 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

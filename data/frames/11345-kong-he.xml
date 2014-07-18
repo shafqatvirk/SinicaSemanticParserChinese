@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 恐吓 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-TPC (CP-APP (IP (NP-PN-SBJ (NR 统一)
+					       (NN 企业))
+				    (VP (VV 遭)
+					(IP-OBJ (NP-SBJ (PU 「)
+							(NN 千面人)
+							(PU 」))
+						(VP (VV 恐吓)))))
+				(DEC 的))
+			(NP (NN 新闻)))
+		(PU ，)
+		(NP-SBJ (NN 业主))
+		(VP (VV 希望)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 全面))
+				(VP (VV 压制)))))) 
+	</parse>
+	<arg n="0">
+	「 千面人 」 
+	</arg>
+	<arg n="1">
+	统一 企业 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

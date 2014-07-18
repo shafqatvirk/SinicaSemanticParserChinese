@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改种 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing planted"/>
+      <role argnum="2" argrole="field"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而且))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 昔日))
+				      (PP-MNR (P 以)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 种)
+						      (NP-OBJ (NN 粗粮)))))
+				      (VP (VV 为主))))
+			      (DEC 的)))
+		      (LCP (NP (NN 山))
+			   (LC 间))
+		      (NP (NN 梯田)))
+	      (PU ，)
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 早))
+		  (ADVP (AD 已))
+		  (VP (VV 改种)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (LCP-SBJ (NP (NN 市场))
+						   (LC 上))
+					  (VP (VV 看好)
+					      (NP-OBJ (-NONE- *T*-2))))
+				      (DEC 的)))
+			      (NP (NN 经济)
+				  (NN 作物)
+				  (CC 和)
+				  (NN 药材)))))) 
+	  </parse>
+	  <arg n="2">
+	  *OP* *T*-1 昔日 以 *PRO* 种 粗粮 为主 的 山 间 梯田 
+	  </arg>
+	  <arg n="1">
+	  *OP* 市场 上 看好 *T*-2 的 经济 作物 和 药材 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  早 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

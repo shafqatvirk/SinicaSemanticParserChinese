@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="money/profit arg0 makes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-SBJ (ADJP (JJ 正规))
+		      (NP (NN 业者)))
+	      (VP (ADVP (AD 一定))
+		  (VP (VV 鼓励)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VE 有)
+					  (NP-OBJ (NN 兴趣)))))
+			      (NP (NN 者)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 以)
+				      (NP (UCP (NP (PU 「)
+						   (NN 兼职)
+						   (PU 」))
+					       (PU 、)
+					       (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (PU 「)
+						       (VV 赚)
+						       (NP-OBJ (CLP (M 点))
+							       (NP (NN 外快)))
+						       (PU 」)))
+					       (DEG 的))
+					  (NP (NN 心态))))
+			      (VP (VV 进入))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  点 外快 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 浸淫 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 immerces in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 其後))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 留学)
+		    (NP-PN-OBJ (NR 法国))
+		    (QP-EXT (CD 五)
+			    (CLP (M 年))))
+		(PU ，)
+		(VP (VV 浸淫)
+		    (PP (P 於)
+			(NP (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (NP-TMP (NT 当时))
+					    (ADVP (AD 正))
+					    (VP (VV 盛))))
+				    (DEC 的)))
+			    (NP (NN 西方))
+			    (ADJP (JJ 现代))
+			    (NP (NN 乐派))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	於 *OP* *T*-2 当时 正 盛 的 西方 现代 乐派 
+	</arg>
+	<arg n="m" f="adv">
+	其後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

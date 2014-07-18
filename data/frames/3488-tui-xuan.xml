@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推选 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="elector"/>
+      <role argnum="1" argrole="elected"/>
+      <role argnum="2" argrole="post"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP-CND (ADVP (CS 如果))
+		  (IP (NP-SBJ (PN 大家))
+		      (VP (VV 推选)
+			  (NP-OBJ (PN 我))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 为)
+				  (NP-OBJ (NN 村委会)
+					  (NN 成员))))))) 
+	  </parse>
+	  <arg n="0">
+	  大家 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  我 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 村委会 成员 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 及时))
+		      (VP (VV 挽回)
+			  (AS 了)
+			  (NP-OBJ (NN 损失))))
+		  (PU ，)
+		  (VP (ADVP (AD 依法))
+		      (VP (VV 处理)
+			  (AS 了)
+			  (NP-OBJ (NN 当事人))))
+		  (PU ，)
+		  (VP (VV 推选)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 更为))
+					      (VP (VA 合适))))
+				      (DEC 的)))
+			      (NP (NN 村委)
+				  (NN 主任))
+			      (NP (NN 人选)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-1)->(村委主任人选) 更为 合适 的 村委 主任 人选 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

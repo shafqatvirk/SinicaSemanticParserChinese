@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 反映 </id>
+    <frameset id="f1" edef="report">
+      <role argnum="0" argrole="reporter"/>
+      <role argnum="1" argrole="thing reported"/>
+      <role argnum="2" argrole="reporting to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (NP (NN 市民)))
+	      (VP (VV 反映)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (NP (LCP (NP (NN 家))
+					   (LC 中))
+				      (LCP (NP (NN 阳台))
+					   (LC 上))
+				      (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (NP-TMP (NT 春)
+							      (NT 秋季))
+						      (ADVP (AD 才))
+						      (VP (VV 开)
+							  (NP-OBJ (NN 花)))))
+					      (DEC 的)))
+				      (NP (NN 盆花)))
+				  (PRN (NP (ADVP (AD 如))
+					   (NP (NP (NN 一串红)
+						   (PU 、)
+						   (NN 二乔玉兰))
+					       (ETC 等)))))
+			  (PU ，)
+			  (VP (ADVP (AD 现时))
+			      (ADVP (AD 也))
+			      (VP (VP (VV 红花绿叶))
+				  (PU ，)
+				  (VP (ADVP (AD 十分))
+				      (VP (VA 美丽)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  一些 市民 
+	  </arg>
+	  <arg n="1">
+	  家 中 阳台 上 *OP* *T*-1 春 秋季 才 开 花 的 盆花 如 一串红 、 二乔玉兰 等 ， 现时 也 红花绿叶 ， 十分 美丽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="reflect">
+      <role argnum="0" argrole="indicator"/>
+      <role argnum="1" argrole="thing reflected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-MNR (P 按)
+					      (NP (ADJP (JJ 现行))
+						  (ADJP (JJ 原))
+						  (NP (NN 产地))))
+				      (VP (VV 统计)
+					  (NP-OBJ (NN 进出口)
+						  (NN 贸易)))))
+			      (DEC 的))
+		      (NP (NN 办法)))
+	      (PU ，)
+	      (VP (ADVP (AD 显然))
+		  (ADVP (AD 难以))
+		  (ADVP (AD 准确))
+		  (VP (VV 反映)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 世界)
+						  (NN 经济))
+					  (VP (VCD (VV 发展)
+						   (VV 变化))))
+				      (DEC 的))
+			      (NP (NN 大势))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 按 现行 原 产地 统计 进出口 贸易 的 办法 
+	  </arg>
+	  <arg n="1">
+	  世界 经济 发展 变化 的 大势 
+	  </arg>
+	  <arg n="m" f="adv">
+	  显然 
+	  </arg>
+	  <arg n="m" f="adv">
+	  难以 
+	  </arg>
+	  <arg n="m" f="adv">
+	  准确 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

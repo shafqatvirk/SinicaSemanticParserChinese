@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 乐观 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing to be optimistic about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 经济界)
+			(NN 人士))
+		(VP (VV 似乎)
+		    (VP (PP-DIR (P 对)
+				(NP (NN 经济)
+				    (NN 前景)))
+			(ADVP (AD 更为))
+			(VP (VA 乐观))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  经济界 人士 
+	  </arg>
+	  <arg n="1">
+	  对 经济 前景 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更为 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (PP-DIR (P 对)
+						   (NP-PN (NR 韩国)))
+					   (VP (VE 有)
+					       (NP-OBJ (ADJP (JJ 深入))
+						       (NP (NN 了解))))))
+				   (DEC 的)))
+			   (NP-PN (NR 胡令珠)))
+		   (VP (ADVP (AD 却))
+		       (VP (VV 提醒)
+			   (NP-OBJ (NN 业者))
+			   (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (ADVP (AD 别))
+				   (ADVP (AD 太))
+				   (VP (VA 乐观))))))
+		   (PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  别 
+	  </arg>
+	  <arg n="m" f="adv">
+	  太 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-SBJ (NP-PN (NR 东亚))
+			    (NP (NN 经济)
+				(NN 前景)))
+		    (VP (VA 乐观))) ) 
+	  </parse>
+	  <arg n="0">
+	  东亚 经济 前景 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

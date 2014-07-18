@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 售 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing sold"/>
+      <role argnum="2" argrole="entity sold to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 解决)
+	      (NP-OBJ (IP-APP (NP-PN-SBJ (NR 美))
+			      (VP (VV 售)
+				  (NP-PN-IO (NR 台))
+				  (NP-OBJ (NN 武器))))
+		      (NP (NN 问题)))) 
+	  </parse>
+	  <arg n="0">
+	  美 
+	  </arg>
+	  <arg n="1">
+	  武器 
+	  </arg>
+	  <arg n="2">
+	  台 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 实行)
+	      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (NP-ADV (NN 成本价))
+			  (VP (VP (VV 售)
+				  (NP-OBJ (NN 房)))
+			      (CC 和)
+			      (VP (VV 租)
+				  (NP-OBJ (NN 房))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  房 
+	  </arg>
+	  <arg n="m" f="adv">
+	  成本价 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

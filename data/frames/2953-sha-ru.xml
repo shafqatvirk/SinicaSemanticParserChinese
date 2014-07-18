@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 杀入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location entered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 巴西))
+		      (NP (NN 国家队)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (NP-PN (NR 扎加洛))
+				       (NP (NN 教头)))
+				   (NP (NN 率领)))
+			       (LC 下)))
+		  (PU ，)
+		  (VP (VP (VV 过关斩将))
+		      (VP (VV 杀入)
+			  (NP-OBJ (NN 决赛)))))) 
+	  </parse>
+	  <arg n="0">
+	  巴西 国家队 
+	  </arg>
+	  <arg n="1">
+	  决赛 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 扎加洛 教头 率领 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

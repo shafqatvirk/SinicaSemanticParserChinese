@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打扮 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="dresser"/>
+      <role argnum="1" argrole="party dressed"/>
+      <role argnum="2" argrole="result of the dressing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 福勒))
+	      (VP (BA 把)
+		  (IP-OBJ (NP-SBJ (PN 自己))
+			  (VP (VRD (VV 打扮)
+				   (VV 成))
+			      (NP-OBJ (NP (NP-PN (NR 美国))
+					  (NP (NN 棒球)
+					      (NN 运动员)))
+				      (NP (NN 形象))))))) 
+	  </parse>
+	  <arg n="0">
+	  福勒 
+	  </arg>
+	  <arg n="1">
+	  自己 
+	  </arg>
+	  <arg n="2" f="into">
+	  美国 棒球 运动员 形象 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (ADJP (JJ 神奇))
+			      (NP (NN 小子)))
+		      (NP-PN (NR 欧文)))
+	      (VP (VRD (VV 打扮)
+		       (VV 成))
+		  (NP-OBJ (DNP (LCP (NP (QP (CD 一)
+					    (CLP (M 部)))
+					(NP (NN 电影)))
+				    (LC 中))
+			       (DEG 的))
+			  (NP (NN 角色)))))
+	  </parse>
+	  <arg n="1">
+	  神奇 小子 欧文 
+	  </arg>
+	  <arg n="2" f="into">
+	  一 部 电影 中 的 角色 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 麦克马拉曼))
+	      (VP (VV 打扮)
+		  (DER 得)
+		  (PP-EXT (P 像)
+			  (NP (QP (CLP (M 个)))
+			      (NP (NN 牧师))))))
+	  </parse>
+	  <arg n="1">
+	  麦克马拉曼 
+	  </arg>
+	  <arg n="2">
+	  像 个 牧师 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

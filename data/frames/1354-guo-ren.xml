@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过人 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 寄望)
+		      (NP-PN-OBJ (NR 香港))
+		      (IP (NP-TPC (-NONE- *PRO*))
+			  (PP-LOC (P 在)
+				  (NP (IP-APP (NP-SBJ (-NONE- *pro*))
+					      (VP (VP (VV 联系)
+						      (NP-OBJ (-NONE- *RNR*-1)))
+						  (CC 和)
+						  (VP (VV 安排)
+						      (NP-OBJ-1 (ADJP (JJ 跨国))
+								(NP (NN 买卖)
+								    (CC 和)
+								    (NN 生产))
+								(NP (NN 活动))))))
+				      (NP (NN 方面))))
+			  (PU ，)
+			  (NP-SBJ (NN 效率))
+			  (VP (VA 过人)))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *PRO* 
+	  </arg>
+	  <arg n="0" f="pse">
+	  效率 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *pro* 联系 *RNR*-1 和 安排 跨国 买卖 和 生产 活动 方面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

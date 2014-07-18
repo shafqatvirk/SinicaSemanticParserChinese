@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相仿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 在)
+		  (NP (CP (WHPP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 他))
+				  (VP (PP-TMP (-NONE- *T*-2))
+				      (VP (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+						      (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (PP (P 与)
+								  (NP (NN 女儿)))
+							      (VP (VA 相仿)))))
+						  (NP (NN 年纪))))))
+			      (DEC 的)))
+		      (NP (NN 时候)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="0">
+	  与 女儿 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 已))
+				      (VP (VV 过)
+					  (NP-OBJ (NN 花甲之年)))))
+			      (DEC 的)))
+		      (NP-PN (NR 陈忠发)))
+	      (VP (ADVP (AD 则))
+		  (VP (VV 喜欢)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 带上)
+				      (NP-OBJ (NN 老伴)))
+				  (PU ，)
+				  (CC 或)
+				  (VP (VV 约上)
+				      (NP-OBJ (QP (CD 一些))
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-TPC (-NONE- *T*-2))
+							  (NP-SBJ (NN 年龄))
+							  (VP (VA 相仿)))
+						      (DEC 的)))
+					      (NP (NN 村民))))
+				  (VP (VSB (VV 出外)
+					   (VV 旅游)))))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  年龄 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

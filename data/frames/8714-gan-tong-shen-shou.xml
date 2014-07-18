@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感同身受 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 feels as if he experiences himself"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="dir" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对於)
+		      (NP (DNP (NP-PN (NR 萨尔瓦多))
+			       (DEG 的))
+			  (ADJP (JJ 强烈))
+			  (NP (NN 地震))))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP (ADVP (AD 一))
+			      (PP (P 如)
+				  (NP (NP-APP (NN 总统))
+				      (NP-PN (NR 陈水扁)))))
+			  (VP (MSP 所)
+			      (VP (VV 说)))))
+	      (PU ，)
+	      (PP-DIR (P 对於)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-TMP (NT 前年))
+					  (ADVP (AD 才))
+					  (VP (VV 历经)
+					      (NP-OBJ (NP (NT 九二一))
+						      (ADJP (JJ 大))
+						      (NP (NN 地震))))))
+				  (DEC 的)))
+			  (NP-PN (NR 台湾))
+			  (NP (NN 民众))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 尤其))
+		  (VP (PU 「)
+		      (VV 感同身受)
+		      (PU 」)))) 
+	  </parse>
+	  <arg n="0">
+	  对於 *OP* *T*-1 前年 才 历经 九二一 大 地震 的 台湾 民众 
+	  </arg>
+	  <arg n="1">
+	  对於 萨尔瓦多 的 强烈 地震 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尤其 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 一 如 总统 陈水扁 所 说 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 环顾 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP-PN (NR 松花江))
+			   (LC 畔)))
+	      (PU ，)
+	      (LCP-LOC (NP (CP (WHNP-5 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-5))
+				       (VP (VV 挂)
+					   (AS 着)
+					   (NP-OBJ (NP-APP (PU “)
+							   (NP-PN (NR 黑龙江省)
+								  (NN 边防)
+								  (NN 总队))
+							   (NP (NN 警犬)
+							       (NN 基地))
+							   (PU ”))
+						   (ADJP (JJ 白色))
+						   (NP (NN 牌子)))))
+				   (DEC 的)))
+			   (NP (NN 大门)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VV 号称)
+					      (NP-OBJ (PU “)
+						      (NN 狗)
+						      (NN 司令)
+						      (PU ”))))
+				      (DEC 的)))
+			      (NP (NN 少校)))
+		      (NP-PN (NR 郝峰)))
+	      (VP (VV 环顾)
+		  (AS 着)
+		  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (PN 他))
+				      (VP (VV 负责)
+					  (NP-OBJ (-NONE- *T*-2))))
+				  (DEC 的)))
+			  (DP (DT 这)
+			      (CLP (M 个)))
+			  (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (VP-FOC (VV 占地))
+					  (VP (ADVP (AD 不))
+					      (VP (VA 大)))))
+				  (DEC 的)))
+			  (NP (NN 基地))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-4 号称 “ 狗 司令 ” 的 少校 郝峰 
+	  </arg>
+	  <arg n="1">
+	  *OP* 他 负责 *T*-2 的 这 个 *OP* *T*-3 占地 不 大 的 基地 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 松花江 畔 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *OP* *T*-5 挂 着 “ 黑龙江省 边防 总队 警犬 基地 ” 白色 牌子 的 大门 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

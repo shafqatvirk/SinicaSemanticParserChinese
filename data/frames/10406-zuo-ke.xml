@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 作客 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person coming as a guest"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 要)
+			(VP (ADVP (AD 再))
+			    (VP (VV 隐形)
+				(AS 了)))))
+		(PU ，)
+		(VP (ADVP (AD 别))
+		    (VP (VV 忘)
+			(AS 了)
+			(IP-OBJ (NP-SBJ (PN 你))
+				(VP (ADVP (AD 也))
+				    (VP (VC 是)
+					(NP-PRD (DNP (NP (DP (DT 这)
+							     (CLP (M 块)))
+							 (NP (NN 土地)))
+						     (DEG 的))
+						(NP (NN 主人))))))))
+		(PU ，)
+		(VP (ADVP (AD 不))
+		    (VP (VV 要)
+			(VP (ADVP (AD 老是))
+			    (VP (VV 以为)
+				(IP-OBJ (NP-SBJ (PN 自己))
+					(VP (VV 来)
+					    (VP (VV 作客)))))))))) 
+	</parse>
+	<arg n="0">
+	自己 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

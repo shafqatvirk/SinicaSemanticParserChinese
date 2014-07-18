@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吃亏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (PP-BNF (P 为)
+			      (NP (NN 群众)))
+		      (VP (VV 办事)))
+		  (PU ，)
+		  (VP (LST (CD 一))
+		      (ADVP (AD 不))
+		      (VP (VV 怕)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 吃亏))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 延伸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="extending from"/>
+      <role argnum="2" argrole="extending to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (CP-APP (IP (NP-TMP (NP (NT 九十年代))
+						   (NP (NN 初期)))
+					   (NP-SBJ (NN 港口)
+						   (NN 建设))
+					   (VP (VV 取得)
+					       (NP-OBJ (NN 成绩))))
+				       (DEC 的))
+			       (NP (NN 基础)))
+			   (LC 上)))
+	      (PU ，)
+	      (NP-SBJ (NN 公路)
+		      (CC 和)
+		      (NN 铁路))
+	      (VP (PP-DIR (P 向)
+			  (NP (NN 境外)
+			      (CC 和)
+			      (NN 港口)))
+		  (VP (VV 延伸)))) 
+	  </parse>
+	  <arg n="0">
+	  公路 和 铁路 
+	  </arg>
+	  <arg n="2">
+	  向 境外 和 港口 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 九十年代 初期 港口 建设 取得 成绩 的 基础 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 大连))
+		      (ADJP (PU “)
+			    (JJ 三资)
+			    (PU ”))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 正))
+		  (PP-DIR (P 由)
+			  (NP (DNP (NP (NN 初期))
+				   (DEG 的))
+			      (QP (OD 二)
+				  (PU 、)
+				  (OD 三))
+			      (NP (NN 产业))))
+		  (PP-DIR (P 向)
+			  (NP (NN 种植业)
+			      (PU 、)
+			      (NN 养殖业)))
+		  (VP (VV 延伸))))
+	  </parse>
+	  <arg n="0">
+	  大连 “ 三资 ” 企业 
+	  </arg>
+	  <arg n="1">
+	  由 初期 的 二 、 三 产业 
+	  </arg>
+	  <arg n="2">
+	  向 种植业 、 养殖业 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捕捞 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="fishing location"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NP (NT 七十年代))
+              (NP (NN 后期)))
+      (PU ，)
+      (CP-PRP (ADVP (CS 由于))
+              (IP (NP-SBJ (-NONE- *pro*))
+                  (VP (NP-ADV (ADJP (JJ 长))
+                              (NP (NN 时间)))
+                      (ADVP (AD 过度))
+                      (VP (VV 捕捞)))))
+      (PU ，)
+      (NP-SBJ (NP-PN (NR 舟山)
+                     (NN 渔场))
+              (NP (NN 水产)
+                  (NN 资源)))
+      (VP (VV 开始)
+          (VP (VV 出现)
+              (NP-OBJ (NN 萎缩))))
+      (PU 。)))
+	</parse>
+	<arg n="2"> *pro* </arg>
+	<arg n="M" f="ADV"> 长 时间 </arg>
+	<arg n="M" f="ADV"> 过度 </arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-PN (NR 舟山))
+              (NP (NN 渔民)))
+      (VP (VP (ADVP (AD 大多))
+              (VP (VV 采取)
+                  (NP-OBJ (DNP (UCP (IP (NP-SBJ (-NONE- *pro*))
+                                        (VP (PP (P 与)
+                                                (NP (NN 外商)))
+                                            (VP (VV 合资)
+                                                (PU 、)
+                                                (VV 合作))))
+                                    (CC 或)
+                                    (NP (NN 补偿)
+                                        (NN 贸易)))
+                               (DEG 的))
+                          (NP (NN 方式)))))
+          (PU ，)
+          (VP (ADVP (AD 就地))
+              (VP (VV 捕捞)
+                  (PU 、)
+                  (VV 加工)
+                  (CC 和)
+                  (VV 销售))))))
+	</parse>
+	<arg n="0"> 舟山 渔民 </arg>
+	<arg n="M" f="ADV"> 就地 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

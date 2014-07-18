@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 加做 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes in addition"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 不但))
+			(VP (NP-PRD (PN 如此)))))
+	    (PU ，)
+	    (NP-SBJ (PN 她))
+	    (VP (ADVP (AD 还))
+		(VP (VV 打算)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (ADVP (AD 再))
+				    (VP (VV 加做)
+					(NP-OBJ (QP (CD 一)
+						    (CLP (M 份)))
+						(NP (NN 晚餐)
+						    (PU 「)
+						    (NN 便当)
+						    (PU 」)))))
+				(VP (VV 让)
+				    (NP-OBJ (NN 女儿))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (VRD (VV 带)
+						     (VV 回来)))
+					    (VP (VV 吃)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	一 份 晚餐 「 便当 」 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

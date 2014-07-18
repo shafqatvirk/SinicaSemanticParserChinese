@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作词 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="song words of which arg0 writes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 意大利))
+			      (ADJP (JJ 著名))
+			      (NP (NN 音乐家)))
+		      (NP-PN (NR 克·巴廖尼)))
+	      (VP (VV 演唱)
+		  (AS 了)
+		  (NP-OBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VP (PP-LGS (P 由)
+							      (NP (PN 他)
+								  (PN 自己)))
+						      (VP (VCD (VV 作词)
+							       (VV 谱曲))))
+						  (PU 、)
+						  (VP (VA 慷慨激昂))))
+					  (DEC 的)))
+				  (NP-APP (NN 会歌)))
+			  (NP-TTL (PU 《)
+				  (LCP (NP (NN 水))
+				       (LC 中))
+				  (NP (NN 水))
+				  (PU 》))))) 
+	  </parse>
+	  <arg n="0">
+	  由 他 自己 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

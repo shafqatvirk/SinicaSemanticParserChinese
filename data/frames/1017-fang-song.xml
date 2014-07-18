@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放松 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (LCP-TMP (NP (NT 近期))
+			   (LC 内))
+		  (NP-PN-SBJ (NR 欧洲)
+			     (NN 央行))
+		  (VP (ADVP (AD 将))
+		      (ADVP (AD 不))
+		      (VP (VV 会)
+			  (VP (ADVP (AD 进一步))
+			      (VP (VV 放松)
+				  (NP-OBJ (NP (PN 其))
+					  (NP (NN 货币)
+					      (NN 政策)))))))) 
+	  </parse>
+	  <arg n="0">
+	  欧洲 央行 
+	  </arg>
+	  <arg n="1">
+	  其 货币 政策 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近期 内 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

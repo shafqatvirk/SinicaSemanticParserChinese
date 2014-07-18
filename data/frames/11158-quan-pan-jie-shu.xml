@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 全盘皆输 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity suffering a total loss"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (NN 防御))
+		    (VP (ADVP (CS 即使))
+			(VP (VV 能)
+			    (VP (VV 达到)
+				(QP-OBJ (CD 百分之九十九))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 只要))
+			    (VP (VE 有)
+				(NP-OBJ (DNP (QP (CD 百分之一))
+					     (DEG 的))
+					(NP (NN 漏失))))))
+		(PU ，)
+		(ADVP (AD 就))
+		(VP (VV 可能)
+		    (VP (VV 全盘皆输))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 只要 有 百分之一 的 漏失 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	防御 即使 能 达到 百分之九十九 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

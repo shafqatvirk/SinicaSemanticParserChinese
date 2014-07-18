@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入手 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing to start from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 如果))
+			  (VP (VV 说)
+			      (IP-OBJ (NP-SBJ (NP-PN (NR 意大利))
+					      (NP (NN 政府)))
+				      (VP (VC 是)
+					  (VP (PP-DIR (P 从)
+						      (LCP (NP (NN 宏观))
+							   (LC 上)))
+					      (PP-BNF (P 为)
+						      (NP (DNP (NP (NN 欧元))
+							       (DEG 的))
+							  (NP (NN 诞生))))
+					      (VP (VV 做)
+						  (NP-OBJ (NN 准备)))))))))
+	      (PU ，)
+	      (ADVP (AD 那么))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 精明)))
+			      (DEC 的)))
+		      (NP-PN (NR 意大利))
+		      (NP (NN 商人)))
+	      (VP (ADVP (AD 则))
+		  (VP (VC 是)
+		      (VP (VP (PP-DIR (P 从)
+				      (NP (NN 细微处)))
+			      (VP (VV 入手)))
+			  (VP (VV 迎接)
+			      (NP-OBJ (DNP (NP (NN 欧元))
+					   (DEG 的))
+				      (NP (NN 到来)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 精明 的 意大利 商人 
+	  </arg>
+	  <arg n="1">
+	  从 细微处 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <arg n="m" f="adv">
+	  那么 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *pro* 如果 说 意大利 政府 是 从 宏观 上 为 欧元 的 诞生 做 准备 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

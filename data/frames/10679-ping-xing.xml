@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 平行 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="things parallel to each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 又))
+		(PP (P 与)
+		    (NP (DP (DT 其他))
+			(ADJP (NP (NN 水利))
+			      (ADJP (JJ 相关)))
+			(NP (NN 机关))))
+		(VP (VA 平行)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="crd">
+	与 其他 水利 相关 机关 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

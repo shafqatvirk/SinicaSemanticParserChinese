@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提前 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing moved forward"/>
+      <role argnum="2" argrole="extent of advance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-PN-SBJ (NR 中国))
+					  (VP (VV 援建)
+					      (NP-PN-OBJ (NR 多哥))))
+				      (DEC 的)))
+			      (NP-APP (NP (QP (CD ３万))
+					  (NP (NN 人)))
+				      (NP (NN 体育场)))
+			      (NP (NN 工程)))
+			  (QP (OD 第一)
+			      (CLP (M 期)))
+			  (PRN (PU ──)
+			       (NP (NP (NP (NN 主体))
+				       (NP (NN 柱)
+					   (PU 、)
+					   (NN 梁)))
+				   (NP (NN 基础)
+				       (NN 工程)))))
+		  (VP (PP-TMP (P 于)
+			      (NP (NT ２２日)))
+		      (PP-LOC (P 在)
+			      (QP (OD 第１０)
+				  (CLP (M 轴))))
+		      (VP (VV 合龙))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (PP (P 比)
+			  (NP (ADJP (JJ 预定))
+			      (NP (NN 工期))))
+		      (VP (VP (VV 提前)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 个)))
+				      (NP (NN 月))))
+			  (VP (VV 完成)
+			      (NP-OBJ (NN 任务))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  一 个 月 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 预定 工期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (NP (PN 此)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 拱北))
+		      (NP (NN 海关)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 提前)
+			  (NP-OBJ (QP (CD 半))
+				  (NP (NN 小时))))
+		      (VP (VV 开关))))) 
+	  </parse>
+	  <arg n="0">
+	  拱北 海关 
+	  </arg>
+	  <arg n="2">
+	  半 小时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 播映 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="broadcaster"/>
+    <role argnum="1" argrole="news"/>
+    <role argnum="2" argrole="audience"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (VP (ADVP (AD 未))
+              (VP (VV 能)
+                  (VP (PP-LOC (P 在)
+                              (LCP (NP (NN 典礼))
+                                   (LC 上)))
+                      (ADVP (AD 逐一))
+                      (VP (VV 致送)))))
+          (PU ，)
+          (VP (ADVP (AD 只))
+              (VP (VV 能)
+                  (VP (VV 播映)
+                      (NP-OBJ (DNP (NP (NN 贺礼))
+                                   (DEC 的))
+                              (NP (NN 录映带)))))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="ADV"> 只 </arg>
+	<V/>
+	<arg n="1"> 贺礼 的 录映带 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

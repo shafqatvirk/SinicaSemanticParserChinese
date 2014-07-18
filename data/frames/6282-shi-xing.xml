@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 试行 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 tries out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 金)
+		       (NR 马))
+	    (VP (ADVP (AD 先))
+		(VP (VV 试行)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 和)
+				    (NP (NN 大陆)))
+				(VP (PU 「)
+				    (VV 小三通)
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	金 马 
+	</arg>
+	<arg n="1">
+	*PRO* 和 大陆 「 小三通 」 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-TMP (NT 当时))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (PU 「)
+					(PP-MNR (P 以)
+						(NP (NN 学生)))
+					(VP (VC 为)
+					    (NP-PRD (NN 校园)
+						    (NN 主体)))
+					(PU 」))
+				    (PU ，)
+				    (VP (VV 强调)
+					(NP-OBJ (NN 人本)
+						(PU 、)
+						(NN 多元)
+						(CC 和)
+						(NN 弹性)))))
+			    (DEC 的))
+		    (NP (NN 教改)
+			(NN 理念)))
+	    (PU ，)
+	    (VP (ADVP (AD 只))
+		(VP (VV 能)
+		    (VP (PP-MNR (P 以)
+				(NP (DNP (NP (PU 「)
+					     (NN 实验)
+					     (PU 」))
+					 (DEG 之))
+				    (NP (NN 名))))
+			(PU ，)
+			(PP-LOC (P 在)
+				(LCP (NP (NN 教育)
+					 (NN 体制))
+				     (LC 外)))
+			(VP (VV 试行)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 「 以 学生 为 校园 主体 」 ， 强调 人本 、 多元 和 弹性 的 教改 理念 
+	</arg>
+	<arg n="m" f="loc">
+	在 教育 体制 外 
+	</arg>
+	<arg n="m" f="mnr">
+	以 「 实验 」 之 名 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="tmp">
+	当时 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

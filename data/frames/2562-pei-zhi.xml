@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 配置 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity deployed"/>
+      <role argnum="2" argrole="entity deployed for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (ADVP (AD 近))
+			   (QP (CD 两)
+			       (CLP (M 年))))
+		       (LC 来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 广东省))
+	      (VP (VP (ADVP (AD 努力))
+		      (VP (VV 探索)
+			  (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (PP-LOC (P 在)
+							  (LCP (NP (NN 市场)
+								   (NN 经济)
+								   (NN 条件))
+							       (LC 下)))
+						  (PP-MNR (-NONE- *T*-1))
+						  (VP (VV 吸引)
+						      (NP-OBJ (NN 人才))))))
+				      (DEC 的))
+				  (ADJP (JJ 新))
+				  (NP (NN 路子)))))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 积极))
+			  (VP (VV 运用)
+			      (NP-OBJ (NN 市场)
+				      (NN 机制))))
+		      (VP (VV 配置)
+			  (NP-OBJ (NN 人才)
+				  (NN 资源))))
+		  (PU ，)
+		  (VP (ADVP (AD 已))
+		      (VP (VV 取得)
+			  (NP-OBJ (ADJP (JJ 初步))
+				  (NP (NN 成效))))))) 
+	  </parse>
+	  <arg n="0">
+	  广东省 
+	  </arg>
+	  <arg n="1">
+	  人才 资源 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近 两 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

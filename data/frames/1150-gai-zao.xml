@@ -1,0 +1,115 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing transformed"/>
+      <role argnum="2" argrole="transformed into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 天津)
+			 (NN 港务局))
+	      (VP (VP (VV 投资)
+		      (QP-OBJ (CD 五千多万)
+			      (CLP (M 元))))
+		  (PU ，)
+		  (VP (VV 计划)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 用)
+				      (NP-OBJ (QP (CD 十八)
+						  (CLP (M 个)))
+					      (NP (NN 月))))
+				  (VP (BA 将)
+				      (IP-OBJ (NP-SBJ (NP (NN 盐)
+							  (NN 码头))
+						      (ADJP (JJ 专用))
+						      (NP (NN 泊位)))
+					      (VP (VRD (VV 改造)
+						       (VV 为))
+						  (NP-OBJ (QP (CD 一)
+							      (CLP (M 座)))
+							  (NP (QP (CD 一点五万)
+								  (CLP (M 吨)))
+							      (NP (NN 级)))
+							  (ADJP (UCP (ADJP (JJ 散))
+								     (PU 、)
+								     (NP (NN 杂货)))
+								(ADJP (JJ 两用)))
+							  (NP (NN 泊位))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  盐 码头 专用 泊位 
+	  </arg>
+	  <arg n="2" f="into">
+	  一 座 一点五万 吨 级 散 、 杂货 两用 泊位 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 其中))
+	      (VP (VV 包括)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 改造)
+			      (NP-OBJ (ADJP (JJ 现有))
+				      (NP (NN 铁路)))
+			      (QP-EXT (CD 四十四)
+				      (CLP (M 公里)))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  现有 铁路 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 城市)
+			      (NN 基础)
+			      (NN 设施))
+		      (VP (VP (VV 利用)
+			      (NP-OBJ (NN 外资)))
+			  (VP (VV 改造)
+			      (CC 和)
+			      (VV 建设))))
+	      (VP (VV 要)
+		  (VP (VV 取得)
+		      (NP-OBJ (ADJP (JJ 显著))
+			      (NP (NN 成绩)))))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  城市 基础 设施 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

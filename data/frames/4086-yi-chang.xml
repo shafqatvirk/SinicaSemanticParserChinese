@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 异常 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (DP (DT 这)
+			      (CLP (M 种)))
+			  (ADJP (JJ 反常))
+			  (NP (NN 现象))))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-PN (NR 上海))
+			  (NP (NN 园林界)))
+		      (QP (CD 一些))
+		      (NP (NN 行家)))
+	      (VP (ADVP (AD 初步))
+		  (VP (VV 认为)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 可能)
+				  (VP (VC 是)
+				      (NP-PRD (CP-APP (IP (NP-SBJ (NN 天气))
+							  (VP (VA 异常)))
+						      (DEC 的))
+					      (NP (NN 缘故))))))))) 
+	  </parse>
+	  <arg n="0">
+	  天气 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

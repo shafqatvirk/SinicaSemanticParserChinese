@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 租下 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 leases"/>
+    <role argnum="2" argrole="entity arg1 is leased from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NP-PN (NR 北投))
+				 (NP (NN 半山)))
+			     (LC 上)))
+		(VP (VV 租下)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 栋)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 光线))
+					    (VP (ADVP (AD 极))
+						(VP (VA 佳))))
+					(PU ，)
+					(IP (NP-TPC (-NONE- *T*-1))
+					    (NP-SBJ (NN 空间))
+					    (VP (VA 挑高)))
+					(PU ，)
+					(IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 极))
+						(VP (VV 适合)
+						    (NP-OBJ (NN 画图))))))
+				    (DEC 的)))
+			    (QP (CD 三)
+				(CLP (M 层)))
+			    (NP (NN 楼房)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	一 栋 *OP* *T*-1 光线 极 佳 ， *T*-1 空间 挑高 ， *T*-1 极 适合 画图 的 三 层 楼房 
+	</arg>
+	<arg n="m" f="loc">
+	在 北投 半山 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (CP (WHPP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (PP-TMP (-NONE- *T*-3))
+				    (VP (VV 要)
+					(VP (VV 租下)))))
+			    (DEC 的)))
+		    (NP (NN 时候)))
+	    (PU ，)
+	    (NP-SBJ (NN 傻瓜)
+		    (NN 老婆))
+	    (VP (ADVP (AD 还))
+		(VP (VP (VV 担心)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 日後))
+				    (VP (VPT (VV 付)
+					     (AD 不)
+					     (VV 出))
+					(NP-OBJ (NN 房租))))))
+		    (VP (MSP 而)
+			(VP (VV 哭)
+			    (AS 了)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 行政 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 还))
+		  (VP (VV 要求)
+		      (NP-PN-OBJ (DP (DT 各)
+				     (CLP (M 级)))
+				 (NP (NN 人大)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 支持)
+				  (NP-OBJ (NN 政府))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 依法))
+					  (VP (VV 行政)))))
+			      (PU ，)
+			      (CC 并)
+			      (VP (PP-DIR (P 对)
+					  (NP (DNP (NP (NN 政府))
+						   (DEG 的))
+					      (NP (NN 行政)
+						  (NN 行为))))
+				  (ADVP (AD 依法))
+				  (VP (VV 实施)
+				      (NP-OBJ (NN 监督))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

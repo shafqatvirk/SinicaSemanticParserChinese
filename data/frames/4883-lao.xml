@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 老 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 谢)
+		       (NN 医师))
+	    (VP (ADVP (AD 已经))
+		(ADVP (AD 很))
+		(VP (VA 老)
+		    (AS 了)))) 
+	</parse>
+	<arg n="0">
+	谢 医师 
+	</arg>
+	<arg n="m" f="adv">
+	很 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (PP (P 比)
+		    (NP (PN 他们)))
+		(VP (VA 老)
+		    (AS 了)
+		    (VP-EXT (ADVP (AD 那麽))
+			    (VP (VA 多)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="m" f="ext">
+	那麽 多 
+	</arg>
+	<arg n="m" f="adv">
+	比 他们 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

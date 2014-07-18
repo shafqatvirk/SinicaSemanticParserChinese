@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 导 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing that is trasmitted through arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (NP (NN 金属))
+			    (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-4))
+					(VP (VA 优异)))
+				    (DEC 的)))
+			    (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 抗)
+					    (NP-OBJ (NN 电磁波)))
+					(CC 或)
+					(VP (VV 导)
+					    (NP-OBJ (NN 电磁波)))))
+			    (NP (NN 特性)))
+		    (PU ，)
+		    (VP (VV 加上)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 抗)
+					(NP-OBJ (NN 高温)))
+				    (PU 、)
+				    (VP (VV 耐)
+					(NP-OBJ (NN 酸)
+						(NN 碱)))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (DNP (NP (DP (DT 各)
+					      (CLP (M 种)))
+					  (NP (NN 产业)))
+				      (DEG 的))
+				 (NP (NN 用途)))
+			     (LC 上)))
+		(ADVP (AD 都))
+		(ADVP (AD 十分))
+		(VP (VA 广泛)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	电磁波 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 guides"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (PU 「)
+		(NP-SBJ (-NONE- *PRO*))
+		(VP (VP (ADVP (AD 宁))
+			(VP (LB 为)
+			    (IP-OBJ (NP-SBJ (NN 商业))
+				    (VP (MSP 所)
+					(VP (VV 用))))))
+		    (PU ，)
+		    (VP (ADVP (AD 不))
+			(VP (LB 为)
+			    (IP-OBJ (NP-SBJ (NN 政治))
+				    (VP (MSP 所)
+					(VP (VV 导)))))))
+		(PU 」)) 
+	</parse>
+	<arg n="0">
+	政治 
+	</arg>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 归功於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="achievement"/>
+    <role argnum="2" argrole="entity arg0 gives credit for arg1 to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (ADVP (AD 光是))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 看到)
+				(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-3))
+						    (VP (VV 带动)
+							(NP-OBJ (NN 社区)
+								(NN 改造))))
+						(DEC 的)))
+					(ADJP (JJ 主要))
+					(NP (NN 成员)))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (BA 把)
+					(IP-OBJ (NP-SBJ (NN 成就))
+						(VP (VV 归功於)
+						    (NP-OBJ (DP (DT 其他))
+							    (NP (NN 人))))))))))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (ADVP (AD 很))
+		    (VP (VV 令)
+			(NP-OBJ (NN 人))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 动容)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	成就 
+	</arg>
+	<arg n="2">
+	其他 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

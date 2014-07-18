@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 染发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (PP (P 与)
+				    (NP (NN 容貌)))
+				(VP (VV 相关))))
+			(DEC 的)))
+		(IP (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 钻)
+			    (NP-OBJ (NN 耳洞))))
+		    (PU 、)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 染发))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 传说 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing being circulated among arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 当初))
+	    (PP-DIR (PP (P 由)
+			(NP (NN 报社)))
+		    (PP (P 到)
+			(NP (NN 电视))))
+	    (PU ，)
+	    (NP-SBJ (NN 外界))
+	    (VP (VV 传说)
+		(IP-OBJ (NP-SBJ (PN 他))
+			(VP (SB 被)
+			    (VP (NP-MNR (NN 高薪))
+				(VP (VV 挖角))))))) 
+	</parse>
+	<arg n="0">
+	外界 
+	</arg>
+	<arg n="1">
+	他 被 高薪 挖角 
+	</arg>
+	<arg n="m" f="loc">
+	由 报社 到 电视 
+	</arg>
+	<arg n="m" f="tmp">
+	当初 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

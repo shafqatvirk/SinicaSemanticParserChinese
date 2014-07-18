@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流行於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="time/place arg0 is popular"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP-WH (AD 是否))
+		    (ADVP (AD 即))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-6 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-6))
+					    (VP (VP (ADVP (AD 日後))
+						    (VP (VV 流行於)
+							(NP-PN-OBJ (NR 汉代))))
+						(PU 、)
+						(VP (NP-TMP (NT 今天))
+						    (VP (VV 惯称)
+							(NP-OBJ (NN 摇钱树))))))
+					(DEC 的)))
+				(NP (NN 始祖)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-6 
+	  </arg>
+	  <arg n="1">
+	  汉代 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 大惊小怪 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="surprised at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-PN-LOC (NR 东南亚))
+				      (NP-TMP (NT 最近))
+				      (VP (VV 发生))))
+			      (DEC 的)))
+		      (NP (NN 金融)
+			  (NN 危机)))
+	      (VP (VP (VC 是)
+		      (NP-PRD (DNP (LCP (NP (NN 市场)
+					    (NN 经济)
+					    (NN 发展))
+					(LC 中))
+				   (DEG 的))
+			      (NP (NN 自然)
+				  (NN 现象))))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (PN 其)))
+		      (VP (VV 不必)
+			  (VP (VV 大惊小怪)))))) 
+	  </parse>
+	  <arg n="1">
+	  对 其 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 核准 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="checker and permitter"/>
+      <role argnum="1" argrole="thing checked and permitted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 公开))
+			  (VP (VV 发行)
+			      (NP-OBJ (NN 证券)))))
+	      (VP (VV 必须)
+		  (VP (VV 报经)
+		      (NP-OBJ (NP (NP-PN (NN 国务院))
+				  (NP (NN 证券)
+				      (NN 监督)
+				      (NN 管理)
+				      (NN 机构)))
+			      (CC 或者)
+			      (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NN 国务院))
+					      (VP (VV 授权)
+						  (NP-OBJ (-NONE- *T*-2))))
+					  (DEC 的)))
+				  (NP (NN 部门))))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 核准)
+			      (CC 或者)
+			      (VV 审批)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

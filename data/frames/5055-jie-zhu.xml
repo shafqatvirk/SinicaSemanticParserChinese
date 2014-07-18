@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 藉助 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 gets help from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 现代))
+		    (NP (NN 人)))
+	    (VP (VP (VV 藉助)
+		    (NP-OBJ (NN 教练)
+			    (CC 与)
+			    (NN 教学)
+			    (NN 录影带)))
+		(VP (MSP 来)
+		    (VP (VV 改善)
+			(NP-OBJ (NN 球技)))))) 
+	</parse>
+	<arg n="0">
+	现代 人 
+	</arg>
+	<arg n="1">
+	教练 与 教学 录影带 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

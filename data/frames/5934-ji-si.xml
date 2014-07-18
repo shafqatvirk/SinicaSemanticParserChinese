@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 亟思 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 wants"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 外交)
+		    (NN 人员))
+	    (VP (VV 亟思)
+		(NP-OBJ (DNP (NP (NN 逆境))
+			     (DEG 的))
+			(NP (NN 突破))))) 
+	</parse>
+	<arg n="0">
+	外交 人员 
+	</arg>
+	<arg n="1">
+	逆境 的 突破 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 大陆))
+	    (VP (VV 亟思)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 回归)
+			    (NP-OBJ (NT 五四)))))) 
+	</parse>
+	<arg n="0">
+	大陆 
+	</arg>
+	<arg n="1">
+	*PRO* 回归 五四 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

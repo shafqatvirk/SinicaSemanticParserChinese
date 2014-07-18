@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扣留 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity detained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (NP-PN (NR 香港))
+			  (NP (NN 渔船)))
+		  (VP (LB 被)
+		      (IP-OBJ (NP-PN-SBJ (NR 菲律宾)
+					 (CC 和)
+					 (NR 日本))
+			      (VP (VV 扣留))))) 
+	  </parse>
+	  <arg n="0">
+	  菲律宾 和 日本 
+	  </arg>
+	  <arg n="1">
+	  香港 渔船 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

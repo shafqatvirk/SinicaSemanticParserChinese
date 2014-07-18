@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 扬名 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 becomes famous"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 辅导金))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 最))
+				    (VP (VA 大))))
+			    (DEC 的)))
+		    (NP (NN 成就)))
+	    (VP (VC 是)
+		(IP-PRD (NP-SBJ (-NONE- *PRO*))
+			(VP (VRD (VV 培育)
+				 (VV 出))
+			    (NP-OBJ (NP-APP (QP (CD 不少))
+					    (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (VV 扬名)
+							    (NP-OBJ (NN 国际))))
+						    (DEC 的)))
+					    (NP (NN 导演)))
+				    (PU ，)
+				    (NP (ADVP (AD 如))
+					(NP-PN (NR 李安)
+					       (PU 、)
+					       (NR 侯孝贤)
+					       (PU 、)
+					       (NR 蔡明亮)
+					       (ETC 等)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	国际 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 收店 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 夫妻))
+		    (NP (PN 俩)))
+	    (VP (NP-PRP (-NONE- *T*-1))
+		(ADVP (AD 迄今))
+		(ADVP (AD 不))
+		(VP (VV 愿)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 收店)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 困难 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 明年))
+		  (NP-SBJ (NN 银行业))
+		  (VP (VV 会)
+		      (VP (ADVP (AD 更加))
+			  (VP (VA 困难))))) 
+	  </parse>
+	  <arg n="0">
+	  银行业 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  明年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更加 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 当前))
+	      (NP-TPC (QP (CD 一些))
+		      (ADJP (JJ 国有))
+		      (NP (NN 企业)))
+	      (NP-SBJ (NN 经营))
+	      (VP (VA 困难))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  一些 国有 企业 
+	  </arg>
+	  <arg n="0" f="pse">
+	  经营 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当前 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (IP (NP-SBJ (NN 价格))
+			      (VP (ADVP (AD 过於))
+				  (VP (VA 昂贵))))
+			  (PU 、)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 明显))
+				  (VP (VV 不利於)
+				      (NP-OBJ (NN 销售)))))
+			  (PU ，)
+			  (IP (NP-SBJ (ADVP (AD 像是))
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-TPC (-NONE- *T*-1))
+						      (QP-SBJ (CD 一)
+							      (CLP (M 张)))
+						      (VP (QP-PRD (ADVP (AD 上))
+								  (QP (CD 百万)
+								      (CLP (M 元))))))
+						  (DEC 的)))
+					  (NP (NN 健康)
+					      (NN 床组))))
+			      (PU ，)
+			      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (CS 一旦))
+					      (VP (VV 拆封))))
+				  (ADVP (AD 就))
+				  (ADVP (AD 不))
+				  (VP (VV 能)
+				      (VP (VV 退货)))))))
+	      (PU 、)
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 要)
+			  (NP-OBJ (NN 寻常人))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 去)
+				  (VP (VV 推销)
+				      (NP-OBJ (DP (DT 这)
+						  (CLP (M 类)))
+					      (NP (NN 商品))))))))
+	      (VP (ADVP (AD 更))
+		  (VP (VC 是)
+		      (VP (VA 困难))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 要 寻常人 *PRO* 去 推销 这 类 商品 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 价格 过於 昂贵 、 *pro* 明显 不利於 销售 ， 像是 *OP* *T*-1 一 张 上 百万 元 的 健康 床组 ， *PRO* 一旦 拆封 就 不 能 退货 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

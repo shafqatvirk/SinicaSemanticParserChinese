@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 移 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="location arg1 is moved to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 世界)
+			       (NN 经济))
+			   (DEG 的))
+		      (NP (NN 重心)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 将))
+		  (VP (VV 移)
+		      (PP (P 向)
+			  (NP (NN 东方)))))) 
+	  </parse>
+	  <arg n="1">
+	  世界 经济 的 重心 
+	  </arg>
+	  <arg n="2">
+	  向 东方 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="location arg1 is moved to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 有的))
+		      (ADJP (JJ 跨国))
+		      (NP (NN 公司)))
+	      (VP (ADVP (AD 已经)
+			(CC 或)
+			(AD 正在))
+		  (VP (VV 研究)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NP (PN 其))
+						  (NP (NN 地区)
+						      (NN 总部)))
+					  (VP (VRD (VV 移)
+						   (VV 至))
+					      (NP-PN-OBJ (NR 中国))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  其 地区 总部 
+	  </arg>
+	  <arg n="2">
+	  中国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

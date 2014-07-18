@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 人性化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 causes to be humane"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (CP (WHNP-2 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-2))
+					   (VP (VV 人性化)))
+				       (DEC 的)))
+			       (ADJP (JJ 小))
+			       (NP (NN 班)))
+			   (LC 上)))
+	      (PU ，)
+	      (IP (IP (NP-SBJ (NN 老师))
+		      (VP (PP-MNR (P 凭)
+				  (NP (NN 几)))
+			  (VP (MSP 而)
+			      (VP (VV 坐)))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 生徒))
+		      (VP (VP (NP-ADV (NN 手))
+			      (VP (VV 捧)
+				  (NP-OBJ (NN 简册))))
+			  (PU ，)
+			  (VP (ADVP (AD 分))
+			      (VP (VV 列)
+				  (NP-OBJ (NN 左右)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

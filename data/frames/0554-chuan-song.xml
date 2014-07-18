@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传颂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="praiser"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人们))
+	      (VP (ADVP (AD 因此))
+		  (ADVP (AD 到处))
+		  (VP (VV 传颂)
+		      (AS 着)
+		      (NP-OBJ (DNP (NP (NN 水)
+				       (NN 法庭))
+				   (DEG 的))
+			      (NP (NN 奇迹)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="1">
+	  水 法庭 的 奇迹 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  到处 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

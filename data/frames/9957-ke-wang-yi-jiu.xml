@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 渴望已久 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 longs for a long time"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VP (VC 是)
+		      (IP-PRD (NP-PN-SBJ (NR 马修))
+			      (VP (QP (OD 第一)
+				      (CLP (M 次)))
+				  (VP (VV 到)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-TPC (-NONE- *T*-1))
+							  (NP-SBJ (PN 他))
+							  (VP (VV 渴望已久)))
+						      (DEC 的)))
+					      (DNP (NP (NN 知音))
+						   (DEG 之))
+					      (NP (NN 地)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 也))
+		      (VP (VC 是)
+			  (IP (NP-SBJ (DNP (NP-PN (NR 台湾))
+					   (DEG 的))
+				      (NP (NN 乐迷)))
+			      (VP (QP (OD 第一)
+				      (CLP (M 次)))
+				  (ADVP (AD 真正))
+				  (VP (VP (VV 认识)
+					  (NP-PN-OBJ (NR 马修)))
+				      (PU ，)
+				      (VP (DVP (VP (VA 面对面))
+					       (DEV 地))
+					  (VP (VV 接触)
+					      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							  (CP (IP (NP-TPC (-NONE- *T*-2))
+								  (NP-SBJ (-NONE- *pro*))
+								  (VP (VV 聆听已久)))
+							      (DEC 的)))
+						      (NP (NP (NN 音乐)
+							      (NN 制作人))
+							  (CC 和)
+							  (NP (NN 演奏者))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

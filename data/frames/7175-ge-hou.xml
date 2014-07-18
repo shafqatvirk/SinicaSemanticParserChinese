@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 割喉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity whose throat arg0 cuts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 根据)
+		    (NP (NN 报载)))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 香港))
+		    (NP (NN 大哥大)
+			(NN 市场)))
+	    (VP (LCP-TMP (NP (NT 三月))
+			 (LC 间))
+		(VP (VE 有)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 场)))
+			    (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 割喉)))
+			    (NP (NN 大战)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

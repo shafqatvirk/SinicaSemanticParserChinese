@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 腰斩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity cut"/>
+      <role argnum="2" argrole="quantity cut off from arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 至今))
+					      (ADVP (AD 已经))
+					      (VP (SB 被)
+						  (VP (VV 腰斩)
+						      (AS 了)
+						      (QP-OBJ (CD ３７０多)
+							      (CLP (M 场)))))))
+				      (DEC 的)))
+			      (NP (NN 联赛)))
+		      (VP (ADVP (CS 如果))
+			  (VP (VV 得以)
+			      (VP (VV 残存)))))
+	      (PU ，)
+	      (IP-TPC-2 (IP (NP-SBJ (NN 赛季))
+			    (VP (ADVP (AD 是否))
+				(VP (VV 会)
+				    (VP (VV 支离破碎)))))
+			(PU ，)
+			(IP (NP-SBJ (NN 比赛))
+			    (VP (ADVP (AD 将))
+				(ADVP (AD 如何))
+				(VP (VV 进行)))))
+	      (PU ，)
+	      (ADVP (AD 想必))
+	      (NP-SBJ (NN 球迷))
+	      (VP (ADVP (AD 极其))
+		  (VP (VV 关切)
+		      (IP-OBJ (-NONE- *T*-2))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  ３７０多 场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <arg n="m" f="adv">
+	  至今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

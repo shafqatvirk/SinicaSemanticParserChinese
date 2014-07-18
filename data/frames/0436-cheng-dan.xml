@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承担 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="responsibility bearer"/>
+      <role argnum="1" argrole="responsibility"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 中央)
+			  (CC 和)
+			  (NN 地方))
+		      (NP (NN 财政)))
+	      (VP (ADVP (AD 各))
+		  (VP (VV 承担)
+		      (QP-OBJ (CD 一半))))) 
+	  </parse>
+	  <arg n="0">
+	  中央 和 地方 财政 	  
+	  </arg>
+	  <arg n="1">
+	  一半 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  各 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 该))
+			  (NP (NN 银行)))
+		  (VP (VP (PP-DIR (P 对)
+				  (NP (NP-PN (NP-PN (NR 上海))
+					     (NP (ADJP (JJ 家用))
+						 (NP (NN 纺织品)))
+					     (NP (NN 进出口)
+						 (NN 公司)))
+				      (DNP (NP (QP (ADVP (AD 共))
+						   (QP (CD 三十一)
+						       (CLP (M 笔))))
+					       (NP (NN 托收)
+						   (NN 单据)))
+					   (DEG 的))
+				      (NP (NN 款项))))
+			  (VP (VV 承担)
+			      (NP-OBJ (DP (DT 全部))
+				      (NP (NN 责任)))))
+		      (PU ，)
+		      (VP (VV 索赔)
+			  (QP-OBJ (CD 一百八十五万)
+				  (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  该 银行 	  
+	  </arg>
+	  <arg n="1">
+	  全部 责任 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP (-NONE- *OP*))
+		      (IP (NP-PN-SBJ (NR 人保)
+				     (NN 公司))
+			  (VP (PP-BNF (P 为)
+				      (NP (NP-PN (NR 甘肃省))
+					  (NP (NN 进出口)
+					      (NN 贸易))))
+			      (VP (VV 承担)
+				  (NP-OBJ (NN 风险))
+				  (NP-EXT (-NONE- *T*-1))))))
+		  (NP (NN 金额))) 
+	  </parse>
+	  <arg n="0">
+	  人保 公司 	  
+	  </arg>
+	  <arg n="1">
+	  风险 	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 甘肃省 进出口 贸易 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-DIR (P 朝着)
+		  (NP (CP-APP (IP (NP-SBJ (NP-APP (NN 国家)
+						  (PU 、)
+						  (NN 集体)
+						  (PU 、)
+						  (NN 个人))
+					  (QP (CD 三))
+					  (NP (NN 方)))
+				  (VP (ADVP (AD 共同))
+				      (VP (VV 承担))))
+			      (DEC 的))
+		      (NP (NN 方向)))) 
+	  </parse>
+	  <arg n="0">
+	  国家 、 集体 、 个人 三 方 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  共同 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

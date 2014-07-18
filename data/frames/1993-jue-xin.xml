@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 决心 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is determined to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 中国))
+			      (ADJP (JJ 最大))
+			      (NP (NN 城市)))
+		      (NP-PN (NR 上海)))
+	      (VP (VV 决心)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 抓住)
+				  (NP-OBJ (DNP (QP (NP (DP (DT 本))
+						       (NP (NN 世纪)))
+						   (ADJP (JJ 最后))
+						   (QP (CD 三)
+						       (CLP (M 年))))
+					       (DEG 的))
+					  (NP (NN 发展)
+					      (NN 时机))))
+			      (PU ，)
+			      (VP (PP (P 到)
+				      (NP (NT 二０００年)))
+				  (VP (VV 实现)
+				      (NP-OBJ (ADJP (JJ 人均))
+					      (NP (NN 国内)
+						  (NN 生产)
+						  (NN 总值)))
+				      (QP-EXT (CD 五千)
+					      (CLP (M 美元))))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 最大 城市 上海 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 抓住 本 世纪 最后 三 年 的 发展 时机 ， 到 二０００年 实现 人均 国内 生产 总值 五千 美元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

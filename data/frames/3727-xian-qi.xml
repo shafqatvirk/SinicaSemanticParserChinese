@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 限期 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="setter of time limit"/>
+      <role argnum="1" argrole="thing which needs to be done before time limit"/>
+      <role argnum="2" argrole="entity time limit is set for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DNP (CP (PU “)
+			   (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (VE 无)
+					   (NP-OBJ (NN 条件))))
+				   (DEC 的)))
+			   (CC 和)
+			   (CP (WHNP-2 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-2))
+				       (VP (AD 不)
+					   (VP (VV 限期))))
+				   (DEC 的)))
+			   (PU ”))
+		       (DEG 的))
+		  (NP (NN 停火))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 同时))
+		  (PU ，)
+		  (VP (VP (VV 加强)
+			  (AS 了)
+			  (NP-OBJ (DNP (PP (P 对)
+					   (NP (NN 外商)
+					       (NN 投资)
+					       (NN 企业)
+					       (NN 合同)
+					       (NN 履约)))
+				       (DEG 的))
+				  (NP (NN 监管)
+				      (NN 工作))))
+		      (PU ，)
+		      (VP (VV 督促)
+			  (NP-OBJ (NN 企业))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 自觉))
+				  (VP (VV 履行)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (NN 合同))
+							  (VP (VV 规定)
+							      (NP-OBJ (-NONE- *T*-1))))
+						      (DEC 的)))
+					      (NP (NN 权力)
+						  (PU 、)
+						  (NN 义务)))))))
+		      (PU ，)
+		      (VP (PP-DIR (P 对)
+				  (NP (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VV 违约)))
+					      (DEC 的)))))
+			  (VP (VP (VV 进行)
+				  (NP-OBJ (NN 批评)
+					  (NN 教育)))
+			      (PU ，)
+			      (VP (VV 限期)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 改正))))))
+		      (PU ；)
+		      (VP (PP-DIR (P 对)
+				  (NP (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (ADVP (AD 违法))
+						      (VP (VV 经营))))
+					      (DEC 的)))))
+			  (ADVP (AD 依法))
+			  (VP (VV 查处)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 改正 	  
+	  </arg>
+	  <arg n="2">
+	  对 *OP* *T*-2 违约 的 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

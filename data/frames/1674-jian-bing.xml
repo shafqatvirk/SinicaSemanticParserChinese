@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兼并 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="side seeking merger"/>
+      <role argnum="1" argrole="side accepting merger"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (PP-MNR (P 按照)
+		      (NP (DNP (NP (NN 汽车)
+				   (NN 工业)
+				   (NN 规模)
+				   (NN 经济)
+				   (NN 发展))
+			       (DEG 的))
+			  (NP (NN 需求))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 一汽))
+	      (VP (VP (VV 实施)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 大))
+				       (NP (NN 规模)))
+				   (DEG 的))
+			      (NP (ADJP (JJ 低))
+				  (NP (NN 成本)))
+			      (NP (NN 扩张))))
+		  (PU ，)
+		  (VP (ADVP (AD 先后))
+		      (VP (VP (VV 兼并)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (PU 、)
+			  (VP (VV 收购)
+			      (AS 了)
+			      (NP-OBJ-1 (QP (CD 二十六)
+					    (CLP (M 家)))
+					(NP (NN 地方)
+					    (NN 企业)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  一汽 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-1 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按照 汽车 工业 规模 经济 发展 的 需求 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 号令 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 calls on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 大陆))
+	      (PP-LOC (P 在)
+		      (LCP (UCP (NP (NP-PN (NR 江泽民)
+					   (NN 主席))
+				    (QP (CD 一)
+					(CLP (M 声)))
+				    (NP (NN 号令)))
+				(CC 与)
+				(IP (NP-SBJ (NN 台商))
+				    (VP (VV 推波助澜))))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (NN 高尔夫))
+	      (VP (ADVP (AD 也))
+		  (PP-DIR (P 朝)
+			  (NP (ADJP (JJ 职业化))
+			      (NP (NN 运动))))
+		  (VP (VV 迈进)))) 
+	  </parse>
+	  <arg n="0">
+	  江泽民 主席 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  一 声 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

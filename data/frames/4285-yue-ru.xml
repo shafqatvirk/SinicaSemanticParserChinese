@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 月入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="monthly income of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (QP (CD 许多))
+			  (NP (NN 传销)
+			      (NN 公司)))
+		  (VP (VV 喜欢)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-MNR (P 用)
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (PU 「)
+						      (ADVP (AD 快速))
+						      (VP (VV 致富))
+						      (PU 」))
+						  (PU 、)
+						  (VP (PU 「)
+						      (ADVP (AD 轻轻松松))
+						      (VP (VV 月入)
+							  (QP-OBJ (CD 百万)))
+						      (PU 」)))))
+				  (VP (MSP 来)
+				      (VP (VV 吸引)
+					  (NP-OBJ (NN 消费者))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 加入)
+						  (NP-OBJ (NN 传销)
+							  (NN 行列)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  百万 
+	  </arg>
+	  <arg n="m" f="adv">
+	  轻轻松松 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

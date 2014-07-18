@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 命 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="order giver"/>
+    <role argnum="1" argrole="entity order given to"/>
+    <role argnum="2" argrole="order"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (LCP-APP (NP (ADVP (AD 大约))
+				 (NP (LCP (NP (NN 纪元))
+					  (LC 前))
+				     (NP (NT 八十年))))
+			     (LC 左右))
+		    (PU ，)
+		    (NP-PN (NR 汉昭帝))
+		    (NP (NN 中期)))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 开始)
+		(VP (VP (VV 命)
+			(NP-PN-OBJ (NR 陈农))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 收集)
+				(NP-OBJ (NN 天下)
+					(NN 佚书)))))
+		    (PU ，)
+		    (VP (VV 召)
+			(NP-PN-OBJ (NR 刘向))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 加以)
+				(VP (VCD (VV 整理)
+					 (VV 校正))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	陈农 
+	</arg>
+	<arg n="2">
+	*PRO* 收集 天下 佚书 
+	</arg>
+	<arg n="m" f="tmp">
+	大约 纪元 前 八十年 左右 ， 汉昭帝 中期 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

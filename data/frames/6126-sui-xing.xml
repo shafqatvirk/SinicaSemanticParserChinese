@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 随行 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person accompanying someone in travel"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 加上)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 随行)))
+					(DEC 的)))
+				(QP (CD 五十多)
+				    (CLP (M 位)))
+				(NP (NN 记者)))))
+	    (PU ，)
+	    (NP-SBJ (NN 参访团)
+		    (NN 成员))
+	    (VP (NP-PRD (QP (ADVP (AD 将近))
+			    (QP (CD 二百)))
+			(NP (NN 人))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,132 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 演讲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="topic arg0 lectures about"/>
+    <role argnum="2" argrole="audience"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-3 (PP-PRP (P 为了)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 募集)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (NP-MNR (-NONE- *T*-1))
+							  (VP (VV 兴建)
+							      (NP-OBJ (NN 台商)
+								      (NN 小学)))))
+						  (DEC 的)))
+					  (NP (NN 经费))))))
+		  (PU ，)
+		  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-2))
+				      (NP-SBJ (NP (NN 大陆)
+						  (NN 投资))
+					      (NP (NN 经验)))
+				      (VP (VA 丰富)))
+				  (DEC 的)))
+			  (NP-PN (NR 叶宏灯)))
+		  (VP (VP (ADVP (AD 常))
+			  (VP (VP (VV 回)
+				  (NP-PN-OBJ (NR 台)))
+			      (VP (VV 演讲)
+				  (NP-OBJ (NN 专业)
+					  (NN 议题)))))
+		      (PU ，)
+		      (VP (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NN 演讲费))
+				      (VP (VV 提)
+					  (DER 得)
+					  (VP-EXT (ADVP (AD 很))
+						  (VP (VA 高))))))
+			  (PU ，)
+			  (VP (VV 希望)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 能)
+					  (VP (VP (ADVP (AD 多))
+						  (VP (VV 赚)
+						      (NP-OBJ (QP (CLP (M 点)))
+							      (NP (NN 钱)))))
+					      (VP (VV 挹注)
+						  (NP-OBJ (NN 学校)))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 大陆 投资 经验 丰富 的 叶宏灯 
+	</arg>
+	<arg n="1">
+	专业 议题 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 募集 *OP* *pro* *T*-1 兴建 台商 小学 的 经费 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (LCP (IP (NP-PN-SBJ (NR 陈水扁))
+			     (VP (VV 演讲)))
+			 (LC 之後)))
+	    (PU ，)
+	    (NP-SBJ (NP (NN 国内))
+		    (DP (DT 各))
+		    (NP (NN 政党)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 发表)
+		    (NP-OBJ (DNP (NP (PN 他们))
+				 (DEG 的))
+			    (NN 意见))))) 
+	</parse>
+	<arg n="0">
+	陈水扁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (PP-TMP (P 在)
+			(NP (NT 今年)
+			    (NT 五月)))
+		(PP-DIR (P 对)
+			(NP (NP-PN (NR 台大)
+				   (NN 政治系))
+			    (NP (NN 学生))))
+		(VP (VV 演讲)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	对 台大 政治系 学生 
+	</arg>
+	<arg n="m" f="tmp">
+	在 今年 五月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

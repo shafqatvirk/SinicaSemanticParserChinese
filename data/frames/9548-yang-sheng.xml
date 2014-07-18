@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 养生 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person taking care of his health"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 多))
+		      (VP (VV 陪伴)
+			  (NP-OBJ (NN 父母))))
+		  (PU ，)
+		  (CC 并且)
+		  (VP (VV 鼓励)
+		      (NP-OBJ (PN 他们))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VSB (VV 运动)
+				   (VV 养生))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

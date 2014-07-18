@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 报考 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="institution arg0 applies for admission into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (NP-TMP (NT 去年))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (QP (CD 十二万))
+				    (NP (NN 人)))
+			    (VP (VV 报考)
+				(NP-OBJ (NN 研究所))))))) 
+	</parse>
+	<arg n="0">
+	十二万 人 
+	</arg>
+	<arg n="1">
+	研究所 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 机械所))
+	    (VP (VP (VV 计画)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 录取)
+				(NP-OBJ (QP (CD 十))
+					(NP (NN 人))))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (ADVP (AD 只))
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ (QP (CD 三十))
+					(NP (NN 人)))
+				(VP (VV 报考))))))) 
+	</parse>
+	<arg n="0">
+	三十 人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

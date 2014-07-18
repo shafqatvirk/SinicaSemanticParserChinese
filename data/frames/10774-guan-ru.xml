@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 关入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 imprisons arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ-1 (NN 师父) )
+	    (VP (ADVP (AD 却))
+		(PP-PRP (P 因)
+			(NP (NN 贪污) ))
+		(VP (VP (SB 被)
+			(VP (VP (VV 罚)
+				(NP-OBJ (-NONE- *-1)))
+			    (VP (VV 关入)
+				(LCP-OBJ (NP (NN 井) )
+					 (LC 中)))))
+		    (PU ，)
+		    (VP (VV 化为)
+			(NP-OBJ (NP (QP (CD 三))
+				    (NP (NN 足)))
+				(NP (NN 蟾蜍))))))) 
+	</parse>
+	<arg n="1">
+	师父 
+	</arg>
+	<arg n="2">
+	井 中 
+	</arg>
+	<arg n="m" f="prp">
+	因 贪污 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

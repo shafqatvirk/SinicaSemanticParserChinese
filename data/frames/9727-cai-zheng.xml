@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 采证 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对於)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 定罪率))
+				      (VP (ADVP (AD 偏))
+					  (VP (VA 低))))
+				  (DEC 的)))
+			  (NP (NN 公务员)
+			      (NN 图利罪))))
+	      (PU ，)
+	      (NP-PN-SBJ (NN 法务部))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 要求)
+		      (NP-OBJ (DP (DT 各))
+			      (NP (NN 检察署)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 要)
+			      (VP (ADVP (AD 审慎))
+				  (VP (VCD (VV 采证)
+					   (VV 认定))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  审慎 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

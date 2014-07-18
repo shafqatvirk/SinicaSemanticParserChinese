@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 效力于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 renders service to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 斯通))
+	      (VP (VP (ADVP (AD 就))
+		      (VP (VV 出生)
+			  (PP-LOC (P 在)
+				  (NP (NP-PN (NR 英格兰))
+				      (NP (NN 东北部))))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 现在))
+		      (VP (VV 效力于)
+			  (NP-PN-OBJ (NR 诺丁汉)
+				     (NR 森林队)))))) 
+	  </parse>
+	  <arg n="0">
+	  斯通 
+	  </arg>
+	  <arg n="1">
+	  诺丁汉 森林队 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

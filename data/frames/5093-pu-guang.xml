@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 曝光 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 exposes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (LCP (LCP (NP (NT 去年))
+				   (LC 中))
+			      (CC 到)
+			      (LCP (NP (NT 今年))
+				   (LC 初)))
+			 (DEG 的))
+		    (ADJP (JJ 本土型))
+		    (NP (NN 金融)
+			(NN 风暴)))
+	    (PU ，)
+	    (VP (BA 将)
+		(IP-OBJ (IP-SBJ (NP-APP (QP (CD 许多))
+					(CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (LCP-LOC (NP (NN 台面))
+								 (LC 下))
+							(VP (VV 游走)
+							    (NP-OBJ (NN 法律)
+								    (NN 边缘)))))
+						(DEC 的)))
+					(ADJP (JJ 危险))
+					(NP (NN 交易)))
+				(IP (ADVP (AD 如))
+				    (IP (IP (NP (-NONE- *PRO*))
+					    (VP (ADVP (AD 超额))
+						(VP (VV 贷款))))
+					(PU 、)
+					(IP (NP-SBJ (NP (NN 公司)
+							(NN 董监事))
+						    (NP (NN 持股)))
+					    (VP (NP-MNR (ADJP (JJ 高))
+							(NP (NN 比例)))
+						(VP (VV 质押))))
+					(ETC 等))))
+			(VP (ADVP (AD 一一))
+			    (VP (VV 曝光)))))) 
+	</parse>
+	<arg n="0">
+	去年 中 到 今年 初 的 本土型 金融 风暴 
+	</arg>
+	<arg n="1">
+	许多 *OP* *T*-1 台面 下 游走 法律 边缘 的 危险 交易 如 *PRO* 超额 贷款 、 公司 董监事 持股 高 比例 质押 等 
+	</arg>
+	<arg n="m" f="adv">
+	一一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 最近))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (NP-APP (ADJP (JJ 老))
+						(NP (NN 作家)))
+					(NP-PN (NR 张拓芜)))
+				(VP (PP-LOC (P 在)
+					    (NP (NN 街头)))
+				    (VP (VP (VV 卖)
+					    (NP-OBJ (NN 彩券)))
+					(VP (VV 为生)))))
+			    (DEC 的))
+		    (NP (NN 新闻)))
+	    (VP (VV 曝光))) 
+	</parse>
+	<arg n="1">
+	老 作家 张拓芜 在 街头 卖 彩券 为生 的 新闻 
+	</arg>
+	<arg n="m" f="tmp">
+	最近 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (PP (P 从)
+			(IP (IP (NP-SBJ (NN 媒体))
+				(VP (VV 曝光)))
+			    (PU 、)
+			    (IP (NP-SBJ (NN 广告))
+				(VP (VV 刊登)))))
+		    (PU 、)
+		    (PP (P 到)
+			(NP (NN 公关)
+			    (NN 活动))))
+	    (NP-TPC (PU 「)
+		    (NN 行销)
+		    (NN 三部曲)
+		    (PU 」))
+	    (PU ，)
+	    (NP-SBJ (PN 他们))
+	    (VP (VV 投下)
+		(NP-OBJ (DNP (NP (QP (ADVP (AD 约))
+				     (QP (CD 八百万)))
+				 (NP (NN 台币)))
+			     (DEG 的))
+			(NP (NN 成本))))) 
+	</parse>
+	<arg n="0">
+	媒体 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

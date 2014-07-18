@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 用完 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 uses up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (BA 把)
+			    (IP-OBJ (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *pro*))
+							(VP (ADVP (AD 没))
+							    (VP (VV 用完)
+								(NP-OBJ (-NONE- *T*-3)))))
+						    (DEC 的)))
+					    (NP (NN 药)))
+				    (VP (ADVP (AD 随便))
+					(VP (VV 丢弃))))))
+		(VP (ADVP (AD 也))
+		    (VP (VV 可能)
+			(VP (VV 造成)
+			    (NP-OBJ (NN 污染)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<arg n="m" f="adv">
+	没 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (ADJP (JJ 一般))
+		    (NP (NN 企业) ))
+	    (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (VV 到)
+			(AS 了)
+			(NP-OBJ (NT 年底) )))
+	    (PU ，)
+	    (NP-SBJ (NN 人事)
+		    (NN 广告)
+		    (NN 预算) )
+	    (VP (ADVP (AD 大多))
+		(VP (VV 用完)))) 
+	</parse>
+	<arg n="0">
+	一般 企业 
+	</arg>
+	<arg n="1">
+	人事 广告 预算 
+	</arg>
+	<arg n="m" f="adv">
+	大多 
+	</arg>
+	<arg n="m" f="tmp">
+	*pro* 到 了 年底 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

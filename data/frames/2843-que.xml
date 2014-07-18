@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity lacking"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 现))
+		  (ADVP (AD 已))
+		  (VP (VE 有)
+		      (NP-OBJ (QP (CD 三亿)
+				  (CLP (M 亩)))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (ADVP (AD 严重))
+					  (VP (VV 缺)
+					      (NP-OBJ (NN 钾))))))
+			      (NP (NN 农田)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  钾 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

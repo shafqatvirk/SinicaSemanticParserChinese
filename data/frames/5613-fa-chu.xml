@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 伐除 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 cuts down and removed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (NP-SBJ (DNP (NP-PN (NR 栖兰))
+				     (DEG 的))
+				(NP (NN 管理)
+				    (NN 单位)))
+			(VP (VC 是)
+			    (NP-PN-PRD (NN 退辅会)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 过往))
+		(ADVP (AD 已))
+		(VP (VV 伐除)
+		    (NP-OBJ (QP (ADVP (AD 将近))
+				(QP (CD 六千)
+				    (CLP (M 公顷))))
+			    (NP (NN 桧木林)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	将近 六千 公顷 桧木林 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="tmp">
+	过往 
+	</arg>
+	<arg n="m" f="prp">
+	由於 栖兰 的 管理 单位 是 退辅会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 讲求)
+				    (NP-OBJ (NN 速效))))
+			    (DEC 的)))
+		    (NP (NN 台湾人)))
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (NN 桧木林))
+				 (VP (VV 伐除)))
+			     (LC 後)))
+		(PU ，)
+		(ADVP (AD 通常))
+		(ADVP (AD 都))
+		(VP (VV 栽种)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (QP-ADV (CD 二十)
+						    (CLP (M 年)))
+					    (ADVP (AD 即))
+					    (VP (VV 可)
+						(VP (VV 砍伐)))))
+				    (DEC 的)))
+			    (NP (NN 柳杉)))))) 
+	</parse>
+	<arg n="1">
+	桧木林 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 负于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loser"/>
+      <role argnum="1" argrole="winner"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 托比亚斯·弗雷德里克松))
+	      (VP (VP (PP-LOC (P 在)
+			      (NP-PN (NR 米兰)))
+		      (ADVP (AD 曾))
+		      (VP (VV 闯进)
+			  (NP-OBJ (NN 半决赛))))
+		  (PU ，)
+		  (VP (ADVP (AD 但))
+		      (PP-LOC (P 在)
+			      (LCP (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						   (VP (VV 争夺)
+						       (NP-OBJ (NN 决赛权))))
+					       (DEC 的))
+				       (NP (NN 比赛)))
+				   (LC 中)))
+		      (VP (VV 负于)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 后来))
+						  (VP (VV 夺得)
+						      (NP-OBJ (NN 冠军)))))
+					  (DEC 的)))
+				  (NP-APP (NN 哥哥))
+				  (NP-PN (NR 马蒂亚斯·弗雷德里克松))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  托比亚斯·弗雷德里克松 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 后来 夺得 冠军 的 哥哥 马蒂亚斯·弗雷德里克松 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *PRO* 争夺 决赛权 的 比赛 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

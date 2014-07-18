@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 向 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="direction arg0 moves in"/>
+      <role argnum="2" argrole="location arg0 moves from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 正))
+		  (VP (VV 处于)
+		      (LCP-OBJ (NP (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					       (VP (PP-DIR (P 由)
+							   (NP (NN 计划)
+							       (NN 经济)))
+						   (VP (VV 向)
+						       (NP-OBJ (NN 社会主义)
+							       (NN 市场)
+							       (NN 经济)
+							       (NN 体制)))))
+					   (DEC 的))
+				   (NP (NN 转轨)
+				       (NN 过程)))
+			       (LC 中))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  社会主义 市场 经济 体制 
+	  </arg>
+	  <arg n="2">
+	  由 计划 经济 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

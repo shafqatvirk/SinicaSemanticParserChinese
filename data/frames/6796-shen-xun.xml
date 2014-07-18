@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 审讯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 interrogates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (NP-LOC (-NONE- *T*-1))
+		(NP-TMP (NT 昔时))
+		(VP (VCD (VV 审讯)
+			 (VV 处决))
+		    (NP-OBJ (NP (ADJP (JJ 白色))
+				(NP (NN 恐怖)))
+			    (NP (NN 犯人)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	白色 恐怖 犯人 
+	</arg>
+	<arg n="m" f="tmp">
+	昔时 
+	</arg>
+	<arg n="m" f="loc">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-CND (NP-SBJ (NN 父母))
+			(VP (VV 控)
+			    (NP-OBJ (NN 子))))
+		(PU ，)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VP (ADVP (AD 即))
+			(PP-MNR (P 照)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (MSP 所)
+						    (VP (VV 控)
+							(NP-OBJ (-NONE- *T*-1)))))))))
+			(VP (VV 办理)))
+		    (PU ，)
+		    (VP (ADVP (AD 不必))
+			(VP (VV 审讯))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	不必 
+	</arg>
+	<arg n="m" f="cnd">
+	父母 控 子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

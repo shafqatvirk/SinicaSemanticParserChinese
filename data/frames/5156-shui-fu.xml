@@ -1,0 +1,159 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 说服 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 persuades/convinces"/>
+    <role argnum="2" argrole="thing arg1 is persuaded to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 後来))
+	    (PP-PRP (P 由於)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 担心)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 年迈)))
+					    (DEC 的)))
+				    (NP (NN 父母)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 太过))
+				    (VP (VV 劳累)))))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VV 说服)
+		(NP-OBJ (NN 父母))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 改)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-LOC (P 在)
+					    (NP (NP (PN 他))
+						(NP (NN 家))))
+				    (VP (VV 围炉)))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	父母 
+	</arg>
+	<arg n="2">
+	*PRO* 改 *PRO* 在 他 家 围炉 
+	</arg>
+	<arg n="m" f="prp">
+	由於 *PRO* 担心 *OP* *T*-1 年迈 的 父母 *PRO* 太过 劳累 
+	</arg>
+	<arg n="m" f="adv">
+	後来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 自己))
+	    (VP (VP (ADVP (AD 曾))
+		    (PP-PRP (P 因)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (PU 「)
+				    (ADVP (AD 一时))
+				    (VP (VV 冲动))
+				    (PU 」))))
+		    (PU ，)
+		    (VP (VV 答应)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (PP-BNF (P 替)
+						(NP (NP-APP (NN 老友))
+						    (NP-PN (NR 许信良))))
+					(VP (VV 跨刀)))
+				    (VP (VV 担任)
+					(NP-OBJ (ADJP (JJ 副))
+						(NP (NN 总统))))))))
+		(PU ，)
+		(VP (LCP-TMP (NP (QP (CD 七))
+				 (NP (NN 小时)))
+			     (LC 後))
+		    (ADVP (AD 又))
+		    (VP (VP (LB 被)
+			    (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				    (IP (NP-PN-SBJ (NR 新党))
+					(VP (VV 说服)
+					    (NP-OBJ (-NONE- *T*-1))))))
+			(VP (MSP 而)
+			    (VP (VV 打消)
+				(NP-OBJ (DP (DT 此))
+					(NP (NN 意))))))))) 
+	</parse>
+	<arg n="0">
+	新党 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="tmp">
+	七 小时 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 加上))
+	    (NP-SBJ (NP-APP (NP-PN (NR 叶菊兰))
+			    (CC 和)
+			    (NP (NP-APP (NP-PN (NR 新党))
+					(NP (NN 立委)))
+				(NP-PN (NR 谢启大))))
+		    (QP (CD 两))
+		    (NP (NN 人)))
+	    (VP (VP (VV 挺身而出))
+		(PU ，)
+		(VP (PP-LOC (P 在)
+			    (NP-PN (NN 立法院)))
+		    (VP (VV 带动)
+			(NP-OBJ (NN 风潮))))
+		(PU ，)
+		(CC 并且)
+		(VP (ADVP (AD 频频))
+		    (VP (VV 说服)
+			(NP-PN-OBJ (NN 行政院)))))) 
+	</parse>
+	<arg n="0">
+	叶菊兰 和 新党 立委 谢启大 两 人 
+	</arg>
+	<arg n="1">
+	行政院 
+	</arg>
+	<arg n="m" f="adv">
+	频频 
+	</arg>
+	<arg n="m" f="dis">
+	加上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

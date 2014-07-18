@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 合宜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is appropriate/suitable for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (OD 八十五)
+		    (CLP (M 年)))
+	    (NP-SBJ (NN 大法官))
+	    (VP (VP (VV 解释)
+		    (NP-OBJ (IP-APP (NP-SBJ (NP-APP (NT 当时)
+						    (NN 副总统))
+					    (NP-PN (NR 连战)))
+				    (VP (VV 兼任)
+					(NP-OBJ (NN 阁揆))))
+			    (NP (NN 案))))
+		(PU ，)
+		(VP (VV 做出)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (PU 「)
+						(VC 非)
+						(VP (ADVP (AD 显))
+						    (ADVP (AD 不))
+						    (VP (VA 相容)))
+						(PU 」))
+					    (PU ，)
+					    (VP (VP (ADVP (AD 不))
+						    (VP (VV 违宪)))
+						(CC 但)
+						(VP (ADVP (AD 不))
+						    (VP (VA 合宜))))))
+				    (DEC 的))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VA 模糊)))
+				    (DEC 的)))
+			    (NP (NN 解释)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

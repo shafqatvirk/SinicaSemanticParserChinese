@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 讽刺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 satirizes"/>
+    <role argnum="2" argrole="means"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP (NN 灯))
+		     (LC 上))
+	    (VP (VV 题)
+		(AS 了)
+		(NP-OBJ (QP (CD 一)
+			    (CLP (M 首)))
+			(NP (NN 诗)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 讽刺)
+			(NP-OBJ (DP (DT 此))
+				(NP (NN 事))))))) 
+	</parse>
+	<arg n="1">
+	此 事 
+	</arg>
+	<arg n="2">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

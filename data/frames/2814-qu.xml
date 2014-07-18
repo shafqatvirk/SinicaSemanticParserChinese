@@ -1,0 +1,145 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity taken"/>
+      <role argnum="2" argrole="taken from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 改变)
+	      (AS 了)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 自古以来))
+				      (PP-DIR (P 对)
+					      (NP (NN 海洋)))
+				      (VP (VP (ADVP (AD 只))
+					      (VP (VV 取)))
+					  (VP (ADVP (AD 不))
+					      (VP (VV 予))))))
+			      (DEC 的))
+		      (NP (NN 做法)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 	  	  	  	  	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 海洋 	  	  	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  自古以来 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="selector"/>
+      <role argnum="1" argrole="thing selected"/>
+      <role argnum="2" argrole="selecting from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-4))
+				  (VP (VV 能)
+				      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 咬牙)))
+					  (VP (VRD (VV 「)
+						   (VV 熬)
+						   (PU 」)
+						   (VV 到))
+					      (NP-OBJ (NN 顶级))))))
+			      (DEC 的)))
+		      (NP (NN 传销商)))
+	      (VP (ADVP (AD 更))
+		  (VP (VC 是)
+		      (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			      (VP (LCP-LOC (QP (CD 万))
+					   (LC 中))
+				  (VP (VV 取)
+				      (QP-OBJ (CD 一)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  	  	  
+	  </arg>
+	  <arg n="1">
+	  一 	  	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  万 中 	  	  	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity giving name"/>
+      <role argnum="1" argrole="name"/>
+      <role argnum="2" argrole="entity receiving name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NN 执行)
+			      (NN 常董))
+		      (NP-PN (NR 陈刚信)))
+	      (VP (ADVP (AD 就))
+		  (DVP (VP (VV 骄傲))
+		       (DEV 地))
+		  (PP-BNF (P 为)
+			  (NP (CP (WHNP-43 (-NONE- *OP*))
+				  (CP (IP (NP-PN-SBJ (NR 民视))
+					  (VP (MSP 所)
+					      (VP (VRD (VV 发展)
+						       (VV 出来))
+						  (NP-OBJ (-NONE- *T*-43)))))
+				      (DEC 的)))
+			      (ADJP (JJ 新型))
+			      (NP (NN 乡土剧))))
+		  (VP (VV 取)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (PU 「)
+				       (NN 时代剧)
+				       (PU 」))
+				   (DEG 的))
+			      (ADJP (JJ 新))
+			      (NP (NN 名字)))))) 
+	  </parse>
+	  <arg n="0">
+	  执行 常董 陈刚信 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  「 时代剧 」 的 新 名字 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  为 *OP* 民视 所 发展 出来 *T*-43 的 新型 乡土剧 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  骄傲 地 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

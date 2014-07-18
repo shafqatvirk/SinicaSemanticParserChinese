@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 取证 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 段祺华)
+			     (NN 律师))
+		      (CC 和)
+		      (NP (DNP (NP (PN 他))
+			       (DEG 的))
+			  (NP (NN 同事们))))
+	      (VP (VP (PP-PRP (P 为)
+			      (NP (PN 此)))
+		      (ADVP (AD 又))
+		      (VP (VV 进行)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 艰苦)))
+					  (DEC 的)))
+				  (NP (NN 调查)
+				      (NN 取证)))))
+		  (PU ，)
+		  (VP (ADVP (AD 终于))
+		      (VP (VV 取得)
+			  (AS 了)
+			  (NP-OBJ (NP (DNP (NP (NN 文件)
+					       (NN 送递))
+					   (DEG 的))
+				      (NP (NN 快件)
+					  (NN 号码)))
+				  (CC 和)
+				  (NP (CP-APP (IP (NP-PN-SBJ (QP (OD 第一))
+							     (NP (NN 国民)
+								 (NN 银行)))
+						  (VP (VV 签收)))
+					      (DEC 的))
+				      (NP (NN 证据)))))))) 
+	  </parse>
+	  <arg n="0">
+	  段祺华 律师 和 他 的 同事们 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 艰苦 的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

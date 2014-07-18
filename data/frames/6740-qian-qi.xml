@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 牵起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entities arg0 brings together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-1 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-1))
+			(VP (VP (VV 牵起)
+				(NP-OBJ (NN 手)))
+			    (VP (VV 来))))
+		    (DEC 的)))
+	    (NP (NN 同伴))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	手 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

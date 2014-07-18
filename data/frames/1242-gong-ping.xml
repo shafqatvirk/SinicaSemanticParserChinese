@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 公平 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 is fair to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 限制)
+				      (IP-OBJ (NP-SBJ-1 (-NONE- *PRO*))
+					      (VP (PP-LGS (P 由)
+							  (NP (NN 公司)))
+						  (VP (VV 申请)
+						      (NP-OBJ (-NONE- *-1)))))))
+			      (DEC 的))
+		      (NP (NN 规定)))
+	      (VP (PP-DIR (P 对)
+			  (NP (NN 创作者)))
+		  (ADVP (AD 并))
+		  (ADVP (AD 不))
+		  (VP (VA 公平)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 限制 *PRO* 由 公司 申请 *-1 的 规定 
+	  </arg>
+	  <arg n="1">
+	  对 创作者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 这样))
+		  (ADVP (AD 才))
+		  (VP (VA 公平)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  这样 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

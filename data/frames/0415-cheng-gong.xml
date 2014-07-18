@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 成功 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity that succeeds"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-TPC (DP (DT 这)
+			      (QP (CD 一)))
+			  (ADJP (JJ 新))
+			  (NP (NN 货币)))
+		  (NP-SBJ (NN 发行)
+			  (CC 和)
+			  (NN 使用))
+		  (VP (ADVP (AD 是否))
+		      (VP (VA 成功)))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  这 一 新 货币 
+	  </arg>
+	  <arg n="0" f="pse">
+	  发行 和 使用 
+	  </arg>
+	  <arg n="m" f="adv">
+	  是否 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 声名大噪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 去年))
+	    (NP-SBJ (DNP (NP-PN (NR 坪林))
+			 (DEG 的))
+		    (NP (NN 包种)
+			(NN 茶)))
+	    (VP (VP (SB 被)
+		    (VP (VRD (VV 指定)
+			     (VV 为))
+			(NP-OBJ (PU 「)
+				(NN 总统)
+				(NN 茶)
+				(PU 」))))
+		(VP (MSP 而)
+		    (VP (ADVP (AD 更加))
+			(VP (VV 声名大噪)))))) 
+	</parse>
+	<arg n="0">
+	坪林 的 包种 茶 
+	</arg>
+	<arg n="m" f="tmp">
+	去年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,162 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 团结 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity being solidary"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (PP-MNR (P 以)
+				  (NP (NP (NP-PN (NR 中华))
+					  (NP (NN 民族)))
+				      (NP (NN 传统)
+					  (NN 文化))))
+			  (VP (VV 为)
+			      (NP-OBJ (NN 纽带))))
+		      (PU ，)
+		      (VP (VP (VV 联系)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (CC 和)
+			  (VP (VV 团结)
+			      (NP-OBJ-1 (NN 海内外)
+					(NN 同胞))))
+		      (PU ，)
+		      (VP (VV 弘扬)
+			  (NP-OBJ (NN 民族)
+				  (NN 文化)))
+		      (PU ，)
+		      (VP (VV 展示)
+			  (NP-OBJ (DNP (NP (NP (NN 祖国))
+					   (ADJP (JJ 优秀))
+					   (NP (NN 艺术)))
+				       (DEG 的))
+				  (NP (NN 魅力))))
+		      (PU ，)
+		      (VP (VV 展示)
+			  (NP-OBJ (NP (NP (NN 华侨))
+				      (PU 、)
+				      (NP (NN 华人)
+					  (NN 艺术家)))
+				  (DNP (PP (P 在)
+					   (LCP (NP (NN 艺术)
+						    (NN 领域)
+						    (CC 和)
+						    (NN 世界)
+						    (NN 文化)
+						    (NN 交流))
+						(LC 中)))
+				       (DEG 的))
+				  (NP (NN 成就)
+				      (CC 和)
+				      (NN 风采)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  海内外 同胞 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 朝鲜))
+			  (NP (NN 人民)))
+		  (VP (ADVP (AD 将))
+		      (VP (ADVP (AD 紧密))
+			  (VP (VV 团结)
+			      (PP-LOC (P 在)
+				      (NP (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-PN-SBJ (-NONE- *T*-1))
+							      (VP (PP (P 以)
+								      (NP-PN (NR 金正日)))
+								  (VP (VV 为首))))
+							  (DEC 的)))
+						  (NP-PN (NR 朝鲜)
+							 (NN 劳动党)
+							 (NN 中央))))
+					  (NP (NN 周围))))))
+		      (PU ，)
+		      (VP (VV 继续)
+			  (VP (VV 完成)
+			      (NP-OBJ (DNP (NP (NR 金日成)
+					       (NN 主席))
+					   (DEG 的))
+				      (NP (NN 遗愿))))))) 
+	  </parse>
+	  <arg n="1">
+	  朝鲜 人民 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *OP* *T*-1 以 金正日 为首 的 朝鲜 劳动党 中央 周围 
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧密 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 社会))
+	      (VP (VCD (VA 安定)
+		       (VV 团结)))) 
+	  </parse>
+	  <arg n="1">
+	  社会 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity becoming solidary"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 一切))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 爱国)))
+				  (DEC 的)))
+			  (NP (NN 中国人)))
+		  (VP (VP (VRD (VV 团结)
+			       (VV 起来)))
+		      (PU ，)
+		      (VP (ADVP (AD 共同))
+			  (VP (VV 维护)
+			      (NP-OBJ (DNP (NP (NN 祖国))
+					   (DEG 的))
+				      (NP (NN 领土)
+					  (CC 和)
+					  (NN 主权))
+				      (NP (NN 完整))))))) 
+	  </parse>
+	  <arg n="1">
+	  一切 *OP* *T*-1 爱国 的 中国人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

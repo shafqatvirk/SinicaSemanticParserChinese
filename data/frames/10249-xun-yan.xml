@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 巡演 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 performs on a tour"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 又))
+			(ADVP (AD 比如))
+			(VP (VV 说))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 云门)
+		       (NN 舞集))
+	    (VP (QP-ADV (CD 多)
+			(CLP (M 次)))
+		(VP (VP (VV 到)
+			(NP-OBJ (NP-PN (NR 欧洲))
+				(DP (DT 各))
+				(NP (NN 地))))
+		    (VP (VV 巡演))))) 
+	</parse>
+	<arg n="1">
+	云门 舞集 
+	</arg>
+	<arg n="m" f="adv">
+	多 次 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 又 比如 说 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

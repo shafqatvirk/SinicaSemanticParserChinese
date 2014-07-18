@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 管理 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity in charge"/>
+      <role argnum="1" argrole="in charge of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-PN-SBJ (NR 香港))
+			   (VP (VV 回归)))
+		       (LC 後))
+	      (PU ，)
+	      (NP-SBJ (NN 中央)
+		      (NN 人民)
+		      (NN 政府))
+	      (VP (VV 负责)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 管理)
+			      (NP-OBJ (DNP (NP-PN (NR 香港))
+					   (DEG 的))
+				      (NP (NN 外交)
+					  (NN 事务)
+					  (CC 和)
+					  (NN 防务))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  香港 的 外交 事务 和 防务 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 会议))
+	      (VP (VV 要求)
+		  (NP-OBJ (ADJP (JJ 中直))
+			  (NP (NN 机关)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 精打细算))
+			  (PU ，)
+			  (VP (ADVP (AD 严格))
+			      (VP (VV 管理)))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严格 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

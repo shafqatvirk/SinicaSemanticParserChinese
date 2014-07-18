@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赠送 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing given"/>
+      <role argnum="2" argrole="recipient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-PN-SBJ (NR 中国))
+		  (VP (PP-DIR (P 向)
+			      (NP-PN (NR 吉尔吉斯)))
+		      (VP (VV 赠送)
+			  (NP-OBJ (NN 物资))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  物资 
+	  </arg>
+	  <arg n="2">
+	  向 吉尔吉斯 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

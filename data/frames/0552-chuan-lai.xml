@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="location"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (ADVP (AD 隐隐))
+			      (VP (VV 传来))))
+		      (DEC 的)))
+	      (CP (WHNP-2 (-NONE- *OP*))
+		  (IP (NP-DIR (-NONE- *T*-2))
+		      (VP (VA 隆隆))))
+	      (NP (NN 机器)
+		  (NN 声))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  隐隐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

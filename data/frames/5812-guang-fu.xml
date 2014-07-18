@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 光复 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 recovers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (PU 「)
+			    (VV 光复)
+			    (NP-OBJ (NN 大陆))
+			    (PU 」))
+			(CC 和)
+			(VP (PU 「)
+			    (VV 巩固)
+			    (NP-OBJ (NN 领导))
+			    (PU 」))))
+	    (VP (VV 成)
+		(AS 了)
+		(NP-OBJ (NN 教育)
+			(NN 重心)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	大陆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-PN-SBJ (NR 台湾))
+			 (VP (VV 光复)))
+		     (LC 时))
+	    (PU ，)
+	    (NP-TPC (NN 阿嬷))
+	    (ADVP (AD 已))
+	    (NP-SBJ (NN 年))
+	    (VP (ADVP (AD 近))
+		(VP (QP-PRD (CD 三十))))) 
+	</parse>
+	<arg n="1">
+	台湾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

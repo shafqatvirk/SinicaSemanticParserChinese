@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 侧重 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 focuses"/>
+    <role argnum="2" argrole="thing arg1 is focused"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (PN 其))
+		    (NP (NN 焦点)))
+	    (VP (VV 侧重)
+		(PP (P 在)
+		    (NP (NP (ADJP (JJ 新兴))
+			    (NP (NN 产业)))
+			(PU ，)
+			(NP (ADVP (AD 譬如))
+			    (NP (NP (DNP (LCP (NP (NN 资讯业))
+					      (LC 中))
+					 (DEG 的))
+				    (NP (NN 软体)
+					(CC 和)
+					(NN 网路)))
+				(PU ，)
+				(CC 或是)
+				(NP (NN 通信)
+				    (PU 、)
+				    (NN 光纤)
+				    (PU 、)
+				    (NN 生物)
+				    (NN 科技))
+				(ETC 等))))))) 
+	</parse>
+	<arg n="1">
+	其 焦点 
+	</arg>
+	<arg n="2">
+	在 新兴 产业 ， 譬如 资讯业 中 的 软体 和 网路 ， 或是 通信 、 光纤 、 生物 科技 等 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

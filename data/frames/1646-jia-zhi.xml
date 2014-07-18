@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 价值 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="value"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 组委会))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 紧急))
+		  (PP-DIR (P 从)
+			  (NP (NN 国外)))
+		  (VP (VV 订购)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 价值)
+					      (QP-OBJ (CD １２０万)
+						      (CLP (M 元)))))
+				      (DEC 的)))
+			      (QP (CD ５)
+				  (CLP (M 台)))
+			      (ADJP (JJ 人工))
+			      (NP (NN 造雪机)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  １２０万 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

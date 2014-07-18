@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 罢手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 然而))
+      (PU ，)
+      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (-NONE- *T*-1))
+                          (VP (VV 卷入)
+                              (NP-OBJ (NN 冲突))))
+                      (DEC 的)))
+              (DP (DT 各))
+              (NP (NN 国)))
+      (VP (PP-PRP (P 为)
+                  (IP (NP-SBJ (-NONE- *PRO*))
+                      (VP (VV 维护)
+                          (NP-OBJ (NP (PN 其))
+                                  (NP (NN 政治)
+                                      (NN 经济))
+                                  (NP (NN 利益))))))
+          (VP (MSP 而)
+              (VP (ADVP (AD 不))
+                  (VP (VV 肯)
+                      (VP (VV 罢手))))))))
+	</parse>
+	<arg n="M" f="ADV"> 然而 </arg>
+	<arg n="0"> *OP* (*T*-1)->(各国) 卷入 冲突 的 各 国 </arg>
+	<arg n="M" f="PRP"> 为 *PRO* 维护 其 政治 经济 利益 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

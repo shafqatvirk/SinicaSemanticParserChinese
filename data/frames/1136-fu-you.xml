@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 富有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="property"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ-HLN (PRN (PU （)
+			   (ADJP (JJ 小))
+			   (NP (NN 标题))
+			   (PU ）) )
+		      (NP-SBJ (NN 锦标赛)
+			      (NN 会歌))
+		      (VP (VV 富有)
+			  (NP-OBJ (NN 诗意)))) 
+	  </parse>
+	  <arg n="0">
+	  锦标赛 会歌 
+	  </arg>
+	  <arg n="1">
+	  诗意 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

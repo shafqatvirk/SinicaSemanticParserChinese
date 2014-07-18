@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冒险 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="risk taker"/>
+    <role argnum="1" argrole="thing arg0 takes risk in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-1 (NP-SBJ (PN 谁))
+		  (VP (ADVP (AD 也))
+		      (ADVP (AD 不))
+		      (VP (VV 敢)
+			  (VP (VV 冒险)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-LOC (P 在)
+						  (LCP (NP (NN 大陆)
+							   (NN 政策))
+						       (LC 上)))
+					  (VP (VV 独创)
+					      (NP-OBJ (NN 风格))))))))) 
+	</parse>
+	<arg n="0">
+	谁 
+	</arg>
+	<arg n="1">
+	*PRO* 在 大陆 政策 上 独创 风格 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 配合)))
+			    (DEC 的)))
+		    (NP (NN 管理)
+			(NN 思维)))
+	    (VP (VV 包括)
+		(IP-OBJ (IP (PU 「)
+			    (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 愿意)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 冒险))))
+			    (PU 」))
+			(PU 、)
+			(IP (PU 「)
+			    (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不))
+				(VP (VV 墨守成规)))
+			    (PU 」))
+			(PU ，)
+			(CC 以及)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VE 有)
+				(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 成为)
+							(NP-OBJ (NN 标竿))))
+						(DEC 的))
+					(ADJP (JJ 强烈))
+					(NP (NN 企图心)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

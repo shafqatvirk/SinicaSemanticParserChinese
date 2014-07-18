@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分叉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing forking"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NN 红桧)
+		      (NN 树干))
+	      (VP (ADVP (AD 多))
+		  (VP (VV 分叉)))) 
+	  </parse>
+	  <arg n="0">
+	  红桧 树干 
+	  </arg>
+	  <arg n="m" f="adv">
+	  多 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 察 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 examines"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 细细))
+			(VP (VV 察)
+			    (NP-OBJ (PN 之)))))
+	    (PU ，)
+	    (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 如))
+			(VP (VE 有)
+			    (NP-OBJ (NP (ADJP (JJ 不明))
+					(NP (NN 国籍)))
+				    (NP (NN 者))))))
+	    (PU ，)
+	    (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 便))
+		(VP (VV 试图)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 探询)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	之 
+	</arg>
+	<arg n="m" f="adv">
+	细细 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

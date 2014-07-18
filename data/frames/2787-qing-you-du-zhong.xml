@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 情有独钟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity loved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VP (PP-MNR (P 以)
+							  (NP (NP-PN (NR 马尾))
+							      (NP (NN 船政))))
+						  (VP (VV 为)
+						      (NP-OBJ (NN 基石))))
+					      (PU 、)
+					      (VP (PP-MNR (P 以)
+							  (NP (NN 爱国主义)))
+						  (VP (VV 为)
+						      (NP-OBJ (NN 核心))))))
+				      (DEC 的)))
+			      (NP (NN 船政)
+				  (NN 文化))))
+		  (VP (VV 情有独钟)))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-2 以 马尾 船政 为 基石 、 以 爱国主义 为 核心 的 船政 文化 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

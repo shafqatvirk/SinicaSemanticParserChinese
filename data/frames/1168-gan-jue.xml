@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 感觉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="experience"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 二十)
+			   (CLP (M 年)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-SBJ (NN 中国人))
+	      (VP (VV 感觉)
+		  (IP-OBJ (NP-SBJ (NN 世界))
+			  (VP (ADVP (AD 很))
+			      (VP (VA 遥远)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国人 
+	  </arg>
+	  <arg n="1">
+	  世界 很 遥远 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十 年 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

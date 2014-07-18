@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冠上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 labels arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 甚至))
+	    (NP-SBJ (DNP (LCP (NP (NN 戏剧))
+			      (LC 里))
+			 (DEG 的))
+		    (NP (NN 反派)
+			(NN 角色)))
+	    (VP (ADVP (AD 都))
+		(VP (SB 被)
+		    (VP (VV 冠上)
+			(NP-OBJ (NP-PN (NR 胡))
+				(NP (NN 姓))))))) 
+	</parse>
+	<arg n="1">
+	戏剧 里 的 反派 角色 
+	</arg>
+	<arg n="2">
+	胡 姓 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	甚至 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

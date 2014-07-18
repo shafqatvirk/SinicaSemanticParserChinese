@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (PN 这))
+      (VP (VC 是)
+          (QP-PRD (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-PN-TPC (NR 香港队))
+                              (PP-LOC (P 在)
+                                      (LCP (NP (NP-PN (NR 亚运会))
+                                               (NP (NN 历史)))
+                                           (LC 上)))
+                              (NP-TPC (-NONE- *T*-1))
+                              (NP-SBJ (NN 失败))
+                              (VP (ADVP (AD 最))
+                                  (VP (VA 惨))))
+                          (DEC 的)))
+                  (QP (CD 一)
+                      (CLP (M 次)))))))
+	</parse>
+	<arg n="0" f="PSR"> 香港队 </arg>
+	<arg n="0" f="PSE"> 失败 </arg>
+	<arg n="M" f="LOC"> 在 亚运会 历史 上 </arg>
+	<arg n="M" f="ADV"> 最 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

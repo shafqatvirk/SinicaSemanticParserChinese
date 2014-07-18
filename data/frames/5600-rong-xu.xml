@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 容许 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 allows"/>
+    <role argnum="2" argrole="thing arg1 is allowed to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 要)
+			(VP (VV 培养)
+			    (NP-OBJ (NN 接班人)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VV 要)
+		    (VP (VV 容许)
+			(NP-OBJ (PN 他))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 犯错))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	他 
+	</arg>
+	<arg n="2">
+	*PRO* 犯错 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tpc">
+	*PRO* 要 培养 接班人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (DNP (NP (PN 我们))
+			 (DEG 的))
+		    (NP (NN 环境)))
+	    (VP (ADVP (AD 不))
+		(VP (VV 容许)))) 
+	</parse>
+	<arg n="0">
+	我们 的 环境 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

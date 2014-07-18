@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 飞往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="passenger, flight"/>
+      <role argnum="1" argrole="destination"/>
+      <role argnum="2" argrole="origin"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 将))
+		  (PP-TMP (P 于)
+			  (NP (NT ２０日)
+			      (NT 下午)))
+		  (VP (VP (VV 飞往)
+			  (NP-PN-OBJ (NR 旧金山)))
+		      (VP-PRP (VV 参加)
+			      (NP-OBJ (DP (DT 另)
+					  (QP (CD 一)
+					      (CLP (M 场))))
+				      (NP (NN 讲演))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  旧金山 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 ２０日 下午 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (PP-DIR (P 由)
+						   (NP-PN (NR 德国)
+							  (NR 慕尼黑)
+							  (CC 和)
+							  (NR 英国)
+							  (NR 曼彻斯特)))
+					   (VP (VV 飞往)
+					       (NP-PN-OBJ (NR 伦敦)
+							  (NR 希斯罗)
+							  (NN 机场)))))
+				   (DEC 的)))
+			   (NP-PN (NR 英航))
+			   (NP (NN 航班)))
+		       (LC 上)))
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  伦敦 希斯罗 机场 
+	  </arg>
+	  <arg n="2">
+	  由 德国 慕尼黑 和 英国 曼彻斯特 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

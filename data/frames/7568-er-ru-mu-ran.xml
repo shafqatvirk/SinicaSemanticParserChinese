@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 耳濡目染 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 sees and hears"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NT 五四)
+			     (NN 人物))
+			 (DEG 的))
+		    (NP (NN 思想)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 耳濡目染)
+		    (AS 著)
+		    (NP-OBJ (ADJP (JJ 年轻))
+			    (NP (NN 人)))))) 
+	</parse>
+	<arg n="0">
+	年轻 人 
+	</arg>
+	<arg n="1">
+	五四 人物 的 思想 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

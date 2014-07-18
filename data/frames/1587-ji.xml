@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 及 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing compared"/>
+      <role argnum="1" argrole="thing compared with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP (ADVP (CS 虽然))
+	      (IP (NP-SBJ (NP (DNP (QP (CD 四十)
+				       (CLP (M 年)))
+				   (DEG 的))
+			      (NP (NN 航天)
+				  (NN 投资)))
+			  (NP (NN 总额)))
+		  (VP (ADVP (AD 还))
+		      (ADVP (AD 不))
+		      (VP (VV 及)
+			  (NP-OBJ (NP (NP (ADJP (JJ 前))
+					  (NP-PN (NR 苏联)))
+				      (PU 、)
+				      (NP-PN (NR 美国)))
+				  (DNP (QP (CD 一)
+					   (CLP (M 年)))
+				       (DEG 的))
+				  (NP (NN 航天)
+				      (NN 投资))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  四十 年 的 航天 投资 总额 	  	  
+	  </arg>
+	  <arg n="1">
+	  前 苏联 、 美国 一 年 的 航天 投资 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="place arg0 reached"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 才))
+			  (VP (VV 过)
+			      (NP-OBJ (NP-PN (NN 民权)
+					     (NN 大桥))
+				      (CC 或)
+				      (NP-PN (NP-PN (NR 麦帅))
+					     (QP (OD 二))
+					     (NP (NN 桥)))))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (NN 视线))
+			      (VP (MSP 所)
+				  (VP (VV 及)
+				      (NP-OBJ (-NONE- *T*-1)))))))
+	      (VP (ADVP (AD 就))
+		  (VP (VC 是)
+		      (IP-PRD (NP-SBJ (CP (WHNP-6 (-NONE- *OP*))
+					  (CP (IP (NP-TPC (-NONE- *T*-6))
+						  (NP-SBJ (NN 招牌))
+						  (VP (VP (ADVP (AD 高))
+							  (VP (VV 挂)))
+						      (VP (VV 醒目))))
+					      (DEC 的)))
+				      (NP (NN 量贩)
+					  (NN 店)))
+			      (VP (VV 错落)
+				  (NP-OBJ (NN 其中)))))))
+	  </parse>
+	  <arg n="0">
+	  视线 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

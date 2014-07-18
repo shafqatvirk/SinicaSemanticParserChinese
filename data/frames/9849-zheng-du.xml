@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 争睹 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 fights to have a look at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				      (VP (PP-TMP (P 在)
+						  (NP (NP (NT 十一月))
+						      (NP (NT 九)
+							  (CC 到)
+							  (NT 十四日))))
+					  (PP-LGS (P 由)
+						  (NP (NP-APP (NN 酒商))
+						      (NP-PN (NR 约翰走路))))
+					  (VP (MSP 所)
+					      (VP (VV 举办)
+						  (NP-OBJ (-NONE- *-2))))))
+				  (DEC 的))
+			      (NP (NN 菁英)
+				  (NN 慈善赛))))
+		      (NP (NN 期间)))
+	      (PU ，)
+	      (NP-TPC (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VV 包括)
+				      (LCP-OBJ (NP-PN (NR 李登辉)
+						      (NN 总统))
+					       (LC 在内))))
+			      (DEC 的)))
+		      (NP (NN 高尔夫)
+			  (NN 球迷)))
+	      (PU ，)
+	      (NP-SBJ (NN 人人))
+	      (VP (VV 争睹)
+		  (NP-OBJ (NP-PN (NR 伍兹))
+			  (NP (NN 风采))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *OP* *T*-3 包括 李登辉 总统 在内 的 高尔夫 球迷 
+	  </arg>
+	  <arg n="0" f="pse">
+	  人人 
+	  </arg>
+	  <arg n="1">
+	  伍兹 风采 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *OP* *T*-1 在 十一月 九 到 十四日 由 酒商 约翰走路 所 举办 *-2 的 菁英 慈善赛 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 密切 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 透露)))
+	      (PU ，)
+	      (NP-TMP (NT 今年))
+	      (NP-SBJ (NP-PN (NR 辽宁省))
+		      (DNP (PP (P 同)
+			       (NP-PN (NR 香港)))
+			   (DEG 的))
+		      (NP (NN 金融)
+			  (NN 合作)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 将))
+		  (ADVP (AD 更加))
+		  (VP (VA 密切)))) 
+	  </parse>
+	  <arg n="0">
+	  辽宁省 同 香港 的 金融 合作 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更加 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更加 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 透露 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing made closer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

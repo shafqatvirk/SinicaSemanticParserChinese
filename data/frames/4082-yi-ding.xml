@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 议定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed and agreed on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (ADVP (AD 民主))
+				   (VP (VV 选举)
+				       (NP-OBJ (NN 村民)
+					       (NN 委员会)))))
+			   (LC 后)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 乃东县))
+		      (DP (DT 各))
+		      (NP (NN 乡村)))
+	      (VP (VV 让)
+		  (NP-OBJ (NN 群众))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 结合)
+			      (NP-TTL-OBJ (PU “)
+					  (NN 民族)
+					  (NN 区域)
+					  (NN 自治法)
+					  (PU ”)))
+			  (PU ，)
+			  (VP (VV 议定)
+			      (NP-OBJ (NP-APP (NP-TTL (PU 《)
+						      (NN 村民)
+						      (NN 自章程)
+						      (PU 》))
+					      (PU 、)
+					      (NP-TTL (PU 《)
+						      (NN 村规)
+						      (NN 民约)
+						      (PU 》))
+					      (NP-TTL (PU 《)
+						      (IP-APP (NP-SBJ (NN 村委会)
+								      (NN 财务))
+							      (VP (VA 公开)))
+						      (NP (NN 制度))
+						      (PU 》))
+					      (ETC 等))
+				      (QP (CD 十多)
+					  (CLP (M 项)))
+				      (NP (NN 规章)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  《 村民 自章程 》 、 《 村规 民约 》 《 村委会 财务 公开 制度 》 等 十多 项 规章 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挹注 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 pours"/>
+    <role argnum="2" argrole="entity arg1 is poured into"/>
+    <role argnum="3" argrole="entity arg1 is obtained from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 能)
+		    (VP (VP (ADVP (AD 多))
+			    (VP (VV 赚)
+				(NP-OBJ (QP (CLP (M 点)))
+					(NP (NN 钱)))))
+			(VP (VV 挹注)
+			    (NP-OBJ (NN 学校)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	学校 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 两)
+			 (CLP (M 年)))
+		     (LC 前))
+	    (NP-SBJ (NP-APP (NN 本土)
+			    (NN 企业))
+		    (NP-PN (NR 义美)
+			   (NN 食品)
+			   (NN 公司)))
+	    (VP (VP (VV 挹注)
+		    (NP-OBJ (NN 资金)))
+		(PU ，)
+		(VP (VV 成为)
+		    (NP-OBJ (DNP (NP-PN (PU 《)
+					(NN 英文)
+					(NR 中国)
+					(NN 日报)
+					(PU 》))
+				 (DEG 的))
+			    (ADJP (ADVP (AD 最))
+				  (ADJP (JJ 大)))
+			    (NP (NN 股东)))))) 
+	</parse>
+	<arg n="0">
+	本土 企业 义美 食品 公司 
+	</arg>
+	<arg n="1">
+	资金 
+	</arg>
+	<arg n="m" f="tmp">
+	两 年 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收养 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people adopted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TMP (DT 这)
+		      (QP (CD 一)
+			  (CLP (M 年))))
+	      (NP-SBJ (PN 他))
+	      (VP (LB 被)
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (IP (NP-SBJ (NN 福利院))
+			  (VP (VV 收养)
+			      (NP-OBJ (-NONE- *T*-2))))))) 
+	  </parse>
+	  <arg n="0">
+	  福利院 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 一 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (NP (NN 了解)))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 今年))
+				      (QP-PRD (CD 十九)
+					      (CLP (M 岁)))))
+			      (DEC 的)))
+		      (NP-PN (NR 丁豪)))
+	      (VP (VC 是)
+		  (NP-PRD (NP (ADJP (JJ 新))
+			      (NP-PN (NR 中国)))
+			  (QP (OD 第一)
+			      (CLP (M 个)))
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (PP-LGS (P 由)
+						      (NP (NN 福利院)))
+					      (VP (VV 收养)))
+					  (VP (VV 成长))))
+				  (DEC 的)))
+			  (ADJP (JJ 残疾))
+			  (NP (NN 孤儿)
+			      (NN 大学生))))) 
+	  </parse>
+	  <arg n="0">
+	  由 福利院 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

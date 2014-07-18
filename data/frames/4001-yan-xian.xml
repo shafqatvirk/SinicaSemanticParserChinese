@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 艳羡 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity envied"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 不仅))
+		      (VP (VV 成为)
+			  (NP-OBJ (DNP (NP-PN (NR 日本))
+				       (DEG 的))
+				  (NP (NN 心腹大患)))))
+		  (PU ，)
+		  (VP (ADVP (AD 更))
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				      (CP (IP (NP-PN-SBJ (NR 台湾))
+					      (VP (VV 艳羡)
+						  (NP-OBJ (-NONE- *T*-4))))
+					  (DEC 的)))
+				  (NP (NN 对象))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 
+	  </arg>
+	  <arg n="1">
+	  *T*-4 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

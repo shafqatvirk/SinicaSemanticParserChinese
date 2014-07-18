@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 超支 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="expense"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (NN 上级))
+                          (VP (VV 下达)
+                              (NP-OBJ (-NONE- *T*-1))))
+                      (DEC 的)))
+              (NP (NN 办公)
+                  (NN 费用)))
+      (VP (ADVP (AD 已))
+          (VP (VV 超支)))))
+	</parse>
+	<arg n="0"> *OP* 上级 下达 (*T*-1)->(办公费用) 的 办公 费用 </arg>
+	<arg n="M" f="ADV"> 已 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

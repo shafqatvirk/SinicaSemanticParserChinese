@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 行到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="point arg0 reaches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (NN 人生))
+		    (VP (VV 行到)
+			(NP-OBJ (NN 半途))))
+	    (PU ，)
+	    (IP (IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VSB (VV 四顾)
+			     (VV 茫然))))
+		(PU ，)
+		(IP (PP-DIR (P 对)
+			    (NP (DNP (NP (NN 生命))
+				     (DEG 的))
+				(NP (NN 意义))))
+		    (NP-SBJ (NN 疑惑))
+		    (VP (VA 重重))))) 
+	</parse>
+	<arg n="0">
+	人生 
+	</arg>
+	<arg n="1">
+	半途 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

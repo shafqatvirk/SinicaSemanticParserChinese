@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 释 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 relieves someone of"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (QP (CD 一)
+		    (CLP (M 出)))
+		(CP-APP (IP (PU 「)
+			    (NP-SBJ (NN 杯酒))
+			    (VP (VV 释)
+				(NP-OBJ (NN 兵权)))
+			    (PU 」))
+			(DEC 的))
+		(ADJP (JJ 好))
+		(NP (NN 戏))) 
+	</parse>
+	<arg n="1">
+	兵权 
+	</arg>
+	<arg n="2">
+	杯酒 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

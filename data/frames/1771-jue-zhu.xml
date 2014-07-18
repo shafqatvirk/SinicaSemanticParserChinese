@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 角逐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="competitor"/>
+      <role argnum="1" argrole="competing for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 来自)
+				      (NP-OBJ (NP (DP (DT 全))
+						  (NP (NN 国)))
+					      (QP (CD ３５)
+						  (CLP (M 个)))
+					      (NP (NN 省)
+						  (PU 、)
+						  (NN 市)
+						  (PU 、)
+						  (NN 自治区)
+						  (PU 、)
+						  (NN 解放军)
+						  (CC 及)
+						  (NN 行业)
+						  (NN 体协)))))
+			      (DEC 的)))
+		      (QP (CD ５００多)
+			  (CLP (M 名)))
+		      (NP (NN 男女)
+			  (NN 运动员)))
+	      (VP (VP (VV 参加)
+		      (AS 了)
+		      (NP-OBJ (NN 比赛)))
+		  (PU ，)
+		  (VP (VV 角逐)
+		      (NP-OBJ (QP (CD ４２)
+				  (CLP (M 枚)))
+			      (NP (NN 金牌)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 来自 全 国 ３５ 个 省 、 市 、 自治区 、 解放军 及 行业 体协 的 ５００多 名 男女 运动员 
+	  </arg>
+	  <arg n="1">
+	  ４２ 枚 金牌 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,143 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 moves"/>
+      <role argnum="2" argrole="place arg1 is moved into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (ADVP (AD 不到))
+		      (NP (QP (CD 半))
+			  (NP (NN 小时))))
+	      (PU ，)
+	      (NP-SBJ (NN 车子))
+	      (VP (VV 转进)
+		  (NP-OBJ (NP-PN (NR 云林县))
+			  (DNP (LCP (NP (NN 海))
+				    (LC 边))
+			       (DEG 的))
+			  (NP-PN (NR 东势东路))))) 
+	  </parse>
+	  <arg n="1">
+	  车子 	  
+	  </arg>
+	  <arg n="2">
+	  云林县 海 边 的 东势东路 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  不到 半 小时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 假如))
+		      (IP (NP-SBJ (PN 他们))
+			  (VP (VP (VV 愿意)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 拥抱)
+					      (NP-OBJ (NN 改变)))))
+			      (PU ，)
+			      (VP (ADVP (AD 而))
+				  (ADVP (AD 不))
+				  (VP (VC 是)
+				      (VP (VV 去)
+					  (VP (VV 抗拒)
+					      (NP-OBJ (NN 改变)))))))))
+	      (PU ，)
+	      (NP-SBJ (PN 他们))
+	      (VP (VP (ADVP (AD 将))
+		      (VP (VP (VE 有)
+			      (NP-OBJ (NN 机会)))
+			  (VP (VRD (VV 转进)
+				   (VV 到))
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VA 新)))
+					      (DEC 的)))
+				      (NP (NN 技术)
+					  (NN 领域))))))
+		  (PU ，)
+		  (VP (ADVP (AD 而))
+		      (ADVP (AD 不))
+		      (VP (VC 是)
+			  (VP (ADVP (AD 眼睁睁))
+			      (VP (VV 看)
+				  (AS 著)
+				  (NP-OBJ (DNP (NP (PN 自己))
+					       (DEG 的))
+					  (NP (NN 心血)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (LB 被)
+					  (CP-OBJ (WHNP-2 (-NONE- *OP*))
+						  (IP (NP-SBJ (NN 别人))
+						      (VP (VV 取代)
+							  (NP-OBJ (-NONE- *T*-2))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 	  
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 新 的 技术 领域 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  假如 他们 愿意 *PRO* 拥抱 改变 ， 而 不 是 去 抗拒 改变 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (VV 听信)
+		      (NP-OBJ (DNP (NP (DP (DT 某)
+					   (CLP (M 位)))
+				       (NP (NN 大牌)
+					   (NN 投顾)))
+				   (DEG 的))
+			      (NP (NN 预测))))
+		  (PU ，)
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (DP (DT 所有))
+				      (NP (NN 资金)))
+			      (VP (VV 转进)
+				  (NP-OBJ (NN 金融股))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  所有 资金 	  
+	  </arg>
+	  <arg n="2">
+	  金融股 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

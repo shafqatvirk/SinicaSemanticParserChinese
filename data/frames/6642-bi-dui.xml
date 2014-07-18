@@ -1,0 +1,133 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 比对 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entities arg0 compares"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-SBJ (NP-PN (NP-PN (NR 故宫)
+					  (NN 博物院))
+				   (NP (NN 器物处)))
+			    (NP (NN 处长)))
+		    (NP-PN (NR 张光远)))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NP-TTL-APP (PU 〈)
+					     (NP (NP (NP-PN (NR 商代))
+						     (NP (ADJP (JJ 古))
+							 (NP-PN (NR 蜀)))
+						     (NP (NN 文明)))
+						 (CC 与)
+						 (NP (NN 四方)))
+					     (NP (NN 关系))
+					     (PU 〉))
+				 (QP (CD 一))
+				 (NP (NN 文)))
+			     (LC 中)))
+		(PU ，)
+		(VP (ADVP (AD 详细))
+		    (VP (VV 比对)
+			(AS 了)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (NP-PN-LOC (NR 蜀)
+							   (NN 文化))
+						(PP-ADV (P 与)
+							(NP (DP (DT 其他))
+							    (NP (NN 文化))))
+						(VP (VA 相同))))
+					(DEC 的)))
+				(NP (NN 器物))))))) 
+	</parse>
+	<arg n="0">
+	故宫 博物院 器物处 处长 张光远 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 蜀 文化 与 其他 文化 相同 的 器物 
+	</arg>
+	<arg n="m" f="adv">
+	详细 
+	</arg>
+	<arg n="m" f="loc">
+	在 〈 商代 古 蜀 文明 与 四方 关系 〉 一 文 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 黄春明))
+	    (VP (VP (PP-LOC (P 在)
+			    (LCP (NP-TTL (PU 〈)
+					 (NN 自序)
+					 (PU 〉))
+				 (LC 里)))
+		    (ADVP (AD 特别))
+		    (PP-DIR (P 对)
+			    (NP (NP-PN (NR 台湾))
+				(NP (NT 当前))
+				(NP (NN 老人)
+				    (NN 问题))))
+		    (ADVP (AD 沈重))
+		    (VP (VV 感慨)))
+		(PU ，)
+		(VP (ADVP (AD 还))
+		    (ADVP (AD 特别))
+		    (PP-MNR (P 以)
+			    (NP (CP-APP (IP (LCP-LOC (NP-TTL (PU 《)
+							     (NP-PN (NR 蝤山))
+							     (NP (NN 节考))
+							     (PU 》))
+						     (LC 里))
+					    (NP-SBJ (-NONE- *pro*))
+					    (VP (BA 将)
+						(IP-OBJ (NP-SBJ (ADJP (JJ 老))
+								(NP (NN 人)))
+							(VP (VP (VV 送入)
+								(LCP-LOC (NP (NN 山))
+									 (LC 里)))
+							    (VP (VV 自生自灭))))))
+					(DEC 的))
+				(NP (NN 作法))))
+		    (PU ，)
+		    (VP (MSP 来)
+			(VP (VV 比对)
+			    (NP-OBJ (NP-PN (NR 台湾))
+				    (NP (NT 现今))
+				    (DNP (PP (P 对)
+					     (NP (NN 老人)))
+					 (DEG 的))
+				    (NP (NN 残酷)))))))) 
+	</parse>
+	<arg n="0">
+	黄春明 
+	</arg>
+	<arg n="1">
+	台湾 现今 对 老人 的 残酷 
+	</arg>
+	<arg n="1" f="crd">
+	以 《 蝤山 节考 》 里 *pro* 将 老 人 送入 山 里 自生自灭 的 作法 
+	</arg>
+	<arg n="m" f="adv">
+	特别 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

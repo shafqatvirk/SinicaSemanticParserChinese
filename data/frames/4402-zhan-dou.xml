@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 战斗 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 忠于)
+					  (NP-OBJ (NP-PN (NR 塞))
+						  (NP (NN 政府)))))
+				  (DEC 的)))
+			  (NP (NN 民兵)
+			      (NN 组织)))
+		  (VP (ADVP (AD 仍))
+		      (PP-LOC (P 在)
+			      (NP (DP (DT 该))
+				  (NP (NN 地区))))
+		      (ADVP (AD 坚持))
+		      (VP (VV 战斗)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 忠于 塞 政府 的 民兵 组织 
+	  </arg>
+	  <arg n="m" f="adv">
+	  坚持 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 该 地区 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

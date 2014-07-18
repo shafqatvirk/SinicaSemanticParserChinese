@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 容 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="allower"/>
+      <role argnum="1" argrole="person allowed"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/> 
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (PN 这里))
+	      (VP (ADVP (AD 又))
+		  (ADVP (AD 不))
+		  (VP (VV 容)
+		      (NP-OBJ (PN 我们))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 流连忘返)))))) 
+	  </parse>
+	  <arg n="0">
+	  这里 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  又 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  不 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  我们 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 流连忘返 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/> 
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NN 女))
+	  (VP (PP-BNF (P 为)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 悦)
+				      (NP-OBJ (PN 己)))))
+			  (NP (NN 者))))
+	      (VP (VV 容))) 
+	  </parse>
+	  <arg n="0">
+	  女	  
+	  </arg>
+	  <arg n="M" f="bnf">
+	  为 *T*-1 悦 己 者	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

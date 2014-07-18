@@ -1,0 +1,140 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谈起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity talked about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 虽))
+			  (VP (ADVP (AD 已))
+			      (VP (VV 年近)
+				  (QP-OBJ (CD 七十))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (IP-TPC (NP-PN-SBJ (NR 高清愿))
+		      (VP (VV 谈起)
+			  (NP-OBJ (NN 事业)
+				  (NN 宏图))))
+	      (PU ，)
+	      (NP-SBJ (NN 冲劲))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 输)
+		      (NP-OBJ (NN 年轻人))))) 
+	  </parse>
+	  <arg n="0">
+	  高清愿 
+	  </arg>
+	  <arg n="1">
+	  事业 宏图 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (VE 没有)
+			  (NP-OBJ (NN 和平)
+				  (NN 环境))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 任何))
+		      (NP (NN 建设)
+			  (NN 事业)))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 无从))
+		  (VP (VV 谈起)))) 
+	  </parse>
+	  <arg n="1">
+	  任何 建设 事业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  无从 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *pro* 没有 和平 环境 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 作者))
+	      (VP (VP (PP-DIR (P 从)
+			      (IP (NP-TMP (NT 当年)
+					  (NT ９月))
+				  (NP-PN-SBJ (NR 以色列))
+				  (VP (PP (P 同)
+					  (NP-PN (NR 巴勒斯坦)
+						 (NN 解放)
+						 (NN 组织)))
+				      (VP (VV 签署)
+					  (NP-OBJ (NP-PN (NR 巴勒斯坦))
+						  (NP (NN 自治)
+						      (NN 原则)
+						      (NN 宣言)))))))
+		      (VP (VV 谈起)))
+		  (PU ，)
+		  (VP (VV 回顾)
+		      (AS 了)
+		      (NP-OBJ (NP-PN (NR 中东))
+			      (LCP-TMP (NP (QP (CD 几百)
+					       (CLP (M 年)))
+					   (PU 、)
+					   (NP (ADVP (AD 特别是))
+					       (QP (ADVP (AD 近))
+						   (QP (CD 半)
+						       (CLP (M 个))))
+					       (NP (NN 世纪))))
+				       (LC 以来))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 错综复杂)))
+				      (DEC 的)))
+			      (NP (NN 斗争))))
+		  (PU ，)
+		  (VP (VV 表达)
+		      (AS 了)
+		      (NP-OBJ (NP (PN 他))
+			      (DNP (PP (P 对)
+				       (IP (NP-SBJ (-NONE- *pro*))
+					   (VP (NP-TMP (NT 今后))
+					       (VP (VV 建设)
+						   (NP-OBJ (QP (CD 一)
+							       (CLP (M 个)))
+							   (ADJP (JJ 新))
+							   (NP-PN (NR 中东)))))))
+				   (DEG 的))
+			      (NP (NN 看法)))))) 
+	  </parse>
+	  <arg n="0">
+	  作者 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 当年 ９月 以色列 同 巴勒斯坦 解放 组织 签署 巴勒斯坦 自治 原则 宣言 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

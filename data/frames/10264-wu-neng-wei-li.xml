@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无能为力 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 can do nothing about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 面对)
+			(NP-OBJ (DNP (ADJP (JJ 那样))
+				     (DEG 的))
+				(ADJP (JJ 大))
+				(NP (NN 环境)))))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 即使))
+			(VP (VV 亲如)
+			    (NP-OBJ (NN 父女)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VV 无能为力)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	*pro* 即使 亲如 父女 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 面对 那样 的 大 环境 
+	</arg>
+	<arg n="m" f="dis">
+	但是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

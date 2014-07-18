@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 世居 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 lives in for generations"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (QP-ADV (CD 二百四十几)
+			(CLP (M 年)))
+		(VP (VV 世居)
+		    (NP-PN-OBJ (NR 美浓))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	美浓 
+	</arg>
+	<arg n="m" f="adv">
+	二百四十几 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-4))
+				(VP (PU 「)
+				    (VV 世居)
+				    (PP (P 於)
+					(NP (PN 此)))
+				    (PU 」)))
+			    (DEC 的)))
+		    (NP (NN 台北人)))
+	    (VP (VP (VA 少)
+		    (DER 得)
+		    (VP-EXT (VA 可怜)))
+		(PU ，)
+		(VP (ADVP (AD 仅))
+		    (VP (VV 占)
+			(QP-OBJ (DNP (NP (NP-PN (NR 台北))
+					 (NP (NN 人口)))
+				     (DEG 的))
+				(QP (CD 五分之一))))))) 
+	</parse>
+	<arg n="0">
+	*T*-4 
+	</arg>
+	<arg n="1">
+	於 此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

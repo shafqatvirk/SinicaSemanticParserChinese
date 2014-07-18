@@ -1,0 +1,148 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放回 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 releases"/>
+    <role argnum="2" argrole="place arg1 is released back to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (NP-SBJ (-NONE- *pro*))
+			(VP (ADVP (AD 事先))
+			    (ADVP (AD 不))
+			    (VP (VV 了解)
+				(NP-OBJ (NP (PN 它们))
+					(DNP (PP (P 在)
+						 (NP (NN 野外) ))
+					     (DEG 的))
+					(NP (NN 生长)
+					    (NN 情形) ))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 很))
+		(VP (VA 难)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 再))
+				(VP (VV 放回)
+				    (NP-OBJ (NN 荒野) ))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	荒野 
+	</arg>
+	<arg n="m" f="adv">
+	再 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (NP-TMP (NT 今天))
+	    (NP-SBJ (NN 学界))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 看)
+			    (NP-OBJ (NT 五四))))
+		(PU ，)
+		(VP (VV 应)
+		    (VP (VP (VV 放回)
+			    (NP-OBJ (NT 当时)
+				    (NN 思潮)))
+			(CC 与)
+			(VP (ADVP (AD 更))
+			    (VP (VV 著重)
+				(NP-OBJ (DNP (NP (NN 时代)
+						 (NN 背景))
+					     (DEG 的))
+					(NP (NN 作用))))))))) 
+	</parse>
+	<arg n="0">
+	学界 
+	</arg>
+	<arg n="2">
+	当时 思潮 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 看 五四 
+	</arg>
+	<arg n="m" f="tmp">
+	今天 
+	</arg>
+	<arg n="m" f="dis">
+	因此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (CC 不仅)
+		(VP (VV 让)
+		    (NP-OBJ (NN 民众))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VE 有)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (NP-MNR (-NONE- *T*-1))
+						(NP-ADV (NN 终身))
+						(VP (VV 学习)))))
+				    (NP (NN 管道))))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (VP (VV 鼓励)
+			(NP-OBJ (NN 民众))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (BA 将)
+				(IP-OBJ (NP-SBJ (NN 关怀)
+						(NN 重心))
+					(VP (VP (VV 放回)
+						(NP-OBJ (ADJP (JJ 日常))
+							(NP (NN 生活))))
+					    (PU 、)
+					    (VP (VV 放回)
+						(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+							    (CP (IP (NP-SBJ (PN 自己))
+								    (VP (MSP 所)
+									(VP (VV 处)
+									    (NP-OBJ (-NONE- *T*-2)))))
+								(DEC 的)))
+							(NP (NN 社区)))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	关怀 重心 
+	</arg>
+	<arg n="2">
+	日常 生活 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

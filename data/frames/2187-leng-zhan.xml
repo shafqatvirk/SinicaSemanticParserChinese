@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冷战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 分裂)))
+			      (DEC 的)))
+		      (NP-PN (NR 德国)))
+	      (VP (VV 成)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (NN 东西方))
+				      (VP (NP-LOC (-NONE- *T*-2))
+					  (VCD (VV 冷战)
+					       (VV 对峙))))
+				  (DEC 的)))
+			  (NP (NN 前线))))) 
+	  </parse>
+	  <arg n="0">
+	  东西方 
+	  </arg>
+	  <arg n="m" f="loc">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

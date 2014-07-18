@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 牵涉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 involves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (DNP (NP (ADJP (JJ 终端))
+			     (NP (NN 水)
+				 (NN 需求)))
+			 (DEG 的))
+		    (NP (NN 管理)))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 则))
+		    (VP (VRD (VV 牵涉)
+			     (VV 到))
+			(NP-OBJ (NP (NP (ADJP (JJ 自来))
+					(NP (NN 水)))
+				    (DEG 的)
+				    (NP (NN 民生)
+					(PU 、)
+					(NN 工业))
+				    (NP (NN 供给)))
+				(PU ，)
+				(CC 与)
+				(NP (DNP (NP (NN 农田)
+					     (NN 灌溉))
+					 (DEG 的))
+				    (NP (NN 规划)
+					(NN 分配))))))
+		(PU ，)
+		(VP (PP-LGS (P 由)
+			    (NP-PN (NP-PN (NN 内政)
+					  (NN 部))
+				   (PU 、)
+				   (NP-PN (NN 经济)
+					  (NN 部))
+				   (CC 与)
+				   (NP-PN (NR 农委会))))
+		    (ADVP (AD 分别))
+		    (VP (VV 负责))))) 
+	</parse>
+	<arg n="0">
+	终端 水 需求 的 管理 
+	</arg>
+	<arg n="1">
+	自来 水 的 民生 、 工业 供给 ， 与 农田 灌溉 的 规划 分配 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 动武)))
+	    (VP (VP-FOC (VV 牵涉))
+		(VP (ADVP (AD 太))
+		    (VP (VA 广))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 动武 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

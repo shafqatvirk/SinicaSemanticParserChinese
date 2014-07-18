@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兼容 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="containing entity"/>
+      <role argnum="1" argrole="things contained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一)
+			  (CLP (M 家)))
+		      (NP (NN 企业)))
+	      (VP (VV 可以)
+		  (VP (VV 兼容)
+		      (NP-OBJ (NP-APP (NP (NN 加工)
+					  (PU 、)
+					  (NN 仓储))
+				      (CC 到)
+				      (NP (NN 贸易)
+					  (CC 及)
+					  (NN 贸易)
+					  (NN 服务))
+				      (ETC 等))
+			      (DP (DT 各)
+				  (CLP (M 种)))
+			      (NP (NN 职能)))))) 
+	  </parse>
+	  <arg n="0">
+	  一 家 企业 
+	  </arg>
+	  <arg n="1">
+	  加工 、 仓储 到 贸易 及 贸易 服务 等 各 种 职能 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ-2 (QP (CD 三千多)
+			(CLP (M 平方米)))
+		    (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-3))
+				(NP-SBJ (NP (NN 商场)
+					    (CC 和)
+					    (NN 写字楼)))
+				(VP (VV 兼容)))
+			    (DEC 的)))
+		    (NP (NN 商业)
+			(NN 大楼)))
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  商场 和 写字楼 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

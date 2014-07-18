@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 离开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party leaving"/>
+      <role argnum="1" argrole="place leaving from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-APP (NP-PN (NR 马来西亚))
+				(NP (NN 副总理)))
+			(NP-PN (NR 安瓦尔)))
+		(VP (NP-TMP (NT 今天)
+			    (NT 下午))
+		    (VP (VP (VV 结束)
+			    (AS 了)
+			    (NP-OBJ (DNP (PP (P 对)
+					     (NP-PN (NR 中国)))
+					 (DEG 的))
+				    (NP (NN 访问))))
+			(PU ，)
+			(VP (VV 离开)
+			    (NP-PN-OBJ (NR 上海)))
+			(VP (VV 前往)
+			    (NP-PN-OBJ (NR 东京)))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  马来西亚 副总理 安瓦尔 
+	  </arg>
+	  <arg n="1">
+	  上海 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 下午 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 应该)
+	      (VP (VP (VV 让)
+		      (NP-OBJ (DNP (NP-PN (NR 海地))
+				   (DEG 的))
+			      (ADJP (JJ 伪))
+			      (NP (NN 政府)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 离开)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 皈依 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 is converted to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (NP-PN (NR 休士顿))
+			    (NP (NN 演讲)))
+		    (VP (VV 完毕)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 赵宁))
+	    (VP (VP (VP (VV 搭机))
+		    (VP (ADVP (AD 直))
+			(VP (VV 奔)
+			    (NP-PN-OBJ (NR 洛杉矶)
+				       (NR 西来寺)))))
+		(PU ，)
+		(VP (ADVP (AD 就))
+		    (PP-LOC (P 在)
+			    (LCP (NP (DNP (LCP (NP (NN 整建))
+					       (LC 中))
+					  (DEG 的))
+				     (NP (NN 工地)))
+				 (LC 内)))
+		    (VP (VV 皈依)
+			(AS 了)
+			(NP-PN-OBJ (NR 星云)
+				   (NN 大师))))
+		(PU ，)
+		(VP (ADVP (AD 从此))
+		    (VP (VV 滴酒不沾))))) 
+	</parse>
+	<arg n="0">
+	赵宁 
+	</arg>
+	<arg n="1">
+	星云 大师 
+	</arg>
+	<arg n="m" f="loc">
+	在 整建 中 的 工地 内 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	休士顿 演讲 完毕 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (QP-TMP (CD 三十八)
+			    (CLP (M 岁)))
+		    (VP (VV 皈依)))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (PP-TMP (P 在)
+			    (LCP (QP (ADVP (AD 号称))
+				     (QP (CD 四十九．五)
+					 (CLP (M 岁))))
+				 (LC 时)))
+		    (VP (VV 结婚)))
+		(PU ，)
+		(VP (QP-TMP (LCP-TMP (NP (NN 婚))
+				     (LC 後))
+			    (QP (ADVP (AD 不))
+				(ADVP (AD 出))
+				(QP (CD 几)
+				    (CLP (M 年)))))
+		    (PU ，)
+		    (ADVP (AD 又))
+		    (VP (VV 成)
+			(AS 了)
+			(NP-OBJ (DNP (NP (QP (CD 三)
+					     (CLP (M 个)))
+					 (NP (NN 孩子)))
+				     (DEG 的))
+				(NP (PU 「)
+				    (ADJP (JJ 超龄))
+				    (NP (NN 奶爸))
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	三十八 岁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

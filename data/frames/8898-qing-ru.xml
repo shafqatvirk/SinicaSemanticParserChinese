@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 请入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 invites arg1 to enter"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (BA 将)
+				      (IP-OBJ (NP-SBJ (NN 百步蛇))
+					      (VP (VV 请入)
+						  (NP-OBJ (NN 部落)
+							  (NN 文化))))))
+			      (DEC 的)))
+		      (NP (NN 原住民族)))
+	      (PU ，)
+	      (VP (ADVP (AD 还))
+		  (VP (VV 包括)
+		      (NP-OBJ (NN 布农族)
+			      (PU 、)
+			      (NN 鲁凯族))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  百步蛇 
+	  </arg>
+	  <arg n="2">
+	  部落 文化 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

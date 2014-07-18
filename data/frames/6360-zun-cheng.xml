@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 尊称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="caller"/>
+    <role argnum="1" argrole="entity arg0 calls"/>
+    <role argnum="2" argrole="name arg1 is respectfully called by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (LB 被)
+				(IP-OBJ (NP-SBJ (NN 博物馆)
+						(NN 上上下下))
+					(VP (VCP (VV 尊称)
+						 (VC 为))
+					    (NP-OBJ (PU 「)
+						    (NP-PN (NR 郑))
+						    (NP (NN 老师))
+						    (PU 」))))))
+			(DEC 的)))
+		(NP-PN (NR 郑永国))) 
+	</parse>
+	<arg n="0">
+	博物馆 上上下下 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	「 郑 老师 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (SB 被)
+		    (VP (VCP (VV 尊称)
+			     (VC 为))
+			(NP-PN-OBJ (PU 「)
+				   (NR 大宝)
+				   (NN 法王)
+				   (PU 」)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	「 大宝 法王 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

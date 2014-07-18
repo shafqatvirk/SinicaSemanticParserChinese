@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 夸大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing exaggerated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-PN-SBJ (NR 纽法默))
+		(VP (VV 认为)
+		    (PU ，)
+		    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (VE 有)
+				(IP-OBJ (NP-SBJ (NN 人))
+					(VP (VV 夸大)
+					    (AS 了)
+					    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (NP-PN (NR 中国))
+									(NP (NN 谷物)
+									    (NN 生产)))
+								(VP (VV 面临)
+								    (NP-OBJ (-NONE- *T*-1))))
+							    (DEC 的)))
+						    (NP (NN 问题))))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  人 
+	  </arg>
+	  <arg n="1">
+	  *OP* 中国 谷物 生产 面临 *T*-1 的 问题 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-3 (NP (NP-PN (NR 美国))
+			    (PP (P 对)
+				(NP-PN (NR 华)))
+			    (NP (NN 贸易)))
+			(NP (NN 逆差)))
+	      (VP (SB 被)
+		  (VP (ADVP (AD 严重))
+		      (VP (VV 夸大)
+			  (NP-OBJ (-NONE- *-3)))))) 
+	  </parse>
+	  <arg n="1">
+	  美国 对 华 贸易 逆差 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

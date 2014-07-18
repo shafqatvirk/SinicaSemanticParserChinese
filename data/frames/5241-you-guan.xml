@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 攸关 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 affects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 攸关)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 凸显)
+						(NP-OBJ (NP (NP (PN 我))
+							    (NP (NN 国)))
+							(NP (NN 主权)
+							    (NN 地位)))))))
+			    (DEC 的)))
+		    (NP (NN 邦交国)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 中共))
+	    (VP (ADVP (AD 更))
+		(VP (VC 是)
+		    (VP (VV 列为)
+			(NP-OBJ (ADJP (JJ 首要))
+				(NP (NN 目标))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	*PRO* 凸显 我 国 主权 地位 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-TPC (DP (DT 这)
+			(CLP (M 种)))
+		    (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 攸关)
+				    (NP-OBJ (NN 民生)
+					    (NN 权益))))
+			    (DEC 的)))
+		    (NP (NN 新闻)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 怎麽))
+		(VP (VV 能)
+		    (VP (ADVP (AD 不))
+			(VP (VV 处理)))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	民生 权益 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调剂 </id>
+    <frameset id="f1" edef="balance">
+      <role argnum="0" argrole="causer,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 丰富)
+		      (NP-OBJ (NN 品种))))
+	      (PU 、)
+	      (IP (NP-SBJ (NN 丰歉))
+		  (VP (VV 调剂)))
+	      (CC 和)
+	      (IP (NP-SBJ (NN 区域))
+		  (VP (VA 平衡)))) 
+	  </parse>
+	  <arg n="1">
+	  丰歉 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

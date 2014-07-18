@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 穿越 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 科学家)))
+	      (VP (VP (ADVP (AD 徒步))
+		      (VP (VV 穿越)
+			  (NP-PN-OBJ (NP-PN (NR 雅鲁藏布))
+				     (ADJP (JJ 大))
+				     (NP (NN 峡谷)))))
+		  (PU ，)
+		  (VP (VV 取得)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 批)))
+			      (NP (NN 科学)
+				  (NN 考察))
+			      (ADJP (JJ 重要))
+			      (NP (NN 成果)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 科学家 
+	  </arg>
+	  <arg n="1">
+	  雅鲁藏布 大 峡谷 
+	  </arg>
+	  <arg n="m" f="adv">
+	  徒步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

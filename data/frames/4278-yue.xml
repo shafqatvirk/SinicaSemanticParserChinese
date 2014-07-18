@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 曰 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 said"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VCD (VV 答)
+		       (VV 曰))
+		  (PU ：)
+		  (NP-OBJ (QP (QP (CD ４)
+				  (CLP (-NONE- *RNR*-1)))
+			      (CC 至)
+			      (QP (CD ７)
+				  (CLP-1 (M 个))))
+			  (NP (NN 钟头))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  ４ *RNR*-1 至 ７ 个 钟头 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

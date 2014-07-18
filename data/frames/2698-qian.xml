@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity moved"/>
+      <role argnum="2" argrole="location move to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-TPC (DNP (NP (DP (DT 该))
+			       (NP (NN 地区)))
+			   (DEG 的))
+		      (QP (ADVP (AD 约))
+			  (QP (CD ２０万)))
+		      (NP (NN 居民)))
+	      (QP-SBJ (CD 大部分))
+	      (VP (ADVP (AD 已))
+		  (VP (VP (VV 弃)
+			  (NP-OBJ (NN 家)))
+		      (VP (NP-ADV (NN 北))
+			  (VP (VV 迁)))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  大部分 
+	  </arg>
+	  <arg n="0" f="psr">
+	  该 地区 的 约 ２０万 居民 
+	  </arg>
+	  <arg n="m" f="adv">
+	  北 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 国民党))
+		      (NP (NN 政府)))
+	      (VP (PP-TMP (P 于)
+			  (NP (NT 一九三七年)))
+		  (ADVP (AD 西))
+		  (VP (VV 迁)
+		      (NP-PN-OBJ (NR 重庆))))) 
+	  </parse>
+	  <arg n="1">
+	  国民党 政府 
+	  </arg>
+	  <arg n="2">
+	  重庆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  西 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 一九三七年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 沿海)
+		      (NN 工业))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 纷纷))
+		  (ADVP (AD 内))
+		  (VP (VV 迁)))) 
+	  </parse>
+	  <arg n="1">
+	  沿海 工业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  内 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纷纷 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

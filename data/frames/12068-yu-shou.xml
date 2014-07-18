@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预售 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller"/>
+      <role argnum="1" argrole="thing arg0 sells in advance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TMP (NP-SBJ (NN 特展))
+		      (VP (VV 伊始)))
+	      (PU ，)
+	      (NP-SBJ (NN 预售)
+		      (NN 门票))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 逾)
+		      (QP-OBJ (CD 两万)
+			      (CLP (M 张)))))) 
+	  </parse>
+	  <arg n="1">
+	  门票 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

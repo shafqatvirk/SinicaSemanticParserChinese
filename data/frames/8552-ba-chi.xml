@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 把持 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is in control of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (IP (NP-PN-SBJ (NR 金鼎))
+			       (VP (ADVP (AD 没))
+				   (VP (VV 做出)
+				       (NP-OBJ (NP (ADJP (JJ 不锈))
+						   (NP (NN 钢)))
+					       (NP (NN 抽丝))))))
+			   (LC 前)))
+	      (PU ，)
+	      (NP-SBJ-1 (DNP (NP (DP (DT 全))
+				 (NP (NN 世界)))
+			     (DEG 的))
+			(NP (NN 金属)
+			    (NN 纤维)))
+	      (VP (ADVP (AD 仅))
+		  (PP-LGS (P 由)
+			  (NP (QP (CD 几)
+				  (CLP (M 家)))
+			      (ADJP (JJ 大))
+			      (NP (NN 厂))))
+		  (VP (VCD (VV 把持)
+			   (VV 寡占))
+		      (NP-OBJ (-NONE- *-1))))) 
+	  </parse>
+	  <arg n="0">
+	  由 几 家 大 厂 
+	  </arg>
+	  <arg n="1">
+	  全 世界 的 金属 纤维 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 金鼎 没 做出 不锈 钢 抽丝 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

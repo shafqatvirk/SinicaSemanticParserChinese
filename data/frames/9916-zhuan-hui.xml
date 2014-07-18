@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 transfers arg1 back to"/>
+      <role argnum="3" argrole="place arg1 is transferred from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP-APP (DP (DT 有些))
+				       (NP (NN 台商)))
+			       (NP (ADVP (AD 像))
+				   (NP-PN (NR 徐沆))))
+			   (DEG 的))
+		      (NP (NN 小孩)))
+	      (VP (ADVP (AD 便))
+		  (PP-DIR (P 从)
+			  (NP-PN (NR 深圳)))
+		  (VP (VV 转回)))) 
+	  </parse>
+	  <arg n="1">
+	  有些 台商 像 徐沆 的 小孩 
+	  </arg>
+	  <arg n="3">
+	  从 深圳 
+	  </arg>
+	  <arg n="m" f="adv">
+	  便 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

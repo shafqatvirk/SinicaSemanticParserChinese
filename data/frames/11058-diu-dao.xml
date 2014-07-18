@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 丢到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 throws arg1 to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (VP (PP-DIR (P 向)
+			    (NP-PN (NN 市)
+				   (NN 政府)))
+		    (VP (VV 购买)
+			(AS 了)
+			(NP-OBJ (QP (CD 二)
+				    (CLP (M 个)))
+				(NP (NN 垃圾)
+				    (NN 回收箱)))))
+		(PU ，)
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (DP-ADV (DT 每)
+							    (CLP (M 天)))
+						    (VP (VV 废弃)
+							(NP-OBJ (-NONE- *T*-1)))))
+					    (DEC 的)))
+				    (NP (NN 果菜)
+					(NN 食物))
+				    (NP (NN 残渣)))
+			    (VP (VP (VV 丢到)
+				    (NP-OBJ (NN 里面)))
+				(VP (VV 去)))))
+		(PU ，)
+		(VP (ADVP (AD 再))
+		    (DVP (QP (QP (CD 一)
+				 (CLP (M 层)))
+			     (QP (CD 一)
+				 (CLP (M 层))))
+			 (DEV 的))
+		    (VP (VRD (VV 覆盖)
+			     (VV 上))
+			(NP-OBJ (NN 泥土)))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 每 天 废弃 *T*-1 的 果菜 食物 残渣 
+	</arg>
+	<arg n="2">
+	里面 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

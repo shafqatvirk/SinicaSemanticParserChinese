@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抽出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 draws arg1 out from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 可是))
+	      (NP-SBJ (NP-PN (NR 大清桦))
+		      (NP (NN 团队)))
+	      (VP (PP-MNR (P 靠著)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP-LOC (P 在)
+						      (NP (NN 纺纤)
+							  (NN 领域)))
+					      (VP (VV 累积)
+						  (NP-OBJ (-NONE- *T*-1))
+						  (QP-EXT (CD 多)
+							  (CLP (M 年))))))
+				      (DEC 的)))
+			      (NP (NN 功力))))
+		  (PU ，)
+		  (PP-TMP (P 在)
+			  (QP (CP-APP (IP (NP-SBJ (NN 公司))
+					  (VP (VV 成立)))
+				      (DEC 的))
+			      (QP (OD 第一)
+				  (CLP (M 年)))))
+		  (ADVP (AD 就))
+		  (DVP (VP (VA 成功))
+		       (DEV 地))
+		  (PP-DIR (P 从)
+			  (LCP (NP (QP (NP (NN 尼龙))
+				       (QP (CD 六六)))
+				   (NP (NN 粒子)))
+			       (LC 中)))
+		  (VP (VV 抽出)
+		      (NP-OBJ (NN 原丝))))) 
+	  </parse>
+	  <arg n="0">
+	  大清桦 团队 
+	  </arg>
+	  <arg n="1">
+	  原丝 
+	  </arg>
+	  <arg n="2">
+	  从 尼龙 六六 粒子 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  成功 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 公司 成立 的 第一 年 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  靠著 *OP* *pro* 在 纺纤 领域 累积 *T*-1 多 年 的 功力 
+	  </arg>
+	  <arg n="m" f="dis">
+	  可是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

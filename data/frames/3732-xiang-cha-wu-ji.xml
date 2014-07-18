@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相差无几 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 台湾))
+				  (VP (PP-DIR (P 从)
+					      (NP (NN 祖国)
+						  (NN 大陆)))
+				      (VP (VV 获得)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (NP (NN 贸易)
+			  (NN 顺差)))
+	      (VP (VP (ADVP (AD 累计))
+		      (ADVP (AD 已))
+		      (VP (VV 达)
+			  (QP-OBJ (CD 八百亿)
+				  (CLP (M 美元)))))
+		  (PU ，)
+		  (VP (PP (P 与)
+			  (NP (DNP (NP-PN (NR 台湾))
+				   (DEG 的))
+			      (NP (NN 外汇)
+				  (NN 储备))))
+		      (VP (VV 相差无几))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 台湾 从 祖国 大陆 获得 *T*-2 的 贸易 顺差 
+	  </arg>
+	  <arg n="0">
+	  与 台湾 的 外汇 储备 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 延续 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing made to continue"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-DIR (P 对于)
+			      (NP (DP (DT 那些))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 企图)
+						  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (VP (PP-TMP (P 在)
+									  (LCP (NP (NT 一九九七年))
+									       (LC 前)))
+								  (VP (VV 制造)
+								      (NP-OBJ (PU “)
+									      (ADJP (JJ 既成))
+									      (NP (NN 事实))
+									      (PU ”))))
+							      (VP (VV 延续)
+								  (NP-OBJ (NP-PN (NR 英国))
+									  (NP (NN 政治)
+									      (NN 影响))))))))
+					  (DEC 的)))
+				  (NP (NN 人))))
+		      (VP (MSP 来)
+			  (VP (VV 说))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  英国 政治 影响 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 本)
+			  (CLP (M 届)))
+		      (NP-PN (NR 安第斯)
+			     (NN 议会))
+		      (NP (NN 会议)))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 延续)
+		      (PP (P 到)
+			  (NP (NT 十六日)))))) 
+	  </parse>
+	  <arg n="1">
+	  本 届 安第斯 议会 会议 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  到 十六日 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (NP (NN 决定)))
+	      (VP (VV 打破)
+		  (AS 了)
+		  (NP-OBJ (LCP (NP (NP (NN 援助国))
+				   (CC 同)
+				   (NP (NP-PN (NR 巴))
+				       (NP (NN 自治)
+					   (NN 领导)
+					   (NN 机构))))
+			       (LC 之间))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 延续)
+					  (QP-EXT (ADVP (AD 将近))
+						  (QP (CD 一)
+						      (CLP (M 年))))))
+				  (DEC 的)))
+			  (NP (NN 僵局))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将近 一 年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

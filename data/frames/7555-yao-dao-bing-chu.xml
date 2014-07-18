@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 药到病除 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-PRD (QP (CD 一)
+		    (CLP (M 帖)))
+		(CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 能)
+				(VP (VV 让)
+				    (NP-OBJ (NN 国片))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 药到病除))))))
+			(DEC 的)))
+		(NP (NN 药方))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

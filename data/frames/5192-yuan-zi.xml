@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 源自 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is originated from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 骇客)
+		    (NN 文化))
+	    (VP (VV 源自)
+		(NP-OBJ (NP (NT 一九七○年代))
+			(DNP (NP-PN (NR 美国))
+			     (DEG 的))
+			(NP (PU 「)
+			    (NN 电话)
+			    (NN 盗打)
+			    (PU 」))))) 
+	</parse>
+	<arg n="0">
+	骇客 文化 
+	</arg>
+	<arg n="1">
+	一九七○年代 美国 的 「 电话 盗打 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-Q-SBJ (NP-SBJ (NN 色情)
+			      (NN 网站))
+		      (VP (VNV-WH (VV 该)
+				  (AD 不)
+				  (VV 该))
+			  (VP (VV 扫))))
+	    (PU ，)
+	    (VP (VV 源自)
+		(IP-OBJ (NP-SBJ (NP (NN 各界)
+				    (NN 人士))
+				(DNP (PP (P 对)
+					 (NP (NN 网路)
+					     (NN 世界)))
+				     (DEG 的))
+				(NP (NN 认知)))
+			(VP (VV 有异))))) 
+	</parse>
+	<arg n="0">
+	色情 网站 该 不 该 扫 
+	</arg>
+	<arg n="1">
+	各界 人士 对 网路 世界 的 认知 有异 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

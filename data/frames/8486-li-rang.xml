@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 礼让 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 yields to"/>
+      <role argnum="2" argrole="thing arg1 is let to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 相传)
+		  (IP-OBJ (IP (IP-ADV (NP-SBJ (NN 人)
+					      (PU 、)
+					      (NN 蛇))
+				      (VP (VV 相逢)))
+			      (PU ，)
+			      (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 应)
+				  (VP (VP (VV 礼让)
+					  (NP-OBJ (NN 蛇))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 先))
+						  (VP (VV 行)))))
+				      (PU ，)
+				      (CC 或)
+				      (VP (VP (VV 割下)
+					      (NP-OBJ (QP (CD 一)
+							  (CLP (M 块)))
+						      (ADJP (JJ 红))
+						      (NP (NN 布))))
+					  (VP (VRD (VV 送)
+						   (VV 过去)))))))
+			  (PU ，)
+			  (IP (NP-SBJ (NN 百步蛇))
+			      (VP (ADVP (AD 便))
+				  (VP (VV 会)
+				      (VP (ADVP (AD 从容))
+					  (VP (VV 离去))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  蛇 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 先 行 
+	  </arg>
+	  <arg n="m" f="adv">
+	  人 、 蛇 相逢 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

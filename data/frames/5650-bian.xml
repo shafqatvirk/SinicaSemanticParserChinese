@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 编 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 compiles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (NP-PN (NR 元代))
+				    (NP-PN (NR 郭巨敬)))
+			    (VP (MSP 所)
+				(VP (VV 编)
+				    (NP-OBJ (-NONE- *T*-1)))))
+			(DEC 的)))
+		(NP-TTL (PU 《)
+			(QP (CD 二十四))
+			(NP (NN 孝))
+			(PU 》))) 
+	</parse>
+	<arg n="0">
+	元代 郭巨敬 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 强调)
+		    (IP-OBJ (IP (NP-SBJ (NN 预算))
+				(VP (VV 编)
+				    (AS 了)
+				    (QP-OBJ (CD 多少))))
+			    (PU ，)
+			    (IP-Q (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 做)
+				      (AS 了)
+				      (NP-OBJ (DP-WH (DT 什麽))
+					      (NP (NN 节目)))))))) 
+	</parse>
+	<arg n="1">
+	预算 
+	</arg>
+	<arg n="1" f="qty">
+	多少 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

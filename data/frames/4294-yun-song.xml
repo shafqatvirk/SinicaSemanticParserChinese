@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运送 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity transported"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (QP-ADV (QP (CD 五)
+			      (CLP (M 年))))
+		  (ADVP (AD 累计))
+		  (VP (VV 运送)
+		      (NP-OBJ (NN 旅客))
+		      (QP-EXT (CD 一千八百多万)
+			      (CLP (M 人次)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  旅客 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一千八百多万 人次 
+	  </arg>
+	  <arg n="m" f="adv">
+	  累计 
+	  </arg>
+	  <arg n="m" f="adv">
+	  五 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

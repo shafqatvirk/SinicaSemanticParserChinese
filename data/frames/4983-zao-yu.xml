@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遭遇 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 runs into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 美国))
+		    (NP (NN 总统)))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 遭遇)
+				 (NP-OBJ (NN 危机))))
+			 (LC 後))
+		(VP (ADVP (AD 又))
+		    (VP (VV 解救)
+			(NP-OBJ (NN 危机)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	危机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (CP-CND (ADVP (CS 如果))
+		    (IP (NP-SBJ (NN 厂商))
+			(VP (ADVP (AD 又))
+			    (VP (VC 是)
+				(NP-PRD (ADJP (JJ 大))
+					(NP (NN 广告)
+					    (NN 客户)))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可能)
+		(VP (VV 会)
+		    (VP (VRD (VV 遭遇)
+			     (VV 到))
+			(NP-OBJ (NN 压力)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	压力 
+	</arg>
+	<arg n="m" f="cnd">
+	如果 厂商 又 是 大 广告 客户 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

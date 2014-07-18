@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相约 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 vows to each other to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 三十六)
+			(CLP (M 对)))
+		    (NP (NN 新人)))
+	    (VP (VP (PP-LOC (P 於)
+			    (NP-PN (NR 台北)
+				   (NN 宾馆)))
+		    (ADVP (AD 共))
+		    (VP (VV 结)
+			(NP-OBJ (NN 连理))))
+		(PU ，)
+		(VP (VV 相约)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 遵循)
+				    (NP-OBJ (NN 人权)
+					    (NN 誓言)))
+				(PU ，)
+				(VP (VV 创造)
+				    (NP-OBJ (NN 人权)
+					    (NN 家庭)))))))) 
+	</parse>
+	<arg n="0">
+	三十六 对 新人 
+	</arg>
+	<arg n="1">
+	*PRO* 遵循 人权 誓言 ， 创造 人权 家庭 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

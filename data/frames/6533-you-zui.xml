@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有罪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing that causes arg0 to be guilty"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ-3 (-NONE- *T*-2))
+			    (VP (PP-LGS (P 经)
+					(NP (NN 法院)))
+				(VP (VV 判决)
+				    (NP-OBJ (-NONE- *-3))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VA 有罪))))))))
+		(NP (NN 者))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 花)
+			(NP-OBJ (NN 钱))))
+	    (VP (VV 有罪))) 
+	</parse>
+	<arg n="1">
+	*PRO* 花 钱 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

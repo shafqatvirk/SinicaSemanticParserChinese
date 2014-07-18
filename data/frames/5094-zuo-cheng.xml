@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 做成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 makes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 要)
+			    (VP (VV 做成)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (CC 又)
+							(VP (VA 大))
+							(CC 又)
+							(VP (VA 均匀))))
+						(DEC 的)))
+					(NP (NN 陶器))))))
+		(PU ，)
+		(VP (VV 需要)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (ADVP (AD 很))
+					    (VP (VA 好))))
+				    (DEC 的)))
+			    (NP (NN 技术)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 又 大 又 均匀 的 陶器 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

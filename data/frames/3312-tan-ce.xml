@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 探测 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing explored"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 特别是))
+	      (IP-SBJ (NP-PN-SBJ (NR 包钢)
+				 (NN 稀土)
+				 (NN 研究院))
+		      (VP (PP-BNF (P 为)
+				  (NP (IP-APP (NP-PN-SBJ (NR 丁肇中)
+							 (NN 教授))
+					      (VP (VV 探测)
+						  (NP-OBJ (NN 反物质))))
+				      (NP (NN 国际)
+					  (NN 合作)
+					  (NN 项目))))
+			  (VP (VV 提供)
+			      (NP-OBJ (ADJP (JJ 高性能))
+				      (NP (NN 钕铁硼钢))))))
+	      (PU ，)
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 国际))
+			       (LC 上)))
+		  (VP (VV 引起)
+		      (NP-OBJ (ADJP (JJ 强烈))
+			      (NP (NN 反响)))))) 
+	  </parse>
+	  <arg n="0">
+	  丁肇中 教授 
+	  </arg>
+	  <arg n="1">
+	  反物质 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

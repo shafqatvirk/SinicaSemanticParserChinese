@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 劝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="advice giver"/>
+    <role argnum="1" argrole="advice receiver"/>
+    <role argnum="2" argrole="advice"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 也))
+		(VP (VV 会)
+		    (VP (VV 劝)
+			(NP-OBJ (NP (NP (PN 自己))
+				    (NP (NN 周遭)))
+				(NP (NN 朋友)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 修饰)
+				    (NP-OBJ (NN 外表)))
+				(PU ，)
+				(VP (VV 给)
+				    (NP-IO (NN 人))
+				    (NP-OBJ (ADJP (JJ 好))
+					    (NP (NN 印象)))))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	自己 周遭 朋友 
+	</arg>
+	<arg n="2">
+	*PRO* 修饰 外表 ， 给 人 好 印象 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

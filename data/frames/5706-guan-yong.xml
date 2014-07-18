@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惯用 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="user"/>
+    <role argnum="1" argrole="entity arg0 uses as a custom"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-TMP (NT 六○)
+					    (NN 年代))
+				    (NP-SBJ (NN 记忆体))
+				    (VP (NP-TMP (-NONE- *T*-1))
+					(ADVP (AD 极其))
+					(VP (VA 昂贵))))
+				(DEC 的)))
+			(NP (NN 时候))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 不少))
+		    (NP (NN 工程师)))
+	    (VP (VP (VV 惯用)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 个)))
+			    (NP (NN 栏位))))
+		(VP (MSP 来)
+		    (VP (VV 代表)
+			(NP-OBJ (NN 年份))))
+		(PU ，)
+		(PRN (VP (ADVP (AD 譬如))
+			 (VP (VP (VV 用)
+				 (QP-OBJ (PU 「)
+					 (CD 五)
+					 (PU 」)))
+			     (VP (VV 代表)
+				 (NP-OBJ (NT 一九六五年)))))))) 
+	</parse>
+	<arg n="0">
+	不少 工程师 
+	</arg>
+	<arg n="1">
+	一 个 栏位 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *OP* 六○ 年代 记忆体 *T*-1 极其 昂贵 的 时候 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 饱满 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="theme"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+              (CP (IP (NP-TPC (-NONE- *T*-1))
+                      (NP-SBJ (NN 元气))
+                      (VP (VA 饱满)))
+                  (DEC 的)))
+          (NP (NN 台商))))
+	</parse>
+	<arg n="0" f="PSR"> (*T*-1)->(台商) </arg>
+	<arg n="0" f="PSE"> 元气 </arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 砂浆))
+      (VP (ADVP (AD 不))
+          (VP (VA 饱满)))))
+        </parse>
+	<arg n="0"> 砂浆 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

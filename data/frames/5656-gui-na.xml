@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 归纳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="summarizer"/>
+      <role argnum="1" argrole="thing arg0 summarizes"/>
+      <role argnum="2" argrole="thing arg1 is summarized as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 研究究)
+				      (NP-OBJ (NP-PN (NR 台湾))
+					      (NP (NN 植被)))
+				      (QP-EXT (CD 多)
+					      (CLP (M 年)))))
+			      (DEC 的)))
+		      (NP-APP (NP-PN (NR 静宜)
+				     (NN 大学))
+			      (NP (NN 教授)))
+		      (NP-PN (NR 陈玉峰)))
+	      (VP (VV 归纳)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (NP-PN (NR 台湾))
+						  (NP (NN 桧木林)))
+					  (VP (VA 发达))))
+				  (NP (NN 处)))
+			  (PU ，)
+			  (VP (ADVP (AD 常))
+			      (VP (VV 在)
+				  (NP-OBJ (NP (NN 河川))
+					  (DNP (NP (ADJP (JJ 向源))
+						   (NP (NN 侵蚀)))
+					       (DEG 的))
+					  (NP (NN 崩塌面)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 研究究 台湾 植被 多 年 的 静宜 大学 教授 陈玉峰 	
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 台湾 桧木林 发达 处 ， 常 在 河川 向源 侵蚀 的 崩塌面 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (CC 不管是)
+			  (VP (VV 携家带眷))
+			  (CC 或)
+			  (VP (ADVP (AD 只身))
+			      (VP (VV 抵)
+				  (NP-PN-OBJ (NR 沪))))))
+	      (PU ，)
+	      (NP-SBJ (NN 作者))
+	      (VP (VRD (VV 归纳)
+		       (VV 出))
+		  (NP-OBJ (QP (CD 几)
+			      (CLP (M 点)))
+			  (NP (NN 秘诀)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 供)
+			  (NP-OBJ (NN 人))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 参考))))))) 
+	  </parse>
+	  <arg n="0">
+	  作者 	    
+	  </arg>
+	  <arg n="2">
+	  几 点 秘诀 	    
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 不管是 携家带眷 或 只身 抵 沪 	    
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

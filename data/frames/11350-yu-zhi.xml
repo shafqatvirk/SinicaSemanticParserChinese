@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 预知 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 finds out in advance"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 上头))
+	    (VP (VP (ADVP (AD 不仅))
+		    (VP (VPT (VV 看)
+			     (DER 得)
+			     (VV 出))
+			(NP-OBJ (DNP (NP (NN 身体))
+				     (DEG 的))
+				(NP (NN 情况)))))
+		(PU ，)
+		(VP (ADVP (AD 甚至))
+		    (VP (VV 可以)
+			(VP (VV 预知)
+			    (IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (NP-TMP (NT 将来))
+					  (VP (VV 可能)
+					      (VP (VV 罹患)
+						  (NP-OBJ (NP-WH (PN 哪些))
+							  (NP (NN 疾病)))))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 将来 可能 罹患 哪些 疾病 
+	</arg>
+	<arg n="2">
+	上头 
+	</arg>
+	<arg n="m" f="adv">
+	甚至 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

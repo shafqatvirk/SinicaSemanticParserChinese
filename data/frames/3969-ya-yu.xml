@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亚于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is inferior to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (DP (DT 这)
+					      (QP (CD 一)))
+					  (NP (NN 突破)))
+				  (VP (VV 带来)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 革命)))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 不))
+		  (VP (VV 亚于)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NP (NP (NN 人类))
+						      (NP (NN 信息)
+							  (NN 处理)
+							  (CC 和)
+							  (NN 传输)
+							  (NN 能力)))
+						  (NP (NN 突破)))
+					  (VP (VV 带来)
+					      (NP-OBJ (-NONE- *T*-2))))
+				      (DEC 的)))
+			      (NP (NN 影响)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 这 一 突破 带来 *T*-1 的 革命 
+	  </arg>
+	  <arg n="1">
+	  *OP* 人类 信息 处理 和 传输 能力 突破 带来 *T*-2 的 影响 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

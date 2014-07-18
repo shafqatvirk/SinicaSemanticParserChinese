@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拨出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="allocator"/>
+      <role argnum="1" argrole="fund"/>
+      <role argnum="2" argrole="for use as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-PN-SBJ (NR 北京市)
+			   (NN 公费)
+			   (NN 医疗)
+			   (NN 管理)
+			   (NN 委员会))
+		(VP (VP (NP-TMP (NT 日前))
+			(VP (VV 拨出)
+			    (NP-OBJ (QP (CD 一千万)
+					(CLP (M 元)))
+				    (NP (NN 专款)))))
+		    (PU ，)
+		    (VP (ADVP (AD 重))
+			(VP (VV 奖)
+			    (NP-OBJ (QP (CD 一百一十九)
+					(CLP (M 个)))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (ADVP (AD 严格))
+						    (VP (VV 控制)
+							(NP-OBJ (NN 公费)
+								(NN 医疗)
+								(NN 开支)))))
+					    (DEC 的)))
+				    (NP (NN 单位))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  北京市 公费 医疗 管理 委员会 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  日前 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一千万 元 专款 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

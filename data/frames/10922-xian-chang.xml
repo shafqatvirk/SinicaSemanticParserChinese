@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 献唱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="singer"/>
+    <role argnum="1" argrole="thing arg0 sings"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 例如))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 到)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VE 有)
+						(IP-OBJ (NP-SBJ (NN 歌星))
+							(VP (VV 驻唱)))))
+					(DEC 的)))
+				(NP (NN 西餐厅)))))
+	    (PU ，)
+	    (NP-SBJ (NN 妈妈))
+	    (VP (VV 会)
+		(VP (VV 鼓励)
+		    (NP-OBJ (QP (CD 两))
+			    (NP (NN 女)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 上台)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 献唱)
+					(NP-OBJ (NN 英文)
+						(NN 歌))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	英文 歌 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

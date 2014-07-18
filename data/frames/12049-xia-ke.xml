@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下课 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="class which is over for arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (PP-LOC (P 在)
+				  (LCP (NP (NN 门))
+				       (LC 口)))
+			  (VP (VV 摆)
+			      (NP-OBJ (CLP (M 个))
+				      (ADJP (JJ 大))
+				      (NP (NN 藤篮)))))
+		      (PU ，)
+		      (VP (VV 让)
+			  (NP-OBJ (PN 我们))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *pro*))
+							      (VP (LCP-DIR (NP (NN 家))
+									   (LC 里))
+								  (VP (VV 带来)
+								      (NP-OBJ (-NONE- *T*-1)))))
+							  (DEC 的)))
+						  (NP (NN 罐头)
+						      (CC 或)
+						      (NN 干粮)))
+					  (VP (VRD (VV 丢)
+						   (VV 进去)))))))
+		      (PU ，)
+		      (VP (LCP-TMP (NP (NN 下课))
+				   (LC 后))
+			  (ADVP (AD 再))
+			  (PP-LGS (P 由)
+				  (NP (PN 她)))
+			  (VP (VP (VV 开)
+				  (AS 着)
+				  (NP-OBJ (NN 箱型车)))
+			      (VP (VV 送到)
+				  (NP-PN-OBJ (NR Samaritan)
+					     (NR House)))
+			      (VP (PP-BNF (P 给)
+					  (NP (DP (DT 那些))
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VV 无家可归)))
+						      (DEC 的)))
+					      (NP (NN 人))))
+				  (VP (VV 分享))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

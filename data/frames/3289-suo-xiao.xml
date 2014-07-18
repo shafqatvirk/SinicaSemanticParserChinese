@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缩小 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing reduced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (NP-SBJ (NN 国家))
+		  (VP (VP (VV 开发)
+			  (NP-OBJ (NN 中西部)))
+		      (PU 、)
+		      (VP (VV 缩小)
+			  (NP-OBJ (NN 东西部)
+				  (NN 地区)
+				  (NN 差距))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 
+	  </arg>
+	  <arg n="1">
+	  东西部 地区 差距 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 洞庭湖))
+		      (NP (NN 湖面)))
+	      (VP (VV 缩小))) 
+	  </parse>
+	  <arg n="1">
+	  洞庭湖 湖面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

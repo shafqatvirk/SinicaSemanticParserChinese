@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 超过 </id>
+  <frameset id="f1" edef="exceed">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing compared with"/>
+    <role argnum="2" argrole="by how much"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (ADJP (JJ 年))
+              (NP (NN 产量)))
+      (VP (VV 超过)
+          (NP-OBJ (NN 设计)
+                  (NN 能力))
+          (QP-EXT (CD 百分之七十八)))))
+	</parse>
+	<arg n="0"> 年 产量 </arg>
+	<V/>
+	<arg n="1"> 设计 能力 </arg>
+	<arg n="2"> 百分之七十八 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TPC (NP-PN (NP-PN (NR 佳能))
+                     (NP-PN (NR 大连))
+                     (NP (NN 办公室)
+                         (NN 设备))
+                     (ADJP (JJ 有限))
+                     (NP (NN 公司)))
+              (PU 、)
+              (NP-PN (NP-PN (NR 万宝至))
+                     (NP (NN 马达))
+                     (NP-PN (NR 大连))
+                     (ADJP (JJ 有限))
+                     (NP (NN 公司))))
+      (NP-SBJ (NN 出口额))
+      (VP (ADVP (AD 均))
+          (VP (VV 超过)
+              (QP-OBJ (CD 一亿)
+                      (CLP (M 美元)))))))
+	</parse>
+	<arg n="0" f="PSR"> 佳能 大连 办公室 设备 有限 公司 、 万宝至 马达 大连 有限 公司 </arg>
+	<arg n="0" f="PSE"> 出口额 </arg>
+	<arg n="M" f="ADV"> 均 </arg>
+	<V/>
+	<arg n="1"> 一亿 美元 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

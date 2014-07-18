@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 流 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 flows to"/>
+      <role argnum="2" argrole="place arg0 flows from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TMP (NP-SBJ (NN 沧海))
+		      (VP (ADVP (AD 横))
+			  (VP (VV 流))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 方))
+		  (VP (VV 显出)
+		      (NP-OBJ (NN 英雄)
+			      (NN 本色))))) 
+	  </parse>
+	  <arg n="0">
+	  沧海 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  横 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年)
+		      (NT 六月))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (VP (VV 流)
+		      (AS 著)
+		      (NP-OBJ (NN 眼泪)))
+		  (VP (VV 拆)
+		      (AS 了)
+		      (NP-OBJ (NN 房子)))
+		  (PU ，)
+		  (VP (ADVP (AD 随即))
+		      (PP-LOC (P 在)
+			      (NP (NN 原地)))
+		      (VP (VV 弄)
+			  (NP-OBJ (QP (CLP (M 个)))
+				  (NP (NN 货柜屋))))))) 
+	  </parse>
+	  <arg n="0">
+	  眼泪 
+	  </arg>
+	  <arg n="2">
+	  他 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 六月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

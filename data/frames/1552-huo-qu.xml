@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="obtainer"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <role argnum="2" argrole="obtaining from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 中国))
+				      (NP (NN 企业)))
+			      (VP (VP (VP (ADVP (AD 自我))
+					  (VP (VV 发展)))
+				      (CC 和)
+				      (VP (VV 获取)
+					  (NP-OBJ (ADJP (JJ 最大))
+						  (NP (NN 商业)
+						      (NN 利益)))))))
+			  (DEC 的))
+		  (ADJP (JJ 客观))
+		  (NP (NN 需要))) 
+	  </parse>
+	  <arg n="0">
+	  中国 企业 
+	  </arg>
+	  <arg n="1">
+	  最大 商业 利益 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

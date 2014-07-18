@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 普遍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (ADVP (AD 最))
+			      (VP (VA 普遍))))
+		      (DEC 的)))
+	      (NP (NP (NN 灵芝))
+		  (PU 、)
+		  (NP (NN 花粉))
+		  (PU 、)
+		  (NP (NN 芦荟))
+		  (CC 及)
+		  (NP (DP (DT 各)
+			  (CLP (M 项)))
+		      (NP (NN 日用品))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 搞)
+			  (NP-OBJ (NP (NP (NN 自家人))
+				      (NP (PU “)
+					  (QP (CD 一)
+					      (CLP (M 条)))
+					  (NP (NN 龙))
+					  (PU ”)))
+				  (NP (NN 作业)))))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 很))
+		  (VP (VA 普遍)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 搞 自家人 “ 一 条 龙 ” 作业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

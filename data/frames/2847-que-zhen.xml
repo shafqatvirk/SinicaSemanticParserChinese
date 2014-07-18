@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缺阵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 顶替)
+	      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-PRP (P 因)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 发)
+						      (NP-OBJ (NN 高烧)))))
+				      (VP (VV 缺阵))))
+			      (DEC 的)))
+		      (NP-APP (NN 队友))
+		      (NP-PN (NR 阿·本岑)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 *PRO* 发 高烧 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

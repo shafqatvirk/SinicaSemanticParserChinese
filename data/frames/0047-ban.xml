@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搬 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="mover"/>
+    <role argnum="1" argrole="thing moved"/>
+    <role argnum="2" argrole="moved from"/>
+    <role argnum="3" argrole="moved to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DP (DT 这)
+                  (CLP (M 个)))
+              (NP (NN 村庄)))
+      (VP (ADVP (AD 曾))
+          (VP (VP (VV 自力更生))
+              (PU ，)
+              (VP (ADVP (AD 艰苦))
+                  (VP (VV 奋斗)))
+              (PU ，)
+              (VP (VP (VV 搬)
+                      (NP-OBJ (NN 山)))
+                  (VP (VV 填)
+                      (NP-OBJ (NN 沟)))
+                  (VP (VV 造)
+                      (NP-OBJ (NN 平原))))))))
+	</parse>
+	<arg n="0"> 这 个 村庄 </arg>
+	<arg n="M" f="ADV"> 曾 </arg>
+	<V/>
+	<arg n="1"> 山 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>

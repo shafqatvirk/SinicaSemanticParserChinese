@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 着重 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 stresses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 本))
+		      (NP (NN 港)))
+	      (VP (ADVP (AD 越来越))
+		  (VP (VV 着重)
+		      (NP-OBJ (NP (ADJP (JJ 高))
+				  (NP (NN 增值)))
+			      (NP (NN 经济)
+				  (NN 活动)))))) 
+	  </parse>
+	  <arg n="0">
+	  本 港 
+	  </arg>
+	  <arg n="1">
+	  高 增值 经济 活动 
+	  </arg>
+	  <arg n="m" f="adv">
+	  越来越 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

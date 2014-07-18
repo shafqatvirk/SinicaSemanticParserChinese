@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 谈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity spoken about/discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 俄))
+			  (NP (NN 外长)))
+		  (VP (VV 谈)
+		      (NP-OBJ (NP (NT 明年))
+			      (NP-PN (NR 俄))
+			      (NP (NN 外交)
+				  (NN 重点))))) 
+	  </parse>
+	  <arg n="0">
+	  俄 外长 	  
+	  </arg>
+	  <arg n="1">
+	  明年 俄 外交 重点 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 江泽民))
+		  (VP (ADVP (AD 分别))
+		      (PP-DIR (P 对)
+			      (NP (NP-PN (NR 俄罗斯)
+					 (PU 、)
+					 (NR 法国))
+				  (NP (NN 记者))))
+		      (VP (VV 谈)
+			  (NP-OBJ (NP-APP (NP-PN (NP-PN (NR 中)
+							(NR 俄))
+						 (PU 、)
+						 (NP-PN (NR 中)
+							(NR 法)))
+					  (NP (NN 关系))
+					  (ETC 等))
+				  (NP (NN 问题)))))) 
+	  </parse>
+	  <arg n="0">
+	  江泽民 	  
+	  </arg>
+	  <arg n="1">
+	  中 俄 、 中 法 关系 等 问题 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 俄罗斯 、 法国 记者 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 谁))
+		  (VP (VV 敢)
+		      (VP (PP (P 和)
+			      (NP-PN (NR 韩国)))
+			  (VP (VV 谈)
+			      (NP-OBJ (NN 合作)))))) 
+	  </parse>
+	  <arg n="0">
+	  谁 	  
+	  </arg>
+	  <arg n="0">
+	  和 韩国 	  
+	  </arg>
+	  <arg n="1">
+	  合作 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="arg0 is not qualified for, cannot concern about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <arg n="1">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

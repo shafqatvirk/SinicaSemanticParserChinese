@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 急驰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 drives fast to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 出)
+			(AS 了)
+			(NP-OBJ (NP-PN (NR 云林)
+				       (NR 斗六))
+				(NP (NN 车站)))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 吴宗升))
+	    (VP (VP (VP (VV 驾)
+			(AS 著)
+			(NP-PN-OBJ (NR TOYOTA)))
+		    (VP (VV 奔驰)
+			(PP (P 在)
+			    (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (-NONE- *T*-1))
+						 (VP (VA 宽广)))
+					     (DEC 的)))
+				     (NP (NN 县道)))
+				 (LC 上)))))
+		(PU ，)
+		(VP (PP-DIR (P 向)
+			    (NP (LCP (NP (NN 海))
+				     (LC 边))
+				(NP (NN 老家))))
+		    (VP (VV 急驰))))) 
+	</parse>
+	<arg n="0">
+	吴宗升 
+	</arg>
+	<arg n="1">
+	向 海 边 老家 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 出 了 云林 斗六 车站 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

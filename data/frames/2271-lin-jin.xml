@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 临近 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is close to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-TMP (P 当)
+		  (NP (CP (WHPP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (PN 我们))
+				  (VP (PP-TMP (-NONE- *T*-2))
+				      (VP (VV 临近)
+					  (NP-OBJ (QP (OD ２１))
+						  (NP (NN 世纪))))))
+			      (DEC 的)))
+		      (NP (NN 时候)))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  ２１ 世纪 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NT 新年))
+		      (VP (VV 临近)))
+	      (PU ，)
+	      (VP (VV 意味)
+		  (AS 着)
+		  (IP-OBJ (NP-SBJ (NN 欧元)
+				  (NN 启动))
+			  (VP (VV 在即))))) 
+	  </parse>
+	  <arg n="0">
+	  新年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

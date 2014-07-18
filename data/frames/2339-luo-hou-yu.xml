@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 落后于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="comparison"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP-OBJ (NP-SBJ (QP (ADVP (AD 好))
+				      (QP (CD 几)
+					  (CLP (M 个))))
+				  (NP (NN 联邦)
+				      (NN 机构)))
+			  (VP (PP-LOC (P 在)
+				      (NP (DP (DT 这))
+					  (NP (NN 方面))))
+			      (VP (VP (VV 落后于)
+				      (NP-OBJ (NN 计划)))
+				  (CC 或)
+				  (VP (VV 遇到)
+				      (AS 了)
+				      (NP-OBJ (NN 困难)))))))) 
+	  </parse>
+	  <arg n="0">
+	  好 几 个 联邦 机构 
+	  </arg>
+	  <arg n="1">
+	  计划 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这 方面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 pushes arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TMP (DT 这)
+		      (QP (CD 一)
+			  (CLP (M 代))))
+	      (NP-SBJ (PN 大家))
+	      (VP (ADVP (AD 都))
+		  (VP (SB 被)
+		      (VP (VV 推到)
+			  (LCP-OBJ (NP (NN 讲台)
+				       (PU 、)
+				       (NN 镜头)
+				       (PU 、)
+				       (NN 萤光幕))
+				   (LC 前)))))) 
+	  </parse>
+	  <arg n="1">
+	  大家 
+	  </arg>
+	  <arg n="2">
+	  讲台 、 镜头 、 萤光幕 前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  这 一 代 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

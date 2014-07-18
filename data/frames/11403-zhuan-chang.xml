@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 转厂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 transfers to work"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (PP-TMP (P 自从)
+			    (LCP (QP (CD 八)
+				     (CLP (M 年)))
+				 (LC 前)))
+		    (NP-SBJ (PN 她))
+		    (VP (VP (VV 转厂))
+			(VP (VP (VV 到)
+				(NP-PN-OBJ (NR 东莞)))
+			    (VP (VV 来)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 没有)
+		(IP-OBJ (NP-TPC (QP (CD 一)
+				    (CLP (M 餐))))
+			(NP-SBJ (DP (DT 全))
+				(NP (NN 家)))
+			(VP (ADVP (AD 一起))
+			    (VP (VV 吃)
+				(AS 过)))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="m" f="tmp">
+	自从 八 年 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

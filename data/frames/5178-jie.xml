@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 结 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 forms"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 三十六)
+			(CLP (M 对)))
+		    (NP (NN 新人)))
+	    (VP (VP (PP-LOC (P 於)
+			    (NP-PN (NR 台北)
+				   (NN 宾馆)))
+		    (ADVP (AD 共))
+		    (VP (VV 结)
+			(NP-OBJ (NN 连理)))))) 
+	</parse>
+	<arg n="0">
+	三十六 对 新人 
+	</arg>
+	<arg n="1">
+	连理 
+	</arg>
+	<arg n="m" f="adv">
+	共 
+	</arg>
+	<arg n="m" f="loc">
+	於 台北 宾馆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-1 (PU 「)
+		      (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (ADVP (AD 原来))
+			      (ADVP (AD 只))
+			      (VP (VC 是)
+				  (VP (VV 想)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VP (VV 换)
+							  (NP-OBJ (QP (CLP (M 个)))
+								  (NP (NN 地方))))
+						      (VP (VV 工作)))
+						  (PU ，)
+						  (VP (QP-TMP (CD 半)
+							      (CLP (M 年)))
+						      (PP-LOC (P 在)
+							      (NP-PN (NR 澳洲)))
+						      (VP (VP (VV 生活))
+							  (PU 、)
+							  (VP (VV 写)
+							      (NP-OBJ (NN 剧本)))))
+						  (PU ，)
+						  (VP (QP-TMP (CD 半)
+							      (CLP (M 年)))
+						      (VP (VP (VV 回)
+							      (NP-PN-OBJ (NR 香港)))
+							  (VP (VV 拍戏)))))))))
+			  (PU ，)
+			  (VP (VPT (VV 想)
+				   (AD 不)
+				   (VV 到))
+			      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				      (VP (ADVP (AD 却))
+					  (PP (P 和)
+					      (NP-PN (NR 澳洲)))
+					  (VP (VV 结)
+					      (AS 了)
+					      (NP-OBJ (QP (CD 一)
+							  (CLP (M 个)))
+						      (NP (NN 缘)))))))))
+	    (PU ，)
+	    (PU 」)
+	    (NP-SBJ (PN 她))
+	    (VP (VV 说)
+		(IP-OBJ (-NONE- *T*-1)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="crd">
+	和 澳洲 
+	</arg>
+	<arg n="1">
+	一 个 缘 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

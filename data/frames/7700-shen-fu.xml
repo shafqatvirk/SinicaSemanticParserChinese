@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 身负 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 carries on shoulder"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (ADJP (ADVP (AD 最))
+			  (ADJP (JJ 大)))
+		    (NP (NN 受害者)))
+	    (PU ，)
+	    (VP (ADVP (AD 自然))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 身负)
+					    (NP-OBJ (IP-APP (PU 「)
+							    (NP-SBJ (-NONE- *pro*))
+							    (VP (VV 抓)
+								(NP-OBJ (NN 虫)))
+							    (PU 」))
+						    (NP (NN 重任)))))
+				    (DEC 的)))
+			    (NP (NN 资讯人)))))
+	    (SP 了)) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	「 *pro* 抓 虫 」 重任 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

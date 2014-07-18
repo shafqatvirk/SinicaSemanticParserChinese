@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 怂恿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 instigated"/>
+    <role argnum="2" argrole="thing arg0 is instigated to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (VP (ADVP (AD 曾))
+		    (VP (VV 怂恿)
+			(NP-OBJ (NN 父母))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (BA 把)
+				    (IP-OBJ (NP-SBJ (QP (CD 部份))
+						    (NP (NN 存款)))
+					    (VP (VRD (VV 拿)
+						     (VV 出来)))))
+				(VP (VV 买)
+				    (NP-OBJ (NP-APP (QP (CLP (M 点)))
+						    (ADJP (JJ 共同))
+						    (NP (NN 基金)))
+					    (NP (DNP (NP (PN 什麽))
+						     (DEG 的)))))))))
+		(PU ，)
+		(VP (ADVP (AD 迄今))
+		    (VP (VV 没有)
+			(VP (VA 成功)))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	父母 
+	</arg>
+	<arg n="2">
+	*PRO* 把 部份 存款 拿 出来 买 点 共同 基金 什麽 的 
+	</arg>
+	<arg n="m" f="adv">
+	曾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 审视 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing examined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 呼吁)
+	      (NP-OBJ (NP-PN-APP (NR 中)
+				 (NR 美))
+		      (NP (PN 双方)))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (PP-DIR (P 从)
+				  (NP (NP (ADJP (JJ 长远))
+					  (NP (NN 观点)))
+				      (CC 和)
+				      (NP (NN 战略)
+					  (NN 高度))))
+			  (VP (VP (VV 审视)
+				  (NP-OBJ (-NONE- *RNR*-1)))
+			      (CC 和)
+			      (VP (VV 处理)
+				  (NP-OBJ-1 (ADJP (JJ 双边))
+					    (NP (NN 关系))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-1 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 长远 观点 和 战略 高度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

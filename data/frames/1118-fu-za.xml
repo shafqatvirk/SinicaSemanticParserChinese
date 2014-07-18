@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 复杂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NN 茅台酒))
+	      (IP (IP (NP-SBJ (NN 制作)
+			      (NN 工艺))
+		      (VP (VA 复杂)))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 生产)
+			      (NN 周期))
+		      (VP (VA 长))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  茅台酒 
+	  </arg>
+	  <arg n="0" f="pse">
+	  制作 工艺 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

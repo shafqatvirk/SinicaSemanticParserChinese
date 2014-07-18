@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奉命 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity which got order"/>
+      <role argnum="1" argrole="thing arg0 is ordered to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 首先))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 银行)
+			  (CC 和)
+			  (NN 基金)
+			  (NN 管理)
+			  (NN 公司)))
+	      (VP (VV 奉命)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 准)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-TMP (P 在)
+						      (LCP (LCP (IP (NP-SBJ (NN 欧元))
+								    (VP (VV 启动)))
+								(LC 前))
+							   (CC 或)
+							   (LCP (NP (NT 新年))
+								(LC 前))))
+					      (ADVP (AD 再))
+					      (VP (VV 做)
+						  (NP-OBJ (NN 股市)
+							  (NN 交易)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  许多 银行 和 基金 管理 公司 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 不 准 *PRO* 在 欧元 启动 前 或 新年 前 再 做 股市 交易 
+	  </arg>
+	  <arg n="M" f="DIS">
+	  首先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

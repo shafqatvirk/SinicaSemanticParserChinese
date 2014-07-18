@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交汇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="things that converges"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN-APP (NR 成渝)
+				     (PU 、)
+				     (NR 川黔)
+				     (PU 、)
+				     (NR 襄渝))
+			  (QP (CD 三)
+			      (CLP (M 条)))
+			  (NP (NN 铁路)))
+		      (CC 和)
+		      (NP (QP (CD 十一)
+			      (CLP (M 条)))
+			  (NP (NN 公路))))
+	      (VP (PP-LOC (P 在)
+			  (NP-PN (NR 重庆)))
+		  (VP (VV 交汇)))) 
+	  </parse>
+	  <arg n="0">
+	  成渝 、 川黔 、 襄渝 三 条 铁路 和 十一 条 公路 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 重庆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

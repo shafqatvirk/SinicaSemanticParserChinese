@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 传给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver, passer"/>
+      <role argnum="1" argrole="thing given"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="io" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 全体))
+			  (NP (NN 球员)))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 会)
+			  (VP (PP-DIR (P 对)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-PN-SBJ (NR 斯特恩))
+						      (VP (VV 传给)
+							  (NP-IO (PN 他们))
+							  (NP-OBJ (-NONE- *T*-1))))
+						  (DEC 的)))
+					  (NP (NN 资方)
+					      (NN 方案))))
+			      (ADVP (AD 秘密))
+			      (VP (VV 投票)))))) 
+	  </parse>
+	  <arg n="0">
+	  斯特恩 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  他们 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 求处 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="penalty arg0 seeks for arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 彰化)
+		       (NN 地检署) )
+	    (VP (VP (VV 侦办)
+		    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+				    (VP (NP-LOC (NN 总统)
+						(NN 大选))
+					(VP (VV 贿选))))
+			    (NP (NN 案)) ))
+		(PU ，)
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NP-APP (NP (NP-PN (NR 员林) )
+						(NP (NN 镇长) ))
+					    (ETC 等))
+				    (QP (CD 二百多))
+				    (NP (NN 人) ))
+			    (VP (VP (PP-MNR (P 依)
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 违反)
+						    (NP-OBJ (NN 选罢法) ))))
+				    (VP (VV 提起)
+					(NP-OBJ (NN 公诉) )))
+				(PU ，)
+				(VP (ADVP (AD 分别))
+				    (VP (VV 求处)
+					(NP-OBJ (UCP-APP (QP (CD 三)
+							     (CLP (M 年)))
+							 (CC 至)
+							 (NP (QP (CD 二)
+								 (CLP (M 个)))
+							     (NP (NN 月) )))
+						(CP (WHNP-1 (-NONE- *OP*))
+						    (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (ADVP (AD 不))
+							    (VP (VA 等)))))
+						(NP (NN 徒刑) ))))))))) 
+	</parse>
+	<arg n="0">
+	彰化 地检署 
+	</arg>
+	<arg n="1">
+	员林 镇长 等 二百多 人 
+	</arg>
+	<arg n="2">
+	三 年 至 二 个 月 *OP* *T*-1 不 等 徒刑 
+	</arg>
+	<arg n="m" f="adv">
+	分别 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

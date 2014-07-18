@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指手画脚 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 评论))
+	      (VP (VV 要求)
+		  (NP-PN-OBJ (NR 美国))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 不))
+			  (VP (VV 要)
+			      (VP (PP-DIR (P 对)
+					  (NP (DNP (NP-PN (NR 朝鲜))
+						   (DEG 的))
+					      (NP (NN 政治)
+						  (NN 制度))))
+				  (VP (VV 指手画脚)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 朝鲜 的 政治 制度 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

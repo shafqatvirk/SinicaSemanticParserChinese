@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 务实 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 上述))
+		      (NP (NN 建议)))
+	      (VP (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 务实)))
+				      (DEC 的)))
+			      (NP (NN 做法)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 对付)
+			      (NP-OBJ (DNP (NP-PN (NR 美国))
+					   (DEG 的))
+				      (NP (NN 攻势))))))
+	      (PU ，)
+	      (NP-TMP (NT 今年))
+	      (NP-PN-SBJ (NR 俄))
+	      (VP (VP (DVP (VP (ADVP (AD 更加))
+			       (VP (VA 积极)))
+			   (DEV 地))
+		      (VP (VV 扩大)
+			  (AS 了)
+			  (NP-OBJ (DNP (PP (P 对)
+					   (NP (NP-PN (NR 中亚))
+					       (NP (NN 事务))))
+				       (DEG 的))
+				  (NP (NN 参与)
+				      (NN 力度)))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (ADVP (AD 更))
+		      (VP (VCD (VA 灵活)
+			       (VA 务实)))))) 
+	  </parse>
+	  <arg n="0">
+	  俄 
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 对付 美国 的 攻势 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 损害 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity harmed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-SBJ (NP-PN-SBJ (NR 中)
+				     (NR 美))
+			  (VP (VV 对抗)))
+		  (VP (CC 不仅)
+		      (VP (PP-DIR (P 对)
+				  (NP (NP (NN 世界))
+				      (NP (NN 和平)
+					  (CC 与)
+					  (NN 稳定))))
+			  (VP (VA 不利)))
+		      (PU ，)
+		      (CC 也)
+		      (VP (VV 损害)
+			  (NP-OBJ (DNP (NP-PN (NR 美国))
+				       (DEG 的))
+				  (NP (PN 自身))
+				  (NP (NN 利益)))))) 
+	  </parse>
+	  <arg n="0">
+	  中 美 对抗 
+	  </arg>
+	  <arg n="1">
+	  美国 的 自身 利益 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

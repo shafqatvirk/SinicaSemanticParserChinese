@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 意义重大 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity arg0 means a lot to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-TPC (NN 观光)
+		      (NN 方面))
+	      (PU ，)
+	      (NP-SBJ (CP-APP (IP (NP-PN-SBJ (NR 台湾))
+				  (VP (VV 预定)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (PP-TMP (P 在)
+							  (NP (NT 今年)
+							      (NT 六月)))
+						  (VP (VV 开放)
+						      (NP-OBJ (NN 大陆)
+							      (NN 人民))
+						      (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VP (VV 到)
+								  (NP-PN-OBJ (NR 台湾)))
+							      (VP (VCD (VV 观光)
+								       (VV 旅游))))))))))
+			      (DEC 的))
+		      (NP (NN 做法)))
+	      (PU ，)
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 增进)
+				  (NP-OBJ (NP (DNP (NP (NP (QP (CD 两))
+							   (NP (NN 岸)))
+						       (NP (NN 人民)))
+						   (DEG 的))
+					      (NP (NN 交流)))
+					  (CC 与)
+					  (NP (NP (PN 双方))
+					      (ADJP (JJ 深入))
+					      (NP (NN 了解)))))))
+		  (PU ，)
+		  (ADVP (AD 也))
+		  (VP (VC 是)
+		      (VP (VA 意义重大))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 预定 *PRO* 在 今年 六月 开放 大陆 人民 *PRO* 到 台湾 观光 旅游 的 做法 
+	  </arg>
+	  <arg n="1">
+	  对 *PRO* 增进 两 岸 人民 的 交流 与 双方 深入 了解 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  观光 方面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

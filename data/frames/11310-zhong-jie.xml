@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 仲介 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing in which arg0 functions as broker"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VP (VV 跑)
+		    (NP-OBJ (NN 单帮)))
+		(VP (VV 仲介)
+		    (NP-OBJ (NN 土地)
+			    (PU 、)
+			    (NN 房屋))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	土地 、 房屋 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

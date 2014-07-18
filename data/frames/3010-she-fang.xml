@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设防 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity defended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 七)
+			  (CLP (M 名)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 来自)
+				      (NP-OBJ (NP-PN (NR 大屿山))
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (ADVP (AD 高度))
+							      (VP (VV 设防))))
+						      (DEC 的)))
+					      (NP-PN (NR 石壁)
+						     (NN 监狱)))))
+			      (DEC 的)))
+		      (NP (NN 犯人)))
+	      (VP (VV 参与)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 项)))
+			  (NP (NP (NN 广播)
+				  (NN 剧本))
+			      (NP (NN 创作)))
+			  (NP (NN 比赛))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  高度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,133 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 takes advantage of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 当)
+		      (LCP (IP (NP-SBJ (PN 他))
+			       (VP (VP (VV 借)
+				       (NP-OBJ (DP (DT 此))
+					       (NP (NN 机会))))
+				   (VP (PP-DIR (P 向)
+					       (NP (PN 大家)))
+				       (VP (VV 道别)))))
+			   (LC 时)))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 全))
+		      (NP (NN 场)))
+	      (VP (VV 报以)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 热烈)))
+				  (DEC 的)))
+			  (NP (NN 掌声))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  此 机会 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity borrowed/loaned"/>
+      <role argnum="2" argrole="loan receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (-NONE- *pro*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (CS 既然))
+				(VP (VV 看重)
+				    (NP-PN-OBJ (NR 安南)))))
+		    (PU ，)
+		    (VP (ADVP-WH (AD 为什麽))
+			(ADVP (AD 不))
+			(VP (VV 借)
+			    (NP-OBJ (NN 钱))
+			    (PP (P 给)
+				(NP (PN 他))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  钱 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  给 他 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  为什麽 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 既然 看重 安南 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 在)
+			  (NP (NT 二００六年)))
+		  (VP (VV 可)
+		      (VP (VP (VV 达到)
+			      (NP-OBJ (NN 收支)
+				      (NN 平衡)))
+			  (PU ，)
+			  (VP (ADVP (AD 不))
+			      (VP (VV 需)
+				  (VP (ADVP (AD 再))
+				      (VP (VV 借)
+					  (NP-OBJ (ADJP (JJ 新))
+						  (NP (NN 债))))))))))) 
+	  </parse>
+	  <arg n="2">
+	  *pro* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  新 债 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 二００六年 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

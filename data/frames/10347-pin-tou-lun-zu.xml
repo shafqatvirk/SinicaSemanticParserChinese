@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 品头论足 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 comments on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (PN 他))
+		(VP (VP (PP (P 与)
+			    (NP (NN 母亲)))
+			(ADVP (AD 不))
+			(ADVP (AD 常))
+			(ADVP (AD 一起))
+			(VP (VV 逛街)))
+		    (PU ，)
+		    (VP (ADVP (AD 很少))
+			(PP-DIR (P 对)
+				(NP (DP (DT 同)
+					(QP (CD 一)
+					    (CLP (M 件))))
+				    (NP (NN 衣服))))
+			(VP (VV 品头论足))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	对 同 一 件 衣服 
+	</arg>
+	<arg n="m" f="adv">
+	很少 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

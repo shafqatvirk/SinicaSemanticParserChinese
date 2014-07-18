@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 赋闲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person not working"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VV 让)
+		    (NP-OBJ (PN 他))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-TMP (P 在)
+				    (LCP (NP (CP (WHPP-2 (-NONE- *OP*))
+						 (CP (IP (NP-SBJ (-NONE- *pro*))
+							 (VP (PP-TMP (-NONE- *T*-2))
+							     (VP (VV 赋闲))))
+						     (DEC 的)))
+					     (NP (NN 日子)))
+					 (LC 里)))
+			    (PU ，)
+			    (VP (VV 可以)
+				(VP (VP (VV 玩)
+					(NP-OBJ (NN 石)))
+				    (PU 、)
+				    (VP (VV 修习)
+					(NP-OBJ (NN 易经)
+						(CC 与)
+						(NN 风水)))
+				    (PU ，)
+				    (VP (ADVP (AD 悠哉))
+					(VP (VV 度日)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

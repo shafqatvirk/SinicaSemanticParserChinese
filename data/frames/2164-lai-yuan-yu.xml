@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 来源于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 目前))
+		(PU ，)
+		(IP (IP (NP-SBJ (IP-APP (NP-PN-SBJ (NR 中国))
+					(VP (VV 利用)
+					    (NP-OBJ (NN 外商)
+						    (NN 投资))))
+				(NP (NN 多元化)
+				    (NN 格局)))
+			(VP (ADVP (AD 已))
+			    (ADVP (AD 初步))
+			    (VP (VV 形成))))
+		    (PU ，)
+		    (IP (NP-SBJ (NN 资金))
+			(VP (VV 来源于)
+			    (NP-OBJ (QP (CD 一百七十多)
+					(CLP (M 个)))
+				    (NP (NN 国家)
+					(CC 和)
+					(NN 地区))))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  资金 
+	  </arg>
+	  <arg n="1">
+	  一百七十多 个 国家 和 地区 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

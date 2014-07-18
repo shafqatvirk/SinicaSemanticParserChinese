@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 hugs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 从)
+			  (NP (NN 小)))
+		  (ADVP (AD 常))
+		  (VP (VP (VV 抱)
+			  (AS 著)
+			  (NP-OBJ (NN 女儿)))
+		      (VP (CC 又)
+			  (VV 亲)
+			  (CC 又)
+			  (VV 搂))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  常 
+	  </arg>
+	  <arg n="m" f="adv">
+	  从 小 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

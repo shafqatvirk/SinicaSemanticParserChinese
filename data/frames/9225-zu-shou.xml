@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 租售 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="seller/leaser"/>
+      <role argnum="1" argrole="thing arg0 sells/leases"/>
+      <role argnum="2" argrole="buyer/leasee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (NP-PN (NR 东莞市))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 还))
+		  (PP-MNR (P 以)
+			  (NP (ADJP (ADVP (AD 极))
+				    (ADJP (JJ 低)))
+			      (NP (NN 价格))))
+		  (PU ，)
+		  (VP (VV 租售)
+		      (NP-OBJ (NN 土地))
+		      (PP (P 给)
+			  (NP-PN (NR 东莞)
+				 (NR 台协)))))) 
+	  </parse>
+	  <arg n="0">
+	  东莞市 政府 	  
+	  </arg>
+	  <arg n="1">
+	  土地 	  
+	  </arg>
+	  <arg n="2">
+	  给 东莞 台协 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 极 低 价格 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

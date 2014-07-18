@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 维护 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="defender"/>
+      <role argnum="1" argrole="entity defended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今后))
+	      (NP-PN-SBJ (NN 公署))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (ADVP (AD 进一步))
+			  (VP (VV 加强)
+			      (NP-OBJ (DNP (PP (P 与)
+					       (NP (DP (DT 各))
+						   (NP (NN 方面))))
+					   (DEG 的))
+				      (NP (NN 沟通)
+					  (CC 和)
+					  (NN 联系)))))
+		      (PU ，)
+		      (VP (VV 提高)
+			  (NP-OBJ (DNP (NP (NP (NN 领事))
+					   (NP (NN 服务)
+					       (CC 和)
+					       (NN 保护)))
+				       (DEG 的))
+				  (NP (NN 效率)
+				      (CC 和)
+				      (NN 质量))))
+		      (PU ，)
+		      (VP (DVP (VP (ADVP (AD 更))
+				   (VP (VA 好)))
+			       (DEV 地))
+			  (VP (VV 维护)
+			      (NP-OBJ (DNP (NP (NP (NN 海外))
+					       (NP-PN (NR 香港))
+					       (NP (NN 居民)))
+					   (DEG 的))
+				      (ADJP (JJ 合法))
+				      (NP (NN 权益)))))))) 
+	  </parse>
+	  <arg n="0">
+	  公署 	  
+	  </arg>
+	  <arg n="1">
+	  海外 香港 居民 的 合法 权益 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 好 地 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今后 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 显示)
+	      (AS 了)
+	      (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 中国))
+				  (VP (VP (VV 做好)
+					  (NP-OBJ (IP-APP (NP-PN-SBJ (NR 香港))
+							  (VP (ADVP (AD 平稳))
+							      (VP (VV 过渡))))
+						  (NP (NN 工作))))
+				      (PU 、)
+				      (VP (VV 维护)
+					  (IP (NP-PN-SBJ (NR 香港))
+					      (VP (VCD (VA 繁荣)
+						       (VA 稳定)))))))
+			      (DEC 的))
+		      (NP (NN 决心)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  香港 繁荣 稳定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

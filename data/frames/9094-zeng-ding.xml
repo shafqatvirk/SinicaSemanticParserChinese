@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 adds arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 「)
+			  (NP (NP (NN 刑事)
+				  (NN 诉讼法))
+			      (QP (CD 部分))
+			      (NP (NN 条文)))
+			  (NP (NN 修正案))
+			  (PU 」))
+	      (VP (ADVP (AD 则))
+		  (ADVP (AD 另外))
+		  (VP (VV 增定)
+		      (NP-TTL-OBJ (PU 「)
+				  (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VRD (VV 羁押)
+						   (VV 回笼))))
+				  (NP (NN 条款))
+				  (PU 」))))) 
+	  </parse>
+	  <arg n="1">
+	  「 *PRO* 羁押 回笼 条款 」 
+	  </arg>
+	  <arg n="2">
+	  「 刑事 诉讼法 部分 条文 修正案 」 
+	  </arg>
+	  <arg n="m" f="adv">
+	  另外 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

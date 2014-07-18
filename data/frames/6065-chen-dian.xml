@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 沈淀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity precipitating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 专业)
+		    (NN 作家))
+	    (VP (ADVP (AD 不))
+		(VP (VV 可能)
+		    (VP (VP-FOC (VV 沈淀))
+			(VP (ADVP (AD 那麽))
+			    (VP (VA 久))))))) 
+	</parse>
+	<arg n="0">
+	专业 作家 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 forms through precipitation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 要)
+		    (VP (VV 让)
+			(NP-OBJ (DP (DT 这些))
+				(NP (NN 成果)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VRD (VV 沈淀)
+				     (VV 出))
+				(NP-OBJ (ADJP (JJ 真实))
+					(NP (NN 意义)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	真实 意义 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

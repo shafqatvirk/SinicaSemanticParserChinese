@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 载负 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 carries"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)
+			      (CLP (M 条))))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (QP-PRD (ADVP (AD 不到))
+					      (QP (CD 两)
+						  (CLP (M 公里))))))
+			      (DEC 的)))
+		      (NP (NN 海岸)))
+	      (PU ，)
+	      (VP (ADVP (AD 的确))
+		  (VP (VV 载负)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 太))
+					      (VP (VA 多))))
+				      (DEC 的)))
+			      (NP (NN 悲情)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 一 条 *OP* *T*-1 不到 两 公里 的 海岸 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 太 多 的 悲情 
+	  </arg>
+	  <arg n="m" f="adv">
+	  的确 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

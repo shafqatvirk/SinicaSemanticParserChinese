@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 添 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 adds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *pro*))
+		(VP (LCP-LOC (NP (NN 锦))
+			     (LC 上))
+		    (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VV 添)
+			    (NP-OBJ (NN 花)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	花 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="loc">
+	锦 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (LCP-TMP (NP (NT 近年))
+		     (LC 来))
+	    (NP-SBJ (NN 经济)
+		    (NN 实力))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (ADVP (AD 新))
+					    (VP (VV 添))))
+				    (DEC 的)))
+			    (NP (NN 筹码)))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	新 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

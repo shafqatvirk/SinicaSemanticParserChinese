@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 深具 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 has"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 不过))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 陈))
+		    (NP (NN 老板)))
+	    (VP (ADVP (AD 倒是))
+		(VP (VV 深具)
+		    (NP-OBJ (NN 信心))))) 
+	</parse>
+	<arg n="0">
+	陈 老板 
+	</arg>
+	<arg n="1">
+	信心 
+	</arg>
+	<arg n="m" f="adv">
+	倒是 
+	</arg>
+	<arg n="m" f="adv">
+	不过 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

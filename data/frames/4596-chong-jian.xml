@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing rebuilt"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 狮子村))
+			   (DEG 的))
+		      (ADJP (JJ 成功))
+		      (NP (NN 经验)))
+	      (VP (PP-PRP (P 为)
+			  (IP (NP-TMP (NT 今后))
+			      (NP-SBJ (NN 海外))
+			      (VP (VV 援助)
+				  (NP-OBJ (-NONE- *pro*))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 重建)
+					  (NP-OBJ (ADJP (JJ 受灾))
+						  (NP (NN 村镇))))))))
+		  (VP (VV 提供)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 可以)
+					      (VP (VV 借鉴)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的)))
+			      (NP (NN 模式)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  受灾 村镇 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 除)
+		  (LCP (NP (NP (ADJP (JJ 名)
+				     (PU 、)
+				     (JJ 特)
+				     (PU 、)
+				     (JJ 优))
+			       (NP (NN 产品)))
+			   (CC 和)
+			   (NP (CP (WHNP-1 (-NONE- *OP*))
+				   (CP (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (ADVP (AD 确))
+					       (VP (VE 有)
+						   (NP-OBJ (NN 竞争力)))))
+				       (DEC 的)))
+			       (NP (NN 产品))))
+		       (LC 外)))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 一般))
+		      (ADVP (AD 不))
+		      (ADVP (AD 再))
+		      (VP (VV 搬迁)
+			  (PU 、)
+			  (VV 重建)))
+		  (PU ，)
+		  (CC 而)
+		  (VP (VV 应)
+		      (VP (ADVP (AD 着力))
+			  (VP (VP (VV 调整)
+				  (NP-OBJ (NN 经济)
+					  (NN 结构)))
+			      (PU ，)
+			      (VP (VV 寻找)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (VA 新)))
+						  (DEC 的)))
+					  (NP (NN 经济)
+					      (NN 增长点))))
+			      (PU ，)
+			      (VP (VV 提高)
+				  (NP-OBJ (DNP (NP (NN 国民)
+						   (NN 经济))
+					       (DEG 的))
+					  (NP (NN 整体)
+					      (NN 效益))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一般 
+	  </arg>
+	  <arg n="m" f="adv">
+	  除 名 、 特 、 优 产品 和 *OP* *T*-1 确 有 竞争力 的 产品 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

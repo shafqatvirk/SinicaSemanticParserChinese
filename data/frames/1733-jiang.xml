@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 讲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="speaker"/>
+      <role argnum="1" argrole="speech, language"/>
+      <comment>No annotation for 从...讲</comment>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 刘中一))
+	      (VP (ADVP (AD 也))
+		  (PP-LOC (P 在)
+			  (LCP (NP (NN 会))
+			       (LC 上)))
+		  (VP (VV 讲)
+		      (AS 了)
+		      (NP-OBJ (NN 话))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  刘中一 	  
+	  </arg>
+	  <arg n="1">
+	  话 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 会 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 高清愿))
+	      (VP (VV 讲)
+		  (DER 得)
+		  (VP-EXT (VA 坦率)))) 
+	  </parse>
+	  <arg n="0">
+	  高清愿 	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  坦率 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="adherer"/>
+      <role argnum="1" argrole="thing adhered to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 到)
+			      (NP-OBJ (NP-PN (NR 浦东))
+				      (NP (NN 新区))))
+			  (VP (VV 投资))))
+	      (IP (IP (NP-SBJ (NN 办事))
+		      (VP (VP (VE 有)
+			      (NP-OBJ (NN 章法)))
+			  (PU ，)
+			  (VP (VV 讲)
+			      (NP-OBJ (NN 规矩)))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 利益))
+		      (VP (VV 能)
+			  (VP (VV 得到)
+			      (NP-OBJ (NN 保障)))))))
+	  </parse>
+	  <arg n="1">
+	  规矩 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

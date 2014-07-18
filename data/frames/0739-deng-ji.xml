@@ -1,0 +1,122 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 登记 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="registerer"/>
+      <role argnum="1" argrole="thing registered"/>
+      <role argnum="2" argrole="registry"/>
+      <role argnum="3" argrole="entity arg1 is registered as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (NP (NN 补充)
+						       (NN 劳工))
+						   (NP (NN 计划)))
+					       (LC 下)))
+				  (VP (VV 登记)
+				      (NP-OBJ (-NONE- *T*-1)))))
+			  (DEC 的)))
+		  (NP (NN 职位)
+		      (NN 空缺))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="2">
+	  在 补充 劳工 计划 下 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 这些))
+			  (NP (NN 债券)))
+		  (VP (VP (ADVP (AD 均))
+			  (PP-MNR (P 按)
+				  (NP (NP-PN (NR 美国))
+				      (ADJP (JJ 有关))
+				      (NP (NN 债券)
+					  (NN 管理)
+					  (NN 条款))))
+			  (ADVP (AD 充分))
+			  (VP (VV 披露)
+			      (NP-OBJ (NN 信息))))
+		      (PU ，)
+		      (VP (PP-LOC (P 在)
+				  (NP-PN (NR 美国)
+					 (NN 证券委)))
+			  (VP (VCD (VV 登记)
+				   (VV 发行)))))) 
+	  </parse>
+	  <arg n="1">
+	  这些 债券 	  
+	  </arg>
+	  <arg n="2">
+	  在 美国 证券委 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADVP (AD 凡是))
+		      (NP (CP (WHNP (-NONE- *OP*))
+			      (IP (VP (VP-FOC (VV 受)
+					      (NP-OBJ (DNP (NP (NP (NN 死刑) )
+							       (PU 、)
+							       (NP (ADJP (JJ 无期))
+								   (NP (NN 徒刑) ))
+							       (CC 或)
+							       (NP (LCP (QP (CD 十)
+									    (CLP (M 年)))
+									(LC 以上))
+								   (ADJP (JJ 有期))
+								   (NP (NN 徒刑) )))
+							   (DEG 之))
+						      (NP (NN 判决) )))
+				      (VP (ADVP (AD 尚))
+					  (ADVP (AD 未))
+					  (VP (VV 确定))))))
+			  (NP (NN 者) )))
+	      (PU ，)
+	      (VP (ADVP (AD 不))
+		  (VP (VV 得)
+		      (VP (VRD (VV 登记)
+			       (VV 为))
+			  (NP-OBJ (NN 候选人) ))))) 
+	  </parse>
+	  <arg n="1">
+	  凡是 *OP* 受 死刑 、 无期 徒刑 或 十 年 以上 有期 徒刑 之 判决 尚 未 确定 者 
+	  </arg>
+	  <arg n="3">
+	  候选人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

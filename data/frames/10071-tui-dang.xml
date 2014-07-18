@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 退党 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person withdrawing from a party"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP-PN (NR 民进党))
+			    (ADJP (JJ 前))
+			    (NP (NN 主席)))
+		    (NP-PN (NR 许信良)))
+	    (VP (ADVP (AD 则))
+		(PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VP-FOC (VV 寻求)
+					     (NP-OBJ (LCP (NP (NN 党))
+							  (LC 内))
+						     (NP (NN 提名))))
+				     (VP (VV 未果))))
+			     (LC 後)))
+		(PU ，)
+		(VP (VV 宣布)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 退党)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 参选)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

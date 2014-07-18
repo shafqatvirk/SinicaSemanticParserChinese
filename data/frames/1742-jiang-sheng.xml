@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降生 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="new life"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 到)
+		      (NP (NT 今天)))
+	      (PU ，)
+	      (QP-SBJ (NP-PN (NR 中国))
+		      (QP (OD 首)
+			  (CLP (M 例)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (QP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (AD 自然))
+				  (VP (VV 妊娠)))))
+		      (QP (CD 六)
+			  (CLP (M 胞)))
+		      (NP (NN 胎)))
+	      (VP (VV 降生)
+		  (QP-EXT (ADVP (AD 刚好))
+			  (QP (CD 一)
+			      (CLP (M 周)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 首 例 *OP* *T*-1 自然 妊娠 六 胞 胎 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  到 今天 
+	  </arg>
+	  <arg n="m" f="ext">
+	  刚好 一 周 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

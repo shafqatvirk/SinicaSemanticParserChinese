@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 疏离 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 stays away from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP-PN (NR 台北))
+			(NP (NN 市民)))
+		(VP (ADVP (AD 一点))
+		    (ADVP (AD 也))
+		    (ADVP (AD 不))
+		    (PP-ADV (P 像)
+			    (LCP (NP (NN 想像))
+				 (LC 中)))
+		    (ADVP (AD 那样))
+		    (VP (VCD (VA 冷漠)
+			     (VA 疏离))))) 
+	</parse>
+	<arg n="0">
+	台北 市民 
+	</arg>
+	<arg n="m" f="adv">
+	那样 
+	</arg>
+	<arg n="m" f="adv">
+	像 想像 中 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	一点 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NT 近年))
+		    (DNP (NP (NN 本土化))
+			 (DEG 的))
+		    (NP (NN 趋势)))
+	    (VP (ADVP (AD 更))
+		(PP-DIR (P 对)
+			(NP (NN 大陆)))
+		(ADVP (AD 逐渐))
+		(VP (VV 疏离)))) 
+	</parse>
+	<arg n="1">
+	对 大陆 
+	</arg>
+	<arg n="m" f="adv">
+	逐渐 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<arg n="m" f="tpc">
+	近年 本土化 的 趋势 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

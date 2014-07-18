@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 游玩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 visits as tourist"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (IP (NP-SBJ (-NONE- *pro*))
+			       (VP (NP-TMP (NN 寒暑假))
+				   (VP (VV 回)
+				       (NP-PN-OBJ (NR 台)))))
+			   (CC 或)
+			   (IP (NP-SBJ (PN 他们))
+			       (VP (VP (VV 去)
+				       (NP-PN-OBJ (NR 美国)))
+				   (VP (VV 游玩)))))
+		       (LC 时))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 常))
+		  (VP (VP (VV 利用)
+			  (NP-OBJ (NN 机会)))
+		      (VP (VV 想)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 灌输)
+				      (NP-IO (PN 他们))
+				      (NP-OBJ (QP (CD 一些))
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VA 正确)))
+						      (DEC 的)))
+					      (NP (NN 人生)
+						  (NN 观念))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 考选 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 selects through exams"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (DP (DT 全))
+			(NP (NN 国)))
+		    (NP (NN 官吏)))
+	    (VP (ADVP (AD 皆))
+		(PP-MNR (P 由)
+			(NP (ADJP (JJ 公开))
+			    (NP (NN 标准))))
+		(VP (VV 考选)))) 
+	</parse>
+	<arg n="1">
+	全 国 官吏 
+	</arg>
+	<arg n="m" f="mnr">
+	由 公开 标准 
+	</arg>
+	<arg n="m" f="adv">
+	皆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

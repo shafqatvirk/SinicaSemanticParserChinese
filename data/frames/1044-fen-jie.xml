@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分解 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (QP (CD 两)
+		      (CLP (M 株)))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-SBJ (IP-APP (NP-SBJ (-NONE- *pro*))
+					      (VP (VV 分解)
+						  (NP-OBJ (NN 土壤)
+							  (NN 矿物)
+							  (NN 钾))))
+				      (NP (NN 能力)))
+			      (VP (ADVP (AD 很))
+				  (VP (VA 强))))
+			  (DEC 的)))
+		  (NP (NN 硅酸盐)
+		      (NN 菌株))) 
+	  </parse>
+	  <arg n="2">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  土壤 矿物 钾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 要)
+		      (VP (ADVP (AD 切实))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NP (NN 脱困))
+					      (NP (NN 任务)
+						  (CC 和)
+						  (NN 责任)))
+				      (VP (VRD (VCD (VV 分解)
+						    (VV 落实))
+					       (VV 到))
+					  (NP-OBJ (NP (DP (DT 每)
+							  (CLP (M 个)))
+						      (NP (NN 企业)
+							  (PU 、)
+							  (NN 行业)))
+						  (CC 及)
+						  (NP (DP (DT 各)
+							  (CLP (M 级)))
+						      (NP (NN 政府))))))))))
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  脱困 任务 和 责任 
+	  </arg>
+	  <arg n="m" f="adv">
+	  切实 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

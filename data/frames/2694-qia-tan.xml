@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 洽谈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (NN 开发区))
+	      (VP (ADVP (AD 正))
+		  (PP (P 与)
+		      (NP-PN (NR 韩国)
+			     (NR 双龙)
+			     (NN 集团)))
+		  (VP (VV 洽谈)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 生产)
+				  (NP-OBJ (NN 钕铁硼))))))) 
+	  </parse>
+	  <arg n="0">
+	  开发区 
+	  </arg>
+	  <arg n="0">
+	  与 韩国 双龙 集团 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 生产 钕铁硼 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VE 有)
+	      (IP-OBJ (NP-SBJ (QP (CD 三千多))
+			      (NP (NN 客商)))
+		      (VP (VV 洽谈)
+			  (NP-OBJ (NN 贸易))))) 
+	  </parse>
+	  <arg n="0">
+	  三千多 客商 
+	  </arg>
+	  <arg n="1">
+	  贸易 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 去年))
+		       (LC 间))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 宏基)
+			 (PU 、)
+			 (NR 台积电))
+	      (VP (ADVP (AD 原本))
+		  (ADVP (AD 已))
+		  (PP (P 和)
+		      (NP (DNP (NP-PN (NR 韩国))
+			       (DEG 的))
+			  (NP-PN (NR 安南)
+				 (NN 集团))))
+		  (VP (VV 洽谈)))) 
+	  </parse>
+	  <arg n="0">
+	  宏基 、 台积电 
+	  </arg>
+	  <arg n="0">
+	  和 韩国 的 安南 集团 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  原本 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

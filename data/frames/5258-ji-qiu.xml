@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 击球 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 荷兰)
+		       (PU 、)
+		       (NR 比利时))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 都))
+		(VP (VE 有)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VCD (VV 挥杆)
+						 (VV 击球))))
+				    (DEC 的))
+			    (NP (NN 民族)
+				(NN 游戏)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

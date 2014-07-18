@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 编织 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 knits"/>
+    <role argnum="2" argrole="instrument/method"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (NP-MNR (-NONE- *T*-1))
+				    (VP (VV 编织)
+					(NP-OBJ (DP (DT 这)
+						    (CLP (M 种)))
+						(NP (NN 图案))))))
+			    (DEC 的)))
+		    (NP (NN 技法)))
+	    (VP (VP (ADVP (AD 十分))
+		    (VP (VA 繁复)))
+		(PU ，)
+		(VP (ADVP (AD 业已))
+		    (VP (VV 失传))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	这 种 图案 
+	</arg>
+	<arg n="2">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(QP (CD 一)
+			    (CLP (M 套))))
+		    (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 看似)
+				    (VP (VA 简单))))
+			    (DEC 的)))
+		    (NP (NN 纺织)
+			(NN 工具)))
+	    (PU ，)
+	    (VP (ADVP (AD 却))
+		(VP (VV 可以)
+		    (VP (VRD (VV 编织)
+			     (VV 出))
+			(NP-OBJ (DP (DT 各)
+				    (CLP (M 种)))
+				(CP (WHNP-3 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-3))
+					    (VP (VA 不同)))
+					(DEC 的)))
+				(ADJP (JJ 美丽))
+				(NP (NN 图案))))))) 
+	</parse>
+	<arg n="1">
+	各 种 *OP* *T*-3 不同 的 美丽 图案 
+	</arg>
+	<arg n="2">
+	这 一 套 *OP* *T*-2 看似 简单 的 纺织 工具 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

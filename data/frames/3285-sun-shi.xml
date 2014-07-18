@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 损失 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loser"/>
+      <role argnum="1" argrole="entity lost"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 显然))
+	      (PU ，)
+	      (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 实行)
+			  (NP-OBJ (DNP (NP (PU “)
+					   (NN 戒急用忍)
+					   (PU ”))
+				       (DEG 的))
+				  (NP (NN 政策)))))
+	      (PU ，)
+	      (NP-SBJ (NN 结果))
+	      (VP (VC 是)
+		  (VP (DVP (ADVP (AD 平白))
+			   (DEV 地))
+		      (VP (VV 损失)
+			  (NP-OBJ (DNP (PP (P 在)
+					   (NP (NN 祖国)
+					       (NN 大陆)))
+				       (DEG 的))
+				  (QP (CD 很多))
+				  (NP (NN 商机))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  在 祖国 大陆 的 很多 商机 
+	  </arg>
+	  <arg n="m" f="adv">
+	  平白 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *T*-1))
+	      (VP (ADVP (AD 曾))
+		  (VP (VP (ADVP (AD 公开))
+			  (VP (VV 声明)))
+		      (VP (VV 误导)
+			  (NP-OBJ (NN 投资者)))
+		      (VP (VV 令)
+			  (NP-OBJ (PN 其))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 损失))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

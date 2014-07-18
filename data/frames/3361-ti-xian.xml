@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 体现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing embodied/reflected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 决定)))
+	      (VP (VV 体现)
+		  (AS 了)
+		  (NP-OBJ (NN 主权)
+			  (CC 与)
+			  (NN 民意)))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 决定 
+	  </arg>
+	  <arg n="1">
+	  主权 与 民意 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP (DP (DT 这)
+			      (QP (CD 一)))
+			  (NP (NN 项目)))
+		      (NP (NN 进展))
+		      (VP (VA 顺利)))
+	      (PU ，)
+	      (VP (VP (VV 体现)
+		      (AS 了)
+		      (NP-OBJ (NP (NP-PN (NR 中国))
+				  (NP (NN 政府)))
+			      (DNP (PP (P 对)
+				       (IP (NP-SBJ (-NONE- *pro*))
+					   (VP (VV 发展)
+					       (NP (NP (NR 中)
+						       (NR 美))
+						   (NP (NN 经贸)
+						       (NN 关系))))))
+				   (DEG 的))
+			      (NP (NN 重视)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 一 项目 进展 顺利 
+	  </arg>
+	  <arg n="1">
+	  中国 政府 对 *pro* 发展 中 美 经贸 关系 的 重视 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

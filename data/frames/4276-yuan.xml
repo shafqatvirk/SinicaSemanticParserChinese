@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 愿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 is willing to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NP-PN (NR 中国))
+			     (NP (NN 石油)
+				 (NN 天然气))
+			     (ADJP (JJ 总))
+			     (NP (NN 公司)))
+		  (VP (VV 愿)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 扩大)
+				  (NP-OBJ (DNP (PP (P 与)
+						   (NP (NN 国外)
+						       (NN 公司)))
+					       (DEG 的))
+					  (NP (NN 合作))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 石油 天然气 总 公司 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 扩大 与 国外 公司 的 合作 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 hopes/wishes will come true"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 愿)
+		  (IP-OBJ (NP-SBJ (NN 网站))
+			  (VP (VV 成为)
+			      (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (NP (NP (NN 海外))
+							      (NP (NN 华侨)
+								  (NN 华人)))
+							  (CC 和)
+							  (NP (NN 各界)
+							      (NN 朋友)))
+						  (VP (PP-MNR (-NONE- *T*-2))
+						      (VP (VV 了解)
+							  (NP-PN-OBJ (NR 中国)))))
+					      (DEC 的)))
+				      (NP (NN 窗口)
+					  (CC 和)
+					  (NN 桥梁))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  网站 成为 *OP* 海外 华侨 华人 和 各界 朋友 *T*-2 了解 中国 的 窗口 和 桥梁 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

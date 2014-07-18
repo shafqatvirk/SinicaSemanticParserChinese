@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 漫游 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 roams"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 移民)
+				    (NP-PN-OBJ (NR 澳洲))))
+			    (DEC 的)))
+		    (NP (NP-PN (NR 罗卓瑶))
+			(CC 与)
+			(NP (NN 先生))))
+	    (VP (VP (VP (VV 驱车))
+		    (VP (VV 漫游)
+			(NP-OBJ (NP-PN (NR 澳洲))
+				(NP (NN 乡间)))))
+		(PU ，)
+		(VP (ADVP (AD 沿途))
+		    (VP (VV 看尽)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 壮丽)))
+					(DEC 的)))
+				(NP (NN 荒漠))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 移民 澳洲 的 罗卓瑶 与 先生 
+	</arg>
+	<arg n="1">
+	澳洲 乡间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

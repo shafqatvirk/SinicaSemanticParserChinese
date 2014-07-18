@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 委任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="appointer"/>
+      <role argnum="1" argrole="appointee"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NN 特区)
+			      (NN 行政)
+			      (NN 长官))
+		      (NP-PN (NR 董建华)))
+	      (VP (VV 委任)
+		  (NP-OBJ (NP-APP (NN 财政司)
+				  (NN 司长))
+			  (NP-PN (NR 曾荫权)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VC 为)
+			  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 接收)
+						  (NP-OBJ (NN 基金))))
+					  (DEC 的)))
+				  (NP (NN 公职)
+				      (NN 人员))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  特区 行政 长官 董建华 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  财政司 司长 曾荫权 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 *OP* (*T*-1)->(公职人员) 接收 基金 的 公职 人员 
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

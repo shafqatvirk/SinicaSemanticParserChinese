@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 飙升 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="level arg0 rises to"/>
+      <role argnum="2" argrole="arg0's original level"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 股市))
+	      (VP (PP-DIR (P 从)
+			  (QP (DNP (QP (OD 七十四)
+				       (CLP (M 年)))
+				   (DEG 的))
+			      (QP (CD 六百多)
+				  (CLP (M 点)))))
+		  (VP (VRD (VV 飙升)
+			   (VV 到))
+		      (QP-OBJ (DNP (QP (OD 七十九)
+				       (CLP (M 年)))
+				   (DEG 的))
+			      (QP (CD 一万二千多)
+				  (CLP (M 点))))))) 
+	  </parse>
+	  <arg n="0">
+	  股市 
+	  </arg>
+	  <arg n="1">
+	  七十九 年 的 一万二千多 点 
+	  </arg>
+	  <arg n="2">
+	  从 七十四 年 的 六百多 点 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

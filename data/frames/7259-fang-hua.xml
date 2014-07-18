@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 放话 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity spreading word"/>
+    <role argnum="1" argrole="thing arg0 says"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 此外))
+	    (PU ，)
+	    (NP-PN-SBJ (NN 证期会))
+	    (VP (VP (ADVP (AD 已经))
+		    (VP (PU 「)
+			(VV 放话)
+			(PU 」)))
+		(PU ，)
+		(VP (VV 要求)
+		    (NP-OBJ (NN 上市)
+			    (NN 上柜)
+			    (NN 公司))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (BA 将)
+				(IP-OBJ (NP-SBJ (PN 其)
+						(NN 进度))
+					(VP (PP-ADV (P 按)
+						    (NP (NN 月)))
+					    (VP (VV 申报)))))
+			    (PU ，)
+			    (CC 并)
+			    (VP (ADVP (AD 公开))
+				(VP (VV 让)
+				    (NP-OBJ (NN 投资人))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 了解)))))))))) 
+	</parse>
+	<arg n="0">
+	证期会 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<arg n="m" f="adv">
+	此外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

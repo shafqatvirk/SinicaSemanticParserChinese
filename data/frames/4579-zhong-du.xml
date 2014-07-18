@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 中毒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity poisoned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 十二月)
+		      (NT 十二日))
+	      (PU ，)
+	      (NP-SBJ (NN 群众))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP-PN (NR 大丰)
+					  (NR 川东)
+					  (NR 闸北))
+				   (NP (NN 麦田)))
+			       (LC 里)))
+		  (PU ，)
+		  (ADVP (AD 又))
+		  (VP (VV 发现)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 三)
+				  (CLP (M 只)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 中毒))))
+			      (NP (NN 丹顶鹤)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

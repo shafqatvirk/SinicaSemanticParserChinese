@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 至上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity taking the top priority"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台湾))
+	    (VP (VV 必须)
+		(VP (PP-LOC (P 从)
+			    (LCP (NP (CP-APP (IP (PU 「)
+						 (NP-SBJ (NN 经济)
+							 (NN 发展))
+						 (VP (VV 至上))
+						 (PU 」))
+					     (DEC 的))
+				     (NP (NN 迷思)))
+				 (LC 中)))
+		    (VP (VV 跳脱))))) 
+	</parse>
+	<arg n="0">
+	经济 发展 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

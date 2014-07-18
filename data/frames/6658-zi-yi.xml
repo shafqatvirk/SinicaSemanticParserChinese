@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 执意 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 insists on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 身为)
+			    (NP-OBJ (LCP (NP (NN 家))
+					 (LC 中))
+				    (NP (NN 长女)))))
+		(PU ，)
+		(ADVP (AD 却))
+		(VP (VP (ADVP (AD 不))
+			(VP (VV 顾)
+			    (NP-OBJ (NN 父亲))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 反对)))))
+		    (PU ，)
+		    (VP (VV 执意)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP (P 和)
+					(NP-PN (NR 郑南榕)))
+				    (VP (VV 结婚)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 和 郑南榕 结婚 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 身为 家 中 长女 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

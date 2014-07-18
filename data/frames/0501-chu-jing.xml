@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出境 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person going abroad"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (IP (NP-SBJ (-NONE- *T*-1))
+					   (VP (VV 欠缴)
+					       (NP-OBJ (NN 税款)))))
+				   (NP (NN 企业)))
+			       (DEG 的))
+			  (NP (NN 领导人)))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 得)
+			  (VP (VV 出境))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 欠缴 税款 企业 的 领导人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

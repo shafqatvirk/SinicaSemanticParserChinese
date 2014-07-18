@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 供作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 serves as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 左)
+			   (NN 上))
+		       (LC 角))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (VV 供作)
+					      (NP-OBJ (NP (NN 省府)
+							  (NN 动员)
+							  (NN 月会))
+						      (PU 、)
+						      (NP (NP-PN (ADJP (JJ 省立))
+								 (NP-PN (NR 中兴)
+									(NN 中学)))
+							  (NP (NN 周会)))
+						      (PU 、)
+						      (NP (NN 展览)
+							  (NN 会场))))
+					  (PU ，)
+					  (VP (NP-TMP (NT 晚上))
+					      (ADVP (AD 还))
+					      (VP (VV 播映)
+						  (NP-OBJ (NN 电影))))
+					  (PU 、)
+					  (VP (NP-TMP (NN 圣诞节))
+					      (VP (VV 办)
+						  (NP-OBJ (NN 舞会))))))
+				  (DEC 的)))
+			  (NP-PN (NR 中兴)
+				 (NN 会堂))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  省府 动员 月会 、 省立 中兴 中学 周会 、 展览 会场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

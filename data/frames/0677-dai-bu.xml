@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 逮捕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="arrester"/>
+      <role argnum="1" argrole="person arrested"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-SBJ (ADJP (JJ 有关))
+			      (NP (NN 方面)))
+		      (VP (VV 告))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 现))
+		  (ADVP (AD 已))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (QP (CD 三)
+					  (CLP (M 名)))
+				      (ADJP (JJ 涉嫌))
+				      (NP (NN 犯罪)
+					  (NN 分子)))
+			      (VP (VV 逮捕)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  三 名 涉嫌 犯罪 分子 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 有关 方面 告 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 嵌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing inserted"/>
+      <role argnum="2" argrole="location of the insertion"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (PU “)
+				       (ADJP (JJ 小))
+				       (NP (NN 海龟))
+				       (PU ”))
+				   (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (VA 坚实)))
+					   (DEC 的)))
+				   (NP (NN 龟甲)))
+			       (LC 上)))
+		  (VP (VV 嵌)
+		      (AS 着)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (PP-LGS (P 由)
+						      (NP (NN 陆地)
+							  (PU 、)
+							  (NN 海洋)))
+					      (VP (VV 组成))))
+				      (DEC 的)))
+			      (NP (NN 世界)
+				  (NN 地图)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 由 陆地 、 海洋 组成 的 世界 地图 	  
+	  </arg>
+	  <arg n="2">
+	  在 “ 小 海龟 ” *OP* *T*-1 坚实 的 龟甲 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

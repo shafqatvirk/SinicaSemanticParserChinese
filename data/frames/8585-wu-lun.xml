@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无论 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 无论)
+			      (NP-OBJ (NN 东)
+				      (NN 西)
+				      (NN 南)
+				      (NN 北))))
+		  (PU 、)
+		  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 分)
+				  (NP-OBJ (NN 本岛)
+					  (NN 离岛)))))
+		  (PU ，)
+		  (VP (ADVP (AD 都))
+		      (VP (VV 能够)
+			  (VP (VP (VV 获得)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VCD (VA 均衡)
+							       (VA 多元))))
+						  (DEC 的)))
+					  (NP (NN 发展))))
+			      (PU ，)
+			      (VP (VV 拉近)
+				  (NP-OBJ (DNP (LCP (NP (NN 城乡))
+						    (LC 之间))
+					       (DEG 的))
+					  (NP (NN 距离))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  东 西 南 北 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

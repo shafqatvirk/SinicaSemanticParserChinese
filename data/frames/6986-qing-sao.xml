@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 清扫 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 sweeps and cleans"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (ADJP (JJ 一般))
+		    (NP (NN 卖场)))
+	    (VP (DP-ADV (DT 每)
+			(CLP (M 天)))
+		(VP (VV 可能)
+		    (VP (VV 需要)
+			(NP-OBJ (QP (CD 二十))
+				(NP (NN 人)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 清扫)
+				(NP-EXT (QP (CD 数))
+					(NP (NN 小时))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	数 小时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

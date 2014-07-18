@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上溯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 traces"/>
+    <role argnum="2" argrole="point arg1 is traced back to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (PP-DIR (P 由)
+				    (NP (DNP (NP-PN (NR 唐朝))
+					     (DEG 的))
+					(NP (NN 马球))))
+			    (VP (VRD (VV 进展)
+				     (VV 成))
+				(NP-OBJ (NN 步打球))))
+			(PU 、)
+			(VP (PP-PRD (ADVP (AD 再))
+				    (PP (P 到)
+					(NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VCD (VV 挥杆)
+								 (VV 进洞))))
+						    (DEC 的))
+					    (NP (NN 捶球))))))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NP-PN (NR 中国))
+			     (NP (NN 高尔夫)))
+			 (DEG 的))
+		    (NP (NN 源流)))
+	    (VP (VV 可以)
+		(VP (VV 上溯)
+		    (LCP-OBJ (QP (CD 一千两百)
+				 (CLP (M 年)))
+			     (LC 前))))) 
+	</parse>
+	<arg n="1">
+	中国 高尔夫 的 源流 
+	</arg>
+	<arg n="2">
+	一千两百 年 前 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 由 唐朝 的 马球 进展 成 步打球 、 再 到 *PRO* 挥杆 进洞 的 捶球 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-TPC (IP-APP (NP-SBJ (-NONE- *PRO*))
+						(VP (LCP-TMP (LC 之前))
+						    (VP (VV 居住)
+							(LCP-LOC (NP (NN 岛))
+								 (LC 上)))))
+					(NP (NN 历史)))
+				(NP-SBJ (-NONE- *T*-2))
+				(VP (VV 可)
+				    (VP (VV 上溯))))))
+		    (NP (NN 者)))
+	    (VP (VC 为)
+		(NP-PRD (NN 原住民)))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	*PRO* 之前 居住 岛 上 历史 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 献身 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 devotes himself to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP-PN (NN 外交部))
+			    (NP (NN 研究)
+				(NN 发展)
+				(NN 委员会))
+			    (NP (NN 副主委)))
+		    (NP-PN (NR 杨黄美幸)))
+	    (PU ，)
+	    (VP (VP (VV 旅居)
+		    (NP-PN-OBJ (NR 美国)
+			       (NR 纽约))
+		    (QP-EXT (CD 多)
+			    (CLP (M 年))))
+		(PU ，)
+		(VP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 很))
+				(VP (VA 早))))
+		    (ADVP (AD 便))
+		    (VP (VV 献身)
+			(NP-OBJ (NN 反对)
+				(NN 运动))))
+		(PU ，)
+		(VP (ADVP (AD 曾))
+		    (VP (VV 任)
+			(NP-OBJ (NP-PN (NR 民进党))
+				(NP (NN 国际)
+				    (NN 事务部))
+				(NP (NN 主任))))))) 
+	</parse>
+	<arg n="0">
+	外交部 研究 发展 委员会 副主委 杨黄美幸 
+	</arg>
+	<arg n="1">
+	反对 运动 
+	</arg>
+	<arg n="m" f="adv">
+	便 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 很 早 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

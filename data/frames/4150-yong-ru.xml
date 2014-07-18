@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 涌入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 pours into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (ADJP (JJ 大))
+			       (CLP (M 批))))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (IP (IP (NP-SBJ (NN 实力))
+					  (VP (VA 雄厚)))
+				      (PU 、)
+				      (IP (NP-SBJ (NN 发展)
+						  (NN 前景))
+					  (VP (VV 看好)))))
+			      (DEC 的)))
+		      (NP (NN 外国)
+			  (NN 企业)))
+	      (VP (ADVP (AD 纷纷))
+		  (VP (VV 涌入)
+		      (NP-PN-OBJ (NR 纽约)
+				 (NN 证券)
+				 (NN 交易所))))) 
+	  </parse>
+	  <arg n="0">
+	  一 大 批 *OP* *T*-1 实力 雄厚 、 发展 前景 看好 的 外国 企业 
+	  </arg>
+	  <arg n="1">
+	  纽约 证券 交易所 
+	  </arg>
+	  <arg n="m" f="adv">
+	  纷纷 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-SBJ (NR 江西省)
+				 (NN 经贸厅))
+		      (QP (CD 一)
+			  (CLP (M 份)))
+		      (NP (NN 报告)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 显示)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 外资))
+					  (VP (ADVP (AD 争相))
+					      (VP (VV 涌入))))
+				      (DEC 的))
+			      (NP (NN 趋势)))))) 
+	  </parse>
+	  <arg n="0">
+	  外资 
+	  </arg>
+	  <arg n="m" f="adv">
+	  争相 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

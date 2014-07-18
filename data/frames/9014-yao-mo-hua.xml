@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 妖魔化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 demonizes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 一般))
+		  (VP (VV 咸认)
+		      (VP (VE 有)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (PP-TMP (P 在)
+							  (LCP (NP (NP-PN (NR 美国))
+								   (NP (NN 总统)
+								       (NN 大选)))
+							       (LC 之前)))
+						  (VP (VV 消除)
+						      (NP-OBJ (DNP (NP (NP-PN (NR 美国))
+								       (ADJP (JJ 反共))
+								       (NP (NN 势力)))
+								   (DEG 的))
+							      (IP-APP (PU 「)
+								      (NP-SBJ (-NONE- *PRO*))
+								      (VP (VV 妖魔化)
+									  (NP-PN-OBJ (NR 中国)))
+								      (PU 」))
+							      (ADJP (JJ 负面))
+							      (NP (NN 印象))))))
+					  (DEC 的))
+				  (NP (NN 效果))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  中国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

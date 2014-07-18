@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减至 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="reduction initiator"/>
+      <role argnum="1" argrole="thing reduced"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 为了)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (CP-APP (IP (IP (NP-SBJ (ADJP (JJ 旧))
+								  (NP (NN 措施)))
+							  (VP (VP (VV 失效))))
+						      (CC 和)
+						      (IP (NP-SBJ (ADJP (JJ 新))
+								  (NP (NN 措施)))
+							  (VP (ADVP (AD 尚))
+							      (VP (VV 未)
+								  (VP (VV 实施))))))
+						  (DEC 的))
+					  (ADJP (JJ 间断))
+					  (NP (NN 时间)))
+				  (VP (VRD (VV 减至)
+					   (VA 最少))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  旧 措施 失效 和 新 措施 尚 未 实施 的 间断 时间 
+	  </arg>
+	  <arg n="3">
+	  最少 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

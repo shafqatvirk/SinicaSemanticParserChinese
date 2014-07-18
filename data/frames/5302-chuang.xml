@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 闯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 charges into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 有)
+		(NP-OBJ (CP-APP (IP (NP-SBJ (NN 作者))
+				    (VP (VP (VV 恋爱))
+					(PU 、)
+					(VP (VV 成家))
+					(PU 、)
+					(VP (ADVP (AD 初))
+					    (VP (VV 闯)
+						(NP-OBJ (NN 文坛))))))
+				(DEC 的))
+			(ADJP (JJ 曲折))
+			(NP (NN 历程))))) 
+	</parse>
+	<arg n="0">
+	作者 
+	</arg>
+	<arg n="1">
+	文坛 
+	</arg>
+	<arg n="m" f="adv">
+	初 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他们))
+	    (VP (VP (VV 凭)
+		    (AS 著)
+		    (NP-OBJ (NP (QP (CD 一)
+				    (CLP (M 张)))
+				(NP (NN 脸)))
+			    (PU 、)
+			    (NP (QP (CD 一)
+				    (CLP (M 张)))
+				(NP (NN 嘴)))))
+		(PU ，)
+		(VP (DP-ADV (DT 每)
+			    (CLP (M 天)))
+		    (VP (VP (VRD (PU 「)
+				 (VV 闯)
+				 (PU 」)
+				 (VV 入))
+			    (NP-OBJ (NP (NP (PN 你)
+					    (PN 我))
+					(NP (NN 家)))
+				    (NP (NN 厅房))))
+			(PU ，)
+			(VP (VP (VV 说长道短))
+			    (PU 、)
+			    (VP (VV 谈)
+				(NP-OBJ (NN 天下)
+					(NN 事)))))))) 
+	</parse>
+	<arg n="0">
+	他们 
+	</arg>
+	<arg n="1">
+	你 我 家 厅房 
+	</arg>
+	<arg n="m" f="adv">
+	每 天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

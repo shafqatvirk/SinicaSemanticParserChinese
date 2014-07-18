@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 连台 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年))
+	      (NP-TPC (NP-PN (NR 巴西))
+		      (NP (NN 足坛)))
+	      (IP (IP (NP-SBJ (ADJP (JJ 好))
+			      (NP (NN 戏)))
+		      (VP (VV 连台)))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 赛事))
+		      (VP (ADVP (AD 不))
+			  (VP (VA 断)))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  好 戏 
+	  </arg>
+	  <arg n="0" f="psr">
+	  巴西 足坛 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

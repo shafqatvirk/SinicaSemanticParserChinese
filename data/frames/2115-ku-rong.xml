@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 库容 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="volume contained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 带领)
+	      (NP-OBJ (NN 村民))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 兴建)
+		      (NP-OBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VV 库容)
+						  (QP-OBJ (CD 两万)
+							  (CLP (M 方)))))
+					  (DEC 的)))
+				  (NP (NN 蓄水库)))
+			      (CC 和)
+			      (NP (QP (CD 一)
+				      (CLP (M 座)))
+				  (DNP (QP (CD 三十七千)
+					   (CLP (M 瓦)))
+				       (DEG 的))
+				  (NP (NN 电站))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  两万 方 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

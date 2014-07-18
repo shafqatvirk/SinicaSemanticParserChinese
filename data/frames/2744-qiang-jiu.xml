@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抢救 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity try to save"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 救援)
+		      (NN 人员))
+	      (VP (VP (PP-MNR (P 用)
+			      (NP (NN 水)))
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (ADVP (AD 已))
+							      (VP (VV 变形))))
+						      (DEC 的)))
+					      (NP (NN 客车)))
+					  (NP (NN 火)))
+				  (VP (VV 浇灭)))))
+		  (PU ，)
+		  (VP (VV 集中)
+		      (NP-OBJ (NN 力量)))
+		  (VP (VV 抢救)
+		      (NP-OBJ (NN 伤员))))) 
+	  </parse>
+	  <arg n="0">
+	  救援 人员 
+	  </arg>
+	  <arg n="1">
+	  伤员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NN 撞车))
+		       (LC 后))
+	      (NP-SBJ (DNP (NP (NN 乘客))
+			   (DEG 的))
+		      (NP (NN 呼救声)))
+	      (VP (VV 引来)
+		  (NP-OBJ (QP (CD 数百)
+			      (CLP (M 名)))
+			  (NP (NN 村民)
+			      (CC 和)
+			      (NN 过路者)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 抢救)
+			  (CC 和)
+			  (VV 围观))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

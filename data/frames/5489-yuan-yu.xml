@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 源於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 originates from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (CP-APP (IP (NP-PN-SBJ (NR 中国))
+				    (VP (VV 现代化)))
+				(DEC 的))
+			(NP (NN 困难)))
+		    (NP (NN 之一)))
+	    (PU ，)
+	    (VP (ADVP (AD 即))
+		(VP (VV 源於)
+		    (NP-OBJ (DNP (NP (NN 价值)
+				     (NN 观念))
+				 (DEG 的))
+			    (NP (NN 混乱)))))) 
+	</parse>
+	<arg n="0">
+	中国 现代化 的 困难 之一 
+	</arg>
+	<arg n="1">
+	价值 观念 的 混乱 
+	</arg>
+	<arg n="m" f="adv">
+	即 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

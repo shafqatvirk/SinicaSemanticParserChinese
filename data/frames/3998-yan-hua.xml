@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 演化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 揭示)
+	      (NP-OBJ (IP-APP (IP (NP-SBJ (NN 地壳))
+				  (VP (VV 变迁)))
+			      (CC 与)
+			      (IP (NP-SBJ (NN 地球)
+					  (NN 环境))
+				  (VP (VV 演化))))
+		      (NP (NN 规律)))) 
+	  </parse>
+	  <arg n="0">
+	  地球 环境 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing developed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VP (VE 有)
+		      (NP-OBJ (NN 话)))
+		  (VP (ADVP (AD 却))
+		      (VP (VE 没有)
+			  (NP-OBJ (NN 管道))))
+		  (PU ，)
+		  (VP (ADVP (AD 所以))
+		      (VP (VRD (VV 演化)
+			       (VV 出))
+			  (NP-OBJ (NP-APP (NP (NN 飙车))
+					  (PU 、)
+					  (NP (NN 飙舞))
+					  (PU 、)
+					  (NP (ADVP (AD 甚至))
+					      (NP (NN 自杀)))
+					  (ETC 等))
+				  (NP (NN 表现)
+				      (NN 形式))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们	  	  
+	  </arg>
+	  <arg n="1">
+	  飙车、飙舞、甚至 自杀 等 表现形式	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

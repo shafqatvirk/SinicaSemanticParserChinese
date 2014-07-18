@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 追索 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 traces and seeks"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 哲学))
+	      (PU ，)
+	      (VP (VP (VC 是)
+		      (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			      (VP (LCP-LOC (NP (NN 迷宫))
+					   (LC 中))
+				  (VP (VV 望见)
+				      (NP-OBJ (NN 星空))))))
+		  (PU ，)
+		  (VP (VV 发出)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 追索)))
+				      (DEC 的))
+			      (NP (NN 天问)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

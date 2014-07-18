@@ -1,0 +1,137 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通报 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing made known"/>
+      <role argnum="2" argrole="people notified"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VP (VV 通报)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (IP-SBJ (NP-PN-SBJ (NR 美)
+							     (PU 、)
+							     (NR 英))
+						  (VP (VV 空袭)
+						      (NP-PN-OBJ (NR 巴格达))))
+					  (VP (VV 造成)
+					      (NP-OBJ (-NONE- *T*-1))))
+				      (DEC 的)))
+			      (NP (NN 损失))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-DIR (P 向)
+			      (NP-PN (NR 美)
+				     (PU 、)
+				     (NR 英)))
+		      (VP (VV 提出)
+			  (NP-OBJ (NN 索赔)
+				  (NN 要求)))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  *OP* 美 、 英 空袭 巴格达 造成 *T*-1 的 损失 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (PU “)
+				   (NP-PN (NR 千岛湖))
+				   (NP (NN 事件))
+				   (PU ”))
+			   (VP (VV 发生)))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 海协))
+	      (VP (PP-MNR (P 依据)
+			  (NP (NN 协议)))
+		  (VP (VP (PP-DIR (P 向)
+				  (NP-PN (NR 海基会)))
+			  (VP (VV 通报)
+			      (AS 了)
+			      (NP-OBJ (NN 情况))))
+		      (PU ，)
+		      (VP (VP (VV 解释)
+			      (NP-OBJ (-NONE- *RNR*-2)))
+			  (CC 并)
+			  (VP (VV 回答)
+			      (NP-OBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-PN-SBJ (NR 海基会))
+						    (VP (MSP 所)
+							(VP (VV 提)
+							    (NP-OBJ (-NONE- *T*-1)))))
+						(DEC 的)))
+					(QP (CD 若干))
+					(NP (NN 问题)
+					    (CC 与)
+					    (NN 要求)))))))) 
+	  </parse>
+	  <arg n="0">
+	  海协 
+	  </arg>
+	  <arg n="1">
+	  情况 
+	  </arg>
+	  <arg n="2">
+	  向 海基会 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依据 协议 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  “ 千岛湖 事件 ” 发生 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP (AD 随时))
+		  (PP-DIR (P 向)
+			  (NP-PN (NR 欧洲)
+				 (NN 中央)
+				 (NN 银行)))
+		  (VP (VV 通报)
+		      (CC 和)
+		      (VV 建议)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  向 欧洲 中央 银行 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

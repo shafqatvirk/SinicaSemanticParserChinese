@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 高於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="compared with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (LCP (NP (QP (CD 一)
+				   (CLP (M 段)))
+			       (NP (NN 期间)))
+			   (LC 内)))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NN 政府)
+			       (NN 开支))
+			   (DEG 的))
+		      (NP (NN 增长率)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (VV 高於)
+			  (NP-OBJ (NN 经济)
+				  (NN 趋势)
+				  (NN 增长率)))))) 
+	  </parse>
+	  <arg n="0">
+	  政府 开支 的 增长率 
+	  </arg>
+	  <arg n="1">
+	  经济 趋势 增长率 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

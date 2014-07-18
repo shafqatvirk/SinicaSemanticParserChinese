@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 休闲 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person relaxing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (PN 我))
+		    (CC 和)
+		    (NP (NN 家人)))
+	    (VP (ADVP (AD 则))
+		(VP (VV 喜欢)
+		    (NP-OBJ (LCP (NP (NN 过年))
+				 (LC 时))
+			    (LCP (NP-PN (NR 台北))
+				 (LCP (NP (NN 街))
+				      (LC 头)))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 难得)))
+				    (DEC 的)))
+			    (NP (NN 清静)))))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 不))
+		(VP (VV 想)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 刻意)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 做)
+					    (NP-OBJ (DP (DT 什麽))
+						    (IP-APP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 休闲)))
+						    (NP (NN 安排)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

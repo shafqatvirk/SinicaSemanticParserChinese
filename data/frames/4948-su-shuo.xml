@@ -1,0 +1,245 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 诉说 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tells"/>
+    <role argnum="2" argrole="entity arg1 is told to"/>
+    <role argnum="3" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg3"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP (NN 低音)
+			    (NN 长笛))
+			(CC 与)
+			(NP (NN 高音)
+			    (NN 萨克斯风)))
+		(VP (VP (VV 和鸣))
+		    (VP (VV 诉说)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (NN 狼群))
+					    (VP (SB 被)
+						(VP (VV 屠杀))))
+					(DEC 的))
+				(NP (NN 悲凄)
+				    (NN 苍凉)))))) 
+	</parse>
+	<arg n="1">
+	狼群 被 屠杀 的 悲凄 苍凉 
+	</arg>
+	<arg n="3">
+	低音 长笛 与 高音 萨克斯风 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今年)
+		    (NT 春天))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 马修))
+	    (VP (VP (VV 出版)
+		    (AS 了)
+		    (NP-TTL-OBJ (PU 《)
+				(NN 驯鹿)
+				(NN 宣言)
+				(PU 》)))
+		(PU ，)
+		(VP (ADVP (AD 并))
+		    (VP (VV 展开)
+			(NP-OBJ (NP (ADJP (JJ 全))
+				    (NP-PN (NR 美)))
+				(NP (NN 巡回)
+				    (NN 演唱)))))
+		(PU ，)
+		(VP (PP-MNR (P 用)
+			    (NP (NN 音乐)
+				(CC 和)
+				(NN 影像)))
+		    (VP (VV 诉说)
+			(NP-OBJ (DNP (NP (NN 驯鹿))
+				     (DEG 的))
+				(NP (NN 故事)))))
+		(PU ，)
+		(VP (VV 凝聚)
+		    (NP-OBJ (NN 环保)
+			    (NN 意识)))
+		(PU ，)
+		(VP (MSP 以)
+		    (VP (VV 对抗)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 威胁)
+						(NP-OBJ (NN 驯鹿)
+							(NN 生存)))))
+				    (DEC 的))
+				(NP-PN (NR 北美))
+				(NP (NN 石油业)))))
+		(PU ，)
+		(VP (VV 让)
+		    (NP-OBJ (DP (DT 这)
+				(CLP (M 群)))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (ADVP (AD 已))
+					    (PP-LOC (P 在)
+						    (NP (NP-PN (NR 北极))
+							(NP (NN 地区))))
+					    (VP (VV 繁衍)
+						(AS 了)
+						(QP-EXT (CD 数万)
+							(CLP (M 年))))))
+				    (DEC 的)))
+			    (NP (NN 驯鹿)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 得以)
+			    (VP (VV 存活))))))) 
+	</parse>
+	<arg n="0">
+	马修 
+	</arg>
+	<arg n="1">
+	驯鹿 的 故事 
+	</arg>
+	<arg n="3">
+	用 音乐 和 影像 
+	</arg>
+	<arg n="m" f="tmp">
+	今年 春天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 自己))
+	    (VP (ADVP (AD 则))
+		(VP (VP (VV 超脱)
+			(NP-OBJ (NN 制服)))
+		    (PU ，)
+		    (VP (VV 诉说)
+			(AS 著)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (LCP-LOC (NP (NN 心))
+							 (LC 中))
+						(VP (VV 潜在))))
+					(DEC 的)))
+				(NP (NN 思绪))))))) 
+	</parse>
+	<arg n="0">
+	自己 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 心 中 潜在 的 思绪 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (LB 被)
+				    (IP-OBJ (NP-PN-SBJ (NR 联合国)
+						       (NN 科教文)
+						       (NN 组织))
+					    (VP (VCP (VV 颁布)
+						     (VC 为))
+						(NP-OBJ (PU 「)
+							(NN 世界)
+							(NN 人类)
+							(NN 文化)
+							(NN 遗产)
+							(PU 」))))))
+			    (DEC 的)))
+		    (NP-PN (NR 秦始皇))
+		    (NP (NN 兵马俑)))
+	    (PU ，)
+	    (VP (VP (PP-MNR (P 以)
+			    (NP (QP (DNP-APP (NP (CP (WHNP-2 (-NONE- *OP*))
+						     (IP (NP-SBJ (-NONE- *pro*))
+							 (VP (ADVP (AD 历来))
+							     (VP (VV 出借)
+								 (NP-OBJ (-NONE- *pro*))
+								 (NP-EXT (-NONE- *T*-2))))))
+						 (ADJP (ADVP (AD 最))
+						       (ADJP (JJ 高)))
+						 (NP (NN 数目)))
+					     (DEG 的))
+				    (QP (CD 十七)
+					(CLP (M 件))))
+				(NP (NN 兵马俑)
+				    (NN 真品))))
+		    (PU ，)
+		    (PP (P 连同)
+			(NP (QP (CD 一百二十四)
+				(CLP (M 组件)))
+			    (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-4))
+					(VP (VA 珍贵)))
+				    (DEC 的)))
+			    (NP-PN (NR 秦朝))
+			    (NP (NN 文物))))
+		    (PU ，)
+		    (ADVP (AD 终於))
+		    (PP-TMP (P 在)
+			    (NP (NT 千禧年)
+				(NN 岁末)))
+		    (PP (P 和)
+			(NP (NP-PN (NR 台湾))
+			    (NP (NN 民众))))
+		    (VP (VV 见面)))
+		(PU ，)
+		(VP (PP-DIR (P 向)
+			    (NP (NN 人们)))
+		    (VP (VV 诉说)
+			(NP-OBJ (DNP (LCP (QP (CD 两千两百)
+					      (CLP (M 年)))
+					  (LC 前))
+				     (DEG 的))
+				(NP (NN 秦俑)
+				    (NN 传奇))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 被 联合国 科教文 组织 颁布 为 「 世界 人类 文化 遗产 」 的 秦始皇 兵马俑 
+	</arg>
+	<arg n="1">
+	两千两百 年 前 的 秦俑 传奇 
+	</arg>
+	<arg n="2">
+	向 人们 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

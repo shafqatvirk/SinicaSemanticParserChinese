@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 脱离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity separated/divorced"/>
+      <role argnum="1" argrole="entity arg0 is separated/divorced from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (ADVP (AD 再))
+			      (VP (VV 利用)
+				  (NP-OBJ (DNP (ADJP (JJ 传统))
+					       (DEG 的))
+					  (NP (NN 贸易)
+					      (NN 收支)
+					      (NN 平衡)
+					      (NN 方式)))))
+			  (VP (MSP 来)
+			      (VP (VV 衡量)
+				  (NP-OBJ (DNP (LCP (NP (NN 国)
+							(CC 与)
+							(NN 国))
+						    (LC 之间))
+					       (DEG 的))
+					  (NP (NN 贸易)
+					      (NN 关系)))))))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 脱离)
+		      (NP-OBJ (NN 现实))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 再 利用 传统 的 贸易 收支 平衡 方式 来 衡量 国 与 国 之间 的 贸易 关系 
+	  </arg>
+	  <arg n="1">
+	  现实 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (VP (VV 粉碎)
+	      (AS 了)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 企图)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 使)
+						  (NP-PN-OBJ (NR 科索沃))
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 脱离)
+							  (NP-PN-OBJ (NR 塞尔维亚)
+								     (NN 共和国))))))))
+			      (DEC 的))
+		      (NP (NN 阴谋)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  塞尔维亚 共和国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

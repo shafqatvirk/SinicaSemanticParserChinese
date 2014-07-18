@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 指向 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 points to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 问卷))
+			 (DEG 的))
+		    (NP (NN 结果)))
+	    (VP (ADVP (AD 清楚))
+		(VP (VV 指向)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 个)))
+			    (NP (NN 事实)))))) 
+	</parse>
+	<arg n="0">
+	问卷 的 结果 
+	</arg>
+	<arg n="1">
+	一 个 事实 
+	</arg>
+	<arg n="m" f="adv">
+	清楚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

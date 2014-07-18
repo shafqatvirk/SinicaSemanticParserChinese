@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 联接 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities connected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-TPC (NR 金桥)
+			 (NN 工程)
+			 (NR 广东))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (VP-FOC (PP (P 和)
+				      (NP (NP-PN-APP (NR 北京)
+						     (PU 、)
+						     (NR 上海)
+						     (ETC 等))
+					  (NP (NN 地))))
+				  (VP (VCD (VV 联网)
+					   (VV 调试))))
+			  (VP (VA 成功))))
+		  (PU ，)
+		  (VP (VV 实现)
+		      (NP-OBJ (UCP-APP (NP (NP (NN 视频)
+					       (NN 图像)
+					       (PU 、)
+					       (NN 数字)
+					       (PU 、)
+					       (NN 话音))
+					   (NP (NN 传送)))
+				       (CC 及)
+				       (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (PP (P 与)
+						   (NP (NN 国际)
+						       (NN 互联网)))
+					       (VP (VV 联接))))
+				       (ETC 等))
+			      (NP (NN 功能)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  与 国际 互联网 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

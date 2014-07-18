@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 方 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="length of circumference of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-LOC (PN 那里))
+	    (NP-SBJ (NN 城))
+	    (VP (VV 方)
+		(QP-OBJ (CD 三百)
+			(CLP (M 里))))) 
+	</parse>
+	<arg n="0">
+	城 
+	</arg>
+	<arg n="1">
+	三百 里 
+	</arg>
+	<arg n="m" f="loc">
+	那里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

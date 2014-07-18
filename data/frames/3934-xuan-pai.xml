@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 选派 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people selected and dispatched"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (PP-MNR (P 按照)
+			  (NP (CP-APP (IP (NP-SBJ (NN 东道主))
+					  (VP (VA 优先)))
+				      (DEC 的))
+			      (NP (NN 惯例))))
+		  (PU ，)
+		  (VP (VV 选派)
+		      (AS 了)
+		      (NP-OBJ (QP (CD ９)
+				  (CLP (M 名)))
+			      (NP (NN 棋手)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  ９ 名 棋手 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按照 东道主 优先 的 惯例 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

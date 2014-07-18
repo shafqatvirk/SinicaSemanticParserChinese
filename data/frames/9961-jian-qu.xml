@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 渐趋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="state arg0 gradually gets into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (ADVP-WH (AD 为什麽))
+		(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 曾经))
+					(VP (VA 蓬勃))))
+				(DEC 的)))
+			(NP (NN 文化)
+			    (NN 活动)))
+		(PU ，)
+		(VP (NP-TMP (NT 如今))
+		    (ADVP (AD 却))
+		    (VP (VV 渐趋)
+			(NP-OBJ (NN 沈寂))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 曾经 蓬勃 的 文化 活动 
+	  </arg>
+	  <arg n="1">
+	  沈寂 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 
+	  </arg>
+	  <arg n="m" f="adv">
+	  为什麽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 穿上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="clothes arg0 puts on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可以)
+		(VP (VV 穿上)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-2))
+					(NP-SBJ (NN 内))
+					(VP (VV 含)
+					    (NP-OBJ (ADJP (JJ 精密))
+						    (NP (NN 陶瓷)))))
+				    (DEC 的)))
+			    (NP (NN 远红外线))
+			    (NP (PU 「)
+				(IP-APP (NP-SBJ (-NONE- *PRO*))
+					(VP (VCD (VV 蓄热)
+						 (VV 保温))))
+				(NP (NN 衣))
+				(PU 」)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 内 含 精密 陶瓷 的 远红外线 「 *PRO* 蓄热 保温 衣 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

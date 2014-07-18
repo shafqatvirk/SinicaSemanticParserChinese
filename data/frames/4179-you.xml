@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 游 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location toured"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 她))
+	      (VP (VV 说)
+		  (PU ：)
+		  (IP-OBJ (PU “)
+			  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 游)
+				      (NP-PN-OBJ (NR 富士山))))
+			  (VP (ADVP (AD 并))
+			      (ADVP (AD 不))
+			      (VP (VV 意味)
+				  (AS 着)
+				  (NP-OBJ (NN 登山))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  富士山 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

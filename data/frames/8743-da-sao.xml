@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打扫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 cleans"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 家事))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 都))
+		  (VP (VV 会)
+		      (VP (VV 请)
+			  (NP-OBJ (NN 人))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 来)
+				  (VP (VV 打扫)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 切入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 cuts into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 直接))
+		(VP (VV 切入)
+		    (NP-OBJ (NN 重点))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	重点 
+	</arg>
+	<arg n="m" f="adv">
+	直接 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC (IP-SBJ (NP-SBJ (ADJP (JJ 大))
+				    (NP (NN 环境) ))
+			    (VP (VV 改变)))
+		    (VP (VV 加上)
+			(IP-OBJ (NP-SBJ (NN 市场) )
+				(VP (VA 成熟)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 正))
+		(VP (VC 是)
+		    (NP-PRD (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 切入)))
+			    (NP (NN 时机) ))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 耽误 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 一些))
+			  (NP (NN 青年)
+			      (NN 书道)
+			      (NN 朋友)))
+		  (VP (PP-TMP (P 在)
+			      (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (PN 他们))
+					      (VP (PP-TMP (-NONE- *T*-2))
+						  (ADVP (AD 正))
+						  (VP (VV 应)
+						      (VP (ADVP (AD 好好))
+							  (VP (VV 读书))))))
+					  (DEC 的)))
+				  (NP (NN 时候))))
+		      (PU ，)
+		      (VP (SB 被)
+			  (VP (VV 耽误)
+			      (AS 了))))) 
+	  </parse>
+	  <arg n="1">
+	  一些 青年 书道 朋友 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* 他们 *T*-2 正 应 好好 读书 的 时候 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

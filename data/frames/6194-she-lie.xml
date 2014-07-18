@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 涉猎 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 dabbles in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (P 对於)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 博大精深)))
+				(DEC 的)))
+			(NP-PN (NR 中国))
+			(NP (NN 文化))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (VP (ADVP (AD 也))
+		    (ADVP (AD 颇))
+		    (VP (VV 感)
+			(NP-OBJ (NN 兴趣))))
+		(PU ，)
+		(VP (VV 表示)
+		    (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (ADVP (AD 将))
+				(VP (VP (VV 花)
+					(NP-OBJ (NN 时间)))
+				    (VP (VV 涉猎)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (NN 参观者))
+		(VP (PP-DIR (P 对)
+			    (NP (NN 博物馆)
+				(NN 主题)))
+		    (VP (VV 涉猎)
+			(VP-EXT (ADVP (AD 甚))
+				(VP (VA 深)))))) 
+	</parse>
+	<arg n="0">
+	参观者 
+	</arg>
+	<arg n="1">
+	对 博物馆 主题 
+	</arg>
+	<arg n="m" f="adv">
+	甚 深 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

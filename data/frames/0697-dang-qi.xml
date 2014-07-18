@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 当起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="position holder"/>
+      <role argnum="1" argrole="position held"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 自己))
+	      (VP (VP (VV 当起)
+		      (NP-OBJ (NN 大盘商)))
+		  (VP-PRP (VV 赚取)
+			  (NP-OBJ (NN 差价))))) 
+	  </parse>
+	  <arg n="0">
+	  自己 
+	  </arg>
+	  <arg n="1">
+	  大盘商 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

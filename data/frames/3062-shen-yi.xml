@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 审议 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing examined and discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NP (DP (DT 全))
+				 (NP (NN 国)))
+			     (NP (NN 人大)
+				 (NN 常委会)))
+		  (VP (VV 审议)
+		      (NP-OBJ (NP-TTL (PU 《)
+				      (NN 森林法)
+				      (NN 修正案)
+				      (PU 》))
+			      (NP (NN 草案))))) 
+	  </parse>
+	  <arg n="0">
+	  全 国 人大 常委会 
+	  </arg>
+	  <arg n="1">
+	  《 森林法 修正案 》 草案 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TTL-SBJ (PU 《)
+			      (NP (NP-PN (NR 中国))
+				  (NP (NN 国籍))
+				  (PRN (PU （)
+				       (NP (NN 杂项)
+					   (NN 规定))
+				       (PU ）))
+				  (NP (NN 条例)
+				      (NN 草案)))
+			      (PU 》))
+		  (VP (VP (NP-TMP (NT 今日)
+				  (PRN (PU （)
+				       (NP (NT 星期二))
+				       (PU ）)))
+			  (ADVP (AD 已))
+			  (PP-LOC (P 在)
+				  (NP (NN 宪报)))
+			  (VP (VV 刊登)))
+		      (PU ，)
+		      (CC 并)
+		      (VP (ADVP (AD 将))
+			  (PP-TMP (P 於)
+				  (NP (NT 明日)
+				      (PRN (PU （)
+					   (NP (NT 星期三))
+					   (PU ）))))
+			  (VP (VV 提交)
+			      (NP-PN-OBJ (ADJP (JJ 临时))
+					 (NP (NN 立法会)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 审议))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

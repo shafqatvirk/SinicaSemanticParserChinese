@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 混和 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entities arg0 mixes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			 (VP (VP (VP (VV 用)
+				     (NP-OBJ (NN 绞肉)))
+				 (VP (VV 混和)
+				     (NP-OBJ (NP (CP (WHNP-3 (-NONE- *OP*))
+						     (CP (IP (NP-SBJ (-NONE- *pro*))
+							     (VP (VV 切碎)
+								 (NP-OBJ (-NONE- *T*-3))))
+							 (DEC 的)))
+						 (NP-APP (NN 葱)
+							 (PU 、)
+							 (NN 姜)
+							 (PU 、)
+							 (NN 蒜)
+							 (ETC 等))
+						 (NP (NN 材料)))
+					     (CC 及)
+					     (NP (DNP (NP (QP (CD 七)
+							      (CLP (M 分)))
+							  (NP (NN 熟)))
+						      (DEG 的))
+						 (NP (NN 面线))))))
+			     (VP (ADVP (AD 一起))
+				 (VP (VV 搅拌)))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 搓成)
+		(NP-OBJ (NN 丸子)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *pro* 切碎 *T*-3 的 葱 、 姜 、 蒜 等 材料 及 七 分 熟 的 面线 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 藏有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="possessor/hider"/>
+      <role argnum="1" argrole="thing hidden"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-SBJ (NP-SBJ (-NONE- *pro*))
+		    (VP (VP (VV 藏有)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(IP (NP-SBJ (-NONE- *pro*))
+					    (VP (VV 伪造)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (NP (NN 旅行)
+					(NN 证件))))
+			(CC 或)
+			(VP (ADVP (AD 非法))
+			    (VP (VV 更改)
+				(NP-OBJ (NN 旅行)
+					(NN 证件))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* *pro* 伪造 (*T*-1)->(旅行证件) 旅行 证件 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

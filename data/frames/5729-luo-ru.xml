@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 落入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 falls into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 如何))
+		      (VP (VV 避免)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 落入)
+				      (NP-OBJ (DNP (NP (NN 价格战))
+						   (DEG 的))
+					      (NP (NN 漩涡)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	价格战 的 漩涡 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

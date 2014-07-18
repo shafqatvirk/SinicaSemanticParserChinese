@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 期盼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 looks forward to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (ADVP (AD 刚))
+		    (VP (VV 送走)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (NN 举世))
+					    (VP (VV 期盼)
+						(NP-OBJ (-NONE- *T*-1))))
+					(DEC 的)))
+				(NP (ADJP (JJ 公元))
+				    (NP (NT 二○○○年)))
+				(NP (NT 元旦)))))) 
+	</parse>
+	<arg n="0">
+	举世 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 在野))
+		    (NP (NN 联盟)))
+	    (VP (ADVP (AD 则))
+		(VP (VV 期盼)
+		    (NP-PN-OBJ (NR 民进党))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 能)
+			    (VP (PU 「)
+				(VV 抛开)
+				(NP-OBJ (DNP (NP (NN 意识型态))
+					     (DEG 的))
+					(ADJP (JJ 大))
+					(NP (NN 石头)))
+				(PU 」))))))) 
+	</parse>
+	<arg n="0">
+	在野 联盟 
+	</arg>
+	<arg n="1">
+	民进党 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 能 「 抛开 意识型态 的 大 石头 」 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

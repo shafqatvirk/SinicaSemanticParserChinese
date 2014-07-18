@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 喜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing which causes arg0 to be happy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VA 喜)))
+			      (DEC 的))))
+	      (VP (VC 是)
+		  (IP-PRD (NP-SBJ (NN 外贸)
+				  (NN 总额))
+			  (VP (VP (ADVP (AD 仍))
+				  (VP (VV 保持)
+				      (AS 着)
+				      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-3))
+							  (VP (VA 强劲)))
+						      (DEC 的)))
+					      (NP (NN 增长)
+						  (NN 势头)))))
+			      (PU ，)
+			      (CC 并)
+			      (VP (QP-ADV (ADVP (AD 连续))
+					  (QP (OD 第三)
+					      (CLP (M 年))))
+				  (VP (VV 实现)
+				      (NP-OBJ (NN 顺差)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

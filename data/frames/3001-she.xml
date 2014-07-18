@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 涉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity involved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DP (DT 前)
+				   (QP (CD 些)
+				       (CLP (M 年))))
+			       (CP (WHNP-2 (-NONE- *OP*))
+				   (IP (NP-SBJ (-NONE- *T*-2))
+				       (VP (VV 涉)
+					   (NP-PN-OBJ (NR 港)))))
+			       (NP (NN 婚姻)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (NN 经济)
+		      (NN 因素))
+	      (VP (PP-LOC (P 在)
+			  (NP (NN 其中)))
+		  (VP (VV 起)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 相当))
+					      (VP (VA 重要))))
+				      (DEC 的)))
+			      (NP (NN 作用)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

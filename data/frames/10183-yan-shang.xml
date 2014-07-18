@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 腌上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 preserves in slat"/>
+    <role argnum="2" argrole="length of time arg1 is preserved in salt "/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 除了)
+		    (LCP (IP (NP-SBJ (NN 香料))
+			     (VP (VV 用)
+				 (DER 得)
+				 (VP-EXT (VV 讲究))))
+			 (LC 外)))
+	    (PU ，)
+	    (PP-PRP (P 为)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 使)
+			    (NP-OBJ (PN 其))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 入味))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 还))
+		(VP (VV 要)
+		    (VP (VP (VV 密封)
+			    (PP (P 在)
+				(LCP (NP (NN 水缸))
+				     (LC 里))))
+			(VP (VV 腌上)
+			    (QP-OBJ (CD 六)
+				    (CLP (M 天)))))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	六 天 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<arg n="m" f="prp">
+	为 *PRO* 使 其 *PRO* 入味 
+	</arg>
+	<arg n="m" f="adv">
+	除了 香料 用 得 讲究 外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

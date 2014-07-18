@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加上 </id>
+    <comment>Not a verb in MOST cases, perhaps a preposition</comment>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, the adder"/>
+      <role argnum="1" argrole="thing added"/>
+      <role argnum="2" argrole="thing added to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (PN 你))
+		(VP (ADVP (AD 随处))
+		    (VP (VV 可)
+			(VP (VV 见)
+			    (PU ——)
+			    (IP-OBJ (NP-SBJ (PN 我们))
+				    (VP (PP-BNF (P 为)
+						(NP (NN 大气)))
+					(VP (VV 加上)
+					    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							(CP (IP (NP-SBJ (-NONE- *T*-1))
+								(VP (ADVP (AD 不))
+								    (VP (VV 该)
+									(VP (VE 有)))))
+							    (DEC 的)))
+						    (NP (NN 色彩)))))))))
+		(PU …)
+		(PU …))) 
+	  </parse>
+	  <arg n="0">
+	  我们	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 不 该 有 的 色彩 
+	  </arg>
+	  <arg n="2">
+	  为 大气 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

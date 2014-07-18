@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 参观 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="visitor"/>
+    <role argnum="1" argrole="thing, place visited"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NT 今天)
+              (NT 上午))
+      (PU ，)
+      (NP-PN-SBJ (NR 安瓦尔))
+      (VP (VP (VV 出席)
+              (AS 了)
+              (NP-OBJ (NP-PN (NR 闵行))
+                      (NP (NP-PN (NR 中)
+                                 (NR 马))
+                          (ADJP (JJ 合资))
+                          (NP (NN 企业)))
+                      (NP (NN 奠基)
+                          (NN 仪式))))
+          (PU ，)
+          (VP (ADVP (AD 随后))
+              (VP (VV 参观)
+                  (AS 了)
+                  (NP-OBJ (NP-PN (NR 浦东)
+                                 (NR 金桥))
+                          (NP (NN 出口)
+                              (NN 加工区))))))
+      (PU 。)))
+	</parse>
+	<arg n="M" f="TMP"> 今天 上午 </arg>
+	<arg n="0"> 安瓦尔 </arg>
+	<arg n="m"> 随后 </arg>
+	<V/>
+	<arg n="1"> 浦东 金桥 出口 加工区 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-HLN (NP-SBJ (NN 图))
+          (VP (VC 为)
+              (IP-PRD (NP-TMP (NT １２日))
+                      (NP-PN-SBJ (NR 李鹏)
+                                 (NN 总理))
+                      (VP (PP-LOC (P 在)
+                                  (NP-PN (NR 马六甲州)))
+                          (VP (VV 参观)))))
+          (PU 。)))
+	</parse>
+	<arg n="M" f="TMP"> １２日 </arg>
+	<arg n="0"> 李鹏 总理 </arg>
+	<arg n="M" f="LOC"> 在 马六甲州 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

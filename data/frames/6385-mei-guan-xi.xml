@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 没关系 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 当时))
+	    (NP-SBJ (PN 他))
+	    (VP (PP-DIR (P 跟)
+			(NP (NN 父亲)))
+		(VP (VV 说)
+		    (PU ，)
+		    (IP-OBJ (IP (NP-SBJ (-NONE- *pro*))
+				(VP (VV 没关系)))
+			    (PU ，)
+			    (IP (NP-SBJ (PN 我))
+				(VP (VV 可以)
+				    (VP (NP-ADV (DP (DT 每)
+						    (CLP (M 个)))
+						(NP (NN 月)))
+					(VP (VV 给)
+					    (NP-IO (PN 你))
+					    (QP-OBJ (CD 一千)
+						    (CLP (M 元))))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

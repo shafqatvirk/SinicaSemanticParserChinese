@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 急于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (NN 外国)
+				  (NN 企业))
+			  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 尚))
+					  (VP (VE 无)
+					      (NP-OBJ (NN 条件)))))
+			      (VP (VV 采取)
+				  (NP-OBJ (DP (DT 这)
+					      (CLP (M 种)))
+					  (NP (NN 方式)))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 要)
+			  (VP (ADVP (AD 盲目))
+			      (VP (VV 急于)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VV 到)
+						  (NP-PN-OBJ (NR 纽约)))
+					      (VP-PRP (VV 上市))))))))
+		  (PU ，)
+		  (VP (ADVP (AD 否则))
+		      (ADVP (AD 难免))
+		      (VP (VV 受到)
+			  (NP-OBJ (NN 冷落)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 到 纽约 上市 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 外国 企业 *PRO* 尚 无 条件 采取 这 种 方式 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  盲目 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

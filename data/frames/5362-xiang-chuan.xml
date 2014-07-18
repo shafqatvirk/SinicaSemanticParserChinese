@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 相传 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing passed on"/>
+    <role argnum="1" argrole="entity arg0 is passed on by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 没有)
+		(IP-OBJ (NP-SBJ (DP (DT 什麽))
+				(NP (NN 人生)
+				    (NN 经验)))
+			(VP (VC 是)
+			    (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VP (VV 足以)
+							(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 傲人))))
+						    (PU 、)
+						    (VP (VV 可以)
+							(VP (NP-ADV (NN 世代))
+							    (VP (VV 相传))))))
+					    (DEC 的)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	世代 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="ipobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 相传)
+		(IP-OBJ (NP-TMP (NN 古代))
+			(NP-PN-SBJ (NR 蜀国))
+			(VP (VE 有)
+			    (NP-OBJ (NP-APP-PN (NR 蚕丛)
+					       (PU 、)
+					       (NR 柏灌)
+					       (PU 、)
+					       (NR 鱼凫)
+					       (PU 、)
+					       (NR 杜宇)
+					       (CC 和)
+					       (NR 开明)
+					       (ETC 等))
+				    (NP (NN 王朝))))))) 
+	</parse>
+	<arg n="0">
+	古代 蜀国 有 蚕丛 、 柏灌 、 鱼凫 、 杜宇 和 开明 等 王朝 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

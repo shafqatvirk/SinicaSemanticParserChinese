@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 毁掉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 ruins"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-OBJ (ADVP (AD 就))
+		  (PP-PRP (P 为了)
+			  (NP (CP (WHNP-5 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-5))
+					  (VP (ADVP (AD 不))
+					      (VP (VA 确定))))
+				      (DEC 的)))
+			      (QP (CD 两百)
+				  (CLP (M 天)))))
+		  (PU ，)
+		  (NP-SBJ (NN 人类))
+		  (VP (VV 要)
+		      (VP (VV 毁掉)
+			  (NP-OBJ (DNP (LCP (NP (NN 亘古))
+					    (LC 以来))
+				       (DEG 的))
+				  (QP (CD 无数))
+				  (NP (NN 生命)))))) 
+	</parse>
+	<arg n="0">
+	人类 
+	</arg>
+	<arg n="1">
+	亘古 以来 的 无数 生命 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *OP* *T*-5 不 确定 的 两百 天 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

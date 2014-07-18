@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采取 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="measure"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (PN 他))
+      (VP (VV 说)
+          (PU ，)
+          (IP-OBJ (NP-PN-SBJ (NR 天津市))
+                  (VP (NP-TMP (NT 去年))
+                      (VP (VP (VV 采取)
+                              (AS 了)
+                              (NP-OBJ (QP (CD 一)
+                                          (CLP (M 系列)))
+                                      (NP (NN 措施))))
+                          (VP (VV 改善)
+                              (NP-OBJ (NP (NN 台商))
+                                      (DNP (PP (P 在)
+                                               (NP-PN (NR 天津)))
+                                           (DEG 的))
+                                      (NP (NN 投资)
+                                          (NN 环境))))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 天津市 </arg>
+	<arg n="M" f="TMP"> 去年 </arg>
+	<V/>
+	<arg n="1"> 一 系列 措施 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

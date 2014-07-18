@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 悠游 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="swimmer"/>
+    <role argnum="1" argrole="place arg0 swims"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 地主))
+				(VP (ADVP (AD 无偿))
+				    (VP (VV 出借)
+					(NP-OBJ (-NONE- *T*-3)))))
+			    (DEC 的)))
+		    (NP (NN 泥泞地)))
+	    (PU ，)
+	    (VP (NP-TMP (NT 现在))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-4))
+					(NP-SBJ (NN 锦鲤))
+					(VP (VV 悠游)
+					    (NP-OBJ (NN 其中))))
+				    (DEC 的)))
+			    (NP (NN 莲花池)))))) 
+	</parse>
+	<arg n="0">
+	锦鲤 
+	</arg>
+	<arg n="1" f="psr">
+	*T*-4 
+	</arg>
+	<arg n="1" f="pse">
+	其中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迷恋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 is infatuated with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 历来))
+				      (VP (SB 被)
+					  (VP (VRD (VV 描写)
+						   (VV 成))
+					      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						      (VP (VP (VV 迷恋)
+							      (NP-PN-OBJ (NR 赵飞燕)))
+							  (VP (MSP 以致)
+							      (VP (ADVP (AD 终日))
+								  (VP (VV 荒淫))))))))))
+			      (DEC 的)))
+		      (NP-PN (NR 汉成帝)))
+	      (PU ，)
+	      (VP (ADVP (AD 则))
+		  (PP (P 在)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 日理万机)))
+			   (LC 之馀)))
+		  (PU ，)
+		  (ADVP (AD 亲自))
+		  (VP (VV 批阅)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VRD (VV 编校)
+						   (VV 完竣))
+					      (NP-OBJ (-NONE- *T*-2))))
+				      (DEC 的)))
+			      (NP (NN 书籍)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  赵飞燕 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

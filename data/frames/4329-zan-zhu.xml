@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赞助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="supporter"/>
+      <role argnum="1" argrole="entity supported"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (NP-PN (NR 信兴))
+			(NP (NN 阅读)
+			    (NN 奖励)
+			    (NN 计划)))
+	      (VP (VP (PP-LGS (P 由)
+			      (NP-PN=5 (NN 教育署)
+				       (NN 图书馆组)))
+		      (VP (VV 主办)
+			  (NP-OBJ (-NONE- *-1))))
+		  (PU ，)
+		  (VP (PP-LGS (NP-PN=5 (NP-PN (NR 信兴))
+				       (NP (NN 教育)
+					   (CC 及)
+					   (NN 慈善))
+				       (NP (NN 基金))))
+		      (VP (VV 赞助)
+			  (NP-OBJ (-NONE- *-1)))))) 
+	  </parse>
+	  <arg n="0">
+	  信兴 教育 及 慈善 基金 
+	  </arg>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

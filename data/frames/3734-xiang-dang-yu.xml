@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 相当于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is equivalent to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-PN-TPC (NR 中国))
+				  (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 专职))
+				      (VP (VV 从事)
+					  (NP-OBJ (NN 创新)
+						  (NN 药物)
+						  (NN 研究)))))
+			      (DEC 的)))
+		      (NP (NN 人员)))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 足)
+			  (NP-OBJ (QP (CD 三千))
+				  (NP (NN 人)))))
+		  (PU ，)
+		  (VP (ADVP (AD 仅))
+		      (VP (VV 相当于)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 美国)
+						  (NR 默克)
+						  (NN 药厂))
+					   (NP (NN 研究部)))
+				       (DEG 的))
+				  (ADJP (JJ 在编))
+				  (NP (NN 人员))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 中国 *T*-1 专职 从事 创新 药物 研究 的 人员 
+	  </arg>
+	  <arg n="1">
+	  美国 默克 药厂 研究部 的 在编 人员 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 相当于)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 收回)
+			      (AS 了)
+			      (NP-OBJ (DNP (NP (QP (CD 一)
+						   (CLP (M 期)))
+					       (NP (NN 工程)))
+					   (DEG 的))
+				      (ADJP (JJ 静态))
+				      (ADJP (JJ 总))
+				      (NP (NN 投资))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *pro* 收回 了 一 期 工程 的 静态 总 投资 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

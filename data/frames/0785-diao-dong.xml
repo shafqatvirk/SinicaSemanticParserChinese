@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调动 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="mobilizer"/>
+      <role argnum="1" argrole="thing, person mobilized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 各)
+			  (CLP (M 级)))
+		      (NP (NN 地方)
+			  (NN 党委)
+			  (PU 、)
+			  (NN 政府)
+			  (CC 和)
+			  (NN 军事)
+			  (NN 部门)))
+	      (PU ，)
+	      (VP (VV 要)
+		  (VP (ADVP (AD 充分))
+		      (VP (VV 调动)
+			  (NP-OBJ (DNP (NP (ADJP (JJ 广大))
+					   (NP (NP (NN 民兵))
+					       (CC 和)
+					       (NP (ADJP (JJ 预备役))
+						   (NP (NN 部队)
+						       (NN 官兵)))))
+				       (DEG 的))
+				  (NP (NN 积极性)
+				      (PU 、)
+				      (NN 创造性))))))) 
+	  </parse>
+	  <arg n="0">
+	  各 级 地方 党委 、 政府 和 军事 部门 
+	  </arg>
+	  <arg n="1">
+	  广大 民兵 和 预备役 部队 官兵 的 积极性 、 创造性 
+	  </arg>
+	  <arg n="m" f="adv">
+	  充分 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

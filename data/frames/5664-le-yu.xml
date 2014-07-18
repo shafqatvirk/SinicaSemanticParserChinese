@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 乐於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is happy to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 小孩))
+	    (VP (PP-PRP (P 为了)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 得到)
+				(NP-OBJ (NN 话机)))))
+		(PU ，)
+		(ADVP (AD 也))
+		(VP (VV 乐於)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (LB 被)
+				(CP-OBJ (WHNP-1 (-NONE- *OP*))
+					(IP (NP-SBJ (NN 父母亲))
+					    (VP (PU 「)
+						(VV 掌握)
+						(PU 」)
+						(NP-OBJ (-NONE- *T*-1)))))))))) 
+	</parse>
+	<arg n="0">
+	小孩 
+	</arg>
+	<arg n="1">
+	*PRO* 被 *OP* 父母亲 「 掌握 」 *T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 得到 话机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

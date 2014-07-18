@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增创 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing created"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 即将))
+					  (VP (VV 过去))))
+				  (DEC 的)))
+			  (NP (NT 一九九七年))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN-APP (NR 深圳)
+				 (PU 、)
+				 (NR 珠海)
+				 (PU 、)
+				 (NR 汕头)
+				 (PU 、)
+				 (NR 厦门)
+				 (PU 、)
+				 (NR 海南))
+		      (QP (CD 五))
+		      (ADJP (JJ 大))
+		      (NP (NN 经济)
+			  (NN 特区)))
+	      (VP (ADVP (AD 积极))
+		  (VP (VP (VP (VV 增创)
+			      (NP-OBJ (ADJP (JJ 新))
+				      (NP (NN 优势)))))
+		      (PU ，)
+		      (VP (VV 培育)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 新)))
+					  (DEC 的)))
+				  (NP (NN 经济)
+				      (NN 增长点))))))) 
+	  </parse>
+	  <arg n="0">
+	  深圳 、 珠海 、 汕头 、 厦门 、 海南 五 大 经济 特区 
+	  </arg>
+	  <arg n="1">
+	  新 优势 
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *OP* *T*-1 即将 过去 的 一九九七年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

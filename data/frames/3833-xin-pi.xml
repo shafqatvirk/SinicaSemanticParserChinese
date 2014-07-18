@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 新批 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing approved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (NP-TMP (NT 今年)
+		      (NT 上半年))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 市)))
+	      (VP (VV 新批)
+		  (NP-OBJ (ADJP (JJ 三资))
+			  (NP (NN 企业)))
+		  (QP-EXT (CD 七十七)
+			  (CLP (M 家))))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 市 
+	  </arg>
+	  <arg n="1">
+	  三资 企业 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  七十七 家 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 上半年 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 介绍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

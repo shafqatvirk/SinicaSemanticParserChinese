@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 点到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 touches on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国内)
+		      (NN 电子)
+		      (NN 媒体))
+	      (VP (VP (PP-DIR (P 对)
+			      (NP (DP (DT 这)
+				      (CLP (M 条)))
+				  (ADJP (JJ 重大))
+				  (NP (NN 新闻))))
+		      (ADVP (AD 却))
+		      (VP (VV 点到)
+			  (ADVP (AD 而已))))
+		  (PU ，)
+		  (VP (ADVP (AD 鲜))
+		      (VP (VV 见)
+			  (NP-OBJ (ADJP (JJ 深度))
+				  (NP (NN 报导))))))) 
+	  </parse>
+	  <arg n="0">
+	  国内 电子 媒体 
+	  </arg>
+	  <arg n="1">
+	  对 这 条 重大 新闻 
+	  </arg>
+	  <arg n="m" f="adv">
+	  而已 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

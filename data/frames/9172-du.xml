@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 堵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 waits for and stops"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 要)
+			  (VP (VV 采访)
+			      (NP-OBJ (PN 他)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 只))
+		  (VP (VV 能)
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (NN 党部))
+				       (LCP (NP (NN 门))
+					    (LC 口))))
+			  (VP (VV 堵)
+			      (NP-OBJ (DNP (NP (PN 他))
+					   (DEG 的))
+				      (NP (NN 车)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  他 的 车 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 党部 门 口 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 要 采访 他 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

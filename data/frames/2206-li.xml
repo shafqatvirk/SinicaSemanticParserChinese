@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity set up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 立)
+		      (NP-OBJ (NN 宪)))
+		  (VP (VV 维新)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  宪 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-3 (DNP (NP-PN (NR 澳门))
+			     (DEG 的))
+			(QP (CD 大量))
+			(NP (NN 法律)))
+	      (VP (VC 是)
+		  (UCP (NP-PRD (DNP (NP (NP-PN (NR 葡萄牙))
+					(NP (NN 法律)))
+				    (DEG 的))
+			       (NP (NN 延伸)))
+		       (CC 或)
+		       (VP (PP-LGS (P 由)
+				   (NP (NP-PN (NR 葡萄牙))
+				       (NP (NN 政府))))
+			   (PP-BNF (P 为)
+				   (NP-PN (NR 澳门)))
+			   (VP (MSP 所)
+			       (VP (VV 立)
+				   (NP-OBJ (-NONE- *-3)))))))) 
+	  </parse>
+	  <arg n="0">
+	  由 葡萄牙 政府 	  	  
+	  </arg>
+	  <arg n="1">
+	  *-3 	  	  
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 澳门 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 causes to stand"/>
+      <role argnum="2" argrole="place arg1 stands"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 瓶))
+		       (LC 边))
+	      (VP (VV 立)
+		  (AS 著)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PU 『)
+					  (VP (VV 壮)
+					      (NP-OBJ (NN 阳)))
+					  (VP (VV 补)
+					      (NP-OBJ (NN 肾)))
+					  (PU 』)))
+				  (DEC 的))
+			  (NP (NN 字牌))))) 
+	  </parse>
+	  <arg n="2">
+	  瓶 边 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 『 壮 阳 补 肾 』 的 字牌 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

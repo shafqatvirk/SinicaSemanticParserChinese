@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 前去 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity going"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 其中))
+	    (VP (VP (VV 不乏)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 重复))
+					    (VP (VV 造访)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的)))))
+		(PU ，)
+		(VP (ADVP (AD 更))
+		    (VP (VE 有)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (ADVP (AD 主动))
+						(VP (VV 邀请)
+						    (NP-PN-OBJ (NR 谢从宾))
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (VV 前去)
+							    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								    (VP (VV 筛检))))))))
+					(DEC 的)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

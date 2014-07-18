@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 轰炸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing bombed"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 约旦)
+			     (CC 和)
+			     (NR 利比亚))
+		  (VP (VV 反对)
+		      (NP-PN-OBJ (NR 美国))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 轰炸)
+			      (NP-OBJ (NP-PN (NR 伊拉克))
+				      (NP (NN 北部))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  伊拉克 北部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

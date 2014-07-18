@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 规定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="law, authority"/>
+      <role argnum="1" argrole="thing specified"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 法律))
+	      (VP (ADVP (AD 详细))
+		  (VP (VV 规定)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 证券)
+				       (NN 发行))
+				   (DEG 的))
+			      (NP (NN 核准)
+				  (PU 、)
+				  (NN 审批))
+			      (NP (NN 程序)))))) 
+	  </parse>
+	  <arg n="0">
+	  法律 
+	  </arg>
+	  <arg n="1">
+	  证券 发行 的 核准 、 审批 程序 
+	  </arg>
+	  <arg n="m" f="adv">
+	  详细 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (ADJP (JJ 现行))
+			   (DEG 的))
+		      (NP-TTL (PU 《)
+			      (NN 森林法)
+			      (PU 》)))
+	      (VP (VV 规定)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ-1 (DNP (NP (NN 林地))
+					 (DEG 的))
+				    (NP (NN 所有权)
+					(CC 和)
+					(NN 使用权))
+				    (NP (NN 证书)))
+			  (VP (PP-LGS (P 由)
+				      (NP (LCP (NP (NN 县级))
+					       (LC 以上))
+					  (NP (NN 地方)
+					      (NN 人民)
+					      (NN 政府))))
+			      (VP (VV 核发)
+				  (NP-OBJ (-NONE- *-1))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  现行 的 《 森林法 》 
+	  </arg>
+	  <arg n="1">
+	  林地 的 所有权 和 使用权 证书 由 县级 以上 地方 人民 政府 核发 *-1 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

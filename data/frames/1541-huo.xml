@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="time/place arg0 lives"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 那些))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 知道)
+					  (NP-OBJ (PN 我)))))
+			      (DEC 的)))
+		      (NP (NN 人)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 说)
+		      (IP-OBJ (NP-SBJ (PN 我))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 会)
+				      (VP (VV 活)
+					  (AS 着)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VRD (VV 爬)
+							   (VV 起来))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  我 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-2 (NP-SBJ (PN 他们))
+		    (VP (VP (ADVP (AD 还))
+			    (VP (VV 活)
+				(PP (P 在)
+				    (NP (CP-APP (IP (PU 『)
+						    (IP-SBJ (NP-SBJ (NN 儿女))
+							    (VP (VV 奉养)
+								(NP-OBJ (NN 老人家))))
+						    (VP (ADVP (AD 也))
+							(ADVP (AD 不过))
+							(VP (VV 多)
+							    (NP-OBJ (QP (CD 一)
+									(CLP (M 双)))
+								    (NP (NN 筷子)))))
+						    (PU 』))
+						(DEC 的))
+					(NP (NN 年代)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  在 『 儿女 奉养 老人家 也 不过 多 一 双 筷子 』 的 年代 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

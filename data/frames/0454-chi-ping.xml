@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 持平 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing compared with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 粮食)
+		      (NN 产量))
+	      (VP (PP (P 与)
+		      (NP (NT 去年)))
+		  (ADVP (AD 基本))
+		  (VP (VV 持平)))) 
+	  </parse>
+	  <arg n="0">
+	  粮食 产量 
+	  </arg>
+	  <arg n="1">
+	  与 去年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  基本 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

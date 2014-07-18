@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自编 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 writes/compiles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 所以))
+	    (NP-SBJ (PN 她))
+	    (VP (VP (VV 让)
+		    (NP-OBJ (NN 学生))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 自编)
+			    (PU 、)
+			    (VV 自导)
+			    (PU 、)
+			    (VV 自演))))
+		(PU ，)
+		(VP (PP-TMP (P 当)
+			    (LCP (IP (NP-SBJ (NN 学生))
+				     (VP (VV 遇到)
+					 (NP-OBJ (NN 瓶颈))))
+				 (LC 时)))
+		    (PU ，)
+		    (ADVP (AD 才))
+		    (ADVP (AD 从旁))
+		    (VP (VV 给)
+			(NP-OBJ (NN 暗示)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

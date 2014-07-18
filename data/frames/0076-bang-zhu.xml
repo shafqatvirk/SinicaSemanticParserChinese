@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 帮助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="party helped"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  大家 应 帮助 没有 饭 吃 的 小孩。 
+	  </parse>
+	  <arg n="0">
+	  大家 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  没有 饭 吃 的 小孩 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="party helped"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国际)
+		      (NN 社会))
+	      (VP (VV 应)
+		  (VP (VV 本)
+		      (AS 着)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VCD (VV 发展)
+						   (VV 合作))))
+				      (DEC 的))
+			      (NP (NN 精神))))
+		  (PU ，)
+		  (VP (VV 采取)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VCD (VA 切实)
+						   (VA 可行))))
+				      (DEC 的)))
+			      (NP (NN 措施))))
+		  (PU ，)
+		  (VP (VV 帮助)
+		      (NP-OBJ (DP (DT 这些))
+			      (ADJP (JJ 发展中))
+			      (NP (NN 国家)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 解决)
+			      (NP-OBJ (DP (DT 这些))
+				      (NP (NN 问题)))))))) 
+	  </parse>
+	  <arg n="0">
+	  国际 社会 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  这些 发展中 国家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 解决 这些 问题 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 开发)
+			 (NN 计划署))
+	      (VP (LCP-TMP (QP (CD 几)
+			       (CLP (M 年)))
+			   (LC 来))
+		  (VP (VP (DVP (VP (VV 一如既往))
+			       (DEV 地))
+			  (VP (VV 支持)
+			      (NP-OBJ (NP-PN (NR 图们江))
+				      (NP (NN 开发)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 帮助)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 搞)
+				      (NP-OBJ (DNP (NP (NN 开发)
+						       (NN 项目))
+						   (DEG 的))
+					      (NP (NN 可行性)
+						  (NN 研究))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  开发 计划署 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *PRO* 搞 开发 项目 的 可行性 研究 
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

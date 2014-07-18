@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 假造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="forger"/>
+      <role argnum="1" argrole="thing forged"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 直销商))
+	      (VP (VP (ADVP (AD 不当))
+		      (VP (VV 囤货)))
+		  (VP (MSP 来)
+		      (VP (VV 假造)
+			  (NP-OBJ (ADJP (PU 「)
+					(JJ 灌水)
+					(PU 」))
+				  (NP (NN 业绩))))))) 
+	  </parse>
+	  <arg n="0">
+	  直销商 
+	  </arg>
+	  <arg n="1">
+	  「 灌水 」 业绩 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

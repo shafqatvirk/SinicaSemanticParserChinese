@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 名叫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity named"/>
+      <role argnum="1" argrole="name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 家)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 名叫)
+				      (NP-PN-OBJ (NP-PN (NR 成都))
+						 (NP (NN 通用)
+						     (NN 医疗)
+						     (NN 设备))
+						 (PRN (PU （)
+						      (NP (NN 西南))
+						      (PU ）))
+						 (ADJP (JJ 有限))
+						 (NP (NN 公司)))))
+			      (DEC 的)))
+		      (ADJP (JJ 新))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 主要))
+		  (VP (VV 从事)
+		      (UCP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VP (VV 开发)
+					   (NP-OBJ (-NONE- *RNR*-2)))
+				       (PU 、)
+				       (VP (VV 生产)
+					   (NP-OBJ (-NONE- *RNR*-2)))
+				       (PU 、)
+				       (VP (VV 制造)
+					   (NP-OBJ (-NONE- *RNR*-2)))
+				       (PU 、)
+				       (VP (VCD (VV 组装)
+						(VV 销售))
+					   (NP-OBJ-2 (ADJP (JJ 医用))
+						     (ADJP (JJ 诊断用))
+						     (NP (NN Ｘ光)
+							 (NN 设备))))))
+			       (PU ，)
+			       (CC 以及)
+			       (NP (NN 进出口)
+				   (NN 贸易)
+				   (PU 、)
+				   (NN 咨询)
+				   (CC 和)
+				   (NN 技术)
+				   (NN 合作))
+			       (ETC 等))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  成都 通用 医疗 设备 （ 西南 ） 有限 公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

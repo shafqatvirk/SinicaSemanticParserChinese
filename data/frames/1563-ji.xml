@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 击 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NP (DP (DT 本))
+					    (NP (NN 世纪)))
+					(QP (ADJP (JJ 最后))
+					    (QP (CD 一)
+						(CLP (M 届))))
+					(NP (NN 世界杯赛)))
+				    (DEG 的))
+			       (NP (NN 冠军)
+				   (NN 争夺战)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (NN 巴西人))
+				  (VP (VV 试图)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 蝉联)
+						  (NP-OBJ (NN 冠军))))))
+			      (DEC 的))
+		      (NP (NN 美梦)))
+	      (VP (LB 被)
+		  (IP-OBJ (NP-SBJ (NP-APP (NN 东道主))
+				  (NP-PN (NR 法国队)))
+			  (VP (VV 击)
+			      (DER 得)
+			      (VP-EXT (VA 粉碎)))))) 
+	  </parse>
+	  <arg n="0">
+	  东道主 法国队 	  
+	  </arg>
+	  <arg n="1">
+	  巴西人 试图 *PRO* 蝉联 冠军 的 美梦 	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  粉碎 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 本 世纪 最后 一 届 世界杯赛 的 冠军 争夺战 中 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 花费 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="spender"/>
+      <role argnum="1" argrole="thing spent"/>
+      <role argnum="2" argrole="spending on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (CP-Q (IP (IP-SBJ (NP-SBJ (-NONE- *pro*))
+			    (VP (VP (VV 花费)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (ADVP (AD 这么))
+							    (VP (VA 大))))
+						    (DEC 的)))
+					    (NP (NN 代价))))
+				(PU ，)
+				(VP-PRP (VV 聘请)
+					(NP-OBJ (DP (DT 这些))
+						(NP (NN 咨询)
+						    (NN 专家))))))
+		    (VP (VV 值得)))
+		(SP 吗)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 这么 大 的 代价 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 领舞 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing in which arg0 leads dancing"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 巫师))
+	      (VP (VV 领舞)
+		  (NP-OBJ (NN 彝族)
+			  (NN 祭礼)))) 
+	  </parse>
+	  <arg n="0">
+	  巫师 
+	  </arg>
+	  <arg n="1">
+	  彝族 祭礼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

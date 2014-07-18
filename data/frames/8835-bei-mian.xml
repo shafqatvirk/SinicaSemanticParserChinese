@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 北面 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person facing north"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (NP-APP (ADJP (JJ 小))
+				(NP (NN 皇帝)))
+			(NP-PN (NR 孺子婴)))
+	      (VP (VP (PP-LGS (P 由)
+			      (NP (NN 师傅)))
+		      (VP (VV 搀扶)
+			  (NP-OBJ (-NONE- *-1))))
+		  (PU ，)
+		  (VP (VV 下)
+		      (AS 了)
+		      (NP-OBJ (NN 殿)))
+		  (PU ，)
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 北面)))
+		      (PP-DIR (P 向)
+			      (NP-PN (NR 王莽)))
+		      (VP (VV 称臣))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 退避 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 retreats to avoid"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-TPC (-NONE- *T*-2))
+			(NP-SBJ (NN 万物))
+			(VP (VV 退避)))
+		    (DEC 的)))
+	    (NP (NN 恶地))) 
+	</parse>
+	<arg n="0">
+	万物 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

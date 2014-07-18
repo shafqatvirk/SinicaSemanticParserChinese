@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 印象深刻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity which leaves deep impression on arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 江丙坤))
+	    (VP (PP-DIR (P 对)
+			(NP (DNP (NP (NN 台商))
+				 (DEG 的))
+			    (NP (NN 灵活)
+				(CC 及)
+				(NN 拚斗)
+				(NN 特质))))
+		(PU ，)
+		(VP (VV 印象深刻)))) 
+	</parse>
+	<arg n="0">
+	江丙坤 
+	</arg>
+	<arg n="1">
+	对 台商 的 灵活 及 拚斗 特质 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (ADJP (JJ 小))
+			(NP (NN 岛)))
+		    (NP (NN 原住民)))
+	    (VP (PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 察看)
+				     (NP-OBJ (NN 陶土)
+					     (NN 品质))))
+			     (LC 时)))
+		(PU ，)
+		(ADVP (AD 更))
+		(VP (VV 让)
+		    (NP-OBJ (NN 人))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VA 印象深刻)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

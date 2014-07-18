@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 寄出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="sender"/>
+      <role argnum="1" argrole="thing sent out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (NN 款))
+			  (VP (VV 到)))
+		  (ADVP (AD 即))
+		  (ADVP (AD 挂号))
+		  (VP (VV 寄出)))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  款 到 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  即 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  挂号 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

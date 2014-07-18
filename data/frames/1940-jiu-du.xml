@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 就读 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 goes to school"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 当时))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (VP (VP (PP-DIR (P 从)
+				  (NP-PN (NR 日本)))
+			  (VP (VV 转)
+			      (NP-OBJ (NN 道))))
+		      (VP (VV 来)
+			  (NP-OBJ (NN 中医)
+				  (NN 学院)))
+		      (VP (VV 就读)))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 回)
+				       (NP-PN-OBJ (NR 台))))
+			       (LC 后))
+		      (ADVP (AD 也))
+		      (ADVP (AD 只))
+		      (VP (VV 能)
+			  (VP (VV 说)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 去)
+					      (NP-PN-OBJ (NR 日本)))
+					  (VP (VV 留学))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

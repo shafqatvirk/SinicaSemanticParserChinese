@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 补习 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 takes extra class to learn"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 张))
+		    (NP (NN 妈妈)))
+	    (VP (ADVP (AD 只好))
+		(VP (VV 让)
+		    (NP-OBJ (NN 儿子))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 到)
+				(NP-OBJ (DNP (NP (NN 住家)
+						 (NN 附近))
+					     (DEG 的))
+					(NP (NN 补习)
+					    (NN 班))))
+			    (VP (VV 补习))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 处 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 证券)
+			  (NN 市场)))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 仍))
+		  (VP (VV 处)
+		      (PP (P 于)
+			  (NP (NN 初创)
+			      (NN 阶段)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 证券 市场 	  	  
+	  </arg>
+	  <arg n="1">
+	  于 初创 阶段 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  	  
+	  </arg>
+	  <arg n="adv">
+	  仍 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="punishment arg0 sentences arg1"/>
+      <role argnum="3" argrole="crime arg1 receives arg2 for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (ADVP (AD 因而))
+				  (VP (VV 致)
+				      (NP-OBJ (NN 人))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-PRD (P 於)
+						      (NP (NN 死)))))))))
+		      (NP (NN 者)))
+	      (PU ，)
+	      (VP (ADVP (AD 最高))
+		  (ADVP (AD 将))
+		  (VP (VV 处)
+		      (NP-OBJ (ADJP (JJ 无期))
+			      (NP (NN 徒刑)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 因而 致 人 *PRO* 於 死 者 	  
+	  </arg>
+	  <arg n="2">
+	  无期 徒刑 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  最高 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 奖励 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 rewards arg1 for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VV 修缮)
+		    (NP-OBJ (NN 族谱)))
+		(PU ，)
+		(VP (VV 设立)
+		    (NP-OBJ (NN 私塾)))
+		(PU ，)
+		(VP (VV 奖励)
+		    (NP-OBJ (NN 子弟))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 向学)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	子弟 
+	</arg>
+	<arg n="2">
+	*PRO* 向学 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

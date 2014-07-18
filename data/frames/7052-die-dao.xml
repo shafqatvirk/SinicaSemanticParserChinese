@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跌到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="level arg0 falls to"/>
+    <role argnum="2" argrole="original level of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 之後))
+	    (DP-SBJ (DT 每)
+		    (CLP (M 股)))
+	    (VP (VV 跌到)
+		(LCP-OBJ (QP (CD 十一)
+			     (CLP (M 元)))
+			 (LC 左右)))) 
+	</parse>
+	<arg n="0">
+	每 股 
+	</arg>
+	<arg n="1">
+	十一 元 左右 
+	</arg>
+	<arg n="m" f="adv">
+	之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

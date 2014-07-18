@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亮灯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="place where lights are on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 台商))
+				  (VP (NP-MNR (-NONE- *T*-3))
+				      (VP (VV 开车))))
+			      (DEC 的)))
+		      (NP (NN 猛劲)))
+	      (PU ，)
+	      (VP (PP (P 与)
+		      (NP (CP-APP (IP (NP-SBJ (CP (WHNP-6 (-NONE- *OP*))
+						  (IP (NP-SBJ (-NONE- *T*-6))
+						      (VP (ADVP (AD 随处))
+							  (VP (VV 可)
+							      (VP (VV 见))))))
+					      (CP (WHNP-4 (-NONE- *OP*))
+						  (IP (NP-SBJ (-NONE- *T*-4))
+						      (VP (VV 亮灯))))
+					      (NP (NN 厂房)))
+				      (VP (VV 加班)))
+				  (DEC 的))
+			  (NP (NN 热度))))
+		  (ADVP (AD 恰))
+		  (VP (VV 成)
+		      (NP-OBJ (NN 正比))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-4 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

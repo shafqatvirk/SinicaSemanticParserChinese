@@ -1,0 +1,157 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 统计 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity whose data collected"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (PP-MNR (P 按)
+			  (NP (ADJP (JJ 现行))
+			      (ADJP (JJ 原))
+			      (NP (NN 产地))))
+		  (VP (VV 统计)
+		      (NP-OBJ (NN 进出口)
+			      (NN 贸易))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  进出口 贸易 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 现行 原 产地 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 建造)
+			  (NN 工程))
+		      (NP (NN 完成量)))
+	      (VP (PP-MNR (P 按)
+			  (NP (NN 季)))
+		  (VP (VCD (VV 统计)
+			   (VV 调查))))) 
+	  </parse>
+	  <arg n="1">
+	  建造 工程 完成量 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 季 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-MNR (P 据)
+		  (IP (NP-PN-SBJ (NN 保税区)
+				 (NN 管委会))
+		      (VP (VV 统计)))) 
+	  </parse>
+	  <arg n="0">
+	  保税区 管委会 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 各)
+			  (CLP (M 种)))
+		      (NP (NN 数据)))
+	      (VP (ADVP (AD 尚))
+		  (ADVP (AD 未))
+		  (ADVP (AD 最后))
+		  (VP (VRD (VV 统计)
+			   (VV 出来))))) 
+	  </parse>
+	  <arg n="1">
+	  各 种 数据 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  最后 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  尚 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing found through data collection"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 公平会))
+	      (VP (VV 统计)
+		  (PU ，)
+		  (IP-OBJ (IP (NP-TMP (NT 去年))
+			      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 实际上))
+						      (VP (VV 有)
+							  (VP (VV 领取)
+							      (NP-OBJ (NN 奖金))))))
+					      (DEC 的)))
+				      (NP (NN 传销商)))
+			      (VP (NP-PRD (ADVP (AD 共计))
+					  (NP (QP (CD 五十八万多))
+					      (NP (NN 人))))))
+			  (PU ，)
+			  (IP (ADVP (AD 平均))
+			      (NP-SBJ (QP (CD 一)
+					  (CLP (M 个)))
+				      (NP (NN 人)))
+			      (VP (QP-ADV (CD 一)
+					  (CLP (M 年)))
+				  (VP (VV 领取)
+				      (QP-OBJ (CD 三万五千)
+					      (CLP (M 元))))))))) 
+	  </parse>
+	  <arg n="0">
+	  公平会 	  
+	  </arg>
+	  <arg n="1">
+	  去年 *OP* *T*-1 实际上 有 领取 奖金 的 传销商 共计 五十八万多 人 ， 平均 一 个 人 一 年 领取 三万五千 元 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 力克 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 马尔默队))
+	      (VP (VP (PP-MNR (P 以)
+			      (QP (CD ５)
+				  (PU ：)
+				  (CD ３)))
+		      (VP (VV 力克)
+			  (NP-PN-OBJ (NR 埃斯勒夫队))))
+		  (PU ，)
+		  (VP (VV 夺得)
+		      (NP-OBJ (NN 冠军))))) 
+	  </parse>
+	  <arg n="0">
+	  马尔默队 
+	  </arg>
+	  <arg n="1">
+	  埃斯勒夫队 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 ５ ： ３ 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

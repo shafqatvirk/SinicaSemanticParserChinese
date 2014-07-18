@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打伤 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="experiencer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (LCP-TMP (NP (NT 近年))
+			   (LC 来))
+		  (NP-SBJ (NP-PN (NR 台湾))
+			  (NP (NN 军方)))
+		  (VP (VP (VCD (VV 打死)
+			       (VV 打伤))
+			  (NP-OBJ (NN 大陆)
+				  (NN 沿海)
+				  (NN 渔民)))
+		      (PU 、)
+		      (VP (VV 造成)
+			  (NP-OBJ (ADJP (JJ 严重))
+				  (NP (NN 生命)
+				      (NN 财产)
+				      (NN 损失)))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 军方 
+	  </arg>
+	  <arg n="1">
+	  大陆 沿海 渔民 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

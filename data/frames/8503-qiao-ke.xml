@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 翘课 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person playing truancy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DP (DT 那些))
+		  (CP (WHNP-61 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-61))
+			      (VP (VV 翘课)))
+			  (DEC 的)))
+		  (NP (NN 同学))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-61 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

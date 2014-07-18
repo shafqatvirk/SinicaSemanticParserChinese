@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 补上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="things that need to be added"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-OBJ (NP-SBJ (DP (DT 这些))
+			    (NP (NN 朋友)))
+		    (VP (VV 能够)
+			(VP (PP-LOC (P 在)
+				    (NP (DP (DT 这)
+					    (QP (CD 一)))
+					(NP (NN 方面))))
+			    (ADVP (AD 赶紧))
+			    (VP (VV 补上)))))) 
+	  </parse>
+	  <arg n="0">
+	  这些 朋友 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 这 一 方面 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  赶紧 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

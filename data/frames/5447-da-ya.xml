@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打压 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 puts pressure on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不))
+		(VP (VV 可能)
+		    (VP (VV 打压)
+			(NP-OBJ (DP (DT 所有))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 支持)
+						(NP-OBJ (PN 我们))))
+					(DEC 的)))
+				(NP (NN 人) )))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	所有 *OP* *T*-1 支持 我们 的 人 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-TPC (NN 外交))
+		    (NP-SBJ (-NONE- *PRO*))
+		    (VP (VPT (VV 作)
+			     (AD 不)
+			     (VA 好))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 不))
+		(VP (VV 能)
+		    (VP (PP-MNR (P 以)
+				(IP (NP-PN-SBJ (NR 中共))
+				    (VP (VV 打压))))
+			(VP (VV 为)
+			    (NP-OBJ (NN 藉口))))))) 
+	</parse>
+	<arg n="0">
+	中共 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

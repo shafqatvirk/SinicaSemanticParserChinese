@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跳到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="jumper"/>
+    <role argnum="1" argrole="place arg0 jumps onto"/>
+    <role argnum="2" argrole="place arg0 jumps from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (IP-SBJ (NP-SBJ (NN 电视)
+				(NN 时段))
+			(VP (VV 增多)))
+		(VP (VP (VV 造就)
+			(AS 了)
+			(NP-OBJ (DNP (NP (NN 记者))
+				     (DEG 的))
+				(NP (NN 就业)
+				    (NN 机会))))
+		    (PU ，)
+		    (VP (VV 让)
+			(NP-OBJ (PN 他们))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (ADVP (AD 频频))
+				    (VP (VV 转换)
+					(NP-OBJ (NN 跑道))))
+				(PU ，)
+				(VP (PP-DIR (P 从)
+					    (NP (NN 报社)))
+				    (VP (VV 跳到)
+					(NP-OBJ (NN 电视))))
+				(PU 、)
+				(VP (PP-DIR (P 从)
+					    (NP (ADJP (JJ 无线))
+						(NP (NN 电视))))
+				    (VP (VV 转到)
+					(NP-OBJ (ADJP (JJ 有线))
+						(NP (NN 电视)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	电视 
+	</arg>
+	<arg n="2">
+	从 报社 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

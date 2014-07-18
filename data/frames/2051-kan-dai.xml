@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity regarded"/>
+      <role argnum="2" argrole="how"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 要)
+		      (VP (VP (PP-DIR (P 从)
+				      (NP (NN 战略)
+					  (NN 高度)))
+			      (VP (VV 看待)
+				  (NP-OBJ (NN 学习))))
+			  (PU ，)
+			  (VP (PP-MNR (P 以)
+				      (NP (DNP (ADJP (JJ 高度))
+					       (DEG 的))
+					  (NP (NN 历史)
+					      (NN 使命感)
+					      (CC 和)
+					      (NN 现实)
+					      (NN 紧迫感))))
+			      (VP (MSP 来)
+				  (VP (VV 强化)
+				      (NP-OBJ (NN 学习)))))
+			  (PU ，)
+			  (VP (VP (ADVP (AD 密切))
+				  (VP (VV 联系)
+				      (NP-OBJ (NP (ADJP (JJ 新))
+						  (NP (NN 形势)))
+					      (NP (ADJP (JJ 新))
+						  (NP (NN 任务)))
+					      (NP (ADJP (JJ 新))
+						  (NP (NN 实践))))))
+			      (VP (MSP 来)
+				  (VP (VV 开展)
+				      (NP-OBJ (NN 学习)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  学习 
+	  </arg>
+	  <arg n="2">
+	  从 战略 高度 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

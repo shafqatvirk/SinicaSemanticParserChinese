@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打消 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 现在))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 越来越))
+				      (VP (VA 多))))
+			      (DEC 的)))
+		      (NP (NN 人)))
+	      (VP (VV 打消)
+		  (AS 了)
+		  (NP-OBJ (DP (DT 这)
+			      (CLP (M 种)))
+			  (NP (NN 疑虑))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 越来越 多 的 人 
+	  </arg>
+	  <arg n="1">
+	  这 种 疑虑 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 借鉴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing used for guidance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (NP-SBJ (NN 国家)
+		      (NN 税务)
+		      (NN 部门))
+	      (VP (VP (VV 参照)
+		      (NP-OBJ (NN 国际)
+			      (NN 惯例)))
+		  (PU ，)
+		  (VP (VV 借鉴)
+		      (NP-OBJ (DNP (NP (LCP (NP (NN 世界))
+					    (LC 上))
+				       (QP (CD 一些))
+				       (ADJP (JJ 主要))
+				       (NP (NN 产油国)))
+				   (DEG 的))
+			      (NP (NN 经验)))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 税务 部门 
+	  </arg>
+	  <arg n="1">
+	  世界 上 一些 主要 产油国 的 经验 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

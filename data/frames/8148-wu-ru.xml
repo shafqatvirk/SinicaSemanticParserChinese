@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 误入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 enters by mistake"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 让)
+			  (NP-OBJ (NP (NN 孩子))
+				  (NP (PN 自己)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 选择)))))
+	      (PU ，)
+	      (NP-SBJ (NN 孩子))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (ADVP (AD 因此))
+			  (ADVP (AD 就))
+			  (VP (VV 误入)
+			      (NP-OBJ (NN 歧途))))))) 
+	  </parse>
+	  <arg n="0">
+	  孩子 
+	  </arg>
+	  <arg n="1">
+	  歧途 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 让 孩子 自己 *PRO* 选择 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

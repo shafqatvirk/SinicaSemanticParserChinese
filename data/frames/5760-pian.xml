@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 骗 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 deceives"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (QP (CD 很多))
+			(NP (NN 父母)))
+		(VP (PP-TMP (P 在)
+			    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 赞美)
+					 (NP-OBJ (NN 孩子))))
+				 (LC 时)))
+		    (VP (VP (ADVP (AD 并))
+			    (VP (VV 没有)
+				(VP (DVP (VP (VA 明确))
+					 (DEV 的))
+				    (VP (VV 告诉)
+					(NP-IO (NN 孩子))
+					(IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+						  (VP (ADVP-WH (AD 为什麽))
+						      (VP (VV 赞美)
+							  (NP-OBJ (PN 他)))))))))
+			(PU ，)
+			(VP (VV 好像)
+			    (CP-OBJ (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (ADVP (AD 在))
+						(VP (PU 「)
+						    (VV 骗)
+						    (PU 」)
+						    (NP-OBJ (NN 孩子))))
+					    (VP (VA 似))))
+				    (SP 的)))
+			(PU ，)
+			(VP (ADVP (AD 并))
+			    (VP (VV 没有)
+				(VP (DVP (VP (VA 真正))
+					 (DEV 的))
+				    (VP (VV 尊重)
+					(NP-OBJ (NN 孩子))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	孩子 
+	</arg>
+	<arg n="m" f="adv">
+	在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 类似)
+				(IP-OBJ (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (PP-LOC (P 在)
+							(LCP (NP (NN 网路))
+							     (LC 上)))
+						(VP (VV 卖)
+						    (NP-OBJ (NN 大补帖)))))
+					(PU ，)
+					(IP (ADVP (AD 结果))
+					    (NP-SBJ (-NONE- *pro*))
+					    (VP (VV 买到)
+						(NP-OBJ (ADJP (JJ 空白))
+							(NP (NN 片))))))))
+			(DEC 的)))
+		(IP-APP (NP-SBJ (-NONE- *PRO*))
+			(VP (SB 被)
+			    (VP (VV 骗))))
+		(NP (NN 事件))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

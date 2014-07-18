@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 泡汤 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing which dissolves in water"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (LCP-LOC (NP (NN 家))
+				   (LC 中))
+			  (NP-SBJ (NN 长辈)
+				  (CC 与)
+				  (NN 後辈))
+			  (VP (VP-FOC (VV 为数))
+			      (VP (VA 众多)))))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 发起)
+			      (NP-OBJ (NN 红包)))
+			  (VP (VV 来))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 笔)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 难得)))
+			      (DEC 的)))
+		      (ADJP (JJ 年终))
+		      (NP (NN 奖金)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 可能)
+		      (VP (ADVP (AD 就此))
+			  (VP (VV 泡汤)))))) 
+	  </parse>
+	  <arg n="0">
+	  一 笔 *OP* *T*-1 难得 的 年终 奖金 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 发起 红包 来 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 家 中 长辈 与 後辈 为数 众多 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,189 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开展 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing carried out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-PN-SBJ (NR 中国))
+		    (VP (ADVP (AD 将))
+			(VP (VV 继续)
+			    (VP (VV 开展)
+				(NP-OBJ (NP (PP (P 对)
+						(NP (NN 外)))
+					    (NP (NN 融资)))
+					(NP (NN 业务))))))) ) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  对 外 融资 业务 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 有序))
+		      (VP (VV 开展)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 发行)
+				      (NP-OBJ (DNP (NP (NP (ADJP (JJ 无))
+							   (NP (NN 追索)))
+						       (CC 或)
+						       (NP (ADJP (JJ 有限))
+							   (NP (NN 追索权))))
+						   (DEG 的))
+					      (NP (NP (NN 项目)
+						      (NN 融资)
+						      (NN 债券))
+						  (PU ，)
+						  (NP (NN ＡＢＳ))
+						  (ETC 等)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 从而))
+		      (VP (VV 化减)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 金融)
+						      (NN 机构))
+					      (VP (PP-DIR (P 对)
+							  (NP (NN 外)))
+						  (VP (VV 借债))))
+					  (DEC 的))
+				  (NP (NN 压力)))))
+		  (PU ，)
+		  (VP (VV 推进)
+		      (NP-OBJ (NN 项目)
+			      (NN 管理))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 国际化))
+			      (PU 、)
+			      (VP (VV 科学化))
+			      (PU 、)
+			      (VP (VV 透明化))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 发行 无 追索 或 有限 追索权 的 项目 融资 债券 ， ＡＢＳ 等 
+	  </arg>
+	  <arg n="m" f="adv">
+	  有序 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-2 (ADJP (JJ 具体))
+			(NP (NN 工作)))
+	      (VP (PP-LGS (P 由)
+			  (NP (NN 就业)
+			      (NN 管理)
+			      (NN 机构)
+			      (CC 和)
+			      (NN 劳动)
+			      (NN 保障)
+			      (NN 监察)
+			      (NN 机构)))
+		  (VP (ADVP (AD 共同))
+		      (VP (VV 开展)
+			  (NP-OBJ (-NONE- *-2)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 就业 管理 机构 和 劳动 保障 监察 机构 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共同 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 拓宽)
+				  (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (PP-MNR (-NONE- *T*-2))
+							  (VP (VV 利用)
+							      (NP-OBJ (NN 外资)))))
+						  (DEC 的)))
+					  (NP (NN 渠道))))))
+		  (PU ，)
+		  (NP-PN-SBJ (NR 中国))
+		  (VP (ADVP (AD 将))
+		      (PP-DIR (P 对于)
+			      (NP (UCP-APP (NP (NN ＢＯＴ))
+					   (PU 、)
+					   (NP (NN 项目)
+					       (NN 融资))
+					   (PU 、)
+					   (IP (NP-SBJ (-NONE- *PRO*))
+					       (VP (PP-LOC (P 在)
+							   (NP (NN 海外)))
+						   (VP (VV 发行)
+						       (NP-OBJ (NN 股票)))))
+					   (ETC 等))
+				  (QP (CD 多)
+				      (CLP (M 种)))
+				  (NP (NN 方式))))
+		      (VP (VP (ADVP (AD 积极))
+			      (VP (VV 试点)))
+			  (VP (ADVP (AD 逐步))
+			      (VP (VV 开展)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  对于 ＢＯＴ 、 项目 融资 、 *PRO* 在 海外 发行 股票 等 多 种 方式 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐步 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 拓宽 *OP* *pro* *T*-2 利用 外资 的 渠道 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

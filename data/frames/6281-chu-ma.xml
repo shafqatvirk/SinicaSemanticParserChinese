@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出马 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity taking the field"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (QP-TMP (NP-PN (NR 民国))
+			(QP (OD 七十八)
+			    (CLP (M 年))))
+		(VP (VP (VV 出马))
+		    (VP (VV 竞选)
+			(NP-OBJ (NN 立委)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 七十八 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-LGS (P 由)
+			    (NP (NP-APP (NP (NN 社长))
+					(CC 兼)
+					(NP (ADJP (JJ 总))
+					    (NP (NN 编辑))))
+				(NP-PN (NR 金钟))))
+		    (ADVP (AD 亲自))
+		    (VP (VV 出马)))) 
+	</parse>
+	<arg n="0">
+	由 社长 兼 总 编辑 金钟 
+	</arg>
+	<arg n="m" f="adv">
+	亲自 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

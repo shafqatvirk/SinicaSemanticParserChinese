@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 自创 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 creates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 当年))
+	    (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 庆祝)
+			    (NP-OBJ (NP-PN (NR 台湾))
+				    (NP (NN 光复))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 六家))
+	    (VP (VV 自创)
+		(AS 了)
+		(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VV 与众不同)))
+				(DEC 的)))
+			(NP (NN 花鼓队))))) 
+	</parse>
+	<arg n="0">
+	六家 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 与众不同 的 花鼓队 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 庆祝 台湾 光复 
+	</arg>
+	<arg n="m" f="tmp">
+	当年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

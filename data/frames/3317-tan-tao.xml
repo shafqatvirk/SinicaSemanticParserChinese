@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 探讨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 麦克拉伦)
+			 (CC 和)
+			 (NR 邹家华))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 共同))
+		  (VP (VV 探讨)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NP-PN (NR 中)
+					      (NR 加))
+				       (NP (NN 贸易)
+					   (CC 和)
+					   (NN 科技)
+					   (NN 合作)))
+				   (DEG 的))
+			      (NP (NN 前景)))))) 
+	  </parse>
+	  <arg n="0">
+	  麦克拉伦 和 邹家华 
+	  </arg>
+	  <arg n="1">
+	  中 加 贸易 和 科技 合作 的 前景 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共同 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (NN 研讨会))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 将))
+		  (VP (VV 探讨)
+		      (IP-OBJ (NP-PN-SBJ (NR 上海))
+			      (VP (NP-TMP (NT 今后))
+				  (PP-LOC (P 在)
+					  (NP (NN 外贸)
+					      (NN 经营)
+					      (NN 方面)))
+				  (VP (VV 试办)
+				      (NP-OBJ (QP (CD 一些))
+					      (ADJP (JJ 合资))
+					      (NP (NN 企业))))))))) 
+	  </parse>
+	  <arg n="0">
+	  研讨会 
+	  </arg>
+	  <arg n="1">
+	  上海 今后 在 外贸 经营 方面 试办 一些 合资 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

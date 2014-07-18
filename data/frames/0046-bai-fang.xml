@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拜访 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="visitor"/>
+    <role argnum="1" argrole="person visited"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-HLN (NP-SBJ (NN 解放军)
+                  (NN 司令员))
+          (VP (VV 拜访)
+              (NP-OBJ (NN 行政)
+                      (NN 长官)))))
+	</parse>
+	<arg n="0"> 解放军 司令员 </arg>
+	<V/>
+	<arg n="1"> 行政 长官 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>

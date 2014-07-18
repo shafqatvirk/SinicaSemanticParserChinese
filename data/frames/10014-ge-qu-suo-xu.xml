@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 各取所需 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 takes what he needs from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-TPC (IP-Q (NP-SBJ (NN 文义))
+			  (VP (ADVP-WH (AD 是否))
+			      (VP (VV 涉及)
+				  (IP-OBJ (NP-SBJ (NN 核四))
+					  (VP (VV 应)
+					      (VP (ADVP (AD 即))
+						  (VP (VV 复工))))))))
+		    (PU ？)
+		    (IP-Q (NP-SBJ (NN 解套)
+				  (NN 方案))
+			  (VP (ADVP-WH (AD 是否))
+			      (VP (VA 可行)))))
+	    (PU ？)
+	    (NP-SBJ (NN 朝野))
+	    (VP (ADVP (AD 仍))
+		(VP (VC 是)
+		    (VP (PP (P 就)
+			    (NP (NN 文义)))
+			(VP (VV 各取所需)))))) 
+	</parse>
+	<arg n="0">
+	朝野 
+	</arg>
+	<arg n="1">
+	就 文义 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<arg n="m" f="tpc">
+	文义 是否 涉及 核四 应 即 复工 ？ 解套 方案 是否 可行 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

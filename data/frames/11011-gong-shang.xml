@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 共商 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 discusses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 陈)
+		       (NN 总统))
+	    (VP (ADVP (AD 亲自))
+		(VP (VP (VV 打)
+			(NP-OBJ (NN 电话)))
+		    (VP (VV 邀请)
+			(NP-PN-OBJ (NR 王永庆))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 共商)
+				(NP-OBJ (NN 国事)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	国事 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

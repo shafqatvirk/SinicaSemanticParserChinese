@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 忘掉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people forgetting"/>
+      <role argnum="1" argrole="entity forgotten"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (ADVP (AD 正))
+		  (PP-TMP (P 当)
+			  (LCP (IP (NP-SBJ (NN 国外)
+					   (NN 媒体))
+				   (VP (ADVP (AD 都))
+				       (VP (VP (VV 盛赞)
+					       (NP-PN-OBJ (NR 台湾)))
+					   (PU ，)
+					   (VP (VV 认为)
+					       (IP-OBJ (NP-PN-SBJ (NR 台湾))
+						       (VP (VV 会)
+							   (VP (VC 是)
+							       (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+									   (CP (IP (NP-TPC (-NONE- *T*-1))
+										   (IP (IP (NP-SBJ (NN 受害))
+											   (VP (ADVP (AD 最))
+											       (VP (VA 轻))))
+										       (PU 、)
+										       (IP (NP-SBJ (NN 获利)
+												   (NN 机会))
+											   (VP (ADVP (AD 最))
+											       (VP (VA 高))))))
+									       (DEC 的)))
+								       (NP (PU 「)
+									   (NN 幸运儿)
+									   (PU 」))))))))))
+			       (LC 时))))
+	      (PU ，)
+	      (NP-SBJ (NN 业界))
+	      (VP (ADVP (AD 并))
+		  (VP (VV 没有)
+		      (VP (VV 忘掉)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (PU 「)
+						  (VV 祸福相倚)
+						  (PU 」)))
+					  (DEC 的))
+				  (ADJP (JJ 老))
+				  (NP (NN 教训))))))) 
+	  </parse>
+	  <arg n="0">
+	  业界 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 「 祸福相倚 」 的 老 教训 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  正 当 国外 媒体 都 盛赞 台湾 ， 认为 台湾 会 是 *OP* *T*-1 受害 最 轻 、 获利 机会 最 高 的 「 幸运儿 」 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

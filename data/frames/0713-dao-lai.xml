@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 到来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="what's arriving"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU “)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 时刻)))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 到来)))
+	      (PU ”)) 
+	  </parse>
+	  <arg n="0">
+	  这 个 时刻 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

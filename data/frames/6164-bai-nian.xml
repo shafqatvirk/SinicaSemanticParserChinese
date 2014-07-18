@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拜年 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 pays New Year tribute to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (NP-TMP (NP-APP (NT 隔天))
+			    (ADJP (JJ 大年))
+			    (NP (NT 初一)))
+		    (VP (VP (VV 到)
+			    (NP-OBJ (NN 父母)
+				    (NN 家)))
+			(VP (VV 拜年))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	隔天 大年 初一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-TMP (ADJP (JJ 大年))
+			(NP (NT 初一)))
+		(VP (VV 要)
+		    (VP (PP-DIR (P 向)
+				(NP (NN 家人)
+				    (CC 和)
+				    (NN 亲朋好友)))
+			(VP (VV 拜年)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	向 家人 和 亲朋好友 
+	</arg>
+	<arg n="m" f="tmp">
+	大年 初一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

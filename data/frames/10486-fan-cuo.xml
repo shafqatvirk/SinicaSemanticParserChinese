@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 犯错 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person making mistakes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 要)
+			(VP (VV 培养)
+			    (NP-OBJ (NN 接班人)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VV 要)
+		    (VP (VV 容许)
+			(NP-OBJ (PN 他))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 犯错))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

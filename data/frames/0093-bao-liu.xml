@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 保留 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="preserver"/>
+      <role argnum="1" argrole="thing preserved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-PN-SBJ (NR 巴伦西亚))
+		(VP (VP (VC 是)
+			(NP-PRD (NP-PN (NR 西班牙))
+				(DNP (ADJP (JJ 著名))
+				     (DEG 的))
+				(NP (NN 农业区))))
+		    (PU ，)
+		    (VP (ADVP (AD 至今))
+			(ADVP (AD 仍))
+			(VP (VV 保留)
+			    (AS 着)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VA 古老)))
+					    (DEC 的)))
+				    (ADJP (JJ 阿拉伯式))
+				    (NP (NN 灌溉)
+					(NN 系统))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  巴伦西亚 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  至今 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  仍 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-1)->(阿拉伯式灌溉系统) 古老 的 阿拉伯式 灌溉 系统 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (ADVP (AD 但是))
+		(LCP-LOC (NP (NN 城市))
+			 (LC 里))
+		(NP-SBJ (DP (DT 那些))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VV 象征)
+					(NP-OBJ (NP-PN (NR 宁波))
+						(NP (NN 历史)
+						    (CC 及)
+						    (NN 传统)))))
+				(DEC 的)))
+			(NP (NN 文化)
+			    (NN 设施)))
+		(VP (ADVP (AD 基本))
+		    (VP (VRD (VV 保留)
+			     (AS 了)
+			     (VV 下来)))))) 
+	  </parse>
+	  <arg n="M" f="LOC">
+	  城市 里 
+	  </arg>
+	  <arg n="1">
+	  那些 *OP* (*T*-1)->(文化设施) 象征 宁波 历史 及 传统 的 文化 设施 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  基本 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="conservative">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 舆论))
+	      (VP (ADVP (AD 就))
+		  (ADVP (AD 都))
+		  (VP (VV 采取)
+		      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 保留)))
+			      (NP (NN 态度)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

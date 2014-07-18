@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 便于 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="theme"/>
+    <role argnum="1" argrole="action"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (DP (DT 这)
+                  (CLP (M 批)))
+              (NP (NN 体育)
+                  (NN 活动)
+                  (NN 场地)))
+      (VP (VP (VV 便于)
+              (NP-OBJ (NN 管理)))
+          (PU ，)
+          (VP (VV 方便)
+              (NP-OBJ (NN 社区)
+                      (NN 居民))
+              (IP (NP-SBJ (-NONE- *PRO*))
+                  (VP (VV 使用)))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 这 批 体育 活动 场地 </arg>
+	<V/>
+	<arg n="1"> 管理 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (VV 便于)
+          (IP-OBJ (NP-SBJ (NN 持证人))
+                  (VP (ADVP (AD 随身))
+                      (VP (VV 携带)))))))
+        </parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> 持证人 随身 携带 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="controlip" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-OBJ (QP (CD 一)
+              (CLP (M 种)))
+          (CP (WHNP-2 (-NONE- *OP*))
+              (CP (IP (IP (NP-SBJ (-NONE- *T*-2))
+                          (VP (ADVP (AD 易))
+                              (VP (VV 搬运))))
+                      (PU 、)
+                      (IP (NP-TPC (-NONE- *T*-2))
+                          (NP-SBJ (NN 体形))
+                          (VP (VA 小)))
+                      (PU 、)
+                      (IP (NP-TPC (-NONE- *T*-2))
+                          (NP-SBJ (NN 通风))
+                          (VP (VA 好)))
+                      (PU 、)
+                      (IP (NP-SBJ (-NONE- *T*-2))
+                          (VP (VV 便于)
+                              (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+                                      (VP (VCD (VV 保洁)
+                                               (VV 保温)))))))
+                  (DEC 的)))
+          (ADJP (JJ 新式))
+          (NP (NN 蜂笼))))
+        </parse>
+	<arg n="0"> (*T*-2)->(新式蜂笼) </arg>
+	<V/>
+	<arg n="1"> *PRO* 保洁 保温 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

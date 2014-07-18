@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 缩回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 retracts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP (PN 我))
+				   (QP (CD 一)
+				       (CLP (M 句)))
+				   (IP (PU 「)
+				       (NP-SBJ (-NONE- *pro*))
+				       (VP (VPT (VV 对)
+						(AD 不)
+						(VV 起)))
+				       (PU 」)))
+			       (LC 之後)))
+		  (PU ，)
+		  (ADVP (AD 决))
+		  (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (ADVP (AD 因此))
+			  (VP (MSP 而)
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *pro*))
+							      (VP (VV 伸出)
+								  (NP-OBJ (-NONE- *T*-1))))
+							  (DEC 的)))
+						  (NP (NN 手)))
+					  (VP (VV 缩回))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 伸出 *T*-1 的 手 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  决 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 我 一 句 「 *pro* 对 不 起 」 之後 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

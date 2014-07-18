@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 位居 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="position taken by arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 中国))
+			   (DEG 的))
+		      (NP (NN 外汇)
+			  (NN 储备)))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (VV 位居)
+			  (QP-OBJ (NP (NN 世界))
+				  (QP (OD 第二)
+				      (CLP (M 位))))))
+		  (PU ，)
+		  (VP (VV 达)
+		      (QP-OBJ (CD 一千四百多亿)
+			      (CLP (M 美元))))
+		  (PU ，)
+		  (VP (VV 增长)
+		      (AS 了)
+		      (QP-EXT (CD 八百二十多)
+			      (CLP (M 倍)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 的 外汇 储备 
+	  </arg>
+	  <arg n="1">
+	  世界 第二 位 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

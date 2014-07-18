@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 清 </id>
+    <frameset id="f1" edef="clean">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 水))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 清)))) 
+	  </parse>
+	  <arg n="0">
+	  水 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="clean up, purge">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing to be cleaned up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  他们	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还          
+	  </arg>
+	  <arg n="m" f="adv">
+	  不定期          
+	  </arg>
+	  <arg n="1">
+	  溪          
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

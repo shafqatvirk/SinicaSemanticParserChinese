@@ -1,0 +1,171 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 援助 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 九十年代))
+	      (NP-SBJ (NN 兵团))
+	      (VP (VV 承担)
+		  (AS 了)
+		  (NP-OBJ (IP-APP (NP-PN-SBJ (NR 中国))
+				  (VP (VV 援助)
+				      (NP-OBJ (DNP (NP (NP-PN-APP (NR 布隆迪)
+								  (PU 、)
+								  (NR 阿富汗)
+								  (PU 、)
+								  (NR 蒙古国)
+								  (PU 、)
+								  (NR 古巴)
+								  (PU 、)
+								  (NR 墨西哥)
+								  (ETC 等))
+						       (NP (NN 国家)))
+						   (DEG 的))
+					      (NP (NP (NN 农业))
+						  (PU 、)
+						  (NP (NN 水利))
+						  (CC 及)
+						  (NP (ADJP (JJ 综合))
+						      (NP (NN 开发)))))))
+			  (NP (NN 工作))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  布隆迪 、 阿富汗 、 蒙古国 、 古巴 、 墨西哥 等 国家 的 农业 、 水利 及 综合 开发 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="helper"/>
+      <role argnum="1" argrole="goal"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+			   (CP (IP (NP-SBJ (-NONE- *T*-1))
+				   (VP (NP-TMP (NT 去年)
+					       (NT １０月)
+					       (NT １日))
+				       (PP-LOC (P 在)
+					       (NP-PN (NR 华盛顿)))
+				       (VP (VV 举行))))
+			       (DEC 的)))
+		       (IP-APP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 援助)
+				   (NP-PN-OBJ (NR 巴勒斯坦))
+				   (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 自治)))))
+		       (NP (NN 国际)
+			   (NN 会议)))
+		   (LC 上)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  巴勒斯坦 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 自治 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 狮子村))
+			   (DEG 的))
+		      (ADJP (JJ 成功))
+		      (NP (NN 经验)))
+	      (VP (PP-PRP (P 为)
+			  (IP (NP-TMP (NT 今后))
+			      (NP-SBJ (NN 海外))
+			      (VP (VV 援助)
+				  (NP-OBJ (-NONE- *pro*))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 重建)
+					  (NP-OBJ (ADJP (JJ 受灾))
+						  (NP (NN 村镇))))))))
+		  (VP (VV 提供)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 可以)
+					      (VP (VV 借鉴)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的)))
+			      (NP (NN 模式)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  海外 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 重建 受灾 村镇 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-LOC (P 在)
+		  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-PN-SBJ (-NONE- *T*-1))
+				       (VP (NP-TMP (NT 去年)
+						   (NT １１月))
+					   (VP (VV 举行))))
+				   (DEC 的)))
+			   (IP-APP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 援助)
+				       (NP-PN-OBJ (NR 越南))))
+			   (NP-PN (NR 巴黎))
+			   (NP (NN 国际)
+			       (NN 会议)))
+		       (LC 上))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  越南 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

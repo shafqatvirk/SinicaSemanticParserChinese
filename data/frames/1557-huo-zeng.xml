@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获赠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="receiver"/>
+      <role argnum="1" argrole="gift"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 香港))
+		  (VP (VV 获赠)
+		      (NP-OBJ (PU 「)
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 永远))
+					      (VP (VV 盛开))))
+				      (DEC 的)))
+			      (NP (NN 紫荆花))
+			      (PU 」)))) 
+	  </parse>
+	  <arg n="0">
+	  香港 
+	  </arg>
+	  <arg n="1">
+	  「 *OP* *T*-1 永远 盛开 的 紫荆花 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

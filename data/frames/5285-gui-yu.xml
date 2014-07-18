@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 归於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg1 is attributed/returned to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (DP (DT 所有))
+			 (DEG 的))
+		    (NP (NN 恩典)))
+	    (VP (ADVP (AD 都))
+		(VP (VV 要)
+		    (VP (VV 归於)
+			(NP-PN-OBJ (NR 台湾)
+				   (PRN (PU ——)
+					(NP (NP (PN 我们))
+					    (DNP (ADJP (JJ 永远))
+						 (DEG 的))
+					    (NP (NN 母亲))))))))) 
+	</parse>
+	<arg n="0">
+	所有 的 恩典 
+	</arg>
+	<arg n="1">
+	台湾 —— 我们 永远 的 母亲 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

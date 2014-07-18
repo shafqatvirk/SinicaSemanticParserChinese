@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拉回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 pulls arg1 back to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一四五七年))
+	      (NP-SBJ (NP-APP (NP (NN 国王)))
+		      (NP-PN (NP-PN (NR 詹姆斯))
+			     (QP (OD 二)
+				 (CLP (M 世)))))
+	      (VP (VP (ADVP (AD 还))
+		      (ADVP (AD 因此))
+		      (VP (VV 颁布)
+			  (NP-OBJ (CP-APP (IP (PU 「)
+					      (NP-SBJ (NN 高尔夫))
+					      (VP (VV 应)
+						  (VP (SB 被)
+						      (VP (ADVP (AD 彻底))
+							  (VP (VV 铲除)))))
+					      (PU 」))
+					  (DEC 的))
+				  (NP (NN 法令)))))
+		  (PU ，)
+		  (VP (VV 试图)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NN 民心))
+					  (VP (VV 拉回)
+					      (PP-LOC (P 到)
+						      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+							       (VP (VV 练习)
+								   (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+									   (VP (VV 射箭)))))
+							   (LC 上))))))))
+		  (PU ，)
+		  (VP (MSP 以)
+		      (VP (VV 保卫)
+			  (NP-OBJ (NP-PN (NR 苏格兰))
+				  (NP (NN 王权))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  民心 
+	  </arg>
+	  <arg n="2">
+	  到 *PRO* 练习 *PRO* 射箭 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

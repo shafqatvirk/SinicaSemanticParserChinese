@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="entities arg0 divides arg1 into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 整)
+			  (CLP (M 个)))
+		      (NP (NN 京城)))
+	      (VP (VV 分作)
+		  (QP-OBJ (NP-APP (NN 宫城)
+				  (PU 、)
+				  (NN 内城)
+				  (PU 、)
+				  (NN 外城))
+			  (QP (CD 三)
+			      (CLP (M 重)))))) 
+	  </parse>
+	  <arg n="1">
+	  整 个 京城 
+	  </arg>
+	  <arg n="2">
+	  宫城 、 内城 、 外城 三 重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

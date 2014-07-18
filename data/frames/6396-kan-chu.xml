@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 刊出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="journal described"/>
+    <role argnum="1" argrole="thing arg0 carries"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (ADVP (AD 然而))
+		    (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 即使))
+			(VP (VV 刊出)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (ADVP (AD 这样))
+						    (VP (VA 强烈))))
+					    (DEC 的)))
+				    (ADJP (JJ 负面))
+				    (NP (NN 评论))))))
+	    (PU ，)
+	    (NP-TTL-SBJ (PU 《)
+			(ADJP (JJ 星际))
+			(NP (NN 大战))
+			(PU 》))
+	    (VP (PP (P 如同)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 穿)
+			    (AS 了)
+			    (NP-OBJ (PU 「)
+				    (NN 影评)
+				    (NN 防弹衣)
+				    (PU 」)))))
+		(VP (VA 一样)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 这样 强烈 的 负面 评论 
+	</arg>
+	<arg n="m" f="dis">
+	即使 
+	</arg>
+	<arg n="m" f="dis">
+	然而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (ADVP (AD 不))
+		(VP (VV 让)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(IP (NP-SBJ (DP (DT 各))
+					    (NP (NN 杂志)))
+				    (VP (NP-TMP (-NONE- *T*-2))
+					(VP (VV 刊出)))))
+			    (NP (NN 时间)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 撞期)))))) 
+	</parse>
+	<arg n="0">
+	各 杂志 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

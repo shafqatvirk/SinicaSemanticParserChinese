@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 铲除 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 eliminates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 五十馀)
+			(CLP (M 年)))
+		    (DNP (NP (NN 桧木林))
+			 (DEG 的))
+		    (ADJP (JJ 大))
+		    (NP (NN 砍伐)))
+	    (PU ，)
+	    (VP (VV 铲除)
+		(AS 了)
+		(NP-OBJ (DNP (NP (NP-PN (NR 台湾))
+				 (NP (NN 维生)
+				     (NN 系统)))
+			     (DEG 的))
+			(NP (NN 命脉))))) 
+	</parse>
+	<arg n="0">
+	五十馀 年 桧木林 的 大 砍伐 
+	</arg>
+	<arg n="1">
+	台湾 维生 系统 的 命脉 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PU 「)
+	    (NP-SBJ (NN 高尔夫))
+	    (VP (VV 应)
+		(VP (SB 被)
+		    (VP (ADVP (AD 彻底))
+			(VP (VV 铲除)))))
+	    (PU 」)) 
+	</parse>
+	<arg n="1">
+	高尔夫 
+	</arg>
+	<arg n="m" f="adv">
+	彻底 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 停工 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 stops working on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (CS 虽然)
+		    (NP-PN-SBJ (NR 绿洲)
+			       (NN 山庄))
+		    (VP (ADVP (AD 已经))
+			(VP (VV 拆)
+			    (AS 了)
+			    (QP-EXT (CD 一半)))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 还是))
+		(VP (VV 可以)
+		    (VP (VV 停工)
+			(PU 、)
+			(VV 抢救))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	还是 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	虽然 绿洲 山庄 已经 拆 了 一半 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

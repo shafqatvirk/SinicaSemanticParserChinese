@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 直达 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 reaches directly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 铁路))
+		      (CC 和)
+		      (NP (ADJP (JJ 高速))
+			  (NP (NN 公路))))
+	      (VP (VV 直达)
+		  (NP-OBJ (NN 港口)))) 
+	  </parse>
+	  <arg n="0">
+	  铁路 和 高速 公路 
+	  </arg>
+	  <arg n="1">
+	  港口 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 大宗))
+		      (NP (NN 货物)))
+	      (VP (VV 可)
+		  (VP (PP-DIR (P 从)
+			      (NP (NN 西南)
+				  (NN 腹地)))
+		      (VP (VV 直达)
+			  (NP-OBJ (NP-PN (NR 北部湾))
+				  (NP (NN 港口))))))) 
+	  </parse>
+	  <arg n="0">
+	  大宗 货物 
+	  </arg>
+	  <arg n="1">
+	  北部湾 港口 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 西南 腹地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

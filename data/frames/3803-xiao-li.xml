@@ -1,0 +1,163 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 效力 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 renders service to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 刚))
+				      (VP (VV 满)
+					  (QP-OBJ (CD １９)
+						  (CLP (M 岁))))))
+			      (DEC 的)))
+		      (NP-PN (NR 欧文)))
+	      (VP (NP-TMP (NT 现在))
+		  (VP (VV 效力)
+		      (NP-PN-OBJ (NR 利物浦队))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 刚 满 １９ 岁 的 欧文 
+	  </arg>
+	  <arg n="1">
+	  利物浦队 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 三浦知良))
+	      (VP (VP (ADVP (AD 曾))
+		      (PP-LOC (P 在)
+			      (NP (DNP (NP-PN (NR 巴西))
+				       (DEG 的))
+				  (NP-PN (NR 桑托斯队))))
+		      (VP (VV 接受)
+			  (NP-OBJ (NN 训练))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-TMP (P 于)
+			      (NP (NP (NT １９９３)
+				      (PU ——)
+				      (NT １９９４))
+				  (NP (NN 赛季))))
+		      (PP-LOC (P 在)
+			      (NP-PN (NR 意大利)
+				     (NR 桑普多利亚队)))
+		      (VP (VV 效力))))) 
+	  </parse>
+	  <arg n="0">
+	  三浦知良 
+	  </arg>
+	  <arg n="1">
+	  在 意大利 桑普多利亚队 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 １９９３ —— １９９４ 赛季 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (PP-BNF (P 为)
+			  (NP-PN (NR 日本队)))
+		  (VP (VV 效力)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  为 日本队 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 假如))
+		      (IP (NP-SBJ (PN 他))
+			  (VP (VV 能)
+			      (VP (VV 加盟)
+				  (NP-PN-OBJ (NR 纽卡斯尔队))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 算是)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 回)
+				      (NP-OBJ (NN 家乡)
+					      (NN 球队)))
+				  (VP (VV 效力))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (NP-TMP (NT 目前))
+				  (VP (VV 效力)
+				      (PP-LOC (P 于)
+					      (NP-PN (NR 马尔默队))))))
+			  (DEC 的)))
+		  (NP-APP (ADJP (JJ 前))
+			  (NP (NN 世界)
+			      (NN 双打)
+			      (NN 冠军)))
+		  (NP-PN (NR 冯希勒))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  于 马尔默队 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

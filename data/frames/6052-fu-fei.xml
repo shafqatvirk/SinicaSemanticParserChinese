@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 付费 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="payer"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 由於)
+		    (IP (IP (NP-SBJ (-NONE- *pro*))
+			    (VP (VC 是)
+				(IP-PRD (NP-SBJ (NN 专人))
+					(VP (VV 服务)))))
+			(PU ，)
+			(IP (NP-SBJ (NN 成本))
+			    (VP (ADVP (AD 也))
+				(ADVP (AD 较))
+				(VP (VA 高))))))
+	    (PU ，)
+	    (NP-TMP (NT 目前))
+	    (PP-LOC (P 在)
+		    (LCP (NP (NN 健身)
+			     (NN 俱乐部))
+			 (LC 中)))
+	    (PU ，)
+	    (NP-SBJ (ADJP (JJ 芳香))
+		    (NP (NN 疗法)))
+	    (VP (ADVP (AD 多))
+		(VP (VV 属)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					(VP (ADVP (AD 另外))
+					    (VP (VV 付费))))
+				    (DEC 的))
+			    (NP (NN 服务)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	另外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

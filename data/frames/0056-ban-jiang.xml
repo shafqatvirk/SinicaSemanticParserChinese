@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 颁奖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="award giver"/>
+    <role argnum="1" argrole="award receiver"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP (NP-APP (NP-PN (NR 中共)
+                                 (NN 中央)
+                                 (NN 政治局))
+                          (NP (NN 常委)))
+                  (NP-PN (NR 李瑞环)))
+              (PU 、)
+              (NP (NP-APP (NN 国务)
+                          (NN 委员))
+                  (NP-PN (NR 陈俊生)))
+              (CC 以及)
+              (NP (NP-APP (NP-PN (NR 中宣部))
+                          (NP (NN 部长)))
+                  (NP-PN (NR 王忍之)))
+              (PU 、)
+              (NP (NP-APP (NP-PN (NR 农业部))
+                          (NP (NN 部长)))
+                  (NP-PN (NR 刘中一)))
+              (ETC 等))
+      (VP (VP (VV 出席)
+              (NP-OBJ (NN 会议)))
+          (CC 并)
+          (VP (PP-DIR (P 向)
+                      (NP (NP (ADJP (JJ 先进))
+                              (NP (NN 单位)))
+                          (NP (NN 代表))))
+              (VP (VV 颁奖))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 中共 中央 政治局 常委 李瑞环 、 国务 委员 陈俊生 以及 中宣部 部长 王忍之 、 农业部 部长 刘中一 等 </arg>
+	<arg n="1"> 向 先进 单位 代表 </arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-PN (NR 李瑞环))
+              (ETC 等))
+      (VP (VV 颁奖))))
+	</parse>
+	<arg n="0"> 李瑞环 等 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

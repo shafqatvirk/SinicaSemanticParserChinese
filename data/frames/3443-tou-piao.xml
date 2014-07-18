@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投票 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="voter"/>
+      <role argnum="1" argrole="thing voted on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (PP (P 作为)
+		      (NP (NP-PN (NR 联合国)
+				 (NN 安理会))
+			  (ADJP (JJ 常任))
+			  (NP (NN 理事国))))
+		  (PU ，)
+		  (VP (VP (VV 投票))
+		      (VP (VV 赞成)
+			  (NP-OBJ (QP (CD １１)
+				      (CLP (M 个)))
+				  (DNP (PP (P 有关)
+					   (NP-PN (NR 伊拉克)))
+				       (DEG 的))
+				  (NP (NN 决议))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  １１ 个 有关 伊拉克 的 决议 
+	  </arg>
+	  <arg n="m" f="adv">
+	  作为 联合国 安理会 常任 理事国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (VV 应该)
+		  (VP (ADVP (AD 秘密))
+		      (VP (VV 投票))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  秘密 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 让)
+	      (NP-OBJ (DP (DT 全体))
+		      (NP (NN 球员)))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP-DIR (P 对)
+			      (NP (DNP (NP (NN 资方))
+				       (DEG 的))
+				  (ADJP (JJ 最后))
+				  (NP (NN 方案))))
+		      (ADVP (AD 秘密))
+		      (VP (VV 投票))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  对 资方 的 最后 方案 
+	  </arg>
+	  <arg n="m" f="adv">
+	  秘密 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 列席 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="attendee"/>
+    <role argnum="1" argrole="meeting arg0 attends as auditor"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 民选))
+		    (NP (NN 省长)))
+	    (VP (VV 列席)
+		(NP-OBJ (NN 行政)
+			(NN 院会)))) 
+	</parse>
+	<arg n="0">
+	民选 省长 
+	</arg>
+	<arg n="1">
+	行政 院会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 此外))
+	    (PU ，)
+	    (NP-SBJ (NP (NP (DP (DT 各))
+			    (NP (NN 新人)))
+			(NP (NN 眷属)))
+		    (QP (ADVP (AD 将近))
+			(QP (CD 上百)))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 亦))
+		(VP (VSB (VV 受邀)
+			 (VV 列席))))) 
+	</parse>
+	<arg n="0">
+	各 新人 眷属 将近 上百 人 
+	</arg>
+	<arg n="m" f="adv">
+	亦 
+	</arg>
+	<arg n="m" f="adv">
+	此外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

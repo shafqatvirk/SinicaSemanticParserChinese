@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 愿意 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 is willing to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (VV 愿意)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-PRP (P 为)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 不断))
+					      (VP (VV 加深)
+						  (NP-OBJ (DP (DT 这)
+							      (CLP (M 种)))
+							  (NP (NN 友谊)))))))
+			      (VP (VV 作出)
+				  (NP-OBJ (DNP (NP (PN 自己))
+					       (DEG 的))
+					  (NP (NN 努力)))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 为 *PRO* 不断 加深 这 种 友谊 作出 自己 的 努力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

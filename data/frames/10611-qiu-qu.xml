@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 求取 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 seeks to obtain"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP (P 像)
+				(NP (PN 她)))
+			    (VP (VA 一样))))
+		(PU ，)
+		(VP (VP (PP-PRP (P 因著)
+				(NP (ADJP (JJ 种种))
+				    (NP (NN 人生)
+					(NN 困惑))))
+			(VP (MSP 而)
+			    (VP (VV 来))))
+		    (PU ，)
+		    (VP (ADVP (AD 不))
+			(VP (PP-PRD (P 为)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 求取)
+					    (NP-OBJ (NN 学位)))))))
+		    (PU ，)
+		    (VP (ADVP (AD 只))
+			(VP (VV 想)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (PP-MNR (P 藉著)
+						(NP (DP (DT 这)
+							(CLP (M 个)))
+						    (NP (NN 过程))))
+					(VP (PU 「)
+					    (DVP (QP (QP (CD 一)
+							 (CLP (M 片)))
+						     (QP (CD 一)
+							 (CLP (M 片))))
+						 (DEV 地))
+					    (VP (BA 把)
+						(IP-OBJ (NP-SBJ (NN 人生))
+							(VP (VRD (VV 整合)
+								 (VV 起来)))))
+					    (PU 」))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	学位 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

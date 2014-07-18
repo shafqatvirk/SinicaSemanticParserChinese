@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贬至 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent,causer"/>
+    <role argnum="1" argrole="currency"/>
+    <role argnum="2" argrole="original level"/>
+    <role argnum="3" argrole="new level"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+	<mapitem src="npobj" trg="arg3"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (PP-DIR (P 从)
+                  (IP (NP-SBJ (DNP (LCP (NP (NN 风暴))
+                                        (LC 前))
+                                   (DEG 的))
+                              (QP (CD 八)
+                                  (PU 、)
+                                  (CD 九百))
+                              (NP (NN 韩圜)))
+                      (VP (VV 兑)
+                          (QP-OBJ (CD 一)
+                                  (CLP (M 美元))))))
+          (PU ，)
+          (VP (VV 贬至)
+              (QP-OBJ (DNP (NP (NT 目前))
+                           (DEG 的))
+                      (QP (CD 一千六百)))))))
+	</parse>
+	<arg n="1"> *pro* </arg>
+	<arg n="2"> 从 风暴 前 的 八、九百 韩圜 兑 一 美元 </arg>
+	<V/>
+	<arg n="3"> 目前 的 一千六百 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

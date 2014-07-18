@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 切削 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP (NN 内燃机))
+			  (PU 、)
+			  (NP (NN 金属)
+			      (NN 切削)
+			      (NN 机床))
+			  (PU 、)
+			  (NP (ADJP (JJ 大)
+				    (JJ 中)
+				    (JJ 小))
+			      (NP (NN 拖拉机)))
+			  (PU 、)
+			  (NP (NN 货车))
+			  (PU 、)
+			  (NP (ADJP (JJ 载货))
+			      (NP (NN 汽车)))
+			  (ETC 等))
+		      (NP (NN 生产)))
+	      (VP (VV 下降)
+		  (QP-EXT (CD 百分之一点六)
+			  (CC 到)
+			  (CD 百分之十点三)))) 
+	  </parse>
+	  <arg n="1">
+	  金属 
+	  </arg>
+	  <arg n="2">
+	  机床 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

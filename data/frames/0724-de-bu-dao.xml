@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得不到 </id>
+    <frameset id="f1" edef="cannot obtain">
+      <role argnum="0" argrole="obtainer"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 三峡))
+		      (NP (NN 库区)))
+	      (VP (ADVP (AD 迟迟))
+		  (VP (VV 得不到)
+		      (NP-OBJ (ADJP (JJ 有效))
+			      (NP (NN 开发)))))) 
+	  </parse>
+	  <arg n="0">
+	  三峡 库区 
+	  </arg>
+	  <arg n="1">
+	  有效 开发 
+	  </arg>
+	  <arg n="m" f="adv">
+	  迟迟 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

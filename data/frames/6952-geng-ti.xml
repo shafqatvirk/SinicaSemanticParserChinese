@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 更替 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities replacing each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NN 行政院))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-MNR (P 藉)
+				    (UCP (ADJP (JJ 所谓))
+					 (UCP (IP (NP-SBJ (NN 政党))
+						  (VP (VV 更替)))
+					      (CC 或)
+					      (NP (NN 政党)
+						  (NN 政纲)))))
+			    (VP (VV 为)
+				(NP-OBJ (NN 由)))))
+		(PU ，)
+		(ADVP (AD 迳自))
+		(ADVP (AD 片面))
+		(VP (VV 决议)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 停止)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 执行)))))))) 
+	</parse>
+	<arg n="0">
+	政党 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

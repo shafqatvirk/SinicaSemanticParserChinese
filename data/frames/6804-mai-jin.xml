@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 买进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="buyer"/>
+    <role argnum="1" argrole="thing arg0 buys"/>
+    <role argnum="2" argrole="seller"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP-APP (DNP (NP-PN (NR 宋楚瑜))
+				     (DEG 之))
+				(NP (NN 子)))
+			(NP-PN (NR 宋镇远)))
+		(VP (VP (PP-LOC (P 在)
+				(NP-PN (NR 中兴)
+				       (NN 票券)
+				       (NN 公司)))
+			(VP (VP (VV 开立)
+				(NP-OBJ (NN 帐户)))
+			    (VP (VV 买卖)
+				(NP-OBJ (NN 票券)))))
+		    (PU ，)
+		    (CC 并)
+		    (VP (PP-TMP (P 於)
+				(LCP (NP-APP (NT 八十一年)
+					     (NT 十二月))
+				     (LCP (LCP (NP (NP (QP (OD 第二)
+							   (CLP (M 届)))
+						       (NP (NN 立委)))
+						   (NP (NN 选举)))
+					       (LC 过後))
+					  (PU 、)
+					  (LCP (IP (NP-PN-SBJ (NR 宋楚瑜))
+						   (VP (VV 就任)
+						       (NP-OBJ (NN 省长))))
+					       (LC 之前)))))
+			(PU ，)
+			(VP (VV 买进)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-TPC (-NONE- *T*-1))
+						(NP-SBJ (NN 价值))
+						(VP (QP-PRD (CD 一亿六百多万)
+							    (CLP (M 元)))))
+					    (DEC 的)))
+				    (NP (NN 票券))))))) 
+	</parse>
+	<arg n="0">
+	宋楚瑜 之 子 宋镇远 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 价值 一亿六百多万 元 的 票券 
+	</arg>
+	<arg n="m" f="tmp">
+	於 八十一年 十二月 第二 届 立委 选举 过後 、 宋楚瑜 就任 省长 之前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 消费者) )
+	    (VP (ADVP (AD 也))
+		(VP (VV 乐得)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 逢)
+					    (NP-OBJ (NN 低) )))
+				(VP (VV 买进))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 逢 低 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

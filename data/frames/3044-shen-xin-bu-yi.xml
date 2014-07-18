@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深信不疑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="believer"/>
+      <role argnum="1" argrole="thing believed in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VV 深信不疑)
+		  (PU ，)
+		  (IP-OBJ (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 一定))
+				  (VP (VV 能够)
+				      (VP (VV 克服)
+					  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (NP (NN 历史))
+								      (ADJP (JJ 新))
+								      (NP (NN 事业)))
+							      (VP (VV 带来)
+								  (NP-OBJ (-NONE- *T*-1))))
+							  (DEC 的)))
+						  (DP (DT 一切))
+						  (NP (NN 挑战)))))))
+			  (PU ，)
+			  (IP (NP-SBJ (DNP (NP-PN (NR 香港))
+					   (DEG 的))
+				      (NP (NT 将来)))
+			      (VP (VV 会)
+				  (VP (ADVP (AD 更加))
+				      (VP (VA 美好)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  *pro* 一定 能够 克服 *OP* 历史 新 事业 带来 *T*-1 的 一切 挑战 ， 香港 的 将来 会 更加 美好 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

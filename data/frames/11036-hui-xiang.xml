@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 回响 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="place arg0 rings"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-TPC (NP (NN 生态)
+		    (NN 学者))
+		(CP (WHNP-3 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-3))
+			    (VP (VV 回响)
+				(NP-OBJ (NN 耳际))))
+			(DEC 的)))
+		(NP (NN 警告))) 
+	</parse>
+	<arg n="0">
+	*T*-3 
+	</arg>
+	<arg n="1">
+	耳际 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

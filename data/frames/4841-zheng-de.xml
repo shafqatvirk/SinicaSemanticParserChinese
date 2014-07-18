@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 徵得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 asks for and receives"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NP-PN (NR 中)
+				    (NR 英))
+			     (NP (NN 土地)
+				 (NN 委员会)))
+		      (NP (NN 中方)
+			  (NN 代表)
+			  (NN 办事处)))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 徵得)
+				       (NP-OBJ (NP (NP-PN (NN 土委会))
+						   (NP (NN 英方)))
+					       (NP (NN 同意)))))
+			       (LC 後)))
+		  (PU ，)
+		  (PP-TMP (P 在)
+			  (NP (NT 一九八六年)
+			      (NT 八月)
+			      (NT 十三日)))
+		  (ADVP (AD 正式))
+		  (VP (VV 成立)
+		      (NP-OBJ (NP-PN (PU 「)
+				     (NP-PN (NP-PN (NR 香港))
+					    (ADJP (JJ 特别))
+					    (NP (NN 行政区)))
+				     (NP (NN 土地)
+					 (NN 基金))
+				     (PU 」))
+			      (PRN (PU （)
+				   (NP (NN 土地)
+				       (NN 基金))
+				   (PU ）)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  土委会 英方 同意 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

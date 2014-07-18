@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设法 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing manage to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VP (ADVP (AD 正在))
+		      (ADVP (AD 努力))
+		      (VP (VV 学习)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 欧洲))
+					   (DP (DT 各))
+					   (NP (NN 国)))
+				       (DEG 的))
+				  (NP (NN 语言)))))
+		  (PU ，)
+		  (VP (ADVP (AD 频频))
+		      (VP (VP (VV 到)
+			      (NP-OBJ (NP-PN (NR 欧洲))
+				      (DP (DT 各))
+				      (NP (NN 国))))
+			  (VP (VV 旅行))))
+		  (PU ，)
+		  (VP (ADVP (AD 甚至))
+		      (VP (VV 设法)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 到)
+					  (NP-OBJ (NP-PN (NR 欧洲))
+						  (DP (DT 其他))
+						  (NP (NN 国家))))
+				      (VP (VV 谋职)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 到 欧洲 其他 国家 谋职 
+	  </arg>
+	  <arg n="m" f="adv">
+	  甚至 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 报以 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="applauder"/>
+    <role argnum="1" argrole="applauding with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-TMP (P 当)
+              (LCP (IP (NP-SBJ (PN 他))
+                       (VP (VP (VV 借)
+                               (NP-OBJ (DP (DT 此))
+                                       (NP (NN 机会))))
+                           (VP (PP-DIR (P 向)
+                                       (NP (PN 大家)))
+                               (VP (VV 道别)))))
+                   (LC 时)))
+      (PU ，)
+      (NP-SBJ (DP (DT 全))
+              (NP (NN 场)))
+      (VP (VV 报以)
+          (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-1))
+                              (VP (VA 热烈)))
+                          (DEC 的)))
+                  (NP (NN 掌声))))))
+	</parse>
+	<arg n="M" f="TMP"> 当 他 借 此 机会 向 大家 道别 时 </arg>
+	<arg n="0"> 全 场 </arg>
+	<V/>
+	<arg n="1"> *OP* (*T*-1)->(掌声) 热烈 的 掌声 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

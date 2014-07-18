@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抒发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 expresses"/>
+    <role argnum="2" argrole="means"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 或许))
+	    (NP-SBJ (DNP (LCP (QP (QP (CD 五)
+				      (CLP (-NONE- *RNR*-1)))
+				  (PU 、)
+				  (QP (CD 六十)
+				      (CLP-1 (M 岁))))
+			      (LC 上下))
+			 (DEG 的))
+		    (ADJP (JJ 老))
+		    (NP (NN 台北人)))
+	    (PU ，)
+	    (VP (ADVP (AD 正))
+		(VP (VV 可)
+		    (VP (VP (VV 借助)
+			    (NP-OBJ (DNP (NP-PN (NR 隐地))
+					 (DEG 的))
+				    (NP-TTL (PU 《)
+					    (NN 涨潮日)
+					    (PU 》))))
+			(PU ，)
+			(VP (MSP 来)
+			    (VP (VV 抒发)
+				(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (VV 属於)
+							(NP-OBJ (NP (PN 他们))
+								(DP (DT 那)
+								    (CLP (M 个)))
+								(NP (NN 年代)))))
+						(DEC 的)))
+					(NP (NN 心情)
+					    (NN 故事))))))))) 
+	</parse>
+	<arg n="0">
+	五 *RNR*-1 、 六十 岁 上下 的 老 台北人 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 属於 他们 那 个 年代 的 心情 故事 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<arg n="m" f="adv">
+	或许 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 之前))
+		    (ADVP (CS 虽然))
+		    (ADVP (AD 也))
+		    (PP-LOC (P 在)
+			    (LCP (NP (NN 网))
+				 (LC 上)))
+		    (VP (VV 写)
+			(AS 过)
+			(NP-OBJ (QP (CD 一些))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 抒发)
+						(NP-OBJ (NN 情感))))
+					(DEC 的)))
+				(NP (NN 小品)))))) 
+	</parse>
+	<arg n="1">
+	情感 
+	</arg>
+	<arg n="2">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

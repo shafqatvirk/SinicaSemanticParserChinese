@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 睹 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 sees"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 台北))
+		    (NP (NN 影迷)))
+	    (VP (VV 有幸)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 能)
+			    (VP (ADVP (AD 一))
+				(VP (VV 睹)
+				    (NP-OBJ (NP-APP (DNP (NP (PN 她))
+							 (DEG 的))
+						    (NP (NN 新作)))
+					    (NP-TTL (PU 《)
+						    (NP (ADJP (JJ 女))
+							(NP (NN 神)))
+						    (NP (NT 一九六七))
+						    (PU 》))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	她 的 新作 《 女 神 一九六七 》 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NP (QP (OD 第一)
+				    (CLP (M 位)))
+				(ADJP (JJ 华裔))
+				(NP (NP-PN (NR 诺贝尔))
+				    (NP (NN 文学)
+					(NN 奖)))
+				(NP (NN 得主)))
+			    (NP-PN (NR 高行健)))
+		    (VP (DP-ADV (DT 此)
+				(CLP (M 次)))
+			(VP (VP-FOC (VV 访)
+				    (NP-PN-OBJ (NR 台)))
+			    (VP (VV 造成)
+				(NP-OBJ (NN 轰动))))))
+	    (PU ，)
+	    (VP (ADVP (AD 果真))
+		(VP (VV 引发)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (QP (CD 万))
+						(NP (NN 人)))
+					(VP (VV 争)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 睹)))))
+				    (DEC 的))
+			    (NP (PU 「)
+				(NN 国王)
+				(NN 企鹅)
+				(PU 」))
+			    (NP (NN 效应)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

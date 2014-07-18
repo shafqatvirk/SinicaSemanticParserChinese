@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 好看 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity describe"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP(IP (NP-SBJ (ADJP (JJ 男))
+			   (NP (NN 主播)))
+		   (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 拍来拍去)))
+		       (ADVP (AD 都))
+		       (VP (VC 是)
+			   (NP-PRD (DP (DT 那些))
+				   (NP (NN 颜色))))))
+	       (PU ，)
+	       (IP (NP-SBJ (-NONE- *pro*))
+		   (VP (ADVP (AD 不))
+		       (VP (VA 好看))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

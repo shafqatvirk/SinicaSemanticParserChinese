@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 献 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing dedicated/donated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-APP (NP-PN (NR 朝鲜))
+				  (ADJP (ADVP (AD 最))
+					(ADJP (JJ 高)))
+				  (NP (NN 领导人)))
+			  (NP-PN (NR 金正日)))
+		  (VP (NP-TMP (NT ３０日))
+		      (VP (VV 献)
+			  (AS 了)
+			  (NP-OBJ (NN 花圈))))) 
+	  </parse>
+	  <arg n="0">
+	  朝鲜 最 高 领导人 金正日 
+	  </arg>
+	  <arg n="1">
+	  花圈 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ３０日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

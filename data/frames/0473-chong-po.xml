@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冲破 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-APP (NP-PN (NR 中国))
+				 (NP (NN 小将)))
+			 (NP-PN (NR 罗莉)))
+	      (VP (NP-TMP (NT 今天))
+		  (PP-LOC (P 在)
+			  (NP (PN 这里)))
+		  (VP (VP (VV 冲破)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 东欧)
+						  (CC 和)
+						  (NR 美国))
+					   (NP (NN 选手)))
+				       (DEG 的))
+				  (NP (NN 重重包围))))
+		      (PU ，)
+		      (VP (VV 夺得)
+			  (NP-OBJ (DNP (NP (QP (OD 第二十九)
+					       (CLP (M 届)))
+					   (NP-PN (NN 世界)
+						  (NN 体操)
+						  (NN 锦标赛))
+					   (NP (NN 高低杠)))
+				       (DEG 的))
+				  (NP (NN 金牌))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 小将 罗莉 
+	  </arg>
+	  <arg n="1">
+	  东欧 和 美国 选手 的 重重包围 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 这里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

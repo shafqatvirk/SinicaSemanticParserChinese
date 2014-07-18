@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 七嘴八舌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 看)
+			(IP-OBJ (NP-SBJ (NN 报纸))
+				(VP (ADVP (AD 渐渐))
+				    (VP (VV 舒张))))))
+	    (PU ，)
+	    (NP-SBJ (NN 同学们))
+	    (VP (ADVP (AD 忍不住))
+		(VP (VV 七嘴八舌)
+		    (AS 了))
+		(VP (VV 起来)))) 
+	</parse>
+	<arg n="0">
+	同学们 
+	</arg>
+	<arg n="m" f="adv">
+	忍不住 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 看 报纸 渐渐 舒张 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

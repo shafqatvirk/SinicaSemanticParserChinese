@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捕杀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="hunter"/>
+    <role argnum="1" argrole="game"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (ADJP (JJ 珍稀))
+              (NP (NN 动物)))
+      (VP (LB 被)
+          (CP-OBJ (WHNP-4 (-NONE- *OP*))
+                  (IP (NP-SBJ (NN 人类))
+                      (VP (VV 捕杀)
+                          (NP-OBJ (-NONE- *T*-4))))))))
+	</parse>
+	<arg n="0"> 人类 </arg>
+	<V/>
+	<arg n="1"> (*T*-4)->(珍稀动物) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

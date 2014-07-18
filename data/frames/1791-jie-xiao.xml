@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揭晓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="result, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 根据)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-LOC (PN 这里))
+					  (ADVP (AD 新近))
+					  (VP (VV 公布))))
+				  (DEC 的)))
+			  (QP (CD 一)
+			      (CLP (M 项)))
+			  (NP (NN 统计))))
+	      (PU ，)
+	      (NP-SBJ (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (NP-TMP (NT 一九九六年))
+					  (NP-PN-LOC (NR 中国))
+					  (ADVP (AD 最))
+					  (VP (VA 大))))
+				  (DEC 的)))
+			  (QP (CD 五百)
+			      (CLP (M 家)))
+			  (NP (NN 外商)
+			      (NN 投资)
+			      (NN 企业)))
+		      (NP (NN 排序)
+			  (NN 结果)))
+	      (VP (VV 揭晓))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-2 一九九六年 中国 最 大 的 五百 家 外商 投资 企业 排序 结果 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 *OP* *T*-1 这里 新近 公布 的 一 项 统计 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

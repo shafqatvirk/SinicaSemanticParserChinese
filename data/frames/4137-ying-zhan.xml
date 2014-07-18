@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 迎战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people confronted in combat"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NT 今天))
+				    (DEG 的))
+			       (NP (NN 比赛)))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NR 中国))
+			      (NP (NN 国际)
+				  (NN 大师)))
+		      (NP-PN (NR 徐俊)))
+	      (VP (VV 迎战)
+		  (NP-OBJ (NP-APP (NP (NN 队友))
+				  (PU 、)
+				  (NP (NP (NN 国际))
+				      (ADJP (JJ 特级))
+				      (NP (NN 大师))))
+			  (NP-PN (NR 叶荣光))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 国际 大师 徐俊 
+	  </arg>
+	  <arg n="1">
+	  队友 、 国际 特级 大师 叶荣光 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 今天 的 比赛 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

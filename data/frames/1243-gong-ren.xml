@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 公认 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="recognizer"/>
+      <role argnum="1" argrole="thing recognized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 国内外)
+					      (NN 专家))
+				      (VP (VV 公认)))
+				  (DEC 的)))
+			  (NP (ADJP (JJ 深水))
+			      (ADJP (JJ 大))
+			      (NP (NN 港)))
+			  (NP (NN 良址))))) 
+	  </parse>
+	  <arg n="0">
+	  国内外 专家 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国际)
+		      (NN 社会))
+	      (VP (VV 公认)
+		  (PU ，)
+		  (IP-OBJ (IP-SBJ (NP-SBJ (NN 难民))
+				  (VP (ADVP (AD 自愿))
+				      (VP (VRD (VV 遣返)
+					       (VV 到))
+					  (NP-OBJ (NN 原籍国)))))
+			  (VP (VC 是)
+			      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 永久))
+						      (VP (VV 解决)
+							  (NP-OBJ (NN 难民)
+								  (NN 问题)))))
+					      (DEC 的)))
+				      (ADJP (JJ 最佳))
+				      (NP (NN 方案))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国际 社会 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  难民 自愿 遣返 到 原籍国 是 *OP* (*T*-1)->(最佳方案) 永久 解决 难民 问题 的 最佳 方案 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

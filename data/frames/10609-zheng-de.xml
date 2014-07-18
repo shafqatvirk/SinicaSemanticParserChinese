@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挣得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 earns"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 知识)
+			(NN 份子)))
+	    (VP (ADVP (AD 终於))
+		(VP (VV 挣得)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 片)))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 免於)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (VCD (VV 屈打)
+							     (VV 系狱))))))
+				    (DEC 的))
+			    (ADJP (JJ 自由))
+			    (NP (NN 天地)))))) 
+	</parse>
+	<arg n="0">
+	台湾 知识 份子 
+	</arg>
+	<arg n="1">
+	一 片 *PRO* 免於 *PRO* 屈打 系狱 的 自由 天地 
+	</arg>
+	<arg n="m" f="adv">
+	终於 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

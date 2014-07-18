@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搬回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 takes back"/>
+      <role argnum="2" argrole="place arg1 is taken to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 只要))
+			  (VP (VV 说)
+			      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				      (VP (VV 能)
+					  (VP (VV 招财)))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 就))
+		  (ADVP (AD 这麽))
+		  (QP-ADV (CD 一)
+			  (CLP (M 盆盆)))
+		  (ADVP (AD 立时))
+		  (VP (SB 被)
+		      (VP (VV 搬回)
+			  (NP-OBJ (NN 家)))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  家 
+	  </arg>
+	  <arg n="m" f="adv">
+	  立时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 盆盆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这麽 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *pro* 只要 说 *pro* 能 招财 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无暇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 doesn't have time for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-PRP (P 为)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 适应)
+						      (NP-OBJ (NP (NP (ADJP (JJ 新))
+								      (NP (NN 技术)))
+								  (NP (NN 发展)))
+							      (CC 和)
+							      (NP (NN 就业)
+								  (NN 要求))))))
+				      (VP (MSP 而)
+					  (VP (ADVP (AD 紧张))
+					      (VP (VV 工作)
+						  (CC 或)
+						  (VV 学习))))))
+			      (DEC 的)))
+		      (NP (NN 年轻人)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 无暇)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 谈恋爱))
+				  (PU 、)
+				  (VP (VV 交)
+				      (NP-OBJ (NN 朋友)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 为 *PRO* 适应 新 技术 发展 和 就业 要求 而 紧张 工作 或 学习 的 年轻人 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 谈恋爱 、 交 朋友 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

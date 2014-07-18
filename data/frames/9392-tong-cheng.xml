@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 统称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 calls"/>
+      <role argnum="2" argrole="name by which arg0 calls arg1 collectively"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 埔里))
+		      (CC 与)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 比邻)))
+				  (DEC 的)))
+			  (NP-PN (NR 鱼池)
+				 (PU 、)
+				 (NR 国姓)
+				 (PU 、)
+				 (NR 仁爱)
+				 (ETC 等))
+			  (NP (NN 乡))))
+	      (VP (SB 被)
+		  (VP (VCP (VV 统称)
+			   (VC 为))
+		      (NP-PN-OBJ (PU 「)
+				 (NR 水沙连)
+				 (PU 」))))) 
+	  </parse>
+	  <arg n="1">
+	  埔里 与 *OP* *T*-1 比邻 的 鱼池 、 国姓 、 仁爱 等 乡 
+	  </arg>
+	  <arg n="2">
+	  「 水沙连 」 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

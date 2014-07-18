@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 剩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity left"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-PN-SBJ (NR 中国))
+		      (VP (VV 恢复)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 对)
+					      (NP-PN (NR 香港)))
+				      (VP (VV 行使)
+					  (NP-OBJ (NN 主权)))))))
+	      (VP (ADVP (AD 仅))
+		  (VP (VV 剩)
+		      (NP-OBJ (QP (CD ６４)
+				  (CLP (M 天)))
+			      (NP (NN 时间)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 恢复 *PRO* 对 香港 行使 主权 
+	  </arg>
+	  <arg n="1">
+	  ６４ 天 时间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

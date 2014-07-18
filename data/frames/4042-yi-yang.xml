@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 一样 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP (P 和)
+			  (NP (QP (CD 许多))
+			      (ADJP (JJ 民营))
+			      (NP (NN 科技)
+				  (NN 企业))))
+		      (VP (VA 一样)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="0">
+	  和 许多 民营 科技 企业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is like"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 经过)
+		      (NP (DNP (NP (QP (CD 一)
+				       (CLP (M 段)))
+				   (NP (NN 时期)))
+			       (DEG 的))
+			  (NP (PU “)
+			      (NN 投石问路)
+			      (PU ”))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 越来越))
+				      (VP (VA 多))))
+			      (DEC 的)))
+		      (NP (NN 外商)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (P 象)
+				  (NP-PN (NR 美国)
+					 (NR 百时美)
+					 (NR 施贵宝)
+					 (NN 公司)))
+			      (VP (VA 一样))))
+		  (PU ，)
+		  (VP (VP (VV 看好)
+			  (NP-OBJ (DNP (NP-PN (NR 上海))
+				       (DEG 的))
+				  (NP (NN 投资)
+				      (NN 环境)
+				      (CC 和)
+				      (NN 市场)
+				      (NN 潜力))))
+		      (PU ，)
+		      (VP (ADVP (AD 纷纷))
+			  (VP (VP (VV 追加)
+				  (NP-OBJ (NN 投资)))
+			      (VP (VV 扩大)
+				  (NP-OBJ (NN 再生产)))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (ADVP (AD 逐步))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-PN-SBJ (NR 上海))
+				      (VP (VV 建成)
+					  (NP-OBJ (NP (PN 其))
+						  (DNP (PP (P 在)
+							   (NP (NP-PN (NR 中国))
+							       (NP (ADVP (AD 甚至))
+								   (NP (NP-PN (NR 亚太))
+								       (NP (NN 地区))))))
+						       (DEG 的))
+						  (NP (NN 经营)
+						      (PU 、)
+						      (NN 销售))
+						  (NP (NN 中心)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  象 美国 百时美 施贵宝 公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

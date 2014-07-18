@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一应俱全 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 成於)
+				    (NP-PN-OBJ (NR 元朝))))
+			    (DEC 的)))
+		    (NP-TTL (PU 《)
+			    (NN 丸经)
+			    (PU 》)))
+	    (PU ，)
+	    (NP-SBJ (NN 内容))
+	    (VP (PP-DIR (PP (P 从)
+			    (NP (NN 比赛)
+				(NN 规则)))
+			(PP (P 到)
+			    (NP (NN 挥杆)
+				(NN 要领))))
+		(PU ，)
+		(VP (VV 一应俱全)))) 
+	</parse>
+	<arg n="0" f="psr">
+	*OP* *T*-1 成於 元朝 的 《 丸经 》 
+	</arg>
+	<arg n="0" f="pse">
+	内容 
+	</arg>
+	<arg n="m" f="dir">
+	从 比赛 规则 到 挥杆 要领 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

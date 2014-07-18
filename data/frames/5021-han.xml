@@ -1,0 +1,146 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 喊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity shouting"/>
+    <role argnum="1" argrole="thing arg0 shouts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NP (PU 「)
+			(NT 六四)
+			(PU 」))
+		    (QP (OD 十))
+		    (NP (NN 周年)))
+	    (PU ，)
+	    (NP-SBJ (NN 大陆))
+	    (VP (ADVP (AD 仍))
+		(VP (VV 喊)
+		    (AS 著)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 回归)
+				(NP-OBJ (DNP (NP (NT 五四)
+						 (NN 时代))
+					     (DEG 的))
+					(NP (PU 「)
+					    (NN 民主)
+					    (PU 、)
+					    (NN 科学)
+					    (PU 」))
+					(NP (NN 精神)))))))) 
+	</parse>
+	<arg n="0">
+	大陆 
+	</arg>
+	<arg n="1">
+	*PRO* 回归 五四 时代 的 「 民主 、 科学 」 精神 
+	</arg>
+	<arg n="m" f="adv">
+	仍 
+	</arg>
+	<arg n="m" f="tmp">
+	「 六四 」 十 周年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (INTJ-TPC-1 (PU 「)
+			(IJ 嘿咻))
+	    (PU ！)
+	    (PU 」)
+	    (NP-SBJ (NN 孩子们))
+	    (VP (VV 喊)
+		(AS 著)
+		(INTJ-OBJ (-NONE- *T*-1)))) 
+	</parse>
+	<arg n="0">
+	孩子们 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TPC (PU 「)
+		     (NP (NN 厝))
+		     (LC 里))
+	    (PU ！)
+	    (PU 」)
+	    (NP-SBJ (NN 爸爸))
+	    (VP (ADVP (AD 大))
+		(VP (VV 喊)
+		    (QP-EXT (CD 一)
+			    (CLP (M 声)))))) 
+	</parse>
+	<arg n="0">
+	爸爸 
+	</arg>
+	<arg n="m" f="ext">
+	一 声 
+	</arg>
+	<arg n="m" f="adv">
+	大 
+	</arg>
+	<arg n="m" f="tpc">
+	厝 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is able to say"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 几乎))
+		(VP (VE 没有)
+		    (IP-OBJ (NP-SBJ (NN 店家))
+			    (VP (VPT (VV 喊)
+				     (DER 得)
+				     (VV 出))
+				(NP-OBJ (DNP (NP (PN 它们))
+					     (DEG 的))
+					(NP (PU 「)
+					    (NN 本名)
+					    (PU 」)))))))) 
+	</parse>
+	<arg n="0">
+	店家 
+	</arg>
+	<arg n="1">
+	它们 的 「 本名 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

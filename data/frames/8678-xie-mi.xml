@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 泄密 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="secret arg0 causes to leak out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 以免)
+		  (IP-OBJ (NP-SBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 播毕)))
+				  (NP (NN 集数)))
+			  (VP (VV 泄密))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 播毕 集数 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

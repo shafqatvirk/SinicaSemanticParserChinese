@@ -1,0 +1,210 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 建成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="builder"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (QP (CD 三０一))
+			  (NP (NN 国道)))
+		      (NP (NP-PN (NR 海拉尔)
+				 (CC 至)
+				 (NR 满洲里))
+			  (NP (NN 段))))
+	      (VP (VCD (VV 建成)
+		       (VV 通车)))) 
+	  </parse>
+	  <arg n="1">
+	  三０一 国道 海拉尔 至 满洲里 段 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-PN-SBJ (NP-PN (NR 汕头))
+			 (NP (ADJP (JJ 高新))
+			     (NP (NN 技术)))
+			 (NP (NN 开发区)))
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 累计))
+		  (VP (VP (VV 投资)
+			  (QP-OBJ (CD 十八亿)
+				  (CLP (M 元))))
+		      (PU ，)
+		      (VP (VV 建成)
+			  (NP-OBJ (NN 厂房))
+			  (QP-EXT (CD 三十七万)
+				  (CLP (M 平方米))))))) 
+	  </parse>
+	  <arg n="0">
+	  汕头 高新 技术 开发区 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  厂房 	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三十七万 平方米 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 连云港)
+			 (NN 如意)
+			 (NN 集团))
+	      (VP (VP (VV 利用)
+		      (NP-OBJ (NP (NP (NP-PN (NR 日本))
+				      (NP (NN 政府)))
+				  (NP (NN 贷款)))
+			      (CC 和)
+			      (NP (NP (NN 外商))
+				  (ADJP (JJ 直接))
+				  (NP (NN 投资)))))
+		  (PU ，)
+		  (VP (VV 建成)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-2))
+					  (NP-TMP (NT 目前))
+					  (NP-PN-LOC (NR 中国))
+					  (IP (IP (NP-SBJ (NN 出口量))
+						  (VP (ADVP (AD 最))
+						      (VP (VA 大))))
+					      (PU 、)
+					      (IP (NP-SBJ (NN 品种))
+						  (VP (ADVP (AD 最))
+						      (VP (VA 多))))))
+				      (DEC 的)))
+			      (NP (NN 蔬菜)
+				  (NN 加工)
+				  (NN 销售)
+				  (NN 企业)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  连云港 如意 集团 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* (*T*-2)->(蔬菜加工销售企业) 目前 中国 出口量 最 大 、 品种 最 多 的 蔬菜 加工 销售 企业 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="builder"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="result"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (NP-ADV (QP (CD 三五)
+			  (CLP (M 年)))
+		      (NP (NN 时间)))
+	      (NP-PN-SBJ (NR 北海))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 建成)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 个)))
+			      (DNP (NP (NN 现代化)
+				       (NN 都市))
+				   (DEG 的))
+			      (NP (NN 框架)))))) 
+	  </parse>
+	  <arg n="1">
+	  北海 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一 个 现代化 都市 的 框架 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 经过)
+		      (NP (DNP (NP (QP (CD 一)
+				       (CLP (M 段)))
+				   (NP (NN 时期)))
+			       (DEG 的))
+			  (NP (PU “)
+			      (NN 投石问路)
+			      (PU ”))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 越来越))
+				      (VP (VA 多))))
+			      (DEC 的)))
+		      (NP (NN 外商)))
+	      (VP (ADVP (AD 逐步))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-PN-SBJ (NR 上海))
+			      (VP (VV 建成)
+				  (NP-OBJ (NP (PN 其))
+					  (DNP (PP (P 在)
+						   (NP (NP-PN (NR 中国))
+						       (NP (ADVP (AD 甚至))
+							   (NP (NP-PN (NR 亚太))
+							       (NP (NN 地区))))))
+					       (DEG 的))
+					  (NP (NN 经营)
+					      (PU 、)
+					      (NN 销售))
+					  (NP (NN 中心)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(外商) 越来越 多 的 外商 	  	  
+	  </arg>
+	  <arg n="1">
+	  上海 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  其 在 中国 甚至 亚太 地区 的 经营 、 销售 中心 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 对待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 港币)
+		      (CC 和)
+		      (NN 人民币))
+	      (VP (VP (PP-MNR (P 作为)
+			      (NP (DNP (NP (NP-PN (NR 香港))
+					   (CC 与)
+					   (NP (NN 内地)))
+				       (DEG 的))
+				  (ADJP (JJ 法定))
+				  (NP (NN 货币))))
+		      (PP-LOC (P 在)
+			      (NP (QP (CD 两))
+				  (NP (NN 地))))
+		      (VP (VV 流通)))
+		  (PU ，)
+		  (VP (ADVP (AD 相互))
+		      (VP (VP-FOC (VV 视同)
+				  (NP-OBJ (NN 外币)))
+			  (VP (VV 对待)))))) 
+	  </parse>
+	  <arg n="1">
+	  港币 和 人民币 
+	  </arg>
+	  <arg n="2">
+	  视同 外币 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相互 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

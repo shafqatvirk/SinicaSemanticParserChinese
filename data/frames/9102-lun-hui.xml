@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 轮回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 turns around to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-1 (IP (PP-TMP (P 当)
+				(IP (NP-SBJ (NN 市场))
+				    (VP (VV 腻)
+					(AS 了)
+					(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-2))
+							    (VP (VA 柔弱)
+								(PU 、)
+								(VA 漂亮)))
+							(DEC 的)))
+						(NP (NN 玉女))))))
+			(PU ，)
+			(NP-SBJ (NN 偶像)
+				(NN 需求))
+			(VP (ADVP (AD 就))
+			    (VP (VRD (VV 轮回)
+				     (VV 到))
+				(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (PU 『)
+							(VP (VV 模糊)
+							    (NP-OBJ (NN 性别)))
+							(PU 、)
+							(VP (VA 男孩子气))
+							(PU 』)))
+						(DEC 的))
+					(NP-PN (NR 凤飞飞))
+					(NP (NN 形象))))))) 
+	  </parse>
+	  <arg n="0">
+	  偶像 需求 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 『 模糊 性别 、 男孩子气 』 的 凤飞飞 形象 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当 市场 腻 了 *OP* *T*-2 柔弱 、 漂亮 的 玉女 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

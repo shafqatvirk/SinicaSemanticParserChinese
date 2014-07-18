@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重溯 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 goes back along and recounts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-PN-SBJ (NN 文建会))
+			 (VP (PP-TMP (P 在)
+				     (QP (NP-PN (NR 民国))
+					 (QP (OD 八十三)
+					     (CLP (M 年)))))
+			     (VP (VV 提出)
+				 (NP-OBJ (DNP (NP (PU 「)
+						  (NN 社区)
+						  (NN 总体)
+						  (NN 营造)
+						  (PU 」))
+					      (DEG 的))
+					 (NP (NN 构想))))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (NP (DP (DT 全))
+			(NP-PN (NR 台湾)))
+		    (NP (DP (DT 各))
+			(NP (NN 地)))
+		    (DNP (ADJP (JJ 自发型))
+			 (DEG 的))
+		    (NP (PU 「)
+			(NN 文史)
+			(NN 工作室)
+			(PU 」)))
+	    (VP (VP (ADVP (AD 纷纷))
+		    (VP (VV 成立)))
+		(PU ，)
+		(VP (PP-DIR (P 从)
+			    (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (-NONE- *T*-1))
+						 (VP (VV 尘封已久))))
+					 (DEC 的)
+					 (NP (NP (NN 荷兰文))
+					     (PU 、)
+					     (NP (NR 清朝)
+						 (NN 文书))
+					     (PU 、)
+					     (NP (ADJP (JJ 日据))
+						 (NP (NN 文献))))))
+				 (LC 中)))
+		    (PU ，)
+		    (QP-ADV (QP (CD 一)
+				(CLP (M 点)))
+			    (QP (CD 一)
+				(CLP (M 滴))))
+		    (VP (VV 重溯)
+			(NP-OBJ (DNP (NP (NP-PN-APP (NR 福尔摩沙))
+					 (CP (WHNP-2 (-NONE- *OP*))
+					     (CP (IP (NP (-NONE- *T*-2))
+						     (VP (VA 美丽)))
+						 (DEC 之)))
+					 (NP (NN 岛)))
+				     (DEG 的))
+				(ADJP (JJ 曲折))
+				(NP (NN 历史))))))) 
+	</parse>
+	<arg n="0">
+	全 台湾 各 地 自发型 的 「 文史 工作室 」 
+	</arg>
+	<arg n="1">
+	福尔摩沙 *OP* *T*-2 美丽 之 岛 的 曲折 历史 
+	</arg>
+	<arg n="m" f="adv">
+	一 点 一 滴 
+	</arg>
+	<arg n="m" f="dir">
+	从 *OP* *T*-1 尘封已久 的 荷兰文 、 清朝 文书 、 日据 文献 中 
+	</arg>
+	<arg n="m" f="tmp">
+	文建会 在 民国 八十三 年 提出 「 社区 总体 营造 」 的 构想 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

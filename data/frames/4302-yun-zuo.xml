@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 operates/runs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 土地)
+		      (NN 基金))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 独立)
+			  (PP (P 於)
+			      (P 与)
+			      (LCP (NP (NN 外汇)
+				       (NN 基金))
+				   (LC 之外))))
+		      (PU ，)
+		      (VP (PP-LGS (P 由)
+				  (NP-PN (NR 香港)
+					 (NN 金融)
+					 (NN 管理局)))
+			  (PP-LOC (P 在)
+				  (LCP (NP (DNP (NP (NN 财政司)
+						    (NN 司长))
+						(DEG 的))
+					   (NP (NN 指导)))
+				       (LC 下)))
+			  (VP (VV 运作)))))) 
+	  </parse>
+	  <arg n="1">
+	  土地 基金 
+	  </arg>
+	  <arg n="0">
+	  由 香港 金融 管理局 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 财政司 司长 的 指导 下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 香港))
+		      (NP (NN 经贸)
+			  (NN 事务)))
+	      (VP (DVP (VP (VV 一如既往))
+		       (DEV 地))
+		  (VP (VV 运作)))) 
+	  </parse>
+	  <arg n="1">
+	  香港 经贸 事务 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一如既往 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 各))
+			  (NP (NN 地区)))
+		      (PU 、)
+		      (NP (DP (DT 各))
+			  (NP (NN 部门))))
+	      (VP (VV 要)
+		  (VP (VP (VP (VV 关心)
+			      (NP-OBJ (-NONE- *RNR*-1)))
+			  (CC 和)
+			  (VP (VV 支持)
+			      (NP-OBJ-1 (DNP (NP (NN 金融)
+						 (NN 机构))
+					     (DEG 的))
+					(ADJP (JJ 健康))
+					(NP (NN 发展)))))
+		      (PU ，)
+		      (VP (VV 维护)
+			  (NP-OBJ (NN 金融)
+				  (NN 机构)
+				  (NN 信誉)))
+		      (PU ，)
+		      (VP (PP-MNR (P 按)
+				  (NP (NN 市场)
+				      (NN 经济)
+				      (NN 原则)
+				      (NN 规范)))
+			  (VP (VV 运作)))
+		      (PU ，)
+		      (VP (PP-PRP (P 为)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 建立)
+					  (NP-OBJ (DNP (ADJP (JJ 新型))
+						       (DEG 的))
+						  (NP (NN 银)
+						      (NN 企))
+						  (NP (NN 关系))))))
+			  (VP (VV 创造)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VA 良好)))
+					      (DEC 的)))
+				      (NP (NN 经济)
+					  (NN 环境)))))))) 
+	  </parse>
+	  <arg n="0">
+	  各 地区 、 各 部门 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 市场 经济 原则 规范 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

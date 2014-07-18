@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 游泳 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="swimmer"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 若))
+			(VP (VC 是)
+			    (VP (PP-TMP (P 临)
+					(NP (NN 老)))
+				(ADVP (AD 才))
+				(VP (VV 开始)
+				    (VP (VV 运动)))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 最好))
+		(ADVP (AD 还是))
+		(VP (VV 选择)
+		    (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 游泳))
+					(PU 、)
+					(VP (ADVP (AD 快步))
+					    (VP (VV 走)))
+					(PU 、)
+					(VP (VV 踩)
+					    (NP-OBJ (ADJP (JJ 固定式))
+						    (NP (NN 脚踏车))))
+					(ETC 等)))
+			    (NP (NN 方式)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

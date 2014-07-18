@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 必须 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="what is necessary"/>
+      <role argnum="1" argrole="entity arg0 is necessary for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 必须)))
+			    (DEC 的))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 接受)
+				      (NP-OBJ (NN 换装))))
+			      (DEC 的)))
+		      (NP (NN 人员)))
+	      (VP (VV 必须)
+		  (NP-OBJ (DNP (NP (QP (ADVP (AD 至少))
+				       (QP (CD 四百)))
+				   (NP (NN 小时)))
+			       (DEG 的))
+			  (NP (NN 飞行)
+			      (NN 时数))))) 
+	  </parse>
+	  <arg n="0">
+	  至少 四百 小时 的 飞行 时数 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 接受 换装 的 人员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

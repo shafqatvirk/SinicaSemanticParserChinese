@@ -1,0 +1,135 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开拍 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 starts shooting"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (DP (DT 那些))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 只))
+					    (VP (VV 得到)
+						(NP-OBJ (QP (CD 五百万))
+							(NP (NN 辅导金))))))
+				    (DEC 的)))
+			    (NP (NN 创作者)))
+		    (PU ，)
+		    (VP (VV 想)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 开拍)
+				    (NP-OBJ (NN 电影))))))
+	    (PU ，)
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 寻求)
+				    (NP-OBJ (NN 资金))))
+			    (DEC 的))
+		    (NP (NN 困难度)))
+	    (VP (VV 会)
+		(VP (ADVP (AD 更))
+		    (VP (VA 高))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	电影 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-MNR (P 靠著)
+		    (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 在)
+					(NP-OBJ (NN 电影界))
+					(QP-EXT (CD 二十多)
+						(CLP (M 年)))))
+				(DEC 的))
+			(NP (NN 人脉)
+			    (NN 关系))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 洪维健))
+	    (VP (VP (VV 得到)
+		    (NP-OBJ (CP-APP (IP (NP-PN-SBJ (NR 鸿荣)
+						   (NN 片厂)
+						   (CC 和)
+						   (NR 台北)
+						   (NN 冲印厂))
+					(VP (PP-MNR (P 以)
+						    (NP (NP (NN 摄影)
+							    (NN 机器)
+							    (NN 设备))
+							(PU 、)
+							(NP (QP (CD 部分))
+							    (NP (NN 工作)
+								(NN 人员)))
+							(PU 、)
+							(NP (NN 冲印费))
+							(ETC 等)))
+					    (VP (VV 充抵)
+						(NP-OBJ (NN 投资)))))
+				    (DEC 的))
+			    (NP (NN 方式))))
+		(PU ，)
+		(VP (VV 得以)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 开拍)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-TTL-SBJ (PU 《)
+				     (NN 徵婚)
+				     (NN 启事)
+				     (PU 》))
+			 (VP (VV 筹备)
+			     (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 开拍)))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 陈国富))
+	    (VP (VV 希望)
+		(IP-OBJ (PP-ADV (P 除了)
+				(LCP (NP (QP (CD 一千万))
+					 (NP (NN 辅导金)))
+				     (LC 外)))
+			(PU ，)
+			(NP-PN-SBJ (NR 中影))
+			(VP (ADVP (AD 再))
+			    (VP (VV 出)
+				(NP-OBJ (QP (CD 九百万)
+					    (CLP (M 元)))
+					(NP (NN 资金)))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

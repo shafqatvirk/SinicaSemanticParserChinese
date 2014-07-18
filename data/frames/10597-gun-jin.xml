@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 滚进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 rolls into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (NP-ADV (NN 其中))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (QP (CLP (M 个)))
+				    (NP (NN 球)))
+			    (VP (VV 滚进)
+				(AS 了)
+				(NP-OBJ (NN 兔子)
+					(NN 窝))))))) 
+	</parse>
+	<arg n="0">
+	个 球 
+	</arg>
+	<arg n="1">
+	兔子 窝 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拍卖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing auctioned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC-5 (CP (WHNP-4 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-4))
+				    (VP (PP-TMP (P 在)
+						(LCP (IP (NP-SBJ (NN 限期))
+							 (VP (VV 期满)))
+						     (LC 后)))
+					(ADVP (AD 仍))
+					(VP (VV 没有)
+					    (VP (VV 缴纳)
+						(NP-OBJ (NN 税款))))))
+				(DEC 的))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 要)
+		  (VP (PP-MNR (P 依)
+			      (NP (NN 法)))
+		      (VP (VV 拍卖)
+			  (NP-OBJ (-NONE- *T*-5)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-5 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  依 法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-PN-SBJ (NR 陕西))
+		    (VP (ADVP (AD 将))
+			(PP-DIR (P 向)
+				(NP (NN 海内外)))
+			(VP (VP (VV 推出)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 批)))
+					(ADJP (JJ 国有))
+					(ADJP (JJ 小))
+					(NP (NN 企业))))
+			    (VP (VV 拍卖))))) ) 
+	  </parse>
+	  <arg n="0">
+	  陕西 
+	  </arg>
+	  <arg n="m" f="dir">
+	  向 海内外 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

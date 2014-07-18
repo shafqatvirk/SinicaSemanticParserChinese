@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 告诫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="warner"/>
+      <role argnum="1" argrole="goal"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-LOC (P 在)
+					      (CLP (NP (NP (DP (DT 整)
+							       (CLP (M 个)))
+							   (NP (NN 舞会)))
+						       (NP (NN 过程)))
+						   (LC 中)))
+				      (VP (VV 保持)
+					  (AS 着)
+					  (NP-OBJ (ADJP (JJ 清醒))
+						  (NP (NN 头脑))))))
+			      (DEC 的)))
+		      (NP-PN (NR 因斯)))
+	      (PU ，)
+	      (VP (ADVP (AD 不断))
+		  (PP-MNR (P 通过)
+			  (NP (NN 酒吧)
+			      (NN 扩音器)))
+		  (VP (VP (VV 要求)
+			  (NP-PN-OBJ (NR 加拉切尔))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 保持)
+				  (NP-OBJ (NN 冷静)))))
+		      (PU ，)
+		      (VP (VV 告诫)
+			  (NP-OBJ (NN 队友))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 要)
+				      (VP (VV 作出)
+					  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-2))
+							      (VP (VA 过头)))
+							  (DEC 的)))
+						  (NP (NN 举动))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(因斯) 在 整 个 舞会 过程 中 保持 着 清醒 头脑 的 因斯 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  队友 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 不 要 作出 *OP* (*T*-2)->(举动) 过头 的 举动 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不断 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  通过 酒吧 扩音器 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

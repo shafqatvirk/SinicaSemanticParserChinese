@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拼拼凑凑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="things arg0 puts together"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 一)
+			      (CLP (M 个)))
+			  (NP (NN 好处)))
+		  (VP (VC 是)
+		      (PU ，)
+		      (IP-PRD (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 有时))
+				  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-MNR (P 就)
+						      (NP (DNP (ADJP (JJ 现有))
+							       (DEG 的))
+							  (NP (NN 原料))))
+					      (VP (VV 拼拼凑凑))))
+				  (PU ，)
+				  (ADVP (AD 还))
+				  (VP (VV 可以)
+				      (VP (VP (VRD (VV 创造)
+						   (VV 出))
+					      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							  (CP (IP (NP-SBJ (-NONE- *T*-1))
+								  (VP (ADVP (AD 大))
+								      (VP (VV 受)
+									  (NP-OBJ (NN 家人))
+									  (IP (NP-SBJ (-NONE- *PRO*))
+									      (VP (VV 赞赏))))))
+							      (DEC 的)))
+						      (ADJP (JJ 新))
+						      (NP (NN 食谱))))
+					  (VP (VV 来)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  就 现有 的 原料 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

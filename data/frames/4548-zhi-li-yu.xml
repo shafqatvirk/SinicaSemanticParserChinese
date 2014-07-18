@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致力于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes efforts in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 苏州))
+		      (NP (NN 新区)))
+	      (VP (VP (VC 是)
+		      (NP-PRD (NP-PN (NR 中国))
+			      (ADJP (JJ 国家级))
+			      (NP (ADJP (JJ 高新))
+				  (NP (NN 技术)))
+			      (NP (NN 开发区)
+				  (NN 之一))))
+		  (PU ，)
+		  (VP (ADVP (AD 长期))
+		      (VP (VV 致力于)
+			  (NP-OBJ (NN 环保)
+				  (NN 工作)))))) 
+	  </parse>
+	  <arg n="0">
+	  苏州 新区 
+	  </arg>
+	  <arg n="1">
+	  环保 工作 
+	  </arg>
+	  <arg n="m" f="adv">
+	  长期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (PP (P 与)
+			  (NP (PN 此)))
+		      (NP (NN 同时)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 福州))
+	      (VP (VV 致力于)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 优化)
+			      (NP-OBJ (NP (NN 投资))
+				      (ADJP (JJ 软))
+				      (NP (NN 环境))))))) 
+	  </parse>
+	  <arg n="0">
+	  福州 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 优化 投资 软 环境 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  与 此 同时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

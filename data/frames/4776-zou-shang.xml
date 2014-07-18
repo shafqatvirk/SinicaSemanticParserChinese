@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 走上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 moves onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NR 大寨))
+		      (PU ，)
+		      (DP (DT 这)
+			  (CLP (M 方)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 昔日))
+				      (PP-MNR (P 以)
+					      (NP (NN 粮)))
+				      (VP (VV 为)
+					  (NP-OBJ (NN 纲)))))
+			      (DEC 的)))
+		      (ADJP (JJ 偏僻))
+		      (NP (NN 黄土)
+			  (NN 高原)))
+	      (PU ，)
+	      (VP (NP-TMP (NT 如今))
+		  (ADVP (AD 已))
+		  (VP (VV 走上)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (NN 农)
+						  (NN 工)
+						  (NN 商))
+					  (VP (VV 并举)))
+				      (DEC 的))
+			      (DNP (NP (NN 发展))
+				   (DEG 之))
+			      (NP (NN 路)))))) 
+	  </parse>
+	  <arg n="0">
+	  大寨 ， 这 方 *OP* *T*-1 昔日 以 粮 为 纲 的 偏僻 黄土 高原 
+	  </arg>
+	  <arg n="1">
+	  农 工 商 并举 的 发展 之 路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  如今 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 中)
+				 (NR 美))
+			  (NP (NN 关系)))
+		  (VP (ADVP (AD 再次))
+		      (VP (VV 走上)
+			  (AS 了)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 健康)
+							(PU 、)
+							(AD 稳定))
+						  (VP (VV 发展))))
+					  (DEC 的))
+				  (NP (NN 道路)))))) 
+	  </parse>
+	  <arg n="0">
+	  中 美 关系 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 健康 、 稳定 发展 的 道路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

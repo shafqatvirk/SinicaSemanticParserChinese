@@ -1,0 +1,217 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 嫌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is unhappy about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 只要))
+			    (VP (VV 开始))))
+		(PU ，)
+		(NP-SBJ (DP (DT 任何))
+			(NP (NN 努力)))
+		(VP (ADVP (AD 都))
+		    (ADVP (AD 不))
+		    (VP (VV 嫌)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VA 迟)))))) 
+	</parse>
+	<arg n="1">
+	任何 努力 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 迟 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 只要 开始 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-CND (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (CS 要是))
+		    (VP (VV 嫌)
+			(NP-OBJ (NN 麻烦))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	麻烦 
+	</arg>
+	<arg n="m" f="dis">
+	要是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NT 今天))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (QP-PRD (QP (QP (CD 八)
+						    (PU 、))
+						(QP (CD 九十万)))
+					    (QP (CD 一)
+						(CLP (M 套))))))
+			    (DEC 的)))
+		    (ADJP (JJ 名贵))
+		    (NP (NN 球具)))
+	    (VP (VP (PP-ADV (P 与)
+			    (NP (PN 之)))
+		    (VP (VRD (VV 相较)
+			     (VV 起来))))
+		(VP (ADVP (AD 恐怕))
+		    (ADVP (AD 都))
+		    (VP (VV 嫌)
+			(VP (VV 寒碜)))))) 
+	</parse>
+	<arg n="1">
+	今天 *OP* *T*-1 八 、 九十万 一 套 的 名贵 球具 
+	</arg>
+	<arg n="1" f="prd">
+	寒碜 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="adv">
+	恐怕 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-IMP (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 不))
+		    (VP (VV 要)
+			(VP (VV 嫌)
+			    (NP-OBJ (NN 钱))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VA 少))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	钱 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 少 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 如果))
+		    (IP (NP-TPC (PN 这样))
+			(NP-SBJ (-NONE- *pro*))
+			(VP (ADVP (AD 还))
+			    (VP (VV 嫌)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 乾脆))
+		(VP (VP-FOC (VV 饿死))
+		    (VP (VA 好)
+			(AS 了))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	这样 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 甚至))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 人))
+			    (VP (PP-PRP (P 因)
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VE 没有)
+						(NP-OBJ (NN 行动)
+							(NN 电话)))))
+				(PU ，)
+				(VP (VP (SB 被)
+					(VP (VV 嫌)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (ADVP (AD 不))
+							(VP (VV 上道))))))
+				    (VP (MSP 而)
+					(VP (VPT (VV 追)
+						 (AD 不)
+						 (VV 到))
+					    (NP-OBJ (ADJP (JJ 女))
+						    (NP (NN 朋友))))))))))) 
+	</parse>
+	<arg n="1">
+	人 
+	</arg>
+	<arg n="1" f="prd">
+	*PRO* 不 上道 
+	</arg>
+	<arg n="m" f="prp">
+	因 *PRO* 没有 行动 电话 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

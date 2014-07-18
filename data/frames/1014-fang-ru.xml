@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (DP (DT 这))
+		      (NP (NN 期间)))
+	      (PU ，)
+	      (NP-SBJ (NN 渔民们))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 都))
+		  (VP (VV 要)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (ADVP (AD 人工))
+							  (VP (VV 繁殖)
+							      (NP-OBJ (-NONE- *T*-1)))))
+						  (DEC 的)))
+					  (QP (CD 数亿)
+					      (CLP (M 尾)))
+					  (NP (NN 对虾)
+					      (PU 、)
+					      (NN 石斑鱼)
+					      (PU 、)
+					      (NN 海蜇))
+					  (NP (NN 幼苗)))
+				  (VP (VP (VV 放入)
+					  (NP-OBJ (NN 大海)))
+				      (PU ，)
+				      (VP (MSP 以)
+					  (VP (VV 促进)
+					      (NP-OBJ (NN 海洋)
+						      (NN 生态)
+						      (NN 平衡)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  渔民们 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 人工 繁殖 *T*-1 的 数亿 尾 对虾 、 石斑鱼 、 海蜇 幼苗 
+	  </arg>
+	  <arg n="2">
+	  大海 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 期间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 押宝 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity bet on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 好在))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 不管))
+			  (VP (VC 是)
+			      (NP-PRD (NN 销售)
+				      (CC 或)
+				      (NN 生产)))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 不少))
+		      (NP (NN 台商)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 采取)
+		      (NP-OBJ (CP-APP (IP (PU 「)
+					  (NP-SBJ (-NONE- *PRO*))
+					  (VP (NP-LOC (NP-APP (NP (NN 大陆))
+							      (PU 、)
+							      (NP-PN (NR 东南亚)))
+						      (QP (CD 两))
+						      (NP (NN 地)))
+					      (VP (VV 押宝)))
+					  (PU 」))
+				      (DEC 的))
+			      (NP (NN 模式)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  大陆 、 东南亚 两 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

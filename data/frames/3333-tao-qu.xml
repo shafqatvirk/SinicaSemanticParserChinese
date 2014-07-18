@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 套取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing extracted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 一些))
+			  (NP (NN 国际)
+			      (NN 投机)
+			      (NN 资本)))
+		  (PU ，)
+		  (VP (VP (VP (VV 混入)
+			      (NP-OBJ (ADJP (JJ 经常))
+				      (NP (NN 项目))))
+			  (VP (VV 汇入)
+			      (NP-OBJ (NN 境内))))
+		      (PU ，)
+		      (CC 或)
+		      (VP (VP (VV 入)
+			      (NP-OBJ (NN 境内)
+				      (NN 股市)))
+			  (VP (VV 炒作)))
+		      (PU ，)
+		      (CC 或)
+		      (VP (VP (PP-LOC (P 在)
+				      (NP (NP-PN (NR 中国))
+					  (NP (NN 境内))))
+			      (VP (VV 购买)
+				  (NP-OBJ (ADJP (JJ 假))
+					  (NP (NN 报关单)))))
+			  (VP (VP (VV 购汇))
+			      (VP-PRP (VV 套取)
+				      (NP-OBJ (NN 汇差))))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 国际 投机 资本 
+	  </arg>
+	  <arg n="1">
+	  汇差 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

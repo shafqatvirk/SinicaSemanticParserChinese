@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 折 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 breaks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 宋朝))
+		    (NP-TTL (PU 〈)
+			    (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 折)
+					(NP-OBJ (NN 槛))))
+			    (NP (NN 图))
+			    (PU 〉)))
+	    (VP (VE 有)
+		(NP-OBJ (QP (CD 一))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 感人))))
+			(NP (NN 故事))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	槛 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity turning back"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-PRP (P 因为)
+			(IP (NP-SBJ (DNP (NP (NN 当地))
+					 (DEG 的))
+				    (NP (NN 配套)))
+			    (VP (VA 不足))))
+		(PU ，)
+		(ADVP (AD 又))
+		(VP (VRD (VV 折)
+			 (VV 回来))
+		    (AS 了)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="prp">
+	因为 当地 的 配套 不足 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 作到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="position arg0 works his way up to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-2 (CP-CND (ADVP (CS 如果))
+			  (IP (NP-SBJ (NN 媒体)
+				      (NN 市场))
+			      (VP (VE 没有)
+				  (VP (ADVP (AD 这麽))
+				      (VP (VA 蓬勃))))))
+		  (PU ，)
+		  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 包括)
+					  (LCP-OBJ (NP (PN 我))
+						   (LC 在内))))
+				  (DEC 的)))
+			  (DP (DT 这些))
+			  (NP (NN 人)))
+		  (VP (ADVP (AD 都))
+		      (ADVP (AD 只))
+		      (VP (VV 能)
+			  (VP (VV 作到)
+			      (NP-OBJ (ADJP (JJ 中级))
+				      (NP (NN 主管))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 包括 我 在内 的 这些 人 
+	</arg>
+	<arg n="1">
+	中级 主管 
+	</arg>
+	<arg n="m" f="adv">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="cnd">
+	如果 媒体 市场 没有 这麽 蓬勃 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 works on"/>
+    <role argnum="2" argrole="time arg1 is worked on to last"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-MNR (P 以)
+				(NP (NP-PN (NR 周玉蔻)
+					   (PU 、)
+					   (NR 黄义交))
+				    (NP (NN 绯闻))))
+			(VP (MSP 来)
+			    (VP (VV 说)))))
+	    (PU ，)
+	    (NP-TPC (ADVP (AD 明明))
+		    (NP (DNP (QP (CD 三)
+				 (CLP (M 分钟)))
+			     (DEG 的))
+			(NP (NN 新闻))))
+	    (PU ，)
+	    (NP-SBJ (NN 媒体))
+	    (VP (ADVP (AD 偏))
+		(VP (VV 要)
+		    (VP (VP (VV 作到)
+			    (QP-OBJ (CD 五)
+				    (CLP (M 分钟))))
+			(PU ，)
+			(VP (MSP 以)
+			    (VP (VV 满足)
+				(NP-OBJ (DNP (NP (NN 观众))
+					     (DEG 的))
+					(NP (NN 偷窥欲))))))))) 
+	</parse>
+	<arg n="0">
+	媒体 
+	</arg>
+	<arg n="1">
+	明明 三 分钟 的 新闻 
+	</arg>
+	<arg n="2">
+	五 分钟 
+	</arg>
+	<arg n="m" f="adv">
+	偏 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 以 周玉蔻 、 黄义交 绯闻 来 说 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

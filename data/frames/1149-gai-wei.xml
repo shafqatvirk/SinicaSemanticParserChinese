@@ -1,0 +1,124 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing changed"/>
+      <role argnum="2" argrole="changing to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 黑山头))
+			  (NP (NN 口岸)))
+		      (NP (NN 联检)
+			  (NN 部门)))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (ADVP (AD 原来))
+						  (VP (VP (VV 要)
+							  (QP-OBJ (QP (CD 二)
+								      (CLP (-NONE- *RNR*-1)))
+								  (CC 至)
+								  (QP (CD 三)
+								      (CLP-1 (M 天)))))
+						      (VP (VRD (VV 办)
+							       (VV 完))))))
+					  (DEC 的)))
+				  (NP (NN 出入境)
+				      (NN 手续)))
+			  (VP (VV 改为)
+			      (VP (QP-ADV (CD 一)
+					  (CLP (M 天)))
+				  (VP (VRD (VV 办)
+					   (VV 完)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  黑山头 口岸 联检 部门 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 原来 要 二 *RNR*-1 至 三 天 办 完 的 出入境 手续 
+	  </arg>
+	  <arg n="2">
+	  一 天 办 完 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-TMP (NT 一九五四年))
+		      (VP (VV 改为)
+			  (NP-OBJ (NN 地级市))))
+		  (PU ，)
+		  (VP (PP-LGS (P 由)
+			      (NP-PN (NR 四川省)))
+		      (VP (VV 管辖))))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  地级市 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九五四年 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 东北))
+		      (DP (DT 各))
+		      (NP (NN 地)))
+	      (VP (VP (VV 换下)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (ADVP (AD 原先))
+					      (VP (VV 悬挂)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的)))
+			      (NP (NN 五色旗))))
+		  (PU ，)
+		  (VP (VV 改为)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 悬挂)
+				  (NP-OBJ (UCP-APP (NP (ADJP (JJ 青))
+						       (NP (NN 天)))
+						   (NP (ADJP (JJ 白))
+						       (NP (NN 日)))
+						   (IP (NP-SBJ (ADJP (JJ 满))
+							       (NP (NN 地)))
+						       (VP (VA 红))))
+					  (NP (NN 国旗))))))))
+	  </parse>
+	  <arg n="0">
+	  东北 各 地 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 悬挂 青 天 白 日 满 地 红 国旗 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

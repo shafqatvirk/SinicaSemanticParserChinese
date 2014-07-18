@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惩处 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="punisher"/>
+      <role argnum="1" argrole="entity punished"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (PP-DIR (P 对)
+			      (NP (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VP (VV 违反)
+						      (NP-OBJ (ADJP (JJ 有关))
+							      (NP (NN 环保)
+								  (NN 法规))))
+						  (VP (VV 造成)
+						      (NP-OBJ (ADJP (JJ 严重))
+							      (NP (NN 环境)
+								  (NN 污染))))))
+					  (DEC 的)))
+				  (NP (NN 责任者))))
+		      (VP (VV 要)
+			  (VP (ADVP (AD 严加))
+			      (VP (VV 惩处)))))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 特别))
+						  (VP (VA 恶劣))))
+					  (DEC 的)))
+				  (NP (NN 犯罪)
+				      (NN 行为))))
+		      (VP (VV 要)
+			  (VP (ADVP (AD 依法))
+			      (ADVP (AD 严厉))
+			      (VP (VV 打击))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-2 违反 有关 环保 法规 造成 严重 环境 污染 的 责任者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严加 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 朝 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is facing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 尾巴) )
+	    (VP (VV 朝)
+		(NP-OBJ (NN 外) ))) 
+	</parse>
+	<arg n="0">
+	尾巴 
+	</arg>
+	<arg n="1">
+	外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NN 早期))
+	    (NP-SBJ (NN 渔民))
+	    (VP (VV 会)
+		(VP (VP (PP-LOC (P 在)
+				(NP (NN 海滨)))
+			(PP-MNR (P 用)
+				(NP (NN 石头)))
+			(VP (VP (VV 堆砌))
+			    (PU ，)
+			    (VP (VV 围成)
+				(NP-SBJ (QP (CD 一)
+					    (CLP (M 个)))
+					(CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (IP (NP-TPC (-NONE- *T*-2))
+							(NP-SBJ (NN 缺口))
+							(VP (VV 朝)
+							    (PP (P 向)
+								(LCP (NP (NN 岸))
+								     (LC 边)))))
+						    (PU ，)
+						    (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (PP (P 像)
+								(NP (NN 口袋)))
+							    (VP (VA 似)))))
+						(DEC 的)))
+					(NP (NN 圆圈))))))
+		    (VP (MSP 来)
+			(VP (VV 捕)
+			    (NP-OBJ (NN 鱼))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-2 
+	</arg>
+	<arg n="0" f="pse">
+	缺口 
+	</arg>
+	<arg n="1">
+	向 岸 边 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

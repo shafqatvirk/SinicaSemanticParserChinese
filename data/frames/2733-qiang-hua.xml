@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 强化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing strengthened"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 李鹏))
+		  (VP (VV 强调)
+		      (PU ：)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (VV 要)
+				  (VP (ADVP (AD 进一步))
+				      (VP (VV 强化)
+					  (NP-OBJ (DNP (NP (NN 海关))
+						       (DEG 的))
+						  (DP (DT 各)
+						      (CLP (M 项)))
+						  (NP (NN 职能))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  海关 的 各 项 职能 
+	  </arg>
+	  <arg n="m" f="adv">
+	  进一步 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

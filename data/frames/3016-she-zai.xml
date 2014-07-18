@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设在 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing set up"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (PP-LGS (P 由)
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-TPC (-NONE- *T*-2))
+							  (NP-SBJ (NN 总部))
+							  (VP (VV 设在)
+							      (NP-PN-OBJ (NR 日内瓦))))
+						      (DEC 的)))
+					      (NP-PN (NN 世界)
+						     (NN 经济)
+						     (NN 论坛)))
+				      (VP (VV 主办))))
+			      (DEC 的))))) 
+	  </parse>
+	  <arg n="1" f="pse">
+	  总部 
+	  </arg>
+	  <arg n="1" f="psr">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  日内瓦 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

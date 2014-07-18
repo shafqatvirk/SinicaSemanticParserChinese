@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 购自 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="buyer"/>
+    <role argnum="1" argrole="thing arg0 buys"/>
+    <role argnum="2" argrole="place arg1 is bought from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (PP-PRP (P 为)
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 避免)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (IP-SBJ (IP (NP-SBJ (NN 楼))
+								(VP (VA 高)))
+							    (IP (NP-SBJ (NN 风))
+								(VP (VA 大))))
+						    (VP (VV 带来)
+							(NP-OBJ (-NONE- *T*-1))))
+						(DEC 的)))
+					(NP (NN 摆幅))))))
+		(PU ，)
+		(NP-PN-SBJ (NP-PN (NR 高雄))
+			   (QP (CD 八五))
+			   (NP (NN 国际)
+			       (NN 广场)))
+		(VP (VP (VV 启)
+			(NP-OBJ (DNP (NP (NN 国内))
+				     (DEG 之))
+				(NP (NN 先))))
+		    (PU ，)
+		    (VP (VV 使用)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VV 购自)
+						(NP-PN-OBJ (NR 日本))))
+					(DEC 的)))
+				(NP (PU 「)
+				    (NN 抗风)
+				    (NN 阻尼器)
+				    (PU 」)))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	日本 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

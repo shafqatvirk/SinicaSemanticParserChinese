@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 胜出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity winning"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-TMP (ADVP (AD 不))
+			(PP (P 到)
+			    (QP (ADJP (JJ 最後))
+				(QP (CD 一)
+				    (CLP (M 分钟))))))
+		(ADVP (AD 无法))
+		(VP (VV 判定)
+		    (IP-Q-OBJ (NP-WH-SBJ (PN 谁))
+			      (VP (ADVP (AD 将))
+				  (VP (VV 胜出))))))) 
+	</parse>
+	<arg n="0">
+	谁 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

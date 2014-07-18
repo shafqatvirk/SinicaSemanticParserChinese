@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 供应 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="provider"/>
+      <role argnum="1" argrole="thing provided"/>
+      <role argnum="2" argrole="providing to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="io" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (PP-DIR (P 从)
+					  (NP-PN (NR 武汉)))
+				  (VP (VV 发出))))
+			  (DEC 的)))
+		  (CP (WHNP-3 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-3))
+			      (VP (VV 供应)
+				  (NP-PN-IO (NR 香港))
+				  (NP-OBJ (ADJP (JJ 鲜活))
+					  (NP (NN 商品)))))
+			  (DEC 的)))
+		  (NP (NN 运输)
+		      (NN 专列))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  鲜活 商品 
+	  </arg>
+	  <arg n="2">
+	  香港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-MNR (P 透过)
+			  (NP (NP (QP (OD 第二))
+				  (NP (NN 市场)))
+			      (NP (NN 交易))))
+		  (VP (VRD (VV 供应)
+			   (VV 给))
+		      (NP-OBJ (NN 庄家)))))
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  庄家 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  透过 第二 市场 交易 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

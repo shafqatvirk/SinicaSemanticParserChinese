@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 孤悬 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 hangs by itself"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VV 孤悬)
+				    (NP-OBJ (NN 外海))))
+			    (DEC 的)))
+		    (NP-PN (NR 绿岛)))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 曾经))
+		    (VP (VC 是)
+			(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (NP-LOC (-NONE- *T*-2))
+						(VP (VV 拘禁)
+						    (NP-OBJ (NN 政治犯)))))
+					(DEC 的)))
+				(NP (NN 重地)
+				    (NN 之一)))))
+		(PU ，)
+		(VP (VV 留下)
+		    (NP-OBJ (DNP (ADJP (JJ 无数))
+				 (DEG 的))
+			    (NP (NN 悲怆)
+				(NN 血泪)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	外海 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

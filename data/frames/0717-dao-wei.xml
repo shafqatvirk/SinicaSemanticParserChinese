@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 到位 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 外商)
+		      (NN 投资))
+	      (VP (ADVP (AD 实际))
+		  (VP (VV 到位)
+		      (QP-EXT (CD 三十多亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="1">
+	  外商 投资 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  实际 	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三十多亿 美元 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (PP-DIR (P 向)
+						   (NP-PN (NN 民政部)))
+					   (VP (VV 提供)
+					       (AS 了)
+					       (NP-OBJ (NN 认捐书)))))
+				   (DEC 的)))
+			   (NP (NN 单位)))
+		       (LC 中))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 个别))
+		      (NP (NN 单位)))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (PP-MNR (P 按)
+					       (NP (NN 捐赠)
+						   (NN 数额)))
+				       (VP (VV 到位)
+					   (AS 了)
+					   (NP-OBJ (NP (NN 其中))
+						   (QP (CD 大部分))
+						   (NP (NN 物资)
+						       (CC 和)
+						       (NN 资金))))))
+			       (LC 后)))
+		  (PU ，)
+		  (PP-PRP (P 因)
+			  (IP (IP (NP-SBJ (NN 生产))
+				  (VP (ADVP (AD 不))
+				      (VP (VA 景气))))
+			      (PU ，)
+			      (IP (NP-SBJ (NN 效益))
+				  (VP (VV 下降)))))
+		  (VP (MSP 而)
+		      (VP (ADVP (AD 难于))
+			  (VP (VV 兑现)
+			      (NP-OBJ (ADJP (JJ 剩余))
+				      (NP (NN 部分)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  其中 大部分 物资 和 资金 	  	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 捐赠 数额 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (DNP (NP (NT 今年))
+				    (DEG 的))
+			       (QP (CD 六百五十亿))
+			       (NP (NN 金融)
+				   (NN 债券)))
+		       (VP (VV 到位)))
+		   (LC 后)) 
+	  </parse>
+	  <arg n="1">
+	  今年 的 六百五十亿 金融 债券 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

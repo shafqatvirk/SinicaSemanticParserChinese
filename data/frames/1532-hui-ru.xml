@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 汇入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="remitter"/>
+      <role argnum="1" argrole="money, fund"/>
+      <role argnum="2" argrole="remitting into (account, etc.)"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 一些))
+			  (NP (NN 国际)
+			      (NN 投机)
+			      (NN 资本)))
+		  (PU ，)
+		  (VP (VP (VV 混入)
+			  (NP-OBJ (ADJP (JJ 经常))
+				  (NP (NN 项目))))
+		      (VP (VV 汇入)
+			  (NP-OBJ (NN 境内))))) 
+	  </parse>
+	  <arg n="1">
+	  一些 国际 投机 资本 
+	  </arg>
+	  <arg n="2">
+	  境内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

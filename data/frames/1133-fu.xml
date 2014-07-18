@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 富 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="thing possessed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 歌名))
+	      (VP (ADVP (AD 极))
+		  (VP (VV 富)
+		      (NP-OBJ (NN 诗意))))) 
+	  </parse>
+	  <arg n="0">
+	  歌名 
+	  </arg>
+	  <arg n="1">
+	  诗意 
+	  </arg>
+	  <arg n="m" f="adv">
+	  极 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

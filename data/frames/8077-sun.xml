@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 飨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 treats"/>
+      <role argnum="2" argrole="thing arg1 is treated with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (DP (DT 本)
+			      (CLP (M 次)))
+			  (NP (NN 书展)))
+		      (NP (NN 期间)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 高行健))
+	      (VP (VP (ADVP (AD 特别))
+		      (ADVP (AD 再))
+		      (VP (VV 发表)
+			  (NP-OBJ (QP (CD 三)
+				      (CLP (M 本)))
+				  (ADJP (JJ 新))
+				  (NP (NN 书)))))
+		  (VP (MSP 以)
+		      (VP (VV 飨)
+			  (NP-OBJ (NN 读者)))))) 
+	  </parse>
+	  <arg n="0">
+	  高行健 
+	  </arg>
+	  <arg n="1">
+	  读者 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  本 次 书展 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

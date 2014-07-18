@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 记住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="memorizer"/>
+      <role argnum="1" argrole="thing memorized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 历史))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 会)
+		      (VP (VV 记住)
+			  (NP-OBJ (CP (WHNP-6 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-6))
+					      (VP (VV 提出)
+						  (NP-OBJ (NP-APP (PU 「)
+								  (NP (QP (CD 一))
+								      (NP (NN 国)))
+								  (NP (QP (CD 两))
+								      (NP (NN 制)))
+								  (PU 」))
+							  (NP (NN 创造性)
+							      (NN 构想)))))
+					  (DEC 的)))
+				  (NP-PN (NR 邓小平)
+					 (NN 先生))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  历史 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-6 提出 「 一 国 两 制 」 创造性 构想 的 邓小平 先生 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

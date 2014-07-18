@@ -1,0 +1,170 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承认 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="acknowledger"/>
+      <role argnum="1" argrole="acknowledged fact"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VP (VV 承认)
+			      (NP-OBJ (-NONE- *RNR*-3)))
+			  (CC 并)
+			  (VP (VV 把握)
+			      (NP-OBJ-3 (CP-APP (IP (LCP-SBJ (NP (NN 体育)
+								 (CC 和)
+								 (NN 经济))
+							     (LC 之间))
+						    (VP (ADVP (AD 相互))
+							(VP (VV 促进))))
+						(DEC 的))
+					(NP (NN 关系)))))
+		      (PU ，)
+		      (VP (DVP (VP (VA 健康))
+			       (DEV 地))
+			  (VP (VV 发挥)
+			      (NP-OBJ (NP (NN 经济))
+				      (DNP (PP (P 对)
+					       (NP (NN 体育)))
+					   (DEG 的))
+				      (NP (NN 支撑)
+					  (CC 和)
+					  (NN 推动))
+				      (NP (NN 作用))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *RNR*-3 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (IP (NP-PN-SBJ (NR 美))
+		      (VP (VV 承认)
+			  (IP-OBJ (NP-SBJ (NN 空袭))
+				  (VP (VV 使)
+				      (NP-OBJ (QP (CD 数百))
+					      (NP-PN (NR 伊))
+					      (NP (NN 平民)))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 死亡)))))))
+		  (IP (NP-SBJ (NP-PN (NR 英))
+			      (QP (CD 一))
+			      (NP (NN 记者)))
+		      (VP (VV 说)
+			  (IP (NP-SBJ (MSP 所)
+				      (VP (VV 炸)))
+			      (VP (ADVP (AD 绝))
+				  (VP (VC 非)
+				      (NP-PRD (ADJP (JJ 军事))
+					      (NP (NN 目标))))))))) 
+	  </parse>
+	  <arg n="0">
+	  美 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  空袭 使 数百 伊 平民 *PRO* 死亡 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="recognizer"/>
+      <role argnum="1" argrole="recognized party"/>
+      <role argnum="2" argrole="status"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (OD 第二)
+		      (CLP (M 年)))
+	      (NP-SBJ (NP-PN (NR 澳)
+			     (NR 葡))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 正式))
+		  (VP (VV 发布)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 承认)
+					      (NP-OBJ (NN 中文))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 作为)
+						      (NP-OBJ (NN 官方)
+							      (NN 语言))))))
+				      (DEC 的)))
+			      (NP (NN 法令)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中文 	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 作为 官方 语言 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (NP (NN 审判)))
+	      (VP (ADVP (AD 同时))
+		  (ADVP (AD 又))
+		  (VP (VP (LB 为)
+			  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (NN 官方))
+				      (VP (VV 承认)
+					  (NP-OBJ (-NONE- *T*-1))))))
+		      (PU ，)
+		      (VP (LB 为)
+			  (CP (WHNP-2 (-NONE- *OP*))
+			      (IP (NP-SBJ (NN 官方))
+				  (VP (VV 支持)
+				      (NP-OBJ (-NONE- *T*-2))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  官方 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *T*-1 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

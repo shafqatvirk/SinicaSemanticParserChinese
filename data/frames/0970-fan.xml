@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 反 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 德)
+			     (PU 、)
+			     (NR 俄))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 加强)
+			  (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 反)
+					      (NP-OBJ (NN 核)
+						      (NN 走私))))
+				  (NP (NN 行动)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  核 走私 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 goes contrary to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (NP-PN (NR 民国))
+		      (QP (CD 八十四)
+			  (CLP (M 年))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 铼德))
+	      (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 一))
+				  (VP (VV 反)
+				      (NP-OBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 日本))
+								  (ADJP (JJ 大))
+								  (NP (NN 厂)))
+							  (VP (PP-MNR (P 用)
+								      (NP (ADJP (JJ 纯))
+									  (NP (NN 金))))
+							      (VP (VV 做)
+								  (NP-OBJ (NP (NP (NN CD-R)
+										  (NN 表面))
+									      (ADJP (JJ 薄))
+									      (NP (NN 膜)))
+									  (NP (NN 材料)))))
+							  (DEC 的)))
+					      (NP (NN 惯例))))))
+		      (PU ，)
+		      (VP (VRD (VV 研发)
+			       (VV 出))
+			  (NP-OBJ (DNP (NP (NP (ADJP (JJ 低))
+					       (NP (NN 成本)))
+					   (PU 、)
+					   (NP (ADJP (JJ 高))
+					       (NP (NN 品质))))
+				       (DEG 的))
+				  (CP (WHNP-3 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-3))
+					      (VP (VP (VV 镀)
+						      (NP-OBJ (NN 银)))
+						  (PU 、)
+						  (VP (VV 镀)
+						      (NP (NN 铝)))))))
+				  (ADJP (JJ 薄))
+				  (NP (NN 膜)))))
+		  (PU ，)
+		  (VP (VV 让)
+		      (NP-OBJ (NN CD-R)
+			      (NN 价格))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 大幅))
+			      (VP (VV 降低))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  日本 大 厂 用 纯 金 做 CD-R 表面 薄 膜 材料 的 惯例 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

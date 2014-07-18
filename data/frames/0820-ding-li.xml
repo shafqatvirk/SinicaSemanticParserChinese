@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 订立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agreer"/>
+      <role argnum="1" argrole="agreement"/>
+      <role argnum="2" argrole="co-agreer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 雇主)
+		      (CC 与)
+		      (NN 雇员))
+	      (VP (ADVP (AD 亦))
+		  (VP (VV 应)
+		      (VP (ADVP (AD 预先))
+			  (VP (VV 订立)
+			      (NP-OBJ (NN 协议))))))) 
+	  </parse>
+	  <arg n="0">
+	  雇主 与 雇员 
+	  </arg>
+	  <arg n="1">
+	  协议 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亦 
+	  </arg>
+	  <arg n="m" f="adv">
+	  预先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

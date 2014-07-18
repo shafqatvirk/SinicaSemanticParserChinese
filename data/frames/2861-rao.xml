@@ -1,0 +1,146 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 绕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing circled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 地球))
+	      (VP (VP (VP (VV 绕)
+			  (NP-OBJ (NP (PN 其))
+				  (NP (NN 轴心))))
+		      (VP (VV 自转))))) 
+	  </parse>
+	  <arg n="0">
+	  地球 	  	  
+	  </arg>
+	  <arg n="1">
+	  其 轴心 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity going around to avoid"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 出现)
+	      (AS 了)
+	      (NP-OBJ (QP (CD 一些))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VP (ADVP (AD 从来))
+					  (VP (VV 没有)
+					      (VP (VV 遇到)
+						  (AS 过)
+						  (NP-OBJ (-NONE- *T*-2)))))
+				      (CC 而)
+				      (VP (ADVP (AD 又))
+					  (VP (VNV (VV 绕)
+						   (AD 不)
+						   (VV 开))
+					      (NP-OBJ (-NONE- *T*-2))))))
+			      (DEC 的)))
+		      (ADJP (JJ 新))
+		      (NP (NN 问题)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  	  
+	  </arg>
+	  <arg n="1">
+	  *T*-2 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location going around via"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP (QP (CD 两))
+			      (NP (NN 岸)))
+			  (NP (NN 贸易)))
+		      (NP (NN 货物)))
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 虽然))
+			      (ADVP (AD 仍))
+			      (VP (VV 需)
+				  (VP (VV 绕)
+				      (PP (P 经)
+					  (NP (NN 第三地)))))))
+		  (PU ，)
+		  (ADVP (AD 但))
+		  (ADVP (AD 不))
+		  (VP (VV 需)
+		      (VP (VV 换)
+			  (NP-OBJ (NN 船)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  
+	  </arg>
+	  <arg n="1">
+	  经 第三地 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="entity going round about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VV 搭乘)
+			  (NP-OBJ (NP (NN 社区))
+				  (ADJP (JJ 小))
+				  (NP (NN 巴士))))
+		      (VP (PP-DIR (P 往)
+				  (LCP (NP (NN 山))
+				       (LC 上)))
+			  (VP (VV 绕))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  往 山 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

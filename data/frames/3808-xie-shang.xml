@@ -1,0 +1,137 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 协商 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing negotiated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NP (NP-PN (NR 日本))
+			      (NP (NN 报纸)))
+			  (NP (NN 报道))))
+	      (PU ，)
+	      (NP-SBJ (NP (NP-PN (NR 日本))
+			  (NP-PN (NR 富士通)
+				 (PU 、)
+				 (NR 索尼)
+				 (PU 、)
+				 (NR 三洋)
+				 (NN 电机)
+				 (NN 公司)))
+		      (CC 和)
+		      (NP-PN (NR 美国)
+			     (NN 商用)
+			     (NN 机器)
+			     (NN 公司)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 在))
+		  (VP (VV 协商)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (ADVP (AD 联合))
+					      (VP (VV 研制)
+						  (NP-OBJ (NP (NP (ADJP (JJ 超大))
+								  (NP (NN 规模)))
+							      (ADJP (JJ 集成))
+							      (NP (NN 电路)))
+							  (NP (NN 芯片))))))
+				      (DEC 的))
+			      (NP (NN 事宜)))))) 
+	  </parse>
+	  <arg n="0">
+	  日本 富士通 、 索尼 、 三洋 电机 公司 和 美国 商用 机器 公司 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 联合 研制 超大 规模 集成 电路 芯片 的 事宜 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 日本 报纸 报道 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-MNR (P 经)
+		  (IP (NP-SBJ (PN 双方))
+		      (VP (VV 协商)))) 
+	  </parse>
+	  <arg n="0">
+	  双方 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 宁波)
+			 (NN 海事)
+			 (NN 法院))
+	      (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 受理)
+				       (NP-OBJ (NN 案件))))
+			       (LC 后))
+		      (PU ，)
+		      (ADVP (AD 立即))
+		      (VP (VV 设法)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 向)
+					      (NP (NN 肇事)
+						  (NN 船)
+						  (NN 船东)))
+				      (VP (VV 送达)
+					  (NP-OBJ (ADJP (JJ 有关))
+						  (NP (NN 法律)
+						      (NN 文书))))))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 进行)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 系列)))
+			      (NP (NN 调查)
+				  (PU 、)
+				  (NN 核实)
+				  (PU 、)
+				  (NN 验证))))
+		  (PU ，)
+		  (VP (PP (P 与)
+			  (NP (NP (DP (DT 各))
+				  (NP (NN 方)))
+			      (NP (NN 当事人))))
+		      (VP (VCD (VV 协商)
+			       (VV 调解)))))) 
+	  </parse>
+	  <arg n="0">
+	  宁波 海事 法院 
+	  </arg>
+	  <arg n="0">
+	  与 各 方 当事人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

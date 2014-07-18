@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 特制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes for special purpose"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (VC 是)
+		  (IP-PRD (LCP-LOC (NP (NP (ADJP (JJ 新))
+					   (NP (NN 车)))
+				       (NP (NN 大展)))
+				   (LC 中))
+			  (PU ，)
+			  (NP-SBJ (NN 观众))
+			  (VP (VP (VV 戴)
+				  (AS 着)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (VV 特制)
+							  (NP-OBJ (-NONE- *T*-1))))
+						  (DEC 的)))
+					  (IP-APP (PU 「)
+						  (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 虚拟)
+						      (NP-OBJ (ADJP (JJ 实))
+							      (NP (NN 境))))
+						  (PU 」))
+					  (NP (NN 头盔))))
+			      (PU ，)
+			      (VP (VV 体会)
+				  (ADVP (AD 一下))
+				  (NP-OBJ (CP-APP (IP (NP-SBJ (PN 自己))
+						      (VP (VV 驾驶)
+							  (NP-OBJ (ADJP (JJ 新型))
+								  (NP (NN 车)))))
+						  (DEC 的))
+					  (ADJP (JJ 超炫))
+					  (NP (NN 快感)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

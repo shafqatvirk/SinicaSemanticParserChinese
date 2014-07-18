@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 解密 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 de-classifies"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC (NP-SBJ (-NONE- *pro*))
+		(VP (VV 包括)
+		    (NP-OBJ (NP (NN 听证会))
+			    (PU 、)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 解密)))
+					(DEC 的)))
+				(NP (NN 外交)
+				    (NN 档案)))
+			    (PU 、)
+			    (NP (DNP (NP (NN 名人))
+				     (DEG 的))
+				(NP (NN 访问)
+				    (NN 稿)
+				    (PU 、)
+				    (NN 演讲)))
+			    (ETC 等)))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

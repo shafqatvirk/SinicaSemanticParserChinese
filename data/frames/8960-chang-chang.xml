@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 尝尝 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 tastes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VPT (VA 少)
+		       (AD 不)
+		       (VV 得))
+		  (VP (VV 要)
+		      (VP (PU 「)
+			  (VV 多嘴)
+			  (PU 」)
+			  (PRN (PU ——)
+			       (VP (VP (ADVP (AD 多))
+				       (VP (VV 带)
+					   (NP-OBJ (QP (CD 一)
+						       (CLP (M 张)))
+						   (NP (NN 嘴)))))
+				   (VP (VV 去)
+				       (VP (VV 尝尝)
+					   (NP-OBJ (DNP (NP (NN 当地))
+							(DEG 的))
+						   (NP (NN 小吃))))))))))) 
+	  </parse>
+	  <arg n="1">
+	  当地 的 小吃 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

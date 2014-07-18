@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遮掩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 covers up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (ADVP (AD 太))
+						  (VP (VA 多))))
+					  (DEC 的)))
+				  (NP (NN 梦幻)
+				      (PU 、)
+				      (NN 憧憬)
+				      (PU 、)
+				      (NN 想像)))
+			  (PU ，)
+			  (VP (VV 遮掩)
+			      (AS 了)
+			      (NP-OBJ (NP (PN 我们))
+				      (DNP (PP (P 对)
+					       (NP (NN 事实)
+						   (NN 真相)))
+					   (DEG 的))
+				      (NP (NN 理解))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 太 多 的 梦幻 、 憧憬 、 想像 
+	  </arg>
+	  <arg n="1">
+	  我们 对 事实 真相 的 理解 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

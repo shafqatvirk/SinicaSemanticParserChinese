@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 选购 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 chooses and buys"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 买)
+			(NP-OBJ (NN 书))))
+	    (VP (ADVP (AD 已经))
+		(VP (VV 成为)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 选购)
+				(NP-OBJ (PU 「)
+					(NN 名牌)
+					(PU 」)
+					(NN 商品))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	「 名牌 」 商品 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (VE 没)
+			(NP-OBJ (NN 展览))))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(VP (VP (VP (VV 找)
+			    (NP-OBJ (QP (CLP (M 个)))
+				    (NP (NN 地方))))
+			(VP (VV 打开)
+			    (NP-OBJ (NN 提包))))
+		    (PU ，)
+		    (VP (ADVP (AD 就地))
+			(VP (VV 供)
+			    (NP-OBJ (NN 买家))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 选购)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

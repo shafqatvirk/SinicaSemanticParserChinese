@@ -1,0 +1,133 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 怀疑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="doubter"/>
+      <role argnum="1" argrole="thing or person doubted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 因为)
+		      (NP (NP (NN 猜疑))
+			  (CC 和)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 莫明)))
+				      (DEC 的)))
+			      (NP (NN 不信任)))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一些))
+		      (ADJP (JJ 年轻))
+		      (NP (NN 夫妻)))
+	      (VP (ADVP (AD 无端))
+		  (VP (VV 怀疑)
+		      (NP-OBJ (DNP (NP (PN 自己))
+				   (DEG 的))
+			      (NP (NN 配偶)))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 年轻 夫妻 
+	  </arg>
+	  <arg n="1">
+	  自己 的 配偶 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 猜疑 和 *OP* *T*-1 莫明 的 不信任 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 从)
+				  (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (DP (DT 这)
+							      (CLP (M 次)))
+							  (NP (NN 行动)))
+						  (VP (MSP 所)
+						      (VP (VV 选择)
+							  (NP-OBJ (-NONE- *T*-1)))))
+					      (DEC 的)))
+				      (NP (NN 时机))))
+			  (VP (MSP 来)
+			      (VP (VV 看)))))
+	      (PU ，)
+	      (NP-SBJ (NN 人们))
+	      (VP (ADVP (AD 普遍))
+		  (VP (VV 怀疑)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 还))
+				  (VP (VE 有)
+				      (NP-OBJ (ADJP (JJ 另外))
+					      (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-2))
+							  (VP (VV 不可告人)))
+						      (DEC 的)))
+					      (NP (NN 动机)))))))))
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="1">
+	  *pro* 还 有 另外 *OP* *T*-2 不可告人 的 动机 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 *PRO* 从 *OP* 这 次 行动 所 选择 *T*-1 的 时机 来 看 
+	  </arg>
+	  <arg n="m" f="adv">
+	  普遍 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (NP-APP (DNP (NP-PN (NR 俄罗斯))
+						   (DEG 的))
+					      (NP (NN 网球)
+						  (NN 新秀)))
+				      (NP-PN (NR 库尔尼科娃)))
+			      (VP (NP-TMP (NT 明年))
+				  (ADVP (AD 是否))
+				  (VP (VV 能够)
+				      (VP (VP (VV 代表)
+					      (NP-OBJ (NN 国家)))
+					  (VP (VV 参加)
+					      (NP-OBJ (NN 联合会杯赛))))))))
+		  (VP (VV 感到)
+		      (VP (ADVP (AD 十分))
+			  (VP (VA 怀疑))))))
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  对 俄罗斯 的 网球 新秀 库尔尼科娃 明年 是否 能够 代表 国家 参加 联合会杯赛 
+	  </arg>
+	  <arg n="m" f="adv">
+	  十分 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

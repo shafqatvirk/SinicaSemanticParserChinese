@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 商讨 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing discussed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT ２８日))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP-PN (NR 科特迪瓦)
+						     (PU 、)
+						     (NR 加纳)
+						     (PU 、)
+						     (NR 几内亚)
+						     (PU 、)
+						     (NR 利比里亚)
+						     (ETC 和)
+						     (NR 尼日利亚)))
+				      (VP (VV 组成)
+					  (NP-OBJ (-NONE- *-2)))))
+			      (DEC 的)))
+		      (NP-PN (NP (NP-PN (NR 西非))
+				 (NP (NN 国家)))
+			     (NP (NN 经济)
+				 (NN 共同体)))
+		      (NP (QP (CD ５))
+			  (NP (NN 国)))
+		      (NP (NN 委员会)))
+	      (VP (PP-LOC (P 在)
+			  (NP (NP-APP (NP-PN (NR 科特迪瓦))
+				      (NP (NN 经济)
+					  (NN 首都)))
+			      (NP-PN (NR 阿比让))))
+		  (VP (VP (VV 召开)
+			  (NP-OBJ (ADJP (JJ 紧急))
+				  (NP (NN 会议))))
+		      (PU ，)
+		      (VP (VV 商讨)
+			  (NP-OBJ (NP-PN (NR 塞拉里昂))
+				  (NP (NN 局势))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 由 科特迪瓦 、 加纳 、 几内亚 、 利比里亚 和 尼日利亚 组成 *-2 的 西非 国家 经济 共同体 ５ 国 委员会 
+	  </arg>
+	  <arg n="1">
+	  塞拉里昂 局势 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 科特迪瓦 经济 首都 阿比让 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ２８日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 入境)
+			     (NN 事务处))
+		      (NP (NN 处长)))
+	      (VP (ADVP (AD 曾))
+		  (VP (VP (PP (P 与)
+			      (NP (NN 内地)
+				  (NN 当局)))
+			  (VP (VV 商讨)))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VV 取得)
+			  (NP-OBJ (DNP (NP (NN 内地)
+					   (NN 当局))
+				       (DEG 的))
+				  (NP (NN 同意))))))) 
+	  </parse>
+	  <arg n="0">
+	  入境 事务处 处长 
+	  </arg>
+	  <arg n="0">
+	  与 内地 当局 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

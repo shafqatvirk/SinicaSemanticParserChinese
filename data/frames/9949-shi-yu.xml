@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 施予 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 does"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (NN 原住民)
+			       (NN 眼) )
+			   (LC 里)))
+	      (PU ，)
+	      (IP (IP (NP-SBJ (NN 动物) )
+		      (VP (PP-DIR (P 对)
+				  (NP (NN 人类) ))
+			  (VP (VV 施予)
+			      (NP-OBJ (NN 付出) ))))
+		  (PU ，)
+		  (IP (NP-SBJ (PN 彼此))
+		      (VP (ADVP (AD 长久))
+			  (VP (VCD (VA 友好)
+				   (VA 扶持)))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 人类) )
+		      (VP (ADVP (AD 才))
+			  (VP (VV 能)
+			      (VP (VV 安居)
+				  (LCP-OBJ (NP (NN 大地) )
+					   (LC 之上)))))))) 
+	  </parse>
+	  <arg n="0">
+	  动物 
+	  </arg>
+	  <arg n="1">
+	  付出 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 人类 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 原住民 眼 里 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

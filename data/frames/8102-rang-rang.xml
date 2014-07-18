@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 嚷嚷 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 shouts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC-1 (PU 「)
+			(DP-TMP (DT 每)
+				(CLP (M 年)))
+			(NP-SBJ (PN 我))
+			(VP (ADVP (AD 都))
+			    (VP (VV 嚷嚷)
+				(AS 著)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VP (VV 要)
+						(VP (VV 做)
+						    (NP-OBJ (NN 生涯)
+							    (NN 规划) )))
+					    (PU ，)
+					    (VP (VV 要)
+						(VP (VP (VV 辞掉)
+							(NP-OBJ (NN 教职) ))
+						    (PU ，)
+						    (VP (ADVP (AD 专心))
+							(VP (VV 做)
+							    (NP-OBJ (NN 传播) ))))))))))
+	      (PU ，)
+	      (PU 」)
+	      (NP-PN-SBJ (NR 赵宁) )
+	      (VP (DVP (VP (ADVP (AD 不))
+			   (VP (VV 改)
+			       (NP-OBJ (NN 率真) )))
+		       (DEV 地))
+		  (VP (VV 笑道)
+		      (IP-OBJ (-NONE- *T*-1))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 要 做 生涯 规划 ， 要 辞掉 教职 ， 专心 做 传播 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

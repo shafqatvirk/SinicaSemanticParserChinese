@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 kisses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 中年))
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-2))
+				    (NP-SBJ (-NONE- *pro*))
+				    (VP (VP (VV 吻)
+					    (NP-OBJ (NN 女人)
+						    (NN 额头)))
+					(CC 不是)
+					(VP (VV 吻)
+					    (NP-OBJ (NN 女人)
+						    (NN 嘴唇)))))
+				(DEC 的)))
+			(NP (NN 年龄))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	女人 额头 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

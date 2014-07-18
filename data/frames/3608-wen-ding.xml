@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 稳定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 各)
+			      (CLP (M 级)))
+			  (NP (NN 乡镇)
+			      (NN 企业)))
+		      (NP (NN 主管)
+			  (NN 部门)
+			  (CC 与)
+			  (NN 宣传)
+			  (NN 部门)))
+	      (VP (VV 稳定)
+		  (AS 了)
+		  (NP-OBJ (NN 大局)))) 
+	  </parse>
+	  <arg n="0">
+	  各 级 乡镇 企业 主管 部门 与 宣传 部门 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  大局 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 香港))
+			  (NP (NN 经济)))
+		  (VP (ADVP (AD 长期))
+		      (VP (VCD (VA 繁荣)
+			       (VA 稳定))))) 
+	  </parse>
+	  <arg n="1">
+	  香港 经济 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  长期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

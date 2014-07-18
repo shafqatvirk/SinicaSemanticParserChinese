@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 期待 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person looking forward to"/>
+      <role argnum="1" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-PN (NR 欧盟))
+			  (NP (NN 国家)))
+		      (NP (NN 领导人)))
+	      (VP (VV 期待)
+		  (AS 着)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (LCP-LOC (NP (CP (WHNP-5 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-5))
+						       (VP (NP-TMP (NT 明年)
+								   (NT 四月))
+							   (PP-LOC (P 在)
+								   (NP-PN (NR 伦敦)))
+							   (VP (VV 举行))))
+						   (DEC 的)))
+					   (QP (OD 第二)
+					       (CLP (M 次)))
+					   (NP-PN (NR 欧亚)
+						  (NN 会议)))
+				       (LC 上))
+			      (PP (P 同)
+				  (NP (NP-PN (NR 中国))
+				      (NP (NN 领导人))))
+			      (VP (VV 会晤)))))) 
+	  </parse>
+	  <arg n="0">
+	  欧盟 国家 领导人 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* *OP* (*T*-5)->(第二次欧亚会议) 明年 四月 在 伦敦 举行 的 第二 次 欧亚 会议 上 同 中国 领导人 会晤 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 期待)
+		  (AS 着)
+		  (NP-PN-OBJ (NR 朱（容加金旁）基)
+			     (NN 总理))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (NP-TMP (NT 明年)
+				  (NT 春天))
+			  (VP (VV 访)
+			      (NP-PN-OBJ (NR 俄))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  朱（容加金旁）基 总理 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 明年 春天 访 俄 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

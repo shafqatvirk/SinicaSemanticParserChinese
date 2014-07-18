@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity entering"/>
+      <role argnum="1" argrole="location arg0 enters"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (QP (CD 一)
+			  (CLP (M 段)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-SBJ (NN 造价))
+			      (VP (QP-PRD (ADVP (AD 近))
+					  (QP (CD 五百万)
+					      (CLP (M 元)))))))
+		      (PU 、)
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-MNR (P 按照)
+					      (NP (NP-APP (QP (CD 百)
+							      (CLP (M 年)))
+							  (QP (CD 一))
+							  (NP (NN 遇)))
+						  (NP (NN 标准))))
+				      (VP (VV 设计)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (NP (NN 标准)
+			  (NN 海塘)))
+	      (PU ，)
+	      (LCP-SBJ (NP (DNP (NP (ADJP (JJ 关键))
+				    (NP (NN 部位)))
+				(DEG 的))
+			   (NP (NN 基础)
+			       (NN 沉井)))
+		       (LC 中))
+	      (PU ，)
+	      (VP (ADVP (AD 竟然))
+		  (VP (LB 被)
+		      (IP-OBJ (NP-SBJ (NN 施工)
+				      (NN 单位))
+			      (VP (PP-MNR (P 用)
+					  (NP (NN 泥沙)))
+				  (VP (VP (VV 代替)
+					  (NP-OBJ (NN 混凝土)))
+				      (VP (VV 回填)
+					  (AS 了)
+					  (VV 进去)))))))) 
+	  </parse>
+	  <arg n="0">
+	  泥沙 	  
+	  </arg>
+	  <arg n="1" f="PSE">
+	  关键 部位 的 基础 沉井 中 
+	  </arg>
+	  <arg n="1" f="PSR">
+	  一 段 *OP* *T*-1 造价 近 五百万 元 、 *OP* *pro* 按照 百 年 一 遇 标准 设计 *T*-2 的 标准 海塘 
+	  </arg>
+	  <arg n="M" f="adv">
+	  竟然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

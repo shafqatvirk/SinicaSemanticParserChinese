@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 祝愿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="wisher"/>
+      <role argnum="1" argrole="the wish"/>
+      <role argnum="2" argrole="entity the wish is for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 衷心))
+		  (VP (VV 祝愿)
+		      (IP-OBJ (PP-TMP (P 在)
+				      (LCP (QP (CP (WHNP-1 (-NONE- *OP*))
+						   (CP (IP (NP-SBJ (-NONE- *T*-1))
+							   (VP (VA 新)))
+						       (DEC 的)))
+					       (QP (CD 一)
+						   (CLP (M 年))))
+					   (LC 里)))
+			      (NP-SBJ (NP (DP (DT 各))
+					  (NP (NN 国)))
+				      (NP (NN 人民)))
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (NN 和平)
+						   (PU 、)
+						   (NN 安宁)
+						   (CC 与)
+						   (NN 发展))
+					       (LC 中)))
+				  (VP (VV 继续)
+				      (VP (VV 前进)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  在 *OP* *T*-1 新 的 一 年 里 各 国 人民 在 和平 、 安宁 与 发展 中 继续 前进 
+	  </arg>
+	  <arg n="m" f="adv">
+	  衷心 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

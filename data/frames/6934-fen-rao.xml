@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 纷扰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 disturbs"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 朝野))
+				(VP (NP-TMP (-NONE- *T*-1))
+				    (VP (VV 纷扰))))
+			    (DEC 之)))
+		    (NP (NN 际)))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP-PN (NR 台湾))
+			    (DNP (NP (NN 企业)
+				     (NN 经营))
+				 (DEG 之))
+			    (NP (NN 神)))
+		    (NP-PN (NR 王永庆)))
+	    (VP (PP (P 与)
+		    (NP (NP (DP (DT 各))
+			    (NP (NN 产业)))
+			(NP (NN 龙头))))
+		(VP (VV 聚会)))) 
+	</parse>
+	<arg n="1">
+	朝野 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 纷扰)
+				(NP-EXT (QP (CD 数))
+					(NP (NN 月)))))
+			(DEC 的)))
+		(NP (NN 核四)
+		    (NN 风波))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="ext">
+	数 月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

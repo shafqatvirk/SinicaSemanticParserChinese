@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 译为 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="translator"/>
+    <role argnum="1" argrole="thing translated"/>
+    <role argnum="2" argrole="thing arg1 is translated into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP (QP (CD 五)
+					  (CLP (M 颗)))
+				      (NP (NN 星)))
+				  (DEG 的))
+			     (NP (NN 光环)))
+			 (LC 下)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 薛晓岚))
+	    (VP (VP (PP-MNR (P 透过)
+			    (NP (NN 网路)))
+		    (VP (VP (VV 到)
+			    (NP-OBJ (NP (DP (DT 全))
+					(NP (NN 世界)))
+				    (DP (DT 各))
+				    (NP (NN 国))))
+			(VP (VV 找)
+			    (NP-OBJ (NN 经销商)))))
+		(PU ，)
+		(CC 并)
+		(VP (ADVP (AD 火速))
+		    (VP (BA 将)
+			(IP-OBJ (QP-PN-SBJ (NP-PN (NR IQ))
+					   (QP (CD 97)))
+				(VP (VV 译为)
+				    (NP-OBJ (QP (CD 七)
+						(CLP (M 种)))
+					    (NP (NN 语言)))))))
+		(PU ，)
+		(VP (VV 企图)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (BA 将)
+				(IP-OBJ (NP-PN-SBJ (NR 资迅人))
+					(VP (VV 推向)
+					    (NP-OBJ (NN 国际)
+						    (NN 市场))))))))) 
+	</parse>
+	<arg n="0">
+	薛晓岚 
+	</arg>
+	<arg n="1">
+	IQ 97 
+	</arg>
+	<arg n="2">
+	七 种 语言 
+	</arg>
+	<arg n="m" f="adv">
+	火速 
+	</arg>
+	<arg n="m" f="loc">
+	在 五 颗 星 的 光环 下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

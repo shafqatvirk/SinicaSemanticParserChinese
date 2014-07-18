@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 成癖 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 is addicted to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>	
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 台湾人))
+	    (VP (VP-FOC (VV 购物))
+		(VP (VV 成癖)))) 
+	</parse>
+	<arg n="0">
+	台湾人 
+	</arg>
+	<arg n="1">
+	购物 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

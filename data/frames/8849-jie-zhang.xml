@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 结帐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (ADVP (AD 不))
+			       (VP (VV 想)
+				   (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 买)
+					       (NP-OBJ (NN 东西)))))))
+		       (LC 时))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 出来)))
+			  (ADVP (AD 一))
+			  (VP (VV 结帐))))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 常))
+		  (VP (VC 是)
+		      (QP-PRD (QP (CD 二千)
+				  (CLP (-NONE- *RNR*-65)))
+			      (CC 到)
+			      (QP (CD 三千)
+				  (CLP-65 (M 元))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 出来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

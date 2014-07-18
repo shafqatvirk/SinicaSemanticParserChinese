@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 读到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="reader"/>
+    <role argnum="1" argrole="thing arg0 reads and feels"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (DVP (VP (VA 明白))
+		     (DEV 地))
+		(PP-LOC (P 在)
+			(LCP (NP (DNP (NP (PN 他))
+				      (DEG 的))
+				 (NP (NN 小说)))
+			     (LC 里)))
+		(VP (VV 读到)
+		    (NP-OBJ (DP (DT 那)
+				(CLP (M 份)))
+			    (NP (NN 不忍心)))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	那 份 不忍心 
+	</arg>
+	<arg n="m" f="loc">
+	在 他 的 小说 里 
+	</arg>
+	<arg n="m" f="adv">
+	明白 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

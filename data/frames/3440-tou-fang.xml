@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投放 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing put"/>
+      <role argnum="2" argrole="location put into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-PN-SBJ (NN 建设部))
+			  (VP (VV 预计))))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TMP (NT 今年))
+				  (NP-SBJ (ADJP (JJ 国有))
+					  (NP (NN 商业)
+					      (NN 银行)))
+				  (VP (VV 投放)
+				      (NP-OBJ (-NONE- *T*-1))
+				      (PP (P 在)
+					  (NP (DP (DT 此))
+					      (NP (NN 方面))))))
+			      (DEC 的)))
+		      (NP (NN 贷款)))
+	      (VP (VP (VE 有)
+		      (NP-OBJ (NN 望)))
+		  (VP (VV 达到)
+		      (QP-OBJ (CD 三百六十亿)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  国有 商业 银行 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  在 此 方面 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 以便))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 在)
+			  (LCP (NP (NN 欧元)
+				   (NN 更新期))
+			       (LC 前)))
+		  (VP (VV 造出)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 足够))
+				       (NP (NN 数额)))
+				   (DEG 的))
+			      (NP (NN 欧元)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 投放)
+			      (NP-OBJ (NN 市场))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  市场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 河北省))
+	      (VP (NP-TMP (NN 节日)
+			  (NN 期间))
+		  (VP (VV 投放)
+		      (NP-OBJ (NN 商品)
+			      (NN 总值))
+		      (QP-EXT (CD 三十四亿)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  河北省 
+	  </arg>
+	  <arg n="1">
+	  商品 总值 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  三十四亿 元 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  节日 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

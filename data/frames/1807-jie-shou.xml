@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接受 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="accepter"/>
+      <role argnum="1" argrole="thing/action accepted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 会议)
+		      (NN 期间))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NN 纺织)
+			      (NN 总会)
+			      (NN 会长))
+		      (NP-PN (NR 石万鹏)))
+	      (VP (VV 接受)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP (NP (NP-PN (NN 新华社))
+				       (NP (NN 记者)))
+				   (CC 和)
+				   (NP (NP-PN (NN 人民)
+					      (NN 日报)
+					      (NN 社))
+				       (NP (NN 记者))))
+			       (DEG 的))
+			  (ADJP (JJ 联合))
+			  (NP (NN 采访))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  纺织 总会 会长 石万鹏 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  新华社 记者 和 人民 日报 社 记者 的 联合 采访 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 美)
+				      (NR 英))
+			       (DEG 的))
+			  (NP (NN 行动)))
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-DIR (P 从)
+					  (NP (DNP (NP (NP (NN 国际法))
+						       (CC 和)
+						       (NP (NP-PN (NR 联合国))
+							   (NP (NN 宪章))))
+						   (DEG 的))
+					      (NP (NN 角度))))
+				  (VP (VV 看))))
+		      (ADVP (AD 都))
+		      (VP (VP (VC 是)
+			      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 不))
+						      (VP (VV 可)
+							  (VP (VV 接受)))))
+					      (DEC 的)))))
+			  (PU ，)
+			  (VP (VV 有悖于)
+			      (NP-OBJ (NN 伙伴)
+				      (NN 关系)
+				      (CC 和)
+				      (NN 合作)
+				      (NN 原则)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

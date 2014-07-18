@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 存疑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is doubtful about"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 若))
+			  (ADVP (AD 进一步))
+			  (VP (VV 要)
+			      (VP (VV 达到)
+				  (NP-OBJ (NN 治病)
+					  (NN 效果))))))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 则))
+		  (VP (VV 抱持)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VA 存疑)))
+				      (DEC 的))
+			      (NP (NN 态度)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

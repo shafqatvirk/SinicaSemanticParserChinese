@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 纺织 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 weaves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 女性))
+	    (VP (VV 学习)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 纺织))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-MNR (P 以)
+					    (NP (ADJP (JJ 水平式))
+						(NP (NN 纺织))))
+				    (PU ，)
+				    (VP (VRD (VV 纺织)
+					     (VV 出))
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 布匹)))
+	    (VP (ADVP (AD 通常))
+		(ADVP (AD 只))
+		(PP-ADV (P 与)
+			(NP (NN 肩)))
+		(VP (VV 同宽)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="mnr">
+	以 水平式 纺织 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

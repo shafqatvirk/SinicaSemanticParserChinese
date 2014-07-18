@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 叫做 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 calls"/>
+    <role argnum="2" argrole="name arg1 is called by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (LCP-SBJ (NP (NN 城))
+			 (LC 外))
+		(VP (VE 有)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VCD (VA 深)
+						 (VA 广))))
+				    (DEC 的)))
+			    (NP (NN 壕沟)))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 叫做)
+		    (NP-PN-OBJ (PU 「)
+			       (NR 护龙河)
+			       (PU 」))))
+	    (PU ，)
+	    (IP (LCP-SBJ (NP (NN 岸))
+			 (LC 上))
+		(VP (VV 种满)
+		    (AS 了)
+		    (NP-OBJ (DNP (ADJP (JJ 青绿))
+				 (DEG 的))
+			    (NP (NN 杨柳)))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-ADV (P 与)
+					(NP (DNP (ADJP (JJ 红色))
+						 (DEG 的))
+					    (NP (NN 城门))))
+				(VP (VRD (VV 对映)
+					 (VV 起来)))))
+		    (PU ，)
+		    (ADVP (AD 煞是))
+		    (VP (VA 好看))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="2">
+	「 护龙河 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打通 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 opens up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP-PN (NR 关渡)
+				(NN 大桥))
+			 (DEG 的))
+		    (NP (NN 通车)))
+	    (VP (ADVP (AD 则))
+		(VP (VV 打通)
+		    (AS 了)
+		    (NP-OBJ (NP-PN (NR 八里))
+			    (DNP (PP (P 与)
+				     (NP-PN (NR 士林)
+					    (PU 、)
+					    (NR 北投)))
+				 (DEG 的))
+			    (NP (NN 交流)))))) 
+	</parse>
+	<arg n="0">
+	关渡 大桥 的 通车 
+	</arg>
+	<arg n="1">
+	八里 与 士林 、 北投 的 交流 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

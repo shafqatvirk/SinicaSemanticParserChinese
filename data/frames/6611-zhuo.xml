@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 catches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 大家))
+	    (VP (VP (ADVP (AD 都))
+		    (ADVP (AD 在))
+		    (VP (VV 试)))
+		(PU 、)
+		(VP (ADVP (AD 都))
+		    (VP (VV 想)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 捉)
+				    (NP-OBJ (NN 观众)
+					    (NN 口味)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	观众 口味 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 承办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="organizer"/>
+      <role argnum="1" argrole="activity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (NP-TMP (NT 将来))
+		  (VP (VV 承办)
+		      (NP-OBJ (ADJP (JJ 重要))
+			      (NP (NN 国际)
+				  (NN 体育)
+				  (NN 比赛)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  重要 国际 体育 比赛 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

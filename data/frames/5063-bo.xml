@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 剥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 peels"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 剥)
+		    (NP-OBJ (NN 洋葱)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	洋葱 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (BA 把)
+		(IP-OBJ (NP-SBJ (NN 台商))
+			(VP (VP (VV 当成)
+				(NP-OBJ (ADJP (JJ 肥))
+					(NP (NN 羊))))
+			    (PU ，)
+			    (VP (VP (ADVP (AD 一))
+				    (VP (VV 剥)))
+				(VP (ADVP (AD 再))
+				    (VP (VV 剥)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	台商 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (PU 「)
+		(NP-SBJ (-NONE- *PRO*))
+		(VP (VV 剥)
+		    (NP-OBJ (NN 洋葱)))
+		(PRN (PU ——)
+		     (VP (VP (ADVP (AD 越))
+			     (VP (VV 剥)))
+			 (VP (ADVP (AD 越))
+			     (VP (VV 想)
+				 (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					 (VP (VV 流)
+					     (NP-OBJ (NN 眼泪))))))))
+		(PU 」)) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	越 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

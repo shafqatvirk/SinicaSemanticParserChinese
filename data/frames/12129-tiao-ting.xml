@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调停 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities arg0 mediates between"/>
+      <role argnum="2" argrole="thing arg0 mediates to solve"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DP (DT 这)
+				   (CLP (M 次)))
+			       (NP (NN 会议)))
+			   (LC 上)))
+	      (PU ，)
+	      (PP-MNR (P 经)
+		      (NP (DNP (NP (NP (NP-APP (NP-PN (NR 联合国))
+					       (NP (NN 秘书长)))
+				       (NP-PN (NR 安南)))
+				   (CC 和)
+				   (NP (NP-APP (NP-PN (NR 法国))
+					       (NP (NN 总统)))
+				       (NP-PN (NR 希拉克))))
+			       (DEG 的))
+			  (NP (NN 调停))))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 冲突))
+		      (DP (DT 各))
+		      (NP (NN 方)))
+	      (VP (VP (LC (NP (NN 口头))
+			  (LC 上))
+		      (VP (VV 做出)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NN 停火))
+				       (DEG 的))
+				  (NP (NN 承诺)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 准备)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (NP-TMP (NT １２月)
+					  (NT ８日))
+				  (PP-LOC (P 在)
+					  (NP (NP-APP (NP-PN (NR 赞比亚))
+						      (NP (NN 首都)))
+					      (NP-PN (NR 卢萨卡))))
+				  (ADVP (AD 具体))
+				  (VP (VV 讨论)
+				      (NP-OBJ (NP (NN 停火))
+					      (NP (NN 条件)
+						  (CC 和)
+						  (NN 步骤))))))))) 
+	  </parse>
+	  <arg n="0">
+	  联合国 秘书长 安南 和 法国 总统 希拉克 
+	  </arg>
+	  <arg n="1">
+	  冲突 各 方 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 兴趣缺缺 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is not very interested in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 国内))
+		    (ADJP (JJ 大))
+		    (NP (NN 企业)))
+	    (VP (PP-DIR (P 对)
+			(NP (NN 影视)
+			    (NN 娱乐)
+			    (NN 产业)))
+		(VP (VV 兴趣缺缺)))) 
+	</parse>
+	<arg n="0">
+	国内 大 企业 
+	</arg>
+	<arg n="1">
+	对 影视 娱乐 产业 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

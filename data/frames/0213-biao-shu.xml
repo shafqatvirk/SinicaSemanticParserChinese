@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 表述 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="opinion, position"/>
+    <role argnum="2" argrole="message receiver"/>
+    <role argnum="3" argrole="topic of the discussion"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NR 伊万诺夫))
+      (VP (VC 是)
+          (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-3))
+                              (VP (PP-LOC (P 在)
+                                          (LCP (NP (CP (WHNP-2 (-NONE- *OP*))
+                                                       (CP (IP (NP-SBJ (-NONE- *T*-2))
+                                                               (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+                                                                                (VP (PP (P 同)
+                                                                                        (NP (CP (WHNP-1 (-NONE- *OP*))
+                                                                                                (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                                                                                        (VP (VV 来访)))
+                                                                                                    (DEC 的)))
+                                                                                            (NP-APP (NP-PN (NR 亚美尼亚))
+                                                                                                    (NP (NN 外长)))
+                                                                                            (NP-PN (NR 奥斯卡尼扬))))
+                                                                                    (VP (VV 会谈))))
+                                                                            (LC 后))
+                                                                   (VP (VV 举行))))
+                                                           (DEC 的)))
+                                                   (ADJP (JJ 联合))
+                                                   (NP (NN 记者)
+                                                       (NN 招待会)))
+                                               (LC 上)))
+                                  (VP (VV 表述)
+                                      (NP-OBJ (DP (DT 这)
+                                                  (QP (CD 一)))
+                                              (NP (NN 立场))))))
+                          (SP 的)))))))
+	</parse>
+	<arg n="0"> (*T*-3)->(伊万诺夫) </arg>
+	<arg n="M" f="LOC"> 在 *OP* (*T*-2)->(记者招待会) *PRO* 同 *OP* (*T*-1)->(亚美尼亚奥斯卡尼扬) 来访 的 亚美尼亚 外长 奥斯卡尼扬 会谈 后 举行 的 联合 记者 招待会 上 </arg>
+	<V/>
+	<arg n="1"> 这 一 立场 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

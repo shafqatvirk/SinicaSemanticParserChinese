@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 冲进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="place arg0 dashes into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (NN 研究)
+				(NN 典藏组))
+			    (NP (NN 组长)))
+		    (NP-PN (NR 卢秀琴)))
+	    (VP (ADVP (AD 连忙))
+		(VP (VP (VV 冲进)
+			(NP-OBJ (NN 现场)))
+		    (VP (VV 察看))))) 
+	</parse>
+	<arg n="0">
+	研究 典藏组 组长 卢秀琴 
+	</arg>
+	<arg n="1">
+	现场 
+	</arg>
+	<arg n="m" f="adv">
+	连忙 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

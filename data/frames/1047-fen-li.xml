@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 分离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing separated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 所有权)
+		      (CC 与)
+		      (NN 经营权))
+	      (VP (VV 分离))) 
+	  </parse>
+	  <arg n="1">
+	  所有权 与 经营权 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 根据)
+		      (NP (DP (DT 这)
+			      (CLP (M 份)))
+			  (NP (NN 文件))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 韩国))
+		      (NP (NN 政府)))
+	      (VP (ADVP (AD 将))
+		  (VP (ADVP (AD 先))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (DNP (NP-PN (QP (OD 第一))
+						      (NP (NN 银行)))
+					       (DEG 的))
+					  (ADJP (JJ 不良))
+					  (NP (NN 资产)))
+				  (VP (VRD (VV 分离)
+					   (VV 出来))))))))
+	  </parse>
+	  <arg n="0">
+	  韩国 政府 
+	  </arg>
+	  <arg n="1">
+	  第一 银行 的 不良 资产 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 这 份 文件 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

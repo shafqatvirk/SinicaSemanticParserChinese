@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吸收 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="attracter"/>
+      <role argnum="1" argrole="attractee"/>
+      <role argnum="2" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 居)
+		  (QP-OBJ (NP (CP (WHPP-1 (-NONE- *OP*))
+				  (IP (NP-PN-SBJ (NR 中国))
+				      (VP (PP-DIR (-NONE- *T*-1))
+					  (VP (VV 吸收)
+					      (NP-OBJ (NN 外资))))))
+			      (NP (NN 国别)))
+			  (QP (OD 第二)
+			      (CLP (M 位)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="2">
+	  (*T*-1)->(国别) 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  外资 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/> 
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (NP-PN (NR 中国))
+				      (NP (NN 化工)
+					  (NN 行业)))
+			      (VP (ADVP (AD 累计))
+				  (VP (VV 吸收)
+				      (NP-OBJ (-NONE- *T*-1))))))
+		      (NP (NN 外资)))
+	      (VP (VV 达)
+		  (QP-OBJ (CD 八十五亿)
+			  (CLP (M 美元))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 化工 行业 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  累计 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*T*-1)->(外资) 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="attracter"/>
+      <role argnum="1" argrole="attractee"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 吸收)
+		      (NP-OBJ (NP-PN (NR 东欧))
+			      (NP (NN 国家)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 加入)
+			      (NP-PN-OBJ (NR 欧盟)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  东欧 国家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 加入 欧盟 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

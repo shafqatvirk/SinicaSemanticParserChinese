@@ -1,0 +1,88 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 意味 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing arg0 means"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-SBJ (NP-SBJ (NP-PN (NR 法国))
+				  (NP (NN 方面)))
+			  (VP (VV 停止)
+			      (NP-OBJ (NN 监视)
+				      (NN 行动))))
+		  (VP (VP (ADVP (AD 并))
+			  (ADVP (AD 不))
+			  (VP (VV 意味)
+			      (AS 着)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (PP-DIR (P 对)
+							      (NP (NP-PN (NR 伊))
+								  (NP (PU “)
+								      (NN 禁飞区)
+								      (PU ”))))
+						      (VP (VV 实行)
+							  (NP-OBJ (NN 巡逻)
+								  (NN 行动)))))
+					      (DEC 的))
+				      (NP (NN 结束))))))) 
+	  </parse>
+	  <arg n="0">
+	  法国 方面 停止 监视 行动 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 对 伊 “ 禁飞区 ” 实行 巡逻 行动 的 结束 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (QP (CD 一)))
+		      (NP (NN 指标)))
+	      (VP (VV 意味)
+		  (AS 着)
+		  (IP-OBJ (NP-TMP (NT 目前))
+			  (NP-SBJ (DNP (NP-PN (NR 中国))
+				       (DEG 的))
+				  (NP (NN 经济)
+				      (NN 生活)))
+			  (VP (VE 有)
+			      (IP-OBJ (QP-SBJ (ADVP (AD 近))
+					      (QP (CD 一半)))
+				      (VP (PP (P 与)
+					      (NP (NN 国际)
+						  (NN 市场)))
+					  (VP (VE 有)
+					      (NP-OBJ (NN 关联))))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 一 指标 
+	  </arg>
+	  <arg n="1">
+	  目前 中国 的 经济 生活 有 近 一半 与 国际 市场 有 关联 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

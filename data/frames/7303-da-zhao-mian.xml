@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打照面 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities running into each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 一)
+			(CLP (M 位)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (PP-PRP (P 因为)
+					    (NP (NN 登山) ))
+				    (ADVP (AD 常))
+				    (PP (P 与)
+					(NP (NN 蛇) ))
+				    (VP (VV 打照面))))
+			    (DEC 的)))
+		    (NP (NN 山友) ))
+	    (VP (VV 表示)
+		(PU ，)
+		(IP-OBJ (NP-SBJ (NN 百步蛇) )
+			(VP (PU 「)
+			    (VP (ADVP (AD 很))
+				(VP (VA 沈稳)))
+			    (PU ，)
+			    (VP (ADVP (AD 不))
+				(VP (VV 会)
+				    (VP (VP (ADVP (AD 盲目))
+					    (VP (VV 躁动)))
+					(VP (VSB (VV 出手)
+						 (VV 攻击))))))
+			    (PU 」))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="0" f="crd">
+	与 蛇 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<arg n="m" f="prp">
+	因为 登山 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

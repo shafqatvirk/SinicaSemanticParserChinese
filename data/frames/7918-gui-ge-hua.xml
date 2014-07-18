@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 规格化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 normalizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 要)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 创造)
+				    (NP-OBJ (QP (CD 一)
+						(CLP (M 部)))
+					    (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-2))
+							(VP (ADVP (AD 真正))
+							    (VP (VV 好用))))
+						    (DEC 的)))
+					    (NP (PU 「)
+						(NN 色典)
+						(PU 」))))
+				(PU ，)
+				(VP (VV 解决)
+				    (NP-OBJ (NP (NN 染整业))
+					    (CP-APP (IP (LCP-TMP (NP (NN 长年))
+								 (LC 以来))
+							(NP-SBJ (NN 色彩))
+							(VP (ADVP (AD 无法))
+							    (VP (PU 「)
+								(VV 标准化)
+								(PU 、)
+								(VV 规格化)
+								(PU 」))))
+						    (DEC 的))
+					    (NP (NN 困扰)))))))) 
+	</parse>
+	<arg n="1">
+	色彩 
+	</arg>
+	<arg n="m" f="adv">
+	无法 
+	</arg>
+	<arg n="m" f="tmp">
+	长年 以来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

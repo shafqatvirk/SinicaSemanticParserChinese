@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 原订 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 originally planned"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (LCP (IP (IP (NP-PN-SBJ (NR 中共))
+				 (VP (ADVP (AD 强烈))
+				     (VP (VV 抗议))))
+			     (CC 和)
+			     (IP (NP-PN-SBJ (NR 美)
+					    (NN 国务院))
+				 (VP (VV 表达)
+				     (NP-OBJ (NN 关切)))))
+			 (LC 後)))
+	    (PU ，)
+	    (NP-PN-SBJ (NP-PN (NR 陈水扁))
+		       (NP (NN 总统)))
+	    (VP (DP-TMP (DT 前)
+			(QP (CD 一)
+			    (CLP (M 天))))
+		(ADVP (AD 已))
+		(VP (VV 取消)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *pro*))
+				    (VP (VV 原订)
+					(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						(VP (PP-TMP (P 在)
+							    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+								     (VP (VV 过境)
+									 (NP-PN-OBJ (NR 美国))))
+								 (LC 时)))
+						    (VP (VV 参加)
+							(NP-OBJ (-NONE- *T*-2))))))))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (QP (CD 几)
+						    (CLP (M 位)))
+						(NP (NN 国会)
+						    (NN 议员)))
+					(VP (PP-BNF (P 为)
+						    (NP (PN 他)))
+					    (VP (VV 举行)
+						(NP-OBJ (-NONE- *T*-1)))))
+				    (DEC 的)))
+			    (ADJP (JJ 非正式))
+			    (NP (NN 接待会)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*PRO* 在 *PRO* 过境 美国 时 参加 *T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

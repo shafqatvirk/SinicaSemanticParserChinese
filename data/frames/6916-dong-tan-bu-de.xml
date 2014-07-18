@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 动弹不得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-CND (NP-SBJ-1 (-NONE- *PRO*))
+			(VP (ADVP (CS 一旦))
+			    (VP (SB 被)
+				(VP (VV 点中)
+				    (NP-OBJ (-NONE- *-1))))))
+		(ADVP (AD 就))
+		(VP (VV 动弹不得)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 一旦 被 点中 *-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

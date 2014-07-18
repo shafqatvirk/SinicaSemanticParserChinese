@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 初出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 first comes out of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-TPC (NP-PN-APP (NR 孙燕姿))
+		  (PU ，)
+		  (DP (DT 这)
+		      (CLP (M 位)))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 年))
+				  (VP (ADVP (AD 方))
+				      (VP (QP-PRD (CD 二十三)))))
+			      (PU 、)
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 来自)
+				      (NP-PN-OBJ (NR 新加坡))))
+			      (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 初出)
+				      (NP-OBJ (NN 茅庐)))))
+			  (DEC 的)))
+		  (NP (NN 女孩))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  茅庐 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

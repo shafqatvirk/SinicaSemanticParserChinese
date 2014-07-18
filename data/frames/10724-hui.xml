@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 悔 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 regrets"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 让)
+		(NP-PN-OBJ (NR 黄天才))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 著实))
+			(VP (CC 又)
+			    (VP (VA 恼))
+			    (CC 又)
+			    (VP (VA 悔)
+				(AS 了)
+				(NP-EXT (NN 许久)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="ext">
+	许久 
+	</arg>
+	<arg n="m" f="adv">
+	著实 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

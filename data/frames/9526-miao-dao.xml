@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 瞄到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 sees"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (ADVP (AD 一眼))
+		  (ADVP (AD 就))
+		  (VP (VV 瞄到)
+		      (NP-OBJ (CP-APP (IP (PU 「)
+					  (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VSB (VV 上课)
+						       (VV 迟到)))
+					      (VP (VV 罚)
+						  (QP-OBJ (CD 二十五)
+							  (CLP (M 分)))))
+					  (PU 」))
+				      (DEC 的))
+			      (NP (NN 规定)))))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  「 *PRO* 上课 迟到 罚 二十五 分 」 的 规定 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一眼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

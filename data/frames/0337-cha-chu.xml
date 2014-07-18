@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查处 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="investigator"/>
+    <role argnum="1" argrole="thing investigated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NR 安徽省)
+                 (NN 纪委))
+      (VP (PP-MNR (P 根据)
+                  (IP (NP-SBJ (NN 群众))
+                      (VP (VV 举报))))
+          (ADVP (AD 严肃))
+          (VP (VV 查处)
+              (AS 了)
+              (NP-OBJ (DP (DT 此))
+                      (NP (NN 事)))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 安徽省 纪委 </arg>
+	<arg n="M" f="MNR"> 根据 群众 举报 </arg>
+	<arg n="M" f="ADV"> 严肃 </arg>
+	<V/>
+	<arg n="1"> 此 事 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (ADVP (AD 同时))
+          (VP (PP-DIR (P 对)
+                      (NP (CP (WHNP-3 (-NONE- *OP*))
+                              (CP (IP (NP-SBJ (-NONE- *T*-3))
+                                      (VP (ADVP (AD 违法))
+                                          (VP (VV 经营))))
+                                  (DEC 的)))))
+              (ADVP (AD 依法))
+              (VP (VV 查处))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="1"> 对 *OP* *T*-3 违法 经营 的 </arg>
+	<arg n="M" f="ADV"> 依法 </arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP (DP (DT 各))
+                  (NP (NN 地)))
+              (PU 、)
+              (NP (DP (DT 各))
+                  (ADJP (JJ 有关))
+                  (NP (NN 部门))))
+      (VP (VV 必须)
+          (VP (VP (VP (ADVP (AD 立即))
+                      (VP (VV 纠正)))
+                  (CC 并)
+                  (VP (ADVP (AD 严肃))
+                      (VP (VV 查处))))
+              (PU ，)
+              (VP (VV 防止)
+                  (IP-OBJ (NP-SBJ (DP (DT 此)
+                                      (CLP (M 类)))
+                                  (NP (NN 问题)))
+                          (VP (ADVP (AD 再度))
+                              (VP (VV 发生)))))))))
+	</parse>
+	<arg n="0"> 各 地 、 各 有关 部门 </arg>
+	<arg n="M" f="ADV"> 严肃 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

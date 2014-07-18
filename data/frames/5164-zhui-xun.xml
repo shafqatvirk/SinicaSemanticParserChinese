@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 追寻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 searches for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 转而))
+		(VP (VV 追寻)
+		    (NP-OBJ (NN 宗教)
+			    (NN 慰藉))))) 
+	</parse>
+	<arg n="0">
+	许多 人 
+	</arg>
+	<arg n="1">
+	宗教 慰藉 
+	</arg>
+	<arg n="m" f="adv">
+	转而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (DP-WH (DT 哪些))
+				      (NP (NN 梦想)))
+			      (VP (VV 可以)
+				  (VP (VV 去)
+				      (VP (VV 追寻))))))
+		  (PU ，)
+		  (VP (VE 有)
+		      (IP-OBJ (DP-SBJ (DT 哪些))
+			      (VP (VV 可能)
+				  (VP (VV 必须)
+				      (VP (VV 放弃)))))))) 
+	</parse>
+	<arg n="1">
+	哪些 梦想 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

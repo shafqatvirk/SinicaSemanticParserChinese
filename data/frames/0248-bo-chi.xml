@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 驳斥 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="refuter"/>
+    <role argnum="1" argrole="thing refuted"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-HLN (NP-SBJ (NP (NP (PN 我))
+                      (NP (ADJP (JJ 驻美))
+                          (NP (NN 使馆))))
+                  (NP (NN 新闻)
+                      (NN 参赞)))
+          (VP (VP (VV 撰文))
+              (VP-PRP (VV 驳斥)
+                      (NP-OBJ (NP-TTL (PU 《)
+                                      (NN 基督教)
+                                      (NN 科学)
+                                      (NN 箴言报)
+                                      (PU 》))
+                              (NP (NN 谎言)))))))
+	</parse>
+	<arg n="0"> 我 驻美 使馆 新闻 参赞 </arg>
+	<V/>
+	<arg n="1"> 《 基督教 科学 箴言报 》 谎言 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

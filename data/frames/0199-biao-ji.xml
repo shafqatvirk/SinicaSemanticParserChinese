@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 标记 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing marked"/>
+    <role argnum="2" argrole="location"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 因此))
+      (NP-SBJ (NN 商家))
+      (VP (ADVP (AD 先))
+          (PP-DIR (P 从)
+                  (NP (NP (NN 收银))
+                      (ADJP (JJ 小))
+                      (NP (NN 条))))
+          (VP (VV 开始)
+              (VP (VV 标记)
+                  (NP-OBJ (NN 欧元)))))))
+	</parse>
+	<arg n="0"> 商家 </arg>
+	<arg n="M" f="ADV"> 先 </arg>
+	<arg n="M" f="DIR"> 从 收银 小 条 </arg>
+	<V/>
+	<arg n="1"> 欧元 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掠夺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 loots"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (ADVP (AD 直))
+		      (PP (P 到)
+			  (NP (QP (OD 十九))
+			      (NP (NN 世纪)))))
+	      (PU ，)
+	      (PP-MNR (P 随着)
+		      (NP (DNP (NP (NN 机械))
+			       (DEG 的))
+			  (NP (NN 精进))))
+	      (PU ，)
+	      (NP-SBJ (NN 人类))
+	      (VP (PP-MNR (P 像)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VP (VV 低)
+						  (NP-OBJ (NN 头)))
+					      (VP (VA 忙碌))))
+				      (DEC 的)))
+			      (NP (NN 工蚁))))
+		  (VP (VP (ADVP (AD 源源))
+			  (VP (VV 进入)
+			      (NP-OBJ (NN 山区))))
+		      (PU ，)
+		      (VP (VV 进行)
+			  (AS 着)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VV 变本加厉)))
+					  (DEC 的)))
+				  (NP (NN 掠夺))))))) 
+	  </parse>
+	  <arg n="0">
+	  人类 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  直 到 十九 世纪 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  随着 机械 的 精进 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  像 *OP* *T*-2 低 头 忙碌 的 工蚁 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 变本加厉 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

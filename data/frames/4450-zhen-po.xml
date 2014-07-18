@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 侦破 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它们))
+	      (VP (ADVP (AD 曾经))
+		  (PP-TMP (P 在)
+			  (LCP (QP (CD 八)
+				   (CLP (M 天)))
+			       (LC 里)))
+		  (ADVP (AD 连续))
+		  (VP (VV 侦破)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 八)
+				  (CLP (M 起)))
+			      (DNP (UCP (NP (NN 贩毒))
+					(PU 、)
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (VV 持)
+						    (NP-OBJ (NN 枪)))
+						(VP (VV 杀)
+						    (NP-OBJ (NN 人))))))
+				   (DEG 的))
+			      (ADJP (JJ 大))
+			      (NP (NN 案)))))) 
+	  </parse>
+	  <arg n="0">
+	  它们 
+	  </arg>
+	  <arg n="1">
+	  八 起 贩毒 、 *PRO* 持 枪 杀 人 的 大 案 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连续 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 八 天 里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

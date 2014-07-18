@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 不痛不痒 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity to which arg0 is not pain in neck"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 或许))
+	      (NP-SBJ (NN 飞弹))
+	      (VP (PP-DIR (P 对)
+			  (NP (DP (DT 某些))
+			      (NP (NN 国家))))
+		  (VP (VV 不痛不痒)))) 
+	  </parse>
+	  <arg n="0">
+	  飞弹 
+	  </arg>
+	  <arg n="1">
+	  对 某些 国家 
+	  </arg>
+	  <arg n="m" f="adv">
+	  或许 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

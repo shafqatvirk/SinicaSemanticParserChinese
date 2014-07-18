@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 禁止 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="forbidder"/>
+      <role argnum="1" argrole="activity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 法律))
+	      (VP (VV 规定)
+		  (IP-OBJ (NP-SBJ (NN 证券)
+				  (NN 发行))
+			  (VP (VV 必须)
+			      (VP (VP (VV 遵循)
+				      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+						      (VP (PU “)
+							  (VA 公开)
+							  (PU 、)
+							  (VA 公平)
+							  (PU 、)
+							  (VA 公正)
+							  (PU ”)))
+					      (NP (NN 原则))))
+				  (PU ，)
+				  (VP (VV 禁止)
+				      (NP-OBJ (NP (NN 欺诈))
+					      (PU 、)
+					      (NP (NN 内幕)
+						  (NN 交易))
+					      (CC 和)
+					      (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 操纵)
+							      (NP-OBJ (NN 证券)
+								      (NN 交易)
+								      (NN 市场))))
+						  (NP (NN 行为)))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  证券 发行 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  欺诈 、 内幕 交易 和 *PRO* 操纵 证券 交易 市场 行为 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 蒙古))
+		  (VP (VV 禁止)
+		      (NP-OBJ (NN 新闻)
+			      (NN 媒体))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 刊登)
+			      (NP-OBJ (NN 酒类)
+				      (NN 广告)))))) 
+	  </parse>
+	  <arg n="0">
+	  蒙古 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  新闻 媒体 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 刊登 酒类 广告 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 从)
+				  (NP (NT 明天)))
+			  (VP (VV 开始))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 太湖))
+		      (NP (NN 流域)))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 全面))
+		  (VP (VV 禁止)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 使用)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VV 含)
+						      (NP-OBJ (NN 磷)))))
+					  (NP (NN 洗涤剂)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  太湖 流域 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  全面 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 使用 *OP* (*T*-1)->(洗涤剂) 含 磷 洗涤剂 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

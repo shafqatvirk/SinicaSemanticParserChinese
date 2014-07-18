@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 植 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 plants"/>
+    <role argnum="2" argrole="place arg1 is planted"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 外省人))
+	    (VP (CC 不仅)
+		(VP (VV 引进)
+		    (NP-OBJ (NP (NP (DP (DT 各))
+				    (NP (NN 省)))
+				(NP (NN 风味)
+				    (NN 小吃)))
+			    (CC 和)
+			    (NP (DNP (PP (P 对)
+					 (NP (NN 大陆)
+					     (NN 故国)))
+				     (DEG 的))
+				(NP (NN 眷恋)))))
+		(PU ，)
+		(CC 还)
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VCD (VV 忠党)
+							 (VV 爱国))))
+					    (DEC 的))
+				    (NP (NN 公教)
+					(NN 人员))
+				    (NP (NN 习性)))
+			    (VP (ADVP (AD 深))
+				(VP (VV 植)
+				    (PP (P 在)
+					(NP-PN (NR 台北))))))))) 
+	</parse>
+	<arg n="0">
+	外省人 
+	</arg>
+	<arg n="1">
+	*PRO* 忠党 爱国 的 公教 人员 习性 
+	</arg>
+	<arg n="2">
+	在 台北 
+	</arg>
+	<arg n="m" f="adv">
+	深 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-SBJ (NN 台湾人) )
+	    (VP (NP-TMP (NT 过去) )
+		(ADVP (AD 又))
+		(VP (VE 没有)
+		    (NP-OBJ (PP (P 像)
+				(NP-PN (NR 欧)
+				       (NR 美) ))
+			    (DP (DT 那)
+				(CLP (M 种)))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 深))
+					    (VP (VV 植)
+						(NP-OBJ (NN 健身)
+							(NN 习惯) )
+						(PP (P 於)
+						    (NP (NN 生活) )))))
+				    (DEC 的))
+			    (NP (NN 传统) ))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	健身 习惯 
+	</arg>
+	<arg n="2">
+	於 生活 
+	</arg>
+	<arg n="m" f="adv">
+	深 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

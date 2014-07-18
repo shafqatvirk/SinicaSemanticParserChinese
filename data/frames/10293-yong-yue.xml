@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 踊跃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is enthusiastic about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PRN (PU （)
+		 (NP (NN 左))
+		 (PU ）))
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 虽))
+			(VP (VV 说)
+			    (IP-OBJ (NP-SBJ (NP (QP (CD 两))
+						(NP (NN 岸)))
+					    (NP (NN 关系)))
+				    (VP (ADVP (AD 尚))
+					(ADVP (AD 未))
+					(VP (VV 化冰)))))))
+	    (PU ，)
+	    (IP-TMP (NP-PN-SBJ (NR 台湾)
+			       (NN 海报)
+			       (NN 设计)
+			       (NN 协会))
+		    (VP (VV 举办)
+			(NP-OBJ (NP (NP (QP (CD 两))
+					(NP (NN 岸)))
+				    (NP (NN 华人)))
+				(NP-TTL (PU 「)
+					(NP (NT 2001))
+					(NP (NN 和平)
+					    (NN 海报))
+					(NP (NN 创作)
+					    (NN 比赛))
+					(PU 」)))))
+	    (PU ，)
+	    (NP-SBJ (NN 大陆)
+		    (NN 设计)
+		    (NN 人士))
+	    (VP (VP-FOC (VV 参与))
+		(VP (VA 踊跃)))) 
+	</parse>
+	<arg n="0">
+	大陆 设计 人士 
+	</arg>
+	<arg n="1">
+	参与 
+	</arg>
+	<arg n="m" f="tpc">
+	台湾 海报 设计 协会 举办 两 岸 华人 「 2001 和平 海报 创作 比赛 」 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 虽 说 两 岸 关系 尚 未 化冰 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

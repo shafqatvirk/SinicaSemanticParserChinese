@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 取信 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 gets trust from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (P 针对)
+		    (NP (DNP (NP (NN 外界))
+			     (DEG 的))
+			(NP (NN 质疑))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 宋楚瑜))
+	    (VP (ADVP (AD 也))
+		(VP (VV 委托)
+		    (NP-OBJ (NP-APP (NP-PN (NR 新党))
+				    (NP (NN 立委)))
+			    (NP-PN (NR 谢启大)))
+		    (PU ，)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VP (VV 组成)
+				    (NP-OBJ (QP (CD 一))
+					    (NP (NN 查帐团))))
+				(PU ，)
+				(VP (VV 投入)
+				    (NP-OBJ (NN 查帐)
+					    (NN 工作))))
+			    (PU ，)
+			    (VP (MSP 以)
+				(VP (VV 取信)
+				    (NP-OBJ (NN 社会))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	社会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跌破眼镜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person surprised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 让)
+		  (NP-OBJ (CP (WHNP-7 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-7))
+				      (VP (VV 熟识)
+					  (NP-OBJ (PN 他))))
+				  (DEC 的)))
+			  (NP (NN 朋友)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 个个))
+			  (VP (VV 跌破眼镜)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  个个 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

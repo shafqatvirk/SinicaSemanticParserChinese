@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预付 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing paid in advance"/>
+      <role argnum="2" argrole="payee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 巴西))
+		      (NP (NN 方面)))
+	      (VP (ADVP (AD 先))
+		  (VP (VV 预付)
+		      (NP-OBJ (DNP (QP (CD 百分之十五))
+				   (DEG 的))
+			      (NP (NN 定金)))))) 
+	  </parse>
+	  <arg n="0">
+	  巴西 方面 
+	  </arg>
+	  <arg n="1">
+	  百分之十五 的 定金 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

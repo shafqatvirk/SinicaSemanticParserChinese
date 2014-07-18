@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 永不妥协 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 never compromises with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 就))
+		  (VP (VC 是)
+		      (NP-PRD (DP (DT 这)
+				  (CLP (M 种)))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 永不妥协)))
+				      (DEC 的))
+			      (NP (NN 个性)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

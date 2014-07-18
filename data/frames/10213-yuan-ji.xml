@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 远及 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="entity arg0 reaches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-PN-SBJ (NR 光启社))
+				(VP (VV 制作)
+				    (NP-OBJ (NN 节目))))
+			    (DEC 的))
+		    (NP (NN 触角)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 远及)
+		    (NP-OBJ (NN 国外))))) 
+	</parse>
+	<arg n="0">
+	光启社 制作 节目 的 触角 
+	</arg>
+	<arg n="1">
+	国外 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

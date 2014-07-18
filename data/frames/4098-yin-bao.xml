@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 引爆 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing ignited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 震惊)
+				      (NP-OBJ (NN 全球))))
+			      (DEC 的)))
+		      (NP-PN (NR 东亚))
+		      (NP (NN 金融)
+			  (NN 风暴)))
+	      (PP-TMP (P 自)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (NP-TMP (NT 去年)
+					   (NT 七月))
+				   (PP-LOC (P 在)
+					   (NP-PN (NR 泰国)))
+				   (VP (VV 引爆))))
+			   (LC 後)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 东亚))
+		      (QP (CD 诸))
+		      (NP (NN 国)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (ADVP (AD 宛))
+				  (PP (P 如)
+				      (NP (NN 骨牌))))
+			      (VP (VA 般))))
+		  (ADVP (AD 连番))
+		  (VP (VV 倒下)))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 泰国 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 七月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 事关 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing involved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (CC 不仅)
+		  (VP (VV 事关)
+		      (NP-OBJ (NP (PN 自身))
+			      (NP (NN 生存)
+				  (CC 和)
+				  (NN 发展)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  自身 生存 和 发展 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (ADVP (AD 特别是))
+		      (PP (P 在)
+			  (LCP (NP (NP-APP (NN 公务员)
+					   (NN 本地化))
+				   (DP (DT 这)
+				       (CLP (M 个)))
+				   (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (VV 事关)
+						   (IP-OBJ (IP (NP-PN-SBJ (NR 澳门))
+							       (VP (ADVP (AD 平稳))
+								   (VP (VV 过渡))))
+							   (PU 、)
+							   (IP (NP-SBJ (NN 政权))
+							       (VP (ADVP (AD 顺利))
+								   (VP (VV 交接)))))))
+					   (DEC 的)))
+				   (ADJP (JJ 重要))
+				   (NP (NN 问题)))
+			       (LC 上))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 存在)
+		  (AS 着)
+		  (NP-OBJ (DNP (ADJP (JJ 相当))
+			       (DEG 的))
+			  (NP (NN 不足))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  澳门 平稳 过渡 、 政权 顺利 交接 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

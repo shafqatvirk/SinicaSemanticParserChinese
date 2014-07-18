@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 铸有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="thing moulded on arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DP (DT 另)
+			  (QP (CD 一)
+			      (CLP (M 件))))
+		      (CP (WHNP-5 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-5))
+				  (VP (VV 铸有)
+				      (NP-OBJ (NP (QP (CD 六)
+						      (CLP (M 只)))
+						  (NP (NN 飞鸟)))
+					      (CC 与)
+					      (NP (QP (CD 三)
+						      (CLP (M 个)))
+						  (NP (NN 牛头))))))
+			      (DEC 的)))
+		      (NP (NN 尊)))
+	      (PU ，)
+	      (ADVP (AD 则))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LOC (P 在)
+			  (NP-PN (NR 湖南)
+				 (CC 及)
+				 (NR 陕西)))
+		  (VP (ADVP (AD 都))
+		      (VP (VE 有)
+			  (NP-OBJ (CP (WHNP-6 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-6))
+					  (VP (VV 相似))))
+				  (NP (NN 出土)
+				      (NN 文物))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-5 
+	  </arg>
+	  <arg n="1">
+	  六 只 飞鸟 与 三 个 牛头 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

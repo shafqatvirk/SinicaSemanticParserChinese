@@ -1,0 +1,99 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 专注 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is concentrated on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 英特尔))
+	    (VP (VP (VP (PP-TMP (P 在)
+				(NP (NP (QP (CD 八○))
+					(NP (NN 年代)))
+				    (NP (NN 末期))))
+			(PU ，)
+			(VP (VV 眼看)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (ADVP (AD 无法))
+					(PP (P 与)
+					    (NP (NP-PN (NR 日本))
+						(NP (NN 半导体厂))))
+					(VP (VV 竞争)
+					    (NP-OBJ (NN 记忆体)
+						    (NN 产品)))))))
+		    (PU ，)
+		    (VP (ADVP (AD 断然))
+			(VP (VV 退出)
+			    (NP-OBJ (NN 市场))))
+		    (PU ，)
+		    (VP (VV 专注)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 开发)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *pro*))
+							(VP (ADVP (AD 更))
+							    (VP (VV 擅长)
+								(NP-OBJ (-NONE- *T*-1)))))
+						    (DEC 的)))
+					    (NP (NN 微处理器)))))))
+		(PU ，)
+		(VP (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VP (VV 摆脱)
+				(NP-OBJ (NN 纠缠)))
+			    (PU ，)
+			    (VP (DVP (VP (VV 呈)
+					 (NP-OBJ (NN 倍数))))
+				(VP (VV 成长)))))))) 
+	</parse>
+	<arg n="0">
+	英特尔 
+	</arg>
+	<arg n="1">
+	*PRO* 开发 *OP* *pro* 更 擅长 *T*-1 的 微处理器 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VP (ADVP (AD 一直))
+				    (VP (VV 专注)
+					(PP (P 在)
+					    (NP (NN 理工)
+						(NN 领域)))))
+				(PU ，)
+				(VP (PP (P 和)
+					(NP (NN 数字)))
+				    (VP (VV 打交道)))))
+			(DEC 的)))
+		(NP (PN 他))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	在 理工 领域 
+	</arg>
+	<arg n="m" f="adv">
+	一直 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

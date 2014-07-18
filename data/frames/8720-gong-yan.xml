@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 公演 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 puts on stage"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (NP-TMP (NT 去年))
+			       (NP-TMP (NN 期末))
+			       (VP (VV 公演)
+				   (NP-TTL-OBJ (PU 《)
+					       (DNP (NP (NN 琉璃)
+							(NN 公主))
+						    (DEG 的))
+					       (NP (NN 梦))
+					       (PU 》)))))
+		       (LC 时))
+	      (PU ，)
+	      (IP-LOC (NP-SBJ (-NONE- *pro*))
+		      (VP (VE 有)
+			  (QP-OBJ (CD 一)
+				  (CLP (M 幕)))))
+	      (IP (NP-SBJ (NN 国王))
+		  (VP (VV 要)
+		      (VP (BA 将)
+			  (IP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (NN 公主))
+						  (VP (ADVP (AD 亲手))
+						      (VP (VV 献上)
+							  (NP-OBJ (-NONE- *T*-1)))))
+					      (DEC 的)))
+				      (NP (NN 蛋糕)))
+				  (VP (VV 摔掉))))))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 公主))
+		  (VP (ADVP (AD 则))
+		      (VP (VV 演出)
+			  (NP-OBJ (DNP (IP (NP-SBJ (-NONE- *PRO*))
+					   (VP (VV 痛哭)))
+				       (DEC 的))
+				  (NP (NN 样子))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  《 琉璃 公主 的 梦 》 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  期末 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  去年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

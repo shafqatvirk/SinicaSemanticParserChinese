@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揣摩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes guesses at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VV 继续)
+		  (VP (VP (VP (VV 卖弄)
+			      (NP-OBJ (-NONE- *RNR*-2)))
+			  (PU 、)
+			  (VP (VV 炫耀)
+			      (NP-OBJ-2 (NP (ADJP (JJ 老))
+					    (NP (NN 智慧)))
+					(PU 、)
+					(NP (ADJP (JJ 老))
+					    (NP (NN 规矩))))))
+		      (PU ，)
+		      (VP (PP-MNR (P 用)
+				  (NP (NP (ADJP (JJ 老))
+					  (NP (NN 智慧)))
+				      (PU 、)
+				      (NP (ADJP (JJ 老))
+					  (NP (NN 规矩)))))
+			  (VP (MSP 来)
+			      (VP (VV 揣摩)
+				  (NP-OBJ (-NONE- *RNR*-3)))
+			      (PU 、)
+			      (VP (VV 猜测)
+				  (NP-OBJ-3 (ADJP (JJ 新))
+					    (NP (NN 社会))))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 	
+	  </arg>
+	  <arg n="1">
+	  *RNR*-3 	
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 老 智慧 、 老 规矩 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-Q-TPC (NP-SBJ (NP-PN (NR 中共))
+				(NP (NN 高层)))
+			(VP (ADVP (AD 到底))
+			    (ADVP-WH (AD 怎麽))
+			    (VP (VV 看)
+				(NP-PN-OBJ (NN 台协)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 叶宏灯))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 还))
+		  (ADVP (AD 在))
+		  (VP (VV 揣摩)))) 
+	  </parse>
+	  <arg n="0">
+	  叶宏灯 	
+	  </arg>
+	  <arg n="1">
+	  中共 高层 到底 怎麽 看 台协 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  在 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

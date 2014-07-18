@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 醉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="person who gets drunk because of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NN 酒) )
+		(VP (VV 能)
+		    (VP (VV 醉)
+			(NP-OBJ (NN 人))))) 
+	</parse>
+	<arg n="0">
+	酒 
+	</arg>
+	<arg n="1">
+	人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 夸耀)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (PN 自己))
+					(VP (QP-ADV (CD 千)
+						    (CLP (M 杯)))
+					    (ADVP (AD 不))
+					    (VP (VA 醉))))
+				    (DEC 的))
+			    (NP (NN 功力))))) 
+	</parse>
+	<arg n="0">
+	千 杯 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

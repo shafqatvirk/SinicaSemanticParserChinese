@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抒解 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 alleviates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 试试)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (NP-TMP (NT 周末))
+				(VP (VV 选修)
+				    (NP-OBJ (QP (CD 一)
+						(CLP (M 门)))
+					    (NP (NN 课))))))))
+	    (PU ，)
+	    (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 可以)
+		    (VP (ADVP (AD 有效))
+			(VP (VV 抒解)
+			    (NP-OBJ (NN 焦虑))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	焦虑 
+	</arg>
+	<arg n="m" f="adv">
+	有效 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

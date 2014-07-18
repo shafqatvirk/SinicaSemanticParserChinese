@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 高 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 开发商们))
+			   (DEG 的))
+		      (NP (NN 热情)))
+	      (VP (ADVP (AD 很))
+		  (VP (VA 高)))) 
+	  </parse>
+	  <arg n="0">
+	  开发商们 的 热情 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="height"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (DP (DT 这)
+		  (CLP (M 个)))
+	      (CP (WHNP-1 (-NONE- *OP*))
+		  (IP (NP-SBJ (-NONE- *T*-1))
+		      (VP (QP-ADV (CD 六)
+				  (CLP (M 米)))
+			  (VP (VA 高)))))
+	      (PU 、)
+	      (CP (WHNP-2 (-NONE- *OP*))
+		  (CP (IP (NP-TPC (-NONE- *T*-2))
+			  (NP-SBJ (NN 表面))
+			  (VP (VP (VSB (PU 「)
+				       (VV 晋金)
+				       (PU 」)
+				       (VV 喷涂)))
+			      (PU 、)
+			      (CC 并)
+			      (VP (VV 贴上)
+				  (NP-OBJ (NN 金箔)))))
+		      (DEC 的)))
+	      (ADJP (JJ 铜铸))
+	      (NP (NN 雕塑)))
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  六 米 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

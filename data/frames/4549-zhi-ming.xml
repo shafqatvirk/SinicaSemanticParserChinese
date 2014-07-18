@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致命 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 死因))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (NN 早产儿))
+				      (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 最))
+					  (VP (VA 致命))))
+				  (DEC 的)))
+			  (NP (NN 肺出血))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="M" f="tpc">
+	  早产儿 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

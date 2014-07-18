@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 祈福 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity prayed for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (QP (CD 数万))
+			  (NP (NN 佛教徒)))
+		  (VP (PP-BNF (P 为)
+			      (NP-PN (NR 香港)))
+		      (VP (VV 祈福)))) 
+	  </parse>
+	  <arg n="0">
+	  数万 佛教徒 
+	  </arg>
+	  <arg n="1">
+	  为 香港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,162 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 要求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="asker"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 每))
+			  (VP (VRD (VV 表演)
+				   (VV 完))
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 个)))
+				      (NP (NN 动作))))))
+	      (PU ，)
+	      (NP-SBJ (NN 警犬们))
+	      (VP (VP (ADVP (AD 就))
+		      (DVP (VP (VV 撒娇))
+			   (DEV 的))
+		      (VP (VV 摇)
+			  (AS 着)
+			  (NP-OBJ (NN 尾巴))))
+		  (PU ，)
+		  (VP (PP-DIR (P 向)
+			      (NP (NN 战士)))
+		      (VP (VV 要求)
+			  (NP-OBJ (NN 抚摸)
+				  (CC 和)
+				  (NN 赞许)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  警犬们 
+	  </arg>
+	  <arg n="2">
+	  向 战士 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  抚摸 和 赞许 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="asker"/>
+      <role argnum="1" argrole="goal"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (PN 此)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 天津市)
+			 (NN 外经贸委))
+	      (VP (VV 要求)
+		  (NP-OBJ (DP (DT 各))
+			  (ADJP (JJ 有关))
+			  (NP (NN 部门)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 坚持)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 依法))
+					  (VP (VV 协调)
+					      (NP-OBJ (NN 企业)
+						      (NN 纠纷))))))
+			  (PU ，)
+			  (VP (VV 提高)
+			      (NP-OBJ (NN 服务)
+				      (NN 质量))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  天津市 外经贸委 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  各 有关 部门 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 坚持 *PRO* 依法 协调 企业 纠纷 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (DNP (QP (CD ５６％))
+			       (DEG 的))
+			  (NP (NN 法国人)))
+		  (VP (VV 要求)
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (ADVP (AD 立即))
+			      (VP (VV 停战)))))) 
+	  </parse>
+	  <arg n="0">
+	  ５６％ 的 法国人 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *pro* 立即 停战 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="asker"/>
+      <role argnum="1" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 米哈伊洛娃))
+	      (VP (VV 表示)
+		  (PU ，)
+		  (IP-OBJ (NP-PN-SBJ (NR 保))
+			  (VP (NP-TMP (NT 明年))
+			      (ADVP (AD 将))
+			      (VP (VV 继续)
+				  (VP (VP (VV 努力))
+				      (VP (VV 要求)
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 加入)
+						      (NP-PN-OBJ (NR 北约)
+								 (CC 和)
+								 (NR 欧盟))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  保 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  *PRO* 加入 北约 和 欧盟 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 孰先孰後 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 中央)
+			  (CC 与)
+			  (NN 省))
+		      (NP (NN 政府)))
+	      (VP (PP-PRP (P 为)
+			  (NP (CP-APP (IP (NP-TPC (NN 治水)
+						  (NN 方案))
+					  (NP-SBJ (NN 治标)
+						  (PU 、)
+						  (NN 治本))
+					  (VP (VV 孰先孰後)))
+				      (DEC 的))
+			      (NP (NN 问题))))
+		  (VP (VV 吵)
+		      (DER 得)
+		      (VP-EXT (VV 不可开交))))) 
+	  </parse>
+	  <arg n="0">
+	  治标 、 治本 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  治水 方案 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

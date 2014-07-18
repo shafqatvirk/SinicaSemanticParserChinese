@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 排排站 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities standing side by side"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (CP-CND (ADVP (CS 假如))
+		      (NP-SBJ (-NONE- *pro*))
+		      (VP (DP-ADV (DT 每)
+				  (CLP (M 天)))
+			  (VP (VV 要)
+			      (VP (PP (P 和)
+				      (NP (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-TPC (-NONE- *T*-1))
+						      (NP-SBJ (NN 身高))
+						      (VP (QP-PRD (CD 四百)
+								  (CLP (M 公尺)))))
+						  (DEC 的)))
+					  (NP (NN 人))))
+				  (VP (VV 排排站))))))
+	      (PU ，)
+	      (NP-SBJ (PN 你))
+	      (VP (VV 会)
+		  (VP (VE 有)
+		      (NP-OBJ (DP-WH (DT 什麽))
+			      (NP (NN 感受)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="crd">
+	和 *OP* *T*-1 身高 四百 公尺 的 人 
+	</arg>
+	<arg n="m" f="adv">
+	每 天 
+	</arg>
+	<arg n="m" f="adv">
+	假如 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

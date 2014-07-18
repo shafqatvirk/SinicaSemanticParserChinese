@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 系列化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing made serialized"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 数十)
+			   (CLP (M 年)))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 航天)
+			  (NN 技术)))
+	      (VP (VV 走过)
+		  (AS 了)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 条)))
+			  (CP-APP (IP (IP (NP-SBJ (NN 投资))
+					  (VP (VA 少)))
+				      (PU 、)
+				      (IP (NP-SBJ (NN 收效))
+					  (VP (VA 大)))
+				      (PU 、)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 系列化)))
+				      (PU 、)
+				      (IP (NP-SBJ (NN 成功率))
+					  (VP (VA 高))))
+				  (DEC 的))
+			  (NP (NN 道路))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

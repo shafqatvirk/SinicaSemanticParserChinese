@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 升班 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person moving to a higher class"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 打听)
+		    (VP (VV 到)
+			(NP-PN-SBJ (NR 玛丽安))
+			(VP (VE 有)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 赶)
+						    (NP-OBJ (NN 人))
+						    (IP (NP-SBJ (-NONE- *PRO*))
+							(VP (PU 「)
+							    (VV 升班)
+							    (PU 」))))
+						(DEC 的)))
+				    (NP (NN 惯例))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

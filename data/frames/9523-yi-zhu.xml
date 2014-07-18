@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 邑注 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 pours arg1 into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (IP (NP-SBJ (NN 大陆))
+			       (VP (VV 倾)
+				   (NP-OBJ (DNP (NP (DP (DT 全))
+						    (NP (NN 国)))
+						(DEG 之))
+					   (NP (NN 力)))
+				   (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 邑注)))))
+			   (LC 下)))
+	      (PU ，)
+	      (IP (IP (NP-PN-SBJ (NP-PN (NR 上海))
+				 (ADJP (JJ 高速))
+				 (NP (NN 公路)))
+		      (VP (VV 赶)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-TMP (P 在)
+					      (LCP (QP (CD 两)
+						       (CLP (M 年)))
+						   (LC 内)))
+				      (ADVP (AD 就))
+				      (VP (VCD (VV 完工)
+					       (VV 通车)))))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 电缆))
+		      (VP (ADVP (AD 完全))
+			  (VP (VV 地下化))))
+		  (PU ，)
+		  (IP (NP-SBJ (NN 光纤)
+			      (NN 罔路))
+		      (VP (ADVP (AD 也))
+			  (ADVP (AD 即将))
+			  (ADVP (AD 全面))
+			  (VP (VRD (VV 铺设)
+				   (VV 完成))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

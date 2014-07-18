@@ -1,0 +1,189 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 提交 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="submitter"/>
+      <role argnum="1" argrole="bill, policy"/>
+      <role argnum="2" argrole="receiver"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-PN (NN 国务院))
+	      (VP (NP-TMP (NT 今天))
+		  (ADVP (AD 正式))
+		  (PP-DIR (P 向)
+			  (NP (NP-PN (QP (OD 八)
+					 (CLP (M 届)))
+				     (NP (DP (DT 全))
+					 (NP (NN 国)))
+				     (NP (NN-SHORT 人大)))
+			      (QP (OD 五)
+				  (CLP (M 次)))
+			      (NP (NN 会议))))
+		  (VP (VV 提交)
+		      (AS 了)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 设立)
+					      (NP-PN-OBJ (NR 重庆)
+							 (NN 直辖市))))
+				      (DEC 的))
+			      (NP (NN 议案)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  国务院 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  今天 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  正式 	  
+	  </arg>
+	  <arg n="2">
+	  向 八 届 全 国 人大 五 次 会议 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 设立 重庆 直辖市 的 议案 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 行政)
+			  (NN 会议))
+		  (VP (VV 通过)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-TTL-SBJ (PU 《)
+						      (NP (NP (NP (NT 一九九七年))
+							      (NP (NN 人民)
+								  (NN 入境))
+							      (PRN (PU （)
+								   (NP (NN 修订))
+								   (PU ）))
+							      (PRN (PU （)
+								   (QP (OD 第五)
+								       (CLP (M 号)))
+								   (PU ）))
+							      (NP (NN 条例)))
+							  (NP (NN 草案)))
+						      (PU 》))
+					  (VP (VV 提交)
+					      (NP-PN-OBJ (ADJP (JJ 临时))
+							 (NP (NN 立法会))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  《 一九九七年 人民 入境（ 修订 ） （ 第五 号 ） 条例 草案 》 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  临时 立法会 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 发言人))
+	      (VP (VV 说)
+		  (PU ∶)
+		  (IP (PU 「)
+		      (CP-CND (ADVP (CS 假如))
+			      (IP (IP (NP-SBJ (NN 情况))
+				      (VP (VA 可疑)))
+				  (CC 或)
+				  (IP (NP-SBJ (NN 资料))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 符))))))
+		      (PU ，)
+		      (NP-PN-SBJ (NN 入境处))
+		      (VP (VV 会)
+			  (VP (VP (VV 要求)
+				  (NP-OBJ (NN 内地)
+					  (NN 当局))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 提交)
+					      (NP-OBJ (DNP (NP (ADJP (JJ 有关))
+							       (NP (NN 证明)
+								   (NN 文件)))
+							   (DEG 的))
+						      (NP (NN 副本)))))))
+			      (PU ，)
+			      (CC 并)
+			      (VP (PP-DIR (P 向)
+					  (NP (PN 他们)))
+				  (VP (VV 查询)
+				      (NP-OBJ (DNP (NP (NN 文件))
+						   (DEG 的))
+					      (NP (NN 真确性)))))))))
+	      (PU 。)
+	      (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  有关 证明 文件 的 副本 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 条例)
+		      (NN 草案))
+	      (VP (ADVP (AD 将))
+		  (PP-TMP (P 於)
+			  (NP (NT 明日)
+			      (PRN (PU （)
+				   (NP (NT 星期三))
+				   (PU ）))))
+		  (VP (VV 提交)
+		      (NP-PN-OBJ (ADJP (JJ 临时))
+				 (NP (NN 立法会)))))) 
+	  </parse>
+	  <arg n="1">
+	  条例 草案 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  於 明日 （ 星期三 ） 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  临时 立法会 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

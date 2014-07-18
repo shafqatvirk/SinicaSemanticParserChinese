@@ -1,0 +1,329 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 carries out"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 然后))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (ADJP (JJ 专门))
+				      (NP (NN 队伍)))
+			      (VP (VV 进行)
+				  (NP-OBJ (NN 监督)
+					  (NN 检查))))))) 
+	  </parse>
+	  <arg n="0">
+	  专门 队伍 	  	  
+	  </arg>
+	  <arg n="1">
+	  监督 检查 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (ADJP (JJ 新))
+			       (NP (NN 技术)))
+			   (DEG 的))
+		      (NP (NN 推广)
+			  (NN 应用)))
+	      (VP (ADVP (AD 主要))
+		  (PP-LGS (P 由)
+			  (NP (NN 企业)))
+		  (VP (VP (VV 依靠)
+			  (NP-OBJ (NN 市场)
+				  (NN 机制)))
+		      (VP (MSP 来)
+			  (VP (VV 进行)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 企业 	  	  
+	  </arg>
+	  <arg n="1">
+	  新 技术 的 推广 应用 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 北仑港))
+		      (QP (OD 二)
+			  (CLP (M 期)))
+		      (NP (NN 集装箱)
+			  (NN 码头)))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 正在))
+		  (VP (VV 进行)
+		      (NP-OBJ (ADJP (JJ 前期))
+			      (NP (NN 筹备)))))) 
+	  </parse>
+	  <arg n="1" f="pse">
+	  前期 筹备 	  	  
+	  </arg>
+	  <arg n="1" f="psr">
+	  北仑港 二 期 集装箱 码头 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 介绍 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP (NP-PN (NR 小浪底))
+			  (NP (NN 水利)
+			      (NN 枢纽)
+			      (NN 工程)))
+		      (DNP (NP (NN 地下)
+			       (NN 厂房))
+			   (DEG 的))
+		      (NP (NN 引水洞)))
+	      (NP-SBJ (ADJP (JJ 原))
+		      (NP (NN 设计)
+			  (NN 要求)))
+	      (VP (VC 是)
+		  (VP (ADVP (AD 全部))
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 钢盘)
+				  (NN 混凝土)
+				  (NN 衬砌)))))) 
+	  </parse>
+	  <arg n="1">
+	  钢盘 混凝土 衬砌 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  全部 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (NP-SBJ (DNP (PP (P 对)
+			       (NP (CP (WHNP-4 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-4))
+					       (VP (ADVP (AD 最))
+						   (VP (VA 轻))))
+					   (DEC 的)))
+				   (NP (NN 男婴))))
+			   (DEG 的))
+		      (NP (NN 抢救)))
+	      (VP (VP (VV 进行)
+		      (AS 了)
+		      (NP-OBJ (QP (QP (CD 一)
+				      (CLP (M 个)))
+				  (QP (CD 半)))
+			      (NP (NN 小时))))
+		  (PU ，)
+		  (VP (ADVP (AD 但))
+		      (VP (VV 没有)
+			  (VP (VA 成功)))))) 
+	  </parse>
+	  <arg n="1">
+	  对 *OP* *T*-4 最 轻 的 男婴 的 抢救 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 个 半 小时 	  	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 介绍 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 市民))
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 如))
+			      (VP (VV 欲)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 竞投)
+					      (NP-OBJ (NN 债券)))))))
+		  (PU ，)
+		  (VP (VV 可)
+		      (VP (PP-MNR (P 透过)
+				  (NP (NP (LCP (NP (NN 公布)
+						   (NN 名单))
+					       (LC 上))
+					  (DP (DT 任何)
+					      (QP (CD 一)
+						  (CLP (M 名))))
+					  (NP (NN 市场)
+					      (NN 庄家)))
+				      (CC 或)
+				      (NP (ADJP (JJ 认可))
+					  (NP (NN 交易商)))))
+			  (VP (VV 进行)))))) 
+	  </parse>
+	  <arg n="0">
+	  市民 	  	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  透过 公布 名单 上 任何 一 名 市场 庄家 或 认可 交易商 	  	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 如 欲 *PRO* 竞投 债券 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 比赛))
+	      (ADVP (AD 共))
+	      (VP (VV 进行)
+		  (QP-OBJ (CD 五)
+			  (CLP (M 轮))))) 
+	  </parse>
+	  <arg n="1">
+	  比赛 	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  五 轮 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 keeps going"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 中方))
+	      (VP (VV 希望)
+		  (IP-OBJ (NP-SBJ (DP (DT 这)
+				      (QP (CD 一)))
+				  (NP (NN 会谈)))
+			  (VP (VV 能够)
+			      (VP (VP (VV 继续)
+				      (VP (VRD (VV 进行)
+					       (VV 下去))))
+				  (CC 并)
+				  (VP (ADVP (AD 不断))
+				      (VP (VV 取得)
+					  (NP-OBJ (NN 进展))))))))) 
+	  </parse>
+	  <arg n="1">
+	  这 一 会谈 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 carries out"/>
+      <role argnum="2" argrole="time/place/state arg1 is carried on until "/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 可惜))
+	      (VP (NP-SBJ (NN 省方))
+		  (ADVP (AD 尚))
+		  (ADVP (AD 未))
+		  (VP (VRD (VV 进行)
+			   (VV 到))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (DP (DT 此))
+					      (NP (NN 精神)))
+				      (VP (VP (VV 扩大))
+					  (VP (PP-LOC (P 至)
+						      (LCP (NP (DP (DT 其他))
+							       (NP (NN 河川)))
+							   (LC 上)))
+					      (VP (VV 实施)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  省方 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 将 此 精神 扩大 至 其他 河川 上 实施 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尚 
+	  </arg>
+	  <arg n="m" f="adv">
+	  可惜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

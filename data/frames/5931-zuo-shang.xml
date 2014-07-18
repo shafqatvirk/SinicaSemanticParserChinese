@@ -1,0 +1,82 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 坐上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="place described"/>
+    <role argnum="1" argrole="person sitting in arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (ADJP (JJ 大型))
+			 (DEG 的))
+		    (NP (NN 戏院)))
+	    (VP (ADVP (AD 甚至))
+		(VP (VV 可以)
+		    (VP (VV 坐上)
+			(NP-OBJ (QP (ADVP (AD 好))
+				    (QP (CD 几千)))
+				(NP (NN 人))))))) 
+	</parse>
+	<arg n="0">
+	大型 的 戏院 
+	</arg>
+	<arg n="1">
+	好 几千 人 
+	</arg>
+	<arg n="m" f="adv">
+	甚至 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="transportation arg0 gets onto"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-DIR (P 从)
+				    (NP-PN (NR 香港)
+					   (NN 机场)))
+			    (VP (VV 坐上)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (NN 台商))
+						    (VP (VV 专营)
+							(NP-OBJ (-NONE- *T*-1))))
+						(DEC 的)))
+					(NP-PN (PU 「)
+					       (NR 通宝)
+					       (PU 」))
+					(NP (NN 巴士))))))
+		(VP (VV 可以)
+		    (VP (ADVP (AD 直))
+			(VP (VV 通)
+			    (NP-PN-OBJ (NR 东莞))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* 台商 专营 *T*-1 的 「 通宝 」 巴士 
+	</arg>
+	<arg n="m" f="dir">
+	从 香港 机场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

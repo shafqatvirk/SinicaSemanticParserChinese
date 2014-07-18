@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 望 </id>
+    <frameset id="f1" edef="look at">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity looked at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我))
+	      (VP (VP (VP (VV 伸)
+			  (AS 了)
+			  (VV 伸))
+		      (NP-OBJ (NN 舌头)))
+		  (PU ，)
+		  (VP (VP (VV 仰头))
+		      (VP (VV 想)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 望)
+				      (ADVP (AD 一眼))
+				      (NP-OBJ (NN 峰巅))))))
+		  (PU ，)
+		  (VP (ADVP (AD 只))
+		      (VP (VV 见)
+			  (NP-OBJ (NN 云雾))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 缭绕)))))
+		  (PU ，)
+		  (VP (ADVP (AD 不))
+		      (VP (VV 见)
+			  (NP-OBJ (NN 峥嵘)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  峰巅 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一眼 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="hope">
+      <role argnum="0" argrole="people hoping"/>
+      <role argnum="1" argrole="thing hoped for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 海协))
+	      (VP (VP (ADVP (AD 再次))
+		      (VP (VV 重申)
+			  (NP-OBJ (ADJP (JJ 上述))
+				  (NP (NN 邀请)))))
+		  (PU ，)
+		  (VP (VV 望)
+		      (IP-OBJ (NP-PN-SBJ (NR 海基会))
+			      (VP (ADVP (AD 早日))
+				  (VP (VV 提出)
+				      (NP-OBJ (NN 行期)
+					      (CC 和)
+					      (NN 名单)))))))) 
+	  </parse>
+	  <arg n="0">
+	  海协 
+	  </arg>
+	  <arg n="1">
+	  海基会 早日 提出 行期 和 名单 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

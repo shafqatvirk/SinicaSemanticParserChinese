@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奉献给 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="contributor"/>
+      <role argnum="1" argrole="thing contributed"/>
+      <role argnum="2" argrole="contributing to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 造福)
+			      (NP-OBJ (NN 社会)))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 王码)
+			 (NN 电脑)
+			 (NN 公司))
+	      (VP (VP (ADVP (AD 毅然))
+		      (VP (VV 放弃)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 本来))
+						  (VP (VV 可以)
+						      (VP (VV 赚)
+							  (NP-OBJ (ADJP (JJ 大))
+								  (NP (NN 钱)))))))
+					  (DEC 的))
+				  (NP (NN 机会)))))
+		  (PU ，)
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 不))
+						      (VP (VV 加密))))
+					      (DEC 的)))
+				      (NP (NN 软盘)))
+			      (VP (VV 奉献给)
+				  (NP-OBJ (NN 用户)))))
+		  (PU ，)
+		  (VP (VV 让)
+		      (NP-OBJ (PN 他们))
+		      (IP (NP-SBJ-1 (-NONE- *PRO*))
+			  (VP (ADVP (AD 自行))
+			      (VP (VV 拷贝))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  王码 电脑 公司 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 不 加密 的 软盘 
+	  </arg>
+	  <arg n="2">
+	  用户 
+	  </arg>
+	  <arg n="m" f="prp">
+	  王码 电脑 公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

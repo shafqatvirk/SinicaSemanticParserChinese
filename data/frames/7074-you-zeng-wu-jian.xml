@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有增无减 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 综观)
+			(NP-OBJ (NN 外交)
+				(NN 情势))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (ADJP (JJ 新))
+					(NP (NN 政府)))
+				(VP (MSP 所)
+				    (VP (VV 面临)
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 挑战)))
+	    (VP (VV 有增无减))) 
+	</parse>
+	<arg n="0">
+	*OP* 新 政府 所 面临 *T*-1 的 挑战 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 综观 外交 情势 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通顺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 说)
+			  (NP-OBJ (NN 英语))))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP (P 如同)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 讲)
+					  (NP-OBJ (NN 普通话)))))
+			      (VP (VA 一样))))
+		  (VP (VCD (VA 流利)
+			   (VA 通顺))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 说 英语 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 如同 *PRO* 讲 普通话 一样 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

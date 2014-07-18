@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="designator"/>
+      <role argnum="1" argrole="entity designated"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 五))
+	      (PU 、)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 授权)
+		  (NP-OBJ (NP-PN (NP-PN (NR 澳门))
+				 (ADJP (JJ 特别))
+				 (NP (NN 行政区)))
+			  (NP (NN 政府)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 指定)
+			  (NP-OBJ (NP (PN 其))
+				  (ADJP (JJ 有关))
+				  (NP (NN 机构)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-MNR (P 根据)
+					  (NP (NP-TTL (PU 《)
+						      (NP-PN (NR 中华)
+							     (NN 人民)
+							     (NN 共和国))
+						      (NP (NN 国籍法))
+						      (PU 》))
+					      (CC 和)
+					      (NP (ADJP (JJ 以上))
+						  (NP (NN 规定)))))
+				  (PP-DIR (P 对)
+					  (NP (DP (DT 所有))
+					      (NP (NN 国籍)
+						  (NN 申请)
+						  (NN 事宜))))
+				  (VP (VV 作出)
+				      (NP-OBJ (NN 处理))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  其 有关 机构 	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 根据 《 中华 人民 共和国 国籍法 》 和 以上 规定 对 所有 国籍 申请 事宜 作出 处理 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-2 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (NN 买主))
+			  (VP (VV 指定)
+			      (NP-OBJ (-NONE- *T*-2))))
+		      (DEC 的)))
+	      (NP (NN 电路图))) 
+	  </parse>
+	  <arg n="0">
+	  买主 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*T*-2)->(电路图) 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

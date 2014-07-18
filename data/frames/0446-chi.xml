@@ -1,0 +1,108 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吃 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="eater"/>
+      <role argnum="1" argrole="food"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (DNP (NP (NP-PN (NR 富士))
+					    (NP (NN 山麓)))
+					(DEG 的))
+				   (QP (CD 一)
+				       (CLP (M 家)))
+				   (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (VCD (VA 宽敞)
+							(VA 豪华))))
+					   (DEC 的)))
+				   (NP (NN 餐厅)))
+			       (LC 里)))
+		  (VP (VV 吃)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 顿)))
+			      (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 并))
+					      (ADVP (AD 不))
+					      (VP (VA 豪华))))
+				      (DEC 的)))
+			      (NP (NN 西餐)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  我们 	  
+	  </arg>
+	  <arg n="1">
+	  一 顿 *OP* *T*-2 并 不 豪华 的 西餐 	  
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 富士 山麓 的 一 家 *OP* *T*-1 宽敞 豪华 的 餐厅 里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="eater"/>
+      <role argnum="1" argrole="food"/>
+      <role argnum="2" argrole="thing arg0 can sense when eating arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 弹性))
+				      (VP (VA 十足)))
+				  (DEC 的)))
+			  (NP (NN 贡丸)))
+		      (CC 和)
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VP (VA 胖嘟嘟))
+					  (PU 、)
+					  (VP (VA 皮QQ))))
+				  (DEC 的)))
+			  (NP (NN 肉圆))))
+	      (PU ，)
+	      (VP (VP (ADVP (AD 都))
+		      (VP (VC 是)
+			  (NP-PRD (DNP (NP-PN (NR 新竹))
+				       (DEG 的))
+				  (NP (NN 特产)))))
+		  (PU ，)
+		  (VP (VPT (VV 吃)
+			   (DER 得)
+			   (VV 出))
+		      (NP-OBJ (NP (NN 业者))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-3))
+					  (VP (VA 扎实)))
+				      (DEC 的)))
+			      (NP (NN 手工)))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 弹性 十足 的 贡丸 和 *OP* *T*-2 胖嘟嘟 、 皮QQ 的 肉圆 
+	  </arg>
+	  <arg n="2">
+	  业者 *OP* *T*-3 扎实 的 手工 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

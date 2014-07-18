@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迎合 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 caters to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-15 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-15))
+				(VP (PP-PRP (P 为了)
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 迎合)
+						    (NP-OBJ (NN 民意)))))
+				    (VP (VV 进行)
+					(IP-OBJ (NP-PN-SBJ (NN 国大))
+						(VP (VV 虚级化))))))
+			    (DEC 的)))
+		    (DP (DT 各))
+		    (NP (NN 政党)))
+	    (VP (ADVP (AD 当初))
+		(VP (VV 没有)
+		    (VP (VRD (VV 预料)
+			     (VV 到))
+			(NP-OBJ (-NONE- *T*-16)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	民意 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (VV 不同於)
+		(NP-OBJ (DP (DT 其他))
+			(NP (PU 「)
+			    (NN 芭乐)
+			    (PU 」))
+			(PRN (VP (PU （)
+				 (VV 迎合)
+				 (NP-OBJ (NN 市场))
+				 (PU ）)))
+			(NP (NN 歌手))))) 
+	</parse>
+	<arg n="1">
+	市场 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

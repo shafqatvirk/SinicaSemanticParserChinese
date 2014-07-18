@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 到访 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="visitor"/>
+      <role argnum="1" argrole="destination"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 发言人))
+	      (VP (VV 补充)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 欢迎)
+			      (NP-OBJ (NP-PN (NR 毛里求斯))
+				      (NP (NN 国民)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 继续)
+				      (VP (VV 到访)
+					  (NP-PN-OBJ (NR 香港))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  香港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP (CP (WHNP-1 (-NONE- *OP*))
+		  (CP (IP (NP-SBJ (-NONE- *T*-1))
+			  (VP (VV 到访)))
+		      (DEC 的)))
+	      (NP-APP (NP-PN (NR 刚果)
+			     (PRN (PU （)
+				  (NP-PN (NR 金))
+				  (PU ）)))
+		      (NP (NN 总统)))
+	      (NP-PN (NR 卡比拉)))
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

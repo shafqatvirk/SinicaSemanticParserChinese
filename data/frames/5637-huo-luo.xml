@@ -1,0 +1,102 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 活络 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 makes active"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这些))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 原本))
+				    (VP (VC 是)
+					(VP (VP (VV 因应)
+						(NP-OBJ (PU 「)
+							(NP-PN (NR 亚太))
+							(NP (NN 中心))
+							(PU 」)))
+					    (VP (MSP 而)
+						(VP (VV 作)))))))
+			    (DEC 的)))
+		    (NP (NN 松绑)
+			(NN 动作)))
+	    (PU ，)
+	    (VP (ADVP (AD 的确))
+		(ADVP (AD 已))
+		(VP (VV 达到)
+		    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 活络)
+					    (NP-OBJ (NN 民间)
+						    (NN 投资))))
+				    (DEC 的))
+			    (NP (NN 目的)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	民间 投资 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (CS 如果))
+			(VP (VV 要)
+			    (VP (VV 让)
+				(NP-OBJ (NN 制片量))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VRD (VV 活络)
+					     (VV 起来))))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可以)
+		(VP (VV 改成)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (IP-TMP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 拍完)))
+				    (ADVP (AD 再))
+				    (VP (VV 评选)))
+				(PU ，)
+				(VP (VP (VV 颁发)
+					(NP-OBJ (ADJP (JJ 不等))
+						(NP (NN 金额))))
+				    (VP (VV 鼓励)
+					(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (IP (NP-TPC (-NONE- *T*-1))
+								(NP-SBJ (NN 票房))
+								(VP (VA 好)))
+							    (PU 、)
+							    (IP (NP-TPC (-NONE- *T*-1))
+								(NP-SBJ (NN 创意))
+								(VP (VA 佳)))
+							    (PU 、)
+							    (IP (ADVP (AD 甚至))
+								(NP-SBJ (-NONE- *T*-1))
+								(VP (NP-PRD (ADJP (JJ 新))
+									    (NP (NN 导演))))))
+							(DEC 的)))
+						(NP (NN 影片)))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

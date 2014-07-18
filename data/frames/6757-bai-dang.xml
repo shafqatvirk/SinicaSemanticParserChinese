@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摆荡 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entities arg0 swings between"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (PN 那))
+		     (LC 之後))
+	    (PU ，)
+	    (NP-SBJ (NN 情绪))
+	    (VP (VV 开始)
+		(VP (VV 摆荡)
+		    (PP (P 在)
+			(LCP (NP (NP (PU 「)
+				     (NN 青壮年)
+				     (PU 」))
+				 (CC 和)
+				 (NP (PU 「)
+				     (NN 中年)
+				     (PU 」)))
+			     (LC 间)))))) 
+	</parse>
+	<arg n="0">
+	情绪 
+	</arg>
+	<arg n="1">
+	在 「 青壮年 」 和 「 中年 」 间 
+	</arg>
+	<arg n="m" f="tmp">
+	那 之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

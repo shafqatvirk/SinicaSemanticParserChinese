@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 反攻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (LCP-TMP (LCP (NP (DP (DT 本))
+				(NP (NN 月)))
+			    (LC 初))
+		       (LC 以来))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 安盟))
+		      (NP (NN 军队)))
+	      (VP (VP (VV 开始)
+		      (VP (VV 反攻)))
+		  (PU ，)
+		  (VP (VV 围困)
+		      (AS 了)
+		      (NP-OBJ-PN (NR 万博市)
+				 (CC 和)
+				 (NR 奎托市))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  安盟 军队 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  本 月 初 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

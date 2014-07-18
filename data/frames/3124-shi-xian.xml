@@ -1,0 +1,132 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 实现 </id>
+    <frameset edef="realize" id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NR-PN 浙江省))
+	      (VP (VP (VV 要)
+		      (VP (PP (P 比)
+			      (NP-OBJ (NP (DP (DT 全))
+					  (NP (NN 国)))
+				      (NP (NN 计划))))
+			  (VV 提前)
+			  (QP (CD 三十)
+			      (CLP (M 年)))))
+		  (VP (ADVP (AD 基本))
+		      (VP (VV 实现)
+			  (NP-OBJ (NN 现代化)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  浙江省 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  基本 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  现代化 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 联合国))
+			   (DEG 的))
+		      (NP (NN 宗旨)
+			  (CC 和)
+			  (NN 原则)))
+	      (VP (ADVP (AD 尚))
+		  (ADVP (AD 未))
+		  (ADVP (AD 完全))
+		  (VP (VV 实现)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  联合国 的 宗旨 和 原则 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  尚 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  未 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  完全 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (LCP-TMP (NP (DP (DT 本))
+			       (NP (NN 世纪)))
+			   (LC 末))
+		  (NP-PN-SBJ (NR 上海))
+		  (VP (VV 实现)
+		      (NP-OBJ (ADJP (JJ 人均))
+			      (NP (NN 国内)
+				  (NN 生产)
+				  (NN 总值)))
+		      (QP-EXT (CD 五千)
+			      (CLP (M 美元))))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  本 世纪 末 	  	  
+	  </arg>
+	  <arg n="0">
+	  上海 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  人均 国内 生产 总值 	  	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  五千 美元 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 上缴))
+		      (NP (NN 税费)))
+	      (VP (VV 实现)
+		  (QP-OBJ (CD 二百五十八亿)
+			  (CLP (M 元))))) 
+	  </parse>
+	  <arg n="1">
+	  上缴 税费 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1" f="QTY">
+	  二百五十八亿 元 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

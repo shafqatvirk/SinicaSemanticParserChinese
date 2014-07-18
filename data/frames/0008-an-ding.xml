@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 安定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="entity which stabilizes arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NN 社会))
+		(VP (VCD (VA 安定)
+			 (VV 团结))))) 
+	  </parse>
+	  <arg n="0">
+	  社会 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-Q-SBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP-WH (AD 如何))
+			    (VP (VV 建立)
+				(NP-OBJ (QP (CD 一)
+					    (CLP (M 套)))
+					(NP (NN 飞弹)
+					    (NN 防御))
+					(NP (NN 系统))))))
+	      (PU ，)
+	      (VP (VC 是)
+		  (NP-PRD (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 安定)
+					  (NP-OBJ (NP-PN (NR 台湾))
+						  (NP (NN 民心)))))
+				  (DEC 的))
+			  (ADJP (JJ 首要))
+			  (NP (NN 军事)
+			      (NN 课题))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 民心 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

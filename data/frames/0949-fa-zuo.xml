@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发作 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 它))
+	      (VP (VV 可)
+		  (VP (VP (VV 潜藏)
+			  (PP (P 于)
+			      (LCP (NP (NN 网络))
+				   (LC 中))))
+		      (VP (PP-MNR (P 凭借)
+				  (NP (NN 内部)
+				      (NN 时钟)))
+			  (PP-TMP (P 在)
+				  (NP (NT 周末)
+				      (CC 或)
+				      (NN 深夜)))
+			  (ADVP (AD 才))
+			  (VP (VV 开始)
+			      (VP (VV 发作))))))) 
+	  </parse>
+	  <arg n="0">
+	  它 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  凭借 内部 时钟 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 周末 或 深夜 
+	  </arg>
+	  <arg n="m" f="adv">
+	  才 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

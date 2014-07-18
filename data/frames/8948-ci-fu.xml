@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赐福 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="blesser"/>
+      <role argnum="1" argrole="blessed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VV 相信)
+		  (IP-OBJ (NP-SBJ (NN 琉璃珠))
+			  (VP (VV 具有)
+			      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VP (VV 赐福))
+						  (PU 、)
+						  (VP (VV 降祸))
+						  (PU 、)
+						  (VP (VV 护身))
+						  (PU 、)
+						  (VP (VV 惩戒))
+						  (ETC 等)))
+				      (NP (NN 功能))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

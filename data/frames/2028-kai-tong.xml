@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开通 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 汕头)
+			 (NN 机场))
+	      (VP (VV 开通)
+		  (NP-OBJ (NP (NN 国际)
+			      (NN 国内))
+			  (NP (NN 航线)))
+		  (QP-EXT (CD 四十四)
+			  (CLP (M 条))))) 
+	  </parse>
+	  <arg n="0">
+	  汕头 机场 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  国际 国内 航线 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  四十四 条 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN-APP (NR 立荣)
+				 (PU 、)
+				 (NR 万海)
+				 (ETC 等))
+		      (NP-PN (NR 台湾))
+		      (ADJP (JJ 大))
+		      (ADJP (JJ 船务))
+		      (NP (NN 公司)))
+	      (VP (ADVP (AD 纷纷))
+		  (VP (VV 开通)
+		      (NP-OBJ (DNP (PP (P 至)
+				       (NP-PN (NR 厦门港)))
+				   (DEG 的))
+			      (NP (NN 班轮)))))) 
+	  </parse>
+	  <arg n="0">
+	  立荣 、 万海 等 台湾 大 船务 公司 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  纷纷 
+	  </arg>
+	  <arg n="1">
+	  至 厦门港 的 班轮 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 经贸)
+			      (NN 合作)
+			      (NN 信息)
+			      (NN 网络)))
+		  (VP (LCP-TMP (NP (NT 今))
+			       (LC 起))
+		      (VP (VV 开通)))) 
+	  </parse>
+	  <arg n="1">
+	  中国 经贸 合作 信息 网络 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  今 起 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 密不可分 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities unseparable"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 八十年代))
+		(QP-SBJ (QP (DNP (NP (NP-PN (NR 广东))
+				     (NP (NN 改革)
+					 (NN 开放)))
+				 (DEG 的))
+			    (QP (PU “)
+				(NP (NN 先行))
+				(QP (CD 一)
+				    (CLP (M 步)))
+				(PU ”))))
+		(PU ，)
+		(VP (PP (P 与)
+			(NP (NP (NT 当时))
+			    (IP-APP (NP-SBJ (-NONE- *PRO*))
+				    (VP (PU “)
+					(VV 孔雀东南飞)
+					(PU ”))
+				    (PRN (PU （)
+					 (IP (NP-SBJ (NP (DP (DT 各))
+							 (NP (NN 地)))
+						     (NP (NN 人才)))
+					     (VP (ADVP (AD 纷纷))
+						 (VP (VV 赴)
+						     (NP-PN-OBJ (NR 粤)))))
+					 (PU ）)))
+			    (NP (NN 形势))))
+		    (VP (VA 密不可分)))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  广东 改革 开放 的 “ 先行 一 步 ” 	  
+	  </arg>
+	  <arg n="0" f="CRD">
+	  与 当时 *PRO* “ 孔雀东南飞 ” （ 各 地 人才 纷纷 赴 粤 ） 形势 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  八十年代 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 人口)
+			  (CC 与)
+			  (NN 发展))
+		  (VP (VV 密不可分))) 
+	  </parse>
+	  <arg n="0">
+	  人口 与 发展 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 顾店 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 真的))
+			      (ADVP (AD 不))
+			      (VP (VV 行))))
+		  (PU ，)
+		  (ADVP (AD 也))
+		  (ADVP (AD 还))
+		  (VP (VV 可以)
+		      (VP (VV 回来)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 顾店))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

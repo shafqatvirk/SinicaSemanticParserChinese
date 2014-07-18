@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 找 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 上图))
+	      (VP (VC 为)
+		  (NP-PRD (CP-APP (IP (NP-SBJ (NN 女奴)
+					      (NN 妹妹))
+				      (VP (VV 找)
+					  (NP-OBJ (NN 皇帝)
+						  (NN 哥哥))))
+				  (DEC 的))
+			  (QP (CD 一)
+			      (CLP (M 个)))
+			  (NP (NN 镜头))))) 
+	  </parse>
+	  <arg n="0">
+	  女奴 妹妹 
+	  </arg>
+	  <arg n="1">
+	  皇帝 哥哥 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

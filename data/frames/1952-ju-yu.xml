@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 居于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="position arg0 occupies"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 国有))
+		      (NP (NN 企业)))
+	      (VP (VV 继续)
+		  (VP (VV 居于)
+		      (NP-OBJ (NN 主导)
+			      (NN 地位))))) 
+	  </parse>
+	  <arg n="0">
+	  国有 企业 
+	  </arg>
+	  <arg n="1">
+	  主导 地位 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

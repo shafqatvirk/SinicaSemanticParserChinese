@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 省 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing saved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			   (VP (BA 将)
+			       (IP-OBJ (NP-SBJ (NN 费用))
+				       (VP (VRD (VV 省)
+						(VV 下来))))))
+		       (LC 後))
+	      (ADVP (AD 直接))
+	      (VP (VV 回馈)
+		  (NP-OBJ (NN 消费者)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  费用 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

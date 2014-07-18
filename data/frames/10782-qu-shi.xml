@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 驱使 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 drives arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (NP (NN 国外) ))
+	    (PU ，)
+	    (NP-SBJ (NN 彷徨)
+		    (CC 和)
+		    (NN 忧郁) )
+	    (PU ，)
+	    (VP (ADVP (AD 常))
+		(VP (VV 会)
+		    (VP (VV 驱使)
+			(NP-OBJ (NP (NN 中年人) )
+				(PU 、)
+				(NP (ADVP (AD 特别是))
+				    (NP (NN 中年)
+					(NN 女性) )))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (ADVP (AD 重))
+				    (VP (VV 回)
+					(NP-OBJ (NN 学校) )))
+				(PU ，)
+				(VP (PP-MNR (P 藉著)
+					    (NP (NN 进修) ))
+				    (VP (MSP 来)
+					(VP (VV 厘清)
+					    (NP-OBJ (DNP (NP (NT 未来) )
+							 (DEG 的))
+						    (NP (NN 路) ))))))))))) 
+	</parse>
+	<arg n="0">
+	彷徨 和 忧郁 
+	</arg>
+	<arg n="1">
+	中年人 、 特别是 中年 女性 
+	</arg>
+	<arg n="2">
+	*PRO* 重 回 学校 ， 藉著 进修 来 厘清 未来 的 路 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<arg n="m" f="loc">
+	在 国外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

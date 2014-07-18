@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开议 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 starts discussing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 四月)
+		    (NT 八日))
+	    (NP-SBJ (NP-PN (NN 国大))
+		    (NP (NN 会议)))
+	    (VP (VV 开议))) 
+	</parse>
+	<arg n="0">
+	国大 会议 
+	</arg>
+	<arg n="m" f="tmp">
+	四月 八日 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

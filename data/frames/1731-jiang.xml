@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="rewarder"/>
+      <role argnum="1" argrole="entity rewarded"/>
+      <role argnum="2" argrole="the reward"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 北京))
+		  (VP (ADVP (AD 重))
+		      (VP (VV 奖)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 严格))
+					      (VP (VV 控制)
+						  (NP-OBJ (NN 公费)
+							  (NN 医疗)
+							  (NN 开支))))))
+				  (NP (NN 单位)))))) 
+	  </parse>
+	  <arg n="0">
+	  北京 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 严格 控制 公费 医疗 开支 单位 
+	  </arg>
+	  <arg n="m" f="adv">
+	  重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 移到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="place arg0 moves arg1 to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 就算))
+		    (IP (NP-SBJ (-NONE- *pro*))
+			(VP (VV 叫)
+			    (NP-OBJ (DP (DT 这))
+				    (NP (NN 山)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 移到)
+				    (NP-OBJ (PN 那里)))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 也))
+		(VP (VE 没有)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 不))
+					    (VP (VV 成))))
+				    (DEC 的))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="2">
+	那里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

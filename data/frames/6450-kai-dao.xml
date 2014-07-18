@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开刀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 cuts on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP (NP-PN-TPC (NR 台北市))
+		    (NP-SBJ (QP (CD 许多))
+			    (NP (NN 问题)))
+		    (VP (ADVP (AD 已经))
+			(VP (VV 病入膏肓))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (VP (ADVP (AD 非))
+			    (ADVP (AD 大力))
+			    (VP (VV 开刀)))
+			(VP (ADVP (AD 不))
+			    (VP (VV 可)))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	大力 
+	</arg>
+	<arg n="m" f="adv">
+	非 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

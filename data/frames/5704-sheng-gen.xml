@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 生根 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 takes root"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (PP-MNR (P 以)
+					    (NP-PN (NR 骨肉皮)
+						   (PU 、)
+						   (NR 浊水溪)
+						   (NN 公社)
+						   (ETC 等)))
+				    (VP (VV 为主))))
+			    (DEC 的)))
+		    (QP (CD 一)
+			(CLP (M 票)))
+		    (NP (NN 地下)
+			(NN 乐团)))
+	    (VP (ADVP (AD 悄悄))
+		(PP-LOC (P 在)
+			(NP (NN PUB)))
+		(VP (VV 生根)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 以 骨肉皮 、 浊水溪 公社 等 为主 的 一 票 地下 乐团 
+	</arg>
+	<arg n="1">
+	在 PUB 
+	</arg>
+	<arg n="m" f="adv">
+	悄悄 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 李应辰))
+	    (VP (VP (PP-PRP (P 因)
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 抗日))))
+		    (VP (VV 负伤)))
+		(VP (VRD (VV 奔逃)
+			 (VV 至))
+		    (NP-OBJ (NN 大陆)))
+		(PU ，)
+		(VP (VCD (VV 落地)
+			 (VV 生根))))) 
+	</parse>
+	<arg n="0">
+	李应辰 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

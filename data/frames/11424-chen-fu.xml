@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 臣服 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 submits itself to the rule of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 最後))
+	    (NP-PN-SBJ (NR 苏格兰))
+	    (VP (VV 臣服)
+		(NP-PN-OBJ (NR 英国)))) 
+	</parse>
+	<arg n="0">
+	苏格兰 
+	</arg>
+	<arg n="1">
+	英国 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

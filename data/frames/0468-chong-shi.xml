@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 充实 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity which solidifies arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (NP (NN 关系)))
+	      (VP (ADVP (AD 正在))
+		  (VP (VP (ADVP (AD 日益))
+			  (VP (VA 充实)))
+		      (CC 和)
+		      (VP (ADVP (AD 不断))
+			  (VP (VV 发展)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 种 关系 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  日益 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 半)
+			   (CLP (M 年)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 威盛))
+	      (VP (VP (ADVP (AD 进而))
+		      (PP (P 与)
+			  (NP (NP-APP (NP-PN (NR 美国))
+				      (NP (NN 绘图)
+					  (NN 晶片))
+				      (ADJP (JJ 大))
+				      (NP (NN 厂)))
+			      (NP-PN (NR 旭上))
+			      (PRN (PU （)
+				   (NP-PN (NR s3))
+				   (PU ）))))
+		      (VP (VV 合作)))
+		  (PU ，)
+		  (VP (QP-ADV (CD 一)
+			      (CLP (M 步步)))
+		      (ADVP (AD 努力))
+		      (VP (VV 充实)
+			  (NP-OBJ (DNP (NP (PN 自己))
+				       (DEG 的))
+				  (NP (NN 知识)
+				      (NN 存量))))))) 
+	  </parse>
+	  <arg n="0">
+	  自己 的 知识 存量 
+	  </arg>
+	  <arg n="1">
+	  威盛 
+	  </arg>
+	  <arg n="m" f="adv">
+	  努力 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 步步 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  半 年 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 交待 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity that does the telling"/>
+    <role argnum="1" argrole="thing arg0 tells"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 既))
+		(VP (VV 没有)
+		    (VP (VV 交待)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (NP-APP (LCP (NP (NN 剧))
+								 (LC 中))
+							    (NP (NN 主角)))
+						    (NP (PU 「)
+							(NN 天行者)
+							(PU 」)))
+					    (VP (VRD (VV 沦落)
+						     (VV 为))
+						(NP-OBJ (ADJP (JJ 大))
+							(NP (NN 魔头)))))
+					(DEC 的))
+				(NP (NN 心路)
+				    (NN 历程))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	剧 中 主角 「 天行者 」 沦落 为 大 魔头 的 心路 历程 
+	</arg>
+	<arg n="m" f="dis">
+	既 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 实在))
+		(VP (VPT (VV 交待)
+			 (AD 不)
+			 (VA 清))))) 
+	</parse>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	实在 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 篆刻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 carves"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (ADVP (AD 曾经))
+				(PP-LOC (P 在)
+					(NP (NN 书房) ))
+				(VP (VV 看)
+				    (AS 过)
+				    (NP-OBJ (NN 老师) )
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 篆刻))))))
+			(DEC 的)))
+		(NP-PN (NR 薛平南) )) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

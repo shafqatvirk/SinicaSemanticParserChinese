@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抡才 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 selects talent with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 宋代))
+	      (VP (QP-ADV (CD 大量))
+		  (PP-MNR (P 以)
+			  (NP (NN 科举)))
+		  (VP (VV 抡才)))) 
+	  </parse>
+	  <arg n="0">
+	  宋代 
+	  </arg>
+	  <arg n="1">
+	  以 科举 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大量 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

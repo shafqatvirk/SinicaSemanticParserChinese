@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 面试 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="interviewer"/>
+      <role argnum="1" argrole="interviewee"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VA 合适)))
+			      (DEC 的)))
+		      (NP (NN 申请人)))
+	      (VP (ADVP (AD 将))
+		  (VP (VSB (VV 获邀)
+			   (VV 参加))
+		      (NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (PP-TMP (P 於)
+						      (NP (NP (NT 明年))
+							  (NP (NT 二月)
+							      (CC 或)
+							      (NT 三月))))
+					      (VP (VV 举行))))
+				      (DEC 的)))
+			      (ADJP (JJ 最後))
+			      (NP (NN 面试)))))) 
+	  </parse>
+	  <arg n="m" f="tmp">
+	  於 明年 二月 或 三月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

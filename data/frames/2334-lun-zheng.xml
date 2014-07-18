@@ -1,0 +1,73 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 论证 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing proven"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (DP (DT 这)
+					      (CLP (M 位)))
+					  (NP (NN 大使)))
+				  (VP (PP-PRP (P 为)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 论证)
+						      (NP-OBJ (DNP (NP (PN 他))
+								   (DEG 的))
+							      (NP (NN 结论))))))
+				      (VP (MSP 所)
+					  (VP (VV 列举)
+					      (NP-OBJ (-NONE- *T*-1))))))
+			      (DEC 的)))
+		      (NP (NN 事实)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-4))
+				      (VP (VV 令)
+					  (NP-OBJ (NN 人))
+					  (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 信服)))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  他 的 结论 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-PN-SBJ (NR 王翔))
+		(VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+				 (VP (VV 得知)))
+			     (LC 后))
+		    (ADVP (AD 立即))
+		    (VP (VV 请)
+			(NP-OBJ (NN 专家))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 论证)))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

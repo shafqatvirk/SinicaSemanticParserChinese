@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 高呼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 shouts"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 高呼)
+				      (IP-OBJ (NP-SBJ (NN 男性)
+						      (NN 身体))
+					      (VP (VV 自主)))))
+			      (DEC 的)))
+		      (NP-PN (NR 何笃霖)))
+	      (PU ，)
+	      (VP (ADVP (AD 曾))
+		  (PP-BNF (P 为)
+			  (NP (NN 男性)
+			      (NN 首饰)))
+		  (VP (VV 拍)
+		      (AS 过)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 则)))
+			      (NP (NN 平面)
+				  (NN 广告)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  男性 身体 自主 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

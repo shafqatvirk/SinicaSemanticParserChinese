@@ -1,0 +1,327 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 要 </id>
+    <frameset id="f1" edef="ask for, take">
+      <role argnum="0" argrole="asker"/>
+      <role argnum="1" argrole="thing asked for"/>
+      <role argnum="2" argrole="party asked from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 内地))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (PP-DIR (P 向)
+				  (NP-PN (NR 香港)))
+			  (VP (VP (VV 伸手))
+			      (VP (VV 要)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 分)))
+					  (NP (NN 钱))))))))) 
+	  </parse>
+	  <arg n="0">
+	  内地 	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  向 香港 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  一 分 钱 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (DP (DT 各))
+			  (NP (NN 国)))
+		      (NP (NN 人民)))
+	      (VP (VP (VV 要)
+		      (NP-OBJ (NN 和平)))
+		  (PU 、)
+		  (VP (VV 求)
+		      (NP-OBJ (NN 发展))))) 
+	  </parse>
+	  <arg n="0">
+	  各 国 人民 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  和平 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="take, need">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="cost,time"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (ADVP (AD 原来))
+					  (VP (VP (VV 要)
+						  (QP-OBJ (QP (CD 二)
+							      (CLP (-NONE- *RNR*-1)))
+							  (CC 至)
+							  (QP (CD 三)
+							      (CLP-1 (M 天)))))
+					      (VP (VRD (VV 办)
+						       (VV 完))))))
+				  (DEC 的)))
+			  (NP (NN 出入境)
+			      (NN 手续)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  原来 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  二 *RNR*-1 至 三 天 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 原先))
+	      (NP-SBJ (NN 成本))
+	      (VP (VV 要)
+		  (QP-OBJ (CD 二千多)
+			  (CLP (M 盾))))) 
+	  </parse>
+	  <arg n="0">
+	  成本 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  二千多 盾 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  原先 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset edef="will, be about to" id="f3">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (ADVP (AD 将))
+				      (VP (VV 要)
+					  (VP (VV 负起)
+					      (NP-OBJ (NN 重任))))))
+			      (DEC 的)))
+		      (NP (NN 文官)
+			  (NN 团队)))
+	      (VP (VP-FOC (VV 接棒))
+		  (VP (ADVP (AD 太))
+		      (VP (VA 晚))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 -> 文官 团队	  
+	  </arg>
+	  <arg n="0" f="prd">
+	  负起 重任	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="wanter"/>
+      <role argnum="1" argrole="doer"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VV 要)
+		      (NP-OBJ (NN 寻常人))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 去)
+			      (VP (VV 推销)
+				  (NP-OBJ (DP (DT 这)
+					      (CLP (M 类)))
+					  (NP (NN 商品)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  寻常人 	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 去 推销 这 类 商品 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-CND (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (AD 如))
+		      (VP (VV 要)
+			  (NP-OBJ (-NONE- *pro*))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VRD (VV 送货)
+				       (VV 上门))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  如 	  	  	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *pro* 	  	  	  	  
+	  </arg>
+	  <arg n="2">
+	  *PRO* 送货 上门 	  	  	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="intender"/>
+      <role argnum="1" argrole="thing intended"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (NP-PN (NR 台湾))
+				      (NP (NN 媒体)))
+			      (VP (DVP (VP (VV 处心积虑)))
+				  (VP (VV 要)
+				      (VP (VV 采访)
+					  (NP-OBJ (-NONE- *T*-2))))))
+			  (DEC 的)))
+		  (NP-PN (NR 区文龙))
+		  (NP (NN 司长))) 
+	  </parse>
+	  <arg n="0">
+	  台湾媒体	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  处心积虑	  
+	  </arg>
+	  <arg n="1">
+	  采访	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6" edef="must, should">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="action"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 这时))
+		      (ADVP (AD 更))
+		      (VP (VV 要)
+			  (VP (VV 拿出)
+			      (NP-OBJ (DP (DT 全)
+					  (CLP (M 副)))
+				      (ADJP (JJ 看家))
+				      (NP (NN 本领)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro*	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这时	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  更	  
+	  </arg>
+	  <arg n="1">
+	  拿出 全 副 看家 本领	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f7">
+      <role argnum="0" argrole="thing that is necessary"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP (-NONE- *PRO*))
+			   (VP (VV 烤)
+			       (NP-OBJ (NN 草蜢猴))))
+		       (LC 时))
+	      (LCP-SBJ (NP (NN 肚子))
+		       (LC 里))
+	      (VP (VV 要)
+		  (VP (VV 塞)
+		      (NP-OBJ (NN 盐巴))))) 
+	  </parse>
+	  <arg n="0">
+	  烤 草蜢猴 时, 肚子里, 塞盐巴	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

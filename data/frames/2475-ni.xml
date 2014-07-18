@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing planned to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 澳大利亚))
+		  (VP (VV 拟)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 加强)
+				  (NP-OBJ (DNP (PP (P 与)
+						   (NP (NP-PN-APP (NR 中国)
+								  (PU 、)
+								  (NR 印尼)
+								  (PU 、)
+								  (NR 日本)
+								  (PU 、)
+								  (NR 韩国)
+								  (CC 和)
+								  (NR 印度)
+								  (ETC 等))
+						       (NP-PN (NR 亚洲))
+						       (NP (NN 国家))))
+					       (DEG 的))
+					  (ADJP (JJ 双边))
+					  (NP (NN 关系))))))) 
+	  </parse>
+	  <arg n="0">
+	  澳大利亚 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 加强 与 中国 、 印尼 、 日本 、 韩国 和 印度 等 亚洲 国家 的 双边 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

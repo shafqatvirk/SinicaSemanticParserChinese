@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 煽动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="thing arg0 instigates arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (NN 大会))
+			 (LC 上)))
+	    (NP-PN-SBJ (NR 阿盛)
+		       (NN 伯))
+	    (VP (VP (VV 展现)
+		    (AS 了)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 惊人)))
+				    (DEC 的)))
+			    (NP (NN 反应)
+				(NN 能力))))
+		(PU ，)
+		(VP (DVP (VP (VA 成功))
+			 (DEV 地))
+		    (VP (VV 捣乱)
+			(AS 了)
+			(NP-OBJ (NN 会场))))
+		(PU ，)
+		(VP (VV 讲出)
+		    (AS 了)
+		    (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *T*-3))
+				    (VP (VA 冠冕堂皇))))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VCD (VV 爱家)
+						 (VV 爱乡))))
+				    (DEC 的))
+			    (NP (NN 道理))))
+		(PU ，)
+		(VP (VV 煽动)
+		    (AS 了)
+		    (NP-OBJ (DNP (DP (DT 所有))
+				 (DEG 的))
+			    (NP (NN 村民)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (DVP (VP (VV 兴奋)))
+			    (VRD (VV 跳跃)
+				 (VV 起来))))))) 
+	</parse>
+	<arg n="0">
+	阿盛 伯 
+	</arg>
+	<arg n="1">
+	所有 的 村民 
+	</arg>
+	<arg n="2">
+	*PRO* 兴奋 跳跃 起来 
+	</arg>
+	<arg n="m" f="loc">
+	在 大会 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

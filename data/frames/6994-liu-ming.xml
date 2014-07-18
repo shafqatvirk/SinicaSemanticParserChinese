@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 留名 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 leaves its name in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(QP (CD 一)
+			    (CLP (M 句))))
+		    (NP (PU 「)
+			(PN 为何)
+			(PU 」)))
+	    (VP (VV 使得)
+		(NP-PN-OBJ (NR 东帝士))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 本)
+			    (AS 著)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 要)
+						    (VP (VV 留名)
+							(NP-OBJ (NN 青史)))))
+					    (DEC 的))
+				    (NP (NN 心情))))
+			(PU ，)
+			(VP (VV 投入)
+			    (NP-OBJ (DNP (NP (ADJP (JJ 超高层))
+					     (NP (NN 大楼)))
+					 (DEG 的))
+				    (NP (NN 兴建)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	青史 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (DVP (VP (VA 相反))
+		 (DEV 的))
+	    (PU ，)
+	    (NP-SBJ (CP-APP (IP (IP-APP (NP-SBJ (-NONE- *PRO*))
+					(VP (PU 「)
+					    (VP (VV 创造)
+						(NP-OBJ (DNP (NP (NN 城市))
+							     (DEG 的))
+							(NP (NN 天际线))
+							(PRN (PU （)
+							     (NP (NN 地标))
+							     (PU ）))))
+					    (PU ，)
+					    (VP (VV 提升)
+						(NP-OBJ (NN 都市)
+							(NN 形象)))
+					    (PU ，)
+					    (VP (VV 提高)
+						(NP-OBJ (DNP (NP (NN 国内))
+							     (DEG 的))
+							(NP (NN 营建)
+							    (NN 水准))))
+					    (PU 」)
+					    (ETC 等)))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (PP-LOC (P 为)
+						(PU 「)
+						(NP (NN 历史)))
+					(VP (VV 留名))
+					(PU 」))))
+			    (DEC 的))
+		    (NP (NN 心态)))
+	    (PU ，)
+	    (VP (ADVP (AD 才))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (DP (DT 这些))
+						(NP (NN 高楼)))
+					(VP (NP-PRP (-NONE- *T*-1))
+					    (VP (VV 产生))))
+				    (DEC 的)))
+			    (NP (NN 主因)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	为 历史 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

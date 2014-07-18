@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 揉和 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="things that are mixed in arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 揉和)
+		(AS 著)
+		(NP-OBJ (NP (DNP (NP (NP-PN (NR 广东))
+				     (NP (NN 餐点)))
+				 (DEG 的))
+			    (NP (NN 甜味)))
+			(CC 和)
+			(NP (NP (ADJP (JJ 古老))
+				(NP-PN (NR 印度)))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 浓郁)))
+				    (DEC 的)))
+			    (NP (NN 滋味)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	广东 餐点 的 甜味 和 古老 印度 *OP* *T*-2 浓郁 的 滋味 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

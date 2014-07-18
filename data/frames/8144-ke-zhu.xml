@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 刻铸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 carves and moulds"/>
+      <role argnum="2" argrole="place arg1 is moulded onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 衣服))
+		       (LC 上))
+	      (VP (VV 刻铸)
+		  (AS 著)
+		  (NP (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 繁复)
+				      (CC 而)
+				      (VA 华丽)))
+			      (DEC 的)))
+		      (NP-APP (NP (ADJP (JJ 巨))
+				  (NP (NN 龙)))
+			      (PU 、)
+			      (NP (NN 云)
+				  (NN 雷))
+			      (CC 和)
+			      (NP (NN 人面))
+			      (ETC 等))
+		      (NP (NN 图案))))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* *T*-1 繁复 而 华丽 的 巨 龙 、 云 雷 和 人面 等 图案 
+	  </arg>
+	  <arg n="2">
+	  衣服 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

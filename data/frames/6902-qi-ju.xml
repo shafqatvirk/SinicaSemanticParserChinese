@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 齐聚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities described"/>
+    <role argnum="1" argrole="place arg0 gathers together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 跳蚤)
+		    (NN 市场))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 可)
+			    (VP (VV 说))))
+		(VP (VV 齐聚)
+		    (NP-OBJ (NN 各方)
+			    (NN 好汉))))) 
+	</parse>
+	<arg n="0">
+	各方 好汉 
+	</arg>
+	<arg n="1">
+	跳蚤 市场 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 可 说 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 今天))
+	    (PU ，)
+	    (NP-SBJ (PN 我们))
+	    (VP (VP (VV 齐聚)
+		    (PP (P 在)
+			(NP (PN 这里))))
+		(PU ，)
+		(VP (PP-MNR (P 用)
+			    (NP (NP (DNP (NP (NN 土地))
+					 (DEG 的))
+				    (NP (NN 乐章)))
+				(CC 和)
+				(NP (DNP (NP (NN 人民))
+					 (DEG 的))
+				    (NP (NN 声音)))))
+		    (VP (MSP 来)
+			(VP (VV 歌颂)
+			    (NP-OBJ (DNP (NP (NN 民主))
+					 (DEG 的))
+				    (NP (NN 光荣)
+					(NN 喜悦)))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	在 这里 
+	</arg>
+	<arg n="m" f="tmp">
+	今天 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

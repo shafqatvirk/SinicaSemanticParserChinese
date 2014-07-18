@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 添购 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="thing arg0 buys"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 卜)
+			 (NN 神父))
+	      (VP (VV 添购)
+		  (AS 了)
+		  (NP-OBJ (NN 电视)
+			  (NN 录放影机)))) 
+	  </parse>
+	  <arg n="0">
+	  卜 神父 
+	  </arg>
+	  <arg n="1">
+	  电视 录放影机 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 一致 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 使)
+	      (NP-OBJ (NP (PN 其))
+		      (NP (NN 步调)))
+	      (IP (NP-SBJ (-NONE- *PRO*))
+		  (VP (VA 一致)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 坚持)
+	      (NP-OBJ (CP-APP (IP (PP (P 与)
+				      (NP (DP (DT 全))
+					  (NP (NN 国))))
+				  (IP (IP (NP-SBJ (NN 框架))
+					  (VP (VV 一致)))
+				      (PU 、)
+				      (IP (NP-SBJ (NN 体制))
+					  (VP (VV 衔接)))))
+			      (DEC 的))
+		      (NP (NN 方针)))) 
+	  </parse>
+	  <arg n="0">
+	  框架 
+	  </arg>
+	  <arg n="0">
+	  与 全 国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 齐聚一堂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities gathering under one roof "/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 周末))
+	    (LCP-LOC (NP (DNP (NP (QP (CD 三))
+				  (NP (NN 台)))
+			      (DEG 的))
+			 (NP (NN 综艺)
+			     (NN 节目)))
+		     (LC 里))
+	    (PU ，)
+	    (NP-SBJ (NP (NN 国内外))
+		    (NP (NN 天王)
+			(NN 巨星)))
+	    (VP (VV 齐聚一堂))) 
+	</parse>
+	<arg n="0">
+	国内外 天王 巨星 
+	</arg>
+	<arg n="m" f="loc">
+	三 台 的 综艺 节目 里 
+	</arg>
+	<arg n="m" f="tmp">
+	周末 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

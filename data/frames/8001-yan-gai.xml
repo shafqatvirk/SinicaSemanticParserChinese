@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掩盖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 covers up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DNP (LCP (NP (NN 年))
+				(LC 後))
+			   (DEG 的))
+		      (NP-PN (NR 新竹)
+			     (NR 镇西堡))
+		      (NP (NN 部落)))
+	      (PU ，)
+	      (NP-TMP (NT 下午)
+		      (NT 三点))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-DIR (P 由)
+					      (NP (NN 远处)))
+				      (VP (MSP 而)
+					  (VP (VV 来)))))
+			      (DEC 的)))
+		      (QP (CLP (M 层层)))
+		      (NP (NN 云朵)))
+	      (PU ，)
+	      (VP (ADVP (AD 已))
+		  (ADVP (AD 悄悄))
+		  (VP (VP (VV 越)
+			  (AS 过)
+			  (NP-OBJ (NN 绫线)))
+		      (PU ，)
+		      (VP (VV 掩盖)
+			  (AS 了)
+			  (NP-OBJ (DP (DT 整)
+				      (CLP (M 座)))
+				  (NP (NN 桧木)
+				      (NN 山坡))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 由 远处 而 来 的 层层 云朵 
+	  </arg>
+	  <arg n="1">
+	  整 座 桧木 山坡 
+	  </arg>
+	  <arg n="m" f="adv">
+	  悄悄 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  下午 三点 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  年 後 的 新竹 镇西堡 部落 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

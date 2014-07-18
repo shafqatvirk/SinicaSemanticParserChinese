@@ -1,0 +1,126 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指挥 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 国家)
+			     (NN 环境)
+			     (NN 保护)
+			     (NN 总局))
+		      (ADJP (JJ 主要))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 负责))))
+		      (NP (NN 官员)))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 已))
+		  (VP (VP (VV 奔赴)
+			  (NP-OBJ (NP-PN (NR 太湖))
+				  (NP (NN 流域))))
+		      (PU ，)
+		      (VP (PP-LOC (P 在)
+				  (QP (OD 一)
+				      (CLP (M 线))))
+			  (VP (VV 指挥)
+			      (NP-OBJ (NN 污染)
+				      (NN 治理))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VP (VV 组织)
+			      (NP-OBJ (NN 人力)))
+			  (VP (PP-DIR (P 对)
+				      (NP (LCP (NP (NN 流域))
+					       (LC 内))
+					  (NP (NN 污染)
+					      (NN 企业))))
+			      (VP (VV 进行)
+				  (NP-OBJ (ADJP (JJ 全天候))
+					  (NP (NN 突击)
+					      (NN 检查))))))))) 
+	  </parse>
+	  <arg n="0">
+	  国家 环境 保护 总局 主要 *OP* *T*-1 负责 官员 
+	  </arg>
+	  <arg n="1">
+	  污染 治理 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 一 线 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-1 (NP (NN 交响曲))
+			(NP (NT １９９７))
+			(NP-TTL (PU 《)
+				(NP (NN 天)
+				    (NN 地)
+				    (NN 人))
+				(PU 》)))
+	      (VP (PP-LGS (P 由)
+			  (NP (NP-APP (NP-PN (NR 湖南))
+				      (ADJP (JJ 著名))
+				      (NP (NN 音乐家)))
+			      (NP-PN (NR 谭盾))))
+		  (VP (VP (VV 作曲))
+		      (CC 及)
+		      (VP (VV 指挥)
+			  (NP-OBJ (-NONE- *-1)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 湖南 著名 音乐家 谭盾 
+	  </arg>
+	  <arg n="1">
+	  *-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 领导人)))
+	      (VP (VP (VCD (VV 沐风)
+			   (VV 栉雨)))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 亲))
+			  (VP (VV 临)
+			      (NP-OBJ (NN 前线))))
+		      (VP (VV 指挥))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 领导人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

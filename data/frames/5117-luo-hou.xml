@@ -1,0 +1,113 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 落後 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 lags behind"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 数学))
+	    (VP (VP (VV 位居)
+		    (QP-OBJ (OD 第三)
+			    (CLP (M 名))))
+		(PU ，)
+		(VP (ADVP (AD 仅))
+		    (VP (VV 落後)
+			(NP-PN-OBJ (NR 新加坡)
+				   (CC 与)
+				   (NR 南韩)))))) 
+	</parse>
+	<arg n="0">
+	数学 
+	</arg>
+	<arg n="1">
+	新加坡 与 南韩 
+	</arg>
+	<arg n="m" f="adv">
+	仅 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP (P 与)
+			    (NP-PN (NR 中共)))
+			(VP (VV 相较))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NP (PN 我))
+			     (NP (NN 国)))
+			 (DEG 的))
+		    (NP (NN 邦交国)
+			(NN 数目)))
+	    (VP (ADVP (AD 远远))
+		(VP (VV 落後)))) 
+	</parse>
+	<arg n="0">
+	我 国 的 邦交国 数目 
+	</arg>
+	<arg n="m" f="adv">
+	远远 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 与 中共 相较 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 结果))
+	    (NP-PN-SBJ (NR 国民党))
+	    (VP (VP (ADVP (AD 却))
+		    (DVP (VP (VV 出人意表))
+			 (DEV 地))
+		    (VP (VV 惨败)))
+		(PU ，)
+		(VP (VV 落後)
+		    (NP-PN-OBJ (NR 宋楚瑜))
+		    (NP-EXT (QP (ADVP (AD 近))
+				(QP (CD 十四)
+				    (CLP (M 个))))
+			    (NP (NN 百分点))))
+		(PU ，)
+		(VP (VV 差)
+		    (NP-PN-OBJ (NR 民进党))
+		    (NP-EXT (QP (CD 两百万))
+			    (NP (NN 票)))))) 
+	</parse>
+	<arg n="0">
+	国民党 
+	</arg>
+	<arg n="1">
+	宋楚瑜 
+	</arg>
+	<arg n="m" f="ext">
+	近 十四 个 百分点 
+	</arg>
+	<arg n="m" f="adv">
+	结果 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

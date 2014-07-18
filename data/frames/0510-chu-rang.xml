@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出让 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="transferer"/>
+      <role argnum="1" argrole="thing transfered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-SBJ (NP (NN 国内))
+		      (DNP (LCP (QP (CD 四分之一))
+				(LC 以上))
+			   (DEG 的))
+		      (NP (NN 技术)
+			  (NN 转移)
+			  (NN 项目)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				      (VP (PP-LGS (P 由)
+						  (NP (NN 技术)
+						      (NN 贸易)
+						      (NN 机构)))
+					  (VP (VV 出让)
+					      (NP-OBJ (-NONE- *-2)))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 技术 贸易 机构 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

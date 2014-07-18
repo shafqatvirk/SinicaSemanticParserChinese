@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 明令 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing ordered"/>
+      <role argnum="2" argrole="location order is carried"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 法律)
+			   (NN 草案))
+		       (LC 中))
+	      (VP (VV 明令)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 禁止)
+				  (NP-OBJ (ADJP (JJ 国有))
+					  (NP (NN 企业)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 炒作)
+					  (NP-OBJ (NN 股票)))))
+			      (CC 和)
+			      (VP (VV 严禁)
+				  (NP-OBJ (NN 银行)
+					  (NN 资金))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 流入)
+					  (NP-OBJ (NN 股市))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 禁止 国有 企业 *PRO* 炒作 股票 和 严禁 银行 资金 *PRO* 流入 股市 
+	  </arg>
+	  <arg n="2">
+	  法律 草案 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

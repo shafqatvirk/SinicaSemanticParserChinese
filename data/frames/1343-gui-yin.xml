@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 归因 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="cause"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-SBJ (NP-TPC (QP (CD 一些))
+				  (NP-PN (NR 欧洲))
+				  (NP (NN 工业)
+				      (NN 国家)))
+			  (NP-TMP (NT 目前))
+			  (NP-SBJ (NN 经济))
+			  (VP (VV 不振)))
+		  (VP (ADVP (AD 主要))
+		      (VP (VV 归因)
+			  (PP (P 于)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 长期))
+						      (VP (VV 存在))))
+					      (DEC 的)))
+				      (IP-APP (IP (NP-SBJ (NN 社会)
+							  (NN 福利)
+							  (NN 制度))
+						  (VP (VA 臃肿)))
+					      (CC 和)
+					      (IP (NP-SBJ (NN 劳动力)
+							  (NN 市场))
+						  (VP (VA 僵化)))
+					      (ETC 等))
+				      (ADJP (JJ 结构性))
+				      (NP (NN 障碍))))))) 
+	  </parse>
+	  <arg n="1">
+	  一些 欧洲 工业 国家 目前 经济 不振 
+	  </arg>
+	  <arg n="2">
+	  于 *OP* *T*-1 长期 存在 的 社会 福利 制度 臃肿 和 劳动力 市场 僵化 等 结构性 障碍 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

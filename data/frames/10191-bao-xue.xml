@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 刨削 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 cuts and planes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-3 (-NONE- *OP*))
+		(CP (IP (IP (NP-SBJ (PN 自己))
+			    (VP (VV 刨削)
+				(NP-OBJ (-NONE- *T*-3))))
+			(PU 、)
+			(IP (NP-TPC (-NONE- *T*-3))
+			    (NP-SBJ (NN 上面))
+			    (VP (VV 刻)
+				(AS 著)
+				(NP-OBJ (NN 方格纹)))))
+		    (DEC 的)))
+	    (ADJP (JJ 短))
+	    (NP (NN 木棒))) 
+	</parse>
+	<arg n="0">
+	自己 
+	</arg>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

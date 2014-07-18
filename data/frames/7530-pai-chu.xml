@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拍出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="sender"/>
+    <role argnum="1" argrole="thing arg0 sends out"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NP-APP (NN 总统))
+			     (NP-PN (NR 蒋公)))
+			 (DEG 的))
+		    (NP (NN 贺电)))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 随即))
+		(VP (VV 拍出)))
+	    (PRN (PU ——)
+		 (IP (PU 「)
+		     (IP-TPC (NP-SBJ (-NONE- *pro*))
+			     (VP (PP-BNF (P 为)
+					 (NP (NN 国)))
+				 (VP (VV 争光))))
+		     (PU ，)
+		     (NP-SBJ (PN 吾))
+		     (VP (ADVP (AD 甚))
+			 (VP (VV 感)
+			     (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 欣慰)))))
+		     (PU 」)))) 
+	</parse>
+	<arg n="1">
+	总统 蒋公 的 贺电 
+	</arg>
+	<arg n="m" f="adv">
+	随即 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

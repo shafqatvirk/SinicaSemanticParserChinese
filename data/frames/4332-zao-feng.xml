@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遭逢 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 encounters"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 份)))
+		      (NP (NN 优势)))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 却))
+		  (VP (VV 遭逢)
+		      (NP-OBJ (ADJP (JJ 巨大))
+			      (NP (NN 挑战)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 份 优势 
+	  </arg>
+	  <arg n="1">
+	  巨大 挑战 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="adv">
+	  然而 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

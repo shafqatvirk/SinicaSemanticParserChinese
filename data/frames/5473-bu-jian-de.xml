@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 不见得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing which is not necessarily true"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP-PN-APP (NR 迪士尼)
+			       (PU 、)
+			       (NR 福斯)
+			       (PU 、)
+			       (NR 华纳)
+			       (NN 兄弟)
+			       (ETC 等))
+		    (NP-PN (NR 好莱坞))
+		    (ADJP (JJ 主要))
+		    (NP (NN 电影)
+			(NN 公司)))
+	    (NP-SBJ (PP (P 在)
+			(NP-PN (NR 台湾)))
+		    (QP (CD 一)
+			(CLP (M 年)))
+		    (ADJP (JJ 平均))
+		    (NP (NN 发片量)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 虽))
+			    (VP (VE 有)
+				(QP-OBJ (CD 二百多)
+					(CLP (M 部))))))
+		(PU ，)
+		(ADVP (AD 但))
+		(ADVP (AD 也))
+		(VP (VV 不见得)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (QP-ADV (CLP (M 部部)))
+				(VP (VV 卖座))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	迪士尼 、 福斯 、 华纳 兄弟 等 好莱坞 主要 电影 公司 
+	</arg>
+	<arg n="0" f="pse">
+	在 台湾 一 年 平均 发片量 
+	</arg>
+	<arg n="0" f="prd">
+	*PRO* 部部 卖座 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 虽 有 二百多 部 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP (NP-SBJ (-NONE- *pro*))
+		(VP (PU 「)
+		    (VV 不见得)
+		    (PU ，)
+		    (VV 不见得)))
+	    (PU ，)
+	    (PU 」)
+	    (IP (PP-DIR (P 对)
+			(NP (DP (DT 这)
+				(CLP (M 个)))
+			    (NP (NN 问题))))
+		(PU ，)
+		(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VP (NP-TMP (NT 今年))
+					    (VP (QP-PRD (CD 五十一)
+							(CLP (M 岁)))))
+					(PU 、)
+					(VP (PP-LOC (P 在)
+						    (NP (NN 报社)))
+					    (VP (VV 任职)
+						(NP-OBJ (NN 主管))))))
+				(DEC 的)))
+			(NP-PN (NR 项纪台)))
+		(VP (ADVP (AD 连连))
+		    (VP (VV 摇头))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

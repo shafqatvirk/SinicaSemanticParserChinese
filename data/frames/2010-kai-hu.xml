@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开户 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (VV 严禁)
+		    (NP-OBJ (NN 企事业)
+			    (NN 单位))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (ADVP (AD 多头))
+				(VP (VV 开户)))
+			    (PU ，)
+			    (VP (VP (VV 逃避)
+				    (NP-OBJ (NN 银行)
+					    (NN 账户)
+					    (NN 管理)))
+				(CC 和)
+				(VP (VV 逃废)
+				    (NP-OBJ (NN 银行)
+					    (NN 债务)))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  多头 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

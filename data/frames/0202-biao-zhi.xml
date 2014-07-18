@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 标识 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing marked"/>
+    <role argnum="2" argrole="symbol"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-APP (NN 货币)
+                      (NN 名称))
+              (NP (NN 欧元)))
+      (VP (PP-MNR (CC 既)
+                  (PP (P 用)
+                      (NP (NP-PN (NR 拉丁))
+                          (NP (NN 字母))))
+                  (CC 也)
+                  (PP (P 用)
+                      (NP (NP-PN (NR 希腊))
+                          (NP (NN 字母)))))
+          (VP (VV 标识)))
+      (PU 。)))
+	</parse>
+	<arg n="1"> 货币 名称 欧元 </arg>
+	<arg n="2"> 既 用 拉丁 字母 也 用 希腊 字母 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

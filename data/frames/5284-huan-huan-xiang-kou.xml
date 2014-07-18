@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 环环相扣 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 国片)
+		    (NN 问题))
+	    (VP (VP (VA 重重))
+		(PU ，)
+		(VP (PP-DIR (PP (P 从)
+				(NP (NP (NN 政策))
+				    (PU 、)
+				    (NP (NN 行销))
+				    (PU 、)
+				    (NP (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *pro*))
+						    (VP (NP-MNR (-NONE- *T*-1))
+							(VP (VV 说)
+							    (NP-OBJ (NN 故事)))))
+						(DEC 的)))
+					(NP (NN 方法)))))
+			    (PP (P 到)
+				(NP (NN 映演)
+				    (NN 管道)))
+			    (ETC 等))
+		    (VP (VV 环环相扣))))) 
+	</parse>
+	<arg n="0">
+	国片 问题 
+	</arg>
+	<arg n="m" f="dir">
+	从 政策 、 行销 、 *OP* *pro* *T*-1 说 故事 的 方法 到 映演 管道 等 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

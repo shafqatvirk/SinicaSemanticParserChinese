@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保养 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 takes care of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-IMP (NP-TMP (NT 今夏))
+		(PP-TMP (P 在)
+			(LCP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VV 穿上)
+				     (NP-OBJ (NN 短裤)
+					     (CC 及)
+					     (NN 凉鞋))))
+			     (LC 前)))
+		(PU ，)
+		(NP-SBJ (-NONE- *pro*))
+		(VP (VV 请)
+		    (VP (ADVP (AD 先))
+			(ADVP (AD 好好))
+			(VP (VP (VV 保养)
+				(NP-OBJ (-NONE- *RNR*-1)))
+			    (PU 、)
+			    (VP (VV 清洁)
+				(NP-OBJ-1 (DNP (NP (PN 你))
+					       (DEG 的))
+					  (QP (CD 双))
+					  (NP (NN 腿)))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	*RNR*-1 
+	</arg>
+	<arg n="m" f="adv">
+	好好 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 穿上 短裤 及 凉鞋 前 
+	</arg>
+	<arg n="m" f="tmp">
+	今夏 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 场地))
+	    (VP (ADVP (AD 如何))
+		(VP (VV 保养)))) 
+	</parse>
+	<arg n="1">
+	场地 
+	</arg>
+	<arg n="m" f="adv">
+	如何 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

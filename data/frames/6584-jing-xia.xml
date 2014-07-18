@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惊吓 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 frightens"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-SBJ (NN 孩子) )
+			 (VP (VV 惊吓)))
+		     (LC 之馀))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (ADVP (AD 却))
+		(VP (VP (VV 擦擦)
+			(NP-OBJ (NN 眼泪) ))
+		    (PU ，)
+		    (VP (DVP (VP (VA 畅快))
+			     (DEV 地))
+			(VP (VV 说)
+			    (PU ：)
+			    (NP-OBJ (NP (ADJP (JJ 好))
+					(NP (NN 诗) ))
+				    (PU ，)
+				    (NP (ADJP (JJ 好))
+					(NP (NN 诗) )))))))) 
+	</parse>
+	<arg n="1">
+	孩子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

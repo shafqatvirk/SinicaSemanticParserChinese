@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 填上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing filled in"/>
+      <role argnum="2" argrole="thing filled in with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 董太))
+	      (VP (ADVP (AD 并))
+		  (ADVP (AD 随即))
+		  (PP (P 与)
+		      (NP-PN (NR 翁月华)))
+		  (PP-BNF (P 为)
+			  (NP (NN 歌曲)))
+		  (VP (VV 填上)
+		      (NP-OBJ (NN 歌词))))) 
+	  </parse>
+	  <arg n="0">
+	  董太 
+	  </arg>
+	  <arg n="0">
+	  与 翁月华 
+	  </arg>
+	  <arg n="1">
+	  为 歌曲 
+	  </arg>
+	  <arg n="2">
+	  歌词 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随即 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

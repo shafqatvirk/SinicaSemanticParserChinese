@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 播 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="broadcaster"/>
+    <role argnum="1" argrole="news"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP (CP (WHNP-1 (-NONE- *OP*))
+          (IP (NP-SBJ (-NONE- *pro*))
+              (VP (NP-TMP (NT 今))
+                  (VP (VV 播)
+                      (NP-OBJ (-NONE- *T*-1))))))
+      (IP-TTL-APP (PU “)
+                  (NP-SBJ (NP-PN (NR 蒙古))
+                          (NP (NN 残疾人))
+                          (NN 运动员))
+                  (VP (VV 备战)
+                      (NP-PN-OBJ (NP-PN (PU ‘)
+                                        (NR 远南)
+                                        (PU ’)
+                                        (NN 运动会))))
+                  (PU ”))
+      (NP (NN 稿))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> (*T*-1)->(“蒙古残疾人运动员备战‘远南’运动会稿”) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

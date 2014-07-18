@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 探究 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 explores"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (IP-SBJ (NP-SBJ (PU 「)
+				(NN 中年)
+				(NN 危机)
+				(PU 」))
+			(VP (PP-LOC (P 在)
+				    (NP-PN (NR 美国)))
+			    (VP (VV 形成)
+				(NP-OBJ (ADJP (JJ 热门))
+					(NP (NN 议题))))))
+		(PU ，)
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 探究)
+				(NP-OBJ (NN 原因))))
+		    (PU ，)
+		    (VP (VC 是)
+			(IP-PRD (LCP-TMP (IP (LCP-SBJ (NP-APP (NT 一九四六年))
+						      (LCP (IP (NP-SBJ (QP (OD 二)
+									   (CLP (M 次)))
+								       (NP (NN 大战)))
+							       (VP (VV 结束)))
+							   (LC 後)))
+					     (VP (VV 以迄)
+						 (NP-OBJ (NT 一九六四年))))
+					 (LC 间))
+				(PU ，)
+				(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-2))
+						    (VP (VV 为数)
+							(QP-OBJ (ADVP (AD 约))
+								(QP (CD 七千五百万)))))
+						(DEC 的)))
+					(NP (PU 「)
+					    (NN 婴儿潮)
+					    (PU 」)))
+				(VP (ADVP (AD 陆续))
+				    (VP (VV 出生))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	原因 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

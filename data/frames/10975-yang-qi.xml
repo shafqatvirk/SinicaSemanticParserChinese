@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 扬弃 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 discards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (LCP-TMP (QP (DP (DT 这))
+				 (QP (CD 三)
+				     (CLP (M 年))))
+			     (LC 来))
+		    (NP-SBJ (NN 外资))
+		    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (ADVP (AD 大举))
+					 (VP (VV 进入)
+					     (NP-OBJ (NN 国内)))))
+				 (LC 後))
+			(PU ，)
+			(ADVP (CS 虽然))
+			(PP-LOC (P 在)
+				(LCP (NP (NN 操作)
+					 (NN 手法))
+				     (LC 上)))
+			(ADVP (AD 同样))
+			(VP (VP (VCD (VV 杀进)
+				     (VV 杀出)))
+			    (PU 、)
+			    (VP (NP-ADV (NN 交易))
+				(VP (VA 频繁))))))
+	    (PU ，)
+	    (ADVP (AD 但))
+	    (ADVP (AD 至少))
+	    (NP-SBJ (NN 外商))
+	    (VP (VP (VV 扬弃)
+		    (NP-OBJ (NN 小道)
+			    (NN 消息)))
+		(PU 、)
+		(VP (ADVP (AD 不))
+		    (VP (VV 碰)
+			(NP-OBJ (NN 投机股)))))) 
+	</parse>
+	<arg n="0">
+	外商 
+	</arg>
+	<arg n="1">
+	小道 消息 
+	</arg>
+	<arg n="m" f="adv">
+	至少 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<arg n="m" f="adv">
+	这 三 年 来 外资 *PRO* 大举 进入 国内 後 ， 虽然 在 操作 手法 上 同样 杀进 杀出 、 交易 频繁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

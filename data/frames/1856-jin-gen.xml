@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 紧跟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 follows closely behind"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (DP (DT 这)
+		      (CLP (M 种)))
+		  (CP-APP (IP (NP-SBJ (NN 法制))
+			      (VP (VV 紧跟)
+				  (NP-OBJ (NP (NN 经济)
+					      (CC 和)
+					      (NN 社会))
+					  (NP (NN 活动)))))
+			  (DEC 的))
+		  (NP (NN 做法))) 
+	  </parse>
+	  <arg n="0">
+	  法制 
+	  </arg>
+	  <arg n="1">
+	  经济 和 社会 活动 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

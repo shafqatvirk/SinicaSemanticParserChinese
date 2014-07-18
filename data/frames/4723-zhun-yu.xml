@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 准予 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 is allowed to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LST (CD 二))
+	      (PU 、)
+	      (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (NP-PN (NR 中华)
+					      (NN 人民)
+					      (NN 共和国))
+				       (NP (NN 政府)))
+			       (VP (ADVP (AD 另行))
+				   (VP (VV 通知))))
+			   (LC 前)))
+	      (PU ，)
+	      (NP-TTL-SBJ (PU 《)
+			  (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 准予)
+					  (NP-OBJ (NN 就业))))
+			      (ADJP (JJ 最低))
+			      (NP (NN 年龄)))
+			  (NP (NN 公约))
+			  (PU 》))
+	      (VP (ADVP (AD 暂))
+		  (ADVP (AD 不))
+		  (VP (VV 适用于)
+		      (NP-OBJ (NP-PN (NR 中华)
+				     (NN 人民)
+				     (NN 共和国))
+			      (NP-PN (NP-PN (NR 香港))
+				     (ADJP (JJ 特别))
+				     (NP (NN 行政区))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  就业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

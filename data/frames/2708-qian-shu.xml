@@ -1,0 +1,152 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 签署 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="document signed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 会谈))
+			   (VP (VV 结束)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (PN 双方))
+	      (VP (VV 签署)
+		  (AS 了)
+		  (NP-OBJ (NN 会谈)
+			  (NN 纪要)))) 
+	  </parse>
+	  <arg n="0">
+	  双方 	  
+	  </arg>
+	  <arg n="1">
+	  会谈 纪要 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  会谈 结束 后 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 并))
+		  (PP-TMP (P 于)
+			  (LCP (IP (NP-TMP (NT 九月))
+				   (NP-PN-SBJ (NR 桥本)
+					      (NN 首相))
+				   (VP (VV 访)
+				       (NP-PN-OBJ (NR 华))))
+			       (LC 时)))
+		  (PP-LGS (P 由)
+			  (NP (NP (QP (CD 两))
+				  (NP (NN 国)))
+			      (NP (NN 政府))))
+		  (VP (VV 签署)
+		      (NP-OBJ (NN 换文))))) 
+	  </parse>
+	  <arg n="0">
+	  由 两 国 政府 	  
+	  </arg>
+	  <arg n="1">
+	  换文 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 九月 桥本 首相 访 华 时 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NP-PN (NR 香港))
+				     (ADJP (JJ 特别))
+				     (NP (NN 行政区)))
+			      (NP (NN 行政)
+				  (NN 长官)))
+		      (NP-PN (NR 董建华)))
+	      (VP (NP-TMP (NT 今日)
+			  (PRN (PU （)
+			       (NP (NT 星期三))
+			       (PU ）)))
+		  (PP (P 和)
+		      (NP (NP-APP (NP-PN (NR 泰国))
+				  (NP (NN 外交部)
+				      (NN 部长)))
+			  (NP-PN (NR 巴蜀))))
+		  (VP (VV 签署)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 项)))
+			      (IP-APP (NP-SBJ (-NONE- *pro*))
+				      (VP (ADVP (AD 互))
+					  (VP (VV 免)
+					      (NP-OBJ (NN 签证)))))
+			      (NP (NN 协议)))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 特别 行政区 行政 长官 董建华 	  
+	  </arg>
+	  <arg n="0">
+	  和 泰国 外交部 部长 巴蜀 	  
+	  </arg>
+	  <arg n="1">
+	  一 项 *pro* 互 免 签证 协议 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 （ 星期三 ） 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 九月)
+		      (NN 中旬))
+	      (PU ，)
+	      (NP-SBJ (NN 贷款)
+		      (NN 协议))
+	      (VP (ADVP (AD 正式))
+		  (VP (VV 签署)))) 
+	  </parse>
+	  <arg n="1">
+	  贷款 协议 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  正式 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  九月 中旬 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 换回 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="exchanger"/>
+      <role argnum="1" argrole="thing exchanged"/>
+      <role argnum="2" argrole="thing exchanged for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-PRP (P 由于)
+		      (IP (NP-SBJ (NN 科技)
+				  (NN 含量))
+			  (VP (VA 低))))
+	      (PU ，)
+	      (NP-SBJ (NN 产品))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 仅))
+		  (VP (VV 能)
+		      (VP (VV 换回)
+			  (NP-OBJ (DNP (QP (CD 十多亿)
+					   (CLP (M 美元)))
+				       (DEG 的))
+				  (NP (NN 外汇))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  产品 	  
+	  </arg>
+	  <arg n="2">
+	  十多亿 美元 的 外汇 	  
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 科技 含量 低 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  每 年 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  仅 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

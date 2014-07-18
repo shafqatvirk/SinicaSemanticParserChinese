@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 放下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 安南))
+		  (VP (VV 呼吁)
+		      (NP-OBJ (NP-PN (NR 塞拉利昂))
+			      (ADJP (JJ 反政府))
+			      (NP (NN 武装)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 放下)
+			      (NP-OBJ (NN 武器)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  武器 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

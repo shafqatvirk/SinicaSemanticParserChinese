@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 采制 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 mines and produces"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (LCP-TMP (NP-PN (NR 汉))
+			     (LC 初))
+		    (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 开放)
+			(NP-OBJ (NN 私人))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 采制)
+				(NP-OBJ (NN 盐)
+					(PU 、)
+					(NN 铁))))))
+	    (PU ，)
+	    (VP (ADVP (AD 也))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 图))
+			    (VP (VV 可)
+				(VP (VV 证))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	盐 、 铁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

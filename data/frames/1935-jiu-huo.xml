@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 救活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity saved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 救活)
+						      (NP-OBJ (-NONE- *T*-2))))
+					  (VP (VV 无望)))
+				      (DEC 的)))
+			      (NP (NN 企业))))
+		  (PU ，)
+		  (ADVP (AD 坚决))
+		  (VP (VV 实行)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-MNR (P 依)
+					  (NP (NN 法)))
+				  (VP (VV 破产))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 丢脸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity arg0 causes to lose face"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NN 政府))
+	      (VP (VP (VV 要)
+		      (VP (VE 有)
+			  (NP-OBJ (NN 方法))))
+		  (PU ，)
+		  (VP (ADVP (AD 不))
+		      (VP (VC 是)
+			  (VP (VP (VP (ADVP (AD 只))
+				      (VP (VV 找)
+					  (NP-OBJ (QP (CLP (M 个)))
+						  (ADJP (JJ 烂))
+						  (NP (NN 戏院)))))
+				  (VP (ADVP (AD 就))
+				      (ADVP (AD 长年))
+				      (VP (VV 放映)
+					  (NP-OBJ (NN 国片)))))
+			      (PU ，)
+			      (VP (VV 让)
+				  (NP-OBJ (NN 观众))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 觉得)
+					  (IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+							  (VP (VV 看)
+							      (NP-OBJ (NN 国片))))
+						  (VP (VC 是)
+						      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+								  (CP (IP (NP-SBJ (-NONE- *T*-2))
+									  (VP (ADVP (AD 很))
+									      (VP (VA 丢脸))))
+								      (DEC 的)))
+							      (NP (NN 事))))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

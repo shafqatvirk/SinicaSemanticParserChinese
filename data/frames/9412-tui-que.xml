@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 退却 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity retreating"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 想)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 回乡)))))
+			      (DEC 的))))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 虽))
+			      (ADVP (AD 不))
+			      (VP (VV 在)
+				  (NP-OBJ (NN 少数)))))
+		  (PU ，)
+		  (ADVP (AD 但))
+		  (ADVP (AD 常))
+		  (PP-PRP (P 因)
+			  (IP (NP-SBJ (NP-PN (NR 坪林))
+				      (NP (NN 生活)))
+			      (VP (ADVP (AD 不))
+				  (VP (VA 易)))))
+		  (VP (MSP 而)
+		      (VP (VV 退却))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 想 *PRO* 回乡 的 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 坪林 生活 不 易 
+	  </arg>
+	  <arg n="m" f="adv">
+	  常 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 虽 不 在 少数 
+	  </arg>
+	  <arg n="m" f="adv">
+	  其中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

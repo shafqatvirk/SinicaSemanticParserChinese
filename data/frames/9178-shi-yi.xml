@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 施以 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 applies"/>
+      <role argnum="2" argrole="entity arg1 is applied on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 南韩))
+		      (NP (NN 政府)))
+	      (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VP (ADVP (AD 昔日))
+						      (PP-LOC (P 在)
+							      (NP-PN (NR 板门店)))
+						      (VP (LB 被)
+							  (CP-OBJ (WHNP-2 (-NONE- *OP*))
+								  (IP (NP-SBJ (NN 地雷))
+								      (VP (VV 炸伤)
+									  (NP-OBJ (-NONE- *T*-2)))))))
+						  (CC 与)
+						  (VP (LCP-TMP (NP (NN 演习))
+							       (LC 时))
+						      (VP (VV 受伤)))))
+					  (DEC 的)))
+				  (ADJP (JJ 残障))
+				  (NP (NN 军人)))
+			  (PU ，)
+			  (VP (VP (VRD (VV 集中)
+				       (VV 起来)))
+			      (VP (VV 施以)
+				  (NP-OBJ (DNP (NP (NN 轮椅)
+						   (NN 桌球))
+					       (DEG 的))
+					  (NP (NN 训练)))))))) 
+	  </parse>
+	  <arg n="0">
+	  南韩 政府 
+	  </arg>
+	  <arg n="1">
+	  轮椅 桌球 的 训练 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 昔日 在 板门店 被 *OP* 地雷 炸伤 *T*-2 与 演习 时 受伤 的 残障 军人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贯彻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="implementer"/>
+      <role argnum="1" argrole="policy"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (ADVP (AD 近))
+			   (QP (CD 五)
+			       (CLP (M 年))))
+		       (LC 来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 乃东县))
+	      (VP (ADVP (AD 全面))
+		  (VP (VCD (VV 贯彻)
+			   (VV 落实))
+		      (NP-OBJ (PU “)
+			      (NN 村民)
+			      (NN 组织法)
+			      (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  乃东县 
+	  </arg>
+	  <arg n="1">
+	  “ 村民 组织法 ” 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近 五 年 来 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

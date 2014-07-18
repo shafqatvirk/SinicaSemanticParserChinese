@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing set up"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 德国)
+			 (NR 西门子)
+			 (NN 公司))
+	      (VP (PP-LOC (P 在)
+			  (NP-PN (NR 中国)))
+		  (ADVP (AD 共))
+		  (VP (VV 设有)
+		      (NP-OBJ (NP (QP (CD 三十四)
+				      (CLP (M 个)))
+				  (ADJP (JJ 合资))
+				  (NP (NN 公司)))
+			      (PU 、)
+			      (NP (QP (CD 三)
+				      (CLP (M 家)))
+				  (ADJP (JJ 独资))
+				  (NP (NN 公司)))
+			      (CC 和)
+			      (NP (QP (CD 十四)
+				      (CLP (M 家)))
+				  (NP (NN 办事处))))))) 
+	  </parse>
+	  <arg n="0">
+	  德国 西门子 公司 
+	  </arg>
+	  <arg n="1">
+	  三十四 个 合资 公司 、 三 家 独资 公司 和 十四 家 办事处 
+	  </arg>
+	  <arg n="2">
+	  在 中国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 所有))
+		      (DNP (NP-PN (NR 香港))
+			   (DEG 的))
+		      (NP (NN 水塘)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 设有)
+		      (NP-OBJ (NN 溢洪道))))) 
+	  </parse>
+	  <arg n="2">
+	  所有 香港 的 水塘 
+	  </arg>
+	  <arg n="1">
+	  溢洪道 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

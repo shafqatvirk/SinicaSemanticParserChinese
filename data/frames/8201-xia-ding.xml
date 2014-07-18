@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 forms"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC (CC 不论是)
+		      (IP (NP-PN (ADJP (JJ 流行))
+				 (NP (NN 文化)))
+			  (VP (VV 唤醒)
+			      (NP-OBJ (NN 男性)
+				      (NN 身体)
+				      (NN 自主))))
+		      (PU ，)
+		      (CC 或)
+		      (IP (NP-SBJ (NN 男性)
+				  (NN 自觉))
+			  (VP (VV 走)
+			      (PP (P 在)
+				  (LCP (NP (NN 商业))
+				       (LC 之前))))))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 现代))
+		      (NP (NN 男性)))
+	      (VP (ADVP (AD 确实))
+		  (VP (VC 是)
+		      (VP (VP (VV 下定)
+			      (NP-OBJ (NN 决心)))
+			  (VP (ADVP (AD 好好))
+			      (VP (VV 美化)
+				  (NP-OBJ (PN 自己)))))))
+	      (SP 了)) 
+	  </parse>
+	  <arg n="0">
+	  现代 男性 
+	  </arg>
+	  <arg n="1">
+	  决心 
+	  </arg>
+	  <arg n="m" f="adv">
+	  确实 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  不论是 流行 文化 唤醒 男性 身体 自主 ， 或 男性 自觉 走 在 商业 之前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

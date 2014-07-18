@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 补缴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="payer"/>
+    <role argnum="1" argrole="fund"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (PP-DIR (P 对)
+          (NP (CP (WHNP-1 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (-NONE- *T*-1))
+                          (VP (VP (VE 有)
+                                  (NP-OBJ (ADJP (JJ 特殊))
+                                          (NP (NN 困难))))
+                              (VP (VV 需要)
+                                  (VP (VV 缓缴)
+                                      (NP-OBJ (NN 税款))))))
+                      (DEC 的)))
+              (NP (NN 企业)))))
+	</parse>
+	<arg n="0"> (*T*-1)->(企业) </arg>
+	<V/>
+	<arg n="1"> 税款 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

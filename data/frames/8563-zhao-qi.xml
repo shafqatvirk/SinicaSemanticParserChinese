@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 找齐 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities arg0 finds and gathers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NN 播映)
+			      (NN 问题))
+		      (VP (VV 解决)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 周天瑞))
+	      (VP (VP (VV 找齐)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 报导)
+					      (NP-OBJ (NP (QP (CD 二十一))
+							  (NP (NN 县)
+							      (NN 市)))
+						      (NP (NN 选情)))))
+				      (DEC 的)))
+			      (NP (NN 队伍))))
+		  (PU ，)
+		  (VP (QP-TMP (LCP (NP (NN 选))
+				   (LC 前))
+			      (QP (CD 七)
+				  (CLP (M 天))))
+		      (PU ，)
+		      (NP-ADV (DP (DT 每))
+			      (NP (NN 晚)))
+		      (PP-LOC (P 在)
+			      (NP (DNP (NP (ADJP (JJ 有线))
+					   (NP (NN 电视台)))
+				       (DEG 的))
+				  (NP (NN 国会)
+				      (NN 频道))))
+		      (VP (VV 播出)
+			  (NP-OBJ (NP (QP (CD 半))
+				      (NP (NN 小时)))
+				  (IP-TTL-APP (PU 《)
+					      (NP-TPC (NN 选情))
+					      (NP-SBJ (PN 大家))
+					      (VP (VV 看))
+					      (PU 》))
+				  (NP (NN 节目))))))) 
+	  </parse>
+	  <arg n="0">
+	  周天瑞 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 报导 二十一 县 市 选情 的 队伍 
+	  </arg>
+	  <arg n="m" f="adv">
+	  播映 问题 解决 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

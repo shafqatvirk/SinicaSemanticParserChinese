@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 做田 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 以前))
+	      (NP-SBJ (NN 农民))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 做田)))
+			   (LC 时))
+		  (ADVP (AD 都))
+		  (VP (VV 习惯)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 塞)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 包)))
+					  (NP (NN 香烟)))
+				  (PP (P 在)
+				      (LCP (NP (NN 口袋))
+					   (LC 里)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

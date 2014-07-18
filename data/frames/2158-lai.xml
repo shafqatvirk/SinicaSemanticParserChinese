@@ -1,0 +1,478 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="comer"/>
+      <role argnum="1" argrole="place come to"/>
+      <role argnum="2" argrole="place come from"/> 
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 龙永图))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (PP-TMP (P 于)
+						  (NP (NT １８日)))
+					  (PP-DIR (P 从)
+						  (NP-PN (NR 波士顿)))
+					  (VP (VP (VV 来)
+						  (NP-PN-OBJ (NR 华盛顿)))
+					      (VP-PRP (VV 参加)
+						      (NP-OBJ (NN 演讲))))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  	  
+	  </arg>
+	  <arg n="1">
+	  华盛顿 	  	  
+	  </arg>
+	  <arg n="2">
+	  从 波士顿 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 １８日 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>  
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 实力))
+				  (VP (VA 雄厚)))
+			      (DEC 的)))
+		      (NP-APP (NP-PN (NR 日本)
+				     (NR 伊藤忠)
+				     (NN 株式会社))
+			      (PU 、)
+			      (NP-PN (NR 韩国)
+				     (NR 大宇)
+				     (NN 集团))
+			      (CC 和)
+			      (NP-PN (NR 香港)
+				     (NR 长江)
+				     (NN 实业)
+				     (NN 集团))
+			      (ETC 等))
+		      (ADJP (JJ 大型))
+		      (NP (NN 公司)))
+	      (VP (ADVP (AD 纷纷))
+		  (VP (VP (VV 来)
+			  (NP-PN-OBJ (NR 广西)))
+		      (VP (VV 投资))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 实力 雄厚 的 日本 伊藤忠 株式会社 、 韩国 大宇 集团 和 香港 长江 实业 集团 等 大型 公司 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  广西 	  	  	  
+	  </arg>
+	  <arg n="M" f="adv">
+	  纷纷 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 她))
+		  (VP (VP (QP-TMP (DP (DT 每)
+				      (CLP (M 天)))
+				  (NP (NT 早上))
+				  (QP (CD 七)
+				      (CLP (M 点))))
+			  (ADVP (AD 就))
+			  (VP (VV 要)
+			      (VP (VP (VV 到)
+				      (NP-OBJ (NN 大棚)))
+				  (VP (VV 来)))))
+		      (PU ，)
+		      (VP (ADVP (AD 一直))
+			  (VP (VV 要)
+			      (VP (VA 忙)
+				  (PP-TMP (P 到)
+					  (NP (NT 晚上)
+					      (NT 六点)))))))) 
+	  </parse>
+	  <arg n="0">
+	  她 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  到 大棚 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  每 天 早上 七 点 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 知识)
+			  (NN 经济))
+		      (ADJP (JJ 大))
+		      (NP (NN 潮)))
+	      (VP (DVP (VP (VA 迅猛)))
+		  (VP (MSP 而)
+		      (VP (VV 来))))) 
+	  </parse>
+	  <arg n="0">
+	  知识 经济 大 潮 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  迅猛 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *T*-1))
+	      (VP (PP-DIR (P 从)
+			  (NP (DP (DT 该))
+			      (NP (NN 地方))))
+		  (VP (VV 来)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  	  	  
+	  </arg>
+	  <arg n="2">
+	  从 该 地方 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing to be in time for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (ADVP (AD 未))
+				      (VP (VPT (VV 来)
+					       (DER 得)
+					       (VV 及))
+					  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 赶上)
+						      (NP-OBJ (NN 报名)))))))
+			      (DEC 的)))
+		      (NP (NN 市民们)))
+	      (VP (ADVP (AD 则))
+		  (VP (VV 表示)
+		      (NP-OBJ (ADJP (JJ 十分))
+			      (NP (NN 遗憾)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 赶上 报名 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing can't be in time for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 虽然))
+			  (VP (VV 说)
+			      (IP-OBJ (NP-SBJ (NN 电视)
+					      (NN 演员))
+				      (VP (VP (ADVP (AD 不))
+					      (VP (VV 能)
+						  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+							      (VP (PP (P 像)
+								      (NP (NN 电影)))
+								  (VP (VA 一样))))
+						      (ADVP (AD 慢慢))
+						      (VP (VV 酝酿)
+							  (NP-OBJ (NN 情绪))))))
+					  (PU ，)
+					  (VP (VV 必须)
+					      (VP (PP-MNR (P 以)
+							  (NP (NN 对白)
+							      (CC 及)
+							      (NN 肢体)
+							      (NN 动作)))
+						  (VP (VV 吸引)
+						      (NP-OBJ (NN 观众))))))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 热腾腾)))
+			      (DEC 的)))
+		      (NP (NN 剧本)))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 不))
+			  (VP (VV 要)
+			      (VP (VV 说)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 琢磨)
+					      (NP-OBJ (NN 角色)))))))
+		      (SP 了))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-FOC (ADVP (AD 连))
+			  (NP (CP (WHNP-55 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (NP-MNR (-NONE- *T*-55))
+					      (VP (VV 背)
+						  (NP-OBJ (NN 剧本)))))
+				      (DEC 的)))
+			      (NP (NN 时间))))
+		  (ADVP (AD 都))
+		  (VP (VPT (VV 来)
+			   (AD 不)
+			   (VV 及))))) 
+	  </parse>
+	  <arg n="m" f="adv">
+	  虽然说电视演员 不 能 像 电影 一样 慢慢 酝酿 情绪 ， 必须 以 对白 及 肢体 动作 吸引 观众          
+	  </arg>
+	  <arg n="m" f="dis">
+	  但          
+	  </arg>
+	  <arg n="m" f="adv">
+	  热腾腾 的 剧本          
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 要 说 琢磨 角色 了          
+	  </arg>
+	  <arg n="0">
+	  *pro*	  	  	  
+	  </arg>
+	  <arg n="1">
+	  连 背 剧本 的 时间	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing done"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (ADVP (AD 不管))
+			      (VP (VC 是)
+				  (NP-PRD (NP (NN 专业)
+					      (NN 新闻)
+					      (NN 工作者))
+					  (PU ，)
+					  (CC 还是)
+					  (NP (ADJP (JJ 业余))
+					      (NP (NN 爱好者))))))
+			  (PU ；)
+			  (VP (ADVP (AD 不管))
+			      (VP (VV 报喜)
+				  (PU ，)
+				  (CC 还是)
+				  (VV 报忧)))))
+	      (PU ，)
+	      (VP (ADVP (AD 都))
+		  (VP (VV 得)
+		      (VP (VV 来)
+			  (NP-OBJ (NN 真的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  真的 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f5">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing come around to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 当前))
+		  (NP-SBJ (PN 双方))
+		  (VP (VV 应)
+		      (VP (VP (ADVP (AD 首先))
+			      (VP (VV 商定)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (PP (-NONE- *T*-1))
+							  (VP (VV 交换)
+							      (NP-OBJ (NN 意见)))))
+						  (DEC 的)))
+					  (NP (NN 议题)
+					      (CC 和)
+					      (NN 内容)))))
+			  (PU ，)
+			  (VP (ADVP (AD 再))
+			      (VP (VV 来)
+				  (VP (VV 考虑)
+				      (NP-OBJ (NP-APP (NN 人员)
+						      (NN 层级)
+						      (CC 及)
+						      (NN 时间)
+						      (PU 、)
+						      (NN 地点)
+						      (ETC 等))
+					      (NP (NN 问题))))))))) 
+	  </parse>
+	  <arg n="0">
+	  双方 	  	  	  
+	  </arg>
+	  <arg n="1">
+	  考虑 人员 层级 及 时间 、 地点 等 问题 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 	  	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当前 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f6" edef="not a real verb">
+      <role argnum="0" argrole=""/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (ADVP (AD 真正))
+	      (VP (VP (VV 搞出)
+		      (NP-OBJ (DNP (NP-PN (NR 中国))
+				   (DEG 的))
+			      (NP (NN 创新)
+				  (NN 体系))))
+		  (VP (VV 来)))) 
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f7" edef="cause to get close">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="entity arg0 causes to come/sends over"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU 「)
+	      (IP-ADV (NP-SBJ (ADJP (JJ 远))
+			      (NP (NN 人)))
+		      (VP (ADVP (AD 不))
+			  (VP (VV 服))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 则))
+		  (VP (VP (VV 修)
+			  (NP-OBJ (NN 文德)))
+		      (VP (MSP 以)
+			  (VP (VV 来)
+			      (NP-OBJ (PN 之))))))
+	      (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  之 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  远 人 不 服 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

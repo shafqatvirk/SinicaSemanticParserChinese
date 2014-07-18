@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 占有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 occupies/owns"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-SBJ (NP-APP (NP-PN (NN 国家)
+						 (NN 外经贸部))
+					  (NP (NN 亚洲司)
+					      (NN 副司长)))
+				  (NP-PN (NR 吕克俭)))
+			  (VP (VV 介绍))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 中)
+			     (NR 日))
+		      (NP (NN 经贸)
+			  (NN 关系)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (QP (CD 两))
+				       (NP (NN 国)))
+				   (PP (P 对)
+				       (NP (NN 外)))
+				   (NP (NN 经贸)
+				       (NN 关系)))
+			       (LC 中)))
+		  (ADVP (AD 均))
+		  (VP (VV 占有)
+		      (NP-OBJ (ADJP (JJ 重要))
+			      (NP (NN 地位)))))) 
+	  </parse>
+	  <arg n="0">
+	  中 日 经贸 关系 
+	  </arg>
+	  <arg n="1">
+	  重要 地位 
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 两 国 对 外 经贸 关系 中 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 国家 外经贸部 亚洲司 副司长 吕克俭 介绍 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 那时))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 占)
+				      (NP-OBJ (NP-PN (NR 西藏))
+					      (NP (NN 人口)))
+				      (QP-EXT (CD 百分之五))))
+			      (DEC 的)))
+		      (NP (NN 官家)
+			  (PU 、)
+			  (NN 贵族)
+			  (PU 、)
+			  (NN 上层)
+			  (NN 寺院)))
+	      (VP (CC 不仅)
+		  (VP (VV 占有)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (DP (DT 全))
+				       (NP (NN 社会)))
+				   (DEG 的))
+			      (NP (NN 财富))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (VV 占有)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 广大))
+				       (NP (NN 农奴)))
+				   (DEG 的))
+			      (NP (NN 人身)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 占 西藏 人口 百分之五 的 官家 、 贵族 、 上层 寺院 
+	  </arg>
+	  <arg n="1">
+	  广大 农奴 的 人身 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  那时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 离家 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity leaving home"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (QP (CD 二十)
+			 (CLP (M 岁)))
+		     (LC 时))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 王壮为))
+	    (VP (VP (VV 离家))
+		(VP (VP (VV 进入)
+			(NP-OBJ (DNP (NP-PN (NR 北平))
+				     (DEG 的))
+				(ADJP (JJ 私立))
+				(NP-PN (NR 京华)
+				       (NN 美专))))
+		    (VP (VV 就读))))) 
+	</parse>
+	<arg n="0">
+	王壮为 
+	</arg>
+	<arg n="m" f="tmp">
+	二十 岁 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

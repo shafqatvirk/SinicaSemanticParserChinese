@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贴出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place arg0 posts arg1"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-PN-SBJ (NR 中油))
+				  (VP (MSP 所)
+				      (VP (VV 属)))))
+			  (DNP (NP (DP (DT 各))
+				   (NP (NN 地)))
+			       (DEG 的))
+			  (NP (NN 加油站)))
+		  (VP (NP-TMP (NT 最近))
+		      (ADVP (AD 也))
+		      (VP (VV 贴出)
+			  (NP-OBJ (CP-APP (IP (PU 「)
+					      (PP-PRP (P 为了)
+						      (NP (DNP (NP (PN 您))
+							       (DEG 的))
+							  (NP (NN 安全))))
+					      (PU ，)
+					      (NP-SBJ (NN 行动)
+						      (NN 电话))
+					      (VP (VV 请)
+						  (VP (VV 关机)))
+					      (PU 」))
+					  (DEC 的))
+				  (NP (NN 标语))))))
+	      (PU ，)
+	      (PP (P 因为)
+		  (IP (NP-SBJ (CP (WHNP-104 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 行动)
+						  (NN 电话))
+					  (VP (MSP 所)
+					      (VP (VV 产生)
+						  (NP (-NONE- *T*-104)))))
+				      (DEC 的)))
+			      (NP (NN 静电)
+				  (NN 火花)))
+		      (VP (VV 可能)
+			  (VP (VV 会)
+			      (VP (PP-LOC (P 在)
+					  (NP (CP (WHNP-2 (-NONE- *OP*))
+						  (CP (IP (NP-TPC (-NONE- *T*-2))
+							  (NP-SBJ (NN 油气))
+							  (VP (VA 浓烈)))
+						      (DEC 的)))
+					      (NP (NN 加油站))))
+				  (VP (VV 引发)
+				      (NP-OBJ (NN 气爆))))))))) 
+	  </parse>
+	  <arg n="1">
+	  「 为了 您 的 安全 ， 行动 电话 请 关机 」 的 标语 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-1 中油 所 属 各 地 的 加油站 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  最近 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 *OP* 行动 电话 所 产生 *T*-104 的 静电 火花 可能 会 在 *OP* *T*-2 油气 浓烈 的 加油站 引发 气爆 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

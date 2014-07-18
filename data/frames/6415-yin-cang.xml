@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 隐藏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 hides"/>
+    <role argnum="2" argrole="place arg1 is hidden"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (PP-MNR (ADVP (AD 单))
+			(PP (P 凭)
+			    (NP (DNP (NP (NN 一己))
+				     (DEG 之))
+				(NP (NN 力)))))
+		(ADVP (AD 无法))
+		(VP (VV 发现)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 隐藏)
+					    (NP-OBJ (NN 其中))))
+				    (DEC 的)))
+			    (NP (NN 漏洞)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="2">
+	其中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-OBJ (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (LCP-LOC (NP (NN 背))
+						   (LC 後))
+					  (VP (VV 隐藏))))
+				  (DEC 的)))
+			  (NP (NN 部份)))
+		  (VP (ADVP-WH (AD 究竟))
+		      (VP (VV 有)
+			  (VP (ADVP-WH (AD 多))
+			      (VP (VA 严重)))))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="2">
+	背 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

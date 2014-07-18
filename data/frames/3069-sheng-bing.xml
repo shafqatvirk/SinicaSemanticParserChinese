@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 生病 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people sick"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PU ‘)
+	      (NP-PN-SBJ (NR 巴国甫))
+	      (VP (IP-ADV (NP-SBJ (NN 小孩))
+			  (VP (VV 生病)))
+		  (ADVP (AD 急))
+		  (VP (VV 需)
+		      (VP (VV 用)
+			  (NP-OBJ (NN 钱)))))) 
+	  </parse>
+	  <arg n="0">
+	  小孩 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

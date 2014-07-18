@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 携带 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity taken along"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 十一月)
+		      (NT 十四日)
+		      (NT 中午))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 郭辉))
+	      (VP (VP (VV 携带)
+		      (NP-OBJ (NN 尖刀)))
+		  (PU ，)
+		  (VP (VV 来到)
+		      (NP-PN-OBJ (NR 龙河路)
+				 (NN 邮政)
+				 (NN 储蓄所)))
+		  (PU ，)
+		  (VP (VV 见)
+		      (NP-OBJ (NP-APP (ADJP (JJ 女))
+				      (NP (NN 营业员)))
+			      (NP-PN (NR 张丽)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 正))
+			      (VP (VV 准备)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 关门)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 便))
+		      (VP (VP (VV 趁)
+			      (NP-OBJ (PN 其))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 不备))))
+			  (PU ，)
+			  (VP (PP-MNR (P 用)
+				      (NP (NN 尖刀)))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-PN-OBJ (NR 张))
+					  (VP (VRD (VV 挟持)
+						   (VV 至))
+					      (LCP-OBJ (NP (NN 储蓄所)
+							   (NN 休息室))
+						       (LC 内))))))))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VP (BA 将)
+					   (IP-OBJ (NP-SBJ (DNP (NP-PN (NR 张))
+								(DEG 的))
+							   (NP (NN 手)
+							       (NN 脚)))
+						   (VP (VV 捆绑))))
+				       (CC 并)
+				       (VP (VV 蒙面))
+				       (PU 、)
+				       (VP (VV 堵嘴))))
+			       (LC 后))
+		      (PU ，)
+		      (VP (VV 抢劫)
+			  (NP-OBJ (DNP (NP (NN 储蓄所))
+				       (DEG 的))
+				  (NP (NN 营业款)))
+			  (NP-EXT (QP (CD 五千多)
+				      (CLP (M 元)))
+				  (NP (NN 人民币))))))) 
+	  </parse>
+	  <arg n="0">
+	  郭辉 
+	  </arg>
+	  <arg n="1">
+	  尖刀 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  十一月 十四日 中午 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 便于)
+		  (IP-OBJ (NP-SBJ (NN 持证人))
+			  (VP (ADVP (AD 随身))
+			      (VP (VV 携带)))))) 
+	  </parse>
+	  <arg n="0">
+	  持证人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随身 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

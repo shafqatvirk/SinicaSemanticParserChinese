@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 趋於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 has a tendency towards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (NP (NT 过去))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 长))
+					  (VP (VV 达)
+					      (QP-OBJ (CD 四十)
+						      (CLP (M 年))))))
+				  (DEC 的)))
+			  (NP (NN 戒严)
+			      (NN 时期))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 台湾))
+			   (DEG 的))
+		      (NP (NN 电影)
+			  (NN 政策)))
+	      (VP (ADVP (AD 其实))
+		  (VP (VV 趋於)
+		      (NP-OBJ (NN 保守))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 的 电影 政策 
+	  </arg>
+	  <arg n="1">
+	  保守 
+	  </arg>
+	  <arg n="m" f="adv">
+	  其实 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 过去 *OP* *T*-1 长 达 四十 年 的 戒严 时期 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

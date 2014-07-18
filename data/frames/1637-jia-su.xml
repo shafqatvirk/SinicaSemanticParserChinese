@@ -1,0 +1,125 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加速 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="accelerator"/>
+      <role argnum="1" argrole="activity accelerated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 外资))
+		      (VP (ADVP (AD 迅速))
+			  (VP (VV 增加))))
+	      (PU ，)
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (ADJP (JJ 相当))
+				   (NP (NN 程度)))
+			       (LC 上)))
+		  (VP (VP (VV 弥补)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 江苏省))
+					   (NP (NN 农业)
+					       (NN 投入)))
+				       (DEG 的))
+				  (NP (NN 不足))))
+		      (PU ，)
+		      (VP (VV 加速)
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (NN 农业)
+					   (NN 资源))
+				       (DEG 的))
+				  (NP (NN 开发)
+				      (NN 利用))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  外资 迅速 增加 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  农业 资源 的 开发 利用 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP (NP-PN (NR 东亚))
+				   (NP (NN 首脑)))
+			       (ADJP (JJ 非正式))
+			       (NP (NN 会晤)))
+			   (DEG 的))
+		      (NP (NN 举行)))
+	      (VP (PP (P 对)
+		      (IP (NP-SBJ (-NONE- *pro*))
+			  (VP (VP (VV 推动)
+				  (NP-OBJ (DNP (LCP (NP (DP (DT 各))
+							(NP (NN 国)))
+						    (LC 之间))
+					       (DEG 的))
+					  (NP (NN 合作))))
+			      (PU ，)
+			      (VP (VV 维护)
+				  (NP-OBJ (NP (NN 地区)
+					      (CC 和)
+					      (NN 全球))
+					  (NP (NN 安全))))
+			      (PU ，)
+			      (VP (VV 加速)
+				  (IP-OBJ (NP-SBJ (NN 世界))
+					  (VP (PP-DIR (P 向)
+						      (NP (NN 多极化)))
+					      (VP (VV 发展)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  世界 向 多极化 发展 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九八年))
+	      (PU ，)
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (NN 中国人))
+				  (VP (VV 推进)
+				      (IP-OBJ (NP-SBJ (NN 祖国))
+					      (VP (ADVP (AD 和平))
+						  (VP (VV 统一))))))
+			      (DEC 的))
+		      (NP (NN 进程)))
+	      (VP (VV 继续)
+		  (VP (VV 加速)))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  一九九八年 
+	  </arg>
+	  <arg n="1">
+	  中国人 推进 祖国 和平 统一 的 进程 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

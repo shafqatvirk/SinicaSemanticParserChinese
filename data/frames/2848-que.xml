@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 确 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing clarified"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (NP (NN 地方)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-DIR (P 从)
+				      (NP (QP (CD 局部))
+					  (NP (NN 利益))))
+			      (VP (VV 出发))))
+		  (PU ，)
+		  (PP-MNR (P 通过)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 确)
+				      (NP-OBJ (NN 权)))
+				  (VP (VV 发)
+				      (NP-OBJ (NN 证))))))
+		  (VP (VV 蚕食)
+		      (NP-OBJ (NN 重点)
+			      (NN 林区))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  权 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

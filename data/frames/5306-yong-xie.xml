@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 用心 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 pays attention to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 如果))
+			(VP (VV 用心)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 体会))))))
+	    (PU ，)
+	    (NP-SBJ (NN 海内外)
+		    (NN 同胞))
+	    (VP (VP (VV 应该))
+		(VP (ADVP (AD 都))
+		    (VP (VV 能)
+			(VP (VV 领悟)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (DP-SBJ (DT 这)
+							(QP (CD 一)
+							    (CLP (M 刻))))
+						(VP (MSP 所)
+						    (VP (VV 代表)
+							(NP-OBJ (-NONE- *T*-1)))))
+					    (DEC 的)))
+				    (ADJP (JJ 深远))
+				    (NP (NN 意义))
+				    (PRN (PU ——)
+					 (IP (IP (NP-SBJ (NN 威权)
+							 (CC 和)
+							 (NN 武力))
+						 (VP (ADVP (AD 只))
+						     (VP (VV 能)
+							 (VP (VV 让)
+							     (NP-OBJ (NN 人))
+							     (IP (NP-SBJ (-NONE- *PRO*))
+								 (VP (ADVP (AD 一时))
+								     (VP (VV 屈服))))))))
+					     (PU ，)
+					     (IP (NP-SBJ (NN 民主)
+							 (NN 自由))
+						 (VP (ADVP (AD 才))
+						     (VP (VC 是)
+							 (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+								     (CP (IP (NP-SBJ (-NONE- *T*-2))
+									     (VP (VV 永垂不朽)))
+									 (DEC 的)))
+								 (NP (NN 价值)))))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*PRO* 体会 
+	</arg>
+	<arg n="m" f="dis">
+	如果 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

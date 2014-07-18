@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 找来 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 finds and gets"/>
+    <role argnum="2" argrole="thing arg0 gets arg1 to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VV 找来)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (PP-LOC (P 在)
+						(NP-PN (NR 美国)
+						       (NR 休斯)
+						       (NN 公司)))
+					(VP (VV 任职))))
+				(DEC 的)))
+			(NP-PN (NR 黑幼龙)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VSB (VV 回国)
+				 (VV 帮忙)))
+			(PU ，)
+			(VP (VV 协助)
+			    (NP-OBJ (NN 行政)
+				    (NN 事务))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 在 美国 休斯 公司 任职 的 黑幼龙 
+	</arg>
+	<arg n="2">
+	*PRO* 回国 帮忙 ， 协助 行政 事务 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-PN-SBJ (NR 宋楚瑜))
+		(VP (VV 找来)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (CC 既)
+					    (VP (VE 无)
+						(NP-OBJ (NN 财力)))
+					    (CC 又)
+					    (VP (VE 无)
+						(NP-OBJ (NN 组织)
+							(NN 动员力)))))
+				    (DEC 的)))
+			    (NP (NN 政坛)
+				(NN 新手))))) 
+	</parse>
+	<arg n="0">
+	宋楚瑜 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 既 无 财力 又 无 组织 动员力 的 政坛 新手 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

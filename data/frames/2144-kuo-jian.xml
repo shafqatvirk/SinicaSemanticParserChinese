@@ -1,0 +1,151 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扩建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing expanded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 几)
+			   (CLP (M 年)))
+		       (LC 来))
+	      (PU ，)
+	      (NP-SBJ (NN 开发区))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP (CP (WHNP-2 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *T*-2))
+						   (VP (VV 原有)))
+					       (DEC 的)))
+				       (QP (CD 两)
+					   (CLP (M 个)))
+				       (NP (QP (CD 三千)
+					       (CLP (M 吨)))
+					   (NP (NN 级)))
+				       (NP (NN 泊位)))
+				   (NP (NN 基础)))
+			       (LC 上)))
+		  (PU ，)
+		  (VP (VV 扩建)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 数)
+				  (CLP (M 个)))
+			      (DNP (NP (NP (QP (CD 一万)
+					       (CLP (M 吨)))
+					   (NP (NN 级)))
+				       (PU 、)
+				       (NP (QP (CD 二万)
+					       (CLP (M 吨)))
+					   (NP (NN 级)))
+				       (PU 、)
+				       (NP (QP (CD 三万)
+					       (CLP (M 吨)))
+					   (NP (NN 级)))
+				       (CC 和)
+				       (NP (QP (CD 五万)
+					       (CLP (M 吨)))
+					   (NP (NN 级))))
+				   (DEG 的))
+			      (NP (NN 泊位)))))) 
+	  </parse>
+	  <arg n="0">
+	  开发区 
+	  </arg>
+	  <arg n="1">
+	  数 个 一万 吨 级 、 二万 吨 级 、 三万 吨 级 和 五万 吨 级 的 泊位 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *OP* *T*-2 原有 的 两 个 三千 吨 级 泊位 基础 上 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  几 年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing expanded"/>
+      <role argnum="2" argrole="thing expanded into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 海拉尔)
+			 (NN 飞机场))
+	      (VP (VRD (VV 扩建)
+		       (VV 成为))
+		  (NP-OBJ (NN 国际)
+			  (NN 航空港)))) 
+	  </parse>
+	  <arg n="1">
+	  海拉尔 飞机场 
+	  </arg>
+	  <arg n="2">
+	  国际 航空港 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing expanded"/>
+      <role argnum="2" argrole="original level"/>
+      <role argnum="3" argrole="level expanded to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 自)
+		      (LCP (IP (NP-TMP (NT １９７９年))
+			       (NP-SBJ (QP (OD 第一)
+					   (CLP (M 段)))
+				       (DNP (QP (CD ２５)
+						(CLP (M 公里)))
+					    (DEG 的))
+				       (NP (NN 干线)))
+			       (VP (VV 投入)
+				   (NP-OBJ (NN 运行))))
+			   (LC 以来)))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 地铁)
+			  (NN 运行))
+		      (NP (NN 里程)))
+	      (VP (ADVP (AD 已))
+		  (VP (VRD (VV 扩建)
+			   (VV 至))
+		      (QP-OBJ (CD １２０)
+			      (CLP (M 公里)))))) 
+	  </parse>
+	  <arg n="1">
+	  地铁 运行 里程 
+	  </arg>
+	  <arg n="3">
+	  １２０ 公里 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 １９７９年 第一 段 ２５ 公里 的 干线 投入 运行 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

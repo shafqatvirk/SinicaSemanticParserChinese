@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 慰问 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 gives regards to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (NP (NN 平日))
+		     (LC 里))
+	    (PU ，)
+	    (NP-TPC (ADVP (AD 不论))
+		    (NP (NN 喜事)
+			(CC 或)
+			(NN 丧事)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 都))
+		(VP (VV 要)
+		    (VP (ADVP (AD 互相))
+			(VP (VV 祝贺)
+			    (CC 或)
+			    (VV 慰问)))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	互相 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<arg n="m" f="tpc">
+	不论 喜事 或 丧事 
+	</arg>
+	<arg n="m" f="tmp">
+	平日 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

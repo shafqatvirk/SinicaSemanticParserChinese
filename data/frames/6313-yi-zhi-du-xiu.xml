@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 一枝独秀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (QP (CD 一)
+				 (CLP (M 片)))
+			     (IP-APP (NP-SBJ (-NONE- *PRO*))
+				     (VP (ADVP (AD 不))
+					 (VP (VA 景气))))
+			     (NP (NN 声)))
+			 (LC 中)))
+	    (PU ，)
+	    (NP-SBJ (NN 健身业))
+	    (VP (ADVP (AD 几乎))
+		(VP (VV 一枝独秀)))) 
+	</parse>
+	<arg n="0">
+	健身业 
+	</arg>
+	<arg n="m" f="adv">
+	几乎 
+	</arg>
+	<arg n="m" f="loc">
+	在 一 片 *PRO* 不 景气 声 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

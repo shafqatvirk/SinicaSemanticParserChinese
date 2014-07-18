@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 滚到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 rolls to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 十三日))
+	    (NP-TPC (DNP (NP (QP (OD 第三))
+			     (NP (NN 回合)))
+			 (DEG 的))
+		    (QP (OD 第十六))
+		    (NP (NN 洞)))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (NN 球))
+		    (VP (ADVP (CS 虽))
+			(VP (VV 滚到)
+			    (NP-OBJ (NN 树区)
+				    (NN 长草堆)))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 伍兹))
+	    (VP (VP (ADVP (AD 并))
+		    (ADVP (AD 不))
+		    (VP (VV 采用)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (BA 将)
+						    (IP-OBJ (NP-SBJ (NN 球))
+							    (VP (VV 拨回)
+								(NP-OBJ (NN 球道)))))
+						(VP (MSP 以)
+						    (VP (VV 损失)
+							(QP-OBJ (CD 一)
+								(CLP (M 杆)))))))
+					(DEC 的))
+				(NP (NN 作法)))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 奋力))
+		    (PP-DIR (P 从)
+			    (NP (NN 树区)))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (NN 球))
+				(VP (ADVP (AD 硬))
+				    (VP (VV 敲上)
+					(NP-OBJ (NN 果岭))))))))) 
+	</parse>
+	<arg n="0">
+	球 
+	</arg>
+	<arg n="1">
+	树区 长草堆 
+	</arg>
+	<arg n="m" f="adv">
+	虽 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

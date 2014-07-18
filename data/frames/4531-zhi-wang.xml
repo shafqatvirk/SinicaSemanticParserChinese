@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 hopes for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 欧佩克))
+		      (NP (NN 人士)))
+	      (VP (VV 指望)
+		  (IP-OBJ (NP-SBJ (NP (DP (DT 该))
+				      (NP (NN 组织)))
+				  (NP (NT 明年)
+				      (NT ３月))
+				  (NP (NN 部长)
+				      (NN 会议)))
+			  (VP (VV 能)
+			      (VP (VV 作出)
+				  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 稳定)
+							  (NP-OBJ (NN 油价))))
+						  (DEC 的))
+					  (ADJP (JJ 新))
+					  (NP (NN 决定)))))))) 
+	  </parse>
+	  <arg n="0">
+	  欧佩克 人士 
+	  </arg>
+	  <arg n="1">
+	  该 组织 明年 ３月 部长 会议 能 作出 *PRO* 稳定 油价 的 新 决定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

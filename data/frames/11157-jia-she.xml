@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 假设 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 presupposes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 男性)
+		    (NN 保养品))
+	    (VP (ADVP (AD 都))
+		(VP (VV 假设)
+		    (IP-OBJ (IP (NP-SBJ (NN 男生)
+					(NN 皮肤))
+				(VP (ADVP (AD 容易))
+				    (VP (VV 出油))))
+			    (PU 、)
+			    (IP (NP-SBJ (NN 角质层))
+				(VP (ADVP (AD 太))
+				    (VP (VA 厚)))))))) 
+	</parse>
+	<arg n="0">
+	男性 保养品 
+	</arg>
+	<arg n="1">
+	男生 皮肤 容易 出油 、 角质层 太 厚 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

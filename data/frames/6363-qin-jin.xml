@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 亲近 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is close to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (ADVP (AD 也))
+		(VP (VV 要)
+		    (VP (PP (P 像)
+			    (NP (PN 他们)))
+			(ADVP (AD 拼命))
+			(PP-DIR (P 由)
+				(LCP (NP (NN 图像)
+					 (CC 与)
+					 (NN 记忆))
+				     (LC 中)))
+			(VP (VV 寻找)
+			    (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-PN-SBJ (NN 淡水))
+						    (VP (ADVP (AD 曾))
+							(VP (VE 有)
+							    (NP-OBJ (-NONE- *T*-1)))))
+						(DEC 的)))
+					(NP (NN 古朴)))
+				    (PU 、)
+				    (NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						    (VP (PP (P 与)
+							    (NP (NN 自然)))
+							(VP (VV 亲近))))
+						(DEC 的))
+					(NP (NN 欢乐))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	与 自然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

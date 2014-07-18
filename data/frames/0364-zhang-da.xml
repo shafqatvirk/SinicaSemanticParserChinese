@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 长大 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-HLN (NP-PN-SBJ (NR 丁豪))
+          (VP (VV 成为)
+              (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                          (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                  (VP (NP-LOC (NP-PN (NR 中国))
+                                              (NP (NN 孤儿院)))
+                                      (VP (VV 长大))))
+                              (DEC 的)))
+                      (QP (OD 第一)
+                          (CLP (M 个)))
+                      (NP (NN 残疾人)
+                          (NN 大学生))))))
+	</parse>
+	<arg n="0"> (*T*-1)->(第一个残疾人大学生) </arg>
+	<arg n="M" f="LOC"> 中国 孤儿院 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吝於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is not generous in giving/doing"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(CP-Q (ADVP (AD 而))
+	      (PP-TMP (P 在)
+		      (LCP (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *T*-1))
+						   (VP (VV 抓)
+						       (NP-OBJ (NN 虫))))))
+				       (NP (NN 尖兵们)))
+			       (VP (ADVP (AD 默默))
+				   (VP (VV 付出))))
+			   (LC 之际)))
+	      (PU ，)
+	      (NP-SBJ (NN 旁人))
+	      (VP (ADVP (AD 是否))
+		  (ADVP (AD 也))
+		  (VP (VV 能)
+		      (VP (ADVP (AD 不))
+			  (VP (VV 吝於)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 多))
+				      (VP (VV 给)
+					  (NP-OBJ (QP (CLP (M 些)))
+						  (NP (NN 掌声))))))))))
+	      (SP 呢)
+	      (PU ？)) 
+	</parse>
+	<arg n="0">
+	旁人 
+	</arg>
+	<arg n="1">
+	*PRO* 多 给 些 掌声 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	是否 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *OP* *T*-1 抓 虫 尖兵们 默默 付出 之际 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开支 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="spender"/>
+      <role argnum="1" argrole="money spent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (IP (NP-TMP (NT 四月)
+			    (NT 四日))
+		    (PU ，)
+		    (NP-SBJ (NN 县政府)
+			    (NN 办公室))
+		    (VP (VP (PP-MNR (P 用)
+				    (NP (DP (DT 此))
+					(NP (NN 款))))
+			    (VP (VV 购回)
+				(NP-OBJ (NP-PN (NR 桑塔纳))
+					(NP (QP (CD ２０００))
+					    (NP (NN 型)))
+					(NP (NN 轿车)))
+				(QP-EXT (CD 一)
+					(CLP (M 辆)))))
+			(PU ，)
+			(VP (ADVP (AD 合计))
+			    (VP (VV 开支)
+				(QP-OBJ (CD 十九点四二万)
+					(CLP (M 元)))))))
+		(PU ，)
+		(IP (NP-SBJ (NP (PN 此))
+			    (NP (NN 车)))
+		    (VP (ADVP (AD 相对))
+			(ADVP (AD 固定))
+			(PP-BNF (P 给)
+				(NP-PN (NR 崔广华)))
+			(VP (VV 使用))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  县政府 办公室 
+	  </arg>
+	  <arg n="1">
+	  十九点四二万 元 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  四月 四日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="builder"/>
+      <role argnum="1" argrole="project"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 中国))
+		  (VP (VV 筹建)
+		      (NP-OBJ (QP (CD 五)
+				  (CLP (M 家)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (NP (NN 保险)
+				  (NN 公司))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  五 家 *OP* *T*-1 新 的 保险 公司 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 经)
+		  (IP (NP-PN-SBJ (NR 中国)
+				 (NN 人民)
+				 (NN 银行))
+		      (VP (VV 批准))))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NP-PN (NR 泰康))
+				     (NP (NN 人寿)
+					 (NN 保险))
+				     (NP (NN 股份))
+				     (ADJP (JJ 有限))
+				     (NP (NN 公司)))
+			      (ETC 等))
+		      (QP (CD 五)
+			  (CLP (M 家)))
+		      (NP (NN 保险)
+			  (NN 公司)))
+	      (VP (ADVP (AD 正在))
+		  (ADVP (AD 紧张))
+		  (VP (VV 筹建)
+		      (AS 中)))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  泰康 人寿 保险 股份 有限 公司 等 五 家 保险 公司 
+	  </arg>
+	  <arg n="m" f="adv">
+	  经 中国 人民 银行 批准 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  紧张 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

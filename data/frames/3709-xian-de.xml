@@ -1,0 +1,83 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 显得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="state arg0 appears to be in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP-TMP (AD 这时))
+	      (NP-PN-SBJ (NR ＣＩＰＭ))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *pro*))
+			  (VP (PP-DIR (P 对)
+				      (NP (CP (WHNP-3 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-3))
+						      (VP (VV 缺乏)
+							  (NP-OBJ (NN 经验))))
+						  (DEC 的)))
+					  (NP (NN 中方)
+					      (NN 管理)
+					      (NN 人员))))
+			      (VP (MSP 来)
+				  (VP (VV 说)))))
+		  (VP (VV 显得)
+		      (VP (ADVP (AD 尤为))
+			  (VP (VA 重要)))))) 
+	  </parse>
+	  <arg n="0">
+	  ＣＩＰＭ 
+	  </arg>
+	  <arg n="1">
+	  尤为 重要 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *pro* 对 *OP* *T*-3 缺乏 经验 的 中方 管理 人员 来 说 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 此后))
+		  (ADVP (AD 愈来愈))
+		  (VP (VV 显得)
+		      (IP-OBJ (NP-SBJ (NN 体力))
+			      (VP (VV 不支)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  体力 不支 
+	  </arg>
+	  <arg n="m" f="adv">
+	  愈来愈 
+	  </arg>
+	  <arg n="m" f="adv">
+	  此后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

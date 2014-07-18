@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拖垮 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP (AD 又))
+		    (VP (VE 有)
+			(IP-OBJ (NP-SBJ-3 (QP (CD 多少))
+					  (NP (NN 企业)))
+				(VP (VV 能)
+				    (VP (ADVP (AD 不))
+					(VP (SB 被)
+					    (VP (VV 拖垮)
+						(NP-OBJ (-NONE- *-3)))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *-3 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 力邀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 invites"/>
+    <role argnum="2" argrole="thing arg1 is invited to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (DNP (NP (NN 邵族))
+			     (DEG 的))
+			(NP (NN 田野)
+			    (NN 调查)))
+		    (NP (NN 伙伴)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 力邀)
+		    (NP-OBJ (PN 他))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 重))
+			    (VP (VV 回)
+				(NP-OBJ (DNP (NP (NN 田野)
+						 (NN 调查))
+					     (DEG 的))
+					(NP (NN 行列))))))))) 
+	</parse>
+	<arg n="0">
+	邵族 的 田野 调查 伙伴 
+	</arg>
+	<arg n="1">
+	他 
+	</arg>
+	<arg n="2">
+	*PRO* 重 回 田野 调查 的 行列 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

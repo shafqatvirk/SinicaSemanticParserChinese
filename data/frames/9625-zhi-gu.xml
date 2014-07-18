@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 桎梏 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NN 广告)
+		      (NN 文案))
+	      (VP (VV 透露)
+		  (AS 了)
+		  (IP-OBJ (NP-APP (DNP (NP (CP (WHNP-3 (-NONE- *OP*))
+					       (IP (NP-SBJ (-NONE- *T*-3))
+						   (VP (VV 戴)
+						       (NP-OBJ (NN 首饰)))))
+					   (NP (NN 男人)))
+				       (DEG 的))
+				  (NP (NN 心情)))
+			  (PU ：)
+			  (IP (PU 「)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 紧紧))
+				      (VP (VV 吸引)
+					  (NP-OBJ (DNP (NP (NN 女人))
+						       (DEG 的))
+						  (NP (NN 目光))))))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (DVP (VP (VV 心甘情愿)))
+				      (VP (LB 受)
+					  (CP-OBJ (WHNP-4 (-NONE- *OP*))
+						  (IP (NP-OBJ (NN 男人))
+						      (VP (VV 桎梏)
+							  (NP-OBJ (-NONE- *T*-4))))))))
+			      (PU 」))))) 
+	  </parse>
+	  <arg n="0">
+	  男人 
+	  </arg>
+	  <arg n="1">
+	  *T*-4 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 大喊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 shouts"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 小))
+		    (NP (NN 市民)))
+	    (VP (VP (VV 打开)
+		    (NP-OBJ (NN 窗户)))
+		(VP (PP-DIR (P 对著)
+			    (NP (NN 夜空)))
+		    (VP (VV 大喊)
+			(IP-OBJ (NP-PN-SBJ (NR 中华)
+					   (NN 民国))
+				(VP (QP-PRD (CD 万)
+					    (CLP (M 岁))))))))) 
+	</parse>
+	<arg n="0">
+	小 市民 
+	</arg>
+	<arg n="1">
+	中华 民国 万 岁 
+	</arg>
+	<arg n="m" f="dir">
+	对著 夜空 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

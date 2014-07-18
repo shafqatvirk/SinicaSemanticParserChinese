@@ -1,0 +1,106 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 依靠 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="depender"/>
+      <role argnum="1" argrole="thing depended on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 介绍)))
+	      (PU ，)
+	      (NP-TMP (NT 过去))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 中国))
+		      (NP (NN 企业)))
+	      (VP (VP (ADVP (AD 单纯))
+		      (VP (VV 依靠)
+			  (NP-OBJ (NP (NN 政府))
+				  (NP (NN 指令性)
+				      (NN 计划)
+				      (CC 和)
+				      (NN 行政)
+				      (NN 手段)))))
+		  (VP (MSP 来)
+		      (VP (VV 应用)
+			  (NP-OBJ (ADJP (JJ 新))
+				  (NP (NN 技术))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  中国 企业 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  单纯 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  政府 指令性 计划 和 行政 手段 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (NP (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 新近))
+				      (PP-DIR (P 对)
+					      (NP (NP (NP-PN-APP (NR 北京)
+								 (PU 、)
+								 (NR 上海)
+								 (PU 、)
+								 (NR 天津)
+								 (PU 、)
+								 (NR 重庆)
+								 (PU 、)
+								 (NR 广州))
+						      (QP (CD 五))
+						      (NP (NN 城市)))
+						  (NP (NN 居民))))
+				      (VP (VV 进行)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (QP (CD 一)
+			  (CLP (M 项)))
+		      (NP (NN 调查))))
+	      (PU ，)
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 依靠)
+			  (IP-OBJ (NP-SBJ (NN 单位))
+				  (VP (VV 分)
+				      (NP-OBJ (NN 房))))))
+	      (VP (ADVP (AD 仍然))
+		  (VP (VC 是)
+		      (NP-PRD (DNP (NP (NP (QP (CD 五))
+					   (NP (NN 城市)))
+				       (NP (NN 居民)
+					   (NN 住房)))
+				   (DEG 的))
+			      (ADJP (JJ 主要))
+			      (NP (NN 途径)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  单位 分 房 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

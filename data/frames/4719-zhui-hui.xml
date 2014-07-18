@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 坠毁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 报道)))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 架)))
+		      (QP (CD Ｃ－１３０)
+			  (CLP (M 型)))
+		      (NP (NN 运输机)))
+	      (VP (NP-TMP (NT ２６日))
+		  (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (PP-DIR (P 从)
+					       (NP (DNP (NP (NP-PN (NR 安哥拉))
+							    (NP (NN 中部)))
+							(DEG 的))
+						   (NP-PN (NR 万博省))))
+				       (VP (VV 起飞)
+					   (QP-EXT (CD １０)
+						   (CLP (M 分钟))))))
+			       (LC 后)))
+		  (VP (VV 坠毁)))) 
+	  </parse>
+	  <arg n="0">
+	  这 架 Ｃ－１３０ 型 运输机 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 从 安哥拉 中部 的 万博省 起飞 １０ 分钟 后 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  ２６日 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 报道 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

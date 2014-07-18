@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挪让 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 moves to make room"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 艺术家) )
+	      (VP (CC 不仅)
+		  (VP (VV 要)
+		      (VP (PP-DIR (P 对)
+				  (NP (ADJP (JJ 古))
+				      (NP (NN 文字) )))
+			  (ADVP (AD 非常))
+			  (VP (VA 熟练))))
+		  (PU ，)
+		  (VP (ADVP (AD 同时))
+		      (VP (VV 要)
+			  (VP (VV 能)
+			      (VP (VP (BA 将)
+				      (IP-OBJ (NP-SBJ (NN 古文)
+						      (NN 篆字))
+					      (VP (VV 加以)
+						  (NP-OBJ (NN 伸缩)
+							  (NN 挪让) ))))
+				  (PU ，)
+				  (VP (DVP (VP (VA 巧妙)
+					       (VA 雅致))
+					   (DEV 地))
+				      (VP (VV 安排)
+					  (PP (P 在)
+					      (LCP (NP (QP (CD 一)
+							   (CLP (M 枚)))
+						       (CP (WHNP-2 (-NONE- *OP*))
+							   (CP (IP (NP-SBJ (-NONE- *T*-2))
+								   (VP (VA 小小)))
+							       (DEC 的)))
+						       (NP (NN 印石) ))
+						   (LC 之中))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  艺术家 
+	  </arg>
+	  <arg n="1">
+	  古文 篆字 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

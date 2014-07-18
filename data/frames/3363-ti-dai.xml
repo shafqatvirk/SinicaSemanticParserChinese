@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 替代 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="replacement"/>
+      <role argnum="1" argrole="entity replaced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (PP (P 对)
+					      (NP (NN 外)))
+					  (NP (NN 投资)))
+				  (VP (VV 替代)
+				      (NP-OBJ (ADJP (JJ 直接))
+					      (NP (NN 出口)))))
+			      (DEC 的))
+		      (NP (NN 比重)))
+	      (VP (ADVP (AD 正))
+		  (ADVP (AD 大幅))
+		  (VP (VV 上升)))) 
+	  </parse>
+	  <arg n="0">
+	  对 外 投资 
+	  </arg>
+	  <arg n="1">
+	  直接 出口 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NR 中国))
+			   (DEG 的))
+		      (NP (NN 观测)
+			  (NN 资料)))
+	      (VP (VC 是)
+		  (NP-PRD (LCP (NP (NN 国际)
+				   (NN 联测))
+			       (LC 中))
+			  (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-3))
+				      (VP (ADVP (AD 不))
+					  (VP (VV 可)
+					      (VP (VP (VV 缺少))
+						  (CC 或)
+						  (VP (VV 替代))))))
+				  (DEC 的)))
+			  (NP (NN 组成)
+			      (NN 部分))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-3 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

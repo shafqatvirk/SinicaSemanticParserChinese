@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抵 </id>
+    <frameset id="f1" edef="match">
+      <role argnum="0" argrole="thing compared"/>
+      <role argnum="1" argrole="thing compared to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 资))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 抵)
+		      (NP-OBJ (NN 债))))) 
+	  </parse>
+	  <arg n="0">
+	  资 
+	  </arg>
+	  <arg n="1">
+	  债 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="arrive at">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="destination"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 巴尔))
+			 (NP (NN 一行)))
+	      (VP (VP (VV 应)
+		      (NP-OBJ (NP-PN (NN 外交)
+				     (NN 学会))
+			      (NP (NN 邀请))))
+		  (VP (PP-TMP (P 于)
+			      (NP (NT 三十日)))
+		      (VP (VV 抵)
+			  (NP-PN-OBJ (NR 京)))))) 
+	  </parse>
+	  <arg n="0">
+	  巴尔 一行 
+	  </arg>
+	  <arg n="1">
+	  京 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 三十日 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 添加 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing added"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (DP (DT 所有))
+			   (CP (WHNP-1 (-NONE- *OP*))
+			       (CP (IP (NP-SBJ (-NONE- *T*-1))
+				       (VP (ADVP (AD 新近))
+					   (VP (VV 出厂))))
+				   (DEC 的)))
+			   (NP (NN 电脑)
+			       (NN 键盘)))
+		       (LC 上))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 添加)
+		      (AS 了)
+		      (NP-OBJ (NN 欧元)
+			      (NN 符号))))) 
+	  </parse>
+	  <arg n="2">
+	  所有 *OP* *T*-1 新近 出厂 的 电脑 键盘 上 
+	  </arg>
+	  <arg n="1">
+	  欧元 符号 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing added"/>
+      <role argnum="2" argrole="location added to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 研究)
+		      (NN 人员))
+	      (VP (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (NP (NN 丙肝)
+					  (NN 病毒))
+				      (CC 和)
+				      (NP (DNP (NP (NN 牛))
+					       (DEG 的))
+					  (NP (NN 乳铁蛋白))))
+			      (VP (VP (VRD (VV 添加)
+					   (VV 到))
+				      (LCP-OBJ (NP (NN 肝脏)
+						   (NN 细胞))
+					       (LC 中)))
+				  (VP (ADVP (AD 一同))
+				      (VP (VV 培养))))))
+		  (PU ，)
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (LCP-TMP (QP (CD ８)
+						    (CLP (M 日)))
+						(LC 后))
+				       (PP-DIR (P 对)
+					       (NP (NN 肝脏)
+						   (NN 细胞)))
+				       (VP (VV 进行)
+					   (NP-OBJ (NN 检查)))))
+			       (LC 时))
+		      (VP (VV 发现)
+			  (PU ，)
+			  (IP-OBJ (NP-SBJ (NN 肝脏)
+					  (NN 细胞))
+				  (VP (VV 没有)
+				      (VP (VV 受到)
+					  (NP-OBJ (NP (NN 丙肝)
+						      (NN 病毒))
+						  (NP (NN 感染)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  研究 人员 
+	  </arg>
+	  <arg n="1">
+	  丙肝 病毒 和 牛 的 乳铁蛋白 
+	  </arg>
+	  <arg n="2">
+	  肝脏 细胞 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 绑上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="thing arg0 binds arg1 with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 最後))
+		(VP (VP (VV 灵机一动))
+		    (PU ，)
+		    (VP (PP-MNR (P 以)
+				(NP (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-2))
+						(VP (VA 长长)))
+					    (DEC 的)))
+				    (NP (NN 丝线) )))
+			(VP (VV 绑上)
+			    (NP-OBJ (ADJP (JJ 铜))
+				    (NP (NN 钱) ))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	铜 钱 
+	</arg>
+	<arg n="2">
+	以 *OP* *T*-2 长长 的 丝线 
+	</arg>
+	<arg n="m" f="adv">
+	最後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

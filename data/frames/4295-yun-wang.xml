@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运往 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing transported"/>
+      <role argnum="2" argrole="goal"/>
+      <role argnum="3" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (DP (DT 这)
+				       (CLP (M 条)))
+				   (NP (NN 铁路)))
+			   (VP (VV 建成)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (ADVP (AD 将))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 一千万)
+					  (CLP (M 吨)))
+				      (NP (PU “)
+					  (NP (NN 三西))
+					  (PU ”)
+					  (PRN (PU （)
+					       (NP-PN (NR 山西)
+						      (PU 、)
+						      (NR 陕西)
+						      (PU 、)
+						      (NR 蒙西))
+					       (PU ）)))
+				      (ADJP (JJ 优质))
+				      (NP (NN 煤)))
+			      (VP (PP (P 经)
+				      (NP (PN 此)))
+				  (PP-DIR (P 从)
+					  (NP-PN (NR 天津港)))
+				  (VP (VP (VSB (VV 下海)
+					       (VV 出口)))
+				      (CC 或)
+				      (VP (VV 运往)
+					  (NP-OBJ (NP-PN (NR 中国))
+						  (NP (NN 南方)))))))))) 
+	  </parse>
+	  <arg n="1">
+	  一千万 吨 “ 三西 ” （ 山西 、 陕西 、 蒙西 ） 优质 煤 
+	  </arg>
+	  <arg n="2">
+	  中国 南方 
+	  </arg>
+	  <arg n="3">
+	  从 天津港 
+	  </arg>
+	  <arg n="m" f="adv">
+	  经 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

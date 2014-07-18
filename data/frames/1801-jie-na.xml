@@ -1,0 +1,115 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 接纳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="acceptor"/>
+      <role argnum="1" argrole="accepted entity"/>
+      <role argnum="2" argrole="status"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 拉美)
+			     (NN 一体化)
+			     (NN 协会))
+		      (NP (ADJP (JJ 常设))
+			  (NP (NN 政治)
+			      (NN 机构)))
+		      (NP (PU “)
+			  (NN 代表)
+			  (NN 委员会)
+			  (PU ”)))
+	      (VP (VP (NP-TMP (NT ８月)
+			      (NT ３１日))
+		      (VP (VV 举行)
+			  (NP-OBJ (ADJP (JJ 隆重))
+				  (NP (NN 仪式)))))
+		  (PU ，)
+		  (VP (VV 接纳)
+		      (NP-OBJ-PN (NR 中国))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 为)
+			      (NP-OBJ (NN 观察员国))))))) 
+	  </parse>
+	  <arg n="0">
+	  拉美 一体化 协会 常设 政治 机构 “ 代表 委员会 ” 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  中国 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 为 观察员国 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NN 记者))
+		  (VP (NP-TMP (DP (DT 此))
+			      (NP (NN 时)))
+		      (ADVP (AD 方))
+		      (VP (VV 恍然大悟))))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 意大利人))
+		  (VP (VP (VV 身处)
+			  (LCP-OBJ (NP (CP-APP (IP (NP-SBJ (NN 欧元))
+						   (VP (ADVP (AD 即将))
+						       (VP (VV 启动))))
+					       (DEC 的))
+				       (NP (NN 历史)
+					   (NN 变革)))
+				   (LC 之中)))
+		      (PU ，)
+		      (VP (VC 是)
+			  (VP (VV 要)
+			      (VP (VP (DVP (VP (VA 悄悄))
+					   (DEV 地))
+				      (VP (VV 感受)
+					  (NP-OBJ (DNP (NP (PN 它))
+						       (DEG 的))
+						  (NP (NN 到来)))))
+				  (PU ，)
+				  (VP (DVP (ADVP (AD 逐步))
+					   (DEV 地))
+				      (PP (P 与)
+					  (NP (PN 它)))
+				      (VP (VV 共处)))
+				  (PU ，)
+				  (VP (ADVP (AD 直))
+				      (VP (VV 到)
+					  (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (ADVP (AD 最后))
+						  (ADVP (AD 完全))
+						  (VP (VV 接纳)
+						      (NP-OBJ (PN 它))))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  最后 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  完全 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  它 
+	  </arg>
+	</example>
+      </frame>
+    </frameset> 
+  </verb>

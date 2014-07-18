@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 斗争 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 fights against"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (PP (P 同)
+			  (NP (NP-APP (NN 酗酒))
+			      (DP (DT 这)
+				  (QP (CD 一)))
+			      (ADJP (JJ 不良))
+			      (NP (NN 社会)
+				  (NN 现象))))
+		      (VP (VV 作)
+			  (NP-OBJ (NN 斗争))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  同 酗酒 这 一 不良 社会 现象 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

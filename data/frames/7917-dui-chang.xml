@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 对唱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people singing to each other"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-PN-SBJ (NR 马修))
+		(VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (LCP-TMP (NP (NT 八月))
+					      (LC 间))
+				     (VP (VV 来)
+					 (NP-OBJ (NR 台)))))
+			     (LC 时))
+		    (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (VP (VV 到)
+					 (NP-PN-OBJ (NR 新竹)
+						    (NR 尖石乡)))
+				     (VP (VV 录影))))
+			     (LC 时))
+		    (PP (P 与)
+			(NP (NP-PN (NN 泰雅族))
+			    (NP (NN 乡民))))
+		    (VP (VP (VV 开)
+			    (NP-OBJ-OBJ (NN 营火)
+					(NN 晚会)))
+			(VP (VV 对唱))))) 
+	</parse>
+	<arg n="0">
+	马修 
+	</arg>
+	<arg n="0" f="crd">
+	与 泰雅族 乡民 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 到 新竹 尖石乡 录影 时 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 八月 间 来 台 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

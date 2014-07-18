@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 投标 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="bidder"/>
+      <role argnum="1" argrole="thing bid entered for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 市民))
+	      (VP (IP-CND (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (CS 如))
+			      (VP (VV 欲)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 投标))))))
+		  (PU ，)
+		  (VP (VV 可)
+		      (VP (PP-MNR (P 透过)
+				  (NP (NP (LCP (NP (NN 公布)
+						   (NN 名单))
+					       (LC 上))
+					  (DP (DT 任何)
+					      (QP (CD 一)
+						  (CLP (M 名))))
+					  (NP (NN 市场)
+					      (NN 庄家)))
+				      (CC 或)
+				      (NP (ADJP (JJ 认可))
+					  (NP (NN 交易商)))))
+			  (VP (VV 进行)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

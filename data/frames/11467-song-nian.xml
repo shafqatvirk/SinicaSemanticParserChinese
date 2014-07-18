@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 颂念 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 recites"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PU 「)
+		    (NN 产业)
+		    (NN 升级)
+		    (PU 」))
+	    (PU ，)
+	    (VP (VC 是)
+		(NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (LCP-TMP (NP (NT 近年))
+					     (LC 来))
+				    (NP-SBJ (NP-PN (NR 台湾))
+					    (NP (NN 纺织)
+						(NN 业者)))
+				    (VP (NP-ADV (NN 人人))
+					(VP (VV 颂念)
+					    (NP-OBJ (-NONE- *T*-1)))))
+				(DEC 的)))
+			(NP (NN 口头禅))))) 
+	</parse>
+	<arg n="0">
+	台湾 纺织 业者 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	人人 
+	</arg>
+	<arg n="m" f="tmp">
+	近年 来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

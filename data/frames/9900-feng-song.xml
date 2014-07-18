@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 奉送 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="giver"/>
+      <role argnum="1" argrole="thing given as gift"/>
+      <role argnum="2" argrole="entity arg1 is given to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 美军))
+	      (VP (VV 想)
+		  (IP-OBJ (IP-ADV (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (CS 既然))
+				      (VP (VE 有)
+					  (IP-OBJ (NP-SBJ (NN 人))
+						  (VP (VV 要)
+						      (VP (VV 接收)))))))
+			  (PU ，)
+			  (NP-SBJ (PN 他们))
+			  (VP (ADVP (AD 也))
+			      (VP (VV 乐)
+				  (DER 得)
+				  (VP-EXT (ADVP (AD 大方))
+					  (VP (VV 奉送)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="m" f="adv">
+	  大方 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 对)
+				  (NP (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-2))
+						  (VP (VP (PP (P 从)
+							      (NP (NN 小)))
+							  (PP (P 与)
+							      (NP (NN 父母)))
+							  (VP (VV 无缘)))
+						      (PU ，)
+						      (VP (ADVP (AD 又))
+							  (VP (LB 被)
+							      (CP-OBJ (WHNP-1 (-NONE- *OP*))
+								      (IP (NP-SBJ (NN 亲人))
+									  (VP (VCD (VV 推来)
+										   (VV 推去))
+									      (NP-OBJ (-NONE- *T*-1)))))))))
+					      (DEC 的)))
+				      (NP-PN (NR 夏阳))))
+			  (VP (MSP 而)
+			      (VP (VV 言)))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NN 朋友们))
+			   (DEG 的))
+		      (NP (NN 真情))
+		      (NP (NN 相助)
+			  (CC 与)
+			  (NN 对待)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-3))
+				      (NP-SBJ (PN 他))
+				      (VP (AD 经常)
+					  (VP (VV 挂放)
+					      (PP (P 在)
+						  (LCP (NP (NN 心))
+						       (LC 上))))))
+				  (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  亲人 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

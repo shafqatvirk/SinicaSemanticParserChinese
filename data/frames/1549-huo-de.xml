@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 获得 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="receiver"/>
+      <role argnum="1" argrole="thing received"/>
+      <role argnum="2" argrole="received from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 还))
+		  (PP-DIR (P 从)
+			  (NP (NN 国外)))
+		  (VP (VV 获得)
+		      (NP-OBJ (NN 份额油))
+		      (QP-EXT (ADVP (AD 近))
+			      (QP (CD 百万)
+				  (CLP (M 吨))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  还 
+	  </arg>
+	  <arg n="2">
+	  从 国外 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  份额油 近 百万 吨 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (LCP-TMP (IP (NP-PN-SBJ (NR 伏明霞))
+			       (VP (VV 获得)
+				   (NP-OBJ (NN 女子)
+					   (NN 跳台)
+					   (NN 跳水)
+					   (NN 冠军))))
+			   (LC 后))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 苏联队))
+			  (NP (NN 教练)))
+		  (VP (ADVP (AD 热情))
+		      (PP-DIR (P 向)
+			      (NP (PN 她)))
+		      (VP (VV 祝贺)))
+		  (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  伏明霞 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  女子 跳台 跳水 冠军 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

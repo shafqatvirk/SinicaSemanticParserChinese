@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 愈合 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 伤痛))
+			   (DEG 之))
+		      (NP (NN 深)))
+	      (VP (ADVP (AD 至今))
+		  (ADVP (AD 未))
+		  (VP (VV 能)
+		      (VP (VV 愈合))))) 
+	  </parse>
+	  <arg n="0">
+	  伤痛 之 深 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  至今 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

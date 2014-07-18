@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 掀开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing opened up"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NP-PN (PU “)
+				     (NR 深业)
+				     (NN 控股)
+				     (PU ”))
+			      (CC 和)
+			      (NP-PN (PU “)
+				     (NR 深圳)
+				     (NN 高速)
+				     (PU ”)))
+		      (VP (VP (ADVP (AD 均))
+			      (VP (VV 获准)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-LOC (P 在)
+						  (NP-PN (NR 香港)
+							 (NN 联交所)))
+					  (VP (VV 上市)))))))
+		      (PU ，))
+	      (VP (PP-BNF (P 为)
+			  (NP (NP (NP-PN (NR-SHORT 深)
+					 (NR 港))
+				  (QP (CD 两))
+				  (NP (NN 地)))
+			      (NP (NN 证券)
+				  (NN 市场)
+				  (NN 合作))))
+		  (VP (VV 掀开)
+		      (QP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 新)))
+				      (DEC 的)))
+			      (QP (CD 一)
+				  (CLP (M 页))))))) 
+	  </parse>
+	  <arg n="0">
+	  “ 深业 控股 ” 和 “ 深圳 高速 ” 均 获准 *PRO* 在 香港 联交所 上市 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 新 的 一 页 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 深 港 两 地 证券 市场 合作 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,267 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通过 </id>
+    <frameset edef="pass by vote" id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 美国)
+			 (NN 国会))
+	      (VP (NP-TMP (NT 最近))
+		  (VP (VP (VV 通过)
+			  (AS 了)
+			  (NP (ADJP (JJ 州际))
+			      (NP (NN 银行法))))
+		      (PU ，)
+		      (VP (VV 允许)
+			  (NP-OBJ (NN 地方)
+				  (NN 银行))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 跨)
+				      (NP-OBJ (NN 州)))
+				  (VP (VV 经营)))))))) 
+	  </parse>
+	  <arg n="0">
+	  美国 国会 
+	  </arg>
+	  <arg n="M" f="TMP">
+	  最近 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  州际 银行法 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 联合国)
+			 (NN 安理会))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (SB 被)
+					      (VP (VV 通过))))
+				      (DEC 的)))
+			      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-DIR (P 对)
+						      (NP-PN (NR 伊拉克)))
+					      (VP (VV 动武))))
+				      (DEC 的))
+			      (QP (CD ６７８)
+				  (CLP (M 号)))
+			      (NN 决议)))
+		  (VP (VV 负责)))) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(*PRO*对伊拉克动武的６７８号决议) 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １９９１年)
+		      (NT １２月))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (NP-PN (NR 欧共体))
+						       (QP (OD 第４６)
+							   (CLP (M 届)))
+						       (NP (NN 首脑)
+							   (NN 会议)))
+						   (LC 上)))
+				      (VP (VV 通过))))
+			      (DEC 的)))
+		      (NP-PN-TTL (PU 《)
+				 (NR 马斯特里赫特)
+				 (NN 条约)
+				 (PU 》)))
+	      (VP (ADVP (AD 又))
+		  (PP-PRP (P 为)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 实现)
+				  (NP-OBJ (ADJP (JJ 单一))
+					  (NP (NN 货币))))))
+		  (VP (VV 规定)
+		      (AS 了)
+		      (NP-OBJ (NP (ADJP (JJ 具体))
+				  (NP (NN 条件)))
+			      (CC 和)
+			      (NP (NN 时间表)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-1)->(《马斯特里赫特条约》) 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 欧共体 第４６ 届 首脑 会议 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset edef="pass a location" id="f2">
+      <role argnum="0" argrole="passer"/>
+      <role argnum="1" argrole="place"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (ADVP (AD 仅))
+		      (QP (NP (NT 去年))
+			  (QP (CD 一)
+			      (CLP (M 年)))))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 通过)
+				      (NP-OBJ (NN 保税区)
+					      (NN 海关))))
+			      (DEC 的)))
+		      (NP (NN 进出口)
+			  (NN 贸易额)))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 达)
+		      (QP-OBJ (CD 三点六五亿)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  (*T*-1)->(进出口贸易额) 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  保税区海关 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但是))
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 边界)
+			  (NN 口岸)))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 只))
+		  (VP (VV 允许)
+		      (NP-OBJ (NP (QP (OD 第三))
+				  (NP (NN 国)))
+			      (NP (NN 旅游者)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 通过)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset edef="pass a test" id="f3">
+      <role argnum="0" argrole="passer"/>
+      <role argnum="1" argrole="test"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 此外))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NR 汕头)
+				     (NN 超声)
+				     (NN 仪器)
+				     (NN 研究所))
+			      (PU 、)
+			      (NP-PN (NR 汕头)
+				     (NN 超声)
+				     (NN 印制版)
+				     (NN 公司))
+			      (PU 、)
+			      (NP-PN (NR 汕头)
+				     (NN 经济)
+				     (NN 特区)
+				     (NN 自动化)
+				     (NN 电器)
+				     (NN 设备)
+				     (NN 总厂))
+			      (ETC 等))
+		      (QP (CD 一)
+			  (CLP (M 批)))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 分别))
+		  (VP (VV 通过)
+		      (NP-OBJ (DNP (NP (QP (NP-PN (FW ＩＳＯ))
+					   (QP (CD ９０００)
+					       (CLP (M 系列))))
+				       (NP (NN 质量)
+					   (NN 体系)))
+				   (DEG 的))
+			      (NP (NN 国际)
+				  (NN 认证)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  汕头 超声 仪器 研究所 、 汕头 超声 印制版 公司 、 汕头 经济 特区 自动化 电器 设备 总厂 等 一 批 企业 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  分别 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  ＩＳＯ ９０００ 系列 质量 体系 的 国际 认证 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 他))
+		      (NP (NN 药检)))
+	      (VP (ADVP (AD 没))
+		  (VP (VV 通过)))) 
+	  </parse>
+	  <arg n="1">
+	  他 药检 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  没 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

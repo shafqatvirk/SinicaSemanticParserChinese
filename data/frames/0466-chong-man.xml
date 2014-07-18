@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 充满 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="thing filled"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 西门子)
+			 (NN 公司))
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-LOC (P 在)
+					  (NP-PN (NR 中国)))
+				  (VP (VV 投资)))))
+		  (VP (VV 充满)
+		      (NP-OBJ (NN 信心))))) 
+	  </parse>
+	  <arg n="0">
+	  西门子 公司 	  	  
+	  </arg>
+	  <arg n="1">
+	  信心 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 历时)
+				      (NP-OBJ (QP (QP (CD 两)
+						      (CLP (M 个)))
+						  (QP (CD 多)))
+					      (NP (NN 小时)))))
+			      (DEC 的)))
+		      (NP (NN 开幕式)))
+	      (PU ，)
+	      (VP (VV 充满)
+		  (AS 了)
+		  (NP-OBJ (NN 新)
+			  (PU 、)
+			  (NN 奇)
+			  (PU 、)
+			  (NN 特)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 历时 两 个 多 小时 的 开幕式 	  	  
+	  </arg>
+	  <arg n="1">
+	  新 、 奇 、 特 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查明 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="investigator"/>
+    <role argnum="1" argrole="thing investigated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PU ”)
+      (NP-PN-SBJ (NR 田中真纪子))
+      (VP (ADVP (AD 还))
+          (VP (VV 建议)
+              (IP-OBJ (NP-SBJ-PN (NN 宇宙)
+                                 (NN 开发)
+                                 (NN 事业团))
+                      (VP (VP (VV 成立)
+                              (NP-OBJ (QP (CD 一)
+                                          (CLP (M 个)))
+                                      (NP (NN 检查)
+                                          (NN 小组))))
+                          (PU ，)
+                          (VP (ADVP (AD 彻底))
+                              (VP (VV 查明)
+                                  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                                              (CP (IP (NP-SBJ (NN 卫星))
+                                                      (VP (PP (-NONE- *T*-1))
+                                                          (VP (VPT (VV 进)
+                                                                   (AD 不)
+                                                                   (VV 了))
+                                                              (NP-OBJ (ADJP (JJ 同步))
+                                                                      (NP (NN 轨道))))))
+                                                  (DEC 的)))
+                                          (NP (NN 原因)))))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 宇宙 开发 事业团 </arg>
+	<arg n="M" f="ADV"> 彻底 </arg>
+	<V/>
+	<arg n="1"> *OP* 卫星 (*T*-1)->(原因) 进 不 了 同步 轨道 的 原因 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

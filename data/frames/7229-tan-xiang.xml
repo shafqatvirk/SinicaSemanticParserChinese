@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 探向 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 pokes out"/>
+    <role argnum="2" argrole="entity arg1 goes towards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 同时))
+	    (NP-PN-SBJ (NR 铼德))
+	    (VP (BA 将)
+		(IP-OBJ (NP-SBJ (NN 触角))
+			(VP (VV 探向)
+			    (NP-OBJ (DNP (LCP (NP (NN 通信)
+						  (NN 产业))
+					      (LC 中))
+					 (DEG 的))
+				    (NP (NN 光纤)
+					(NN 设备))))))) 
+	</parse>
+	<arg n="0">
+	铼德 
+	</arg>
+	<arg n="1">
+	触角 
+	</arg>
+	<arg n="2">
+	通信 产业 中 的 光纤 设备 
+	</arg>
+	<arg n="m" f="adv">
+	同时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,143 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 想像 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 imagines"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 很))
+		(VP (VA 难)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 想像)
+				(NP-OBJ (CP-APP (IP (NP-SBJ (PN 她))
+						    (VP (PP-LOC (P 在)
+								(NP (NN 拍片)
+								    (NN 现场)))
+							(VP (VV 发号施令))))
+						(DEC 的))
+					(NP (NN 样子)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	她 在 拍片 现场 发号施令 的 样子 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(CP-Q (IP (ADVP (AD 但))
+		  (NP-SBJ (PN 你))
+		  (VP (VV 可以)
+		      (VP (VV 想像))))
+	      (SP 吗)) 
+	</parse>
+	<arg n="0">
+	你 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 一般))
+		    (NP (NN 人)))
+	    (VP (ADVP (AD 大概))
+		(ADVP (AD 很))
+		(VP (VA 难)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 想像)
+				(IP-OBJ (NP-PN-SBJ (NR 台湾))
+					(VP (ADVP (AD 还))
+					    (VP (VE 有)
+						(NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+							    (CP (IP (NP-SBJ (-NONE- *T*-4))
+								    (VP (ADVP (AD 这麽))
+									(VP (VA 落後))))
+								(DEC 的)))
+							(NP (NN 地方))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	台湾 还 有 *OP* *T*-4 这麽 落後 的 地方 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 imagines"/>
+    <role argnum="2" argrole="entity arg1 is imagined to be"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 抓住)
+			    (NP-OBJ (DNP (NP (NN 人面))
+					 (DEG 的))
+				    (NP (NN 神韵))))))
+	    (PU ，)
+	    (NP-SBJ (PN 他))
+	    (VP (BA 把)
+		(IP-OBJ (NP-SBJ (PN 它))
+			(VP (VRD (VV 想像)
+				 (VV 成))
+			    (NP-OBJ (QP (CD 一)
+					(CLP (M 个)))
+				    (DNP (NP (NN 女人))
+					 (DEG 的))
+				    (NP (NN 半身))
+				    (NP (NN 头)
+					(NN 像))))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	它 
+	</arg>
+	<arg n="2">
+	一 个 女人 的 半身 头 像 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 抓住 人面 的 神韵 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

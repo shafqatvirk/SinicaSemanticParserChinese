@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 主控 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is in control of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 主控)
+				    (NP-OBJ (NN 媒体))))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(NP-PRD (DP (DT 这)
+			    (CLP (M 个)))
+			(NP (NN 资本)
+			    (NN 结构))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	媒体 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

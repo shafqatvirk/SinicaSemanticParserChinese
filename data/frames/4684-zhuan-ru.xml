@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing changed"/>
+      <role argnum="2" argrole="thing arg1 is changed into"/>
+      <role argnum="3" argrole="thing arg1 is changed from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	  <mapitem src="dir" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 一九九五年))
+		       (LC 底))
+	      (NP-SBJ (DP (DT 该))
+		      (NP (NN 计划)))
+	      (VP (PP-DIR (P 由)
+			  (NP (NN 论证)
+			      (NN 阶段)))
+		  (VP (VV 转入)
+		      (NP-OBJ (NN 实施)
+			      (NN 阶段))))) 
+	  </parse>
+	  <arg n="1">
+	  该 计划 
+	  </arg>
+	  <arg n="2">
+	  实施 阶段 
+	  </arg>
+	  <arg n="3">
+	  由 论证 阶段 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九五年 底 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (LCP-TMP (NP (NT 一九九四年))
+			   (LC 以来))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 银行)
+			      (NN 体制)
+			      (NN 改革)
+			      (NN 重点)))
+		  (VP (VV 转入)
+		      (NP-OBJ (NP (ADJP (JJ 国有))
+				  (NP (NN 专业)
+				      (NN 银行)))
+			      (NP (NN 商业)
+				  (NN 银行化))))) 
+	  </parse>
+	  <arg n="1">
+	  中国 银行 体制 改革 重点 
+	  </arg>
+	  <arg n="2">
+	  国有 专业 银行 商业 银行化 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九四年 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

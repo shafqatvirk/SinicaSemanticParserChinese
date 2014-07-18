@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 批判 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="criticizer"/>
+    <role argnum="1" argrole="entity arg0 criticizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NT 五四))
+	    (VP (ADVP (AD 因此))
+		(VP (VV 成为)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (NN 知识界))
+					(VP (NP-MNR (-NONE- *T*-1))
+					    (VP (VV 批判)
+						(NP-OBJ (NN 政府)))))
+				    (DEC 的)))
+			    (NP (NN 利器)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	政府 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (LCP-LOC (NP (NN 歌曲))
+			     (LC 中))
+		    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 批判)))
+			    (DEC 的))
+		    (NP (NN 形式)))
+	    (VP (ADVP (AD 也))
+		(VP (VV 引起)
+		    (NP-OBJ (NP (NN 市场))
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 广泛)))
+				    (DEC 的)))
+			    (NP (NN 回响)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

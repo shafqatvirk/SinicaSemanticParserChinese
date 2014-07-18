@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 判刑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person arg0 sentences"/>
+      <role argnum="2" argrole="sentence"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 唯))
+	      (PP-DIR (P 对)
+		      (IP (IP-SBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VP-FOC (VV 判刑))
+						      (VP (ADVP (AD 未))
+							  (VP (VV 确定))))))
+					  (NP (NN 者) ))
+				  (PU ，)
+				  (VP (ADVP (AD 就))
+				      (VP (VV 限制)
+					  (NP-OBJ (NN 参选)
+						  (NN 资格) ))))
+			  (PU ，)
+			  (VP (ADVP-WH (AD 是否))
+			      (VP (VV 剥夺)
+				  (NP-OBJ (NN 人民)
+					  (NN 参政权) )))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 认为)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VV 需)
+			      (VP (ADVP (AD 进一步))
+				  (VP (VV 商榷))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

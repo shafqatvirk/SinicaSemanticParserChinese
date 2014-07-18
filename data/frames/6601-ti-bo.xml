@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 提拨 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="funds arg0 appropriates"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 并))
+		(VP (VV 提拨)
+		    (QP-OBJ (CD 六百亿)
+			    (CLP (M 元)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 作为)
+			    (NP-OBJ (NN 赔偿)
+				    (NN 基金)))))
+		(PU ，)
+		(VP (VV 开始)
+		    (VP (VV 受理)
+			(NP-OBJ (NP (NN 受难者)
+				    (NN 家属))
+				(NP (NN 申请))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	六百亿 元 
+	</arg>
+	<arg n="m" f="adv">
+	并 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

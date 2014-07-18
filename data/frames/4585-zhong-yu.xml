@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 忠于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 is loyal to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 忠于)
+					  (NP-OBJ (NP-PN (NR 塞))
+						  (NP (NN 政府)))))
+				  (DEC 的)))
+			  (NP (NN 民兵)
+			      (NN 组织)))
+		  (VP (ADVP (AD 仍))
+		      (PP-LOC (P 在)
+			      (NP (DP (DT 该))
+				  (NP (NN 地区))))
+		      (ADVP (AD 坚持))
+		      (VP (VV 战斗)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  塞 政府 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

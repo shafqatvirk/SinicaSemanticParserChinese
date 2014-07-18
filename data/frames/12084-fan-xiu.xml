@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 翻修 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 remodels"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 房舍))
+	      (VP (ADVP (AD 也))
+		  (VP (VP (ADVP (AD 不))
+			  (VP (VV 能)
+			      (VP (PP-PRP (P 因)
+					  (IP (NP-SBJ (NN 人口))
+					      (VP (VV 增加))))
+				  (VP (MSP 而)
+				      (VP (VV 增建))))))
+		      (PU ，)
+		      (VP (ADVP (AD 只))
+			  (VP (VV 能)
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (DNP (ADJP (JJ 原有))
+							(DEG 的))
+						   (NP (NN 住宅)))
+					       (LC 上)))
+				  (VP (VV 做)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VA 小小)))
+						      (DEC 的)))
+					      (NP (NN 翻修)
+						  (CC 与)
+						  (NN 整新)))))))))) 
+	  </parse>
+	  <arg n="1">
+	  在 原有 的 住宅 上 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 小小 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

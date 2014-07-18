@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 去国 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person adsent from homeland"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (QP-TMP (NP-PN (NR 民国))
+					      (QP (OD 八十三)
+						  (CLP (M 年))))
+				      (PU ，)
+				      (PP-PRP (P 因)
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 倡导)
+						      (IP-OBJ (NP-PN-SBJ (NR 台湾))
+							      (VP (VA 独立))))))
+				      (VP (MSP 而)
+					  (VP (VV 走避)
+					      (NP-OBJ (NN 海外))))))
+			      (DEC 的)))
+		      (NP-APP (NN 政治)
+			      (NN 学者))
+		      (NP-PN (NR 彭明敏)))
+	      (VP (VP (VV 去国)
+		      (QP-OBJ (CD 三十)
+			      (CLP (M 年))))
+		  (VP (QP-ADV (OD 首)
+			      (CLP (M 次)))
+		      (VP (VV 踏上)
+			  (NP-PN-OBJ (NR 台湾)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 民国 八十三 年 ， 因 *PRO* 倡导 台湾 独立 而 走避 海外 的 政治 学者 彭明敏 
+	  </arg>
+	  <arg n="m" f="ext">
+	  三十 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

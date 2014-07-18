@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保外就医 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 未来))
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VV 犯)
+				(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					    (CP (IP (NP-TPC (-NONE- *T*-1))
+						    (NP-SBJ (ADJP (ADVP (AD 最))
+								  (ADJP (JJ 轻)))
+							    (NP (NN 本刑)))
+						    (VP (VC 为)
+							(NP-PRD (LCP (QP (CD 五)
+									 (CLP (M 年)))
+								     (LC 以上))
+								(ADJP (JJ 有期))
+								(NP (NN 徒刑)))))
+						(DEC 之)))
+					(NP (NN 重罪))))))
+		    (NP (NN 者)))
+	    (PU ，)
+	    (VP (PP-TMP (P 在)
+			(NP (CP (WHNP-3 (-NONE- *OP*))
+				(IP (NP-SBJ (-NONE- *pro*))
+				    (VP (NP-TMP (-NONE- *T*-3))
+					(VP (VP (VV 停止)
+						(NP-OBJ (NN 羁押)))
+					    (VP (VV 保外就医))))))
+			    (NP (NN 期间))))
+		(PU ，)
+		(IP-CND (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (CS 如))
+			    (VP (VP (VV 从事)
+				    (NP-OBJ (NP-APP (NN 选举)
+						    (ETC 等))
+					    (CP (WHNP-4 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-4))
+							(VP (PP (P 与)
+								(IP (NP-SBJ (-NONE- *PRO*))
+								    (VP (VV 保外就医))))
+							    (VP (VA 无关))))
+						    (DEC 之)))
+					    (NP (NN 活动))))
+				(CC 或)
+				(VP (ADVP (AD 已经))
+				    (VP (VV 回复)
+					(NP-OBJ (NN 健康)))))))
+		(PU ，)
+		(ADVP (AD 即))
+		(VP (VV 必须)
+		    (VP (ADVP (AD 重新))
+			(VP (VV 执行)
+			    (NP-OBJ (NN 羁押))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

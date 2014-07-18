@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发明 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="inventer"/>
+      <role argnum="1" argrole="thing invented"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 苏联))
+		  (VP (VV 发明)
+		      (NP-OBJ (ADJP (JJ 灭蚊))
+			      (ADJP (JJ 新))
+			      (NP (NN 方法))))) 
+	  </parse>
+	  <arg n="0">
+	  苏联 
+	  </arg>
+	  <arg n="1">
+	  灭蚊 新 方法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

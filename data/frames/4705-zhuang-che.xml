@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撞车 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="vehicle which collides"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (PU “)
+			  (NN 智能)
+			  (NN 撞车)
+			  (NN 传感器)
+			  (PU ”)))
+	      (VP (VP (VV 集)
+		      (NP-OBJ (NN 机电)
+			      (PU 、)
+			      (NN 电子)
+			      (PU 、)
+			      (NN 磁感应)
+			      (NN 传感))
+		      (PP-LOC (P 于)
+			      (NP (NN 一体))))
+		  (PU ，)
+		  (VP (PP-TMP (P 当)
+			      (LCP (IP (IP (NP-SBJ (-NONE- *pro*))
+					   (VP (VV 撞车)))
+				       (CC 或)
+				       (IP (NP-SBJ (NN 车体))
+					   (VP (VV 受到)
+					       (NP-OBJ (ADJP (JJ 剧烈))
+						       (NP (NN 冲击))))))
+				   (LC 时)))
+		      (PU ，)
+		      (PP-DIR (P 对)
+			      (NP (DNP (NP (NN 瞬间))
+				       (DEG 的))
+				  (NP (NN 撞车)
+				      (NN 速度)
+				      (CC 及)
+				      (NN 冲击力))))
+		      (VP (VV 具有)
+			  (NP-OBJ (NP (NP (PN 自我))
+				      (NP (NN 识别)))
+				  (NP (NN 能力))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

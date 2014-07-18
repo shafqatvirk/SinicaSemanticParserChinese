@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 颁 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="award giver"/>
+    <role argnum="1" argrole="prize"/>
+    <role argnum="2" argrole="award receiver"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-APP (NP-PN (NR 保))
+                      (NP (NN 总统)))
+              (NP-PN (NR 斯托扬诺夫)))
+      (VP (ADVP (AD 亲自))
+          (PP-BNF (P 为)
+                  (NP (ADJP (JJ 获奖))
+                      (NP (NN 运动员))))
+          (VP (VV 颁)
+              (AS 了)
+              (NP-OBJ (NN 奖))))))
+	</parse>
+	<arg n="0"> 保 总统 斯托扬诺夫 </arg>
+	<arg n="M" f="ADV"> 亲自 </arg>
+	<arg n="2"> 为 获奖 运动员 </arg>
+	<V/>
+	<arg n="1"> 奖 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>

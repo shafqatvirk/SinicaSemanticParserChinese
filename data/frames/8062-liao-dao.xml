@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 料到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 foresees"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 谁))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 没))
+		  (VP (VV 料到)
+		      (PU ，)
+		      (IP-OBJ (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 向来))
+						      (VP (VV 追随)
+							  (NP-PN-OBJ (NR 美国)))))
+					      (DEC 的)))
+				      (NP-PN (NR 台湾))
+				      (NP (NN 市场)))
+			      (PU ，)
+			      (NP-SBJ (NN 量贩)
+				      (NN 店))
+			      (VP (ADVP (AD 却))
+				  (PP-LGS (P 由)
+					  (NP (NP-PN (NR 欧洲))
+					      (NP (NN 业者))))
+				  (VP (VV 拔得头筹))))))) 
+	  </parse>
+	  <arg n="0">
+	  谁 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 向来 追随 美国 的 台湾 市场 ， 量贩 店 却 由 欧洲 业者 拔得头筹 
+	  </arg>
+	  <arg n="m" f="adv">
+	  没 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity pushed"/>
+      <role argnum="2" argrole="entity arg1 pushed away from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP-OBJ (NP-SBJ (QP (CD 数十))
+				  (NP (NN 人)))
+			  (VP (VP (ADVP (AD 一齐))
+				  (VP (VV 上前)))
+			      (VP (VV 准备)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (BA 将)
+					      (IP-OBJ (NP-SBJ (NN 客车))
+						      (VP (VV 推离)
+							  (NP-OBJ (NN 货车))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  客车 
+	  </arg>
+	  <arg n="2">
+	  货车 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

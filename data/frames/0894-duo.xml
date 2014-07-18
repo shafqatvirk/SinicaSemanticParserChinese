@@ -1,0 +1,118 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 多 </id>
+    <frameset id="f1" edef="add">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="thing added"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 菜地))
+		       (LC 里))
+	      (VP (VV 多)
+		  (AS 了)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VA 绿油油)))
+				  (DEC 的)))
+			  (NP (NN 西生菜)
+			      (PU 、)
+			      (NN 西芹菜)
+			      (PU 、)
+			      (NN 西花菜))))) 
+	  </parse>
+	  <arg n="0">
+	  菜地 里 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 绿油油 的 西生菜 、 西芹菜 、 西花菜 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="increase">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="range"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 出生)
+					   (QP-EXT (CD 一)
+						   (CLP (M 周)))))
+				   (LC 后))
+			  (PU ，)
+			  (NP-SBJ (DNP (NP (PN 他们))
+				       (DEG 的))
+				  (NP (NN 状况)))
+			  (VP (ADVP (AD 仍然))
+			      (VP (VA 良好)))))
+	      (PU ，)
+	      (ADVP (AD 那么))
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 存活)))
+			      (DEC 的))
+		      (NP (NN 希望)))
+	      (VP (ADVP (AD 就))
+		  (ADVP (AD 又))
+		  (VP (VA 多)
+		      (AS 了)
+		      (QP-EXT (CD 一)
+			      (CLP (M 分)))))
+	      (PU 。)
+	      (PU ”)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 存活 的 希望 	  
+	  </arg>
+	  <arg n="1">
+	  一 分 	  
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 *PRO* 出生 一 周 后 ， 他们 的 状况 仍然 良好 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 合资))
+		      (NP (NN 企业)))
+	      (VP (ADVP (AD 更))
+		  (VP (VA 多)))) 
+	  </parse>
+	  <arg n="0">
+	  合资 企业 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  更 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

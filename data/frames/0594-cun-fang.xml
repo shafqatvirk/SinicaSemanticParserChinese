@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 存放 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing placed"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHPP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (PP-LOC (-NONE- *T*-2))
+				  (VP (VP (VV 销售)
+					  (NP-OBJ (-NONE- *RNR*-1)))
+				      (CC 和)
+				      (VP (VV 存放)
+					  (NP-OBJ-1 (NN 烟火)
+						    (NN 产品))))))
+			  (DEC 的)))
+		  (NP (NN 房屋))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  烟火 产品 
+	  </arg>
+	  <arg n="2">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

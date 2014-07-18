@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挤 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 squeezes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 当然))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 做完)
+				   (NP-OBJ (NN 脸部)
+					   (NN 保养))))
+			   (LC 後))
+		  (PU ，)
+		  (ADVP (AD 更))
+		  (ADVP (AD 别))
+		  (VP (VV 忘)
+		      (AS 了)
+		      (PU ，)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 挤)
+				      (NP-OBJ (QP (CLP (M 点)))
+					      (NP (NN 男性))
+					      (NP (NN 腿部)
+						  (NN 按摩))
+					      (NP (NN 乳液))))
+				  (PU ，)
+				  (VP (ADVP (AD 努力))
+				      (VP (BA 将)
+					  (IP-OBJ (NP-SBJ (NN 小腿))
+						  (VP (VV 搓揉)
+						      (QP-ADV (CD 一)
+							      (CLP (M 番)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  点 男性 腿部 按摩 乳液 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 crams in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一)
+			  (CLP (M 个)))
+		      (NP (NN 教室)))
+	      (VP (NP-ADV (ADJP (ADVP (AD 最))
+				(ADJP (JJ 高)))
+			  (NP (NN 记录)))
+		  (VP (VV 挤)
+		      (AS 了)
+		      (NP-OBJ (QP (ADVP (AD 快))
+				  (QP (CD 八十)
+				      (CLP (M 位))))
+			      (NP (NN 同学)))))) 
+	  </parse>
+	  <arg n="0">
+	  快 八十 位 同学 
+	  </arg>
+	  <arg n="1">
+	  一 个 教室 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 高 记录 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

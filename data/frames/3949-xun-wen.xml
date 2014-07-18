@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 询问 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing asked about"/>
+      <role argnum="2" argrole="people asked"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 志愿者)
+		      (NN 工作部))
+	      (PP-TMP (P 自)
+		      (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (NP-TMP (NT 今年)
+					   (NT ６月份))
+				   (VP (VV 成立))))
+			   (LC 以来)))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一些))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 热心)
+				      (NP-OBJ (NN 社会)
+					      (NN 公益)
+					      (NN 活动))))
+			      (DEC 的)))
+		      (NP (NN 市民)))
+	      (VP (VP (ADVP (AD 纷纷))
+		      (VP (VP (VV 打)
+			      (NP-OBJ (NN 电话)))
+			  (CC 或)
+			  (VP (VV 寄来)
+			      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-TPC (-NONE- *T*-2))
+						  (NP-SBJ (NN 热情))
+						  (VP (VV 洋溢)))
+					      (DEC 的)))
+				      (NP (NN 信件))))))
+		  (PU ，)
+		  (VP (PP-DIR (P 向)
+			      (NP (NN 志愿者)
+				  (NN 工作部)))
+		      (VP (VV 询问)
+			  (NP-OBJ (DNP (NP (NN 九冬会))
+				       (DEG 的))
+				  (NP (NN 情况)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 要求)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 参加)
+				  (NP-OBJ (NN 志愿者)
+					  (NN 工作))))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 *OP* *T*-1 热心 社会 公益 活动 的 市民 
+	  </arg>
+	  <arg n="1">
+	  九冬会 的 情况 
+	  </arg>
+	  <arg n="2">
+	  向 志愿者 工作部 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  自 *PRO* 今年 ６月份 成立 以来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

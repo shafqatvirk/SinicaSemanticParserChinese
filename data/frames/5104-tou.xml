@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 透 </id>
+  <frameset id="f1" edef="show">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 shows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 紧))
+				    (VP (VV 抿))))
+			    (DEC 的)))
+		    (NP (NN 嘴角)))
+	    (VP (VV 透)
+		(AS 著)
+		(NP-OBJ (NP (QP (CD 几许))
+			    (NP (NN 坚毅) ))
+			(PU ，)
+			(NP (QP (CD 几许))
+			    (NP (NN 无奈) ))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 紧 抿 的 嘴角 
+	</arg>
+	<arg n="1">
+	几许 坚毅 ， 几许 无奈 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="thorough">
+    <role argnum="0" argrole=""/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (UCP (QP (CD 一)
+				  (CLP (M 分)))
+			      (NP (NN 钱) )
+			      (PU 、)
+			      (NP (QP (CD 五)
+				      (CLP (M 分)))
+				  (NP (NN 钱) ))
+			      (PU 、)
+			      (NP (QP (CD 十)
+				      (CLP (M 分)))
+				  (NP (NN 钱) ))
+			      (CC 和)
+			      (QP (QP (CD 两)
+				      (CLP (M 毛)))
+				  (QP (CD 五))))
+			 (DEG 的))
+		    (NP (NN 硬币) ))
+	    (VP (ADVP (AD 早))
+		(VP (SB 被)
+		    (VP (VV 数)
+			(AS 了)
+			(DER 个)
+			(VP-EXT (VA 透)))))) 
+	</parse>
+	<arg n="0">
+	
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

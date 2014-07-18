@@ -1,0 +1,131 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合 </id>
+    <frameset id="f1" edef="equal to">
+      <role argnum="0" argrole="thing A"/>
+      <role argnum="1" argrole="thing B"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-SBJ (CD 一)
+		      (CLP (M 埃居)))
+	      (VP (ADVP (AD 约))
+		  (VP (VV 合)
+		      (QP-OBJ (CD 一点二)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  一 埃居 	  
+	  </arg>
+	  <arg n="1">
+	  一点二 美元 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  约 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="condition, qualification, requirement, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+			       (IP (NP-SBJ (-NONE- *T*-1))
+				   (VP (VV 合)
+				       (NP-OBJ (NN 资格)))))
+			   (NP (NN 儿童)))
+		       (DEG 的))
+		  (NP (NN 居留权)
+		      (NN 资格))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="1">
+	  资格 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NN 基础)
+			  (NN 知识))
+		  (VP (ADVP (AD 不))
+		      (VP (VA 够))))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 结构))
+		  (VP (ADVP (AD 不))
+		      (VP (VA 合))))
+	      (PU ，)
+	      (IP (NP-SBJ (NN 层次))
+		  (VP (ADVP (AD 较))
+		      (VP (VA 低))))) 
+	  </parse>
+	  <arg n="1">
+	  结构 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="entity arg0 makes arg1 match"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (PU ，)
+	      (NP-SBJ (PN 他))
+	      (VP (VP (ADVP (AD 事先))
+		      (VP (VP (VV 剪)
+			      (AS 了)
+			      (NP-OBJ (QP (CD 许多))
+				      (NP (NN 纸模))))
+			  (VP (MSP 去)
+			      (VP (VV 合)))))
+		  (PU ，)
+		  (VP (MSP 以)
+		      (VP (VV 求)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 形似))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="m" f="adv">
+	  事先 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因此 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

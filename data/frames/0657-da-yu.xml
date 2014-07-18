@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 大於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing compared"/>
+      <role argnum="1" argrole="thing compared to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 合作))
+	      (VP (VV 大於)
+		  (NP-OBJ (NN 竞争)))) 
+	  </parse>
+	  <arg n="0">
+	  合作 
+	  </arg>
+	  <arg n="1">
+	  竞争 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

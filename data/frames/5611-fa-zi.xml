@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 发自 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 comes from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-SBJ (DNP (NP (PN 这样))
+				 (DEG 的))
+			    (NP (NN 动作)))
+		    (VP (ADVP (CS 若))
+			(VP (VC 是)
+			    (VP (VV 发自)
+				(NP-OBJ (DNP (NP (NN 内心))
+					     (DEG 的))
+					(NP (NN 诚恳)))))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP (NN 男性))
+			 (DEG 的))
+		    (NP (NN 魅力)))
+	    (VP (ADVP (AD 就))
+		(VP (VV 会)
+		    (VP (VRD (VV 显现)
+			     (VV 出来)))))) 
+	</parse>
+	<arg n="0">
+	这样 的 动作 
+	</arg>
+	<arg n="1">
+	内心 的 诚恳 
+	</arg>
+	<arg n="m" f="dis">
+	若 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

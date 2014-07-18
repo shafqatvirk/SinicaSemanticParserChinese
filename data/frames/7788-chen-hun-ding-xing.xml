@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 晨昏定省 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 attends to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NN 行动)
+			(NN 电话))
+		(VP (ADVP (AD 竟然))
+		    (VP (VV 有助於)
+			(NP-OBJ (PN 她))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-DIR (P 对)
+					(NP (NN 父母)))
+				(VP (PU 「)
+				    (VV 晨昏定省)
+				    (PU 」))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	对 父母 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

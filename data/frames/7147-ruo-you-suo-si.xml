@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 若有所思 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 坐)
+			(PP (P 在)
+			    (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+					 (CP (IP (NP-SBJ (-NONE- *T*-1))
+						 (VP (VP (VA 安静))
+						     (VP (ADVP (AD 不))
+							 (VP (VV 闻)
+							     (NP-OBJ (NN 人声))))))
+					     (DEC 的)))
+				     (NP (NN 研究室)))
+				 (LC 里)))))
+	    (PU ，)
+	    (NP-SBJ (NP-APP (NP (NP-PN (NR 政大))
+				(NP (NN 心理学系)))
+			    (NP (NN 教授)))
+		    (NP-PN (NR 李良哲)))
+	    (VP (VV 若有所思))) 
+	</parse>
+	<arg n="0">
+	政大 心理学系 教授 李良哲 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 坐 在 *OP* *T*-1 安静 不 闻 人声 的 研究室 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

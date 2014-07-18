@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 风行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="area arg0 is popular"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 跳蚤)
+		      (NN 市场))
+	      (VP (PP-LOC (P 在)
+			  (NP (NN 海外)))
+		  (ADVP (AD 甚为))
+		  (VP (VV 风行)))) 
+	  </parse>
+	  <arg n="0">
+	  跳蚤 市场 	
+	  </arg>
+	  <arg n="1">
+	  在 海外 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  甚为 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 其後))
+	      (NP-SBJ (NN 雷射)
+		      (NN 唱盘))
+	      (VP (VV 风行)
+		  (AS 了)
+		  (QP-OBJ (CD 二十)
+			  (CLP (M 年))))) 
+	  </parse>
+	  <arg n="0">
+	  雷射 唱盘 	
+	  </arg>
+	  <arg n="m" f="ext">
+	  二十 年 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  其後 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

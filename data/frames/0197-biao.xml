@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 标 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="mark"/>
+    <role argnum="2" argrole="entity bearing the mark"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (ADVP (AD 因此))
+      (NP-SBJ (NN 商家))
+      (VP (ADVP (AD 然后))
+          (ADVP (AD 再))
+          (ADVP (AD 逐渐))
+          (VP (BA 将)
+              (IP-OBJ (NP-SBJ (NN 欧元)
+                              (NN 价格))
+                      (VP (VV 标)
+                          (PP-LOC (P 在)
+                                  (LCP (NP (NN 商品))
+                                       (LC 上)))))))))
+	</parse>
+	<arg n="0"> 商家 </arg>
+	<arg n="M" f="ADV"> 然后 </arg>
+	<arg n="M" f="ADV"> 再 </arg>
+	<arg n="M" f="ADV"> 逐渐 </arg>
+	<arg n="1"> 欧元 价格 </arg>
+	<V/>
+	<arg n="2"> 在 商品 上 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

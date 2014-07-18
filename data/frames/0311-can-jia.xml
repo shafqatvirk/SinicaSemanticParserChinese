@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 参加 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="participant"/>
+    <role argnum="1" argrole="activity"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-APP (NN 国务院)
+                      (NN 副总理))
+              (NP-PN (NR 邹家华)))
+      (VP (VV 参加)
+          (AS 了)
+          (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+                      (CP (IP (NP-SBJ (-NONE- *T*-2))
+                              (VP (NP-TMP (NT 今天))
+                                  (VP (VV 举行))))
+                          (DEC 的)))
+                  (NP (NN 投产))
+                  (ADJP (JJ 剪彩))
+                  (NP (NN 仪式))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 国务院 副总理 邹家华 </arg>
+	<V/>
+	<arg n="1"> *OP* (*T*-2)->(投产剪彩仪式) 今天 举行 的 投产 剪彩 仪式 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-PN-SBJ (NR 四川省)
+                 (CC 和)
+                 (NR 安徽省))
+      (VP (VC 是)
+          (VP (QP-ADV (OD 首)
+                      (CLP (M 次)))
+              (VP (VV 参加))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 四川省 和 安徽省 </arg>
+	<arg n="M" f="ADV"> 首 次 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

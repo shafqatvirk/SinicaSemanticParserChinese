@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 正视 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 希望)
+		  (IP-OBJ (NP-SBJ (NP-PN (NR 台湾))
+				  (NP (NN 当局)))
+			  (VP (VP (VV 顺应)
+				  (NP-OBJ (NN 民心)))
+			      (PU ，)
+			      (VP (VV 正视)
+				  (NP-OBJ (NN 现实)))
+			      (PU ，)
+			      (VP (PP (P 与)
+				      (NP (PN 我们)))
+				  (VP (VV 进行)
+				      (NP-OBJ (NN 对话)
+					      (CC 和)
+					      (NN 谈判))))
+			      (PU ，)
+			      (VP (ADVP (AD 早日))
+				  (VP (VV 实现)
+				      (IP-OBJ (NP-SBJ (QP (CD 两))
+						      (NP (NN 岸)))
+					      (VP (ADVP (AD 直接))
+						  (VP (PU “)
+						      (VV 三通)
+						      (PU ”))))))
+			      (PU ，)
+			      (VP (PP-LOC (P 在)
+					  (LCP (NP (NP (QP (CD 一)
+							   (CLP (M 个)))
+						       (NP-PN (NR 中国)))
+						   (NP (NN 原则)))
+					       (LC 下)))
+				  (ADVP (AD 正式))
+				  (VP (VV 结束)
+				      (NP-OBJ (NP (QP (CD 两))
+						  (NP (NN 岸)))
+					      (NP (NN 敌对)
+						  (NN 状态))))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 当局 
+	  </arg>
+	  <arg n="1">
+	  现实 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

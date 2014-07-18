@@ -1,0 +1,142 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 禁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 bans"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 悉尼)
+			     (NR 奥运会))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 禁)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 用)
+				      (NP-OBJ (ADJP (JJ 金属制))
+					      (NP (NN 棒球棒)))))))) 
+	  </parse>
+	  <arg n="0">
+	  悉尼 奥运会 	  
+	  </arg>
+	  <arg n="1">
+	  *PRO* 用 金属制 棒球棒 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 层层))
+			  (VP (VV 分包))))
+	      (VP (VP-FOC (ADVP (AD 屡))
+			  (VP (VV 禁)))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 止))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 层层 分包 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  屡 	  
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 假冒)
+		      (NN 伪劣))
+	      (VP (VP-FOC (ADVP (AD 屡))
+			  (VP (VV 禁)))
+		  (VP (ADVP (AD 不))
+		      (VP (VA 绝))))) 
+	  </parse>
+	  <arg n="1">
+	  假冒 伪劣 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  屡 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 伊))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 销毁)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ-2 (-NONE- *T*-1))
+				      (VP (SB 被)
+					  (VP (VV 禁)
+					      (NP-OBJ (-NONE- *-2))))))
+			      (NP (NN 武器)))))) 
+	  </parse>
+	  <arg n="1">
+	  *-2 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 won't survive"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (LCP (NP (NN 家))
+			   (LC 里))
+		      (QP (ADVP (AD 那麽))
+			  (QP (QP (CD 一)
+				  (CLP (-NONE- *RNR*-2)))
+			      (QP (CD 两)
+				  (CLP-2 (M 套)))))
+		      (NP (NN 西装)))
+	      (PU ，)
+	      (VP (ADVP (AD 实在))
+		  (VP (VPT (VV 禁)
+			   (AD 不)
+			   (VV 起))
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 洗)))))) 
+	  </parse>
+	  <arg n="0">
+	  家 里 那麽 一 *RNR*-2 两 套 西装 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 洗 
+	  </arg>
+	  <arg n="m" f="adv">
+	  实在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

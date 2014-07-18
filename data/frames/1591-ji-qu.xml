@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 汲取 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="absorber"/>
+      <role argnum="1" argrole="thing absorbed"/>
+      <role argnum="2" argrole="absorbing from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 国家)
+		      (NN 计委))
+	      (VP (VV 要求)
+		  (NP-OBJ (NP (NP (NN 地方))
+			      (DP (DT 各)
+				  (CLP (M 级)))
+			      (NP (NN 政府)))
+			  (PU 、)
+			  (NP (NP-PN (NN 国务院))
+			      (NP (NP (DP (DT 各))
+				      (NP (NN 部门)))
+				  (PU 、)
+				  (NP (DP (DT 各))
+				      (ADJP (JJ 有关))
+				      (NP (NN 单位))))))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 从)
+				  (LCP (NP (NN 公路)
+					   (NN 质量)
+					   (NN 问题))
+				       (LC 上)))
+			  (VP (VP (VV 汲取)
+				  (NP-OBJ (NN 教训)))
+			      (PU ，)
+			      (VP (VV 举一反三))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  教训 
+	  </arg>
+	  <arg n="2">
+	  从 公路 质量 问题 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 证券法))
+	      (VP (VV 汲取)
+		  (AS 了)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (NP-PN (NR 亚洲))
+					      (NP (NN 金融)
+						  (PU 、)
+						  (NN 证券))
+					      (NP (NN 市场)))
+				      (VP (VV 动荡)))
+				  (DEC 的))
+			  (NP (NN 教训)))))
+	  </parse>
+	  <arg n="0">
+	  证券法 
+	  </arg>
+	  <arg n="1">
+	  亚洲 金融 、 证券 市场 动荡 的 教训 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

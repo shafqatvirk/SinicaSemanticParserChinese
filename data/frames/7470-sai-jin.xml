@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 塞进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="place arg0 stuffs arg1 into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 许多))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 拔根))
+				    (VP (VV 移往)
+					(NP-OBJ (NN 海外)))))
+			    (DEC 的)))
+		    (NP (NN 中国人)))
+	    (PU ，)
+	    (VP (VV 会)
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (DP (DT 整)
+					(CLP (M 个)))
+				    (NP (NN 家)))
+			    (VP (VP (VV 塞进)
+				    (LCP-LOC (NP (CP (WHNP-2 (-NONE- *OP*))
+						     (CP (IP (NP-TPC (-NONE- *T*-2))
+							     (NP-SBJ (NN 数量))
+							     (VP (VV 不一)))
+							 (DEC 的)))
+						 (NP (NN 货柜)))
+					     (LC 里)))
+				(PU ，)
+				(VP (VV 运往)
+				    (NP-OBJ (NN 移民地)))))))) 
+	</parse>
+	<arg n="0">
+	许多 *OP* *T*-1 拔根 移往 海外 的 中国人 
+	</arg>
+	<arg n="1">
+	整 个 家 
+	</arg>
+	<arg n="2">
+	*OP* *T*-2 数量 不一 的 货柜 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

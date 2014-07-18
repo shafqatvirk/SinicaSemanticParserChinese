@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 访问 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="visitor"/>
+      <role argnum="1" argrole="place visited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 伊拉克))
+			  (NP (NN 外长)))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 访问)
+			  (NP-PN-OBJ (NR 苏联))))) 
+	  </parse>
+	  <arg n="0">
+	  伊拉克 外长 
+	  </arg>
+	  <arg n="1">
+	  苏联 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 江泽民)
+			 (NN 主席))
+	      (VP (ADVP (AD 即将))
+		  (PP-DIR (P 对)
+			  (NP-PN (NR 美国)))
+		  (VP (VV 访问))))
+	  </parse>
+	  <arg n="0">
+	  江泽民 主席 
+	  </arg>
+	  <arg n="1">
+	  对 美国 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即将 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 乍得))
+			      (ADJP (JJ 新))
+			      (NP (NN 总统)))
+		      (NP-PN (NR 依迪斯·代比)))
+	      (VP (NP-TMP (NT 十二日))
+		  (VP (VP (VV 到达)
+			  (NP-PN-OBJ (NR 巴黎)))
+		      (VP (VV 访问))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  乍得 新 总统 依迪斯·代比 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  十二日 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

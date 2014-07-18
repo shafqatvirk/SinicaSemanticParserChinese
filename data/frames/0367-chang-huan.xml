@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 偿还 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="payer"/>
+      <role argnum="1" argrole="debt"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (IP (ADVP (AD 据悉))
+		    (PU ，)
+		    (NP-PN-SBJ (NR 尼))
+		    (VP (NP-TMP (NT 目前))
+			(VP (VE 有)
+			    (NP-OBJ (NN 外汇)
+				    (NN 储备))
+			    (QP-EXT (CD ６２亿)
+				    (CLP (M 美元))))))
+		(PU ，)
+		(IP (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 仅))
+			(VP (VV 够)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 支付)
+					    (NP-OBJ (NP (QP (CD ３)
+							    (CLP (M 个)))
+							(NP (NN 月)))
+						    (NP (NN 进口)
+							(NN 费用))))
+					(CC 和)
+					(VP (VV 偿还)
+					    (NP-OBJ (NN 欠债))))))))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  欠债 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (-NONE- *pro*))
+		(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 到期)))
+		    (QP-ADV (CD 一)
+			    (CLP (M 次)))
+		    (VP (VV 偿还))))) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

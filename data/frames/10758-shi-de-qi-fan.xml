@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 适得其反 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="argM"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 一味))
+			(DVP (VP (VA 盲目))
+			     (DEC 地))
+			(VP (VP (VV 跟)
+				(AS 著)
+				(NP-OBJ (NN 潮流)))
+			    (VP (VV 走)))))
+	    (PU ，)
+	    (VP (ADVP (AD 却))
+		(VP (VV 可能)
+		    (VP (VV 适得其反))))) 
+	</parse>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<arg n="m" f="cnd">
+	*PRO* 一味 盲目 地 跟 著 潮流 走 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

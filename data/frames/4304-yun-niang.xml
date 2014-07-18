@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 酝酿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 prepares for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 中国))
+		      (NP (ADJP (JJ 高新))
+			  (NP (NN 技术)))
+		      (NP (NN 开发区)))
+	      (VP (VV 酝酿)
+		  (PP-TMP (P 于)
+			  (LCP (NP (NT 八十年代))
+			       (LC 初))))) 
+	  </parse>
+	  <arg n="1">
+	  中国 高新 技术 开发区 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 八十年代 初 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

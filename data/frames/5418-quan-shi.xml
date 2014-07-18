@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 诠释 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 explains/interprets"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 顺益)
+		       (NN 博物馆))
+	    (VP (VP (ADVP (AD 定期))
+		    (VP (VV 举办)
+			(NP-OBJ (NN 特展))))
+		(PU ，)
+		(VP (VV 期望)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-DIR (P 由)
+					(NP (DNP (NP (NN 部落))
+						 (DEG 的))
+					    (NP (NN 观点))))
+				(VP (MSP 来)
+				    (VP (VV 诠释)
+					(NP-OBJ (DNP (NP (PN 自己))
+						     (DEG 的))
+						(NP (NN 文化)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	自己 的 文化 
+	</arg>
+	<arg n="m" f="dir">
+	由 部落 的 观点 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

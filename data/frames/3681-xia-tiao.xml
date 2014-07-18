@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下调 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing adjusted lower"/>
+      <role argnum="2" argrole="extent of adjustment"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (NP-SBJ (NP (NP-PN (NR 亚洲))
+			  (NP (NN 地区)))
+		      (DNP (QP (NP (NT 今)
+				   (NT 明))
+			       (QP (CD 两)
+				   (CLP (M 年))))
+			   (DEG 的))
+		      (NP (NN 增长率)))
+	      (VP (VV 预计)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 分别))
+				  (VP (VC 为)
+				      (QP-PRD (CD 百分之六点八)
+					      (CC 和)
+					      (CD 百分之五点七))))
+			      (PU ，)
+			      (VP (PP (P 比)
+				      (NP (DNP (ADJP (JJ 先前))
+					       (DEG 的))
+					  (NP (NN 预测))))
+				  (VP (VV 下调)
+				      (AS 了)
+				      (NP-OBJ (QP (QP (CD 零点九)
+						      (CLP (-NONE- *RNR*-1)))
+						  (CC 和)
+						  (QP (CD 一点七)
+						      (CLP-1 (M 个))))
+					      (NP (NN 百分点))))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  零点九 *RNR*-1 和 一点七 个 百分点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比 先前 的 预测 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing adjusted lower"/>
+      <role argnum="2" argrole="original level"/>
+      <role argnum="3" argrole="level after adjustment"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 法定))
+		      (NP (NN 存款)
+			  (NN 准备金)
+			  (NN 率)))
+	      (VP (PP-DIR (P 由)
+			  (QP (DNP (NP (NT 过去))
+				   (DEG 的))
+			      (QP (CD 百分之十三))))
+		  (VP (VRD (VV 下调)
+			   (VV 到))
+		      (QP-OBJ (CD 百分之八))))) 
+	  </parse>
+	  <arg n="1">
+	  法定 存款 准备金 率 
+	  </arg>
+	  <arg n="2">
+	  由 过去 的 百分之十三 
+	  </arg>
+	  <arg n="3">
+	  百分之八 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 创刊 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="paper/journal which starts publication"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				(VP (PP-LGS (P 由)
+					    (NP-PN (PU 《)
+						   (NN 自由)
+						   (NN 时报)
+						   (PU 》)))
+				    (VP (VV 投资)
+					(NP-OBJ (-NONE- *-2)))))
+			    (DEC 的)))
+		    (NP-PN (PU 《)
+			   (NR Taipei)
+			   (NR Times)
+			   (PU 》)))
+	    (VP (ADVP (AD 即将))
+		(VP (VV 创刊)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 由 《 自由 时报 》 投资 *-2 的 《 Taipei Times 》 
+	</arg>
+	<arg n="m" f="adv">
+	即将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

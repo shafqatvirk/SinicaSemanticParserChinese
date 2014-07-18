@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调解 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="conflict"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 俄))
+	      (VP (VV 希望)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 彻底))
+			      (VP (VV 调解)
+				  (NP-OBJ (DNP (NP (NN 独联体)
+						   (NN 境内))
+					       (DEG 的))
+					  (NP (NN 冲突)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  独联体 境内 的 冲突 
+	  </arg>
+	  <arg n="m" f="adv">
+	  彻底 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 宁波)
+			 (NN 海事)
+			 (NN 法院))
+	      (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 受理)
+				       (NP-OBJ (NN 案件))))
+			       (LC 后))
+		      (PU ，)
+		      (ADVP (AD 立即))
+		      (VP (VV 设法)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (PP-DIR (P 向)
+					      (NP (NN 肇事)
+						  (NN 船)
+						  (NN 船东)))
+				      (VP (VV 送达)
+					  (NP-OBJ (ADJP (JJ 有关))
+						  (NP (NN 法律)
+						      (NN 文书))))))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 进行)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 系列)))
+			      (NP (NN 调查)
+				  (PU 、)
+				  (NN 核实)
+				  (PU 、)
+				  (NN 验证))))
+		  (PU ，)
+		  (VP (PP (P 与)
+			  (NP (NP (DP (DT 各))
+				  (NP (NN 方)))
+			      (NP (NN 当事人))))
+		      (VP (VCD (VV 协商)
+			       (VV 调解))))))
+	  </parse>
+	  <arg n="0">
+	  宁波 海事 法院 
+	  </arg>
+	  <arg n="m" f="adv">
+	  与 各 方 当事人 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 昂起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 raises"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (VV 昂起)
+					(NP-OBJ (ADJP (JJ 大))
+						(NP (NN 头))))
+				    (PU 、)
+				    (VP (VV 张大)
+					(NP-OBJ (NN 嘴巴)))))
+			    (DEC 的)))
+		    (ADJP (JJ 金))
+		    (NP (NN 虎)))
+	    (PU ，)
+	    (VP (VRD (VV 凸显)
+		     (VV 出))
+		(NP-OBJ (DNP (NP (NP-PN (NR 三星堆))
+				 (P 与)
+				 (NP (CP (WHNP-2 (-NONE- *OP*))
+					 (IP (NP-SBJ (-NONE- *T*-2))
+					     (VP (VV 少见)
+						 (NP-OBJ (NN 金器)))))
+				     (NP (NP (NP-PN (NR 黄河))
+					     (NP (NN 流域)))
+					 (NP (NN 文明)))))
+			     (DEG 的))
+			(NP (NN 大异))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	大 头 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

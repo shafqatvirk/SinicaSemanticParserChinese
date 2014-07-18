@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 硕果仅存 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-SBJ (DT 这)
+		      (CLP (M 位)))
+	      (VP (ADVP (AD 很))
+		  (VP (VV 可能)
+		      (VP (VC 是)
+			  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (NP-TMP (NT 目前))
+						  (NP-LOC (NP-PN-APP (NR 港)
+								     (NR 台))
+							  (QP (CD 两))
+							  (NP (NN 地)))
+						  (VP (VV 硕果仅存))))
+					  (DEC 的)))
+				  (ADJP (JJ 女))
+				  (NP (NN 导演))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  港 台 两 地 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 躲避 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="hiding from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 所)))
+		      (NP (NN 设施)))
+	      (VP (PU “)
+		  (PP-MNR (P 经过)
+			  (NP (NN 涂盖)
+			      (CC 和)
+			      (NN 伪装)))
+		  (PU ，)
+		  (VP (MSP 以)
+		      (VP (VV 躲避)
+			  (NP-OBJ (NN 侦察)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 所 设施 	  
+	  </arg>
+	  <arg n="1">
+	  侦察 	  
+	  </arg>
+	  <arg n="m">
+	  经过 涂盖 和 伪装 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

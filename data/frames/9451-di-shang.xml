@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 滴上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 drips"/>
+      <role argnum="2" argrole="thing arg1 is dripped onto"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 身体))
+			   (VP (ADVP (AD 不))
+			       (VP (VV 舒服))))
+		       (LC 时))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 只要))
+			  (VP (VP (VP (VV 到)
+				      (NP-OBJ (NN 药房)))
+				  (VP (VV 买)
+				      (NP-OBJ (QP (CLP (M 片)))
+					      (DNP (NP (NN 检验))
+						   (DEG 的))
+					      (NP (NN 生物)
+						  (NN 晶片)))))
+			      (PU ，)
+			      (VP (VV 滴上)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 滴)))
+					  (NP (NN 尿)))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 可以)
+		      (VP (VV 知道)
+			  (IP-Q-OBJ (NP-WH-SBJ (PN 哪里))
+				    (VP (VE 有)
+					(NP-OBJ (NN 毛病)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一 滴 尿 
+	  </arg>
+	  <arg n="m" f="adv">
+	  只要 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

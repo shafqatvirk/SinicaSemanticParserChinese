@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自给自足 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 她))
+	      (VP (VV 开始)
+		  (VP (VV 带领)
+		      (NP-OBJ (NN 大寨人))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 改变)
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (VA 粗放)))
+						  (DEC 的)))
+					  (IP-APP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 自给自足)))
+					  (NP (NN 经济))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

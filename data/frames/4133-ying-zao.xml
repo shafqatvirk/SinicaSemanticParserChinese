@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 营造 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 福建省))
+			   (DEG 的))
+		      (ADJP (JJ 涉台))
+		      (NP (NN 法规)))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (VV 涉及)
+			  (NP-OBJ (NP-APP (NN 经贸)
+					  (NN 往来)
+					  (PU 、)
+					  (NN 船舶)
+					  (NN 停泊)
+					  (PU 、)
+					  (NN 渔工)
+					  (NN 劳务)
+					  (NN 合作)
+					  (ETC 等))
+				  (DP (DT 各)
+				      (CLP (M 个)))
+				  (NP (NN 方面)))))
+		  (PU ，)
+		  (VP (PP-BNF (P 为)
+			      (NP (NP (NN 台商)
+				      (NN 投资))
+				  (CC 和)
+				  (NP (NP-PN (NR 闽)
+					     (NR 台))
+				      (NP (NN 交往)))))
+		      (VP (VV 营造)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 良好)))
+					  (DEC 的)))
+				  (NP (NN 法治)
+				      (NN 环境))))))) 
+	  </parse>
+	  <arg n="0">
+	  福建省 的 涉台 法规 	  
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 良好 的 法治 环境 	  
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 台商 投资 和 闽 台 交往 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="original thing being built"/>
+      <role argnum="2" argrole="thing built into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NN 外商)
+		  (NN 健身)
+		  (NN 俱乐部))
+	  (VP (VP (BA 将)
+		  (IP-OBJ (NP-SBJ (NN 健身))
+			  (VP (VRD (VV 营造)
+				   (VV 成))
+			      (NP-OBJ (NN 流行)
+				      (NN 时尚)))))) 
+	  </parse>
+	  <arg n="0">
+	  外商健身 俱乐部	  
+	  </arg>
+	  <arg n="1">
+	  健身	  
+	  </arg>
+	  <arg n="1">
+	  流行 时尚	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

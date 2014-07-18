@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出国 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-TMP (NT 现在))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VRD (VA 富裕)
+					   (VV 起来))))
+			      (DEC 的)))
+		      (NP (NN 中国人)))
+	      (VP (DVP (VP (VV 成群结对))
+		       (DEV 地))
+		  (VP (VP (VV 出国))
+		      (VP (PU “)
+			  (VV 串门)
+			  (PU ”))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 富裕 起来 的 中国人 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <arg n="m" f="adv">
+	  成群结对 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

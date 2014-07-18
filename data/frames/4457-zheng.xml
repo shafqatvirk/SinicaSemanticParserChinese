@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 征 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing collected"/>
+      <role argnum="2" argrole="thing arg0 collects arg1 on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 欧盟))
+	      (VP (VV 决定)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 根据)
+				      (NP-PN (NR 洛美)
+					     (NN 协定)))
+			      (PP-TMP (P 从)
+				      (LCP (NP (NT 明年)
+					       (NT １月)
+					       (NT １日))
+					   (LC 起)))
+			      (PP-DIR (P 对)
+				      (NP (DNP (NP (CP (WHNP-3 (-NONE- *OP*))
+						       (CP (IP (NP-SBJ (-NONE- *T*-3))
+							       (VP (ADVP (AD 不))
+								   (VP (VV 属于)
+								       (NP-PN-OBJ (NR 非洲)
+										  (PU 、)
+										  (NR 加勒比)
+										  (CC 和)
+										  (NR 太平洋)
+										  (NN 地区)))))
+							   (DEC 的)))
+						   (NP-PN-APP (NR 阿富汗)
+							      (ETC 等))
+						   (QP (CD 九)
+						       (CLP (M 个)))
+						   (ADJP (ADVP (AD 最))
+							 (ADVP (AD 不))
+							 (ADJP (JJ 发达)))
+						   (NP (NN 国家)))
+					       (DEG 的))
+					  (NP (NN 商品))))
+			      (ADVP (AD 免))
+			      (VP (VV 征)
+				  (NP-OBJ (NN 关税))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  关税 
+	  </arg>
+	  <arg n="2">
+	  对 *OP* *T*-3 不 属于 非洲 、 加勒比 和 太平洋 地区 的 阿富汗 等 九 个 最 不 发达 国家 的 商品 
+	  </arg>
+	  <arg n="m" f="adv">
+	  免 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  从 明年 １月 １日 起 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  根据 洛美 协定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (UCP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (VV 清理)
+				   (NP-OBJ (NN 欠税))))
+			   (CC 与)
+			   (NP (NN 税收)
+			       (NN 返还))
+			   (PU 、)
+			   (NP (NN 出口)
+			       (NN 退税))
+			   (PU 、)
+			   (NP (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+					    (IP (NP-SBJ (LCP (NP (NN 期))
+							     (LC 初))
+							(NP (NN 存货)))
+						(VP (ADVP (AD 已))
+						    (VP (VV 征)
+							(NP-OBJ (-NONE- *T*-2))))))
+					(NP (NN 税款)))
+				    (DEG 的))
+			       (NP (NN 抵扣)))
+			   (ETC 等))
+		  (NP (NN 工作))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  期 初 存货 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

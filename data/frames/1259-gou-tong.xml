@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 沟通 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="instrument"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (ADVP (AD 近))
+			   (QP (CD 几)
+			       (CLP (M 年))))
+		       (LC 来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中国)
+			 (NR 红十字会))
+	      (VP (PP-LOC (P 在)
+			  (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 沟通)
+					  (NP-OBJ (NP (NP (NN 海峡))
+						      (QP (CD 两))
+						      (NP (NN 岸)))
+						  (NP (NN 关系)))))
+			      (NP (NN 方面))))
+		  (VP (VV 发挥)
+		      (AS 了)
+		      (NP-OBJ (ADJP (JJ 特殊))
+			      (NP (NN 作用)))))) 
+	  </parse>
+	  <arg n="2">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  海峡 两 岸 关系 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

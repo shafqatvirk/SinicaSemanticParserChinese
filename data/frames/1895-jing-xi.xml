@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 惊悉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 learns unexpectedly and sadly"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 惊悉)
+		      (IP-OBJ (NP-PN-SBJ (NR 理查德·尼克松)
+					 (NN 先生))
+			      (VP (ADVP (AD 不幸))
+				  (VP (VV 病逝)))))
+		  (PU ，)
+		  (VP (ADVP (AD 谨))
+		      (VP (VV 表示)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 深切)))
+					  (DEC 的)))
+				  (NP (NN 哀悼))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  理查德·尼克松 先生 不幸 病逝 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

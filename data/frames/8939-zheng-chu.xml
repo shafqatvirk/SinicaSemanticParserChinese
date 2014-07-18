@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 蒸出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 steams and produces"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 过)
+			      (NP-OBJ (QP (CD 一)
+					  (CLP (M 个)))
+				      (NP (NN 年)))))
+		  (PU ，)
+		  (ADVP (AD 至少))
+		  (VP (VV 要)
+		      (VP (PP-MNR (P 用)
+				  (NP (ADJP (JJ 大))
+				      (NP (NN 蒸笼))))
+			  (VP (VV 蒸出)
+			      (NP-OBJ (DNP (QP (QP (CD 两)
+						   (CLP (-NONE- *RNR*-1)))
+					       (PU 、)
+					       (QP (CD 三)
+						   (CLP-1 (M 笼))))
+					   (DEG 的))
+				      (NP (NN 萝卜糕)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  两 *RNR*-1 、 三 笼 的 萝卜糕 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  用 大 蒸笼 
+	  </arg>
+	  <arg n="m" f="adv">
+	  至少 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 过 一 个 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

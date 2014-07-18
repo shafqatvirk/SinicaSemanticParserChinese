@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 无异 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is not different from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NN 唱片)
+			(NN 制作))
+		    (NP (NN 方向)) )
+	    (VP (PP (P 与)
+		    (NP (DP (DT 其他))
+			(NP (NN 专辑) )))
+		(VP (VV 无异)))) 
+	</parse>
+	<arg n="0">
+	唱片 制作 方向 
+	</arg>
+	<arg n="1">
+	与 其他 专辑 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 鸟瞰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 takes a bird-eye view of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 鸟瞰)
+				(NP-OBJ (NN 全球)
+					(NN 趋势))))
+			(DEC 的))
+		(NP (NN 视野))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	全球 趋势 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

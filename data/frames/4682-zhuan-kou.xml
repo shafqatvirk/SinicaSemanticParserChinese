@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 转口 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place via which arg0 is transported"/>
+      <role argnum="2" argrole="place to which arg0 is transported"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (QP-TMP (ADVP (AD 近))
+			  (QP (CD 几)
+			      (CLP (M 年))))
+		  (PU ，)
+		  (NP-TPC (NP-PN (NR 中国))
+			  (PP (P 对)
+			      (NP-PN (NR 美)))
+			  (NP (NN 出口)))
+		  (LCP-SBJ (QP (CD 三分之二))
+			   (LC 以上))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (PP-LOC (P 经过)
+						      (NP (NP-PN (NR 香港))
+							  (NP (NN 地区))))
+					      (VP (VV 转口))))
+				      (DEC 的)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  经过 香港 地区 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place via which arg0 is transported"/>
+      <role argnum="2" argrole="place to which arg0 is transported"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 其))
+		      (NP (NN 产品)))
+	      (VP (VP (VV 依赖)
+		      (NP-OBJ (DNP (ADJP (JJ 原有))
+				   (DEG 的))
+			      (NP (NN 销售)
+				  (NN 渠道))))
+		  (PU ，)
+		  (VP (ADVP (AD 主要))
+		      (PP-MNR (P 经)
+			      (NP (NP-PN-APP (NR 香港)
+					     (ETC 等))
+				  (NP (NN 地))))
+		      (VP (VRD (VV 转口)
+			       (VV 到))
+			  (NP-OBJ (NP-PN-APP (NR 美国)
+					     (ETC 等))
+				  (ADJP (JJ 传统))
+				  (NP (NN 市场))))))) 
+	  </parse>
+	  <arg n="0">
+	  其 产品 
+	  </arg>
+	  <arg n="1">
+	  经 香港 等 地 
+	  </arg>
+	  <arg n="2">
+	  美国 等 传统 市场 
+	  </arg>
+	  <arg n="m" f="adv">
+	  主要 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

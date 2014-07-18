@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 削去 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 cuts and removes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VE 有)
+			  (QP-OBJ (CLP (M 次)))))
+	      (IP-ADV (NP-SBJ (NN 镰刀))
+		      (VP (ADVP (AD 一))
+			  (VP (VV 挥))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 差点))
+		  (VP (BA 将)
+		      (IP-OBJ (QP-SBJ (NP (NN 手指))
+				      (QP (CD 一)
+					  (CLP (M 截))))
+			      (VP (ADVP (AD 齐齐))
+				  (VP (VV 削去))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  手指 一 截 
+	  </arg>
+	  <arg n="m" f="adv">
+	  齐齐 
+	  </arg>
+	  <arg n="m" f="adv">
+	  差点 
+	  </arg>
+	  <arg n="m" f="adv">
+	  镰刀 一 挥 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 有 次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

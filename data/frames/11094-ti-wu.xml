@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 体悟 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing arg0 experiences and understands"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-2 (NP-SBJ (-NONE- *pro*))
+		  (VP (VV 感谢)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 吃苦)))
+		      (PU ，)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 让)
+			      (NP-OBJ (PN 我))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VE 有)
+					  (NP-OBJ (NN 机会)))
+				      (VP (VP (ADVP (AD 更))
+					      (VP (VV 体悟)
+						  (NP-OBJ (NN 人生))))
+					  (PU 、)
+					  (VP (ADVP (AD 更))
+					      (VP (VV 了解)
+						  (NP-OBJ (PN 自己))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	人生 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

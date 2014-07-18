@@ -1,0 +1,101 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 发起 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="starter"/>
+      <role argnum="1" argrole="thing started"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 温州市)
+			     (NN 教委))
+		      (CC 和)
+		      (NP-PN (NR 共青团)
+			     (NR 温州)
+			     (NN 市委)))
+	      (VP (ADVP (AD 还))
+		  (VP (VP (VV 联合)
+			  (NP-OBJ (NN 灾区)
+				  (NN 学校)
+				  (NN 师生)))
+		      (PU ，)
+		      (VP (VV 发起)
+			  (NP-OBJ (IP-APP (PU “)
+					  (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-BNF (P 为)
+						      (NP (ADJP (JJ 受灾))
+							  (NP (NN 学校))))
+					      (VP (VV 献)
+						  (NP-OBJ (NN 爱心))))
+					  (PU ”))
+				  (NP (NN 募捐)
+				      (NN 活动))))))) 
+	  </parse>
+	  <arg n="0">
+	  温州市 教委 和 共青团 温州 市委 	  
+	  </arg>
+	  <arg n="1">
+	  “ *PRO* 为 受灾 学校 献 爱心 ” 募捐 活动 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 distributes"/>
+      <role argnum="2" argrole="entity arg1 is distributed to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (LCP-LOC (NP (NN 家))
+				   (LC 中))
+			  (NP-SBJ (NN 长辈)
+				  (CC 与)
+				  (NN 後辈))
+			  (VP (VP-FOC (VV 为数))
+			      (VP (VA 众多)))))
+	      (PU ，)
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 发起)
+			      (NP-OBJ (NN 红包)))
+			  (VP (VV 来))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 一)
+			  (CLP (M 笔)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 难得)))
+			      (DEC 的)))
+		      (ADJP (JJ 年终))
+		      (NP (NN 奖金)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 可能)
+		      (VP (ADVP (AD 就此))
+			  (VP (VV 泡汤)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  红包 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

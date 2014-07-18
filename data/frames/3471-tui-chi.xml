@@ -1,0 +1,142 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推迟 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="scheduled time"/>
+      <role argnum="3" argrole="new time"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NN 国际)
+					(NN 社会))
+				    (DEG 的))
+			       (NP (NN 调解)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 塞))
+		      (NP (NN 政府)))
+	      (VP (VP (ADVP (AD 曾))
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (DNP (NP (NN 导弹))
+					       (DEG 的))
+					  (NP (NN 交货期)))
+				  (VP (PP-DIR (P 从)
+					      (NP (NT 今年)
+						  (NT ７月)))
+				      (VP (VRD (VV 推迟)
+					       (VV 至))
+					  (NP-OBJ (NT １１月)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 后来))
+		      (ADVP (AD 又))
+		      (VP (VRD (VV 推迟)
+			       (VV 至))
+			  (NP-OBJ (NT 年底)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  塞 政府 	  	  
+	  </arg>
+	  <arg n="1">
+	  导弹 的 交货期 	  	  
+	  </arg>
+	  <arg n="2">
+	  从 今年 ７月 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="3">
+	  １１月 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-SBJ (DT 这)
+		      (CLP (M 次)))
+	      (VP (ADVP (AD 完全))
+		  (ADVP (AD 将))
+		  (ADVP (AD 大大))
+		  (VP (VV 推迟)
+		      (NP-OBJ (DNP (NP (NP-PN (NR 日本))
+				       (NP (NN 宇宙)
+					   (NN 开发)
+					   (NN 事业)))
+				   (DEG 的))
+			      (NP (NN 进程)))))) 
+	  </parse>
+	  <arg n="0">
+	  这 次 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  完全 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  大大 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  日本 宇宙 开发 事业 的 进程 	  	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (CS 如果))
+			  (VP (PP-LOC (P 在)
+				      (LCP (QP (CD ７)
+					       (CLP (M 周)))
+					   (LC 内)))
+			      (VP (VV 完成)))))
+	      (PU ，)
+	      (NP-SBJ (NN 赛季))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 最迟))
+		  (VP (VP (VRD (VV 推迟)
+			       (VV 到))
+			  (NP-OBJ (NT ７月)
+				  (NT ４日)))
+		      (VP (VV 结束))))) 
+	  </parse>
+	  <arg n="1">
+	  赛季 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 	  	  
+	  </arg>
+	  <arg n="M" f="ADV">
+	  最迟 	  	  
+	  </arg>
+	  <V/>
+	  <arg n="3">
+	  ７月 ４日 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

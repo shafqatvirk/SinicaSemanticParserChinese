@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 前仆後继 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NN 机会)
+		    (PU 、)
+		    (NN 失望)
+		    (PU 、)
+		    (NN 成功))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VCD (VA 光鲜)
+					 (VA 亮丽))))
+			    (DEC 的)))
+		    (NP (NN 电视)
+			(NN 环境)))
+	    (VP (VV 吸引)
+		(NP-OBJ (QP (CD 多少))
+			(NP (NN 人)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 怀)
+			    (AS 著)
+			    (NP-OBJ (NN 梦想)))
+			(VP (VV 前仆後继)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

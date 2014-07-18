@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上演 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing performed"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-TMP (P 从)
+					  (NP (NT 十二月)
+					      (NT 九日)))
+				  (VP (VV 开始))))
+		      (PU ，)
+		      (NP-TMP (DP (DT 每))
+			      (NP (NN 晚)))
+		      (ADVP (AD 都))
+		      (ADVP (AD 将))
+		      (PP-LOC (P 在)
+			      (NP (NP-PN (NP-PN (NR 深圳))
+					 (ADJP (JJ 大))
+					 (NP (NN 剧院)))
+				  (CC 或)
+				  (NP-PN (NR 深圳)
+					 (NN 体育馆))))
+		      (VP (VV 演出)
+			  (NP-OBJ (QP (CD 一)
+				      (CLP (M 台)))
+				  (DNP (NP (ADJP (JJ 高))
+					   (NP (NN 水平)))
+				       (DEG 的))
+				  (NP (NN 节目)))))
+		  (PU ，)
+		  (VP (ADVP (AD 分别))
+		      (VP (VV 上演)
+			  (NP-OBJ (NP (NN 芭蕾舞))
+				  (PU 、)
+				  (NP (NN 相声)
+				      (NN 小品))
+				  (PU 、)
+				  (NP (NN 京剧)
+				      (NN 折子戏))
+				  (CC 和)
+				  (NP (CP (WHNP-2 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (NP (NN 海外)
+							      (NN 华人))
+							  (NP (NN 艺术家)
+							      (PU 、)
+							      (NN 艺术团)))
+						  (VP (VV 表演)
+						      (NP-OBJ (-NONE- *T*-2))))
+					      (DEC 的)))
+				      (NP (NN 节目)))
+				  (ETC 等)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  芭蕾舞 、 相声 小品 、 京剧 折子戏 和 *OP* 海外 华人 艺术家 、 艺术团 表演 *T*-2 的 节目 等 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  分别 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

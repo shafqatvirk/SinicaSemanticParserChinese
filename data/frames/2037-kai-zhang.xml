@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 开张 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VSB (VV 取名)
+					     (VC 为))
+					(NP-PN-OBJ (PU “)
+						   (NR 倍顺)
+						   (PU ”))))
+				(DEC 的)))
+			(QP (CD 两)
+			    (CLP (M 家)))
+			(ADJP (JJ 便民))
+			(NP (NN 超市)))
+		(VP (NP-TMP (NT 今天))
+		    (PP-LOC (P 在)
+			    (NP (NN 此间)))
+		    (VP (VCD (VV 开张)
+			     (VV 营业))))
+		(PU 。)) ) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 取名 为 “ 倍顺 ” 的 两 家 便民 超市 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 此间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

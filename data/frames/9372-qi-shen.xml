@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 栖身 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 resides"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NN 国府)
+		      (NN 时代))
+	      (PU ，)
+	      (IP (IP (NP-SBJ (NN 流亡)
+			      (NN 政权))
+		      (VP (VP (ADVP (AD 暂))
+			      (VP (VV 借)
+				  (NP-OBJ (NP-PN (NR 日本))
+					  (NP (NN 总督府)))))
+			  (VP (VV 栖身))))
+		  (PU ，)
+		  (IP (NP-PN-SBJ (NR 台北))
+		      (VP (ADVP (AD 仍))
+			  (VP (VC 是)
+			      (NP-PRD (NN 政经)
+				      (NN 中心))))))) 
+	  </parse>
+	  <arg n="0">
+	  流亡 政权 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  国府 时代 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

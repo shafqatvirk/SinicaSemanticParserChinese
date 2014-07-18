@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 燃烧 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="entity which causes arg0 to burn"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 同时))
+	      (PU ，)
+	      (PP-MNR (P 通过)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 使用)
+				  (NP-OBJ (NN 天然气)))
+			      (VP (VV 燃烧)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 会)
+		      (VP (VV 减少)
+			  (NP-OBJ (DNP (NP (NN 沿海)
+					   (NN 地区))
+				       (DEG 的))
+				  (NP (NN 环境)
+				      (NN 污染))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 火球))
+	      (VP (VV 可以)
+		  (VP (VV 用来)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 燃烧)
+				  (NP-OBJ (DNP (NP (NN 敌人))
+					       (DEG 的))
+					  (NP (NN 战略)
+					      (NN 物资)))))))) 
+	  </parse>
+	  <arg n="0">
+	  敌人 的 战略 物资 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

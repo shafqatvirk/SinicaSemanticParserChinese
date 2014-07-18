@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拖地 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 有时))
+		(NP-TMP (NN 半夜))
+		(VP (VP (VPT (VV 睡)
+			     (AD 不)
+			     (VV 著)))
+		    (PU ，)
+		    (VP (VRD (VV 爬)
+			     (VV 起来))
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 拖地))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

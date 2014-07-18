@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 宽 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="width"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ext" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 桥面))
+	      (VP (VA 宽)
+		  (QP-EXT (CD 三十三点五)
+			  (CLP (M 米))))) 
+	  </parse>
+	  <arg n="0">
+	  桥面 
+	  </arg>
+	  <arg n="1">
+	  三十三点五 米 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP (QP (CD 两))
+				   (NP (NN 岸)))
+			       (NP (NN 文化)
+				   (NN 交流)))
+			   (DEG 的))
+		      (NP (NN 大门)))
+	      (VP (ADVP (AD 越来越))
+		  (VP (VA 宽)))) 
+	  </parse>
+	  <arg n="0">
+	  两 岸 文化 交流 的 大门 
+	  </arg>
+	  <arg n="m" f="adv">
+	  越来越 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

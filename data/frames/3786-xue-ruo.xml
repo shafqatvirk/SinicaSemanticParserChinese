@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 削弱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 工资)
+			      (NN 上涨))
+		      (VP (VV 过快)))
+	      (VP (VV 削弱)
+		  (NP-OBJ (NN 竞争力)))) 
+	  </parse>
+	  <arg n="0">
+	  工资 上涨 过快 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  竞争力 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR 港澳办))
+			  (NP (NN 官员)))
+		  (VP (VV 说)
+		      (PU ，)
+		      (IP-OBJ (NP-TMP (NT 未来))
+			      (NP-SBJ (NP-PN (NR 香港))
+				      (NP (ADJP (JJ 自由))
+					  (NP (NN 市场)))
+				      (NP (NN 经济)
+					  (NN 运作)
+					  (NN 规则)))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 会)
+				      (VP (VV 削弱))))))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  未来 
+	  </arg>
+	  <arg n="1">
+	  香港 自由 市场 经济 运作 规则 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

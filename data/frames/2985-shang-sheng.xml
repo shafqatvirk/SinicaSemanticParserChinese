@@ -1,0 +1,147 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 上升 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing rising"/>
+      <role argnum="1" argrole="extent of rising"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (NN 私人)
+				      (NN 地盘))
+			      (VP (VV 完成)
+				  (NP-OBJ (-NONE- *T*-1)))))
+		      (NP (NN 工程)))
+	      (NP-SBJ (NN 名义)
+		      (NN 总值))
+	      (VP (VP (VC 为)
+		      (QP-PRD (CD 一百一十七亿)
+			      (CLP (M 元))))
+		  (PU ，)
+		  (VP (PP (P 较)
+			  (NP (NP (NT 九六年))
+			      (DP (DT 同))
+			      (NP (NN 季))))
+		      (VP (VV 上升)
+			  (QP-EXT (CD 百分之二十八)))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  名义 总值 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *OP* 私人 地盘 完成 *T*-1 工程 
+	  </arg>
+	  <arg n="1">
+	  百分之二十八 
+	  </arg>
+	  <arg n="m" f="adv">
+	  较 九六年 同 季 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 呈)
+	      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 直线))
+				      (VP (VV 上升))))
+			      (DEC 之))
+		      (NP (NN 势)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直线 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing rising"/>
+      <role argnum="1" argrole="level risen to"/>
+      <role argnum="2" argrole="level risen from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 进出口额))
+	      (VP (PP-DIR (P 由)
+			  (QP (DNP (NP (NT 一九七八年))
+				   (DEG 的))
+			      (QP (CD 二百零六亿)
+				  (CLP (M 美元)))))
+		  (VP (VRD (VV 上升)
+			   (VV 到))
+		      (QP-OBJ (DNP (NP (NT 一九九七年))
+				   (DEG 的))
+			      (QP (CD 三千二百五十亿)
+				  (CLP (M 美元))))))) 
+	  </parse>
+	  <arg n="0">
+	  进出口额 
+	  </arg>
+	  <arg n="1">
+	  一九九七年 的 三千二百五十亿 美元 
+	  </arg>
+	  <arg n="2">
+	  由 一九七八年 的 二百零六亿 美元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 占)
+				      (NP-OBJ (NP (DP (DT 全))
+						  (NP (NN 市)))
+					      (NP (NN 工业)))
+				      (NP-EXT (-NONE- *T*-2))))
+			      (DEC 的)))
+		      (NP (NN 比重)))
+	      (VP (ADVP (AD 将))
+		  (VP (VRD (VV 上升)
+			   (VV 到))
+		      (LCP-OBJ (QP (CD 百分之五十五))
+			       (LC 左右))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *pro* 占 全 市 工业 *T*-2 的 比重 
+	  </arg>
+	  <arg n="1">
+	  百分之五十五 左右 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

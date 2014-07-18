@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 起用 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 uses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (DP (DT 另)
+			(QP (CD 一)))
+		    (NP (NN 方面)))
+	    (PU ，)
+	    (NP-SBJ (CP-APP (IP (NP-PN-SBJ (NR 宋楚瑜)
+					   (CC 与)
+					   (NR 许信良))
+				(VP (ADVP (AD 大胆))
+				    (VP (VV 起用)
+					(NP-OBJ (NN 副手)))))
+			    (DEC 之))
+		    (NP (NN 举)))
+	    (PU ，)
+	    (VP (VV 显示)
+		(IP-OBJ (IP (NP-SBJ (NP-PN (NR 台湾))
+				    (NP (NN 政党)
+					(NN 政治)))
+			    (VP (ADVP (AD 尚))
+				(ADVP (AD 未))
+				(VP (VA 成熟))))
+			(PU ，)
+			(IP (NP-SBJ (NP (NN 个人)
+					(NN 领袖))
+				    (NP (NN 魅力)))
+			    (VP (ADVP (AD 尚))
+				(VP (VE 有)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (-NONE- *T*-1))
+							(VP (ADVP (AD 极))
+							    (VP (VA 大))))
+						    (DEC 的)))
+					    (NP (NN 挥撒)
+						(NN 空间))))))))) 
+	</parse>
+	<arg n="0">
+	宋楚瑜 与 许信良 
+	</arg>
+	<arg n="1">
+	副手 
+	</arg>
+	<arg n="m" f="adv">
+	大胆 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 人亲土亲 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="place arg0 has close ties with people and land there"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 到)
+				  (NP-PN-OBJ (NR 台南))))
+		      (ADVP (AD 就))
+		      (VP (VV 要)
+			  (VP (VV 强调)
+			      (IP-OBJ (PU 「)
+				      (NP-SBJ (PN 我))
+				      (VP (VC 是)
+					  (NP-PRD (DNP (ADJP (JJ 正港))
+						       (DEG 的))
+						  (NP (NN 台南人))))
+				      (PU 」)))))
+		  (PU ，)
+		  (VP (ADVP (AD 都))
+		      (VP (VV 要)
+			  (VP (VV 强调)
+			      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				      (VP (PP (P 和)
+					      (NP (DP (DT 这)
+						      (CLP (M 个)))
+						  (NP (NN 地方))))
+					  (VP (VV 人亲土亲))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  和 这 个 地方 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

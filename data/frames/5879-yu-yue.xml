@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 预约 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 reserves/books"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 预约)
+			(NP-OBJ (ADJP (JJ 大))
+				(NP (NT 未来)))))
+		(PU ，)
+		(IP (NP-SBJ (NN 候选人))
+		    (VP (VV 抢)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 当家)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	大 未来 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

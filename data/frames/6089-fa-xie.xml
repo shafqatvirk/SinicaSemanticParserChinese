@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 发泄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 gives vent to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (NP (NN 戏剧))
+			 (LC 里)))
+	    (PU ，)
+	    (NP-SBJ (NN 青少年))
+	    (VP (DVP (VP (VV 尽情))
+		     (DEV 地))
+		(VP (VV 发泄)
+		    (CC 和)
+		    (VV 表现)))) 
+	</parse>
+	<arg n="0">
+	青少年 
+	</arg>
+	<arg n="m" f="adv">
+	尽情 地 
+	</arg>
+	<arg n="m" f="loc">
+	在 戏剧 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

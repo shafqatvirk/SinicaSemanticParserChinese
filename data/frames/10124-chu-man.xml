@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 出满 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="publisher"/>
+    <role argnum="1" argrole="quantity arg0's publication reaches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 邓相扬))
+	    (VP (ADVP (AD 原本))
+		(VP (VV 立志)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-TMP (P 在)
+					(LCP (NP (NT 去年))
+					     (LC 底)))
+				(VP (VV 出满)
+				    (NP-OBJ (QP (CD 十)
+						(CLP (M 本)))
+					    (NP (NN 书))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	十 本 书 
+	</arg>
+	<arg n="m" f="tmp">
+	在 去年 底 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

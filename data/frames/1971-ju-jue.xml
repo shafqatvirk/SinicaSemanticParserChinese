@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拒绝 </id>
+    <frameset id="f1" edef="reject">
+      <role argnum="0" argrole="entity rejecting"/>
+      <role argnum="1" argrole="refused object"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 全民))
+		      (NP (NN 公决)))
+	      (VP (VV 拒绝)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (ADJP (JJ 联络))
+					      (NP (NN 小组)))
+				      (VP (VV 提出)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP-PN (NR 波黑))
+			  (NP (NN 版图)
+			      (NN 划分)
+			      (NN 方案))))) 
+	  </parse>
+	  <arg n="0">
+	  全民 公决 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *OP* 联络 小组 提出 (*T*-1)->(波黑版图划分方案) 的 波黑 版图 划分 方案 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="controlip" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 伊拉克))
+	      (VP (CC 不仅)
+		  (VP (VV 没有)
+		      (VP (PP-LOC (P 在)
+				  (LCP (NP (DNP (ADJP (JJ 原先))
+						(DEG 的))
+					   (NP (NN 立场)))
+				       (LC 上)))
+			  (VP (VV 退让))))
+		  (PU ，)
+		  (CC 而且)
+		  (VP (VV 拒绝)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 接受)
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-PN-SBJ (NR 美)
+								 (NR 英))
+						      (VP (VV 提出)
+							  (NP-OBJ (-NONE- *T*-1))))
+						  (DEC 的)))
+					  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (PP-LOC (P 在)
+								  (NP-PN (NR 伊拉克)))
+							  (VP (VV 恢复)
+							      (NP-OBJ (NN 武器)
+								      (NN 核查)
+								      (NN 工作)))))
+						  (DEC 的))
+					  (NP (NN 条件)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  伊拉克 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 接受 *OP* 美 英 提出 (*T*-1)->(*PRO*在伊拉克恢复武器核查工作的条件) 的 *PRO* 在 伊拉克 恢复 武器 核查 工作 的 条件 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 利比亚))
+		      (NP (NN 外交部)
+			  (NN 发言人)))
+	      (VP (VP (DP-TMP (DT 同)
+			      (QP (CD 一)
+				  (CLP (M 天))))
+		      (ADVP (AD 还))
+		      (PP-DIR (P 就)
+			      (IP (NP-PN-SBJ (NR 伊))
+				  (VP (VV 拒绝)
+				      (NP-PN-OBJ (NR 联合国)
+						 (NN 特委会))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (ADVP (AD 重))
+						  (VP (VV 返)
+						      (NP-PN-OBJ (NR 伊))))
+					      (VP (VV 进行)
+						  (NP-OBJ (NN 武器)
+							  (NN 核查))))))))
+		      (VP (VV 发表)
+			  (NP-OBJ (NN 谈话)))))) 
+	  </parse>
+	  <arg n="0">
+	  伊 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  联合国 特委会 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 重 返 伊 进行 武器 核查 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

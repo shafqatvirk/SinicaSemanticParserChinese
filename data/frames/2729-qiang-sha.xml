@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 枪杀 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity killed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-ADV (ADVP (CS 尽管))
+		      (IP (NP-SBJ (NP-PN (NR 美国))
+				  (NP (NN 政府)))
+			  (VP (VV 制定)
+			      (AS 了)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (VP (VV 保护)
+							  (NP-OBJ (ADJP (JJ 野生))
+								  (NP (NN 动物))))
+						      (CC 和)
+						      (VP (ADVP (AD 严厉))
+							  (VP (VV 打击)
+							      (NP-OBJ (NN 偷猎者))))))
+					      (DEC 的)))
+				      (NP (NN 法律))))))
+	      (PU ，)
+	      (ADVP (AD 然而))
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 枪杀)
+				      (NP-OBJ (ADJP (JJ 野生))
+					      (NP (NN 动物)))))
+			      (DEC 的))
+		      (NP (NN 事件)))
+	      (VP (ADVP (AD 却))
+		  (ADVP (AD 屡屡))
+		  (VP (VV 发生)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  野生 动物 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

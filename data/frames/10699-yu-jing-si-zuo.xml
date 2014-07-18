@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 语惊四座 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person whose words shock audience"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (NP-APP (NP-PN (NR 华视))
+				(ADJP (JJ 当家))
+				(NP (NN 主播)))
+			(NP-PN (NR 李艳秋)))
+		(VP (QP-TMP (OD 八十二)
+			    (CLP (M 年)))
+		    (PP-TMP (P 在)
+			    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 获颁)
+					 (NP-PN-OBJ (NR 金钟)
+						    (NN 奖))))
+				 (LC 时)))
+		    (VP (VV 语惊四座)
+			(PU ，)
+			(IP-OBJ (IP (NP-SBJ (NN 电视)
+					    (NN 新闻))
+				    (VP (ADVP (AD 常))
+					(VP (VV 遭)
+					    (NP-OBJ (NN 干预)))))
+				(PU ，)
+				(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+						(CP (IP (NP-SBJ (PN 她))
+							(VP (VV 得到)
+							    (NP-OBJ (-NONE- *T*-2))))
+						    (DEC 的))))
+				    (VP (ADVP (AD 只))
+					(VP (VC 是)
+					    (NP-PRD (PU 「)
+						    (NP (ADJP (ADVP (AD 最))
+							      (ADJP (JJ 佳)))
+							(NP (NN 傀儡)))
+						    (NP (NN 奖))
+						    (PU 」))))))))) 
+	</parse>
+	<arg n="0">
+	华视 当家 主播 李艳秋 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 获颁 金钟 奖 时 
+	</arg>
+	<arg n="m" f="tmp">
+	八十二 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

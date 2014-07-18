@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 走动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person moving around"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (QP (ADVP (AD 近))
+			     (QP (CD 五千)
+				 (CLP (M 坪))))
+			 (DEG 的))
+		    (NP (NN 卖场)))
+	    (PU ，)
+	    (VP (ADVP (AD 不))
+		(VP (VV 见)
+		    (NP-OBJ (NN 清洁)
+			    (NN 人员))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 到处))
+			    (VP (VV 走动))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	到处 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

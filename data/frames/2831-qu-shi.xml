@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 去世 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (PP (P 在)
+			       (LCP (NP (NP (NP (PN 他))
+					    (CP (WHNP-5 (-NONE- *OP*))
+						(IP (NP-SBJ (-NONE- *T*-5))
+						    (VP (ADVP (AD 已))
+							(VP (VV 去世)))))
+					    (NP (NN 夫人)))
+					(NP (NN 名)))
+				    (LC 下)))
+			   (DEG 的))
+		      (NP (NN 地产)))
+	      (VP (VE 有)
+		  (QP-OBJ (CD ５．８)
+			  (CLP (M 公顷))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-5 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

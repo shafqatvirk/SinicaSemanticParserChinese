@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 抢手 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP (NP-PN (NR 台湾))
+				(NP (NN 科技)
+				    (NN 产业)))
+			    (NP (NN 大老)))
+		    (NP-APP (NP-PN (NR 台积电))
+			    (NP (NN 董事长)))
+		    (NP-PN (NR 张忠谋)))
+	    (VP (VV 成为)
+		(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (ADVP (AD 最))
+					(VP (VA 抢手))))
+				(DEC 的)))
+			(NP (NN 大学)
+			    (NN 师资))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

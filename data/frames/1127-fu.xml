@@ -1,0 +1,117 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 负 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="bearer"/>
+      <role argnum="1" argrole="accountability, liability"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP (PN 其))
+		      (NP (NN 真实性)))
+	      (NP-SBJ (NP (PN 我))
+		      (NP (NN 部)))
+	      (VP (VV 负)
+		  (NP-OBJ (NN 法律)
+			  (NN 责任)))) 
+	  </parse>
+	  <arg n="0">
+	  我 部 	  
+	  </arg>
+	  <arg n="1">
+	  法律 责任 	  
+	  </arg>
+	  <arg n="m" f="TPC">
+	  其 真实性 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is unworthy of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (DNP (NP (NN 国家)
+					(NN 利益)
+					(CC 与)
+					(NN 人民)
+					(NN 福祉))
+				    (DEG 的))
+			       (ADJP (ADVP (AD 最))
+				     (ADJP (JJ 高)))
+			       (NP (NN 原则)))
+			   (LC 之下)))
+	      (PU ，)
+	      (NP-TMP (NT 未来))
+	      (NP-SBJ (ADVP (AD 不论是))
+		      (NP (NN 执政者)
+			  (CC 或)
+			  (NN 在野者)))
+	      (PU ，)
+	      (VP (ADVP (AD 都))
+		  (VP (VV 应该)
+		      (VP (VV 能)
+			  (VP (VP (ADVP (AD 不))
+				  (VP (VV 负)
+				      (NP-OBJ (DNP (NP (NN 人民))
+						   (DEG 的))
+					      (NP (NN 付托)))))
+			      (PU 、)
+			      (VP (ADVP (AD 善))
+				  (VP (VV 尽)
+				      (NP-OBJ (DNP (NP (PN 本身))
+						   (DEG 的))
+					      (NP (NN 职责)))))
+			      (PU ，)
+			      (VP (VV 实现)
+				  (NP-OBJ (NP (NP (NN 政党)
+						  (NN 政治))
+					      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (ADVP (AD 公平))
+							      (VP (VV 竞争))))))
+					  (PU 、)
+					  (NP (NP (NN 民主)
+						  (NN 政治))
+					      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							  (VP (VCD (VV 监督)
+								   (VV 制衡))))
+						      (DEC 的))
+					      (NP (NN 理想)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  不论是 执政者 或 在野者 
+	  </arg>
+	  <arg n="1">
+	  人民 的 付托 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  未来 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 国家 利益 与 人民 福祉 的 最 高 原则 之下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

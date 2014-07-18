@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 申办 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing applied for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NN 个体))
+		      (ADJP (JJ 私营))
+		      (NP (NN 企业)))
+	      (VP (VV 申办)
+		  (NP-OBJ (NN 营业)
+			  (NN 执照)))) 
+	  </parse>
+	  <arg n="0">
+	  个体 私营 企业 
+	  </arg>
+	  <arg n="1">
+	  营业 执照 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

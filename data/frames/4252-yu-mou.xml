@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 预谋 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing planned in advance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 郭辉))
+	      (VP (LCP-TMP (IP (NP-SBJ-1 (-NONE- *PRO*))
+			       (VP (SB 被)
+				   (VP (VV 辞退)
+				       (NP-OBJ (-NONE- *-1)))))
+			   (LC 后))
+		  (PU ，)
+		  (ADVP (AD 便))
+		  (VP (VCD (VV 预谋)
+			   (VV 策划))
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 抢劫)
+				  (NP-PN-SBJ (NR 龙河路)
+					     (NN 邮政)
+					     (NN 储蓄所))))))) 
+	  </parse>
+	  <arg n="0">
+	  郭辉 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 抢劫 龙河路 邮政 储蓄所 
+	  </arg>
+	  <arg n="m" f="adv">
+	  便 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 被 辞退 *-1 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

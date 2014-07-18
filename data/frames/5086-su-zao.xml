@@ -1,0 +1,141 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 塑造 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 moulds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-SBJ (NP (QP (CD 一))
+					    (NP (NN 国)))
+					(NP (NN 政经)))
+				(VP (VV 发展)))
+			    (DEC 的))
+		    (NP (NN 轨迹)))
+	    (PU ，)
+	    (VP (VP (VV 决定)
+		    (NP-OBJ (DNP (NP (QP (CD 一)
+					 (CLP (M 个)))
+				     (NP (NN 城市)))
+				 (DEG 的))
+			    (NP (NN 兴衰))))
+		(PU ，)
+		(VP (ADVP (AD 也))
+		    (ADVP (AD 悄然))
+		    (VP (VV 塑造)
+			(AS 著)
+			(NP-OBJ (DNP (NP (QP (CD 一)
+					     (CLP (M 个)))
+					 (NP (NN 城市)))
+				     (DEG 的))
+				(NP (NN 性格))))))) 
+	</parse>
+	<arg n="0">
+	一 国 政经 发展 的 轨迹 
+	</arg>
+	<arg n="1">
+	一 个 城市 的 性格 
+	</arg>
+	<arg n="m" f="adv">
+	悄然 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (PN 他))
+				(VP (MSP 所)
+				    (VP (VRD (VV 塑造)
+					     (VV 出来))
+					(NP-OBJ (-NONE- *T*-1)))))
+			    (DEC 的)))
+		    (NP (NN 骇客)
+			(NN 形象)))
+	    (VP (ADVP (AD 却))
+		(VP (VV 引起)
+		    (NP-OBJ (ADJP (ADVP (AD 很))
+				  (ADJP (JJ 大)))
+			    (NP (NN 争议)))))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 moulds"/>
+    <role argnum="2" argrole="entity arg1 is moulded as"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-PN (NR 蒋正信) )
+		    (DNP (LCP (NP (NN 眼) )
+			      (LC 中))
+			 (DEG 的))
+		    (NP (NN 排湾族)
+			(NN 百步蛇)
+			(NN 图案) ))
+	    (PU ，)
+	    (VP (ADVP (AD 更))
+		(ADVP (AD 从))
+		(ADVP (AD 未))
+		(VP (SB 被)
+		    (VP (VRD (VV 塑造)
+			     (VV 成))
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-2))
+					    (VP (VA 恐怖)
+						(CC 或)
+						(VA 可怕)))
+					(DEC 的)))
+				(NP (NN 形象) )))))) 
+	</parse>
+	<arg n="1">
+	蒋正信 眼 中 的 排湾族 百步蛇 图案 
+	</arg>
+	<arg n="2">
+	*OP* *T*-2 恐怖 或 可怕 的 形象 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	从 
+	</arg>
+	<arg n="m" f="adv">
+	更 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

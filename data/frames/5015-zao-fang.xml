@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 造访 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="visitor"/>
+    <role argnum="1" argrole="visited"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 张桂越))
+	    (VP (VP (VV 造访)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 位於)
+					    (NP-PN-OBJ (NR 以色列))))
+				    (DEC 的)))
+			    (NP (NN 和平)
+				(NN 学校))))
+		(PU ，)
+		(VP (VV 载回)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VA 满满)))
+				    (DEC 的)))
+			    (NP (NN 心得))))
+		(VP (VV 欲)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP (P 与)
+				    (NP (NN 观众)))
+				(VP (VV 共享))))))) 
+	</parse>
+	<arg n="0">
+	张桂越 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 位於 以色列 的 和平 学校 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (LCP (NP (NN 特展室))
+			      (LC 里))
+			 (DEG 的))
+		    (NP (NN 文物)))
+	    (NP-SBJ (NN 造型))
+	    (VP (VP (VA 独特))
+		(PU ，)
+		(VP (VV 宛若)
+		    (IP-OBJ (NP-SBJ (NN 外星人))
+			    (VP (VV 造访)))))) 
+	</parse>
+	<arg n="0">
+	外星人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

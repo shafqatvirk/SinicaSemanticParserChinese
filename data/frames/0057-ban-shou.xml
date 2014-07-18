@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 颁授 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="award giver"/>
+    <role argnum="1" argrole="award"/>
+    <role argnum="2" argrole="award receiver"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NP-APP (NP-PN (NP-PN (NR 香港))
+                             (ADJP (JJ 特别))
+                             (NP (NN 行政区)))
+                      (NP (NN 行政)
+                          (NN 长官)))
+              (NP-PN (NP (NR 董建华))))
+      (VP (NP-TMP (NT 今日)
+                  (PRN (PU （)
+                       (NP (NT 星期三))
+                       (PU ）)))
+          (PP-LOC (P 在)
+                  (NP (ADJP (JJ 前))
+                      (NP (NN 总督府))))
+          (VP (VV 颁授)
+              (NP-OBJ (DNP (NP (NP-PN (NP-PN (NR 香港))
+                                      (ADJP (JJ 特别))
+                                      (NP (NN 行政区)))
+                               (NP (NN 政府)
+                                   (NN 勋衔)
+                                   (NN 制度)))
+                           (DEG 的))
+                      (NP (NN 大紫荆)
+                          (NN 勋章)))
+              (PP (P 予)
+                  (NP (QP (CD 十二)
+                          (CLP (M 位)))
+                      (NP (NN 人士))))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> 香港 特别 行政区 行政 长官 董建华 </arg>
+	<arg n="M" f="TMP"> 今日 （ 星期三 ） </arg>
+	<arg n="M" f="LOC"> 在 前 总督府 </arg>
+	<V/>
+	<arg n="1"> 香港 特别 行政区 政府 勋衔 制度 的 大紫荆 勋章 </arg>
+	<arg n="2"> 予 十二 位 人士 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

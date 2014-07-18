@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 残留 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity left over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+				(VP (VV 抹除)
+				    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						(IP (NP-SBJ (-NONE- *T*-1))
+						    (VP (NP-TMP (ADJP (JJ 日据))
+								(NP (NN 时代)))
+							(VP (VV 残留)))))
+					    (NP (NN 文化)
+						(NN 影响)))))
+			    (DEC 的))
+		    (NP (NN 工作)))
+	    (VP (ADVP (AD 不断))
+		(ADVP (AD 在))
+		(VP (VV 进行)
+		    (AS 著)))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="tmp">
+	日据 时代 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

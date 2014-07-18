@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 前赴 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="goal"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DP (DT 该)
+			  (CLP (M 等)))
+		      (NP (NN 奖学金)))
+	      (NP-SBJ (NN 旨))
+	      (VP (VV 在)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 鼓励)
+			      (NP-OBJ (ADJP (JJ 优秀))
+				      (NP (NN 学生)))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 前赴)
+					  (NP-OBJ (NP (NN 海外))
+						  (ADJP (JJ 著名))
+						  (NP (NN 院校))))
+				      (VP (VV 继续)
+					  (VP (VV 升学))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  海外 著名 院校 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 毫无所获 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 has no achievement in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 寻找)
+			  (NP-OBJ (QP (OD 十七)
+				      (CLP (M 世)))
+				  (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VV 转世))))
+				  (NP (NN 活佛)))))
+	      (VP (ADVP (AD 却))
+		  (VP (VP-FOC (VV 历经)
+			      (QP-OBJ (ADVP (AD 将近))
+				      (QP (CD 十)
+					  (CLP (M 年)))))
+		      (VP (ADVP (AD 都))
+			  (VP (VV 毫无所获)))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 寻找 十七 世 *OP* *T*-1 转世 活佛 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

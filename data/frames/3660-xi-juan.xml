@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 席卷 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 sweeps across"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 价格)
+		      (NN 风暴))
+	      (VP (VV 席卷)
+		  (NP-PN-OBJ (NR 东亚)))) 
+	  </parse>
+	  <arg n="0">
+	  价格 风暴 
+	  </arg>
+	  <arg n="1">
+	  东亚 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP-HLN (NP-SBJ (NN 金融)
+			    (NN 风暴))
+		    (VP (VV 席卷))
+		    (PRN (PU ——)
+			 (IP-Q (NP-SBJ (NP-PN (NR 台湾))
+				       (NP (NN 产业)))
+			       (VP (VP (VC 是)
+				       (NP-PRD (NN 福)))
+				   (PU ？)
+				   (VP (VC 是)
+				       (NP-PRD (NN 祸))))
+			       (PU ？))))) 
+	  </parse>
+	  <arg n="0">
+	  金融 风暴 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

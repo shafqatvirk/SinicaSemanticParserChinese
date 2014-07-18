@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 全 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 成为)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-LOC (NN 国内))
+				      (NP-SBJ (NN 运输)
+					      (NN 方式))
+				      (VP (ADVP (AD 最))
+					  (VP (VA 全))))
+				  (DEC 的)))
+			  (NP (NN 港口))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  运输 方式 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <arg n="m" f="loc">
+	  国内 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

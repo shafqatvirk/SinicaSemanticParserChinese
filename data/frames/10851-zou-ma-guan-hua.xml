@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 走马观花 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 goes through quickly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 如果))
+		    (IP (NP-SBJ (NN 参观者))
+			(VP (ADVP (AD 事先))
+			    (PP-DIR (P 对於)
+				    (NP (NN 博物馆)
+					(NN 主题)))
+			    (ADVP (AD 不))
+			    (VP (VA 够)
+				(VP (VV 了解))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 可能)
+		(VP (ADVP (AD 就))
+		    (VP (VC 是)
+			(VP (VP (VV 走马观花))
+			    (PU ，)
+			    (VP (VV 看到)
+				(NP-OBJ (QP (CLP (M 些)))
+					(ADJP (JJ 老))
+					(NP (NN 文物))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="cnd">
+	如果 参观者 事先 对於 博物馆 主题 不 够 了解 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

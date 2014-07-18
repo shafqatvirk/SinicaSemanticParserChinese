@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 都市化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 causes to become cosmopolitan"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (LCP (NP (NN 飞跃))
+			      (LC 中))
+			 (DEG 的))
+		    (NP-PN (NR 台湾)))
+	    (PU ，)
+	    (NP-ADV (QP (CD 一))
+		    (NP (NN 方面)))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 九百万))
+		    (ADJP (JJ 专业))
+		    (NP (NN 劳工)))
+	    (VP (VV 聚集)
+		(PP (P 在)
+		    (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				 (CP (IP (NP-SBJ (-NONE- *T*-1))
+					 (VP (ADVP (AD 高度))
+					     (VP (VV 都市化))))
+				     (DEC 的)))
+			     (NP (NN 城市)))
+			 (LC 中))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	高度 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

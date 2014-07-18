@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 微小化 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 minimizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 微流体)
+		    (NN 晶片))
+	    (VP (VC 是)
+		(VP (VP (VV 结合)
+			(NP-OBJ (NP-APP (NN 生物)
+					(NN 技术)
+					(PU 、)
+					(NN 微电子)
+					(PU 、)
+					(NN 微机械)
+					(ETC 等等))
+				(NP (NN 技术))))
+		    (PU ，)
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (DNP (NP (LCP (NP (NN 实验室))
+						      (LC 中))
+						 (QP (CD 许多))
+						 (NP (NN 仪器)))
+					     (DEG 的))
+					(NP (NN 功能)))
+				(VP (VP (VV 微小化))
+				    (VP (PP-LOC (P 到)
+						(LCP (NP (NN 晶片))
+						     (LC 上)))
+					(VP (MSP 来)
+					    (VP (VV 处理)))))))))) 
+	</parse>
+	<arg n="0">
+	微流体 晶片 
+	</arg>
+	<arg n="1">
+	实验室 中 许多 仪器 的 功能 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 生物)
+		    (NN 晶片))
+	    (VP (VV 具有)
+		(NP-OBJ (CP-APP (IP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 微小化)))
+				    (PU 、)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 平行))
+					    (VP (VV 处理))))
+				    (PU 、)
+				    (IP (NP-SBJ (NN 速度))
+					(VP (VA 快)))
+				    (PU 、)
+				    (IP (NP-SBJ (-NONE- *pro*))
+					(VP (VV 可以)
+					    (VP (VV 看到)
+						(NP-OBJ (NN 全面)))))
+				    (ETC 等)))
+			(NP (NN 特性))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

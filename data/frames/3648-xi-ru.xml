@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 吸入 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing inhaled"/>
+      <role argnum="2" argrole="location arg1 is inhaled into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 蚊子))
+	      (VP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			       (VP (VV 进食)))
+			   (LC 时))
+		  (ADVP (AD 就))
+		  (VP (VV 会)
+		      (VP (BA 把)
+			  (IP (NP-SBJ (NN 植物)
+				      (NN 细胞)
+				      (NN 霉素))
+			      (VP (VV 吸入)
+				  (NP-OBJ (NN 体内)))))))) 
+	  </parse>
+	  <arg n="0">
+	  蚊子 
+	  </arg>
+	  <arg n="1">
+	  植物 细胞 霉素 
+	  </arg>
+	  <arg n="2">
+	  体内 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *pro* 进食 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

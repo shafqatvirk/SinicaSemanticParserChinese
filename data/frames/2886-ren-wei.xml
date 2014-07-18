@@ -1,0 +1,199 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 认为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing regarded as true"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (ADJP (QP (NP (NN 世界))
+				    (QP (OD 第一)))
+				(ADJP (JJ 大)))
+			  (NP (NN 峡谷)))
+		  (VP (PP (P 比)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (ADVP (AD 原先))
+					      (VP (VV 认为)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的)))))
+		      (ADVP (AD 更))
+		      (VP (VA 窄)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  原先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (VV 认为)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (ADJP (JJ 友好))
+				  (NP (NN 城市)))
+			  (VP (ADVP (AD 现))
+			      (ADVP (AD 已))
+			      (VP (VV 成为)
+				  (NP-OBJ (DNP (NP (NN 民间)
+						   (NN 外交))
+					       (DEG 的))
+					  (ADJP (JJ 主要))
+					  (NP (NN 渠道)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  友好 城市 现 已 成为 民间 外交 的 主要 渠道 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-IJ-TPC-1 (PU 「)
+			   (IP-CND (NP-SBJ (-NONE- *pro*))
+				   (VP (ADVP (CS 如果))
+				       (VP (VV 等)
+					   (IP-OBJ (NP-SBJ (NN 情势))
+						   (VP (ADVP (AD 完全))
+						       (VP (VA 明朗)))))))
+			   (PU ，)
+			   (NP-SBJ (NN 人家))
+			   (VP (ADVP (AD 就))
+			       (ADVP (AD 不))
+			       (VP (VV 卖给)
+				   (NP-OBJ (VV 你))))
+			   (SP 了)
+			   (PU ！)
+			   (PU 」))
+	      (NP-PN-SBJ (NR 高清愿))
+	      (VP (VV 认为)
+		  (IP-IJ (-NONE- *T*-1)))) 
+	  </parse>
+	  <arg n="0">
+	  高清愿 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP (P 据)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VV 认为))) )
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (DP (DT 此)
+				   (CLP (M 次)))
+			       (NP (NN 访问)))
+			   (DEG 的))
+		      (NP (NN 目的)))
+	      (VP (VC 是)
+		  (PP-PRD (P 为了)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VP (VV 改善)
+					  (NP-OBJ (-NONE- *RNR*-1)))
+				      (CC 和)
+				      (VP (VV 发展)
+					  (NP-OBJ-1 (NP (QP (CD 两))
+							(NP (NN 国)))
+						    (NP (NN 关系)))))
+				  (PU ，)
+				  (VP (VV 加强)
+				      (NP-OBJ (ADJP (JJ 双边))
+					      (NP (NN 经贸)
+						  (NN 合作))))
+				  (PU ，)
+				  (VP (VV 扩大)
+				      (NP-OBJ (NP-PN (NR 泰国))
+					      (DNP (PP (P 在)
+						       (NP-PN (NR 缅甸)))
+						   (DEG 的))
+					      (NN 投资))))) ) )) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity regarded"/>
+      <role argnum="2" argrole="entity regarded as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (LB 被)
+				  (IP-OBJ (NP-SBJ (QP (CD 一些))
+						  (NP (NN 专家)))
+					  (VP (VCP (VV 认为)
+						   (VC 是))
+					      (NP-OBJ (DNP (NP (QP (OD 第三)
+								   (CLP (M 次)))
+							       (NP (NN 信息)
+								   (NN 革命)))
+							   (DEG 的))
+						      (NP (NN 突破口)))))))
+			  (DEC 的)))
+		  (NP (ADJP (JJ 人工))
+		      (NP (NN 智能)))
+		  (NP (NN 技术))) 
+	  </parse>
+	  <arg n="0">
+	  一些 专家 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  第三 次 信息 革命 的 突破口 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

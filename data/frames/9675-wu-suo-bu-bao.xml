@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 无所不包 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 讨论)
+				      (NP-OBJ (-NONE- *T*-3))))
+			      (DEC 的)))
+		      (NP (NN 议题)))
+	      (VP (ADVP (AD 也))
+		  (PP-DIR (PP (P 从)
+			      (NP (NN 上)))
+			  (PP (P 到)
+			      (NP (NN 下))))
+		  (VP (VV 无所不包)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *pro* 讨论 *T*-3 的 议题 
+	  </arg>
+	  <arg n="m" f="dir">
+	  从 上 到 下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

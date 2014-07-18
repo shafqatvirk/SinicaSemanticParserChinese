@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 互调 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entities arg0 exchanges"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP-PN (NR 国民党))
+		      (NP (NN 方面)))
+	      (PU ，)
+	      (NP-TMP (NT 十一月)
+		      (NT 十五日))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 国民党))
+	      (VP (VP (VV 召开)
+		      (NP-OBJ (ADJP (JJ 临时))
+			      (NP (NN 中常会))))
+		  (PU ，)
+		  (VP (VV 通过)
+		      (IP-OBJ (NP-TPC (NP (NP-APP (NP-PN (NN 总统府))
+						  (NP (NN 秘书长)))
+					  (NP-PN (NR 黄昆辉)))
+				      (CC 与)
+				      (NP (NP-APP (NP-PN (NR 国民党))
+						  (NP (NN 秘书长)))
+					  (NP-PN (NR 章孝严))))
+			      (NP-SBJ (NN 职务))
+			      (VP (VV 互调)))))) 
+	  </parse>
+	  <arg n="1" f="psr">
+	  总统府 秘书长 黄昆辉 与 国民党 秘书长 章孝严 
+	  </arg>
+	  <arg n="1" f="pse">
+	  职务 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下令 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing ordered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 蒙古))
+			      (NP (NN 总统)))
+		      (NP-PN (NR 巴嘎班迪)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 下令)
+		      (IP-OBJ (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 成立)
+				      (NP-OBJ (ADJP (JJ 反酗酒))
+					      (NP (NN 工作组)))))
+			      (PU ，)
+			      (IP (NP-SBJ (-NONE- *pro*))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (NP (DP (DT 全))
+							   (NP (NN 国)))
+						       (NP (NN 范围)))
+						   (LC 内)))
+				      (VP (VV 开展)
+					  (NP-OBJ (ADJP (JJ 反酗酒))
+						  (NP (NN 斗争)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  蒙古 总统 巴嘎班迪 
+	  </arg>
+	  <arg n="1">
+	  *pro* 成立 反酗酒 工作组 ， *pro* 在 全 国 范围 内 开展 反酗酒 斗争 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

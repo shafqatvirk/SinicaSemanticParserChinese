@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 比出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="gesture arg0 makes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 小))
+		      (NP (NN 朋友)))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NN 台))
+			       (LC 前)))
+		  (VP (VV 比出)
+		      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 游泳)
+					  (PU 、)
+					  (VV 跳舞)
+					  (PU 、)
+					  (VV 跳跃)
+					  (PU 、)
+					  (VV 跑步)
+					  (ETC 等)))
+			      (NP (NN 动作)))))) 
+	  </parse>
+	  <arg n="0">
+	  小 朋友 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 游泳 、 跳舞 、 跳跃 、 跑步 等 动作 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 台 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

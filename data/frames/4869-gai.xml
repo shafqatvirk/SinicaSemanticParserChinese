@@ -1,0 +1,110 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 盖 </id>
+  <frameset id="f1" edef="build">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 builds"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (VV 盖)
+		    (AS 了)
+		    (NP-OBJ (NN 大厦)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	大厦 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (PN 我们))
+			 (DEG 的))
+		    (NP (NN 房子)))
+	    (VP (ADVP (AD 已经))
+		(VP (VRD (VV 盖)
+			 (VV 起来))
+		    (AS 了)))) 
+	</parse>
+	<arg n="1">
+	我们 的 房子 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="cover">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 covers"/>
+    <role argnum="2" argrole="entity arg1 is covered with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (LCP-LOC (NP (NN 莲雾)
+			     (NN 树))
+			 (LC 上))
+		(VP (VV 盖)
+		    (AS 著)
+		    (NP-OBJ (ADJP (JJ 黑))
+			    (NP (NN 蚊帐)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	莲雾 树 上 
+	</arg>
+	<arg n="2">
+	黑 蚊帐 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 落叶))
+	    (VP (VV 盖)
+		(NP-OBJ (NN 地)))) 
+	</parse>
+	<arg n="1">
+	地 
+	</arg>
+	<arg n="2">
+	落叶 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

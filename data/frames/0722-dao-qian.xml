@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 道歉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="apologizer"/>
+      <role argnum="1" argrole="aplogizing to"/>
+      <role argnum="2" argrole="aplogizing for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NN 科技厅)
+			      (NN 长官))
+		      (NP-PN (NR 田中真纪子)))
+	      (VP (NP-TMP (NT 今天))
+		  (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (PP-DIR (P 向)
+					       (NP (ADJP (JJ 众多))
+						   (NP (NN 记者))))
+				       (VP (VV 宣布)
+					   (NP-OBJ (DP (DT 这)
+						       (CLP (M 个)))
+						   (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							       (VP (VV 失败)))
+							   (DEC 的))
+						   (NP (NN 消息))))))
+			       (LC 时)))
+		  (VP (VP (VV 表示)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 深深)))
+					  (DEC 的)))
+				  (NP (NN 遗憾))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (PP-DIR (P 向)
+				  (NP (NP-PN (NR 日本))
+				      (DP (DT 全体))
+				      (NP (NN 国民))))
+			  (VP (VV 道歉)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  科技厅 长官 田中真纪子 
+	  </arg>
+	  <arg n="1">
+	  向 日本 全体 国民 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 *PRO* 向 众多 记者 宣布 这 个 *PRO* 失败 的 消息 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

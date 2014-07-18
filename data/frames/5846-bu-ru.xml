@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 不如 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is not as good as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 随著)
+		      (IP (NP-TPC (NP (NN 苏格兰人))
+				  (DNP (PP (P 对)
+					   (NP (NN 高尔夫)))
+				       (DEG 的))
+				  (NP (NN 热爱)))
+			  (QP-SBJ (CD 一)
+				  (CLP (M 日)))
+			  (VP (VV 胜过)
+			      (QP-OBJ (CD 一)
+				      (CLP (M 日))))))
+	      (PU ，)
+	      (NP-TPC (NN 军事)
+		      (NN 技能))
+	      (ADVP (AD 也))
+	      (QP-SBJ (CD 一)
+		      (CLP (M 日)))
+	      (VP (VV 不如)
+		  (QP-OBJ (CD 一)
+			  (CLP (M 日))))) 
+	  </parse>
+	  <arg n="0">
+	  一 日 	
+	  </arg>
+	  <arg n="1">
+	  一 日 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	
+	  </arg>
+	  <arg n="m" f="tpc">
+	  军事 技能 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  随著 苏格兰人 对 高尔夫 的 热爱 一 日 胜过 一 日 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

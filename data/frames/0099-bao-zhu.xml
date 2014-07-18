@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保住 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="protector"/>
+    <role argnum="1" argrole="thing protected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (DP-TPC (DT 另)
+              (QP (CD 一)
+                  (CLP (M 例))))
+      (NP-SBJ (-NONE- *pro*))
+      (VP (ADVP (AD 也))
+          (ADVP (AD 只))
+          (VP (VV 保住)
+              (AS 了)
+              (QP-OBJ (CD 一)
+                      (CLP (M 个)))))))
+	</parse>
+	<arg n="M" f="TPC"> 另 一 例 </arg>
+	<arg n="M" f="ADV"> 也 </arg>
+	<arg n="M" f="ADV"> 只 </arg>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> 一个 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>

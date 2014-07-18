@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 有别 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities which are different"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (ADJP (JJ 土)
+			      (JJ 洋))
+			(NP (NN 健身)))
+		(VP (VV 有别))) 
+	</parse>
+	<arg n="0">
+	土 洋 健身 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 长期))
+			    (VP (VRD (VV 发展)
+				     (VV 下来)))))
+		(PU ，)
+		(VP (VP (ADVP (AD 另))
+			(VP (VV 成)
+			    (NP-OBJ (QP (CD 一))
+				    (NP (NN 格)))))
+		    (PU ，)
+		    (VP (VRD (VV 演变)
+			     (VV 为))
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (PP (P 与)
+						    (NP (NP (NN 中原))
+							(NP (PU 「)
+							    (NN 显宗)
+							    (PU 」))))
+						(VP (VV 有别))))
+					(DEC 的)))
+				(NP (PU 「)
+				    (NN 密宗)
+				    (PU 」))
+				(NP (NN 教派))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="0" f="crd">
+	与 中原 「 显宗 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

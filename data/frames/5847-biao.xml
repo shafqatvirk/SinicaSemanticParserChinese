@@ -1,0 +1,138 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飙 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="point arg0 blows towards/rises to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-ADV (NP (NN 事实))
+		     (LC 上))
+	    (PU ，)
+	    (LCP-TMP (IP (NP-SBJ (NN 政策))
+			 (VP (ADVP (AD 尚))
+			     (ADVP (AD 未))
+			     (VP (VV 起步))))
+		     (LC 前))
+	    (PU ，)
+	    (NP-SBJ (NN 儿童)
+		    (NN 英语风))
+	    (VP (ADVP (AD 早))
+		(ADVP (AD 已))
+		(VP (VV 飙)
+		    (PP (P 向)
+			(NP (DP (DT 全))
+			    (NP-PN (NR 台))))))) 
+	</parse>
+	<arg n="0">
+	儿童 英语风 
+	</arg>
+	<arg n="1">
+	向 全 台 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="adv">
+	早 
+	</arg>
+	<arg n="m" f="tmp">
+	政策 尚 未 起步 前 
+	</arg>
+	<arg n="m" f="adv">
+	事实 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 股市))
+	    (VP (VP (ADVP (AD 则))
+		    (PP-TMP (P 在)
+			    (LCP (QP (OD 七十九)
+				     (CLP (M 年)))
+				 (LC 初)))
+		    (VP (VV 飙)
+			(PP (P 至)
+			    (NP (DNP (QP (CD 一万二千)
+					 (CLP (M 点)))
+				     (DEG 的))
+				(NP (NN 高点))))))
+		(PU ，)
+		(VP (ADVP (AD 然後))
+		    (ADVP (AD 迅即))
+		    (PP-LOC (P 在)
+			    (LCP (NP (QP (CD 八)
+					 (CLP (M 个)))
+				     (NP (NN 月)))
+				 (LC 内)))
+		    (VP (VV 跌落)
+			(PP (P 至)
+			    (NP (QP-APP (CD 二千五百)
+					(CLP (M 点)))
+				(NP (NN 谷底)))))))) 
+	</parse>
+	<arg n="0">
+	股市 
+	</arg>
+	<arg n="1">
+	至 一万二千 点 的 高点 
+	</arg>
+	<arg n="m" f="tmp">
+	在 七十九 年 初 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 让)
+			(NP-OBJ (NN 创意))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 无限))
+				(VP (VV 奔驰))))))
+		(PRN (PU ——)
+		     (NP-SBJ (NN 青少年))
+		     (VP (VV 飙)
+			 (NP-OBJ (PU 「)
+				 (NN 戏)
+				 (PU 」))))) 
+	</parse>
+	<arg n="0">
+	青少年 
+	</arg>
+	<arg n="1">
+	「 戏 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 征求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 solicits"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (DP (DT 这))
+			  (NP (NN 期间))))
+	      (PU ，)
+	      (NP-PN-SBJ (NP-PN (NP (DP (DT 全))
+				    (NP (NN 国)))
+				(NP (NN 人大)))
+			 (NP (NN 常委会)))
+	      (VP (VP (ADVP (AD 先后))
+		      (VP (VV 审议)
+			  (AS 了)
+			  (NP-OBJ (-NONE- *pro*))
+			  (QP-EXT (CD 五)
+				  (CLP (M 次)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (ADVP (AD 广泛))
+		      (VP (VV 征求)
+			  (NP-OBJ (NN 意见))))
+		  (PU ，)
+		  (VP (QP-ADV (CD 多)
+			      (CLP (M 次)))
+		      (ADVP (AD 反复))
+		      (VP (VV 修改))))) 
+	  </parse>
+	  <arg n="0">
+	  全 国 人大 常委会 
+	  </arg>
+	  <arg n="1">
+	  意见 
+	  </arg>
+	  <arg n="m" f="adv">
+	  广泛 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 这 期间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

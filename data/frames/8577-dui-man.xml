@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 堆满 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="place described"/>
+      <role argnum="1" argrole="thing which fills arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NP (NN 教室)
+			       (NN 前面))
+			   (QP (CD 两)
+			       (CLP (M 个)))
+			   (ADJP (JJ 方型))
+			   (NP (NN 篮子)))
+		       (LC 中))
+	      (VP (VV 堆满)
+		  (AS 了)
+		  (NP-OBJ (ADJP (JJ 绿色))
+			  (NP (NN 信件))))) 
+	  </parse>
+	  <arg n="0">
+	  教室 前面 两 个 方型 篮子 中 
+	  </arg>
+	  <arg n="1">
+	  绿色 信件 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

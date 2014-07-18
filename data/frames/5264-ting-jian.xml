@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 停建 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 stops building"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-PN-SBJ (NN 行政院))
+		    (VP (VV 停建)
+			(NP-OBJ (NN 核四))))
+	    (VP (VV 属於)
+		(NP-OBJ (DNP (NP (NP (NN 国家))
+				 (ADJP (JJ 重要))
+				 (NP (NN 政策)))
+			     (DEG 之))
+			(NP (NN 变更))))) 
+	</parse>
+	<arg n="0">
+	行政院 
+	</arg>
+	<arg n="1">
+	核四 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-DIR (P 针对)
+		    (NP (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (LCP-TMP (IP (NP-TMP (PU 「)
+							     (NT 五二○)
+							     (PU 」))
+						     (NP-SBJ (ADJP (JJ 新))
+							     (NP (NN 政府)))
+						     (VP (VV 就职)))
+						 (LC 以来))
+					(PU ，)
+					(VP (VV 导致)
+					    (NP-OBJ (NN 朝野))
+					    (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (ADVP (AD 尖锐))
+						    (VP (VV 对立)))))))
+				(DEC 的)))
+			(IP-APP (NP-SBJ (NN 核四))
+				(VP (VV 停建)))
+			(NP (NN 问题))))
+	    (PU ，)
+	    (NP-SBJ (NP (NP (DP (DT 上))
+			    (NP (NN 月)))
+			(NP-PN (NN 司法院))
+			(NP (NN 大法官)
+			    (NN 会议)))
+		    (ADJP (JJ 释字))
+		    (QP (OD 第五二○)
+			(CLP (M 号)))
+		    (NP (NN 解释文)))
+	    (VP (VV 做出)
+		(NP-OBJ (DNP (NP (PU 「)
+				 (NN 程序)
+				 (NN 瑕疵)
+				 (PU 」))
+			     (DEG 的))
+			(NP (NN 结论))))) 
+	</parse>
+	<arg n="1">
+	核四 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

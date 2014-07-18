@@ -1,0 +1,225 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 攻击 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 外星人))
+	    (VP (VV 攻击)
+		(NP-OBJ (NN 地球)))) 
+	</parse>
+	<arg n="0">
+	外星人 
+	</arg>
+	<arg n="1">
+	地球 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 巡弋))
+		    (NP (NN 飞弹)))
+	    (VP (ADVP (AD 远距))
+		(ADVP (AD 超低空))
+		(VP (VV 攻击)))) 
+	</parse>
+	<arg n="2">
+	巡弋 飞弹 
+	</arg>
+	<arg n="m" f="adv">
+	超低空 
+	</arg>
+	<arg n="m" f="adv">
+	远距 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (LCP (NP (NN 党))
+			     (LC 外)
+			     (NP (NN 势力)))
+			(VP (VV 攻击)))) 
+	</parse>
+	<arg n="0">
+	党 外 势力 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 中共))
+	    (VP (VV 可以)
+		(VP (VP (ADVP (AD 不))
+			(VP (VV 选择)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-TPC (-NONE- *T*-1))
+						(IP (IP (NP-SBJ (NN 造价))
+							(VP (VA 高)))
+						    (PU 、)
+						    (IP (NP-SBJ (NN 数量))
+							(VP (VA 有限)))))
+					    (DEC 的)))
+				    (NP (NN 导弹)
+					(NN 飞弹)))))
+		    (PU ，)
+		    (VP (ADVP (AD 而))
+			(PP-MNR (P 以)
+				(NP (QP (CD 大量))
+				    (CP (WHNP-2 (-NONE- *OP*))
+					(CP (IP (NP-TPC (-NONE- *T*-2))
+						(IP (IP (NP-SBJ (NN 造价))
+							(VP (VA 低)))
+						    (PU 、)
+						    (IP (NP-SBJ (NN 射程))
+							(VP (QP-PRD (CD 三百六十)
+								    (CLP (M 公里)))))))
+					    (DEC 的)))
+				    (NP (NN 火箭炮))))
+			(VP (VP (PP-DIR (P 从)
+					(NP (NN 沿海)
+					    (NN 基地)))
+				(VP (VV 攻击)
+				    (NP-OBJ (NN 我方)
+					    (NN 机场))))
+			    (PU ，)
+			    (VP (VV 压制)
+				(NP-OBJ (NN 我方)
+					(NN 空优)))))))) 
+	</parse>
+	<arg n="0">
+	中共 
+	</arg>
+	<arg n="1">
+	我方 机场 
+	</arg>
+	<arg n="2">
+	以 大量 *OP* *T*-2 造价 低 、 射程 三百六十 公里 的 火箭炮 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<arg n="m" f="dir">
+	从 沿海 基地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 因而))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (DP (DT 整)
+					(CLP (M 个)))
+				    (NP (NT 五四)))
+			    (VP (VV 攻击)
+				(DER 得)
+				(VP-EXT (VV 体无完肤))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	整 个 五四 
+	</arg>
+	<arg n="m" f="adv">
+	体无完肤 
+	</arg>
+	<arg n="m" f="dis">
+	因而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (NP-DIR (NN 空中))
+			    (PP-DIR (P 对)
+				    (NP (NN 地面)))
+			    (VP (VV 攻击))))
+		    (DEC 的))
+	    (NP (NN 能力))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	对 地面 
+	</arg>
+	<arg n="m" f="dir">
+	空中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (SB 被)
+				 (VP (VV 攻击))))
+			 (LC 时))
+		(VP (VE 有)
+		    (NP-OBJ (DNP (NP (ADJP (JJ 积极))
+				     (NP (NN 报复)))
+				 (DEG 之))
+			    (NP (NN 能力)))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

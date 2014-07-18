@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 脱节 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities which are disconnected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 台商))
+	    (VP (VP (PP-LOC (P 在)
+			    (NP (NN 大陆)))
+		    (VP (VV 打拚)))
+		(PU ，)
+		(VP (ADVP (AD 但))
+		    (ADVP (AD 并))
+		    (ADVP (AD 不))
+		    (VP (VV 希望)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP (P 与)
+					(NP-PN (NR 台湾)))
+				    (VP (VV 脱节)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="0" f="crd">
+	与 台湾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(PP-DIR (P 对於)
+		(NP (NP (ADJP (JJ 老))
+			(NP (NN 人)))
+		    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VCD (VV 脱节)
+					 (VV 脱线))))
+			    (DEC 的))
+		    (NP (NN 情感)
+			(NN 表达))
+		    (NP (NN 方式)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 肇始於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="time/thing arg0 starts from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(CLP (M 起)))
+		    (DNP (PP (P 有关)
+			     (NP-PN (NR 宋楚瑜)))
+			 (DEG 的))
+		    (NP (NN 金钱)
+			(NN 数字))
+		    (NP (NN 疑云)))
+	    (PU ，)
+	    (VP (VV 肇始於)
+		(NP-OBJ (DNP (NP (NP-APP (NN 立委))
+				 (NP-PN (NR 杨吉雄)))
+			     (DEG 的))
+			(NP (NN 举发))))) 
+	</parse>
+	<arg n="0">
+	这 起 有关 宋楚瑜 的 金钱 数字 疑云 
+	</arg>
+	<arg n="1">
+	立委 杨吉雄 的 举发 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

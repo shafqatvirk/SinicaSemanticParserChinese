@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 镌刻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="location arg0 is engraved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (NP (NN 园))
+		       (LC 中))
+	      (NP-SBJ (NP (NN 纪念碑))
+		      (NP (NN 正面)))
+	      (VP (VV 镌刻)
+		  (AS 着)
+		  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 邓小平)
+						 (NN 同志))
+				      (VP (ADVP (AD 亲笔))
+					  (VP (VV 题写)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (DEC 的)))
+			  (IP-APP (PU “)
+				  (NP-SBJ (NP (NP-PN (NR 皖南))
+					      (NP (NN 事变)))
+					  (ADJP (JJ 死难))
+					  (NP (NN 烈士)))
+				  (VP (VA 永垂不朽))
+				  (PU ”))
+			  (QP (CD １２)
+			      (CLP (M 个)))
+			  (ADJP (JJ 大))
+			  (NP (NN 字))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* 邓小平 同志 亲笔 题写 *T*-1 的 “ 皖南 事变 死难 烈士 永垂不朽 ” １２ 个 大 字 
+	  </arg>
+	  <arg n="1">
+	  纪念碑 正面 
+	  </arg>
+	  <arg n="m" f="loc">
+	  园 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

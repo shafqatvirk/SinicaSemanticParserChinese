@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 画 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 draws"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (ADVP (AD 不))
+		    (VP (VV 要)
+			(VP (VV 画)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VA 空泛)))
+					    (DEC 的)))
+				    (NP (NN 大饼))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 空泛 的 大饼 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (DP (DT 这些))
+		(CP (WHNP-4 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-4))
+			    (VP (VV 需要)
+				(VP (VV 塑)
+				    (PU 、)
+				    (VV 堆)
+				    (PU 、)
+				    (VV 捏)
+				    (PU 、)
+				    (VV 贴)
+				    (PU 、)
+				    (VV 刻)
+				    (PU 、)
+				    (VV 画))))
+			(DEC 的)))
+		(NP (NN 陶俑))) 
+	</parse>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 这样))
+		(VP (VRD (VV 画)
+			 (VV 起来))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	这样 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

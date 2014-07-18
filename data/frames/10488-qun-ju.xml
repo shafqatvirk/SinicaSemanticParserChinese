@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 群聚 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities gathering together"/>
+    <role argnum="1" argrole="place arg0 gathers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (CP (WHNP-2 (-NONE- *OP*))
+		(CP (NP-TPC (-NONE- *T*-2))
+		    (IP (IP (NP-SBJ (NN 街道))
+			    (VP (VV 密织如锦)))
+			(PU 、)
+			(IP (NP-SBJ (NN 古迹))
+			    (VP (VV 群聚))))
+		    (DEC 的)))
+	    (NP-PN (NR 新竹市))) 
+	</parse>
+	<arg n="0">
+	古迹 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

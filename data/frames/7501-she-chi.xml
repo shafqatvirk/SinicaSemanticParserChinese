@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 奢侈 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (DP-ADV (DT 每)
+				(CLP (M 天)))
+			(VP (VV 能)
+			    (VP (VP (VV 挪出)
+				    (NP-OBJ (QP (QP (CD 一)
+						    (CLP (-NONE- *RNR*-1)))
+						(PU 、)
+						(QP (CD 两)
+						    (CLP-1 (M 个))))
+					    (NP (NN 钟头))))
+				(VP (VV 运动))))))
+	    (VP (ADVP (AD 已经))
+		(VP (VC 是)
+		    (VP (VA 奢侈))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 每 天 能 挪出 一 *RNR*-1 、 两 个 钟头 运动 
+	</arg>
+	<arg n="m" f="adv">
+	已经 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

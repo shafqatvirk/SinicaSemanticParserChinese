@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 受教於 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 is taught by/in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (PP-LOC (P 在)
+		      (LCP (NP (NN 鼻笛)
+			       (NN 传说))
+			   (LC 中)))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 原住民))
+		      (NP (NP (DNP (PP (P 对)
+				       (NP (NN 荒野)))
+				   (DEG 的))
+			      (NP (NN 开放)
+				  (NN 态度)))
+			  (PU ，)
+			  (CC 与)
+			  (NP (DNP (PP (P 对)
+				       (NP (NN 自然)))
+				   (DEG 的))
+			      (NP (NN 参与)))))
+	      (PU ，)
+	      (VP (VV 可能)
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (-NONE- *T*-1))
+							      (VP (VP (VV 运转於)
+								      (NP-OBJ (NN 机械)
+									      (NN 文明)))
+								  (PU 、)
+								  (VP (VV 受教於)
+								      (NP-OBJ (NN 理性主义)))))
+							  (DEC 的)))
+						  (ADJP (JJ 现代))
+						  (NP (NN 人)))
+					  (VP (ADVP (AD 难以))
+					      (VP (VV 想像)
+						  (NP-OBJ (-NONE- *T*-2)))))
+				      (DEC 的))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  理性主义 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

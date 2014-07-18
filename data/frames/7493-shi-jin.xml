@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 使尽 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 resorts exhaustively to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NN 马拉松)
+		    (PU 、)
+		    (NN 持久战))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 十八)
+			(CLP (M 般)))
+		    (NP (NN 武艺)))
+	    (VP (VV 使尽))) 
+	</parse>
+	<arg n="1">
+	十八 般 武艺 
+	</arg>
+	<arg n="m" f="tpc">
+	马拉松 、 持久战 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

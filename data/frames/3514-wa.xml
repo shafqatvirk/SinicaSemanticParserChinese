@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挖 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing dug"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (QP (CD 许多))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 挖)
+				  (NP-OBJ (NN 金))))
+			  (DEC 的)))
+		  (NP (NN 农民))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  金 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-TPC-3 (CP (WHNP-4 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (VP (VV 淘金))
+					(VP (MSP 所)
+					    (VP (VV 挖)
+						(NP-OBJ (-NONE- *T*-4))))))
+				(DEC 的)))
+			(DNP (QP (CD 十几)
+				 (CLP (M 米)))
+			     (DEG 的))
+			(NP (NN 洞)))
+	      (NP-SBJ (PN 到处))
+	      (VP (ADVP (AD 都))
+		  (VP (VC 是)
+		      (NP-PRD (-NONE- *-3))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-4 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 忧虑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is worried about"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VE 有)
+		(IP-OBJ (NP-SBJ (NN 人))
+			(VP (ADVP (AD 则))
+			    (VP (VV 忧虑)
+				(PU ，)
+				(IP-OBJ (CP-CND (ADVP (CS 一旦))
+						(IP (IP (NP-SBJ (NN 土地))
+							(VP (SB 被)
+							    (VP (VV 徵收))))
+						    (PU 、)
+						    (IP (NP-SBJ (NN 房子))
+							(VP (VV 拆)
+							    (AS 了)))))
+					(PU ，)
+					(NP-SBJ (NN 家族))
+					(VP (ADVP (AD 从此))
+					    (ADVP (AD 也))
+					    (ADVP (AD 就))
+					    (VP (VV 散)
+						(AS 了))))))))) 
+	</parse>
+	<arg n="0">
+	人 
+	</arg>
+	<arg n="1">
+	一旦 土地 被 徵收 、 房子 拆 了 ， 家族 从此 也 就 散 了 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

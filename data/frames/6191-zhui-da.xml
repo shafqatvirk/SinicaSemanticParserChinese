@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 追打 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (VP (VV 打)
+		    (AS 著)
+		    (NP-OBJ (NN 赤脚)))
+		(PU ，)
+		(VP (VV 挺)
+		    (AS 著)
+		    (NP-OBJ (DNP (ADJP (JJ 胖墩墩))
+				 (DEG 的))
+			    (NP (NN 身子))))
+		(VP (PP-LOC (P 在)
+			    (LCP (NP (NN 街))
+				 (LC 上)))
+		    (VP (VV 追打)
+			(NP-OBJ (NN 抢匪)))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	抢匪 
+	</arg>
+	<arg n="n" f="loc">
+	在 街 上 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

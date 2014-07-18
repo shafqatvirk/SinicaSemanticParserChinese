@@ -1,0 +1,94 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 体验 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="people described"/>
+    <role argnum="1" argrole="thing arg0 experiences"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 穿上)
+			    (NP-OBJ (NN 戏服)))
+			(PU 、)
+			(VP (VV 走进)
+			    (NP-OBJ (NN 布景)))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (NP (NN 青少年)))
+	    (VP (ADVP (AD 正))
+		(VP (VV 体验)
+		    (AS 著)
+		    (NP-OBJ (DNP (NP (NN 戏剧))
+				 (DEG 的))
+			    (NP (NN 魅力)))))) 
+	</parse>
+	<arg n="0">
+	许多 青少年 
+	</arg>
+	<arg n="1">
+	戏剧 的 魅力 
+	</arg>
+	<arg n="m" f="adv">
+	正 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 穿上 戏服 、 走进 布景 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-2 (QP-TMP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-ADV (-NONE- *T*-1))
+					  (PP-LOC (P 在)
+						  (NP-PN (NR 英国)))
+					  (VP (VV 留学))))
+				  (DEC 的)))
+			  (QP (CD 三)
+			      (CLP (M 年))))
+		  (PU ，)
+		  (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 才))
+		      (VP (VV 体验)
+			  (IP-OBJ (NP-SBJ (PN 自己))
+				  (VP (CC 既)
+				      (VP (ADVP (AD 不))
+					  (VP (VC 是)
+					      (NP-PRD (NN 中国人))))
+				      (PU ，)
+				      (CC 也)
+				      (VP (ADVP (AD 不))
+					  (VP (VC 是)
+					      (NP-PRD (NN 英国人))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	自己 既 不 是 中国人 ， 也 不 是 英国人 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="tmp">
+	*OP* *pro* *T*-1 在 英国 留学 的 三 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

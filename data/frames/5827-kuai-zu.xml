@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 跨足 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 steps into"/>
+    <role argnum="2" argrole="thing arg0 steps from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (ADVP (AD 早))
+				    (ADVP (AD 已))
+				    (VP (VV 站稳)
+					(NP-OBJ (NP (ADJP (JJ 传统))
+						    (NP (NN 媒体)))
+						(NP (NN 市场))))))
+			    (DEC 的)))
+		    (NP-PN (NR 联合报系)))
+	    (VP (VP (LCP-TMP (QP (ADVP (AD 近))
+				 (QP (CD 一)
+				     (CLP (M 年))))
+			     (LC 前))
+		    (PP-LOC (P 在)
+			    (LCP (NP (ADJP (JJ 联合))
+				     (NP (NN 新闻网)))
+				 (LC 下)))
+		    (VP (VV 架设)
+			(AS 了)
+			(NP-OBJ (NP-PN (PU 「)
+				       (NR udnjob)
+				       (PU 」))
+				(NP (NN 人力)
+				    (NN 网站)))))
+		(PU ，)
+		(VP (ADVP (AD 如今))
+		    (ADVP (AD 又))
+		    (VP (VP (VV 投下)
+			    (NP-OBJ (QP (CD 二亿)
+					(CLP (M 元)))
+				    (NP (NN 资本))))
+			(VP (VV 跨足)
+			    (NP-OBJ (NN 就业)
+				    (NN 情报志))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-3 早 已 站稳 传统 媒体 市场 的 联合报系 
+	</arg>
+	<arg n="1">
+	就业 情报志 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<arg n="m" f="tmp">
+	如今 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-DIR (P 从)
+				(NP (NN 医检师)))
+			(VP (VV 跨足)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 做)
+					(NP-OBJ (NN 田野)
+						(NN 调查)))))))
+	    (PU ，)
+	    (NP-SBJ (DNP (NP-PN (NR 邓相扬))
+			 (DEG 的))
+		    (NP (PU 「)
+			(NN 专业性)
+			(PU 」)))
+	    (VP (ADVP (AD 多少))
+		(VP (VV 受到)
+		    (NP-OBJ (NN 质疑))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*PRO* 做 田野 调查 
+	</arg>
+	<arg n="2">
+	从 医检师 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-PN-SBJ (NR 邓相扬))
+		(VP (PP-DIR (P 由)
+			    (NP (NN 医检师)))
+		    (VP (VV 跨足)
+			(NP-OBJ (NP (NN 地方)
+				    (NN 文史))
+				(NP (NN 工作)))))) 
+	</parse>
+	<arg n="0">
+	邓相扬 
+	</arg>
+	<arg n="1">
+	地方 文史 工作 
+	</arg>
+	<arg n="2">
+	由 医检师 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

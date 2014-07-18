@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 追随 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 follows"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (ADVP (AD 也))
+		    (VP (VC 是)
+			(VP (PP-LOC (P 在)
+				    (LCP (NP (NP (NP (ADJP (JJ 先秦))
+						     (NP (NN 诸子)))
+						 (DP (DT 各))
+						 (NP (NN 家)))
+					     (NP (NN 思想)))
+					 (LC 中)))
+			    (VP (VP (ADVP (AD 左右))
+				    (VP (VV 采获)))
+				(PU 、)
+				(VP (VCD (VV 指摘)
+					 (VV 纠正)))))))
+		(PU ，)
+		(VP (ADVP (AD 甚至))
+		    (VP (VV 加入)
+			(NP-OBJ (DNP (PP (P 对)
+					 (NP (NN 阴阳学家)))
+				     (DEG 的))
+				(NP (NN 兴味)))))
+		(PU ，)
+		(VP (ADVP (AD 最後))
+		    (ADVP (AD 才))
+		    (VP (VE 有)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *pro*))
+					    (VP (VP (VV 追随)
+						    (NP-OBJ (NN 时代)
+							    (NN 潮流)))
+						(VP (MSP 而)
+						    (VP (VV 兴起)
+							(NP-OBJ (-NONE- *T*-1))))))
+					(DEC 的)))
+				(ADJP (JJ 综合))
+				(NP (NN 思想))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	时代 潮流 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

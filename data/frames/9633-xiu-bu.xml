@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 修补 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 mends"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VE 有)
+			  (IP-OBJ (NP-SBJ (NP (NN 桧木))
+					  (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (VV 与生俱来)))
+						  (DEC 的)))
+					  (NP (NN 生命)
+					      (NN 力量)))
+				  (VP (VV 庇佑)))))
+	      (PU ，)
+	      (NP-SBJ (NN 大地))
+	      (VP (ADVP (AD 终))
+		  (VP (VV 能)
+		      (VP (ADVP (AD 逐渐))
+			  (VP (VV 修补)
+			      (PU 、)
+			      (VA 稳定)))))) 
+	  </parse>
+	  <arg n="1">
+	  大地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐渐 
+	  </arg>
+	  <arg n="m" f="adv">
+	  终 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 有 桧木 *OP* *T*-2 与生俱来 的 生命 力量 庇佑 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

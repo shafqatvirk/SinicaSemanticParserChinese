@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 超 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="surpasser"/>
+    <role argnum="1" argrole="thing surpassed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (NP-SBJ (NP-TMP (NT 今年))
+                  (NP (DP (DT 全))
+                      (NP (NN 国)))
+                  (ADJP (JJ 年))
+                  (NP (NN 煤层气)
+                      (NN 利用量)))
+          (VP (ADVP (AD 将))
+              (VP (VV 超)
+                  (QP-OBJ (CD 四亿)
+                          (CLP (M 立方米)))))))
+	</parse>
+	<arg n="0"> 今年 全 国 年 煤层气 利用量 </arg>
+	<arg n="M" f="TMP"> 将 </arg>
+	<V/>
+	<arg n="1"> 四亿 立方米 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 倾家荡产 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 埋下)
+		(AS 了)
+		(NP-OBJ (CP-APP (IP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+						 (VP (ADVP (AD 日後))
+						     (VP (VV 暴跌))))
+					     (LC 时))
+				    (IP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 倾家荡产)))
+					(PU 、)
+					(IP (NP-SBJ (NN 债务))
+					    (VP (VV 缠身)))))
+				(DEC 的))
+			(NP (NN 恶因))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	*pro* 日後 暴跌 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

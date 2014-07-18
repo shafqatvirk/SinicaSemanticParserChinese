@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指陈 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 points out/says"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 台湾区))
+			      (NP (NP (NP (ADJP (JJ 人造))
+					  (NP (NN 纤维)))
+				      (NP (NN 加工)
+					  (NN 丝)))
+				  (NP (NN 工业)))
+			      (NP (NN 同业)
+				  (NN 公会)
+				  (NN 理事长)))
+		      (PU 、)
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-MNR (P 以)
+					      (NP-PN (PU 「)
+						     (NR 海鸥牌)
+						     (PU 」)))
+				      (VP (VV 行销)
+					  (NP-OBJ (NN 全球)))))
+			      (DEC 的)))
+		      (NP-APP (NP-PN (NR 宜进)
+				     (NN 实业))
+			      (NP (NN 董事长)))
+		      (NP-PN (NR 詹正田)))
+	      (VP (ADVP (AD 忿忿))
+		  (VP (VV 指陈)
+		      (PU ：)
+		      (IP-OBJ (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-TPC (-NONE- *T*-2))
+						      (ADVP (AD 原先))
+						      (QP-SBJ (CD 一)
+							      (CLP (M 公斤)))
+						      (VP (QP-PRD (CD 一块八)
+								  (CLP (M 美金)))))
+						  (DEC 的)))
+					  (NP (NN 加工)
+					      (NN 丝)))
+				  (PU ，)
+				  (VP (NP-TMP (NT 目前))
+				      (VP (VRD (VV 滑落)
+					       (VV 至))
+					  (QP-OBJ (CD 一块三)))))
+			      (PU ，)
+			      (IP (NP-SBJ (NN 跌幅))
+				  (VP (VV 达到)
+				      (QP-OBJ (CD 三成)))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾区 人造 纤维 加工 丝 工业 同业 公会 理事长 、 *OP* *T*-1 以 「 海鸥牌 」 行销 全球 的 宜进 实业 董事长 詹正田 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 原先 一 公斤 一块八 美金 的 加工 丝 ， 目前 滑落 至 一块三 ， 跌幅 达到 三成 
+	  </arg>
+	  <arg n="m" f="adv">
+	  忿忿 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

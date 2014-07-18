@@ -1,0 +1,28 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 摆放 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="theme"/>
+    <role argnum="2" argrole="location"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (NN 贺礼))
+      (VP (ADVP (AD 日後))
+          (VP (VV 摆放)
+              (NP-OBJ (NN 博物馆))))
+      (PU 。)))
+	</parse>
+	<arg n="1"> 贺礼 </arg>
+	<V/>
+	<arg n="2"> 博物馆 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>

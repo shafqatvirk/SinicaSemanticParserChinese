@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 卓有 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing achieved in the area of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (PRN (PU （)
+		       (NP (ADJP (JJ 小))
+			   (NP (NN 标题)))
+		       (PU ）))
+		  (NP-SBJ (NP-PN (NR 广东)
+				 (NR 澄海市))
+			  (NP (NN 侨务)
+			      (NN 侨联)
+			      (NN 工作)))
+		  (VP (VV 卓有)
+		      (NP-OBJ (NN 成效)))) 
+	  </parse>
+	  <arg n="0">
+	  广东 澄海市 侨务 侨联 工作 
+	  </arg>
+	  <arg n="1">
+	  成效 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

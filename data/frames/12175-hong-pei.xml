@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 烘培 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 bakes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-TPC (DNP (LCP (NP (NN 发酵))
+				(LC 后))
+			   (DEG 的))
+		      (NP (NN 炒菁)
+			  (PU 、)
+			  (NN 揉捻)
+			  (PU 、)
+			  (NN 解块)
+			  (CC 与)
+			  (NN 烘培)))
+	      (PU ，)
+	      (QP-SBJ (CD 一)
+		      (CLP (M 步步)))
+	      (VP (ADVP (AD 都))
+		  (VP (VRD (VV 关系)
+			   (VV 到))
+		      (NP-OBJ (DNP (NP (NN 成品))
+				   (DEG 的))
+			      (NP (NN 好坏)))))) 
+	  </parse>
+	  <arg n="m" f="tmp">
+	  发酵 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

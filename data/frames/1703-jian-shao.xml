@@ -1,0 +1,221 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减少 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="reducer"/>
+      <role argnum="1" argrole="thing reduced"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 中方))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (VV 采取)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VCD (VA 积极)
+						       (VA 可行))))
+					  (DEC 的)))
+				  (NP (NN 步骤))))
+		      (PU ，)
+		      (VP (ADVP (AD 进一步))
+			  (VP (VV 降低)
+			      (NP-OBJ (NN 关税))))
+		      (PU ，)
+		      (VP (VV 减少)
+			  (NP-OBJ (DNP (NP (ADJP (JJ 非))
+					   (NP (NN 关税)
+					       (NN 管理)))
+				       (DEG 的))
+				  (NP (NN 措施))))
+		      (PU ，)
+		      (VP (VV 改善)
+			  (NP-OBJ (NN 市场)
+				  (NN 准入)
+				  (NN 条件)))))) 
+	  </parse>
+	  <arg n="0">
+	  中方 
+	  </arg>
+	  <arg n="1">
+	  非 关税 管理 的 措施 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (NN 其中))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (QP (OD 第一))
+			       (NP (NN 季度)))
+			   (DEG 的))
+		      (NP (NN 利润额)))
+	      (VP (PP (P 比)
+		      (NP (NP (NT 去年))
+			  (DP (DT 同))
+			  (NP (NN 期))))
+		  (VP (VV 减少)
+		      (QP-OBJ (CD 百分之五十八)))))
+	  </parse>
+	  <arg n="1">
+	  第一 季度 的 利润额 
+	  </arg>
+	  <arg n="2">
+	  比 去年 同 期 
+	  </arg>
+	  <arg n="m" f="ext">
+	  百分之五十八 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 进口))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 会)
+		      (VP (VV 减少)))))
+	  </parse>
+	  <arg n="1">
+	  进口 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-LOC (P 在)
+		      (LCP (NP (CP-APP (IP (NP-SBJ (NN 世界)
+						   (NN 经济)
+						   (NN 一体化))
+					   (VP (VV 与日俱增)))
+				       (DEC 的))
+			       (NP (NN 环境)))
+			   (LC 下)))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 各))
+		      (NP (NN 国)))
+	      (VP (VP (VV 面对)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 全球化))
+					  (VP (VV 带来)
+					      (NP-OBJ (-NONE- *T*-1))))
+				      (DEC 的)))
+			      (NP (NN 挑战))))
+		  (PU ，)
+		  (VP (VV 应)
+		      (VP (VP (PP-MNR (P 通过)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VV 持续)
+						  (VP (VV 推行)
+						      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+								  (CP (IP (NP-SBJ (-NONE- *T*-2))
+									  (VP (VA 健全)))
+								      (DEC 的)))
+							      (NP (NN 经济)
+								  (NN 政策)))))
+					      (CC 以及)
+					      (VP (VV 深化)
+						  (NP-OBJ (NN 结构)
+							  (NN 改革))))))
+			      (VP (MSP 来)
+				  (VP (PP-DIR (P 从)
+					      (LCP (NP (NN 全球化)
+						       (NN 进程))
+						   (LC 中)))
+				      (DVP (NP (ADJP (JJ 最大))
+					       (NP (NN 限度)))
+					   (DEV 地))
+				      (VP (VV 受益)))))
+			  (CC 并)
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (ADJP (JJ 负面))
+					      (NP (NN 影响)))
+				      (VP (VRD (VV 减少)
+					       (VV 到))
+					  (NP-OBJ (ADJP (JJ 最小))
+						  (NP (NN 程度)))))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  各 国 
+	  </arg>
+	  <arg n="1">
+	  负面 影响 
+	  </arg>
+	  <arg n="3">
+	  最小 程度 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 世界 经济 一体化 与日俱增 的 环境 下 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NN 国务院))
+		      (NP (NN 组成)
+			  (NN 部门)))
+	      (VP (PP-DIR (P 由)
+			  (QP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 原有)
+					      (NP-OBJ (-NONE- *T*-2))))
+				      (DEC 的)))
+			      (QP (CD 四十)
+				  (CLP (M 个)))))
+		  (VP (VRD (VV 减少)
+			   (VV 为))
+		      (QP-OBJ (CD 二十九)
+			      (CLP (M 个)))))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  国务院 组成 部门 
+	  </arg>
+	  <arg n="2">
+	  由 *OP* *pro* 原有 *T*-2 的 四十 个 
+	  </arg>
+	  <arg n="3">
+	  二十九 个 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

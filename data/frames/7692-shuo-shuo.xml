@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 说说 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (NP-SBJ (DNP (NP (PN 她))
+			 (DEG 的))
+		    (NP (NN 朋友)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 看)
+			    (NP-OBJ (PN 她))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (ADVP (AD 时常))
+				    (VP (VV 碰)
+					(DER 得)
+					(VP-EXT (VV 头破血流)))))))
+		(PU ，)
+		(ADVP (AD 也))
+		(ADVP (AD 不时))
+		(VP (VV 要)
+		    (VP (VV 说说)
+			(NP-OBJ (PN 她)))))) 
+	</parse>
+	<arg n="0">
+	她 的 朋友 
+	</arg>
+	<arg n="1">
+	她 
+	</arg>
+	<arg n="m" f="adv">
+	不时 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 看 她 *PRO* 时常 碰 得 头破血流 
+	</arg>
+	<arg n="m" f="dis">
+	但是 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

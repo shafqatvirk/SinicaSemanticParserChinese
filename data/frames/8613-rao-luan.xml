@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 扰乱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity arg0 disturbs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 铃声))
+	      (VP (VV 扰乱)
+		  (NP-OBJ (NN 病人)
+			  (CC 与)
+			  (NN 医疗)
+			  (NN 人员)))) 
+	  </parse>
+	  <arg n="0">
+	  铃声 
+	  </arg>
+	  <arg n="1">
+	  病人 与 医疗 人员 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

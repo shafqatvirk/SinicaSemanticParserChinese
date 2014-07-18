@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="experiencer"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 我们))
+	      (VP (VV 会)
+		  (VP (ADVP (AD 进一步))
+		      (VP (VV 深化)
+			  (NP-OBJ (NN 金融)
+				  (NN 体制)
+				  (NN 改革)))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  进一步 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  金融 体制 改革 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 令)
+				  (NP-OBJ (NP-PN (NR 东南亚))
+					  (NP (NN 金融)
+					      (NN 危机)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 深化)))))
+			  (DEC 的)))
+		  (QP (CD 一)
+		      (CLP (M 个)))
+		  (NP (NN 原因))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 旅居 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="place of residence"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 旅居)
+				      (NP-OBJ (NP-PN (NR 美国))
+					      (NP-PN (PU “)
+						     (NR 硅谷)
+						     (PU ”)))))
+			      (DEC 的)))
+		      (ADJP (JJ 潮籍))
+		      (NP (NN 科学家)))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 表示)
+		      (NP-OBJ (CP (WHPP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-PRP (-NONE- *T*-2))
+					      (VP (VP (VV 到)
+						      (LCP-OBJ (NP (NN 区))
+							       (LC 内)))
+						  (VP (VV 创办)
+						      (NP-OBJ (NP (ADJP (JJ 高新))
+								  (NP (NN 技术)))
+							      (NP (NN 产业)))))))
+				      (DEC 的)))
+			      (NP (NN 意愿)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  美国 “ 硅谷 ” 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

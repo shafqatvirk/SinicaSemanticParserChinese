@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 弭平 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 gets rid of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (QP (CD 两千三百万))
+		    (NP (NN 人民)))
+	    (VP (PP-MNR (P 以)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 无比))
+					    (VP (VA 坚定))))
+				    (DEC 的)))
+			    (NP (NN 意志))))
+		(PU ，)
+		(VP (VP (PP-MNR (P 用)
+				(NP (NN 爱)))
+			(VP (VV 弭平)
+			    (NP-OBJ (NN 敌意))))
+		    (PU 、)
+		    (VP (PP-MNR (P 以)
+				(NP (NN 希望)))
+			(VP (VV 克服)
+			    (NP-OBJ (NN 威胁))))
+		    (PU 、)
+		    (VP (PP-MNR (P 用)
+				(NP (NN 信心)))
+			(VP (VV 战胜)
+			    (AS 了)
+			    (NP-OBJ (NN 恐惧))))))) 
+	</parse>
+	<arg n="0">
+	两千三百万 人民 
+	</arg>
+	<arg n="1">
+	敌意 
+	</arg>
+	<arg n="m" f="mnr">
+	用 爱 
+	</arg>
+	<arg n="m" f="mnr">
+	以 *OP* *T*-1 无比 坚定 的 意志 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 尚))
+		(VP (VE 有)
+		    (IP-OBJ (NP-SBJ (NN 天灾))
+			    (VP (ADVP (AD 未))
+				(VP (VV 弭平))))))) 
+	</parse>
+	<arg n="1">
+	天灾 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

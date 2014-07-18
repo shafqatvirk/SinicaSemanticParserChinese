@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 迎进 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 brings in/welcomes"/>
+    <role argnum="2" argrole="thing arg1 is brought in to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ 联外))
+		    (NP (NN 道路)))
+	    (VP (VP (ADVP (AD 固然))
+		    (VP (VV 送进)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 批)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VV 希望)
+						(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							(VP (VP (VV 远离)
+								(NP-PN-OBJ (NR 台北市)))
+							    (PU ，)
+							    (VP (VV 享受)
+								(NP-OBJ (NN 自然)))))))
+					(DEC 的)))
+				(ADJP (JJ 新))
+				(NP (NN 移民)))))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 也))
+		    (VP (VV 迎进)
+			(AS 了)
+			(NP-OBJ (QP (CD 一)
+				    (CLP (M 堆)))
+				(DNP (NP (PU 「)
+					 (DP (DT 另)
+					     (QP (CD 一)
+						 (CLP (M 个))))
+					 (NP (NN 世界))
+					 (PU 」))
+				     (DEG 的))
+				(NP (PU 「)
+				    (NN 故人)
+				    (PU 」)))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-LOC (P 在)
+					(NP-PN (NR 八里)))
+				(VP (VV 定居)))))))) 
+	</parse>
+	<arg n="0">
+	联外 道路 
+	</arg>
+	<arg n="1">
+	一 堆 「 另 一 个 世界 」 的 「 故人 」 
+	</arg>
+	<arg n="2">
+	*PRO* 在 八里 定居 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 一九九七年))
+				    (VP (VV 驶进))))
+			    (DEC 的)))
+		    (QP (OD 第一)
+			(CLP (M 班)))
+		    (NP (NN 捷运)))
+	    (VP (VV 迎进)
+		(AS 了)
+		(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (VA 爆满))))
+			    (DEC 的))
+			(NP (NN 人潮))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 一九九七年 驶进 的 第一 班 捷运 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 爆满 的 人潮 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

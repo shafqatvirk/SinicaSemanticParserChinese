@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挣 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing earned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 二十多)
+			   (CLP (M 年)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-SBJ (NP-APP (NP-PN (NR 广东)
+				     (NR 东莞)
+				     (NR 水口村))
+			      (NP (NN 村民)))
+		      (NP-PN (NR 陈忠发)))
+	      (VP (VP (VC 是)
+		      (NP-PRD (QP (CLP (M 个)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 地地道道)))
+				      (DEC 的)))
+			      (NP (NN 农民))))
+		  (PU ，)
+		  (VP (VV 日出而作))
+		  (PU ，)
+		  (VP (VV 日落而息))
+		  (PU ，)
+		  (VP (PP (P 和)
+			  (NP (NN 妻子)))
+		      (ADVP (AD 一道))
+		      (VP (VP (VV 种田))
+			  (VP (VV 挣)
+			      (NP-OBJ (NN 工分)))
+			  (VP (VV 维持)
+			      (NP-OBJ (DNP (NP (QP (CD 一)
+						   (CLP (M 家)))
+					       (QP (CD 七)
+						   (CLP (M 口)))
+					       (NP (NN 人)))
+					   (DEG 的))
+				      (NP (NN 生活)))))))) 
+	  </parse>
+	  <arg n="0">
+	  广东 东莞 水口村 村民 陈忠发 
+	  </arg>
+	  <arg n="1">
+	  工分 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一道 
+	  </arg>
+	  <arg n="m" f="adv">
+	  和 妻子 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  二十多 年 前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

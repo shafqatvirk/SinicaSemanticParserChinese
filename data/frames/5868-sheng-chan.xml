@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 盛产 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="place described"/>
+    <role argnum="1" argrole="thing which is produced in abundance in arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (PP-LOC (P 在)
+		    (LCP (NP (DNP (NP (PU 「)
+				      (NP (NN 农业))
+				      (NP-PN (NR 台湾))
+				      (PU 」))
+				  (DEG 的))
+			     (NP (NN 殖民)
+				 (NN 定位)))
+			 (LC 下)))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 日本))
+		    (NP (NN 政府)))
+	    (VP (PP-DIR (P 对)
+			(NP (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 盛产)
+					    (NP-OBJ (NN 糖)
+						    (CC 与)
+						    (NN 米))))
+				    (DEC 的)))
+			    (NP (NN 西部)
+				(NN 平原))))
+		(PU ，)
+		(ADVP (AD 基本上))
+		(VP (VC 是)
+		    (VP (ADVP (AD 一体))
+			(VP (VV 对待)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	糖 与 米 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

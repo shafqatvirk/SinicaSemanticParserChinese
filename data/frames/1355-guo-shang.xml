@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="experience, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 灾区)
+		      (NN 人民))
+	      (VP (VP (VV 买到)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VA 称心)))
+				      (DEC 的)))
+			      (NP (NN 商品))))
+		  (PU ，)
+		  (VP (VV 过上)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (VA 欢乐)))
+				      (DEC 的)))
+			      (NP (NN 节日)))))) 
+	  </parse>
+	  <arg n="0">
+	  灾区 人民 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-2 欢乐 的 节日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

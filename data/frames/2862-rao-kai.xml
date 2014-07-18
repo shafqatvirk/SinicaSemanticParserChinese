@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 绕开 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity bypassed"/>
+      <role argnum="2" argrole="activity in which bypassing is done"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-SBJ (DNP (NP-PN (NR 美国))
+			       (DEG 的))
+			  (DP (DT 这)
+			      (CLP (M 次)))
+			  (NP (NN 行动)))
+		  (VP (ADVP (AD 完全))
+		      (VP (VV 绕开)
+			  (AS 了)
+			  (NP-PN-OBJ (NR 联合国)
+				     (NN 安理会))))) 
+	  </parse>
+	  <arg n="2">
+	  美国 的 这 次 行动 
+	  </arg>
+	  <arg n="1">
+	  联合国 安理会 
+	  </arg>
+	  <arg n="m" f="adv">
+	  完全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

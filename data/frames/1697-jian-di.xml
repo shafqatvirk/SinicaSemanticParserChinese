@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减低 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="reducer"/>
+      <role argnum="1" argrole="thing reduced"/>
+      <role argnum="2" argrole="reducing from"/>
+      <role argnum="3" argrole="reducing to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (ADJP (JJ 典型))
+		      (NP (NN 布局)))
+	      (VP (VV 可)
+		  (VP (VV 让)
+		      (NP-OBJ (NP-PN (NR 台湾))
+			      (NP (NN 产业)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (ADVP (AD 灵活))
+				  (VP (VV 调度)))
+			      (PU 、)
+			      (VP (VV 减低)
+				  (NP-OBJ (NN 冲击)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  冲击 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg3"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 佳能)
+			 (NN 公司))
+	      (VP (ADVP (AD 正))
+		  (PP-MNR (P 通过)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 节约)
+				  (NP-OBJ (NN 能源)))))
+		  (PU ，)
+		  (VP (VV 力争)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-TMP (P 在)
+					  (NP (NT ２０００年)))
+				  (VP (BA 将)
+				      (IP-OBJ (NP-SBJ (ADJP (JJ 总))
+						      (NP (NN 能耗)))
+					      (VP (VRD (VV 减低)
+						       (VV 到))
+						  (QP-OBJ (DNP (NP (NT １９９０年))
+							       (DEG 的))
+							  (QP (CD 百分之五十))))))))))
+	      (PU 。))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  总 能耗 
+	  </arg>
+	  <arg n="2">
+	  １９９０年 的 百分之五十 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  在 ２０００年 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

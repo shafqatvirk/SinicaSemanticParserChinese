@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 容纳 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="container"/>
+      <role argnum="1" argrole="thing contained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 广东)
+			 (NR 奥林匹克)
+			 (NN 体育场))
+	      (VP (VV 可)
+		  (VP (VV 容纳)
+		      (NP-OBJ (QP (CD ８万))
+			      (NP (NN 观众)))))) 
+	  </parse>
+	  <arg n="0">
+	  广东 奥林匹克 体育场 
+	  </arg>
+	  <arg n="1">
+	  ８万 观众 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

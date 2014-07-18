@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 衍伸 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity derived from arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (UCP-SBJ (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 护)
+				       (NP-OBJ (NN 溪))))
+			   (NP (NN 活动)))
+		       (CC 和)
+		       (IP (NP-SBJ (-NONE- *PRO*))
+			   (VP (VV 编印)
+			       (NP-OBJ (NP (ADJP (JJ 深度))
+					   (NP (NN 旅游)))
+				       (NP (NN 导览)
+					   (NN 手册))))))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 都))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 文史)
+						  (NN 班))
+					  (VP (VRD (VV 衍伸)
+						   (VV 出来))
+					      (NP-OBJ (-NONE- *T*-2))))
+				      (DEC 的)))
+			      (NP (NN 产物)))))) 
+	  </parse>
+	  <arg n="0">
+	  文史 班 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

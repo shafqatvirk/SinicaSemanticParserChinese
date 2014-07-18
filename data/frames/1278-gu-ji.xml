@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 估计 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="estimator"/>
+      <role argnum="1" argrole="estimate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一些))
+		      (NP (NN 专家)))
+	      (VP (VV 估计)
+		  (PU ，)
+		  (IP-OBJ (LCP-TMP (IP (NP-SBJ (NP (NN 信息))
+					       (ADJP (JJ 高速))
+					       (NP (NN 公路)))
+				       (VP (VV 建成)))
+				   (LC 后))
+			  (PU ，)
+			  (NP-SBJ (NP (NN 知识))
+				  (DNP (PP (P 对)
+					   (NP (NN 经济)
+					       (NN 增长)))
+				       (DEG 的))
+				  (NP (NN 贡献率)))
+			  (VP (ADVP (AD 将))
+			      (VP (VV 可能)
+				  (VP (PP-DIR (P 由)
+					      (QP (DNP (LCP (NP (DP (DT 本))
+								(NP (NN 世纪)))
+							    (LC 初))
+						       (DEG 的))
+						  (QP (CD 百分之五)
+						      (CC 至)
+						      (CD 百分之二十))))
+				      (VP (VRD (VV 上升)
+					       (VV 到))
+					  (QP-OBJ (CD 百分之九十))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  一些 专家 	  
+	  </arg>
+	  <arg n="1">
+	  信息 高速 公路 建成 后 ， 知识 对 经济 增长 的 贡献率 将 可能 由 本 世纪 初 的 百分之五 至 百分之二十 上升 到 百分之九十 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 非洲))
+		      (NP (NN 经济)))
+	      (VP (NP-TMP (NT １９９７年))
+		  (VP (VV 估计)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 增长)
+				  (QP-EXT (CD 百分之三))))))) 
+	  </parse>
+	  <arg n="1">
+	  非洲 经济 	  
+	  </arg>
+	  <arg n="1" f="prd">
+	  *PRO* 增长 百分之三 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

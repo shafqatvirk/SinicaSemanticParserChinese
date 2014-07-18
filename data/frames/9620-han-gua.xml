@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 含括 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 includes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (DNP (NP-PN (NR OECD))
+			   (DEG 的))
+		      (NP (NN 知识)
+			  (NN 经济)))
+	      (PU ，)
+	      (NP-SBJ (NN 范围))
+	      (VP (VV 含括)
+		  (NP-OBJ (NP (DP (DT 各))
+			      (NP (NN 行)))
+			  (NP (DP (DT 各))
+			      (NP (NN 业)))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  OECD 的 知识 经济 
+	  </arg>
+	  <arg n="0" f="pse">
+	  范围 
+	  </arg>
+	  <arg n="1">
+	  各 行 各 业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

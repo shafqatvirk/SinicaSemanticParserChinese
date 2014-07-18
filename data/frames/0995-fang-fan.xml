@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 防范 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing avoided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 最后))
+		  (VP (VC 是)
+		      (IP-PRD (NP-SBJ (-NONE- *pro*))
+			      (VP (VP (VV 加强)
+				      (NP-OBJ (NN 金融)
+					      (NN 监管)))
+				  (PU ，)
+				  (VP (VV 防范)
+				      (NP-OBJ (NN 金融)
+					      (NN 风险)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  金融 风险 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

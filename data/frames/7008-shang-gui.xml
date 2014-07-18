@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 上柜 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (ADJP (JJ 其次))
+			 (DEG 的))
+		    (NP (NN 重点)))
+	    (VP (VC 是)
+		(NP-PRD (NP (NN 核心)
+			    (NN 产业))
+			(QP (CD 五百)
+			    (CLP (M 家)))
+			(PU ，)
+			(PRN (VP (VV 包括)
+				 (NP-OBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+						 (IP (NP-TPC (-NONE- *T*-1))
+						     (NP-SBJ (NN 股票))
+						     (VP (VV 上市)
+							 (PU 、)
+							 (VV 上柜)))))
+					 (CC 及)
+					 (NP (DNP (NP (DP (DT 各))
+						      (NP (NN 产业)))
+						  (DEG 的))
+					     (NP (NN 龙头)
+						 (NN 厂商)))
+					 (ETC 等))))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	股票 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

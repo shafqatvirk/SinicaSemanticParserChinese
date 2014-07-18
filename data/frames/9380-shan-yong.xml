@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 擅用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 uses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VP (ADVP (AD 也))
+		      (VP (VV 采用)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (ADJP (JJ 现代))
+						      (NP (NN 饼)
+							  (NN 店)))
+					      (VP (VV 擅用)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 手法)))))
+		  (PU ，)
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NP (DP (DT 各)
+					      (CLP (M 式)))
+					  (NP (NN 特色)))
+				      (NP (NN 饼品)))
+			      (VP (VRD (VCD (VV 设计)
+					    (VV 包装))
+				       (VP (VV 成)))
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (VV 古色古香)))
+						  (DEC 的)))
+					  (ADJP (JJ 婚庆))
+					  (NP (NN 喜饼)))))))) 
+	  </parse>
+	  <arg n="0">
+	  现代 饼 店 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

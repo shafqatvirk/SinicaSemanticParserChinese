@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 共睹 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 其))
+		      (NP (PU “)
+			  (NN 巨人)
+			  (PU ”))
+		      (NP (NN 角色)))
+	      (VP (ADVP (AD 亦))
+		  (VP (LB 为)
+		      (IP-OBJ (NP-SBJ (NN 世人))
+			      (VP (MSP 所)
+				  (VP (VV 共睹))))))) 
+	  </parse>
+	  <arg n="0">
+	  世人 
+	  </arg>
+	  <arg n="1">
+	  其 “ 巨人 ” 角色 
+	  </arg>
+	  <arg n="m" f="adv">
+	  亦 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

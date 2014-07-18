@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亦师亦友 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="person arg0 is both teacher and friend to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 他们))
+		      (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 亦师亦友)))
+			      (DEC 的))
+		      (NP (NN 协助)))
+	      (PU ，)
+	      (VP (VV 逼得)
+		  (NP-OBJ (PN 他))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (AD 不得不))
+			  (VP (VV 成长)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

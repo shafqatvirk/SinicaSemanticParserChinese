@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 始建于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="time first built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 市场)))
+	      (VP (VP (VV 始建于)
+		      (NP-OBJ (NT 一九八四年)))
+		  (PU ，)
+		  (VP (VV 占地)
+		      (QP-OBJ (CD 三十六点六)
+			      (CLP (M 公顷))))
+		  (PU ，)
+		  (VP (ADVP (AD 累计))
+		      (VP (VV 投资)
+			  (QP-OBJ (ADVP (AD 近))
+				  (QP (CD 二亿)
+				      (CLP (M 元)))))))) 
+	  </parse>
+	  <arg n="0">
+	  该 市场 
+	  </arg>
+	  <arg n="1">
+	  一九八四年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

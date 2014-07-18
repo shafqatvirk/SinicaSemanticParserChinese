@@ -1,0 +1,74 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 收费 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="amount of fee collected"/>
+      <role argnum="2" argrole="thing the fee is for"/>
+      <role argnum="3" argrole="collected from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (IP (NP-SBJ (NN 书))
+			  (VP (QP-PRD (CD 五)
+				      (CLP (M 本)))))
+		      (PU 、)
+		      (IP (NP-SBJ (NN 磁带))
+			  (VP (QP-PRD (CD ２４)
+				      (CLP (M 盘))))))
+	      (PU ，)
+	      (VP (VP (VV 收费)
+		      (QP-OBJ (CD １４５)
+			      (CLP (M 元))))
+		  (PU ，)
+		  (VP (ADVP (AD 另))
+		      (VP (VV 加)
+			  (NP-OBJ (DNP (QP (CD １５％))
+				       (DEG 的))
+				  (ADJP (JJ 保值))
+				  (NP (NN 邮费))))))) 
+	  </parse>
+	  <arg n="2">
+	  书 五 本 、 磁带 ２４ 盘 	  
+	  </arg>
+	  <arg n="1">
+	  １４５ 元 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VV 制止)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (VP (ADVP (AD 乱))
+			      (VP (VV 收费)))
+			  (PU 、)
+			  (VP (ADVP (AD 乱))
+			      (VP (VV 罚款)))
+			  (CC 和)
+			  (VP (ADVP (AD 乱))
+			      (VP (VV 设卡))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  乱 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

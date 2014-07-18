@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 体贴 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="person arg0 is thoughtful for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VA 体贴)))
+			    (DEC 的))
+		    (NP (NN 心态)))
+	    (VP (PP-DIR (P 从)
+			(LCP (NP (QP (CD 一些))
+				 (ADJP (JJ 小))
+				 (NP (NN 动作)))
+			     (LC 中)))
+		(ADVP (AD 就))
+		(VP (VV 可以)
+		    (VP (VRD (VV 表现)
+			     (VV 出来)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

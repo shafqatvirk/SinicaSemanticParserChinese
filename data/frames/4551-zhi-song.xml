@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致送 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 gives"/>
+      <role argnum="2" argrole="entity arg1 is given to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 播映)
+		  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VV 介绍)
+					  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						      (CP (IP (NP-SBJ (NP (NN 内地))
+								      (QP (CD 三十一)
+									  (CLP (M 个)))
+								      (NP (NN 省)
+									  (PU 、)
+									  (NN 自治区)
+									  (CC 及)
+									  (NN 直辖市)))
+							      (VP (PP-DIR (P 向)
+									  (NP (NP-PN (NR 香港))
+									      (NP (NN 市民))))
+								  (VP (VV 致送)
+								      (NP-OBJ (-NONE- *T*-1)))))
+							  (DEC 的)))
+						  (NP (NN 贺礼)))))
+				  (DEC 的)))
+			  (NP (NN 录影带))))) 
+	  </parse>
+	  <arg n="0">
+	  内地 三十一 个 省 、 自治区 及 直辖市 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="2">
+	  向 香港 市民 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由於)
+		      (IP (NP-TPC (NN 礼物))
+			  (IP (IP (NP-SBJ (NN 数量))
+				  (VP (VA 多)))
+			      (PU 、)
+			      (IP (NP-SBJ (NN 体积))
+				  (VP (VA 大)))
+			      (PU ，)
+			      (IP (QP-SBJ (CD 部分))
+				  (VP (VRD (VA 重)
+					   (VV 达))
+				      (QP-OBJ (QP (CD 一千)
+						  (CLP (-NONE- *RNR*-1)))
+					      (CC 至)
+					      (QP (CD 三千)
+						  (CLP-1 (M 公斤)))))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 未))
+		      (VP (VV 能)
+			  (VP (PP-LOC (P 在)
+				      (LCP (NP (NN 典礼))
+					   (LC 上)))
+			      (ADVP (AD 逐一))
+			      (VP (VV 致送)))))
+		  (PU ，)
+		  (VP (ADVP (AD 只))
+		      (VP (VV 能)
+			  (VP (VV 播映)
+			      (NP-OBJ (DNP (NP (NN 贺礼))
+					   (DEC 的))
+				      (NP (NN 录映带)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  逐一 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 典礼 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由於 礼物 数量 多 、 体积 大 ， 部分 重 达 一千 *RNR*-1 至 三千 公斤 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-PN-SBJ (NR 海南省))
+				  (VP (VV 致送)
+				      (NP-OBJ (-NONE- *T*-2))))
+			      (DEC 的))))
+	      (VP (VC 是)
+		  (NP-PRD (QP (CD 一)
+			      (CLP (M 件)))
+			  (NP (NN 贝雕))))) 
+	  </parse>
+	  <arg n="0">
+	  海南省 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

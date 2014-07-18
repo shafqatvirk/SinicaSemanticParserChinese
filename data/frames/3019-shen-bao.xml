@@ -1,0 +1,161 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 申报 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing declared/submitted"/>
+      <role argnum="2" argrole="to whom submission is made"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NN 行政)
+			  (NN 长官))
+		  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 就任)))
+			       (LC 时))
+		      (VP (VV 应)
+			  (VP (PP-DIR (P 向)
+				      (NP (NP (ADJP (JJ 终审))
+					      (NP (NN 法院)))
+					  (NP (NN 首席)
+					      (NN 法官))))
+			      (VP (VV 申报)
+				  (NP-OBJ (NN 财产))))))) 
+	  </parse>
+	  <arg n="0">
+	  行政 长官 	  
+	  </arg>
+	  <arg n="1">
+	  财产 	  
+	  </arg>
+	  <arg n="2">
+	  向 终审 法院 首席 法官 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 就任 时 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (DP (DT 这)
+		      (CLP (M 种)))
+		  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-MNR (P 以)
+					  (NP (NN 科技)
+					      (NN 成果)))
+				  (VP (VV 申报)
+				      (CC 与)
+				      (VV 审定))))
+			  (DEC 的))
+		  (NP (NN 形式))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 科技 成果 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-8 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (NN 进出口)
+					  (NN 货物)
+					  (NN 收发货人))
+				  (NP-SBJ (-NONE- *T*-8))
+				  (VP (VP (VP-FOC (PP-DIR (P 对)
+							  (NP (DNP (NP (NN 货物))
+								   (DEG 的))
+							      (NP (NN 知识)
+								  (NN 产权)
+								  (NN 状况))))
+						  (VP (VV 申报)))
+					  (VP (ADVP (AD 不))
+					      (VP (VA 实))))
+				      (CC 及)
+				      (VP (VV 逃避)
+					  (NP-OBJ (NN 海关)
+						  (NN 监管)))
+				      (PU 、)
+				      (VP (VV 走私)
+					  (NP-OBJ (ADJP (JJ 侵权))
+						  (NP (NN 货物))))))
+			      (DEC 的))))
+	      (PU ，)
+	      (VP (PP-LGS (P 由)
+			  (NP (NN 海关)))
+		  (PP-MNR (P 依照)
+			  (NP (ADJP (JJ 有关))
+			      (NP (NN 规定))))
+		  (VP (VV 处理)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-8 	  
+	  </arg>
+	  <arg n="1">
+	  对 货物 的 知识 产权 状况 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity declared"/>
+      <role argnum="2" argrole="entity declared as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (ADVP (CS 只要))
+		      (ADVP (AD 未))
+		      (PP-DIR (P 向)
+			      (NP (NN 国籍)
+				  (NN 管理)
+				  (NN 机关)))
+		      (VP (VCP (VV 申报)
+			       (VC 为))
+			  (NP-OBJ (NN 外国人))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="2">
+	  外国人 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  向 国籍 管理 机关 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

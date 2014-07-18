@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 度过 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="time spent, risks survived"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-19 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-19))
+				  (NP-SBJ (NN 健康)
+					  (NN 状况))
+				  (VP (ADVP (AD 略))
+				      (VP (VA 平稳))))
+			      (DEC 的)))
+		      (QP (CD 四)
+			  (CLP (M 个)))
+		      (NP (NN 孩子)))
+	      (VP (ADVP (AD 基本))
+		  (ADVP (AD 已))
+		  (VP (VV 度过)
+		      (AS 了)
+		      (NP-OBJ (NN 呼吸)
+			      (NN 难关))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-19 健康 状况 略 平稳 的 四 个 孩子 
+	  </arg>
+	  <arg n="1">
+	  呼吸 难关 
+	  </arg>
+	  <arg n="m" f="adv">
+	  基本 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

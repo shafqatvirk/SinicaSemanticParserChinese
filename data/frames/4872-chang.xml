@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 唱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="what arg0 sings"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 孩子))
+	    (VP (VP (VV 回来))
+		(VP (VP (ADVP (AD 大))
+			(VP (VV 唱)
+			    (NP-OBJ (NP-PN (NR 中共))
+				    (NP (NN 国歌)))))
+		    (PU ，)
+		    (CC 又)
+		    (VP (ADVP (AD 大))
+			(VP (VV 骂)
+			    (NP-OBJ (NP (NP-PN (NR 蒋))
+					(NP (NN 匪帮)))
+				    (PU 、)
+				    (NP-PN (NR 李登辉)))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VC 是)
+				    (NP-PRD (NN 历史)
+					    (NN 败类))))))))) 
+	</parse>
+	<arg n="0">
+	孩子 
+	</arg>
+	<arg n="1">
+	中共 国歌 
+	</arg>
+	<arg n="m" f="adv">
+	大 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (NP (QP (CD 很多))
+			(NP (NN 场合))))
+	    (PU ，)
+	    (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 这样))
+			(ADVP (AD 一))
+			(VP (VV 唱))))
+	    (PU ，)
+	    (NP-SBJ (NN 感情))
+	    (VP (ADVP (AD 就))
+		(VP (VV 出来)
+		    (AS 了)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<arg n="m" f="adv">
+	这样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(CP (IP (NP-SBJ (DP (DT 那)
+			    (CLP (M 首)))
+			(NP (NN 歌)))
+		(VP (ADVP (AD 好像))
+		    (ADVP (AD 这样))
+		    (VP (VV 唱))))
+	    (SP 的)) 
+	</parse>
+	<arg n="1">
+	那 首 歌 
+	</arg>
+	<arg n="m" f="adv">
+	这样 
+	</arg>
+	<arg n="m" f="adv">
+	好像 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

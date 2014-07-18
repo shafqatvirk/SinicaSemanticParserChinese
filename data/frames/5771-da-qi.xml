@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 搭起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 builds up"/>
+    <role argnum="2" argrole="place arg1 is built"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-PN-SBJ (NR 妈祖))
+		(VP (VV 搭起)
+		    (NP-OBJ (DNP (NP-PN (NR 台)
+					(NR 澳))
+				 (DEG 之))
+			    (NP (NN 桥))))) 
+	</parse>
+	<arg n="1">
+	台 澳 之 桥 
+	</arg>
+	<arg n="2">
+	妈祖 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 澳门人))
+	    (VP (VP (VE 有)
+		    (NP-OBJ (NN 能力)))
+		(VP (VV 搭起)
+		    (NP-OBJ (DNP (NP (NN 交流))
+				 (DEG 之))
+			    (NP (NN 桥)))))) 
+	</parse>
+	<arg n="0">
+	澳门人 
+	</arg>
+	<arg n="1">
+	交流 之 桥 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

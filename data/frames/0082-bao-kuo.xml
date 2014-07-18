@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 包括 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing including"/>
+    <role argnum="1" argrole="thing included"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (ADJP (JJ 承保))
+              (NP (NN 范围)))
+      (VP (VV 包括)
+          (NP-OBJ (QP (NP-APP (NN 财产)
+                              (PU 、)
+                              (NN 责任)
+                              (PU 、)
+                              (NN 信用)
+                              (PU 、)
+                              (NN 人身))
+                      (QP (CD 四)
+                          (CLP (ADJP (JJ 大))
+                               (CLP (M 类)))))
+                  (QP (ADJP (JJ 主)
+                            (PU 、)
+                            (JJ 副))
+                      (QP (CD 六十多)
+                          (CLP (M 个))))
+                  (NP (NN 险种))))))
+	</parse>
+	<arg n="0"> 承保 范围 </arg>
+	<V/>
+	<arg n="1"> 财产 、 责任 、 信用 、 人身 四 大 类 主 、 副 六十多 个 险种 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-SBJ (-NONE- *pro*))
+      (VP (VV 包括)
+          (IP-OBJ (NP-SBJ (-NONE- *pro*))
+                  (VP (VP (PP-LOC (P 在)
+                                  (LCP (NP (NN 用地))
+                                       (LC 上)))
+                          (VP (VV 给予)
+                              (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                                          (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                                  (VP (ADVP (AD 较))
+                                                      (VP (VA 低))))
+                                              (DEC 的)))
+                                      (NP (NN 地价)))))
+                      (PU ，)
+                      (VP (PP-LOC (P 在)
+                                  (LCP (NP (NN 税收))
+                                       (LC 上)))
+                          (VP (VV 给予)
+                              (NP-OBJ (NN 减免))))
+                      (ETC 等))))
+      (PU 。)))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> *pro* 在 用地 上 给予 *OP* (*T*-1)->(地价) 较低 的 地价 ， 在 税收 上 给予 减免 等 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

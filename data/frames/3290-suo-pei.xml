@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 索赔 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity seeking compensation"/>
+      <role argnum="1" argrole="amount of compensation"/>
+      <role argnum="2" argrole="entity to pay compensation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 同时))
+		  (PU ，)
+		  (VP (VV 避免)
+		      (AS 了)
+		      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 承包商))
+					  (VP (PP-PRP (-NONE- *T*-1))
+					      (VP (VV 可能)
+						  (VP (ADVP (AD 因此))
+						      (VP (VV 索赔))))))
+				      (DEC 的)))
+			      (ADJP (JJ 种种))
+			      (NP (NN 借口)))))) 
+	  </parse>
+	  <arg n="0">
+	  承包商 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 该))
+			  (NP (NN 银行)))
+		  (VP (VP (PP-DIR (P 对)
+				  (NP (NP-PN (NP-PN (NR 上海))
+					     (NP (ADJP (JJ 家用))
+						 (NP (NN 纺织品)))
+					     (NP (NN 进出口)
+						 (NN 公司)))
+				      (DNP (NP (QP (ADVP (AD 共))
+						   (QP (CD 三十一)
+						       (CLP (M 笔))))
+					       (NP (NN 托收)
+						   (NN 单据)))
+					   (DEG 的))
+				      (NP (NN 款项))))
+			  (VP (VV 承担)
+			      (NP-OBJ (DP (DT 全部))
+				      (NP (NN 责任)))))
+		      (PU ，)
+		      (VP (VV 索赔)
+			  (QP-OBJ (CD 一百八十五万)
+				  (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="1">
+	  一百八十五万 美元 
+	  </arg>
+	  <arg n="2">
+	  该 银行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

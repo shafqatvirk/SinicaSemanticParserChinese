@@ -1,0 +1,116 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 经营 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NP-PN (NR 深圳))
+			 (NP (ADJP (JJ 高速))
+			     (NP (NN 公路)))
+			 (NP (NN 股份))
+			 (ADJP (JJ 有限))
+			 (NP (NN 公司)))
+	      (VP (ADVP (AD 曾))
+		  (VP (VCD (VV 开发)
+			   (VV 经营))
+		      (NP-OBJ (NP (NP (NN 国内))
+				  (QP (OD 第一)
+				      (CLP (M 条)))
+				  (ADJP (JJ 合资))
+				  (NP (NN 公路)))
+			      (PU －－)
+			      (NP-PN (NP-PN (NR 梅观))
+				     (ADJP (JJ 高速))
+				     (NP (NN 公路))))))) 
+	  </parse>
+	  <arg n="0">
+	  深圳 高速 公路 股份 有限 公司 
+	  </arg>
+	  <arg n="1">
+	  国内 第一 条 合资 公路 －－ 梅观 高速 公路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  曾 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NP (PN 他们))
+				   (NP (NN 村)))
+			   (VP (VV 实行)
+			       (NP-OBJ (NN 土地)
+				       (NN 股份制))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ-2 (NN 土地))
+	      (VP (PP-LGS (P 由)
+			  (NP (NN 村里)))
+		  (ADVP (AD 统一))
+		  (VP (VV 经营)
+		      (NP-OBJ (-NONE- *-2))))) 
+	  </parse>
+	  <arg n="0">
+	  由 村里 
+	  </arg>
+	  <arg n="1">
+	  *-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  统一 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  他们 村 实行 土地 股份制 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (ADVP (AD 逐步))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (ADVP (AD 自主))
+						  (VP (VV 经营)))
+					      (PU 、)
+					      (VP (ADVP (AD 自))
+						  (VP (VV 负)
+						      (NP-OBJ (NN 盈亏))))))
+				      (DEC 的)))
+			      (NP (NN 市场)
+				  (NN 经济)
+				  (NN 主体)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  自主 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

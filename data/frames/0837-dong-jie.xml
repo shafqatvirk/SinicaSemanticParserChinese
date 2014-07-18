@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冻结 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, causer"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (PU “)
+			 (NR 深业)
+			 (NN 控股)
+			 (PU ”))
+	      (VP (VV 宣布)
+		  (PU ，)
+		  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			  (VP (VP (PP-TMP (P 在)
+					  (NP (NP-APP (NP (NT 二月))
+						      (NP (NT 二十一日)
+							  (CC 至)
+							  (NT 二十六日)))
+					      (NP (ADJP (JJ 公开))
+						  (NP (NN 发售)))
+					      (NP (NN 期间))))
+				  (PU ，)
+				  (VP (VV 获)
+				      (NP-OBJ (ADJP (JJ 超额))
+					      (NP (NN 认购)))
+				      (QP-EXT (CD 四百三十八)
+					      (CLP (M 倍)))))
+			      (PU ，)
+			      (VP (VV 冻结)
+				  (NP-OBJ (NN 资金))
+				  (QP-EXT (ADVP (AD 逾))
+					  (QP (CD 五百四十六亿)
+					      (CLP (M 港元)))))
+			      (PU ，)
+			      (VP (VV 创出)
+				  (NP-OBJ (NP (NP-PN (NR 香港))
+					      (NP (NN 股市)))
+					  (NP (NN 新股)
+					      (NN 认购)
+					      (NN 倍数))
+					  (ADJP (JJ 新))
+					  (NP (NN 纪录)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  资金 
+	  </arg>
+	  <arg n="1" f="PTY">
+	  逾 五百四十六亿 港元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NT 今天))
+		      (NP (NT 正午)
+			  (NN 时分)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR ＮＢＡ))
+	      (VP (VV 冻结)
+		  (QP-EXT (QP (CD 半)
+			      (CLP (M 年)))
+			  (ADVP (AD 整))))
+	      (PU 。))
+	  </parse>
+	  <arg n="1">
+	  ＮＢＡ 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 正午 时分 
+	  </arg>
+	  <arg n="m" f="ext">
+	  半 年 整 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

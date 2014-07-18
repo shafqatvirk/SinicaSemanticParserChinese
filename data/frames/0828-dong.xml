@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 懂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="party understanding"/>
+      <role argnum="1" argrole="thing understood"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (VV 知)
+		      (NP-OBJ (NN 法)))
+		  (PU 、)
+		  (VP (VV 懂)
+		      (NP-OBJ (NN 法)))
+		  (PU ，)
+		  (VP (ADVP (AD 依法))
+		      (VP (VV 办事))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  法 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

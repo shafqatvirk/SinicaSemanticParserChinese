@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 误用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 abuses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 媒体)
+		      (NN 服务)
+		      (NN 功能))
+	      (VP (VP (ADVP (AD 越))
+		      (VP (VA 普及)))
+		  (PU ，)
+		  (VP (ADVP (AD 越))
+		      (VP (VV 可能)
+			  (VP (SB 被)
+			      (VP (VV 误用))))))) 
+	  </parse>
+	  <arg n="1">
+	  媒体 服务 功能 
+	  </arg>
+	  <arg n="m" f="adv">
+	  越 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

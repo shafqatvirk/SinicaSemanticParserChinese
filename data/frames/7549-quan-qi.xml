@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 圈起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 马修))
+	    (VP (VV 教)
+		(NP-OBJ (NN 工作)
+			(NN 人员))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VP (VV 圈起)
+			    (NP-OBJ (NN 耳朵)))
+			(PU ，)
+			(VP (ADVP (AD 仔细))
+			    (VP (VV 听)
+				(IP-OBJ (NP-SBJ (NN 山))
+					(VP (ADVP (AD 在))
+					    (PP-DIR (P 对)
+						    (NP (PN 你)))
+					    (VP (VV 说)
+						(NP-OBJ (QP (CLP (M 些)))
+							(NP (PN 什麽)))))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	耳朵 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

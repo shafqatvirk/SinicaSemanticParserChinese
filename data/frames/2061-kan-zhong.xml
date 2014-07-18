@@ -1,0 +1,95 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 看重 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity attached importance to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ((IP-Q (NP-SBJ (-NONE- *pro*))
+		       (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				   (VP (ADVP (CS 既然))
+				       (VP (VV 看重)
+					   (NP-PN-OBJ (NR 安南)))))
+			   (PU ，)
+			   (VP (ADVP-WH (AD 为什麽))
+			       (ADVP (AD 不))
+			       (VP (VV 借)
+				   (NP-OBJ (NN 钱))
+				   (PP (P 给)
+				       (NP (PN 他))))))
+		       (PU ？))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  安南 
+	  </arg>
+	  <arg n="m" f="adv">
+	  既然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (LCP-TMP (NP (NN 激奋))
+			 (LC 之际))
+		(PU ，)
+		(NP-SBJ (QP (CD 许多))
+			(NP (NN 西班牙人)))
+		(VP (PP-DIR (P 对)
+			    (NP (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 长期))
+						(VP (VV 存在))))
+					(DEC 的)))
+				(NP-APP (ADJP (JJ 高))
+					(NP (NN 失业率)))
+				(NP (NN 隐痛))))
+		    (ADVP (AD 似乎))
+		    (ADVP (AD 并))
+		    (ADVP (AD 不))
+		    (ADVP (AD 怎么))
+		    (VP (VV 看重)))
+		(PU 。))) 
+	  </parse>
+	  <arg n="0">
+	  许多 西班牙人 
+	  </arg>
+	  <arg n="1">
+	  对 *OP* *T*-1 长期 存在 的 高 失业率 隐痛 
+	  </arg>
+	  <arg n="m" f="adv">
+	  怎么 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="adv">
+	  似乎 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  激奋 之际 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

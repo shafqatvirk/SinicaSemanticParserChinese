@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 看过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 looks at/reads"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 然而))
+	    (NP-PN-SBJ (NR 卢秀琴))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 看过)
+				 (NP-OBJ (DP (PN 其))
+					 (NP (NN 作品)))))
+			 (LC 後))
+		(PU ，)
+		(VP (VV 认为)
+		    (IP-OBJ (IP (CP-ADV (ADVP (CS 虽然))
+					(IP (NP-SBJ (NN 外型))
+					    (VP (VV 酷似))))
+				(PU ，)
+				(ADVP (AD 但))
+				(NP-ADV (DNP (NP (NN 材质))
+					     (DEG 之))
+					(NP (NN 故)))
+				(PU ，)
+				(NP-SBJ (NN 质感))
+				(VP (ADVP (AD 就))
+				    (VP (VC 是)
+					(VP (VPT (VV 表现)
+						 (AD 不)
+						 (VV 出来))))))
+			    (PU ，)
+			    (IP (NP-SBJ (-NONE- *pro*))
+				(VP (ADVP (AD 更))
+				    (ADVP (AD 别))
+				    (VP (VV 说)
+					(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+							    (VP (VV 拿)
+								(PP (P 在)
+								    (LCP (NP (NN 手))
+									 (LC 上)))))
+							(DEC 的))
+						(NP (NN 感觉)))))
+				(SP 了)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	其 作品 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

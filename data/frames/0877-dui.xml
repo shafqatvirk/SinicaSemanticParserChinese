@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="currency sold"/>
+      <role argnum="2" argrole="current bought"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (QP-SBJ (CD 七点八)
+			  (CLP (M 港元)))
+		  (VP (VV 兑)
+		      (QP-OBJ (CD 一)
+			      (CLP (M 美元))))) 
+	  </parse>
+	  <arg n="1">
+	  七点八 港元 
+	  </arg>
+	  <arg n="2">
+	  一 美元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 比比皆是 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 逛累)
+			  (AS 了)))
+	      (PU ，)
+	      (NP-SBJ (NP (NN 大宴小酌))
+		      (DP (DT 各)
+			  (CLP (M 式)))
+		      (NP (NN 餐馆)))
+	      (VP (VV 比比皆是))) 
+	  </parse>
+	  <arg n="0">
+	  大宴小酌 各 式 餐馆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 逛累 了 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

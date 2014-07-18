@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 走入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="location arg0 gets into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (IP (NP-PN-SBJ (NN 调改会))
+		    (VP (VV 成立)))
+		(PU ，)
+		(IP-Q (NP-SBJ (NN 政治)
+			      (NN 侦防))
+		      (VP (VV 走入)
+			  (NP-OBJ (NN 历史))))) 
+	</parse>
+	<arg n="0">
+	政治 侦防 
+	</arg>
+	<arg n="1">
+	历史 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

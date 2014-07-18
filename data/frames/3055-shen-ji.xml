@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 审计 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity audited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 赋与)
+	      (AS 了)
+	      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 审计)
+					  (NN 机关))
+				  (VP (PP (-NONE- *T*-2))
+				      (VP (VV 制止)
+					  (NP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+							       (IP (NP-SBJ (-NONE- *T*-1))
+								   (VP (SB 被)
+								       (VP (VV 审计)))))
+							   (NP (NN 机关)))
+						       (DEG 的))
+						  (ADJP (JJ 违法))
+						  (NP (NN 行为))))))
+			      (DEC 的)))
+		      (NP (NN 权力)))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

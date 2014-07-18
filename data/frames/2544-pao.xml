@@ -1,0 +1,104 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="runner"/>
+      <role argnum="1" argrole="distance"/>
+      <role argnum="2" argrole="location from"/>
+      <role argnum="3" argrole="location to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 现在))
+		  (NP-SBJ (PN 他))
+		  (VP (VP (DP-ADV (DT 每)
+				  (CLP (M 天)))
+			  (VP (VP (VV 要)
+				  (VP (VV 做)
+				      (NP-OBJ (ADJP (JJ 早))
+					      (NP (NN 锻炼)))))
+			      (PU ，)
+			      (VP (PP (P 绕)
+				      (NP (NN 村子)))
+				  (VP (VV 跑)
+				      (QP-EXT (CD 三千)
+					      (CLP (M 米)))))))
+		      (PU ；)
+		      (VP (NP-TMP (NT 晚上))
+			  (ADVP (AD 则))
+			  (VP (VP (VV 到)
+				  (NP-OBJ (NN 村)
+					  (NN 体育场)))
+			      (VP (MSP 去)
+				  (VP (VV 打)
+				      (NP-OBJ (NN 篮球)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 	  
+	  </arg>
+	  <arg n="1">
+	  三千 米 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  绕 村子 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 天 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="business practiced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  单帮	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity can't be avoided"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="m" f="cnd">
+	  想 买 东西 的话          
+	  </arg>
+	  <arg n="0">
+	  上万 元	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

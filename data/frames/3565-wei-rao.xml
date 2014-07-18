@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 围绕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 revolves around/centers on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-TMP (NT 明年))
+		  (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NN 经贸)
+			      (NN 工作)))
+		  (VP (ADVP (AD 将))
+		      (VP (VP (VV 围绕)
+			      (NP-OBJ (QP (CD 三)
+					  (CLP (M 年)))
+				      (NP (NN 改革)
+					  (CC 与)
+					  (NN 脱困))))
+			  (VP (MSP 来)
+			      (VP (VV 进行)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 经贸 工作 
+	  </arg>
+	  <arg n="1">
+	  三 年 改革 与 脱困 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  明年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

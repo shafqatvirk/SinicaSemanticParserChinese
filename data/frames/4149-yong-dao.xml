@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 涌到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities coming in big numbers/amount"/>
+      <role argnum="1" argrole="location arg0 arrives at"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-PN-SBJ (NR 台湾))
+		      (VP (ADVP (CS 虽))
+			  (VP (ADVP (AD 只))
+			      (VP (VV 遭)
+				  (IP-OBJ (NP-SBJ (NN 风暴)
+						  (NN 边缘))
+					  (VP (VV 扫)
+					      (AS 过)))))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (ADJP (JJ 後续))
+		      (NP (NN 冲击)))
+	      (VP (ADVP (AD 将))
+		  (QP-ADV (CD 一)
+			  (CLP (M 波波)))
+		  (VP (VV 涌到)))) 
+	  </parse>
+	  <arg n="0">
+	  後续 冲击 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 波波 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  但 
+	  </arg>
+	  <arg n="m" f="adv">
+	  台湾 虽 只 遭 风暴 边缘 扫 过 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

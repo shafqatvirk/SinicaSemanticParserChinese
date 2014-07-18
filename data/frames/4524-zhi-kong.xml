@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 指控 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="persecutor"/>
+      <role argnum="1" argrole="persecuted"/>
+      <role argnum="2" argrole="crime"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping> 
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 五))
+		      (NP (NN 人)))
+	      (VP (LB 被)
+		  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-PN-SBJ (NN 廉政)
+					 (NN 公署))
+			      (VP (VV 指控)
+				  (NP-OBJ (-NONE- *T*-1))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 接受)
+					      (NP-OBJ (NN 贿赂)))
+					  (PU ，)
+					  (VP (PP-LOC (P 在)
+						      (LCP (NP (NP (NT １９９７年)
+								   (NT ３月))
+							       (DNP (PP (P 对)
+									(NP-PN (NR 泰国队)))
+								    (DEG 的))
+							       (NP-PN (NR 世界杯))
+							       (NP (NN 预选赛)))
+							   (LC 中)))
+					      (VP (VV 致使)
+						  (NP-PN-OBJ (NR 香港队))
+						  (IP (NP-SBJ (-NONE- *PRO*))
+						      (VP (VV 输球)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  廉政 公署 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  (*T*-1)->(五人) 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 接受 贿赂 ， 在 １９９７年 ３月 对 泰国队 的 世界杯 预选赛 中 致使 香港队 *PRO* 输球 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

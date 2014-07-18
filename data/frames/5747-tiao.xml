@@ -1,0 +1,80 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 挑 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 picks/chooses"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 中国人))
+	    (VP (ADVP (AD 则))
+		(VP (VC 是)
+		    (VP (ADVP (AD 尽))
+			(VP (VV 挑)
+			    (NP-OBJ (NN 毛病))))))) 
+	</parse>
+	<arg n="0">
+	中国人 
+	</arg>
+	<arg n="1">
+	毛病 
+	</arg>
+	<arg n="m" f="adv">
+	尽 
+	</arg>
+	<arg n="m" f="adv">
+	则 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 选)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-LOC (P 在)
+					    (NP (CP (WHNP-1 (-NONE- *OP*))
+						    (CP (IP (NP-SBJ (-NONE- *T*-1))
+							    (VP (ADVP (AD 这样))
+								(VP (VE 有)
+								    (NP-OBJ (NN 人文气)))))
+							(DEC 的)))
+						(NP (NN 宝地))))
+				    (VP (VV 建校))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VCP (VV 据说)
+		     (VC 是))
+		(NP-OBJ (CP-APP (IP (NP-SBJ (QP (CD 许多))
+					    (NP-PN (NR 东莞))
+					    (NP (NN 台商)))
+				    (VP (VP (ADVP (AD 一))
+					    (VP (VV 挑)))
+					(VP (ADVP (AD 再))
+					    (VP (VV 挑)))))
+				(DEC 的))
+			(NP (NN 决定))))) 
+	</parse>
+	<arg n="0">
+	许多 东莞 台商 
+	</arg>
+	<arg n="m" f="adv">
+	一 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

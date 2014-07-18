@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 集成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="components"/>
+      <role argnum="1" argrole="whole"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (NP (NN 芯片)))
+	      (VP (VP (ADVP (AD 将))
+		      (VP (VV 采用)
+			  (NP-OBJ (QP (CD ０．１５)
+				      (CLP (M 微米)))
+				  (NP (NN 加工)
+				      (NN 技术)))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 集成)
+		      (NP-OBJ (DNP (NP (ADJP (JJ 大))
+				       (NP (NN 容量)))
+				   (DEG 的))
+			      (NP (NN 内存)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  这 种 芯片 
+	  </arg>
+	  <arg n="1">
+	  大 容量 的 内存 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

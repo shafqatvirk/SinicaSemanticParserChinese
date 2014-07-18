@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揭露 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="discloser"/>
+      <role argnum="1" argrole="thing disclosed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (NP-APP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 揭露)
+					  (NP-OBJ (IP-APP (NP-TMP (NT 当年))
+							  (NP-SBJ (NN 日军))
+							  (VP (VV 制造)
+							      (NP-OBJ (NP-APP (NP-PN (NR 南京))
+									      (ADJP (JJ 大))
+									      (NP (NN 屠杀)))
+								      (NP (NN 惨案)))))
+						  (NP (NN 罪行)))))
+				  (DEC 的)))
+			  (ADJP (JJ 原))
+			  (NP-PN (NR 日本))
+			  (NP (NN 士兵)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  当年 日军 制造 南京 大 屠杀 惨案 罪行 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

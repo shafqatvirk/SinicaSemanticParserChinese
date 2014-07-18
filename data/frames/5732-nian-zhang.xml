@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 年长 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP-APP (NP-PN (NR 冠德)
+				   (NN 建设)
+				   (NN 公司))
+			    (NP (NN 董事长)))
+		    (NP-PN (NR 马玉山)))
+	    (PU ，)
+	    (VP (VP (QP-PRD (NP-TMP (NT 今年))
+			    (QP (CD 六十四)
+				(CLP (M 岁)))))
+		(PU ，)
+		(VP (NP-TMP (NT 前年))
+		    (VP (VV 考上)
+			(NP-OBJ (NP-PN (NR 台大))
+				(NP (NN 商研所)))))
+		(PU ，)
+		(VP (VC 是)
+		    (NP-PRD (NP-PN (NR 台大))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 最))
+					    (VP (VA 年长))))
+				    (DEC 的)))
+			    (NP (NN 学生)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	最 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

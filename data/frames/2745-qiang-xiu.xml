@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抢修 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing urgent repairs made on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 浙江)
+			     (NR 温州))
+		  (VP (ADVP (AD 加紧))
+		      (VP (VV 抢修)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (QP (CD 十七)
+						      (CLP (M 号)))
+						  (NP (NN 台风)))
+					  (VP (VV 水毁)
+					      (NP-OBJ (-NONE- *T*-1)))))
+				  (NP (NN 堤坝)))))) 
+	  </parse>
+	  <arg n="0">
+	  浙江 温州 
+	  </arg>
+	  <arg n="1">
+	  *OP* 十七 号 台风 水毁 *T*-1 堤坝 
+	  </arg>
+	  <arg n="m" f="adv">
+	  加紧 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

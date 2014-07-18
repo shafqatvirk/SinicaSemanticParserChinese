@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 难以想象 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing hard to imagine"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-PN-SBJ (NR 西班牙))
+		  (VP (VV 能)
+		      (VP (PP-TMP (P 在)
+				  (LCP (QP (CD 两)
+					   (CLP (M 年)))
+				       (LC 内)))
+			  (VP (VV 达到)
+			      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-1))
+						  (VP (ADVP (AD 当初))
+						      (VP (VV 难以想象))))
+					      (DEC 的)))
+				      (NP-PN-TTL (PU 《)
+						 (NR 马约)
+						 (PU 》))
+				      (NP (NN 趋同)
+					  (NN 标准))))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  当初 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

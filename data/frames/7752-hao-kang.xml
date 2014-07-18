@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 好康 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *pro*))
+		(VP (VE 有)
+		    (NP-OBJ (DP (DT 什麽))
+			    (NP (PU 「)
+				(CP (WHNP-72 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-72))
+					    (VP (VV 好康)))
+					(DEC 的)))
+				(PU 」))))) 
+	</parse>
+	<arg n="0">
+	*T*-72 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

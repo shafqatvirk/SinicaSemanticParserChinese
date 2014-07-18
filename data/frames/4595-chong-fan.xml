@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重返 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="place arg0 returns to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 他)
+			  (PN 本人))
+		  (VP (QP-ADV (ADVP (AD 已))
+			      (QP (CD ５０)
+				  (CLP (M 年))))
+		      (ADVP (AD 未))
+		      (VP (VV 能)
+			  (VP (VV 重返)
+			      (NP-OBJ (NP-PN (NR 台湾))
+				      (NP (NN 故乡))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 本人 
+	  </arg>
+	  <arg n="1">
+	  台湾 故乡 
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 ５０ 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

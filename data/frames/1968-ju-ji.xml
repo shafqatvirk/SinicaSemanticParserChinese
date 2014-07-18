@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 聚集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 gathers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 每当)
+		      (IP (NP-SBJ (NN 渔汛))
+			  (VP (VV 来临))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NP (NP-PN (NR 中国))
+				   (NP (NN 沿海))
+				   (DP (DT 各))
+				   (NP (NN 省)))
+			       (CC 以及)
+			       (NP (NP-PN-APP (NR 日本)
+					      (PU 、)
+					      (NR 韩国)
+					      (ETC 等))
+				   (NP (NN 地))))
+			   (DEG 的))
+		      (QP (CD 数万)
+			  (CLP (M 艘)))
+		      (NP (NN 渔船)))
+	      (VP (ADVP (AD 便))
+		  (VP (VP (VV 聚集)
+			  (NP-OBJ (PN 这里)))
+		      (PU ，)
+		      (VP (VSB (VV 张网)
+			       (VV 作业)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 沿海 各 省 以及 日本 、 韩国 等 地 的 数万 艘 渔船 	  	  
+	  </arg>
+	  <arg n="1">
+	  这里 	  	  
+	  </arg>
+	  <arg n="m" f="dis">
+	  便 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  每当 渔汛 来临 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entities arg0 gathers together"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TPC (P 至於)
+		      (NP (DP (DT 那些))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 平日))
+					  (VP (VV 乏)
+					      (NP-OBJ (NN 人))
+					      (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 照顾))))))
+				  (DEC 的)))
+			  (NP (NP (ADJP (JJ 老))
+				  (NP (NN 人)))
+			      (CC 与)
+			      (NP (NN 街友)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 则))
+		  (PP-LGS (P 由)
+			  (NP (NP (NN 社会)
+				  (NN 福利))
+			      (NP (NN 团体))))
+		  (VP (VP (VRD (VV 聚集)
+			       (VV 起来)))
+		      (VP (VSB (VV 办桌)
+			       (VV 招待)))))) 
+	  </parse>
+	  <arg n="0">
+	  由 社会 福利 团体 
+	  </arg>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  至於 那些 *OP* *T*-1 平日 乏 人 *PRO* 照顾 的 老 人 与 街友 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

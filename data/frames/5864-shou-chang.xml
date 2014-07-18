@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 收场 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 puts an end to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DP (DT 这)
+			(CLP (M 件)))
+		    (NP (NN 事)))
+	    (VP (PP-MNR (P 以)
+			(NP (NN 离婚)))
+		(VP (VV 收场)))) 
+	</parse>
+	<arg n="1">
+	这 件 事 
+	</arg>
+	<arg n="m" f="mnr">
+	以 离婚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (NP-TMP (NT 今年))
+				    (VP (VV 结婚))))
+			    (DEC 的))))
+	    (LCP-SBJ (DP (DT 每)
+			 (QP (CD 四)
+			     (CLP (M 对))))
+		     (LC 中))
+	    (PU ，)
+	    (VP (ADVP (AD 就))
+		(VP (VE 有)
+		    (IP-OBJ (QP-SBJ (CD 一)
+				    (CLP (M 对)))
+			    (VP (ADVP (AD 将))
+				(PP-MNR (P 以)
+					(NP (NN 离婚)))
+				(VP (VV 收场))))))) 
+	</parse>
+	<arg n="0">
+	一 对 
+	</arg>
+	<arg n="m" f="mnr">
+	以 离婚 
+	</arg>
+	<arg n="m" f="adv">
+	将 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

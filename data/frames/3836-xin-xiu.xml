@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 新修 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 适应)
+			      (NP-OBJ (DNP (NP (NP (CP (WHNP-1 (-NONE- *OP*))
+						       (CP (IP (NP-PN-SBJ (NR 广西))
+							       (VP (VV 实施)
+								   (NP-OBJ (-NONE- *T*-1))))
+							   (DEC 的)))
+						   (NP (NN 沿海)
+						       (NN 带动)
+						       (NN 战略)))
+					       (CC 和)
+					       (NP (NP (ADJP (JJ 大))
+						       (NP (NN 西南)))
+						   (ADJP (JJ 出海))
+						   (NP (NN 通道))))
+					   (DEG 的))
+				      (NP (NN 需要))))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 广西))
+	      (VP (VP (ADVP (AD 正在))
+		      (PP-DIR (P 对)
+			      (NP-PN (NR 南防)
+				     (NN 铁路)))
+		      (VP (VV 进行)
+			  (NP-OBJ (NN 改造))))
+		  (PU ，)
+		  (VP (ADVP (AD 同时))
+		      (VP (VV 新修)
+			  (NP-OBJ (DNP (NP-PN (NR 钦州)
+					      (CC 至)
+					      (NR 黎塘))
+				       (DEG 的))
+				  (NP (NN 铁路))))))) 
+	  </parse>
+	  <arg n="0">
+	  广西 
+	  </arg>
+	  <arg n="1">
+	  钦州 至 黎塘 的 铁路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同时 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为 *PRO* 适应 *OP* 广西 实施 *T*-1 的 沿海 带动 战略 和 大 西南 出海 通道 的 需要 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

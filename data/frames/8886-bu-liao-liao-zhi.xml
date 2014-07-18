@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 不了了之 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing ending with no conclusion"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (CP-CND (ADVP (CS 如果))
+		      (IP (NP-SBJ (NN 生活))
+			  (VP (ADVP (AD 太))
+			      (ADVP (AD 过))
+			      (VP (VA 忙碌)))))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 许多))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VRD (VV 进行)
+					   (VV 到))
+				      (QP-OBJ (CD 一半))))
+			      (DEC 的)))
+		      (NP (NN 故事)))
+	      (VP (ADVP (AD 常))
+		  (VP (VV 不了了之)))) 
+	  </parse>
+	  <arg n="0">
+	  许多 *OP* *T*-2 进行 到 一半 的 故事 
+	  </arg>
+	  <arg n="m" f="adv">
+	  常 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  如果 生活 太 过 忙碌 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

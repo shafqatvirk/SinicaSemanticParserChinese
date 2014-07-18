@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查清 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="investigator"/>
+    <role argnum="1" argrole="thing investigated"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-OBJ (PU “)
+          (NP-SBJ (-NONE- *pro*))
+          (VP (VV 能)
+              (VP (ADVP (AD 顺利))
+                  (VP (VV 查清)
+                      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                                  (CP (IP (NP-SBJ (-NONE- *pro*))
+                                          (VP (ADVP (AD 已))
+                                              (VP (VV 发现)
+                                                  (NP-OBJ (-NONE- *T*-1)))))
+                                      (DEC 的)))
+                              (NP (NN 核)
+                                  (NN 材料)
+                                  (NN 走私))))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="ADV"> 顺利 </arg>
+	<V/>
+	<arg n="1"> *OP* *pro* 已 发现 (*T*-1)->(核材料走私) 的 核 材料 走私 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

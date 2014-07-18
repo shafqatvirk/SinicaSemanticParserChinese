@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing improved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 浙江省))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 十分))
+		  (VP (VV 注重)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 改进)
+				  (NP-OBJ (NN 航空)
+					  (NN 运输)
+					  (NN 管理))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  航空 运输 管理 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

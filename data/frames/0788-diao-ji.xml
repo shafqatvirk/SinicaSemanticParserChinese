@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 调集 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			   (VP (VV 下雪)))
+		       (LC 后))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 北大湖)
+			 (NN 滑雪场))
+	      (VP (VP (ADVP (AD 又))
+		      (VP (VV 调集)
+			  (NP-OBJ (NN 人力))))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (NN 雪))
+			      (VP (VV 拍实)))))) 
+	  </parse>
+	  <arg n="0">
+	  北大湖 滑雪场 
+	  </arg>
+	  <arg n="1">
+	  人力 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *pro* 下雪 后 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

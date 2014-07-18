@@ -1,0 +1,69 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 缠身 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is burdened by"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (LCP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VV 获奖)))
+			 (LC 之後)))
+	    (PU ，)
+	    (NP-TPC (PN 他))
+	    (ADVP (AD 随即))
+	    (NP-SBJ (NN 官司))
+	    (VP (VV 缠身))) 
+	</parse>
+	<arg n="0">
+	他 
+	</arg>
+	<arg n="1">
+	官司 
+	</arg>
+	<arg n="m" f="adv">
+	随即 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *PRO* 获奖 之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 埋下)
+		(AS 了)
+		(NP-OBJ (CP-APP (IP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+						 (VP (ADVP (AD 日後))
+						     (VP (VV 暴跌))))
+					     (LC 时))
+				    (IP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 倾家荡产)))
+					(PU 、)
+					(IP (NP-SBJ (NN 债务))
+					    (VP (VV 缠身)))))
+				(DEC 的))
+			(NP (NN 恶因))))) 
+	</parse>
+	<arg n="1">
+	债务 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

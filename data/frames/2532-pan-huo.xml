@@ -1,0 +1,91 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 盘活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing made to circulate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 四十八)
+			      (CLP (M 家)))
+			  (NP (NN 化工))
+			  (ADJP (JJ 国有))
+			  (NP (NN 企市)))
+		  (VP (VP (VV 成为)
+			  (NP-OBJ (NN 上市)
+				  (NN 公司)))
+		      (PU ，)
+		      (VP (VV 筹措)
+			  (NP-OBJ (NN 资金))
+			  (QP-EXT (CD 一百五十亿)
+				  (CLP (M 元))))
+		      (PU ，)
+		      (VP (VV 盘活)
+			  (AS 了)
+			  (NP-OBJ (NN 存量)
+				  (NN 资产)))
+		      (PU ，)
+		      (VP (VV 优化)
+			  (AS 了)
+			  (NP-OBJ (NN 产业)
+				  (NN 结构))))) 
+	  </parse>
+	  <arg n="0">
+	  四十八 家 化工 国有 企市 
+	  </arg>
+	  <arg n="1">
+	  存量 资产 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 公司))
+	      (VP (VP (VV 采用)
+		      (NP-OBJ (NP-APP (NN 兼并)
+				      (PU 、)
+				      (NN 收购)
+				      (ETC 等))
+			      (NP (NN 形式))))
+		  (PU ，)
+		  (VP (ADVP (AD 共))
+		      (VP (VP (VV 利用)
+			      (NP-OBJ (-NONE- *RNR*-1))
+			      (QP-EXT (-NONE- *RNR*-2)))
+			  (CC 和)
+			  (VP (VV 盘活)
+			      (NP-OBJ-1 (NN 社会)
+					(NN 资产))
+			      (QP-EXT-2 (CD 一百多亿)
+					(CLP (M 元)))))))) 
+	  </parse>
+	  <arg n="0">
+	  公司 
+	  </arg>
+	  <arg n="1">
+	  社会 资产 
+	  </arg>
+	  <arg n="1" f="QTY">
+	  一百多亿 元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

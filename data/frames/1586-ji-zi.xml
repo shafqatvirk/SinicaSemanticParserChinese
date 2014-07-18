@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 集资 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="amount of money arg0 raises"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九九二年))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 江苏)
+			     (NR 扬中县))
+		      (NP (NN 农民)))
+	      (VP (VP (VV 集资))
+		  (VP (VV 建成)
+		      (AS 了)
+		      (NP-PN-OBJ (NR 扬中)
+				 (NR 长江)
+				 (NN 大桥))))) 
+	  </parse>
+	  <arg n="0">
+	  江苏 扬中县 农民 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九二年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 见证)
+			      (NP-OBJ (NN 历史)))))
+	      (PU ，)
+	      (NP-PN (NR 周天瑞))
+	      (VP (VP (VV 集资)
+		      (QP-OBJ (CD 四百万)
+			      (CLP (M 元))))
+		  (PU ，)
+		  (VP (PP-MNR (P 以)
+			      (NP (DNP (NP-PN (ADJP (JJ 新))
+					      (NP (NN 新闻)))
+				       (DEG 的))
+				  (NP (NN 人力))))
+		      (PU ，)
+		      (VP (VCD (VV 策划)
+			       (VV 制作))
+			  (AS 了)
+			  (NP-OBJ (DNP (NP (UCP-APP (IP (NP-SBJ (QP (CD 两))
+								(NP (NN 党)))
+							(VP (VV 对决)))
+						    (PU 、)
+						    (NP (DNP (NP (NN 台独))
+							     (DEG 之))
+							(NP (NN 梦)))
+						    (ETC 等))
+					   (QP (CD 八)
+					       (CLP (M 项)))
+					   (NP (NN 主题)))
+				       (DEG 的))
+				  (NP (PU 「)
+				      (NP-PN (ADJP (JJ 新))
+					     (NP (NN 新闻)))
+				      (NP (NN 电子版))
+				      (PU 」)))))
+		  (PU ，)
+		  (VP (PP-MNR (P 以)
+			      (NP (NN 录影带)
+				  (NN 形式)))
+		      (VP (VV 发行))))) 
+	  </parse>
+	  <arg n="0">
+	  周天瑞 
+	  </arg>
+	  <arg n="1">
+	  四百万 元 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 *PRO* 见证 历史 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

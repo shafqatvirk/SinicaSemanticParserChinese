@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 含有 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 contains"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 扁柏))
+	    (VP (VP (VSB (VA 笔直)
+			 (VV 通天)))
+		(PU ，)
+		(VP (VV 含有)
+		    (NP-OBJ (ADJP (ADVP (AD 较))
+				  (ADJP (JJ 多)))
+			    (NP (NN 油脂)))))) 
+	</parse>
+	<arg n="0">
+	扁柏 
+	</arg>
+	<arg n="1">
+	较 多 油脂 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

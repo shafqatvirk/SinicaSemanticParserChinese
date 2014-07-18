@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 震撼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 shocks"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 震撼)
+		(NP-OBJ (DP (DT 整)
+			    (CLP (M 个)))
+			(NP (NN 社会))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	整 个 社会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-ADV (NN 其中))
+	    (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (ADVP (AD 最))
+				    (VP (VV 令)
+					(NP-OBJ (NN 人))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 震撼))))))
+			    (DEC 的))))
+	    (VP (VC 是)
+		(IP-PRD (NP-PN-SBJ (NR 中共))
+			(VP (VP (VV 获得)
+				(NP-PN-OBJ (NN W-88)
+					   (NN 三叉戟)
+					   (NN D-5)
+					   (NN 潜射)
+					   (NN 弹道)
+					   (NN 飞弹)))
+			    (PU ，)
+			    (VP (MSP 以)
+				(VP (VV 进行)
+				    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 核)
+								(NN 弹头))
+							(VP (VV 小型化)))
+						    (DEC 的))
+					    (NP (NN 科技))))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

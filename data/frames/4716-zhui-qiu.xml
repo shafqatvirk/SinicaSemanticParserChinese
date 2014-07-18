@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 追求 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 pursues"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PP-LOC (P 在)
+			  (LCP (NP (DP (DT 这)
+				       (CLP (M 个)))
+				   (NP (NN 问题)))
+			       (LC 上)))
+		  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 中国))
+				      (VP (VV 追求)
+					  (NP-OBJ (-NONE- *T*-1))))
+				  (DEC 的)))
+			  (NP (NN 目标)))
+		  (VP (VE 有)
+		      (IP-OBJ (QP-APP (CD 两)
+				      (CLP (M 个)))
+			      (PU ：)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 保持)
+					  (NP-OBJ (DNP (NP-PN (NR 朝鲜)
+							      (NN 半岛))
+						       (DEG 的))
+						  (NP (NN 和平)
+						      (CC 与)
+						      (NN 稳定))))
+				      (CC 和)
+				      (VP (VV 实现)
+					  (NP-OBJ (DNP (NP-PN (NR 朝鲜)
+							      (NN 半岛))
+						       (DEG 的))
+						  (NP (NN 无核化))))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 观察 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="observer"/>
+      <role argnum="1" argrole="thing observed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 美方))
+	      (VP (ADVP (AD 仅))
+		  (VP (BA 将)
+		      (IP-OBJ (NP-SBJ (PN 此))
+			      (VP (VV 作为)
+				  (NP-OBJ (QP (CD 一)
+					      (CLP (M 个)))
+					  (CP (WHPP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *pro*))
+						      (VP (PP-MNR (-NONE- *T*-1))
+							  (VP (VV 观察)
+							      (NP-OBJ (NP-PN (NR 中国))
+								      (NP (NN 市场))))))
+						  (DEC 的)))
+					  (ADJP (JJ 小小))
+					  (NP (NN 窗口)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  中国 市场 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		  (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VV 迂回))
+				  (ADVP (AD 一点))))
+		      (VP (VV 观察))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 迂回 一点 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 炸死 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent,cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-TMP (P 在)
+		      (NP (DP (DT 此))
+			  (NP (NN 期间))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 西非))
+		      (ADJP (JJ 维和))
+		      (NP (NN 部队)))
+	      (VP (ADVP (AD 曾))
+		  (VP (VP (VV 出动)
+			  (NP-OBJ (NN 战斗机)))
+		      (VP (VV 轰炸)
+			  (NP-OBJ (NN 叛军)
+				  (NN 阵地)))
+		      (PU ，)
+		      (VP (VV 炸死)
+			  (NP-OBJ (NN 叛军))
+			  (NP-EXT (QP (ADVP (AD 约))
+				      (QP (CD ５０余)))
+				  (NP (NN 人))))))) 
+	  </parse>
+	  <arg n="0">
+	  西非 维和 部队 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  叛军 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  约 ５０余 人 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 多国))
+		      (NP (NN 部队)))
+	      (VP (NP-TMP (NT １３日))
+		  (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			       (VP (PP-DIR (P 对)
+					   (NP-PN (NR 巴格达)))
+				   (VP (VV 进行)
+				       (NP-OBJ (NN 空袭)))))
+			   (LC 时))
+		  (VP (VV 炸死)
+		      (NP-OBJ (QP (CD 数)
+				  (CD 百))
+			      (NP (NN 平民)))))) 
+	  </parse>
+	  <arg n="0">
+	  多国 部队 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  １３日 	  
+	  </arg>
+	  <arg n="M" f="TMP">
+	  *PRO* 对 巴格达 进行 空袭 时 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  数 百 平民 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VV 躲)
+				      (PP (P 在)
+					  (NP (NN 里面)))))
+			      (DEC 的)))
+		      (QP (ADVP (AD 至少))
+			  (QP (CD ５００)
+			      (CLP (M 名))))
+		      (NP (NN 平民)))
+	      (VP (SB 被)
+		  (VP (VV 炸死)))) 
+	  </parse>
+	  <arg n="1">
+	  *OP* (*T*-2)->(至少５００名平民) 躲 在 里面 的 至少 ５００ 名 平民 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

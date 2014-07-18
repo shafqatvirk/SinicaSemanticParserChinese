@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 及於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 reaches/touches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 风气))
+	    (VP (VV 及於)
+		(NP-OBJ (NP-PN-APP (NR 元)
+				   (PU 、)
+				   (NR 明))
+			(QP (CD 两))
+			(NP (NN 朝))))) 
+	</parse>
+	<arg n="0">
+	风气 
+	</arg>
+	<arg n="1">
+	元 、 明 两 朝 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

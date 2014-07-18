@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 请来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="invitee"/>
+      <role argnum="2" argrole="propostion"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VP (VV 请来)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP-PN (NR 上海)
+					  (PU 、)
+					  (NR 太原))
+				   (DEG 的))
+			      (NP (NN 专家)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 帮助)
+			      (NP-OBJ (-NONE- *pro*))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 规划))))))
+		  (PU ，)
+		  (VP (VV 修建)
+		      (AS 了)
+		      (NP-OBJ (NP (NP-PN (NR 陈永贵))
+				  (NP (NN 墓)))
+			      (PU 、)
+			      (NP (NN 名人碑林))))
+		  (PU ，)
+		  (VP (VV 开发)
+		      (AS 了)
+		      (NP-OBJ (NP (NP-PN (NR 虎头山))
+				  (NP (NN 景点)))
+			      (ETC 等))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  上海 、 太原 的 专家 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 帮助 *pro* *PRO* 规划 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

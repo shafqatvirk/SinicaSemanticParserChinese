@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 喘 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="breather"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-TPC-1 (PU 「)
+		    (IP-SBJ (NP-SBJ (NN 原料))
+			    (VP (VV 降价)))
+		    (VP (VP (VV 来)
+			    (DER 得)
+			    (VP-EXT (ADVP (AD 正))
+				    (VP (VC 是)
+					(NP-PRD (NN 时候)))))
+			(PU ，)
+			(VP (VV 让)
+			    (NP-OBJ (PN 我们))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 可以)
+					(VP (VV 喘)
+					    (NP-OBJ (QP (CD 一)
+							(CLP (M 口)))
+						    (NP (NN 气)))))
+				    (PU ，)
+				    (VP (ADVP (AD 不))
+					(VP (VV 会)
+					    (VP (VV 出现)
+						(NP-OBJ (NN 亏损)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  一 口 气 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

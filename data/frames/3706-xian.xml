@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 衔 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity holding arg1"/>
+      <role argnum="1" argrole="thing held"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 盘踞)
+	      (AS 着)
+	      (NP-OBJ (QP (CD 一)
+			  (CLP (M 条)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 口))
+				  (VP (VV 衔)
+				      (NP-OBJ (NN 明珠))))
+			      (DEC 的)))
+		      (ADJP (JJ 巨))
+		      (NP (NN 龙)))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  口 
+	  </arg>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  明珠 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

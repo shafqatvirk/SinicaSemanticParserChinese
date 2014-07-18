@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 约 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="thing arg0 invites arg1 to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 他))
+		      (CC 和)
+		      (NP (NP (NN 公司))
+			  (ADJP (JJ 年轻))
+			  (NP (NN 职员))))
+	      (VP (ADVP (AD 相))
+		  (VP (VV 约)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 去)
+				  (VP (VV 烤肉))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 和 公司 年轻 职员 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 去 烤肉 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

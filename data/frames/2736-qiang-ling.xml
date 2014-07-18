@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 强令 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="order giver"/>
+      <role argnum="1" argrole="order receiver"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NN 国办))
+		  (VP (VP (VV 发出)
+			  (NP-OBJ (NN 通知)))
+		      (VP (VV 严禁)
+			  (NP-OBJ (-NONE- *pro*))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 强令)
+				  (NP-OBJ (NN 企事业)
+					  (NN 单位))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-LOC (P 在)
+						  (NP (CP (WHNP-1 (-NONE- *OP*))
+							  (IP (NP-SBJ (-NONE- *pro*))
+							      (VP (VV 指定)
+								  (NP-OBJ (-NONE- *T*-1)))))
+						      (NP (NN 金融)
+							  (NN 机构))))
+					  (VP (VV 存款))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  企事业 单位 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 在 *OP* *pro* 指定 (*T*-1)->(金融机构) 金融 机构 存款 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

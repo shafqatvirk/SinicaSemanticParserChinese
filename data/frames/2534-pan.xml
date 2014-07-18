@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 盼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing hoped for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 至))
+		  (VP (VV 盼)
+		      (IP-OBJ (NP-SBJ (DNP (NP (QP (CD 两))
+					       (NP (NN 会)))
+					   (DEG 的))
+				      (NP (NN 联系)
+					  (CC 与)
+					  (NN 合作)))
+			      (VP (VV 能)
+				  (VP (PP-MNR (P 依照)
+					      (NP (ADJP (JJ 现有))
+						  (NP (NN 协议))))
+				      (VP (VV 进行)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  两 会 的 联系 与 合作 能 依照 现有 协议 进行 
+	  </arg>
+	  <arg n="m" f="adv">
+	  至 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

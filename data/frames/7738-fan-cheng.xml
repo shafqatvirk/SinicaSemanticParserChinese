@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 翻成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 translates"/>
+    <role argnum="2" argrole="thing arg1 is translated into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 国内)
+		    (NN 新闻))
+	    (VP (VP (ADVP (AD 也))
+		    (VP (VE 没有)
+			(NP-OBJ (PN 自己)
+				(NN 特色))))
+		(PU ，)
+		(VP (PP-ADV (P 除了)
+			    (IP (NP-SBJ (QP (CD 少数))
+					(NP (NN 新闻)))
+				(VP (PP-LGS (P 由)
+					    (NP (PN 自己)
+						(NN 记者)))
+				    (VP (VV 撰稿)))))
+		    (PU ，)
+		    (ADVP (AD 常常))
+		    (ADVP (AD 只是))
+		    (VP (BA 将)
+			(IP-OBJ (NP-SBJ (DNP (NP (NN 中文)
+						 (NN 报纸))
+					     (DEG 的))
+					(NP (NN 新闻)))
+				(VP (VV 翻成)
+				    (NP-OBJ (NN 英文)))))))) 
+	</parse>
+	<arg n="1">
+	中文 报纸 的 新闻 
+	</arg>
+	<arg n="2">
+	英文 
+	</arg>
+	<arg n="m" f="adv">
+	只是 
+	</arg>
+	<arg n="m" f="adv">
+	常常 
+	</arg>
+	<arg n="m" f="adv">
+	除了 少数 新闻 由 自己 记者 撰稿 
+	</arg>
+	<arg n="m" f="tpc">
+	国内 新闻 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,81 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 祝贺 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 congratulates"/>
+      <role argnum="2" argrole="thing arg1 is congratulated on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 杨振亚)
+			 (NN 大使))
+	      (VP (ADVP (AD 首先))
+		  (PP-DIR (P 向)
+			  (NP (NN 侨胞)
+			      (CC 和)
+			      (NN 台胞)))
+		  (VP (VV 祝贺)
+		      (NP-OBJ (NN 春节))))) 
+	  </parse>
+	  <arg n="0">
+	  杨振亚 大使 
+	  </arg>
+	  <arg n="1">
+	  向 侨胞 和 台胞 
+	  </arg>
+	  <arg n="2">
+	  春节 
+	  </arg>
+	  <arg n="m" f="adv">
+	  首先 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (LCP-TMP (IP (NP-PN-SBJ (NR 伏明霞))
+			       (VP (VV 获得)
+				   (NP-OBJ (NN 女子)
+					   (NN 跳台)
+					   (NN 跳水)
+					   (NN 冠军))))
+			   (LC 后))
+		  (PU ，)
+		  (NP-SBJ (NP-PN (NR 苏联队))
+			  (NP (NN 教练)))
+		  (VP (ADVP (AD 热情))
+		      (PP-DIR (P 向)
+			      (NP (PN 她)))
+		      (VP (VV 祝贺)))) 
+	  </parse>
+	  <arg n="0">
+	  苏联队 教练 
+	  </arg>
+	  <arg n="1">
+	  向 她 
+	  </arg>
+	  <arg n="m" f="adv">
+	  热情 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  伏明霞 获得 女子 跳台 跳水 冠军 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,130 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 销售 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing marketed/sold"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-2))
+				  (NP-SBJ (NN 总部))
+				  (VP (VV 设)
+				      (PP-LOC (P 在)
+					      (NP-PN (NR 加拿大)))))
+			      (DEC 的)))
+		      (NP-PN (NR 格林柯尔)
+			     (NN 集团)))
+	      (VP (VC 是)
+		  (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (VV 生产)
+					      (NP-OBJ (-NONE- *RNR*-3)))
+					  (CC 和)
+					  (VP (VV 销售)
+					      (NP-OBJ-3 (ADJP (JJ 无氟))
+							(ADJP (JJ 新型))
+							(NP (NN 制冷剂))))))
+				  (DEC 的)))
+			  (ADJP (JJ 大型))
+			  (ADJP (JJ 跨国))
+			  (NP (NN 集团)
+			      (NN 公司))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  无氟 新型 制冷剂 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NR 舟山))
+		      (NP (NN 渔民)))
+	      (VP (VP (ADVP (AD 大多))
+		      (VP (VV 采取)
+			  (NP-OBJ (DNP (UCP (IP (NP-SBJ (-NONE- *pro*))
+						(VP (PP (P 与)
+							(NP (NN 外商)))
+						    (VP (VV 合资)
+							(PU 、)
+							(VV 合作))))
+					    (CC 或)
+					    (NP (NN 补偿)
+						(NN 贸易)))
+				       (DEG 的))
+				  (NP (NN 方式)))))
+		  (PU ，)
+		  (VP (ADVP (AD 就地))
+		      (VP (VV 捕捞)
+			  (PU 、)
+			  (VV 加工)
+			  (CC 和)
+			  (VV 销售)))
+		  (PU ，)
+		  (VP (VV 保持)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 较))
+					      (VP (VA 高))))
+				      (DEC 的)))
+			      (NP (NN 生产)
+				  (NN 效益)))))) 
+	  </parse>
+	  <arg n="0">
+	  舟山 渔民 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 拥有)
+	      (NP-OBJ (QP (CD 一百二十五)
+			  (CLP (M 种)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VCD (VV 上市)
+				       (VV 销售)))
+			      (DEC 的)))
+		      (NP (NP (NN 处方)
+			      (NN 药))
+			  (PU 、)
+			  (NP (ADJP (JJ 非处方))
+			      (NP (NN 药)))
+			  (CC 及)
+			  (NP (NN 动物)
+			      (NN 保健)
+			      (NN 制品))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 如何是好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (CP-CND (ADVP (CS 要是))
+		      (IP (NP-SBJ (NP-APP (NN 女儿))
+				  (DP (DT 这)
+				      (CLP (M 个)))
+				  (ADJP (JJ 小))
+				  (NP (PU 「)
+				      (NN 外国人)
+				      (PU 」)))
+			  (VP (NP-TMP (NT 将来))
+			      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 上学)))
+			      (ADVP (AD 也))
+			      (VP (SB 被)
+				  (VP (VV 修理))))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 该)
+		  (VP-WH (VV 如何是好)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="cnd">
+	要是 女儿 这 个 小 「 外国人 」 将来 *PRO* 上学 也 被 修理 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

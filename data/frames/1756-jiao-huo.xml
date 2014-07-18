@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 交火 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="fighting parties"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (LCP-TMP (IP (NP-SBJ (NN 会晤))
+			   (VP (VV 结束)))
+		       (LC 后))
+	      (PU ，)
+	      (IP (IP (NP-SBJ (DP (DT 这)
+				  (QP (CD 两)
+				      (CLP (M 名))))
+			      (NP (NN 军官)))
+		      (VP (PP-LOC (P 在)
+				  (NP (NN 民族)
+				      (NN 和解)
+				      (NN 委员会)
+				      (NN 大楼)
+				      (NN 门前)))
+			  (VP (VV 发生)
+			      (NP-OBJ (NN 争吵)))))
+		  (PU ，)
+		  (IP (NP-SBJ (-NONE- *pro*))
+		      (VP (ADVP (AD 并))
+			  (VP (VP (VV 导致)
+				  (NP-OBJ (NP (PN 双方))
+					  (ADJP (JJ 随行))
+					  (NP (NN 人员)))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 当场))
+					  (VP (VV 交火)))))
+			      (PU ，)
+			      (VP (VV 造成)
+				  (NP-OBJ (NN 流血)
+					  (NN 事件)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  当场 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

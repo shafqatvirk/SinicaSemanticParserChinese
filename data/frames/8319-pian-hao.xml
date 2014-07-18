@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 偏好 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 prefers"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (NP-SBJ (DNP (NP-PN (NR 台湾))
+			   (DEG 的))
+		      (NP (NN 环保)
+			  (NN 运动)))
+	      (VP (VP (ADVP (AD 一向))
+		      (VP (VV 偏好)
+			  (NP-OBJ (NP (NP (PU 「)
+					  (NN 索赔)
+					  (PU 」))
+				      (NP (NN 式)))
+				  (NP (NN 抗争)))))
+		  (PU ，)
+		  (VP (ADVP (AD 却))
+		      (VP (VV 缺乏)
+			  (NP-OBJ (DNP (PP (P 对)
+					   (NP (NN 环境)
+					       (NN 生态)))
+				       (DEG 的))
+				  (ADJP (JJ 真诚))
+				  (NP (NN 尊重))))))) 
+	  </parse>
+	  <arg n="0">
+	  台湾 的 环保 运动 
+	  </arg>
+	  <arg n="1">
+	  「 索赔 」 式 抗争 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一向 
+	  </arg>
+	  <arg n="m" f="dis">
+	  然而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,127 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 描述 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing depicted"/>
+      <role argnum="2" argrole="location depiction made"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-CND (NP-SBJ (-NONE- *PRO*))
+		      (VP (ADVP (CS 假如))
+			  (VP (VE 没有)
+			      (NP-OBJ (DP (DT 这些))
+				      (NP (NN 财富))))))
+	      (PU ，)
+	      (NP-SBJ (NN 人们))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 不))
+		  (VP (VV 可能)
+		      (VP (VV 描述)
+			  (NP-OBJ (DNP (NP (NN 历史))
+				       (DEG 的))
+				  (NP (NN 进程))))))) 
+	  </parse>
+	  <arg n="0">
+	  人们 
+	  </arg>
+	  <arg n="1">
+	  历史 的 进程 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  *PRO* 假如 没有 这些 财富 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 报告书)))
+	      (VP (PP (P 除)
+		      (LCP (IP (NP-SBJ (-NONE- *pro*))
+			       (VP (VV 刊载)
+				   (NP-OBJ (NN 人口)
+					   (NN 生命表))))
+			   (LC 外)))
+		  (PU ，)
+		  (ADVP (AD 并))
+		  (VP (VV 描述)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (NN 人口)
+				       (NN 生命表))
+				   (DEG 的))
+			      (NP (NN 编制)
+				  (NN 方法)))))) 
+	  </parse>
+	  <arg n="2">
+	  该 报告书 
+	  </arg>
+	  <arg n="1">
+	  人口 生命表 的 编制 方法 
+	  </arg>
+	  <arg n="m" f="adv">
+	  并 
+	  </arg>
+	  <arg n="m" f="adv">
+	  除 *pro* 刊载 人口 生命表 外 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (ADVP (AD 不))
+		      (VP (VV 存在)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (LCP-LOC (NP (NN 日记))
+							   (LC 中))
+						  (VP (MSP 所)
+						      (VP (VV 描述)
+							  (NP-OBJ (-NONE- *T*-2))))))
+					  (DEC 的)))
+				  (ADJP (ADVP (AD 那样))
+					(ADJP (JJ 残虐)))
+				  (NP (NN 行为)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="2">
+	  日记 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

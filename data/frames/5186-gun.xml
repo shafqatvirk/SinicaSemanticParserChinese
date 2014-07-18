@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> ¹ö </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 creates"/>
+    <role argnum="2" argrole="instrument"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg2"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (ADJP (JJ ¸»))
+		    (NP (NN ÈË)))
+	    (VP (VV Ï£Íû)
+		(IP-OBJ (NP-SBJ (NN Ç®))
+			(VP (VV ¹ö)
+			    (NP-OBJ (NN Ç®)))))) 
+	</parse>
+	<arg n="1">
+	Ç® 
+	</arg>
+	<arg n="2">
+	Ç® 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-MNR (P ÓÃ)
+			    (NP (NN Ç®)))
+		    (VP (VV ¹ö)
+			(NP-OBJ (NN Ç®))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	Ç® 
+	</arg>
+	<arg n="2">
+	ÓÃ Ç® 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

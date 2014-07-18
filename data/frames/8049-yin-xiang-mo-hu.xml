@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 印象模糊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="entity arg0 only has a vague impression of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC-1 (PU 「)
+			(LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				     (VP (VV 认识)
+					 (NP-PN-OBJ (NR 邓相扬))))
+				 (LC 之前))
+			(PU ，)
+			(NP-SBJ (PN 我))
+			(VP (VP (PP-DIR (P 对)
+					(NP (DNP (NP (PN 我们))
+						 (DEG 的))
+					    (NP (NN 族群))))
+				(VP (VV 印象模糊)))
+			    (PU ，)
+			    (VP (PP-DIR (P 对)
+					(NP (NP-PN (NR 雾社))
+					    (NP (NN 事件))))
+				(ADVP (AD 也))
+				(ADVP (AD 只))
+				(VP (VC 是)
+				    (NP-PRD (IP-APP (NP-SBJ (-NONE- *PRO*))
+						    (VP (VV 道听途说)))
+					    (NP (NN 阶段)))))))
+	      (PU ，)
+	      (PU 」)
+	      (NP-PN-SBJ (NR 巴万))
+	      (VP (VV 说)
+		  (IP-OBJ (-NONE- *T*-1)))) 
+	  </parse>
+	  <arg n="0">
+	  我 
+	  </arg>
+	  <arg n="1">
+	  对 我们 的 族群 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *PRO* 认识 邓相扬 之前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

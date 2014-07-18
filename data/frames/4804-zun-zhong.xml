@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 尊重 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 respects"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 公报))
+	      (VP (VV 要求)
+		  (NP-PN-OBJ (NR 美国))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 尊重)
+			      (NP-OBJ (NP (DNP (NP-PN (NR 古巴))
+					       (DEG 的))
+					  (NP (NN 领土)
+					      (NN 完整)))))
+			  (PU ，)
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (NP-PN (NR 关塔那摩))
+					      (NP (NN 军事)
+						  (NN 基地)))
+				      (VP (VV 还给)
+					  (NP-PN-OBJ (NR 古巴)))))
+			  (PU ，)
+			  (CC 并)
+			  (VP (ADVP (AD 立即))
+			      (VP (VV 停止)
+				  (NP-OBJ (NN 封锁)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  古巴 的 领土 完整 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *PRO*))
+	      (VP (VP (ADVP (AD 相互))
+		      (VP (VV 尊重)))
+		  (PU ，)
+		  (VP (ADVP (AD 平等))
+		      (VP (VV 参与)))
+		  (PU ，)
+		  (VP (VCD (VV 互惠)
+			   (VV 互利)))
+		  (PU ，)
+		  (VP (ADVP (AD 共同))
+		      (VP (VV 发展))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相互 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 挽救 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity saved"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 基因)
+		      (NN 疗法))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 开始)
+		      (VP (VV 挽救)
+			  (NP-OBJ (DNP (NP (NN 患者))
+				       (DEG 的))
+				  (NP (NN 生命))))))) 
+	  </parse>
+	  <arg n="0">
+	  基因 疗法 
+	  </arg>
+	  <arg n="1">
+	  患者 的 生命 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

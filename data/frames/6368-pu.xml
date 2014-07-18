@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 谱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="composer"/>
+    <role argnum="1" argrole="music arg0 composes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 五二○))
+	    (NP-SBJ-PN (NR 台湾))
+	    (VP (VV 谱)
+		(NP-OBJ (NN 新曲)))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	新曲 
+	</arg>
+	<arg n="m" f="tmp">
+	五二○ 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

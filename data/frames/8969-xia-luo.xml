@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 下楼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person going downstairs"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (IP-ADV (NP-SBJ (NN 手边))
+			  (VP (VV 缺)
+			      (NP-OBJ (PN 什麽))))
+		  (ADVP (AD 就))
+		  (VP (VV 可以)
+		      (VP (VRD (VV 下楼)
+			       (VV 去)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 
+	  </arg>
+	  <arg n="m" f="adv">
+	  手边 缺 什麽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保护 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="protector"/>
+    <role argnum="1" argrole="thing protected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-TMP (P 截至)
+              (NP (NT 目前)))
+      (PU ，)
+      (NP-SBJ (NP-PN (NR 天津市))
+              (NP (NN-SHORT 人大)
+                  (CC 和)
+                  (NN 政府)))
+      (VP (VV 保护)
+          (NP-OBJ (NP (NP (NN 中外))
+                      (NP (NN 投资者)
+                          (CC 及)
+                          (NN 员工)))
+                  (ADJP (JJ 合法))
+                  (NP (NN 权益))))))
+	</parse>
+	<arg n="M" f="TMP"> 截至 目前 </arg>
+	<arg n="0"> 天津市 人大 和 政府 </arg>
+	<V/>
+	<arg n="1"> 中外 投资者 及 员工 合法 权益 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP (IP-APP (NP-SBJ (-NONE- *PRO*))
+              (VP (NP-ADV (PN 自我))
+                  (VP (VV 保护))))
+      (NP (NN 意识))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="M" f="ADV"> 自我 </arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

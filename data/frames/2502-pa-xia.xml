@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 爬下 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing climb down from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 这时))
+	      (LCP-SBJ (NP (NN 货车))
+		       (LC 上))
+	      (VP (VV 爬下)
+		  (NP-OBJ (QP (CD 一)
+			      (CLP (M 名)))
+			  (NP (NN 重伤者))))) 
+	  </parse>
+	  <arg n="0">
+	  一 名 重伤者 
+	  </arg>
+	  <arg n="1">
+	  货车 上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  这时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  
+	  </parse>
+	  <arg n="0">
+	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

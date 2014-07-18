@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 遮天 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing shielding off sky"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-SBJ (NP-PN (NR 中兴)
+			    (NN 医院))
+		     (LC 边))
+	    (VP (ADVP (AD 还))
+		(VP (VE 有)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 棵)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-1))
+					(IP (IP (NP-SBJ (NN 盘根))
+						(VP (VV 缠绕)))
+					    (PU 、)
+					    (IP (NP-SBJ (NN 绿荫))
+						(VP (VV 遮天)))))
+				    (DEC 的)))
+			    (ADJP (JJ 老))
+			    (NP (NN 茄冬)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	绿荫 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

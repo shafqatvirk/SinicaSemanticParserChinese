@@ -1,0 +1,71 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 甩开 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 discards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (CS 尽管))
+			(VP (VP (VV 工作)
+				(QP-EXT (CD 多)
+					(CLP (M 年))))
+			    (VP (ADVP (AD 稍))
+				(VP (VE 有)
+				    (NP-OBJ (NN 积蓄) ))))))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 姜)
+		       (NN 小姐) )
+	    (VP (NP-TMP (DNP (LCP (NP (NN 辞职))
+				  (LC 後))
+			     (DEG 的))
+			(DP (DT 前)
+			    (QP (CD 三)
+				(CLP (M 个))))
+			(NP (NN 月) ))
+		(VP (VP (ADVP (AD 仍))
+			(ADVP (AD 不免))
+			(VP (VV 陷)
+			    (PP (P 在)
+				(LCP (NP (NN 恐惧) )
+				     (LC 里)))))
+		    (PU ，)
+		    (VP (VV 怕)
+			(IP-OBJ (NP-SBJ (PN 自己))
+				(VP (PP-ADV (P 就)
+					    (NP (PN 此)))
+				    (VP (LB 被)
+					(CP-OBJ (WHNP-1 (-NONE- *OP*))
+						(IP (NP-SBJ (NN 社会) )
+						    (VP (VV 甩开)
+							(NP-OBJ (-NONE- *T*-1)))))))))
+		    (PU 、)
+		    (VP (ADVP (AD 也))
+			(VP (VV 怕)
+			    (NP-OBJ (NP (NN 亲友) )
+				    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 责难)))
+					    (DEC 的))
+				    (NP (NN 眼光) ))))))) 
+	</parse>
+	<arg n="0">
+	社会 
+	</arg>
+	<arg n="1">
+	自己 
+	</arg>
+	<arg n="m" f="adv">
+	就 此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

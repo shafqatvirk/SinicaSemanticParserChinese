@@ -1,0 +1,105 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赞成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing arg0 supports/agrees to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (PP (P 作为)
+		      (NP (NP-PN (NR 联合国)
+				 (NN 安理会))
+			  (ADJP (JJ 常任))
+			  (NP (NN 理事国))))
+		  (PU ，)
+		  (VP (VP (VV 投票))
+		      (VP (VV 赞成)
+			  (NP-OBJ (QP (CD １１)
+				      (CLP (M 个)))
+				  (DNP (PP (P 有关)
+					   (NP-PN (NR 伊拉克)))
+				       (DEG 的))
+				  (NP (NN 决议))))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  １１ 个 有关 伊拉克 的 决议 
+	  </arg>
+	  <arg n="m" f="adv">
+	  作为 联合国 安理会 常任 理事国 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 西班牙))
+		  (VP (VP (VV 反对)
+			  (IP-OBJ (NP-PN-SBJ (NR 美国))
+				  (VP (VV 封锁)
+				      (NP-PN-OBJ (NR 古巴)))))
+		      (PU ，)
+		      (VP (ADVP (AD 也))
+			  (ADVP (AD 不))
+			  (VP (VV 赞成)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 干涉)
+					  (NP-PN-OBJ (NR 海地)))))))) 
+	  </parse>
+	  <arg n="0">
+	  西班牙 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 干涉 海地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (IP (NP-SBJ (QP (CD ９))
+			      (NP (NN 票)))
+		      (VP (VV 赞成)))
+		  (PU ，)
+		  (IP (NP-SBJ (QP (CD ２))
+			      (NP (NN 票)))
+		      (VP (VV 反对)))
+		  (PU ，)
+		  (IP (NP-SBJ (QP (CD ４))
+			      (NP (NN 票)))
+		      (VP (VV 弃权)))) 
+	  </parse>
+	  <arg n="0">
+	  ９ 票 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 筹划 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="planner"/>
+      <role argnum="1" argrole="thing planned"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-TMP (NT 目前))
+	      (NP-SBJ (ADJP (JJ 有关))
+		      (NP (NN 部门)))
+	      (VP (ADVP (AD 正在))
+		  (VP (VP (VV 制定)
+			  (NP-OBJ (ADJP (JJ 相关))
+				  (NP (NN 政策)))
+			  (PU ，)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-DIR (P 对)
+					  (NP (DP (DT 这些))
+					      (ADJP (JJ 大型))
+					      (NP (NN 企业))))
+				  (PP-LOC (P 在)
+					  (NP (NP-APP (NN 审批)
+						      (PU 、)
+						      (NN 利税)
+						      (PU 、)
+						      (NN 外汇)
+						      (ETC 等))
+					      (NP (NN 方面))))
+				  (VP (VV 给予)
+				      (NP-OBJ (NN 政策)
+					      (NN 倾斜))))))
+		      (PU ，)
+		      (CC 并)
+		      (VP (VP (VRD (VV 筹划)
+				   (VV 设立))
+			      (NP-OBJ (NN 发展)
+				      (NN 基金))))))) 
+	  </parse>
+	  <arg n="0">
+	  有关 部门 
+	  </arg>
+	  <arg n="1">
+	  发展 基金 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据悉 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

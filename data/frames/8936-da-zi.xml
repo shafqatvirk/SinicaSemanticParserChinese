@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打字 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (QP (CD 两))
+		      (NP (NN 姊妹)))
+	      (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-DIR (P 从)
+				  (NP (NN 小学)))
+			  (VP (VV 开始))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 鲍)
+			 (NN 妈妈))
+	      (VP (VP (DP-ADV (DT 每)
+			      (CLP (M 天)))
+		      (ADVP (AD 也))
+		      (VP (PU 「)
+			  (VV 做)
+			  (NP-OBJ (NN 功课))
+			  (PU 」)))
+		  (PU ，)
+		  (VP (PP-BNF (P 为)
+			      (NP (PN 她们)))
+		      (VP (VV 查)
+			  (NP-OBJ (NN 字典))))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 再))
+			  (VP (VV 打字)))
+		      (VP (MSP 来)
+			  (VP (VV 让)
+			      (NP-OBJ (NN 姊妹))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 背)
+				      (NP-OBJ (NN 生字)
+					      (CC 跟)
+					      (NN 解释))))))))) 
+	  </parse>
+	  <arg n="0">
+	  鲍 妈妈 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 从 小学 开始 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  两 姊妹 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

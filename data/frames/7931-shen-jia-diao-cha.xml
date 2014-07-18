@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 身家调查 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="patient"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-TPC-2 (IP (ADVP (AD 好比))
+			  (NP-SBJ (NN 保全)
+				  (NN 公司)
+				  (CC 或)
+				  (NN 个人)
+				  (NN 住家))
+			  (VP (VV 要)
+			      (VP (VV 请)
+				  (NP-OBJ (NN 警卫)))))
+		      (PU ，)
+		      (IP-Q (NP-SBJ (-NONE- *pro*))
+			    (VP (VNV-WH (VV 要)
+					(AD 不)
+					(VV 要))
+				(VP (ADVP (AD 先))
+				    (VP (VV 身家调查))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	先 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抵御 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="defender"/>
+      <role argnum="1" argrole="defending against"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TMP (DT 这)
+		      (QP (CD 一)
+			  (CLP (M 年))))
+	      (PU ，)
+	      (NP-SBJ (PN 我们))
+	      (VP (VV 抵御)
+		  (AS 了)
+		  (NP-OBJ (NP (NP-PN (NR 亚洲))
+			      (NP (NN 金融)
+				  (NN 危机)))
+			  (DNP (PP (P 对于)
+				   (NP (NP (PN 我们))
+				       (NP (NN 国家))))
+			       (DEG 的))
+			  (NP (NN 影响))))) 
+	  </parse>
+	  <arg n="0">
+	  我们 
+	  </arg>
+	  <arg n="1">
+	  亚洲 金融 危机 对于 我们 国家 的 影响 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  这 一 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 呼应 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="things that are related to one another"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP (P 与)
+				      (NP (NP-APP (NN 世界)
+						  (NN 名山))
+					  (NP-PN (NR 庐山))))
+				  (ADVP (AD 相))
+				  (VP (VV 呼应))))
+			  (DEC 的)))
+		  (NP-PN (PU “)
+			 (NN 大千世界)
+			 (NN 游乐园)
+			 (PU ”))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1-> “大千世界 游乐园”	  	  	  
+	  </arg>
+	  <arg n="0" f="CRD">
+	  与 世界 名山 庐山 	  	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  相 	  	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="responder, agreer"/>
+      <role argnum="1" argrole="thing that arg0 responds favorably to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (NP-PN (NR 香港))
+			      (NP (NN 导演)))
+		      (NP-PN (NR 关锦鹏)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 呼应)
+		      (NP-OBJ (DP (DT 这)
+				  (CLP (M 种)))
+			      (NP (NN 说法)))))) 
+	  </parse>
+	  <arg n="0">
+	  香港 导演 关锦鹏 	  
+	  </arg>
+	  <arg n="1">
+	  这 种 说法 	  
+	  </arg>
+	  <arg n="m" f="DIS">
+	  也 	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 潜进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="place arg0 sneaks into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP-PN (NR 越战))
+		       (LC 时))
+	      (NP-PN-SBJ (NR 越共))
+	      (VP (PP-MNR (P 以)
+			  (NP (NN 陆军)))
+		  (VP (VP (VP (VV 使用)
+			      (NP-OBJ (NN 地道)))
+			  (VP (VV 潜进)
+			      (NP-OBJ (NN 机场))))
+		      (PU ，)
+		      (VP (VV 破坏)
+			  (NP-OBJ (NP-PN (NN 美军))
+				  (NP (NN 空军)
+				      (NN 战力))))))) 
+	  </parse>
+	  <arg n="0">
+	  越共 
+	  </arg>
+	  <arg n="1">
+	  机场 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 陆军 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  越战 时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

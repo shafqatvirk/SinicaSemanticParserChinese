@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 媲美 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 is as good as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (QP (CD 一些))
+			       (NP (NN 村镇)))
+			   (DEG 的))
+		      (NP (NN 设施)
+			  (NN 环境)))
+	      (VP (VV 可)
+		  (VP (PP (P 与)
+			  (NP (NP (NN 内地))
+			      (ADJP (JJ 大)
+				    (JJ 中))
+			      (NP (NN 城市))))
+		      (ADVP (AD 相))
+		      (VP (VV 媲美))))) 
+	  </parse>
+	  <arg n="0">
+	  一些 村镇 的 设施 环境 
+	  </arg>
+	  <arg n="1">
+	  与 内地 大 中 城市 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

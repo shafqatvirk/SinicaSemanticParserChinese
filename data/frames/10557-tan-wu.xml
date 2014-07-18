@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 贪污 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 embezzles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 台东)
+		       (NN 地检署))
+	    (VP (VV 侦办)
+		(NP-OBJ (IP-APP (NP-SBJ (NN 县议员))
+				(VP (VV 涉嫌)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VP (VV 利用)
+						    (NP-OBJ (NP (NN 社团)
+								(NN 补助款))
+							    (CC 和)
+							    (NP (ADJP (JJ 小型))
+								(NP (NN 工程)))))
+						(VP (VV 贪污))))))
+			(NP (NN 案))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

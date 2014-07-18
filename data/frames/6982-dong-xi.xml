@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 洞悉 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 knows thoroughly"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 说起)
+			(NP-OBJ (NN 童年)
+				(NN 往事))))
+	    (PU ，)
+	    (LCP-SBJ (NP (NP-PN (NR 夏阳))
+			 (CP (WHNP-2 (-NONE- *OP*))
+			     (CP (IP (NP-SBJ (-NONE- *T*-2))
+				     (VP (VA 淡淡)))
+				 (DEC 的)))
+			 (NP (NN 笑容)))
+		     (LC 中))
+	    (PU ，)
+	    (VP (VE 有)
+		(NP-OBJ (QP (CD 一)
+			    (CLP (M 股)))
+			(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VP (VV 看尽)
+					    (NP-OBJ (NN 人世)
+						    (NN 沧桑)))
+					(PU ，)
+					(VP (VV 洞悉)
+					    (NP-OBJ (NN 生命)
+						    (NN 幻化)))))
+				(DEC 的))
+			(NP (NN 了然))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	生命 幻化 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

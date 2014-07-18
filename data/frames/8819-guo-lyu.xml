@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 过滤 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 filters"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 全面))
+				      (VP (VV 过滤)
+					  (NP-OBJ (NN 资讯)))))
+			      (DEC 的))
+		      (NP (NN 作法)))
+	      (PU ，)
+	      (VP (VE 有)
+		  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 侵害)
+					  (NP-OBJ (NN 言论)
+						  (NN 自由))))
+				  (DEC 之))
+			  (NP (NN 虞))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  资讯 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 进攻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １９３９年)
+		      (NT ９月)
+		      (NT １日))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 希特勒))
+		      (NP (NN 军队)))
+	      (VP (VV 进攻)
+		  (NP-OBJ-PN (NR 波兰)))) 
+	  </parse>
+	  <arg n="0">
+	  希特勒 军队 
+	  </arg>
+	  <arg n="1">
+	  波兰 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  １９３９年 ９月 １日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

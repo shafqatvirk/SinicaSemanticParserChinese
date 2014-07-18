@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 招募 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people recruited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 古力特))
+		  (VP (ADVP (AD 加速))
+		      (VP (VV 招募)
+			  (NP-OBJ (NN 队员))))) 
+	  </parse>
+	  <arg n="0">
+	  古力特 
+	  </arg>
+	  <arg n="1">
+	  队员 
+	  </arg>
+	  <arg n="m" f="adv">
+	  加速 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

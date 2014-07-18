@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 估价 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 evaluates"/>
+    <role argnum="2" argrole="price arg0 sets for arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *PRO*))
+		(VP (ADVP (AD 重新))
+		    (VP (VV 估价)
+			(NP-OBJ (NT 五四))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	五四 
+	</arg>
+	<arg n="m" f="adv">
+	重新 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

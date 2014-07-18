@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撤退 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity retreating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (ADVP (AD 也))
+		    (ADVP (AD 就))
+		    (PP (P 在)
+			(DP (CP (WHPP-1 (-NONE- *OP*))
+				(CP (IP (NP-PN-SBJ (NR 夏阳))
+					(VP (PP-TMP (-NONE- *T*-1))
+					    (VP (VV 从军))))
+				    (DEC 的)))
+			    (DP (DT 那)
+				(CLP (M 年))))))
+	    (PU ，)
+	    (NP-SBJ (NN 国军))
+	    (VP (VP (VV 撤退))
+		(VP (VV 来)
+		    (NP-PN-OBJ (NR 台))))) 
+	</parse>
+	<arg n="0">
+	国军 
+	</arg>
+	<arg n="m" f="tmp">
+	也 就 在 *OP* 夏阳 *T*-1 从军 的 那 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (NP-PN (NR 民国))
+		    (QP (CD 三十八)
+			(CLP (M 年))))
+	    (NP-SBJ (NN 政府))
+	    (VP (VRD (VV 撤退)
+		     (VV 来))
+		(NP-PN-OBJ (NR 台)))) 
+	</parse>
+	<arg n="0">
+	政府 
+	</arg>
+	<arg n="m" f="tmp">
+	民国 三十八 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

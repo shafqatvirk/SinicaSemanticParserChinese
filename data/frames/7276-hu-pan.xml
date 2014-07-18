@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 护盘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LST (CD 三))
+	    (PU 、)
+	    (NP-TTL-TPC (PU 「)
+			(IP-APP (NP-SBJ (NP (NN 国家)
+					    (NN 金融)
+					    (NN 安定))
+					(NP (NN 基金)))
+				(VP (VV 设置)
+				    (CC 及)
+				    (VV 管理)))
+			(NP (NN 条例))
+			(PU 」))
+	    (PU ：)
+	    (IP-SBJ (NP-SBJ (NN 政府))
+		    (VP (PP-BNF (P 为)
+				(NP (NN 股市)))
+			(VP (VV 护盘))))
+	    (VP (ADVP (AD 将))
+		(VP (VE 有)
+		    (NP-OBJ (NN 法源))))) 
+	</parse>
+	<arg n="0">
+	政府 
+	</arg>
+	<arg n="m" f="bnf">
+	为 股市 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

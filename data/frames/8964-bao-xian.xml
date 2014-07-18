@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 保险 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NN 个人主义))
+	      (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-4))
+				  (VP (ADVP (AD 最))
+				      (VP (VA 保险)
+					  (PU 、)
+					  (VA 安全))))
+			      (DEC 的))))
+	      (VP (ADVP (AD 就))
+		  (VP (VC 是)
+		      (NP-PRD (NN 青春))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-4 
+	  </arg>
+	  <arg n="m" f="adv">
+	  最 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

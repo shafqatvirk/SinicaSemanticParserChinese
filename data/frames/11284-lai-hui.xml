@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 来回 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity coming and going"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 跑堂)))
+			    (DEC 的))))
+	    (VP (VV 来回)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (PP-LOC (P 在)
+				    (LCP (NP (DP (DT 各)
+						 (CLP (M 个)))
+					     (NP (NN 包厢)))
+					 (LC 里)))
+			    (VP (VV 穿梭)))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 跑堂 的 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,141 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 降低 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="starting point"/>
+      <role argnum="3" argrole="end point"/>
+      <role argnum="4" argrole="range"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg4"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (NP-PN (NR 日本))
+			     (NP (NN 国际))
+			     (NP (ADJP (JJ 商用))
+				 (NP (NN 机器)))
+			     (NP (NN 公司)))
+		      (CC 和)
+		      (NP-PN (NR 日立)
+			     (NN 制作所)))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 计划)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (BA 将)
+				  (IP-OBJ (NP-SBJ (NP (PN 其))
+						  (NP (NN 能耗)
+						      (NN 标准)))
+					  (VP (ADVP (AD 分别))
+					      (PP (P 比)
+						  (NP (NT １９９０年)))
+					      (VP (VV 降低)
+						  (QP-EXT (CD 百分之二十五)
+							  (CC 和)
+							  (CD 百分之三十)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  其 能耗 标准 	  
+	  </arg>
+	  <arg n="4">
+	  百分之二十五 和 百分之三十 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-PN (PU “)
+			     (NN 糖脉康)
+			     (PU ”))
+		      (NP (NN 颗粒)))
+	      (VP (VP (CC 不仅)
+		      (VP (VV 降低)
+			  (NP-OBJ (NN 血糖)))
+		      (PU ，)
+		      (CC 而且)
+		      (VP (ADVP (AD 还))
+			  (VP (VV 能)
+			      (VP (ADVP (AD 显著))
+				  (VP (VV 降低)
+				      (NP-OBJ (NN 胆固醇)
+					      (CC 和)
+					      (NN 甘油三脂)))))))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (NN 糖尿病)
+				  (NN 并发症)))
+		      (VP (VE 有)
+			  (NP-OBJ (ADJP (JJ 特殊))
+				  (NP (NN 疗效))))))) 
+	  </parse>
+	  <arg n="0">
+	  “ 糖脉康 ” 颗粒 	  
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  血糖 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg4"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 行政费)
+		      (NN 支出))
+	      (VP (PP (P 比)
+		      (NP (NP (NT 去年))
+			  (ADJP (JJ 实际))
+			  (NP (NN 水平))))
+		  (VP (VV 降低)
+		      (QP-EXT (CD 百分之十))))) 
+	  </parse>
+	  <arg n="1">
+	  行政费 支出 	  
+	  </arg>
+	  <V/>
+	  <arg n="4">
+	  百分之十 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (NP-PN (NR 东南亚))
+			  (NP (NN 生产)
+			      (NN 成本)))
+		  (VP (VV 降低)
+		      (AS 了))) 
+	  </parse>
+	  <arg n="1">
+	  东南亚 生产 成本 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 破 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing broken"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 郭龙臣))
+		  (VP (ADVP (AD 再))
+		      (VP (VV 破)
+			  (NP-OBJ (NP (NN 自行车))
+				  (NP (DP (DT 全))
+				      (NP (NN 国)))
+				  (NP (NN 纪录)))))) 
+	  </parse>
+	  <arg n="0">
+	  郭龙臣 
+	  </arg>
+	  <arg n="1">
+	  自行车 全 国 纪录 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

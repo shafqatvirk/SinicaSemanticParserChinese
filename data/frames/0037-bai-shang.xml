@@ -1,0 +1,90 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 摆上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-SBJ (NP-PN (NR 福建))
+			(NP (NN 方面)))
+		(VP (ADVP (AD 则))
+		    (VP (BA 将)
+			(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 发展)
+					    (NP-OBJ (NP (DP (DT 本))
+							(NP (NN 省)))
+						    (NP (NN 汽车)
+							(NN 工业)))))
+				(VP (VV 摆上)
+				    (NP-OBJ (NP (ADJP (JJ 重要))
+						(NP (NN 议事)))
+					    (NP (NN 日程))))))))) 
+	  </parse>
+	  <arg n="0">
+	  福建 方面 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  则 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 发展 本 省 汽车 工业 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  重要 议事 日程 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  ( (IP (NP-TMP (NT 现在))
+		(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (VP (VV 利用)
+					    (NP-OBJ (NN 基因)
+						    (NN 技术)))
+					(VP (VV 培育)
+					    (NP-OBJ (-NONE- *T*-1)))))
+				(DEC 的)))
+			(ADJP (JJ 转基因))
+			(NP (NN 食品)))
+		(VP (ADVP (AD 已经))
+		    (VP (VV 摆上)
+			(AS 了)
+			(NP-OBJ (DNP (NP (ADJP (JJ 普通))
+					 (NP (NN 百姓)))
+				     (DEG 的))
+				(NP (NN 餐桌))))))) 
+	  </parse>
+	  <arg n="M" f="TMP">
+	  现在 
+	  </arg>
+	  <arg n="1">
+	  *OP* *pro* 利用 基因 技术 培育 (*T*-1)->(转基因食品) 的 转基因 食品 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  已经 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  普通 百姓 的 餐桌 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

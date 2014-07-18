@@ -1,0 +1,111 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驱车 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="location drive to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 记者))
+	      (VP (VP (NP-TMP (NT 近日))
+		      (VP (VP (VRD (VV 驱车)
+				   (VV 到))
+			      (NP-OBJ (NP-APP (NP-PN (NR 广西))
+					      (NP-PN (NR 防城港)
+						     (PU 、)
+						     (NR 钦州)
+						     (PU 、)
+						     (NR 北海)
+						     (PU 、)
+						     (NR 湛江)
+						     (ETC 等)))
+				      (NP (NN 市))))
+			  (VP (VV 采访)))) )) 
+	  </parse>
+	  <arg n="0">
+	  记者 	  
+	  </arg>
+	  <arg n="1">
+	  广西 防城港 、 钦州 、 北海 、 湛江 等 市 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近日 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP-APP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VP (NP-TMP (NT 当年))
+						  (ADVP (AD 曾))
+						  (VP (VV 参加)
+						      (AS 过)
+						      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+							      (VP (VCD (VV 开发)
+								       (VV 建设))
+								  (NP-OBJ (PU “)
+									  (CP (WHNP-2 (-NONE- *OP*))
+									      (IP (NP-SBJ (-NONE- *pro*))
+										  (VP (NP-LOC (-NONE- *T*-2))
+										      (VP (VE 无)
+											  (NP-OBJ (NN 人))))))
+									  (NP (NN 区))
+									  (PU ”))))))
+					      (PU 、)
+					      (VP (VV 现任)
+						  (NP-OBJ (NP (NP-PN (NR 那曲))
+							      (NP (NN 地区)))
+							  (NP (NN 行署))
+							  (NP (NN 专员))))))
+				      (DEC 的)))
+			  (NP-PN (NR 土登才旺)))
+		      (CC 和)
+		      (NP (NP-APP (NN 地委)
+				  (NN 副书记))
+			  (NP-PN (NR 明加))))
+	      (VP (VP (VV 带领)
+		      (NP-OBJ (NP (DP (DT 各))
+				  (NP (NN 县)))
+			      (NP (NN 领导))))
+		  (PU ，)
+		  (VP (VCD (VV 驱车)
+			   (VV 行程))
+		      (QP-EXT (CD ８００多)
+			      (CLP (M 公里))))
+		  (PU ，)
+		  (VP (VV 访问)
+		      (AS 了)
+		      (NP-OBJ (DNP (NP (QP (CD ７)
+					   (CLP (M 个)))
+				       (NP (NN 乡)))
+				   (DEG 的))
+			      (NP (NN 牧民)
+				  (NN 家庭)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 当年 曾 参加 过 *PRO* 开发 建设 “ *OP* *pro* *T*-2 无 人 区 ” 、 现任 那曲 地区 行署 专员 的 土登才旺 和 地委 副书记 明加 	  
+	  </arg>
+	  <arg n="m" f="ext">
+	  ８００多 公里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

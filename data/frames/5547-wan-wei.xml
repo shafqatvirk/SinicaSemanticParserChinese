@@ -1,0 +1,84 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 玩味 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 chews and feels the flavor of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 再))
+			(VP (VV 加上)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-TMP (NP-PN (NR 元世祖))
+							(NP-PN (NR 至元))
+							(QP (OD 十九)
+							    (CLP (M 年))))
+						(NP-PN-SBJ (NR 宁志)
+							   (NN 老人))
+						(VP (VV 编写)
+						    (NP-OBJ (-NONE- *T*-1))))
+					    (DEC 的)))
+				    (NP-TTL-APP (PU 《)
+						(NN 丸经)
+						(PU 》))
+				    (QP (CD 一))
+				    (NP (NN 书))))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 更))
+		(VP (VV 让)
+		    (NP-OBJ (NN 人))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 不得不))
+			    (ADVP (AD 细细))
+			    (VP (VV 玩味)
+				(NP-OBJ (NP (NN 捶丸))
+					(DNP (PP (P 与)
+						 (NP (ADJP (JJ 现代))
+						     (NP (NN 高尔夫))))
+					     (DEG 的))
+					(NP (NN 关系))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	捶丸 与 现代 高尔夫 的 关系 
+	</arg>
+	<arg n="m" f="adv">
+	细细 
+	</arg>
+	<arg n="m" f="adv">
+	不得不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 令)
+		(NP-OBJ (NN 人))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 玩味))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

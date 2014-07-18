@@ -1,0 +1,93 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 列出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 lists"/>
+      <role argnum="2" argrole="location arg1 is listed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 麦隆礼))
+	      (VP (VV 说)
+		  (PU ：)
+		  (IP-OBJ (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (LCP-LOC (NP-TTL (PU 『)
+						   (NP (NN 岩土)
+						       (NN 指南))
+						   (QP (OD 第五)
+						       (CLP (M 册)))
+						   (PU 』))
+					   (LC 内))
+				  (ADVP (AD 已))
+				  (VP (VV 列出)
+				      (NP-OBJ (ADJP (JJ 有关))
+					      (DNP (NP (NP (NN 修葺)
+							   (NN 斜坡))
+						       (NP (NN 工程)))
+						   (DEG 的))
+					      (NP (NN 技术)
+						  (NN 标准))))))
+			  (PU ，)
+			  (IP (NP-SBJ (DP (DT 该))
+				      (NP (NN 指南)))
+			      (VP (ADVP (AD 并))
+				  (ADVP (AD 已))
+				  (VP (VV 分发)
+				      (NP-OBJ (DP (DT 各))
+					      (ADJP (JJ 有关))
+					      (NP (NN 人士))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  有关 修葺 斜坡 工程 的 技术 标准 
+	  </arg>
+	  <arg n="2">
+	  『 岩土 指南 第五 册 』 内 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 邝其志))
+	      (VP (ADVP (AD 又))
+		  (VP (VV 列出)
+		      (IP-OBJ (NP-SBJ (NN 政府))
+			      (VP (ADVP (AD 如何))
+				  (VP (VV 实行)
+				      (NP-OBJ (DP (DT 这)
+						  (CLP (M 套)))
+					      (NP (NN 哲学))))))))) 
+	  </parse>
+	  <arg n="0">
+	  邝其志 
+	  </arg>
+	  <arg n="1">
+	  政府 如何 实行 这 套 哲学 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

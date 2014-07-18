@@ -1,0 +1,76 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打响 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 is successful in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (LCP-LOC (NP (NP-PN (NR 新竹))
+				 (NP (NN 城隍庙)))
+			     (LC 前))
+		    (IP (IP (NP-SBJ (NN 小吃摊))
+			    (VP (VV 云集)))
+			(PU 、)
+			(IP (ADVP (AD 终日))
+			    (NP-SBJ (NN 人潮))
+			    (VP (VA 滚滚)))))
+	    (PU ，)
+	    (VP (PP-BNF (P 为)
+			(NP (NP-PN (NR 新竹))
+			    (NP (NN 小吃))))
+		(VP (VV 打响)
+		    (NP-OBJ (NN 盛名))))) 
+	</parse>
+	<arg n="0">
+	新竹 城隍庙 前 小吃摊 云集 、 终日 人潮 滚滚 
+	</arg>
+	<arg n="1">
+	盛名 
+	</arg>
+	<arg n="m" f="bnf">
+	为 新竹 小吃 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-1))
+				(NP-SBJ (LCP (NP (NN 网))
+					     (LC 上))
+					(NP (NN 匿称)))
+				(VP (NP-PRD (PU 「)
+					    (NP (NN 痞子))
+					    (NP-PN (NR 蔡))
+					    (PU 」))))
+			    (DEC 的)))
+		    (NP-PN (NR 蔡智恒)))
+	    (VP (VV 打响)
+		(QP-OBJ (OD 第一)
+			(CLP (M 炮))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 网 上 匿称 「 痞子 蔡 」 的 蔡智恒 
+	</arg>
+	<arg n="1">
+	第一 炮 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

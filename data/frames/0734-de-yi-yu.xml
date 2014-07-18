@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得益于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="beneficiary"/>
+      <role argnum="1" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (LCP (IP (NP-PN-SBJ (NR 香港))
+			       (VP (VV 回归)))
+			   (LC 后))
+		      (DNP (NP (NN 国际)
+			       (NN 联系))
+			   (DEG 的))
+		      (ADJP (JJ 持续))
+		      (NP (NN 发展)))
+	      (PU ，)
+	      (VP (VV 得益于)
+		  (IP-OBJ (IP (NP-SBJ (DNP (NP (NN 中央)
+					       (NN 人民)
+					       (NN 政府))
+					   (DEG 的))
+				      (PP (P 对)
+					  (NP-PN (NR 港)))
+				      (NP (NN 政策)))
+			      (VP (VA 正确)))
+			  (CC 和)
+			  (IP (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 大力))
+				  (VP (VV 支持))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  香港 回归 后 国际 联系 的 持续 发展 
+	  </arg>
+	  <arg n="1">
+	  中央 人民 政府 的 对 港 政策 正确 和 *pro* 大力 支持 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

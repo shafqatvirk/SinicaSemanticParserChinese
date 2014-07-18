@@ -1,0 +1,107 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 改成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity changed"/>
+    <role argnum="2" argrole="entity arg1 changed into"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-PN-SBJ (NR 秦始皇))
+		(VP (BA 将)
+		    (IP-OBJ (NP-SBJ (NN 篆书))
+			    (VP (VV 改成)
+				(NP-OBJ (NN 隶书)))))) 
+	</parse>
+	<arg n="0">
+	秦始皇 
+	</arg>
+	<arg n="1">
+	篆书 
+	</arg>
+	<arg n="2">
+	隶书 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 这下))
+	    (NP-SBJ (PU 「)
+		    (NN 兴师问罪)
+		    (PU 」))
+	    (VP (VV 得)
+		(VP (VV 改成)
+		    (NP-OBJ (PU 「)
+			    (NN 负荆请罪)
+			    (PU 」))))
+	    (SP 了)) 
+	</parse>
+	<arg n="1">
+	「 兴师问罪 」 
+	</arg>
+	<arg n="2">
+	「 负荆请罪 」 
+	</arg>
+	<arg n="m" f="adv">
+	这下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="ipobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (NP-TMP (NT 过去))
+				    (PP-MNR (P 以)
+					    (CLP (M 甲)))
+				    (VP (VV 计))))
+			    (DEC 的)))
+		    (NP (NN 农田)))
+	    (PU ，)
+	    (VP (LCP-ADV (NP (QP (CD 一))
+			     (NP (NN 夕)))
+			 (LC 之间))
+		(VP (VV 改成)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (PP-MNR (P 以)
+					(CLP (PU 「)
+					     (M 坪)
+					     (PU 」)))
+				(VP (VV 计价))))))) 
+	</parse>
+	<arg n="1">
+	*OP* *T*-2 过去 以 甲 计 的 农田 
+	</arg>
+	<arg n="2">
+	*PRO* 以 「 坪 」 计价 
+	</arg>
+	<arg n="m" f="tmp">
+	一 夕 之间 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

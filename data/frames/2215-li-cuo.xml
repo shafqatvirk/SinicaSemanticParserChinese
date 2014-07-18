@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 力挫 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (NP-APP (NP-PN (NR 多米尼加))
+				  (NP (NN 棒球)
+				      (NN 运动员)))
+			  (NP-PN (NR 萨米·索萨)))
+		      (CC 和)
+		      (NP (NP-APP (NP-PN (NR 哥斯达黎加))
+				  (NP (NN 女子)
+				      (NN 游泳)
+				      (NN 运动员)))
+			  (NP-PN (NR 克劳蒂娅·波尔))))
+	      (VP (VP (VV 力挫)
+		      (NP-OBJ (NN 群雄)))
+		  (PU ，)
+		  (VP (VV 荣登)
+		      (NP-OBJ (NN 榜首))))) 
+	  </parse>
+	  <arg n="0">
+	  多米尼加 棒球 运动员 萨米·索萨 和 哥斯达黎加 女子 游泳 运动员 克劳蒂娅·波尔 
+	  </arg>
+	  <arg n="1">
+	  群雄 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

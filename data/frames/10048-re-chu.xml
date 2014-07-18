@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惹出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="thing arg0 causes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP-SBJ (NN 理财热))
+		    (VP (VV 兴起)))
+	    (PU ，)
+	    (VP (VP (VV 打乱)
+		    (AS 了)
+		    (NP-OBJ (NP (QP (CD 许多))
+				(NP (NN 人)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 原本))
+					    (VP (VA 平静))))
+				    (DEC 的)))
+			    (NP (NN 生活)
+				(NN 步调))))
+		(PU ，)
+		(VP (ADVP (AD 无端))
+		    (VP (VV 惹出)
+			(NP-OBJ (QP (CD 许多))
+				(NP (NN 烦恼))))))) 
+	</parse>
+	<arg n="0">
+	理财热 兴起 
+	</arg>
+	<arg n="1">
+	许多 烦恼 
+	</arg>
+	<arg n="m" f="adv">
+	无端 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 横亘 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="thing arg0 spans"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP (QP (CD 一)
+		(CLP (M 道)))
+	    (CP (WHNP-2 (-NONE- *OP*))
+		(CP (IP (NP-SBJ (-NONE- *T*-2))
+			(VP (VV 横亘)
+			    (NP-OBJ (NN 海面))))
+		    (DEC 的)))
+	    (NP (NN 彩虹))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	海面 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

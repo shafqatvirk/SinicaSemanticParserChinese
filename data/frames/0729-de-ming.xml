@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="name"/>
+      <role argnum="1" argrole="source of name"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 王码)
+			 (NN 电脑)
+			 (NN 公司))
+	      (VP (VC 是)
+		  (VP (PP-LGS (P 由)
+			      (NP (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (NP-APP (ADJP (JJ 著名))
+							      (NP (NN 电脑)
+								  (NN 专家)))
+						      (NP-PN (NR 王永民)))
+					      (VP (VV 发明)
+						  (NP-OBJ (-NONE- *T*-1))))
+					  (DEC 的)))
+				  (NP (NN 汉字)
+				      (NN 编码法))
+				  (PRN (PU ———)
+				       (NP (PU “)
+					   (ADJP (JJ 五笔))
+					   (NP (NN 字型))
+					   (PU ”)))))
+		      (VP (MSP 而)
+			  (VP (VV 得名)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  王码 电脑 公司 
+	  </arg>
+	  <arg n="1">
+	  由 *OP* 著名 电脑 专家 王永民 发明 *T*-1 的 汉字 编码法 ——— “ 五笔 字型 ” 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

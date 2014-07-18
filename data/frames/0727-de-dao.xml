@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 得到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="obtainer"/>
+      <role argnum="1" argrole="thing obtained"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 获胜)))
+			      (DEC 的)))
+		      (NP (NN 队)))
+	      (VP (VV 可)
+		  (VP (VV 得到)
+		      (QP-OBJ (CD ７万)
+			      (CLP (M 美元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 获胜 的 队 	  	  
+	  </arg>
+	  <arg n="1">
+	  ７万 美元 	  	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

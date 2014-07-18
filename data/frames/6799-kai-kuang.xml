@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开矿 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (LCP-SBJ (NP-PN (NR 汉))
+		     (LC 初))
+	    (VP (IP-ADV (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 任)
+				    (NP-OBJ (NN 民))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (ADVP (AD 自由))
+					    (VP (VV 开矿)
+						(CC 以至)
+						(VV 造钱))))))
+			(PU ，)
+			(VP (ADVP (AD 都))
+			    (VP (VC 非)
+				(IP-PRD (NP-SBJ (NN 个人)
+						(NN 能力))
+					(VP (VV 可)
+					    (VP (VV 及)))))))
+		(PU ，)
+		(ADVP (AD 因此))
+		(VP (VV 出现)
+		    (NP-OBJ (QP (CD 许多))
+			    (NP (NN 资本家)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	自由 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

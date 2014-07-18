@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 整装 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person packing luggage"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+			     (VP (VCD (VV 整装)
+				      (VV 出发))))
+			 (LC 前))
+		(PU ，)
+		(VP (VP (VRD (VV 想)
+			     (VA 清楚)))
+		    (PU ，)
+		    (VP (VV 探)
+			(NP-OBJ (NN 究竟)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

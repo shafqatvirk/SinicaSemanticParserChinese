@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 装船 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 loads onto ship"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (PU “)
+		  (ADVP (AD 届时))
+		  (PU ，)
+		  (NP-SBJ (DNP (NP (NP-PN (NR 广东省))
+				   (DP (DT 任何)
+				       (QP (CD 一)
+					   (CLP (M 个))))
+				   (NP (NN 地区)))
+			       (DEG 的))
+			  (NP (NN 物资)))
+		  (PU ，)
+		  (VP (ADVP (AD 都))
+		      (VP (VV 可)
+			  (VP (NP-TMP (NT 当天))
+			      (VP (VP (VV 运达)
+				      (NP-OBJ (NN 沿海)
+					      (NN 港口)))
+				  (VP (VV 装船))))))) 
+	  </parse>
+	  <arg n="1">
+	  广东省 任何 一 个 地区 的 物资 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  当天 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  届时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

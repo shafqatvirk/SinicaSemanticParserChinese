@@ -1,0 +1,100 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 默认 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 admits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (LCP (IP (NP-SBJ (NP-APP (NN 立委))
+				     (NP-PN (NR 郑宝清)))
+			     (VP (VV 追问)))
+			 (LC 之下)))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 邱正雄))
+	    (VP (ADVP (AD 也))
+		(VP (VV 默认)
+		    (PU ，)
+		    (IP-OBJ (NP-SBJ (NP (NP-PN (NR 宋))
+					(NP (NN 家)))
+				    (NP (NN 帐户)
+					(NN 资金)))
+			    (VP (ADVP (AD 已))
+				(VP (VV 超过)
+				    (QP-OBJ (CD 十亿)))))))) 
+	</parse>
+	<arg n="0">
+	邱正雄 
+	</arg>
+	<arg n="1">
+	宋 家 帐户 资金 已 超过 十亿 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="loc">
+	在 立委 郑宝清 追问 之下 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (NP (NN 生态)
+			(NN 学者))
+		    (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (VV 回响)
+				    (NP-OBJ (NN 耳际))))
+			    (DEC 的)))
+		    (NP (NN 警告)))
+	    (PU ，)
+	    (PP-TMP (P 在)
+		    (NP (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-TPC (-NONE- *T*-2))
+				    (ADVP (AD 不时))
+				    (NP-SBJ (NN 水患)
+					    (PU 、)
+					    (NN 土石))
+				    (VP (VV 横流)))
+				(DEC 的)))
+			(NP (NT 今天))))
+	    (PU ，)
+	    (NP-SBJ (NN 人们))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 只有))
+		(VP (VSB (VV 无言)
+			 (VV 默认))))) 
+	</parse>
+	<arg n="0">
+	人们 
+	</arg>
+	<arg n="m" f="adv">
+	只有 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *OP* *T*-2 不时 水患 、 土石 横流 的 今天 
+	</arg>
+	<arg n="m" f="tpc">
+	生态 学者 *OP* *T*-3 回响 耳际 的 警告 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

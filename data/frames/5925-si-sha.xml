@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 厮杀 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entities combating"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-LOC (P 在)
+		    (NP (DP (DT 这))
+			(CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *pro*))
+				    (VP (NP-LOC (-NONE- *T*-1))
+					(VP (VV 交换)
+					    (NP-OBJ (NN 大陆)
+						    (NN 生意经)))))
+				(DEC 的)))
+			(NP (NN 场合))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 丝毫))
+		(VP (VPT (VV 闻)
+			 (AD 不)
+			 (VV 到))
+		    (NP-OBJ (NP (NN 选战))
+			    (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 厮杀)))
+				    (DEC 的))
+			    (NP (NN 气息)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VE 没有)
+		    (NP-OBJ (ADJP (JJ 超强))
+			    (NP (NN 卡司))))
+		(PU ，)
+		(VP (ADVP (AD 又))
+		    (PP (P 和)
+			(NP (NP-APP (NP-TTL (PU 《)
+					    (ADJP (JJ 不可能))
+					    (NP (NN 任务))
+					    (PU 》))
+				    (PU 、)
+				    (NP-TTL (PU 《)
+					    (NN 龙卷风)
+					    (PU 》))
+				    (ETC 等))
+			    (ADJP (JJ 大))
+			    (NP (NN 片))))
+		    (NP-ADV (NN 正面))
+		    (VP (VV 厮杀))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="0" f="crd">
+	和 《 不可能 任务 》 、 《 龙卷风 》 等 大 片 
+	</arg>
+	<arg n="m" f="adv">
+	正面 
+	</arg>
+	<arg n="m" f="adv">
+	又 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

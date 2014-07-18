@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 污染 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 种)))
+		      (NP (NN 方法)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 会)
+		      (VP (VV 污染)
+			  (NP-OBJ (NN 环境)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  这 种 方法 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  环境 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (DP (DT 这)
+		      (CLP (M 个)))
+		  (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (ADVP (AD 严重))
+				  (VP (VV 污染))))
+			  (DEC 的)))
+		  (ADJP (QP (OD 第三))
+			(ADJP (JJ 大)))
+		  (NP (NN 淡水湖))) 
+	  </parse>
+	  <arg n="1">
+	  (*T*-2)->(第三大淡水湖) 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  严重 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

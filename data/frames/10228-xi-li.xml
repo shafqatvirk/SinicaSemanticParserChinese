@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 洗礼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 baptizes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (QP-TMP (NP-PN (NR 民国))
+					    (QP (OD 二十)
+						(CLP (M 年))))
+				    (VP (VV 出生)
+					(PP (P 在)
+					    (NP (NP-PN (NR 桃园))
+						(NP (NN 客家)
+						    (NN 乡镇)))))))
+			    (DEC 的)))
+		    (NP-PN (NR 戴国辉)))
+	    (PU ，)
+	    (VP (VP (NP-TMP (NN 少年)
+			    (NN 时代))
+		    (ADVP (AD 饱))
+		    (VP (LB 受)
+			(CP-OBJ (WHNP-2 (-NONE- *OP*))
+				(IP (NP-SBJ (NP-PN (NR 日本))
+					    (NP (NN 殖民)
+						(NN 教育)))
+				    (VP (VV 洗礼)
+					(NP-OBJ (-NONE- *T*-2)))))))
+		(PU ，)
+		(CC 并)
+		(VP (VP (VV 负笈)
+			(NP-PN-OBJ (NR 日本)))
+		    (VP (VV 取得)
+			(NP-OBJ (NP-PN (NR 东京)
+				       (NN 大学))
+				(NP (NN 农学)
+				    (NN 博士))
+				(NP (NN 学位))))))) 
+	</parse>
+	<arg n="0">
+	日本 殖民 教育 
+	</arg>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="tmp">
+	少年 时代 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 下挫 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="level arg0 falls to"/>
+    <role argnum="2" argrole="original level of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-MNR (P 根据)
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(IP (NP-PN-SBJ (NR 中国)
+						       (NN 时报))
+					    (VP (PP-TMP (P 在)
+							(NP (NT 十二月)
+							    (NT 二十日)))
+						(VP (MSP 所)
+						    (VP (VV 作)
+							(NP-OBJ (-NONE- *T*-1)))))))
+				    (NP (NN 民调))))
+			(VP (VV 显示))))
+	    (PU ，)
+	    (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 支持)
+				    (NP-PN-OBJ (NR 宋楚瑜))))
+			    (DEC 的))
+		    (NP (NN 比例)))
+	    (VP (ADVP (AD 已))
+		(PP-DIR (P 由)
+			(QP (DNP (LCP (NP (NN 案))
+				      (LC 前))
+				 (DEG 的))
+			    (QP (CD 三成多))))
+		(VP (VRD (VV 下挫)
+			 (VV 至))
+		    (QP-OBJ (CD 二成三))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 支持 宋楚瑜 的 比例 
+	</arg>
+	<arg n="1">
+	二成三 
+	</arg>
+	<arg n="2">
+	由 案 前 的 三成多 
+	</arg>
+	<arg n="m" f="adv">
+	已 
+	</arg>
+	<arg n="m" f="mnr">
+	*PRO* 根据 *OP* 中国 时报 在 十二月 二十日 所 作 *T*-1 民调 显示 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

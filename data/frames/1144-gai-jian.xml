@@ -1,0 +1,119 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="builder"/>
+      <role argnum="1" argrole="thing built"/>
+      <role argnum="2" argrole="built into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 福州))
+	      (VP (VP (VV 筹资)
+		      (QP-OBJ (CD 上百亿)
+			      (CLP (M 元))))
+		  (PU ，)
+		  (VP (VP (VV 新建)
+			  (NP-OBJ (-NONE- *RNR*-1)))
+		      (PU 、)
+		      (VP (VV 改建)
+			  (AS 了)
+			  (NP-OBJ-1 (QP (CD 一)
+					(CLP (ADJP (JJ 大))
+					     (CLP (M 批))))
+				    (NP-APP (NN 交通)
+					    (NN 运输)
+					    (PU 、)
+					    (NN 电力)
+					    (NN 通讯)
+					    (PU 、)
+					    (NN 城市)
+					    (NN 基础)
+					    (NN 设施)
+					    (ETC 等))
+				    (NP (NN 项目))))))) 
+	  </parse>
+	  <arg n="0">
+	  福州 
+	  </arg>
+	  <arg n="1">
+	  *RNR*-1 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		  (VP (VP (VP (VV 用)
+			      (NP-OBJ (QP (CD 十八)
+					  (CLP (M 个)))
+				      (NP (NN 月))))
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NP (NN 盐)
+						  (NN 码头))
+					      (ADJP (JJ 专用))
+					      (NP (NN 泊位)))
+				      (VP (VRD (VV 改造)
+					       (VV 为))
+					  (NP-OBJ (QP (CD 一)
+						      (CLP (M 座)))
+						  (NP (QP (CD 一点五万)
+							  (CLP (M 吨)))
+						      (NP (NN 级)))
+						  (ADJP (UCP (ADJP (JJ 散))
+							     (PU 、)
+							     (NP (NN 杂货)))
+							(ADJP (JJ 两用)))
+						  (NP (NN 泊位)))))))
+		      (PU ，)
+		      (VP (BA 把)
+			  (IP-OBJ (NP-SBJ (QP (CD 两)
+					      (CLP (M 个)))
+					  (NP (QP (CD 万)
+						  (CLP (M 吨)))
+					      (NP (NN 级)))
+					  (NP (NN 驳船)
+					      (NN 泊位)))
+				  (VP (VRD (VV 改建)
+					   (VV 成))
+				      (NP-OBJ (QP (CD 两)
+						  (CLP (M 个)))
+					      (NP (QP (CD 万)
+						      (CLP (M 吨)))
+						  (NP (NN 级)))
+					      (NP (NN 通用)
+						  (NN 杂货)
+						  (NN 泊位))))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  两 个 万 吨 级 驳船 泊位 
+	  </arg>
+	  <arg n="2">
+	  两 个 万 吨 级 通用 杂货 泊位 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

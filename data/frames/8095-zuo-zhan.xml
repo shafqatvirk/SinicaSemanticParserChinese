@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作战 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 fights against"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-TPC-2 (PU 「)
+			(NP-SBJ (ADVP (CS 只要))
+				(NP (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VP (VE 有)
+							(NP (NN 决心)))
+						    (VP (PP-DIR (P 向)
+								(NP (NT Ｙ２Ｋ)))
+							(VP (VV 挑战)))))
+					    (DEC 的)))
+				    (NP (NN 企业))))
+			(PU ，)
+			(VP (VP (ADVP (AD 都))
+				(VP (VV 欢迎)
+				    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 加入)
+						(NP (NN 战场))))))
+			    (PU ，)
+			    (VP (ADVP (AD 共同))
+				(VP (VV 作战)))))
+	      (PU ！)
+	      (PU 」)
+	      (IP (NP-PN-SBJ (NR 戚难先))
+		  (VP (ADVP (AD 如是))
+		      (VP (VV 说)
+			  (IP-OBJ (-NONE- *T*-2)))))) 
+	  </parse>
+	  <arg n="0">
+	  只要 *OP* *T*-1 有 决心 向 Ｙ２Ｋ 挑战 的 企业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共同 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

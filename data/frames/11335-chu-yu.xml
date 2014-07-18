@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出狱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person coming out of prison"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 现在))
+		  (ADVP (AD 还))
+		  (VP (VE 有)
+		      (IP-OBJ (QP-SBJ (CD 七)
+				      (CLP (M 名)))
+			      (VP (ADVP (AD 未))
+				  (VP (VV 出狱))))))) 
+	  </parse>
+	  <arg n="0">
+	  七 名 	
+	  </arg>
+	  <arg n="m" f="adv">
+	  未 	
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

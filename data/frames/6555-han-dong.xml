@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 撼动 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 shakes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NP-PN (NR 亚洲))
+			(NP (NN 金融)
+			    (NN 风暴)))
+		    (PU 、)
+		    (NP (NP-PN (NR 中共))
+			(NP (NN 文攻武吓))))
+	    (VP (ADVP (AD 都))
+		(ADVP (AD 不))
+		(VP (VV 能)
+		    (VP (VV 撼动)
+			(NP-PN-OBJ (NR 台湾)))))) 
+	</parse>
+	<arg n="0">
+	亚洲 金融 风暴 、 中共 文攻武吓 
+	</arg>
+	<arg n="1">
+	台湾 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	都 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 当)
+		    (LCP (IP (NP-SBJ (NP-APP (NN 消费者)
+					     (PU 、)
+					     (NN 环保)
+					     (PU 、)
+					     (NN 妇女)
+					     (PU 、)
+					     (NN 劳工)
+					     (ETC 等))
+				     (NP (NN 社会)
+					 (NN 运动)))
+			     (VP (QP-ADV (CD 一)
+					 (CLP (M 波波)))
+				 (VP (VV 展开))))
+			 (LC 时)))
+	    (PU ，)
+	    (ADVP (AD 唯独))
+	    (NP-SBJ (NN 教育)
+		    (NN 领域))
+	    (VP (ADVP (AD 似乎))
+		(VP (VC 是)
+		    (NP-PRD (QP (CLP (M 座)))
+			    (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (ADVP (AD 难以))
+					    (VP (VV 撼动))))
+				    (DEC 的)))
+			    (ADJP (JJ 古老))
+			    (NP (NN 堡垒)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="adv">
+	难以 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 折腾 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="person arg0 tortures"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (QP-TMP (ADVP (AD 近))
+		    (QP (CD 几)
+			(CLP (M 年))))
+	    (NP-PN-SBJ (NR 项纪台) )
+	    (VP (LB 被)
+		(IP-OBJ (NP-SBJ (PU 「)
+				(NN 五十肩)
+				(PU 」))
+			(VP (VV 折腾)
+			    (DER 得)
+			    (VP-EXT (ADVP (AD 很))
+				    (VP (VA 惨))))))) 
+	</parse>
+	<arg n="0">
+	「 五十肩 」 
+	</arg>
+	<arg n="1">
+	项纪台 
+	</arg>
+	<arg n="m" f="adv">
+	很 惨 
+	</arg>
+	<arg n="m" f="tmp">
+	近 几 年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

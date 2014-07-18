@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 总计 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="amount arg0 totals"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (DP (DT 各)
+				  (CLP (M 种)))
+			      (NP (NN 化学)
+				  (NN 纤维)))
+		      (VP (VRD (VV 总计)
+			       (VV 起来))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 台湾))
+	      (VP (ADVP (AD 也))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 仅))
+					      (VP (VV 次於)
+						  (NP-OBJ (NP-PN (NR 美国))
+							  (CC 和)
+							  (NP (NN 大陆))))))
+				      (DEC 的)))
+			      (ADJP (QP (OD 第三))
+				    (ADJP (JJ 大)))
+			      (NP (NN 生产国)))))) 
+	  </parse>
+	  <arg n="0">
+	  各 种 化学 纤维 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

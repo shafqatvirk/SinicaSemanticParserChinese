@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 puts together"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *PRO*))
+	    (VP (LCP-LOC (NP (NN 风))
+			 (LC 中))
+		(VP (VV 拼)
+		    (NP-OBJ (NN 拼图))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	拼图 
+	</arg>
+	<arg n="m" f="loc">
+	风 中 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-4 (-NONE- *OP*))
+			(CP (IP (NP-TPC (-NONE- *T*-4))
+				(NP-SBJ (-NONE- *pro*))
+				(VP (VPT (VV 拼)
+					 (AD 不)
+					 (VV 到))))
+			    (DEC 的))))
+	    (PU ，)
+	    (VP (VP (ADVP (AD 越来越))
+		    (VP (VV 渴求)))
+		(VP (ADVP (AD 却))
+		    (ADVP (AD 又))
+		    (ADVP (AD 自))
+		    (VP (VV 知)
+			(IP-OBJ (NP-SBJ (NN 希望))
+				(VP (VA 渺茫))))))) 
+	</parse>
+	<arg n="0">
+	*T*-4 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

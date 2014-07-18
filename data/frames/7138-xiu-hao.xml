@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 修好 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 makes efforts to build good relation with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 中共))
+	    (VP (ADVP (AD 积极))
+		(PP (P 与)
+		    (NP-PN (NR 美)))
+		(VP (VV 修好)))) 
+	</parse>
+	<arg n="0">
+	中共 
+	</arg>
+	<arg n="1">
+	与 美 
+	</arg>
+	<arg n="m" f="adv">
+	积极 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,96 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 保证 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="ensurer"/>
+    <role argnum="1" argrole="thing ensured"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+(IP (NP-SBJ (DP (DT 各))
+            (NP (NN 金融)
+                (NN 机构)))
+    (VP (VP (VV 要)
+            (VP (ADVP (AD 认真))
+                (VP (VV 做好)
+                    (NP-OBJ (NN 资金)
+                            (NN 调度)
+                            (NN 工作)))))
+        (PU ，)
+        (VP (PP-DIR (P 对)
+                    (NP (ADJP (JJ 合法))
+                        (NP (NN 存款))))
+            (VP (VV 要)
+                (VP (VP (VV 保证)
+                        (NP-OBJ (ADJP (JJ 及时))
+                                (NP (NN 支付))))
+                    (PU ，)
+                    (VP (ADVP (AD 切实))
+                        (VP (VV 维护)
+                            (NP-OBJ (DNP (NP (NN 存款人))
+                                         (DEG 的))
+                                    (ADJP (JJ 合法))
+                                    (NP (NN 利益)))))))))
+    (PU 。))
+	</parse>
+	<arg n="0"> 各 金融 机构 </arg>
+	<V/>
+	<arg n="1"> 及时 支付 </arg>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+(IP (NP-SBJ (NP-APP (NP-PN (NR 中国)
+                           (NN 人民)
+                           (NN 银行))
+                    (NP (NN 副行长)))
+            (NP-PN (NR 尚福林)))
+    (VP (NP-TMP (NT 今天))
+        (VP (VV 说)
+            (PU ，)
+            (IP-OBJ (NP-SBJ (NP-PN (NR 中国))
+                            (DNP (NP (NT 今后))
+                                 (DEG 的))
+                            (NP (NN 货币)
+                                (NN 政策)
+                                (NN 走向)))
+                    (VP (VP (ADVP (AD 仍))
+                            (ADVP (AD 将))
+                            (ADVP (AD 适度))
+                            (VP (VV 从紧)))
+                        (PU ，)
+                        (VP (MSP 以)
+                            (VP (VP (VV 控制)
+                                    (NP-OBJ (NN 通货膨胀)))
+                                (PU ，)
+                                (VP (VV 保证)
+                                    (IP-OBJ (NP-SBJ (NN 国民)
+                                                    (NN 经济))
+                                            (VP (DVP (VP (VV 持续)
+                                                         (PU 、)
+                                                         (VA 稳定)
+                                                         (PU 、)
+                                                         (VA 健康))
+                                                     (DEV 地))
+                                                (VP (VV 发展)))))))))))
+    (PU 。))
+	</parse>
+	<arg n="0"> 中国 今后 的 货币 政策 走向 </arg>
+	<V/>
+	<arg n="1"> 国民 经济 持续 、 稳定 、 健康 地 发展 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

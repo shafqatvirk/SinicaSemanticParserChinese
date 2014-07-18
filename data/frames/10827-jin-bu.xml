@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 禁捕 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity it is forbidden to catch"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NP-APP (DNP (DP (DT 每)
+				     (CLP (M 年)))
+				 (DEG 的))
+			    (NP (NT 六月)
+				(CC 到)
+				(NT 十月)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (NN 樱花虾))
+				(VP (NP-TMP (-NONE- *T*-1))
+				    (VP (VCD (VV 产卵)
+					     (VV 成长)))))
+			    (DEC 的)))
+		    (NP (NN 季节)))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 全面))
+		(VP (VV 禁捕)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="m" f="adv">
+	全面 
+	</arg>
+	<arg n="m" f="tmp">
+	每 年 的 六月 到 十月 *OP* 樱花虾 *T*-1 产卵 成长 的 季节 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

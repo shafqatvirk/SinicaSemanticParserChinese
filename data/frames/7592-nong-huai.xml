@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 弄坏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 ruins"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (DNP (NP (NN 事业))
+				 (DEG 的))
+			    (NP (NN 压力)))
+		    (VP (VV 加上)
+			(NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (ADVP (AD 常年))
+						(PP (P 与)
+						    (NP (NP (NP-PN (NR 中共))
+							    (NP (NN 干部)))
+							(PU 、)
+							(NP (NN 台商))))
+						(VP (VV 联谊))))
+					(DEC 的))
+				(NP (NN 应酬)
+				    (NN 生活)))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 不少))
+		    (NP (NN 台商)))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 来)
+				(NP-PN-OBJ (NN 大陆)))
+			    (VP (VV 设厂))))
+		(PU ，)
+		(ADVP (AD 硬生生))
+		(ADVP (AD 就))
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (NN 身体))
+			    (VP (VV 弄坏)
+				(AS 了)))))) 
+	</parse>
+	<arg n="0">
+	不少 台商 
+	</arg>
+	<arg n="1">
+	身体 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="adv">
+	硬生生 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 来 大陆 设厂 
+	</arg>
+	<arg n="m" f="adv">
+	事业 的 压力 加上 *PRO* 常年 与 中共 干部 、 台商 联谊 的 应酬 生活 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

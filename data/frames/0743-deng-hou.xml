@@ -1,0 +1,86 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 等候 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity waiting"/>
+      <role argnum="1" argrole="thing or entity waited for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-HLN (NN 下图))
+		  (PU ：)
+		  (NP-SBJ (DNP (NP (NP-PN (NR 无锡市))
+				   (NP (NN 卫生)
+				       (NN 系统)))
+			       (DEG 的))
+			  (NP (NN 青年))
+			  (ADJP (JJ 医务))
+			  (NP (NN 人员)))
+		  (VP (ADVP (AD 在))
+		      (VP (VV 等候)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 献血)))))
+		  (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  无锡市 卫生 系统 的 青年 医务 人员 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  在 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  *PRO* 献血 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 绝大多数))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 听)
+				      (AS 过)
+				      (NP-OBJ (NN 英文)
+					      (NN 流行歌))))
+			      (DEC 的)))
+		      (NP (NN 人)))
+	      (VP (ADVP (AD 都))
+		  (VP (VV 知道)
+		      (NP-OBJ (NP-APP (DNP (LCP (NP (NP-PN (NR 欧)
+							   (NR 美))
+						    (ADJP (JJ 流行))
+						    (NP (NN 音乐史)))
+						(LC 上))
+					   (DEG 的))
+				      (ADJP (JJ 超级))
+				      (NP (NN 经典)))
+			      (IP-TTL (PU 《)
+				      (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-LOC (P 在)
+						  (NP (PN 此)))
+					  (VP (VV 等候)))
+				      (PU 》)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

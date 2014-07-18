@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 向往 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 yearns after"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 林边人))
+	    (VP (ADVP (AD 一心))
+		(VP (VV 向往)
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VV 成为)
+				(NP-OBJ (NN 观光)
+					(NN 重镇))))))) 
+	</parse>
+	<arg n="0">
+	林边人 
+	</arg>
+	<arg n="1">
+	*PRO* 成为 观光 重镇 
+	</arg>
+	<arg n="m" f="adv">
+	一心 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 选民))
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (DNP (NP (NN 长期))
+				      (DEG 的))
+				 (NP (NN 强人)
+				     (NN 执政)))
+			     (LC 後)))
+		(PU ，)
+		(VP (VV 向往)
+		    (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (ADVP (AD 更))
+					    (VP (VA 多元))))
+				    (DEC 的)))
+			    (NP (NN 选择)))))) 
+	</parse>
+	<arg n="0">
+	选民 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 更 多元 的 选择 
+	</arg>
+	<arg n="m" f="tmp">
+	在 长期 的 强人 执政 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

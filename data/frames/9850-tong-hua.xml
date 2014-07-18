@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 通话 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people talking on the phone"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (NP-PN (NR 澳洲))
+			  (NP (NN 学者)))
+		  (VP (VP (VV 提出)
+			  (IP-OBJ (NP-APP (NN 警告))
+				  (PU ，)
+				  (IP (NP-SBJ (NN 行动)
+					      (NN 电话))
+				      (VP (VV 可能)
+					  (VP (VV 会)
+					      (VP (VV 引起)
+						  (NP-OBJ (NN 脑)
+							  (NN 病变)
+							  (PU 、)
+							  (NN 脑瘤))))))))
+		      (PU ，)
+		      (VP (VV 建议)
+			  (NP-OBJ (-NONE- *pro*))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 要)
+				      (VP (NP-ADV (ADJP (JJ 长))
+						  (NP (NN 时间)))
+					  (VP (VV 通话))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  长 时间 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

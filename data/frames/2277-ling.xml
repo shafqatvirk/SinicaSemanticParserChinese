@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 灵 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 现在))
+	      (IP-SBJ (NP-SBJ (NN 制度))
+		      (VP (VV 管)
+			  (NP-OBJ (NN 人))))
+	      (VP (ADVP (AD 真))
+		  (VP (VA 灵)))) 
+	  </parse>
+	  <arg n="0">
+	  制度 管 人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  真 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

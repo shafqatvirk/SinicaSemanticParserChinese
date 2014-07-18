@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 销毁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing destroyed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 伊))
+	      (VP (ADVP (AD 已经))
+		  (VP (VV 销毁)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ-2 (-NONE- *T*-1))
+				      (VP (SB 被)
+					  (VP (VV 禁)
+					      (NP-OBJ (-NONE- *-2))))))
+			      (NP (NN 武器)))))) 
+	  </parse>
+	  <arg n="0">
+	  伊 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 被 禁 *-2 武器 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已经 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

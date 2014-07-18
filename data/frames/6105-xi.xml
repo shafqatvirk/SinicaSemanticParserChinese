@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 戏 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 plays with/teases"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP-PN (NR 东汉) )
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 拜)
+			    (NP-OBJ (CP-APP (IP (PU 「)
+						(NP-PN-SBJ (NR 刘海) )
+						(VP (VV 戏)
+						    (NP-OBJ (ADJP (JJ 金))
+							    (NP (NN 蟾) )))
+						(PU 」))
+					    (DEC 之))
+				    (NP (NN 说) ))))
+		(PU ，)
+		(ADVP (AD 终))
+		(VP (VV 成)
+		    (NP-OBJ (NP-PN (NR 中国) )
+			    (CP (WHNP-2 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-2))
+					(VP (VV 源远流长)))
+				    (DEC 的)))
+			    (NP (NN 吉祥物) ))))) 
+	</parse>
+	<arg n="0">
+	刘海 
+	</arg>
+	<arg n="1">
+	金 蟾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

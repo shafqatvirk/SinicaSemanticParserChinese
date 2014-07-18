@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 出色 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person,thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (NP-APP (DNP (NP (NP (PN 我))
+				       (NP (NN 国)))
+				   (DEG 的))
+			      (NP (NN 小将)))
+		      (NP-PN (NR 常昊)))
+	      (NP-TMP (NT 今天))
+	      (NP-SBJ (NN 表现))
+	      (VP (ADVP (AD 尤为))
+		  (VP (VA 出色)))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  我 国 的 小将 常昊 
+	  </arg>
+	  <arg n="0" f="pse">
+	  表现 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今天 
+	  </arg>
+	  <arg n="m" f="adv">
+	  尤为 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

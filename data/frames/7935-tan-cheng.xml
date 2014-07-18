@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 谈成 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 achieves through negotiation"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (LCP-TMP (QP (QP (CD 两)
+				 (CLP (M 年)))
+			     (ADVP (AD 多)))
+			 (LC 前))
+		(PU ，)
+		(NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-2))
+				    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 经营)
+						    (NP-OBJ (NN 旅行)
+							    (NN 业务))))
+					(VP (VV 出身))))
+				(DEC 的)))
+			(NP-PN (NR 通宝)
+			       (NN 集团)))
+		(VP (VP (VV 开始)
+			(VP (PP (P 与)
+				(NP (NP-PN (NR 中共))
+				    (NP (NN 海关)
+					(PU 、)
+					(NN 边检)
+					(NN 单位))))
+			    (VP (VV 打交道))))
+		    (PU ，)
+		    (VP (VV 谈成)
+			(AS 了)
+			(NP-OBJ (NN 路权))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 *PRO* 经营 旅行 业务 出身 的 通宝 集团 
+	</arg>
+	<arg n="1">
+	路权 
+	</arg>
+	<arg n="m" f="tmp">
+	两 年 多 前 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

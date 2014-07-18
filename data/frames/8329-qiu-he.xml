@@ -1,0 +1,27 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 求知 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person seeking knowledge"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 但))
+	      (NP-SBJ (NN 念书))
+	      (VP (ADVP (AD 还是))
+		  (VP (PP-PRP (P 为了)
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 求知))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

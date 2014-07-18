@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 设想 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity whose needs arg0 forsees and gets ready for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 表示)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 欢迎)
+					(NP-OBJ (NN 总理))
+					(IP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 莅临))))))))
+	    (PU ，)
+	    (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP-FOC (VV 设想))
+				    (VP (VA 周到))))
+			    (DEC 的)))
+		    (NP-PN (NR Sharon)))
+	    (VP (PP-TMP (P 在)
+			(LCP (NP (QP (CD 几)
+				     (CLP (M 个)))
+				 (NP (NN 星期)))
+			     (LC 之前)))
+		(VP (VV 问)
+		    (NP-IO (PN 我))
+		    (PU ，)
+		    (IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP-WH (AD 是否))
+				  (VP (VV 愿意)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (PP-BNF (P 为)
+							  (NP (NN 总理)))
+						  (VP (VV 设计)
+						      (NP-OBJ (QP (CD 一)
+								  (CLP (M 束)))
+							      (CP (WHNP-2 (-NONE- *OP*))
+								  (CP (IP (NP-SBJ (-NONE- *T*-2))
+									  (VP (VV 别具)
+									      (NP-OBJ (NN 特色))))
+								      (DEC 的)))
+							      (NP (NN 胸花)))))))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

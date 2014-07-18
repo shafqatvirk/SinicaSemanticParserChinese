@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 嚎啕大哭 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person crying"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-TMP (P 在)
+		    (LCP (NP (CP (WHNP-2 (-NONE- *OP*))
+				 (CP (IP (NP-SBJ (-NONE- *T*-2))
+					 (VP (VA 深切)))
+				     (DEC 的)))
+			     (NP (NN 吟颂) ))
+			 (LC 之後)))
+	    (PU ，)
+	    (NP-SBJ (NN 父亲) )
+	    (VP (ADVP (AD 常))
+		(VP (VV 会)
+		    (VP (DVP (VP (VV 突如其来))
+			     (DEV 的))
+			(VP (VV 嚎啕大哭)))))) 
+	</parse>
+	<arg n="0">
+	父亲 
+	</arg>
+	<arg n="m" f="adv">
+	常 
+	</arg>
+	<arg n="m" f="adv">
+	突如其来 的 
+	</arg>
+	<arg n="m" f="tmp">
+	在 *OP* *T*-2 深切 的 吟颂 之後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

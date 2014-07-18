@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 访遍 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entities arg0 visits all of"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 邓相扬))
+	    (VP (VP (PP-PRP (P 因)
+			    (NP (DNP (NP (NN 个人))
+				     (DEG 的))
+				(NP (NN 兴趣))))
+		    (PU ，)
+		    (DVP (NP (ADJP (JJ 长))
+			     (NP (NN 时期)))
+			 (DEV 的))
+		    (VP (VV 投入)
+			(PU 、)
+			(VV 关注)))
+		(PU ，)
+		(VP (VV 访遍)
+		    (NP-OBJ (DNP (LCP (NP (NN 部落))
+				      (LC 里))
+				 (DEG 的))
+			    (NP (NN 老人家))))
+		(PU ，)
+		(VP (PP-DIR (P 对)
+			    (NP (DP (DT 这)
+				    (CLP (M 段)))
+				(NP (NN 历史))))
+		    (VP (VV 做)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VE 有)
+						(NP-OBJ (NN 系统))))
+					(DEC 的)))
+				(NP (NN 整理))))))) 
+	</parse>
+	<arg n="0">
+	邓相扬 
+	</arg>
+	<arg n="1">
+	部落 里 的 老人家 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

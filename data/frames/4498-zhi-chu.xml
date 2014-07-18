@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 织出 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 knits"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (DP (DT 该))
+					  (NP (NN 厂)))
+				  (VP (VV 织出)
+				      (NP-OBJ (-NONE- *T*-1))))
+			      (DEC 的)))
+		      (NP (NN 天然色)
+			  (NN 地毯)))
+	      (PU ，)
+	      (VP (NP-TMP (NT 去年))
+		  (VP (VV 获)
+		      (NP-OBJ (NP-PN (NR 辽宁省))
+			      (NP-PN (PU “)
+				     (NR 天马)
+				     (PU ”))
+			      (ADJP (JJ 优质))
+			      (NP (NN 奖)))))) 
+	  </parse>
+	  <arg n="0">
+	  该 厂 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

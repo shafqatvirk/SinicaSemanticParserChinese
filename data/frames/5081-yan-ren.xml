@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 延任 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity office of which is extended"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (IP-APP (NP-PN-SBJ (NN 国大))
+			    (VP (VV 延任)))
+		    (NP (NN 事实)))
+	    (VP (ADVP (AD 已))
+		(VP (VV 造成)))) 
+	</parse>
+	<arg n="0">
+	国大 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="time arg0's office is extended until"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 延任案))
+	    (VP (VV 让)
+		(NP-OBJ (NN 国代))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VRD (VV 延任)
+			     (VV 至))
+			(NP-OBJ (QP (NP-PN (NR 民国))
+				    (QP (OD 九十一)
+					(CLP (M 年))))
+				(NP (NT 六月))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	民国 九十一 年 六月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 期待已久 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="hope cherisher"/>
+      <role argnum="1" argrole="thing long hoped for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (IP-CND (NP-SBJ (NN 导弹)
+				  (NN 危机))
+			  (VP (ADVP (AD 不))
+			      (VP (VV 结束))))
+		  (PU ，)
+		  (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (NP-PN (NR 塞))
+						  (NP (NN 政府)))
+					  (VP (VV 期待已久)))
+				      (DEC 的)))
+			      (NP (NN 入盟)))
+			  (NP (NN 问题)))
+		  (VP (VV 会)
+		      (VP (VV 受到)
+			  (NP-OBJ (NN 影响))))) 
+	  </parse>
+	  <arg n="0">
+	  塞 政府 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

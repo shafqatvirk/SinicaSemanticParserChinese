@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 整装待发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NP-PN (NR 印度))
+			      (CC 与)
+			      (NP (PN 我)))
+		      (VP (ADVP (CS 虽))
+			  (VP (VE 无)
+			      (NP-OBJ (NN 邦交)))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-SBJ (NP (PN 我))
+		      (NP (NN 救援队)))
+	      (VP (VP (ADVP (AD 已))
+		      (VP (VV 整装待发)))
+		  (PU ，)
+		  (VP (ADVP (AD 随时))
+		      (VP (VV 准备)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VP (VV 前往)
+					  (NP-PN-OBJ (NR 印度)))
+				      (VP (VV 救援)))))))) 
+	  </parse>
+	  <arg n="0">
+	  我 救援队 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <arg n="m" f="dis">
+	  但 
+	  </arg>
+	  <arg n="m" f="adv">
+	  印度 与 我 虽 无 邦交 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

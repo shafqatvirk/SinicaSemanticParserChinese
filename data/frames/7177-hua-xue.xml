@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 滑雪 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (PP-LOC (P 在)
+			(NP-PN (NR 土耳其)))
+		(VP (VP (VV 迎)
+			(AS 著)
+			(NP-OBJ (NN 晨曦)))
+		    (VP (VV 准备)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 去)
+				    (VP (VV 滑雪)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

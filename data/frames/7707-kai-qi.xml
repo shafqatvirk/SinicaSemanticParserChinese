@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 开起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 opens up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 并且))
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 乾脆))
+		(VP (VV 开起)
+		    (NP-OBJ (NN 饼)
+			    (NN 店)))
+		(VP (VV 来)))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	饼 店 
+	</arg>
+	<arg n="m" f="adv">
+	乾脆 
+	</arg>
+	<arg n="m" f="dis">
+	并且 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

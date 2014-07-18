@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 号称 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity"/>
+      <role argnum="1" argrole="nickname"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VV 号称)
+				  (NP-OBJ (NP-PN (NR 东海))
+					  (NP (PU “)
+					      (QP (CD 四))
+					      (ADJP (JJ 大))
+					      (NP (NN 家族))
+					      (PU ”)))))
+			  (DEC 的)))
+		  (NP (NN 大黄鱼)
+		      (PU 、)
+		      (NN 小黄鱼)
+		      (PU 、)
+		      (NN 带鱼)
+		      (CC 和)
+		      (NN 墨鱼))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  东海 “ 四 大 家族 ” 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

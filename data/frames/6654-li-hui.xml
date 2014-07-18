@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 理会 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 pays attention to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 祭出)
+			(NP-OBJ (NN 党纪)))
+		    (PU ，)
+		    (VP (VV 处罚)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (DP-ADV (DT 此)
+							(CLP (M 次)))
+						(VP (VP (ADVP (AD 未))
+							(VP (VV 理会)
+							    (NP-OBJ (NN 党意))))
+						    (VP (ADVP (AD 强行))
+							(VP (VV 通过)
+							    (NP-OBJ (NN 延任案)))))))
+					(DEC 的)))
+				(NP (NN 国代)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	党意 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<arg n="m" f="adv">
+	此 次 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

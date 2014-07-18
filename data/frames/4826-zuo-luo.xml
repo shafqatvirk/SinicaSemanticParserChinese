@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 座落 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="place arg0 is located"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 市区))
+	      (VP (VV 座落)
+		  (PP (P 于)
+		      (LCP (NP (DNP (NP (NP-PN (NR 长江)
+					       (PU 、)
+					       (NR 嘉陵江))
+					(NP (NN 交汇处)))
+				    (DEG 的))
+			       (NP (NN 山丘)
+				   (NN 坡地)))
+			   (LC 上))))) 
+	  </parse>
+	  <arg n="0">
+	  市区 
+	  </arg>
+	  <arg n="1">
+	  于 长江 、 嘉陵江 交汇处 的 山丘 坡地 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

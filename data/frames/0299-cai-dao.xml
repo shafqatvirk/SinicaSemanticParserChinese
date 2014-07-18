@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 猜到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="guesser"/>
+    <role argnum="1" argrole="thing guessed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP-APP (NP-SBJ (-NONE- *PRO*))
+          (VP (ADVP (AD 都))
+              (VP (VV 猜到)
+                  (AS 了)
+                  (NP-OBJ (ADJP (JJ 白))
+                          (NP (NN 棋)))))))
+	</parse>
+	<arg n="0"> *PRO* </arg>
+	<arg n="M" f="ADV"> 都 </arg>
+	<V/>
+	<arg n="1"> 白 棋 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

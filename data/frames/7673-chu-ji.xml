@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 触及 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 touches on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-13 (-NONE- *OP*))
+			(CP (IP (NP-TTL-SBJ (PU 《)
+					    (NP-PN (NR 台湾))
+					    (NP (NN 水浒传))
+					    (PU 》))
+				(VP (MSP 所)
+				    (VP (VV 触及)
+					(NP-OBJ (-NONE- *T*-13)))))
+			    (DEC 的)))
+		    (NP (NT 二二八))
+		    (NP (NN 史实)
+			(CC 与)
+			(NN 争议)))
+	    (VP (ADVP (AD 并))
+		(ADVP (AD 不))
+		(VP (VA 深入)))) 
+	</parse>
+	<arg n="0">
+	《 台湾 水浒传 》 
+	</arg>
+	<arg n="1">
+	*T*-13 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

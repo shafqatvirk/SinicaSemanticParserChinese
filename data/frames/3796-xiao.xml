@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 晓 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing informed of"/>
+      <role argnum="2" argrole="people informed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 希望)
+	      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 能)
+			  (VP (PP-DIR (P 对)
+				      (NP (NP-PN (NR 台湾))
+					  (NP (NN 当局))))
+			      (VP (PU “)
+				  (VV 晓)
+				  (PP (P 以)
+				      (NP (NN 利害)))
+				  (PU ”)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  以 利害 
+	  </arg>
+	  <arg n="2">
+	  对 台湾 当局 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

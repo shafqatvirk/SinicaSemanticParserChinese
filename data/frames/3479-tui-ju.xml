@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推举 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="person elected"/>
+      <role argnum="2" argrole="position elected to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP-APP (ADJP (JJ 著名))
+			      (NP (NN 戏曲)
+				  (NN 理论家)))
+		      (NP-PN (NR 张庚)))
+	      (VP (SB 被)
+		  (VP (VRD (VV 推举)
+			   (VV 为))
+		      (NP-OBJ (NP (NN 剧协))
+			      (ADJP (JJ 名誉))
+			      (NP (NN 主席)))))) 
+	  </parse>
+	  <arg n="1">
+	  著名 戏曲 理论家 张庚 
+	  </arg>
+	  <arg n="2">
+	  剧协 名誉 主席 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

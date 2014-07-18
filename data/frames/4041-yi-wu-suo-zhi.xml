@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 一无所知 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="entity arg0 has no knowledge of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (PN 他))
+		  (VP (NP-TMP (NT 现在))
+		      (PP-DIR (P 对于)
+			      (NP-PN (NR 萨格勒布队)))
+		      (ADVP (AD 还))
+		      (ADVP (AD 基本上))
+		      (VP (VC 是)
+			  (VP (VV 一无所知))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  对于 萨格勒布队 
+	  </arg>
+	  <arg n="m" f="adv">
+	  基本上 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

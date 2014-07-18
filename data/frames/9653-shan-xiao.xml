@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 讪笑 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 ridicules"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (PP-DIR (P 从)
+			      (NP-PN (NR 师大)))
+		      (VP (VV 回乡)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 任教)
+				      (QP-EXT (CD 多)
+					      (CLP (M 年)))))))
+		  (PU ，)
+		  (VP (ADVP (AD 至今))
+		      (ADVP (AD 还是))
+		      (VP (VP (ADVP (AD 一))
+			      (VP (VV 开口)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 讲)
+					      (NP-OBJ (NN 台语))))))
+			  (VP (ADVP (AD 就))
+			      (VP (VV 会)
+				  (VP (VV 惹来)
+				      (NP-OBJ (NN 家人))
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 讪笑)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

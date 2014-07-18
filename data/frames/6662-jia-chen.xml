@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 夹陈 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="things existing at the same time"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 身处)
+			(NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				    (CP (IP (NP-TPC (-NONE- *T*-2))
+					    (IP (IP (NP-SBJ (NN 中西))
+						    (VP (VV 合壁)))
+						(PU 、)
+						(IP (NP-SBJ (ADJP (JJ 新)
+								  (JJ 旧))
+							    (NP (NN 观念)))
+						    (VP (VV 夹陈)))))
+					(DEC 的)))
+				(NP (NN 现代)))))
+	    (PU ，)
+	    (NP-SBJ-PN (NR 蒙娜丽莎))
+	    (VP (ADVP (AD 也))
+		(ADVP (AD 只好))
+		(VP (PU 「)
+		    (VV 变脸)
+		    (PU 」)))) 
+	</parse>
+	<arg n="0">
+	新 旧 观念 
+	</arg>
+	<arg n="m" f="tmp">
+	*T*-2 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

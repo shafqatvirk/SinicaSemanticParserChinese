@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搞活 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent, cause"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (ADJP (JJ 大))
+			  (NP (NN 通道)))
+		      (NP (NN 建设)))
+	      (VP (VV 搞活)
+		  (AS 了)
+		  (NP-OBJ (DNP (NP (ADJP (JJ 大))
+				   (NP (NN 西南)))
+			       (DEG 的))
+			  (NP (NN 物流)
+			      (PU 、)
+			      (NN 人流)
+			      (PU 、)
+			      (NN 信息流))))) 
+	  </parse>
+	  <arg n="0">
+	  大 通道 建设 
+	  </arg>
+	  <arg n="1">
+	  大 西南 的 物流 、 人流 、 信息流 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

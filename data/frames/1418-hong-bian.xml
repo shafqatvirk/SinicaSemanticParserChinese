@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 红遍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="domain"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (CD 多)
+			   (CLP (M 年)))
+		       (LC 前))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 巴廖尼))
+	      (VP (VP (VV 创作)
+		      (AS 了)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 首)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (NP-SBJ (NN 名))
+					  (VP (VV 叫)
+					      (IP-TTL-OBJ (PU 《)
+							  (NP-SBJ (ADJP (JJ 小小))
+								  (NP (NN 爱情)))
+							  (VP (VA 深)
+							      (PP-EXT (P 似)
+								      (NP (NN 海))))
+							  (PU 》)))))
+				  (DEC 的))
+			      (NP (NN 歌曲))))
+		  (PU ，)
+		  (VP (ADVP (AD 瞬间))
+		      (VP (VV 红遍)
+			  (NP-PN-OBJ (NR 意大利)))))) 
+	  </parse>
+	  <arg n="0">
+	  巴廖尼 
+	  </arg>
+	  <arg n="1">
+	  意大利 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  多 年 前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  瞬间 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

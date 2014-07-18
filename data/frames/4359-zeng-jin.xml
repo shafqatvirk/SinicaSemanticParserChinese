@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增进 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing promoted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 两)
+			      (CLP (M 家)))
+			  (NP (NN 金融)
+			      (NN 机构)))
+		  (VP (ADVP (AD 将))
+		      (VP (VP (VV 增进)
+			      (NP-OBJ (NN 合作)))
+			  (PU 、)
+			  (VP (ADVP (AD 共同))
+			      (VP (VV 寻求)
+				  (NP-OBJ (ADJP (JJ 互利))
+					  (ADJP (JJ 互惠))
+					  (NP (NN 业务)
+					      (NN 机会)))))))) 
+	  </parse>
+	  <arg n="0">
+	  两 家 金融 机构 
+	  </arg>
+	  <arg n="1">
+	  合作 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

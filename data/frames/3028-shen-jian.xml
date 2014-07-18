@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 身兼 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="position held"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-2))
+			      (VP (VV 身兼)
+				  (NP-OBJ (NP-APP (NP (NP-PN (NP (DP (DT 全))
+								 (NP (NN 国)))
+							     (NP (NN 政协)))
+						      (NP (NN 委员)))
+						  (PU 、)
+						  (NP (NP-PN (NR 江西省)
+							     (NN 政协))
+						      (NP (NN 常委)))
+						  (PU 、)
+						  (NP (NN 集团)
+						      (NN 公司)
+						      (NN 总裁))
+						  (ETC 等))
+					  (QP (CD 多))
+					  (NP (NN 职)))))
+			  (DEC 的)))
+		  (NP-PN (NR 王翔))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="1">
+	  全 国 政协 委员 、 江西省 政协 常委 、 集团 公司 总裁 等 多 职 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

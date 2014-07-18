@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 等于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="compared entity"/>
+      <role argnum="1" argrole="compared entity"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NN 工会))
+		      (VP (NP-TMP (NT 最近))
+			  (VP (VV 同意)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (PP-BNF (P 给)
+						  (NP (NP (ADJP (JJ 高))
+							  (NP (NN 收入)))
+						      (NP (NN 明星))))
+					  (VP (PU “)
+					      (VV 减肥)
+					      (PU ”)))))))
+	      (PU ，)
+	      (VP (VCP (VV 等于)
+		       (VC 是))
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 杀富济贫))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  工会 最近 同意 *PRO* 给 高 收入 明星 “ 减肥 ” 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 杀富济贫 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

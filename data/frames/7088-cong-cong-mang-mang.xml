@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 匆匆忙忙 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VP (VPT (VV 舍)
+			 (AD 不)
+			 (VV 得))
+		    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (VV 花)
+				    (NP-OBJ (NN 钱)))
+				(VP (VV 打)
+				    (NP-OBJ (NN 电话))))))
+		(PU ，)
+		(VP (ADVP (AD 总是))
+		    (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 匆匆忙忙)))
+			    (VP (VV 打来)))
+			(PU ，)
+			(VP (VV 要)
+			    (NP-OBJ (NN 人))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 回)
+				    (NP-OBJ (NN 电话))
+				    (PP (P 给)
+					(NP (PN 他)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

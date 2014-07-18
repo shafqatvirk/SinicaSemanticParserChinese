@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 必备 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="possessor"/>
+    <role argnum="1" argrole="thing possessed"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (NP-PRD (NP (CP (WHNP-2 (-NONE- *OP*))
+                  (CP (IP (NP-SBJ (-NONE- *pro*))
+                          (VP (VP-PRP (VRD (VV 争取)
+                                           (VV 到))
+                                      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+                                                  (CP (IP (NP-SBJ (-NONE- *T*-1))
+                                                          (VP (VA 有限)))
+                                                      (DEC 的)))
+                                              (NP (NN 政府)
+                                                  (NN 武器)
+                                                  (NN 采购)
+                                                  (NN 合同))))
+                              (VP (MSP 所)
+                                  (VP (VV 必备)
+                                      (NP-OBJ (-NONE- *T*-2))))))
+                      (DEC 的)))
+              (NP (NN 条件)
+                  (NN 之一)))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<V/>
+	<arg n="1"> (*T*-2)->(条件之一) </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

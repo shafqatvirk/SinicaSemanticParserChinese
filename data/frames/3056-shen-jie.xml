@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 审结 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="case closed after trial"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 浙江)
+			     (NR 宁波))
+		  (VP (VV 审结)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 起)))
+			      (ADJP (JJ 涉外))
+			      (NP (NN 海事案))))) 
+	  </parse>
+	  <arg n="0">
+	  浙江 宁波 
+	  </arg>
+	  <arg n="1">
+	  一 起 涉外 海事案 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

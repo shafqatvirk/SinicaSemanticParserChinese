@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 公诸于众 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 政府))
+	      (VP (ADVP (AD 还))
+		  (PP-DIR (P 对)
+			  (IP (NP-PN-SBJ (NR 巴格瓦特))
+			      (VP (BA 把)
+				  (IP-OBJ (NP-SBJ (DNP (LCP (NP (NN 海军)
+								(CC 与)
+								(NN 国防部))
+							    (LC 之间))
+						       (DEG 的))
+						  (NP (NN 分歧)))
+					  (VP (VV 公诸于众))))))
+		  (VP (VV 深表)
+		      (NP-OBJ (NN 关注))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  巴格瓦特 
+	  </arg>
+	  <arg n="1">
+	  海军 与 国防部 之间 的 分歧 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

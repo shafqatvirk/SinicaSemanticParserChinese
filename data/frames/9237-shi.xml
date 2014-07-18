@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 始 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing starting"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-APP (PU 「)
+		  (IP (QP-TPC (QP (CD 一))
+			      (NP (NN 月)))
+		      (NP-SBJ (NT 今年))
+		      (VP (VV 始)))
+		  (PU ，)
+		  (IP (QP-TPC (CD 一)
+			      (CLP (M 年)))
+		      (NP-SBJ (ADJP (JJ 前))
+			      (NP (NN 事)))
+		      (VP (VA 空)))
+		  (PU ，)
+		  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (VA 凄凄))))
+			      (QP (CD 百)
+				  (CLP (M 年)))
+			      (NP (NN 事)))
+		      (PU ，)
+		      (VP (VV 应)
+			  (VP (PP (P 与)
+				  (QP (CD 一)
+				      (CLP (M 年))))
+			      (VP (VV 同)))))
+		  (PU 」)) 
+	  </parse>
+	  <arg n="0">
+	  今年 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一 月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

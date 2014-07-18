@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 赞扬有加 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity praised"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-DIR (P 对)
+		      (NP (PN 此)))
+	      (PU ，)
+	      (NP-SBJ (ADVP (AD 无论是))
+		      (NP (NN 执政党)
+			  (CC 还是)
+			  (NN 反对党)))
+	      (VP (ADVP (AD 均))
+		  (VP (VV 赞扬有加)))) 
+	  </parse>
+	  <arg n="0">
+	  无论是 执政党 还是 反对党 
+	  </arg>
+	  <arg n="1">
+	  对 此 
+	  </arg>
+	  <arg n="m" f="adv">
+	  均 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,142 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 理 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 manages"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 亚娃伊．泰目))
+	    (VP (PP-TMP (P 在)
+			(NP (NT 一九一二年)))
+		(PP-PRP (P 因)
+			(NP (DNP (NP-PN (NR 日本))
+				 (DEG 的))
+			    (NP (PU 「)
+				(IP-APP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 理)
+					    (NP-OBJ (NN 蕃))))
+				(NP (NN 计画))
+				(PU 」))))
+		(VP (VV 嫁给)
+		    (AS 了)
+		    (NP-OBJ (NP-APP (NP-PN (NR 雾社))
+				    (NP (ADJP (ADVP (AD 最))
+					      (ADJP (JJ 高)))
+					(NP (NN 警部)))
+				    (NP (NN 首长)))
+			    (NP-PN (NR 佐冢爱佑)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	蕃 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 民众))
+	    (VP (VP (ADVP (AD 根本))
+		    (VP (VE 无)
+			(IP-OBJ (NP-SBJ (NN 财))
+				(VP (VV 可)
+				    (VP (VV 理)))))))) 
+	</parse>
+	<arg n="1">
+	财 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 responds to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (IP-CND (NP-TMP (NT 过去))
+		      (NP-SBJ (ADJP (JJ 小))
+			      (NP (NN 市民)))
+		      (VP (VP (VV 打)
+			      (NP-OBJ (NN 电话))
+			      (PP (P 给)
+				  (NP (NN 媒体))))
+			  (VP (VV 说)
+			      (IP-OBJ (NP-SBJ (PN 我))
+				      (VP (VV 要)
+					  (VP (VV 开)
+					      (NP-OBJ (NN 记者会))))))))
+	      (PU ，)
+	      (NP-WH-SBJ (PN 谁))
+	      (VP (VV 理)
+		  (NP-OBJ (PN 你)))) 
+	</parse>
+	<arg n="0">
+	谁 
+	</arg>
+	<arg n="1">
+	你 
+	</arg>
+	<arg n="m" f="cnd">
+	过去 小 市民 打 电话 给 媒体 说 我 要 开 记者会 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f3">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity whose hair arg0 cuts"/>
+    <role argnum="2" argrole="hair style arg0 does on arg1"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-TPC-2 (NP-SBJ (PN 我))
+		  (VP (VC 是)
+		      (NP-PRD (CP (WHNP-4 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-4))
+					  (VP (VP (VP (VV 理)
+						      (NP-OBJ (NN 大光头)))
+						  (VP (-NONE- *RNR*-3)))
+					      (PU 、)
+					      (VP (VP (VV 穿)
+						      (NP-OBJ (NN 制服)))
+						  (VP-3 (VV 长大)))))
+				      (DEC 的)))))) 
+	</parse>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<arg n="2">
+	大光头 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 欢天喜地 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 因此))
+	      (NP-SBJ (QP (CD 许多))
+		      (NP (NN 邻人)))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 领到)
+			      (NP-OBJ (NN 土地))))
+		  (VP (VV 欢天喜地)))) 
+	  </parse>
+	  <arg n="0">
+	  许多 邻人 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 领到 土地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  因此 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

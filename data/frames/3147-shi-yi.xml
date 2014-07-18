@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 适宜 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity appropriate"/>
+      <role argnum="1" argrole="thing appropriate for"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-PRD (NP-TMP (NT 今年))
+		  (NP-SBJ (NN 气候)
+			  (NN 条件))
+		  (VP (VV 适宜)
+		      (NP-OBJ (DNP (NP (NN 茶叶))
+				   (DEG 的))
+			      (NP (NN 生长))))) 
+	  </parse>
+	  <arg n="0">
+	  气候 条件 
+	  </arg>
+	  <arg n="1">
+	  茶叶 的 生长 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 创造)
+	      (AS 了)
+	      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VA 适宜)))
+			      (DEC 的)))
+		      (NP (NN 条件)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

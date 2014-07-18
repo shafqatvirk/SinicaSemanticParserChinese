@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 亏损 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="loser"/>
+      <role argnum="1" argrole="business loss incurred in"/>
+      <role argnum="2" argrole="loss"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 累计))
+		  (VP (VV 亏损)
+		      (QP-OBJ (CD 五点七二亿)
+			      (CLP (M 元)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="2">
+	  五点七二亿 元 
+	  </arg>
+	  <arg n="m" f="adv">
+	  累计 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (ADJP (JJ 国有))
+		      (NP (NN 纺织)
+			  (NN 工业)))
+	      (VP (ADVP (AD 已))
+		  (QP-ADV (ADVP (AD 连续))
+			  (QP (CD 五)
+			      (CLP (M 年))))
+		  (VP (VV 亏损)))) 
+	  </parse>
+	  <arg n="0">
+	  国有 纺织 工业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  连续 五 年 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+			    (CP (IP (NP-SBJ (-NONE- *T*-1))
+				    (VP (VA 新)))
+				(DEC 的)))
+			(IP-APP (NP-SBJ (NN 粮食))
+				(VP (VV 亏损)))
+			(NP (NN 挂帐)))
+	      (VP (SB 被)
+		  (VP (VV 遏止)
+		      (NP-OBJ (-NONE- *-2))))) 
+	  </parse>
+	  <arg n="1">
+	  粮食 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

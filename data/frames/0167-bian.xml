@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 贬 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="currency"/>
+      <role argnum="2" argrole="range"/>
+      <role argnum="3" argrole="starting point"/>
+      <role argnum="4" argrole="end point"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 九四年))
+	      (NP-SBJ (NN 人民币))
+	      (VP (ADVP (AD 骤))
+		  (VP (VV 贬)
+		      (QP-EXT (CD 百分之三十三))))) 
+	  </parse>
+	  <arg n="1">
+	  人民币 	  	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  九四年 	  	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  骤 	  	  
+	  </arg>
+	  <arg n="2">
+	  百分之三十三 	  	  
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="patient"/>
+      <role argnum="2" argrole="place/position arg0 demotes arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-ADV (P 至於)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-PN-SBJ (NR 欧阳修))
+				      (VP (VP (SB 被)
+					      (VP (VV 贬)
+						  (PP (P 在)
+						      (NP-PN (NR 安徽省)))))
+					  (VP (MSP 而)
+					      (VP (VV 筑)
+						  (NP-OBJ (-NONE- *T*-1))))))
+				  (DEC 的)))
+			  (NP (PU 「)
+			      (NN 醉翁)
+			      (NN 亭)
+			      (PU 」))))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP (NN 醉翁))
+			   (DEG 之))
+		      (NP (NN 意)))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VV 在)
+			  (NP-OBJ (NN 酒))))
+		  (PU ，)
+		  (VP (VV 在於)
+		      (LCP-OBJ (NP (NN 山)
+				   (NN 水))
+			       (LC 之间))))) 
+	  </parse>
+	  <arg n="1">
+	  欧阳修 
+	  </arg>
+	  <arg n="2">
+	  在 安徽省 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

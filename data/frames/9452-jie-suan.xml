@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 结算 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 calculates the balance of"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 因应)
+				  (NP-OBJ (NT Ｙ２Ｋ))))
+		      (PU ，)
+		      (NP-SBJ (DNP (NP (NN 资讯)
+				       (NN 系统))
+				   (DEG 的))
+			      (NP (NN 修改)
+				  (PU 、)
+				  (NN 升级)))
+		      (PU ，)
+		      (VP (ADVP (AD 再))
+			  (VP (VV 加上)
+			      (NP-OBJ (DNP (NP (NN 工厂)
+					       (NN 设备))
+					   (DEG 的))
+				      (NP (NN 汰换))))))
+	      (PU ，)
+	      (VP (VP (VRD (VV 结算)
+			   (VV 下来)))
+		  (VP (VV 可能)
+		      (VP (VC 是)
+			  (NP-PRD (QP (CD 一)
+				      (CLP (ADJP (JJ 大))
+					   (CLP (M 笔))))
+				  (NP (NN 钱))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 因应 Ｙ２Ｋ ， 资讯 系统 的 修改 、 升级 ， 再 加上 工厂 设备 的 汰换 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

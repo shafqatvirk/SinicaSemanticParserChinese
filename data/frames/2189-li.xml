@@ -1,0 +1,182 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 离 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity leaving"/>
+      <role argnum="1" argrole="place leave from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TPC (CP (WHNP-18 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-18))
+				  (VP (VV 参加)
+				      (NP-OBJ (NN 抢救))))
+			      (DEC 的)))
+		      (QP (ADVP (AD 近))
+			  (QP (CD 三十)
+			      (CLP (M 名))))
+		      (ADJP (JJ 医护))
+		      (NP (NN 人员)))
+	      (NP-SBJ (NN 眼睛))
+	      (VP (ADVP (AD 几乎))
+		  (VP (VC 是)
+		      (VP (NP-TMP (NN 时刻))
+			  (ADVP (AD 不))
+			  (VP (VV 离)
+			      (NP-OBJ (DNP (NP (NN 保温箱))
+					   (DEG 的))
+				      (NP (NN 监护仪)))))))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *OP* *T*-18 参加 抢救 的 近 三十 名 医护 人员 	  
+	  </arg>
+	  <arg n="0" f="pse">
+	  眼睛 	  
+	  </arg>
+	  <arg n="1">
+	  保温箱 的 监护仪 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  时刻 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  几乎 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity distance measured from"/>
+      <role argnum="2" argrole="distance"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 富士山))
+	      (VP (VV 离)
+		  (NP-PN-OBJ (NR 东京))
+		  (QP-EXT (ADVP (AD 只有))
+			  (QP (CD ８０)
+			      (CLP (M 公里)))))) 
+	  </parse>
+	  <arg n="0">
+	  富士山 	  
+	  </arg>
+	  <arg n="1">
+	  东京 	  
+	  </arg>
+	  <arg n="2">
+	  只有 ８０ 公里 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 离)
+			      (NP-OBJ (NN 欧元)
+				      (NN 启动))))
+		  (VP (ADVP (AD 仅))
+		      (VP (VV 剩)
+			  (QP-OBJ (CD 九)
+				  (CLP (M 天)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  欧元 启动 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity won't work without"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-SBJ (DNP (NP (NN 残疾人)
+			       (NN 体育)
+			       (NN 事业)
+			       (NN 发展))
+			   (DEG 的))
+		      (DP (DT 每)
+			  (QP (CD 一)
+			      (CLP (M 步)))))
+	      (VP (ADVP (AD 都))
+		  (VP (VPT (VV 离)
+			   (AD 不)
+			   (VV 开))
+		      (NP-OBJ (DNP (NP (NN 党)
+				       (CC 和)
+				       (NN 政府))
+				   (DEG 的))
+			      (NP (NN 关心)
+				  (NN 支持)))))) 
+	  </parse>
+	  <arg n="0">
+	  残疾人 体育 事业 发展 的 每 一 步 	  
+	  </arg>
+	  <arg n="1">
+	  党 和 政府 的 关心 支持 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity could work without"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  *pro*	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一 年 之後	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

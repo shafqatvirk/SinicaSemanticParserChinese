@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 加倍 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 doubles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 因此))
+	    (PU ，)
+	    (NP-SBJ (NP (NT 五四))
+		    (DNP (PP (P 对)
+			     (NP (PN 它)))
+			 (DEG 的))
+		    (NP (NN 反叛)))
+	    (VP (ADVP (AD 就))
+		(VP (VV 得)
+		    (VP (VV 使出)
+			(NP-OBJ (CP (WHNP-4 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-4))
+					    (VP (VV 加倍)))
+					(DEC 的)))
+				(NP (NN 力气))))))) 
+	</parse>
+	<arg n="1">
+	*T*-4 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

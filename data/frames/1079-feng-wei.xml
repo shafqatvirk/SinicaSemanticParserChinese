@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 封为 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="honor, status, rank, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 一)
+			  (CLP (M 名)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (NP-TMP (NT 最近))
+				      (PP-LOC (P 在)
+					      (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+							   (CP (IP (NP-SBJ (-NONE- *T*-1))
+								   (VP (NP-PN-LOC (NR 以色列))
+								       (VP (VV 举行))))
+							       (DEC 的)))
+						       (NP (NN 示威)
+							   (NN 抗议)
+							   (NN 活动)))
+						   (LC 中)))
+				      (VP (VV 死亡))))
+			      (DEC 的)))
+		      (NP-PN (NR 巴勒斯坦))
+		      (NP (NN 青年)))
+	      (VP (LB 被)
+		  (IP-OBJ (NP-PN-SBJ (NR 萨达姆))
+			  (VP (VV 封为)
+			      (NP-OBJ (NN 烈士)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  萨达姆 	  
+	  </arg>
+	  <arg n="1">
+	  一 名 *OP* *T*-2 最近 在 *OP* *T*-1 以色列 举行 的 示威 抗议 活动 中 死亡 的 巴勒斯坦 青年 
+	  </arg>
+	  <arg n="2">
+	  烈士 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

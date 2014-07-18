@@ -1,0 +1,97 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 疼 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 looks after"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 现在))
+	    (NP-SBJ (NN 女人))
+	    (VP (VV 想)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 疼)
+			    (NP-OBJ (NN 男人)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	男人 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-OBJ (NP-SBJ (NP-APP (DNP (NP-PN (NR 千千))
+				     (DEG 的))
+				(ADJP (JJ 法籍))
+				(NP (NN 褓母)))
+			(NP-PN (NR 马汀娜)))
+		(VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (PP (P 和)
+					(NP (NN 老婆)))
+				    (VP (VA 一样))))
+			(PU ，)
+			(VP (BA 把)
+			    (IP-OBJ (NP-SBJ (PN 她))
+				    (VP (VP (VV 当)
+					    (NP-OBJ (NN 心肝宝贝)))
+					(VP (MSP 来)
+					    (VP (VV 疼)))))))
+		    (PU ，)
+		    (CC 而且)
+		    (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 带)
+				    (NP-OBJ (NN 小孩))))
+			(ADVP (AD 还))
+			(ADVP (AD 真))
+			(VP (VV 有一套))))) 
+	</parse>
+	<arg n="0">
+	千千 的 法籍 褓母 马汀娜 
+	</arg>
+	<arg n="1">
+	她 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 和 老婆 一样 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TMP (NT 过去))
+	    (NP-SBJ (NN 女人))
+	    (VP (VV 要)
+		(NP-OBJ (NN 人))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 疼))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

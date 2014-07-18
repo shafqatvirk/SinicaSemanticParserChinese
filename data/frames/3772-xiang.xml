@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 享 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing enjoyed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 迈利萨尼迪斯))
+	      (VP (VP (VV 获得)
+		      (QP-OBJ (CD ９·６８７)
+			      (CLP (M 分))))
+		  (PU ，)
+		  (VP (PP (P 与)
+			  (NP (DNP (NP-PN (NR 英国))
+				   (DEG 的))
+			      (NP-PN (NR 尼·托马斯))))
+		      (ADVP (AD 同))
+		      (VP (VV 享)
+			  (NP-OBJ (NN 银牌)))))) 
+	  </parse>
+	  <arg n="0">
+	  迈利萨尼迪斯 
+	  </arg>
+	  <arg n="1">
+	  银牌 
+	  </arg>
+	  <arg n="m" f="adv">
+	  同 
+	  </arg>
+	  <arg n="m" f="adv">
+	  与 英国 的 尼·托马斯 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 水域))
+	      (VP (ADVP (AD 共))
+		  (VP (VV 享)))) 
+	  </parse>
+	  <arg n="1">
+	  水域 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

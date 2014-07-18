@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 傻 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (NP-APP (PN 我))
+		      (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 当)
+					  (NP-OBJ (NN 太太) )))
+				  (DEC 的)))))
+	      (VP (ADVP-WH (AD 怎麽))
+		  (ADVP (AD 这麽))
+		  (VP (VA 傻)))) 
+	</parse>
+	<arg n="0">
+	我 这 个 *OP* *T*-1 当 太太 的 
+	</arg>
+	<arg n="m" f="adv">
+	这麽 
+	</arg>
+	<arg n="m" f="adv">
+	怎麽 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 看)
+		(DER 得)
+		(IP-EXT (NP-SBJ (NN 老外))
+			(VP (VV 傻)
+			    (AS 了)
+			    (NP-OBJ (NN 眼)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	老外 
+	</arg>
+	<arg n="0" f="pse">
+	眼 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

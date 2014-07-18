@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 援建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 helps"/>
+      <role argnum="2" argrole="thing arg0 helps arg1 build"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-PN-SBJ (NR 中国))
+				      (VP (VV 援建)
+					  (NP-PN-OBJ (NR 多哥))))
+				  (DEC 的)))
+			  (NP (NN 体育场)))
+		  (VP (VV 完成)
+		      (NP-OBJ (NN 主体)
+			      (NN 工程)
+			      (NN 基础)
+			      (NN 施工)))) 
+	  </parse>
+	  <arg n="0">
+	  中国 
+	  </arg>
+	  <arg n="1">
+	  多哥 
+	  </arg>
+	  <arg n="2">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

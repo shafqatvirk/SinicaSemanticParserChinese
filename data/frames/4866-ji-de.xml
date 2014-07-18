@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 记得 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 remembers"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我))
+	    (VP (ADVP (AD 一直))
+		(VP (VV 记得)
+		    (NP-OBJ (NP-PN (NR 于右任)
+				   (NN 先生))
+			    (NP (NN 早年))
+			    (DNP (PP (P 对)
+				     (NP (ADJP (JJ 年轻))
+					 (NP (NN 记者))))
+				 (DEG 的))
+			    (NP (NN 鼓励)))))) 
+	</parse>
+	<arg n="0">
+	我 
+	</arg>
+	<arg n="1">
+	于右任 先生 早年 对 年轻 记者 的 鼓励 
+	</arg>
+	<arg n="m" f="adv">
+	一直 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 她))
+	    (VP (ADVP (AD 只))
+		(VP (VV 记得)
+		    (IP-OBJ (LCP-TMP (NP (PU 「)
+					 (NN 太平)
+					 (NN 年)
+					 (PU 」)
+					 (PRN (PU （)
+					      (IP (NP-SBJ (-NONE- *pro*))
+						  (VP (VV 指)
+						      (IP-OBJ (NP-SBJ (NN 战争))
+							      (VP (VV 结束)))))
+					      (PU ）)))
+				     (LC 後))
+			    (PU ，)
+			    (NP-SBJ (-NONE- *pro*))
+			    (VP (ADVP (AD 就))
+				(VP (VV 换)
+				    (NP-OBJ (PU 「)
+					    (PN 他们)
+					    (PU 」))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 管)
+					    (AS 了))))))))) 
+	</parse>
+	<arg n="0">
+	她 
+	</arg>
+	<arg n="1">
+	只 
+	</arg>
+	<arg n="m" f="adv">
+	「 太平 年 」 （ *pro* 指 战争 结束 ） 後 ， *pro* 就 换 「 他们 」 *PRO* 管 了 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,87 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 遇 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 runs into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 幸免于)
+	      (NP-OBJ (DP (DT 这)
+			  (CLP (M 场)))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (-NONE- *pro*))
+				  (VP (QP-ADV (CD 百)
+					      (CLP (M 年)))
+				      (ADVP (AD 不))
+				      (VP (VV 遇))))
+			      (DEC 的)))
+		      (NP (NN 旱灾)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  百 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TMP (NP (NT 过去))
+		      (QP (CD 一)
+			  (CLP (M 年))))
+	      (PU ，)
+	      (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 不断))
+					  (VP (VV 加深))))
+				  (DEC 的)))
+			  (NP-PN (NR 亚洲))
+			  (NP (NN 金融)
+			      (NN 危机)))
+		      (CC 和)
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-2))
+				      (VP (QP-TMP (CD 百)
+						  (CLP (M 年)))
+					  (ADVP (AD 不))
+					  (VP (VV 遇))))
+				  (DEC 的)))
+			  (ADJP (JJ 特大))
+			  (NP (NN 洪水))))
+	      (VP (VV 接踵而至))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  百 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

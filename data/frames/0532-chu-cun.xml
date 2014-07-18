@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 储存 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="storage"/>
+      <role argnum="2" argrole="thing stored"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-SBJ (NP (NN 芯片))
+		       (LC 中))
+	      (VP (VV 可)
+		  (VP (VV 储存)
+		      (NP-OBJ (NP-APP (NP (DNP (NP (NN 行李))
+					       (DEG 的))
+					  (NP (NN 目的地)))
+				      (PU 、)
+				      (NP (NN 飞行)
+					  (NN 航线))
+				      (ETC 等))
+			      (ADJP (JJ 详细))
+			      (NP (NN 信息)))))) 
+	  </parse>
+	  <arg n="1">
+	  芯片 中 
+	  </arg>
+	  <arg n="2">
+	  行李 的 目的地 、 飞行 航线 等 详细 信息 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

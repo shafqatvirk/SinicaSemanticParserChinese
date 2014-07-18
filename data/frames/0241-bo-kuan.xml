@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拨款 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="allocator"/>
+    <role argnum="1" argrole="quantity"/>
+    <role argnum="2" argrole="fund receiver"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (PP-TMP (P 自)
+              (LCP (NP (NT 今年)
+                       (NT ２月))
+                   (LC 以来)))
+      (PU ，)
+      (NP-SBJ (DP (DT 该))
+              (NP (NN 基金)))
+      (VP (VV 开始)
+          (VP (PP-DIR (P 向)
+                      (NP (QP (CD 一些))
+                          (ADJP (ADVP (AD 最))
+                                (ADVP (AD 不))
+                                (ADJP (JJ 发达)))
+                          (NP (NN 国家))))
+              (VP (VV 拨款))))))
+	</parse>
+	<arg n="M" f="TMP"> 自 今年 ２月 以来 </arg>
+	<arg n="0"> 该 基金 </arg>
+	<arg n="2"> 向 一些 最 不 发达 国家 </arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-ADV (NN 其中))
+      (NP-SBJ (-NONE- *pro*))
+      (VP (QP-ADV (OD 第一)
+                  (CLP (M 年)))
+          (VP (VV 拨款)
+              (QP-OBJ (CD ７．５亿)
+                      (CLP (M 美元)))))))
+	</parse>
+	<arg n="0"> *pro* </arg>
+	<arg n="M" f="TMP"> 第一 年 </arg>
+	<V/>
+	<arg n="1"> ７．５亿 美元 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撤完 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="withdrawal inducer"/>
+      <role argnum="1" argrole="army withdrawn"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-PN-SBJ (NR 苏联))
+		  (VP (VV 准备)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-TMP (P 从)
+					  (LCP (NP (NT 今年)
+						   (NT 五月))
+					       (LC 开始)))
+				  (VP (VV 撤出)
+				      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (VV 驻)
+							      (NP-PN-OBJ (NR 波兰))))
+						      (DEC 的)))
+					      (NP-PN (NR 苏军))))))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (LCP-TMP (LCP (NP (NT 一九九四年))
+				    (LC 中))
+			       (LC 以前))
+		      (ADVP (AD 全部))
+		      (VP (VV 撤完))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="1">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九九四年 中 以前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全部 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

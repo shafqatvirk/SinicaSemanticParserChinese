@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 送走 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 sends away"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-ADV (NP-SBJ (-NONE- *PRO*))
+		(VP (ADVP (AD 刚))
+		    (VP (VV 送走)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (NN 举世))
+					    (VP (VV 期盼)
+						(NP-OBJ (-NONE- *T*-1))))
+					(DEC 的)))
+				(NP (ADJP (JJ 公元))
+				    (NP (NT 二○○○年)))
+				(NP (NT 元旦)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* 举世 期盼 *T*-1 的 公元 二○○○年 元旦 
+	</arg>
+	<arg n="m" f="adv">
+	刚 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

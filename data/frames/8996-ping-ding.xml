@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 平定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 suppresses"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-PN-SBJ (NR 武帝))
+		      (VP (VV 平定)
+			  (NP-OBJ (NN 内乱)
+				  (PU 、)
+				  (NN 外患))))
+	      (PU ，)
+	      (NP-SBJ (NN 京畿)
+		      (NN 豪富))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 不))
+		  (VP (VV 肯)
+		      (VP (VV 相助))))) 
+	  </parse>
+	  <arg n="0">
+	  武帝 
+	  </arg>
+	  <arg n="1">
+	  内乱 、 外患 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

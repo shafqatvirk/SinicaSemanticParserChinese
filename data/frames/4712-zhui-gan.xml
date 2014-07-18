@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 追赶 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 chases"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 日前))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 哈尔滨)
+			     (NR 市宾县)
+			     (NR 摆渡乡))
+		      (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (ADVP (AD 已))
+				      (VP (VV 习惯于)
+					  (NP-OBJ (PU “)
+						  (NN 冬闲)
+						  (PU ”)))))
+			      (DEC 的)))
+		      (QP (CD 五十万)
+			  (CLP (M 只)))
+		      (NP (NN 蜜蜂)))
+	      (VP (VP (VV 告别)
+		      (AS 了)
+		      (NP-OBJ (NN 北方)))
+		  (PU ，)
+		  (VP (VV 乘)
+		      (NP-OBJ (NP-PN (NR 麦道))
+			      (NP (NN 飞机))))
+		  (VP (NP-ADV (NN 南))
+		      (VP (VV 下)
+			  (NP-PN-OBJ (NR 福州市))))
+		  (VP (PU “)
+		      (VV 追赶)
+		      (NP-OBJ (NN 花季))
+		      (PU ”)))) 
+	  </parse>
+	  <arg n="0">
+	  哈尔滨 市宾县 摆渡乡 *OP* *T*-1 已 习惯于 “ 冬闲 ” 的 五十万 只 蜜蜂 
+	  </arg>
+	  <arg n="1">
+	  花季 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  日前 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 catches up with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-Q (NP-SBJ (-NONE- *pro*))
+		(VP (ADVP-WH (AD 怎样))
+		    (ADVP (AD 才))
+		    (VP (VV 能)
+			(VP (VP (VV 变)
+				(NP-OBJ (NN 冬闲))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 为)
+					(NP-OBJ (NN 冬忙)))))
+			    (PU ，)
+			    (VP (VV 让)
+				(NP-OBJ (NN 蜜蜂))
+				(IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 能)
+					(VP (VRD (VV 追赶)
+						 (VV 上))
+					    (NP-OBJ (NN 花季)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  花季 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

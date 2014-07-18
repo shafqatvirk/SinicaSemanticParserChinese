@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 趋于 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="state tend towards"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 投资))
+	      (VP (VV 趋于)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (PP-DIR (P 向)
+					  (NP (NN 开发区)
+					      (PU 、)
+					      (NN 投资区)))
+				  (VP (VV 集中)))
+			      (PU ，)
+			      (VP (PP-DIR (P 向)
+					  (NP (NP (ADJP (JJ 大))
+						  (NP (NN 项目)))
+					      (PU 、)
+					      (NP (NP (ADJP (JJ 高))
+						      (NP (NN 科技)))
+						  (NP (NN 项目)))))
+				  (VP (VV 倾斜))))))) 
+	  </parse>
+	  <arg n="0">
+	  投资 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 向 开发区 、 投资区 集中 ， 向 大 项目 、 高 科技 项目 倾斜 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人民币)
+		      (NN 汇率))
+	      (VP (VV 趋于)
+		  (VP (VA 稳定)))) 
+	  </parse>
+	  <arg n="0">
+	  人民币 汇率 
+	  </arg>
+	  <arg n="1">
+	  稳定 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

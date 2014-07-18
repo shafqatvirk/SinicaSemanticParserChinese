@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 加紧 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="accelerator"/>
+      <role argnum="1" argrole="thing accelerated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 三峡)
+			 (NN 移民)
+			 (NN 开发局))
+	      (VP (NP-TMP (NT 目前))
+		  (ADVP (AD 正))
+		  (VP (VV 加紧)
+		      (NP-OBJ (DNP (PP (P 对)
+				       (NP (NP (NP-PN (NR 三峡))
+					       (NP (NN 库区)))
+					   (NP (NN 开发性)
+					       (NN 移民)
+					       (NN 方针))))
+				   (DEG 的))
+			      (NP (NN 宣传)))))) 
+	  </parse>
+	  <arg n="0">
+	  三峡 移民 开发局 
+	  </arg>
+	  <arg n="1">
+	  对 三峡 库区 开发性 移民 方针 的 宣传 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  目前 
+	  </arg>
+	  <arg n="m" f="adv">
+	  正 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

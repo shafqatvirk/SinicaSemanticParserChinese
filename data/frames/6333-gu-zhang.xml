@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 鼓掌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 applauds for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 陈芳妹))
+	    (VP (ADVP (AD 不禁))
+		(PP-BNF (P 为)
+			(NP (DNP (NP-PN (NR 三星堆))
+				 (DEG 的))
+			    (NP (NN 青铜)
+				(NN 文明))))
+		(VP (VV 鼓掌)))) 
+	</parse>
+	<arg n="0">
+	陈芳妹 
+	</arg>
+	<arg n="1">
+	为 三星堆 的 青铜 文明 
+	</arg>
+	<arg n="m" f="adv">
+	不禁 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (PN 有的))
+		    (NP (NN 观众)))
+	    (VP (VP (ADVP (AD 甚至))
+		    (PP-LOC (P 在)
+			    (NP (NN 现场)))
+		    (VP (VV 感动)
+			(DER 得)
+			(VP-EXT (VV 湿红)
+				(AS 了)
+				(NP-OBJ (NN 眼)))))
+		(PU ，)
+		(VP (VP-FOC (VSB (VV 起立)
+				 (VV 鼓掌)))
+		    (VP (ADVP (AD 长))
+			(VP (VV 达)
+			    (NP-OBJ (DNP (QP (CD 三)
+					     (CLP (M 分钟)))
+					 (DEG 之))
+				    (NP (NN 久)))))))) 
+	</parse>
+	<arg n="0">
+	有的 观众 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

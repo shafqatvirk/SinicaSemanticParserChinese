@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 坦承 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 admits"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 欧晋德))
+	    (VP (ADVP (AD 也))
+		(VP (VV 坦承)
+		    (PU ，)
+		    (IP-OBJ (NP-TMP (NT 目前))
+			    (NP-SBJ (CP (WHPP-1 (-NONE- *OP*))
+					(CP (IP (NP-PN-SBJ (NR 台北)
+							   (NN 市府))
+						(VP (PP-MNR (-NONE- *T*-1))
+						    (PP (P 和)
+							(NP (NP (DP (DT 各))
+								(NP (NN 县)
+								    (NN 市)))
+							    (NP (NN 高层))))
+						    (VP (VV 联系))))
+					    (DEC 的)))
+				    (NP (NN 管道)))
+			    (VP (ADVP (AD 几乎))
+				(ADVP (AD 已))
+				(ADVP (AD 不))
+				(VP (VV 存在))))))) 
+	</parse>
+	<arg n="0">
+	欧晋德 
+	</arg>
+	<arg n="1">
+	目前 *OP* 台北 市府 *T*-1 和 各 县 市 高层 联系 的 管道 几乎 已 不 存在 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

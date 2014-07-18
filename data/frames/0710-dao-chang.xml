@@ -1,0 +1,34 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 到场 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (NN 审判))
+		      (LC 时))
+	      (PU ，)
+	      (NP-SBJ (NN 法官))
+	      (VP (VV 必须)
+		  (VP (ADVP (AD 准时))
+		      (VP (VV 到场))))) 
+	  </parse>
+	  <arg n="0">
+	  法官 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  审判 时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  准时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

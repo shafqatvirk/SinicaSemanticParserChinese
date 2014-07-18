@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 冻死 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="person arg0 causes to freeze to death"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (NN 天气))
+			   (VP (VV 转冷)))
+		       (LC 後))
+	      (PU ，)
+	      (NP-SBJ (NN 灾区))
+	      (VP (ADVP (AD 已))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (NN 人))
+			      (VP (SB 被)
+				  (VP (VV 冻死))))))) 
+	  </parse>
+	  <arg n="1">
+	  人 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

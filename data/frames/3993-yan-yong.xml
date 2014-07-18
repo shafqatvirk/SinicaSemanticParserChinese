@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 沿用 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 continues to use"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (PP-DIR (P 对)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (LCP-TMP (NP (NT 一九九六年)
+							   (NT 三月)
+							   (NT 三十一日))
+						       (LC 前))
+					      (VP (VV 批准)
+						  (NP-OBJ (-NONE- *T*-2)))))
+				      (DEC 的)))
+			      (CP (WHNP-3 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NN 外商)
+						  (NN 投资)
+						  (NN 企业))
+					  (VP (LCP-LOC (NP (NN 投资)
+							   (NN 总额))
+						       (LC 内))
+					      (VP (VV 进口)
+						  (NP-OBJ (-NONE- *T*-3)))))
+				      (DEC 的)))
+			      (NP (NN 设备)
+				  (CC 和)
+				  (NN 原材料))))
+		  (PU ，)
+		  (ADVP (AD 仍))
+		  (VP (VV 沿用)
+		      (NP-OBJ (DNP (LCP (NP (NT 一九九六年)
+					    (NT 三月)
+					    (NT 三十一日))
+					(LC 前))
+				   (DEG 的))
+			      (NP (NN 进口)
+				  (NN 税收)
+				  (NN 政策)))))) 
+	  </parse>
+	  <arg n="0">
+	  中国 	  
+	  </arg>
+	  <arg n="1">
+	  一九九六年 三月 三十一日 前 的 进口 税收 政策 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  仍 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 *OP* *pro* 一九九六年 三月 三十一日 前 批准 *T*-2 的 *OP* 外商 投资 企业 投资 总额 内 进口 *T*-3 的 设备 和 原材料 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

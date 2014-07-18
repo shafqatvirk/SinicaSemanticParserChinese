@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 填 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing filled in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 持证人))
+	      (NP (VP (VE 无)
+		      (NP-OBJ (NN 需)))
+		  (VP (ADVP (AD 再))
+		      (VP (VV 填)
+			  (NP-OBJ (NN 出入境)
+				  (NN 登记卡)))))) 
+	  </parse>
+	  <arg n="0">
+	  持证人 
+	  </arg>
+	  <arg n="1">
+	  出入境 登记卡 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

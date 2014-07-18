@@ -1,0 +1,61 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兼负 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 carries at the same time"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (LCP-TMP (NP-PN (NR 清))
+					       (LC 末))
+				      (ADVP (AD 曾))
+				      (VP (VC 是)
+					  (NP-PRD (NP-PN (NR 台湾))
+						  (ADJP (QP (OD 第一))
+							(ADJP (JJ 大)))
+						  (NP (NN 港))))))
+			      (DEC 的)))
+		      (NP-PN (NR 淡水)))
+	      (PU ，)
+	      (VP (ADVP (AD 还))
+		  (VP (VP (VV 兼负)
+			  (NP-OBJ (DNP (NP (PU 「)
+					   (NN 总关)
+					   (PU 」))
+				       (DEG 的))
+				  (NP (NN 任务))))
+		      (PU ，)
+		      (VP (VV 管辖)
+			  (AS 著)
+			  (NP-OBJ (NP-PN-APP (NR 基隆)
+					     (PU 、)
+					     (NR 台南)
+					     (PU 、)
+					     (NR 高雄)
+					     (ETC 等))
+				  (QP (CD 三)
+				      (CLP (M 个)))
+				  (NP (NN 外口))))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 清 末 曾 是 台湾 第一 大 港 的 淡水 
+	  </arg>
+	  <arg n="1">
+	  「 总关 」 的 任务 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

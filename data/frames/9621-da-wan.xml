@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 打弯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 causes to bend"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (NN 球杆))
+		      (VP (ADVP (CS 虽))
+			  (ADVP (AD 稍稍))
+			  (VP (VV 打弯))))
+	      (PU ，)
+	      (ADVP (AD 但))
+	      (NP-PN-SBJ (NR 伍兹))
+	      (VP (ADVP (AD 也))
+		  (VP (VV 平)
+		      (AS 了)
+		      (NP-OBJ (NN 标准杆))))) 
+	  </parse>
+	  <arg n="1">
+	  球杆 
+	  </arg>
+	  <arg n="m" f="adv">
+	  稍稍 
+	  </arg>
+	  <arg n="m" f="adv">
+	  虽 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

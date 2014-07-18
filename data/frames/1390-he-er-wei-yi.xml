@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 合二为一 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="causer, agent"/>
+      <role argnum="1" argrole="merged entities"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年)
+		      (NT ５月))
+	      (NP-SBJ (NP-APP (QP (ADJP (JJ 另外))
+				  (QP (CD 两)
+				      (CLP (M 家))))
+			      (ADJP (JJ 老牌))
+			      (NP (NN 企业)))
+		      (NP (NP-PN (NR 诺思罗普)
+				 (NN 公司))
+			  (CC 和)
+			  (NP-PN (NR 格鲁曼)
+				 (NN 公司))))
+	      (VP (VV 合二为一))) 
+	  </parse>
+	  <arg n="1">
+	  另外 两 家 老牌 企业 诺思罗普 公司 和 格鲁曼 公司 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 ５月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

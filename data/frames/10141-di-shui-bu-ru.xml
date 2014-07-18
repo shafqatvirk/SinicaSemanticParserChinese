@@ -1,0 +1,48 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 滴水不入 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP-WH (AD 何妨))
+		  (VP (VV 罩)
+		      (NP-OBJ (QP (CD 一)
+				  (CLP (M 件)))
+			      (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-TPC (-NONE- *T*-1))
+					  (IP (IP (NP-SBJ (NN 外层))
+						  (VP (VV 滴水不入)))
+					      (PU 、)
+					      (IP (NP-SBJ (NN 内层))
+						  (VP (ADVP (AD 仍))
+						      (VP (VV 可)
+							  (VP (VV 让)
+							      (NP-OBJ (NN 肌肤))
+							      (IP (NP-SBJ (-NONE- *PRO*))
+								  (VP (VA 乾爽)))))))))
+				      (DEC 的)))
+			      (NP (PU 「)
+				  (ADJP (JJ 微多孔))
+				  (ADJP (JJ 透湿))
+				  (ADJP (JJ 防水))
+				  (NP (NN 衣))
+				  (PU 」)))))) 
+	</parse>
+	<arg n="0" f="psr">
+	*T*-1 
+	</arg>
+	<arg n="0" f="pse">
+	外层 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

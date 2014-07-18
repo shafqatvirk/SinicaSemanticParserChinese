@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 飞奔 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity running"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 猫)
+		    (CC 和)
+		    (NN 老鼠))
+	    (VP (ADVP (AD 就))
+		(PP-LOC (P 在)
+			(LCP (NP (NN 圈圈))
+			     (LC 里外)))
+		(VP (VCD (VV 飞奔)
+			 (VV 追逐))))) 
+	</parse>
+	<arg n="0">
+	猫 和 老鼠 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="loc">
+	在 圈圈 里外 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 揭发 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="revealer"/>
+      <role argnum="1" argrole="thing revealed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (LCP-TMP (IP (NP-SBJ (NN 案子))
+		       (VP (VP (PP-MNR (P 经)
+				       (NP (NN 人)))
+			       (VP (VV 密告)))
+			   (VP (MSP 而)
+			       (VP (VV 揭发)))))
+		   (LC 时)) 
+	  </parse>
+	  <arg n="0">
+	  经 人 
+	  </arg>
+	  <arg n="1">
+	  案子 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

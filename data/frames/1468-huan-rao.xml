@@ -1,0 +1,58 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 环绕 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="circling around, focusing on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 剧本))
+	      (VP (VV 环绕)
+		  (NP-OBJ (NP (CP-APP (IP (NP-SBJ (QP (CD 一)
+						      (CLP (M 名)))
+						  (NP (NN 中四)
+						      (NN 学生)))
+					  (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+							   (VP (QP-ADV (OD 第一)
+								       (CLP (M 日)))
+							       (VP (VP (VV 前往)
+								       (NP-OBJ (QP (CD 一)
+										   (CLP (M 间)))
+									       (NP (NN 学校))))
+								   (VP (VSB (VV 插班)
+									    (VV 报到))))))
+						       (LC 时))
+					      (VP (VV 接触)
+						  (NP-OBJ (NN 教师)
+							  (CC 和)
+							  (NN 校长)))))
+				      (DEC 的))
+			      (NP (NN 经历)))
+			  (CC 及)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (PP-DIR (P 从)
+						      (NP (NN 中)))
+					      (VP (MSP 所)
+						  (VP (VV 得到)
+						      (NP-OBJ (-NONE- *T*-2))))))
+				      (DEC 的)))
+			      (NP (NN 启发)))))) 
+	  </parse>
+	  <arg n="0">
+	  剧本 	  
+	  </arg>
+	  <arg n="1">
+	  一 名 中四 学生 *PRO* 第一 日 前往 一 间 学校 插班 报到 时 接触 教师 和 校长 的 经历 及 *OP* *pro* 从 中 所 得到 *T*-2 的 启发 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

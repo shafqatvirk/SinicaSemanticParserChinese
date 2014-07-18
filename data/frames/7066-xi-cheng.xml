@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 昔称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="name arg0 was called in the past"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (NN 外销房)
+		(PRN (PU （)
+		     (IP (IP (NP-SBJ (-NONE- *pro*))
+			     (VP (VV 昔称)
+				 (NP-OBJ (NN 侨汇房))))
+			 (PU ，)
+			 (IP (NP-SBJ (NP (NN 外资)
+					 (NN 企业))
+				     (CC 或)
+				     (NP (CP (WHNP-1 (-NONE- *OP*))
+					     (IP (NP-SBJ (-NONE- *T*-1))
+						 (VP (VV 持有)
+						     (NP-OBJ (NN 外国)
+							     (NN 护照)))))
+					 (NP (NN 者))))
+			     (VP (ADVP (AD 方))
+				 (VP (VV 可)
+				     (VP (VV 购买))))))
+		     (PU ）))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	侨汇房 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

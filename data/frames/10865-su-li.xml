@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 塑立 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 sculptures and erects"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-PN-SBJ (NR 汉代))
+	    (VP (PP-MNR (P 藉)
+			(NP (PN 此)))
+		(PP-BNF (P 为)
+			(NP (PN 自己)))
+		(VP (VV 塑立)
+		    (AS 了)
+		    (NP-OBJ (DNP (NP (PU 「)
+				     (NN 宏观)
+				     (PU 、)
+				     (NN 综合)
+				     (PU 、)
+				     (NN 整理)
+				     (PU 」))
+				 (DEG 的))
+			    (NP (NN 百科全书)
+				(NN 时代)))))) 
+	</parse>
+	<arg n="0">
+	汉代 
+	</arg>
+	<arg n="1">
+	「 宏观 、 综合 、 整理 」 的 百科全书 时代 
+	</arg>
+	<arg n="m" f="bnf">
+	为 自己 
+	</arg>
+	<arg n="m" f="mnr">
+	藉 此 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

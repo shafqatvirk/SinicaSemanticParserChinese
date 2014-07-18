@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 烧毁 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 burns (down)"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-OBJ (QP (QP (CD 三)
+			(CLP (-NONE- *RNR*-1)))
+		    (PU 、)
+		    (QP (CD 四)
+			(CLP-1 (M 张))))
+		(CP (WHNP-2 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-2))
+			    (VP (VP (VV 压)
+				    (PP (P 在)
+					(LCP (NP (NN 书架))
+					     (LC 下))))
+				(VP (ADVP (AD 未))
+				    (VP (SB 被)
+					(VP (VV 烧毁))))))
+			(DEC 的)))
+		(NP (NN 父亲)
+		    (NN 旧照))) 
+	</parse>
+	<arg n="1">
+	*T*-2 
+	</arg>
+	<arg n="m" f="adv">
+	未 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

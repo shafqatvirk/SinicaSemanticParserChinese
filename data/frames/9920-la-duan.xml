@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拉断 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 breaks due to arg0's pulling it"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 殿槛))
+	      (VP (ADVP (AD 遂))
+		  (VP (LB 遭)
+		      (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			      (IP (NP-SBJ (PN 他))
+				  (VP (VV 拉断)
+				      (NP-OBJ (-NONE- *T*-2)))))))) 
+	  </parse>
+	  <arg n="0">
+	  他 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

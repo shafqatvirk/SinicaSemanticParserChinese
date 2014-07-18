@@ -1,0 +1,85 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 断 </id>
+    <frameset id="f1" edef="continuous">
+      <role argnum="0" argrole="events described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 赛事))
+	      (VP (ADVP (AD 不))
+		  (VP (VA 断)))) 
+	  </parse>
+	  <arg n="0">
+	  赛事 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="interrupt"/>
+      <role argnum="1" argrole="thing interrupted"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 国家)
+			 (NN 环境)
+			 (NN 保护)
+			 (NN 总局))
+	      (VP (VV 要求)
+		  (NP-OBJ (NP (NP-PN (NR 太湖))
+			      (NP (NN 沿岸)))
+			  (DP (DT 各)
+			      (CLP (M 级)))
+			  (NP (NN 环境)
+			      (NN 监理)
+			      (NN 部门)))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VP (VV 加大)
+			      (NP-OBJ (NN 执法)
+				      (NN 力度)))
+			  (PU ，)
+			  (VP (VP (ADVP (AD 积极))
+				  (VP (VV 配合)
+				      (NP-OBJ (ADJP (JJ 有关))
+					      (NP (NN 部门)))))
+			      (VP (PP-DIR (P 对)
+					  (NP (NP (NN 关闭)
+						  (PU 、)
+						  (NN 停产))
+					      (NP (NN 企业))))
+				  (VP (VP (VV 断)
+					  (NP-OBJ (NN 水)))
+				      (VP (VV 断)
+					  (NP-OBJ (NN 电)))
+				      (PU ，)
+				      (VP (VV 吊销)
+					  (NP-OBJ (NN 工商)
+						  (NN 执照))))))))))
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  水 
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 关闭 、 停产 企业 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

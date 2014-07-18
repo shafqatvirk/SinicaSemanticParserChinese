@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 输送 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity supplied"/>
+      <role argnum="2" argrole="entity supplied to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (DP-ADV (DT 每)
+			  (CLP (M 年)))
+		  (NP-SBJ (DP (DT 这)
+			      (CLP (M 个)))
+			  (NP (NN 基地)))
+		  (VP (VV 要)
+		      (VP (PP-DIR (P 向)
+				  (NP (DNP (NP (NP-PN (NR 中国))
+					       (NP (NN 边境)
+						   (NN 省份)))
+					   (DEG 的))
+				      (DP (DT 各))
+				      (NP (NN 边防)
+					  (PU 、)
+					  (NN 武警)
+					  (PU 、)
+					  (NN 公安)
+					  (NN 部队))))
+			  (VP (VV 输送)
+			      (NP-OBJ (QP (CD 上百)
+					  (CLP (M 条)))
+				      (NP (NN 警犬))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 基地 
+	  </arg>
+	  <arg n="1">
+	  上百 条 警犬 
+	  </arg>
+	  <arg n="2">
+	  向 中国 边境 省份 的 各 边防 、 武警 、 公安 部队 
+	  </arg>
+	  <arg n="m" f="adv">
+	  每 年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+		  (VP (NP-TMP-WH (PN 何时))
+		      (ADVP (AD 再))
+		      (PP-BNF (P 给)
+			      (NP (NN 国外)))
+		      (VP (VV 输送)
+			  (NP-OBJ (NN 警犬))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  警犬 
+	  </arg>
+	  <arg n="2">
+	  给 国外 
+	  </arg>
+	  <arg n="m" f="adv">
+	  再 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  何时 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity supplied"/>
+      <role argnum="2" argrole="entity supplied to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NP-APP (NP (NN 柠檬厂))
+				       (PU 、)
+				       (NP (NN 香料厂))
+				       (PU 、)
+				       (NP (ADJP (JJ 特种))
+					   (NP (NN 油漆厂)))
+				       (ETC 等))
+			       (QP (CD 三十余)
+				   (CLP (M 家)))
+			       (NP (NN 工厂)))
+			   (DEG 的))
+		      (NP (NN 产品)))
+	      (VP (DVP (VP (VV 源源不断))
+		       (DEV 地))
+		  (VP (VRD (VV 输送)
+			   (VV 到))
+		      (NP-OBJ (NP (NN 内陆))
+			      (NP (DP (DT 各))
+				  (NP (NN 地))))))) 
+	  </parse>
+	  <arg n="1">
+	  柠檬厂 、 香料厂 、 特种 油漆厂 等 三十余 家 工厂 的 产品 
+	  </arg>
+	  <arg n="2">
+	  内陆 各 地 
+	  </arg>
+	  <arg n="m" f="adv">
+	  源源不断 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

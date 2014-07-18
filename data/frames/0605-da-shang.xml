@@ -1,0 +1,125 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 搭上 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="passenger"/>
+      <role argnum="1" argrole="means of transportation"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 然而))
+	      (PU ，)
+	      (LCP-TMP (QP (ADVP (AD 短短))
+			   (QP (CD 两)
+			       (CLP (M 年))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (PN 它))
+	      (VP (ADVP (AD 却))
+		  (PP-MNR (P 以)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (PU “)
+				  (ADVP (AD 全部))
+				  (VP (VV 达标))
+				  (PU ”))))
+		  (VP (MSP 而)
+		      (VP (VV 搭上)
+			  (NP-OBJ (DNP (NP (NN 欧元))
+				       (DEG 的))
+				  (QP (OD 头)
+				      (CLP (M 班)))
+				  (NP (NN 车))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  它 	  
+	  </arg>
+	  <arg n="1">
+	  欧元 的 头 班 车 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  短短 两 年 后 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  却 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 *PRO* “ 全部 达标 ” 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 establishes"/>
+      <role argnum="2" argrole="entity arg0 establishes arg1 with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-TMP (P 在)
+					      (LCP (QP (CD 十)
+						       (CLP (M 年)))
+						   (LC 前)))
+				      (VP (VV 开始)
+					  (VP (VV 走向)
+					      (NP-OBJ (NP-APP (ADJP (JJ 专业化))
+							      (NP (NN 纺织)
+								  (NN 研发))
+							      (NP (NN 中心)))
+						      (NP (NN 模式)))))))
+			      (DEC 的)))
+		      (NP-PN (NR 纺研)))
+	      (PU ，)
+	      (VP (VP (DVP (VP (VA 适时))
+			   (DEV 地))
+		      (PP (P 和)
+			  (NP (NN 业者)))
+		      (VP (VV 搭上)
+			  (NP-OBJ (NN 线))))
+		  (PU ，)
+		  (VP (VV 成为)
+		      (NP-OBJ (DNP (NP (NP (NN 国内))
+				       (QP (CD 数千)
+					   (CLP (M 家)))
+				       (NP (NN 纺织)
+					   (NN 业者)))
+				   (DEG 的))
+			      (NP (NN 研发))
+			      (ADJP (JJ 大))
+			      (NP (NN 本营)))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 在 十 年 前 开始 走向 专业化 纺织 研发 中心 模式 的 纺研 
+	  </arg>
+	  <arg n="1">
+	  线 
+	  </arg>
+	  <arg n="2">
+	  和 业者 
+	  </arg>
+	  <arg n="m" f="adv">
+	  适时 地 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

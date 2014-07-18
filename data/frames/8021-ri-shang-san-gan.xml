@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 日上三竿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="time described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NN 假日))
+		       (LC 时))
+	      (QP-SBJ (QP (CD 一)
+			  (CLP (M 家)))
+		      (QP (CD 四)
+			  (CLP (M 口))))
+	      (VP (ADVP (AD 常))
+		  (VP (VV 睡)
+		      (PP (P 到)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 日上三竿))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

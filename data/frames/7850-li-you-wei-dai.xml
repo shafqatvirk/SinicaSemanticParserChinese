@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 力有未逮 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 is not powerful enough to do"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但))
+	    (IP-TPC (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 想要)
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (PP-LOC (P 在)
+					    (LCP (NP (NN 网路))
+						 (LC 上)))
+				    (VP (VV 拦截)
+					(NP-OBJ (DNP (NP (NN 别人))
+						     (DEG 的))
+						(NP (NN 卡号))))))))
+	    (PU ，)
+	    (NP-SBJ (ADJP (JJ 一般))
+		    (NP (NN 人)))
+	    (VP (VV 可能)
+		(VP (VV 力有未逮)))) 
+	</parse>
+	<arg n="0">
+	一般 人 
+	</arg>
+	<arg n="1">
+	*PRO* 想要 *PRO* 在 网路 上 拦截 别人 的 卡号 
+	</arg>
+	<arg n="m" f="dis">
+	但 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

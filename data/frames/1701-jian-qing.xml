@@ -1,0 +1,149 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 减轻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause,agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="ext" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 使)
+		  (NP-OBJ (NN 外商)
+			  (NN 投资)
+			  (NN 企业))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 减轻)
+			  (NP-OBJ (NN 费负))
+			  (LCP-EXT (QP (CD 百分之三十))
+				   (LC 左右)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  费负 
+	  </arg>
+	  <arg n="m" f="ext">
+	  百分之三十 左右 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (IP (NP-SBJ (-NONE- *pro*))
+			   (VP (VV 实行)
+			       (NP-OBJ (NN 保证金)
+				       (NN 台帐)
+				       (NN 制度))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NN 海关))
+	      (VP (VP (PP (P 对)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 正常))
+					      (VP (VV 开展)
+						  (NP-OBJ (NN 加工)
+							  (NN 贸易)))))
+				      (DEC 的)))
+			      (NP (NN 企业))))
+		      (ADVP (AD 不))
+		      (ADVP (AD 再))
+		      (VP (VV 征收)
+			  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (PP (P 与)
+						      (NP (NN 进口)
+							  (NN 料件)
+							  (NN 税款)))
+						  (VP (VV 等值))))
+					  (DEC 的)))
+				  (NP (NN 风险)
+				      (NN 保证金)))))
+		  (PU ，)
+		  (VP (ADVP (AD 只是))
+		      (PP-TMP (P 在)
+			      (LCP (IP (NP-SBJ (NN 银行))
+				       (VP (VV 设立)
+					   (NP-OBJ (NN 台帐))))
+				   (LC 时)))
+		      (VP (VV 收取)
+			  (NP-OBJ (DNP (QP (CD 一百)
+					   (CLP (M 元)))
+				       (DEG 的))
+				  (NP (NN 手续费)))))
+		  (PU ，)
+		  (VP (ADVP (AD 因而))
+		      (ADVP (AD 将))
+		      (VP (VV 减轻)
+			  (NP-OBJ (DNP (NP (NN 企业))
+				       (DEG 的))
+				  (ADJP (JJ 实际))
+				  (NP (NN 经济)
+				      (NN 负担))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  海关 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  因而 
+	  </arg>
+	  <arg n="M" f="ADV">
+	  将 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  企业 的 实际 经济 负担 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (PN 双方))
+		      (DNP (PP (P 对)
+			       (IP (NP-SBJ (-NONE- *PRO*))
+				   (VP (VV 维护)
+				       (NP-OBJ (NP (NN 世界))
+					       (NP (NN 和平)
+						   (CC 与)
+						   (NN 稳定))))))
+			   (DEG 的))
+		      (NP (NN 责任)))
+	      (VP (VP (ADVP (AD 不))
+		      (VP (VC 是)
+			  (VP (VV 减轻)
+			      (AS 了))))
+		  (PU ，)
+		  (CC 而)
+		  (VP (VC 是)
+		      (VP (VV 加重)
+			  (AS 了))))) 
+	  </parse>
+	  <arg n="1">
+	  双方 对 *PRO* 维护 世界 和平 与 稳定 的 责任 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

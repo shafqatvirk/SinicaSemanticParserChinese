@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 有望 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing there is hope to become true of arg0"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据称))
+	      (PU ，)
+	      (NP-SBJ (ADJP (JJ 新型))
+		      (NP (NN 标签)))
+	      (VP (VV 有望)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (ADVP (AD 较好))
+			      (VP (VV 解决)
+				  (NP-OBJ (CP-APP (IP (NP-SBJ (NN 托运)
+							      (NN 行李))
+						      (VP (VV 丢失)))
+						  (DEC 的))
+					  (NP (NN 问题)))))))) 
+	  </parse>
+	  <arg n="0">
+	  新型 标签 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 较好 解决 托运 行李 丢失 的 问题 
+	  </arg>
+	  <arg n="m" f="adv">
+	  据称 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (NP-PN (NR ＮＢＡ))
+			  (NP (NN 赛季)))
+		  (VP (ADVP (AD 依然))
+		      (VP (VV 有望)))) 
+	  </parse>
+	  <arg n="0">
+	  ＮＢＡ 赛季 
+	  </arg>
+	  <arg n="m" f="adv">
+	  依然 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

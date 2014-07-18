@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 买走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="thing bought"/>
+      <role argnum="2" argrole="seller"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他))
+	      (VP (ADVP (AD 亲眼))
+		  (VP (VV 看到)
+		      (NP-OBJ (LCP (NP (NN 店))
+				   (LC 内))
+			      (QP (CD 数)
+				  (CLP (M 套)))
+			      (CP (WHNP-45 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-45))
+					  (VP (QP-ADV (CD 十七)
+						      (CLP (M 支)))
+					      (NP (VV 装))))
+				      (DEC 的)))
+			      (NP (NN 高尔夫)
+				  (NN 球具))
+			      (PU ，)
+			      (PRN (IP (NP-SBJ (-NONE- *PRO*))
+				       (VP (VV 价值)
+					   (QP-OBJ (CD 一百多万)
+						   (CLP (M 元)))))))
+		      (PU ，)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (LB 被)
+			      (CP-OBJ (WHNP-1 (-NONE- *OP*))
+				      (IP (NP-SBJ (DNP (NP (NP (NN 体育))
+							   (ADJP (JJ 专卖))
+							   (NP (NN 店)))
+						       (DEG 的))
+						  (NP (NN 商家)))
+					  (VP (QP-ADV (CD 一)
+						      (CLP (M 次)))
+					      (VP (VV 买走)
+						  (NP-OBJ (-NONE- *T*-1))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  体育 专卖 店 的 商家 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一 次 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

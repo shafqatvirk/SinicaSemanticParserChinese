@@ -1,0 +1,136 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 惊艳 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is surprised by and admires"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-HLN (NP-SBJ (-NONE- *pro*))
+		(VP (VV 惊艳)
+		    (NP-PN-OBJ (NR 台湾)))) 
+	</parse>
+	<arg n="0">
+	台湾 
+	</arg>
+	<arg n="1">
+	*pro* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 让)
+		(NP-OBJ (NP-PN (NR 雪梨))
+			(NP (NN 市民)))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (PP-BNF (P 为)
+				(NP (PN 之)))
+			(VP (VV 惊艳)))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	为 之 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (ADVP (AD 颇))
+				    (VP (VV 谙)
+					(NP-OBJ (NN 音律)))))
+			    (DEC 的)))
+		    (NP-APP (NP (CP (WHNP-2 (-NONE- *OP*))
+				    (IP (NP-PN-TPC (NR 加拿大))
+					(NP-SBJ (-NONE- *T*-2))
+					(VP (VV 驻)
+					    (NP-PN-OBJ (NR 台北)))))
+				(NP (NN 贸易)
+				    (NN 办事处)))
+			    (NP (NN 处长)))
+		    (NP-PN (NR 马大维)))
+	    (VP (VP (LCP-TMP (IP (NP-SBJ (-NONE- *PRO*))
+				 (VP (QP-ADV (OD 第一)
+					     (CLP (M 次)))
+				     (VP (VV 听到)
+					 (NP-OBJ (NP-APP (DNP (LCP (NP (NP-PN (NR 马修))
+								       (NP-TTL (PU 《)
+									       (NN 汇流)
+									       (PU 》)))
+								   (LC 中))
+							      (DEG 的))
+							 (QP (OD 首))
+							 (NP (NN 曲)))
+						 (NP-TTL (PU 「)
+							 (NN 欢腾)
+							 (PU 」))))))
+			     (LC 时))
+		    (ADVP (AD 极为))
+		    (VP (VV 惊艳)))
+		(PU ，)
+		(VP (VV 认为)
+		    (IP-OBJ (NP-SBJ (DNP (NP (NP-PN (NR 马修))
+					     (NP (NN 音乐)))
+					 (DEG 的))
+				    (NP (NN 魅力)))
+			    (VP (ADVP (AD 即))
+				(VP (VV 在於)
+				    (IP-OBJ (NP-SBJ (NP-APP (PN 他))
+						    (DP (DT 这)
+							(CLP (M 个)))
+						    (NP (NN 人)))
+					    (PU ，)
+					    (VP (VP (VV 充满)
+						    (NP-OBJ (NN 前瞻性)))
+						(PU ，)
+						(VP (ADVP (AD 很))
+						    (VP (VV 能)
+							(VP (VV 掌握)
+							    (NP-OBJ (NP (DNP (NP (ADJP (JJ 不同))
+										 (NP (NN 文化)))
+									     (DEG 的))
+									(NP (NN 特色)))
+								    (CC 及)
+								    (NP (DNP (NP (PN 其)
+										 (NN 对应))
+									     (DEG 之))
+									(NP (NN 处))))))))))))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 颇 谙 音律 的 *OP* 加拿大 *T*-2 驻 台北 贸易 办事处 处长 马大维 
+	</arg>
+	<arg n="m" f="adv">
+	极为 
+	</arg>
+	<arg n="m" f="tmp">
+	*PRO* 第一 次 听到 马修 《 汇流 》 中 的 首 曲 「 欢腾 」 时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

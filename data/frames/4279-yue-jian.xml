@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 约见 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people arg0 arranges to see"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 他们))
+	      (VP (VP (VV 分为)
+		      (NP-OBJ (QP (CD ５)
+				  (CLP (M 个)))
+			      (NP (NN 小组))))
+		  (PU ，)
+		  (VP (ADVP (AD 共))
+		      (VP (VV 约见)
+			  (AS 了)
+			  (NP-OBJ (QP (ADVP (AD 约))
+				      (QP (CD １５０)
+					  (CLP (M 位))))
+				  (NP (NN 议员)
+				      (CC 或)
+				      (NN 议员)
+				      (NN 助手)
+				      (CC 以及)
+				      (NN 政府)
+				      (NN 官员)))))
+		  (PU ，)
+		  (VP (PP-MNR (P 用)
+			      (NP (CP-APP (IP (NP-SBJ (PN 他们))
+					      (VP (PP-LOC (P 在)
+							  (NP-PN (NR 中国)))
+						  (VP (VP (VV 投资))
+						      (VP (VV 办)
+							  (NP-OBJ (NN 企业))))))
+					  (DEC 的))
+				  (NP (NN 经验))))
+		      (PU ，)
+		      (VP (VV 阐述)
+			  (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (VV 延长)
+						  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+							  (VP (VV 给)
+							      (NP-PN-IO (NR 中国))
+							      (NP-OBJ (NN 贸易)
+								      (NN 最惠国)
+								      (NN 待遇))))))
+					  (DEC 的))
+				  (NP (NN 必要性))))))) 
+	  </parse>
+	  <arg n="0">
+	  他们 
+	  </arg>
+	  <arg n="1">
+	  约 １５０ 位 议员 或 议员 助手 以及 政府 官员 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

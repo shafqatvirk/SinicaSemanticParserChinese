@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 讲课 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 不))
+		  (VP (VV 能)
+		      (VP (VC 是)
+			  (NP-PRD (CP-APP (IP (NP-SBJ (NN 老师))
+					      (VP (ADVP (AD 不停))
+						  (VP (VV 讲课))))
+					  (DEC 的))
+				  (NP (QP (CD 一))
+				      (NP (NN 人)))
+				  (NP (NN 秀))))))) 
+	  </parse>
+	  <arg n="0">
+	  老师 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不停 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

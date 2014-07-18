@@ -1,0 +1,120 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 推行 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="implementer"/>
+      <role argnum="1" argrole="thing implemented"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NN 期交所))
+	      (VP (ADVP (AD 全面))
+		  (VP (VV 推行)
+		      (NP-OBJ (NN 电子化))))) 
+	  </parse>
+	  <arg n="0">
+	  期交所 
+	  </arg>
+	  <arg n="1">
+	  电子化 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全面 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 据悉))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP (NP-PN-APP (NN 国家)
+							     (NN 科委)
+							     (PU 、)
+							     (NN 卫生部)
+							     (PU 、)
+							     (NN 国家)
+							     (NN 医药)
+							     (NN 管理局)
+							     (ETC 等))
+						  (NP (NN 部门))))
+				      (ADVP (AD 联合))
+				      (VP (VV 推行))))
+			      (DEC 的)))
+		      (NP (NN 国家))
+		      (NP (NP (ADJP (JJ 新))
+			      (NP (NN 药)))
+			  (CC 与)
+			  (NP (NN 产业化)
+			      (NN 开发)))
+		      (NP (NN 项目)))
+	      (VP (VP (ADVP (AD 正在))
+		      (VP (VV 实施)
+			  (AS 中)))
+		  (PU ，)
+		  (VP (VV 计划)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (PP-TMP (P 到)
+					  (LCP (NP (DP (DT 本))
+						   (NP (NN 世纪)))
+					       (LC 末)))
+				  (PU ，)
+				  (VP (VP (VRD (VV 开发)
+					       (VV 出))
+					  (NP-OBJ (QP (CD 十)
+						      (CLP (M 个)))
+						  (NP (NN 专利)
+						      (NN 保护))
+						  (ADJP (JJ 新))
+						  (NP (NN 药))))
+				      (PU ，)
+				      (VP (VV 建立)
+					  (NP-OBJ (NP (QP (CD 五)
+							  (CLP (M 个)))
+						      (NP (ADJP (JJ 新))
+							  (NP (NN 药)))
+						      (NP (NN 筛选)
+							  (NN 中心)))
+						  (PU 、)
+						  (NP (QP (CD 五)
+							  (CLP (M 个)))
+						      (NP (NN 药物)
+							  (NN 安全性)
+							  (NN 评价)
+							  (NN 中心)))
+						  (CC 和)
+						  (NP (QP (CD 五)
+							  (CLP (M 个)))
+						      (NP (NN 药物)
+							  (NN 临床)
+							  (NN 实验)
+							  (NN 中心))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  由 国家 科委 、 卫生部 、 国家 医药 管理局 等 部门 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  联合 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

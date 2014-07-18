@@ -1,0 +1,147 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 拓展 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing expanded"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 罗纳普郎克))
+	      (VP (ADVP (AD 将))
+		  (ADVP (AD 不断))
+		  (VP (VV 拓展)
+		      (NP-OBJ (DNP (PP (P 在)
+				       (NP-PN (NR 中国)))
+				   (DEG 的))
+			      (NP (NN 业务)))))) 
+	  </parse>
+	  <arg n="0">
+	  罗纳普郎克 
+	  </arg>
+	  <arg n="1">
+	  在 中国 的 业务 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不断 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 为)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 满足)
+			  (NP-OBJ (DNP (NP (CP (WHNP-1 (-NONE- *OP*))
+					       (CP (IP (NP-SBJ (-NONE- *T*-1))
+						       (VP (ADVP (AD 不断))
+							   (VP (VV 拓展))))
+						   (DEC 的)))
+					   (NP (NN 海外)
+					       (NN 市场)))
+				       (DEG 的))
+				  (NP (NN 需要)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不断 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing expanded"/>
+      <role argnum="2" argrole="location expanded to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (LCP-TMP (IP (NP-PN-SBJ (NR 香港))
+			       (VP (VV 回归)))
+			   (LC 后))
+		  (PU ，)
+		  (NP-SBJ (DNP (NP (NP (NN 内地))
+				   (CC 与)
+				   (NP-PN (NR 香港)))
+			       (DEG 的))
+			  (NP (NN 经贸)
+			      (NN 合作)))
+		  (VP (VP (ADVP (AD 必))
+			  (ADVP (AD 将))
+			  (VP (VP (VRD (VV 上升)
+				       (VV 到))
+				  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VA 新)))
+						  (DEC 的)))
+					  (NP (NN 水平))))
+			      (PU ，)
+			      (VP (VRD (VV 拓展)
+				       (VV 到))
+				  (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-2))
+						      (VP (VA 新)))
+						  (DEC 的)))
+					  (NP (NN 领域))))))
+		      (PU ，)
+		      (VP (ADVP (AD 也))
+			  (ADVP (AD 必))
+			  (ADVP (AD 将))
+			  (VP (PP-BNF (P 为)
+				      (NP (NP-PN (NR 中国))
+					  (DNP (NP (NT 明天))
+					       (DEG 的))
+					  (NP (NN 富强)
+					      (PU 、)
+					      (NN 统一)
+					      (CC 和)
+					      (NN 文明))))
+			      (VP (VV 缔造)
+				  (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-3))
+						      (VP (VA 坚实)))
+						  (DEC 的)))
+					  (NP (NN 基础)))))))) 
+	  </parse>
+	  <arg n="1">
+	  内地 与 香港 的 经贸 合作 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-2 新 的 领域 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  必 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  香港 回归 后 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

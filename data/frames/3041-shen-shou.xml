@@ -1,0 +1,128 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深受 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="experiencer"/>
+      <role argnum="1" argrole="experience provider"/>
+      <role argnum="2" argrole="thing experienced"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (NP-TMP (NT 最近))
+				      (VP (VV 举办))))
+			      (DEC 的)))
+		      (QP (OD 首)
+			  (CLP (M 届)))
+		      (NP (PU “)
+			  (NP-PN (NR 赛克勒杯))
+			  (NP (NN 书法)
+			      (NN 比赛))
+			  (PU ”)))
+	      (PU ，)
+	      (VP (VP (VCD (VV 擢举)
+			   (VV 广征))
+		      (NP-OBJ (DNP (NP (CP (WHNP-2 (-NONE- *OP*))
+					   (CP (IP (NP-SBJ (-NONE- *T*-2))
+						   (VP (VP (VV 散布)
+							   (PP-LOC (P 在)
+								   (NP (DP (DT 各))
+								       (NP (NN 地)))))
+						       (VP (ADVP (AD 最新))
+							   (VP (VV 成长)))))
+					       (DEC 的)))
+				       (NP (NN 书家们)))
+				   (DEG 的))
+			      (NP (NN 书作)
+				  (NN 珍品))))
+		  (PU ，)
+		  (VP (VV 深受)
+		      (NP-OBJ (NN 读者))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 欢迎)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *OP* (*T*-1)->(首届“赛克勒杯书法比赛”) 最近 举办 的 首 届 “ 赛克勒杯 书法 比赛 ” 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  读者 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 欢迎 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP (NP-SBJ (NP-PN (NR 中国))
+			  (NP (NP (NN 羽绒))
+			      (CC 及)
+			      (NP (NP (PN 其))
+				  (NP (NN 制品))))
+			  (NP (NN 行业)))
+		  (VP (VP (LCP-TMP (QP (CD 十余)
+				       (CLP (M 年)))
+				   (LC 来))
+			  (ADVP (AD 迅速))
+			  (VP (VV 崛起)))
+		      (PU ，)
+		      (VP (ADVP (AD 现))
+			  (ADVP (AD 已))
+			  (VP (VV 成为)
+			      (NP-OBJ (DNP (NP (NN 轻工业))
+					   (DEG 的))
+				      (ADJP (JJ 重要))
+				      (NP (NN 组成)
+					  (NN 部分)))))))
+	      (PU ，)
+	      (IP (NP-SBJ (ADJP (JJ 年))
+			  (NP (NN 出口量)
+			      (CC 及)
+			      (NN 出口额)))
+		  (VP (ADVP (AD 均))
+		      (VP (VV 占)
+			  (QP-OBJ (NP (NN 世界)
+				      (NN 羽绒)
+				      (NN 贸易)
+				      (NN 总量))
+				  (QP (CD 一半))))))
+	      (PU ，)
+	      (IP (NP-SBJ (-NONE- *pro*))
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (NN 国际)
+				       (NN 羽绒)
+				       (NN 市场))
+				   (LC 上)))
+		      (VP (VV 深受)
+			  (NP-OBJ (NN 好评)))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="M" f="LOC">
+	  在 国际 羽绒 市场 上 
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  好评 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

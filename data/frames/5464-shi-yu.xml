@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 始於 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="starting point of arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NT 现在))
+		    (DNP (NP (NP (NP-PN (NR 台湾))
+				 (NP (NN 原住民)))
+			     (NP (NN 文物)))
+			 (DEG 的))
+		    (NP (NN 收集)
+			(CC 与)
+			(NN 保存)))
+	    (VP (VV 始於)
+		(NP-OBJ (ADJP (JJ 日据))
+			(NP (NN 时代))))) 
+	</parse>
+	<arg n="0">
+	现在 台湾 原住民 文物 的 收集 与 保存 
+	</arg>
+	<arg n="1">
+	日据 时代 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 回顾)
+			(NP-OBJ (DP (DT 整)
+				    (CLP (M 个)))
+				(DNP (NP (NN 核四))
+				     (DEG 的))
+				(NP (NN 进展)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (VC 系)
+		(VP (VV 始於)
+		    (IP-OBJ (QP-TMP (NP-PN (NR 民国))
+				    (QP (OD 六十九)
+					(CLP (M 年))))
+			    (NP-PN-SBJ (NR 台电))
+			    (VP (VV 提出)
+				(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 兴建)
+					    (NP-OBJ (QP (OD 第四)
+							(CLP (M 个)))
+						    (NP (NN 核电厂)))))))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	民国 六十九 年 台电 提出 *PRO* 兴建 第四 个 核电厂 
+	</arg>
+	<arg n="m" f="adv">
+	*PRO* 回顾 整 个 核四 的 进展 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

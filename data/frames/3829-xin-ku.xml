@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 辛苦 </id>
+    <frameset id="f1" edef="hard working">
+      <role argnum="0" argrole="people described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-IJ (IP (NP-SBJ (NN 厂商))
+		     (VP (VV 要)
+			 (VP (VP (VV 凭)
+				 (NP-OBJ (DNP (NP (PN 自己))
+					      (DEG 的))
+					 (NP (NN 力量))))
+			     (VP (MSP 去)
+				 (VP (VV 单打独斗))))))
+		 (PU ，)
+		 (IP (NP-SBJ (-NONE- *pro*))
+		     (VP (ADVP (AD 很))
+			 (VP (VA 辛苦))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2" edef="hard">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 经营)
+			  (NP-OBJ (NN 大棚)
+				  (NN 蔬菜))))
+	      (VP (ADVP (AD 比较))
+		  (VP (VA 辛苦)))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 经营 大棚 蔬菜 
+	  </arg>
+	  <arg n="m" f="adv">
+	  比较 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

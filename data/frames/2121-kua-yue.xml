@@ -1,0 +1,65 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 跨越 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="crossing entity"/>
+      <role argnum="1" argrole="entity crossed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VV 跨越)
+				      (NP-OBJ (NN 国界))))
+			      (DEC 的)))
+		      (NP (PU “)
+			  (ADJP (JJ 世界性))
+			  (NP (NN 产品))
+			  (PU ”)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  国界 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (VP (VC 是)
+	      (NP-PRD (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NP-PN-APP (NR 京珠)
+						     (PU 、)
+						     (NR 沪蓉))
+					  (NP (NN 国道)
+					      (NN 主干线)))
+				  (VP (ADVP (AD 共))
+				      (VP (VV 用)
+					  (NP-OBJ (-NONE- *T*-2)))))
+			      (DEC 的)))
+		      (CP (WHNP-3 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-3))
+				  (VP (VV 跨越)
+				      (NP-PN-OBJ (NR 长江))))
+			      (DEC 的)))
+		      (ADJP (JJ 特大))
+		      (NP (NN 桥梁)))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-3 
+	  </arg>
+	  <arg n="1">
+	  长江 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

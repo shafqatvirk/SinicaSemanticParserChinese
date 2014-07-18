@@ -1,0 +1,98 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 看上 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 likes/falls in love with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-TMP (NT 千禧年))
+		(NP-SBJ (NP-PN (NR 欧)
+			       (NR 美))
+			(ADJP (JJ 大型))
+			(NP (NN 健身))
+			(ADJP (JJ 连锁))
+			(NP (NN 公司)))
+		(VP (VP (ADVP (AD 也))
+			(VP (VV 看上)
+			    (NP-OBJ (NP-PN (NR 台湾))
+				    (NP (NN 市场)))))
+		    (PU ，)
+		    (VP (VP (VV 夹)
+			    (AS 着)
+			    (NP-OBJ (DNP (NP (ADJP (JJ 高))
+					     (NP (NN 知名度)))
+					 (DEG 的))
+				    (ADJP (JJ 闪亮))
+				    (NP (NN 招牌))))
+			(VP (VV 登陆)))
+		    (PU ，)
+		    (VP (PP (P 与)
+			    (NP (NN 本土)
+				(NN 业者)))
+			(ADVP (AD 争))
+			(VP (VV 食)
+			    (NP-OBJ (ADJP (JJ 大))
+				    (NP (NN 饼))))))) 
+	</parse>
+	<arg n="0">
+	欧 美 大型 健身 连锁 公司 
+	</arg>
+	<arg n="1">
+	台湾 市场 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<arg n="m" f="tmp">
+	千禧年 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-PN-TPC (NR 马修))
+				(NP-SBJ (-NONE- *T*-1))
+				(VP (PP-LOC (P 在)
+					    (LCP (NP (NN 音乐))
+						 (LC 上)))
+				    (VP (VV 发挥)
+					(DER 的)
+					(VP-EXT (VV 淋漓尽致)))))
+			    (DEC 的)))
+		    (NP (NN 文化)
+			(NN 交流)
+			(NN 特长)))
+	    (VP (ADVP (AD 也))
+		(VP (LB 被)
+		    (IP-OBJ (NP-SBJ (NN 官方))
+			    (VP (VV 看上)))))) 
+	</parse>
+	<arg n="0">
+	官方 
+	</arg>
+	<arg n="1">
+	*OP* 马修 *T*-1 在 音乐 上 发挥 的 淋漓尽致 的 文化 交流 特长 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

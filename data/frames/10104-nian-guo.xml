@@ -1,0 +1,62 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 碾过 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 rolls over"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (LB 被)
+		(IP-OBJ (NP-PN-SBJ (NR 黄春明))
+			(VP (VCP (VV 写成)
+				 (VC 是))
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VP (PP-DIR (P 对)
+								(NP (DNP (NP (ADJP (JJ 现代式))
+									     (NP (NN 生活)))
+									 (DEG 的))
+								    (NP (NN 入侵))))
+							(VP (VP (VV 充满)
+								(NP-OBJ (NN 敌意)))
+							    (PU ，)
+							    (VP (ADVP (AD 坚决))
+								(VP (VCD (VV 反对)
+									 (VV 抵抗))))))
+						    (PU ，)
+						    (VP (ADVP (AD 却))
+							(ADVP (AD 终究))
+							(VP (LB 被)
+							    (CP-OBJ (WHNP-2 (-NONE- *OP*))
+								    (IP (NP-SBJ (ADJP (JJ 庞大))
+										(ADJP (JJ 新))
+										(NP (NN 力量)))
+									(VP (VCD (VV 碾过)
+										 (VV 淘汰))
+									    (NP-OBJ (-NONE- *T*-2)))))))))
+					    (DEC 的))
+				    (NP (NN 悲剧))))))) 
+	</parse>
+	<arg n="0">
+	庞大 新 力量 
+	</arg>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	终究 
+	</arg>
+	<arg n="m" f="adv">
+	却 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

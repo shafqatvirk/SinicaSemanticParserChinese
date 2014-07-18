@@ -1,0 +1,114 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拦 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 stops"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-ADV (NP-SBJ (-NONE- *pro*))
+		    (VP (ADVP (AD 早))
+			(VP (VV 知道)
+			    (IP-OBJ (NP-SBJ (PN 他))
+				    (VP (ADVP (AD 那麽))
+					(ADVP (AD 早))
+					(VP (VV 死)))))))
+	    (PU ，)
+	    (LCP-TMP (IP (ADVP (AD 当初))
+			 (NP-SBJ (PN 他))
+			 (VP (VP (VV 抱)
+				 (AS 著)
+				 (NP-OBJ (NN 汽油弹)))
+			     (PU ，)
+			     (VP (VV 要)
+				 (VP (PP (P 和)
+					 (NP (NP-PN (NR 台机))
+					     (NP (NN 老板))))
+				     (VP (VV 拚死活))))))
+		     (LC 时))
+	    (PU ，)
+	    (NP-SBJ (PN 我们))
+	    (VP (ADVP (AD 就))
+		(ADVP (AD 不))
+		(VP (VV 该)
+		    (VP (VV 拦)
+			(AS 著)
+			(NP-OBJ (PN 他)))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	他 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<arg n="m" f="adv">
+	就 
+	</arg>
+	<arg n="m" f="tmp">
+	当初 他 抱 著 汽油弹 ， 要 和 台机 老板 拚死活 时 
+	</arg>
+	<arg n="m" f="adv">
+	*pro* 早 知道 他 那麽 早 死 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="thing arg0 goes around/at"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(CP-ADV (ADVP (CS 即使))
+		(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-TPC (-NONE- *T*-1))
+					(NP-TMP (NT 以往))
+					(NP-SBJ (NN 碧波))
+					(VP (QP-PRD (CD 万)
+						    (CLP (M 顷)))))
+				    (DEC 的)))
+			    (NP (NN 大海)))
+		    (PU ，)
+		    (VP (LB 被)
+			(IP-OBJ (NP-SBJ (NN 六轻)
+					(NN 防波堤))
+				(VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 拦)
+						    (NP-OBJ (NN 腰))))
+					(ADVP (AD 一))
+					(VP (VV 斩)))
+				    (VP (MSP 而)
+					(VP (VV 阻断)
+					    (AS 了)
+					    (NP-OBJ (CP-APP (IP (NP-SBJ (NN 乡人))
+								(VP (VV 望)
+								    (NP-OBJ (NN 海))))
+							    (DEC 的))
+						    (NP (NN 视线)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	腰 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

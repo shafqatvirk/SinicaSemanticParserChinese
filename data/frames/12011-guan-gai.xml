@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 灌溉 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 irrigates"/>
+      <role argnum="2" argrole="thing arg1 is irrigated with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 解决)
+		  (AS 了)
+		  (NP-OBJ (NP (DNP (NP (QP (CD 六百多)
+					   (CLP (M 亩)))
+				       (NP (NN 农田)))
+				   (DEG 的))
+			      (NP (NN 灌溉)))
+			  (CC 和)
+			  (NP (NP (DNP (LCP (NP (NN 村))
+					    (LC 里))
+				       (DEG 的))
+				  (NP (NN 人)
+				      (NN 畜)))
+			      (NP (NN 饮水)))))) 
+	  </parse>
+	  <arg n="1">
+	  六百多 亩 农田 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 当地人))
+	      (VP (ADVP (AD 几乎))
+		  (ADVP (AD 都))
+		  (VP (BA 把)
+		      (IP-OBJ (NP-SBJ (DP (DT 这)
+					  (QP (CD 一)))
+				      (NP (NN 灌溉)
+					  (NN 系统)))
+			      (VP (VV 视为)
+				  (NP-OBJ (NN 经济)
+					  (NN 命脉))))))) 
+	  </parse>
+	  <arg n="2">
+	  系统 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

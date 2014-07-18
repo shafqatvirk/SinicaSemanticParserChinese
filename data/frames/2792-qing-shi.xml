@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 请示 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people asked"/>
+      <role argnum="2" argrole="question"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	  <mapitem src="ipobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (NP (NN 调查)))
+	      (PU ，)
+	      (NP-TMP (NT 今年)
+		      (NT 三月))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 崔广华))
+	      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 以)
+				      (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VP (VV 任)
+						  (NP-OBJ (NN 现职)))
+					      (VP (LCP-TMP (QP (CD 多)
+							       (CLP (M 年)))
+							   (LC 来))
+						  (ADVP (AD 未))
+						  (VP (VV 解决)
+						      (NP-OBJ (NN 工作)
+							      (NN 用车)))))))
+			      (VP (VV 为由))))
+		  (PU ，)
+		  (PP-LOC (P 在)
+			  (LCP (NP (IP-APP (NP-SBJ (DNP (NP (NP (NP-PN (NR 颖上县))
+								(NP (NP-PN (NR 南润))
+								    (NP (NN 段)))
+								(NP (NN 行洪区)))
+							    (NP (NN 退堤)
+								(NN 工程)))
+							(DEG 的))
+						   (NP (PU “)
+						       (NN 管理)
+						       (NN 单位)
+						       (NN 设备)
+						       (CC 及)
+						       (NN 用具)
+						       (NN 经费)
+						       (PU ”)))
+					   (VP (ADVP (AD 已))
+					       (VP (VV 超支))))
+				   (NP (NN 情况)))
+			       (LC 下)))
+		  (PU ，)
+		  (PP-DIR (P 向)
+			  (NP (NP (NN 县政府))
+			      (ADJP (JJ 主要))
+			      (NP (NN 领导))))
+		  (VP (VV 请示)
+		      (IP-OBJ (NP-SBJ (-NONE- *pro*))
+			      (VP (PU “)
+				  (ADVP (AD 是否))
+				  (VP (VP (VV 使用)
+					  (NP-OBJ (NP (NP-PN (NR 南润))
+						      (NP (NN 段)))
+						  (NP (NN 退堤)
+						      (NN 工程费))))
+				      (VP (VV 购买)
+					  (NP-OBJ (QP (CD 一)
+						      (CLP (M 部)))
+						  (NP (NN 车子)))))
+				  (PU ”)))))) 
+	  </parse>
+	  <arg n="0">
+	  崔广华 
+	  </arg>
+	  <arg n="1">
+	  向 县政府 主要 领导 
+	  </arg>
+	  <arg n="2">
+	  *pro* “ 是否 使用 南润 段 退堤 工程费 购买 一 部 车子 ” 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 颖上县 南润 段 行洪区 退堤 工程 的 “ 管理 单位 设备 及 用具 经费 ” 已 超支 情况 下 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 以 *PRO* 任 现职 多 年 来 未 解决 工作 用车 为由 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 三月 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 调查 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

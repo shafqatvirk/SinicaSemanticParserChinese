@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 培植 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity fostered"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 该))
+		      (NP (NN 市)))
+	      (VP (ADVP (AD 还))
+		  (VP (VP (ADVP (AD 大力))
+			  (VP (VV 发展)
+			      (NP-OBJ (NN 乡镇)
+				      (NN 企业))))
+		      (PU ，)
+		      (VP (VV 培植)
+			  (AS 了)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (NP-LOC (NP (NN 国内)))
+						  (VP (VV 颇负盛名))))
+					  (DEC 的)))
+				  (NP-APP (NN 服装)
+					  (PU 、)
+					  (NN 鞋业)
+					  (PU 、)
+					  (NN 陶瓷)
+					  (PU 、)
+					  (NN 石雕)
+					  (PU 、)
+					  (NN 石板材)
+					  (ETC 等))
+				  (NP (NN 优势)
+				      (NN 行业))))))) 
+	  </parse>
+	  <arg n="0">
+	  该 市 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 国内 颇负盛名 的 服装 、 鞋业 、 陶瓷 、 石雕 、 石板材 等 优势 行业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

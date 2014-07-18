@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 必然 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-CND (NP-PN-SBJ (NR 宋楚瑜))
+		    (VP (ADVP (CS 若))
+			(VP (VV 当选))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (NP (PN 其))
+			    (NP (NN 支持)
+				(NN 势力)))
+		    (VP (VV 组党)))
+	    (VP (ADVP (AD 几乎))
+		(VP (SB 被)
+		    (VP (VCP (VV 认为)
+			     (VC 是))
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 必然)))
+					(DEC 的)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

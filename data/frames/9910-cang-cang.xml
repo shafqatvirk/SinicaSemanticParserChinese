@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 苍苍 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (DP (DT 这)
+		      (CLP (M 位)))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-TPC (-NONE- *T*-1))
+			      (NP-SBJ (NN 白发))
+			      (VP (VA 苍苍)))
+			  (DEC 的)))
+		  (NP (NN 大师))) 
+	  </parse>
+	  <arg n="0" f="psr">
+	  *T*-1 
+	  </arg>
+	  <arg n="0" f="pse">
+	  白发 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

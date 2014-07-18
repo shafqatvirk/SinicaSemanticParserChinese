@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 对生 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VA 圆)
+				    (CC 而)
+				    (VA 厚实)))
+			    (DEC 的)))
+		    (NP (NN 叶子) ))
+	    (VP (VP (PP-DIR (P 从)
+			    (NP (NN 底部) ))
+		    (PP-DIR (P 往)
+			    (NP (NN 上) ))
+		    (VP (VV 对生)))
+		(PU ，)
+		(VP (VV 如)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 串串)))
+			    (ADJP (JJ 铜))
+			    (NP (NN 钱) ))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 圆 而 厚实 的 叶子 
+	</arg>
+	<arg n="m" f="dir">
+	往 上 
+	</arg>
+	<arg n="m" f="dir">
+	从 底部 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

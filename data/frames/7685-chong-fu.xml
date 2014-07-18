@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 重覆 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 repeats"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (IP-SBJ (NP (-NONE- *PRO*))
+		    (VP (VP (VV 掩饰)
+			    (NP-OBJ (-NONE- *RNR*-3)))
+			(PU 、)
+			(VP (VV 逃避)
+			    (NP-OBJ (-NONE- *RNR*-3)))
+			(PU 、)
+			(VP (VV 曲解)
+			    (NP-OBJ-3 (NN 历史)))))
+	    (PU ，)
+	    (VP (ADVP (AD 只))
+		(VP (VV 会)
+		    (VP (VV 使)
+			(NP-OBJ (NN 过错))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (ADVP (AD 不断))
+				(VP (VV 重覆)))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	不断 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 听任 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person letting go"/>
+      <role argnum="1" argrole="person let go"/>
+      <role argnum="2" argrole="predicate"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 容忍)
+		      (NP-OBJ (DP (DT 这)
+				  (CLP (M 种)))
+			      (NP (NN 行径))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (VV 听任)
+		      (NP-OBJ (PN 其))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 发展)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  其 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 发展 
+	  </arg>
+	</example>
+      </frame>
+    </frameset>     
+  </verb>

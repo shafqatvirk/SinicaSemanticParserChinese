@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 顶住 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="bearer"/>
+      <role argnum="1" argrole="pressure, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TMP (DT 这)
+		      (QP (CD 一)
+			  (CLP (M 年))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 南斯拉夫))
+		      (NP (NN 人民)))
+	      (VP (VP (VCD (VV 团结)
+			   (VV 一致)))
+		  (PU ，)
+		  (VP (VV 顶住)
+		      (AS 了)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (VCD (VA 空前)
+						   (VA 巨大))))
+				      (DEC 的)))
+			      (NP (NN 压力)))))) 
+	  </parse>
+	  <arg n="0">
+	  南斯拉夫 人民 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 空前 巨大 的 压力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

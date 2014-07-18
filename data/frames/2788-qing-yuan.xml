@@ -1,0 +1,75 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 情愿 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people described"/>
+      <role argnum="1" argrole="thing willing to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 由于)
+		      (IP (IP (NP-PN-SBJ (NR 大宇)
+					 (NN 电子))
+			      (NP (VC 是)
+				  (NP-PRD (DNP (NP-PN (NR 大宇)
+						      (NN 集团))
+					       (DEG 的))
+					  (ADJP (JJ 优良))
+					  (NP (NN 产业)))))
+			  (PU ，)
+			  (IP (NP-SBJ (DNP (QP (CD 百分之九十五))
+					   (DEG 的))
+				      (NP (NN 产品)))
+			      (VP (VV 销往)
+				  (NP-OBJ (NN 国外))))
+			  (PU ，)
+			  (CC 而)
+			  (IP (NP-PN-SBJ (NR 三星)
+					 (NN 汽车))
+			      (VP (ADVP (AD 相对))
+				  (ADVP (AD 还))
+				  (ADVP (AD 未))
+				  (VP (VV 形成)
+				      (NP-OBJ (NN 竞争)
+					      (NN 规模)))))))
+	      (PU ，)
+	      (ADVP (AD 所以))
+	      (NP-PN-SBJ (NR 大宇)
+			 (NN 财团))
+	      (VP (PP-DIR (P 对)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 让出)
+				  (NP-OBJ (NN 电子)
+					  (NN 产业)))))
+		  (ADVP (AD 很))
+		  (ADVP (AD 不))
+		  (VP (VA 情愿)))) 
+	  </parse>
+	  <arg n="0">
+	  大宇 财团 
+	  </arg>
+	  <arg n="1">
+	  对 *PRO* 让出 电子 产业 
+	  </arg>
+	  <arg n="m" f="adv">
+	  不 
+	  </arg>
+	  <arg n="m" f="adv">
+	  很 
+	  </arg>
+	  <arg n="m" f="adv">
+	  所以 
+	  </arg>
+	  <arg n="m" f="prp">
+	  由于 大宇 电子 是 大宇 集团 的 优良 产业 ， 百分之九十五 的 产品 销往 国外 ， 而 三星 汽车 相对 还 未 形成 竞争 规模 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

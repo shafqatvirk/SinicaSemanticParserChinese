@@ -1,0 +1,51 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 装饰 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 decorates"/>
+    <role argnum="2" argrole="thing arg1 is decorated with"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+	<mapitem src="npobj" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (ADJP (JJ 高档))
+			 (DEG 的))
+		    (NP (NN 酒楼)))
+	    (PU ，)
+	    (IP (IP (LCP-SBJ (NP (NN 门))
+			     (LC 前))
+		    (VP (VV 装饰)
+			(AS 著)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 鲜艳)))
+					(DEC 的)))
+				(NP (NN 彩带)))))
+		(PU ，)
+		(IP (NP-SBJ (NN 里面))
+		    (VP (ADVP (AD 还))
+			(VP (VE 有)
+			    (IP-OBJ (NP-SBJ (NN 歌儿)
+					    (NN 舞女))
+				    (VP (VV 演唱)
+					(VV 相陪)))))))) 
+	</parse>
+	<arg n="1" f="psr">
+	高档 的 酒楼 
+	</arg>
+	<arg n="1" f="pse">
+	门 前 
+	</arg>
+	<arg n="2">
+	*OP* *T*-1 鲜艳 的 彩带 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 蹉跎 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="thing (time) arg0 wastes"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VV 认为)
+		(PU ，)
+		(IP-OBJ (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VP (VV 徘徊))
+				    (PU 、)
+				    (VP (VV 犹豫))
+				    (PU 、)
+				    (VP (VV 缺乏)
+					(NP-OBJ (NN 指引)))))
+			(PU ，)
+			(VP (VV 让)
+			    (NP-OBJ (PN 他))
+			    (IP (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 蹉跎)
+				    (AS 了)
+				    (NP-OBJ (QP (CD 不少))
+					    (NP (NN 时光))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	不少 时光 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

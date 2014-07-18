@@ -1,0 +1,70 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 套牢 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="thing described"/>
+    <role argnum="1" argrole="person whose money gets stuck in arg0"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *T*-2))
+	    (VP (VP (ADVP (AD 从))
+		    (ADVP (AD 不))
+		    (VP (VV 信邪)))
+		(PU ，)
+		(VP (ADVP (AD 却))
+		    (PP-PRP (P 因为)
+			    (IP (IP (NP-SBJ (NN 股市) )
+				    (VP (VV 套牢)))
+				(PU ，)
+				(IP (NP-SBJ (NN 人) )
+				    (VP (VA 穷)))
+				(IP (NP-SBJ (NN 志) )
+				    (VP (VA 短)))))
+		    (PU ，)
+		    (ADVP (AD 只好))
+		    (PP-DIR (P 向)
+			    (NP (NN 算命师) ))
+		    (VP (VV 低头))))) 
+	</parse>
+	<arg n="0">
+	股市 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="other" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NP-PN (NR 张)
+			       (NN 太太))
+			(NP (NN 弟弟)))
+		    (QP (CD 一))
+		    (NP (NN 家)))
+	    (VP (SB 被)
+		(VP (VV 套牢)
+		    (PP (P 在)
+			(LCP (NP (ADJP (JJ 高额))
+				 (NP (NN 房贷)))
+			     (LC 里)))))) 
+	</parse>
+	<arg n="0">
+	在 高额 房贷 里 
+	</arg>
+	<arg n="1">
+	张 太太 弟弟 一 家 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

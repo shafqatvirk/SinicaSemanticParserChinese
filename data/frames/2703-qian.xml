@@ -1,0 +1,89 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 签 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="name signed"/>
+      <role argnum="2" argrole="document/project signed on"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 李富荣)
+			 (CC 和)
+			 (NR 吴永文))
+	      (VP (VP (VV 代表)
+		      (NP-OBJ (PN 双方)))
+		  (VP (PP-LOC (P 在)
+			      (LCP (NP (NN 协议书))
+				   (LC 上)))
+		      (VP (VV 签)
+			  (AS 了)
+			  (NP-OBJ (NN 字)))))) 
+	  </parse>
+	  <arg n="0">
+	  李富荣 和 吴永文 	  
+	  </arg>
+	  <arg n="1">
+	  字 	  
+	  </arg>
+	  <arg n="2">
+	  在 协议书 上 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="signer"/>
+      <role argnum="1" argrole="thing signed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 今年))
+		  (ADVP (AD 已))
+		  (ADVP (AD 新))
+		  (VP (VV 签)
+		      (NP-OBJ (NN 海外)
+			      (NN 工程)
+			      (NN 承包)
+			      (CC 及)
+			      (NN 劳务)
+			      (NN 合同))
+		      (QP-EXT (CD 五百八十六)
+			      (CLP (M 份)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  海外 工程 承包 及 劳务 合同 	  
+	  </arg>
+	  <arg n="1" f="QTY">
+	  五百八十六 份 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  新 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 	  
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今年 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

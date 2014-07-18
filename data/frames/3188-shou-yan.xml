@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 首演 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing performed for the first time"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 名))
+				      (VP (VC 为)
+					  (NP-PRD=55 (NT １９９７)
+						     (NP-TTL (PU 《)
+							     (NP (NN 天)
+								 (NN 地)
+								 (NN 人))
+							     (PU 》)))))
+				  (DEC 的)))
+			  (NP (NN 交响曲)))
+		      (CC 和)
+		      (NP (CP (WHNP-2 (-NONE- *OP*))
+			      (CP (IP (NP-TPC (-NONE- *T*-2))
+				      (NP-SBJ (-NONE- *pro*))
+				      (VP (NP-TTL-OBJ (PU 《)
+						      (NN 回归颂)
+						      (PU 》))))
+				  (DEC 的)))
+			  (NP (NN 歌曲))))
+	      (VP (NP-TMP (NT 今日)
+			  (PRN (PU （)
+			       (NP (NT 星期二))
+			       (PU ）)))
+		  (PP-LOC (P 在)
+			  (LCP (NP (DNP (NP-PN (NR 香港)
+					       (NN 会议)
+					       (NN 展览)
+					       (NN 中心))
+					(DEG 的))
+				   (NP (NN 特区)
+				       (NN 成立)
+				       (NN 庆典)))
+			       (LC 上)))
+		  (VP (VV 首演)))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 名 为 １９９７ 《 天 地 人 》 的 交响曲 和 *OP* *T*-2 *pro* 《 回归颂 》 的 歌曲 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 香港 会议 展览 中心 的 特区 成立 庆典 上 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  今日 （ 星期二 ） 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

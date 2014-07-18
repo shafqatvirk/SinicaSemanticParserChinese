@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 启发 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 inspires"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 启发)
+		(AS 了)
+		(NP-OBJ (NP (PN 他))
+			(CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				    (VP (BA 将)
+					(IP-OBJ (NP-SBJ (NN 毛毛人))
+						(VP (VV 立体化)))))
+				(DEC 的))
+			(NP (NN 动机))))) 
+	</parse>
+	<arg n="0">
+	*pro* 
+	</arg>
+	<arg n="1">
+	他 *PRO* 将 毛毛人 立体化 的 动机 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-PRD (NP-SBJ (-NONE- *PRO*))
+		(VP (VP (VV 改变)
+			(NP-OBJ (NP (NT 过去))
+				(DP (DT 那)
+				    (CLP (M 种)))
+				(CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (PU 「)
+						(VA 粗暴)
+						(PU 」)))
+					(DEC 的)))
+				(NP (NN 方式))))
+		    (PU ，)
+		    (VP (PP-MNR (P 透过)
+				(NP (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (VV 启发)
+						    (PU 、)
+						    (VV 尊重)))
+					    (DEC 的))
+				    (NP (NN 过程))))
+			(VP (MSP 去)
+			    (VP (VV 达到)
+				(NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					    (CP (IP (NP-SBJ (-NONE- *T*-3))
+						    (VP (ADVP (AD 最))
+							(VP (VA 好))))
+						(DEC 的)))
+					(NP (NN 结果)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

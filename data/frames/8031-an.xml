@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 安 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 places"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (QP-TPC (OD 头)
+		      (CLP (M 棒)))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 需)
+		      (VP (ADVP (AD 先))
+			  (VP (VV 安)
+			      (NP-OBJ (NN 基)))))
+		  (VP (ADVP (AD 再))
+		      (VP (VV 击)
+			  (NP-OBJ (NN 球)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  基 
+	  </arg>
+	  <arg n="m" f="adv">
+	  先 
+	  </arg>
+	  <arg n="m" f="bnf">
+	  头 棒 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

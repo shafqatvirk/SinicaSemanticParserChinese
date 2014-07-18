@@ -1,0 +1,39 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 停火 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity which stops fighting"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-LOC (P 在)
+			  (NP (NP-PN (NR 戈拉日代))
+			      (CC 及)
+			      (NP (NP (PN 其))
+				  (NP (NN 周围)))))
+		  (ADVP (AD 立即))
+		  (ADVP (AD 全面))
+		  (VP (VV 停火)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全面 
+	  </arg>
+	  <arg n="m" f="adv">
+	  立即 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 戈拉日代 及 其 周围 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

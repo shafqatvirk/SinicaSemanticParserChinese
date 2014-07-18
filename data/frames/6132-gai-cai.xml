@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 改采 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 shifts to adopt"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (PP-PRP (P 为了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 取巧))
+			    (VP (VV 省)
+				(NP-OBJ (NN 钱))))))
+	    (PU ，)
+	    (NP-SBJ (QP (CD 许多))
+		    (NP (NN 人)))
+	    (VP (VP (VV 改采)
+		    (NP-OBJ (PU 「)
+			    (NN 区间法)
+			    (PU 」)))
+		(PU ：)
+		(VP (VV 因应)
+		    (NP-OBJ (DNP (ADJP (JJ 个别))
+				 (DEG 的))
+			    (NP (NN 业务)
+				(NN 需要))))
+		(PU ，)
+		(VP (VV 选取)
+		    (NP-OBJ (QP (CD 一)
+				(CLP (M 个)))
+			    (NP (NN 基准)
+				(NN 年份))))
+		(PU ，)
+		(VP (PP-MNR (P 据)
+			    (NP (NN 此)))
+		    (VP (VRD (VV 区分)
+			     (VV 为))
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (VA 不同)))
+					(DEC 的)))
+				(NP (NN 世纪))))))) 
+	</parse>
+	<arg n="0">
+	许多 人 
+	</arg>
+	<arg n="1">
+	「 区间法 」 
+	</arg>
+	<arg n="m" f="prp">
+	为了 *PRO* 取巧 省 钱 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

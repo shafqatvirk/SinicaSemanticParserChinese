@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 图取 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 tries to obtain"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NP (NP-APP (NP-PN (NR 苗栗))
+				(NP (NN 县长)))
+			(NP-PN (NR 傅学鹏)))
+		    (PU 、)
+		    (NP (NP-APP (NN 县议员))
+			(NP-PN (NR 罗幸春)
+			       (PU 、)
+			       (NR 谢清泉))))
+	    (VP (VV 涉嫌)
+		(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			(VP (VP (VV 利用)
+				(NP-OBJ (NN 职务)))
+			    (PU ，)
+			    (VP (VV 图取)
+				(NP-OBJ (NN 出国)
+					(NN 考察)
+					(NN 经费))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	出国 考察 经费 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

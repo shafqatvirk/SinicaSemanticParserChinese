@@ -1,0 +1,67 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 拿起 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 picks up"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 他))
+	    (VP (VP (VV 吓)
+		    (AS 了)
+		    (QP-EXT (CD 一)
+			    (CLP (M 跳))))
+		(PU ，)
+		(VP (LCP-TMP (NP (NN 一时))
+			     (LC 之间))
+		    (ADVP (AD 不))
+		    (VP (VV 知)
+			(IP-Q-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (VV 发生)
+				      (AS 了)
+				      (NP-OBJ (DP-WH (DT 什麽))
+					      (NP (NN 事)))))))
+		(PU ，)
+		(VP (ADVP (AD 只))
+		    (VP (VV 见)
+			(NP-OBJ (NN 父亲))
+			(IP (NP-SBJ (-NONE- *PRO*))
+			    (VP (VP (DVP (ADVP (AD 慢慢))
+					 (DEV 地))
+				    (PP-DIR (P 从)
+					    (LCP (NP (NN 桌))
+						 (LC 上)))
+				    (VP (VV 拿起)
+					(NP-OBJ (NN 手机))))
+				(PU ，)
+				(VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					    (VP (VA 轻轻松松)))
+				    (ADVP (AD 就))
+				    (PP (P 和)
+					(NP (NN 妈妈)))
+				    (VP (VRD (VV 聊)
+					     (VV 起来)))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	手机 
+	</arg>
+	<arg n="m" f="dir">
+	从 桌 上 
+	</arg>
+	<arg n="m" f="adv">
+	慢慢 地 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,168 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 兴建 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing built"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-PN-SBJ (NR 海南))
+		  (VP (ADVP (AD 将))
+		      (VP (VV 兴建)
+			  (NP-OBJ (NP (NN 西线))
+				  (ADJP (JJ 高速))
+				  (NP (NN 公路)))))) 
+	  </parse>
+	  <arg n="0">
+	  海南 
+	  </arg>
+	  <arg n="1">
+	  西线 高速 公路 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 有的))
+	      (VP (ADVP (AD 即将))
+		  (VP (VCD (VV 动工)
+			   (VV 兴建))))) 
+	  </parse>
+	  <arg n="1">
+	  有的 
+	  </arg>
+	  <arg n="m" f="adv">
+	  即将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 一九八八年))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *-2))
+	      (VP (PP-LGS (P 由)
+			  (NP (NP-APP (NP-PN (NR 中国)
+					     (NN 邮电部))
+				      (PU 、)
+				      (NP (NP-PN (NR 武汉市))
+					  (NP (NN 政府)))
+				      (CC 和)
+				      (NP-PN (NR 荷兰)
+					     (NR 飞利浦)
+					     (NN 公司)))
+			      (NP (NN 三方))))
+		  (ADVP (AD 共同))
+		  (VP (VP (VV 投资)
+			  (NP-OBJ (QP (CD 五亿多)
+				      (CLP (M 元)))
+				  (NP (NN 人民币))))
+		      (VP (VV 兴建)
+			  (AS 了)
+			  (NP-OBJ-2 (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (NP-PN-LOC (NR 中国))
+						    (ADVP (AD 最))
+						    (VP (VA 大))))
+					    (DEC 的)))
+				    (NP (NN 光纤)
+					(NN 光缆))
+				    (NP (NN 专业)
+					(NN 生产)
+					(NN 企业))
+				    (PRN (PU ━━)
+					 (NP-PN (NP-PN (NR 武汉))
+						(NP-PN (NR 长飞))
+						(NP (NN 光纤)
+						    (NN 光缆))
+						(ADJP (JJ 有限))
+						(NP (NN 公司))))))))) 
+	  </parse>
+	  <arg n="0">
+	  由 中国 邮电部 、 武汉市 政府 和 荷兰 飞利浦 公司 三方 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 中国 最 大 的 光纤 光缆 专业 生产 企业 ━━ 武汉 长飞 光纤 光缆 有限 公司 
+	  </arg>
+	  <arg n="m" f="adv">
+	  共同 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  一九八八年 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (DNP (NP (ADJP (NP (DP (DT 全))
+					 (NP (NN 国)))
+				     (ADJP (JJ 最大)))
+			       (NP (NN 规模)))
+			   (DEG 的))
+		      (NP (NN 木浆厂)))
+	      (VP (ADVP (AD 将))
+		  (VP (VP (PP-LGS (P 由)
+				  (NP-PN (NP-PN (NR 新加坡))
+					 (NP-PN (NR 亚洲))
+					 (NP (NN 浆纸业))
+					 (NP (NN 股份))
+					 (ADJP (JJ 有限))
+					 (NP (NN 公司))))
+			  (VP (VP (VV 投资)
+				  (QP-OBJ (CD 十二点八三亿)
+					  (CLP (M 美元))))
+			      (VP (VV 兴建))))
+		      (PU ，)
+		      (VP (ADVP (AD 年))
+			  (VP (VV 产)
+			      (NP-OBJ (ADJP (JJ 漂白))
+				      (NP (NN 商品)
+					  (NN 木浆)))
+			      (QP-EXT (CD 六十万)
+				      (CLP (M 吨)))))))) 
+	  </parse>
+	  <arg n="0">
+	  由 新加坡 亚洲 浆纸业 股份 有限 公司 
+	  </arg>
+	  <arg n="1">
+	  这 个 全 国 最大 规模 的 木浆厂 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

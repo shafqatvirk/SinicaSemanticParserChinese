@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 移垦 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity moving"/>
+    <role argnum="1" argrole="place arg0 moves to"/>
+    <role argnum="2" argrole="place arg0 moves from"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="dir" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (IP (NP-PN-SBJ (NR 郑成功))
+			 (VP (VV 来)
+			     (NP-PN-OBJ (NR 台))))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (NN 汉人))
+	    (VP (PP-DIR (P 由)
+			(NP-PN (NR 闽)
+			       (NR 粤)))
+		(VP (VV 移垦)))) 
+	</parse>
+	<arg n="0">
+	汉人 
+	</arg>
+	<arg n="2">
+	由 闽 粤 
+	</arg>
+	<arg n="m" f="tmp">
+	郑成功 来 台 後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

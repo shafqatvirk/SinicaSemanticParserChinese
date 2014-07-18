@@ -1,0 +1,60 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抢到 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="entity arg0 snatches"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 加上)
+			  (IP-OBJ (NP-SBJ (-NONE- *pro*))
+				  (VP (ADVP (AD 从头到尾))
+				      (ADVP (AD 只))
+				      (VP (VE 有)
+					  (NP-OBJ (NN 钢琴)
+						  (NN 伴奏)))))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 孙燕姿))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (VP (VA 乾净))
+				      (VP (VV 富)
+					  (NP-OBJ (NN 感染力)))))
+			      (DEC 的)))
+		      (NP (NN 歌声)))
+	      (VP (ADVP (AD 於是))
+		  (VP (ADVP (AD 一举))
+		      (VP (VV 打动)
+			  (NP-OBJ (NN 人心)))
+		      (PU ，)
+		      (VP (ADVP (AD 安全))
+			  (VP (VV 抢到)
+			      (NP-OBJ (NN 位置))))))) 
+	  </parse>
+	  <arg n="0">
+	  孙燕姿 *OP* *T*-2 乾净 富 感染力 的 歌声 
+	  </arg>
+	  <arg n="1">
+	  位置 
+	  </arg>
+	  <arg n="m" f="adv">
+	  安全 
+	  </arg>
+	  <arg n="m" f="adv">
+	  於是 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 加上 *pro* 从头到尾 只 有 钢琴 伴奏 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

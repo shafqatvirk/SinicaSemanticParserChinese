@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 关厂 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="argM"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-LOC (IP (NP-SBJ (NN 内外))
+			   (VP (VV 夹击)))
+		       (LC 下))
+	      (PU ，)
+	      (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (IP (NP-TPC (-NONE- *T*-1))
+				      (NP-SBJ (NN 劳力))
+				      (VP (VA 密集)))
+				  (PU 、)
+				  (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 需要)
+					  (NP-OBJ (QP (CD 大量))
+						  (NP (NN 车缝)
+						      (NN 工人))))))
+			      (DEC 的)))
+		      (NP (NN 成衣业)))
+	      (VP (DVP (CLP (CLP (ADJP (JJ 整))
+				 (CLP (M 批)))
+			    (CLP (ADJP (JJ 整))
+				 (CLP (M 批))))
+		       (DEV 地))
+		  (VP (VP (VV 关厂))
+		      (PU ，)
+		      (VP (VV 移往)
+			  (NP-OBJ (NP (NN 大陆))
+				  (CC 及)
+				  (NP-PN (NR 东南亚))))))) 
+	  </parse>
+	  <arg n="m" f="adv">
+	  整 批 整 批 地 
+	  </arg>
+	  <arg n="m" f="tpc">
+	  *OP* *T*-1 劳力 密集 、 *T*-1 需要 大量 车缝 工人 的 成衣业 
+	  </arg>
+	  <arg n="m" f="loc">
+	  内外 夹击 下 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

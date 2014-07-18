@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 买 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="buyer"/>
+      <role argnum="1" argrole="entity bought"/>
+      <role argnum="2" argrole="seller"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-ADV (CP (WHNP-1 (-NONE- *OP*))
+			  (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VA 相反)))
+			  (DEC 的)))
+	      (PU ，)
+	      (LCP-TMP (IP (NP-SBJ (NN 台商))
+			   (VP (ADVP (AD 陆续))
+			       (VP (VV 移往)
+				   (NP-PN-OBJ (NR 东南亚)))))
+		       (LC 後))
+	      (PU ，)
+	      (NP-SBJ (QP (CD 多数))
+		      (NP (NN 业者)))
+	      (VP (ADVP (AD 仍))
+		  (VP (VV 保持)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (PP-DIR (P 向)
+						      (NP-PN (NR 台湾)))
+					      (VP (VV 买)
+						  (NP-OBJ (NN 中间)
+							  (NN 原料)
+							  (CC 或)
+							  (NN 机器)
+							  (NN 设备)))))
+				      (DEC 的))
+			      (NP (NN 习惯)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  中间 原料 或 机器 设备 	  
+	  </arg>
+	  <arg n="2">
+	  向 台湾 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

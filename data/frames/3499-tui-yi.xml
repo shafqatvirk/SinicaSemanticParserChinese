@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 退役 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people who retire from active service"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (NP (NT 近年))
+		       (LC 来))
+	      (NP-SBJ (NP (NN 国家)
+			  (NN 女足))
+		      (QP (CD 一些))
+		      (ADJP (JJ 老))
+		      (NP (NN 队员)))
+	      (VP (ADVP (AD 相继))
+		  (VP (VV 退役)))) 
+	  </parse>
+	  <arg n="0">
+	  国家 女足 一些 老 队员 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相继 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  近年 来 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

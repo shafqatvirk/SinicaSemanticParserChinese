@@ -1,0 +1,139 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 叫到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 calls"/>
+    <role argnum="2" argrole="place arg1 is called to"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="ext" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 虽然))
+		    (NP-SBJ (DP (DT 全))
+			    (NP (NN 家)))
+		    (VP (ADVP (AD 都))
+			(VP (VV 刻意)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 承欢))))))
+	    (PU ，)
+	    (NP-SBJ (NN 老爸))
+	    (VP (VP (ADVP (AD 最後))
+		    (ADVP (AD 还是))
+		    (VP (VPT (VV 忍)
+			     (AD 不)
+			     (VV 住))
+			(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				(VP (VV 发飙)))))
+		(PU ，)
+		(VP (PP-TMP (P 在)
+			    (LCP (IP (NP-SBJ (NN 年夜饭))
+				     (VP (VV 近)
+					 (NP-OBJ (NN 尾声))))
+				 (LC 时)))
+		    (PU ，)
+		    (ADVP (AD 忽然))
+		    (DVP (VP (ADVP (AD 有些))
+			     (VP (VA 激动)))
+			 (DEV 的))
+		    (VP (VP (BA 把)
+			    (IP-OBJ (NP-SBJ (DNP (NP (PN 他))
+						 (DEG 的))
+					    (QP (CD 众))
+					    (NP (NN 儿女)))
+				    (VP (VP (VV 叫到)
+					    (LCP-OBJ (NP (NN 身))
+						     (LC 边)))
+					(VP (VV 来)))))
+			(VP (VV 说)
+			    (PU ：)
+			    (IP-OBJ (NP-SBJ (PN 我))
+				    (VP (VV 要)
+					(VP (PP (P 和)
+						(NP (PN 你们)))
+					    (VP (VP (QP-ADV (CD 一)
+							    (CLP (M 个个)))
+						    (VP (VRD (VV 算)
+							     (VV 清楚))
+							(NP-OBJ (NN 帐))))
+						(PU ，)
+						(VP (QP-ADV (CD 一)
+							    (CLP (M 个个)))
+						    (ADVP (AD 轮流))
+						    (VP (VV 算)))))))))))) 
+	</parse>
+	<arg n="0">
+	老爸 
+	</arg>
+	<arg n="1">
+	他 的 众 儿女 
+	</arg>
+	<arg n="2">
+	身 边 
+	</arg>
+	<arg n="m" f="adv">
+	有些 激动 的 
+	</arg>
+	<arg n="m" f="adv">
+	忽然 
+	</arg>
+	<arg n="m" f="tmp">
+	在 年夜饭 近 尾声 时 
+	</arg>
+	<arg n="m" f="adv">
+	虽然 全 家 都 刻意 *PRO* 承欢 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity whose name arg0 calls"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-3 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-3))
+				(VP (SB 被)
+				    (VP (VV 叫到))))
+			    (DEC 的))))
+	    (VP (VP (ADVP (AD 便))
+		    (VP (VV 收拾)
+			(NP-OBJ (NN 行李))))
+		(PU ，)
+		(VP (ADVP (AD 然後))
+		    (VP (SB 被)
+			(VP (VV 带到)
+			    (NP-OBJ (NN 广场)))))
+		(PU ，)
+		(VP (ADVP (AD 尔後))
+		    (ADVP (AD 再))
+		    (DVP (IP (NP-SBJ (QP (CD 两)
+					 (CLP (M 个)))
+				     (NP (NN 人)))
+			     (VP (VV 成)
+				 (QP-OBJ (CD 一)
+					 (CLP (M 对)))))
+			 (DEV 的))
+		    (VP (SB 被)
+			(VP (VV 扣上)
+			    (NP-OBJ (NN 手铐))))))) 
+	</parse>
+	<arg n="1">
+	*T*-3 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

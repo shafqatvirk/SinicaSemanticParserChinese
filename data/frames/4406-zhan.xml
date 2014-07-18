@@ -1,0 +1,72 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 站 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 stands"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (QP-SBJ (PU “)
+			  (QP (CD 三)
+			      (CLP (-NONE- *RNR*-3)))
+			  (CC 到)
+			  (QP (CD 四)
+			      (CLP-3 (M 位)))
+			  (PU ”))
+		  (VP (VV 站)
+		      (PP (P 在)
+			  (NP (NP (NN 资方))
+			      (QP (CD 一))
+			      (NP (NN 边)))))) 
+	  </parse>
+	  <arg n="0">
+	  “ 三 *RNR*-3 到 四 位 ” 
+	  </arg>
+	  <arg n="1">
+	  在 资方 一 边 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 首先))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 美国))
+			   (DEG 的))
+		      (DP (DT 这)
+			  (CLP (M 次)))
+		      (NP (NN 行动)))
+	      (VP (VE 没有)
+		  (NP-OBJ (DP (DT 任何))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VPT (VV 站)
+					       (DER 得)
+					       (VV 住))
+					  (NP-OBJ (NN 脚))))
+				  (DEC 的)))
+			  (NP (NN 理由))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

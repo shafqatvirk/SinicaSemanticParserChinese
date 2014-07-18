@@ -1,0 +1,78 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 匹配 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entities matching each other"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 按照)
+		      (NP (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (NP-TMP (NT 最近))
+					  (ADVP (AD 初步))
+					  (VP (VV 制定))))
+				  (DEC 的)))
+			  (NP-PN (NR 上海))
+			  (NP (NN 都市)
+			      (NN 旅游)
+			      (NN 发展)
+			      (NN 规划))))
+	      (PU ，)
+	      (PP-TMP (P 到)
+		      (NP (NT 二０００年)))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 上海))
+	      (VP (VV 要)
+		  (VP (VV 建成)
+		      (NP-OBJ (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (PP (P 与)
+						  (NP (NP (NP-PN (NR 中国))
+							  (ADJP (JJ 最大))
+							  (NP (NN 经济)
+							      (NN 中心)))
+						      (NP (NN 城市))))
+					      (ADVP (AD 相))
+					      (VP (VV 匹配))))
+				      (DEC 的)))
+			      (NP-APP (NN 国际)
+				      (NN 商务)
+				      (PU 、)
+				      (NN 国内)
+				      (NN 购物)
+				      (CC 和)
+				      (NN 国内外)
+				      (NN 会议)
+				      (NN 展览)
+				      (PU 、)
+				      (NN 文化)
+				      (NN 体育)
+				      (PU 、)
+				      (NN 都市)
+				      (NN 风貌)
+				      (ETC 等))
+			      (NP (NN 观光)
+				  (NN 休闲)
+				  (NN 专项)
+				  (NN 旅游)
+				  (NN 聚集地)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 
+	  </arg>
+	  <arg n="0">
+	  与 中国 最大 经济 中心 城市 
+	  </arg>
+	  <arg n="m" f="adv">
+	  相 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

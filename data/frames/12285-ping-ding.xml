@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 评定 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="rater"/>
+      <role argnum="1" argrole="rated"/>
+      <role argnum="2" argrole="entity arg1 is rated as"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="other" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (VP (VA 科学))
+				  (PU 、)
+				  (VP (VA 透明))))
+			  (DEC 的)))
+		  (NP (NN 信用)
+		      (NN 评定)
+		      (NN 管理)
+		      (NN 体系))) 
+	  </parse>
+	  <arg n="1">
+	  信用 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 科学 、 透明 的 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

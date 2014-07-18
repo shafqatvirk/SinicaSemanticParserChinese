@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捕获 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="entity arg0 catches"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VP-FOC (VV 捕获)
+					    (NP-OBJ (NP-PN (NR 大西洋))
+						    (NP (NN 黑鲔))))
+				    (VP (VV 居)
+					(QP-OBJ (NP (NN 世界))
+						(QP (OD 第五))))))
+			    (DEC 的)))
+		    (NP-PN (NR 台湾)))
+	    (PU ，)
+	    (VP (ADVP (AD 已))
+		(PP-TMP (P 於)
+			(LCP (NP (NT 去年))
+			     (LC 底)))
+		(VP (VP (ADVP (AD 正式))
+			(VP (VV 进入)
+			    (NP-PN-OBJ (NR ICCAT))))
+		    (PU ，)
+		    (VP (DVP (VP (VV 有所)
+				 (NP-OBJ (NN 节制)))
+			     (DEV 地))
+			(VP (VV 捕捞)
+			    (NP-OBJ (DP (DT 这))
+				    (LCP (NP (NN 海))
+					 (LC 中))
+				    (NP (NN 珍品)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-2 
+	</arg>
+	<arg n="1">
+	大西洋 黑鲔 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 而))
+	    (NP-TPC (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VP (VV 跟著)
+					(NP-OBJ (NP (NN 海水)
+						    (NN 温度))
+						(NP (NN 改变))))
+				    (VP (MSP 而)
+					(VP (VV 改变)
+					    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+							(IP (NP-SBJ (-NONE- *pro*))
+							    (VP (NP-LOC (-NONE- *T*-1))
+								(VP (VV 产卵)))))
+						    (NP (NN 地方)))))))
+			    (DEC 的)))
+		    (NP (NN 乌鱼)))
+	    (PU ，)
+	    (PP-ADV (P 除了)
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 先))
+			    (VP (VC 是)
+				(VP (VV 遭)
+				    (NP-OBJ (NN 大陆)
+					    (NN 渔船))
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VV 拦截))))))))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NR 台湾))
+		    (NP (NN 渔民)))
+	    (VP (VP-FOC (VV 捕获))
+		(VP (ADVP (AD 不))
+		    (VP (VA 易))))) 
+	</parse>
+	<arg n="0">
+	台湾 渔民 
+	</arg>
+	<arg n="1">
+	*OP* *T*-2 跟著 海水 温度 改变 而 改变 *OP* *pro* *T*-1 产卵 地方 的 乌鱼 
+	</arg>
+	<arg n="m" f="adv">
+	除了 *PRO* 先 是 遭 大陆 渔船 *PRO* 拦截 
+	</arg>
+	<arg n="m" f="dis">
+	而 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

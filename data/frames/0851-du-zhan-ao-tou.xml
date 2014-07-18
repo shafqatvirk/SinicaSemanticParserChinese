@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 独占鳌头 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="dominant element"/>
+      <role argnum="1" argrole="relevant elements"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP (P 就)
+			      (NP (NN 进出口)
+				  (NN 商品)
+				  (NN 种类)))
+			  (VP (MSP 来)
+			      (VP (VV 看)))))
+	      (PU ，)
+	      (NP-SBJ (NN 机电)
+		      (NN 产品))
+	      (VP (PP-LOC (P 在)
+			  (LCP (NP (NP-PN (NR 浦东)
+					  (NN 新区))
+				   (NP (NN 进口)
+				       (NN 货物)))
+			       (LC 中)))
+		  (VV 独占鳌头))) 
+	  </parse>
+	  <arg n="0">
+	  机电 产品 
+	  </arg>
+	  <arg n="1">
+	  在 浦东 新区 进口 货物 中 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 就 进出口 商品 种类 来 看 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

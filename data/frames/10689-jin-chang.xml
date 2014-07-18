@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 进厂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity entering factory"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-TPC (DNP (LCP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 进厂)))
+			      (LC 後))
+			 (DEG 的))
+		    (NP (NN 日子)))
+	    (PU ，)
+	    (UCP-SBJ (ADVP (AD 无论是))
+		     (UCP (NP (NN 训练)
+			      (NN 期间))
+			  (CC 或)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 正式))
+				  (VP (VV 工作))))))
+	    (VP (ADVP (AD 却))
+		(ADVP (AD 更))
+		(VP (VA 辛苦)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,37 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 排出 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 releases"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 不仅))
+	    (NP-SBJ (DNP (NP (NN 人体))
+			 (DEG 的))
+		    (NP (NN 汗气)))
+	    (VP (VV 可以)
+		(VP (ADVP (AD 瞬间))
+		    (VP (VV 排出)
+			(LCP-LOC (NP (NN 体))
+				 (LC 外)))))) 
+	</parse>
+	<arg n="1">
+	人体 的 汗气 
+	</arg>
+	<arg n="m" f="adv">
+	瞬间 
+	</arg>
+	<arg n="m" f="dis">
+	不仅 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

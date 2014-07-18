@@ -1,0 +1,57 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 仿效 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="imitator"/>
+      <role argnum="1" argrole="thing imitated"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-PN-SBJ (NR 中国))
+		  (VP (VV 成为)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (NP-PN (NR 中东))
+						  (NP (DP (DT 各))
+						      (NP (NN 国)))
+						  (NP (NN 人民))
+						  (PU ，)
+						  (PRN (VP (CC 既)
+							   (VP (VV 包括)
+							       (NP-OBJ (NN 以色列人)))
+							   (CC 也)
+							   (VP (VV 包括)
+							       (NP-OBJ (NN 阿拉伯人))))))
+					  (PU ，)
+					  (VP (PP-LOC (P 在)
+						      (LCP (NP (CP (WHPP-2 (-NONE- *OP*))
+								   (IP (NP-SBJ (PN 我们))
+								       (VP (PP (-NONE- *T*-2))
+									   (ADVP (AD 共同))
+									   (VP (VV 走向)
+									       (NP-OBJ (NT 未来))))))
+							       (NP (NN 道路)))
+							   (LC 上)))
+					      (VP (VV 仿效)
+						  (NP-OBJ (-NONE- *T*-1)))))
+				      (DEC 的)))
+			      (NP (NN 榜样))))) 
+	  </parse>
+	  <arg n="0">
+	  中东 各 国 人民 ， 既 包括 以色列人 也 包括 阿拉伯人 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 *OP* 我们 *T*-2 共同 走向 未来 道路 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

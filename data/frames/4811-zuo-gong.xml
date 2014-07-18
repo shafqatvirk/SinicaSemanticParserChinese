@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 做工 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 现在))
+	      (PU ，)
+	      (NP-SBJ (DNP (NP-PN (NR 陈忠发))
+			   (DEG 的))
+		      (QP (CD 三)
+			  (CLP (M 个)))
+		      (NP (NN 儿女)))
+	      (VP (ADVP (AD 也))
+		  (ADVP (AD 都))
+		  (PP-LOC (P 在)
+			  (NP (NN 工厂)))
+		  (VP (VV 做工)))) 
+	  </parse>
+	  <arg n="0">
+	  陈忠发 的 三 个 儿女 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 工厂 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  现在 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

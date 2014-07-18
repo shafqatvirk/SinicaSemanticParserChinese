@@ -1,0 +1,103 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 怪 </id>
+  <frameset id="f1" edef="blame">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 blames"/>
+    <role argnum="2" argrole="thing arg1 is blamed for"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="controlip" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 创作者))
+	    (VP (VV 怪)
+		(NP-OBJ (NN 政府))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 不))
+			(VP (VV 出面)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 维持)
+					(NP-OBJ (NN 市场)
+						(NN 秩序))))))))) 
+	</parse>
+	<arg n="0">
+	创作者 
+	</arg>
+	<arg n="1">
+	政府 
+	</arg>
+	<arg n="2">
+	*PRO* 不 出面 *PRO* 维持 市场 秩序 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (PN 我们))
+	    (VP (VP (ADVP (AD 不))
+		    (VP (VV 能)
+			(VP (VV 怪)
+			    (NP-OBJ (NN 别人))))))) 
+	</parse>
+	<arg n="0">
+	我们 
+	</arg>
+	<arg n="1">
+	别人 
+	</arg>
+	<arg n="m" f="adv">
+	不 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+  <frameset id="f2" edef="strange">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-CND (ADVP (CS 如果))
+		    (IP (NP-SBJ (ADVP (AD 只有))
+				(NP (NN 小孩)))
+			(VP (PP-LOC (P 在)
+				    (NP (NN 网路)
+					(NN 上面)))
+			    (VP (VV 混)))))
+	    (PU ，)
+	    (IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 不))
+			(VP (VV 出事))))
+	    (VP (ADVP (AD 才))
+		(VP (VA 怪)))) 
+	</parse>
+	<arg n="0">
+	*PRO* 不 出事 
+	</arg>
+	<arg n="m" f="adv">
+	才 
+	</arg>
+	<arg n="m" f="cnd">
+	如果 只有 小孩 在 网路 上面 混 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 运来 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing transported"/>
+      <role argnum="2" argrole="location arg1 is transported from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (NN 煤炭))
+		  (VP (PP-DIR (P 从)
+			      (NP-PN (NR 徐州)))
+		      (VP (VV 运来)))) 
+	  </parse>
+	  <arg n="1">
+	  煤炭 
+	  </arg>
+	  <arg n="2">
+	  从 徐州 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

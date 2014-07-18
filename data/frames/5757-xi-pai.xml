@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 洗牌 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="entity arg0 shuffles"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (CP-ADV (ADVP (CS 不管))
+		    (IP (NP-SBJ (PN 他))
+			(VP (VV 胜选)
+			    (ADVP (AD 与否)))))
+	    (PU ，)
+	    (NP-SBJ (-NONE- *pro*))
+	    (VP (ADVP (AD 都))
+		(ADVP (AD 将))
+		(VP (VV 使)
+		    (NP-OBJ (NP-PN (NR 台湾))
+			    (NP (NN 政党)
+				(NN 政治)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (ADVP (AD 重新))
+			    (VP (VV 洗牌))))))) 
+	</parse>
+	<arg n="1">
+	*PRO* 
+	</arg>
+	<arg n="m" f="adv">
+	重新 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

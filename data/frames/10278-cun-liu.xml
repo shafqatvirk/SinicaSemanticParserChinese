@@ -1,0 +1,44 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 存留 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="place arg0 remains in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VA 类似)))
+			    (DEC 的)))
+		    (NP (NN 感觉)))
+	    (PU ，)
+	    (VP (PP-LOC (P 在)
+			(LCP (NP (NP-APP (NN 新作))
+				 (NP-TTL (PU 〈)
+					 (NN 放生)
+					 (PU 〉)))
+			     (LC 里)))
+		(ADVP (AD 依然))
+		(VP (VV 存留)
+		    (AS 著)))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-1 类似 的 感觉 
+	</arg>
+	<arg n="1">
+	在 新作 〈 放生 〉 里 
+	</arg>
+	<arg n="m" f="adv">
+	依然 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

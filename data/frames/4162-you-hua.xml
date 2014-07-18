@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 优化 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="theme"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP (PU “)
+			  (NT 八五)
+			  (PU ”))
+		      (NN 期间))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 广东))
+		      (NP (NN 电子)
+			  (NN 工业)))
+	      (VP (VP (VV 优化)
+		      (NP-OBJ (NN 地区)
+			      (NN 布局)))
+		  (PU ，)
+		  (VP (VV 形成)
+		      (NP-OBJ (IP-APP (NP-SBJ (NN 区域))
+				      (VP (ADVP (AD 集中))
+					  (VP (VV 发展))))
+			      (NP (NN 优势)))))) 
+	  </parse>
+	  <arg n="0">
+	  广东 电子 工业 
+	  </arg>
+	  <V/>
+	  <arg n="1">
+	  地区 布局 
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而且))
+	      (PU ，)
+	      (NP-SBJ (NN 出口)
+		      (NN 商品)
+		      (NN 结构))
+	      (VP (VV 继续)
+		  (VP (VV 优化)))) 
+	  </parse>
+	  <arg n="1">
+	  出口 商品 结构 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

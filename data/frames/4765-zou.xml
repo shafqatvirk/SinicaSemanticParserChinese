@@ -1,0 +1,173 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 走 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving"/>
+      <role argnum="1" argrole="road arg0 takes"/>
+      <role argnum="2" argrole="location arg0 walks to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 汕头)
+			 (NN 超声)
+			 (NN 仪器)
+			 (NN 研究所))
+	      (PU ，)
+	      (VP (VP (VV 坚持)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 走)
+				  (NP-OBJ (CP-APP (IP (NP-SBJ (NP (NN 引进))
+							      (CC 和)
+							      (NP (ADJP (JJ 自主))
+								  (NP (NN 研究)
+								      (NN 开发))))
+						      (VP (ADVP (AD 相))
+							  (VP (VV 结合))))
+						  (DEC 的))
+					  (NP (NN 路子))))))
+		  (PU ，)
+		  (VP (ADVP (AD 先后))
+		      (VP (VCD (VV 研究)
+			       (VV 开发))
+			  (NP-OBJ (QP (CD 四十多)
+				      (CLP (M 项)))
+				  (NP (ADJP (JJ 高新))
+				      (NP (NN 技术)))
+				  (NP (NN 产品))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  引进 和 自主 研究 开发 相 结合 的 路子 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 债))
+	      (VP (PP (P 随)
+		      (NP (NN 资)))
+		  (VP (VV 走)))) 
+	  </parse>
+	  <arg n="0">
+	  债 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随 资 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 作为)
+		      (NP (NP (NN 祖国)
+			      (NN 大陆))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (ADVP (AD 最早))
+					  (VP (VV 制定)
+					      (NP-OBJ (ADJP (JJ 涉台))
+						      (NP (NN 法规))))))
+				  (DEC 的)))
+			  (NP (NN 省份))))
+	      (PU ，)
+	      (NP-SBJ (NP-PN (NR 福建))
+		      (ADJP (JJ 涉台))
+		      (NP (NN 立法)))
+	      (VP (ADVP (AD 一直))
+		  (VP (VV 走)
+		      (PP-LOC (P 在)
+			      (NP (NN 前列)))))) 
+	  </parse>
+	  <arg n="0">
+	  福建 涉台 立法 
+	  </arg>
+	  <arg n="m" f="loc">
+	  在 前列 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一直 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  作为 祖国 大陆 *OP* *T*-1 最早 制定 涉台 法规 的 省份 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 人才)
+		      (NN 引进)
+		      (NN 部门))
+	      (VP (ADVP (AD 还))
+		  (ADVP (AD 积极))
+		  (VP (VP (VRD (VV 走)
+			       (VV 出去)))
+		      (VP (VV 延揽)
+			  (NP-OBJ (NN 科技)
+				  (NN 管理)
+				  (NN 人才)))))) 
+	  </parse>
+	  <arg n="0">
+	  人才 引进 部门 
+	  </arg>
+	  <arg n="m" f="adv">
+	  积极 
+	  </arg>
+	  <arg n="m" f="adv">
+	  还 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="people visited"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-ADV (NP-SBJ (NN 山下人))
+		  (VP (VP (VV 到)
+			  (NP-OBJ (DP (DT 这)
+				      (CLP (M 个)))
+				  (NP (NN 村))))
+		      (VP (VV 走)
+			  (NP-OBJ (NN 亲戚))))) 
+	  </parse>
+	  <arg n="0">
+	  山下人 
+	  </arg>
+	  <arg n="1">
+	  亲戚 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

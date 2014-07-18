@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 达成 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="parties"/>
+      <role argnum="1" argrole="agreement, consensus, etc."/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 城市)
+		      (NN 北)
+		      (NN 出口)
+		      (NN 道路)
+		      (NN 建设)
+		      (NN 工程))
+	      (VP (ADVP (AD 已))
+		  (PP (P 与)
+		      (NP-PN (NR 香港)
+			     (NR 泰华)
+			     (NN 公司)))
+		  (VP (VV 达成)
+		      (NP-OBJ (NN 建设)
+			      (NN 协议))))) 
+	  </parse>
+	  <arg n="0" f="crd">
+	  城市 北 出口 道路 建设 工程 
+	  </arg>
+	  <arg n="0" f="crd">
+	  与 香港 泰华 公司 
+	  </arg>
+	  <arg n="1">
+	  建设 协议 
+	  </arg>
+	  <arg n="m" f="adv">
+	  已 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

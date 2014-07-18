@@ -1,0 +1,135 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 设计 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing designed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 建设者们))
+				  (VP (PP-BNF (P 为)
+					      (NP (DP (DT 这)
+						      (CLP (M 片)))
+						  (NP (NN 开发区))))
+				      (VP (VV 设计)
+					  (NP-OBJ (-NONE- *T*-1)))))
+			      (DEC 的)))
+		      (NP (NN 战略)
+			  (NN 步骤)))
+	      (VP (VC 是)
+		  (IP-PRD (-NONE- *)))) 
+	  </parse>
+	  <arg n="0">
+	  建设者们 	  
+	  </arg>
+	  <arg n="1">
+	  *T*-1 	  
+	  </arg>
+	  <arg n="m" f="bnf">
+	  为 这 片 开发区 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP (NN 海龟))
+			   (DEG 的))
+		      (NP (NN 形象)))
+	      (VP (PP-LGS (P 由)
+			  (NP (NP-APP (NP-PN (NR 意大利))
+				      (ADJP (JJ 知名))
+				      (NP (NN 图案)
+					  (NN 设计师)))
+			      (NP-PN (NR 瓦·隆巴多))))
+		  (VP (VV 设计)))) 
+	  </parse>
+	  <arg n="1">
+	  海龟 的 形象 	  
+	  </arg>
+	  <arg n="0">
+	  由 意大利 知名 图案 设计师 瓦·隆巴多 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-2))
+				  (VP (PP-MNR (P 按)
+					      (NP (NP (ADJP (JJ 现代))
+						      (NP (NN 城市)))
+						  (NP (NN 功能)
+						      (NN 要求))))
+				      (VP (VV 设计))))
+			      (DEC 的)))
+		      (NP-PN (NR 莫家街))
+		      (NP (NN 旧城)
+			  (NN 改造)
+			  (NN 工程)))
+	      (PU ，)
+	      (VP (PP-LGS (P 由)
+			  (NP (NN 港商)))
+		  (VP (VP (VV 投资)
+			  (QP-OBJ (CD 五千万)
+				  (CLP (M 元))))
+		      (VP (ADVP (AD 独家))
+			  (VP (VV 承建)))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-2 	  
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按 现代 城市 功能 要求 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing designed"/>
+      <role argnum="2" argrole="place arg1 is designed to be"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+
+	  </parse>
+	  <arg n="0">
+	  史博馆	  
+	  </arg>
+	  <arg n="1">
+	  展场 入口	  
+	  </arg>
+	  <arg n="2">
+	  二楼	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

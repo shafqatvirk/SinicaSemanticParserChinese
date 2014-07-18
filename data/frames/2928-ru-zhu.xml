@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入驻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity moving"/>
+      <role argnum="1" argrole="location move into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 今年))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 又))
+		  (VP (VE 有)
+		      (IP-OBJ (NP-SBJ (QP (CD 十二)
+					  (CLP (M 家)))
+				      (ADJP (JJ 国际性))
+				      (NP (NN 班轮)
+					  (NN 公司)))
+			      (VP (VV 入驻)
+				  (NP-PN-OBJ (NR 上海))))))) 
+	  </parse>
+	  <arg n="0">
+	  十二 家 国际性 班轮 公司 
+	  </arg>
+	  <arg n="1">
+	  上海 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (VP (VV 具备)
+	      (NP-OBJ (CP (WHPP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (NN 金融)
+					  (NN 机构))
+				  (VP (PP-MNR (-NONE- *T*-1))
+				      (VP (VV 入驻)
+					  (CC 和)
+					  (VV 运作))))
+			      (DEC 的)))
+		      (ADJP (JJ 基本))
+		      (NP (NN 条件)))) 
+	  </parse>
+	  <arg n="0">
+	  金融 机构 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

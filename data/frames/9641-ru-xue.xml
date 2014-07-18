@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 入学 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person entering school"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 将来))
+	      (NP-SBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (VV 入学)))
+			      (DEC 的))
+		      (NP (NN 成本)))
+	      (VP (ADVP (AD 不))
+		  (VP (VV 要)
+		      (VP (ADVP (AD 太))
+			  (VP (VA 高)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

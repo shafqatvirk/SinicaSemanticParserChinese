@@ -1,0 +1,55 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 驻 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location arg0 is stationed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (PP-MNR (P 经)
+					      (IP (NP-PN-SBJ (NR 中国)
+							     (NN 海关)
+							     (NN 总署))
+						  (VP (VV 批准))))
+				      (VP (VV 设立))))
+			      (DEC 的)))
+		      (CP (WHNP-2 (-NONE- *OP*))
+			  (IP (NP-TPC (NR 上海)
+				      (NN 海关))
+			      (NP-SBJ (-NONE- *T*-2))
+			      (VP (VV 驻)
+				  (NP-PN-OBJ (NR 崇明)))))
+		      (NP (NN 办事处)))
+	      (VP (VP (PP-TMP (P 于)
+			      (NP (NT 日前)))
+		      (VP (VV 成立)))
+		  (PU ，)
+		  (CC 并)
+		  (VP (ADVP (AD 正式))
+		      (PP-DIR (P 对)
+			      (NP (NN 外)))
+		      (VP (VV 办理)
+			  (NP-OBJ (NN 业务)))))) 
+	  </parse>
+	  <arg n="0" f="pse">
+	  *T*-2 
+	  </arg>
+	  <arg n="0" f="psr">
+	  上海 海关 
+	  </arg>
+	  <arg n="1">
+	  崇明 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

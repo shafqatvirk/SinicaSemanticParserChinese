@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 查看 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="inspector"/>
+    <role argnum="1" argrole="thing inspected"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+( (IP (NP-TMP (NP (NT 十二月))
+              (NP (NT 二十八日)
+                  (CC 至)
+                  (NT 三十日)))
+      (PU ，)
+      (NP-PN-SBJ (NR 朱（容加金旁）基))
+      (VP (VP (ADVP (AD 先后))
+              (VP (VV 考察)
+                  (AS 了)
+                  (NP-OBJ (DNP (NP-PN (NR 重庆市)
+                                      (CC 和)
+                                      (NR 湖北省))
+                               (DEG 的))
+                          (NP (NN 移民)
+                              (NN 工作))
+                          (NP (NN 情况)))))
+          (PU ，)
+          (VP (ADVP (AD 实地))
+              (VP (VV 查看)
+                  (AS 了)
+                  (NP-OBJ (NP (NP-PN (NR 秭归))
+                              (ADJP (JJ 新))
+                              (NP (NN 县城)))
+                          (CC 和)
+                          (NP (NP (NN 移民))
+                              (ADJP (JJ 新))
+                              (NP (NN 村)))))))))
+	</parse>
+	<arg n="M" f="TMP"> 十二月 二十八日 至 三十日 </arg>
+	<arg n="0"> 朱（容加金旁）基 </arg>
+	<arg n="M" f="ADV"> 实地 </arg>
+	<V/>
+	<arg n="1"> 秭归 新 县城 和 移民 新 村 </arg>
+      </example>
+    </frame>
+  </frameset>
+</verb>
+

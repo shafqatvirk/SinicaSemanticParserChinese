@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 深切 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (VV 惊悉)
+		      (IP-OBJ (NP-PN-SBJ (NR 理查德·尼克松)
+					 (NN 先生))
+			      (VP (ADVP (AD 不幸))
+				  (VP (VV 病逝)))))
+		  (PU ，)
+		  (VP (ADVP (AD 谨))
+		      (VP (VV 表示)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (VA 深切)))
+					  (DEC 的)))
+				  (NP (NN 哀悼))))))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

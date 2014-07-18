@@ -1,0 +1,66 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 延後 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent/cause"/>
+    <role argnum="1" argrole="thing arg0 postpones"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-1))
+				(VP (VP (ADVP (AD 原))
+					(VP (VV 定)
+					    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+						    (VP (NP-TMP (NT 元月)
+								(NT 一日))
+							(VP (VV 开始)
+							    (VP (VV 实施)))))))
+				    (PU ，)
+				    (VP (ADVP (AD 後))
+					(PP-PRP (P 因)
+						(IP (NP-SBJ (NN 大陆))
+						    (VP (VV 要求))))
+					(VP (VV 延後)
+					    (QP-EXT (CD 一)
+						    (CLP (M 天)))))))
+			    (DEC 的)))
+		    (NP-PN (NR 金)
+			   (NR 马))
+		    (ADJP (JJ 小))
+		    (NP (NN 三通)))
+	    (PU ，)
+	    (VP (SB 被)
+		(VP (VV 视为)
+		    (NP-OBJ (DNP (UCP (ADVP (AD 日後))
+				      (UCP (NP (ADJP (JJ 大))
+					       (NP (NN 三通)))
+					   (CC 和)
+					   (IP (NP-SBJ (-NONE- *PRO*))
+					       (VP (VV 加入)
+						   (NP-PN-OBJ (NR WTO))))))
+				 (DEG 的))
+			    (ADJP (JJ 前置))
+			    (NP (NN 作业)))))) 
+	</parse>
+	<arg n="1">
+	*T*-1 
+	</arg>
+	<arg n="m" f="ext">
+	一 天 
+	</arg>
+	<arg n="m" f="prp">
+	因 大陆 要求 
+	</arg>
+	<arg n="m" f="adv">
+	後 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

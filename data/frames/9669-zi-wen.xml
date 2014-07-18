@@ -1,0 +1,59 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 自问 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="question arg0 asks himself"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (QP (CD 许多))
+			  (NP (NN 中年人)))
+		  (VP (ADVP (AD 於是))
+		      (VP (VV 自问)
+			  (PU ，)
+			  (CP-Q-OBJ (CP (IP (PU 「)
+					    (NP-SBJ (PN 这些))
+					    (VP (ADVP (AD 真))
+						(VP (VC 是)
+						    (NP-PRD (CP (WHNP-3 (-NONE- *OP*))
+								(CP (IP (NP-SBJ (PN 我))
+									(VP (VV 要)
+									    (NP-OBJ (-NONE- *T*-3))))
+								    (DEC 的)))))))
+					(SP 吗))
+				    (PU ？)
+				    (PU 」)
+				    (IP (PU 「)
+					(IP-SBJ (IP-SBJ (NP-SBJ (PN 我)))
+						(VP (ADVP (AD 这样))
+						    (VP (VV 努力)
+							(IP-OBJ (NP-SBJ (-NONE- *PRO*))
+								(VP (VV 追求))))))
+					(PU ，)
+					(VP (ADVP (AD 究竟))
+					    (VP (VE 有)
+						(NP-OBJ (DP-WH (DT 什麽))
+							(NP (NN 意义))))))
+				    (PU ？)
+				    (PU 」))))) 
+	  </parse>
+	  <arg n="0">
+	  许多 中年人 
+	  </arg>
+	  <arg n="1">
+	  「 这些 真 是 *OP* 我 要 *T*-3 的 吗 ？ 」 「 我 这样 努力 *PRO* 追求 ， 究竟 有 什麽 意义 ？ 」 
+	  </arg>
+	  <arg n="m" f="adv">
+	  於是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,194 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 至 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="location/time/state arg0 reaches/arrives at"/>
+      <role argnum="2" argrole="source"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT 目前))
+	      (NP-PN-SBJ (NR 厦门港))
+	      (VP (ADVP (AD 已))
+		  (VP (VV 拥有)
+		      (NP-OBJ (IP-APP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VV 至)
+					  (NP-PN-OBJ (NR 日本)
+						     (PU 、)
+						     (NR 新加坡)
+						     (PU 、)
+						     (NR 韩国)
+						     (PU 、)
+						     (NR 美国)
+						     (PU 、)
+						     (NR 地中海)
+						     (ETC 等))))
+			      (QP (CD 五)
+				  (CLP (M 条)))
+			      (NP (NN 国际)
+				  (NN 集装箱)
+				  (NN 运输)
+				  (NN 干线)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  日本 、 新加坡 、 韩国 、 美国 、 地中海 等 
+	  </arg>
+	  <V/>
+	</example>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ-2 (-NONE- *T*-1))
+				  (VP (PP-LGS (P 由)
+					      (NP (NP-PN (NN 教育署))
+						  (NP (NN 辅导)
+						      (NN 视学处))
+						  (NP (NN 美工组))))
+				      (VP (VV 举办)
+					  (NP-OBJ (-NONE- *-2)))))
+			      (DEC 的)))
+		      (NP (NN 小学生)
+			  (NN 创作展)))
+	      (VP (IP-TMP (NP-SBJ (-NONE- *pro*))
+			  (VP (VP (PP-DIR (NP (NT 今日)
+					      (PRN (PU （)
+						   (NP (NT 星期四))
+						   (PU ）))))
+				  (VP (VV 起)))
+			      (VP (VV 至)
+				  (NP-OBJ (NT 八月)
+					  (NT 二日)))))
+		  (PU ，)
+		  (PP-LOC (P 在)
+			  (NP (QP-APP (NP-PN (NR 北角))
+				      (NP-PN (NR 百福道))
+				      (QP (CD 四)
+					  (CLP (M 号))))
+			      (NP-PN (NN 美工)
+				     (NN 教育)
+				     (NN 资源)
+				     (NN 中心))))
+		  (VP (VV 举行)))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  八月 二日 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NT １９８２年)
+		      (NT ８月)
+		      (NT １７日))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 中)
+			 (NR 美))
+	      (VP (ADVP (AD 又))
+		  (PP-DIR (P 就)
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 分)
+					      (NP-OBJ (NN 步骤))))
+				  (ADVP (AD 直))
+				  (VP (VV 至)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (ADVP (AD 最后))
+						  (ADVP (AD 彻底))
+						  (VP (VV 解决)
+						      (NP-OBJ (IP-APP (NP-PN-SBJ (NR 美))
+								      (VP (VV 售)
+									  (NP-PN-IO (NR 台))
+									  (NP-OBJ (NN 武器))))
+							      (NP (NN 问题))))))))))
+		  (VP (VV 发表)
+		      (NP-OBJ (ADJP (JJ 联合))
+			      (NP (NN 公报)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 最后 彻底 解决 美 售 台 武器 问题 
+	  </arg>
+	  <arg n="m" f="adv">
+	  直 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 分 步骤 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 新春))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 至)))) 
+	  </parse>
+	  <arg n="0">
+	  新春 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="dir" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-SBJ (QP (CD 一)
+		      (CLP (M 辆)))
+		  (CP (WHNP-1 (-NONE- *OP*))
+		      (CP (IP (NP-SBJ (-NONE- *T*-1))
+			      (VP (PP-DIR (P 由)
+					  (NP-PN (NR 巢湖)))
+				  (VP (VV 至)
+				      (NP-PN-OBJ (NR 蚌埠)))))
+			  (DEC 的)))
+		  (NP (NN 中巴车))) 
+	  </parse>
+	  <arg n="0">
+	  *T*-1 
+	  </arg>
+	  <arg n="1">
+	  蚌埠 
+	  </arg>
+	  <arg n="2">
+	  由 巢湖 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

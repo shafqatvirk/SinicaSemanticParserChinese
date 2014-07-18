@@ -1,0 +1,77 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 去除 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing arg0 removes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-MNR (P 以)
+				  (NP (NN 过滤)
+				      (NN 软体)))
+			  (VP (MSP 而)
+			      (VP (VV 言)))))
+	      (PU ，)
+	      (IP-CND (NP-SBJ (NN 关键)
+			      (NN 字))
+		      (VP (ADVP (CS 若))
+			  (VP (VRD (VV 设定)
+				   (VV 为))
+			      (NP-OBJ (PU 「)
+				      (NN 色情)
+				      (PU 」)))))
+	      (PU ，)
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 可能)
+		  (VP (PP-PRP (P 因)
+			      (NP (NN 误判)))
+		      (VP (MSP 而)
+			  (VP (BA 将)
+			      (IP-OBJ (NP-SBJ (NP-APP (NP (PU 「)
+							  (NN 性)
+							  (NN 教育)
+							  (PU 」))
+						      (CC 或)
+						      (NP (PU 「)
+							  (NP (NP (NN 性)
+								  (NN 交易))
+							      (NP (NN 防治)))
+							  (NP (NN 法))
+							  (PU 」))
+						      (ETC 等))
+					      (NP (NN 讨论)
+						  (NN 文章)))
+				      (PU ，)
+				      (VP (ADVP (AD 一并))
+					  (VP (VV 去除))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  「 性 教育 」 或 「 性 交易 防治 法 」 等 讨论 文章 
+	  </arg>
+	  <arg n="m" f="adv">
+	  一并 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因 误判 
+	  </arg>
+	  <arg n="m" f="cnd">
+	  关键 字 若 设定 为 「 色情 」 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 以 过滤 软体 而 言 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

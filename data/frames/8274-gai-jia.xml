@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改嫁 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="patient (widow)"/>
+      <role argnum="2" argrole="person arg0 marries arg1 to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 而))
+	      (NP-PN-SBJ (NR 王安石))
+	      (VP (ADVP (AD 则))
+		  (PP-PRP (P 因为)
+			  (IP (NP-SBJ (NN 儿子))
+			      (VP (VV 早逝))))
+		  (PU ，)
+		  (VP (MSP 而)
+		      (VP (BA 将)
+			  (IP-OBJ (NP-SBJ (NN 媳妇))
+				  (VP (VV 改嫁))))))) 
+	  </parse>
+	  <arg n="0">
+	  王安石 
+	  </arg>
+	  <arg n="1">
+	  媳妇 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 儿子 早逝 
+	  </arg>
+	  <arg n="m" f="adv">
+	  则 
+	  </arg>
+	  <arg n="m" f="dis">
+	  而 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

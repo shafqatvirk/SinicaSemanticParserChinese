@@ -1,0 +1,137 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 传授 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="teacher"/>
+    <role argnum="1" argrole="thing arg0 teaches"/>
+    <role argnum="2" argrole="student"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+	<mapitem src="other" trg="arg2"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (LCP (NP (NN 电视))
+			      (LC 上))
+			 (DEG 的))
+		    (NP (PU 「)
+			(NP (NN 英文))
+			(ADJP (JJ 小))
+			(NP (NN 魔女))
+			(PU 」)))
+	    (VP (VV 要)
+		(VP (BA 把)
+		    (IP-OBJ (NP-SBJ (NP (PN 她))
+				    (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VA 精湛)))
+					    (DEC 的)))
+				    (NP (NN 英文)
+					(NN 能力)))
+			    (VP (VV 传授)
+				(PP (P 给)
+				    (NP (ADJP (JJ 小))
+					(NP (NN 朋友))))))))) 
+	</parse>
+	<arg n="0">
+	电视 上 的 「 英文 小 魔女 」 
+	</arg>
+	<arg n="1">
+	她 *OP* *T*-1 精湛 的 英文 能力 
+	</arg>
+	<arg n="2">
+	给 小 朋友 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-SBJ (NP-SBJ (-NONE- *PRO*))
+		(VP (PP-MNR (P 透过)
+			    (IP (NP-SBJ (NN 学院))
+				(VP (NP-TPC-5 (NN 知识))
+				    (VP (VV 传授)
+					(NP-OBJ (-NONE- *T*-5))))))
+		    (PU ，)
+		    (VP (VRD (VV 建立)
+			     (VV 起))
+			(NP-OBJ (DNP (NP (PN 自己))
+				     (DEG 的))
+				(NP (NN 思考)
+				    (NN 架构)))))) 
+	</parse>
+	<arg n="0">
+	学院 
+	</arg>
+	<arg n="1">
+	知识 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (LCP-TMP (NP (NN 年))
+		     (LC 後))
+	    (PU ，)
+	    (NP-SBJ (NP-PN (NN 经济部))
+		    (CC 和)
+		    (NP (QP (CD 几)
+			    (CLP (M 个)))
+			(NP (NN 民间)
+			    (NN 团体))))
+	    (VP (VP (VV 举办)
+		    (NP-OBJ (PU 「)
+			    (IP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (NP-PN-LOC (NN 大陆))
+					    (VP (VV 投资))))
+				    (CC 与)
+				    (IP (NP-SBJ (-NONE- *PRO*))
+					(VP (VCD (VV 经营)
+						 (VV 管理)))))
+			    (NP (NN 研讨会))
+			    (PU 」)))
+		(PU ，)
+		(VP (VV 邀请)
+		    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (NP-TMP (NT 目前))
+					    (PP-LOC (P 在)
+						    (NP (NN 大陆)))
+					    (VP (VV 打拚))))
+				    (DEC 的)))
+			    (NP (NN 台商)))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VV 前来)
+			    (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				    (VP (VV 传授)
+					(NP-OBJ (NN 实战)
+						(NN 经验))))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	实战 经验 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

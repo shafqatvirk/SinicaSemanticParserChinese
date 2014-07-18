@@ -1,0 +1,53 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 紧缩 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing tightened"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-PRP (P 为)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 保证)
+			      (IP-OBJ (PP-LOC (P 在)
+					      (LCP (NP (NN 欧元区))
+						   (LC 内)))
+				      (NP-SBJ-1 (NN 通胀)
+						(NN 指标))
+				      (VP (ADVP (AD 不))
+					  (VP (SB 被)
+					      (VP (VV 突破)
+						  (NP-OBJ (-NONE- *-1)))))))))
+	      (PU ，)
+	      (NP-PN-SBJ (NR 欧洲)
+			 (NN 央行))
+	      (VP (ADVP (AD 将))
+		  (VP (VV 会)
+		      (VP (PP-TMP (P 在)
+				  (LCP (IP (NP-SBJ (NN 欧元))
+					   (VP (VV 启动)))
+				       (LC 之初)))
+			  (VP (VV 采取)
+			      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						  (VP (VV 紧缩)
+						      (NP-OBJ (NN 货币))))
+					      (DEC 的))
+				      (NP (NN 政策)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  货币 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

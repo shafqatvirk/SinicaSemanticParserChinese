@@ -1,0 +1,47 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 致意 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 sends greetings to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 她))
+	      (VP (VV 让)
+		  (NP-OBJ (PN 大家))
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (PP-TMP (P 趁)
+				  (NP (CP-APP (IP (NP-SBJ (NN 太阳))
+						  (VP (VP (ADVP (AD 正))
+							  (VP (VV 露出)
+							      (NP-OBJ (NN 笑脸))))
+						      (VP (PP-DIR (P 向)
+								  (NP (PN 我们)))
+							  (VP (VV 致意)))))
+					      (DEC 的))
+				      (NP (NN 时机))))
+			  (PU ，)
+			  (ADVP (AD 赶紧))
+			  (VP (VV 观赏)
+			      (ADVP (AD 一下))
+			      (NP-OBJ (DNP (NP (NN 圣岳))
+					   (DEG 的))
+				      (NP (NN 容颜)))))))) 
+	  </parse>
+	  <arg n="0">
+	  太阳 
+	  </arg>
+	  <arg n="1">
+	  向 我们 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

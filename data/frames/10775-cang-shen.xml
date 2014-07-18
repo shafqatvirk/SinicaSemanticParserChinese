@@ -1,0 +1,36 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 藏身 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="place arg0 hides in"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="other" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+		    (CP (IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 藏身)
+				(PP (P 在)
+				    (LCP (NP-PN (ADJP (JJ 国立))
+						(NP (NN 历史)
+						    (NN 博物馆)))
+					 (LC 里)))))
+			(DEC 的)))
+		(NP (NN 骑兵))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	在 国立 历史 博物馆 里 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,219 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 追溯 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 reviews"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TTL-SBJ (PU 「)
+			  (NP (NN 天))
+			  (PU 」))
+	      (VP (VV 追溯)
+		  (NP-OBJ (NP (NN 中国人))
+			  (CP (WHNP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VV 源远流长)))
+				  (DEC 的)))
+			  (NP (NN 历史))))) 
+	  </parse>
+	  <arg n="0">
+	  「 天 」 	  
+	  </arg>
+	  <arg n="1">
+	  中国人 *OP* *T*-1 源远流长 的 历史 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f2">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="time arg0 goes back to"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-OBJ (NP-SBJ (DP (DT 这)
+			      (CLP (M 条)))
+			  (NP (NN 条例)
+			      (NN 草案)))
+		  (PU ，)
+		  (VP (VP (ADVP (AD 亦))
+			  (VP (VV 应)
+			      (VP (VP (VV 追溯))
+				  (VP (IP-TMP (NP-SBJ (-NONE- *pro*))
+					      (VP (PP-DIR (P 自)
+							  (NP (NT 一九九七年)
+							      (NT 七月)
+							      (NT 一日)))
+						  (VP (VV 起))))
+				      (VP (VV 生效))))))
+		      (PU ，)
+		      (CC 但)
+		      (VP (ADVP (AD 并))
+			  (ADVP (AD 不))
+			  (VP (VV 包括)
+			      (NP-OBJ (DNP (PP (P 有关)
+					       (NP (NN 刑事)
+						   (NN 罪行)))
+					   (DEG 的))
+				      (NP (NN 条款))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 条 条例 草案 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  亦 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (ADVP (AD 主要))
+		      (VP (VV 检查)
+			  (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-1))
+					      (VP (NP-TMP (NT 一九九六年)
+							  (CC 和)
+							  (NT 一九九七年))
+						  (VP (VV 发生))))
+					  (DEC 的)))
+				  (DP (DT 各)
+				      (CLP (M 种)))
+				  (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					      (VP (VV 违反)
+						  (NP-OBJ (NN 财税)
+							  (NN 价格)
+							  (NN 法纪))))
+					  (DEC 的))
+				  (NP (NN 问题)))))
+		  (PU ，)
+		  (VP (PP-DIR (P 对)
+			      (NP (DP (DT 某些))
+				  (CP (WHNP-2 (-NONE- *OP*))
+				      (CP (IP (NP-SBJ (-NONE- *T*-2))
+					      (VP (VA 重大)))
+					  (DEC 的)))
+				  (ADJP (JJ 违法))
+				  (ADJP (JJ 违纪))
+				  (NP (NN 问题))))
+		      (PU ，)
+		      (ADVP (AD 也))
+		      (VP (VV 可)
+			  (VP (VRD (VV 追溯)
+				   (VV 到))
+			      (NP-OBJ (NT 以前)
+				      (NN 年度))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 	  
+	  </arg>
+	  <arg n="1">
+	  以前 年度 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  也 	  
+	  </arg>
+	  <arg n="m" f="dir">
+	  对 某些 *OP* *T*-2 重大 的 违法 违纪 问题 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f3">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 considers"/>
+      <role argnum="2" argrole="thing arg1 is attributed to "/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VE 有)
+		  (IP-OBJ (NP-SBJ (NN 人))
+			  (VP (BA 把)
+			      (IP-OBJ (NP-SBJ (DNP (NP (NN 大陆))
+						   (DEG 的))
+					      (NP (NN 沦陷)))
+				      (VP (VRD (VV 追溯)
+					       (VV 到))
+					  (NP-OBJ (DNP (NP-PN (NR 中共))
+						       (DEG 的))
+						  (NP (NN 诞生))))))))) 
+	  </parse>
+	  <arg n="0">
+	  人 	  
+	  </arg>
+	  <arg n="1">
+	  大陆的沦陷	  
+	  </arg>
+	  <arg n="2">
+	  中共 的 诞生	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+    <frameset id="f4">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="origin"/>
+      <role argnum="2" argrole="problem newly found"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="dir" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (NP-PN-SBJ (NR 谢从宾))
+	  (VP (ADVP (AD 也))
+	      (ADVP (AD 因而))
+	      (PP-DIR (P 由)
+		      (NP (NN 肾脏)
+			  (NN 问题)))
+	      (VP (VRD (VV 追溯)
+		       (VV 出))
+		  (NP-OBJ (QP (CD 许多))
+			  (NP (NN 生殖)
+			      (NN 系统))
+			  (NP (NN 问题))))) 
+	  </parse>
+	  <arg n="0">
+	  谢从宾	  
+	  </arg>
+	  <arg n="1">
+	  由肾脏问题	  
+	  </arg>
+	  <arg n="2">
+	  许多生殖系统问题	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,245 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 控制 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="controller"/>
+      <role argnum="1" argrole="theme"/>
+      <role argnum="2" argrole="range"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 中国))
+	      (VP (VV 决心)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (PP-MNR (P 通过)
+				      (NP (DNP (NP (NP (PU “)
+						       (NN 再就业)
+						       (PU ”))
+						   (NP (NN 工程)))
+					       (DEG 的))
+					  (ADJP (JJ 大规模))
+					  (NP (NN 实施))))
+			      (PU ，)
+			      (VP (VP (ADVP (AD 妥善))
+				      (VP (VV 安置)
+					  (NP-OBJ (NN 下岗)
+						  (NN 职工))))
+				  (PU ，)
+				  (VP (VV 力争)
+				      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					      (VP (BA 把)
+						  (IP-OBJ (NP-SBJ (NN 失业率))
+							  (VP (VV 控制)
+							      (PP-LOC (P 在)
+								      (LCP (QP (CD 百分之三点五))
+									   (LC 以内))))))))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  失业率 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	  <mapitem src="controlip" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 据)
+		      (IP (NP-SBJ (NP-APP (NP (NP (DP (DT 这)
+						      (CLP (M 个)))
+						  (NP (NN 市)))
+					      (NP (ADJP (JJ 经济))
+						  (ADJP (JJ 适用))
+						  (NP (NN 房)))
+					      (NP (NN 开发)
+						  (NN 建设)
+						  (NN 办公室)))
+					  (NP (NN 主任)))
+				  (NP-PN (NR 谭历)))
+			  (VP (VV 介绍))))
+	      (PU ，)
+	      (PP-PRP (P 为了)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VP (VV 保证)
+				  (NP-OBJ (NP (NN 房屋)
+					      (NN 质量))
+					  (CC 和)
+					  (NP (CP (WHNP-1 (-NONE- *OP*))
+						  (CP (IP (NP-SBJ (-NONE- *T*-1))
+							  (VP (ADVP (AD 较))
+							      (VP (VA 低))))
+						      (DEC 的)))
+					      (NP (NN 价格)))))
+			      (PU ，)
+			      (VP (VV 使)
+				  (NP-OBJ (NN 购房者))
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (ADVP (AD 真正))
+					  (VP (VRD (VV 感受)
+						   (VV 到))
+					      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+								  (VP (VV 买)
+								      (NP-OBJ (NN 房))))
+							      (DEC 的))
+						      (NP (NN 实惠))))))))))
+	      (PU ，)
+	      (NP-SBJ (DP (DT 这)
+			  (CLP (M 个)))
+		      (NP (NN 市)))
+	      (VP (VP (VV 加强)
+		      (AS 了)
+		      (NP-OBJ (DNP (PP (P 对)
+				       (NP (NP (ADJP (JJ 经济))
+					       (ADJP (JJ 适用))
+					       (NP (NN 房)))
+					   (NP (NN 开发商))))
+				   (DEG 的))
+			      (NP (NN 资格)
+				  (NN 审核))))
+		  (PU ，)
+		  (CC 并)
+		  (VP (PP-MNR (P 按照)
+			      (NP (NN 国家)
+				  (NN 政策)))
+		      (PU ，)
+		      (ADVP (AD 严格))
+		      (VP (VV 控制)
+			  (NP-OBJ (NP (PN 其))
+				  (NP (NT 未来))
+				  (IP-APP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 售)
+					      (NP-OBJ (NN 房))))
+				  (NP (NN 利润)))
+			  (IP (NP-SBJ (-NONE- *PRO*))
+			      (VP (ADVP (AD 不))
+				  (VP (VV 得)
+				      (VP (VV 高于)
+					  (QP-OBJ (DNP (NP (ADJP (JJ 总))
+							   (NP (NN 成本)))
+						       (DEG 的))
+						  (QP (CD 百分之三))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 个 市 
+	  </arg>
+	  <arg n="1">
+	  其 未来 *PRO* 售 房 利润 
+	  </arg>
+	  <arg n="2">
+	  *PRO* 不 得 高于 总 成本 的 百分之三 
+	  </arg>
+	  <arg n="m" f="adv">
+	  严格 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  按照 国家 政策 
+	  </arg>
+	  <arg n="m" f="prp">
+	  为了 *PRO* 保证 房屋 质量 和 *OP* *T*-1 较 低 的 价格 ， 使 购房者 *PRO* 真正 感受 到 *PRO* 买 房 的 实惠 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  据 这 个 市 经济 适用 房 开发 建设 办公室 主任 谭历 介绍 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (PN 这))
+	      (VP (PP (P 对)
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (DVP (VP (VA 有效))
+				   (DEV 地))
+			      (VP (VV 控制)
+				  (NP-OBJ (NN 甲肝)
+					  (NN 流行))))))
+		  (VP (VV 具有)
+		      (NP-OBJ (ADJP (JJ 重大))
+			      (NP (NN 意义)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 	  
+	  </arg>
+	  <arg n="1">
+	  甲肝 流行 	  
+	  </arg>
+	  <arg n="m" f="adv">
+	  有效 地 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="other" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 通货膨胀率))
+	      (VP (VV 控制)
+		  (PP-LOC (P 在)
+			  (NP (CP (WHNP-2 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-2))
+					  (VP (ADVP (AD 较))
+					      (VP (VA 低))))
+				      (DEC 的)))
+			      (NP (NN 水平)))))) 
+	  </parse>
+	  <arg n="1">
+	  通货膨胀率 	  
+	  </arg>
+	  <V/>
+	  <arg n="2">
+	  在 *OP* (*T*-2)->(水平) 较 低 的 水平 	  
+	  </arg>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (LCP-TMP (QP (ADVP (AD 约))
+			   (QP (CD 十)
+			       (CLP (M 分钟))))
+		       (LC 后))
+	      (PU ，)
+	      (NP-SBJ (NN 货车)
+		      (NN 火势))
+	      (VP (VPT (VV 控制)
+		       (AD 不)
+		       (VV 住)))) 
+	  </parse>
+	  <arg n="1">
+	  货车 火势 	  
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

@@ -1,0 +1,109 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 增强 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="thing strengthened"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (PP-PRP (P 为)
+		  (IP (NP-SBJ (-NONE- *PRO*))
+		      (VP (VV 增强)
+			  (IP-OBJ (NP-SBJ (NP-PN-APP (PU “)
+						     (NN 糖脉康)
+						     (PU ”))
+					  (DP (DT 这)
+					      (CLP (M 类)))
+					  (CP (WHNP-1 (-NONE- *OP*))
+					      (CP (IP (NP-SBJ (-NONE- *T*-1))
+						      (VP (VV 面向)
+							  (NP-OBJ (QP (OD 二十一))
+								  (NP (NN 世纪)))))
+						  (DEC 的)))
+					  (NP (NN 中药))
+					  (ADJP (JJ 新))
+					  (NP (NN 药)))
+				  (VP (PP-LOC (P 在)
+					      (LCP (NP (NN 国际)
+						       (NN 市场))
+						   (LC 上)))
+				      (VP (VE 有)
+					  (NP-OBJ (NN 竞争力)))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  “ 糖脉康 ” 这 类 *OP* *T*-1 面向 二十一 世纪 的 中药 新 药 在 国际 市场 上 有 竞争力 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 地方)
+		      (NN 经济)
+		      (NN 实力))
+	      (VP (ADVP (AD 明显))
+		  (VP (VV 增强)))) 
+	  </parse>
+	  <arg n="1">
+	  地方 经济 实力 
+	  </arg>
+	  <arg n="m" f="adv">
+	  明显 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DP (DT 这))
+		      (NP (PN 一切)))
+	      (VP (ADVP (AD 都))
+		  (ADVP (AD 将))
+		  (VP (VP (VV 巩固)
+			  (NP-OBJ (-NONE- *RNR*-1)))
+		      (CC 和)
+		      (VP (VV 增强)
+			  (NP-OBJ-1 (DNP (NP-PN (NR 香港))
+					 (DEG 的))
+				    (NP (NN 国际)
+					(NN 金融)
+					(NN 中心)
+					(NN 地位))))))) 
+	  </parse>
+	  <arg n="0">
+	  这 一切 
+	  </arg>
+	  <arg n="1">
+	  香港 的 国际 金融 中心 地位 
+	  </arg>
+	  <arg n="m" f="adv">
+	  将 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

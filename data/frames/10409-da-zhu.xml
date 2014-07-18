@@ -1,0 +1,29 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 打住 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="cause"/>
+    <role argnum="1" argrole="entity arg0 causes to stop"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP-Q-SBJ (NP-SBJ (NN 核四)
+			  (NN 风暴))
+		  (VP (NP-WH (PN 何时))
+		      (VP (VV 打住)))) 
+	</parse>
+	<arg n="1">
+	核四 风暴 
+	</arg>
+	<arg n="m" f="tmp">
+	何时 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 立志 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="people"/>
+      <role argnum="1" argrole="thing arg0 is determined to do"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="ipobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VV 希望)
+		  (IP-OBJ (NP-SBJ (PN 你们))
+			  (VP (VP (ADVP (AD 努力))
+				  (VP (VV 学习)))
+			      (PU ，)
+			      (VP (VV 立志)
+				  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 成)
+					      (NP-OBJ (NN 才)))))
+			      (PU ，)
+			      (VP (BA 把)
+				  (IP-OBJ (NP-PN-SBJ (NR 香港))
+					  (VP (VV 建设)
+					      (DER 得)
+					      (VP-EXT (ADVP (AD 更加))
+						      (VP (VA 美好)))))))))) 
+	  </parse>
+	  <arg n="0">
+	  你们 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 成 才 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

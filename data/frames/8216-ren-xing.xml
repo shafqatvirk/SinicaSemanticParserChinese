@@ -1,0 +1,42 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 任性 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-TMP (NP-APP (DNP (NP (PN 我))
+				   (DEG 的))
+			      (NP (NN 小时候)))
+		      (NP (CP (WHPP-1 (-NONE- *OP*))
+			      (CP (IP (NP-SBJ (-NONE- *pro*))
+				      (VP (PP-TMP (-NONE- *T*-1))
+					  (VP (VCD (VV 吵闹)
+						   (VV 任性)))))
+				  (DEC 的)))
+			  (NP (NN 时候))))
+	      (NP-SBJ (DNP (NP (PN 我))
+			   (DEG 的))
+		      (NP (NN 外婆)))
+	      (VP (ADVP (AD 总))
+		  (VP (VV 会)
+		      (VP (VP (VV 唱歌))
+			  (VP (VV 哄)
+			      (NP-OBJ (PN 我))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

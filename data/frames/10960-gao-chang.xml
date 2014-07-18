@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 高唱 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 sings"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="ipobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (NN 单身者))
+	    (VP (VV 高唱)
+		(IP-OBJ (PU 「)
+			(NP-SBJ (DNP (NP (PN 我))
+				     (DEG 的))
+				(NP (NN 爱人)))
+			(VP (PP-PRD (P 在)
+				    (NP-PN (NR 上海))))
+			(PU 」)))) 
+	</parse>
+	<arg n="0">
+	单身者 
+	</arg>
+	<arg n="1">
+	「 我 的 爱人 在 上海 」 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

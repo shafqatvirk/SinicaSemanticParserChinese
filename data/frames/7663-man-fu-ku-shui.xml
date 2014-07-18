@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 满腹苦水 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (CP (WHNP-2 (-NONE- *OP*))
+			(CP (IP (NP-SBJ (-NONE- *T*-2))
+				(VP (VV 夹)
+				    (PP (P 在)
+					(LCP (NP (NN 创作者)
+						 (CC 和)
+						 (NN 片商))
+					     (LC 之间)))))
+			    (DEC 的)))
+		    (CP (WHNP-1 (-NONE- *OP*))
+			(IP (NP-SBJ (-NONE- *T*-1))
+			    (VP (VV 给)
+				(NP-OBJ (NN 钱)))))
+		    (NP (NN 单位)))
+	    (VP (ADVP (AD 也))
+		(VP (VC 是)
+		    (VP (VV 满腹苦水))))) 
+	</parse>
+	<arg n="0">
+	*OP* *T*-2 夹 在 创作者 和 片商 之间 的 *OP* *T*-1 给 钱 单位 
+	</arg>
+	<arg n="m" f="adv">
+	也 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

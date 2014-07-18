@@ -1,0 +1,32 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 重现 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 shows again"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP-HLN (NP-SBJ (PU “)
+			  (NP-PN (NR 中国))
+			  (NP (NN 渔都))
+			  (PU ”))
+		  (VP (VV 重现)
+		      (NP-OBJ (NN 风采)))) 
+	  </parse>
+	  <arg n="0">
+	  “ 中国 渔都 ” 
+	  </arg>
+	  <arg n="1">
+	  风采 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

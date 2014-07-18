@@ -1,0 +1,46 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 俗称 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="entity arg0 is commonly known as"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (DNP (NP (NN 内城)
+			     (CC 与)
+			     (NN 外城))
+			 (DEG 的))
+		    (QP (CD 四))
+		    (NP (NN 边)))
+	    (VP (ADVP (AD 都))
+		(VP (VP (VV 开有)
+			(NP-OBJ (NN 水)
+				(NN 门)))
+		    (PU ，)
+		    (VP (VV 可以)
+			(VP (VV 衔接)
+			    (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+					(CP (IP (NP-SBJ (-NONE- *T*-1))
+						(VP (VV 俗称)
+						    (NP-PN-OBJ (NR 汴河))))
+					    (DEC 的)))
+				    (ADJP (JJ 大))
+				    (NP (NN 运河)))))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<arg n="1">
+	汴河 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

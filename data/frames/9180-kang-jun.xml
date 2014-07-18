@@ -1,0 +1,50 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 抗菌 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (IP-ADV (NP-SBJ (-NONE- *PRO*))
+			      (VP (VV 掺进)
+				  (LCP-OBJ (NP (NN 衣物))
+					   (LC 中))))
+		      (VP (VV 可以)
+			  (VP (VV 抗菌)
+			      (VV 防霉)
+			      (CC 兼)
+			      (VV 除臭))))
+		  (PU ，)
+		  (VP (ADVP (AD 还))
+		      (VP (VV 可以)
+			  (VP (VV 用来)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (VP (VV 遮蔽)
+					      (NP-OBJ (NN 烫伤)
+						      (NN 伤口)))
+					  (PU ，)
+					  (VP (ADVP (AD 一面))
+					      (VP (VV 消炎)))
+					  (PU ，)
+					  (VP (ADVP (AD 一面))
+					      (VP (VV 促进)
+						  (NP-OBJ (NN 组织)
+							  (NN 再生))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="m" f="adv">
+	  *PRO* 掺进 衣物 中 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

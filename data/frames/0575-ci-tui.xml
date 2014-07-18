@@ -1,0 +1,56 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 辞退 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="dismisser"/>
+      <role argnum="1" argrole="employee dismissed"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-TPC (-NONE- *T*-1))
+				  (NP-SBJ (NN 年))
+				  (VP (QP-PRD (ADVP (AD 仅))
+					      (QP (CD 二十)
+						  (CLP (M 岁))))))
+			      (DEC 的)))
+		      (NP-PN (NR 郭辉)))
+	      (VP (PP-PRP (P 因为)
+			  (IP (NP-TPC (NN 工作))
+			      (NP-SBJ (-NONE- *pro*))
+			      (VP (ADVP (AD 常))
+				  (VP (VV 出)
+				      (NP-OBJ (NN 差错))))))
+		  (PU ，)
+		  (PP-TMP (P 于)
+			  (NP (NT 一九九八年)
+			      (NT 十月)))
+		  (VP (LB 被)
+		      (CP-OBJ (WHNP-2 (-NONE- *OP*))
+			      (IP (NP-SBJ (NN 邮局))
+				  (VP (VV 辞退)
+				      (NP-OBJ (-NONE- *T*-2)))))))
+	      (PU 。)) 
+	  </parse>
+	  <arg n="0">
+	  邮局 
+	  </arg>
+	  <arg n="1">
+	  *T*-2 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 工作 *pro* 常 出 差错 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  于 一九九八年 十月 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

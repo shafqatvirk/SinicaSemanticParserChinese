@@ -1,0 +1,35 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 趋之若狂 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="person described"/>
+    <role argnum="1" argrole="entity arg0 goes after like crazy"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP-WH (AD 为什麽))
+	    (LCP-SBJ (NP (DNP (NP (NN 偶像)
+				  (NN 歌星))
+			      (DEG 的))
+			 (NP (NN 演唱会)))
+		     (LC 上))
+	    (VP (ADVP (AD 都))
+		(VP (VC 是)
+		    (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				(CP (IP (NP-SBJ (-NONE- *T*-1))
+					(VP (VV 趋之若狂)))
+				    (DEC 的)))
+			    (NP (NN 青少年)))))) 
+	</parse>
+	<arg n="0">
+	*T*-1 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

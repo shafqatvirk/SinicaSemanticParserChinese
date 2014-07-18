@@ -1,0 +1,63 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 撑破 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="cause"/>
+      <role argnum="1" argrole="thing arg0 causes to burst"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (PP-MNR (P 伴随)
+		      (NP (ADJP (JJ 全球性))
+			  (NP (NN 经济)
+			      (NN 不景气))))
+	      (PU ，)
+	      (NP-SBJ (NN 失业率) )
+	      (VP (PP (ADVP (AD 就))
+		      (PP (P 像)
+			  (NP (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (ADVP (AD 不断))
+					      (VP (VV 充气))))
+				      (DEC 的)))
+			      (NP (NN 气球) ))))
+		  (PU ，)
+		  (ADVP (AD 随时))
+		  (ADVP (AD 都))
+		  (VP (VV 会)
+		      (VP (VV 撑破)
+			  (NP-OBJ (NP (NN 人们) )
+				  (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					      (VP (VV 丰衣足食)))
+					  (DEC 的))
+				  (ADJP (JJ 美))
+				  (NP (NN 梦) )))))) 
+	  </parse>
+	  <arg n="0">
+	  失业率 
+	  </arg>
+	  <arg n="1">
+	  人们 *PRO* 丰衣足食 的 美 梦 
+	  </arg>
+	  <arg n="m" f="adv">
+	  都 
+	  </arg>
+	  <arg n="m" f="adv">
+	  随时 
+	  </arg>
+	  <arg n="m" f="adv">
+	  就 像 *OP* *T*-1 不断 充气 的 气球 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  伴随 全球性 经济 不景气 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

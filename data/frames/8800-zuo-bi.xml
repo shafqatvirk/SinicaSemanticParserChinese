@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 作弊 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity cheating"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NP-PN (NR 国民党))
+			      (NP (NN 中央)))
+		      (VP (VV 授意)
+			  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				  (VP (ADVP (AD 不))
+				      (VP (VV 要)
+					  (VP (VV 交付)
+					      (NP-OBJ (QP (CD 二)
+							  (PU 、)
+							  (CD 三))
+						      (NP (NN 读)))))))))
+	      (PU ，)
+	      (VP (VV 形同)
+		  (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			  (VP (VV 要)
+			      (NP-OBJ (PN 他))
+			      (IP (NP-SBJ (-NONE- *PRO*))
+				  (VP (PU 「)
+				      (VV 作弊)
+				      (PU 」))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

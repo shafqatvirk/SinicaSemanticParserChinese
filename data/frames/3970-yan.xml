@@ -1,0 +1,79 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 淹 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity submerged in water"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (NP-TMP (NT 现在))
+		  (VP (VP (VV 搬进)
+			  (NP-OBJ (DNP (NP (NP-PN (NR 长江))
+					   (NP (NN 大堤)))
+				       (DEG 的))
+				  (NP (NN 里面))))
+		      (PU ，)
+		      (VP (ADVP (AD 再))
+			  (ADVP (AD 也))
+			  (ADVP (AD 不))
+			  (VP (VV 怕)
+			      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+				      (VP (LB 被)
+					  (CP-OBJ (WHNP-1 (-NONE- *OP*))
+						  (IP (NP-SBJ (NN 水))
+						      (VP (VV 淹)
+							  (NP-OBJ (-NONE- *T*-1)))))))))))) 
+	  </parse>
+	  <arg n="0">
+	  水 
+	  </arg>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 万县市)
+			 (NN 食品)
+			 (NN 罐头厂))
+	      (VP (VP (VC 是)
+		      (NP-PRD (CP (WHNP-1 (-NONE- *OP*))
+				  (IP (NP-SBJ (-NONE- *T*-1))
+				      (VP (VP (ADVP (AD 全))
+					      (VP (VV 淹)))
+					  (VP (ADVP (AD 全))
+					      (VP (VV 迁))))))
+			      (NP (NN 企业))))
+		  (PU ，)
+		  (VP (VE 有)
+		      (NP-OBJ (DNP (QP (CD 大量))
+				   (DEG 的))
+			      (ADJP (JJ 搬迁))
+			      (NP (NN 补偿)
+				  (NN 资金)))))) 
+	  </parse>
+	  <arg n="1">
+	  *T*-1 
+	  </arg>
+	  <arg n="m" f="adv">
+	  全 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

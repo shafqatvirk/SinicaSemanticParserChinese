@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 知名 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (CP (WHNP-1 (-NONE- *OP*))
+			  (CP (IP (NP-SBJ (-NONE- *T*-1))
+				  (VP (VV 产)
+				      (PP-LOC (P 于)
+					      (NP (NP (NP-PN (NR 中国))
+						      (NN 西南))
+						  (NP (NP-PN (NR 贵州省))
+						      (NN 北部))
+						  (NP-PN (NR 赤水)
+							 (NN 河谷))
+						  (NP (NN 地带))))))
+			      (DEC 的)))
+		      (NP-PN (NN 茅台酒)))
+	      (PU ，)
+	      (VP (PP-MNR (P 以)
+			  (IP (NP-SBJ (NN 酿制)
+				      (NN 工艺))
+			      (VP (ADVP (AD 十分))
+				  (VP (VA 独特)))))
+		  (VP (MSP 而)
+		      (VP (VA 知名))))) 
+	  </parse>
+	  <arg n="0">
+	  *OP* *T*-1 产 于 中国 西南 贵州省 北部 赤水 河谷 地带 的 茅台酒 
+	  </arg>
+	  <arg n="m" f="mnr">
+	  以 酿制 工艺 十分 独特 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

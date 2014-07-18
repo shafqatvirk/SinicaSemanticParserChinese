@@ -1,0 +1,38 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 端立 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="theme"/>
+      <role argnum="1" argrole="location"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 雕塑))
+	      (VP (VV 端立)
+		  (PP-LOC (P 於)
+			  (LCP (NP (CP (WHNP-1 (-NONE- *OP*))
+				       (CP (IP (NP-SBJ (-NONE- *T*-1))
+					       (VP (VA 暖红色)))
+					   (DEC 的)))
+				   (NP (PU 「)
+				       (NN 四川红)
+				       (PU 」))
+				   (NP (NN 花岗岩)
+				       (NN 基座)))
+			       (LC 上))))) 
+	  </parse>
+	  <arg n="0">
+	  雕塑 
+	  </arg>
+	  <arg n="1">
+	  於 *OP* *T*-1 暖红色 的 「 四川红 」 花岗岩 基座 上 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

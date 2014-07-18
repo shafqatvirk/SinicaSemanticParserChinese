@@ -1,0 +1,40 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 吃到 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="thing arg0 eats"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 让)
+		(NP-OBJ (PN 他))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 吃到)
+			(NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				    (CP (IP (NP-SBJ (-NONE- *T*-1))
+					    (VP (ADVP (AD 有史以来))
+						(ADVP (AD 最))
+						(VP (VA 热闹))))
+					(DEC 的)))
+				(QP (CD 一)
+				    (CLP (M 顿)))
+				(NP (NN 年夜饭))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	*OP* *T*-1 有史以来 最 热闹 的 一 顿 年夜饭 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

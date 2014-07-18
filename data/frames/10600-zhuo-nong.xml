@@ -1,0 +1,49 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 捉弄 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="agent"/>
+    <role argnum="1" argrole="person arg0 plays a trick on"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 有时候))
+	    (PU ，)
+	    (NP-PN-SBJ (NR 王壮为))
+	    (VP (VP (ADVP (AD 还))
+		    (VP (VV 会)
+			(VP (ADVP (AD 故意))
+			    (VP (VV 捉弄)
+				(NP-OBJ (NN 学生))))))
+		(PU ，)
+		(VP (VV 要)
+		    (NP-OBJ (PN 他们))
+		    (IP (NP-SBJ (-NONE- *PRO*))
+			(VP (VCD (VV 用功)
+				 (VV 精进))))))) 
+	</parse>
+	<arg n="0">
+	王壮为 
+	</arg>
+	<arg n="1">
+	学生 
+	</arg>
+	<arg n="m" f="adv">
+	故意 
+	</arg>
+	<arg n="m" f="adv">
+	还 
+	</arg>
+	<arg n="m" f="adv">
+	有时候 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

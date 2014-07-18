@@ -1,0 +1,52 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 裂变 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent/cause"/>
+      <role argnum="1" argrole="entity changed"/>
+      <role argnum="2" argrole="entity arg1 changes into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="npobj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-PN-SBJ (NR 一汽))
+	      (VP (PP-MNR (P 通过)
+			  (NP (NN 公司化)
+			      (NN 改组)))
+		  (PU ，)
+		  (VP (VV 使)
+		      (NP-OBJ (ADJP (JJ 原来))
+			      (QP (CD 一些))
+			      (NP (NN 专业)
+				  (NN 配套厂)))
+		      (IP (NP-SBJ (-NONE- *PRO*))
+			  (VP (VRD (VV 裂变)
+				   (VV 成))
+			      (NP-OBJ (CP (WHNP-3 (-NONE- *OP*))
+					  (CP (IP (NP-SBJ (-NONE- *T*-3))
+						  (VP (PP-LOC (P 在)
+							      (NP (NN 国内)))
+						      (VP (VE 有)
+							  (NP-OBJ (ADJP (JJ 一定))
+								  (NP (NN 影响))))))
+					      (DEC 的)))
+				      (NP (NN 汽车)
+					  (NN 配套)
+					  (NN 生产)
+					  (NN 企业)))))))) 
+	  </parse>
+	  <arg n="1">
+	  *PRO* 
+	  </arg>
+	  <arg n="2">
+	  *OP* *T*-3 在 国内 有 一定 影响 的 汽车 配套 生产 企业 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

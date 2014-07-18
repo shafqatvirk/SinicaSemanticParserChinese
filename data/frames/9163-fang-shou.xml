@@ -1,0 +1,64 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 防守 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="entity arg0 defends"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (DNP (NP-PN (NN 国防部))
+			   (DEG 的))
+		      (NP (NN 考虑)
+			  (NN 点)))
+	      (VP (VC 是)
+		  (PU ，)
+		  (IP-PRD (NP-TPC (NN 国军))
+			  (PP-TMP (P 在)
+				  (LCP (NP (NN 精实案))
+				       (LC 後)))
+			  (PU ，)
+			  (PP-PRP (P 为)
+				  (IP (NP-SBJ (-NONE- *PRO*))
+				      (VP (VSB (VV 集中)
+					       (VV 防守))
+					  (NP-PN-OBJ (NR 台)
+						     (NR 澎)
+						     (NR 金)
+						     (NR 马)))))
+			  (PU ，)
+			  (IP-SBJ (NP-SBJ (NP (NP-PN (NR 东)
+						     (PU 、)
+						     (NR 南沙岛))
+					      (NP (NN 驻防)))
+					  (CC 及)
+					  (NP (DNP (NP (NP (DP (DT 本))
+							   (NP (NN 岛)))
+						       (NP (NN 海岸)))
+						   (DEG 的))
+					      (NP (NN 护渔)
+						  (PU 、)
+						  (NN 保安))))
+				  (VP (VV 交给)
+				      (NP-PN-OBJ (NN 海岸)
+						 (NN 巡防)
+						 (NN 总署))))
+			  (VP (VC 是)
+			      (VP (VV 势在必行)))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <arg n="1">
+	  台 澎 金 马 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

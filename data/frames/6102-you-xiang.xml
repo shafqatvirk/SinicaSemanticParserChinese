@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 游向 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity swimming"/>
+    <role argnum="1" argrole="location arg0 swims towards"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+	<mapitem src="npobj" trg="arg1"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (ADVP (AD 但是))
+	    (NP-SBJ (DNP (DP (DT 这)
+			     (QP (CD 三)
+				 (CLP (M 年))))
+			 (DEG 的))
+		    (NP (NN 暖冬)))
+	    (PU ，)
+	    (VP (VV 使得)
+		(NP-OBJ (NN 乌鱼))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (VV 游向)
+			(AS 了)
+			(NP-OBJ (DNP (NP (NN 北部))
+				     (DEG 的))
+				(NP-PN (NR 宜兰湾))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="1">
+	北部 的 宜兰湾 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

@@ -1,0 +1,33 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 飞升 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="level arg0 rises to"/>
+      <role argnum="2" argrole="level arg0 rises from"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-SBJ (DT 每)
+		      (CLP (M 股)))
+	      (VP (VRD (VV 飞升)
+		       (VV 到))
+		  (QP-OBJ (CD 八百多)
+			  (CLP (M 元))))) 
+	  </parse>
+	  <arg n="0">
+	  每 股 
+	  </arg>
+	  <arg n="1">
+	  八百多 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

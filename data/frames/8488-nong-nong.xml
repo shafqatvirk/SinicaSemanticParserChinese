@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 弄弄 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="agent"/>
+      <role argnum="1" argrole="thing arg0 makes"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (DP-TPC (DT 其他))
+	      (PP-ADV (P 像)
+		      (NP (NP (NN 珍珠丸))
+			  (PU 、)
+			  (NP (ADJP (JJ 红烧))
+			      (NP (NN 猪脚)))
+			  (PU 、)
+			  (NP (NN 什锦菜))
+			  (ETC 等)))
+	      (PU ，)
+	      (ADVP (AD 平日))
+	      (NP-SBJ (QP (CD 两))
+		      (NP (NN 老)))
+	      (VP (ADVP (AD 就))
+		  (VP (VV 爱)
+		      (IP-OBJ (NP-SBJ (-NONE- *PRO*))
+			      (VP (VP (VCD (VV 煮煮)
+					   (VV 弄弄))
+				      (PP (P 给)
+					  (NP (NN 家人))))
+				  (VP (VV 吃))))))) 
+	  </parse>
+	  <arg n="0">
+	  *PRO* 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

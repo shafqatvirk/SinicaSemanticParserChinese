@@ -1,0 +1,68 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 罹患 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="desease arg0 falls ill with"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (PP-TMP (P 在)
+			  (LCP (IP (NP-SBJ (DP (DT 该))
+					   (NP (NN 被保险人)))
+				   (VP (VP (VP (VV 遭受)
+					       (NP-OBJ (NN 意外)
+						       (NN 伤害)))
+					   (CC 或)
+					   (VP (VV 罹患)
+					       (NP-OBJ (NP (ADJP (JJ 突发性))
+							   (NP (NN 心肌)
+							       (NN 梗塞)))
+						       (PU ，)
+						       (NP (ADJP (JJ 突发性))
+							   (NP (NN 脑溢血))))))
+				       (VP (VV 需)
+					   (NP-OBJ (NN 急救)))))
+			       (LC 时)))
+		  (PU ，)
+		  (VP (VV 可)
+		      (VP (PP-MNR (P 凭)
+				  (NP (NN 急救卡)))
+			  (PP-LOC (P 在)
+				  (LCP (NP (NN 保险金)
+					   (NN 限额))
+				       (LC 内)))
+			  (VP (VP (VV 免)
+				  (VP (VV 交)
+				      (NP-OBJ (ADJP (JJ 相应))
+					      (NP (NN 押金)))))
+			      (PU ，)
+			      (VP (PP-TMP (P 在)
+					  (NP (DNP (NP (QP (CD 八)
+							   (CLP (M 家)))
+						       (ADJP (JJ 定点))
+						       (NP (NN 医院)))
+						   (DEG 的))
+					      (NP (NN 急诊室)
+						  (CC 或)
+						  (NN 观察室))))
+				  (VP (VV 得到)
+				      (NP-OBJ (NN 治疗))))))))) 
+	  </parse>
+	  <arg n="0">
+	  该 被保险人 
+	  </arg>
+	  <arg n="1">
+	  突发性 心肌 梗塞 ， 突发性 脑溢血 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

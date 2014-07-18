@@ -1,0 +1,45 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 检查 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="examiner"/>
+      <role argnum="1" argrole="thing examined"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (-NONE- *pro*))
+	      (VP (ADVP (AD 主要))
+		  (VP (VV 检查)
+		      (NP-OBJ (CP (WHNP-1 (-NONE- *OP*))
+				  (CP (IP (NP-SBJ (-NONE- *T*-1))
+					  (VP (NP-TMP (NT 一九九六年)
+						      (CC 和)
+						      (NT 一九九七年))
+					      (VP (VV 发生))))
+				      (DEC 的)))
+			      (DP (DT 各)
+				  (CLP (M 种)))
+			      (CP-APP (IP (NP-SBJ (-NONE- *pro*))
+					  (VP (VV 违反)
+					      (NP-OBJ (NN 财税)
+						      (NN 价格)
+						      (NN 法纪))))
+				      (DEC 的))
+			      (NP (NN 问题)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  *OP* *T*-1 一九九六年 和 一九九七年 发生 的 各 种 *pro* 违反 财税 价格 法纪 的 问题 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

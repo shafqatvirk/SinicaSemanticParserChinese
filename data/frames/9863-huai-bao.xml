@@ -1,0 +1,43 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 怀抱 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="person described"/>
+      <role argnum="1" argrole="thing arg0 holds in chest"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (QP (CD 不少))
+		      (NP (NN 八里人)))
+	      (VP (ADVP (AD 的确))
+		  (PP-PRP (P 因为)
+			  (NP (NN 市地)
+			      (NN 重划)))
+		  (VP (VV 怀抱)
+		      (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+					  (VP (VV 发财)))
+				      (DEC 的))
+			      (NP (NN 希望)))))) 
+	  </parse>
+	  <arg n="0">
+	  不少 八里人 
+	  </arg>
+	  <arg n="1">
+	  *PRO* 发财 的 希望 
+	  </arg>
+	  <arg n="m" f="prp">
+	  因为 市地 重划 
+	  </arg>
+	  <arg n="m" f="adv">
+	  的确 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

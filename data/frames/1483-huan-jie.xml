@@ -1,0 +1,31 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 换届 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="elected position"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (IP-SBJ (NP-SBJ (NP-PN (NR 港协))
+			      (NP (NN 会长)))
+		      (VP (VV 换届)))
+	      (VP (VV 标志)
+		  (AS 着)
+		  (IP-OBJ (NP-SBJ (NP-PN (NR 香港))
+				  (NP (NN 体坛)))
+			  (VP (VV 步入)
+			      (NP-OBJ (ADJP (JJ 新))
+				      (NP (NN 时代))))))) 
+	  </parse>
+	  <arg n="0">
+	  港协 会长 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

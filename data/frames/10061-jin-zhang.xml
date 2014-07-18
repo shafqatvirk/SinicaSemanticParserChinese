@@ -1,0 +1,41 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+<verb>
+  <id> 进帐 </id>
+  <frameset id="f1">
+    <role argnum="0" argrole="entity described"/>
+    <role argnum="1" argrole="money entering arg0's account"/>
+    <frame>
+      <mapping>
+	<V/>
+	<mapitem src="sbj" trg="arg0"/>
+      </mapping>
+      <example>
+	<parse>
+	(IP (NP-SBJ (-NONE- *pro*))
+	    (VP (VV 让)
+		(NP-OBJ (NN 公司))
+		(IP (NP-SBJ (-NONE- *PRO*))
+		    (VP (ADVP (AD 足足))
+			(VP (VE 有)
+			    (NP-OBJ (CP-APP (IP (NP-SBJ (-NONE- *PRO*))
+						(VP (NP-TMP (QP (CD 两)
+								(CLP (M 个)))
+							    (NP (NN 月)))
+						    (VP (VV 没)
+							(VP (VV 进帐)))))
+					    (DEC 的))
+				    (IP-APP (NP-SBJ (-NONE- *PRO*))
+					    (VP (VV 受挫)))
+				    (NP (NN 经验)))))))) 
+	</parse>
+	<arg n="0">
+	*PRO* 
+	</arg>
+	<arg n="m" f="tmp">
+	两 个 月 
+	</arg>
+	<V/>
+      </example>
+    </frame>
+  </frameset>
+</verb>

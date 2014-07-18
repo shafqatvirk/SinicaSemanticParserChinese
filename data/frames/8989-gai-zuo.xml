@@ -1,0 +1,54 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 改做 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="entity described"/>
+      <role argnum="1" argrole="thing arg0 changes to do business in"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (ADVP (AD 於是))
+	      (NP-SBJ (-NONE- *pro*))
+	      (VP (VP (NP-TMP (NT 今天))
+		      (VP (VV 作)
+			  (NP-OBJ (NP (ADJP (JJ 防水))
+				      (NP (NN 布)))
+				  (NP (NN 加工)))))
+		  (PU ，)
+		  (VP (NP-TMP (NT 明天))
+		      (VP (VV 作)
+			  (NP-OBJ (NN 帐篷)
+				  (NN 布))))
+		  (PU ，)
+		  (VP (NP-TMP (DP (DT 下)
+				  (CLP (M 个)))
+			      (NP (NN 月)))
+		      (ADVP (AD 又))
+		      (VP (VV 改做)
+			  (NP-OBJ (NN 皮包)))))) 
+	  </parse>
+	  <arg n="0">
+	  *pro* 
+	  </arg>
+	  <arg n="1">
+	  皮包 
+	  </arg>
+	  <arg n="m" f="adv">
+	  又 
+	  </arg>
+	  <arg n="m" f="tmp">
+	  下 个 月 
+	  </arg>
+	  <arg n="m" f="adv">
+	  於是 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>

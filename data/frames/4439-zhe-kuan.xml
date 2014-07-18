@@ -1,0 +1,30 @@
+<!DOCTYPE verb SYSTEM "verb.dtd">
+  <verb>
+    <id> 折款 </id>
+    <frameset id="f1">
+      <role argnum="0" argrole="thing described"/>
+      <role argnum="1" argrole="monetary value arg0 is converted into"/>
+      <frame>
+	<mapping>
+	  <V/>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="npobj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <parse>
+	  (IP (NP-SBJ (NN 捐物))
+	      (VP (VV 折款)
+		  (QP-OBJ (CD 五点七三亿)
+			  (CLP (M 元))))) 
+	  </parse>
+	  <arg n="0">
+	  捐物 
+	  </arg>
+	  <arg n="1">
+	  五点七三亿 元 
+	  </arg>
+	  <V/>
+	</example>
+      </frame>
+    </frameset>
+  </verb>
